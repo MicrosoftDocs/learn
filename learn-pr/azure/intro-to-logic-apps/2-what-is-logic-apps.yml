@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: What is Azure Logic Apps?
   description: This unit introduces you to Azure Logic Apps for building and running integration workflows to automate business processes.
-  ms.date: 09/24/2024
+  ms.date: 11/18/2024
   author: ecfan
   ms.author: estfan
   ms.topic: unit

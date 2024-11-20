@@ -11,7 +11,7 @@ One scenario at our shoe company is monitoring industry news for market reaction
 - Store a link to positive articles.
 - Email public relations for negative articles.
 
-These steps happen in a specific order, so you can often describe them as a flowchart. The following diagram shows a sample flowchart for the news article monitoring process. Notice that three types of operations exist: 
+These steps happen in a specific order, so you can often describe them as a flowchart. The following diagram shows a sample flowchart for the news article monitoring process. Notice that three types of operations exist:
 
 - An event that starts the flow.
 - Processing steps that do most of the work.
@@ -27,7 +27,7 @@ When the workflow runs, the designer sends your workflow's definition to the Azu
 
 :::image type="content" source="../media/app-design-process.png" alt-text="Diagram shows the steps to define and run a logic app workflow: select the components, use the designer to arrange them, then save your work." border="false" lightbox="../media/app-design-process.png":::
 
-The power of Azure Logic Apps comes from the diversity of prebuilt components and their ability to work together. These components let you connect to 1,000+ services, systems, and other data sources, not just Azure and Microsoft, but external products too. The following diagram shows only some of the products that you can integrate in your workflow:
+The power of Azure Logic Apps comes from the diversity of prebuilt components and their ability to work together. These components let you connect to 1,000+ services, systems, and other data sources. Not just Azure and Microsoft, but external products too. The following diagram shows only some of the products that you can integrate in your workflow:
 
 :::image type="content" source="../media/external-services.png" alt-text="Diagram shows services available in a logic app workflow. The services are shown in four groups: data storage, data processing, communication, and industry news monitoring." border="false" lightbox="../media/external-services.png":::
 

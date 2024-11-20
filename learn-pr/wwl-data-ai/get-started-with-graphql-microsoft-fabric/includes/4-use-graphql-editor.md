@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - ignite-2024
+---
 You can access the editor by navigating to the API for GraphQL item in Fabric. Once there, look for the **Query** option located at the lower left corner of your portal screen and select it. This opens the editor, where you can start building and testing your GraphQL queries and mutations.
 
 ## Explore the query editor components 

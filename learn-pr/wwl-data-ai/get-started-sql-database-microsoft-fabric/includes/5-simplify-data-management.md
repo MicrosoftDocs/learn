@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - ignite-2024
+---
 Organizations often face challenges in managing and analyzing their data due to the complexity of integrating various data sources, ensuring data consistency, and maintaining real-time data availability. SQL Database in Microsoft Fabric addresses these challenges by providing a unified platform that simplifies data integration, enhances data consistency, and ensures near real-time data availability.
 
 ## Integrate with mirroring
@@ -26,26 +30,3 @@ These features enable scenarios such as querying Parquet, CSV, and Delta tables 
 | [**External data source**](/sql/t-sql/statements/create-external-data-source-transact-sql?azure-portal=true) | This enables you to define external data sources, such as files stored in OneLake. | ```'abfss://aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb@<onelake_account_name>.dfs.fabric.microsoft.com/bbbbbbbb-1111-2222-3333-cccccccccccc/Files/parquet/data1.parquet'; ``` |
 | [**External file format**](/sql/t-sql/statements/create-external-file-format-transact-sql?azure-portal=true) | This capability lets you specify the format of external files, such as Parquet, CSV, and Delta files. | ```CREATE EXTERNAL FILE FORMAT MyFileFormat WITH ( FORMAT_TYPE = DELIMITEDTEXT, FORMAT_OPTIONS ( FIELD_TERMINATOR = ',', STRING_DELIMITER = '"' ) ); ``` |
 | [**External table**](/sql/t-sql/statements/create-external-table-transact-sql?azure-portal=true) | This allows you to create tables that reference data stored outside the SQL database. | ```CREATE EXTERNAL TABLE MyExternalTable ( Column1 INT, Column2 NVARCHAR(50) ) WITH ( LOCATION = 'myfolder/myfile.csv', DATA_SOURCE = MyExternalDataSource, FILE_FORMAT = MyFileFormat ); ``` |
-
-### Query Parquet files in OneLake
-
-In this example, we use `OPENROWSET` to query Parquet files in OneLake. You can find the ABFS path by navigating to the file location in the Fabric portal, selecting the three dots next to the file, and selecting **Properties**.
-
-:::image type="content" source="../media/5-abfs-path.png" alt-text="Screenshot showing how to find the ABFS path in a lakehouse." lightbox="../media/5-abfs-path.png":::
-
-```sql
-SELECT * FROM OPENROWSET (
-BULK 'abfss://aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb@<onelake_account_name>.dfs.fabric.microsoft.com/bbbbbbbb-1111-2222-3333-cccccccccccc/Files/parquet/data1.parquet'
-, FORMAT = 'PARQUET'
-) [dataset]
-```
-
-### Query delta lake tables
-
-You can also query [delta lake tables](/fabric/data-engineering/lakehouse-and-delta-tables?azure-portal=true) by providing `DELTA` as the format in `OPENROWSET`. The `FORMAT = 'DELTA'` option indicates that the files are in Delta Lake format, which is optimized for big data workloads and supports ACID (Atomicity, Consistency, Isolation, and Durability) transactions.
-
-```sql
-SELECT * FROM OPENROWSET
-( BULK 'abfss://aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb@<data_lake_account_name>.dfs.fabric.microsoft.com/bbbbbbbb-1111-2222-3333-cccccccccccc/Tables/dbo/customers'
-, FORMAT = 'DELTA') AS [movies_table];
-```

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.explore-microsoft-copilot-business-users
 metadata:
-  title: Explore Microsoft Copilot - for business users
+  title: Work smarter with AI using Microsoft Copilot
   description: "Learn how to be more productive with Microsoft Copilot."
   ms.date: 11/11/2024
   author: GraemeMalcolm
@@ -11,7 +11,7 @@ metadata:
   ms.service: microsoft-copilot
   ms.collection:
     - wwl-ai-copilot
-title: Explore Microsoft Copilot - for business users
+title: Work smarter with AI using Microsoft Copilot
 summary: "Microsoft Copilot is an AI-powered assistant that you can use for personal projects and work."
 abstract: |
   By the end of this module, you'll be able to:

@@ -24,7 +24,7 @@ When you define the values, you might choose to specify them directly in your wo
 - uses: azure/login@v1
   with:
     client-id: 'A123b4567c-1234-1a2b-2b1a-1234abc12345'
-    tenant-id: 'b31a1123-3210-10ab-23bc-123c1b32a012'
+    tenant-id: 'aaaabbbb-0000-cccc-1111-dddd2222eeee'
     subscription-id: 'B123a4567c-1234-2b1a-1b2b-11a2b01b2b3c0'
 ```
 
