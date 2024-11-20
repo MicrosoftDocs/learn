@@ -7,6 +7,8 @@ metadata:
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: learning-path
+  ms.custom:
+    - ignite-2024
 title: Implement operational databases in Microsoft Fabric
 prerequisites: |
   - Ability to navigate the Fabric portal.

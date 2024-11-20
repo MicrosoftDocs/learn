@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - ignite-2024
+---
 SQL Database in Microsoft Fabric is a versatile and developer-friendly transactional database built on the foundation of Azure SQL Database. It allows for the creation and management of operational databases within the Fabric environment.
 
 Differently than Azure SQL Database, which is a Platform as a Service (PaaS), SQL Database in Microsoft Fabric is a Software as a Service (SaaS). This means that users can enjoy a low-maintenance solution, allowing them to focus even more on their core business activities.
