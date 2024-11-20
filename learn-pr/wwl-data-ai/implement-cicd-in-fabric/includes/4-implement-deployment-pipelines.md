@@ -13,8 +13,6 @@ Follow these steps to create a deployment pipeline:
 
 1. Select the **Workspaces** icon on the left navigation pane, then **Deployment pipelines.**
 
-    :::image type="content" source="../media/create-pipeline.png" alt-text="Screenshot of new pipeline interface." :::
-
 2. Select **New pipeline**. Then name the pipeline and select **Next**.
 3. Define, and name the stages in your pipeline. Then select **Create.**
 
