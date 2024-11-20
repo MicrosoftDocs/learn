@@ -34513,6 +34513,11 @@
       "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/3-standardize-model-formats-scale-model-deployment-onnx-triton.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/6-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
