@@ -4147,3 +4147,8 @@ achievements:
   title: Work with data in Azure Machine Learning
   summary: Learn how to work with data in Azure Machine Learning. Whether you want to access data in notebooks or scripts, you can read data directly, through datastores, or data assets.
   iconUrl: /training/achievements/work-data-azure-machine-learning.svg
+- uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.badge
+  type: badge
+  title: Deploy deep learning workloads to production with Azure Machine Learning
+  summary: Deploying large-scale models for real-time inferencing is challenging because of the model's size. Learn what you can do and which frameworks you can use to optimize your model's performance during model scoring.
+  iconUrl: /training/achievements/3-deploy-deep-learning-workloads-to-production-azure.svg
