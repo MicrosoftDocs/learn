@@ -30,7 +30,6 @@ roles:
 products:
 - azure-machine-learning
 units:
-- learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.introduction
 - learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.track-view-model-metrics-mlflow
 - learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.manage-models-mlflow
 - learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.knowledge-check
