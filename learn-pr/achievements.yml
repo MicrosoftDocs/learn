@@ -4152,3 +4152,8 @@ achievements:
   title: Deploy deep learning workloads to production with Azure Machine Learning
   summary: Deploying large-scale models for real-time inferencing is challenging because of the model's size. Learn what you can do and which frameworks you can use to optimize your model's performance during model scoring.
   iconUrl: /training/achievements/3-deploy-deep-learning-workloads-to-production-azure.svg
+- uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.badge
+  type: badge
+  title: Preprocess large datasets with Azure Machine Learning
+  summary: Choose GPU compute in Azure Machine Learning when training compute-intensive models. To reduce the time needed to process the data, store your data efficiently and use a data manipulation library compatible with GPU compute.
+  iconUrl: /training/achievements/1-preprocessing-large-datasets-with-azure-machine-learning.svg
