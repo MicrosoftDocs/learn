@@ -4167,3 +4167,8 @@ achievements:
   title: Train models in Azure Machine Learning with the CLI (v2)
   summary: The Azure Machine Learning CLI (v2) is an Azure CLI extension that you can use to train and deploy machine learning models. Learn how to use the CLI (v2) to create Azure Machine Learning workspace assets to use for model training and deployment.
   iconUrl: /training/achievements/train-models-in-azure-machine-learning-with-cli-v2.svg
+- uid: learn.azure.cna-build-basic-service.badge
+  type: badge
+  title: Build a basic cloud-native service using PostgreSQL and Node.js
+  summary: Build a basic service consisting of an Express.js-based web service with Microsoft Azure Database for PostgreSQL providing its persistent data store, and managed by a front-end Next.js management web app. 
+  iconUrl: /training/achievements/cloud-native-build-basic-service.svg
