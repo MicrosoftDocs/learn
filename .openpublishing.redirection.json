@@ -34483,6 +34483,126 @@
       "source_path": "learn-pr/paths/work-data-azure-machine-learning/index.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/2-choose-appropriate-inference-strategy.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/4-exercise-deploy-onnx-model-triton.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/5-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/3-standardize-model-formats-scale-model-deployment-onnx-triton.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/6-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/2-choose-appropriate-ai-approach-for-your-data.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/3-efficient-data-storage-options.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/5-exercise-preprocess-data-rapids.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/4-optimize-data-loading-preprocessing.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/7-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/3-choose-appropriate-nvidia-gpu-option.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/5-distributed-training.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/4-exercise-train-deep-learning-model.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/7-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/2-train-compute.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/train-models-azure-machine-learning-cli-v2/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
