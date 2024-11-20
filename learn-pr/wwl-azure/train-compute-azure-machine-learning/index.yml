@@ -31,7 +31,6 @@ products:
 subjects:
 - machine-learning
 units:
-- learn.wwl.train-compute-azure-machine-learning.train-compute
 badge:
   uid: learn.wwl.train-compute-azure-machine-learning.badge
 
