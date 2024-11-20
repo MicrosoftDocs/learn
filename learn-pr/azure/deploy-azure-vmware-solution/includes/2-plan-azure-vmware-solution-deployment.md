@@ -66,7 +66,7 @@ There are two types of sizing criteria to create Azure VMware Solution assessmen
 | Assessment type   | Details | Data |
 | :---------- | :------ | :--- |
 | Performance-based | Assess performance data of on-premises VMs. This can run for a period of time to collect; daily, weekly, and monthly performance patterns. | Recommended node size is based on CPU, memory usage, node type, storage type, and failures to tolerate (FTT). |
-| As is on-premises | Assess on-premises VM sizing. This is a point in time export of the vSphere configuration. | Recommended node size is based on the on-premises VM size along with node type, storage type, and failures to tolerate (FTT). |
+| As is on-premises | Assess on-premises VM sizing. This is a point in time export of the vSphere configuration. | Recommended node size is based on the on-premises VM size along with node type, storage type, and failures to tolerate (FTT).
 
 To do the assessment:
 
