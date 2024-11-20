@@ -34598,6 +34598,11 @@
       "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/2-train-compute.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/train-models-azure-machine-learning-cli-v2/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
