@@ -35,7 +35,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.preprocessing-large-datasets-azure-machine-learning.optimize-data-loading-preprocessing
-- learn.wwl.preprocessing-large-datasets-azure-machine-learning.knowledge-check
 - learn.wwl.preprocessing-large-datasets-azure-machine-learning.summary
 badge:
   uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.badge
