@@ -10,7 +10,8 @@ metadata:
   ms.author: jamesh
   ms.topic: module
   ms.custom:
-  - build-2023
+    - build-2023
+    - ignite-2024
   ms.service: azure
   ai-usage: human-only
 title: Orchestrate processes and data movement with Microsoft Fabric
@@ -45,4 +46,3 @@ units:
 - learn.wwl.use-data-factory-pipelines-fabric.summary
 badge:
   uid: learn.wwl.use-data-factory-pipelines-fabric.badge
-
