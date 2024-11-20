@@ -34,7 +34,6 @@ units:
 - learn.wwl.train-compute-azure-machine-learning.introduction
 - learn.wwl.train-compute-azure-machine-learning.train-compute
 - learn.wwl.train-compute-azure-machine-learning.exercise-train-deep-learning-model
-- learn.wwl.train-compute-azure-machine-learning.distributed-training
 - learn.wwl.train-compute-azure-machine-learning.knowledge-check
 - learn.wwl.train-compute-azure-machine-learning.summary
 badge:
