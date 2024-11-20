@@ -35,7 +35,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.preprocessing-large-datasets-azure-machine-learning.introduction
-- learn.wwl.preprocessing-large-datasets-azure-machine-learning.efficient-data-storage-options
 - learn.wwl.preprocessing-large-datasets-azure-machine-learning.optimize-data-loading-preprocessing
 - learn.wwl.preprocessing-large-datasets-azure-machine-learning.exercise-preprocess-data-rapids
 - learn.wwl.preprocessing-large-datasets-azure-machine-learning.knowledge-check
