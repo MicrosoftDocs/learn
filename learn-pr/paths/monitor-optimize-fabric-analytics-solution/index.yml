@@ -25,6 +25,7 @@ products:
 subjects:
 - data-engineering
 modules:
-- learn.wwl.use-apache-spark-work-files-lakehouse
+- learn.wwl.monitor-fabric-data-warehouse
+- learn.wwl.monitor-fabric-items
 trophy:
   uid: learn.wwl.monitor-optimize-fabric-analytics-solution.trophy
