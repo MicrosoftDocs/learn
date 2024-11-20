@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - ignite-2024
+---
 To create a fully functional API to access your data in Fabric, start from the Fabric portal home page and select **Data Engineering** from the list of workloads. Then, choose **API for GraphQL**. 
 
 Alternatively, you can select **New > API for GraphQL** from any workspace in **Data Engineering**. Enter a name and select **Create** to have a fully functional API to access your data in Fabric.
