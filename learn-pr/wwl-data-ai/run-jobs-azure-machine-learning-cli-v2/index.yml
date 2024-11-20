@@ -34,7 +34,6 @@ products:
 subjects:
 - process-workflow
 units:
-- learn.wwl.run-jobs-azure-machine-learning-cli-v2.summary
 badge:
   uid: learn.wwl.run-jobs-azure-machine-learning-cli-v2.badge
 
