@@ -4172,3 +4172,8 @@ achievements:
   title: Train models in Azure Machine Learning with the CLI (v2)
   summary: The Azure Machine Learning CLI (v2) is an Azure CLI extension that you can use to train and deploy machine learning models. Learn how to use the CLI (v2) to create Azure Machine Learning workspace assets to use for model training and deployment.
   iconUrl: /training/achievements/train-models-in-azure-machine-learning-with-cli-v2.svg
+- uid: learn.wwl.create-azure-machine-learning-resources-cli-v2.badge
+  type: badge
+  title: Create Azure Machine Learning resources with the CLI (v2)
+  summary: Use the Azure Machine Learning CLI (v2) to create and manage workspace resources.
+  iconUrl: /training/achievements/1-create-azure-machine-learning-resources-with-cli-v2.svg
