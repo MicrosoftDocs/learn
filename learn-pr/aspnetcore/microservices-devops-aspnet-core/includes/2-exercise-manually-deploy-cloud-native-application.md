@@ -275,7 +275,7 @@ GitHub Actions can publish container images to an Azure Container Registry. The 
    A variation of the following output appears:
 
    ```console
-   Creating 'Contributor' role assignment under scope '/subscriptions/ffffffff-eeee-dddd-cccc-bbbbbbbbbbb0'
+   Creating 'Contributor' role assignment under scope '/subscriptions/ffffffff-aaaa-bbbb-6666-777777777777'
    
    The output includes credentials that you must protect. Be sure that you do not include these credentials in your code or check the credentials into your source control. For more information, see https://aka.ms/azadsp-cli
     {
