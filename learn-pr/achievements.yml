@@ -4142,3 +4142,8 @@ achievements:
   title: Work with compute in Azure Machine Learning
   summary: Learn how to work with compute targets and environments in the Azure Machine Learning workspace.
   iconUrl: /training/achievements/work-with-compute-in-azure-machine-learning.svg
+- uid: learn.wwl.work-data-azure-machine-learning.trophy
+  type: trophy
+  title: Work with data in Azure Machine Learning
+  summary: Learn how to work with data in Azure Machine Learning. Whether you want to access data in notebooks or scripts, you can read data directly, through datastores, or data assets.
+  iconUrl: /training/achievements/work-data-azure-machine-learning.svg
