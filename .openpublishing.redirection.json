@@ -34773,6 +34773,11 @@
       "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/1-introduction.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/6-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
     }
   ]
 }
