@@ -69,7 +69,7 @@ During the setup of Security Copilot, you're prompted to configure settings. The
 
 - Plugin settings - The admin manages plugins and configures whether to allow Security Copilot to access data from your Microsoft 365 services.
   - Configure who can add and manage their own custom plugins and who can add and manage custom plugins for everyone in the organization.
-  - Manage plugin availability and restrict access.  When enabled, admins decide which new and existing plugins will be available to everyone in your organization, and which will be restricted to owners only.
+  - Manage plugin availability and restrict access. When enabled, admins decide which new and existing plugins will be available to everyone in your organization, and which will be restricted to owners only.
   - Allow Security Copilot to access data from your Microsoft 365 services. If this option is turned off, your organization won't be able to use plugins that access Microsoft 365 services. Currently, this option is required for use of the Microsoft Purview plugin. Setting and/or changing this setting requires a user with a Global administrator role.
   
     :::image type="content" source="../media/plugin-settings-no-restrictions.png" lightbox="../media/plugin-settings-no-restrictions.png" alt-text="Screen capture showing the plugin settings and the setting to allow Security Copilot to access data from your Microsoft 365 services.":::
