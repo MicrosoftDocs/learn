@@ -281,8 +281,8 @@ GitHub Actions can publish container images to an Azure Container Registry. The 
     {
      "clientId": "00001111-aaaa-2222-bbbb-3333cccc4444",
      "clientSecret": "abc1A~abc123ABC123abc123ABC123abc123ABC1",
-     "subscriptionId": "ffffffff-eeee-dddd-cccc-bbbbbbbbbbb0",
-     "tenantId": "ffffffff-eeee-dddd-cccc-bbbbbbbbbbb0",
+     "subscriptionId": "00000000-0000-0000-0000-000000000000",
+     "tenantId": "00000000-0000-0000-0000-000000000000",
      "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
      "resourceManagerEndpointUrl": "https://management.azure.com/",
      "activeDirectoryGraphResourceId": "https://graph.windows.net/",

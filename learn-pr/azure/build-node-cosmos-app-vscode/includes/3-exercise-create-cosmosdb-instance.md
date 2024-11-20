@@ -41,16 +41,9 @@ In the sample scenario, you want to work within Visual Studio Code, both as a de
 
 1. Sign in with the same credentials you used to set up the sandbox, and then close the browser page.
 
-1. In the Azure explorer, select **Select subscriptions...**. The Learn sandbox subscription has the following name and tenant ID:
+1. In the Azure explorer, select **Select subscriptions...**. Then, select the Learn sandbox **Concierge Subscription**. Select **OK**.
 
-    **Troubleshooting**: If you aren't able to find the Concierge Subscription, you may have to change tenants and sign in again. Use the following tenant ID to complete that:
-
-    * Tenant ID: aaaabbbb-0000-cccc-1111-dddd2222eeee
-    * Name: Concierge Subscription
-
-1. Select **Concierge Subscription** and then **OK**.
-
-1. In the Azure explorer, expand **Concierge Subscription**. 
+1. In the Azure explorer, expand **Concierge Subscription**.
 
 ## Create a Cosmos DB account in Visual Studio Code
 
