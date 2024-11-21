@@ -8,6 +8,8 @@ metadata:
   ms.author: jupadrao
   ms.topic: module-standard-task-based
   ms.service: fabric
+  ms.custom:
+    - ignite-2024
   ai-usage: ai-assisted
 title: Get started with GraphQL in Microsoft Fabric
 summary: You'll explore the capabilities of GraphQL within the Microsoft Fabric environment, which provides a unified platform for managing and analyzing data.

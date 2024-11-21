@@ -8,6 +8,8 @@ metadata:
   author: jupadrao
   ms.author: jupadrao
   ms.topic: unit
+  ms.custom:
+    - ignite-2024
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
