@@ -127,7 +127,7 @@ Knowledge of the VMware versions gives customers an understanding of compatibili
 
 ### Host maintenance and lifecycle management
 
-The Azure VMware Solution private cloud platform includes specific versions of VMware vCenter Server, ESXi, vSAN, and NSX software. The private-cloud software bundle for Azure VMware Solution is validated for use. The software bundle is deployed in new private cloud installations and for upgrades of existing private clouds.
+The Azure VMware Solution private cloud platform includes specific versions of VMware vCenter Server, ESXi, vSAN, and NSX software. The private cloud software bundle for Azure VMware Solution is validated for use. The software bundle is deployed in new private cloud installations and for upgrades of existing private clouds.
 
 The upgrade process for lifecycle management doesn't require downtime for private clouds. The upgrade process ensures that each Azure VMware Solution environment automatically uses the latest version of the validated Azure VMware Solution private cloud software.
 
@@ -140,10 +140,10 @@ Microsoft is responsible for the lifecycle management of NSX appliances, such as
 
 ### NSX Configuration
 
-There are two different methods for managing Azure VMware Solution networking and networking services such as DNS, DHCP, and others with NSX-T. You can do configurations in NSX-T Manager or Azure Resource Manager Portal.
+There are two different methods for managing Azure VMware Solution networking and networking services such as DNS, DHCP, and others with NSX. You can do configurations in NSX Manager or Azure Resource Manager Portal.
 
 ### Backup and restoration
 
-Microsoft backs up Private-cloud vCenter and NSX-T configurations on an hourly schedule. Backups are kept for three days. If you require restoration from a backup, open a support request in the Azure portal.
+Microsoft backs up Private cloud vCenter Server and NSX Manager configurations on a daily schedule. Backups are kept for three days. If you require restoration from a backup, open a support request in the Azure portal.
 
 In the next unit, we'll cover all the planning considerations for network topology with Azure VMware Solution. We'll outline each aspect so you can make sure your deployment is successful.
