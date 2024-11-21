@@ -6,7 +6,7 @@ Tailwind Traders has a mix of compute workloads running as physical servers, vir
 
 Managing this diverse set of operating systems is already a challenge for Tailwind Traders. The company is concerned that migrating into a hybrid posture, where workloads are running both on-premises and in the cloud, could make it even more difficult to keep track of server operating system workloads and their compliance state.
 
-For the last few years, Tailwind Traders has been using a Microsoft high-performance computing (HPC) pack to manage a 16-node compute cluster. The cluster resides in the Sydney datacenter for a series of engineering-related design tasks. These calculations occur for only short periods during the year. But as calculations become more complicated, the time required for these calculations is increasing.
+For the last few years, Tailwind Traders used a Microsoft high-performance computing (HPC) pack to manage a 16-node compute cluster. The cluster resides in the Sydney datacenter for a series of engineering-related design tasks. These calculations occur for only short periods during the year. But as calculations become more complicated, the time required for these calculations is increasing.
 
 Tailwind Traders is planning to use containers as the primary platform for new applications instead of keeping them hosted on virtual machines. The company is interested in a platform that allows it to orchestrate containers in its hybrid environment.
 
@@ -66,7 +66,7 @@ The following image illustrates bursting into the cloud.
 
 Being able to burst HPC calculations into the cloud allows organizations to maintain a minimum amount of hardware for common HPC tasks on-premises. Organizations can then deploy extra nodes as necessary if the benefit of the calculation justifies the expense.
 
-Tailwind Traders already has an HPC deployment. But the company's capacity to perform complex calculations is limited by the amount of compute resources in its physical and virtual environment that it can allocate to HPC tasks. By adopting a hybrid HPC approach, Tailwind Traders can scale its HPC capacity as needed without having to purchase the hardware for extra on-premises nodes.
+Tailwind Traders has an HPC deployment. But the company's capacity to perform complex calculations is limited by the amount of compute resources in its physical and virtual environment that it can allocate to HPC tasks. If they adopt a hybrid HPC approach, Tailwind Traders can scale its HPC capacity as needed without having to purchase the hardware for extra on-premises nodes.
 
 ## What is Azure Arc enabled Kubernetes?
 
@@ -87,7 +87,7 @@ The benefit for Tailwind Traders of using Azure Arc for Kubernetes is that it al
 
 Azure Arc enabled data services allow organizations to manage supported databases running in Azure and on-premises by using one set of tools. Organizations can use Azure Arc enabled data services to run Azure Database for PostgreSQL servers and SQL managed instances on-premises while managing those instances through Azure Data Studio, the Azure portal, or the Azure CLI.
 
-When enabled, Azure Arc enabled data services allow you to automate the patching and update processes for these on-premises database instances, in the same way that Microsoft manages these processes when you deploy PostgreSQL and SQL managed instances in Azure. Azure Arc enabled data services also allow organizations to apply the advanced threat protection functionality available in Microsoft Defender for Cloud for Azure SQL databases to database server instances running on-premises.
+When enabled, Azure Arc enabled data services allow you to automate the patching and update processes for these on-premises database instances. The patching and update processes work in the same way that Microsoft manages these processes when you deploy PostgreSQL and SQL managed instances in Azure. Azure Arc enabled data services also allow organizations to apply the advanced threat protection functionality available in Microsoft Defender for Cloud for Azure SQL databases to database server instances running on-premises.
 
 Azure Arc enabled data services use container and Kubernetes infrastructure for the on-premises services. Azure Arc enabled data services also allow integration between these on-premises data services and Azure services such as Azure Backup.
 
