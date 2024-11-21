@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Introduction
   description: In this unit, you'll learn about a business scenario where self-service password resets can reduce administrative costs.
-  ms.date: 09/20/2024
+  ms.date: 11/07/2024
   author: Justinha
   ms.author: justinha
   ms.topic: unit

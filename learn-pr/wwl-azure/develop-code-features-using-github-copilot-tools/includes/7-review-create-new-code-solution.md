@@ -24,7 +24,7 @@ The challenge instructions have you download the sample app for this challenge.
 1. Enter the following prompt:
 
     ```output
-    Update the QuarterlySalesReport method to format the reported department sales information as a table. Each column should be aligned. The left column should be 22 characters wide. The remaining columns should be 20 characters wide. Each column should have a right-aligned header. The sales data should be right-aligned and padded to fit the column with.
+    Update the QuarterlySalesReport method to format the reported department sales information as a table. Each column should be aligned. The left column should be 22 characters wide. The remaining columns should be 20 characters wide. Each data column should have a right-aligned header. The sales data should be right-aligned and padded to fit the column with.
     ```
 
 1. Review the suggestions provided by GitHub Copilot and then select **Accept**.
@@ -39,82 +39,90 @@ The challenge instructions have you download the sample app for this challenge.
     Use extended ASCII characters to add border lines to the table. Border lines should enclose the table perimeter. Border lines should separate the interior columns of the table. 
     ```
 
-    Manually adjust the position of the column 1 right-side vertical line one position to the right. This aligns the interior vertical lines with the perimeter and header lines.
-
-    ```csharp
-    Console.WriteLine("│ {0,-22}│ {1,17} │ {2,17} │ {3,17} │", department.Key, formattedDepartmentSalesAmount, formattedDepartmentProfitAmount, formattedDepartmentProfitPercentage);
-    ```
-
 1. Review the suggestions provided by GitHub Copilot and then select **Accept**.
 
 1. Save the changes to the Program.cs file.
 
 1. Run the application and verify that the quarterly sales report output includes a table of department sales results.
 
-    Your quarterly sales report should look similar to the following output:
+1. If necessary, manually adjust the column widths to align the vertical lines in the data rows with the header row.
+
+    If the data in the "Profit Percentage" column includes a `%` character after the value, the specified width must be one less than the width for the same column in the header row.
+
+    ```csharp
+    Console.WriteLine("│ {0,-20} │ {1,18} │ {2,18} │ {3,18} │", "Department", "Sales", "Profit", "Profit Percentage");
+
+    Console.WriteLine("│ {0,-20} │ {1,18} │ {2,18} │ {3,17}% │", department.Key, formattedDepartmentSalesAmount, formattedDepartmentProfitAmount, formattedDepartmentProfitPercentage);
+    ```
+
+    Your output does not need to include the `%` character in the "Profit Percentage" column.
+
+1. Run the application and verify that the quarterly sales report output includes a table of department sales results.
+
+    Your quarterly sales report should look similar to the following output (with or without the `%` character in the "Profit Percentage" column):
 
     ```output
     Quarterly Sales Report
     ----------------------
     Q1: Sales: $2,098,948.87, Profit: $266,548.80, Profit Percentage: 7.00%
     By Department:
-    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
-    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    │ Accessories           │       $227,101.75 │        $31,619.50 │             11.00 │
-    │ Children's Clothing   │       $242,999.83 │        $32,129.93 │              9.00 │
-    │ Footwear              │       $309,579.27 │        $37,846.03 │              7.00 │
-    │ Men's Clothing        │       $256,699.00 │        $31,627.33 │             11.00 │
-    │ Outerwear             │       $259,274.20 │        $27,614.65 │              5.00 │
-    │ Sportswear            │       $261,332.33 │        $35,702.48 │             10.00 │
-    │ Undergarments         │       $291,343.22 │        $38,740.59 │              9.00 │
-    │ Women's Clothing      │       $250,619.28 │        $31,268.29 │             14.00 │
-    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┐
+    │ Department           │              Sales │             Profit │  Profit Percentage │
+    ├──────────────────────┼────────────────────┼────────────────────┼────────────────────┤
+    │ Accessories          │        $227,101.75 │         $31,619.50 │             11.00% │
+    │ Children's Clothing  │        $242,999.83 │         $32,129.93 │              9.00% │
+    │ Footwear             │        $309,579.27 │         $37,846.03 │              7.00% │
+    │ Men's Clothing       │        $256,699.00 │         $31,627.33 │             11.00% │
+    │ Outerwear            │        $259,274.20 │         $27,614.65 │              5.00% │
+    │ Sportswear           │        $261,332.33 │         $35,702.48 │             10.00% │
+    │ Undergarments        │        $291,343.22 │         $38,740.59 │              9.00% │
+    │ Women's Clothing     │        $250,619.28 │         $31,268.29 │             14.00% │
+    └──────────────────────┴────────────────────┴────────────────────┴────────────────────┘
     
     Q2: Sales: $2,035,550.16, Profit: $253,516.25, Profit Percentage: 11.00%
     By Department:
-    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
-    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    │ Accessories           │       $284,685.66 │        $34,442.28 │             17.00 │
-    │ Children's Clothing   │       $285,753.69 │        $36,672.14 │             20.00 │
-    │ Footwear              │       $232,121.77 │        $28,406.40 │              9.00 │
-    │ Men's Clothing        │       $269,787.82 │        $33,061.27 │             11.00 │
-    │ Outerwear             │       $190,096.90 │        $25,230.19 │             13.00 │
-    │ Sportswear            │       $263,685.51 │        $31,183.94 │             20.00 │
-    │ Undergarments         │       $246,857.39 │        $29,287.72 │             18.00 │
-    │ Women's Clothing      │       $262,561.42 │        $35,232.32 │             11.00 │
-    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┐
+    │ Department           │              Sales │             Profit │  Profit Percentage │
+    ├──────────────────────┼────────────────────┼────────────────────┼────────────────────┤
+    │ Accessories          │        $284,685.66 │         $34,442.28 │             17.00% │
+    │ Children's Clothing  │        $285,753.69 │         $36,672.14 │             20.00% │
+    │ Footwear             │        $232,121.77 │         $28,406.40 │              9.00% │
+    │ Men's Clothing       │        $269,787.82 │         $33,061.27 │             11.00% │
+    │ Outerwear            │        $190,096.90 │         $25,230.19 │             13.00% │
+    │ Sportswear           │        $263,685.51 │         $31,183.94 │             20.00% │
+    │ Undergarments        │        $246,857.39 │         $29,287.72 │             18.00% │
+    │ Women's Clothing     │        $262,561.42 │         $35,232.32 │             11.00% │
+    └──────────────────────┴────────────────────┴────────────────────┴────────────────────┘
     
     Q3: Sales: $1,959,738.57, Profit: $249,994.39, Profit Percentage: 12.00%
     By Department:
-    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
-    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    │ Accessories           │       $268,249.09 │        $33,662.40 │             16.00 │
-    │ Children's Clothing   │       $262,402.85 │        $32,550.39 │              7.00 │
-    │ Footwear              │       $268,383.13 │        $33,416.99 │             14.00 │
-    │ Men's Clothing        │       $246,654.07 │        $33,440.20 │             12.00 │
-    │ Outerwear             │       $216,239.78 │        $28,683.07 │             16.00 │
-    │ Sportswear            │       $244,253.22 │        $29,269.02 │             13.00 │
-    │ Undergarments         │       $237,058.27 │        $31,402.88 │             19.00 │
-    │ Women's Clothing      │       $216,498.16 │        $27,569.42 │              9.00 │
-    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┐
+    │ Department           │              Sales │             Profit │  Profit Percentage │
+    ├──────────────────────┼────────────────────┼────────────────────┼────────────────────┤
+    │ Accessories          │        $268,249.09 │         $33,662.40 │             16.00% │
+    │ Children's Clothing  │        $262,402.85 │         $32,550.39 │              7.00% │
+    │ Footwear             │        $268,383.13 │         $33,416.99 │             14.00% │
+    │ Men's Clothing       │        $246,654.07 │         $33,440.20 │             12.00% │
+    │ Outerwear            │        $216,239.78 │         $28,683.07 │             16.00% │
+    │ Sportswear           │        $244,253.22 │         $29,269.02 │             13.00% │
+    │ Undergarments        │        $237,058.27 │         $31,402.88 │             19.00% │
+    │ Women's Clothing     │        $216,498.16 │         $27,569.42 │              9.00% │
+    └──────────────────────┴────────────────────┴────────────────────┴────────────────────┘
     
     Q4: Sales: $2,056,371.76, Profit: $273,122.03, Profit Percentage: 8.00%
     By Department:
-    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
-    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    │ Accessories           │       $329,926.72 │        $49,008.34 │             18.00 │
-    │ Children's Clothing   │       $161,918.53 │        $23,062.50 │              9.00 │
-    │ Footwear              │       $255,455.17 │        $33,934.76 │              8.00 │
-    │ Men's Clothing        │       $221,264.27 │        $24,772.73 │              8.00 │
-    │ Outerwear             │       $299,514.01 │        $41,179.09 │              8.00 │
-    │ Sportswear            │       $314,023.68 │        $42,038.11 │             20.00 │
-    │ Undergarments         │       $202,815.48 │        $23,954.48 │              7.00 │
-    │ Women's Clothing      │       $271,453.91 │        $35,172.04 │             16.00 │
-    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┐
+    │ Department           │              Sales │             Profit │  Profit Percentage │
+    ├──────────────────────┼────────────────────┼────────────────────┼────────────────────┤
+    │ Accessories          │        $329,926.72 │         $49,008.34 │             18.00% │
+    │ Children's Clothing  │        $161,918.53 │         $23,062.50 │              9.00% │
+    │ Footwear             │        $255,455.17 │         $33,934.76 │              8.00% │
+    │ Men's Clothing       │        $221,264.27 │         $24,772.73 │              8.00% │
+    │ Outerwear            │        $299,514.01 │         $41,179.09 │              8.00% │
+    │ Sportswear           │        $314,023.68 │         $42,038.11 │             20.00% │
+    │ Undergarments        │        $202,815.48 │         $23,954.48 │              7.00% │
+    │ Women's Clothing     │        $271,453.91 │         $35,172.04 │             16.00% │
+    └──────────────────────┴────────────────────┴────────────────────┴────────────────────┘
     
     ```
 
@@ -155,7 +163,7 @@ The challenge instructions have you download the sample app for this challenge.
 1. Enter the following prompt:
 
     ```output
-    Update the QuarterlySalesReport method to display all of information for the top three orders in a table. The left column should be 22 characters wide. The remaining columns should be 20 characters wide. Each column should have a right-aligned header. The sales data should be right-aligned and padded to fit the column with.
+    Update the QuarterlySalesReport method to display all of information for the top three orders in a table. The left column should be 22 characters wide. The remaining columns should be 20 characters wide. Each data column should have a right-aligned header. The sales data should be right-aligned and padded to fit the column with.
     
     ```
 
@@ -177,106 +185,106 @@ The challenge instructions have you download the sample app for this challenge.
 
 1. Run the application and verify that the quarterly sales report output includes a table of department sales results.
 
-    Your quarterly sales report should look similar to the following output:
+    Your quarterly sales report should look similar to the following output (with or without the `%` character in the "Profit Percentage" column):
 
     ```output
     Quarterly Sales Report
     ----------------------
     Q1: Sales: $2,147,913.85, Profit: $259,780.34, Profit Percentage: 6.00%
     By Department:
-    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
-    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    │ Accessories           │       $250,965.22 │        $32,137.16 │             10.00 │
-    │ Children's Clothing   │       $240,996.59 │        $30,624.26 │             20.00 │
-    │ Footwear              │       $350,495.72 │        $44,661.94 │             17.00 │
-    │ Men's Clothing        │       $179,416.69 │        $19,491.29 │             13.00 │
-    │ Outerwear             │       $341,525.29 │        $47,556.50 │             16.00 │
-    │ Sportswear            │       $216,901.82 │        $21,858.47 │              7.00 │
-    │ Undergarments         │       $298,357.33 │        $35,451.12 │              6.00 │
-    │ Women's Clothing      │       $269,255.19 │        $27,999.61 │             20.00 │
-    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┐
+    │ Department           │              Sales │             Profit │  Profit Percentage │
+    ├──────────────────────┼────────────────────┼────────────────────┼────────────────────┤
+    │ Accessories          │        $250,965.22 │         $32,137.16 │             10.00% │
+    │ Children's Clothing  │        $240,996.59 │         $30,624.26 │             20.00% │
+    │ Footwear             │        $350,495.72 │         $44,661.94 │             17.00% │
+    │ Men's Clothing       │        $179,416.69 │         $19,491.29 │             13.00% │
+    │ Outerwear            │        $341,525.29 │         $47,556.50 │             16.00% │
+    │ Sportswear           │        $216,901.82 │         $21,858.47 │              7.00% │
+    │ Undergarments        │        $298,357.33 │         $35,451.12 │              6.00% │
+    │ Women's Clothing     │        $269,255.19 │         $27,999.61 │             20.00% │
+    └──────────────────────┴────────────────────┴────────────────────┴────────────────────┘
     
     Top 3 Sales Orders:
-    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │
-    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    │ SPRT-702-S-BK-CA1     │                96 │           $295.33 │        $28,351.45 │         $4,536.23 │             16.00 │
-    │ OUTR-609-M-GR-JP1     │                92 │           $243.62 │        $22,412.59 │         $4,482.52 │             20.00 │
-    │ ACCS-437-S-GY-JP1     │                96 │           $268.76 │        $25,800.68 │         $4,128.11 │             16.00 │
-    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┐
+    │ Product ID           │      Quantity Sold │         Unit Price │        Total Sales │             Profit │  Profit Percentage │
+    ├──────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┤
+    │ SPRT-702-S-BK-CA1    │                 96 │            $295.33 │         $28,351.45 │          $4,536.23 │             16.00% │
+    │ OUTR-609-M-GR-JP1    │                 92 │            $243.62 │         $22,412.59 │          $4,482.52 │             20.00% │
+    │ ACCS-437-S-GY-JP1    │                 96 │            $268.76 │         $25,800.68 │          $4,128.11 │             16.00% │
+    └──────────────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┘
     
     Q2: Sales: $2,003,845.44, Profit: $244,961.30, Profit Percentage: 5.00%
     By Department:
-    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
-    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    │ Accessories           │       $209,829.83 │        $26,133.08 │             12.00 │
-    │ Children's Clothing   │       $262,972.68 │        $34,363.99 │             15.00 │
-    │ Footwear              │       $362,836.17 │        $43,653.95 │              5.00 │
-    │ Men's Clothing        │       $259,752.19 │        $29,271.83 │             15.00 │
-    │ Outerwear             │       $196,229.55 │        $22,143.81 │             14.00 │
-    │ Sportswear            │       $304,231.54 │        $36,642.49 │             10.00 │
-    │ Undergarments         │       $159,844.19 │        $20,731.42 │             19.00 │
-    │ Women's Clothing      │       $248,149.28 │        $32,020.74 │              6.00 │
-    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┐
+    │ Department           │              Sales │             Profit │  Profit Percentage │
+    ├──────────────────────┼────────────────────┼────────────────────┼────────────────────┤
+    │ Accessories          │        $209,829.83 │         $26,133.08 │             12.00% │
+    │ Children's Clothing  │        $262,972.68 │         $34,363.99 │             15.00% │
+    │ Footwear             │        $362,836.17 │         $43,653.95 │              5.00% │
+    │ Men's Clothing       │        $259,752.19 │         $29,271.83 │             15.00% │
+    │ Outerwear            │        $196,229.55 │         $22,143.81 │             14.00% │
+    │ Sportswear           │        $304,231.54 │         $36,642.49 │             10.00% │
+    │ Undergarments        │        $159,844.19 │         $20,731.42 │             19.00% │
+    │ Women's Clothing     │        $248,149.28 │         $32,020.74 │              6.00% │
+    └──────────────────────┴────────────────────┴────────────────────┴────────────────────┘
     
     Top 3 Sales Orders:
-    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │
-    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    │ CHLD-368-XL-WT-UK2    │                87 │           $290.23 │        $25,250.21 │         $4,292.54 │             17.00 │
-    │ SPRT-732-S-YL-UK2     │                86 │           $265.58 │        $22,839.86 │         $3,882.78 │             17.00 │
-    │ MENS-128-XL-WT-JP1    │                87 │           $222.23 │        $19,334.37 │         $3,673.53 │             19.00 │
-    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┐
+    │ Product ID           │      Quantity Sold │         Unit Price │        Total Sales │             Profit │  Profit Percentage │
+    ├──────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┤
+    │ CHLD-368-XL-WT-UK2   │                 87 │            $290.23 │         $25,250.21 │          $4,292.54 │             17.00% │
+    │ SPRT-732-S-YL-UK2    │                 86 │            $265.58 │         $22,839.86 │          $3,882.78 │             17.00% │
+    │ MENS-128-XL-WT-JP1   │                 87 │            $222.23 │         $19,334.37 │          $3,673.53 │             19.00% │
+    └──────────────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┘
     
     Q3: Sales: $2,261,407.77, Profit: $277,077.73, Profit Percentage: 18.00%
     By Department:
-    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
-    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    │ Accessories           │       $291,046.00 │        $36,782.43 │              9.00 │
-    │ Children's Clothing   │       $221,364.18 │        $26,993.37 │              7.00 │
-    │ Footwear              │       $237,884.17 │        $32,777.70 │             18.00 │
-    │ Men's Clothing        │       $332,047.47 │        $41,620.56 │              7.00 │
-    │ Outerwear             │       $217,888.26 │        $24,129.85 │             17.00 │
-    │ Sportswear            │       $325,778.95 │        $43,229.56 │             17.00 │
-    │ Undergarments         │       $292,301.79 │        $36,193.42 │              5.00 │
-    │ Women's Clothing      │       $343,096.95 │        $35,350.83 │             12.00 │
-    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┐
+    │ Department           │              Sales │             Profit │  Profit Percentage │
+    ├──────────────────────┼────────────────────┼────────────────────┼────────────────────┤
+    │ Accessories          │        $291,046.00 │         $36,782.43 │              9.00% │
+    │ Children's Clothing  │        $221,364.18 │         $26,993.37 │              7.00% │
+    │ Footwear             │        $237,884.17 │         $32,777.70 │             18.00% │
+    │ Men's Clothing       │        $332,047.47 │         $41,620.56 │              7.00% │
+    │ Outerwear            │        $217,888.26 │         $24,129.85 │             17.00% │
+    │ Sportswear           │        $325,778.95 │         $43,229.56 │             17.00% │
+    │ Undergarments        │        $292,301.79 │         $36,193.42 │              5.00% │
+    │ Women's Clothing     │        $343,096.95 │         $35,350.83 │             12.00% │
+    └──────────────────────┴────────────────────┴────────────────────┴────────────────────┘
     
     Top 3 Sales Orders:
-    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │
-    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    │ MENS-120-XL-BK-UK3    │                98 │           $235.28 │        $23,057.74 │         $4,611.55 │             20.00 │
-    │ OUTR-609-XS-OR-JP1    │                96 │           $270.57 │        $25,975.01 │         $4,156.00 │             16.00 │
-    │ WOMN-225-XS-RD-UK3    │                95 │           $247.99 │        $23,559.14 │         $3,533.87 │             15.00 │
-    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┐
+    │ Product ID           │      Quantity Sold │         Unit Price │        Total Sales │             Profit │  Profit Percentage │
+    ├──────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┤
+    │ MENS-120-XL-BK-UK3   │                 98 │            $235.28 │         $23,057.74 │          $4,611.55 │             20.00% │
+    │ OUTR-609-XS-OR-JP1   │                 96 │            $270.57 │         $25,975.01 │          $4,156.00 │             16.00% │
+    │ WOMN-225-XS-RD-UK3   │                 95 │            $247.99 │         $23,559.14 │          $3,533.87 │             15.00% │
+    └──────────────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┘
     
     Q4: Sales: $2,076,474.81, Profit: $255,995.79, Profit Percentage: 20.00%
     By Department:
-    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
-    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    │ Accessories           │       $230,203.59 │        $26,018.53 │             20.00 │
-    │ Children's Clothing   │       $208,243.96 │        $24,647.41 │              5.00 │
-    │ Footwear              │       $333,552.70 │        $37,319.89 │             15.00 │
-    │ Men's Clothing        │       $265,576.45 │        $29,605.44 │              9.00 │
-    │ Outerwear             │       $221,220.08 │        $31,250.72 │              6.00 │
-    │ Sportswear            │       $310,761.93 │        $39,728.56 │             16.00 │
-    │ Undergarments         │       $260,660.71 │        $36,903.27 │             19.00 │
-    │ Women's Clothing      │       $246,255.40 │        $30,521.98 │             20.00 │
-    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┐
+    │ Department           │              Sales │             Profit │  Profit Percentage │
+    ├──────────────────────┼────────────────────┼────────────────────┼────────────────────┤
+    │ Accessories          │        $230,203.59 │         $26,018.53 │             20.00% │
+    │ Children's Clothing  │        $208,243.96 │         $24,647.41 │              5.00% │
+    │ Footwear             │        $333,552.70 │         $37,319.89 │             15.00% │
+    │ Men's Clothing       │        $265,576.45 │         $29,605.44 │              9.00% │
+    │ Outerwear            │        $221,220.08 │         $31,250.72 │              6.00% │
+    │ Sportswear           │        $310,761.93 │         $39,728.56 │             16.00% │
+    │ Undergarments        │        $260,660.71 │         $36,903.27 │             19.00% │
+    │ Women's Clothing     │        $246,255.40 │         $30,521.98 │             20.00% │
+    └──────────────────────┴────────────────────┴────────────────────┴────────────────────┘
     
     Top 3 Sales Orders:
-    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │
-    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
-    │ UNDR-819-XS-BL-US2    │                87 │           $293.23 │        $25,510.94 │         $4,847.08 │             19.00 │
-    │ SPRT-710-S-OR-JP1     │                87 │           $279.28 │        $24,297.67 │         $4,130.60 │             17.00 │
-    │ SPRT-726-L-BL-JP1     │                94 │           $198.53 │        $18,662.13 │         $3,732.43 │             20.00 │
-    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    ┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┐
+    │ Product ID           │      Quantity Sold │         Unit Price │        Total Sales │             Profit │  Profit Percentage │
+    ├──────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┤
+    │ UNDR-819-XS-BL-US2   │                 87 │            $293.23 │         $25,510.94 │          $4,847.08 │             19.00% │
+    │ SPRT-710-S-OR-JP1    │                 87 │            $279.28 │         $24,297.67 │          $4,130.60 │             17.00% │
+    │ SPRT-726-L-BL-JP1    │                 94 │            $198.53 │         $18,662.13 │          $3,732.43 │             20.00% │
+    └──────────────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┘
 
     ```
 
@@ -643,9 +651,10 @@ namespace ReportGenerator
             var sortedQuarterlySalesByDepartment = quarterlySalesByDepartment[quarter.Key].OrderBy(d => d.Key);
 
             // Print table headers
-            Console.WriteLine("┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐");
-            Console.WriteLine("│      Department       │       Sales       │       Profit      │ Profit Percentage │");
-            Console.WriteLine("├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤");
+            Console.WriteLine("┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┐");
+            Console.WriteLine("║ {0,-20} │ {1,18} │ {2,18} │ {3,18} ║", "Department", "Sales", "Profit", "Profit Percentage");
+            Console.WriteLine("├──────────────────────┼────────────────────┼────────────────────┼────────────────────┤");
+
 
             foreach (KeyValuePair<string, double> department in sortedQuarterlySalesByDepartment)
             {
@@ -653,10 +662,10 @@ namespace ReportGenerator
                 string formattedDepartmentProfitAmount = quarterlyProfitByDepartment[quarter.Key][department.Key].ToString("C");
                 string formattedDepartmentProfitPercentage = quarterlyProfitPercentageByDepartment[quarter.Key][department.Key].ToString("F2");
 
-                Console.WriteLine("│ {0,-22}│ {1,17} │ {2,17} │ {3,17} │", department.Key, formattedDepartmentSalesAmount, formattedDepartmentProfitAmount, formattedDepartmentProfitPercentage);
+                Console.WriteLine("│ {0,-20} │ {1,18} │ {2,18} │ {3,17}% │", department.Key, formattedDepartmentSalesAmount, formattedDepartmentProfitAmount, formattedDepartmentProfitPercentage);
             }
 
-            Console.WriteLine("└───────────────────────┴───────────────────┴───────────────────┴───────────────────┘");
+            Console.WriteLine("└──────────────────────┴────────────────────┴────────────────────┴────────────────────┘");
             Console.WriteLine();
             }
         }
@@ -867,9 +876,9 @@ namespace ReportGenerator
             var sortedQuarterlySalesByDepartment = quarterlySalesByDepartment[quarter.Key].OrderBy(d => d.Key);
 
             // Print table headers
-            Console.WriteLine("┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐");
-            Console.WriteLine("│      Department       │       Sales       │       Profit      │ Profit Percentage │");
-            Console.WriteLine("├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤");
+            Console.WriteLine("┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┐");
+            Console.WriteLine("║ {0,-20} │ {1,18} │ {2,18} │ {3,18} ║", "Department", "Sales", "Profit", "Profit Percentage");
+            Console.WriteLine("├──────────────────────┼────────────────────┼────────────────────┼────────────────────┤");
 
             foreach (KeyValuePair<string, double> department in sortedQuarterlySalesByDepartment)
             {
@@ -877,7 +886,7 @@ namespace ReportGenerator
                 string formattedDepartmentProfitAmount = quarterlyProfitByDepartment[quarter.Key][department.Key].ToString("C");
                 string formattedDepartmentProfitPercentage = quarterlyProfitPercentageByDepartment[quarter.Key][department.Key].ToString("F2");
 
-                Console.WriteLine("│ {0,-22}│ {1,17} │ {2,17} │ {3,17} │", department.Key, formattedDepartmentSalesAmount, formattedDepartmentProfitAmount, formattedDepartmentProfitPercentage);
+                Console.WriteLine("│ {0,-20} │ {1,18} │ {2,18} │ {3,17}% │", department.Key, formattedDepartmentSalesAmount, formattedDepartmentProfitAmount, formattedDepartmentProfitPercentage);
             }
 
             Console.WriteLine("└───────────────────────┴───────────────────┴───────────────────┴───────────────────┘");
@@ -888,20 +897,19 @@ namespace ReportGenerator
             var top3SalesOrders = top3SalesOrdersByQuarter[quarter.Key];
 
             // Print table headers
-            Console.WriteLine("┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐");
-            Console.WriteLine("│      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │");
-            Console.WriteLine("├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤");
-
+            Console.WriteLine("┌──────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┬────────────────────┐");
+            Console.WriteLine("║ {0,-20} │ {1,18} │ {2,18} │ {3,18} │ {4,18} │ {5,18} ║", "Product ID", "Quantity", "Unit Price", "Total Sales", "Profit", "Profit Percentage");
+            Console.WriteLine("├──────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┼────────────────────┤");
             foreach (SalesData salesOrder in top3SalesOrders)
             {
                 double orderTotalSales = salesOrder.quantitySold * salesOrder.unitPrice;
                 double orderProfit = orderTotalSales - (salesOrder.quantitySold * salesOrder.baseCost);
                 double orderProfitPercentage = (orderProfit / orderTotalSales) * 100;
 
-                Console.WriteLine("│ {0,-22}│ {1,17} │ {2,17} │ {3,17} │ {4,17} │ {5,17} │", salesOrder.productID, salesOrder.quantitySold, salesOrder.unitPrice.ToString("C"), orderTotalSales.ToString("C"), orderProfit.ToString("C"), orderProfitPercentage.ToString("F2"));
+                Console.WriteLine("│ {0,-20} │ {1,18} │ {2,18} │ {3,18} │ {4,18} │ {5,17}% │", salesOrder.productID, salesOrder.quantitySold, salesOrder.unitPrice.ToString("C"), orderTotalSales.ToString("C"), orderProfit.ToString("C"), orderProfitPercentage.ToString("F2"));
             }
 
-            Console.WriteLine("└───────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘");
+            Console.WriteLine("└──────────────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┴────────────────────┘");
             Console.WriteLine();
             }
         }

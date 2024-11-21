@@ -33665,21 +33665,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/4-configure-integration-with-the-log-analytics-agent.md",
-      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
-      "redirect_document_id": false
-    },
-      {
-      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/5-knowledge-check.md",
-      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
-      "redirect_document_id": false
-    },
-      {
-      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/6-summary.md",
-      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/9-summary",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/cloud-adoption-framework-plan/4-exercise-digital-estate-assessment.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework-plan/3-exercise-cloud-adoption-plan",
       "redirect_document_id": false
@@ -34447,6 +34432,401 @@
     {
       "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/9-summary-resources.md",
       "redirect_url": "/training/modules/control-network-traffic-flow-with-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/cpp-first-program/1-introduction.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/cpp-first-program/2-exercise-hello-world.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/cpp-first-program/3-how-it-works.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/cpp-first-program/4-common-mistakes-errors.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/cpp-first-program/5-exercise-fixing-broken-code.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/cpp-first-program/6-summary.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/cpp-first-program/index.yml",
+      "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/4-set-security-event-option-workspace-level.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/5-configure-log-analytics-agent-workspace.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/6-create-edit-data-collection-rules-and-associations-in-azure-monitor.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/7-configure-integration-with-the-log-analytics-agent.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/4-configure-integration-with-the-log-analytics-agent",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/8-knowledge-check.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/5-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/9-summary.md",
+      "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/train-compute-intensive-models-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/use-notebooks-for-experimentation-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/automate-machine-learning-model-selection-azure-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/work-compute-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/work-data-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/2-choose-appropriate-inference-strategy.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/4-exercise-deploy-onnx-model-triton.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/5-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/3-standardize-model-formats-scale-model-deployment-onnx-triton.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/deploy-deep-learning-workloads-to-production-azure-machine-learning/6-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/2-choose-appropriate-ai-approach-for-your-data.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/3-efficient-data-storage-options.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/5-exercise-preprocess-data-rapids.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/4-optimize-data-loading-preprocessing.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/preprocesses-large-datasets-azure-machine-learning/7-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/3-choose-appropriate-nvidia-gpu-option.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/5-distributed-training.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/4-exercise-train-deep-learning-model.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/1-introduction.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/7-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/train-compute-azure-machine-learning/2-train-compute.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/train-models-azure-machine-learning-cli-v2/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/5-exercise-workspace.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/1-introduction.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/6-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/4-manage-workspace-assets.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/7-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/2-use-azure-cli-v2.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/3-workspace-cli-v2.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-machine-learning-model-managed-endpoint-cli-v2/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-machine-learning-model-managed-endpoint-cli-v2/3-deploy-model-managed-endpoint.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-machine-learning-model-managed-endpoint-cli-v2/4-exercise-deploy-your-model.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-machine-learning-model-managed-endpoint-cli-v2/2-explore-managed-online-endpoints.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-machine-learning-model-managed-endpoint-cli-v2/1-introduction.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-machine-learning-model-managed-endpoint-cli-v2/5-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-machine-learning-model-managed-endpoint-cli-v2/6-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-component-based-pipelines-azure-machine-learning-cli-v2/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-component-based-pipelines-azure-machine-learning-cli-v2/2-create-component.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-component-based-pipelines-azure-machine-learning-cli-v2/5-exercise.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-component-based-pipelines-azure-machine-learning-cli-v2/1-introduction.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-component-based-pipelines-azure-machine-learning-cli-v2/6-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-component-based-pipelines-azure-machine-learning-cli-v2/3-run-pipeline.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-component-based-pipelines-azure-machine-learning-cli-v2/4-run-pipeline-designer.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-component-based-pipelines-azure-machine-learning-cli-v2/7-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/3-exercise-create-basic-training-job.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/5-exercise-run-sweep-job.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/1-introduction.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/6-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/4-run-hyperparameter-tuning-job.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/2-run-python-script-as-training-job.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/run-jobs-azure-machine-learning-cli-v2/7-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-azure-machine-learning-jobs-submitted-cli-v2/index.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-azure-machine-learning-jobs-submitted-cli-v2/4-exercise-train-track-model-mlflow.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-azure-machine-learning-jobs-submitted-cli-v2/1-introduction.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-azure-machine-learning-jobs-submitted-cli-v2/5-knowledge-check.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-azure-machine-learning-jobs-submitted-cli-v2/3-manage-models-mlflow.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-azure-machine-learning-jobs-submitted-cli-v2/6-summary.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-mlflow-azure-machine-learning-jobs-submitted-cli-v2/2-track-view-model-metrics-mlflow.md",
+      "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
     }
   ]

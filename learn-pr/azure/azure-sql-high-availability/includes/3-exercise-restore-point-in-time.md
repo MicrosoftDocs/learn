@@ -82,7 +82,7 @@ These scripts should take three to five minutes to complete. Make sure to note y
         -Type "Standard_LRS"
     ```
 
-1. On your local computer, open SSMS and create a new connection to your logical server. For the server name, enter the name of your Azure SQL Database logical server. If you didn't save the name earlier, you might need to refer to the Azure portal to get it. For example: **aw-server\<unique ID>.database.windows.net**.  
+1. On your local computer, open SSMS and create a new connection to your logical server. For the server name, enter the name of your Azure SQL Database logical server. If you didn't save the name earlier, you might need to refer to the Azure portal to get it. For example: `aw-server\<unique ID>.database.windows.net`.  
 
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)

@@ -1,4 +1,7 @@
-
+---
+ms.custom:
+  - ignite-2024
+---
 The API for GraphQL in Microsoft Fabric supports two types of operations: queries (read) and mutations (write). 
 
 - **Queries:** Allow you to retrieve data from your data sources, making them ideal for read-only operations. This is relevant for data sources exposed via SQL Analytics Endpoints, which are inherently read-only in nature.

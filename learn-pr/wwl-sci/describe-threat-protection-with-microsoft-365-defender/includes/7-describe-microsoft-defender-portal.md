@@ -79,7 +79,7 @@ Within an incident, you analyze the alerts that affect your network, understand 
 - All the automated investigations triggered by the alerts in the incident.
 - All the supported evidence and response.
 
-If your organization is onboarded Microsoft to Copilot for Security you can also view an incident summary, guided responses, and more.
+If your organization is onboarded Microsoft to Security Copilot you can also view an incident summary, guided responses, and more.
 
 # [Incidents](#tab/incidents)
 :::image type="content" source="../media/incidents.png" lightbox="../media/incidents.png" alt-text="A screenshot of the Microsoft Defender portal incidents page.":::
@@ -91,7 +91,7 @@ If your organization is onboarded Microsoft to Copilot for Security you can also
 
 #### Hunting
 
-Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data, from Microsoft Defender XDR and Microsoft Sentinel. You can proactively inspect events in your network to locate threat indicators and entities, through hunting queries. Hunting queries can be created via the query editor, if you're familiar with Kusto Query Language (KQL), using a query builder, or through Copilot for Security. For users onboarded to Microsoft Copilot for Security, you can make a request or ask a question in natural language and Copilot for Security generates a KQL query that corresponds to the request.
+Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data, from Microsoft Defender XDR and Microsoft Sentinel. You can proactively inspect events in your network to locate threat indicators and entities, through hunting queries. Hunting queries can be created via the query editor, if you're familiar with Kusto Query Language (KQL), using a query builder, or through Security Copilot. For users onboarded to Microsoft Security Copilot, you can make a request or ask a question in natural language and Security Copilot generates a KQL query that corresponds to the request.
 
 You can use the same threat hunting queries to build custom detection rules. These rules run automatically to check for and then respond to suspected breach activity, misconfigured machines, and other findings.
 

@@ -1,3 +1,6 @@
+
+
+
 Most applications include a large number of execution paths. For example, an application could implement different execution paths based on which menu option a user selects. Developers refer to the code that implements different execution paths as *code branches*.
 
 The most widely used code branching statement is the `if` statement. The `if` statement relies on a Boolean expression that is enclosed in a set of parentheses. If the expression is true, the code after the `if` statement is executed. If not, the .NET runtime ignores the code and doesn't execute it.
@@ -167,7 +170,7 @@ A code block is a collection of one or more lines of code that are defined by an
 You should also know that code blocks can contain other code blocks. In fact, it's common for one code block to be "nested" inside another code block in your applications. You'll begin nesting your own code blocks later in this module when you create one `if` statement inside the code block of another.
 
 > [!NOTE]
-> The C# training series on Microsoft Learn devotes an entire module to understanding code blocks. Code blocks are central to understanding code organization and structure, and they define the boundaries of variable scope. See the module `[Control variable scope and logic using code blocks in C#](TBD)`.
+> The C# training series on Microsoft Learn devotes an entire module to understanding code blocks. Code blocks are central to understanding code organization and structure, and they define the boundaries of variable scope. For more information on code blocks, see the module titled "Control variable scope and logic using code blocks in C#".
 
 ## Add another if statement to implement the doubles bonus
 

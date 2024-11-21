@@ -35,7 +35,7 @@ As an administrator, you can choose the methods to use when you configure SSPR. 
 | Office phone | Provide a nonmobile phone number. | You receive an automated call to this number and press #. |
 | Security questions | Select questions such as "In what city was your mother born?" and save their responses. | Answer the questions. |
 
-In free and trial Microsoft Entra organizations, phone call options aren't supported.
+In trial Microsoft Entra organizations, phone call options aren't supported.
 
 ### Require the minimum number of authentication methods
 
@@ -66,7 +66,7 @@ Administrators can choose how users are notified of password changes. There are 
 
 ## License requirements
 
-There are three editions of Microsoft Entra ID: free, Premium P1, and Premium P2. The password-reset functionality you can use depends on your edition.
+There are two editions of Microsoft Entra ID, Premium P1 and Premium P2. The password-reset functionality you can use depends on your edition.
 
 Any user who is signed in can change their password, regardless of the edition of Microsoft Entra ID.
 
@@ -76,6 +76,6 @@ In a hybrid situation, where you have Active Directory on-premises and Microsoft
 
 ## SSPR deployment options
 
-You can deploy SSPR with password writeback by using [Microsoft Entra Connect](/azure/active-directory/authentication/tutorial-enable-sspr-writeback) or [cloud sync](/azure/active-directory/authentication/tutorial-enable-cloud-sync-sspr-writeback), depending on user needs. You can deploy each option side-by-side in different domains to target different sets of users. This helps existing users on-premises to write back password changes, while adding an option for users in disconnected domains because of a company merger or split. Users from an existing on-premises domain can use Microsoft Entra Connect, while new users from a merger can use cloud sync in another domain.
+You can deploy SSPR with password writeback by using [Microsoft Entra Connect](/entra/identity/authentication/tutorial-enable-sspr-writeback/) or [cloud sync](/entra/identity/authentication/tutorial-enable-cloud-sync-sspr-writeback/), depending on user needs. You can deploy each option side-by-side in different domains to target different sets of users. This helps existing users on-premises to write back password changes, while adding an option for users in disconnected domains because of a company merger or split. Users from an existing on-premises domain can use Microsoft Entra Connect, while new users from a merger can use cloud sync in another domain.
 
-Cloud sync can also provide higher availability, because it doesn't rely on a single instance of Microsoft Entra Connect. For a feature comparison between the two deployment options, see [Comparison between Microsoft Entra Connect and cloud sync](/azure/active-directory/cloud-sync/what-is-cloud-sync#how-is-azure-ad-connect-cloud-sync-different-from-azure-ad-connect-sync).
+Cloud sync can also provide higher availability, because it doesn't rely on a single instance of Microsoft Entra Connect. For a feature comparison between the two deployment options, see [Comparison between Microsoft Entra Connect and cloud sync](/entra/identity/hybrid/cloud-sync/what-is-cloud-sync#how-is-azure-ad-connect-cloud-sync-different-from-azure-ad-connect-sync/).

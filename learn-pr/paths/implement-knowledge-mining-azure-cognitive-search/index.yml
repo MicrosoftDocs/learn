@@ -10,6 +10,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+  adobe-target: true
 title: Implement knowledge mining with Azure AI Search
 prerequisites: |
   - Familiarity with Microsoft Azure

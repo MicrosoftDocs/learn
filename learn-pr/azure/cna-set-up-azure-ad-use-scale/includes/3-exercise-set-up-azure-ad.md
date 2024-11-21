@@ -10,11 +10,12 @@ In this exercise, you'll:
 
 To perform this exercise, you need:
 
-* An Azure subscription.
+* An Azure account with an active subscription. If you don't have an Azure account, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin. It's recommended to use a test environment, like a free account, for this module.
+* The Azure account must have permissions to manage applications. For more information about Entra roles and using the principle of least privilege, see the [best practices for Microsoft Entra roles](/entra/identity/role-based-access-control/best-practices) and [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 * A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 
-    > [!NOTE]
-    > The exercises in this module perform sensitive operations and require very high privileges so, as such, should be performed within an isolated lab environment. If you don't have access to such an environment, consider using for this purpose an Azure Trial subscription.
+> [!WARNING]
+> Use a test environment because the exercises in this module perform sensitive operations that require elevated administrative privileges.
 
 <a name='create-azure-ad-user-and-group-objects-in-the-azure-ad-tenant-associated-with-your-azure-subscription'></a>
 

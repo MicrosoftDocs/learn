@@ -54,13 +54,13 @@ Here, you create a Linux VM to host your web server.
     ```json
     {
       "fqdns": "",
-      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/680469d8-edB7-42ec-b118-cd80d51741e7/providers/Microsoft.Compute/virtualMachines/support-web-vm01",
+      "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/providers/Microsoft.Compute/virtualMachines/support-web-vm01",
       "location": "eastus",
       "macAddress": "00-0D-3A-10-63-0A",
       "powerState": "VM running",
       "privateIpAddress": "10.0.0.4",
       "publicIpAddress": "104.211.38.211",
-      "resourceGroup": "680469d8-edB7-42ec-b118-cd80d51741e7",
+      "resourceGroup": "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e",
       "zones": ""
     }
     ```

@@ -1,6 +1,6 @@
-There are several different business processes that run your bicycle rental business. For example, there's the bike rental process, a return process, a bike booking process, and processes that don't directly relate to bikes, such as holiday booking for the staff.
+There are several different business processes that run your bicycle-rental business. For example, there's the bike-rental process, a return process, a bike-booking process, and processes that don't directly relate to bikes, such as holiday booking for the staff.
 
-We've introduced an array of Azure technologies that could be used to help build these processes. Let's try to be more concrete about how we make the decision for a given process.
+We've introduced an array of Azure technologies that you could use to help build these processes. Let's try to be more concrete about how we make the decision for a given process.
 
 ## How to choose a service
 
@@ -24,9 +24,9 @@ If you choose to use a design-first approach, you must also choose from Microsof
 
 The principal question here is who will design the workflow: will it be developers or users?
 
-In Logic Apps, there is a visual designer on which you draw out the workflow. It's intuitive and easy to use but you also have the opportunity to look under the hood and edit the source code for a workflow. This tool is designed for people with development skills.
+In Logic Apps, there's a visual designer on which you draw out the workflow. It's intuitive and easy to use, but you also have the opportunity to look under the hood and edit a workflow's source code. This tool is designed for people with development skills.
 
-In Microsoft Power Automate, extra help and templates are provided for common types of workflow. There's no way to edit the source code that the tool creates. This tool is designed for users who have a good understanding of the business process but no coding skills.
+In Microsoft Power Automate, extra help and templates are provided for common types of workflow. There's no way to edit the source code that the tool creates. This tool is designed for users who have a good understanding of the business process, but no coding skills.
 
 ## Choose a :::no-loc text="code-first"::: technology
 
@@ -43,4 +43,4 @@ Because of the extra features that are included with Azure Functions, including 
 
 Remember that there's no requirement for you to use the same technology for different workflows: if your requirements differ, you're likely to reach a different answer at the end of your decision-making process. Furthermore, you can also call one workflow from another. For example, a workflow implemented in Microsoft Power Automate can easily call another that is built as an Azure Function.
 
-One reason to mix the technologies used in your business processes would be to give users control over a small section of a complete workflow. Do this by implementing that section in Microsoft Power Automate, then call that flow from a Logic App, WebJob, or Function.
+One reason to mix the technologies used in your business processes would be to give users control over a small section of a complete workflow. You can do this by implementing that section in Microsoft Power Automate, then calling that flow from a Logic App, WebJob, or Function.

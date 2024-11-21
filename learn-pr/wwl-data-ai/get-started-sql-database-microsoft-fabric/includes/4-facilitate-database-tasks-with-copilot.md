@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - ignite-2024
+---
 In today's fast-paced tech world, understanding AI is essential for enhancing applications and staying competitive. SQL Database in Fabric is key to this transformation, offering a robust platform for integrating AI. With capabilities like Natural Language to SQL, code completion, quick actions, and intelligent insights, it empowers users to harness AI, and boost application performance. 
 
 These tools enable the creation of intelligent, responsive, and efficient applications that meet modern user demands.
