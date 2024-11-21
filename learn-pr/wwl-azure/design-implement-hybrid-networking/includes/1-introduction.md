@@ -6,13 +6,14 @@ When an organization migrates resources and services to Azure, network architect
 
 In this module, you will:
 
- -  Design and implement a site-to-site VPN connection
- -  Design and implement a point-to-site VPN connection
- -  Design and implement authentication for point-to-site VPN connections
- -  Design and implement Azure Virtual WAN
+ -  Design and implement a site-to-site VPN connection.
+ -  Design and implement a point-to-site VPN connection.
+ -  Design and implement authentication for point-to-site VPN connections.
+ -  Design and implement Azure Virtual WAN.
 
 ## Prerequisites
 
- -  You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
- -  You should have experience with network connectivity methods, such as VPN or WAN
- -  You should have experience with the Azure portal and Azure PowerShell
+ -  You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing.
+ -  You should have experience with network connectivity methods, such as VPN or WAN.
+ -  You should have experience with the Azure portal and Azure PowerShell.
+
