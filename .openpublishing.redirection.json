@@ -34831,7 +34831,7 @@
     },
     {
       "source_path": "learn-pr/paths/migrate-aspnet-web-application/index.yml",
-      "redirect_url": "https://learn.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs",
+      "redirect_url": "https://learn.microsoft.com/dotnet/azure/migration/app-service",
       "redirect_document_id": false
     },
     {
