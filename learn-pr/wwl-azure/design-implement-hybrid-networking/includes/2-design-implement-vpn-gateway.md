@@ -134,7 +134,7 @@ The local network gateway typically refers to the on-premises location. You give
 
 ### Configure the on-premises VPN device
 
-There's a validated list of standard VPN devices that work well with the VPN gateway. This list was created in partnership with device manufacturers like Cisco, Juniper, Ubiquiti, and Barracuda Networks.
+There's a validated list of standard VPN devices that work well with the VPN gateway. This list was created in partnership with device manufacturers like Cisco, Juniper, and Barracuda Networks.
 
 When your device isn't listed in the validated VPN devices table, the device may still work. Contact your device manufacturer for support and configuration instructions.
 
@@ -220,7 +220,7 @@ The most reliable option is to combine the active-active gateways on both your n
 
 Here you create and set up the Azure VPN gateway in an active-active configuration and create two local network gateways and two connections for your two on-premises VPN devices. The result is a full mesh connectivity of 4 IPsec tunnels between your Azure virtual network and your on-premises network.
 
-All gateways and tunnels are active from the Azure side, so the traffic is spread among all four tunnels simultaneously. Although each TCP or UDP flow follows the same tunnel or path from the Azure side. Even though by spreading the traffic, you may see slightly better throughput over the IPsec tunnels, the primary goal of this configuration is for high availability. And due to the statistical nature of the spreading, it's difficult to provide the measurement on how different application traffic conditions affects the aggregate throughput.
+All gateways and tunnels are active from the Azure side, so the traffic is spread among all four tunnels simultaneously. By spreading the traffic, you may see slightly better throughput over the IPsec tunnels, the primary goal of this configuration is for high availability. And due to the statistical nature of the spreading, it's difficult to provide the measurement on how different application traffic conditions affects the aggregate throughput.
 
 This topology requires two local network gateways and two connections to support the pair of on-premises VPN devices, and BGP is required to allow the two connections to the same on-premises network. 
 

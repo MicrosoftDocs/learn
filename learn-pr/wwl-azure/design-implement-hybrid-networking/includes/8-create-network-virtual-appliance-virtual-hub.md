@@ -14,9 +14,9 @@ The following diagram shows the NVA deployment process:
 To deploy an NVA in your virtual hub, you can access the Azure Marketplace through the Azure portal and select the Managed Application for the NVA partner that you need to enable connectivity for your devices. When you create an NVA in the Virtual WAN hub, like all Managed Applications, there are two Resource Groups created in your subscription.
 
  -  **Customer Resource Group** \- This contains an application placeholder for the Managed Application. Partners can use this resource group to expose whatever customer properties they choose here.
- -  **Managed Resource Group** \- Customers can't configure or change resources in this resource group directly, as this is controlled by the publisher of the Managed Application. This Resource Group contains the NetworkVirtualAppliances resource.
+ -  **Managed Resource Group** \- Customers can't configure or change resources in this resource group directly.
 
-The NVA is configured automatically as part of the deployment process. Once the NVA is provisioned into the virtual hub, any additional configuration must be performed via the NVA partners portal or management application. You can't access the NVA directly.
+The NVA is configured automatically as part of the deployment process. Once the NVA is provisioned you can't access the NVA directly.
 
 Unlike Azure VPN Gateway configurations, you don't need to create Site resources, Site-to-Site connection resources, or point-to-site connection resources to connect your branch sites to your NVA in the Virtual WAN hub. This is all managed via the NVA partner.
 
@@ -41,15 +41,15 @@ In this step, you create a Network Virtual Appliance in the hub. The procedure f
      -  **Subscription -** Choose the subscription you used to deploy the Virtual WAN and hub.
      -  **Resource Group** \- Choose the same Resource Group you used to deploy the Virtual WAN and hub.
      -  **Region** \- Choose the same Region in which your Virtual hub resource is located.
-     -  **Application Name** \- The Barracuda NextGen WAN is a Managed Application. Choose a name that makes it easy to identify this resource, as this is what it will be called when it appears in your subscription.
-     -  **Managed Resource Group** \- This is the name of the Managed Resource Group in which Barracuda will deploy resources that are managed by them. The name should be prepopulated.
+     -  **Application Name** \- The Barracuda NextGen WAN is a Managed Application. Choose a name that makes it easy to identify this resource.
+     -  **Managed Resource Group** \- All resources are deployed to this group. 
 6.  Select the Next: CloudGen WAN gateway button. 
 :::image type="content" source="../media/barracuda-cloudgen-wan-ebe559b5.png" alt-text="Screenshot of the Barracuda configuration page. ":::
     
 7.  Provide the following information here:
     
      -  **Virtual WAN Hub** \- The Virtual WAN hub you want to deploy this NVA into.
-     -  **NVA Infrastructure Units** \- Indicate the number of NVA Infrastructure Units you want to deploy this NVA with. Choose the amount of aggregate bandwidth capacity you want to provide across all of the branch sites that will be connecting to this hub through this NVA.
+     -  **NVA Infrastructure Units** \- Indicate the number of NVA Infrastructure Units you want to deploy this NVA with. Choose the amount of aggregate bandwidth capacity you want to provide across all of the branch sites.
      -  **Token** \- Barracuda requires that you provide an authentication token here in order to identify yourself as a registered user of this product. 
 
 ### NVA Infrastructure Units

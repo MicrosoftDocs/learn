@@ -41,7 +41,7 @@ The RADIUS server is deployed either on-premises or in your Azure VNet. During a
 
 The RADIUS server can also integrate with certificate services. Integrating the RADIUS server with certificate services means you don’t need to upload root certificates and revoked certificates to Azure.
 
-A RADIUS server can also integrate with other external identity systems, such as multi-factor authentication.
+A RADIUS server can also integrate with other external identity systems, such as multifactor authentication.
 
 :::image type="content" source="../media/p2s-authenticate-with-ad-b603595a.png" alt-text="Diagram of client RADIUS authentication.":::
 
