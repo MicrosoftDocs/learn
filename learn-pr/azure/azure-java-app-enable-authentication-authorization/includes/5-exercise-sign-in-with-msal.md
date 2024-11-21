@@ -51,7 +51,7 @@ To configure the code, open the application project in your preferred IDE like I
 
 1. Find the resulting **.war** file at **./target/msal4j-servlet-graph.war**. To deploy to Tomcat, copy this **.war** file to the **/webapps/** directory in your Tomcat installation directory and start the Tomcat server.
 
-1. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You're be redirected to sign in with Microsoft Entra ID. On successful sign-in, you should see a page like the following:
+1. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You're redirected to sign in with Microsoft Entra ID. On successful sign-in, you should see a page like the following:
 
    :::image type="content" source="../media/app-sign-in.png" alt-text="Screenshot showing user name displayed on the page after successfully signing in to sample application.":::
 
@@ -73,7 +73,7 @@ To add authentication to your application, you need to include the servlet class
    </dependency>
    ```
 
-1. The first step of the sign-in process is to send a request to the Microsoft Entra tenant's `/authorize` endpoint. The MSAL4J `ConfidentialClientApplication` instance is leveraged to construct an authorization request URL. The app redirects the browser to this URL, which is where the user signs in.The following code is an excerpt from the implementation of the `redirectToAuthorizationEndpoint` method in the `AuthHelper` class.
+1. The first step of the sign-in process is to send a request to the Microsoft Entra tenant's `/authorize` endpoint. The MSAL4J `ConfidentialClientApplication` instance is leveraged to construct an authorization request URL. The app redirects the browser to this URL, which is where the user signs in. The following code is an excerpt from the implementation of the `redirectToAuthorizationEndpoint` method in the `AuthHelper` class.
 
    ```java
    final ConfidentialClientApplication client = getConfidentialClientInstance();
