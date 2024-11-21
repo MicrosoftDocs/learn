@@ -16,9 +16,9 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What version of vCenter is deployed with AVS?"
+  - content: "What version of vCenter Server is deployed with Azure VMware Solution?"
     choices:
-    - content: "7.0 Update 3c"
+    - content: "7.0 Update 3o"
       isCorrect: true
       explanation: "AVS deploys with vSphere 7.0 Update 3c."
     - content: "7.0 Update 1"
@@ -35,6 +35,6 @@ quiz:
     - content: "8"
       isCorrect: false
       explanation: "For a minimum deployment, AVS requires fewer than eight nodes."
-    - content: "3"
+    - content: "2"
       isCorrect: true
       explanation: "For a minimum deployment, AVS requires three nodes."
