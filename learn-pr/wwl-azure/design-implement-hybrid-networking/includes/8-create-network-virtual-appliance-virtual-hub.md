@@ -16,9 +16,9 @@ To deploy an NVA in your virtual hub, you can access the Azure Marketplace throu
  -  **Customer Resource Group** \- This contains an application placeholder for the Managed Application. Partners can use this resource group to expose whatever customer properties they choose here.
  -  **Managed Resource Group** \- Customers can't configure or change resources in this resource group directly.
 
-The NVA is configured automatically as part of the deployment process. Once the NVA is provisioned you can't access the NVA directly.
+The NVA is configured automatically as part of the deployment process. Once the NVA is provisioned, you can't access the NVA directly.
 
-Unlike Azure VPN Gateway configurations, you don't need to create Site resources, Site-to-Site connection resources, or point-to-site connection resources to connect your branch sites to your NVA in the Virtual WAN hub. This is all managed via the NVA partner.
+Unlike Azure VPN Gateway configurations, you don't need to create Site resources, Site-to-Site connection resources, or point-to-site connection resources to connect your branch sites to your NVA in the Virtual WAN hub. 
 
 You still need to create Hub-to-VNet connections to connect your Virtual WAN hub to your Azure VNets.
 
@@ -33,7 +33,8 @@ In this step, you create a Network Virtual Appliance in the hub. The procedure f
 3.  On the Network Virtual Appliance blade, select Barracuda CloudGen WAN, then select the Create button. 
 :::image type="content" source="../media/select-nva-0c5ab0b6.png" alt-text="Screenshot of Network Virtual Appliance configuration blade in Azure portal.":::
     
-4.  This takes you to the Azure Marketplace offer for the Barracuda CloudGen WAN gateway. Read the terms, then select the **Create** button when you're ready. 
+4.  The Azure Marketplace offers the Barracuda CloudGen WAN gateway. Read the terms, then select the **Create** button when you're ready. 
+
 :::image type="content" source="../media/barracuda-create-basics-d11c3a3c.png" alt-text="Screenshot of creating a Barracuda CloudGen WAN gateway.":::
     
 5.  On the Basics page you need to provide the following information:

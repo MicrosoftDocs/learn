@@ -1,6 +1,6 @@
-Your organization is migrating to Azure and evaluating a global transit network architecture. This network must support a growing number of distributed offices. As the network engineer you need to design and implement a hybrid connectivity solution.
+Your organization is migrating to Azure and evaluating a global transit network architecture. This network must support a growing number of distributed offices. As the network engineer, you need to design and implement a hybrid connectivity solution.
 
-When an organization migrates resources and services to Azure, network architects and engineers must ensure that communication between the on-premises environment and Azure workloads is both secure and reliable.
+Network architects and engineers ensure that communication between the on-premises environment and Azure workloads is both secure and reliable.
 
 ## Learning objectives
 
