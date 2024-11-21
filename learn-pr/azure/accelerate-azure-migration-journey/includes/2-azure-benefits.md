@@ -39,7 +39,7 @@ The Microsoft global wide area network (WAN) plays an essential part in deliveri
 
 ### Availability zones
 
-An [availability zone](/azure/availability-zones/az-overview?azure-portal=true) is a unique physical location within an Azure region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.
+An [availability zone](/azure/reliability/availability-zones-overview?azure-portal=true) is a unique physical location within an Azure region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.
 
 To ensure resiliency, there's a minimum of three separate zones in all enabled regions. The physical separation of availability zones within a region protects applications and data from datacenter failures. Zone-redundant services replicate your applications and data across availability zones to protect from single-points-of-failure. With availability zones, Azure offers an industry best 99.99% VM uptime. The complete [Azure service-level agreement (SLA)](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) explains the guaranteed availability of Azure as a whole.
 

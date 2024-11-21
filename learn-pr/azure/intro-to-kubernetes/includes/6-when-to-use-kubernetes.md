@@ -33,10 +33,10 @@ You want to use Kubernetes when your company:
 
 Not all applications need to run in Kubernetes. As a result, Kubernetes might not be a good fit for your company.
 
-For example, the effort in containerization and deployment of a monolithic app might be more than the benefits of running the app in Kubernetes. A monolithic architecture can't easily use features such as individual component scaling or updates.
+For example, the effort in containerizing and deploying a monolithic app might be more than the benefits of running the app in Kubernetes. A monolithic architecture can't easily use features such as individual component scaling or updates.
 
 Kubernetes can introduce many business benefits for software development, deployment, management, and streamlining of processes. However, Kubernetes has a steep learning curve. The modular design of Kubernetes introduces potentially new concepts that affects teams across your company.
 
-Your development teams have to embrace modern design concepts when developing and designing apps. These concepts include using microservices and containerizing these services. Teams also needs to experiment with container and orchestration environments to make the best use of all the available options.
+Your development teams have to embrace modern design concepts when developing and designing apps. These concepts include using microservices and containerizing these services. Teams also need to experiment with container and orchestration environments to make the best use of all the available options.
 
 If your company isn't ready to adopt this change, Kubernetes might not be a good fit for your company.
