@@ -10,7 +10,7 @@ You can use cost analysis to intuitively analyze the pretax costs that are on yo
 
 The following images are examples with fictitious costs.
 
-1. To [analyze costs](/azure/cost-management-billing/costs/quick-acm-cost-analysis) on your invoice, select **Cost Management + Billing**, and then **Cost Mangaement**. Under **Reporting + analytics** select **Cost analysis**.
+1. To [analyze costs](/azure/cost-management-billing/costs/quick-acm-cost-analysis) on your invoice, select **Cost Management + Billing**, and then **Cost Management**. Under **Reporting + analytics** select **Cost analysis**.
 1. In **Cost analysis**, you can select the scope of the billing account. You can then select the appropriate billing profile that's associated with the invoice and the invoiced currency.  
     :::image type="content" source="../media/03-select-billing-account.png" alt-text="Screenshot that shows how to select a billing account scope in Cost Management." lightbox="../media/03-select-billing-account.png" :::
     :::image type="content" source="../media/03-select-billing-profile.png" alt-text="Sreenshot that shows how to select a billing profile under the account scope." lightbox="../media/03-select-billing-profile.png" :::

@@ -1,4 +1,4 @@
-Costs are organized by different Azure entity hierarchies. It's important to understand the hierarchies before evaluating your bill and the tools available in Azure to manage Fabrikam's costs. 
+Different Azure entity hierarchies organize costs. It's important to understand the hierarchies before evaluating your bill and the tools available in Azure to manage Fabrikam's costs. 
 
 ## Scopes and hierarchies
 
@@ -6,11 +6,11 @@ Two hierarchies are applicable to Microsoft Cost Management. Each node in either
 
 The Azure *billing hierarchy* is in your partner tenant. Cost Management uses the billing hierarchy specifically to manage your organization's billing data and invoices. Cost Management uses the billing hierarchy's permission roles to manage payments, costs, and accounts. The permission roles are *global admin* and *admin agent* for a direct partner or an indirect partner, as set in Partner Center.
 
-Contoso's subscriptions and resources themselves are in the Azure *resource entity* hierarchy. This hierarchy is located in the customer's (Contoso's) tenant. Resource management and the associated permissions are governed by Azure role-based access control (RBAC).
+Contoso's subscriptions and resources themselves are in the Azure *resource entity* hierarchy. This hierarchy is located in the customer's (Contoso's) tenant. Azure role-based access control (RBAC) govern resource management and the associated permissions.
 
 We'll focus on only Fabrikam's billing hierarchy in this module. To learn more about the scopes available to Contoso in its tenant, see [Azure RBAC scopes](/azure/cost-management-billing/costs/understand-work-scopes?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn#azure-rbac-scopes).
 
-The following diagram shows the full hierarchical structure of Cost Management scopes that are available to Microsoft Cloud Solution Provider (CSP) partners. Scopes for the Azure billing hierarchy are shown on the left in the partner tenant, your Fabrikam tenant. Scopes for the Azure resource entity are on the right in the customer's tenant, Contoso. They're colored orange.
+The following diagram shows the full hierarchical structure of Cost Management scopes that are available to Microsoft Cloud Solution Provider (CSP) partners. Scopes for the Azure billing hierarchy are shown in the partner tenant, your Fabrikam tenant. Scopes for the Azure resource entity are in the customer's tenant, Contoso. They're colored orange.
 
 ![Diagram that shows Fabrikam's scopes for the billing hierarchy.](../media/02-hierarchy-diagram.png)
 

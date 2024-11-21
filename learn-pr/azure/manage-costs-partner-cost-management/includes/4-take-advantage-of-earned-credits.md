@@ -8,7 +8,7 @@ To learn more about important eligibility conditions to receive partner earned c
 
 In Microsoft Cost Management, Fabrikam can use cost analysis to view costs that received partner earned credits. Take the following steps:
 
-1. In the Azure portal, sign into Fabrikam's tenant and select **Cost Management + Billing**. Select  **Cost Management**, and under **Reporting + anayltics** select **Cost analysis**.
+1. In the Azure portal, sign into Fabrikam's tenant and select **Cost Management + Billing**. Select  **Cost Management**, and under **Reporting + analytics** select **Cost analysis**.
 2. The **Cost analysis** view shows costs of the billing account for the partner. Select the scope of **Billing Profile** or a specific **Customer** scope.
 3. In a donut chart, select the drop-down list and select **PartnerEarnedCreditApplied** to drill into costs related to partner earned credit.  
     :::image type="content" source="../media/04-partner-earned-credit-applied.png" alt-text="Screenshot that shows partner earned credits." lightbox="../media/04-partner-earned-credit-applied.png" :::
