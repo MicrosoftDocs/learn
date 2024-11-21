@@ -26,7 +26,7 @@ quiz:
     - content: "Organizations that don't want to use cloud services."
       isCorrect: false
       explanation: "Incorrect. Azure VMware Solution isn't for customers who don't want to use cloud services."
-    - content: "Customers who don't want a fast path to the cloud by migrating existing assets 'as is'".
+    - content: "Customers who don't want a fast path to the cloud by migrating existing assets 'as is'."
       isCorrect: false
       explanation: "Incorrect. Azure VMware Solution is well suited for customers who want a fast path to the cloud by migrating existing assets *as is*."
   - content: "Which scenario isn't a good option for Azure VMware Solution?"
