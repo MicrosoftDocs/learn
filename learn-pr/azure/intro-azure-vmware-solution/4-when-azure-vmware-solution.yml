@@ -20,13 +20,13 @@ quiz:
   questions:
   - content: "Which business need is best suited for Azure VMware Solution?"
     choices:
-    - content: "Enterprises that want to reduce their datacenter footprint."
+    - content: "Enterprises that want to reduce their data center footprint."
       isCorrect: true
       explanation: "Correct. Enterprises that want to get out of the datacenter business can use Azure as a way to enable decommissioning of legacy infrastructure."
     - content: "Organizations that don't want to use cloud services."
       isCorrect: false
       explanation: "Incorrect. Azure VMware Solution isn't for customers who don't want to use cloud services."
-    - content: "Customers who don't want a fast path to the cloud by migrating existing assets 'as is'"
+    - content: "Customers who don't want a fast path to the cloud by migrating existing assets 'as is'".
       isCorrect: false
       explanation: "Incorrect. Azure VMware Solution is well suited for customers who want a fast path to the cloud by migrating existing assets *as is*."
   - content: "Which scenario isn't a good option for Azure VMware Solution?"
