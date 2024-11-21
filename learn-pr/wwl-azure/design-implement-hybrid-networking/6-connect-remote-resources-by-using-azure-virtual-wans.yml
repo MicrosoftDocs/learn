@@ -39,4 +39,4 @@ quiz:
       explanation: "Incorrect. A /25 address space causes an error."
     - content: "/32"
       isCorrect: false
-      explanation: "Incorrect. A /32 address speace causes an error."
+      explanation: "Incorrect. A /32 address space causes an error."
