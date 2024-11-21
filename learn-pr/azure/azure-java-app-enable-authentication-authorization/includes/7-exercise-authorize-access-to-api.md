@@ -4,21 +4,21 @@ In this exercise, you configure the application with permissions and use MSAL to
 
 Web services secured by Microsoft Entra ID define a set of permissions that provide access to the API functionality and data exposed by that service. Before an application can access data or act on a user's behalf, it must request these permissions to be approved by the users. You can assign these API permissions to your app registration from the Azure portal. Here are the steps to assign Microsoft Graph API permissions to your application.
 
-1. In the `App registrations` screen, select the **API permissions** blade in the left to add access to the APIs that your application needs.
+1. On the **App registrations** screen, select **API permissions** to add access to the APIs that your application needs.
 
-   :::image type="content" source="../media/api-permissions.png" alt-text="Screenshot showing the menu of API permissions blade of an app registered with Microsoft Entra ID on Azure portal.":::
+   :::image type="content" source="../media/api-permissions.png" alt-text="Screenshot that shows the menu of API permissions pane of an app registered with Microsoft Entra ID on Azure portal." lightbox="../media/api-permissions.png":::
 
-   - Select the **+ Add a permission** button.
+   - Select **Add a permission**.
 
    - Ensure that the **Microsoft APIs** tab is selected.
 
-   - In the *Commonly used Microsoft APIs* section, select **Microsoft Graph**, then select **Delegated permissions**.
+   - In the **Commonly used Microsoft APIs** section, select **Microsoft Graph**, then select **Delegated permissions**.
 
-   - In the **Delegated permissions** section, scroll down and select the **User.Read** in the list.  This particular permission is for accessing the information of the signed-in user from the `https://graph.microsoft.com/v1.0/me` endpoint.
+   - In the **Delegated permissions** section, scroll down and select **User.Read** in the list. This particular permission is for accessing the information of the signed-in user from the `https://graph.microsoft.com/v1.0/me` endpoint.
 
-   - Click on the **Add permissions** button in the bottom.
+   - Select **Add permissions**.
 
-   :::image type="content" source="../media/api-add-permissions.png" alt-text="Screenshot showing the API permissions blade of an app registered with Microsoft Entra ID on Azure portal.":::
+     :::image type="content" source="../media/api-add-permissions.png" alt-text="Screenshot that shows the API permissions pane of an app registered with Microsoft Entra ID on Azure portal." lightbox="../media/api-add-permissions.png":::
 
 ## Run the application
 
@@ -26,9 +26,9 @@ You can try the Graph API call on the application that you have running from the
 
 1. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. If you're not already signed in, you're redirected to sign in with Microsoft Entra ID. On successful sign-in, you should see a page as shown in the following image.
 
-   :::image type="content" source="../media/app-sign-in.png" alt-text="Screenshot showing the button to call graph displayed on the page after successfully signing in to sample application.":::
+   :::image type="content" source="../media/app-sign-in.png" alt-text="Screenshot that shows the button to call graph displayed on the page after successfully signing in to sample application.":::
 
-1. Select the **Call Graph** button to make a call to Microsoft Graph's `/me` endpoint and see the user details displayed.
+1. Select **Call Graph** to make a call to Microsoft Graph's `/me` endpoint and see the user details displayed.
 
 ## Overview of code for Microsoft Graph access
 

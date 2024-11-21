@@ -85,11 +85,11 @@ To add authentication to your application, you need to include the servlet class
    contextAdapter.redirectUser(authorizeUrl);
    ```
 
-   - **AuthorizationRequestUrlParameters**: Parameters that must be set in order to build an AuthorizationRequestUrl.
-   - **REDIRECT_URI**: The redirect URI is the URI the identity provider sends the security tokens back to. Microsoft Entra ID redirects the browser - along with auth code - to this URI after collecting user credentials. It must match the redirect URI in the Microsoft Entra app registration.
-   - **SCOPES**: Scopes are permissions requested by the application. Normally, the three scopes `openid profile offline_access` suffice for receiving an ID token response for a user sign in and are set by default by MSAL.
+   - `AuthorizationRequestUrlParameters`: Parameters that must be set in order to build an `AuthorizationRequestUrl`.
+   - `REDIRECT_URI`: The redirect URI is the URI the identity provider sends the security tokens back to. Microsoft Entra ID redirects the browser - along with auth code - to this URI after collecting user credentials. It must match the redirect URI in the Microsoft Entra app registration.
+   - `SCOPES`: Scopes are permissions requested by the application. Normally, the three scopes `openid profile offline_access` suffice for receiving an ID token response for a user sign in and are set by default by MSAL.
 
-1. The user is presented with a sign-in prompt by Microsoft Entra ID. If the sign-in attempt is successful, the user's browser is redirected to our app's redirect endpoint with a valid **authorization code** in the endpoint. The ConfidentialClientApplication instance then exchanges this authorization code for an ID Token and Access Token from Microsoft Entra ID. The following code is an excerpt from the implementation of the processAADCallback method in the AuthHelper class.
+1. The user is presented with a sign-in prompt by Microsoft Entra ID. If the sign-in attempt is successful, the user's browser is redirected to our app's redirect endpoint with a valid **authorization code** in the endpoint. The `ConfidentialClientApplication` instance then exchanges this authorization code for an ID Token and Access Token from Microsoft Entra ID. The following code is an excerpt from the implementation of the `processAADCallback` method in the `AuthHelper` class.
 
    ```java
    // First, validate the state, then parse any error codes in response, then extract the authCode. Then:
@@ -102,10 +102,10 @@ To add authentication to your application, you need to include the servlet class
    final IAuthenticationResult result = client.acquireToken(authParams).get();
    ```
 
-   - **AuthorizationCodeParameters**: Parameters that must be set in order to exchange the Authorization Code for an ID and/or access token.
-   - **authCode**: The authorization code that was received at the redirect endpoint.
-   - **REDIRECT_URI**: The redirect URI used in the previous step must be passed again.
-   - **SCOPES**: The scopes used in the previous step must be passed again.
+   - `AuthorizationCodeParameters`: Parameters that must be set in order to exchange the Authorization Code for an ID and/or access token.
+   - `authCode`: The authorization code that was received at the redirect endpoint.
+   - `REDIRECT_URI`: The redirect URI used in the previous step must be passed again.
+   - `SCOPES`: The scopes used in the previous step must be passed again.
 
 1. If `acquireToken` is successful, the token claims are extracted. If the nonce check passes, the results are placed in `context` - an instance of `IdentityContextData` - and saved to the session. The application can then instantiate this from the session - by way of an instance of `IdentityContextAdapterServlet` - whenever it needs access to it:
 
