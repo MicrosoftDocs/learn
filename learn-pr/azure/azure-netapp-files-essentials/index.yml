@@ -35,13 +35,13 @@ subjects:
 - storage
 - networking
 units:
-- learn.azure.azure-netapp-files-with-essentials.introduction
-- learn.azure.azure-netapp-files-with-essentials.service-levels
-- learn.azure.azure-netapp-files-with-essentials.limits
-- learn.azure.azure-netapp-files-with-essentials.network-planning
-- learn.azure.azure-netapp-files-with-essentials.monitor
-- learn.azure.azure-netapp-files-with-essentials.metrics
-- learn.azure.azure-netapp-files-with-essentials.knowledge-check
-- learn.azure.azure-netapp-files-with-essentials.summary
+- learn.azure.azure-netapp-files-essentials.introduction
+- learn.azure.azure-netapp-files-essentials.service-levels
+- learn.azure.azure-netapp-files-essentials.limits
+- learn.azure.azure-netapp-files-essentials.network-planning
+- learn.azure.azure-netapp-files-essentials.monitor
+- learn.azure.azure-netapp-files-essentials.metrics
+- learn.azure.azure-netapp-files-essentials.knowledge-check
+- learn.azure.azure-netapp-files-essentials.summary
 badge:
-  uid: learn.azure-netapp-files-with-essentials.badge
+  uid: learn.azure-netapp-files-essentials.badge

@@ -35,7 +35,7 @@ quiz:
         isCorrect: false
         explanation: "Incorrect. Azure NetApp Files provides metrics on allocated storage, actual storage usage, volume IOPS, and latency. With these metrics, you can gain a better understanding on the usage pattern and volume performance of your NetApp accounts."
       - content: Azure Service Health 
-        isCorrect: true
+        isCorrect: false
         explanation: "Incorrect. Azure Service Health provides a personalized view of the status of your Azure services in the regions where they're used. It's a health monitor, not an activity log."
       - content: Azure Activity log
         isCorrect: true
