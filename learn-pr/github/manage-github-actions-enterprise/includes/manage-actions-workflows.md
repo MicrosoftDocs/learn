@@ -16,13 +16,13 @@ To configure a GitHub Actions use policy for your enterprise, navigate to your e
 
 The dropdown at the top labeled **Enable for all organizations** enables you to decide which organizations in your enterprise can use GitHub Actions (all of them, some of them or none of them), while the three options underneath enable you to define the restriction level of GitHub Actions within these organizations.
 
-If you want to enable only specific actions to be used within your enterprise, select **Allow enterprise, and select non-enterprise, actions and reusable workflows**, and choose the option corresponding to your use case, as shown below.
+If you want to enable only specific actions to be used within your enterprise, select **Allow enterprise, and select non-enterprise, actions and reusable workflows**, and choose the option corresponding to your use case.
 
 :::image type="content" source="../media/policies-2.png" alt-text="Screenshot of the Actions screen with Allow select actions option selected.":::
 
 ### Manually sync public actions for Enterprise Server
 
-Most official GitHub-authored actions come automatically bundled with Enterprise Server, and they're captured at a point in time from the GitHub Marketplace. They include `actions/checkout`, `actions/upload-artifact`, `actions/download-artifact`, `actions/labeler` and various `actions/setup-` actions, among others. To get all the official actions included on your enterprise instance, browse to the actions organization on your instance: https://HOSTNAME/actions.
+Most official GitHub-authored actions come automatically bundled with Enterprise Server, and they're captured at a point in time from the GitHub Marketplace. They include `actions/checkout`, `actions/upload-artifact`, `actions/download-artifact`, `actions/labeler`, and various `actions/setup-` actions, among others. To get all the official actions included on your enterprise instance, browse to the actions organization on your instance: https://HOSTNAME/actions.
 
 As mentioned in the [Configure a GitHub Actions use policy](#configure-a-github-actions-use-policy) section, it's possible to configure Enterprise Server to automatically access the public actions available in the GitHub Marketplace and to configure a use policy for them. However, if you want stricter control over the public actions that should be made available in your enterprise, you can manually download and sync actions into your enterprise instance using the `actions-sync` tool.
 
@@ -47,7 +47,7 @@ Workflow templates are a great way to ensure automation is reused and maintained
 Creating a workflow template is done in two steps:
 
 1. Create a `yml` workflow file.
-2. Create a `json` metadata file that describes how the template should be presented to users when they are creating a workflow.
+2. Create a `json` metadata file that describes how the template should be presented to users when they're creating a workflow.
 
     > [!Note]
     > The metadata file must have the same name as the workflow file. Instead of the `.yml` extension, it must be appended with `.properties.json`. For example, a file named `octo-organization-ci.properties.json` contains the metadata for the workflow file named `octo-organization-ci.yml`.
@@ -78,7 +78,7 @@ jobs:
 
 Note that the preceding file uses a `$default-branch` placeholder. When a workflow is created using your template, this placeholder is automatically replaced with the name of the repository's default branch.
 
-Following is the metadata file you would create for the above workflow file:
+Following is the metadata file you would create for the workflow file:
 
 ```json
 {

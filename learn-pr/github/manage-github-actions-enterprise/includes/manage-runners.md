@@ -2,7 +2,7 @@ In this section, you'll explore the different tools and strategies available to 
 
 ## Choose an appropriate runner for your workload
 
-GitHub Actions workflows can be executed by two types of runners: GitHub-hosted runners or self-hosted runners.
+Two types of runners can execute GitHub Actions workflows: GitHub-hosted runners or self-hosted runners.
 
 > [!Note]
 > GitHub-hosted runners are only available for Enterprise Cloud. If you have an Enterprise Server instance, this section does not apply to you.
@@ -14,9 +14,9 @@ The following table compares GitHub-hosted runners versus self-hosted runners. U
 | **GitHub-hosted runners**                                                                                                        | **Self-hosted runners**                                                                                                                                              |
 | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Receive automatic updates for the operating system, preinstalled packages and tools, and the self-hosted runner application. | Receive automatic updates for the self-hosted runner application only. You're responsible for updating the operating system and all other software.             |
-| Are managed and maintained by GitHub.                                                                                        | Can use cloud services or local machines that you already pay for. Also are customizable to your hardware, operating system, software, and security requirements. |
+| GitHub managed and maintained.                                                                                        | Can use cloud services or local machines that you already pay for. Also are customizable to your hardware, operating system, software, and security requirements. |
 | Provide a clean instance for every job execution.                                                                            | Don't need to have a clean instance for every job execution.                                                                                                     |
-| Use free minutes on your GitHub plan, with per-minute rates applied after surpassing the free minutes.                       | Are free to use with GitHub Actions, but you are responsible for the cost of maintaining your runner machines.                                                   |
+| Use free minutes on your GitHub plan, with per-minute rates applied after surpassing the free minutes.                       | Are free to use with GitHub Actions, but you're responsible for the cost of maintaining your runner machines.                                                   |
 
 ## Configure access to self-hosted runners
 
@@ -32,7 +32,7 @@ To create groups at organization level, navigate to your organization **Settings
 
 :::image type="content" source="../media/create-group-2.png" alt-text="Screenshot of the New group screen with group name example for all repositories.":::
 
-When new runners are created, they are automatically assigned to the default group within the enterprise or organization. Runners can only be in one group at a time, but both Enterprise Cloud and Enterprise Server give you the possibility to move runners from the default group to another group.
+When new runners are created, they're automatically assigned to the default group within the enterprise or organization. Runners can only be in one group at a time, but both Enterprise Cloud and Enterprise Server give you the possibility to move runners from the default group to another group.
 
 ## Configure self-hosted runners for enterprise use
 
@@ -40,7 +40,7 @@ Enterprise Cloud and Enterprise Server offer multiple features enabling you to c
 
 ### Labels
 
-Self-hosted runners automatically receive default labels when they are added to GitHub Actions. These default labels indicate the operating system and hardware architecture of the runner as shown in the table below:
+Self-hosted runners automatically receive default labels when they're added to GitHub Actions. These default labels indicate the operating system and hardware architecture of the runner as shown in the table:
 
 |       **Default label**        |                    **Description**                    |
 |--------------------------------|-------------------------------------------------------|
@@ -70,12 +70,12 @@ If you need a self-hosted runner to communicate with GitHub via a proxy server, 
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      `https_proxy`       | Proxy URL for HTTPS traffic. You can also include basic authentication credentials, if necessary. For example: <br> `http://proxy.local` <br> `http://192.168.1.1:8080` <br> `http://username:password@proxy.local`  |
 |       `http_proxy`       |  Proxy URL for HTTP traffic. You can also include basic authentication credentials, if necessary. For example: <br> `http://proxy.local` <br> `http://192.168.1.1:8080` <br> `http://username:password@proxy.local`  |
-|        `no_proxy`        | Comma-separated list of hosts that should not use a proxy. Only hostnames are allowed in `no_proxy`, you cannot use IP addresses. For example: <br> `example.com` <br> `example.com,myserver.local:443,example.org` |
+|        `no_proxy`        | Comma-separated list of hosts that should'nt use a proxy. Only hostnames are allowed in `no_proxy`. You can't use IP addresses. For example: <br> `example.com` <br> `example.com,myserver.local:443,example.org` |
 
 > [!Note]
 > Proxy environment variables are read when the self-hosted runner application starts, so you must set the environment variables before configuring or starting the application. If your proxy configuration changes, you must restart the self-hosted runner application.
 
-On Windows, the proxy environment variable names are not case-sensitive. On Linux and macOS, we recommend that you use all lowercase environment variables. If you have an environment variable in both lowercase and uppercase on Linux or macOS (for example, `https_proxy` and `HTTPS_PROXY`) the self-hosted runner application uses the lowercase environment variable.
+On Windows, the proxy environment variable names are'nt case-sensitive. On Linux and macOS, we recommend that you use all lowercase environment variables. If you have an environment variable in both lowercase and uppercase on Linux or macOS (for example, `https_proxy` and `HTTPS_PROXY`) the self-hosted runner application uses the lowercase environment variable.
 
 ### IP allowlists
 
@@ -93,7 +93,7 @@ The main steps you can take when troubleshooting a self-hosted runner are:
 1. Review the activities and automatic updates of the runner in the `Runner_` files in the `_diag` folder.
 1. Review the status of the jobs the runner executed in the `Worker_` files in the `_diag` folder.
 
-According to the operating system of your runner, you can take extra steps as shown in the table below:
+According to the operating system of your runner, you can take extra steps as shown in the table:
 
 |                             **Mac**                              |                            **Windows**                            |                              **Linux**                              |
 |----------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------|
