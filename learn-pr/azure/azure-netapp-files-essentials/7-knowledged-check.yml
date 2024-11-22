@@ -19,7 +19,7 @@ quiz:
     choices: 
     - content: "Hybrid environments"
       isCorrect: true
-      explanation: "Hybrid environments allow resources running in an on-premises network connected to the Azure virtual network, that contains the delegated subnet using VPN or ExpressRoute, to connect to the file storage provided by Azure NetApp Files."
+      explanation: "Hybrid environments allow resources running in an on-premises network connected to the Azure virtual network to connect to the file storage provided by Azure NetApp Files."
     - content: "Standard peered virtual network"
       isCorrect: false
       explanation: "Incorrect. Hybrid environments allow resources running in an on-premises network connected to the Azure virtual network."
@@ -36,7 +36,7 @@ quiz:
         explanation: "Incorrect. Azure NetApp Files provides metrics on allocated storage, actual storage usage, volume IOPS, and latency. With these metrics, you can gain a better understanding on the usage pattern and volume performance of your NetApp accounts."
       - content: Azure Service Health 
         isCorrect: true
-        explanation: "Incorrect. Azure Service Health provides a personalized view of the status of your Azure services in the regions where they are used. It's a health monitor, not an activity log."
+        explanation: "Incorrect. Azure Service Health provides a personalized view of the status of your Azure services in the regions where they're used. It's a health monitor, not an activity log."
       - content: Azure Activity log
         isCorrect: true
         explanation: "Correct. The Activity log provides insight into subscription-level events."
@@ -47,13 +47,13 @@ quiz:
     choices:
       - content: Pool allocated size
         isCorrect: false 
-        explanation: "Incorrect. This metric details the provisioned size of the protocols."
+        explanation: "Incorrect. This metric describes the provisioned size of the protocols."
       - content: Pool consumed size 
         isCorrect: true
-        explanation: "Correct. This metric details the total logical space used by volumes in a capacity pool."
+        explanation: "Correct. This metric describes the total logical space used by volumes in a capacity pool."
       - content: Volume quota size 
         isCorrect: false 
         explanation: "Incorrect. Volume quota size pertains to individual units, which are constituents of capacity pools."
       - content: Total snapshot size for the pool 
         isCorrect: false
-        explanation: "Incorrect. This metric calculates the size of all snapshots across all volumes in the capacity pool."
+        explanation: "Incorrect. This metric describes the size of all snapshots across all volumes in the capacity pool."

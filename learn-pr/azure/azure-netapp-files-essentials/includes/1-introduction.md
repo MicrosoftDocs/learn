@@ -51,5 +51,4 @@ Azure NetApp Files provides two QoS types of capacity pools: auto (default) and 
 
 ## Large volumes
 
-- Azure NetApp Files allows you to create volumes up to 2048 TiB in size, exceeding the previous 100-TiB limit. 
-- Large volumes begin at a capacity of 50 TiB and scale up to 2,048 TiB.
+Large volumes begin at a capacity of 50 TiB and scale up to 2,048 TiB.
