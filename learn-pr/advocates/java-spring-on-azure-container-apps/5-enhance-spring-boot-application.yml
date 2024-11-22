@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.java-on-azure-container-apps.5-accelerate-spring-boot-application
+uid: learn.java-on-azure-container-apps.5-enhance-spring-boot-application
 title: Maintain Spring Boot application
 metadata:
   title: Maintain Spring Boot application
-  description: In this unit, you will use the built-in Java stack to accelerate your Spring Boot application on Azure Container Apps.
+  description: In this unit, you will use the built-in Java stack to enhance your Spring Boot application on Azure Container Apps.
   author: hangwan
   ms.author: hangwan
   ms.date: 10/22/2024
@@ -14,4 +14,4 @@ metadata:
   ms.contributors: hangwan97
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-accelarate-spring-boot-application.md)]
+  [!include[](includes/5-enhance-spring-boot-application.md)]
