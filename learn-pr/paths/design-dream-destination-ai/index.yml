@@ -10,9 +10,9 @@ metadata:
   ms.service: microsoft-365-copilot
 title: Design a dream destination with AI
 prerequisites: |
-  none
+  None.
 summary: |
-  In this learning path, you will learn about the capabilities of generative AI using Microsoft Copilot. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story.
+  In this learning path, you learn about the capabilities of generative AI using Microsoft Copilot. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
