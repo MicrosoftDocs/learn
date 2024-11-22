@@ -60,6 +60,6 @@ Java EE applications must be deployed onto Java EE-compliant application servers
 
 - **Netty** is a nonblocking I/O (NIO) client/server framework. It enables quick and easy development of network applications such as protocol servers and clients. It greatly simplifies and streamlines network programming, such as TCP and UDP socket servers. Netty is an asynchronous, event-driven network application framework for rapid development of maintainable, high-performance protocol servers and clients.
 
-- **Quarkus** is a Kubernetes-native Java stack that's tailored for OpenJDK HotSpot and GraalVM. Quarkus is gaining more and more momentum. By the way, there are more performance-focused frameworks like this, such as Vert.x, Helidon, Payara Micro, and KumuluzEE.
+- **Quarkus** is a Kubernetes-native Java stack tailored for OpenJDK HotSpot and GraalVM. Quarkus is gaining more and more momentum. By the way, there are more performance-focused frameworks like this, such as Vert.x, Helidon, Payara Micro, and KumuluzEE.
 
 - **Micronaut** is a modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications. Micronaut features a dependency injection and aspect-oriented programming runtime that uses no reflection, which makes it easier for Micronaut applications to run on GraalVM.
