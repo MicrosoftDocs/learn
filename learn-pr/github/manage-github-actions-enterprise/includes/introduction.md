@@ -12,7 +12,7 @@ In this module, you'll:
 
 - Identify the different tools you can use at enterprise and organization levels to manage your actions and workflows.
 - Evaluate what the appropriate runners are for your enterprise instance.
-- Discover the different configurations available for self-hosted runners and customize them according to your enterprise use case.
+- Discover the different configurations available for self-hosted runners, and customize them according to your enterprise use case.
 - Understand what encrypted secrets are and how to use them in your actions and workflows.
 
 ## Prerequisites

@@ -7,36 +7,36 @@ GitHub Actions workflows can be executed by two types of runners: GitHub-hosted 
 > [!Note]
 > GitHub-hosted runners are only available for Enterprise Cloud. If you have an Enterprise Server instance, this section does not apply to you.
 
-GitHub-hosted runners offer a quicker, simpler way to run your workflows, while self-hosted runners are a highly configurable way to run workflows in your own custom environment. For example, if you need to use an IP address allowlist for your organization or a specialized hardware configuration for running your workflows, use a self-hosted runner.
+GitHub-hosted runners offer a quicker and simpler way to run your workflows, while self-hosted runners are a highly configurable way to run workflows in your own custom environment. For example, if you need to use an IP address allowlist for your organization or a specialized hardware configuration for running your workflows, use a self-hosted runner.
 
 The following table compares GitHub-hosted runners versus self-hosted runners. Use it to choose the appropriate runner for your workload.
 
 | **GitHub-hosted runners**                                                                                                        | **Self-hosted runners**                                                                                                                                              |
 | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Receive automatic updates for the operating system, preinstalled packages and tools, and the self-hosted runner application. | Receive automatic updates for the self-hosted runner application only. You're responsible for updating the operating system and all other software.             |
-| Are managed and maintained by GitHub.                                                                                        | Can use cloud services or local machines that you already pay for. <br> Are customizable to your hardware, operating system, software, and security requirements. |
+| Are managed and maintained by GitHub.                                                                                        | Can use cloud services or local machines that you already pay for. Also are customizable to your hardware, operating system, software, and security requirements. |
 | Provide a clean instance for every job execution.                                                                            | Don't need to have a clean instance for every job execution.                                                                                                     |
 | Use free minutes on your GitHub plan, with per-minute rates applied after surpassing the free minutes.                       | Are free to use with GitHub Actions, but you are responsible for the cost of maintaining your runner machines.                                                   |
 
 ## Configure access to self-hosted runners
 
-In Enterprise Cloud and Enterprise Server, self-hosted runner groups enable you to control access to self-hosted runners at the organization and enterprise level. This feature can come in handy for cases where you need to restrict access to self-hosted runners to specific organizations or users; for example, based on the level of trust for these organizations or users, or to mitigate security risks.
+In Enterprise Cloud and Enterprise Server, self-hosted runner groups enable you to control access to self-hosted runners at the organization and enterprise level. This feature can come in handy for cases where you need to restrict access to self-hosted runners to specific organizations or users. For example, based on the level of trust for these organizations or users, or to mitigate security risks.
 
 Let's say you want to authorize only specific organizations in your enterprise instance to deploy code to your production environment. You could create a group containing all the runners deploying code into production at enterprise level and restrict the group access to the specific organizations authorized to deploy code.
 
-To create groups at enterprise level, navigate to your enterprise account and then to **Policies > Actions** in the sidebar. In the **Self-hosted runners** tab, select **Add new > New group**. The screen that appears will enable you to specify a group name and an access policy for organizations.
+To create groups at enterprise level, navigate to your enterprise account and then to **Policies > Actions** in the sidebar. In the **Runner groups** tab, select **New runner group**. The screen that appears will enable you to specify a group name and an access policy for organizations.
 
 :::image type="content" source="../media/create-group.png" alt-text="Screenshot of the New group screen with group name example for all organizations.":::
 
-To create groups at organization level, navigate to your organization **Settings** and then to **Actions** in the sidebar. In the **Self-hosted runners** section, select **Add new > New group**. The screen that appears enables you to specify a group name and an access policy for repositories.
+To create groups at organization level, navigate to your organization **Settings** and then to **Actions** in the sidebar. Select **Runner groups**, and then **New runner group**. The screen that appears enables you to specify a group name and an access policy for repositories.
 
 :::image type="content" source="../media/create-group-2.png" alt-text="Screenshot of the New group screen with group name example for all repositories.":::
 
-When new runners are created, they are automatically assigned to the default group within the enterprise or organization. Runners can only be in one group at a time, however, both Enterprise Cloud and Enterprise Server give you the possibility to move runners from the default group to another group.
+When new runners are created, they are automatically assigned to the default group within the enterprise or organization. Runners can only be in one group at a time, but both Enterprise Cloud and Enterprise Server give you the possibility to move runners from the default group to another group.
 
 ## Configure self-hosted runners for enterprise use
 
-Enterprise Cloud and Enterprise Server offer multiple features enabling you to customize your self-hosted runners for your enterprise use. Some of these features include _labels, proxy servers, and IP allowlists_.
+Enterprise Cloud and Enterprise Server offer multiple features enabling you to customize your self-hosted runners for your enterprise use. Some of these features include _labels_, _proxy servers_, and _IP allowlists_.
 
 ### Labels
 
@@ -52,7 +52,7 @@ On top of these default labels, Enterprise Cloud and Enterprise Server allow you
 
 To add a label to a self-hosted runner, navigate to the GitHub Actions settings of the organization, repository, or enterprise where your self-hosted runner is registered (under **Actions** for an organization or repository, under **Policies > Actions** for an enterprise). When you're there:
 
-1. Locate the list of runners under **Self-hosted runners**. If your runner is in a group, locate the runner group and select the runner dropdown to view the list of runners.
+1. Locate the list of runners under **Runners**. If your runner is in a group, locate the runner group and select the runner dropdown to view the list of runners.
 
     :::image type="content" source="../media/locate-runner.png" alt-text="Screenshot of an example runner group with dropdown highlighted.":::
 
@@ -85,7 +85,7 @@ To add the IP address or IP address range of your self-hosted runners to an orga
 
 ## Monitor and troubleshoot self-hosted runners
 
-Both Enterprise Cloud and Enterprise Server offer tools enabling you to monitor, troubleshoot and update your self-hosted runners. If your builds start to fail, some files in your repository get locked, or your workflow runs are stuck, troubleshooting the runner executing your workflow can help solve the issue.
+Both Enterprise Cloud and Enterprise Server offer tools enabling you to monitor, troubleshoot, and update your self-hosted runners. If your builds start to fail, some files in your repository get locked, or your workflow runs are stuck, troubleshooting the runner executing your workflow can help solve the issue.
 
 The main steps you can take when troubleshooting a self-hosted runner are:
 
