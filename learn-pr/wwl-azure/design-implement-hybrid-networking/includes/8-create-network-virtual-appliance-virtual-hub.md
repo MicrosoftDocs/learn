@@ -6,7 +6,7 @@ The NVAs available in the Azure Marketplace can be deployed directly into a virt
 
 The following diagram shows the NVA deployment process:
 
-:::image type="content" source="../media/nva-high-level-process-836b75d2.png" alt-text="Digram of the NVA deployment process.":::
+:::image type="content" source="../media/nva-high-level-process-836b75d2.png" alt-text="Diagram of the NVA deployment process.":::
 
 
 ## Deploy an NVA in your Virtual Hub
