@@ -1,6 +1,6 @@
 ## Lab scenario
 
-In this exercise you will configure a virtual network gateway to connect the Contoso Core Services VNet and Manufacturing VNet.
+In this exercise, you configure a virtual network gateway to connect the Contoso Core Services VNet and the Manufacturing VNet.
 
 ## Architecture diagram
 
@@ -18,11 +18,11 @@ In this exercise you will configure a virtual network gateway to connect the Con
  -  **Task 3**: Create ManufacturingTestVM
     - Use a template to create the virtual machines. You can review the [lab template](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/blob/master/Allfiles/Exercises/M02/ManufacturingVMazuredeploy.json).
     - Use Azure PowerShell to deploy the template. 
- -  **Task 4**: Connect to the VMs using RDP
+ -  **Task 4**: Connect to the Test VMs using RDP
  -  **Task 5**: Test the connection between the VMs
  -  **Task 6**: Create CoreServicesVnet Gateway
  -  **Task 7**: Create ManufacturingVnet Gateway
- -  **Task 8**: Connect CoreServicesVnet to ManufacturingVnet
+ -  **Task 8**: CoreServicesVnet to ManufacturingVnet
  -  **Task 9**: Connect ManufacturingVnet to CoreServicesVnet
  -  **Task 10**: Verify that the connections connect
  -  **Task 11**: Test the connection between the VMs

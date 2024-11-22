@@ -10,6 +10,7 @@ Now that you completed this module, you can:
 
 #### Learn more
 
+- [Understand authentication in Microsoft Security Copilot](/copilot/security/authentication)
 - [Microsoft Security Copilot experiences](/security-copilot/experiences-security-copilot)
 - [Plugins overview Microsoft Security Copilot](/copilot/security/plugin-overview)
 - [Create your own custom plugins](/copilot/security/custom-plugins)
