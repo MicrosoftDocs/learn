@@ -7,7 +7,15 @@ One of the mechanisms by which Copilot integrates to these various sources is th
 
 Microsoft plugins give Copilot access to information and capabilities from within your organization's Microsoft products. The image that follows shows only a subset of the available Microsoft plugins and the order in which the plugins are listed may vary from what is displayed in the product.
 
-:::image type="content" source="../media/microsoft-plugins.png" lightbox="../media/microsoft-plugins.png" alt-text="Screen capture of the Manage plugins window that shows the Microsoft services.":::
+If a Copilot owner has restricted plugin access, then those plugins that have been set to restricted will show greyed out and restricted.
+
+# [Plugins](#tab/plugins)
+:::image type="content" source="../media/microsoft-plugins.png" lightbox="../media/microsoft-plugins.png" alt-text="Screen capture of plugins page, showing Microsoft plugins":::
+
+# [Restricted plugins](#tab/restricted-plugins)
+:::image type="content" source="../media/restricted-plugins.png" lightbox="../media/restricted-plugins.png" alt-text="Screen capture of the Manage plugins window that shows the Microsoft services.":::
+
+---
 
 Generally speaking, Microsoft plugins in Copilot use the OBO (on behalf of) model – meaning that  Copilot knows that a customer has licenses to specific products and is automatically signed into those products. Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured. Some Microsoft plugins that require setup, as noted by the settings icon or the setup button, may include configurable parameters that are used for authentication in-lieu of the OBO model.
 
@@ -15,7 +23,7 @@ To view the system capabilities supported by the enabled plugins, you select the
 
 :::image type="content" source="../media/prompts-to-system-capabilities.png" lightbox="../media/prompts-to-system-capabilities.png" alt-text="Screen capture of the prompt icon that when selected opens the window to select system capabilities.":::
 
-The sections that follow provide brief descriptions for many of the available Microsoft plugins. Microsoft Security Copilot is continually adding support for Microsoft products.
+The sections that follow provide brief descriptions for many, but not all, of the available Microsoft plugins. Microsoft Security Copilot is continually adding support for Microsoft products.
 
 #### Azure Firewall (Preview)
 
