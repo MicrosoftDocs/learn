@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Use pages, routing, and layouts to improve Blazor navigation
   description: Learn how to optimize your app's navigation, use parameters from the URL, and create reusable layouts in a Blazor web app.
-  ms.date: 8/24/2021
+  ms.date: 11/15/2024
   author: csharpfritz
   ms.author: jefritz
   manager: coxford
@@ -14,7 +14,7 @@ metadata:
 title: Use pages, routing, and layouts to improve Blazor navigation
 summary: Learn how to manage request routing by using the @page directive, Blazor routing, NavLink, and NavMenu components. Increase an app's flexibility by adding routing parameters in your Blazor components. Use layouts to improve your app by reducing duplicate code.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Improve your Blazor app's navigation by using the router component and NavLinks.
     - Enhance functionality with route parameters.
     - Reduce duplicate code by using layouts in your Blazor app.
