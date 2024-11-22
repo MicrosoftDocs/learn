@@ -38,7 +38,7 @@ If the subnet has a combination of volumes with the Standard and Basic network f
 
 ## Azure native environments
 
-We cover four virtual network scenarios: local VNets, peered VNets, VNets for cross-region replication, and hybrid environments. The following diagram illustrates applies to both the local and peered VNet scenarios for an Azure native environment.
+We cover four virtual network scenarios: local VNets, peered VNets, VNets for cross-region replication, and hybrid environments. The following diagram applies to both the local and peered VNet scenarios for an Azure native environment.
 
 :::image type="content" source="../media/4-virtual-network-diagram.png" alt-text="Diagram depicting Azure native environment setup." lightbox="../media/4-virtual-network-diagram.png":::
 
