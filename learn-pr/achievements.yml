@@ -4197,3 +4197,8 @@ achievements:
   title: Use MLflow with Azure Machine Learning jobs submitted with CLI (v2)
   summary: Use MLflow to track model metrics and artifacts when training and registering models with the Azure Machine Learning CLI (v2).
   iconUrl: /training/achievements/3-use-mlflow-with-azure-ml-jobs-submitted-with-cli-v2.svg
+- uid: learn.optimize-web-app-with-redis.badge
+  type: badge
+  title: Optimize your web applications by caching read-only data with Redis
+  summary: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
+  iconUrl: /training/achievements/optimize-web-apps-with-redis.svg

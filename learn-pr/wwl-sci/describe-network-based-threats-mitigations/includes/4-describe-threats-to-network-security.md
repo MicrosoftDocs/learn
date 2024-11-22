@@ -13,7 +13,7 @@ The ways in which networks can be attacked are too numerous to cover here. Let's
 
 In this short video, you'll see a simulation of how each of these attacks work. For the man-in-the-middle attack, to keep it simple, we've chosen to only use one route. With the DDoS attack, hundreds of thousands, or even tens of millions, of computers are used. Again for simplicity, we'll only show a handful.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWP56P]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=593572ca-d632-4dac-bb6b-a340206aaad3]
 
 ### Common DNS attack
 
