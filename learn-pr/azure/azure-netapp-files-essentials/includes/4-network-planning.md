@@ -13,7 +13,7 @@ In supported regions, you can create new volumes or modify existing volumes to u
 
 You can switch between Basic and Standard network features with some limitations: 
 
-:::image type="content" source="../media/4-network-features" alt-text="Table comparing Basic and Standard network features." lightbox="../media/4-network-features":::
+:::image type="content" source="../media/4-network-features.png" alt-text="Table comparing Basic and Standard network features." lightbox="../media/4-network-features.png":::
 
 To learn more about network features, see [Guidelines for Azure NetApp Files network planning](/azure/azure-netapp-files/azure-netapp-files-network-topologies).
 
@@ -36,13 +36,11 @@ If the subnet has a combination of volumes with the Standard and Basic network f
 > [!NOTE]
 > Associating NSGs at the network interface level is not supported for the Azure NetApp Files network interfaces.
 
-
 ## Azure native environments
 
-We cover four virtual network scenarios: local VNets, peered VNets, VNets for cross-region replication, and hybrid environments. The following diagram illustrates applies to both the local and peered VNet scenarios for an Azure native environment. 
+We cover four virtual network scenarios: local VNets, peered VNets, VNets for cross-region replication, and hybrid environments. The following diagram illustrates applies to both the local and peered VNet scenarios for an Azure native environment.
 
 :::image type="content" source="../media/4-virtual-network-diagram.png" alt-text="Diagram depicting Azure native environment setup." lightbox="../media/4-virtual-network-diagram.png":::
-
 
 ### Local VNet
 

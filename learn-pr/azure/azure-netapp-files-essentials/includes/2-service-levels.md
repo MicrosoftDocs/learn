@@ -44,5 +44,5 @@ For example, for an SAP HANA system, this capacity pool can be used to create th
 
 The following diagram illustrates the scenarios for the SAP HANA volumes:
 
-:::image type="content" source="../media/2-manual-qos-throughput.pngg" alt-text="Diagram showing how manual QoS throughput.":::
+:::image type="content" source="../media/2-manual-qos-throughput.png" alt-text="Diagram showing how manual QoS throughput.":::
 
