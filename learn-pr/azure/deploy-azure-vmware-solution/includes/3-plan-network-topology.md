@@ -1,16 +1,18 @@
-Azure VMware Solution provides a private-cloud environment you can access from both on-premises and Azure-based environments or resources. The next step in Azure VMware Solution deployment involves a plan for network topology.
+Azure VMware Solution provides a private cloud environment you can access from both on-premises and Azure-based environments or resources. The next step in Azure VMware Solution deployment involves a plan for network topology.
 
 The Azure VMware Solution environment in Azure needs to pass network traffic to Azure services and on-premises VMware environments. A dedicated Azure ExpressRoute circuit provides connectivity to Azure resources and services from Azure VMware Solution. A separate, customer-provided Azure ExpressRoute circuit provides connectivity to on-premises VMware environments. To accomplish network connectivity, specific IP address ranges and firewall ports must be enabled. When Azure VMware Solution is deployed, private networks are created for the following vSphere components:
 
 - Management
 - Provisioning
-- vMotion
+- VMware vMotion
 
-You'll use these private networks to access vCenter, NSX-T Manager, and vMotion, or for VM deployment.
+You use these private networks to access vCenter Server, NSX Manager, and vMotion.
 
 ## IP segments
 
-IP addressing must be planned out before Azure VMware Solution deployment. The service ingests a /22 CIDR network address block that you provide. You can carve up the address space into smaller network segments within NSX-T Manager. Those IP segments are used for vCenter, VMware HCX, NSX-T, and vMotion. Azure VMware Solution, your existing Azure environment, and your on-premises environment will all need to exchange routes to migrate VMs into Azure. The /22 CIDR network address block you define shouldn't overlap with network address blocks already configured on-premises or in Azure.
+IP addressing must be planned out before the Azure VMware Solution private cloud deployment. The service requires a /22 CIDR network address block that you provide. The /22 CIDR is required for the management components of Azure VMware Solution. Workload segments, on which virtual machines (VMs) are deployed, will have a different IP address range. You can do that by creating network segments within NSX Manager. 
+
+The management CIDR is automatically carved up in smaller segments. Those IP segments are used for vCenter Server, VMware HCX, NSX, and VMware vMotion. Azure VMware Solution, your existing Azure environment, and your on-premises environment will need to exchange routes to migrate VMs into Azure. The /22 CIDR network address block you define must not overlap with network address blocks already configured on-premises or in Azure.
 
 A VM IP segment must be built to create the first NSX segment in the Azure VMware Solution private cloud. The VM IP segment allows for deployment of VMs onto Azure VMware Solution. Optionally, network segments can be extended from an on-premises VMware environment to Azure VMware Solution. On-premises networks must connect to a vSphere Distributed Switch (vDS), because vSphere Standard Switches can't be extended.
 
@@ -40,7 +42,7 @@ If you select an existing virtual network, you must designate a GatewaySubnet fo
 
 If you leave the virtual network blank, you'll have to create a virtual network gateway and peer the ExpressRoute circuit to Azure after Azure VMware Solution finishes deployment.
 
-:::image type="content" source="../media/5-create-private-cloud.png" alt-text="Screenshot of the Azure portal showing the virtual network field left blank during a private-cloud deployment.":::
+:::image type="content" source="../media/5-create-private-cloud.png" alt-text="Screenshot of the Azure portal showing the virtual network field left blank during a private cloud deployment.":::
 
 ## ExpressRoute and routing requirements
 
@@ -49,7 +51,7 @@ There are two types of interconnectivity for Azure VMware Solution:
 - **Basic interconnectivity**: Azure VMware Solution connects to an Azure virtual network by using an ExpressRoute connection that deploys with the resource. The Azure VMware Solution-provided ExpressRoute circuit establishes connectivity to and from the Azure VMware Solution private cloud for other Azure services, like Azure Monitor and Microsoft Defender for Cloud.
 - **Full interconnectivity**: This connectivity model extends the basic interconnectivity implementation to include interconnectivity between on-premises and Azure VMware Solution private clouds. You can configure this connection via a customer-provided ExpressRoute circuit, among other methods. You can use an existing circuit or purchase a new one.
 
-ExpressRoute Global Reach must be enabled to route traffic to and from the on-premises environment to the Azure VMware Solution private cloud. The customer-provided ExpressRoute circuit is not a part of the Azure VMware Solution private-cloud deployment.
+ExpressRoute Global Reach must be enabled to route traffic to and from the on-premises environment to the Azure VMware Solution private cloud. The customer-provided ExpressRoute circuit is not a part of the Azure VMware Solution private cloud deployment.
 
 ## Prerequisites for ExpressRoute Global Reach
 
@@ -65,10 +67,10 @@ If on-premises network infrastructure is restrictive, the following ports must b
 
 | Source | Destination | Protocol | Port |
 | :------------ | :------| :------ | :------ |
-| Azure VMware Solution private-cloud DNS server | On-premises DNS server | UDP | 53 |
+| Azure VMware Solution private cloud DNS server | On-premises DNS server | UDP | 53 |
 | On-premises DNS server | Azure VMware Solution DNS server | UDP | 53 |
 | On-premises network | Azure VMware Solution vCenter | TCP (HTTP/HTTPS) | 80, 443 |
-| Azure VMware Solution private-cloud management network | On-premises Active Directory | TCP | 389 |
+| Azure VMware Solution private cloud management network | On-premises Active Directory | TCP | 389 |
 | On-premises vCenter | Azure VMware Solution management network | TCP | 8000 |
 | Web browser | Hybrid Cloud Manager (HCM) | TCP (HTTPS) | 9443 |
 | Admin network | HCM | SSH | 22 |
