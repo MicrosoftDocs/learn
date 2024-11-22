@@ -10,7 +10,7 @@ Microsoft plugins give Copilot access to information and capabilities from withi
 If a Copilot owner has restricted plugin access, then those plugins that have been set to restricted will show greyed out and restricted.
 
 # [Plugins](#tab/plugins)
-:::image type="content" source="../media/microsoft-plugins.png" lightbox="../media/microsoft-plugins.png" alt-text="Screen capture of plugins page, showing Microsoft plugins":::
+:::image type="content" source="../media/microsoft-plugins.png" lightbox="../media/microsoft-plugins.png" alt-text="Screen capture of plugins page, showing Microsoft plugins.":::
 
 # [Restricted plugins](#tab/restricted-plugins)
 :::image type="content" source="../media/restricted-plugins.png" lightbox="../media/restricted-plugins.png" alt-text="Screen capture of the Manage plugins window that shows the Microsoft services.":::
