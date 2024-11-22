@@ -34828,6 +34828,46 @@
       "source_path": "learn-pr/wwl-data-ai/use-mlflow-azure-machine-learning-jobs-submitted-cli-v2/2-track-view-model-metrics-mlflow.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-web-apps-with-redis/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-web-apps-with-redis/2-decide-if-you-want-use-redis-in-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-web-apps-with-redis/3-configure-redis-cache.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-web-apps-with-redis/4-exercise-create-redis-cache.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-web-apps-with-redis/5-execute-redis-commands.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-web-apps-with-redis/6-exercise-connect-an-app-to-the-cache.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-web-apps-with-redis/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-your-web-apps-with-redis/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+      "redirect_document_id": false
     }
   ]
 }
