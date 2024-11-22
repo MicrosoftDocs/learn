@@ -59,10 +59,16 @@ From the home menu, the user can navigate as follows:
 
     ---
 
-  - Role assignments, where admins can view existing role assignments and assign Copilot roles to users. This includes the option to add recommended roles.
+  - Role assignments, where admins can view and manage existing role assignments for the Copilot Owner and Copilot Contributor roles. This includes the option to add the recommended roles group.
   
-    :::image type="content" source="../media/role-assignment.png" lightbox="../media/role-assignment.png" alt-text="Screen capture showing the role assignment settings.":::
+    # [Role assignment](#tab/role-assignment)
+    :::image type="content" source="../media/role-assignments-new-edited.png" lightbox="../media/role-assignments-new-edited.png" alt-text="Screen capture showing the role assignment page.":::
   
+    # [Recommended roles](#tab/recommended-roles)
+    :::image type="content" source="../media/recommended-microsoft-security-roles-origin-list-updated.png" lightbox="../media/recommended-microsoft-security-roles-origin-list-updated.png" alt-text="Screen capture showing the recommended Microsoft Security roles. These include Microsoft Entra, Microsoft Purview, and Microsoft Defender roles.":::
+
+    ---
+
   - Usage monitoring, which provides a dashboard showing how SCUs are consumed over a period of time by your Microsoft Security Copilot workloads. The usage monitoring dashboard provides visibility into the number of units used, the specific plugins employed during sessions, and the initiators of those sessions. The dashboard also allows you to apply filters and export usage data seamlessly. The dashboard includes up to 90 days of data. When an analyst is in the middle of an investigation and the usage is nearing the provisioned capacity limit (90%), a notification is displayed to the analyst while entering the prompt. The notification informs the analyst to contact the owner to increase the capacity or limit the number of prompts to avoid disruptions. These notifications are also shown in the Security Copilot embedded experiences.
   
     When the provisioned capacity is crossed, the analyst sees an error message stating that due to high usage in organization, they cannot submit additional prompts. The analyst is asked to contact the owner to increase the provisioned SCUs.
@@ -72,13 +78,18 @@ From the home menu, the user can navigate as follows:
 - Settings, which include configurable preferences, data and privacy statements, and information about the App version.
 
   - The preferences settings allow users to configure the theme, language, and time zone. Copilot supports many languages. For detailed information, see [Supported languages](/security-copilot/supported-languages#supported-languages).
-  
-
-    :::image type="content" source="../media/settings-preferences-all-user-settings-v3.png" lightbox="../media/settings-preferences-all-user-settings-v3.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::
 
   - The data and privacy page provides links to the privacy statement, terms and conditions, and location information for where data is stored.
   
   - The About page provides information of the app version for Copilot.
+  
+    # [Preferences](#tab/preferences)
+    :::image type="content" source="../media/settings-preferences.png" lightbox="../media/settings-preferences.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::
+
+    # [Data and privacy](#tab/data-privacy)
+    :::image type="content" source="../media/settings-data-privacy.png" lightbox="../media/settings-data-privacy.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::
+
+    ---
 
 - Tenant switcher. The tenant, which is provisioned for Copilot doesn't need to be the tenant your security analyst logs in from. In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to sign in. Copilot is provisioned in the Contoso tenant. By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
 
