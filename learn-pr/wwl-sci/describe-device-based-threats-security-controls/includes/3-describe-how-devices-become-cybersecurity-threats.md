@@ -13,7 +13,7 @@ Let’s look at the following video to see how devices around us can become thre
 
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPb1R]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5b2b0db5-d332-403e-9565-570c4b03238b]
 
 ## Device vulnerabilities
 
