@@ -8,7 +8,7 @@ Clone the following in your favorite command-line tool:
 git clone https://github.com/spring-projects/spring-petclinic.git
 ```
 
-Then. run the application locally:
+Then, run the application locally:
 
 ``` bash
 cd spring-petclinic

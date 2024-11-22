@@ -14,7 +14,7 @@ Spring Boot runs on top of the Spring Framework and has an opinionated autoconfi
 
 ### Spring Data
 
-Spring Data simplifies data access for relational and non-relational databases, MapReduce frameworks, and cloud-based data services.
+Spring Data simplifies data access for relational and nonrelational databases, MapReduce frameworks, and cloud-based data services.
 
 ### Spring Security
 
