@@ -4,7 +4,7 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Understand Azure NetApp Files essentials 
-  description: This module helps you understand Azure NetApp Files and how to use it with the Azure VMware Solution. 
+  description: Learn about the key parts of Azure NetApp Files, including storage terminology and monitoring strategies, to help you optimize your setup and deployment processes.  
   ms.date: 11/18/2024
   author: PageWriter-MSFT
   ms.author: b-ahibbard
