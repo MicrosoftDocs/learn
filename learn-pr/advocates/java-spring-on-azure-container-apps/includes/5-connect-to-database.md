@@ -1,6 +1,6 @@
-Now that you’ve deployed the Spring Pet Clinic application with the default H2 in-memory database, you might want to connect it to a more powerful, persistent database like PostgreSQL. This will ensure that your application data is stored even when the application is restarted, providing greater durability and scalability for production use.
+Since you’ve deployed the Spring Pet Clinic application with the default H2 in-memory database, you might want to connect it to a more powerful, persistent database like PostgreSQL. This will ensure that your application data is stored even when the application is restarted, providing greater durability and scalability for production use.
 
-> [!NOTE] 
+> [!NOTE]
 > This chapter is optional, you may skip it if you are already familar with database configurations.
 
 ## Create the PostgreSQL Server
@@ -18,6 +18,8 @@ Now, let's create a PostgreSQL flexible server.
 az postgres flexible-server create --name $POSTGRESQLSERVER --resource-group $RESOURCE_GROUP
 ```
 
+You may find the auto-generated admin username and admin password in the output, save in a secure place if you want to connect and config later on.
+
 ### Create a new Database
 
 We will create a new database on the PostgreSQL flexible server instance.
@@ -28,6 +30,8 @@ az postgres flexible-server db create \
    --resource-grou $RESOURCE_GROUP \
    --server-name $POSTGRESQLSERVER
 ```
+
+The result is in JSON format. Make a note of the **fullyQualifiedDomainName** and **administratorLogin**. You should have saved the password in the previous step.
 
 You may check [Create an Azure Database for PostgreSQL - Flexible Server instance using Azure CLI](https://learn.microsoft.com/azure/postgresql/flexible-server/quickstart-create-server-cli) for more details.
 

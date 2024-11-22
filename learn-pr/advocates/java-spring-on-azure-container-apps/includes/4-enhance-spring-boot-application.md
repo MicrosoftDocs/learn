@@ -1,6 +1,6 @@
-Now that you’ve deployed the Spring Pet Clinic application with PostgreSQL on Azure Container Apps, you can enhance its performance by enabling Azure’s built-in Java support features, known collectively as the **Java Stack.**. One of these features, Java metrics, can help to collect and monitor data include memory usage, garbage collection, thread count of your JVM.
+Now that you’ve deployed the Spring Pet Clinic application on Azure Container Apps, you can enhance its performance by enabling Azure’s built-in Java support features, known collectively as the **Java Stack.**. One of these features, Java metrics, can help to collect and monitor data include memory usage, garbage collection, thread count of your JVM.
 
-This chapter will guide you through **Javak Stack** to accelerate your Spring Boot application on Azure Container Apps. 
+This chapter will guide you through **Javak Stack** to enhance your Spring Boot application on Azure Container Apps. 
 
 ## Enable Java Stack in Azure Container Apps
 

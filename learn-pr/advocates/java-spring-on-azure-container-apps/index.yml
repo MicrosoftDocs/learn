@@ -34,8 +34,8 @@ units:
 - learn.java-on-azure-container-apps.1-introduction
 - learn.java-on-azure-container-apps.2-prepare-spring-boot-application
 - learn.java-on-azure-container-apps.3-deploy-spring-boot-application
-- learn.java-on-azure-container-apps.4-connect-to-database
-- learn.java-on-azure-container-apps.5-enhance-spring-boot-application
+- learn.java-on-azure-container-apps.4-enhance-spring-boot-application
+- learn.java-on-azure-container-apps.5-connect-to-database
 - learn.java-on-azure-container-apps.6-knowledge-check
 - learn.java-on-azure-container-apps.7-summary
 badge:
