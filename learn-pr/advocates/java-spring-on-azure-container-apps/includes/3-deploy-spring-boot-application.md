@@ -6,7 +6,7 @@ To successfully complete this project, ensure you have the following prerequisit
 
 | Requirement     | Instructions                                                                                                                                       |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Azure account   | If you don't have one, [create an account for free](https://azure.microsoft.com/free/). You need the Contributor or Owner permission on the Azure subscription to proceed. Refer to [Assign Azure roles using the Azure portal](https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal?tabs=current) for details. |
+| Azure account   | If you don't have one, [create an account for free](https://azure.microsoft.com/free/). You need the Contributor or Owner permission on the Azure subscription to proceed. Refer to [Assign Azure roles using the Azure portal](https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal) for details. |
 | git             | [Install git](https://git-scm.com/downloads).                                                                                              |
 | Azure CLI       | Install the [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli).                                                                                             |
 
@@ -40,7 +40,7 @@ az provider register --namespace Microsoft.App
 ```
 
 ```bash
-az provider register --namespace Microsoft.OperationalInsights
+xsa
 ```
 
 ## Create environment variables
@@ -51,7 +51,7 @@ Now that your Azure CLI setup is complete, you can define the environment variab
 export RESOURCE_GROUP="petclinic-containerapps"
 export LOCATION="canadacentral"
 export ENVIRONMENT="env-petclinic-containerapps"
-export API_NAME="petclinic"
+export APP_NAME="petclinic"
 ```
 
 ## Locate the sample code
@@ -72,7 +72,7 @@ The `up` command uses the Dockerfile in the root of the repository to build the 
 
 ```bash
 az containerapp up \
-    --name $API_NAME \
+    --name $APP_NAME \
     --resource-group $RESOURCE_GROUP\
     --location $LOCATION \
     --environment $ENVIRONMENT \

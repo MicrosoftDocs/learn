@@ -12,4 +12,4 @@ az group delete --name $RESOURCE_GROUP
 For more information about the Azure services described in this module, see:
 
 - [Java on Azure Container Apps](https://azure.microsoft.com/services/container-apps/java-overview)
-- [Get started with Java on Azure Container Apps](https://learn.microsoft.com/azure/container-apps/java-get-started?pivots=jar)
+- [Get started with Java on Azure Container Apps](https://learn.microsoft.com/azure/container-apps/java-get-started)
