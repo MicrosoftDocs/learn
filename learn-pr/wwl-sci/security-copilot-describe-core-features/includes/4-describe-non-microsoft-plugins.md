@@ -8,6 +8,8 @@ Microsoft Security Copilot supports non-Microsoft plugins to extend Copilot's ca
 
 Other plugins give Copilot access to information and capabilities from services beyond Microsoft that your organization uses.
 
+If a Copilot owner has restricted plugin access, then those plugins that have been set to restricted will show greyed out and restricted.
+
 :::image type="content" source="../media/plugins-other.png" lightbox="../media/plugins-other.png" alt-text="Screen capture of the non-Microsoft plugins.":::
 
 The list of Other plugins currently supported is long and continually growing. The list that follows is only a subset of non-Microsoft Plugins currently in preview with Copilot.
