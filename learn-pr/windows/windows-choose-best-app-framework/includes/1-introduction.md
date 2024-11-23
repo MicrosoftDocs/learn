@@ -1,4 +1,4 @@
-This module discusses the different options for building native Windows applications and how to choose the best option based on project requirements.
+This module discusses the different options for building native Windows applications, and how to choose the best option based on project requirements.
 
 ![A picture visualizing Windows UI framework design and development.](../media/windows-development-design.jpg)
 
