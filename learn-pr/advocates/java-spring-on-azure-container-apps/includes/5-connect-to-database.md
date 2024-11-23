@@ -31,8 +31,6 @@ az postgres flexible-server db create \
    --server-name $POSTGRESQLSERVER
 ```
 
-The result is in JSON format. Make a note of the **fullyQualifiedDomainName** and **administratorLogin**. You should have saved the password in the previous step.
-
 You may check [Create an Azure Database for PostgreSQL - Flexible Server instance using Azure CLI](https://learn.microsoft.com/azure/postgresql/flexible-server/quickstart-create-server-cli) for more details.
 
 ### Connect via Service Connector
