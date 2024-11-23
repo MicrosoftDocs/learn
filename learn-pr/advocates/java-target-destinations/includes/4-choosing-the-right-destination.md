@@ -29,7 +29,6 @@ For running Java workloads on a platform as a service solution, Azure provides f
 
 For full control over your deployments, Azure provides the following three main options:
 
-- **Azure Container Apps**: Azure Container Apps supports various deployment methods, including deploying from Maven builds, JAR or WAR artifact files, Dockerfiles, or directly from IntelliJ.
 - **Azure Kubernetes Service (AKS)**: Best for more complex container-based Java applications. You also benefit from the rich AKS ecosystem.
 - **Azure virtual machines**: Best for running any kind of workload, or if you want to "lift and shift" from an existing on-premises infrastructure without rearchitecting your applications.
 
