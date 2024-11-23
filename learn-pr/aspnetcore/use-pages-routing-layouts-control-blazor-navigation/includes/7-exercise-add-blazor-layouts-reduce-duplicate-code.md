@@ -1,8 +1,8 @@
-As you added pages to the Blazing Pizza app, you'll have noticed we've been copying the navigation HTML. Blazor has built-in support to create this kind of page scaffolding in one place. They're called Blazor layouts. 
+As you added pages to the Blazing Pizza app, you might notice that we've been copying the navigation HTML. Blazor has built-in support to create this kind of page scaffolding in one place. They're called Blazor layouts. 
 
-We now have lots of duplicated HTML on several pages. Next, you'll create a layout for the whole app so that you can add navigation and company information in one single place.
+We now have lots of duplicated HTML on several pages. Next, you create a layout for the whole app so that you can add navigation and company information in one single place.
 
-In this exercise, you'll create a **MainLayout** component. You'll see how you can use this layout for specific pages and then make it the default layout for the whole app.
+In this exercise, you create a **MainLayout** component. You see how you can use this layout for specific pages and then make it the default layout for the whole app.
 
 ## Add a MainLayout component
 
@@ -42,9 +42,9 @@ In this exercise, you'll create a **MainLayout** component. You'll see how you c
     </div>
     ```
 
-    This layout has used some of the markup in **_Host.cshtml**, so we need to remove it from there.
+    This layout uses some of the markup in **_Host.cshtml**, so we need to remove it from there.
 
-1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save your changes.
+1. Save your changes by selecting <kbd>Ctrl</kbd>+<kbd>S</kbd>.
 1. For the filename, use **MainLayout.razor**. Make sure you save the file in the **Shared** directory.
 1. In the file explorer, expand **Pages**. Then select **_Host.cshtml**.
 1. Change the elements surrounding the Blazor app component from this code:
@@ -77,15 +77,15 @@ In this exercise, you'll create a **MainLayout** component. You'll see how you c
 
     :::image type="content" source="../media/webpage-using-blazor-main-layout.png" alt-text="Screenshot showing the new home page by using a Blazor layout.":::
 
-    The new home page will have a copyright footer for this year that automatically updates. To see what a page not using this layout looks like, select **My Orders**. Or go to an invalid page like `(http://localhost:5000/help)`. At the moment, our **404 Page not found** isn't using any of our branding.
+    The new home page has a copyright footer for this year that automatically updates. To see what a page looks like that isn't using this layout, select **My Orders**. Or go to an invalid page like `(http://localhost:5000/help)`. At the moment, we haven't branded our **404 Page not found**.
 
     :::image type="content" source="../media/page-not-found.png" alt-text="Screenshot of the sparse not found page.":::
 
-1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app.
+1. To stop the app, select <kbd>Shift</kbd> + <kbd>F5</kbd>.
 
-## Update all pages to use the new layout
+## Update all pages to the new layout
 
-Now you could add the `@layout MainLayout` directive to all the pages in our app. Blazor has a better solution. First, delete the layout directive just added to **Index.razor**.
+Now you could add the `@layout MainLayout` directive to all the pages in your app, but Blazor has a better solution. First, delete the layout directive just added to **Index.razor**.
 
 1. In the **Index.razor** component, delete `@layout MainLayout`.
 1. In the file explorer, expand **Pages**. Then select **MyOrders.razor**.
@@ -123,6 +123,6 @@ The **App.razor** component is where we can change how pages are routed but also
 
     The benefit of using a default layout is that you can apply it to all pages and use it for the layout view for not found pages.
 
-1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app.
+1. To stop the app, select <kbd>Shift</kbd> + <kbd>F5</kbd>.
 
 The work you needed to do for the app is finished in this module. If you want to see how to handle forms and validation, finish the next module in this learning path.
