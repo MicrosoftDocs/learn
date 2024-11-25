@@ -2,7 +2,7 @@ Imagine you're an employee of a pizza company named Contoso Pizza. Your team mai
 
 ## Option 1: Stay as-is
 
-ASP.NET MVC on .NET Framework continues to be supported and maintained by Microsoft. While it's not a good choice for new projects, you might decide that it's the best option for your existing project. As you weigh the costs and benefits of upgrading your applications, you should consider staying on .NET Framework as a valid option. You can still explore the benefits of migrating your existing ASP.NET application to Azure using the [Migrate an ASP.NET web application to Azure with Visual Studio](/training/paths/migrate-aspnet-web-application/) learning path.
+ASP.NET MVC on .NET Framework continues to be supported and maintained by Microsoft. While it's not a good choice for new projects, you might decide that it's the best option for your existing project. As you weigh the costs and benefits of upgrading your applications, you should consider staying on .NET Framework as a valid option. You can still explore the benefits of migrating your existing ASP.NET application to Azure using the guidance in [Migrate your .NET web app or service to Azure App Service](/dotnet/azure/migration/app-service).
 
 ## Option 2: Full upgrade to ASP.NET Core
 

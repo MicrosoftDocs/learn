@@ -34880,6 +34880,71 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/migrate-aspnet-web-application/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/azure/migration/app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-configurationbuilder/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-configurationbuilder/2-exercise-setup-app-deploy-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-configurationbuilder/3-aspnet-configurationbuilder-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-configurationbuilder/4-exercise-aspnet-configurationbuilder.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-configurationbuilder/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-configurationbuilder/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-session/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-session/2-exercise-deploy-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-session/3-aspnet-session-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-session/4-exercise-aspnet-session.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-session/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-session/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/optimize-your-web-apps-with-redis/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
       "redirect_document_id": false
