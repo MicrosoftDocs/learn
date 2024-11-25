@@ -1,0 +1,9 @@
+Gone are the days of endless searches and tedious tasks. Whether you're composing messages, summarizing web content, or seeking assistance with a query, Copilot in Microsoft Edge elevates your browsing to a whole new level of efficiency. 
+
+In this video, you learn how to utilize the capabilities of Copilot in Microsoft Edge. You explore how to access Copilot within Microsoft Edge and discover how it can optimize your web interactions, enhancing your online experience to be more productive and engaging than ever before.
+
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2298059]
+
+_Disclaimer: This video is based on the previous version of Copilot integrated into Microsoft Edge. Since then, Microsoft introduced a new interface for Copilot within Microsoft Edge, offering enhanced features._ _The updated version includes improved navigation, another capabilities, and a refined user interface designed to make your interactions even smoother and more productive. While the core functionalities remain similar, users may notice differences in the layout and accessibility of features. We encourage you to explore the latest version of Copilot in Microsoft Edge to take full advantage of these improvements._
+
+Microsoft Edge now includes Copilot. This AI feature enhances browsing with interactive functions. You can compose messages, summarize web pages, and get help with tasks directly in Microsoft Edge. Download Microsoft Edge, click the Copilot icon, and use features like chat, compose, and PDF summarization to boost productivity. Copilot also offers text-to-speech, translation, and image description within the browser.

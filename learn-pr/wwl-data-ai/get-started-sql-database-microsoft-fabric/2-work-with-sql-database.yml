@@ -8,6 +8,8 @@ metadata:
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
+  ms.custom:
+    - ignite-2024
 durationInMinutes: 9
 content: |
   [!include[](includes/2-work-with-sql-database.md)]

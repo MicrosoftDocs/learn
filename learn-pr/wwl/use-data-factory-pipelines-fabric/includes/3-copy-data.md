@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - ignite-2024
+---
 The **Copy Data** activity is one of the most common uses of a data pipeline. Many pipelines consist of a single **Copy Data** activity that is used to ingest data from an external source into a lakehouse file or table.
 
 You can also combine the **Copy Data** activity with other activities to create a repeatable data ingestion process - for example by using a **Delete data** activity to remove existing data, a **Copy Data** activity to replace the deleted data with a file containing data from an external source, and a **Notebook** activity to run Spark code that transforms the data in the file and loads it into a table.
@@ -24,4 +28,3 @@ If you need to apply transformations to the data as it is ingested, or merge dat
 
 > [!TIP]
 > To learn more about Dataflow (Gen2) in Microsoft Fabric to ingest data, consider completing the [Ingest Data with Dataflows Gen2 in Microsoft Fabric](/training/modules/use-dataflow-gen-2-fabric) module.
-

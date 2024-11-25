@@ -3167,7 +3167,7 @@ achievements:
   type: badge
   title: Fundamentals of Azure OpenAI Service
   summary: Get to know the connection between artificial intelligence (AI), Responsible AI, and text, code, and image generation. Understand how you can use Azure OpenAI to build solutions against AI models within Azure.
-  iconUrl: /training/achievements/explore-azure-openai.svg
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.badge
   type: badge
   title: Create multi-page Xamarin.Forms apps with stack and tab navigation
@@ -4127,6 +4127,11 @@ achievements:
   title: Configure network routing and endpoints
   summary: Learn how to configure network routes, including endpoints and private links.
   iconUrl: /training/achievements/network-routing-endpoints-configure.svg
+- uid: learn.cpp-write-your-first-program.badge
+  type: badge
+  title: Write your first program in C++
+  summary: Get familiar with the C++ programming language! Construct a C++ program and learn basic C++ syntax. Also, learn how to identify and correct common programming errors.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.wwl.train-compute-intensive-models-azure-machine-learning.trophy
   type: trophy
   title: Train compute-intensive models with Azure Machine Learning
@@ -4172,3 +4177,33 @@ achievements:
   title: Build a basic cloud-native service using PostgreSQL and Node.js
   summary: Build a basic service consisting of an Express.js-based web service with Microsoft Azure Database for PostgreSQL providing its persistent data store, and managed by a front-end Next.js management web app. 
   iconUrl: /training/achievements/cloud-native-build-basic-service.svg
+- uid: learn.wwl.create-azure-machine-learning-resources-cli-v2.badge
+  type: badge
+  title: Create Azure Machine Learning resources with the CLI (v2)
+  summary: Use the Azure Machine Learning CLI (v2) to create and manage workspace resources.
+  iconUrl: /training/achievements/1-create-azure-machine-learning-resources-with-cli-v2.svg
+- uid: learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.badge
+  type: badge
+  title: Deploy an Azure Machine Learning model to a managed endpoint with CLI (v2)
+  summary: Use the Azure Machine Learning CLI (v2) to deploy a machine learning model to a managed online endpoint.
+  iconUrl: /training/achievements/4-deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.svg
+- uid: learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.badge
+  type: badge
+  title: Run component-based pipelines in Azure Machine Learning with CLI (v2)
+  summary: Use components to easily share and reuse code and use component-based pipelines to create machine learning workflows.
+  iconUrl: /training/achievements/machine-learning-component-pipelines.svg
+- uid: learn.wwl.run-jobs-azure-machine-learning-cli-v2.badge
+  type: badge
+  title: Run jobs in Azure Machine Learning with CLI (v2)
+  summary: Use the Azure Machine Learning CLI (v2) to train models as jobs. Train a model using a basic Python script, or perform hyperparameter tuning with a sweep job.
+  iconUrl: /training/achievements/2-run-jobs-in-azure-machine-learning-with-cli-v2.svg
+- uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.badge
+  type: badge
+  title: Use MLflow with Azure Machine Learning jobs submitted with CLI (v2)
+  summary: Use MLflow to track model metrics and artifacts when training and registering models with the Azure Machine Learning CLI (v2).
+  iconUrl: /training/achievements/3-use-mlflow-with-azure-ml-jobs-submitted-with-cli-v2.svg
+- uid: learn.optimize-web-app-with-redis.badge
+  type: badge
+  title: Optimize your web applications by caching read-only data with Redis
+  summary: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
+  iconUrl: /training/achievements/optimize-web-apps-with-redis.svg
