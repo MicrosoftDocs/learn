@@ -1,4 +1,4 @@
-In the last exercise, you opened and edited a source file in the GitHub public repository, then created a pull request (PR). Now, you need to ensure the validation processes went smoothly, review your PR, and sign off on it to submit it to the PR queue. If it passes review, it's merged and goes live on the published site!
+In the last exercise, you opened and edited a source file in the GitHub public repository, then created a pull request (PR). Now, you need to ensure the validation processes went smoothly, review your PR, and sign off on it to submit it to the PR queue. If it passes review, it gets merged and goes live on the published site!
 
 ## Validate
 
@@ -8,7 +8,7 @@ Validation processes run automatically and can take several minutes to complete.
 
 ## Review
 
-It's good practice to review the PR, check that any validation issues or comments have been resolved, and complete a final check that your changes are ready for publishing. Review your PR by selecting the **Files changed** tab and confirming that your new sentence was added correctly. When you're finished, return to the **Conversation** tab.
+It's good practice to review the PR, check that you resolved any validation issues or comments, and complete a final check that your changes are ready for publishing. Review your PR by selecting the **Files changed** tab and confirming that your new sentence was added correctly. When you're finished, return to the **Conversation** tab.
 
 ## Sign off on your PR
 

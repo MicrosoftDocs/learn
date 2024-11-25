@@ -20,7 +20,7 @@ Editing a documentation article in a public repository might seem like it begins
 
 How does this merge happen? You need to tell GitHub—specifically, the main repository's owners and the article's authors—that your edits are finalized and ready for review, publishing, and the world to see! To do this, you create and submit a *pull request*.
 
-A pull request (PR) is a proposal for your changes to be merged from the branch in your fork that you were working in to the live repository's default *main* branch. When you work in a public repository, your pull requests is always reviewed by a human reviewer before being merged. There might also be some automated checks, such as merge compatibility and build validation. Once these reviews are completed and any issues resolved, your changes are merged to the live branch and become available on Microsoft Learn!
+A pull request (PR) is a proposal for your changes to be merged from the branch in your fork that you were working in to the live repository's default *main* branch. When you work in a public repository, your pull requests are always reviewed by a human reviewer before being merged. There might also be some automated checks, such as merge compatibility and build validation. Once these reviews are completed and any issues resolved, your changes are merged to the live branch and become available on Microsoft Learn!
 
 ## Workflow for minor contributions to documentation
 

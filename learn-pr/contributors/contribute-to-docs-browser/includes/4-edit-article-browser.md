@@ -44,7 +44,7 @@ When you're finished making and previewing your changes, it's time to create you
 
 1. Add a **Commit message**. This becomes the title of your PR. The commit message should be a brief summary of your changes. Optionally, add an **Extended description** to give further details about your changes.
 
-    :::image type="content" source="../media/propose-changes-messages.png" alt-text="Screenshot of the pop up box with two fields to create a Commit message and add an extended description of the changes.":::
+    :::image type="content" source="../media/propose-changes-messages.png" alt-text="Screenshot of the pop-up box with two fields to create a Commit message and add an extended description of the changes.":::
 
 1. Select **Propose changes**.
 
