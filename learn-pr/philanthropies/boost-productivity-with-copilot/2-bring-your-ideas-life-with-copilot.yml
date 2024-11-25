@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.boost-your-productivity-with-microsoft-copilot.bring-your-ideas-life-with-copilot
+title: Bring your ideas to life with Copilot
+metadata:
+  title: Bring your ideas to life with Copilot
+  description: This unit is a part of the Boost productivity with Copilot module.
+  ms.date: 11/21/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-bring-your-ideas-life-with-copilot.md)]

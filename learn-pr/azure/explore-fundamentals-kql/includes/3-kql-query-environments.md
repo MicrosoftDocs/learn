@@ -1,28 +1,28 @@
-Now that you're introduced to KQL, let's see the different query environments where you can use KQL in Microsoft products.
+Now that you're aware of KQL, let's look at the different query environments where you can use KQL in Microsoft products.
 
-The environments described in this unit are [Azure Data Explorer](#azure-data-explorer), [Synapse Real-Time Analytics in Microsoft Fabric (Preview)](#synapse-real-time-analytics-in-microsoft-fabric-preview), [Azure Monitor](#azure-monitor), [Microsoft Sentinel](#microsoft-sentinel), [Azure Resource Graph](#azure-resource-graph), [Microsoft Defender XDR](#microsoft-defender-xdr), and [Configuration Manager](#configuration-manager).
+The environments we describe in this unit are [Azure Data Explorer](#azure-data-explorer), [Real-Time Intelligence in Microsoft Fabric](#real-time-intelligence-in-microsoft-fabric), [Azure Monitor](#azure-monitor), [Microsoft Sentinel](#microsoft-sentinel), [Azure Resource Graph](#azure-resource-graph), [Microsoft Defender XDR](#microsoft-defender-xdr), and [Configuration Manager](#configuration-manager).
 
 ## Azure Data Explorer
 
-Azure Data Explorer is a fully managed, high-performance, big data analytics platform that makes it easy to analyze high volumes of data in near real-time. The Azure Data Explorer toolbox gives you an end-to-end solution for data ingestion, query, visualization, and management.
+Azure Data Explorer is a fully managed, high-performance, big-data analytics platform that makes it easy to analyze high volumes of data in near real time. The Azure Data Explorer toolbox gives you an end-to-end solution for data ingestion, query, visualization, and management.
 
-Azure Data Explorer makes it simple to extract key insights, spot patterns and trends, and create forecasting models. It uses Machine Learning, and analyzes structured, semi-structured, and unstructured data across time series. Azure Data Explorer is scalable, secure, robust, and enterprise-ready, and is useful for log analytics, time series analytics, IoT, and general-purpose exploratory analytics.
+Azure Data Explorer makes it simple to extract key insights, spot patterns and trends, and create forecasting models. It uses Machine Learning and analyzes structured, semistructured, and unstructured data across time series. Azure Data Explorer is scalable, secure, robust, and enterprise-ready, and is useful for log analytics, time-series analytics, IoT, and general-purpose exploratory analytics.
 
 :::image type="content" source="../media/7-azure-data-explorer.png" alt-text="Screenshot of query environment in Azure Data Explorer." lightbox="../media/7-azure-data-explorer.png":::
 
-KQL was developed for Azure Data Explorer and can be used in various environments, including the [web UI](/azure/data-explorer/web-ui-query-overview), [Kusto CLI](/azure/data-explorer/kusto/tools/kusto-cli), and the desktop app [Kusto.Explorer](/azure/data-explorer/kusto/tools/kusto-explorer). You can find the full query language documentation set at [KQL overview](/azure/data-explorer/kusto/query/).
+KQL was developed for Azure Data Explorer and can be used in various environments, including the [web UI](/azure/data-explorer/web-ui-query-overview), [Kusto CLI](/azure/data-explorer/kusto/tools/kusto-cli), and the [Kusto.Explorer](/azure/data-explorer/kusto/tools/kusto-explorer) desktop app. You can find the full query language documentation set at [KQL overview](/azure/data-explorer/kusto/query/).
 
 For more product information, see [What is Azure Data Explorer?](/azure/data-explorer/data-explorer-overview)
 
-## Synapse Real-Time Analytics in Microsoft Fabric (Preview)
+## Real-Time Intelligence in Microsoft Fabric
 
-Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, near real-time analytics, and business intelligence. It offers a comprehensive suite of services, including a data lake, data engineering, and data integration, all in one place. Real-Time Analytics is a fully managed big data analytics platform optimized for streaming and time-series data. Real-Time Analytics contains what can be thought of as the SaaS version of Azure Data Explorer. Specifically, you can use KQL in KQL Queryset to run queries, view, and customize query results on data from a KQL database. You can also save queries for later use, or share with others to collaborate on data exploration.
+Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, near-real-time analytics, and business intelligence. It offers a comprehensive suite of services, including a data lake, data engineering, and data integration, all in one place. Real-Time Intelligence is a fully managed big-data analytics platform optimized for streaming and time-series data. Real-Time Intelligence contains what we can think of as the SaaS version of Azure Data Explorer. Specifically, you can use KQL in KQL Queryset to run queries, view, and customize query results on data from a KQL database. You can also save queries for later use, or share with others to collaborate on data exploration.
 
-:::image type="content" source="../media/7-real-time-analytics.png" alt-text="Screenshot of query in Real-Time Analytics." lightbox="../media/7-real-time-analytics.png":::
+:::image type="content" source="../media/7-real-time-analytics.png" alt-text="Screenshot of query in Real-Time Intelligence." lightbox="../media/7-real-time-analytics.png":::
 
-For more information, see [Query data in a KQL Queryset](/fabric/real-time-analytics/kusto-query-set). 
+For more information, see [Query data in a KQL Queryset](/fabric/real-time-analytics/kusto-query-set).
 
-For more product information, see [What is Real-Time Analytics in Fabric?](/fabric/real-time-analytics/overview)
+For more product information, see [What is Real-Time Intelligence in Fabric?](/fabric/real-time-intelligence/overview)
 
 ## Azure Monitor
 
@@ -38,33 +38,33 @@ For more product information, see [Azure Monitor overview](/azure/azure-monitor/
 
 ## Microsoft Sentinel
 
-Microsoft Sentinel is a scalable, cloud-native solution that provides security information and event management (SIEM), and security orchestration, automation, and response (SOAR). Many features in Microsoft Sentinel utilize KQL. Proficiency with KQL is valuable though when using Microsoft Sentinel's hunting search-and-query tools to proactively and reactively hunt for security threats across your organization's data sources. For more information, see [Hunt for threats with Microsoft Sentinel](/azure/sentinel/hunting).
+Microsoft Sentinel is a scalable, cloud-native solution that provides security information and event management (SIEM), as well as security orchestration, automation, and response (SOAR). Many features in Microsoft Sentinel use KQL. Proficiency with KQL is valuable when using Microsoft Sentinel's hunting search-and-query tools to proactively and reactively hunt for security threats across your organization's data sources. For more information, see [Threat hunting in Microsoft Sentinel](/azure/sentinel/hunting).
 
-:::image type="content" source="../media/7-sentinel.png" alt-text="Screenshot of Microsoft Sentinel threat hunting environment." lightbox="../media/7-sentinel.png":::
+:::image type="content" source="../media/7-sentinel.png" alt-text="Screenshot of Microsoft Sentinel threat-hunting environment." lightbox="../media/7-sentinel.png":::
 
-But that's just a start. Microsoft Sentinel uses KQL for alerts, workbook visualizations, parsers, and transforming data. Since Microsoft Sentinel is built on top of the Azure Monitor service and uses Azure Monitor's Log Analytics workspaces to store all of its data, Microsoft Sentinel also provides a **Logs** view for direct table queries to find connections in the data. 
+But that's just a start. Microsoft Sentinel uses KQL for alerts, workbook visualizations, parsers, and transforming data. Because Microsoft Sentinel is built on top of the Azure Monitor service and uses Azure Monitor's Log Analytics workspaces to store all of its data, Microsoft Sentinel also provides a **Logs** view for direct table queries to find connections in the data.
 
 For more product information, see [What is Microsoft Sentinel?](/azure/sentinel/overview)
 
 ## Azure Resource Graph
 
-Azure Resource Graph is an Azure service designed to extend Azure Resource Management. It allows you to effectively govern your environment, by providing efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions. With Azure Resource Graph, you can access the properties returned by resource providers without needing to make individual calls to each resource provider.
+Azure Resource Graph is an Azure service designed to extend Azure Resource Management. It allows you to effectively govern your environment by providing efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions. With Azure Resource Graph, you can access the properties resource providers return without needing to make individual calls to each resource provider.
 
 :::image type="content" source="../media/7-resource-graph.png" alt-text="Screenshot of query environment in Azure Resource Graph." lightbox="../media/7-resource-graph.png":::
 
-Azure Resource Graph supports a subset of KQL data types, scalar functions, scalar operators, and aggregation functions. Resource Graph supports specific tabular operators, some of which have different behaviors. This behavior is summarized in [Supported KQL language elements](/azure/governance/resource-graph/concepts/query-language#supported-kql-language-elements).
+Azure Resource Graph supports a subset of KQL data types, scalar functions, scalar operators, and aggregation functions. Resource Graph supports specific tabular operators, some of which have different behaviors. We summarize this behavior in [Supported KQL language elements](/azure/governance/resource-graph/concepts/query-language#supported-kql-language-elements).
 
 For more product information, see [What is Azure Resource Graph?](/azure/governance/resource-graph/overview)
 
 ## Microsoft Defender XDR
 
-Microsoft Defender XDR is a unified pre- and post-breach enterprise defense suite that provides integrated protection against sophisticated attacks. It natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications. Your security operations team receives an alert within the Microsoft Defender portal whenever a malicious or suspicious activity or artifact is detected. But, it's not enough to respond to attacks as they occur. For extended, multi-phase attacks such as ransomware, you must proactively search for the evidence of an attack in progress and take action to stop it before it completes.
+Microsoft Defender XDR is a unified pre- and post-breach enterprise defense suite that provides integrated protection against sophisticated attacks. It natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications. Your security operations team receives an alert within the Microsoft Defender portal whenever a malicious or suspicious activity or artifact is detected. However, it's not enough to respond to attacks as they occur. For extended, multiphase attacks such as ransomware, you must proactively search for the evidence of an attack in progress and take action to stop it before it completes.
 
 :::image type="content" source="../media/7-defender.png" alt-text="Screenshot of Microsoft Defender XDR threat hunting environment." lightbox="../media/7-defender.png":::
 
-Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats. For more information, see [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](/microsoft-365/security/defender/advanced-hunting-overview).
+Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats. For more information, see [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](/defender-xdr/advanced-hunting-overview).
 
-For more product information, see [What is Microsoft Defender XDR?](/microsoft-365/security/defender/microsoft-365-defender)
+For more product information, see [What is Microsoft Defender XDR?](/defender-xdr/microsoft-365-defender)
 
 ## Configuration Manager
 

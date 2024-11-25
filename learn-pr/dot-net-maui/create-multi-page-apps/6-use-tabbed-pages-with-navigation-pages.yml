@@ -4,8 +4,8 @@ title: Use tabbed pages with pages on the navigation stack
 metadata:
   unitType: learning-content
   title: "Use tabbed pages with pages on the navigation stack"
-  description: "Integrate tabbed pages with navigation pages on the navigation stack"
-  ms.date: 10/26/2023
+  description: "Integrate tabbed pages with navigation pages on the navigation stack using .NET Multi-platform App UI (MAUI) Shell."
+  ms.date: 11/22/2024
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl

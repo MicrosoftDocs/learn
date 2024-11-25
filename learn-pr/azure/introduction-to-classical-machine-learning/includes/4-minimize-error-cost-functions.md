@@ -4,7 +4,7 @@ The learning process repeatedly alters a model until it can make high-quality es
 
 In supervised learning, error, cost, and loss all refer to the number of mistakes that a model makes in predicting one or more labels.
 
-These three terms are used somewhat loosely in machine learning, which can cause some confusion. For the sake of simplicity, we'll use them interchangeably here. Cost is calculated through mathematics; it isn't a qualitative judgment. For example, if a model predicts that a daily temperature will be 40°F, but the actual value is 35°F, we might say it has an error of 5°F.
+These three terms are used loosely in machine learning, which can cause some confusion. For the sake of simplicity, we use them interchangeably here. Cost is calculated through mathematics; it isn't a qualitative judgment. For example, if a model predicts a daily temperature of 40°F, but the actual value is 35°F, we might say it has an error of 5°F.
 
 ## Minimizing cost is our goal
 
@@ -20,6 +20,6 @@ After the cost function calculates cost, we know whether the model is performing
 
 :::image type="content" source="../media/2-4-a.png" alt-text="Diagram of the machine-learning lifecycle with labels, but without features." border="false":::
 
-During training, different cost functions can change how long training takes, or how well it works. For example, if the cost function always states that errors are small, the optimizer will make only small changes to the model. As another example, if the cost function returns very large values when certain mistakes are made, the optimizer will make changes to the model so that it doesn't make these kinds of mistakes.
+During training, different cost functions can change how long training takes, or how well it works. For example, if the cost function always states that errors are small, the optimizer makes only small changes to the model. As another example, if the cost function returns large values when certain mistakes are made. Then, the optimizer makes changes to the model, so that it doesn't make these kinds of mistakes.
 
 There isn't a one-size-fits-all cost function. Which one is best depends on what we're trying to achieve. We often need to experiment with cost functions to get a result we're happy with. In the next exercise, we'll do this experiment.

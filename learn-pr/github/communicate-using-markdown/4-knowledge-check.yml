@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This content is part of the "Communicate effectively on GitHub using Markdown" module.
-  ms.date: 05/30/2023
+  ms.date: 11/05/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
@@ -14,20 +14,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following Markdown snippets would produce the text *Hello, **world**!* in bold italics?"
+  - content: "Which of the following Markdown snippets produces the text *Hello, **world**!* in bold italics?"
     choices:
     - content: "`*Hello, *world*!*`"
       isCorrect: false
-      explanation: "Incorrect. This snippet would produce *Hello, *world*!*."
+      explanation: "Incorrect. This snippet produces *Hello, *world*!*."
     - content: "`**Hello, *world*!**`"
       isCorrect: false
-      explanation: "Incorrect. This snippet would produce **Hello, *world*!**."
+      explanation: "Incorrect. This snippet produces **Hello, *world*!**."
     - content: "`***Hello, world!***`"
       isCorrect: true
       explanation: "Correct. Remember that you can also use underscores (`_`) instead of asterisks if you prefer."
     - content: "`### Hello, world!`"
       isCorrect: False
-      explanation: "Incorrect. This snippet would produce ### Hello, world!"
+      explanation: "Incorrect. This snippet produces ### Hello, world!"
   - content: "How do you print certain characters, like asterisks (`*`) and underscores (`_`), literally on your output?"
     choices:
     - content: "Use three in a row, like `***` or `___`."

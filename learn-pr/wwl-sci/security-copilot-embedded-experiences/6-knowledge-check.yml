@@ -3,10 +3,10 @@ uid: learn.security-copilot-embedded-experiences.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check your knowledge on the embedded experiences of Microsoft Copilot for Security.
+  description: Check your knowledge on the embedded experiences of Microsoft Security Copilot.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 08/22/2024
+  ms.date: 11/20/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: A security analyst is using Microsoft Copilot in Microsoft Defender XDR to review an incident and needs to understand the sequence of events that occurred during the attack. Which feature should they use to obtain a comprehensive overview?
+  - content: A security analyst is using Copilot in Microsoft Defender XDR to review an incident and needs to understand the sequence of events that occurred during the attack. Which feature should they use to obtain a comprehensive overview?
     choices:
     - content: Script analysis
       isCorrect: false
@@ -27,17 +27,17 @@ quiz:
     - content: Guided responses
       isCorrect: false
       explanation: Incorrect. Guided responses provide recommended actions for incident response, not a summary of the incident's timeline.
-  - content: An organization's legal compliance team uses Microsoft Purview eDiscovery tools for internal and external investigations and is planning to use Copilot for Security to help make them more productive and aid in their investigations. Which of the following statements is true regarding Copilot use with eDiscovery?
+  - content: An organization's legal compliance team uses Microsoft Purview eDiscovery tools for internal and external investigations and is planning to use Security Copilot to help make them more productive and aid in their investigations. Which of the following statements is true regarding Copilot use with eDiscovery?
     choices:
     - content: Copilot functionality isn't supported with Microsoft Purview eDiscovery.
       isCorrect: false
-      explanation: Incorrect. Copilot for Security functionality is supported with Microsoft Purview eDiscovery (Premium).
+      explanation: Incorrect. Security Copilot functionality is supported with Microsoft Purview eDiscovery (Premium).
     - content: The organization must be licensed to use Microsoft Purview eDiscovery (Premium).
       isCorrect: true
-      explanation: Correct. To use Copilot for Security functionality with Microsoft Purview eDiscovery, the organization must be licensed for Microsoft Purview eDiscovery (Premium).
+      explanation: Correct. To use Security Copilot functionality with Microsoft Purview eDiscovery, the organization must be licensed for Microsoft Purview eDiscovery (Premium).
     - content: The organization needs to be licensed for Microsoft Purview eDiscovery (Standard), as a minimum.
       isCorrect: false
-      explanation: Incorrect. To use Copilot for Security functionality with Microsoft Purview eDiscovery, the organization must be licensed for Microsoft Purview eDiscovery (Premium).
+      explanation: Incorrect. To use Security Copilot functionality with Microsoft Purview eDiscovery, the organization must be licensed for Microsoft Purview eDiscovery (Premium).
   - content: After enabling the Entra plugin in Copilot and assigning the appropriate role permissions, an admin navigates to the Risky users report to investigate a user's risky sign-ins. What should the admin do next to view the Copilot generated summary?
     choices:
     - content: Select the 'Export' option to download the user's risk details.
@@ -60,14 +60,14 @@ quiz:
     - content: Information about individual settings, their impact, and recommended values.
       isCorrect: true
       explanation: Correct. When creating a new policy, Copilot can be used to learn more about individual settings, their impact, and recommended values.
-  - content: Copilot for Security in Defender for Cloud is available for all users when you enable Defender for Cloud in your environment, have access to Azure Copilot, and have SCUs assigned for Copilot for Security. What additional requirement must be met to remediate code with Copilot for Security?
+  - content: Copilot in Defender for Cloud is available for all users when you enable Defender for Cloud in your environment, have access to Azure Copilot, and have SCUs assigned for Security Copilot. What additional requirement must be met to remediate code with Security Copilot?
     choices:
     - content: You must enable all the cloud workload protection plans.
       isCorrect: false
-      explanation: Incorrect. No CWP plans are required. To use the capability to remediate code with Copilot for Security, you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.
+      explanation: Incorrect. No CWP plans are required. To use the capability to remediate code with Security Copilot, you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.
     - content: You must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.
       isCorrect: true
-      explanation: Correct. To use the capability to remediate code with Copilot for Security, you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.
+      explanation: Correct. To use the capability to remediate code with Security Copilot, you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.
     - content: You must enable the Defender for Cloud Security Posture Management (DCSPM) plan.
       isCorrect: false
-      explanation: Incorrect. Although it's recommended that the DCSPM plan be enabled, it isn't required and doesn't address the requirement to remediate code with Copilot for Security. To use remediate code with Copilot for Security you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.
+      explanation: Incorrect. Although it's recommended that the DCSPM plan be enabled, it isn't required and doesn't address the requirement to remediate code with Security Copilot. To use remediate code with Security Copilot you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.

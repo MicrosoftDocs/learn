@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.explore-entanglement.create-teleportation-qsharp
-title: Create teleportation with Q#
+title: Exercise - Use entanglement to teleport with Q#
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Create teleportation with Q#
+  title: Exercise - Use entanglement to teleport with Q#
   description: Create teleportation with Q#
   ms.date: 10/30/2024
   author: SoniaLopezBravo

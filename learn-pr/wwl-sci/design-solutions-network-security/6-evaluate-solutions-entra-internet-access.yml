@@ -5,8 +5,8 @@ metadata:
   title: Evaluate solutions that use Microsoft Entra Internet Access
   description: "SC-100 preparatory unit on the topic: evaluate solutions that use Microsoft Entra Internet Access."
   ms.date: 7/1/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 5
 content: |

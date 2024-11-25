@@ -1,9 +1,9 @@
-Although generative AI can greatly enhance productivity for people with disabilities, it can pose the following challenges and risks for accessibility when it's not built responsibly: 
+Although generative AI can greatly enhance productivity for people with disabilities, it can pose the following challenges and risks for accessibility if it isn't built responsibly:
 
 - **Biases**: The unfair or inaccurate assumptions or preferences that affect the data, algorithms, or outcomes of generative AI. An example of bias is the lack of representation or diversity of people with disabilities in the datasets or models that are used for generative AI. This situation can lead to inaccurate, inappropriate, or harmful outputs.
 - **Ableism**: The discrimination or oppression of people with disabilities based on the assumption that they're inferior or less capable than others. An example of ableism is the exclusion or marginalization of people with disabilities in the design, development, or evaluation of generative AI for accessibility. This exclusion prevents individuals with disabilities from having a voice or a choice in the solutions that affect them.
 
-It's important to consider the ethical and social implications of generative AI for accessibility and to involve people with disabilities as co-creators and stakeholders in the process. Generative AI can then become a tool for empowering and enabling people with disabilities, rather than a source of harm or discrimination.  
+It's important to consider the ethical and social implications of generative AI for accessibility and to involve people with disabilities as cocreators and stakeholders in the process. Generative AI can then become a tool for empowering and enabling people with disabilities, rather than a source of harm or discrimination.  
 
 ## Inclusive design principles for AI solutions
 

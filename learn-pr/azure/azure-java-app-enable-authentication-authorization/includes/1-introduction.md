@@ -10,7 +10,7 @@ Microsoft Entra ID allows you to secure your applications by signing in users wi
 
 ## What will we be doing?
 
-In this module, you will:
+In this module, you:
 
 - Register a web application with Microsoft Entra ID.
 - Sign in users in a Microsoft Entra tenant to a Java web application.

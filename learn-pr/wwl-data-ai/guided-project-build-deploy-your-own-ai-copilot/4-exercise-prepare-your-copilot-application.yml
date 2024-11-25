@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-build-deploy-your-own-ai-copilot.exercise-prepare-your-copilot-application
+title: Exercise - Prepare your copilot application
+metadata:
+  title: Exercise - Prepare your copilot application
+  description: "Exercise - Prepare your copilot application"
+  ms.date: 11/13/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-prepare-your-copilot-application.md)]

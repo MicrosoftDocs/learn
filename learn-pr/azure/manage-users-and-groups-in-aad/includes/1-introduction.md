@@ -19,3 +19,4 @@ In this module, you'll:
 
 - Basic understanding of identity and role-based access control
 - Experience using the Azure portal
+- Experience with Microsoft Entra admin center
