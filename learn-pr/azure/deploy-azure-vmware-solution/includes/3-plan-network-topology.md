@@ -70,13 +70,18 @@ If on-premises network infrastructure is restrictive, the following ports must b
 | On-premises DNS server | Azure VMware Solution DNS server | UDP | 53 |
 | On-premises network | Azure VMware Solution vCenter Server | TCP (HTTP/HTTPS) | 80, 443 |
 | Azure VMware Solution private cloud management network | On-premises Active Directory | TCP | 389/636 |
-| On-premises vCenter | Azure VMware Solution management network | TCP | 8000 |
-| Web browser | Hybrid Cloud Manager (HCM) | TCP (HTTPS) | 9443 |
-| Admin network | HCM | SSH | 22 |
-| HCM | Cloud gateway | TCP (HTTPS) | 8123, 9443 |
-| Cloud gateway | Layer 2 connectivity | TCP (HTTPS) | 443
-| Cloud gateway | ESXi hosts | TCP | 80, 902 |
-| Cloud gateway (local) | Cloud gateway (remote) | UDP | 4500, 500 |
+| Azure VMware Solution private cloud management network | On-premises Active Directory Global Catalog | TCP | 3268/3269 |
+| On-premises network | HCX Cloud Manager | TCP (HTTPS) | 9443 |
+| On-premises Admin Newtork | HCX Cloud Manager | SSH | 22 |
+| HCX Manager | Interconnect (HCX-IX) | TCP (HTTPS) | 8123 |
+| HCX Manager | Interconnect (HCX-IX), Network Extension (HCX-NE) | TCP (HTTPS) | 9443 |
+| Interconnect (HCX-IX) | Layer 2 connectivity | TCP (HTTPS) | 443 |
+| HCX Manager, Interconnect (HCX-IX) | ESXi Hosts | TCP | 80, 443, 902 | 
+| Interconnect (HCX-IX), Network Extension (HCX-NE) at Source | Interconnect (HCX-IX), Network Extension (HCX-NE) at Destination | UDP | 4500 |
+| On-premises Interconnect (HCX-IX) | Cloud Interconnect (HCX-IX) | UDP | 500 |
+| On-premises vCenter Server network | Azure VMware Solution management network | TCP | 8000 |
+| HCX Connector | connector.hcx.vmware.com hybridity.depot.vmware.com | TCP | 443 |
+
 
 ## DHCP and DNS resolution considerations
 
