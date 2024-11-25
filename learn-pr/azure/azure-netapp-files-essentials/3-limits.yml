@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-essentials.limits
+title: Azure NetApp Files limits
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: learning-module
+  title: Azure NetApp Files limits
+  description: Understand how to work with resource limits in Azure NetApp Files.    
+  ms.date: 11/18/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-limits.md)]
