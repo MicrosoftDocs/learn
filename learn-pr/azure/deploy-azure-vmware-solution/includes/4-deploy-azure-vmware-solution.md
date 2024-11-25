@@ -70,11 +70,11 @@ Follow these steps:
     | **Number of hosts** | The number of hosts to add to the private cloud cluster. With a stretched cluster feature requires 2x number of hosts needed to support your workload, equally split between the two availability zones. |
     | **Address block for private cloud** | An IP address block for the CIDR network used by the private cloud. Use /22 address space. The address should be unique and not overlap with other Azure Virtual Networks and with on-premises networks. |
 
-1. After all fields are filled in, select **Review + Create**. The Azure VMware Solution deployment might take in between three to four hours before complete.
+1. After all fields are filled in, select **Review + Create**. The Azure VMware Solution deployment can take between three to four hours before completion.
 
 1. When the deployment finishes, select the resource group, and then select the private cloud. The **Status** will show as **Succeeded**:
 
-    :::image type="content" source="../media/4-validate-deployment.png" alt-text="Screenshot validating deployment successfully completed.":::
+    :::image type="content" source="../media/4-private-cloud-succeeded.png" alt-text="Screenshot shows the private cloud deployment successfully completed.":::
 
 1. Next, you'll need to connect the Azure VMware Solution ExpressRoute circuit to an Azure virtual network.
 1. Under **Manage**, select **Connectivity**.
