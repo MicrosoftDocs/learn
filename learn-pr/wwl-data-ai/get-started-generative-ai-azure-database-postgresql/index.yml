@@ -6,8 +6,8 @@ metadata:
   title: Get started with generative AI in Azure Database for PostgreSQL
   description: Use generative AI in Azure Database for PostgreSQL.
   author: wwlpublish
-  ms.author: rcaper
-  ms.date: 04/26/2024
+  ms.author: calopez
+  ms.date: 11/25/2024
   ms.service: azure-database-postgresql
   ms.subservice: flexible-server
   ms.topic: module
