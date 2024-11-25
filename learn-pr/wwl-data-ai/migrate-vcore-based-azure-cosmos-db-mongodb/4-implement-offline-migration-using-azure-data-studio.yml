@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Offline migration from MongoDB to vCore-based Azure Cosmos DB for MongoDB using Azure Data Studio
   description: "Offline migration from MongoDB to vCore-based Azure Cosmos DB for MongoDB using Azure Data Studio"
-  ms.date: 04/08/2024
+  ms.date: 11/24/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
