@@ -51,13 +51,11 @@ You may check [Connect to PostgreSQL Database from a Java Quarkus Container App 
 
 ### Update `spring.profiles.active` for PostgreSQL
 
-1. In the Azure portal, navigate to your **Azure Container Apps** instance. In the left pane, under **Application**, select **Containers**.
+Now let's set the environment variables of the deployed container apps to set the database as PostgreSql
 
-2. Click on **Edit and Deploy**, then in the **Container Image** section, click on **petclinic**.
-
-3. In the pop up window, switch to the ***Environment variables** tab and add one more line: **Name**: `spring.profiles.active`, **Source**: `Manual entry`, **Value**: `postgres`.
-
-4. Click **Save**, then Click **Create**.
+```bash
+az containerapp update -n $APP_NAME -g $RESOURCE_GROUP --set-env-vars "spring.profiles.active"="postgres"
+```
 
 This will restart the app and apply changes, such as initializing the SQL tables.
 

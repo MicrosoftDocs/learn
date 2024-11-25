@@ -18,4 +18,4 @@ Now you will see that your development stack is now set to **Java**.
 3. From there, you're presented with a chart that plots the metrics you're tracking in your application.
 ![Diagram of the Java Metrics.](../media/javametrics.png)
 
-Azure Container Apps can run any containerized Java application in the cloud while giving flexible options for how you deploy your applications. With the the support of Java Stack, you can accelerate your application with Automatic memory fitting, varies deployment options and built-in Java diagnostics tools. You can learn more on [Java on Azure Container Apps overview](https://learn.microsoft.com/en-us/azure/container-apps/java-overview).
+Azure Container Apps can run any containerized Java application in the cloud while giving flexible options for how you deploy your applications. With the the support of Java Stack, you can accelerate your application with Automatic memory fitting, varies deployment options and built-in Java diagnostics tools. You can learn more on [Java on Azure Container Apps overview](https://learn.microsoft.com/azure/container-apps/java-overview).
