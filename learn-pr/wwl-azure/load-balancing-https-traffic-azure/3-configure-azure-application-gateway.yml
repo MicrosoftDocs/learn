@@ -23,10 +23,10 @@ quiz:
       explanation: "Correct. With autoscaling enabled, the Application Gateway scales up or down based on application traffic requirements."
     - content: "Manual scaling"
       isCorrect: false
-      explanation: "Incorrect. With Manual scaling enabled, the gateway won't autoscale. If there is more traffic than the Application Gateway can handle, it could result in traffic loss."
+      explanation: "Incorrect. The gateway doesn't autoscale. If there's more traffic than the Application Gateway can handle, it could result in traffic loss."
     - content: "Health probes"
       isCorrect: false
-      explanation: "Incorrect. Health probes monitor the health of all resources in the back-end pool and automatically removes any resource considered unhealthy from the pool."
+      explanation: "Incorrect. Health probes monitor the health of all resources in the back-end pool."
   - content: "What is a listener?"
     choices:
     - content: "A listener is an entity that checks for incoming connection requests."
