@@ -79,13 +79,13 @@ Application Gateway routing also includes these features:
 
 ## TLS/SSL termination
 
-When you terminate the TLS/SSL connection at the application gateway, it offloads the CPU-intensive TLS/SSL termination workload from your servers. Also, you don’t need to install certificates and configure TLS/SSL on your servers.
+When you terminate the TLS/SSL connection at the application gateway, it offloads the CPU-intensive termination workload from your servers. Also, you don’t need to install certificates and configure TLS/SSL on your servers.
 
 If you need end-to-end encryption, Application Gateway can decrypt the traffic on the gateway by using your private key, then re-encrypt again with the public key of the service running in the back-end pool.
 
 Traffic enters the gateway through a front-end port. You can open many ports, and Application Gateway can receive messages on any of these ports. A listener is the first thing that your traffic meets when entering the gateway through a port. The listener is set up to listen for a specific host name, and a specific port on a specific IP address. The listener can use an TLS/SSL certificate to decrypt the traffic that enters the gateway. The listener then uses a rule that you define to direct the incoming requests to a back-end pool.
 
-:::image type="content" source="../media/tls-ssl-termination.png" alt-text="Diagram that depicts TLS/SSL termination in Azure Application Gateway."":::
+:::image type="content" source="../media/tls-ssl-termination.png" alt-text="Diagram that depicts TLS/SSL termination in Azure Application Gateway.":::
 
 Exposing your website or web application through the application gateway also means that you don't directly connect your servers to the web. You're exposing only port 80 or port 443 on the application gateway, which is then forwarded to the back-end pool server. In this configuration, your web servers aren't directly accessible from the internet, which reduces the attack surface of your infrastructure.
 
