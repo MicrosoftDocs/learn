@@ -4,7 +4,7 @@ metadata:
   title: Get started with FinOps
   description: Learn about the FinOps Framework and the impact of transitioning from a CapEx to an OpEx model.
   manager: mkluck
-  ms.date: 04/19/2024
+  ms.date: 11/22/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
@@ -22,8 +22,8 @@ abstract: |
 
   **Attribution** - The content of this learn module is based on the [FinOps Framework](https://www.finops.org/framework/) published by the [FinOps Foundation](https://www.finops.org/).
 prerequisites: |
-  - Basic understanding of cloud computing concepts.
-  - Basic understanding of pay-per-use model.
+  - Basic understanding of cloud computing concepts
+  - Basic understanding of pay-per-use model
 iconUrl: /training/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
