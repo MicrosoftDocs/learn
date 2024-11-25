@@ -17,7 +17,10 @@ export DATABASE="petclinic"
 Firstly let's update the environment variables of the deployed container apps to set the database as PostgreSql
 
 ```bash
-az containerapp update -n $APP_NAME -g $RESOURCE_GROUP --set-env-vars "spring.profiles.active"="postgres"
+az containerapp update \
+   --name $APP_NAME \
+   --resource-group $RESOURCE_GROUP \
+   --set-env-vars "spring.profiles.active"="postgres"
 ```
 
 ### Create a new Database
@@ -25,7 +28,9 @@ az containerapp update -n $APP_NAME -g $RESOURCE_GROUP --set-env-vars "spring.pr
 Now, let's create a PostgreSQL flexible server.
 
 ```bash
-az postgres flexible-server create --name $POSTGRESQLSERVER --resource-group $RESOURCE_GROUP
+az postgres flexible-server create \
+   --name $POSTGRESQLSERVER \
+   --resource-group $RESOURCE_GROUP
 ```
 
 You may find the auto-generated admin username and admin password in the output, save in a secure place if you want to connect and config later on.
@@ -53,8 +58,8 @@ With the database been created, now let's connect our previously deployed contai
 
    - Basic:
       - **Service type**: DB for PostgreSQL flexible server
-      - **PostgreSQL flexible server**: *your-server-name*
-      - **PostgreSQL database**: *your-database-name*
+      - **PostgreSQL flexible server**: petclinic-server
+      - **PostgreSQL database**: petclinic
       - **Client type**: SpringBoot
    - Authentication:
       - Choose Connection string.
