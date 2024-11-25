@@ -10,15 +10,15 @@ Azure NetApp Files supports any NFS client that operates within the RFC standard
 
 ### NFSv3 versus NFSv4.x
 
-NFSv4 and NFSv4.x offer different features:
+NFSv4 and NFSv4.x support different features:
 
 | Feature | NFSv3 | NFSv4.x |
-| --- | ----- | ------ |
+| --- | ------ | ------ |
 | State of NFS connections | NFSv3 is stateless, meaning that the NFS server doesn't keep track of the states of connections (including locks). | NFSv4.x is a stateful protocol. The client and server keep track of the states of the NFS connections, including lock states. |
 | File locking | Locking is handled outside of the NFS protocol, using Network Lock Manager (NLM). | Locking is integrated into the NFS protocol and doesn't require ancillary locking protocols to keep track of NFS locks. |
 | Performance | Because NFSv3 is stateless, performance with NFSv3 can be substantially better in workloads with high-metadata operations such as OPEN, CLOSE, SETATTR, and GETATTR. | The statefulness of NFSv4.x has some drawbacks, such as potential disruptions during network outages or storage failovers, and performance overhead in high metadata workload types.|
 | File permission | NFSv3 uses a basic file permission model where only the owner of the file, a group and everyone else can be assigned a combination of read/write/execute permissions. |NFSv4.x can use a more robust file permission model. These granular access control lists (ACLs) can be applied to users or groups and allow for permissions to be set on a wider range of operations than basic read/write/execute operations. |
-| Security | NFSv3 supports for UNIX mode bits (read, write, and execute). | Azure NetApp Files only supports NFSv4.1 Kerberos encryption. | NFSv4.x doesn't use ancillary protocols. Kerberos is applied to the entire NFS conversation when in use. |
+| Security | NFSv3 supports for UNIX mode bits (read, write, and execute). | Azure NetApp Files only supports NFSv4.1 Kerberos encryption. NFSv4.x doesn't use ancillary protocols. Kerberos is applied to the entire NFS conversation when in use. |
 | User authentication | NFSv3 uses numeric IDs for its user and group authentication. Usernames and group names aren't required for communication or permissions. NFSv3 can use LDAP for user and group lookups. | NFSv4.x uses a combination of user/group names and domain strings to verify user and group information. |
 
 Additionally, NFSv4.x provides many significant advantages over NFSv3, including:
