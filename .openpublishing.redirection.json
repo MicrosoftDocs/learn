@@ -34640,6 +34640,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/2-define-services.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/3-exercise-set-up-azure-postgresql.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/4-set-up-basic-service.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/5-exercise-connect-express-js-postgresql.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/6-extend-services-architecture.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/7-exercise-set-up-next-js-app.yml.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/index.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
@@ -34827,6 +34877,71 @@
     {
       "source_path": "learn-pr/wwl-data-ai/use-mlflow-azure-machine-learning-jobs-submitted-cli-v2/2-track-view-model-metrics-mlflow.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/migrate-aspnet-web-application/index.yml",
+      "redirect_url": "https://learn.microsoft.com/dotnet/azure/migration/app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-configurationbuilder/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-configurationbuilder/2-exercise-setup-app-deploy-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-configurationbuilder/3-aspnet-configurationbuilder-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-configurationbuilder/4-exercise-aspnet-configurationbuilder.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-configurationbuilder/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-configurationbuilder/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-session/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-session/2-exercise-deploy-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-session/3-aspnet-session-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-session/4-exercise-aspnet-session.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-session/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-session/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider",
       "redirect_document_id": false
     },
     {

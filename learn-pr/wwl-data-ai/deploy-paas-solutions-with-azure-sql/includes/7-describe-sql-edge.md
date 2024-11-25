@@ -38,7 +38,7 @@ Azure SQL Edge is available in the Azure Marketplace with two plans, Azure SQL E
 
 As a pre-requisite to deploy Azure SQL Edge, you need to have an IoT Hub provisioned with at least one IoT Edge device. In this example, an IoT Hub named **org-iot-hub** and a Linux-based IoT Edge device called **iot-edge-device-1** have been pre-provisioned.
 
-1. Locate the [Azure SQL Edge module in the Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftsqledge.azure-sql-edge?tab=Overview), and select the **Get It Now** button.
+1. Locate the [Azure SQL Edge module in the Azure Marketplace](https://azuremarketplace.microsoft.com/home), and select the **Get It Now** button.
 
     :::image type="content" source="../media/module-22-plan-implement-final-29.png" alt-text="The Azure SQL Edge module overview screen displays with the Get It Now button highlighted.":::
 

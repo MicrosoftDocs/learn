@@ -3167,7 +3167,7 @@ achievements:
   type: badge
   title: Fundamentals of Azure OpenAI Service
   summary: Get to know the connection between artificial intelligence (AI), Responsible AI, and text, code, and image generation. Understand how you can use Azure OpenAI to build solutions against AI models within Azure.
-  iconUrl: /training/achievements/explore-azure-openai.svg
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.badge
   type: badge
   title: Create multi-page Xamarin.Forms apps with stack and tab navigation
@@ -4172,6 +4172,11 @@ achievements:
   title: Train models in Azure Machine Learning with the CLI (v2)
   summary: The Azure Machine Learning CLI (v2) is an Azure CLI extension that you can use to train and deploy machine learning models. Learn how to use the CLI (v2) to create Azure Machine Learning workspace assets to use for model training and deployment.
   iconUrl: /training/achievements/train-models-in-azure-machine-learning-with-cli-v2.svg
+- uid: learn.azure.cna-build-basic-service.badge
+  type: badge
+  title: Build a basic cloud-native service using PostgreSQL and Node.js
+  summary: Build a basic service consisting of an Express.js-based web service with Microsoft Azure Database for PostgreSQL providing its persistent data store, and managed by a front-end Next.js management web app. 
+  iconUrl: /training/achievements/cloud-native-build-basic-service.svg
 - uid: learn.wwl.create-azure-machine-learning-resources-cli-v2.badge
   type: badge
   title: Create Azure Machine Learning resources with the CLI (v2)
@@ -4197,6 +4202,21 @@ achievements:
   title: Use MLflow with Azure Machine Learning jobs submitted with CLI (v2)
   summary: Use MLflow to track model metrics and artifacts when training and registering models with the Azure Machine Learning CLI (v2).
   iconUrl: /training/achievements/3-use-mlflow-with-azure-ml-jobs-submitted-with-cli-v2.svg
+- uid: learn.migrate-aspnet-web-application.trophy
+  type: trophy
+  title: Migrate an ASP.NET web application to Azure with Visual Studio
+  summary:  Learn how to take a .NET Framework web app and migrate it to Azure. This scenario represents a very common set of challenges that you will run into when moving an app to the cloud. You will make key updates to the solution to make it cloud ready.
+  iconUrl: /training/achievements/migrate-aspnet-web-application.svg
+- uid: learn.azure.aspnet-configurationbuilder.badge
+  type: badge
+  title: Externalize the configuration of an ASP.NET app by using an Azure key vault
+  summary: Learn how to use ConfigurationBuilder to dynamically configure an ASP.NET web app to retrieve secrets from an Azure key vault.
+  iconUrl: /training/achievements/aspnet-configurationbuilder.svg
+- uid: learn.azure.aspnet-session.badge
+  type: badge
+  title: Improve session scalability in a .NET Framework ASP.NET web application by using Azure Cache for Redis
+  summary: Learn how to use Azure Cache for Redis to store session data and improve the scalability of web applications.
+  iconUrl: /training/achievements/aspnet-session.svg
 - uid: learn.optimize-web-app-with-redis.badge
   type: badge
   title: Optimize your web applications by caching read-only data with Redis
