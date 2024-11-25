@@ -9,7 +9,7 @@ In this unit, you learn the benefits and limitations of the frameworks, and how 
 The cloud-based file synchronization application is a consumer-facing app. The differentiating requirements to focus on for this application are:
 
 - **Appearance and style of the application:** This application supports modern Windows design and matches the experience of Windows in-box apps. It must be a first-class Windows app with modern experience and great usability.
-- **The device compatibility:** The file sync app should run on the latest Windows devices, including desktops and tablet PCs with Intel or ARM processors, and take advantage of modern hardware. The team may decide to support non-Windows platforms in the future.
+- **The device compatibility:** The file sync app should run on the latest Windows devices, including desktops and tablet PCs with Intel or Arm processors, and take advantage of modern hardware. The team may decide to support non-Windows platforms in the future.
 - **Multimedia support:** The app should support multimedia content, such as images and videos, and provide a rich user experience.
 - **Deployment options:** The application is available in the Microsoft Store. There's no need for enterprise deployment scenarios.
 
