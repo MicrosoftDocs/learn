@@ -20,6 +20,8 @@ Firstly let's update the environment variables of the deployed container apps to
 az containerapp update -n $APP_NAME -g $RESOURCE_GROUP --set-env-vars "spring.profiles.active"="postgres"
 ```
 
+### Create a new Database
+
 Now, let's create a PostgreSQL flexible server.
 
 ```bash
@@ -27,8 +29,6 @@ az postgres flexible-server create --name $POSTGRESQLSERVER --resource-group $RE
 ```
 
 You may find the auto-generated admin username and admin password in the output, save in a secure place if you want to connect and config later on.
-
-### Create a new Database
 
 We will create a new database on the PostgreSQL flexible server instance.
 
@@ -56,7 +56,7 @@ With the database been created, now let's connect our previously deployed contai
       - **PostgreSQL flexible server**: *your-server-name*
       - **PostgreSQL database**: *your-database-name*
       - **Client type**: SpringBoot
-   -Authentication:
+   - Authentication:
       - Choose Connection string.
       - Fill in your `Username` and `Password` and leave others as default.
 
@@ -65,9 +65,6 @@ With the database been created, now let's connect our previously deployed contai
 5. Once the deploy is ready, cLick on Validate to validate your connection status.
 
 You may check [Connect to PostgreSQL Database from a Java Quarkus Container App without secrets using a managed identity](https://learn.microsoft.com/azure/container-apps/tutorial-java-quarkus-connect-managed-identity-postgresql-database) for more details.
-
-
-This will restart the app and apply changes, such as initializing the SQL tables.
 
 ## Validate the Database setup
 Now that the configuration is complete. If you connect to your PostgreSQL, you will see that the table has already been created.
