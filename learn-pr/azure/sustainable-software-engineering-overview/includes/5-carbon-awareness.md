@@ -23,7 +23,7 @@ Carbon intensity also changes over time due to the variable nature of renewable 
 
 ![Illustration showing carbon intensity in renewable energy versus fossil fuels.](../media/5-carbon-intensity-1.svg)
 
-Electricity demand varies during the day, and supply needs to meet that demand. Some of that supply can easily control the power it produces; for example, a coal power plant can burn less coal. Some of that supply can't easily control the power it produces; for example, a wind farm can't control how much the wind blows, and it can only throw away (curtail) electricity that was made essentially for free.
+Electricity demand varies during the day, and supply needs to meet that demand. Some of that supply can easily control the power it produces. For example, a coal power plant can burn less coal. Some of that supply can't easily control the power it produces. For example, a wind farm can't control how much the wind blows, and it can only throw away (curtail) electricity that was made essentially for free.
 
 ![Illustration showing reduced energy demands.](../media/5-carbon-intensity-2.svg)
 
@@ -35,7 +35,7 @@ Reducing the amount of electricity consumed in your applications can decrease th
 
 Typically, a marginal power plant is a system that can react quickly to changes in electricity demand, such as a gas turbine.
 
-If you consume more energy, that energy comes from the marginal power plant. However, it can't be a wind turbine or solar cells, as you can’t command them to produce more.
+If you consume more energy, that energy comes from the marginal power plant. However, it can't be a wind turbine or solar cells, as you can't command them to produce more.
 
 That power plant can control the energy it outputs. Renewables can't control the sun or the wind, so marginal power plants are often powered by fossil fuels.
 
