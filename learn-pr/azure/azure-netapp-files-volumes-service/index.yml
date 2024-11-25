@@ -6,7 +6,7 @@ metadata:
   moduleType: introduction        
   title: Understand how Azure NetApp Files provides volumes as a service     
   description: Understand network attached storage (NAS) concepts and various NAS protocols supported in Azure NetApp Files.      
-  ms.date: 11/12/2024
+  ms.date: 11/25/2024
   author: b-ahibbard   
   ms.author: anfdocs           
   ms.topic: module
