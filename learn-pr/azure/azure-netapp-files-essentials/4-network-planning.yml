@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   unitType: learning-module
   title: Azure NetApp Files network planning
-  description: Learn how to design your subnets and virtual networks to optimize your Azure NetApp Files deployment   
+  description: Learn how to design your subnets and virtual networks to optimize your Azure NetApp Files deployment.   
   ms.date: 11/18/2024
   author: b-ahibbard
   ms.author: anfdocs

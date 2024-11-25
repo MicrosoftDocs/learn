@@ -2,7 +2,7 @@ Before creating a volume in Azure NetApp Files, you must purchase and set up a p
 
 Watch this video to understand how storage hierarchy works in Azure NetApp Files. 
 
-[!VIDEO https://learn-video.azurefd.net/vod/player?id=e9e9e134-33f3-4a83-9d3d-d1fa35d357cd]
+[!VIDEO https://learn-video.azurefd.net/vod/player?id=e9e9e134-33f3-4a83-9d3d-d1fa35d357cd]()
 
 NetApp accounts
 

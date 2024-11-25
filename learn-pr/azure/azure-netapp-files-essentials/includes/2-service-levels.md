@@ -1,6 +1,6 @@
 Service levels are an attribute of a capacity pool. Service levels are defined and differentiated by the allowed maximum throughput for a volume in the capacity pool based on the quota that is assigned to the volume. 
 
-.[!NOTE]
+>[!NOTE]
 >Throughput is a combination of read and write speeds.
 
 ## Service levels
