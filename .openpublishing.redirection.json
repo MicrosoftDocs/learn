@@ -34640,6 +34640,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/2-define-services.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/3-exercise-set-up-azure-postgresql.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/4-set-up-basic-service.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/5-exercise-connect-express-js-postgresql.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/6-extend-services-architecture.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/7-exercise-set-up-next-js-app.yml.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/cloud-native-build-basic-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/create-azure-machine-learning-resources-cli-v2/index.md",
       "redirect_url": "/training/paths/explore-azure-machine-learning-workspace/",
       "redirect_document_id": false
