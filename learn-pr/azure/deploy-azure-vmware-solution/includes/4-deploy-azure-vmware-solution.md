@@ -51,7 +51,7 @@ Follow these steps:
 1. If you missed any of these steps, now is a good time to review before building the Azure VMware Solution private cloud environment.
 1. After reviewing all pre-requisites one last time, select **Next: Basics >**.
 
-    :::image type="content" source="../media/4-pre-requisites-create-private-cloud.png" alt-text="Screenshot that shows the prerequisites pane before building the Azure VMware Solution environment in Azure.":::
+    :::image type="content" source="../media/4-pre-requisites-create-private-cloud.png" alt-text="Screenshot that shows the prerequisites pane before building the Azure VMware Solution private cloud environment in Azure.":::
 
 1. On the **Basics** tab, enter values for the fields:
 
@@ -64,10 +64,11 @@ Follow these steps:
     | **Subscription** | The subscription for the deployment. |
     | **Resource group** | The resource group for private cloud resources. Select an existing resource group or create a new one. |
     | **Resource name** | A name for the Azure VMware Solution private cloud. |
-    | **Location** | The location where Azure VMware Solution can be deployed. |
-    | **Size of host** | The SKU value for the bare metal nodes: AV36 |
-    | **Number of hosts** | The number of hosts to add to the private cloud cluster. |
-    | **Address block for private cloud** | An IP address block for the CIDR network used by the private cloud. |
+    | **Location** | The location (Azure region)where Azure VMware Solution can be deployed. |
+    | **Size of host** | The SKU value for the bare metal nodes. |
+    | **Host location** | Select whether to deploy your private cloud in a single availability zone or across two availability zones in the same region (stretched cluster feature). |
+    | **Number of hosts** | The number of hosts to add to the private cloud cluster. With a stretched cluster feature requires 2x number of hosts needed to support your workload, equally split between the two availability zones. |
+    | **Address block for private cloud** | An IP address block for the CIDR network used by the private cloud. Use /22 address space. The address should be unique and not overlap with other Azure Virtual Networks and with on-premises networks. |
 
 1. After all fields are filled in, select **Review + Create**. The Azure VMware Solution deployment might take in between three to four hours before complete.
 
