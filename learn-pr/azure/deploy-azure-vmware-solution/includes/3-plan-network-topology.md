@@ -85,6 +85,6 @@ If on-premises network infrastructure is restrictive, the following ports must b
 
 ## DHCP and DNS resolution considerations
 
-VMs running in Azure VMware Solution require name resolution. VMs might also need DHCP services for lookup and IP-address assignments. You can configure an on-premises VM or an Azure VM to facilitate name resolution. You can use the DHCP service built in to NSX or you can choose to use a local DHCP server in the Azure VMware Solution private cloud. Configuring DHCP in Azure VMware Solution won't require routing broadcasts of DHCP traffic over the WAN back to the on-premises environment.
+Virtual machines (VMs) running in Azure VMware Solution require name resolution. VMs might also need DHCP services for lookup and IP-address assignments. You can configure an on-premises VM or an Azure VM to facilitate name resolution. You can use the DHCP service built into NSX or you can choose to use a local DHCP server in the Azure VMware Solution private cloud. Configuring DHCP in Azure VMware Solution won't require routing broadcasts of DHCP traffic over the WAN back to the on-premises environment.
 
 In the next unit, we'll go through the deployment of Azure VMware Solution. We outline all the steps so you can deploy the service in your environment.
