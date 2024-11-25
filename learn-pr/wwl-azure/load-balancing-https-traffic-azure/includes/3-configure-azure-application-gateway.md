@@ -19,7 +19,7 @@ Azure Application Gateway by default monitors the health of all resources in its
 The source IP address that the Application Gateway uses for health probes depends on the backend pool:
 
  -  If the server address in the backend pool is a public endpoint, then the source address is the application gateway's frontend public IP address.
- -  If the server address in the backend pool is a private endpoint, then the source IP address is from the application gateway subnet's private IP address space. :::image type="content" source="../media/app-gateway-probe-6300f27a.png" alt-text="Screenshot of a heath probe for Azure Application Gateway.":::
+ -  If the server address in the backend pool is a private endpoint, then the source IP address is from the application gateway subnet's private IP address space. :::image type="content" source="../media/app-gateway-probe-6300f27a.png" alt-text="Screenshot of a health probe for Azure Application Gateway.":::
     
 
 ### Default health probe
