@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-azure-ai-studio.azure-ai-resources
-title: How does Azure AI Studio work
+title: How does Azure AI Foundry work
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: How does Azure AI Studio work?
-  description: You can use Azure AI Studio to create and manage AI solutions.
+  title: How does Azure AI Foundry work?
+  description: You can use Azure AI Foundry to create and manage AI solutions.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 05/08/2024
+  ms.date: 11/25/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
