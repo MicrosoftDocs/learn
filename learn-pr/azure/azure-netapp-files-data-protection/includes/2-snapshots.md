@@ -1,6 +1,6 @@
 You can use a snapshot to create a new volume (clone), restore a file, or revert a volume. In specific application data stored on Azure NetApp Files volumes, extra steps might be required to ensure application consistency. Snapshots are also efficient in storage space; only delta blocks between snapshots and the active volume are kept. 
 
-Wath this video to understand how snapshots work in Azure NetApp Files: 
+Watch this video to understand how snapshots work in Azure NetApp Files: 
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=14bdb1ed-3e45-447a-978d-a8af4b20bffa]
 
