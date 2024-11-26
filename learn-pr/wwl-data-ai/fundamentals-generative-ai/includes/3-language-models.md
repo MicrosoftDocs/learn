@@ -46,11 +46,11 @@ To tokenize this text, you can identify each discrete word and assign token IDs 
 - bark (5)
 - loudly (6)
 - at (7)
-- *("a" is already tokenized as 3)*
+- ("a" is already tokenized as 3)
 - cat (8)
 ```
 
-The sentence can now be represented with the tokens: :::no-loc text="{1 2 3 4 5 6 7 3 8}":::. Similarly, the sentence "I heard a cat" could be represented as :::no-loc text="{1 2 3 8}":::.
+The sentence can now be represented with the tokens: :::no-loc text="{1 2 3 4 5 6 7 3 8}":::. Similarly, the sentence `"I heard a cat"` could be represented as :::no-loc text="{1 2 3 8}":::.
 
 As you continue to train the model, each new token in the training text is added to the vocabulary with appropriate token IDs:
 
@@ -98,7 +98,7 @@ In an encoder block, each token is carefully examined in context, and an appropr
 
 In a decoder block, attention layers are used to predict the next token in a sequence. For each token  generated, the model has an attention layer that takes into account the sequence of tokens up to that point. The model considers which of the tokens are the most influential when considering what the next token should be. For example, given the sequence `"I heard a dog"`, the attention layer might assign greater weight to the tokens `"heard"` and `"dog"` when considering the next word in the sequence:
 
-:::no-loc text="I ***heard*** a ***dog*** [**bark**]":::
+:::no-loc text="I *heard* a *dog* {*bark*}":::
 
 Remember that the attention layer is working with numeric vector representations of the tokens, not the actual text. In a decoder, the process starts with a sequence of token embeddings representing the text to be completed. The first thing that happens is that another *positional encoding* layer adds a value to each embedding to indicate its position in the sequence:
 
@@ -124,4 +124,4 @@ The following animation shows a simplified representation of how this works – 
 
 During training, the actual sequence of tokens is known – we just mask the ones that come later in the sequence than the token position currently being considered. As in any neural network, the predicted value for the token vector is compared to the actual value of the next vector in the sequence, and the loss is calculated. The weights are then incrementally adjusted to reduce the loss and improve the model. When used for inferencing (predicting a new sequence of tokens), the trained attention layer applies weights that predict the most probable token in the model’s vocabulary that is semantically aligned to the sequence so far.
 
-What all of this means, is that a transformer model such as GPT-4 (the model behind ChatGPT and Bing) is designed to take in a text input (called a prompt) and generate a syntactically correct output (called a completion). In effect, the “magic” of the model is that it has the ability to string a coherent sentence together. This ability doesn't imply any “knowledge” or “intelligence” on the part of the model; just a large vocabulary and the ability to generate meaningful sequences of words. What makes a large language model like GPT-4 so powerful however, is the sheer volume of data with which it has been trained (public and licensed data from the Internet) and the complexity of the network. This enables the model to generate completions that are based on the relationships between words in the vocabulary on which the model was trained; often generating output that is indistinguishable from a human response to the same prompt.
+What all of this means, is that a transformer model such as GPT-4 (the model behind ChatGPT and Bing) is designed to take in a text input (called a prompt) and generate a syntactically correct output (called a completion). In effect, the "magic" of the model is that it has the ability to string a coherent sentence together. This ability doesn't imply any "knowledge" or "intelligence" on the part of the model; just a large vocabulary and the ability to generate meaningful sequences of words. What makes a large language model like GPT-4 so powerful however, is the sheer volume of data with which it has been trained (public and licensed data from the Internet) and the complexity of the network. This enables the model to generate completions that are based on the relationships between words in the vocabulary on which the model was trained; often generating output that is indistinguishable from a human response to the same prompt.

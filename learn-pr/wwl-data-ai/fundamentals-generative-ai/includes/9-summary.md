@@ -6,6 +6,6 @@ More reading:
 - [Use Microsoft Copilot](https://copilot.microsoft.com/)
 - [Learn about Copilot for Microsoft 365](https://adoption.microsoft.com/copilot/)
 - [Learn more about Microsoft Copilot Studio](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-studio/)
-- [Learn more about Microsoft AI Foundry](https://learn.microsoft.com/azure/ai-studio/what-is-ai-studio)
+- [Learn more about Microsoft AI Foundry](/azure/ai-studio/what-is-ai-studio)
 
 
