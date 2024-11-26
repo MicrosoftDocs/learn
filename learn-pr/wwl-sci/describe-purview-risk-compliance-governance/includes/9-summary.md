@@ -13,6 +13,8 @@ Know that you've completed this module, you're able to:
 ### Learn more
 
 - [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
+- [Turn auditing on or off](/purview/audit-log-enable-disable)
+- [Privacy and data security in Microsoft Security Copilot](/copilot/security/privacy-data-security)
 - [Learn about Microsoft Purview](/purview/purview)
 - [Learn about the new Microsoft Purview portal](/purview/purview-portal)
 - [Microsoft Purview risk and compliance solutions](/purview/purview-compliance)

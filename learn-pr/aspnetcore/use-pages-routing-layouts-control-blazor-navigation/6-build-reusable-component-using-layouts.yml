@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Build reusable Blazor components using layouts
   description: "Learn how to create a consistent and reusable arrangement of elements on pages in your Blazor web apps by using layouts."
-  ms.date: 8/24/2021
+  ms.date: 11/15/2024
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

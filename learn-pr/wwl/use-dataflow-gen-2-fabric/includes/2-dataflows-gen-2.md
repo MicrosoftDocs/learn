@@ -2,7 +2,7 @@
 ms.custom:
   - build-2023
 ---
-In our scenario, you need to develop a semantic model that can standardize the data and provide access to the business. By using Dataflows Gen2, you can connect to the various data sources, and then prep and transform the data. To allow access, you can land the data directly into your Lakehouse or use a data pipeline for other destinations.
+In our scenario, you need to develop a semantic model that can standardize the data and provide access to the business. By using Dataflows Gen2, you can connect to the various data sources, and then prep and transform the data. You can land the data directly into your lakehouse or use a data pipeline for other destinations.
 
 ## What is a dataflow?
 
@@ -10,21 +10,24 @@ In our scenario, you need to develop a semantic model that can standardize the d
 
 Dataflows Gen2 allow you to extract data from various sources, transform it using a wide range of transformation operations, and load it into a destination. Using Power Query Online also allows for a visual interface to perform these tasks.
 
-Fundamentally, a dataflow includes all of the transformations to reduce data prep time and then can be loaded into a new table, included in a Data Pipeline, or used as a data source by data analysts.
+Fundamentally, a dataflow includes all of the transformations to reduce data prep time and then can be loaded into a new table, included in a data pipeline, or used as a data source by data analysts.
 
 ## How to use Dataflows Gen2
 
 Traditionally, data engineers spend significant time extracting, transforming, and loading data into a consumable format for downstream analytics. The goal of Dataflows Gen2 is to provide an easy, reusable way to perform ETL tasks using Power Query Online.
 
-If you only choose to use a Data Pipeline, you copy data, then use your preferred coding language to extract, transform, and load the data. Alternatively, you can create a Dataflow Gen2 first to extract and transform the data. You can also load the data into a Lakehouse, and other destinations. Now the business can easily consume the curated semantic model.
+If you only choose to use a data pipeline, you copy data, then use your preferred coding language to extract, transform, and load the data. Alternatively, you can create a Dataflow Gen2 first to extract and transform the data. You can also load the data into a lakehouse, and other destinations. Now the business can easily consume the curated semantic model.
 
-Adding a data destination to your dataflow is optional, and the dataflow preserves all transformation steps. To perform other tasks or load data to a different destination after transformation, create a Data Pipeline and add the Dataflow Gen2 activity to your orchestration.
+Adding a data destination to your dataflow is optional, and the dataflow preserves all transformation steps. To perform other tasks or load data to a different destination after transformation, create a data pipeline and add the Dataflow Gen2 activity to your orchestration.
 
-Another option might be to use a Data Pipeline and Dataflow Gen2 for ELT *(Extract, Load, Transform)* process. For this order, you'd use a Pipeline to extract and load the data into your preferred destination, such as the Lakehouse. Then you'd create a Dataflow Gen2 to connect to Lakehouse data to cleanse and transform data. In this case, you'd offer the Dataflow as a curated semantic model for data analysts to develop reports.
+Another option might be to use a data pipeline and Dataflow Gen2 for ELT *(Extract, Load, Transform)* process. For this order, you'd use a Pipeline to extract and load the data into your preferred destination, such as the lakehouse. Then you'd create a Dataflow Gen2 to connect to Lakehouse data to cleanse and transform data. In this case, you'd offer the Dataflow as a curated semantic model for data analysts to develop reports.
 
 Dataflows can be horizontally partitioned as well. Once you create a global dataflow, data analysts can use dataflows to create specialized semantic models for specific needs.
 
-Dataflows allow you to promote reusable ETL logic that prevents the need to create more connections to your data source. Dataflows offer a wide variety of transformations, and can be run manually, on a refresh schedule, or as part of a Data Pipeline orchestration.
+Dataflows allow you to promote reusable ETL logic that prevents the need to create more connections to your data source. Dataflows offer a wide variety of transformations, and can be run manually, on a refresh schedule, or as part of a data pipeline orchestration.
+
+> [!TIP]
+> Make your dataflow discoverable so data analysts can also connect to the dataflow through Power BI Desktop. This reduces the data preparation for report development.
 
 ## Benefits and limitations
 
@@ -41,6 +44,6 @@ Benefits:
 
 Limitations:
 
-- Not a replacement for a data warehouse.
+- Dataflows aren't a replacement for a data warehouse.
 - Row-level security isn't supported.
 - Fabric capacity workspace is required.

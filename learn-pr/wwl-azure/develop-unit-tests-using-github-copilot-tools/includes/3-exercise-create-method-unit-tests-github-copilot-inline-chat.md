@@ -84,7 +84,7 @@ To create a new xUnit test project, complete the following steps:
 
 1. To add a reference to your code project, right-click **PrimeService.UnitTests**, select **Add Project Reference**, and then select **Numbers**.
 
-1. To create a class for your unit tests, right-click **PrimeService.UnitTests**, select **Add New File**, select **Class**, type **PrimeServiceTests** and then press Enter.
+1. To create a class for your unit tests, right-click **PrimeService.UnitTests**, select **New File**, select **Class**, type **PrimeServiceTests** and then press Enter.
 
     Visual Studio Code should open the PrimeServiceTests.cs file for you.
 
@@ -115,9 +115,9 @@ To create a new xUnit test project, complete the following steps:
 
     A namespace in C# is used to organize related classes and types. It's a way to avoid name collisions and to make it easier to understand the organization of the code. The `.UnitTests` suffix in the test project's namespace is a common convention to indicate that the code in this namespace is testing the code in the System.Numbers namespace. This makes it clear when looking at the project structure which code is production code and which code is test code.
 
-1. Take a minute to examine the PrimeServiceTests.csproj file.
+1. Take a minute to examine the PrimeService.UnitTests.csproj file.
 
-    The PrimeServiceTests.csproj file should include an `<ItemGroup>` that contains the following `<PackageReference />` elements:
+    The PrimeService.UnitTests.csproj file should include an `<ItemGroup>` that contains the following `<PackageReference />` elements:
 
     ```xml
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
@@ -126,7 +126,7 @@ To create a new xUnit test project, complete the following steps:
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
     ```
 
-    These package references are required to use xUnit as the test library and to configure the test runner. You should also see the following `<ItemGroup>` elements in the PrimeServiceTests.csproj file:
+    These package references are required to use xUnit as the test library and to configure the test runner. You should also see the following `<ItemGroup>` elements in the PrimeService.UnitTests.csproj file:
 
     ```xml
     <ItemGroup>
@@ -140,13 +140,9 @@ To create a new xUnit test project, complete the following steps:
 
     These elements are required to reference the Numbers project and to use the xUnit test framework.
 
-1. To build the solution, press **Ctrl** + **Shift** + **B**, and then select **dotnet: build**.
+1. To build the solution, press **Ctrl+Shift+B**, and then select **dotnet: build**.
 
-    You could also run the following command in the Visual Studio Code terminal:
-
-    ```plaintext
-    dotnet build
-    ```
+    You could also build the solution using a .NET CLI command (dotnet build) or by right-clicking the solution node in the Solution Explorer view and selecting **Build**.
 
     > [!NOTE]
     > If you see any build errors, review the steps in this exercise to ensure that you've followed each step correctly. You must have a successful build before you continue.
@@ -159,110 +155,133 @@ GitHub Copilot and GitHub Copilot Chat can help you generate unit tests for your
 
 Use the following steps to complete this section of the exercise:
 
-1. In the Solution Explorer view, under the Numbers folder, open the PrimeService.cs file.
+1. In the Solution Explorer view, under Numbers, open the PrimeService.cs file.
 
-1. Select the IsPrime method.
+1. Select the **IsPrime** method.
 
-1. Open the Chat view, and then enter the following prompt:
+1. Open the Chat view.
 
-    ```plaintext
-    @workspace /tests #selection Generate unit tests for the xUnit framework.
-    ```
+1. Select the **Attach Context** button.
 
-1. Take a minute to review the suggestions provided by GitHub Copilot Chat.
+    The **Attach Context** button (paperclip icon) is used to inform GitHub Copilot of relevant context within your codebase. The additional context helps GitHub Copilot Chat to provide more accurate suggestions. In this case, you want GitHub Copilot to use your PrimeServiceTests.cs file when proposing unit tests.
 
-1. Notice that the Chat view provides a code sample containing suggested unit tests.
+    ![A screenshot showing the Chat view with Attach Context button in the lower left corner of the window.](../media/unit-test-chat-view-attach-context.png)
 
-    The class proposed by GitHub Copilot Chat includes tests for specific numbers. Your response may also include a theory for testing negative numbers and zero. GitHub Copilot Chat may also remind you that can add more test cases as needed.
+1. In the **Search attachments** dropdown list, in the **recently opened** section, select **PrimeServiceTests.cs**.
+
+    The **Search attachments** dropdown provides some default options that you can choose from. It also includes a list of recently opened files. The PrimeServiceTests.cs file should be listed in the recently opened section.
+
+    The Search attachments options include
+
+1. Select the **Attach Context** button again.
+
+1. In the Search attachments text box, type **PrimeService.Unit**, and then select **PrimeService.UnitTests.csproj**.
+
+    ![A screenshot showing "PrimeService.Unit" entered in the Search attachments text box.](../media/unit-test-chat-view-attach-context-1.png)
+
+    > [!NOTE]
+    > You can also drag a file from the Explorer view and drop it onto the Chat view. In many cases this is a quicker way to attach context.
+
+1. Notice that the Chat view is updated with the additional context.
+
+    ![A screenshot showing the Chat view with PrimeService.cs and PrimeService.UnitTests.csproj listed as additional context.](../media/unit-test-chat-view-attach-context-2.png)
+
+1. In the Chat view, select **/tests add unit tests for my code**.
+
+    The **/tests add unit tests for my code** option is used to generate unit tests for the code that you've selected in the editor. In this case, you selected the **IsPrime** method in the PrimeService.cs file.
+
+1. Take a minute to review GitHub Copilot's suggestions.
+
+    GitHub Copilot's suggestion includes two sections, a "Plan" and a code sample containing unit tests.
+
+    The plan suggests creating a new PrimeServiceTest.cs file for the unit tests. It also suggests creating the file in the Numbers project folder.
+
+    ![A screenshot showing the GitHub Copilot suggestions for unit testing in the Chat view.](../media/unit-test-chat-view-create-unit-tests.png)
+
+1. In the Chat view, select **Apply Edits**.
+
+    ![A screenshot showing the Apply Edits button in the Chat view.](../media/unit-test-chat-view-create-unit-tests-1.png)
+
+1. Notice that the Apply Edits button places the unit test code on a new tab in the editor.
+
+    You can use this code to update the PrimeServiceTests.cs file in your PrimeService.UnitTests project.
+
+1. On the **File** menu, select **Save As**, and then navigate to the PrimeService.UnitTests folder.
+
+1. Select **PrimeServiceTests.cs**, and then select **Save**.
+
+1. When prompted to overwrite the existing file, select **Yes**.
+
+1. Take a minute to review the updated PrimeServiceTests.cs file.
+
+    The code suggested by GitHub Copilot Chat should include tests for specific prime and non-prime numbers. The suggested code may include parameterized tests (using `[Theory]` and `[InlineData]` attributes) to test multiple data sets more concisely.
 
     The code snippet provided should be similar to the following code snippet:
 
     ```csharp
     using Xunit;
-    using APL2007M4PrimeService.Numbers;
     
-    public class PrimeServiceTests
+    namespace System.Numbers.UnitTests
     {
-        private readonly PrimeService _primeService;
-    
-        public PrimeServiceTests()
+        public class PrimeServiceTests
         {
-            _primeService = new PrimeService();
-        }
+            private readonly PrimeService _primeService;
     
-        [Fact]
-        public void IsPrime_InputIs1_ReturnFalse()
-        {
-            var result = _primeService.IsPrime(1);
-            Assert.False(result, "1 should not be prime");
-        }
+            public PrimeServiceTests()
+            {
+                _primeService = new PrimeService();
+            }
     
-        [Fact]
-        public void IsPrime_InputIs2_ReturnTrue()
-        {
-            var result = _primeService.IsPrime(2);
-            Assert.True(result, "2 should be prime");
-        }
+            [Fact]
+            public void IsPrime_InputIs1_ReturnsFalse()
+            {
+                var result = _primeService.IsPrime(1);
     
-        [Fact]
-        public void IsPrime_InputIs3_ReturnTrue()
-        {
-            var result = _primeService.IsPrime(3);
-            Assert.True(result, "3 should be prime");
-        }
+                Assert.False(result, "1 should not be prime");
+            }
     
-        [Fact]
-        public void IsPrime_InputIs4_ReturnFalse()
-        {
-            var result = _primeService.IsPrime(4);
-            Assert.False(result, "4 should not be prime");
-        }
+            [Fact]
+            public void IsPrime_InputIs2_ReturnsTrue()
+            {
+                var result = _primeService.IsPrime(2);
     
-        [Theory]
-        [InlineData(-1)]
-        [InlineData(0)]
-        [InlineData(1)]
-        public void IsPrime_NegativeNumbersAndZero_ReturnFalse(int value)
-        {
-            var result = _primeService.IsPrime(value);
-            Assert.False(result, $"{value} should not be prime");
+                Assert.True(result, "2 should be prime");
+            }
+    
+            [Fact]
+            public void IsPrime_InputIs3_ReturnsTrue()
+            {
+                var result = _primeService.IsPrime(3);
+    
+                Assert.True(result, "3 should be prime");
+            }
+    
+            [Fact]
+            public void IsPrime_InputIs4_ReturnsFalse()
+            {
+                var result = _primeService.IsPrime(4);
+    
+                Assert.False(result, "4 should not be prime");
+            }
+    
+            [Theory]
+            [InlineData(5, true)]
+            [InlineData(6, false)]
+            [InlineData(7, true)]
+            [InlineData(8, false)]
+            [InlineData(9, false)]
+            [InlineData(10, false)]
+            public void IsPrime_Values_ReturnExpectedResult(int value, bool expected)
+            {
+                var result = _primeService.IsPrime(value);
+    
+                Assert.Equal(expected, result);
+            }
         }
     }
     ```
 
-1. Consider how you might integrate the unit tests into your test project.
-
-    The Chat view enables you to copy a code snippet or insert it directly into your project. However, you already have a PrimeServiceTests class, so it would be better to have the unit tests without the surrounding class.
-
-1. To recreate the code snippet without the surrounding class, enter the following prompt:
-
-    ```plaintext
-    Show the unit tests without the surrounding class.
-    ```
-
-1. To display the **Copy** and **Insert at Cursor** buttons, hover the mouse pointer over the code snippet.
-
-    The Chat view provides a few options for managing a code snippet:
-
-    - The **Copy** button allows you to copy the code snippet to your clipboard.
-    - The **Insert at Cursor** button allows you to insert the code snippet into your project.
-    - The **...** button (More Actions) provides options to insert the snippet into either a new file or the terminal.
-
-    ![A screenshot showing the Chat view with the code snippet and buttons at the top of the window.](../media/unit-test-chat-view-create-unit-tests-1.png)
-
-1. At the top of the code snippet window, select **Copy**.
-
-1. Open the PrimeServiceTests.cs file.
-
-1. Create a blank code line inside the PrimeServiceTests class, and then paste the contents of the clipboard into the PrimeServiceTests.cs file.
-
-1. Take a minute to review the PrimeServiceTests.cs file.
-
-1. Notice that the unit tests require an instance of the PrimeService class.
-
-    You may have seen this mentioned in the Chat view when you recreated the code snippet.
-
-1. To create an instance of the PrimeService class, add the following code to the top of your PrimeServiceTests class:
+    Notice that the unit tests require an instance of the PrimeService class.
 
     ```csharp
     private readonly PrimeService _primeService;
@@ -273,9 +292,9 @@ Use the following steps to complete this section of the exercise:
     }
     ```
 
-1. Save the PrimeServiceTests.cs file, and then rebuild the solution.
+1. Rebuild the solution.
 
-    If the build is successful, you see green "test arrows" next to each unit test.
+    You should see green "test arrows" next to each unit test if the build is successful.
 
     ![A screenshot showing the "test arrows" next to the unit tests.](../media/unit-test-chat-view-create-unit-tests-2.png)
 
@@ -303,7 +322,7 @@ Use the following steps to complete this section of the exercise:
 1. Open an inline chat session, and then enter the following prompt:
 
     ```plaintext
-    Create unit tests for the isPrime method using the xUnit framework.
+    Create unit tests for the IsPrime method using the xUnit framework.
     ```
 
 1. Take a minute to review the suggestions provided by inline chat.
@@ -311,75 +330,7 @@ Use the following steps to complete this section of the exercise:
     ```csharp
     using Xunit;
     
-    public class PrimeServiceTests
-    {
-        private readonly PrimeService _primeService;
-    
-        public PrimeServiceTests()
-        {
-            _primeService = new PrimeService();
-        }
-    
-        [Fact]
-        public void IsPrime_InputIs1_ReturnsFalse()
-        {
-            // Arrange
-            int number = 1;
-    
-            // Act
-            bool result = _primeService.IsPrime(number);
-    
-            // Assert
-            Assert.False(result);
-        }
-    
-        [Fact]
-        public void IsPrime_InputIs2_ReturnsTrue()
-        {
-            // Arrange
-            int number = 2;
-    
-            // Act
-            bool result = _primeService.IsPrime(number);
-    
-            // Assert
-            Assert.True(result);
-        }
-    
-        [Fact]
-        public void IsPrime_InputIs4_ReturnsFalse()
-        {
-            // Arrange
-            int number = 4;
-    
-            // Act
-            bool result = _primeService.IsPrime(number);
-    
-            // Assert
-            Assert.False(result);
-        }
-    
-        // Add more test cases as needed
-    }
-    ```
-
-1. Notice the similarities and differences between the unit tests proposed by inline chat versus Chat view.
-
-    The Chat view and inline chat produced similar test coverage. However, inline chat suggested unit tests that use the Arrange, Act, and Assert (AAA) pattern, a common way of writing unit tests for a method. You can request the AAA pattern, or another test pattern, in the prompts that you submit to either inline chat or the Chat view.
-
-1. To create a new unit test file for the inline chat suggestion, select **Accept**.
-
-1. In the Save As dialog, navigate to the PrimeService.UnitTests folder, name the file **PrimeServiceTests2.cs** and then select **Save**.
-
-1. Take a minute to compare the PrimeServiceTests.cs and PrimeServiceTests2.cs files.
-
-    As long as the two files specify different namespaces, you should be able to keep both files in the project without conflicts.
-
-1. Update the PrimeServiceTests2.cs file with the following code:
-
-    ```csharp
-    // using Xunit;
-    namespace System.Numbers.Tests
+    namespace System.Numbers.UnitTests
     {
         public class PrimeServiceTests
         {
@@ -391,80 +342,60 @@ Use the following steps to complete this section of the exercise:
             }
     
             [Fact]
-            public void IsPrime_ReturnsFalse_ForNegativeNumbers()
+            public void IsPrime_InputIs1_ReturnsFalse()
             {
-                // Arrange
-                int candidate = -5;
+                var result = _primeService.IsPrime(1);
     
-                // Act
-                bool result = _primeService.IsPrime(candidate);
-    
-                // Assert
-                Assert.False(result);
+                Assert.False(result, "1 should not be prime");
             }
     
             [Fact]
-            public void IsPrime_ReturnsFalse_ForZero()
+            public void IsPrime_InputIs2_ReturnsTrue()
             {
-                // Arrange
-                int candidate = 0;
+                var result = _primeService.IsPrime(2);
     
-                // Act
-                bool result = _primeService.IsPrime(candidate);
-    
-                // Assert
-                Assert.False(result);
+                Assert.True(result, "2 should be prime");
             }
     
             [Fact]
-            public void IsPrime_ReturnsFalse_ForOne()
+            public void IsPrime_InputIs3_ReturnsTrue()
             {
-                // Arrange
-                int candidate = 1;
+                var result = _primeService.IsPrime(3);
     
-                // Act
-                bool result = _primeService.IsPrime(candidate);
-    
-                // Assert
-                Assert.False(result);
+                Assert.True(result, "3 should be prime");
             }
     
             [Fact]
-            public void IsPrime_ReturnsTrue_ForPrimeNumbers()
+            public void IsPrime_InputIs4_ReturnsFalse()
             {
-                // Arrange
-                int candidate = 7;
+                var result = _primeService.IsPrime(4);
     
-                // Act
-                bool result = _primeService.IsPrime(candidate);
-    
-                // Assert
-                Assert.True(result);
+                Assert.False(result, "4 should not be prime");
             }
     
-            [Fact]
-            public void IsPrime_ReturnsFalse_ForNonPrimeNumbers()
+            [Theory]
+            [InlineData(5, true)]
+            [InlineData(6, false)]
+            [InlineData(7, true)]
+            [InlineData(8, false)]
+            [InlineData(9, false)]
+            [InlineData(10, false)]
+            public void IsPrime_Values_ReturnExpectedResult(int value, bool expected)
             {
-                // Arrange
-                int candidate = 10;
+                var result = _primeService.IsPrime(value);
     
-                // Act
-                bool result = _primeService.IsPrime(candidate);
-    
-                // Assert
-                Assert.False(result);
+                Assert.Equal(expected, result);
             }
         }
     }
+
     ```
 
-1. Save the PrimeServiceTests2.cs file, and then rebuild the solution.
+1. Notice that the Chat view and inline chat produce similar test coverage.
 
-    If you have build errors that indicate naming conflicts, comment out the contents of the original PrimeServiceTests.cs file and rebuild. You can still reference both files in the next unit.
+1. To discard the inline chat suggestion, select **Discard**, and then close the file tab created by the inline chat.
 
-1. You should now see the green "test arrows" next to each unit test in the PrimeServiceTests2.cs file.
-
-    Keep in mind that the generated unit tests don't cover all possible scenarios.
+    Keep in mind that the unit tests suggested by GitHub Copilot during this exercise may be incomplete. The next unit examines additional edge cases that you might consider testing.
 
 ### Summary
 

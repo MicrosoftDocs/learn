@@ -28,7 +28,7 @@ Here's how it works:
 
    $$H |0_c\rangle= \frac{1}{\sqrt{2}}(|0_c\rangle+|1_c\rangle)$$
 
-   > [!NOTE]
+   > [!TIP]
    > The subscripts ${}_c$ and ${}_t$ specify the control and target qubits.
 
 1. Apply the $CNOT$ operator to the control qubit, which is in a superposition state, and the target qubit, which is in the state $|0_t\rangle$.
@@ -44,11 +44,9 @@ Here's how it works:
 1. Select **View -> Command Palette** and type **Q#: Set the Azure Quantum QIR target profile**. Press **Enter**.
 1. Select **Q#: Unrestricted**.
 
-## Create and measure the Bell state $\ket{\phi^+}$
+## Create the Bell state $\ket{\phi^+}$
 
 Let's start by creating the Bell state $\ket{\phi^+}=\frac1{\sqrt2}(|00\rangle+|11\rangle)$. 
-
-### Create the Bell state $\ket{\phi^+}$ in Q#
 
 1. First, you need to import the `Microsoft.Quantum.Diagnostics` namespace from the Standard library, which contains the `DumpMachine` function. This function shows the current state of the qubits. Copy and paste the following Q# code into **Main.qs** file. 
 
@@ -148,21 +146,19 @@ Let's start by creating the Bell state $\ket{\phi^+}=\frac1{\sqrt2}(|00\rangle+|
     }
     ```
 
-### Run the program
-
 1. To run your program on the built-in simulator, click on **Run** above the `Main` operation or press **Ctrl+F5**. Your output will appear in the debug console.
 1. The measurement outcomes are correlated, so at the end of the program, you get a result of `(Zero, Zero)` or `(One, One)` with equal probability.
 1. You can visualize the circuit diagram by clicking on **Circuit** from the list of commands above the `Main` operation. The circuit diagram shows the Hadamard gate applied to the first qubit and the CNOT gate applied to both qubits.
 
     :::image type="content" source="../media/circuit-bellstates.png" alt-text="Screenshot of the circuit of the Bell state.":::
 
-## Create and measure the Bell state $\ket{\phi^-}$
+## Create other Bell states
 
 To create other Bell states, you need to apply additional Pauli $X$ and $Z$ operations to the qubits.
 
 For example, to create the Bell state $\ket{\phi^-}=\frac1{\sqrt2}(|00\rangle-|11\rangle)$, you can apply the Pauli $Z$ operation to the control qubit after applying the Hadamard gate. The $Z$ operation flips the state $\ket{+}$ to $\ket{-}$.
 
-> [!NOTE]
+> [!TIP]
 > The states $\frac{1}{\sqrt{2}}(|0\rangle+|1\rangle)$ and $\frac{1}{\sqrt{2}}(|0\rangle -|1\rangle)$ are also known as $\ket{+}$ and $\ket{-}$, respectively.
 
 Here's how it works:
@@ -181,6 +177,12 @@ Here's how it works:
     $$ CNOT \frac{1}{\sqrt{2}}(\ket{0_c}-\ket{1_c})\ket{0}_t = CNOT \frac{1}{\sqrt2}(\ket{0_c 0_t}-|\ket{1_c 0_t})= $$
     $$ =\frac{1}{\sqrt2}(CNOT \ket{0_c 0_t} - CNOT \ket{1_c 0_t})= $$
     $$= \frac{1}{\sqrt2}(\ket{0_c 0_t}-\ket{1_c 1_t})$$
+
+
+Similarly, Bell states $\ket{\psi^+}$ and $\ket{\psi^-}$ can be created by applying the Pauli $X$ and $Z$ operations to the qubits.
+
+- The Bell state $\ket{\psi^+}=\frac1{\sqrt2}(|01\rangle+|10\rangle)$ can be created by applying the Pauli $X$ operation to the target qubit after applying the Hadamard gate.
+- The Bell state $\ket{\psi^-}=\frac1{\sqrt2}(|01\rangle-|10\rangle)$ can be created by applying the Pauli $Z$ to the control qubit and the Pauli $X$ to the target qubit after applying the Hadamard gate.
 
 ### Create the Bell state $\ket{\phi^-}$ in Q#
 
@@ -209,11 +211,5 @@ Here's how it works:
 1. To run your program on the built-in simulator, click on **Run** above the `Main` operation or press **Ctrl+F5**. Your output will appear in the debug console.
 1. You can visualize the circuit diagram by clicking on **Circuit** from the list of commands above the `Main` operation. The circuit diagram shows the Hadamard gate applied to the first qubit, the Pauli $Z$ gate applied to the first qubit, and the CNOT gate applied to both qubits.
 
-## Bonus exercise: Create the Bell states $\ket{\psi^+}$ and $\ket{\psi^-}$
+In the next unit, you'll learn how to use entanglement to teleport quantum information.
 
-Similarly, Bell states $\ket{\psi^+}$ and $\ket{\psi^-}$ can be created by applying the Pauli $X$ and $Z$ operations to the qubits.
-
-- The Bell state $\ket{\psi^+}=\frac1{\sqrt2}(|01\rangle+|10\rangle)$ can be created by applying the Pauli $X$ operation to the target qubit after applying the Hadamard gate.
-- The Bell state $\ket{\psi^-}=\frac1{\sqrt2}(|01\rangle-|10\rangle)$ can be created by applying the Pauli $Z$ to the control qubit and the Pauli $X$ to the target qubit after applying the Hadamard gate.
-
-Modify the **Main.qs** program to create the Bell states $\ket{\psi^+}$ and $\ket{\psi^-}$.

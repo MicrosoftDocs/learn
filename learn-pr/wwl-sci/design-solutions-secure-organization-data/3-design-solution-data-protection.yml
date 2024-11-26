@@ -5,8 +5,8 @@ metadata:
   title: Evaluate solutions for encryption of data at rest and in transit, including Azure KeyVault and infrastructure encryption
   description: "SC-100 preparatory unit on the topic: Evaluate solutions for encryption of data at rest and in transit, including Azure KeyVault and infrastructure encryption."
   ms.date: 3/14/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 10
 content: |

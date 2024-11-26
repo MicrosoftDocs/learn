@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.security-copilot-exercises
 metadata:
-  title: Explore use cases of Microsoft Copilot for Security
-  description: Explore use cases of Microsoft Copilot for Security.
+  title: Explore use cases of Microsoft Security Copilot
+  description: Explore use cases of Microsoft Security Copilot.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 08/22/2024
+  ms.date: 11/20/2024
   ms.service: security-copilot
   ai-usage: ai-assisted
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
-title: Explore use cases of Microsoft Copilot for Security
-summary: "Explore use cases of Microsoft Copilot for Security in the standalone and embedded experiences, through lab-like exercises."
+title: Explore use cases of Microsoft Security Copilot
+summary: "Explore use cases of Microsoft Security Copilot in the standalone and embedded experiences, through lab-like exercises."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Set up Microsoft Copilot for Security."
+    - "Set up Microsoft Security Copilot."
     - "Work with sources in Copilot."
     - "Create a custom promptbook."
     - "Use the capabilities of Copilot in Defender XDR."
@@ -23,11 +23,11 @@ abstract: |
 prerequisites: |
   - Working knowledge of security operations and incident response
   - Working knowledge of Microsoft Security solutions and services
-  - Completion of the module [Describe Microsoft Copilot for Security](/training/modules/security-copilot-getting-started/)
-  - Completion of the module [Describe the core features of Microsoft Copilot for Security](/training/modules/security-copilot-describe-core-features/)
-  - Completion of the module [Describe the embedded experiences of Microsoft Copilot for Security](/training/modules/security-copilot-embedded-experiences/)
+  - Completion of the module [Describe Microsoft Security Copilot](/training/modules/security-copilot-getting-started/)
+  - Completion of the module [Describe the core features of Microsoft Security Copilot](/training/modules/security-copilot-describe-core-features/)
+  - Completion of the module [Describe the embedded experiences of Microsoft Security Copilot](/training/modules/security-copilot-embedded-experiences/)
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
+hidden: false
 levels: 
   - beginner
 roles: 

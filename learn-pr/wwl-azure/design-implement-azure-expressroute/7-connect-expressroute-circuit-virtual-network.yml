@@ -2,11 +2,9 @@
 uid: learn.wwl.design-implement-azure-expressroute.connect-expressroute-circuit-to-vnet
 title: Connect an ExpressRoute circuit to a virtual network
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connect an ExpressRoute circuit to a virtual network
   description: "Connect an ExpressRoute circuit to a virtual network"
-  ms.date: 11/02/2023
+  ms.date: 11/19/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit

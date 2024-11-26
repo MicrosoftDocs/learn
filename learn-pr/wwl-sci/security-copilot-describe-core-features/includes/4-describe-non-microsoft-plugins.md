@@ -1,4 +1,4 @@
-Microsoft Copilot for Security supports non-Microsoft plugins to extend Copilot's capabilities. These plugins are categorized as:
+Microsoft Security Copilot supports non-Microsoft plugins to extend Copilot's capabilities. These plugins are categorized as:
 
 - Other
 - Websites
@@ -8,13 +8,15 @@ Microsoft Copilot for Security supports non-Microsoft plugins to extend Copilot'
 
 Other plugins give Copilot access to information and capabilities from services beyond Microsoft that your organization uses.
 
+If a Copilot owner has restricted plugin access, then those plugins that have been set to restricted will show greyed out and restricted.
+
 :::image type="content" source="../media/plugins-other.png" lightbox="../media/plugins-other.png" alt-text="Screen capture of the non-Microsoft plugins.":::
 
 The list of Other plugins currently supported is long and continually growing. The list that follows is only a subset of non-Microsoft Plugins currently in preview with Copilot.
 
 - CIRCL Hash Lookup (Preview)
-- Copilot for Security Plugin for ServiceNow (Preview)
-- Copilot for Security Plugin for Splunk (Preview)
+- Security Copilot Plugin for ServiceNow (Preview)
+- Security Copilot Plugin for Splunk (Preview)
 - CrowdSec Threat Intelligence (Preview)
 - GreyNoise Community (Preview)
 - GreyNoise Enterprise (Preview)
@@ -33,7 +35,7 @@ The website plugins are accessed using anonymous authentication.
 
 #### Custom
 
-The Microsoft Copilot for Security platform enables developers and users to write their own plugins that can be invoked to perform specialized tasks.
+The Microsoft Security Copilot platform enables developers and users to write their own plugins that can be invoked to perform specialized tasks.
 
 :::image type="content" source="../media/plugins-custom.png" lightbox="../media/plugins-custom.png" alt-text="Screen capture of the custom plugins.":::
 
@@ -52,6 +54,6 @@ Once a custom plugin is added, it can be turned on or off, updated, or deleted.
 
 To Learn more about custom plugins, see [Create your own custom plugins](/copilot/security/custom-plugins).
 
-Watch this short video for a summary on setting up non-Microsoft and custom plugins.
+Watch this short video for a summary on setting up non-Microsoft plugins.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4114bf13-6aa1-46c2-b448-22d982e07538]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f57f9efb-d800-4436-85cb-02f34811c608]

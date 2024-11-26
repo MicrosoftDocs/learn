@@ -1,11 +1,14 @@
-In this exercise, you investigate an incident in Microsoft Defender XDR. As part of the investigation, you explore the key features of Microsoft Copilot in Microsoft Defender XDR, including incident summary, device summary, script analysis, and more. You also pivot your investigation to the standalone experience and use the pin board as a way to share details of your investigation with your colleagues.
+In this exercise, you investigate an incident in Microsoft Defender XDR. As part of the investigation, you explore the key features of Copilot in Microsoft Defender XDR, including incident summary, device summary, script analysis, and more. You also pivot your investigation to the standalone experience and use the pin board as a way to share details of your investigation with your colleagues.
 
 > [!NOTE]
 > The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
+>
+> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you'll find that the user interface still reflects the original name.
+
 ### Exercise
 
-For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in Microsoft Defender, using the new unified security operations platform, to access the embedded Copilot capabilities in Microsoft Defender XDR. Towards the end of the exercise, you pivot to the standalone experience of Microsoft Copilot for Security.
+For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in Microsoft Defender, using the new unified security operations platform, to access the embedded Copilot capabilities in Microsoft Defender XDR. Towards the end of the exercise, you pivot to the standalone experience of Microsoft Security Copilot.
 
 This exercise should take approximately **30** minutes to complete.
 
@@ -75,7 +78,7 @@ This task is complex and requires the involvement of more senior analysts. In th
 
 1. Return to the incident page by selecting the **Attack story** tab from the top of the page.
 
-1. Select the ellipses next to Copilot's Incident summary and select **Open in Copilot for Security**.
+1. Select the ellipses next to Copilot's Incident summary and select **Open in Security Copilot**.
 
 1. Copilot opens in the standalone experience and shows the incident summary. You can also run more prompts. In this case, you'll run the promptbook for an incident. Select the **prompt icon** ![prompt icon](../media/prompt-icon.png). 
     1. Select **See all promptbooks**.

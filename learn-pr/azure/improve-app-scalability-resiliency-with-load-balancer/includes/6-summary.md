@@ -8,4 +8,4 @@ In this module, you learned about Azure Load Balancer and how you can use Load B
 - [What is Azure Load Balancer?](/azure/load-balancer/load-balancer-overview)
 - [Quickstart: Create a public load balancer to load balance VMs using the Azure portal](/azure/load-balancer/quickstart-load-balancer-standard-public-portal)
 - [Quickstart: Create an internal load balancer to load balance VMs using the Azure portal](/azure/load-balancer/quickstart-load-balancer-standard-internal-portal)
-- [What are Azure regions and availability zones?](/azure/reliability/availability-zones-overview#services-support-by-region)
+- [What are Azure regions and availability zones?](/azure/reliability/availability-zones-overview)

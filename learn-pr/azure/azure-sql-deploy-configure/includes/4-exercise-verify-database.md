@@ -17,7 +17,7 @@ Now that you've seen how Azure SQL appears in SQL Server Management Studio (SSMS
     | Parameter               | Value                                         |
     |:------------------------|:----------------------------------------------|
     | **Connection type**     | Microsoft SQL Server                          |
-    | **Server**              | Enter the name of your logical server         |
+    | **Server**              | Enter your logical server name                |
     | **Authentication type** | SQL Login                                     |
     | **User name**           | cloudadmin                                    |
     | **Password**            | Enter the password for the cloudadmin account |
@@ -36,7 +36,7 @@ Now that you've seen how Azure SQL appears in SQL Server Management Studio (SSMS
 
     :::image type="content" source="../media/4-new-query-azure-data-studio.png" alt-text="Screenshot of querying in Azure Data Studio.":::
 
-    Later in this exercise, you dive in to why that result is different from what you see in SQL Server.
+    Later in this exercise, you dive in to why that result is different from what you get in SQL Server.
 
 ## Set up easy file access with Azure Data Studio  
 
@@ -48,13 +48,13 @@ Now that you're connected, you might want an easy way to access scripts and Jupy
 
 1. Browse to where you extracted the zip file of the resources for this exercise. If you followed the prerequisites, the path should be similar to *C:\Users\\\<machine-username>\mslearn-azure-sql-fundamentals*. When you're there, select **Select Folder**. If prompted, select **Yes, I trust the authors**.
 
-1. Next, select the **Explorer** icon from the left taskbar to browse through the files in the module. This folder contains all of the necessary resources for the learning path about Azure SQL fundamentals, so you only need to download and configure this information once!
+1. Next, select the **Explorer** icon from the left taskbar to browse through the files in the module. This folder contains all of the necessary resources for the learning path about Azure SQL fundamentals, so you only need to download and configure this information once.
 
     Throughout the module and learning path exercises, you're instructed at various points to open a *notebook* file that has the following file name extension: *.ipynb*. You can access the notebook from here directly. Alternatively, you can access it from the **Notebook** icon tab.  
 
 ## Verify deployment
 
-After you deploy an instance of SQL, you typically run queries to verify your deployment. In Azure SQL, some of these queries vary from SQL Server. In this step, you see what and how things change from SQL Server, and what's new.  
+After you deploy an instance of SQL, you typically run queries to verify your deployment. In Azure SQL, some of these queries vary from SQL Server. In this step, you see what things change SQL Server, how they change, and what's new.  
 
 There are two options for completing this exercise:
 
@@ -65,10 +65,10 @@ Both exercises contain the same commands and content, so you can choose the opti
 
 ### Option 1: T-SQL in SSMS
 
-In this option, walk through some common queries against system functions, dynamic management views (DMVs), and catalog views that you can use after deployment in SSMS. See which ones work the same as SQL Server, which ones don't, and which ones are new to Azure SQL.
+In this option, you walk through some common queries against system functions, dynamic management views (DMVs), and catalog views that you can use after deployment in SSMS. You see which ones work the same as SQL Server, which ones don't, and which ones are new to Azure SQL.
 
 1. Connect to your Azure SQL Database logical server in SSMS if you haven't already.
-1. Right-click the `AdventureWorks` database, and select **New Query**.
+1. Right-click the `AdventureWorks` database and select **New Query**.
 1. Check the version that you deployed by executing the well-known system function ``@@VERSION``.
 
     ```sql
@@ -81,13 +81,13 @@ In this option, walk through some common queries against system functions, dynam
 
 1. Determine the specific type of Azure SQL deployment, based on the number returned:
 
-    - 1 = Personal or Desktop Engine  
-    - 2 = Standard  
-    - 3 = Enterprise  
-    - 4 = Express  
-    - 5 = SQL Database  
-    - 6 = SQL Data Warehouse  
-    - 8 = SQL Managed Instance  
+    - **1**: Personal or Desktop Engine  
+    - **2**: Standard  
+    - **3**: Enterprise  
+    - **4**: Express  
+    - **5**: SQL Database  
+    - **6**: SQL Data Warehouse  
+    - **8**: SQL Managed Instance  
 
     Run the following T-SQL command to see if you get the expected result.
 
@@ -97,7 +97,7 @@ In this option, walk through some common queries against system functions, dynam
 
     :::image type="content" source="../media/4-engine-edition.png" alt-text="Screenshot of the results for the Azure SQL deployment.":::  
 
-    The result is 5, which makes sense because you deployed Azure SQL Database, not SQL Managed Instance or SQL Server Enterprise. There's no special number for SQL Server in Azure Virtual Machines. The number would correspond to the edition that you installed in the virtual machine. Personal or Desktop Engine is an earlier edition that's no longer used with SQL Server.
+    The result is **5**, which makes sense because you deployed Azure SQL Database, not SQL Managed Instance or SQL Server Enterprise. There's no special number for SQL Server in Azure Virtual Machines. The number corresponds to the edition that you installed in the virtual machine. Personal or Desktop Engine is an earlier edition that's no longer used with SQL Server.
 
 1. Examine the catalog views `sys.databases` and `sys.objects`. Typically, you look at these views to verify the installation and the status of system databases and to check system objects in your database.
 
@@ -108,7 +108,7 @@ In this option, walk through some common queries against system functions, dynam
 
     :::image type="content" source="../media/4-sys-databases-objects.png" alt-text="Screenshot of the results for sys.databases and sys.objects.":::  
 
-    In the first result set, the system databases `msdb`, `tempdb`, and `model` aren't listed. Only master and your user database are listed. The master database for a database server for Azure SQL Database isn't the same as the physical master database installed with SQL Server. In Azure SQL Managed Instance, you see the normal set of system databases, as with any SQL Server instance.
+    In the first result set, the system databases `msdb`, `tempdb`, and `model` aren't listed. Only `master` and your user database are listed. The `master` database in an Azure SQL logical server isn't the same as the physical `master` database installed with SQL Server. In Azure SQL Managed Instance, you see the normal set of system databases, as with any SQL Server instance.
 
     However, `sys.objects` looks similar to a normal SQL Server instance. That fact is true for system tables, internal tables, and user objects for the sample `AdventureWorksLT` database.
 
@@ -120,11 +120,11 @@ In this option, walk through some common queries against system functions, dynam
 
     :::image type="content" source="../media/4-schedulers.png" alt-text="Screenshot of the results for sys.dm_os_schedulers.":::  
 
-    Two `VISIBLE ONLINE` schedulers are what you would expect when two vCores are available for the SQL Server instance where your SQL database is deployed.
+    Two `VISIBLE ONLINE` schedulers are what you'd expect when two vCores are available for the SQL Server instance where your SQL database is deployed.
 
 1. For a SQL Server deployment, you might normally look at DMVs like `sys.dm_process_memory` to see limits for CPU, memory, and workers. This DMV isn't supported with Azure SQL Database, because the user doesn't expose or control the details of the host that supports the database. You can use the DMV `sys.dm_user_db_resource_governance` to review capacities and limits for your deployed SQL database. You can also use `sys.dm_instance_resource_governance` in Azure SQL Managed Instance.
 
-    Run and review the following query results. Compare the results to your pricing tier and the limits documented for your deployed tier. The `slo_name` is the Service Level Objective (SLO) which states the deployment option, service tier, hardware, and compute amount.  In addition, because Azure SQL Database uses Windows Job Objects for other resource limits, such as memory, you can use the `sys.dm_os_job_object` DMV to see what resources are available for the deployment.
+    Run and review the following query results. Compare the results to your pricing tier and the limits documented for your deployed tier. The `slo_name` is the Service Level Objective (SLO) which states the deployment option, service tier, hardware, and compute amount. In addition, because Azure SQL Database uses Windows Job Objects for other resource limits, such as memory, you can use the `sys.dm_os_job_object` DMV to see what resources are available for the deployment.
 
     ```sql
     SELECT * FROM sys.dm_user_db_resource_governance;
@@ -140,10 +140,10 @@ In this option, walk through some common queries against system functions, dynam
 
     :::image type="content" source="../media/4-dm-exec-requests.png" alt-text="Screenshot of the results showing dm_exec_requests.":::
 
-    Using `sys.dm_exec_requests` for Azure SQL Database is different from using it for SQL Server or SQL Managed Instance. This DMV shows only active requests related to your database, including background tasks or background tasks that don't have a database context that shows up as *master*. This behavior is because of the nature of an Azure SQL Database deployment where each database is deployed on its own SQL Server instance.
+    Using `sys.dm_exec_requests` for Azure SQL Database is different from using it for SQL Server or SQL Managed Instance. This DMV shows only active requests related to your database, including background tasks or background tasks that don't have a database context that shows up as `master`. This behavior is because of the nature of an Azure SQL Database deployment.
 
 ### Option 2: SQL Notebooks in Azure Data Studio
 
-For this option, use the notebook **VerifyDeployment.ipynb**. It's under *02-DeployAndConfigure\verifydeployment\VerifyDeployment.ipynb* in the GitHub repository or the zip file you downloaded earlier. Browse to that file in Azure Data Studio to complete this part of the exercise, then return here. In the same folder, you also find extra notebooks that contain the results of the same queries on Azure SQL Managed Instance and SQL Server 2019.  
+For this option, use the notebook **VerifyDeployment.ipynb**. It's under *02-DeployAndConfigure\verifydeployment\VerifyDeployment.ipynb* in the GitHub repository or the zip file you downloaded earlier. Browse to that file in Azure Data Studio to complete this part of the exercise, then return here. In the same folder, you can also find extra notebooks that contain the results of the same queries on Azure SQL Managed Instance and SQL Server 2019.  
 
 If you can't complete the exercise for any reason, you can review the results in the [corresponding notebook file on GitHub](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals/blob/master/02-DeployAndConfigure/verifydeployment/VerifyDeployment.ipynb?azure-portal=true).

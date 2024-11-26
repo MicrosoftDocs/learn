@@ -10,9 +10,9 @@ In this unit, you learn the benefits and limitations the frameworks and how they
 
 The log reader application is a utility to be used by IT professionals. Some requirements to focus on for this application are:
 
-- **Appearance and style of the application.** The client wants to focus on simplicity, ease of use, and performance. Style is not a key consideration.
-- **Project timeline.** The timeline for this project is short, so choosing a framework that supports rapid development is important.
-- **Deployment scenarios and options.** The application must be deployed via Windows Package Manager with WinGet scripting to internal workstations. It's deployed to enterprise customers on desktop PCs running Windows 10 and Windows 11.
+- **Appearance and style of the application:** The client wants to focus on simplicity, ease of use, and performance. Style isn't a key consideration.
+- **Project timeline:** The timeline for this project is short, so choosing a framework that supports rapid development is important.
+- **Deployment scenarios and options:** The application must be deployed via Windows Package Manager with WinGet scripting to internal workstations. It's deployed to enterprise customers on desktop PCs running Windows 10 and Windows 11.
 
 Let's walk through all the decision criteria for this project and see how each framework can be used to meet those requirements.
 
@@ -22,11 +22,11 @@ In this section, we're going to analyze the requirements for the log reader util
 
 ### Appearance and style of the application
 
-Appearance isn't an important consideration for the project. The client isn't concerned with the appearance of the utility. Their primary concern is that it's responsive and fast and delivered on time. The timeline is short, so the team needs to be able to build the utility quickly. None of the frameworks have a significant advantage over the others in this area.
+Appearance isn't an important consideration for the project. The client isn't concerned with the appearance of the utility. Their primary concern is that it's responsive, fast, and delivered on time. The timeline is short, so the team needs to be able to build the utility quickly. None of the frameworks have a significant advantage over the others in this area.
 
 ### Tablet usability (touch) and device compatibility
 
-This utility must be deployed to Windows desktop PCs. It is used primarily with a keyboard and mouse. The client doesn't have any requirements for touch input. This application would seem to be a good fit for a rapidly developed Windows Forms project.
+This utility must be deployed to Windows desktop PCs. It's used primarily with a keyboard and mouse. The client doesn't have any requirements for touch input. This application would seem to be a good fit for a rapidly developed Windows Forms project.
 
 ### Skillset of the team's enterprise developers
 

@@ -34,8 +34,8 @@ The workspace doesn't store any data itself. Instead, all data is stored in **da
 When a workspace is created, an Azure Storage account is created and automatically connected to the workspace. As a result, you have four datastores already added to your workspace:
 
 - `workspaceartifactstore`: Connects to the `azureml` container of the Azure Storage account created with the workspace. Used to store compute and experiment logs when running jobs.
-- `workspaceworkingdirectory`: Connects to the file share of the Azure Storage account created with the workspace used by the **Notebooks** section of the studio. Whenever you upload files or folders to access from a compute instance, it's uploaded to this file share.
-- `workspaceblobstore`: Connects to the Blob Storage of the Azure Storage account created with the workspace. Specifically the `azureml-blobstore-...` container. Set as the default datastore, which means that whenever you create a data asset and upload data, it's stored in this container.
+- `workspaceworkingdirectory`: Connects to the file share of the Azure Storage account created with the workspace used by the **Notebooks** section of the studio. Whenever you upload files or folders to access from a compute instance, the files or folders are uploaded to this file share.
+- `workspaceblobstore`: Connects to the Blob Storage of the Azure Storage account created with the workspace. Specifically the `azureml-blobstore-...` container. Set as the default datastore, which means that whenever you create a data asset and upload data, you store the data in this container.
 - `workspacefilestore`: Connects to the file share of the Azure Storage account created with the workspace. Specifically the `azureml-filestore-...` file share.
 
-Additionally, you can create datastores to connect to other Azure data services. Most commonly, your datastores will connect to an Azure Storage Account or Azure Data Lake Storage (Gen2) as those data services are most often used in data science projects.
+Additionally, you can create datastores to connect to other Azure data services. Most commonly, your datastores connects to an Azure Storage Account or Azure Data Lake Storage (Gen2) as those data services are most often used in data science projects.
