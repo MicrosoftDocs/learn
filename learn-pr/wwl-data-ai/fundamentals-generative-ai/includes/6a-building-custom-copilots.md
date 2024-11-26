@@ -1,4 +1,4 @@
-If your organization makes the decision to customize Microsoft copilot or develop custom copilots, Microsoft provides two tools that you can use, Copilot Studio and Azure AI Studio.
+If your organization makes the decision to customize Microsoft copilot or develop custom copilots, Microsoft provides two tools that you can use, Copilot Studio and Azure AI Foundry.
 
 ## Copilot Studio
 
@@ -6,8 +6,8 @@ If your organization makes the decision to customize Microsoft copilot or develo
  
 ![Screenshot of Copilot Studio.](../media/copilot-studio.png)
 
-## Azure AI Studio
+## Azure AI Foundry
 
-*Azure AI Studio* is a PaaS (platform as a service) development portal for professional software developers that gives you full control over the language model you want to use, including the capability to fine-tune the model with your own data. You can define prompt flows that orchestrate conversation flow and integrate your own data augmentation and prompt engineering logic, and you can deploy the resulting copilot service in the cloud and consume it from custom-developed apps and services. For more information, see https://azure.microsoft.com/products/ai-studio/.
+*Azure AI Foundry* is a PaaS (platform as a service) platform for developers that gives you full control over the language model you want to use, including the capability to fine-tune the model with your own data. You can define prompt flows that orchestrate conversation flow and integrate your own data augmentation and prompt engineering logic, and you can deploy the resulting copilot service in the cloud and consume it from custom-developed apps and services. Learn more about Azure AI Foundry [here](https://learn.microsoft.com/azure/ai-studio/what-is-ai-studio).
 
-![Screenshot of Azure AI Studio](../media/ai-studio.png)
+![Screenshot of Azure AI Foundry](../media/azure-ai-foundry.png)

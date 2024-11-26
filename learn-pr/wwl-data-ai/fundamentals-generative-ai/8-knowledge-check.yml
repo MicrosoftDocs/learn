@@ -46,7 +46,7 @@ quiz:
     - content: "Microsoft Copilot Studio"
       isCorrect: false
       explanation: "Copilot Studio is designed to work well for low-code development scenarios."
-    - content: "Microsoft Azure AI Studio"
+    - content: "Microsoft Azure AI Foundry"
       isCorrect: true
-      explanation: "Microsoft Azure AI Studio is designed as a unified development portal for professional software developers to allow for full customization of language models."
+      explanation: "Microsoft Azure AI Foundry is designed as a unified development portal for professional software developers to allow for full customization of language models."
 
