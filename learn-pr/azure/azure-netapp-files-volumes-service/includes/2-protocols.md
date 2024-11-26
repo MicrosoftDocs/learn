@@ -53,7 +53,7 @@ Some organizations have pure Windows or pure UNIX environments (homogenous) in w
 Many sites must enable data sets to be accessed from both Windows and UNIX clients. For environments with these requirements, Azure NetApp Files has native dual-protocol NAS support. After the user is authenticated on the network, they can access the data from UNIX hosts using NFS or from Windows hosts using SMB.
 
 Using the dual-protocol volumes can provide the following benefits:
-- reduce the overall storage administrator management tasks.
-- require only a single copy of data to be stored for NAS access from multiple client types.
-- protocol agnostic NAS allows storage administrators to control the style of ACL and access control being presented to end users.
-- centralize identity management operations in a NAS environment.
+- Reduce the overall storage administrator management tasks.
+- Require only a single copy of data to be stored for NAS access from multiple client types.
+- Protocol agnostic NAS allows storage administrators to control the style of ACL and access control being presented to end users.
+- Centralize identity management operations in a NAS environment.

@@ -1,8 +1,8 @@
 Network Attached Storage (NAS) is a way for a centralized storage system to present data to multiple networked clients across a wide area network (WAN) or local area network (LAN).
 
 Datasets in the NAS environment are either:
-    -structured (data in a well-defined format, such as databases) or
-    - unstructured (data not stored in a structured database format, such as images, media files, logs, home directories, etc.)
+    - Structured (data in a well-defined format, such as databases) or
+    - Unstructured (data not stored in a structured database format, such as images, media files, logs, home directories, etc.)
 
 Regardless of the structure, the data is served through a standard conversation between a NAS client and the Azure NetApp Files NAS services.
 

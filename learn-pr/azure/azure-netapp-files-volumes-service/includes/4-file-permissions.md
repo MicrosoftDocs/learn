@@ -28,7 +28,6 @@ NFS file access permissions limit what users and groups can do once a NAS volume
 
 Mode bits are a key feature of NFS file permissions in Azure NetApp Files. Mode bit permissions in NFS provide basic permissions for files and folders, using a standard numeric representation of access controls. Mode bits can be used with either NFSv3 or NFSv4.1, but mode bits are the standard option for securing NFSv3. 
 
-See
 The following table shows how those numeric values correspond to access controls.
 
 | Number | Function | 
@@ -70,10 +69,10 @@ An NFSv4.x ACL consists of individual Access Control Entries (ACEs), each of whi
 
 Each NFSv4.x ACL is created with the format of `type:flags:principal:permissions`. A:g:group1@contoso.com:rwatTnNcCy is an example of a valid ACL.
 
-- **Type:** the type of ACL being defined. Valid choices include Access (A), Deny (D), Audit (U), Alarm (L). Azure NetApp Files supports Access, Deny and Audit ACL types, but Audit ACLs, while being able to be set, don't currently produce audit logs.
-- **Flag:** adds extra context for an ACL. There are three kinds of ACE flags: group, inheritance, and administrative. For more information on flags, see NFSv4.x ACE flags.
-- **Principal:** defines the user or group that is being assigned the ACL. A principal on an NFSv4.x ACL uses the format of name@ID-DOMAIN-STRING.COM. For more detailed information on principals, see NFSv4.x user and group principals.
-- **Permissions:** where the access level for the principal is defined. Each permission is designated a single letter (for instance, read gets “r”, write gets “w” and so on). Full access would incorporate each available permission letter. For more information, see NFSv4.x permissions.
+- **Type:** The type of ACL being defined. Valid choices include Access (A), Deny (D), Audit (U), Alarm (L). Azure NetApp Files supports Access, Deny and Audit ACL types, but Audit ACLs, while being able to be set, don't currently produce audit logs.
+- **Flag:** Adds extra context for an ACL. There are three kinds of ACE flags: group, inheritance, and administrative. For more information on flags, see NFSv4.x ACE flags.
+- **Principal:** Defines the user or group that is being assigned the ACL. A principal on an NFSv4.x ACL uses the format of name@ID-DOMAIN-STRING.COM. For more detailed information on principals, see NFSv4.x user and group principals.
+- **Permissions:** Where the access level for the principal is defined. Each permission is designated a single letter (for instance, read gets “r”, write gets “w” and so on). Full access would incorporate each available permission letter. For more information, see NFSv4.x permissions.
 
 ### Example of NFSv4.x ACL
 
