@@ -9,5 +9,5 @@ Joining MSLE is the beginning of a journey ensuring you feel confident in your t
 - [Implementation Learning Path](https://aka.ms/implementationLP)
 - [MSLE Community page](https://aka.ms/JoinEdTeams)
 - [Open House](https://aka.ms/MSLEOpenHouse)
-- [Microsoft Learning Download Center](https://aka.ms/LDC)
+- [Microsoft Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123)
 - [Microsoft Virtual Training Days](https://aka.ms/mvtdevents)
