@@ -78,10 +78,10 @@ Follow these steps:
 
 1. Next, you'll need to connect the Azure VMware Solution ExpressRoute circuit to an Azure virtual network.
 1. Under **Manage**, select **Connectivity**.
-1. For **Azure vNet connect**, you'll need to create a brand new virtual network or select an existing virtual network. The virtual network needs a **GatewaySubnet** configured for ExpressRoute peering.
+1. For **Azure vNet connect**, you'll need to create a new virtual network or select an existing virtual network. The virtual network needs a **GatewaySubnet** configured for ExpressRoute peering.
 1. After the virtual network is configured, select **Save**.
 
-    :::image type="content" source="../media/4-azure-vnet-connect.png" alt-text="Screenshot displaying where to select the virtual network from within Azure vNet connect and how to save the configuration.":::
+    :::image type="content" source="../media/4-azure-private-cloud-vnet-connect.png" alt-text="Screenshot displays where to select the virtual network from within Azure vNet connect and how to save the configuration.":::
 
 1. Saving the configuration triggers a build of a few different Azure resources:
 
