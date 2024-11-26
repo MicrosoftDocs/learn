@@ -94,4 +94,6 @@ Follow these steps:
 
 1. After the build finishes, connectivity between the Azure VMware Solution private cloud and Azure have been established. The deployment complete page appears displaying your **Deployment name**, **Subscription**, **Resource group**, **Correlation ID**, and the resources deployed.
 
+    :::image type="content" source="../media/4-vnet-connect-deployment-complete.png" alt-text="Screenshot of completed deployment page.":::
+
  Azure VMware Solution connectivity will require further configuration to communicate with the on-premises VMware environment. In the next unit, we'll go through network-configuration steps. You'll take those steps to successfully connect to the Azure VMware Solution private environment, both from within Azure and from your on-premises environment.
