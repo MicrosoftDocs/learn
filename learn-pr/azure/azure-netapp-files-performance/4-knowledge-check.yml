@@ -17,15 +17,15 @@ quiz:
   questions: 
   - content: "Which of the following statements accurately describes Automatic QoS volume quota and throughput in Azure NetApp Files?"
     choices: 
-    - content: "Automatic QoS is only applicable to Premium performance tiers."
+    - content: "Automatic QoS is only available on the Premium performance tiers."
       isCorrect: false
-      explanation: Incorrect. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands so you don't need to set them manually.
+      explanation: Incorrect. Automatic QoS is available in the Standard, Premium and Ultra performance tiers. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands so you don't need to set them manually.
     - content: "Automatic QoS dynamically adjusts volume quotas and throughput based on workload demands."
       isCorrect: true
       explanation: "Correct. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands so you don't need to set them manually."
     - content: "Automatic QoS allows you to set specific volume quotas and throughput limits manually."
       isCorrect: false
-      explanation: Incorrect. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands so you don't need to set them manually.
+      explanation: Incorrect. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands so you don't need to set them manually. Use manual QoS to set quotas and limits manually. 
     - content: "Automatic QoS isn't supported in Azure NetApp Files."
       isCorrect: false
       explanation: Incorrect. Automatic QoS in Azure NetApp Files dynamically adjusts volume quotas and throughput based on workload demands so you don't need to set them manually.
