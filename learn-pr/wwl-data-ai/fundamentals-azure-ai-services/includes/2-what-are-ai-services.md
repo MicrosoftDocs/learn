@@ -3,7 +3,7 @@ Azure AI services are AI capabilities that can be built into web or mobile appli
 Let's take a look at some examples of what can be done with Azure AI services. Azure OpenAI service provides access to powerful, cutting-edge, generative AI models for application development. Azure AI Content Safety service can be used to detect harmful content within text or images, including violent or hateful content, and report on its severity. Azure AI Language service can be used to summarize text, classify information, or extract key phrases. Azure AI Speech service provides powerful speech to text and text to speech capabilities, allowing speech to be accurately transcribed into text, or text to natural sounding voice audio. 
 
 > [!NOTE]
-> You can use multiple Azure AI services with **Azure AI Foundry**, a platform for AI application development that combines access to multiple Azure AI services, with a focus on generative AI application capabilities. Azure AI Foundry is covered in its own module: [Introduction to Azure AI Foundry](/training/modules/introduction-to-azure-ai-studio/).
+> You can use multiple Azure AI services with **Azure AI Foundry**, a platform for AI application development. Azure AI Foundry is covered in its own module: [Introduction to Azure AI Foundry](/training/modules/introduction-to-azure-ai-studio/).
 
 Azure AI services are based on three principles that dramatically improve speed-to-market:
 - Prebuilt and ready to use
