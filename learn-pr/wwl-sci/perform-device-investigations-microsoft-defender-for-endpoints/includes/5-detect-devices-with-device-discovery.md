@@ -1,11 +1,13 @@
 Protecting your environment requires taking inventory of the devices that are in your network. However, mapping devices in a network can often be expensive, challenging, and time-consuming.
 
 Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Device discovery uses onboarded endpoints, in your network to collect, probe, or scan your network to discover unmanaged devices. The device discovery capability allows you to discover:
+
 - Enterprise endpoints (workstations, servers and mobile devices) that aren't yet onboarded to Microsoft Defender for Endpoint
 - Network devices like routers and switches
 - IoT devices like printers and cameras
 
 Unknown and unmanaged devices introduce significant risks to your network - whether it's an unpatched printer, network devices with weak security configurations, or a server with no security controls. Once devices are discovered, you can:
+
 - Onboard unmanaged endpoints to the service, increasing the security visibility on them.
 - Reduce the attack surface by identifying and assessing vulnerabilities, and detecting configuration gaps.
 
@@ -39,5 +41,4 @@ To assess these devices, you can use a filter in the device inventory list calle
 - Can be onboarded: The endpoint was discovered in the network and the Operating System was identified as one that is supported by Microsoft Defender for Endpoint, but it is not currently onboarded. We highly recommend onboarding these devices.
 - Unsupported: The endpoint was discovered in the network but is not supported by Microsoft Defender for Endpoint.
 - Insufficient info: The system could not determine the supportability of the device. Enabling standard discovery on more devices in the network can enrich the discovered attributes.
-
 
