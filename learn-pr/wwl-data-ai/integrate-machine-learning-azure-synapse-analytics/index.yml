@@ -13,14 +13,14 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
 title: Integrate machine learning within Azure Synapse Analytics
-summary: In this module, you will learn how you can build machine learning modules from within Azure Synapse Analytics.
+summary: In this module, you learn how you can build machine learning modules from within Azure Synapse Analytics.
 abstract: |
   In this module, you will:
   *   Describe Azure Machine Learning and how it integrates with an Azure Synapse Analytics workspace
   *   Describe Azure Machine Learning AutoML
   *   Understand how to score machine learning models with PREDICT
 prerequisites: |
-  - It is recommended that students understand how Azure Synapse Analytics and Azure Machine Learning Services works
+  - Students should understand how Azure Synapse Analytics and Azure Machine Learning Services works
 iconUrl: /training/achievements/azure-synapse-analytics-integrate-machine-learning.svg
 levels:
 - intermediate
