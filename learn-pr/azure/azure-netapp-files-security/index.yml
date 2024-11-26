@@ -10,7 +10,7 @@ metadata:
   ms.author: b-ahibbard
   ms.topic: module
   ms.service: azure-netapp-files
-title: Using Azure NetApp Files with Azure VMware Solution
+title: Azure security for Azure NetApp Files
 summary: Learn about various security options available in Azure NetApp Files. Learn about security features supported in Azure NetApp Files and data encryption options in Azure NetApp Files. 
 abstract: |
   By the end of this module, you should:
