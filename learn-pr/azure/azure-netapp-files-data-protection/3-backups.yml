@@ -11,6 +11,6 @@ metadata:
   author: b-ahibbard
   ms.author: anfdocs
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 4
 content: |
-  [!include[](includes/2-snapshots.md)]
+  [!include[](includes/3-backups.md)]
