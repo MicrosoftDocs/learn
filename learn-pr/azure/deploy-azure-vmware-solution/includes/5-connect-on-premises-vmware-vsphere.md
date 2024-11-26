@@ -1,19 +1,5 @@
 After the Azure VMware Solution is deployed, network connectivity is the next step for a successful deployment. The Azure VMware Solution solution deploys onto dedicated, bare-metal servers. These servers are given to a single customer. The bare-metal servers need to connect to the Azure network backbone so customers use Azure resources. The Azure VMware Solution-provided Azure ExpressRoute circuit helps the environment talk to Azure services. To reach the on-premises environment, a customer-provided ExpressRoute circuit is used, along with an ExpressRoute Global Reach configuration.
 
-## Create an Azure Bastion resource
-
-After the Azure VMware Solution is deployed, you'll create an Azure Bastion resource. The Azure Bastion resource provides secure Remote Desktop connectivity to your Azure infrastructure as a service (IaaS) environment. You use Azure Bastion initially to connect to the jump host that will allow you to log in to the Azure VMware Solution vCenter and NSX environments.
-
-When the ExpressRoute circuits and ExpressRoute Global Reach have been configured for hybrid connectivity, you no longer need the Azure Bastion resource. Your company might still want to keep the resource as a backup in case you have connectivity issues with the ExpressRoute circuits in the future.
-
-To create an Azure Bastion resource:
-
-1. In the Azure portal, search for **Bastions**.
-1. Select **Create** in the menu bar.
-1. On the **Create a Bastion** page, configure a new Azure Bastion resource with the following details:
-
-    :::image type="content" source="../media/5-create-azure-bastion-host.png" alt-text="Screenshot of the Azure portal showing how to create an Azure Bastion host, with fields containing example values.":::
-
     | Field | Value |
     | ----------- | -------- |
     | **Subscription** | Select the same subscription where Azure VMware Solution is deployed. |
