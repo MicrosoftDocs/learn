@@ -10,7 +10,7 @@ metadata:
   ms.author: b-ahibbard
   ms.topic: module
   ms.service: azure-netapp-files
-title: Using Azure NetApp Files with Azure VMware Solution
+title: Understand Azure NetApp Files essentials 
 summary: |
   Develop essential knowledge about Azure NetApp Files. Learn everything you need to do before you create a volume in Azure NetApp Files. We take a deep dive into the storage hierarchy, capacity pools, and volumes in Azure NetApp Files. You'll understand the use of the NAS share and file permissions with Azure NetApp Files. You also learn how to manage and monitor your Azure NetApp Files resources in Azure NetApp Files.   
 abstract: |
