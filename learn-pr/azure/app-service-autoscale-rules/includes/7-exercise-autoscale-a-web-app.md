@@ -71,7 +71,7 @@ The exercise also runs a client app that simulates many users issuing POST and G
     ```bash
     cd website
     zip website.zip *
-    az webapp deployment source config-zip --src website.zip --name <your-webapp-name> --resource-group mslearn-autoscale
+    az webapp deploy --src-path website.zip --name <your-webapp-name> --resource-group mslearn-autoscale
     ```
 
 ## Test the web app before configuring autoscaling
