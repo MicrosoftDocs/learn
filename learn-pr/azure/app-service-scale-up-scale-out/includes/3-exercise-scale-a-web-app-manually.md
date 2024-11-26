@@ -74,7 +74,7 @@ The exercise also runs a client app that simulates several users issuing POST an
      ```bash
     cd website
     zip website.zip *
-    az webapp deployment source config-zip --src website.zip --name <your-webapp-name> --resource-group mslearn-scale
+    az webapp deploy --src-path website.zip --name <your-webapp-name> --resource-group mslearn-scale
     ```
 
 1. Use your web browser to go to `http://<your-webapp-name>.azurewebsites.net/api/reservations/1`. A JSON document appears that contains the details for reservation number 1.

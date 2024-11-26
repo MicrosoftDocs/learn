@@ -52,10 +52,10 @@ Let's start by deploying the application. First, we need to create the Azure res
 1. And now, run the following command to deploy the application to App Service. This deployment takes a few minutes to finish.
 
     ```azurecli
-    az webapp deployment source config-zip \
+    az webapp deploy \
         --resource-group "<rgn>[sandbox resource group]</rgn>" \
         --name $APPSERVICENAME \
-        --src DroneDelivery-before.zip
+        --src-path DroneDelivery-before.zip
     ```
 
 1. After the deployment finishes, confirm that the deployment is successful by visiting the website of your app service. Run the following command to get the URL, and select it to open the page.
