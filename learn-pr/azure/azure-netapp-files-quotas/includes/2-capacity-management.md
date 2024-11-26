@@ -42,15 +42,19 @@ You can manually manage capacity using the Azure portal or the CLI.
 
 Watch this video to understand how you can use the Azure portal to manage the capacity for Azure NetApp Files system.
 
-[!VIDEO https://learn-video.azurefd.net/vod/player?id=61e9d5c5-d866-4e23-b6fe-efc7138acf0d]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=61e9d5c5-d866-4e23-b6fe-efc7138acf0d]
 
 #### CLI 
 
-You can use the Azure NetApp Files CLI tools, including the Azure CLI and Azure PowerShell, to manually change the volume or capacity pool size. The `az netappfiles pool` and `az netappfiles volume` commands can be used to manage Azure NetApp Files volume and pool resources.
+You can use the Azure NetApp Files CLI tools, including the Azure CLI and Azure PowerShell, to manually change the volume or capacity pool size. The [`az netappfiles pool`](/cli/azure/netappfiles/pool) and [`az netappfiles volume`](/cli/azure/netappfiles/volume) commands can be used to manage Azure NetApp Files volume and pool resources.
 
-The following examples use the commands to show and update the size of a volume:
+This screenshot captures the output of the `az netappfiles volume show` command:
 
-<!-- images -->
+:::image type="content" source="../media/2-volume-show.png" alt-text="Screenshot of the volume show output.":::
+
+This screenshot captures the output of the `az netappfiles volume update` command:
+
+:::image type="content" source="../media/2-volume-update.png" alt-text="Screenshot of the volume update output.":::
 
 ### Automated
 
