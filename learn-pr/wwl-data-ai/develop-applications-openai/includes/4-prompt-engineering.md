@@ -2,8 +2,6 @@ The quality of the input prompts we send to an AI model, like those available in
 
 ## What is prompt engineering
 
-> [!VIDEO https://play.vidyard.com/EdYeRo28wYvXABThZ5AJzG?loop=1]
-
 Prompt engineering is the process of designing and optimizing prompts to better utilize AI models. Designing effective prompts is critical to the success of prompt engineering, and it can significantly improve the AI model's performance on specific tasks. Providing relevant, specific, unambiguous, and well structured prompts can help the model better understand the context and generate more accurate responses.
 
 For example, if we want an OpenAI model to generate product descriptions, we can provide it with a detailed description that describes the features and benefits of the product. By providing this context, the model can generate more accurate and relevant product descriptions.

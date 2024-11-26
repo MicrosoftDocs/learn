@@ -3,10 +3,10 @@ uid: learn.wwl.develop-applications-openai.prompt-engineering-provide-context
 title: Provide context with prompt engineering 
 metadata:
   title: Provide context with prompt engineering
-  description: This unit explains how to deploy provide context to an OpenAI modelwith prompt engineering.
+  description: This unit explains how to provide context to an Azure OpenAI model with prompt engineering.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/15/2024
+  ms.date: 11/26/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

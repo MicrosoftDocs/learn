@@ -173,6 +173,7 @@ If the model is provided with just `You can't miss this` with no additional cont
 In practical terms, conversation history and few shot learning are sent to the model in the same way; each user message and assistant response is a discrete message in the message object. The `ChatCompletion` endpoint is optimized to include message history, regardless of if this message history is provided as few shot learning, or actual conversation history.
 
 ::: zone pivot="csharp"
+
 ```csharp
 var chatCompletionsOptions = new ChatCompletionsOptions()
 {
@@ -191,7 +192,9 @@ var chatCompletionsOptions = new ChatCompletionsOptions()
 ```
 
 ::: zone-end
+
 ::: zone pivot="python"
+
 ```python
 response = openai.ChatCompletion.create(
     model="gpt-35-turbo",
@@ -207,13 +210,14 @@ response = openai.ChatCompletion.create(
     ]
 )
 ```
+
 ::: zone-end
 
 ## Break down a complex task
 
 Another technique for improved interaction is to divide complex prompts into multiple queries. This allows the model to better understand each individual part, and can improve the overall accuracy. Dividing your prompts also allows you to include the response from a previous prompt in a future prompt, and using that information in addition to the capabilities of the model to generate interesting responses.
 
-For example, you could ask the model `Doug can ride down the zip line in 30 seconds, and takes 5 minutes to climb back up to the top. How many times can Doug ride the zip line in 17 minutes?`. The result is likely `3`, which if Doug starts at the top of the zip line is  because he doesn't need to return to the top after the final ride.
+For example, you could ask the model `Doug can ride down the zip line in 30 seconds, and takes 5 minutes to climb back up to the top. How many times can Doug ride the zip line in 17 minutes?`. The result is likely `3`, which if Doug starts at the top of the zip line is because he doesn't need to return to the top after the final ride.
 
 A more informative answer could come from asking it multiple questions, about the round trip time to get back to the top of the zip line, and how to account for the fact that Doug starts at the top. Breaking down this problem reveals that Doug can, in fact, ride the zip line four times.
 
