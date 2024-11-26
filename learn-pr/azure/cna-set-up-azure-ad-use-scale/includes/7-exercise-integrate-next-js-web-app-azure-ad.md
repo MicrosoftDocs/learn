@@ -10,10 +10,12 @@ In this exercise, you'll:
 
 To perform this exercise, you'll need:
 
-* An Azure subscription.
+* To have completed the exercises _Set up Microsoft Entra ID_ and _Implement multitenant data_ in your Azure subscription.
 * A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-* To have completed the first and second exercises of this module.
-* A computer on which you either have installed or can install Node.js and Git.
+* A computer with Node.js and Git installed.
+
+> [!WARNING]
+> Use a test environment because the exercises in this module perform sensitive operations that require elevated administrative privileges.
 
 > [!NOTE]
 > For information about installing Node.js, refer to [Node.js Downloads](https://nodejs.org/en/download/?azure-portal=true). For information about Git, refer to [Git downloads](https://git-scm.com/downloads?azure-portal=true). Install both before you start this exercise.

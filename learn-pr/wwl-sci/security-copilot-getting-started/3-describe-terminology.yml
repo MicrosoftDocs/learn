@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.security-copilot-getting-started.describe-terminology
-title: Describe Microsoft Copilot for Security terminology
+title: Describe Microsoft Security Copilot terminology
 metadata:
-  title: Describe Microsoft Copilot for Security terminology
-  description: Describe Microsoft Copilot for Security terminology.
+  title: Describe Microsoft Security Copilot terminology
+  description: Describe Microsoft Security Copilot terminology.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 08/22/2024
+  ms.date: 11/20/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

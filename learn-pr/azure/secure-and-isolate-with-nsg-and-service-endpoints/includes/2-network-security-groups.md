@@ -1,4 +1,4 @@
-As part of the project to move your ERP system to Azure, you must ensure that servers have proper isolation so that only allowed systems can make network connections. For example, you have database servers that store data for your ERP app. You want to block prohibited systems from communicating with the servers over the network while allowing app servers to communicate with the database servers.
+As part of the project to move your ERP system to Azure, you must ensure that servers have proper isolation so that only allowed systems can make network connections. For example, you have database servers that store data for your ERP app. You want to block prohibited systems from communicating with the servers over the network, while allowing app servers to communicate with the database servers.
 
 ## Network security groups
 
@@ -14,9 +14,9 @@ When you apply network security groups to both a subnet and a network interface,
 
 Applying a network security group to a subnet instead of individual network interfaces can reduce administration and management efforts. This approach also ensures that all VMs within the specified subnet are secured with the same set of rules.
 
-Each subnet and network interface can have one network security group applied to it. Network security groups support TCP, UDP, and ICMP, and operate at Layer 4 of the OSI model.
+Each subnet and network interface can have one network security group applied to it. Network security groups support TCP (Transmission Control Protocol), UDP (User Datagram Protocol), and ICMP (Internet Control Message Protocol), and operate at Layer 4 of the OSI (Open Systems Interconnection) model.
 
-In this manufacturing-company scenario, network security groups can help you secure the network. You can control which computers can connect to your app servers. You can configure the network security group so that only a specific range of IP addresses can connect to the servers. You can lock this down even more by only allowing access to or from specific ports, or from individual IP addresses. You can apply these rules to devices that are connecting remotely from on-premises networks, or between resources within Azure.
+In this manufacturing-company scenario, network security groups can help you secure the network. You can control which computers can connect to your app servers. You can configure the network security group so that only a specific range of IP addresses can connect to the servers. You can lock this down even more by only allowing access to or from specific ports or from individual IP addresses. You can apply these rules to devices that are connecting remotely from on-premises networks or between resources within Azure.
 
 ## Security rules
 
@@ -34,9 +34,9 @@ Rules have several properties:
 |Port range     | An individual port or range of ports  |
 |Action     | Allow or deny the traffic      |
 
-Network security group security rules are evaluated by priority, using the 5-tuple information (source, source port, destination, destination port, and protocol) to allow or deny the traffic. When the conditions for a rule match the device configuration, rule processing stops.
+Network security group security rules are evaluated by priority. They use the five-tuple information (source, source port, destination, destination port, and protocol) to allow or deny the traffic. When the conditions for a rule match the device configuration, rule processing stops.
 
-For example, suppose your company has created a security rule to allow inbound traffic on port 3389 (RDP) to your web servers, with a priority of 200. Next, suppose that another admin has created a rule to deny inbound traffic on port 3389, with a priority of 150. The deny rule takes precedence, because it's processed first. The rule with priority 150 is processed before the rule with priority 200.
+For example, suppose your company has created a security rule to allow inbound traffic on port 3389 (RDP) to your web servers, with a priority of 200. Next, suppose that another admin has created a rule to deny inbound traffic on port 3389, with a priority of 150. The deny rule takes precedence because it's processed first. The rule with priority 150 is processed before the rule with priority 200.
 
 With network security groups, the connections are stateful. Return traffic is automatically allowed for the same TCP/UDP session. For example, an inbound rule allowing traffic on port 80 also allows the VM to respond to the request (typically on an ephemeral port). You don't need a corresponding outbound rule.
 
@@ -44,7 +44,7 @@ Regarding the ERP system, the web servers for the ERP app connect to database se
 
 ### Default security rules
 
-When you create a network security group, Azure creates several default rules. These default rules can't be changed, but you can override them with your own rules. These default rules allow connectivity within a virtual network and from Azure load balancers. They also allow outbound communication to the internet and deny inbound traffic from the internet.
+When you create a network security group, Azure creates several default rules. These default rules can't be changed, but you can override them with your own rules. These default rules allow connectivity within a virtual network and from Azure load balancers. They also allow outbound communication to the internet, and deny inbound traffic from the internet.
 
 The default rules for inbound traffic are:
 
@@ -71,7 +71,7 @@ You can use augmented security rules for network security groups to simplify man
 - Service tags
 - App security groups
 
-Suppose your company wants to restrict access to resources in your datacenter, spread across several network address ranges. With augmented rules, you can add all these ranges into a single rule, reducing the administrative overhead and complexity in your network security groups.
+Suppose your company wants to restrict access to resources in your datacenter spread across several network address ranges. With augmented rules, you can add all these ranges into a single rule, reducing the administrative overhead and complexity in your network security groups.
 
 ### Service tags
 
@@ -93,7 +93,7 @@ You can restrict access to many services. Microsoft manages the service tags, me
 
 App security groups let you configure network security for resources used by specific apps. You can group VMs logically, no matter what their IP address or subnet assignment.
 
-You can use app security groups within a network security group to apply a security rule to a group of resources. It's easier to deploy and scale up specific app workloads; just add a new VM deployment to one or more app security groups, and that VM automatically picks up your security rules for that workload.
+You can use app security groups within a network security group to apply a security rule to a group of resources. It's easier to deploy and scale up specific app workloads. You can add a new VM deployment to one or more app security groups, and that VM automatically picks up your security rules for that workload.
 
 An app security group lets you group network interfaces together. You can then use that app security group as a source or destination rule within a network security group.
 
@@ -101,7 +101,7 @@ For example, your company has many front-end servers in a virtual network. The w
 
 :::image type="content" source="../media/2-asg-nsg.svg" alt-text="Diagram of app security groups.":::
 
-Without app security groups, you'd need to create a separate rule for each VM or add a network security group to a subnet, then add all the VMs to that subnet.
+Without app security groups, you'd need to create a separate rule for each VM. Alternatively, you'd need to add a network security group to a subnet, and then add all the VMs to that subnet.
 
 The key benefit of app security groups is that it makes administration easier. You can easily add and remove network interfaces to an app security group as you deploy or redeploy app servers. You can also dynamically apply new rules to an app security group, which are then automatically applied to all the VMs in that app security group.
 

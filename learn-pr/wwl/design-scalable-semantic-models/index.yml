@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.design-scalable-semantic-models
+metadata:
+  title: Design scalable semantic models
+  description: "Good modeling practices lead to scalable semantic models that simplify analysis and reporting of large, complex data, enhancing Power BI reports for an optimal user experience."
+  ms.date: 10/15/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: fabric
+  ai-usage: ai-assisted
+title: Design scalable semantic models
+summary: "Good modeling practices lead to scalable semantic models that simplify analysis and reporting of large, complex data, enhancing Power BI reports for an optimal user experience."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Choose appropriate storage modes for your semantic model.
+    - Enable large semantic model storage format and incremental refresh.
+    - Create relationships between tables in a semantic model.
+    - Design dynamic elements to extend calculations in a semantic model.
+prerequisites: |
+  - Understanding of data modeling concepts.
+  - Experience with Microsoft Fabric and Power BI.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - advanced
+roles:
+  - data-analyst
+  - data-engineer
+products:
+  - fabric
+  - power-bi
+subjects:
+  - data-modeling
+units:
+- learn.design-scalable-semantic-models.introduction
+- learn.design-scalable-semantic-models.storage-modes
+- learn.design-scalable-semantic-models.large-data
+- learn.design-scalable-semantic-models.relationships
+- learn.design-scalable-semantic-models.dax-optimizations
+- learn.design-scalable-semantic-models.dynamic-elements
+- learn.design-scalable-semantic-models.exercise
+- learn.design-scalable-semantic-models.knowledge-check
+- learn.design-scalable-semantic-models.summary
+badge:
+  uid: learn.design-scalable-semantic-models.badge

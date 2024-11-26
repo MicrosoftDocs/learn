@@ -4,8 +4,8 @@ title: Introduction
 metadata:
   unitType: introduction
   title: "Introduction" 
-  description: "Learn how to create multi-page applications with .NET MAUI using Shell"
-  ms.date: 10/26/2023
+  description: "Learn how to create multi-page applications with .NET Multi-platform App UI (MAUI) using Shell"
+  ms.date: 11/22/2024
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl

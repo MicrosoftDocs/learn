@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Messaging on Azure Service Bus with Java Message Service
   description: Applications can use the Java Message Service (JMS) 2.0 API to communicate with Azure Service Bus.
-  ms.date: 02/07/2024
+  ms.date: 11/11/2024
   author: spelluru
   ms.author: spelluru
   ms.topic: unit

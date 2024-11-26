@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Choose the best Azure service to automate your business processes
   description: In this module, we discuss how to choose the appropriate Azure service to integrate and automate business processes.
-  ms.date: 10/03/2023
+  ms.date: 11/08/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: module-choose-best-product
