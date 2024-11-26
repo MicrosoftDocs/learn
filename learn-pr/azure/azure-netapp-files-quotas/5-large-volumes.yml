@@ -7,10 +7,10 @@ metadata:
   unitType: learning-module
   title: Requirements and considerations for large volumes in Azure NetApp Files
   description: Learn how large volumes can impact your workloads.    
-  ms.date: 11/15/2024
+  ms.date: 11/26/2024
   author: b-ahibbard
   ms.author: anfdocs
   ms.topic: unit
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/5-large-volumes.md)]

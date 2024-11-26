@@ -7,7 +7,7 @@ metadata:
   unitType: learning-module
   title: Understand default and individual user and group quotas in Azure NetApp Files
   description: Understand the different types of user and group quotas and combinations in Azure NetApp Files.    
-  ms.date: 11/15/2024
+  ms.date: 11/26/2024
   author: b-ahibbard
   ms.author: anfdocs
   ms.topic: unit

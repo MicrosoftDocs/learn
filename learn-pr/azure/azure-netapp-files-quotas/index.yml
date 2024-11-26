@@ -6,7 +6,7 @@ metadata:
   moduleType: introduction        
   title: Understand quotas in Azure NetApp Files 
   description: Learn how to manage and monitor capacity in Azure NetApp Files.   
-  ms.date: 09/06/2024
+  ms.date: 11/26/2024
   author: b-ahibbard   
   ms.author: anfdocs           
   ms.topic: module

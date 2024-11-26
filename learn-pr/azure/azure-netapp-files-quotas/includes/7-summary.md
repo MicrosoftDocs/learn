@@ -13,7 +13,7 @@ Here you also learned that you could restrict user capacity consumption on Azure
 - Individual user quota
 - Combining default and individual user and group quotas
 
-Finally, you learnt the requirements and considerations that apply to using large volumes in Azure NetApp Files.
+Finally, you learned about the requirements and considerations that apply to using large volumes in Azure NetApp Files.
 
 ## Learn more
 
