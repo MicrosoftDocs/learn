@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-netapp-files-essentials.knowledge-check
+uid: learn.azure.azure-netapp-files-data-protection.knowledge-check
 title: Knowledge check
 metadata:
   adobe-target: true
@@ -15,7 +15,7 @@ durationInMinutes: 5
 content: |
 quiz: 
   questions: 
-  - content: "which data protection option can replicate your Azure NetApp Files across designated Azure regions to protect your data from unforeseeable regional failures?"
+  - content: "Which data protection option can replicate your Azure NetApp Files data across designated Azure regions to protect your data from unforeseeable regional failures?"
     choices: 
     - content: Snapshots
       isCorrect: false
@@ -34,7 +34,7 @@ quiz:
       - content: Backup is priced based on the duration of the restore process.
         isCorrect: false
         explanation: "Incorrect. Backup cost is determined by the volume of data being transferred during the restore operation."
-      - content: Backup is included in the Azure NetApp Files subscription at no additional cost. 
+      - content: Backup is included in the Azure NetApp Files subscription at no extra cost. 
         isCorrect: false
         explanation: "Incorrect. Backup cost is determined by the volume of data being transferred during the restore operation."
       - content:  Backup is priced per restore operation during the billing cycle.

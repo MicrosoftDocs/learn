@@ -13,7 +13,7 @@ Before using an availability zone, understand the following concepts:
 
 Azure NetApp Files' availability zone volume placement feature lets you deploy each volume in the specific availability zone of your choice, in alignment with Azure compute and other services in the same zone. 
 
-:::image type="content" alt-text="Diagram of three availability zones in one Azure region." source="./media/use-availability-zones/availability-zone-diagram.png":::
+:::image type="content" alt-text="Diagram of three availability zones in one Azure region." source="../media/availability-zone-diagram.png":::
 
 In the diagram, all virtual machines (VMs) within the region in (peered) virtual networks can access all Azure NetApp Files resources (blue arrows). VMs accessing Azure NetApp Files volumes in the same zone (green arrows) share the availability zone failure domain. Note there's no replication between the different volumes at the platform level. 
 
@@ -23,10 +23,10 @@ The cross-zone replication capability provides data protection between volumes i
 
 ### Cost model for cross-zone replication 
 
-Replicated volumes are hosted on a capacity pool. As such, the cost for cross-zone replication is based on the provisioned capacity pool size and tier as normal. There is no additional cost for data replication. 
+Replicated volumes are hosted on a capacity pool. As such, the cost for cross-zone replication is based on the provisioned capacity pool size and tier as normal. There's no additional cost for data replication. 
 
 ### Azure Application Consistent Snapshot tool
 
-Apart from the above explained protection and disaster recovery features, Azure NetApp Files uses Azure Application Consistent Snapshot tool (AzAcSnap) that enables data protection for third-party databases. 
+Apart from the aforementioned protection and disaster recovery features, Azure NetApp Files uses Azure Application Consistent Snapshot tool (AzAcSnap) that enables data protection for third-party databases. 
 
 For more information about AzAcSnap, see [What is the Azure Application Consistent Snapshot tool?](/azure/azure-netapp-files/azacsnap-introduction)

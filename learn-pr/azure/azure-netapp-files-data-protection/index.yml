@@ -37,7 +37,7 @@ subjects:
 units:
 - learn.azure.azure-netapp-files-data-protection.introduction
 - learn.azure.azure-netapp-files-data-protection.snapshots
-- learn.azure.azure-netapp-files-data-protection.backup
+- learn.azure.azure-netapp-files-data-protection.backups
 - learn.azure.azure-netapp-files-data-protection.cross-region
 - learn.azure.azure-netapp-files-data-protection.cross-zone
 - learn.azure.azure-netapp-files-data-protection.knowledge-check
