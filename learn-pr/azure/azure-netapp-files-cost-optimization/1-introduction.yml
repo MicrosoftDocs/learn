@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction 
-  description: Learn how billing works in Azure NetApp Files. 
-  ms.date: 11/15/2024
+  description: Learn how billing is calculated in Azure NetApp Files. 
+  ms.date: 11/26/2024
   author: b-ahibbard
   ms.author: anfdocs
   ms.topic: unit
