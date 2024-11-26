@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-azure-ai-studio.when-to-use-ai-studio
-title: When to use Azure AI Studio
+title: When to use Azure AI Foundry
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: When to use Azure AI Studio
-  description: Understand when to use Azure AI Studio.
+  title: When to use Azure AI Foundry
+  description: Understand when to use Azure AI Foundry.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 05/08/2024
+  ms.date: 11/25/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
