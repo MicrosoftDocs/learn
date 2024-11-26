@@ -14,7 +14,7 @@ Function apps can use one of the following hosting plans:
 
 When using the Azure serverless application platform, choose the **Consumption plan**. This plan provides automatic scaling and bills you only when your functions are running. The Consumption plan comes with a configurable timeout period for executing a function. By default, it's five (5) minutes, but can be configured to have a timeout as long as 10 minutes.
 
-The **Premium plan** also dynamically scales your resources to meet demand, but you can specify a minimum number of virtual machine (VM) instances to keep warm and reduce so called "cold starts." The Premium plan also lets your functions connect to and run inside virtual networks. Like the Dedicated plan, the default timeout for apps in a Premium plan is 30 minutes, but they can essentially run for an unlimited time (depending on server availability). 
+The **Premium plan** also dynamically scales your resources to meet demand, but you can specify a minimum number of virtual machine (VM) instances to keep warm and reduce so called "cold starts." The Premium plan also lets your functions connect to and run inside virtual networks. Like the Dedicated plan, the default timeout for apps in a Premium plan is 30 minutes, but they can essentially run for an unlimited time (depending on server availability).
 
 The **Dedicated (App service) plan** enables you to avoid timeout periods by having your function run continuously on a VM that you define. An App service plan is technically not a serverless plan, because you're responsible for managing the app resources the function runs on. However, it might be a better choice when you already have excess App Service resources available on which to also run your functions.
 

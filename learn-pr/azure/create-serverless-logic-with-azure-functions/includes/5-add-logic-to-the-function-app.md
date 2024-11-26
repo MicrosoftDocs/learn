@@ -404,7 +404,7 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
 
 ::: zone-end
 
-2. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane (if it isn't already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
+2. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the flyout of the pane (if it isn't already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
 
    :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::  
 
