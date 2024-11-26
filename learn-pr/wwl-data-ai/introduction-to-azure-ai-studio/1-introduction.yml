@@ -5,10 +5,10 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Introduction
-  description: Explore scenarios for Azure AI Studio.
+  description: Explore scenarios for Azure AI Foundry portal.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 05/08/2024
+  ms.date: 11/25/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

@@ -1,4 +1,4 @@
-In this module, you've learned how to:
+In this module, you learned how to:
 
 - Create an Azure Machine Learning workspace.
 - Identify resources and assets.

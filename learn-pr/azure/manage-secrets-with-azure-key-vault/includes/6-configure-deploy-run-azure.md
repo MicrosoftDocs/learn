@@ -105,8 +105,8 @@ az keyvault set-policy \
     dotnet publish -o pub
     zip -j site.zip pub/*
 
-    az webapp deployment source config-zip \
-        --src site.zip \
+    az webapp deploy \
+        --src-path site.zip \
         --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name <your-unique-app-name>
     ```
@@ -123,8 +123,8 @@ az keyvault set-policy \
     ```azurecli
     zip site.zip * -x node_modules/
 
-    az webapp deployment source config-zip \
-        --src site.zip \
+    az webapp deploy \
+        --src-path site.zip \
         --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name <your-unique-app-name>
     ```

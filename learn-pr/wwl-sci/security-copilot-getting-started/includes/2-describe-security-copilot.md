@@ -12,10 +12,13 @@ Microsoft Security Copilot is an AI-powered, cloud-based security analysis tool 
 
 Security Copilot focuses on making the following highlighted use cases easy to use.
 
-- Incident summarization - Gain context for incidents and improve communication across your organization by leveraging generative AI to swiftly distill complex security alerts into concise, actionable summaries, which then enable quicker response times and streamlined decision-making.
-- Impact analysis - Utilize AI-driven analytics to assess the potential impact of security incidents, offering insights into affected systems and data to prioritize response efforts effectively.
-- Reverse engineering of scripts - Eliminate the need to manually reverse engineer malware and enable every analyst to understand the actions executed by attackers. Analyze complex command line scripts and translate them into natural language with clear explanations of actions. Efficiently extract and link indicators found in the script to their respective entities in your environment.
-- Guided response - Receive actionable step-by-step guidance for incident response, including directions for triage, investigation, containment, and remediation. Relevant deep links to recommended actions allow for quicker response.
+- Investigate and remediate security threats - gain context for incidents to quickly triage complex security alerts into actionable summaries and remediate quicker with step-by-step response guidance
+- Build KQL queries or analyze suspicious scripts - eliminate the need to manually write query-language scripts or reverse engineer malware scripts with natural language translation to enable every team member to execute technical tasks
+- Understand risks and manage security posture of the organization - get a broad picture of your environment with prioritized risks to uncover opportunities to improve posture more easily
+- Troubleshoot IT issues faster - synthesize relevant information rapidly and receive actionable insights to identify and resolve IT issues quickly
+- Define and manage security policies - define a new policy, cross-reference it with others for conflicts, and summarize existing policies to manage complex organizational context quickly and easily
+- Configure secure lifecycle workflows - build groups and set access parameters with step-by-step guidance to ensure a seamless configuration to prevent security vulnerabilities
+- Develop reports for stakeholders - get a clear and concise report that summarizes the context and environment, open issues, and protective measures prepared for the tone and language of the report’s audience
 
 These use cases represent just a few of the capabilities that Copilot delivers and that helps make analysts more productive and also helps up-level them.
 
