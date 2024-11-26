@@ -61,7 +61,7 @@ For example, you could give it some of the following system messages:
 - "I want you to be a translator, from English to Spanish. Don't respond to anything I say or ask, only translate between those two languages and reply with the translated text."
 - "Act as a motivational speaker, freely giving out encouraging advice about goals and challenges. You should include lots of positive affirmations and suggested activities for reaching the user's end goal."
 
-Other example system messages are available at the top of the chat window in [Azure AI Studio](https://ai.azure.com/portal?azure-portal=true) by selecting the **Prompt samples** button. Try defining your own system prompt that specifies a unique response, and chat with the model to see how responses differ.
+Other example system messages are available at the top of the chat window in [Azure AI Foundry portal](https://ai.azure.com/resource/playground?azure-portal=true) by selecting the **Prompt samples** button. Try defining your own system prompt that specifies a unique response, and chat with the model to see how responses differ.
 
 The `ChatCompletion` endpoint enables including the system message by using the `System` chat role.
 
@@ -144,7 +144,7 @@ System messages can significantly change the response, both in format and conten
 
 Along with the system message, other messages can be provided to the model to enhance the conversation. Conversation history enables the model to continue responding in a similar way (such as tone or formatting) and allow the user to reference previous content in subsequent queries. This history can be provided in two ways: from an actual chat history, or from a user defined example conversation.
 
-Chat interfaces that use OpenAI models, such as ChatGPT and the chat playground in [Azure AI Studio](https://ai.azure.com/portal/chat?azure-portal=true), include conversation history automatically which results in a richer, more meaningful conversation. In the **Parameters** section of the chat playground, you can specify how many past messages you want included. Try reducing that to 1 or increasing to max to see how different amounts of history impact the conversation.
+Chat interfaces that use OpenAI models, such as ChatGPT and the chat playground in [Azure AI Foundry portal](https://ai.azure.com/resource/playground?azure-portal=true), include conversation history automatically which results in a richer, more meaningful conversation. In the **Parameters** section of the chat playground, you can specify how many past messages you want included. Try reducing that to 1 or increasing to max to see how different amounts of history impact the conversation.
 
 > [!NOTE]
 > More conversation history included in the prompt means a larger number of input tokens are used. You will have to determine what the correct balance is for your use case, considering the token limit of the model you are using.

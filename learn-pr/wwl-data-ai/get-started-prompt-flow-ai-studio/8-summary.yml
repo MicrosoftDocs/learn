@@ -5,10 +5,10 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Summary
-  description: Summary of module on LLM apps and how to get started with Azure AI Studio's prompt flow.
+  description: Summary of module on LLM apps and how to get started with Azure AI Foundry's prompt flow.
   author: madiepev
   ms.author: madiepev
-  ms.date: 01/25/2024
+  ms.date: 11/26/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
