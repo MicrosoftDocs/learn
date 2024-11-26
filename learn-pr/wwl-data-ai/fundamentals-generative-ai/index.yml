@@ -7,7 +7,7 @@ metadata:
   description: Learn about how large language models form the foundation of generative AI applications and understand how to work with Microsoft Copilot and agents.
   author: sherzyang
   ms.author: sheryang
-  ms.date: 5/15/2024
+  ms.date: 11/26/2024
   ms.service: azure-ai-openai
   ms.topic: module-intro-to-product
   ms.collection:
