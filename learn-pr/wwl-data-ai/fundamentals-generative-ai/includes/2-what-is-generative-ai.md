@@ -1,8 +1,8 @@
 Artificial Intelligence (AI) imitates human behavior by using machine learning to interact with the environment and execute tasks without explicit directions on what to output.
 
-*Generative* AI describes a category of capabilities within AI that create original content. People typically interact with generative AI that has been built into chat applications. One popular example of such an application is [Microsoft Copilot](https://copilot.microsoft.com), a chatbot companion to browse the web more effectively.
+*Generative* AI describes a category of capabilities within AI that create original content. People typically interact with generative AI that has been built into chat applications. One popular example of such an application is [Microsoft Copilot](https://copilot.microsoft.com), an AI-powered productivity tool designed to enhance your work experience by providing real-time intelligence and assistance.
 
-Generative AI applications take in natural language input, and return appropriate responses in a variety of formats such as natural language, images, or code. 
+Generative AI applications take in natural language input, and return appropriate responses in a variety of formats such as natural language, images, code, and more. 
 
 ## Natural language generation
 
