@@ -7,26 +7,14 @@ Since you’ve deployed the Spring Pet Clinic application with the default H2 in
 
 These environment variables will be used to create necessary database connections in this section.
 
-# [Bash](#tab/bash)
-
 ```bash
 export POSTGRESQLSERVER="petclinic-server"
 export DATABASE="petclinic"
 ```
 
-# [Azure PowerShell](#tab/azure-powershell)
-
-```shell
-$POSTGRESQLSERVER = "petclinic-server"
-$DATABASE = "petclinic"
-
-```
-
 ### Update `spring.profiles.active` for PostgreSQL
 
 Firstly let's update the environment variables of the deployed container apps to set the database as PostgreSql
-
-# [Bash](#tab/bash)
 
 ```bash
 az containerapp update \
@@ -35,22 +23,9 @@ az containerapp update \
    --set-env-vars "spring.profiles.active"="postgres"
 ```
 
-# [Azure PowerShell](#tab/azure-powershell)
-
-```shell
-Update-AzContainerApp `
-    -Name $APP_NAME `
-    -ResourceGroupName $RESOURCE_GROUP `
-    -EnvironmentVariables @{"spring.profiles.active" = "postgres"}
-```
-
----
-
 ### Create a new Database
 
 Now, let's create a PostgreSQL flexible server.
-
-# [Bash](#tab/bash)
 
 ```bash
 az postgres flexible-server create \
@@ -58,19 +33,10 @@ az postgres flexible-server create \
    --resource-group $RESOURCE_GROUP
 ```
 
-# [Azure PowerShell](#tab/azure-powershell)
-
-```shell
-
-```
-
----
-
 You may find the auto-generated admin username and admin password in the output, save in a secure place if you want to connect and config later on.
 
 We will create a new database on the PostgreSQL flexible server instance.
 
-# [Bash](#tab/bash)
 
 ```bash
 az postgres flexible-server db create \
@@ -78,13 +44,6 @@ az postgres flexible-server db create \
    --resource-grou $RESOURCE_GROUP \
    --server-name $POSTGRESQLSERVER
 ```
-
-# [Azure PowerShell](#tab/azure-powershell)
-
-```shell
-```
-
----
 
 You may check [Create an Azure Database for PostgreSQL - Flexible Server instance using Azure CLI](https://learn.microsoft.com/azure/postgresql/flexible-server/quickstart-create-server-cli) for more details.
 
