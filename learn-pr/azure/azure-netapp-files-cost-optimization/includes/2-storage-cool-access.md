@@ -4,7 +4,7 @@ Azure NetApp Files supports three service levels that can be configured at capac
 
 Cold means untouched per the Coolness period. Coolness period is user configurable: 2-183 days
 
-Cool access saves costs by by transparently moving cold data to a lower cost Azure storage. The feature retains transparent access to data for all users. Users don't see differences in the way data is presented and continue to have access to all files and folders transparently. 
+Cool access saves costs by transparently moving cold data to a lower cost Azure storage. The feature retains transparent access to data for all users. Users don't see differences in the way data is presented and continue to have access to all files and folders transparently. 
 
 The following diagram illustrates an application with a volume enabled for cool access.
 

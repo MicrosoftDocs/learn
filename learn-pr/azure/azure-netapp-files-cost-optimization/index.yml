@@ -19,7 +19,7 @@ abstract: |
   - Describe how cool access works in Azure NetApp Files and the effects of cool access on data.
   - Save storage cost with reserved capacity 
 prerequisites: |
-  - Basic understanding of Azure NetApp Files . 
+  - Basic understanding of Azure NetApp Files. 
 iconUrl: /training/achievements/introduction-to-azure-netapp-files.svg
 levels:
   - intermediate
