@@ -32,7 +32,7 @@ Azure AI services are designed to be used in different development environments.
 
 Azure AI services are cloud-based and accessed through an Azure resource. This means that they're managed in the same way as other Azure services, such as platform as a service (PaaS), infrastructure as a service (IaaS), or a managed database service. The Azure platform and Resource Manager provide a consistent framework for all your Azure services, from creating or deleting resources, to availability and billing. 
 
-Trust is at the core of all of Microsoft's offerings, and security is at the center of Azure AI services. From cyberthreat prevention, to data privacy, to compliance, and to safe digital experiences, Azure AI services provides enterprise-grade security. You can learn more about Azure AI services' security features [here](/azure/ai-services/security-features).
+Trust is at the core of all of Microsoft's offerings, and security is at the center of Azure AI services. From cyberthreat prevention, to data privacy, to compliance, to safe digital experiences, Azure AI services provides enterprise-grade security. You can learn more about Azure AI services' security features [here](/azure/ai-services/security-features).
 
 > [!NOTE]
 > In some situations, AI has the potential to be used in ways that might compromise an individual's privacy or rights. Microsoft has [six Responsible AI principles](/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai?azure-portal=true) to help ensure AI services are ethical and fair. Because of this, certain Azure AI services are restricted to ensure they're used responsibly.
