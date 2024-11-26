@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Scale and configure a vCore-based Azure Cosmos DB for MongoDB cluster
   description: "Scale and configure a vCore-based Azure Cosmos DB for MongoDB cluster."
-  ms.date: 04/12/2024
+  ms.date: 11/24/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

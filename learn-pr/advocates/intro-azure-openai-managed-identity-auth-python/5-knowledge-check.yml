@@ -34,7 +34,7 @@ quiz:
         - content: "Cognitive Services OpenAI Contributor"
           isCorrect: true
           explanation: "This role includes permissions to create custom fine-tuned models, upload datasets, and manage model deployments."
-    - content: "In the provided code example for keyless authentication to Azure OpenAI for Azure-hosted environments using Python, what is the purpose of the openai.ChatCompletion.create method?"
+    - content: "In the provided code example for keyless authentication to Azure OpenAI for Azure-hosted environments using Python, what is the purpose of the chat.completion.create method?"
       choices:
         - content: "Authenticate the user"
           isCorrect: false

@@ -24,7 +24,7 @@ The **Notebooks** page in the studio allows you to edit and run Jupyter notebook
 
 All files you clone or create in the notebooks section are stored in the file share of the Azure Storage account created with the workspace.
 
-To run notebooks, you'll use a compute instance as they're ideal for development and work similar to a virtual machine.
+To run notebooks, you use a compute instance as they're ideal for development and work similar to a virtual machine.
 
 You can also choose to edit and run notebooks in Visual Studio Code, while still using a compute instance to run the notebooks.
 
@@ -32,7 +32,7 @@ You can also choose to edit and run notebooks in Visual Studio Code, while still
 
 When you want to prepare your code to be production ready, it's better to use scripts. You can easily automate the execution of script to automate any machine learning workload.
 
-You can run a script as a **job** in Azure Machine Learning. When you submit a job to the workspace, all inputs and outputs will be stored in the workspace.
+You can run a script as a **job** in Azure Machine Learning. When you submit a job to the workspace, all inputs and outputs are stored in the workspace.
 
 :::image type="content" source="../media/job-overview.png" alt-text="Screenshot of the overview of a command job showing the properties, inputs, and outputs.":::
 

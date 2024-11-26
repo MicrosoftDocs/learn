@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.azure-netapp-files.essentials 
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand Azure NetApp Files essentials 
+  description: Learn about the key parts of Azure NetApp Files, including storage terminology and monitoring strategies, to help you optimize your setup and deployment processes.  
+  ms.date: 11/18/2024
+  author: PageWriter-MSFT
+  ms.author: b-ahibbard
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Understand Azure NetApp Files essentials 
+summary: |
+  Develop essential knowledge about Azure NetApp Files. Learn everything you need to do before you create a volume in Azure NetApp Files. We take a deep dive into the storage hierarchy, capacity pools, and volumes in Azure NetApp Files. You'll understand the use of the NAS share and file permissions with Azure NetApp Files. You also learn how to manage and monitor your Azure NetApp Files resources in Azure NetApp Files.   
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the service levels for Azure NetApp Files
+  - Classify the various network planning elements to design a network architecture for Azure NetApp Files
+  - Understand how to monitor Azure NetApp Files
+prerequisites: |
+  - Basic understanding of Azure NetApp Files. 
+  - Basic knowledge of networked file system protocols. Particularly, Server Message Block (SMB) and Network File System (NFS).
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- database-administrator
+- solution-architect
+products:
+- azure-netapp-files
+subjects:
+- cloud-computing
+- storage
+- networking
+units:
+- learn.azure.azure-netapp-files-essentials.introduction
+- learn.azure.azure-netapp-files-essentials.service-levels
+- learn.azure.azure-netapp-files-essentials.limits
+- learn.azure.azure-netapp-files-essentials.network-planning
+- learn.azure.azure-netapp-files-essentials.monitor
+- learn.azure.azure-netapp-files-essentials.metrics
+- learn.azure.azure-netapp-files-essentials.knowledge-check
+- learn.azure.azure-netapp-files-essentials.summary
+badge:
+  uid: learn.azure-netapp-files-essentials.badge

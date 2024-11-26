@@ -15,6 +15,6 @@ Cofounder matching sites:
 
 - [CoFoundersLab](https://cofounderslab.com/?azure-portal=true)
 - [Techstars Startup Weekend](https://www.techstars.com/communities/startup-weekend?azure-portal=true)
-- [Stealth](https://stealth.li/?azure-portal=true)
+- [Stealth](https://www.stealth.com/)
 - [FoundersNation](https://founders-nation.com/?azure-portal=true)
 - [Y Combinator cofounder matching](https://www.ycombinator.com/cofounder-matching?azure-portal=true)
