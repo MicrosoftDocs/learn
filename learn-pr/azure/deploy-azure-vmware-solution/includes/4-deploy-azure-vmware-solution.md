@@ -87,7 +87,7 @@ Follow these steps:
 
     | Azure resource  | Description  |
     |---------|---------|
-    | Virtual network | If you're building a brand new virtual network with a GatewaySubnet, the virtual network will deploy first. If you're using an existing virtual network, the build process will move to the next resource that doesn't yet exist. |
+    | Virtual network | If you're building a new virtual network with a GatewaySubnet, the virtual network will deploy first. If you're using an existing virtual network, the build process will move to the next resource that doesn't yet exist. |
     | Virtual network gateway | This resource provides a way for the Azure VMware Solution ExpressRoute circuit to connect to an Azure virtual network. |
     | Virtual network gateway public IP | This resource provides a public IP used to establish a peering between the Azure virtual network and the Azure VMware Solution ExpressRoute circuit. |
     | ExpressRoute authorizations | There are two authorizations that get created: one for inbound and one for outbound connectivity, both to and from the Azure VMware Solution private cloud. |
