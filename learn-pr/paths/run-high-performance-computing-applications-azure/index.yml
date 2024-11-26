@@ -40,6 +40,7 @@ modules:
 - learn.azure.azure-cyclecloud-high-performance-computing
 - learn.azure.customize-clusters-azure-cyclecloud
 - learn.hpc-storage-considerations
+- learn.azure.deploy-azure-managed-lustre-file-system
 - learn.azure.choose-service-level-azure-netapp-files-hpc-applications
 - learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices
 - learn.azure.optimize-hpc-application-azure-virtual-machines-series
