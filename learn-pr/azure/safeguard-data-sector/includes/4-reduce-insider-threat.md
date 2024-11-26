@@ -1,4 +1,4 @@
-Insider threat is usually characterized as potential for providing back-door connections and cloud-service provider (CSP) privileged-user access to customer's systems and data. Customers expect assurances around any potential customer data access by Microsoft personal, and Azure has strict controls in place to prevent any unauthorized access.
+Insider threat is often characterized as potential for providing back-door connections and cloud-service provider (CSP) privileged-user access to customer's systems and data. Customers expect assurances around any potential customer data access by Microsoft personal, and Azure has strict controls in place to prevent any unauthorized access.
 
 ## Data for customer support and troubleshooting
 
@@ -23,13 +23,13 @@ Microsoft takes strong measures to protect customer data from inappropriate acce
 
 * No access to customer data, by default.
 * No user or administrator accounts on customer virtual machines (VMs).
-* Grant the least privilege that's required to complete task, audit, and log access requests.
+* Grant the least privilege required to complete task, audit, and log access requests.
 
 Microsoft engineers can be granted access to customer data using temporary credentials via **Just-in-Time (JIT)** access. There must be an incident logged in the Azure Incident Management system that describes the reason for access, approval record, what data was accessed, and so on. This approach ensures that there's appropriate oversight for all access to customer data and that all JIT actions (consent and access) are logged for audit.
 
-The Azure [SOC 2 Type 2 attestation report](https://aka.ms/azuresoc2auditreport), produced by an independent third-party auditing firm, provides evidence that procedures are created for granting temporary access for Azure personnel to customer data and applications upon appropriate approval for customer support or incident handling purposes.
+An independent third-party auditing firm produces the Azure [SOC 2 Type 2 attestation report](https://aka.ms/azuresoc2auditreport). This report provides evidence that procedures are created for granting temporary access for Azure personnel to customer data and applications upon appropriate approval for customer support or incident handling purposes.
 
-JIT access works with multifactor authentication that requires Microsoft engineers to use a smartcard to confirm their identity. All access to production systems is performed using Secure Admin Workstations (SAWs) that are consistent with published guidance on [securing privileged access](/security/compass/overview). Use of SAWs for access to production systems is required by Microsoft policy, and compliance with this policy is closely monitored. These workstations use a fixed image with all software fully managed. Only select activities are allowed, and users can't accidentally circumvent the SAW design because they don't have admin privileges on these machines. Access is permitted only with a smartcard, and access to each SAW is limited to a specific set of users.
+JIT access works with multifactor authentication that requires Microsoft engineers to use a smartcard to confirm their identity. All access to production systems is performed using Secure Admin Workstations (SAWs) that are consistent with published guidance on [securing privileged access](/security/compass/overview). Microsoft policy requires the use of SAWs for access to production systems, and compliance with this policy is closely monitored. These workstations use a fixed image with all software fully managed. Only select activities are allowed, and users can't accidentally circumvent the SAW design because they don't have admin privileges on these machines. Access is permitted only with a smartcard, and access to each SAW is limited to a specific set of users.
 
 ## Customer Lockbox
 
