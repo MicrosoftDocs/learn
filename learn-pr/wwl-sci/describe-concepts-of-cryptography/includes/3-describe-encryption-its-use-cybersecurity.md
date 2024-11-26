@@ -65,7 +65,7 @@ Given the nature of asymmetric encryption, even if you know the public key, it's
 
 In this two-minute video, we'll demonstrate how symmetric and asymmetric encryption work, and how they protect your documents from being read by unauthorized people.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d4644a51-db6b-4849-a60d-92f5dc8f260e]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0d48af34-ed90-45c6-800e-53fa54cda6eb]
 
 ### Different types of encryptions
 

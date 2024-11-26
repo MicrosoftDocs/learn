@@ -2,9 +2,9 @@ After you deploy a model to an endpoint, you can interact with the model to expl
 
 ## Chat with a model in the playground
 
-You can use your preferred coding language to make an API call to your model's endpoint, or you can chat with the model directly in the Azure AI Studio playground. The chat playground is a quick and easy way to experiment and improve your model performance.
+You can use your preferred coding language to make an API call to your model's endpoint, or you can chat with the model directly in the Azure AI Foundry portal playground. The chat playground is a quick and easy way to experiment and improve your model performance.
 
-:::image type="content" source="../media/chat-playground.png" alt-text="Screenshot showing the chat playground in the Azure AI Studio.":::
+:::image type="content" source="../media/chat-playground.png" alt-text="Screenshot showing the chat playground in the Azure AI Foundry.":::
 
 The quality of the questions you send to the language model, directly influences the quality of the responses you get back. You can carefully construct your question, or **prompt**, to receive better and more interesting responses. The process of designing and optimizing prompts to improve the model's performance is also known as **prompt engineering**. When an end-user provides relevant, specific, unambiguous, and well-structured prompts, the model can better understand the context and generate more accurate responses.
 
