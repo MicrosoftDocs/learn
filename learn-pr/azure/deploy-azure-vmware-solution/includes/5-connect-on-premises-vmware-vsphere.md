@@ -1,29 +1,4 @@
-After the Azure VMware Solution is deployed, network connectivity is the next step for a successful deployment. The Azure VMware Solution solution deploys onto dedicated, bare-metal servers. These servers are given to a single customer. The bare-metal servers need to connect to the Azure network backbone so customers use Azure resources. The Azure VMware Solution-provided Azure ExpressRoute circuit helps the environment talk to Azure services. To reach the on-premises environment, a customer-provided ExpressRoute circuit is used, along with an ExpressRoute Global Reach configuration.
-
-    | Field | Value |
-    | ----------- | -------- |
-    | **Subscription** | Select the same subscription where Azure VMware Solution is deployed. |
-    | **Resource group** | Select an existing resource group or create a new one. |
-    | **Name** | Specify a name for the new Bastion resource. |
-    | **Region** | Select the same region where Azure VMware Solution is deployed. |
-    | **Tier** | Select **Basic**. This provides the functionality we need for this example. You can always upgrade Bastion to **Standard** to have more instance counts. |
-    | **Instance Count** | Defaults to 2 when **Basic** is chosen. |
-    | **Virtual network** | Select the virtual network that was created when you deployed Azure VMware Solution. |
-    | **Subnet** | Azure Bastion requires a dedicated subnet. For the virtual network created during the Azure VMware Solution deployment, select **Manage subnet configuration** to create the dedicated subnet. Select **+Subnet**, and then create a subnet with the name **AzureBastionSubnet** and at /27 or higher. |
-    | **Public IP address** | The public IP allows Remote and SSH over port 443 to Azure Bastion. Create a new public IP and place the resource in the same region as both Azure VMware Solution and Azure Bastion. This new public IP is separate from the Azure VMware Solution deployment. |
-    | **Public IP address name** | Provide a name for the public IP-address resource. |
-    | **Public IP address SKU** | By default, this setting is prepopulated to **Standard** because Azure Bastion supports only the Standard Public IP SKU. |
-    | **Assignment** | By default, this setting is pre-populated to **Static**. The best practice is to leave assignment at static. |
-
-## Create an Azure VM to use as a jump host
-
-After Azure VMware Solution and the Azure Bastion resource are deployed, create a jump host to access to the private cloud. The jump host must be located in the same virtual network and subscription as Azure VMware Solution and the Azure Bastion resource. The jump host can be either a desktop or server version of Windows. The jump host will be deployed behind the Azure Bastion resource. You'll use Azure Bastion to access to the jump host via Remote Desktop in the Azure portal over Transport Layer Security (TLS).
-
-## Use Azure Bastion and sign in to vCenter and NSX-T Manager
-
-Use Azure Bastion to sign in to the jump-host VM. Then, open a web browser, go to both vCenter and NSX-T Manager, and sign in to each. The Azure portal will provide the vCenter IP address, the NSX-T Manager console's IP addresses, and credentials used for deployment. Accessing the jump host through Azure Bastion will allow you to configure NSX-T and vCenter.
-
-:::image type="content" source="../media/5-login-credentials-vcenter-nsxt.png" alt-text="Screenshot of the Azure portal page, showing where login credentials are displayed after Azure VMware Solution has been deployed.":::
+After the Azure VMware Solution is deployed, network connectivity is the next step for a successful deployment. The Azure VMware Solution private cloud deploys onto dedicated, bare-metal servers. These servers are assigned to a single customer. The bare-metal servers need to connect to the Azure network backbone so customers can use Azure resources. The Azure VMware Solution-provided Azure ExpressRoute circuit helps the environment talk to Azure services. To reach the on-premises environment, a customer-provided ExpressRoute circuit is used, along with an ExpressRoute Global Reach configuration.
 
 ## Establish an ExpressRoute Global Reach connection to the on-premises VMware environment
 
