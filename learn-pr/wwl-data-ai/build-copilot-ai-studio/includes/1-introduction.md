@@ -20,5 +20,5 @@ In contrast, you can use a data source to *ground* the prompt with some relevant
 
 The data source can be any repository of relevant data. For example, you could use data from a product catalog database to ground the prompt "Which product should I use to do *X*?" so that the response includes relevant details of products that exist in the catalog.
 
-In this module, you explore how to create your own chat-based language model application that is grounded, by building a copilot with your own data.
+In this module, you explore how to create your own chat-based language model application that is grounded, by building an agent with your own data.
 

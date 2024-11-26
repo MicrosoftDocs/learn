@@ -2,7 +2,7 @@ To create a Large Language Model (LLM) application with prompt flow, you need to
 
 ## Understand a flow
 
-Prompt flow is a feature within the Azure AI Studio that allows you to author **flows**. Flows are executable workflows often consist of three parts:
+Prompt flow is a feature within Azure AI Foundry that allows you to author **flows**. Flows are executable workflows often consist of three parts:
 
 1. **Inputs**: Represent data passed into the flow. Can be different data types like strings, integers, or boolean.
 1. **Nodes**: Represent *tools* that perform data processing, task execution, or algorithmic operations.

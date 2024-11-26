@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-copilot-ai-studio.build-copilot
-title: Build a copilot with prompt flow
+title: Build an agent with prompt flow
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Build a copilot with prompt flow
-  description: Learn about build a copilot with prompt flow.
+  title: Build an agent with prompt flow
+  description: Learn about build an agent with prompt flow.
   author: madiepev
   ms.author: madiepev
-  ms.date: 02/21/2024
+  ms.date: 11/26/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
