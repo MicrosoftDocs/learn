@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This knowledge check assesses your understanding of contributing to Microsoft Learn documentation in your browser.
-  ms.date: 8/1/2023
+  ms.date: 11/25/2024
   author: sgaspari815
-  ms.author: v-sgaspari
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 3
 content: |
@@ -23,11 +23,11 @@ quiz:
     - content: "They must be a Microsoft employee."
       isCorrect: false
       explanation: "Contributors *can* be Microsoft employees or vendors, but anyone can contribute to the open-source repositories on the platform."
-  - content: "A contributor has just finished fixing a typo in an open-source documentation article. What is the next step in the contribution process?"
+  - content: "A contributor has just finished fixing a typo in an open-source documentation article. What's the next step in the contribution process?"
     choices:
     - content: "The contributor needs to merge the edits to the live webpage."
       isCorrect: false
-      explanation: "Contributors can’t merge changes directly to the Learn website. They should use the GitHub workflow of creating a PR, submitting it for review, and signing off when issues are resolved."
+      explanation: "Contributors can't merge changes directly to the Learn website. They should use the GitHub workflow of creating a PR, submitting it for review, and signing off when issues are resolved."
     - content: "The contributor needs to email the file URL to the article author."
       isCorrect: false
       explanation: "Contributors can make the changes themselves by opening a pull request (PR). Authors receive a notification to review contributor changes once a PR has been created."
@@ -41,7 +41,7 @@ quiz:
       explanation: "If the contributor closes the PR before adding the comment #sign-off, their changes won't be merged."
     - content: "The contributor must resolve any validation issues and comment #sign-off."
       isCorrect: true
-      explanation: "The contributor should address any issues or warnings that the PR validation processes flagged. Then, the contributor must type “#sign-off” to submit their PR to the PR review queue. If it passes review, the changes will be merged in the next publishing cycle."
+      explanation: "The contributor should address any issues or warnings that the PR validation processes flagged. Then, the contributor must type *#sign-off* to submit their PR to the PR review queue. If it passes review, the changes will be merged in the next publishing cycle."
     - content: "The contributor and PR reviewer must meet to review the changes."
       isCorrect: false
-      explanation: "Discussions between PR reviewers and contributors often happen in the Conversation tab of the PR. A meeting isn’t necessary for publishing."
+      explanation: "Discussions between PR reviewers and contributors often happen in the Conversation tab of the PR. A meeting isn't necessary for publishing."
