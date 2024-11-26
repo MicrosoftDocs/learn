@@ -26,6 +26,8 @@ az login
 Connect-AzAccount
 ```
 
+---
+
 To ensure you're running the latest version of the CLI, run the upgrade command.
 
 # [Bash](#tab/bash)
@@ -39,6 +41,8 @@ az upgrade
 ```shell
 Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
 ```
+
+---
 
 Next, install or update the Azure Container Apps extension for the CLI.
 
@@ -57,6 +61,8 @@ Install-Module -Name Az.App
 Update-Module -Name Az.App
 ```
 
+---
+
 Now that the current extension or module is installed, register the `Microsoft.App` and `Microsoft.OperationalInsights` namespaces.
 
 # [Bash](#tab/bash)
@@ -72,6 +78,8 @@ az provider register --namespace Microsoft.OperationalInsights
 Register-AzResourceProvider -ProviderNamespace Microsoft.App
 Register-AzResourceProvider -ProviderNamespace Microsoft.OperationalInsights
 ```
+
+---
 
 ## Create environment variables
 
@@ -94,6 +102,8 @@ $LOCATION = "canadacentral"
 $ENVIRONMENT = "env-petclinic-containerapps"
 $APP_NAME = "petclinic"
 ```
+
+---
 
 ## Locate the sample code
 
@@ -132,6 +142,8 @@ az containerapp up `
     --environment $ENVIRONMENT `
     --source ..
 ```
+
+---
 
 ## Verify deployment
 Once your deployment is done, you should be able to see a success message with the project endpoint printed in the console. You may open the url to verify your project deployed on azure.

@@ -6,9 +6,19 @@ The Spring PetClinic is a simple web application that manages a list of veterina
 
 To get started with PetClinic, you'll need to clone the Java on Azure Container Apps repository from GitHub. Use the following command in your terminal:
 
+# [Bash](#tab/bash)
+
 ```bash
 git clone https://github.com/Azure-Samples/azure-container-apps-java-samples.git
 ```
+
+# [Azure PowerShell](#tab/azure-powershell)
+
+```shell
+git clone https://github.com/Azure-Samples/azure-container-apps-java-samples.git
+```
+
+---
 
 ## Run the Application Locally
 
@@ -16,26 +26,67 @@ Before deploying, it’s important to ensure that the application runs successfu
 
 1. Navigate to the project PetClinic directory:
 
+# [Bash](#tab/bash)
+
 ```bash
 cd azure-container-apps-java-samples/spring-petclinic/spring-petclinic/
 ```
 
+# [Azure PowerShell](#tab/azure-powershell)
+
+```shell
+cd azure-container-apps-java-samples/spring-petclinic/spring-petclinic/
+```
+
+---
+
 2. Init and update the PetClinc to the latest version:
+
+# [Bash](#tab/bash)
+
 ```bash
 git submodule update --init --recursive
 ```
 
+# [Azure PowerShell](#tab/azure-powershell)
+
+```shell
+git submodule update --init --recursive
+```
+
+---
+
 3. Build the project using Maven:
+
+# [Bash](#tab/bash)
 
 ```bash
 ./mvnw clean install
 ```
 
+# [Azure PowerShell](#tab/azure-powershell)
+
+```shell
+./mvnw clean install
+```
+
+---
+
 4. Run the application:
+
+# [Bash](#tab/bash)
 
 ```bash
 ./mvnw spring-boot:run
 ```
+
+# [Azure PowerShell](#tab/azure-powershell)
+
+```shell
+./mvnw spring-boot:run
+```
+
+---
 
 5.Once the application is up, you can access it locally via [http://localhost:8080](http://localhost:8080). You should see the Spring PetClinic interface.
 
