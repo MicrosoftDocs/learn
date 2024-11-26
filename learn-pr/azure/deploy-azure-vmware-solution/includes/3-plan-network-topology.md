@@ -40,8 +40,6 @@ After deploying Azure VMware Solution, establishing network connectivity becomes
 
 The Azure VMware Solution private cloud is deployed on dedicated bare-metal servers that are exclusively assigned to a single customer. To use Azure resources, these servers need to connect to the Azure network backbone. The Azure VMware Solution provides an Azure ExpressRoute circuit that allows communication between the Azure VMware Solution private cloud and Azure services. To connect with on-premises environment via ExpressRoute, you can configure ExpressRoute Global Reach to your existing ExpressRoute circuit.
 
-:::image type="content" source="../media/5-create-private-cloud.png" alt-text="Screenshot of the Azure portal showing the virtual network field left blank during a private cloud deployment.":::
-
 ## ExpressRoute and routing requirements
 
 There are two types of interconnectivity for Azure VMware Solution:
