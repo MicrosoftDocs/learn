@@ -1,6 +1,9 @@
 Azure AI services are AI capabilities that can be built into web or mobile applications, in a way that's straightforward to implement. These AI services include generative AI, image recognition, natural language processing, speech, AI-powered search, and more. There are over a dozen [different services](/azure/ai-services/what-are-ai-services#available-azure-ai-services?azure-portal=true) that can be used separately or together to add AI power to applications.
 
-Let's take a look at some examples of what can be done with Azure AI services. Azure OpenAI service provides access to powerful, cutting-edge generative AI models for application development. The Azure AI Content Safety service can be used to detect harmful content within text or images, including violent or hateful content, and report on its severity. The Azure AI Language service can be used to summarize text, classify information, or extract key phrases. The Azure AI Speech service provides powerful speech to text and text to speech capabilities, allowing speech to be accurately transcribed into text, or text to natural sounding voice audio. 
+Let's take a look at some examples of what can be done with Azure AI services. Azure OpenAI service provides access to powerful, cutting-edge, generative AI models for application development. Azure AI Content Safety service can be used to detect harmful content within text or images, including violent or hateful content, and report on its severity. Azure AI Language service can be used to summarize text, classify information, or extract key phrases. Azure AI Speech service provides powerful speech to text and text to speech capabilities, allowing speech to be accurately transcribed into text, or text to natural sounding voice audio. 
+
+> [!NOTE]
+> You can use multiple Azure AI services with **Azure AI Foundry**, a platform for AI application development that combines access to multiple Azure AI services, with a focus on generative AI application capabilities. Azure AI Foundry is covered in its own module: [Introduction to Azure AI Foundry](/training/modules/introduction-to-azure-ai-studio/).
 
 Azure AI services are based on three principles that dramatically improve speed-to-market:
 - Prebuilt and ready to use
@@ -28,6 +31,8 @@ Azure AI services are designed to be used in different development environments.
 ## Azure AI services are available and secure on Azure
 
 Azure AI services are cloud-based and accessed through an Azure resource. This means that they're managed in the same way as other Azure services, such as platform as a service (PaaS), infrastructure as a service (IaaS), or a managed database service. The Azure platform and Resource Manager provide a consistent framework for all your Azure services, from creating or deleting resources, to availability and billing. 
+
+Trust is at the core of all of Microsoft's offerings, and security is at the center of Azure AI services. From cyberthreat prevention, to data privacy, to compliance, and to safe digital experiences, Azure AI services provides enterprise-grade security. You can learn more about Azure AI services' security features [here](/azure/ai-services/security-features).
 
 > [!NOTE]
 > In some situations, AI has the potential to be used in ways that might compromise an individual's privacy or rights. Microsoft has [six Responsible AI principles](/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai?azure-portal=true) to help ensure AI services are ethical and fair. Because of this, certain Azure AI services are restricted to ensure they're used responsibly.
