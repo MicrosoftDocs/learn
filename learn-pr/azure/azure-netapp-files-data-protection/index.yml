@@ -4,24 +4,23 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   moduleType: introduction        
-  title: Using Azure NetApp Files application volume groups for SAP HANA       
-  description: This module helps you understand Microsoft Azure NetApp Files and how to use the service with virtual machines running SAP HANA.       
-  ms.date: 09/06/2024
+  title: Understand data protection and resiliency in Azure NetApp Files   
+  description: This module teaches you about data protection options in Azure NetApp Files to help you improve the resiliency of your data.       
+  ms.date: 11/26/2024
   author: b-ahibbard   
   ms.author: anfdocs           
   ms.topic: module
   ms.service: azure-netapp-files
-title:  Using Azure NetApp Files application volume groups for SAP HANA   
-summary: This module helps you understand Microsoft Azure NetApp Files and how to use the service with virtual machines running SAP HANA (High Performance Analytic Appliance). 
+title:  Understand data protection and resiliency in Azure NetApp Files
+summary: This module teaches you about data protection options in Azure NetApp Files to help you improve the resiliency of your data.    
 abstract: |
-  By the end of this module, you'll be able to describe the following: 
-    -	Azure NetApp Files and Azure NetApp Files application volume groups
-    - Decision criteria for using Azure NetApp Files with SAP HANA VMs
-    - Steps for connecting the SAP HANA VM with Azure NetApp Files 
+  By the end of this module, you'll be able to: 
+  - Enumeration protection and disaster recovery features in Azure NetApp Files 
+  - Explain how Azure NetApp Files snapshots work 
+  - Describe Azure NetApp Files backup and recovery 
+  - Describe the different benefits of cross-region and cross-zone replication  
 prerequisites: |
-  - Basic understanding of Azure virtual machines.
-  - Basic understanding of Linux virtual machines in Azure. 
-  - Basic understanding of Azure NetApp Files and file shares. 
+  - Basic understanding of Azure NetApp Files
 iconUrl: /training/achievements/introduction-to-azure-netapp-files.svg
 levels:
   - intermediate
@@ -34,7 +33,7 @@ products:
 subjects:
 - cloud-computing
 - storage
-- migration
+- cloud-security
 units:
 - learn.azure.azure-netapp-files-data-protection.introduction
 - learn.azure.azure-netapp-files-data-protection.snapshots
