@@ -3,8 +3,8 @@ Now let's explore generative AI with Microsoft Copilot.
 > [!NOTE]
 > There are two variations of the exercise: one for learners who have access to Microsoft 365 Copilot, and an alternative for learners who don't. **Launch and complete one or the other to explore Microsoft Copilot.**
 
-#### Option 1: Using Microsoft Copilot for Microsoft 365
-If you have access to Microsoft Copilot for Microsoft 365, launch this version of the exercise and follow the instructions. 
+#### Option 1: Using Microsoft 365 Copilot
+If you have access to Microsoft 365 Copilot, launch this version of the exercise and follow the instructions. 
 
 > [!NOTE]
 > To complete this version, you need a Microsoft 365 account and a license for Microsoft Copilot.
@@ -13,7 +13,7 @@ If you have access to Microsoft Copilot for Microsoft 365, launch this version o
 
 
 #### Option 2: Using Microsoft Copilot in Microsoft Edge
-If you do not have access to Microsoft Copilot for Microsoft 365, launch this version to explore Microsoft Copilot in Microsoft Edge. 
+If you do not have access to Microsoft 365 Copilot, launch this version to explore Microsoft Copilot in Microsoft Edge. 
 
 This exercise requires a free Microsoft account (for example an *outlook.com*, *live.com*, or *hotmail.com* account), and the Microsoft Edge web browser.
 
