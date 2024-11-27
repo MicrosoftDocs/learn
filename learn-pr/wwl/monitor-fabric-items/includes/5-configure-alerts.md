@@ -1,11 +1,19 @@
 Alerts and actions are a major feature of Microsoft Fabric. Fabric supports alerts in Real-Time hubs, changes to KQL Query sets, Blob Storage events, and more. One of the more business oriented elements of alerts within Fabric is its ability to send a Teams message, an Email, or even run a Fabric item, such as triggering a notebook or a Data Factory pipeline activity.
 
 
-## Introduction to Fabric Data Activator**
+## Introduction to Fabric Data Activator
 
 Fabric Data Activator is a powerful tool that allows businesses to use their data effectively. It enables users to collect, analyze, and act on data in real time, providing valuable insights that can drive decision-making.
 
-**Key Features of Fabric Data Activator**
+> [!NOTE]
+> You may have to upgrade to a ***free Microsoft Fabric trial*** if you're not on already on a Fabric capacity instance.
+> select the **Account Manager** icon (the user image at the top right) and in the menu, select **Free trial** to start a Microsoft Fabric trial. Select **Activate**.
+> You will receive a message that your trial workspace is being prepared, which can take several minutes.
+> [![Screenshot of notice to activate Fabric free trial.](../media/activate-free-trial-notice-small.png)](../media/activate-free-trial-notice.png#lightbox)
+
+By applying these features, you can maintain the reliability and accuracy of your semantic models, ensuring that your data-driven insights are always based on the latest information.
+
+**Key Features of Fabric Data Activator
 
 | Feature | Description |
 |---------|-------------|
