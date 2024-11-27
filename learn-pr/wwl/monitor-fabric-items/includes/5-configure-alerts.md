@@ -9,6 +9,7 @@ Fabric Data Activator is a powerful tool that allows businesses to use their dat
 > You may have to upgrade to a ***free Microsoft Fabric trial*** if you're not on already on a Fabric capacity instance.
 > select the **Account Manager** icon (the user image at the top right) and in the menu, select **Free trial** to start a Microsoft Fabric trial. Select **Activate**.
 > You will receive a message that your trial workspace is being prepared, which can take several minutes.
+>
 > [![Screenshot of notice to activate Fabric free trial.](../media/activate-free-trial-notice-small.png)](../media/activate-free-trial-notice.png#lightbox)
 
 By applying these features, you can maintain the reliability and accuracy of your semantic models, ensuring that your data-driven insights are always based on the latest information.
