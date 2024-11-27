@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title:  Protect data residency and sovereignty
   description: Conceptual discussion of data residency and sovereignty in the context of public sector agencies using Azure.
-  ms.date: 07/25/2023
+  ms.date: 11/27/2024
   author: EliotSeattle
   ms.author: eliotgra
   ms.topic: unit

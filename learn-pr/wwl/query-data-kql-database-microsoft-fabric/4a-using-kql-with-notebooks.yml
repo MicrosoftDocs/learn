@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.using-kql-with-notebooks
-title: Advanced features
+title: Using KQL with notebooks
 metadata:
-  title: Advanced features
-  description: "Advanced features"
+  title: Using KQL with notebooks
+  description: "Using KQL with notebooks"
   ms.date: 11/7/2024
   author: wwlpublish
   ms.author: jamesh
