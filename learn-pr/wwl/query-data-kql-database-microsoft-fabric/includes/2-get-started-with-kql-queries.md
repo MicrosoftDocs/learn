@@ -1,4 +1,4 @@
-## Creating KQL Querysets in Microsoft Fabric
+Creating KQL Querysets in Microsoft Fabric is an important feature to support Real-Time Intelligence features, including a no-code experience. This means that users can generate queries without writing complex code, which makes analysis available to more users.
 
 1. **Setup**: To start using KQL, you need to have an Azure account and set up Azure Data Explorer.
 1. **Create KQL Queryset**: A KQL queryset is a tool that allows you to execute queries, modify, and display query results from a KQL database. It's used in Microsoft Fabric for Real-Time Intelligence.
