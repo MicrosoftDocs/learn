@@ -56,6 +56,6 @@ Volume placement within the application volume group enables organizations to ad
 
 Upon execution of volume deployment, application volume group detects available resources and applies logic to place volumes in the most optimal locations. In resource-constrained zones, volumes can share storage endpoints: 
 
-:::image type="content" source="../media/resource-constrained-layout.png" alt-text="Diagram of a application volume group layout in a constrained zone resource." lightbox="../media/resource-constrained-layout.png":::
+:::image type="content" source="../media/resource-constrained-layout.png" alt-text="Diagram of an application volume group layout in a constrained zone resource." lightbox="../media/resource-constrained-layout.png":::
 
 The Azure NetApp Files application volume group feature empowers you to optimize deployment procedures, application performance, availability, cost, and compliance for application workloads. 
