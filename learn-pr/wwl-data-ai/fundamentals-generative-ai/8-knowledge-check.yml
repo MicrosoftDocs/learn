@@ -21,7 +21,7 @@ quiz:
     - content: "Models that detect additional meaning in paragraphs of text."
       isCorrect: false
       explanation: "Incorrect. Azure AI Language services can be used to detect additional insights such as sentiment, key phrases, etc."
-    - content: "Lists of words and code that computers use to generate text.​"
+    - content: "Lists of words and code that computers use to generate text."
       isCorrect: false
       explanation: "Incorrect. Large Language Models consist of layers of neural networks. It is not a list."
     - content: "Models that use deep learning to process and understand natural language on a massive scale."
@@ -32,15 +32,15 @@ quiz:
     - content: "Microsoft Copilot for Microsoft Edge"
       isCorrect: false
       explanation: "Microsoft Copilot for Microsoft Edge best used to create content based on web content, not customer data."
-    - content: "Microsoft Copilot for Dynamics 365 Customer Service"
+    - content: "Microsoft Copilot in Dynamics 365 Customer Service"
       isCorrect: true
       explanation: "Customer service agents can use Copilot in Dynamics 365 Customer Service to analyze support tickets, research similar issues, find resolutions, and communicate them to users with only a few clicks and prompts."
-    - content: "Microsoft Copilot for Security"
+    - content: "Copilot for Security"
       isCorrect: false
-      explanation: "Microsoft Copilot for Security is best used to the assess, mitigate, and respond to security threats."
+      explanation: "Copilot for Security is best used to the assess, mitigate, and respond to security threats."
   - content: "Which tool should a professional developer use to build a custom copilot and deploy it as a service endpoint in Azure?"
     choices:
-    - content: "Microsoft Copilot for Azure"
+    - content: "Copilot for Azure"
       isCorrect: false
       explanation: "Copilot for Azure is integrated into the Azure portal and can assist infrastructure administrators as they work with Azure cloud services."
     - content: "Microsoft Copilot Studio"
