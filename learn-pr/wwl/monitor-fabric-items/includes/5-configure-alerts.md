@@ -34,11 +34,11 @@ Data activator can be set up in several places, but event streams are a good pla
 
 1. **Create an event stream**:
    - In the Microsoft Fabric portal, navigate to the Event Streams section and create a new stream.
-   - Configure the stream to ingest data from your desired source, such as an IoT hub or Kafka topic.
+   - Configure the stream to ingest data from your desired source, such as an IoT hub or Kafka article.
 
 2. **Add a destination**:
    - Once the stream is set up, add a destination of type Reflex.
-   - This allows you to connect the stream to Data Activator.
+   - This action allows you to connect the stream to Data Activator.
 
 3. **Configure data activator**:
    - Open Data Activator and select the event stream item you created.
