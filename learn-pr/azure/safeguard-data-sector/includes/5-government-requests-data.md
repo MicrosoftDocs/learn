@@ -1,4 +1,4 @@
-When deploying sensitive data in a multitenant cloud, worldwide public-sector customers look for assurances about data security in scenarios involving government and law enforcement requests for customer data. Microsoft takes strong measures to protect customer data from inappropriate access or use by unauthorized persons and ensures that all government requests for customer data follow a strict procedure.
+When worldwide public-sector customers deploy sensitive data in a multitenant cloud, they look for assurances about data security. Especially in scenarios involving government and law enforcement requests for customer data. Microsoft takes strong measures to protect customer data from inappropriate access or use by unauthorized persons and ensures that all government requests for customer data follow a strict procedure.
 
 ## Responding to government requests for data
 
