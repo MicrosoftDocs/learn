@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.azure.azure-netapp-files-application-volume-group
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  moduleType: introduction        
+  title: Using Azure NetApp Files application volume group   
+  description: Learn how to use Azure NetApp Files application volume groups to optimize deployments with Oracle and SAP HANA.        
+  ms.date: 11/27/2024
+  author: b-ahibbard   
+  ms.author: anfdocs           
+  ms.topic: module
+  ms.service: azure-netapp-files
+title:  Using Azure NetApp Files application volume group
+summary: Learn how an application volume group is crucial in managing data and optimizing Azure NetApp Files for SAP HANA and Oracle. You'll also learn about the main components and best practices of Azure NetApp Files application volume group.
+abstract: |
+  By the end of this module, you'll be able to: 
+    -	Describe the key components of application volume groups. 
+    - Define the best practices of Azure NetApp Files application volume group. 
+prerequisites: |
+  - Basic understanding of Azure virtual machines and Linux virtual machines in Azure. 
+  - Basic understanding of Azure NetApp Files and file shares. 
+  - Understanding of Azure NetApp Files performance.
+iconUrl: /training/achievements/introduction-to-azure-netapp-files.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+  - azure-virtual-machines
+subjects:
+- cloud-computing
+- storage
+- migration
+units:
+- learn.azure.azure-netapp-files-application-volume-group.introduction
+- learn.azure.azure-netapp-files-application-volume-group.best-practices
+- learn.azure.azure-netapp-files-application-volume-group.knowledge-check
+- learn.azure.azure-netapp-files-application-volume-group.summary
+badge:
+  uid: learn.azure.azure-netapp-files-application-volume-group.badge
+
