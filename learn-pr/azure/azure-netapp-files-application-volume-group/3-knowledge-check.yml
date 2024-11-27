@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-application-volume-group.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure NetApp Files application volume group.
+  ms.date: 11/27/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: How do volume placement strategies within the application volume group enable you to optimize storage costs in Azure NetApp Files? 
+    choices:
+    - content: It optimizes cost by determining the size and capacity of the volume in Azure NetApp Files.
+      isCorrect: false
+      explanation: Incorrect. Volume placement doesn't determine the size and capacity of the volume in Azure NetApp Files. The size and capacity of the volume are determined separately during the volume creation process.
+    - content: It optimizes cost by controlling the network connectivity options for accessing the volume.
+      isCorrect: false
+      explanation: Incorrect. Volume placement doesn't control the network connectivity options for accessing the volume. Network connectivity is managed separately through Azure networking configurations.
+    - content: It optimizes cost by taking care of physical disk allocation within the Azure NetApp Files service.
+      isCorrect: false
+      explanation: Incorrect. Volume placement doesn't specifically refer to the physical disk allocation within the Azure NetApp Files service. It primarily focuses on selecting the Azure region for deployment rather than the specific disk allocation. 
+    - content: It optimizes storage costs by matching workload requirements with appropriate storage tiers.
+      isCorrect: true 
+      explanation: Correct. Volume placement in Azure NetApp Files refers to the process of selecting the Azure region where the volume will be created and deployed. The region selection is important for factors such locality, compliance requirements, and proximity to users or applications.
