@@ -34991,42 +34991,42 @@
     },
     {
       "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/index.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/azure-netapp-files-application-volume-group/",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/azure-netapp-files-application-volume-group/",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/2-what-is-azure-netapp-files.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/azure-netapp-files-application-volume-group/",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/3-understand-application-volume-groups.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/azure-netapp-files-application-volume-group/",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/4-connect-sap-hana-vms.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/azure-netapp-files-application-volume-group/",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/5-knowledge-check.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/azure-netapp-files-application-volume-group/",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/6-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/azure-netapp-files-application-volume-group/",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
       "redirect_document_id": false
     },
     {
       "source_path":"learn-pr/achievements/learn.azure.azure-netapp-files-sap-hana.badge.yml",
-      "redirect_url": "https://learn.microsoft.com/azure/azure-netapp-files-application-volume-group/",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
       "redirect_document_id": "false"
     }
   ]
