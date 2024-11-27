@@ -2,7 +2,7 @@ Many public-sector customers considering cloud adoption need confidence that cus
 
 ## Data classifications
 
-To provide clarity in how data is safeguarded in the cloud, Microsoft establishes several [data categories and definitions](https://www.microsoft.com/trust-center/privacy/customer-data-definitions) for cloud services, including the following terms:
+To provide clarity in how data is safeguarded in the cloud, Microsoft established several [data categories and definitions](https://www.microsoft.com/trust-center/privacy/customer-data-definitions) for cloud services, including the following terms:
 
 * **Customer data** is all data that customers provide to Microsoft to manage on customers' behalf through customers' use of Microsoft online services.
 * **Customer content** is a subset of customer data and includes, for example, the content stored in a customer's Azure Storage account.
@@ -15,7 +15,7 @@ Some personal data can be used on its own to identify a user. For example, user 
 
 ## Data sovereignty
 
-Data sovereignty implies data residency, but it also introduces rules and requirements that define who has control over and who has access to customer data stored in the cloud. In many cases, data sovereignty requires that customer data be subject to the laws and legal jurisdiction of the country/region in which data resides. These laws can have direct implications on data access, even for platform maintenance or customer-initiated support requests. To meet their data sovereignty requirements, customers can use the Azure public multitenant cloud in combination with Azure Stack Hub and Azure Stack Edge for on-premises and edge solutions. Customers can deploy these other products to put them completely in control of their data, including storage, processing, transmission, and remote access.
+Data sovereignty implies data residency, but it also introduces rules and requirements that define who has control over and who has access to customer data stored in the cloud. In many cases, data sovereignty requires that customer data be subject to the laws and legal jurisdiction of the country/region in which data resides. These laws can have direct implications on data access, even for platform maintenance or customer-initiated support requests. Customers can use the Azure public multitenant cloud in combination with Azure Stack Hub and Azure Stack Edge, to meet their data sovereignty requirements for on-premises and edge solutions. Customers can deploy these other products to put them completely in control of their data, including storage, processing, transmission, and remote access.
 
 ## Data at rest
 

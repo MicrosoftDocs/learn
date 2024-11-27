@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "All Azure services enable the customer to specify the region into which the service is deployed."
       isCorrect: false
-      explanation: "Incorrect. Nonregional Azure services don't enable the customer to specify the region where the services are deployed."
+      explanation: "Incorrect. Non-regional Azure services don't enable the customer to specify the region where the services are deployed."
     - content: "Microsoft Entra deployments in the United States store all Active Directory data in the United States."
       isCorrect: true
       explanation: "Correct. All Active Directory data for deployments in the United States are stored in the United States."
@@ -49,7 +49,7 @@ quiz:
     - content: "Microsoft might choose to challenge government requests in court."
       isCorrect: true
       explanation: "Correct. Where appropriate, Microsoft challenges law enforcement and other government requests in court."
-    - content: "Law enforcement and government officials can use back door channels to access data in special circumstances."
+    - content: "Law enforcement and government officials might use back door channels to access data in special circumstances."
       isCorrect: false
       explanation: "Incorrect. There are no back-door channels and no direct or unfettered government access to customer data."
     - content: "Microsoft complies with all law enforcement requests for data."
