@@ -1,4 +1,4 @@
-After uploading data to the Azure AI Studio and creating an index on your data using the integration with Azure AI Search, you can implement the RAG pattern with *Prompt Flow* to build a copilot application.
+After uploading data to Azure AI Foundry and creating an index on your data using the integration with Azure AI Search, you can implement the RAG pattern with *Prompt Flow* to build a generative AI application.
 
 **Prompt Flow** is a development framework for defining flows that orchestrate interactions with an LLM.
 
@@ -66,4 +66,4 @@ With the prompt variants, you can provide varying system messages in the prompt 
 
 Finally, you use an LLM node to send the prompt to a language model to generate a response using the relevant context retrieved from your data source. The response from this node is also the output of the entire flow.
 
-After configuring the sample chat flow to use your indexed data and the language model of your choosing, you can deploy the flow and integrate it with an application to offer users a copilot experience.
+After configuring the sample chat flow to use your indexed data and the language model of your choosing, you can deploy the flow and integrate it with an application to offer users an agentic experience.

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-quotas.large-volumes
+title: Requirements and considerations for large volumes in Azure NetApp Files
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: learning-module
+  title: Requirements and considerations for large volumes in Azure NetApp Files
+  description: Learn how large volumes can impact your workloads.    
+  ms.date: 11/26/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-large-volumes.md)]

@@ -34983,6 +34983,11 @@
       "source_path": "learn-pr/azure/optimize-your-web-apps-with-redis/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/github-ethical-ai/index.yml",
+      "redirect_url": "/training/paths/github-responsible-ai/",
+      "redirect_document_id": false
     }
   ]
 }

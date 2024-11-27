@@ -26,19 +26,21 @@ This guided project module can be run on a local PC or hosted environment. The s
 
 The development environment must include the following resources:
 
-- A GitHub account with an active GitHub Copilot subscription.
-
 - A local PC or hosted environment with the following software provisioned:
 
+    - Git version control software.
     - The .NET SDK 8.0 (or the latest LTS version).
     - Visual Studio Code updated to the latest version.
     - The C# Dev Kit extension (from Microsoft) installed in Visual Studio Code.
     - The GitHub Copilot and GitHub Copilot Chat extensions (from GitHub) installed in Visual Studio Code.
 
+- A GitHub account with an active GitHub Copilot subscription.
+
 ### Install or update coding tools
 
 Ensure that your development environment is set up with the following software:
 
+- Install/update Git version control software.
 - Install/update .NET SDK 8.0 or latest LTS version.
 - Install/update the latest version Visual Studio Code.
 
