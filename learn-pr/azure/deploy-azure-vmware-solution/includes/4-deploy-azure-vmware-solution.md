@@ -137,4 +137,6 @@ After Azure VMware Solution private cloud and the Azure Bastion resource are dep
 
 ## Use Azure Bastion and sign in to vCenter and NSX-T Manager
 
-Use Azure Bastion to sign in to the jump-host VM. Then, open a web browser, go to both vCenter and NSX-T Manager, and sign in to each. The Azure portal will provide the vCenter IP address, the NSX-T Manager console's IP addresses, and credentials used for deployment. Accessing the jump host through Azure Bastion will allow you to configure NSX-T and vCenter.
+Use Azure Bastion to sign in to the jumpbox VM. Then, open a web browser, go to both vCenter and NSX-T Manager, and sign in to each. The Azure portal will provide the vCenter IP address, the NSX-T Manager console's IP addresses, and credentials used for deployment. Accessing the jump host through Azure Bastion will allow you to configure NSX-T and vCenter.
+
+:::image type="content" source="../media/4-vmware-credentials.png" alt-text="Screenshot of the Azure portal page, showing where login credentials are displayed after Azure VMware Solution has been deployed.":::
