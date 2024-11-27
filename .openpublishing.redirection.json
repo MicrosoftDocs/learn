@@ -35023,6 +35023,11 @@
       "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-netapp-files-application-volume-group/",
       "redirect_document_id": false
+    },
+    {
+      "source_path":"learn-pr/achievements/learn.azure.azure-netapp-files-sap-hana.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-netapp-files-application-volume-group/",
+      "redirect_document_id": "false"
     }
   ]
 }
