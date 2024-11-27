@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.intro-azure-openai-managed-identity-auth-python
+metadata:
+  ms.author: sayoung
+  author: sarah-yo
+  ms.date: 11/11/2024
+  title: Introduction to Azure OpenAI Managed Identity Authentication with Python
+  description: Introduction to Azure OpenAI Managed Identity Authentication with Python.
+  ms.topic: module
+  ms.collection: ce-advocates-ai-copilot
+  ms.service: azure-ai-openai
+title: Introduction to Azure OpenAI Managed Identity Authentication with Python
+summary: Understanding how to use managed identity in python apps that interact with Azure OpenAI.
+abstract: |
+ After completing this module, you'll be able to:
+  - Describe the different RBAC roles for use in Azure OpenAI and understand how to configure role assignments
+  - Understand the differences between using API keys and managed identities within Azure OpenAI
+  - Understand how to configure keyless authentication to Azure OpenAI for local development for Python
+  - Understand how to configure keyless authentication to Azure OpenAI for Azure-hosted environments for Python
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Python programming
+  - Azure OpenAI
+  - Azure RBAC roles
+  - Azure Managed Identity
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- introduction-azure-openai-managed-identity-authentication-python.introduction
+- introduction-azure-openai-managed-identity-authentication-python.azure-openai-rbac-roles
+- introduction-azure-openai-managed-identity-authentication-python.keyless-authentication-methods
+- introduction-azure-openai-managed-identity-authentication-python.benefits-of-using-managed-identity-for-azure-openai
+- introduction-azure-openai-managed-identity-authentication-python.knowledge-check
+- introduction-azure-openai-managed-identity-authentication-python.summary
+badge:
+  uid: introduction-azure-openai-managed-identity-authentication-python-badge

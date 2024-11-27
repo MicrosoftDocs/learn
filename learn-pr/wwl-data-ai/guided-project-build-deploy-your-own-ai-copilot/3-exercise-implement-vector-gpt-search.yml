@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-build-deploy-your-own-ai-copilot.exercise-implement-vector-gpt-search
+title: Exercise - Implement vector and GPT searches
+metadata:
+  title: Exercise - Implement vector and GPT searches
+  description: "Exercise - Implement vector and GPT searches"
+  ms.date: 11/13/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-implement-vector-gpt-search.md)]

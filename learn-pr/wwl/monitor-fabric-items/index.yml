@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-fabric-items
+metadata:
+  title: Monitor and optimize an analytics solution in Microsoft Fabric
+  description: "Monitor and optimize an analytics solution. This module includes monitoring, semantic models, extraction, transformation, loading (ETL), and alerting"
+  ms.date: 11/14/2024
+  author: JamesHerring
+  ms.author: jamesh
+  ms.topic: module-standard-task-based
+  ms.service: fabric
+  ms.custom:
+title: Monitor and optimize an analytics solution.
+summary: Monitor and optimize an analytics solution.
+abstract: |
+  In this module, you learn to:
+
+  - Monitor data ingestion in Fabric
+
+  - Monitor data transformation tasks in Fabric
+
+  - Monitor semantic models
+
+  - Configure alerts in Fabric
+prerequisites: |
+  Before starting this module, you should be familiar with Microsoft Fabric lakehouses and Apache Spark.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- fabric
+subjects:
+- data-engineering
+units:
+- learn.wwl.monitor-fabric-items.introduction
+- learn.wwl.monitor-fabric-items.monitor-data-ingestion
+- learn.wwl.monitor-fabric-items.monitor-data-transformation
+- learn.wwl.monitor-fabric-items.monitor-semantic-models
+- learn.wwl.monitor-fabric-items.configure-alerts
+- learn.wwl.monitor-fabric-items.exercise-configure-alerts-in-fabric
+- learn.wwl.monitor-fabric-items.knowledge-check
+- learn.wwl.monitor-fabric-items.summary
+badge:
+  uid: learn.wwl.monitor-fabric-items.badge

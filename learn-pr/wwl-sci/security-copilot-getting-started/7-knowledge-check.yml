@@ -3,10 +3,10 @@ uid: learn-wwl.security-copilot-getting-started.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Microsoft Copilot for Security knowledge check
+  description: Microsoft Security Copilot knowledge check
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 08/22/2024
+  ms.date: 11/20/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: What are the steps required to onboard organizations and users to Microsoft Copilot for Security?
+  - content: What are the steps required to onboard organizations and users to Microsoft Security Copilot?
     choices:
     - content: Enable Copilot plugins, and procure Microsoft Entra Premium 1 licensing.
       isCorrect: false
@@ -39,14 +39,14 @@ quiz:
     - content: List Pearl Sleet activities.
       isCorrect: false
       explanation: Incorrect. This prompt is too vague and doesn't provide specific elements like context or expectations.
-  - content: An admin is tasked with setting up Microsoft Copilot for Security and needs to provision capacity. After reviewing the options, which method should the admin choose to provision capacity for their organization?
+  - content: An admin is tasked with setting up Microsoft Security Copilot and needs to provision capacity. After reviewing the options, which method should the admin choose to provision capacity for their organization?
     choices:
     - content: Provision capacity through a third-party vendor
       isCorrect: false
-      explanation: Incorrect. Microsoft Copilot for Security capacity must be provisioned either within Copilot itself or through Azure, not via third-party vendors.
-    - content: Provision capacity within Copilot for Security
+      explanation: Incorrect. Microsoft Security Copilot capacity must be provisioned either within Copilot itself or through Azure, not via third-party vendors.
+    - content: Provision capacity within Security Copilot
       isCorrect: true
-      explanation: Correct. Provisioning capacity within Copilot for Security is recommended and guided by a wizard for ease of set up.
+      explanation: Correct. Provisioning capacity within Security Copilot is recommended and guided by a wizard for ease of setup.
     - content: Provision capacity by directly purchasing SCUs from a software retailer
       isCorrect: false
-      explanation: Incorrect. SCUs for Microsoft Copilot for Security are provisioned through Azure or within the Copilot service, not through software retailers.
+      explanation: Incorrect. SCUs for Microsoft Security Copilot are provisioned through Azure or within the Copilot service, not through software retailers.

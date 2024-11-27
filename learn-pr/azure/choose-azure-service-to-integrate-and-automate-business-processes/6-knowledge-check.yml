@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  ms.date: 10/03/2023
+  ms.date: 11/08/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: unit
@@ -20,16 +20,16 @@ quiz:
     choices:
     - content: "Microsoft Power Automate"
       isCorrect: true
-      explanation: "Implement the workflow using Microsoft Power Automate, as this allows the creative team members, who aren't developers, to manage the flow."
+      explanation: "Implement the workflow using Microsoft Power Automate, as this allows the creative team members (who aren't developers) to manage the flow."
     - content: "Azure Logic Apps"
       isCorrect: false
-      explanation: "Azure Logic Apps doesn't permit the creative team, who aren't developers, to manage the process. Instead use Microsoft Power Automate."
+      explanation: "Azure Logic Apps doesn't permit the creative team (who aren't developers) to manage the process. Instead, use Microsoft Power Automate."
     - content: "Azure Functions"
       isCorrect: false
-      explanation: "Azure Functions doesn't permit the creative team members, who aren't developers, to manage the process. Instead use Microsoft Power Automate."
+      explanation: "Azure Functions doesn't permit the creative team members (who aren't developers) to manage the process. Instead, use Microsoft Power Automate."
     - content: "Azure App Service WebJobs" 
       isCorrect: false
-      explanation: "Azure WebJobs doesn't permit the creative team members, who aren't developers, to manage the process. Instead, use Microsoft Power Automate."
+      explanation: "Azure WebJobs doesn't permit the creative team members (who aren't developers) to manage the process. Instead, use Microsoft Power Automate."
   - content: "In the television advert company, which technology would you use for the feedback collection process?"
     choices: 
     - content: "Microsoft Power Automate"

@@ -1,5 +1,5 @@
 
-Auditing solutions in Microsoft Purview help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
+Auditing solutions in Microsoft Purview help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions, and also Security Copilot (if enabled) are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
 
 Microsoft Purview provides two auditing solutions:
 
@@ -27,3 +27,11 @@ Audit (Premium) builds on the capabilities of Audit (Standard) by providing audi
 #### Licensing
 
 Licensing for Audit (Standard) or Audit (Premium) requires the appropriate organization-level subscription and corresponding per-user licensing. For additional information on licensing requirements, visit the Learn more section in the Summary and resources unit.
+
+#### Audit log in Microsoft Purview for Security Copilot
+
+The audit logging feature in Security Copilot uses Microsoft Purview to process and store admin actions, user actions, and Copilot responses. This includes data from any Microsoft and non-Microsoft integrations.
+
+From the Microsoft Security Copilot portal (the standalone experience), Copilot owners can opt in to allow Microsoft Purview to access, process, copy, and store customer data from your Security Copilot services. Once this feature is enabled in Copilot, if your organization is already using Microsoft Purview, no further actions is required. Audit logging is turned on by default for Microsoft 365 organizations. However, when setting up a new Microsoft 365 organization, you should verify the auditing status for your organization. If your organization isn't already using Microsoft Purview, then Audit logging needs to be provisioned. See [Turn auditing on or off](/purview/audit-log-enable-disable) to learn more.
+
+Microsoft Purview stores your customer data in the region where your Microsoft 365 data is stored. See [Privacy and data security in Microsoft Security Copilot](/copilot/security/privacy-data-security) to learn more.

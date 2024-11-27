@@ -255,7 +255,7 @@ Here, you'll check if your new rule works. **AppServer** should be able to commu
 
 1. Enter the password you defined when you created the VM.
 
-1. This shouldn't succeed, because you've blocked access over port 80. After several minutes, you should get a `Connection timed out` message. To stop the command before the timeout, press <kbd>Ctrl+C</kbd>.
+1. This shouldn't succeed, because you've blocked access over port 80. After several minutes, you should get a `Connection timed out` message. To stop the command before the timeout, select **Ctrl+C**.
 
 ## Deploy an app security group
 
@@ -322,6 +322,6 @@ Next, create an app security group for database servers so that all servers in t
 
 1. Enter the password you defined when you created the VM.
 
-1. As before, this shouldn't succeed, because you've blocked access over port 80. After several minutes, you should get a `Connection timed out` message. To stop the command before the timeout, press <kbd>Ctrl+C</kbd>.
+1. As before, this shouldn't succeed, because you've blocked access over port 80. After several minutes, you should get a `Connection timed out` message. To stop the command before the timeout, select **Ctrl+C**.
 
 You've now confirmed that your network security group rule works using an app security group in the same way as when you used a source IP address. If we added additional data servers, we could easily ensure they have the proper network security by adding the new servers to the **ERP-DB-SERVERS-ASG**.

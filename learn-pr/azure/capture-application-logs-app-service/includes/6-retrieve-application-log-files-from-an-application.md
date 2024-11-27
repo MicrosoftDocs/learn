@@ -10,7 +10,7 @@ For Windows apps, file system log files are stored in a virtual drive that is as
 
 - **Application** - Contains application-generated messages, if **File System** application logging is enabled.
 - **DetailedErrors** - Contains detailed Web server error logs, if **Detailed** error messages are enabled.
-- **http** - Contains IIS-level logs, if **Web server logging** has been enabled.
+- **http** - Contains IIS-level logs, if **Web server logging** is enabled.
 - **W3SVC\<_number_\>** - Contains details of all failed http requests, if **Failed request tracing** is enabled.
 
 Where storage to a Blob container is enabled, logs are stored in year, month, date, and hour folders, for example:
@@ -48,9 +48,9 @@ To download the zipped log files to your local computer, use the file download a
 
 ### Kudu
 
-There's an associated Source Control Management (SCM) service site associated with all Azure Web Apps. This site runs the **Kudu** service, and other Site Extensions. It's Kudu that manages deployment and troubleshooting for Azure Web Apps, including options for viewing and downloading log files. The specific functionality available in Kudu, and how you download logs, depends on the type of Web App. For Windows apps, you can browse to the log file location, and then download the logs. For Linux apps, there may be a download link.
+There's an associated Source Control Management (SCM) service site associated with all Azure Web Apps. This site runs the **Kudu** service, and other Site Extensions. It's Kudu that manages deployment and troubleshooting for Azure Web Apps, including options for viewing and downloading log files. The specific functionality available in Kudu, and how you download logs, depends on the type of Web App. For Windows apps, you can browse to the log file location, and then download the logs. For Linux apps, there might be a download link.
 
-One way to access the Kudu console is to navigate to **https://\<_app name_\>.scm.azurewebsites.net**, and then sign in using _**deployment credentials**_.  
+One way to access the Kudu console is to navigate to **https://\<_app name_\>.scm.azurewebsites.net**, and then sign in using **deployment credentials**.  
 
 You can also access Kudu from the Azure portal. On the App Service menu, under **Development Tools**, select **Advanced Tools**, and then on the Advanced Tools pane, select **Go** to open a new **Kudu Services** tab.
 

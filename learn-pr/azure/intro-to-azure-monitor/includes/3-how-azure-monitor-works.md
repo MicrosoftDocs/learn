@@ -1,4 +1,4 @@
-In this unit, you learn about metrics and logs, and how collecting these two types of data with Azure Monitor lets you monitor the health, behavior, and performance of your Azure applications, networks, and infrastructure.
+In this unit, you learn about metrics and logs. You learn how collecting these two types of data with Azure Monitor lets you monitor the health, behavior, and performance of your Azure applications, networks, and infrastructure.
 
 ## Metrics
 
@@ -16,9 +16,9 @@ For example, the following **Requests** metric line chart shows the sum aggregat
 
 Azure Monitor can collect several types of metrics, including:
 
-- **Azure platform metrics.** Azure Monitor starts collecting metrics data from Azure resources as soon as they're added to a subscription. A list of resource-specific metrics is automatically available for each Azure resource type.
-- **Custom metrics**. Azure Monitor can also collect metrics from other sources, including applications and agents running on VMs. You can send custom metrics to Azure Monitor via the Azure Monitor Agent, other agents and extensions, or directly to the Azure Monitor REST API.
-- **Prometheus metrics**. Azure Monitor managed service for Prometheus collects metrics from Azure Kubernetes Service (AKS) or other Kubernetes clusters. Prometheus metrics share some characteristics with platform and custom metrics, but have different features to support open-source analysis and alerting tools like PromQL and Grafana.
+- **Azure platform metrics**: Azure Monitor starts collecting metrics data from Azure resources as soon as they're added to a subscription. A list of resource-specific metrics is automatically available for each Azure resource type.
+- **Custom metrics**: Azure Monitor can also collect metrics from other sources, including applications and agents running on VMs. You can send custom metrics to Azure Monitor via the Azure Monitor Agent, other agents and extensions, or directly to the Azure Monitor REST API.
+- **Prometheus metrics**: Azure Monitor managed service for Prometheus collects metrics from Azure Kubernetes Service (AKS) or other Kubernetes clusters. Prometheus metrics share some characteristics with platform and custom metrics, but have different features to support open-source analysis and alerting tools like PromQL and Grafana.
 
 Metrics are well-suited for real-time monitoring. You can use metrics to trigger alerts when defined thresholds are reached.
 
@@ -26,11 +26,11 @@ Metrics are well-suited for real-time monitoring. You can use metrics to trigger
 
 Logs are textual records of events, actions, and messages that occur in a resource or application. While metrics are numeric, logs can include the following data:
 
-- **Text:** Human-readable text entries that provide context, details, and descriptions of events.
-- **Unstructured data:** Log entries in various formats that don't fit neatly into predefined numerical values.
-- **Contextual information:** Insights into the context surrounding an event, which is invaluable for root cause analysis.
+- **Text**: Human-readable text entries that provide context, details, and descriptions of events.
+- **Unstructured data**: Log entries in various formats that don't fit neatly into predefined numerical values.
+- **Contextual information**: Insights into the context surrounding an event, which is invaluable for root cause analysis.
 
-Logs can capture information about errors, warnings, user actions, and application state changes. Logs provide detailed narratives of events in a given context, making them crucial for troubleshooting, debugging, and understanding event sequences that lead to issues. Logs are essential for retrospective analysis of issues, helping to reconstruct the chain of events that led up to a problem.
+Logs can capture information about errors, warnings, user actions, and application state changes. Logs provide detailed narratives of events in a given context. This makes them crucial for troubleshooting, debugging, and understanding event sequences that lead to issues. Logs are essential for retrospective analysis of issues, helping to reconstruct the chain of events that led up to a problem.
 
 Azure Monitor Logs is a feature of Azure Monitor that lets you store, manage, and analyze log and performance data from monitored resources. To collect and analyze all your data, you set up a common workspace called a Log Analytics workspace. You configure your resources to send their data to that workspace.
 
@@ -42,4 +42,3 @@ You can use log queries in the following scenarios:
 - Do complex data analysis to identify critical patterns in your monitoring data.
 - Use queries in alert rules to be proactively notified of issues.
 - Visualize query results in a workbook or dashboard.
-

@@ -3,11 +3,11 @@ In this module, you learned about the embedded experience for Microsoft. The emb
 
 Now that you completed this module, you can:
 
-- Describe Microsoft Copilot in Microsoft Defender XDR.
-- Describe Microsoft Copilot in Microsoft Purview.
-- Describe Microsoft Copilot in Microsoft Entra.
-- Describe Microsoft Copilot in Microsoft Intune.
-- Describe Microsoft Copilot in Microsoft Defender for Cloud.
+- Describe Copilot in Microsoft Defender XDR.
+- Describe Copilot in Microsoft Purview.
+- Describe Copilot in Microsoft Entra.
+- Describe Copilot in Microsoft Intune.
+- Describe Copilot in Microsoft Defender for Cloud.
 
 #### Learn more
 

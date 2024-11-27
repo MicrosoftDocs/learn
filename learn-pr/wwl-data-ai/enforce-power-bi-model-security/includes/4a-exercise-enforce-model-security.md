@@ -17,4 +17,4 @@ When you finish the exercise, end the lab to close the VM. Don't forget to come 
 >
 > Launch the exercise and follow the instructions.
 >
-> [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2259610)
+> [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2259796)

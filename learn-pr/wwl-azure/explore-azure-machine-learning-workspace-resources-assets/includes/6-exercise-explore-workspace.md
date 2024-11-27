@@ -4,7 +4,7 @@ In this exercise, you learn how to:
 
 - Create an Azure Machine Learning workspace.
 - Explore the Azure Machine Learning studio.
-- Author and run a training job.
+- Run a training job.
 
 ## Instructions
 

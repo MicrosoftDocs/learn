@@ -4,7 +4,7 @@ Now that your medallion architecture is in place, data teams and the business ca
 
 Teams can use SQL to explore and query data in the gold layer. You can analyze data in delta tables at any layer of the medallion architecture using the T-SQL language, save functions, generate views, and apply SQL security. You can also use the SQL analytics endpoint to connect to your lakehouse from third-party tools and applications.
 
-The SQL analytics endpoint in Fabric enables you to write queries,  manage the semantic model, and query data using the new visual query experience.
+The SQL analytics endpoint in Fabric enables you to write queries,  manage the semantic model, and query data using the visual query experience.
 
 ![Screenshot of the SQL analytics endpoint in the Fabric user interface.](../media/sql-endpoint-silver.png)
 
@@ -13,7 +13,7 @@ The SQL analytics endpoint in Fabric enables you to write queries,  manage the s
 
 In addition to using the SQL analytics endpoint for data exploration, you can also create a Power BI semantic model in Direct Lake mode to query data in your lakehouse. When you create a lakehouse, the system also creates an associated default semantic model. The default semantic model is a semantic model with metrics on top of lakehouse data.
 
-![Screenshot of the Power BI semantic model with relationships between tables.](../media/dataset-view.png)
+![Screenshot of the Power BI semantic model with relationships between tables.](../media/dataset-relationships.png)
 
 Data analysts connect to the semantic model using **Direct Lake mode**, in which the semantic model accesses data from a lakehouse. Direct Lake mode caches often-used data and refreshes it as required, combining the speed of a semantic model with the up-to-date data from a lakehouse.
 
