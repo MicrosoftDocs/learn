@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Request data
   description: Discussion of the approach and key principles of how Microsoft handles government request for data, with focus on CLOUD Act.
-  ms.date: 07/25/2023
+  ms.date: 11/27/2024
   author: EliotSeattle
   ms.author: eliotgra
   ms.topic: unit
