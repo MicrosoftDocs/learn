@@ -14,7 +14,7 @@ Fabric Data Activator is a powerful tool that allows businesses to use their dat
 
 By applying these features, you can maintain the reliability and accuracy of your semantic models, ensuring that your data-driven insights are always based on the latest information.
 
-**Key Features of Fabric Data Activator
+**Key Features of Fabric Data Activator**
 
 | Feature | Description |
 |---------|-------------|
