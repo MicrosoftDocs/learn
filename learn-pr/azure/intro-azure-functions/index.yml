@@ -14,10 +14,10 @@ metadata:
 title: Introduction to Azure Functions
 summary: Learn how Azure Functions helps you to easily integrate serverless compute resources into your cloud-based solutions. An extensive set of bindings makes it easy for you to connect your code to key Azure services, while built-in support for the most used development languages lets you better use your existing skills.  
 abstract: |
-  In this module you'll learn:
-  - What is Azure Functions
-  - How Azure Functions works and the logic behind it
-  - When to use Azure Functions
+  In this module you learn:
+  - What Azure Functions is.
+  - How Azure Functions works, and the logic behind it.
+  - When to use Azure Functions.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner

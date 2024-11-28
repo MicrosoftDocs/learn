@@ -5,7 +5,7 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Summary
-  description: This unit contains a summary of Azure Functions and what you have learned so far.
+  description: This unit contains a summary of what you learned about Azure Functions.
   ms.date: 03/18/2024
   author: ggailey777
   ms.author: glenga

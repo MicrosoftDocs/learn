@@ -12,11 +12,11 @@ Azure Functions is a serverless solution that allows you to write less code, mai
 
 ## Scenario
 
-You own a business, and you want to send a holiday greeting email to your customers. Instead of building a website and deploying and hosting it, just for one feature, you can use an Azure function, add your email sign-in details in the function and then deploy it to Azure. The functions connect to the data source, get customers emails, and send them an email on a scheduled date and time.
+You own a business, and you want to send a holiday greeting email to your customers. Instead of building a website and deploying and hosting it, just for one feature, you can use an Azure function, add your email sign-in details in the function, and then deploy it to Azure. The functions connect to the data source, get customers emails, and send them an email on a scheduled date and time.
 
 ## What will you learn?
 
-In this module, you'll learn to:
+In this module, you learn to:
 
 - Understand the strengths of Azure Functions and how to best use the service.
 - Describe in more detail how Azure Functions runs in Azure.
