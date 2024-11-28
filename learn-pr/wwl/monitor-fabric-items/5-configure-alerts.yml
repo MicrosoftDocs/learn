@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-fabric-items.configure-alerts
-title: Optimize alerting using Activator
+title: Monitor Fabric with proactive alerting using Activator
 metadata:
-  title: Optimize alerting using Activator
-  description: "Optimize alerting using Activator"
+  title: Monitor Fabric with proactive alerting using Activator
+  description: "Monitor Fabric with proactive alerting using Activator"
   ms.date: 11/14/2024
   author: JamesHerring
   ms.author: jamesh
