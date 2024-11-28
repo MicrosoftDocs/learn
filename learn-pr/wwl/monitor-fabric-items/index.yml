@@ -20,7 +20,7 @@ abstract: |
 
   - Monitor semantic models
 
-  - Configure alerts in Fabric
+  - Monitor Fabric practively with Activator
 prerequisites: |
   Before starting this module, you should be familiar with Microsoft Fabric lakehouses and Apache Spark.
 iconUrl: /training/achievements/generic-badge.svg
