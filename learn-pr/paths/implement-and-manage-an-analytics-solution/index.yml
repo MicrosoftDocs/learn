@@ -25,9 +25,8 @@ subjects:
 - data-engineering
 modules:
 - learn.wwl.administer-fabric
-- learn.wwl.introduction-end-analytics-use-microsoft-fabric 
 - learn.wwl.describe-medallion-architecture
 - learn-wwl.implement-cicd-in-fabric
-#- learn-wwl.orchestrate-processes-in-fabric
+- learn.wwl.use-data-factory-pipelines-fabric
 trophy:
   uid: learn.wwl.implement-and-manage-an-analytics-solution.trophy
