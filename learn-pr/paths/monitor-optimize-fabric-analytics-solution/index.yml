@@ -27,5 +27,6 @@ subjects:
 modules:
 - learn.wwl.monitor-fabric-data-warehouse
 - learn.wwl.monitor-fabric-items
+- learn.wwl.optimize-performance-microsoft-fabric
 trophy:
   uid: learn.wwl.monitor-optimize-fabric-analytics-solution.trophy
