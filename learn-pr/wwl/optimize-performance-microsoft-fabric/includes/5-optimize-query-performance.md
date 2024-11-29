@@ -94,7 +94,7 @@ In most transactional databases that are used in business applications, the data
 
 Often, a data warehouse is organized as a *star schema*, in which a fact table is directly related to the dimension tables, as shown in this example:
 
-[ ![Image of a traditional star schema.](../media/star-schema.png)](../media/star-schema.png#lightbox)
+[ ![Diagram of a traditional star schema.](../media/star-schema.png)](../media/star-schema.png#lightbox)
 
 You can use the attributes of something to group together numbers in the fact table at different levels. For example, you could find the total sales revenue for a whole region or just for one customer. The information for each level can be stored in the same dimension table.
 
