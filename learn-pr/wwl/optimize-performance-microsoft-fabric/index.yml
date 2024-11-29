@@ -9,8 +9,8 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: fabric
   ms.custom:
-title: Optimize an analytics solution.
-summary: Optimize an analytics solution.
+title: Optimize an analytics solution in Microsoft Fabric
+summary: Some useful approaches and links on how to optimize data movement within Microsoft Fabric
 abstract: |
   In this module, you learn to:
 
