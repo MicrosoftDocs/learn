@@ -65,6 +65,7 @@ The dashboard shows an overview of your compliance status with the set of suppor
 1. List of all controls for that standard.
 1. View the details of passing and failing assessments associated with that control.
 1. Number of affected resources.
+1. Severity of the alert. 
 
 Some controls are grayed out. These controls don't have any Microsoft Defender for Cloud assessments associated with them. Check their requirements and assess them in your environment. Some of these controls might be process-related and not technical.
 
