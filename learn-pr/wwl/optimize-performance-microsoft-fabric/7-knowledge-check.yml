@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/14/2024
+  ms.date: 11/21/2024
   author: JamesHerring
   ms.author: jamesh
   ms.topic: unit
@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "V-Order is used to increase the number of small files for efficient data storage."
       isCorrect: false
-      explanation: "Incorrect. V-Order does not increase the number of small files, it enhances read performance by applying sorting, row group distribution, dictionary encoding, and compression to Parquet files."
+      explanation: "Incorrect. V-Order doesn't increase the number of small files, it enhances read performance by applying sorting, row group distribution, dictionary encoding, and compression to Parquet files."
     - content: "V-Order is used to disable write-time optimization for the Parquet file format."
       isCorrect: false
       explanation: "Incorrect. V-Order is a write-time optimization for the Parquet file format, not a tool to disable it."
@@ -40,10 +40,10 @@ quiz:
     choices:
     - content: "It performs the actual data processing tasks."
       isCorrect: false
-      explanation: "Incorrect. The actual data processing tasks are performed by executor processes on worker nodes, not the head node."
+      explanation: "Incorrect. The executor performs data processing tasks by processes on worker nodes, not the head node."
     - content: "It stores the data to be processed."
       isCorrect: false
-      explanation: "Incorrect. The head node does not store data; it coordinates distributed processes."
+      explanation: "Incorrect. The head node doesn't store data; it coordinates distributed processes."
     - content: "It coordinates distributed processes through a driver program."
       isCorrect: true
       explanation: "Correct. The head node in a Spark pool coordinates distributed processes through a driver program."
@@ -51,7 +51,7 @@ quiz:
     choices:
     - content: "Item permissions are used to grant access to all items within a workspace."
       isCorrect: false
-      explanation: "Incorrect. Item permissions are not for granting access to all items within a workspace, that's the role of workspace roles."
+      explanation: "Incorrect. Item permissions aren't for granting access to all items within a workspace, that's the role of workspace roles."
     - content: "Item permissions are used to restrict users from connecting using the SQL connection string."
       isCorrect: false
       explanation: "Incorrect. Item permissions, specifically the 'Read' permission, actually allow users to connect using the SQL connection string."
@@ -62,10 +62,10 @@ quiz:
     choices:
     - content: "To launch the exercise"
       isCorrect: false
-      explanation: "Incorrect. Launching the exercise is not the main purpose of using Apache Spark in Microsoft Fabric."
+      explanation: "Incorrect. Launching the exercise isn't the main purpose of using Apache Spark in Microsoft Fabric."
     - content: "To enable a Fabric trial license"
       isCorrect: false
-      explanation: "Incorrect. Enabling a Fabric trial license is not the main purpose of using Apache Spark in Microsoft Fabric."
+      explanation: "Incorrect. Enabling a Fabric trial license isn't the main purpose of using Apache Spark in Microsoft Fabric."
     - content: "To analyze and visualize data from files in lakehouse"
       isCorrect: true
       explanation: "Correct. The main purpose of using Apache Spark in Microsoft Fabric is to analyze and visualize data from files in lakehouse."

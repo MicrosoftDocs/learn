@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.optimize-performance-microsoft-fabric.optimize-spark-performance
-title: Monitor and refreshing semantic models
+title: Optimize Spark performance
 metadata:
-  title: Monitor and refreshing semantic models
-  description: "Monitor and refreshing semantic models"
-  ms.date: 11/14/2024
+  title: Optimize Spark performance
+  description: "Optimize Spark performance"
+  ms.date: 11/19/2024
   author: JamesHerring
   ms.author: jamesh
   ms.topic: unit
