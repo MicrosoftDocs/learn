@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.github.responsible-ai
+metadata:
+  title: GitHub responsible AI
+  description: Strengthen your AI knowledge through courses covering essential topics such as machine learning, facial recognition, generative AI, and responsible AI practices. Learn how AI tools detect and analyze faces, explore the creation of content with generative models, and embrace responsible considerations in AI development. These foundational classes build expertise in AI while focusing on responsible technology use. 
+  brand: github
+  ms.date: 10/24/2024
+  author: soyetubo
+  ms.author: kichand
+  ms.topic: learning-path
+title: GitHub responsible AI
+summary: Strengthen your knowledge of essential AI topics while focusing on responsible technology use.
+roles:
+  - startup-founder
+  - developer
+products:
+  - github
+modules:
+  - learn.wwl.get-started-ai-fundamentals
+  - learn.wwl.detect-analyze-faces
+  - learn.wwl.fundamentals-generative-ai
+  - learn.wwl.embrace-responsible-ai-principles-practices
+levels:
+  - beginner
+iconUrl: /training/achievements/generic-trophy.svg
+prerequisites: |
+  - A [GitHub](https://github.com) account
+  - Basic understanding of AI fundamentals
+trophy:
+  uid: learn.github.responsible-ai.trophy

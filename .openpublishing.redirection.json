@@ -34435,6 +34435,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/2-migrate-app-containerization-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/3-exercise-setup-host-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/4-exercise-discover-aspnet-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/5-exercise-build-app-container-image.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/6-deploy-app-container-aks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-aspnet-app-azure-app-service/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
+      "redirect_document_id": false
+    },
+    {  
       "source_path": "learn-pr/language/cpp-first-program/1-introduction.yml",
       "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
       "redirect_document_id": false
@@ -34983,6 +35023,51 @@
       "source_path": "learn-pr/azure/optimize-your-web-apps-with-redis/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/github-ethical-ai/index.yml",
+      "redirect_url": "/training/paths/github-responsible-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/index.yml",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/1-introduction.yml",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/2-what-is-azure-netapp-files.yml",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/3-understand-application-volume-groups.yml",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/4-connect-sap-hana-vms.yml",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-netapp-files-sap-hana/6-summary.yml",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path":"learn-pr/achievements/learn.azure.azure-netapp-files-sap-hana.badge.yml",
+      "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
+      "redirect_document_id": "false"
     }
   ]
 }

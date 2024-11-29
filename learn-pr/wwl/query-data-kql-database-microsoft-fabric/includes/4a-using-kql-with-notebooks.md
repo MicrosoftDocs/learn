@@ -1,4 +1,4 @@
-# Spark Connector for Microsoft Fabric and KQL
+A Spark connector for KQL is included for use in notebook development to give the user greater flexibility in handling unstructured and streaming datasources.
 
 ## Overview
 The Spark Connector for Microsoft Fabric is an open-source project that enables seamless data integration between Apache Spark and various data sources. It supports both data source and data sink operations, allowing you to move data to and from Spark clusters efficiently.

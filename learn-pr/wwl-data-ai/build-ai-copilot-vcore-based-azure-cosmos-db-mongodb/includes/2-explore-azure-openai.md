@@ -1,4 +1,4 @@
-The Azure OpenAI Service offers API access to advanced language models such as GPT-4, GPT-4 Turbo with Vision, GPT-3.5-Turbo, and the Embeddings series. These models are flexible, supporting tasks like content generation, summarization, and image understanding. You can access the models through REST APIs, language specific SDKs, or directly via the Azure OpenAI Studio. 
+The Azure OpenAI Service offers API access to advanced language models such as GPT-4, GPT-4 Turbo with Vision, GPT-3.5-Turbo, and the Embeddings series. These models are flexible, supporting tasks like content generation, summarization, and image understanding. You can access the models through REST APIs, language specific SDKs, or directly via the Azure AI Foundry portal. 
 
 ## Security, access control, and ethical AI use
 

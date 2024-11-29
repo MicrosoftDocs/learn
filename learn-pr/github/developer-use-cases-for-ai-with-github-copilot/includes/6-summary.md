@@ -9,7 +9,7 @@ Now that you're finished with this module, moving forward, developers should:
 ## References
 
 - [GitHub Copilot features](https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features)
-- [GitHub Copilot for Developers](https://docs.github.com/copilot/developers)
+- [GitHub Copilot for Developers](https://docs.github.com/en/copilot)
 - [Responsible use of GitHub Copilot features](https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features)
 - [Example prompts for Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/example-use-cases/example-prompts-for-copilot-chat)
 - [Write more code by writing less code with GitHub Copilot](https://resources.github.com/videos/write-more-code-by-writing-less-code-with-github-copilot/)

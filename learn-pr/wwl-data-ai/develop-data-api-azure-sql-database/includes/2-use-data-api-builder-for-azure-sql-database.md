@@ -17,7 +17,7 @@ To see a list of feature available for Data API builder, see [Feature availabili
 
 ## Use Data API Builder
 
-To get started with Azure Data API Builder, ensure you have an Azure subscription and the necessary tools installed, such as the [latest .NET 8](/download/dotnet-framework?azure-portal=true) and [Azure Developer CLI](/azure/developer/azure-developer-cli/overview?azure-portal=true).
+To get started with Azure Data API Builder, ensure you have an Azure subscription and the necessary tools installed, such as the [latest .NET 8](/dotnet/framework/install/) and [Azure Developer CLI](/azure/developer/azure-developer-cli/overview?azure-portal=true).
 
 1. **Create a new project:** Use the Azure Developer CLI to create and deploy the required services. For example, use the Azure Developer CLI to deploy an Azure Static Web App that hosts the Data API Builder. Navigate to the directory where you want to create your project and run the following command to create a new Azure Static Web App project.
 

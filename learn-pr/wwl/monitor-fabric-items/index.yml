@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: fabric
   ms.custom:
-title: Monitor and optimize an analytics solution.
+title: Monitor and optimize an analytics solution
 summary: Monitor and optimize an analytics solution.
 abstract: |
   In this module, you learn to:
@@ -20,7 +20,7 @@ abstract: |
 
   - Monitor semantic models
 
-  - Configure alerts in Fabric
+  - Monitor Fabric proactively with Activator
 prerequisites: |
   Before starting this module, you should be familiar with Microsoft Fabric lakehouses and Apache Spark.
 iconUrl: /training/achievements/generic-badge.svg

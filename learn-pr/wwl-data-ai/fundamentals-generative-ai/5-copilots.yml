@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-generative-ai.copilots
-title: What are copilots?
+title: Understand agents
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: What are copilots?
-  description: Copilots are AI-powered assistants based on large language models. See examples of these generative AI applications that work alongside you to dramatically increase productivity and extend your capabilities.
+  title: Understand agents
+  description: Agents are AI-powered assistants based on large language models. See examples of these generative AI applications that work alongside you to dramatically increase productivity and extend your capabilities.
   author: sherzyang
   ms.author: sheryang
-  ms.date: 5/15/2024
+  ms.date: 11/26/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
