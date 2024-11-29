@@ -1,4 +1,4 @@
-Azure Data Factory (ADF) and Azure Synapse pipelines maintain a separate Platform as a Service (PaaS) roadmaps. These two solutions continue to coexist alongside Fabric Data Factory, which serves as the Software as a Service (SaaS) offering. ADF and Synapse pipelines remain fully supported, and there are no plans for deprecation. It's important to highlight that, for any upcoming projects, our suggestion is to initiate them using Fabric Data Factory. Additionally, we have strategies in place to facilitate the transition of ADF and Synapse pipelines to Fabric Data Factory, enabling them to take advantage of new Fabric functionalities. You can learn more about this [here.](https://learn.microsoft.com/fabric/data-factory/upgrade-paths#migrate-from-azure-data-factory-adf)
+Azure Data Factory (ADF) and Azure Synapse pipelines maintain a separate Platform as a Service (PaaS) roadmaps. These two solutions continue to coexist alongside Fabric Data Factory, which serves as the Software as a Service (SaaS) offering. ADF and Synapse pipelines remain fully supported, and there are no plans for deprecation. It's important to highlight that, for any upcoming projects, our suggestion is to initiate them using Fabric Data Factory. Additionally, we have strategies in place to facilitate the transition of ADF and Synapse pipelines to Fabric Data Factory, enabling them to take advantage of new Fabric functionalities. You can learn more about this [here.](/fabric/data-factory/upgrade-paths#migrate-from-azure-data-factory-adf)
 
 ## Maximizing Data Movement Throughput with Fabric Data Factory
 
@@ -15,7 +15,7 @@ To estimate overall throughput, measure the minimum throughput available with th
 
 - **Source Data Store**
 - **Destination Data Store**
-- **Network Bandwidth**: Between the source and destination data stores.
+- **Network Bandwidth**: This is the bandwidth between the source and destination data stores.
 
 ## Performance Innovations
 

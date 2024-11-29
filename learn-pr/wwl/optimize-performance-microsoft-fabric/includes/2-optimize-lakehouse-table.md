@@ -87,4 +87,4 @@ As Delta tables change, performance and storage cost efficiency tend to degrade 
 - **Read Overhead**: Update and delete operations eventually create read overhead; Parquet files are immutable by design, so Delta tables add new Parquet files with the changeset, further amplifying the issues imposed by the first two items.
 - **Obsolete Files**: No longer needed data files and log files available in the storage.
 
-You can find more information on these and more optimization techniques in the [Microsoft Learn](https://learn.microsoft.com/fabric/data-engineering/delta-optimization-and-v-order?tabs=sparksql) content.
+You can find more information on these and more optimization techniques in the [Microsoft Learn](/fabric/data-engineering/delta-optimization-and-v-order?tabs=sparksql) content.
