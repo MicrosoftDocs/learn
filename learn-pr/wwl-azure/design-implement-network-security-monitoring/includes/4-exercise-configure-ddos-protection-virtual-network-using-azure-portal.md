@@ -13,7 +13,7 @@ In this exercise, you're going to run a mock DDoS attack on the virtual network.
 - **Task 3**: Configure DDoS telemetry.
 - **Task 4**: Configure DDoS diagnostic logs.
 - **Task 5**: Configure DDoS alerts.
-- **Task 6**: Monitor a DDos test attack.
+- **Task 6**: Monitor a DDoS test attack.
 
 > [!NOTE]
 > Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning.

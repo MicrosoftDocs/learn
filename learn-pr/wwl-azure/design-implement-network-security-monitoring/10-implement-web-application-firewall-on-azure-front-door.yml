@@ -23,7 +23,7 @@ quiz:
       explanation: "Incorrect. There are no modes called Default or Custom."
     - content: "WAF policy can either be in Default Rule Set mode or Detection mode."
       isCorrect: false
-      explanation: "Incorrect. By default, the WAF policy is in Detection mode, however there is no mode called Default Rule Set."
+      explanation: "Incorrect. By default, the WAF policy is in Detection mode, however there's no mode called Default Rule Set."
     - content: "WAF policy can either be in Prevention mode or Detection mode."
       isCorrect: true
       explanation: "Correct. By default, the WAF policy is in Detection mode, but you can change it to Prevention mode."
@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "String rules and match rules."
       isCorrect: false
-      explanation: "Incorrect. There are two types of custom rules: match rules and rate limit rules. There is no string rule."
+      explanation: "Incorrect. There are two types of custom rules: match rules and rate limit rules. There's no string rule."
     - content: "Match rules and rate limit rules."
       isCorrect: true
       explanation: "Correct. There are two types of custom rules: match rules and rate limit rules."
     - content: "Priority rules and rate limit rules."
       isCorrect: false
-      explanation: "Incorrect. There are two types of custom rules: match rules and rate limit rules. There is no Priority rule."
+      explanation: "Incorrect. There are two types of custom rules: match rules and rate limit rules. There's no priority rule."

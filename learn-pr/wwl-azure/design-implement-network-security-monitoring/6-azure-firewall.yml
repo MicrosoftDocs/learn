@@ -37,4 +37,4 @@ quiz:
       explanation: "Correct. Priority settings can be any number between 100 and 65000. With 100 being the highest priority."
     - content: "110"
       isCorrect: false
-      explanation: "Incorrect. 110 will be considered lower priority than 100. The smaller the number, the higher the priority."
+      explanation: "Incorrect. 110 is a lower priority than 100. The smaller the number, the higher the priority."

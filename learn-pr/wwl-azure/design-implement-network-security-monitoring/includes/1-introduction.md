@@ -21,6 +21,6 @@ In this module, you:
 
 ## Prerequisites
 
-- Experience with networking concepts, such as IP addressing, Domain Name System (DNS) and routing.
+- Experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing.
 - Experience with network connectivity methods, such as VPN or WAN.
 - Experience with the Azure portal and Azure PowerShell.

@@ -1,5 +1,5 @@
 
-Network security covers a variety of technologies, devices, and processes. Security provides a set of rules and configurations designed to protect the integrity, confidentiality, and accessibility of computer networks and data. Every organization, regardless of size, industry, or infrastructure, requires a degree of network security solutions. These solutions protect from the ever-growing risks of attacks.
+Network security covers various technologies, devices, and processes. Security provides a set of rules and configurations designed to protect the integrity, confidentiality, and accessibility of computer networks and data. Every organization, regardless of size, industry, or infrastructure, requires a degree of network security solutions. These solutions protect from the ever-growing risks of attacks.
 
 ## Network Security
 
@@ -72,7 +72,7 @@ Some controls are grayed out. These controls don't have any Microsoft Defender f
 
 To generate a PDF report with a summary of your current compliance status for a particular standard, select Download report.
 
-:::image type="content" source="../media/download-report-e839f272.png" alt-text="Screenshot of the the download regulatory compliance report." lightbox="../media/download-report-e839f272.png":::
+:::image type="content" source="../media/download-report-e839f272.png" alt-text="Screenshot of the download regulatory compliance report." lightbox="../media/download-report-e839f272.png":::
 
 The report provides a high-level summary of your compliance status for the selected standard based on Microsoft Defender for Cloud assessments data. The report is organized according to the controls of that standard. The report can be shared with relevant stakeholders and might provide evidence to internal and external auditors.
 
