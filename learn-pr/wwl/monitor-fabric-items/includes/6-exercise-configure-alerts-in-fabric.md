@@ -5,4 +5,4 @@ Now it's your turn to set up an alert on an eventstream in fabric.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2259245&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2260611&azure-portal=true)
