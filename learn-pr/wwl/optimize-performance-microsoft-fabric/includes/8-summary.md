@@ -5,5 +5,5 @@ The main takeaways from this module include the understanding of Apache Spark as
 Other Reading:
 
 1. [Introduction to Azure Data Factory](/azure/data-factory/introduction)
-2. [Getting Started with Apache Spark](/docs/latest/quick-start.html)
-3. [Securing Data in Microsoft Fabric](/azure/synapse-analytics/security/how-to-secure-workspace)
+2. [Getting Started with Apache Spark](/fabric/data-engineering/create-and-use-environment)
+3. [Securing Data in Microsoft Fabric](/fabric/security/security-overview)
