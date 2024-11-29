@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-fabric-items
 metadata:
-  title: Monitor and optimize an analytics solution in Microsoft Fabric
-  description: "Monitor and optimize an analytics solution. This module includes monitoring, semantic models, extraction, transformation, loading (ETL), and alerting"
+  title: Monitor an analytics solution in Microsoft Fabric
+  description: "This module includes monitoring, semantic models, extraction, transformation, loading (ETL), and alerting"
   ms.date: 11/14/2024
   author: JamesHerring
   ms.author: jamesh
   ms.topic: module-standard-task-based
   ms.service: fabric
   ms.custom:
-title: Monitor and optimize an analytics solution
-summary: Monitor and optimize an analytics solution.
+title: Monitor an analytics solution in Microsoft Fabric
+summary: Monitor an analytics solution.
 abstract: |
   In this module, you learn to:
 
