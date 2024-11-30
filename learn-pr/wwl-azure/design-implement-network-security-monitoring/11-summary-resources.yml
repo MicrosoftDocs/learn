@@ -2,16 +2,14 @@
 uid: learn.wwl.design-implement-network-security-monitoring.summary-resources
 title: Summary and resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary and resources
   description: "Summary and resources"
-  ms.date: 02/08/2024
+  ms.date: 11/29/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/11-summary-resources.md)]
