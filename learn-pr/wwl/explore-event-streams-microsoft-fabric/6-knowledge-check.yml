@@ -14,7 +14,7 @@ durationInMinutes: 6
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the primary function of the vusual editor in Microsoft Fabric eventstreams?"
+  - content: "What is the primary function of the visual editor in Microsoft Fabric eventstreams?"
     choices:
     - content: "It allows you to write code for managing the infrastructure of your eventstream."
       isCorrect: false

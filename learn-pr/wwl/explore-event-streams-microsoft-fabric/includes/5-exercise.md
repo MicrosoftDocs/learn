@@ -1,4 +1,4 @@
-In this exercise, you'll explore how to use an eventstream to capture a source of streaming data, transform it, and load the transformed event data into a Fabric eventhouse.
+In this exercise, you'll explore how to use an eventstream to capture a source of streaming data, transform it, and load the transformed event data into a table for further analysis.
 
 This lab takes approximately **30** minutes to complete.
 
