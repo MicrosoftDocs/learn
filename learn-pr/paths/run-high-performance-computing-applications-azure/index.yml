@@ -29,6 +29,7 @@ products:
 - azure-virtual-machines
 - azure-cyclecloud
 - azure-netapp-files
+- azure-managed-lustre
 subjects:
 - cloud-computing
 - infrastructure
