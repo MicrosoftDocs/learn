@@ -10,7 +10,7 @@ To begin the manual evaluation process, it's essential to prepare a diverse set 
 
 ## Test the selected model in the chat playground
 
-When you develop an chat application, you use a language model to generate a response. You create a chat application by developing a prompt flow that encapsulates your chat application's logic, which can use multiple language models to ultimately generate a response to a user question.
+When you develop a chat application, you use a language model to generate a response. You create a chat application by developing a prompt flow that encapsulates your chat application's logic, which can use multiple language models to ultimately generate a response to a user question.
 
 Before you test your app's response, you can test the selected language model's response to verify the individual model works as expected. You can test a model you deployed in the Azure AI Foundry portal by interacting with it in the **chat playground**.
 

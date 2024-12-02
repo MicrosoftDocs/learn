@@ -21,7 +21,7 @@ Some considerations you can take into account when deciding on a foundation mode
 - **Language support**: Explore which models offer the specific language support or multilingual capabilities that you need for your use case.
 
 > [!Tip]
-> Though the Azure AI Foundry portal provides you with descriptions for each foundation model in the model catalog, you can also find more information about each model through the respective model card. The model cards are referenced in the overview of each model and hosted on [the website of Hugging Face](https://huggingface.co/models?azure-portal=true)
+> Though the Azure AI Foundry portal provides you with descriptions for each foundation model in the model catalog, you can also find more information about each model through the respective model card. The model cards are referenced in the overview of each model and hosted on [the website of Hugging Face](https://huggingface.co/models?azure-portal=true).
 
 ## Configure the fine-tuning job
 

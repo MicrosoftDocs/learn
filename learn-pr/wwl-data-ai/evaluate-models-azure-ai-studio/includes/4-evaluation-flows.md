@@ -1,4 +1,4 @@
-When you want to create a generative AI app, you use prompt flow to develop the chat application. You can evaluate the performance of a app by evaluating the responses after running your flow.
+When you want to create a generative AI app, you use prompt flow to develop the chat application. You can evaluate the performance of an app by evaluating the responses after running your flow.
 
 ## Test your flow with individual prompts
 
