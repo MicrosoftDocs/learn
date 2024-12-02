@@ -17,7 +17,7 @@ To create an ExpressRoute Global Reach authorization key in the private cloud:
 
 1. The new key appears in the list of authorization keys for the private cloud:
 
-    :::image type="content" source="../media/5-new-auth-key-private-cloud.png" alt-text="Screenshot of the Azure portal showing the new ExpressRoute Global Reach authorization key in the key list for the private cloud.":::
+    :::image type="content" source="../media/5-new-expressroute-connectivity-auth-key-created.png" alt-text="Screenshot of the Azure portal showing the new ExpressRoute Global Reach authorization key in the key list for the private cloud.":::
 
 1. Use the authorization key, ExpressRoute ID, and a /29 address block to complete the peering.
 
