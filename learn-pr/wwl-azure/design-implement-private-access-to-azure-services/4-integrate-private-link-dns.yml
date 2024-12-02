@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "It's a nonvirtual public IP address that is used to facilitate a communication channel to Azure platform resources."
       isCorrect: false
-      explanation: "Incorrect. in a nonvirtual network scenario, a private IP address is used instead of 168.63.129.16. This private IP address is dynamically discovered through DHCP."
+      explanation: "Incorrect. In a nonvirtual network scenario, a private IP address is used instead of 168.63.129.16. This private IP address is dynamically discovered through DHCP."
     - content: "It's a static address of a DNS forwarder."
       isCorrect: false
       explanation: "Incorrect. 168.63.129.16 is a virtual public IP address that is used to facilitate a communication channel to Azure platform resources."
