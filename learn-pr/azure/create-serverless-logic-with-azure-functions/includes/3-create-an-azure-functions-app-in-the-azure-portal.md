@@ -80,7 +80,7 @@ Let's create a function app in the Azure portal. Completing this module incurs a
 
     The **Create a resource** pane appears.
 
-1. In the menu, select **Internet of Things**, and select **Function App**.Alternatively search for **Function App**.  Select the **Create** button. The **Create Function App** pane appears.
+1. In the menu, select **Internet of Things**, and select **Function App**. Alternatively search for **Function App**.  Select the **Create** button. The **Create Function App** pane appears.
 
 1. Choose the **Consumption** hosting option and **Select**. On the following page's **Basics** tab, enter the following values for each setting.
 
