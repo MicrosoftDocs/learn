@@ -50,14 +50,14 @@ The following snippet is the *function.json* file for this scenario.
 }
 ```
 
-Our JSON configuration specifies that our function is triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to **outTable** in Azure Table storage. 
+Our JSON configuration specifies that our function is triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to **outTable** in Azure Table storage.
 :::zone pivot="powershell"
 For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
 :::zone-end
 This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture. We could even have multiple output bindings to push data to various services.
 
 > [!TIP]
-> To view and edit the contents of *function.json* in the Azure portal, from the Home page, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resource ID and the editable JSON code. To close the JSON view, select the **X** in the top right corner of the pane.
+> To view and edit the contents of *function.json* in the Azure portal, from the Home page, select your function app, and in the pane select **JSON View**. The Resource JSON view displays the Resource ID and the editable JSON code. To close the JSON view, select the **X** in the top right corner of the pane.
 
 Not all languages supported by Functions use the function.json file to define functions.
 
@@ -65,7 +65,7 @@ Not all languages supported by Functions use the function.json file to define fu
 
 Azure Functions has predefined function templates, which are based on a specific type of trigger. These templates, in your chosen language, make it easy to get started creating your first function.
 
-This module isn't supported for all languages supported by Functions, and the portal itself doesn't support creating functions in all languages supported by Functions. 
+This module isn't supported for all languages supported by Functions, and the portal itself doesn't support creating functions in all languages supported by Functions.
 
 For supported languages that use the function.json file to define functions, you can create and edit these functions directly in the Azure portal. These portal-supported languages include: JavaScript, PowerShell, Python, and C# Script (.csx). Languages that define functions directly in the code itself must be developed outside of the portal and deployed to Azure. These nonportal supported languages include: C#, Java, Python (v2 programming model), and JavaScript/TypeScript (Node.js v4 programming model).
 
@@ -81,11 +81,11 @@ When you create a function from a template, several files are created, including
 
 You can create or edit functions for your function app by selecting **Functions** under the **Functions** category from the Function App menu.
 
-When you select a function that you created in your function app, the Function pane opens. By selecting **Code + Test** from the Function menu, you have access to actions in the command bar to test and run the code, to save or discard changes you make, or to obtain the published URL. By selecting **Test/Run** from the command bar, you can run use cases for requests that include query strings and values.  The function's path above the code box displays the name of the file that is open. You can select a specific file from the dropdown to test or edit, for example, *function.json*. 
+When you select a function that you created in your function app, the Function pane opens. By selecting **Code + Test** from the Function menu, you have access to actions in the command bar to test and run the code, to save or discard changes you make, or to obtain the published URL. By selecting **Test/Run** from the command bar, you can run use cases for requests that include query strings and values. The function's path above the code box displays the name of the file that is open. You can select a specific file from the dropdown to test or edit, for example, *function.json*.
 
 :::image type="content" source="../media/4-file-navigation.png" alt-text="Screenshot of the function code and test editor showing the expanded Test/Run view, with menu options highlighted." lightbox="../media/4-file-navigation.png":::
 
-In the previous image, the right-hand pane has **Input** and **Output** tabs. Selecting the **Input** tab enables you to build and test the function by adding query parameters and supplying values for your query string. The **Output** tab displays the results of the request.
+In the previous image, the pane has **Input** and **Output** tabs. Selecting the **Input** tab enables you to build and test the function by adding query parameters and supplying values for your query string. The **Output** tab displays the results of the request.
 
 ## Test your Azure function
 
@@ -96,23 +96,23 @@ After you've created a function in the portal, you'll want to test it. There are
 
 ### Test in the Azure portal
 
-The portal also provides a convenient way to test your functions. As previously described, in the previous screenshot. When you select **Run** in this pane, the results automatically appear in the **Output** tab, and the **Logs** pane opens to display the status.
+The portal also provides a convenient way to test your functions. As previously described in the screenshot, you can select **Run** in this pane. The results automatically appear in the **Output** tab, and the **Logs** pane opens to display the status.
 
 ### Run function manually
 
-You can start a function by manually triggering the configured trigger. For instance, if you're using an HTTP trigger, you can one of these HTTP test tools to initiate an HTTP request to your function endpoint URL:
+You can start a function by manually triggering the configured trigger. For instance, if you're using an HTTP trigger, you can use these HTTP test tools to initiate an HTTP request to your function endpoint URL:
 
 - [Visual Studio Code](https://code.visualstudio.com/download) with an [extension from Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode)
-- [PowerShell Invoke-RestMethod](/powershell/module/microsoft.powershell.utility/invoke-restmethod)
+- [Invoke-RestMethod](/powershell/module/microsoft.powershell.utility/invoke-restmethod)
 - [Microsoft Edge - Network Console tool](/microsoft-edge/devtools-guide-chromium/network-console/network-console-tool)
 - [Bruno](https://www.usebruno.com/)
 - [curl](https://curl.se/)
 
  > [!CAUTION]  
- > For scenarios where you have sensitive data, such as credentials, secrets, access tokens, 
- > API keys, and other similar information, make sure to use a tool that protects your data 
- > with the necessary security features, works offline or locally, doesn't sync your data to 
- > the cloud, and doesn't require that you sign in to an online account. This way, you reduce 
+ > For scenarios where you have sensitive data, such as credentials, secrets, access tokens,
+ > API keys, and other similar information, make sure to use a tool that protects your data.
+ > Include necessary security features, a tool that works offline or locally, doesn't sync your data to
+ > the cloud, and doesn't require that you sign in to an online account. This way, you reduce
  > the risk around exposing sensitive data to the public.
   
 You can get the URL endpoint of an HTTP trigger by selecting **Get function URL** from the function definition page in the portal.
@@ -143,7 +143,7 @@ context.log('Enter your logging statement here');
    ```
 -->
 ::: zone pivot="powershell"
-Write to logs from your code using the `Write-Host` cmdlet, as shown in the following example: 
+Write to logs from your code using the `Write-Host` cmdlet, as shown in the following example:
 
    ```powershell
   Write-Host "Enter your logging statement here"
