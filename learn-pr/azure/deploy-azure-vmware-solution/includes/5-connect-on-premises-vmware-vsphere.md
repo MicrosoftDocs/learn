@@ -1,14 +1,14 @@
 After the Azure VMware Solution is deployed, network connectivity is the next step for a successful deployment. The Azure VMware Solution private cloud deploys onto dedicated, bare-metal servers. These servers are assigned to a single customer. The bare-metal servers need to connect to the Azure network backbone so customers can use Azure resources. The Azure VMware Solution-provided Azure ExpressRoute circuit helps the environment talk to Azure services. To reach the on-premises environment, a customer-provided ExpressRoute circuit is used, along with an ExpressRoute Global Reach configuration.
 
-## Establish an ExpressRoute Global Reach connection to the on-premises VMware environment
+## Establish an ExpressRoute Global Reach connection to the on-premises VMware vSphere environment
 
-Global Reach will connect your on-premises VMware environment to the Azure VMware Solution private cloud. Connectivity is established between the Azure VMware Solution ExpressRoute circuit and a new or existing ExpressRoute circuit to an on-premises environment.
+Global Reach will connect your on-premises VMware vSphere environment to the Azure VMware Solution private cloud. Connectivity is established between the Azure VMware Solution ExpressRoute circuit and a new or existing ExpressRoute circuit to an on-premises vSphere environment.
 
 To create an ExpressRoute Global Reach authorization key in the private cloud:
 
 1. From the Azure VMware Solution private cloud **Overview**, under **Manage**, select **Connectivity** > **ExpressRoute** > **Request an authorization key**.
 
-    :::image type="content" source="../media/5-request-auth-key.png" alt-text="Screenshot of the Azure portal showing how to request an authorization key for an ExpressRoute circuit.":::
+    :::image type="content" source="../media/5-request-expressroute-connectivity-authkey.png" alt-text="Screenshot of the Azure portal showing how to request an authorization key for an ExpressRoute circuit.":::
 
 1. Enter a name for the authorization key.
 1. Select **Create**.
