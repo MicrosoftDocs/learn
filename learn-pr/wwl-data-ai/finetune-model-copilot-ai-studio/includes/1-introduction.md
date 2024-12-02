@@ -4,4 +4,4 @@ Imagine you're a developer working for a travel agency. When customers use your 
 
 There are various strategies to optimize the model's behavior and the performance of your chat application. One strategy is to fine-tune a language model, which you can then integrate with your chat application. The benefit of fine-tuning over training your own language model, is that you need less time, compute resources, and data to customize the model to your needs.
 
-In this module, you learn how to fine-tune a base model from the model catalog in the Azure AI Studio, that you can then integrate in a custom copilot.
+In this module, you learn how to fine-tune a base model from the model catalog in the Azure AI Foundry portal, that you can then integrate in a chat application.

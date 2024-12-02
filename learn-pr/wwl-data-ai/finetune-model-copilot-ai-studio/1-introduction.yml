@@ -5,10 +5,10 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Introduction
-  description: Introduction to fine-tuning a foundation model from the model catalog in Azure Machine Learning.
+  description: Introduction to fine-tuning a foundation model from the model catalog in Azure AI Foundry.
   author: madiepev
   ms.author: madiepev
-  ms.date: 10/22/2024
+  ms.date: 11/28/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
