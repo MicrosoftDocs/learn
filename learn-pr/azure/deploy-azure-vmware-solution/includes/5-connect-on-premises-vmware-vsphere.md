@@ -13,7 +13,7 @@ To create an ExpressRoute Global Reach authorization key in the private cloud:
 1. Enter a name for the authorization key.
 1. Select **Create**.
 
-    :::image type="content" source="../media/5-provide-name-auth-key-create.png" alt-text="Screenshot of the Azure portal UI for entering the name of the authorization key and selecting Create.":::
+    :::image type="content" source="../media/5-create-name-expressroute-connectivity-auth-key.png" alt-text="Screenshot of the Azure portal UI for entering the name of the authorization key and selecting Create.":::
 
 1. The new key appears in the list of authorization keys for the private cloud:
 
