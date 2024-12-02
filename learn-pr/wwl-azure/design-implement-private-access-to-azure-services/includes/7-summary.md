@@ -1,6 +1,6 @@
 After reviewing this module, you can: 
  -  Plan, create, configure, and create access to Private Endpoints.
- -  Integrate a Private Link with DNS and on-premises clients.
+ -  Integrate a Private Link with Domain Name Service and on-premises clients.
  -  Create, configure, and provide access to Service Endpoints.
 
 

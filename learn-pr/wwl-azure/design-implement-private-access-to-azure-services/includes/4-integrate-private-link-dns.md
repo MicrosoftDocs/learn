@@ -3,7 +3,7 @@ Private DNS zones are typically hosted in the same Azure subscription where the 
 
 ## Azure Private Endpoint DNS configuration
 
-This diagram shows a typical high-level architecture for enterprise environments with central DNS resolution. The name resolution for Private Link resources is done through Azure Private DNS.
+This diagram shows a typical high-level architecture for enterprise environments with central Domain Name Service (DNS) resolution. The name resolution for Private Link resources is done through Azure Private DNS.
 
 :::image type="content" source="../media/private-link-example-central-dns-73e26cad.png" alt-text="Diagram of high-level workflow of enterprise environments with central DNS resolution.":::
 
