@@ -14,7 +14,7 @@ Microsoft Defender for Cloud allows you to assess the security configuration of 
 
 In hybrid environments, Defender for Cloud can be integrated with the Log Analytics agent to collect event-log events, event-tracing telemetry, and crash dump files. Defender for Cloud can then perform an analysis of that data to make recommendations or generate alerts that can be forwarded to an organization's Security Incident and Event Management (SIEM) system.
 
-Tailwind Traders has various tools they use to assess whether the security configuration of its Windows Server and Linux workloads complies with published third-party standards. By adopting Microsoft Defender for Cloud, Tailwind Traders can monitor and remediate the security configuration of its server operating systems. Both its on-premises system, and its growing deployment of workloads in the cloud as it adopts more hybrid technologies.
+Tailwind Traders has various tools they use to assess whether the security configuration of its Windows Server and Linux workloads complies with published third-party standards. As it adopts more hybrid technologies, Tailwind Traders can use Microsoft Defender for Cloud to monitor and remediate the security configuration of its on-premises server operating system, and its growing deployment of workloads in the cloud.
 
 ## What is Microsoft Sentinel?
 
@@ -24,7 +24,7 @@ SIEM solutions store and analyze log data and event telemetry that they ingest f
 
 The following image shows a Microsoft Sentinel hybrid architecture.
 
-:::image type="content" source="../media/8-sentinel-hybrid-architecture.png" alt-text="Diagram that shows log telemetry for on-premises workloads. Also, workloads in third-party clouds forwarded to Microsoft Defender for Cloud and Microsoft Sentinel." border="false" lightbox="../media/8-sentinel-hybrid-architecture.png":::
+:::image type="content" source="../media/8-sentinel-hybrid-architecture.png" alt-text="Diagram of log telemetry for on-premises workloads, and workloads in third-party clouds that are forwarded to Microsoft Defender for Cloud and Microsoft Sentinel." border="false" lightbox="../media/8-sentinel-hybrid-architecture.png":::
 
 Microsoft Sentinel can perform the following tasks when it's supporting hybrid environments:
 
@@ -47,7 +47,7 @@ Update Management can use Microsoft Update or Windows Server Update Services (WS
 
 The following diagram shows how Update Management integrates with Azure Automation and Log Analytics workspaces.
 
-:::image type="content" source="../media/8-update-management-integration.png" alt-text="Diagram that shows a collection of on-premises and Azure VMs connecting to Azure Automation runbooks. Also, Log Analytics workspaces, and Automation Hybrid Worker solutions over Transmission Control Protocol (TCP) port 443 in a hybrid Update Management architecture." border="false" lightbox="../media/8-update-management-integration.png":::
+:::image type="content" source="../media/8-update-management-integration.png" alt-text="Diagram of on-premises and Azure VMs connecting to Azure Automation runbooks over TCP port 443 in a hybrid Update Management architecture." border="false" lightbox="../media/8-update-management-integration.png":::
 
 When you configure an update deployment, you specify:
 

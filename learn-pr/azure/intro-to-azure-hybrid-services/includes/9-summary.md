@@ -18,7 +18,7 @@ You can learn more by referencing the following documentation:
 - [Azure Stack HCI solution overview][azure-stack-hci-overview]
 - [High-performance computing (HPC) on Azure][high-performance-computing]
 - [What is Azure Arc enabled Kubernetes?][kubernetes-overview]
-- [Overview of Azure Arc enabled data services?][data-overview]
+- [Overview of Azure Arc enabled data services][data-overview]
 - [Overview of Site Recovery][site-recovery-overview]
 - [What is Azure Relay?][azure-relay-relay-what-is-it]
 - [Azure App Service Hybrid Connections][app-service-hybrid-connections]

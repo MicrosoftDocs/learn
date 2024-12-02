@@ -27,7 +27,7 @@ quiz:
       explanation: "Incorrect. You don't enable cloud tiering on the Azure file share, because the file share hosts the primary copy of all files. You enable cloud tiering on each file server that participates in Azure File Sync. This configuration ensures that the volumes that host the file shares don't run out of storage space."
     - content: "Enable cloud tiering on each file share configured with Azure File Sync on each file server."
       isCorrect: true
-      explanation: "Correct. When you enable cloud tiering, you can specify an amount of free space that must be kept available. Or, you can specify that files that aren't accessed for a certain amount of time are automatically tiered, or both. If you specify that a certain amount of free space must be kept available on the volume. Then, anytime the limit is approached, the least recently accessed files on the volume are automatically tiered to the Azure file share."
+      explanation: "Correct. When you enable cloud tiering, you can specify an amount of free space that must be kept available. Or, you can specify that files that aren't accessed for a certain amount of time are automatically tiered, or both. If you specify an amount of available free space, then the least recently accessed files are automatically tiered to the Azure file share when the limit is approached."
 
   - content: "Tailwind Traders  is currently providing clients with access to an important file server in the Sydney office by having them connect over a VPN. You're considering migrating those files to Azure. Which of the following solutions would allow those files to be accessible to internet-connected clients who have the appropriate credentials without requiring VPN access to the Sydney office?"
     choices:

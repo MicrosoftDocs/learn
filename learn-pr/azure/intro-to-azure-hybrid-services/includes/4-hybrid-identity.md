@@ -18,7 +18,7 @@ Another option is to configure the cloud-hosted AD DS domain as a child domain o
 
 :::image type="content" source="../media/4-trust-relationship-diagram.png" alt-text="Diagram that shows on-premises AD DS configured in a trust relationship with an AD DS deployment hosted on an Azure subnet." border="false" lightbox="../media/4-trust-relationship-diagram.png":::
 
-Organizations that deploy domain controllers on virtual machines (VMs) in Azure, can then deploy workloads that require line of sight to a domain controller. They can make the deployment as long as the workloads are on the same Azure Virtual Network subnet where their domain controller VMs are deployed. This model of a hybrid cloud is conceptually simple for many organizations because Azure datacenters are treated as a remote Active Directory site.
+Organizations that deploy domain controllers on virtual machines (VMs) in Azure can then deploy workloads that require line of sight to a domain controller. They can make the deployment as long as the workloads are on the same Azure Virtual Network subnet where their domain controller VMs are deployed. This model of a hybrid cloud is conceptually simple for many organizations because Azure datacenters are treated as a remote Active Directory site.
 
 For Tailwind Traders, extending its on-premises Active Directory domain or forest into Azure might be sufficient, depending on application requirements. The drawback in deploying this option is that VMs that are running all the time, in the way that domain controllers must, have an associated ongoing expense.
 

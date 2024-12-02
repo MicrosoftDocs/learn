@@ -3,7 +3,7 @@ Tailwind Traders has several applications that have front-end components that cu
 
 Tailwind Traders has some other applications that are accessed through VPN connections into the internal protected networks in the Sydney, Melbourne, and Auckland datacenters. These applications generally require users to authenticate with their on-premises Active Directory instance.
 
-In this unit, you learn about the technologies that allow Tailwind Traders to maintain applications that users connect to through Azure. Even though data or the application itself is still hosted on Tailwind Traders equipment.
+In this unit, you learn about technologies for making hybrid connections. These connections allow Tailwind Traders to maintain applications for users to connect to through Azure, even when data or the application itself is hosted on Tailwind Traders equipment.
 
 ## What is Azure Relay?
 
@@ -73,7 +73,7 @@ Application Proxy functions in the following way:
 
 The following image shows this process:
 
-:::image type="content" source="../media/6-application-proxy-process-diagram.png" alt-text="Diagram that shows Application Proxy functionality. The user is outside the organizational network making a connection through Application Proxy to an on-premises application." border="false" lightbox="../media/6-application-proxy-process-diagram.png":::
+:::image type="content" source="../media/6-application-proxy-process-diagram.png" alt-text="Diagram of a user making a connection from outside the organizational network to an on-premises application using an Application Proxy." border="false" lightbox="../media/6-application-proxy-process-diagram.png":::
 
 Users of internal networks that allow direct connection to applications should avoid using Application Proxy.
 
