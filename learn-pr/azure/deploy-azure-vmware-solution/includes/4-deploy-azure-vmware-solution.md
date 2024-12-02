@@ -135,8 +135,8 @@ To create an Azure Bastion resource:
 
 After Azure VMware Solution private cloud and the Azure Bastion resource are deployed, create a jump host to access to the private cloud. The jumpbox VM must be located in the same virtual network and subscription as Azure VMware Solution and the Azure Bastion resource. The jumpbox VM can be either a desktop or server version of Windows. The jumpbox VM will be deployed behind the Azure Bastion resource. You'll use Azure Bastion to access the jumpbox VM via RDP in the Azure portal over Transport Layer Security (TLS).
 
-## Use Azure Bastion and sign in to vCenter and NSX-T Manager
+## Use Azure Bastion and sign in to vCenter and NSX Manager
 
-Use Azure Bastion to sign in to the jumpbox VM. Then, open a web browser, go to both vCenter and NSX-T Manager, and sign in to each. The Azure portal will provide the vCenter IP address, the NSX-T Manager console's IP addresses, and credentials used for deployment. Accessing the jump host through Azure Bastion will allow you to configure NSX-T and vCenter.
+Use Azure Bastion to sign in to the jumpbox VM. Then, open a web browser, go to both vCenter and NSX Manager, and sign in to each. The Azure portal will provide the vCenter IP address, the NSX Manager console's IP addresses, and credentials used for deployment. Accessing the jump host through Azure Bastion will allow you to configure NSX and vCenter.
 
 :::image type="content" source="../media/4-vmware-credentials.png" alt-text="Screenshot of the Azure portal page, showing where login credentials are displayed after Azure VMware Solution has been deployed.":::
