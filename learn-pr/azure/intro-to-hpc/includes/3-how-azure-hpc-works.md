@@ -14,7 +14,7 @@ High-performance computing resources are offered at nearly unlimited scale on Az
 
 The highly secure cloud storage is available to customers at a massive scale. It allows HPC applications to use it efficiently, customizing with either Azure Managed Lustre, Azure NetApp Files or Cray ClusterSor.
 
-- Azure Managed Lustre is ideal for HPC workloads that require high throughput and low latency, making it suitable for applications that process large datasets quickly.
+- **Azure Managed Lustre** is ideal for HPC workloads that require high throughput and low latency, making it suitable for applications that process large datasets quickly.
 - Access large amounts of I/O with a submillisecond latency with **Azure NetApp Files**, delivered as an Azure service natively within an Azure datacenter.
 - For a high throughput storage solution, use **Cray ClusterSor**, a Lustre-based, bare-metal HPC storage solution that’s fully integrated with Azure.
 
