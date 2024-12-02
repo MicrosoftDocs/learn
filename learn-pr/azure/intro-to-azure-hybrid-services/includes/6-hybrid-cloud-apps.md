@@ -28,7 +28,7 @@ The Hybrid Connections feature of Azure App Service can use any application reso
 
 Hybrid Connections isn't limited to workloads running on Windows Server platforms. You can configure Hybrid Connections to access any resource that functions as a TCP endpoint, regardless of which application protocol is being used. For example, you can configure a hybrid connection between a web app running in Azure and a MySQL database running on an on-premises Linux virtual machine.
 
-Hybrid Connections uses a relay agent. You deply the relay agent in a location where it can establish connectivity to the TCP endpoint on the internal network and establish a connection to Azure. This connection is secured through Transport Layer Security (TLS) 1.2. Shared access signature (SAS) keys are used for authentication and authorization. 
+Hybrid Connections uses a relay agent. You deploy the relay agent in a location where it can establish connectivity to the TCP endpoint on the internal network and establish a connection to Azure. This connection is secured through Transport Layer Security (TLS) 1.2. Shared access signature (SAS) keys are used for authentication and authorization. 
 
 The following image shows a hybrid connection between a web app running in Azure and a database endpoint running on-premises.
 
