@@ -2,6 +2,8 @@
 uid: learn.design-a-data-model-with-ads.exercise-create-table-constraints-and-indexes-with-ads
 title: Create table constraints and indexes with Azure Data Studio
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create table constraints and indexes with Azure Data Studio
   description: "Create primary and foreign keys on the tables in the database. Also implement default values and check constraints in columns."
   ms.date: 03/05/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 20
 content: |
   [!include[](includes/7-exercise-create-table-constraints-and-indexes-with-ads.md)]
+

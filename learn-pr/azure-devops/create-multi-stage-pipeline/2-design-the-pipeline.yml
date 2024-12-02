@@ -2,6 +2,8 @@
 uid: learn.azdo.create-multi-stage-pipeline.2-design-the-pipeline
 title: Design the pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design the pipeline
   description: Define stages in your release pipeline and promote changes from one stage to the next.
   ms.custom: devdivchpfy22
@@ -48,3 +50,4 @@ quiz:
     - content: "Use a build completion trigger."
       isCorrect: true
       explanation: "A build completion trigger runs a build when another build, such as one for a dependent component, finishes successfully."
+

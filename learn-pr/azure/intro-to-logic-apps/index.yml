@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure-intro-to-logic-apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Logic Apps
   description: Learn how to evaluate Azure Logic Apps as an option for automating business processes using criteria such as integration, performance, control structures, and connectors.
-  ms.date: 09/24/2024
+  ms.date: 11/18/2024
   author: ecfan
   ms.author: estfan
   ms.topic: module-intro-to-product
@@ -42,3 +44,4 @@ units:
 - learn.azure-intro-to-logic-apps.when-to-use-logic-apps
 - learn.azure-intro-to-logic-apps.knowledge-check
 - learn.azure-intro-to-logic-apps.summary
+

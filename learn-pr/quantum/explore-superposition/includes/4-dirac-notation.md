@@ -1,10 +1,12 @@
-Quantum computing is a complex field that requires linear algebra and quantum mechanics to understand. How to write quantum states in a way that's easy to understand and work with? A handy notation to write quantum states is the *Dirac bra-ket* notation.
+In the previous unit, you learned how to represent superposition in a Bloch sphere. But quantum computing requires linear algebra and quantum mechanics to understand. How can you write superposition and quantum states in a way that's easy to understand and work with?
+
+In this unit, you'll learn about a handy notation to write quantum states: the *Dirac bra-ket* notation.
 
 ## What's Dirac bra-ket notation?
 
-Dirac bra-ket notation, or Dirac notation for short, is a shorthand notation that eases writing quantum states and computing linear algebra. In this notation, the possible states of quantum system are described by using symbols called _kets_, which look like this $| \rangle$.
+Dirac bra-ket notation, or Dirac notation for short, is a shorthand notation that eases writing quantum states and computing linear algebra. In this notation, the possible states of a quantum system are described by using symbols called _kets_, which look like this $| \rangle$.
 
-For example, $|0\rangle$ and $|1\rangle$ represents the 0 and 1 states of a qubit, respectively.
+For example, $|0\rangle$ and $|1\rangle$ represent the 0 and 1 states of a qubit, respectively.
 
 A qubit in the state $|\psi\rangle = |0\rangle$ means that the probability of observing 0 when you measure the qubit is 100 %. Similarly, if you measure a qubit in the state $|\psi\rangle =|1\rangle$, you always get 1.
 

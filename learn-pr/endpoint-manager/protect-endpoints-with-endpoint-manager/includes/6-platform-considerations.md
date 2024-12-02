@@ -1,4 +1,4 @@
-Microsoft Intune supports several device platforms. The available platforms that Intune can manage include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types. Each platform offers sightly different enrollment methods, devices settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
+Microsoft Intune supports several device platforms. The available platforms that Intune can manage include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types. Each device type offers sightly different enrollment methods. Including, devices settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
 
 ![Diagram of Microsoft Intune supported platforms.](../media/intro-to-endpoint-manager-08.png)
 

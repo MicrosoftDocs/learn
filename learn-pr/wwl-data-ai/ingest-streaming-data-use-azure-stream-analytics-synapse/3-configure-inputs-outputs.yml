@@ -2,6 +2,8 @@
 uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.configure-inputs-outputs
 title: Configure inputs and outputs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure inputs and outputs
   description: "Configure inputs and outputs"
   ms.date: 05/24/2023

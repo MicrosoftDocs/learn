@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.altair-azure-sphere-setup.hardware
 title: Azure Sphere hardware options for the Altair emulator
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Sphere hardware options for the Altair emulator
   description: Learn about Azure Sphere hardware options for the Altair emulator.
   ms.date: 11/16/2021
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2 # dummy number at present
 content: |
   [!include[](includes/02-hardware.md)]
+

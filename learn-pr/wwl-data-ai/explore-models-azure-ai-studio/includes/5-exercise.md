@@ -1,4 +1,4 @@
-Now, it's your chance to explore how to select, deploy, and test language models in the Azure AI Studio.
+Now, it's your chance to explore how to select, deploy, and test language models in the Azure AI Foundry portal.
 
 > [!NOTE]
 > To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.

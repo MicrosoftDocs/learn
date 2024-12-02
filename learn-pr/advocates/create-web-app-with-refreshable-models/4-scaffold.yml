@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.create-web-app-with-refreshable-models.4-scaffold
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Scaffold a web app
   description: Exercise - Scaffold a web app and create an interface for inference
   author: GitHubber17
@@ -14,3 +16,4 @@ title: Exercise - Scaffold a web app and create an interface for inference
 durationInMinutes: 10
 content: |
   [!include[](includes/4-scaffold.md)]
+

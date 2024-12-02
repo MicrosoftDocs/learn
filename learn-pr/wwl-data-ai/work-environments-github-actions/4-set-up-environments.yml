@@ -2,6 +2,8 @@
 uid: learn.wwl.work-environments-github-actions.set-up-environments
 title: Set up environments
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set up environments
   description: "Set up environments"
   ms.date: 07/10/2024

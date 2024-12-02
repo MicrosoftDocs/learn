@@ -2,6 +2,8 @@
 uid: learn.wwl.work-compute-resources-azure-machine-learning.create-use-compute-instance
 title: Create and use a compute instance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and use a compute instance
   description: Learn about how to create and use a compute instance in Azure Machine Learning. A compute instance is ideal for experimentation and development of machine learning models.
   author: wwlpublish
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-create-use-compute-instance.md)]
+

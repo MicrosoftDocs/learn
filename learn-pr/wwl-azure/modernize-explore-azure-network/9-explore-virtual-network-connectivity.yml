@@ -2,6 +2,8 @@
 uid: learn.wwl.modernize-explore-azure-network.explore-virtual-network-connectivity
 title: Explore virtual network connectivity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore virtual network connectivity
   description: "Explore virtual network connectivity"
   ms.date: 01/09/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-cosmos-db
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Cosmos DB
   description: "Learn the core features and functionality of Azure Cosmos DB."
   ms.date: 07/12/2024

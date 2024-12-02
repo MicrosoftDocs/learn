@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.troubleshoot-azure-network-infrastructure.6-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: In this unit, you'll review what you have learned about Network Watcher.
   ms.date: 01/16/2024

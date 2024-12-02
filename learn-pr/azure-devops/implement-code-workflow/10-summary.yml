@@ -2,6 +2,8 @@
 uid: learn.azdo.implement-code-workflow.10-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: This unit summarizes what you've learned and provides additional learning resources.
   ms.date: 10/24/2023
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/10-summary.md)]
+

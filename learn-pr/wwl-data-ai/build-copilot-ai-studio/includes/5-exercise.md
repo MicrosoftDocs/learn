@@ -1,7 +1,7 @@
-If you have an Azure subscription with access to the Azure OpenAI service, you can use Azure AI Studio to create a RAG-based copilot for yourself.
+If you have an Azure subscription, you can use Azure AI Foundry to create a RAG-based agent for yourself.
 
 > [!NOTE]
-> If you don't have an Azure subscription, and you want to explore Azure AI Studio, you can [sign up for an account](https://azure.microsoft.com/free?azure-portal=true), which includes credits for the first 30 days. After creating your account, you will need to apply for access to the [Azure OpenAI service](/legal/cognitive-services/openai/limited-access?azure-portal=true) for your subscription.
+> If you don't have an Azure subscription, and you want to explore Azure AI Foundry, you can [sign up for an account](https://azure.microsoft.com/free?azure-portal=true), which includes credits for the first 30 days.
 
 Launch the exercise and follow the instructions.
 

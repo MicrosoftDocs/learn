@@ -1,4 +1,3 @@
-
 In Azure API Management, policies allow the publisher to change the behavior of the API through configuration. Policies are a collection of Statements that are executed sequentially on the request or response of an API.
 
 Policies are applied inside the gateway that sits between the API consumer and the managed API. The gateway receives all requests and usually forwards them unaltered to the underlying API. However a policy can apply changes to both the inbound request and outbound response. Policy expressions can be used as attribute values or text values in any of the API Management policies, unless the policy specifies otherwise. 
@@ -74,7 +73,7 @@ In the previous example policy definition, The `cross-domain` statement would ex
 
 The policy defined in following example demonstrates how to filter data elements from the response payload based on the product associated with the request.
 
-The snippet assumes that response content is formatted as JSON and contains root-level properties named "minutely", "hourly", "daily", "flags".
+The snippet assumes that response content is formatted as JSON and contains root-level properties named *minutely*, *hourly*, *daily*, and *flags*.
 
 ```xml
 <policies>

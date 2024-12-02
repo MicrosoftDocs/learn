@@ -2,6 +2,8 @@
 uid: learn.reactors.introduction-machine-learning-models.5-linear-regression-evaluate-model
 title: 'Linear regression: Evaluating the model'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Linear regression: Evaluating the model'
   description: Learn how to evaluate models in linear regressions with machine learning models for data science.
   ms.date: 05/19/2020

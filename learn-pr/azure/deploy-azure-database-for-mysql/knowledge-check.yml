@@ -3,6 +3,8 @@ uid: learn.deploy-azure-database-for-mysql.knowledge-check
 title: Knowledge check
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   author: shreyaaithal
@@ -24,9 +26,9 @@ quiz:
     - content: "Standard_Bs"
       isCorrect: true
       explanation: "The Burstable compute tier uses the Standard_Bs VM SKU."
-    - content: "Standard_D2ds_v4"
+    - content: "Standard_Dds_v4"
       isCorrect: false
-      explanation: "Standard_D2ds_v4 VM SKU is used by the General Purpose compute tier."
+      explanation: "Standard_Dds_v4 VM SKU is used by the General Purpose compute tier."
     - content: "Standard_Eds_v4"
       isCorrect: false
       explanation: "Standard_Eds_v4 VM SKU is used by the Memory Optimized compute tier."
@@ -43,17 +45,17 @@ quiz:
       isCorrect: false
       explanation: "Azure Database for MySQL - Flexible Server uses availability zones, not cross-region deployments, to maximize high availability."
  
-  - content: "Which Azure Database for MySQL - Flexible Server setting can be configured only during the initial deployment?"
+  - content: "Which of the following is a Graphical User Interface (GUI) client tool that allows you to connect to Azure Database for MySQL using Microsoft Entra ID authentication?"
     choices:
-    - content: "Network connectivity"
+    - content: "MySQL Workbench"
+      isCorrect: false
+      explanation: "MySQL Workbench does not readily allow you to connect to Azure Database for MySQL using Microsoft Entra ID authentication. You are required to acquire a Microsoft Entra ID token first, and then serve it as the password."
+    - content: "Azure Data Studio"
       isCorrect: true
-      explanation: "Network connectivity is one of the Azure Database for MySQL - Flexible Server settings that can be configured only during the initial deployment."
-    - content: "Backup retention"
+      explanation: "Azure Data Studio is a GUI client tool that allows you to connect to Azure Database for MySQL using Microsoft Entra ID authentication."
+    - content: "Azure CLI"
       isCorrect: false
-      explanation: "Backup retention for Azure Database for MySQL - Flexible Server can be configured during the initial deployment and at any point afterwards."
-    - content: "Compute tier"
-      isCorrect: false
-      explanation: "Compute tier for Azure Database for MySQL - Flexible Server can be configured during the initial deployment and at any point afterwards."
+      explanation: "Azure CLI is not a GUI client tool."
 
   - content: "Which outbound TCP port must be opened from an on-premises location to connect to the Azure Database for MySQL - Flexible Server public endpoint?"
     choices:
@@ -66,3 +68,4 @@ quiz:
     - content: "3306"
       isCorrect: true
       explanation: "To connect to the Azure Database for MySQL - Flexible Server public endpoint, you must open the outbound TCP port 3306."
+

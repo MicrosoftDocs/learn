@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-cloud-shell.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: In this unit, you consider a scenario and whether you should use Azure Cloud Shell to address the issues.

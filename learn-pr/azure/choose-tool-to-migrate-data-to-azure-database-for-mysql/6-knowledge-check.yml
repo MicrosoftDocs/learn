@@ -2,6 +2,8 @@
 uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "This unit is the knowledge check for the module migrating data to Azure Database for MySQL - Flexible Server. It covered migration phases and considerations, tool options, and migration approaches."
   ms.date: 08/28/2024
@@ -9,7 +11,7 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: unit
-durationInMinutes: 15
+durationInMinutes: 5
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -57,7 +59,7 @@ quiz:
     - content: "Use mydumper and myloader to create and restore data."
       isCorrect: false
       explanation: "Even though these tools are fast, they'll still require downtime to migrate data once the application is frozen."
-    - content: "Use Azure Migrate and Azure Database Migration Service to automate migration and minimize downtime."
+    - content: "Use Azure Database Migration Service to automate migration and minimize downtime."
       isCorrect: true
       explanation: "Azure DMS automates the migration process, and can perform an online migration, or a near-zero downtime offline migration."
   - content: "You want to test application changes against realistic data. Which option should you pick?"
@@ -82,3 +84,4 @@ quiz:
     - content: "Use Percona XtraBackup and Azure Database for MySQL Import CLI to create the target server, and then enable HA."
       isCorrect: true
       explanation: "This is a simple way to migrate the data, and ensure managed high-availability in the flexible server."
+

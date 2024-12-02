@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-power-bi-assets.explore-use-lineage-view
-title: Explore Power BI assets using lineage view
+title: Use lineage view and endorse data assets
 metadata:
-  title: Explore Power BI assets using lineage view
-  description: "Explore Power BI assets using lineage view"
-  ms.date: 04/03/2023
-  author: wwlpublish
+  title: Use lineage view and endorse data assets
+  description: "Use lineage view and endorse Power BI assets in the Power BI service."
+  ms.date: 11/12/2024
+  author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/3-explore-use-lineage-view.md)]

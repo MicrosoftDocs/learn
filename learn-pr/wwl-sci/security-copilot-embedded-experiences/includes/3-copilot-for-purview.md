@@ -1,27 +1,27 @@
-Microsoft Copilot for Security is now accessible from within Microsoft Purview data security solutions, as part of the embedded experience. With Microsoft Copilot in Microsoft Purview, data security and compliance admins can use the power of AI to assess risk exposure more quickly than is otherwise possible, directly from within Microsoft Purview solutions.
+Microsoft Security Copilot is now accessible from within Microsoft Purview data security solutions, as part of the embedded experience. With Copilot in Microsoft Purview, data security and compliance admins can use the power of AI to assess risk exposure more quickly than is otherwise possible, directly from within Microsoft Purview solutions.
 
 The scenarios supported as part of the embedded experience are:
 
 - Gain comprehensive summary of Data Loss Prevention alerts.
 - Gain comprehensive summary of Insider Risk Management alerts.
 - Gain contextual summary of Communication Compliance policy matches.
-- Gain contextual summary of evidence collected in eDiscovery review sets (Preview).
+- Gain contextual summary of evidence collected in eDiscovery review sets.
 
-For all use cases supported through the embedded experience, as is the case with the standalone experience, your organization must be onboarded to Microsoft Copilot for Security, the Purview plugin must be enabled in Copilot, and your organization must be licensed and onboarded to the applicable Microsoft Purview solutions. To enable the Microsoft Purview, the option to allow Copilot for Security to access data from your Microsoft 365 services must be enabled, as part of the owner settings.
+For all use cases supported through the embedded experience, as is the case with the standalone experience, your organization must be onboarded to Security Copilot, the Purview plugin must be enabled in Copilot, and your organization must be licensed and onboarded to the applicable Microsoft Purview solutions. To enable the Microsoft Purview plugin, the option to allow Security Copilot to access data from your Microsoft 365 services must be enabled, as part of the owner plugin settings.
 
-:::image type="content" source="../media/purview-plugin-requirement.png" lightbox="../media/purview-plugin-requirement.png" alt-text="Screen capture of the setting to allow Copilot for Security to access data from your Microsoft 365 services, which is required to enable the Microsoft Purview plugin.":::
+:::image type="content" source="../media/purview-plugin-requirement-new.png" lightbox="../media/purview-plugin-requirement-new.png" alt-text="Screen capture of the setting to allow Security Copilot to access data from your Microsoft 365 services, which is required to enable the Microsoft Purview plugin.":::
 
 Additionally, users must have the appropriate role permissions for both Copilot and the Purview solutions. For Copilot, users need, at a minimum, the Copilot workspace contributor role or the Entra Security operator role. For Microsoft Purview, as is true for a Microsoft solution enabled via a plugin, Copilot assumes the permissions of the user when it tries to access the data to answer the queries, so you need to have the required permissions to access the data.
 
 ### Gain comprehensive summary of alerts
 
-Data security teams generally receive more data security alerts per day than they can review, leaving them exposed to risks. To help with this challenge, Microsoft Copilot in Microsoft Purview uses the power of generative AI to provide a summary for the alert you want to review and help accelerate your investigation. This capability is supported in Microsoft Purview Data Loss Prevention and Microsoft Purview Insider Risk Management.
+Data security teams generally receive more data security alerts per day than they can review, leaving them exposed to risks. To help with this challenge, Copilot in Microsoft Purview uses the power of generative AI to provide a summary for the alert you want to review and help accelerate your investigation. This capability is supported in Microsoft Purview Data Loss Prevention and Microsoft Purview Insider Risk Management.
 
 #### Data Loss Prevention
 
 To summarize Data Loss Prevention alerts using Copilot:
 
-1. Sign in to the Microsoft Purview compliance portal, or the new Microsoft Purview portal currently in preview, and select the Data Loss Prevention solution. 
+1. Sign in to the Microsoft Purview compliance portal or the new Microsoft Purview portal and select the Data Loss Prevention solution. 
 1. Navigate to the alerts queue and select the alert you want to review.
 1. Select "Get a summary from Security Copilot."
 
@@ -35,7 +35,7 @@ To summarize Data Loss Prevention alerts using Copilot:
 
 To summarize Insider Risk Management alerts using Copilot, you follow similar steps as described for DLP. 
 
-You sign in to the Microsoft Purview compliance portal, or the new Microsoft Purview portal currently in preview, and go to the Insider Risk Management solution. Navigate to the alerts queue to select the alert you want to review. Information about the alert and the option to summarize the alert are displayed.
+You sign in to the Microsoft Purview compliance portal or the new Microsoft Purview portal and go to the Insider Risk Management solution. Navigate to the alerts queue to select the alert you want to review. Information about the alert and the option to summarize the alert are displayed.
 
 :::image type="content" source="../media/copilot-insider-risk-management-v2.png" lightbox="../media/copilot-insider-risk-management-v2.png" alt-text="Screen capture of an Insider Risk Management alerts page that shows the option to summarize an alert.":::
 
@@ -58,26 +58,26 @@ Before you get started, ensure you have proper licensing to access Communication
 
 To get started:
 
-1. Navigate to the Communication Compliance solution from the Microsoft Purview compliance portal, or the new Microsoft Purview portal currently in preview, then navigate to the Policies tab in Communication Compliance.
+1. Navigate to the Communication Compliance solution from the Microsoft Purview compliance portal or the new Microsoft Purview portal, then navigate to the Policies tab in Communication Compliance.
 
 1. Navigate to a policy that uses trainable classifiers as part of the policy’s configurations and select a policy match to view message content.
 
 1. A Copilot action button appears in the upper left command bar or a Summarize action button in the lower right command bar. Select either action to generate a contextual summary of the message and supported attachments.
 
-    :::image type="content" source="../media/copilot-communication-compliance-v2.png" lightbox="../media/copilot-communication-compliance-v2.png" alt-text="Screen capture of a Communication Compliance policy alerts page and the Security Copilot summary for that policy alert.":::
+    :::image type="content" source="../media/copilot-communication-compliance-v2.png" lightbox="../media/copilot-communication-compliance-v2.png" alt-text="Screen capture of a Communication Compliance policy alerts page and the Copilot summary for that policy alert.":::
 
-1. To learn more about the message, explore other default prompts or type your own question into the text prompt in the Security Copilot side panel.
+1. To learn more about the message, explore other default prompts or type your own question into the text prompt in the Copilot side panel.
 
     :::image type="content" source="../media/copilot-communication-compliance-follow-up.png" lightbox="../media/copilot-communication-compliance-follow-up.png" alt-text="Screen capture showing more default prompts and the prompt bar to enable the user to learn more about the message that triggered the policy.":::
 
-### Gain contextual summary of evidence collected in eDiscovery review sets (Preview)
+### Gain contextual summary of evidence collected in eDiscovery review sets
 
 eDiscovery admins or managers spend a significant amount of time reviewing evidence collected in review sets. Copilot embedded with Microsoft Purview eDiscovery (Premium) can help you optimize your time. With Copilot, you can now:
 
 - Get a contextual summary of a single item in a review set.
 - Ask follow-up contextual questions about the summary.
 
-To use Copilot in Microsoft Purview with eDiscovery (Premium), currently in public preview, you must be licensed for eDiscovery (Premium) and have the appropriate role permissions for Copilot and for eDiscovery. You must have access to eDiscovery (Premium) cases, and to obtain a contextual summary for an item in a review set, the Purview Review role is required. For Copilot, you need, as a minimum, the Entra Security operator or Copilot workspace contributor role.
+To use Copilot in Microsoft Purview with eDiscovery (Premium), you must be licensed for eDiscovery (Premium) and have the appropriate role permissions for Copilot and for eDiscovery. You must have access to eDiscovery (Premium) cases, and to obtain a contextual summary for an item in a review set, the Purview Review role is required. For Copilot, you need, as a minimum, the Entra Security operator or Copilot workspace contributor role.
 
 To get started:
 
@@ -97,7 +97,7 @@ For any AI generated content, you can provide feedback and accuracy of the conte
 
 :::image type="content" source="../media/ai-accuracy-feedback-data-loss-prevention-summary.png" lightbox="../media/ai-accuracy-feedback-data-loss-prevention-summary.png" alt-text="Screen capture of the feedback options. The options are: confirmed, it looks great, off target, inaccurate, or potentially harmful, inappropriate.":::
 
-### Limitations of Copilot for Security with Microsoft Purview
+### Limitations of Copilot in Microsoft Purview
 
 The Microsoft Purview use cases supported by Copilot have the following limitations:
 

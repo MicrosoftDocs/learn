@@ -2,6 +2,8 @@
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.visualize-signalr 
 title: Exercise - Visualize and interact with simulated operations data using SignalR
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Visualize and interact with simulated operations data using SignalR
   description: Learn how to leverage SignalR to visualize and interact with simulated operations data.
   ms.date: 09/10/2024

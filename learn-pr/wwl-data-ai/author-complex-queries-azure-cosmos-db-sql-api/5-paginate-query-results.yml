@@ -2,6 +2,8 @@
 uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.create-cross-product-queries
 title: Paginate query results
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Paginate query results
   description: "Paginate query results"
   ms.date: 10/18/2022

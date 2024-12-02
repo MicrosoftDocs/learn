@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.introduction-to-azure-iot-central
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure IoT Central
   description: Evaluate whether Azure IoT Central is appropriate to quickly assess your IoT scenario.
   ms.date: 06/11/2024
@@ -10,7 +12,7 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-intro-to-product
-  ms.service: iot-central
+  ms.service: azure-iot-central
 title: Introduction to Azure IoT Central
 summary: |
   Determine when to use Azure IoT Central to quickly evaluate your IoT scenario.
@@ -42,3 +44,4 @@ units:
 - learn.introduction-to-azure-iot-central.summary
 badge:
   uid: learn.introduction-to-azure-iot-central.badge
+

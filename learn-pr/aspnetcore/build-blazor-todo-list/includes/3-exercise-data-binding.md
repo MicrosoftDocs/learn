@@ -159,6 +159,42 @@ You need a way to mark to-do items as completed, to edit existing to-do items, a
     <h3>Todo (@todos.Count(todo => !todo.IsDone))</h3>
     ```
 
+1. When you finish adding code, your Todo.razor file should resemble the following:
+
+    ```razor
+    @page "/todo"
+    @rendermode InteractiveServer
+    
+    <h3>Todo (@todos.Count(todo => !todo.IsDone))</h3>
+    
+    <ul>
+        @foreach (var todo in todos)
+        {
+            <li>
+                <input type="checkbox" @bind="todo.IsDone" />
+                <input @bind="todo.Title" />
+            </li>
+        }
+    </ul>
+    
+    <input @bind="newTodo" />
+    <button @onclick="AddTodo">Add todo</button>
+    
+    @code {
+        private List<TodoItem> todos = new();
+        string newTodo = "";
+    
+        void AddTodo()
+        {
+            if (!string.IsNullOrWhiteSpace(newTodo))
+            {
+                todos.Add(new TodoItem { Title = newTodo });
+                newTodo = string.Empty;
+            }
+        }
+    }
+    ```
+
 1. After applying the changes to the app, try adding items, editing items, and marking todo items done to test the component.
 
    ![Screenshot of the completed Todo page.](../media/todo-complete.png)

@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.write-spark-code
 title: Analyze data with Spark
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Analyze data with Spark
   description: "Analyze data with Spark"
   ms.date: 05/25/2023

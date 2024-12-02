@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-core-data-concepts.analytical-data-processing
 title: Explore analytical data processing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore analytical data processing
   description: "Explore analytical data processing"
   ms.date: 08/28/2024

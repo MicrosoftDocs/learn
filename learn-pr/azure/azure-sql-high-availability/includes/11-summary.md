@@ -24,7 +24,7 @@ You've also used PowerShell in the availability exercises. To learn more about P
 
 See the SQL Database documentation for more information about [business continuity](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview) and [high availability](/azure/azure-sql/database/high-availability-sla) in Azure SQL. You can also review the SLAs for [Azure SQL Managed Instance](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services) and [Azure SQL Database](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
 
-In the Business Critical tier, you can opt in (for no additional fee) for a [zone-redundant configuration](/azure/azure-sql/database/high-availability-sla#zone-redundant-availability) if your [region supports that](/azure/reliability/availability-zones-service-support).
+In the Business Critical tier, you can opt in (for no additional fee) for a [zone-redundant configuration](/azure/azure-sql/database/high-availability-sla#zone-redundant-availability) if your [region supports that](/azure/reliability/availability-zones-region-support).
 
 ### Availability and consistency
 

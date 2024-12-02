@@ -2,6 +2,8 @@
 uid: learn.introduction-to-device-provisioning-service.get-started-symmetric-key-attestation
 title: Examine symmetric key attestation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine symmetric key attestation
   description: "Examine symmetric key attestation"
   ms.date: 12/15/2023

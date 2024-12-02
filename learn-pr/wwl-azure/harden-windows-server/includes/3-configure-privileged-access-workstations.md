@@ -34,7 +34,7 @@ After you have PAWs configured, you should then perform the following configurat
 
 Combining a daily-user workstation and a PAW on the same device is a common practice. You combine these computers by hosting one of the operating systems in a virtual environment. However, if you combine these computers you should host the daily-use workstation virtual machine within the PAW host, and not a PAW virtual machine within a daily-user host. If the PAW is hosted in the daily user workstation and the workstation is compromised, the PAW could be compromised as well.
 
-For more information about Device Guard, see [Windows Defender Application Control and virtualization-based protection of code integrity](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control).
+For more information about Device Guard, see [Windows Defender Application Control and virtualization-based protection of code integrity](/windows/security/application-security/application-control/introduction-to-virtualization-based-security-and-appcontrol).
 
 ## Jump servers and secure bastion hosts
 

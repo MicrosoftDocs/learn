@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-core-architectural-components-of-azure.exercise-create-azure-resource
 title: Exercise - Create an Azure resource
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an Azure resource
   description: "Exercise - Create an Azure resource"
   ms.date: 09/24/2024

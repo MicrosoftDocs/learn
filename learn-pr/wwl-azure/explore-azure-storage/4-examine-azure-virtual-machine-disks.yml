@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-storage.examine-azure-virtual-machine-disks
 title: Examine Azure Virtual Machine disks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure Virtual Machine disks
   description: "Examine the three type of Azure Virtual Machine disks - operating system disks, temporary disks, and data disks."
   ms.date: 08/13/2024

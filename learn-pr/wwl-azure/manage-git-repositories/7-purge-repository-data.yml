@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-git-repositories.purge-repository-data
 title: Purge repository data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Purge repository data
   description: "Purge repository data"
   ms.date: 05/24/2024

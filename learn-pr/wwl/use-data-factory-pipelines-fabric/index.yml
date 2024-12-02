@@ -1,17 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.use-data-factory-pipelines-fabric
 metadata:
-  title: Use Data Factory pipelines in Microsoft Fabric
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Orchestrate processes and data movement with Microsoft Fabric
   description: "Use Data Factory pipelines in Microsoft Fabric"
   ms.date: 05/08/2024
   author: wwlpublish
   ms.author: jamesh
   ms.topic: module
   ms.custom:
-  - build-2023
+    - build-2023
+    - ignite-2024
   ms.service: azure
   ai-usage: human-only
-title: Use Data Factory pipelines in Microsoft Fabric
+title: Orchestrate processes and data movement with Microsoft Fabric
 summary: Microsoft Fabric includes Data Factory capabilities, including the ability to create pipelines that orchestrate data ingestion and transformation tasks.
 abstract: |
   In this module, you learn how to:

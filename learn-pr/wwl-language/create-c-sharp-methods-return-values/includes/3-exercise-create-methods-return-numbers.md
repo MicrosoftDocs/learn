@@ -1,3 +1,4 @@
+
 You might often need to return numbers from methods and use the results for other tasks. In this brief exercise, you'll practice returning `int` and `double` data types, and capturing the return values.
 
 ## Create a method that returns an integer

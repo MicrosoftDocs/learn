@@ -1,10 +1,12 @@
 ### YamlMime:Module
 uid: learn.intro-to-kubernetes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Kubernetes
   description: Get acquainted with the Kubernetes open-source container-orchestration system for automating application deployment, scaling, and management.
   manager: rayoflores
-  ms.date: 10/25/2023
+  ms.date: 11/13/2024
   author: nickomang
   ms.author: nickoman
   ms.topic: module
@@ -43,3 +45,4 @@ units:
 - learn.intro-to-kubernetes.exercise-kubernetes-functionality
 - learn.intro-to-kubernetes.when-to-use-kubernetes
 - learn.intro-to-kubernetes.summary
+

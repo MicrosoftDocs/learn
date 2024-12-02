@@ -2,6 +2,8 @@
 uid: learn.azure.build-webapp-java-tomcat.5
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: yoshioterada
@@ -54,3 +56,4 @@ quiz:
         - content: Both configure and deploy to your Azure App Service instance
           isCorrect: true
           explanation: Correct!
+

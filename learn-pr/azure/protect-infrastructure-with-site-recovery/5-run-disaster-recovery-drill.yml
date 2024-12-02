@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-infrastructure-with-azure-site-recovery.5-run-disaster-recovery-drill
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run a disaster recovery drill
   description: Here, we'll explore how to test our Azure Site Recovery configuration by running a disaster recovery drill.
   ms.date: 12/07/2023

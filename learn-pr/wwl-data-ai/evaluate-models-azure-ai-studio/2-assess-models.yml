@@ -2,9 +2,11 @@
 uid: learn.wwl.evaluate-models-azure-ai-studio.assess-models
 title: Assess the model performance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Assess the model performance
-  description: "Learn how to assess and compare the performance of language models in the Azure AI Studio."
-  ms.date: 07/24/2024
+  description: "Learn how to assess and compare the performance of language models in the Azure AI Foundry portal."
+  ms.date: 11/28/2024
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

@@ -2,6 +2,8 @@
 uid: learn.azure.cna-orchestrate-containers.8-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Multiple-choice questions
   ms.date: 12/28/2023
@@ -56,3 +58,4 @@ quiz:
     - content: "Determine the health of container images in order for Kubernetes to replace them as needed."
       isCorrect: false
       explanation: "Incorrect. While ingress controllers allow access to your containers, they don't determine the health of them."
+

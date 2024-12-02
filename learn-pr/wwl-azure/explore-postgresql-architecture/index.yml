@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-postgresql-architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore PostgreSQL architecture
   description: "PostgreSQL is an open-source relational database system that is now available as a service in Azure. In this module, you learn about the PostgreSQL architecture, and how to manage different aspects of PostgreSQL in Azure Database for PostgreSQL."
   ms.date: 05/08/2024

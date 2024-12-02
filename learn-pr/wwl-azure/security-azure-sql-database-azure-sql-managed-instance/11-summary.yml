@@ -2,6 +2,8 @@
 uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 05/29/2024

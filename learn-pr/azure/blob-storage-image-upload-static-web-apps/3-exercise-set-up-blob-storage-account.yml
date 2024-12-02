@@ -2,6 +2,8 @@
 uid: learn.blob-storage-image-upload-static-web-apps.exercise-setup-blob-storage-account
 title: Exercise - Set up your Blob Storage account
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up your Blob Storage account
   description: Set up your Blob Storage account and create a new Container that will hold the uploaded images.
   author: videlalvaro
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-set-up-blob-storage-account.md)]
+

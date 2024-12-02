@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.health-bot-language-understanding
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Language understanding in Azure Health Bot
   description: Language Understanding plays a fundamental role in the working of Azure Health Bot. 
   ms.collection: TBD
@@ -42,3 +44,4 @@ units:
 - learn.health-bot-language-understanding.8-summary
 badge:
   uid: learn.student-evangelism.health-bot-language-understanding.badge
+

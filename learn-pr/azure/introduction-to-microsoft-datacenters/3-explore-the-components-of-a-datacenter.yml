@@ -2,6 +2,8 @@
 uid: learn.introduction-to-microsoft-datacenters.explore-the-components-of-a-datacenter
 title: Explore the components of a datacenter
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the components of a datacenter
   description: Describes the physical aspects of Microsoft datacenters. 
   ms.date: 07/17/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/3-explore-the-components-of-a-datacenter.md)]
+

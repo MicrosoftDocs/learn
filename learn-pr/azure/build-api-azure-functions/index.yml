@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.build-api-azure-functions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build Serverless APIs with Azure Functions
   description: Use Visual Studio Code to build a JavaScript and Vue.js dashboard with a Serverless API powered by Azure Functions and Node.js.
   ms.date: 02/27/2024
@@ -52,3 +54,4 @@ units:
   - learn.azure.build-api-azure-functions.13-summary
 badge:
   uid: learn.azure.build-api-azure-functions.badge
+

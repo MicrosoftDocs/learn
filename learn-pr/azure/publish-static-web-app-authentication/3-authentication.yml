@@ -2,6 +2,8 @@
 uid: learn.azure.publish-static-web-app-authentication.3-authentication
 title: Manage authentication in Static Web Apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage authentication in Static Web Apps
   description: Learn how to manage authentication in Static Web Apps
   ms.date: 12/20/2022
@@ -33,3 +35,4 @@ quiz:
         - content: '/auth/logout'
           isCorrect: false
           explanation: Incorrect. The `/.auth/logout` route logs users out from the website.
+

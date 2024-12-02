@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-network-security-issues.troubleshoot-azure-firewall
 title: Troubleshoot Azure Firewall
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot Azure Firewall
   description: "Troubleshoot Azure Firewall"
   ms.date: 04/27/2023

@@ -2,6 +2,8 @@
 uid: learn.wwl.azure-event-grid.control-access-to-events
 title: Control access to events
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Control access to events
   description: "Control access to events"
   ms.date: 07/17/2024

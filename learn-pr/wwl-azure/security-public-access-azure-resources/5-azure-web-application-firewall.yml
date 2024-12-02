@@ -2,6 +2,8 @@
 uid: learn.wwl.security-public-access-azure-resources.azure-web-application-firewall
 title: Plan and implement a Web Application Firewall (WAF)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan and implement a Web Application Firewall (WAF)
   description: "Plan and implement a Web Application Firewall (WAF)"
   ms.date: 06/25/2024

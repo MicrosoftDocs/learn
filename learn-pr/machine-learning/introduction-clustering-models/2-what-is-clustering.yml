@@ -2,6 +2,8 @@
 uid: learn.machine-learning.introduction-clustering-models.what-is-clustering
 title: What is clustering?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is clustering?
   description: What is clustering?
   ms.date: 05/16/2022
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-is-clustering.md)]
+

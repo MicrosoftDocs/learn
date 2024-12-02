@@ -2,6 +2,8 @@
 uid: learn.wwl.give-your-ai-agent-skills.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -36,3 +38,4 @@ quiz:
     - content: "By using `[KernelFunction, Description(\"Function description\")]`"
       isCorrect: true
       explanation: "Correct. Native functions are declared using the `KernelFunction` decorator."
+

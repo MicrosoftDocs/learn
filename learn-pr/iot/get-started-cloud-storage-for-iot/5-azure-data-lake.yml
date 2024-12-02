@@ -2,6 +2,8 @@
 uid: learn.wwl.get-started-cloud-storage-for-iot.examine-azure-data-lake-gen-2
 title: Examine Azure Data Lake Gen2
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure Data Lake Gen2
   description: "Examine Azure Data Lake Gen2"
   ms.date: 02/16/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.design-model-deployment-solution.knowledge-check
 title: Exercise - Design a deployment solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Design a deployment solution
   description: Exercise - Design a deployment solution
   author: wwlpublish
@@ -40,3 +42,4 @@ quiz:
     - content: "Local device"
       isCorrect: false
       explanation: "Incorrect. A local device will be too expensive to have running all the time. Containers will be a more cost-effective solution."
+

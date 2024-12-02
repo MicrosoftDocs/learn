@@ -1,6 +1,6 @@
 Azure Administrators are familiar with Azure Files and the Azure File Sync agent. They know how to implement fully managed file shares in the cloud by using industry standard protocols. They understand how to use Azure File Sync to cache Azure Files shares on an on-premises Windows Server or cloud virtual machine.
 
-In this module, you learned when to use Azure File shares and how this feature compares to blobs and disks. You also reviewed Azure File features such as snapshots and soft delete. You learned how Azure File Sync can be used with on-premises data stores. You also were introduced to the Storage Explorer.
+In this module, you learned when to use Azure Files and how the service compares to Azure Blob Storage. You also reviewed Azure Files features such as snapshots and soft delete. You learned how Azure File Sync can be used with on-premises data stores. You also were introduced to Azure Storage Explorer.
 
 The main takeaways for this module are:
 

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.design-monitoring-strategy-on-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a full-stack monitoring strategy on Azure
   description: Use monitoring services on Azure to help bring operational excellence and security to your applications and infrastructure.
   ms.date: 11/13/2023
@@ -40,3 +42,4 @@ units:
 - learn.design-monitoring-strategy-on-azure.8-summary
 badge:
   uid: learn.design-monitoring-strategy-on-azure.badge
+

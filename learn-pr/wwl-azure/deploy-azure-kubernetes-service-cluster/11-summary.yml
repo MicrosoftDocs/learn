@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-azure-kubernetes-service-cluster.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 03/08/2024

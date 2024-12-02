@@ -2,14 +2,17 @@
 uid: learn.wwl.enable-semantic-search-azure-database-postgresql.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   author: wwlpublish
-  ms.author: rcaper
-  ms.date: 04/29/2024
+  ms.author: calopez
+  ms.date: 11/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

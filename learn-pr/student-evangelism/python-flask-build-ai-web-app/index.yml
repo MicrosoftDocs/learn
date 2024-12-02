@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.python-flask-build-ai-web-app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build an AI web app by using Python and Flask
   description: Use Python, Flask, and Azure AI services to build a web app that incorporates AI
   ms.date: 04/08/2022
@@ -48,3 +50,4 @@ units:
 - learn.student-evangelism.python-flask-build-ai-web-app.7-summary
 badge:
   uid: learn.student-evangelism.python-flask-build-ai-web-app.badge
+

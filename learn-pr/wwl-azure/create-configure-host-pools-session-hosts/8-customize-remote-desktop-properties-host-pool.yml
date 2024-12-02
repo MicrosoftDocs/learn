@@ -2,6 +2,8 @@
 uid: learn.wwl.create-configure-host-pools-session-hosts.customize-remote-desktop-properties-host-pool
 title: Customize Remote Desktop Protocol (RDP) properties for a host pool
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Customize Remote Desktop Protocol (RDP) properties for a host pool
   description: "Customize Remote Desktop Protocol (RDP) properties for a host pool"
   ms.date: 08/22/2024

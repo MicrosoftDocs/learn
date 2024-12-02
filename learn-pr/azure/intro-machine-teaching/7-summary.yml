@@ -2,6 +2,8 @@
 uid: learn.oxford.intro-machine-teaching.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: An overview of the content covered in the module.
   ms.date: 10/17/2022

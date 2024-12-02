@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.introduction-elastic-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction
   title: Introduction to Elastic on Azure
   description: Evaluate whether Elastic on Azure is appropriate for your Linux workload.
@@ -41,3 +43,4 @@ units:
 - learn.azure.introduction-elastic-azure.summary
 badge:
   uid: learn.azure.introduction-elastic-azure.badge
+

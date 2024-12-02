@@ -5,7 +5,7 @@ metadata:
   description: Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud scale and capabilities in mind. Cloud-native apps build on open source technologies where feasible, with a focus on architectural modularity.
   ms.date: 06/30/2021
   author: jasallen
-  ms.author: jasdeb
+  ms.author: robmcm
   ms.topic: learning-path
   ms.custom:
     - build-2023
@@ -44,9 +44,8 @@ subjects:
 modules:
 - learn.azure.intro-to-cloud-native-apps
 - learn.azure.cna-orchestrate-containers
-- learn.azure.cna-build-basic-service
 - learn.azure.cna-stream-iot-data
 - learn.azure.cna-build-iot-service
-- learn.azure.cna-set-up-apps-use-scale
+# - learn.azure.cna-set-up-apps-use-scale
 trophy:
   uid: learn.azure.cna-architect-modern-apps.trophy

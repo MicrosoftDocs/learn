@@ -2,6 +2,8 @@
 uid: learn.azure.cna-build-iot-service.5-integrate-data-stores-iot-pipelines
 title: Integrate data stores with IoT pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Integrate data stores with IoT pipelines
   description: Integrate data stores with IoT pipelines
   ms.date: 02/22/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-integrate-data-stores-iot-pipelines.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-access-for-azure-stack-hub.set-access-permissions-using-role-based-access-control
 title: Set access permissions using role-based access control
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set access permissions using role-based access control
   description: "Set access permissions using role-based access control"
   ms.date: 07/29/2022

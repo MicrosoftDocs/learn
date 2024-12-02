@@ -2,6 +2,8 @@
 uid: learn.communication-services-voice-calling-webapp.exercise-create-app
 title: Exercise - Scaffolding a voice calling web app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Scaffolding a voice calling web app
   description: Creating the scaffolding for an Azure Communication Services calling web app.
   author: rmcmurray
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/3-exercise-create-app.md)]
+

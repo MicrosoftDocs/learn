@@ -10,11 +10,12 @@ In this exercise, you'll:
 
 To perform this exercise, you need:
 
-* An Azure subscription.
+* An Azure account with an active subscription. If you don't have an Azure account, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin. It's recommended to use a test environment, like a free account, for this module.
+* The Azure account must have permissions to manage applications. For more information about Entra roles and using the principle of least privilege, see the [best practices for Microsoft Entra roles](/entra/identity/role-based-access-control/best-practices) and [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 * A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 
-    > [!NOTE]
-    > The exercises in this module perform sensitive operations and require very high privileges so, as such, should be performed within an isolated lab environment. If you don't have access to such an environment, consider using for this purpose an Azure Trial subscription.
+> [!WARNING]
+> Use a test environment because the exercises in this module perform sensitive operations that require elevated administrative privileges.
 
 <a name='create-azure-ad-user-and-group-objects-in-the-azure-ad-tenant-associated-with-your-azure-subscription'></a>
 
@@ -40,7 +41,7 @@ You'll start by creating Microsoft Entra user and group objects. After the objec
     ```azurecli
     ADMIN_NAME=adatumadmin1
     ADMIN=$(az ad user create --display-name $ADMIN_NAME \
-                      --password Pa55w.rd1234 \
+                      --password <enter your password> \
                       --user-principal-name $ADMIN_NAME@$DOMAIN_NAME \
                       --force-change-password-next-sign-in false)
     ```
@@ -76,7 +77,7 @@ You'll start by creating Microsoft Entra user and group objects. After the objec
     ```azurecli
     USER_NAME=adatumuser1
     USER=$(az ad user create --display-name $USER_NAME \
-                      --password Pa55w.rd1234 \
+                      --password <enter your password> \
                       --user-principal-name $USER_NAME@$DOMAIN_NAME \
                       --force-change-password-next-sign-in false)
     ```
@@ -152,7 +153,7 @@ In this task, you'll create a Microsoft Entra tenant and a user account in the n
     | User name | **contosouser1** |
     | Name | **contosouser1** |
     | Let me create the password | Enabled |
-    | Initial password | **Pa55w.rd1234** |
+    | Initial password | Enter a `<password>` |
 
 1. Use the **Copy to clipboard** icon next to the **User name** drop-down list to record the value of the **User principal name** attribute of **contosouser1**. You'll need it later in this and subsequent exercises.
 
@@ -168,7 +169,7 @@ In this task, you'll create a Microsoft Entra tenant and a user account in the n
 
 To conclude this exercise, you'll use the Azure portal to configure the user account in the **Contoso** Microsoft Entra tenant as a guest user in the **Adatum** Microsoft Entra tenant, create a new group in that tenant, and add the guest user to that group.
 
-1. In the web browser, on the Azure portal blade displaying the **Contoso \| Overview** blade of the **Contoso** Microsoft Entra tenant, in the toolbar, in the upper right corner, select the **Subscriptions** icon next to the **Cloud Shell** icon, and then select the **Switch directory** link. 
+1. In the web browser, on the Azure portal blade displaying the **Contoso \| Overview** blade of the **Contoso** Microsoft Entra tenant, in the toolbar, in the upper right corner, select the **Subscriptions** icon next to the **Cloud Shell** icon, and then select the **Switch directory** link.
 1. On the **Directories + subscriptions** blade, select the entry representing the Microsoft Entra tenant associated with the Azure subscription you're using in the exercises of this module, and then select **Switch**.
 
     > [!NOTE]

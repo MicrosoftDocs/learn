@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.startups.validate-idea
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Validate your startup idea with customers
   description: Explore various ways to validate your startup idea with customers. Learn about tools and strategies for testing your startup assumptions.
   ms.date: 03/19/2024
@@ -8,6 +10,7 @@ metadata:
   ms.author: ryanmesches
   ms.topic: module
   ms.service: azure
+  ms.collection: learn-startups
 title: Validate your startup idea with customers
 summary:
   This module shows you how to test and validate your startup idea by interviewing customers and running experiments.
@@ -42,3 +45,4 @@ units:
 - learn.startups.validate-idea.summary
 badge:
   uid: learn.startups.validate-idea.badge
+

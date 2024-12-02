@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.create-serverless-logic-with-functions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create serverless logic with Azure Functions
   description: Azure Functions allows you to host business logic that can be executed without managing or provisioning server infrastructure
-  ms.date: 10/05/2023
+  ms.date: 11/25/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: module-standard-task-based
@@ -14,10 +16,10 @@ title: Create serverless logic with Azure Functions
 summary: Azure Functions allows developers to host business logic that can be executed without managing or provisioning infrastructure. 
 abstract:  | 
   In this module, you will:
-  - Decide if serverless computing is right for your business need
-  - Create an Azure Function app in the Azure portal
-  - Execute a function using triggers
-  - Monitor and test your Azure Function from the Azure portal
+  - Decide if serverless computing is right for your business need.
+  - Create an Azure Function app in the Azure portal.
+  - Execute a function using triggers.
+  - Monitor and test your Azure Function from the Azure portal.
 prerequisites: None
 iconUrl: /training/achievements/create-serverless-logic-with-azure-functions.svg
 levels:
@@ -41,3 +43,4 @@ units:
 - learn.create-serverless-logic-with-functions.6-summary
 badge:
   uid: learn.create-serverless-logic-with-functions.badge
+

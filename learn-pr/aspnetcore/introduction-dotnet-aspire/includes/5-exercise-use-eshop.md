@@ -2,22 +2,22 @@ We can use the latest eShop reference application, which includes the .NET Aspir
 
 Imagine you work for an outdoor clothing and equipment company. Your development team has been working with .NET Aspire to create a new eShop web app for the main customer-facing site. You want to understand the architecture of this app and test its functionality before you deploy it.
 
-In this unit, you'll install .NET Aspire and its prerequisites and then use the eShop app to investigate and run .NET Aspire.
+In this unit, you install .NET Aspire and its prerequisites and then use the eShop app to investigate and run .NET Aspire.
 
 ## Install prerequisites
 
 The prerequisites for this .NET Aspire exercise are:
 
 - .NET 8
-- Visual Studio 2022 Preview
+- Visual Studio 2022
 - Docker Desktop
 - .NET Aspire workload in Visual Studio
 
-If you've already got these installed, you can skip ahead to explore the eShop application.
+If you already have these prerequisites installed, you can skip ahead to explore the eShop application.
 
 ### Install .NET 8
 
-Follow this [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0) link, and select the correct installer for your operating system. For example, if you are using Windows 11, and a modern processor, select the x64 .NET 8 SDK for Windows.
+Follow this [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0) link, and select the correct installer for your operating system. For example, if you're using Windows 11, and a modern processor, select the x64 .NET 8 SDK for Windows.
 
 After the download is complete, run the installer and follow the instructions. In a terminal window, run the following command to verify that the installation was successful:
 
@@ -28,16 +28,16 @@ dotnet --version
 You should see the version number of the .NET SDK you installed. For example:
 
 ```console
-8.0.300-preview.24203.14
+8.0.403
 ```
 
-### Install Visual Studio 2022 Preview
+### Install Visual Studio 2022
 
-Follow this [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/) link, and select **Download Preview**. After the download is complete, run the installer and follow the instructions.
+Follow this [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) link, and select **Download Visual Studio**. After the download is complete, run the installer and follow the instructions.
 
 ### Install Docker Desktop
 
-Follow this [Docker Desktop](https://www.docker.com/products/docker-desktop/) link, and select the correct installer for your operating system. After the download is complete, run the installer and follow the instructions. For the best performance and compatibility, use the WSL 2 backend.
+Follow this [Docker Desktop](https://www.docker.com/products/docker-desktop/) link, and select the correct installer for your operating system. After the download is complete, run the installer and follow the instructions. For the best performance and compatibility, use the **WSL 2** backend.
 
 Open the Docker Desktop application and accept the service agreement.
 
@@ -80,7 +80,7 @@ Install the .NET Aspire workload using the .NET CLI:
     dotnet workload install aspire
     ```
 
-    You should see a message that the .NET Aspire workload has been installed.
+    You should see a message that the .NET Aspire workload is successfully installed.
 
     ```console
     Installing Aspire.Hosting.Sdk.Msi.x64 ...... Done
@@ -98,7 +98,7 @@ Install the .NET Aspire workload using the .NET CLI:
     dotnet workload list
     ```
 
-    You should see the details of the aspire workload.
+    You should see the details of the Aspire workload.
 
     ```console
     Installed Workload Id      Manifest Version      Installation Source
@@ -110,7 +110,7 @@ Install the .NET Aspire workload using the .NET CLI:
 
 ## Explore the .NET Aspire eShop code
 
-Let's use the eShop reference application to demonstrate the .NET Aspire stack. We'll clone the code from GitHub and examine it in Visual Studio:
+Let's use the eShop reference application to demonstrate the .NET Aspire stack. Clone the code from GitHub and examine it in Visual Studio:
 
 1. In the command line, browse to a folder of your choice where you can work with code.
 1. Execute the following command to clone the eShop sample application:
@@ -119,30 +119,46 @@ Let's use the eShop reference application to demonstrate the .NET Aspire stack. 
    git clone https://github.com/dotnet/eShop.git
    ```
 
+1. Change to the eShop directory:
+
+   ```console
+   cd eShop
+   ```
+
+1. The eShop reference app is frequently updated. To ensure that you're using the correct version for this exercise, switch to the `dotnet8` tag:
+
+   ```console
+   git checkout dotnet8
+   ```
+
 1. Start Visual Studio and then select **Open a project or solution**.
-1. Browse to the folder where you cloned eShop, select the _eShop.Web.snlf_ file, and then select **Open**.
-1. Examine the solution structure in **Solution Explorer**. At the top level, the eShop code includes folders for tests, GitHub actions, and solution items. Expand the _src_ folder, which contains source code for the microservices:
+1. Browse to the folder where you cloned eShop, select the *eShop.Web.snlf* file, and then select **Open**.
+
+   >[!IMPORTANT]
+   > Make sure you open the *eShop.Web.snlf* file, not the *eShop.sln* file.
+
+1. Examine the solution structure in **Solution Explorer**. At the top level, the eShop code includes folders for tests, GitHub actions, and solution items. Expand the *src* folder, which contains source code for the microservices:
 
    :::image type="content" source="../media/eshop-solution-structure.png" lightbox="../media/eshop-solution-structure.png" alt-text="Screenshot showing the structure of the eShop solution in the Visual Studio Solution Explorer.":::
 
 1. Notice that:
 
-   - The _src_ folder includes the .NET Aspire **AppHost** and **ServiceDefaults** projects.
+   - The *src* folder includes the .NET Aspire **AppHost** and **ServiceDefaults** projects.
    - The **AppHost** project is set as the startup project for the solution.
 
-1. Expand the **AppHost** project, and then select the _eShop.AppHost/Program.cs_ file.
-1. In the _Program.cs_ file, notice that:
+1. Expand the **AppHost** project, and then select the *eShop.AppHost/Program.cs* file.
+1. In the *Program.cs* file, notice that:
 
    - Integrations of the application are added to a `DistributedApplicationBuilder` object named `builder`.
-   - Backing services, such as a Redis cache, a RabbitMQ messaging service, and a PostgreSQL database, are added to the builder. Each will be provisioned in a Docker container.
+   - Backing services, such as a Redis cache, a RabbitMQ messaging service, and a PostgreSQL database, are added to the builder. Each service is provisioned in a Docker container.
    - Each microservice is added to the builder by using the `builder.AddProject()` method.
    - References to the backing services are injected into each microservice by using the `.WithReference()` method.
 
 ## Edit code in the .NET Aspire eShop
 
-We'll make a simple change in the source code to test when we run the app:
+Let's make a small change in the source code, that we can test when we run the app:
 
-1. In **Solution Explorer**, expand the _src/WebApp/Components/Pages/Catalog_ folder, and then select the _Catalog.razor_ page.
+1. In **Solution Explorer**, expand the *src/WebApp/Components/Pages/Catalog* folder, and then select the *Catalog.razor* page.
 1. Locate this line of code:
 
    ```csharp
@@ -186,4 +202,4 @@ Let's run the app and use the .NET Aspire dashboard to examine a request:
 
 ## Learn more
 
-- [eShop Reference Application - "Northern Mountains"](https://github.com/dotnet/eshop)
+- [eShop Reference Application - "Adventure Works"](https://github.com/dotnet/eshop)

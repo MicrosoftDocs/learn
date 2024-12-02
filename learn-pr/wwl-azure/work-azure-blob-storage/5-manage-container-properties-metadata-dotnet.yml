@@ -2,6 +2,8 @@
 uid: learn.wwl.work-azure-blob-storage.manage-container-properties-metadata-dotnet
 title: Manage container properties and metadata by using .NET
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage container properties and metadata by using .NET
   description: "Manage container properties and metadata by using .NET"
   ms.date: 07/12/2024

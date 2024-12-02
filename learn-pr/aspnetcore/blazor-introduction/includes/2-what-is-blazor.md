@@ -1,4 +1,4 @@
-Blazor is a modern frontend web framework based on HTML, CSS, and C# that helps you build web apps faster. With Blazor you build web apps using reusable components that can be run from both the client and the server so that you can deliver great web experiences. Blazor is part of .NET, a developer platform for building *anything*. .NET is free, open-source, and runs cross-platform.
+Blazor is a modern frontend web framework based on HTML, CSS, and C# that helps you build web apps faster. With Blazor, you build web apps using reusable components that can be run from both the client and the server so that you can deliver great web experiences. Blazor is part of .NET, a developer platform for building *anything*. .NET is free, open-source, and runs cross-platform.
 
 Some of the benefits of using Blazor include:
 
@@ -9,6 +9,6 @@ Some of the benefits of using Blazor include:
 - **Server and client-side rendering:** Render components from both the server and the client to implement various web app architectures and deliver the best possible web app experience.
 - **Progressively enhanced server rendering**: Use built-in support for enhanced navigation & form handling and streaming rendering to progressively enhance the user experience of server rendered web apps.
 - **Interop with JavaScript:** Use the ecosystem of JavaScript libraries and browser APIs from your C# code.
-- **Integrate with existing apps:** Integrate Blazor components with existing MVC, Razor Pages, or JavaScript based apps.
+- **Integrate with existing apps:** Integrate Blazor components with an existing MVC, Razor Pages, or JavaScript based apps.
 - **Great tooling**: Use Visual Studio or Visual Studio Code to get started in seconds and stay productive with great code editing support.
 - **Web, mobile, and desktop**: Blazor components can also be used to build native mobile & desktop apps using a hybrid of native and web, called Blazor Hybrid.

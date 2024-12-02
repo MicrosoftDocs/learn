@@ -28,7 +28,5 @@ subjects:
 - cloud-computing
 modules:
 - learn.azure.build-node-cosmos-app-vscode
-- learn.azure.cna-build-basic-service
-- learn.connect-app-to-azure-storage
 trophy:
   uid: learn.javascript-on-azure.trophy

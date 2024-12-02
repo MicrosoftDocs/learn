@@ -2,6 +2,8 @@
 uid: learn.provision-azure-sql-db.5-summary
 title: Summary and cleanup
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary and cleanup
   description: Summary and cleanup
   ms.date: 10/17/2023
@@ -48,3 +50,4 @@ quiz:
       - content: "SQL elastic pool"
         isCorrect: false
         explanation: "SQL elastic pools enable you to buy a set of compute and storage resources that are shared among all the databases in the pool. This option doesn't help with IO performance because you're working with just one database."
+

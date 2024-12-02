@@ -2,6 +2,8 @@
 uid: learn.wwl.create-release-pipeline.explore-custom-build-release-tasks
 title: Explore custom build and release tasks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore custom build and release tasks
   description: "Explore custom build and release tasks"
   ms.date: 05/28/2024

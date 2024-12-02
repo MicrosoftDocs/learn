@@ -2,6 +2,8 @@
 uid: learn.iot.connect-iot-edge-device-to-iot-central.deploy-iot-edge-to-virtual-machine
 title: Deploy an IoT Edge enabled Linux VM
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy an IoT Edge enabled Linux VM
   description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
@@ -39,3 +41,4 @@ quiz:
     - content: "Your Azure IoT Central application"
       isCorrect: false
       explanation: "No. A device template in Azure IoT Central contains the IoT Edge deployment manifest that specifies the modules the device must download from a container registry."
+

@@ -102,4 +102,4 @@ The following list provides a description of each eDiscovery capability:
 
 ## Knowledge check
 
-Choose the best response for the following question. Then select “Check your answers.”
+Choose the best response for the following question. 
