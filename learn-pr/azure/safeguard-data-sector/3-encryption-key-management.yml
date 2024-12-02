@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Data encryption and key management
   description: Overview of how Azure encrypts data, covering data at rest and in transit, encryption key management, and Azure confidential computing.
-  ms.date: 07/25/2023
+  ms.date: 11/27/2024
   author: EliotSeattle
   ms.author: eliotgra
   ms.topic: unit

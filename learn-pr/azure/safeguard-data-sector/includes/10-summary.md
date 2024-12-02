@@ -1,6 +1,6 @@
 Azure safeguards customer data throughout its lifecycle and ensures that customers remain in control of their data and its security. Risk is minimized through strict protocols around data access so that customers can have confidence that their data is secure.
 
-Now that you've reviewed this module, you should be able to:
+After reviewing this module, you should be able to:
 
 * Describe how data is protected at rest, in transit, and in use.
 * Describe how Azure reduces the risk of insider data access.
