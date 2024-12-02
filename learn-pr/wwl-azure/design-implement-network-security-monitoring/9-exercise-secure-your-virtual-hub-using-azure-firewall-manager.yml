@@ -2,17 +2,14 @@
 uid: learn.wwl.design-implement-network-security-monitoring.exercise-secure-your-virtual-hub-using-azure-firewall-manager
 title: 'Exercise: Secure your Virtual Hub using Azure Firewall Manager'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Secure your Virtual Hub using Azure Firewall Manager'
   description: "Exercise: Secure your Virtual Hub using Azure Firewall Manager"
-  ms.date: 02/08/2024
+  ms.date: 11/29/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 11
+  ms.custom:
+  - N/A
+durationInMinutes: 20
 content: |
   [!include[](includes/9-exercise-secure-your-virtual-hub-using-azure-firewall-manager.md)]
-

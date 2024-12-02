@@ -8,7 +8,7 @@ metadata:
   description: Check your understanding of the content presented in this module.
   author: ivorb
   ms.author: berryivor
-  ms.date: 8/29/2024
+  ms.date: 11/28/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -27,7 +27,7 @@ quiz:
     - content: "To evaluate the cost of cloud services required to implement your solution"  
       isCorrect: false  
       explanation: "An AI Impact Assessment typically doesn't include evaluations of cloud service costs."  
-  - content: "What capability of Azure AI Studio helps mitigate harmful content generation at the Safety System level?"  
+  - content: "What capability of Azure AI Foundry helps mitigate harmful content generation at the Safety System level?"  
     choices:  
     - content: "DALL-E model support"  
       isCorrect: false  
