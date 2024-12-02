@@ -14,4 +14,4 @@ As you adjust the threshold levels for the filters, the corresponding code is up
 > [!NOTE]
 > If you disable a category, the sample code modifies its corresponding value to `-1`.
 
-If you choose to start configuring filters and testing the model's detection capabilities within Azure AI Studio, be sure to use the sample code that's provided for each Azure AI Content Safety feature.
+If you choose to start configuring filters and testing the model's detection capabilities within Azure AI Foundry, be sure to use the sample code that's provided for each Azure AI Content Safety feature.
