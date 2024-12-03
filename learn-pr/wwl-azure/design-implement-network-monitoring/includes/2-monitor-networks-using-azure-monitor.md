@@ -51,7 +51,7 @@ There are four fundamental sources of metrics collected by Azure Monitor.
 
 ## Metrics Explorer
 
- Dta collected by Azure Monitor is shown in the Azure portal on the **Monitoring** tab of a resource's **Overview** page.
+ Data collected by Azure Monitor is shown in the Azure portal on the **Monitoring** tab of a resource's **Overview** page.
 
 The next image shows the Monitoring tab for a virtual machine. Note the different charts displaying several key performance metrics. These metrics include **CPU**, **Network**, and **Disk**.
 
@@ -66,7 +66,7 @@ You can use the **Insights > Networks** section in **Azure Monitor** for a high-
  -  **Connectivity**. Provides an easy way to visualize Connection Monitor tests. Tests are grouped by **Sources** and **Destinations**. 
  -  **Traffic**. Provides access to **NSG flow logs** and **Traffic Analytics** for the selected set of subscriptions, grouped by location. You can search for any IP address in your environment.
  -  **Diagnostic Toolkit**. Provides access to all the diagnostic features available for troubleshooting your networks and their components. Most of these tools use Network Watcher. 
-    -  *Capture packets help to diagnose network anomalies, both reactively, and proactively. 
+    -  *Capture packets* help to diagnose network anomalies, both reactively, and proactively. 
     -  *Troubleshoot VPN* diagnoses the health of a virtual network gateway or connection.
     -  *Troubleshoot connectivity* checks TCP connections. Connections can include the fully qualified domain name (FQDN), URI, or IPv4 address.
     -  *Identify next hops* obtains the next hop type and IP address of a packet from a specific VM and NIC. Knowing the next hop can help you establish if traffic is being directed to the expected destination, or whether the traffic is being dropped.
