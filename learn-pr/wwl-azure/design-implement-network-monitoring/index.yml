@@ -15,7 +15,7 @@ metadata:
 title: Design and implement network monitoring
 summary: You learn to design and implement network monitoring solutions such as Azure Monitor and Network watcher.
 abstract: |
-  At the end of this module, you are able to:
+  At the end of this module, you're able to:
 
   -   Configure network health alerts and logging by using Azure Monitor
 

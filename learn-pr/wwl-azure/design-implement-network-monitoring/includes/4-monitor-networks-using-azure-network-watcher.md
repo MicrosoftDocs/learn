@@ -28,7 +28,7 @@ Azure Network Watcher is a regional service that enables you to monitor and diag
 **NSG Flow Logs.** NSG Flow Logs maps IP traffic through a network security group. Common use cases for NSG flow logs include:
 
  -  **Network Monitoring**. Identify unknown or undesired traffic. Monitor traffic levels and bandwidth consumption. Filter flow logs by IP and port to understand application behavior. Export Flow Logs to analytics and visualization tools of your choice to set up monitoring dashboards.
- -  **Usage monitoring and optimization**. Identify top talkers in your network. Combine with GeoIP data to identify cross-region traffic. Understand traffic growth for capacity forecasting. Use data to remove overtly restrictive traffic rules.
+ -  **Usage monitoring and optimization**. Identify top talkers in your network. Combine with other data to identify cross-region traffic. Understand traffic growth for capacity forecasting. Use data to remove overtly restrictive traffic rules.
  -  **Compliance**. Use flow data to verify network isolation and compliance with enterprise access rules.
  -  **Network forensics and security analysis**. Analyze network flows from compromised IPs and network interfaces. Export flow logs to any SIEM or IDS tool of your choice.
 
@@ -79,7 +79,7 @@ With Traffic Analytics, you can:
 
  -  Visualize network activity across your Azure subscriptions and identify hot spots.
  -  Identify security threats to, and secure your network, with information such as open-ports, applications attempting internet access, and virtual machines (VM) connecting to rogue networks.
- -  Understand traffic flow patterns across Azure regions and the internet to optimize your network deployment for performance and capacity.
+ -  Determine traffic flow patterns across Azure regions and the internet. 
  -  Pinpoint network misconfigurations leading to failed connections in your network.
 
 ### How Traffic Analytics works
