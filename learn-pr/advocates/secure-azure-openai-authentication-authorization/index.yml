@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.secure-azure-openai-authentication-authorization
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  ms.author: sayoung
+  author: sarah-yo
+  ms.date: 10/16/2024
+  title: Secure Azure OpenAI authentication and authorization
+  description: Learn about the security considerations for different ways of authenticating to Azure OpenAI and how to assign role based access control permissions to managed identities
+  ms.topic: module
+  moduleType: standard
+  ms.collection: ce-advocates-ai-copilot
+  ms.service: azure-ai-openai
+title: Secure Azure OpenAI authentication and authorization
+summary: Learn why you should use managed identity for Azure OpenAI authentication and how you can configure role based access controls to minimize necessary permissions
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe different methods of authenticating to Azure OpenAI
+  - Understand why managed identities are a more secure option
+  - Be able to choose an appropriate RBAC role for your Azure OpenAI managed identity
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Fundamental security concepts
+  - Fundamental AI concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.secure-azure-openai-authentication-authorization.introduction
+- learn.secure-azure-openai-authentication-authorization.methods-of-authentication-supported-by-azure-open-ai
+- learn.secure-azure-openai-authentication-authorization.configuring-rbac-for-azure-open-ai-identities
+- learn.secure-azure-openai-authentication-authorization.knowledge-check
+- learn.secure-azure-openai-authentication-authorization.summary
+badge:
+  uid: learn.secure-azure-openai-authentication-authorization-badge
+

@@ -1,6 +1,6 @@
-Here, we'll discuss the process of creating and maintaining a GitHub Pages web site.
+Here, we discuss the process of creating and maintaining a GitHub Pages web site.
 
-GitHub Pages are static sites hosted directly from your GitHub repository, but they're more than just a collection of static files. By making use of site-generation technologies like Jekyll and Liquid, developers define dynamic templates that are processed into complete static web sites. Every time a change is committed to the source branch associated with the site, it's re-generated using the latest updates and automatically published to the target URL.
+GitHub Pages are static sites hosted directly from your GitHub repository, but they're more than just a collection of static files. By making use of site-generation technologies like Jekyll and Liquid, developers define dynamic templates that are processed into complete static web sites. Every time you commit a change to the source branch associated with the site, the site is regenerated using the latest updates and automatically published to the target URL.
 
 Learn more about [Publishing sources for GitHub Pages sites](https://help.github.com/en/github/working-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites?azure-portal=true).
 
@@ -16,7 +16,7 @@ The first step in using GitHub Pages is to enable it from your repository's **Se
 
 ![Choosing a Jekyll theme.](../media/2-choosing-jekyll-theme.png)
 
-GitHub provides a variety of themes. There is also an array of commercial and open-source themes available from the Jekyll community.
+GitHub provides various themes. There's also an array of commercial and open-source themes available from the Jekyll community.
 
 ![Built-in Jekyll themes.](../media/2-jekyll-themes.png)
 
@@ -24,9 +24,9 @@ Learn more about [Jekyll Themes](https://jekyllrb.com/docs/themes/?azure-portal=
 
 ## Using YAML front matter
 
-The term *front matter* refers to YAML metadata that prepends the content of a file. For Jekyll, this includes generator instructions to indicate the layout style of a Markdown page (`post`, `page`, and so on). It may also include page metadata, such as the document title, or page content variables, such as a blog post's author.
+The term *front matter* refers to YAML metadata that prepends the content of a file. For Jekyll, this metadata includes generator instructions to indicate the layout style of a Markdown page (`post`, `page`, and so on). It might also include page metadata, such as the document title, or page content variables, such as a blog post's author.
 
-Below is a simple example that would use the `post` layout. This assumes there is a `_layouts/post.html` file that defines the container HTML. Other layout options may be offered by adding their respective HTML files in the `_layouts` folder.
+The following example uses the `post` layout. The example assumes there's a `_layouts/post.html` file that defines the container HTML. Other layout options can be offered by adding their respective HTML files in the `_layouts` folder.
 
 ```yml
 ---
@@ -34,7 +34,7 @@ layout: post
 title: This is set as the document title.
 ---
 
-This is visible body content, which may use Markdown, HTML, and Liquid templating.
+This is visible body content, which might use Markdown, HTML, and Liquid templating.
 ```
 
 Learn more about [Front Matter](https://jekyllrb.com/docs/front-matter/?azure-portal=true).
@@ -47,11 +47,11 @@ Learn more about [_config.yml Configuration](https://jekyllrb.com/docs/configura
 
 ## Creating and editing content
 
-Creating and editing pages on your site follows the standard GitHub experience. The files you use for your GitHub Pages web site enjoy all of the same benefits as other files in your GitHub repository, so you can edit them with any tools, create and merge branches, and link with issues or pull requests.
+Creating and editing pages on your site follows the standard GitHub experience. The files you use for your GitHub Pages web site enjoy all of the same benefits as other files in your GitHub repository. You can edit them with any tools, create and merge branches, and link with issues or pull requests.
 
 In addition to Markdown and HTML, Jekyll supports the **Liquid** template language syntax. Liquid lets users dynamically insert variables and basic logic flow constructs into their content files. When compiled, the final product is standard HTML.
 
-The example below shows a combination of `for` looping and variable insertion.
+The following example shows a combination of `for` looping and variable insertion.
 
 ```markdown
 <ul>
@@ -70,7 +70,7 @@ Learn more about [Liquid template language](https://shopify.github.io/liquid/?az
 
 Despite not having a database to work with, Jekyll still supports the concept of blogging using a specific convention: `_posts/2020-06-25-blog-post-name.md`. As you can likely infer, all blog posts are stored in the `_posts` folder and use the date and name convention as shown. During compilation, Jekyll processes the files in this folder to produce a list of HTML blog posts.
 
-The example below illustrates the structure of a simple blog post. It includes metadata for `subtitle`, `tags`, and `comments`, which may or may not be supported by the theme you choose.
+The following example illustrates the structure of a simple blog post. It includes metadata for `subtitle`, `tags`, and `comments`. The theme that you choose, might not support this metadata.
 
 ```markdown
 ---

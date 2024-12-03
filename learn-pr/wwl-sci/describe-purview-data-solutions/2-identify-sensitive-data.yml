@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-data-solutions.identify-sensitive-data
+title: Describe the data classification capabilities of Microsoft Purview Information Protection
+metadata:
+  title: Describe the data classification capabilities of Microsoft Purview Information Protection
+  description: "Describe the data classification capabilities of Microsoft Purview Information Protection."
+  ms.date: 8/22/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-identify-sensitive-data.md)]

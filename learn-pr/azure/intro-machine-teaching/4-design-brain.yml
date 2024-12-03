@@ -2,13 +2,14 @@
 uid: learn.oxford.intro-machine-teaching.design
 title: Design a brain for Soap Extruder scenario
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a brain for Soap Extruder scenario
   description: We explain how to solve scenario giving in the beginning using Machine Teaching.
   ms.date: 10/17/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-design-brain.md)] 

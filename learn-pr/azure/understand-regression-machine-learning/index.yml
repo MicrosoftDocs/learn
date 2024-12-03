@@ -1,13 +1,18 @@
 ### YamlMime:Module
 uid: learn.machinelearning.understand-regression-machine-learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Train and understand regression models in machine learning  
   description: Regression is arguably the most widely used machine learning technique, commonly underlying scientific discoveries, business planning, and stock market analytics. This learning material takes a dive into some common regression analyses, both simple and more complex, and provides some insight on how to assess model performance.
-  ms.date: 04/20/2023
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/21/2024
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: module
+  ms.service: azure-machine-learning
+  ms.collection:
+    - TBD
+    - ce-skilling-ai-copilot
 title: Train and understand regression models in machine learning
 summary: Regression is arguably the most widely used machine learning technique, commonly underlying scientific discoveries, business planning, and stock market analytics. This learning material takes a dive into some common regression analyses, both simple and more complex, and provides some insight on how to assess model performance.
 abstract: | 
@@ -41,3 +46,4 @@ units:
 - learn.machinelearning.understand-regression-machine-learning.summary
 badge: 
   uid: learn.machinelearning.understand-regression-machine-learning.badge #add the uid for your achievement badge.
+

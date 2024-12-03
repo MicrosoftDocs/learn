@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.introduction
+title: Introduction
+metadata:
+  title: introduction
+  description: "Introduction"
+  ms.date: 02/27/2024
+  author: MScalopez
+  ms.author: calopez
+  ms.reviewer: vanto
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

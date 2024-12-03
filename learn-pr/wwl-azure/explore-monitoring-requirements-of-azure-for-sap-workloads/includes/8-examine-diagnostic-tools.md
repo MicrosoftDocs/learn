@@ -1,8 +1,6 @@
-
-
 Run SAP HANA Health Check through HANA\_Configuration\_Minichecks. This tool returns potentially critical technical issues that should have already been raised as alerts in SAP HANA Studio.
 
-1. Refer to [SAP Note \#1969700](https://launchpad.support.sap.com/#/notes/1969700) and download the SQL Statements.zip file attached to that note. Store this .zip file on the local hard drive.
+1. Refer to [SAP Note \#1969700](https://me.sap.com/notes/1969700) and download the SQL Statements.zip file attached to that note. Store this .zip file on the local hard drive.
 2. In SAP HANA Studio, on the **System Information** tab, right-click in the **Name** column and select **Import SQL Statements**.
 3. Select the **SQL Statements.zip** file stored locally, and a folder with the corresponding SQL statements will be imported.
 4. At this point, many different diagnostic checks can be run with these SQL statements.

@@ -2,14 +2,18 @@
 uid: learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.exercise-enrich-data-using-trained-models-with-predict-function
 title: Exercise - Enrich data using trained models with the PREDICT function
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Enrich data using trained models with the PREDICT function
-  description: "Exercise - Enrich data using trained models with the PREDICT function"
-  ms.date: 03/30/2021
+  description: Exercise - Enrich data using trained models with the PREDICT function
   author: wwlpublish
-  ms.author: chtestao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jamesh
+  ms.date: 11/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-enrich-data-using-trained-models-predict-function.md)]
+

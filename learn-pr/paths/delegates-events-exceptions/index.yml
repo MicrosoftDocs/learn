@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.wwl.delegates-events-exceptions
+metadata:
+  title: Delegates events exceptions
+  description: This lesson is on the use of delegates and events.
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: learning-path
+title: Delegates events exceptions
+prerequisites: |
+  - Installation of Visual Studio Code that's configured for C# application development, including C# Dev Kit.
+  - Experience with the VS Code editor.
+  - Ability to develop C# console applications that implement business logic using loops, if statements, properties, and methods.
+  - Experience with basic C# syntax rules.
+summary: |
+  In this module you learned about delegates and event handlers, and how they're used. You learned about what are events and delegates and how to implement event handler stub methods.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-code
+modules:
+- learn.wwl.guided-project-implement-events
+trophy:
+  uid: learn.wwl.delegates-events-exceptions.trophy

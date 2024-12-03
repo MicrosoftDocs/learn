@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-spend-and-performance-with-azure-openai-service-provisioned-reservations.azure-openai-service-overview
+title: Azure OpenAI Service overview
+metadata:
+  title: Azure OpenAI Service overview
+  description: Provide an overview of Azure OpenAI Services.
+  ms.date: 10/24/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/azure-openai-service-overview.md)]

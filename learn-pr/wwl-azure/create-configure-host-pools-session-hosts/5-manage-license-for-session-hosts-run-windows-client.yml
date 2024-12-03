@@ -1,16 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-configure-host-pools-session-hosts.manage-licensing-for-that-run-windows-client
-title: Manage licensing for session hosts that run Windows client
+title: 'Create a host pool '
 metadata:
-  title: Manage licensing for session hosts that run Windows client
-  description: "Manage licensing for session hosts that run Windows client"
-  ms.date: 08/01/2022
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create a host pool
+  description: "Create a host pool"
+  ms.date: 08/22/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/5-manage-license-for-session-hosts-run-windows-client.md)]

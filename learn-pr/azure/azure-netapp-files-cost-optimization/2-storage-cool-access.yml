@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-cost-optimization.storage-cool-access
+title: Azure NetApp Files storage with cool access
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: learning-content
+  title: Azure NetApp Files storage with cool access
+  description: Learn about the cost benefits of Azure NetApp Files storage with cool access. 
+  ms.date: 11/26/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-storage-cool-access.md)]

@@ -2,14 +2,16 @@
 uid: learn.protect-virtual-desktop-deployment-azure-firewall.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Introduction
-  ms.date: 07/05/2021
+  ms.date: 01/05/2024
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

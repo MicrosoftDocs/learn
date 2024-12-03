@@ -25,7 +25,7 @@ The data collected by Azure Monitor fits into one of two fundamental types:
 
 ### Azure Monitor metrics
 
-Azure Monitor Metrics is a feature of Azure Monitor that collects numeric data from monitored resources into a time series database. Metrics are numerical values that are collected at regular intervals and describe some aspect of a system at a particular time. Metrics in Azure Monitor are lightweight and capable of supporting near real-time scenarios making them particularly useful for alerting and fast detection of issues. You can analyze them interactively with metrics explorer, be proactively notified with an alert when a value crosses a threshold or visualize them in a workbook or dashboard.
+Azure Monitor Metrics is a feature of Azure Monitor that collects numeric data from monitored resources into a time series database. Metrics are numerical values that are collected at regular intervals and describe some aspect of a system at a particular time. Metrics in Azure Monitor are lightweight and capable of supporting near real-time scenarios making them useful for alerting and fast detection of issues. You can analyze them interactively with metrics explorer, be proactively notified with an alert when a value crosses a threshold or visualize them in a workbook or dashboard.
 
 The table below provides a summary of the various types of tasks you can perform by utilizing metrics in Azure Monitor:
 
@@ -33,7 +33,7 @@ The table below provides a summary of the various types of tasks you can perform
 |:---------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  Analyze  |                                                                       Use metrics explorer to analyze collected metrics on a chart and compare metrics from different resources.                                                                        |
 |   Alert   |                                                              Configure a metric alert rule that sends a notification or takes automated action when the metric value crosses a threshold.                                                               |
-| Visualize | Pin a chart from metrics explorer to an Azure dashboard.<br>Create a workbook to combine with multiple sets of data in an interactive report.Export the results of a query to Grafana to leverage its dashboarding and combine with other data sources. |
+| Visualize | Pin a chart from metrics explorer to an Azure dashboard.<br>Create a workbook to combine with multiple sets of data in an interactive report. Export the results of a query to Grafana to leverage its dashboarding and combine with other data sources. |
 | Automate  |                                                                              Use Autoscale to increase or decrease resources based on a metric value crossing a threshold.                                                                              |
 | Retrieve  |                                Access metric values from a command line using PowerShell cmdlets.<br>Access metric values from custom application using REST API.<br>Access metric values from a command line using CLI.                                |
 |  Export   |             Route Metrics to Logs to analyze data in Azure Monitor Metrics together with data in Azure Monitor Logs and to store metric values for longer than 93 days<br>Stream Metrics to an event hub to route them to external systems.             |
@@ -44,18 +44,18 @@ The table below provides a summary of the various types of tasks you can perform
 
 ### Azure Monitor metrics sources
 
-There are three fundamental sources of metrics collected by Azure Monitor. Once these metrics are collected in the Azure Monitor metric database, they can be evaluated together regardless of their source.
+There are three fundamental sources of metrics collected by Azure Monitor, and a custom metrics option that can be configured as a source. Once these metrics are collected in the Azure Monitor metric database, they can be evaluated together regardless of their source.
 
  -  **Azure resources** - Platform metrics are created by Azure resources and give you visibility into their health and performance. Each type of resource creates a distinct set of metrics without any configuration required. Platform metrics are collected from Azure resources at one-minute frequency unless specified otherwise in the metric's definition.
  -  **Applications** - Metrics are created by Application Insights for your monitored applications and help you detect performance issues and track trends in how your application is being used. This includes such values as Server response time and Browser exceptions.
  -  **Virtual machine agents** - Metrics are collected from the guest operating system of a virtual machine. Enable guest OS metrics for Windows virtual machines with Windows Diagnostic Extension (WAD) and for Linux virtual machines with InfluxData Telegraf Agent.
- -  **Custom metrics** - You can define metrics in addition to the standard metrics that are automatically available. You can define custom metrics in your application that is monitored by Application Insights or create custom metrics for an Azure service using the custom metrics API.
+ -  **Custom metrics** - You can define metrics in addition to the standard metrics that are automatically available. You can define custom metrics in your application that is monitored with Application Insights or create custom metrics for an Azure service using the custom metrics API.
 
 ## Metrics Explorer
 
 For several of your resources in Azure, you will see the data collected by Azure Monitor illustrated directly in the Azure portal on the **Monitoring** tab of a resource's **Overview** page.
 
-In the screenshot below for example, you can see the Monitoring tab from the Overview page of a virtual machine.
+In the screenshot below, for example, you can see the Monitoring tab from the Overview page of a virtual machine.
 
 :::image type="content" source="../media/monitoring-tab.png" alt-text="Monitoring tab of a virtual machine in Azure Monitor" lightbox="../media/monitoring-tab.png":::
 
@@ -95,7 +95,7 @@ Start in the following order:
 2.  Try applying dimension filters and splitting. The filters and splitting allow you to analyze which segments of the metric contribute to the overall metric value and identify possible outliers.
 3.  Use advanced settings to customize the chart before pinning to dashboards. Configure alerts to receive notifications when the metric value exceeds or drops below a threshold.
 4.  To create a metric chart, from your resource, resource group, subscription, or Azure Monitor view, open the **Metrics** tab and follow these steps:
-5.  Click on the "Select a scope" button to open the resource scope picker. This will allow you to select the resource(s) you want to see metrics for. If you opened metrics explorer from the resource's menu, the resource should already be populated.
+5.  Click on the "Select a scope" button to open the resource scope picker. This allows you to select the resource(s) you want to see metrics for. If you opened metrics explorer from the resource's menu, the resource should already be populated.
 
     :::image type="content" source="../media/metrics-explorer-scope.png" alt-text="The Metrics Explorer pane in Azure Monitor - Scope highlighted" lightbox="../media/metrics-explorer-scope.png":::
 
@@ -206,7 +206,7 @@ The Diagnostic Toolkit feature in Azure Monitor Network Insights provides access
 
 The **Diagnostic Toolkit** drop-down list provides to access to the following network monitoring features:
 
- -  Capture packets on virtual machines - opens the **Network Watcher packet capture** network diagnostic tool to enable you create capture sessions to track traffic to and from a virtual machine. Filters are provided for the capture session to ensure you capture only the traffic you want. Packet capture helps to diagnose network anomalies, both reactively, and proactively. Packet capture is a virtual machine extension that is remotely started through Network Watcher.
+ -  Capture packets on virtual machines - opens the **Network Watcher packet capture** network diagnostic tool to create capture sessions to track traffic to and from a virtual machine. Filters are provided for the capture session to ensure you capture only the traffic you want. Packet capture helps to diagnose network anomalies, both reactively, and proactively. Packet capture is a virtual machine extension that is remotely started through Network Watcher.
  -  Troubleshoot VPN - opens the **Network Watcher VPN Troubleshoot** tool to diagnose the health of a virtual network gateway or connection.
  -  Troubleshoot connectivity - opens the **Network Watcher Connection Troubleshoot** tool to check a direct TCP connection from a virtual machine (VM) to a VM, fully qualified domain name (FQDN), URI, or IPv4 address.
  -  Identify next hops - opens the **Network Watcher Next hop** network diagnostic tool to obtain the next hop type and IP address of a packet from a specific VM and NIC. Knowing the next hop can help you establish if traffic is being directed to the expected destination, or whether the traffic is being sent nowhere.

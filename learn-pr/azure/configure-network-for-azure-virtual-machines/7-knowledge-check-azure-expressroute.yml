@@ -2,13 +2,14 @@
 uid: learn.configure-the-network-for-your-virtual-machines.7-knowledge-check-azure-expressroute
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  ms.date: 09/24/2018
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/01/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
@@ -57,3 +58,4 @@ quiz:
     - content: "S-key"
       isCorrect: false
       explanation: "An s-key is a GUID that defines an ExpressRoute circuit and provides the connectivity link between Microsoft, your connectivity provider, and your organization."
+

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-audit-search-investigate.audit-copilot
+title: Audit Microsoft Copilot for Microsoft 365 interactions
+metadata:
+  title: Audit Microsoft Copilot for Microsoft 365 interactions
+  description: "Audit Microsoft Copilot for Microsoft 365 interactions."
+  ms.date: 05/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/audit-copilot.md)]
+

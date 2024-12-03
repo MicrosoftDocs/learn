@@ -1,4 +1,3 @@
-
 In this exercise you learn how to:
 
 * Enable an Event Grid resource provider
@@ -117,7 +116,7 @@ Trigger an event to see how Event Grid distributes the message to your endpoint.
 1. Create event data to send. Typically, an application or Azure service would send the event data, we're creating data for the purposes of the exercise.
 
     ```bash
-    event='[ {"id": "'"$RANDOM"'", "eventType": "recordInserted", "subject": "myapp/vehicles/motorcycles", "eventTime": "'`date +%Y-%m-%dT%H:%M:%S%z`'", "data":{ "make": "Contoso", "model": "Monster"},"dataVersion": "1.0"} ]'
+    event='[ {"id": "'"$RANDOM"'", "eventType": "recordInserted", "subject": "myapp/vehicles/motorcycles", "eventTime": "'`date +%Y-%m-%dT%H:%M:%S%z`'", "data":{ "make": "Contoso", "model": "Northwind"},"dataVersion": "1.0"} ]'
     ```
 
 1. Use `curl` to send the event to the topic.
@@ -151,3 +150,5 @@ When you no longer need the resources in this exercise use the following command
 ```bash
 az group delete --name az204-evgrid-rg --no-wait 
 ```
+
+

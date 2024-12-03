@@ -1,14 +1,10 @@
-
-
-
-
 In this first step of the development process, you review the code provided in the Starter project folder.
 
 ## Review the contents of the Program.cs file
 
 The Program.cs file contains a preliminary version of the application that you're working on. The code includes features to generate and display the sample data for the application, and it displays a list of menu options that define the main features of the application.
 
-1. Ensure that you have the **GuidedProject** folder open in Visual Studio Code.
+1. Ensure that you have the **GuidedProject** folder (Guided-project-Work-with-variable-data-in-CSharp-main) open in Visual Studio Code.
 
     The **Prepare** unit (the previous unit in this module) includes a Setup section that describes the process for downloading the initial starting point for the guided project and opening the folder Visual Studio Code. If necessary, go back and follow the Setup instructions.
 
@@ -173,13 +169,16 @@ The Program.cs file contains a preliminary version of the application that you'r
 
 1. Test the starter code console app, at the TERMINAL command prompt build & run your project code with one command by entering: `dotnet run`.
 
+    > [!NOTE]
+    > The TERMINAL prompt has to be opened in the start folder and the TERMINAL should look similar to `..\ArrayGuidedProject\starter>`
+    
     When the code runs, two menu items are displayed.
     - Enter "`1`" to test the "List all of our current pet information" output
     - Enter "`2`" to test the placeholder message "under construction" message
 
 1. Enter `1` followed by pressing the Enter key to "display all pets".
 
-1. Check that the all of the pet information displays.
+1. Check that all of the pet information displays.
 
     As you observe the data on all pets, the last pet displayed should match the following output:
 

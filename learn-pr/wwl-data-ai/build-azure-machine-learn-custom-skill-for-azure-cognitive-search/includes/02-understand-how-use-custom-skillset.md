@@ -1,3 +1,4 @@
+
 Using a machine learning custom skill works the same as adding any other custom skill to a search index.
 
 Here, you'll see how using the `AmlSkill` custom skill is different and explore the considerations of how to effectively use it.

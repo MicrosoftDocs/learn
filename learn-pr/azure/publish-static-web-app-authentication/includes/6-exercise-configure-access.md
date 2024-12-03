@@ -9,7 +9,7 @@ In this exercise, you'll complete the following steps:
 
 ## Disable authentication providers
 
-We'll update the routing configuration of our app to disable Azure Active Directory (Azure AD) authentication provider.
+We'll update the routing configuration of our app to disable Microsoft Entra authentication provider.
 
 1. Open the project in Visual Studio Code.
 
@@ -58,7 +58,7 @@ We'll update the routing configuration of our app to disable Azure Active Direct
    ]
    ```
 
-   By adding this routing rule, we prevent our users from accessing the Azure AD authentication provider.
+   By adding this routing rule, we prevent our users from accessing the Microsoft Entra authentication provider.
 
 ## Secure the product list access
 
@@ -118,7 +118,7 @@ After your app is redeployed, you can test that the new restrictions are effecti
 
 1. If you're not logged in, you should see the message **Unauthorized** instead of the products list.
 
-1. Select **AAD** in the authentication provider list to log in.
+1. Select **Microsoft Entra ID** in the authentication provider list to log in.
 
    You should see a 404 error page like the following:
 

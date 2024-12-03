@@ -7,7 +7,7 @@
  -  Analyze and identify potential inbound attacks and help investigate threats and any post-breach activity that might have occurred.
  -  Provide just-in-time (JIT) access control for ports by reducing your attack surface by ensuring the network only allows traffic that you require.
 
-:::image type="content" source="../media/security-center-icon-b7dcfea3.png" alt-text="Microsoft Defender for Cloud icon":::
+:::image type="content" source="../media/security-center-icon-b7dcfea3.png" alt-text="Screenshot of Microsoft Defender for Cloud icon.":::
 
 
 Microsoft Defender for Cloud is part of the [Center for Internet Security (CIS) Benchmarks](https://www.cisecurity.org/cis-benchmarks/) recommendations.
@@ -25,7 +25,7 @@ To access the full suite of Microsoft Defender for Cloud services, you'll need t
 
 You can access the 60-day free trial from the Microsoft Defender for Cloud dashboard in the Azure portal.
 
-:::image type="content" source="../media/security-center-free-trial-dashboard-61c3da3c.png" alt-text="Screenshot of the Microsoft Defender for Cloud - Getting Started dashboard in the Azure portal. Information about a free 60-day trial displays":::
+:::image type="content" source="../media/security-center-free-trial-dashboard-61c3da3c.png" alt-text="Screenshot of the Microsoft Defender for Cloud - Getting Started dashboard in the Azure portal. Information about a free 60-day trial displays.":::
 
 
 You can read more about Microsoft Defender for Cloud at [Microsoft Defender for Cloud](https://azure.microsoft.com/services/defender-for-cloud).

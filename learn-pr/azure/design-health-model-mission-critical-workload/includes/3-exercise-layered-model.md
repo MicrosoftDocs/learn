@@ -4,7 +4,7 @@ In this exercise, your task is to design a layered health model for an example a
 
 The example for this exercise is a web application used by Contoso Shoes. The application allows employees to browse a catalog of products, update individual items in the catalog, and interact with other users by creating comments in the application.
 
-The operations team at Contoso Shoes has identified two critical business requirements for this application. Employees must be able to:
+The operations team at Contoso Shoes identified two critical business requirements for this application. Employees must be able to:
 
 - Interact with the catalog by displaying lists of items and by browsing items.
 - Create comments for individual items for other users to see.
@@ -34,7 +34,7 @@ The health model should at least include those two critical operations.
 
 - **Message broker**: The messaging processor uses **Azure Event Hubs** to pass messages between the Catalog API and the Background Processor.
 
-- **Database**: Data is persisted in **Azure Cosmos DB**. The Catalog API reads from the database directly. Writes are handled by the Background Processor. Images are stored in Azure Blob Storage.
+- **Database**: Data is persisted in **Azure Cosmos DB**. The Catalog API reads from the database directly. The Background Processor handles the writes. Images are stored in Azure Blob Storage.
 
 - **Secrets**: The application components of this workload use secrets to authorize access. Secrets are stored in **Azure Key Vault**. The Catalog API and Background Processor use connection strings to access the database and Azure Event Hubs. The front-end web application uses an API key to call the Catalog API.
 
@@ -42,7 +42,7 @@ The health model should at least include those two critical operations.
 
 ## Divide the architecture in layers
 
-As described in previous unit, a health model should be a layered structure. The process of modeling health is an architectural exercise to define all user flows, map dependencies between functional and logical components, and also dependencies between Azure resources. 
+As described in the previous unit, a health model should be a layered structure. The process of modeling health is an architectural exercise to define all user flows, map dependencies between functional and logical components, and also dependencies between Azure resources.
 
 Identifying user flows and building the health model is a conceptual exercise at this stage. Use pen and paper or a blank document to note the individual layers and to draw the structure.
 
@@ -73,14 +73,14 @@ This workload has at least three application components that participate in the 
 
 ##### Azure resources
 
-The bottom layer contains the Azure resources used by the individual application components. For this exercise, the components and resources are described in the [Components](#components) section. 
+The bottom layer contains the Azure resources used by the individual application components. For this exercise, the components and resources are described in the [Components](#components) section.
 
 > [!NOTE]
 > A real-world scenario probably will have more services and have more complicated relationships between them. A key to building a successful health model is to identify which parts are critical and how each component contributes to the overall health of the system.
 
 ## Draw the final health model structure
 
-Put the information you've gathered in a graphical representation of the health model structure. It should look similar to this diagram:
+Put the information that you gathered in a graphical representation of the health model structure. It should look similar to this diagram:
 
 :::image type="content" source="../media/layered-health-model.png" border="false" alt-text="Diagram that shows the architecture for this layered health model.":::
 
@@ -88,19 +88,19 @@ From top to bottom, the web application health model has these layers:
 
 ##### User flows
 
-  - **List catalog items**. Dependent on the front-end web application and the Catalog API.
-  - **Add comment**. Dependent on the front-end web application, Catalog API, and background processor.
+- **List catalog items**. Dependent on the front-end web application and the Catalog API.
+- **Add comment**. Dependent on the front-end web application, Catalog API, and background processor.
 
 ##### Application components
 
-  - **Front-end web application**. Dependent on Blob Storage and the Catalog API.
-  - **Catalog API**. Dependent on Azure Cosmos DB, Key Vault, and Event Hubs.
-  - **Background processor**. Dependent on Azure Cosmos DB, Key Vault, and Event Hubs.
+- **Front-end web application**. Dependent on Blob Storage and the Catalog API.
+- **Catalog API**. Dependent on Azure Cosmos DB, Key Vault, and Event Hubs.
+- **Background processor**. Dependent on Azure Cosmos DB, Key Vault, and Event Hubs.
 
 ##### Azure resources
 
-  - **Blob Storage**
-  - **Azure Cosmos DB**
-  - **Key Vault**
-  - **Event Hubs**
+- **Blob Storage**
+- **Azure Cosmos DB**
+- **Key Vault**
+- **Event Hubs**
 

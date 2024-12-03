@@ -1,3 +1,4 @@
+
 SQL Server on Azure Virtual Machines is a version of SQL Server that runs on an Azure virtual machine (VM). This service lets you use full versions of SQL Server in the cloud without having to manage your on-premises machines. Azure VMs come in many sizes and can be run in diverse geographic regions. Each SQL Server VM can be created to meet specific version and operating system requirements, which make them a good option for handling different SQL Server workloads.
 
 ### Things to know about SQL Server on Azure Virtual Machines
@@ -28,9 +29,9 @@ Consider how SQL Server on Azure Virtual Machines can be included in your relati
 
 ## Compare Azure SQL deployment options
 
-You've reviewed the different Azure SQL deployment options. Compare the solution features and recommended usage scenarios, and think about which options will support the Tailwind Traders organization.
+You review the different Azure SQL deployment options. Compare the solution features and recommended usage scenarios, and think about which options support the Tailwind Traders organization.
 
 | Compare | SQL Database | SQL Managed Instance | SQL Server on Azure Virtual Machines | 
 | --- | --- | --- | --- |
-| **Scenarios** | Best for modern cloud applications, hyperscale or serverless configurations | Best for most lift-and-shift migrations to the cloud, instance-scoped features | Best for fast migrations, and applications that require OS-level access |
+| **Scenarios** | Best for modern cloud applications, hyperscale, or serverless configurations | Best for most lift-and-shift migrations to the cloud, instance-scoped features | Best for fast migrations, and applications that require OS-level access |
 | **Features** | _**Single database**_ <br> - Hyperscale storage (for databases up to 100 TB) <br> - Serverless compute <br> - Fully managed service <br><br> _**Elastic pool**_ <br> - Resource sharing between multiple databases for price optimization <br> - Simplified performance management for multiple databases <br> - Fully managed service | _**Single instance**_ <br> - SQL Server surface area (vast majority) <br> - Native virtual networks <br> - Fully managed service <br><br> _**Instance pool**_ <br> - Pre-provision compute resources for migration <br> - Cost-efficient migration <br> - Host smaller instances (2vCore) <br> - Fully managed service | _**Azure Virtual Machines**_ <br> - SQL Server access <br> - OS-level server access <br> - Expansive version support for SQL Server <br> - Expansive OS version support <br> - File stream, Microsoft Distributed Transaction Coordinator (DTC), and Simple Recovery model <br> - SQL Server Integration Services (SSIS), SQL Server Reporting Services (SSRS), and SQL Server Analysis Services (SSAS) |

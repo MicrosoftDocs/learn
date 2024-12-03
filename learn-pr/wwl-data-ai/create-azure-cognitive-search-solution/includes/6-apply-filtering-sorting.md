@@ -1,4 +1,4 @@
-It's common in a search solution for users to want to refine query results by filtering and sorting based on field values. Azure Cognitive Search supports both of these capabilities through the search query API.
+It's common in a search solution for users to want to refine query results by filtering and sorting based on field values. Azure AI Search supports both of these capabilities through the search query API.
 
 ## Filtering results
 
@@ -59,4 +59,4 @@ $orderby=last_modified desc
 ```
 
 > [!NOTE]
-> For more information about using filters, see [Filters in Azure Cognitive Search](/azure/search/search-filters). For information about working with results, including sorting and hit highlighting, see [How to work with search results in Azure Cognitive Search](/azure/search/search-pagination-page-layout).
+> For more information about using filters, see [Filters in Azure AI Search](/azure/search/search-filters). For information about working with results, including sorting and hit highlighting, see [How to work with search results in Azure AI Search](/azure/search/search-pagination-page-layout).

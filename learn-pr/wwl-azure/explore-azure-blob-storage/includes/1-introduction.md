@@ -1,8 +1,7 @@
+This module will delve into the world of Azure Blob storage, Microsoft's cloud-based solution for storing large amounts of unstructured data. This service is versatile and can be used for a variety of purposes, from serving images or documents to a browser, to storing files for distributed access, and even streaming video and audio.
 
-Azure Blob storage is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data. 
+The topics covered in this module include:
 
-After completing this module, you'll be able to:
-
-* Identify the different types of storage accounts and the resource hierarchy for blob storage.
-* Explain how data is securely stored.
-* Enable a storage account for static website hosting. 
+* Understanding Azure Blob Storage: Features, Types of Storage Accounts, and Access Tiers
+* Understanding Azure Blob Storage: Storage Accounts, Containers, and Blobs
+* Understanding Azure Storage Security and Encryption Features

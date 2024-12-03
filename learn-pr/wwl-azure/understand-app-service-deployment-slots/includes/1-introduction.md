@@ -1,15 +1,13 @@
-
 The deployment slot functionality in App Service is a powerful tool that enables you to preview, manage, test, and deploy your different development environments. 
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
-* Describe the benefits of using deployment slots
-* Understand how slot swapping operates in App Service
-* Perform manual swaps and enable auto swap
-* Route traffic manually and automatically
-
+* Describe the benefits of using deployment slots.
+* Understand how slot swapping operates in App Service.
+* Perform manual swaps and enable auto swap.
+* Route traffic manually and automatically.
 
 ## Prerequisites
 

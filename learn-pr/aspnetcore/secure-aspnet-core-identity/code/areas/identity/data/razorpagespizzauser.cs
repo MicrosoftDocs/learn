@@ -1,3 +1,8 @@
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
+
+namespace RazorPagesPizza.Areas.Identity.Data;
+
 public class RazorPagesPizzaUser : IdentityUser
 {
     [Required]

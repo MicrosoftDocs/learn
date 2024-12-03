@@ -3,16 +3,16 @@ You're a developer for a company, and you and your company have heard about the 
 > [!NOTE]
 > This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
 
-[!include[](../../../includes/dotnet6-sdk-version.md)]
+[!include[](../../../includes/dotnet8-sdk-version.md)]
 
 ## Scaffold a project
 
-First, you need to scaffold a project. You've installed .NET 6 and you're ready to go.
+First, you need to scaffold a project. You've installed .NET 8 and you're ready to go.
 
 1. From a terminal, create a web API in a directory called *PizzaStore* by running `dotnet new`:
 
    ```bash
-   dotnet new web -o PizzaStore -f net6.0
+   dotnet new web -o PizzaStore -f net8.0
    ```
 
 1. Switch to the new *PizzaStore* directory.
@@ -58,7 +58,7 @@ Use Swagger to ensure that you have a self-documenting API, where the docs chang
 1. Install the Swashbuckle package:
 
     ```bash
-    dotnet add package Swashbuckle.AspNetCore --version 6.2.3
+    dotnet add package Swashbuckle.AspNetCore --version 6.5.0
     ```
 
 1. Open the project in Visual Studio Code:
@@ -70,14 +70,14 @@ Use Swagger to ensure that you have a self-documenting API, where the docs chang
 1. In Visual Studio Code, in the explorer pane, open *PizzaStore.csproj*. You should have an entry that looks like this one:
 
     ```xml
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     ```
 
 Next, configure your project to use Swagger.
 
 1. Open *Program.cs* and add the highlighted code. Make sure you save your changes.
 
-   :::code language="csharp" source="../code/create-minimal-api-add-swagger.cs" highlight="1, 5-9, 13-17":::
+   :::code language="csharp" source="../code/create-minimal-api-add-swagger.cs" highlight="1, 5-9, 13-20":::
 
 1. Press **Ctrl+\`** to open a terminal in Code. In the new terminal, run the app again:
 

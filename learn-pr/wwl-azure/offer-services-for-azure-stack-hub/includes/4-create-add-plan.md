@@ -20,7 +20,7 @@ Add-on plans are created the same way as a base plan. The difference between the
     :::image type="content" source="../media/create-add-on-plans-2-cb5e6951.png" alt-text="Image showing selecting Add-on plans." lightbox="../media/create-add-on-plans-2-cb5e6951.png":::
     
 
-5.  Select the plan to add. In this example, the plan is called 2**0-storageaccounts**. After selecting the plan, click **Select** to add the plan to the offer. You should receive a notification that the plan was added to the offer successfully.
+5.  Select the plan to add. In this example, the plan is called **plan9**. After selecting the plan, click **Select** to add the plan to the offer. You should receive a notification that the plan was added to the offer successfully.
     
     :::image type="content" source="../media/create-add-on-plans-3-334ca3ee.png" alt-text="Image showing plan was added to the offer.":::
     

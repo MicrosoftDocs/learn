@@ -1,15 +1,18 @@
 ### YamlMime:Module
 uid: learn.azure.introduction-to-azure-api-management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction
   title: Introduction to Azure API Management
   description: Evaluate whether Azure API Management is appropriate for managing and exposing your organization's APIs
   ms.date: 04/07/2023
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-intro-to-product
   ms.custom: engagement-fy23
+  ms.service: azure-api-management
+  manager: susanpotter
 title: Introduction to Azure API Management
 summary: "Learn how Azure API Management can help reduce API complexity in your organization. Determine the types of deployments for which Azure API Management is a good API lifecycle management solution. "
 abstract: |
@@ -28,8 +31,6 @@ roles:
   - solution-architect
 products:
   - azure-api-management
-subjects:
-- development-tools
 units:
 - learn.azure.introduction-to-azure-api-management.introduction
 - learn.azure.introduction-to-azure-api-management.what-is-azure-api-management
@@ -39,3 +40,4 @@ units:
 - learn.azure.introduction-to-azure-api-management.summary
 badge:
   uid: learn.azure.introduction-to-azure-api-management.badge
+

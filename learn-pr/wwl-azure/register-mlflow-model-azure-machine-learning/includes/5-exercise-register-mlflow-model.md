@@ -1,15 +1,12 @@
-
-
 Now, it's your chance to explore how to log models with MLflow in Azure Machine Learning.
 
-In this exercise, you will:
+In this exercise, you learn how to:
 
 - Log models with MLflow.
 - Register an MLflow model in the Azure Machine Learning model registry.
 
 ## Instructions
 
-Follow these instructions to complete the exercise:
+Launch the exercise and follow the instructions.
 
-1. View the exercise repo at [https://microsoftlearning.github.io/mslearn-azure-ml/](https://microsoftlearning.github.io/mslearn-azure-ml?azure-portal=true).
-1. Complete the **Log and register models with MLflow** exercise.
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/10-Log-mlflow-models.html?azure-portal=true)

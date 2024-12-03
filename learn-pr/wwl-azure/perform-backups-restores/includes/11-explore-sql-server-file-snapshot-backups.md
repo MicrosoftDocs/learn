@@ -1,5 +1,3 @@
-
-
 A file-snapshot backup consists of a set of Azure snapshots of the blobs that contain database files and a backup file containing pointers to these file-snapshots. Each file-snapshot is stored in the container with the base blob. You can specify that the backup file itself to be written to URL, disk, or tape. File-snapshot backup to URL is recommended.
 
 You can use this approach for both full database and transaction log backups:
@@ -7,7 +5,7 @@ You can use this approach for both full database and transaction log backups:
 - **Full database backup**: Performing a full database backup using file-snapshot backup creates an Azure snapshot of each data and log file comprising the database, establishes the transaction log backup chain, and writes the location of the file-snapshots into the backup file.
 - **Transaction log backup**: Performing a transaction log backup using file-snapshot backup creates a file-snapshot of each database file (not just the transaction log), records the file-snapshot location information into the backup file, and truncates the transaction log file.
 
-After the initial full backup that is required to establish the transaction log backup chain (which can be a file-snapshot backup), you only need to perform transaction log backups because each transaction log file-snapshot backup set contains file-snapshots of all database files and can be used to perform a database restore or a log restore. More full or differential backups aren't needed after an initial full database backup. The Azure Blob storage service handles differences between each file-snapshot and the current state of the base blob for each database file.
+After the initial full backup that's required to establish the transaction log backup chain (which can be a file-snapshot backup), you only need to perform transaction log backups because each transaction log file-snapshot backup set contains file-snapshots of all database files and can be used to perform a database restore or a log restore. More full or differential backups aren't needed after an initial full database backup. The Azure Blob storage service handles differences between each file-snapshot and the current state of the base blob for each database file.
 
 ## Considerations and limitations
 

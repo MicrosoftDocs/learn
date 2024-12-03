@@ -6,7 +6,7 @@ In this unit, you'll learn three different techniques you can use to share value
 
 ## Sharing information with other components by using component parameters
 
-In a Blazor web app, each component renders a portion of HTML. Some components render a complete page but others render smaller fragments of markup, such as a table, a form, or a single control. If your component renders only a section of markup, you must use it as a child component within a parent component. Your child component can also be parent to other, smaller components that render within it. Child components are also known as nested components.
+In a Blazor web app, each component renders a portion of HTML. Some components render a complete page but others render smaller fragments of markup, such as a table, a form, or a single control. If your component renders only a section of markup, you must use it as a child component within a parent component. Your child component can also be a parent to other smaller components that render within it. Child components are also known as nested components.
 
 In this hierarchy of parent and child components, you can share information between them by using *component parameters*. Define these parameters on child components, and then set their values in the parent. For example, if you have a child component that displays pizza photos, you could use a component parameter to pass the pizza ID. The child component looks up the pizza from the ID and obtains pictures and other data. If you want to display many different pizzas, you can use this child component multiple times on the same parent page, passing a different ID to each child.
 
@@ -26,7 +26,7 @@ You start by defining the component parameter in the child component. It's defin
 }
 ```
 
-Because the component parameters are members of the child component, you can render them in your HTML by using Blazor's reserved `@` symbol, followed by their name. Also, the preceding code specifies a default value for the `PizzaDescription` parameter. This value is rendered if the parent component doesn't pass a value. Otherwise, it's overridden by the value passed from the parent.
+Because the component parameters are members of the child component, you can render them in your HTML by using Blazor's reserved `@` symbol, followed by their name. Also, the preceding code specifies a default value for the `PizzaDescription` parameter. This value is rendered if the parent component doesn't pass a value. Otherwise, the value passed from the parent overrides it.
 
 You can also use custom classes in your project as component parameters. Consider this class that describes a topping:
 
@@ -96,11 +96,11 @@ So in this example, the `<h2>` tag has the content `Deal: Throwback Thursday` be
 > [!NOTE]
 > As for component parameters, you can pass objects as cascading parameters if you have more complex requirements.
 
-In the preceding example, the cascading value is identified by the `Name` attribute in the parent, which is matched to the `Name` value in the `[CascadingParameter]` attribute. You can optionally omit these names, in which case the attributes are matched by type. Omitting the name works well when you have only one parameter of that type. If you want to cascade two different string values, you must use parameter names to avoid any ambiguity.
+In the preceding example, the `Name` attribute in the parent identifies the cascading value, which is matched with the `Name` value in the `[CascadingParameter]` attribute. You can optionally omit these names, in which case the attributes are matched by type. Omitting the name works well when you have only one parameter of that type. If you want to cascade two different string values, you must use parameter names to avoid any ambiguity.
 
 ## Share information by using AppState
 
-Another approach to sharing information between different components is to use the AppState pattern. You create a class that defines the properties you want to store and register it as a scoped service. In any component where you want to set or use the AppState values, you inject the service and then you can access its properties. Unlike component parameters and cascading parameters, values in AppState are available to all components in the application, even components that aren't children of the component that stored the value.
+Another approach to sharing information between different components is to use the AppState pattern. You create a class that defines the properties you want to store, and register it as a scoped service. In any component where you want to set or use the AppState values, you inject the service, and then you can access its properties. Unlike component parameters and cascading parameters, values in AppState are available to all components in the application, even components that aren't children of the component that stored the value.
 
 As an example, consider this class that stores a value about sales:
 
@@ -124,7 +124,7 @@ builder.Services.AddScoped<PizzaSalesState>();
 ...
 ```
 
-Now, in any component where you want to set or retrieve AppState values, you can inject the class and then access properties:
+Now, in any component where you want to set or retrieve AppState values, you can inject the class, and then access properties:
 
 ```razor
 @page "/"

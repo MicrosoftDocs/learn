@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-application-resiliency-azure.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: Knowledge check for the Introduction to application resiliency in Azure module
+  ms.date: 08/14/2024
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: Choose the best response for each question. 
+quiz:
+  questions:
+    - content: "Which of the following strategies is recommended for handling heavy load in an Azure application?"
+      choices:
+        - content: "Increasing the size of virtual machines or scaling up by adding more instances"
+          isCorrect: true
+          explanation: "Increasing the size of the virtual machines or scaling up by adding more instances helps address heavy load on an application"
+        - content: "Implementing synchronous data replication across multiple regions"
+          isCorrect: false
+          explanation: "Synchronous replication across regions doesn't help address application load issues"
+        - content: "Deploying virtual machines in a single fault domain"
+          isCorrect: false
+          explanation: "Deploying virtual machines in a single fault domain doesn't help address application load issues"
+    - content: "What is the purpose of using Availability Zones in Azure?"
+      choices:
+        - content: "To distribute VMs across multiple regions for global load balancing"
+          isCorrect: false
+          explanation: "Availability zones aren't related to load balancing"
+        - content: "To protect applications and data from datacenter failures within a region"
+          isCorrect: true
+          explanation: "Availability zones are used to protect applications and data from datacenter failures within a region"
+        - content: "To replicate data synchronously across different continents"
+          isCorrect: false
+          explanation: "Availability zones do not assist in replicating data across different continents"
+    - content: "Which Azure service provides the ability to replicate virtual machines to another Azure region for business continuity and disaster recovery?"
+      choices:
+        - content: "Azure Site Recovery"
+          isCorrect: true
+          explanation: "Azure Site Recovery allows you to replicate virtual machines to another Azure region for business continuity and disaster recovery"
+        - content: "Azure Traffic Manager"
+          isCorrect: false
+          explanation: "Azure Traffic Manager allows you to load balance traffic, but does not assist in replicating virtual machines for business continuity and disaster recovery"
+        - content: "Azure Backup"
+          isCorrect: false
+          explanation: "Azure Backup allows you to back up virtual machines, but does not assist in replicating virtual machines for business continuity and disaster recovery"
+    

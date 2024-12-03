@@ -4,11 +4,12 @@ title: Exercise - Update your calculated values
 metadata:
   title: Exercise - Update your calculated values
   description: "Exercise - Update your calculated values"
-  ms.date: 03/14/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/4-exercise-update-calculations.md)]

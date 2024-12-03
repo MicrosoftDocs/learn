@@ -4,25 +4,29 @@ In this module, your media company has an extensive library of video clips that 
 
 ## Learning objectives
 
-In this module, you learn how to:
+In this module, you will:
 
-- Identify features and usage cases for Azure Blob Storage.
-- Configure Blob Storage and Blob access tiers.
-- Configure Blob lifecycle management rules.
-- Configure Blob object replication.
-- Upload and price Blob Storage.
+- Understand the purpose and benefits of Azure Blob Storage.
+- Create and configure Azure Blob Storage accounts.
+- Manage containers and blobs within Azure Blob Storage.
+- Optimize blob storage performance and scalability.
+- Implement lifecycle management policies to automate data movement and deletion.
+- Determine the best pricing plans for your Azure Blob Storage. 
 
 ## Skills measured
 
-The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
-
-Implement and manage storage (15–20%)
-
-- Configure Azure Files and Azure Blob Storage
-   - Configure Azure Blob Storage
-   - Configure storage tiers for Azure Blob Storage
-   - Configure Blob lifecycle management
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). 
 
 ## Prerequisites
 
-None.
+Here are some common prerequisites that can be beneficial for understanding and successfully completing this module. 
+
+- Basic understanding of cloud computing: Familiarity with cloud computing concepts, such as virtualization, scalability, and pay-as-you-go pricing models, can provide a foundation for understanding how Azure Blob Storage fits into the broader cloud ecosystem.
+
+- Knowledge of Azure fundamentals: Having a basic understanding of Microsoft Azure services and concepts, such as Azure Resource Manager, Azure Storage Accounts, and Azure Virtual Networks, can help you navigate and configure blob storage effectively.
+
+- Familiarity with storage concepts: Understanding fundamental storage concepts like file systems, directories, files, and data replication can be beneficial when working with blob storage.
+
+- Experience with Azure Portal or Azure CLI: Familiarity with the Azure Portal (web-based management interface) or Azure CLI (command-line interface) can help you navigate and configure blob storage resources efficiently.
+
+- Basic programming or scripting skills: While not always required, having some knowledge of programming or scripting languages like PowerShell or Python can be advantageous when automating blob storage configuration tasks.

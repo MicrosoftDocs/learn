@@ -23,4 +23,4 @@ When you've finished the exercise in GitHub, return here for:
 > - A badge for completing this module
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/githubtraining/exercise-use-secrets?azure-portal=true)
+> [Start the exercise on GitHub](https://github.com/skills/deploy-to-azure)

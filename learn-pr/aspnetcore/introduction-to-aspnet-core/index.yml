@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.introduction-to-aspnet-core
+metadata:
+  title: Introduction to .NET web development with ASP.NET Core            # Do not edit: title must be "Introduction to (product)"
+  description: In this module, you'll learn about .NET web development with ASP.NET Core, including what it is and when to use it.
+  ms.date: 11/01/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: module-intro-to-product # Please don't edit, used for our analytics
+  ms.service: dotnet
+###########################################################################
+###
+### Do not edit: title must be "Introduction to (product)"
+###
+title: Introduction to .NET web development with ASP.NET Core
+###########################################################################
+summary: "Discover the key features of ASP.NET Core for building your next web app."
+abstract: |
+  By the end of this module, you're able to:
+    - Evaluate whether ASP.NET Core is appropriate for your next web development project.
+    - Describe how ASP.NET Core works for building web apps.
+prerequisites: |
+  - Ability to write HTML at a novice level
+  - Familiarity with basic C#
+  - Familiarity with web server and browser interactions
+iconUrl: /training/achievements/intro-to-blazor.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - dotnet
+  - aspnet-core
+subjects:
+  - app-development
+###########################################################################
+###
+### Do not edit: the unit names and order are exactly determined by the "Introduction to (product)" module pattern
+###
+units:
+- learn.introduction-to-aspnet-core.introduction
+- learn.introduction-to-aspnet-core.what-is-aspnet-core
+- learn.introduction-to-aspnet-core.how-aspnet-core-works
+- learn.introduction-to-aspnet-core.when-to-use-aspnet-core
+- learn.introduction-to-aspnet-core.knowledge-check
+- learn.introduction-to-aspnet-core.summary
+###########################################################################
+###
+###
+###
+badge:
+  uid: learn.introduction-to-dotnet-web-development-with-aspnet-core.badge

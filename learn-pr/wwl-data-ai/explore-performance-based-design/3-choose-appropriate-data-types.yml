@@ -2,13 +2,14 @@
 uid: learn.wwl.explore-performance-based-design.choose-appropriate-data-types
 title: Choose appropriate data types
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose appropriate data types
   description: "Choose appropriate data types"
   ms.date: 04/28/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

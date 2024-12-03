@@ -1,4 +1,4 @@
-The Reports blade in the Microsoft 365 Defender portal provides access to all the available reports for Microsoft Defender for Endpoint and Microsoft Defender for Office 365.
+The Reports blade in the Microsoft Defender portal provides access to all the available reports for Microsoft Defender for Endpoint and Microsoft Defender for Office 365.
 
 
 

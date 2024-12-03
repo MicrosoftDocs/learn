@@ -4,7 +4,7 @@ Once you have an Azure VM disk caching strategy in place, you can then quickly a
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-## Additional resources
+## Learn more
 
 - [Azure Premium Storage: Design for High Performance](/azure/virtual-machines/windows/premium-storage-performance)
 - [Get started with Azure PowerShell](/powershell/azure/get-started-azureps)

@@ -1,6 +1,6 @@
-As Contoso continues to employ Azure Arc for its Windows resources, it has learned the value Arc can also bring to its Linux systems. Onboarding its Linux machines to Azure Arc will allow Contoso to manage and gain insight into them through a wide variety of tools and capabilities.
+As Contoso continues to employ Azure Arc for its Windows resources, it's learning the value Arc can also bring to its Linux systems. Onboarding its Linux machines to Azure Arc allows Contoso to manage and gain insight into them through a wide variety of tools and capabilities.
 
-In this module you learned about the many benefits of using Azure Arc for your Linux resources, including managing them securely via SSH. You also learned how Arc Arc can handle multiple Linux systems.
+In this module, you learned about the many benefits of using Azure Arc for your Linux resources, including managing them securely via SSH. You also learned how Arc can handle multiple Linux systems.
 
 ## Learn more
 

@@ -1,18 +1,21 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-cache-for-redis 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Introduction to Azure Cache for Redis
   description: Evaluate how Azure Cache for Redis can improve the performance and scalability of your apps. Describe how Redis provides a critical low-latency and high-throughput data storage solution to modern apps.
-  ms.date: 04/09/2021  
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/04/2024  
+  author: flang-msft
+  ms.author: franlanglois
+  ms.topic: module-intro-to-product
+  ms.service: azure-cache-redis
+  manager: susanpotter
 title: Introduction to Azure Cache for Redis
-summary: Microsoft Azure Cache for Redis brings a critical low-latency and high-throughput data storage solution to modern applications. This can help improve the performance and scalability of your apps that rely heavily on backend data stores.
+summary: Microsoft Azure Cache for Redis brings a critical low-latency and high-throughput data storage solution to modern applications. This solution can help improve the performance and scalability of your apps that rely heavily on backend data stores.
 abstract: |
-  By the end of this module, you'll be able to: 
+  By the end of this module, you're able to: 
     - Evaluate whether Azure Cache for Redis can improve the performance and scalability of your apps.
     - Describe how to use Redis as a distributed data or content cache, a session store, a message broker, and more.
 prerequisites: |
@@ -39,3 +42,4 @@ units:
 - learn.intro-to-azure-cache-for-redis.6-summary
 badge:
   uid: learn.intro-to-azure-cache-for-redis.badge
+

@@ -2,13 +2,14 @@
 uid: learn.host-a-web-application-with-azure-web-apps.8
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 12/01/2020
+  ms.date: 10/3/2024
   author: cephalin
   ms.author: cephalin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]
@@ -20,19 +21,20 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "Azure App service has built-in autoscale support and will increase or decrease the resources allocated to run your app as needed, depending on the demand."
+      explanation: "Azure App service has built-in autoscale support and increases or decreases the resources allocated to run your app as needed, depending on the demand."
     - content: "False"
       isCorrect: false
-      explanation: "Azure App service has built-in autoscale support and will increase or decrease the resources allocated to run your app as needed, depending on the demand."
+      explanation: "Azure App service has built-in autoscale support and increases or decreases the resources allocated to run your app as needed, depending on the demand."
 
-  - content: "Which of the following isn't a valid automated deployment source?"
+  - content: "Which of the following options isn't a valid automated deployment source?"
     choices:
     - content: "GitHub"
       isCorrect: false
-      explanation: "Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
-    - content: "Azure DevOps"
+      explanation: "Azure currently supports Azure Repos, GitHub, Bitbucket, and external Git repositories."
+    - content: "Azure Repos"
       isCorrect: false
-      explanation: "Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+      explanation: "Azure currently supports Azure Repos, GitHub, Bitbucket, and external Git repositories."
     - content: "SharePoint"
       isCorrect: true
-      explanation: "Azure currently supports Azure DevOps, GitHub, Bitbucket, OneDrive, Dropbox, and external Git repositories."
+      explanation: "Azure currently supports Azure Repos, GitHub, Bitbucket, and external Git repositories."
+

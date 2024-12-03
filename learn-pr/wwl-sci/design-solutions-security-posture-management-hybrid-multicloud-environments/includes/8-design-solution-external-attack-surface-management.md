@@ -19,7 +19,7 @@ _Microsoft Defender External Attack Surface Management (Defender EASM)_ continu
 
 :::image type="content" source="../media/overview-1.png" alt-text="Screenshot of Overview Dashboard." lightbox="../media/overview-1.png":::
 <!--
-[](https://learn.microsoft.com/azure/external-attack-surface-management/#discovery-and-inventory)
+[](/azure/external-attack-surface-management/#discovery-and-inventory)
 -->
 
 
@@ -42,7 +42,7 @@ Defender EASM includes the discovery of the following kinds of assets:
 
 Discovered assets are indexed and classified in your Defender EASM Inventory, providing a dynamic record of all web infrastructure under the organization's management. Assets are categorized as recent (currently active) or historic, and can include web applications, third party dependencies, and other asset connections.
 <!--
-[](https://learn.microsoft.com/azure/external-attack-surface-management/#dashboards)
+[](/azure/external-attack-surface-management/#dashboards)
 -->
 
 ### Dashboards
@@ -50,7 +50,7 @@ Discovered assets are indexed and classified in your Defender EASM Inventory, pr
 Defender EASM provides a series of dashboards that help users quickly understand their online infrastructure and any key risks to their organization. These dashboards are designed to provide insight on specific areas of risk, including vulnerabilities, compliance, and security hygiene. These insights help customers quickly address the components of their attack surface that pose the greatest risk to their organization.
 
 <!--
-[](https://learn.microsoft.com/azure/external-attack-surface-management/#managing-assets)
+[](/azure/external-attack-surface-management/#managing-assets)
 -->
 :::image type="content" source="../media/overview-3.png" alt-text="Screenshot of Dashboard View." lightbox="../media/overview-3.png":::
 
@@ -61,7 +61,7 @@ Customers can filter their inventory to surface the specific insights they care 
 :::image type="content" source="../media/overview-4.png" alt-text="Screenshot of Inventory View." lightbox="../media/overview-4.png":::
 
 <!--
-[](https://learn.microsoft.com/azure/external-attack-surface-management/#user-permissions)
+[](/azure/external-attack-surface-management/#user-permissions)
 -->
 
 ### User permissions

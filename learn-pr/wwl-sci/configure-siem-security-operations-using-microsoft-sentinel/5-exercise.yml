@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs-perform.exercise
+title: Exercise - Perform a simulated attack to validate the Analytic and Automation rules
+metadata:
+  title: Exercise - Perform a simulated attack to validate the Analytic and Automation rules
+  description: "Perform a simulated privilege escalation attack to validate the Analytic and Automation rules."
+  ms.date: 10/6/2023
+  author: wwlpublish  
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise.md)]

@@ -2,15 +2,16 @@
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-delegation-by-using-administrative-units
 title: Configure delegation by using administrative units
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure delegation by using administrative units
   description: "Configure delegation by using administrative units"
-  ms.date: 02/03/2023
+  ms.date: 09/03/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/5-configure-delegation-administrative-units.md)]

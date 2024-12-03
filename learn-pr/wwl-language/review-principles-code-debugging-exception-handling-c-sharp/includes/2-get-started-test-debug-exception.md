@@ -2,6 +2,7 @@
 
 
 
+
 Every software developer needs to complete some level of testing and debugging when they develop their code, and exception handling is often required. But how are these three tasks related and when should they be implemented?
 
 ## Testing, debugging, and exception handling

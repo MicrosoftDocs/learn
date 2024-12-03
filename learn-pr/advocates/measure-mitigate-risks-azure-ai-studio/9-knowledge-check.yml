@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.measure-mitigate-risks-azure-ai-studio.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge of measuring and mitigating risks for a generative AI app in Azure AI Foundry.
+  ms.date: 09/14/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Which feature isn't included in the system message?
+    choices:
+    - content: Instructions that guide the user's input.
+      isCorrect: true
+      explanation: "Correct: The user's input is freeform, and any instructions for the user would be part of the interface, not the system message."
+    - content: Data about the current conversation context.
+      isCorrect: false
+      explanation: "Incorrect: The system message can include some contextual data to help the AI understand how to respond in line with past interactions."
+    - content: Restrictions or limitations for the AI's response.
+      isCorrect: false
+      explanation: "Incorrect: The system message often contains restrictions that limit the types of responses the AI can provide, ensuring it follows specific rules or avoids certain topics."
+    - content: Information that sets the behavior of the AI.
+      isCorrect: false
+      explanation: "Incorrect: The system message typically includes information that sets the AI's behavior, such as its personality or specific guidelines for how it should respond."
+  - content: For Azure OpenAI model deployments, what is the threshold level for the default content filter?
+    choices:
+    - content: High.
+      isCorrect: false
+      explanation: 'Incorrect: A content filter can only be set to "high" by creating a custom content filter.'
+    - content: Medium.
+      isCorrect: true
+      explanation: "Correct: The default content filter is set to a medium threshold. However, only customers who have been approved for modified content filtering have full content filtering control."
+    - content: Low.
+      isCorrect: false
+      explanation: "Incorrect: A content filter can only be set to low by creating a custom content filter."
+    - content: No detection.
+      isCorrect: false
+      explanation: "Incorrect: Although content filters can be turned off with approval, the threshold 'no detection' isn't an actual level."
+  - content: What is the view for comparing automated evaluation results, enabling you to visualize the delta and/or only showing differences?
+    choices:
+    - content: Compare view.
+      isCorrect: false
+      explanation: "Incorrect: The Compare view isn't a view within automated evaluations."
+    - content: List view.
+      isCorrect: false
+      explanation: "Incorrect: The List view only lists all evaluation runs and their respective results. Although this view supports filters and modifying columns, this view does not include the ability to show the delta nor to show differences."
+    - content: Dashboard view.
+      isCorrect: true
+      explanation: "Correct: You can select the desired runs and initiate the evaluation comparison process within a List or Dashboard view."
+    - content: Contrast view.
+      isCorrect: false
+      explanation: "Incorrect: The Contrast view isn't a view within automated evaluations."

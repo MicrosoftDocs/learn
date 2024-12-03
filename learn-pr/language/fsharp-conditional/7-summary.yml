@@ -4,11 +4,11 @@ title: Summary
 metadata:
   title: Summary
   description: Summary of F# conditional logic.
-  ms.date: 07/23/2021
+  ms.date: 11/23/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

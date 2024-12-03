@@ -10,7 +10,7 @@ Learn about a [career at Microsoft](https://careers.microsoft.com).
 
 ## Additional learning
 
-- [The first 90 days in the job](https://www.linkedin.com/learning/what-to-do-in-the-first-90-days-of-your-new-job/introduction?u=3322) outlines a strategy to optimize them.
+- [The first 90 days in the job](https://www.linkedin.com/learning/strategies-for-your-first-90-days-in-a-new-job) outlines a strategy to optimize them.
 - [How to be a good mentee and mentor](https://www.linkedin.com/learning/how-to-be-a-good-mentee-and-mentor/the-power-of-mentoring?u=3322) covers how to get good at both imparting and receiving new information.
 - [Asking for feedback](https://www.linkedin.com/learning/asking-for-feedback-as-an-employee/why-you-should-ask-for-feedback?u=3322) helps you take responsibility for your career growth.
 - Learn about [active listening](https://www.linkedin.com/learning/search?keywords=active%20listeninng&u=3322).

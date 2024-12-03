@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.secure-data-access-in-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/18/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: What is order of evaluation of access in Fabric?
+    choices:
+    - content:  Data security, Fabric access, Microsoft Entra ID authentication
+      isCorrect: false
+      explanation: Incorrect. The order starts with Microsoft Entra ID authentication, not Data security.
+    - content: Microsoft Entra ID authentication, Fabric access, Data security
+      isCorrect: true
+      explanation: Correct. The order of evaluation for access in Fabric is Microsoft Entra ID authentication, Fabric access, and then Data security.
+    - content: Fabric access, Microsoft Entra ID authentication, Data security
+      isCorrect: false
+      explanation: Incorrect. The order starts with Microsoft Entra ID authentication, not Fabric access.
+  - content: What workspace role should be assigned to a data engineer who needs to create Fabric items and read all data in an existing lakehouse?
+    choices:
+    - content: Viewer
+      isCorrect: false
+      explanation: Incorrect. The Viewer role only allows viewing of content and data, but doesn't allow modification or creation of Fabric items.
+    - content: Contributor
+      isCorrect: true
+      explanation: Correct. The Contributor role allows the user to view and modify all content and data in the workspace, including creating Fabric items and reading data in the lakehouse.
+    - content: Admin
+      isCorrect: false
+      explanation: Incorrect. The Admin role has more permissions than needed, including managing all content, data, and permissions.
+  - content: Which of the following tools can be used to apply granular data access permissions in Fabric?
+    choices:
+    - content: OneLake data access roles
+      isCorrect: true
+      explanation: Correct. OneLake data access roles allow you to create custom roles within a lakehouse and grant read access to specific folders.
+    - content: Data Manipulation Language (DML)
+      isCorrect: false
+      explanation: Incorrect. Data Control language (DCL) is used to provide granular T-SQL permissions. DML is used to manipulate data.
+    - content: Column-level security in the semantic model
+      isCorrect: false
+      explanation: Incorrect. There isn't column-level security in the semantic model.

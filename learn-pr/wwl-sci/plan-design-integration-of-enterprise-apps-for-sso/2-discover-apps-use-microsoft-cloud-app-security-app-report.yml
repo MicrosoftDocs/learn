@@ -4,13 +4,12 @@ title: Discover apps by using Microsoft Defender for Cloud Apps and Active Direc
 metadata:
   title: Discover apps by using Microsoft Defender for Cloud Apps and Active Directory Federation Services app report
   description: "Discover apps by using Microsoft Defender for Cloud Apps and Active Directory Federation Services app report"
-  ms.date: 02/07/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 1
 content: |
   [!include[](includes/2-discover-apps-use-microsoft-cloud-app-security-app-report.md)]
