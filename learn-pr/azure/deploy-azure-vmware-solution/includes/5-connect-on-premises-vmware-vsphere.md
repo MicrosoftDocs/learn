@@ -52,7 +52,6 @@ To use the Azure CLI for peering:
 1. Gather your specific information:
     - Resource ID
     - Authorization key
-    - /29 CIDR network block
 1. Enter the following Azure CLI command to create the authorization key:
 
     ```azurecli
@@ -78,9 +77,9 @@ To use the Azure CLI for peering:
 1. Run the following command against the first circuit, passing in the second circuit's resource ID and authorization key:
 
     ```azurecli
-    az network express-route peering connection create -g <ResourceGroupName> --circuit-name <Circuit1Name> --peering-name AzurePrivatePeering -n <ConnectionName> --peer-circuit <Circuit2ResourceID> --address-prefix <__.__.__.__/29> --authorization-key <authorizationKey>
+    az network express-route peering connection create -g <ResourceGroupName> --circuit-name <Circuit1Name> --peering-name AzurePrivatePeering -n <ConnectionName> --peer-circuit <Circuit2ResourceID> --authorization-key <authorizationKey>
     ```
 
 When this operation is complete, you'll have connectivity between your on-premises environment and Azure VMware Solution through the two ExpressRoute circuits.
 
-In the next unit, we'll walk through how to configure NSX-T networking components in the Azure portal. NSX-T Manager provides the software-defined networking layer for Azure VMware Solution.
+In the next unit, we'll walk through how to configure NSX networking components in the Azure portal. NSX Manager provides the software-defined networking layer for Azure VMware Solution.
