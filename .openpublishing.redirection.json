@@ -35153,6 +35153,11 @@
       "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/3-exercise-create-azure-linked-service.md",
       "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/7-exercise-enrich-data-using-trained-models-predict-function.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
     }
   ]
 }
