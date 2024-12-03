@@ -34,7 +34,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.understand-how-to-score-models-with-predict
-- learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.knowledge-check
 - learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.badge
