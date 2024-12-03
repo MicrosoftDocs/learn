@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.control-azure-services-with-cli.5-create-resources-interactively
+title: Create an Azure Resource interactively with Azure CLI
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create an Azure Resource interactively with Azure CLI
+  description: Create an Azure Resource interactively with Azure CLI
+  ms.date: 11/26/2024
+  author: dbradish-microsoft
+  ms.author: dbradish
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+  zone_pivot_groups: platform    
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-create-resources-interactively.md)]
+
