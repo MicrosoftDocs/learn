@@ -62,7 +62,7 @@ The following table shows the CPU, memory, disk, and network specifications of t
 | AV52      | Dual Intel Xeon Platinum 8270 CPUs, 26 cores/CPU @ 2.7 GHz / 4.0 GHz Turbo. Total 52 physical cores. | 1,536 GB | 1.5 TB (Intel Cache) | 38.40 TB (NVMe)|
 | AV64*      | Dual Intel Xeon Platinum 8370C CPUs, 32 cores/CPU @ 2.8 GHz / 3.5 GHz Turbo. Total 64 physical cores. | 1,024 GB | 3.84 TB (NVMe) | 15.36 TB (NVMe)|
 
-(*) An Azure VMware Solition private cloud deployed with AV36, AV36P, or AV52 is required prior to adding AV64 hosts. 
+(*) An Azure VMware Solution private cloud deployed with AV36, AV36P, or AV52 is required prior to adding AV64 hosts. 
 
 You use vSphere and NSX Manager to manage most aspects of cluster configuration or operation. All local storage for each host in a cluster is under the control of vSAN. Each ESXi host in the solution is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic.
 
