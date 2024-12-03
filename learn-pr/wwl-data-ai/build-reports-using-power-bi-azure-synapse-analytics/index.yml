@@ -33,6 +33,5 @@ subjects:
 - data-visualization
 - data-storage
 units:
-- learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.visualize-data-with-serverless-sql-pools
 badge:
   uid: learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.badge
