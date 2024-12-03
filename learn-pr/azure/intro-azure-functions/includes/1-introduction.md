@@ -8,17 +8,17 @@ The features of Azure Functions allow you to:
 
 - **Troubleshoot a function**: Use monitoring tools and testing strategies to gain insights into your apps.
 
-- **Pay with flexible pricing options**: With the Consumption plan, you only pay while your functions are running, while the Premium and App Service plans offer features for specialized needs.
+- **Take advantage of flexible pricing options**: With the Consumption plan, you only pay while your functions are running, while the Premium and App Service plans offer features for specialized needs.
 
 ## Example scenario
 
-You own a business, and you want to send a holiday greeting email to your customers. Instead of building a website and deploying and hosting it, just for one feature, you want to use an Azure function, add your email sign-in details in the function, and then deploy it to Azure. The function connects to the data source, gets your customers email information, and sends them an email on a scheduled date and time.
+You own a business, and you want to send a holiday greeting email to your customers. Instead of building a website and deploying and hosting it just for one feature, you want to use an Azure function, add your email sign-in details in the function, and then deploy it to Azure. The function connects to the data source, gets your customers email information, and sends them an email on a scheduled date and time.
 
 ## Learning objectives
 
 In this module, you learn:
 
-- What Azure Functions service is and how you interact with it.
+- What Azure Functions is and how you interact with it.
 - What the key components of Azure Functions are and how it works.
 - What the strengths of Azure Functions are and how to best use the service.
 

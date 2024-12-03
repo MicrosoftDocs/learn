@@ -1,6 +1,6 @@
-Azure Functions is a cloud-based compute service. Functions provide event-driven and scalable serverless compute for Azure. In some cases, you’re only billed for the time your function code runs.
+Azure Functions is a cloud-based compute service that provides event-driven and scalable serverless compute for Azure. In some cases, you’re only billed for the time your function code runs.
 
-You can use Azure Functions to run your code when you need it to run. For example, your code can run as the result of an event or change, such as when a message arrives in a queue or when a stored object is updated. You can also use `cron` rules to define a scheduled interval for your code to run.
+You can use Azure Functions to run your code when you need it to run. For example, your code can run as the result of an event or change, such as when a message arrives in a queue or when a stored object is updated. You can also define a scheduled interval for your code to run by using `cron` rules.
 
 ## Use triggers to decide when to run code
 
@@ -12,9 +12,11 @@ Azure Functions lets you define triggers, which start the execution of your code
 - **Queues**: Queue messages can be processed, as well.
 - **Timer**: Invoke code based on a specified time interval.
 
-Use bindings to connect to data sources. Bindings are ways to simplify coding for input and output data. While you can use a client SDK to connect to services from your function code, Azure Functions provides bindings to simplify these connections. Essentially, bindings are connection code you don’t have to write. You can integrate with many services on Azure and solve integration problems and automate business processes.
+## Use bindings to connect to data sources
 
-Bindings comes in two flavors, input, and output. An *output binding* provides a way to write data to the data destination; for example, placing a message on a queue or a new row in a database. An *input binding* can be used to pass data to your function from a data source different than the one that triggered the function.
+Bindings are ways to simplify coding for input and output data. While you can use a client SDK to connect to services from your function code, Azure Functions provides bindings to simplify these connections. Essentially, bindings are connection code you don’t have to write. You can integrate with many services on Azure and solve integration problems and automate business processes.
+
+Bindings come in two flavors, input, and output. An *output binding* provides a way to write data to the data destination; for example, placing a message on a queue or a new row in a database. An *input binding* can be used to pass data to your function from a data source different than the one that triggered the function.
 
 ## Features
 
