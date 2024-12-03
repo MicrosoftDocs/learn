@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: "Principle: Carbon efficiency"
   description: This principle of sustainable software engineering is about building applications that are carbon efficient. In this unit, you'll learn about carbon, its unit of measurement, and why it's so important.
-  ms.date: 09/29/2023
+  ms.date: 11/23/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit

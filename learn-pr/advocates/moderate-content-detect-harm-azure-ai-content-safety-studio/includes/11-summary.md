@@ -1,4 +1,4 @@
-In this workshop, you learned how to use the Azure AI Content Safety features within Azure AI Studio. You're now ready to integrate this resource into Contoso Camping Store's AI-powered platform!
+In this workshop, you learned how to use the Azure AI Content Safety features within Azure AI Foundry. You're now ready to integrate this resource into Contoso Camping Store's AI-powered platform!
 
 As you continue your journey in developing AI, remember to keep responsible AI principles at the forefront of your approach. Mitigating potential harms that generative AI models present requires an iterative, layered approach that includes experimentation and measurement.
 

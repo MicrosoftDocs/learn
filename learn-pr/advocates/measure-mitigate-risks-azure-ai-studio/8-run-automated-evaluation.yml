@@ -3,7 +3,7 @@ uid: learn.measure-mitigate-risks-azure-ai-studio.run-automated-evaluation
 title: Run and compare automated evaluations
 metadata:
   title: Run and compare automated evaluations
-  description: Learn how to run and compare automated evaluations in Azure AI Studio.
+  description: Learn how to run and compare automated evaluations in Azure AI Foundry.
   ms.date: 09/14/2024
   author: aprilspeight
   ms.author: apspeigh

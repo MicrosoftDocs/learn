@@ -18,7 +18,7 @@ Although the process applied today might look linear, it's an iterative process.
 
 [Infuse responsible AI tools and practices in your LLMops](https://azure.microsoft.com/blog/infuse-responsible-ai-tools-and-practices-in-your-llmops/)
 
-[Model catalog and collections in Azure AI Studio](/azure/ai-studio/how-to/model-catalog-overview)
+[Model catalog and collections in Azure AI Foundry](/azure/ai-studio/how-to/model-catalog-overview)
 
 [Harm categories in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/harm-categories)
 
