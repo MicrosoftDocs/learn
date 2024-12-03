@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: When to use Azure Functions
   description: In this unit, you learn when to use Azure Functions
-  ms.date: 03/18/2024
+  ms.date: 12/03/2024
   author: ggailey777
   ms.author: glenga
   ms.topic: unit

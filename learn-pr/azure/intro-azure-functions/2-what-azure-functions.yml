@@ -8,7 +8,7 @@ metadata:
   description: In this unit, you learn about Azure Functions and when it best fits your architectural needs.
   author: ggailey777
   ms.author: glenga
-  ms.date: 03/18/2024
+  ms.date: 12/03/2024
   ms.topic: unit
 durationInMinutes: 3
 content: |
