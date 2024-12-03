@@ -35068,6 +35068,11 @@
       "source_path":"learn-pr/achievements/learn.azure.azure-netapp-files-sap-hana.badge.yml",
       "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/index.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
     }
   ]
 }
