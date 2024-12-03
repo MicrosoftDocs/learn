@@ -25,7 +25,6 @@ products:
 - power-bi
 - azure-synapse-analytics
 modules:
-- learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics
 - learn.wwl.integrate-machine-learning-within-azure-synapse-analytics
 trophy:
   uid: learn.wwl.integrate-azure-synapse-analytics-azure-data-ai-services.trophy
