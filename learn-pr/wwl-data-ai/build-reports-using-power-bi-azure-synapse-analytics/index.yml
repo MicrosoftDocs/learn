@@ -34,7 +34,6 @@ subjects:
 - data-storage
 units:
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.introduction
-- learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.describe-synapse-workspace-integration
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.exercise-connect-to-from-synapse
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.understand-data-sources
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.exercise-create-new-data-source-to-use
