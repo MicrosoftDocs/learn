@@ -1,42 +1,37 @@
-The first step to running evaluations with the Azure AI Evaluation SDK is to provision an Azure OpenAI Service resource in your Azure subscription. You can get started by creating an Azure AI Hub resource in Azure AI Studio. After the hub resource is created, you'll need to create an Azure AI Project. Afterwards, you deploy a model to be used for running evaluations.
+The first step to running evaluations with the Azure AI Evaluation SDK is to provision an Azure OpenAI Service resource in your Azure subscription. You can get started by creating an Azure AI Hub resource in Azure AI Foundry. After the hub resource is created, you'll need to create an Azure AI Project. Afterwards, you deploy a model to be used for running evaluations.
 
-## Azure AI Hub resource
+Projects are hosted by an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps.
 
-The Azure AI hub resource is the top-level Azure resource for Azure AI Studio and provides the working environment for a team to build and manage AI applications. In Azure, resources enable access to Azure services for individuals and teams. Resources also provide a container for billing, security configuration, and monitoring. Follow the steps provided to create an Azure AI Hub resource.
+The Azure AI hub resource is the top-level Azure resource for Azure AI Foundry and provides the working environment for a team to build and manage AI applications. 
+
+In Azure, resources enable access to Azure services for individuals and teams. Resources also provide a container for billing, security configuration, and monitoring.
+
+## Create an Azure AI Foundry project resource
 
 > [!NOTE]
 > Currently AI-assisted risk and safety metrics are only available in the following regions: East US 2, France Central, UK South, Sweden Central. Groundedness measurement leveraging Azure AI Content Safety Groundedness Detection is only supported in the following regions: East US 2 and Sweden Central. Protected Material measurement is only supported in East US 2.
 
-1. Within [Azure AI Studio](https://ai.azure.com/), navigate to **Management** and select **All hubs**.
-1. Within hubs, select **+ New hub**.
+1. In [Azure AI Foundry](https://ai.azure.com/), select **+Create project**.
 1. Complete the following fields:
-    - Hub name - provide a name for your hub
-    - Subscription - select your Azure subscription
-    - Resource group - selecting an existing resource group or create a new one
-    - Location - East US 2
-    - Connect Azure AI Services or Azure OpenAI - select **Create new AI Services**
-    - Connect Azure AI Search - select **Create new AI Search**
+    - **Project name**: Provide a name for your project.
+    - **Hub**: Select **Create new hub** and enter a name for the hub.
+1. Select the arrow next to **Azure resources to be created** to review the resources that will be created.
+1. Select **Customize** and modify the following fields as needed:
+    - **Subscription**: Select your Azure subscription.
+    - **Resource group**: Select an existing resource group or create a new one.
+    - **Location**: Select **East US**.
+    - **Connect Azure AI Services or Azure OpenAI**: Either select an existing service, use the default name provided for a new service, or select **Create new AI Services** to provide your own name for the service.
+    - **Connect Azure AI Search**: Select **Create new AI Search**.
 1. Select **Next**.
-1. After reviewing the Hub details, select **Create**.
-
-## Azure AI project
-
-Projects are hosted in an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps. Follow the steps provided to create an Azure AI Project.
-
-1. Within **All hubs**, select your newly created hub.
-1. On the hub page, within the **Projects** section, select **+ New project**.
-1. In the **Create a project** window, enter a project name.
-1. Select **Create a project**.
+1. Review the hub details, and then select **Create**.
 
 ## Deploy a model
 
-1. Within Azure AI Studio, navigate to the **Model Catalog**.
-1. Apply the following filters:
-    - Collections > Azure OpenAI
-    - Inference tasks > Chat completion
-    - Select the **gpt-4o** model to view its model card.
+1. Within Azure AI Foundry, navigate to the **Model Catalog**.
+1. In the search bar, enter: **gpt-4o**. 
+1. Select the **gpt-4o** model.
 1. On the model card, select **Deploy**.
-1. For Deployment name, enter: *gpt-4*.
+1. For Deployment name, enter: *gpt-4o*.
 1. For Azure OpenAI resource, select your Azure OpenAI resource.
 1. Select **Deploy**.
 
