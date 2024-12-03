@@ -4227,3 +4227,13 @@ achievements:
   title: Optimize your web applications by caching read-only data with Redis
   summary: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
   iconUrl: /training/achievements/optimize-web-apps-with-redis.svg
+- uid: learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.badge
+  type: badge
+  title: Build reports using Power BI within Azure Synapse Analytics
+  summary: In this module, you will learn how you can build Power BI reports from within Azure Synapse Analytics.
+  iconUrl: /training/achievements/azure-synapse-analytics-reports-with-pbi.svg
+- uid: learn.wwl.integrate-azure-synapse-analytics-azure-data-ai-services.trophy
+  type: trophy
+  title: Integrate Azure Synapse Analytics with Azure Data and AI services
+  summary: Learn how Azure Synapse Analytics integrates with other Azure Data and AI services.
+  iconUrl: /learn/achievements/azure-synapse-analytics-data-ai-services.svg
