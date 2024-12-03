@@ -35128,6 +35128,11 @@
       "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/9-visualize-data-serverless-sql-pools.md",
       "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/integrate-azure-synapse-analytics-azure-data-ai-services/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
     }
   ]
 }
