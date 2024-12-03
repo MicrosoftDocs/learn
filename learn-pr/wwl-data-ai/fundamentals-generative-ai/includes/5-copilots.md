@@ -8,7 +8,7 @@ Generative AI assistants such as Microsoft Copilot have the potential to revolut
 
 ![A screenshot of Microsoft Copilot in the Edge browser.](../media/copilot.png)
 
-## Adopting Generative AI in your business
+## Adopting generative AI in your business
  
 In general, you can categorize industry and personal generative AI assistant adoption into three buckets: off-the-shelf use of Microsoft Copilot, extending Microsoft Copilot, and building copilot-like agents.
  
