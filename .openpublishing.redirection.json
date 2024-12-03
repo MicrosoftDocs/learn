@@ -35068,6 +35068,121 @@
       "source_path":"learn-pr/achievements/learn.azure.azure-netapp-files-sap-hana.badge.yml",
       "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/index.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/7-describe-optimization-options.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/2-describe-synapse-workspace-integration.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/3-exercise-connect-to-from-synapse.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/5-exercise-create-new-data-source-to-use.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/6-exercise-create-new-report-synapse-studio.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/8-exercise-improve-performance-materialized-views-result-set-caching.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/10-knowledge-check.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/11-summary.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/4-understand-data-sources.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/9-visualize-data-serverless-sql-pools.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/integrate-azure-synapse-analytics-azure-data-ai-services/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/index.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/4-describe-azure-automated-machine-learning.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/2-describe-azure-machine-learning-how-it-integrates-workspace.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/3-exercise-create-azure-linked-service.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/7-exercise-enrich-data-using-trained-models-predict-function.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/5-exercise-trigger-automated-machine-learning-experiment.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/8-knowledge-check.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/9-summary.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/6-understand-how-to-score-models-predict.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
     }
   ]
 }
