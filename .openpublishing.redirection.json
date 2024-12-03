@@ -35083,6 +35083,11 @@
       "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/2-describe-synapse-workspace-integration.md",
       "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/3-exercise-connect-to-from-synapse.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
     }
   ]
 }
