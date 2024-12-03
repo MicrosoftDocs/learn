@@ -35103,6 +35103,11 @@
       "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/8-exercise-improve-performance-materialized-views-result-set-caching.md",
       "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
     }
   ]
 }
