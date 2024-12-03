@@ -19,28 +19,28 @@ To create an ExpressRoute Global Reach authorization key in the private cloud:
 
     :::image type="content" source="../media/5-new-expressroute-connectivity-auth-key-created.png" alt-text="Screenshot of the Azure portal showing the new ExpressRoute Global Reach authorization key in the key list for the private cloud.":::
 
-1. Use the authorization key, ExpressRoute ID, and a /29 address block to complete the peering.
+1. Use the authorization key and ExpressRoute ID to complete the peering.
 
 ## Peer the Azure VMware Solution private cloud to the on-premises environment by using the authorization key
 
 After the authorization key is created, you can peer the Azure VMware Solution ExpressRoute circuit to the on-premises circuit. You can configure the peering by using either the Azure portal or the Azure CLI in Cloud Shell.
 
-For either method, you'll need the resource ID and authorization key of the Azure VMware Solution private-cloud ExpressRoute circuit for peering.
+For either method, you'll need the resource ID and authorization key of the Azure VMware Solution private cloud ExpressRoute circuit for peering.
 
 ### Use the Azure portal to configure peering
 
 To use the Azure portal for peering:
 
 1. In the Azure portal, select the Azure VMware Solution private cloud.
-1. From the private-cloud **Overview**, under **Manage**, select **Connectivity** > **ExpressRoute Global Reach** > **Add**:
-
-    :::image type="content" source="../media/5-expressroute-global-reach-tab.png" alt-text="Screenshot of the Azure portal fields for configuring ExpressRoute and adding the authorization key.":::
-
+1. From the private cloud **Overview**, under **Manage**, select **Connectivity** > **ExpressRoute Global Reach** > **Add**:
 1. Create an on-premises cloud connection by using one of the following methods:
     - Select the ExpressRoute circuit from the list.
     - Copy and paste the circuit ID.
 
-1. Select **Connect**.
+1. Select **Create**.
+
+    :::image type="content" source="../media/5-expressroute-global-reach-configuration.png" alt-text="Screenshot of the Azure portal fields for configuring ExpressRoute and adding the authorization key.":::
+
 1. The new connection will appear in the list of on-premises cloud connections.
 
 ### Use the Azure CLI to configure peering
