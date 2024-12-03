@@ -2,13 +2,14 @@
 uid: learn.introduction-to-azure-virtual-machines.7-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  ms.date: 09/13/2022
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/19/2023
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 1
 quiz:
   title: Check your knowledge
@@ -36,3 +37,4 @@ quiz:
     - content: "False"
       isCorrect: false
       explanation: "Resource Manager templates are JSON files that define the resources you need to deploy for your solution. The template can then be used to easily re-create multiple versions of your infrastructure, such as staging and production."
+

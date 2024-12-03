@@ -31,7 +31,7 @@ The EO notes that "effective immediately, it's the policy of the executive branc
 
 To implement this approach, agency heads are to favor shared IT services in procurement, specifically toward email, cloud, and cybersecurity.
 
-The Director of the American Technology Council is also tasked with creating a report within 90 days on consolidating all federal agencies, except national security ones, to consolidated network architectures and shared IT services.
+The Director of the American Technology Council is also tasked with creating a report within 90 days on consolidating all federal agencies, except national/regional security ones, to consolidated network architectures and shared IT services.
 
 ## Cybersecurity of critical infrastructure
 

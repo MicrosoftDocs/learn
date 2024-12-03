@@ -1,4 +1,3 @@
-
 Use a SAS when you want to provide secure access to resources in your storage account to any client who doesn't otherwise have permissions to those resources.
 
 A common scenario where a SAS is useful is a service where users read and write their own data to your storage account. In a scenario where a storage account stores user data, there are two typical design patterns:
@@ -11,7 +10,7 @@ A common scenario where a SAS is useful is a service where users read and write 
 
     :::image type="content" source="../media/storage-provider-service.png" alt-text="Scenario diagram: SAS provider service":::
 
-Many real-world services may use a hybrid of these two approaches. For example, some data might be processed and validated via the front-end proxy, while other data is saved and/or read directly using SAS.
+Many real-world services might use a hybrid of these two approaches. For example, some data might be processed and validated via the front-end proxy, while other data is saved and/or read directly using SAS.
 
 Additionally, a SAS is required to authorize access to the source object in a copy operation in certain scenarios:
 

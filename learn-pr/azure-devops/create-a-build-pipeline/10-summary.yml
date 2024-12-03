@@ -2,15 +2,17 @@
 uid: learn.azdo.create-a-build-pipeline.10-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Get a summary of what you've learned and discover resources to learn more.
-  ms.date: 04/04/2023
+  ms.date: 09/13/2024
   ms.custom: devdivchpfy22, engagement-fy23
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   zone_pivot_groups: azure-pipelines-agent-hosting
 durationInMinutes: 3
 content: |
   [!include[](includes/10-summary.md)]
+

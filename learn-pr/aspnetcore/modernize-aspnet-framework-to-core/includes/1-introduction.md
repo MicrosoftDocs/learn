@@ -4,9 +4,9 @@ In this module, you'll upgrade an ASP.NET MVC application running on .NET framew
 
 Suppose you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to evaluate whether you should upgrade an existing internal application written in ASP.NET MVC 5 running on .NET Framework 4.8.1 to ASP.NET Core.
 
-## What will you be doing?
+## What will you learn?
 
-In this module, you will:
+By the end of this module, you should be able to:
 
 * Understand when and why to modernize an existing ASP.NET application running on .NET Framework to ASP.NET Core.
 * Understand modernization options and opportunities for ASP.NET applications running on .NET Framework.

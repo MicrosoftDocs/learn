@@ -42,14 +42,14 @@ To best maintain Defender for Cloud Apps posture, regularly follow the recommend
 - Verify integrations are enabled:
   - Microsoft Purview Information Protection
   - Microsoft Defender for Identity
-  - Azure Active Directory Information Protection
+  - Microsoft Entra Information Protection
   - Microsoft Defender for Endpoint
 
 ## Application lifecycle management in Azure Container Apps
 
-The Azure Container Apps application lifecycle revolves around [revisions](https://learn.microsoft.com/azure/container-apps/revisions).
+The Azure Container Apps application lifecycle revolves around [revisions](/azure/container-apps/revisions).
 
-When you deploy a container app, the first revision is automatically created. [More revisions are created](https://learn.microsoft.com/azure/container-apps/revisions) as [containers](https://learn.microsoft.com/azure/container-apps/containers) change, or any adjustments are made to the `template` section of the configuration.
+When you deploy a container app, the first revision is automatically created. [More revisions are created](/azure/container-apps/revisions) as [containers](/azure/container-apps/containers) change, or any adjustments are made to the `template` section of the configuration.
 
 A container app flows through four phases: deployment, update, deactivation, and shut down.
 
@@ -59,13 +59,13 @@ As a container app is deployed, the first revision is automatically created.
 
 ![Diagram which shows the deployment phase with Azure Container Apps.](../media/azure-container-apps-lifecycle-deployment.png)
 <!--
-[](https://learn.microsoft.com/azure/container-apps/application-lifecycle-management#update)
+[](/azure/container-apps/application-lifecycle-management#update)
 -->
 
 
 ### Update
 
-As a container app is updated with a [revision scope-change](https://learn.microsoft.com/azure/container-apps/revisions#revision-scope-changes), a new revision is created. You can [choose](https://learn.microsoft.com/azure/container-apps/revisions#revision-modes) whether to automatically deactivate old revisions (single revision mode), or allow them to remain available (multiple revision mode).
+As a container app is updated with a [revision scope-change](/azure/container-apps/revisions#revision-scope-changes), a new revision is created. You can [choose](/azure/container-apps/revisions#revision-modes) whether to automatically deactivate old revisions (single revision mode), or allow them to remain available (multiple revision mode).
 
 ![Diagram which shows the update phase with Azure Container Apps.](../media/azure-container-apps-lifecycle-update.png)
 
@@ -73,18 +73,18 @@ As a container app is updated with a [revision scope-change](https://learn.micr
 
 In single revision mode, Container Apps automatically ensures your app doesn't experience downtime when creating a new revision. The existing active revision isn't deactivated until the new revision is ready. If ingress is enabled, the existing revision continues to receive 100% of the traffic until the new revision is ready.
 
-In multiple revision mode, you control when revisions are activated or deactivated and which revisions receive ingress traffic. If a [traffic splitting rule](https://learn.microsoft.com/azure/container-apps/revisions-manage#traffic-splitting) is configured with `latestRevision` set to `true`, traffic doesn't switch to the latest revision until it's ready.
+In multiple revision mode, you control when revisions are activated or deactivated and which revisions receive ingress traffic. If a [traffic splitting rule](/azure/container-apps/revisions-manage#traffic-splitting) is configured with `latestRevision` set to `true`, traffic doesn't switch to the latest revision until it's ready.
 <!--
-[](https://learn.microsoft.com/azure/container-apps/application-lifecycle-management#deactivate)
+[](/azure/container-apps/application-lifecycle-management#deactivate)
 -->
 
 ### Deactivate
 
-Once a revision is no longer needed, you can deactivate a revision with the option to reactivate later. During deactivation, containers in the revision are [shut down](https://learn.microsoft.com/azure/container-apps/application-lifecycle-management#shutdown).
+Once a revision is no longer needed, you can deactivate a revision with the option to reactivate later. During deactivation, containers in the revision are [shut down](/azure/container-apps/application-lifecycle-management#shutdown).
 
 ![Diagram which shows the deactivation phase with Azure Container Apps.](../media/azure-container-apps-lifecycle-deactivate.png)
 <!--
-[](https://learn.microsoft.com/azure/container-apps/application-lifecycle-management#shutdown)
+[](/azure/container-apps/application-lifecycle-management#shutdown)
 -->
 
 ### Shutdown

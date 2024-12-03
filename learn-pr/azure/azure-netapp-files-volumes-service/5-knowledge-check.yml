@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-volumes-service.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of NAS protocols in Azure NetApp Files. 
+  ms.date: 11/25/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: What NAS protocol is a stateless protocol, meaning it doesn't keep track of the states of connections?
+    choices:
+    - content: NFSv3
+      isCorrect: true
+      explanation: NFSv3 is stateless. The stateless nature of NFSv3 can lead to enhanced performance.  
+    - content: NFSv4.1
+      isCorrect: false
+      explanation: "NFSv4.1 is stateful, though its statefulness has drawbacks: performance overhead and potential disruptions during network outages or storage failovers."
+    - content: SMB2.1
+      isCorrect: false
+      explanation: SMB is a stateful protocol. The clients and server maintain a state for SMB share connections for better security and locking.
+    - content: SMB3.1
+      isCorrect: false 
+      explanation: SMB is a stateful protocol. The clients and server maintain a state for SMB share connections for better security and locking.
+  - content: Which access permission provides the entry point to volumes and limits who can and can't mount a NAS volume? 
+    choices: 
+    - content: Access-based enumeration 
+      isCorrect: false
+      explanation: Access-based enumeration is an Azure NetApp Files volume feature in the SMB protocol that limits enumeration of files and folders to users with allowed access on the share.
+    - content: Share access permissions
+      isCorrect: true 
+      explanation: Share access permission is the first entry point to be secured in a NAS environment. With share access permissions, you can lock down who can and can't mount the share.
+    - content: File access permissions 
+      isCorrect: false
+      explanation: File access permissions limit what users and groups can do once a NAS volume is mounted.
+    - content: Export policy
+      isCorrect: false
+      explanation: An export policy is a container for a set of access rules that are listed in order of desired access. These rules control access to NFS shares.
+  - content: How are share-level permission access control lists (ACLs) managed in Azure NetApp  Files? 
+    choices: 
+    - content: Azure NetApp Files portal
+      isCorrect: false 
+      explanation: Incorrect. Share-level permission ACLs are managed with the Microsoft Management Console. 
+    - content: Azure portal 
+      isCorrect: false 
+      explanation: Incorrect. Share-level permission ACLs are managed with the Microsoft Management Console. 
+    - content: Azure PowerShell 
+      isCorrect: false 
+      explanation: Incorrect. Share-level permission ACLs are managed with the Microsoft Management Console. 
+    - content: Microsoft Management Console (MMC)
+      isCorrect: true 
+      explanation: Correct. Share-level permission ACLs are managed through a Windows MMC console rather than through Azure NetApp Files. You can find the shares by expanding System Tools then selecting Shared Folders > Shares.

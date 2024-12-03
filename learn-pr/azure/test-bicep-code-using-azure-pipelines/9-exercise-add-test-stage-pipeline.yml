@@ -2,15 +2,19 @@
 uid: learn.azure.test-bicep-code-using-azure-pipelines.exercise-add-test-stage-pipeline
 title: Exercise - Add a test stage to your pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Add a test stage to your pipeline
   description: Add a post-deployment test stage to your Bicep deployment pipeline.
   ms.date: 10/31/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 4
 content: |
   [!include[](includes/9-exercise-add-test-stage-pipeline.md)]
+

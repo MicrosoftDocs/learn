@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-langstons-ant-file-operations.exercise-read-game-from-file
+title: Exercise - Read the game state from a file
+metadata:
+  title: Exercise - Read the game state from a file
+  description: "Exercise - Read the game state from a file"
+  ms.date: 03/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-read-game-from-file.md)]

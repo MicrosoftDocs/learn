@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-fine-tune-deployment.calibrate-and-fine-tune-your-sensor
+title: Calibrate and fine tune your sensor
+metadata:
+  title: Calibrate and fine tune your sensor
+  description: "Calibrate and fine tune your sensor."
+  ms.date: 5/23/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-calibrate-and-fine-tune-sensor.md)]

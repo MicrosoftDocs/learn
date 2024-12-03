@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-fundamentals-of-stream-processing.exercise-real-time-intelligence
+title: 'Exercise: Explore Microsoft Fabric Real-Time Intelligence'
+metadata:
+  title: 'Exercise: Explore Microsoft Fabric Real-Time Intelligence'
+  description: "Exercise: Explore Microsoft Fabric Real-Time Intelligence"
+  ms.date: 09/23/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-real-time-intelligence.md)]

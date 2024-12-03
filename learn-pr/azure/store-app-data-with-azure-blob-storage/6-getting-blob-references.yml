@@ -2,16 +2,20 @@
 uid: learn.store-app-data-with-azure-blob-storage.6-getting-blob-references
 title: Exercise - Get blob references
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Get blob references
   description: Exercise - Get blob references
-  ms.date: 03/23/2023
-  author: normesta
-  ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/29/2024
+  author: pauljewellmsft
+  ms.author: pauljewell
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
   zone_pivot_groups: dev-lang-csharp-java
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/6-getting-blob-references.md)]
+

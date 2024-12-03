@@ -2,13 +2,15 @@
 uid: learn.machinelearning.understand-regression-machine-learning.exercise-multiple-linear-regression
 title: Exercise - Train a multiple linear regression model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Train a multiple linear regression model
   description: Exercise unit about training a multiple linear regression model in machine learning
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/21/2024
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: unit
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/4-5-exercise-multiple-linear-regression.ipynb
+

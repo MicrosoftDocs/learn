@@ -1,10 +1,10 @@
 For this module, a private mobile network is a local 4G or 5G network where the Azure Private 5G Core is deployed. Each private mobile network can have multiple geographically dispersed sites. A site represents a physical enterprise location containing an Azure Stack Edge (ASE) device that hosts a packet core instance. The packet core instance provides either the 4G or 5G network functions needed for that site.
 
-Azure Private 5G Core allows you to manage a private mobile network and its sites centrally through the Azure portal. Once a private mobile network is deployed, you may need to manage it occasionally to support new applications or add/remove user equipment (UE) devices. For example, you may want to [reconfigure network slices](#configure-network-slices) or modify a site based on specific business needs. This unit introduces you to the network and site management tasks.
+Azure Private 5G Core allows you to manage a private mobile network and its sites centrally through the Azure portal. Once a private mobile network is deployed, you might need to manage it occasionally to support new applications or add/remove user equipment (UE) devices. For example, you might want to [reconfigure network slices](#configure-network-slices) or modify a site based on specific business needs. This unit introduces you to the network and site management tasks.
 
 ## Configure network slices
 
-An enterprise may attach different UEs to its private mobile network. Applications for different UEs may have different network quality of service or bandwidth requirements. For example, video analysis applications for production line monitoring cameras may require high bandwidth, while control applications for robot communication may require high levels of priority.
+An enterprise can attach different UEs to its private mobile network. Applications for different UEs might have different network quality of service or bandwidth requirements. For example, video analysis applications for production line monitoring cameras might require high bandwidth, while control applications for robot communication might require high levels of priority.
 
 Azure Private 5G Core allows you to divide a private mobile network into multiple network slices, with each slice being a logical end-to-end network. You can configure SIM policies with different slices available. Each SIM policy specifies how the network traffic from relevant UEs should be controlled on a per slice basis.
 
@@ -22,7 +22,7 @@ For each slice, you need to configure the following fields:
 
 - Slice Differentiator (SD): Optional. A differentiator that helps identify slices of the same slice service type.
 
-  Valid values are 0 to 16777216. For example, while two slices may both have `1` (eMBB) as the value of its service type, their slice differentiators are different, with one being `1` and the other being `2`, which identifies each slice uniquely.
+  Valid values are 0 to 16777216. For example, while two slices might both have `1` (eMBB) as the value of its service type, their slice differentiators are different, with one being `1` and the other being `2`, which identifies each slice uniquely.
 
   > [!NOTE]
   > The combination of SST and SD must be unique across the private mobile network.
@@ -53,7 +53,7 @@ For detailed instructions on configuring network slices, see [Create and manage 
 
 ## Modify the packet core instance in a site
 
-Once a site is deployed and put into production, you usually don't need to modify the packet core instance in it. However, if your network requirements change or you get new requirements, you may need to reconfigure the packet core instance. For example, you may want to use a different ASE device to host the site or attach a new data network (DN) to the site.
+You don't usually need to modify the packet core instance in a site, once the site is deployed and put into production. However, you might need to reconfigure the packet core instance if your network requirements change, or you get new requirements. For example, you might want to use a different ASE device to host the site or attach a new data network (DN) to the site.
 
 To modify the packet core instance in a site, take these steps:
 
@@ -82,7 +82,7 @@ For a site, the *site plan* determines the following information:
 - The throughput and the number of radio access network (RAN) connections.
 - The number of devices that each network supports.
 
-You may need to update the site plan if your deployment requirements change.
+You might need to update the site plan if your deployment requirements change.
 
 To modify the site plan for a site, take these steps:
 

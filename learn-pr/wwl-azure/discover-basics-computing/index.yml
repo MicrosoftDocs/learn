@@ -3,21 +3,25 @@ uid: learn.wwl.discover-basics-computing
 metadata:
   title: Discover the basics of computing
   description: "Learn about the parts of computers and how they work together."
-  ms.date: 12/22/2022
+  ms.date: 03/19/2024
   author: wwlpublish
-  ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: robbarefoot
+  ms.topic: module
+  ms.service: learn
+  ai-usage: human-only
 title: Discover the basics of computing
 summary: An overview of the parts of computers and how they work together.
 abstract: |
   After completing this module, you'll be able to:
-  - Identify the parts of a computer
-  - Understand identity on networks
-  - Explain how VPNs work and are used
-  - Identify the parts of a web address
-prerequisites: |
-  - Basic understanding of computer terminology.
+
+  -   Identify the parts of a computer
+
+  -   Understand identity on networks
+
+  -   Explain how VPNs work and are used
+
+  -   Identify the parts of a web address
+prerequisites: '-   Basic understanding of computer terminology.'
 iconUrl: /training/achievements/discover-basics-computing.svg
 levels:
 - beginner
@@ -27,8 +31,7 @@ roles:
 - k-12-educator
 - student
 products:
-- return-to-school
-- return-to-workplace
+- consumer
 subjects:
 - cloud-computing
 units:

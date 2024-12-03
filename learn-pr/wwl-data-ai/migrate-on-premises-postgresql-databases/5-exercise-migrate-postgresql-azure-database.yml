@@ -2,16 +2,20 @@
 uid: learn.wwl.migrate-premises-postgresql-databases-azure-database-postgresql.exercise-migrate-postgresql-azure-database
 title: 'Exercise: Migrate an on-premises PostgreSQL database to Azure Database for PostgreSQL'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Migrate an on-premises PostgreSQL database to Azure Database for PostgreSQL'
   description: "Exercise: Migrate an on-premises PostgreSQL database to Azure Database for PostgreSQL"
   ms.date: 10/14/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 azureSandbox: true
 labModal: false
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-migrate-postgresql-azure-database.md)]
 interactive: bash
+

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.get-started-sql-database-microsoft-fabric.work-with-sql-database
+title: Work with SQL databases
+metadata:
+  title: Work with SQL databases
+  description: "Learn to work with SQL databases."
+  ms.date: 10/18/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - ignite-2024
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-work-with-sql-database.md)]

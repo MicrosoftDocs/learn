@@ -1,4 +1,4 @@
-Here, we'll consider whether Firewall Manager is the correct choice for your organization. We'll analyze criteria to help you decide, including:
+Here, we consider whether Firewall Manager is the correct choice for your organization, by analyzing these criteria to help you decide:
 
 - Complexity.
 - Need for centralized management.
@@ -6,7 +6,7 @@ Here, we'll consider whether Firewall Manager is the correct choice for your org
 
 ## Decision criteria
 
-Administrators who must help protect multiple Azure virtual networks will use rules to control traffic throughout their perimeter networks. As a virtual network infrastructure grows, it can become more complex to manage. Administrators benefit from using Firewall Manager to centralize configuration of Azure Firewall rules and settings. Here are some factors that'll help you decide whether Firewall Manager will benefit your organization.
+Administrators who must help protect multiple Azure virtual networks use rules to control traffic throughout their perimeter networks. As a virtual network infrastructure grows, it can become more complex to manage. Administrators benefit from using Firewall Manager to centralize configuration of Azure Firewall rules and settings. Here are some factors that help you decide whether Firewall Manager can benefit your organization.
 
 | **Criteria** | **Analysis**|
 | ---------------------------- | ------------------------------------------------------------ |
@@ -16,7 +16,7 @@ Administrators who must help protect multiple Azure virtual networks will use ru
 
 ## Apply the criteria
 
-Firewall Manager centralizes management for your firewall security policies and routes for your cloud-based security perimeters. Are you deciding whether your organization would benefit from using Firewall Manager? The complexity of your Azure infrastructure will help determine your answer.
+Firewall Manager centralizes management for your firewall security policies and routes for your cloud-based security perimeters. Are you deciding whether your organization would benefit from using Firewall Manager? The complexity of your Azure infrastructure helps determine your answer.
 
 Essentially, you have a binary choice. You can:
 

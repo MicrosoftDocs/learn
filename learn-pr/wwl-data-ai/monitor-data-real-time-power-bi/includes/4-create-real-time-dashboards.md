@@ -52,7 +52,7 @@ A **push dataset** specifically delivers real-time data with latency of between 
 
 As the dataset type name suggests, data is pushed into dataset tables. When data is pushed, Power BI immediately refreshes related dashboard tiles.
 
-You can create a push dataset in the Power BI service (or as a hybrid dataset as described later) or programmatically by using the [Power BI REST API](/rest/api/power-bi/push-datasets). Developers must first acquire an Azure Active Directory (Azure AD) access token to work with the REST API operations. They can use the API to push rows of data to a specific table. There are also API operations they can use to modify the dataset schema, delete all rows from a table, and delete the dataset.
+You can create a push dataset in the Power BI service (or as a hybrid dataset as described later) or programmatically by using the [Power BI REST API](/rest/api/power-bi/push-datasets). Developers must first acquire a Microsoft Entra access token to work with the REST API operations. They can use the API to push rows of data to a specific table. There are also API operations they can use to modify the dataset schema, delete all rows from a table, and delete the dataset.
 
 It's also possible use [Azure Stream Analytics (ASA)](/azure/stream-analytics/stream-analytics-introduction) to create a push dataset and output rows of data to it. As a complex event-processing engine, ASA can push high volumes of fast streaming data, even from thousands of IoT devices. For more information, see [Power BI output from Azure Stream Analytics](/azure/stream-analytics/power-bi-output).
 

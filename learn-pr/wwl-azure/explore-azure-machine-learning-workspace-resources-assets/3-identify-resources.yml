@@ -2,13 +2,17 @@
 uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.identify-resources
 title: Identify Azure Machine Learning resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify Azure Machine Learning resources
-  description: "Identify Azure Machine Learning resources"
-  ms.date: 01/05/2023
+  description: Identify Azure Machine Learning resources
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/19/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/3-identify-resources.md)]
+

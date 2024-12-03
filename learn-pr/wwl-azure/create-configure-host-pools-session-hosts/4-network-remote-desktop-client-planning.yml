@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-host-pools-session-hosts.network-remote-desktop-client-planning
+title: Network and Remote Desktop client planning
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Network and Remote Desktop client planning
+  description: "Network and Remote Desktop client planning"
+  ms.date: 08/22/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-network-remote-desktop-client-planning.md)]

@@ -2,15 +2,19 @@
 uid: learn.wwl.migrate-premises-mysql-databases-azure-database-mysql.exercise-migrate-mysql-azure-database
 title: 'Exercise: Migrate on-premises MySQL database to Azure Database for MySQL'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Migrate on-premises MySQL database to Azure Database for MySQL'
   description: "Exercise: Migrate on-premises MySQL database to Azure Database for MySQL"
   ms.date: 11/09/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 azureSandbox: false
 labModal: false
 durationInMinutes: 20
 content: |
   [!include[](includes/4a-exercise-migrate-mysql-azure-database.md)]
+

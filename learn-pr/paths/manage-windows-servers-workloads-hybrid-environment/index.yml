@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/24/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Manage Windows Servers and workloads in a hybrid environment
 prerequisites: |
   - Windows Server 2012 or Windows Server 2016

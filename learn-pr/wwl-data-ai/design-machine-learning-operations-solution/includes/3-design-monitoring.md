@@ -1,5 +1,6 @@
 
 
+
 As part of a machine learning operations (MLOps) architecture, you should think about how to monitor your machine learning solution.
 
 **Monitoring** is beneficial in any MLOps environment. You'll want to monitor the *model*, the *data*, and the *infrastructure* to collect metrics that help you decide on any necessary next steps. 
@@ -28,7 +29,7 @@ This change in data profiles between current and the training data is known as d
 
 Next to monitoring the model and data, you should also monitor the infrastructure to minimize cost and optimize performance. 
 
-Throughout the machine learning lifecycle, you use compute to train and deploy models. With machine learning projects in the cloud, compute may be one of your biggest expenses. You therefore want to monitor whether your efficiently using your compute.
+Throughout the machine learning lifecycle, you use compute to train and deploy models. With machine learning projects in the cloud, compute may be one of your biggest expenses. You therefore want to monitor whether you are efficiently using your compute.
 
 For example, you can monitor the compute utilization of your compute during training and during deployment. By reviewing compute utilization, you know whether you can scale down your provisioned compute, or whether you need to scale out to avoid capacity constraints.
 

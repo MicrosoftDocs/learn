@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Check your knowledge
   description: Review what you've learned.
-  ms.date: 2/16/2023
-  author: lucie-docs
-  ms.author: lucielenaour
-  ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.date: 09/20/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
@@ -17,13 +16,13 @@ quiz:
     choices:
     - content: "The admin permission on a repository"
       isCorrect: false
-      explanation: "Incorrect. The admin permission on a repository only allows you to perform full administration-related tasks on a specific repository; it doesn't affect membership on a team."
+      explanation: "Incorrect. The admin permission on a repository only allows you to perform full administration-related tasks on a specific repository. It doesn't affect membership on a team."
     - content: "The maintain permission on a repository"
       isCorrect: false
-      explanation: "Incorrect. The maintain permission on a repository only allows you to perform limited administration-related tasks on a specific repository; it doesn't affect membership on a team."
+      explanation: "Incorrect. The maintain permission on a repository only allows you to perform limited administration-related tasks on a specific repository. It doesn't affect membership on a team."
     - content: "Organization billing manager"
       isCorrect: false
-      explanation: "Incorrect. The organization billing manager permission only allows the user to handle billing related tasks; it doesn't affect membership on a team."
+      explanation: "Incorrect. The organization billing manager permission only allows the user to handle billing related tasks. It doesn't affect membership on a team."
     - content: "Team maintainer"
       isCorrect: true
       explanation: "Correct! As a team maintainer, the user can add and remove organization members to and from a team."
@@ -43,15 +42,15 @@ quiz:
       explanation: "Incorrect. SSH keys provide access for the git client through a username and password. You don't use them to access the GitHub website."
   - content: "What's the appropriate repository permission level for contributors who need to actively push changes to your repository?"
     choices:
-    - content: "admin"
+    - content: "Admin"
       isCorrect: false
       explanation: "Incorrect. The admin permission isn't appropriate because it provides too much access to the administration functions of the repository."
-    - content: "write"
+    - content: "Write"
       isCorrect: true
       explanation: "Correct! The write permission is the appropriate permission level."
-    - content: "triage"
+    - content: "Triage"
       isCorrect: false
       explanation: "Incorrect. The triage permission is for contributors who need to proactively manage issues and pull requests without making changes."
-    - content: "maintain"
+    - content: "Maintain"
       isCorrect: false
       explanation: "Incorrect. The maintain permission is for contributors who need to manage the repository without access to sensitive or destructive actions. It provides too much access for other users."

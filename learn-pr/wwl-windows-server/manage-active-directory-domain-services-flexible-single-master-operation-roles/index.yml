@@ -6,8 +6,9 @@ metadata:
   ms.date: 01/05/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: entra-id
+  ms.subservice: domain-services
 title: Manage AD DS domain controllers and FSMO roles
 summary: Learn about essential AD DS domain controllers management and maintenance tasks, including their deployment, backup and recovery, and schema management. Find out about design considerations for optimal number, roles, and location of domain controllers.
 abstract: |

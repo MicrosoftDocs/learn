@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.migrate-modernize-explore-azure-for-sap-workloads
+metadata:
+  title: Migrate Modernize Explore Azure for SAP workloads
+  description: Modernize and explore Azure for SAP workloads
+  ms.date: 01/10/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: learning-path
+title: Modernize and explore Azure for SAP workloads
+prerequisites: |
+  Before taking this training, you should complete the Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam, and SAP HANA or NetWeaver training.
+summary: |
+  Experienced SAP professions need to understand the SAP and Microsoft partnership and terminology, along with the architecture, options, and benefits of SAP solutions on Azure explored in these modules.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+modules:
+- learn.wwl.migrate-modernize-explore-azure-sap-workloads
+- learn.wwl.migrate-modernize-identify-sap-certified-configurations
+- learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines
+trophy:
+  uid: learn.wwl.migrate-modernize-explore-azure-for-sap-workloads.trophy

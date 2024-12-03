@@ -2,16 +2,20 @@
 uid: learn.azure.logic-apps-and-arm-templates.exercise-deploy-a-logic-app-using-a-parameterized-arm-template
 title: Exercise - Deploy and export an Azure Logic Apps workflow using an ARM template
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy and export an Azure Logic Apps workflow using an ARM template
   description: Exercise - Deploy and export an Azure Logic Apps workflow using an ARM template
-  ms.date: 05/03/2019
+  ms.date: 07/16/2024
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 9
 interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-deploy-a-logic-app-using-a-parameterized-arm-template.md)]
+

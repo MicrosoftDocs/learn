@@ -2,14 +2,16 @@
 uid: learn.intro-to-azure-hdinsight.3-how-azure-hdinsight-works  
 title: How Azure HDInsight works  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: How Azure HDInsight works
   description: How Azure HDInsight works
-  ms.date: 10/27/2022  
+  ms.date: 04/21/2024  
   author: sreekzz
-  ms.author: v-sreiyer
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.author: v-sreeiyer
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/3-how-azure-hdinsight-works.md)]
+

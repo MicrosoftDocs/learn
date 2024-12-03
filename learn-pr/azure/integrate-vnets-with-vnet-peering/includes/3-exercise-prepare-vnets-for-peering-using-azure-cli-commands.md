@@ -1,12 +1,12 @@
-Let's say your company is now ready to implement virtual network peering. You want to connect systems that are deployed in different virtual networks. To test this plan, you'll start by creating virtual networks to support the services your company is already running in Azure. You need three virtual networks:
+Let's say your company is now ready to implement virtual network peering. You want to connect systems that are deployed in different virtual networks. To test this plan, you start by creating virtual networks to support the services your company is already running in Azure. You need three virtual networks:
 
-- The **Sales** virtual network is deployed in **North Europe**. Sales systems use this virtual network to process data that's added after a customer is engaged. The Sales team wants access to Marketing data.
+- The **Sales** virtual network is deployed in **North Europe**. Sales systems use this virtual network to process the data added after a customer is engaged. The Sales team wants access to Marketing data.
 - The **Marketing** virtual network is deployed in **North Europe**. Marketing systems use this virtual network. Members of the Marketing team regularly chat with the Sales team. To share their data with the Sales team, they must download it because the Sales and Marketing systems aren't connected.
 - The **Research** virtual network is deployed in **West Europe**. Research systems use this virtual network. Members of the Research team have a logical working relationship with Marketing, but they don't want the Sales team to have direct access to their data.
 
-![A diagram of virtual networks you need to create.](../media/3-prepare-vnets.svg)
+:::image type="content" source="../media/3-prepare-vnets.svg" alt-text="A diagram of virtual networks you need to create.":::
 
-You'll create the following resources:
+You're going to create the following resources:
 
 | Virtual network | Region | Virtual network address space | Subnet | Subnet address space |
 | ---- | ------ | ------------------ | ------ | -------------------- |
@@ -20,7 +20,7 @@ You'll create the following resources:
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name SalesVNet \
         --address-prefixes 10.1.0.0/16 \
         --subnet-name Apps \
@@ -32,7 +32,7 @@ You'll create the following resources:
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name MarketingVNet \
         --address-prefixes 10.2.0.0/16 \
         --subnet-name Apps \
@@ -44,25 +44,25 @@ You'll create the following resources:
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name ResearchVNet \
         --address-prefixes 10.3.0.0/16 \
         --subnet-name Data \
         --subnet-prefixes 10.3.1.0/24 \
         --location westeurope
     ```
-    
+
 ## Confirm the virtual network configuration
 
 Let's take a quick look at what you created.
 
-1. In Cloud Shell, run the following command to view the virtual networks:
+1. View the virtual networks you've created by running the following command in Cloud Shell:
 
     ```azurecli
     az network vnet list --query "[?contains(provisioningState, 'Succeeded')]" --output table
     ```
 
-1. You should get an output like this:
+1. Your output should look like this example:
 
     ```output
     Location     Name           EnableDdosProtection    ProvisioningState    ResourceGuid                          ResourceGroup
@@ -74,19 +74,19 @@ Let's take a quick look at what you created.
 
 ## Create virtual machines in each virtual network
 
-Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual networks. These VMs simulate the services in each virtual network. In the final unit of this module, you'll use these VMs to test connectivity between the virtual networks.
+Now, you deploy some Ubuntu virtual machines (VMs) in each of the virtual networks. These VMs simulate the services in each virtual network. In the final unit of this module, you use these VMs to test connectivity between the virtual networks.
 
-1. In Cloud Shell, run the following command, replacing `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm), to create an Ubuntu VM in the **Apps** subnet of **SalesVNet**. Note this password for later use.
+1. In Cloud Shell, run the following command, replacing `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm), to create an Ubuntu virtual machine (VM) in the **Apps** subnet of **SalesVNet**. Note this password for later use.
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --no-wait \
         --name SalesVM \
         --location northeurope \
         --vnet-name SalesVNet \
         --subnet Apps \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```
@@ -94,17 +94,17 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
     > [!NOTE]
     > The `--no-wait` parameter in this command lets you continue working in Cloud Shell while the VM is building.
 
-1. Run the following command, replacing `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm), to create another Ubuntu VM in the **Apps** subnet of **MarketingVNet**. Note this password for later use. The VM may take a minute or two to be created.
+1. Run the following command, replacing `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm), to create another Ubuntu VM in the **Apps** subnet of **MarketingVNet**. Note this password for later use. The VM might take a minute or two to be created.
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --no-wait \
         --name MarketingVM \
         --location northeurope \
         --vnet-name MarketingVNet \
         --subnet Apps \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```
@@ -113,13 +113,13 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --no-wait \
         --name ResearchVM \
         --location westeurope \
         --vnet-name ResearchVNet \
         --subnet Data \
-        --image UbuntuLTS \
+        --image Ubuntu2204 \
         --admin-username azureuser \
         --admin-password <password>
     ```
@@ -130,7 +130,7 @@ Now, you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual net
 
     ```bash
     watch -d -n 5 "az vm list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --show-details \
         --query '[*].{Name:name, ProvisioningState:provisioningState, PowerState:powerState}' \
         --output table"

@@ -6,8 +6,7 @@ metadata:
   ms.date: 02/25/2019
   author: JeffProsise
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
 title: Analyze climate data with Azure Notebooks
 summary: Create an Azure Notebook and use three popular Python libraries to analyze climate data collected by NASA, then share it.
@@ -27,8 +26,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.student-evangelism.analyze-climate-data-with-azure-notebooks.introduction
 - learn.student-evangelism.analyze-climate-data-with-azure-notebooks.create-an-azure-notebook

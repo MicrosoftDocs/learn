@@ -2,13 +2,14 @@
 uid: learn.wwl.explore-azure-synapse-studio.explore-data-hub
 title: Explore the Data hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the Data hub
   description: "Explore the Data hub"
   ms.date: 08/18/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

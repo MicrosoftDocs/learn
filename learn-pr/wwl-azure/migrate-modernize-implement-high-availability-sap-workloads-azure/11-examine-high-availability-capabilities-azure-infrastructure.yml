@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.examine-high-availability-capabilities-azure-infrastructure
+title: Examine high availability capabilities of Azure infrastructure
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Examine high availability capabilities of Azure infrastructure
+  description: "Explore the principles and options behind the high availability capabilities of Azure infrastructure."
+  ms.date: 10/10/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/11-examine-high-availability-capabilities-azure-infrastructure.md)]

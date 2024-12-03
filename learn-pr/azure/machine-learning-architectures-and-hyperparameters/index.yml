@@ -1,13 +1,18 @@
 ### YamlMime:Module
 uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Select and customize architectures and hyperparameters using random forest
   description: Explore how altering the architecture of more complex models can bring about more effective results.
-  ms.date: 04/17/2023
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/21/2024
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: module
+  ms.service: azure-machine-learning
+  ms.collection:
+    - TBD
+    - ce-skilling-ai-copilot
 title: Select and customize architectures and hyperparameters using random forest
 summary: More complex models often can be manually customized to improve how effective they are. Through exercises and explanatory content, we explore how altering the architecture of more complex models can bring about more effective results.
 abstract: | 
@@ -39,3 +44,4 @@ units:
 - learn.machinelearning.machine-learning-architectures-and-hyperparameters.summary
 badge: 
   uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters.badge #add the uid for your achievement badge.
+

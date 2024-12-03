@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-finance.goals-challenges-financial-services
+title: Goals and challenges in financial services
+metadata:
+  title: Goals and challenges in financial services
+  description: "Goals and challenges in financial services"
+  ms.date: 08/26/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-goals-challenges-financial-services.md)]

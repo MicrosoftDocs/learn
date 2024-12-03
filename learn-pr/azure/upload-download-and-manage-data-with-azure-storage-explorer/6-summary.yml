@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.6-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 03/23/2023
+  ms.date: 09/19/2024
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

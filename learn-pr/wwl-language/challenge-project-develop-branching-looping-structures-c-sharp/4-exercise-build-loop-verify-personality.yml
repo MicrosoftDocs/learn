@@ -4,11 +4,12 @@ title: Exercise - Ensure that pet nicknames and personality descriptions are com
 metadata:
   title: Exercise - Ensure that pet nicknames and personality descriptions are complete
   description: "Exercise - Ensure that pet nicknames and personality descriptions are complete"
-  ms.date: 03/16/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 25
 content: |
   [!include[](includes/4-exercise-build-loop-verify-personality.md)]

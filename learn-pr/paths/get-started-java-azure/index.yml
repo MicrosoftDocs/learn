@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/29/2021
   author: bmitchell287
   ms.author: brendm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Get started with Java on Azure
 summary: |
   Start here and learn how you can build, migrate and scale Java applications on Azure using Azure services. Use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
@@ -48,9 +47,8 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-app-service
-- azure-app-service-web
 # - azure-application-insights
 #- azure-automation
 - azure-cache-redis
@@ -59,11 +57,9 @@ products:
 - azure-database-mysql
 #- azure-devops
 - azure-spring-apps
-- azure-web-apps
 - msal-java
 - azure-service-bus
 subjects:
-- development-tools
 - architecture
 - cloud-computing
 modules:
@@ -76,6 +72,5 @@ modules:
 - learn.azure.deploy-event-driven-real-time
 - learn.azure.deploy-java-ee-app-to-app-service
 - learn.containerize-deploy-java-app-aks
-- learn.azure.migrate-java-app-azure-app-service
 trophy:
   uid: learn.get-started-java-azure.trophy

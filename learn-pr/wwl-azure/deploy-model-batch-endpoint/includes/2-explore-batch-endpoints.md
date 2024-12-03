@@ -1,5 +1,3 @@
-
-
 To get a model to generate batch predictions, you can deploy the model to a batch endpoint. 
 
 You'll learn how to use batch endpoints for asynchronous batch scoring.

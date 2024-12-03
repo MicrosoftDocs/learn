@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.develop-data-api-azure-sql-database.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/10/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 6
+quiz:
+  questions:
+  - content: "What are the steps to configure a connection between an Azure Static Web App and an Azure SQL Database using Data API Builder?"
+    choices:
+    - content: "Install the Data API Builder CLI, configure the local database, and create a stored procedure to push the data."
+      isCorrect: false
+      explanation: "When using Data API Builder, you don't need to use stored procedures."
+    - content: "Create a static web app, then create a Data API Builder configuration file. In the static web app, configure the connection to the database."
+      isCorrect: true
+      explanation: "To configure a connection between an Azure Static Web App and an Azure SQL Database using Data API Builder, create a static web app, create a Data API Builder configuration file, in the static web app configure the connection to the database."
+    - content: "Use the Azure Developer CLI to deploy the database, configure the database connection in the Azure portal, and create a database replica using the Data API Builder."
+      isCorrect: false
+      explanation: "Data API Builder doesn't use database replicas."
+  - content: Which of the following isn't a key feature of Azure Data API Builder?
+    choices:
+    - content: Cross-platform compatibility
+      isCorrect: false
+      explanation: Incorrect. Cross-platform compatibility is indeed a key feature of DAB.
+    - content: Built-in data visualization tools
+      isCorrect: true
+      explanation: Correct. DAB doesn't have built-in data visualization tools. Its main function is to create REST and GraphQL endpoints.
+    - content: Integration with Azure services
+      isCorrect: false
+      explanation: Incorrect. DAB does integrate with Azure services like Azure Static Web Apps and Azure Container Apps.
+  - content: How can you define your API endpoints in Azure Data API Builder?
+    choices:
+    - content: By manually configuring each endpoint in the Azure portal
+      isCorrect: false
+      explanation: Incorrect. DAB uses a configuration file to define endpoints, not manual configuration in the Azure portal.
+    - content: By creating a configuration file that specifies the database objects to expose and the operations allowed
+      isCorrect: true
+      explanation: Correct. A single configuration file is used to define API endpoints in DAB.
+    - content: By writing custom code for each endpoint
+      isCorrect: false
+      explanation: Incorrect. DAB allows defining endpoints without writing any code.
+
+

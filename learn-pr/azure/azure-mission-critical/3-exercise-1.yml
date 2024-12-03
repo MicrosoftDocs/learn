@@ -2,14 +2,15 @@
 uid: learn.azure-mission-critical.exercise-one
 title: Exercise - Add web application health checks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Add web application health checks
   description: Implement a dedicated health check endpoint on the application, which reports the health status of the API at regular intervals. 
-  ms.date: 09/22/2022
+  ms.date: 08/14/2024
   author: msimecek
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-1.md)]
@@ -17,25 +18,25 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: 'Why was caching implemented on the health endpoint?'
+  - content: "Why was caching implemented on the health endpoint?"
     choices:
-    - content: 'To reduce the cost of the health check.'
+    - content: "To reduce the cost of the health check."
       isCorrect: false
-      explanation: 'While lower number of dependency calls can result in lower cost, it is not significant enough to be the primary motivation for caching.'
-    - content: 'To increase accuracy of the health check results.'
+      explanation: "While a lower number of dependency calls can result in lower cost, it's not significant enough to be the primary motivation for caching."
+    - content: "To increase accuracy of the health check results."
       isCorrect: false
-      explanation: 'Caching can make health check results less accurate because it may present an older state. Cache expiration duration must be tuned properly.'
-    - content: 'To prevent overwhelming the downstream components.'
+      explanation: "Caching can make health check results less accurate, because it might present an older state. Cache expiration duration must be tuned properly."
+    - content: "To prevent overwhelming the downstream components."
       isCorrect: true
-      explanation: 'Various health probes, such as those on Azure Front Door, can call the health API frequently and sometimes even in parallel. Caching prevents excessive load on downstream services from those calls.'
-  - content: 'Your API is protected by App Service Authentication, will App Service Health Check work with the health check API endpoint?'
+      explanation: "Various health probes, such as those on Azure Front Door, can call the health API frequently, and sometimes even in parallel. Caching prevents excessive load on downstream services from those calls."
+  - content: "Your API is protected by App Service Authentication. Will App Service Health Check work with the health check API endpoint?"
     choices:
-    - content: 'No. Both App Service Authentication and Health Check cannot be enabled at the same time on the service.'
+    - content: "No. Both App Service Authentication and Health Check can't be enabled at the same time on the service."
       isCorrect: false
-      explanation: 'The health check probe request from the platform is done behind the Authentication service. The request accesses your health check endpoint anonymously, bypassing the Authorization service.'
-    - content: 'Yes. The health check is performed without traversing App Service Authentication, reaching your health check API as anonymous traffic. External health monitors would need to generate valid access tokens for their health probes.'
+      explanation: "The health check probe request from the platform is done behind the Authentication service. The request accesses your health check endpoint anonymously, bypassing the Authorization service."
+    - content: "Yes. The health check is performed without traversing App Service Authentication, reaching your health check API as anonymous traffic. External health monitors would need to generate valid access tokens for their health probes."
       isCorrect: true
-      explanation: 'The health check probe request from the platform is done behind the Authentication service and accesses your health check endpoint anonymously, bypassing the Authorization service. Requests originating from outside the service do not bypass the Authorization service and must be able to generate credentials for the request. External monitoring is encouraged, as it can also help in detecting faults of the App Service Authentication service.'
-    - content: 'Yes. You can configure Azure App Service to acquire the necessary access tokens to send with health probes.'
+      explanation: "The health check probe request from the platform is done behind the Authentication service and accesses your health check endpoint anonymously, bypassing the Authorization service. Requests originating from outside the service don't bypass the Authorization service and must be able to generate credentials for the request. External monitoring is encouraged, as it can also help in detecting App Service Authentication service faults."
+    - content: "Yes. You can configure Azure App Service to acquire the necessary access tokens to send with health probes."
       isCorrect: false
-      explanation: 'App Service Health Check only supports calling anonymous endpoints and does not have a way to generate authentication tokens.'
+      explanation: "App Service Health Check only supports calling anonymous endpoints, and doesn't have a way to generate authentication tokens."

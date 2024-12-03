@@ -2,13 +2,13 @@ Here, we'll discuss how you can use filters, blame, and cross-linking to search 
 
 Put yourself in the position of a developer who has just joined a large project. Someone just posted a new issue reporting a bug related to the web app's sidebar, and you've been assigned to fix it. You've already read through the report a few times and understand the problem being described, so now you need to figure out how to get started with the fix.
 
-As a new team member, you're not yet familiar with the codebase. You also haven't been part of the planning discussions, code reviews, or anything else that would provide you the context you need to start implementation. You'll first need to acquire that background knowledge to best determine the right fix.
+As a new team member, you're not yet familiar with the codebase. You also haven't been part of the planning discussions, code reviews, or anything else that would provide you with the context you need to start implementation. You'll first need to acquire that background knowledge to best determine the right fix.
 
 ## Searching GitHub
 
 Although you weren't around for the events that led to the sidebar's implementation, many of those events live on in the project's history. Searching the project's repository for "sidebar" will give you a starting point.
 
-There are two search methods available on GitHub: the global search at the top of the page, and the scoped search available on certain repository tabs. They support the same syntax and function in the same way, but with some key differences.
+There are two search methods available on GitHub: the global search at the top of the page and the scoped search available on certain repository tabs. They support the same syntax and function in the same way, but with some key differences.
 
 ### Global search
 
@@ -29,15 +29,15 @@ To craft a complex global search, try the [advanced search](https://github.com/s
 
 ### Context search
 
-Context searches are available on certain tabs, such as **Issues** and **Pull requests**. These searches are scoped into the current repository and only return results of that type. The benefit to this scoping is that it allows the user interface to expose known type-specific filters, such as authors, labels, projects, and more.
+Context searches are available on certain tabs, such as **Issues** and **Pull requests**. These searches are scoped into the current repository and only return results of that type. The benefit to this scoping is that it allows the user interface to expose known type-specific filters such as authors, labels, projects, and more.
 
 ![Screenshot of a context search within a repository.](../media/2-context-search.png)
 
-Using the context search is the preferred option when you're looking for something in the current repository. In our scenario, this would be a good way to find search results mentioning "sidebar," which you could then easily refine using the filter dropdowns.
+Using the context search is the preferred option when you're looking for something in the current repository. In our scenario, this is a good way to find search results mentioning "sidebar," which you could then easily refine using the filter dropdowns.
 
 ### Using search filters
 
-There are an infinite number of ways to search using [the complete search syntax](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/about-searching-on-github). However, most searches only make use of a few common filters. While these are often available from context search dropdowns, it's sometimes more convenient to type them in directly.
+There are an infinite number of ways to search using [the complete search syntax](https://docs.github.com/search-github/getting-started-with-searching-on-github/about-searching-on-github). However, most searches only make use of a few common filters. While these are often available from context search dropdowns, it's sometimes more convenient to type them in directly.
 
 Here are some example filter queries:
 
@@ -48,7 +48,7 @@ Query|Explanation
 `is:pr sidebar in:comments`|Pull requests where "sidebar" is mentioned in the comments
 `is:open is:issue label:bug -linked:pr`|Open issues labeled as bugs that do not have a linked pull request
 
-Learn more about [Understanding the search syntax](https://help.github.com/en/github/searching-for-information-on-github/understanding-the-search-syntax?azure-portal=true)
+Learn more about [Understanding the search syntax](https://help.github.com/github/searching-for-information-on-github/understanding-the-search-syntax?azure-portal=true)
 
 ## What is git blame?
 
@@ -63,7 +63,7 @@ GitHub extends the basic `git blame` functionality with a more robust user inter
 
 ![A screenshot of GitHub blame.](../media/2-github-blame.png)
 
-In our scenario, there are a few ways you might get to this view. You might've found some sidebar code from the global search and selected the **Blame** option to see who worked on it last. Or maybe you found a pull request and tracked that back to the last commit that seems related to the bug description. However you got here, the blame view is an effective way to locate a subject matter expert for the task at hand.
+In our scenario, there are a few ways you might get to this view. You might've found some sidebar code from the global search and selected the **Blame** option to see who worked on it last, or maybe you found a pull request and tracked that back to the last commit that seems related to the bug description. However you got here, the blame view is an effective way to locate a subject matter expert for the task at hand.
 
 ## Cross-linking issues, commits, and more
 
@@ -79,9 +79,9 @@ GitHub also links commits for you if you paste in the first seven or more charac
 
 ![Screenshot of an autolinked commit.](../media/2-autolinked-commit.png)
 
-In our scenario, these links could prove very valuable for ramping up if someone thought ahead to leave the context. For example, the current state of the sidebar may have had some known issues related to a JavaScript dependency. If the issue with that dependency was discussed in another issue that didn't explicitly mention "sidebar", then it would be difficult to find. However, if someone had thought ahead to link the issue in the discussion, then it could save you a lot of time now. Keep that in mind the next time you're documenting issues and pull requests.
+In our scenario, these links could prove very valuable for ramping up if someone thought ahead to leave the context. For example, the sidebar's current state might have had some known issues related to a JavaScript dependency. If the issue with that dependency was discussed in another issue that didn't explicitly mention "sidebar," then it would be difficult to find. However, if someone had thought ahead to link the issue in the discussion, then it could save you a lot of time now. Keep that in mind the next time you're documenting issues and pull requests.
 
-Learn more about [Autolinked references and URLs](https://help.github.com/en/github/writing-on-github/autolinked-references-and-urls?azure-portal=true).
+Learn more about [Autolinked references and URLs](https://docs.github.com/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls).
 
 ### Looping in users with @mention
 

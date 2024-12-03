@@ -2,7 +2,7 @@ Azure Container Registry provides storage for Docker images in the cloud.
 
 In the example scenario, the team needs to create a registry to store the images for their web apps.
 
-In this unit, you'll use the Azure portal to create a new registry in Container Registry. You'll build a Docker image from the source code for a web app and upload it to a repository in your registry. Finally, you'll examine the contents of the registry and the repository.
+In this unit, you'll use the Azure portal to create a new registry in Container Registry. You'll build a Docker image from the source code for a web app, and upload it to a repository in your registry. Finally, you'll examine the contents of the registry and the repository.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -12,7 +12,9 @@ In this unit, you'll use the Azure portal to create a new registry in Container 
 
 1. On the Azure portal **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Containers**, and under *Popular Azure services*, select **Container Registry**.
+1. In the left menu pane, select **Containers**.
+
+1. Under *Popular Azure services*, select **Container Registry**, and **Create**.
 
    ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace.](../media/3-search-container-registry-annotated.png)
 
@@ -28,13 +30,13 @@ In this unit, you'll use the Azure portal to create a new registry in Container 
     | **Instance details** |
     | Registry name | Enter a unique name and make a note of it for later. |
     | Location | Select a location that is close to you. |
-    | SKU | Standard |
+    | Pricing Plan | Standard |
 
 1. Select **Review + create**. After validation successfully passes, select **Create**. Wait until the container registry has been created before you continue.
 
 ## Build a Docker image and upload it to Azure Container Registry
 
-1. In Azure Cloud Shell in the portal (select the first icon on the upper toolbar), run the following command to download the source code for the sample web app. This web app is simple. It presents a single page that contains static text, and a carousel control that rotates through a series of images.
+1. In Azure Cloud Shell in the portal (select the **Cloud Shell** icon on the upper toolbar), run the following command to download the source code for the sample web app. This web app is simple. It presents a single page that contains static text and a carousel control that rotates through a series of images.
 
    ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-deploy-run-container-app-service.git
@@ -42,7 +44,7 @@ In this unit, you'll use the Azure portal to create a new registry in Container 
 
 ::: zone pivot="csharp"
 
-2. Move to the source folder.
+1. Move to the source folder.
 
    ```bash
    cd mslearn-deploy-run-container-app-service/dotnet
@@ -60,7 +62,7 @@ In this unit, you'll use the Azure portal to create a new registry in Container 
 
 ::: zone-end
 
-3. Run the following command. This command sends the folder's contents to the Container Registry, which uses the instructions in the Docker file to build the image and store it. Replace `<container_registry_name>` with the name of the registry you created earlier. Take care not to leave out the `.` character at the end of the command.
+3. In the following command, replace `<container_registry_name>` with the name of the registry you created earlier. Take care not to leave out the `.` character at the end of the command. Then run the command. This command sends the folder's contents to the Container Registry, which uses the instructions in the Docker file to build the image and store it.
 
    ```bash
    az acr build --registry <container_registry_name> --image webimage .
@@ -70,7 +72,7 @@ The Docker file contains the step-by-step instructions for building a Docker ima
 
 ## Examine the container registry
 
-1. Return to the [Azure portal](https://portal.azure.com/?azure-portal=true), and on the Overview page for your container registry, select **Go to resource**. Your **Container registry** pane appears.
+1. Return to the [Azure portal](https://portal.azure.com/?azure-portal=true). Under Resources, select the **Container registry** you created.
 
 2. In the left menu pane, under **Services**, select **Repositories**. The **Repositories** pane appears for your container registry. You'll see a repository named `webimage`.
 

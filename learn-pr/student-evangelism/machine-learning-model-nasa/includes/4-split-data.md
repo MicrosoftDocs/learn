@@ -1,4 +1,4 @@
-The next step is to split your data into training data and testing data. Providing your machine learning classifier with all of your data only makes it effective at telling you what data you have. It won't yield accurate predictions.
+The next step is to split your data into training data and testing data. Providing your machine-learning classifier with all of your data only makes it effective at telling you what data you have. It won't yield accurate predictions.
 
 ## Why should you split data?
 
@@ -26,9 +26,9 @@ X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2, random_s
 
 This code randomly separates the data into four groups: `X_train`, `X_test`, `y_train`, and `y_test`. With scikit-learn's `train_test_split` function, you specify four important parameters:
 
-- Input data: `X` - All of the columns that we want to use to predict a launch.
-- Output data: `y` - The outcome of each row (whether a rocket launched or not).
-- Test size: `0.2` - Training on 80% of your data and testing on 20% is a common split in data science.
-- Random state: `99` - A random seed that will change the randomness of selecting the data.
+- **Input data**: `X` - All of the columns that we want to use to predict a launch.
+- **Output data**: `y` - The outcome of each row (whether a rocket launched or not).
+- **Test size**: `0.2` - Training on 80% of your data and testing on 20% is a common split in data science.
+- **Random state**: `99` - A random seed that changes the randomness of selecting the data.
 
 You can come back and modify the test size and random state to try out other options, too.

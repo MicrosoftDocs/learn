@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-configure-secure-access-workloads.exercise2
+title: Exercise 02 - Create and configure network security groups
+metadata:
+  title: Exercise 02 - Create and configure network security groups
+  description: "Create and configure network security groups"
+  ms.date: 11/08/2024
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-exercise-security-groups.md)]

@@ -6,7 +6,7 @@ Supplemental Resources:
 
 - [Microsoft Learn for Educators ](https://aka.ms/msle)  
 
-- [Learning Download Center](https://aka.ms/ldc) 
+- [Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123) 
 
 - [Learn Events](https://aka.ms/LearnTV) 
 

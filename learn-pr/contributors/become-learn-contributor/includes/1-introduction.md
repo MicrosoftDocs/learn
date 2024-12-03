@@ -1,0 +1,9 @@
+Microsoft Learn is the platform that hosts all technical documentation, training modules, Shows, Microsoft Q&A, and other learning resources for Microsoft products. Contributions from experts in the field, content authors, product users, students, and other Microsoft enthusiasts help learners build skills to achieve more and explore new possibilities. There are many ways to contribute to Microsoft Learn, and the door is open to anyone who wants to share their knowledge, questions, and insights. 
+
+## Example scenario
+
+You’re an IT professional for a large chain of dental clinics. You’ve just finished working on a project to create an app that helps expand dental education in schools. To build your app, you used Power Apps and have developed a solid base of skills using its features and related services, including AI Builder. You were excited about the opportunities that AI Builder provides and are eager to learn more about it and share with your team. You know that Microsoft Learn is a good place to share insights about Microsoft products, so you go to learn.microsoft.com. You’d like to begin looking for opportunities to engage with the topic of AI Builder, share some tips you picked up, and see what discussions may be happening among other users. In other words, you’d like to become a Microsoft Learn contributor!
+
+## What you’ll be doing
+
+In this module, you’ll dive into what it means to contribute to Microsoft Learn and the impact that contributors can have. You explore four key ways to share knowledge on Microsoft Learn, including how to submit feedback about Microsoft documentation, post in Microsoft Q&A, create a Collection of training modules, or share Microsoft Learn resources with others. This module explains each contribution path and why it’s valuable to contributors and users alike. 

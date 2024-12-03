@@ -1,7 +1,7 @@
-The first step in building a generative AI solution with Azure OpenAI is to provision an Azure OpenAI resource in your Azure subscription. Azure OpenAI Service is currently in limited access. Users need to apply for service access at [https://aka.ms/oai/access]( https://aka.ms/oai/access?azure-portal=true).
+The first step in building a generative AI solution with Azure OpenAI is to provision an Azure OpenAI resource in your Azure subscription. Azure OpenAI Service is now available to all Azure accounts, with some advanced features (like custom content filters) restricted behind a limited access policy.
 
->[!NOTE]
->Azure OpenAI Service has been released with limited access to support the ethical use of the service. You can read Microsoft's Transparency note for Azure OpenAI Service [here](/legal/cognitive-services/openai/transparency-note?azure-portal=true).
+> [!NOTE]
+> By using the Azure OpenAI Service you are agreeing to the ethical use of the service. You can read Microsoft's Transparency note for Azure OpenAI Service [here](/legal/cognitive-services/openai/transparency-note?azure-portal=true).
 
 Once you have access to Azure OpenAI Service, you can get started by creating a resource in the [Azure portal](https://portal.azure.com/?azure-portal=true) or with the Azure command line interface (CLI).
 

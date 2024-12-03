@@ -1,4 +1,4 @@
-In addition to migrating applications, virtual machines, databases, and other structured data, organizations also need to move unstructured data. This data might be stored in several locations and be liable to frequent changes. As a result, migrating storage that contains unstructured data can be challenging. For your Tailwind Traders migration planning, we'll examine how to move online on-premises unstructured data with the Azure Storage Migration Service and Azure File Sync.
+In addition to migrating applications, virtual machines, databases, and other structured data, organizations also need to move unstructured data. This data might be stored in several locations and be liable to frequent changes. As a result, migrating storage that contains unstructured data can be challenging. For your Tailwind Traders migration planning, we examine how to move online on-premises unstructured data with the Azure Storage Migration Service and Azure File Sync.
 
 ## Azure Storage Migration Service
 
@@ -11,7 +11,7 @@ The Azure Storage Migration Service in the Windows Admin Center is helpful when 
 
 ### Things to know about the Migration Service
 
-The Azure Storage Migration Service can you help you migrate unstructured data stored in on-premises file servers to Azure Files and Azure-hosted virtual machines. The migration process is accomplished through capabilities provided by the Migration Service, Azure File Sync, and Azure Migrate.
+The Azure Storage Migration Service can help you migrate unstructured data stored in on-premises file servers to Azure Files and Azure-hosted virtual machines. The migration process is accomplished through capabilities provided by the Migration Service, Azure File Sync, and Azure Migrate.
 
 :::image type="content" source="../media/storage-migration-service.png" alt-text="Illustration that shows how the Azure Storage Migration Service moves on-premises data." border="false":::
 
@@ -58,7 +58,7 @@ Azure File Sync is a feature of Azure Files. Azure Files is an Azure service tha
 
 Azure File Sync enables you to centralize your organization's file shares in Azure Files, while keeping the flexibility, performance, and compatibility of an on-premises file server. You can also use Azure File Sync to cache Azure file shares on Windows Server computers for fast access close to where the data is accessed. You can use any protocol that's available on Windows Server to access your data locally, including SMB, NFS, and FTPS.
 
-In addition to using Azure Disks as back-end storage, you can utilize both Azure Files and a file server that's hosted in Azure virtual machines. This method involves installing Azure File Sync on a file server that's hosted on a cloud virtual machine. If the Azure file share is in the same region as your file server, you can enable cloud tiering and set the volume of free space percentage to maximum (99%). This option ensures minimal duplication of data. You also can use any applications you want with your file servers, such as applications that require NFS protocol support.
+In addition to using Azure Disks as back-end storage, you can utilize both Azure Files and a file server hosted in Azure virtual machines. This method involves installing Azure File Sync on a file server hosted on a cloud virtual machine. If the Azure file share is in the same region as your file server, you can enable cloud tiering and set the volume of free space percentage to maximum (99%). This option ensures minimal duplication of data. You also can use any applications you want with your file servers, such as applications that require NFS protocol support.
 
 ### Things to know about Azure File Sync
 
@@ -90,7 +90,7 @@ There are several common scenarios for working with Azure File Sync and Azure Fi
 
 | Scenario | Description |
 | --- | --- |
-| _Replace or supplement on-premises file servers_ | Virtually all companies use file servers. Azure Files can completely replace or supplement traditional on-premises file servers or Network Attached Storage (NAS) devices. With Azure file shares and Azure Active Directory Domain Services (Azure AD DS) authentication, you can migrate data to Azure Files and utilize high availability and scalability while minimizing client changes. |
+| _Replace or supplement on-premises file servers_ | Virtually all companies use file servers. Azure Files can completely replace or supplement traditional on-premises file servers or Network Attached Storage (NAS) devices. With Azure file shares and Microsoft Entra Domain Services authentication, you can migrate data to Azure Files and utilize high availability and scalability while minimizing client changes. |
 | _Lift and shift (rehome)_ | Azure Files makes it easy to lift-and-shift applications that expect a file share to store application or user data to the cloud. |
-| _Backup and disaster recovery_ | You can use Azure file shares as storage for backups, or for disaster recovery to improve business continuity. You can use Azure file shares to back up your data from existing file servers while preserving configured Windows discretionary access control lists (ACLs). Data that's stored on Azure file shares isn't affected by disasters that might affect on-premises locations. |
+| _Backup and disaster recovery_ | You can use Azure file shares as storage for backups, or for disaster recovery to improve business continuity. You can use Azure file shares to back up your data from existing file servers while preserving configured Windows discretionary access control lists (ACLs). Data stored on Azure file shares is protected from disasters that might affect on-premises locations. |
 | _Azure File Sync_ | With Azure File Sync, Azure file shares can replicate to Windows Server, either on-premises or in the cloud, for performance and distributed caching of data where it's being used. Consider using Azure File Sync when you want to migrate shared folder content to Azure. This method is especially useful as a means for replacing the Distributed File System on your Windows Servers in your on-premises datacenters. |

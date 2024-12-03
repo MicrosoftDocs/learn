@@ -2,15 +2,14 @@
 uid: learn.wwl.plan-implement-privileged-access.define-strategy-for-administrative-users
 title: Define a privileged access strategy for administrative users
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Define a privileged access strategy for administrative users
   description: "Define a privileged access strategy for administrative users"
-  ms.date: 02/07/2023
+  ms.date: 10/23/2023
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-define-strategy-for-administrative-users.md)]

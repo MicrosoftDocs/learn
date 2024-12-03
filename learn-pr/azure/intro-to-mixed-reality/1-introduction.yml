@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: An introduction to the Learn module, its objectives, and prerequisites.
-  ms.date: 11/17/2020
+  ms.date: 05/20/2023
   author: Sean-Kerawala
   ms.author: sekerawa 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,6 +1,6 @@
 Many data scientists prefer working with Python or R to define machine learning workloads. You can have Jupyter notebooks or scripts to prepare data or train a model. 
 
-Working on any code assets becomes easier when you use source control. **Source control** is the practice of *managing code and tracking any chances* your team makes to the code.
+Working on any code assets becomes easier when you use source control. **Source control** is the practice of *managing code and tracking any changes* your team makes to the code.
 
 If you work with DevOps tools like **Azure DevOps** or **GitHub**, the code is stored in a so-called **repository** or **repo**. 
 

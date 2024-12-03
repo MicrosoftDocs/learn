@@ -2,17 +2,21 @@
 uid: learn.wwl.design-machine-learning-operations-solution.case-study
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: "Learn what to think about when designing for retraining a model."
-  ms.date: 03/03/2023
+  description: Learn what to think about when designing for retraining a model.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/5-case-study.md)]
 quiz:
+  title: ""
   questions:
   - content: "How many Azure Machine Learning workspaces should the team create?"
     choices:
@@ -36,3 +40,4 @@ quiz:
     - content: "When there's data drift."
       isCorrect: false
       explanation: "Incorrect. It's stated that new data is not seen as trustworthy. Currently, we shouldn't rely on monitoring the data to decide when to retrain the model."
+

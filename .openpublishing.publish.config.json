@@ -27,15 +27,14 @@
       }
     }
   ],
-  "notification_subscribers": [],
-  "sync_notification_subscribers": null,
+  "notification_subscribers": [
+    "cfowler@microsoft.com"
+  ],
+  "sync_notification_subscribers": [],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/learn",
   "git_repository_branch_open_to_public_contributors": "main",
-  "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "enable_incremental_build": false,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -68,8 +67,20 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "aspnetcore-snippets",
+      "url": "https://github.com/MicrosoftDocs/mslearn-aspnetcore-snippets",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "active-directory-b2c-msal-node-sign-in-sign-out-webapp",
       "url": "https://github.com/Azure-Samples/active-directory-b2c-msal-node-sign-in-sign-out-webapp",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "microsoftdocs-mslearn-advocates-azure-functions-and-signalr",
+      "url": "https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr",
       "branch": "main",
       "branch_mapping": {}
     },
@@ -84,9 +95,25 @@
       "url": "https://github.com/Azure-Samples/iot-central-docs-samples",
       "branch": "main",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "reusable-content",
+      "url": "https://github.com/MicrosoftDocs/reusable-content",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "microsoftdocs-node-essentials",
+      "url": "https://github.com/MicrosoftDocs/node-essentials",
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {},
+  "targets": {},
+  "docs_build_engine": {},
+  "skip_source_output_uploading": false,
+  "contribution_branch_mappings": {},
   "dependent_packages": [
     {
       "id": "Microsoft.OpenPublishing.CommonPlugins",
@@ -97,7 +124,10 @@
     }
   ],
   "need_generate_pdf_url_template": false,
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  }
+  "enable_incremental_build": false,
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    "learn-pr/wwl-data-ai/.openpublishing.redirection.wwl-data-ai.json",
+    "learn-pr/wwl-sci/.openpublishing.redirection.wwl-sci.json"
+  ]
 }
