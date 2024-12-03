@@ -35,6 +35,5 @@ subjects:
 units:
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.understand-data-sources
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.visualize-data-with-serverless-sql-pools
-- learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.badge
