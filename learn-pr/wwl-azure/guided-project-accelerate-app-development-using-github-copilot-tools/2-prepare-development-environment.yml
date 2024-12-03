@@ -4,10 +4,12 @@ title: Prepare the development environment
 metadata:
   title: Prepare the development environment
   description: "Prepare the development environment"
-  ms.date: 08/19/2024
+  ms.date: 11/26/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/2-prepare-development-environment.md)]

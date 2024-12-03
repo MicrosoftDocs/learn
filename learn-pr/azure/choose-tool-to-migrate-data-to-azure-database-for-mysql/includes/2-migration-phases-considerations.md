@@ -33,15 +33,6 @@ Some applications have scheduled maintenance windows during periods of low traff
 
 An **incremental offline** migration reduces downtime by moving the bulk of the data before taking the application offline. First, migrate a full database backup. Then, migrate the changes to the database that occurred added since the previous migration. When the time required to migrate these new changes fits within your acceptable downtime, take the application offline to freeze the data and finalize the migration. You might find that a single migration increment is enough to reduce downtime by an order of magnitude or more, especially for databases with years of history. For large and busy databases, you might need to migrate several increments to reach acceptable downtime.
 
-An incremental offline migration requires:
-
-1. At time t1, exporting a full database snapshot.
-2. Restoring the snapshot taken at time t1 to the target server.
-3. Exporting a delta or incremental snapshot of all changes between times t1 and t2.
-4. Restoring the delta snapshot to the target server. Repeat steps 3 and 4 as many times as desired.
-5. Taking the application offline and performing a final incremental migration.
-6. Pointing clients to the new instance and resuming operations.
-
 #### Online migrations
 
 With an **online** migration, you can greatly reduce or even eliminate the need for downtime by replicating changes from the source server to the target server during the migration, and then cutting over to the target server when the replication is fully synchronized.

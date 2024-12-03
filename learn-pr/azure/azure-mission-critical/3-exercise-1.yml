@@ -2,6 +2,8 @@
 uid: learn.azure-mission-critical.exercise-one
 title: Exercise - Add web application health checks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Add web application health checks
   description: Implement a dedicated health check endpoint on the application, which reports the health status of the API at regular intervals. 

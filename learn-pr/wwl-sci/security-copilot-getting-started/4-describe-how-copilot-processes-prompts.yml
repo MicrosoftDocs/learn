@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.security-copilot-getting-started.describe-how-copilot-processes-prompts
-title: Describe how Microsoft Copilot for Security processes prompt requests
+title: Describe how Microsoft Security Copilot processes prompt requests
 metadata:
-  title: Describe how Microsoft Copilot for Security processes prompt requests
-  description: Describe how Microsoft Copilot for Security processes prompt requests.
+  title: Describe how Microsoft Security Copilot processes prompt requests
+  description: Describe how Microsoft Security Copilot processes prompt requests.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 08/22/2024
+  ms.date: 11/20/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

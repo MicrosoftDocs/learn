@@ -2,6 +2,8 @@
 uid: learn.wwl.train-evaluate-cluster-models.exercise-new-models
 title: Exercise - Train and evaluate advanced clustering models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Train and evaluate advanced clustering models
   description: "Exercise - Train and evaluate advanced clustering models"
   ms.date: 09/07/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 12
 sandbox: true
 notebook: notebooks/02-kmeans-and-hierarchical.ipynb
+

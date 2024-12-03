@@ -4,14 +4,17 @@ metadata:
   ms.author: apspeigh
   author: aprilspeight
   ms.date: 09/14/2024
-  title: Measure and mitigate risks for a generative AI app in Azure AI Studio
-  description: Learn how to measure and mitigate risks for a generative AI app leveraging responsible AI tools and features within Azure AI Studio.
+  title: Measure and mitigate risks for a generative AI app in Azure AI Foundry
+  description: Learn how to measure and mitigate risks for a generative AI app leveraging responsible AI tools and features within Azure AI Foundry.
   ms.service: artificial-intelligence
   ms.topic: module-guided-project
   ms.collection:
     - ce-advocates-ai-copilot
-title: Measure and mitigate risks for a generative AI app in Azure AI Studio
-summary: Learn how to measure and mitigate risks for a generative AI app leveraging responsible AI tools and features within Azure AI Studio.
+title: Measure and mitigate risks for a generative AI app in Azure AI Foundry
+summary: |
+  Learn how to measure and mitigate risks for a generative AI app leveraging responsible AI tools and features within Azure AI Foundry.
+  
+  This module is a _guided project_. You complete an end-to-end project by following step-by-step instructions.
 abstract:  |
   By the end of this module, you're able to:
   - Upload data and create an index

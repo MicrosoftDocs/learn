@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-device-management-tools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Evaluate device management tools for Azure IoT Hub
   description: Evaluate the service and coding tools that are used to implement device management tasks in Azure IoT Hub.
   ms.date: 09/06/2023
@@ -41,3 +43,4 @@ units:
 - learn.wwl.examine-device-management-tools.summary
 badge:
   uid: learn.wwl.examine-device-management-tools.badge
+

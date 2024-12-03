@@ -2,6 +2,8 @@
 uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Learn about the scenario and main goal of this module.
   ms.date: 09/07/2023

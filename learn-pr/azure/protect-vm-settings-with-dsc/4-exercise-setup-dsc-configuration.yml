@@ -2,6 +2,8 @@
 uid: learn.azure.protect-vm-settings-with-dsc.exercise-setup-dsc-configuration
 title: Exercise - Set up a DSC and configure a desired state
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up a DSC and configure a desired state
   description: Exercise - Set up a DSC and configure a desired state
   ms.date: 09/22/2023
@@ -27,3 +29,4 @@ content: |
 #   azure:
 #     resource:
 #       type: "Microsoft.Automation/automationAccounts"
+

@@ -2,6 +2,8 @@
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-openai-model-service
 title: Exercise - Implement the Azure OpenAI service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Implement the Azure OpenAI service
   description: |

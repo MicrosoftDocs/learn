@@ -20,5 +20,5 @@ In addition, you also learned about the two philosophies of Sustainable Software
 - Microsoft Cloud Adoption Framework sustainability considerations:
   - [Sustainability outcomes and benefits for business](/azure/cloud-adoption-framework/strategy/business-outcomes/sustainability)
   - [Sustainability considerations in cloud adoption planning](/azure/cloud-adoption-framework/plan/plan-sustainability)
-  - [Sustainability considerations in your cloud governance strategy](/azure/cloud-adoption-framework/govern/policy-compliance/sustainability-considerations)
+  - [Govern overview](/azure/cloud-adoption-framework/govern/)
   - [Sustainability alignment in cloud management](/azure/cloud-adoption-framework/manage/considerations/sustainability)

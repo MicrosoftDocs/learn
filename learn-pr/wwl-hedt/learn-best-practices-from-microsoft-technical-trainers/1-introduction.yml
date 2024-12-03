@@ -2,6 +2,8 @@
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 1-Introduction
   description: "Introduction"
   ms.date: 08/08/2022

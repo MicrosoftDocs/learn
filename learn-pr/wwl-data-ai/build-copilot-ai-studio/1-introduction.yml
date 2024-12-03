@@ -2,14 +2,17 @@
 uid: learn.wwl.build-copilot-ai-studio.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: Explore building custom copilots in the Azure AI Studio.
+  description: Explore building custom generative AI apps with Azure AI Foundry.
   author: madiepev
   ms.author: madiepev
-  ms.date: 02/21/2024
+  ms.date: 11/26/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

@@ -1,6 +1,6 @@
-Code refactoring is a process that restructures existing code without changing its external behavior. Refactoring is often used to improve a specific aspect of your code. GitHub Copilot can help you refactor your code by suggesting changes that improve the code's quality, reliability, performance, and security.
+GitHub Copilot can help you update your code by suggesting changes that improve the code's quality, reliability, performance, and security.
 
-In this exercise, you use GitHub Copilot to refactor the following code sections:
+In this exercise, you use GitHub Copilot to refactor and improve the following code sections:
 
 - You refactor the EnumHelper class to use dictionaries instead of reflection. Using dictionaries improves performance by reducing the overhead of reflection. Eliminating reflection also improves code readability, maintainability, and security.
 
@@ -48,10 +48,12 @@ Use the following steps to complete this section of the exercise:
     }
     ```
 
-1. Open the Chat view and then enter the following prompt:
+1. Open the Chat view, and then add the following files to the Chat context: `EnumHelper.cs`, `LoanExtensionStatus.cs`, `LoanReturnStatus.cs`, `MembershipRenewalStatus.cs`.
+
+1. Enter the following prompt:
 
     ```plaintext
-    @workspace #file:EnumHelper.cs #file:LoanExtensionStatus.cs #file:LoanReturnStatus.cs #file:MembershipRenewalStatus.cs I want to refactor the `EnumHelper` class using dictionaries rather than reflection to get enum description attributes. I want a separate dictionary for each enum. The enum values are in the `LoanExtensionStatus.cs`, `LoanReturnStatus.cs`, and `MembershipRenewalStatus.cs` files. Explain how to update the EnumHelper class to use dictionaries and provide the updated code.
+    @workspace I want to refactor the `EnumHelper` class using dictionaries rather than reflection to get enum description attributes. I want a separate dictionary for each enum. The enum values are in the `LoanExtensionStatus.cs`, `LoanReturnStatus.cs`, and `MembershipRenewalStatus.cs` files. Explain how to update the EnumHelper class to use dictionaries and provide the updated code.
     ```
 
     This prompt asks GitHub Copilot to provide an explanation of how to update the EnumHelper class to use dictionaries instead of reflection. It also asks for the updated code that uses dictionaries for each enum value.
@@ -136,12 +138,12 @@ Use the following steps to complete this section of the exercise:
 
 1. Use GitHub Copilot's suggested `EnumHelper` class to update your EnumHelper.cs file.
 
-1. Ensure that GitHub Copilot is using the enum values in the `LoanExtensionStatus.cs`, `LoanReturnStatus.cs`, and `MembershipRenewalStatus.cs` files.
+1. Ensure that your updated `EnumHelper` class is using the enum values from the `LoanExtensionStatus.cs`, `LoanReturnStatus.cs`, and `MembershipRenewalStatus.cs` files.
 
     Open each of the enum files and verify that the enum values in the dictionaries are correct. If there are discrepancies, have GitHub Copilot update the dictionaries for each enum individually. For example, you can use the following prompt for the `LoanExtensionStatus` enum:
 
     ```plaintext
-    @workspace #file:LoanExtensionStatus.cs #file:EnumHelper.cs Update the LoanExtensionStatus dictionary in the EnumHelper class use the description values in LoanExtensionStatus.cs. Provide the updated code for the LoanExtensionStatus dictionary in the EnumHelper class.
+    @workspace Use the description values in LoanExtensionStatus.cs to update the LoanExtensionStatus dictionary in the EnumHelper class. Provide the updated code for the LoanExtensionStatus dictionary in the EnumHelper class.
     ```
 
     If necessary, use the same approach for the `LoanReturnStatus` and `MembershipRenewalStatus` enums.
@@ -354,11 +356,11 @@ Use the following steps to complete this section of the exercise:
     }
     ```
 
-1. Use the **Explain This** smart action to see an explanation of the LINQ queries.
+1. Use the **Explain** smart action to see an explanation of the LINQ queries.
 
-    The **Explain This** smart action provides a detailed explanation of the LINQ queries used in the code.
+    The **Explain** smart action provides a detailed explanation of the LINQ queries used in the code.
 
-    For example, you can use the **Explain This** smart action on the `GetPopulatedBook` method to see an explanation of the LINQ query used to populate the `Author` property of the `Book` object.
+    For example, you can use the **Explain** smart action on the `GetPopulatedBook` method to see an explanation of the LINQ query used to populate the `Author` property of the `Book` object.
 
     ```csharp
     Author = Authors!.Where(a => a.Id == b.AuthorId).Select(a => new Author {
@@ -367,7 +369,7 @@ Use the following steps to complete this section of the exercise:
     }).First()
     ```
 
-    The **Explain This** smart action provides a detailed explanation of the LINQ query used to populate the `Author` property of the `Book` object.
+    The **Explain** smart action provides a detailed explanation of the LINQ query used to populate the `Author` property of the `Book` object.
 
     For example, the explanation might look like this:
 
@@ -460,6 +462,8 @@ Use the following steps to complete this section of the exercise:
     }
     ```
 
+1. To accept the updated GetLoan method, select **Accept**.
+
 1. Select the `UpdateLoan` method.
 
     ```csharp
@@ -547,6 +551,8 @@ Use the following steps to complete this section of the exercise:
         }
     }
 
+1. To accept the updated UpdateLoan method, select **Accept**.
+
 1. Build your solution to ensure that there are no errors.
 
     You'll see warnings. You can ignore them for now.
@@ -612,6 +618,8 @@ Use the following steps to complete this section of the exercise:
     }
     ```
 
+1. To accept the updated SearchPatrons method, select **Accept**.
+
 1. Select the `GetPatron` method.
 
     The `GetPatron` method is designed to return the patron matching the specified `id`.
@@ -672,6 +680,8 @@ Use the following steps to complete this section of the exercise:
             .FirstOrDefault();
     }
     ```
+
+1. To accept the updated GetPatron method, select **Accept**.
 
 1. Select the `UpdatePatron` method.
 
@@ -735,6 +745,8 @@ Use the following steps to complete this section of the exercise:
         }
     }
     ```
+
+1. To accept the updated UpdatePatron method, select **Accept**.
 
 ### Check your work
 

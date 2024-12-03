@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a Log Analytics workspace
   description: "Learn to create a Log Analytics workspace within the Azure portal, enabling robust data collection and analysis for Microsoft Defender for Cloud to enhance your security posture."
   ms.date: 10/16/2024

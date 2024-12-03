@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-geographically-distributed-application.2-geo-distributed-architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a geographically distributed architecture
   description: In this unit, you learn how to modify a scalable, single-region architecture in Azure to be resilient to regional outages.
   ms.date: 03/17/2023

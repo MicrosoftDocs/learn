@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.continuous-validate-test-mission-critical-workloads
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Continuously validate and test mission-critical workloads
   description: Learn how to automate Azure Load Testing and Azure Chaos Studio simultaneously as part of your CI/CD pipelines.
   ms.date: 07/31/2024
@@ -48,3 +50,4 @@ units:
 - learn.continuous-validate-test-mission-critical-workloads.summary
 badge:
   uid: learn.continuous-validate-test-mission-critical-workloads.badge 
+

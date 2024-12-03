@@ -2,6 +2,8 @@
 uid: learn.machine-learning.introduction-clustering-models.evaluate-different-types-clustering
 title: Evaluate different types of clustering
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Evaluate different types of clustering
   description: Evaluate different types of clustering.
   ms.date: 05/16/2022
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-evaluate-different-types-clustering.md)]
+

@@ -2,11 +2,13 @@
 uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve-ranking-of-document-term-boosting
 title: Improve the ranking of a document with term boosting
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Improve the ranking of a document with term boosting
   description: Improve the ranking of a document with term boosting
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 10/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/02-improve-ranking-of-document-term-boosting.md)]
+

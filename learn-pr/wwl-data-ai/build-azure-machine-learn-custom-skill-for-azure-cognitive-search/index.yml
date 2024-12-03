@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build an Azure Machine Learning custom skill for Azure AI Search
   description: Build an Azure Machine Learning custom skill for Azure AI Search.
   author: wwlpublish
@@ -42,3 +44,4 @@ units:
 - learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search.summary
 badge:
   uid: learn.wwl.build-azure-machine-learning-custom-skill-for-azure-cognitive-search.badge
+

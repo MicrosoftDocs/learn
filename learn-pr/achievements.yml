@@ -2373,6 +2373,11 @@ achievements:
   title: Extract data from forms by using Azure AI Document Intelligence
   summary: In this learning path, you'll see how Azure Forms Analyzer solutions can enable you to capture data from typed or hand-written forms. You'll also learn how to build a solution for your custom form types and integrate that solution into an Azure Cognitive Search pipeline.
   iconUrl: /training/achievements/extract-data-from-forms-use-form-recognizer.svg
+- uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.badge   
+  type: badge   
+  title: Create a custom skill for Azure AI Search   
+  summary: Use the power of artificial intelligence to enrich your data and find new insights.   
+  iconUrl: /training/achievements/create-an-enrichment-pipeline.svg  
 - uid: learn.wwl.extract-text-from-images-documents.trophy
   type: trophy
   title: Extract text from images and documents
@@ -3162,7 +3167,7 @@ achievements:
   type: badge
   title: Fundamentals of Azure OpenAI Service
   summary: Get to know the connection between artificial intelligence (AI), Responsible AI, and text, code, and image generation. Understand how you can use Azure OpenAI to build solutions against AI models within Azure.
-  iconUrl: /training/achievements/explore-azure-openai.svg
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.badge
   type: badge
   title: Create multi-page Xamarin.Forms apps with stack and tab navigation
@@ -4017,3 +4022,208 @@ achievements:
   title: Develop, test, and publish Azure Functions by using Azure Functions Core Tools
   summary: Find out how to develop an Azure Function in Visual Studio with a test framework to create, deploy, and test this scalable and secure service.
   iconUrl: /training/achievements/develop-test-deploy-azure-functions-core-tools.svg
+- uid: learn.azure.manage-subscription-access-azure-rbac.badge
+  type: badge
+  title: Manage access to an Azure subscription by using Azure role-based access control (Azure RBAC)
+  summary: To grant access to a subscription, identify the appropriate role to assign to an employee. Understand when you might need to temporarily elevate your own access to regain access to a subscription.
+  iconUrl: /training/achievements/manage-subscription-access-azure-rbac.svg
+- uid: learn.azure.intro-to-batch-stt.badge
+  type: badge
+  title: Transcribe large amounts of audio data with Batch Transcription
+  summary: Batch transcription is a feature of Azure AI Speech that lets you transcribe large amounts of pre-recorded audio data asynchronously. Batch transcription's high throughput makes it ideal for call centers that have to transcribe hundreds or thousands of calls every day to ensure they meet regulations and compliance standards. Batch transcription also enables better data analyses, which can let call centers ensure that customer feedback is taken into account, staff are treated fairly, and problems are dealt with quickly and properly.
+  iconUrl: /training/achievements/intro-to-batch-transcription.svg
+- uid: learn.azure.implement-firewall-load-balancer.badge
+  type: badge
+  title: Implement Datacenter Firewall and Software Load Balancer on Azure Stack HCI
+  summary: Learn how Azure Stack HCI software defined networking (SDN) helps implement network traffic filtering and load balancing.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.manage-azure-stack-hci-tenant-networks.badge
+  type: badge
+  title: Manage Azure Stack HCI tenant networks
+  summary: Manage Azure Stack HCI tenant networks.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.plan-deploy-sdn-infrastructure.badge
+  type: badge
+  title: Plan for and deploy SDN infrastructure on Azure Stack HCI
+  summary: This module explores the architecture and core capabilities of Software Defined Networking (SDN) on Azure Stack HCI. It also includes a couple of demonstrations illustrating a sample deployment of SDN on Azure Stack HCI.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.manage-azure-stack-hci-clusters.badge
+  type: badge
+  title: Manage Azure Stack HCI clusters
+  summary: This module covers the most common Microsoft Azure Stack HCI management and maintenance tasks that will help you improve the resiliency, stability, and performance of your existing IT infrastructure.
+  iconUrl: /training/achievements/manage-azure-stack-hci-clusters.svg
+- uid: learn-pr.azure.manage-azure-stack-hci-volumes.badge
+  type: badge
+  title: Manage Azure Stack HCI volumes
+  summary: Manage Azure Stack HCI (Hyperconverged infrastructure) volumes.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.integrate-azure-services-with-azure-stack-hci.badge
+  type: badge
+  title: Integrate Azure services with Azure Stack HCI
+  summary: This module describes the benefits, considerations, and implementation process of integrating Microsoft Azure services with Azure Stack HCI and its workloads.
+  iconUrl: /training/achievements/integrate-azure-services-with-azure-stack-hci.svg
+- uid: learn.wwl.manage-azure-stack-hci-virtual-machine-workloads.badge
+  type: badge
+  title: Manage Azure Stack HCI virtual machine workloads
+  summary: This module describes how to manage and maintain Microsoft Azure Stack HCI virtual machine (VM) workloads.
+  iconUrl: /training/achievements/manage-azure-stack-hci-virtual-machine-workloads.svg
+- uid: learn.azure.stack-hci-arc-integration.badge
+  type: badge
+  title: Integrate Azure Arc and Azure Stack HCI
+  summary: In this module, you'll learn the fundamentals of Azure Arc and how it's used to bring new capabilities to the management and monitoring of your Azure Stack HCI clusters at scale.
+  iconUrl: /training/achievements/stack-hci-arc-integration.svg
+- uid: learn.azure.azure-stack-hci-plan-deploy.badge
+  type: badge
+  title: Plan and deploy Azure Stack HCI
+  summary: This module introduces you to planning for and deploying Azure Stack HCI. Content includes identifying suitable workloads, determining the optimal configuration to host these workloads, stepping through the deployment process, validating post-deployment operational status, and evaluating Azure integration options.
+  iconUrl: /training/achievements/azure-stack-hci-plan-deploy.svg
+- uid: learn.azure.azure-stack-hci-technologies.badge
+  type: badge
+  title: Introduction to Azure Stack HCI core technologies
+  summary: This module introduces Azure Stack HCI technologies. You'll learn about the core Azure Stack HCI technologies, including Hyper-V, software-defined storage, and software-defined networking. 
+  iconUrl: /training/achievements/azure-stack-hci-technologies.svg
+- uid: learn.azure.intro-to-azure-stack.badge
+  type: badge
+  title: Introduction to Azure Stack
+  summary: This module introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure. 
+  iconUrl: /training/achievements/intro-to-azure-stack.svg
+- uid: learn.wwl.operate-maintain-azure-stack-hci.trophy
+  type: trophy
+  title: Operate and maintain Azure Stack HCI
+  summary: This learning path explains how to manage Azure Stack HCI clusters, integrate Microsoft Azure services with Azure Stack HCI, manage Azure Stack HCI VM workloads, and manage Azure Kubernetes Service on Azure Stack HCI.
+  iconUrl: /training/achievements/operate-and-maintain-azure-stack-hci.svg
+- uid: learn.azure-stack-hci-foundations.trophy
+  type: trophy
+  title: Azure Stack HCI foundations
+  summary: This learning path introduces you to the Azure Stack portfolio and describes basic architecture, core capabilities, and primary use cases of its products. You'll also learn about differences and similarities between Azure Stack HCI, Azure Stack Hub, Azure Stack Edge, and Azure.
+  iconUrl: /training/achievements/azure-stack-hci.svg
+- uid: learn.azure.add-custom-domain-name-azure-active-directory.badge
+  type: badge
+  title: Add custom domain name to Microsoft Entra ID
+  summary: In this module, you'll learn to add your custom domain to Microsoft Entra ID. You'll also learn to add DNS information to the domain registrar, verify your custom domain name in the Azure portal, and set it as the primary.
+  iconUrl: /training/achievements/add-custom-domain-name-azure-active-directory.svg
+- uid: learn.azure.create-users-and-groups-in-azure-active-directory.badge
+  type: badge
+  title: Create Azure users and groups in Microsoft Entra ID
+  summary: Create users in Microsoft Entra ID. Understand different types of groups. Create a group and add members. Manage business-to-business guest accounts.
+  iconUrl: /training/achievements/create-users-and-groups-in-azure-active-directory.svg
+- uid: learn.wwl.configure-virtual-machine-backups.badge
+  type: badge
+  title: Configure virtual machine backups
+  summary: Learn how to configure virtual machine backups including restore operations.
+  iconUrl: /training/achievements/virtual-machines-configure-backup.svg
+- uid: learn.manage-data-assets-in-microsoft-purview-data-catalog.badge
+  type: badge
+  title: Manage data assets in the classic Microsoft Purview Data Catalog
+  summary: This module teaches you how to use the classic Microsoft Purview Data Catalog to manage your scanned data assets. How to curate a business glossary, and how to browse assets across your entire data estate.
+  iconUrl: /learn/achievements/manage-data-assets-in-microsoft-purview-data-catalog.svg
+- uid: learn.introduction-code-to-cloud.badge
+  type: badge
+  title: Introduction to Code to Cloud
+  summary: This module covers provides an Introduction to Code to Cloud, a service that allows you to seamlessly deploy your complex micro-architecture solutions to Microsoft Azure.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.configure-network-routing-endpoints.badge
+  type: badge
+  title: Configure network routing and endpoints
+  summary: Learn how to configure network routes, including endpoints and private links.
+  iconUrl: /training/achievements/network-routing-endpoints-configure.svg
+- uid: learn.azure.migrate-aspnet-app-azure-app-service.badge
+  type: badge
+  title: Containerize and migrate ASP.NET applications to Azure App Service
+  summary: In this module, you learn how to use the Azure Migrate App Containerization tool to containerize and migrate ASP.NET applications to Azure App Service.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.cpp-write-your-first-program.badge
+  type: badge
+  title: Write your first program in C++
+  summary: Get familiar with the C++ programming language! Construct a C++ program and learn basic C++ syntax. Also, learn how to identify and correct common programming errors.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.train-compute-intensive-models-azure-machine-learning.trophy
+  type: trophy
+  title: Train compute-intensive models with Azure Machine Learning
+  summary: Large-scale machine-learning and deep-learning models require ample compute power. Learn when to choose GPU compute, and how different frameworks help you to make optimal use of GPU compute during preprocessing, model training, and deployment.
+  iconUrl: /training/achievements/train-compute-intensive-models-with-azure-machine-learning.svg
+- uid: learn.wwl.use-notebooks-for-experimentation-azure-machine-learning.trophy
+  type: trophy
+  title: Use notebooks for experimentation in Azure Machine Learning
+  summary: Learn how to use Azure Machine Learning notebooks for experimentation. Similar to Jupyter, the notebooks are ideal for exploring your data and developing a machine learning model.
+  iconUrl: /training/achievements/use-notebooks-for-experimentation-in-azure-machine-learning.svg
+- uid: learn.wwl.work-compute-azure-machine-learning.trophy
+  type: trophy
+  title: Work with compute in Azure Machine Learning
+  summary: Learn how to work with compute targets and environments in the Azure Machine Learning workspace.
+  iconUrl: /training/achievements/work-with-compute-in-azure-machine-learning.svg
+- uid: learn.wwl.work-data-azure-machine-learning.trophy
+  type: trophy
+  title: Work with data in Azure Machine Learning
+  summary: Learn how to work with data in Azure Machine Learning. Whether you want to access data in notebooks or scripts, you can read data directly, through datastores, or data assets.
+  iconUrl: /training/achievements/work-data-azure-machine-learning.svg
+- uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.badge
+  type: badge
+  title: Deploy deep learning workloads to production with Azure Machine Learning
+  summary: Deploying large-scale models for real-time inferencing is challenging because of the model's size. Learn what you can do and which frameworks you can use to optimize your model's performance during model scoring.
+  iconUrl: /training/achievements/3-deploy-deep-learning-workloads-to-production-azure.svg
+- uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.badge
+  type: badge
+  title: Preprocess large datasets with Azure Machine Learning
+  summary: Choose GPU compute in Azure Machine Learning when training compute-intensive models. To reduce the time needed to process the data, store your data efficiently and use a data manipulation library compatible with GPU compute.
+  iconUrl: /training/achievements/1-preprocessing-large-datasets-with-azure-machine-learning.svg
+- uid: learn.wwl.train-compute-azure-machine-learning.badge
+  type: badge
+  title: Train compute-intensive models with Azure Machine Learning
+  summary: Train compute-intensive models with GPU compute in Azure Machine Learning. By monitoring workloads, you can find the optimal compute configuration. Distributed training allows you to train on multiple nodes to speed up training time.
+  iconUrl: /training/achievements/2-train-compute-intensive-models-with-azure-machine-learning.svg
+- uid: learn.wwl.train-models-azure-machine-learning-cli-v2.trophy
+  type: trophy
+  title: Train models in Azure Machine Learning with the CLI (v2)
+  summary: The Azure Machine Learning CLI (v2) is an Azure CLI extension that you can use to train and deploy machine learning models. Learn how to use the CLI (v2) to create Azure Machine Learning workspace assets to use for model training and deployment.
+  iconUrl: /training/achievements/train-models-in-azure-machine-learning-with-cli-v2.svg
+- uid: learn.azure.cna-build-basic-service.badge
+  type: badge
+  title: Build a basic cloud-native service using PostgreSQL and Node.js
+  summary: Build a basic service consisting of an Express.js-based web service with Microsoft Azure Database for PostgreSQL providing its persistent data store, and managed by a front-end Next.js management web app. 
+  iconUrl: /training/achievements/cloud-native-build-basic-service.svg
+- uid: learn.wwl.create-azure-machine-learning-resources-cli-v2.badge
+  type: badge
+  title: Create Azure Machine Learning resources with the CLI (v2)
+  summary: Use the Azure Machine Learning CLI (v2) to create and manage workspace resources.
+  iconUrl: /training/achievements/1-create-azure-machine-learning-resources-with-cli-v2.svg
+- uid: learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.badge
+  type: badge
+  title: Deploy an Azure Machine Learning model to a managed endpoint with CLI (v2)
+  summary: Use the Azure Machine Learning CLI (v2) to deploy a machine learning model to a managed online endpoint.
+  iconUrl: /training/achievements/4-deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.svg
+- uid: learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.badge
+  type: badge
+  title: Run component-based pipelines in Azure Machine Learning with CLI (v2)
+  summary: Use components to easily share and reuse code and use component-based pipelines to create machine learning workflows.
+  iconUrl: /training/achievements/machine-learning-component-pipelines.svg
+- uid: learn.wwl.run-jobs-azure-machine-learning-cli-v2.badge
+  type: badge
+  title: Run jobs in Azure Machine Learning with CLI (v2)
+  summary: Use the Azure Machine Learning CLI (v2) to train models as jobs. Train a model using a basic Python script, or perform hyperparameter tuning with a sweep job.
+  iconUrl: /training/achievements/2-run-jobs-in-azure-machine-learning-with-cli-v2.svg
+- uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.badge
+  type: badge
+  title: Use MLflow with Azure Machine Learning jobs submitted with CLI (v2)
+  summary: Use MLflow to track model metrics and artifacts when training and registering models with the Azure Machine Learning CLI (v2).
+  iconUrl: /training/achievements/3-use-mlflow-with-azure-ml-jobs-submitted-with-cli-v2.svg
+- uid: learn.migrate-aspnet-web-application.trophy
+  type: trophy
+  title: Migrate an ASP.NET web application to Azure with Visual Studio
+  summary:  Learn how to take a .NET Framework web app and migrate it to Azure. This scenario represents a very common set of challenges that you will run into when moving an app to the cloud. You will make key updates to the solution to make it cloud ready.
+  iconUrl: /training/achievements/migrate-aspnet-web-application.svg
+- uid: learn.azure.aspnet-configurationbuilder.badge
+  type: badge
+  title: Externalize the configuration of an ASP.NET app by using an Azure key vault
+  summary: Learn how to use ConfigurationBuilder to dynamically configure an ASP.NET web app to retrieve secrets from an Azure key vault.
+  iconUrl: /training/achievements/aspnet-configurationbuilder.svg
+- uid: learn.azure.aspnet-session.badge
+  type: badge
+  title: Improve session scalability in a .NET Framework ASP.NET web application by using Azure Cache for Redis
+  summary: Learn how to use Azure Cache for Redis to store session data and improve the scalability of web applications.
+  iconUrl: /training/achievements/aspnet-session.svg
+- uid: learn.optimize-web-app-with-redis.badge
+  type: badge
+  title: Optimize your web applications by caching read-only data with Redis
+  summary: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
+  iconUrl: /training/achievements/optimize-web-apps-with-redis.svg

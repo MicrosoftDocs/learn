@@ -5,14 +5,14 @@ metadata:
   description: Learn the basics of programming by writing and running code in PowerShell.
   ms.service: powershell
   manager: jasongroce
-  ms.date: 10/04/2023
+  ms.date: 10/07/2024
   author: michaeltlombardi
   ms.author: mlombardi
   ms.topic: module
 title: Write your first PowerShell code
 summary: In this module, you begin learning the basics of programming by writing and running code in PowerShell.
 abstract: |
-  After you've completed this module, you'll be able to:
+  After you complete this module, you'll be able to:
   - Manage PowerShell inputs and outputs.
   - Diagnose errors when you type code incorrectly.
   - Identify PowerShell elements such as cmdlets, parameters, inputs, and outputs.

@@ -60,12 +60,17 @@ Use the following steps to complete this challenge:
 
 1. Verify that the project builds without an error when you run `dotnet build` in the Terminal.
 
+    The project code should build without any errors before you start documenting the code.
+
+    > [!NOTE]
+    > The project will not run successfully because it's designed to run on an Internet of Things device using a specialized runtime environment.
+
 1. Use GitHub Copilot Chat in Visual Studio Code to generate inline and project documentation.
 
 1. Review the generated documentation to ensure that it meets the requirements.
 
 1. Once you've completed the documentation, save the changes to the project.
 
-1. After saving the documented code, verify that the project builds without an error when you run `dotnet build` in the Terminal.
+1. After saving the documented code, verify that the project builds without an error when you run the `dotnet build` command in the Terminal.
 
 Good luck! When you're done, review the solution described in the next unit.

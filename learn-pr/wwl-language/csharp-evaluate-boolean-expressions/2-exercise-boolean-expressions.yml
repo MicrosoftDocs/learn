@@ -4,10 +4,12 @@ title: Exercise - Evaluate an expression
 metadata:
   title: Exercise - Evaluate an expression
   description: "Exercise - Evaluate an expression"
-  ms.date: 02/22/2024
+  ms.date: 11/07/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 11
 content: |
   [!include[](includes/2-exercise-boolean-expressions.md)]

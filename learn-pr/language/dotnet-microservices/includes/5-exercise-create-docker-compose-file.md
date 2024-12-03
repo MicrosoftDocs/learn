@@ -15,7 +15,7 @@ If you disconnected from the codespace you used in the previous exercise, reconn
 
 Use the docker-compose file to configure images for both the back-end and front-end services:
 
-1. In the dotnet-docker folder of the codespace (the same folder with README.md), open the file named **./dotnet-docker/docker-compose.yml**. This file is empty.
+1. In the dotnet-docker folder of the codespace, open the file named **./dotnet-docker/docker-compose.yml**. This file is empty.
 
 1. Add the following code to the docker-compose.yml file:
 
@@ -79,7 +79,7 @@ Use the docker-compose file to configure images for both the back-end and front-
 
 Now, use Docker Compose to build and start both front-end and back-end components.
 
-1. To build the container images us .NET container support, select the **Terminal** tab, and then run the following command:
+1. To build the container images with .NET container support, select the **Terminal** tab, and then run the following command. Note, if your app is still running, first close with **CTRL+C**.
 
     ```bash
     dotnet publish /p:PublishProfile=DefaultContainer

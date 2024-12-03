@@ -29,7 +29,7 @@ Signatures are responsible for managing the structured formatting and parsing lo
 DSPy infers the role of fields within a signature by analyzing their names and traces (input/output examples). This inference capability allows DSPy to automatically understand the purpose of each field and apply the appropriate transformation logic.
 
 > [!Tip]
-> Learn more about [signatures](https://dspy-docs.vercel.app/docs/building-blocks/signatures?azure-portal=true).
+> Learn more about [signatures](https://dspy.ai/learn/programming/signatures/?azure-portal=true).
 
 ### Handle signatures with modules
 
@@ -53,7 +53,7 @@ A module in DSPy is like a callable function. It takes several parameters, inclu
 By defining modules, you use a more structured and scalable approach to working with LLMs. This modular approach makes it easier to try out different techniques and improve the LLM's performance for various tasks.
 
 > [!Tip]
-> Learn more about [modules](https://dspy-docs.vercel.app/docs/building-blocks/modules?azure-portal=true).
+> Learn more about [modules](https://dspy.ai/learn/programming/modules/?azure-portal=true).
 
 ### Optimize your DSPy program
 
@@ -66,4 +66,4 @@ The optimizer works by analyzing the provided training set and the desired metri
 By using optimizers, DSPy can automate the process of prompt engineering, reducing the need for manual adjustments and ensuring that the LLM remains robust and scalable. This approach not only saves time but also enhances the overall performance and reliability of the system.
 
 > [!Tip]
-> Learn more about [optimizers](https://dspy-docs.vercel.app/docs/building-blocks/optimizers?azure-portal=true).
+> Learn more about [optimizers](https://dspy.ai/learn/optimization/optimizers/?azure-portal=true).

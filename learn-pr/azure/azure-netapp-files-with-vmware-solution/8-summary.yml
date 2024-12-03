@@ -2,6 +2,8 @@
 uid: learn.azure.azure-netapp-files-with-vmware-solution.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary unit for the Introduction to using Azure NetApp Files with Azure VMware Solution module.

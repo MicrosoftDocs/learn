@@ -2,6 +2,8 @@
 uid: learn.wwl.work-with-form-recognizer.form-recognizer-studio
 title: Use the Azure Document Intelligence Studio
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use the Azure Document Intelligence Studio
   description: Use the Azure Document Intelligence Studio
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/9-form-recognizer-studio.md)]
+

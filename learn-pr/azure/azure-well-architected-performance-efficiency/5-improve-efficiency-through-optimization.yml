@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-performance-efficiency.improve-efficiency-through-optimization
 title: Improve efficiency through optimization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Improve efficiency through optimization
   description: Learn how to continuously improve your workload's efficiency through optimization.
   ms.date: 12/13/2023
@@ -56,3 +58,4 @@ quiz:
     - content: 'A network performance monitoring tool'
       isCorrect: false
       explanation: "Incorrect. A network performance monitoring tool is used to monitor network performance, not application performance."
+

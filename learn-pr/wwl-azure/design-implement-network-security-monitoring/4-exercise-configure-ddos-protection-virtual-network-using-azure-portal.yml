@@ -4,12 +4,12 @@ title: 'Exercise: Configure DDoS Protection on a virtual network using the Azure
 metadata:
   title: 'Exercise: Configure DDoS Protection on a virtual network using the Azure portal'
   description: "Exercise: Configure DDoS Protection on a virtual network using the Azure portal"
-  ms.date: 02/08/2024
+  ms.date: 11/29/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.custom:
+  - N/A
+durationInMinutes: 12
 content: |
   [!include[](includes/4-exercise-configure-ddos-protection-virtual-network-using-azure-portal.md)]

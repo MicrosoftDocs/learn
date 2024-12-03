@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: introduction-azure-firewall
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Introduction to Azure Firewall"
   description: Describe how Azure Firewall protects Azure Virtual Network resources, including the Azure Firewall features, rules, deployment options, and administration with Azure Firewall Manager.
   manager: kumud
@@ -48,3 +50,4 @@ units:
 - learn.introduction-azure-firewall.7-summary
 badge:
   uid: learn.introduction-azure-firewall.badge
+

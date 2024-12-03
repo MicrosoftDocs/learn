@@ -2,11 +2,13 @@
 uid: learn.wwl.enable-semantic-search-azure-database-postgresql.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
-  ms.author: rcaper
-  ms.date: 04/29/2024
+  ms.author: calopez
+  ms.date: 11/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -49,3 +51,4 @@ quiz:
     - content: "Use Azure AI Search's integrated vectorization to generate the query embedding and use the SQL in-line."
       isCorrect: false
       explanation: "Incorrect. While this is a viable approach to running semantic search with Azure AI Search, it isn't the simplest approach for data already stored in a PostgreSQL flexible server."
+

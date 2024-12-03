@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to the Altair 8800 and Azure Sphere
   description: Introduction to computing fundamentals with Altair 8800 and Azure Sphere.
   ms.date: 11/16/2021
@@ -50,3 +52,4 @@ units:
 - learn.student-evangelism.altair-azure-sphere-introduction.summary
 badge:
   uid: learn.student-evangelism.altair-azure-sphere-introduction.badge
+

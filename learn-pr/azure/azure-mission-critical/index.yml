@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure-mission-critical
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Challenge Project - Design a mission-critical web application
   description: Learn to apply key principles in your workload to achieve a highly reliable design with health monitoring checks.
   ms.date: 08/14/2024
@@ -39,3 +41,4 @@ units:
 - learn.azure-mission-critical.summary
 badge:
   uid: learn.azure-mission-critical.badge
+

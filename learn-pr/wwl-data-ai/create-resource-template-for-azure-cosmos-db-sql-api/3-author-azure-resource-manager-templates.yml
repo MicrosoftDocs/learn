@@ -2,9 +2,11 @@
 uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.author-azure-resource-manager-templates
 title: Author Azure Resource Manager templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Author Azure Resource Manager templates
   description: "Author Azure Resource Manager templates"
-  ms.date: 10/18/2022
+  ms.date: 10/22/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/3-author-azure-resource-manager-templates.md)]
+

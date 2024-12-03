@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-azure-resource-manager-bicep
 title: Automate deployment by using Azure Resource Manager templates and Bicep
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate deployment by using Azure Resource Manager templates and Bicep
   description: "Automate deployment by using Azure Resource Manager templates and Bicep"
   ms.date: 06/28/2022
@@ -16,3 +18,4 @@ labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/3-automate-deployment-using-azure-resource-manager-bicep.md)]
+

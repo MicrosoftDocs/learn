@@ -2,6 +2,8 @@
 uid: learn.wwl.create-configure-host-pools-session-hosts.create-host-pool-azure-portal
 title: Create a host pool using the Azure portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a host pool using the Azure portal
   description: "Create a host pool using the Azure portal"
   ms.date: 08/22/2024

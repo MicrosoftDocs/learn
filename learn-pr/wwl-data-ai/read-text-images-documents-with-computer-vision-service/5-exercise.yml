@@ -2,6 +2,8 @@
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service.exercise
 title: Exercise - Read text in images
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Read text in images
   description: Exercise - Read text in images
   author: wwlpublish
@@ -16,3 +18,4 @@ labModal: true
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise.md)]
+

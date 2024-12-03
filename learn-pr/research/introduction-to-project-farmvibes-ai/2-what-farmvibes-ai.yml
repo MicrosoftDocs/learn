@@ -2,6 +2,8 @@
 uid: learn.research.introduction-to-project-farmvibes-ai.what-farmvibes-ai
 title: What is Project FarmVibes.AI?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Project FarmVibes.AI?
   description: A unit in the Intro to project FarmVibes.AI module. 
   ms.date: 7/16/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.health-bot-template-scenarios
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Health Bot scenario templates
   description: Learn how to enrich the capabilities of your bot by using the prebuilt scenario templates.
   ms.collection: TBD
@@ -40,3 +42,4 @@ units:
   - learn.health-bot-template-scenarios.5-summary
 badge:
   uid: learn.student-evangelism.health-bot-template-scenarios.badge
+

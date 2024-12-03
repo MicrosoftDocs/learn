@@ -2,9 +2,9 @@ The verify phase is the last step of the threat-modeling process, which often ha
 
 ## Goals
 
-- Confirm that the system satisfies all previous and new security requirements
-- Configure cloud provider, operating system, and components to meet security requirements
-- Ensure that all issues are addressed with the right security controls
+- Confirm that the system satisfies all previous and new security requirements.
+- Configure cloud provider, operating system, and components to meet security requirements.
+- Ensure that all issues are addressed with the right security controls.
 - Take the system through manual and automated verification before deployment
 
 > [!IMPORTANT]
@@ -21,13 +21,13 @@ Examples:
 - Logging and monitoring systems
 - Identity and access controls
 
-Then make sure to change all the default configuration settings from the cloud provider, operating system, and components to meet all security requirements.
+Then make sure to change all the default configuration settings from the cloud provider, operating system, and components so you can meet all security requirements.
 
 Examples:
 
-- Enable Azure SQL Database transparent data encryption to protect data on disk
-- Use Role Based Access Control (RBAC) to assign permissions to users, groups, and applications
-- Enable Windows Firewall across all profiles
+- Enable Azure SQL Database transparent data encryption to protect data on disk.
+- Use role-based access control to assign permissions to users, groups, and applications.
+- Enable Windows Firewall across all profiles.
 
 You should resolve all issues logged in the bug-management solution. Verify all fixes.
 
@@ -37,7 +37,7 @@ The last part involves running both manual and automated verification. At Micros
 
 If you answer *yes* to any of the following questions, you might want to have shorter verification cadences:
 
-- Will my system be used externally?
-- Does it handle confidential data?
+- Is my system used externally?
+- Does my system handle confidential data?
 - Do I have to comply with regulations?
 - Does my organization require extra security processes such as privacy implications, operational risk, or development requirements?

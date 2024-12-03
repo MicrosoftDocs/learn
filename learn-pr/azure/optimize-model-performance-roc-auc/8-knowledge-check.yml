@@ -2,6 +2,8 @@
 uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Multiple-choice questions
   ms.date: 07/20/2024
@@ -45,3 +47,4 @@ quiz:
     - content: "It gives a summary of how well a model works across various thresholds."
       isCorrect: true
       explanation: "Correct."
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.design-network-solutions.design-for-application-delivery-services
 title: Design for application delivery services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for application delivery services
   description: "Review considerations and a decision tree flowchart to design for application delivery services."
   ms.date: 10/09/2023

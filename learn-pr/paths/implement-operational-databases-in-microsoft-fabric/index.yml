@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn-wwl.implement-operational-databases-in-microsoft-fabric
+metadata:
+  title: Implement operational databases in Microsoft Fabric
+  description: Learn how to work with operational databases in Microsoft Fabric.
+  ms.date: 10/24/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: learning-path
+  ms.custom:
+    - ignite-2024
+title: Implement operational databases in Microsoft Fabric
+prerequisites: |
+  - Ability to navigate the Fabric portal.
+  - Experience with relational databases.
+  - Basic knowledge of security concepts like identities and permissions.
+  - Experience with T-SQL programming language at a basic level.
+summary: |
+  This learning path prepares you for the task of implementing operational databases by using Microsoft Fabric.
+  
+  You'll learn how to create and work with SQL Database, work with GraphQL in Microsoft Fabric, and orchestrate processes and data movement with Microsoft Fabric.
+  
+  > [!NOTE]
+  > [!INCLUDE [](../../includes/azure-subscription-prerequisite.md)]
+iconUrl: /training/achievements/develop-data-driven-app-sql-db.svg
+levels:
+- intermediate
+roles:
+- developer
+- data-engineer
+- solution-architect
+products:
+- azure-sql-database
+- fabric
+subjects:
+- databases
+- app-development
+- artificial-intelligence
+modules:
+- learn-wwl.get-started-sql-database-microsoft-fabric
+- learn-wwl.get-started-with-graphql-microsoft-fabric
+- learn.wwl.use-data-factory-pipelines-fabric
+trophy:
+  uid: learn-wwl.implement-operational-databases-in-microsoft-fabric.trophy

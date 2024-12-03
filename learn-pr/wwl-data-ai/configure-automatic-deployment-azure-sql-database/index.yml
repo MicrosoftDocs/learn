@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate deployment of database resources
   description: "Automate deployment of database resources"
   ms.date: 06/28/2022
@@ -44,3 +46,4 @@ units:
 - learn.wwl.configure-automatic-deployment-for-azure-sql-database.summary
 badge:
   uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.badge
+

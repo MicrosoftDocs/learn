@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.extend-share-capacity-with-azure-file-sync
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Extend your on-premises file share capacity using Azure File Sync
   description: Evaluate and deploy Azure File Sync to extend the capacity of your on-premises SMB file shares to the cloud.
   manager: akashdubey
@@ -47,3 +49,4 @@ units:
 - learn.azure.extend-share-capacity-with-azure-file-sync.summary
 badge:
   uid: learn.azure.extend-share-capacity-with-azure-file-sync.badge
+

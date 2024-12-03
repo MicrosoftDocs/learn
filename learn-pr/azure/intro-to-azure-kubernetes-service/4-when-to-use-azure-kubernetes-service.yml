@@ -3,6 +3,8 @@ uid: learn.intro-to-azure-kubernetes-service.when-to-use-azure-kubernetes-servic
 title: When to use Azure Kubernetes Service
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to use Azure Kubernetes Service
   description: When to use Azure Kubernetes Service
   ms.date: 10/17/2023
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-kubernetes-service.md)]
+

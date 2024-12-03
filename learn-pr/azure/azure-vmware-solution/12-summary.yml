@@ -2,6 +2,8 @@
 uid: learn.azure.azure-vmware-solution.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: This content is part of the "Secure outbound internet connectivity for Azure VMware Solution" module.
   ms.date: 03/23/2023

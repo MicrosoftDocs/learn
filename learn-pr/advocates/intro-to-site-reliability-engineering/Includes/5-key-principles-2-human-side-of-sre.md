@@ -17,11 +17,11 @@ Completing these actions doesn't make the service better in any long-term, persi
 
 SREs hate toil. They work to eliminate it whenever possible and appropriate. This objective is one of the places automation comes into play in SRE. If these requests can be handled automatically, that frees up the team to work on more rewarding and impactful things than draining the request queue.
 
-The use of the word “appropriate” in relation to toil is similar to its use around reliability. There are situations where toil elimination work is of lower priority than other work, but on the whole, stripping toil from a service is a key focus for an SRE.
+The use of the word “appropriate” in relation to toil is similar to its use around reliability. There are situations where toil elimination work is of lower priority than other work. But on the whole, stripping toil from a service is a key focus for an SRE.
 
 ## Project work vs. reactive "ops" work
 
-To do the work necessary to remove toil, or improve the reliability of a system, an SRE’s time must be allocated appropriately. They want to ensure that they aren’t spending all of their time firefighting, replying to pages, or just processing a ticket queue. They need to have the time set aside to write code to eliminate the toil, construct self-service automation so tickets aren’t necessary, build projects that make the service and the people more efficient. The figure usually cited (which comes from the original Google model) is one of no more than 50% operational load on a team.
+To do the work necessary to remove toil, or improve the reliability of a system, an SRE’s time must be allocated appropriately. They want to ensure that they aren’t spending all of their time firefighting, replying to pages, or just processing a ticket queue. They need to have the time set aside to write code to eliminate the toil, construct self-service automation so tickets aren’t necessary, and build projects that make the service and the people more efficient. The figure usually cited (which comes from the original Google model) is one of no more than 50% operational load on a team.
 
 > [!NOTE]
 > 50% is a somewhat arbitrary number, but in practice it seems to work as a reasonable goal for many people.

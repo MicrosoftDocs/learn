@@ -2,11 +2,13 @@
 uid: learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.exercise-create-azure-linked-service
 title: Exercise - Create an Azure Machine Learning linked service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an Azure Machine Learning linked service
   description: Exercise - Create an Azure Machine Learning linked service
   author: wwlpublish
-  ms.author: chtestao
-  ms.date: 07/10/2024
+  ms.author: jamesh
+  ms.date: 11/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -14,3 +16,4 @@ azureSandbox: false
 durationInMinutes: 9
 content: |
   [!include[](includes/3-exercise-create-azure-linked-service.md)]
+

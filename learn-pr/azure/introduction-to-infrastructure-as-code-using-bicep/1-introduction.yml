@@ -2,10 +2,12 @@
 uid: learn.azure.introduction-infrastructure-code-using-bicep.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Learn how you can use infrastructure as code, Azure Resource Manager, and Bicep to quickly and confidently scale your cloud deployments.
-  ms.date: 09/27/2024
+  ms.date: 10/30/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 1 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/1-introduction.md)]
+

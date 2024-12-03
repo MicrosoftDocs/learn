@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-usage-billing-for-azure-stack-hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage usage and billing for Azure Stack Hub
   description: "Manage usage and billing for Azure Stack Hub"
   ms.date: 08/09/2022
@@ -46,3 +48,4 @@ units:
 - learn.wwl.manage-usage-billing-for-azure-stack-hub.summary
 badge:
   uid: learn.wwl.manage-usage-billing-for-azure-stack-hub.badge
+

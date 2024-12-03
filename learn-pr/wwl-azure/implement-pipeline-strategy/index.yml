@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-pipeline-strategy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design and implement a pipeline strategy
   description: "Implement a pipeline strategy"
   ms.date: 05/26/2024

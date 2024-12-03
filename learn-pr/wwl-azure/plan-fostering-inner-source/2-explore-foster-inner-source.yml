@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-foster-inner-source.explore-foster-inner-source
 title: Explore foster inner source
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore foster inner source
   description: "Explore foster inner source"
   ms.date: 05/08/2024

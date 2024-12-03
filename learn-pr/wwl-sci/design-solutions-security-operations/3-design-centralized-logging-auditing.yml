@@ -2,11 +2,13 @@
 uid: learn.wwl.design-solutions-security-operations.design-centralized-logging-auditing
 title: Design centralized logging and auditing, including Microsoft Purview Audit. 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design centralized logging and auditing, including Microsoft Purview Audit. 
   description: "SC-100 preparatory unit on the topic: design centralized logging and auditing, including Microsoft Purview Audit. ."
   ms.date: 09/26/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 10
 content: |

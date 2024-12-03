@@ -2,9 +2,11 @@
 uid: learn.azure.sustainable-software-engineering-overview.measurement
 title: "Principle: Measurement"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Principle: Measurement"
   description: This principle of sustainable software engineering is about measuring carbon emissions, and how to calculate your Software Carbon Intensity (SCI) scores.
-  ms.date: 09/29/2023
+  ms.date: 11/23/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/7-measurement.md)]
+

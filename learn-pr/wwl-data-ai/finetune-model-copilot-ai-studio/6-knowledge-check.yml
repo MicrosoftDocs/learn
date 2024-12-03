@@ -2,11 +2,13 @@
 uid: learn.wwl.finetune-model-copilot-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check about fine-tuning a language model.
   author: madiepev
   ms.author: madiepev
-  ms.date: 6/26/2024
+  ms.date: 11/28/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -21,7 +23,7 @@ quiz:
       explanation: "Correct. JSONL or JSON Lines is the expected input format."
     - content: "YAML"
       isCorrect: false
-      explanation: "Incorrect. In the context of the Azure AI Studio, YAML is used to specify the configuration of jobs or flows."
+      explanation: "Incorrect. In the context of the Azure AI Foundry, YAML is used to specify the configuration of jobs or flows."
     - content: "HTML"
       isCorrect: false
       explanation: "Incorrect. HTML is a markup language for web pages."
@@ -33,7 +35,7 @@ quiz:
     - content: "How the model needs to act."
       isCorrect: true
       explanation: "Correct. Fine-tuning can help to maximize the consistency of the model's behavior."
-    - content: "Which words aren’t allowed."
+    - content: "Which words aren't allowed."
       isCorrect: false
       explanation: "Incorrect. To filter specific content like words, you can use a content filter."
   - content: "Which advanced option refers to one full cycle through the training dataset?"
@@ -47,3 +49,4 @@ quiz:
     - content: "n_epochs"
       isCorrect: true
       explanation: "Correct. When you set the number of epochs, you set the number of full cycles to run through the dataset."
+

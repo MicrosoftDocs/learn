@@ -2,6 +2,8 @@
 uid: learn.azure.azure-vmware-solution.exercise-create-firewall
 title: Exercise - create and configure Azure Firewall
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - create and configure Azure Firewall
   description: This content is part of the "Secure outbound internet connectivity for Azure VMware Solution" module.
   ms.date: 03/23/2023
@@ -42,3 +44,4 @@ quiz:
         - content: "Ultra."
           isCorrect: false
           explanation: "Incorrect. Azure Firewall Premium SKU provides IDPS capabilities."
+

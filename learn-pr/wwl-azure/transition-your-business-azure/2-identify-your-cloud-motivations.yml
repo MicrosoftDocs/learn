@@ -2,6 +2,8 @@
 uid: learn.wwl.transition-your-business-azure.identify-your-cloud-motivations
 title: Identify your cloud motivations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify your cloud motivations
   description: "Identify your cloud motivations"
   ms.date: 09/25/2024

@@ -4,8 +4,8 @@ title: Use data pipelines to load a warehouse
 metadata:
   title: Use data pipelines to load a warehouse
   description: "Learn how data pipelines work in Microsoft Fabric and how it can be used for loading purposes."
-  ms.date: 12/01/2023
-  author: wwlpublish
+  ms.date: 11/01/2024
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   ms.custom:

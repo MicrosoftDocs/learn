@@ -2,11 +2,13 @@
 uid: learn.wwl.design-solutions-security-operations.summary
 title: Summary - Design solutions for security operations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary - Design solutions for security operations
   description: "Summary of the module on the topic: design solutions for security operations."
   ms.date: 09/26/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 3
 content: |

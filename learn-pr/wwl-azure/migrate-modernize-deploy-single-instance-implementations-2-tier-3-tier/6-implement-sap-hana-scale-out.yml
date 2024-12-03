@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.implement-sap-hana-scale-out
 title: Implement SAP HANA scale-out
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement SAP HANA scale-out
   description: "Implement SAP HANA scale-out"
   ms.date: 01/09/2024

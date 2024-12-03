@@ -2,6 +2,8 @@
 uid: learn.build-dotnet-app-azure-cosmos-db-nosql.exercise-linq
 title: Exercise - Enumerate items using language-integrated query (LINQ)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Enumerate items using language-integrated query (LINQ)
   ms.custom:
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/7-exercise-linq.md)]
+

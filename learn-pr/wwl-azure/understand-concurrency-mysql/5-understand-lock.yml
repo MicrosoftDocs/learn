@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-concurrency-mysql.understand-lock
 title: Understand locking
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand locking
   description: "Understand locking"
   ms.date: 11/09/2022

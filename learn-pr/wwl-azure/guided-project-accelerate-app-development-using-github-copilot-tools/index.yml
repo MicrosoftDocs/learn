@@ -3,10 +3,13 @@ uid: learn.wwl.guided-project-accelerate-app-development-using-github-copilot-to
 metadata:
   title: Guided project - Accelerate app development using GitHub Copilot tools
   description: "This module explores using GitHub Copilot to accelerate development work during an end-to-end project. GitHub Copilot is used to explain an unfamiliar codebase, generate project documentation, develop a new app feature, develop unit tests, and implement improvements."
-  ms.date: 08/19/2024
+  ms.date: 11/26/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-guided-project
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: github-copilot
   ms.devlang: csharp
   ai-usage: ai-assisted

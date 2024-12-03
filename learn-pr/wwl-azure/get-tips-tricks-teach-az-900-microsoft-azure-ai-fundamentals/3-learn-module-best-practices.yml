@@ -2,6 +2,8 @@
 uid: learn.wwl.get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals.learn-module-best-practices
 title: Learn module best practices
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Learn module best practices
   description: "Learn module best practices"
   ms.date: 01/16/2023

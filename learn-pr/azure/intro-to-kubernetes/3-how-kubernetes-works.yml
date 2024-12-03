@@ -3,9 +3,11 @@ uid: learn.intro-to-kubernetes.how-kubernetes-works
 title: How Kubernetes works
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Kubernetes works
   description: Learn about the Kubernetes cluster configuration and the services that make up a Kubernetes cluster.
-  ms.date: 10/25/2023
+  ms.date: 11/13/2024
   author: nickomang
   ms.author: nickoman
   ms.topic: unit
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 13
 content: |
   [!include[](includes/3-how-kubernetes-works.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.deliver-with-devops.explore-progressive-exposure-techniques
 title: 'Explore progressive exposure techniques'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Explore progressive exposure techniques'
   description: "In this unit, learn about progressive exposure techniques that enhance resiliency and mitigate operational challenges."
   ms.date: 02/06/2024

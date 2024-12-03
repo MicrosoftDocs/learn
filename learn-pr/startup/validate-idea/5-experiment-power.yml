@@ -2,12 +2,15 @@
 uid: learn.startups.validate-idea.experiment-power
 title: Use the power of experiments
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use the power of experiments
   description: Learn about experiments that test your startup assumptions. See examples of simple, inexpensive experiments and complex ones.
   ms.date: 03/19/2024
   author: ryanmesches
   ms.author: ryanmesches
   ms.topic: unit
+  ms.collection: learn-startups
 durationInMinutes: 10
 content: |
   [!include[](includes/5-experiment-power.md)]

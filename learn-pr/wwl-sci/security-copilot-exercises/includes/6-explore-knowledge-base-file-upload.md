@@ -3,6 +3,8 @@ In this exercise, you go through the process of integrating a knowledge base int
 > [!NOTE]
 > The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
+>
+> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you'll find that the user interface still reflects the original name.
 
 ### Exercise
 
@@ -28,7 +30,7 @@ For this exercise, you'll be using a sample file, 'Woodgrove Corporate Data Hand
 
 In this task, you start by attempting a file upload but realize that there's no way to actually upload a file. This is an indication that the file upload option isn't configured. As a user with the Copilot owner role, you enable file uploads and then test using a file as a knowledge base for Copilot.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/89f9d04d-283c-4788-8214-22e4d5b4b171?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/89f9d04d-283c-4788-8214-22e4d5b4b171?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. To access file uploads, select the **sources icon** ![sources icon](../media/sources-icon.png) from the prompt bar.
 
@@ -39,7 +41,7 @@ In this task, you start by attempting a file upload but realize that there's no 
     1. Select **Owner settings**.
     1. Scroll-down to **Files**. Select the drop-down and set it to **Contributors and owners can upload files**.
 
-1. Return to the landing page. Select **Microsoft Copilot for Security** next to the home menu (hamburger) icon.
+1. Return to the landing page. Select **Microsoft Security Copilot** next to the home menu (hamburger) icon.
 
 #### Task: Upload a file and run test prompts
 

@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-modularize-tasks-templates.explore-variables-release-pipelines
 title: Explore variables in release pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore variables in release pipelines
   description: "Explore variables in release pipelines"
   ms.date: 05/21/2024

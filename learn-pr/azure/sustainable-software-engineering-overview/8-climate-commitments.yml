@@ -2,9 +2,11 @@
 uid: learn.azure.sustainable-software-engineering-overview.climate-commitments
 title: "Principle: Climate commitments"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Principle: Climate commitments"
   description: This principle of sustainable software engineering is about identifying the carbon reduction methodologies, along with defining the terms used.
-  ms.date: 09/29/2023
+  ms.date: 11/23/2024
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/8-climate-commitments.md)]
+

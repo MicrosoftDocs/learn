@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.train-custom-vision-ai.8-knowledge-check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   author: softchris
@@ -58,3 +60,4 @@ quiz:
     - content: "East US 2"
       isCorrect: false
       explanation: "Incorrect. You could choose East US 2, but you don't have to."
+

@@ -1,9 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.control-network-traffic-flow-with-routes.6-exercise-route-traffic-through-nva
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Route traffic through the NVA
   description: Route traffic through the NVA
-  ms.date: 10/10/2024
+  ms.date: 12/02/2024 
   author: mbender-ms
   ms.author: mbender
   ms.topic: unit
@@ -14,3 +16,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-route-traffic-through-nva.md)]
+

@@ -19,7 +19,7 @@ Consider a generative AI application designed for customer service chatbots. An 
 
 ## Data requirements
 
-The built-in evaluators used within Azure AI Studio and the Azure AI Evaluation SDK require specific data in .jsonl format:
+The built-in evaluators used within Azure AI Foundry and the Azure AI Evaluation SDK require specific data in .jsonl format:
 
 **Context** – The context is the source that the response is generated with respect to (that is, grounding documents).
 

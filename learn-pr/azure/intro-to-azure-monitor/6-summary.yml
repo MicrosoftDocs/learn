@@ -2,13 +2,16 @@
 uid: learn.azure.intro-to-azure-monitor.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary of Azure Monitor introduction.
-  ms.date: 08/31/2023
+  ms.date: 11/13/2024
   author: guywi-ms
   ms.author: guywild
   ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

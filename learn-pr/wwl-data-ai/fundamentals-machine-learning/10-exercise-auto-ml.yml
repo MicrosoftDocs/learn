@@ -2,6 +2,8 @@
 uid: learn.wwl.fundamentals-machine-learning.exercise-auto-ml
 title: Exercise - Explore Automated Machine Learning in Azure Machine Learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Explore Automated Machine Learning in Azure Machine Learning
   description: Exercise - Use Azure Machine Learning to train a model
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 30
 content: |
   [!include[](includes/10-exercise-auto-ml.md)]
+

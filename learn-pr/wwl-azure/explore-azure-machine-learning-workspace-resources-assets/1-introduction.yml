@@ -2,14 +2,17 @@
 uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 10/09/2023
+  ms.date: 11/19/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+
