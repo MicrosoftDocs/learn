@@ -34,7 +34,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.introduction
-- learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.exercise-create-azure-linked-service
 - learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.exercise-trigger-auto-ml-experiment-using-data-from-spark-table
 - learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.understand-how-to-score-models-with-predict
 - learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.exercise-enrich-data-using-trained-models-with-predict-function
