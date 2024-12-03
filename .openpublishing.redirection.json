@@ -35113,6 +35113,11 @@
       "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/10-knowledge-check.md",
       "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/11-summary.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
     }
   ]
 }
