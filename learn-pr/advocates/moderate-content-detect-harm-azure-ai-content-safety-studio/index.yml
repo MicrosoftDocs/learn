@@ -1,19 +1,18 @@
 ### YamlMime:Module
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio
 metadata:
-  title: Moderate content and detect harm in Azure AI Studio by using Content Safety
-  description: Learn how to choose and build a content moderation system in Azure AI Studio.
+  title: Moderate content and detect harm in Azure AI Foundry by using Content Safety
+  description: Learn how to choose and build a content moderation system in Azure AI Foundry.
   author: aprilspeight
   ms.author: apspeigh
   ms.date: 08/29/2024
   ms.service: artificial-intelligence
   ms.topic: module-guided-project
   ms.collection:
-    - TBD
     - ce-advocates-ai-copilot
-title: Moderate content and detect harm in Azure AI Studio by using Content Safety
+title: Moderate content and detect harm in Azure AI Foundry by using Content Safety
 summary: | 
-  Learn how to choose and build a content moderation system in Azure AI Studio.
+  Learn how to choose and build a content moderation system in Azure AI Foundry.
   
   This module is a _guided project_. You complete an end-to-end project by following step-by-step instructions.
 abstract: |

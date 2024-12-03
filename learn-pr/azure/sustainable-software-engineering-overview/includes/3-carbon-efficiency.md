@@ -22,7 +22,7 @@ To achieve this goal, we need to start immediately reducing our carbon emissions
 
 ## Don't waste carbon
 
-We always emit carbon through our activities; our goal is that for each gram of carbon we emit into the atmosphere, we make sure we extract the most value from it as possible.
+We always emit carbon through our activities. Our goal is that for each gram of carbon we emit into the atmosphere, we make sure we extract the most value from it as possible.
 
 Being *carbon-efficient* means to minimize the amount of carbon emitted per unit of work.
 

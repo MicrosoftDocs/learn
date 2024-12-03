@@ -1,4 +1,4 @@
-When your company chooses Real-Time Intelligence in Microsoft Fabric, the first step is seamlessly ingesting data. Event streams are a Microsoft Fabric feature that lets you handle real-time events without coding. You can set up event sources, destinations, and processors in the event stream. Event processing is another option within eventstream for collecting and aggregating, filtering, grouping, transforming, expanding, and joining other events from Microsoft Fabric event streams for extra insights into the in-flight data.
+When your company chooses Real-Time Intelligence in Microsoft Fabric, the first step is seamlessly ingesting data. Eventstreams are a Microsoft Fabric feature that lets you handle real-time events without coding. You can set up event sources, destinations, and processors in the event stream. Event processing is another option within eventstream for collecting and aggregating, filtering, grouping, transforming, expanding, and joining other events from Microsoft Fabric event streams for extra insights into the in-flight data.
 
 ![Real-Time Intelligence core services](../media/real-time-intelligence-core.png)
 

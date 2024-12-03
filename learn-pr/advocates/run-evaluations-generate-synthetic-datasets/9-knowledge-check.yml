@@ -48,7 +48,7 @@ quiz:
     choices:
     - content: result.studio_url.
       isCorrect: false
-      explanation: "Incorrect: The result.studio_url property can be used for a link to view your logged evaluation results in Azure AI Studio."
+      explanation: "Incorrect: The result.studio_url property can be used for a link to view your logged evaluation results in Azure AI Foundry."
     - content: evaluator_config.
       isCorrect: false
       explanation: "Incorrect: evaluator_config contains the evaluator names as keys and values that are dictionaries containing the column mappings."

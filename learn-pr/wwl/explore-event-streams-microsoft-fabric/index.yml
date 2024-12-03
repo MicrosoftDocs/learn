@@ -16,12 +16,8 @@ title: Use real time eventstreams in Microsoft Fabric
 summary: This module is an introduction to the Microsoft Fabric Eventstream within Real-Time Intelligence (RTI).
 abstract: |
   After completing this module, you'll be able to:
-
-  -   Establish source and destinations in Eventstream.
-
-  -   View the data in-flight in eventstream items.
-
-  -   Capture, transform, and route data using Eventstream.
+  - Establish source and destinations in Eventstream.
+  - Capture, transform, and route data using Eventstream.
 prerequisites: Introduction to Microsoft Fabric and Introduction to Real-Time Intelligence (RTI)
 iconUrl: /training/achievements/explore-event-streams-in-microsoft-fabric.svg
 levels:

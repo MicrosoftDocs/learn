@@ -1,4 +1,4 @@
-holistic approach when interpreting results. Evaluating generative AI applications requires a thorough understanding of various metrics to measure performance and reliability. Azure provides tools for both manual and automated evaluations, including custom evaluators through its AI Studio and Azure AI Evaluation SDK.
+holistic approach when interpreting results. Evaluating generative AI applications requires a thorough understanding of various metrics to measure performance and reliability. Azure provides tools for both manual and automated evaluations, including custom evaluators through its AI Foundry and Azure AI Evaluation SDK.
 
 The quality and nature of data are crucial in ensuring effective and reliable AI evaluation processes. High-quality, diverse, and representative datasets allow evaluation metrics to accurately reflect AI model performance across various scenarios, while poor or biased data can mislead outcomes.
 
@@ -11,7 +11,7 @@ Once you have your evaluation results, you’re encouraged to either create or r
 - [Evaluation of generative AI applications](/azure/ai-studio/concepts/evaluation-approach-gen-ai)
 - [Evaluation and monitoring metrics for generative AI](/azure/ai-studio/concepts/evaluation-metrics-built-in?tabs=warning)
 - [Content risk mitigation strategies with Azure AI](/azure/ai-studio/concepts/evaluation-improvement-strategies)
-- [Manually evaluate prompts in Azure AI Studio playground](/azure/ai-studio/how-to/evaluate-generative-ai-app)
+- [Manually evaluate prompts in Azure AI Foundry playground](/azure/ai-studio/how-to/evaluate-generative-ai-app)
 - [Evaluate with the Azure AI Evaluation SDK](/azure/ai-studio/how-to/develop/evaluate-sdk)
-- [Evaluate with Azure AI Studio](/azure/ai-studio/how-to/evaluate-generative-ai-app)
-- [View evaluation results in Azure AI Studio](/azure/ai-studio/how-to/evaluate-results)
+- [Evaluate with Azure AI Foundry](/azure/ai-studio/how-to/evaluate-generative-ai-app)
+- [View evaluation results in Azure AI Foundry](/azure/ai-studio/how-to/evaluate-results)
