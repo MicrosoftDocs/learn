@@ -35,7 +35,6 @@ subjects:
 units:
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.introduction
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.understand-data-sources
-- learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.exercise-improve-performance-with-materialized-views-result-set-caching
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.visualize-data-with-serverless-sql-pools
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.knowledge-check
 - learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.summary
