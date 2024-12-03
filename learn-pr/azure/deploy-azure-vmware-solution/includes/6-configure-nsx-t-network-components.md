@@ -1,35 +1,35 @@
-Azure VMware Solution deploys with NSX-T Manager as the software-defined network layer. The networking environment has two gateways:
+Azure VMware Solution deploys with NSX Manager as the software-defined network layer. The networking environment has two gateways:
 
-- NSX-T Tier-0 gateway configured in active-active mode
-- NSX-T Tier-1 gateway configured in active-standby mode
+- NSX Tier-0 Gateway configured in active-active mode
+- NSX Tier-1 Gateway configured in active-standby mode
 
 Both gateways allow connections between logical switch segments. These gateways also provide East-West and North-South connectivity.
 
-## Set up NSX-T Manager components
+## Set up NSX Manager components
 
-After Azure VMware Solution is deployed, the NSX-T components are configured under **Workload Networking** in the Azure portal. The portal provides a simplified view of the management pane for NSX-T operations. If you're unfamiliar with NSX-T Manager, use the portal to configure Azure VMware Solution networking. If you're familiar with NSX-T Manager, you can use the console view within vSphere to configure the advanced network settings and features.
+After Azure VMware Solution is deployed, the NSX components are configured under **Workload Networking** in the Azure portal. The portal provides a simplified view of NSX operations for VMware administrator and is designed for users who are not familiar with NSX Manager. If you're familiar with NSX Manager, you can use it to configure the advanced network settings and features.
 
-You can configure four options for NSX-T Manager in Azure VMware Solution by using the Azure portal:
+You have four options to configure NSX components using the Azure portal:
 
-- **Segments**: Create network segments that are displayed in NSX-T Manager and vCenter.
-- **DHCP**: If you'll use DHCP, create a DHCP server or DHCP relay.
+- **Segments**: Create network segments that are displayed in NSX Manager and vCenter Server.
+- **DHCP**: If you use DHCP, create a DHCP server or DHCP relay.
 - **Port mirroring**: Set up port mirroring to help troubleshoot network issues.
 - **DNS**: Create a DNS forwarder to send DNS requests to a DNS server for resolution.
 
-:::image type="content" source="../media/6-nsxt-workload-networking.png" alt-text="Screenshot of the Azure portal, showing where to configure N S X-T options for segments, D H C P, port mirroring, and D N S.":::
+:::image type="content" source="../media/6-networking-configuration-portal.png" alt-text="Screenshot of the Azure portal, showing where to configure NSX Manager options for segments, D H C P, port mirroring, and D N S.":::
 
-## Create an NSX-T Manager network segment in the Azure portal
+## Create an NSX network segment in the Azure portal
 
-VMs either created in or migrated to Azure VMware Solution should be attached to an NSX-T networking segment. You can create an NSX-T segment from the Azure VMware Solution console within the Azure portal. These NSX-T networking segments are connected to the default Tier-1 gateway. Workloads on these segments will have East-West and North-South connectivity. After the segment is created, it displays in NSX-T Manager and vCenter.
+Virtual machines (VMs) either created in or migrated to Azure VMware Solution should be attached to an NSX networking segment. You can create an NSX segment from the Azure VMware Solution console within the Azure portal. These NSX networking segments are connected to the default Tier-1 gateway. Workloads on these segments will have East-West and North-South connectivity. After the segment is created, it displays in NSX Manager and vCenter Server.
 
 1. In the Azure portal, select your Azure VMware Solution private cloud.
 1. Under **Workload Networking**, select **Segments** > **Add**:
 
-    :::image type="content" source="../media/6-add-new-nsxt-segment.png" alt-text="Screenshot of the Azure portal showing how to add an N S X-T Manager network segment.":::
+    :::image type="content" source="../media/6-networking-add-new-segment.png" alt-text="Screenshot of the Azure portal showing how to add an N S X Manager network segment.":::
 
 1. Provide details for the new logical networking segment:
 
-    :::image type="content" source="../media/6-create-new-segment-details.png" alt-text="Screenshot of the Azure portal showing where to provide details for the network segment.":::
+    :::image type="content" source="../media/6-networking-new-segment-details.png" alt-text="Screenshot of the Azure portal showing where to provide details for the network segment.":::
 
     | Field | Value |
     | ----- | ----- |
