@@ -96,7 +96,7 @@ Next, create a port mirroring profile by defining the traffic direction for sour
 1. Make sure both the source and destination VM groups have been created.
 1. Select **Port mirroring** > **Add**, and then provide the following values:
 
-    :::image type="content" source="../media/6-add-port-mirroring-profile.png" alt-text="Screenshot of the Azure portal showing how to add the port-mirroring profile.":::
+    :::image type="content" source="../media/6-networking-add-port-mirroring-profile.png" alt-text="Screenshot of the Azure portal showing how to add the port-mirroring profile.":::
 
     | Field   | Value |
     | :---------- | :------------------ |
