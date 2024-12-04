@@ -14,7 +14,7 @@ In a cross-functional team, you can deliver features as independently as possibl
 
 ## Batch jobs
 
-Some applications are intended to run briefly. They execute a particular workload, then exit rather than wait for requests or user input. Batch jobs are a solution for this use case. Even though some batches can last for hours, sometimes jobs need to run once or at regular, scheduled intervals.
+Some applications are intended to run briefly. They execute a particular workload and then exit rather than wait for requests or user input. Batch jobs are a solution for this use case. Even though some batches can last for hours, sometimes jobs need to run once or at regular, scheduled intervals.
 
 ## Serverless architectures
 
