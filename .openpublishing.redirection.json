@@ -35238,6 +35238,11 @@
       "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/10-summary.md",
       "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/index.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
     }
   ]
 }
