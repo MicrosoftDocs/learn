@@ -104,7 +104,7 @@ Next, create a port mirroring profile by defining the traffic direction for sour
     | **Direction** | Select **Ingress**, **Egress**, or **Bi-directional**. |
     | **Source** | Select the source VM group. |
     | **Destination** | Select the destination VM group. |
-    | **Description** | Provide a description for the port-mirroring configuration. |
+
 
 1. Select **OK** to complete the profile. The profile and VM groups will now be visible in the Azure VMware Solution console.
 
@@ -112,36 +112,18 @@ Next, create a port mirroring profile by defining the traffic direction for sour
 
 Now you'll configure a DNS forwarder. Specific DNS requests will be forwarded to a designated DNS server for resolution. A DNS forwarder is associated with a default DNS zone and up to three FQDN zones.
 
-You set up the DNS forwarder in the Azure VMware Solution console. You'll configure a default DNS zone and FQDN zone to send DNS queries to the upstream server. When a DNS query is received, the DNS forwarder compares the domain name in the query with the domain names in the FQDN DNS zone. If a match is found, the query is forwarded to the DNS servers specified in the FQDN DNS zone. If no match is found, the query is forwarded to the DNS servers specified in the default DNS zone. A default zone must be defined before you configure an FQDN zone.
+A DNS service and default DNS zone are provided as part of the Azure VMware Solution private cloud deployment. The default zone forwards the Name resolution request to the default Cloudflare public DNS server. This DNS server helps with public name resolution.
 
-Follow these steps:
+If you require name resolution from a privately hosted DNS server, consider adding conditional forwarding rules for the desired domain name. By doing so, you can forward DNS requests specifically for that domain zone to a selected set of private DNS servers. To achieve this requirement, you need to define an FQDN zone.
 
-1. In your Azure VMware Solution private cloud, under **Workload Networking**, select **DNS** > **DNS zones** > **Add**.
 
-    :::image type="content" source="../media/6-nsxt-workload-networking-dns-zones.png" alt-text="Screenshot of the Azure portal showing where to configure D N S zones under Workload Networking.":::
 
-1. Select either **Default DNS zone** or **FQDN zone** and provide:
+<<<You'll configure a default DNS zone and FQDN zone to send DNS queries to the upstream server. When a DNS query is received, the DNS forwarder compares the domain name in the query with the domain names in the FQDN DNS zone. If a match is found, the query is forwarded to the DNS servers specified in the FQDN DNS zone. If no match is found, the query is forwarded to the DNS servers specified in the default DNS zone. A default zone must be defined before you configure an FQDN zone.
 
-    - **DNS zone**: A name and up to three DNS server IP addresses in `8.8.8.8` format.
-    - **FQDN zone**: A name, the FQDN domain, and up to three DNS server IP addresses in `8.8.8.8` format.
 
-1. To configure the DNS service, select the **DNS service** tab, select **Add**, and then provide this information:
+## Verify on-premises vSphere network connectivity to the Azure VMware Solution private cloud
 
-    :::image type="content" source="../media/6-nsxt-workload-networking-configure-dns-service-2.png" alt-text="Screenshot of the Azure portal showing the fields for configuring the D N S service.":::
-
-    | Field   | Value |
-    | :---------- | :------------------ |
-    | **Name** |  Enter a name for the DNS service. |
-    | **DNS service IP** | Enter the IP address for the DNS service. |
-    | **Default DNS zone** | Select the default DNS zone that you created under the **DNS zones** tab. |
-    | **FDQN zones** | Select the FQDN zones that you added under the **DNS zones** tab. |
-    | **Log level** | Select the level you want. |
-
-1. Select **OK**. The DNS service is added successfully.
-
-## Verify on-premises network connectivity to the Azure VMware Solution private cloud
-
-You should see where the Azure ExpressRoute circuit connects to the NSX-T network segments and the Azure VMware Solution management segments in the edge router. Each environment is different. You might need to allow routes to propagate back to the on-premises network.
+You should see where the Azure ExpressRoute circuit connects to the NSX network segments and the Azure VMware Solution management segments in the edge router. Each environment is different. You might need to allow routes to propagate back to the on-premises network.
 
 Some environments have firewalls that protect ExpressRoute circuits. If there are no firewalls, try to ping the Azure VMware Solution vCenter server or a VM on the NSX-T segment from your on-premises environment. Also, from the VM on the NSX-T segment, resources should be able to reach the on-premises environment.
 
