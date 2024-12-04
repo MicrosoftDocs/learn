@@ -35358,6 +35358,11 @@
       "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/2-search-browse-assets.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/7-summary.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
     }
   ]
 }
