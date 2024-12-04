@@ -35408,6 +35408,31 @@
       "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/4-view-lineage.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azure-cli/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/blob-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azure-cli/2-move-blobs-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/blob-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azure-cli/3-exercise-move-blobs-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/blob-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azure-cli/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/blob-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azure-cli/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/blob-cli",
+      "redirect_document_id": false
     }
   ]
 }
