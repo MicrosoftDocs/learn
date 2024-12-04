@@ -40,7 +40,6 @@ subjects:
 - data-analytics
 - data-visualization
 units:
-- learn.wwl.get-started-data-activator-microsoft-fabric.introduction
 - learn.wwl.get-started-data-activator-microsoft-fabric.understand-data-activator
 - learn.wwl.get-started-data-activator-microsoft-fabric.understand-triggers-conditions-actions-data-activator
 - learn.wwl.get-started-data-activator-microsoft-fabric.knowledge-check
