@@ -19,9 +19,8 @@ But some teams will prefer to have a full control over their infrastructure, mos
 
 ## Choose a PaaS solution on Azure
 
-For running Java workloads on a platform as a service solution, Azure provides four possible options:
+For running Java workloads on a platform as a service solution, Azure provides two possible options:
 
-- **Azure Container Apps**: Azure container apps is the best option for all types of Java on Azure, including monolithic app and microservices.
 - **Azure Functions**: Best for simple event-driven workloads that can scale extremely well.
 - **Azure App Service**: Best for rapid prototyping monolthic java web applications.
 
@@ -29,6 +28,7 @@ For running Java workloads on a platform as a service solution, Azure provides f
 
 For full control over your deployments, Azure provides the following three main options:
 
+- **Azure Container Apps**: Azure container apps has built-in Java supports for all types of Java on Azure, including monolithic app and microservices.
 - **Azure Kubernetes Service (AKS)**: Best for more complex container-based Java applications. You also benefit from the rich AKS ecosystem.
 - **Azure virtual machines**: Best for running any kind of workload, or if you want to "lift and shift" from an existing on-premises infrastructure without rearchitecting your applications.
 
