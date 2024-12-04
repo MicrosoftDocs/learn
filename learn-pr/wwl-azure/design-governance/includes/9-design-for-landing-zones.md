@@ -6,7 +6,7 @@ To use an analogy, shared city utilities like water, gas, and electricity are av
 
 As you plan the governance strategy for Tailwind Traders, consider these characteristics of Azure landing zones:
 
-- Landing zones are defined by management groups and subscriptions that are designed to scale according to business needs and priorities. 
+- Landing zones are management groups and subscriptions that are designed to scale according to business needs and priorities. 
 
    The following diagram shows landing zones for SAP, Corporate, and Online applications. 
 

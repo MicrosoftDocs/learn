@@ -16,17 +16,17 @@ As you plan the governance strategy for Tailwind Traders, consider these charact
 
 - Use Azure Policy to prevent noncompliant resources from being created, and automatically remediate noncompliant resources.
 
-- Azure Policy integrates with Azure DevOps by applying predeployment and post-deployment policies. 
+- Azure Policy integrates with Azure DevOps Pipelines by applying predeployment and post-deployment policies. 
 
 ### Things to consider when using Azure Policy
 
-You're ready to consider how to apply Azure Policy settings to your Tailwind Traders applications. You'll probably apply some policies at the Production management group level. Other policies can be assigned at the application level. 
+You're ready to consider how to apply Azure Policy settings to your Tailwind Traders applications. You apply some policies at the Production management group level. Other policies can be assigned at the application level. 
 
 :::image type="content" source="../media/azure-policy-choices.png" alt-text="Diagram that shows different Azure policies applied at the Production and Application resource group levels." border="false":::
 
 - **Consider using the Azure Policy compliance dashboard**. Use the Azure Policy compliance dashboard to analyze the overall state of the environment. The dashboard offers an aggregated view where you can drill down to see Tailwind Traders policies for each resource and level. The tool provides bulk remediation for existing resources and automatic remediation for new resources, to resolve issues rapidly and effectively.
 
-- **Consider when Azure Policy evaluates resources**. Plan for how Azure Policy evaluates your Tailwind Traders resources at specific times. Understand when and how evaluations are triggered. There might be a delay in identifying non-compliant resources. The following events or times trigger an evaluation:
+- **Consider when Azure Policy evaluates resources**. Plan for how Azure Policy evaluates your Tailwind Traders resources at specific times. Understand when and how evaluations are triggered. There might be a delay in identifying noncompliant resources. The following events or times trigger an evaluation:
 
 	- A resource is created, deleted, or updated in scope with a policy assignment.
 

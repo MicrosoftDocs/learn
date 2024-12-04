@@ -2,7 +2,7 @@ Azure Subscriptions are logical containers that serve as units of management and
 
 ### Things to know about subscriptions
 
-To use Azure, you must have an Azure subscription. A subscription provides you with a logical container to create and pay for Azure products and services. There are [several types of subscriptions](https://azure.microsoft.com/support/legal/offer-details/), such as Enterprise Agreement and Pay-as-You-Go. 
+To use Azure, you must have an Azure subscription. A subscription provides you with a logical container to create and pay for Azure products and services. There are [several types of subscriptions](https://azure.microsoft.com/support/legal/offer-details/), such as Enterprise Agreement and Pay-As-You-Go. 
 
 :::image type="content" source="../media/azure-active-directory-subscriptions.png" alt-text="Diagram of Microsoft Entra ID showing the subscription types - dev, test, and production." border="false":::
 
