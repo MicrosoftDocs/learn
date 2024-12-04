@@ -4267,3 +4267,8 @@ achievements:
   title: Govern data across an enterprise
   summary: Use Microsoft Purview to register and scan data, catalog data artifacts, find data for reporting, and manage Power BI artifacts to improve data governance in your organization.
   iconUrl: /training/achievements/govern-data-across-an-enterprise.svg
+- uid: learn.wwl.manage-power-bi-artifacts-by-using-microsoft-purview.badge
+  type: badge
+  title: Manage Power BI assets by using Microsoft Purview
+  summary: Improve data governance and asset discovery using Power BI and Microsoft Purview integration.
+  iconUrl: /training/achievements/4-manage-power-bi-artifacts-by-using-azure-purview.svg
