@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-generative-ai.copilots
-title: Understand agents
+title: Copilot and AI agents
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Understand agents
-  description: Agents are AI-powered assistants based on large language models. See examples of these generative AI applications that work alongside you to dramatically increase productivity and extend your capabilities.
+  title: Copilot and AI agents
+  description: Generative AI assistants are based on large language models. See examples of these generative AI applications that work alongside you to dramatically increase productivity and extend your capabilities.
   author: sherzyang
   ms.author: sheryang
   ms.date: 11/26/2024
