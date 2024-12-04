@@ -35373,6 +35373,11 @@
       "source_path": "learn-pr/paths/govern-data-across-enterprise/index.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/index.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
     }
   ]
 }
