@@ -16,7 +16,7 @@ As you plan the governance strategy for Tailwind Traders, consider these charact
 
 - Use Azure Policy to prevent noncompliant resources from being created, and automatically remediate noncompliant resources.
 
-- Azure Policy integrates with Azure DevOps Pipelines by applying predeployment and post-deployment policies. 
+- Azure Policy integrates with Azure Pipelines by applying predeployment and post-deployment policies. 
 
 ### Things to consider when using Azure Policy
 
