@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Deployment opportunities on Azure
   description: We introduce the various services that Azure offers for Java applications
-  ms.date: 05/01/2023
+  ms.date: 11/22/2024
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: unit

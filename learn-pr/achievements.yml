@@ -4242,3 +4242,33 @@ achievements:
   title: Integrate machine learning within Azure Synapse Analytics
   summary: In this module, you learn how you can build machine learning modules from within Azure Synapse Analytics.
   iconUrl: /training/achievements/azure-synapse-analytics-integrate-machine-learning.svg
+- uid: learn.wwl.explore-generative-ai-copilot-bing.badge
+  type: badge
+  title: Design a dream destination using Microsoft Copilot
+  summary: Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story. Interact with Microsoft Copilot to learn about the capabilities of generative AI.&nbsp;
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.get-started-data-activator-microsoft-fabric.badge
+  type: badge
+  title: Get started with Data Activator in Microsoft Fabric
+  summary: Use Data Activator in Microsoft Fabric to easily monitor and take action on your data.
+  iconUrl: /training/achievements/get-started-data-activator-microsoft-fabric.svg
+- uid: learn.wwl.catalog-data-artifacts-by-using-microsoft-purview.badge
+  type: badge
+  title: Catalog data artifacts by using Microsoft Purview
+  summary: Register, scan, catalog, and view data assets and their relevant details in Microsoft Purview.
+  iconUrl: /training/achievements/3-catalog-data-artifacts-azure-by-using-azure-purview.svg
+- uid: learn.wwl.discover-trusted-data-using-azure-purview.badge
+  type: badge
+  title: Discover trusted data using Microsoft Purview
+  summary: Use Microsoft Purview Studio to discover trusted organizational assets for reporting.
+  iconUrl: /training/achievements/2-discover-data-artifacts-azure-by-using-azure-purview.svg
+- uid: learn.wwl.govern-data-across-enterprise.trophy
+  type: trophy
+  title: Govern data across an enterprise
+  summary: Use Microsoft Purview to register and scan data, catalog data artifacts, find data for reporting, and manage Power BI artifacts to improve data governance in your organization.
+  iconUrl: /training/achievements/govern-data-across-an-enterprise.svg
+- uid: learn.wwl.manage-power-bi-artifacts-by-using-microsoft-purview.badge
+  type: badge
+  title: Manage Power BI assets by using Microsoft Purview
+  summary: Improve data governance and asset discovery using Power BI and Microsoft Purview integration.
+  iconUrl: /training/achievements/4-manage-power-bi-artifacts-by-using-azure-purview.svg
