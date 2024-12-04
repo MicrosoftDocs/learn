@@ -41,7 +41,7 @@ quiz:
         - content: "Azure Kubernetes Service"
           isCorrect: false
           explanation: "Incorrect. Azure Kubernetes Service is a managed Kubernetes offer"
-    - content: "With a platform such as Azure App Service as a service offer, who manages your Java Virtual Machine (JVM)?"
+    - content: "With a platform-as-a-service offer such as Azure App Service, who manages your Java Virtual Machine (JVM)?"
       choices:
         - content: "You're responsible for updating and patching your JVM."
           isCorrect: false

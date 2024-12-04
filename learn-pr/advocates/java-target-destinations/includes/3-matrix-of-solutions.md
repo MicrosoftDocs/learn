@@ -4,7 +4,7 @@ We've described the most typical deployment types for Java applications. Let's n
 
 Azure Container Apps enables you to focus on building containerized Java applications, whether monolithic or microservices, without the need to manage infrastructure. You can deploy JARs, WARs, or even source code, and the platform automatically optimizes memory and scales your applications based on demand. It also integrates advanced diagnostic features for JVM troubleshooting, ensuring efficient performance for your Java apps.
 
-Additionally, Azure Container Apps supports managed Spring components like Spring Cloud Service Registry and Spring Cloud Config Server, providing seamless Spring integration. As part of the Azure ecosystem, it is designed to handle enterprise workloads with cost-effective scaling and sophisticated memory management, making it ideal for both traditional and modern application architectures.
+Also, Azure Container Apps supports managed Spring components like Spring Cloud Service Registry and Spring Cloud Config Server, providing seamless Spring integration. As part of the Azure ecosystem, it's designed to handle enterprise workloads with cost-effective scaling and sophisticated memory management, making it ideal for both traditional and modern application architectures.
 
 ## Azure App Service
 
