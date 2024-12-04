@@ -23,7 +23,7 @@ You have four options to configure NSX components using the Azure portal:
 Virtual machines (VMs) either created in or migrated to Azure VMware Solution should be attached to an NSX networking segment. You can create an NSX segment from the Azure VMware Solution console within the Azure portal. These NSX networking segments are connected to the default Tier-1 gateway. Workloads on these segments will have East-West and North-South connectivity. After the segment is created, it displays in NSX Manager and vCenter Server.
 
 1. In the Azure portal, select your Azure VMware Solution private cloud.
-1. Under **Workload Networking**, select **Segments** > **Add**:
+1. Under **Workload Networking**, select **Segments** > **+Add**:
 
     :::image type="content" source="../media/6-networking-add-new-segment.png" alt-text="Screenshot of the Azure portal showing how to add an N S X Manager network segment.":::
 
@@ -64,33 +64,34 @@ From a Jumpbox VM, connect to NSX Manager. Get the credentials under **Manage** 
 | **Subnets** | The IP address range of the subnet, in CIDR format. The IP address needs to be on a non-overlapping RFC1918 address block, which ensures connection to the VMs on the new segment. |
 
 
-
 ## Create a DHCP server or DHCP relay in the Azure portal
 
-A DHCP server or relay can be created directly from the Azure VMware Solution console within the Azure portal. The DHCP server or relay will connect to the Tier-1 gateway, which is created when Azure VMware Solution is deployed. All segments where DHCP ranges are provided will be part of the DHCP components of NSX-T. After a DHCP server or DHCP relay has been created, you must define a subnet or range on an NSX-T segment to consume the DHCP services:
+Applications and workloads running in a private cloud environment require name resolution and DHCP services for lookup and IP address assignments. It's possible to use the DHCP service built-in to NSX or use a local DHCP server in the private cloud.
 
-1. In the Azure VMware Solution private cloud, under **Workload Networking**, select **DHCP** > **Add**.
+A DHCP server or relay can be configured directly from the Azure VMware Solution console within the Azure portal. The DHCP server or relay will connect to the Tier-1 gateway, which is created when Azure VMware Solution is deployed. All segments where DHCP ranges are provided will be part of the DHCP components of NSX. After a DHCP server or DHCP relay has been created, you must define a subnet or range on an NSX segment to consume the DHCP services:
+
+1. In the Azure VMware Solution private cloud, under **Workload Networking**, select **DHCP** > **+Add**.
 
 1. Select either **DHCP Server** or **DHCP Relay**.
 1. Provide a name for the server or relay and provide three IP addresses. For a DHCP relay, only one IP address is required.
 
-    :::image type="content" source="../media/6-add-dhcp-server-relay.png" alt-text="Screenshot of the Azure portal showing how to add either a D H C P server or a D H C P relay into the A V S private cloud.":::
+    :::image type="content" source="../media/6-networking-add-dhcp-server-relay.png" alt-text="Screenshot of the Azure portal showing how to add either a D H C P server or a D H C P relay into the Azure VMware Solution private cloud.":::
 
 1. Complete the DHCP configuration by providing DHCP ranges on the logical segments, like those configured previously, then select **OK**.
 
 ## Configure port mirroring in the portal
 
-Port mirroring can be configured to monitor network traffic. Port mirroring involves forwarding copies of each network packet from one network switch port to another. Port mirroring places a protocol analyzer on the port that receives all mirrored data. Port mirroring analyzes traffic from a source (a VM or a group of VMs), then sends the traffic to a destination.
+Port mirroring can be configured to monitor network traffic. Port mirroring involves forwarding copies of each network packet from one network switch port to another. Port mirroring places a protocol analyzer on the port that receives all mirrored data. Port mirroring analyzes traffic from a source, either a virtual machine (VM) or a group of VMs, then sends the traffic to a destination. Note that this should only be enabled for short-term troubleshooting.
 
 To set up port mirroring in the Azure VMware Solution console, you'll first create source and destination VMs or VM groups. The source group has either a single VM or multiple VMs where the network traffic is mirrored.
 
-1. In the Azure VMware Solution private cloud, under **Workload Networking**, select **Port mirroring** > **VM groups** > **Add**.
+1. In the Azure VMware Solution private cloud, under **Workload Networking**, select **Port mirroring** > **VM groups** > **+Add**.
 1. Name the source VM group, select the VMs, then select **OK**.
 1. Repeat the preceding step to create the destination VM group.
 
-    :::image type="content" source="../media/6-add-port-mirroring-vm-groups.png" alt-text="Screenshot of the Azure portal showing where to configure port mirroring related to destination VMs or VM groups.":::
+    :::image type="content" source="../media/6-networking-add-port-mirroring-vm-groups.png" alt-text="Screenshot of the Azure portal showing where to configure port mirroring related to destination VMs or VM groups.":::
 
-Next, create a port-mirroring profile by defining the traffic direction for source and destination VM groups.
+Next, create a port mirroring profile by defining the traffic direction for source and destination VM groups.
 
 1. Make sure both the source and destination VM groups have been created.
 1. Select **Port mirroring** > **Add**, and then provide the following values:
