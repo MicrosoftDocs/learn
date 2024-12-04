@@ -35368,6 +35368,11 @@
       "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/4-use-asset-power-bi.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/govern-data-across-enterprise/index.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
     }
   ]
 }
