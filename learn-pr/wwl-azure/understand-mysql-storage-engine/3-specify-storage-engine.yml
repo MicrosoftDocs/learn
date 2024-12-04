@@ -2,12 +2,14 @@
 uid: learn.wwl.understand-mysql-storage-engine.specify-storage-engine
 title: Specify a storage engine
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Specify a storage engine
   description: "Specify a storage engine"
   ms.date: 11/08/2022
   author: wwlpublish
   ms.author: caroline
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

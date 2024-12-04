@@ -8,13 +8,12 @@ When you install PowerShell, you can evaluate its features to see if it's a good
 
 After completing this module, you'll be able to:
 
-- Understand what PowerShell is and what you can use it for
-- Use commands to automate tasks
-
+- Understand what PowerShell is and what you can use it for.
+- Use PowerShell commands to automate tasks.
 
 ## Prerequisites
 
-- Basic familiarity with using a command-line shell like Command Prompt or Git Bash
-- Visual Studio Code installed
-- Ability to install Visual Studio Code extensions
-- Ability to install software on your computer, if you're not using a Windows operating system
+- Basic familiarity with using a command-line shell like Command Prompt or Git Bash.
+- Visual Studio Code installed.
+- Ability to install Visual Studio Code extensions.
+- Ability to install software on your computer, if you're not using a Windows operating system.

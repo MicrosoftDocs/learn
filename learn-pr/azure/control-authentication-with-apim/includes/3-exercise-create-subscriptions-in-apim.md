@@ -1,13 +1,15 @@
-You can use the Azure API Management (APIM) user interface in the Azure portal to create subscriptions and obtain subscription keys for use in client apps.
+You can use the Azure API Management user interface in the Azure portal to create subscriptions and obtain subscription keys for use in client apps.
 
 Suppose your weather company has decided to make its meteorological data available to clients that subscribe and pay for this service. The critical requirement is to only allow access to clients that are allocated a key. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Weather API that exposes an OpenAPI endpoint. You'll then secure the endpoint and allocate a client key.
 
-In this unit, you will:
+In this unit, you'll:
 
 - Publish a RESTful Weather API
 - Deploy an API Management gateway
 - Expose the Weather API through the gateway endpoint
 - Restrict access based on a subscription key
+
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Deploy the Weather Web API
 
@@ -20,6 +22,12 @@ To save time, let's start by running a script to host our API in Azure. The scri
 - Set account-level deployment credentials for our app
 - Configure Git locally
 - Deploy our Web API to our App Service instance
+
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+
+1. In the Azure taskbar, select the Cloud Shell icon to open Azure Cloud Shell.
+
+    :::image type="content" source="../media/3-cloud-shell-icon.png" alt-text="Screenshot of Cloud Shell icon in taskbar.":::
 
 1. Run the following git clone command in Azure Cloud Shell to clone the repo that contains the source for our app, and our setup script from GitHub.
 
@@ -56,26 +64,24 @@ To save time, let's start by running a script to host our API in Azure. The scri
 
 The next step in this exercise is to create an API gateway in the Azure portal. In the next exercise, you'll use this gateway to publish your API.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. On the Azure resource menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the *Search services and marketplace* search bar, enter **API Management**, and press <kbd>Enter</kbd>. The **API Management** pane appears.
-
-1. Select **Create**. The **Install API Management gateway** pane appears.
+1. In the resource menu, select **Integration**, and in the results, select **API Management**. The **Install API Management gateway** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
     | **Project details** |
-    | Subscription | Concierge Subscription (default)|
-    | Resource group | From the dropdown list, select **<rgn>[sandbox resource group name]</rgn>**. |
+    | Subscription | Select your subscription.|
+    | Resource group | Select a new or existing resource group. A resource group is a logical container that holds related resources for an Azure solution.  |
     | **Instance details** |
-    | Region | Select from one of the following regions: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
+    | Region | Select an available region. |
     | Resource name | Enter `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique. Make a note of this resource name; it will be the API gateway name that you'll need it later in this exercise. |
     | Workspace name | Enter `Weather-Company`. |
-    | Administrator email | Enter your own email address. |
+    | Administrator email | The email address to receive all system notifications. |
     | **Pricing tier** |
     | Pricing tier | From the dropdown list, select `Consumption`. |
     | | |
@@ -83,7 +89,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 1. Select **Review + create**, and after validation passes, select **Create**.
 
     > [!NOTE]
-    > You're using the **Consumption** tier because it is much faster to create while testing. The overall experience is very similar to the other pricing tiers.
+    > The Consumption tier provides fast deployment for testing and has a pay-for-use pricing model. The overall API management experience is similar to the other pricing tiers.
 
 You can view the progress of the deployment, along with the resources that are being created.
 
@@ -101,7 +107,7 @@ After deployment has completed, import the Weather API into the API Management g
 
 1. Accept the defaults for all the other settings, and then select **Create**.
 
-    :::image type="content" source="../media/3-import-the-api.png" alt-text=" Screenshot of dialog ox with swagger.json url highlighted." lightbox="../media/3-import-the-api.png":::
+    :::image type="content" source="../media/3-import-the-api.png" alt-text=" Screenshot of dialog box with swagger.json url highlighted." lightbox="../media/3-import-the-api.png":::
 
 The Design tab of the Weather Data API displays all operations, which consists of two GET operations.
 

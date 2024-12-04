@@ -2,15 +2,18 @@
 uid: learn.wwl.review-azure-powershell-module.review-microsoft-azure-active-directory-module-for-windows-powershell
 title: Review Microsoft Azure Active Directory module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review Microsoft Azure Active Directory module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules
   description: "Review Microsoft Azure Active Directory module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules"
-  ms.date: 10/19/2022
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: N/A, devx-track-azurepowershell
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/6-review-microsoft-azure-active-directory-module-for-windows-powershell.md)]
+

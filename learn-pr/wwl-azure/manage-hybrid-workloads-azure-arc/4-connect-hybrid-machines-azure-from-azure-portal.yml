@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-hybrid-workloads-with-azure-arc.connect-hybrid-machines-to-azure-from-azure-portal
 title: Connect hybrid machines to Azure from the Azure portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect hybrid machines to Azure from the Azure portal
   description: "Connect hybrid machines to Azure from the Azure portal"
   ms.date: 03/17/2023
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

@@ -1,13 +1,16 @@
 ### YamlMime:Module
 uid: learn.configure-the-network-for-your-virtual-machines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure the network for your virtual machines
   description: Learn how to connect your local on-premises networks into Azure using virtual networks, VPN gateways, and Azure ExpressRoute.
-  ms.date: 10/06/2022
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-virtual-machines
+  manager: kumud
+  ms.date: 11/01/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: module
 title: Configure the network for your virtual machines
 summary: Learn how to configure networking in a secure way for your Azure virtual machines.
 abstract: |
@@ -45,3 +48,4 @@ units:
 - learn.configure-the-network-for-your-virtual-machines.8-summary
 badge:
   uid: learn.configure-the-network-for-your-virtual-machines.badge
+

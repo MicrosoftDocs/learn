@@ -4,14 +4,13 @@ title: Get network security recommendations with Microsoft Defender for Cloud
 metadata:
   title: Get network security recommendations with Microsoft Defender for Cloud
   description: "Get network security recommendations with Microsoft Defender for Cloud"
-  ms.date: 03/30/2023
+  ms.date: 11/29/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 12
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 13
 content: |
   [!include[](includes/2-secure-your-virtual-networks-azure-portal.md)]
 quiz:
@@ -21,21 +20,21 @@ quiz:
     choices:
     - content: "Azure Private Link"
       isCorrect: true
-      explanation: "Correct. Azure Private Link enables you to access Azure PaaS Services (for example, Azure Storage and SQL Database) and Azure hosted customer-owned/partner services over a private endpoint in your virtual network."
+      explanation: "Correct. Azure Private Link lets you privately access Azure PaaS Services."
     - content: "Azure Service Endpoint"
       isCorrect: false
-      explanation: "Incorrect. Azure Service Endpoint provides secure and direct connectivity to Azure PaaS services over an optimized route over the Azure backbone network."
+      explanation: "Incorrect. Azure Service Endpoint provides secure and direct connectivity to Azure PaaS services over an optimized route."
     - content: "Azure NaaS (network as a service)"
       isCorrect: false
-      explanation: "Incorrect. There is no such service as Azure NaaS."
+      explanation: "Incorrect. There's no Azure NaaS service."
   - content: "Which tool in Azure automatically collects, analyzes, and integrates log data from your Azure resources?"
     choices:
     - content: "Microsoft Defender for Cloud"
       isCorrect: true
-      explanation: "Correct. Microsoft Defender for Cloud automatically collects, analyzes, and integrates log data from your Azure resources, the network, and other connected partner solutions, such as firewall and endpoint protection solutions."
+      explanation: "Correct. Microsoft Defender for Cloud automatically collects, analyzes, and integrates log data from your Azure resources, the network, and other connected partner solutions."
     - content: "Microsoft cloud security benchmark"
       isCorrect: false
-      explanation: "Incorrect. The Microsoft cloud security benchmark provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure. It includes a collection of high-impact security recommendations you can use to help secure the services you use in Azure."
-    - content: "Azure Sentinel"
+      explanation: "Incorrect. The Microsoft cloud security benchmark is a collection of high-impact security recommendations you can use to help secure the services you use in Azure."
+    - content: "Microsoft Sentinel"
       isCorrect: false
-      explanation: "Incorrect. Azure Sentinel is a scalable, cloud-native, security information event management and security orchestration automated response solution. It delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for alert detection, threat visibility, proactive hunting, and threat response. It needs to be onboarded and configured to collect data from your resources in Azure."
+      explanation: "Incorrect. Microsoft Sentinel is a scalable, cloud-native, security event, and automated response solution."

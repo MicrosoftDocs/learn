@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Integrate Azure Cosmos DB for NoSQL with Azure services
 prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
@@ -21,7 +20,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk
 - learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed

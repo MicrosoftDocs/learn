@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-audit-search-investigate.audit-overview
+title: Microsoft Purview Audit overview
+metadata:
+  title: Microsoft Purview Audit overview
+  description: "Microsoft Purview Audit overview"
+  ms.date: 05/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/audit-overview.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which feature is common to both Microsoft Purview Audit (Standard) and Audit (Premium)?"
+    choices:
+    - content: "10-year audit log retention."
+      isCorrect: false
+      explanation: "Incorrect: This feature is exclusive to Audit (Premium) with the appropriate add-on license."
+    - content: "Search-UnifiedAuditLog cmdlet."
+      isCorrect: true
+      explanation: "Correct: Both versions offer the Search-UnifiedAuditLog cmdlet, allowing for detailed searches within the audit logs."
+    - content: "Customizable audit log retention policies."
+      isCorrect: false
+      explanation: "Incorrect: Customizable audit log retention policies are a feature of Audit (Premium) only."

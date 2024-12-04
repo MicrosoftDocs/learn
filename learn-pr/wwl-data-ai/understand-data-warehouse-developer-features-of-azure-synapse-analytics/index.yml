@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand data warehouse developer features of Azure Synapse Analytics
   description: "Understand data warehouse developer features of Azure Synapse Analytics"
   ms.date: 06/23/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-synapse-analytics
 title: Understand data warehouse developer features of Azure Synapse Analytics
 summary: Learn about the language capabilities that are available to create data warehouses in Azure Synapse Analytics.
 abstract: |
@@ -29,8 +31,7 @@ products:
 - azure-synapse-analytics
 subjects:
 - data-analytics
-- data-lake
-- data-warehousing
+- data-storage
 units:
 - learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.introduction
 - learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.explore-development-tools-for
@@ -45,3 +46,4 @@ units:
 - learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.badge
+

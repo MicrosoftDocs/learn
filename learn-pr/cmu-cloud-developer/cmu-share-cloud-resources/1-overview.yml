@@ -4,11 +4,10 @@ title: Overview of virtualization
 metadata:
   title: Overview of virtualization
   description: Overview of virtualization
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 6
 content: |

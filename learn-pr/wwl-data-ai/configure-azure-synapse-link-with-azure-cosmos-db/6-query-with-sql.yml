@@ -2,13 +2,14 @@
 uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.query-with-sql
 title: Query Cosmos DB with Synapse SQL
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Query Cosmos DB with Synapse SQL
   description: "Query Cosmos DB with Synapse SQL"
   ms.date: 12/19/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

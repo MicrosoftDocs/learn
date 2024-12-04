@@ -2,15 +2,17 @@
 uid: learn.intro-to-azure-database-for-mysql.3-how-azure-database-for-mysql-works  
 title: How Azure Database for MySQL works  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: How Azure Database for MySQL works
   description: How Azure Database for MySQL works
-  ms.date: 03/23/2021  
-  author: markingmyname
-  ms.author: maghan
-  manager: jroth
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.date: 08/21/2024
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/3-how-azure-database-for-mysql-works.md)]
+

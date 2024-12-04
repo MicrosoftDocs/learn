@@ -4,13 +4,10 @@ title: Write queries that specify multiple groupings with grouping sets
 metadata:
   title: Write queries that specify multiple groupings with grouping sets
   description: "Write queries that specify multiple groupings with grouping sets"
-  ms.date: 10/14/2021
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-write-queries-that-specify-multiple-groupings-grouping-sets.md)]

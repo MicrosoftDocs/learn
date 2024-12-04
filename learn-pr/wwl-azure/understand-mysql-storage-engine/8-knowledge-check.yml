@@ -2,12 +2,14 @@
 uid: learn.wwl.understand-mysql-storage-engine.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 11/08/2022
   author: wwlpublish
   ms.author: caroline
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

@@ -2,14 +2,16 @@
 uid: learn.introduction-to-azure-virtual-machines.3-create-a-vm
 title: Exercise - Create a VM using the Azure portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a VM using the Azure portal
   description: Create a VM using the Azure portal
-  ms.date: 09/13/2022
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/19/2023
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
 azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/3-create-a-vm.md)]
+

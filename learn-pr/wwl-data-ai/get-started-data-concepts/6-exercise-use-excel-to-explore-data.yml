@@ -4,13 +4,12 @@ title: 'Exercise: Use Excel to explore data'
 metadata:
   title: 'Exercise: Use Excel to explore data'
   description: "Exercise: Use Excel to explore data"
-  ms.date: 03/01/2023
+  ms.date: 09/30/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-use-excel-to-explore-data.md)]

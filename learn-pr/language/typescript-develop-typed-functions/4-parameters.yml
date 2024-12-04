@@ -4,12 +4,11 @@ title: Fun with parameters
 metadata:
   title: Fun with parameters
   description: Learn how parameters in TypeScript functions are different from parameters in JavaScript functions and how to identify the syntax for required, optional, default, rest, and deconstructed object parameters.
-  ms.date: 02/11/2021
+  ms.date: 01/09/2023
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom: team=nextgen, devx-track-js, devx-track-ts
 durationInMinutes: 5
 content: |
   [!include[](includes/4-parameters.md)]

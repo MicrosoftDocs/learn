@@ -2,14 +2,16 @@
 uid: learn.oxford.industrial-iot-connectivity.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: In this section, we explain how the problem is solved by the product.
   ms.date: 06/16/2021
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/6-summary.md)]
+

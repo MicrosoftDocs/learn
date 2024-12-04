@@ -3,12 +3,11 @@ uid: learn.orleans-product-introduction.what-is-orleans
 title: What is Orleans?
 metadata:
   title: What is Orleans?
-  description: Explore the essential concepts of Orleans.
-  ms.date: 7/21/2022
+  description: Explore the essential concepts of Orleans, such as the virtual actor model, grains, silos, and other features.
+  ms.date: 06/04/2024
   author: alexwolfmsft
   ms.author: alexwolf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-orleans.md)]

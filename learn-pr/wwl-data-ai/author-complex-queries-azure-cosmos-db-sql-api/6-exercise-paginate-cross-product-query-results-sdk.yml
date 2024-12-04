@@ -2,16 +2,14 @@
 uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.exercise-paginate-cross-product-query-results-sdk
 title: 'Exercise: Paginate cross-product query results with the Azure Cosmos DB for NoSQL SDK'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Paginate cross-product query results with the Azure Cosmos DB for NoSQL SDK'
   description: "Exercise: Paginate cross-product query results with the Azure Cosmos DB for NoSQL SDK"
-  ms.date: 10/18/2022
+  ms.date: 10/28/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labId: 107580
-labModal: true
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-paginate-cross-product-query-results-sdk.md)]

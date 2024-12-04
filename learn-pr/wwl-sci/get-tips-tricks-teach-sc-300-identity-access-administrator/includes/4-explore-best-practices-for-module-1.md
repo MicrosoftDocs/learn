@@ -1,5 +1,3 @@
-
-
 SC-300: Module 1 Explore identity in Azure AD
 
 Module 1 Overview
@@ -31,4 +29,4 @@ Module 1 Demos
 
 Module 1 Labs
 
-- Lab 1.1: [Set up lab resources](https://aka.ms/ldc)
+- Lab 1.1: [Set up lab resources](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_00_SetUpLabResources.md)

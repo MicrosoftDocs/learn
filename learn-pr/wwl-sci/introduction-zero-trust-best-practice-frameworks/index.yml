@@ -2,23 +2,26 @@
 uid: learn.wwl.introduction-zero-trust-best-practice-frameworks
 metadata:
   title: Introduction to Zero Trust and best practice frameworks
-  description: "You learn what best practices are and how cybersecurity architects use them as well as some key best practice frameworks for Microsoft cybersecurity capabilities. You also learn about the concept of Zero Trust, and how to get started with Zero Trust in an organization."
-  ms.date: 04/05/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  description: "You learn what best practices are, how cybersecurity architects use them, and some key best practice frameworks for Microsoft cybersecurity capabilities. You also learn about the concept of Zero Trust, and how to get started with Zero Trust in an organization."
+  ms.date: 09/09/2024
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: module
+  ms.service: security
+  ai-usage: ai-assisted
+  ms.custom: wwl-aipa
 title: Introduction to Zero Trust and best practice frameworks
-summary: "You learn what best practices are and how cybersecurity architects use them as well as some key best practice frameworks for Microsoft cybersecurity capabilities. You also learn about the concept of Zero Trust, and how to get started with Zero Trust in an organization."
+summary: |
+  You learn what best practices are, how cybersecurity architects use them, and some key best practice frameworks for Microsoft cybersecurity capabilities. You also learn about the concept of Zero Trust, and how to get started with Zero Trust in an organization.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are able to:
     - Understand how to use best practices as a cybersecurity architect.
     - Understand the concept of Zero Trust and how it can be used to modernize an organizations cybersecurity.
-    - Understand when to use different best practice frameworks like MCRA, CAF and WAF.
+    - Understand when to use different best practice frameworks like MCRA, CAF, and WAF.
 prerequisites: |
-  - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
-  - Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
-iconUrl: /learn/achievements/generic-badge.svg
+  - Conceptual knowledge of security policies, requirements, Zero Trust architecture, and management of hybrid environments.
+  - Working experience with Zero Trust strategies, applying security policies, and developing security requirements based on business goals.
+iconUrl: /training/achievements/introduction-zero-trust-best-practice-frameworks.svg
 levels:
 - advanced
 roles:

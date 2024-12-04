@@ -14,7 +14,7 @@ In the Azure portal, there are several settings to configure to enable autoscali
 
 - **CPU threshold**: Specify the CPU usage percentage threshold to trigger the scale-out autoscale rule.
 
-- **Duration in minutes**: Duration in minutes is the amount of time that Autoscale engine will look back for metrics. For example, 10 minutes means that every time autoscale runs, it will query metrics for the past 10 minutes. This delay allows your metrics to stabilize and avoids reacting to transient spikes.
+- **Duration in minutes**: Duration in minutes is the amount of time that Autoscale engine looks back for metrics. For example, 10 minutes means that every time autoscale runs, it queries metrics for the past 10 minutes. This delay allows your metrics to stabilize and avoids reacting to transient spikes.
 
 - **Number of VMs to increase by**: Specify the number of virtual machines to add to your Virtual Machine Scale Sets implementation when the scale-out autoscale rule is triggered.
 

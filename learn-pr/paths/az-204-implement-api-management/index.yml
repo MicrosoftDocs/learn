@@ -6,8 +6,7 @@ metadata:
   ms.date: 01/17/2022
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-204: Implement API Management'
 prerequisites: |
   *   At least one year of experience developing scalable solutions through all phases of software development.

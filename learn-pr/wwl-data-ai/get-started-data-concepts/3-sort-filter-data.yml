@@ -4,13 +4,12 @@ title: Sort and filter data
 metadata:
   title: Sort and filter data
   description: "Sort and filter data"
-  ms.date: 03/01/2023
+  ms.date: 09/30/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/3-sort-filter-data.md)]

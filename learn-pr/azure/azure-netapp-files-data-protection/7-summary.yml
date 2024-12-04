@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-data-protection.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: summary
+  title: Summary
+  description: Summary of Azure NetApp Files data protection and resiliency module.   
+  ms.date: 11/26/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-summary.md)]

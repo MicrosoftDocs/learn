@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-interfaces-c-sharp.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements about interfaces is true?"
+    choices:
+    - content: "An interface can be instantiated."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces can't be instantiated."
+    - content: "An interface can inherit from a class."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces can't inherit a class."
+    - content: "A class can implement multiple interfaces."
+      isCorrect: true
+      explanation: "Correct. Classes can implement multiple interfaces."
+  - content: "What is the purpose of the `is` keyword in C#?"
+    choices:
+    - content: "To check if an object is compatible with a certain type or interface."
+      isCorrect: true
+      explanation: "Correct. The `is` keyword checks if an object is compatible with a certain type or interface."
+    - content: "Attempts to cast an object to the specified interface type, returning null if the cast fails."
+      isCorrect: false
+      explanation: "Incorrect. The `is` keyword checks if an object is compatible with a certain type or interface."
+    - content: "To define a contract for functionality."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces are used to define a contract for functionality, not the `is` keyword."
+  - content: "What does the `as` keyword in C# do when used with an interface type?"
+    choices:
+    - content: "Creates a new instance of the interface."
+      isCorrect: false
+      explanation: "Incorrect. The `as` keyword attempts to cast an object to the specified interface type and returns null if the cast fails."
+    - content: "Checks if an object is compatible with the interface."
+      isCorrect: false
+      explanation: "Incorrect. The `is` keyword checks if an object is compatible with a certain type or interface."
+    - content: "Attempts to cast an object to the specified interface type, returning null if the cast fails."
+      isCorrect: true
+      explanation: "Correct. The `as` keyword attempts to cast an object to the specified interface type and returns null if the cast fails."

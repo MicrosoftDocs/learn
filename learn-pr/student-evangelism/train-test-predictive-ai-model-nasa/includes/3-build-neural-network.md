@@ -1,6 +1,5 @@
 We'll build a neural network (or deep learning network) to learn the associations between features and each rock type. Features can include things like curves, edges, and texture.
 
-
 ## Neurons and wired networks
 
 Neural networks process information similar to how our brains work. Our brains have neurons or nerve cells that transmit and process information from our senses. Many nerve cells are arranged as a network of nerves in the brain. The nerves pass electrical impulses from one neuron to the next in the network.
@@ -12,19 +11,17 @@ Neural networks have millions of neurons and nerves. To build a functional neura
 
 In our model, we'll collect the features for a rock from an image and store them as a linear sequence of parameters. This step builds a single neuron. Every new image that's analyzed is another neuron. We supply the training data for our computer to build all the neurons.
 
-Then we'll tell the computer to combine the sequences into a matrix. The matrix represents the best pattern we have to describe the features for types of space rock. This matrix is a wired network.
+Then, we'll tell the computer to combine the sequences into a matrix. The matrix represents the best pattern we have to describe the features for types of space rock. This matrix is a wired network.
 
 We'll train our model to predict the rock type. We'll compare the rock features in a new image with the matrix pattern. Each time we run the model, the matrix grows and the prediction accuracy improves. Our goal is to test the model and achieve a prediction accuracy close to 100%.
-
 
 ## Check your working environment
 
 Before you can add new code to your AI model, we need to make sure your development environment is still active.
 
-If you closed your Anaconda prompt, or Visual Studio Code, you need to restart them. You'll need to configure your environment to continue to work on your AI model.
+If you closed your Anaconda prompt or Visual Studio Code, you need to restart them. You'll need to configure your environment to continue to work on your AI model.
 
 If your Anaconda prompt is still open from your work for the previous module, and you haven't closed Visual Studio Code, continue to the section, [Create a neural network](#create-a-neural-network).
-
 
 ### Verify your Anaconda environment (myenv)
 
@@ -46,8 +43,7 @@ If you closed your Anaconda prompt after you completed the exercises in the prev
 
    The system should report that all requested packages are already installed. You can ignore warnings about the Anaconda (conda) version.
 
-
-### Restart Visual Studio and the Python kernel
+### Restart Visual Studio Code and the Python kernel
 
 If you refreshed your Anaconda environment by following the previous steps, or you closed Visual Studio Code after you completed the exercises in the previous module, you need to restart the application and Python `myenv` kernel.
 
@@ -57,10 +53,9 @@ If you refreshed your Anaconda environment by following the previous steps, or y
 
    In the previous exercises, we used the Jupyter Notebook file *ClassifySpaceRockProgram.ipynb*.
 
-1. Start the Jupyter Python `myenv` kernel. At the upper-right and lower-left corners of Visual Studio, change to the Anaconda environment `('myenv')` that you created earlier.
+1. Start the Jupyter Python `myenv` kernel. At the upper-right corner of Visual Studio Code, change to the Anaconda environment `('myenv')` that you created earlier.
 
-
-### Rerun cells in your Jupyter Notebook file 
+### Rerun cells in your Jupyter Notebook file
 
 If you refreshed your Anaconda environment or restarted Visual Studio Code, you need to run the existing cells in your Jupyter Notebook file before you can add new code cells.
 
@@ -70,27 +65,24 @@ If you refreshed your Anaconda environment or restarted Visual Studio Code, you 
 
 1. If there are no errors, continue to the next section, [Create a neural network](#create-a-neural-network).
 
-
 ### Troubleshoot environment errors
 
 Here are some tips to help troubleshoot errors in the setup process:
 
 - If you receive errors when running existing cells in your Jupyter Notebook file, make sure you followed all the steps in this section:
    1. Restart your Anaconda environment. Activate `myenv`. Check the torchvision installation.
-   1. Restart Visual Studio Code. Restart the Jupyter `myenv` Python kernel. 
+   1. Restart Visual Studio Code. Restart the Jupyter `myenv` Python kernel.
    1. Run the existing cells in your Jupyter Notebook file, from the first cell to the last.
 
-- If you receive an error about a specific command or library, you might need to refresh a library through your Anaconda prompt environment. Make sure the Anaconda prompt environment indicates that all libraries are downloaded and installed. Follow the steps to [Download the Python AI libraries][AILibs] as described in an earlier module.
+- If you receive an error about a specific command or library, you might need to refresh a library through your Anaconda prompt environment. Make sure the Anaconda prompt environment indicates that all libraries are downloaded and installed. Follow the steps to [Download the Python AI libraries](/training/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true) as described in an earlier module.
 
 - If you see errors in Visual Studio Code, try restarting the application, restarting the `myenv` kernel, and running the existing cells in the Jupyter Notebook file.
 
 - If possible, try to complete the exercises for all modules in the Learning path in a single session. Try not to close your Anaconda prompt environment or Visual Studio Code.
 
-
 ## Create a neural network
 
 After you confirm your environment is active, you're ready to create a neural network for your AI model.
-
 
 ### Detect the device type
 
@@ -105,7 +97,6 @@ We need to help your computer determine the most efficient way to create the dee
    ```
 
    After the system detects your device, it downloads the appropriate model structures to the PyTorch installation location on your computer.
-
 
 ### Build neurons and wire the network
 
@@ -146,6 +137,3 @@ The neural network goes back and forth many times until it learns the best assoc
 
 > *Visualization credit: Grant Sanderson, https://www.3blue1brown.com/.*
 
-
-<!-- Links -->
-[AILibs]: /training/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true

@@ -1,0 +1,5 @@
+﻿Containers are an Operating System (OS) virtualization technology that offers a lightweight solution for packaging and deploying software applications. In a container, an application and all its dependencies are bundled together in an isolated environment. They provide a consistent runtime experience across diverse computing environments.
+
+Containers simplify the process of deploying applications on different systems and eliminate the need for complex installation and configuration procedures of the application. Containers are increasingly popular in modern software development workflows as they offer fast, repeatable, and scalable deployment capabilities.
+
+When you're troubleshooting containers, most of the activities are centered around checking container and application logs, resources utilization, runtime logs, and host settings. In this module, we cover troubleshooting Windows containers, tools you can use to support the process, and guidance on additional tools to evaluate. First, let's take a look at how you can get containers working on your environment.

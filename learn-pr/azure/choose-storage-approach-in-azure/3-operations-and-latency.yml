@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-storage-approach-in-azure.3-operations-and-latency
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine operational and latency needs
   description: Determine operational and latency needs.
-  ms.date: 06/05/2022
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/18/2024
+  author: normesta
+  ms.author: normesta
+  ms.topic: unit
 title: Determine operational needs
 durationInMinutes: 3
 content: |
   [!include[](includes/3-operations-and-latency.md)]
+

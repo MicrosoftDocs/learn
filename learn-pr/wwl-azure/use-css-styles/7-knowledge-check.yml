@@ -3,50 +3,49 @@ uid: learn.wwl.use-css-styles.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/21/2023
+  description: "Check what you learn in this module."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check Your Knowledge on CSS Concepts"
   questions:
-  - content: "To make all `h2` elements on your page bold using a single style command, what method should be used?"
+  - content: "To make all `h2` elements on a page bold using a single style command, what method should be used?"
     choices:
     - content: "Use a CSS selector for h2 to set the style."
       isCorrect: true
-      explanation: "Correct. By using an h2 selector, you can set the style for all the h2 tags with a single command."
+      explanation: "Correct. An h2 selector sets the style for all the h2 tags with a single command."
     - content: "Use the style tag on each h2 element using copy and paste."
       isCorrect: false
-      explanation: "This answer is incorrect. While this would work, it duplicates the style rather than using a single style command."
+      explanation: "Incorrect. While this would work, it duplicates the style rather than using a single style command."
     - content: "Enclose the h2 tag in a style tag."
       isCorrect: false
-      explanation: "This answer is incorrect. Using a CSS selector is a best practice."
+      explanation: "Incorrect. Using a CSS selector is a best practice."
   - content: "Which best describes methods to set the `color` property for a font?"
     choices:
     - content: "Use RGB values such as `color: rgb(105, 6, 19)` or `color: #7462e0;`"
       isCorrect: false
-      explanation: "That answer is incorrect. While RGB values would achieve the goal, there are multiple methods available."
+      explanation: "Incorrect. While RGB values would achieve the goal, there are multiple methods available."
     - content: "Use named color values such as `color: brown;` or `color: lightgrey;`."
       isCorrect: false
-      explanation: "That answer is incorrect. While named color values would achieve the goal, there are multiple methods available."
+      explanation: "Incorrect. While named color values would achieve the goal, there are multiple methods available."
     - content: "Use either RGB or named values."
       isCorrect: true
-      explanation: "Correct. you can use either RGB or named color values to set the color property"
+      explanation: "Correct. Either RGB or named color values work to set the color property."
   - content: "Which is the best method to apply the same styles to multiple elements?"
     choices:
     - content: "Change all elements to the same tag and use a tag selector in CSS"
       isCorrect: false
-      explanation: "That answer is incorrect. You can use custom selectors with the class attribute to change any element using that selector."
+      explanation: "Incorrect. Custom selectors can be used with the class attribute to change any element using that selector."
     - content: "Create a custom selector and assign the `class` attribute on the elements to that selector."
       isCorrect: true
-      explanation: "Correct. The `class` attribute enables you to refer to a single selector on many elements."
+      explanation: "Correct. The `class` attribute enables single selector to be referred to on many elements."
     - content: "Create a custom selector and assign the `id` attribute on the elements to that selector."
       isCorrect: false
-      explanation: "That answer is incorrect. The `id` property can be used on only one element. The class attribute allows you to use a selector on more than one element."
+      explanation: "Incorrect. The `id` property can be used on only one element. The class attribute allows a selector to be used on more than one element."

@@ -4,11 +4,10 @@ title: Issue prioritization, security control types, and functions
 metadata:
   title: Issue prioritization, security control types, and functions
   description: Learn about prioritizing issues and applying the right layer of security controls based on type and function
-  ms.date: 02/28/2020
+  ms.date: 08/01/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1b-priorities-types-and-functions.md)]

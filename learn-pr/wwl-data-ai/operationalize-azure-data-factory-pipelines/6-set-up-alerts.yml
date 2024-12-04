@@ -2,13 +2,14 @@
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.set-up-alerts-azure-data-factory
 title: Set up alerts for Azure Data Factory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set up alerts for Azure Data Factory
   description: "Set up alerts for Azure Data Factory"
   ms.date: 05/16/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

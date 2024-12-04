@@ -4,11 +4,12 @@ title: Implement Cluster Shared Volumes
 metadata:
   title: Implement Cluster Shared Volumes
   description: "Implement Cluster Shared Volumes"
-  ms.date: 10/28/2021
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 15
@@ -21,7 +22,7 @@ quiz:
     choices:
     - content: "Install a Windows Server feature."
       isCorrect: false
-      explanation: "That's incorrect. There is no need to install iSCSI Initiator on the Windows Server operating system."
+      explanation: "That's incorrect. There's no need to install iSCSI Initiator on the Windows Server operating system."
     - content: "Start a Windows Service."
       isCorrect: true
       explanation: "That's correct. The iSCSI Initiator service needs to be started first."

@@ -1,6 +1,6 @@
 Some applications have so much incoming traffic that the single server hosting them becomes overwhelmed and can't respond to client requests in a timely manner. Instead of continuously adding network capacity, processors, disk resources, and RAM, you can address this traffic by implementing load balancing. Load balancing is a process in which you distribute incoming traffic equitably across multiple computers. A pool of computers that have lower levels of resources often responds to traffic more effectively than a single server with higher performance. 
 
-Azure Load Balancer is an Azure service that allows you to evenly distribute incoming network traffic across a group of Azure VMs or instances in a Virtual Machine Scale Set. Load Balancer delivers high availability and network performance in the following ways:  
+Azure Load Balancer is an Azure service that allows you to evenly distribute incoming network traffic across a group of Azure VMs, or across instances in a Virtual Machine Scale Set. Load Balancer delivers high availability and network performance in the following ways:  
 
 - Load-balancing rules determine how traffic is distributed to instances that comprise the back end.
 - Health probes ensure the resources in the back end are healthy and that traffic isn't directed to unhealthy back-end instances.
@@ -15,6 +15,6 @@ An internal load balancer enables the following types of load balancing:
 - **Within a virtual network**: Load balancing from VMs in the virtual network to a set of VMs that reside within the same virtual network.
 - **For a cross-premises virtual network**: Load balancing from on-premises computers to a set of VMs that reside within the same virtual network.
 - **For multi-tier applications**: Load balancing for internet-facing multi-tier applications where the back-end tiers aren't internet-facing. The back-end tiers require traffic load balancing from the internet-facing tier.
-- **For LOB applications**: Load balancing for LOB applications that are hosted in Azure without additional load balancer hardware or software. This scenario includes on-premises servers that are in the set of computers whose traffic is load balanced.
+- **For LOB applications**: Load balancing for LOB applications that are hosted in Azure without added load balancer hardware or software. This scenario includes on-premises servers that are in the set of computers whose traffic is load balanced.
 
 Each Load Balancer type can be used for inbound and outbound scenarios and scale up to millions of TCP and UDP application flows.

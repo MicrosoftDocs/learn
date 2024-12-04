@@ -2,12 +2,14 @@
 uid: learn.wwl.create-calculation-groups.lab
 title: 'Exercise: Create calculation groups'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Create calculation groups'
   description: "Exercise: Create calculation groups"
   ms.date: 01/05/2023
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.author: anrudduc
+  ms.topic: unit
 azureSandbox: false
 labId: 119303
 labModal: true

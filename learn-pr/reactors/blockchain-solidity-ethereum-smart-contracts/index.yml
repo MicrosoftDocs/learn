@@ -6,8 +6,7 @@ metadata:
   ms.date: 05/24/2022
   author: danmabee
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
 title: Write Ethereum smart contracts by using Solidity
 summary: Learn how to install and use tools that you can use to develop smart contracts.
@@ -34,8 +33,6 @@ roles:
 - student
 products:
 - azure
-subjects:
-- development-tools
 units:
 - learn.reactors.blockchain-solidity-ethereum-smart-contracts.1-introduction
 - learn.reactors.blockchain-solidity-ethereum-smart-contracts.2-smart-contracts

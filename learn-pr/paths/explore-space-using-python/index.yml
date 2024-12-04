@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/10/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Explore space with Python and Visual Studio Code; inspired by Netflix's Over the Moon
 summary: | 
   Learning to code sometimes feels out of reach. But if we've learned anything from 
@@ -50,8 +49,6 @@ roles:
 products:
 - azure-custom-vision
 - vs-code
-subjects:
-- development-tools
 modules:
 - learn.student-evangelism.plan-moon-mission-using-python-pandas
 - learn.student-evangelism.predict-meteor-showers-using-python

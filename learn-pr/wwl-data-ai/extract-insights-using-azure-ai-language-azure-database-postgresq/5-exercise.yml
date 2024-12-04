@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.exercise
+title: Exercise-Extract insights using the Azure AI Language service
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise-Extract insights using the Azure AI Language service
+  description: Exercise-Extract insights using the Azure AI Language service
+  author: wwlpublish
+  ms.author: calopez
+  ms.date: 11/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise.md)]
+

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.streamline-nonprofit-program-management-with-microsoft-copilo.exercise-program-planning
+title: Exercise - Program planning
+metadata:
+  title: Exercise - Program planning
+  description: This content is a part of the Streamline nonprofit program management with Microsoft Copilot module.
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.date: 5/30/2024
+  ms.topic: unit
+  ai-usage: ai-assisted
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-exercise-program-planning.md)]

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.github.github-copilot-management-and-customizations
+metadata:
+  title: Management and Customization Considerations with GitHub Copilot
+  description: Management and customization control are a vital part of using an AI pair programming tool. With a better understanding of the GitHub Copilot plans and their associated features, you can select the right fit for your organization's needs.
+  ms.date: 10/18/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: module
+  ms.collection: github-ai-copilot
+  ms.service: github-copilot
+title: Management and customization considerations with GitHub Copilot
+summary: In this module, we explore management and customization considerations with GitHub Copilot.
+abstract: |
+  By the end of this module, you'll:
+    -	Understand the GitHub Copilot plans and their associated management and customization features.
+    -	Gain insight into the contractual protections in GitHub Copilot and disabling matching public code.
+    -	Know how to manage content exclusions.
+    -	Recognize common problems with GitHub Copilot and their solutions.
+prerequisites: |
+  -	Basic understanding of GitHub fundamentals
+  -	Basic understanding of GitHub Copilot
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+- devops-engineer
+- administrator
+products:
+- github
+subjects:
+- data-integration
+units:
+- learn.github.github-copilot-management-and-customizations.introduction
+- learn.github.github-copilot-management-and-customizations.exploring-git-hub-copilot-plans-and-their-associated-management-and-customization-features
+- learn.github.github-copilot-management-and-customizations.git-hub-copilot's-contractual-protections-and-disabling-matching-public-code
+- learn.github.github-copilot-management-and-customizations.managing-content-exclusions
+- learn.github.github-copilot-management-and-customizations.troubleshooting-common-issues-with-git-hub-copilot
+- learn.github.github-copilot-management-and-customizations.knowledge-check
+- learn.github.github-copilot-management-and-customizations.summary
+badge:
+  uid: learn.github.github-copilot-management-and-customizations.badge

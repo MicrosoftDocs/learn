@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-jobs-azure-databricks.error-handling
+title: Implement error handling and retry mechanisms
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Implement error handling and retry mechanisms
+  description: "Implement error handling and retry mechanisms"
+  ms.date: 08/05/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/05-error-handling.md)]

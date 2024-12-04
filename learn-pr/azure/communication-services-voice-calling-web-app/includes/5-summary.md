@@ -1,4 +1,4 @@
-You've successfully created a web app that allows you to voice call other users using Azure Communication Services!
+You successfully created a web app that allows you to voice call other users using Azure Communication Services!
 
 In this module you learned:
 
@@ -11,7 +11,7 @@ In this module you learned:
 
 If you want to clean up and remove a Communication Services subscription, you can delete the resource or resource group. Deleting the resource group also deletes any other resources associated with it.
 
-The test credentials you generated have a short expiry and do not need to be invalidated.
+The test credentials you generated have a short expiration date and don't need to be invalidated.
 
 ## Next steps
 

@@ -2,13 +2,14 @@
 uid: learn.wwl.explore-developer-tools-for-workspace-interaction.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 01/06/2023
+  ms.date: 07/25/2024
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

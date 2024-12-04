@@ -2,13 +2,17 @@
 uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 02/03/2021
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 azureSandbox: false
 durationInMinutes: 2
 quiz:
@@ -68,3 +72,4 @@ quiz:
     - content: "Specify collection throughput."
       isCorrect: true
       explanation: "That's correct. Database-level throughput often seems more appropriate than collection-level throughput for migration scenarios, but you should consider that this setting cannot be modified after creation and, therefore, you should choose the most appropriate setting for the expected use of the database."
+

@@ -14,11 +14,11 @@ Spring Boot runs on top of the Spring Framework and has an opinionated autoconfi
 
 ### Spring Data
 
-Spring Data simplifies data access for relational and non-relational databases, map-reduce frameworks, and cloud-based data services.
+Spring Data simplifies data access for relational and non-relational databases, MapReduce frameworks, and cloud-based data services.
 
 ### Spring Security
 
-Spring Security is the de facto standard for securing Spring-based applications. It offers a high level of authentication and access control. For instance, Spring Security integrates well with Active Directory.
+Spring Security is the *de facto* standard for securing Spring-based applications. It offers a high level of authentication and access control. For instance, Spring Security integrates well with Active Directory.
 
 ### Spring Cloud
 
@@ -32,11 +32,11 @@ Spring Batch is a lightweight framework for robust batch applications that are v
 
 MicroProfile and Jakarta Enterprise Edition (EE) can be seen as the open-source follow-up of the Java EE specifications.
 
-MicroProfile is a set of specifications for microservice architectures. It calls itself an _open forum to optimize Enterprise Java for a microservices architecture_. MicroProfile aims to innovate across multiple implementations and collaborate on common areas of interest.
+MicroProfile is a set of specifications for microservice architectures. It calls itself an *open forum to optimize Enterprise Java for a microservices architecture*. MicroProfile aims to innovate across multiple implementations and collaborate on common areas of interest.
 
-Jakarta EE is a set of specifications for building enterprise applications. Its modularized structure enables developers to create efficient software solutions. Jakarta EE applications can be packaged as either EAR files or WAR files.
+Jakarta EE is a set of specifications for building enterprise applications. Its modularized structure enables developers to create efficient software solutions. You can package Jakarta EE applications as either EAR files or WAR files.
 
-WebProfile is a subset of Jakarta EE for back-end services with a web focus. But don't worry! You can add specific APIs of the enterprise platform on top of it.
+WebProfile is a subset of Jakarta EE for back-end services with a web focus, but don't worry! You can add specific APIs of the enterprise platform on top of it.
 
 ## Application servers
 
@@ -60,6 +60,6 @@ Java EE applications must be deployed onto Java EE-compliant application servers
 
 - **Netty** is a nonblocking I/O (NIO) client/server framework. It enables quick and easy development of network applications such as protocol servers and clients. It greatly simplifies and streamlines network programming, such as TCP and UDP socket servers. Netty is an asynchronous, event-driven network application framework for rapid development of maintainable, high-performance protocol servers and clients.
 
-- **Quarkus** is a Kubernetes-native Java stack that's tailored for OpenJDK HotSpot and GraalVM. Quarkus is getting more and more momentum. By the way, there are more performance-focused frameworks like this, such as Vert.x, Helidon, Payara Micro, and KumuluzEE.
+- **Quarkus** is a Kubernetes-native Java stack that's tailored for OpenJDK HotSpot and GraalVM. Quarkus is gaining more and more momentum. By the way, there are more performance-focused frameworks like this, such as Vert.x, Helidon, Payara Micro, and KumuluzEE.
 
 - **Micronaut** is a modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications. Micronaut features a dependency injection and aspect-oriented programming runtime that uses no reflection. That makes it easier for Micronaut applications to run on GraalVM.

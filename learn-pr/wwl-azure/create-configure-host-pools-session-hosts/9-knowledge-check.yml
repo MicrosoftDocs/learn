@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-host-pools-session-hosts.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/22/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A system administrator is tasked with setting up Azure Virtual Desktop for their organization. What is a prerequisite for deploying Azure Virtual Desktop?"
+    choices:
+    - content: "The system administrator needs to have a Google Cloud account with an active subscription"
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Desktop is a Microsoft service and requires an Azure account with an active subscription, not a Google Cloud account."
+    - content: "The system administrator needs to have a local server setup"
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Desktop is a cloud-based service and does not require a local server setup."
+    - content: "The system administrator needs to have an Azure account with an active subscription"
+      isCorrect: true
+      explanation: "Correct. To deploy Azure Virtual Desktop, an Azure account with an active subscription is required."
+  - content: "A system administrator needs to customize RDP properties in Azure Virtual Desktop for an optimal user experience. Which PowerShell cmdlet should they use?"
+    choices:
+    - content: "Set-RdsDesktop"
+      isCorrect: false
+      explanation: "Incorrect. Set-RdsDesktop is not used for customizing RDP properties."
+    - content: "Set-RdsTenant"
+      isCorrect: false
+      explanation: "Incorrect. Set-RdsTenant is not used for customizing RDP properties."
+    - content: "Set-RdsHostPool"
+      isCorrect: true
+      explanation: "Correct. The Set-RdsHostPool cmdlet with the CustomRdpProperty parameter is used to customize RDP properties."
+  - content: "A system administrator needs to verify if a session host virtual machine is utilizing the Azure Virtual Desktop licensing benefit. Which PowerShell cmdlet should they run to confirm this?"
+    choices:
+    - content: "Get-AzVM ResourceGroup resourceGroupName Name vmName vm.LicenseType Windows Client"
+      isCorrect: false
+      explanation: "Incorrect. This cmdlet is used to apply a Windows license to a session host virtual machine, not to verify the license type."
+    - content: "Update-AzVM ResourceGroupName resourceGroupName VM vm"
+      isCorrect: false
+      explanation: "Incorrect. This cmdlet is used to update a virtual machine, not to verify the license type."
+    - content: "Get-AzVM ResourceGroupName resourceGroupName Name vmName"
+      isCorrect: true
+      explanation: "Correct. This cmdlet is used to verify the license type of a session host virtual machine."
+  - content: "A system administrator needs to create a personal host pool using the Az.DesktopVirtualization PowerShell module. Which command should they use?"
+    choices:
+    - content: "Get AzWvdHostPool -Name Name -ResourceGroupName ResourceGroupName -FL"
+      isCorrect: false
+      explanation: "Incorrect. This command is used to view the properties of a host pool, not to create one."
+    - content: "New AzWvdHostPool -Name Name -ResourceGroupName ResourceGroupName -HostPoolType Pooled -LoadBalancerType BreadthFirst -PreferredAppGroupType Desktop -MaxSessionLimit value -Location AzureRegion"
+      isCorrect: false
+      explanation: "Incorrect. This command is used to create a pooled host pool, not a personal host pool."
+    - content: "New AzWvdHostPool -Name Name -ResourceGroupName ResourceGroupName -HostPoolType Personal -LoadBalancerType Persistent -PreferredAppGroupType Desktop -PersonalDesktopAssignmentType Automatic -Location AzureRegion"
+      isCorrect: true
+      explanation: "Correct. This command creates a personal host pool with the specified parameters."

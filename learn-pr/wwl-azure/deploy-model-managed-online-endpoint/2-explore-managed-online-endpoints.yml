@@ -2,13 +2,17 @@
 uid: learn.wwl.deploy-model-managed-online-endpoint.explore-managed-online-endpoints
 title: Explore managed online endpoints
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore managed online endpoints
-  description: "Explore managed online endpoints"
-  ms.date: 11/17/2022
+  description: Explore managed online endpoints
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 9
 content: |
   [!include[](includes/2-explore-managed-online-endpoints.md)]
+

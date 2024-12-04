@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.fine-tune-azure-databricks
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Fine-tune language models with Azure Databricks
+  description: Fine-tune language models with Azure Databricks
+  ms.date: 08/20/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure
+  ai-usage: ai-assisted
+  ms.custom: ai-learning-hub
+title: Fine-tune language models with Azure Databricks
+summary: Fine-tuning uses Large Language Models' (LLMs) general knowledge to improve performance on specific tasks, allowing organizations to create specialized models that are more accurate and relevant while saving resources and time compared to training from scratch. 
+abstract: |
+  In this module, you learn how to:
+  - Understand when to use fine-tuning.
+  - Prepare your data for fine-tuning.
+  - Fine-tune an Azure OpenAI model.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/describe-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.fine-tune-azure-databricks.introduction
+- learn.wwl.fine-tune-azure-databricks.fine-tune-concept
+- learn.wwl.fine-tune-azure-databricks.prepare-data
+- learn.wwl.fine-tune-azure-databricks.how-to-fine-tune
+- learn.wwl.fine-tune-azure-databricks.exercise
+- learn.wwl.fine-tune-azure-databricks.knowledge-check
+- learn.wwl.fine-tune-azure-databricks.summary
+badge:
+  uid: learn.wwl.fine-tune-azure-databricks.badge
+

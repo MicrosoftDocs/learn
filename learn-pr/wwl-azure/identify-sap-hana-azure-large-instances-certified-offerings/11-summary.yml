@@ -2,13 +2,14 @@
 uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 07/07/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 1

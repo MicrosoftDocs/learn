@@ -6,7 +6,7 @@ This section demonstrates running the .NET Upgrade Assistant against an existing
 
 ## Verify the tools are installed
 
-It's possible install the .NET Upgrade Assistant extension from the extension manager in Visual Studio, but for this exercise you're going to use the Visual Studio Installer. This way, you can also double-check that you have the required components to build the sample app.
+You could install the .NET Upgrade Assistant extension from the extension manager in Visual Studio, but for this exercise, you're going to use the Visual Studio Installer. This way, you can also double-check that you have the required components to build the sample app.
 
 1. Launch the Visual Studio Installer and select **Modify** on the Visual Studio 2022 installation.
 1. On the **Workloads** tab, ensure the **ASP.NET and web development** workload is selected.
@@ -17,7 +17,7 @@ It's possible install the .NET Upgrade Assistant extension from the extension ma
 
 ## Obtain the sample code
 
-Let's obtain the sample app. It's just a standard boilerplate app generated from the ASP.NET MVC template.
+Let's obtain the sample app, which is just a standard boilerplate app generated from the ASP.NET MVC template.
 
 1. Open Visual Studio 2022.
 1. Using either the **Clone a repository** button on the quick start window or the **Git > Clone** command on the menu bar, download and open the sample repository from `https://github.com/MicrosoftDocs/mslearn-modernize-aspnet-framework-to-core`.
@@ -28,18 +28,19 @@ Let's obtain the sample app. It's just a standard boilerplate app generated from
 
 ### Run the Upgrade Assistant
 
-1. In **Solution Explorer**, right-click on the *AspNetMvcTest* project and select **Upgrade**.
+1. In **Solution Explorer**, right-click the *AspNetMvcTest* project and select **Upgrade**.
 
     :::image type="content" source="../media/solution-explorer.png" alt-text="Screenshot of Solution Explorer with the project's context menu displayed and the Upgrade command highlighted.":::
 
-    The **Upgrade Assistant** tab opens. Since the app to be upgraded is an ASP.NET MVC app, the only option available is **Side-by-side incremental project upgrade**.
+    The **Upgrade Assistant** tab opens. Select **Upgrade project to a newer .NET version**. Because the app to be upgraded is an ASP.NET MVC app, the only option available is **Side-by-side incremental project upgrade**.
 
     :::image type="content" source="../media/upgrade-assistant-welcome.png" alt-text="Screenshot of the welcome screen to the Upgrade Assistant. Only one option is displayed: Side-by-side incremental project upgrade.":::
 
     This upgrade approach is great for web apps. It generates a new .NET project that implements YARP (Yet Another Reverse Proxy). If a resource URL is requested but not found in the new project, the request is forwarded to the old project. This way, you can incrementally migrate to the new app without losing any functionality.
 
 1. Select **Side-by-side incremental project upgrade**.
-1. Select **New project** and select **Next**.
+1. Select **Next** and select **New project**.
+1. Select **Next**.
 1. Select a name for the new project. The assistant has suggested the name **AspNetMvcTestCore**. That's descriptive enough, so leave it alone. Verify that the **Project template** is set to *ASP.NET Core MVC* and select **Next**.
 1. Choose your target framework. Select **.NET 7.0** and select **Next**.
 1. Review the tasks to be performed:
@@ -51,10 +52,10 @@ Let's obtain the sample app. It's just a standard boilerplate app generated from
    - Create a new ASP.NET Core project.
    - Set a new Start action (*Don't open a page*).
    - Set both projects as the solution's Startup projects.
-   - Add YARP and System.Web adapter packages to the new project.
+   - Add YARP and `System.Web` adapter packages to the new project.
    - Add YARP settings to *appsettings.json*. The settings will be configured to forward requests to the old project.
 
-1. Select **Finish** and the upgrade assistant will complete the initial migration.
+1. Select **Finish**. The upgrade assistant will complete the initial migration.
 1. Select **Done** to view the upgrade summary.
 
    :::image type="content" source="../media/upgrade-assistant-summary.png" alt-text="Screenshot of the summary screen showing the Endpoints distribution. Currently all the endpoints are in the ASP.NET MVC project.":::
@@ -69,11 +70,11 @@ From here, you can move classes and controllers incrementally to the new project
 
    The detected routes and endpoints are displayed. Note that the endpoints are all actions on the *Home* controller.
 
-1. Select the **Upgrade** dropdown and select **Controller**.
+1. Select the **Upgrade** drop-down and select **Controller**.
 1. In the **Select controller to upgrade** dialog, select **AspNewMvcTest.Controllers.HomeController** and select **Upgrade**.
-1. On the **Select components** dialog, expand all the nodes on the treeview.
+1. On the **Select components** dialog, expand all the nodes on the tree view.
 
-   :::image type="content" source="../media/select-components.png" alt-text="Screenshot of the Select Components dialog with the treeview expanded.":::
+   :::image type="content" source="../media/select-components.png" alt-text="Screenshot of the Select Components dialog with the tree view expanded.":::
 
    The Upgrade Assistant has detected the routes, classes, and views that need to be migrated to support the *Home* controller.
 
@@ -86,7 +87,7 @@ After completing the steps in the Upgrade Assistant, you'll need to complete som
 
 ### Move static files to *wwwroot*
 
-Static files that should be served by the web server should be moved to an appropriate folder within a root level folder named `wwwroot`. See [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files) for details.
+Static files that the web server should serve should be moved to an appropriate folder within a root level folder named `wwwroot`. See [Static files in ASP.NET Core](/aspnet/core/fundamentals/static-files) for details.
 
 1. Create a new `wwwroot` directory in the root of the *AspNewMvcTextCore* project.
 1. Create a subdirectory to `wwwroot` named `css`.
@@ -123,7 +124,7 @@ The static files are where they need to be, so now we can update the Razor layou
    @*@Scripts.Render("~/bundles/modernizr")*@
    ```
 
-1. Replace the above lines with:
+1. Replace the preceding lines with:
 
    ```html
    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
@@ -137,7 +138,7 @@ The static files are where they need to be, so now we can update the Razor layou
    @*@Scripts.Render("~/bundles/bootstrap")*@
    ```
 
-1. Replace the above lines with:
+1. Replace the preceding lines with:
 
    ```html
    <script src="~/js/jquery-3.6.4.min.js"></script>
@@ -149,7 +150,7 @@ The static files are where they need to be, so now we can update the Razor layou
 
 ## Run the application
 
-Return to the Summary dialog and note that no non-upgraded endpoints remain in the old .NET Framework app. You may need to build the app to update the assistant.
+Return to the **Summary** dialog and note that no non-upgraded endpoints remain in the old .NET Framework app. You might need to build the app to update the assistant.
 
 :::image type="content" source="../media/endpoints-summary-done.png" alt-text="Screenshot of the Summary tab in the Upgrade Assistant showing all the endpoints have been migrated.":::
 
@@ -157,7 +158,7 @@ When you press <kbd>F5</kbd>, the application should build and run successfully.
 
 :::image type="content" source="../media/upgraded-app-running.png" alt-text="Screenshot of browser window showing the ASP.NET Core application's home page.":::
 
-If this app had more controllers, you would repeat this process for the additional controllers until the entire app is upgraded.
+If this app had more controllers, you'd repeat this process for the additional controllers until the entire app is upgraded.
 
 ## Remove YARP
 
@@ -169,11 +170,11 @@ In the new app, complete the following steps to remove YARP:
 1. In that same file, remove the line `app.MapReverseProxy();`.
 1. In *appsettings.json*, remove the `ReverseProxy` configuration object.
 
-The new app can now be built and deployed independently from the original app.
+You can now build and deploy the new app independently from the original app.
 
 > [!NOTE]
-> In this simple scenario, you were able to complete the modernization in one step. In many real world applications, modernization will require a longer period of time. In this case, the YARP proxy will remain in place to allow you to allow you to incrementally update your application.
+> In this simple scenario, you were able to complete the modernization in one step. In many real-world applications, modernization requires a longer period of time. In this case, the YARP proxy remains in place to allow you to allow you to incrementally update your application.
 
 ## Summary
 
-In this section, you completed an upgrade for a simple, specific test scenario: a default ASP.NET MVC 5 app with no authentication, data access, additional NuGet packages, or custom code. In a more complex scenario, you'll need to complete additional migration steps as detailed in the [ASP.NET Core Migration Guide](/aspnet/core/migration/index).
+In this section, you completed an upgrade for a simple, specific test scenario: a default ASP.NET MVC 5 app with no authentication, data access, additional NuGet packages, or custom code. In a more complex scenario, you'd need to complete additional migration steps as detailed in the [ASP.NET Core Migration Guide](/aspnet/core/migration/proper-to-2x/).

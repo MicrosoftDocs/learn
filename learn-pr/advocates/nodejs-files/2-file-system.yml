@@ -2,14 +2,17 @@
 uid: learn.azure.nodejs-files.2-file-system
 title: Work with the file system
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Work with the file system
   description: Use the "fs" module to work with the file system.
-  author: burkeholland
-  ms.author: buhollan
-  ms.date: 04/20/2020
-  ms.topic: interactive-tutorial
-  ms.prod: vs
-  ms.custom: team=cloud_advocates
+  author: diberry
+  ms.author: diberry
+  ms.date: 04/19/2024
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-js
   ms.contributors: buhollan-09032021
 durationInMinutes: 6
 content: |
@@ -25,3 +28,4 @@ quiz:
         - content: "Compose file and folder paths"
           isCorrect: false
           explanation: "The fs module is for reading files and folders, not for manipulating paths."
+

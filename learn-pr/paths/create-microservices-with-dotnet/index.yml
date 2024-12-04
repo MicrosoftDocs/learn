@@ -1,14 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.dotnet.create-microservices-with-dotnet
 metadata:
-  title: Create microservices with .NET and ASP.NET Core
-  description: Create independently deployable, highly scalable, and resilient services using the free and open-source .NET platform. With .NET you can use popular microservice technology like Docker, Kubernetes, Dapr, Azure Container Registry, and more for .NET and ASP.NET core applications and services.
+  title: Create cloud-native apps and services with .NET and ASP.NET Core
+  description: Create independently deployable, highly scalable, and resilient apps and services using the free and open-source .NET platform. With .NET you can use popular microservice technology like Docker, Kubernetes, Dapr, Azure Container Registry, and more for .NET and ASP.NET Core applications and services.
   ms.date: 07/28/2021
-  author: nishanil
-  ms.author: nanil
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
-title: Create microservices with .NET and ASP.NET Core
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.topic: learning-path
+title: Create cloud-native apps and services with .NET and ASP.NET Core
 summary: |
   Create independently deployable, highly scalable, and resilient services using the free and open-source .NET platform.
 prerequisites: |
@@ -25,9 +24,8 @@ roles:
 products:
 - dotnet
 - aspnet-core
-- dotnet-core
 - azure
-- azure-application-insights
+- azure-monitor
 - azure-container-registry
 - azure-kubernetes-service
 subjects:
@@ -35,12 +33,10 @@ subjects:
 modules:
 - learn.languages.dotnet-microservices
 - learn.languages.dotnet-deploy-microservices-kubernetes
-- learn.microservices-aspnet-core
 - learn.microservices-resiliency-aspnet-core
-- learn.microservices-logging-aspnet-core
+- learn.implement-observability-cloud-native-app-with-opentelemetry
+- learn.implement-compliance-cloud-native-applications
 - learn.microservices-configuration-aspnet-core
-- learn.microservices-data-aspnet-core
-- learn.microservices-apigateway-aspnet-core
 - learn.microservices-devops-aspnet-core
 trophy:
   uid: learn.dotnet.create-microservices-with-dotnet.trophy

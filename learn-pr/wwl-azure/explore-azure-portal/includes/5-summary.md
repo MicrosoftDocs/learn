@@ -1,1 +1,0 @@
-Your team will be building an Azure IoT solution and will need to work efficiently within the Azure portal UI. Reviewing the features of the Azure portal and exploring the GUI interface has prepared you for using the portal to create Azure service instances.

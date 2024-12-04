@@ -1,13 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.automate-machine-learning-workflows
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate machine learning workflows
-  description: "Learn about automation for machine learning, machine learning operations, and MLOps."
-  ms.date: 08/08/2022
+  description: Learn about automation for machine learning, machine learning operations, and MLOps.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.service: azure-machine-learning
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Automate machine learning workflows
 summary: Automate machine learning workflows with Azure Machine Learning pipelines, Azure Pipelines, and GitHub Actions.
 abstract: |
@@ -33,3 +37,4 @@ units:
 - learn.wwl.automate-machine-learning-workflows.summary
 badge:
   uid: learn.wwl.automate-machine-learning-workflows.badge
+

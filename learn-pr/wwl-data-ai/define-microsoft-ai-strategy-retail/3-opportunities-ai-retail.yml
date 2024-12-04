@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-retail.opportunities-ai-retail
+title: Opportunities for AI in retail
+metadata:
+  title: Opportunities for AI in retail
+  description: "Opportunities for AI in retail"
+  ms.date: 08/16/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-opportunities-ai-retail.md)]

@@ -2,14 +2,15 @@
 uid: learn.azdo.deploy-docker.2-why-containers
 title: Why are containers important?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Why are containers important?
   description: Understand the benefits of Docker containers and when to use them.
-  ms.date: 03/15/2023
+  ms.date: 12/05/2023
   author: ramiMSFT
   ms.author: rabououn
   ms.custom: devdivchpfy22, engagement-fy23
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-why-containers.md)]
@@ -49,3 +50,4 @@ quiz:
     - content: "Very little. The application should require no changes, but a Docker manifest that specifies application requirements will need to be added."
       isCorrect: true
       explanation: "The application doesn't need to account for Docker, but Docker needs to account for the application."
+

@@ -3,20 +3,19 @@ uid: learn.azure.spatial-audio-tutorials-mrtk
 metadata:
   title: Activate spatial audio for your HoloLens 2 application
   description: Activate spatial audio for your HoloLens 2 application
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.date: 02/12/2024
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: module
 title: Activate spatial audio for your HoloLens 2 application
 summary: Learn about spatial audio to enhance your learning experience. Explores the use of spatial audio by integrating it to a HoloLens 2 application.
 abstract: |
-  By the end of this module you will be able to:
-  - import Mixed Reality Toolkit (MRTK)
-  - import and enable the Microsoft Spatializer plugin and also to enable the spatial audio on your workstation. 
-  - spatialize the button interaction sounds and to use an audio clip to test spatialized button interaction.
-  - spatialize audio from an video source Try out your app on a HoloLens 2 or in the Unity editor. You'll see and hear the video, and the audio from the video is spatialized.
-  - enable and disable spatialization at run time, test out the app on a HoloLens 2 or in the Unity editor. In the app, you can now click the button to activate and deactivate spatialization of the audio.
+  By the end of this module, you'll be able to:
+  - Import the Mixed Reality Toolkit (MRTK).
+  - Import and enable the Microsoft Spatializer plugin and also enable the spatial audio on your workstation. 
+  - Spatialize the button interaction sounds and use an audio clip to test spatialized button interaction.
+  - Spatialize audio from a video source and try out your app on a HoloLens 2 or in the Unity editor. You'll see and hear the video, and the audio from the video is spatialized.
+  - Enable and disable spatialization at run time, test out the app on a HoloLens 2 or in the Unity editor. In the app, you can now click the button to activate and deactivate spatialization of the audio.
 iconUrl: /training/achievements/spatial-audio-tutorials-mrtk.svg
 levels:
 - beginner
@@ -30,13 +29,13 @@ products:
 - azure
 - mrtk
 prerequisites: |
-  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/develop/install-the-tools)
+  - A Windows 10 or 11 PC configured with [the correct tools](/windows/mixed-reality/develop/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - (Optional) A HoloLens 2 device configured for development
-  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
+  - Unity Hub with Unity 2021.3 or later installed and the Universal Windows Platform Build Support module added
   - [Set up a mixed reality project in Unity module](/training/modules/mixed-reality-toolkit-project-unity)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
-  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+  - Basic familiarity with Unity: interface, scene creation, package import, addition of GameObjects to a scene
 
 
 subjects:

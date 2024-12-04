@@ -6,9 +6,10 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.date: 12/09/2020
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-arm-template
 durationInMinutes: 6
 content: |
   [!include[](includes/4-secure-parameters.md)]

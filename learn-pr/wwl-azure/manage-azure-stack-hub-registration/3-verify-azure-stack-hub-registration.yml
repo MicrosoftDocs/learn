@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-azure-stack-hub-registration.verify-azure-stack-hub-registration
 title: Verify Azure Stack Hub registration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Verify Azure Stack Hub registration
   description: "Verify Azure Stack Hub registration"
   ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

@@ -3,18 +3,43 @@ uid: learn.wwl.sc-100-design-solutions-best-practices-priorities
 metadata:
   title: 'SC-100: Design solutions that align with security best practices and priorities'
   description: 'SC-100: Design solutions that align with security best practices and priorities'
-  ms.date: 04/05/2023
+  ms.date: 09/25/2024
   author: wwlpublish
-  ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: ceperezb
+  ms.topic: learning-path
 title: 'SC-100: Design solutions that align with security best practices and priorities'
 prerequisites: |
-  -   Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
-  -   Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
+  -   Conceptual knowledge of security policies, requirements, Zero Trust architecture, and management of hybrid environments.
+  -   Working experience with Zero Trust strategies, applying security policies, and developing security requirements based on business goals.
 summary: |
-  You learn how to use critical Microsoft security best practices such as the Cloud Adoption Framework (CAF), Well-Architected Framework (WAF), Microsoft Cybersecurity Reference Architecture (MCRA) to improve an organizations security posture, apply zero trust principles and minimize risk from emerging attacks.
-iconUrl: /training/achievements/generic-trophy.svg
+   You learn how to use critical Microsoft security best practices to improve an organizations security posture, apply Zero Trust principles, and minimize risk from emerging attacks. Frameworks discussed include the Cloud Adoption Framework (CAF), Well-Architected Framework (WAF), and Microsoft Cybersecurity Reference Architecture (MCRA).
+   
+   Here are all the learning paths in preparation for the SC-100 exam: Microsoft Cybersecurity Architect.
+   :::row:::
+   :::column:::
+     <img src="/training/achievements/sc-100-design-solutions-that-align-security-best-practices-priorities.svg" width="101" alt="Screenshot of the trophy for the Design solutions that align with security best practices and priorities learning path." role="presentation"></img>
+    
+     SC-100: Design solutions that align with security best practices and priorities
+   :::column-end:::
+   :::column:::
+     <img src="/training/achievements/sc-100-design-operations-identity-compliance-capabilities.svg" width="101" alt="Screenshot of the trophy for the SC-100: Design security operations, identity, and compliance capabilities learning path." role="presentation"></img>
+    
+     [SC-100: Design security operations, identity, and compliance capabilities](../sc-100-design-operations-identity-compliance-capabilities/index.yml)
+   :::column-end:::
+   :::row-end:::
+   :::row:::
+   :::column:::
+     <img src="/training/achievements/sc-100-design-security-solutions-applications-data.svg" width="101" alt="Screenshot of the trophy for the SC-100: Design security solutions for applications and data learning path." role="presentation"></img>
+    
+     [SC-100: Design security solutions for applications and data](../sc-100-design-security-solutions-applications-data/index.yml)
+   :::column-end:::
+   :::column:::
+     <img src="/training/achievements/sc-100-design-security-solutions-infrastructure.svg" width="101" alt="Screenshot of the trophy for the SC-100: Design security solutions for infrastructure learning path." role="presentation"></img>
+    
+     [SC-100: Design security solutions for infrastructure](../sc-100-design-security-solutions-infrastructure/index.yml)
+   :::column-end:::
+   :::row-end:::
+iconUrl: /training/achievements/sc-100-design-solutions-that-align-security-best-practices-priorities.svg
 levels:
 - advanced
 roles:
@@ -31,5 +56,6 @@ modules:
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework
 - learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark
 - learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware
+- learn.wwl.case-study-design-solutions-security-best-practices-priorities
 trophy:
   uid: learn.wwl.sc-100-design-solutions-best-practices-priorities.trophy

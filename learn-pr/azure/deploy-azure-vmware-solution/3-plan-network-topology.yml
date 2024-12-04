@@ -1,16 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-azure-vmware-solution.plan-network-topology
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan network topology for Azure VMware Solution deployment
   description: Plan network topology for Azure VMware Solution deployment.
-  ms.date: 03/19/2021
-  author: sbkuehn
-  ms.author: shkuehn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/01/2024
+  author: amycolyer
+  ms.author: amycolyer
+  ms.topic: unit
   ms.custom: team=cloud_advocates
-  ms.contributors: shkuehn-03222021
+  ms.contributors: shkuehn-03222021, orthomas-08092023
 title: Plan network topology for Azure VMware Solution deployment
 durationInMinutes: 10
 content: |
   [!include[](includes/3-plan-network-topology.md)]
+

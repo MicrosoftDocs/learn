@@ -3,11 +3,10 @@ uid: learn.wwl.sc-200-configure-your-azure-sentinel-environment
 metadata:
   title: 'SC-200: Configure your Microsoft Sentinel environment'
   description: 'SC-200: Configure your Microsoft Sentinel environment'
-  ms.date: 11/05/2021
+  ms.date: 10/14/2024
   author: wwlpublish
-  ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: kelawson
+  ms.topic: learning-path
 title: 'SC-200: Configure your Microsoft Sentinel environment'
 prerequisites: |
   - Fundamental understanding of Microsoft security, compliance, and identity products
@@ -21,7 +20,8 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
+- microsoft-defender
 subjects:
 - threat-protection
 modules:
@@ -30,5 +30,6 @@ modules:
 - learn.wwl.query-logs-azure-sentinel
 - learn.wwl.use-watchlists-azure-sentinel
 - learn.wwl.utilize-threat-intelligence-azure-sentinel
+- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel
 trophy:
   uid: learn.wwl.sc-200-configure-your-azure-sentinel-environment.trophy

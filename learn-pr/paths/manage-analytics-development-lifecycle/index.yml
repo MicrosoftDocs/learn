@@ -6,9 +6,7 @@ metadata:
   ms.date: 11/30/2022
   author: wwlpublish
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-power-bi
-  ms.service: powerbi
+  ms.topic: learning-path
 title: Manage the analytics development lifecycle
 prerequisites: |
   You should have experience with:
@@ -25,7 +23,6 @@ roles:
 products:
 - power-bi
 subjects:
-- data-ai
 - data-analytics
 - data-management
 modules:

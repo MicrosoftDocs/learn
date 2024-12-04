@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore-middleware.exercise-built-in-middleware
+
+title: Exercise - Use built-in middleware
+metadata:
+  title: Exercise - Use built-in middleware
+  description: This unit is an exercise that demonstrates how to use built-in middleware in an ASP.NET Core app.
+  ms.date: 8/29/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-built-in-middleware.md)]

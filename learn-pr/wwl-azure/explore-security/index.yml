@@ -1,23 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore security
   description: "Explore security"
-  ms.date: 01/31/2023
+  ms.date: 09/23/2024
   author: wwlpublish
-  ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: robbarefoot
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: azure-architecture-center
+  ai-usage: human-only
 title: Explore security
 summary: Surveys computer security and how people and computers are identified on computer networks. It surveys historical and modern security features.
 abstract: |
   After completing this module, you'll be able to:
-  - Analyze the need for computer security
-  - Summarize how modern computers verify identity
-  - Describe how biometrics work
-  - Explain how hackers try to disrupt security
-prerequisites: |
-  Basic knowledge of programming terminology.
+
+  -   Analyze the need for computer security
+
+  -   Summarize how modern computers verify identity
+
+  -   Describe how biometrics work
+
+  -   Explain how hackers try to disrupt security
+prerequisites: Basic knowledge of programming terminology.
 iconUrl: /learn/achievements/explore-security.svg
 levels:
 - beginner
@@ -27,8 +36,7 @@ roles:
 - k-12-educator
 - student
 products:
-- return-to-school
-- return-to-workplace
+- consumer
 subjects:
 - cloud-computing
 units:

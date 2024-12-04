@@ -1,4 +1,3 @@
-
 You can accomplish an effective desktop deployment by implementing the following basic guidelines:
 
  -  Take an inventory and establish a network map of the existing client computers, servers, and other relevant networking services to determine the installed application base and hardware types your organization currently has deployed. You should consider the organization's main operating center, branch offices, and other locations. You should document even small offices outside the corporate network and any users working remotely from home offices and while traveling.
