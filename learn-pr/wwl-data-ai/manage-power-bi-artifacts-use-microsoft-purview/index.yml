@@ -35,7 +35,6 @@ units:
 - learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.register-scan-tenant
 - learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.search-browse-assets
 - learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.view-lineage
-- learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.knowledge-check
 - learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.summary
 badge:
   uid: learn.wwl.manage-power-bi-artifacts-by-using-microsoft-purview.badge
