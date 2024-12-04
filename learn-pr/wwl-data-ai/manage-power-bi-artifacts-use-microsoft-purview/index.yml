@@ -32,7 +32,6 @@ subjects:
 - data-analytics
 - information-protection-governance
 units:
-- learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.view-lineage
 badge:
   uid: learn.wwl.manage-power-bi-artifacts-by-using-microsoft-purview.badge
 
