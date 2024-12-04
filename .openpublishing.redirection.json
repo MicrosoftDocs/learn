@@ -35273,6 +35273,11 @@
       "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/1-introduction.md",
       "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/9-knowledge-check.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
     }
   ]
 }
