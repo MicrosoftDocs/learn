@@ -11,7 +11,7 @@ title: Manage and optimize a Microsoft Fabric environment
 prerequisites: |
   Before starting this learning path, you should have experience with Microsoft Fabric or Power BI. You should also have a basic understanding of data engineering and management concepts.
 summary: |
-  "Microsoft Fabric is a Software-as-a-Service platform for data analytics. Learn how to manage and optimize your environment through Continuous Integration/Continuous Deployment (CI/CD), monitoring, performance optimization, and security."
+  Microsoft Fabric is a Software-as-a-Service platform for data analytics. Learn how to manage and optimize your environment through Continuous Integration/Continuous Deployment (CI/CD), monitoring, performance optimization, and security.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
