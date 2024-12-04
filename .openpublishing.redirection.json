@@ -35248,6 +35248,11 @@
       "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/6-assign-data-objects-data-activator.md",
       "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/7-create-triggers-data-activator.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
     }
   ]
 }
