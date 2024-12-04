@@ -27,6 +27,5 @@ subjects:
 - data-analytics
 - information-protection-governance
 units:
-- learn.wwl.catalog-data-artifacts-use-microsoft-purview.summary
 badge:
   uid: learn.wwl.catalog-data-artifacts-by-using-microsoft-purview.badge
