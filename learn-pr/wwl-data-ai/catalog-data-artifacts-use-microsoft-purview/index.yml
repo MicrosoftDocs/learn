@@ -29,7 +29,6 @@ subjects:
 units:
 - learn.wwl.catalog-data-artifacts-use-microsoft-purview.introduction
 - learn.wwl.catalog-data-artifacts-use-microsoft-purview.register-scan-data
-- learn.wwl.catalog-data-artifacts-use-microsoft-purview.classify-data
 - learn.wwl.catalog-data-artifacts-use-microsoft-purview.search-data-catalog
 - learn.wwl.catalog-data-artifacts-use-microsoft-purview.knowledge-check
 - learn.wwl.catalog-data-artifacts-use-microsoft-purview.summary
