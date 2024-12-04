@@ -25,7 +25,6 @@ subjects:
 modules:
 - learn.intro-to-microsoft-purview
 - learn.wwl.discover-trusted-data-use-azure-purview
-- learn.wwl.catalog-data-artifacts-use-microsoft-purview
 - learn.wwl.manage-power-bi-artifacts-use-microsoft-purview
 - learn.wwl.integrate-microsoft-purview-azure-synapse-analytics
 trophy:
