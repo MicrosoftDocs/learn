@@ -33,7 +33,6 @@ subjects:
 - information-protection-governance
 units:
 - learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.view-lineage
-- learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.summary
 badge:
   uid: learn.wwl.manage-power-bi-artifacts-by-using-microsoft-purview.badge
 
