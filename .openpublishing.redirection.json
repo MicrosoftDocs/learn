@@ -35293,6 +35293,121 @@
       "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/4-understand-triggers-conditions-actions-data-activator.md",
       "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/index.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/3-classify-data.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/1-introduction.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/5-knowledge-check.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/2-register-scan-data.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/4-search-data-catalog.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/6-summary.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/index.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/5-integrate.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/3-browse-assets.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/1-introduction.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/6-knowledge-check.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/2-search-browse-assets.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/7-summary.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/4-use-asset-power-bi.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/govern-data-across-enterprise/index.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/index.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/1-introduction.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/5-knowledge-check.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/2-register-scan-tenant.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/3-search-browse-assets.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/6-summary.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/4-view-lineage.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
     }
   ]
 }
