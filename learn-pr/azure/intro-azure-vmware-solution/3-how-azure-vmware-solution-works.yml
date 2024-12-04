@@ -23,7 +23,7 @@ quiz:
     - content: "Tier 1 gateways"
       isCorrect: false
       explanation: "Incorrect. The customer manages tier 1 gateways."
-    - content: "Lifecycle management of VMware software (ESXi, vCenter, and vSAN)"
+    - content: "Lifecycle management of VMware software (ESXi, vCenter Server, and vSAN)"
       isCorrect: true
       explanation: "Correct. Microsoft, in partnership with VMware, supports and maintains the lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
     - content: "Virtual machines"
@@ -40,16 +40,16 @@ quiz:
     - content: "Sixteen nodes"
       isCorrect: false
       explanation: "Incorrect. The maximum number of nodes in a cluster is 16."
-  - content: "What does the cloudAdmin role in the Azure VMware Solution vCenter do?"
+  - content: "What does the CloudAdmin role in the Azure VMware Solution vCenter Server do?"
     choices:
-    - content: "The local cloudadmin user sets up users in Active Directory."
+    - content: "The local CloudAdmin user sets up users in Active Directory."
       isCorrect: false
-      explanation: "Incorrect. The cloudadmin user is a member of the cloudAdmin role."
-    - content: "The cloudAdmin role creates and manages workloads in your private cloud."
+      explanation: "Incorrect. The CloudAdmin user is a member of the CloudAdmin role."
+    - content: "The CloudAdmin role creates and manages workloads in your private cloud."
       isCorrect: true
-      explanation: "Correct. The cloudAdmin role creates and manages workloads in your private cloud."
-    - content: "The cloudAdmin role has access to the ESXi hosts in Azure."
+      explanation: "Correct. The CloudAdmin role creates and manages workloads in your private cloud."
+    - content: "The CloudAdmin role has access to the ESXi hosts in Azure."
       isCorrect: false
-      explanation: "Incorrect. The cloudAdmin role doesn't have access to, and can't configure, specific management components that Microsoft supports and manages."
+      explanation: "Incorrect. The CloudAdmin role doesn't have access to, and can't configure, specific management components that Microsoft supports and manages."
   
 
