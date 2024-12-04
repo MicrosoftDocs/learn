@@ -35333,6 +35333,11 @@
       "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/index.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/5-integrate.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
     }
   ]
 }
