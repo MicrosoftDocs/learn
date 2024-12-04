@@ -32,7 +32,6 @@ subjects:
 - data-analytics
 - information-protection-governance
 units:
-- learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.introduction
 - learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.register-scan-tenant
 - learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.search-browse-assets
 - learn.wwl.manage-power-bi-artifacts-use-microsoft-purview.view-lineage
