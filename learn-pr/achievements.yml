@@ -4257,3 +4257,8 @@ achievements:
   title: Catalog data artifacts by using Microsoft Purview
   summary: Register, scan, catalog, and view data assets and their relevant details in Microsoft Purview.
   iconUrl: /training/achievements/3-catalog-data-artifacts-azure-by-using-azure-purview.svg
+- uid: learn.wwl.discover-trusted-data-using-azure-purview.badge
+  type: badge
+  title: Discover trusted data using Microsoft Purview
+  summary: Use Microsoft Purview Studio to discover trusted organizational assets for reporting.
+  iconUrl: /training/achievements/2-discover-data-artifacts-azure-by-using-azure-purview.svg
