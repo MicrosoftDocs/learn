@@ -30,7 +30,7 @@ You defined your strategy for the Tailwind Traders management group structure. N
 
 - **Consider subscription scale limits**. Subscriptions serve as a scale unit for component workloads. Large, specialized workloads like high-performance computing, IoT, and SAP are all better suited to use separate subscriptions. By having separate subscriptions for different Tailwind Traders groups or tasks, you can avoid [resource limits](/azure/azure-resource-manager/management/azure-subscription-service-limits) (such as a limit of 50 Azure Data Factory integrations). 
 
-- **Consider administrative management**. Subscriptions provide a management boundary, which allows for a clear separation of concerns. Will each subscription for Tailwind Traders need a separate administrator, or can you combine subscriptions? The Corporate management group could have a single subscription for both the HR and Legal departments. 
+- **Consider administrative management**. Subscriptions provide a management boundary, which allows for a clear separation of concerns. Does Tailwind Traders require separate administrators for each subscription? The Corporate management group could have a single subscription for both the HR and Legal departments. 
 
 - **Consider how to assign Azure policies**. Both management groups and subscriptions serve as a boundary for the assignment of Azure policies. Workloads like those for the Payment Card Industry (PCI) typically require extra policies to achieve compliance. Rather than using a management group to group workloads that require PCI compliance, you can achieve the same isolation with a subscription. These types of decisions ensure you don't have too many Tailwind Traders management groups with only a few subscriptions. 
 
