@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-performance.4-monitor-troubleshoot-performance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor and troubleshoot performance
   description: Monitor and troubleshoot performance
   ms.date: 03/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Monitor and troubleshoot performance
 durationInMinutes: 10
 content: |

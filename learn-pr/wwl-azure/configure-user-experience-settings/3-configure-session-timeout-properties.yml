@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-user-experience-settings.configure-session-timeout-properties
+title: Configure session timeout properties
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Configure session timeout properties
+  description: "Configure session timeout properties"
+  ms.date: 08/08/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-configure-session-timeout-properties.md)]

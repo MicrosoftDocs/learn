@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-azure-updates.deploy-updates
 title: Deploy updates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy updates
   description: "Deploy updates"
   ms.date: 09/24/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 4
 content: |

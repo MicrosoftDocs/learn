@@ -43,6 +43,8 @@ if a >= b:
     print(a)
 ```
 
+Output: `93`
+
 In Python, the body of an `if` statement must be indented. Any code following a test expression that isn't indented will always be run:
 
 ```python

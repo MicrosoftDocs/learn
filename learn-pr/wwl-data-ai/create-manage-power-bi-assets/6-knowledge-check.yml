@@ -4,17 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/03/2023
-  author: wwlpublish
+  ms.date: 11/12/2024
+  author: angierudduck
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 quiz:
   questions:
-  - content: "What feature must be enabled for you to manage Power BI datasets from external tools?"
+  - content: "What feature must be enabled for you to manage Power BI semantic models from external tools?"
     choices:
     - content: "Power BI Service API."
       isCorrect: false
@@ -24,26 +23,37 @@ quiz:
       explanation: "Correct. To do more than view, you need the read-write option enabled."
     - content: "Read-only XMLA endpoint."
       isCorrect: false
-      explanation: "Incorrect. Read-only won't let you make updates, only view."
-  - content: "What are the two views you can use to see the assets within a Power BI workspace?"
+      explanation: "Incorrect. Read-only doesn't let you make updates, only view."
+  - content: "Which Power BI file type allows you to track and manage changes using VS Code and Git?"
     choices:
-    - content: "List and lineage view."
+    - content: "Power BI Project *.pbip* file."
       isCorrect: true
-      explanation: "Correct. You can see line items or relationship representation with lineage view."
-    - content: "Line and relationship view."
+      explanation: "Correct. Power BI Projects store all of the metadata in flat files that can be used for version control."
+    - content: "Power BI Template *.pbit* file."
       isCorrect: false
-      explanation: "Incorrect. There's no relationship view."
-    - content: "File and lineage view."
+      explanation: "Incorrect. Power BI Templates are binary files."
+    - content: "Power BI Data Source *.pbids* file."
       isCorrect: false
-      explanation: "Incorrect. There's no file view."
-  - content: "If you're developing a report that relies on a global data source and you need to add more data sources for each continent, which solution below would you implement?"
+      explanation: "Incorrect. Power BI Data Source files are used to store a single data source connection without any other report data."
+  - content: An enterprise data analyst is tasked with creating a report based on a published semantic model. What should the analyst do to complete this task?
     choices:
-    - content: "Create dataset in Analysis Services with all data sources, then use row-level security to limit what data users see based on their location."
+    - content: The analyst should copy the existing semantic model and make changes to it.
       isCorrect: false
-      explanation: "Incorrect. While row-level security is valid to limit data, this would be cumbersome and a large dataset."
-    - content: "Create separate global and continent reports in Power BI Desktop, then use a Power BI service dashboard to highlight details for each location."
-      isCorrect: false
-      explanation: "Incorrect. This would separate the data, but would make many extra work and assets to maintain. Plus dashboards aren't interactive."
-    - content: "Create and publish a global dataset, then connect to the dataset through Power BI Desktop, and add other tables to create the specialized dataset for each location."
+      explanation: Incorrect. Copying and modifying the existing semantic model could lead to data integrity issues.
+    - content: The analyst should connect to the existing Power BI semantic model from Power BI Desktop.
       isCorrect: true
-      explanation: "Correct. By creating a core global dataset, you can reduce the size of continental reports and limit assets while maintaining functionality."
+      explanation: Correct. Connecting to the existing semantic model allows for reuse and ensures data integrity.
+    - content: The analyst should recreate the semantic model from scratch for the new report.
+      isCorrect: false
+      explanation: Incorrect. Recreating the semantic model from scratch is unnecessary and time-consuming if a suitable model already exists.
+  - content: A report developer in an organization is trying to connect to curated semantic models but is unsure which ones to use. They come across a model with a 'Promoted' badge. What does this imply?
+    choices:
+    - content: The model has been reviewed and certified by an organization-authorized reviewer as meeting the organization's quality standards.
+      isCorrect: false
+      explanation: Incorrect. This explanation refers to a 'Certified' badge, not a 'Promoted' badge.
+    - content: The creators of the model believe it's ready for sharing and reuse within the organization.
+      isCorrect: true
+      explanation: Correct. A 'Promoted' badge indicates that the creators of the item believe it's ready for sharing and reuse.
+    - content: The data in the model is a core source of organizational data and is regarded as the authoritative, single source of truth for certain kinds of organizational or business data.
+      isCorrect: false
+      explanation: Incorrect. This explanation refers to a 'Master data' badge, not a 'Promoted' badge.

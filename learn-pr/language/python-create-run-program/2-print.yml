@@ -7,9 +7,11 @@ metadata:
   ms.date: 01/19/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen, devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.custom:
+    - team=nextgen
+    - devdivchpfy22
+    - devx-track-python
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-print.md)]

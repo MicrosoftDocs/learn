@@ -1,4 +1,3 @@
-
 When you use Windows Information Protection, organizational data automatically encrypts when data downloads to or opens on a local device. Encryption protects the file data and associates the data with your enterprise identity.
 
 WIP policies then specify which trusted apps can use and manipulate that data. Enlightened apps such as Word or Microsoft Excel can work with organizational and personal data. When creating WIP policies, you can set four WIP-protection modes, which the following table lists, for managing that access.
@@ -15,20 +14,20 @@ WIP policies then specify which trusted apps can use and manipulate that data. E
 
 When you create policies in Intune, you can define which apps are protected, the level of protection provided, and how to find organizational data on your network.
 
-To create a WIP policy in Intune, perform the following:
+To create a WIP policy in Intune, perform the following steps:
 
-1.  Sign in to the **Microsoft Endpoint Manager admin center**.
-2.  Select **Apps** > **App protection policies**.
-3.  Select **Add a policy**, and then enter a name for the policy.
-4.  Select **Windows 10 and later** as the Platform.
-5.  Select **With Enrollment** as the Enrollment state.
-6.  Add protected apps.
-7.  Add any exempt apps.
-8.  In the Required settings blade, select the **Windows Information Protection** mode, and then set your corporate identity.
-9.  In the Advanced settings blade, define your network perimeter by adding network boundaries that define where apps can find and send corporate data.
-10. Upload a Data Recovery Agent (DRA) certificate.
-11. Choose other WIP settings, including whether to allow Azure RM with WIP.
-12. Select **OK**, and then select **Create**.
+ 1. **Sign in to the Microsoft Intune admin center**.
+ 2. Navigate to **Apps** > **App protection policies**.
+ 3. In the **App protection policies** pane, select **Add a policy**, and then fill in the following fields:
+    -  **Name**. Enter a name for the policy.
+    -  **Description**. Enter a description for the policy.
+    -  **Platform**. Select the platform for the policy.
+    -  **Enrollment state**: Choose Without enrollment for MAM or With enrollment for MDM.
+ 4. Select **Protected apps** and then select **Add apps**. You can add these types of apps:
+    -  **Recommended apps**. These are enlightened apps that work with WIP.
+    -  **Store apps**. These are apps that are available from Microsoft Store.
+    -  **Desktop apps**. These are signed Windows desktop apps.
+Please note that an application might return access denied errors after removing it from the list of protected apps. Rather than remove it from the list, you should uninstall and reinstall the application or exempt it from WIP policy.
 
 #### Allowed and exempt apps
 
@@ -58,14 +57,14 @@ The following table describes the different boundary type options.
 
 | Network element        | Description |
 | ---------------------- | ----------- |
-| Cloud resources        |Specifies URLs for cloud-based resources or applications such as SharePoint Online or Microsoft Visual Studio Codespace that should be treated as containing organizational data. You can make multiple entries by using the format URL1|URL2.|
+| Cloud resources        |Specifies URLs for cloud-based resources or applications such as SharePoint Online or Microsoft Visual Studio Codespace that should be treated as containing organizational data. You can make multiple entries by using the format **URL1**\|**URL2**.|
 | Protected domains      |Defines DNS suffixes for domains that should be treated as protected. Multiple entries are allowed by using the format domainname1,domainname2; for example, corp.adatum.com,sales.adatum.com.|
 | Network domains        |Defines the DNS suffixes that are used within your environment. Multiple entries are allowed by using the format domainname1,domainname2; for example, corp.adatum.com,sales.adatum.com.|
 | Proxy servers          |Specifies external-facing proxy server addresses and ports where WIP should protect traffic. For example, proxy.adatum.com:80;proxy2.adatum.com:137.|
 | Internal proxy servers |Specifies proxy servers that devices use to reach cloud-based resources. Uses the same format as enterprise proxy servers.|
 | IPv4 ranges            |Specifies the range of Internet Protocol version 4 (IPv4) addresses used in your network. Enter by using the format startingaddress-endingaddress, with multiple ranges separated by commas. This network element is required if you don't specify an enterprise Internet Protocol version 6 (IPv6) range.|
 | IPv6 ranges            |Specifies the range of IPv6 addresses used in your network. This network element is required if you don't specify enterprise IPv4 ranges, and it uses the same format as IPv4.|
-| Neutral resources      |Specifies authentication redirection endpoints for your company, such as Active Directory Federation Services endpoints. Enter by using the format URL1|URL2.|
+| Neutral resources      |Specifies authentication redirection endpoints for your company, such as Active Directory Federation Services endpoints. Enter by using the format **URL1**\|**URL2**.|
 
 #### Data Recovery Agent (DRA) certificate
 

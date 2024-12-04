@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge
-  ms.date: 09/30/2021
+  ms.date: 11/26/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 quiz:
   title: Check your knowledge
@@ -23,19 +22,19 @@ quiz:
       explanation: "The Dockerfile tells how to build your container, not the steps of your CI."
     - content: "In the package.json file"
       isCorrect: false
-      explanation: "The package.json file is widely used in NodeJS projects, it's not used to define a GitHub Action."
+      explanation: "The package.json file is widely used in NodeJS projects, but it's not used to define a GitHub Action."
   - content: "Which action do you use to publish the latest version of a Docker image to GitHub Container Registry?"
     choices:
-    - content: "docker push ghcr.io/OWNER/IMAGE_NAME"
+    - content: "```docker push ghcr.io/OWNER/IMAGE_NAME```"
       isCorrect: false
       explanation: "While this command pushes the image, it's not necessarily the latest version."
-    - content: "docker push ghcr.io/OWNER/IMAGE_NAME:latest"
+    - content: "```docker push ghcr.io/OWNER/IMAGE_NAME:latest```"
       isCorrect: true
       explanation: "This is the correct command to push the latest Docker image."
-    - content: "docker push latest ghcr.io/OWNER/IMAGE_NAME"
+    - content: "```docker push latest ghcr.io/OWNER/IMAGE_NAME```"
       isCorrect: false
-      explanation: "This is incorrect syntax."
-  - content: "When pulling the image to your local environment, which credentials are needed?"
+      explanation: "This syntax is incorrect."
+  - content: "When pulling an image to your local environment, which credentials are needed?"
     choices:
     - content: "Your GitHub username and a Personal Access Token"
       isCorrect: true

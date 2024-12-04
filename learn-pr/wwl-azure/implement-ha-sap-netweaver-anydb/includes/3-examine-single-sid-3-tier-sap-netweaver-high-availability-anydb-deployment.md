@@ -1,10 +1,8 @@
-
-
 The three-tier SAP Azure Resource Manager templates referenced earlier support high availability scenarios. To prepare a highly available infrastructure, when deploying the templates, set the **SYSTEMAVAILABILITY** parameter to **HA**.
 
 The templates create:
 
-- Azure VMs (and, if applicable, their managed disks)
+- Azure Virtual Machines (and, if applicable, their managed disks)
 - Network cards for all virtual machines, with associated IP addresses
 - Availability groups for:
 

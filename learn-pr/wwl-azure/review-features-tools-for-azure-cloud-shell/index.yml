@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.review-features-tools-for-azure-cloud-shell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review the features and tools for Azure Cloud Shell
   description: "This module covers Azure Cloud Shell and its features."
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-cloud-shell
 title: Review the features and tools for Azure Cloud Shell
 summary: This module covers Azure Cloud Shell and its features.
 abstract: |
@@ -31,14 +33,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:
@@ -50,3 +51,4 @@ units:
 - learn.wwl.review-features-tools-for-azure-cloud-shell.summary
 badge:
   uid: learn.wwl.review-features-tools-for-azure-cloud-shell.badge
+

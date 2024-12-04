@@ -1,4 +1,3 @@
-
 You can create a Redis cache using the Azure portal, the Azure CLI, or Azure PowerShell. 
 
 ## Create and configure an Azure Cache for Redis instance
@@ -36,13 +35,13 @@ Here are some common commands you can use:
 
 | Command | Description |
 |--|--|
-| `ping` | Ping the server. Returns "PONG". |
+| `ping` | Ping the server. Returns `PONG`. |
 | `set [key] [value]` | Sets a key/value in the cache. Returns "OK" on success. |
 | `get [key]` | Gets a value from the cache. |
 | `exists [key]` | Returns '1' if the **key** exists in the cache, '0' if it doesn't. |
 | `type [key]` | Returns the type associated to the value for the given **key**. |
 | `incr [key]` | Increment the given value associated with **key** by '1'. The value must be an integer or double value. This returns the new value. |
-| `incrby [key] [amount]` | Increment the given value associated with **key** by the specified amount. The value must be an integer or double value. This returns the new value. |
+| `incrby [key] [amount]` | Increment the given value associated with **key** by the specified amount. The value must be an integer or double value. Returns the new value. |
 | `del [key]` | Deletes the value associated with the **key**. |
 | `flushdb` | Delete *all* keys and values in the database. |
 
@@ -63,7 +62,7 @@ OK
 
 ### Adding an expiration time to values
 
-Caching is important because it allows us to store commonly used values in memory. However, we also need a way to expire values when they're stale. In Redis this is done by applying a time to live (TTL) to a key.
+Caching is important because it allows us to store commonly used values in memory. However, we also need a way to expire values when they're stale. In Redis expiring values is done by applying a time to live (TTL) to a key.
 
 When the TTL elapses, the key is automatically deleted, exactly as if the DEL command were issued. Here are some notes on TTL expirations.
 
@@ -91,7 +90,7 @@ To connect to an Azure Cache for Redis instance, you need several pieces of info
 
 * The host name is the public Internet address of your cache, which was created using the name of the cache. For example, `sportsresults.redis.cache.windows.net`.
 
-* The access key acts as a password for your cache. There are two keys created: primary and secondary. You can use either key, two are provided in case you need to change the primary key. You can switch all of your clients to the secondary key, and regenerate the primary key. This would block any applications using the original primary key. Microsoft recommends periodically regenerating the keys - much like you would your personal passwords.
+* The access key acts as a password for your cache. There are two keys created: primary and secondary. You can use either key. Two are provided in case you need to change the primary key. You can switch all of your clients to the secondary key, and regenerate the primary key. This would block any applications using the original primary key. Microsoft recommends periodically regenerating the keys - much like you would your personal passwords.
 
 > [!WARNING]
 > Your access keys should be considered confidential information, treat them like you would a password. Anyone who has an access key can perform any operation on your cache!

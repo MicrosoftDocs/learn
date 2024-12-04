@@ -2,9 +2,9 @@
 
 Examples include:
 
-- Flooding the network with requests
-- Absorbing memory and CPU processes
-- Crashing data stores with an overwhelming number of requests
+- Flooding the network with requests.
+- Absorbing memory and CPU processes.
+- Crashing data stores with an overwhelming number of requests.
 
 ## Elements and interactions at risk from denial of service
 
@@ -29,10 +29,10 @@ Examples include:
 
 **Availability** ensures your system is up and running for users. Examples include:
 
-- Using network access-control lists to control incoming and outgoing traffic
-- Using elastic resources to manage growing or shrinking usage
-- Monitoring the system to detect anomalies
-- Enabling operating-system flags to handle memory and CPU processes
+- Using network access-control lists to control incoming and outgoing traffic.
+- Using elastic resources to manage growing or shrinking usage.
+- Monitoring the system to detect anomalies.
+- Enabling operating-system flags to handle memory and CPU processes.
 
 ### Common security controls to reduce or eliminate risk
 

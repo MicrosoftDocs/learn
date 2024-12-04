@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-access.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/20/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What role should be assigned to allow a user to manage all aspects of Azure Virtual Desktop host pools, including access to resources?"
+    choices:
+    - content: "Application Group Reader"
+      isCorrect: false
+      explanation: "That's incorrect. The Application Group Reader role lets you view everything in the app group and won't allow you to make any changes."
+    - content: "Host Pool Contributor"
+      isCorrect: true
+      explanation: "That's correct. The Host Pool Contributor role lets you manage all aspects of host pools, including access to resources."
+    - content: "Workspace Contributor"
+      isCorrect: false
+      explanation: "That's incorrect. The Workspace Contributor role lets you manage all aspects of workspaces. To get information on applications added to the app groups, you'll also need to be assigned the Application Group Reader role."
+  - content: "A system administrator needs to view and remove session hosts, and change drain mode in a Desktop Virtualization environment. Which role should be assigned to the administrator?"
+    choices:
+    - content: "Desktop Virtualization Virtual Machine Contributor"
+      isCorrect: false
+      explanation: "Incorrect. This role is used to allow the Azure Virtual Desktop Resource Provider to create, delete, update, start, and stop virtual machines, not to manage session hosts."
+    - content: "Desktop Virtualization Power On Contributor"
+      isCorrect: false
+      explanation: "Incorrect. This role is used to allow the Azure Virtual Desktop Resource Provider to start virtual machines, not to manage session hosts."
+    - content: "Desktop Virtualization Session Host Operator"
+      isCorrect: true
+      explanation: "Correct. The Desktop Virtualization Session Host Operator role allows viewing and removing session hosts, and changing drain mode."
+  - content: "A system administrator is tasked with managing all aspects of a host pool in Azure Virtual Desktop. Which role should the administrator be assigned to successfully complete this task?"
+    choices:
+    - content: "Desktop Virtualization Workspace Contributor"
+      isCorrect: false
+      explanation: "Incorrect. The Desktop Virtualization Workspace Contributor role allows managing all aspects of workspaces, not host pools."
+    - content: "Desktop Virtualization User"
+      isCorrect: false
+      explanation: "Incorrect. The Desktop Virtualization User role allows users to use an application on a session host from an application group as a non-administrative user."
+    - content: "Desktop Virtualization Host Pool Contributor"
+      isCorrect: true
+      explanation: "Correct. The Desktop Virtualization Host Pool Contributor role allows managing all aspects of a host pool."
+  - content: "A system administrator is tasked with setting up authentication for Azure Virtual Desktop. They need to ensure that users can authenticate using a smart card. Which of the following steps should they take?"
+    choices:
+    - content: "Configure AD FS for user certificate authentication and enable single sign-on"
+      isCorrect: false
+      explanation: "Incorrect. While configuring AD FS for user certificate authentication is correct, enabling single sign-on is not necessary for smart card authentication."
+    - content: "Enable passwordless authentication and configure Microsoft Entra certificate based authentication"
+      isCorrect: false
+      explanation: "Incorrect. Passwordless authentication is not required for smart card authentication. The key step is to configure Microsoft Entra certificate based authentication."
+    - content: "Configure AD FS for user certificate authentication or configure Microsoft Entra certificate based authentication"
+      isCorrect: true
+      explanation: "Correct. To use a smart card to authenticate to Microsoft Entra ID, the system administrator must either configure AD FS for user certificate authentication or configure Microsoft Entra certificate based authentication."

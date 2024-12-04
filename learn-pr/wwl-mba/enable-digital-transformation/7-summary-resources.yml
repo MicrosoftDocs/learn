@@ -2,13 +2,14 @@
 uid: learn-wwl.enable-digital-transformation.5-summary-and-resources
 title: Summary and resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary and resources
   description: "Summary and resources"
   ms.date: 10/14/2020
   author: raniabayoumy
   ms.author: rabayoum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 2
 content: |

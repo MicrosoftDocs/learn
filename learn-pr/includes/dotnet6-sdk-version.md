@@ -12,4 +12,4 @@ Output similar to the following appears:
 6.0.100 [C:\program files\dotnet\sdk]
 ```
 
-Ensure that a version that starts with `6` is listed. If none is listed or the command isn't found, [install the most recent .NET 6.0 SDK](https://dotnet.microsoft.com/download).
+Ensure that a version that starts with `6` is listed. If none is listed or the command isn't found, [install the most recent .NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).

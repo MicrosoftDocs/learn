@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.edit-code-using-any-device.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Test your knowledge of Visual Studio Code for the Web."
+  ms.date: 01/22/2024
+  author: olguzzar
+  ms.author: olguzzar
+  ms.topic: unit
+durationInMinutes: 2
+
+content: |
+quiz:
+  questions:
+  - content: "Which use case isn't suitable for using VS Code for the Web?"
+    choices:
+    - content: "Making lightweight code changes."
+      isCorrect: false
+      explanation: "Visual Studio Code for the Web supports making lightweight code changes."
+    - content: "Reviewing pull requests in the browser."
+      isCorrect: false
+      explanation: "Visual Studio Code for the Web supports reviewing pull requests."
+    - content: "Using the integrated source control explorer."
+      isCorrect: false
+      explanation: "Visual Studio Code for the Web supports using the integrated source control explorer."
+    - content: "Running and debugging code."
+      isCorrect: true
+      explanation: "Visual Studio Code for the Web doesn't support running and debugging code."
+    
+  - content: "How are repository files stored using the Remote Repositories extension?"
+    choices:
+    - content: "Cloud Changes."
+      isCorrect: false
+      explanation: "Cloud Changes allow you to bring your edits to a different environment."
+    - content: "Virtual workspaces."
+      isCorrect: true
+      explanation: "Repository files are stored using virtual workspaces, which simulate having local files while getting the content from somewhere else."
+    - content: "Remote tunnels."
+      isCorrect: false
+      explanation: "Remote tunnels allow you to bring your own compute to Visual Studio Code for the Web."
+  - content: "What command allows you to move to a more powerful environment?"
+    choices:
+    - content: "Sync Settings."
+      isCorrect: false
+      explanation: "Sync Settings doesn't enable you to move to a more powerful environment."
+    - content: "Continue Working On..."
+      isCorrect: true
+      explanation: "Continue Working On... enables you to move to a more powerful environment."
+    - content: "Open Remote Repository."
+      isCorrect: false
+      explanation: "Opening a remote repository doesn't enable you to move to a more powerful environment."
+    - content: "Publish to GitHub."
+      isCorrect: false
+      explanation: "Publishing to GitHub doesn't enable you to move to a more powerful environment."

@@ -4,10 +4,10 @@ title: List the virtual machine configuration versions
 metadata:
   title: List the virtual machine configuration versions
   description: "List the virtual machine configuration versions"
-  ms.date: 12/12/2022
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/22/2020
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
+  ms.topic: learning-path
 title: Introduction to Python for data science
 summary: |
   Welcome to the introduction to Python for data science. The modules in this learning path pair with in-person workshops that run in Microsoft Reactors, and they're also standalone learning resources. That is, you don't have to come to a workshop to benefit from them.
@@ -35,8 +34,6 @@ roles:
 - data-scientist
 products:
 - azure
-subjects:
-- development-tools
 modules:
 - learn.reactors.python-data-science
 - learn.reactors.numpy-data-science

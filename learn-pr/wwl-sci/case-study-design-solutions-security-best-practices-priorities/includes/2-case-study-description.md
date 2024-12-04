@@ -36,7 +36,7 @@ Before you start designing the solution based on Contoso's requirements, conside
 - What methods would you recommend to mitigate the potential impact of ransomware that copies Microsoft 365-hosted content, encrypts it, and deletes the original?
 - What methods would you recommend to mitigate the potential impact of ransomware that attempts to copy data outside of a Microsoft 365 tenant?
 - What would you recommend to mitigate ransomware risks in regard to Microsoft 365 collaboration and email services?
-- Which are the data protection integration points between Microsoft 365 services and Microsoft 365 Defender products?
+- Which are the data protection integration points between Microsoft 365 services and Microsoft Defender XDR products?
 - What are the endpoint protection integration points available in a Microsoft 365 environment?
 - How would you enhance identity protection in Microsoft 365 and Microsoft Azure environments? 
 

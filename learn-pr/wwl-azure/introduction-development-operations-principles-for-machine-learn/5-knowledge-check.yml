@@ -2,13 +2,19 @@
 uid: learn.wwl.introduction-development-operations-principles-for-machine-learn.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 08/08/2022
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -36,3 +42,4 @@ quiz:
     - content: "Planning"
       isCorrect: false
       explanation: "Incorrect. Planning should occur before working on the code."
+

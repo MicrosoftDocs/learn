@@ -2,14 +2,16 @@
 uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.6-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 6
 content: |
   [!include[](includes/6-summary.md)]
+

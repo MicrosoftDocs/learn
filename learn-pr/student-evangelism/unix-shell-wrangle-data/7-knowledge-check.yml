@@ -7,11 +7,10 @@ metadata:
   ms.date: 06/15/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2
-content: Choose the best response for each question. Then select **Check your answers**.
+content: Choose the best response for each question. 
 quiz:
   title: Check your knowledge
   questions:
@@ -26,27 +25,27 @@ quiz:
           explanation: "Incorrect. The correct syntax for the `head` command is `-n 3`."
         - content: "`wc -l * | sort -n | head -n 3`"
           isCorrect: true
-          explanation: "Correct. This command will count the lines in a file, sort the output in ascending order (numerical), and display the first three lines."
+          explanation: "Correct. This command counts the lines in a file, sort the output in ascending order (numerical), and display the first three lines."
         - content: "`wc -l * | head -n 3 | sort -n`"
           isCorrect: false
-          explanation: "Incorrect. This command will count the lines in a file, select the first three lines, and sort the output in ascending order (numerical)."
+          explanation: "Incorrect. This command counts the lines in a file, select the first three lines, and sort the output in ascending order (numerical)."
     
     - content: "What will the regular expression `Fr[ea]nc[eh]` match?"
       choices:
-        - content: "French, France, Frence, Franch"
+        - content: "`French, France, Frence, Franch`"
           isCorrect: true
-          explanation: "Correct. The way this regular expression is constructed, it will match misspellings such as Frence and Franch."
-        - content: "Frenche, Franceh, Frenceh, Franche"
+          explanation: "Correct. The way this regular expression is constructed, it matches misspellings such as Frence and Franch."
+        - content: "`Frenche, Franceh, Frenceh, Franche`"
           isCorrect: false
-          explanation: "Incorrect. The way this regular expression is constructed, it will match only one of the characters in each list at a time."
-        - content: "France, French"
+          explanation: "Incorrect. The way this regular expression is constructed, it matches only one of the characters in each list at a time."
+        - content: "`France, French`"
           isCorrect: false
-          explanation: "Incorrect. The way this regular expression is constructed, it will match misspellings such as Franch and Frence."
-        - content: "Freanceh, Fraenche"
+          explanation: "Incorrect. The way this regular expression is constructed, it matches misspellings such as Franch and Frence."
+        - content: "`Freanceh, Fraenche`"
           isCorrect: false
-          explanation: "Incorrect. The way this regular expression is constructed, it will match only one of the characters in each list at a time."
+          explanation: "Incorrect. The way this regular expression is constructed, it matches only one of the characters in each list at a time."
     
-    - content: "The `-v` option to the `grep` command inverts pattern matching so that only lines that don't match the pattern are printed. Which of the following commands will find all files in the **/data** directory whose names end in `s.txt`, but whose names also don't contain the string `net`? Examples are `shuttles.txt` or `software.txt`, but not `planets.txt`."
+    - content: "The `-v` option to the `grep` command inverts pattern matching so that only lines that don't match the pattern are printed. Which of the following commands finds all files in the **/data** directory whose names end in `s.txt`, but whose names also don't contain the string `net`? Examples are `shuttles.txt` or `software.txt`, but not `planets.txt`."
       choices:
         - content: "`find data -name *s.txt | grep -v net`"
           isCorrect: false
@@ -57,11 +56,11 @@ quiz:
         - content: "`find data -name '*s.txt' | grep -v net`"
           isCorrect: true
           explanation: "Correct. Putting the match expression in quotation marks prevents the shell from expanding it, so it gets passed to the find command."
-        - content: "None of the above"
+        - content: "None of these commands"
           isCorrect: false
           explanation: "Incorrect. The correct answer is `find data -name '*s.txt' | grep -v net`."
 
-    - content: "Suppose you want to delete some processed data files and only keep your raw files and processing script to save storage. The raw files end in `.dat`, and the processed files end in `.txt`. Which of the following solutions would remove **all** of the processed data files, and no other files?"
+    - content: "Suppose you want to delete some processed data files and save storage by only keeping your raw files and processing script. The raw files end in `.dat`, and the processed files end in `.txt`. Which of the following solutions would remove **all** of the processed data files, and no other files?"
       choices:
         - content: "`rm ?.txt`"
           isCorrect: false
@@ -71,7 +70,7 @@ quiz:
           explanation: "Correct. This expression would remove all the files that end with a `.txt` extension."
         - content: "`rm * .txt`"
           isCorrect: false
-          explanation: "Incorrect. The shell would expand the asterisk (`*`) to match everything in the current directory. This command would try to remove all matched files and an additional file named `.txt`."
+          explanation: "Incorrect. The shell would expand the asterisk (`*`) to match everything in the current directory. This command would try to remove all matched files and another file named `.txt`."
         - content: "`rm *.*`"
           isCorrect: false
           explanation: "Incorrect. The shell would expand `*.*` to match all files with any extension. This command would delete all files."

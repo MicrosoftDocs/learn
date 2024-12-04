@@ -7,7 +7,14 @@ This unit will discuss solutions for the following types of security workflows:
 
 ## Microsoft cloud security benchmark controls for incident response
 
-The following table summarizes the control recommendations for incident response from the Microsoft cloud security benchmark. For a complete discussion of these controls, as well as guidance for specific cloud platforms, see [Microsoft cloud security benchmark - Incident Response](https://learn.microsoft.com/security/benchmark/azure/mcsb-incident-response)
+The following table summarizes the control recommendations for incident response from the Microsoft cloud security benchmark. For a complete discussion of these controls, as well as guidance for specific cloud platforms, see [Microsoft cloud security benchmark - Incident Response](/security/benchmark/azure/mcsb-incident-response)
+
+Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
+
+In the table below, we have included controls from the full baseline where:
+
+* Security controls were *supported* but *not* enabled by default
+* There was explicit guidance which contained action to be taken on the part of the customer
 
 | Control Number | Title | Summary |
 |---|---|---|
@@ -24,7 +31,7 @@ The following table summarizes the control recommendations for incident response
 
 ### Analyst
 <!--
-[](https://learn.microsoft.com/azure/sentinel/incident-tasks#follow-tasks-when-handling-an-incident)
+[](/azure/sentinel/incident-tasks#follow-tasks-when-handling-an-incident)
 -->
 
 
@@ -38,7 +45,7 @@ Mark a task complete by selecting its "checkbox" circle.
 
 ![Screenshot of incident tasks panel for analysts on incident details screen.](../media/incident-details-screen.png)
 <!--
-[](https://learn.microsoft.com/azure/sentinel/incident-tasks#add-tasks-to-an-incident-on-the-spot)
+[](/azure/sentinel/incident-tasks#add-tasks-to-an-incident-on-the-spot)
 -->
 
 
@@ -46,13 +53,13 @@ Mark a task complete by selecting its "checkbox" circle.
 
 You can add tasks to an open incident that you're working on, either to give yourself reminders of actions you've discovered a need to take, or to record actions that you've taken of your own initiative that don't appear in the task list. Tasks added in this way will apply only to the open incident.
 <!--
-[](https://learn.microsoft.com/azure/sentinel/incident-tasks#workflow-creator)
+[](/azure/sentinel/incident-tasks#workflow-creator)
 -->
 
 
 ### Workflow creator
 <!--
-[](https://learn.microsoft.com/azure/sentinel/incident-tasks#add-tasks-to-incidents-with-automation-rules)
+[](/azure/sentinel/incident-tasks#add-tasks-to-incidents-with-automation-rules)
 -->
 
 
@@ -70,7 +77,7 @@ Consider that the order in which tasks appear in your incident is determined by 
 See which incidents are covered by existing automation rules and tasks, before you create a new automation rule.  
 Use the **Action** filter on the **Automation rules** list to see only those rules that add tasks to incidents, and see which analytics rules those automation rules apply to, to understand which incidents those tasks will be added to.
 <!--
-[](https://learn.microsoft.com/azure/sentinel/incident-tasks#add-tasks-to-incidents-with-playbooks)
+[](/azure/sentinel/incident-tasks#add-tasks-to-incidents-with-playbooks)
 -->
 
 
@@ -96,7 +103,7 @@ Consider the following scenarios as examples:
     -   If the IP address is malicious, the playbook adds a certain task (say, "Block this IP address").
     -   Otherwise, the playbook takes no further action.
 <!--
-[](https://learn.microsoft.com/azure/sentinel/incident-tasks#use-automation-rules-or-playbooks-to-add-tasks)
+[](/azure/sentinel/incident-tasks#use-automation-rules-or-playbooks-to-add-tasks)
 -->
 
 
@@ -115,7 +122,7 @@ For SIEM solutions like Microsoft Sentinel, the most common forms of CTI are thr
 
 Integrate threat intelligence (TI) into Microsoft Sentinel through the following activities:
 
--   **Import threat intelligence** into Microsoft Sentinel by enabling **data connectors** to various TI [platforms](https://learn.microsoft.com/azure/sentinel/connect-threat-intelligence-tip) and [feeds](https://learn.microsoft.com/azure/sentinel/connect-threat-intelligence-taxii).
+-   **Import threat intelligence** into Microsoft Sentinel by enabling **data connectors** to various TI [platforms](/azure/sentinel/connect-threat-intelligence-tip) and [feeds](/azure/sentinel/connect-threat-intelligence-taxii).
     
 -   **View and manage** the imported threat intelligence in **Logs** and in the **Threat Intelligence** blade of Microsoft Sentinel.
     
@@ -124,9 +131,9 @@ Integrate threat intelligence (TI) into Microsoft Sentinel through the following
 -   **Visualize key information** about your imported threat intelligence in Microsoft Sentinel with the **Threat Intelligence workbook**.
     
 
-Microsoft enriches all imported threat intelligence indicators with [GeoLocation and WhoIs data](https://learn.microsoft.com/azure/sentinel/understand-threat-intelligence?source=recommendations#view-your-geolocation-and-whois-data-enrichments-public-preview), which is displayed together with other indicator details.
+Microsoft enriches all imported threat intelligence indicators with [GeoLocation and WhoIs data](/azure/sentinel/understand-threat-intelligence?source=recommendations#view-your-geolocation-and-whois-data-enrichments-public-preview), which is displayed together with other indicator details.
 
-Threat Intelligence also provides useful context within other Microsoft Sentinel experiences such as **Hunting** and **Notebooks**. For more information, see [Jupyter Notebooks in Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/using-threat-intelligence-in-your-jupyter-notebooks/ba-p/860239) and [Tutorial: Get started with Jupyter notebooks and MSTICPy in Microsoft Sentinel](https://learn.microsoft.com/azure/sentinel/notebook-get-started).
+Threat Intelligence also provides useful context within other Microsoft Sentinel experiences such as **Hunting** and **Notebooks**. For more information, see [Jupyter Notebooks in Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/using-threat-intelligence-in-your-jupyter-notebooks/ba-p/860239) and [Tutorial: Get started with Jupyter notebooks and MSTICPy in Microsoft Sentinel](/azure/sentinel/notebook-get-started).
 
 ## Threat hunting in Sentinel
 

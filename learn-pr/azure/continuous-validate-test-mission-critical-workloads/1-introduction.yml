@@ -2,13 +2,15 @@
 uid: learn.continuous-validate-test-mission-critical-workloads.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: Learn the objectives of this training module about continuous validation.
-  ms.date: 01/16/2023
+  description: Learn the objectives of this training module about continuous validation. View links to a couple of example scenarios.
+  ms.date: 07/31/2024
   author: sebader
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/1-introduction.md)]
+

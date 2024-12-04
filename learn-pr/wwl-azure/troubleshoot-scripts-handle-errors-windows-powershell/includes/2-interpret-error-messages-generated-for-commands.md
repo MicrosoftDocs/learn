@@ -5,3 +5,4 @@ When you run Windows PowerShell commands, you'll sometimes encounter error messa
 - You attempted to communicate with a computer that's offline.
 
 When errors occur, they're stored in the `$Error` array. The most recent error is always at index zero. When a new error is generated, it's inserted at `$Error[0]`, and the index of other errors is increased by one. It can be useful to review errors in `$Error` whenever you need to review a previous error message. For example, if you clear the screen, you can use `$Error` to review the most recent error message.
+

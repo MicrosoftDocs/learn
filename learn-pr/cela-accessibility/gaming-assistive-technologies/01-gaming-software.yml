@@ -4,11 +4,10 @@ title: Gaming software assistive technology
 metadata:
   title: Gaming software assistive technology
   description: This content is part of the Gaming Assistive Technologies module.
-  ms.date: 11/28/2021
+  ms.date: 11/06/2024
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
-  ms.prod: learning-gaming-accessibility
+  ms.topic: unit
 durationInMinutes: 16
 content: |
   [!include[](includes/01-gaming-software.md)]
@@ -36,4 +35,4 @@ quiz:
       explanation: "Incorrect. It's important to provide customers with documentation about your product's accessibility status prior to their purchase. This approach doesn't actively support assistive technology users in playing your game."
     - content: "Provide in-game assistive technologies for players such as screen narration, magnification tools, and contrast settings."
       isCorrect: true
-      explanation: "Correct. This would be the best approach to support players who use assistive technology for scenarios where platform or third-party assistive technology isn't compatible, and in general."
+      explanation: "Correct. This is the best approach to support players who use assistive technology for scenarios where platform or third-party assistive technology isn't compatible, and in general."

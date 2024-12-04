@@ -2,7 +2,7 @@
 
 The Contoso IT team has questions about how to migrate an on-premises file server to Azure, and how to ensure that important file shares are replicated throughout the organization without requiring DFS. 
 
-To answer the IT teams questions, you learned in this module how to deploy Azure File Sync, how to use Storage Migration Services to migrate file servers to Azure, and how to migrate from DFS. 
+To answer the IT team's questions, you learned in this module how to configure Azure Files, deploy Azure File Sync, manage cloud tiering, and how to migrate from DFS replication to Azure File Sync.
 
 Now, you can share with the team the ways that Azure File Sync offers the tools necessary to migrate shared folders and DFS content to Azure services.
 

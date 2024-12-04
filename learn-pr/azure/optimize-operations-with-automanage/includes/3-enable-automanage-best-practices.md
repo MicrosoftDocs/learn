@@ -17,15 +17,15 @@ If you don't have an Azure subscription, [create an account](https://azure.micro
     :::image type="content" source="../media/zero-vm-list-view.png" alt-text="Screenshot of enablement on existing VM.":::
 1. On the **Basics** tab, select your profile type: **Azure best practices: Production** or **Azure best practices: Dev/Test**:
     :::image type="content" source="../media/existing-vm-quick-create.png" alt-text="Screenshot of choices for configuration profiles.":::
-    The profile type you select will determine the services and settings applied to your machine(s). To view the details for the different profiles, select **View Azure best practices profiles**:
+    The profile type you select determines the services and settings applied to your machine(s). To view the details for the different profiles, select **View Azure best practices profiles**:
     :::image type="content" source="../media/browse-production-profile.png" alt-text="Screenshot of services and settings for each profile.":::
 1. Select the **Machines** tab, then check the box for the machine(s) you want to enable for Automanage:
     :::image type="content" source="../media/existing-vm-select-machine.png" alt-text="Screenshot showing how to select from a list of available virtual machines.":::
-1. Select the Review + Create tab to review the machine(s) you've chose, then select the **Create** button.
+1. Select the Review + Create tab to review the machine(s) that you chose, then select the **Create** button.
 
 ## Enable Azure Automanage using Azure Resource Manager (ARM) templates
 
-You can onboard a VM to Automanage using an ARM template using the following template. This ARM template will create a configuration profile assignment for your specified Azure Arc-enabled machine:
+You can onboard a VM to Automanage using an ARM template using the following template. This ARM template creates a configuration profile assignment for your specified Azure Arc-enabled machine:
 
 ```json
 {
@@ -56,7 +56,7 @@ The `configurationProfile` value can be one of the following values:
 
 - `"/providers/Microsoft.Automanage/bestPractices/AzureBestPracticesProduction"`
 - `"/providers/Microsoft.Automanage/bestPractices/AzureBestPracticesDevTest"`
-- `"/subscriptions/[sub ID]/resourceGroups/resourceGroupName/providers/Microsoft.Automanage/configurationProfiles/customProfileName (for custom profiles)`
+- `"/subscriptions/[sub ID]/resourceGroups/resourceGroupName/providers/Microsoft.Automanage/configurationProfiles/customProfileName (for custom profiles)"`
 
 To deploy the templates, follow these steps:
 
@@ -75,10 +75,10 @@ You can enable Automanage for multiple VMs using a built-in Azure policy.
 1. In the search bar, search for and select **Policy**.
 1. In the menu, select **Definitions**.
 1. In the **Categories** drop-down, select **Automanage**.
-    The list will update to include the following policies:
+    The list updates to include the following policies:
     - Configure virtual machines to be onboarded to Azure Automanage 
     - Configure virtual machines to be onboarded to Azure Automanage with Custom Configuration Profile
-1. Select the applicable policy. You will then be able to view its **Definition** tab.
+1. Select the applicable policy. After selection, you're able to view its **Definition** tab.
     > [!NOTE]
     > The Azure Policy definition is used to set Automanage parameters like the configuration profile. It also sets filters that ensure the policy applies only to the correct VMs.
 1. Select the **Assign** button to create an assignment.

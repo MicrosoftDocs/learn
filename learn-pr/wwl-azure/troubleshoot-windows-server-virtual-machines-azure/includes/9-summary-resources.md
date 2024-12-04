@@ -1,6 +1,6 @@
-In this module, you’ve learned that you must connect to your Azure VMs using specific technologies. This connectivity can impact the approach that you take in troubleshooting Windows Server issues. For example, using just-in-time access or Azure Bastion can introduce complexities. Indeed, as you discovered, configuration issues with those services can severely hinder remote connectivity. You also learned about the approaches you must take to resolve Windows Server VM startup, connectivity, extensions, and performance issues. In addition, you learned how to troubleshoot storage and encryption. You should now be able to troubleshoot common issues with Azure-hosted VMs running Windows Server.
+In this module, you learned that you must connect to your Azure VMs using specific technologies. This connectivity can affect the approach that you take in troubleshooting Windows Server issues. For example, using just-in-time access or Azure Bastion can introduce complexities. Indeed, as you discovered, configuration issues with those services can severely hinder remote connectivity. You also learned about the approaches you must take to resolve Windows Server VM startup, connectivity, extensions, and performance issues. In addition, you learned how to troubleshoot storage and encryption. You should now be able to troubleshoot common issues with Azure-hosted VMs running Windows Server.
 
-Now that you have reviewed this module, you should be able to:
+Now that you reviewed this module, you should be able to:
 
 - Troubleshoot VM deployment and extension issues.
 

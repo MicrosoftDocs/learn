@@ -1,5 +1,4 @@
-
-Imagine that you work for a consulting company that builds workflows for universities. You notice many of these processes are similar but require minor customization for each client. You need to dynamically create, package, and deploy the workflows in as efficient a manner as possible.
+Imagine that you work for a consulting company that builds workflows for universities. You notice many of these processes are similar, but require minor customization for each client. You need to dynamically create, package, and deploy the workflows in as efficient a manner as possible.
 
 Azure Logic Apps is a powerful technology for defining workflows. Azure Resource Manager templates are great for deploying resources consistently and repeatedly. In this module, we'll combine both services to show how to configure and deploy logic apps efficiently.
 

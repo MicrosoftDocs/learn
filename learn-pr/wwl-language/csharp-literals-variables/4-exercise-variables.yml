@@ -4,11 +4,10 @@ title: Exercise - Setting and getting values from variables
 metadata:
   title: Exercise - Setting and getting values from variables
   description: "Exercise - Setting and getting values from variables"
-  ms.date: 04/13/2023
+  ms.date: 02/20/2024
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-variables.md)]

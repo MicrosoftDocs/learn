@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-vcore-based-azure-cosmos-db-mongodb.create-cluster
+title: Create a vCore-based Azure Cosmos DB for MongoDB cluster
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create a vCore-based Azure Cosmos DB for MongoDB cluster
+  description: "Create a vCore-based Azure Cosmos DB for MongoDB cluster"
+  ms.date: 11/24/2024
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-create-cluster.md)]

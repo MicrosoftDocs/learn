@@ -18,3 +18,4 @@ If you've configured your script as an advanced script by using **CmdletBinding(
 | --------------- | ------------------------------------------------------------ |
 | **Write-Verbose** | Text specified by **Write-Verbose** is displayed only when you use the `-Verbose` parameter when running the script. The value of `$VerbosePreference` specifies the action to take after the **Write-Verbose** command. The default action is **SilentlyContinue**. |
 | **Write-Debug**   | Text specified by **Write-Debug** is displayed only when you use the `-Debug` parameter when running the script.  The value of `$DebugPreference` specifies the action to take after the **Write-Debug** command. The default action is **SilentlyContinue**, which displays no information to screen. You need to change this action to **Continue** so that debug messages are displayed. |
+

@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-significant-government-strategy-actions.understand-federal-risk-authorization-management-program-fedramp
 title: Understand the Federal Risk and Authorization Management Program (FedRAMP)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand the Federal Risk and Authorization Management Program (FedRAMP)
   description: "Understand the Federal Risk and Authorization Management Program (FedRAMP)"
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

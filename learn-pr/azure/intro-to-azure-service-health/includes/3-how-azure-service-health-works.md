@@ -1,6 +1,3 @@
-
-## How Azure Service Health works
-
 Each one of the three services that comprise Azure Service Health works in different ways.
 
 ### Azure Status
@@ -14,22 +11,22 @@ On the page, you can set the automatic refresh period to:
 * 10 minutes
 * 30 minutes
 
-You may find this useful if you want to have this information displayed in monitors at your NOC (Network Operation Center). The refresh rate will allow you to customize the information displayed based on your service review needs.
+You might find this useful if you want to have this information displayed in monitors at your NOC (Network Operation Center). The refresh rate allows you to customize the information displayed based on your service review needs.
 
-The status page has all products and services listed by geographies and regions. There are four types of status indicators available. The indicators allow you to easily identify the service health by determining if the service is good, if there is some specific information available on that service, or an indication of a warning or critical issue.
+The status page has all products and services listed by geographies and regions. There are four types of status indicators available. The indicators allow you to easily identify the service health by determining if the service is good, if there's some specific information available on that service, or if there's an indication of a warning or critical issue.
 
 > [!TIP]
-> You will also notice blank areas in the table. These indicate that a service is not available in the region listed.
+> You'll also notice blank areas in the table. These blank areas indicate that a service is not available in the region listed.
 
-You can also choose to get an RSS feed that will provide updates on the service health. You can find the RSS tag on this page in the upper right section of the title area.
+You can also choose to get an RSS feed that provides updates on the service health. You can find the RSS tag on this page in the upper-right section of the title area.
 
-:::image type="content" source="../media/3-azure-status.png" alt-text="Screenshot of Azure Service Status Page displaying the public information about the health of Azure services among the different geographies." lightbox="../media/3-azure-status-expanded.png":::
+:::image type="content" source="../media/3-azure-status.png" alt-text="Screenshot of the Azure Service Status Page displaying the public information about the health of Azure services among the different geographies." lightbox="../media/3-azure-status-expanded.png":::
 
 ### Service Health
 
-You'll use Service Health to get information on outages, planned maintenance, health, and security advisories.
+You can use Service Health to get information on outages, planned maintenance, health, and security advisories.
 
-It allows you to create customized views, filtering among subscription, region, and services. The level of details will include:
+Service Health allows you to create customized views, filtering among subscription, region, and services. The level of detail includes:
 
 * Issue Name
 * Subscription, service, and region impacted
@@ -38,13 +35,13 @@ It allows you to create customized views, filtering among subscription, region, 
 * Root-cause analysis
 * Downloadable PDF with explanations
 
-Service Health will also allow you to create health alerts to notify you when something happens.
+Service Health also allows you to create health alerts to notify you when something happens.
 
 ### Resource Health
 
-The Resource Health executes some minute-by-minute checks across the resources and makes the information available to you. There is a specific type of resource that runs the health checks. You can see the [full list of resource types on this page](/azure/service-health/resource-health-checks-resource-types).
+The Resource Health executes some minute-by-minute checks across the resources and makes the information available to you. There's a specific type of resource that runs the health checks. You can see the [full list of resource types on this page](/azure/service-health/resource-health-checks-resource-types).
 
-As an example, for Virtual Machines the type of checks executed include:
+As an example: for Virtual Machines, the types of checks executed include:
 
 * Is the server hosting this virtual machine up and running?
 * Has the host operating system (OS) booting completed?
@@ -57,7 +54,7 @@ The Resource Health is available through the **Support + troubleshooting** blade
 
 ## What are the main features of Azure Service Health?
 
-The main features from Azure Service Health are listed in this section. We'll review some details for each one.
+In this section, we list the main features of Azure Service Health. We'll review some details for each one.
 
 ### Personalized dashboards
 
@@ -67,13 +64,13 @@ With Azure Service Health, you can create a personalized dashboard (view) that a
 
 ### Configurable cloud alerts
 
-Based on the selections you make, you can add a service health alert and choose which type of events about which you would like to be notified.
+Based on the selections you make, you can add a service health alert and choose which type of events you'd like to receive notifications about.
 
 :::image type="content" source="../media/4-create-alert.png" alt-text="Screenshot depicting configuration of an alert rule. The image shows four event types selected for a single subscription." lightbox="../media/4-create-alert-expanded.png":::
 
 ### Shareable documents with details about issues
 
-For any service issue, planned maintenance, health, or security advisories, you can download a PDF document containing the relevant information. By selecting the issue, you can see the summary information along with the option to download all information as a PDF document. You may find it useful when you need to share the details by e-mail, for example. Among other detailed information, the PDF will contain the event type, status, service impacted, region, impacted subscriptions, update history and more.
+For any service issue, planned maintenance, health, or security advisories, you can download a PDF document containing the relevant information. By selecting the issue, you can see the summary information along with the option to download all information as a PDF document. You might find this PDF useful when you need to share the details by email, for example. Among other detailed information, the PDF contains the event type, status, service impacted, region, impacted subscriptions, update history and more.
 
 :::image type="content" source="../media/4-shareable-documents.png" alt-text="Screenshot with a summary of a Log Analytics issue showing details such as Tracking ID, Impacted regions, Impacted subscription, Last updates, Preliminary Root Cause, and a link to Download the summary as PDF." lightbox="../media/4-shareable-documents-expanded.png":::
 

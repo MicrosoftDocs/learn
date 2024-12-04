@@ -2,13 +2,14 @@
 uid: learn.continuous-validate-test-mission-critical-workloads.create-validation-pipelines
 title: Create a continuous validation pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a continuous validation pipeline
-  description: Learn how to create a pipeline for continuous validation.
-  ms.date: 01/16/2023
+  description: Learn how to create an automated pipeline for continuous validation in Azure. Understand the advantages of automating validation tests.
+  ms.date: 07/31/2024
   author: sebader
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-create-validation-pipelines.md)]
@@ -20,7 +21,7 @@ quiz:
     choices:
     - content: "They should be run and orchestrated manually using the Azure portal."
       isCorrect: false
-      explanation: "Incorrect. Although it's technically possible to use the Azure portal, we don't recommend it. Because continuous validation benefits from frequent use, the process should be automated so that it's easily accessible to all developers."
+      explanation: "Incorrect. Although it's technically possible to use the Azure portal, we don't recommend this method. Because continuous validation benefits from frequent use, the process should be automated so that it's easily accessible to all developers."
     - content: "They should be embedded into a pipeline or workflow."
       isCorrect: true
       explanation: "Correct. Load tests and chaos experiments should be embedded into a pipeline or workflow and made easily accessible to all developers."
@@ -34,7 +35,7 @@ quiz:
       explanation: "Incorrect. It's important to analyze the results of a failed load test and adjust the baseline if needed."
     - content: "Use a different load test tool."
       isCorrect: false
-      explanation: "Incorrect. A failed load test can indicate problems introduced as part of a recent change, problems with the underlying platform, or the need to adjust a baseline or a threshold."
+      explanation: "Incorrect. A failed load test can indicate problems introduced as part of a recent change, problems within the underlying platform, or the need to adjust a baseline or a threshold."
     - content: "Analyze the result and take action."
       isCorrect: true
-      explanation: "Correct. A failed load test can indicate problems introduced as part of a recent change, problems with the underlying platform, or the need to adjust a baseline or a threshold."
+      explanation: "Correct. A failed load test can indicate problems introduced as part of a recent change, problems within the underlying platform, or the need to adjust a baseline or a threshold."

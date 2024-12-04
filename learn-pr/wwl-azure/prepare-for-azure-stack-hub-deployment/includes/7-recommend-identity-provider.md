@@ -1,4 +1,4 @@
-You can deploy Azure Stack Hub using Azure Active Directory (Azure AD) or Active Directory Federation Services (AD FS) as the identity provider. Make the choice before you deploy Azure Stack Hub. In a connected scenario, you can choose Azure AD or AD FS. For a disconnected scenario, only AD FS is supported. This unit shows how to integrate Azure Stack Hub AD FS with your datacenter AD FS.
+You can deploy Azure Stack Hub using Microsoft Entra ID or Active Directory Federation Services (AD FS) as the identity provider. Make the choice before you deploy Azure Stack Hub. In a connected scenario, you can choose Microsoft Entra ID or AD FS. For a disconnected scenario, only AD FS is supported. This unit shows how to integrate Azure Stack Hub AD FS with your datacenter AD FS.
 
 Keep in mind, you can't switch the identity provider without redeploying the entire Azure Stack Hub solution.
 
@@ -96,7 +96,7 @@ Graph service in Azure Stack Hub uses the following protocols and ports to commu
 
 | **Type**    | **Port** | **Protocol**          |
 | ----------- | -------- | --------------------- |
-| LDAP        | 389      | TCP &amp; UDP |
+| LDAP        | 389      | TCP & UDP |
 | LDAP SSL    | 636      | TCP                   |
 | LDAP GC     | 3268     | TCP                   |
 | LDAP GC SSL | 3269     | TCP                   |

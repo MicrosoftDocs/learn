@@ -18,9 +18,9 @@ In this module, you will:
 - Choose the right activity logs.
 - Route your activity logs to a different endpoint.
 - Write queries to retrieve the activity data you need.
-- Create a new Azure Active Directory (Azure AD) workbook to generate a rich report of your activity data.
-- Use an existing Azure AD workbook to solve your business problem.
+- Create a new Microsoft Entra workbook to generate a rich report of your activity data.
+- Use an existing Microsoft Entra workbook to solve your business problem.
 
 ## Prerequisites
 
-- Familiarity with Azure AD
+- Familiarity with Microsoft Entra ID

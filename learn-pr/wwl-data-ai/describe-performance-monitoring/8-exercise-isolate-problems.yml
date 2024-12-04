@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-performance-monitoring.exercise
 title: 'Exercise: Isolate problems with monitoring'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Isolate problems with monitoring'
   description: "Exercise: Isolate problems with monitoring"
   ms.date: 09/26/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labId: 119401
 labModal: true

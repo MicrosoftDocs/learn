@@ -17,7 +17,7 @@ Licensing for Audit (Standard) requires the appropriate organization subscriptio
  -  Access to the audit log search tool.
  -  Per-user licensing that's required to log and retain audit records.
 
-When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for the organization. In Audit (Standard), audit records are retained and searchable in the audit log for 90 days.
+When an audited activity is performed by a user or admin, an audit record is generated and stored in the audit log for the organization. In Audit (Standard), audit records are retained and searchable in the audit log for 180 days.
 
 For a list of subscription and licensing requirements for Audit (Standard), see [Auditing solutions in Microsoft 365](/microsoft-365/compliance/auditing-solutions-overview?azure-portal=true).
 

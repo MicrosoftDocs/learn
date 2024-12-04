@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.get-started-sql-database-microsoft-fabric.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 10/02/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - ignite-2024
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -6,17 +6,17 @@ Contoso operates datacenters around the world. You understand the investment req
 
 - The physical infrastructure components:
 
-    - Server hardware offered in various types and sizes, including Intel and AMD CPUs and NVIDIA GPU hardware. Microsoft provides a range of pricing options and technical capabilities; from small virtual machines for development and test, to large VMs with 960 CPU threads, 24 TB of RAM, and up to 200 TB of blob storage with less than 1-ms latency. 
+  - Server hardware offered in various types and sizes, including Intel and AMD CPUs and NVIDIA GPU hardware. Microsoft provides a range of pricing options and technical capabilities. From small virtual machines for development and test, to large VMs with 960 CPU threads, 24 TB of RAM, and up to 200 TB of blob storage with less than 1-ms latency.
 
-    - Storage types, including hard disk drives, solid state and NVME drives, and drives and solutions from partners like NetApp.
+  - Storage types, including hard disk drives, solid state and NVME (Non-Volatile Memory Express) drives, and drives and solutions from partners like NetApp.
   
-    - High-speed networking within and between datacenters across the globe (covered in the Networking unit). 
+  - High-speed networking within and between datacenters across the globe (covered in the Networking unit). 
   
-    - Heating and cooling systems, and sustainability management initiatives. Microsoft has the most aggressive sustainability efforts in the industry. It experiments with new ways to lower the carbon footprint of its datacenters through innovations like [liquid immersion](https://news.microsoft.com/innovation-stories/datacenter-liquid-cooling/) of servers, submerging datacenters underseas, and using wind and solar power.
+  - Heating and cooling systems, and sustainability management initiatives. Microsoft has the most aggressive sustainability efforts in the industry. It experiments with new ways to lower the carbon footprint of its datacenters through innovations like [liquid immersion](https://news.microsoft.com/innovation-stories/datacenter-liquid-cooling/) of servers, submerging datacenters underseas, and using wind and solar power.
   
-    - Sophisticated backup systems that include always-on UPS battery systems and backup power generators, which ensure smooth power transitions during a grid power outage.
+- Sophisticated backup systems that include always-on UPS battery systems and backup power generators, which ensure smooth power transitions during a grid power outage.
 
-In addition, Microsoft has committed to become carbon negative by 2030, which is an aggressive carbon goal that you can make use of for Contoso's sustainability efforts.
+In addition, Microsoft is committed to becoming carbon negative by 2030, which is an aggressive carbon goal that you can make use of for Contoso's sustainability efforts.
 
 ## Datacenter viability
 

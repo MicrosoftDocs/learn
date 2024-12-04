@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-language-models-azure-databricks.responsible-ai-concepts
+title: What is responsible AI?
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: What is responsible AI?
+  description: "What is responsible AI?"
+  ms.date: 08/23/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/02-responsible-ai-concepts.md)]

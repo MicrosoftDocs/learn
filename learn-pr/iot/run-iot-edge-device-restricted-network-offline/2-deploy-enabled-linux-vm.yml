@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.run-iot-edge-device-restricted-network-offline.deploy-enabled-linux-vm
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy Azure IoT Edge enabled Linux virtual machine
   description: Deploy Azure IoT Edge enabled Linux virtual machine
   ms.date: 05/01/2020
   author: abartolo
   ms.author: abartolo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom:
-  - team=cloud_advocates
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, linux-related-content
   ms.contributors:
   - abartolo-05192020
 title: Deploy Azure IoT Edge enabled Linux virtual machine
@@ -17,3 +17,4 @@ title: Deploy Azure IoT Edge enabled Linux virtual machine
 durationInMinutes: 10
 content: |
   [!include[](includes/2-deploy-enabled-linux-vm.md)]
+

@@ -2,13 +2,15 @@
 uid: learn.azure.optimize-your-cost-azure-blob-storage.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary.
-  ms.date: 02/23/2023
-  author: mpolicht
-  ms.author: nedelgad
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/14/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/summary.md)]
+

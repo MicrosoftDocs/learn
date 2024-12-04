@@ -1,4 +1,4 @@
-In this module and throughout the exercises, you got hands on with many security capabilities and scenarios that are enabled for Azure SQL.
+In this module and throughout the exercises, you got hands-on with many security capabilities and scenarios that are enabled for Azure SQL.
 
 When you're securing Azure SQL, you should first consider your network and identity access, allowing only connections and access from the right places, people, and applications, depending on your organization and infrastructure. Additionally, you can encrypt and mask sensitive data and apply security management tools, such as those available in the Advanced Data Security suite.
 
@@ -20,37 +20,36 @@ For more information about the subnet requirements for Azure SQL Managed Instanc
 
 Your networking environment and configuration can get complex quickly. You'll want to partner with your networking team to ensure that you have the most secure, functional network. A few handy resources include:  
 
-* [Azure SQL Database network access controls](/azure/sql-database/sql-database-networkaccess-overview?azure-portal=true)
-* [Connecting your applications to Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance-connect-app?azure-portal=true)
-* [IP firewall rules for Azure SQL Database](/azure/sql-database/sql-database-firewall-configure?azure-portal=true)
-* [Data exfiltration prevention](/azure/sql-database/sql-database-private-endpoint-overview#data-exfiltration-prevention?azure-portal=true)  
-* [Virtual network endpoints and rules](/azure/sql-database/sql-database-vnet-service-endpoint-rule-overview#anchor-how-to-by-using-firewall-portal-59j?azure-portal=true)  
+* [Azure SQL Database and Azure Synapse Analytics network access controls](/azure/azure-sql/database/network-access-controls-overview)
+* [Connect your application to Azure SQL Managed Instance](/azure/azure-sql/managed-instance/connect-application-instance)
+* [IP firewall rules for Azure SQL Database](/azure/azure-sql/database/firewall-configure)
+* [Data exfiltration prevention](/azure/azure-sql/database/private-endpoint-overview#data-exfiltration-prevention)  
+* [Virtual network endpoints and rules](/azure/azure-sql/database/vnet-service-endpoint-rule-overview)  
 
 #### Authentication
 
 To learn more about authentication, see:  
 
-* [Azure SQL security playbook: Authentication](/azure/sql-database/sql-database-security-best-practice#authentication?azure-portal=true)
-* [Configure Azure Active Directory](/azure/security/fundamentals/database-best-practices#enable-database-authentication?azure-portal=true)  
+* [Azure SQL security playbook: Authentication](/azure/azure-sql/database/security-best-practice#authentication)
+* [Configure Microsoft Entra authentication](/azure/azure-sql/database/authentication-aad-configure)  
 * [Azure role-based access control (RBAC) roles](/azure/role-based-access-control/built-in-roles?azure-portal=true)
-* [Security best practices related to RBAC](/azure/security/fundamentals/database-best-practices#protect-your-data-by-using-encryption-and-row-level-security?azure-portal=true)
 
-For information about contained database users in SQL Server and Azure, see [Contained database users: Make your database portable](/sql/relational-databases/security/contained-database-users-making-your-database-portable?azure-portal=true&view=sql-server-ver15).  
+For information about contained database users in SQL Server and Azure, see [Contained database users: Make your database portable](/sql/relational-databases/security/contained-database-users-making-your-database-portable).  
 
 #### Data protection
 
-For more information about Azure SQL Transparent Data Encryption (TDE) with Bring Your Own Key (BYOK), see [Azure SQL TDE with customer-managed key](/azure/sql-database/transparent-data-encryption-byok-azure-sql?azure-portal=true&view=sql-server-ver15). 
+For more information about Azure SQL Transparent Data Encryption (TDE) with Bring Your Own Key (BYOK), see [Azure SQL TDE with customer-managed key](/azure/azure-sql/database/transparent-data-encryption-byok-overview). 
 
-If you're interested in using Azure Key Vault for BYOK, see [Always Encrypted: Protect sensitive data and store encryption keys in Azure Key Vault](/azure/sql-database/sql-database-always-encrypted-azure-key-vault?azure-portal=true&tabs=azure-powershell). This tutorial uses Azure PowerShell.
+If you're interested in using Azure Key Vault for BYOK, see [Tutorial: Getting started with Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-tutorial-getting-started). This tutorial uses Azure PowerShell or SMSS.
 
 #### Managing security
 
 For more information about some of the features discussed for managing security, see:  
 
-* [Data Discovery & Classification](/azure/sql-database/sql-database-data-discovery-and-classification?azure-portal=true)  
-* [Vulnerability Assessment](/azure/sql-database/sql-vulnerability-assessment?azure-portal=true)  
-* [Advanced Threat Protection](/azure/sql-database/sql-database-threat-detection-overview?azure-portal=true)  
+* [Data Discovery & Classification](/azure/azure-sql/database/data-discovery-and-classification-overview)  
+* [SQL vulnerability assessment](/azure/defender-for-cloud/sql-azure-vulnerability-assessment-overview)  
+* [SQL Advanced Threat Protection](/azure/azure-sql/database/threat-detection-overview)  
 
-For information about how to query various [Azure Monitor logs](/azure/azure-monitor/log-query/log-query-overview?azure-portal=true) with Kusto Query Language, see the [Overview of Kusto queries](/azure/kusto/query/?azure-portal=true).
+For information about how to query various [Azure Monitor logs](/azure/azure-monitor/log-query/log-query-overview?azure-portal=true) with Kusto Query Language, see the [Overview of Kusto queries](/azure/data-explorer/kusto/query/).
 
-To learn more about Microsoft Defender for Cloud and how you can use it to monitor and manage your entire Azure estate, see [What is Microsoft Defender for Cloud?](/azure/security-center/security-center-intro?azure-portal=true).
+To learn more about Microsoft Defender for Cloud and how you can use it to monitor and manage your entire Azure estate, see [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction).

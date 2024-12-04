@@ -2,15 +2,19 @@
 uid: learn.azure.optimize-blob-storage-costs.6-exercise-manage-tiered-storage-using-asp.net-core-apps
 title: Exercise - Manage tiered storage using ASP.NET Core apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Manage tiered storage using ASP.NET Core apps
   description: Exercise - Manage tiered storage using ASP.NET Core apps
-  ms.date: 09/30/2021
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/02/2023
+  author: normesta
+  ms.author: normesta
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-manage-tiered-storage-using-asp.net-core-apps.md)]
+

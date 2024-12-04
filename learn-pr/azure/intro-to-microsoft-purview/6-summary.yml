@@ -3,13 +3,12 @@ uid: learn.intro-to-microsoft-purview.summary
 title: Summary
 metadata:
   unitType: summary
-  title: summary
+  title: Summary
   description: "Summary unit for the Introduction to Microsoft Purview module on Microsoft Learn."
-  ms.date: 5/05/2022 
+  ms.date: 10/08/2024
   author: whhender 
   ms.author: whhender
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

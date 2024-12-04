@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.philanthropies.explore-ai-for-all
+metadata:
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 10/18/2024
+  title: "AI fluency: Explore AI for all"     
+  description: This module explores how AI is being used to enhance accessibility, impact various job roles, and support humanitarian actions. It includes case studies and real-world applications to evaluate the effectiveness of AI-driven solutions.
+  ms.topic: module
+  ms.service: artificial-intelligence
+  moduleType: standard
+  ms.collection: philanthrpies-ai-copilot
+title: Explore AI for All
+summary: Discover how AI is transforming accessibility, job roles, and humanitarian efforts through real-world examples and case studies.
+abstract: |
+  By completing this module, you'll be able to:
+  - Assess how AI initiatives are enhancing accessibility for individuals with disabilities. 
+  - Evaluate the impact of AI on various job roles by analyzing specific examples from different sectors such as finance, healthcare, energy, manufacturing, retail, public sector, and agriculture.
+  - Evaluate the effectiveness of AI-driven solutions in enhancing humanitarian action by analyzing case studies and real-world applications.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.philanthropies.explore-ai-for-all.introduction
+- learn.philanthropies.explore-ai-for-all.the-impact-ai-accessibility
+- learn.philanthropies.explore-ai-for-all.impact-ai-job-roles
+- learn.philanthropies.explore-ai-for-all.ai-ally-for-humanitarian-action
+- learn.philanthropies.explore-ai-for-all.inclusive-ai-with-copilot
+- learn.philanthropies.explore-ai-for-all.knowledge-check
+- learn.philanthropies.explore-ai-for-all.summary
+badge:
+  uid: learn.philanthropies.explore-ai-for-all.badge

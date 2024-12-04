@@ -2,14 +2,18 @@
 uid: learn.protect-virtual-desktop-deployment-azure-firewall.exercise-set-up-host-pool
 title: Exercise - Set up the host pool and register virtual machine host
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Set up the host pool and register virtual machine host
   description: Exercise - Set up the host pool and register virtual machine host
-  ms.date: 05/11/2022
+  ms.date: 01/18/2024
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-set-up-host-pool.md)]
+

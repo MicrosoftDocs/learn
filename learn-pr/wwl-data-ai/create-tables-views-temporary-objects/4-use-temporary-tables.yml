@@ -4,13 +4,10 @@ title: Use temporary tables
 metadata:
   title: Use temporary tables
   description: "Use temporary tables"
-  ms.date: 04/12/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-use-temporary-tables.md)]

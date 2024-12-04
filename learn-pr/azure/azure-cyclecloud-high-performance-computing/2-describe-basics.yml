@@ -2,14 +2,15 @@
 uid: learn.azure.azure-cyclecloud-high-performance-computing.describe-basics
 title: Describe the basics of Azure CycleCloud
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Describe the basics of Azure CycleCloud
-  description: This unit describes the basics of Azure CycleCloud.
-  ms.date: 06/07/2021
+  description: Learn about the features and benefits of Azure CycleCloud for your organization.
+  ms.date: 08/05/2024
   author: anhoward
   ms.author: anhoward
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-describe-basics.md)]

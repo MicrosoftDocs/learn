@@ -19,7 +19,7 @@ Take your interest further with:
 
 - [Build workflows with the IoT Central connector in Microsoft Flow](/azure/iot-central/howto-add-microsoft-flow?WT.mc_id=MSLearn-module-abartolo)
 - [Azure IoT Central Documentation](/azure/iot-central?WT.mc_id=MSLearn-module-abartolo)
-- [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com?WT.mc_id=MSLearn-module-abartolo)
+- [Azure Certified for IoT device catalog](/training/azure/?WT.mc_id=MSLearn-module-abartolo)
 
 And look out for additional Learn modules covering IoT Edge Configuration.
 

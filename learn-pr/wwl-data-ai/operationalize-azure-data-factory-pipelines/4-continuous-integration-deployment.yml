@@ -2,15 +2,19 @@
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.continuous-integration-and-deployment
 title: Continuous integration and deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Continuous integration and deployment
   description: "Continuous integration and deployment"
   ms.date: 05/16/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-continuous-integration-deployment.md)]
+

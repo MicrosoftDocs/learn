@@ -3,11 +3,11 @@ uid: learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals
 metadata:
   title: 'Get tips and tricks for teaching MB-910: Microsoft Dynamics 365 Fundamentals (CRM)'
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
-  ms.date: 03/21/2023
+  ms.date: 10/19/2023
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: dynamics-365
+  ms.topic: module
+  ms.service: dynamics-365
 title: 'Get tips and tricks for teaching MB-910: Microsoft Dynamics 365 Fundamentals (CRM)'
 summary: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
 abstract: |

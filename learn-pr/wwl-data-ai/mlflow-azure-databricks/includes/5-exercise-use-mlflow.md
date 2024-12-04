@@ -6,4 +6,4 @@ Now it's your chance to work with MLflow in Azure Databricks for yourself. In th
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-databricks-mlflow?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2283820&azure-portal=true)

@@ -7,8 +7,7 @@ metadata:
   ms.date: 01/25/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-playbook-overview.md)]
@@ -23,7 +22,7 @@ quiz:
     - content: "Microsoft Sentinel Connector"
       isCorrect: true
       explanation: "Microsoft Sentinel playbooks use a Microsoft Sentinel Logic Apps connector to trigger logic app actions."
-    - content: "Azure Active Directory Connector"
+    - content: "Microsoft Entra Connector"
       isCorrect: false
       explanation: "Microsoft Sentinel playbooks use a Microsoft Sentinel Logic Apps connector to trigger logic app actions."
   - content: "Which one of the following statements describes a feature of Microsoft Sentinel playbooks?"

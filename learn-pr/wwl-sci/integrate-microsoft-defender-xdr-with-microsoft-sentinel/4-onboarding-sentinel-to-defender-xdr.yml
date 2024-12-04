@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.4-onboarding-sentinel-to-defender-xdr
+title: Onboarding Microsoft Sentinel to Microsoft Defender XDR
+metadata:
+  title: Onboarding Microsoft Sentinel to Microsoft Defender XDR
+  description: "Onboarding Microsoft Sentinel to Microsoft Defender XDR."
+  ms.date: 10/2/2024
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-onboarding-sentinel-to-defender-xdr.md)]

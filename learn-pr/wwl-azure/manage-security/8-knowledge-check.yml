@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/07/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A system administrator is setting up a multi-session environment for users from different organizations. What is the recommended solution to ensure security and prevent unauthorized data access?"
+    choices:
+    - content: "Use a Windows Enterprise multi-session operating system"
+      isCorrect: false
+      explanation: "Incorrect. This solution is recommended for users from one organization with standard privileges, not for users from different organizations."
+    - content: "Grant each user administrative privileges"
+      isCorrect: false
+      explanation: "Incorrect. Granting administrative privileges to each user can lead to security vulnerabilities."
+    - content: "Separate Azure tenant and Azure subscription"
+      isCorrect: true
+      explanation: "Correct. For users from different organizations, it's recommended to use separate Azure tenant and Azure subscription to ensure security."
+  - content: "A team is deploying Azure Virtual Desktop and wants to ensure the environment is secure. They're considering using Microsoft Defender for Endpoint for session hosts. What does Microsoft Defender for Endpoint provide?"
+    choices:
+    - content: "It provides a platform for managing group policies on Active Directory Domain Services (AD DS)."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Endpoint isn't a platform for managing group policies on AD DS."
+    - content: "It allows the creation of private endpoints through Azure Private Link."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Endpoint doesn't provide the functionality to create private endpoints."
+    - content: "It's an enterprise endpoint security platform designed to help prevent, detect, investigate, and respond to advanced threats."
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender for Endpoint is designed to enhance security by helping to prevent, detect, investigate, and respond to advanced threats."
+  - content: "A system administrator is setting up a multi-session environment for users from different organizations. What is the recommended solution to ensure security and prevent unauthorized data access?"
+    choices:
+    - content: "Grant each user administrative privileges"
+      isCorrect: false
+      explanation: "Incorrect. Granting administrative privileges to each user can lead to security vulnerabilities."
+    - content: "Use a Windows Enterprise multi-session operating system"
+      isCorrect: false
+      explanation: "Incorrect. This solution is recommended for users from one organization with standard privileges, not for users from different organizations."
+    - content: "Separate Azure tenant and Azure subscription"
+      isCorrect: true
+      explanation: "Correct. For users from different organizations, it's recommended to use separate Azure tenant and Azure subscription to ensure security."
+  - content: "An administrator is tasked with setting up a secure multi-session environment for users from different organizations. What is the recommended solution to ensure security and prevent unauthorized data access?"
+    choices:
+    - content: "Grant each user administrative privileges"
+      isCorrect: false
+      explanation: "Incorrect. Granting administrative privileges to each user can lead to security vulnerabilities."
+    - content: "Use a Windows Enterprise multi-session operating system"
+      isCorrect: false
+      explanation: "Incorrect. This solution is recommended for users from one organization with standard privileges, not for users from different organizations."
+    - content: "Separate Azure tenant and Azure subscription"
+      isCorrect: true
+      explanation: "Correct. For users from different organizations, it's recommended to use separate Azure tenant and Azure subscription to ensure security."
