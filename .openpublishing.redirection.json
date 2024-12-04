@@ -35293,6 +35293,11 @@
       "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/4-understand-triggers-conditions-actions-data-activator.md",
       "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/index.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
     }
   ]
 }
