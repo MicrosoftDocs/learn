@@ -29,7 +29,7 @@ subjects:
 - data-management
 modules:
 - learn.wwl.administer-fabric
-##- learn-wwl.secure-data-access-in-fabric
+- learn-wwl.secure-data-access-in-fabric
 - learn-wwl.secure-data-warehouse-in-microsoft-fabric
 - learn.fabric-data-governance-purview
 trophy:

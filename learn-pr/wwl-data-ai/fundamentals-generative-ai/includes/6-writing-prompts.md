@@ -1,10 +1,10 @@
-The quality of responses from agents not only depends on the language model used, but on the types of prompts users provide. Prompts are ways we tell an application what we want it to do. You can get the most useful completions by being explicit about the kind of response you want. Take this example, "Summarize the key considerations for adopting Copilot described in this document for a corporate executive. Format the summary as no more than six bullet points with a professional tone." You can achieve better results when you submit clear, specific prompts.
+The quality of responses from generative AI assistants not only depends on the language model used, but on the types of prompts users provide. Prompts are ways we tell an application what we want it to do. You can get the most useful completions by being explicit about the kind of response you want. Take this example, "Summarize the key considerations for adopting Copilot described in this document for a corporate executive. Format the summary as no more than six bullet points with a professional tone." You can achieve better results when you submit clear, specific prompts.
 
 ![A screenshot of the considerations for improving a copilot response that corresponds with the numbered list below.](../media/writing-prompts.png)
 
-Consider the following ways you can improve the response an agent provides:
+Consider the following ways you can improve the response a generative AI assistant provides:
 
-1. Start with a specific goal for what you want the agent to do
+1. Start with a specific goal for what you want the assistant to do
 2. Provide a source to ground the response in a specific scope of information
 3. Add context to maximize response appropriateness and relevance
 4. Set clear expectations for the response
