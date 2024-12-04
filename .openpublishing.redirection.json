@@ -35298,6 +35298,11 @@
       "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/index.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/3-classify-data.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
     }
   ]
 }
