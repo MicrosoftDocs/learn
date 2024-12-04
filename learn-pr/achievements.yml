@@ -4242,3 +4242,8 @@ achievements:
   title: Integrate machine learning within Azure Synapse Analytics
   summary: In this module, you learn how you can build machine learning modules from within Azure Synapse Analytics.
   iconUrl: /training/achievements/azure-synapse-analytics-integrate-machine-learning.svg
+- uid: learn.wwl.explore-generative-ai-copilot-bing.badge
+  type: badge
+  title: Design a dream destination using Microsoft Copilot
+  summary: Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story. Interact with Microsoft Copilot to learn about the capabilities of generative AI.&nbsp;
+  iconUrl: /training/achievements/generic-badge.svg
