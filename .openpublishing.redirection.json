@@ -35323,6 +35323,11 @@
       "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/4-search-data-catalog.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/6-summary.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
     }
   ]
 }
