@@ -40,6 +40,5 @@ subjects:
 - data-analytics
 - data-visualization
 units:
-- learn.wwl.get-started-data-activator-microsoft-fabric.understand-triggers-conditions-actions-data-activator
 badge:
   uid: learn.wwl.get-started-data-activator-microsoft-fabric.badge
