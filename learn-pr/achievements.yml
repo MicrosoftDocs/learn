@@ -4247,3 +4247,8 @@ achievements:
   title: Design a dream destination using Microsoft Copilot
   summary: Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story. Interact with Microsoft Copilot to learn about the capabilities of generative AI.&nbsp;
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.get-started-data-activator-microsoft-fabric.badge
+  type: badge
+  title: Get started with Data Activator in Microsoft Fabric
+  summary: Use Data Activator in Microsoft Fabric to easily monitor and take action on your data.
+  iconUrl: /training/achievements/get-started-data-activator-microsoft-fabric.svg
