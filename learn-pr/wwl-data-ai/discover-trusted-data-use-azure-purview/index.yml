@@ -29,7 +29,6 @@ products:
 subjects:
 - infrastructure
 units:
-- learn.wwl.discover-trusted-data-use-azure-purview.search-browse-assets
 - learn.wwl.discover-trusted-data-use-azure-purview.use-asset-power-bi
 - learn.wwl.discover-trusted-data-use-azure-purview.summary
 badge:
