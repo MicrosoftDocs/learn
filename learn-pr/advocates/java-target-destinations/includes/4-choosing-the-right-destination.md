@@ -1,4 +1,4 @@
-We've discussed the available options for deploying a Java application in the cloud, and more specifically on Azure. But which option best addresses your specific needs? Here's a guide to help you choose.
+We discussed the available options for deploying a Java application in the cloud, and more specifically on Azure. But which option best addresses your specific needs? Here's a guide to help you choose.
 
 ## Platform as a service or infrastructure control?
 
@@ -12,17 +12,17 @@ Teams choose PaaS solutions for the following reasons:
 - They have certain high availability, security, or compliance requirements, and they can meet these needs with out-of-box features that a managed service provides.
 - They might not have the resources or the willingness to maintain a production-grade infrastructure.
 
-But some teams will prefer to have a full control over their infrastructure, mostly for the following reasons:
+But some teams prefer to have a full control over their infrastructure, mostly for the following reasons:
 
-- If you're using specific proprietary software or non-common Java features, a managed service might not be the right fit for you. For example, you might want to use network broadcasting to find your application nodes, and this feature isn't available on a managed service.
-- You might want to use a specific native library, which also won't be able to run on a managed service.
+- You use specific proprietary software or uncommon Java features, a managed service might not be the right fit for you. For example, you might want to use network broadcasting to find your application nodes, and this feature isn't available on a managed service.
+- You use a specific native library, which doesn't run on a managed service.
 
 ## Choose a PaaS solution on Azure
 
 For running Java workloads on a platform as a service solution, Azure provides two possible options:
 
-- **Azure Functions**: Best for simple event-driven workloads that can scale extremely well.
-- **Azure App Service**: Best for rapid prototyping monolthic Java web applications.
+- **Azure Functions**: Best for simple, event-driven workloads that can scale extremely well.
+- **Azure App Service**: Best for rapid prototyping monolithic Java web applications.
 
 ## Choose infrastructure control on Azure
 
@@ -34,9 +34,9 @@ For full control over your deployments, Azure provides the following three main 
 
 ## Final words to help you decide
 
-Deciding on a destination is only a first step. As you're choosing your service, keep in mind the following:
+Deciding on a destination is only a first step. As you're choosing your service, keep in mind the following points:
 
-- Your maintenance tasks will vary greatly depending on both the type of service you choose and the skill set of your own operations team.
-- Your developers will use the platform daily, and they'll be more productive if the service provides a great developer experience.
+- Your maintenance tasks vary greatly, depending on both the type of service you choose and the skill set of your own operations team.
+- Your developers use the platform daily, and they can be more productive if the service provides a great developer experience.
 
 For both of these points, your choice depends on the team you have. The best practice is to choose a destination that matches your team's expertise and preferences.
