@@ -4262,3 +4262,8 @@ achievements:
   title: Discover trusted data using Microsoft Purview
   summary: Use Microsoft Purview Studio to discover trusted organizational assets for reporting.
   iconUrl: /training/achievements/2-discover-data-artifacts-azure-by-using-azure-purview.svg
+- uid: learn.wwl.govern-data-across-enterprise.trophy
+  type: trophy
+  title: Govern data across an enterprise
+  summary: Use Microsoft Purview to register and scan data, catalog data artifacts, find data for reporting, and manage Power BI artifacts to improve data governance in your organization.
+  iconUrl: /training/achievements/govern-data-across-an-enterprise.svg
