@@ -35433,6 +35433,11 @@
       "source_path": "learn-pr/azure/copy-blobs-using-azcopy/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/copy-blobs-from-command-line-and-code/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-solution-small-dataset-low-moderate-network",
+      "redirect_document_id": false
     }
   ]
 }
