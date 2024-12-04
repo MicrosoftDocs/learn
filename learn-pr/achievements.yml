@@ -4252,3 +4252,8 @@ achievements:
   title: Get started with Data Activator in Microsoft Fabric
   summary: Use Data Activator in Microsoft Fabric to easily monitor and take action on your data.
   iconUrl: /training/achievements/get-started-data-activator-microsoft-fabric.svg
+- uid: learn.wwl.catalog-data-artifacts-by-using-microsoft-purview.badge
+  type: badge
+  title: Catalog data artifacts by using Microsoft Purview
+  summary: Register, scan, catalog, and view data assets and their relevant details in Microsoft Purview.
+  iconUrl: /training/achievements/3-catalog-data-artifacts-azure-by-using-azure-purview.svg
