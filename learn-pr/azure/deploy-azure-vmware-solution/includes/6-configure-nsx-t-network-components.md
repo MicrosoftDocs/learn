@@ -1,7 +1,7 @@
 Azure VMware Solution deploys with NSX Manager as the software-defined network layer. The networking environment has two gateways:
 
-- NSX Tier-0 Gateway configured in active-active mode
-- NSX Tier-1 Gateway configured in active-standby mode
+- NSX Tier-0 gateway configured in active-active mode
+- NSX Tier-1 gateway configured in active-standby mode
 
 Both gateways allow connections between logical switch segments. These gateways also provide East-West and North-South connectivity.
 
@@ -33,14 +33,37 @@ Virtual machines (VMs) either created in or migrated to Azure VMware Solution sh
 
     | Field | Value |
     | ----- | ----- |
-    | **Segment name** | The name of the logical switch visible in vCenter. |
+    | **Segment name** | The name of the logical switch visible in vCenter Server. |
     | **Connected gateway** | This gateway is selected by default and is read only. |
-    | **T1** | The name of the Tier-1 gateway in NSX-T Manager. Segments created by using ASV connect only to the default Tier-1 gateway. Workloads of these segments have East-West and North-South connectivity. More Tier-1 gateways can be created only by using NSX-T Manager. Tier-1 gateways created in NSX-T Manager aren't visible in the Azure VMware Solution console. |
+    | **T1** | The name of the Tier-1 gateway in NSX Manager. Segments created connect only to the default Tier-1 gateway. Workloads of these segments have East-West and North-South connectivity. More Tier-1 gateways can be created only by using NSX Manager. Tier-1 gateways created in NSX Manager aren't visible in the Azure VMware Solution console. |
     | **Type** | The overlay network segment supported by Azure VMware Solution. |
     | **Subnet Gateway** | The gateway IP address for the logical switch's subnet, with a subnet mask. VMs are attached to the logical switch, and all VMs connecting to this switch belong in the same subnet. Also, all VMs attached to this logical networking segment must carry an IP address from the same networking segment.
     | **DHCP ranges (optional)** | DHCP ranges for the logical networking segment. A DHCP server or DHCP relay must be configured to use DHCP on the logical networking segments.
 
-1. Select **OK** to create and attach the logical networking segment to the Tier-1 gateway. This segment will now be visible in Azure VMware Solution, NSX-T Manger, and vCenter.
+1. Select **OK** to create and attach the logical networking segment to the Tier-1 gateway. This segment will now be visible in Azure VMware Solution, NSX Manger, and vCenter Server.
+
+## Create an NSX network segment in the NSX
+
+Similarly, you can create an NSX segment from the NSX console. These NSX networking segments are connected to the default Tier-1 gateway. Workloads on these segments will have East-West and North-South connectivity. 
+
+From a Jumpbox VM, connect to NSX Manager. Get the credentials under **Manage** > **VMware credentials**.
+
+1. In NSX Manager, select **Networking** > **Segments**, then select **Add Segment**.
+
+    :::image type="content" source="../media/6-nsx-add-segment.png" alt-text="Screenshot of how to add a segment in NSX Manager.":::
+
+1. Provide details for the new logical networking segment, then select **Save**.
+
+    :::image type="content" source="../media/6-nsx-add-segment-details.png" alt-text="Screenshot of how to add details for the new segment in NSX Manager.":::
+
+| Field | Value |
+| ----- | ----- |
+| **Segment name** | The name of the logical switch visible in vCenter Server. |
+| **Connected gateway** | The name of the Tier-1 gateway in NSX Manager. Segments created only connect to the default Tier-1 gateway. Workloads of these segments have East-West and North-South connectivity. More Tier-1 gateways can be created by using NSX Manager. Tier-1 gateways created in NSX Manager aren't visible in the Azure VMware Solution console. |
+| **Transport Zone** | The name of the preconfigured overlay Transport Zone (TNTxx-OVERLAY-TZ). |
+| **Subnets** | The IP address range of the subnet, in CIDR format. The IP address needs to be on a non-overlapping RFC1918 address block, which ensures connection to the VMs on the new segment. |
+
+
 
 ## Create a DHCP server or DHCP relay in the Azure portal
 
