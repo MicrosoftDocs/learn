@@ -35408,6 +35408,31 @@
       "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/4-view-lineage.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azcopy/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azcopy/2-move-blobs-using-azcopy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azcopy/3-exercise-move-blobs-using-azcopy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azcopy/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azcopy/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10",
+      "redirect_document_id": false
     }
   ]
 }
