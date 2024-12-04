@@ -42,6 +42,5 @@ subjects:
 units:
 - learn.wwl.get-started-data-activator-microsoft-fabric.understand-data-activator
 - learn.wwl.get-started-data-activator-microsoft-fabric.understand-triggers-conditions-actions-data-activator
-- learn.wwl.get-started-data-activator-microsoft-fabric.summary
 badge:
   uid: learn.wwl.get-started-data-activator-microsoft-fabric.badge
