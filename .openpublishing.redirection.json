@@ -35263,6 +35263,11 @@
       "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/5-get-data-from-power-bi-reports-eventstreams-data-activator.md",
       "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/3-get-started-with-data-activator.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
     }
   ]
 }
