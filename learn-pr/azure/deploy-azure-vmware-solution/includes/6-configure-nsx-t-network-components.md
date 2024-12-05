@@ -126,9 +126,7 @@ Configure additional forwarder:
 1. Adding DNS zones can take several minutes to complete, you can follow the progress from **Notifications**. When the DNS zone is created, you see a message in the Notification. 
 1. Repeat steps 1-3 to add the other FQDN zones, including any applicable reverse lookup zones.
 
-
-<<<You'll configure a default DNS zone and FQDN zone to send DNS queries to the upstream server. When a DNS query is received, the DNS forwarder compares the domain name in the query with the domain names in the FQDN DNS zone. If a match is found, the query is forwarded to the DNS servers specified in the FQDN DNS zone. If no match is found, the query is forwarded to the DNS servers specified in the default DNS zone. A default zone must be defined before you configure an FQDN zone.
-
+When a DNS query is received, the DNS forwarder compares the domain name in the query with the domain names in the FQDN DNS zone. If a match is found, the query is forwarded to the DNS servers specified in the FQDN DNS zone. If no match is found, the query is forwarded to the DNS servers specified in the default DNS zone.
 
 ## Verify on-premises vSphere network connectivity to the Azure VMware Solution private cloud
 
