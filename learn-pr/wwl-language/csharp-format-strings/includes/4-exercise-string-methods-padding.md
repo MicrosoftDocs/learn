@@ -1,3 +1,4 @@
+
 The `string.Format()` method is used to perform composite formatting such as in the example:
 
 ```csharp
