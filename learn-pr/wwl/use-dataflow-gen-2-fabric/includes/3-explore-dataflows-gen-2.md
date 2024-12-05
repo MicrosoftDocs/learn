@@ -35,9 +35,9 @@ The Data Preview pane only shows a subset of data to allow you to see which tran
 
 ### 5. Query Settings pane
 
-The Query Settings pane includes the **Applied Steps**. Each transformation you do is tied to a step, some of which are automatically applied when you connect the data source. Depending on the complexity of the transformations, you might have several applied steps for each query. Most steps have a gear icon that allows you to modify the step, otherwise you must delete and repeat the transformation.
+The Query Settings pane includes the **Applied Steps**. Each transformation is represented as a step, some of which are automatically applied when you connect the data source. Depending on the complexity of the transformations, you might have several applied steps for each query. Most steps have a gear icon that allows you to modify the step, otherwise you must delete and repeat the transformation.
 
-Each step also has a contextual menu when you right-click so you can rename, reorder, or delete the steps. You can also view the data source query when connecting to a  
+Each step also has a contextual menu when you right-click so you can rename, reorder, or delete the steps. You can also view the data source query when connecting to a data source that supports query folding.
 
 While this visual interface is helpful, you can also view the M code through **Advanced editor**.
 
