@@ -5,9 +5,9 @@ Eventhouses are where you store real-time data, often ingested by an eventstream
 Within an eventhouse, you can create:
 
 - **KQL databases**: real-time optimized data stores that host a collection of tables, stored functions, materialized, views and shortcuts.
-- **KQL querysets**: Collections of KQL queries that you can use to work with data in KQL database tables. KQL Querysets support queries written using Kusto Query Language (KQL) as well as a subset of the Transact-SQL language.
+- **KQL querysets**: Collections of KQL queries that you can use to work with data in KQL database tables. A KQL queryset supports queries written using Kusto Query Language (KQL) and a subset of the Transact-SQL language.
 
-## Querying data in an eventhouse
+## Querying data
 
 To query data from a table in a KQL database, you can use the **Kusto Query Language (KQL)**, which is used to write queries in Azure Data Explorer, Azure Monitor Log Analytics, Azure Sentinel, and Microsoft Fabric. KQL is a read-only request to process data and return results. KQL queries are made of one or more query statements.
 
@@ -32,7 +32,7 @@ A more complex example might aggregate the data to find the average stock price 
 > [!TIP]
 > To learn more about KQL, see **[Kusto Query Language (KQL) overview](/kusto/query/)**.
 
-### Using SQL in an eventhouse
+### Using SQL
 
 KQL is optimized for querying large volumes of data, particularly with a time-based element; so it's a great fit for real-time data analysis. However, many data professionals are already familiar with SQL syntax; so KQL databases in eventhouses support a subset of common SQL expressions.
 
