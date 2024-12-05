@@ -132,11 +132,11 @@ When a DNS query is received, the DNS forwarder compares the domain name in the 
 
 You should see where the Azure ExpressRoute circuit connects to the NSX network segments and the Azure VMware Solution management segments in the edge router. Each environment is different. You might need to allow routes to propagate back to the on-premises network.
 
-Some environments have firewalls that protect ExpressRoute circuits. If there are no firewalls, try to ping the Azure VMware Solution vCenter server or a VM on the NSX-T segment from your on-premises environment. Also, from the VM on the NSX-T segment, resources should be able to reach the on-premises environment.
+Some environments have firewalls that protect ExpressRoute circuits. If there are no firewalls, try to ping the Azure VMware Solution vCenter Server or a VM on the NSX segment from your on-premises environment. From the VM on the NSX segment, resources should be able to reach the on-premises vSphere environment.
 
-## Add a VM on an NSX-T network segment
+## Add a VM on an NSX network segment
 
-Deploy a VM to test network connectivity in the Azure VMware Solution vCenter. This VM will help verify network connectivity:
+Deploy a VM to test network connectivity in the Azure VMware Solution vCenter Server. This VM helps verify network connectivity:
 
 - To and from the internet.
 - To and from Azure virtual networks.
@@ -144,10 +144,10 @@ Deploy a VM to test network connectivity in the Azure VMware Solution vCenter. T
 
 Deploy the VM as you would in any vSphere environment:
 
-- Attach the VM to one of the network segments previously created in NSX-T Manager.
+- Attach the VM to one of the network segments previously created in NSX Manager.
 - The VM can receive network configuration from a DHCP server, or you can configure the network configuration statically.
 
-## Test the NSX-T segment connectivity
+## Test the NSX segment connectivity
 
 Sign in to the VM created in the previous step and verify connectivity:
 
