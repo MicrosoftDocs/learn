@@ -11,7 +11,7 @@ metadata:
 title: Get started with Real-Time Intelligence in Microsoft Fabric
 summary: Analysis of real-time data streams is a critical capability for any modern data analytics solution. You can use the Real-Time Intelligence capabilities of Microsoft Fabric to ingest, query, and process streams of data.
 abstract: |
-  Micrsoft Fabric includes Real-Time Intelligence capabilities that you can use to capture, analyzie, visualize, and act on real-time streams of event data.
+  Microsoft Fabric includes Real-Time Intelligence capabilities that you can use to capture, analyze, visualize, and act on real-time streams of event data.
 prerequisites: |
   Before starting this module, you should be familiar with Microsoft Fabric.
 iconUrl: /training/achievements/generic-badge.svg
