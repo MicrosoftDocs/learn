@@ -10,7 +10,7 @@ An API is a standardized way for organizations to expose specific data to potent
 
 Making an API available starts with importing the API into API Management. You can then:
 
-- Use the visualization tools in the API gateway to test out your API.
+- Test out your API by using the visualization tools in the API gateway.
 - Manage access to your APIs using policies.
 
 ## API frameworks
@@ -23,7 +23,7 @@ There are various API frameworks and standards. API Management provides you with
 |**WebSocket**| Set up pass-through to a backend WebSocket service.  |
 |**GraphQL**| Set up pass-through to a backend GraphQL service, or import a GraphQL schema and create a synthetic GraphQL API with custom field resolvers. |
 |**OpenAPI**|OpenAPI is a specification that documents all the endpoints and operations for RESTful APIs, and all input and output parameters. OpenAPI was originally called Swagger.|
-|**WADL**| Web Application Description Language is an XML description of HTTP-based web services. It's a simpler format and more lightweight than WSDL.|
+|**WADL**| Web Application Description Language is an XML description of HTTP-based web services. It's a simpler format and more lightweight than Web Service Description Language.|
 |**WSDL**| Web Service Description Language is an XML description of any network service, not just HTTP.|
 
 You can also import APIs from several backend Azure resources.
@@ -71,7 +71,6 @@ You use the Azure portal to apply different policies to APIs. Policies can be vi
 
 :::image type="content" source="../media/4-policies-1.png" alt-text="Screenshot of Azure portal showing API configuration for all operations with base policies highlighted for inbound, outbound, and backend sections.":::
 
-
 You can also use the **Design** tab to add new policies.
 
 :::image type="content" source="../media/4-policies-2.png" alt-text="Screenshot of Azure portal showing inbound policy options for API configuration.":::
@@ -97,6 +96,5 @@ You assign policies so that your products can have different access rules, usage
 You use the Azure portal to associate APIs with a product.
 
 :::image type="content" source="../media/4-apim-products.png" alt-text="Screenshot of Azure portal showing API Management with products section highlighted.":::
-
 
 For all pricing tiers except Consumption, there are two default products: **Starter** and **Unlimited**. The Unlimited product is designed for production API management, as it has no restrictions on the number of attached APIs. You can create as many new products as you need. The Starter product has a limit of five API calls/minute, and a maximum of 100 API calls/week.
