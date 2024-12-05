@@ -6,7 +6,7 @@ Real-Time Intelligence is a fully managed service that is optimized for streamin
 
 ## The real-time hub
 
-The Microsoft Fabric *real-time hub* serves as your gateway to uncover and control the flow of your streaming data and integrate it with other Fabric data and capabilities through OneLake..
+The Microsoft Fabric *real-time hub* serves as your gateway to uncover and control the flow of your streaming data and integrate it with other Fabric data and capabilities through OneLake.
 
  ![Diagram of Real-Time hub in Fabric Real-Time Intelligence.](../media/real-time-intelligence-core.png)
 
