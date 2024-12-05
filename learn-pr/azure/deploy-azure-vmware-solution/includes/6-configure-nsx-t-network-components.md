@@ -116,6 +116,15 @@ A DNS service and default DNS zone are provided as part of the Azure VMware Solu
 
 If you require name resolution from a privately hosted DNS server, consider adding conditional forwarding rules for the desired domain name. By doing so, you can forward DNS requests specifically for that domain zone to a selected set of private DNS servers. To achieve this requirement, you need to define an FQDN zone.
 
+Configure additional forwarder:
+
+1. In your VMware Solution private cloud, under **Workload Networking**, select **DNS** > **DNS zones**, then select **+Add**.
+1. Select **FQDN zone**, provide a name and up to three DNS Server IP addresses in the format of 10.0.0.53 then select **OK**.
+
+    :::image type="content" source="../media/6-add-dns-zone.png" alt-text="Screenshot of the FQDN zone showing how to add DNS Server IP addresses.":::
+
+1. Adding DNS zones can take several minutes to complete, you can follow the progress from **Notifications**. When the DNS zone is created, you see a message in the Notification. 
+1. Repeat steps 1-3 to add the other FQDN zones, including any applicable reverse lookup zones.
 
 
 <<<You'll configure a default DNS zone and FQDN zone to send DNS queries to the upstream server. When a DNS query is received, the DNS forwarder compares the domain name in the query with the domain names in the FQDN DNS zone. If a match is found, the query is forwarded to the DNS servers specified in the FQDN DNS zone. If no match is found, the query is forwarded to the DNS servers specified in the default DNS zone. A default zone must be defined before you configure an FQDN zone.
