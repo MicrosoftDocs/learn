@@ -35408,6 +35408,46 @@
       "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/4-view-lineage.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/2-design-a-strategy-for-using-tiered-storage.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/3-manage-tiered-storage-using-azure-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/4-exercise-manage-tiered-storage-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/5-manage-tiered-storage-in-app-code.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/6-exercise-manage-tiered-storage-using-asp.net-core-apps.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
+      "redirect_document_id": false
     }
   ]
 }
