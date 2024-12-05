@@ -1,3 +1,4 @@
+
 When a user or application requests access to a resource that's secured by a Microsoft Entra tenant, the user or app must be represented by a _security principal_. The security principal defines the access policy and permissions for the user (_user principal_) or app (_service principal_) in the Microsoft Entra tenant. The principal supports core features like authentication for a user and app during sign-in, or authorization during resource access.
 
 The Tailwind Traders organization is interested in implementing service principals for its applications. As the CTO, you need to understand the two ways an app can be represented in Microsoft Entra ID: as an application object, or by a service principal.

@@ -1,3 +1,4 @@
+
 Direct storage and handling of secrets, encryption keys, and certificates is risky. Every usage introduces the possibility of unintentional data exposure. Azure Key Vault provides a secure storage area so you can manage all your app secrets and properly encrypt your data in transit or while it's being stored. 
 
 Azure Key Vault can help you solve security problems for Tailwind Traders:
