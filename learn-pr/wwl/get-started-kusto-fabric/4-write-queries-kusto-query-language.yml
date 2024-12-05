@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-kusto-fabric.write-queries-kusto-query-language
 title: Store and query real-time data
 metadata:
   title: Store and query real-time data
-  description: "Understand key features and capabilities of an eventhouse and the KQL databases it contains."
+  description: "Understand how to store and query real-time data in Fabric."
   ms.date: 12/03/2024
   author: wwlpublish
   ms.author: gmalc
