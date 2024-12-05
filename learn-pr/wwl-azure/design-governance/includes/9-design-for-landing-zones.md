@@ -6,7 +6,7 @@ To use an analogy, shared city utilities like water, gas, and electricity are av
 
 As you plan the governance strategy for Tailwind Traders, consider these characteristics of Azure landing zones:
 
-- Landing zones are defined by management groups and subscriptions that are designed to scale according to business needs and priorities. 
+- Landing zones are management groups and subscriptions that are designed to scale according to business needs and priorities. 
 
    The following diagram shows landing zones for SAP, Corporate, and Online applications. 
 
@@ -36,7 +36,7 @@ You're ready to finalize your governance strategy for Tailwind Traders. Consider
 
 - **Consider scoping for both migrations and green field situations**. Scope the landing zone to support application migrations and green field development at scale in Azure. This expansion allows for a design that can scale across your organization's complete IT portfolio, which looks well beyond a short-term cloud-adoption plan.
 
-- **Consider [transitioning existing architectures to Azure landing zones](/azure/cloud-adoption-framework/ready/enterprise-scale/transition)**. Take advantage of landing zones for existing Azure architecture. Deploy the Azure landing zone accelerator into the same Microsoft Entra tenant in parallel with the current environment. You can create a new management group structure and ensure that the existing environment isn't affected by these changes.
+- **Consider [transitioning existing architectures to Azure landing zones](/azure/cloud-adoption-framework/ready/enterprise-scale/transition)**. Take advantage of landing zones for existing Azure architecture. Deploy the Azure landing zone accelerator into the same Microsoft Entra tenant in parallel with the current environment. You can create a new management group structure that doesn't affect the existing environment.
 
 > [!NOTE]
 > It's recommended to conduct an [Azure landing zone review](/assessments/?mode=pre-assessment&id=21765fea-dfe6-4bc4-8bb7-db9df5a6f6c0), to host workloads that you plan to build in or migrate to the cloud. This assessment is designed for customers with two or more years of experience. If you're new to Azure, this assessment helps you identify investment areas for your adoption strategy. 
