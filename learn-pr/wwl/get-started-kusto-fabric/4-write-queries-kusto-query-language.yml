@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-kusto-fabric.write-queries-kusto-query-language
-title: Store and query real-time data in eventhouses
+title: Store and query real-time data in an eventhouse
 metadata:
-  title: Store and query real-time data in eventhouses
-  description: "Understand key features and capabilities of eventhouses and the KQL databases they contain."
+  title: Store and query real-time data in an eventhouse
+  description: "Understand key features and capabilities of an eventhouse and the KQL databases it contains."
   ms.date: 12/03/2024
   author: wwlpublish
   ms.author: gmalc

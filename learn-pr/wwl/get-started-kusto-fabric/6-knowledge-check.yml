@@ -16,7 +16,7 @@ quiz:
     choices:
     - content: "Eventhouse"
       isCorrect: false
-      explanation: "Incorrect. An eventhouse is used to store realtime data in KQL databases."
+      explanation: "Incorrect. An eventhouse is used to store real-time data in KQL databases."
     - content: "Eventstream"
       isCorrect: true
       explanation: "Correct. An eventstream is used to ingest and transform real-time data."
@@ -27,10 +27,10 @@ quiz:
     choices:
     - content: "Python"
       isCorrect: false
-      explanation: "Incorrect. Python is not supported for querying tables in an eventhouse."
+      explanation: "Incorrect. Python isn't supported for querying tables in an eventhouse."
     - content: "SQL"
       isCorrect: false
-      explanation: "Incorrect. While SQL is supported in an eventhouse, it is not as optimized for real-time data as another supported language."
+      explanation: "Incorrect. While SQL is supported in an eventhouse, it isn't as optimized for real-time data as another supported language."
     - content: "KQL"
       isCorrect: true
       explanation: "Correct. KQL is the native language for databases in an eventstore and is optimized for handling real-time data."
@@ -38,7 +38,7 @@ quiz:
     choices:
     - content: "Dataflows"
       isCorrect: false
-      explanation: "Incorrect. Dataflows are generally used to ingest and process batch data, not to visualize real-time data in tiles."
+      explanation: "Incorrect. Dataflows are used to ingest and process batch data, not to visualize real-time data in tiles."
     - content: "Real-Time Dashboards"
       isCorrect: true
       explanation: "Correct. Real-Time Dashboards enable you to visualize and explore data in tiles based on KQL queries."
