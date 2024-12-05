@@ -14,8 +14,8 @@ Teams choose PaaS solutions for the following reasons:
 
 But some teams prefer to have a full control over their infrastructure, mostly for the following reasons:
 
-- You use specific proprietary software or uncommon Java features, a managed service might not be the right fit for you. For example, you might want to use network broadcasting to find your application nodes, and this feature isn't available on a managed service.
-- You use a specific native library, which doesn't run on a managed service.
+- If you're using specific proprietary software or uncommon Java features, a managed service might not be the right fit for you. For example, you might want to use network broadcasting to find your application nodes, and this feature isn't available on a managed service.
+- You use a specific native library that doesn't run on a managed service.
 
 ## Choose a PaaS solution on Azure
 
