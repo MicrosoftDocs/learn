@@ -1,15 +1,12 @@
-Many applications rely on Java workloads, ranging from simple services to complex microservice architectures that enhance functionality and user experience.
-
-Azure provides a range of solutions for running Java applications, including Azure Container Apps. Azure Container Apps has built-in support for Spring workloads, enabling developers to easily deploy and manage Spring apps with features like automatic memory fitting, JVM monitoring, diagnostics, and seamless integration with Spring components such as Spring Cloud Service Registry and Config Server. This empowers teams to focus on building applications while Azure handles infrastructure complexities.
-
-This module introduces Azure Container Apps, highlighting its Java supports to help you identify the best deployment strategies for your Java applications.
+This module introduces Azure Container Apps, highlighting its Java supports to help you identify the best deployment strategies for your Java applications. Many applications rely on Java workloads that enhance functionality and user experience, ranging from simple services to complex microservice architectures. Azure provides a range of solutions for running Java applications, including Azure Container Apps, which has built-in support for Spring workloads. This support enables developers to easily deploy and manage Spring apps with features like automatic memory fitting, JVM monitoring, diagnostics, and seamless integration with Spring components such as Spring Cloud Service Registry and Config Server. These capabilities empower teams to focus on building applications while Azure handles infrastructure complexities.
 
 ## Learning Objectives
 
-By the end of this module, you'll be able to:
+By the end of this module, you can:
 
-Launch your full-stack Java application on Azure Container Apps, featuring a Spring Boot web application with a PostgreSQL database.
-Accelerate your Java applications using the built-in Java Stack on Azure Container Apps.
+- Launch your full-stack Java application on Azure Container Apps, by using a Spring Boot web application with a PostgreSQL database.
+
+- Accelerate your Java applications using the built-in Java Stack on Azure Container Apps.
 
 ## Prerequisites
 
