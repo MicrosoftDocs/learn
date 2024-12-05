@@ -28,11 +28,11 @@ Here's a proposed management group hierarchy for your organization:
 
 - **Design management groups with governance in mind**. Use Azure policies at the management group level for all workloads that require the same security, compliance, connectivity, and feature settings.
 
-- **Keep the management group hierarchy reasonably flat**. Plan the Tailwind Traders hierarchy to have no more than three or four levels of management groups. A flat hierarchy may not provide flexibility and complexity for large organizations. A hierarchy with too many levels can be difficult to manage. 
+- **Keep the management group hierarchy reasonably flat**. Plan the Tailwind Traders hierarchy to have no more than three or four levels of management groups. A flat hierarchy has less flexibility and complexity for large organizations. A hierarchy with too many levels can be difficult to manage. 
 
 - **Consider a top-level management group**. Implement a top-level management group to support common platform policy and Azure role assignments across the entire organization. A Tailwind Traders management group can be a top-level management group for all organizational-wide policies. 
 
-- **Consider an organizational or departmental structure**. Design your management groups based on the organizational structure, to make it easy to understand. Separate the management groups for each Tailwind Traders department like Sales, Corporate, and IT. 
+- **Consider an organizational or departmental structure**. Design your management groups based on your organization's structure. Separate the management groups for each Tailwind Traders department like Sales, Corporate, and IT. 
 
 - **Consider a geographical structure**. Build your management groups by using a geographical structure to allow for compliance policies in different regions. Allocate unique management groups for governance in the West and East sales regions for Tailwind Traders. 
 
