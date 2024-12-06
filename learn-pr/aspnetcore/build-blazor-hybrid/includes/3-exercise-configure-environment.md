@@ -8,7 +8,7 @@ This module uses Visual Studio 2022 for local development. After you complete th
 
 ::: zone pivot="vstudio"
 
-In this module, we use Visual Studio code 2022 to set up a Blazor Hybrid project.
+In this module, we use Visual Studio 2022 to set up a Blazor Hybrid project.
 
 1. In Visual Studio 2022, select **File** > **New Project**, or select **Create a new project** from the launcher.
 
