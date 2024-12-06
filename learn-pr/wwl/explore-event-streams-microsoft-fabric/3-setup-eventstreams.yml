@@ -3,7 +3,7 @@ uid: learn.wwl.explore-event-streams-microsoft-fabric.setup-event streams
 title: Eventstream sources and destinations
 metadata:
   title: Eventstream sources and destinations
-  description: "Eventstream sources and destinations"
+  description: "Create eventstream sources and destinations"
   ms.date: 12/02/2024
   author: wwlpublish
   ms.author: gmalc
