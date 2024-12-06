@@ -3,7 +3,7 @@ uid: learn.wwl.explore-event-streams-microsoft-fabric.route-event-data-to-destin
 title: Eventstream transformations
 metadata:
   title: Eventstream transformations
-  description: "Eventstream transformations"
+  description: "Create eventstream transformations"
   ms.date: 12/02/2024
   author: wwlpublish
   ms.author: gmalc
