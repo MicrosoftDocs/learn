@@ -18,7 +18,7 @@
 
 ## Prerequisites
 
-- Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and vSAN.
+- Experience managing VMware infrastructure, such as vSphere, vCenter, NSX, and vSAN.
 - Basic knowledge of network concepts, such as classless inter-domain routing (CIDR), border gate protocol (BGP) routing, dynamic host configuration protocol (DHCP), and subnets.
 
 ## Summary
@@ -52,7 +52,7 @@ Identify the subtasks of *module title*
 1. **Plan Azure VMware Solution Deployment**
 
     - Plan deployment
-        - Azure components: subscription, resource group, number of nodes, vCenter/NSX-T admin passwords
+        - Azure components: subscription, resource group, number of nodes, vCenter/NSX admin passwords
         - Eligibility criteria: EA, CSP, register provider
         - Migration assessment: Azure Migrate
         - Network planning: VNet/ExpressRoute considerations, routing/subnet configurations, required ports, DHCP/DNS resolution considerations
@@ -84,8 +84,8 @@ Identify the subtasks of *module title*
     - Create Bastion or a jump host
     - Connect to VNet with ExpressRoute
     - Verify network routes are advertised
-    - Connect and sign into vCenter and NSX-T from the Bastion host
-    - Confirm NSX-T configurations: advertised NSX-T segment, DHCP services to NSX-T segment(optional), add VM on NSX-T segment, verify connectivity
+    - Connect and sign into vCenter and NSX from the Bastion host
+    - Confirm NSX configurations: advertised NSX segment, DHCP services to NSX segment(optional), add VM on NSX segment, verify connectivity
     - Placeholder: video/demo showing the creation of AVS and methods to ensure all settings are configured correctly.
     - Possible video: https://www.youtube.com/embed/gng7JjxgayI
     - Possible demo: https://bjd52q.axshare.com/#id=q3ewtk&p=dashboard&g=1
@@ -98,7 +98,7 @@ Identify the subtasks of *module title*
         - Owner - false
         - Contributor - true
 
-    - If DHCP on your NSX-T segments is required, what is one of the ways to configure within your environment?
+    - If DHCP on your NSX segments is required, what is one of the ways to configure within your environment?
 
         - Create a DHCP server and relay traffic to that server - true
         - Create a NAT rule - false
