@@ -3,7 +3,7 @@ uid: learn.dotnet-maui.customize-xaml-pages-layout
 metadata:
   title: Customize layout in .NET MAUI XAML pages
   description: Create consistent user interfaces across different devices by using StackLayout and Grid.
-  ms.date: 11/07/2023
+  ms.date: 12/04/2024
   author: codemillmatt
   ms.author: masoucou
   manager: coxford
@@ -11,7 +11,7 @@ metadata:
   ms.service: dotnet-mobile
   ms.subservice: dotnet-maui
 title: Customize layout in .NET MAUI XAML pages
-summary: Create consistent user interfaces across different devices by using StackLayout and Grid.
+summary: Create consistent user interfaces across different devices by using StackLayout and Grid in .NET Multi-platform App UI (MAUI) Extensible Application Markup Language (XAML) pages.
 abstract: |
   In this module, you will:
   - Arrange user interface elements in an app and size them
