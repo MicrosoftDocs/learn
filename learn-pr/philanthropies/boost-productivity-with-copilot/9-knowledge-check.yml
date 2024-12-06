@@ -39,7 +39,7 @@ quiz:
           explanation: "Copilot can help assist with both work-related tasks and personal time management."
         - content: "Microsoft Copilot can provide project outlines but lacks scheduling assistance."
           isCorrect: false
-          explanation: "Copilot can help assist with the creation of project outlines and can also help"
+          explanation: "Copilot can help assist with the creation of project outlines and can also help with scheduling"
     - content: "What method does Copilot use to ensure it provides the best assistance to turn an idea into reality?"
       choices:
         - content: "Sentiment analysis"

@@ -22,13 +22,13 @@ Let's walk through a checklist of things to consider when using Azure Virtual Ma
 
 #### Network configuration
 
-The first thing to think about isn't your virtual machines at all - it's the network. Spend some time thinking about your network configuration for Tailwind Traders. Network addresses and subnets aren't trivial to change after they're configured. If you have an on-premises network, you'll want to carefully consider the network topology before you create any virtual machines.
+The first thing to think about isn't your virtual machines at all - it's the network. Spend some time thinking about your network configuration for Tailwind Traders. Network addresses and subnets aren't trivial to change after they're configured. If you have an on-premises network, you want to carefully consider the network topology before you create any virtual machines.
 
 #### Virtual machine name
 
 Some developers don't give much thought about the name for a virtual machine. However, the **virtual machine name** defines a manageable **Azure resource**, and the value isn't easy to change. Choose machine names that are meaningful and consistent, so you can easily identify what each virtual machine does. 
 
-Consider how to name the first development web server for Tailwind Traders that's hosted in the US South Central location. In this scenario, you might use the machine name `devusc-webvirtual machine01`. `dev` stands for development and `usc` identifies the location. `web` indicates the machine as a web server, and the suffix `01` shows the machine is the first in the configuration.
+Consider how to name the first development web server for Tailwind Traders in the US South Central location. In this scenario, you might use the machine name `devusc-webvirtual machine01`. `dev` stands for development and `usc` identifies the location. `web` indicates the machine as a web server, and the suffix `01` shows the machine is the first in the configuration.
 
 #### Virtual machine location
 
