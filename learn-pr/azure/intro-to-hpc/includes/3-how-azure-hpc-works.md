@@ -12,11 +12,11 @@ High-performance computing resources are offered at nearly unlimited scale on Az
 
 ## Storage
 
-The highly secure cloud storage is available to customers at a massive scale. It allows HPC applications to use it efficiently, customizing with either Azure Managed Lustre, Azure NetApp Files, or Cray ClusterSor.
+The highly secure cloud storage is available to customers at a massive scale. It allows HPC applications to use it efficiently, customizing with either Azure Managed Lustre, Azure NetApp Files, or Cray ClusterStor.
 
 - **Azure Managed Lustre** is ideal for HPC workloads that require high throughput and low latency, making it suitable for applications that process large datasets quickly.
 - Access large amounts of I/O with a submillisecond latency with **Azure NetApp Files**, delivered as an Azure service natively within an Azure datacenter.
-- For a high throughput storage solution, use **Cray ClusterSor**, a Lustre-based, bare-metal HPC storage solution that’s fully integrated with Azure.
+- For a high throughput storage solution, use **Cray ClusterStor**, a Lustre-based, bare-metal HPC storage solution that’s fully integrated with Azure.
 
 ![Diagram of Azure storage.](../media/7-azure-storage.png)
 
@@ -105,9 +105,9 @@ The following H-series and N-series VMs are RDMA capable and can communicate ove
     - Ideal for HPC workloads that require high throughput and low latency, making it suitable for applications that process large datasets quickly.
 
   - Key benefits include:
-    - High storage capacity up to 2.5PB (larger capacities available upon request).
+    - High storage capacity up to 12.5PB upon request.
     - Low (~2ms) latency.
-    - Up to 100,000 IOPS, up to 500 GiB/s throughput.
+    - Up to 1M IOPS, up to 500 GiB/s throughput.
     - Spin up new clusters in minutes.
     - Supports containerized workloads with AKS.
     - Integrates with Azure Blob Storage as a source for importing and exporting data for long-term storage.
