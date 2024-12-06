@@ -29,5 +29,5 @@ You now understand the fundamentals of building Blazor Hybrid apps. You can use 
 - [Build a Blazor to-do list](/aspnet/core/blazor/tutorials/build-a-blazor-app)
 - [Blazor Pizza Store workshop](https://aka.ms/blazorworkshop)
 - [Blazor on Microsoft Learn](/training/paths/build-web-apps-with-blazor/)
-- [.NET MAUI on Microsoft Learn](/training/paths/build-apps-with-dotnet-maui/)
+- [Build mobile and desktop apps with .NET MAUI](/training/paths/build-apps-with-dotnet-maui/)
 - [.NET MAUI workshop](https://aka.ms/maui-workshop)
