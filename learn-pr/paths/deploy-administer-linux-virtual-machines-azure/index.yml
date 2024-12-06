@@ -33,7 +33,6 @@ modules:
 - learn.manage-vms-with-azure-cli
 - learn.wwl.implement-access-management-for-azure-resources
 - learn.wwl.configure-azure-files-file-sync
-- learn.copy-blobs-using-azcopy
 - learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure
 trophy:
   uid: learn.wwl.deploy-administer-linux-virtual-machines-azure.trophy
