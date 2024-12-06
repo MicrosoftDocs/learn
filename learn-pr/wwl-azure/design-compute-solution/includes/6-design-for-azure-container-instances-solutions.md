@@ -20,11 +20,11 @@ Azure Container Instances offers many benefits, including fast startup, per seco
 
 #### Container groups
 
-The top-level resource in Azure Container Instances is the _container group_. A container group is a collection of containers that get scheduled on the same host machine. The containers in a container group share a lifecycle, resources, local network, and storage volumes.
+The top-level resource in Azure Container Instances is the _container group_. A container group is a collection of containers that get scheduled on the same host machine. The containers in a group share a lifecycle, resources, local network, and storage volumes.
 
 :::image type="content" source="../media/container-groups.png" alt-text="Diagram that shows container groups with access from DNS on port 80 and Azure files on port 1433." border="false":::
 
-Multi-container groups are useful when you want to divide a single functional task into several container images. These images can then be delivered by different teams and have separate resource requirements. Some example scenarios include:
+Multi-container groups are useful when you want to divide a single functional task into several container images. These images are delivered by different teams and have separate resource requirements. Some example scenarios include:
 - A container serving a web application and a container pulling the latest content from source control.
 - An application container and a logging container. The logging container collects the logs and metrics output by the main application and writes them to long-term storage.
 - An application container and a monitoring container. The monitoring container periodically makes a request to the application to ensure it's running and responding correctly, and raises alerts as needed.
