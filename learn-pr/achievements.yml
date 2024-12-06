@@ -4272,3 +4272,8 @@ achievements:
   title: Manage Power BI assets by using Microsoft Purview
   summary: Improve data governance and asset discovery using Power BI and Microsoft Purview integration.
   iconUrl: /training/achievements/4-manage-power-bi-artifacts-by-using-azure-purview.svg
+- uid: learn.azure.gather-metrics-from-blob-storage.badge
+  type: badge
+  title: Gather metrics from your Azure Blob Storage containers
+  summary: In this module, you learn how to use Azure Monitor to gather and view metrics for a Blob Storage account in Microsoft Azure.
+  iconUrl: /training/achievements/gather-metrics-from-blob-storage.svg
