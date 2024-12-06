@@ -1,5 +1,6 @@
 
 
+
 ExpressRoute enables us to connect on Premises to Azure services seamlessly. Let's review some design decisions to make before deploying an ExpressRoute circuit.
 
 ## **ExpressRoute circuit SKUs**
@@ -38,7 +39,7 @@ The following link provides a list of [Azure regions to ExpressRoute locations](
 
 **ExpressRoute connectivity providers**
 
-The following link list's locations by service provider. This page is kept up to date with the latest available providers by location, see [Service providers by location](/azure/expressroute/expressroute-locations-providers).
+This page is kept up to date with the latest available providers by location, [Service providers by location](/azure/expressroute/expressroute-locations-providers).
 
 **Connectivity through Exchange providers**
 
@@ -67,7 +68,7 @@ The other option is the ExpressRoute Direct, connecting your network to the clos
 
 Refer to the [Express Route pricing](https://azure.microsoft.com/pricing/details/expressroute/) for details on metered and unlimited data plan based on the bandwidth.
 
-You can purchase ExpressRoute circuits for a wide range of bandwidths. The supported bandwidths are listed as follows. Be sure to check with your connectivity provider to determine the bandwidths they support.
+You can purchase ExpressRoute circuits for a wide range of bandwidths. Be sure to check with your connectivity provider to determine the bandwidths they support.
 
 ### Choose a billing model
 

@@ -1,8 +1,4 @@
-This Microsoft training module explores the use of event stream in Microsoft Fabric. It covers the basics of event streams, how to create and use them, and how to handle errors. The module also includes a hands-on lab where learners can practice creating and using event streams in a sample application.
+In this module, you've explored the use of Eventstream in Microsoft Fabric to ingest and transform real-time streams of data. You also had the opportunity to build an eventstream of your own.
 
-Key points:
-
-- Event streams are a service to publish and consume events in a distributed system.
-- Azure Service Fabric provides built-in support for event streams.
-- Learners learn how to create and use event stream components in Microsoft Fabric applications.
-- The hands-on lab allows learners to practice creating and using event stream with a KQL Database.
+> [!TIP]
+> For more information about Real-Time Intelligence in Microsoft Fabric, see **[Microsoft Fabric Eventstreams - overview](/fabric/real-time-intelligence/event-streams/overview)**.

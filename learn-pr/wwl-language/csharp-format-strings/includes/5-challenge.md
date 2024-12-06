@@ -8,7 +8,7 @@ As a customer of our Magic Yield offering we are excited to tell you about a new
 
 Currently, you own 2,975,000.00 shares at a return of 12.75%.
 
-Our new product, Glorious Future offers a return of 13.13%.  Given your current volume, your potential profit would be $63,000,000.00.
+Our new product, Glorious Future offers a return of 13.13%.  Given your current volume, your potential profit would be ¤63,000,000.00.
 
 Here's a quick comparison:
 
