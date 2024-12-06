@@ -1,4 +1,4 @@
-Companies that build web apps and clients apps commonly hire developers for different roles. Some developers create back-end, server-side logic. Some build client-side web apps. Others build native-client apps for mobile and desktop platforms. These developers often use different development languages and technologies.
+Companies that build web apps and client apps commonly hire developers for different roles. Some developers create back-end, server-side logic. Some build client-side web apps. Others build native-client apps for mobile and desktop platforms. These developers often use different development languages and technologies.
 
 C# and .NET are popular choices for building server-side logic. Client-side web apps are often built with web UI frameworks using JavaScript. When it comes to native-client apps for desktop and mobile, there are several options available, including many for .NET and C#. Using multiple languages and toolsets requires multiple sets of skills and often requires two separate teams. Also, code to transfer and represent data must be built in both languages and kept in sync. Blazor Hybrid can simplify your development team's tasks, code, and processes by allowing you to use your existing skills and code in building web applications in C# and .NET to build native-client applications using these same technologies.
 
@@ -12,7 +12,7 @@ Blazor apps are composed of reusable web UI components built using C#, HTML, and
 
 Blazor Hybrid allows developers to blend desktop and mobile native client frameworks with .NET and Blazor.
 
-In a Blazor Hybrid app, Razor components run natively on the device. Components render to an embedded Web View control through a local interop channel. Components don't run in the browser, and WebAssembly isn't involved. Razor components load and execute code quickly, and components have full access to the native capabilities of the device through the .NET platform.
+In a Blazor Hybrid app, Razor components run natively on the device. Components render to an embedded Web View control through a local interop channel. Components don't run in the browser, and WebAssembly isn't involved. Razor components load and execute code quickly, and components have full access to the device's native capabilities through the .NET platform.
 
 ![Diagram that shows the Blazor Hybrid architecture.](../media/blazor-hybrid.png)
 
@@ -30,4 +30,4 @@ Blazor Hybrid support is built into the .NET MAUI framework. .NET MAUI includes 
 
 You can build Blazor Hybrid apps by using the latest version of Visual Studio 2022 or [Visual Studio Code (with the .NET SDK, .NET MAUI workload, C# Dev Kit extension, and .NET MAUI extension installed)](/dotnet/maui/get-started/installation?tabs=visual-studio-code). In this module, we'll be using Visual Studio 2022 or Visual Studio Code to build our Blazor Hybrid application.
 
-Whatever your development environment, you need to install the **.NET MAUI** workload to ensure the .NET 8.0 SDK and tools are available in Visual Studio.  After installation, you'll have everything you need to start building Blazor Hybrid apps. You'll build your first Blazor Hybrid app in the next exercise.
+Whatever your development environment, you need to install the **.NET MAUI** workload to ensure the .NET 9.0 SDK and tools are available in Visual Studio.  After installation, you'll have everything you need to start building Blazor Hybrid apps. You'll build your first Blazor Hybrid app in the next exercise.

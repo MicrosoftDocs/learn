@@ -4282,3 +4282,8 @@ achievements:
   title: Copy blobs between Azure Storage accounts from the command line or by using code
   summary: Learn how to use the Azure CLI and AzCopy to copy blobs between storage accounts.
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.azure.gather-metrics-from-blob-storage.badge
+  type: badge
+  title: Gather metrics from your Azure Blob Storage containers
+  summary: In this module, you learn how to use Azure Monitor to gather and view metrics for a Blob Storage account in Microsoft Azure.
+  iconUrl: /training/achievements/gather-metrics-from-blob-storage.svg

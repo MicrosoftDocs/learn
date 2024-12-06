@@ -1,22 +1,22 @@
-Now that you are familiar with the basics of Azure Kubernetes Service (AKS), let's see what information you need to set up a simple AKS cluster. This information should help you to understand how AKS integrates with existing development and deployment processes.
+Now that you're familiar with the basics of Azure Kubernetes Service (AKS), let's see what information you need to set up a simple AKS cluster. This information should help you to understand how AKS integrates with existing development and deployment processes.
 
-## Creating an AKS cluster
+## Create an AKS cluster
 
-At its core, an AKS cluster is a cloud-hosted Kubernetes cluster. Unlike a custom Kubernetes installation, AKS streamlines the installation process and takes care of most of the underlying cluster management tasks.
+At its core, an AKS cluster is a cloud-hosted Kubernetes cluster. Unlike a custom Kubernetes installation, AKS streamlines the installation process and takes care of most of the underlying cluster-management tasks.
 
-You have two options when you create an AKS cluster: you can either use the Azure portal or Azure CLI. Both options require you to configure basic information about the cluster. For example, you will configure:
+You have two options when you create an AKS cluster: you can either use the Azure portal or Azure CLI. Both options require you to configure basic information about the cluster. For example, you'll configure:
 
 - The Kubernetes cluster name.
 - The version of Kubernetes to install.
 - A DNS prefix to make the control plane node publicly accessible.
 - The initial node pool size.
 
-The initial node pool size defaults to two nodes, but it's recommended that at least three nodes are used for a production environment.
+The initial node pool size defaults to two nodes, but we recommend that you use at least three nodes for a production environment.
 
 > [!NOTE]
-> The control plane node in your cluster is free. You only pay for node VMs, storage and networking resources consumed in your cluster.
+> The control-plane node in your cluster is free. You only pay for node VMs, storage, and networking resources consumed in your cluster.
 
-Unless you specify otherwise, the Azure service creation workflow creates a Kubernetes cluster using the default configuration for scaling, authentication, networking, and monitoring. Creating an AKS cluster typically takes a few minutes. After the AKS cluster is created, you can change any of its default properties. You can manage your cluster with the Azure portal or from the command line.
+Unless you specify otherwise, the Azure service-creation workflow creates a Kubernetes cluster using the default configuration for scaling, authentication, networking, and monitoring. Creating an AKS cluster typically takes a few minutes. After the AKS cluster is created, you can change any of its default properties. You can manage your cluster with the Azure portal or from the command line.
 
 ## How workloads are developed and deployed to AKS
 
@@ -30,7 +30,7 @@ AKS also supports popular development and management tools such as Helm, Draft, 
 
 ## Bridge to Kubernetes
 
-Bridge to Kubernetes allows you to run and debug code on your development computer, while still being connected to your Kubernetes cluster and the rest of your application or services.
+Bridge to Kubernetes allows you to run and debug code on your development computer while still being connected to your Kubernetes cluster and the rest of your application or services.
 
 With Bridge to Kubernetes, you can:
 
@@ -40,6 +40,6 @@ With Bridge to Kubernetes, you can:
 
 ## Azure Service Integration
 
-AKS allows us to integrate any Azure service offering and use it as part of an AKS cluster solution.
+AKS allows you to integrate any Azure service offering and use it as part of an AKS cluster solution.
 
 For example, remember that Kubernetes doesn't provide middleware and storage systems. Suppose you need to add a processing queue to the fleet management data processing service. You can easily integrate Azure Storage queues to extend the capacity of the data processing service.
