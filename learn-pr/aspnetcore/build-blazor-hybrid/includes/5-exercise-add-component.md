@@ -48,7 +48,7 @@ When you're ready to stop, return to Visual Studio and press <kbd>Shift+F5</kbd>
    <Counter />
    ```
 
-If you still have the app running, return to Visual Studio Code, and press <kbd>Shift+F5</kbd> to stop the app. Save the file and start the app again by selecting **Run** > **Start Debugging**
+If you still have the app running, return to Visual Studio Code, and press <kbd>Shift+F5</kbd> to stop the app. Save the file and start the app again by selecting **Run** > **Start Debugging**.
 
 When you're ready to stop, return to Visual Studio Code, and press <kbd>Shift+F5</kbd> to stop the app.
 
