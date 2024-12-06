@@ -2,9 +2,9 @@ The drag and drop eventstream editing interface offers a straightforward and use
 
 ## Eventstream transformations
 
-When you create an eventstream with *Enhanced capabilities* enabled, all destinations support transformation operations. Without Enhanced capabilities, transformations are only available for Lakehouse and KQL Database destinations, which handle event processing before ingestion.
+You can transform data in an eventstream by applying the following transformations:
 
-  - **Filter**: Use the Filter transformation to filter events based on the value of a field in the input. Depending on the data type (number or text), the transformation keeps the values that match the selected condition, such as is ```null``` or ```is not null```.
+  - **Filter**: Use the Filter transformation to filter events based on the value of a field in the input. Depending on the data type (number or text), the transformation keeps the values that match the selected condition, such as is `null` or `is not null`.
   - **Manage fields**: This transformation allows you to add, remove, change data type, or rename fields coming in from an input or another transformation.
   - **Aggregate**: Use the Aggregate transformation to calculate an aggregation (Sum, Minimum, Maximum, or Average) every time a new event occurs over a period of time. This operation also allows for the renaming of these calculated columns, and filtering or slicing the aggregation based on other dimensions in your data. You can have one or more aggregations in the same transformation.
   - **Group by**: Use the Group by transformation to calculate aggregations across all events within a certain time window. You can group by the values in one or more fields. It's like the Aggregate transformation allows for the renaming of columns, but provides more options for aggregation and includes more complex options for time windows. Like Aggregate, you can add more than one aggregation per transformation.
@@ -12,9 +12,9 @@ When you create an eventstream with *Enhanced capabilities* enabled, all destina
   - **Expand**: Use this array transformation to create a new row for each value within an array.
   - **Join**: this join is a transformation to combine data from two streams based on a matching condition between them.
 
-## Windowing functions in eventstream
+## Windowing functions in Eventstream
 
-Windowing functions are a way to perform operations on the data contained in temporal windows, such as aggregating, filtering, or transforming streaming events based on time. Windowing functions are useful for analyzing streaming data that changes over time, such as sensor readings, web-clicks, on-line transactions, and more and provide great flexibility to keep an accurate record of events as they occurred.
+Windowing functions are a way to perform operations on the data contained in temporal windows, such as aggregating, filtering, or transforming streaming events that occur within a specified time period. Windowing functions are useful for analyzing streaming data that changes over time, such as sensor readings, web-clicks, on-line transactions, and more and provide great flexibility to keep an accurate record of events as they occur.
 
 Earlier, we mentioned the **Group by** operator in the event processor editor. This graphical interface allows us to define the logic we need for processing, transforming, and routing event data. There are four parameters that need specified in the **Group by** operator settings to use these windowing functions that include:
 
