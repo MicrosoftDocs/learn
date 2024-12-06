@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Sample Java app deployment
   description: We demonstrate and explain a Java app deployment to Azure App Service
-  ms.date: 05/01/2023
+  ms.date: 11/22/2024
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: unit

@@ -2,13 +2,13 @@ In this unit, you'll configure a Spring Boot application to be deployed via Mave
 
 ## Example application
 
-Clone in your favorite command-line tool.
+Clone the following in your favorite command-line tool:
 
 ``` bash
 git clone https://github.com/spring-projects/spring-petclinic.git
 ```
 
-Then run it locally.
+Then, run the application locally:
 
 ``` bash
 cd spring-petclinic
@@ -18,13 +18,13 @@ cd spring-petclinic
 java -jar target/*.jar
 ```
 
-When you open the example in the browser, it should like this:
+When you open the example in the browser, it should look like this:
 
 ![Screenshot that shows clicking through the local deployment of the example pet clinic application.](../media/6-sample.gif)
 
 ## Prepare the example application to be cloud ready
 
-In the src folder, you'll find object, controller, and repository classes.
+In the **src** folder, you'll find object, controller, and repository classes.
 
 Because Java is platform independent, you're free to choose the OS, but the Java version is important for the deployment. You can find the Java version in the pom.xml file.
 

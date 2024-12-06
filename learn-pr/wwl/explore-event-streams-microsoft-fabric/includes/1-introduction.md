@@ -1,21 +1,10 @@
-When your company chooses Real-Time Intelligence in Microsoft Fabric, the first step is seamlessly ingesting data. Event streams are a Microsoft Fabric feature that lets you handle real-time events without coding. You can set up event sources, destinations, and processors in the event stream. Event processing is another option within eventstream for collecting and aggregating, filtering, grouping, transforming, expanding, and joining other events from Microsoft Fabric event streams for extra insights into the in-flight data.
+*Eventstreams* enable you to capture and process real-time events without needing to write any code. You can set up event sources, destinations, and transformations in the event stream; enabling you to collect, filter, aggregate, group, and combine data from real-time sources before loading it into a destination.
 
-![Real-Time Intelligence core services](../media/real-time-intelligence-core.png)
+Some of the main benefits of Microsoft Fabric Eventstreams are:
 
-### Real-Time hub event flow
+- You can capture, transform, and route real-time events to various destinations with a no-code experience. You can use the drag and drop feature to make your event data processing logic without writing any code.
+- There are multiple source connectors to get event data from different sources, such as Azure Event Hubs, Azure IoT Hub, Azure storage, Apache Kafka, and others.
+- You can send data to a wide range of destinations for further analysis or processing. You can attach multiple destinations in an eventstream to ingest data from a single source into multiple stores.
+- Eventstreams uses a scalable infrastructure that manages resources automatically. The scalable infrastructure helps you capture your real-time events easily, making streaming ETL (Extract, Transform, Load) operations possible.
 
-The Real-Time hub is essentially a central library within your organization that simplifies the process of accessing, adding, exploring, and sharing data in motion. It's designed to broaden your view by connecting to various data sources, providing clear insights across different areas. This hub is key to making data not just available, but also easy to use, which supports swift decision-making and informed actions. Sharing streaming data from various sources allows for a more complete understanding of your business intelligence.
-
-Two objects that you'll notice in the Real-Time hub is that both eventstreams streams and event house tables are listed in the hub.
-
-When you pick a data stream, either from within your organization or from external or internal sources, you can dive into the data using Real-Time Intelligence tools. These tools help you visually explore the data, allowing you to spot patterns, anomalies, and even predict trends and rates. Even if you're new to the data, these tools make it easy to grasp the structure and meaning, enabling you to make informed decisions quickly. Real-Time Dashboards are user-friendly, with built-in features that help anyone understand and act on data in motion, using visual aids, natural language, and Copilot guidance.
-
-Moreover, you can turn these insights into immediate actions with the Data Activator, setting up reflex alerts within Data Activator to respond instantly to certain data patterns or conditions.
-
-The eventstream main editor is the primary interface for setting up Fabric event streams and can be used to:
-
-- Establish source and destinations
-- View the data in-flight
-- Capture, transform, and route data
-
-By the end of this module, you're able to use Real-Time hub to add and explore event streams to source, transform, process, and route driven data events with Data Activator to destinations that are necessary for your workloads.
+In this module, you'll learn how to create eventstreams and use them to ingest and transform a real-time stream of data, and route it to destinations for further processing and analysis.

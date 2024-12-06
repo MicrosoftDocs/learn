@@ -35068,6 +35068,346 @@
       "source_path":"learn-pr/achievements/learn.azure.azure-netapp-files-sap-hana.badge.yml",
       "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/index.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/7-describe-optimization-options.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/2-describe-synapse-workspace-integration.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/3-exercise-connect-to-from-synapse.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/5-exercise-create-new-data-source-to-use.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/6-exercise-create-new-report-synapse-studio.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/8-exercise-improve-performance-materialized-views-result-set-caching.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/10-knowledge-check.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/11-summary.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/4-understand-data-sources.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-reports-using-power-bi-azure-synapse-analytics/9-visualize-data-serverless-sql-pools.md",
+      "redirect_url": "/azure/synapse-analytics/sql/tutorial-connect-power-bi-desktop",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/integrate-azure-synapse-analytics-azure-data-ai-services/index.md",
+      "redirect_url": "/azure/synapse-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/index.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/4-describe-azure-automated-machine-learning.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/2-describe-azure-machine-learning-how-it-integrates-workspace.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/3-exercise-create-azure-linked-service.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/7-exercise-enrich-data-using-trained-models-predict-function.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/5-exercise-trigger-automated-machine-learning-experiment.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/8-knowledge-check.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/9-summary.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-machine-learning-azure-synapse-analytics/6-understand-how-to-score-models-predict.md",
+      "redirect_url": "/azure/synapse-analytics/machine-learning/what-is-machine-learning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/index.md",
+      "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/5-exercise-brainstorm-destination-features.md",
+      "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/8-exercise-create-branding.md",
+      "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/3-exercise-create-hero-image.md",
+      "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/2-exercise-define-idea-set-context.md",
+      "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/7-exercise-ideate-ambience-music.md",
+      "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/4-exercise-make-grand-entrance.md",
+      "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/6-exercise-plan-menu.md",
+      "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/1-introduction.md",
+      "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/9-knowledge-check.md",
+      "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/10-summary.md",
+      "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/index.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/6-assign-data-objects-data-activator.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/7-create-triggers-data-activator.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/8-exercise.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/5-get-data-from-power-bi-reports-eventstreams-data-activator.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/3-get-started-with-data-activator.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/1-introduction.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/9-knowledge-check.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/10-summary.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/2-understand-data-activator.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/get-started-data-activator-microsoft-fabric/4-understand-triggers-conditions-actions-data-activator.md",
+      "redirect_url": "/fabric/real-time-intelligence/data-activator/activator-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/index.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/3-classify-data.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/1-introduction.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/5-knowledge-check.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/2-register-scan-data.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/4-search-data-catalog.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/6-summary.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/index.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/5-integrate.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/3-browse-assets.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/1-introduction.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/6-knowledge-check.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/2-search-browse-assets.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/7-summary.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/discover-trusted-data-use-azure-purview/4-use-asset-power-bi.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/govern-data-across-enterprise/index.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/index.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/1-introduction.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/5-knowledge-check.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/2-register-scan-tenant.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/3-search-browse-assets.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/6-summary.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/4-view-lineage.md",
+      "redirect_url": "/purview/",
+      "redirect_document_id": false
     }
   ]
 }
