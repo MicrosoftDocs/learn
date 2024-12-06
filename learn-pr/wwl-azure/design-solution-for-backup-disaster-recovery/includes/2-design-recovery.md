@@ -1,6 +1,6 @@
 Organizations, such as Tailwind Traders, require a high degree of reliability from their mission-critical apps. To achieve the desired reliability for on-premises based apps, it's typical to purchase more computing resource, such as servers and storage. Purchasing more computing resources builds redundancy into an on-premises infrastructure.
 
-It's also vital that any mission-critical app, and its associated data, is recoverable following a failure-ideally to the point of failure. This recoverability is often provided by backup, restore components, and procedures. For organizations with apps hosted in Azure, or organizations with hybrid app deployments, there are other considerations and options.
+It's also vital that any mission-critical app, and its associated data, is recoverable following a failure. This recoverability is often provided by backup, restore components, and procedures. For organizations with apps hosted in Azure, or organizations with hybrid app deployments, there are other considerations and options.
 
 Reliable apps are:
 
