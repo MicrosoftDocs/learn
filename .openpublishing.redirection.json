@@ -35448,6 +35448,101 @@
       "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azure-cli/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/blob-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azure-cli/2-move-blobs-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/blob-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azure-cli/3-exercise-move-blobs-using-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/blob-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azure-cli/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/blob-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azure-cli/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/blob-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azcopy/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azcopy/2-move-blobs-using-azcopy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azcopy/3-exercise-move-blobs-using-azcopy.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azcopy/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-using-azcopy/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/copy-blobs-from-command-line-and-code/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/storage/common/storage-solution-small-dataset-low-moderate-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/2-viewing-blob-metrics-in-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/3-exercise-specify-monitor-blob-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/4-using-dashboards-in-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/5-exercise-adding-azure-monitor-metrics-charts-to-a-custom-portal-dashboard.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
     }
   ]
 }
