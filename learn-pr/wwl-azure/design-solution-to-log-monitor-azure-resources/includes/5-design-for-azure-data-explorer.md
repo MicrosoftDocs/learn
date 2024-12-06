@@ -14,7 +14,7 @@ Consider these characteristics of Azure Data Explorer that can help enhance your
 
 ### Things to consider when using Azure Data Explorer
 
-The following diagram shows a hybrid end-to-end monitoring solution that's integrated with Azure Sentinel and Azure Monitor. This configuration ingests streamed and batched logs from multiple sources, on-premises, or any cloud within an enterprise ecosystem. Consider how this solution could be implemented in the Tailwind Traders architecture to monitor various logs. 
+The following diagram shows a hybrid end-to-end monitoring solution integrated with Microsoft Sentinel and Azure Monitor. This configuration ingests streamed and batched logs from multiple sources, on-premises, or any cloud within an enterprise ecosystem. Consider how this solution could be implemented in the Tailwind Traders architecture to monitor various logs. 
 
 :::image type="content" source="../media/azure-data-explorer.png" alt-text="Diagram of an end-to-end monitoring solution integrated with Azure Monitor for ingesting streamed and batched logs from diverse sources." lightbox="../media/azure-data-explorer-expanded.png" border="false":::
 

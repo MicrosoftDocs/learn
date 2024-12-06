@@ -4,12 +4,11 @@ This module uses Visual Studio 2022 for local development. After you complete th
 
 [!include[](../../../includes/install-dotnet-maui-workload.md)]
 
-
 ## Create a new Blazor Hybrid app
 
 ::: zone pivot="vstudio"
 
-To set up a Blazor Hybrid project to work with, we use Visual Studio 2022.
+In this module, we use Visual Studio 2022 to set up a Blazor Hybrid project.
 
 1. In Visual Studio 2022, select **File** > **New Project**, or select **Create a new project** from the launcher.
 
@@ -21,7 +20,7 @@ To set up a Blazor Hybrid project to work with, we use Visual Studio 2022.
 
    ![Screenshot of the Visual Studio 2022 Configure Your Project screen and recommended settings from step 3.](../media/visual-studio-2022-configure-project.png)  
 
-4. On the *Additional Information* screen, select **.NET 8.0 (Long-term support)** in the *Framework* drop-down, then select **Create**.
+4. On the *Additional Information* screen, select **.NET 9.0 (Standard term support)** in the *Framework* drop-down, then select **Create**.
 
 5. This command creates a basic Blazor Hybrid project powered by .NET MAUI with all required files and pages.
 
@@ -33,7 +32,7 @@ To set up a Blazor Hybrid project to work with, we use Visual Studio 2022.
 
 ::: zone pivot="vscode"
 
-To set up a Blazor Hybrid project to work with, we use Visual Studio Code.
+In this module, we use Visual Studio Code to set up a Blazor Hybrid project.
 
 1. In Visual Studio Code, open the **Explorer** and select **Create .NET Project** .
 
@@ -63,13 +62,13 @@ The project is a normal .NET MAUI project with some more Blazor related content.
 
 - **Components**: This folder containers several subfolder and razor components for the app.
 
-    - **Layout**: This folder contains shared Razor components, including the app's main layout and navigation menu.
+  - **Layout**: This folder contains shared Razor components, including the app's main layout and navigation menu.
 
-    - **Pages**: This folder contains three Razor components—`Counter.razor`, `Home.razor`, and `Weather.razor`—that define the three pages that make up the Blazor user interface.
+  - **Pages**: This folder contains three Razor components—`Counter.razor`, `Home.razor`, and `Weather.razor`—that define the three pages that make up the Blazor user interface.
 
-    - `_Imports.razor`: This file defines namespaces that are imported into each Razor component.
+  - `_Imports.razor`: This file defines namespaces that are imported into each Razor component.
 
-    - `Routes.razor`: The root Razor component for the app that sets up the Blazor router to handle page navigation within the web view.
+  - `Routes.razor`: The root Razor component for the app that sets up the Blazor router to handle page navigation within the web view.
 
 ### .NET MAUI project files
 
