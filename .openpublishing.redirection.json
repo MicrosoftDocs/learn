@@ -35408,6 +35408,46 @@
       "source_path": "learn-pr/wwl-data-ai/manage-power-bi-artifacts-use-microsoft-purview/4-view-lineage.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/2-viewing-blob-metrics-in-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/3-exercise-specify-monitor-blob-metrics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/4-using-dashboards-in-the-azure-portal.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/5-exercise-adding-azure-monitor-metrics-charts-to-a-custom-portal-dashboard.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
+      "redirect_document_id": false
     }
   ]
 }
