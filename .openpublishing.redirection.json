@@ -35503,6 +35503,11 @@
       "source_path": "learn-pr/azure/gather-metrics-blob-storage/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/wwl/query-data-kql-database-microsoft-fabric/4a-using-kql-with-notebooks.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/real-time-intelligence/notebooks",
+      "redirect_document_id": false
+  },
   ]
 }
