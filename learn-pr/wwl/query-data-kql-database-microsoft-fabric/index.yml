@@ -4,7 +4,7 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Work with real-time data in a Microsoft Fabric eventhouse
-  description: "Eventhouses in Microsoft Fabric provide a scalable and flexible store for real-time data."
+  description: "Microsoft Fabric provides a scalable and flexible store for real-time data."
   ms.date: 12/06/2024
   author: wwlpublish
   ms.author: gmalc
@@ -14,11 +14,11 @@ metadata:
   ms.service: azure
   ai-usage: human-only
 title: Work with real-time data in a Microsoft Fabric eventhouse
-summary: Eventhouses in Microsoft Fabric provide a scalable and flexible store for real-time data.
+summary: An eventhouse in Microsoft Fabric provides a scalable and flexible store for real-time data.
 abstract: |
   After completing this module, you'll be able to:
   - Create an eventhouse in Microsoft Fabric
-  - Query tables in an eventhouse by using Kusto Query Language (KQL).
+  - Query real-time data by using Kusto Query Language (KQL).
   - Create materialized views and stored functions in a KQL database.
 
 prerequisites: Before starting this module, you should be familiar with Microsoft Fabric.

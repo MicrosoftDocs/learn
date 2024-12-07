@@ -1,11 +1,11 @@
-Now it's your chance to work with data in an eventhouse.
+Now it's your chance to work with real-time data for yourself.
 
-in this exercise, you'll use KQL and SQL to query taxi trip data in a KQL database.
+In this exercise, you use KQL and SQL to query taxi trip data in a KQL database.
 
 This lab takes approximately **30** minutes to complete.
 
 > [!IMPORTANT]
-> You'll need a **Microsoft Fabric license** to complete this exercise. See [Getting started with Fabric](/fabric/get-started/fabric-trial) for details of how to enable a free Fabric trial license.
+> You need a **Microsoft Fabric license** to complete this exercise. See [Getting started with Fabric](/fabric/get-started/fabric-trial) for details of how to enable a free Fabric trial license.
 
 Launch the exercise and follow the instructions.
 

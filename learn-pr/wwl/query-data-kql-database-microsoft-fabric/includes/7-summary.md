@@ -1,4 +1,4 @@
-In this module, you've explored eventhouses in Microsoft Fabric and how to query tables in the KQL databases they contain.
+In this module, you explored how to store real-time data in Microsoft Fabric and how to query it using KQL.
 
 > [!TIP]
 > For more information about KQL, see **[Kusto Query Language (KQL) overview](/kusto/query/?view=microsoft-fabric)**.
