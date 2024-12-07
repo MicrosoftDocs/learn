@@ -4297,3 +4297,8 @@ achievements:
   title: Gather metrics from your Azure Blob Storage containers
   summary: In this module, you learn how to use Azure Monitor to gather and view metrics for a Blob Storage account in Microsoft Azure.
   iconUrl: /training/achievements/gather-metrics-from-blob-storage.svg
+- uid: learn.azure.build-node-cosmos-app-vscode.badge
+  type: badge
+  title: Build a Node.js app for Azure Cosmos DB Core (SQL) in Visual Studio Code
+  summary: Build a database app to store and query data in Azure Cosmos DB Core (SQL) by using Visual Studio Code and Node.js.
+  iconUrl: /training/achievements/build-node-cosmos-app-vscode.svg

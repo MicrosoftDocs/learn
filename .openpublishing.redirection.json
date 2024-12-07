@@ -35543,6 +35543,51 @@
       "source_path": "learn-pr/azure/gather-metrics-blob-storage/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/2-create-cosmosdb-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/3-exercise-create-cosmosdb-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/4-create-node-app-vscode.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/5-exercise-create-node-app-vscode.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/6-javascript-cosmosdb.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/7-exercise-javascript-cosmosdb.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
     }
   ]
 }
