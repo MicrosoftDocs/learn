@@ -4272,6 +4272,11 @@ achievements:
   title: Manage Power BI assets by using Microsoft Purview
   summary: Improve data governance and asset discovery using Power BI and Microsoft Purview integration.
   iconUrl: /training/achievements/4-manage-power-bi-artifacts-by-using-azure-purview.svg
+- uid: learn.azure.optimize-blob-storage-costs.badge
+  type: badge
+  title: Optimize storage performance and costs using Blob storage tiers
+  summary: In this module, you'll compare storage tiers and assign appropriate levels for data types. You'll also use Azure tools and code to retrieve and set storage tier for accounts and blobs.
+  iconUrl: /training/achievements/optimize-blob-storage-costs.svg
 - uid: learn.azure.copy-blobs-using-azure-cli.badge
   type: badge
   title: Copy and move blobs from one container or storage account to another using the Azure CLI

@@ -105,7 +105,7 @@ The following H-series and N-series VMs are RDMA capable and can communicate ove
     - Ideal for HPC workloads that require high throughput and low latency, making it suitable for applications that process large datasets quickly.
 
   - Key benefits include:
-    - High storage capacity up to 12.5PB upon request.
+    - High storage capacity up to 12.5 PiB upon request.
     - Low (~2ms) latency.
     - Up to 1M IOPS, up to 500 GiB/s throughput.
     - Spin up new clusters in minutes.
