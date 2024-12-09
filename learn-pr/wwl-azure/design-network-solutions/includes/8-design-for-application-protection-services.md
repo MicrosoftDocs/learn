@@ -6,9 +6,9 @@ Azure offers several networking services to help protect your network resources.
 
 #### Business scenarios
 
-- Implement always-on traffic monitoring, adaptive tuning, and mitigation scale
-- Access multi-layered protection, including attack analytics, metrics, and alerting
-- Receive support from the DDoS rapid response team
+- Implement always-on traffic monitoring, adaptive tuning, and mitigation scale.
+- Access multi-layered protection, including attack analytics, metrics, and alerting.
+- Receive support from the DDoS rapid response team.
 
 ### Azure Private Link
 
@@ -16,9 +16,9 @@ Azure offers several networking services to help protect your network resources.
 
 #### Business scenarios
 
-- Enable private connectivity to services on Azure
-- Integrate with on-premises and peered networks
-- Restrict traffic to the Microsoft network with no public internet access
+- Enable private connectivity to services on Azure.
+- Integrate with on-premises and peered networks.
+- Restrict traffic to the Microsoft network with no public internet access.
 
 ### Azure Firewall
 
@@ -26,9 +26,9 @@ Azure Firewall is a managed, cloud-based network security service that protects 
 
 #### Business scenarios
 
-- Implement centralized creation, enforcement, and logging of application and network connectivity policies
-- Apply connectivity policies across subscriptions and virtual networks 
-- Combine Azure Firewall rules with just in time (JIT) access to restrict access to your virtual machine management ports
+- Implement centralized creation, enforcement, and logging of application and network connectivity policies.
+- Apply connectivity policies across subscriptions and virtual networks.
+- Combine Azure Firewall rules with just in time (JIT) access to restrict access to your virtual machine management ports.
 
 ### Azure Web Application Firewall
 
@@ -36,8 +36,8 @@ Azure Firewall is a managed, cloud-based network security service that protects 
 
 #### Business scenarios
 
-- React faster to security threats by centrally patching known vulnerabilities instead of securing individual web apps
-- Deploy Web Application Firewall with Application Gateway, Front Door, and Content Delivery Network
+- React faster to security threats by centrally patching known vulnerabilities instead of securing individual web apps.
+- Deploy Web Application Firewall with Application Gateway, Front Door, and Content Delivery Network.
 
 ### Azure virtual network security groups
 
@@ -49,10 +49,10 @@ NSGs contain two sets of rules: inbound and outbound. The priority for a rule mu
 
 #### Business scenarios
 
-- Control how Azure routes traffic from subnets
-- Limit the users in an organization who can work with resources in virtual networks
-- Restrict traffic to an individual NIC by associating an NSG directly to a NIC
-- Combine NSGs with JIT access to restrict access to your virtual machine management ports
+- Control how Azure routes traffic from subnets.
+- Limit the users in an organization who can work with resources in virtual networks.
+- Restrict traffic to an individual NIC by associating an NSG directly to a NIC.
+- Combine NSGs with JIT access to restrict access to your virtual machine management ports.
 
 ### Azure Virtual Network - Service endpoints
 
@@ -60,33 +60,7 @@ Azure Virtual Network service endpoints extend your virtual network private addr
 
 #### Business scenarios
 
-- Secure your critical Azure service resources to only your virtual networks
-- Increase security for your Azure service resources
-- Implement optimal routing for Azure service traffic from your virtual network
+- Secure your critical Azure service resources to only your virtual networks.
+- Increase security for your Azure service resources.
+- Implement optimal routing for Azure service traffic from your virtual network.
 
-### Azure Bastion 
-
-Azure Bastion is a fully platform-managed PaaS service that you implement inside your virtual network. Azure Bastion provides secure and seamless RDP/SSH connectivity to your virtual machines directly in the Azure portal over TLS. Azure Bastion helps protect against port scanning. RDP ports, SSH ports, and public IP addresses aren't publicly exposed for your virtual machines. 
-
-When you connect via Azure Bastion, your virtual machines don't need a public IP address. Traffic initiated from Azure Bastion to target virtual machines stays within the virtual network or between peered virtual networks.
-
-Azure Bastion sits at the perimeter of your virtual network and helps protect against zero-day exploits. You don't need to worry about hardening each of the virtual machines in your virtual network. The Azure platform keeps Azure Bastion up to date.
-
-There's no need to apply NSGs to the Azure Bastion subnet because it's hardened internally. For more security, you can configure NSGs to allow only remote connections to the target virtual machines from the Azure Bastion host.
-
-#### Business scenarios
-
-- Secure remote connections from the Azure portal to Azure virtual machines
-- Eliminate exposing RDP ports, SSH ports, or public IP addresses for your internal virtual machines
-- Integrate with native security appliances for an Azure virtual network, like Azure Firewall
-- Monitor and manage remote connections.
-
-### Things to know about JIT network access 
-
-JIT network access lets you lock down inbound traffic to your virtual machines. You can implement JIT to reduce exposure to attacks while providing easy access to connect to your virtual machines when needed.
-
-- When you enable JIT virtual machine access, you select the ports on the virtual machines to which inbound traffic is blocked. This configuration ensures "deny all inbound traffic" rules exist for your selected ports in the NSG and [Azure Firewall rules](/azure/firewall/rule-processing). These rules restrict access to your Azure virtual machine's management ports and defend them from attack.
-
-- If other rules already exist for the selected ports, the existing rules take priority over the new "deny all inbound traffic" rules. If there are no existing rules on the selected ports, the new rules take top priority in the NSG and Azure Firewall.
-
-- When a user requests access to a virtual machine, Security Center checks if the user has [Azure role-based access control (Azure RBAC)](/azure/role-based-access-control/role-assignments-portal) permissions for that virtual machine. If the request is approved, NSGs and Azure Firewall allow inbound traffic to the selected ports from the relevant IP address (or range) for the amount of time specified. After the time has expired, the NSGs are returned to their previous states. Connections that are already established aren't interrupted.
