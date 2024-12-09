@@ -97,7 +97,7 @@ Use the following steps to complete this portion of the exercise:
 
     Prompt: `@workspace /explainHow can I improve the modularity of the [selected code]?`
 
-    Prompt: `#file:Program.cs #selection How can I refactor the [selected code] to improve modularity?`
+    Prompt: `#selection How can I refactor the [selected code] to improve modularity?`
 
     Prompt: `@workspace /explain What are some options for simplifying the [selected code]?`
 

@@ -1,6 +1,6 @@
 For a successful migration, it's critical to connect on-premises corporate networks to Azure. This method creates an always-on connection known as a _hybrid-cloud network_, where services are provided from the Azure cloud to corporate users.
 
-Let's examine Azure services that provide connectivity between Azure resources, connectivity from an on-premises network to Azure resources, and branch to branch connectivity in Azure. We'll compare options for connecting an on-premises network to an Azure virtual network.
+Let's examine Azure services that provide connectivity from an on-premises network to Azure resources. Let's compare options for connecting an on-premises network to an Azure virtual network.
 
 ### Azure VPN Gateway
 
@@ -24,7 +24,7 @@ Combine Azure ExpressRoute and Azure VPN Gateway to create a failover to a VPN c
 
 A hub-spoke network topology is a way to isolate workloads while sharing services such as identity and security. The hub is a virtual network in Azure that acts as a central point of connectivity to your on-premises network. Spokes are virtual networks that peer with the hub. Shared services are deployed in the hub, while individual workloads are deployed as spokes.
 
-A hub-spoke architecture can be achieved via a customer-managed hub infrastructure or a Microsoft-managed hub infrastructure. In both cases, spokes are connected to the hub by using virtual network peering. Traffic flows between the on-premises data center(s) and the hub through an ExpressRoute or VPN gateway connection. The main differentiator of this approach is the use of Azure Virtual WAN to replace hubs as a managed service.
+A hub-spoke architecture can be achieved via a customer-managed hub infrastructure or a Microsoft-managed hub infrastructure. In both cases, spokes are connected to the hub by using virtual network peering. Traffic flows between the on-premises data center and the hub through an ExpressRoute or VPN gateway connection. The main differentiator of this approach is the use of Azure Virtual WAN to replace hubs as a managed service.
 
 Azure Virtual WAN is a networking service that provides optimized and automated branch connectivity to, and through, Azure. Azure regions serve as hubs that you can choose to connect your branches to. You can apply the Azure backbone to also connect branches and enjoy branch-to-VNet connectivity. Azure Virtual WAN brings together many Azure cloud connectivity services such as site-to-site VPN, ExpressRoute, point-to-site user VPN into a single operational interface. Connectivity to Azure VNets is established by using virtual network connections.
 
