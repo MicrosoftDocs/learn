@@ -42,7 +42,7 @@ quiz:
     choices:
     - content: "Service Map"
       isCorrect: true
-      explanation: "Correct. Service Map lets you automatically discover applications and their components in your on-premises environment.."
+      explanation: "Correct. Service Map lets you automatically discover applications and their components in your on-premises environment."
     - content: "Azure Resource Mover"
       isCorrect: false
       explanation: "Incorrect. Azure Resource Mover migrates Azure resources from subscriptions, resource groups, or regions."
