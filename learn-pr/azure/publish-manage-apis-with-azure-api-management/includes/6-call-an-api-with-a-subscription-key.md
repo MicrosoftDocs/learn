@@ -34,7 +34,7 @@ Applications must include a valid key in all HTTP requests when they make calls 
 
 The default header name is **Ocp-Apim-Subscription-Key**, and the default query string is **subscription-key**.
 
-To test out your API calls, you can use the developer portal (if it's available in your service tier), a command-line tool such as **curl**, or other tools such as **Postman**.
+To test out your API calls, you can use the developer portal (if it's available in your service tier), a command-line tool such as **curl**, or other REST client tools.
 
 Here's an example of a GET request that passes a key in the request header using the **curl** command:
 
