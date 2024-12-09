@@ -8,7 +8,7 @@ Using the Microsoft Fabric Real-Time Intelligence, you can:
 
 - Create an *eventstream* to capture, transform, and ingest real-time data from various streaming sources.
 - Store captured real-time data in an *eventhouse*, which includes one or more *KQL databases*.
-- Query and analyze data in the event house by using KQL queries, organized in a *KQL queryset*.
+- Query and analyze data in the eventhouse by using KQL queries, organized in a *KQL queryset*.
 - Visualize real-time data in a *real-time dashboard* or by using Power BI.
 - Configure alerts that use *Activator* to trigger automated actions.
 
