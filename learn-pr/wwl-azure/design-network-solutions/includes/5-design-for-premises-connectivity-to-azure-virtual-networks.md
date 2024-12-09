@@ -1,6 +1,6 @@
 For a successful migration, it's critical to connect on-premises corporate networks to Azure. This method creates an always-on connection known as a _hybrid-cloud network_, where services are provided from the Azure cloud to corporate users.
 
-Let's examine Azure services that provide connectivity between Azure resources, connectivity from an on-premises network to Azure resources, and branch to branch connectivity in Azure. We compare options for connecting an on-premises network to an Azure virtual network.
+Let's examine Azure services that provide connectivity from an on-premises network to Azure resources. Let's compare options for connecting an on-premises network to an Azure virtual network.
 
 ### Azure VPN Gateway
 
