@@ -7,7 +7,7 @@ The core library provides a set of features that enhance working with all the Mi
 In this unit, you learn about the available SDKs and see some code examples of some of the most common operations.
 
 > [!NOTE]
-> The code samples in this unit are based on version 5.65 of the Microsoft.Graph .NET SDK.
+> The code samples in this unit are based on version 5.65 of the Microsoft Graph .NET SDK.
 
 ## Install the Microsoft Graph .NET SDK
 

@@ -42,4 +42,4 @@ Depending on the requests you make to Microsoft Graph, your applications should 
 
 ## Storing data locally
 
-Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally necessary for a specific scenario. If that use case is covered by your terms of use and privacy policy, and doesn't violate the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=/graph/context). Your application should also implement proper retention and deletion policies.
+Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally necessary for a specific scenario. If that use case is covered by your terms of use and privacy policy, and doesn't violate the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=/graph/context), your application should also implement proper retention and deletion policies.
