@@ -71,9 +71,9 @@ quiz:
       explanation: "Basic interconnectivity establishes connectivity between the bare-metal hosts and Azure resources."
   - content: "What is one of the gateways deployed with Azure VMware Solution?"
     choices:
-    - content: "NSX-T Tier-1 gateway"
+    - content: "NSX Tier-1 gateway"
       isCorrect: true
-      explanation: "Azure VMware Solution deploys with an NSX-T Tier-1 gateway in active-standby mode. The NSX-T Tier-0 and Tier-1 gateways connect network segments as logical switches and provide East-West and North-South connectivity."
+      explanation: "Azure VMware Solution deploys with an NSX Tier-1 gateway in active-standby mode. The NSX Tier-0 and Tier-1 gateways connect network segments as logical switches and provide East-West and North-South connectivity."
     - content: "Application gateway"
       isCorrect: false
       explanation: "An Azure application gateway is a web-traffic load balancer that enables you to manage traffic to your web applications. This gateway isn't deployed with Azure VMware Solution."
