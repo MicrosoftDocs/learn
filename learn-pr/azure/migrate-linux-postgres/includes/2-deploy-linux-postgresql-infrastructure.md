@@ -154,31 +154,7 @@ Unlike the virtual machine, you haven't associated Azure Database for PostgreSQL
 
 To provide both security and flexibility, you enable access from the virtual machine via its virtual network by using a private endpoint. The private endpoint allows the virtual machine to access the database without exposing it to the public internet. Read more about private endpoints in [Azure Database for PostgreSQL - Flexible Server networking with Private Link](/azure/postgresql/flexible-server/concepts-networking-private-link).
 
-Here, you use the Azure portal instead of Bicep to create the private endpoint for demonstration purposes.
-
-## Create a private endpoint for Azure Database for PostgreSQL Flexible Server
-
-1. Select **Settings** > **Networking**.
-
-1. Under **Private endpoint**, select **Add private endpoint**.
-
-1. Under **Basics**, enter **Name:** `private-endpoint-1`.
-
-1. Select **Next**.
-
-1. Under **Resource**, select **Next**.
-
-1. Under **Virtual Network**, select **Virtual Network:** `240900-linux-postgres-vnet`. The virtual network is located in the `240900-linux-postgres` resource group.
-
-1. Select **Next**.
-
-1. Under **DNS**, select **Next**.
-
-1. Under **Review + create**, select **Create**.
-
-1. You're redirected to a page that says **Deployment is in progress**. Wait for the resources to be deployed.
-
-1. When the message **Your deployment is complete** appears, select **Go to resource**.
+Here, the private endpoint has been created for you using Bicep.
 
 ## Review the role assignments for the virtual machine's system-assigned managed identity
 
