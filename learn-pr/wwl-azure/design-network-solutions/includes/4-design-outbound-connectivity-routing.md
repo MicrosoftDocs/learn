@@ -4,16 +4,12 @@ Around the globe, IPv4 address ranges are in short supply. Trying to purchase an
 
 Azure [routes communication traffic](/azure/virtual-network/virtual-networks-udr-overview) between your on-premises internal resources and external internet resources by using _route tables_. When you create a virtual network, Azure automatically creates a routing table for each subnet in the network. A routing table contains many different types of routes, including system, service endpoints, and subnet defaults. The table also has route entries for the Border Gateway Protocol (BGP), user-defined routes (UDRs), and routes from other virtual networks.
 
-### Azure Virtual Network NAT
-
-[Azure Virtual Network NAT](/azure/virtual-network/nat-gateway/nat-overview) simplifies outbound-only internet connectivity for virtual networks. When you configure this service on a subnet, all outbound connectivity uses your specified static public IP addresses. Outbound connectivity is possible without load balancer or public IP addresses directly attached to virtual machines. Virtual Network NAT is fully managed and highly resilient. 
-
 #### Business scenarios
 
-- Support on-demand outbound-to-internet connectivity without pre-allocation
-- Configure one or more static public IP addresses for scale
-- Enable configurable idle timeout
-- Allow TCP reset for unrecognized connections
+- Support on-demand outbound-to-internet connectivity without preallocation.
+- Configure one or more static public IP addresses for scale.
+- Enable configurable idle timeout.
+- Allow TCP reset for unrecognized connections.
 
 ### Things to know about routing tables and routes
 
@@ -21,7 +17,11 @@ Let's take a closer look at the characteristics of routing tables and the route 
 
 - **System routes**: When you create a virtual network for the first time without defining any subnets, Azure creates system route entries in the routing table. System routes are defined for a specific location when they're created. System routes can't be modified after they're created, but you can override these routes by configuring UDRs.
 
+   :::image type="content" source="../media/system-routes.png" alt-text="Diagram of an example system route architecture." lightbox="../media/system-routes.png" border="false":::
+
 - **User-defined routes (custom)**: When you create one or multiple subnets inside a virtual network, Azure creates default entries in the routing table to enable communication between these subnets within a virtual network. These routes can be modified by using static routes, which are stored as UDRs in Azure. UDRs are also called _custom routes_. You create UDRs in Azure to override Azure's default system routes, or to add more routes to a subnet's route table. 
+
+   :::image type="content" source="../media/user-defined-route.png" alt-text="Diagram of an example user defined architecture." lightbox="../media/user-defined-route.png" border="false":::
 
 - **Routes from other virtual networks**: When you create a virtual network peering between two virtual networks, a route is added for each address range within the address space of each peered virtual network.
 
@@ -36,15 +36,15 @@ Let's take a closer look at the characteristics of routing tables and the route 
 There are many networking scenarios where defining and overriding routes can be an advantage. Review the following suggestions and consider the routes required to support the Tailwind Traders solution.
 
 - **Consider system routes**. Define system routes for specific locations and scenarios that you don't expect to modify.
-   - Route traffic between virtual machines in the same virtual network or between peered virtual networks
-   - Support communication between virtual machines by using a virtual network-to-network VPN
-   - Enable site-to-site communication through Azure ExpressRoute or an Azure VPN gateway
+   - Route traffic between virtual machines in the same virtual network or between peered virtual networks.
+   - Support communication between virtual machines by using a virtual network-to-network VPN.
+   - Enable site-to-site communication through Azure ExpressRoute or an Azure VPN gateway.
 
 - **Consider user defined routes**. Create custom UDRs to override Azure's default system routes, or to add more routes to a subnet's route table.
-   - Enable filtering of internet traffic by using Azure Firewall or forced tunneling
-   - Flow traffic between subnets through an NVA
-   - Define routes to specify how packets should be routed in a virtual network
-   - Define routes that control network traffic and specify the next hop in the traffic flow
+   - Enable filtering of internet traffic by using Azure Firewall or forced tunneling.
+   - Flow traffic between subnets through an NVA.
+   - Define routes to specify how packets should be routed in a virtual network.
+   - Define routes that control network traffic and specify the next hop in the traffic flow.
 
 - **Consider overriding routes**. Plan for route overrides to control traffic flow.
    - Flow through NVA: [Configure route tables to force traffic between subnets to flow through an NVA](/azure/virtual-network/tutorial-create-route-table-portal)
