@@ -1,14 +1,14 @@
-In this module, you learned about all the deployment steps to build and connect Azure VMware Solution to an on-premises VMware environment:
+In this module, you learned about all the deployment steps to build and connect Azure VMware Solution to an on-premises VMware vSphere environment:
 
 - First, you learned about the planning that's required before Azure VMware Solution deployment.
 - Next, you learned how to:
   - Deploy Azure VMware Solution.
   - Build an Azure Bastion resource.
-  - Create a jump host to configure NSX Manager and vCenter in the private cloud.
-- From there, you learned how to connect the Azure VMware Solution private cloud to Azure and then to an on-premises VMware environment by:
+  - Create a jumpbox VM to configure NSX Manager and vCenter Server in the private cloud.
+- From there, you learned how to connect the Azure VMware Solution private cloud to Azure and then to an on-premises VMware vSphere environment by:
   - Peering Azure ExpressRoute circuits.
   - Creating NSX network components.
-  - Enabling ExpressRoute Global Reach.
+  - Enabling Azure ExpressRoute Global Reach.
 
 Now you know how to build and configure Azure VMware Solution successfully. You're ready to help the healthcare company you work for embrace digital transformation and migrate workloads into Azure.
 
