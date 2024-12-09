@@ -2,7 +2,7 @@ Fabric's Real-Time Intelligence solution provides an end-to-end streaming soluti
 
 Real-Time Intelligence delivers high performance for data of various sizes, ranging from a few gigabytes to several petabytes. It can handle data from different sources and in various formats. Fabric's Real-Time Intelligence workload can be used for solutions like IoT and log analytics in many scenarios including manufacturing, oil and gas, and automotive.
 
- ![Diagram of Real-Time hub in Fabric Real-Time Intelligence.](../media/real-time-intelligence-core.png)
+ ![Diagram of Fabric Real-Time Intelligence capabilities.](../media/real-time-intelligence-core.png)
 
 Using the Microsoft Fabric Real-Time Intelligence, you can:
 
@@ -16,7 +16,7 @@ Using the Microsoft Fabric Real-Time Intelligence, you can:
 
 The Microsoft Fabric *real-time hub* provides a centralized place for managing real-time data sources.
 
- ![Diagram of Real-Time hub in Fabric Real-Time Intelligence.](../media/real-time-hub.png).
+ ![Screenshot of Microsoft Fabric Real-Time hub.](../media/real-time-hub.png).
 
 To view the real-time hub, select the **Real-Time** icon in the main Fabric menu bar.
 
