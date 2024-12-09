@@ -37,9 +37,9 @@ quiz:
       - content: "Test with a single client machine to minimize network overhead."
         isCorrect: false
         explanation: "Incorrect. When conducting performance benchmark tests on Azure NetApp Files, it's recommended to use a representative dataset that closely resembles the size and characteristics of your actual workload. Testing with a small dataset may not provide an accurate reflection of real-world performance."
-      - content: "Enabling FastPath on the connection between your AVS private cloud and ExpressRoute gateway."
+      - content: "Test with a variety of workload patterns to simulate real-world scenarios."
         isCorrect: true
-        explanation: "Correct. When conducting performance benchmark tests on Azure NetApp Files, it's' recommended to use a representative dataset that closely resembles the size and characteristics of your actual workload. Testing with a small dataset may not provide an accurate reflection of real-world performance."
+        explanation: "Correct. When conducting performance benchmark tests on Azure NetApp Files, it's recommended to use a representative dataset that closely resembles the size and characteristics of your actual workload. Testing with a small dataset may not provide an accurate reflection of real-world performance."
       - content: "Use a small dataset for accurate results."
         isCorrect: false 
         explanation: "Incorrect. When conducting performance benchmark tests on Azure NetApp Files, it's recommended to use a representative dataset that closely resembles the size and characteristics of your actual workload. Testing with a small dataset may not provide an accurate reflection of real-world performance."
