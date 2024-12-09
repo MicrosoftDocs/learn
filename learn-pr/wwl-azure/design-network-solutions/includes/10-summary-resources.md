@@ -3,11 +3,11 @@ In this module, you learned how to evaluate and design an effective network arch
 ## Learn more with Copilot
 Copilot can assist you in designing Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot. 
 
-- What Azure products are available to connect on-premises resources to the cloud? What are the advantages, disadvantages, and usage cases for each product.
+- What Azure products are available to connect on-premises resources to the cloud? What are the advantages, disadvantages, and usage cases for each product?
 
 - What Azure network traffic services are available for regional and global load balancing? Provide a decision tree to help me decide between the different load balancing solutions. 
 
-- List the top then best practices for optimizing network performance in Azure. How do I know if my network isn't performing well?
+- List the top ten best practices for optimizing network performance in Azure. How do I know if my network isn't performing well?
 
 
 ## Learn more with Azure documentation
