@@ -9,7 +9,7 @@ You can walk through the basic steps necessary to configure and enable Microsoft
 
 ## Configure multifactor authentication options
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) using a Global administrator account.
+1. Sign in to the [Azure portal](https://portal.azure.com/) using an Authentication Administrator account.
 1. Search for **Microsoft Entra ID** and navigate to the Microsoft Entra ID dashboard.
 1. Select **Security** in the left-hand menu.
 1. Under the **Manage** menu, select **Multifactor authentication**. Here, you find options for multifactor authentication.

@@ -1,6 +1,6 @@
 The Microsoft Cloud Adoption Framework for Azure provides recommendations, best practice guidance, documentation, and tools to help you drive adoption of Azure in your organization. The Cloud Adoption Framework supports methodologies for defining your strategy, planning and preparing for your migration, and establishing organizational structure to align your teams and roles. You can migrate and modernize existing workloads and develop new cloud-native or hybrid solutions. You can employ Cloud Adoption Framework tools to govern your environment and workloads and manage operations for cloud and hybrid solutions.
 
-The following diagram illustrates Cloud Adoption Framework methodologies within a cloud adoption lifecycle.
+This diagram illustrates Cloud Adoption Framework methodologies within a cloud adoption lifecycle.
 
 :::image type="content" source="../media/cloud-adoption-framework.png" alt-text="Diagram that shows Cloud Adoption Framework methodologies, including strategy, plan, ready, adopt, govern, and manage." border="false":::
 
@@ -10,7 +10,7 @@ Tailwind Traders shouldn't undertake cloud adoption without considerable plannin
 
 - [Azure migration guide overview](/azure/cloud-adoption-framework/migrate/azure-migration-guide?azure-portal=true). Review the Azure migration guide to learn about Azure native tools and a relevant approach to migration.
 
-- [The One Migrate approach to migrating the IT portfolio](/azure/cloud-adoption-framework/scenarios?azure-portal=true). Examine the scenarios captured in this Migrate methodology. The examples demonstrate the same set of consistent guidelines and processes for migrating both Microsoft and third-party technologies.
+- [The One Migrate approach to migrating the IT portfolio](/azure/cloud-adoption-framework/scenarios?azure-portal=true). Examine the scenarios captured in the migrate methodology. The examples demonstrate the same set of consistent guidelines and processes for migrating both Microsoft and third-party technologies.
 
 - [Azure cloud migration best practices checklist](/azure/cloud-adoption-framework/migrate/azure-best-practices?azure-portal=true). Follow this document to learn how best to address common migration needs through the application of consistent best practices.
 

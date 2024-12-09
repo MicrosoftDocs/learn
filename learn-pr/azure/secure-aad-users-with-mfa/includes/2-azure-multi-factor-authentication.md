@@ -50,4 +50,3 @@ Multifactor authentication comes as part of the following offerings:
 
 * **Microsoft Entra ID Free** or standalone **Microsoft 365** licenses: Both use [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that require multifactor authentication for your users and administrators.
 
-* **Microsoft Entra Global Administrators**: A subset of Microsoft Entra multifactor authentication capabilities are available as a means to protect global administrator accounts.
