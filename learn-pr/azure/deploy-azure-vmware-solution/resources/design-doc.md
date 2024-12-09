@@ -80,13 +80,13 @@ Identify the subtasks of *module title*
 
 1. **Deploy Azure VMware Solution**
 
-    - Deploy AVS resource
+    - Deploy Azure VMware Solution resource
     - Create Bastion or a jump host
     - Connect to VNet with ExpressRoute
     - Verify network routes are advertised
     - Connect and sign into vCenter and NSX from the Bastion host
     - Confirm NSX configurations: advertised NSX segment, DHCP services to NSX segment(optional), add VM on NSX segment, verify connectivity
-    - Placeholder: video/demo showing the creation of AVS and methods to ensure all settings are configured correctly.
+    - Placeholder: video/demo showing the creation of Azure VMware Solution and methods to ensure all settings are configured correctly.
     - Possible video: https://www.youtube.com/embed/gng7JjxgayI
     - Possible demo: https://bjd52q.axshare.com/#id=q3ewtk&p=dashboard&g=1
 
@@ -106,10 +106,10 @@ Identify the subtasks of *module title*
 
 1. **Connect to on-premises VMware vSphere environment**
     - Establish ExpressRoute Global Reach connection
-    - Create an ExpressRoute authorization key for the AVS private cloud
+    - Create an ExpressRoute authorization key for the Azure VMware Solution private cloud
     - Peer private cloud to on-premises using authorization key
     - Verify on-premises network connectivity
-    - Placeholder: video/demo showing the configurations required to connect AVS in Azure to an on-premises environment.
+    - Placeholder: video/demo showing the configurations required to connect Azure VMware Solution in Azure to an on-premises environment.
 
     **Knowledge check**
 
