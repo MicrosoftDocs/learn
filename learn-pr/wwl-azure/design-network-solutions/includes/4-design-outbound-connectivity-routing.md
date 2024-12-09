@@ -17,7 +17,7 @@ Let's take a closer look at the characteristics of routing tables and the route 
 
 - **System routes**: When you create a virtual network for the first time without defining any subnets, Azure creates system route entries in the routing table. System routes are defined for a specific location when they're created. System routes can't be modified after they're created, but you can override these routes by configuring UDRs.
 
-   :::image type="content" source="../media/system-routes.png" alt-text="Diagram of an example system route architecture." lightbox="../media/system-route.png" border="false":::
+   :::image type="content" source="../media/system-routes.png" alt-text="Diagram of an example system route architecture." lightbox="../media/system-routes.png" border="false":::
 
 - **User-defined routes (custom)**: When you create one or multiple subnets inside a virtual network, Azure creates default entries in the routing table to enable communication between these subnets within a virtual network. These routes can be modified by using static routes, which are stored as UDRs in Azure. UDRs are also called _custom routes_. You create UDRs in Azure to override Azure's default system routes, or to add more routes to a subnet's route table. 
 
