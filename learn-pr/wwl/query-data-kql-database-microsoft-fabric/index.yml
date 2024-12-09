@@ -3,36 +3,25 @@ uid: learn.wwl.query-data-kql-database-microsoft-fabric
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Query data in a KQL database in Microsoft Fabric
-  description: "This tutorial provides a brief introduction to KQL (Kusto Query Language) queries using Querysets and the major differences between KQL and T-SQL when using Querysets."
-  ms.date: 11/7/2024
+  title: Work with real-time data in a Microsoft Fabric eventhouse
+  description: "Microsoft Fabric provides a scalable and flexible store for real-time data."
+  ms.date: 12/06/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: module-standard-task-based
   ms.custom:
   - N/A
   ms.service: azure
   ai-usage: human-only
-title: Query data in a KQL database in Microsoft Fabric
-summary: This tutorial provides a brief introduction to KQL (Kusto Query Language) queries using Querysets and the major differences between KQL and T-SQL when using Querysets.
+title: Work with real-time data in a Microsoft Fabric eventhouse
+summary: An eventhouse in Microsoft Fabric provides a scalable and flexible store for real-time data.
 abstract: |
   After completing this module, you'll be able to:
+  - Create an eventhouse in Microsoft Fabric
+  - Query real-time data by using Kusto Query Language (KQL).
+  - Create materialized views and stored functions in a KQL database.
 
-  -   Use basic syntax and of Kusto Query Language (KQL).
-
-  -   Understand the basics of the Queryset canvas.
-
-  -   Describe how to execute T-SQL queries in the Queryset canvas.
-
-  -   Describe how to convert T-SQL queries into KQL queries.
-prerequisites: |
-  -   An understanding of Microsoft Fabric navigation between services.
-
-  -   A basic understanding of Real-Time Intelligence.
-
-  -   A basic understanding of streaming data sources.
-
-  -   A basic understanding of OneLake.
+prerequisites: Before starting this module, you should be familiar with Microsoft Fabric.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
@@ -48,7 +37,6 @@ units:
 - learn.wwl.query-data-kql-database-microsoft-fabric.get-started-with-kql-queries
 - learn.wwl.query-data-kql-database-microsoft-fabric.kql-best-practices
 - learn.wwl.query-data-kql-database-microsoft-fabric.advanced-features
-- learn.wwl.query-data-kql-database-microsoft-fabric.using-kql-with-notebooks
 - learn.wwl.query-data-kql-database-microsoft-fabric.exercise
 - learn.wwl.query-data-kql-database-microsoft-fabric.knowledge-check
 - learn.wwl.query-data-kql-database-microsoft-fabric.summary
