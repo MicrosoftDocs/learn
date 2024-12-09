@@ -54,4 +54,9 @@ To help reduce your costs, you can use the Azure Advisor features by choosing **
 
 ### Stage 4: Monitor your workloads
 
-You can use Azure Monitor to capture health and performance information from your Azure virtual machines. Azure Monitor works on machines running Linux or Windows.  It is easy to set up alerting and reporting.
+You can use Azure Monitor to capture health and performance information from your Azure virtual machines. Azure Monitor works on machines running Linux or Windows. It is easy to set up alerting and reporting. You can set up alerts based on a range of data sources:
+
+- Specific metric values like CPU usage.
+- Specific text in log files.
+- Health metrics.
+- Autoscale metrics.

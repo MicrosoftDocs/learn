@@ -18,7 +18,7 @@ Azure Storage Mover works on both NFS shares and SMB shares.
 
 ### Things to consider when using Azure Storage Mover
 
-A single storage mover resource deployed to your subscription can be used to manage migrations for your source shares located in different parts of the world. The storage mover resource itself doesn't process your files and folders. Rather, you deploy a migration agent near your source share to send your data directly to the selected targets in Azure.
+A single storage mover resource can manage migrations for your source shares. The storage mover resource itself doesn't process your files and folders. Rather, you deploy a migration agent near your source share to send your data directly to the selected targets in Azure.
 
 Azure Storage Mover is a hybrid cloud service. Hybrid services have both a cloud service component and an infrastructure component. The service administrator runs the infrastructure component in their corporate environment. For Storage Mover, that hybrid component consists of a migration agent. Agents are virtual machines, deployed to and run on a host near the source storage.
 
