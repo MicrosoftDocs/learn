@@ -48,11 +48,11 @@ The Azure Service Operator further simplifies resource management by streamlinin
 
 - **Self-service capabilities:** Quickly and easily deploy OpenShift clusters through the Azure portal or using CLI (command line interface) within minutes.
 
-- **Fully managed clusters:** Control and application nodes are taken care of by Microsoft and Red Hat, removing the need for users to manage VMs or patches. 99.95% SLA is on the OpenShift API
+- **Fully managed clusters:** Control and application nodes are taken care of by Microsoft and Red Hat, removing the need for users to manage VMs or patches. The OpenShift API offers a Service Level Agreement (SLA) of 99.95%.
 
 - **Integrated experience:** Azure Red Hat OpenShift is part of Azure APIs, meaning seamless onboarding, service management, and technical support as a native Azure service.
 
-- **Azure compliance:** Leverage Azure's compliance certifications, on-demand scaling, and support
+- **Azure compliance:** Leverage Azure's compliance certifications, scalable on-demand capabilities, and robust support.
 
 ## Benefits of Azure Red Hat OpenShift
 
@@ -64,4 +64,4 @@ The Azure Service Operator further simplifies resource management by streamlinin
 
 ## Azure Red Hat OpenShift reference architecture
 
-:::image type="content" source="../media/aro-reference-architecture.png" alt-text="Diagram showing basic reference architecture of Azure Red Hat OpenShift.":::
+:::image type="content" source="../media/aro-reference-architecture.png" alt-text="Diagram showing basic reference architecture of Azure Red Hat OpenShift." lightbox="../media/aro-reference-architecture.png":::
