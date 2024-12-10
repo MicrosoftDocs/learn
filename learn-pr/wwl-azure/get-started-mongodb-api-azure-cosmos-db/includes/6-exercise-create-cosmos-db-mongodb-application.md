@@ -185,10 +185,10 @@ It's now time to add our C# code to create a Database, a Collection and add a do
 
 ::: zone pivot="node"
 
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/node/
-    code App.js
-    ```
+        ```bash
+        cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/node/
+        code App.js
+        ```
 
 ::: zone-end
 
@@ -226,10 +226,10 @@ It's now time to add our C# code to create a Database, a Collection and add a do
 
 ::: zone pivot="java"
 
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/java/AzureApp
-    code ./src/main/java/com/fabrikam/App.java
-    ```
+        ```bash
+        cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/java/AzureApp
+        code ./src/main/java/com/fabrikam/App.java
+        ```
 ::: zone-end
 
 ::: zone pivot="java"
@@ -266,11 +266,11 @@ It's now time to add our C# code to create a Database, a Collection and add a do
 
 ::: zone pivot="python"
 
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
-    code App.py
-    ```
-    ::: zone-end
+        ```bash
+        cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
+        code App.py
+        ```
+::: zone-end
 
 ::: zone pivot="python"
 
@@ -296,11 +296,11 @@ It's now time to add our C# code to create a Database, a Collection and add a do
 
 ::: zone pivot="csharp"
 
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
-    code app.cs
-    ```
-    ::: zone-end
+        ```bash
+        cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
+        code app.cs
+        ```
+::: zone-end
 
 ::: zone pivot="csharp"
 
