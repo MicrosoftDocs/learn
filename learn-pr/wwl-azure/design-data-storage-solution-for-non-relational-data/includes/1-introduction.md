@@ -32,13 +32,15 @@ The content in this module helps you prepare for Exam AZ-305: Designing Microsof
 
 Design data storage solutions
 
-- Design a data storage solution for nonrelational data
+- Design data storage solutions for semi-structured and unstructured data
 
-   - Recommend a data storage solution to balance features, performance, and cost
+   - Recommend a solution for storing semi-structured data.
 
-   - Design a data solution for protection and durability
+   - Recommend a solution for storing unstructured data.
 
-   - Recommend access control solutions for data storage
+   - Recommend a data storage solution to balance features, performance, and costs.
+
+   - Recommend a data solution for protection and durability.
 
 ### Prerequisites
 
