@@ -183,14 +183,14 @@ It's now time to add our C# code to create a Database, a Collection and add a do
 
 1. Run the following command to open the code editor.
 
-    ::: zone pivot="node"
+::: zone pivot="node"
 
     ```bash
     cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/node/
     code App.js
     ```
 
-    ::: zone-end
+::: zone-end
 
 ::: zone pivot="node"
 
@@ -224,7 +224,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
 
 ::: zone-end
 
-    ::: zone pivot="java"
+::: zone pivot="java"
 
     ```bash
     cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/java/AzureApp
@@ -264,7 +264,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
 
 ::: zone-end
 
-    ::: zone pivot="python"
+::: zone pivot="python"
 
     ```bash
     cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
@@ -294,7 +294,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
 
 ::: zone-end
 
-    ::: zone pivot="csharp"
+::: zone pivot="csharp"
 
     ```bash
     cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
