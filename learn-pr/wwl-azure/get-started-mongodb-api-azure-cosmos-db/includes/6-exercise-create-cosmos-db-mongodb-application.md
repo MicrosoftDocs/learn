@@ -183,12 +183,12 @@ It's now time to add our C# code to create a Database, a Collection and add a do
 
 1. Run the following command to open the code editor.
 
-    ::: zone pivot="node"
+::: zone pivot="node"
 
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/node/
-    code App.js
-    ```
+> ```bash
+> cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/node/
+> code App.js
+> ```
 
 1. Copy the following code to the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
 
@@ -218,14 +218,14 @@ It's now time to add our C# code to create a Database, a Collection and add a do
             
     ```
 
-    ::: zone-end
+::: zone-end
 
-    ::: zone pivot="java"
+::: zone pivot="java"
 
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/java/AzureApp
-    code ./src/main/java/com/fabrikam/App.java
-    ```
+> ```bash
+> cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/java/AzureApp
+> code ./src/main/java/com/fabrikam/App.java
+> ```
 
 1. Copy the following code and *replace the existing content* from the App.java file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
 
@@ -255,14 +255,14 @@ It's now time to add our C# code to create a Database, a Collection and add a do
         
     ```
 
-    ::: zone-end
+::: zone-end
 
-    ::: zone pivot="python"
+::: zone pivot="python"
 
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
-    code App.py
-    ```
+> ```bash
+> cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
+> code App.py
+> ```
 
 1. Copy the following code to the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
 
@@ -282,14 +282,14 @@ It's now time to add our C# code to create a Database, a Collection and add a do
             
         ```
 
-    ::: zone-end
+::: zone-end
 
-    ::: zone pivot="csharp"
+::: zone pivot="csharp"
 
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
-    code app.cs
-    ```
+> ```bash
+> cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
+> code app.cs
+> ```
 
 1. Copy the following code and *replace the existing content* from the app.cs file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*. 
 
@@ -321,7 +321,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
         
     ```
 
-    ::: zone-end
+::: zone-end
 
 1. The next step connects to the **products** database. If this database doesn't exist, it creates it only if also creates a collection in the same connection or by using extension commands. Add the following to the script in the editor.
 
