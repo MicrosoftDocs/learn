@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.deploy-azure-vmware-solution.configure-nsx-network-components
+uid: learn.deploy-azure-vmware-solution.configure-nsx-t-network-components
 metadata:
   title: Configure NSX network components
   description: Configure NSX network components.
@@ -12,4 +12,4 @@ metadata:
 title: Configure NSX network components
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-configure-nsx-network-components.md)]
+  [!include[](includes/6-configure-nsx-t-network-components.md)]
