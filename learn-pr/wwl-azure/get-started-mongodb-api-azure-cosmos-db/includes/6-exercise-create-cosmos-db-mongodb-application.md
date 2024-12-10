@@ -60,69 +60,69 @@ If you don't have the environment and the Azure Cosmos DB account where you're w
 
 1. In Azure Cloud Shell, copy and paste the following commands.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
-    ```bash
-    git clone https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/node/
-
-    # Update Azure Cloud Shell node to Version 14.0.0, since the MongoDB driver requires ver 10+
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-    source ~/.nvm/nvm.sh
-    nvm install 14.0.0
-    npm install -g mongodb
-    npm link mongodb
-    # Check if the node version is now v14.0.0
-    node --version
+        ```bash
+        git clone https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
+        cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/node/
     
-    # Create an Azure Cosmos DB for MongoDB account
-    bash ../init.sh
-    ```
-::: zone-end
+        # Update Azure Cloud Shell node to Version 14.0.0, since the MongoDB driver requires ver 10+
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+        source ~/.nvm/nvm.sh
+        nvm install 14.0.0
+        npm install -g mongodb
+        npm link mongodb
+        # Check if the node version is now v14.0.0
+        node --version
+        
+        # Create an Azure Cosmos DB for MongoDB account
+        bash ../init.sh
+        ```
+    ::: zone-end
 
-::: zone pivot="java"
+    ::: zone pivot="java"
 
-    ```bash
-    git clone https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/java
-    # Download and install the Maven project, this will take a minute or two
-    mvn archetype:generate -DgroupId=com.fabrikam -DartifactId=AzureApp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-    # Replace the projects pom.xml file with the github one that has the MongoDB definition
-    mv pom.xml1 ./AzureApp/pom.xml
+        ```bash
+        git clone https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
+        cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/java
+        # Download and install the Maven project, this will take a minute or two
+        mvn archetype:generate -DgroupId=com.fabrikam -DartifactId=AzureApp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+        # Replace the projects pom.xml file with the github one that has the MongoDB definition
+        mv pom.xml1 ./AzureApp/pom.xml
+    
+        # Create an Azure Cosmos DB for MongoDB account
+        bash ../init.sh
+        ```
 
-    # Create an Azure Cosmos DB for MongoDB account
-    bash ../init.sh
-    ```
+    ::: zone-end
 
-::: zone-end
+    ::: zone pivot="python"
 
-::: zone pivot="python"
+        ```bash
+        git clone https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
+        cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
+        # Install the MongoDB Python drivers
+        python -m pip install pymongo
+        # Create an Azure Cosmos DB for MongoDB account
+        bash ../init.sh
+        ```
 
-    ```bash
-    git clone https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
-    # Install the MongoDB Python drivers
-    python -m pip install pymongo
-    # Create an Azure Cosmos DB for MongoDB account
-    bash ../init.sh
-    ```
+    ::: zone-end
 
-::: zone-end
+    ::: zone pivot="csharp"
 
-::: zone pivot="csharp"
+        ```bash
+        git clone https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
+        cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
+    
+        # Add MongoDB driver to DotNet
+        dotnet add package MongoDB.Driver --version 2.16.0
+    
+        # Create an Azure Cosmos DB for MongoDB account
+        bash ../init.sh
+        ```
 
-    ```bash
-    git clone https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
-
-    # Add MongoDB driver to DotNet
-    dotnet add package MongoDB.Driver --version 2.16.0
-
-    # Create an Azure Cosmos DB for MongoDB account
-    bash ../init.sh
-    ```
-
-::: zone-end
+    ::: zone-end
 
     > [!Tip]
     > If you are not using the sandbox for the lab, and you want to specify the location where you would like to create your database and storage objects, add a ***-l LOCATIONNAME*** parameter to the *init.sh* call. Additionally, if you would like to specify a resource group, add a ***-r YOURRRESOURCEGROUPNAMEHERE*** parameter to the *init.sh* call.
@@ -130,16 +130,16 @@ If you don't have the environment and the Azure Cosmos DB account where you're w
     > [!NOTE]
     > This bash script will create the Azure Cosmos DB for MongoDB account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
-    > [!TIP]
-    > If you come back and your cloud shell has reset, run the following commands in the cloud shell to use Node version 14, otherwise the code in the next section will fail.
+    >> [!TIP]
+    >> If you come back and your cloud shell has reset, run the following commands in the cloud shell to use Node version 14, otherwise the code in the next section will fail.
 
-    >1. source ~/.nvm/nvm.sh
-    >1. nvm install 14.0.0
-    >1. npm link mongodb
+    >> 1. source ~/.nvm/nvm.sh
+    >> 1. nvm install 14.0.0
+    >> 1. npm link mongodb
 
-::: zone-end
+    ::: zone-end
 
 1. When the bash *init.sh* file completes running, copy somewhere the **Connection String***, ***Cosmos DB Account name***, and ***Resource Group name*** returned, we'll need them in the next section. You can also review the JSON  returned by the account creation script that is located before the connection string. If you look somewhere in the middle of the JSON, you should see the property **"kind": "MongoDB"**.
 
