@@ -6,7 +6,7 @@ Data can be highly organized like machine configurations and customer invoices. 
 
 :::image type="icon" source="../media/tailwind-traders.png" border="false":::
 
-Tailwind Traders is a fictitious home improvement retailer. The company operates retail hardware stores across the globe and online. As you work through this lesson, suppose you're the CTO for Tailwind Traders. You're investigating storage solutions for data that's not highly organized. You're interested in how storage accounts can be used with blob, file, and disk storage for unstructured data. You want to implement strong protection for your data storage. The company is seeking a data storage solution that balances features with strong performance and reasonable cost.
+Tailwind Traders is a fictitious home improvement retailer. The company operates retail hardware stores across the globe and online. As you work through this lesson, suppose you're the CTO for Tailwind Traders. You're investigating storage solutions for unstructured data. You're interested in how storage accounts can be used with blob, file, and disk storage for unstructured data. You want to implement strong protection for your data storage. The company is seeking a data storage solution that balances features with strong performance and reasonable cost.
 
 ### Learning objectives
 

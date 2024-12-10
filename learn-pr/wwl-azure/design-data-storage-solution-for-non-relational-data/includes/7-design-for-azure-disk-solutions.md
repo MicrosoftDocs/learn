@@ -12,7 +12,7 @@ Azure offers several types of managed disks. The following table shows a [compar
 | Comparison | Ultra-disk | Premium SSD | Standard SSD | Standard HDD |
 | --- | --- | --- | --- | --- |
 | **Disk type** | SSD | SSD | SSD | HDD |
-| **Scenario** | IO-intensive workloads, such as SAP HANA, top tier databases like SQL Server and Oracle, and other transaction-heavy workloads | Production and performance sensitive workloads | Web servers, Lightly used enterprise applications, Development and testing | Backup, Noncritical, Infrequent access |
+| **Scenario** | IO-intensive workloads, such as SAP HANA, top tier databases like SQL Server and Oracle, and other transaction-heavy workloads | Production and performance sensitive workloads | Web servers, Lightly used enterprise applications, development, and testing | Backup, Noncritical, Infrequent access |
 
 #### Choose an encryption option
 

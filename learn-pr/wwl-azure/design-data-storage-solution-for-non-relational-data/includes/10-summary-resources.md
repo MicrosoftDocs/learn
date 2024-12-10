@@ -8,7 +8,7 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - How can I migrate data to Azure storage? How do I decide between the different migration options?
 
-- How do I select an Azure storage replication strategy. Provide example usage cases. 
+- How do I select an Azure storage replication strategy? Provide example usage cases. 
 
 - How can I minimize the cost of Azure storage? Specifically review cost saving options for Blob storage. 
 

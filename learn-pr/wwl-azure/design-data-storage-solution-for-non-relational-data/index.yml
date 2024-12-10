@@ -13,7 +13,7 @@ metadata:
   ms.service: azure-storage
   ai-usage: human-only
 title: Design a data storage solution for non-relational data
-summary: Azure Architect's design and recommend non-relational data storage solutions.
+summary: Azure Architect's design and recommend nonrelational data storage solutions.
 abstract: |
   In this module, you learn how to:
 
