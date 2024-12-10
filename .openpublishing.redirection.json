@@ -35588,6 +35588,11 @@
       "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/javascript-on-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/",
+      "redirect_document_id": false
     }
   ]
 }
