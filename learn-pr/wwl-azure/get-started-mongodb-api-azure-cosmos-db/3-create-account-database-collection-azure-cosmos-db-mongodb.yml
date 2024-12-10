@@ -5,7 +5,7 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Create an account, database, and collection using Azure Cosmos DB for MongoDB
-  description: "Create an account, database and collection using Azure Cosmos DB for MongoDB."
+  description: "Create an account, database, and collection using Azure Cosmos DB for MongoDB."
   ms.date: 12/09/2024
   author: wwlpublish
   ms.author: calopez

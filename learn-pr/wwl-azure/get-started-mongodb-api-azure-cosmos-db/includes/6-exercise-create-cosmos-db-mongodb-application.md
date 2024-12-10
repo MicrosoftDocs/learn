@@ -218,7 +218,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
             
     ```
 
-    ::: zone-end
+::: zone-end
 
     ::: zone pivot="java"
 
@@ -255,7 +255,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
         
     ```
 
-    ::: zone-end
+::: zone-end
 
     ::: zone pivot="python"
 
@@ -282,7 +282,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
             
         ```
 
-    ::: zone-end
+::: zone-end
 
     ::: zone pivot="csharp"
 
@@ -291,7 +291,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
     code app.cs
     ```
 
- 1. Copy the following code and *replace the existing content* from the app.cs file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*. 
+1. Copy the following code and *replace the existing content* from the app.cs file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*. 
 
     This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
 
@@ -321,7 +321,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
         
     ```
 
-    ::: zone-end
+::: zone-end
 
 1. The next step connects to the **products** database. If this database doesn't exist, it creates it only if also creates a collection in the same connection or by using extension commands. Add the following to the script in the editor.
 
