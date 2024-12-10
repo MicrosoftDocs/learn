@@ -48,4 +48,4 @@ quiz:
       explanation: "Correct. The Hyperscale tier can support up to 100 TB of data."
     - content: "Business Critical"
       isCorrect: false
-      explanation: "Incorrect. The Business Critical tier can't support up to 80 TB of data"
+      explanation: "Incorrect. The Business Critical tier can't support up to 80 TB of data."
