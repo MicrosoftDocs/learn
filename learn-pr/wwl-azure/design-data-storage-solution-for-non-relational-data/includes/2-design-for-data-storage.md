@@ -21,6 +21,6 @@ Nonrelational data in Azure can be stored in several different data objects. We 
 
 - **Consider Azure Files**. Provide fully managed file shares in the cloud with Azure Files. This storage data is accessible via the industry standard Server Message Block (SMB) protocol, Network File System (NFS) protocol, and the Azure Files REST API. 
 
-- **Consider Azure managed disks**. Support Azure Virtual Machines by using Azure managed disks. These disks are block-level storage volumes managed by Azure. Managed disks perform like physical disks in an on-premises server, but in a virtual environment. 
+- **Consider Azure managed disks**. Support Azure virtual machines by using Azure managed disks. These disks are block-level storage volumes managed by Azure. Managed disks perform like physical disks in an on-premises server, but in a virtual environment. 
 
 - **Consider Azure Queue Storage**. Use Azure Queue Storage to store large numbers of messages. Queue Storage is commonly used to create a backlog of work to process asynchronously. 
