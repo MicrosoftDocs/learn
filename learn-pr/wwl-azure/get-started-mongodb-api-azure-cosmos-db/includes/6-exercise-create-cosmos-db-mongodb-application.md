@@ -132,16 +132,16 @@ If you don't have the environment and the Azure Cosmos DB account where you're w
 
     ::: zone pivot="node"
 
-    >> [!TIP]
-    >> If you come back and your cloud shell has reset, run the following commands in the cloud shell to use Node version 14, otherwise the code in the next section will fail.
+    > [!TIP]
+    > If you come back and your cloud shell has reset, run the following commands in the cloud shell to use Node version 14, otherwise the code in the next section will fail.
 
-    >> 1. source ~/.nvm/nvm.sh
-    >> 1. nvm install 14.0.0
-    >> 1. npm link mongodb
+    > 1. source ~/.nvm/nvm.sh
+    > 1. nvm install 14.0.0
+    > 1. npm link mongodb
 
     ::: zone-end
 
-1. When the bash *init.sh* file completes running, copy somewhere the **Connection String***, ***Cosmos DB Account name***, and ***Resource Group name*** returned, we'll need them in the next section. You can also review the JSON  returned by the account creation script that is located before the connection string. If you look somewhere in the middle of the JSON, you should see the property **"kind": "MongoDB"**.
+1. When the bash *init.sh* file completes running, copy somewhere the **Connection String**, ***Cosmos DB Account name***, and ***Resource Group name*** returned, we'll need them in the next section. You can also review the JSON  returned by the account creation script that is located before the connection string. If you look somewhere in the middle of the JSON, you should see the property **"kind": "MongoDB"**.
 
     > [!NOTE]
     > Note that the **Connection String**, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure portal.
@@ -182,183 +182,183 @@ It's now time to add our C# code to create a Database, a Collection and add a do
 
 1. Run the following command to open the code editor.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/node/
-    code App.js
-    ```
+        ```bash
+        cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/node/
+        code App.js
+        ```
 
-1. Copy the following code to the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
+    1. Copy the following code to the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
 
-    This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
+        This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
 
-    ```javascript
-    // Uses the MongoDB driver
-    const {MongoClient} = require("mongodb");
-    
-    async function main() {
-    
-      // One of the values you copied earlier was the connection string, replace it in the following line 
-      var url = "TheConnectionStringYouCopiedEarlier";
-    
-      // define the connection using the MongoClient method ane the url above
-      var mongoClient = new MongoClient(url, function(err,client)
-        {
-          if (err)
-          {
-            console.log("error connecting")
-          }
-        }
-      );
-    
-      // open the connection
-      await mongoClient.connect();
+        ```javascript
+        // Uses the MongoDB driver
+        const {MongoClient} = require("mongodb");
         
-    ```
-
-::: zone-end
-
-::: zone pivot="java"
-
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/java/AzureApp
-    code ./src/main/java/com/fabrikam/App.java
-    ```
-
-1. Copy the following code and *replace the existing content* from the App.java file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
-
-    This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
-
-    ```Java
-    package com.fabrikam;
-
-    // Uses the MongoDB driver
-    import com.mongodb.MongoClient;
-    import com.mongodb.MongoClientURI;
-    import com.mongodb.client.MongoDatabase;
-    import com.mongodb.client.MongoCollection;
-    import org.bson.Document;
-    import static com.mongodb.client.model.Filters.eq;
-
-    public class App {
-        public static void main(String[] args) {
-
-            // One of the values you copied earlier was the connection string, replace it in the following line 
-            MongoClientURI uri = new MongoClientURI("TheConnectionStringYouCopiedEarlier");
-    
-            MongoClient mongoClient = null;
-            try {
-                // define the connection using the MongoClient method ane the url above and open the connection 
-                mongoClient = new MongoClient(uri);
-    
-    ```
-
-::: zone-end
-
-::: zone pivot="python"
-
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
-    code App.py
-    ```
-
-1. Copy the following code to the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
-
-    This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
-
-    ```python
-    # Use the MongoDB drivers
-    import pymongo
-    
-    
-    def main():
-        # One of the values you copied earlier was the connection string, replace it in the following line 
-        uri = "TheConnectionStringYouCopiedEarlier"
+        async function main() {
         
-        # We use the "MongoClient" method and the "uri" value to connect to the account 
-        client = pymongo.MongoClient(uri)
+          // One of the values you copied earlier was the connection string, replace it in the following line 
+          var url = "TheConnectionStringYouCopiedEarlier";
+        
+          // define the connection using the MongoClient method ane the url above
+          var mongoClient = new MongoClient(url, function(err,client)
+            {
+              if (err)
+              {
+                console.log("error connecting")
+              }
+            }
+          );
+        
+          // open the connection
+          await mongoClient.connect();
+            
+        ```
+
+    ::: zone-end
+
+    ::: zone pivot="java"
+
+        ```bash
+        cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/java/AzureApp
+        code ./src/main/java/com/fabrikam/App.java
+        ```
+
+    1. Copy the following code and *replace the existing content* from the App.java file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
+
+        This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
+
+        ```Java
+        package com.fabrikam;
+    
+        // Uses the MongoDB driver
+        import com.mongodb.MongoClient;
+        import com.mongodb.MongoClientURI;
+        import com.mongodb.client.MongoDatabase;
+        import com.mongodb.client.MongoCollection;
+        import org.bson.Document;
+        import static com.mongodb.client.model.Filters.eq;
+    
+        public class App {
+            public static void main(String[] args) {
+    
+                // One of the values you copied earlier was the connection string, replace it in the following line 
+                MongoClientURI uri = new MongoClientURI("TheConnectionStringYouCopiedEarlier");
+        
+                MongoClient mongoClient = null;
+                try {
+                    // define the connection using the MongoClient method ane the url above and open the connection 
+                    mongoClient = new MongoClient(uri);
         
         ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="csharp"
+    ::: zone pivot="python"
 
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
-    code app.cs
-    ```
+        ```bash
+        cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
+        code App.py
+        ```
 
-1. Copy the following code and *replace the existing content* from the app.cs file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*. 
+    1. Copy the following code to the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
 
-    This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
+        This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
 
-    ```csharp
-    // Uses the MongoDB driver
-    using MongoDB.Driver;
-    using MongoDB.Bson;
-    using System;
-    
-      public class Products {
-        public ObjectId Id { get; set; }  
-        public int ProductId { get; set; }
-        public string name { get; set; }
-      }
-    
-    class App {
-      public static void Main (string[] args) {
-      
-        // One of the values you copied earlier was the connection string, replace it in the following line 
-        string connectionString = 
-          @"TheConnectionStringYouCopiedEarlier";
-    
-        MongoClientSettings settings = MongoClientSettings.FromUrl(new MongoUrl(connectionString));
-    
-        // define the connection using the MongoClient method ane the connectionString above and open the connection 
-        var mongoClient = new MongoClient(settings);
-    
-    ```
+        ```python
+        # Use the MongoDB drivers
+        import pymongo
+        
+        
+        def main():
+            # One of the values you copied earlier was the connection string, replace it in the following line 
+            uri = "TheConnectionStringYouCopiedEarlier"
+            
+            # We use the "MongoClient" method and the "uri" value to connect to the account 
+            client = pymongo.MongoClient(uri)
+            
+            ```
 
-::: zone-end
+    ::: zone-end
+
+    ::: zone pivot="csharp"
+
+        ```bash
+        cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
+        code app.cs
+        ```
+
+    1. Copy the following code and *replace the existing content* from the app.cs file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*. 
+
+        This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
+
+        ```csharp
+        // Uses the MongoDB driver
+        using MongoDB.Driver;
+        using MongoDB.Bson;
+        using System;
+        
+          public class Products {
+            public ObjectId Id { get; set; }  
+            public int ProductId { get; set; }
+            public string name { get; set; }
+          }
+        
+        class App {
+          public static void Main (string[] args) {
+          
+            // One of the values you copied earlier was the connection string, replace it in the following line 
+            string connectionString = 
+              @"TheConnectionStringYouCopiedEarlier";
+        
+            MongoClientSettings settings = MongoClientSettings.FromUrl(new MongoUrl(connectionString));
+        
+            // define the connection using the MongoClient method ane the connectionString above and open the connection 
+            var mongoClient = new MongoClient(settings);
+        
+        ```
+
+    ::: zone-end
 
 1. The next step connects to the **products** database. If this database doesn't exist, it creates it only if also creates a collection in the same connection or by using extension commands. Add the following to the script in the editor.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
-    ```javascript
-      // connect to the database "products"
-      var ProductDatabase = mongoClient.db("products");
-    ```
-::: zone-end
+        ```javascript
+          // connect to the database "products"
+          var ProductDatabase = mongoClient.db("products");
+        ```
+    ::: zone-end
 
-::: zone pivot="java"
+    ::: zone pivot="java"
 
-    ```java
-                // connect to the database "products"
-                MongoDatabase ProductDatabase = mongoClient.getDatabase("products");
-    
-::: zone-end
-
-::: zone pivot="python"
-
-    ```python
-        # connect to the database "products"
-        ProductDatabase = client["products"]
+        ```java
+                    // connect to the database "products"
+                    MongoDatabase ProductDatabase = mongoClient.getDatabase("products");
         
-    ```
+    ::: zone-end
 
-::: zone-end
+    ::: zone pivot="python"
 
-::: zone pivot="csharp"
+        ```python
+            # connect to the database "products"
+            ProductDatabase = client["products"]
+            
+        ```
 
-    ```csharp
-        // connect to the database "products"
-        var ProductDatabase = mongoClient.GetDatabase("products");
-    
-    ```
+    ::: zone-end
 
-::: zone-end
+    ::: zone pivot="csharp"
+
+        ```csharp
+            // connect to the database "products"
+            var ProductDatabase = mongoClient.GetDatabase("products");
+        
+        ```
+
+    ::: zone-end
 
 1. Next, we connect to the **documents** collection if it already exists, and then adds one document to the collection. If the collection doesn't exist this code creates the collection if it also performs an operation on that collection in the same connection (for example, like add a document to the collection) or by using extension commands. Add the following to the script in the editor.
 
