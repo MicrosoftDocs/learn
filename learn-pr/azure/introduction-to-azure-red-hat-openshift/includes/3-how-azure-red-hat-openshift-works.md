@@ -8,7 +8,7 @@ When a cluster is deployed, it's automatically configured to ensure that both co
 
 When you deploy Azure Red Hat OpenShift, resources are allocated to two distinct resource groups within your Azure subscription:
 
-- **Cluster resource group:** Contains the OpenShift cluster itself. You have full access and permissions over these resources, allowing you to manage your applications and workloads. By default, when you create the Azure Red Hat OpenShift cluster from the Azure portal, this resource and the new virtual network (if you chose to create one instead of using a pre-existing one) will be placed in the selected resource group
+- **Cluster resource group:** Contains the OpenShift cluster itself. You have full access and permissions over these resources, allowing you to manage your applications and workloads. By default, when you create the Azure Red Hat OpenShift cluster from the Azure portal, this resource and the new virtual network (if you chose to create one instead of using a pre-existing one) will be placed in the selected resource group.
 
 - **Managed resource group:** Includes the underlying infrastructure such as virtual machines, network security groups, load balancers, network interfaces, public ip addresses, private endpoints, disks, and storage accounts. Permissions in this group are restricted to ensure that Microsoft and Red Hat can manage and support the infrastructure without interference. This design follows the principles of managed applications in Azure, where two resource groups are utilized to separate customer resources from managed resources. For more details, you can refer to the managed applications resource groups overview.
 
@@ -30,7 +30,7 @@ Ingress visibility can be configured based on your requirements:
 - **Private:** Routes default to an internal load balancer, restricting access to your applications within your virtual network. This default can also be modified.
 
 
-## Automated cluster configuration:
+## Automated cluster configuration
 
 The setup and configuration of the OpenShift cluster are automated, simplifying the deployment process. Azure Red Hat OpenShift automatically configures necessary components, such as the control plane, worker nodes, and networking settings, reducing the complexity typically associated with Kubernetes environments.
 
@@ -51,4 +51,5 @@ Azure Red Hat OpenShift integrates seamlessly with monitoring and logging tools,
 ## Security and compliance
 
 The architecture of Azure Red Hat OpenShift is designed to facilitate compliance with security and governance standards. Azure provides a range of compliance certifications that businesses can utilize to meet specific regulatory requirements. Security features such as RBAC and Azure Active Directory integration ensure that only authorized users can access cluster resources. This, combined with Red Hat’s security practices, provides a robust solution that meets the security and compliance needs of organizations across sensitive sectors.
+
 By leveraging Azure Red Hat OpenShift, you benefit from a robust, enterprise-grade Kubernetes platform with the simplicity and efficiency of a managed service. This dual resource group setup ensures you maintain control over your application workloads while Microsoft and Red Hat manage the underlying infrastructure. The options for API and ingress visibility further enhance your ability to tailor the deployment to fit your organization's needs, offering a seamless and secure operational experience.
