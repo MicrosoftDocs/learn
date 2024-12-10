@@ -17,7 +17,7 @@ Azure Red Hat OpenShift is ideal for organizations that want to leverage cloud b
 
 One of the standout features of Azure Red Hat OpenShift is its seamless upgrade process for both clusters and operators:
 
-- ARO ensures that upgrades do not cause version incompatibility with any operator tool, eliminating a common pain point for Kubernetes users.
+- Azure Red Hat Openshift (ARO) ensures that upgrades do not cause version incompatibility with any operator tool, eliminating a common pain point for Kubernetes users.
 - This reliability and consistency provide a huge relief for teams managing applications, enabling smooth transitions to newer versions without disruption.
 - Organizations benefit from staying up-to-date with the latest features and security updates while maintaining stability in their environments.
 
