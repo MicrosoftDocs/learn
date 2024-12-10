@@ -2,11 +2,9 @@
 uid: learn.wwl.design-data-storage-solution-for-relational-data.design-for-azure-sql-managed-instance
 title: Design for Azure SQL Managed Instance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design for Azure SQL Managed Instance
   description: "Design for Azure SQL Managed Instance"
-  ms.date: 08/30/2024
+  ms.date: 12/10/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
