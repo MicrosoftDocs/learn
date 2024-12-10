@@ -179,21 +179,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
 
 ::: zone-end
 
-**Prompt [I am having an issue, can you tell me what is... | Try in BizChat](https://www.microsoft365.com/chat/entity1-d870f6cd-4aa5-4d42-9626-ab690c041429/eyJpZCI6IlZYTmxjbFl4ZkdoMGRIQnpPaTh2YzNWaWMzUnlZWFJsTFdsdWRDNXZabVpwWTJVdVkyOXRMM3hQU1VRNk5UaGxZVGt5WkdRdE1HWTBNQzAwTWpsbExXRTJOVGt0TmpJeU5ERXdNVFppWldZNWZEZzVOamd3WkdSa0xUVXpObUV0TkRGbE9DMWlaV0V6TFRnMllUTXhaR05oT1RsbFpId3lNREkwTFRFeUxURXdWREE0T2pVNU9qVXlMakl6TXpZeE16UmEiLCJzY2VuYXJpbyI6InNoYXJlTGlua1ZpYVJpY2hDb3B5IiwicHJvcGVydGllcyI6eyJwcm9tcHRTb3VyY2UiOiJ1c2VyIiwiY2xpY2tUaW1lc3RhbXAiOiIyMDI0LTEyLTEwVDA4OjU5OjUyLjA4MVoifSwiY2hhdFR5cGUiOiJ3b3JrIiwidmVyc2lvbiI6MS4xfQ)**
-I am having an issue, can you tell me what is wrong with this pivot?:1. In not already opened, open the Azure Cloud Shell. 1. Run the following command to open the code editor. ::: zone pivot="node" ```bash cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/node/ code App.js ``` 1. Copy the following code to the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*. This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account. ```javascript // Uses the MongoDB driver const {MongoClient} = require("mongodb"); async function main() { // One of the values you copied earlier was the connection string, replace it in the following line var url = "TheConnectionStringYouCopiedEarlier"; // define the connection using the MongoClient method ane the url above var mongoClient = new MongoClient(url, function(err,client) { if (err) { console.log("error connecting") } } ); // open the connection await mongoClient.connect(); ``` ::: zone-end ::: zone pivot="java" ```bash cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/java/AzureApp code ./src/main/java/com/fabrikam/App.java ``` 1. Copy the following code and *replace the existing content* from the App.java file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*. This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account. ```Java package com.fabrikam; // Uses the MongoDB driver import com.mongodb.MongoClient; import com.mongodb.MongoClientURI; import com.mongodb.client.MongoDatabase; import com.mongodb.client.MongoCollection; import org.bson.Document; import static com.mongodb.client.model.Filters.eq; public class App { public static void main(String[] args) { // One of the values you copied earlier was the connection string, replace it in the following line MongoClientURI uri = new MongoClientURI("TheConnectionStringYouCopiedEarlier"); MongoClient mongoClient = null; try { // define the connection using the MongoClient method ane the url above and open the connection mongoClient = new MongoClient(uri); ``` ::: zone-end
-**Response**
-It looks like there are a few issues with the Markdown pivots in your code. Here are some suggestions to fix them:
-
-1. Ensure that the `::: zone pivot="node"` and `::: zone pivot="java"` lines are correctly indented and aligned with the surrounding text. They should not be indented more than the surrounding list items.
-
-2. Make sure that the `::: zone-end` lines are correctly placed to close each pivot section. They should be aligned with the opening `::: zone` lines.
-
-3. Verify that the code blocks within each pivot section are correctly indented and formatted. The code blocks should be indented consistently with the surrounding text.
-
-Here is a corrected version of your Markdown pivots:
-
-```markdown
-1. If not already opened, open the Azure Cloud Shell.
+1. In not already opened, open the Azure Cloud Shell.
 
 1. Run the following command to open the code editor.
 
@@ -202,34 +188,6 @@ Here is a corrected version of your Markdown pivots:
     ```bash
     cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/node/
     code App.js
-    ```
-
-1. Copy the following code to the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
-
-    This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
-
-    ```javascript
-    // Uses the MongoDB driver
-    const {MongoClient} = require("mongodb");
-        
-    async function main() {
-        
-        // One of the values you copied earlier was the connection string, replace it in the following line 
-        var url = "TheConnectionStringYouCopiedEarlier";
-        
-        // define the connection using the MongoClient method and the url above
-        var mongoClient = new MongoClient(url, function(err,client)
-        {
-            if (err)
-            {
-                console.log("error connecting")
-            }
-        }
-        );
-        
-        // open the connection
-        await mongoClient.connect();
-    }
     ```
 
     ::: zone-end
@@ -241,9 +199,59 @@ Here is a corrected version of your Markdown pivots:
     code ./src/main/java/com/fabrikam/App.java
     ```
 
-1. Copy the following code and *replace the existing content* from the App.java file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
+    ::: zone-end
+
+    ::: zone pivot="python"
+
+    ```bash
+    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
+    code App.py
+    ```
+
+    ::: zone-end
+
+    ::: zone pivot="csharp"
+
+    ```bash
+    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
+    code app.cs
+    ```
+
+    ::: zone-end
+
+1. Copy the following code to the App file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
 
     This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
+
+    ::: zone pivot="node"
+
+    ```javascript
+    // Uses the MongoDB driver
+    const {MongoClient} = require("mongodb");
+        
+    async function main() {
+        
+        // One of the values you copied earlier was the connection string, replace it in the following line 
+        var url = "TheConnectionStringYouCopiedEarlier";
+        
+        // define the connection using the MongoClient method ane the url above
+        var mongoClient = new MongoClient(url, function(err,client)
+        {
+            if (err)
+            {
+                console.log("error connecting")
+            }
+        }
+        );
+        
+        // open the connection
+        await mongoClient.connect();
+            
+    ```
+
+    ::: zone-end
+
+    ::: zone pivot="java"
 
     ```java
     package com.fabrikam;
@@ -264,25 +272,14 @@ Here is a corrected version of your Markdown pivots:
         
             MongoClient mongoClient = null;
             try {
-                // define the connection using the MongoClient method and the url above and open the connection 
+                // define the connection using the MongoClient method ane the url above and open the connection 
                 mongoClient = new MongoClient(uri);
-            }
-        }
-    }
+        
     ```
 
     ::: zone-end
 
     ::: zone pivot="python"
-
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
-    code App.py
-    ```
-
-1. Copy the following code to the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
-
-    This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
 
     ```python
     # Use the MongoDB drivers
@@ -301,15 +298,6 @@ Here is a corrected version of your Markdown pivots:
     ::: zone-end
 
     ::: zone pivot="csharp"
-
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
-    code app.cs
-    ```
-
- 1. Copy the following code and *replace the existing content* from the app.cs file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*. 
-
-    This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
 
     ```csharp
     // Uses the MongoDB driver
@@ -343,52 +331,54 @@ Here is a corrected version of your Markdown pivots:
 
     ::: zone pivot="node"
 
-        ```javascript
-          // connect to the database "products"
-          var ProductDatabase = mongoClient.db("products");
-        ```
+    ```javascript
+    // connect to the database "products"
+    var ProductDatabase = mongoClient.db("products");
+    ```
     ::: zone-end
 
     ::: zone pivot="java"
 
-        ```java
-                    // connect to the database "products"
-                    MongoDatabase ProductDatabase = mongoClient.getDatabase("products");
+    ```java
+        // connect to the database "products"
+        MongoDatabase ProductDatabase = mongoClient.getDatabase("products");
         
     ::: zone-end
 
     ::: zone pivot="python"
 
-        ```python
-            # connect to the database "products"
-            ProductDatabase = client["products"]
+    ```python
+        # connect to the database "products"
+        ProductDatabase = client["products"]
             
-        ```
+    ```
 
     ::: zone-end
 
     ::: zone pivot="csharp"
 
-        ```csharp
-            // connect to the database "products"
-            var ProductDatabase = mongoClient.GetDatabase("products");
+    ```csharp
+        // connect to the database "products"
+        var ProductDatabase = mongoClient.GetDatabase("products");
         
-        ```
+    ```
 
     ::: zone-end
 
 1. Next, we connect to the **documents** collection if it already exists, and then adds one document to the collection. If the collection doesn't exist this code creates the collection if it also performs an operation on that collection in the same connection (for example, like add a document to the collection) or by using extension commands. Add the following to the script in the editor.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
     ```javascript
+
       // create a collection "documents" and add one document for "bread"
       var collection = ProductDatabase.collection('documents');
       var insertResult = await collection.insertOne({ ProductId: 1, name: "bread" });
     ```
-::: zone-end
 
-::: zone pivot="java"
+    ::: zone-end
+
+    ::: zone pivot="java"
 
     ```java
                 // create a collection "documents" and add one document for "bread" 
@@ -400,9 +390,9 @@ Here is a corrected version of your Markdown pivots:
     
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="python"
+    ::: zone pivot="python"
 
     ```python
         # create a collection "products" and add one document for "bread"
@@ -411,9 +401,9 @@ Here is a corrected version of your Markdown pivots:
         
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
     ```csharp
         // create a collection "products" and add one document for "bread" 
@@ -424,20 +414,21 @@ Here is a corrected version of your Markdown pivots:
 
     ```
 
-::: zone-end
+    ::: zone-end
 
 1. Lets now search for the inserted document and display it to the shell. Add the following to the script in the editor.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
     ```javascript
       // return data where ProductId = 1
       const findProduct = await collection.find({ProductId: 1});
       await findProduct.forEach(console.log);
     ```
-::: zone-end
 
-::: zone pivot="java"
+    ::: zone-end
+
+    ::: zone pivot="java"
 
     ```java
                 // return data where ProductId = 1
@@ -446,9 +437,9 @@ Here is a corrected version of your Markdown pivots:
             }
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="python"
+    ::: zone pivot="python"
 
     ```python
         # return data where ProductId = 1
@@ -458,9 +449,9 @@ Here is a corrected version of your Markdown pivots:
     
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
     ```csharp
         // return data where ProductId = 1
@@ -470,11 +461,11 @@ Here is a corrected version of your Markdown pivots:
     }
     ```
 
-::: zone-end
+    ::: zone-end
 
 1. Finally let's close the connection. Add the following to the script in the editor.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
     ```javascript
       // close the connection
@@ -483,9 +474,9 @@ Here is a corrected version of your Markdown pivots:
 
     main();
     ```
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="java"
+    ::: zone pivot="java"
 
     ```java
             // close the connection
@@ -498,9 +489,9 @@ Here is a corrected version of your Markdown pivots:
     }
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="python"
+    ::: zone pivot="python"
 
     ```python
         # close the connection
@@ -510,18 +501,19 @@ Here is a corrected version of your Markdown pivots:
         main()
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
     ```csharp
     // Note C# doesn't need to close the connection, it disposes of the connection when the program ends.
     ```
-::: zone-end
+
+    ::: zone-end
 
 1. The script should look like this:
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
     ```JavaScript
     // Uses the MongoDB driver
@@ -563,17 +555,9 @@ Here is a corrected version of your Markdown pivots:
     main();
     ```
 
-1. Let's go ahead and save the JavaScript program. Select on the Upper right hand corner of the code editor and select **Save** (or Ctrl+S). Now select **Close Editor** (or Ctrl+Q) to go back to the Shell.
+    ::: zone-end
 
-1. Let's now run the JavaScript App with the following command.
-
-    ```bash
-    node App.js
-    ```  
-
-::: zone-end
-
-::: zone pivot="java"
+    ::: zone pivot="java"
 
     ```java
     package com.fabrikam;
@@ -621,17 +605,9 @@ Here is a corrected version of your Markdown pivots:
     }
     ```
 
-1. Let's go ahead and save the Java program. Select on the Upper right hand corner of the code editor and select **Save** (or Ctrl+S). Now select **Close Editor** (or Ctrl+Q) to go back to the Shell.
+    ::: zone-end
 
-1. Let's now run the Java App with the following command.
-
-    ```bash
-    mvn clean compile exec:java
-    ```  
-
-::: zone-end
-
-::: zone pivot="python"
+    ::: zone pivot="python"
 
     ```python
     # Use the MongoDB drivers
@@ -663,17 +639,9 @@ Here is a corrected version of your Markdown pivots:
         main()
     ```
 
-1. Let's go ahead and save the Python program. Select on the Upper right hand corner of the code editor and select **Save** (or Ctrl+S). Now select **Close Editor** (or Ctrl+Q) to go back to the Shell.
+    ::: zone-end
 
-1. Let's now run the Python App with the following command.
-
-    ```bash
-    python App.py
-    ```  
-
-::: zone-end
-
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
     ```csharp
     // Uses the MongoDB driver
@@ -715,19 +683,47 @@ Here is a corrected version of your Markdown pivots:
     }
     ```
 
-1. Let's go ahead and save the C# program. Select on the Upper right hand corner of the code editor and select **Save** (or Ctrl+S). Now select **Close Editor** (or Ctrl+Q) to go back to the Shell.
+    ::: zone-end
 
-1. Let's now run the C# App with the following command.
+1. Let's go ahead and save the program. Select on the Upper right hand corner of the code editor and select **Save** (or Ctrl+S). Now select **Close Editor** (or Ctrl+Q) to go back to the Shell.
+
+1. Let's now run the App with the following command.
+
+    ::: zone pivot="node"
+
+    ```bash
+    node App.js
+    ```  
+
+    ::: zone-end
+
+    ::: zone pivot="java"
+
+    ```bash
+    mvn clean compile exec:java
+    ```  
+
+    ::: zone-end
+
+    ::: zone pivot="python"
+
+    ```bash
+    python App.py
+    ```  
+
+    ::: zone-end
+
+    ::: zone pivot="csharp"
 
     ```bash
     dotnet run
     ```  
 
-::: zone-end
+    ::: zone-end
 
 1. This script should return a similar result to the following one. This means that we created the database, collection, and added a document to it.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
     ```json
     {
@@ -736,9 +732,10 @@ Here is a corrected version of your Markdown pivots:
       name: 'bread'
     }
     ```
-::: zone-end
 
-::: zone pivot="java"
+    ::: zone-end
+
+    ::: zone pivot="java"
 
     ```json
     INFO: Opened connection [connectionId{localValue:3, serverValue:74678510}] to learn-account-cosmos-665601-westus.mongo.cosmos.azure.com:10255
@@ -747,23 +744,23 @@ Here is a corrected version of your Markdown pivots:
     INFO: Closed connection [connectionId{localValue:3, serverValue:74678510}] to learn-account-cosmos-665601-westus.mongo.cosmos.azure.com:10255 because the pool has been closed.
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="python"
+    ::: zone pivot="python"
 
     ```json
     {'_id': ObjectId('62afecc3a04e32b92451ac5d'), 'ProductId': 1, 'name': 'bread'}
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
     ```json
     Id: 62affed8147b5206db146298, ProductId: 1, name: 'bread'
     ```
 
-::: zone-end
+    ::: zone-end
 
 As you can notice, this code is the same code you would run to create a database, collection, and document on a MongoDB database. So programming for Azure Cosmos DB for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
 
@@ -803,14 +800,45 @@ Let's create some code that allows us to create a collection and define its shar
 
 1. Run the following command to open the code editor.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
     ```bash
     cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/node
     code App.js
     ```
 
-1. Copy the following code and *replace the existing content* from the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in step 2 of the previous section*. This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
+    ::: zone-end
+
+    ::: zone pivot="java"
+
+    ```bash
+    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/java/AzureApp
+    code ./src/main/java/com/fabrikam/App.java
+    ```
+
+    ::: zone-end
+
+    ::: zone pivot="python"
+
+    ```bash
+    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
+    code App.py
+    ```
+
+    ::: zone-end
+
+    ::: zone pivot="csharp"
+
+    ```bash
+    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
+    code app.cs
+    ```
+
+    ::: zone-end
+
+1. Copy the following code to the file.
+
+    ::: zone pivot="node"
 
     ```javascript
     import { DefaultAzureCredential, ClientSecretCredential } from "@azure/identity";
@@ -849,16 +877,9 @@ Let's create some code that allows us to create a collection and define its shar
         
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="java"
-
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/java/AzureApp
-    code ./src/main/java/com/fabrikam/App.java
-    ```
-
-1. Copy the following code and *replace the existing content* from the App.java file. *Don't forget that you need to replace the uri value for the connection string copied in step 2 of the previous section*. This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
+    ::: zone pivot="java"
 
     ```java
     package com.fabrikam;
@@ -915,16 +936,9 @@ Let's create some code that allows us to create a collection and define its shar
     
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="python"
-
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
-    code App.py
-    ```
-
-1. Copy the following code and *replace the existing content* from the App.py file. *Don't forget that you need to replace the uri value for the connection string copied in step 2 of the previous section*. This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
+    ::: zone pivot="python"
 
     ```python
     import os
@@ -953,16 +967,9 @@ Let's create some code that allows us to create a collection and define its shar
         
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="csharp"
-
-    ```bash
-    cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/csharp
-    code app.cs
-    ```
-
-1. Copy the following code and *replace the existing content* from the app.cs file. *Don't forget that you need to replace the uri value for the connection string copied in step 2 of the previous section*. This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
+    ::: zone pivot="csharp"
 
     ```csharp
     using MongoDB.Driver;
@@ -1012,20 +1019,21 @@ Let's create some code that allows us to create a collection and define its shar
     
     ```
 
-::: zone-end
+    ::: zone-end
 
 1. The next step connects to the **employees** database. If this database doesn't exist, it creates it only if also creates a collection in the same connection or by using extension commands. Add the following to the script in the editor.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
     ```javascript
       // connect to the database "HumanResources"
       var EmployeeDatabase = mongoClient.db("HumanResources");
     
     ```
-::: zone-end
 
-::: zone pivot="java"
+    ::: zone-end
+
+    ::: zone pivot="java"
 
     ```java
                 // connect to the database "HumanResources"
@@ -1033,9 +1041,9 @@ Let's create some code that allows us to create a collection and define its shar
     
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="python"
+    ::: zone pivot="python"
 
     ```python
         # connect to the database "HumanResources"
@@ -1043,9 +1051,9 @@ Let's create some code that allows us to create a collection and define its shar
         
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
     ```csharp
          // connect to the database "HumanResources"
@@ -1053,20 +1061,21 @@ Let's create some code that allows us to create a collection and define its shar
     
     ```
 
-::: zone-end
+    ::: zone-end
 
 1. So far it looks much like the code in the previous section. In this step, we take advantage of the extension commands and create a custom action. This action allows us to define the throughput and the sharding key of the collection. In turn the step gives Azure Cosmos DB the parameters to use when creating the collection. Add the following to the script in the editor.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
     ```javascript
       // create the Employee collection with a throughput of 1000 RUs and with EmployeeId as the sharding key
       var result = EmployeeDatabase.command({customAction: "CreateCollection", collection: "Employee", offerThroughput: 1000, shardKey: "EmployeeId"});
     
     ```
-::: zone-end
 
-::: zone pivot="java"
+    ::: zone-end
+
+    ::: zone pivot="java"
 
     ```java
                 // create the Employee collection with a throughput of 1000 RUs and with EmployeeId as the sharding key
@@ -1080,9 +1089,9 @@ Let's create some code that allows us to create a collection and define its shar
         
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="python"
+    ::: zone pivot="python"
 
     ```python
         # create the Employee collection with a throughput of 1000 RUs and with EmployeeId as the sharding key
@@ -1090,9 +1099,9 @@ Let's create some code that allows us to create a collection and define its shar
     
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
     ```csharp
         // create the Employee collection with a throughput of 1000 RUs and with EmployeeId as the sharding key
@@ -1100,11 +1109,11 @@ Let's create some code that allows us to create a collection and define its shar
     
     ```
 
-::: zone-end
+    ::: zone-end
 
 1. The rest is identical to the previous example. We connect to the collection, insert some rows,  finally query and output a row back. Add the following to the script in the editor.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
     ```javascript
       // Connect to the collection "Employee" and add two documents for "Marcos" and "Tam" 
@@ -1124,9 +1133,9 @@ Let's create some code that allows us to create a collection and define its shar
     main();
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="java"
+    ::: zone pivot="java"
 
     ```java
                 // Connect to the collection "Employee" and add two documents for "Marcos" and "Tam" 
@@ -1156,9 +1165,9 @@ Let's create some code that allows us to create a collection and define its shar
     }
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="python"
+    ::: zone pivot="python"
 
     ```python
         # Connect to the collection "Employee" and add two documents for "Marcos" and "Tam"
@@ -1178,9 +1187,9 @@ Let's create some code that allows us to create a collection and define its shar
         main()
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
     ```csharp
         // Connect to the collection "Employee" and add two documents for "Marcos" and "Tam" 
@@ -1199,11 +1208,11 @@ Let's create some code that allows us to create a collection and define its shar
     }
     ```
 
-::: zone-end
+    ::: zone-end
 
 1. The script should look like this:
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
     ```javascript
     import { DefaultAzureCredential, ClientSecretCredential } from "@azure/identity";
@@ -1263,19 +1272,11 @@ Let's create some code that allows us to create a collection and define its shar
     main();
     ```
 
-1. Let's go ahead and save the Node.js program. Select on the Upper right hand corner of the code editor and select **Save** (or Ctrl+S). Now select **Close Editor** (or Ctrl+Q) to go back to the Shell.
+    ::: zone-end
 
-1. Let's now run the Node.js App with the following command.
+    ::: zone pivot="java"
 
-    ```bash
-    node App.js
-    ```  
-
-::: zone-end
-
-::: zone pivot="java"
-
-   ```java
+    ```java
     package com.fabrikam;
     
     import com.mongodb.MongoClient;
@@ -1367,17 +1368,9 @@ Let's create some code that allows us to create a collection and define its shar
     }
     ```
 
-1. Let's go ahead and save the Java program.  Select on the Upper right hand corner of the code editor and select **Save** (or Ctrl+S). Now select **Close Editor** (or Ctrl+Q) to go back to the Shell.
+    ::: zone-end
 
-1. Let's now run the Java App with the following command.
-
-    ```bash
-    mvn clean compile exec:java
-    ```  
-
-::: zone-end
-
-::: zone pivot="python"
+    ::: zone pivot="python"
 
     ```python
     import os
@@ -1427,17 +1420,9 @@ Let's create some code that allows us to create a collection and define its shar
         main()
     ```
 
-1. Let's go ahead and save the Python program.  Select on the Upper right hand corner of the code editor and select **Save** (or Ctrl+S). Now select **Close Editor** (or Ctrl+Q) to go back to the Shell.
+    ::: zone-end
 
-1. Let's now run the Python App with the following command.
-
-    ```bash
-    python App.py
-    ```  
-
-::: zone-end
-
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
     ```csharp
     using MongoDB.Driver;
@@ -1507,19 +1492,47 @@ Let's create some code that allows us to create a collection and define its shar
     }
     ```
 
-1. Let's go ahead and save the C# program.  Select on the Upper right hand corner of the code editor and select **Save** (or Ctrl+S). Now select **Close Editor** (or Ctrl+Q) to go back to the Shell.
+    ::: zone-end
 
-1. Let's now run the C# App with the following command.
+1. Let's go ahead and save the program. Select on the Upper right hand corner of the code editor and select **Save** (or Ctrl+S). Now select **Close Editor** (or Ctrl+Q) to go back to the Shell.
+
+1. Let's now run the App with the following command.
+
+    ::: zone pivot="node"
+
+    ```bash
+    node App.js
+    ```  
+
+    ::: zone-end
+
+    ::: zone pivot="java"
+
+    ```bash
+    mvn clean compile exec:java
+    ```  
+
+    ::: zone-end
+
+    ::: zone pivot="python"
+
+    ```bash
+    python App.py
+    ```  
+
+    ::: zone-end
+
+    ::: zone pivot="csharp"
 
     ```bash
     dotnet run
     ```  
 
-::: zone-end
+    ::: zone-end
 
 1. This should return a similar result to the one below. This means that we created the database, collection and added a document to it.
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
     ```json
     {
@@ -1530,9 +1543,9 @@ Let's create some code that allows us to create a collection and define its shar
     }
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="java"
+    ::: zone pivot="java"
 
     ```json
     INFO: Opened connection [connectionId{localValue:3, serverValue:2080122971}] to learn-account-cosmos-845083734-westus.mongo.cosmos.azure.com:10255
@@ -1541,23 +1554,23 @@ Let's create some code that allows us to create a collection and define its shar
     INFO: Closed connection [connectionId{localValue:3, serverValue:2080122971}] to learn-account-cosmos-845083734-westus.mongo.cosmos.azure.com:10255 because the pool has been closed.
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="python"
+    ::: zone pivot="python"
 
     ```json
     {'_id': ObjectId('62afecc3a04e32b92451ac5d'), 'EmployeeId': 1, 'email': 'Marcos@fabrikan.com', 'name': 'Marcos'}
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
     ```json
     Id: 62affed8147b5206db146298, EmployeeId: 1, email: 'Marcos@fabrikam.com', name: 'Marcos'
     ```
 
-::: zone-end
+    ::: zone-end
 
 1. However this last result set only confirmed that we indeed created a database, collection and documents, but what about our shard key and throughput, did they really change? On the Cloud Shell let's run the following commands to verify our changes took effect.
 
