@@ -5,9 +5,8 @@ metadata:
   title: Summary
   description: Summary.
   ms.date: 08/11/2023
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: CamSoper
+  ms.author: casoper
   ms.custom:
     - team=nextgen
     - devx-track-dotnet
