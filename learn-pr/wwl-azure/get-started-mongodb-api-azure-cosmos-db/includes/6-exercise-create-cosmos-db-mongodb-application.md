@@ -189,7 +189,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
     code App.js
     ```
 
-1. Copy the following code to the App.js file.
+1. Copy the following code to the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
 
     This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
 
@@ -226,9 +226,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
     code ./src/main/java/com/fabrikam/App.java
     ```
 
-1. Copy the following code and *replace the existing content* from the App.java file. *Don't forget that you need to replace the uri value for the connection string copied in step 2 of the previous section*. This connection string should look like
-
-    mongodb://learn-account-cosmos-92903170:XvrarRd8LnqWNZiq3ahHXngbZoVRxVO192WahrcdsmHVivBGbRqnHx2cq0oMGnc0DUPAWpyGu7kt7APVH4nqXg==@learn-account-cosmos-92903170.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@learn-account-cosmos-92903170@.  
+1. Copy the following code and *replace the existing content* from the App.java file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
 
     This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
 
@@ -265,9 +263,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
     code App.py
     ```
 
-1. Copy the following code to the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in step 2 of the previous section*. This connection string should look like
-
-    mongodb://learn-account-cosmos-92903170:XvrarRd8LnqWNZiq3ahHXngbZoVRxVO192WahrcdsmHVivBGbRqnHx2cq0oMGnc0DUPAWpyGu7kt7APVH4nqXg==@learn-account-cosmos-92903170.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@learn-account-cosmos-92903170@.  
+1. Copy the following code to the App.js file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*.
 
     This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
 
@@ -294,9 +290,7 @@ It's now time to add our C# code to create a Database, a Collection and add a do
     code app.cs
     ```
 
-1. Copy the following code and *replace the existing content* from the app.cs file. *Don't forget that you need to replace the uri value for the connection string copied in step 2 of the previous section*. This connection string should look like
-
-    mongodb://learn-account-cosmos-92903170:XvrarRd8LnqWNZiq3ahHXngbZoVRxVO192WahrcdsmHVivBGbRqnHx2cq0oMGnc0DUPAWpyGu7kt7APVH4nqXg==@learn-account-cosmos-92903170.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@learn-account-cosmos-92903170@.  
+1. Copy the following code and *replace the existing content* from the app.cs file. *Don't forget that you need to replace the uri value for the connection string copied in the previous section*. 
 
     This part of the code uses the MongoDB drivers and uses the connection string to Azure Cosmos DB like you would normally use a connection string to any MongoDB server. The code then defines and opens the connection to the Azure Cosmos DB account.
 
