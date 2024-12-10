@@ -22,9 +22,10 @@ Let's examine three Azure services and tools to support the assessment stage of 
 - Azure TCO Calculator
 - Azure Migrate
 
-
-
 ## Service Map
+
+> [!Note]
+>  Service Map will be retired on 30 September 2025. Be sure to migrate to VM insights before this date to continue monitoring processes and dependencies for your virtual machines.
 
 The Service Map feature of Azure Monitor lets you automatically discover applications and their components in your on-premises environment. Use the feature to gain valuable insights into the app structure at Tailwind Traders to effectively plan and perform your migration. Service Map supports discovery on both Windows and Linux platforms.
 
