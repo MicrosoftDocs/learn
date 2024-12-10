@@ -1,6 +1,6 @@
 Here, you learn about how you can use Azure Functions to develop serverless architectures and make use of the various feature implementations it provides.
 
-You also learn more about how Azure Functions works. Information that can help you determine how to best use Azure Functions to meet your organization's requirements.
+You also learn more about how Azure Functions works. Information that can help you determine how to meet your organization's requirements by making the best use of Azure Functions.
 
 Azure Functions is a serverless compute solution that allows you to write less code. It’s a Platform as a Service offering so you don’t have to worry about hosting your app, and you save on costs.
 

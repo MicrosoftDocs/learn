@@ -12,7 +12,7 @@ The features of Azure Functions allow you to:
 
 ## Example scenario
 
-You own a business, and you want to send a holiday greeting email to your customers. Instead of building a website and deploying and hosting it just for one feature, you want to use an Azure function, add your email sign-in details in the function, and then deploy it to Azure. The function connects to the data source, gets your customers email information, and sends them an email on a scheduled date and time.
+You own a business, and you want to send a holiday greeting email to your customers. Instead of building a website and deploying and hosting it just for one feature, you want to use an Azure function, add your email sign-in details in the function, and then deploy it to Azure. The function connects to the data source, gets your customers' email information, and sends them an email on a scheduled date and time.
 
 ## Learning objectives
 

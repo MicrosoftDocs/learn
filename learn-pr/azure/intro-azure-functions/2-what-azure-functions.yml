@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-azure-functions.what-azure-functions
-title: What is Azure Functions
+title: What is Azure Functions?
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: What is Azure Functions
+  title: What is Azure Functions?
   description: In this unit, you learn about Azure Functions and when it best fits your architectural needs.
   author: ggailey777
   ms.author: glenga

@@ -1,8 +1,8 @@
-In this module, you learned What Azure Functions is, how it works, and when to use it. 
+In this module, you learned what Azure Functions is, how it works, and when to use it. 
 
-You learned that Azure Functions is a serverless compute platform. It applies concepts like triggers, to define when your code should run, and bindings to easily connect to data sources. These concepts result in functions that are usually are just a few lines of code.
+You learned that Azure Functions is a serverless compute platform. It applies concepts like triggers, to define when your code should run, and bindings to easily connect to data sources. These concepts result in functions that are typically just a few lines of code.
 
-You also learned that, in general. Azure Functions works best when creating code that should run for a reason. Making it well-suited for many interesting use cases including real-time processing of data, time-based jobs, and notifications.  
+You also learned that, in general, Azure Functions works best when creating code that should run for a reason. These characteristics make Azure Functions well-suited for many interesting use cases including real-time processing of data, time-based jobs, and notifications.  
 
 ## Learn more
 
