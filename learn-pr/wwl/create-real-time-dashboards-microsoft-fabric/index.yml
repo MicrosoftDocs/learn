@@ -22,7 +22,7 @@ abstract: |
   -   Use advanced feature of real-time dashboards.
   -   Apply best practices for real-time dashboards.
 
-prerequisites: 'Before starting this module, you should be familiar with Real-Time Intelligence capabilities in Microsoft Fabric, including eventstreams and eventhouses.'
+prerequisites: 'Before starting this module, you should be familiar with Real-Time Intelligence capabilities in Microsoft Fabric.'
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
