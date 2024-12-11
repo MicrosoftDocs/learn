@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-hello-app-service.6
-title: "Summary"
+title: Summary
 metadata:
-  description: "Summary and cleanup of Azure resources."
-  author: "ayangupt"
-  ms.author: "ayangupta"
-  ms.date: "11/13/2024"
-  ms.topic: "unit"
-  ms.custom: team=cloud_advocates, devx-track-extended-java, linux-related-content
-  ms.reviewer: 
-  ms.assetid: "HelloJavaAppService"
+  description: Summary and cleanup of Azure resources.
+  author: KarlErickson
+  ms.author: ayangupta
+  ms.date: 12/11/2024
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
+  ms.reviewer:
+  ms.assetid: HelloJavaAppService
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!INCLUDE[](includes/6-summary.md)]

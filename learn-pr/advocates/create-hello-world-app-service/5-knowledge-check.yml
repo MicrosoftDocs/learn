@@ -2,14 +2,14 @@
 uid: learn.azure.create-hello-app-service.5
 title: Knowledge Check
 metadata:
-  description: "Knowledge Check"
-  author: "ayangupt"
-  ms.author: "ayangupta"
-  ms.date: "11/13/2024"
-  ms.topic: "unit"
-  ms.custom: team=cloud_advocates, devx-track-extended-java, linux-related-content
-  ms.reviewer: 
-  ms.assetid: "HelloJavaAppService"
+  description: Knowledge Check
+  author: KarlErickson
+  ms.author: ayangupta
+  ms.date: 12/11/2024
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
+  ms.reviewer:
+  ms.assetid: HelloJavaAppService
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"

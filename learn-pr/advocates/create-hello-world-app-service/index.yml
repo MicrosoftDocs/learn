@@ -2,16 +2,16 @@
 uid: learn.azure.create-hello-app-service
 metadata:
   title: Deploy a Java Web App to Azure App Service
-  description: "You'll learn how to create a Java web application and deploy it to Azure App Service."
-  ms.date: "11/13/2024"
-  ms.author: "ayangupta"
-  author: "ayangupt"
+  description: Learn how to create a Java web application and deploy it to Azure App Service.
+  ms.date: 12/11/2024
+  ms.author: ayangupta
+  author: KarlErickson
   ms.topic: module
-  ms.custom: team=cloud_advocates
+  ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java
   ms.service: azure-app-service
   ms.subservice: web-apps
 title: Deploy a Java web app to Azure App Service
-summary: In this module, you'll explore how to create, configure, and deploy a Java web application to Azure App Service using Maven.
+summary: In this module, you explore how to create, configure, and deploy a Java web application to Azure App Service using Maven.
 abstract: |
   After you complete this module, you will be able to:
   - Create a simple Hello World Java app
@@ -26,8 +26,8 @@ products:
   - azure
 prerequisites: |
   - Your own Azure subscription
-  - The [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) installed on your computer
-  - [JDK 17](https://www.oracle.com/java/technologies/downloads/) 
+  - The [Azure CLI](/cli/azure/install-azure-cli) installed on your computer
+  - [JDK 17](https://www.oracle.com/java/technologies/downloads/)
   - [Maven 3.9.9](https://maven.apache.org/download.cgi?.=)
 units:
   - learn.azure.create-hello-app-service.1
@@ -38,4 +38,4 @@ units:
   - learn.azure.create-hello-app-service.6
 
 badge:
-  uid: #need to update when received- any placeholder for now? 
+  uid: temp-uid-to-get-previews-to-work
