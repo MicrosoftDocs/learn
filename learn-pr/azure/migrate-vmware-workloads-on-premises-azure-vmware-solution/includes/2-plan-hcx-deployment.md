@@ -46,9 +46,9 @@ Next, you need to factor in the following network segments in the on-premises VM
 
 | Network segment | Notes |
 | :-------------- | :---- |
-| Management network | - Use the same management network as the on-premises VMware cluster. <br>- At a minimum, select two IPs on this network segment for HCX. <br>- Create a new /26 network segment for larger environments. <br>- Present that network segment as a port group to the on-premises VMware cluster. |
+| Management network | - Use the same management network as the on-premises VMware cluster. <br>- At a minimum, select two IPs on this network segment for VMware HCX. <br>- Create a new /26 network segment for larger environments. <br>- Present that network segment as a port group to the on-premises VMware cluster. |
 Uplink network | - Use the same management network for the uplink network segment. |
-| vMotion network | - Use the same network as vMotion by the on-premises VMware cluster. <br>- At a minimum, identify two IPs on this network segment for VMware HCX. <br>- You might need more IPs, depending on the scale of the deployment. <br>- The vMotion network should be exposed to a distributed virtual switch or vSwitch0. <br>- If the vMotion isn't configured that way, you'll need to modify the configuration. <br>- VMware environments typically use non-routed network segments for vMotion, which doesn't cause a problem.
+| vMotion network | - Use the same network as vMotion by the on-premises VMware cluster. <br>- At a minimum, identify two IPs on this network segment for VMware HCX. <br>- You might need more IPs, depending on the scale of the deployment. <br>- The vMotion network should be exposed to a distributed virtual switch or vSwitch0. <br>- If the vMotion isn't configured that way, you'll need to modify the configuration. <br>- VMware vSphere environments typically use non-routed network segments for vMotion, which doesn't cause a problem.
 | Replication network | - Use the same network segment as the management and uplink network segments. <br>- If the on-premises hosts use a dedicated replication VMkernel network, reserve two IP addresses in this network segment. <br>- Use the replication VMkernel network for the replication network segment.
 
 ## Different migration types
@@ -57,12 +57,12 @@ VMware HCX offers a few different ways to migrate workloads:
 
 | Migration type | Use cases | Capabilities |
 | :------------- | :-------- | :-------- |
-| Live migration | Production VMs that need to remain online with minimal downtime. | - Migrates a powered-on VM. <br>- Needs an HCX-enabled vCenter configured. <br>- Needs an HCX-enabled destination site configuration. <br>- vMotion captures the VM's active memory, execution state, IP address, and MAC address. <br>- Migration duration depends on connectivity. <br>- Connectivity includes bandwidth available and the latency between both sites. <br>- The VM never powers off, there's no service disruption, and workloads remain online.
+| Live migration | Production VMs that need to remain online with minimal downtime. | - Migrates a powered-on VM. <br>- Needs a VMware HCX-enabled vCenter Server configured. <br>- Needs a VMware HCX-enabled destination site configuration. <br>- vMotion captures the VM's active memory, execution state, IP address, and MAC address. <br>- Migration duration depends on connectivity. <br>- Connectivity includes bandwidth available and the latency between both sites. <br>- The VM never powers off, there's no service disruption, and workloads remain online.
 | Cold migration | Dev/test workloads that might not be online during migration, but need to be migrated. | <br>- Transfers a powered-off VM. <br>- Uses same network path as VMware HCX vMotion. <br>- VM IP address and MAC address are preserved. |
 | Bulk migration | Many VMs that need to be migrated on a schedule. | - Moves VMs in parallel. <br>- Pre-defined schedule. <br>- VMs run at the source site until the cutover begins. <br>- The service interruption is equivalent to a reboot. |
 
 ## Scenario readiness and preparation for Azure VMware Solution
 
-Your company's production environment maintains a strict SLA. You need to select live migration to achieve minimal downtime as workloads move from on-premises to Azure VMware Solution. The on-premises VMware environment has vSphere 6.0 installed and the required ports have been allowed in the on-premises networking environment. As a result, there shouldn't be an issue with connectivity or functionality with HCX Cloud Manager in Azure VMware Solution.
+Your company's production environment maintains a strict SLA. You need to select live migration to achieve minimal downtime as workloads move from on-premises to Azure VMware Solution. The on-premises VMware vSphere environment has vSphere 8.0 installed and the required ports have been allowed in the on-premises networking environment. As a result, there shouldn't be an issue with connectivity or functionality with HCX Cloud Manager in Azure VMware Solution.
 
-In the next unit, we'll cover how to deploy and install HCX Connector so you can begin migrating workloads to Azure VMware Solution.
+In the next unit, we'll cover how to deploy and install VMware HCX Connector so you can begin migrating workloads to Azure VMware Solution.
