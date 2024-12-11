@@ -1,4 +1,4 @@
-[Azure Data Factory](https://azure.microsoft.com/services/data-factory/) is a cloud-based data integration service that can help you create and schedule data-driven workflows. You can use Azure Data Factory to orchestrate data movement and transform data at scale. The data-driven workflows, or *pipelines*, ingest data from disparate data stores. Azure Data Factory is an ETL data integration process, which stands for extract, transform, and load. This integration process combines data from multiple data sources into a single data store.
+[Azure Data Factory](/azure/data-factory/introduction) is a cloud-based data integration service that can help you create and schedule data-driven workflows. You can use Azure Data Factory to orchestrate data movement and transform data at scale. The data-driven workflows, or *pipelines*, ingest data from disparate data stores. Azure Data Factory is an ETL data integration process, which stands for extract, transform, and load. This integration process combines data from multiple data sources into a single data store.
 
 ### Things to know about Azure Data Factory
 
@@ -27,7 +27,7 @@ Azure Data Factory has the following components that work together to provide th
 
 #### Business scenario
 
-A significant challenge for a fast-growing home improvement retailer like Tailwind Traders is that it generates a high volume of data stored in relational, non-relational, and other storage systems in both the cloud and on-premises. Management wants actionable business insights from this data as near real time as possible. Additionally, the sales team wants to set up and roll out up-selling and cross-selling solutions. How can you create a large-scale data ingestion solution in the cloud? What Azure services and solutions should you adopt to help with the movement and transformation of data between various data stores and compute resources?
+A significant challenge for a fast-growing home improvement retailer like Tailwind Traders is that it generates a high volume of data stored in relational, nonrelational, and other storage systems in both the cloud and on-premises. Management wants actionable business insights from this data as near real time as possible. Additionally, the sales team wants to set up and roll out up-selling and cross-selling solutions. How can you create a large-scale data ingestion solution in the cloud? What Azure services and solutions should you adopt to help with the movement and transformation of data between various data stores and compute resources?
 
 Let's review how the Azure Data Factory components are involved in a data preparation and movement scenario for Tailwind Traders. They have many different data sources to connect to and that data needs to be ingested and transformed through stored procedures that are run on the data. Finally, the data should be pushed to an analytics platform for analysis.
 
@@ -35,7 +35,7 @@ Let's review how the Azure Data Factory components are involved in a data prepar
 - You can execute stored procedures for data transformation that happens through the linked service in Azure-SSIS, which is the integration runtime environment for Tailwind Traders.
 - The datasets components are used by the activity object and the activity object contains the transformation logic.
 - You can trigger the pipeline, which is all the activities grouped together.
-- You can then use Azure Data Factory to publish the final dataset to another linked service that's consumed by technologies, such as Power BI or Machine Learning.
+- You can use Azure Data Factory to publish the final dataset consumed by technologies, such as Power BI or Machine Learning.
 
 ### Things to consider when using Azure Data Factory
 
@@ -44,4 +44,4 @@ Evaluate Azure Data Factory against the following decision criteria and consider
 - **Consider requirements for data integration**. Azure Data Factory serves two communities: the big data community and the relational data warehousing community that uses SQL Server Integration Services (SSIS). Depending on your organization's data needs, you can set up pipelines in the cloud by using Azure Data Factory. You can access data from both cloud and on-premises data services.
 - **Consider coding resources**. If you prefer a graphical interface to set up pipelines, then Azure Data Factory authoring and monitoring tool is the right fit for your needs. Azure Data Factory provides a low code/no code process for working with data sources.
 - **Consider support for multiple data sources**. Azure Data Factory supports 90+ connectors to integrate with disparate data sources.
-- **Consider serverless infrastructure**. There are advantages to using a fully managed, serverless solution for data integration. There's no need to maintain, configure or deploy servers, and you gain the ability to scale with fluctuating workloads.
+- **Consider serverless infrastructure**. There are advantages to using a fully managed, serverless solution for data integration. There's no need to maintain, configure, or deploy servers, and you gain the ability to scale with fluctuating workloads.

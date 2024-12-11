@@ -32,7 +32,7 @@ A hot data path is typically used for processing or displaying data in real time
 
 #### Business scenario
 
-Tailwind Traders wants to implement data analysis for its customer portal. They need to collect streaming data and provide real-time alerts to administrators, customer assistants, and portal users. The hot path is ideal for this scenario. Data can be collected as it's  entered by the user or displayed to the customer. The data can be delivered in near real time to administrators for quick analysis and follow-up action.
+Tailwind Traders wants to implement data analysis for its customer portal. They need to collect streaming data and provide real-time alerts to administrators, customer assistants, and portal users. The hot path is ideal for this scenario. Data can be collected as it's  entered or displayed. The data can be delivered in near real time to administrators for quick analysis and follow-up action.
 
 ### Compare data paths
 
@@ -41,5 +41,5 @@ The following table compares scenarios for the three path solutions. Review the 
 | Scenario                                                     | Path solution      |
 | ------------------------------------------------------------ | ------------------ |
 | *Flexible support for data requirements that change frequently. Enable processing or displaying data in real time*. | **Hot** data path  |
-| *Support data that's rarely used, such as data stored for compliance or legal reasons. Enable consumption of data for long term analytics and batch processing*. | **Cold** data path |
+| *Support rarely used data, such as data stored for compliance or legal reasons. Enable consumption of data for long term analytics and batch processing*. | **Cold** data path |
 | *Store or display a recent subset of data. Enable consumption of data for small analytical and batch processing*. | **Warm** data path |

@@ -1,8 +1,8 @@
-[Azure Databricks](/azure/databricks/introduction/) is a fully managed, cloud-based Big Data and Machine Learning platform, which empowers developers to accelerate AI and innovation. Azure Databricks provides data science and engineering teams with a single platform for big data processing and Machine Learning. The Azure Databricks managed Apache Spark platform makes it simple to run large-scale Spark workloads.
+[Azure Databricks](/azure/databricks/introduction) is a fully managed, cloud-based Big Data and Machine Learning platform, which empowers developers to accelerate AI and innovation. Azure Databricks provides data science and engineering teams with a single platform for big data processing and Machine Learning. The Azure Databricks managed Apache Spark platform makes it simple to run large-scale Spark workloads.
 
 ### Things to know about Azure Databricks
 
-Azure Databricks is entirely based on Apache Spark, and it's a great tool for users who are already familiar with the open-source cluster-computing framework. As a unified analytics engine, it's designed specifically for big data processing. Data scientists can take advantage of the built-in core API for core languages like SQL, Java, Python, R, and Scala.
+Azure Databricks is entirely based on Apache Spark, and it's a great tool for users who are already familiar with the open-source cluster-computing framework. Databricks is designed specifically for big data processing. Data scientists can take advantage of the built-in core API for core languages like SQL, Java, Python, R, and Scala.
 
 Azure Databricks has a Control plane and a Data plane:
 
