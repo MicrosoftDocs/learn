@@ -39,7 +39,6 @@ subjects:
 - data-engineering
 - data-integration
 units:
-- learn.wwl.ingest-data-with-spark-fabric-notebooks.introduction
 - learn.wwl.ingest-data-with-spark-fabric-notebooks.write-optimize
 - learn.wwl.ingest-data-with-spark-fabric-notebooks.knowledge-check
 - learn.wwl.ingest-data-with-spark-fabric-notebooks.summary
