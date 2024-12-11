@@ -35548,6 +35548,46 @@
       "source_path": "learn-pr/wwl/query-data-kql-database-microsoft-fabric/4a-using-kql-with-notebooks.yml",
       "redirect_url": "https://learn.microsoft.com/fabric/real-time-intelligence/notebooks",
       "redirect_document_id": false
-  },
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/index.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/2-connect-authenticate.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/4-considerations.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/5-exercise.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/1-introduction.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/6-knowledge-check.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/7-summary.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/3-write-optimize.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    }
   ]
 }
