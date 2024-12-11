@@ -35579,6 +35579,11 @@
       "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/6-knowledge-check.md",
       "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/7-summary.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
     }
   ]
 }
