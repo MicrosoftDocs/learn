@@ -1,14 +1,13 @@
-Azure Key Vault is a *secret store*: a centralized cloud service for storing app secrets, such as configuration values like passwords and connection strings that must remain secure at all times. Key Vault helps you control your apps' secrets by keeping them in a single central location. It provides secure access, permissions control, and access logging.
-
+Azure Key Vault is a *secret store*: a centralized cloud service for storing app secrets, such as configuration values like passwords and connection strings that must always remain secure. Key Vault helps you control your apps' secrets by keeping them in a single central location. It provides secure access, permissions control, and access logging.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHck]
 
 The main benefits of using Key Vault are:
 
-- Separation of sensitive app information from other configuration and code, which reduces the risk of accidental leaks
-- Restricted secret access with access policies tailored to the apps and individuals that need them
-- Centralized secret storage, meaning required changes only have to be made in one place
-- Access logging and monitoring to help you understand how and when secrets are accessed
+- Separation of sensitive app information from other configuration and code, which reduces the risk of accidental leaks.
+- Restricted secret access with access policies tailored to the apps and individuals that need them.
+- Centralized secret storage, meaning required changes only have to be made in one place.
+- Access logging and monitoring to help you understand how and when secrets are accessed.
 
 Secrets are stored in individual *vaults*, which are Azure resources used to group secrets together. Secret access and vault management is accomplished by using a REST API. All of the Azure management tools and client libraries available for many popular languages also support this API. Every vault has a unique URL where its API is hosted.
 
@@ -36,6 +35,6 @@ Key Vault's API uses Microsoft Entra ID to authenticate users and apps. Vault ac
 > [!TIP]
 > When you grant vault access to developers and apps, grant only the minimum set of permissions needed. Permissions restrictions help avoid accidents caused by code bugs, and reduce the impact of stolen credentials or malicious code injected into your app.
 
-Developers usually only need `Get` and `List` permissions to a development-environment vault. Some engineers need full permissions to change and add secrets, when necessary.
+Usually, developers only need `Get` and `List` permissions to a development-environment vault. Some engineers need full permissions to change and add secrets, when necessary.
 
 For apps, often only `Get` permissions are required. Some apps might require `List` depending on the way the app is implemented. The app in this module's exercise requires the `List` permission because of the technique it uses to read secrets from the vault.
