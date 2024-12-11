@@ -21,7 +21,7 @@ You've received a new requirement that the Pizza List page should be visible onl
 
         [!code-csharp[](../code/pages/pizza.cshtml.cs?name=snippet_isadmin&highlight=4)]
 
-        The preceding code determines whether the authenticated user has an `IsAdmin` claim with a value of `True`. The result of this evaluation is accessed via a read-only property named `IsAdmin`.
+        The preceding code determines whether the authenticated user has an `IsAdmin` claim with a value of `True`. The code gets information about the authenticated user from the `HttpContext` in the parent `PageModel` class. The result of this evaluation is accessed via a read-only property named `IsAdmin`.
 
     1. Add `if (!IsAdmin) return Forbid();` to the beginning of **both** the `OnPost` and `OnPostDelete` methods:
 
@@ -68,7 +68,7 @@ There's one more thing you should lock down. There's a page that should be acces
 
     [!code-cshtml[](../code/pages/shared/_layout.cshtml?name=snippet_navlist&highlight=11-12,16)]
 
-    The preceding change conditionally hides the **Admin** link in the header if the user isn't an administrator.
+    The preceding change conditionally hides the **Admin** link in the header if the user isn't an administrator. It uses the `Context` property of the `RazorPage` class to access the `HttpContext` containing the information about the authenticated user.
 
 ## Add the `IsAdmin` claim to a user
 

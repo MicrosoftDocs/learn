@@ -32,7 +32,7 @@ The image illustrates the availability architecture for the vCore Business Criti
 
 - Unlike the General Purpose tier, the data and log files all run on direct-attached SSD, which significantly reduces network latency.
 
-- In this tier, there are three secondary replicas. One secondary replica can be used as a read-only endpoint (at no extra charge). A transaction can complete a commit when at least one secondary replica has hardened the change for its transaction log.
+- In this tier, there are three secondary replicas. One secondary replica can be used as a read-only endpoint (at no extra charge). A transaction can complete a commit when at least one secondary replica has implemented the change. 
 
 ### Things to know about Hyperscale availability
 

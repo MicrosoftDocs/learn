@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-azure-red-hat-openshift.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Introduction
+  ms.date: 08/23/2024
+  author: ricmmartins
+  ms.author: ricardomac
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]
