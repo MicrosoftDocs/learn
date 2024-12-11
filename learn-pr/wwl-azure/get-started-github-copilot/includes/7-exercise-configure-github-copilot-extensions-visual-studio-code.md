@@ -10,7 +10,7 @@ To view the enable and disable options for the GitHub Copilot extension, follow 
 
 1. In the list of installed extensions, scroll down until you find **GitHub Copilot**.
 
-1. To display a dropdown menu for the GitHub Copilot extension that list Enable and Disable options, select on the gear icon next to GitHub Copilot.
+1. To display a dropdown menu for the GitHub Copilot extension that lists Enable and Disable options, select on the gear icon next to GitHub Copilot.
 
     ![Screenshot showing a dropdown menu for the GitHub Copilot extension.](../media/github-copilot-enable-disable.png)
 

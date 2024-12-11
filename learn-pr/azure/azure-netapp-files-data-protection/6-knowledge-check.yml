@@ -29,14 +29,14 @@ quiz:
     - content: Azure NetApp Files backups
       isCorrect: false 
       explanation: "Incorrect. Cross-region replication asynchronously replicates data from an Azure NetApp Files volume (source) in one region to another Azure NetApp Files volume (destination) in another region. It provides protection for data from regional failures."
-  - content: "Which monitoring option in Azure NetApp Files system provides insight into subscription-level events, such as when a resource is modified or when a virtual machine is started?"
+  - content: How is the cost of backup calculated in Azure NetApp Files?
     choices: 
       - content: Backup is priced based on the duration of the restore process.
         isCorrect: false
-        explanation: "Incorrect. Backup cost is determined by the volume of data being transferred during the restore operation."
+        explanation: "Incorrect. Backup cost is determined by the amount of data being restored during the billing cycle."
       - content: Backup is included in the Azure NetApp Files subscription at no extra cost. 
         isCorrect: false
-        explanation: "Incorrect. Backup cost is determined by the volume of data being transferred during the restore operation."
+        explanation: "Incorrect. Backup cost is determined by the volume of data being transferred during the restore operation. Backups can incur additional costs based on the data restored."
       - content:  Backup is priced per restore operation during the billing cycle.
         isCorrect: false
         explanation: "Incorrect. Azure NetApp Files doesn't charge per restore operation. The pricing is based on the amount of data that is restored."

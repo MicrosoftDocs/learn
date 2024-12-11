@@ -2,16 +2,14 @@
 uid: learn.wwl.design-data-storage-solution-for-relational-data.design-encryption-for-data-at-rest-data-transmission-data-use
 title: Design security for data at rest, data in motion, and data in use
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design security for data at rest, data in motion, and data in use
   description: "Design security for data at rest, data in motion, and data in use"
-  ms.date: 08/30/2024
+  ms.date: 12/10/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 6
+durationInMinutes: 10
 content: |
   [!include[](includes/7-design-security-for-data-at-rest-data-transmission-data-use.md)]

@@ -2,7 +2,7 @@ Publishing an API is a great way to increase market share, generate revenue, and
 
 Developers need a way to reduce the complexity involved in supporting numerous APIs and their management. They require an API Management technology that can serve as a _front door_ for all their APIs. They need tools to implement security, manage revisions, and perform analytics.
 
-Suppose Tailwind Traders has started a new service for premier subscribers to request home delivery, product assembly, and in person assistance for promoted products. The service is available in the mobile app and the online retail website. Customers browse the list of promoted products, and place their order. Tailwind Traders connects with contracted specialists who deliver and assemble the product, and provide the customer with hands on instruction.
+Suppose Tailwind Traders started a new service for premier subscribers to request home delivery, product assembly, and in person assistance for promoted products. The service is available in the mobile app and the online retail website. Customers browse the list of promoted products, and place their order. Tailwind Traders connects with contracted specialists who deliver and assemble the product, and provide the customer with hands on instruction.
 
 The backbone of the new service is a large collection of published APIs, some of which are used by the following entities:
 - Tailwind Traders mobile app and online website

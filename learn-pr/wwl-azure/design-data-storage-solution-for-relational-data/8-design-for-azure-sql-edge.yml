@@ -2,16 +2,14 @@
 uid: learn.wwl.design-data-storage-solution-for-relational-data.design-for-azure-sql-edge
 title: Design for Azure SQL Edge
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design for Azure SQL Edge
   description: "Design for Azure SQL Edge"
-  ms.date: 08/30/2024
+  ms.date: 12/10/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/8-design-for-azure-sql-edge.md)]

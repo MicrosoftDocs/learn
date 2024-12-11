@@ -4,9 +4,8 @@ title: Introduction
 metadata:
   title: Introduction
   description: Learn how to write a test in C# and .NET, and how to use Visual Studio Test Explorer. Sharpen your test-writing skills with Fluent Assertions, data-driven tests, and mocking.
-  author: kendrahavens
-  ms.author: chnoring
-  manager: jmartens
+  author: CamSoper
+  ms.author: casoper
   ms.custom:
     - team=nextgen
     - devx-track-dotnet

@@ -5,9 +5,8 @@ metadata:
   title: Exercise - Use a design system in your app
   description: Use the Fluent UI design system for React to add consisent UI elements and a theme to the site.
   ms.date: 08/11/2023
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: CamSoper
+  ms.author: casoper
   ms.custom:
     - team=nextgen
     - devx-track-dotnet
