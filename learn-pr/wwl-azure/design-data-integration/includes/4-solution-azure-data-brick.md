@@ -1,4 +1,3 @@
-
 [Azure Databricks](/azure/databricks/introduction/) is a fully managed, cloud-based Big Data and Machine Learning platform, which empowers developers to accelerate AI and innovation. Azure Databricks provides data science and engineering teams with a single platform for big data processing and Machine Learning. The Azure Databricks managed Apache Spark platform makes it simple to run large-scale Spark workloads.
 
 ### Things to know about Azure Databricks
@@ -7,7 +6,7 @@ Azure Databricks is entirely based on Apache Spark, and it's a great tool for us
 
 Azure Databricks has a Control plane and a Data plane:
 
-- **Control Plane**: Hosts Databricks jobs, notebooks with query results, and the cluster manager. The Control plane also has the web application, hive metastore, and security access control lists (ACLs), and user sessions. These components are managed by Microsoft in collaboration with Azure Databricks and don't reside within your Azure subscription.
+- **Control Plane**: Hosts Databricks jobs, notebooks with query results, and the cluster manager. The Control plane also has the web application, hive metastore, and security access control lists (ACLs), and user sessions. Microsoft manages these components in collaboration with Azure Databricks.
 - **Data Plane**: Contains all the Azure Databricks runtime clusters that are hosted within the workspace. All data processing and storage exists within the client subscription. No data processing ever takes place within the Microsoft/Databricks-managed subscription.
 
 Azure Databricks offers three environments for developing data intensive applications.

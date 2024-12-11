@@ -1,4 +1,3 @@
-
 [Azure Data Factory](https://azure.microsoft.com/services/data-factory/) is a cloud-based data integration service that can help you create and schedule data-driven workflows. You can use Azure Data Factory to orchestrate data movement and transform data at scale. The data-driven workflows, or *pipelines*, ingest data from disparate data stores. Azure Data Factory is an ETL data integration process, which stands for extract, transform, and load. This integration process combines data from multiple data sources into a single data store.
 
 ### Things to know about Azure Data Factory
@@ -7,7 +6,7 @@ There are four major steps to create and implement a data-driven workflow in the
 
 1. **Connect and collect**. First, ingest the data to collect all the data from different sources into a centralized location.
 2. **Transform and enrich**. Next, transform the data by using a compute service like Azure Databricks and Azure HDInsight Hadoop.
-3. **Provide continuous integration and delivery (CI/CD) and publish**. Support CI/CD by using GitHub and Azure DevOps to deliver the ETL process incrementally before publishing the data to the analytics engine.
+3. **Provide continuous integration and delivery (CI/CD) and publish**. Support CI/CD by using GitHub and Azure Pipelines to deliver the ETL process incrementally before publishing the data to the analytics engine.
 4. **Monitor**. Finally, use the Azure portal to monitor the pipeline for scheduled activities and for any failures.
 
 The following diagram shows how Azure Data Factory orchestrates the ingestion of data from different data sources. Data is ingested into a Storage blob and stored in Azure Synapse Analytics. Analysis and visualization components are also connected to Azure Data Factory. Azure Data Factory provides a common management interface for all of your data integration needs.
