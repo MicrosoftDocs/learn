@@ -4,9 +4,10 @@ metadata:
   title: Build a Connect Four game with Blazor
   description: Learn how to build a web app with Blazor.
   ms.date: 03/15/2023
-  author: softchris
-  ms.author: chnoring
-  ms.topic: module
+  author: CamSoper
+  ms.author: casoper
+  ms.topic: module-standard-task-based
+  manager: coxford
   ms.service: dotnet
 title: Build a Connect Four game with Blazor
 summary: In this module, you learn the fundamentals of Blazor while building a "Connect Four" game.

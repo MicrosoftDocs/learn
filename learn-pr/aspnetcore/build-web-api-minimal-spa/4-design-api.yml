@@ -5,9 +5,8 @@ metadata:
   title: Design the API
   description: Learn how to design the API and what to consider.
   ms.date: 09/06/2023
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: CamSoper
+  ms.author: casoper
   ms.custom: team=nextgen
   ms.topic: unit
 durationInMinutes: 3

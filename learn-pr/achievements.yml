@@ -4302,3 +4302,13 @@ achievements:
   title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and Blazor
   summary: Connect an existing Blazor web application to Azure Cosmos DB for NoSQL and Azure OpenAI using their .NET software development kits. Your code manages and queries items in an API for NoSQL container. Your code also sends prompts to Azure OpenAI and parses the responses.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.build-dotnet-app-azure-cosmos-db-nosql.badge
+  type: badge
+  title: Guided project - Build a .NET app with Azure Cosmos DB for NoSQL
+  summary: Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform common operations. Your code creates resources, coordinate multiple operations, and query items.
+  iconUrl: /training/achievements/build-dotnet-app-azure-cosmos-db-nosql.svg
+- uid: learn.wwl.ingest-data-with-microsoft-fabric-notebooks.badge
+  type: badge
+  title: Ingest data with Spark and Microsoft Fabric notebooks
+  summary: Discover how to use Apache Spark and Python for data ingestion into a Microsoft Fabric lakehouse. Fabric notebooks provide a scalable and systematic solution.
+  iconUrl: /training/achievements/generic-badge.svg

@@ -5,9 +5,8 @@ metadata:
   title: Design the user experience
   description: Learn how to use a design system, components, and css to provide a consistent and maintainable style for your site.
   ms.date: 08/11/2023
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: CamSoper
+  ms.author: casoper
   ms.custom: team=nextgen
   ms.topic: unit
 durationInMinutes: 3

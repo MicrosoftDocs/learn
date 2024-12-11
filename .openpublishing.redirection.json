@@ -35550,7 +35550,17 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/2-prepare.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/2-prepare.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
     },
@@ -35560,7 +35570,17 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/3-exercise-create-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/4-exercise-connect-openai-model.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/4-exercise-create-resources.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
     },
@@ -35570,7 +35590,17 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/5-exercise-create-items.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/6-exercise-connect-cosmos-db-nosql.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/6-exercise-read-query.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
     },
@@ -35580,7 +35610,17 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/7-exercise-linq.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/8-cleanup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/8-cleanup.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
     },
@@ -35590,12 +35630,73 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/10-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
-    },    {
+    },    
+    {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/query-data-kql-database-microsoft-fabric/4a-using-kql-with-notebooks.yml",
+      "redirect_url": "https://learn.microsoft.com/fabric/real-time-intelligence/notebooks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/index.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/2-connect-authenticate.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/4-considerations.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/5-exercise.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/1-introduction.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/6-knowledge-check.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/7-summary.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/3-write-optimize.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
       "redirect_document_id": false
     }
   ]

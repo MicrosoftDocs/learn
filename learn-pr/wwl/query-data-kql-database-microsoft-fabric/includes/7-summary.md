@@ -1,7 +1,4 @@
-In this module, you have learned how to get started with KQL queries in Microsoft Fabric. You need to set up an Azure account and Azure Data Explorer to begin. KQL queries follow a basic pattern of selecting a table, applying conditions, and projecting specific columns. You can use various functions and operators for arithmetic, comparison, logical operations, and string manipulations. Advanced querying techniques such as aggregations, joins, and subqueries are also covered. Practical exercises provided by Microsoft Learn help you gain hands-on experience with KQL. KQL has advantages over T-SQL in terms of simplicity, performance, flexibility, and integration with other Microsoft products.
+In this module, you explored how to store real-time data in Microsoft Fabric and how to query it using KQL.
 
-The main takeaways from this module are that KQL queries in Microsoft Fabric can be performed by setting up a Microsoft Fabric Account within Power BI. KQL queries follow a pattern of selecting a table, applying conditions, and projecting specific columns. Advanced querying techniques such as aggregations, joins, and subqueries are also covered. KQL has advantages over T-SQL in terms of simplicity, performance, flexibility, and integration with other Microsoft products. Practical exercises provided by Microsoft Learn help you gain hands-on experience with KQL.
-
-Additional Reading:
-1. [Microsoft Fabric Terminology](/fabric/get-started/fabric-terminology): This resource provides an overview of the terminology used in Microsoft Fabric.
-3. [Query Data in a KQL Queryset](/fabric/real-time-analytics/kusto-query-set): This resource provides information on how to query data in a KQL queryset. 
+> [!TIP]
+> For more information about KQL, see **[Kusto Query Language (KQL) overview](/kusto/query/?view=microsoft-fabric&preserve-view=true)**.
