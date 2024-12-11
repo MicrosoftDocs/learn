@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-retail.discover-ai-improves-shopping-experiences
+title: Discover how Microsoft AI improves shopping experiences
+metadata:
+  title: Discover how Microsoft AI improves shopping experiences
+  description: "Discover how Microsoft AI improves shopping experiences"
+  ms.date: 08/16/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-discover-ai-improves-shopping-experiences.md)]

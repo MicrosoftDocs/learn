@@ -7,14 +7,12 @@ Data disks are used by virtual machines to store data like database files, websi
 
 ### Things to know about managed disks
 
-Azure offers several types of managed disks. The following table shows a [comparison of four data disk types](/azure/storage/common/nfs-comparison). 
+Azure offers several types of managed disks. The following table shows a [comparison of four data disk types](/azure/virtual-machines/disks-types#disk-type-comparison). 
 
 | Comparison | Ultra-disk | Premium SSD | Standard SSD | Standard HDD |
 | --- | --- | --- | --- | --- |
 | **Disk type** | SSD | SSD | SSD | HDD |
-| **Scenario** | IO-intensive workloads, such as SAP HANA, top tier databases like SQL Server and Oracle, and other transaction-heavy workloads | Production and performance sensitive workloads | Web servers, Lightly used enterprise applications, Development and testing | Backup, Non-critical, Infrequent access |
-| **Max throughput** | 2,000 Mbps| 900 Mbps| 750 Mbps| 500 Mbps |
-| **Max IOPS** | 160,000 | 20,000 | 6,000 | 2,000 |
+| **Scenario** | IO-intensive workloads, such as SAP HANA, top tier databases like SQL Server and Oracle, and other transaction-heavy workloads | Production and performance sensitive workloads | Web servers, Lightly used enterprise applications, development, and testing | Backup, Noncritical, Infrequent access |
 
 #### Choose an encryption option
 
@@ -22,7 +20,7 @@ There are several encryption types available for your managed disks.
 
 - **[Azure Disk Encryption (ADE)](/azure/virtual-machines/linux/disk-encryption-overview)** encrypts the VM's virtual hard disks (VHDs). If VHD is protected with ADE, the disk image is accessible only by the VM that owns the disk.
 
-- **[Server-Side Encryption (SSE)](/azure/virtual-machines/disk-encryption)** is performed on the physical disks in the data center. If someone directly accesses the physical disk, the data will be encrypted. When the data is accessed from the disk, it's decrypted and loaded into memory. This form of encryption is also referred to as _encryption at rest_ or Azure Storage encryption.
+- **[Server-Side Encryption (SSE)](/azure/virtual-machines/disk-encryption)** is performed on the physical disks in the data center. If someone directly accesses the physical disk, the data is encrypted. When the data is accessed from the disk, it's decrypted and loaded into memory. This form of encryption is also referred to as _encryption at rest_ or Azure Storage encryption.
 
 - **[Encryption at host](/azure/virtual-machines/disk-encryption)** ensures that data stored on the VM host is encrypted at rest and flows encrypted to the Storage service. Disks with encryption at host enabled aren't encrypted with SSE. Instead, the server hosting your VM provides the encryption for your data, and that encrypted data flows into Azure Storage.
 
@@ -45,4 +43,3 @@ Think about what data disk types are needed for Tailwind Traders. Consider your 
    > [!Warning]
    > Disk caching isn't supported for disks 4 TiB and larger. When multiple disks are attached to your Virtual Machine, each disk smaller than 4 TiB supports caching. Changing the cache setting of an Azure disk, detaches and reattaches the target disk. When it's the OS disk, the VM is restarted. 
 
-- **Consider using encryption**. Secure your data disks with encryption. To fully protect your data disks, combine encryption services: ADE, SSE, and encryption at rest.

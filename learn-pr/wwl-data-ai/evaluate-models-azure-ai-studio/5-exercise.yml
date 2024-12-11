@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-models-azure-ai-studio.exercise
+title: Exercise - Evaluate the performance of your generative AI app
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Evaluate the performance of your generative AI app
+  description: "Evaluate the performance of your generative AI app in the Azure AI Foundry portal."
+  ms.date: 11/28/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise.md)]

@@ -2,13 +2,14 @@
 uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 12/06/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

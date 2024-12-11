@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-microsoft-intune-essentials.integrate-security-compliance
+title: Integrate security and compliance
+metadata:
+  title: Integrate security and compliance
+  description: "Integrate security and compliance"
+  ms.date: 06/06/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-integrate-security-compliance.md)]

@@ -2,21 +2,22 @@
 uid: learn.wwl.create-manage-power-bi-assets
 metadata:
   title: Create and manage Power BI assets
-  description: "Creating shared data assets for your analytics environment provides structure and consistency. Maintaining those assets is as important, and XMLA endpoint provides additional administrative capabilities."
-  ms.date: 04/03/2023
-  author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  description: "Create Power BI assets for your analytics environment for structure and consistency, such as Power BI template and project files. Reusable assets and using the XMLA endpoint support application lifecycle management, including continuous integration and deployment."
+  ms.date: 11/12/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: module-standard-task-based
+  ms.service: powerbi
 title: Create and manage Power BI assets
-summary: Creating shared data assets for your analytics environment provides structure and consistency. Maintaining those assets is as important, and XMLA endpoint provides additional administrative capabilities.
+summary: Create Power BI assets for your analytics environment for structure and consistency, such as Power BI template and project files. Reusable assets and using the XMLA endpoint support application lifecycle management, including continuous integration and deployment.
 abstract: |
   Upon completion of this module, you should be able to:
-  * Create specialized datasets.
-  * Create live and DirectQuery connections.
-  * Use Power BI service lineage view.
-  * Use XMLA endpoint to connect datasets.
+  - Create core and specialized semantic models.
+  - Create Power BI Template and Power BI Project files.
+  - Use lineage view and endorse data assets in Power BI service.
+  - Use XMLA endpoint to connect semantic models.
 prerequisites: |
-  Intermediate experience with Power BI Desktop application and service.
+  Experience developing Power BI reports and the Power BI service. 
 iconUrl: /training/achievements/create-manage-power-bi-assets.svg
 levels:
 - intermediate
@@ -24,8 +25,8 @@ roles:
 - data-analyst
 products:
 - power-bi
+- fabric
 subjects:
-- data-ai
 - data-analytics
 - data-management
 - knowledge-management
@@ -33,6 +34,7 @@ subjects:
 units:
 - learn.wwl.create-manage-power-bi-assets.introduction
 - learn.wwl.create-manage-power-bi-assets.create-reusable
+- learn.wwl.create-manage-power-bi-assets.lifecycle-management
 - learn.wwl.create-manage-power-bi-assets.explore-use-lineage-view
 - learn.wwl.create-manage-power-bi-assets.dataset-use-xmla-endpoint
 - learn.wwl.create-manage-power-bi-assets.exercise-create-reusable

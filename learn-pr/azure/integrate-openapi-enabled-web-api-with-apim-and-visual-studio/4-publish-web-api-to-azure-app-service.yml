@@ -2,16 +2,18 @@
 uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.4-publish-web-api-to-azure-app-service
 title: Publish an OpenAPI enabled web API to Azure App Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Publish an OpenAPI enabled web API to Azure App Service
   description: Publish an OpenAPI enabled web API to Azure App Service using Visual Studio to reduce context switching.
-  ms.date: 04/16/2021
+  ms.date: 09/13/2024
   author: justinyoo
   ms.author: juyoo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: juyoo-04222021
 durationInMinutes: 3
 content: |
   [!include[](includes/4-publish-web-api-to-azure-app-service.md)]
+

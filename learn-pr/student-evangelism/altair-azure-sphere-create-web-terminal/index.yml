@@ -1,14 +1,16 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and customize Altair 8800 cloud services
   description: Learn how to customize IoT Central, create an Altair web terminal, and run the Altair virtual disk server.
   ms.date: 11/16/2021
   author: gloveboxes
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
+  ms.topic: module
   ms.custom: nextgen
+  ms.service: azure-sphere
 title: Create and customize Altair 8800 cloud services
 summary: Learn how to customize IoT Central, create an Altair web terminal, and run the Altair virtual disk server.
 abstract:  |
@@ -35,7 +37,7 @@ products:
 - azure
 - azure-iot-central
 - azure-sphere
-- azure-app-service-static
+- static-web-apps
 - azure-virtual-machines
 subjects:
 - data-engineering
@@ -51,3 +53,4 @@ units:
 - learn.student-evangelism.altair-azure-sphere-create-web-terminal.summary
 badge:
   uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.badge
+

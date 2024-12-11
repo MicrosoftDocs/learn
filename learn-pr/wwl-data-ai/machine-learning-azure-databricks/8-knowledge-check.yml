@@ -2,15 +2,19 @@
 uid: learn.wwl.machine-learning-azure-databricks.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 03/22/2023
+  description: Knowledge check
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.author: madiepev
+  ms.date: 08/26/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "Which kind of machine learning algorithm would you use to train a model that predicts the amount of rainfall in inches on a given day?"
     choices:
@@ -45,3 +49,4 @@ quiz:
     - content: "Recall"
       isCorrect: true
       explanation: "That's correct. Recall is a metric that is used to evaluate a clustering model."
+

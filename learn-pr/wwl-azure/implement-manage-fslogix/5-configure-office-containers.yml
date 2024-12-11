@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-fslogix.configure-office-containers
+title: Configure FSLogix Office Containers
+metadata:
+  title: Configure FSLogix Office Containers
+  description: "Configure FSLogix Office Containers"
+  ms.date: 08/27/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-configure-office-containers.md)]

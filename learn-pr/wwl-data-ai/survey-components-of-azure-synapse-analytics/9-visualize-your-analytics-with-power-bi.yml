@@ -2,13 +2,14 @@
 uid: learn.wwl.survey-components-of-azure-synapse-analytics.visualize-your-analytics-with-power-bi
 title: Visualize your analytics with Power BI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Visualize your analytics with Power BI
   description: "Visualize your analytics with Power BI"
   ms.date: 06/23/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

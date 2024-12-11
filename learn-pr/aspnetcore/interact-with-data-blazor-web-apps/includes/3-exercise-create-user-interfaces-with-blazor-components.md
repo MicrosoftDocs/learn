@@ -7,8 +7,6 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 
 ## Create a new Blazor app
 
-[!include[](../../../includes/dotnet6-sdk-version.md)]
-
 .NET lets you create new projects with any version of Visual Studio or terminal commands. The following exercises show you the steps by using the terminal and Visual Studio Code.
 
 1. Open Visual Studio Code.
@@ -17,16 +15,12 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 1. Run the dotnet terminal command:
 
     ```dotnetcli
-    dotnet new blazorserver -o BlazingPizza --no-https true -f net6.0
+    dotnet new blazorserver -o BlazingPizza --no-https true
     ```
 
     This command creates a new Blazor server project in a folder named **BlazingPizza**. It also tells the project to disable HTTPS.
 1. Select **File** > **Open folder**.
 1. In the Open dialog, go to the **BlazingPizza** folder and choose **Select Folder**.
-1. Visual Studio Code prompts you to add required assets to build and debug the project. Select **Yes**.
-
-    :::image type="content" source="../media/3-install-missing-components.png" alt-text="Screenshot showing the missing assets dialog.":::
-1. Visual Studio Code adds **launch.json** and **tasks.json** in the **.vscode** folder of your project.
 
 These files enable you to run and debug your Blazor app with Visual Studio Code's debugging tools.
 
@@ -35,7 +29,7 @@ These files enable you to run and debug your Blazor app with Visual Studio Code'
 You can choose to use the terminal or Visual Studio Code to run your app.
 
 1. In the terminal window, start the Blazor app with:
-    
+
     ```dotnetcli
     dotnet watch
     ```
@@ -78,7 +72,7 @@ The **Pages/Index.razor** component lets customers select and configure the pizz
 
 The team has also created classes to represent the models in the app. Review the current `PizzaSpecial` model.
 
-1. In Visual Studio Code, in the file explorer, expand the **Model** folder. Then select **PizzaSpecial**.
+1. In Visual Studio Code's file explorer, expand the **Model** folder. Then select **PizzaSpecial**.
 
     ```csharp
     namespace BlazingPizza;

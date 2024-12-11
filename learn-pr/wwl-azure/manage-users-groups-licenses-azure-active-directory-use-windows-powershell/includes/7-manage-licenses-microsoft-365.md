@@ -31,7 +31,9 @@ $sku = Get-AzureADSubscribedSku
 $sku[0].ServicePlans
 ```
 
-## Managing licenses by using Azure AD cmdlets
+<a name='managing-licenses-by-using-azure-ad-cmdlets'></a>
+
+## Managing licenses by using Microsoft Entra cmdlets
 
 You can use the **Set-AzureADUserLicense** cmdlet to assign a license to a user. Licenses to be added are contained in an **AssignedLicenses** object that you create.  For each license that you want to add, you create an **AssignedLicense** object and add it to the **AddLicenses** property of the **AssignedLicenses** object. After the **AssignedLicenses** object is configured, you apply it to the user account. The following example creates a license object for Microsoft 365 E3, and then assigns it to a user:
 

@@ -2,13 +2,17 @@
 uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.exercise-track-model-training
 title: Exercise - Track model training
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Track model training
-  description: "Exercise - Track model training"
-  ms.date: 04/19/2023
+  description: Exercise - Track model training
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-track-model-training.md)]
+

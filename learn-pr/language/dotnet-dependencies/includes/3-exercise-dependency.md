@@ -1,17 +1,17 @@
 The developers at Tailwind Traders realize that they're about to put extensive resources into developing apps for the .NET platform. These apps are going to display human-readable data to users, including dates, times, and numbers. 
 
-.NET has the capabilities to do this, but the developers are certain someone has solved this problem. They need a framework. After some searching, they've found Humanizer in the NuGet package registry. It seems to be widely used and promises to meet all of their .NET needs for manipulating and displaying strings, enumerations, dates, times, timespans, numbers, and quantities.
+.NET has the capabilities to develop this app, but the developers are certain that someone already solved this problem. They need a framework. After some searching, they find Humanizer in the NuGet package registry. It seems to be widely used and it promises to meet all of their .NET needs. Specifically, manipulating and displaying strings, enumerations, dates, times, timespans, numbers, and quantities.
 
 At this point, the developers want you to install Humanizer, write a couple of data manipulations, and run them to see if Humanizer delivers on its promise.
 
 > [!NOTE]
-> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows) or continued development using Visual Studio Code (Windows, Linux, and macOS).
 
-[!include[](../../../includes/dotnet6-sdk-version.md)]
+[!include[](../../../includes/dotnet8-sdk-version.md)]
 
 ## Create a sample .NET project
 
-To set up a .NET project to work with dependencies, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
+To set up a .NET project to work with dependencies, we use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
@@ -19,10 +19,10 @@ To set up a .NET project to work with dependencies, we'll use Visual Studio Code
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
-1. In the terminal window, copy and paste the following command.
+1. In the terminal window, copy and paste the following command:
 
     ```dotnetcli
-    dotnet new console -f net6.0
+    dotnet new console -f net8.0
     ```
 
     This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written, along with a C# project file named **DotNetDependencies.csproj**.
@@ -47,15 +47,15 @@ The terminal window displays "Hello World!" as output.
 
 ## Set up Visual Studio Code for .NET debugging
 
-Open Program.cs. The first time you open a C# file in Visual Studio Code, you'll get a prompt to install recommended extensions for C#. Select the **Install** button in the prompt.
+Open Program.cs. The first time you open a C# file in Visual Studio Code, you get a prompt to install recommended extensions for C#. Select the **Install** button in the prompt.
 
 :::image source="../media/install-recommended-extensions.png" alt-text="Screenshot of the Visual Studio Code prompt for recommended extensions.":::
 
-Visual Studio Code installs the C# extension. It shows an additional prompt to add required assets to build and debug your project. Select **Yes**.
+Visual Studio Code installs the C# extension. It shows another prompt to add required assets to build and debug your project. Select **Yes**.
 
 :::image source="../media/install-required-assets.png" alt-text="Screenshot of the Visual Studio Code prompt for required assets.":::
 
-You can close the **Extension: C#** tab to focus on the code we'll be writing.
+You can close the **Extension: C#** tab to focus on the code you're writing.
 
 ## Add a NuGet package by using the .NET Core tool
 
@@ -65,7 +65,7 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     Console.WriteLine("Hello, World!");
     ```
 
-    The preceding function is run at the start of the application and outputs a string to the console. Let's add Humanizer and manipulate data and write it to the console.
+    The preceding function runs at the start of the application and outputs a string to the console. Let's add Humanizer and manipulate data and write it to the console.
 
 1. Install the Humanizer library by running the following command:
 
@@ -81,7 +81,7 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     </ItemGroup>
     ```
 
-1. Add the following content at the top of the Program.cs file to initialize Humanizer:
+1. Add the following content at the top of the Program.cs file that initializes Humanizer:
 
     ```csharp
     using Humanizer;
@@ -145,4 +145,4 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     2 weeks
     ```
 
-Congratulations. You've successfully installed Humanizer as a dependency and written logic for application code to make data more human-readable. Humanizer seems to deliver on its promise, and Tailwind Traders is likely to be happy with this evaluation.
+Congratulations. You successfully installed Humanizer as a dependency and written logic for application code to make data more human-readable. Humanizer seems to deliver on its promise, and Tailwind Traders is likely to be happy with this evaluation.

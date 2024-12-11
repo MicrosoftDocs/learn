@@ -1,4 +1,4 @@
-Edsger Dijkstra once said:
+[Edsger Dijkstra](https://wikipedia.org/wiki/Edsger_W._Dijkstra) once said:
 
 > "If debugging is the process of removing bugs, then programming must be the process of putting them in."
 

@@ -4,19 +4,20 @@ In this exercise, we look at exercises for viewing the logs of your sample appli
 
 ### Tail log
 
-In your existing Azure Cloud Shell window, view the log of the application instance with the following command:
+In your existing Azure Cloud Shell window, view the application instance log with the following command:
 
 ```azurecli
 az spring app logs --name customers-service
 ```
 
 > [!IMPORTANT]
-> If you closed the original Azure Cloud Shell window, or want to run the commands in your local development environment, you must specify your resource group and Azure Spring Apps service name:
+> If you closed the original Azure Cloud Shell window or want to run the commands in your local development environment, you must specify your resource group and Azure Spring Apps service name:
+>
 >```azurecli
 >az spring app logs --name customers-service --resource-group <resource group name> --service <service >instance name>
 >```
 
-This command will return logs:
+This command will return logs similar to the following:
 
 ```output
 ...
@@ -29,7 +30,7 @@ This command will return logs:
 
 ### Continuously stream new logs
 
-By default, `az spring app log tail` prints only existing logs streamed to the app console and then exits. If you want to stream new logs, add `-f` (`--follow`):  
+By default, `az spring app logs` prints only existing logs streamed to the app console, then exits. If you want to stream new logs, add `-f` (`--follow`):  
 
 ```azurecli
 az spring app logs --name customers-service -f
@@ -37,26 +38,25 @@ az spring app logs --name customers-service -f
 
 ## Errors and warnings exercise
 
-Next, we'll create an error, to show the value of how you can quickly debug and find its root cause.
+Next, we'll create an error to show the value of how you can quickly debug and find its root cause.
 
-1. Open the customers-service and follow the logs:
+1. Open `customers-service` and follow the logs:
 
     ```azurecli
     az spring app logs --name customers-service -f
     ```
 
-2. Next, in a web browser, open a new window and trigger a warning with the following command: (Replace the "\<spring-apps-name\>" with the name of your spring apps instance)
+2. Next, in a web browser, open a new window and trigger a warning with the following command (replace the "\<spring-apps-name\>" with the name of your spring apps instance):
 
     ```html
     https://<spring-apps-name>-api-gateway.azuremicroservices.io/api/customer/owners/George
     ```
 
-3. Accessing the above URL triggers a warning, as the variable "George" cannot be cast into a number to search for a customer.
-You now can see a warning similar to the below screen:
+3. Accessing the preceding URL triggers a warning, as the variable "George" can't be cast into a number to search for a customer. You should get a warning similar to the following:
 
-   :::image type="content" source="../media/5-warning.jpg" alt-text="screenshot of Azure Cloud Shell with log warning" lightbox="../media/5-warning.jpg":::
+   :::image type="content" source="../media/5-warning.jpg" alt-text="Screenshot of Azure Cloud Shell with log warning." lightbox="../media/5-warning.jpg":::
 
-4. To resolve this warning, in a web browser, rather search for the customer using the customer ID:
+4. To resolve this warning, go to the following URL in a web browser to search for the customer using the customer ID (remember to replace the "\<spring-apps-name\>" with the name of your spring apps instance):
 
     ```html
     https://<spring-apps-name>-api-gateway.azuremicroservices.io/api/customer/owners/1

@@ -3,26 +3,39 @@ uid: learn.wwl.query-manipulate-repository-objects
 metadata:
   title: Query and manipulate repository objects by using CIM and WMI methods
   description: "This module explains how to use CIM and WMI to make changes by using methods. The methods available vary depending on the type of object. Discovering and understanding these methods is an important step in querying and manipulating the repository information."
-  ms.date: 11/25/2022
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: powershell
+  ms.subservice: cmdlets
+  ai-usage: human-only
 title: Query and manipulate repository objects by using CIM and WMI methods
 summary: This module explains how to use CIM and WMI to make changes by using methods. Discovering and understanding these methods is an important step in querying and manipulating the repository information.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Discover the methods of repository objects.
-  - Locate online documentation for methods.
-  - Locate the methods of the Win32_Service class and their documentation.
-  - Explain how to invoke methods of repository objects.
-  - Use methods for the Win32_OperatingSystem and Win32_Process classes.
+
+  -   Discover the methods of repository objects.
+
+  -   Locate online documentation for methods.
+
+  -   Locate the methods of the Win32_Service class and their documentation.
+
+  -   Explain how to invoke methods of repository objects.
+
+  -   Use methods for the Win32_OperatingSystem and Win32_Process classes.
 prerequisites: |
-  *   Familiarity with Windows networking technologies and implementation
-  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
-  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
-  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
-  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  -   Familiarity with Windows networking technologies and implementation
+
+  -   Familiarity with Windows Server administration, maintenance, and troubleshooting
+
+  -   Familiarity with Windows PowerShell and its commands to perform specific tasks
+
+  -   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+
+  -   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
 iconUrl: /training/achievements/query-manipulate-repository-objects.svg
 levels:
 - intermediate
@@ -30,14 +43,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

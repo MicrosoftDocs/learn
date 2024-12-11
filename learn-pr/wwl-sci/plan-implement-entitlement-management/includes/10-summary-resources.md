@@ -4,7 +4,7 @@ Now that you have reviewed this module, you should be able to:
  -  Define access packages.
  -  Plan, implement, and manage entitlements.
  -  Implement and manage terms of use.
- -  Manage the lifecycle of external users in Azure AD Identity Governance settings.
+ -  Manage the lifecycle of external users in Microsoft Entra ID Governance settings.
  -  Configure and manage connected organization
  -  Review per user entitlements
 
@@ -14,8 +14,8 @@ In this module, you learned how to manage permissions and access for your intern
 
 Use these resources to discover more.
 
- -  FAQs [https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use\#frequently-asked-questions](/azure/active-directory/conditional-access/terms-of-use)
- -  [What is Azure AD entitlement management](/azure/active-directory/governance/entitlement-management-overview)
- -  [Common scenarios in Azure AD entitlement management](/azure/active-directory/governance/entitlement-management-scenarios)
- -  [Review assignments in Azure AD entitlement management](/azure/active-directory/governance/entitlement-management-access-package-assignments)
- -  [Add a connected organization in Azure AD entitlement management](/azure/active-directory/governance/entitlement-management-organization)
+ -  FAQs [https://learn.microsoft.com/azure/active-directory/conditional-access/terms-of-use\#frequently-asked-questions](/azure/active-directory/conditional-access/terms-of-use)
+ -  [What is Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-overview)
+ -  [Common scenarios in Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-scenarios)
+ -  [Review assignments in Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-access-package-assignments)
+ -  [Add a connected organization in Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-organization)

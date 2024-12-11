@@ -1,14 +1,14 @@
 A network virtual appliance (NVA) is a virtual appliance that consists of various layers like:
 
-- a firewall
-- a WAN optimizer
-- application-delivery controllers
-- routers
-- load balancers
+- A firewall
+- A WAN optimizer
+- Application-delivery controllers
+- Routers
+- Load balancers
 - IDS/IPS
-- proxies
+- Proxies
 
-You can deploy NVAs chosen from providers in Azure Marketplace. Such providers include Cisco, Check Point, Barracuda, Sophos, WatchGuard, and SonicWall. You can use an NVA to filter traffic inbound to a virtual network, to block malicious requests, and to block requests made from unexpected resources.
+You can deploy NVAs that you choose from providers in Azure Marketplace. Such providers include Cisco, Check Point, Barracuda, Sophos, WatchGuard, and SonicWall. You can use an NVA to filter traffic inbound to a virtual network, to block malicious requests, and to block requests made from unexpected resources.
 
 In the retail-organization example scenario, you must work with the security and network teams. You want to implement a secure environment that scrutinizes all incoming traffic and blocks unauthorized traffic from passing on to the internal network. You also want to secure both virtual-machine networking and Azure-services networking as part of your company's network-security strategy.
 
@@ -20,9 +20,9 @@ As part of the network-security strategy, you must control the flow of traffic w
 
 Network virtual appliances (NVAs) are virtual machines that control the flow of network traffic by controlling routing. You'll typically use them to manage traffic flowing from a perimeter-network environment to other networks or subnets.
 
-![Visualization of a network architecture with a network virtual appliance.](../media/4-nva.svg)
+:::image type="content" source="../media/4-nva.svg" alt-text="Diagram of a network architecture with a network virtual appliance.":::
 
-You can deploy firewall appliances into a virtual network in different configurations. You can put a firewall appliance in a perimeter-network subnet in the virtual network or if you want more control of security, implement a microsegmentation approach.
+You can deploy firewall appliances into a virtual network in different configurations. You can put a firewall appliance in a perimeter-network subnet in the virtual network, or if you want more control of security, implement a microsegmentation approach.
 
 With the microsegmentation approach, you can create dedicated subnets for the firewall and then deploy web applications and other services in other subnets. All traffic is routed through the firewall and inspected by the NVAs. You'll enable forwarding on the virtual-appliance network interfaces to pass traffic that is accepted by the appropriate subnet.
 
@@ -41,6 +41,6 @@ You can create multiple route tables in Azure. Each route table can be associate
 
 ## Network virtual appliances in a highly available architecture
 
-If traffic is routed through an NVA, the NVA becomes a critical piece of your infrastructure. Any NVA failures will directly affect the ability of your services to communicate. It's important to include a highly available architecture in your NVA deployment.
+If traffic is routed through an NVA, the NVA becomes a critical piece of your infrastructure. Any NVA failures directly affect the ability of your services to communicate. It's important to include a highly available architecture in your NVA deployment.
 
 There are several methods of achieving high availability when using NVAs. At the end of this module, you can find more information about using NVAs in highly available scenarios.

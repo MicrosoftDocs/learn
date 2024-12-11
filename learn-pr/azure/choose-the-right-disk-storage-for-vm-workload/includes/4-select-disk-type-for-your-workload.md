@@ -12,9 +12,9 @@ First, you want to architect the virtual machine that will host the production d
 
 You've monitored and analyzed the performance of your on-premises system both during typical periods and during periods of peak demand, such as during a successful marketing campaign. This study shows that fast disks and low latency underpin the system and that any drop in performance will affect all your users. To ensure that your current good performance continues after the migration to the cloud, you want the disks that store the databases to support 50,000 IOPS and throughputs up to 1,000 :::no-loc text="MBps":::.
 
-This requirement makes the decision simple. The maximum size for premium SSD managed disks is P80, but this size supports maximum IOPS of 20,000 and a maximum throughput of 900 :::no-loc text="MBps":::. Only the largest sizes of ultra disks support the performance you need.
+This requirement makes the decision simple. The maximum size for premium SSD managed disks is P80, but this size supports maximum IOPS of 20,000 and a maximum throughput of 900 :::no-loc text="MBps":::. Only the largest sizes of Ultra Disks support the performance you need.
 
-Remember that ultra disks can only be attached to virtual machines in availability zones. This requirement provides high availability because the virtual servers aren't vulnerable to a datacenter-wide hardware failure. It also means that you should use managed disks, which Azure automatically replicates across the availability zones where virtual machines are hosted.
+Remember that Ultra Disks can only be attached to virtual machines in availability zones. This requirement provides high availability because the virtual servers aren't vulnerable to a datacenter-wide hardware failure. It also means that you should use managed disks, which Azure automatically replicates across the availability zones where virtual machines are hosted.
 
 ## Data warehouse servers
 
@@ -22,7 +22,7 @@ Next, you want to consider the servers that host the prescription-drug data ware
 
 In your on-premises system, there's a data warehouse server in your main datacenter, and also several in regional offices. You've created a virtual-machine image for these data warehouse servers, and you'll use it to simplify the deployment of multiple instances of the virtual machine in multiple Azure regions. Your analysis indicates that these servers require high-performance disks, but not the extreme performance required by the production database server.
 
-The highest performance disks in Azure are premium SSD v2 managed disks, premium SSD managed disks, and ultra disks. However, ultra disks and premium SSD v2 managed disks don't currently support virtual-machine images. As a result, premium SSD managed disks are the optimal disk type for data disks in this workload. None of your requirements for data warehousing requires unmanaged disks, so you choose managed disks to reduce administrative overhead.
+The highest performance disks in Azure are premium SSD v2 managed disks, premium SSD managed disks, and Ultra Disks. However, Ultra Disks and premium SSD v2 managed disks don't currently support virtual-machine images. As a result, premium SSD managed disks are the optimal disk type for data disks in this workload.
 
 ## Standby database server
 

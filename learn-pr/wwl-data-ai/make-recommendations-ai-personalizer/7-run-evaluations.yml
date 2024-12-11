@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.make-recommendations-ai-personalizer.run-evaluations
+title: Run evaluations
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Run evaluations
+  description: Learn how to run offline evaluations and feature evaluations.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 09/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-run-evaluations.md)]
+

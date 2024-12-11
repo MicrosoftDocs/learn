@@ -2,15 +2,17 @@
 uid: learn.azure.deploy-templates-command-line-github-actions.9-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary.
-  ms.date: 10/15/2020
+  ms.date: 03/13/2024
   author: pierreroman
   ms.author: pierrer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: pierrer-11052020
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
+

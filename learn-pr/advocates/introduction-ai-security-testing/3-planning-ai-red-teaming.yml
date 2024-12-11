@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-ai-security-testing.planning-ai-red-teaming
+title: Planning AI red teaming
+metadata:
+  title: Planning AI red teaming
+  description: How to plan AI red teaming
+  ms.author: sayoung
+  author: sarah-yo
+  ms.date: 09/01/2024  
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/3-planning-ai-red-teaming.md)]

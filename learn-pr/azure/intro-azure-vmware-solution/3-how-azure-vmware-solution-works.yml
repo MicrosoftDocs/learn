@@ -2,13 +2,14 @@
 uid: learn.azure.intro-azure-vmware-solution.how-azure-vmware-solution-works
 title: How Azure VMware Solution works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Azure VMware Solution works
   description: Learn how Azure VMware Solution is set up and how it works on Azure.
-  ms.date: 03/13/2023
+  ms.date: 10/23/2024
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: phschmit-07282021
 durationInMinutes: 7
@@ -22,7 +23,7 @@ quiz:
     - content: "Tier 1 gateways"
       isCorrect: false
       explanation: "Incorrect. The customer manages tier 1 gateways."
-    - content: "Lifecycle management of VMware software (ESXi, vCenter, and vSAN)"
+    - content: "Lifecycle management of VMware software (ESXi, vCenter Server, and vSAN)"
       isCorrect: true
       explanation: "Correct. Microsoft, in partnership with VMware, supports and maintains the lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
     - content: "Virtual machines"
@@ -30,24 +31,25 @@ quiz:
       explanation: "Incorrect. Microsoft doesn't manage the virtual machines."
   - content: "Shannon wants to start migrating to Azure VMware Solution. What minimum number of nodes must Shannon have to get started?"
     choices:
-    - content: "3 nodes"
+    - content: "Three nodes"
       isCorrect: true
-      explanation: "Correct. The minimum number of nodes required in a cluster is 3."
-    - content: "24 nodes"
+      explanation: "Correct. The minimum number of nodes required in a cluster is three."
+    - content: "Twenty-four nodes"
       isCorrect: false
       explanation: "Incorrect. The minimum number of nodes required in a cluster is 3."
-    - content: "16 nodes"
+    - content: "Sixteen nodes"
       isCorrect: false
       explanation: "Incorrect. The maximum number of nodes in a cluster is 16."
-  - content: "What does the cloudAdmin role in the Azure VMware Solution vCenter do?"
+  - content: "What does the CloudAdmin role in the Azure VMware Solution vCenter Server do?"
     choices:
-    - content: "The local cloudadmin user sets up users in Active Directory."
+    - content: "The local CloudAdmin user sets up users in Active Directory."
       isCorrect: false
-      explanation: "Incorrect. The cloudadmin user is a member of the cloudAdmin role."
-    - content: "The cloudAdmin role creates and manages workloads in your private cloud."
+      explanation: "Incorrect. The CloudAdmin user is a member of the CloudAdmin role."
+    - content: "The CloudAdmin role creates and manages workloads in your private cloud."
       isCorrect: true
-      explanation: "Correct. The cloudAdmin role creates and manages workloads in your private cloud."
-    - content: "The cloudAdmin role has access to the ESXi hosts in Azure."
+      explanation: "Correct. The CloudAdmin role creates and manages workloads in your private cloud."
+    - content: "The CloudAdmin role has access to the ESXi hosts in Azure."
       isCorrect: false
-      explanation: "Incorrect. The cloudAdmin role doesn't have access to, and can't configure, specific management components that Microsoft supports and manages."
+      explanation: "Incorrect. The CloudAdmin role doesn't have access to, and can't configure, specific management components that Microsoft supports and manages."
   
+

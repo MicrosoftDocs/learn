@@ -29,7 +29,9 @@ Download the latest version of AzsReadinessChecker from the [PowerShell Gallery]
 
 You will need to have the Az PowerShell modules installed.
 
-### Azure Active Directory (AAD) environment
+<a name='azure-active-directory-aad-environment'></a>
+
+### Microsoft Entra environment
 
  -  Identify the username and password for an account that's an owner for the Azure subscription you'll use with Azure Stack Hub.
  -  Identify the subscription ID for the Azure subscription you'll use.
@@ -59,7 +61,7 @@ You will need to have the Az PowerShell modules installed.
     
     ```
 
-4.  From the PowerShell prompt, run the following command to start validation of your subscription. Provide your Azure AD administrator and your Azure AD tenant name:
+4.  From the PowerShell prompt, run the following command to start validation of your subscription. Provide your Microsoft Entra administrator and your Microsoft Entra tenant name:
     
     ```
     Invoke-AzsRegistrationValidation  -RegistrationSubscriptionID $subscriptionID

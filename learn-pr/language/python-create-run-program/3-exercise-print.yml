@@ -4,12 +4,14 @@ title: Exercise - Work with output
 metadata:
   title: Exercise - Work with output
   description: In this exercise, you'll learn how to show information on the console.
-  ms.date: 04/01/2022
+  ms.date: 01/19/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen, devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.custom:
+    - team=nextgen
+    - devdivchpfy22
+    - devx-track-python
+  ms.topic: unit
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/3-exercise-print.ipynb

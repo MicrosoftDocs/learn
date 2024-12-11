@@ -2,13 +2,14 @@
 uid: learn.wwl.design-data-integration.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 03/14/2023
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 1

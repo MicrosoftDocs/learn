@@ -1,22 +1,20 @@
-DLP policies and rules contained within those policies **are processed in a specific order**. This process is called **policy precedence**. You can manually configure the order in which this rule will be selected for evaluation. The rules of DLP policy with the lowest order/priority number are processed first. By default, the first rule is configured as priority "0", the next one as "1", and so on.
+DLP policies and the rules within them follow a specific order called **policy precedence**. You can manually configure the order in which rules are evaluated. Lower priority numbers are processed first, with the default rule assigned a priority of 0 and subsequent rules assigned higher numbers sequentially.
 
-All possible matches of policies are still recorded in the audit logs and visible in the DLP reports, even though only one DLP policy and their rule is enforced. DLP policies also provide an option to prevent processing of more policies when a match has been made.
+Even though only one DLP policy and its corresponding rule are enforced, all potential matches of policies are still logged in the audit logs and can be seen in DLP reports. DLP policies also provide an option to prevent processing of more policies once a match has been made.
 
-The configured actions for certain condition matches can oppose each other. For example, you configure a DLP policy that blocks external sharing of personal data, without override allowed, and another policy for financial data, which allows override by end users. If only the last matching policy was applied, instead of taking the priority of a policy into account, then a user could hide personal data inside an email that also includes financial data and select the override encoded into the financial data policy to bypass the block action of the personal data policy. However, since the personal data policy should have a higher priority it will be applied instead.
+The configured actions for certain condition matches can conflict with each other. Let's consider an example to understand this better. You configure a DLP policy that blocks external sharing of personal data without any possibility of override. You configure another policy for financial data that allows end users to override it. If the system only applied the last policy that matches the conditions, without considering the priority of each policy, a user could potentially hide personal data within an email that also contains financial data. They could then select the override option provided by the financial data policy to bypass the block action set by the personal data policy. To prevent this scenario, the personal data policy, which should have a higher priority, is applied instead, ensuring that the block action takes precedence over any potential overrides.
 
 ## Changing rule priority
 
-If the financial data policy from the example above was ordered so a rule for a high volume of matches was prioritized below a rule for a low number of matches, even though a high number of matches is more restrictive, the user could still select the override that is allowed in the low matches rule and send out protected data. Even though both actions will be logged it could still take time to notice the behavior and take appropriate actions.
+Suppose we take the financial data policy example mentioned earlier. Let's arrange it in such a way that a rule with a high volume of matches is given lower priority compared to a rule with a low number of matches. Even though a high number of matches is more restrictive, the user can still override the allowed action specified in the rule with low matches and share protected data. Although both actions are logged, it might take some time to notice this behavior and take appropriate actions.
 
 To change the order in which the DLP rules inside a policy are prioritized, you need the DLP Compliance Management role and follow these steps:
 
-1. In the Microsoft Purview compliance portal, select **Policies**.
+1. In the Microsoft Purview compliance portal, expand **Data loss prevention** then select **Policies**.
 
-1. Expand **Data** and select **Data loss prevention**.
+1. Select the policy you want to modify, select **Edit policy**.
 
-1. Navigate to the **Policies** tab and select the policy you want to modify, select **edit policy**.
-
-1. Select **Next** twice to reach the **Customize Advanced DLP rules** dialog.
+1. Select **Next** until you reach the **Customize Advanced DLP rules** page.
 
 1. Select **Edit** behind the name of the low volume rule you want to change in the priority order.
 
@@ -26,14 +24,13 @@ To change the order in which the DLP rules inside a policy are prioritized, you 
 
 ```powershell
 Set-DLPComplianceRule -Identity "Low Volume of Financial Data" -Priority 0
-
 ```
 
 ## Change policy priority
 
 When you create more than one DLP policy, you can change the priority (or order). For example, if you have a personal data DLP policy and another financial data DLP policy and you want the personal data DLP policy to take precedence, follow these steps.
 
-1. In the Microsoft Purview compliance portal, select **Policies** then select **Data loss prevention**.
+1. In the Microsoft Purview compliance portal, expand **Data loss prevention** then select **Policies**.
 
 1. Select the **three vertical dots** behind the name of the personal data policy.
 
@@ -43,7 +40,6 @@ When you create more than one DLP policy, you can change the priority (or order)
 
 ```powershell
 Set-DLPCompliancePolicy -Identity "EU Financial Data Policy" -Priority 1
-
 ```
 
-It's prudent to prioritize policies with less restrictive actions below more restrictive policies. Also, rules with less restrictive actions should be prioritized below more restrictive rules to prevent the less restrictive rules from overwriting any block actions of the more restrictive rules and policies.
+It's important to prioritize policies and rules  with less restrictive actions over those that are stricter. This way, we can avoid situations where the less restrictive rules end up overwriting the actions of the more restrictive ones.

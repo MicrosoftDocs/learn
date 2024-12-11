@@ -2,15 +2,19 @@
 uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: "Introduction"
-  ms.date: 11/11/2022
+  description: Introduction
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

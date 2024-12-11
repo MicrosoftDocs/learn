@@ -1,0 +1,7 @@
+Azure Kubernetes Service Edge Essentials is an on-premises Kubernetes implementation of Azure Kubernetes Service (AKS) that automates running containerized applications at scale.
+
+Suppose you work at a retail grocery store as the IoT expert. Your company found that implementing autodetection of fruits and vegetables to support faster self-checkout differentiates their stores from competitors. Your company wants to provide an efficient shopping experience for their customers, and needs a solution to incorporate software that is able to ingest, process and manage multiple camera streams at once, while making it secure and reliable. You’ve been asked to enable device environment capabilities that are capable of core services like governance, monitoring, application, machine learning, and data services. Your current team currently has no IoT project experience.
+
+In this module, you determine when to use AKS Edge Essentials to automate and run your containerized applications. You then describe how AKS Edge Essentials uses Windows IoT Enterprise to deploy a lightweight Kubernetes platform, and assess the opportunities it can create for your business.
+
+After you complete this module, you'll be able to evaluate whether AKS Edge Essentials is appropriate to automate and run your containerized applications, and describe how AKS Edge Essentials provide cloud-native best practices to your edge application, by using a lightweight Kubernetes platform with a small footprint and simple installation experience.

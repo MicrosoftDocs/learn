@@ -1,9 +1,8 @@
 You're finally ready to test your complete AI model! Let's see how well your model can predict the correct rock type.
 
-We start by telling the computer to select five images by random for the first test. You can choose any number of images to test. After the first test, we'll run the code again with more images.
+We start by telling the computer to select five images at random for the first test. You can choose any number of images to test. After the first test, we'll run the code again with more images.
 
 We use the data from the `trainloader` variable again, and pass each image to our functions to extract rock features from the photo. The computer compares the features to the patterns recognized by the model. With that information, the model predicts the type of rock in the photo. The last step is to use the `plt` function to plot a graph of our prediction results.
-
 
 ## Predict rock types in random images
 
@@ -42,7 +41,6 @@ Follow these steps to test the prediction accuracy of the neural network in your
 
    :::image type="content" source="../media/test-model-prediction-accuracy.png" alt-text="Screenshot of the Jupyter Notebook file code and cell run output in Visual Studio Code."  loc-scope="Azure":::
 
-
 1. Try another test. In the cell that you added in the previous step, change the number of images to test to **10**, and then run the cell again:
 
    ```python
@@ -53,9 +51,8 @@ Follow these steps to test the prediction accuracy of the neural network in your
 
    Do you notice any improvement in the accuracy?
 
-1. Enter Ctrl + S to save the changes to your Jupyter Notebook file.
+1. Press **Ctrl** + **S** to save the changes to your Jupyter Notebook file.
 
+Congratulations! You've successfully built a working neural network to predict the type of an object in an image. You have an AI model that classifies types of Moon rocks collected by NASA.
 
-Congratulations! You've successfully built a working neural network to predict the type of an object in an image. You have an AI model that classifies types of Moon rocks collected by NASA. 
-
-Artificial intelligence combines large amounts of data with creative ways of understanding, classifying, and contextualizing. Scientists use AI to help improve their analysis and reach correct conclusions. If you have the opportunity to become an expert on space rocks, you can learn how to classify images of rocks, eventually. When you use AI in your research, you gain from the expertise of scientists who have already been to the Moon, and back!
+Artificial intelligence combines large amounts of data with creative ways of understanding, classifying, and contextualizing. Scientists use AI to help improve their analysis and reach correct conclusions. If you have the opportunity to become an expert on space rocks, you can learn how to classify images of rocks, eventually. When you use AI in your research, you gain from the expertise of scientists who have already been to the Moon and back!

@@ -1,19 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-text-with-text-analytics-service
 metadata:
-  title: Analyze text with the Language service
-  description: "Analyze text with the Language service"
-  ms.date: 01/27/2023
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Fundamentals of Text Analysis with the Language Service
+  description: "Explore text analysis with Azure AI Language service."
+  ms.date: 10/17/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Analyze text with the Language service
-summary: Explore text mining and text analysis with the Language service's Natural Language Processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
-abstract: |
-  Learn how to use the Language service for text analysis
-prerequisites: |
-  Ability to navigate the Azure portal
+  ms.topic: module
+  ms.collection: wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: azure-ai-language
+  ai-usage: human-only
+title: Fundamentals of Text Analysis with the Language Service
+summary: Explore Azure AI Language's natural language processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
+abstract: Learn how to use Azure AI Language for text analysis
+prerequisites: Ability to navigate the Azure portal
 iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg
 levels:
 - beginner
@@ -24,11 +28,12 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - natural-language-processing
 units:
 - learn.wwl.analyze-text-with-text-analytics-service.introduction
+- learn.wwl.analyze-text-with-text-analytics-service.understand-text-analytics
 - learn.wwl.analyze-text-with-text-analytics-service.get-started-azure
 - learn.wwl.analyze-text-with-text-analytics-service.exercise
 - learn.wwl.analyze-text-with-text-analytics-service.knowledge-check

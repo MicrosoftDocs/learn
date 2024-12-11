@@ -75,7 +75,7 @@ To scan your data source, you'll need to configure an authentication method in t
 
 - **System-assigned managed identity (recommended) –** This is an identity associated directly with your Microsoft Purview account that allows you to authenticate directly with other Azure resources without needing to manage a go-between user or credential set. The system-assigned managed identity is created when your Microsoft Purview resource is created, is managed by Azure, and uses your Microsoft Purview account's name. The system-assigned managed identity can't currently be used with a self-hosted integration runtime for Azure SQL.
 
-- **User-assigned managed identity (preview) –** Similar to system-assigned managed identity, a user-assigned managed identity is a credential resource that allows Microsoft Purview to authenticate against Azure Active Directory. The user-assigned managed by users in Azure, rather than by Azure itself, which gives you more control over security. The user-assigned managed identity can't currently be used with a self-hosted integration runtime for Azure SQL. For more information, see our guide for user-assigned managed identities.
+- **User-assigned managed identity (preview) –** Similar to system-assigned managed identity, a user-assigned managed identity is a credential resource that allows Microsoft Purview to authenticate against Microsoft Entra ID. The user-assigned managed by users in Azure, rather than by Azure itself, which gives you more control over security. The user-assigned managed identity can't currently be used with a self-hosted integration runtime for Azure SQL. For more information, see our guide for user-assigned managed identities.
 
 - **Service Principal –** A service principal is an application that can be assigned permissions like any other group or user, without being associated directly with a person. Their authentication has an expiration date, and so can be useful for temporary projects.
 
@@ -96,7 +96,7 @@ It's required to register the data source in Microsoft Purview before setting up
 
     :::image type="content" source="../media/dp-3300-module-33-lab-55-1.png" alt-text="Screenshot of the Open Microsoft Purview governance portal.":::
 
-1. Create the collection hierarchy using the **Collections** menu, and assign permissions to individual subcollections, as required.
+1. Select **Data Map** > **Collections** from the left pane to open collection management page. Create the collection hierarchy using the **Collections** menu, and assign permissions to individual sub-collections, as required.
  
     :::image type="content" source="../media/dp-3300-module-33-lab-44.png" alt-text="Screenshot that shows the collection menu to assign access control permissions to the collection hierarchy.":::
 
@@ -212,7 +212,7 @@ Microsoft Purview supports data lineage from Azure SQL Database. At the time of 
 
 1. Follow steps under authentication for a scan using Managed Identity section to authorize Microsoft Purview scan your Azure SQL Database.
 
-1. Sign in to Azure SQL Database with Azure AD account and assign proper permission (for example: **db_owner**) to Purview Managed identity. Use below example SQL syntax to create user and grant permission by replacing *purview-account* with your account name.
+1. Sign in to Azure SQL Database with Microsoft Entra account and assign proper permission (for example: **db_owner**) to Purview Managed identity. Use below example SQL syntax to create user and grant permission by replacing *purview-account* with your account name.
 
     ```sql
     CREATE user <purview-account> FROM EXTERNAL PROVIDER

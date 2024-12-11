@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.adopt-finops-on-azure.manage-finops-practice
+title: Manage the FinOps practice
+metadata:
+  title: Manage the FinOps practice
+  description: Learn how to manage the FinOps practice.
+  ms.date: 05/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 80
+content: |
+  [!include[](includes/5-manage-finops-practice.md)]

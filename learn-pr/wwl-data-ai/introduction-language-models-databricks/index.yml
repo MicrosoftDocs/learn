@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-language-models-databricks
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Get started with language models in Azure Databricks
+  description: Get started with language models in Azure Databricks
+  ms.date: 08/12/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure
+  ai-usage: ai-assisted
+  ms.custom: ai-learning-hub
+title: Get started with language models in Azure Databricks
+summary: Large Language Models (LLMs) have revolutionized various industries by enabling advanced natural language processing (NLP) capabilities. These language models are utilized in a wide array of applications, including text summarization, sentiment analysis, language translation, zero-shot classification, and few-shot learning. 
+abstract: |
+  In this module, you learn how to:
+  - Describe Generative AI.
+  - Describe Large Language Models (LLMs).
+  - Identify key components of LLM applications.
+  - Use LLMs for Natural Language Processing (NLP) tasks.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/describe-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.introduction-language-models-databricks.introduction
+- learn.wwl.introduction-language-models-databricks.what-is-generative-ai
+- learn.wwl.introduction-language-models-databricks.what-are-large-language-models
+- learn.wwl.introduction-language-models-databricks.key-components-llms
+- learn.wwl.introduction-language-models-databricks.use-llms
+- learn.wwl.introduction-language-models-databricks.exercise
+- learn.wwl.introduction-language-models-databricks.knowledge-check
+- learn.wwl.introduction-language-models-databricks.summary
+badge:
+  uid: learn.wwl.introduction-language-models-databricks.badge
+

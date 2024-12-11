@@ -2,13 +2,17 @@
 uid: learn.wwl.mlflow-azure-databricks.capabilities-of-mlflow
 title: Capabilities of MLflow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Capabilities of MLflow
-  description: "Capabilities of MLflow"
-  ms.date: 03/22/2023
+  description: Capabilities of MLflow
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.author: madiepev
+  ms.date: 08/26/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/2-capabilities-of-mlflow.md)]
+

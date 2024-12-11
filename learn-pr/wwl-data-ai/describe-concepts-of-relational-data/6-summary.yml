@@ -2,16 +2,16 @@
 uid: learn.wwl.describe-concepts-of-relational-data.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 09/13/2021
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-sandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

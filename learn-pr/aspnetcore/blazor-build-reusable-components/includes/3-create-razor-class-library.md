@@ -9,7 +9,7 @@ In this exercise, you'll create a modal dialog in a Razor class library that you
 To begin, create the Razor class library project for a modal dialog component. You can use Visual Studio to create a new project, or you can create the project in a new folder with the .NET command-line tool, as shown here:
 
 ```dotnetcli
-dotnet new razorclasslib -o FirstClassLibrary -f net6.0
+dotnet new razorclasslib -o FirstClassLibrary -f net8.0
 ```
 
 ## Build the modal dialog component
@@ -71,7 +71,7 @@ Next, build the modal component in your project with an appropriate CSS file to 
     * **Cancel** and **Confirm** buttons, with labels you can configure and click events you can manage.
     * You can set the inner content of the component through the `ChildContent` parameter.
     * You can control the display state of the dialog with the `Show` parameter.
-    
+
 1. To provide default formatting for the component, add the following CSS to the *Modal.razor.css* file:
 
     ```css
@@ -150,33 +150,33 @@ Next, build the modal component in your project with an appropriate CSS file to 
     }
     ```
 
-    This Markup gives some default coloring to a title bar and button bar at the bottom, making it more interesting than a simple set of gray-colored HTML elements.
+This Markup gives some default coloring to a title bar and button bar at the bottom, making it more interesting than a simple set of gray-colored HTML elements.
 
 ## Reference and use the modal component
 
 With the modal component now residing in the *FirstClassLibrary* project, add a new Blazor server application and start using the modal component. 
 
-1. Create a new Blazor server project called *MyBlazorServer* in a folder next to the *FirstClassLibrary* project either by using the Visual Studio Add New Project feature or by running the following command:
+1. Create a new Blazor server project called *MyBlazorApp* in a folder next to the *FirstClassLibrary* project either by using the Visual Studio Add New Project feature or by running the following command:
 
     ```dotnetcli
-    dotnet new blazorserver -o MyBlazorServer -f net6.0
+    dotnet new blazor -o MyBlazorApp -f net8.0
     ```
 
-1. In the *MyBlazorServer* project, add a reference to the *FirstClassLibrary* project either by using the Visual Studio Add Reference feature or by running the following command from the *MyBlazorServer* folder:
+1. In the *MyBlazorApp* project, add a reference to the *FirstClassLibrary* project either by using the Visual Studio Add Reference feature or by running the following command from the *MyBlazorApp* folder:
 
     ```dotnetcli
     dotnet add reference ../FirstClassLibrary
     ```
 
-    With this project reference in place, the *MyBlazorServer* application can interact with the components in the *FirstClassLibrary* project.
+With this project reference in place, the *MyBlazorApp* application can interact with the components in the *FirstClassLibrary* project.
 
-1. Make it easier to reference the modal component by adding an entry to the end of the *_Imports.razor* file in the *MyBlazorServer* application. By doing so, you can reference the modal component without having to specify the entire namespace for the component.
+1. Make it easier to reference the modal component by adding an entry to the end of the *_Imports.razor* file in the *Components* folder of the *MyBlazorApp* application. By doing so, you can reference the modal component without having to specify the entire namespace for the component.
 
     ```dotnetcli
     @using FirstClassLibrary
     ```
 
-1. Add a modal component to the opening page of this application.
+1. Add a modal component to the opening page of this application, the *Components/Pages/Home.razor* file
 
     ```razor
     <Modal Title="My first Modal dialog" Show="true">
@@ -191,6 +191,6 @@ With the modal component now residing in the *FirstClassLibrary* project, add a 
 
 ## Check your work
 
-Open the *MyBlazorServer* application in your browser. The **My first Modal dialog** dialog should be displayed in front of the rest of the content on the screen.
+Start the *MyBlazorApp* application with `dotnet run` and navigate to it in your browser. The **My first Modal dialog** dialog should be displayed in front of the rest of the content on the screen.
 
 ![Screenshot of the modal dialog you've just created in the standard Blazor template application.](../media/first-modal.png)

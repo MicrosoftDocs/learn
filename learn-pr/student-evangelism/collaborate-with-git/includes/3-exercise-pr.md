@@ -5,7 +5,7 @@ pwd
 
 ```
 
-Right now, there's nothing for Alice to pull because you haven't made any changes since Alice cloned the repo. You can prove that by using the following command, which shows the output `Already up-to-date`:
+Right now, there's nothing for Alice to pull because you haven't made any changes since Alice cloned the repo. You can prove that by using the following command, which shows the output `Already up to date`:
 
 ```bash
 git pull
@@ -108,7 +108,7 @@ Because your project directory and the *Alice* directory are on the same compute
 
     ```
 
-    Notice that you have to specify a branch, `main`, in the pull command. You will learn in the next lesson how to set up an upstream URL for the branch.
+    Notice that you have to specify a branch, `main`, in the pull command. You'll learn in the next lesson how to set up an upstream URL for the branch.
 
 1. Check the output. You should see output like this example, which shows that you successfully completed the pull request:
 

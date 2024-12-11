@@ -1,4 +1,3 @@
-
 Organizations can use Intune to manage large numbers of mobile devices with a single user account. The device enrollment manager (DEM) account is a special user account that can enroll up to 1,000 devices. Organizations can use Intune to manage large numbers of mobile devices with a single user account. You add existing users to the DEM account to give them the special DEM options. Each enrolled device uses a single license. A DEM account is useful for scenarios where devices are enrolled and prepared before handing them out to the users of the devices. The DEM would enroll the device, log on to the company portal and install the apps required by the user. If the user requires individual configuration such as e-mail profiles, then the user should enroll the device themselves, and DEM shouldn't be used.
 
 Users must exist in the Azure portal to be added as device enrollment managers. For optimal security, the DEM user shouldn't also be an Intune admin. The DEM enrollment method can't be used with these other enrollment methods: Apple Configurator with Setup Assistant, Apple Configurator with direct enrollment, Apple School Manager (ASM), or Device Enrollment Program (DEP).
@@ -9,7 +8,7 @@ A restaurant wants to provide 50 point-of-sale tablets for its wait staff, and o
 
 ### What can a device enrollment manager do?
 
-Only users in Azure AD can be added as a device enrollment manager.
+Only users in Microsoft Entra ID can be added as a device enrollment manager.
 
 The DEM user can:
 
@@ -32,13 +31,13 @@ Devices that are enrolled with a device enrollment manager account have the foll
 
 ### Add a device enrollment manager
 
-1.  Sign in to **Endpoint Manager admin center** located at https://endpoint.microsoft.com.
+1.  Sign in to **Microsoft Intune admin center** located at https://intune.microsoft.com.
 2.  In the left navigation, select **Devices** \- **Enroll devices** \- **Device enrollment managers**.
 3.  Select **Add**. On the **Add User** panel, enter a user principal name for the DEM user, and select **Add**. The DEM user is added to the list of DEM users.
 
 ### Permissions for DEM
 
-Global or Intune Service Administrator Azure AD roles are required to:
+Global or Intune Service Administrator Microsoft Entra roles are required to:
 
  -  Complete tasks that are related to DEM enrollment in the Admin Portal
  -  Access all DEM users despite role-based access control (RBAC) permissions being listed and available under the custom User role

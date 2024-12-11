@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.iot.build-azure-digital-twins-solution
+title: Build out an Azure Digital Twins solution
+metadata:
+  title: Build out an Azure Digital Twins solution
+  description: Learn how to build an IoT solution with Azure Digital Twins, a platform for digitally representing physical connected environments.
+  ms.date: 09/07/2023
+  author: baanders
+  ms.author: baanders
+  ms.topic: learning-path
+summary: >
+  Learn about the Azure Digital Twins platform for IoT. This learning path will teach you what Azure Digital Twins is and how it works, with hands-on exercises to practice building out a data-driven Azure Digital Twins solution.
+prerequisites:  |
+  - Beginner level experience with IoT concepts such as devices and event data
+  - To complete hands-on exercises: An [Azure subscription](https://azure.microsoft.com/free), and permission to manage access to Azure resources in the subscription
+iconUrl: /training/achievements/build-out-an-azure-digital-twins-solution.svg
+levels:
+  - beginner
+  - intermediate
+roles:
+- service-adoption-specialist
+- administrator
+- data-engineer
+- developer
+- solution-architect
+products: 
+  - azure
+  - azure-iot
+  - azure-digital-twins
+subjects:
+  - iot
+  - cloud-computing
+modules:
+  - learn.iot.introduction-to-azure-digital-twins
+  - learn.iot.explore-azure-digital-twins-api-for-creating-a-graph
+  - learn.iot.synchronize-azure-digital-twins-with-iot-device-data
+trophy:
+  uid: learn.iot.build-azure-digital-twins-solution.trophy

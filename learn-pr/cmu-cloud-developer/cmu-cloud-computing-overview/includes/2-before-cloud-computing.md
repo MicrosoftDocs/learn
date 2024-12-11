@@ -32,7 +32,7 @@ The late 90s marked a steady increase in the adoption of these computing applica
 
 _Figure 2: Compare traditional and internet-scale computing_
 
-The 21st century has been marked by an explosion in the volume and capacity of wireless communications, the World Wide Web, and the internet. These changes have led to a network-driven and data-driven society, where producing, disseminating, and accessing digitized information is simplified. The internet is estimated to have created a global marketplace of billions of users, up from 25 million in 1994.<sup>[1][^1]</sup> This rise in data and connections is valuable to businesses. Data creates value in several ways, including by enabling experimentation, segmenting populations, and supporting decision-making with automation.<sup>[2][^2]</sup> By embracing digital technologies, the world's top 10 economies are expected to increase their output by over a trillion dollars by 2020.<sup>[3][^3]</sup>
+The 21st century has been marked by an explosion in the volume and capacity of wireless communications, the World Wide Web, and the internet. These changes have led to a network-driven and data-driven society, where producing, disseminating, and accessing digitized information is simplified. The internet is estimated to have created a global marketplace of billions of users, up from 25 million in 1994.<sup>[1][^1]</sup> This rise in data and connections is valuable to businesses. Data creates value in several ways, including by enabling experimentation, segmenting populations, and supporting decision-making with automation.<sup>[2][^2]</sup> By embracing digital technologies, the world's top 10 economies are expected to increase their output by over a trillion dollars by 2020.
 
 The increasing number of connections enabled by the internet has also driven its value. Researchers have hypothesized that the value of a network varies superlinearly as a function of the number of users. Thus, at internet scale, gaining and retaining customers is a priority. This is done by building reliable and responsive services, and making changes based on observed data patterns.
 
@@ -87,18 +87,16 @@ Later in this module, we cover how the cloud evolved to make computing a public 
 
 1. _Real Time Statistics Project (2015). [Internet Live Stats](https://www.internetlivestats.com/)_
 2. _IBM (2017). [What is Big Data?](https://developer.ibm.com/dwblog/2017/what-is-big-data-insight/)_
-3. _Accenture (2015). [Increased Use of Digital Technologies Could Add $1.36 Trillion to World's Top 10 Economies in 2020](https://newsroom.accenture.com/subjects/strategy/increased-use-of-digital-technologies-could-add-over-1-trillion-dollars-to-worlds-top-10-economies-in-2020-according-to-new-study-from-accenture.htm)_
 4. _Google Inc. (2015). [How Search Works](https://www.google.com/insidesearch/howsearchworks/thestory/)_
 5. _Hilbert, Martin and Lopez, Priscila (2011). [The world's technological capacity to store, communicate, and compute information](https://science.sciencemag.org/content/332/6025/60)_
-6. _Hamilton, James R and others (2007). [On Designing and Deploying Internet-Scale Services](http://highscalability.com/paper-designing-and-deploying-internet-scale-services)_
+6. _Hamilton, James R and others (2007). [On Designing and Deploying Internet-Scale Services](https://highscalability.com/paper-on-designing-and-deploying-internet-scale-services/)_
 7. _Brewer, Eric and others (2001). [Lessons from giant-scale services](https://people.eecs.berkeley.edu/~brewer/Giant.pdf)_
 
 ***
 
 [^1]: <https://www.internetlivestats.com/> "*Real Time Statistics Project* (2015)"
 [^2]: <https://developer.ibm.com/dwblog/2017/what-is-big-data-insight/> "IBM (2017). *What is Big Data?*"
-[^3]: <https://newsroom.accenture.com/subjects/strategy/increased-use-of-digital-technologies-could-add-over-1-trillion-dollars-to-worlds-top-10-economies-in-2020-according-to-new-study-from-accenture.htm> "Accenture (2015). *Increased Use of Digital Technologies Could Add $1.36 Trillion to World's Top 10 Economies in 2020*"
 [^4]: <https://www.google.com/insidesearch/howsearchworks/thestory/> "Google Inc. (2015). *How Search Works*"
 [^5]: <https://science.sciencemag.org/content/332/6025/60> "Hilbert, Martin and Lopez, Priscila (2011). *The world's technological capacity to store, communicate, and compute information*" 
-[^6]: <http://highscalability.com/paper-designing-and-deploying-internet-scale-services> "Hamilton, James R and others (2007). *On Designing and Deploying Internet-Scale Services*" 
+[^6]: <https://highscalability.com/paper-on-designing-and-deploying-internet-scale-services/> "Hamilton, James R and others (2007). *On Designing and Deploying Internet-Scale Services*" 
 [^7]: <https://people.eecs.berkeley.edu/~brewer/Giant.pdf> "Brewer, Eric and others (2001). *Lessons from giant-scale services*" 

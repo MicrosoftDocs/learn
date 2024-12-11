@@ -2,7 +2,15 @@ Azure Architects understand how to design solutions to back up their data and su
 
 In this module, you learned how to select appropriate backup solutions for Azure workloads. You also reviewed how to select appropriate disaster recovery options for these workloads. You explored backup and recovery options for Azure files, blobs, virtual machines, and SQL databases. You examined how to design solutions for several Azure services, including Azure Backup and Azure Site Recovery.
 
-## Learn more
+## Learn more with Copilot
+
+Copilot can assist you in designing Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot. 
+
+- What Azure backup and recovery services are available for virtual machine workloads? What should I consider when deciding among the choices?
+
+- What backup options are available for Azure SQL database? Provide when to use each option. 
+
+## Learn more with documentation
 
 - Read more about [Azure file share backup](/azure/backup/azure-file-share-backup-overview).
 
@@ -13,8 +21,6 @@ In this module, you learned how to select appropriate backup solutions for Azure
 - Peruse [Azure Site Recovery documentation](/azure/site-recovery/).
 
 - Examine [Azure to Azure disaster recovery architecture](/azure/site-recovery/azure-to-azure-architecture).
-
-- Read about [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview).
 
 - Use [auto-failover groups to enable transparent and coordinated failover of multiple databases](/azure/azure-sql/database/auto-failover-group-overview).
 
@@ -34,7 +40,7 @@ In this module, you learned how to select appropriate backup solutions for Azure
 
 - Describe [high-availability and disaster-recovery strategies](/training/modules/describe-high-availability-disaster-recovery-strategies/).
 
-## Learn more with optional hands-on exercises
+## Learn more with optional practical exercises
 
 - Back up and restore [your Azure SQL database (sandbox)](/training/modules/backup-restore-azure-sql/).
 

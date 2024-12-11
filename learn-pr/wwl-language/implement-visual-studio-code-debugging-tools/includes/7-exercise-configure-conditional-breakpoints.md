@@ -1,11 +1,7 @@
-
-
-
-
 The C# debugger for Visual Studio Code supports the option to configure a breakpoint that only triggers if a condition is met. This type of breakpoint is called a conditional breakpoint. Conditional breakpoints can be configured directly or by editing an existing breakpoint.
 
 > [!NOTE]
-> Visual Studio Code also supports a conditional breakpoint that triggers based on the number of times the breakpoint has been "hit". The C# debugger does not support Hitcount breakpoints at this time.
+> Visual Studio Code also supports a conditional breakpoint that triggers based on the number of times the breakpoint has been "hit".
 
 Suppose you're debugging an application that processes product information in a multidimensional string array. The array includes thousands of data points. The problem that you're debugging seems to occur for products that are marked as `new`. Your code processes the array inside a `for` loop. You need to set a breakpoint inside the loop, but you only want to pause when products are `new`.
 
@@ -157,7 +153,7 @@ A standard breakpoint is great for walking through a data processing application
 
 1. Take a moment to consider the advantage that conditional breakpoints offer.
 
-    In this simulated data processing scenario, there is about a 1% chance that a product is `new`. If you're using a standard breakpoint to debug the issue, you'ld need to walk through the analysis of about 100 products to find one of the `new` products that you're interested in.
+    In this simulated data processing scenario, there is about a 1% chance that a product is `new`. If you're using a standard breakpoint to debug the issue, you'd need to walk through the analysis of about 100 products to find one of the `new` products that you're interested in.
 
     Conditional breakpoints can save you lots of time when you're debugging an application.
 

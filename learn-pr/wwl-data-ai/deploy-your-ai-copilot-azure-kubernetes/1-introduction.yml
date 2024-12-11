@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-your-ai-copilot-azure-kubernetes.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 11/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

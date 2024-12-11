@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-devops-aspnet-core.exercise-create-github-action-build-container-images
+metadata:
+  title: Exercise - Create a GitHub action to build a container image
+  description: Set up the permissions and secrets that GitHub Actions needs.
+  ms.date: 12/11/2023
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: unit
+title: Exercise - Create a GitHub action to build a container image
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-exercise-create-github-action-build-container-images.md)]

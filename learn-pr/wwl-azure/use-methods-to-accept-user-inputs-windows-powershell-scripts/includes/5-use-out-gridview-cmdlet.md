@@ -18,3 +18,4 @@ To retain more control over the amount of data that users can select, you can us
 
 > [!NOTE]
 > Because users aren't forced to select a row in the **Out-GridView** window, you must ensure that your script properly handles the scenario where a row isn't selected.
+

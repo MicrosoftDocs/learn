@@ -3,14 +3,13 @@ uid: learn.wwl.build-first-html-webpage.understand-terminology
 title: Understand terminology
 metadata:
   title: Understand terminology
-  description: "Understand terminology"
-  ms.date: 03/01/2023
+  description: "Learn some core terminology you'll need to understand when writing code to create a web page."
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-terminology.md)]

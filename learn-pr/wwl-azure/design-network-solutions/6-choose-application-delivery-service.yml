@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-network-solutions.choose-application-delivery-service
+title: Choose an application delivery service
+metadata:
+  title: Choose an application delivery service
+  description: "Choose an application delivery service"
+  ms.date: 12/09/2024
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-choose-application-delivery-service.md)]

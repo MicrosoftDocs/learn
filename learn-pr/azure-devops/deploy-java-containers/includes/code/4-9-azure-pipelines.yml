@@ -1,6 +1,0 @@
-          - task: AzureWebAppContainer@1
-            displayName: Update the web app with the new container
-            inputs:
-              appName: $(WebAppName)
-              azureSubscription: 'Azure Connection'
-              imageName: $(RegistryName)/$(webRepository):$(build.buildId)

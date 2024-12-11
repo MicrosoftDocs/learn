@@ -2,13 +2,15 @@
 uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 03/22/2023
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/15/2024
+  author: mattmcinnes
+  ms.author: mattmcinnes
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/summary.md)]
+

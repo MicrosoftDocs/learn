@@ -12,7 +12,7 @@ Let's reconsider our design for the Tailwind Traders product demo application, a
 
 - Event Grid distributes events from sources like Azure Blob Storage accounts and Azure Media Services.
 
-- Events are distributed to handlers like Azure Functions and Azure DevOps Webhooks.
+- Events are distributed to handlers like Azure functions and webhooks. 
 
 - The service manages the routing and delivery of events from many sources. The management helps to minimize cost and latency by eliminating the need for polling. 
 
@@ -30,7 +30,7 @@ The following illustration shows how Azure Event Grid manages the event process 
 
 - Event Grid forwards relevant events to subscribers.
 
-- Event Grid sends an event to indicate something has happened or changed. However, the actual object that was changed (text file, video, audio, and so on) isn't part of the event data. Instead, Event Grid passes a URL or identifier to reference the changed object.
+- Event Grid reacts when an event happens. However, the actual object that was changed (text file, video, audio, and so on) isn't part of the event data. Instead, Event Grid passes a URL or identifier to reference the changed object.
 
 ### Things to consider when using Azure Event Grid
 

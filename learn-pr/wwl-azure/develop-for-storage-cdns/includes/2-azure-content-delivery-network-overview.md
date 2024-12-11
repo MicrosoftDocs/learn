@@ -1,5 +1,4 @@
-
-Azure Content Delivery Network (CDN) offers developers a global solution for rapidly delivering high-bandwidth content to users by caching their content at strategically placed physical nodes across the world. Azure CDN can also accelerate dynamic content, which cannot be cached, by leveraging various network optimizations using CDN POPs. For example, route optimization to bypass Border Gateway Protocol (BGP).
+Azure Content Delivery Network (CDN) offers developers a global solution for rapidly delivering high-bandwidth content to users. It caches content at strategically placed physical nodes across the world. Azure CDN can also accelerate dynamic content, which can't be cached, by using various network optimizations using CDN POPs. For example, route optimization to bypass Border Gateway Protocol (BGP).
 
 The benefits of using Azure CDN to deliver web site assets include:
 
@@ -9,7 +8,7 @@ The benefits of using Azure CDN to deliver web site assets include:
 
 ## How Azure Content Delivery Network works
 
-:::image type="content" source="../media/azure-content-delivery-network.png" alt-text="Image showing how Azure CDN operates, the steps shown in the image are explained below.":::
+:::image type="content" source="../media/azure-content-delivery-network.png" alt-text="Image showing how Azure CDN operates, the steps shown in the image are explained next.":::
 
 1.  A user (Alice) requests a file (also called an asset) by using a URL with a special domain name, such as `<endpoint name>.azureedge.net`. This name can be an endpoint hostname or a custom domain. The DNS routes the request to the best performing POP location, which is usually the POP that is geographically closest to the user.
 
@@ -19,13 +18,15 @@ The benefits of using Azure CDN to deliver web site assets include:
 
 4.  An edge server in the POP caches the file and returns the file to the original requestor (Alice). The file remains cached on the edge server in the POP until the time-to-live (TTL) specified by its HTTP headers expires. If the origin server didn't specify a TTL, the default TTL is seven days.
 
-5.  Additional users can then request the same file by using the same URL that Alice used, and can also be directed to the same POP.
+5.  Other users can then request the same file by using the same URL that Alice used, and can also be directed to the same POP.
 
 6.  If the TTL for the file hasn't expired, the POP edge server returns the file directly from the cache. This process results in a faster, more responsive user experience.
 
 ## Requirements
 
-To use Azure CDN you need to create at least one CDN profile, which is a collection of CDN endpoints. Every CDN endpoint represents a specific configuration of content deliver behavior and access. To organize your CDN endpoints by internet domain, web application, or some other criteria, you can use multiple profiles. Because [Azure CDN pricing](https://azure.microsoft.com/pricing/details/cdn/) is applied at the CDN profile level, you must create multiple CDN profiles if you want to use a mix of pricing tiers.
+*   To use Azure Content Delivery Network, you must own at least one Azure subscription.
+*   You also need to create a content delivery network profile, which is a collection of content delivery network endpoints. Every content delivery network endpoint is a specific configuration which users can customize with required content delivery behavior and access. To organize your content delivery network endpoints by internet domain, web application, or some other criteria, you can use multiple profiles.
+*   Since [Azure Content Delivery Network pricing](https://azure.microsoft.com/pricing/details/cdn/) gets applied at the content delivery network profile level. If you want to use a mix of pricing tiers you must create multiple content delivery network profiles.
 
 ### Limitations
 

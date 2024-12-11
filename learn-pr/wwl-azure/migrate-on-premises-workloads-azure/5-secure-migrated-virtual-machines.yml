@@ -2,13 +2,14 @@
 uid: learn.wwl.migrate-onpremises-workloads-azure.secure-migrated-vms
 title: Secure migrated virtual machines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure migrated virtual machines
   description: "Secure migrated virtual machines"
   ms.date: 05/17/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 7
 content: |

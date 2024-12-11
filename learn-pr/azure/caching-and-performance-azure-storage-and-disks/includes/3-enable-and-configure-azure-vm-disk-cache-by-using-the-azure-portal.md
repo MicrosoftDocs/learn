@@ -1,19 +1,19 @@
-We've seen settings and properties you can select to predict your disk performance. Now, let's look at ways to improve that through *caching*.
+We saw the settings and properties you can select to predict your disk performance. Now, let's look at ways to improve that through *caching*.
 
 ## Disk caching
 
-A cache is a specialized component that stores data, typically in memory, so that it can be accessed more quickly. The data in a cache is often data that has been read previously, or data that resulted from an earlier calculation. The goal is to access data faster than getting it from the disk.
+A cache is a specialized component that stores data, typically in memory, so that it can be accessed more quickly. The data in a cache is often data that was read previously, or data that resulted from an earlier calculation. The goal is to access data faster than getting it from the disk.
 
-Caching uses specialized (and sometimes expensive) temporary storage that has faster read and write performance than permanent storage. Because cache storage is often limited, you need to make decisions as to what data operations will benefit most from caching. But even where the cache can be made widely available, such as in Azure, it's still important to know the workload patterns of each disk before deciding which caching type to use.
+Caching uses specialized (and sometimes expensive) temporary storage that has faster read and write performance than permanent storage. Because cache storage is often limited, you need to make decisions as to what data operations benefit most from caching. But even where the cache can be made widely available, such as in Azure, it's still important to know the workload patterns of each disk before deciding which caching type to use.
 
 **Read caching** tries to speed up data *retrieval*. Instead of reading from permanent storage, the data is read from the faster cache. Data reads hit the cache under the following conditions:
 
-- The data has been read before and exists in the cache.
+- The data was read previously and exists in the cache.
 - The cache is large enough to hold all the data.
 
-It's important to note that read caching helps when there is some *predictability* to the read queue, such as a set of sequential reads. For random I/O, where the data you're accessing is scattered across storage, caching will be of little or no benefit, and can even reduce disk performance.
+It's important to note that read caching helps when there's some *predictability* to the read queue, such as a set of sequential reads. For random I/O, where the data you're accessing is scattered across storage, caching is of little or no benefit, and can even reduce disk performance.
 
-**Write caching** tries to speed up *writing data* to persistent storage. By using a write cache, the app can consider the data to be saved. In reality, the data is queued in a cache, waiting to be written to a disk. As you can imagine, this mechanism can be a potential point of failure, such as when a system shuts down before the cached data is written. Some systems, such as SQL Server, handle writing cached data to persistent disk storage themselves.
+**Write caching** tries to speed up *writing data* to persistent storage. When an app uses a write cache, it can consider the data to be saved. In reality, the data is queued in a cache, waiting to be written to a disk. As you can imagine, this mechanism can be a potential point of failure, such as when a system shuts down before the cached data is written. Some systems, such as SQL Server, handle writing cached data to persistent disk storage themselves.
 
 ### Azure disk caching
 
@@ -24,7 +24,9 @@ There are two types of disk caching that concern disk storage:
 
 Azure storage caching provides cache services for Azure Blob storage, Azure Files, and other content in Azure. Configuration of these types of cache is beyond the scope of this module.
 
-Azure virtual machine disk caching is about optimizing read and write access to the virtual hard disk (VHD) files attached to Azure VMs. We'll focus on disk caching in this module.
+Azure virtual machine disk caching is about optimizing read and write access to the virtual hard disk (VHD) files attached to Azure VMs. In this module, we focus on disk caching.
+
+Disk caching isn't supported for Ultra Disks or Premium SSD v2, however they already benefit from lower latency, which addresses some of the same core problems as disk caching.
 
 ### Azure virtual machine disk types
 
@@ -32,9 +34,9 @@ There are three types of disks used with Azure VMs:
 
 - **OS disk**: When you create an Azure VM, Azure automatically attaches a VHD for the operating system (OS).
 
-- **Temporary disk**: When you create an Azure VM, Azure also automatically adds a temporary disk. This disk is used for data, such as page and swap files. The data on this disk may be lost during maintenance or a VM redeploy. Don't use it for storing permanent data, such as database files or transaction logs.
+- **Temporary disk**: When you create an Azure VM, Azure also automatically adds a temporary disk. This disk is used for data, such as page and swap files. The data on this disk might be lost during maintenance or a VM redeploy. Don't use it for storing permanent data, such as database files or transaction logs.
 
-- **Data disks**: A data disk is a VHD that's attached to a virtual machine to store application data or other data you need to keep.
+- **Data disks**: A data disk is a VHD attached to a virtual machine to store application data or other data you need to keep.
 
 OS disks and data disks take advantage of Azure VM disk caching. The cache size for a VM disk depends on the VM instance size and the number of disks mounted on the VM. You can enable caching for only up to 4 TiB sized disks.
 
@@ -63,7 +65,7 @@ So, how can your cache settings affect the performance of your workloads running
 
 ### OS disk
 
-For a VM OS disk, the default behavior is to use the cache in read/write mode. If you have applications that store data files on the OS disk and the apps do lots of random read/write operations to data files, consider moving those files to a data disk that has the caching turned off. Why is that? Well, if the read queue does not contain sequential reads, caching will be of little or no benefit. The overhead of maintaining the cache as if the data was sequential can reduce disk performance.
+The default behavior of a VM OS disk is to use the cache in read/write mode. So, if you have applications that store data files on the OS disk and perform lots of random read/write operations to the data files. Consider moving those files to a data disk that has the caching turned off. Why is that? Well, if the read queue doesn't contain sequential reads, caching is of little or no benefit. The overhead of maintaining the cache as if the data was sequential can reduce disk performance.
 
 ### Data disks
 

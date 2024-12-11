@@ -1,24 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure-mission-critical
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Challenge Project - Design a mission-critical web application
   description: Learn to apply key principles in your workload to achieve a highly reliable design with health monitoring checks.
-  ms.date: 09/22/2022
+  ms.date: 08/14/2024
   author: PageWriter-MSFT
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-waf
+  ms.subservice: waf-workload-mission-critical
 title: Challenge Project - Design a mission-critical web application
 summary: |
-  You'll be given the architecture of an example web workload, its current state, tradeoffs, and business requirements for improvements. You want to make it highly available and resilient using the capabilities of Azure. 
+  You're given an example web workload architecture, its current state, tradeoffs, and business requirements for improvements. You want to make it highly available and resilient using Azure's capabilities. 
   > [!NOTE]
-  > This module is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions for the actual implementation.
+  > This module is a **_Challenge Project_** module, where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions for the actual implementation.
 abstract: |
-  In this module, you'll demonstrate your ability to:
-   - Apply mission-critical design principles to an existing architecture to make it fault tolerant 
-   - Define key strategies for observing the overall health of the system
+  In this module, you demonstrate your ability to:
+   - Apply mission-critical design principles to an existing architecture to make it fault tolerant. 
+   - Define key strategies for observing the system's overall health.
 prerequisites: |
-  - Extensive experience in designing cloud native applications that include core infrastructure technology such as data storage, compute, and networking
+  - Extensive experience in designing cloud-native applications that include core infrastructure technology such as data storage, compute, and networking
   - Good understanding of the design principles and design areas of a mission-critical workload provided in the Azure Well-Architected Framework
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -38,3 +41,4 @@ units:
 - learn.azure-mission-critical.summary
 badge:
   uid: learn.azure-mission-critical.badge
+

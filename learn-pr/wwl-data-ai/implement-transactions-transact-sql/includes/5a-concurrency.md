@@ -23,7 +23,7 @@ It's important to consider the nature of your data and the queries running on th
 
 There are five different isolation levels in SQL Server, but for this module we'll concentrate on just READ_COMMITTED_SNAPSHOT_OFF and READ_COMMITTED_SNAPSHOT_ON. READ_COMMITTED_SNAPSHOT_OFF is the default isolation level for SQL Server. READ_COMMITTED_SNAPSHOT_ON is the default isolation level for Azure SQL Database.
 
-READ_COMMITTED_SNAPSHOT_OFF will hold locks on the affected rows until the end of the transaction if q query is using the read committed transaction isolation level. While it's possible for some updates to occur, such as the creation of a new row, this will prevent most conflicting changes to the data being read or updated. This is pessimistic concurrency.
+READ_COMMITTED_SNAPSHOT_OFF will hold locks on the affected rows until the end of the transaction if query is using the read committed transaction isolation level. While it's possible for some updates to occur, such as the creation of a new row, this will prevent most conflicting changes to the data being read or updated. This is pessimistic concurrency.
 
 READ_COMMITTED_SNAPSHOT_ON takes a snapshot of the data. Updates are then done on that snapshot allowing other connections to query the original data. At the end of the transaction the current state of the data is compared to the snapshot. If the data is the same, the transaction is committed. If the data differs, the transaction is rolled back.
 
