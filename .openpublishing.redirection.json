@@ -35545,7 +35545,17 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/2-create-cosmosdb-instance.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
     },
@@ -35555,7 +35565,17 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/3-exercise-create-cosmosdb-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/2-prepare.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/4-create-node-app-vscode.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
     },
@@ -35565,7 +35585,17 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/5-exercise-create-node-app-vscode.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/3-setup-starter-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/6-javascript-cosmosdb.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
     },
@@ -35575,7 +35605,17 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/7-exercise-javascript-cosmosdb.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/4-exercise-connect-openai-model.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/8-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
     },
@@ -35585,9 +35625,18 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/build-node-cosmos-app-vscode/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/5-exercise-implement-openai-model-service.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/javascript-on-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/",
     },
     {
       "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/5-exercise-create-items.yml",
