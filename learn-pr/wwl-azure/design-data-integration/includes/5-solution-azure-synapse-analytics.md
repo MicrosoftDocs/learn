@@ -1,5 +1,4 @@
-
-[Azure Synapse Analytics](https://azure.microsoft.com/products/synapse-analytics/) combines features of big data analytics, enterprise data storage, and data integration. The service lets you run queries on serverless data or data at scale. Azure Synapse supports data ingestion, exploration, transformation, and management, and supports analysis for all your BI and machine learning needs.
+[Azure Synapse Analytics](/azure/synapse-analytics/overview-what-is) combines features of big data analytics, enterprise data storage, and data integration. The service lets you run queries on serverless data or data at scale. Azure Synapse supports data ingestion, exploration, transformation, and management, and supports analysis for all your BI and machine learning needs.
 
 ### Things to know about Azure Synapse Analytics
 
@@ -13,7 +12,7 @@ Azure Synapse Analytics implements a massively parallel processing (MPP) archite
 
 - You submit queries in the form of Transact-SQL statements, and Azure Synapse Analytics runs them.
 
-- Azure Synapse uses a technology named [PolyBase](/sql/relational-databases/polybase/polybase-guide?) that enables you to retrieve and query data from relational and non-relational sources. You can save the data read in as SQL tables within the Azure Synapse service.
+- Azure Synapse uses a technology named [PolyBase](/sql/relational-databases/polybase/polybase-guide?) that enables you to retrieve and query data from relational and nonrelational sources. You can save the data read in as SQL tables within the Azure Synapse service.
 
 #### Components of Azure Synapse Analytics
 
@@ -57,6 +56,6 @@ The following table compares storage solution criteria for using Azure Data Fact
 Azure Synapse Analytics is an ideal solution for many other scenarios. Consider the following options:
 
 - **Consider variety of data sources**. When you have various data sources that use Azure Synapse Analytics for code-free ETL and data flow activities.
-- **Consider Machine Learning**. When you need to implement Machine Learning solutions by using Apache Spark, you can use Azure Synapse Analytics for built-in support for AzureML.
+- **Consider Machine Learning**. When you need to implement Machine Learning solutions by using Apache Spark, you can use Azure Synapse Analytics for built-in support for Azure Machine Learning.
 - **Consider data lake integration**. When you have existing data stored on a data lake and need integration with Azure Data Lake and other input sources, Azure Synapse Analytics provides seamless integration between the two components.
 - **Consider real-time analytics**. When you require real-time analytics, you can use features like Azure Synapse Link to analyze data in real-time and offer insights.
