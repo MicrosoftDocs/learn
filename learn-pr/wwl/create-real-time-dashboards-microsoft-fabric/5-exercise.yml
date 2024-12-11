@@ -1,12 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-real-time-dashboards-microsoft-fabric.exercise
-title: Exercise - Get started with real-time dashboards
+title: Exercise - create a Real-Time Dashboard
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Get started with real-time dashboards
-  description: "Get started with real-time dashboards"
-  ms.date: 12/10/2024
+  title: Exercise - create a Real-Time Dashboard
+  description: "Exercise - create a Real-Time Dashboard"
+  ms.date: 12/11/2024
   author: wwlpublish
   ms.author: gmalc
   ms.topic: unit
