@@ -2,7 +2,7 @@
 
 As an educator, you play a pivotal role in empowering students for future success. Skilling our future generations is critical work. The AI-102: Designing and Implementing a Microsoft Azure AI Solution course provides students with skills to build, manage, and deploy AI solutions that use Azure AI Vision, Azure AI services, Azure OpenAI Service, and Azure AI Search. 
 
-**Stay updated** - Stay informed about important updates, resources, and insights related to Microsoft certifications by regularly visiting the Learning Download Center and following the Microsoft Educator channel. It's recommended that you log into the [Learning Download Center](https://aka.ms/ldc) (LDC) at least quarterly. If you haven't already done so, please download the course materials from the LDC before continuing with this learning path.
+**Stay updated** - Stay informed about important updates, resources, and insights related to Microsoft certifications by regularly visiting the Learning Download Center and following the Microsoft Educator channel. It's recommended that you log into the [Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123) (LDC) at least quarterly. If you haven't already done so, please download the course materials from the LDC before continuing with this learning path.
 
 **Know Your Audience** - Understand your student’s skill levels, knowledge, and interests, and be prepared to start from the basics to cater to a wide range of learners.
 

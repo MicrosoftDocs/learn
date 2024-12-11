@@ -2,9 +2,11 @@
 uid: learn.machinelearning.introduction-to-classical-machine-learning.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: An overview of the content covered in the module.
-  ms.date: 09/20/2024
+  ms.date: 11/01/2024
   author: lgayhardt
   ms.author: lagayhar
   ms.topic: unit

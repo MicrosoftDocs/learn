@@ -3,11 +3,11 @@ Tailwind Traders has several applications that have front-end components that cu
 
 Tailwind Traders has some other applications that are accessed through VPN connections into the internal protected networks in the Sydney, Melbourne, and Auckland datacenters. These applications generally require users to authenticate with their on-premises Active Directory instance.
 
-In this unit, you'll learn about the technologies that allow Tailwind Traders to maintain applications that users connect to through Azure even though data or the application itself is still hosted on Tailwind Traders equipment.
+In this unit, you learn about technologies for making hybrid connections. These connections allow Tailwind Traders to maintain applications for users to connect to through Azure, even when data or the application itself is hosted on Tailwind Traders equipment.
 
 ## What is Azure Relay?
 
-Azure Relay is a service that you can use to securely expose workloads that run on your organization's internal network to the public cloud. The service enables you to do this without opening an inbound port on a perimeter network firewall.
+Azure Relay is a service that you can use to securely expose workloads that run on your organization's internal network to the public cloud. The service securely exposes these workloads without opening an inbound port on a perimeter network firewall.
 
 Azure Relay supports the following scenarios between on-premises services and applications running in Azure:
 
@@ -20,7 +20,7 @@ Azure Relay has the following features:
 - **Hybrid Connections**. This feature uses open-standard web sockets and can be used in multiplatform architectures. It supports .NET Core, .NET Framework, JavaScript/Node.js, standards-based open protocols, and remote procedure call (RPC) programming models.
 - **WCF Relay**. This feature uses Windows Communication Foundation (WCF) to enable remote procedure calls. It's option that many customers use with their WCF programs. It also supports the .NET Framework.
 
-Azure Relay allows Tailwind Traders to publish some applications that run on the internal network to clients on the internet without requiring a VPN connection. The company should use Azure Relay instead of Azure App Service Hybrid Connections when there is no front-end web app running in Azure. Azure Relay should be used instead of Microsoft Entra application proxy when the application doesn't require Microsoft Entra authentication.
+Azure Relay allows Tailwind Traders to publish some applications that run on the internal network to clients on the internet without requiring a VPN connection. The company should use Azure Relay instead of Azure App Service Hybrid Connections when there's no front-end web app running in Azure. Azure Relay should be used instead of Microsoft Entra application proxy when the application doesn't require Microsoft Entra authentication.
 
 ## What is App Service Hybrid Connections?
 
@@ -28,7 +28,7 @@ The Hybrid Connections feature of Azure App Service can use any application reso
 
 Hybrid Connections isn't limited to workloads running on Windows Server platforms. You can configure Hybrid Connections to access any resource that functions as a TCP endpoint, regardless of which application protocol is being used. For example, you can configure a hybrid connection between a web app running in Azure and a MySQL database running on an on-premises Linux virtual machine.
 
-Hybrid Connections uses a relay agent that you deploy in a location where the agent can establish connectivity to the TCP endpoint on the internal network and establish a connection to Azure. This connection is secured through Transport Layer Security (TLS) 1.2. Shared access signature (SAS) keys are used for authentication and authorization. 
+Hybrid Connections uses a relay agent. You deploy the relay agent in a location where it can establish connectivity to the TCP endpoint on the internal network and establish a connection to Azure. This connection is secured through Transport Layer Security (TLS) 1.2. Shared access signature (SAS) keys are used for authentication and authorization. 
 
 The following image shows a hybrid connection between a web app running in Azure and a database endpoint running on-premises.
 
@@ -48,7 +48,7 @@ Hybrid Connections has the following limitations:
 - It doesn't support Lightweight Directory Access Protocol (LDAP) because of the reliance on UDP.
 - It can't be used to perform an Active Directory Domain Services domain-join operation.
 
-For Tailwind Traders, Hybrid Connections will enable the retirement of several applications that currently have their front ends running on the Tailwind Traders perimeter network. These apps can be migrated to Azure. Hybrid Connections will then provide a secure connection to protected networks that host the app's back-end components.
+For Tailwind Traders, Hybrid Connections enables the retirement of several applications that currently have their front ends running on the Tailwind Traders perimeter network. These apps can be migrated to Azure. Hybrid Connections can then provide a secure connection to protected networks that host the app's back-end components.
 
 <a name='what-is-azure-ad-application-proxy'></a>
 
@@ -67,13 +67,13 @@ Application Proxy functions in the following way:
 1. The user connects to the application through a publicly available endpoint and then performs a Microsoft Entra sign-on.
 2. A token is forwarded to the user's device after the sign-in is complete.
 3. The client device forwards the token to the Application Proxy service, which returns the user principal name (UPN) and security principal name (SPN) from the token. Application Proxy then forwards the request to the Application Proxy connector.
-4. If single sign-on has been enabled, the Application Proxy connector performs additional authentication.
+4. The Application Proxy connector performs further authentication if single sign-on is enabled.
 5. The Application Proxy connector forwards the request to the on-premises application.
 6. The response is sent through the connector and the Application Proxy service to the user.
 
 The following image shows this process:
 
-:::image type="content" source="../media/6-application-proxy-process-diagram.png" alt-text="Diagram that shows Application Proxy functionality with the user outside the organizational network making a connection through Application Proxy to an on-premises application." border="false" lightbox="../media/6-application-proxy-process-diagram.png":::
+:::image type="content" source="../media/6-application-proxy-process-diagram.png" alt-text="Diagram of a user making a connection from outside the organizational network to an on-premises application using an Application Proxy." border="false" lightbox="../media/6-application-proxy-process-diagram.png":::
 
 Users of internal networks that allow direct connection to applications should avoid using Application Proxy.
 

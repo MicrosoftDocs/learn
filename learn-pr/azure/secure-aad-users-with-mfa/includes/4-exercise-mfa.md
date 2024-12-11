@@ -9,20 +9,18 @@ You can walk through the basic steps necessary to configure and enable Microsoft
 
 ## Configure multifactor authentication options
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) using a Global administrator account.
-1. Navigate to the Microsoft Entra dashboard using the **Microsoft Entra ID** option in the side menu.
+1. Sign in to the [Azure portal](https://portal.azure.com/) using an Authentication Administrator account.
+1. Search for **Microsoft Entra ID** and navigate to the Microsoft Entra ID dashboard.
 1. Select **Security** in the left-hand menu.
-1. Select **multifactor authentication** under the **Manage** heading in the menu. Here, you find options for multifactor authentication.
+1. Under the **Manage** menu, select **Multifactor authentication**. Here, you find options for multifactor authentication.
 
     :::image type="content" source="../media/4-mfa-options.png" alt-text="Screenshot showing MFA options in the dashboard.":::
 
-1. Under **Configure**, select **Additional cloud-based multifactor authentication settings**. A new browser page opens where you can see all the MFA options for Azure.
+1. Under **Configure**, select **Additional cloud-based multifactor authentication settings**. On the resulting page, you can see all the MFA options for Azure under **Service Settings**.
 
     :::image type="content" source="../media/4-set-mfa.png" alt-text="Screenshot showing MFA configuration.":::
 
-    This page is where you select the supported authentication methods. In this example, all of them are selected.
-
-    You can also enable or disable *app passwords* here, which allow users to create unique account passwords for apps that don't support multifactor authentication. This feature lets the user authenticate with their Microsoft Entra identity, using a different password specific to that app.
+    You can enable or disable *app passwords* here, which allow users to create unique account passwords for apps that don't support multifactor authentication. This feature lets the user authenticate with their Microsoft Entra identity, using a different password specific to that app.
 
 ## Set up Conditional Access rules for MFA
 

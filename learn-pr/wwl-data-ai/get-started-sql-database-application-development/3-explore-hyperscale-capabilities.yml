@@ -2,6 +2,8 @@
 uid: learn-wwl.get-started-sql-database-application-development.explore-hyperscale-capabilities
 title: Explore Hyperscale capabilities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Hyperscale capabilities
   description: "Learn Hyperscale capabilities for Azure SQL Database."
   ms.date: 10/02/2024

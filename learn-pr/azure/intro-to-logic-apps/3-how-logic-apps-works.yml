@@ -2,9 +2,11 @@
 uid: learn.azure-intro-to-logic-apps.how-logic-apps-works
 title: How Azure Logic Apps works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Azure Logic Apps works
   description: Learn how Azure Logic Apps works.
-  ms.date: 09/24/2024
+  ms.date: 11/18/2024
   author: ecfan
   ms.author: estfan
   ms.topic: unit
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/3-how-logic-apps-works.md)]
+

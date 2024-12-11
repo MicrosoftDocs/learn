@@ -2,6 +2,8 @@
 uid: learn.azure.debug-nodejs.2-debugger
 title: What's a debugger?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What's a debugger?
   description: Learn about what a debugger is and why it's useful.
   author: diberry
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/2-debugger.md)]
+

@@ -4,37 +4,37 @@ title: Deploy Azure DDoS Protection by using the Azure portal
 metadata:
   title: Deploy Azure DDoS Protection by using the Azure portal
   description: "Deploy Azure DDoS Protection by using the Azure portal"
-  ms.date: 02/08/2024
+  ms.date: 11/29/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 10
+  ms.custom:
+  - N/A
+durationInMinutes: 15
 content: |
   [!include[](includes/3-deploy-azure-ddos-protection-by-using-azure-portal.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which one of these is a symptom of a DDoS attack?"
+  - content: "Which symptom indicates a DDoS attack?"
     choices:
     - content: "An unexplained surge in requests."
       isCorrect: true
-      explanation: "Correct. You are not expecting that many concurrent requests that they start to overwhelm your resources."
+      explanation: "Correct. You aren't expecting that many concurrent requests that they start to overwhelm your resources."
     - content: "Application running slowly."
       isCorrect: false
-      explanation: "Incorrect. This could just be other performance-related issues in your application/connectivity."
+      explanation: "Incorrect. There could be other performance-related issues in your application connectivity."
     - content: "HTTP 400 Bad Request"
       isCorrect: false
-      explanation: "Incorrect. HTTP 400 Bad Request response status code indicates that the server can't or won't process the request due to something that is perceived to be a client error"
+      explanation: "Incorrect. HTTP 400 Bad Request response status code indicates the server can't process the request."
   - content: "Which action shall we take when under DDoS attack?"
     choices:
     - content: "Monitor Alerts and review attack profile."
       isCorrect: true
-      explanation: "Correct. You should look at any alerts sent out and review the attack profile (what type of attack, where is it originating, is it targeting a particular resource)."
+      explanation: "Correct. You should look at any alerts sent out and review the attack profile. For example, what type of attack, where is it originating, and is it targeting a particular resource."
     - content: "Scale out your Azure resources to keep systems running."
       isCorrect: false
-      explanation: "Incorrect. Adding more resources will only help temporarily make your services available. The attacker could just ramp up the attack to overwhelm new resources."
+      explanation: "Incorrect. Adding more resources helps only temporarily. The attacker could just ramp up the attack to overwhelm new resources."
     - content: "Email your IT team."
       isCorrect: false
       explanation: "Incorrect. Letting your IT team know is a good idea, but you need to monitor and protect your resources first."

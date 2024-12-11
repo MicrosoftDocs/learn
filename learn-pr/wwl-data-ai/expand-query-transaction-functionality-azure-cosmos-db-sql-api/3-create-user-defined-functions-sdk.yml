@@ -2,6 +2,8 @@
 uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.create-user-defined-functions-sdk
 title: Create user-defined functions with the SDK
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create user-defined functions with the SDK
   description: "Create user-defined functions with the SDK"
   ms.date: 02/06/2023

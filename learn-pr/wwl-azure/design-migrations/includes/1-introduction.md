@@ -34,8 +34,18 @@ Design infrastructure solutions
 
 - Design migrations
 
+    - Evaluate a migration solution that uses the Microsoft Cloud Adoption Framework for Azure.
+
+    - Evaluate on-premises servers, data, and applications for migration.
+
+    - Recommend a solution for migrating workloads to infrastructure as a service (IaaS) and platform as a service (PaaS).
+
+    - Recommend a solution for migrating databases.
+
+    - Recommend a solution for migrating unstructured data.
+
 ## Prerequisites
 
-- Conceptual knowledge of migrating compute, database, and storage workloads
+- Conceptual knowledge of migrating compute, database, and storage workloads.
 
-- Working experience with planning migrations, assessing workloads, determining migration requirements, and deploying workloads
+- Working experience with planning migrations, assessing workloads, determining migration requirements, and deploying workloads.

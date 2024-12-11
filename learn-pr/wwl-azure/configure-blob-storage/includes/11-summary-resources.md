@@ -19,8 +19,3 @@ By exploring these resources, you can deepen your understanding of Azure Blob St
 - [Azure Blob Storage Performance and Scalability](/azure/storage/blobs/scalability-targets) - This article delves into performance considerations when configuring blob storage. It covers topics such as choosing the right storage account type, optimizing data transfer, and leveraging features like Azure CDN and Azure Data Lake Storage.
 
 - [Azure Blob Storage Lifecycle Management](/azure/storage/blobs/storage-lifecycle-management-concepts) - Blob storage lifecycle management allows you to automate the movement and deletion of data based on predefined rules. This article explains how to configure and manage lifecycle policies to optimize storage costs and improve data management. 
-
-## Learn more with optional hands-on exercises
-
-- [Optimize performance and costs by using Blob Storage tiers](/training/modules/optimize-archive-costs-blob-storage/).
-

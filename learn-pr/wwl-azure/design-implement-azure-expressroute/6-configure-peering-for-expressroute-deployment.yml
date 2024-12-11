@@ -4,7 +4,7 @@ title: Configure peering for an ExpressRoute deployment
 metadata:
   title: Configure peering for an ExpressRoute deployment
   description: "Configure peering for an ExpressRoute deployment"
-  ms.date: 11/02/2023
+  ms.date: 12/06/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -24,17 +24,17 @@ quiz:
     - content: "Route filters."
       isCorrect: true
       explanation: "Correct. Route filters are a way to consume a subset of supported services through Microsoft peering."
-    - content: "You cannot consume only a subset of services."
+    - content: "You can't consume only a subset of services."
       isCorrect: false
       explanation: "Incorrect. You can configure Microsoft peering to consume only a subset of services."
   - content: "To provide connectivity to Microsoft 365 and PaaS services. Which peering service should select?"
     choices:
     - content: "Private peering."
       isCorrect: false
-      explanation: "Incorrect. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) does not occur through private peering."
+      explanation: "Incorrect. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) doesn't occur through private peering."
     - content: "Public peering."
       isCorrect: false
-      explanation: "Incorrect. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) does not occur through public peering."
+      explanation: "Incorrect. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) doesn't occur through public peering."
     - content: "Microsoft Peering."
       isCorrect: true
       explanation: "Correct. Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) occurs through Microsoft peering."

@@ -18,7 +18,7 @@ You'd like to ensure that all resources have the **Department** tag associated w
 
 1. You should see a list of built-in policies that you can use. In this case, you're going to create your own custom policy. Select **+ Policy definition** in the top menu.
 
-1. This button brings up the **New policy definition** dialog. To set the **Definition location**, select the blue **Launch scope selector (...)**. Select the subscription in which the policy is stored, which should be the same subscription as our resource group. Select the **Select** button.
+1. This button brings up the **New policy definition** dialog. To set the **Definition location**, select the blue **Launch scope selector (...)**. Select the subscription in which the policy is stored, which should be the same subscription as your resource group. Select the **Select** button.
 
 1. Back on the **New policy definition** dialog, enter _Enforce tag on resource_ in the **Name** field.
 
@@ -60,7 +60,7 @@ You'd like to ensure that all resources have the **Department** tag associated w
 
 You've created the policy, but you haven't actually put it into effect yet. To enable the policy, you need to create an assignment. In this case, you'll assign it to the scope of your **msftlearn-core-infrastructure-rg** resource group so that it applies to anything inside the resource group.
 
-1. In the policy pane, select **Assignments** from the **Authoring** section on the left.
+1. Return to the Policy pane, then select **Assignments** from the **Authoring** section on the left.
 
 1. Select **Assign policy** at the top.
 
@@ -83,15 +83,15 @@ Now that you've assigned the policy to your resource group, any attempts to crea
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Search for **Storage account** and select **Storage account**. In the results, select **Create**.
+1. Search for and select **Storage account**. In the results, select **Create**.
 
 1. Select your subscription, then select the **msftlearn-core-infrastructure-rg** resource group.
 
 1. For **Storage account name**, give it any name of your choice, but note that it does have to be a globally unique name.
 
-1. Leave the rest of the options at their default, then select **Review**.
+1. Leave the rest of the options at their default, then select **Review + create**.
 
-    Your resource-creation validation will fail because you don't have a **Department** tag applied to the resource. If the policy has not caused a validation failure, you might need to wait a few more minutes for it to be enabled.
+    Your resource-creation validation will fail because you don't have a **Department** tag applied to the resource. If the policy hasn't caused a validation failure, you might need to wait a few more minutes for it to be enabled.
 
     :::image type="content" source="../media/4-policy-error-message.png" alt-text="Screenshot of Azure portal showing a policy validation failure on a new storage account without a tag.":::
 
@@ -103,7 +103,7 @@ Now that you've assigned the policy to your resource group, any attempts to crea
 
     :::image type="content" source="../media/4-add-storage-tag.png" alt-text="Screenshot of Azure portal showing a new Department tag to add during creation.":::
 
-1. Now click **Review**. Validation will now pass, and if you select **Create**, your storage account will be created.
+1. Now click **Review + create**. Validation will now pass, and if you select **Create**, your storage account will be created.
 
 ## Use policies to enforce standards
 
@@ -111,6 +111,6 @@ You've seen how you can use policies to ensure that your resources have the tags
 
 You could use a policy to restrict to which Azure regions you can deploy resources. For organizations that are heavily regulated or have legal or regulatory restrictions on where data can reside, policies help to ensure that resources aren't provisioned in geographic areas that go against these requirements.
 
-You could use a policy to restrict which types of virtual machine sizes can be deployed. You might want to allow large VM sizes in your production subscriptions, but maybe you'd like to ensure that you keep costs minimized in your dev subscriptions. By denying the large VM sizes through policy in your dev subscriptions, you can ensure they don't get deployed in these environments.
+You could use a policy to restrict which types of virtual machine sizes can be deployed. You might want to allow large VM sizes in your production subscriptions, but maybe you'd like to ensure that you keep costs minimized in your development subscriptions. By denying the large VM sizes through policy in your dev subscriptions, you can ensure they don't get deployed in these environments.
 
 You could also use a policy to enforce naming conventions. If your organization has standardized on specific naming conventions, using policy to enforce the conventions helps us to keep a consistent naming standard across your Azure resources.

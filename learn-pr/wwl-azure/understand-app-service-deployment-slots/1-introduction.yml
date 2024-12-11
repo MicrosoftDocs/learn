@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-app-service-deployment-slots.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 06/10/2024

@@ -2,6 +2,8 @@
 uid: learn.azure.choose-service-level-azure-netapp-files-hpc-applications.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure NetApp Files.
@@ -56,3 +58,4 @@ quiz:
     - content: "Ultra service level with a 100-TiB large volume size."
       isCorrect: false
       explanation: "This configuration meets throughput requirements but the capacity pool cost isn't the lowest."
+

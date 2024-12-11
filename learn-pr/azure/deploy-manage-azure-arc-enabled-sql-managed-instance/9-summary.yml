@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Review the elements of this learning module.
   ms.date: 08/06/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/summary.md)]
+

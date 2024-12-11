@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-arc.3-describe-azure-arc-enabled-servers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure Arc-enabled servers
   description: Describe Azure Arc-enabled servers
   ms.date: 12/07/2023
@@ -12,3 +14,4 @@ title: Describe Azure Arc-enabled servers
 durationInMinutes: 5
 content: |
   [!include[](includes/3-describe-azure-arc-enabled-servers.md)]
+

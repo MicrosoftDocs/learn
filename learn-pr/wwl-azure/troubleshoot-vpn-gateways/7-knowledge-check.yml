@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-vpn-gateways.knowledge-check
 title: Knowledge Check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge Check
   description: "Knowledge Check"
   ms.date: 04/27/2023

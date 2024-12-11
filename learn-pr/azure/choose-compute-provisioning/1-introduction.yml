@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-compute-provisioning.1-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: In this unit, you'll learn about a business that must decide on its Azure compute resources.
   ms.date: 03/29/2023

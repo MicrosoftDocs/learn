@@ -2,6 +2,8 @@
 uid: learn.azure.cna-set-up-apps-use-scale.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to setting up apps for use and scale
   ms.date: 08/22/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

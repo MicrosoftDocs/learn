@@ -6,7 +6,7 @@ The topics covered in this module include:
 
 - Exploring AI Tools for Developers from GitHub, OpenAI, and Microsoft
 - Understanding GitHub Copilot: Features, Account Types, Tools, and Limitations
-- Installing and Setting Up GitHub Copilot Extensions for Visual Studio Code
+- Installing GitHub Copilot Extensions for Visual Studio Code
 - Understanding and Managing Autocomplete Features of GitHub Copilot Extension
 - Understanding and Utilizing GitHub Copilot Chat for AI Assistance in Visual Studio Code
 - Configuring GitHub Copilot Extensions in Visual Studio Code

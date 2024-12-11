@@ -2,6 +2,8 @@
 uid: learn.azure.network-fundamentals.ip-tcp-basics
 title: IP address standards and services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: IP address standards and services
   description: Explore the IP address standards and services to use when you implement an internet-based network.
   ms.date: 07/09/2024
@@ -69,3 +71,4 @@ quiz:
     - content: "The DNS helps resolve domain names to IP addresses."
       isCorrect: true
       explanation: "It's a hierarchical and decentralized naming system for computers, services, or other resources connected to the internet or a private network."
+

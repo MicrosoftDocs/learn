@@ -2,6 +2,8 @@
 uid: learn.nvidia.deploy-model-nvidia-triton-inference-server.execute-inference-workload-nvidia-triton-inference-server
 title: Execute inference workload on NVIDIA Triton Inference Server
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Execute inference workload on NVIDIA Triton Inference Server
   description: Execute inference workload on NVIDIA Triton Inference Server.
   author: toolboc
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-execute-inference-workload-nvidia-triton-inference-server.md)]
+

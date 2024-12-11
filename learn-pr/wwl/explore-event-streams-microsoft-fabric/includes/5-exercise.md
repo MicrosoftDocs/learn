@@ -1,4 +1,4 @@
-In this lab, you create a Microsoft Fabric event stream and use the Fabric Main Editor to create and link object to read and write objects to a lakehouse.
+In this exercise, you'll explore how to use an eventstream to capture a source of streaming data, transform it, and load the transformed event data into a table for further analysis.
 
 This lab takes approximately **30** minutes to complete.
 
@@ -7,4 +7,4 @@ This lab takes approximately **30** minutes to complete.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2260610)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2260610&azure-portal=true)

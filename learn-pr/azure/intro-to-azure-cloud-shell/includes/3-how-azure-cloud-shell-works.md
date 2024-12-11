@@ -60,7 +60,7 @@ Here’s a list of all add-ons available to you within a Cloud Shell session:
 | Category | Name |
 |---|---|
 | **Linux tools** | bash<br>zsh<br>sh<br>tmux<br>dig |
-| **Azure tools** | Azure CLI and [Azure classic CLI](https://github.com/Azure/azure-xplat-cli)<br>AzCopy<br>Azure Functions CLI<br>Service Fabric CLI<br>Batch Shipyard<br>blobxfer |
+| **Azure tools** | [Azure CLI](/cli/azure/)<br>AzCopy<br>Azure Functions CLI<br>Service Fabric CLI<br>Batch Shipyard<br>blobxfer |
 | **Text editors** | code (Cloud Shell editor)<br>vim<br>nano<br>emacs |
 | **Source control** | git |
 | **Build tools** | make<br>maven<br>npm<br>pip |

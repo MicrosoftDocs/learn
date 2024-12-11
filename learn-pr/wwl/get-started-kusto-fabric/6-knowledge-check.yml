@@ -4,59 +4,45 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/14/2024
+  ms.date: 12/03/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: unit
-  ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
 durationInMinutes: 3
 quiz:
   title: ""
   questions:
-  - content: "Which Kusto Query Language (KQL) keyword is used to limit the results of a query to a specified number of rows?"
+  - content: "Which Microsoft Fabric Real-Time Intelligence component should you use to ingest and transform a stream of real-time data?"
     choices:
-    - content: "`select`"
+    - content: "Eventhouse"
       isCorrect: false
-      explanation: "Incorrect. `select` is a SQL keyword."
-    - content: "`take`"
+      explanation: "Incorrect. An eventhouse is used to store real-time data in KQL databases."
+    - content: "Eventstream"
       isCorrect: true
-      explanation: "Correct. `take`  limits the results to a specified number of rows."
-    - content: "`project`"
+      explanation: "Correct. An eventstream is used to ingest and transform real-time data."
+    - content: "Activator"
       isCorrect: false
-      explanation: "Incorrect. `project` is used to return specific columns."
-  - content: "Which Kusto Query Language (KQL) keyword is used to group and aggregate data?"
+      explanation: "Incorrect. Activator is used to automate actions based on events."
+  - content: "Which language is optimized for querying real-time data in an eventhouse?"
     choices:
-    - content: "`group_by`"
+    - content: "Python"
       isCorrect: false
-      explanation: "Incorrect. There's no `group_by` keyword in KQL."
-    - content: "`aggregate`"
+      explanation: "Incorrect. Python isn't supported for querying tables in an eventhouse."
+    - content: "SQL"
       isCorrect: false
-      explanation: "Incorrect. There's no `aggregate` keyword in KQL."
-    - content: "`summarize`"
+      explanation: "Incorrect. While SQL is supported in an eventhouse, it isn't as optimized for real-time data as another supported language."
+    - content: "KQL"
       isCorrect: true
-      explanation: "Correct. Use the `summarize` keyword to group and aggregate data."
-  - content: "What is one of the main benefits of using Real-Time Intelligence in Microsoft Fabric?"
+      explanation: "Correct. KQL is the native language for databases in an eventstore and is optimized for handling real-time data."
+  - content: "Which Microsoft Fabric Real-Time Intelligence component is used to visualize and explore real-time data in tiles?"
     choices:
-    - content: "It requires complex data models and scripting to transform the data before analysis."
+    - content: "Dataflows"
       isCorrect: false
-      explanation: "Incorrect. Real-Time Intelligence allows analytical queries directly on raw data without the need for complex data models or scripting."
-    - content: "It allows ingestion of data from any source, in any data format."
+      explanation: "Incorrect. Dataflows are used to ingest and process batch data, not to visualize real-time data in tiles."
+    - content: "Real-Time Dashboards"
       isCorrect: true
-      explanation: "Correct. Real-Time Intelligence in Microsoft Fabric allows data ingestion from any source and in any format."
-    - content: "It only supports structured data formats."
+      explanation: "Correct. Real-Time Dashboards enable you to visualize and explore data in tiles based on KQL queries."
+    - content: "Delta tables"
       isCorrect: false
-      explanation: "Incorrect. Real-Time Intelligence supports all types of data including structured, unstructured, and semi-structured data."
-  - content: "What is the role of a KQL database in Microsoft Fabric's Real-Time Intelligence?"
-    choices:
-    - content: "It's an upper-level entity that hosts a collection of tables, stored functions, materialized views, shortcuts, and datastreams."
-      isCorrect: true
-      explanation: "Correct. A KQL database hosts various entities and is used for data storage, streaming, and querying in Microsoft Fabric's Real-Time Intelligence."
-    - content: "It acts as a high-tech funnel that collects, changes, and sends data to different places automatically."
-      isCorrect: false
-      explanation: "Incorrect. This description refers to the Eventstream component, not the KQL database."
-    - content: "It's a customizable control panel that shows specific data in different sections or 'tiles.'"
-      isCorrect: false
-      explanation: "Incorrect. This description refers to the Real-Time Dashboards, not the KQL database."
+      explanation: "Incorrect. Delta tables are relational data structures used to store data in a lakehouse or data warehouse."
+  

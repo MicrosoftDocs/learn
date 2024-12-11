@@ -2,6 +2,8 @@
 uid: learn.wwl.train-evaluate-classification-models.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 08/25/2024

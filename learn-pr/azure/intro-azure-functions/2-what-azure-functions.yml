@@ -1,12 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-azure-functions.what-azure-functions
-title: What is Azure Functions
+title: What is Azure Functions?
 metadata:
-  title: What is Azure Functions
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: What is Azure Functions?
   description: In this unit, you learn about Azure Functions and when it best fits your architectural needs.
   author: ggailey777
   ms.author: glenga
-  ms.date: 03/18/2024
+  ms.date: 12/03/2024
   ms.topic: unit
 durationInMinutes: 3
 content: |
@@ -16,12 +18,13 @@ quiz:
   questions:
     - content: "What are triggers and bindings?"
       choices:
-        - content: "A trigger is a condition for when code should run, and binding is code written to facilitate connecting to and writing data to a data source."
+        - content: "A trigger is a condition for when code should run, and a binding is code written to facilitate connecting to and writing data to a data source."
           isCorrect: true
           explanation: "Correct!"
-        - content: "A trigger is connection code that helps you access a data source, and a binding is condition that defines when code should run."
+        - content: "A trigger is connection code that helps you access a data source, and a binding is a condition that defines when code should run."
           isCorrect: false
           explanation: "Incorrect! It's the opposite: the trigger is why code runs and bindings are what connects to a data source via configuration."
         - content: "A trigger is when code times out and binding is the code that runs as a result."
           isCorrect: false
-          explanation: "Incorrect! A trigger defines a condition for when code should run. A timeout is a kind of trigger but there are many different types of triggers like blob storage events, database inserts, new message in message queues and more. Bindings are configuration that helps your code connect to a data source and make reading and writing to it possible by just a few lines of code."
+          explanation: "Incorrect! A trigger defines a condition for when code should run. A timeout is a kind of trigger but there are many different types of triggers like blob storage events, database inserts, new message in message queues, and more. Bindings are configuration that helps your code connect to a data source and make reading and writing to it possible by just a few lines of code."
+

@@ -1,11 +1,13 @@
 ### YamlMime:Module
 uid: learn.intro-to-docker-containers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Introduction to Docker containers"
   description: "Introduction to Docker containers"
   ms.service: azure
   manager: mkluck
-  ms.date: 09/16/2023
+  ms.date: 10/09/2024
   author: rayoef
   ms.author: rayoflores
   ms.topic: module
@@ -42,3 +44,4 @@ units:
 - learn.intro-to-docker-containers.6-summary
 badge:
   uid: learn.intro-to-docker-containers.badge
+

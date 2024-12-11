@@ -4,7 +4,7 @@ title: Connect geographically dispersed networks with ExpressRoute global reach
 metadata:
   title: Connect geographically dispersed networks with ExpressRoute global reach
   description: "Connect geographically dispersed networks with ExpressRoute global reach"
-  ms.date: 11/02/2023
+  ms.date: 12/06/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Connect a data center to the public internet."
       isCorrect: false
-      explanation: "Incorrect. ExpressRoute Global Reach was not primarily designed to connect a data center to public internet."
+      explanation: "Incorrect. ExpressRoute Global Reach wasn't primarily designed to connect a data center to public internet."
     - content: "Connect a local service provider to a data center."
       isCorrect: false
-      explanation: "Incorrect. ExpressRoute Global Reach was not primarily designed to connect a local service provider to a data center."
+      explanation: "Incorrect. ExpressRoute Global Reach wasn't primarily designed to connect a local service provider to a data center."
     - content: "Connect branch offices across the world."
       isCorrect: true
       explanation: "Correct. ExpressRoute Global Reach is designed to complement your service provider’s WAN implementation and connect your branch offices across the world."
@@ -34,7 +34,7 @@ quiz:
       explanation: "Incorrect. You can use different local service providers in each location."
     - content: "Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network."
       isCorrect: true
-      explanation: "Correct. You can use a local service provider wherever your offices are, and GlobalReach will connect the branches using ExpressRoute and the Microsoft global network."
+      explanation: "Correct. You can use a local service provider wherever your offices are located."
     - content: "Use GlobalReach to connect each location to a private VPN, and use local service providers for point-to-site access."
       isCorrect: false
       explanation: "Incorrect. Each location should connect to GlobalNet through a local service provider."

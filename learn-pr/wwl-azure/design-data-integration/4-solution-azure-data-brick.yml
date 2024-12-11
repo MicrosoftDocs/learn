@@ -4,12 +4,12 @@ title: Design a data integration and analytic solution with Azure Databricks
 metadata:
   title: Design a data integration and analytic solution with Azure Databricks
   description: "Design a data integration and analytic solution with Azure Databricks"
-  ms.date: 07/30/2024
+  ms.date: 12/11/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.custom:
+  - N/A
+durationInMinutes: 7
 content: |
   [!include[](includes/4-solution-azure-data-brick.md)]

@@ -6,7 +6,7 @@ Remember, when using Azure Cosmos DB, you typically express database options as 
 
 ![Diagram of individual requests consuming RU/s](../media/2-serverless.png)
 
-Serverless is great for applications with unpredictable or bursty traffic. You can use serverless with an application such as:
+Serverless is great for development and testing as well as applications with unpredictable or bursty traffic. You can use serverless with an application such as:
 
 - A new application with hard to forecast users loads
 - A new prototype application within your organization

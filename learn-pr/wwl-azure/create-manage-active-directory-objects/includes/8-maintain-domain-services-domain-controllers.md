@@ -27,7 +27,7 @@ To recover deleted items from the **Active Directory Recycle Bin** using the Act
 
 ### AD DS backup and restore
 
-To restore AD DS, a backup must explicitly include system state data. &lt;i&gt;System state&lt;/i&gt; is a collection of critical OS and server role files that include the AD DS database and the registry.
+To restore AD DS, a backup must explicitly include system state data. *System state* is a collection of critical OS and server role files that include the AD DS database and the registry.
 
 > [!IMPORTANT]
 > A full server backup that is used for full server recovery does not support this scenario.

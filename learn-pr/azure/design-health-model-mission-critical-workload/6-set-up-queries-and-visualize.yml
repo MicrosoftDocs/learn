@@ -2,6 +2,8 @@
 uid: learn.design-health-model-mission-critical-workload.set-up-queries-and-visualize
 title: Collect, query, and visualize health states
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Collect, query, and visualize health states
   description: Learn how to collect data, run queries, and visualize health states in a health model.
   ms.date: 08/05/2024

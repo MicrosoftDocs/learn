@@ -4,7 +4,7 @@ title: Design an ExpressRoute deployment
 metadata:
   title: Design an ExpressRoute deployment
   description: "Design an ExpressRoute deployment"
-  ms.date: 11/02/2023
+  ms.date: 12/06/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -27,11 +27,11 @@ quiz:
     - content: "Resources in different Geopolitical regions."
       isCorrect: true
       explanation: "Correct. You can enable ExpressRoute Premium to extend connectivity across geopolitical boundaries."
-  - content: "How can one provide a failover path for ExpressRoute?"
+  - content: "How can you provide a failover path for ExpressRoute?"
     choices:
     - content: "Configure a Point-to-Site VPN connection as a backup for ExpressRoute."
       isCorrect: false
-      explanation: "Incorrect. A Point-to-Site VPN connection won't function as a backup for ExpressRoute."
+      explanation: "Incorrect. A Point-to-Site VPN connection isn't a backup for ExpressRoute."
     - content: "Configure a Site-to-Site VPN connection as a backup for ExpressRoute."
       isCorrect: true
       explanation: "Correct. You can configure a Site-to-Site VPN connection as a backup for ExpressRoute. This connection applies only to virtual networks linked to the Azure private peering path."

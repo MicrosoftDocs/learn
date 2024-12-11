@@ -2,14 +2,16 @@
 uid: learn.wwl.protecting-monitoring-tuning-migrated-database.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 09/26/2022
+  ms.date: 10/14/2024
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: jupadrao
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

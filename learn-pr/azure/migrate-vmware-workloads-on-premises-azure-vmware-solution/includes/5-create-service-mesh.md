@@ -21,8 +21,6 @@ After you confirm the networking ports and test them as open, take the following
 
 1. Review the pre-populated sites created during site pairing, then select **Continue**. If this site is the first service mesh configuration, the first screen doesn't need modification.
 
-    :::image type="content" source="../media/5-pre-populated-sites.png" alt-text="Screenshot of the pre-populated site pairing created earlier.":::
-
 1. Select both the source and remote compute profiles from the dropdown lists, then select **Continue**. These selections define where VMs can use VMware HCX services for migration.
 
     :::image type="content" source="../media/5-select-compute-profile-source.png" alt-text="Screenshot that shows selecting the source compute profile in the on-premises HCX Connector.":::

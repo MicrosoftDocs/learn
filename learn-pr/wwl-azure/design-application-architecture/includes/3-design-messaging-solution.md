@@ -1,4 +1,4 @@
-Azure offers two message-based solutions, Azure Queue Storage and Azure Service Bus. Queue Storage stores large numbers of messages in Azure Storage. Service Bus is a message broker that decouples applications and services. We'll examine the different features and capabilities of these services and consider how to choose which service to implement.
+Azure offers two message-based solutions, Azure Queue Storage and Azure Service Bus. Queue Storage stores large numbers of messages in Azure Storage. Service Bus is a message broker that decouples applications and services. We examine the different features and capabilities of these services and consider how to choose which service to implement.
 
 One of your design tasks for Tailwind Traders is to recommend a design for their product demo application. Customers use the app to get the latest tips, reviews, and instructions for featured home improvement products. You have two requirements for the app design:
 - Ensure all content files are uploaded to the web API reliably from the mobile app. Files include text, images, and video.
@@ -8,7 +8,7 @@ For these app requirements, the ideal solution is a message-based system.
 
 ### Things to know about Azure Queue Storage
 
-[Azure Queue Storage](/azure/storage/queues/storage-queues-introduction) is a service that uses Azure Storage to store large numbers of messages.  Examine the following characteristics of the service.
+[Azure Queue Storage](/azure/storage/queues/storage-queues-introduction) is a service that uses Azure Storage to store large numbers of messages. Examine the following characteristics of the service.
 
 :::image type="content" source="../media/queue-storage.png" alt-text="Illustration of a storage account with two message queues in Azure Queue Storage." border="false":::
 
@@ -62,6 +62,6 @@ Each Azure messaging solution has a slightly different set of features and capab
 
 | Messaging solution | Example scenarios |
 | --- | --- |
- **Azure Queue Storage** | _You want a simple queue to organize messages_.<br><br> _You need an audit trail of all messages that pass through the queue_.<br><br>  _You expect the queue storage to exceed 80 GB_.<br><br> _You'd like to track progress for processing a message inside of the queue_. |
-|  **Azure Service Bus** <br> _message queues_ |_You require an at-most-once delivery guarantee_.<br><br> _You require at-least-once message processing (PeekLock receive mode)_.<br><br> _You require at-most-once message processing (ReceiveAndDelete receive mode)_.<br><br> _You want to group messages into transactions_.<br><br> _You want to receive messages without polling the queue_.<br><br> _You need to handle messages larger than 64 KB_.<br><br> _You expect the queue storage won't exceed 80 GB_.<br><br> _You'd like to publish and consume batches of messages_. |
+ **Azure Queue Storage** | _You want a simple queue to organize messages_.<br><br> _You need an audit trail of all messages that pass through the queue_.<br><br>  _The queue storage exceeds 80 GB_.<br><br> _You'd like to track progress for processing a message inside of the queue_. |
+|  **Azure Service Bus** <br> _message queues_ |_You require an at-most-once delivery guarantee_.<br><br> _You require at-least-once message processing (PeekLock receive mode)_.<br><br> _You require at-most-once message processing (ReceiveAndDelete receive mode)_.<br><br> _You want to group messages into transactions_.<br><br> _You want to receive messages without polling the queue_.<br><br> _You need to handle messages larger than 64 KB_.<br><br> _The queue storage doesn't exceed 80 GB_.<br><br> _You'd like to publish and consume batches of messages_. |
 | **Azure Service Bus** <br> _publish-subscribe topics_ | _You need multiple receivers to handle each message_.<br><br> _You expect multiple destinations for a single message but need queue-like behavior_. | 

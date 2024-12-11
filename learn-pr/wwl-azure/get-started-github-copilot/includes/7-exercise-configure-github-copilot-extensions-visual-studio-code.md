@@ -10,7 +10,7 @@ To view the enable and disable options for the GitHub Copilot extension, follow 
 
 1. In the list of installed extensions, scroll down until you find **GitHub Copilot**.
 
-1. To display a dropdown menu for the GitHub Copilot extension that list Enable and Disable options, select on the gear icon next to GitHub Copilot.
+1. To display a dropdown menu for the GitHub Copilot extension that lists Enable and Disable options, select on the gear icon next to GitHub Copilot.
 
     ![Screenshot showing a dropdown menu for the GitHub Copilot extension.](../media/github-copilot-enable-disable.png)
 
@@ -78,16 +78,16 @@ To view the configuration settings for GitHub Copilot, follow these steps:
 
     Notice that the settings list is now filtered for GitHub Copilot Chat only.
 
-    The settings for GitHub Copilot Chat include the following options:
+    The settings for GitHub Copilot Chat include **Preview** and **Experimental** options. Setting choices include the following options:
 
-    - Specify a **Preferred Account** for GitHub Copilot. This option is left blank by default.
-    - Specify a **Locale Override** for Copilot responses. By default, GitHub Copilot responds using Visual Studio Code's configured display language locale.
-    - Enable or disable **Scope Selection**. This option is disabled by default. When enabled, the user is prompted for a scope symbol when the user uses `/explain` in Chat without anything selected in the Editor.
-    - Specify the **Terminal Chat Location** for queries that originate in Visual Studio Code's Integrated Terminal. The default setting is the Chat View. The other option is the Quick Chat area.
-    - Enable or disable **Use Project Templates**. This option is enabled by default so that GitHub Copilot uses relevant GitHub project templates when the user uses `/new` in Chat.
-    - Specify when to show a detailed **Welcome Message** for GitHub Copilot Chat. The default setting is **first** use. The other options are **never** and **always**.
-    - Enable or disable **Enable Code Actions**. This option is enabled by default so that GitHub Copilot can provide code actions in the Editor.
-    - Enable or disable **Trigger Automatically** for GitHub Copilot. This option, which is enabled by default, controls whether GitHub Copilot suggestions are shown automatically as you type.
+    - **Fix Test Failure**: This option is enabled by default so that GitHub Copilot can provide suggestions for fixing test failures.
+    - **Follow Ups**: By default, this setting is set to **firstOnly**, which means that GitHub Copilot provides follow-up suggestions only after the first suggestion. The other options are **always** and **never**.
+    - **Local Override**: By default, this option is set to **auto**, which means that GitHub Copilot uses the locale of the Visual Studio Code display language.
+    - **Scope Selection**: This option is disabled by default. When enabled, the user is prompted for a scope symbol when the user uses `/explain` in Chat without anything selected in the Editor.
+    - **Terminal Chat Location**: The default setting is chatView, which specifies the Chat View. The other options are for the Quick Chat area and the Terminal.
+    - **Use Project Templates**: This option is enabled by default so that GitHub Copilot uses relevant GitHub project templates when the user uses `/new` in Chat.
+    - **Enable Code Actions**: This option is enabled by default so that GitHub Copilot can provide code actions in the Editor.
+    - **Trigger Automatically**: This option is enabled by default so that GitHub Copilot suggestions are shown automatically as you type.
 
     We recommend keeping the default settings during this training. This helps to ensure that you have the expected experience when working on the modules in this learning path. When you have completed the training, you can experiment with these settings to customize your experience with GitHub Copilot and Copilot Chat.
 

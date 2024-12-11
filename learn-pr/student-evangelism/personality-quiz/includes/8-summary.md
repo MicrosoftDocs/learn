@@ -1,6 +1,6 @@
 With your <b>quiz.py</b> file, you can now truly know who your friends and family are. Well, kind of. :)
 
-Special thanks to [Audrey St. John from Mount Holyoke College](https://www.mtholyoke.edu/directory/faculty-staff/audrey-st-john), who inspired this lesson from the "active learning module" developed by Emily Craig and Sarah Robinson for the [MaGE](https://sites.google.com/a/mtholyoke.edu/mage/?azure-portal=true) inclusive peer mentoring program at Mount Holyoke College.
+Special thanks to [Audrey St. John from Mount Holyoke College](https://www.mtholyoke.edu/directory/faculty-staff/audrey-st-john), who inspired this lesson from the "active learning module" developed by Emily Craig and Sarah Robinson for the [MaGE](https://sites.google.com/mtholyoke.edu/mage-training-curriculum) inclusive peer mentoring program at Mount Holyoke College.
 
 > [!TIP]
 > Remember, this module is part of a multimodal learning experience. [Follow along with a video walkthrough of a similar program](https://youtu.be/zawdAAZZcTE?azure-portal=true) in a new tab.

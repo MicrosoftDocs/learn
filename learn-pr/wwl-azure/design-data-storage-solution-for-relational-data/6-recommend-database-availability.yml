@@ -4,12 +4,12 @@ title: Recommend a solution for database availability
 metadata:
   title: Recommend a solution for database availability
   description: "Recommend a solution for database availability"
-  ms.date: 08/30/2024
+  ms.date: 12/10/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/6-recommend-database-availability.md)]

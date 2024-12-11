@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.hub-and-spoke-network-architecture.5-secure-hub-spoke
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure your hub-spoke network
   description: Secure your hub-spoke network
   ms.date: 02/19/2024
@@ -36,3 +38,4 @@ quiz:
     - content: "It routes traffic from your network to Azure over the internet."
       isCorrect: false
       explanation: "Traffic over an ExpressRoute connection is not routed over the internet. It goes through a private circuit instead."
+

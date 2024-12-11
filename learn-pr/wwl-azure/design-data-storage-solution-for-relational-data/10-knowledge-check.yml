@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/30/2024
+  ms.date: 12/10/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -48,4 +48,4 @@ quiz:
       explanation: "Correct. The Hyperscale tier can support up to 100 TB of data."
     - content: "Business Critical"
       isCorrect: false
-      explanation: "Incorrect. The Business Critical tier can't support up to 80 TB of data"
+      explanation: "Incorrect. The Business Critical tier can't support up to 80 TB of data."

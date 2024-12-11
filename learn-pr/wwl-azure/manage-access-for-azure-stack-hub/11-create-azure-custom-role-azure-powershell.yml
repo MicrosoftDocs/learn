@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-access-for-azure-stack-hub.create-azure-custom-role-using-azure-powershell
 title: Create an Azure custom role using Azure PowerShell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create an Azure custom role using Azure PowerShell
   description: "Create an Azure custom role using Azure PowerShell"
   ms.date: 07/29/2022
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/11-create-azure-custom-role-azure-powershell.md)]
+

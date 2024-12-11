@@ -3,6 +3,8 @@ uid: learn.tour-azure-portal-features.6-customize-the-dashboard
 title: Azure portal dashboards
 durationInMinutes: 8
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure portal dashboards
   description: Learn how to customize the Azure portal dashboard by adding your most-used services and apps.
   ms.date: 04/08/2024
@@ -11,3 +13,4 @@ metadata:
   ms.topic: unit
 content: |
   [!include[](includes/6-customize-the-dashboard.md)]
+

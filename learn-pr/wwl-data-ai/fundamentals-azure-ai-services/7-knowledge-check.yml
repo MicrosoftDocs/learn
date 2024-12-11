@@ -2,6 +2,8 @@
 uid: learn.wwl.fundamentals-azure-ai-services.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/03/2024
@@ -24,7 +26,7 @@ quiz:
     - content: "It's not possible to see costs for individual AI services"
       isCorrect: false
       explanation: "Incorrect. It's possible to see costs separately for each AI service resource."
-  - content: "After logging into one of the individual Azure studios, what is one task to complete to begin using the studio?"
+  - content: "After logging into one of the individual Azure studios, what is one task to complete to begin using the individual studio?"
     choices:
     - content: "Input a key and endpoint into the studio"
       isCorrect: false

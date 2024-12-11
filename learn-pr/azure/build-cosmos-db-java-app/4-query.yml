@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.cosmos-db-java-app.4-query
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Query by using the Azure Cosmos DB Java SDK
   description: Exercise - Query by using the Azure Cosmos DB Java SDK
   ms.date: 11/02/2020
   author: kushagraThapar
   ms.author: kuthapar
-  manager: jroth
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java
@@ -15,3 +16,4 @@ title: Exercise - Query by using the Azure Cosmos DB Java SDK
 durationInMinutes: 5
 content: |
   [!include[](includes/4-query.md)]
+

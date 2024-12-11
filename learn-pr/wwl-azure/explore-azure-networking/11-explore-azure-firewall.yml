@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-networking.firewall
 title: Explore Azure Firewall
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Firewall
   description: "Protect your Azure Virtual Network resources with Azure Firewall."
   ms.date: 10/03/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-secure-access-pipeline-resources.secure-repositories
 title: Secure repositories
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure repositories
   description: "Secure repositories."
   ms.date: 1/25/2023

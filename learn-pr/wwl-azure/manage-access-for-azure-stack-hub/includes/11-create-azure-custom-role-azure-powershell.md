@@ -62,7 +62,7 @@ Get-AzSubscription
 
 ```
 
-6.  In `AssignableScopes`, add your subscription ID with the following format: `"/subscriptions/00000000-0000-0000-0000-000000000000"`
+6.  In `AssignableScopes`, add your subscription ID with the following format: `"/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e"`
 
 Add explicit subscription IDs, otherwise you won't be allowed to import the role into your subscription.
 
@@ -84,7 +84,7 @@ The JSON file should look like the following:
   "DataActions": [],
   "NotDataActions": [],
   "AssignableScopes": [
-    "/subscriptions/00000000-0000-0000-0000-000000000000"
+    "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e"
   ]
 }
 
@@ -109,7 +109,7 @@ Actions         : {*/read, Microsoft.Support/*}
 NotActions      : {}
 DataActions     : {}
 NotDataActions  : {}
-AssignableScopes : {/subscriptions/00000000-0000-0000-0000-000000000000}
+AssignableScopes : {/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e}
 
 
 ```

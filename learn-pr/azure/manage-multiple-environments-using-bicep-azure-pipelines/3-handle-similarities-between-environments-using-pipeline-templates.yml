@@ -2,6 +2,8 @@
 uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.handle-similarities-between-environments-using-pipeline-templates
 title: Handle similarities between environments by using pipeline templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Handle similarities between environments by using pipeline templates
   description: Learn about pipeline templates and template parameters.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-handle-similarities-between-environments-using-pipeline-templates.md)]
+

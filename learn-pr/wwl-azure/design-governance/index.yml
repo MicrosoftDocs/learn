@@ -3,10 +3,11 @@ uid: learn.wwl.design-governance
 metadata:
   title: Design governance
   description: "Azure Architects design and recommend governance solutions."
-  ms.date: 09/02/2024
+  ms.date: 12/04/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure

@@ -2,12 +2,16 @@
 uid: learn.startups.mentor-meeting.topics-with-mentors
 title: Differentiate between the topics that apply to you as a founder versus the topics that apply to aspects of the business
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Differentiate between the topics that apply to you as a founder versus the topics that apply to aspects of the business
   description: "This content is part of the \"Make the most of a mentor meeting\" module."
   ms.date: 04/18/2024
   author: vhawk85
   ms.author: vahughes
   ms.topic: unit
+  ms.collection: learn-startups
 durationInMinutes: 5
 content: |
   [!include[](includes/3-topics-with-mentors.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.introduction-to-azure-iot-central.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: This content is a part of Introduction to Azure IoT Central.
   ms.date: 06/11/2024
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

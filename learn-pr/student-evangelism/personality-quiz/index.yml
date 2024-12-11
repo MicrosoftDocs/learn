@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.python-partnership.personality-quiz
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is your super sleuth personality?
   description: What is your super sleuth personality? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
   ms.date: 04/14/2021
@@ -44,3 +46,4 @@ units:
 - learn.python-partnership.personality-quiz.summary
 badge:
   uid: learn.python-partnership.personality-quiz.badge
+

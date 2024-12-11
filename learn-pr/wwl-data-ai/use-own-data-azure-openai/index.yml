@@ -1,11 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.use-own-data-azure-openai
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Retrieval Augmented Generation (RAG) with Azure OpenAI Service
   description: Learn how to use your own data with the Azure OpenAI Service.
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/06/2024
+  ms.date: 11/15/2024
   ms.service: azure-ai-openai
   ms.topic: module-standard-task-based
   ms.collection:
@@ -44,5 +46,4 @@ units:
 - learn.wwl.use-own-data-azure-openai.knowledge-check
 - learn.wwl.use-own-data-azure-openai.summary
 badge:
-  uid: |
-    learn.wwl.use-own-data-azure-openai.badge
+  uid: learn.wwl.use-own-data-azure-openai.badge

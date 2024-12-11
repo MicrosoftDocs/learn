@@ -56,7 +56,7 @@ Uri fileUri = new Uri ("<url-of-document-to-analyze>");
 
 var content = new AnalyzeDocumentContent()
 {
-    UrlSource = uriSource
+    UrlSource = fileUri
 };
 
 Operation<AnalyzeResult> operation = await client.AnalyzeDocumentAsync(WaitUntil.Completed, "prebuilt-layout", content);

@@ -2,11 +2,13 @@
 uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 10/09/2023
+  ms.date: 11/19/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -36,3 +38,4 @@ quiz:
     - content: "Sweep"
       isCorrect: false
       explanation: "Incorrect. A sweep job is used for hyperparameter tuning."
+

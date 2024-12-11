@@ -26,7 +26,7 @@ Let's review the characteristics of the service:
 
 #### How Azure Cache for Redis works
 
-Azure Cache for Redis is operated by Microsoft, hosted on Azure, and usable by any application within or outside of Azure. The following illustration shows how Azure Cache for Redis works in applications.
+Azure Cache for Redis is hosted on Azure, and usable by any application within or outside of Azure. The following illustration shows how Azure Cache for Redis works in applications.
 
 :::image type="content" source="../media/azure-cache-for-redis.png" alt-text="Illustration that shows a typical use case for Azure Cache for Redis." border="false":::
 

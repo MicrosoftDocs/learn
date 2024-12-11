@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.cosmos-db-java-app.6-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 09/15/2020
   author: kushagraThapar
   ms.author: kuthapar
-  manager: jroth
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java
@@ -14,3 +15,4 @@ title: Summary
 durationInMinutes: 3
 content: |
   [!include[](includes/6-summary.md)]
+

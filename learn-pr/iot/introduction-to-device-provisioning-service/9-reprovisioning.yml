@@ -2,6 +2,8 @@
 uid: learn.introduction-to-device-provisioning-service.examine-reprovisioning-process
 title: Examine the reprovisioning process
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine the reprovisioning process
   description: "Examine the reprovisioning process"
   ms.date: 12/15/2023

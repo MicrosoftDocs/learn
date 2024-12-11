@@ -16,9 +16,9 @@ Microsoft Defender for Cloud also provides hardening recommendations based on an
 
 :::image type="content" source="../media/defender-for-cloud-security-posture.png" lightbox="../media/defender-for-cloud-security-posture.png" alt-text="Screenshot showing part of Microsoft Defender for Cloud with recommendations.":::
 
-#### Integration with Microsoft Copilot for Security
+#### Integration with Microsoft Security Copilot
 
-For businesses that are onboarded to Microsoft Copilot for Security, Microsoft Defender for Cloud embeds capabilities of Microsoft Copilot for Security on the recommendations page. Microsoft Copilot in Microsoft Defender for Cloud can help support security professionals to understand the context of a recommendation, the effect of implementing a recommendation, assist with remediating or delegating a recommendation, and assist with the remediation of misconfigurations in code.
+For businesses that are onboarded to Microsoft Security Copilot, Microsoft Defender for Cloud embeds capabilities of Microsoft Security Copilot on the recommendations page. Microsoft Copilot in Microsoft Defender for Cloud can help support security professionals to understand the context of a recommendation, the effect of implementing a recommendation, assist with remediating or delegating a recommendation, and assist with the remediation of misconfigurations in code.
 
 :::image type="content" source="../media/copilot-in-defender-for-cloud.png" lightbox="../media/copilot-in-defender-for-cloud.png" alt-text="Screenshot showing Copilot embedded in the recommendations page of Microsoft Defender for Cloud.":::
 

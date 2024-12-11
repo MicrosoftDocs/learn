@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-resources-tools.interactive-simulation-powershell
 title: Interactive lab simulation (Azure PowerShell)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Interactive lab simulation (Azure PowerShell)
   description: "Interactive lab simulation (Azure PowerShell)"
   ms.date: 10/26/2022
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/5-simulation-powershell.md)]
+

@@ -1,9 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-deploy-configure.4-exercise-verify-database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Verify Azure SQL Database
   description: Exercise - Verify Azure SQL Database
-  ms.date: 10/16/2023
+  ms.date: 11/11/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: unit

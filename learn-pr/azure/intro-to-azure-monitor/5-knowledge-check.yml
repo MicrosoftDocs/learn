@@ -2,10 +2,12 @@
 uid: learn.azure.intro-to-azure-monitor.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: "Azure Monitor knowledge check" # user input: module title for browser tab and search results
   description: "Check your knowledge of Azure Monitor." # user input: a description for site search and SEO.
-  ms.date: 08/31/2023
+  ms.date: 11/13/2024
   author: guywi-ms
   ms.author: guywild
   ms.topic: unit
@@ -65,8 +67,9 @@ quiz:
       explanation: "Incorrect. You can use Event Hubs to stream monitoring data to external tools, but it isn't an optimal tool for combining metrics into a single view."
     - content: "Log Analytics workspace."
       isCorrect: false
-      explanation: "Incorrect. A Log Analytics workspace is required for the Azure Monitor logging and lets you query data, but isn't an optimal tool for combining metrics into a single view."
+      explanation: "Incorrect. A Log Analytics workspace is required for the Azure Monitor logging and lets you query data. However, it isn't an optimal tool for combining metrics into a single view."
     - content: "Azure Dashboards."
       isCorrect: true
       explanation: "Correct. Dashboards can combine different kinds of data into a single pane in the Azure portal."
   
+

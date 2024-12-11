@@ -71,7 +71,7 @@ Developers can encounter various security flaws in their code, which can lead to
 - Insecure Direct Object References (IDOR): A type of access control issue that arises when an application provides direct access to objects based on user-supplied input.
 - Missing Function Level Access Control: Sometimes an application does not properly protect function level access controls, allowing attackers to forge requests to access functionality without proper authorization.
 
-Many other security flaws can found in code. It’s important for developers to use tools and practices to identify and fix these issues proactively.
+Many other security flaws can be found in code. It’s important for developers to use tools and best practices to identify and fix these issues proactively.
 
 ## Improve code security using GitHub Copilot Chat
 
@@ -106,17 +106,17 @@ Your goal for this exercise is to write prompts that help you to improve code se
 
     For this project, you can use the following prompts to generate suggestions for improving your code security:
 
-    Prompt: `@workspace /explain #file:BankAccount.cs How can I implement authentication in the selected code?` (BankAccount.cs)
+    Prompt: `@workspace /explain How can I implement authentication in the [selected code]?` (attach BankAccount.cs to the Chat context)
 
-    Prompt: `@workspace /explain #file:BankAccount.cs How can I protect sensitive data in the selected code?` (BankAccount.cs)
+    Prompt: `@workspace /explain How can I protect sensitive data in the [selected code]?` (attach BankAccount.cs to the Chat context)
 
-    Prompt: `@workspace /explain #file:BankAccount.cs How can I implement logging of suspicious account activities of the selected code?` (BankAccount.cs)
+    Prompt: `@workspace /explain How can I implement logging of suspicious account activities of the [selected code]?` (attach BankAccount.cs to the Chat context)
 
-    Prompt: `@workspace /explain #file:BankAccount.cs How can I improve the security of exception handling in the selected code?` (BankAccount.cs)
+    Prompt: `@workspace /explain How can I improve the security of exception handling in the [selected code]?` (attach BankAccount.cs to the Chat context)
 
-    Prompt: `@workspace /explain #file:BankAccount.cs How can I improve the security of the selected code?` (BankAccount.cs)
+    Prompt: `@workspace /explain How can I improve the security of the [selected code]?` (attach BankAccount.cs to the Chat context)
 
-    Prompt: `@workspace /explain #file:Program.cs How can I improve the security of the selected code?` (Program.cs)
+    Prompt: `@workspace /explain How can I improve the security of the [selected code]?` (attach Program.cs to the Chat context)
 
 1. Select three prompts to use during the remainder of the exercise.
 
@@ -139,11 +139,20 @@ GitHub Copilot Chat can be used to help improve code security. Your prompts can 
 
 1. Open the BankAccount.cs file in Visual Studio Code, and then select all of the code in the file.
 
-1. Open the Chat view, and then enter the first prompt that you prepared for the BankAccount class.
+1. Open the Chat view.
+
+1. In the Chat view, use the **Attach Context** button to add relevant files to the Chat context, and then enter your prompt.
 
 1. Review the suggestions provided by GitHub Copilot Chat.
 
-    For example, if you enter `@workspace /explain #file:BankAccount.cs How can I implement authentication in the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
+    For example, suppose you complete the following actions:
+
+    - You open the BankAccount.cs file and select all of the code.
+    - You choose the following prompt: `@workspace /explain How can I implement authentication in the BankAccount.cs file?`
+    - You open the Chat view and attach the BankAccount.cs and Program.cs files to the Chat context.
+    - You enter the prompt in the Chat view.
+
+    GitHub Copilot Chat suggests updates that are similar to the following response:
 
     *Implementing authentication in this context would typically involve adding a method to the BankAccount class that verifies the account holder's identity before allowing certain operations. This could be done using a password, a PIN, or some other form of authentication.*
 
@@ -184,57 +193,382 @@ GitHub Copilot Chat can be used to help improve code security. Your prompts can 
 
     *In this example, a password is added as a parameter to the BankAccount constructor and stored in a private field. An Authenticate method is added that checks if the provided password matches the stored password. The Credit method (and other methods that should require authentication) is modified to take a password as an argument and call Authenticate before performing the operation.*
 
-    *This is a very basic form of authentication and would not be secure enough for a real banking application. In a real application, you would want to hash and salt the password before storing it, and you would need to use secure methods to transmit the password from the user to the application. You might also want to consider using two-factor authentication or other more secure methods.*
+    *This is a very basic form of authentication and is not secure enough for real applications. In a real application, you would want to hash and salt the password before storing it, and you would need to use secure methods to transmit the password from the user to the application. You might also want to consider using two-factor authentication or other more secure methods.*
 
 1. Implement the suggested updates that help to improve code security for your `BankAccount` class.
 
-1. To ensure that no errors were introduced by the changes, build and run your solution before continuing.
+    The Program.cs file must be updated to use the password and authentication added to the BankAccount class. You can use GitHub Copilot Chat to generate suggestions for updating the Program.cs file.
+
+    1. Select the contents of the Program.cs file, attach the Program.cs and BankAccount.cs files to the Chat context, and then enter the following prompt in the Chat view:
+
+        ```plaintext
+        @workspace /Explain How can I update the Program.cs file to use the password and authentication added to BankAccount.cs?
+        ```
+
+    1. Review the suggestions provided by GitHub Copilot Chat, and then implement the suggested updates.
+
+    1. To ensure that no errors were introduced by the changes, build and run your solution before continuing.
+
+        Use GitHub Copilot to help resolve any issues identified during the build process.
+
+    > [!IMPORTANT]
+    > This very basic form of authentication is not secure enough for real applications. In a real application, you would want to hash and salt the password before storing it, and you would need to use secure methods to transmit the password from the user to the application. You might also want to consider using two-factor authentication or other more secure methods.
+
+1. Ensure that your application builds and runs before continuing.
 
 1. Select all of the code in the BankAccount.cs file, and then enter your second prompt in the Chat view.
 
 1. Review the suggestions provided by GitHub Copilot Chat.
 
-    For example, if you enter `@workspace /explain #file:BankAccount.cs How can I protect sensitive data in the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
+    For example, suppose you complete the following actions:
 
-    *In the provided code, sensitive data such as AccountNumber and AccountHolderName are publicly accessible properties of the BankAccount class. This could potentially expose sensitive information.*
+    - You open the BankAccount.cs file and select all of the code.
+    - You choose the following prompt: `@workspace /explain How can I protect account numbers and account holder names in the selected code?`
+    - You open the Chat view and attach the BankAccount.cs and Program.cs files to the Chat context.
+    - You enter the prompt in the Chat view.
 
-    *To protect this data, you could:*
+    GitHub Copilot Chat suggests updates that are similar to the following response:
 
-    *1. Encapsulation: Make these properties private and provide public methods to access them if necessary. This way, you can control how and when this data is accessed.*
+    *To protect sensitive data such as account numbers and account holder names in your BankAccount class, you can take the following steps:*
+
+    *1. Use Encapsulation:*
+
+    *- Make the sensitive properties private and provide controlled access through methods.*
+
+    *2. Encrypt Sensitive Data:*
+
+    *-Use encryption to store sensitive data securely.*
+
+    *3. Avoid Plaintext Storage:*
+
+    *- Ensure that sensitive data is not stored or transmitted in plaintext.*
+
+    *Updated Implementation*
+
+    *Here is an updated version of BankAccount.cs that uses encryption for account numbers and account holder names:*
 
     ```csharp
-    private string AccountNumber { get; }
-    private string AccountHolderName { get; }
+    using System;
+    using System.Security.Cryptography;
+    using System.Text;
     
-    public string GetAccountNumber() 
+    namespace BankAccountApp
     {
-        // Add any necessary logic here before returning the account number
-        return AccountNumber;
-    }
+        public class InsufficientFundsException : Exception
+        {
+            public double AttemptedAmount { get; }
+            public double CurrentBalance { get; }
     
-    public string GetAccountHolderName() 
-    {
-        // Add any necessary logic here before returning the account holder name
-        return AccountHolderName;
+            public InsufficientFundsException(double attemptedAmount, double currentBalance)
+                : base($"Insufficient balance for debit. Attempted to debit {attemptedAmount}, but current balance is {currentBalance}.")
+            {
+                AttemptedAmount = attemptedAmount;
+                CurrentBalance = currentBalance;
+            }
+        }
+    
+        public class InvalidAccountTypeException : Exception
+        {
+            public string AccountType { get; }
+    
+            public InvalidAccountTypeException(string accountType)
+                : base($"Invalid account type: {accountType}.")
+            {
+                AccountType = accountType;
+            }
+        }
+    
+        public class InvalidAccountNumberException : Exception
+        {
+            public string AccountNumber { get; }
+    
+            public InvalidAccountNumberException(string accountNumber)
+                : base($"Invalid account number: {accountNumber}.")
+            {
+                AccountNumber = accountNumber;
+            }
+        }
+    
+        public class InvalidAccountHolderNameException : Exception
+        {
+            public string AccountHolderName { get; }
+    
+            public InvalidAccountHolderNameException(string accountHolderName)
+                : base($"Invalid account holder name: {accountHolderName}.")
+            {
+                AccountHolderName = accountHolderName;
+            }
+        }
+    
+        public class InvalidDateOpenedException : Exception
+        {
+            public DateTime DateOpened { get; }
+    
+            public InvalidDateOpenedException(DateTime dateOpened)
+                : base($"Invalid date opened: {dateOpened}.")
+            {
+                DateOpened = dateOpened;
+            }
+        }
+    
+        public class InvalidInitialBalanceException : Exception
+        {
+            public double InitialBalance { get; }
+    
+            public InvalidInitialBalanceException(double initialBalance)
+                : base($"Invalid initial balance: {initialBalance}.")
+            {
+                InitialBalance = initialBalance;
+            }
+        }
+    
+        public class InvalidInterestRateException : Exception
+        {
+            public double InterestRate { get; }
+    
+            public InvalidInterestRateException(double interestRate)
+                : base($"Invalid interest rate: {interestRate}.")
+            {
+                InterestRate = interestRate;
+            }
+        }
+    
+        public class InvalidTransferAmountException : Exception
+        {
+            public double TransferAmount { get; }
+    
+            public InvalidTransferAmountException(double transferAmount)
+                : base($"Invalid transfer amount: {transferAmount}.")
+            {
+                TransferAmount = transferAmount;
+            }
+        }
+    
+        public class InvalidCreditAmountException : Exception
+        {
+            public double CreditAmount { get; }
+    
+            public InvalidCreditAmountException(double creditAmount)
+                : base($"Invalid credit amount: {creditAmount}.")
+            {
+                CreditAmount = creditAmount;
+            }
+        }
+    
+        public class InvalidDebitAmountException : Exception
+        {
+            public double DebitAmount { get; }
+    
+            public InvalidDebitAmountException(double debitAmount)
+                : base($"Invalid debit amount: {debitAmount}.")
+            {
+                DebitAmount = debitAmount;
+            }
+        }
+    
+        public class AuthenticationException : Exception
+        {
+            public AuthenticationException(string message) : base(message) { }
+        }
+    
+        public class BankAccount
+        {
+            public enum AccountTypes
+            {
+                Savings,
+                Checking,
+                MoneyMarket,
+                CertificateOfDeposit,
+                Retirement
+            }
+    
+            private string EncryptedAccountNumber { get; }
+            private string EncryptedAccountHolderName { get; }
+            public double Balance { get; private set; }
+            public AccountTypes AccountType { get; }
+            public DateTime DateOpened { get; }
+            private const double MaxTransferAmountForDifferentOwners = 500;
+    
+            private string Username { get; }
+            private string Password { get; }
+    
+            public BankAccount(string accountNumber, double initialBalance, string accountHolderName, string accountType, DateTime dateOpened, string username, string password)
+            {
+                if (accountNumber.Length != 10)
+                {
+                    throw new InvalidAccountNumberException(accountNumber);
+                }
+    
+                if (initialBalance < 0)
+                {
+                    throw new InvalidInitialBalanceException(initialBalance);
+                }
+    
+                if (accountHolderName.Length < 2)
+                {
+                    throw new InvalidAccountHolderNameException(accountHolderName);
+                }
+    
+                if (dateOpened > DateTime.Now)
+                {
+                    throw new InvalidDateOpenedException(dateOpened);
+                }
+    
+                EncryptedAccountNumber = Encrypt(accountNumber);
+                EncryptedAccountHolderName = Encrypt(accountHolderName);
+                Balance = initialBalance;
+                AccountType = (AccountTypes)Enum.Parse(typeof(AccountTypes), accountType);
+                DateOpened = dateOpened;
+                Username = username;
+                Password = password;
+            }
+    
+            public void Credit(double amount)
+            {
+                if (amount < 0)
+                {
+                    throw new InvalidCreditAmountException(amount);
+                }
+    
+                Balance += amount;
+            }
+    
+            public void Debit(double amount)
+            {
+                if (amount < 0)
+                {
+                    throw new InvalidDebitAmountException(amount);
+                }
+    
+                if (Balance >= amount)
+                {
+                    Balance -= amount;
+                }
+                else
+                {
+                    throw new InsufficientFundsException(amount, Balance);
+                }
+            }
+    
+            public double GetBalance()
+            {
+                return Balance;
+            }
+    
+            public void Transfer(BankAccount toAccount, double amount)
+            {
+                ValidateTransferAmount(amount);
+                ValidateTransferLimitForDifferentOwners(toAccount, amount);
+    
+                if (Balance >= amount)
+                {
+                    Debit(amount);
+                    toAccount.Credit(amount);
+                }
+                else
+                {
+                    throw new InsufficientFundsException(amount, Balance);
+                }
+            }
+    
+            private void ValidateTransferAmount(double amount)
+            {
+                if (amount < 0)
+                {
+                    throw new InvalidTransferAmountException(amount);
+                }
+            }
+    
+            private void ValidateTransferLimitForDifferentOwners(BankAccount toAccount, double amount)
+            {
+                if (Decrypt(EncryptedAccountHolderName) != Decrypt(toAccount.EncryptedAccountHolderName) && amount > MaxTransferAmountForDifferentOwners)
+                {
+                    throw new Exception("Transfer amount exceeds maximum limit for different account owners.");
+                }
+            }
+    
+            public void PrintStatement()
+            {
+                Console.WriteLine($"Account Number: {Decrypt(EncryptedAccountNumber)}, Balance: {Balance}");
+            }
+    
+            public double CalculateInterest(double interestRate)
+            {
+                if (interestRate < 0)
+                {
+                    throw new InvalidInterestRateException(interestRate);
+                }
+    
+                return Balance * interestRate;
+            }
+    
+            public void Authenticate(string username, string password)
+            {
+                if (Username != username || Password != password)
+                {
+                    throw new AuthenticationException("Invalid username or password.");
+                }
+            }
+    
+            private string Encrypt(string plainText)
+            {
+                using (Aes aes = Aes.Create())
+                {
+                    aes.Key = Encoding.UTF8.GetBytes("A very strong key"); // Use a secure key
+                    aes.IV = Encoding.UTF8.GetBytes("A strong IV123456"); // Use a secure IV
+    
+                    ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
+    
+                    using (var ms = new System.IO.MemoryStream())
+                    {
+                        using (var cs = new CryptoStream(ms, encryptor, CryptoStreamMode.Write))
+                        {
+                            using (var sw = new System.IO.StreamWriter(cs))
+                            {
+                                sw.Write(plainText);
+                            }
+                        }
+    
+                        return Convert.ToBase64String(ms.ToArray());
+                    }
+                }
+            }
+    
+            private string Decrypt(string cipherText)
+            {
+                using (Aes aes = Aes.Create())
+                {
+                    aes.Key = Encoding.UTF8.GetBytes("A very strong key"); // Use a secure key
+                    aes.IV = Encoding.UTF8.GetBytes("A strong IV123456"); // Use a secure IV
+    
+                    ICryptoTransform decryptor = aes.CreateDecryptor(aes.Key, aes.IV);
+    
+                    using (var ms = new System.IO.MemoryStream(Convert.FromBase64String(cipherText)))
+                    {
+                        using (var cs = new CryptoStream(ms, decryptor, CryptoStreamMode.Read))
+                        {
+                            using (var sr = new System.IO.StreamReader(cs))
+                            {
+                                return sr.ReadToEnd();
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     ```
 
-    *2. Data Masking: If you need to display these properties (for example, in a user interface), consider masking part of the data. For instance, you could display only the last four digits of the account number.*
+    *Usage:*
 
-    ```csharp
-    public string GetMaskedAccountNumber() 
-    {
-        return "**** **** " + AccountNumber.Substring(AccountNumber.Length - 4);
-    }
-    ```
+    *- Ensure you have the necessary cryptographic libraries available. The above example uses AES encryption with a hardcoded key and IV for simplicity. In a real-world application, you should securely manage keys and IVs, possibly using a key management service.*
 
-    *3. Encryption: If the data needs to be stored or transmitted, consider encrypting it. This would require a secure encryption and decryption mechanism.*
+    > [!IMPORTANT]
+    > In a real-world application, you should securely manage keys and IVs, possibly using a key management service. The examples provided in this training identify areas for improvement but do not represent best practices for secure encryption. You can use GitHub Copilot Chat to pursue additional suggestions for improving encryption and data protection in your application.
 
-    *Remember, the best way to protect sensitive data depends on your specific use case and requirements. Always follow best practices for data protection and comply with any relevant data protection laws and regulations.*
+1. Do not need to implement the suggested updates for the second prompt.
 
-1. Implement the suggested updates that help to improve code security for your `BankAccount` class.
-
-1. To ensure that no errors were introduced by the changes, build and run your solution before continuing.
+    In the example, the suggested updates would help to improve the security of the application, but they require significant configuration and updates to the Program.cs code that is beyond the scope of this exercise.
 
 ### Improve code security of the Program class using GitHub Copilot Chat
 
@@ -244,87 +578,499 @@ GitHub Copilot Chat can be used to help improve code security. Your prompts can 
 
 1. Review the suggestions provided by GitHub Copilot Chat.
 
-    For example, if you enter `@workspace /explain #file:Program.cs How can I improve the security of the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
+    For example, suppose you complete the following actions:
 
-    *The selected code is a simulation of bank transactions, so it doesn't directly deal with sensitive data or security concerns. However, if this were a real banking application, there would be several areas to consider for improving security:*
+    - You open the Program.cs file and select all of the code.
+    - You choose the following prompt: `@workspace /explain How can I improve the security of the Program.cs file?`
+    - You open the Chat view and attach the BankAccount.cs and Program.cs files to the Chat context.
+    - You enter the prompt in the Chat view.
 
-    *1. Sensitive Data Exposure: In a real-world application, sensitive data like account numbers, account holder names, and transaction amounts should be encrypted when stored and transmitted. In this code, these values are simply printed to the console, which would not be secure in a production environment.*
+    GitHub Copilot Chat suggests updates that are similar to the following response:
 
-    *2. Error Handling: The code catches exceptions and writes them to the console. In a real-world application, you should avoid exposing any detailed error information that could provide hints to an attacker about the internal workings of your application. Instead, log the details to a secure, private log and show a generic error message to the user.*
+    *To improve the security of the Program.cs file, you should focus on the following areas:*
 
-    *3. Random Number Generation: The Random class in C# is not suitable for generating secure random numbers, as it's predictable. If you need to generate secure random numbers (for example, for generating account numbers or transaction IDs), consider using a more secure method, like the RNGCryptoServiceProvider class.*
+    *1. Secure Password Handling:*
 
-    *4. Input Validation: While not directly applicable to this code, it's worth mentioning that any user-provided inputs should be validated and sanitized to prevent attacks such as SQL Injection or Cross-Site Scripting (XSS).*
+    *- Use secure password hashing and avoid storing passwords in plaintext.*
+    *- Use a library like BCrypt.Net for hashing passwords.*
 
-    *5. Secure Coding Practices: Follow secure coding practices like principle of least privilege, defense in depth, etc. For example, limit the permissions of the application to only what it needs to function.*
+    *2. Encrypt Sensitive Data:*
 
-   *Remember, security is a broad and complex field, and these are just a few areas to consider. Depending on the specific requirements and context of your application, there may be other security considerations as well.*
+    *- Encrypt sensitive data such as account numbers and account holder names.*
 
-1. Notice that the suggestions provided by GitHub Copilot Chat are general and do not directly apply to the code in the Program.cs file.
+    *3. Avoid Hardcoded Passwords:*
 
-    GitHub Copilot recognized that the application is a simulation and that it uses random numbers to generate account numbers and transaction IDs. The suggestions provided are relevant to a real-world banking application but may not be directly applicable to the simulation code.
+    *- Avoid using hardcoded passwords. Instead, generate strong random passwords or prompt users to create their own.*
 
-1. Assume that you're working on a real-world application and consider how you could modify your prompt to generate more specific suggestions.
+    *4. Use Secure Random Number Generation:*
 
-1. Construct an updated prompt and enter it in the Chat view.
+    *- Use a cryptographically secure random number generator for generating sensitive data.*
 
-1. Review the suggestions provided by GitHub Copilot Chat.
+    *Updated Implementation*
 
-    For example, if you enter `@workspace /explain #file:Program.cs How can I implement secure exception handling in the selected code?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
-
-    *The selected code already includes some basic exception handling, but there are a few ways you can improve it to make it more secure:*
-
-    *1. Avoid revealing sensitive information: When logging or displaying exceptions, be careful not to reveal sensitive information. For example, if an exception occurs because of a failed database operation, the exception message might contain the SQL query, which could reveal table names, column names, or other sensitive information. In the selected code, you're already doing a good job of this by only logging the exception message and not the entire exception.*
-
-    *2. Catch specific exceptions: It's generally a good practice to catch the most specific exceptions possible. This allows you to handle different types of exceptions in different ways. For example, you might want to retry the operation if a TimeoutException occurs, but if an InvalidOperationException occurs, you might want to log the error and abort the operation. In the selected code, you're catching ArgumentException and Exception, but there might be other specific exceptions you could catch as well.*
-
-    *3. Don't swallow exceptions: If you catch an exception and don't rethrow it or otherwise handle it, you're "swallowing" the exception. This can make it difficult to debug issues because it hides the fact that an exception occurred. In the selected code, you're logging the exceptions but not rethrowing them. Depending on the situation, you might want to rethrow the exception after logging it.*
-
-    *Here's an example of how you might modify the `CreateBankAccounts` method to implement these suggestions:*
+    *Here is an updated version of Program.cs that incorporates these improvements:*
 
     ```csharp
-    static List<BankAccount> CreateBankAccounts(int numberOfAccounts)
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Security.Cryptography;
+    using System.Text;
+    using System.Threading.Tasks;
+    
+    namespace BankAccountApp
     {
-        List<BankAccount> accounts = new();
-        int createdAccounts = 0;
-        while (createdAccounts < numberOfAccounts)
+        class Program
         {
-            try
+            private static readonly Random random = new Random();
+            private const int MaxYearsBack = 10;
+            private const int NumberOfAccounts = 20;
+            private const int NumberOfTransactions = 100;
+            private const double minTransactionAmount = -500.0;
+            private const double maxTransactionAmount = 500.0;
+            private const double minAccountStart = 200.0;
+            private const double maxAccountStart = 1000.0;
+    
+            static async Task Main()
             {
-                // ... same code as before ...
+                List<BankAccount> accounts = CreateBankAccounts(NumberOfAccounts);
+                await SimulateTransactionsAsync(accounts, NumberOfTransactions, minTransactionAmount, maxTransactionAmount);
+                await SimulateTransfersAsync(accounts, NumberOfTransactions, minTransactionAmount, maxTransactionAmount);
             }
-            catch (ArgumentException ex)
+    
+            static List<BankAccount> CreateBankAccounts(int numberOfAccounts)
             {
-                Console.WriteLine($"Account creation failed due to invalid argument: {ex.Message}");
-                // Log the exception
-                throw; // Rethrow the exception
+                List<BankAccount> accounts = new();
+                int createdAccounts = 0;
+                while (createdAccounts < numberOfAccounts)
+                {
+                    try
+                    {
+                        double initialBalance = GenerateRandomDollarAmount(true, minAccountStart, maxAccountStart);
+                        string accountHolderName = GenerateRandomAccountHolder();
+                        string accountType = GenerateRandomAccountType();
+                        DateTime dateOpened = GenerateRandomDateOpened();
+                        string accountNumber = "102000" + random.Next(1000, 9999).ToString();
+                        string username = "user" + createdAccounts;
+                        string password = GenerateSecurePassword();
+                        BankAccount account = new(accountNumber, initialBalance, accountHolderName, accountType, dateOpened, username, password);
+                        accounts.Add(account);
+                        createdAccounts++;
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        Console.WriteLine($"Account creation failed due to invalid argument: {ex.Message}");
+                        // Log the exception
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Account creation failed: {ex.Message}");
+                        // Log the exception
+                    }
+                    finally
+                    {
+                        // Any cleanup code would go here.
+                    }
+                }
+                return accounts;
             }
-            catch (TimeoutException ex)
+    
+            static async Task SimulateTransactionsAsync(List<BankAccount> accounts, int numberOfTransactions, double minTransactionAmount, double maxTransactionAmount)
             {
-                Console.WriteLine($"Account creation failed due to timeout: {ex.Message}");
-                // Log the exception
-                // You might want to retry the operation here
+                var tasks = accounts.Select(async account =>
+                {
+                    for (int i = 0; i < numberOfTransactions; i++)
+                    {
+                        double transactionAmount = GenerateRandomDollarAmount(false, minTransactionAmount, maxTransactionAmount);
+                        try
+                        {
+                            account.Authenticate(account.Username, account.Password); // Authenticate before transaction
+                            if (transactionAmount >= 0)
+                            {
+                                account.Credit(transactionAmount);
+                                Console.WriteLine($"Credit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                            }
+                            else
+                            {
+                                account.Debit(-transactionAmount);
+                                Console.WriteLine($"Debit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"Transaction failed: {ex.Message}");
+                        }
+                    }
+    
+                    Console.WriteLine($"Account: {account.AccountNumber}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                });
+    
+                await Task.WhenAll(tasks);
             }
-            catch (Exception ex)
+    
+            static async Task SimulateTransfersAsync(List<BankAccount> accounts, int numberOfTransactions, double minTransactionAmount, double maxTransactionAmount)
             {
-                Console.WriteLine($"Account creation failed: {ex.Message}");
-                // Log the exception
-                throw; // Rethrow the exception
+                var tasks = accounts.Select(async account =>
+                {
+                    for (int i = 0; i < numberOfTransactions; i++)
+                    {
+                        double transactionAmount = GenerateRandomDollarAmount(false, minTransactionAmount, maxTransactionAmount);
+                        try
+                        {
+                            account.Authenticate(account.Username, account.Password); // Authenticate before transfer
+                            BankAccount toAccount = accounts[random.Next(accounts.Count)];
+                            toAccount.Authenticate(toAccount.Username, toAccount.Password); // Authenticate target account
+                            account.Transfer(toAccount, transactionAmount);
+                            Console.WriteLine($"Transfer: {transactionAmount}, From: {account.AccountNumber}, To: {toAccount.AccountNumber}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"Transfer failed: {ex.Message}");
+                        }
+                    }
+    
+                    Console.WriteLine($"Account: {account.AccountNumber}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                });
+    
+                await Task.WhenAll(tasks);
             }
-            finally
+    
+            static double GenerateRandomDollarAmount(bool isAccount, double min, double max)
             {
-                // Any cleanup code would go here.
+                if (isAccount)
+                {
+                    double accountStartingValue = random.NextDouble() * (max - min) + min;
+                    return Math.Round(accountStartingValue, 2);
+                }
+                else
+                {
+                    double transactionAmount = random.NextDouble() * random.Next((int)min, (int)max) + random.NextDouble();
+                    return Math.Round(transactionAmount, 2);
+                }
+            }
+    
+            static string GenerateRandomAccountHolder()
+            {
+                string[] accountHolderNames = { "John Smith", "Maria Garcia", "Mohammed Khan", "Sophie Dubois", "Liam Johnson", "Emma Martinez", "Noah Lee", "Olivia Kim", "William Chen", "Ava Wang", "James Brown", "Isabella Nguyen", "Benjamin Wilson", "Mia Li", "Lucas Anderson", "Charlotte Liu", "Alexander Taylor", "Amelia Patel", "Daniel Garcia", "Sophia Kim" };
+                var accountHolderName = accountHolderNames[random.Next(0, accountHolderNames.Length)];
+                return accountHolderName;
+            }
+    
+            static string GenerateRandomAccountType()
+            {
+                string[] accountTypes = { "Savings", "Checking", "Money Market", "Certificate of Deposit", "Retirement" };
+                return accountTypes[random.Next(0, accountTypes.Length)];
+            }
+    
+            static DateTime GenerateRandomDateOpened()
+            {
+                DateTime startDate = new(DateTime.Today.Year - MaxYearsBack, 1, 1);
+                int daysRange = (DateTime.Today - startDate).Days;
+                DateTime randomDate = startDate.AddDays(random.Next(daysRange));
+    
+                if (randomDate.Year == DateTime.Today.Year && randomDate >= DateTime.Today)
+                {
+                    randomDate = randomDate.AddDays(-1);
+                }
+    
+                return randomDate;
+            }
+    
+            static string GenerateSecurePassword()
+            {
+                const int passwordLength = 12;
+                const string validChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()";
+                StringBuilder password = new StringBuilder();
+                using (RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider())
+                {
+                    byte[] uintBuffer = new byte[sizeof(uint)];
+    
+                    while (passwordLength > password.Length)
+                    {
+                        rng.GetBytes(uintBuffer);
+                        uint num = BitConverter.ToUInt32(uintBuffer, 0);
+                        password.Append(validChars[(int)(num % (uint)validChars.Length)]);
+                    }
+                }
+    
+                return password.ToString();
             }
         }
-        return accounts;
     }
     ```
 
-    *In this modified version of the method, we're catching TimeoutException in addition to ArgumentException and Exception, and we're rethrowing the exceptions after logging them. This makes it clear that an exception occurred, and allows higher-level code to decide how to handle the exception.*
+1. Notice that the updates to Program.cs focused on secure random number generation.
 
-1. Implement the suggested updates that help to improve code reliability for your `Program` class.
+    The other suggestions apply to the BankAccount class, and the implementation is beyond the scope of this training.
 
-1. To ensure that no errors were introduced by the changes, build and run your solution before continuing.
+1. Construct an additional prompt for Program.cs that seeks to secure exception handling.
+
+1. Review the suggestions provided by GitHub Copilot Chat.
+
+    For example, if you enter `@workspace /explain How can I implement secure exception handling in the Program.cs file?` in the Chat view, GitHub Copilot Chat suggests updates that are similar to the following response:
+
+    *To implement secure exception handling in the Program.cs file, you should follow these best practices:*
+
+    *1. Catch Specific Exceptions:*
+
+    *- Catch specific exceptions rather than using a general catch (Exception ex) block. This helps in understanding and handling different types of errors appropriately.*
+
+    *2. Log Exceptions Securely:*
+
+    *- Log exceptions securely without exposing sensitive information. Use a logging framework to manage logs.*
+
+    *3. Provide User-Friendly Messages:*
+
+    *- Provide user-friendly error messages without revealing internal details.*
+
+    *4. Use Finally Blocks for Cleanup:*
+
+    *- Use finally blocks to ensure that any necessary cleanup is performed, regardless of whether an exception was thrown.*
+
+    *5. Avoid Catching Non-Critical Exceptions:*
+
+    *- Avoid catching exceptions that should be allowed to propagate, such as OutOfMemoryException or StackOverflowException.*
+
+    *Here is an updated version of Program.cs with secure exception handling:*
+
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Security.Cryptography;
+    using System.Text;
+    using System.Threading.Tasks;
+    
+    namespace BankAccountApp
+    {
+        class Program
+        {
+            private static readonly Random random = new Random();
+            private const int MaxYearsBack = 10;
+            private const int NumberOfAccounts = 20;
+            private const int NumberOfTransactions = 100;
+            private const double minTransactionAmount = -500.0;
+            private const double maxTransactionAmount = 500.0;
+            private const double minAccountStart = 200.0;
+            private const double maxAccountStart = 1000.0;
+    
+            static async Task Main()
+            {
+                List<BankAccount> accounts = CreateBankAccounts(NumberOfAccounts);
+                await SimulateTransactionsAsync(accounts, NumberOfTransactions, minTransactionAmount, maxTransactionAmount);
+                await SimulateTransfersAsync(accounts, NumberOfTransactions, minTransactionAmount, maxTransactionAmount);
+            }
+    
+            static List<BankAccount> CreateBankAccounts(int numberOfAccounts)
+            {
+                List<BankAccount> accounts = new();
+                int createdAccounts = 0;
+                while (createdAccounts < numberOfAccounts)
+                {
+                    try
+                    {
+                        double initialBalance = GenerateRandomDollarAmount(true, minAccountStart, maxAccountStart);
+                        string accountHolderName = GenerateRandomAccountHolder();
+                        string accountType = GenerateRandomAccountType();
+                        DateTime dateOpened = GenerateRandomDateOpened();
+                        string accountNumber = "102000" + random.Next(1000, 9999).ToString();
+                        string username = "user" + createdAccounts;
+                        string password = GenerateSecurePassword();
+                        BankAccount account = new(accountNumber, initialBalance, accountHolderName, accountType, dateOpened, username, password);
+                        accounts.Add(account);
+                        createdAccounts++;
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        Console.WriteLine($"Account creation failed due to invalid argument: {ex.Message}");
+                        // Log the exception securely
+                        LogException(ex);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Account creation failed: {ex.Message}");
+                        // Log the exception securely
+                        LogException(ex);
+                    }
+                    finally
+                    {
+                        // Any cleanup code would go here.
+                    }
+                }
+                return accounts;
+            }
+    
+            static async Task SimulateTransactionsAsync(List<BankAccount> accounts, int numberOfTransactions, double minTransactionAmount, double maxTransactionAmount)
+            {
+                var tasks = accounts.Select(async account =>
+                {
+                    for (int i = 0; i < numberOfTransactions; i++)
+                    {
+                        double transactionAmount = GenerateRandomDollarAmount(false, minTransactionAmount, maxTransactionAmount);
+                        try
+                        {
+                            account.Authenticate(account.Username, account.Password); // Authenticate before transaction
+                            if (transactionAmount >= 0)
+                            {
+                                account.Credit(transactionAmount);
+                                Console.WriteLine($"Credit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                            }
+                            else
+                            {
+                                account.Debit(-transactionAmount);
+                                Console.WriteLine($"Debit: {transactionAmount}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                            }
+                        }
+                        catch (InvalidCreditAmountException ex)
+                        {
+                            Console.WriteLine($"Invalid credit amount: {ex.Message}");
+                            LogException(ex);
+                        }
+                        catch (InvalidDebitAmountException ex)
+                        {
+                            Console.WriteLine($"Invalid debit amount: {ex.Message}");
+                            LogException(ex);
+                        }
+                        catch (InsufficientFundsException ex)
+                        {
+                            Console.WriteLine($"Insufficient funds: {ex.Message}");
+                            LogException(ex);
+                        }
+                        catch (AuthenticationException ex)
+                        {
+                            Console.WriteLine($"Authentication failed: {ex.Message}");
+                            LogException(ex);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"Transaction failed: {ex.Message}");
+                            LogException(ex);
+                        }
+                    }
+    
+                    Console.WriteLine($"Account: {account.AccountNumber}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                });
+    
+                await Task.WhenAll(tasks);
+            }
+    
+            static async Task SimulateTransfersAsync(List<BankAccount> accounts, int numberOfTransactions, double minTransactionAmount, double maxTransactionAmount)
+            {
+                var tasks = accounts.Select(async account =>
+                {
+                    for (int i = 0; i < numberOfTransactions; i++)
+                    {
+                        double transactionAmount = GenerateRandomDollarAmount(false, minTransactionAmount, maxTransactionAmount);
+                        try
+                        {
+                            account.Authenticate(account.Username, account.Password); // Authenticate before transfer
+                            BankAccount toAccount = accounts[random.Next(accounts.Count)];
+                            toAccount.Authenticate(toAccount.Username, toAccount.Password); // Authenticate target account
+                            account.Transfer(toAccount, transactionAmount);
+                            Console.WriteLine($"Transfer: {transactionAmount}, From: {account.AccountNumber}, To: {toAccount.AccountNumber}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                        }
+                        catch (InvalidTransferAmountException ex)
+                        {
+                            Console.WriteLine($"Invalid transfer amount: {ex.Message}");
+                            LogException(ex);
+                        }
+                        catch (InsufficientFundsException ex)
+                        {
+                            Console.WriteLine($"Insufficient funds: {ex.Message}");
+                            LogException(ex);
+                        }
+                        catch (AuthenticationException ex)
+                        {
+                            Console.WriteLine($"Authentication failed: {ex.Message}");
+                            LogException(ex);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"Transfer failed: {ex.Message}");
+                            LogException(ex);
+                        }
+                    }
+    
+                    Console.WriteLine($"Account: {account.AccountNumber}, Balance: {account.Balance.ToString("C")}, Account Holder: {account.AccountHolderName}, Account Type: {account.AccountType}");
+                });
+    
+                await Task.WhenAll(tasks);
+            }
+    
+            static double GenerateRandomDollarAmount(bool isAccount, double min, double max)
+            {
+                if (isAccount)
+                {
+                    double accountStartingValue = random.NextDouble() * (max - min) + min;
+                    return Math.Round(accountStartingValue, 2);
+                }
+                else
+                {
+                    double transactionAmount = random.NextDouble() * random.Next((int)min, (int)max) + random.NextDouble();
+                    return Math.Round(transactionAmount, 2);
+                }
+            }
+    
+            static string GenerateRandomAccountHolder()
+            {
+                string[] accountHolderNames = { "John Smith", "Maria Garcia", "Mohammed Khan", "Sophie Dubois", "Liam Johnson", "Emma Martinez", "Noah Lee", "Olivia Kim", "William Chen", "Ava Wang", "James Brown", "Isabella Nguyen", "Benjamin Wilson", "Mia Li", "Lucas Anderson", "Charlotte Liu", "Alexander Taylor", "Amelia Patel", "Daniel Garcia", "Sophia Kim" };
+                var accountHolderName = accountHolderNames[random.Next(0, accountHolderNames.Length)];
+                return accountHolderName;
+            }
+    
+            static string GenerateRandomAccountType()
+            {
+                string[] accountTypes = { "Savings", "Checking", "Money Market", "Certificate of Deposit", "Retirement" };
+                return accountTypes[random.Next(0, accountTypes.Length)];
+            }
+    
+            static DateTime GenerateRandomDateOpened()
+            {
+                DateTime startDate = new(DateTime.Today.Year - MaxYearsBack, 1, 1);
+                int daysRange = (DateTime.Today - startDate).Days;
+                DateTime randomDate = startDate.AddDays(random.Next(daysRange));
+    
+                if (randomDate.Year == DateTime.Today.Year && randomDate >= DateTime.Today)
+                {
+                    randomDate = randomDate.AddDays(-1);
+                }
+    
+                return randomDate;
+            }
+    
+            static string GenerateSecurePassword()
+            {
+                const int passwordLength = 12;
+                const string validChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()";
+                StringBuilder password = new StringBuilder();
+                using (RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider())
+                {
+                    byte[] uintBuffer = new byte[sizeof(uint)];
+    
+                    while (passwordLength > password.Length)
+                    {
+                        rng.GetBytes(uintBuffer);
+                        uint num = BitConverter.ToUInt32(uintBuffer, 0);
+                        password.Append(validChars[(int)(num % (uint)validChars.Length)]);
+                    }
+                }
+    
+                return password.ToString();
+            }
+    
+            static void LogException(Exception ex)
+            {
+                // Implement a secure logging mechanism here
+                // For example, log to a file, database, or external logging service
+                Console.WriteLine($"Logged exception: {ex.Message}");
+            }
+        }
+    }
+    ```
+
+1. Implement the suggested updates that help to improve code security for your `Program.cs` file.
+
+1. To ensure that no errors were introduced by the changes, build and run your solution.
 
 ## Summary
 

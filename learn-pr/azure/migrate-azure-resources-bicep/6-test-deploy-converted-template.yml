@@ -2,6 +2,8 @@
 uid: learn.azure.migrate-azure-resources-bicep.test-deploy-converted-template
 title: Test and deploy your converted template
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Test and deploy your converted template
   description: Learn about the test and deploy phases of the recommended workflow for migrating your Azure resources to Bicep.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/6-test-deploy-converted-template.md)]
+

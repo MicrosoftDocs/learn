@@ -1,12 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.microsoft-learn-azure-database-for-postgresql
 metadata:
-  title: 'Configure and migrate to Azure Database for PostgreSQL  '
-  description: Azure Database for PostgreSQL is a Platform as a Service database service in the Microsoft cloud. It bases itself on the PostgreSQL open-source relational database and includes built-in high availability, automatic backup and restore, as well as comprehensive security features. The pay-as-you-go pricing model provides predictable performance and near-instant scaling. In this learning path, you're introduced to the main features of PostgreSQL and how they work in Azure Database for PostgreSQL. You learn about the different Azure Database for PostgreSQL implementation options, and how to configure a server for your needs.
+  title: 'Configure and migrate to Azure Database for PostgreSQL DP-3021'
+  description: Azure Database for PostgreSQL is a Platform as a Service database service in the Microsoft cloud. It bases itself on the PostgreSQL open-source relational database and includes built-in high availability, automatic backup and restore, as well as comprehensive security features. The pay-as-you-go pricing model provides predictable performance and near-instant scaling. In this learning path, you're introduced to the main features of PostgreSQL and how they work in Azure Database for PostgreSQL. You learn about the different Azure Database for PostgreSQL implementation options, and how to configure a server for your needs. (DP-3021)
   ms.date: 05/11/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: learning-path
+  adobe-target: true
 title: Configure and migrate to Azure Database for PostgreSQL
 prerequisites: |
   -   Demonstrate an understanding of relational databases.

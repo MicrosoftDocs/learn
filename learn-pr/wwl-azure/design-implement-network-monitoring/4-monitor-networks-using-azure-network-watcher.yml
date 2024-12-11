@@ -4,37 +4,37 @@ title: Monitor your networks using Azure network watcher
 metadata:
   title: Monitor your networks using Azure network watcher
   description: "Monitor your networks using Azure network watcher"
-  ms.date: 08/19/2024
+  ms.date: 12/03/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 20
+durationInMinutes: 14
 content: |
   [!include[](includes/4-monitor-networks-using-azure-network-watcher.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following statements about Network Watcher is correct?"
+  - content: "Which statement about Network Watcher is correct?"
     choices:
     - content: "Network Watcher must be manually enabled for each virtual network."
       isCorrect: false
-      explanation: "Incorrect. When you create or update a virtual network in your subscription, Network Watcher will be enabled automatically in your Virtual Network's region."
+      explanation: "Incorrect. When you create or update a virtual network, Network Watcher is automatically enabled."
     - content: "Network Watcher is enabled by default for all regions."
       isCorrect: false
-      explanation: "Incorrect. Network Watcher is enabled automatically in your Virtual Network's region, when you create or update a virtual network in your subscription."
+      explanation: "Incorrect. Network Watcher is enabled automatically in your virtual network's region."
     - content: "Network Watcher is enabled automatically when you create a virtual network."
       isCorrect: true
-      explanation: "Correct. When you create or update a virtual network in your subscription, Network Watcher will be enabled automatically in your Virtual Network's region."
-  - content: "Which of the following is a component of Traffic Analytics?"
+      explanation: "Correct. When you create or update a virtual network, Network Watcher is automatically enabled."
+  - content: "Which is a component of Traffic Analytics?"
     choices:
     - content: "Backend pool"
       isCorrect: false
       explanation: "Incorrect. A backend pool isn't required for traffic analytics."
-    - content: "Network security group (NSG) flow logs"
+    - content: "Network security group flow logs"
       isCorrect: true
-      explanation: "Correct. Allow you to view information about ingress and egress IP traffic through a network security group."
+      explanation: "Correct. Flow logs include information about ingress and egress IP traffic through a network security group."
     - content: "Availability zones"
       isCorrect: false
       explanation: "Incorrect. Availability zones aren't required for traffic analytics."

@@ -1,8 +1,8 @@
-Blazor route parameters let components access data passed in the URL. Route parameters will let our app access specific orders by their `OrderId`.
+Blazor route parameters let components access data passed in the URL. Route parameters allow our app to access specific orders by their `OrderId`.
 
-Customers want to be able to see more information about specific orders. You'll update the checkout page to take customers directly to their placed orders. Then you'll update the orders page to allow them to track any currently open order.
+Customers want to be able to see more information about specific orders. So you decide to update the checkout page to take customers directly to their placed orders. Then, you want to update the orders page to allow them to track any currently open order.
 
-In this exercise, you'll add a new order detail page that makes use of route parameters. You'll see how you can add a constraint to the parameter to check the correct data type.
+In this exercise, you add a new order detail page that makes use of route parameters. Then you see how you can add a constraint to the parameter to check the correct data type.
 
 ## Create an order detail page
 
@@ -103,9 +103,9 @@ In this exercise, you'll add a new order detail page that makes use of route par
     
     ```
 
-    This page will look similar to the **MyOrders** component. We're making a call to the **OrderController**, but this time we're asking for a specific order. We want the one that matches `OrderId`. Let's add the code to process this request.
+    This page looks similar to the **MyOrders** component. We're making a call to the **OrderController**, but this time we're asking for a specific order. We want the one that matches `OrderId`. Let's add the code that processes this request.
 
-1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save your changes.
+1. Save your changes by selecting <kbd>Ctrl</kbd>+<kbd>S</kbd>.
 1. For the filename, use **OrderDetail.razor**. Make sure you save the file in the **Pages** directory.
 1. In the file explorer, select **OrderController.cs**.
 1. Under the `PlaceOrder` method, add a new method to return orders with a status.
@@ -147,13 +147,13 @@ In this exercise, you'll add a new order detail page that makes use of route par
 The app should only respond to requests with numeric order IDs, such as `(http://localhost:5000/myorders/6)`. There's nothing stopping someone from trying to use non-numeric orders. Let's change that.
 
 1. In the file explorer, expand **Pages**. Then select **OrderDetail.razor**.
-1. Change the route parameter so that the component will only accept integers.
+1. Change the route parameter so that the component only accepts integers.
 
     ```razor
     @page "/myorders/{orderId:int}"
     ```
-	
-1. Now if someone tries to go to`(http://localhost:5000/myorders/non-number)`, Blazor routing won't find a match for the URL and return the page not found.
+
+1. Now if someone tries to go to`(http://localhost:5000/myorders/non-number)`, Blazor routing doesn't find a match for the URL, and returns the page not found.
 
     :::image type="content" source="../media/page-not-found.png" alt-text="Screenshot of the page not found screen.":::
 
@@ -161,15 +161,15 @@ The app should only respond to requests with numeric order IDs, such as `(http:/
 
     :::image type="content" source="../media/detail-order-page.png" alt-text="Screenshot showing the detail order page for a single order.":::
 
-    Go through the app, order, and checkout. You'll be taken to the detailed order screen and see the status of the order.
+    Go through the app, order, and check out. You're taken to the detailed order screen and you see the status of the order.
 
-1. Try different order IDs. If you use an integer that isn't a valid order, you'll get an **Order not found** message.
+1. Try different order IDs. If you use an integer that isn't a valid order, you get an **Order not found** message.
 
     :::image type="content" source="../media/order-not-found.png" alt-text="Screenshot showing Order not found message.":::
 
-    If you use non-integer order IDs, you'll see the page not found. More important, the app won't have an unhandled exception.
+    If you use noninteger order IDs, you see the page not found. More important, the app doesn't have an unhandled exception.
 
-1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app.
+1. To stop the app, select <kbd>Shift</kbd> + <kbd>F5</kbd>.
 
 ## Update the orders page
 
@@ -182,4 +182,4 @@ At the moment, the **My Orders** page has links to view more detail, but the URL
     <a href="myorders/@item.Order.OrderId" class="btn btn-success">
     ```
 
-You can test how this works by making your last pizza order for this exercise. Then select **My Orders**, and follow the **Track >** link.
+You can test how this code works by making your last pizza order for this exercise. Then select **My Orders**, and follow the **Track >** link.

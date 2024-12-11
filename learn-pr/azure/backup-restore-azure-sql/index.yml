@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.backup-restore-azure-sql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Back up and restore your Azure SQL database
   description: Learn how to protect the data in your Azure SQL database and recover from data loss or corruption with backup and restore.
   ms.date: 12/11/2023
@@ -41,3 +43,4 @@ units:
 - learn.backup-restore-azure-sql.8-summary
 badge:
   uid: learn.backup-restore-azure-sql.badge
+

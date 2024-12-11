@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.chat-completions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   ms.author: chnoring
   author: softchris
   ms.date: 12/11/2023
@@ -36,3 +38,4 @@ units:
 - learn.chat-completions.summary
 badge:
   uid: learn.chat-completions-badge
+

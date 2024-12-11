@@ -2,6 +2,8 @@
 uid: learn.wwl.automate-azure-virtual-desktop-management-tasks.scale-session-hosts-using-azure-automation
 title: Scale session hosts using Azure Automation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Scale session hosts using Azure Automation
   description: "Scale session hosts using Azure Automation"
   ms.date: 06/21/2023

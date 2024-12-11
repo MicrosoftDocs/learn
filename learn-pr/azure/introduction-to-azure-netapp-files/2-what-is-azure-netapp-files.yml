@@ -2,13 +2,16 @@
 uid: learn.azure.introduction-to-azure-netapp-files.what-is-azure-netapp-files
 title: What is Azure NetApp Files?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure NetApp Files?
   description: Learn the basic features and concepts of Azure NetApp Files.
-  ms.date: 07/30/2024
+  ms.date: 12/09/2024
   author: mengruts
   ms.author: anfdocs
   ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-netapp-files.md)]
+

@@ -1,4 +1,3 @@
-
 SQL Server on Azure Virtual Machines is a version of SQL Server that runs on an Azure virtual machine (VM). This service lets you use full versions of SQL Server in the cloud without having to manage your on-premises machines. Azure VMs come in many sizes and can be run in diverse geographic regions. Each SQL Server VM can be created to meet specific version and operating system requirements, which make them a good option for handling different SQL Server workloads.
 
 ### Things to know about SQL Server on Azure Virtual Machines

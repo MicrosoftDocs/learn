@@ -2,11 +2,13 @@
 uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
-  ms.author: rcaper
-  ms.date: 04/26/2024
+  ms.author: calopez
+  ms.date: 11/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -60,3 +62,4 @@ quiz:
     - content: "Language and original text."
       isCorrect: false
       explanation: "Incorrect. The original text doesn't appear in the `translations` column."
+

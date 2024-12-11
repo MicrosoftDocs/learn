@@ -2,26 +2,36 @@
 uid: learn.wwl.design-data-integration
 metadata:
   title: Design data integration
-  description: Azure Architects design and recommend data integration solutions.
-  ms.date: 07/30/2024
+  description: "Azure Architects design and recommend data integration solutions."
+  ms.date: 12/11/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: module
-  ms.service: azure-synapse-analytics
   ms.collection: wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: azure-synapse-analytics
+  ai-usage: human-only
 title: Design data integration
 summary: Azure Architects design and recommend data integration solutions.
 abstract: |
   In this module, you learn how to:
-  - Design a data integration solution with Azure Data Factory.
-  - Design a data integration solution with Azure Data Lake.
-  - Design a data integration and analytics solution with Azure Databricks.
-  - Design a data integration and analytics solution with Azure Synapse Analytics.
-  - Design strategies for hot, warm, and cold data paths.
-  - Design an Azure Stream Analytics solution for data analysis.
+
+  -   Design a data integration solution with Azure Data Factory.
+
+  -   Design a data integration solution with Azure Data Lake.
+
+  -   Design a data integration and analytics solution with Azure Databricks.
+
+  -   Design a data integration and analytics solution with Azure Synapse Analytics.
+
+  -   Design strategies for hot, warm, and cold data paths.
+
+  -   Design an Azure Stream Analytics solution for data analysis.
 prerequisites: |
-  - Working experience with data integration solutions.
-  - Conceptual knowledge of data integration solutions.
+  -   Working experience with data integration solutions.
+
+  -   Conceptual knowledge of data integration solutions.
 iconUrl: /training/achievements/design-data-integration.svg
 levels:
 - advanced

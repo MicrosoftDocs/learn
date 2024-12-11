@@ -2,6 +2,8 @@
 uid: learn.wwl.software-composition-analysis.examine-tools-for-assess-package-security-license-rate
 title: Examine tools for assess package security and license rate
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine tools for assess package security and license rate
   description: "Examine tools for assess package security and license rate"
   ms.date: 05/13/2024

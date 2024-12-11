@@ -2,11 +2,13 @@
 uid: learn.wwl.use-own-data-azure-openai.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary of topics covered in this module.
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/06/2024
+  ms.date: 11/15/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

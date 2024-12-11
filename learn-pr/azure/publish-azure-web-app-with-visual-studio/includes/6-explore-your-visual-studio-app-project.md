@@ -1,4 +1,4 @@
-You've successfully created your web app and published it to Azure, but what happens when you want to make changes? Visual Studio remembers where the app is published, which makes updating and changing your app a two-click process.
+You've successfully created your web app and published it to Azure. But what happens when you want to make changes? Visual Studio remembers where the app is published, which makes updating and changing your app a two-click process.
 
 ## Explore the project structure
 

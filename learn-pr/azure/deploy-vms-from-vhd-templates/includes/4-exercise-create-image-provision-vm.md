@@ -56,8 +56,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. In the web browser, go to the public IP address of the virtual machine. Verify that a webpage that displays the name of the virtual machine (*MyWindowsVM*) appears.
 
-    :::image type="content" source="../media/4-original-vm-web-page.png" alt-text="Screenshot of the webpage from the Windows virtual machine." loc-scope="other":::
-
 ::: zone-end
 
 ::: zone pivot="linux-cloud"
@@ -92,8 +90,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. In the web browser, go to the public IP address of the virtual machine. Verify that a webpage that displays the name of the virtual machine *MyUbuntuVM* appears.
 
-    :::image type="content" source="../media/4-original-ubuntu-web-page.png" alt-text="Screenshot of the webpage from the Ubuntu virtual machine." loc-scope="other":::
-
 ::: zone-end
 
 ## Generalize the virtual machine
@@ -116,15 +112,11 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. In the **Remote Desktop Connection** dialog box, select **Connect**.
 
-    ![Screenshot of the Remote Desktop Connection dialog box, stating that the remote connection can't be identified. The Connect button is highlighted.](../media/4-rdp-dialog.png)
-
 1. In the **Windows Security** dialog box, select **More choices**, and then select **Use a different account**.
 
 1. Sign in with the username *azureuser*, and the admin password that you used when you created the original virtual machine.
 
 1. In the **Remote Desktop Connection** dialog box, select **Yes** to proceed.
-
-    ![Screenshot of the Remote Desktop Connection dialog box, warning of problems with the security certificate. The Yes button is highlighted.](../media/4-rdp-proceed.png)
 
 1. On the virtual machine, select the **Search** button in the lower-left corner of the screen.
 

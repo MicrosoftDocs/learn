@@ -4,12 +4,12 @@ title: Migrate offline data
 metadata:
   title: Migrate offline data
   description: "Migrate offline data with Azure Import/Export and Azure Data Box."
-  ms.date: 09/02/2024
+  ms.date: 12/09/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/8-migrate-offline-data.md)]

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Expand query and transaction functionality in Azure Cosmos DB for NoSQL
   description: "Author user-defined functions and triggers using JavaScript in Azure Cosmos DB for NoSQL."
   ms.date: 02/06/2023

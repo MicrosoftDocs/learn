@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-use-sap-workload-planning-deployment-checklist.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 01/08/2024

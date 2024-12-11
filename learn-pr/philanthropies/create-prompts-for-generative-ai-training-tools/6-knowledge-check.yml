@@ -6,7 +6,7 @@ metadata:
   description: This content is a part of the 'Create effective prompts for generative AI training tools' module.
   author: yoosunee
   ms.author: andreapark
-  ms.date: 02/27/2024
+  ms.date: 12/09/2024
   ms.topic: unit
   ms.collection:
     - philanthropies-ai-copilot
@@ -32,7 +32,7 @@ quiz:
         - content: "To make the prompt longer, which helps the AI model produce an output."
           isCorrect: false
           explanation: "Incorrect. The length of the prompt isn't the primary concern. The main reason for being specific is to ensure the model knows exactly what is expected from it and that doesn't necessarily require a long prompt."
-        - content: "To ensure the model knows exactly what is expected from it."
+        - content: "To ensure the model knows exactly what you expect from it."
           isCorrect: true
           explanation: "Correct. The instructions should be clear and specific, so that the model knows exactly what you expect from it."
         - content: "To make the prompt more interesting and engaging for the AI model."
@@ -48,5 +48,5 @@ quiz:
           explanation: "Incorrect. While a professional prompt might be needed in certain situations, the primary reason for providing relevant and appropriate context is to ensure the model can tailor its output to your needs."
         - content: "To ensure the model can tailor its output to your needs."
           isCorrect: true
-          explanation: "Correct. The context should be relevant and appropriate, so that the model can tailor its output to your needs."
+          explanation: "Correct. The context should be relevant and appropriate so that the model can tailor its output to your needs."
           

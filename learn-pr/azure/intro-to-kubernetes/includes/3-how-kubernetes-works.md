@@ -18,7 +18,7 @@ A Kubernetes cluster contains at least one main plane and one or more nodes. Bot
 
 You can also run Microsoft workloads by using Windows Server 2019 or later on cluster nodes. For example, assume that the data-processing service in the drone-tracking app is written as a .NET 4.5 app that uses specific Windows OS API calls. This service can run only on nodes that run a Windows Server OS.
 
-Now, look at both the control planes and worker nodes and the software that runs on each in more detail. Understanding the role of each component and where each component runs in the cluster helps you when it comes to installing Kubernetes.
+Now, let's look at both the control planes and worker nodes and the software that runs on each in more detail. Understanding the role of each component and where each component runs in the cluster helps you when it comes to installing Kubernetes.
 
 ### Kubernetes control plane
 
@@ -53,9 +53,9 @@ You can think of the API server as the front end to your Kubernetes cluster's co
 
 For example, as a user, you use a command-line app called `kubectl` that allows you to run commands against your Kubernetes cluster's API server. The component that provides this API is called `kube-apiserver`, and you can deploy several instances of this component to support scaling in your cluster.
 
-This API exposes a RESTful API that you can use to post commands or YAML-based configuration files. YAML is a human-readable, data serialization standard for programming languages. You use YAML files to define the intended state of all the objects within a Kubernetes cluster.
+This API exposes a RESTful API that you can use to post commands or YAML-based configuration files. YAML is a human-readable data serialization standard for programming languages. You use YAML files to define the intended state of all the objects within a Kubernetes cluster.
 
-For example, assume that you want to increase the number of instances of your app in the cluster. You define the new state with a YAML-based file and submit this file to the API server. The API server validates the configuration, save it to the cluster, and finally enact the configured increase in app deployments.
+For example, assume that you want to increase the number of instances of your app in the cluster. You define the new state with a YAML-based file and submit this file to the API server. The API server validates the configuration, saves it to the cluster, and finally enacts the configured increase in app deployments.
 
 ### What is the backing store?
 
@@ -76,7 +76,7 @@ The controller manager launches and monitors the controllers configured for a cl
 
 Kubernetes uses controllers to track object states in the cluster. Each controller runs in a nonterminating loop while watching and responding to events in the cluster. For example, there are controllers to monitor nodes, containers, and endpoints.
 
-The controller communicates with the API server to determine the object's state. If the current state is different from the wanted state of the object, the controller takes action to ensure the wanted state.
+The controller communicates with the API server to determine the object's state. If the current state is different from the object's wanted state, the controller takes action to ensure the wanted state.
 
 Suppose that one of three containers running in your cluster stops responding and fails. In this case, a controller decides whether you need to launch new containers to ensure that your apps are always available. If the desired state is to run three containers at any time, then a new container is scheduled to run.
 
@@ -100,11 +100,11 @@ The following services run on the Kubernetes node:
 
 The kubelet is the agent that runs on each node in the cluster and monitors work requests from the API server. It makes sure that the requested unit of work is running and healthy.
 
-The kubelet monitors the nodes and makes sure that the containers scheduled on each node run as expected. The kubelet manages only containers Kubernetes creates. It isn't responsible for rescheduling work to run on other nodes if the current node can't run the work.
+The kubelet monitors the nodes and makes sure that the containers scheduled on each node run as expected. The kubelet manages only containers that Kubernetes creates. It isn't responsible for rescheduling work to run on other nodes if the current node can't run the work.
 
 ### What is kube-proxy?
 
-The kube-proxy component is responsible for local cluster networking, and runs on each node. It ensures that each node has a unique IP address. It also implements rules to handle routing and load balancing of traffic by using iptables and IPVS.
+The kube-proxy component is responsible for local cluster networking and runs on each node. It ensures that each node has a unique IP address. It also implements rules to handle routing and load balancing of traffic by using iptables and IPVS.
 
 This proxy doesn't provide DNS services by itself. A DNS cluster add-on based on CoreDNS is recommended and installed by default.
 
@@ -148,7 +148,7 @@ Because you can potentially create many pods that are running on many nodes, it 
 
 ### Lifecycle of a Kubernetes pod
 
-Kubernetes pods have a distinct lifecycle that affects the way you deploy, run, and update pods. You start by submitting the pod YAML manifest to the cluster. After the manifest file is submitted and persisted to the cluster, it defines the desired state of the pod. The scheduler schedules the pod to a healthy node that has enough resources to run the pod.
+Kubernetes pods have a distinct lifecycle that affects the way you deploy, run, and update pods. You start by submitting the pod YAML manifest to the cluster. After the manifest file is submitted and persisted to the cluster, it defines the pod's desired state. The scheduler schedules the pod to a healthy node that has enough resources to run the pod.
 
 :::image type="content" source="../media/3-pod-lifecycle.svg" alt-text="Diagram that shows the lifecycle of a pod." border="false":::
 
@@ -159,10 +159,10 @@ Here are the phases in a pod's lifecycle:
 | Pending | The pod accepts the cluster, but not all containers in the cluster are set up or ready to run. The Pending status indicates the time a pod is waiting to be scheduled and the time spent downloading container images. |
 | Running | The pod transitions to a running state after all of the resources within the pod are ready. |
 | Succeeded | The pod transitions to a succeeded state after the pod completes its intended task and runs successfully. |
-| Failed | Pods can fail for various reasons. A container in the pod might fail, leading to the termination of all other containers, or maybe an image wasn't found during preparation of the pod containers. In these types of cases, the pod can go to a Failed state. Pods can transition to a failed state from either a Pending state or a Running state. A specific failure can also place a pod back in the pending state. |
-| Unknown | If the state of the pod can't be determined, the pod is in an Unknown state. |
+| Failed | Pods can fail for various reasons. A container in the pod might fail, leading to the termination of all other containers, or maybe an image wasn't found during preparation of the pod containers. In these types of cases, the pod can go to a Failed state. Pods can transition to a Failed state from either a Pending state or a Running state. A specific failure can also place a pod back in the pending state. |
+| Unknown | If the pod's state can't be determined, the pod is in an Unknown state. |
 
-Pods are kept on a cluster until a controller, the control plane, or a user explicitly removes them. When a pod is deleted,  a new pod is created immediately after. The new pod is considered an entirely new instance based on the pod manifest isn't an exact copy, so it differs from the deleted pod.
+Pods are kept on a cluster until a controller, the control plane, or a user explicitly removes them. When a pod is deleted, a new pod is created immediately after. The new pod is considered an entirely new instance based on the pod manifest. It isn't an exact copy, so it differs from the deleted pod.
 
 The cluster doesn't save the pod's state or dynamically assigned configuration. For example, it doesn't save the pod's ID or IP address. This aspect affects how you deploy pods and how you design your apps. For example, you can't rely on preassigned IP addresses for your pods.
 

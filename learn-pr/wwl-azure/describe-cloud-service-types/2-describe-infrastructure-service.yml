@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-cloud-service-types.describe-infrastructure-service
 title: Describe Infrastructure as a Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Infrastructure as a Service
   description: "Describe Infrastructure as a Service"
   ms.date: 09/19/2024

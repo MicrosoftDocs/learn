@@ -2,6 +2,8 @@
 uid: learn.machine-learning.explore-analyze-data-r.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: This unit introduces you to exploring and analyzing data by using R.
   ms.date: 08/26/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

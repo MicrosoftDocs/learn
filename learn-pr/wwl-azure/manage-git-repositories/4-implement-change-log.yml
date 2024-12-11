@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-git-repositories.implement-change-log
 title: Implement a change log
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement a change log
   description: "Implement a change log"
   ms.date: 05/24/2024

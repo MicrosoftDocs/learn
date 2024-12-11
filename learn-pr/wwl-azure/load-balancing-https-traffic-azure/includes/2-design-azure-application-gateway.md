@@ -1,4 +1,4 @@
-Azure Application Gateway is an Azure service that processes traffic to web apps that are hosted on a pool of web servers. The processing performed by Azure Application Gateway includes load balancing HTTP traffic and inspecting traffic using web application firewall. It also includes encrypting traffic between users and an application gateway, and encrypting traffic between application servers and an application gateway.
+The Azure Application Gateway processes traffic to web apps hosted on a pool of web servers. The processing performed by Azure Application Gateway includes load balancing HTTP traffic and inspecting traffic using web application firewall. It also includes encrypting traffic between users and an application gateway, and encrypting traffic between application servers and an application gateway.
 
 Application Gateway provides features such as load balancing HTTP traffic and web application firewall. It provides support for TLS/SSL encryption of traffic between users and an application gateway and between application servers and an application gateway.
 
@@ -16,11 +16,11 @@ Azure Application Gateway includes the following features:
 
 ## How Azure Application Gateway works
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4cf48008-6182-482a-bd8c-045e28520347]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f42d6621-a73d-4c37-91ee-545aa0adbbd0]
 
 Azure Application Gateway has a series of components that combine to securely route and load balance requests across a pool of web servers. Application Gateway includes the following components: 
 
-:::image type="content" source="../media/application-gateway-components.png" alt-text="Diagram that shows Azure Application Gateway components." border="false":::
+:::image type="content" source="../media/application-gateway-components.png" alt-text="Diagram that shows Azure Application Gateway components.":::
 
 - **Front-end IP address**: Client requests are received through a front-end IP address. You can configure Application Gateway to have a public IP address, a private IP address, or both. Application Gateway can't have more than one public IP address and one private IP address.
 - **Listeners**: Application Gateway uses one or more listeners to receive incoming requests. A listener accepts traffic arriving on a specified combination of protocol, port, host, and IP address. Each listener routes requests to a back-end pool of servers following routing rules that you specify. A listener can be Basic or Multi-site. A *Basic* listener only routes a request based on the path in the URL. A *Multi-site* listener can also route requests using the hostname element of the URL. Listeners also handle TLS/SSL certificates for securing your application between the user and Application Gateway.
@@ -28,7 +28,7 @@ Azure Application Gateway has a series of components that combine to securely ro
 
 ## Load balancing in Application Gateway
 
-Application Gateway automatically load balances the requests sent to the servers in each back-end pool using a round-robin mechanism. Load-balancing works with the OSI Layer 7 routing implemented by Application Gateway routing, which means that it load balances requests based on the routing parameters (host names and paths) used by the Application Gateway rules. In comparison, other load balancers, such as Azure Load Balancer, function at the OSI Layer 4 level and distribute traffic based on the IP address of the target of a request.
+Application Gateway automatically balances the requests sent to the servers in each back-end pool using a round-robin mechanism. Load-balancing works with the OSI Layer 7 routing implemented by Application Gateway routing, which means that it load balances requests based on the routing parameters (host names and paths) used by the Application Gateway rules. In comparison, other load balancers, such as Azure Load Balancer, function at the OSI Layer 4 level and distribute traffic based on the IP address of the target of a request.
 
 You can configure session stickiness if you need to ensure that all requests for a client in the same session are routed to the same server in a back-end pool.  
 
@@ -61,13 +61,13 @@ When the gateway routes a client request to a web server in the back-end pool, i
 
 Path-based routing sends requests with different URL paths to different pools of back-end servers. For example, you could direct requests with the path \/video\/\* to a back-end pool containing servers that are optimized to handle video streaming, and direct \/images\/\* requests to a pool of servers that handle image retrieval.
 
-:::image type="content" source="../media/path-based-routing.png" alt-text="Diagram that depicts path-based routing in Azure Application Gateway." border="false":::
+:::image type="content" source="../media/path-based-routing.png" alt-text="Diagram that depicts path-based routing in Azure Application Gateway.":::
 
 ### Multiple-site routing
 
 Multiple-site routing configures more than one web application on the same Application Gateway instance. In a multi-site configuration, you register multiple DNS names (CNAMEs) for the IP address of the application gateway, specifying the name of each site. Application Gateway uses separate listeners to wait for requests for each site. Each listener passes the request to a different rule, which can route the requests to servers in a different back-end pool. For example, you could direct all requests for `http://contoso.com` to servers in one back-end pool, and requests for `http://fabrikam.com` to another back-end pool. The following diagram shows this configuration:
 
-:::image type="content" source="../media/multi-site-routing.png" alt-text="Diagram that depicts multi-site routing in Azure Application Gateway." border="false":::
+:::image type="content" source="../media/multi-site-routing.png" alt-text="Diagram that depicts multi-site routing in Azure Application Gateway.":::
 
 Multi-site configurations are useful for supporting multitenant applications, where each tenant has its own set of virtual machines or other resources hosting a web application.
 
@@ -79,13 +79,13 @@ Application Gateway routing also includes these features:
 
 ## TLS/SSL termination
 
-When you terminate the TLS/SSL connection at the application gateway, it offloads the CPU-intensive TLS/SSL termination workload from your servers. Also, you don’t need to install certificates and configure TLS/SSL on your servers.
+When you terminate the TLS/SSL connection at the application gateway, it offloads the CPU-intensive termination workload from your servers. Also, you don’t need to install certificates and configure TLS/SSL on your servers.
 
 If you need end-to-end encryption, Application Gateway can decrypt the traffic on the gateway by using your private key, then re-encrypt again with the public key of the service running in the back-end pool.
 
 Traffic enters the gateway through a front-end port. You can open many ports, and Application Gateway can receive messages on any of these ports. A listener is the first thing that your traffic meets when entering the gateway through a port. The listener is set up to listen for a specific host name, and a specific port on a specific IP address. The listener can use an TLS/SSL certificate to decrypt the traffic that enters the gateway. The listener then uses a rule that you define to direct the incoming requests to a back-end pool.
 
-:::image type="content" source="../media/tls-ssl-termination.png" alt-text="Diagram that depicts TLS/SSL termination in Azure Application Gateway." border="false":::
+:::image type="content" source="../media/tls-ssl-termination.png" alt-text="Diagram that depicts TLS/SSL termination in Azure Application Gateway.":::
 
 Exposing your website or web application through the application gateway also means that you don't directly connect your servers to the web. You're exposing only port 80 or port 443 on the application gateway, which is then forwarded to the back-end pool server. In this configuration, your web servers aren't directly accessible from the internet, which reduces the attack surface of your infrastructure.
 
@@ -100,3 +100,4 @@ Application Gateway supports autoscaling, and can scale up or down based on chan
 ## WebSocket and HTTP/2 traffic
 
 Application Gateway provides native support for the WebSocket and HTTP/2 protocols. The WebSocket and HTTP/2 protocols enable full duplex communication between a server and a client over a long-running TCP connection. This type of communication is more interactive between the web server and the client, and can be bidirectional without the need for polling as required in HTTP-based implementations. These protocols have low overhead (unlike HTTP) and can reuse the same TCP connection for multiple request/responses resulting in a more efficient resource utilization. These protocols are designed to work over traditional HTTP ports of 80 and 443.
+

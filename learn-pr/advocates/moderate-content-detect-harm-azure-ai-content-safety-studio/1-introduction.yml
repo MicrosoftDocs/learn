@@ -3,7 +3,7 @@ uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.introduct
 title: Introduction
 metadata:
   title: Introduction
-  description: Learn how to choose and build a content moderation system in Azure AI Studio.
+  description: Learn how to choose and build a content moderation system in Azure AI Foundry.
   author: aprilspeight
   ms.author: apspeigh
   ms.date: 08/29/2024

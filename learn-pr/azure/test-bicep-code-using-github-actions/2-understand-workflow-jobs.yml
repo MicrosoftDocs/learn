@@ -2,6 +2,8 @@
 uid: learn.azure.test-bicep-code-using-github-actions.understand-workflow-jobs
 title: Understand workflow jobs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand workflow jobs
   description: Learn about jobs in GitHub Actions. Also, learn about the typical deployment jobs for Bicep code.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-understand-workflow-jobs.md)]
+

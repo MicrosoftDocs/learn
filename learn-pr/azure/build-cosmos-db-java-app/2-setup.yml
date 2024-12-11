@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.cosmos-db-java-app.2-setup
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up your Java app by using Maven
   description: Exercise - Set up your Java app by using Maven
   ms.date: 11/02/2020
   author: kushagraThapar
   ms.author: kuthapar
-  manager: jroth
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java
@@ -16,3 +17,4 @@ azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/2-setup.md)]
+

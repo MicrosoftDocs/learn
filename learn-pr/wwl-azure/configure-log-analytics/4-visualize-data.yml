@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-log-analytics.visualize-data
 title: Create Kusto queries
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create Kusto queries
   description: "Create Kusto queries and quickly retrieve and consolidate your monitoring data."
   ms.date: 08/22/2024

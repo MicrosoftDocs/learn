@@ -4,12 +4,13 @@ title: Discover Azure Functions
 metadata:
   title: Discover Azure Functions
   description: "Discover Azure Functions"
-  ms.date: 07/09/2024
+  ms.date: 12/06/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
   ms.custom:
   - N/A
+  - ai-learning-hub
 durationInMinutes: 3
 content: |
   [!include[](includes/2-azure-functions-overview.md)]

@@ -1,4 +1,4 @@
-In Microsoft Fabric, there are many ways you can choose to load data in a warehouse. This step is fundamental as it ensures that high-quality, transformed or processed data is integrated into a single repository. 
+In Microsoft Fabric, there are many ways you can choose to load data in a warehouse. This step is fundamental as it ensures that high-quality, transformed, or processed data is integrated into a single repository. 
 
 Also, the efficiency of data loading directly impacts the timeliness and accuracy of analytics, making it vital for real-time decision-making processes. Investing time and resources in designing and implementing a robust data loading strategy is essential for the success of the data warehouse project.
 
@@ -6,11 +6,11 @@ Also, the efficiency of data loading directly impacts the timeliness and accurac
 
 While both processes are part of the ETL (Extract, Transform, Load) pipeline in a data warehouse scenario, they usually serve different purposes. **Data ingestion/extract** is about moving raw data from various sources into a central repository. On the other hand, **data loading** involves taking the transformed or processed data and loading it into the final storage destination for analysis and reporting. 
 
-All Fabric data items like data warehouses and lakehouses store their data automatically in OneLake in Delta Parquet format.
+Fabric data warehouses and lakehouses automatically store their data in OneLake using the Delta Parquet format.
 
 ## Stage your data
 
-You may have to build and work with auxiliary objects involved in a load operation such as tables, stored procedures, and functions. These auxiliary objects are commonly referred to as **staging**. Staging objects act as temporary storage and transformation areas. They can share resources with a data warehouse, or live in its own storage area. 
+You might have to build and work with auxiliary objects involved in a load operation, such as tables, stored procedures, and functions. These auxiliary objects are commonly known as **staging**. Staging objects act as temporary storage and transformation areas. They can either share resources with a data warehouse or reside in their own storage area.
 
 Staging serves as an abstraction layer, simplifying and facilitating the load operation to the final tables in the data warehouse.
 
@@ -31,6 +31,14 @@ An ETL (Extract, Transform, Load) process for a data warehouse doesn't always ne
 
 To learn more about how to perform an incremental load, see [**Incremental load**](/fabric/data-factory/tutorial-incremental-copy-data-warehouse-lakehouse?azure-portal=true).
 
+## Understand business key and surrogate key
+
+In a data warehouse, both surrogate keys and business keys are essential for effective data warehousing and data integration, but they serve different purposes.
+
+- **Surrogate key:** A surrogate key is a system-generated identifier that is used to uniquely identify a record in a table within the data warehouse. It has no business meaning and is typically an integer or a unique identifier. Surrogate keys are used to maintain consistency and accuracy in the data warehouse, especially when integrating data from multiple sources. They help to avoid issues that can arise from changes in the source systems, such as reusing or changing business keys. 
+
+- **Business Key:** A business key, also known as a natural key, is an identifier that comes from the source system and has business meaning. It's used to uniquely identify a record in the source system. Examples of business keys include product codes, customer IDs, and employee numbers. Business keys are important for maintaining traceability between the data warehouse and the source systems. They help to ensure that data in the warehouse can be accurately matched to the corresponding records in the source systems.
+
 ## Load a dimension table
 
 Think of a dimension table as the *"who, what, where, when, why”* of your data warehouse. It’s like the descriptive backdrop that gives context to the raw numbers found in the fact tables.
@@ -39,7 +47,7 @@ For example, if you’re running an online store, your fact table might contain 
 
 ### Slowly changing dimensions (SCD)
 
-Slowly Changing Dimensions change over time, but at a slow pace and unpredictably. For example, a customer’s address in a retail business. When a customer moves, their address changes. If you overwrite the old address with the new one, you lose the history. But if you want to analyze historical sales data, you might need to know where the customer lived at the time of each sale. This is where SCDs come into play.
+Slowly Changing Dimensions evolve over time, but at a slow pace and unpredictably. Take, for instance, a customer's address in a retail business. When a customer relocates, their address changes. If you overwrite the old address with the new one, you lose the historical data. However, if you need to analyze historical sales data, it's crucial to know where the customer lived at the time of each sale. This is where SCDs become essential.
 
 There are several types of slowly changing dimensions in a data warehouse, with type 1 and type 2 being the most frequently used.
 
@@ -55,7 +63,7 @@ In type 2 SCD, when a new version of the same element is brought to the data war
 
 :::image type="content" source="../media/2-slowly-changing-dimension.png" alt-text="Diagram showing the function and structure of OneLake." lightbox="../media/2-slowly-changing-dimension.png":::
 
-The following example shows how to handle changes in a type 2 SCD for the *Dim_Products* table using T-SQL.
+The following example shows how to handle the business key in a type 2 SCD for the *Dim_Products* table using T-SQL.
 
 ```sql
 IF EXISTS (SELECT 1 FROM Dim_Products WHERE SourceKey = @ProductID AND IsActive = 'True')
@@ -63,7 +71,8 @@ BEGIN
     -- Existing product record
     UPDATE Dim_Products
     SET ValidTo = GETDATE(), IsActive = 'False'
-    WHERE SourceKey = @ProductID AND IsActive = 'True';
+    WHERE SourceKey = @ProductID 
+        AND IsActive = 'True';
 END
 ELSE
 BEGIN
@@ -77,19 +86,35 @@ The mechanism for detecting changes in source systems is crucial for determining
 
 ## Load a fact table
 
-Let's consider an example where we load a `Fact_Sales` table in a data warehouse. This table contains sales transactions data with columns such as `FactKey`, `DateKey`, `ProductKey`, `OrderID`, `Quantity`, `Price`, and `LoadTime`.
+Typically, a standard data warehouse load operation involves loading fact tables after dimension tables. This ensures that the dimensions, which the facts reference, are already present in the data warehouse.
 
-Assume we have a source table `Order_Detail` in an OLTP system with columns: `OrderID`, `OrderDate`, `ProductID`, `Quantity`, and `Price`.
+The staged fact data usually includes business keys for the related dimensions, so your loading logic must look up the corresponding surrogate keys. When dealing with slowly changing dimensions in the data warehouse, it's crucial to identify the appropriate version of the dimension record to ensure the correct surrogate key is used. This matches the event recorded in the fact table with the state of the dimension at the time the fact occurred.
 
-The following T-SQL script example load the `Fact_Sales` table.
+In many cases, you can retrieve the latest "current" version of the dimension. However, sometimes you might need to find the correct dimension record based on DateTime columns that indicate the period of validity for each version of the dimension.
+
+The following example assumes that dimension records have incrementing surrogate keys and that the most recently added version of a specific dimension instance, which will have the highest key value, might be used.
 
 ```sql
 -- Lookup keys in dimension tables
-INSERT INTO Fact_Sales (DateKey, ProductKey, OrderID, Quantity, Price, LoadTime)
-SELECT d.DateKey, p.ProductKey, o.OrderID, o.Quantity, o.Price, GETDATE()
-FROM Order_Detail o
-JOIN Dim_Date d ON o.OrderDate = d.Date
-JOIN Dim_Product p ON o.ProductID = p.ProductID;
+INSERT INTO dbo.FactSales
+SELECT  (SELECT MAX(DateKey)
+         FROM dbo.DimDate
+         WHERE FullDateAlternateKey = stg.OrderDate) AS OrderDateKey,
+        (SELECT MAX(CustomerKey)
+         FROM dbo.DimCustomer
+         WHERE CustomerAlternateKey = stg.CustNo) AS CustomerKey,
+        (SELECT MAX(ProductKey)
+         FROM dbo.DimProduct
+         WHERE ProductAlternateKey = stg.ProductID) AS ProductKey,
+        (SELECT MAX(StoreKey)
+         FROM dbo.DimStore
+         WHERE StoreAlternateKey = stg.StoreID) AS StoreKey,
+        OrderNumber,
+        OrderLineItem,
+        OrderQuantity,
+        UnitPrice,
+        Discount,
+        Tax,
+        SalesAmount
+FROM dbo.StageSales AS stg
 ```
-
-In this example, we use a `JOIN` operation to look up the `DateKey` and `ProductKey` values in the *Dim_Date* and *Dim_Product* tables, respectively, and then insert the data into the *Fact_Sales* table. However, it is important to note that the complexity of the loading process depends on several factors, including the amount of data, the transformation requirements, error handling, schema differences, and performance.

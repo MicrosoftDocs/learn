@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-tables
 title: Explore Azure Tables
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Tables
   description: "Explore Azure Tables"
   ms.date: 09/17/2024

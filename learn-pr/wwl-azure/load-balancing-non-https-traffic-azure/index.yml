@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.load-balancing-non-https-traffic-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Load balance non-HTTP(S) traffic in Azure
   description: "You learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic."
   ms.date: 10/07/2024

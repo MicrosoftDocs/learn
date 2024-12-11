@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-model-github-actions.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 07/10/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-git-branches-workflows.explore-git-branch-model-for-continuous-delivery
 title: Explore Git branch model for continuous delivery
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Git branch model for continuous delivery
   description: "Explore Git branch model for continuous delivery"
   ms.date: 05/24/2024

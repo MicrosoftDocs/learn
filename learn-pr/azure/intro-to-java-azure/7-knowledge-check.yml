@@ -1,9 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-java-azure.7-knowledge-check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Check your knowledge
   description: Knowledge check
-  ms.date: 05/01/2023
+  ms.date: 11/22/2024
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: unit
@@ -52,3 +54,4 @@ quiz:
     - content: "All the above"
       isCorrect: true
       explanation: "Even though it always depends on the specific application, Azure offers services for all of these application types."
+

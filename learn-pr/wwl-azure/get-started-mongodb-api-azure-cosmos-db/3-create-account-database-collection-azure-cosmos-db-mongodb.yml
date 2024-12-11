@@ -1,10 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db.create-account-database-collection-use-api-for-mongodb
-title: Create an account, database and collection using Azure Cosmos DB for MongoDB
+title: Create an account, database, and collection using Azure Cosmos DB for MongoDB
 metadata:
-  title: Create an account, database and collection using Azure Cosmos DB for MongoDB
-  description: "Create an account, database and collection using Azure Cosmos DB for MongoDB"
-  ms.date: 03/20/2024
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create an account, database, and collection using Azure Cosmos DB for MongoDB
+  description: "Create an account, database, and collection using Azure Cosmos DB for MongoDB."
+  ms.date: 12/09/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-create-account-database-collection-azure-cosmos-db-mongodb.md)]
+

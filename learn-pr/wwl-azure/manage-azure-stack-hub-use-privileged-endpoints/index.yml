@@ -1,14 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Azure Stack Hub by using privileged endpoints
   description: "Manage Azure Stack Hub by using privileged endpoints"
   ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
-  ms.service: azure-stack
-  ms.subservice: azure-stack-hub
+  ms.service: azure-stack-hub
 title: Manage Azure Stack Hub by using privileged endpoints
 summary: |
   Learn to access the privileged endpoint (PEP) and invoke the restricted set of cmdlets for Azure Stack.
@@ -48,3 +49,4 @@ units:
 - learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.summary
 badge:
   uid: learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.badge
+

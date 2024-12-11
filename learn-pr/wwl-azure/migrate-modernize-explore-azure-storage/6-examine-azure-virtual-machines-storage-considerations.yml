@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-azure-storage.examine-azure-virtual-machines-storage-considerations
 title: Examine Azure Virtual Machines storage considerations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure Virtual Machines storage considerations
   description: "Examine Azure Virtual Machines storage considerations"
   ms.date: 01/09/2024

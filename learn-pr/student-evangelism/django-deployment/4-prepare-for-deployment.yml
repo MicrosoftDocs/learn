@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.django.deployment.prepare-for-deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Prepare your application for deployment
   description: Walk through the steps to deploy your application.
   ms.date: 03/01/2021 

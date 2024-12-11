@@ -2,9 +2,11 @@
 uid: learn.azure.cloud-scale-messaging-jms-service-bus.6-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 02/07/2024
+  ms.date: 11/11/2024
   author: spelluru
   ms.author: spelluru
   ms.topic: unit
@@ -61,4 +63,5 @@ quiz:
         - content: "All of the above/any JMS message broker"
           isCorrect: true
           explanation: "You can lift and shift your existing JMS application from any JMS message broker to Azure Service Bus."
+
 

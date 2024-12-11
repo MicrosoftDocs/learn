@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-your-first-aspnet-core-web-app.exercise-run-project
+title: Exercise - Run your web app locally
+metadata:
+  title: Exercise - Run your web app locally
+  description: Run your web app locally and review how the web app is served.
+  ms.date: 9/9/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: unit
+  zone_pivot_groups: vscode-shell
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-exercise-run-project.md)]

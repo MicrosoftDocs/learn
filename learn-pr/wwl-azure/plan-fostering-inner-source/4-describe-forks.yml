@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-foster-inner-source.describe-forks
 title: Describe inner source with forks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe inner source with forks
   description: "Describe inner source with forks"
   ms.date: 05/08/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.deliver-with-devops
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Deliver with DevOps"
   description: "Build and run continuous integration and continuous delivery workflows using GitHub Actions."
   ms.date: 02/06/2024
@@ -50,3 +52,4 @@ units:
 - learn.wwl.deliver-with-devops.summary
 badge:
   uid: learn.wwl.deliver-with-devops.badge
+

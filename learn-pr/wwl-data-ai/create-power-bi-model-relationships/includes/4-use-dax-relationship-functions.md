@@ -19,7 +19,7 @@ For more information, see [Active vs inactive relationship guidance](/power-bi/g
 
 ## CROSSFILTER
 
-The [CROSSFILTER](/dax/crossfilter-function) function either modifies the relationship cross filter direction (to one or both), or it disables filter propagation (none). It’s useful when you need to change or ignore model relationships during the evaluation of a specific calculation.
+The [CROSSFILTER](/dax/crossfilter-function-dax) function either modifies the relationship cross filter direction (to one or both), or it disables filter propagation (none). It’s useful when you need to change or ignore model relationships during the evaluation of a specific calculation.
 
 ## COMBINEVALUES
 

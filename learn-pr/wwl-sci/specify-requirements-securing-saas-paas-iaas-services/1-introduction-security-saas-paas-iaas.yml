@@ -5,8 +5,8 @@ metadata:
   title: Introduction to security for SaaS, PaaS, and IaaS
   description: "SC-100 preparatory unit on the topic: introduction to security for SaaS PaaS and IaaS."
   ms.date: 09/26/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 10
 content: |

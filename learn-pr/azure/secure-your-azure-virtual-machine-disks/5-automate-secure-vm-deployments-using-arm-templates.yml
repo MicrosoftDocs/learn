@@ -2,6 +2,8 @@
 uid: learn.secure-your-azure-virtual-machine-disks.5-automate-secure-vm-deployments-using-arm-templates
 title: Automate secure VM deployments by adding encryption to Azure Resource Manager templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate secure VM deployments by adding encryption to Azure Resource Manager templates
   description: Automate secure virtual machine (VM) deployments by adding encryption to Azure Resource Manager templates.
   ms.date: 09/10/2024
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/5-automate-secure-vm-deployments-using-arm-templates.md)]
+

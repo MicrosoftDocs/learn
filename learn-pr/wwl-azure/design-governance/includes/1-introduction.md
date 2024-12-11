@@ -48,14 +48,12 @@ Design identity, governance, and monitoring solutions
 
 - Design a governance solution
 
-   - Recommend a strategy for Azure policies and resource tags
+   - Recommend a structure for management groups, subscriptions, and resource groups, and a strategy for resource tagging.
 
-   - Recommend a strategy for Azure Blueprints
-
-   - Recommend a strategy for Azure landing zones
+   - Recommend a solution for managing compliance.
 
 ### Prerequisites
 
-- Conceptual knowledge of governance policies, resource organization, and subscription management
+- Conceptual knowledge of governance policies, resource organization, and subscription management.
 
-- Working experience with organizing resources, applying governance policies, and enforcing compliance requirements
+- Working experience with organizing resources, applying governance policies, and enforcing compliance requirements.

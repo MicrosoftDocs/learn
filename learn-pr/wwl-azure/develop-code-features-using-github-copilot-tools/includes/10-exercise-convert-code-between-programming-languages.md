@@ -14,7 +14,7 @@ Suppose you're just getting started on the `QuarterlyIncomeReport` project. You 
 
 1. Open the SamplePython project.
 
-    This project contains a Python version of the `QuarterlyIncomeReport` project that you've worked on during this module. You can have GitHub Copilot explain the code to you using the Chat view or Explain This smart action.
+    This project contains a Python version of the `QuarterlyIncomeReport` project that you've worked on during this module. You can have GitHub Copilot explain the code to you using the Chat view or `Explain` smart action.
 
 1. Run the Python application.
 
@@ -100,4 +100,7 @@ Suppose you're just getting started on the `QuarterlyIncomeReport` project. You 
 
     Notice that the output from the C# application is essentially the same as the output from the Python application.
 
-When you use GitHub Copilot to convert code between programming languages, try the conversion in both the Chat view and the inline chat. Although both tools share the same AI model, their results may differ. Trying both tools can help you to determine which tool is best for your specific use case.
+When you use GitHub Copilot to convert code between programming languages, try using both the Chat view and the inline chat. Although both tools share the same AI model, their results may differ. Trying both tools can help you to determine which tool is best for your specific use case.
+
+> [!NOTE]
+> Programming languages often have an associated "programming style", and some languages may have unique features or code libraries. When you’re converting large sections of code from one programming language to another, it’s important to fully understand the target programming language and the intension of the code. GitHub Copilot suggestions should always be reviewed before accepting.

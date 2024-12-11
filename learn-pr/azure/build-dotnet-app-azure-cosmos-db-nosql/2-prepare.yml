@@ -2,6 +2,8 @@
 uid: learn.build-dotnet-app-azure-cosmos-db-nosql.prepare
 title: Prepare
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Prepare
   ms.custom:
@@ -17,3 +19,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/2-prepare.md)]
+

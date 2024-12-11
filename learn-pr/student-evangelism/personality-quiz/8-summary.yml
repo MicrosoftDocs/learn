@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-partnership.personality-quiz.summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary of the module for creating a personality quiz by using Python and Visual Studio Code.
   ms.date: 04/14/2021
@@ -15,3 +17,4 @@ durationInMinutes: 5
 content: |
   [!include[](includes/8-summary.md)]
   
+

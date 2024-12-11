@@ -2,6 +2,8 @@
 uid: learn.wwl.integrate-azure-pipelines.describe-anatomy-of-pipeline
 title: Describe the anatomy of a pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the anatomy of a pipeline
   description: "Describe the anatomy of a pipeline"
   ms.date: 05/26/2024

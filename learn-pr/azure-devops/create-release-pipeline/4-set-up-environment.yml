@@ -2,6 +2,8 @@
 uid: learn.azdo.create-release-pipeline.4-set-up-environment
 title: Exercise - Set up your environment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up your environment
   description: Create your Azure DevOps project and Azure resources.
   ms.custom: devdivchpfy22, engagement-fy23
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/4-set-up-environment.md)]
+

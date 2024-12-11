@@ -2,11 +2,13 @@
 uid: learn.wwl.introduction-to-azure-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: Test your knowledge of Azure AI Studio.
+  description: Test your knowledge of Azure AI Foundry.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 05/08/2024
+  ms.date: 11/25/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,17 +17,17 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Which of the following best describes Azure AI Studio?"
+  - content: "Which of the following best describes Azure AI Foundry?"
     choices:
     - content: "An online marketplace where you can buy and sell AI models"
       isCorrect: false
-      explanation: "Incorrect. Azure AI Studio isn't an online marketplace."
+      explanation: "Incorrect. Azure AI Foundry isn't an online marketplace."
     - content: "A collaborative development environment for AI projects on Azure."
       isCorrect: true
-      explanation: "Correct. Azure AI Studio provides a collaborative development environment for AI projects on Azure."
+      explanation: "Correct. Azure AI Foundry provides a collaborative development environment for AI projects on Azure."
     - content: "A graphics editing application that uses AI to generate images."
       isCorrect: false
-      explanation: "Incorrect. Azure AI Studio isn't a graphics application."
+      explanation: "Incorrect. Azure AI Foundry isn't a graphics application."
   - content: "How can you enable a colleague to collaborate with you on an AI project?"
     choices:
     - content: "Add them as a member in the appropriate role to your Azure AI hub."
@@ -37,14 +39,15 @@ quiz:
     - content: "Tell the colleague to create their own Azure AI hub in the same Azure subscription as yours."
       isCorrect: false
       explanation: "Incorrect. Creating a separate Azure AI hub in the same subscription doesn't enable collaboration."
-  - content: "You have deployed an Azure OpenAI GPT model in Azure AI Studio. What's the easiest way to test it?"
+  - content: "You have deployed an Azure OpenAI GPT model in Azure AI Foundry. What's the easiest way to test it?"
     choices:
     - content: "Deploy the model as a web app, configure authentication, and use it in a browser."
       isCorrect: false
       explanation: "Incorrect. While you *could* test a model by deploying a web app, it's not the easiest way to do it."
     - content: "Export the model and test it locally using Visual Studio Code."
       isCorrect: false
-      explanation: "Incorrect. You don't need to export a model from Azure AI Studio to test it."
+      explanation: "Incorrect. You don't need to export a model from Azure AI Foundry to test it."
     - content: "On the **Playground** page, select the deployment and use the chat interface."
       isCorrect: true
       explanation: "Correct. You can test an Azure OpenAI GPT model in the **Playground** page."
+

@@ -11,4 +11,4 @@ Kusto queries made it easier to gain insights into your data. The powerful opera
 
 ## References
 
-* [Kusto Query Language (KQL) overview](/azure/data-explorer/kusto/query/)
+* [Kusto Query Language (KQL) overview](/kusto/query/)

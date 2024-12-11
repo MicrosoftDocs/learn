@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-hybrid-workloads-with-azure-arc
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage hybrid workloads with Azure Arc
   description: "Manage hybrid workloads with Azure Arc"
   ms.date: 03/17/2023
@@ -53,3 +55,4 @@ units:
 - learn.wwl.manage-hybrid-workloads-with-azure-arc.summary
 badge:
   uid: learn.wwl.manage-hybrid-workloads-with-azure-arc.badge
+

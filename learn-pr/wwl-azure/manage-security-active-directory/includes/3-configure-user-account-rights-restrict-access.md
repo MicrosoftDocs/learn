@@ -15,7 +15,7 @@ To deny a user account the ability to sign in as a service using Group Policy, f
 
 1.  Open the Group Policy Management Console.
 2.  Create a new Group Policy Object (GPO) or modify an existing one.
-3.  Edit the GPO and navigate to **User Rights Assignment**, which is located under Computer Configuration\\Policies\\Windows Settings\\Security Settings\\User Rights Assignment.
+3.  Edit the GPO and navigate to **User Rights Assignment**, which is located under Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Local Policies\\User Rights Assignment.
 4.  Locate and select the policy setting **Deny logon as a service**.
 5.  Select **Add User or Group** and then click **Find**.
 6.  Select the user account for which you want to deny this right.

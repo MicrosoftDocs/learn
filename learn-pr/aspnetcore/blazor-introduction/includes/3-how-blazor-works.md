@@ -12,7 +12,7 @@ You author Blazor components using Razor syntax, a convenient mixture of HTML, C
 
 Interactive Blazor components can handle standard web UI interactions using C# event handlers. Components can update their state in response to UI events and adjust their rendering accordingly. Blazor also includes support for two-way data binding to UI elements as a way to keep component state in sync with UI elements.
 
-Below is an example of a simple Blazor counter component implemented in Razor. Most of the content is HTML, while the `@code` block contains C#. Every time the button is pressed the `IncrementCount` C# method is invoked, which increments the `currentCount` field, and then the component renders the updated value:
+The following example is a simple Blazor counter component implemented in Razor. Most of the content is HTML, while the `@code` block contains C#. Every time the button is pressed the `IncrementCount` C# method is invoked, which increments the `currentCount` field, and then the component renders the updated value:
 
 ```razor
 <h1>Counter</h1>
@@ -43,7 +43,7 @@ Alternatively, Blazor components can be rendered interactively from the client. 
 
 ![Diagram of Blazor interactive WebAssembly rendering.](../media/interactive-wasm.png)
 
-You can choose to render different components from the server or the client within the same app. Many of the pages in your app might not require any interactivity at all, and can be rendered statically from the server, while other more interactive parts of your app can be handled from the server or client. You can decide which component render mode to use at design time or runtime. With Blazor, you have the flexibility to build the web app architecture that's right for your scenario.
+You can choose to render different components from the server or the client within the same app. Many of the pages in your app might not require any interactivity at all, and can be rendered statically from the server. While other more interactive parts of your app can be handled from the server or client. You can decide which component render mode to use at design time or runtime. With Blazor, you have the flexibility to build the web app architecture that's right for your scenario.
 
 ## Using Blazor to build a pizza shop
 
