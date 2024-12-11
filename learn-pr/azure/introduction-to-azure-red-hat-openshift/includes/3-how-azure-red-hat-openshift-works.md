@@ -36,7 +36,7 @@ The setup and configuration of the OpenShift cluster are automated, simplifying 
 
 ## Integrated identity and access management
 
-Access to the managed resource group can be granted to identities within the publisher’s tenant, allowing Microsoft and Red Hat to provide ongoing support and maintenance without compromising your environment's security. Role-based access control (RBAC) and Azure Active Directory integration ensure secure and appropriately managed access. All accesses are done via the Azure Red Hat OpenShift RP (an API used to manage the resources) and only to resources that are used by the cluster, not customer workloads/data.
+Access to the managed resource group can be granted to identities within the publisher’s tenant, allowing Microsoft and Red Hat to provide ongoing support and maintenance without compromising your environment's security. Role-based access control (RBAC) and Microsoft Entra ID integration ensure secure and appropriately managed access. All accesses are done via the Azure Red Hat OpenShift RP (an API used to manage the resources) and only to resources that are used by the cluster, not customer workloads/data.
 
 ## Cost and billing
 
