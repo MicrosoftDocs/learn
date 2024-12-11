@@ -1,4 +1,4 @@
-Instruction is the fundamental component of the prompt. Two kinds of instruction can be applied: simple instruction and complex instruction.
+Instruction is the prompt's fundamental component. You can apply two kinds of instruction: simple instruction and complex instruction.
 
 - **Simple instruction**
 

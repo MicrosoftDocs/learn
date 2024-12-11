@@ -231,7 +231,6 @@ Use the following steps to complete this section of the exercise:
 
     ![Screenshot showing the Run Tests option in Visual Studio Code's Test Explorer.](../media/unit-test-visual-studio-code-test-options-2.png)
 
-
     After a few seconds, the Test Explorer shows the results of the test run. You should see that all of the tests pass. Green checkmarks in the Test Explorer and to the left of the unit tests in the Editor indicate that the test passed.
 
 ### Summary

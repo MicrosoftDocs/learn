@@ -1070,7 +1070,7 @@ GitHub Copilot Chat can be used to help improve code security. Your prompts can 
 
 1. Implement the suggested updates that help to improve code security for your `Program.cs` file.
 
-1. To ensure that no errors were introduced by the changes, build and run your solution before continuing.
+1. To ensure that no errors were introduced by the changes, build and run your solution.
 
 ## Summary
 
