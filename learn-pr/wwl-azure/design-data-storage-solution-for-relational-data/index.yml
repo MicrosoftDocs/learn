@@ -1,14 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.design-data-storage-solution-for-relational-data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design a data storage solution for relational data
   description: "Azure Architects design and recommend relational data storage solutions."
-  ms.date: 08/30/2024
+  ms.date: 12/10/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure

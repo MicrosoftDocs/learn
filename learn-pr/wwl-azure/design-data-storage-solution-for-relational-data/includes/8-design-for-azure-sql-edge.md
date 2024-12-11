@@ -1,4 +1,3 @@
-
 [Azure SQL Edge](/azure/azure-sql-edge/overview) is an optimized relational database engine geared for IoT and IoT Edge deployments. Azure SQL Edge is built on the same engine as SQL Server and Azure SQL. Developers with SQL Server skills can reuse their code to build edge-specific solutions on Azure SQL Edge. Azure SQL Edge provides capabilities to stream, process, and analyze relational and nonrelational data.
 
 ### Things to know about Azure SQL Edge
@@ -53,20 +52,3 @@ Azure SQL Edge as two deployment options:
 > [!IMPORTANT] 
 > Azure SQL Edge is optimized for IoT use cases and workloads. SQL Server and SQL Database, in contrast, are built for mission-critical, data-management solutions, and line-of-business (LOB) apps.
 
-#### Business scenario
-
-Consider a business scenario for real-time ingestion of data in an automotive manufacturing company. Developers are working on an IoT app that ingests data from several IoT sensors in the vehicles manufactured by the company. It's important that the data is usable all the time, regardless of whether the vehicles' apps are online or offline. Another goal is to use the data to help with product development. The data must synchronize easily with cloud-based database systems built in Azure SQL. You've been asked to recommend a solution specifically for SQL Server that should be powerful enough to support edge compute. The strategy should be secure enough to help meet the privacy needs of IoT applications. Azure SQL Edge is best suited to support these requirements due to its small footprint, and because it's edge-optimized for IoT devices.
-
-### Things to consider when using Azure SQL Edge
-
-Consider how Azure SQL Edge can be included in your relational data storage plan for Tailwind Traders:
-
-- **Consider network connectivity limitations**. Keep working if network connectivity isn't available. Azure SQL Edge supports solutions that work with, or without, network connectivity.
-
-- **Consider slow or intermittent broadband connection**. Continue working with a local database if there are slow connection speeds or intermittent connectivity issues. Azure SQL Edge provides a powerful, local database. It negates needing to forward all data to a cloud-based database, which eliminates latency.
-
-- **Consider data security and privacy concerns**. Address concerns about sensitive data and privacy. Azure SQL Edge implements RBAC and ABAC, encryption, and data classification. You can secure and control access to your IoT app data.
-
-- **Consider synchronization and connectivity to back-end systems**. Synchronize your workloads with back-end systems. Azure SQL Edge makes it easy to exchange data with other systems like Azure SQL Database, SQL Server, and Azure Cosmos DB.
-
-- **Consider code and skill familiarity**. Take advantage of developer knowledge about working with SQL. Azure SQL Edge shares the same codebase as SQL Server. Developers with skills in SQL Server or SQL Database can reuse their code and skills.
