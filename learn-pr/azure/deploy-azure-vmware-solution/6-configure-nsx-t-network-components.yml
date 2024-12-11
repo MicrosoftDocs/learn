@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.deploy-azure-vmware-solution.configure-nsx-t-network-components
+uid: learn.deploy-azure-vmware-solution.configure-nsx-network-components
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
