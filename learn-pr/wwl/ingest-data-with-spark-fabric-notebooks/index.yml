@@ -40,7 +40,6 @@ subjects:
 - data-integration
 units:
 - learn.wwl.ingest-data-with-spark-fabric-notebooks.introduction
-- learn.wwl.ingest-data-with-spark-fabric-notebooks.connect-authenticate
 - learn.wwl.ingest-data-with-spark-fabric-notebooks.write-optimize
 - learn.wwl.ingest-data-with-spark-fabric-notebooks.considerations
 - learn.wwl.ingest-data-with-spark-fabric-notebooks.exercise
