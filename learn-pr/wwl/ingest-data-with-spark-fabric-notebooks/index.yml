@@ -39,6 +39,5 @@ subjects:
 - data-engineering
 - data-integration
 units:
-- learn.wwl.ingest-data-with-spark-fabric-notebooks.write-optimize
 badge:
   uid: learn.wwl.ingest-data-with-microsoft-fabric-notebooks.badge
