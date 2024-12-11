@@ -35637,6 +35637,7 @@
     {
       "source_path": "learn-pr/paths/javascript-on-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/5-exercise-create-items.yml",
