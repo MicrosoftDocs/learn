@@ -40,6 +40,5 @@ subjects:
 - data-integration
 units:
 - learn.wwl.ingest-data-with-spark-fabric-notebooks.write-optimize
-- learn.wwl.ingest-data-with-spark-fabric-notebooks.summary
 badge:
   uid: learn.wwl.ingest-data-with-microsoft-fabric-notebooks.badge
