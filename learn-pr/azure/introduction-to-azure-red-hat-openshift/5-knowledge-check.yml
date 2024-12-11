@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-azure-red-hat-openshift.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: A multiple-choice knowledge check covering the module contents.
+  ms.date: 08/23/2024
+  author: ricmmartins
+  ms.author: ricardomac
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: What is Azure Red Hat OpenShift?
+    choices:
+    - content: A traditional Kubernetes service that requires extensive manual setup.
+      isCorrect: false
+      explanation: Incorrect. Azure Red Hat OpenShift is based on Kubernetes but enables you to focus on developing and deploying applications without worrying about the complexities of Kubernetes.
+    - content: A managed version of Red Hat OpenShift that automates the setup and maintenance of Kubernetes clusters.
+      isCorrect: true
+      explanation: Correct. Azure Red Hat OpenShift simplifies container orchestration and management by automating tasks such as cluster setup, maintenance, and scaling.
+    - content: A platform for running only virtual machines.
+      isCorrect: false
+      explanation: Incorrect. While the underlying infrastructure for Azure Red Hat OpenShift uses VMs provided by Azure, the OpenShift platform itself is a Kubernetes-based container orchestration system. 
+  - content: Which of the following is a primary motivation for adopting Azure Red Hat OpenShift?
+    choices:
+    - content: Slower time-to-market for applications.
+      isCorrect: false
+      explanation: Incorrect. Azure Red Hat OpenShift lets you efficiently evolve applications to containers and microservices, and orchestrate their deployments for faster time-to-market.
+    - content: Increased complexity in managing infrastructure.
+      isCorrect: false
+      explanation: Incorrect. Azure Red Hat OpenShift's managed environment allows teams to concentrate on building and deploying applications rather than managing infrastructure.
+    - content: Improved resource utilization and reduced software development cycles.
+      isCorrect: true
+      explanation: Correct. Azure Red Hat OpenShift improves resource utilization by using containers and microservices, a managed environment, and seamless integration with Azure.
+  - content: How does Azure Red Hat OpenShift enhance a DevSecOps approach?
+    choices:
+    - content: By removing all security measures during development.
+      isCorrect: false
+      explanation: Incorrect. Azure Red Hat OpenShift's integrated DevSecOps approach embeds security from the outset of the development lifecycle.
+    - content: By integrating security practices throughout the development lifecycle.
+      isCorrect: true
+      explanation: Correct. Azure Red Hat OpenShift embeds security from the outset of the development lifecycle.
+    - content: By focusing solely on operations after deployment.
+      isCorrect: false
+      explanation: Incorrect. After deployment, Azure Red Hat OpenShift can help you focus on ongoing application management, scaling and optimization, security and compliance, and other activities. 
+  - content: What feature does Azure Red Hat OpenShift offer for high availability?
+    choices:
+    - content: Single-node clusters.
+      isCorrect: false
+      explanation: Incorrect. Azure Red Hat offers multi-cluster management capabilities, allowing you to manage multiple OpenShift clusters from a single control plane.
+    - content: Deployment across multiple availability zones in each region.
+      isCorrect: true
+      explanation: Correct. Azure Red Hat OpenShift leverages multiple availability zones in each region to ensure high availability and resilience.
+    - content: Manual scaling of resources only.
+      isCorrect: false
+      explanation: Incorrect. Azure Red Hat OpenShift supports both manual scaling and automatic scaling of resources.
