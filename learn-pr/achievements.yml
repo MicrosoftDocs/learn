@@ -4297,3 +4297,8 @@ achievements:
   title: Gather metrics from your Azure Blob Storage containers
   summary: In this module, you learn how to use Azure Monitor to gather and view metrics for a Blob Storage account in Microsoft Azure.
   iconUrl: /training/achievements/gather-metrics-from-blob-storage.svg
+- uid: learn.wwl.ingest-data-with-microsoft-fabric-notebooks.badge
+  type: badge
+  title: Ingest data with Spark and Microsoft Fabric notebooks
+  summary: Discover how to use Apache Spark and Python for data ingestion into a Microsoft Fabric lakehouse. Fabric notebooks provide a scalable and systematic solution.
+  iconUrl: /training/achievements/generic-badge.svg
