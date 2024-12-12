@@ -16,7 +16,7 @@ quiz:
   questions:
   - content: "What is a real-time dashboard?"
     choices:
-    - content: "A Power BI report that is based on an eventhouse."
+    - content: "A Power BI report that is based on an Eventhouse."
       isCorrect: false
       explanation: "Incorrect. A real-time dashboard isn't a Power BI report."
     - content: "A Real-Time Intelligence item that can display data from a real-time streaming source in Microsoft Fabric."

@@ -1,10 +1,10 @@
-Real-Time dashboards in Microsoft Fabric are built on real-time streaming data sources, such as tables in an *eventhouse* that are populated by an *eventstream*. Each dashboard consists of one or more *tiles*, each displaying a real-time data visualization.
+Real-Time dashboards in Microsoft Fabric are built on real-time streaming data sources, such as tables in an *Eventhouse* that are populated by an *eventstream*. Each dashboard consists of one or more *tiles*, each displaying a real-time data visualization.
 
 ![Screenshot of a real-time dashboard.](../media/dashboard.png)
 
 ## Creating a real-time dashboard
 
-To create a real-time dashboard, you'll need a source of real-time data; such as an eventhouse containing a KQL database. You can then create a real-time dashboard with a *data source* that references the real-time data.
+To create a real-time dashboard, you'll need a source of real-time data; such as an Eventhouse containing a KQL database. You can then create a real-time dashboard with a *data source* that references the real-time data.
 
 ### Configuring authorization for data sources
 
