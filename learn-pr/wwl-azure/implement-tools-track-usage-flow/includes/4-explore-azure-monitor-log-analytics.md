@@ -73,7 +73,8 @@ In this tutorial, we focus on the Log Analytics part of Azure Monitor. You'll le
 
 1. Map existing virtual machines with the Log Analytics workspace. The following query uses the wokspaceid and workspace-secret key of the log analytics workspace to install the Microsoft Enterprise Cloud Monitoring extension onto an existing VM.
 
-   > **Note:** Replace the values of the variables with your existing resource group, virtual machine name, location, workspaceid, and workspace-secret key retrieved in the previous steps.
+   > [!NOTE]
+   > Replace the values of the variables with your existing resource group, virtual machine name, location, workspaceid, and workspace-secret key retrieved in the previous steps.
 
    ```powershell
 
@@ -95,13 +96,15 @@ In this tutorial, we focus on the Log Analytics part of Azure Monitor. You'll le
 
    ```
 
-   > **Note:** If you have multiple subscriptions, you may need to set the subscription context before running the above command. Use the following command to set the subscription context.
+   > [!NOTE]
+   > If you have multiple subscriptions, you may need to set the subscription context before running the above command. Use the following command to set the subscription context.
 
    ```powershell
    Set-AzContext -SubscriptionId "<subscription-id>"
    ```
 
-   > **Note:** If the extension fails to install, try to remove the extension and re-install it. Use the following command to remove the extension.
+   > [!NOTE]
+   > If the extension fails to install, try to remove the extension and re-install it. Use the following command to remove the extension.
 
    ```powershell
 
@@ -118,7 +121,8 @@ In this tutorial, we focus on the Log Analytics part of Azure Monitor. You'll le
     -Location $Location
    ```
 
-   > **Note:** If it still fails, check the VM's event logs for any errors, or install the extension manually by downloading the [Microsoft Monitoring Agent](https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-overview) and running the installer.
+   > [!NOTE]
+   > If it still fails, check the VM's event logs for any errors, or install the extension manually by downloading the [Microsoft Monitoring Agent](https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-overview) and running the installer.
 
 1. Run the script to configure the below-listed performance counters to be collected from the virtual machine. Replace the values of the variables with your existing resource group and workspace name.
 

@@ -42,12 +42,12 @@ quiz:
           explanation: "Incorrect. Treats infrastructure as a flexible resource that can be provisioned, de-provisioned, and reprovisioned as and when needed."
     - content: What is the significance of idempotency in Infrastructure as Code and Configuration as Code?
       choices:
-        - content: It ensures that scripts and templates are executed only once
+        - content: It ensures that scripts and templates are executed only once.
           isCorrect: false
           explanation: Incorrect. Idempotency allows for scripts and templates to be executed multiple times with the same outcome.
-        - content: It prevents the scaling in and out of resources and applications
+        - content: It prevents the scaling in and out of resources and applications.
           isCorrect: false
           explanation: Incorrect. Idempotency does not prevent scaling, but rather ensures consistent results despite scaling.
-        - content: It allows for operations to be applied against a resource multiple times, resulting in the same outcome
+        - content: It allows for operations to be applied against a resource multiple times, resulting in the same outcome.
           isCorrect: true
           explanation: Correct. Idempotency ensures that regardless of how many times an operation is applied, the outcome remains the same.
