@@ -23,7 +23,7 @@ abstract: |
 
   -   Apply best practices for real-time dashboards.
 prerequisites: Before starting this module, you should be familiar with Real-Time Intelligence capabilities in Microsoft Fabric.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/create-real-time-dashboards-microsoft-fabric.svg
 levels:
 - beginner
 roles:
