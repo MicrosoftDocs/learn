@@ -6,9 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Define a query to select, filter, and aggregate data
   description: "Define a query to select, filter, and aggregate data"
-  ms.date: 05/24/2023
+  ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: unit
 durationInMinutes: 5
 content: |
