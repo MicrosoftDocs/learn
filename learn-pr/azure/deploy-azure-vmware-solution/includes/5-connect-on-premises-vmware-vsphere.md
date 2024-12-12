@@ -8,7 +8,7 @@ To create an ExpressRoute Global Reach authorization key in the private cloud:
 
 1. From the Azure VMware Solution private cloud **Overview**, under **Manage**, select **Connectivity** > **ExpressRoute** > **Request an authorization key**.
 
-    :::image type="content" source="../media/5-request-expressroute-connectivity-authkey.png" alt-text="Screenshot of the Azure portal showing how to request an authorization key for an ExpressRoute circuit."lightbox="media/5-request-expressroute-connectivity-authkey.png":::
+    :::image type="content" source="../media/5-request-expressroute-connectivity-auth-key.png" alt-text="Screenshot of the Azure portal showing how to request an authorization key for an ExpressRoute circuit."lightbox="media/5-request-expressroute-connectivity-auth-key.png":::
 
 1. Enter a name for the authorization key.
 1. Select **Create**.
