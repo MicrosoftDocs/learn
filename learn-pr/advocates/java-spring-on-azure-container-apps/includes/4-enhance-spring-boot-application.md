@@ -6,6 +6,8 @@ This chapter will guide you through **Javak Stack** to enhance your Spring Boot 
 
 Open your portal and find your deployed Container App, click on the **manage** of Development stack, in the pop up window, select **Java**. This will turn on the **Java Stack** to enhance your Java applications, click on "Apply" to confirm the change.
 
+![Diagram of the choosing Java Stack.](../media/portal_select.png)
+
 Now you will see that your development stack is now set to **Java**.
 
 ![Diagram of the Java Stack.](../media/javastackinfo.png)
@@ -22,6 +24,8 @@ Now you will see that your development stack is now set to **Java**.
 ## View log streams via the Azure CLI
 
 You can view your container app's log streams from the Azure CLI with the `az containerapp logs show` command or your container app's environment system log stream with the `az containerapp env logs show` command.
+
+![Diagram of the log.](../media/logshow.png)
 
 You can check more on [View log streams in Azure Container Apps](https://learn.microsoft.com/azure/container-apps/log-streaming).
 
