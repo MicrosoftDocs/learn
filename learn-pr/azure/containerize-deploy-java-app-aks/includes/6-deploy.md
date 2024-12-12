@@ -218,3 +218,11 @@ You’ll get a page similar to this one:
 :::image type="content" source="../media/deploy.png" alt-text="Screenshot showing the running app.":::
 
 You can optionally sign in with any user from `tomcat-users.xml`; for example, `someuser@azure.com: password`.
+
+## Clean up resources
+
+The resources you created in this module might incur ongoing costs. To clean up the resources, you only need to delete the resource group that contains them:
+
+```bash
+az group delete --name $AZ_RESOURCE_GROUP
+```
