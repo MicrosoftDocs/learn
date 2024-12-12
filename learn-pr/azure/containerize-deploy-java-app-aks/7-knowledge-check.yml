@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: "Which tool allows developers to write instructions that are used to build container images?"
     choices:
-    - content: "Build Tool & Plugin"
+    - content: "Maven Build Tool & Plugin"
       isCorrect: false
       explanation: "Maven is a build tool for source code that lets you manage dependencies and deploy applications. Additionally, by using a third-party plugin like fabric8io, you can create container images with Maven commands. However, this is not the only viable solution."
     - content: "Docker Runtime"
