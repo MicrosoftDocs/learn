@@ -2,11 +2,9 @@
 uid: learn.wwl.create-real-time-dashboards-microsoft-fabric.get-started-with-real-time-dashboards
 title: Get started with real-time dashboards
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get started with real-time dashboards
   description: "Get started with real-time dashboards"
-  ms.date: 12/10/2024
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: gmalc
   ms.topic: unit
