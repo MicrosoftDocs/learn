@@ -83,7 +83,7 @@ From the resulting JSON output, copy the `principalId` value. `PrincipalId` is t
 
 ## Grant access to the vault
 
-The last step before deploying is to assign Key Vault permissions to your app's managed identity.  Make sure to replace both `<your-unique-vault-name>` with your vault's name in the `--name` parameter, and enter the `principalId` value you copied from the previous step as the value for `object-id` in the following command. To establish `Get` and `List` access, run this command.
+The last step before deploying is to assign Key Vault permissions to your app's managed identity. Make sure to replace both `<your-unique-vault-name>` with your vault's name in the `--name` parameter, and enter the `principalId` value you copied from the previous step as the value for `object-id` in the following command. To establish `Get` and `List` access, run this command.
 
 ```azurecli
 az keyvault set-policy \
@@ -115,10 +115,10 @@ az keyvault set-policy \
 
 ::: zone pivot="javascript"
 
-1. All your configuration is set and you're ready to deploy! The following commands will zip up your app into *site.zip*, and deploy it to App Service. We exclude `node_modules` from the zip because App Service restores them automatically when you deploy.  Make sure to replace `<your-unique-app-name>` with your app's name in the `--name` parameter.
+1. All your configuration is set and you're ready to deploy! The following commands will zip up your app into *site.zip*, and deploy it to App Service. We exclude `node_modules` from the zip because App Service restores them automatically when you deploy. Make sure to replace `<your-unique-app-name>` with your app's name in the `--name` parameter.
 
     > [!NOTE]
-    > You'll need to `cd` back to the KeyVaultDemoApp directory if you're not still there.
+    > If you're not already in the `KeyVaultDemoApp` directory, use the `cd` command to get back to it.
 
     ```azurecli
     zip site.zip * -x node_modules/

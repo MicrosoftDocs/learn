@@ -2,7 +2,7 @@ If you want to understand what can go wrong with managing an app's configuration
 
 Steve was working at a pet food delivery company for a few weeks. While exploring the details of the company's web app&mdash;a .NET Core web app that used an Azure SQL database for storing order information and third-party APIs for credit card billing and mapping customer addresses&mdash;Steve accidentally pasted the connection string for the orders database into a public forum.
 
-Days later, the accounting department noticed that the company was delivering a lot of pet food that wasn't paid for. Someone used the connection string to access the database and create orders by updating the database directly.
+Days later, the accounting department noticed that the company was delivering a substantial amount of pet food that wasn't paid for. Someone used the connection string to access the database and create orders by updating the database directly.
 
 After Steve realized his mistake, he hurriedly changed the database password to lock out the attacker. After Steve changed the password, the website started returning errors to users. The app server needed an updated configuration with the new password. Steve logged directly into the app server and changed the app configuration instead of redeploying, but the server was still showing failed requests.
 
