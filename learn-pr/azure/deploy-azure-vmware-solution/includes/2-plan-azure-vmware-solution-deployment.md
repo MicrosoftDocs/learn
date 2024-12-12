@@ -2,7 +2,7 @@ Azure VMware Solution delivers VMware-based private clouds in Azure. Private clo
 
 Azure VMware Solution private cloud hardware and software deployments are fully integrated and automated in Azure. At a high level, the following diagram shows the relationship between an on-premises VMware environment, Azure VMware Solution, and all Azure services that Azure VMware Solution can connect to.
 
-:::image type="content" source="../media/2-azure-vmware-relationship-onprem-azure-native.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment, Azure VMware Solution, and all Azure services that Azure VMware Solution can connect to.":::
+:::image type="content" source="../media/2-azure-vmware-relationship-onprem-azure-native.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment, Azure VMware Solution, and all Azure services that Azure VMware Solution can connect to."lightbox="media/2-azure-vmware-relationship-onprem-azure-native.png":::
 
 Your company can use Azure VMware Solution to run native VMware workloads on Azure. Virtual machines (VMs) can be migrated directly from the on-premises VMware environment to Azure VMware Solution. The VMs in Azure VMware Solution run like VMs do on-premises.
 
@@ -65,12 +65,12 @@ There are two types of sizing criteria to create Azure VMware Solution assessmen
 
 | Assessment type   | Details | Data |
 | :---------- | :------ | :--- |
-| Performance-based | Assess performance data of on-premises VMs. This can run for a period of time to collect; daily, weekly, and monthly performance patterns. | Recommended node size is based on CPU, memory usage, node type, storage type, and failures to tolerate (FTT). |
+| Performance-based | Assess performance data of on-premises VMs. This can run for a period of time to collect daily, weekly, and monthly performance patterns. | Recommended node size is based on CPU, memory usage, node type, storage type, and failures to tolerate (FTT). |
 | As is on-premises | Assess on-premises VM sizing. This is a point in time export of the vSphere configuration. | Recommended node size is based on the on-premises VM size along with node type, storage type, and failures to tolerate (FTT).
 
 To do the assessment:
 
-1. From the Azure Migrate project. In **Servers, databases and web apps > Azure Migrate: discovery and assessment**, select **Assess**.
+1. From the Azure Migrate project, in **Servers, databases and web apps > Azure Migrate: discovery and assessment**, select **Assess**.
 1. From the **Assessment type** dropdown list, select **Azure VMware Solution (Azure VMware Solution)**.
 1. In **Discovery Source**, select the applicable discover process (CSV file, RVTools, or Azure Migrate appliance).
 1. Select the **Select machines to assess** tab.
