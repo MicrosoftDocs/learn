@@ -18,14 +18,6 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-    - content: What is the main difference between the declarative and imperative approaches to Infrastructure as Code and Configuration as Code?
-      choices:
-        - content: Declarative approach defines how the final state should be achieved, while the imperative approach only states what the final state should be.
-          isCorrect: false
-          explanation: Incorrect. It's the other way around. The declarative approach states what the final state should be without defining how to achieve it.
-        - content: Imperative approach is easier to read and understand, while the declarative approach is more complex and requires coding knowledge.
-          isCorrect: false
-          explanation: Incorrect. The declarative approach is generally easier to read and understand as it abstracts away the methodology of how a state is achieved.
     - content: "Which of the following choices is defines the ability to apply one or more operations against a resource, resulting in the same outcome every time?"
       choices:
         - content: "Increment."
