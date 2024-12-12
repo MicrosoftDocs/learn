@@ -1,15 +1,5 @@
 This section guides you through deploying a Spring Boot application to Azure Container Apps. We'll cover packaging the application, setting up the Azure environment, and pushing the  application to Azure Container Apps.
-
-## Prerequisite
-
-To successfully complete this project, ensure you have the following prerequisites:
-
-| Requirement     | Instructions                                                                                                                                       |
-|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Azure account   | If you don't have one, [create an account for free](https://azure.microsoft.com/free/). You need the Contributor or Owner permission on the Azure subscription to proceed. Refer to [Assign Azure roles using the Azure portal](https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal) for details. |
-| git             | [Install git](https://git-scm.com/downloads).                                                                                              |
-| Azure CLI       | Install the [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli).                                                                                             |
-
+                                                                                     |
 ## Setup
 
 To sign in to Azure from the CLI, run the following command and follow the prompts to complete the authentication process.

@@ -3,7 +3,7 @@ uid: learn.java-on-azure-container-apps.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: This unit introduces how to deploy a spring boot app to azure container apps.
+  description: This unit introduces how to deploy a Spring Boot app to Azure Container Apps.
   author: hangwan
   ms.author: hangwan
   ms.date: 10/21/2024

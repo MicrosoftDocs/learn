@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.java-on-azure-container-apps.3-deploy-spring-boot-application
-title: Deploy Spring Boot application
+title: Exercise - Deploy Spring Boot application
 metadata:
-  title: Deploy Spring Boot application
+  title: Exercise - Deploy Spring Boot application
   description: This unit presents the deployment of the Spring Boot application to Azure Container Apps.
   author: hangwan
   ms.author: hangwan
