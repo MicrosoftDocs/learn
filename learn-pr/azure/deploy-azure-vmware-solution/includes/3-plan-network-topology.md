@@ -70,7 +70,7 @@ If on-premises network infrastructure is restrictive, the following ports must b
 | Azure VMware Solution private cloud management network | On-premises Active Directory | TCP | 389/636 |
 | Azure VMware Solution private cloud management network | On-premises Active Directory Global Catalog | TCP | 3268/3269 |
 | On-premises network | HCX Cloud Manager | TCP (HTTPS) | 9443 |
-| On-premises Admin Newtork | HCX Cloud Manager | SSH | 22 |
+| On-premises Admin Network | HCX Cloud Manager | SSH | 22 |
 | HCX Manager | Interconnect (HCX-IX) | TCP (HTTPS) | 8123 |
 | HCX Manager | Interconnect (HCX-IX), Network Extension (HCX-NE) | TCP (HTTPS) | 9443 |
 | Interconnect (HCX-IX) | Layer 2 connectivity | TCP (HTTPS) | 443 |

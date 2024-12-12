@@ -64,7 +64,7 @@ Follow these steps:
     | **Subscription** | The subscription for the deployment. |
     | **Resource group** | The resource group for private cloud resources. Select an existing resource group or create a new one. |
     | **Resource name** | A name for the Azure VMware Solution private cloud. |
-    | **Location** | The location (Azure region)where Azure VMware Solution can be deployed. |
+    | **Location** | The location (Azure region) where Azure VMware Solution can be deployed. |
     | **Size of host** | The SKU value for the bare metal nodes. |
     | **Host location** | Select whether to deploy your private cloud in a single availability zone or across two availability zones in the same region (stretched cluster feature). |
     | **Number of hosts** | The number of hosts to add to the private cloud cluster. With a stretched cluster feature requires 2x number of hosts needed to support your workload, equally split between the two availability zones. |

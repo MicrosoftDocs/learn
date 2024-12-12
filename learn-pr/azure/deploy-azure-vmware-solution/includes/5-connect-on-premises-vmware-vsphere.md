@@ -8,16 +8,16 @@ To create an ExpressRoute Global Reach authorization key in the private cloud:
 
 1. From the Azure VMware Solution private cloud **Overview**, under **Manage**, select **Connectivity** > **ExpressRoute** > **Request an authorization key**.
 
-    :::image type="content" source="../media/5-request-expressroute-connectivity-authkey.png" alt-text="Screenshot of the Azure portal showing how to request an authorization key for an ExpressRoute circuit.":::
+    :::image type="content" source="../media/5-request-expressroute-connectivity-authkey.png" alt-text="Screenshot of the Azure portal showing how to request an authorization key for an ExpressRoute circuit."lightbox="media/5-request-expressroute-connectivity-authkey.png":::
 
 1. Enter a name for the authorization key.
 1. Select **Create**.
 
-    :::image type="content" source="../media/5-create-name-expressroute-connectivity-auth-key.png" alt-text="Screenshot of the Azure portal UI for entering the name of the authorization key and selecting Create.":::
+    :::image type="content" source="../media/5-create-name-expressroute-connectivity-auth-key.png" alt-text="Screenshot of the Azure portal UI for entering the name of the authorization key and selecting Create."lightbox="media/5-create-name-expressroute-connectivity-auth-key.png":::
 
 1. The new key appears in the list of authorization keys for the private cloud:
 
-    :::image type="content" source="../media/5-new-expressroute-connectivity-auth-key-created.png" alt-text="Screenshot of the Azure portal showing the new ExpressRoute Global Reach authorization key in the key list for the private cloud.":::
+    :::image type="content" source="../media/5-new-expressroute-connectivity-auth-key-created.png" alt-text="Screenshot of the Azure portal showing the new ExpressRoute Global Reach authorization key in the key list for the private cloud."lightbox="media/5-new-expressroute-connectivity-auth-key-created.png":::
 
 1. Use the authorization key and ExpressRoute ID to complete the peering.
 
@@ -39,7 +39,7 @@ To use the Azure portal for peering:
 
 1. Select **Create**.
 
-    :::image type="content" source="../media/5-expressroute-global-reach-configuration.png" alt-text="Screenshot of the Azure portal fields for configuring ExpressRoute and adding the authorization key.":::
+    :::image type="content" source="../media/5-expressroute-global-reach-configuration.png" alt-text="Screenshot of the Azure portal fields for configuring ExpressRoute and adding the authorization key."lightbox="media/5-expressroute-global-reach-configuration.png":::
 
 1. The new connection will appear in the list of on-premises cloud connections.
 
