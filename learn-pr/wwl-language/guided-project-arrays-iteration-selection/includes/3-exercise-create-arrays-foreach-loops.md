@@ -29,7 +29,7 @@ In this task, you'll review the code that's provided as a Starter project for th
 
 1. Take a few minutes to review the code in the Program.cs file.
 
-1. Notice that the top portion of your code begins with a `Using` statement and a list of variable declarations.  
+1. Notice that the top portion of your code begins with a list of variable declarations.  
 
     ```c#
     // initialize variables - graded assignments 
@@ -60,9 +60,7 @@ In this task, you'll review the code that's provided as a Starter project for th
     int logan5 = 96;
     ```
 
-    The `using` statement enables you to write code that implements members of the `System` namespace without requiring you to specify `System`. For example, your code can use the `Console.WriteLine()` method without having to specify `System.Console.WriteLine()`. Among other things, the `using` statement makes your code easier to read.
-
-    Next, you see a comment line followed by a list of variables that are used to hold the scores of graded assignments for each student. Your first variable, `currentAssignments` is used to hold the number of exams that have been scored.
+    At the top of your code file, you see a comment line followed by a list of variables that are used to hold the scores of graded assignments for each student. Your first variable, `currentAssignments` is used to hold the number of exams that have been scored.
 
     The assignment score variables represent a great opportunity to create and use arrays!
 
