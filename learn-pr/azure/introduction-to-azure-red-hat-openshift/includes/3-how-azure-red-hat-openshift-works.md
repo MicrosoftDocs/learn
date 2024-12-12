@@ -36,7 +36,7 @@ The setup and configuration of the OpenShift cluster are automated, simplifying 
 
 ## Integrated identity and access management
 
-Access to the managed resource group can be granted to identities within the publisher’s tenant, allowing Microsoft and Red Hat to provide ongoing support and maintenance without compromising your environment's security. Role-based access control (RBAC) and Azure Active Directory integration ensure secure and appropriately managed access. All accesses are done via the Azure Red Hat OpenShift RP (an API used to manage the resources) and only to resources that are used by the cluster, not customer workloads/data.
+Access to the managed resource group can be granted to identities within the publisher’s tenant, allowing Microsoft and Red Hat to provide ongoing support and maintenance without compromising your environment's security. Role-based access control (RBAC) and Microsoft Entra ID integration ensure secure and appropriately managed access. All accesses are done via the Azure Red Hat OpenShift RP (an API used to manage the resources) and only to resources that are used by the cluster, not customer workloads/data.
 
 ## Cost and billing
 
@@ -50,6 +50,6 @@ Azure Red Hat OpenShift integrates seamlessly with monitoring and logging tools,
 
 ## Security and compliance
 
-The architecture of Azure Red Hat OpenShift is designed to facilitate compliance with security and governance standards. Azure provides a range of compliance certifications that businesses can utilize to meet specific regulatory requirements. Security features such as RBAC and Azure Active Directory integration ensure that only authorized users can access cluster resources. This, combined with Red Hat’s security practices, provides a robust solution that meets the security and compliance needs of organizations across sensitive sectors.
+The architecture of Azure Red Hat OpenShift is designed to facilitate compliance with security and governance standards. Azure provides a range of compliance certifications that businesses can utilize to meet specific regulatory requirements. Security features such as RBAC and Microsoft Entra ID integration ensure that only authorized users can access cluster resources. This, combined with Red Hat’s security practices, provides a robust solution that meets the security and compliance needs of organizations across sensitive sectors.
 
 By leveraging Azure Red Hat OpenShift, you benefit from a robust, enterprise-grade Kubernetes platform with the simplicity and efficiency of a managed service. This dual resource group setup ensures you maintain control over your application workloads while Microsoft and Red Hat manage the underlying infrastructure. The options for API and ingress visibility further enhance your ability to tailor the deployment to fit your organization's needs, offering a seamless and secure operational experience.

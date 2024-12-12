@@ -310,7 +310,7 @@ To add a Definition, use the following command, passing in:
 az apic api definition create -g contoso -n contoso-apis --api-id conference-api --version-id 2024-07-03 --title OpenAPI --definition-id openapi 
 ```
 
-To import an OpenAPI definition file from a url, use the **az apic api definition import-specification** command to import . Example: <https://conferenceapi.azurewebsites.net/?format=json>
+To import an OpenAPI definition file from a url, use the **az apic api definition import-specification** command to import . Example: <https://learn.microsoft.com/cli/azure/apic/api/definition?view=azure-cli-latest#az-apic-api-definition-import-specification-examples>
 
 ```bash
 az apic api definition import-specification -g contoso -n contoso-apis --api-id conference-api --version-id 2024-07-03 --definition-id openapi --format "link" --value 'https://petstore3.swagger.io/api/v3/openapi.json' --specification '{"name":"openapi","version":"3.0.2"}'
