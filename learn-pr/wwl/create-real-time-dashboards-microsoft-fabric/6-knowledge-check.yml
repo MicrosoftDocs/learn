@@ -2,11 +2,9 @@
 uid: learn.wwl.create-real-time-dashboards-microsoft-fabric.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/10/2024
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: gmalc
   ms.topic: unit
@@ -18,7 +16,7 @@ quiz:
   questions:
   - content: "What is a real-time dashboard?"
     choices:
-    - content: "A Power BI report that is based on an eventhouse."
+    - content: "A Power BI report that is based on an Eventhouse."
       isCorrect: false
       explanation: "Incorrect. A real-time dashboard isn't a Power BI report."
     - content: "A Real-Time Intelligence item that can display data from a real-time streaming source in Microsoft Fabric."
@@ -49,4 +47,3 @@ quiz:
     - content: "Use a SQL query instead of KQL."
       isCorrect: false
       explanation: "Incorrect. Real-time dashboards are based on KQL queries. Using SQL doesn't ensure data freshness."
-

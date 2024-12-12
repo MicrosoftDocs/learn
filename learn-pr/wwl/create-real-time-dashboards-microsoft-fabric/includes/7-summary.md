@@ -2,3 +2,4 @@ In this module, you learned about real-time dashboards in Microsoft Fabric. Toge
 
 > [!TIP]
 > For more information about real-time dashboards, see **[Create a Real-Time Dashboard](/fabric/real-time-intelligence/dashboard-real-time-create)**.
+

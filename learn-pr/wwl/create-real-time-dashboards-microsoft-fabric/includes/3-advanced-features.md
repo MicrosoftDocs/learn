@@ -54,3 +54,4 @@ The modified query includes an `and` clause that filters the data based on wheth
 ## Auto refresh
 
 Auto refresh automatically updates dashboard data, eliminating the need for manual page reloads or refresh actions. Editors can set a default refresh rate, which both editors and viewers can adjust during dashboard viewing. However, editors have the authority to establish a minimum refresh rate to manage cluster workload, preventing users from setting a rate below this threshold.
+
