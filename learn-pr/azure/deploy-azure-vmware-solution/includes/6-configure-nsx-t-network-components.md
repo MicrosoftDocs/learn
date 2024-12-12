@@ -16,7 +16,7 @@ You have four options to configure NSX components using the Azure portal:
 - **Port mirroring**: Set up port mirroring to help troubleshoot network issues.
 - **DNS**: Create a DNS forwarder to send DNS requests to a DNS server for resolution.
 
-:::image type="content" source="../media/6-networking-configuration-portal.png" alt-text="Screenshot of the Azure portal, showing where to configure NSX Manager options for segments, D H C P, port mirroring, and D N S.":::
+:::image type="content" source="../media/6-networking-configuration-portal.png" alt-text="Screenshot of the Azure portal, showing where to configure NSX Manager options for segments, D H C P, port mirroring, and D N S."lightbox="media/6-networking-configuration-portal.png":::
 
 ## Create an NSX network segment in the Azure portal
 
@@ -25,11 +25,11 @@ Virtual machines (VMs) either created in or migrated to Azure VMware Solution sh
 1. In the Azure portal, select your Azure VMware Solution private cloud.
 1. Under **Workload Networking**, select **Segments** > **+Add**:
 
-    :::image type="content" source="../media/6-networking-add-new-segment.png" alt-text="Screenshot of the Azure portal showing how to add an N S X Manager network segment.":::
+    :::image type="content" source="../media/6-networking-add-new-segment.png" alt-text="Screenshot of the Azure portal showing how to add an N S X Manager network segment."lightbox="media/6-networking-add-new-segment.png":::
 
 1. Provide details for the new logical networking segment:
 
-    :::image type="content" source="../media/6-networking-new-segment-details.png" alt-text="Screenshot of the Azure portal showing where to provide details for the network segment.":::
+    :::image type="content" source="../media/6-networking-new-segment-details.png" alt-text="Screenshot of the Azure portal showing where to provide details for the network segment."lightbox="media/6-networking-new-segment-details.png":::
 
     | Field | Value |
     | ----- | ----- |
@@ -50,11 +50,11 @@ From a Jumpbox VM, connect to NSX Manager. Get the credentials under **Manage** 
 
 1. In NSX Manager, select **Networking** > **Segments**, then select **Add Segment**.
 
-    :::image type="content" source="../media/6-nsx-add-segment.png" alt-text="Screenshot of how to add a segment in NSX Manager.":::
+    :::image type="content" source="../media/6-nsx-add-segment.png" alt-text="Screenshot of how to add a segment in NSX Manager."lightbox="media/6-nsx-add-segment.png":::
 
 1. Provide details for the new logical networking segment, then select **Save**.
 
-    :::image type="content" source="../media/6-nsx-add-segment-details.png" alt-text="Screenshot of how to add details for the new segment in NSX Manager.":::
+    :::image type="content" source="../media/6-nsx-add-segment-details.png" alt-text="Screenshot of how to add details for the new segment in NSX Manager."lightbox="media/6-nsx-add-segment-details.png":::
 
 | Field | Value |
 | ----- | ----- |
@@ -75,7 +75,7 @@ A DHCP server or relay can be configured directly from the Azure VMware Solution
 1. Select either **DHCP Server** or **DHCP Relay**.
 1. Provide a name for the server or relay and provide three IP addresses. For a DHCP relay, only one IP address is required.
 
-    :::image type="content" source="../media/6-networking-add-dhcp-server-relay.png" alt-text="Screenshot of the Azure portal showing how to add either a D H C P server or a D H C P relay into the Azure VMware Solution private cloud.":::
+    :::image type="content" source="../media/6-networking-add-dhcp-server-relay.png" alt-text="Screenshot of the Azure portal showing how to add either a D H C P server or a D H C P relay into the Azure VMware Solution private cloud."lightbox="media/6-networking-add-dhcp-server-relay.png":::
 
 1. Complete the DHCP configuration by providing DHCP ranges on the logical segments, like those configured previously, then select **OK**.
 
@@ -89,14 +89,14 @@ To set up port mirroring in the Azure VMware Solution console, you'll first crea
 1. Name the source VM group, select the VMs, then select **OK**.
 1. Repeat the preceding step to create the destination VM group.
 
-    :::image type="content" source="../media/6-networking-add-port-mirroring-vm-groups.png" alt-text="Screenshot of the Azure portal showing where to configure port mirroring related to destination VMs or VM groups.":::
+    :::image type="content" source="../media/6-networking-add-port-mirroring-vm-groups.png" alt-text="Screenshot of the Azure portal showing where to configure port mirroring related to destination VMs or VM groups."lightbox="media/6-networking-add-port-mirroring-vm-groups.png":::
 
 Next, create a port mirroring profile by defining the traffic direction for source and destination VM groups.
 
 1. Make sure both the source and destination VM groups have been created.
 1. Select **Port mirroring** > **Add**, and then provide the following values:
 
-    :::image type="content" source="../media/6-networking-add-port-mirroring-profile.png" alt-text="Screenshot of the Azure portal showing how to add the port-mirroring profile.":::
+    :::image type="content" source="../media/6-networking-add-port-mirroring-profile.png" alt-text="Screenshot of the Azure portal showing how to add the port-mirroring profile."lightbox="media/6-networking-add-port-mirroring-profile.png":::
 
     | Field   | Value |
     | :---------- | :------------------ |
@@ -121,7 +121,7 @@ Configure additional forwarder:
 1. In your VMware Solution private cloud, under **Workload Networking**, select **DNS** > **DNS zones**, then select **+Add**.
 1. Select **FQDN zone**, provide a name and up to three DNS Server IP addresses in the format of 10.0.0.53 then select **OK**.
 
-    :::image type="content" source="../media/6-add-dns-zone.png" alt-text="Screenshot of the FQDN zone showing how to add DNS Server IP addresses.":::
+    :::image type="content" source="../media/6-add-dns-zone.png" alt-text="Screenshot of the FQDN zone showing how to add DNS Server IP addresses."lightbox="media/6-add-dns-zone.png":::
 
 1. Adding DNS zones can take several minutes to complete, you can follow the progress from **Notifications**. When the DNS zone is created, you see a message in the Notification. 
 1. Repeat steps 1-3 to add the other FQDN zones, including any applicable reverse lookup zones.
