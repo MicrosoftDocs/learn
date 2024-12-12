@@ -2,7 +2,7 @@ Azure VMware Solution delivers VMware-based private clouds in Azure. Private clo
 
 Azure VMware Solution private cloud hardware and software deployments are fully integrated and automated in Azure. At a high level, the following diagram shows the relationship between an on-premises VMware environment, Azure VMware Solution, and all Azure services that Azure VMware Solution can connect to.
 
-:::image type="content" source="../media/2-azure-vmware-relationship-onprem-azure-native.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment, Azure VMware Solution, and all Azure services that Azure VMware Solution can connect to."lightbox="media/2-azure-vmware-relationship-onprem-azure-native.png":::
+:::image type="content" source="../media/2-azure-vmware-relationship-on-premises-azure-native.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment, Azure VMware Solution, and all Azure services that Azure VMware Solution can connect to."lightbox="media/2-azure-vmware-relationship-on-premises-azure-native.png":::
 
 Your company can use Azure VMware Solution to run native VMware workloads on Azure. Virtual machines (VMs) can be migrated directly from the on-premises VMware environment to Azure VMware Solution. The VMs in Azure VMware Solution run like VMs do on-premises.
 
