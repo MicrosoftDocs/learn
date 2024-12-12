@@ -13,14 +13,14 @@ metadata:
   ms.contributors: shkuehn-03222021, orthomas-08092023
   ms.service: azure-vmware
 title: Prepare to migrate VMware resources to Azure by deploying Azure VMware Solution
-summary: Learn how to plan an Azure VMware Solution deployment by reviewing the requirements and assessing your migration. Prepare for the VMware resource migration by deploying an Azure VMware Solution resource. Then, configure Azure ExpressRoute Global Reach to connect your on-premises VMware vSphere environment to Azure VMware Solution.
+summary: Learn how to plan an Azure VMware Solution deployment by reviewing the requirements and assessing your migration. Prepare for the VMware resource migration by deploying an Azure VMware Solution private cloud resource. Then, configure Azure ExpressRoute Global Reach to connect your on-premises VMware vSphere environment to the Azure VMware Solution.
 abstract: |
   By the end of this module, you'll be able to:
   - Plan a successful Azure VMware Solution deployment.
-  - Connect to an on-premises VMware environment.
+  - Connect to an on-premises VMware vSphere environment.
 prerequisites: |
-  - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and vSAN
-  - Basic knowledge of network concepts, such as Classless Inter-Domain Routing (CIDR), Border Gateway Protocol (BGP) routing, Dynamic Host Configuration Protocol (DHCP), and subnets
+  - Experience managing VMware solution infrastructure, such as vCenter Server, ESXi, NSX Data Center, and vSAN.
+  - Basic knowledge of network concepts, such as Classless Inter-Domain Routing (CIDR), Border Gateway Protocol (BGP) routing, Dynamic Host Configuration Protocol (DHCP), and IPv4 network subnets.
 iconUrl: /training/achievements/deploy-azure-vmware-solution.svg
 badge:
   uid: learn.deploy-azure-vmware-solution.badge
@@ -40,7 +40,7 @@ units:
 - learn.deploy-azure-vmware-solution.plan-network-topology
 - learn.deploy-azure-vmware-solution.deploy-azure-vmware-solution
 - learn.deploy-azure-vmware-solution.connect-on-premises-vmware
-- learn.deploy-azure-vmware-solution.configure-nsx-t-network-components
+- learn.deploy-azure-vmware-solution.configure-nsx-network-components
 - learn.deploy-azure-vmware-solution.knowledge-check
 - learn.deploy-azure-vmware-solution.summary
 

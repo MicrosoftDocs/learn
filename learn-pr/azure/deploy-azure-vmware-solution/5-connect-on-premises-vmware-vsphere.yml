@@ -18,7 +18,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which resource is required to configure ExpressRoute peering on the Azure VMware Solution private cloud to the on-premises environment?"
+  - content: "Which resource is required to configure ExpressRoute peering on the Azure VMware Solution private cloud to the on-premises vSphere environment?"
     choices:
     - content: "Customer-provided ExpressRoute circuit"
       isCorrect: true
@@ -29,7 +29,7 @@ quiz:
     - content: "Network virtual appliance"
       isCorrect: false
       explanation: "A network virtual appliance (NVA) is a virtual appliance that primarily performs network functions through virtualization. This appliance isn't required to peer the Azure VMware Solution environment to on-premises."
-  - content: "For on-premises network traffic to reach Azure VMware Solution, which component is required?"
+  - content: "For on-premises vSphere network traffic to reach Azure VMware Solution, which component is required?"
     choices: 
     - content: "Virtual private network"
       isCorrect: false
