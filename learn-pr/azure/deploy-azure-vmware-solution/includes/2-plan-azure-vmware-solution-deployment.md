@@ -138,7 +138,7 @@ Critical patches and updates are applied when they're validated. You'll be notif
 Microsoft is responsible for the lifecycle management of NSX appliances, such as NSX Manager and NSX Edge. Microsoft is also responsible for bootstrapping network configuration, such as creating the Tier-0 gateway and enabling North-South routing. You're responsible for NSX
  SDN configuration. These configurations include network segments, distributed firewall rules, Tier-1 gateways, and load balancers.
 
-### NSX Configuration
+### NSX configuration
 
 There are two different methods for managing Azure VMware Solution networking and networking services such as DNS, DHCP, and others with NSX. You can do configurations in NSX Manager or Azure Resource Manager Portal.
 
