@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.deploy-azure-vmware-solution.configure-nsx-t-network-components
+uid: learn.deploy-azure-vmware-solution.configure-nsx-network-components
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Configure NSX-T network components
-  description: Configure NSX-T network components.
+  title: Configure NSX network components
+  description: Configure NSX network components.
   ms.date: 08/01/2024
   author: amycolyer
   ms.author: amycolyer
   ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: shkuehn-03222021, orthomas-08092023
-title: Configure NSX-T network components
+title: Configure NSX network components
 durationInMinutes: 10
 content: |
   [!include[](includes/6-configure-nsx-t-network-components.md)]

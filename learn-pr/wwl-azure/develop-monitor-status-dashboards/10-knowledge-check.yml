@@ -6,48 +6,48 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/08/2024
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following choices is a platform integration Azure Monitor provides to visualize your logs in real-time?"
-    choices:
-    - content: "Azure Dashboards."
-      isCorrect: false
-      explanation: "Incorrect. Azure Monitor integrates with Power BI to provide logs visualization in real-time."
-    - content: "Power BI."
-      isCorrect: true
-      explanation: "Correct. Azure Monitor integrates with Power BI to provide logs visualization in real-time."
-    - content: "Excel."
-      isCorrect: false
-      explanation: "Incorrect. Azure Monitor integrates with Power BI to provide logs visualization in real-time."
-  - content: "Which of the following choices is an Azure Dashboards limitation?"
-    choices:
-    - content: "Log charts can only be pinned to shared dashboards."
-      isCorrect: true
-      explanation: "Correct. The limitation is Log charts can only be pinned to shared dashboards. Full-screen mode and Parametrized metrics dashboards with the timestamp and custom parameters are Advantages."
-    - content: "Full-screen mode."
-      isCorrect: false
-      explanation: "Incorrect. The limitation is Log charts can only be pinned to shared dashboards. Full-screen mode and Parametrized metrics dashboards with the timestamp and custom parameters are Advantages."
-    - content: "Parametrized metrics dashboards with timestamp and custom parameters."
-      isCorrect: false
-      explanation: "Incorrect. The limitation is Log charts can only be pinned to shared dashboards. Full-screen mode and Parametrized metrics dashboards with the timestamp and custom parameters are Advantages."
-  - content: "Which of the following choices is a feature in Azure Monitor that allows you to create custom visualizations with log data?"
-    choices:
-    - content: "Workbooks."
-      isCorrect: false
-      explanation: "Incorrect. View Designer in Azure Monitor allows you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect."
-    - content: "View Designer."
-      isCorrect: true
-      explanation: "Correct. View Designer in Azure Monitor allows you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect."
-    - content: "Data Export."
-      isCorrect: false
-      explanation: "Incorrect. View Designer in Azure Monitor allows you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect."
+    - content: "What is one of the advantages of using Azure dashboards for data visualization?"
+      choices:
+        - content: "Enables deep integration into Azure, allowing visualizations to be pinned from multiple Azure pages."
+          isCorrect: true
+          explanation: "Correct. Azure dashboards offer deep integration into Azure, supporting both metrics and logs, and allowing data from multiple sources."
+        - content: "Allows custom parameters support for log charts"
+          isCorrect: false
+          explanation: "Incorrect. Azure dashboards do not provide custom parameters support for log charts."
+        - content: "Supports interactivity with dashboard data"
+          isCorrect: false
+          explanation: "Incorrect. Azure dashboards do not support interactivity with dashboard data."
+    - content: "What is the impact of flaky tests on the overall health and reliability of Azure Pipelines?"
+      choices:
+        - content: "Flaky tests can cause intermittent build failures, leading to unpredictable pipeline behavior, consuming resources for investigations, and delaying the progression of the pipeline."
+          isCorrect: true
+          explanation: "Correct. Flaky tests can lead to unpredictable pipeline behavior, consume resources for investigations, and delay the progression of the pipeline, affecting the overall health and reliability of Azure Pipelines."
+        - content: "Flaky tests have no significant impact on the overall health and reliability of Azure Pipelines."
+          isCorrect: false
+          explanation: "Incorrect. Flaky tests can cause intermittent build failures, leading to unpredictable pipeline behavior and affecting the overall health and reliability of Azure Pipelines."
+        - content: "Flaky tests only affect the testing phase of the pipeline and do not impact the overall health and reliability of Azure Pipelines."
+          isCorrect: false
+          explanation: "Incorrect. While flaky tests originate from the testing phase, their impact extends to the overall health and reliability of the pipeline itself."
+    - content: "What is a key consideration when optimizing pipeline concurrency in Azure DevOps?"
+      choices:
+        - content: "Balancing performance requirements against cost considerations."
+          isCorrect: true
+          explanation: "Correct. Optimization involves balancing performance needs with cost considerations for efficient resource utilization."
+        - content: "Increasing the number of parallel jobs without considering cost implications."
+          isCorrect: false
+          explanation: "Incorrect. While increasing parallel jobs can improve performance, it's important to balance this with cost considerations."
+        - content: "Ignoring pipeline performance metrics."
+          isCorrect: false
+          explanation: "Incorrect. Monitoring pipeline performance metrics is crucial for identifying optimization opportunities."

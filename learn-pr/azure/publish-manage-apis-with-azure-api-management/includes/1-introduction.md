@@ -16,5 +16,5 @@ In this module, you will:
 ## Prerequisites
 
 - Familiarity with basic concepts of web APIs, including operations, endpoints, and API standards such as OpenAPI.
-- Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
+- A basic understanding of Azure and cloud concepts, services, and the Azure portal.
 - [!include[](../../../includes/azure-subscription-prerequisite.md)]

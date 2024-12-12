@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/24/2024
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
@@ -16,36 +16,36 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following statements best describe a pull request?"
-    choices:
-    - content: "Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
-      isCorrect: true
-      explanation: "Correct. Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
-    - content: "Pull requests are used to publish new changes from feature branches into production branches and update the environments with the latest code version."
-      isCorrect: false
-      explanation: "Incorrect. Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
-    - content: "Pull request creates reports from the latest branch updates and generates remediation summary for resolving issues during development."
-      isCorrect: false
-      explanation: "Incorrect. Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
-  - content: "Which of the following choices isn't a benefit of using pull requests?"
-    choices:
-    - content: "Protect branches with policies."
-      isCorrect: false
-      explanation: "Incorrect. The common benefits of collaborating with pull requests are: Get your code reviewed, Give great feedback, and Protect branches with policies."
-    - content: "Give feedback."
-      isCorrect: false
-      explanation: "Incorrect. The common benefits of collaborating with pull requests are: Get your code reviewed, Give great feedback, and Protect branches with policies."
-    - content: "Create reports about code security and quality."
-      isCorrect: true
-      explanation: "Correct. The common benefits of collaborating with pull requests are: Get your code reviewed, Give great feedback, and Protect branches with policies."
-  - content: "Which of the following choices is the most effective way to avoid direct updates from feature branches into main?"
-    choices:
-    - content: "Branch Policies."
-      isCorrect: true
-      explanation: "Correct. Policies are a great way to enforce your team's code quality and change-management standards."
-    - content: "Branch Security."
-      isCorrect: false
-      explanation: "Incorrect. Policies are a great way to enforce your team's code quality and change-management standards."
-    - content: "Branch Lock."
-      isCorrect: false
-      explanation: "Incorrect. Policies are a great way to enforce your team's code quality and change-management standards."
+    - content: "Which of the following statements best describe a pull request?"
+      choices:
+        - content: "Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
+          isCorrect: true
+          explanation: "Correct. Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
+        - content: "Pull requests are used to publish new changes from feature branches into production branches and update the environments with the latest code version."
+          isCorrect: false
+          explanation: "Incorrect. Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
+        - content: "Pull request creates reports from the latest branch updates and generates remediation summary for resolving issues during development."
+          isCorrect: false
+          explanation: "Incorrect. Pull requests are commonly used by teams and organizations collaborating, where everyone shares a single repository, and topic branches are used to develop features and isolate changes."
+    - content: What is the primary purpose of pull requests in a GitHub repository?
+      choices:
+        - content: "To propose changes, facilitate code review, and merge changes into the main branch after review."
+          isCorrect: true
+          explanation: "Correct. Pull requests are used to propose changes, allow for code review and discussion, and then merge the approved changes into the main branch."
+        - content: "To delete unwanted branches from the repository"
+          isCorrect: false
+          explanation: "Incorrect. Pull requests do not serve the purpose of deleting branches, they are used for proposing changes and facilitating review."
+        - content: "To directly merge changes into the main branch without review."
+          isCorrect: false
+          explanation: "Incorrect. Pull requests are not used to directly merge changes without review, they are used to propose changes and facilitate review before merging."
+    - content: "What is the purpose of branch policies in a development process?"
+      choices:
+        - content: "To enforce code quality and change-management standards before changes can be accepted to the main branch."
+          isCorrect: true
+          explanation: "Correct. Branch policies are used to enforce code quality checks and change-management standards before changes can be accepted to the main branch."
+        - content: "To bypass code review process for faster code integration."
+          isCorrect: false
+          explanation: "Incorrect. Branch policies enforce a code review process to maintain code quality and standards."
+        - content: "To allow developers to push changes directly to the main branch."
+          isCorrect: false
+          explanation: "Incorrect. Branch policies are designed to prevent direct changes to the main branch, ensuring code quality and change-management standards."

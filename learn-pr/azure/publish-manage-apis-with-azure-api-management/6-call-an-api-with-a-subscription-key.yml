@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Call an API with a subscription key
   description: Call an API with a subscription key
-  ms.date: 10/30/2023
+  ms.date: 12/05/2024
   author: dlepow
   ms.author: danlep
   ms.topic: unit
