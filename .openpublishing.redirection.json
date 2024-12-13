@@ -35783,6 +35783,11 @@
       "source_path": "learn-pr/wwl-data-ai/build-azure-machine-learn-custom-skill-for-azure-cognitive-search/02-understand-how-use-custom-skillset.md",
       "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-form-recognizer-custom-skill-for-azure-cognitive-search/index.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
     }
   ]
 }
