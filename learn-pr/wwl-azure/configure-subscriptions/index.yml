@@ -35,7 +35,6 @@ products:
 subjects:
 - finance-accounting
 units:
-- learn.wwl.configure-subscriptions.introduction
 - learn.wwl.configure-subscriptions.obtain-subscription
 - learn.wwl.configure-subscriptions.knowledge-check
 - learn.wwl.configure-subscriptions.summary-resources
