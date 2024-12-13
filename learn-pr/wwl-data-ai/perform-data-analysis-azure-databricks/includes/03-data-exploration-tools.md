@@ -6,7 +6,7 @@ Let's explore the tools you use when working with data in Azure Databricks.
 
 You can use **notebooks** in Azure Databricks to write Python, SQL, Scala, or R code to explore and visualize data. Notebooks support interactive data exploration and can be shared among team members. It also supports data profiling capabilities for data scientists to understand the shape and content of the data.
 
-:::image type="content" source="../media/azure-databricks-language.png" alt-text="Screenshot of available languages in Azure Databricks notebooks." lightbox="../media/azure-databricks-language.png":::
+:::image type="content" source="../media/azure-databricks-notebooks.png" alt-text="Screenshot of an Azure Databricks notebook." lightbox="../media/azure-databricks-notebooks.png":::
 
 You can use the built-in **visualizations** to quickly understand data distributions, trends, and patterns. Next to the built-in features, Azure Databricks allows you to integrate with commonly used open-source libraries like Matplotlib, Seaborn, or D3.js for more complex visualizations.
 
@@ -14,7 +14,7 @@ You can use the built-in **visualizations** to quickly understand data distribut
 
 When you work with data in notebooks, you make use of **Spark DataFrames** that are built on Apache Spark. DataFrames allow you to manipulate large datasets efficiently.
 
-To create a simple DataFrame, you can run the following code:
+For example, to create a simple DataFrame, you could run the following code:
 
 ```python
 data = [("Alice", 34), ("Bob", 45), ("Cathy", 29)]
@@ -41,7 +41,7 @@ sql_df = spark.sql("SELECT Name, Age FROM people WHERE Age > 30")
 ```
 
 > [!Tip]
-> For more information, learn how to [load and transform data using Apache Spark DataFrames](/azure/databricks/getting-started/dataframes?azure-portal=true).
+> For more information about dataframes, see **[Tutorial: Load and transform data using Apache Spark DataFrames](/azure/databricks/getting-started/dataframes)**.
 
 ## Explore data using libraries and APIs
 
@@ -60,7 +60,7 @@ You can train machine learning models to help you explore and process your data.
 Besides built-in chart options, Azure Databricks integrates with external visualization tools like Tableau or Power BI through **data visualization APIs** for enhanced dashboarding capabilities.
 
 > [!Tip]
-> Learn more on how to work with [libraries](/azure/databricks/libraries/?azure-portal=true).
+> For more information about working with libraries in Azure Databricks, see **[Libraries](/azure/databricks/libraries/)**.
 
 ## Manage your compute clusters
 
@@ -74,6 +74,6 @@ There are two benefits to managing your compute clusters in Azure Databricks:
 - **Managed clusters:** You can simplify your cluster management as Azure Databricks manages the configuration, setup, and maintenance.
 
 > [!Tip]
-> Learn more about how to [manage compute](/azure/databricks/compute/clusters-manage?azure-portal=true)
+> For more information about how to manage clusters in Azure Databricks, see **[Manage compute](/azure/databricks/compute/clusters-manage)**.
 
 These tools make Azure Databricks a flexible platform for data exploration, handling everything from basic data cleaning to advanced machine learning projects.

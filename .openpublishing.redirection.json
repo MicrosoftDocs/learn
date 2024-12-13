@@ -1,6 +1,34 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/2-monitor-data-ingestion.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/3-monitor-data-transformation.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/4-monitor-semantic-models.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/5-configure-alerts.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/6-exercise-configure-alerts-in-fabric.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/5-exercise"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/6-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/8-summary.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/7-summary"
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/query-data-warehouse-microsoft-fabric/2-use-sql-query-editor.yml",
       "redirect_url": "/training/modules/query-data-warehouse-microsoft-fabric/"
     },
@@ -35747,6 +35775,181 @@
     {
       "source_path": "learn-pr/wwl/ingest-data-with-spark-fabric-notebooks/3-write-optimize.md",
       "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-azure-machine-learn-custom-skill-for-azure-cognitive-search/index.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-azure-machine-learn-custom-skill-for-azure-cognitive-search/03-enrich-search-index-use-model.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-azure-machine-learn-custom-skill-for-azure-cognitive-search/04-exercise-enrich-search-index-use-model.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-azure-machine-learn-custom-skill-for-azure-cognitive-search/01-introduction.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-azure-machine-learn-custom-skill-for-azure-cognitive-search/05-knowledge-check.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-azure-machine-learn-custom-skill-for-azure-cognitive-search/06-summary.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-azure-machine-learn-custom-skill-for-azure-cognitive-search/02-understand-how-use-custom-skillset.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-form-recognizer-custom-skill-for-azure-cognitive-search/index.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-form-recognizer-custom-skill-for-azure-cognitive-search/3-build-custom-skill.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-form-recognizer-custom-skill-for-azure-cognitive-search/4-exercise-build-deploy.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-form-recognizer-custom-skill-for-azure-cognitive-search/1-introduction.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-form-recognizer-custom-skill-for-azure-cognitive-search/5-knowledge-check.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-form-recognizer-custom-skill-for-azure-cognitive-search/6-summary.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-form-recognizer-custom-skill-for-azure-cognitive-search/2-understand-enrichment-pipelines.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/index.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/7-simulation-command-line.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/5-simulation-powershell.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/1-introduction.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/8-knowledge-check.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/9-summary-resources.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/6-use-azure-cli.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/3-use-azure-cloud-shell.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/2-use-azure-portal.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/4-use-azure-powershell.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/index.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/8-apply-cost-savings.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/7-apply-resource-tagging.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/2-identify-regions.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/5-identify-subscription-usage.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/3-implement-azure-subscriptions.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/6-implement-cost-management.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/1-introduction.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/9-knowledge-check.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/4-obtain-subscription.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/10-summary-resources.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
       "redirect_document_id": false
     }
   ]
