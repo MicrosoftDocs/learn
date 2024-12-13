@@ -9,7 +9,7 @@ In this unit, you learn about:
 
 ## Management policy features
 
-| Feature | Free & Pro | Business | Enterprise |
+| Feature | Free* & Pro | Business | Enterprise |
 |----------|----------|----------|----------|
 | Public code filter    |     ✅     |      ✅    |     ✅     |
 | User management   |     ❌     |     ✅     |     ✅     |
@@ -21,18 +21,18 @@ In this unit, you learn about:
 | Require GitHub Enterprise Cloud   |     ❌     |     ❌     |     ✅     |
 | Usage metrics    |    ❌      |     ✅     |      ✅    |
 
-* GitHub Copilot Free has usage limitations
+*GitHub Copilot Free has usage limitations
 
 ## Customization features
 
-| Feature | Free & Pro | Business | Enterprise |
+| Feature | Free* & Pro | Business | Enterprise |
 |----------|----------|----------|----------|
 | Tailor chat conversations to your private codebase    |     ❌       |      ❌      |     ✅     |
 | Unlimited integrations with Copilot Extensions (public beta)   |     ✅      |     ✅     |     ✅     |
 | Build a private extension for internal tooling (public beta)   |     ✅      |     ✅     |     ✅     |
 | Attach knowledge bases to chat for organizational context    |     ❌     |     ❌     |     ✅     |
 
-* GitHub Copilot Free has usage limitations
+*GitHub Copilot Free has usage limitations
 
 When you're selecting a GitHub Copilot pricing plan, you and your organization should consider these key factors:
 
