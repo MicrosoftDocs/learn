@@ -66,6 +66,8 @@ With the database been created, now let's connect our previously deployed contai
       - Choose Connection string.
       - Fill in your `Username` and `Password` and leave others as default.
 
+![Diagram of the Service Connector.](../media/service_connector.png)
+
 4. Confirm and deploy your changes.
 
 5. Once the deploy is ready, cLick on Validate to validate your connection status.
