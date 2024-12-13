@@ -96,4 +96,4 @@ There are two ways to clean up dependencies you no longer need:
 - **Prune**: Use `npm prune` to remove all unlisted dependencies from `node_modules`. Pruning is useful when you want to remove multiple dependencies without running uninstall for each. To prune:
 
     1. Delete the entries from dependencies or devDependencies in `package.json`.
-    1. run `npm prune`.
+    1. Run `npm prune`.
