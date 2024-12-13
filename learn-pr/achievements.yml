@@ -4337,3 +4337,8 @@ achievements:
   title: Configure Azure resources with tools
   summary: You will learn how to select a tooling option such as Azure portal, Azure PowerShell, Azure CLI, or Azure Cloud Shell.
   iconUrl: /training/achievements/arm-configure-with-tools.svg
+- uid: learn.wwl.configure-subscriptions.badge
+  type: badge
+  title: Configure subscriptions
+  summary: Learn how to configure Azure subscriptions, including how to obtain a subscription, implement cost management, and apply Azure resource tags.
+  iconUrl: /training/achievements/subscriptions-configure.svg
