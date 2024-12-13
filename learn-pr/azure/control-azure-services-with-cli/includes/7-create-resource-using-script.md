@@ -11,8 +11,7 @@ than manually creating them each time.
 Beyond the core operation of creating a VM, your script needs to meet a few other requirements:
 
 - **Create multiple VMs**: Use `az vm create` to create multiple uniquely named VMs.
-- **Resource group parameter**: Allow the script to accept the name of the resource group as a
-  parameter.
+- **Resource group parameter**: Allow the script to accept the name of the resource group as a parameter.
 
 In this unit, you learn how to write and execute an Azure CLI script in a Bash environment that meets these
 requirements.

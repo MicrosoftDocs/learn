@@ -37,10 +37,10 @@ units:
 - learn.control-azure-services-with-cli.2-decide-if-azure-cli-is-right-for-your-tasks
 - learn.control-azure-services-with-cli.3-install-azure-cli
 - learn.control-azure-services-with-cli.4-exercise-install-azure-cli
-- learn.control-azure-services-with-cli.5-create-resources-interactively
-- learn.control-azure-services-with-cli.6-exercise-create-resources-interactively
-- learn.control-azure-services-with-cli.7-create-resources-using-script
-- learn.control-azure-services-with-cli.8-exercise-create-resources-using-script
+- learn.control-azure-services-with-cli.5-create-resource-interactively
+- learn.control-azure-services-with-cli.6-exercise-create-resource-interactively
+- learn.control-azure-services-with-cli.7-create-resource-using-script
+- learn.control-azure-services-with-cli.8-exercise-create-resource-using-script
 - learn.control-azure-services-with-cli.9-summary
 badge:
   uid: learn.control-azure-services-with-cli.badge

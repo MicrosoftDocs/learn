@@ -83,7 +83,7 @@ Here's how to create a new Azure VM with Azure CLI:
    This is the same output that shows after a new VM is created. However, it is helpful to return this information when figuring out nested property names to reference in a script. Property names are case sensitive.
 
    ```azurecli
-   az vm show --resource-group $rgName --name $vmName   
+   az vm show --resource-group $rgName --name $vmName
    ```
 
    **Get information about VM properties.**
