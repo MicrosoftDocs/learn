@@ -35873,6 +35873,11 @@
       "source_path": "learn-pr/wwl-azure/configure-subscriptions/index.md",
       "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/8-apply-cost-savings.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
     }
   ]
 }
