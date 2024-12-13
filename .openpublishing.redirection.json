@@ -35843,6 +35843,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/8-knowledge-check.md",
       "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/9-summary-resources.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
     }
   ]
 }
