@@ -26,4 +26,4 @@ With Azure NetApp Files cross-region replication, you pay only for the amount of
 
 The replication price is based on the replication frequency and the region of the destination volume you choose during the initial replication configuration. 
 
-For pricing information, see [Cost models for cross-region replication](/cross-region-replication-introduction#cost-model-for-cross-region-replication).
+For pricing information, see [Cost models for cross-region replication](/azure/reliability/cross-region-replication-azure#cost-model-for-cross-region-replication).
