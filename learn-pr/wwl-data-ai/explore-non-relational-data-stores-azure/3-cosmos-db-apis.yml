@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-non-relational-data-stores-azure.azure-cosmos-db-apis
 title: Identify Azure Cosmos DB APIs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify Azure Cosmos DB APIs
   description: "Identify Azure Cosmos DB APIs"
-  ms.date: 10/09/2024
+  ms.date: 12/13/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
