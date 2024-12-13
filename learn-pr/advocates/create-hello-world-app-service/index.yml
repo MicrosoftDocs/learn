@@ -36,6 +36,5 @@ units:
   - learn.azure.create-hello-app-service.4
   - learn.azure.create-hello-app-service.5
   - learn.azure.create-hello-app-service.6
-
 badge:
-  uid: temp-uid-to-get-previews-to-work
+  uid: learn.azure.create-hello-app-service.badge

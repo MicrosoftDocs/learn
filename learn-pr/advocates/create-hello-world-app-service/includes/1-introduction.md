@@ -2,9 +2,9 @@ Web applications are used daily from tasks including ordering a product online, 
 
 ## Learning objectives
 
-  - Create a simple Hello World Java app
-  - Configure your Java project to deploy to Azure App Service.
-  - Deploy your Java web application to Azure App Service.
+- Create a simple Hello World Java app.
+- Configure your Java project to deploy to Azure App Service.
+- Deploy your Java web application to Azure App Service.
 
 ## Prerequisites
 
