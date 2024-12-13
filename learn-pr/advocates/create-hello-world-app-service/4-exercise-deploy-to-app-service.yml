@@ -10,6 +10,7 @@ metadata:
   ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
   ms.reviewer:
   ms.assetid: HelloJavaAppService
+  zone_pivot_groups: maven-azure-cli
 durationInMinutes: 7
 content: |
   [!INCLUDE[](includes/4-exercise-deploy-to-app-service.md)]

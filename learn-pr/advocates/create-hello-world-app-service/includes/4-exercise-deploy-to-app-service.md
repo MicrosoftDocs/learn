@@ -8,6 +8,8 @@ Our suggestion is Approach 1 as it is an easier way to get started.
 
 ## Approach 1: Configure the Maven Plugin for Azure App Service
 
+::: zone pivot="maven-plugin"
+
 ### Maven Plugin for Azure App Service
 
 Microsoft provides the Maven Plugin for Azure App Service to make it easier for Java developers to deploy applications to Azure. By using this plug-in, you can easily configure and deploy your application to Azure. Execute the following command to use Maven Plugin for Azure App Service.
@@ -181,6 +183,10 @@ Ending Log Tail of existing logs ---
 Starting Live Log Stream ---
 ```
 
+::: zone-end
+
+::: zone pivot="azure-cli"
+
 ## Approach 2: Use the Azure CLI to deploy to Azure App Service
 
 ### Install the Azure CLI (if not already installed)
@@ -267,6 +273,8 @@ When you run this command, it outputs something like: `Your website is at https:
 When select the link, you should see "Hello, Java on Azure!" on the screen.
 
 Congratulations! You successfully deployed a web app to Azure App Service.
+
+::: zone-end
 
 ## Exercise summary
 
