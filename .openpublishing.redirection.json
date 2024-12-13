@@ -35883,6 +35883,11 @@
       "source_path": "learn-pr/wwl-azure/configure-subscriptions/7-apply-resource-tagging.md",
       "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/2-identify-regions.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
     }
   ]
 }
