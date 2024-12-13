@@ -28,7 +28,7 @@ using CosmosClient client = builder
     .Build();
 ```
 
-Once the client connects to Azure Cosmos DB, the client pulls a list of available regions and prioritize them based on proximity from the region you chose. If the region you selected isn't available, the client tries the alternative regions in the established order.
+Once the client connects to Azure Cosmos DB, the client pulls a list of available regions and prioritizes them based on proximity from the region you chose. If the region you selected isn't available, the client tries the alternative regions in the established order.
 
 ## Building a preferred write regions list
 
