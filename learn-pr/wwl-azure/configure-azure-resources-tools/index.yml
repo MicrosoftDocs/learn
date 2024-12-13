@@ -28,7 +28,6 @@ roles:
 products:
 - azure
 units:
-- learn.wwl.configure-azure-resources-tools.introduction
 - learn.wwl.configure-azure-resources-tools.use-azure-portal
 - learn.wwl.configure-azure-resources-tools.use-azure-cloud-shell
 - learn.wwl.configure-azure-resources-tools.use-azure-powershell
