@@ -4,7 +4,7 @@ The Azure OpenAI Service offers API access to advanced language models such as G
 
 Generative AI models available through Azure OpenAI provide powerful tools for enhancing applications with complex language and image processing functions, all within the robust and secure Azure environment. Azure OpenAI models include security features like virtual network support and managed identities ensure safe data handling, making model management secure, and straightforward.
 
-Access to Azure OpenAI is behind a limited access policy to ensure adherence to Microsoft's standards for responsible AI. As part of the limited access policy agreement, teams or individuals tasked with developing and deploying AI systems should work to identify, measure, and mitigate harm. Users needing to apply for service access can do so at [https://aka.ms/oai/access](https://aka.ms/oai/access?azure-portal=true).
+Access to Azure OpenAI is behind a limited access policy to ensure adherence to Microsoft's standards for ethical AI. As part of the limited access policy agreement, teams or individuals tasked with developing and deploying AI systems should work to identify, measure, and mitigate harm. Users needing to apply for service access can do so at [https://aka.ms/oai/access](https://aka.ms/oai/access?azure-portal=true).
 
 >[!NOTE]
 >Azure OpenAI Service has been released with limited access to support the ethical use of the service. You can read Microsoft's Transparency note for Azure OpenAI Service [here](/legal/cognitive-services/openai/transparency-note?azure-portal=true).
@@ -17,4 +17,4 @@ Once you create an Azure OpenAI resource and deploy the desired models within th
 
 RAG enhances the system's understanding and creation of text by providing improved contextual information to the generative AI model with your own data. Azure OpenAI combined with your own data in vCore-based Azure Cosmos DB for MongoDB produces more accurate and contextually relevant responses.
 
-Using the Azure OpenAI service in your applications allows you to tap into advanced AI features, boosting efficiency and flexibility in your business operations all while adhering to principles of responsible AI usage.
+Using the Azure OpenAI service in your applications allows you to tap into advanced AI features, boosting efficiency and flexibility in your business operations all while adhering to principles of ethical AI usage.

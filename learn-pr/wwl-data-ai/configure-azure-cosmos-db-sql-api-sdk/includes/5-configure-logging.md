@@ -16,12 +16,24 @@ To use the builder, first you must add a using directive to the **Microsoft.Azur
 using Microsoft.Azure.Cosmos.Fluent;
 ```
 
-Now, you can create a new instance of the **CosmosClientBuilder** class passing in a connection string or endpoint+key pair as constructor parameters.
+While you can create a new instance of the **CosmosClientBuilder** class passing in a connection string or endpoint+key pair as constructor parameters, in a production environment, it is recommended to use managed identities. For this example, let's use a managed identity to authenticate with Azure Cosmos DB.
 
 ```csharp
-CosmosClientBuilder builder = new (connectionString);
+// Using DefaultAzureCredential
+TokenCredential defaultCredential = new DefaultAzureCredentialBuilder().build();
+CosmosClientBuilder builder = new CosmosClientBuilder()
+    .endpoint("<your-cosmos-endpoint>")
+    .credential(defaultCredential)
+    .consistencyLevel(ConsistencyLevel.EVENTUAL);
 
-CosmosClientBuilder builder = new (endpoint, key);
+// Using ManagedIdentityCredential
+TokenCredential managedIdentityCredential = new ManagedIdentityCredentialBuilder()
+    .clientId("<your-managed-identity-client-id>")
+    .build();
+CosmosClientBuilder builder = new CosmosClientBuilder()
+    .endpoint("<your-cosmos-endpoint>")
+    .credential(managedIdentityCredential)
+    .consistencyLevel(ConsistencyLevel.EVENTUAL);
 ```
 
 At this point, you can add any fluent methods to configure the client. Once you are done with fluent methods, you can invoke the **Build** method to create an instance of type **CosmosClient**.
@@ -102,7 +114,14 @@ builder.AddCustomHandlers(new LogHandler());
 Here is the code for the complete creation of the client using the builder.
 
 ```csharp
-CosmosClientBuilder builder = new (endpoint, key);
+// Using ManagedIdentityCredential
+TokenCredential managedIdentityCredential = new ManagedIdentityCredentialBuilder()
+    .clientId("<your-managed-identity-client-id>")
+    .build();
+CosmosClientBuilder builder = new CosmosClientBuilder()
+    .endpoint("<your-cosmos-endpoint>")
+    .credential(managedIdentityCredential)
+    .consistencyLevel(ConsistencyLevel.EVENTUAL);
 
 builder.AddCustomHandlers(new LogHandler());
 

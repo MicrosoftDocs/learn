@@ -12,7 +12,12 @@ CosmosClientOptions options = new()
 {
     ApplicationRegion = Regions.WestUS
 };
-using CosmosClient client = new(connectionString, options);
+
+TokenCredential managedIdentityCredential = new ManagedIdentityCredentialBuilder()
+    .clientId("<your-managed-identity-client-id>")
+    .build();
+
+using CosmosClient client = new CosmosClient("<your-cosmos-endpoint>", managedIdentityCredential, options);
 ```
 
 You can also use the **CosmosClientBuilder** to configure the preferred region.
@@ -39,7 +44,12 @@ CosmosClientOptions options = new()
         Regions.NorthEurope
     }
 };
-using CosmosClient client = new(connectionString, options);
+
+TokenCredential managedIdentityCredential = new ManagedIdentityCredentialBuilder()
+    .clientId("<your-managed-identity-client-id>")
+    .build();
+
+using CosmosClient client = new CosmosClient("<your-cosmos-endpoint>", managedIdentityCredential, options);
 ```
 
 Again, this same example could be implemented using the **CosmosClientBuilder** class.
