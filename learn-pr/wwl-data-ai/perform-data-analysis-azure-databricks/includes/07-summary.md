@@ -1,4 +1,4 @@
-Azure Databricks allows easy integration with many data sources like Azure Data Lake, Azure SQL Database, and Cosmos DB. After data is ingested, Databricks offers powerful tools for exploring data, including collaborative notebooks that support Python, Scala, SQL, and R.
+Azure Databricks allows easy integration with many data sources. After data is ingested, Azure Databricks offers powerful tools for exploring data, including collaborative notebooks that support Python, Scala, SQL, and R.
 
 Further reading:
 
