@@ -32,7 +32,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.understand-enrichment-pipelines
 badge:
   uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.badge
 
