@@ -35828,6 +35828,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/7-simulation-command-line.md",
       "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/5-simulation-powershell.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
     }
   ]
 }
