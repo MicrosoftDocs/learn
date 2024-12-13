@@ -38,7 +38,6 @@ subjects:
 units:
 - learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search.introduction
 - learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search.understand-how-use-custom-skillset
-- learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search.exercise-enrich-search-index-use-model
 - learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search.knowledge-check
 - learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search.summary
 badge:
