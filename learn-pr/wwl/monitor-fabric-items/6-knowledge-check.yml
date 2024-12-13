@@ -14,58 +14,36 @@ durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the role of the Eventstream component in Real-Time Intelligence in Microsoft Fabric?"
+  - content: What is the primary function of the Monitor hub in Microsoft Fabric?
     choices:
-    - content: "It's a tool for ingesting data from multiple streaming sources and provides a no-code experience for event processing and routing data to other Fabric entities."
+    - content: "It allows users to modify and update data pipelines."
+      isCorrect: false
+      explanation: "Incorrect. The Monitor hub does not provide functionality for modifying data pipelines, it is used for monitoring activities."
+    - content: "It provides a platform for creating new data integration processes."
+      isCorrect: false
+      explanation: "Incorrect. The Monitor hub is not used for creating data integration processes, but for monitoring existing ones."
+    - content: "It collects and aggregates data from selected Fabric items and processes, providing a common interface for monitoring various activities."
       isCorrect: true
-      explanation: "Correct. Eventstream is designed for ingesting data from various sources and routing it to other components within the system."
-    - content: "It's a data store optimized for high-performance queries and data exploration."
-      isCorrect: false
-      explanation: "Incorrect. This service event is the role of the Eventhouse component, not Eventstream."
-    - content: "It enables automated actions based on patterns or conditions detected in the streaming data."
-      isCorrect: false
-      explanation: "Incorrect. This action is the function of the Reflex component, not Eventstream."
-  - content: "What is the role of the Real-Time Hub in Fabric's Real-Time Intelligence?"
+      explanation: "Correct. The Monitor hub in Microsoft Fabric is designed to aggregate data and provide a unified interface for monitoring various data integration, transformation, movement, and analysis activities."
+  - content: "What is the primary function of Activator in Microsoft Fabric?"
     choices:
-    - content: "It serves as a central point to access and visualize all streaming data for better decision-making."
+    - content: "Activator is a tool for designing user interfaces in Microsoft Fabric."
+      isCorrect: false
+      explanation: "Incorrect. Activator is not involved in user interface design."
+    - content: "Activator is used to create and manage databases in Microsoft Fabric."
+      isCorrect: false
+      explanation: "Incorrect. While Activator does interact with data, it does not create or manage databases."
+    - content: "Activator enables automated processing of events that trigger actions."
       isCorrect: true
-      explanation: "Correct. The Real-Time Hub provides a comprehensive view of the data, enabling faster and more accurate decision-making."
-    - content: "It ingests and processes data from various streaming sources."
-      isCorrect: false
-      explanation: "Incorrect. This role is the function of the Ingest and Process component, not the Real-Time Hub."
-    - content: "It triggers notifications and actions based on detected patterns in the data."
-      isCorrect: false
-      explanation: "Incorrect. This feature is the function of the Data Activator, not the Real-Time Hub."
-  - content: "What happens if the admin who first accessed the workspace uses Privileged Identity Management (PIM) and their PIM access isn't active during the scheduled data refresh time?"
+      explanation: "Correct. Activator is used to automate actions based on specific event triggers."
+  - content: "What is a key aspect of monitoring best practices?"
     choices:
-    - content: "The scheduled data refresh fails."
+    - content: "Identifying what to monitor, collecting and analyzing data regularly, reviewing logs and metrics regularly, taking action when deviations occur, and optimizing performance using monitoring data."
       isCorrect: true
-      explanation: "Correct. If the admin's PIM access isn't active during the scheduled data refresh time, the refresh fails."
-    - content: "The refresh process continues as normal"
+      explanation: "Correct. These are all key aspects of monitoring best practices."
+    - content: "Reviewing logs and metrics only when deviations from normal behavior are shown. "
       isCorrect: false
-      explanation: "Incorrect. If the admin's PIM access isn't active during the scheduled data refresh time, the refresh fails."
-    - content: "The refresh process is postponed until the PIM access is active again."
+      explanation: "Incorrect. Logs and metrics should be reviewed regularly, not just when deviations occur."
+    - content: "Collecting and analyzing data only when anomalies occur."
       isCorrect: false
-      explanation: "Incorrect. The refresh doesn't get postponed. It fails if the PIM access isn't active during the scheduled time."
-  - content: "What are some of the actions that allow triggering by alerts within Microsoft Fabric?"
-    choices:
-    - content: "Sending a Slack message."
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Fabric doesn't support sending Slack messages."
-    - content: "Sending a Teams message, an Email, or running a Fabric item such as triggering a notebook or a Data Factory pipeline activity."
-      isCorrect: true
-      explanation: "Correct. Microsoft Fabric supports these actions in response to alerts."
-    - content: "Triggering a Google Cloud Function."
-      isCorrect: false
-      explanation: "Incorrect. Microsoft Fabric doesn't support triggering Google Cloud Functions."
-  - content: "What is required to complete the exercise of using Apache Spark with delta tables in a Microsoft Fabric lakehouse?"
-    choices:
-    - content: "An Amazon Web Services (AWS) account."
-      isCorrect: false
-      explanation: "Incorrect. The exercise doesn't require an Amazon Web Services account."
-    - content: "A Microsoft Fabric tenant."
-      isCorrect: true
-      explanation: "Correct. To complete the exercise, a Microsoft Fabric tenant is needed."
-    - content: "A Google Cloud Platform account."
-      isCorrect: false
-      explanation: "Incorrect. The exercise doesn't require a Google Cloud Platform account."
+      explanation: "Incorrect. Data should be collected and analyzed regularly, not just when anomalies occur."

@@ -17,7 +17,7 @@ abstract: |
   - Use Monitoring Hub in Microsoft Fabric
   - Trigger actions using Activator in Microsoft Fabric
 prerequisites: |
-  Before starting this module, you should be familiar with Microsoft Fabric lakehouses and Apache Spark.
+  Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
