@@ -34,7 +34,6 @@ subjects:
 units:
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.introduction
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.understand-enrichment-pipelines
-- learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.exercise-build-deploy
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.knowledge-check
 - learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.summary
 badge:
