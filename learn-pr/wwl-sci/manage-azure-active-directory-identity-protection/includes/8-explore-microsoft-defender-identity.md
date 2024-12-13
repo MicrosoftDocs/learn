@@ -7,7 +7,7 @@ Microsoft Defender for Identity (formerly Azure Advanced Threat Protection, also
 
 ### Process flow for Defender for Identity
 
-:::image type="content" source="../media/defender-identity-topology-5744bbde.png" alt-text="Diagram of the data flow for protecting identities using Microsoft Defender for Identity.":::
+:::image type="content" source="../media/defender-identity-topology-5744bbde-70eadf31.png" alt-text="Diagram of the data flow for protecting identities using Microsoft Defender for Identity.":::
 
 
 Defender for Identity consists of the following components:
