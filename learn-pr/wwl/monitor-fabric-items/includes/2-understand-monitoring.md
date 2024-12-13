@@ -5,7 +5,7 @@ In Fabric, you schedule activities and jobs that perform tasks like data movemen
 
 The following activities in Fabric allow you to perform tasks that deliver data to users. These activities should be monitored:
 
-- **Data pipeline activity** - A data pipeline is a group of activities that together perform a data ingestion task. Pipelines allow you to manage, extract, transform, and load (ETL) activities together instead of individually. Monitor the success or failure of jobs and pipeline activities. Look for errors if the pipeline failed. View job history to compare current activity performance to past job execution performance to gain insight into when errors were first introduced into the process. 
+- **Data pipeline activity** - A data pipeline is a group of activities that together perform a data ingestion task. Pipelines allow you to manage, extract, transform, and load (ETL) activities together instead of individually. Monitor the success or failure of jobs and pipeline activities. Look for errors if the pipeline failed. View job history to compare current activity performance to past job execution performance to gain insight into when errors were first introduced into a process. 
 
 - **Dataflows** - A dataflow is a tool for ingesting, loading, and transforming data using a low-code interface. Dataflows can be run manually or scheduled or run as part of pipeline orchestration. Monitor start and end times, status, duration, and table load activities. To investigate issues, drill down into activities and view information about errors.  
 
@@ -13,7 +13,7 @@ The following activities in Fabric allow you to perform tasks that deliver data 
 
 - **Spark jobs, notebooks and lakehouses** - Notebooks are an interface for developing Apache Spark jobs. Data can be loaded, or transformed for lakehouses using Spark and notebooks.  Monitor Spark job progress, task execution, resource usage, and review Spark logs. 
 
-- **Microsoft Fabric Eventstreams** - Events are observations about the state of an object, like a timestamp for weather sensors. Eventstreams in Fabric lare set up to run perpetually to ingest real-time or streaming events into Fabric and transform them for analytics needs, and then route them to various destinations.  Monitor streaming event data, ingestion status, and ingestion performance.
+- **Microsoft Fabric Eventstreams** - Events are observations about the state of an object, like a timestamp for weather sensors. Eventstreams in Fabric are set up to run perpetually to ingest real-time or streaming events into Fabric and transform them for analytics needs, and then route them to various destinations.  Monitor streaming event data, ingestion status, and ingestion performance.
 
 ## Monitoring best practices
 Continuously monitor the data ingestion, transformation, and load processes to ensure they're running smoothly. Monitoring best practices include:
