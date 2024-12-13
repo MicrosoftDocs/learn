@@ -34,7 +34,6 @@ units:
 - learn.wwl.configure-azure-resources-tools.use-azure-powershell
 - learn.wwl.configure-azure-resources-tools.interactive-simulation-powershell
 - learn.wwl.configure-azure-resources-tools.use-azure-cli
-- learn.wwl.configure-azure-resources-tools.interactive-simulation-command-line
 - learn.wwl.configure-azure-resources-tools.knowledge-check
 - learn.wwl.configure-azure-resources-tools.summary-resources
 badge:
