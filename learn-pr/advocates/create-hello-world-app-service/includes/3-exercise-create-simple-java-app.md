@@ -4,14 +4,14 @@ In this exercise, we create a minimal Java web application that serves a simple 
 
 You have two options to proceed:
 
-1. **Approach 1:** Pull code from the azure samples repo
-2. **Approach 2:** Create the code sample from scratch
+1. **Approach 1:** Pull code from the Azure samples repo.
+2. **Approach 2:** Create the code sample from scratch.
 
-Proceed to the relevant section in the intructions below based on your preference :)
+Proceed to the relevant section in the instructions below based on your preference
 
-## Approach 1: Pull code from the Azure samples repo
+### [Approach 1: Pull code from the Azure samples repo](#tab/approach-1)
 
-### Clone project repo from Azure samples
+### Clone the project repo
 
 Within your directory of choice, use the following command to clone the sample project repo:
 
@@ -25,7 +25,7 @@ Now, use the following command to navigate to inside the cloned project repo:
 cd hello-java-azure
 ```
 
-## Approach 2: Create code sample from scratch
+### [Approach 2: Create the code sample from scratch](#tab/approach-2)
 
 ### Create a Maven project
 
@@ -150,13 +150,15 @@ public class App {
 }
 ```
 
+---
+
 ## Run your application locally
 
 You can run your application by following these steps:
 
 ### Compile and package the Java project
 
-Execute the following command to compile the code:
+Use the following command to compile the code:
 
 ```bash
 mvn clean package
@@ -164,7 +166,7 @@ mvn clean package
 
 ### Run the application
 
-Execute the following command to compile the code:
+Use the following command to compile the code:
 
 ```bash
 java -jar target/hello-java-azure-1.0-SNAPSHOT.jar

@@ -1,22 +1,21 @@
-Now that we have our Hello World Java app running locally we can now deploy it to Azure App Service.
+Now that you have your Hello World Java app running locally, you can deploy it to Azure App Service.
 
-There are multiple ways to deploy your app to Azure App Service. This Module has two approaches:
-1. **Approach 1:** Configure and use the Maven Plugin for Azure App Service to deploy your web app
-2. **Approach 2:** Use the Azure CLI to create manually create resources required for deployment and deploy
+There are multiple ways to deploy your app to Azure App Service. This module has two approaches:
 
-Our suggestion is Approach 1 as it is an easier way to get started.
+- Configure and use the Maven Plugin for Azure App Service to deploy your web app.
+- Use the Azure CLI to create manually create resources required for deployment and deploy
 
-## Approach 1: Configure the Maven Plugin for Azure App Service
+Using the Maven Plugin for Azure App Service is an easier way to get started.
 
 ::: zone pivot="maven-plugin"
 
-### Maven Plugin for Azure App Service
+### The Maven Plugin for Azure App Service
 
-Microsoft provides the Maven Plugin for Azure App Service to make it easier for Java developers to deploy applications to Azure. By using this plug-in, you can easily configure and deploy your application to Azure. Execute the following command to use Maven Plugin for Azure App Service.
+Microsoft provides the Maven Plugin for Azure App Service to make it easier for Java developers to deploy applications to Azure. By using this plug-in, you can easily configure and deploy your application to Azure.
 
 ### Configure the Maven Plugin for Azure App Service
 
-To configure the Maven Plugin for Azure App Service, execute the following command:
+To configure the Maven Plugin for Azure App Service, use the following command:
 
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
@@ -135,13 +134,13 @@ Now that the settings for deploying to Azure App Service are complete, compile t
 mvn clean package
 ```
 
-Once compiled, use the Maven Plugin for Azure Web Apps command to deploy your application. Execute the following command:
+After compilation, use the following Maven Plugin for Azure Web Apps command to deploy your application:
 
 ```bash
 mvn azure-webapp:deploy
 ```
 
-When the deployment is completed, you should see the following output:
+After deployment, you should see the following output:
 
 ```output
 [INFO] Successfully deployed the artifact to https://hello-java-azure-1731367782304.azurewebsites.net
@@ -153,17 +152,17 @@ When the deployment is completed, you should see the following output:
 [INFO] ------------------------------------------------------------------------
 ```
 
-The public URL of the deployed application is displayed in the output message as follows `Successfully deployed the artifact to https://hello-java-azure-1731367782304.azurewebsites.net`
+The public URL of the deployed application displays in the output message, as shown in the following example: `Successfully deployed the artifact to https://hello-java-azure-1731367782304.azurewebsites.net`
 
 ## Confirm the log stream from the command line
 
-To access the log stream, execute the following CLI command:
+To access the log stream, run the following CLI command:
 
 ```azurecli
 az webapp log tail --resource-group <resource-group-name> --name <app-name>
 ```
 
-You should end up seeing something like this:
+You should see output similar to the following example:
 
 ```output
 2024-11-07T18:14:37  Welcome, you are now connected to log-streaming service.
@@ -187,11 +186,9 @@ Starting Live Log Stream ---
 
 ::: zone pivot="azure-cli"
 
-## Approach 2: Use the Azure CLI to deploy to Azure App Service
+### Install the Azure CLI
 
-### Install the Azure CLI (if not already installed)
-
-Install the Azure CLI. For more information, see [How to install the Azure CLI](/cli/azure/install-azure-cli).
+First, install the Azure CLI, if it isn't already installed. For more information, see [How to install the Azure CLI](/cli/azure/install-azure-cli).
 
 ### Log in to Azure
 
