@@ -10,9 +10,9 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more:
 
- -  [External Identities documentation](/azure/active-directory/external-identities/)
- -  [Enable B2B external collaboration and manage who can invite guest users](/azure/active-directory/external-identities/delegate-invitations)
- -  [What is a guest user access in Microsoft Entra ID](/azure/active-directory/external-identities/what-is-b2b)
- -  [Introduction to Microsoft Entra Verified ID](/azure/active-directory/verifiable-credentials/decentralized-identifier-overview)
- -  [Set up the Microsoft Entra Verified ID service](/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant)
- -  [Cross-tenant access with Microsoft Entra External Identities](/azure/active-directory/external-identities/cross-tenant-access-overview)
+ -  [External Identities documentation](../media/777755ae)
+ -  [Enable B2B external collaboration and manage who can invite guest users](../media/7ac1c0a2)
+ -  [What is a guest user access in Microsoft Entra ID](../media/b4565ce5)
+ -  [Introduction to Microsoft Entra Verified ID](../media/926a8231)
+ -  [Set up the Microsoft Entra Verified ID service](../media/ba0c9e9d)
+ -  [Cross-tenant access with Microsoft Entra External Identities](../media/b97b7f05)
