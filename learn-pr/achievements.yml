@@ -4332,3 +4332,8 @@ achievements:
   title: Build a Document intelligence custom skill for Azure AI search
   summary: Learn how to use an Azure Document Intelligence solution as a custom skill to enrich content in an Azure AI Search pipeline.
   iconUrl: /training/achievements/build-form-recognizer-custom-skill-for-azure-cognitive-search.svg
+- uid: learn.wwl.configure-azure-resources-tools.badge
+  type: badge
+  title: Configure Azure resources with tools
+  summary: You will learn how to select a tooling option such as Azure portal, Azure PowerShell, Azure CLI, or Azure Cloud Shell.
+  iconUrl: /training/achievements/arm-configure-with-tools.svg
