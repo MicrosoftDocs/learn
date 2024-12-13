@@ -35898,6 +35898,11 @@
       "source_path": "learn-pr/wwl-azure/configure-subscriptions/3-implement-azure-subscriptions.md",
       "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/6-implement-cost-management.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
     }
   ]
 }
