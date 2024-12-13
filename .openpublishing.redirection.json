@@ -35798,6 +35798,11 @@
       "source_path": "learn-pr/wwl-data-ai/build-form-recognizer-custom-skill-for-azure-cognitive-search/4-exercise-build-deploy.md",
       "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-form-recognizer-custom-skill-for-azure-cognitive-search/1-introduction.md",
+      "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
     }
   ]
 }
