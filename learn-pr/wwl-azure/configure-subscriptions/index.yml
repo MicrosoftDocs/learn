@@ -36,7 +36,6 @@ subjects:
 - finance-accounting
 units:
 - learn.wwl.configure-subscriptions.obtain-subscription
-- learn.wwl.configure-subscriptions.knowledge-check
 - learn.wwl.configure-subscriptions.summary-resources
 badge:
   uid: learn.wwl.configure-subscriptions.badge
