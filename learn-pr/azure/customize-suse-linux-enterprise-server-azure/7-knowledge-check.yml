@@ -2,14 +2,16 @@
 uid: learn.azure.customize-suse-linux-enterprise-server-azure.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of SLES virtual machine customization.
-  ms.date: 06/15/2021
+  ms.date: 08/01/2024
   author: yenchiho
   ms.author: yenchiho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 2
 content: |
 quiz:
@@ -47,3 +49,4 @@ quiz:
     - content: Change your VM size
       isCorrect: false
       explanation: "VM size can be set through the Azure portal."
+

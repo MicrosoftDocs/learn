@@ -19,3 +19,4 @@ Get-Service | Get-Member
 
 > [!NOTE]
 > The first command runs, produces its output, and then passes that output to **Get‑Member**. Use caution when you run commands that might modify the system configuration, because those commands make changes to the system. You can't use the *-WhatIf* parameter, which indicates to PowerShell to only test and display the results of the command, when you want to pipe to **Get-Member**. The *-WhatIf* parameter prevents the command from producing any output. That means **Get-Member** receives no input, and therefore doesn't display any output.
+

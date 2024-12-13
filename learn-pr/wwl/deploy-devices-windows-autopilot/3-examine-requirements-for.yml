@@ -2,13 +2,14 @@
 uid: learn.wwl.deploy-devices-windows-autopilot.examine-requirements-for
 title: Examine requirements for Windows Autopilot
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine requirements for Windows Autopilot
   description: "Examine requirements for Windows Autopilot"
-  ms.date: 04/05/2023
+  ms.date: 01/24/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/3-examine-requirements-for.md)]

@@ -1,5 +1,3 @@
-
-
 After the Contoso IT operations staff have enabled Adaptive application controls, they must configure an application control policy to address the recommendations.
 
 ## Configure a new application control policy
@@ -40,20 +38,20 @@ To configure a new application control policy, in **Security Center**, use the f
    |-----------|------------------------------------------------------------|
    |Name|This is the certificate information for the file or the full path of an application.|
    |File types|This is the application file type. This can be an executable (.exe), a script, a Microsoft Windows Installer (.msi), or any permutation of these file types.|
-   |Exploitable|A warning icon indicates if a malicious hacker could use a specific application to bypass an application allow list. You should review these applications before approving them.|
+   |Exploitable|A warning icon indicates if a malicious hacker could use a specific application to bypass an application allowlist. You should review these applications before approving them.|
    |Users|these are users that are recommended that you allow to run an application.|
 
 6. After you complete your selections, select **Audit**.
 
    > [!NOTE]
-   > After you select Audit, Security Center leverages the Windows AppLocker feature and automatically creates the appropriate rules on top of the built-in application allow list solution available on servers running the Windows Server operating system.
+   > After you select Audit, Security Center leverages the Windows AppLocker feature and automatically creates the appropriate rules on top of the built-in application allowlist solution available on servers running the Windows Server operating system.
 
 Keep in mind the information in the following table when configuring your policy.
 
 |Consideration|Description|
 |-----------------------------------------|------------------------------------------------------------|
 |Two weeks of data required| Security Center relies on a minimum of two weeks of data to create a baseline and populate the unique recommendations per group of VMs. New customers of the Security Center standard tier should expect that, at first, their groups of VMs will appear under the *no recommendation* tab.|
-|No support for existing AppLocker policies|Adaptive application controls from Security Center doesn’t support VMs for which an AppLocker policy is already enabled by using either a Group Policy Object (GPO) or a local security policy.|
+|No support for existing AppLocker policies|Adaptive application controls from Security Center don’t support VMs for which an AppLocker policy is already enabled by using either a Group Policy Object (GPO) or a local security policy.|
 |Publisher rules preferred|As a security best practice, Security Center will always try to create a publisher rule for applications that are selected to be allowed. If an application has no publisher information (that is, it's not signed), a path rule will be created for the full path of the specific application.|
 
 > [!IMPORTANT]
@@ -63,7 +61,7 @@ Keep in mind the information in the following table when configuring your policy
 
 After you have configured the necessary groups, you can edit and monitor the group. To do this, complete the following procedure in Security Center.
 
-1. To edit and monitor a group configured with an application allow list policy, return to the **Adaptive application controls** blade and select **Configured**.
+1. To edit and monitor a group configured with an application allowlist policy, return to the **Adaptive application controls** blade and select **Configured**.
 
    ![A screenshot of the Adaptive application controls blade. The administrator has selected the Configured tab. A review group is displayed.](../media/m5-enable-control-4.png)
 
@@ -73,7 +71,7 @@ After you have configured the necessary groups, you can edit and monitor the gro
    |-----------|-----------|
    |Group name|The name of the group, listed beneath the appropriate subscription.|
    |Machines|The number of VMs in the group.|
-   |Protection mode|Auditing mode logs attempt to run applications that aren't on the allow list. but Enforce mode doesn't allow those applications to run at all.|
+   |Protection mode|Auditing mode logs attempt to run applications that aren't on the allowlist. but Enforce mode doesn't allow those applications to run at all.|
    |Alerts|Any current violations.|
 
 2. Select a group that you want to make changes to. The **Edit application control policy** blade opens.

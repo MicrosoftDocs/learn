@@ -4,13 +4,10 @@ title: Explore personal computers
 metadata:
   title: Explore personal computers
   description: "Explore personal computers"
-  ms.date: 12/16/2022
+  ms.date: 03/19/2024
   author: wwlpublish
-  ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: robbarefoot
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-explore-what-personal-computer.md)]

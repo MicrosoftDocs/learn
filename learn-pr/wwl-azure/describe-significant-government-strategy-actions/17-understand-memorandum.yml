@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-significant-government-strategy-actions.understand-memorandum-strengthening-cybersecurity-of-federal-agenc
 title: 'Understand Memorandum M-19-03: Strengthening the Cybersecurity of Federal Agencies by Enhancing the High Value Asset Program'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Understand Memorandum M-19-03: Strengthening the Cybersecurity of Federal Agencies by Enhancing the High Value Asset Program'
   description: "Understand Memorandum M-19-03: Strengthening the Cybersecurity of Federal Agencies by Enhancing the High Value Asset Program"
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

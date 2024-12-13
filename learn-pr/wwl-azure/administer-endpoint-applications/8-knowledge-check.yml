@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/16/2023
+  ms.date: 09/29/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -33,6 +35,6 @@ quiz:
     - content: "The app must be added to Google Play Store or Apple App Store"
       isCorrect: false
       explanation: "Incorrect. This item isn't a requirement that must be met before the app can be assigned to a device. Try again."
-    - content: "Azure AD groups must be created for the device"
+    - content: "Microsoft Entra groups must be created for the device"
       isCorrect: false
       explanation: "Incorrect. This item isn't a requirement that must be met before the app can be assigned to a device. Try again."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-embedded-experiences.copilot-for-intune
+title: Copilot in Microsoft Intune
+metadata:
+  title: Copilot in Microsoft Intune
+  description: Copilot in Microsoft Intune.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 11/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-copilot-for-intune.md)]

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.defender-iot-deploy-sensor
+metadata:
+  title: Deploy a sensor to Microsoft Defender for IoT for operational technology network monitoring
+  description: "Learn how to deploy an OT sensor to Microsoft Defender for IoT"
+  ms.date: 4/15/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: module-standard-task-based
+  ms.service: defender-for-iot
+title: Deploy a sensor to Microsoft Defender for IoT for operational technology network monitoring
+summary: "Using the activation file and list of endpoints from the onboarding phase, deploy an OT sensor to Microsoft Defender for IoT. Install monitoring software on the sensor, set up the interface settings, and activate the sensor."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Deploy Defender for IoT software to a virtual appliance
+prerequisites: |
+  - Knowledge of what Defender for IoT is and how it works at a beginner level
+  - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner 
+  -	A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
+  - A configured firewall and all of the rules and settings for it to connect to port 443, including: IP address, subnet mask, default gateway, DNS and hostname
+  - Access to either a virtual or physical OT sensor
+  - Access to a virtual machine, such as VMware ESXi 5.5 or later
+  - A configured network adapter port group that connects to the internet 
+  - A configured network adapter port group that connects to the SPAN port on the virtual switch
+  - Access to Wireshark or similar packet capture (PCAPS) file reader
+  - The JSON list of endpoints file
+  - The sensor activation file for this sensor
+iconUrl: /learn/achievements/defender-for-iot/defender-iot-deploy-sensor.svg
+levels: 
+  - intermediate
+roles: 
+  - technology-manager
+products: 
+  - defender-for-iot
+subjects: 
+  - security
+units:
+- learn.defender-iot-deploy-sensor.introduction
+- learn.defender-iot-deploy-sensor.describe-the-deployment-phase
+- learn.defender-iot-deploy-sensor.plan-to-deploy-sensor
+- learn.defender-iot-deploy-sensor.exercise-deploy-software-to-sensor
+- learn.defender-iot-deploy-sensor.knowledge-check
+- learn.defender-iot-deploy-sensor.summary
+badge:
+  uid: learn.defender-iot-deploy-sensor.badge

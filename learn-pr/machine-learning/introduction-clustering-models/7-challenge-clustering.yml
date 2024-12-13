@@ -2,13 +2,15 @@
 uid: learn.machine-learning.introduction-clustering-models.challenge-clustering
 title: Challenge - Clustering
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Challenge - Clustering
   description: Challenge - Clustering.
   ms.date: 05/16/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 sandbox: true
 notebook: notebooks/7-challenge-clustering.ipynb
+

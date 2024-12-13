@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.ai-security-controls.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Overview of the security controls that you can implement in AI systems to increase the security posture of AI environments.
+  ms.date: 07/24/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-healthcare.goals-challenges-life-sciences-pharmacology-healthcare
+title: Goals and challenges in life sciences, pharmacology, and healthcare
+metadata:
+  title: Goals and challenges in life sciences, pharmacology, and healthcare
+  description: "Goals and challenges in life sciences, pharmacology, and healthcare"
+  ms.date: 08/14/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-goals-challenges-life-sciences-pharmacology-healthcare.md)]

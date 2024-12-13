@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-kusto-fabric.define-real-time-analytics
+title: What is real-time data analytics?
+metadata:
+  title: What is real-time data analytics?
+  description: "What are the common elements of a real-time data analytics solution?"
+  ms.date: 12/03/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-define-real-time-analytics.md)]

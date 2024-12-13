@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/13/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Introduction to Azure database administration
 prerequisites: |
   * Familiarity with on-premises virtualization technologies, including: VMs, virtual networking, and virtual hard disks.
@@ -26,7 +25,7 @@ products:
 - azure-sql-managed-instance
 - azure-sql-virtual-machines
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.prepare-to-maintain-sql-databases-azure
 trophy:

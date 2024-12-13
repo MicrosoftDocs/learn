@@ -2,13 +2,14 @@
 uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.pre-migration
 title: Pre-migration steps and considerations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Pre-migration steps and considerations
   description: "Pre-migration steps and considerations"
   ms.date: 02/06/2023
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 12

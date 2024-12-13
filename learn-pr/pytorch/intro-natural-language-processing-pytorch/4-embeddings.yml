@@ -5,11 +5,10 @@ metadata:
   title: Represent words with embeddings
   description: Embeddings are a way to represent words using some vector representation that has nice semantic properties. We discuss different embeddings, and how using embeddings can improve classification accuracy.
   author: shwars
-  ms.author: dmitryso
-  ms.date: 04/14/2020
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
-  ms.custom: team=nextgen
+  ms.author: chnoring
+  ms.date: 07/30/2024
+  ms.topic: unit
+  ms.custom: team=cloud_advocates
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/4-embeddings.ipynb

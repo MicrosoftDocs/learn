@@ -4,11 +4,10 @@ title: Scripting cloud tasks
 metadata:
   title: Scripting cloud tasks
   description: An introduction to scripting languages and how they can be used to automate admin tasks
-  ms.date: 12/31/2019
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen, devx-track-azurecli
 durationInMinutes: 12
 content: |

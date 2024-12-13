@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the first step in using Azure Databricks?"
+    choices:
+    - content: "Create a Spark Cluster"
+      isCorrect: false
+      explanation: "Incorrect. Creating a Spark Cluster isn't the first step in using Azure Databricks."
+    - content: "Provision an Azure Databricks workspace"
+      isCorrect: true
+      explanation: "Correct. Before you start using Azure Databricks for data analysis, you must first provision an Azure Databricks workspace through the Azure Portal. This workspace serves as the foundational environment for managing clusters, notebooks, and data."
+    - content: "Upload data to Azure Blob Storage"
+      isCorrect: false
+      explanation: "Incorrect. Upload data to Azure Blob Storage isn't the first step in using Azure Databricks."
+  - content: "Which Azure Databricks component is responsible for processing data?"
+    choices:
+    - content: "Workspace"
+      isCorrect: false
+      explanation: "Incorrect. In Azure Databricks, a workspace is an environment for accessing all the Databricks assets like notebooks, libraries, and experiments."
+    - content: "Notebook"
+      isCorrect: false
+      explanation: "Incorrect. In Azure Databricks, notebooks are interactive documents that contain runnable code, visualizations, and narrative text."
+    - content: "Cluster"
+      isCorrect: true
+      explanation: "Correct. In Azure Databricks, a cluster is a set of computation resources where data processing tasks are executed. Clusters can be configured with different node types and sizes depending on the computational needs."
+  - content: "What should you do to minimize costs after finishing data analysis tasks in Azure Databricks?"
+    choices:
+    - content: "Delete the notebook"
+      isCorrect: false
+      explanation: "Incorrect. Deleting the notebook doesn't minimize the costs."
+    - content: "Detach the notebook from the cluster"
+      isCorrect: false
+      explanation: "Incorrect. Detaching the notebook from the cluster doesn't minimize the costs."
+    - content: "Terminate the cluster"
+      isCorrect: true
+      explanation: "Correct. To minimize costs, it's crucial to terminate the Spark clusters in Azure Databricks when they aren't in use. Clusters consume resources and incur costs as long as they're running, regardless of activity."
+

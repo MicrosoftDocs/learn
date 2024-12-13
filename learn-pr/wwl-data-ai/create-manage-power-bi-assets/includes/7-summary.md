@@ -1,11 +1,5 @@
-Our introductory scenario presented a problem with large data sources and different regional requirements.
+In this module, you learned the value and importance of creating reusable assets that reduce time and complexity when developing Power BI reports.
 
-We identified how to create a core dataset in Power BI Desktop to share with other analysts. Then introduced how to make changes to that model to create specialized datasets for the separate regions. Now, the data analysts can focus on their regional data, and users don't complain about report performance.
+We covered several features built for reusability including Power BI Template files, and how to create core semantic models and then create specialized semantic models for other needs. We explored how to use Power BI Project files, Deployment pipelines, Git integration, and the XMLA endpoint as part of lifecycle management, even when using external tools. Lastly, we demonstrated how to use lineage view in Power BI service to understand how data sources, semantic models, reports, and dashboards are related.
 
-We also demonstrated how to use lineage view in Power BI service to understand how specific data sources, datasets, reports, and dashboards are related. Finally, we discovered additional management options for datasets and workspaces with the XMLA endpoint, even when using external tools.
-
-Learn more about reusable Power BI assets with the following articles:
-
-- [Use composite models in Power BI Desktop](/power-bi/transform-model/desktop-composite-models)
-- [Using DirectQuery for Power BI datasets and Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services)
-- [Manage DirectQuery connections to a published dataset](/power-bi/connect-data/desktop-discourage-directquery-connections-to-dataset)
+Without these Power BI tools, report developers need to create single-use reports and semantic models, and further have little to no ability to track or manage semantic models changes. Microsoft Fabric allows developers to use these tools in combination with workspace version control and Deployment pipelines to implement Continuous Integration / Continuous Delivery (CI/CD) practices.

@@ -3,23 +3,32 @@ uid: learn.wwl.design-network-solutions
 metadata:
   title: Design network solutions
   description: "Azure Architects design and recommend network solutions."
-  ms.date: 03/17/2023
+  ms.date: 12/09/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Design network solutions
-summary: Azure Architects design and recommend network solutions.
+summary: Azure Architects need to design and recommend network solutions.
 abstract: |
   In this module, you learn how to:
-  - Recommend a network architecture solution based on workload requirements
-  - Design for on-premises connectivity to Azure Virtual Network
-  - Design for Azure network connectivity services
-  - Design for application delivery services
-  - Design for application protection services
+
+  -   Recommend a network architecture solution based on workload requirements
+
+  -   Design for on-premises connectivity to Azure Virtual Network
+
+  -   Design for Azure network connectivity services
+
+  -   Design for application delivery services
+
+  -   Design for application protection services
 prerequisites: |
-  - Working experience with enterprise networking
-  - Conceptual knowledge of software defined networking and hybrid connectivity
+  -   Working experience with enterprise networking
+
+  -   Conceptual knowledge of software defined networking and hybrid connectivity
 iconUrl: /training/achievements/design-network-solution.svg
 levels:
 - advanced
@@ -33,9 +42,9 @@ subjects:
 units:
 - learn.wwl.design-network-solutions.introduction
 - learn.wwl.design-network-solutions.recommend-network-architecture-solution-based-workload-requirements
-- learn.wwl.design-network-solutions.design-for-premises-connectivity-to-azure-virtual-networks
 - learn.wwl.design-network-solutions.design-patterns-for-azure-network-connectivity-services
 - learn.wwl.design-network-solutions.design-outbound-connectivity-routing
+- learn.wwl.design-network-solutions.design-for-premises-connectivity-to-azure-virtual-networks
 - learn.wwl.design-network-solutions.choose-application-delivery-service
 - learn.wwl.design-network-solutions.design-for-application-delivery-services
 - learn.wwl.design-network-solutions.design-for-application-protection-services

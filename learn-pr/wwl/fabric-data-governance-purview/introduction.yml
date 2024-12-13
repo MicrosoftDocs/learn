@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.fabric-data-governance-purview.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 9/25/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

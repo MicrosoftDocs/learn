@@ -2,15 +2,17 @@
 uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.update-documents
 title: Update documents
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Update documents
   description: "Update documents"
-  ms.date: 10/17/2022
+  ms.date: 10/22/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-update-documents.md)]
+

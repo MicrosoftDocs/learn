@@ -32,5 +32,5 @@ You can learn more by reviewing the following documents.
 - [What is Azure DNS?](https://aka.ms/dns-overview?azure-portal=true)
 - [What is Azure Private DNS?](https://aka.ms/private-dns-overview?azure-portal=true)
 - [Azure DNS FAQ](https://aka.ms/dns-faq?azure-portal=true)
-- [Administer DNS and create conditional forwarders in an Azure Active Directory Domain Services managed domain](https://aka.ms/manage-dns?azure-portal=true)
+- [Administer DNS and create conditional forwarders in a Microsoft Entra Domain Services managed domain](https://aka.ms/manage-dns?azure-portal=true)
 - [Name resolution for resources in Azure virtual networks](https://aka.ms/azure-provided-name-resolution?azure-portal=true)

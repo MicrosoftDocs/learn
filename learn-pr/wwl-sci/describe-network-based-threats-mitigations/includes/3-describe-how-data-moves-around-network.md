@@ -16,7 +16,7 @@ Networks operate in a similar manner. The message is contained in the packet, li
 
 The primary function of the Internet Protocol (IP) is to ensure that every device on a network can be uniquely identified. Before a packet is sent across the network, it must be told the IP address of where it's going, and the IP address of where it's come from.
 
-There are presently two standards of IP address: the IPv4 and the IPv6. The details are beyond the scope of this module, but the most common type of IP address, and the one you may be familiar with, is IPv4. This is made up of four groups of digits separated by a dot, for example: 127.100.0.1.  
+There are presently two standards of IP address: the IPv4 and the IPv6. The details are beyond the scope of this module, but the most common type of IP address, and the one you may be familiar with, is IPv4. This is made up of four groups of digits separated by a dot, for example: 127.100.0.1. 
 
 #### DNS
 
@@ -26,18 +26,18 @@ The DNS holds a table that has the name of the website, for instance [microsoft.
 
 :::image type="content" source="../media/dns-lookup-table.png" alt-text="Diagram that shows a simplified representation of a DNS lookup table, where the domain microsoft.com has been found and gives the corresponding IP address.":::
 
-Each time your device connects to the internet, it uses a local DNS server to find the name of the website you're looking for. If the DNS can’t find the site, it checks other DNS servers. If the site can't be found, or the request times out, you'll get an error message such as "DNS server not responding".
+Each time your device connects to the internet, it uses a local DNS server to find the name of the website you're looking for. If the DNS can’t find the site, it checks other DNS servers. If the site can't be found, or the request times out, you'll get an error message such as "DNS server not responding."
 
 ### Routing
 
-When the IP addresses have been added to the packet, it's ready to be transmitted across the network. If the IP address exists on your network, the packet is sent directly to the device. However, if the IP address is outside of your network, it will need to go via a router. A router is a physical device that connects one network to another.
+When the IP addresses have been added to the packet, it's ready to be transmitted across the network. If the IP address exists on your network, the packet is sent directly to the device. However, if the IP address is outside of your network, it needs to go via a router. A router is a physical device that connects one network to another.
 
 Using our letter scenario, if your friend was only a few streets away, you might decide to deliver the message by hand. Your friend is within your local network.
 
-However, if your friend is in a different city or country/region, you'll need to post the letter and let the mail service deliver it. In this instance, the postal service is the router. It takes the message from your network, then finds the best route to get it to your friend's network for delivery.
+However, if your friend is in a different city or country/region, you need to post the letter and let the mail service deliver it. In this instance, the postal service is the router. It takes the message from your network, then finds the best route to get it to your friend's network for delivery.
 
 ### Video animation
 
-In this short two-minute video, you'll see how everyday activities form networks, from speaking with your friends on the phone, to sharing emails. Then we'll look at the way messages are broken down into packets that can be sent across the network. Finally, you'll see how each packet of a message is routed across the internet to get to its recipient.
+In this short two-minute video, you'll see how everyday activities form networks, from speaking with your friends on the phone, to sharing emails. Then you'll look at the way messages are broken down into packets that can be sent across the network. Finally, you'll see how each packet of a message is routed across the internet to get to its recipient.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWP56O]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3607e138-2528-4343-ab06-aaf456d71715]

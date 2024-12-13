@@ -2,15 +2,19 @@
 uid: learn.azure-introduction-to-azure-search.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: "Introduction."
-  ms.date: 09/02/2022
+  description: Introduction.
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

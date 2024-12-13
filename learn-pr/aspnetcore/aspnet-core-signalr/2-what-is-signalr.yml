@@ -5,11 +5,11 @@ metadata:
   unitType: learning-content
   title: What is ASP.NET Core SignalR?
   description: In this unit, you'll learn what ASP.NET Core SignalR is.
-  ms.date: 09/28/2021
+  ms.date: 10/25/2023
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-signalr.md)]

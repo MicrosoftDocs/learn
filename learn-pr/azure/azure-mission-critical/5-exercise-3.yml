@@ -2,14 +2,15 @@
 uid: learn.azure-mission-critical.exercise-three
 title: Exercise - Build an application health model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Build an application health model
   description: Define a health model and implementation that allows you to detect, diagnose, and predict issues across this architecture.
-  ms.date: 09/22/2022
+  ms.date: 08/14/2024
   author: msimecek
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 60
 content: |
   [!include[](includes/5-exercise-3.md)]
@@ -17,26 +18,27 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: 'What needs to be included in your health score that represents the overall health status of the application?'
+  - content: "What needs to be included in your health score that represents the overall health status of the application?"
     choices:
-    - content: 'Logs and metrics from the API code, Azure services, and the end-to-end solution.'
+    - content: "Logs and metrics from the API code, Azure services, and the end-to-end solution."
       isCorrect: true
-      explanation: 'Health of Azure services and platform dependencies that participate in a request flow can have an impact on the application. Compute, databases, storage are some of the key components that must be considered. Solution level data points will help you understand the end-to-end flows, such as end-to-end processing time of a request.'
-    - content: 'Logs and metrics from services that are used by Azure services.'
+      explanation: "Health of Azure services and platform dependencies that participate in a request flow can have an impact on the application. Compute, databases, storage are some of the key components that you must consider. Solution-level data points will help you understand the end-to-end flows, such as a request's end-to-end processing time."
+    - content: "Logs and metrics from services that Azure services use."
       isCorrect: false
-      explanation: 'An Azure service will show degraded or unhealthy if any of its underlying services have issues.'
-    - content: 'Telemetry data from dashboards that visualize monitoring data.'
+      explanation: "An Azure service will show degraded or unhealthy if any of its underlying services have issues."
+    - content: "Telemetry data from dashboards that visualize monitoring data."
       isCorrect: false
-      explanation: 'Dashboards are used to visualize monitoring data and are decoupled from application components.'
-  - content: 'Which of these Azure services can be used as a unified data sink for telemetry and analysis?'
+      explanation: "Dashboards are used to visualize monitoring data, and are decoupled from application components."
+  - content: "Which of these Azure services can be used as a unified data sink for telemetry and analysis?"
     choices:
-    - content: 'Azure Application Insights'
+    - content: "Azure Application Insights"
       isCorrect: false
-      explanation: 'Azure Application Insights collects logs from the application code. It is not used as a unified data sink.'
-    - content: 'Azure Monitor Logs'
+      explanation: "Azure Application Insights collects logs from the application code. It's not used as a unified data sink."
+    - content: "Azure Monitor Logs"
       isCorrect: true
-      explanation: 'Azure Monitor collects data sent by Application insights and platform metrics for the Azure services.'
-    - content: 'Azure Storage'
+      explanation: "Azure Monitor collects data Application insights sends, as well as Azure services platform metrics."
+    - content: "Azure Storage"
       isCorrect: false
-      explanation: 'Azure Storage can be used to offload telemetry for historical analysis, but it is not well-suited as the unified sink for telemetry.'
+      explanation: "Azure Storage can be used to offload telemetry for historical analysis, but it's not well-suited as the unified sink for telemetry."
+
 

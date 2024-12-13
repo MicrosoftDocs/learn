@@ -2,15 +2,15 @@
 uid: learn.publish-manage-apis-with-azure-api-management.5-exercise-import-and-publish-an-api
 title: Exercise - Import and publish an API
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Import and publish an API
   description: Exercise - Import and publish an API
-  ms.date: 05/02/2019
+  ms.date: 12/05/2024
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/5-exercise-import-and-publish-an-api.md)]
+

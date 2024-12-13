@@ -2,15 +2,20 @@
 uid: learn.develop-apps-with-azure-database-mysql.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
-  description: In this module, you will learn how to evaluate the best options and develop applications using the fully managed service Azure Database for MySQL Flexible Server and integrating with other Azure Services like App Service and Azure Kubernetes Services (AKS).
-  ms.date: 5/10/2022
+  description: In this module, you'll learn to create applications that connect to and query an Azure Database for MySQL flexible server. You'll also learn to develop and deploy intelligent apps by integrating with Azure App Service, Azure Kubernetes Service, Azure AI Search, Azure OpenAI, Azure DevOps, or GitHub.
+  ms.date: 08/27/2024
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

@@ -5,11 +5,9 @@ Contain a threat by not letting risky devices access your corporate resources th
 
 You'll need a Microsoft Endpoint Manager environment, with Intune managed and Azure AD joined Windows 10 or higher devices.
 
-There are steps you'll need to take in Microsoft 365 Defender, Microsoft Endpoint Manager portal, and Azure AD portal.
-
 The required roles to access these portals and implement Conditional access:
 
-- Microsoft 365 Defender portal - You'll need to sign in to the portal with a global administrator role to turn on the integration.
+- Microsoft Defender portal - You'll need to sign in to the portal with a global administrator role to turn on the integration.
 
 - Intune - You'll need to sign in to the portal with security administrator rights with management permissions.
 
@@ -19,7 +17,7 @@ The required roles to access these portals and implement Conditional access:
 
 Take the following steps to enable Conditional Access:
 
-1. Turn on the Microsoft Intune connection from Microsoft 365 Defender.
+1. Turn on the Microsoft Intune connection from Microsoft Defender XDR.
 
 1. Turn on the Defender for Endpoint integration in Endpoint Manager
 
@@ -31,7 +29,7 @@ Take the following steps to enable Conditional Access:
 
 ### Turn on the Microsoft Intune connection
 
-1. In the Microsoft 365 Defender navigation pane, select **Settings > Endpoints** and then under General section select **Advanced features**.
+1. In the Microsoft Defender XDR navigation pane, select **Settings > Endpoints** and then under General section select **Advanced features**.
 
 1. Toggle the Microsoft Intune connection setting to **On**.
 

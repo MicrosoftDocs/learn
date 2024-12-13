@@ -2,17 +2,19 @@
 uid: learn.wwl.protecting-monitoring-tuning-migrated-database.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/26/2022
+  ms.date: 10/14/2024
   author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 quiz:
+  title: ""
   questions:
   - content: "You're writing a script that uses the Azure CLI to create and configure an Azure Database for MySQL service. You need to allow access to the service for other Azure services. Which IP address range should you specify in the `az mysql server firewall-rule create` command?"
     choices:

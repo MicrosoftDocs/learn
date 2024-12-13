@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-scalable-power-bi-dataflows.define-use-cases-for-dataflows
+title: Define use cases for dataflows
+metadata:
+  title: Define use cases for dataflows
+  description: "Define use cases for dataflows"
+  ms.date: 05/15/2024
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-define-use-cases-for-dataflows.md)]

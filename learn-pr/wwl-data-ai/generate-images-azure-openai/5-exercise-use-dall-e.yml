@@ -1,0 +1,21 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-images-azure-openai.exercise-use-dall-e
+title: Exercise - Generate images with a DALL-E model
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Generate images with a DALL-E model
+  description: Hands-on exercise to use DALL-E in Azure OpenAI service
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 11/15/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 25
+azureSandbox: false
+labId: 152389
+labModal: true
+content: |
+  [!include[](includes/5-exercise-use-dall-e.md)]
+

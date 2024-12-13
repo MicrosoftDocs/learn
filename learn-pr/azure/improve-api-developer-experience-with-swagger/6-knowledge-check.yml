@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge on generating OpenAPI documentation with Swashbuckle and Swagger
-  ms.date: 03/10/2021
+  ms.date: 11/16/2023
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 quiz:
   title: Knowledge check
@@ -26,7 +25,7 @@ quiz:
       explanation: "While Swagger Codegen does generate an OpenAPI description of your API, Swashbuckle is the tooling for ASP.NET Core implementation."
   - content: "What does Swagger UI do?"
     choices:
-    - content: "It provides a visual interface to create OpenAPI documentation"
+    - content: "It provides a visual interface to create OpenAPI documentation."
       isCorrect: false
       explanation: "Swagger UI enables you to interact with your API not generate documentation."
     - content: "The Swagger UI enables you to interact and visualize an API's resources without requiring access to the source code."
@@ -35,14 +34,14 @@ quiz:
     - content: "Provide a specification of how API documentation should be structured."
       isCorrect: false
       explanation: "The OpenAPI specification provides the spec on how OpenAPI documentation should be structured. Swagger UI tooling allows you to interact with your API."
-  - content: "What is the purpose of using the Produces data attribute with your API?"
+  - content: "What is the purpose of using the `Produces` data attribute with your API?"
     choices:
     - content: "It indicates what type of content to send to the method."
       isCorrect: false
-      explanation: "The Consumes attribute indicates the content-type the method is expecting."
-    - content: "It indicates the status codes the method may produce."
+      explanation: "The `Consumes` attribute indicates the content-type the method is expecting."
+    - content: "It indicates which status codes the method might produce."
       isCorrect: false
-      explanation: "The ProducesResponseType data attribute specifies which HTTP status codes the method may produce."
-    - content: "It indicates to the consumer of the API what content-type to expect"
+      explanation: "The `ProducesResponseType` data attribute specifies which HTTP status codes the method might produce."
+    - content: "It indicates to the consumer of the API what content-type to expect."
       isCorrect: true
-      explanation: "The content-type is specified in the Produces attribute and will be included in the OpenAPI documentation for the API."
+      explanation: "The content-type is specified in the `Produces` attribute and is included in the OpenAPI documentation for the API."

@@ -1,8 +1,6 @@
-
-
 Now, it's your chance to explore how to deploy models to a managed online endpoint.
 
-In this exercise, you will:
+In this exercise, you learn how to:
 
 - Create a managed online endpoint.
 - Deploy an MLflow model.
@@ -10,7 +8,6 @@ In this exercise, you will:
 
 ## Instructions
 
-Follow these instructions to complete the exercise:
+Launch the exercise and follow the instructions.
 
-1. View the exercise repo at [https://microsoftlearning.github.io/mslearn-azure-ml/](https://microsoftlearning.github.io/mslearn-azure-ml?azure-portal=true).
-1. Complete the **Deploy a model to a managed online endpoint** exercise.
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/11-Deploy-online-endpoint.html?azure-portal=true)

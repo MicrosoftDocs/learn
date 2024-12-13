@@ -2,40 +2,63 @@
 uid: learn.wwl.implement-manage-storage-for-azure-virtual-desktop.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/12/2022
+  ms.date: 08/16/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following is an Azure Virtual Desktop user profile solution?"
+  - content: "A team is setting up a new Azure storage account. They want to configure the soft delete policy for Azure file shares in their storage account. What section should they navigate to?"
+    choices:
+    - content: "Geo redundancy section"
+      isCorrect: false
+      explanation: "Incorrect. The geo redundancy section is for setting up redundancy options, not for configuring soft delete policies."
+    - content: "Networking section"
+      isCorrect: false
+      explanation: "Incorrect. The networking section is for configuring networking options, not for setting up soft delete policies."
+    - content: "Data protection section"
+      isCorrect: true
+      explanation: "Correct. The data protection section allows configuration of the soft delete policy for Azure file shares in the storage account."
+  - content: "A team is working on a project that requires a secure and stable application hosting platform. They are considering automating the creation and teardown of environments. Which solution enables this?"
     choices:
     - content: "Azure Disk Storage"
       isCorrect: false
-      explanation: "That's incorrect. Azure Disk Storage is the only shared cloud block storage that supports both Windows and Linux-based clustered or high-availability applications via Azure shared disks."
-    - content: "FSLogix"
-      isCorrect: true
-      explanation: "That's correct. FSLogix is designed to roam profiles in remote computing environments, such as Azure Virtual Desktop. It stores a complete user profile in a single container."
+      explanation: "Incorrect. Azure Disk Storage is a shared cloud block storage, not a solution for automating environment setup and teardown."
     - content: "Azure Data Lake Storage"
       isCorrect: false
-      explanation: "That's incorrect. Azure Data Lake Storage is a secure cloud platform that provides scalable, cost-effective storage for big data analytics"
-  - content: "Which storage solution is used to deploy Azure file shares on premium/solid-state disk-based (SSD-based) hardware?"
-    choices:
-    - content: "FileStorage storage account"
+      explanation: "Incorrect. Azure Data Lake Storage is a secure cloud platform for big data analytics, not for automating environment setup and teardown."
+    - content: "Azure Virtual Desktop"
       isCorrect: true
-      explanation: "That's correct. FileStorage storage accounts allow you to deploy Azure file shares on premium/solid-state disk-based (SSD-based) hardware. FileStorage accounts can only be used to store Azure file shares; no other storage resources (blob containers, queues, tables, etc.) can be deployed in a FileStorage account."
-    - content: "General purpose version 2 (GPv2) storage account"
+      explanation: "Correct. Azure Virtual Desktop allows the automation and validation of the creation and teardown of environments, providing a secure and stable application hosting platform."
+  - content: "A team is planning to use Azure Virtual Desktop for their remote computing environment. They need to choose a storage solution for FSLogix profile containers. Which Azure storage solution would be most recommended for this scenario?"
+    choices:
+    - content: "Storage Spaces Direct"
       isCorrect: false
-      explanation: "That's incorrect. General-purpose v2 storage accounts support the latest Azure Storage features and incorporate all of the functionality of general-purpose v1 and Blob storage accounts."
-    - content: "Premium block blobs"
+      explanation: "Incorrect. While Storage Spaces Direct is an Azure storage solution, it is not the recommended choice for storing FSLogix profile containers in Azure Virtual Desktop."
+    - content: "Azure NetApp Files"
       isCorrect: false
-      explanation: "That's incorrect. Premium block blob storage accounts make data available via high-performance hardware. Data is stored on solid-state drives (SSDs) which are optimized for low latency."
+      explanation: "Incorrect. Azure NetApp Files is a powerful and flexible storage solution, but it is not the most recommended for storing FSLogix profile containers in Azure Virtual Desktop."
+    - content: "Azure Files"
+      isCorrect: true
+      explanation: "Correct. Azure Files is the recommended storage solution for FSLogix profile containers in Azure Virtual Desktop due to its general purpose use case and availability across all regions."
+  - content: "A team of software engineers and content creators are working on a heavy workload. They have a small to medium user count. Which performance tier should they use for Azure NetApp Files?"
+    choices:
+    - content: "Standard tier"
+      isCorrect: false
+      explanation: "Incorrect. The standard tier is recommended for light users doing basic data entry tasks, not for heavy workloads."
+    - content: "Ultra tier"
+      isCorrect: false
+      explanation: "Incorrect. The ultra tier is recommended for power users like graphic designers and machine learning researchers."
+    - content: "Premium tier"
+      isCorrect: true
+      explanation: "Correct. For heavy workloads with a small to medium user count, the premium tier is recommended."

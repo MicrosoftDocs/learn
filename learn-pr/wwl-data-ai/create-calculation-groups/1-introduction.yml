@@ -2,12 +2,14 @@
 uid: learn.wwl.create-calculation-groups.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 01/05/2023
   author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
+  ms.author: anrudduc
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

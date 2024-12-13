@@ -1,0 +1,2 @@
+> [!NOTE]
+> All Azure services set default limits and quotas for resources and features, including usage restrictions for certain virtual machine (VM) SKUs. If you encounter an error suggesting your desired VM SKU is not available in the region you've selected, you most likely need to increase this quota through an [Azure support request](https://ms.portal.azure.com/#view/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) (for **Issue** type, select **Quota**).

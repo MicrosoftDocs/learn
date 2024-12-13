@@ -38,3 +38,4 @@ Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\.NetFramework\v4.0.30319' -Name
 You can implement a private PowerShell gallery for your organization by creating your own NuGet feed. You can create a NuGet feed with a file share or a web-based application. When you have a private PowerShell gallery, you must register the NuGet feed by using the **Register-PSRepository** cmdlet and specifying the source location. After the repository is registered, users can search it, just like the PowerShell Gallery.
 
 > **Additional reading:** For more information about creating a NuGet feed, refer to [Hosting your own NuGet feeds](https://aka.ms/vm0ys1).
+

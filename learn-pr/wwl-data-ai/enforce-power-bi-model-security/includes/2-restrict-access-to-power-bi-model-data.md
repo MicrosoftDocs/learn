@@ -14,9 +14,9 @@ To gain a better understanding of how RLS restricts access to data, watch the fo
 
 ![Animated diagram demonstrates how row-level security works for two users who each have access to specific country data.](../media/introduce-row-level-security.gif)
 
-## Apply star schema design principals
+## Apply star schema design principles
 
-We recommend you apply [star schema](/power-bi/guidance/star-schema) design principals to produce a model comprising dimension and fact tables. It’s common to set up Power BI to enforce rules that filter dimension tables, allowing [model relationships](/power-bi/transform-model/desktop-relationships-understand) to efficiently propagate those filters to fact tables.
+We recommend you apply [star schema](/power-bi/guidance/star-schema) design principles to produce a model comprising dimension and fact tables. It’s common to set up Power BI to enforce rules that filter dimension tables, allowing [model relationships](/power-bi/transform-model/desktop-relationships-understand) to efficiently propagate those filters to fact tables.
 
 The following image is the model diagram of the Adventure Works sales analysis data model. It shows a star schema design comprising a single fact table named **Sales**. The other tables are dimension tables that support the analysis of sales measures by date, sales territory, customer, reseller, order, product, and salesperson. Notice the model relationships connecting all tables. These relationships propagate filters (directly or indirectly) to the **Sales** table.
 
@@ -100,7 +100,7 @@ When you create roles, it’s important to test them to ensure they apply the co
 
 ## Set up role mappings
 
-Role mappings must be set up in advance of users accessing Power BI content. Role mapping involves assigning Azure Active Directory (Azure AD) security objects to roles. Security objects can be user accounts or security groups.
+Role mappings must be set up in advance of users accessing Power BI content. Role mapping involves assigning Microsoft Entra security objects to roles. Security objects can be user accounts or security groups.
 
 > [!TIP]
 > When possible, it’s a good practice to map roles to security groups. That way, there will be fewer mappings, and you can delegate the group membership management to the network administrators.

@@ -2,13 +2,14 @@
 uid: learn.wwl.configure-azure-app-services.create-custom-domain-names
 title: Create custom domain names
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create custom domain names
   description: "Create custom domain names"
-  ms.date: 01/18/2023
+  ms.date: 11/14/2023
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

@@ -1,37 +1,29 @@
-Before designing a network for a Kubernetes cluster, it makes sense to understand how IP addresses are used by Kubernetes components. Let's dive into the details of some key Kubernetes components.
-
 ## Nodes
 
-You'll often see Kubernetes referred to as a cluster. Clusters are a group of computers that work together to share resources to help improve performance and provide high availability. Services running on the cluster can then continue running if one or more computers in the cluster should fail.
+It's common to see Kubernetes referred to as a *cluster*. At a high level, clusters are a group of computers that work together and share resources to help improve performance and availability. If any computers in the cluster fail, the services running on the cluster can continue running on the remaining functioning computers.
 
-In Microsoft Azure, computers are virtual machines and in Kubernetes, these virtual machines are known as Nodes.
+In Microsoft Azure, those computers are known as *virtual machines (VMs)*. In Kubernetes, those VMs are known as *nodes*.
 
-Nodes need network connectivity so that they can communicate with one another and to route network traffic to the correct place. Nodes also need to communicate with the Kubernetes control plane, which provides the overall state of what's happening within the cluster.
+Nodes need network connectivity so they can communicate with one another and effectively route network traffic. Nodes also need to communicate with the Kubernetes *control plane*, which provides the core Kubernetes services and orchestration of application workloads, so they can run your application workload resources.
 
-:::image type="content" source="../media/2-overview-of-kubernetes-networking-nodes.svg" alt-text="Diagram that shows Kubernetes cluster nodes and the Kubernetes Control Plane" border="false":::
+:::image type="content" source="../media/2-overview-of-kubernetes-networking-nodes.svg" alt-text="Diagram that shows the Kubernetes cluster nodes and control plane." border="false":::
 
 ## Pods
 
-Pods are the smallest deployable unit in a Kubernetes cluster. Pods are distributed across your nodes in a manner that provides the best use of the available processor and memory resources available on the nodes.
+In Kubernetes, application workload resources include pods, deployments, and sets. Pods are the smallest deployable unit in a Kubernetes cluster. They're distributed across your nodes in a way that enables the best use of the available processor and memory resources on the nodes. Pods typically represent a single instance or subcomponent of your application. A pod might run a shopping cart component that manages the items in a customer's cart or a shipping component that handles the processing of completed orders.
 
-Pods typically represent a single instance of your application or a subcomponent of your application. A pod could be running a shopping cart component that manages the items a customer has in their cart. Or maybe a shipping component that handles the processing of completed orders.
-
-You can run multiple copies, known as replicas, of the same pod. Replicas distribute multiple pods across nodes to provide high availability. With multiple copies, our application can continue to work if a component running in a pod fails.
+You can run multiple copies, or *replicas*, of the same pod. Replicas distribute multiple pods across nodes to provide high availability. With multiple replicas of the pods, our application can continue to work if a component running in a pod fails.
 
 :::image type="content" source="../media/2-overview-of-kubernetes-networking-pods.svg" alt-text="Diagram that shows multiple pod replicas running across several Kubernetes cluster nodes." border="false":::
 
-Kubernetes includes automatic scaling features. Pods can be added or removed in response to the level of demand on the cluster. Self-healing abilities can replace any pod that has failed. And built-in support for rolling updates automates the deployment of a new version of an application without any downtime.
+With the scaling features in Kubernetes, you can add or remove pods in response to the level of demand on the cluster. The self-healing abilities in Kubernetes can replace any pod that fails, and the built-in support for rolling updates automates the deployment of new versions of an application without any downtime.
 
-There are many scenarios where a pod will be assigned a new IP address. A new IP address is assigned when a new pod is deployed during an initial deployment. When demand on the cluster is high and scaling up takes place, further new pods are deployed. When updating an application, new pods are deployed to take the place of old ones. Or if a pod fails, it's automatically replaced with a new pod. All of these events result in new pod IP addresses.
+Pods are assigned a new IP address during their initial deployment. This IP address is used for all network communication with the pod. There are many scenarios where a pod is assigned a new IP address. When cluster demand is high and scaling occurs, new pods are deployed. When you update an application, new pods are deployed to replace the old pods. If a pod fails, a new pod automatically replaces it. All of these scenarios result in new pod IP addresses.
+
+If pod IP addresses experience frequent changes, how does Kubernetes know where to send network traffic to reach our application? The answer is *services*.
 
 ## Services
 
-If the pod's IP addresses are forever changing, how does Kubernetes know where to send network traffic to reach our application? A Kubernetes Service is the answer! A Service sits in front of a group of pods and provides a static IP address. Traffic arriving at a service is distributed in a round-robin manner to a set of backend pods. As the pod's IP addresses change over time, the service tracks changes to make sure network traffic still gets sent to the correct pods.
+A Kubernetes *service* sits in front of a group of pods and provides a static IP address. When traffic arrives at a service, the service distributes it in a round-robin manner to a set of backend pods. The service tracks changes in the IP addresses of the pods to ensure network traffic is sent to the correct pods.
 
 :::image type="content" source="../media/2-overview-of-kubernetes-networking-services.svg" alt-text="Diagram that shows multiple pod replicas being served network traffic via a Kubernetes service." border="false":::
-
-## Azure Container Network Interface (Azure CNI)
-
-Kubernetes was designed to support plug-ins. You can add new features, replace, or enhance existing cluster behavior using plug-ins. The Container Network Interface is a specification that allows developers to create plug-ins to configure container networking. Kubernetes has adopted the CNI specification, so you can use CNI plug-ins with your cluster.
-
-Azure CNI is a plug-in that allows containers to work with Azure Virtual Networks. In a Kubernetes cluster, using the Azure CNI allows a pod to be assigned an IP address from an Azure Virtual Network. The pod can then communicate on the Azure Virtual Network just like any other device. It can connect to other pods, to peered networks or on-premises networks using ExpressRoute or a VPN, or to other Azure services using Private Link.

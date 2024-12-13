@@ -4,11 +4,12 @@ title: Review the solution to the variable scope challenge activity
 metadata:
   title: Review the solution to the variable scope challenge activity
   description: "Review the solution to the variable scope challenge activity"
-  ms.date: 02/24/2023
+  ms.date: 11/06/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/5-review-solution-variable-scope.md)]

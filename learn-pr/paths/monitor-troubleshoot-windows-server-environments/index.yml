@@ -6,8 +6,7 @@ metadata:
   ms.date: 03/17/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Monitor and troubleshoot Windows Server environments
 prerequisites: |
   *   Knowledge of core Microsoft compute, storage, networking, and virtualization technologies
@@ -18,7 +17,7 @@ prerequisites: |
   *   Experience working with Active Directory Domain Services (AD DS)
   *   Experience working with Azure Active Directory (Azure AD)
 summary: |
-  Learn to use monitoring and troubleshooing tools, processes, and best practices to streamline app performance and availabilty of your Windows Server environment and your Windows Server IaaS VMs and hybrid instances.
+  Learn to use monitoring and troubleshooting tools, processes, and best practices to streamline app performance and availability of your Windows Server environment and your Windows Server IaaS VMs and hybrid instances.
 iconUrl: /training/achievements/monitor-and-troubleshoot-windows-server-environments.svg
 levels:
 - intermediate
@@ -28,7 +27,7 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
+- entra-id
 - windows-server
 subjects:
 - it-management-monitoring
@@ -36,7 +35,6 @@ subjects:
 modules:
 - learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances
 - learn.azure.monitor-azure-vm-using-diagnostic-data
-- learn.monitor-vm-performance-using-azure-monitor-for-vms
 - learn.wwl.monitor-windows-server-performance
 - learn.wwl.manage-monitor-event-logs
 - learn.wwl.implement-windows-server-auditing-diagnostics

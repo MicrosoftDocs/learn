@@ -37,3 +37,4 @@ A DateTime variable also has many methods available that allow you to manipulate
 
 > [!NOTE]
 > If you need to subtract time from a DateTime variable, use one of the methods for adding time with a negative number as its parameter. An example is `$date.AddDays(-60)`.
+

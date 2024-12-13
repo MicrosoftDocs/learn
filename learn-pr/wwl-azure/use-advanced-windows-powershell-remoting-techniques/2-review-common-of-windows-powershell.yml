@@ -4,11 +4,12 @@ title: Review common remoting techniques of Windows PowerShell
 metadata:
   title: Review common remoting techniques of Windows PowerShell
   description: "Review common remoting techniques of Windows PowerShell"
-  ms.date: 11/10/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

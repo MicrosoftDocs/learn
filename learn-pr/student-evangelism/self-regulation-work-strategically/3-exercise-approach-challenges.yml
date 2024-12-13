@@ -6,9 +6,8 @@ metadata:
   description: In this unit, you'll read a set of statements and decide if they apply to you.
   ms.date: 09/07/2021
   author: interurban
-  ms.author: jadenyer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 3
 content: |

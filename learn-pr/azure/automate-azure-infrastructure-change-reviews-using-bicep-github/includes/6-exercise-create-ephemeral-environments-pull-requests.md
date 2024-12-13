@@ -226,14 +226,14 @@ After you're finished with the module, you can delete the resources you created:
 
 - GitHub secrets
   1. From the GitHub repository, go to **Settings** > **Secrets and variables** > **Actions**.
-  1. Select **Remove secret** for each repository secret and follow the prompts.
+  1. Select the **Delete** button for each repository secret and follow the prompts.
 
 - GitHub repository
   1. Go to **Settings** > **General**
-  1. Select **Delete this repository** and follow the prompts.
+  1. Scroll to the bottom of the screen, select **Delete this repository**, and follow the prompts.
 
 - Azure App registration's federated credentials and service principal.
-  1. From the portal home page, search for _Azure Active Directory_ and select it from the list of **Services**.
+  1. From the portal home page, search for _Microsoft Entra ID_ and select it from the list of **Services**.
   1. Go to **Manage** > **App registrations**.
   1. In **Owned applications** select **toy-website-auto-review**.
   1. Select **Delete** and follow the prompts.

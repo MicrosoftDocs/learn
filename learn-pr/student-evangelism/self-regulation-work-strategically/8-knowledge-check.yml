@@ -6,9 +6,8 @@ metadata:
   description: Interactive questions that validate whether you achieved the learning objectives.
   ms.date: 09/07/2021
   author: interurban
-  ms.author: jadenyer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4
 content: |

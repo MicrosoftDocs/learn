@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-app-with-azure-maps.summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   description: Summarizes the learning objectives, the scenario, next steps, and ends with a short knowledge check.
-  ms.date: 6/1/2020
+  ms.date: 08/13/2024
   author: PeterTurcan
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 6
 content: |
@@ -15,102 +16,102 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'A truck is carrying a poison, which hazardous classification applies?'
+  - content: "A truck is carrying a poison, which hazardous classification applies?"
     choices: 
-    - content: 'Class 2, Gases'
+    - content: "Class 2. Gases"
       isCorrect: false
-      explanation: There is a more appropriate class.
-    - content: 'Class 5, Oxidizer and organic peroxide'
+      explanation: There's a more appropriate class.
+    - content: "Class 5. Oxidizer and organic peroxide"
       isCorrect: false
-      explanation: There is a more appropriate class.
-    - content: 'Class 6, Toxic, infectious, or inhalation hazard'
+      explanation: There's a more appropriate class.
+    - content: "Class 6. Toxic, infectious, or inhalation hazard"
       isCorrect: true
       explanation: Class 6 is the most appropriate classification.
 
-  - content: 'What is the default order of layers in Azure Maps, from the lowest up?'
+  - content: "What is the default order of layers in Azure Maps, from the lowest up?"
     choices: 
-    - content: 'base, transit, labels, flow'
+    - content: "Base, transit, labels, flow."
       isCorrect: true
       explanation: You can leave off the flow, for a less stressful map!
-    - content: 'base, labels, transit, flow'
+    - content: "Base, labels, transit, flow."
       isCorrect: false
       explanation: Labels take priority over transit.
-    - content: 'base, transit, flow, labels'
+    - content: "Base, transit, flow, labels."
       isCorrect: false
       explanation: Flow takes priority over labels.
       
-  - content: 'The sample app adds layers to the top of the layer stack. Which layers?'
+  - content: "The sample app adds layers to the top of the layer stack. Which layers?"
     choices: 
-    - content: 'The statement is false, no layers are added.'
+    - content: "The statement is false. No layers are added."
       isCorrect: false
       explanation: Layers are added.
-    - content: 'One layer, containing the routes, and city point data.'
+    - content: "One layer, containing the routes, and city point data."
       isCorrect: false
       explanation: More than one layer is added.     
-    - content: 'Two layers. One for route lines, the other to display point data.'
+    - content: "Two layers. One for route lines, the other to display point data."
       isCorrect: true
       explanation: The routes for the car, truck, and bicycle are on one layer, the city names, and icons on the other layer.
-    - content: 'Three layers. One layer for each of the car, truck, and bicycle.'
+    - content: "Three layers. One layer for each of the car, truck, and bicycle."
       isCorrect: false
       explanation: Fewer than three layers are added.
-    - content: 'Four layers are added. One for each of the car, truck, and bicycle. And one layer for city point data.'
+    - content: "Four layers are added. One for each of the car, truck, and bicycle. And one layer for city point data."
       isCorrect: false
       explanation: Fewer than four layers are added.
 
-  - content: 'In Azure IoT, a sister product to Azure Maps, what are temperature, velocity, lat/lon values transmitted from devices known as?'
+  - content: "In Azure IoT, a sister product to Azure Maps, what are the values for temperature, velocity, and lat/lon that are transmitted from devices known as?"
     choices: 
-    - content: 'telemetry'
+    - content: "Telemetry"
       isCorrect: true
       explanation: The most common telemetry values are temperature, humidity, velocity, acceleration, pressure, and location.
-    - content: 'streaming data'
+    - content: "Streaming data"
       isCorrect: false
-      explanation: Close, but there is a more specific term.
-    - content: 'layers'
+      explanation: Close, but there's a more specific term.
+    - content: "Layers"
       isCorrect: false
       explanation: No, layers apply only to map construction.
 
-  - content: 'The Primary Key, that you extract from your Azure Maps account, is required for what purpose?'
+  - content: "The Primary Key, that you extract from your Azure Maps account, is required for what purpose?"
     choices: 
-    - content: 'The Primary Key is used to verify that you have access to Azure resources.'
+    - content: "The Primary Key is used to verify that you have access to Azure resources."
       isCorrect: false
-      explanation: No, separate keys are required for each resource. You cannot, for example, use an Azure Maps key to access an Azure IoT resource.
-    - content: 'The Primary Key is used by Azure Maps, to verify that the app making the requests of the resource is from a legit subscription.'
+      explanation: No, separate keys are required for each resource. You can't, for example, use an Azure Maps key to access an Azure IoT resource.
+    - content: "The Primary Key is used by Azure Maps, to verify that the app making the requests of the resource is from a legit subscription."
       isCorrect: true
       explanation: Either the Primary Key, or the Secondary Key, works for this purpose.    
-    - content: 'The Primary Key is used to verify that your subscription has been paid up to date.'
+    - content: "The Primary Key is used to verify that your subscription is from a legit subscription."
       isCorrect: false
       explanation: No, Azure resources are free in this module.
 
-  - content: 'Which API component is used to adjust the view of the map, so that the start and end points are clearly visible?'
+  - content: "Which API component is used to adjust the view of the map, so that the start and end points are clearly visible?"
     choices: 
-    - content: 'camera'
+    - content: "Camera"
       isCorrect: true
       explanation: A bounding box is calculated based on the start and end points.
-    - content: 'coordinates'
+    - content: "Coordinates"
       isCorrect: false
       explanation: Coordinates are used to send the start, end, and all intermediary points, to the route finding service.
-    - content: 'layers'
+    - content: "Layers"
       isCorrect: false
       explanation: No, layers apply only to map construction.
 
-  - content: 'Which of the following data sets might work with a heat map?'
+  - content: "Which of the following data sets might work with a heat map?"
     choices: 
-    - content: 'A: earthquakes in the last 30 days'
+    - content: "A: earthquakes in the last 30 days"
       isCorrect: false
       explanation: Other data sets might work too.
-    - content: 'B: route finding'
+    - content: "B: route finding"
       isCorrect: false
       explanation: Route finding isn't suitable for displaying as a heat map.
-    - content: 'C: construction cranes per square mile'
+    - content: "C: construction cranes per square mile"
       isCorrect: false
       explanation: Other data sets might work too.
-    - content: 'D: population growth'
+    - content: "D: population growth"
       isCorrect: false
       explanation: Other data sets might work too.
-    - content: 'All of the above'
+    - content: "All of the listed data sets."
       isCorrect: false
-      explanation: Not all the above data sets would work with a heat map.
-    - content: 'A, C, and D'
+      explanation: Not all these data sets would work with a heat map.
+    - content: "A, C, and D"
       isCorrect: true
       explanation: Events, with varying strengths, tied to a geographical location, do make good data for rendering in heat maps.
   

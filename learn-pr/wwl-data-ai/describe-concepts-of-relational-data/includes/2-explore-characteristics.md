@@ -9,7 +9,7 @@ In a relational database, you model collections of entities from the real world 
 The rows in a table have one or more columns that define the properties of the entity, such as the customer name, or product ID. All rows in the same table have the same columns. Some columns are used to maintain relationships between tables. In the image below, the Orders table contains both a Customer ID and a Product ID. The Customer ID relates to the Customers table to identify the customer that placed the order, and the Product ID relates to the Products table to indicate what product was purchased.
 
 > [!div class="mx-imgBorder"]
-> ![Example of a relational model, showing customers, orders, and products](../media/2-relational-data.png)
+> ![Diagram showing an example of a relational model, showing customers, orders, and products data.](../media/2-relational-data.png)
 
 You design a relational database by creating a data model. The model below shows the structure of the entities from the previous example. In this diagram, the columns marked *PK* are the *Primary Key* for the table. The primary key indicates the column (or combination of columns) that uniquely identify each row. Every table should have a primary key.
 
@@ -18,7 +18,7 @@ The diagram also shows the relationships between the tables. The lines connectin
 The columns marked *FK* are *Foreign Key* columns. They reference, or link to, the primary key of another table, and are used to maintain the relationships between tables. A foreign key also helps to identify and prevent anomalies, such as orders for customers that don't exist in the Customers table. In the model below, the Customer ID and Product ID columns in the Orders table link to the customer that placed the order and the product that was ordered:
 
 > [!div class="mx-imgBorder"]
-> ![Example of relational model, showing customers, orders, and products](../media/2-relations.png)
+> ![Diagram showing an example of relational model, showing customers, orders, and products.](../media/2-relations.png)
 
 The main characteristics of a relational database are:
 

@@ -2,15 +2,16 @@
 uid: learn.wwl.explore-azure-automation-devops.explore-powershell-workflows
 title: Explore PowerShell workflows
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore PowerShell workflows
   description: "Explore PowerShell workflows"
-  ms.date: 03/18/2022
+  ms.date: 05/23/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/8-explore-powershell-workflows.md)]

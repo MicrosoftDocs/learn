@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.django.deployment.summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: You saw how to deploy your application to production.
   ms.date: 03/01/2021 
   author: GeekTrainer
   ms.author: chrhar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-django
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Summary
 durationInMinutes: 1

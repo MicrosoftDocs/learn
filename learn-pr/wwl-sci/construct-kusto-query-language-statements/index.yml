@@ -3,27 +3,27 @@ uid: learn.wwl.construct-kql-statements
 metadata:
   title: Construct KQL statements for Microsoft Sentinel
   description: "Construct KQL statements for Microsoft Sentinel"
-  ms.date: 02/23/2023
+  ms.date: 09/20/2024
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: microsoft-sentinel
 title: Construct KQL statements for Microsoft Sentinel
-summary: KQL is the query language used to perform analysis on data to create analytics, workbooks, and perform hunting in Microsoft Sentinel.  Learn how basic KQL statement structure provides the foundation to build more complex statements.
+summary: Kusto Query Language (KQL) is the query language used to perform analysis on data to create analytics, workbooks, and perform hunting in Microsoft Sentinel.  Learn how basic KQL statement structure provides the foundation to build more complex statements.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
   - Construct KQL statements
   - Search log files for security events using KQL
   - Filter searches based on event time, severity, domain, and other relevant data using KQL
 prerequisites: |
-  none
+  None
 iconUrl: /training/achievements/construct-kql-statements.svg
 levels:
 - intermediate
 roles:
 - security-operations-analyst
 products:
-- azure
+- defender-xdr
 - azure-data-explorer
 - azure-log-analytics
 - microsoft-sentinel

@@ -1,4 +1,3 @@
-
 Typically, a client application uses a client library to form requests and execute commands on a Redis cache. You can get a list of client libraries directly from the Redis clients page. 
 
 ## Executing commands on the Redis cache
@@ -39,13 +38,13 @@ var redisConnection = ConnectionMultiplexer.Connect(connectionString);
 
 Once you have a `ConnectionMultiplexer`, there are three primary things you might want to do:
 
-* Access a Redis Database. This is what we will focus on here.
-* Make use of the publisher/subscriber features of Redis. This is outside the scope of this module.
+* Access a Redis Database.
+* Make use of the publisher/subscriber features of Redis, which is outside the scope of this module.
 * Access an individual server for maintenance or monitoring purposes.
 
 ### Accessing a Redis database
 
-The Redis database is represented by the `IDatabase` type. You can retrieve one using the `GetDatabase()` method:
+The `IDatabase` type represents the Redis database. You can retrieve one using the `GetDatabase()` method:
 
 ```csharp
 IDatabase db = redisConnection.GetDatabase();
@@ -95,14 +94,14 @@ Here are some of the more common ones that work with single keys, you can [read 
 
 |Method|Description|
 |--- |--- |
-|`CreateBatch`|Creates a group of operations that will be sent to the server as a single unit, but not necessarily processed as a unit.|
-|`CreateTransaction`|Creates a group of operations that will be sent to the server as a single unit and processed on the server as a single unit.|
+|`CreateBatch`|Creates a group of operations to be sent to the server as a single unit, but not necessarily processed as a unit.|
+|`CreateTransaction`|Creates a group of operations to be sent to the server as a single unit and processed on the server as a single unit.|
 |`KeyDelete`|Delete the key/value.|
 |`KeyExists`|Returns whether the given key exists in cache.|
 |`KeyExpire`|Sets a time-to-live (TTL) expiration on a key.|
 |`KeyRename`|Renames a key.|
 |`KeyTimeToLive`|Returns the TTL for a key.|
-|`KeyType`|Returns the string representation of the type of the value stored at key. The different types that can be returned are: string, list, set, zset and hash.|
+|`KeyType`|Returns the string representation of the type of the value stored at key. The different types that can be returned are: string, list, set, zset, and hash.|
 
 ### Executing other commands
 
@@ -115,7 +114,7 @@ Console.WriteLine(result.ToString()); // displays: "PONG"
 
 The `Execute` and `ExecuteAsync` methods return a `RedisResult` object that is a data holder that includes two properties:
 
-* `Type` that returns a `string` indicating the type of the result - "STRING", "INTEGER", etc.
+* `Resp2Type` that returns a `string` indicating the type of the result - `STRING`, `INTEGER`, etc.
 * `IsNull` a true/false value to detect when the result is `null`.
 
 You can then use `ToString()` on the `RedisResult` to get the actual return value.
@@ -124,10 +123,10 @@ You can use `Execute` to perform any supported commands - for example, we can ge
 
 ```csharp
 var result = await db.ExecuteAsync("client", "list");
-Console.WriteLine($"Type = {result.Type}\r\nResult = {result}");
+Console.WriteLine($"Type = {result.Resp2Type}\r\nResult = {result}");
 ```
 
-This would output all the connected clients:
+This outputs all the connected clients:
 
 ```
 Type = BulkString
@@ -189,9 +188,10 @@ Console.WriteLine(stat.Sport); // displays "Soccer"
 
 ## Cleaning up the connection
 
-Once you're done with the Redis connection, you can `Dispose` the `ConnectionMultiplexer`. This closes all connections and shutdown the communication to the server.
+When the connection is no longer needed, you can `Dispose` the `ConnectionMultiplexer`. This closes all connections and shutdown the communication to the server.
 
 ```csharp
 redisConnection.Dispose();
 redisConnection = null;
 ```
+

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-fabric-data-warehouse.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 11/10/2024
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/01-introduction.md)]

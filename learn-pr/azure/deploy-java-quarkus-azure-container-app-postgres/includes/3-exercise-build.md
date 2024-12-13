@@ -1,36 +1,33 @@
-In this unit, you create a basic Quarkus application. You use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You use Docker to start a local PostgreSQL database so you can run and test your to-do application locally.
+In this unit, you create a basic Quarkus application. You use Maven to bootstrap the application and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. You use Docker to start a local PostgreSQL database so you can run and test the application locally.
 
-## Generate the Quarkus application using Maven
+## Generate the Quarkus application by using Maven
 
-There are different ways to generate a Quarkus project structure for you. You can use the [Quarkus web interface](https://code.quarkus.io), an IDE plugin, or the Quarkus Maven plugin. Let's use the Maven plugin to generate the project structure.
+There are several ways to generate a Quarkus project structure. You can use the [Quarkus web interface](https://code.quarkus.io), an IDE plugin, or the Quarkus Maven plugin. Let's use the Maven plugin to generate the project structure.
 
 You generate your application with several dependencies:
 
-* the `resteasy` dependency to expose a REST endpoint,
-* the `jackson` dependency to serialize and deserialize JSON,
-* the `hibernate` dependency to interact with the database,
-* the `postgresql` dependency to connect to the PostgreSQL database,
-* and the `docker` dependency to build a Docker image.
+* The `resteasy` dependency to expose a REST endpoint
+* The `jackson` dependency to serialize and deserialize JSON
+* The `hibernate` dependency to interact with the database
+* The `postgresql` dependency to connect to the PostgreSQL database
+* The `docker` dependency to build a Docker image
 
-You don't need to specify Azure dependencies because you run your application locally first, and then deploy a containerized version of the application to Azure Container Apps.
+You don't need to specify Azure dependencies because you run your application locally first and then deploy a containerized version of it to Azure Container Apps.
 
 At a command prompt, generate the to-do application:
 
 ```bash
-mvn -U io.quarkus:quarkus-maven-plugin:2.15.1.Final:create \
-    -DplatformVersion=2.15.1.Final \
+mvn -U io.quarkus:quarkus-maven-plugin:3.7.3:create \
+    -DplatformVersion=3.7.3 \
     -DprojectGroupId=com.example.demo \
     -DprojectArtifactId=todo \
     -DclassName="com.example.demo.TodoResource" \
     -Dpath="/api/todos" \
-    -DjavaVersion=11 \
+    -DjavaVersion=17 \
     -Dextensions="resteasy-jackson, hibernate-orm-panache, jdbc-postgresql, docker"
 ```
 
-> [!NOTE]
-> By default the project is generated using Java 17. We use the `javaVersion` parameter to override the default value and use Java 11.
-
-This command creates a new Quarkus project. Despite generating a Maven directory structure (`src/main/java` for code source and `src/test/java` for tests), it has created some Java classes, some tests and some Dockerfiles. It has also generated a `pom.xml` file with all the needed dependencies (Hibernate, RestEasy, Jackson, PostgreSQL and Docker).  
+This command creates a new Quarkus project. It generates a Maven directory structure (`src/main/java` for source code and `src/test/java` for tests). It creates some Java classes, some tests, and some Dockerfiles. It also generates a *pom.xml* file with all the needed dependencies (Hibernate, RESTEasy, Jackson, PostgreSQL, and Docker):
 
 ```xml
   <dependencies>
@@ -55,6 +52,10 @@ This command creates a new Quarkus project. Despite generating a Maven directory
       <artifactId>quarkus-arc</artifactId>
     </dependency>
     <dependency>
+        <groupId>io.quarkus</groupId>
+        <artifactId>quarkus-hibernate-orm</artifactId>
+    </dependency>
+    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy</artifactId>
     </dependency>
@@ -72,15 +73,15 @@ This command creates a new Quarkus project. Despite generating a Maven directory
 ```
 
 > [!NOTE]
-> All the dependencies in the `pom.xml` are defined in the Quarkus BOM (Bill of Materials) `io.quarkus.platform:quarkus-bom`.
+> All the dependencies in the *pom.xml* file are defined in the Quarkus BOM (bill of materials) `io.quarkus.platform:quarkus-bom`.
 
 ## Code the application
 
-Next, create a new `Todo` Java class and add the following Java code. It uses Java Persistence API (`javax.persistence.Entity` package) to store and retrieve data from your PostgreSQL server. It also uses [Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache) (inheriting from `io.quarkus.hibernate.orm.panache.PanacheEntity`) to simplify the persistence layer.
+Next, rename the generated *MyEntity.java* class to *Todo.java* (located in the same folder as the *TodoResource.java* file). Replace the existing code with the following Java code. It uses Java Persistence API (`jakarta.persistence.*` package) to store and retrieve data from your PostgreSQL server. It also uses [Hibernate ORM with Panache](https://quarkus.io/guides/hibernate-orm-panache) (inheriting from `io.quarkus.hibernate.orm.panache.PanacheEntity`) to simplify the persistence layer.
 
-You use a JPA entity (`@Entity`) to map the Java `Todo` object directly to the PostgreSQL `Todo` table. Then, the `TodoResource` REST endpoint creates a new `Todo` entity class and persist it. This class is a domain model that's mapped on the `Todo` table. The table will be automatically created by JPA.
+You use a JPA entity (`@Entity`) to map the Java `Todo` object directly to the PostgreSQL `Todo` table. The `TodoResource` REST endpoint then creates a new `Todo` entity class and persists it. This class is a domain model that's mapped on the `Todo` table. The table is automatically created by JPA.
 
-By extending `PanacheEntity`, you get a bunch of generic create, read, update, and delete (CRUD) methods for your type. So you can do things like saving and deleting `Todo` objects in just one line of Java code.
+Extending `PanacheEntity` gets you a number of generic create, read, update, and delete (CRUD) methods for your type. So you can do things like saving and deleting `Todo` objects in just one line of Java code.
 
 Add the following code to the `Todo` entity:
 
@@ -89,7 +90,7 @@ package com.example.demo;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
 import java.time.Instant;
 
 @Entity
@@ -121,22 +122,20 @@ To manage that class, update the `TodoResource` so that it can publish REST inte
 ```java
 package com.example.demo;
 
+import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.UriBuilder;
+import jakarta.ws.rs.core.UriInfo;
 import org.jboss.logging.Logger;
 
-import javax.inject.Inject;
-import javax.transaction.Transactional;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.UriBuilder;
-import javax.ws.rs.core.UriInfo;
 import java.util.List;
-
-import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 
 @Path("/api/todos")
 @Consumes(APPLICATION_JSON)
@@ -146,9 +145,12 @@ public class TodoResource {
     @Inject
     Logger logger;
 
+    @Inject
+    UriInfo uriInfo;
+
     @POST
     @Transactional
-    public Response createTodo(Todo todo, @Context UriInfo uriInfo) {
+    public Response createTodo(Todo todo) {
         logger.info("Creating todo: " + todo);
         Todo.persist(todo);
         UriBuilder uriBuilder = uriInfo.getAbsolutePathBuilder().path(todo.id.toString());
@@ -163,18 +165,19 @@ public class TodoResource {
 }
 ```
 
-## Execute the application
+## Run the application
 
-To execute the application in development mode, you need Docker to be up and running. That's because Quarkus detects that you need a PostgreSQL database (thanks to the PostgreSQL dependency `quarkus-jdbc-postgresql` in the `pom.xml`), downloads the PostgreSQL Docker image, and starts a container with the database. Then, it automatically creates the `Todo` table in the database.
+When you run the application in development mode, Docker needs to be running. That's because Quarkus detects that you need a PostgreSQL database (because of the PostgreSQL dependency `quarkus-jdbc-postgresql` declared in the *pom.xml* file), downloads the PostgreSQL Docker image, and starts a container with the database. It then automatically creates the `Todo` table in the database.
 
-Make sure Docker is running locally on your machine and execute the to-do application by using the following command:
+Make sure Docker is running locally on your machine and run the to-do application by using this command:
 
 ```bash
 cd todo
-./mvnw quarkus:dev
+./mvnw quarkus:dev    # On Mac or Linux
+mvnw.cmd quarkus:dev  # On Windows
 ```
 
-The Quarkus application should start and connect to your database. You should have the following output:
+The Quarkus application should start and connect to your database. You should see the following output:
 
 ```shell
 [io.qua.dat.dep.dev.DevServicesDatasourceProcessor] Dev Services for the default datasource (postgresql) started.
@@ -197,7 +200,7 @@ Tests paused
 Press [r] to resume testing, [o] Toggle test output, [:] for the terminal, [h] for more options>
 ```
 
-To test the application, you can use `cURL`.
+To test the application, you can use cURL.
 
 In a separate terminal, create a new to-do item in the database with the following command.  You should see the log in the Quarkus console:
 
@@ -214,7 +217,7 @@ This command should return the created item (with an identifier):
 {"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true,"createdAt":"2022-12-30T15:17:20.280203Z"}
 ```
 
-Create a second to-do with the following `cURL` command:
+Create a second to-do by using the following cURL command:
 
 ```bash
 curl --header "Content-Type: application/json" \
@@ -223,7 +226,7 @@ curl --header "Content-Type: application/json" \
     http://127.0.0.1:8080/api/todos
 ```
 
-Next, retrieve the data by using a new `cURL` request:
+Next, retrieve the data by using a new cURL request:
 
 ```bash
 curl http://127.0.0.1:8080/api/todos
@@ -240,17 +243,16 @@ This command returns the list of to-do items, including the items you created:
 
 ## Test the application
 
-To test the application, you can use the existing `TodoResourceTest` class. It needs to test the REST endpoint and for that it uses [RESTAssured](https://rest-assured.io/). Replace code in the `TodoResourceTest` class with the following code:
+To test the application, you can use the existing `TodoResourceTest` class. It needs to test the REST endpoint. To test the endpoint, it uses [RESTAssured](https://rest-assured.io/). Replace code in the `TodoResourceTest` class with the following code:
 
 ```java
 package com.example.demo;
 
 import io.quarkus.test.junit.QuarkusTest;
-import org.junit.jupiter.api.Test;
-
 import static io.restassured.RestAssured.given;
-import static javax.ws.rs.core.HttpHeaders.CONTENT_TYPE;
-import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
+import static jakarta.ws.rs.core.HttpHeaders.CONTENT_TYPE;
+import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
+import org.junit.jupiter.api.Test;
 
 @QuarkusTest
 class TodoResourceTest {
@@ -279,13 +281,14 @@ class TodoResourceTest {
 }
 ```
 
-To test the application, you also need Docker Desktop to be up and running because Quarkus detects that it needs the PostgreSQL database for testing. Test the application by using the following command:
+When you test the application, Docker Desktop needs to be running because Quarkus detects that it needs the PostgreSQL database for testing. Test the application by using this command:
 
 ```bash
-./mvnw clean test
+./mvnw clean test    # On Mac or Linux
+mvnw.cmd clean test  # On Windows
 ```
 
-You should have the following output:
+You should see output that looks similar to this:
 
 ```shell
 [INFO] -------------------------------------------------------

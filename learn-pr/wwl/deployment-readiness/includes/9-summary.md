@@ -1,4 +1,3 @@
-
 In this module, you learned about the deployment readiness process and how to use the Deployment Readiness Toolkit to help you prepare for a deployment. You also learned about the Windows 11 deployment tools and how to use them to deploy Windows 11 to your organization.
 
-Tools like Microsoft Endpoint Manager, Desktop Analytics, and Endpoint Analytics can help pinpoint potential challenges, enabling administrators to address issues like application incompatibilities proactively. Assess infrastructure and staff capacity for extensive deployments, utilize features such as Delivery Optimization, and adopt a phased approach to detect problems early and prevent overwhelming the support team.
+Tools like Microsoft Endpoint Manager, Endpoint Analytics, and Endpoint Analytics can help pinpoint potential challenges, enabling administrators to address issues like application incompatibilities proactively. Assess infrastructure and staff capacity for extensive deployments, utilize features such as Delivery Optimization, and adopt a phased approach to detect problems early and prevent overwhelming the support team.

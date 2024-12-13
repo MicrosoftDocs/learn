@@ -41,8 +41,8 @@ Rock, paper, scissors is a game played by two participants. The game consists of
 
 The preceding table tells the story of how the game progresses through different phases. By focusing on the two columns `Behavior` and `Data`, you can *scaffold* some initial code as a foundation on which to build the game.
 
-
-1. Copy the code below into the terminal and press <kbd>Enter</kbd>, to create a file `rock-paper-scissor.py` and open the editor: 
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+1. Copy the code below into the terminal and press <kbd>Enter</kbd>, to create a file `rock-paper-scissor.py` and open the editor:
 
    ```bash
    touch rock-paper-scissor.py
