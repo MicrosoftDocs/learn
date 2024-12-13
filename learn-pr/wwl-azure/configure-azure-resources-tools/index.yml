@@ -28,6 +28,5 @@ roles:
 products:
 - azure
 units:
-- learn.wwl.configure-azure-resources-tools.use-azure-powershell
 badge:
   uid: learn.wwl.configure-azure-resources-tools.badge
