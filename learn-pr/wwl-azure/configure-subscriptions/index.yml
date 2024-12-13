@@ -35,7 +35,6 @@ products:
 subjects:
 - finance-accounting
 units:
-- learn.wwl.configure-subscriptions.summary-resources
 badge:
   uid: learn.wwl.configure-subscriptions.badge
 
