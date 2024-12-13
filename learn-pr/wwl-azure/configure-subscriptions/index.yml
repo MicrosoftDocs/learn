@@ -41,7 +41,6 @@ units:
 - learn.wwl.configure-subscriptions.obtain-subscription
 - learn.wwl.configure-subscriptions.identify-subscription-usage
 - learn.wwl.configure-subscriptions.implement-cost-management
-- learn.wwl.configure-subscriptions.apply-resource-tagging
 - learn.wwl.configure-subscriptions.knowledge-check
 - learn.wwl.configure-subscriptions.summary-resources
 badge:
