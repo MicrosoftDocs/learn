@@ -12,13 +12,13 @@ Before you deploy VMware HCX Connector in the on-premises vCenter Server, downlo
 
 1. Select the **Migration using VMware HCX** tab, place a check mark next to **I agree with terms and conditions**, and select **Enable and deploy**.
 
-    :::image type="content" source="../media/3-enable-deploy-hcx.png" alt-text="Screenshot displaying how to enable the VMware HCX add-on within the Azure portal.":::
+    :::image type="content" source="../media/3-enable-deploy-vmware-hcx.png" alt-text="Screenshot displaying how to enable the VMware HCX add-on within the Azure portal."lightbox="../media/3-enable-deploy-vmware-hcx.png":::
 
-1. This action triggers a build of VMware HCX Advanced within the Azure VMware Solution private cloud.
+1. This action triggers a deployment of VMware HCX within the Azure VMware Solution private cloud.
 
-1. After the build completes, you should see a similar screen to the following image:
+1. After the deployment completes, you should see a similar screen to the following image:
 
-    :::image type="content" source="../media/3-hcx-deployment-complete.png" alt-text="Screenshot displaying that the VMware HCX add-on installed after enabling the service within the Azure VMware Solution private cloud.":::
+    :::image type="content" source="../media/3-deploy-vmware-hcx-complete.png" alt-text="Screenshot displaying that the VMware HCX add-on installed after enabling the service within the Azure VMware Solution private cloud."lightbox="../media/3-deploy-vmware-hcx-complete.png":::
 
 1. Within the Azure VMware Solution resource, under **Manage**, select **Add-ons** again.
 
