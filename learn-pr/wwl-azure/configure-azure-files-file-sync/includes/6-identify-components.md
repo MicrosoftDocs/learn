@@ -17,7 +17,7 @@ Azure Storage Explorer has the following characteristics.
 
 ### Things to consider when using Azure Storage Explorer
 
-Azure Storage Explorer supports many scenarios for working with storage accounts in global and national Azure. As you review these options, think about which scenarios apply to your Azure Storage implementation.
+Azure Storage Explorer supports many scenarios for working with storage accounts in Azure. As you review these options, think about which scenarios apply to your Azure Storage implementation.
 
 | Scenario | Description |
 | --- | --- |
