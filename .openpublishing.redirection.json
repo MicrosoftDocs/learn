@@ -1,6 +1,34 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/2-monitor-data-ingestion.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/3-monitor-data-transformation.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/4-monitor-semantic-models.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/5-configure-alerts.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/6-exercise-configure-alerts-in-fabric.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/5-exercise"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/6-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/8-summary.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/7-summary"
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/query-data-warehouse-microsoft-fabric/2-use-sql-query-editor.yml",
       "redirect_url": "/training/modules/query-data-warehouse-microsoft-fabric/"
     },
