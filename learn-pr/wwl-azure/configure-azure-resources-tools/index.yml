@@ -31,6 +31,5 @@ units:
 - learn.wwl.configure-azure-resources-tools.use-azure-portal
 - learn.wwl.configure-azure-resources-tools.use-azure-cloud-shell
 - learn.wwl.configure-azure-resources-tools.use-azure-powershell
-- learn.wwl.configure-azure-resources-tools.use-azure-cli
 badge:
   uid: learn.wwl.configure-azure-resources-tools.badge
