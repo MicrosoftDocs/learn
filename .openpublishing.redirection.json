@@ -35863,6 +35863,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/2-use-azure-portal.md",
       "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/4-use-azure-powershell.md",
+      "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
+      "redirect_document_id": false
     }
   ]
 }
