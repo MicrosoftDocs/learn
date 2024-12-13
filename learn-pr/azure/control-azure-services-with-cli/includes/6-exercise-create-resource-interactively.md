@@ -19,7 +19,7 @@ Here's how to create a new Azure VM with Azure CLI:
 
      [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
-   - Use the Ubuntu Linux image: `Debian11`.
+   - Use the Ubuntu Linux image: `Win2022AzureEditionCore`.
    - Assign an administrator username following your organization's naming standards
 
    ```azurecli
@@ -165,9 +165,7 @@ When working with Azure resources at the command-line, you aren't using the Azur
    az vm list-vm-resize-options --resource-group $rgName --name $vmName --output table
    ```
 
-## Stop and delete a VM
-
-## Delete a VM
+## Stop or Delete a VM
 
 1. Shut down the VM:
 
