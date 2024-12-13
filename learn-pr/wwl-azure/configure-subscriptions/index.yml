@@ -36,7 +36,6 @@ subjects:
 - finance-accounting
 units:
 - learn.wwl.configure-subscriptions.introduction
-- learn.wwl.configure-subscriptions.identify-regions
 - learn.wwl.configure-subscriptions.implement-azure-subscriptions
 - learn.wwl.configure-subscriptions.obtain-subscription
 - learn.wwl.configure-subscriptions.identify-subscription-usage
