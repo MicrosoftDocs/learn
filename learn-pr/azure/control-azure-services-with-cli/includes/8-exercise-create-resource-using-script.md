@@ -7,7 +7,7 @@ resource group already set up, it's time to create the VMs.
 Your company secured a booth at a large Linux trade show. You plan to set up a demo area with three
 terminals, each connected to a separate Linux VM. You must delete the VMs and re-create them at the
 end of each day so they start fresh every morning. Creating the VMs manually after a long day is
-error-prone, so you need to write a PowerShell script to automate the VM creation process.
+error-prone, so you need to write an Azure CLI script to automate the VM creation process.
 
 ## Write a script to create virtual machines
 
@@ -20,19 +20,19 @@ machines.
 
 1. Switch to your home folder:
 
-   ```powershell
+   ```azurecli
    Set-Location -Path $HOME
    ```
 
 1. Create a new PowerShell script file:
 
-   ```powershell
+   ```azurecli
    New-Item -Name ConferenceDailyReset.ps1 -ItemType File
    ```
 
 1. Open the integrated Visual Studio Code (VS Code) editor:
 
-   ```powershell
+   ```azurecli
    code ./ConferenceDailyReset.ps1
    ```
 
@@ -44,7 +44,7 @@ machines.
 
    Add the following line to your script:
 
-   ```powershell
+   ```azurecli
    param (
        [string]$ResourceGroupName
    )
@@ -52,13 +52,13 @@ machines.
 
 1. Prompt for VM administrator credentials:
 
-   ```powershell
+   ```azurecli
    $adminCredential = Get-Credential -Message 'Enter a username and password for the VM administrator.'
    ```
 
 1. Create a loop to execute three times:
 
-   ```powershell
+   ```azurecli
    $vms = 'web','app','sql'
    foreach ($vm in $vms) {
        $vm
@@ -67,7 +67,7 @@ machines.
 
 1. In the loop, return the name for each VM:
 
-   ```powershell
+   ```azurecli
    Write-Output "Creating VM: $vm"
    ```
 
@@ -125,7 +125,7 @@ ellipsis (`...`) context menu at the top-right corner of the editor, or the <kbd
 
 1. Execute the script using the following command:
 
-   ```powershell
+   ```azurecli
    ./ConferenceDailyReset.ps1 -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
    ```
 
