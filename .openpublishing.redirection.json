@@ -35868,6 +35868,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/4-use-azure-powershell.md",
       "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-subscriptions/index.md",
+      "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
     }
   ]
 }
