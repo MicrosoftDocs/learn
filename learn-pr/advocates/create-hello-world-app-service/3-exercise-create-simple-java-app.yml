@@ -2,7 +2,7 @@
 uid: learn.azure.create-hello-app-service.3
 title: "Exercise: Create a Simple Java Web App"
 metadata:
-  description: Let's create a simple java web app and deploy it locally.
+  description: Create a simple Java web app and deploy it locally.
   author: KarlErickson
   ms.author: ayangupta
   ms.date: 12/11/2024

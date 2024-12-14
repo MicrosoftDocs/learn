@@ -2,7 +2,7 @@ In this module, you learned how to create a Java web application, how to use the
 
 ## Clean up resources
 
-In this module, you created resources using your Azure subscription. You need to clean up these resources so that you won't continue to be charged for them. Run the following command to delete all the resources.
+In this module, you created resources using your Azure subscription. You need to clean up these resources to avoid unnecessary charges. Run the following command to delete all the resources.
 
 ```azurecli
 az group delete --name <resource-group-name>

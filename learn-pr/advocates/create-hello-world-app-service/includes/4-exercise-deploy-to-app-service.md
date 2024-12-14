@@ -1,15 +1,15 @@
 Now that you have your Hello World Java app running locally, you can deploy it to Azure App Service.
 
-There are multiple ways to deploy your app to Azure App Service. This module has two approaches:
+There are multiple ways to deploy your app to Azure App Service. This module describes the following two approaches:
 
 - Configure and use the Maven Plugin for Azure App Service to deploy your web app.
-- Use the Azure CLI to create manually create resources required for deployment and deploy
+- Use the Azure CLI to manually create required resources and then deploy.
 
-Using the Maven Plugin for Azure App Service is an easier way to get started.
+Using the Maven Plugin for Azure App Service is an easier way to get started. Select the relevant button at the start of this unit, based on your preference.
 
 ::: zone pivot="maven-plugin"
 
-### The Maven Plugin for Azure App Service
+### Use the Maven Plugin for Azure App Service
 
 Microsoft provides the Maven Plugin for Azure App Service to make it easier for Java developers to deploy applications to Azure. By using this plug-in, you can easily configure and deploy your application to Azure.
 
@@ -128,7 +128,7 @@ If you want to change the resource group name, instance name, and deployment loc
 
 ### Compile and deploy to Azure App Service
 
-Now that the settings for deploying to Azure App Service are complete, compile the source code again:
+Now that the settings for deploying to Azure App Service are complete, compile the source code again by using the following command:
 
 ```bash
 mvn clean package
@@ -186,88 +186,88 @@ Starting Live Log Stream ---
 
 ::: zone pivot="azure-cli"
 
-### Install the Azure CLI
+### Use the Azure CLI
 
-First, install the Azure CLI, if it isn't already installed. For more information, see [How to install the Azure CLI](/cli/azure/install-azure-cli).
+Use the following steps to deploy using the Azure CLI:
 
-### Log in to Azure
+1. Install the Azure CLI, if it isn't already installed. For more information, see [How to install the Azure CLI](/cli/azure/install-azure-cli).
 
-```azurecli
-az login
-```
+1. Use the following command to sign in to Azure:
 
-### Set variables
+   ```azurecli
+   az login
+   ```
 
-In your code, replace the placeholders with the values in the following table. These values are used throughout this module.
+1. Use the following commands to set environment variables. Be sure to replace the placeholders with the values described in the table. These values are used throughout this module.
 
-```bash
-export RESOURCE_GROUP="appServiceWorkshop"
-export LOCATION="<region>"
-export APP_SERVICE_PLAN="myAppServicePlan"
-export WEBAPP_NAME="<web-app-name>"      # Ensure this name is globally unique
-export JAR_FILE_PATH="<jar-file-path>"  # Replace with the actual path to your JAR file
-```
+   ```bash
+   export RESOURCE_GROUP="appServiceWorkshop"
+   export LOCATION="<region>"
+   export APP_SERVICE_PLAN="myAppServicePlan"
+   export WEBAPP_NAME="<web-app-name>"      # Ensure this name is globally unique
+   export JAR_FILE_PATH="<jar-file-path>"  # Replace with the actual path to your JAR file
+   ```
 
-In your code, replace the placeholders with the values in the following table. These values are used throughout this module.
+   The following table describes the placeholder values:
 
-| Variable          | Description                                                                                                                                                                                                     |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `<web-app-name>`  | The name of your WebApp. It should be unique across Azure.                                                                                                                                                      |
-| `<region>`        | The Azure region you want to use. You can use `eastus` by default, but we recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations` |
-| `<jar-file-path>` | This is where your **.jar** file was saved in your project directory - for example, **target/\<jar-file>**. Make sure you set the path of this variable to be the full path from your project directory         |
+   | Variable          | Description                                                                                                                                                                                                      |
+   |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | `<web-app-name>`  | The name of your web app. It should be unique across Azure.                                                                                                                                                      |
+   | `<region>`        | The Azure region you want to use. You can use `eastus` by default, but we recommend that you use a region close to where you live. To see the full list of available regions, enter `az account list-locations`. |
+   | `<jar-file-path>` | This path is where your **.jar** file was saved in your project directory - for example, **target/\<jar-file>**. Make sure you set this variable to the full path from your project directory.                   |
 
-### Create a resource group
+1. Use the following command to create a resource group:
 
-```azurecli
-az group create \
-    --name $RESOURCE_GROUP \
-    --location $LOCATION
-```
+   ```azurecli
+   az group create \
+       --name $RESOURCE_GROUP \
+       --location $LOCATION
+   ```
 
-### Create an App Service plan
+1. Use the following command to create an App Service plan:
 
-```azurecli
-az appservice plan create \
-    --name $APP_SERVICE_PLAN \
-    --resource-group $RESOURCE_GROUP \
-    --is-linux \
-    --sku B1
-```
+   ```azurecli
+   az appservice plan create \
+       --name $APP_SERVICE_PLAN \
+       --resource-group $RESOURCE_GROUP \
+       --is-linux \
+       --sku B1
+   ```
 
-### Create a web app
+1. Use the following command to create a web app:
 
-```azurecli
-az webapp create \
-    --resource-group $RESOURCE_GROUP \
-    --plan $APP_SERVICE_PLAN \
-    --name $WEBAPP_NAME \
-    --runtime "JAVA|17-java17"
-```
+   ```azurecli
+   az webapp create \
+       --resource-group $RESOURCE_GROUP \
+       --plan $APP_SERVICE_PLAN \
+       --name $WEBAPP_NAME \
+       --runtime "JAVA|17-java17"
+   ```
 
-### Deploy the app
+1. Use the following command to deploy the app:
 
-```azurecli
-az webapp deploy \
-    --resource-group $RESOURCE_GROUP \
-    --name $WEBAPP_NAME \
-    --src-path $JAR_FILE_PATH\
-```
+   ```azurecli
+   az webapp deploy \
+       --resource-group $RESOURCE_GROUP \
+       --name $WEBAPP_NAME \
+       --src-path $JAR_FILE_PATH\
+   ```
 
-It's normal for the deployment process to take several minutes.
+   It's normal for the deployment process to take several minutes.
 
-### Visit your deployed Java web app
+1. Visit your deployed Java web app. Use the following command to produce the deployment URL:
 
-```bash
-echo "Your website is at https://$(az webapp show \
-    --name $WEBAPP_NAME \
-    --resource-group $RESOURCE_GROUP \
-    --query defaultHostName \
-    --output tsv)"
-```
+   ```bash
+   echo "Your website is at https://$(az webapp show \
+       --name $WEBAPP_NAME \
+       --resource-group $RESOURCE_GROUP \
+       --query defaultHostName \
+       --output tsv)"
+   ```
 
-When you run this command, it outputs something like: `Your website is at https://<your-app-name>.azurewebsites.net`
+   When you run this command, it outputs something like: `Your website is at https://<your-app-name>.azurewebsites.net`
 
-When select the link, you should see "Hello, Java on Azure!" on the screen.
+1. Select the link. You should see "Hello, Java on Azure!" on the screen.
 
 Congratulations! You successfully deployed a web app to Azure App Service.
 

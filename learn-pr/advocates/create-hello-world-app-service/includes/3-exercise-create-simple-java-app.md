@@ -1,15 +1,10 @@
 ## Create a simple Java web app
 
-In this exercise, we create a minimal Java web application that serves a simple "Hello, World!" message using Java 17 and Maven. This application runs on a built-in HTTP server and can be deployed to Azure App Service.
+In this exercise, you create a minimal Java web application that serves a simple "Hello, World!" message using Java 17 and Maven. This application runs on a built-in HTTP server and can be deployed to Azure App Service.
 
-You have two options to proceed:
+You have two options to proceed. Select the relevant tab based on your preference.
 
-1. **Approach 1:** Pull code from the Azure samples repo.
-2. **Approach 2:** Create the code sample from scratch.
-
-Proceed to the relevant section in the instructions below based on your preference
-
-### [Approach 1: Pull code from the Azure samples repo](#tab/approach-1)
+### [Option 1: Pull code from the Azure samples repo](#tab/option-1)
 
 ### Clone the project repo
 
@@ -25,7 +20,7 @@ Now, use the following command to navigate to inside the cloned project repo:
 cd hello-java-azure
 ```
 
-### [Approach 2: Create the code sample from scratch](#tab/approach-2)
+### [Option 2: Create the code sample from scratch](#tab/option-2)
 
 ### Create a Maven project
 
@@ -83,9 +78,7 @@ The following files and directories are now available:
 
 ### Modify the Maven pom.xml file
 
-Replace the contents of your **pom.xml** with the following code:
-
-This updated **pom.xml** introduces the correct versions of dependencies needed for this web app.
+Replace the contents of your **pom.xml** with the following code. This updated **pom.xml** introduces the correct versions of dependencies needed for this web app.
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -115,7 +108,7 @@ This updated **pom.xml** introduces the correct versions of dependencies needed 
 
 ### Create the Main application class
 
-Edit the **App.java** file in the **src/main/java/com/microsoft/azure/samples** directory to create a simple HTTP server:
+Edit the **App.java** file in the **src/main/java/com/microsoft/azure/samples** directory to use the following code, which creates a simple HTTP server:
 
 ```java
 package com.microsoft.azure.samples;
@@ -154,32 +147,26 @@ public class App {
 
 ## Run your application locally
 
-You can run your application by following these steps:
+You can run your application by using the following steps:
 
-### Compile and package the Java project
+1. Compile and package the Java project. Use the following command to compile the code:
 
-Use the following command to compile the code:
+   ```bash
+   mvn clean package
+   ```
 
-```bash
-mvn clean package
-```
+1. Run the application. Use the following command to compile the code:
 
-### Run the application
+   ```bash
+   java -jar target/hello-java-azure-1.0-SNAPSHOT.jar
+   ```
 
-Use the following command to compile the code:
+   You should see the following output, which indicates that the server started:
 
-```bash
-java -jar target/hello-java-azure-1.0-SNAPSHOT.jar
-```
+   ```output
+   Server started on http://localhost:8080/
+   ```
 
-You should see the output indicating that the server has started:
+1. Test your application. Open your web browser and go to: `http://localhost:8080/`.
 
-```output
-Server started on http://localhost:8080/
-```
-
-### Test your application
-
-Open your web browser and go to: `http://localhost:8080/`.
-
-You should see the message: `Hello, World!` on your screen.
+   You should see the message: `Hello, World!` on your screen.

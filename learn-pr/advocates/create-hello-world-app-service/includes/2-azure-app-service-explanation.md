@@ -2,19 +2,19 @@ In this unit, we take a dive into Azure App Service and how it works when deploy
 
 ## What is Azure App Service?
 
-Azure App Service is a fully managed platform for building, deploying, and scaling web apps. It supports multiple programming languages and frameworks and allows developers to focus on coding while Azure manages the infrastructure and scaling automatically.
+Azure App Service is a fully managed platform for building, deploying, and scaling web apps. It supports multiple programming languages and frameworks and enables developers to focus on coding while Azure manages the infrastructure and scaling automatically.
 
 Azure App Service offers built-in integration with popular development tools, continuous integration, and deployment capabilities, making it easier to create web and mobile applications with minimal setup.
 
 ### Key features of Azure App Service
 
-1. **Multiple Language Support**: Azure App Service supports a wide variety of programming languages and frameworks, including ASP.NET, Java, Python, Node.js, PHP, and Ruby. This flexibility allows developers to choose the best tools for their projects.
+- **Multiple Language Support**: Azure App Service supports a wide variety of programming languages and frameworks, including ASP.NET, Java, Python, Node.js, PHP, and Ruby. This flexibility enables developers to choose the best tools for their projects.
 
-2. **Built-in DevOps**: Azure App Service offers seamless integration with CI/CD pipelines using GitHub, Bitbucket, Azure DevOps, and other popular services. This ensures continuous deployment and automated testing in your app's lifecycle.
+- **Built-in DevOps**: Azure App Service offers seamless integration with CI/CD pipelines using GitHub, Bitbucket, Azure DevOps, and other popular services. This support ensures continuous deployment and automated testing in your app's lifecycle.
 
-3. **Global Scaling**: Azure App Service allows developers to scale their applications globally with a few clicks. It offers automatic scaling based on demand, ensuring that your apps can handle traffic spikes without manual intervention.
+- **Global Scaling**: Azure App Service enables developers to scale their applications globally with a few clicks. It offers automatic scaling based on demand, ensuring that your apps can handle traffic spikes without manual intervention.
 
-4. **Security and Compliance**: With App Service, applications are automatically secured by TLS/SSL, providing secure connections. The platform also complies with various industry standards such as ISO, SOC, and PCI DSS, which are crucial for sensitive applications.
+- **Security and Compliance**: With App Service, applications are automatically secured by TLS/SSL, providing secure connections. The platform also complies with various industry standards such as ISO, SOC, and PCI DSS, which are crucial for sensitive applications.
 
 ### Parts of your deployment to App Service
 
@@ -24,7 +24,7 @@ When deploying a Java application to Azure App Service, there are three levels o
 
 - **App Service Plan**: The app service plan is the "bucket" where the application's compute resources - like memory, CPU, and scale options - are defined. It determines the pricing tier and performance capacity for your app. Think of it as setting up the infrastructure that runs your app.
 
-- **Web App**: The web app is the environment where your Java application runs. It connects the app's code to the compute resources specified in the app service plan. When you deploy a Java application, you are essentially putting it into this "bucket" so that it can be accessed online.
+- **Web App**: The web app is the environment where your Java application runs. It connects the app's code to the compute resources specified in the app service plan. When you deploy a Java application, you're essentially putting it into this "bucket" so that it can be accessed online.
 
 :::image type="content" source="../media/azure-structure-chart.png" alt-text="Diagram of the Azure deployment hierarchy with resources inside a resource group, which is inside a subscription, which is inside an account.":::
 

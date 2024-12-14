@@ -1,4 +1,4 @@
-Web applications are used daily from tasks including ordering a product online, tracking your flight status, and even traffic monitoring. In this module, you deploy your own simple Java web application to Azure App Service.
+Web applications are used daily for tasks that include ordering a product online, tracking flight status, and traffic monitoring. In this module, you deploy your own simple Java web application to Azure App Service.
 
 ## Learning objectives
 

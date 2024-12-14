@@ -18,21 +18,21 @@ quiz:
       choices:
         - content: "A platform for building, deploying, and scaling web apps."
           isCorrect: true
-          explanation: "Correct! Azure App Service allows developers to build, deploy, and scale web apps and APIs easily."
+          explanation: "Correct! Azure App Service enables developers to build, deploy, and scale web apps and APIs easily."
         - content: "A database management tool."
           isCorrect: false
           explanation: "Azure App Service is used to build, deploy, and scale web applications, not to manage databases."
         - content: "A cloud storage service."
           isCorrect: false
           explanation: "Azure App Service is primarily for web app development and deployment, not cloud storage."
-    - content: Which programming languages are supported by Azure App Service?
+    - content: Which programming languages does Azure App Service support?
       choices:
         - content: "Only Java and .NET"
           isCorrect: false
           explanation: "Azure App Service supports many more languages including Python, Node.js, PHP, and Ruby."
         - content: "Java, Python, Node.js, .NET, and PHP"
           isCorrect: true
-          explanation: "Correct! Azure App Service supports a variety of programming languages, making it flexible for different development environments."
+          explanation: "Correct! Azure App Service supports various programming languages, making it flexible for different development environments."
         - content: "Only .NET and Python"
           isCorrect: false
           explanation: "Azure App Service supports a wider range of languages, including Java and PHP."
@@ -46,7 +46,7 @@ quiz:
           explanation: "Correct! The `mvn archetype:generate` command is used to create a Maven project for a Java web application."
         - content: "mvn build:java"
           isCorrect: false
-          explanation: "This is not a valid command to create a Maven project for Java web apps."
+          explanation: "This command isn't valid for creating a Maven project for Java web apps."
     - content: What is the correct way to deploy your Java web app to Azure App Service?
       choices:
         - content: "az webapp deploy"
