@@ -23,7 +23,7 @@ Learn more about performance benchmark testing done in Azure NetApp Files:
 - [Azure NetApp Files large volume performance benchmarks for Linux](/azure/azure-netapp-files/performance-large-volumes-linux)
 - [Performance impact of Kerberos on Azure NetApp Files NFSv4.1 volumes](/azure/azure-netapp-files/performance-impact-kerberos)
 - [Oracle database performance on Azure NetApp Files single volumes](/azure/azure-netapp-files/performance-oracle-single-volumes)
-- [Oracle database performance on Azure NetApp Files multiple volumes](/azure-netapp-files/performance-oracle-multiple-volumes)
+- [Oracle database performance on Azure NetApp Files multiple volumes](/azure/azure-netapp-files/performance-oracle-multiple-volumes)
 - [Azure NetApp Files datastore performance benchmarks for Azure VMware Solution](/azure/azure-netapp-files/performance-benchmarks-azure-vmware-solution)
 - [Azure VMware Solution datastore performance considerations for Azure NetApp Files](/azure/azure-netapp-files/performance-azure-vmware-solution-datastore)
 - [Performance considerations for Azure NetApp Files with cool access](/azure/azure-netapp-files/performance-considerations-cool-access)
