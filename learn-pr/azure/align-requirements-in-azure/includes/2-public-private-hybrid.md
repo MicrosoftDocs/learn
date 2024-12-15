@@ -1,4 +1,4 @@
-Imagine that you work at a healthcare company. You have legacy systems, line-of-business systems, and future plans for new systems. You've heard there are advantages to using cloud computing. How do you choose between public, private, or hybrid cloud environments to support your needs?
+Imagine that you work at a healthcare company. You have legacy systems, line-of-business systems, and future plans for new systems. You heard there are advantages to using cloud computing. How do you choose between public, private, or hybrid cloud environments to support your needs?
 
 ## What's cloud computing?
 
@@ -16,7 +16,7 @@ There are three deployment models for cloud computing: public cloud, private clo
 
 ## Public cloud
 
-Public clouds are the most common way to deploy cloud computing. Services are offered over the public internet and available to anyone who wants to purchase them. The cloud resources, such as servers and storage, are owned and operated by a third-party cloud service provider and delivered over the internet. Services might be free or sold on demand, allowing customers to pay only per usage for the CPU cycles, storage, or bandwidth they consume. Microsoft Azure is an example of a public cloud.
+Public clouds are the most common way to deploy cloud computing. In this model, services are offered over the public internet and available to anyone who wants to purchase them. A third-party cloud service provider owns and operates the cloud resources, such as servers and storage, and delivers them over the internet. Services might be free or sold on demand, allowing customers to pay only per usage for the CPU cycles, storage, or bandwidth they consume. Microsoft Azure is an example of a public cloud.
 
 Let's imagine your healthcare company needs an enrollment website. The site needs to scale and be responsive during peak enrollment at various times during the year. Your customers access the site from global locations. You can use the public cloud to automatically scale up to meet demand at peak enrollment. When site traffic is low, your site can scale down to save costs. Your site is responsive at peak demand, and you only pay for more resources when needed. You can also deploy your website in multiple geographic regions to increase reliability and responsiveness.
 
@@ -36,9 +36,9 @@ Examples of why you'd use public cloud:
 
 ## Private cloud
 
-A private cloud consists of computing resources used exclusively by users from one business or organization. It can be physically located at your organization’s on-site datacenter, or it can be hosted by a third-party service provider. The term private cloud shouldn't be considered a rebranding of traditional on-premises datacenters. A private cloud uses on-premises infrastructure and services to provide similar benefits of the public cloud. It uses an abstraction platform to provide *cloud-like* services such as Kubernetes clusters, or a complete cloud environment like Azure Stack. The organization is responsible for purchasing, configuring, and maintaining the hardware. Communication between the systems is usually on the network infrastructure that the business owns and maintains; for example, a private internal network or a dedicated fiber-optic connection between buildings.
+A private cloud consists of computing resources used exclusively by users from one business or organization. It can be physically located at your organization’s on-site datacenter, or a third-party service provider can host it. The term private cloud shouldn't be considered a new name for traditional on-premises datacenters. A private cloud uses on-premises infrastructure and services to provide benefits similar to the public cloud. It uses an abstraction platform to provide *cloud-like* services such as Kubernetes clusters, or a complete cloud environment like Azure Stack. The organization is responsible for purchasing, configuring, and maintaining the hardware. Communication between the systems is usually on the network infrastructure that the business owns and maintains; for example, a private internal network or a dedicated fiber-optic connection between buildings.
 
-Imagine you work at a healthcare company and you have an application that's in use at one of your datacenters. The operating environment can't be replicated in the public cloud. You have a new requirement to access data at another one of your datacenters. The database containing the data needs to remain at the other site because of regulatory compliance. This scenario is a private cloud. You have two datacenters your organization owns. You could use a public-cloud VPN over the internet to connect the datacenters. However, the scenario would be considered a private cloud, since the solution is private to the organization.
+Imagine you work at a healthcare company and you have an application that's in use at one of your datacenters. The operating environment can't be replicated in the public cloud. You have a new requirement to access data at another one of your datacenters. The database containing the data needs to remain at the other site because of regulatory compliance. This scenario describes a private cloud. You have two datacenters your organization owns. You could use a public-cloud VPN over the internet to connect the datacenters. However, the scenario would be considered a private cloud, since the solution is private to the organization.
 
 ### Why private cloud?
 
@@ -49,11 +49,11 @@ Examples of why you'd use private cloud:
 - **Pre-existing environment**: An existing operating environment that can't be replicated in the public cloud. A large investment in hardware and employees with solution expertise. A large organization can choose to commoditize their computing resources.
 - **Legacy applications**: Business-critical legacy applications that can't easily be physically relocated.
 - **Data sovereignty and security**: Political borders and legal requirements might dictate where data can physically exist.
-- **Regulatory compliance / certification**:  PCI or HIPAA compliance. Certified on-premises datacenter.
+- **Regulatory compliance / certification**:  A certified on-premises datacenter that already meets payment card industry (PCI) or HIPAA compliance.
 
 ## Hybrid cloud
 
-A hybrid cloud is a computing environment that combines a public cloud and a private cloud by allowing data and applications to be shared between them. When computing and processing demand fluctuates, hybrid-cloud computing gives businesses the ability to seamlessly scale their on-premises infrastructure up to the public cloud to handle any overflow without giving third-party datacenters access to the entirety of their data. Organizations gain the flexibility and computing power of the public cloud for basic and nonsensitive computing tasks, while keeping business-critical applications and data on-premises safely behind a company firewall.
+A hybrid cloud is a computing environment that combines a public cloud and a private cloud by allowing data and applications to be shared between them. Hybrid-cloud computing gives businesses the ability to seamlessly scale their on-premises infrastructure up to the public cloud when computing and processing demand fluctuates. They can handle any overflow demand without giving third-party datacenters access to the entirety of their data. Organizations gain the flexibility and computing power of the public cloud for basic and nonsensitive computing tasks, while they keep business-critical applications and data on-premises, safely behind a company firewall.
 
 Using a hybrid cloud helps eliminate the need to make up-front capital expenditures to handle short-term spikes in demand. It also has the flexibility to manage which resources are local versus resources in the cloud. Companies pay only for resources they temporarily use instead of having to purchase, program, and maintain extra resources and equipment that could remain idle over long periods of time. Integration is generally through a secure VPN between cloud providers like Azure and on-premises datacenters.
 
