@@ -2,7 +2,7 @@ Microsoft Defender for Identity (formerly Azure Advanced Threat Protection, also
 
  -  Monitor users, entity behavior, and activities with learning-based analytics
  -  Protect user identities and credentials stored in Active Directory
- -  Identify and investigate suspicious user activities and advanced attacks throughout the kill chain
+ -  Identify and investigate suspicious user activities and advanced attacks throughout the kill-chain
  -  Provide clear incident information on a simple timeline for fast triage
 
 ### Process flow for Defender for Identity
