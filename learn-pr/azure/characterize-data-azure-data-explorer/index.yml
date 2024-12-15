@@ -7,8 +7,8 @@ metadata:
   title: Characterize an unfamiliar dataset with Azure Data Explorer
   description: "Use Azure Data Explorer to characterize an unfamiliar dataset. Explore the schema of the data, run queries to examine the range of the data, and share these insights with others."
   ms.date: 04/02/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: module
   ms.service: azure-data-explorer
 title: Characterize an unfamiliar dataset with Azure Data Explorer

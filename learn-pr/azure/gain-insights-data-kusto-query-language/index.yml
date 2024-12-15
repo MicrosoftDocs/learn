@@ -5,8 +5,8 @@ metadata:
   title: Gain insights from your data by using Kusto Query Language
   description: "Learn how to write advanced queries in Kusto Query Language (KQL) by using the aggregation functions, the render operator, and variables."
   ms.date: 11/14/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: module
   ms.service: kusto
 title: Gain insights from your data by using Kusto Query Language
