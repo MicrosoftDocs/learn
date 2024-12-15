@@ -7,8 +7,8 @@ metadata:
   title: Introduction to Azure Data Explorer          
   description: "Evaluate whether Azure Data Explorer is appropriate to process and analyze your big data."                 # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 08/21/2023
-  author: YaelSchuster      
-  ms.author: yaschust           
+  author: shsagir      
+  ms.author: shsagir           
   ms.topic: module-intro-to-product
   ms.service: azure-data-explorer
 title: Introduction to Azure Data Explorer
