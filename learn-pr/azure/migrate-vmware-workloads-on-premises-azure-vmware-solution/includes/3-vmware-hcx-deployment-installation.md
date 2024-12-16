@@ -36,7 +36,7 @@ Before you deploy VMware HCX Connector in the on-premises vCenter Server, downlo
 
 1. The URLs and user credentials for the Azure VMware Solution vCenter and NSX-T Manager appears. Use the copy feature to paste the credential information into the web browser on the jump host VM.
 
-     :::image type="content" source="../media/3-display-user-credentials.png" alt-text="Screenshot of where to find the vCenter and NSX sign-in information in the Azure portal.":::
+     :::image type="content" source="../media/3-display-vmware-credentials.png" alt-text="Screenshot of where to find the vCenter and NSX sign-in information in the Azure portal."lightbox="../media/3-display-vmware-credentials.png":::
 
 1. Open a browser window within the jump host behind Azure Bastion. Sign in to the Azure VMware Solution VMware HCX Manager on `https://x.x.x.9` over port 443. Replace the x's with the CIDR address block used to configure with Azure VMware Solution.
 
