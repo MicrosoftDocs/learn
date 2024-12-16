@@ -7,8 +7,8 @@ metadata:
   title: Introduction
   description: "In this module, you'll learn about what KQL does, how it works, and when to use it. You'll explore basic query types, learn about some of the services that use KQL, and run simple queries in these service environments."
   ms.date: 11/01/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 1
 content: |

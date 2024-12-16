@@ -6,8 +6,8 @@ metadata:
   title: Detect, analyze, and recognize faces
   description: Detect, analyze, and recognize faces
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 03/11/2024
+  ms.author: berryivor
+  ms.date: 12/13/2024
   ms.service: azure
   ms.topic: module
   ms.collection:
