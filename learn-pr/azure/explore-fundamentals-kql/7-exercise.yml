@@ -7,8 +7,8 @@ metadata:
   title: "Exercise: Different types of KQL queries"
   description: "Practice using the different types of sample queries shown in the previous unit."
   ms.date: 11/01/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 4
 content: |
