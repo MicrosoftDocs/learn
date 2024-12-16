@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Select columns to return by using the project operator
   description: Exercise - Select columns to return by using the project operator.
   ms.date: 10/16/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 4 
 content: |
