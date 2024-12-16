@@ -1,6 +1,50 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/1-introduction.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/2-optimize-lakehouse-table.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root":"/learn-pr/wwl/optimize-performance-microsoft-fabric/3-optimize-pipeline.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/4-optimize-spark-performance.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/5-optimize-query-performance.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/6-exercise-configure-alerts-in-fabric.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/8-summary.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/implement-and-manage-an-analytics-solution/index.yml",
+      "redirect_url": "/training/paths/manage-microsoft-fabric-environment/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/monitor-optimize-fabric-analytics-solution/index.yml",
+      "redirect_url": "/training/paths/manage-microsoft-fabric-environment/"
+    },
+    {
+      "source_path_from_root":"/learn-pr/wwl/optimize-performance-microsoft-fabric/index.yml",
+      "redirect_url": "/training/paths/manage-microsoft-fabric-environment/"
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/2-monitor-data-ingestion.yml",
       "redirect_url": "/training/modules/monitor-fabric-items/"
     },
@@ -35950,6 +35994,51 @@
     {
       "source_path": "learn-pr/wwl-azure/configure-subscriptions/10-summary-resources.md",
       "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/index.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/05-track-data-lineage.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/04-search-purview.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/01-introduction.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/07-knowledge-check.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/02-catalog-azure-synapse.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/03-configure-purview-integration.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/08-summary.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/06-exercise-synapse-purview.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
       "redirect_document_id": false
     }
   ]

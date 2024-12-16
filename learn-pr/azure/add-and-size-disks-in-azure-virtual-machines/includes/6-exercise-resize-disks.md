@@ -4,7 +4,7 @@ Here, you practice the process you learned about in the previous units.
 
 ## Resize the data disk
 
-To resize a disk, you need the ID or name of the disk. In this case, you already know the name, **uploadDataDisk1**. But in case you didn't, or someone else created the disk, you can run `az disk list` to find the name.
+To resize a disk, you need the disk's ID or name. In this case, you already know the name—**uploadDataDisk1*—but in case you didn't, or someone else created the disk, you can run `az disk list` to find the name.
 
 1. Run the `az disk list` command to print the list of the managed disks in the resource group. This list might include other disks if you have multiple VMs in the same resource group.
 
@@ -41,7 +41,7 @@ To resize a disk, you need the ID or name of the disk. In this case, you already
     az vm start --name support-web-vm01
     ```
 
-    But we aren't finished yet. The operating system on the VM can't use the extra space yet. We handle this situation in the next section.
+    We aren't finished yet. The operating system on the VM can't use the extra space yet. We handle this situation in the next section.
 
 ## Expand the disk partition
 
@@ -73,7 +73,7 @@ The final step is to tell the OS about the available space. Just like the partit
     └─sda1    8:1    0 29.9G  0 part /
     ```
 
-1. Similar to what you did previously to initialize your disk, run the following `az vm extension set` command to tell the OS on the VM about the newly available space by executing a premade Bash script we create to help you along.
+1. Similar to what you did previously to initialize your disk, run the following `az vm extension set` command to tell the OS on the VM about the newly available space by executing a premade Bash script we created to help you along.
 
     ```azurecli
     az vm extension set \
