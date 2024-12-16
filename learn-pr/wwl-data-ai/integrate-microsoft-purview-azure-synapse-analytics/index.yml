@@ -39,7 +39,6 @@ units:
 - learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.introduction
 - learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.scan-azure-data-lake-gen2-storage-accounts
 - learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.scan-workspaces
-- learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.explore-assets-microsoft-purview
 - learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.understand-data-lineage-pipelines
 - learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.knowledge-check
 - learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.summary
