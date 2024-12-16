@@ -8,8 +8,8 @@ metadata:
   title: "Exercise: Create a dashboard parameter"
   description: "Create dashboard parameters in Azure Data Explorer web UI."
   ms.date: 01/19/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 2
 content: |

@@ -4,21 +4,21 @@ Like IaaS, PaaS includes infrastructure such as servers, storage, and networking
 
 ### Common scenarios
 
-Let's imagine your healthcare company needs a website to describe a product. Your developers want to use PHP. Using PaaS, your developers have the option to *create a web app*. The infrastructure details such as creating a virtual machine, installing a web server, and installing middleware are abstracted away. You don't need to care on what operating system it runs or what physical hardware is required. Your developers deploy the website files to the cloud, and your website is available on the internet.
+Let's imagine your healthcare company needs a website to describe a product. Your developers want to use PHP. PaaS gives your developers the option to *create a web app*. The infrastructure details such as creating a virtual machine, installing a web server, and installing middleware are abstracted away. You don't need to care what operating system it runs on or what physical hardware is required. Your developers deploy the website files to the cloud, and your website is available on the internet.
 
-Let's imagine another scenario. Your company needs a SQL database to support data analysts for a special project. You don't have infrastructure to accommodate the request. You can quickly provision a SQL Server in the cloud that meets the project's needs. The data analysts can connect to the server. The SQL Server database is provided as a service. Therefore, you don't worry about updates, security patches, or optimizing physical storage for reads and writes.
+Let's imagine another scenario. Your company needs an SQL database to support data analysts for a special project. You don't have infrastructure to accommodate the request. You can quickly provision a SQL Server in the cloud that meets the project's needs. The data analysts can connect to the server. The SQL Server database is provided as a service. Therefore, you don't worry about updates, security patches, or optimizing physical storage for reads and writes.
 
 Some other common scenarios include:
 
 **Development framework**: PaaS provides a framework upon which developers can build to develop or customize cloud-based applications. Similar to the way you create an Excel macro, PaaS lets developers create applications using built-in software components. Cloud features such as scalability, high availability, and multitenant capability are included, reducing the amount of coding that developers need to do.
 
-**Analytics or business intelligence**: Analysis tools provided as a service allows you to analyze and mine data. Organizations can find insights and patterns to predict outcomes to improve forecasting, product-design decisions, investment returns, and other business decisions.
+**Analytics or business intelligence**: Analysis tools provided as a service give you the opportunity to analyze and mine data. Organizations can find insights and patterns to predict outcomes to improve forecasting, product-design decisions, investment returns, and other business decisions.
 
 ### Advantages
 
 PaaS has similar advantages as IaaS. However, PaaS has extra features, including middleware, development tools, and other business tools, that provide more advantages:
 
-**Reduced development time**: PaaS development tools can reduce development time for new applications. Developers can use pre-coded application components built into the platform, such as workflow, directory services, security features, and search. PaaS components can give your development team new capabilities without you needing to add staff with the required skills.
+**Reduced development time**: PaaS development tools can reduce development time for new applications. Developers can use precoded application components built into the platform, such as workflow, directory services, security features, and search. PaaS components can give your development team new capabilities without you needing to add staff with the required skills.
 
 **Develop for multiple platforms**: Some service providers give you development options for multiple platforms, such as desktop, mobile devices, and browsers, making cross-platform apps quicker and easier to develop.
 

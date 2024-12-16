@@ -11,7 +11,14 @@ The main takeaways from this module are:
 
 - Network security groups can be applied to block or allow access between virtual networks when configuring virtual network peering.
 
-## Learn more
+## Learn more with Copilot
+Copilot can assist you in designing Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot.
+
+- What is Azure virtual network peering and what are the advantages of this feature?
+
+- What are some of the configurations settings for Azure virtual network peering?
+
+## Learn more with documentation
 
 - [Azure Virtual Network peering](/azure/virtual-network/virtual-network-peering-overview). This article is your starting point for learning about virtual network peering. 
 

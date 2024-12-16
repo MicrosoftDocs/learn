@@ -8,8 +8,8 @@ metadata:
   title: "Introduction to Azure Data Explorer"
   description: "Evaluate whether Azure Data Explorer is appropriate to process and analyze your big data."
   ms.date: 08/21/2023
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 3
 content: |
