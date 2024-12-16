@@ -8,8 +8,8 @@ metadata:
   title: Dashboard parameters
   description: "Learn how to create dashboard parameters, which act as filters on the visuals."
   ms.date: 01/19/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 3
 content: |
