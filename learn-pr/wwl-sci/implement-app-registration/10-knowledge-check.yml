@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "Follow the principle of least user access to ensure that your app only requests permissions it actually needs."
       isCorrect: true
-      explanation: "- Provide appropriate names and descriptions for any permissions you expose as part of your app. This helps users and admins know what they're agreeing to when they attempt to use your app's APIs."
+      explanation: "Correct. Provide appropriate names and descriptions for any permissions you expose as part of your app. This helps users and admins know what they're agreeing to when they attempt to use your app's APIs."
     - content: "Test your app in each tenant to ensure functionality."
       isCorrect: false
       explanation: "Incorrect. You should test your app in a tenant that has configured Conditional Access policies. Testing in every tenant isn't a best practice."
