@@ -35956,6 +35956,11 @@
       "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/index.md",
       "redirect_url": "/training/modules/intro-to-microsoft-purview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/05-track-data-lineage.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
     }
   ]
 }
