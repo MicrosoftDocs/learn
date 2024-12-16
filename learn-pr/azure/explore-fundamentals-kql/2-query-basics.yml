@@ -7,8 +7,8 @@ metadata:
   title: Query language basics
   description: "Explore the basics of a query language, KQL specifically, and begin to learn how, where, and when you might want to use it."
   ms.date: 11/01/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 1
 content: |

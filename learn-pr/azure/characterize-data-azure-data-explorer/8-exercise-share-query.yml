@@ -8,8 +8,8 @@ metadata:
   title: exercise
   description: "Exercise: share Azure Data Explorer queries with others."
   ms.date: 04/02/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 7
 content: |

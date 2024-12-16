@@ -2,11 +2,9 @@
 uid: learn.wwl.configure-vnet-peering.determine-uses
 title: Determine Azure Virtual Network peering uses
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Determine Azure Virtual Network peering uses
   description: "Determine usage scenarios for Azure Virtual Network peering."
-  ms.date: 04/09/2024
+  ms.date: 12/13/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
