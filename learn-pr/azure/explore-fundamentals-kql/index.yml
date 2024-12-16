@@ -6,8 +6,8 @@ metadata:
   title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
   description: "Learn about the basics of Kusto Query Language (KQL), and the various Microsoft products that use it."
   ms.date: 11/01/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: module-standard-task-based
   ms.service: azure
 title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)

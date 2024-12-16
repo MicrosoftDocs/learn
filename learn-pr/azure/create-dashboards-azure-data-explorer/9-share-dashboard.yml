@@ -8,8 +8,8 @@ metadata:
   title: Share dashboards
   description: "Share Azure Data Explorer dashboards with a colleague."
   ms.date: 01/19/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 2
 content: |
