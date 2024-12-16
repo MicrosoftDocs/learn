@@ -1,6 +1,38 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/1-introduction.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/2-optimize-lakehouse-table.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root":"/learn-pr/wwl/optimize-performance-microsoft-fabric/3-optimize-pipeline.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/4-optimize-spark-performance.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/5-optimize-query-performance.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/6-exercise-configure-alerts-in-fabric.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/8-summary.yml",
+      "redirect_url": "/training/modules/monitor-fabric-items/"
+    },
+    {
       "source_path_from_root": "/learn-pr/paths/implement-and-manage-an-analytics-solution/index.yml",
       "redirect_url": "/training/paths/manage-microsoft-fabric-environment/"
     },
@@ -9,7 +41,7 @@
       "redirect_url": "/training/paths/manage-microsoft-fabric-environment/"
     },
     {
-      "source_path_from_root":"learn-pr/wwl/optimize-performance-microsoft-fabric/index.yml",
+      "source_path_from_root":"/learn-pr/wwl/optimize-performance-microsoft-fabric/index.yml",
       "redirect_url": "/training/paths/manage-microsoft-fabric-environment/"
     },
     {
