@@ -7,7 +7,7 @@ metadata:
   author: angierudduck
   ms.author: anrudduc
   ms.topic: learning-path
-title: Manage and optimize a Microsoft Fabric environment
+title: Manage a Microsoft Fabric environment
 prerequisites: |
   Before starting this learning path, you should have experience with Microsoft Fabric or Power BI. You should also have a basic understanding of data engineering and management concepts.
 summary: |
