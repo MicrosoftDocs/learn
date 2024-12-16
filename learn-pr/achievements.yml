@@ -4342,3 +4342,8 @@ achievements:
   title: Configure subscriptions
   summary: Learn how to configure Azure subscriptions, including how to obtain a subscription, implement cost management, and apply Azure resource tags.
   iconUrl: /training/achievements/subscriptions-configure.svg
+- uid: learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.badge
+  type: badge
+  title: Integrate Microsoft Purview and Azure Synapse Analytics
+  summary: Learn how to integrate Microsoft Purview with Azure Synapse Analytics to improve data discoverability and lineage tracking.
+  iconUrl: /training/achievements/integrate-microsoft-purview-azure-synapse-analytics.svg

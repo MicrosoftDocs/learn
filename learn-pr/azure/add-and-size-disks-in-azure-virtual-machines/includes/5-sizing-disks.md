@@ -1,11 +1,11 @@
-When you create the VM, it chooses a size for the OS disk. The specific size is based on the image you select. On Linux, it's often around 30 GB, and on Windows about 127 GB.
+When you create the VM, it chooses a size for the OS disk. The specific size is based on the image you select. On Linux, it's often around 30 GB, and on Windows it's about 127 GB.
 
-For more storage space, you can add data disks, but you might also want to expand an existing disk. Perhaps, a legacy application can't split its data across drives, or you're migrating a physical PC's drive to Azure and need a larger OS drive.
+For more storage space, you can add data disks, but you might also want to expand an existing disk. Perhaps a legacy application can't split its data across drives, or you're migrating a physical PC's drive to Azure and need a larger OS drive.
 
 > [!NOTE]
 > Shrinking managed disks isn't supported. You can only resize a disk to a larger size.
 
-Depending on how large the increase is, increasing the disk's size could also change the disk's performance tier (for example, from P10 to P20). Keep this fact in mind; increasing the disk's size can be beneficial for performance upgrades, but also costs more as you move up the premium tiers.
+Depending on how large the increase is, increasing the disk's size could also change the disk's performance tier (for example, from P10 to P20). Keep this fact in mind: increasing the disk's size can be beneficial for performance upgrades, but also costs more as you move up the premium tiers.
 
 ## VM size versus disk size
 
@@ -33,7 +33,7 @@ az vm deallocate \
   --name <vm-name>
 ```
 
-Next, to resize a disk, you use `az disk update`, passing the disk name, resource group name, and newly requested size. When you expand a managed disk, the specified size is mapped to the nearest managed disk size.
+Next, to resize a disk, use `az disk update`, passing the disk name, resource group name, and newly requested size. When you expand a managed disk, the specified size is mapped to the nearest managed disk size.
 
 ```azurecli
 az disk update \
@@ -66,7 +66,7 @@ You can also expand a disk through the Azure portal:
 
     ![Screenshot showing the VHD edit screen with the new size field highlighted.](../media/5-resize-disk.png)
 
-1. Select **Resize** to save the changes.
+1. Select **Save** to save the changes.
 
 1. Restart the VM.
 
