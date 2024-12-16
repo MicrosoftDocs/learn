@@ -2,13 +2,17 @@
 uid: learn.wwl.machine-learning-azure-databricks.evaluate-model
 title: Evaluate a machine learning model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Evaluate a machine learning model
-  description: "Evaluate a machine learning model"
-  ms.date: 03/22/2023
+  description: Evaluate a machine learning model
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.author: madiepev
+  ms.date: 08/26/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 10
 content: |
   [!include[](includes/6-evaluate-model.md)]
+

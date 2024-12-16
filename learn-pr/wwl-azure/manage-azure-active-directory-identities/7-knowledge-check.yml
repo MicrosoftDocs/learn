@@ -4,36 +4,37 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/10/2023
+  ms.date: 04/18/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "To connect to Azure AD using the Windows PowerShell command-line interface, what command should you run?"
+  - content: "What is the purpose of using the Microsoft Graph PowerShell SDK in managing Microsoft Entra objects?"
     choices:
-    - content: "Connect-MsolService"
+    - content: "To provide a graphical user interface for managing Microsoft Entra objects"
+      isCorrect: false
+      explanation: "Incorrect. The SDK is used for automation and scripting, not for providing a GUI."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
-      explanation: "Correct. This command connects with an authenticated account using Active Directory cmdlet requests."
-    - content: "Get-AzureADUser -ObjectId \"YourUserName@tenant.com\""
+      explanation: "Correct. The SDK allows for comprehensive and efficient automation of management tasks across Microsoft 365 services."
+    - content: "To enhance the security of Microsoft Entra by enforcing multifactor authentication"
       isCorrect: false
-      explanation: "Incorrect. This command returns a specific user. Try again."
-    - content: "Set-AzureADUser -ObjectId YourUserName@example.com -Displayname $user.Displayname"
-      isCorrect: false
-      explanation: "Incorrect. This command updates a user's property with the specific attributes. Try again."
-  - content: "What are the two types of memberships reserved for a person in a cloud-based group?"
+      explanation: "Incorrect. While security is important, the SDK's primary purpose is not to enforce MFA but to automate management tasks."
+  - content: "What is the primary purpose of creating Guest user accounts in Microsoft Entra ID?"
     choices:
-    - content: "Security or Dynamic"
+    - content: "To manage internal employee access to Entra resources"
       isCorrect: false
-      explanation: "Incorrect. Security is a group type in the Azure AD, but not a membership type. Try again."
-    - content: "Assigned or Dynamic"
+      explanation: "Incorrect. Guest user accounts are for external users, not internal employees."
+    - content: "To provide temporary administrative access to Entra services"
+      isCorrect: false
+      explanation: "Incorrect. Guest user accounts are typically for collaboration, not temporary administrative tasks."
+    - content: "To assign permissions to users from another Entra tenant or a Microsoft account"
       isCorrect: true
-      explanation: "Correct. Members with an Assigned membership are manually added or removed. Members with a Dynamic membership are based on a query using Azure AD objects."
-    - content: "Assigned or Distribution"
-      isCorrect: false
-      explanation: "Incorrect. Distribution is a group type in Azure AD, but not a membership type. Try again."
+      explanation: "Correct. Guest users are created to collaborate with external users by assigning them permissions."

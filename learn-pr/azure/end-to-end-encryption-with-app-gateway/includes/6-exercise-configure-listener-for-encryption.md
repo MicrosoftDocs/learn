@@ -1,19 +1,19 @@
-Now that you've configured the certificates for Azure Application Gateway and the backend pool, you can create a listener to handle incoming requests. The listener will wait for messages, decrypt them by using the private key, then route these messages to the backend pool.
+Now that you've configured the certificates for Azure Application Gateway and the backend pool, you can create a listener to handle incoming requests. The listener waits for messages, decrypts them by using the private key, then routes these messages to the backend pool.
 
-In this unit, you'll set up the listener with port 443 and with the SSL certificate that you created in the first exercise. The following image highlights the elements you'll set up in this exercise.
+In this unit, you'll set up the listener with port 443 and with the SSL certificate that you created in the first exercise. The following image highlights the elements you set up in this exercise.
 
 ![Diagram that highlights the elements (frontend port, SSL certificate for Application Gateway, listener, and rule) created in this exercise.](../media/6-exercise-elements.svg)
 
 ## Configure the listener
 
-1. Run the following command to create a new frontend port (443) for the gateway.
+1. Run the following command to create a new frontend port (443) for the gateway:
 
     ```azurecli
     az network application-gateway frontend-port create \
       --resource-group $rgName \
       --gateway-name gw-shipping \
       --name https-port \
-      --port 443
+      --port 8443
     ```
 
 1. Upload the SSL certificate for Application Gateway. The setup script generated this certificate in the previous exercise. The certificate is stored in the *appgateway.pfx* file in the *server-config* folder.
@@ -50,7 +50,8 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
         --address-pool ap-backend \
         --http-listener https-listener \
         --http-settings https-settings \
-        --rule-type Basic
+        --rule-type Basic \
+        --priority 102
     ```
 
 ## Test the application gateway
@@ -73,4 +74,4 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
 
 You've configured the listener to listen on port 443 and decrypt the data that's ready to be passed to the backend pool. The data is re-encrypted when it's transmitted from the gateway to a server in the backend pool. With this listener in place, you've set up end-to-end encryption for the shipping portal.
 
-You can delete these resources if needed.
+You can delete these resources if needed. The easiest way to delete all the resources you created in this module is to simply delete the resource group.

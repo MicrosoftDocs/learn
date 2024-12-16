@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.benefits-microsoft-endpoint-manager.5-increases-productivity
-title: Understand methods to increase user productivity
+title: Understand methods for increasing user productivity
 metadata:
-  title: Understand methods to increase user productivity
+  title: Understand methods for increasing user productivity
   description: Understand how Microsoft Intune increases your end users' productivity.
-  ms.date: 10/26/2020
+  ms.date: 11/08/2024
   author: Erikre
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/5-increases-productivity.md)]

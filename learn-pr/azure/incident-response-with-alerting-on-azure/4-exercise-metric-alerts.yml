@@ -1,16 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.incident-response-with-alerting-on-azure.4-exercise-metric-alerts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use metric alerts to alert on performance issues in your Azure environment
-  description: In this exercise, you'll use Cloud Shell to prepare the environment before using the Azure portal to set up the monitoring.
-  ms.date: 10/10/2019
-  author: cwatson-cat
-  ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: In this exercise, you use Cloud Shell to prepare the environment before using the Azure portal to set up the monitoring.
+  ms.date: 09/24/2024
+  author: AbbyMSFT
+  ms.author: abbyweisberg
+  ms.topic: unit
 title: Exercise - Use metric alerts to alert on performance issues in your Azure environment
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-metric-alerts.md)]
+

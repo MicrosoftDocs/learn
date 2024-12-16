@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-deploy-configure.2-plan-deploy-verify
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan, deploy, and verify Azure SQL
   description: Plan, deploy, and verify Azure SQL
-  ms.date: 03/15/2023
+  ms.date: 11/11/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Plan, deploy, and verify Azure SQL
 durationInMinutes: 10
 content: |
@@ -17,7 +18,7 @@ quiz:
     questions:
     - content: "Which of the following options have limits depending on your deployment option and service tier?"
       choices:
-      - content: "Size of tempdb"
+      - content: "Size of `tempdb`"
         isCorrect: false
         explanation: "This is correct, but do other options face resource limits?"
       - content: "Max log size"
@@ -28,7 +29,7 @@ quiz:
         explanation: "This is correct, but do other options face resource limits?"
       - content: "All of the above"
         isCorrect: true
-        explanation: "Resource limits include memory, max log size, size of tempdb, max concurrent workers, and backup retention."
+        explanation: "Resource limits include memory, max log size, size of `tempdb`, max concurrent workers, and backup retention."
     - content: "For verifying deployments, some new queries are specific to Azure SQL Database and Azure SQL Managed Instance. Which of the following queries are available only for Azure SQL platform as a service (PaaS)?"
       choices:
       - content: "SELECT * FROM sys.dm_os_schedulers"
@@ -43,3 +44,4 @@ quiz:
       - content: "SELECT * FROM sys.dm_os_process_memory"
         isCorrect: false
         explanation: "This isn't supported in Azure SQL Database."
+

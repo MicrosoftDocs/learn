@@ -21,7 +21,7 @@ Most demand for enterprise virtual desktop solutions comes from:
 
 The diagram above shows a typical architectural setup for Azure Virtual Desktop.
 
- -  The application endpoints are in the customer's on-premises network. ExpressRoute extends the on-premises network into the Azure cloud, and Azure AD Connect integrates the customer's Active Directory Domain Services (AD DS) with Azure Active Directory (Azure AD).
+ -  The application endpoints are in the customer's on-premises network. ExpressRoute extends the on-premises network into the Azure cloud, and Microsoft Entra Connect integrates the customer's Active Directory Domain Services (AD DS) with Microsoft Entra ID.
  -  The Azure Virtual Desktop control plane handles Web Access, Gateway, Broker, Diagnostics, and extensibility components like REST APIs.
- -  The customer manages AD DS and Azure AD, Azure subscriptions, virtual networks, Azure Files or Azure NetApp Files, and the Azure Virtual Desktop host pools and workspaces.
+ -  The customer manages AD DS and Microsoft Entra ID, Azure subscriptions, virtual networks, Azure Files or Azure NetApp Files, and the Azure Virtual Desktop host pools and workspaces.
  -  To increase capacity, the customer uses two Azure subscriptions in a hub-spoke architecture, and connects them via virtual network peering.

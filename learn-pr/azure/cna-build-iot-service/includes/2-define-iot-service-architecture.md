@@ -1,4 +1,4 @@
-﻿Adatum's management team wants to use IoT capabilities to extend the scope of services it delivers to its customers, including automated monitoring, alerting, and self-servicing of smart appliances. Your development team plans to provide the desired functionality by implementing a robust and feature-rich IoT pipeline in a manner that adheres to the foundational design principles of cloud-native applications. To accomplish this objective, you decide to explore the concepts of IoT services architecture.
+﻿Adatum's management team wants to use IoT capabilities to extend the scope of services it delivers to its customers, including automated monitoring, alerting, and the self-servicing of smart appliances. Your development team plans to provide the desired functionality by implementing a robust and feature-rich IoT pipeline in a manner that adheres to the foundational design principles of cloud-native applications. To accomplish this objective, you decide to explore the concepts of IoT services architecture.
 
 ## What is IoT services architecture?
 
@@ -11,14 +11,14 @@ In your intended design, smart fridges represent the device-side, while Azure Io
 
 :::image type="content" source="../media/2-iot-sample-architecture.png" alt-text="Sample high-level architecture of IoT services that includes Azure IoT Central and Cosmos DB.":::
 
-Another approach to the IoT services architecture divides it into Things, Insights, and Actions. Things represent IoT devices generating telemetry that, through Insights-based analysis, is turned into Actions, which deliver meaningful business benefits. As an example, consider a sensor of a smart refrigerator (the thing), which sends temperature data. That data serves as the basis of evaluation whether the refrigerator is fully operational (the insight). The insight, in turn, can trigger an alert that leads to an updated maintenance schedule (the action).
+Another approach to the IoT services architecture divides it into Things, Insights, and Actions. Things represent IoT devices generating telemetry that, through Insights-based analysis, is turned into Actions, which deliver meaningful business benefits. As an example, consider a sensor on a smart refrigerator (the thing), which sends temperature data. That data serves as the basis of evaluation whether the refrigerator is fully operational (the insight). The insight, in turn, can trigger an alert that leads to an updated maintenance schedule (the action).
 
 A more detailed consideration of Azure IoT architecture allows you to distinguish between its core and optional components. The core components include:
 
 - IoT devices that can securely register with the cloud and support the sending and receiving of data.
 - A cloud gateway service that serves the role of a hub, relays data from devices, and provides device management capabilities.
 - Stream processors that consume the device data, integrate with data processing components, and deliver data into storage.
-- A range of data stores that provide data persistence and aggregation. Storage can be part of the hot or warm path, or the cold path. The hot or warm path consists of the data required for near-real time reporting and visualization. The cold path consists of data that's stored for a longer term and used for batch processing.
+- A range of data stores that provide data persistence and aggregation. Storage can be part of the hot or warm path, or the cold path. The hot or warm path consists of the data required for near-real time reporting and visualization. The cold path consists of data stored for a longer term and used for batch processing.
 - Analytics services that retrieve insights from raw telemetry data and integrate with business processes and systems, such as Customer Relationship Management (CRM).
 - Programming and management interfaces that simplify the administration of IoT solutions.
 
@@ -45,13 +45,13 @@ The flow of device-generated data typically consists of several stages, includin
 
 Microsoft offers a comprehensive portfolio of services that deliver various types of IoT functionality, including:
 
-- Azure IoT Central. This service implements a wide range of IoT capabilities, including telemetry collection, processing, analytics, and secure device management. Azure IoT Central:
+- Azure IoT Central. This service implements a wide range of IoT capabilities, including telemetry collection, processing, analytics, and secure device management. Azure IoT Central includes the following functionality.
   - Helps you minimize custom development efforts and administrative overhead.
   - Lets you use cloud agility and scalability.
   - Supports built-in integration with several other Azure services.
   - Simplifies the development and implementation of custom IoT solutions and supports ad-hoc testing with built-in mock devices.
   - Integrates with Time Series Insights and can define rules for generating alerts. This integration might help you eliminate the need for dedicated stream processing services, such as Stream Analytics.
 - Azure IoT Hub. This service is optimized for reliable and secure bidirectional communications between IoT devices and cloud services. Just as Azure IoT Central, it incorporates Device Provisioning Service (DPS) as a helper service for in-bulk, zero-touch, just-in-time provisioning of IoT devices.
-- Azure Time Series Insights. This highly performing analytics, storage, and visualization service for time series data provides capabilities such as filtering and aggregation. Its visualization capabilities include support for overlays of different time series, dashboard comparisons, accessible tabular views, and heat maps. Azure Time Series also offers a JavaScript controls library that facilitates embedding time series charts into custom applications. It's optimized for scenarios that require aggregation over large sets of data.
+- Azure Time Series Insights. This highly performing analytics, storage, and visualization service for time series data provides capabilities such as filtering and aggregation. Its visualization capabilities include support for overlays of different time series, dashboard comparisons, accessible tabular views, and heat maps. Azure Time Series also offers a JavaScript controls library that facilitates embedding time series charts into custom applications. The service is optimized for scenarios that require aggregation over large sets of data.
 
-Azure also provides a large array of options for data analytics, event handling and storage that all integrate easily with IoT components.
+Azure also provides a large array of options for data analytics, event handling, and storage, that all integrate easily with IoT components.

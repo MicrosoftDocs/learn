@@ -2,13 +2,14 @@
 uid: learn.wwl.migrate-premises-postgresql-databases-azure-database-postgresql.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 10/14/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 1

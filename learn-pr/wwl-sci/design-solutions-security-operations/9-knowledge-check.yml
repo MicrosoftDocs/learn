@@ -2,17 +2,18 @@
 uid: learn.wwl.design-solutions-security-operations.knowledge-check
 title: Knowledge check - Design solutions for security operations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check - Design solutions for security operations
   description: "Knowledge check for module on the topic: design solutions for security operations."
-  ms.date: 3/14/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 09/26/2024
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
 durationInMinutes: 3
 ###########################################################################
 ###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
 ###  - Questions are complete sentences ending with a question mark
 ###  - No true/false questions
 ###  - 3 answers per question
@@ -57,7 +58,7 @@ quiz:
           isCorrect: false
           explanation: "Azure Monitor is focused on collecting data from Azure resources, logging systems, and other sources, not monitoring social media or web-based threats."
 
-    - content: "What is XDR in Microsoft 365 Defender?"
+    - content: "What is XDR in Microsoft Defender XDR?"
       choices:
         - content: "An AI-powered malware scanner that detects and removes malicious files."
           isCorrect: false
@@ -86,3 +87,4 @@ quiz:
         - content: "To map detections and responses to specific adversary tactics and techniques."
           isCorrect: true
           explanation: "The MITRE ATT&CK framework offers a common language used by security teams to describe attacker behavior, test security defenses, and understand whether the implemented security measures are effective at stopping or identifying attacks in real-time."
+

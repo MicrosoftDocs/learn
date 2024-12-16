@@ -1,0 +1,46 @@
+### YamlMime:LearningPath
+uid: learn.terraform-fundamentals
+metadata:
+  title: Fundamentals of Terraform on Azure
+  description: Learn the fundamentals of how Terraform enables you to manage infrastructure deployments on Azure.
+  brand: azure
+  ms.date: 04/18/2024
+  author: jaredfholgate
+  ms.author: jaredholgate
+  ms.topic: learning-path
+title: Fundamentals of Terraform on Azure
+summary: |
+  Terraform enables you to deploy Azure resources. Terraform uses a declarative syntax that you treat like application code.
+  Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your
+  deployments more consistent and repeatable.
+
+  Terraform provides a concise syntax and type safety for your Azure infrastructure declarations.
+
+  Take this learning path to get started with Terraform. In it, you'll:
+
+  * Decide whether Terraform is the right choice for your deployments to Azure.
+  * Understand Terraform's declarative syntax and the structure of a Terraform module.
+  * Apply Terraform features such as variables, outputs, functions, and loops to control how your infrastructure is deployed.
+  * Define modules that break down complex deployments into smaller reusable components.
+
+  Each module in this learning path provides examples for use with the Azure CLI. Visual Studio Code is used to write and validate your Terraform code.
+
+prerequisites: Familiarity with Azure Resources and Azure resource groups is recommended, but not required.
+iconUrl: /training/achievements/terraform/terraform-fundamentals.svg
+levels:
+- beginner
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+- azure-resource-manager
+modules:
+- learn.azure.terraform-introduction-to-infrastructure-as-code
+#- learn.azure.terraform-deploy-azure-resources
+#- learn.azure.terraform-build-reusable-modules
+#- learn.azure.terraform-functions-loops
+#- learn.azure.terraform-create-composable-modules
+trophy:
+  uid: learn.terraform-fundamentals.trophy

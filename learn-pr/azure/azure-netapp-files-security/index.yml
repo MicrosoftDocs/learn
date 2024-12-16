@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.azure-netapp-files-security
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Azure security for Azure NetApp Files
+  description: Learn about data encryption options available in Azure NetApp Files to improve the security of your data. 
+  ms.date: 11/18/2024
+  author: PageWriter-MSFT
+  ms.author: b-ahibbard
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Azure security for Azure NetApp Files
+summary: Learn about various security options available in Azure NetApp Files. Learn about security features supported in Azure NetApp Files and data encryption options in Azure NetApp Files. 
+abstract: |
+  By the end of this module, you should:
+  -	Understand the Microsoft cloud security benchmark
+  - Enumerate encryption options in Azure NetApp Files and their benefits
+prerequisites: |
+  - Basic understanding of Azure NetApp Files. 
+  - Basic knowledge data security.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- database-administrator
+- solution-architect
+products:
+- azure-netapp-files
+subjects:
+- cloud-computing
+- storage
+- security
+units:
+- learn.azure.azure-netapp-files-security.introduction
+- learn.azure.azure-netapp-files-security.encryption-at-rest
+- learn.azure.azure-netapp-files-security.encryption-in-transit
+- learn.azure.azure-netapp-files-security.knowledge-check
+- learn.azure.azure-netapp-files-security.summary
+badge:
+  uid: learn.azure-netapp-files-security.badge

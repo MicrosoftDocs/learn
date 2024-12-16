@@ -1,6 +1,6 @@
 It's important to test your assumptions with customers before you spend time building a product.
 
-The same principle of testing assumptions can, and should, be applied to other parts of your business. For example, how you select the revenue model that you'll use to generate sales and grow your business.
+You can—and should—apply the same principle of testing assumptions to other parts of your business; for example, how you select the revenue model that you'll use to generate sales and grow your business.
 
 A revenue model is a strategy for how to:
 
@@ -11,7 +11,7 @@ A revenue model is a strategy for how to:
 
 In other words, a revenue model encompasses all the factors you need to consider when you think about how your business will generate and scale revenue.
 
-Companies can have more than one revenue model. Generally, each product or service has its own revenue model. Your choice of revenue model will affect every aspect of your business, so you need to:
+Companies can have more than one revenue model. Generally, each product or service has its own revenue model. Your choice of revenue model affects every aspect of your business, so you need to:
 
 - Think through the pros and cons of each option.
 - Test your assumptions with customers before you lock anything in.
@@ -26,12 +26,12 @@ The following are the 10 most common models that tech startups use.
 
 **Description**: Customers pay based on the frequency or volume at which they use or consume your product.
 
-**Ideal for**: Infrastructure businesses that provide services that users can't afford to own but need to access. Examples are Azure or Twilio.
+**Ideal for**: Infrastructure businesses that provide services that users can't afford to own, but need to access; examples are Azure or Twilio.
 
 **Practical considerations**:
 
 - Requires a large, upfront investment.
-- Allows you to offer new users a cheap or free plan, then charge more as their usage increases.
+- Allows you to offer new users a cheap or free plan, then charge more as their usage increases
 - Requires patient investment, because revenues from each customer are tied to the customer's growth rate.
 - Often requires providing education and support to ensure customers gain maximum benefit from the service and can access more advanced functionality as they grow.
 
@@ -39,14 +39,14 @@ The following are the 10 most common models that tech startups use.
 
 **Description**: Customers sign up for your product. In return for ongoing use, they pay you a recurring subscription fee. This type of delivery is known as software as a service (SaaS). The fee can be annual, quarterly, monthly, or weekly.
 
-**Ideal for**: Software products that customers will use regularly and continue using for an extended period. Examples are Microsoft 365 or Adobe Photoshop.
+**Ideal for**: Software products that customers use regularly and continue using for an extended period; examples are Microsoft 365 or Adobe Photoshop.
 
 **Practical considerations**:
 
 - Allows you to generate recurring revenues, which provide many benefits.
-- Tiered pricing plans enable customers to pay based on the features they need, their volume of usage or the number of seats required, or the size or type of their organization.
+- Tiered pricing plans enable customers to pay based on the features they need, their volume of usage or the number of licences required, or the size or type of their organization.
 - Allows you to offer new customers a free trial that converts to a paid plan after a set period. A free trial can be a good way of getting customers to start using your product, particularly if they're uncertain about the features, value, or pricing. It can also be a distraction if too few users convert.
-- Allows you to deliver a *freemium* offering in which users can access basic features for free (usually forever) and unlock premium features by paying. Examples are LinkedIn Premium, Strava, or Spotify. You need to ensure that a large enough percentage of users convert to paid plans and that free users can be serviced at very low cost.
+- Allows you to deliver a free version of your offering in which users can access basic features for free (usually forever) and unlock premium features by paying; examples are LinkedIn Premium, Strava, or Spotify. You need to ensure that a large enough percentage of users convert to paid plans and that free users can be serviced at very low cost.
 - As long as you have a higher new customer sign-up rate than churn (unsubscribe) rate, your company will be growing.
 - For inexpensive products, it's common for some customers to keep paying even after they no longer use the product. For higher-priced products, this practice is less common.
 
@@ -54,7 +54,7 @@ The following are the 10 most common models that tech startups use.
 
 **Description**: Make sales by directly contacting potential customers (outbound sales) or enabling customers to contact you directly (inbound sales).
 
-**Ideal for**: High-value products or services. Enterprise customers where relationships are crucial, or sales require interaction with multiple decision-makers and influencers over time. An example is SAP.
+**Ideal for**: High-value products or services. Enterprise customers where relationships are crucial, or sales require interaction with multiple decision-makers and influencers over time; an example is SAP.
 
 **Practical considerations**:
 
@@ -65,7 +65,7 @@ The following are the 10 most common models that tech startups use.
 
 **Description**: Get paid a commission from a set fee or a percentage of the transaction value every time a transaction takes place.
 
-**Ideal for**: Marketplace or platform businesses that connect a buyer with a seller. Examples are Airbnb or Upwork.
+**Ideal for**: Marketplace or platform businesses that connect a buyer with a seller; examples are Airbnb or Upwork.
 
 **Practical considerations**:
 
@@ -77,15 +77,15 @@ The following are the 10 most common models that tech startups use.
 
 **Description**: Make one-off sales and get paid a set price for each transaction.
 
-**Ideal for**: Physical products that can be purchased online via an e-commerce store. An example is most Shopify stores.
+**Ideal for**: Physical products that can be purchased online via an e-commerce store; an example is most Shopify stores.
 
 **Practical considerations**:
 
 - Revenue generation is an isolated event and only occurs when the customer makes a purchase. There's limited scope for recurring revenues. Exceptions are products that are purchased often, like groceries or subscription boxes, such as Dollar Shave Club or meal-delivery services.
 - Customers can compare prices easily. Unless you have a highly differentiated offering, competition can drive down prices. This issue leads to low margins and a need for high transaction volume.
-- You need to produce each product, or deliver in the case of wholesale. Beyond a certain volume, there's limited scope to reduce the cost base significantly.
-- A good checkout experience can provide opportunities to upsell by recommending complementary products or to drive repeat purchases by offering a discount code for returning customers.
-- Can be associated with high customer-acquisition costs because it's difficult to find customer acquisition channels that are profitable.
+- You need to produce each product (or deliver in the case of wholesale). Beyond a certain volume, there's limited scope to reduce the cost base significantly.
+- A good checkout experience can provide opportunities to upsell by recommending complementary products or drive repeat purchases by offering a discount code for returning customers.
+- Can be associated with high customer-acquisition costs, because it's difficult to find customer-acquisition channels that are profitable.
 - Doesn't work well for most high-value purchases. These purchases might require multiple sales touch points and trust developed through relationship-building before the customer is comfortable completing the transaction.
 
 ### Revenue model 6: Service delivery
@@ -96,16 +96,16 @@ The following are the 10 most common models that tech startups use.
 
 **Practical considerations**:
 
-- Limited scope for recurring revenues because each customer job is an isolated event.
+- Limited scope for recurring revenues, because each customer job is an isolated event.
 - Cheap to start and can be profitable, especially if you have a rare skill set or one that would be highly valued by prospective clients.
-- Limited scope for passive income because you stop getting paid when you stop delivering the service.
+- Limited scope for passive income, because you stop getting paid when you stop delivering the service.
 - Doesn't scale well. A time cost is associated with every occasion that you deliver the service, and there are only 24 hours in a day.
 
 ### Revenue model 7: Rental
 
 **Description**: Get paid for renting a physical product to a customer. Can be on a flat fee per-use basis or based on time or distance.
 
-**Ideal for**: Any item that users want to use sporadically, but not enough that it makes sense for them to buy and maintain their own. An example is Lime electric scooter rentals. Works for expensive items or those items that require complex maintenance. An example is UberAIR helicopter rental.
+**Ideal for**: Any item that users want to use sporadically, but not enough that it makes sense for them to buy and maintain their own; an example is Lime electric scooter rentals. Works for expensive items or those items that require complex maintenance; an example is UberAIR helicopter rental.
 
 **Practical considerations**:
 
@@ -117,12 +117,12 @@ The following are the 10 most common models that tech startups use.
 
 **Description**: Get paid a license fee for granting another company the right to use your intellectual property (IP) for an agreed purpose.
 
-**Ideal for**: Advanced technologies that could be used by multiple licensees, or in applications where your technology is only part of a solution and relies on an existing product or infrastructure that you don't own. An example is image-correction software for use on MRI scanners.
+**Ideal for**: Advanced technologies that could be used by multiple licensees, or in applications where your technology is only part of a solution and relies on an existing product or infrastructure that you don't own; an example is image-correction software for use on MRI scanners.
 
 **Practical considerations**:
 
 - Licensees generally make a build-or-buy decision, in which they weigh the cost of creating the technology in-house versus acquiring the right to use your existing technology.
-- You generally need to demonstrate the efficacy of your technology in the licensee's setting via a proof-of-concept, demo, or trial.
+- You generally need to demonstrate the efficacy of your technology in the licensee's setting via a proof of concept, demo, or trial.
 - It's often important to have IP protection in the form of patents.
 - There's a risk that your IP could be copied, particularly if the larger company is willing to risk patent litigation and knows you don't have the financial means to pursue legal action.
 
@@ -130,7 +130,7 @@ The following are the 10 most common models that tech startups use.
 
 **Description**: Indirect sales made by third parties that you appoint as agents or resellers.
 
-**Ideal for**: Products or services that naturally sit alongside another company's offering as an upsell or specialist product. An example is companies that partner with Microsoft via the Microsoft Partner Network.
+**Ideal for**: Products or services that naturally sit alongside another company's offering as an upsell or specialist product; an example is companies that partner with Microsoft via the Microsoft Partner Network.
 
 **Practical considerations**:
 

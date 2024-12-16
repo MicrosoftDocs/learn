@@ -2,13 +2,14 @@
 uid: learn.wwl.implement-business-continuity-disaster-recovery-backup.implement-hana-large-instances
 title: Implement disaster recovery on HANA Large Instances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement disaster recovery on HANA Large Instances
   description: "Implement disaster recovery on HANA Large Instances"
   ms.date: 06/30/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

@@ -25,7 +25,7 @@ Now that you’ve reviewed this module, you should be able to:
 * Learn more about [Intel Software Guard Extensions](https://software.intel.com/content/www/us/en/develop/topics/software-guard-extensions.html).
 * Learn more about [Intelligent cloud and intelligent edge](https://azure.microsoft.com/overview/future-of-cloud/).
 * Learn more about [Managed HSM](/azure/key-vault/managed-hsm/overview).
-* Learn more about [Tactical Azure Stack Hub](https://www.delltechnologies.com/en-us/collaterals/unauth/data-sheets/products/converged-infrastructure/dell-emc-integrated-system-for-azure-stack-hub-tactical-spec-sheet.pdf).
+* Learn more about [Tactical Azure Stack Hub](https://www.dell.com/en-us/dt/hyperconverged-infrastructure/microsoft-azure-stack/microsoft-azure-stack-hub.htm).
 * Learn more about [Virtual Network](/azure/virtual-network/virtual-networks-overview).
 * Learn more about [Virtual Private Network (VPN) gateways](/azure/vpn-gateway/vpn-gateway-about-vpngateways).
 * Learn more about [VNet Integration](/azure/virtual-network/virtual-network-for-azure-services).

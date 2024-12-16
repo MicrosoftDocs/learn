@@ -201,7 +201,7 @@ With our certificates generated, we need to export our root certificate's public
 
 ## Connect to Azure
 
-1. Press the <kbd>Windows</kbd> key, enter **Settings**, and press kbd>Enter</kbd>.
+1. Press the <kbd>Windows</kbd> key, enter **Settings**, and press <kbd>Enter</kbd>.
 
 1. In the **Settings** window, select **Network and Internet**.
 

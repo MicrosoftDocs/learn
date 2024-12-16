@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.unlock-support-session
 title: Unlock a support session
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Unlock a support session
   description: "Unlock a support session"
   ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

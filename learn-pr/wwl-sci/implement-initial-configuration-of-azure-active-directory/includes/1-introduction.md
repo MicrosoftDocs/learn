@@ -1,15 +1,16 @@
-In this module, you'll learn how to configure and manage Azure Active Directory (Azure AD), part of Microsoft Entra tenant. You'll explore Azure AD roles, custom domains, and company branding options. In addition, you'll learn how to configure delegation by using administrative units and configure tenant-wide settings.
+In this module, you learn how to configure and manage a Microsoft Entra tenant. You explore Microsoft Entra roles, custom domains, and company branding options. In addition, you learn how to configure delegation by using administrative units and configure several tenant-wide settings within Microsoft Entra ID.
 
 ## Learning objectives
 
 In this module, you will:
 
- -  Configure and manage Azure Active Directory roles.
- -  Configure and manage custom domains.
- -  Evaluate permissions based on role assignments and settings.
+ -  Company branding
+ -  Configure and manage Microsoft Entra roles.
  -  Configure delegation by using administrative units.
- -  Configure tenant-wide settings.
+ -  Configure and manage custom domains.<br>
+ -  Evaluate permissions based on role assignments and settings.
+ -  Configure tenant-wide settings.<br>
 
 ## Prerequisites
 
-None
+Prior usage experience with the Azure portal user interface or the Microsoft Entra admin center.

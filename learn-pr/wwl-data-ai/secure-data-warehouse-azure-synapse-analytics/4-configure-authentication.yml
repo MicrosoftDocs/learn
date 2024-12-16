@@ -2,13 +2,14 @@
 uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.configure-authentication
 title: Configure authentication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure authentication
   description: "Configure authentication"
-  ms.date: 03/21/2023
+  ms.date: 07/04/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

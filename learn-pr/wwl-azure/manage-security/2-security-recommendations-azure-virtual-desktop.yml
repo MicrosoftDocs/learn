@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security.security-recommendations-azure-virtual-desktop
+title: Security recommendations for Azure Virtual Desktop
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Security recommendations for Azure Virtual Desktop
+  description: "Security recommendations for Azure Virtual Desktop"
+  ms.date: 08/07/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-security-recommendations-azure-virtual-desktop.md)]

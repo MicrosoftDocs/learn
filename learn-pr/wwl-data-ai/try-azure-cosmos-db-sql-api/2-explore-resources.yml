@@ -2,15 +2,17 @@
 uid: learn.wwl.try-azure-cosmos-db-sql-api.explore-resources
 title: Explore resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore resources
   description: "Explore resources"
-  ms.date: 12/19/2022
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-explore-resources.md)]
+

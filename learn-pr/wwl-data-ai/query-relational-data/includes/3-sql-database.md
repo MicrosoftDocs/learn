@@ -22,7 +22,7 @@ Some tools and applications require a connection string that identifies the serv
 
 ## Use the Azure portal to query a database
 
-To access the query editor in the Azure portal, go to the page for your database and select **Query editor**. You'll be prompted for credentials. You can set the **Authorization type** to **SQL Server authentication** and enter the user name and password that you set up when you created the database. Or you can select **Active Directory password authentication** and provide the credentials of an authorized user in Azure Active Directory. If Active Directory single sign-on is enabled, you can connect by using your Azure identity.
+To access the query editor in the Azure portal, go to the page for your database and select **Query editor**. You'll be prompted for credentials. You can set the **Authorization type** to **SQL Server authentication** and enter the user name and password that you set up when you created the database. Or you can select **Microsoft Entra password authentication** and provide the credentials of an authorized user in Microsoft Entra ID. If Active Directory single sign-on is enabled, you can connect by using your Azure identity.
 
  > [!div class="mx-imgBorder"]
  > ![The SQL Database sign-in page in the Azure portal](../media/3-sign-in-annotated.png)
@@ -58,7 +58,7 @@ The first time you run Azure Data Studio the **Welcome** page should open. If yo
     |Setting  |Description  |
     |---------|---------|
     |Server name	     | The fully qualified server name. You can find the server name in the Azure portal, as described earlier. |
-    |Authentication    | SQL Login or Windows Authentication. Unless you're using Azure Active Directory, select SQL Login. |
+    |Authentication    | SQL Login or Windows Authentication. Unless you're using Microsoft Entra, select SQL Login. |
     |User name   | The server admin account user name. Specify the user name from the account used to create the server.        |
     |Password    | The password you specified when you provisioned the server.  |
     |Database name   | The name of the database to which you wish to connect. |

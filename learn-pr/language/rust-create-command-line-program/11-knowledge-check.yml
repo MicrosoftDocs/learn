@@ -3,11 +3,10 @@ uid: learn.language.rust-create-command-line-program.knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 01/26/2021
+  ms.date: 01/21/2022
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Knowledge check
 durationInMinutes: 2

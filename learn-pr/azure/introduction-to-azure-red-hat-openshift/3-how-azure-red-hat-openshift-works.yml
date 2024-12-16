@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-azure-red-hat-openshift.how-azure-red-hat-openshift-works
+title: How Azure Red Hat OpenShift works
+metadata:
+  unitType: learning-content
+  title: How Azure Red Hat OpenShift works
+  description: Describes the Azure Red Hat OpenShift managed cluster model.
+  ms.date: 08/23/2024
+  author: ricmmartins
+  ms.author: ricardomac
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-how-azure-red-hat-openshift-works.md)]

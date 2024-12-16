@@ -3,12 +3,11 @@ uid: learn.github.manage-changes-pull-requests-github.5-summary
 title: Summary
 metadata:
   title: Summary
-  description: Review what you've learned.
-  ms.date: 06/26/2020
+  description: Review what you learned.
+  ms.date: 11/21/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]

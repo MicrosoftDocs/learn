@@ -4,13 +4,10 @@ title: Demo - Manage pass-through authentication and seamless single sign-on (SS
 metadata:
   title: Demo - Manage pass-through authentication and seamless single sign-on (SSO)
   description: "Demo - Manage pass-through authentication and seamless single sign-on (SSO)"
-  ms.date: 02/03/2023
+  ms.date: 01/04/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 14
 content: |
   [!include[](includes/5-demo-manage-pass-through-authentication-seamless-single-sign.md)]

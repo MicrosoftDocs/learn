@@ -9,7 +9,7 @@ In this module, you learned how to:
 
 ## Learn more
 
-See the following for more information about the Azure technologies that were discussed in this module.
+For more information about the Azure technologies we discussed in this module, see the following articles:
 
 - [Azure image builder](/azure/virtual-machines/image-builder-overview)
 - [Azure HPC VM images](https://techcommunity.microsoft.com/t5/azure-compute/azure-hpc-vm-images/ba-p/977094)
@@ -18,7 +18,7 @@ See the following for more information about the Azure technologies that were di
 - [HBv2-series VMs](/azure/virtual-machines/hbv2-series)
 - [HC-series VMs](/azure/virtual-machines/hc-series)
 
-See the following for more information about third-party products that were mentioned in this module.
+For more information about non-Microsoft products we mentioned in this module, see the following links:
 
 - [AMD Optimizing Compiler suite (AOCC)](https://developer.amd.com/amd-aocc/)
 - [AMD Optimized CPU libraries (AOCL)](https://developer.amd.com/amd-aocl/)

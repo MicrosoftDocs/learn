@@ -4,12 +4,11 @@ title: Manage the GitHub Advanced Security features and alerts
 metadata:
   unitType: learning-content
   title: Manage the GitHub Advanced Security features and alerts
-  description: Overview of how to manage security alerts with the Security Overview and how to manage the GitHub Advanced Security features with the Advanced Security endpoints
-  ms.date: 2/14/2022
-  author: lucie-docs
-  ms.author: lucielenaour
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  description: Overview of how to manage security alerts with the Security Overview and how to manage the GitHub Advanced Security features with the Advanced Security endpoints.
+  ms.date: 05/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-manage-github-advanced-security-features-alerts.md)]

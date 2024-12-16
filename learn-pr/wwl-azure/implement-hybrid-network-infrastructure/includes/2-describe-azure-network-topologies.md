@@ -1,5 +1,3 @@
-
-
 Contoso has an extensive on-premises network that provides a foundation for communications between resources deployed in various datacenters and offices. It's important that IT staff can deploy network components in Azure to enable communications between Azure resources, and between Azure resources and on-premises resources.
 
 As lead system engineer, you determine that Microsoft Azure networking provides connectivity to resources in Azure, between both services in Azure, and between Azure and your on-premises environment. As an added benefit, there are multiple Azure networking components that can deliver and help protect applications, and enhance the security of your network.
@@ -93,3 +91,4 @@ The following diagram demonstrates a generalized scenario. In the scenario, the 
 Elsewhere in the infrastructure, in the on-premises environment, a network virtual appliance (NVA) connects via an ExpressRoute connection to an NVA in a different subnet in Azure. When a VM in the on-premises network tries to communicate with an Azure VM, the on-premises NVA captures the packet, encapsulates it, and sends it over VPN/ExpressRoute connection to the Azure network. The Azure NVA receives the packet, decapsulates it, and forwards it to the intended recipient in its network. The return traffic works using the same logic, but in reverse.
 
 ![A diagram of an on-premises VNet and an Azure VNet connected by both an ExpressRoute connection and Subnet Extension, as described in the previous text.](../media/m13-subnet-extension.png)
+

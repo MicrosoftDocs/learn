@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.ai-security-controls.ground-ai-systems
+title: Ground AI systems
+metadata:
+  title: Ground AI systems
+  description: Learn about grounding AI systems
+  ms.date: 07/24/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-ground-ai-systems.md)]

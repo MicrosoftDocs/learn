@@ -1,3 +1,4 @@
+
 Developers use CodeQL to automate security checks.
 
 CodeQL treats code like data that can be queried.

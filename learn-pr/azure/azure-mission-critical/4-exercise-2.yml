@@ -2,28 +2,30 @@
 uid: learn.azure-mission-critical.exercise-two
 title: Exercise - Expand your design to multiple regions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Expand your design to multiple regions
-  description: Convert the architecture to an active-active, shared-state, multi-region topology designed to withstand a faulted region.
-  ms.date: 09/22/2022
+  description: Convert the architecture to an active-active, shared-state, multiregion topology designed to withstand a faulted region.
+  ms.date: 08/14/2024
   author: PageWriter-MSFT
   ms.author: msimecek
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-2.md)]
 quiz:
   title: Knowledge check
   questions:
-  - content: 'Which service is appropriate for global routing in this architecture?'
+  - content: "Which service is appropriate for global routing in this architecture?"
     choices:
-    - content: 'Azure Application Gateway'
+    - content: "Azure Application Gateway"
       isCorrect: false
-      explanation: 'Azure Application Gateway is a regional load balancer.'
-    - content: 'Azure Front Door'
+      explanation: "Azure Application Gateway is a regional load balancer."
+    - content: "Azure Front Door"
       isCorrect: true
-      explanation: 'Front Door provides global load balancing and site acceleration for web applications. This load balancer is a good choice for workloads with high-availability requirements. It offers fast failover, caching, and is integrated with Web Application Firewall (WAF).'
-    - content: 'Azure Traffic Manager'
+      explanation: "Azure Front Door provides global load balancing and site acceleration for web applications. This load balancer is a good choice for workloads with high-availability requirements. It offers fast failover and caching, and it's integrated with Web Application Firewall (WAF)."
+    - content: "Azure Traffic Manager"
       isCorrect: false
-      explanation: 'Traffic Manager is a DNS-based global traffic load balancer but it does not have the capabilities needed by this architecture. For example, Web Application Firewall and fast fail over.'
+      explanation: "Traffic Manager is a DNS-based global traffic load balancer, but it doesn't have the capabilities this architecture needs, like Web Application Firewall and fast failover."
+

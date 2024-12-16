@@ -13,13 +13,13 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 Although you don't need a subscription to use Azure DevOps to work in it, here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account you use to sign in to Azure. For more information, see [Add organization users and manage access](/azure/devops/organizations/accounts/add-organization-users). When you add the user, choose the **Basic** access level.
 
-Then sign out of Azure DevOps and sign in again under the Microsoft account you use to sign in to your Azure subscription.
+Then, sign out of Azure DevOps and sign in again under the Microsoft account you use to sign in to your Azure subscription.
 
 ## Get the Azure DevOps project
 
-Make sure your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
+Make sure your Azure DevOps organization is set up to complete the rest of this module. You'll do this by running a template that creates a project for you in Azure DevOps.
 
 The modules in this learning path form a progression as you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
@@ -197,7 +197,7 @@ Next, you'll manually trigger the pipeline to run. This step ensures that your p
 
     :::image type="content" source="../media/4-pipeline-no-runs.png" alt-text="Screenshot of Azure Pipelines showing the pipeline for this project. The pipeline has no runs.":::
 
-1. Select **Run pipeline**, and then select the *release-pipeline* branch from the **Branch/tag** dropdown menu. Select **Run** when you are done.
+1. Select **Run pipeline**, and then select the *release-pipeline* branch from the **Branch/tag** dropdown menu. Select **Run**.
 
     :::image type="content" source="../media/4-pipeline-run-first.png" alt-text="Screenshot of Azure Pipelines showing the location of the Run pipeline button.":::
 
@@ -217,4 +217,4 @@ Next, you'll manually trigger the pipeline to run. This step ensures that your p
 
     :::image type="content" source="../../shared/media/pipeline-view-published-artifact.png" alt-text="Screenshot of Azure Pipelines showing the published artifact. The artifact includes a .zip file.":::
 
-You now have a build pipeline for the Space Game web project. Next you will add a deployment stage to deploy your build artifact to Azure App Service.
+You now have a build pipeline for the Space Game web project. Next, you'll add a deployment stage to deploy your build artifact to Azure App Service.

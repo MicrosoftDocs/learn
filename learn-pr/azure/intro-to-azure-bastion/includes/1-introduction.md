@@ -1,6 +1,6 @@
 Server administrators understand that it's efficient to remotely administer and maintain servers in an on-premises datacenter. With Windows infrastructure as a service (IaaS) virtual machines (VMs) being deployed in Azure, administrators must rely solely on remote management to administer and maintain cloud-based resources. But how can administrators connect securely to remote cloud-based VMs without exposing the management interfaces of those VMs to the internet? Azure Bastion is a service you can use to securely connect to your Azure VMs remotely, without needing to expose remote administrative ports to the internet.
 
-:::image type="content" source="../media/bastion-remote-admin.png" alt-text="A graphic depicting a remote administrator connecting the Azure portal with Transport Layer Security (TLS) through Azure Bastion to a hosted VM.":::
+:::image type="content" source="../media/architecture.png" alt-text="A graphic depicting a remote administrator connecting the Azure portal with Transport Layer Security (TLS) through Azure Bastion to a hosted VM.":::
 
 ## Example scenario
 

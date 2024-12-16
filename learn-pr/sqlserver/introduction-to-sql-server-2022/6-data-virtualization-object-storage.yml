@@ -5,12 +5,11 @@ metadata:
   unitType: learning-content
   title: Use SQL Server 2022 as a data hub querying files and backup/restore to object storage providers
   description: "Learn how to use T-SQL to access files types like parquet and delta stored in Azure Storage of S3 compatible storage. In addition, learn how to back up and restore SQL Server databases with S3 compatible storage."
-  ms.date: 04/18/2023
+  ms.date: 10/16/2023
   author: rgward
   ms.author: bobward
   ms.reviewer: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-data-virtualization-object-storage.md)]
@@ -24,7 +23,7 @@ quiz:
       explanation: "SQL Server 2022 provides built-in REST API support for S3 compatible object storage providers"
     - content: "Oracle data sources using ODBC"
       isCorrect: false
-      explanation: "SQL Server 2022 does support Oracle data sources, but uses ODBC with Polybase services and not REST API."
+      explanation: "SQL Server 2022 does support Oracle data sources, but uses ODBC with Polybase services and not the REST API."
     - content: "Hadoop data sources using Java"
       isCorrect: false
       explanation: "Polybase support for Hadoop using Java has been removed in SQL Server 2022."

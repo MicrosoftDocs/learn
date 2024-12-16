@@ -1,18 +1,18 @@
 
-
-
-As you continue building a pallet tracker for the logistics company, suppose you also need track new pallets and remove old pallets from tracking. How can you accomplish creating tracking functionality for adding and removing pallets?
+As you continue to develop a pallet tracker for the logistics company, it's likely that you need to track new pallets and remove old ones from the tracking system. So, how can you create a tracking functionality that allows for the addition and removal of pallets?
 
 ## Use array methods to clear and resize an array
 
-The `Array.Clear()` method allows you to remove the contents of specific elements in your array, and the `Array.Resize()` method adds or removes elements from your array.
+The `Array.Clear()` method enables you to eliminate the contents of specific elements in your array, replacing them with the array's default value. For instance, if you clear an element in a `string` array, the cleared value is replaced with `null`. Similarly, when you clear an element in an `int` array, the replacement is `0` (zero).
+
+The `Array.Resize()` method, on the other hand, allows you to add or remove elements from your array.
 
 1. Delete or use the line comment operator `//` to comment out all of the code from the previous exercises.
 
 1. Update your code in the Visual Studio Code Editor as follows:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets = [ "B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Array.Clear(pallets, 0, 2);
@@ -23,6 +23,9 @@ The `Array.Clear()` method allows you to remove the contents of specific element
     }
 
     ```
+
+    > [!NOTE]
+    > This example uses [**Collection expression syntax**](https://devblogs.microsoft.com/dotnet/refactor-your-code-with-collection-expressions/), introduced in C# 12.
 
 1. Take a minute to focus on the line of code `Array.Clear(pallets, 0, 2);`.
 
@@ -41,7 +44,7 @@ The `Array.Clear()` method allows you to remove the contents of specific element
     > [!NOTE]
     > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
 
-    When you run the code, you'll see that the values stored in the first two elements of the array have been cleared out. In the `Length` property and the `foreach` statement, the elements still exist, but they're now empty.
+    When you run the code, you see that the values stored in the first two elements of the array are cleared out. In the `Length` property and the `foreach` statement, the elements still exist, but they're now empty.
 
     ```Output
     Clearing 2 ... count: 4
@@ -54,9 +57,9 @@ The `Array.Clear()` method allows you to remove the contents of specific element
 
 ## Empty string versus null
 
-When you use `Array.Clear()`, the elements that were cleared no longer reference a string in memory. In fact, the element points to nothing at all. pointing to nothing is an important concept that can be difficult to grasp at first.
+When you use `Array.Clear()`, the elements that were cleared no longer reference a string in memory. In fact, the element points to nothing at all. Pointing to nothing is an important concept that can be difficult to grasp at first.
 
-What if you attempt to retrieve the value of an element that was affected by the `Array.Clear()` method, could you do it?
+What if you attempt to retrieve the value of an element affected by the `Array.Clear()` method, could you do it?
 
 ### Access the value of a cleared element
 
@@ -74,7 +77,7 @@ Two approaches are needed to determine the value of a cleared element to see how
 1. Verify your code should match the following code listing:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets = [ "B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Console.WriteLine($"Before: {pallets[0]}");
@@ -91,7 +94,7 @@ Two approaches are needed to determine the value of a cleared element to see how
 
 1. Save your code file, and then use Visual Studio Code to run your code.
 
-You should see the following output:
+    You should see the following output:
 
     ```Output
     Before: B14
@@ -104,7 +107,7 @@ You should see the following output:
 
     ```
 
-If you focus on the line of output `After: `, you may think that the value stored in `pallets[0]` is an empty string. However, the C# Compiler implicitly converts the null value to an empty string for presentation.
+If you focus on the line of output `After: `, you might think that the value stored in `pallets[0]` is an empty string. However, the C# Compiler implicitly converts the null value to an empty string for presentation.
 
 ### Call a string helper method on a cleared element
 
@@ -121,7 +124,7 @@ To prove that the value stored in `pallets[0]` after being cleared is null, you'
 1. Make sure your code matches the following code listing:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets = [ "B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Console.WriteLine($"Before: {pallets[0].ToLower()}");
@@ -136,7 +139,7 @@ To prove that the value stored in `pallets[0]` after being cleared is null, you'
 
     ```
 
-1. Save your code file, and then use Visual Studio Code to run your code. This time, when you run the code, you'll see a large error message. If you parse through the text, you'll see the following message:
+1. Save your code file, and then use Visual Studio Code to run your code. This time, when you run the code, you see a large error message. If you parse through the text, you see the following message:
 
     ```Output
     System.NullReferenceException: Object reference not set to an instance of an object.
@@ -145,7 +148,7 @@ To prove that the value stored in `pallets[0]` after being cleared is null, you'
 
     This exception is thrown because the attempt to call the method on the contents of the `pallets[0]` element happens before the C# Compiler has a chance to implicitly convert null to an empty string.
 
-    The moral of the story is that `Array.Clear()` will remove an array element's reference to a value if one exists. To fix this, you might check for null before attempt to print the value.
+    The moral of the story is that `Array.Clear()` removes an array element's reference to a value if one exists. To fix this, you might check for null before attempt to print the value.
 
     To avoid the error, add an `if` statement before accessing an array element that is potentially null.
 
@@ -159,7 +162,7 @@ if (pallets[0] != null)
 1. Next, rework the code listing from Step 1 to include code to resize the array. When complete, your code should match the following code listing:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets =  ["B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Array.Clear(pallets, 0, 2);
@@ -187,7 +190,7 @@ if (pallets[0] != null)
 
     Here, you're calling the `Resize()` method passing in the `pallets` array by reference, using the `ref` keyword. In some cases, methods require you pass arguments by value (the default) or by reference (using the ref keyword). The reasons why this is necessary requires a long and complicated explanation about of how objects are managed in .NET. Unfortunately, that is beyond the scope of this module. When in doubt, you're recommended to look at Intellisense or Microsoft Docs for examples on how to properly call a given method.
 
-    In this case, you're resizing the `pallets` array from four elements to `6`. The new elements are added at the end of the current elements. The two new elements will be null until you assign a value to them.
+    In this case, you're resizing the `pallets` array from four elements to `6`. The new elements are added at the end of the current elements. The two new elements are null until you assign a value to them.
 
 1. Save your code file, and then use Visual Studio Code to run your code. When you run the code, you should see the following output.
 
@@ -215,7 +218,7 @@ Conversely, you can remove array elements using `Array.Resize()`.
 1. Update your code in the Visual Studio Code Editor as follows:
 
     ```csharp
-    string[] pallets = { "B14", "A11", "B12", "A13" };
+    string[] pallets = [ "B14", "A11", "B12", "A13" ];
     Console.WriteLine("");
 
     Array.Clear(pallets, 0, 2);
@@ -276,7 +279,7 @@ Conversely, you can remove array elements using `Array.Resize()`.
 
 ### Can you remove null elements from an array?
 
-If the `Array.Resize()` method doesn't remove empty elements from an array, is there another helper method that will do the job automatically? No. The best way to empty elements from an array would be to count the number of non-null elements by iterating through each item and increment a variable (a counter). Next, you would create a second array that is the size of the counter variable. Finally, you would loop through each element in the original array and copy non-null values into the new array.
+If the `Array.Resize()` method doesn't remove empty elements from an array, is there another helper method that does the job automatically? No. The best way to empty elements from an array would be to count the number of non-null elements by iterating through each item and increment a variable (a counter). Next, you would create a second array that is the size of the counter variable. Finally, you would loop through each element in the original array and copy non-null values into the new array.
 
 ## Recap
 

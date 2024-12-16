@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-quotas.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure NetApp Files capacity management.
+  ms.date: 11/26/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: Which of the following statements accurately describes volume quotas in Azure NetApp Files?
+    choices:
+    - content: Volume quotas limit the total number of files that can be stored within a volume.
+      isCorrect: false
+      explanation: Incorrect. Volume quotas in Azure NetApp Files are not used to limit the total number of files that can be stored within a volume. Instead, they are used to control the maximum capacity that can be allocated to a volume.
+    - content: Volume quotas determine the maximum capacity that can be allocated to a volume.
+      isCorrect: true
+      explanation: Correct. Volume quotas in Azure NetApp Files are used to define the maximum capacity that can be allocated to a volume. They help in managing and controlling the storage resources allocated to a specific volume.
+    - content: Volume quotas restrict the maximum size of a single file that can be stored within a volume. 
+      isCorrect: false
+      explanation: Incorrect. Volume quotas do not restrict the maximum size of a single file that can be stored within a volume. They are focused on controlling the overall capacity allocated to a volume, rather than individual file sizes.
+    - content: Volume quotas control the maximum number of concurrent connections allowed to a volume.
+      isCorrect: false 
+      explanation: Incorrect. Volume quotas aren't used to control the maximum number of concurrent connections allowed to a volume. They are primarily concerned with managing the storage capacity allocated to the volume.
+  - content: What is the purpose of individual user and group quotas in Azure NetApp Files?
+    choices: 
+    - content: To limit the number of volumes that can be created by each user or group.
+      isCorrect: false 
+      explanation: Incorrect. Individual user and group quotas in Azure NetApp Files are not used to limit the number of volumes that can be created. They are focused on setting specific capacity limits for each user or group within the account.
+    - content: To control the maximum number of concurrent connections allowed for each user or group. 
+      isCorrect: false 
+      explanation: Incorrect. Individual user and group quotas do not control the maximum number of concurrent connections allowed. They are primarily used to define the capacity limits for storage resources allocated to each user or group.
+    - content: To determine the maximum size of a single file that can be stored by each user or group.
+      isCorrect: false
+      explanation: Incorrect. Individual user and group quotas do not determine the maximum size of a single file that can be stored. They are focused on setting capacity limits for storage resources allocated to each user or group.
+    - content: To set specific capacity limits for each user or group within an Azure NetApp Files account.
+      isCorrect: true 
+      explanation: Individual user and group quotas in Azure NetApp Files are used to establish specific capacity limits for each user or group. These quotas allow administrators to control the amount of storage capacity allocated to individual users or groups within the account.
+ 

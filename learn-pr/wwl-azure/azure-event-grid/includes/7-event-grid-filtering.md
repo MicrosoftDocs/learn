@@ -1,4 +1,3 @@
-
 When creating an event subscription, you have three options for filtering:
 
 * Event types

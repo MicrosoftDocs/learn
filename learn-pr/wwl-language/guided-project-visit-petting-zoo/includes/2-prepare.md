@@ -1,6 +1,3 @@
-
-
-
 You'll be using Visual Studio Code to develop an application that relies on different methods to perform a task. Some methods use optional parameters and return values. Here, you'll find the overall goals of the project and how you'll build and test your application. You'll also set up your development environment using some Starter code.
 
 ## Project overview

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-fine-tune-deployment.exercise-change-to-operational-mode
+title: Exercise - Change sensor from learning to operational mode
+metadata:
+  title: Exercise - Change sensor from learning to operational mode
+  description: "Change sensor from learning to operational mode."
+  ms.date: 5/23/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-exercise-change-to-operational-mode.md)]

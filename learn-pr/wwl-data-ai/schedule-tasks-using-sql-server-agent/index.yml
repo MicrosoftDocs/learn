@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.schedule-tasks-using-sql-server-agent
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and manage SQL Agent jobs
-  description: "Create and manage SQL Agent jobs"
+  description: Create and manage SQL Agent jobs
   ms.date: 05/11/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Create and manage SQL Agent jobs
 summary: Explore SQL automation for scheduled tasks, and automatic alerts for SQL Server and Azure SQL Managed Instance.
 abstract: |
@@ -31,7 +33,7 @@ products:
 - azure-sql-database
 - sql-server
 subjects:
-- data-ai
+- data-management
 units:
 - learn.wwl.schedule-tasks-using-sql-server-agent.introduction
 - learn.wwl.schedule-tasks-using-sql-server-agent.create-maintenance-plan
@@ -41,3 +43,4 @@ units:
 - learn.wwl.schedule-tasks-using-sql-server-agent.summary
 badge:
   uid: learn.wwl.schedule-tasks-using-sql-server-agent.badge
+

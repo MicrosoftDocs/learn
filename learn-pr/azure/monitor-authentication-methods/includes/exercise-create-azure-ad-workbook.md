@@ -1,16 +1,18 @@
 In this exercise, you'll:
 
-- Create a new Azure AD workbook from scratch.
+- Create a new Microsoft Entra workbook from scratch.
 - Include a query to your workbook.
 - Select a visualization for your workbook.
-- Create a new Azure AD workbook using a template from the Azure gallery.
+- Create a new Microsoft Entra workbook using a template from the Azure gallery.
 
  
 
 
-## Create your first Azure AD workbook
+<a name='create-your-first-azure-ad-workbook'></a>
+
+## Create your first Microsoft Entra workbook
  
-In this exercise, you'll create your first Azure AD workbook using the Quick start template. 
+In this exercise, you'll create your first Microsoft Entra workbook using the Quick start template. 
 The objective of this workbook is to create a report of the client apps that were used in the past seven days.
 
 :::image type="content" source="../media/example-client-apps-used-past-week.png" alt-text="Screenshot that shows an example report of client apps used in the past seven days.":::
@@ -51,9 +53,11 @@ This workbook is based on the following Kusto query:
 8. In the toolbar, click **Run Query**.
 
 
-## Create a new Azure AD workbook using an existing workbook template
+<a name='create-a-new-azure-ad-workbook-using-an-existing-workbook-template'></a>
 
-In the previous section, you've learned how to create an Azure AD workbook from scratch. The Azure AD workbooks gallery has various workbook templates you can use for your projects. Using a workbook template, enables you to save a lot of time and to reduce the risk of potential mistakes when developing a workbook. In the workbook gallery, you can find a workbook called "Sign-ins using legacy authentication". You can use this workbook template as starting point to solve the business problem outlined at the begin of this module.
+## Create a new Microsoft Entra workbook using an existing workbook template
+
+In the previous section, you've learned how to create a Microsoft Entra workbook from scratch. The Microsoft Entra workbooks gallery has various workbook templates you can use for your projects. Using a workbook template, enables you to save a lot of time and to reduce the risk of potential mistakes when developing a workbook. In the workbook gallery, you can find a workbook called "Sign-ins using legacy authentication". You can use this workbook template as starting point to solve the business problem outlined at the begin of this module.
 
 The following exercise shows, how you can use this workbook template to create a new workbook.  
 

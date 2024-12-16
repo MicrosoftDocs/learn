@@ -2,14 +2,18 @@
 uid: learn.azure.build-web-api-nodejs-express.6-middleware
 title: Manage a request lifecycle with middleware
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage a request lifecycle with middleware
   description: This unit explains how you can manage the lifecycle of a request by using middleware.
-  author: softchris
-  ms.author: chnoring
-  ms.date: 06/08/2022
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  author: diberry
+  ms.author: diberry
+  ms.date: 02/12/2024
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 durationInMinutes: 3
 content: |
   [!include[](includes/4-middleware.md)]
+

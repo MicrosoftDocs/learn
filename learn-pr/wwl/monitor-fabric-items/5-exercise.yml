@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-fabric-items.exercise
+title: Exercise - Monitor Fabric activity in the Monitor hub
+metadata:
+  title: Exercise - Monitor Fabric activity in the Monitor hub
+  description: "Exercise - Monitor Fabric activity in the Monitor hub"
+  ms.date: 12/12/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+  ms.custom:
+  - fabric
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]

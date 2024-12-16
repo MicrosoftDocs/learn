@@ -1,5 +1,4 @@
-
-Your company deploys virtual machines in Azure. As an administrator, you're responsible for helping to ensure network connectivity for all resources, and troubleshooting any issues. You're using Azure Network Watcher to support your tasks. A few teams have submitted requests for you to address.
+Your company deploys virtual machines in Azure. As an administrator, you're responsible for helping to ensure network connectivity for all resources, and troubleshooting any issues. You're using Azure Network Watcher to support your tasks. You help is needed in several areas. 
 
 - The infrastructure team thinks it would be helpful to get a visual representation of the company's networking elements.
 
@@ -9,4 +8,4 @@ Your company deploys virtual machines in Azure. As an administrator, you're resp
 
 ### Answer the following questions
 
-Choose the best response for each of the following questions. Then select **Check your answers**.
+Choose the best response for each of the following questions. 

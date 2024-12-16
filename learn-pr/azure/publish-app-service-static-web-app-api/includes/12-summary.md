@@ -14,6 +14,7 @@ Azure Static Web Apps gives you all of these benefits. This lets you spend your 
 
 Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
 
+- Watch the Video series: [Deploy websites to the cloud with Azure Static Web Apps](https://aka.ms/azure/beginnervideos/learn/swa)
 - Learn how to [Publish an API to Azure Static Web Apps](/training/modules/publish-static-web-app-api-preview-url/)
 - Learn how to [Authenticate users with Azure Static Web Apps](/training/modules/publish-static-web-app-authentication/)
 - [Azure Static Web Apps](/azure/static-web-apps)

@@ -2,13 +2,14 @@
 uid: learn.wwl.review-features-tools-for-azure-cloud-shell.review-features-tools-of-azure-cloud-shell
 title: Review the features and tools of Azure Cloud Shell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review the features and tools of Azure Cloud Shell
   description: "Review the features and tools of Azure Cloud Shell"
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

@@ -1,0 +1,40 @@
+There are two features in Azure Virtual Desktop that enable you to dynamically attach applications from an application package to a user session in Azure Virtual Desktop - *app attach* and *MSIX app attach*. With *app attach* and *MSIX app attach*, applications aren't installed locally on session hosts or images, making it easier to create custom images for your session hosts, and reducing operational overhead and costs for your organization. Applications run within containers, which separate user data, the operating system, and other applications, increasing security and making them easier to troubleshoot.
+
+The following table compares MSIX app attach with app attach:
+
+| **MSIX app attach**                                                                                                                                                                                                                          | **App attach**                                                                                                                                                                                                                                                                                   |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Applications are delivered using RemoteApp or as part of a desktop session. Permissions are controlled by assignment to application groups, however all desktop users see all MSIX app attach applications in the desktop application group. | Applications are delivered using RemoteApp or as part of a desktop session. Permissions are applied per application per user, giving you greater control over which applications your users can access in a remote session. Desktop users only see the app attach applications assigned to them. |
+| Applications might only run on one host pool. If you want it to run on another host pool, you must create another package.                                                                                                                   | The same application package can be used across multiple host pools.                                                                                                                                                                                                                             |
+| Applications can only run on the host pool in which they're added.                                                                                                                                                                           | Applications can run on any session host running a Windows client operating system in the same Azure region as the application package.                                                                                                                                                          |
+| To update the application, you must delete and recreate the application with another version of the package. You should update the application in a maintenance window.                                                                      | Applications can be upgraded to a new application version with a new disk image without the need for a maintenance window.                                                                                                                                                                       |
+| Users can't run two versions of the same application on the same session host.                                                                                                                                                               | Users can run two versions of the same application concurrently on the same session host.                                                                                                                                                                                                        |
+| Telemetry for usage and health is now available through Azure Log Analytics.                                                                                                                                                                 | Telemetry for usage and health is available through Azure Log Analytics.                                                                                                                                                                                                                         |
+
+You can use the following application package types and file formats:
+
+| **Package type**     | **File formats**     | **Feature availability**      |
+| -------------------- | -------------------- | ----------------------------- |
+| MSIX and MSIX bundle | .msix<br>.msixbundle | MSIX app attach<br>App attach |
+| Appx and Appx bundle | .appx<br>.appxbundle | App attach only               |
+
+MSIX and Appx are Windows application package formats that provide a modern packaging experience to Windows applications. Applications run within containers, which separate user data, the operating system, and other applications, increasing security and making them easier to troubleshoot. MSIX and Appx are similar, where the main difference is that MSIX is a superset of Appx. MSIX supports all the features of Appx, plus other features that make it more suitable for enterprise use.
+
+> [!TIP]
+> Select a button at the top of this article to choose between *app attach* and *MSIX app attach* to see the relevant documentation.
+
+You can get MSIX packages from software vendors, or you can [create an MSIX package from an existing installer](/windows/msix/packaging-tool/create-an-msix-overview). To learn more about MSIX, see [What is MSIX?](/windows/msix/overview)
+
+## How a user gets an application
+
+You can assign different applications to different users in the same host pool or on the same session host. During sign-in, all three of the following requirements must be met for the user to get the right application at the right time:
+
+ -  The application must be assigned to the host pool. Assigning the application to the host pool enables you to be selective about which host pools the application is available on to ensure that the right hardware resources are available for use by the application. For example, if an application is graphics-intensive, you can ensure it only runs on a host pool with GPU-optimized session hosts.
+ -  The user must be able to sign-in to session hosts in the host pool, so they must be in a Desktop or RemoteApp application group. For a RemoteApp application group, the app attach application must be added to the application group, but you don't need to add the application to a desktop application group.
+ -  The application must be assigned to the user. You can use a group or a user account.
+
+If all of these requirements are met, the user gets the application. This process provides control over who gets an application on which host pool and also how it's possible for users within a single host pool or even signed in to the same multi-session session host to get different application combinations. Users who don’t meet the requirements don't get the application.
+
+## Application images
+
+Before you can use your application packages with Azure Virtual Desktop, you need to [Create an MSIX image](/azure/virtual-desktop/app-attach-create-msix-image) from your existing application packages using the MSIXMGR tool. You then need to store each disk image on a file share that is accessible by your session hosts. For more information on the requirements for a file share, see [File share](/azure/virtual-desktop/app-attach-overview?pivots=app-attach#file-share).

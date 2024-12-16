@@ -4,12 +4,11 @@ title: Exercise - Unit test an Azure Function
 metadata:
   title: Exercise - Unit test an Azure Function
   description: Exercise - Unit test an Azure Function
-  ms.date: 04/18/2019
+  ms.date: 03/01/2023
   author: ggailey777
   ms.author: glenga
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-unit-test-azure-functions.md)]

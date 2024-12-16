@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-with-delta-lake.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/07/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What does ACID stand for in the context of Delta Lake transactions?"
+    choices:
+    - content: "Atomicity, Consistency, Isolation, Durability."
+      isCorrect: true
+      explanation: "Correct. In Delta Lake, ACID transactions ensure that data operations are performed with Atomicity, Consistency, Isolation, and Durability. This means that transactions are processed reliably and adhere to strict standards to prevent data anomalies and ensure data integrity."
+    - content: "Atomicity, Connectivity, Integrity, Durability."
+      isCorrect: false
+      explanation: "Incorrect. In Delta Lake, ACID in the context of transactions doesn't stand for Atomicity, Connectivity, Integrity, Durability."
+    - content: "Authentication, Consistency, Isolation, Durability."
+      isCorrect: false
+      explanation: "Incorrect. In Delta Lake, ACID in the context of transactions doesn't stand for Authentication, Consistency, Isolation, Durability."
+  - content: "Which feature of Delta Lake allows you to view and restore previous versions of data?"
+    choices:
+    - content: "Time Travel"
+      isCorrect: true
+      explanation: "Correct. Delta Lake's Time Travel feature allows users to access previous versions of data using version numbers or timestamps. This feature is useful for data recovery, auditing, and analyzing historical data."
+    - content: "Data Rewind"
+      isCorrect: false
+      explanation: "Incorrect. Data Rewind isn't a Delta Lake feature to view or restore previous versions of data."
+    - content: "Version Control"
+      isCorrect: false
+      explanation: "Incorrect. Version Control just keeps track of multiple versions of data but doesn't allow you to restore to previous versions of data"
+  - content: "Which Delta Lake operation can be used to improve read performance by organizing data into fewer, larger files?"
+    choices:
+    - content: "VACCUM"
+      isCorrect: false
+      explanation: "Incorrect. VACUUM removes all files from the table directory that aren't managed by Delta, and data files that are no longer in the latest state of the transaction log for the table and are older than a retention threshold."
+    - content: "OPTIMIZE"
+      isCorrect: true
+      explanation: "Correct. The OPTIMIZE command in Delta Lake reorganizes data into fewer, larger files, which can significantly improve the efficiency of read queries. This command also helps manage and reduce the number of small files in a Delta table."
+    - content: "MERGE"
+      isCorrect: false
+      explanation: "Incorrect. MERGE command in Delta Lake is used to upsert data from a source table, view, or DataFrame to a target Delta Lake table."

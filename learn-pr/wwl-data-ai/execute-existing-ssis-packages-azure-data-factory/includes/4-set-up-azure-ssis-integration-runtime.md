@@ -1,26 +1,20 @@
-Perform the following steps to setup an Integration Runtime
+Perform the following steps to set up an Integration Runtime
 
-## Setup an Azure-SSIS Integration Runtime
+## Set up an Azure-SSIS Integration Runtime
 
-1. In the Azure Data Factory designer , in the **Edit** tab, click **Connections**. Click on the **Integration Runtimes** tab to view existing Integration Runtimes in your data factory.
+1. In the Azure Data Factory designer, select the **Manage** tab.
+1. in the **General** panel. Click on the **Integration Runtimes** tab to view existing Integration Runtimes in your data factory.
 
     ![navigating to Integration Runtimes](../media/select-integration-runtime.png)
 
 1. Click  **+ New** to create an Azure-SSIS IR and open the **Integration Runtime setup** pane.
-
-    ![New Connections Window](../media/create-new-connection.png)
-
-1. In the **Integration Runtime setup** pane, select the **Lift-and-shift existing SSIS packages to execute in Azure** tile, and then select **Next**.
-
-    ![Integration Runtime Setup](../media/lift-shift-existing-ssis-packages.png)
-
-1. On selecting this option, there are three types of settings to configure
+1. In the **Integration Runtime setup** pane, select the **Azure-SSIS: Lift-and-shift existing SSIS packages to execute in Azure** tile.
+1. Select the **Continue** button at the bottom of the panel.
 
 ### General settings page
 
 1. On the **General settings** page of **Integration Runtime setup** pane, complete the following steps.
 
-    > [!div class="mx-imgBorder"]
     > ![Integration Runtime General settings page](../media/integration-runtime-general-settings.png)
 
 1. In **Name**, enter the name of your Integration Runtime.
@@ -52,7 +46,7 @@ Perform the following steps to setup an Integration Runtime
 
 1. For **Catalog Database Server Endpoint**, select the endpoint of your database server to host SSISDB.
 
-1. Select the **Use Azure Active Directory authentication with the managed identity for your ADF** check box to choose the authentication method for your database server to host SSISDB.
+1. Select the **Use Microsoft Entra authentication with the managed identity for your ADF** check box to choose the authentication method for your database server to host SSISDB.
 
 1. For **Admin Username**, enter the SQL authentication username for your database server to host SSISDB.
 
@@ -109,7 +103,7 @@ The alternative approach is to:
 
 1. Select the **Select a VNet for your Azure-SSIS Integration Runtime to join, allow ADF to create certain network resources, and optionally bring your own static public IP addresses** check box to choose whether you want to join your Azure-SSIS IR to a virtual network.
 
-1. Select the **Set up Self-Hosted Integration Runtime as a proxy for your Azure-SSIS Integration Runtime** check box to choose whether you want to configure a self-hosted IR as proxy for your Azure-SSIS IR.
+1. Select the **Setup Self-Hosted Integration Runtime as a proxy for your Azure-SSIS Integration Runtime** check box to choose whether you want to configure a self-hosted IR as proxy for your Azure-SSIS IR.
 
 1. Click **Continue**.
 
@@ -118,9 +112,3 @@ The alternative approach is to:
 1. On the **Connections** pane of **Manage** hub, switch to the **Integration Runtimes** page and select **Refresh**.
 
     ![Integration Runtimes page](../media/integration-runtimes-page.png)
-
-
-
-
-
-

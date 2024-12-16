@@ -1,24 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
   description: Learn how to manage availability and recover from disasters with Azure Arc-enabled SQL Managed Instance.
-  ms.date: 12/26/2022
+  ms.date: 08/06/2024
   author: MikeRayMSFT
   ms.author: mikeray
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-arc
+  ms.subservice: azure-arc-sql-mi
 title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
-summary: Describe high availability and disaster recovery options for Azure Arc-enabled SQL Managed Instance.
+summary: In this module, you'll learn to describe high-availability and disaster-recovery options for Azure Arc-enabled SQL Managed Instance.
 abstract: |
   By the end of this module, you'll be able to:
     - Describe the resiliency features of Azure Arc-enabled SQL Managed Instance.
 prerequisites: |
-  - Experience implementing and managing Platform-as-a-Service (PaaS) services in Microsoft Azure.
-  - Intermediate knowledge of Azure management, including the ability to navigate the Azure portal and run Azure CLI commands.
-  - Intermediate knowledge of containerization and container orchestration by using Kubernetes.
-  - Intermediate knowledge of Azure SQL Managed Instance.
+  - Experience implementing and managing Platform-as-a-Service (PaaS) services in Microsoft Azure
+  - Intermediate knowledge of Azure management, including the ability to navigate the Azure portal and run Azure CLI commands
+  - Intermediate knowledge of containerization and container orchestration by using Kubernetes
+  - Intermediate knowledge of Azure SQL Managed Instance
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
@@ -46,3 +49,4 @@ units:
 badge:
   uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.badge
   
+

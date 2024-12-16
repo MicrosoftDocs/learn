@@ -2,13 +2,14 @@
 uid: learn.wwl.explore-azure-synapse-studio.understand-analytical-processes
 title: Understand the Azure Synapse Analytical processes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand the Azure Synapse Analytical processes
   description: "Understand the Azure Synapse Analytical processes"
   ms.date: 08/18/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

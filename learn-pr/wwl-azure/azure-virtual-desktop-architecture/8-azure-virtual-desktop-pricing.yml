@@ -2,13 +2,14 @@
 uid: learn.wwl.azure-virtual-desktop-architecture.pricing
 title: Azure Virtual Desktop pricing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Virtual Desktop pricing
   description: "Azure Virtual Desktop pricing"
-  ms.date: 01/31/2023
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

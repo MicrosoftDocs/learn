@@ -3,12 +3,13 @@ uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.9-add-playe
 metadata:
   title: Exercise - Add players to the bench in your web app with JavaScript
   description: Add players to the bench in your web app with JavaScript
-  ms.date: 03/10/2021
+  ms.date: 10/12/2022
   author: softchris
   ms.author: chnoring 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 title: Exercise - Add players to the bench in your web app with JavaScript
 durationInMinutes: 5
 content: |

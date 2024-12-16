@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-dependency-injection.exercise-explore-service-lifetime
+
+
+title: Exercise - Explore service lifetimes
+
+metadata:
+  title: Exercise - Explore service lifetimes
+
+  description: This unit is an exercise that explores configuring service lifetimes an ASP.NET Core app.
+  ms.date: 11/7/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-explore-service-lifetime.md)]

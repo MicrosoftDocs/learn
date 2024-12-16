@@ -2,13 +2,14 @@
 uid: learn.wwl.configure-database-authentication-authorization.describe-authentication-identities
 title: Describe authentication and identities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe authentication and identities
   description: "Describe authentication and identities"
   ms.date: 04/26/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

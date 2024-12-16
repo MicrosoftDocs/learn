@@ -6,9 +6,8 @@ metadata:
   description: If you need to pass a function as a parameter to another function, you can streamline the process by creating a function without a name, or an anonymous function. In this unit, you learn how to create anonymous functions.
   author: GeekTrainer
   ms.author: chnoring
-  ms.date: 05/18/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/26/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
