@@ -35951,6 +35951,51 @@
       "source_path": "learn-pr/wwl-azure/configure-subscriptions/10-summary-resources.md",
       "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/index.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/05-track-data-lineage.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/04-search-purview.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/01-introduction.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/07-knowledge-check.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/02-catalog-azure-synapse.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/03-configure-purview-integration.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/08-summary.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/06-exercise-synapse-purview.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
     }
   ]
 }
