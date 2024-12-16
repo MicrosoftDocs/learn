@@ -36,7 +36,6 @@ subjects:
 - data-management
 - data-engineering
 units:
-- learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.scan-workspaces
 - learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.understand-data-lineage-pipelines
 - learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.summary
 badge:
