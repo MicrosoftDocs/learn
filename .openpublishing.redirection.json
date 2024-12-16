@@ -35981,6 +35981,11 @@
       "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/02-catalog-azure-synapse.md",
       "redirect_url": "/training/modules/intro-to-microsoft-purview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-microsoft-purview-azure-synapse-analytics/03-configure-purview-integration.md",
+      "redirect_url": "/training/modules/intro-to-microsoft-purview/",
+      "redirect_document_id": false
     }
   ]
 }
