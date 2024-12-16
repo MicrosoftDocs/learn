@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.create-hello-app-service.5
+uid: learn.azure.create-hello-app-service.knowledge-check
 title: Knowledge Check
 metadata:
   description: Knowledge Check
@@ -16,13 +16,13 @@ quiz:
   questions:
     - content: What is the purpose of Azure App Service?
       choices:
-        - content: "A platform for building, deploying, and scaling web apps."
+        - content: "A platform for building, deploying, and scaling web apps"
           isCorrect: true
           explanation: "Correct! Azure App Service enables developers to build, deploy, and scale web apps and APIs easily."
-        - content: "A database management tool."
+        - content: "A database management tool"
           isCorrect: false
           explanation: "Azure App Service is used to build, deploy, and scale web applications, not to manage databases."
-        - content: "A cloud storage service."
+        - content: "A cloud storage service"
           isCorrect: false
           explanation: "Azure App Service is primarily for web app development and deployment, not cloud storage."
     - content: Which programming languages does Azure App Service support?

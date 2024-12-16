@@ -32,11 +32,11 @@ prerequisites: |
   - [JDK 17](https://www.oracle.com/java/technologies/downloads/).
   - [Maven 3.9.9](https://maven.apache.org/download.cgi?.=).
 units:
-  - learn.azure.create-hello-app-service.1
-  - learn.azure.create-hello-app-service.2
-  - learn.azure.create-hello-app-service.3
-  - learn.azure.create-hello-app-service.4
-  - learn.azure.create-hello-app-service.5
-  - learn.azure.create-hello-app-service.6
+  - learn.azure.create-hello-app-service.introduction
+  - learn.azure.create-hello-app-service.what-is-app-service
+  - learn.azure.create-hello-app-service.create-web-app
+  - learn.azure.create-hello-app-service.deploy-web-app
+  - learn.azure.create-hello-app-service.knowledge-check
+  - learn.azure.create-hello-app-service.summary
 badge:
   uid: learn.azure.create-hello-app-service.badge

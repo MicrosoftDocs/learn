@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.create-hello-app-service.3
+uid: learn.azure.create-hello-app-service.create-web-app
 title: "Exercise: Create a Simple Java Web App"
 metadata:
   description: Create a simple Java web app and deploy it locally.

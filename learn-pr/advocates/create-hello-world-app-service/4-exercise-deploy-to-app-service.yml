@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.create-hello-app-service.4
+uid: learn.azure.create-hello-app-service.deploy-web-app
 title: "Exercise: Deploy a web app to Azure App Service"
 metadata:
   description: Deploy the web app from the previous section to App Service.
