@@ -1,6 +1,18 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/paths/implement-and-manage-an-analytics-solution/index.yml",
+      "redirect_url": "/training/paths/manage-microsoft-fabric-environment/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/paths/monitor-optimize-fabric-analytics-solution/index.yml",
+      "redirect_url": "/training/paths/manage-microsoft-fabric-environment/"
+    },
+    {
+      "source_path_from_root":"learn-pr/wwl/optimize-performance-microsoft-fabric/index.yml",
+      "redirect_url": "/training/paths/manage-microsoft-fabric-environment/"
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl/monitor-fabric-items/2-monitor-data-ingestion.yml",
       "redirect_url": "/training/modules/monitor-fabric-items/"
     },
