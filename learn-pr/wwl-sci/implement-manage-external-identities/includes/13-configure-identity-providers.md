@@ -70,7 +70,7 @@ Required claims for the WS-Fed token issued by the IdP:
 By setting up federation with Google, you can allow invited users to sign in to your shared apps and resources with their own Gmail accounts, without having to create Microsoft accounts.
 
 > [!NOTE]
-> Google federation is designed specifically for Gmail users. To federate with G Suite domains, use [direct federation](../media/e271ed78).
+> Google federation is designed specifically for Gmail users. To federate with G Suite domains, use [direct federation](/education/windows/configure-aad-google-trust).
 
 ## What is the experience for the Google user?
 

@@ -10,9 +10,8 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more:
 
- -  [External Identities documentation](../media/777755ae)
- -  [Enable B2B external collaboration and manage who can invite guest users](../media/7ac1c0a2)
- -  [What is a guest user access in Microsoft Entra ID](../media/b4565ce5)
- -  [Introduction to Microsoft Entra Verified ID](../media/926a8231)
- -  [Set up the Microsoft Entra Verified ID service](../media/ba0c9e9d)
- -  [Cross-tenant access with Microsoft Entra External Identities](../media/b97b7f05)
+ -  [External Identities documentation](/entra/external-id/)
+ -  [Enable B2B external collaboration and manage who can invite guest users](/entra/external-id/external-collaboration-settings-configure)
+ -  [What is a guest user access in Microsoft Entra ID](/entra/external-id/user-properties)
+ -  [Set up the Microsoft Entra Verified ID service](/entra/verified-id/verifiable-credentials-configure-tenant)
+ -  [Cross-tenant access with Microsoft Entra External Identities](/entra/architecture/external-identity-deployment-architectures)

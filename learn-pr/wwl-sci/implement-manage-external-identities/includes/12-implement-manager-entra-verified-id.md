@@ -1,8 +1,5 @@
 :::image type="content" source="../media/entra-verified-identity-d15c9bf7-67300c67.png" alt-text="Screenshot of the Microsoft Entra ID security settings screen, with the Verifiable credentials selected.":::
 
-
-Microsoft Entra Verified ID is a preview feature. This content will continue to update as more capabilities are added, and the feature moves to general-availability. For more information you can also look here: [Configure your tenant for Microsoft Entra Verifiable Credentials](../media/ba0c9e9d).
-
 ### What is Entra Verified ID?
 
 Microsoft Entra Verified ID safeguards your organization with an identity solution that's seamless and decentralized. The service allows you to issue and verify credentials. For issuers, Microsoft Entra ID provides a service that they can customize and use to issue their own verifiable credentials. For verifiers, the service provides a free REST API that makes it easy to request and accept verifiable credentials in your apps and services.

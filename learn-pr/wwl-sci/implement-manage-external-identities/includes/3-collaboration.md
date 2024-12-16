@@ -35,7 +35,7 @@ This unit describes how to enable Microsoft Entra B2B collaboration. Then, we ex
 
 By default, all users and guests in your directory can invite guests even if they're not assigned to an admin role. External collaboration settings let you turn guest invitations on or off for different types of users in your organization. You can also delegate invitations to individual users by assigning roles that allow them to invite guests.
 
-Microsoft Entra ID allows you to restrict what external guest users can see in your Microsoft Entra directory. By default, guest users are granted a limited permission level. The guests are blocked from listing users, groups, or other directory resources, but the guests can see membership of non-hidden groups. Admins can change the guest permissions setting allowing you to restrict guest access even further, so that guests can only view their own profile information. For details, see [Restrict guest access permissions](../media/bd1d67dd).
+Microsoft Entra ID allows you to restrict what external guest users can see in your Microsoft Entra directory. By default, guest users are granted a limited permission level. The guests are blocked from listing users, groups, or other directory resources, but the guests can see membership of non-hidden groups. Admins can change the guest permissions setting allowing you to restrict guest access even further, so that guests can only view their own profile information. For details, see [Restrict guest access permissions](/entra/identity/users/users-restrict-guest-permissions).
 
 ## Configure business-to-business external collaboration settings
 
