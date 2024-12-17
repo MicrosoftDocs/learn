@@ -110,7 +110,7 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
     :::image type="content" source="../media/3-add-vmware-hcx-activation-key-portal.png" alt-text="Screenshot to add the VMware HCX Advanced key in the Azure portal."lightbox="../media/3-add-vmware-hcx-activation-key-portal.png":::
 
-1. Provide a name for the key and wait for Azure to generate a VMware HCX Advanced key for use on-premises.
+1. Provide a name for the key and wait for Azure to generate a VMware HCX Enterprise key for use on-premises.
 
     :::image type="content" source="../media/3-request-hcx-key.png" alt-text="Screenshot after the VMware HCX Advanced key is requested from the Azure portal.":::
 
