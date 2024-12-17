@@ -106,9 +106,9 @@ Next, the VMware HCX Connector OVA file needs to be installed in the on-premises
 
 After deploying and powering on the VMware HCX Connector appliance on-premises, you activate VMware HCX Connector. You need to get a license key from the Azure VMware Solution environment in Azure.
 
-1. Under **Manage** > **Connectivity**, select the HCX tab, and then select **+ Add**.
+1. Under **Manage** > **Add-ons**, select the **Migration using VMware HCX tab**, then select **+ Add**.
 
-    :::image type="content" source="../media/3-add-hcx-key-portal.png" alt-text="Screenshot to add the VMware HCX Advanced key in the Azure portal.":::
+    :::image type="content" source="../media/3-add-vmware-hcx-activation-key-portal.png" alt-text="Screenshot to add the VMware HCX Advanced key in the Azure portal."lightbox="../media/3-add-vmware-hcx-activation-key-portal.png":::
 
 1. Provide a name for the key and wait for Azure to generate a VMware HCX Advanced key for use on-premises.
 
