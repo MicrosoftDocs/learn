@@ -21,10 +21,10 @@ The pricing tiers are grouped into three categories:
 Here's a sample of different plan details. For more information, use the Azure portal to select *Create App Service Plan* and then *Explore pricing plans*. 
 
 | Feature | Free and Shared | Basic | Standard | Premium | 
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | 
 | Usage | Development, Testing | Dedicated development, Testing | Production workloads | Enhanced scale, performance | 
 | Staging slots | n/a | 5 | 5 | 20 |
-| Disk space | 1 GB | 1 GB | 10 GB | 50 GB | 250 GB | 1 TB |
+| Disk space | 1 GB | 1 GB | 10 GB | 50 GB | 
 | Auto scale | n/a | Supported (Manual) | Supported (Rules) | Supported (Rules, Elastic) |
 | Max instances | n/a | Up to 3 | Up to 10 | Up to 30 |
 
