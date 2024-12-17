@@ -53,10 +53,10 @@ In Blackjack, the goal of the game is to win over the bank. You win by holding a
 
 Your opponent is the bank. Remember the rules. You win if you have a better score than the bank, or if the bank has over 21. Let's implement those rules.
 
-1. Open the *blackjack.js* file.
+1. Open the *app.js* file.
 
     ```bash
-    code blackjack.js
+    code app.js
     ```
 
 1. Add the following variables to represent the banks cards.
@@ -82,7 +82,7 @@ Your opponent is the bank. Remember the rules. You win if you have a better scor
 1. Save and close the file, and then run the code.
 
    ```bash
-   node blackjack.js
+   node app.js
    ```
 
    You see the following output:
