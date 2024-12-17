@@ -1,4 +1,4 @@
-Azure Administrators must be prepared for planned and unplanned failures. Let's explore three scenarios that can lead to your Azure virtual machine being impacted. 
+Azure Administrators prepare for planned and unplanned failures. Let's explore three scenarios that can effect your Azure virtual machines. 
 
 ### Things to know about maintenance planning
 
@@ -8,7 +8,7 @@ An availability plan for Azure virtual machines needs to include strategies for 
 
 - **Unexpected downtime** occurs when the hardware or the physical infrastructure for your virtual machine fails unexpectedly. Unexpected downtime can include local network failures, local disk failures, or other rack level failures. When detected, the Azure platform automatically migrates (heals) your virtual machine to a healthy physical machine in the same datacenter. During the healing procedure, virtual machines experience downtime (reboot) and in some cases loss of the temporary drive.
 
-- **Planned maintenance** events are periodic updates made by Microsoft to the underlying Azure platform to improve overall reliability, performance, and security of the platform infrastructure that your virtual machines run on. Most of these updates are performed without any impact to your virtual machines or Cloud Services.
+- **Planned maintenance** events are periodic updates made by Microsoft to the underlying Azure platform to improve overall reliability, performance, and security of the platform infrastructure that your virtual machines run on. Most of these updates are performed without any affect to your virtual machines or Cloud Services.
 
 > [!NOTE]
 > Microsoft doesn't automatically update your virtual machine operating system or other software. You have complete control and responsibility for those updates. However, the underlying software host and hardware are periodically patched to ensure reliability and high performance.
