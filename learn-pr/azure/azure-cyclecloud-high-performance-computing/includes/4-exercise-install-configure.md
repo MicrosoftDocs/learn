@@ -160,6 +160,16 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
 
 1. In the list of results, select the entry representing the **cyclecloud-vm** Azure VM, and then select **Save**.
 
+1. On the **Managed Identities** page, select **+ Create**.
+1. On the **Basics** tab of the **Create User Assigned Managed Identity** pane, configure the following settings:
+    | Setting | Value |
+    | --- | --- |
+    | Subscription | Select the name of the Azure subscription you're using in this module. |
+    | Resource group | Select the **cyclecloud-rg** entry |
+    | Region | Select the name of the Azure region in which you intend to deploy your clusters. |
+    | Name | Enter **cyclecloud-mi** |
+1. On the **Basics** tab of the **Create User Assigned Managed Identity** pane, select **Review + Create**, wait for the validation process to complete, and then select **Create**.
+
 1. In the web browser window displaying the Azure portal, use the search box to search for **Storage accounts**.
 
 1. On the **Storage accounts** page, select **+ Create**.
@@ -180,6 +190,22 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
     > [!NOTE]
     > Wait for the storage account provisioning to complete. This should take about one minute.
 
+1. Once the deployment has finished, press **Go to resource**.
+
+1. On the pane displaying the Azure storage account, in the vertical menu on the left side, select **Access control (IAM)**.
+   
+1. In the **Access control (IAM)** section, select **+ Add**, and in the drop-down menu, select **Add role assignment**.
+   
+1. In the **Add role assignment** section, configure the following settings (leave others with their default values):
+ 
+    | Setting | Value |
+    | --- | --- |
+    | Role | Select the **Storage Blob Data Reader** entry under **Job function roles**. |
+    | Assign access to | Select **Managed Identity**. |
+    | Select members | Select **User assigned managed identity** in the **Managed Identity** dropdown and **cyclecloud-mi** under **Select**. |
+ 
+1. In the list of results, select the entry representing the **cyclecloud-mi** Managed Identity, and then select **Select**. Then, select **Review + assign** in the bottom left.
+
 1. On your computer, switch to the web browser window displaying the Azure CycleCloud web application.
 
 1. In the **Add Subscription** pop-up window, in the **Subscription Name** text box, enter a descriptive name for your Azure subscription, and then select **Validate Credentials**.
@@ -189,7 +215,7 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
 
 1. In the **Add Subscription** pop-up window, in the **Default Location** drop-down list, select the name of the Azure region in which you created the storage account previously in this task.
 
-1. In the **Add Subscription** pop-up window, in the **Storage account** drop-down list, select the name of the storage account you created previously in this task.
+1. In the **Add Subscription** pop-up window, in the **Locker Identity** drop-down list, select the name of the Managed Identity you created previously. In the **Storage account** drop-down list, select the name of the storage account you created previously as well.
 
     :::image type="content" source="../media/u4-cyclecloud-add-subscription-succeeded.png" alt-text="Screenshot showing the Add Subscription pop-up window in front of the Azure CycleCloud web application." border="false":::
 
