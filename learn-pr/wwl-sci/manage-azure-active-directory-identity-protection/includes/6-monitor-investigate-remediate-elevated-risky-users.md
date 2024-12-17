@@ -16,7 +16,7 @@ Selecting individual entries enables additional entries at the top of the report
 
 Selecting individual entries expands a details window below the detections. The details view allows administrators to investigate and perform actions on each detection.
 
-:::image type="content" source="../media/identity-protection-risky-sign-ins-report-824f4079.png" alt-text="Screenshot of the Identity Protection report showing risky sign-ins and details.":::
+:::image type="content" source="../media/identity-protection-risky-sign-ins-report-824f4079-a618e3d2.png" alt-text="Screenshot of the Identity Protection report showing risky sign-ins and details.":::
 
 
 ### Risky users
@@ -230,6 +230,7 @@ Authorization`="<token_type> <access_token>"
 
 
 
+
 ```
 
 When authenticating, you can find the token type and access token in the returned token.
@@ -286,6 +287,7 @@ Here’s sample code for authenticating and calling the API using PowerShell. Ju
 
 
 
+
 ```
 
 ### Get all of the offline risk detections (riskDetection API)
@@ -297,6 +299,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=d
 
 
 
+
 ```
 
 ### Get all of the users who successfully passed an MFA challenge triggered by risky sign-ins policy (riskyUsers API)
@@ -305,6 +308,7 @@ To understand the value Identity Protection risk-based policies have on your org
 
 ```http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=riskDetail eq 'userPassedMFADrivenByRiskBasedPolicy'
+
 
 
 

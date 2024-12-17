@@ -2,7 +2,7 @@ There are two risk policies that can be enabled in the directory:
 
  -  **Sign-in risk policy**: The sign-in risk policy detects suspicious actions that come along with the sign-in. It's focused on the sign-in activity itself and analyzes the probability that the sign-in was performed by some other than the user.
     
-    :::image type="content" source="../media/identity-protection-security-overview-e4218feb.png" alt-text="Screenshot of the Security overview page to enable user and sign-in risk policies.":::
+    :::image type="content" source="../media/identity-protection-security-overview-e4218feb-e4822f8b.png" alt-text="Screenshot of the Security overview page to enable user and sign-in risk policies.":::
     
  -  **User risk policy**: The user risk policy detects the probability that a user account has been compromised by detecting risk events that are atypical of a user's behavior.
 
