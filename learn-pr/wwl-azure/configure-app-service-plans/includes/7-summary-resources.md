@@ -8,6 +8,14 @@ The main takeaways from this module are:
 - Scaling in Azure App Service can be done through scale up (changing the pricing tier) or scale out (increasing the number of virtual machine instances).
 - Autoscaling allows for automatic adjustment of resources based on application load, with metric-based and time-based rules.
 
+## Learn more with Copilot
+
+Copilot can assist you in configuring Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot.
+
+- In Microsoft Azure, what are app service pricing plans? Provide examples of when to use each plan. 
+
+- In Microsoft Azure, what does scale in and scale out mean? How do I determine when to scale an application?
+
 ## Learn more with documentation
 
 - [Azure App Service plans](/azure/app-service/overview-hosting-plans). This article provides an overview of App Service plans. 
