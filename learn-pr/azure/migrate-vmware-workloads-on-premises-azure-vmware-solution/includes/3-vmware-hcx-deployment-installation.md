@@ -66,7 +66,7 @@ Next, the VMware HCX Connector OVA file needs to be installed in the on-premises
 
 1. Select the local VMware HCX Connector OVA file already downloaded from the Azure VMware Solution vSphere Client.
 
-    :::image type="content" source="../media/3-select-local-file.png" alt-text="Screenshot that shows how to select a local file when prompted, during the VMware HCX Connector deployment within vCenter on-premises.":::
+    :::image type="content" source="../media/3-select-ovf-template-vmware-hcx.png" alt-text="Screenshot that shows how to select a local file when prompted, during the VMware HCX Connector deployment within vCenter on-premises."lightbox="../media/3-select-ovf-template-vmware-hcx.png":::
 
 1. For **Select a name and folder**, provide a name for the VMware HCX Connector appliance, select the datacenter resource, and select **Next**.
 
