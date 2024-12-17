@@ -8,7 +8,7 @@ Software and data integrity failures can be connected to code and infrastructure
 
 Perhaps you recall the high-profile SolarWinds cyberattack by nation-state from 2020. The attackers managed to hide added malicious code among genuine product codebase.
 :::image type="content" source="../media/solarwind.png" lightbox="../media/solarwind.png" alt-text="Screenshot of SolarWind Orion platform source code.":::
-([source](https://www.reversinglabs.com/blog/sunburst-the-next-level-of-stealth))
+Carefully planted backdoor that will host malicious code ([image source](https://www.reversinglabs.com/blog/sunburst-the-next-level-of-stealth)).
 
 Naming the class containing malicious code `OrionImprovementBusinessLayer` was deliberate, not only to blend in with the rest of the code, but also to fool the software developers or anyone auditing the binaries. That class and many of the methods it uses can be found in other Orion software libraries, even thematically fitting with the code found within those libraries.
 
