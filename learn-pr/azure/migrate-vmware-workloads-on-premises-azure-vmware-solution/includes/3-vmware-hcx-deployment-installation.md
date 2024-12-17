@@ -46,11 +46,11 @@ Before you deploy VMware HCX Connector in the on-premises vCenter Server, downlo
 
 1. After VMware HCX checks for a software update, select **Request Download Link**.
 
-    :::image type="content" source="../media/3-request-hcx-download-link.png" alt-text="Screenshot of where to request a download link to the VMware HCX Connector OVA file for the on-premises VMware environment.":::
+    :::image type="content" source="../media/3-hcx-request-download-link.png" alt-text="Screenshot of where to request a download link to the VMware HCX Connector OVA file for the on-premises VMware environment."lightbox="../media/3-hcx-request-download-link.png":::
 
 1. Select **VMware HCX** to download the VMware HCX Connector OVA file.
 
-    :::image type="content" source="../media/3-download-vmware-hcx-ova.png" alt-text="Screenshot of selecting VMware HCX, which downloads the OVA file for deployment on-premises.":::
+    :::image type="content" source="../media/3-download-hcx-vmware-ova.png" alt-text="Screenshot of selecting VMware HCX, which downloads the OVA file for deployment on-premises."lightbox="../media/3-download-hcx-vmware-ova.png":::
 
 1. In the web browser you chose to use, you see a status bar. This status bar highlights how long it takes to download the OVA file.
 
