@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-ad-identity-protection.review-identity-protection-basics
 title: Review identity protection basics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review identity protection basics
   description: "Review identity protection basics"
   ms.date: 12/17/2024
