@@ -58,13 +58,13 @@ Before you deploy VMware HCX Connector in the on-premises vCenter Server, downlo
 
 ## Deploy the VMware HCX Connector OVA on-premises
 
-Next, the VMware HCX Connector OVA file needs to be installed in the on-premises VMware environment. Sign in to the web GUI of vCenter and begin deployment of the OVA file on-premises.
+Next, the VMware HCX Connector OVA file needs to be installed in the on-premises VMware vSphere environment. Sign in to the web GUI of vCenter Server and begin deployment of the OVA file on-premises.
 
-1. Right-click the vCenter datacenter and select **Deploy OVF Template**.
+1. Right-click the vCenter Server datacenter and select **Deploy OVF Template**.
 
     :::image type="content" source="../media/3-deploy-ovf-template.png" alt-text="Screenshot that shows how to deploy the OVA file downloaded for VMware HCX Connector on-premises in vCenter.":::
 
-1. Select the local VMware HCX Connector OVA file already downloaded from the Azure portal.
+1. Select the local VMware HCX Connector OVA file already downloaded from the Azure VMware Solution vSphere Client.
 
     :::image type="content" source="../media/3-select-local-file.png" alt-text="Screenshot that shows how to select a local file when prompted, during the VMware HCX Connector deployment within vCenter on-premises.":::
 
