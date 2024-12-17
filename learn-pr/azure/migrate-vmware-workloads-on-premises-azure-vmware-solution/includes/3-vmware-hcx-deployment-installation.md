@@ -94,7 +94,7 @@ Next, the VMware HCX Connector OVA file needs to be installed in the on-premises
 
 1. In **Customize template**, note the user account used to configure VMware HCX Connector is *admin*. Enter all required information, then select **Next**.
 
-    :::image type="content" source="../media/3-customize-template.png" alt-text="Screenshot of customizing the OVA template file for the VMware HCX Connector deployment on-premises.":::
+    :::image type="content" source="../media/3-customize-template-hcx-vmware.png" alt-text="Screenshot of customizing the OVA template file for the VMware HCX Connector deployment on-premises."lightbox="../media/3-customize-template-hcx-vmware.png":::
 
 1. On **Ready to complete**, verify all configurations and select **Finish**.
 
