@@ -2,21 +2,21 @@ Some applications place greater demands on storage than others. Apps such as Dyn
 
 When creating your VMs or adding new disks, you have a few choices that make a dramatic impact on disk performance, starting with the *type* of storage you choose.
 
-## Types of disks 
+## Types of disks
 
-Azure Disks are designed for 99.999% availability. 
+Azure Disks are designed for 99.999% availability.
 
-There are five types of disks you can choose when creating a managed disk: Ultra disks, Premium SSD v2,  Premium SSD, Standard SSD, and Standard HDD storage. Depending on the virtual machine (VM) size, you can mix and match these disk types.
+There are five types of disks you can choose when creating a managed disk: Ultra disks, Premium SSD v2, Premium SSD, Standard SSD, and Standard HDD storage. Depending on the virtual machine (VM) size, you can mix and match these disk types.
 
 ### Ultra Disk
 
-Azure Ultra Disks deliver high throughput, high IOPS, and consistent low-latency disk storage for Azure IaaS VMs. Ultra Disks include the ability to dynamically change the performance of the disk without the need to restart your VMs. Ultra disks are suited for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. You can only use Ultra disks as data disks. We recommend using Premium SSDs as OS disks.
+Azure Ultra Disks deliver high throughput, high input/output per second (IOPS), and consistent low-latency disk storage for Azure IaaS VMs. Ultra Disks include the ability to dynamically change the performance of the disk without the need to restart your VMs. Ultra disks are suited for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. You can only use Ultra disks as data disks. We recommend using Premium SSDs as OS disks.
 
 ### Premium SSD v2
 
-Premium SSD v2 offers higher performance than Premium SSDs while also generally being less costly. You can individually tweak the performance (capacity, throughput, and IOPS) of Premium SSD v2 disks at any time, allowing workloads to be cost efficient while meeting shifting performance needs. For example, a transaction-intensive database might need a large amount of IOPS at a small size, or a gaming application might need a large amount of IOPS but only during peak hours. Because of these requirements, for most general purpose workloads, Premium SSD v2 can provide the best price performance. Premium SSD v2 is suited for a broad range of workloads. Including, SQL server, Oracle, MariaDB, SAP, Cassandra, Mongo DB, big data analytics, and gaming, on virtual machines or stateful containers.
+Premium SSD v2 offers higher performance than Premium SSDs while also generally being less costly. You can individually tweak the performance (capacity, throughput, and IOPS) of Premium SSD v2 disks at any time, allowing workloads to be cost efficient while meeting shifting performance needs. For example, a transaction-intensive database might need a large amount of IOPS at a small size, or a gaming application might need a large amount of IOPS but only during peak hours. Because of these requirements, for most general-purpose workloads, Premium SSD v2 can provide the best price performance. Premium SSD v2 is suited for a broad range of workloads, including SQL server, Oracle, MariaDB, SAP, Cassandra, Mongo DB, big data analytics, and gaming, on virtual machines or stateful containers.
 
-You can only use Premium SSD v2 as data disks, we recommend using Premium SSDs as OS disks.
+You can only use Premium SSD v2 disks as data disks, so we recommend using Premium SSDs as OS disks.
 
 ### Premium SSD
 
@@ -54,13 +54,13 @@ The following sections provide more detail on disk performance.
 
 The data in your managed disk is automatically replicated to ensure durability and high availability. Azure Storage replication copies your data to protect it from planned and unplanned events like transient hardware failures, network or power outages, natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions.
 
-There are several types of replication:
+There are two types of replication:
 
 - **Locally redundant storage (LRS)**: Azure replicates the data within the same Azure data center. The data remains available if a node fails. However, if an entire data center fails, data might be unavailable.
 - **Zone-redundant storage (ZRS)**: Azure replicates your data synchronously across three storage clusters in a single region. Each storage cluster is physically separated from the others and resides in its own availability zone (AZ). With this type of replication, you can still access and manage your data if a zone becomes unavailable.
 
 ## Disk performance
 
-In most cases, the capacity of a disk determines its performance tier, and the performance tier determines the performance of the disk. However, Ultra Disks and Premium SSD v2 offer the ability to set individual performance characteristics independently of the size of the disk. 
+In most cases, the capacity of a disk determines its performance tier, and the performance tier determines the performance of the disk. However, Ultra Disks and Premium SSD v2 offer the ability to set individual performance characteristics independently of the size of the disk.
 
 There are a few other ways to alter the performance of your disk. You can change the performance tier of a Premium SSD, independent of the size of the disk. Both Premium SSD and Standard SSD offer disk bursting, as well.
