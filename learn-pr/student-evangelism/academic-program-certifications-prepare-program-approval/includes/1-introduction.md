@@ -4,8 +4,6 @@ The University of Lincoln in the UK recently designed a new degree program with 
 
 In this module, you'll learn about the general program approval process at higher education institutions, with a focus on programs that implement Microsoft Certification. We'll identify and describe the key stakeholders involved in the program approval process. These individuals serve on panels that review the proposed program in detail. Faculty roles that are part of the program approval process vary across institutions and regions. 
 
-For examples of the terminology and roles that are part of the US program approval process, see [The Curriculum Approval Process: A Resource Guide for Trustees and Administrators](https://ccleague.org/sites/default/files/trustees-resources/curriculum_approval_process_publication.pdf?azure-portal=true). 
-
 For examples at a university in the UK, see [Principles for Approval of
 Northumbria Awards](https://northumbria-cdn.azureedge.net/-/media/corporate-website/new-sitecore-gallery/services/academic-registry/documents/qte/programme-design-and-approval/principles-for-approval-of-northumbria-awards-edited.pdf?modified=20180530103151&azure-portal=true).
 
