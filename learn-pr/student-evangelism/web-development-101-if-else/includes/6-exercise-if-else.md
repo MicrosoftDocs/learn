@@ -13,7 +13,7 @@ In Blackjack, the goal of the game is to win over the bank. You win by holding a
    code .
    ```
 
-1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save the file. Name the file *blackjack.js*.
+1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save the file. 
 
 1. Give it the following starter code:
 
