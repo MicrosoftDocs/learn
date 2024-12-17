@@ -98,9 +98,9 @@ Next, the VMware HCX Connector OVA file needs to be installed in the on-premises
 
 1. On **Ready to complete**, verify all configurations and select **Finish**.
 
-    :::image type="content" source="../media/3-ready-to-complete.png" alt-text="Screenshot that shows the appliance is ready to complete the installation on-premises.":::
+    :::image type="content" source="../media/3-ready-to-complete-hcx-on-premises.png" alt-text="Screenshot that shows the appliance is ready to complete the installation on-premises."lightbox="../media/3-ready-to-complete-hcx-on-premises.png":::
 
-1. After the appliance deploys, you'll need to power on the virtual appliance manually in vCenter. Then wait 10-15 minutes before finishing the configuration.
+1. After the appliance deploys, you'll need to power on the virtual appliance manually in vCenter Server. Then wait 10-15 minutes before finishing the configuration.
 
 ## Activate VMware HCX
 
