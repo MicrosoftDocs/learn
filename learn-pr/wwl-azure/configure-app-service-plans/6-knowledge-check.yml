@@ -2,11 +2,9 @@
 uid: learn.wwl.configure-app-service-plans.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/17/2023
+  ms.date: 12/17/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -40,7 +38,7 @@ quiz:
     - content: "Scale back"
       isCorrect: false
       explanation: "Incorrect. Scale back isn't a valid scaling option. The options are scale in and out, or scale up and down."
-  - content: "Triggering a webhook at 8:00 AM on Saturday is an example of what type of rule?"
+  - content: "Triggering an event at 8:00 AM on Saturday is an example of what type of rule?"
     choices:
     - content: "A metric-based rule."
       isCorrect: false
