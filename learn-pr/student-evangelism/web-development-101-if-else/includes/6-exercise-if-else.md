@@ -4,6 +4,8 @@ As a junior game developer of recreational games, you've been asked to start the
 
 In Blackjack, the goal of the game is to win over the bank. You win by holding a score higher than the bank but less than or equal to 21.
 
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
 1. Use the Azure Cloud Shell to create a file.
 
    ```bash
@@ -38,7 +40,7 @@ In Blackjack, the goal of the game is to win over the bank. You win by holding a
 1. Save your changes, press <kbd>Ctrl</kbd> + <kbd>Q</kbd> to close the file, and then run the code.
 
    ```bash
-   node blackjack.js
+   node app.js
    ```
 
    You see the following output:
