@@ -95,7 +95,7 @@ After the user consents to permissions for your app, your app can acquire access
 ```
 GET https://login.microsoftonline.com/\{tenant\}/v2.0/adminconsent?
 
-client_id=6731de76-14a6-49ae-97bc-6eba6914391e
+client_id=FAKE_CLIENT_ID_for_viewing_purposes
 
 state=12345
 
