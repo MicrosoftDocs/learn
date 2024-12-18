@@ -36,7 +36,7 @@ Typically, a Microsoft Entra B2B user and guest user are synonymous. Therefore, 
 
 ### Filter for guest users in the directory
 
-:::image type="content" source="../media/filter-guest-users-b76a445c.png" alt-text="Screenshot of the Microsoft Entra ID User's screen showing the filter for guest users.":::
+:::image type="content" source="../media/filter-guest-users-b76a445c-c793434a.png" alt-text="Screenshot of the Microsoft Entra ID User's screen showing the filter for guest users.":::
 
 
 ### Convert UserType
@@ -47,7 +47,7 @@ It's possible to convert UserType from Member to Guest and vice-versa by using P
 
 There might be cases where you want to give your guest users higher privileges. You can add a guest user to any role and even remove the default guest user restrictions in the directory to give a user the same privileges as members. It's possible to turn off the default limitations so that a guest user in the company directory has the same permissions as a member user. Remove the limitation in the user settings within Microsoft Entra ID menu.
 
-:::image type="content" source="../media/remove-guest-limitations-6f8f344d.png" alt-text="Screenshot of the External users option in the user settings. Choose what restrictions are set for external users.":::
+:::image type="content" source="../media/remove-guest-limitations-6f8f344d-6a805970.png" alt-text="Screenshot of the External users option in the user settings. Choose what restrictions are set for external users.":::
 
 
 ## Dynamic groups and Microsoft Entra B2B collaboration
