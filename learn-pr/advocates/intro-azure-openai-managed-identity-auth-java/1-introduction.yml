@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-azure-openai-managed-identity-auth-java.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to using managed identity authentication for java applications with Azure OpenAI services.
+  ms.date: 12/16/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
