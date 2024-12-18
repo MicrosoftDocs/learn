@@ -126,15 +126,15 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
 1. In **System Name**, modify the VMware HCX Connector appliance name or accept the default name, and select **Continue**.
 
-    :::image type="content" source="../media/3-hcx-system-name.png" alt-text="Screenshot of where to provide a system name for VMware HCX Connector on-premises.":::
+    :::image type="content" source="../media/3-hcx-on-premises-system-name.png" alt-text="Screenshot of where to provide a system name for VMware HCX Connector on-premises."lightbox="../media/3-hcx-on-premises-system-name.png":::
 
 1. On the next screen, select **Yes, Continue** to continue setting up VMware HCX Connector on-premises.
 
     :::image type="content" source="../media/3-successfully-set-up-continue.png" alt-text="Screenshot of VMware HCX being successfully activated in the on-premises vCenter environment.":::
 
-1. For **Connect your vCenter**, provide the FQDN or IP address of your vCenter server on-premises.
+1. For **Connect your vCenter**, provide the FQDN or IP address of your vCenter Server on-premises.
 
-1. Use a username and password of an account that can access vCenter on-premises, then select **Continue**.
+1. Use a username and password of an account that can access vCenter Server on-premises, then select **Continue**.
 
     :::image type="content" source="../media/3-connect-vcenter-hcx.png" alt-text="Screenshot of where to configure a connection to the on-premises vCenter environment for the VMware HCX Connector appliance.":::
   
