@@ -2,7 +2,7 @@ Having completed this module, you now have an understanding of how to control ac
 
 ## Further reading/learning
 
-- [Securely Connecting Azure Container Apps to Azure OpenAI Using User Managed Identity - DEV Community](https://dev.to/azure/securely-connecting-azure-container-apps-to-azure-openai-using-user-managed-identity-3369)
-- [GitHub - yoshioterada/Secure-OpenAI-Java-App-on-Azure-Container-Apps: Security is crucial for businesses today. Microsoft suggests using Managed Identity over passwords for connections, especially in secure environments like production. This approach uses Microsoft Entra ID authentication to enhance security.](https://github.com/yoshioterada/Secure-OpenAI-Java-App-on-Azure-Container-Apps)
-- [https://learn.microsoft.com/en-us/azure/developer/ai/passwordless-connections?tabs=csharp%2Cazure-cli](/azure/developer/ai/passwordless-connections)
-- <https://github.com/Azure-Samples/openai-chat-app-quickstart>
+To continue your learning journey, go to:
+
+- [Use Azure OpenAI without keys](/azure/developer/ai/passwordless-connections?tabs=csharp%2Cazure-cli/azure/developer/ai/passwordless-connections)
+- [Azure OpenAI chat app quickstart](https://github.com/Azure-Samples/openai-chat-app-quickstart)

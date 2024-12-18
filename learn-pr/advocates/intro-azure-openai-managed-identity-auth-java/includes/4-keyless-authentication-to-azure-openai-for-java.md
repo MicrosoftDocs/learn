@@ -49,6 +49,6 @@ System.out.println(response.getChoices().get(0).getText());
 
 Once you have configured the code:
 
-1. \*\*Create Client Instance**: Instantiate your `OpenAIClient` with the endpoint and the credentials obtained from the `DefaultAzureCredential`.
+1. **Create Client Instance**: Instantiate your `OpenAIClient` with the endpoint and the credentials obtained from the `DefaultAzureCredential`.
 
-1. \*\*Make API Calls**: Use the client to interact with Azure OpenAI services securely, without explicitly handling sensitive credentials.
+1. **Make API Calls**: Use the client to interact with Azure OpenAI services securely, without explicitly handling sensitive credentials.
