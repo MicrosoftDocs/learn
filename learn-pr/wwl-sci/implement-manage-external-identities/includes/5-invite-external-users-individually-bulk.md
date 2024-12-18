@@ -1,6 +1,6 @@
 As a user who is assigned any of the limited administrator directory roles, you can use the Azure portal to invite B2B collaboration users. You can invite guest users to the directory, to a group, or to an application. After you invite a user through any of these methods, the invited user's account is added to Microsoft Entra ID, with a user type of *Guest*. The guest user must then redeem their invitation to access resources. An invitation of a user does not expire.
 
-:::image type="content" source="../media/external-user-flow-d79a0a22.png" alt-text="Diagram of how a guest user is invited to the directory, and how they can access resources once they are granted access.":::
+:::image type="content" source="../media/external-user-flow-d79a0a22-2c337f7e.png" alt-text="Diagram of how a guest user is invited to the directory, and how they can access resources once they are granted access.":::
 
 
 After you add a guest user to the directory, you can either send the guest user a direct link to a shared app, or the guest user can select the redemption URL in the invitation email. Make sure your organization's external collaboration settings are configured such that you're allowed to invite guests. By default, all users and admins can invite guests. But your organization's external collaboration policies might be configured to prevent certain types of users or admins from inviting guests.
@@ -25,7 +25,7 @@ If you use Microsoft Entra B2B collaboration to work with external partners, you
 
 Download and fill in the bulk upload CSV template to help you successfully invite Microsoft Entra ID guest users in bulk. The CSV template you download might look like this example:
 
-:::image type="content" source="../media/understand-template-4329aaff.png" alt-text="Screenshot of a common CSV file opened in spreadsheet format.":::
+:::image type="content" source="../media/understand-template-4329aaff-da7ff10e.png" alt-text="Screenshot of a common CSV file opened in spreadsheet format.":::
 
 
 ### CSV template structure
