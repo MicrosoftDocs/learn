@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-azure-openai-managed-identity-auth-java.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Display your knowledge
+  ms.date: 12/18/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 4
+content: Choose the best response for each question. 
+quiz:
+  questions:
+    - content: "What is the primary benefit of using managed identities over API keys in Azure OpenAI?"
+      choices:
+        - content: "Enhanced Security"
+          isCorrect: true
+          explanation: "Managed identities eliminate the need to store credentials within application code, reducing the risk of credential leaks. They use Entra for authentication, providing a more secure and automated method for accessing Azure services."
+        - content: "Increased Performance"
+          isCorrect: false
+          explanation: "While managed identities improve security, they don't inherently increase application performance."
+        - content: "Cost Reduction"
+          isCorrect: false
+          explanation: "Managed identities don't directly impact the cost of Azure services; their primary benefit is enhanced security."
+    - content: "Which role in Azure OpenAI allows you to create custom fine-tuned models and manage model deployments?"
+      choices:
+        - content: "Cognitive Services OpenAI User"
+          isCorrect: false
+          explanation: "The OpenAI User role has limited permissions and can't create or manage models."
+        - content: "Cognitive Services Usages Reader"
+          isCorrect: false
+          explanation: "The Usages Reader role is focused on monitoring usage and doesn't have permissions for model management."
+        - content: "Cognitive Services OpenAI Contributor"
+          isCorrect: true
+          explanation: "This role includes permissions to create custom fine-tuned models, upload datasets, and manage model deployments."
+    - content: "What Java class is used to obtain tokens to authenticate to Azure services?"
+      choices:
+        - content: "`AzureTokenProvider`"
+          isCorrect: false
+          explanation: "This isn't the correct class mentioned in the provided context for obtaining tokens."
+        - content: "`DefaultAzureCredential`"
+          isCorrect: true
+          explanation: "`DefaultAzureCredential` is used to obtain tokens to authenticate to Azure services, as indicated in the context. You'll also be able to use `ManagedIdentityCredential` "
+        - content: "`AzureIdentityClient`"
+          isCorrect: false
+          explanation: "This isn't the correct class mentioned in the provided context for obtaining tokens."
+    

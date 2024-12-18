@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-azure-openai-managed-identity-auth-java.using-managed-identities-with-azure-openai
+title: Using managed identities with Azure OpenAI
+metadata:
+  title: Using managed identities with Azure OpenAI
+  description: Understand how to use managed identities with Azure OpenAI services to authenticate your Java applications
+  ms.date: 12/16/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-using-managed-identities-with-azure-openai.md)]
