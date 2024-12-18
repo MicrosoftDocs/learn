@@ -22,7 +22,7 @@ client = openai.AzureOpenAI(
 
 Let's evaluate the effect of a leaked client ID versus a leaked API key.
 
-An API key functions similarly to a regular password. If an API key is compromised, anyone with the key can access the resource, especially if the Azure OpenAI service is configured to allow public access from all IP addresses. (Most are configured that way, because it's the default.) For Azure OpenAI, this access means a threat actor could gain unrestricted use of language models like GPT-4. A threat actor could even access to internal data if the models were being used with features like the Assistants API.
+An API key functions similarly to a regular password. If an API key is compromised, anyone with the key can access the resource, especially if the Azure OpenAI service is configured to allow public access from all IP addresses. (Most services are configured that way, because it's the default.) For Azure OpenAI, this access means a threat actor could gain unrestricted use of language models like GPT-4. A threat actor could even access internal data if the models were being used with features like the Assistants API.
 
 Conversely, if the client ID is leaked, the risks are minimal. The reason is that the client ID alone can't establish a connection to Azure OpenAI. To be able to authenticate with a managed identity, the app code must be running on an Azure host. Even if Azure OpenAI is public, a local environment can't be used as a managed identity. An attacker can't generate tokens for it. All their requests are rejected from the Azure OpenAI service, because the token is incorrect.
 

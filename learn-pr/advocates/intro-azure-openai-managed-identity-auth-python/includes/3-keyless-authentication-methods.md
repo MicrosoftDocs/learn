@@ -8,7 +8,7 @@ After the role assignments are configured, Python developers can use the Azure I
 
 ### Keyless authentication with the OpenAI package
 
-The following example implements keyless authentication for the official `openai()` package:
+The following example implements keyless authentication for the official `openai` package:
 
 ```python
 import azure.identity
@@ -43,7 +43,7 @@ In the preceding code:
 
 ### Keyless authentication with other packages
 
-If you're calling Azure OpenAI through another package, such as LangChain or LlamaIndex, consult their references to determine how to use keyless authentication. Look for parameters like "token provider" (to pass in the result of calling `get_bearer_token_provider`) or "credential" (to pass in the credential itself).
+If you're calling Azure OpenAI through another package, such as LangChain or LlamaIndex, consult the reference for that package to determine how to use keyless authentication. Look for parameters like "token provider" (to pass in the result of calling `get_bearer_token_provider`) or "credential" (to pass in the credential itself).
 
 Some packages might offer only the option to pass in an actual token. In that case, you can generate a token by using the Azure Identity SDK:
 
@@ -52,7 +52,7 @@ credential = azure.identity.DefaultAzureCredential()
 token = credential.get_token("https://cognitiveservices.azure.com/.default")
 ```
 
-The generated token is short lived. It can expire as soon as an hour after generation. You then need to generate a new token or implement token refresh logic to avoid token expiration errors from the API. That's why we recommend using an SDK that either generates new tokens for each request or implements token refresh logic, to avoid such problems.
+The generated token is short lived. It can expire as soon as an hour after generation. You then need to generate a new token or implement token refresh logic to avoid token expiration errors from the API. That's why we recommend using an SDK that either generates new tokens for each request or implements token refresh logic to avoid such problems.
 
 ### Sample code
 
@@ -120,7 +120,7 @@ else:
 
 ```
 
-The code first checks for the existence of a custom environment variable that's explicitly set to signal a production environment. For production, it sets the credential variable to `ManagedIdentityCredential` and passes in the client ID of the user-assigned identity that has the correct role. Otherwise, it sets the credential variable to `AzureDeveloperCliCredential`. `AzureDeveloperCliCredential` assumes that the developer is using `azd auth login` to log in to the Azure account locally.
+The code first checks for the existence of a custom environment variable that's explicitly set to signal a production environment. For production, it sets the credential variable to `ManagedIdentityCredential` and passes in the client ID of the user-assigned identity that has the correct role. Otherwise, it sets the credential variable to `AzureDeveloperCliCredential`. `AzureDeveloperCliCredential` assumes that the developer is using `azd auth login` to sign in to the Azure account locally.
 
 Yet another approach is to set up a custom chained credential.
 
