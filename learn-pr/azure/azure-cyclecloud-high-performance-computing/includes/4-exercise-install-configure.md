@@ -120,7 +120,7 @@ Next, deploy an Azure virtual machine that hosts the Azure CycleCloud applicatio
 
 1. In the deployment section, select **Go to resource** to navigate to the **cyclecloud-vm** section.
 
-## Task 2: Connect to the Azure CycleCloud Azure VM
+## Task 3: Connect to the Azure CycleCloud Azure VM
 
 After you deploy the Azure CycleCloud web application to an Azure VM, you can connect to it with the public IP address assigned to the network interface of that VM. After you connect, you'll be prompted to complete an initial setup of the web application. During that initial setup, you define the application authentication settings. We recommend that you use the same username and SSH key pair that you chose when deploying the underlying Azure VM. The SSH key pair you define here provides authentication to cluster nodes.
 
@@ -156,7 +156,7 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
     > [!NOTE]
     > The **Add Subscription** pop-up window might appear at this point. If so, don't close this window or configure its settings at this stage. You configure these settings in the next exercise.
 
-## Task 3: Add an Azure subscription to Azure CycleCloud
+## Task 4: Add an Azure subscription to Azure CycleCloud
 
 To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option to address this requirement is to assign the Contributor role in the subscription to the Azure VM hosting the CycleCloud application. This option works if you enabled the system-assigned managed identity for that Azure VM. Because you configured this setting during the Azure VM deployment in the first task of this exercise, this is the approach you take.
 
