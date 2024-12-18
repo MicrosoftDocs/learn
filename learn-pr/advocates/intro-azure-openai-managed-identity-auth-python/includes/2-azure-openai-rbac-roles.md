@@ -1,11 +1,11 @@
-These RBAC roles are available for you to assign to identities for Azure Open AI Service:
+These RBAC roles are available for you to assign to identities for Azure OpenAI Service:
 
 - The *Cognitive Services OpenAI User* role allows viewing resources, endpoints, and model deployments, using playground experiences, and making inference API calls. However, it doesn't permit creating resources, viewing/copying/regenerating keys, or managing model deployments.
 - The *Cognitive Services OpenAI Contributor* role includes all user permissions plus the ability to create custom fine-tuned models, upload datasets, and manage model deployments. It doesn't allow creating new resources or managing keys.
 - The *Cognitive Services Contributor* role permits creating new resources, viewing and managing keys, creating and managing model deployments, and using playground experiences. It doesn't allow access to quotas or making inference API calls.
 - The *Cognitive Services Usages Reader* role allows viewing quota usage across a subscription. This role provides minimal access and is typically combined with other roles.
 
-Always choose a role that provides the least amount of privilege required for the identity to do the tasks that it needs to perform. For more detail on Azure OpenAI RBAC roles, see the [Introduction to Azure OpenAI Managed Identity Authentication with Python](https://learn.microsoft.com/training/modules/intro-azure-openai-managed-identity-auth-python/) module.
+Always choose a role that provides the least amount of privilege required for the identity to do the tasks that it needs to perform. For more detail on Azure OpenAI RBAC roles, see the [Introduction to Azure OpenAI Managed Identity Authentication with Python](/training/modules/intro-azure-openai-managed-identity-auth-python/) module.
 
 ## Configure role assignments in the Azure portal
 
@@ -41,7 +41,7 @@ To configure role assignments by using Azure CLI, perform these steps:
    - **Personal identity**: This identity is your personal identity tied to your Azure sign-in.
    - **Managed identity**: This is an identity managed by and created for use on Azure. For this choice, create a user-assigned managed identity. When you create the managed identity, you need the client ID (also called the app ID).
 
-1. Find your personal identity and use the ID as the <identity-id> value in this step.
+1. Find your personal identity and use the ID as the `<identity-id>` value in this step.
 
    For local development, to get your own identity ID, use the following command. You need to sign in with `az login` before using this command.
 

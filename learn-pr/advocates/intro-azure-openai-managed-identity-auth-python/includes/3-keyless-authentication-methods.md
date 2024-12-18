@@ -120,7 +120,7 @@ else:
 
 ```
 
-The code first checks for the existence of a custom environment variable that has been explicitly set to signal a production environment. For production, it sets the credential variable to `ManagedIdentityCredential` and passes in the client ID of the user-assigned identity that has the correct role. Otherwise, it sets the credential variable to `AzureDeveloperCliCredential`. `AzureDeveloperCliCredential` assumes that the developer is using `azd auth login` to log in to the Azure account locally.
+The code first checks for the existence of a custom environment variable that's explicitly set to signal a production environment. For production, it sets the credential variable to `ManagedIdentityCredential` and passes in the client ID of the user-assigned identity that has the correct role. Otherwise, it sets the credential variable to `AzureDeveloperCliCredential`. `AzureDeveloperCliCredential` assumes that the developer is using `azd auth login` to log in to the Azure account locally.
 
 Yet another approach is to set up a custom chained credential.
 
