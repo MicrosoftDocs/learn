@@ -5,6 +5,8 @@ In this unit, you use Azure Cloud Shell as a Linux terminal. You also can access
 
 Before beginning this exercise, be sure to activate the sandbox.
 
+1. In the Azure Cloud Shell on the right-hand side of the screen, select **Switch to PowerShell** and then select **Confirm**.
+
 1. Run the following command in Cloud Shell, and then press <kbd>Enter</kbd> to verify that your system is set up to use PowerShell. The `$PSVersionTable` verifies your installation.
 
    ```powershell
