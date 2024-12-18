@@ -112,7 +112,7 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
 1. Provide a name for the key and wait for Azure to generate a VMware HCX Enterprise key for use on-premises.
 
-    :::image type="content" source="../media/3-request-hcx-key.png" alt-text="Screenshot after the VMware HCX Advanced key is requested from the Azure portal.":::
+    :::image type="content" source="../media/3-request-vmware-hcx-activation-key.png" alt-text="Screenshot after the VMware HCX Advanced key is requested from the Azure portal."lightbox="../media/3-request-vmware-hcx-activation-key.png":::
 
 1. Use the admin credentials you configured earlier to sign in to the on-premises VMware HCX Manager at `https://x.x.x.x:9443`. Replace the x's with the IP address configured for the on-premises appliance.
 
