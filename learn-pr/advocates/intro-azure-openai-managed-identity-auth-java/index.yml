@@ -5,7 +5,7 @@ metadata:
   author: sarah-yo
   ms.date: 12/16/2024
   title: Introduction to Azure OpenAI Managed Identity Authentication with Java
-  description: How to implement role based access control and managed identity authenticaiton to Azure OpenAI with Java.
+  description: How to implement role based access control and managed identity authentication to Azure OpenAI with Java.
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
   ms.service: azure-ai-openai
