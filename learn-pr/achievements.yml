@@ -4347,3 +4347,8 @@ achievements:
   title: Integrate Microsoft Purview and Azure Synapse Analytics
   summary: Learn how to integrate Microsoft Purview with Azure Synapse Analytics to improve data discoverability and lineage tracking.
   iconUrl: /training/achievements/integrate-microsoft-purview-azure-synapse-analytics.svg
+- uid: learn.automate-workflow-github-actions.trophy
+  type: trophy
+  title: Automate your workflow with GitHub Actions
+  summary: Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.
+  iconUrl: /training/achievements/github/automate-workflow-github-actions.svg
