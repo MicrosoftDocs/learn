@@ -160,6 +160,8 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
 
 1. In the list of results, select the entry representing the **cyclecloud-vm** Azure VM, and then select **Save**.
 
+1. In the web browser window displaying the Azure portal, use the search box to search for **Managed Identities**.
+   
 1. On the **Managed Identities** page, select **+ Create**.
    
 1. On the **Basics** tab of the **Create User Assigned Managed Identity** pane, configure the following settings:
@@ -193,7 +195,7 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
     > [!NOTE]
     > Wait for the storage account provisioning to complete. This should take about one minute.
 
-1. Once the deployment has finished, press **Go to resource**.
+1. Once the deployment has finished, select **Go to resource**.
 
 1. On the pane displaying the Azure storage account, in the vertical menu on the left side, select **Access control (IAM)**.
    
