@@ -13,7 +13,7 @@ In this exercise, you implement Azure CycleCloud by following these tasks:
 
 ## Task 1: Create a Managed Identity 
 
-Start by creating a Managed Identity which you will need later in this tutorial.
+Start by creating a Managed Identity.
 
 1. Navigate to [the Azure portal](https://portal.azure.com/?azure-portal=true). When prompted, authenticate with a Microsoft account or a Microsoft Entra account that has the Contributor or Owner role in the Azure subscription that you're using in this module.
 
@@ -35,8 +35,6 @@ Start by creating a Managed Identity which you will need later in this tutorial.
 ## Task 2: Deploy an Azure CycleCloud Azure VM
 
 Next, deploy an Azure virtual machine that hosts the Azure CycleCloud application by using its Azure Marketplace image.
-
-1. Navigate to [the Azure portal](https://portal.azure.com/?azure-portal=true). When prompted, authenticate with a Microsoft account or a Microsoft Entra account that has the Contributor or Owner role in the Azure subscription that you're using in this module.
 
 1. In the Azure portal search box, search for **Azure CycleCloud**.
 
@@ -213,9 +211,9 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
     | --- | --- |
     | Role | Select the **Storage Blob Data Reader** entry under **Job function roles**. |
     | Assign access to | Select **Managed Identity**. |
-    | Select members | Select **User assigned managed identity** in the **Managed Identity** dropdown and **cyclecloud-mi** under **Select**. |
+    | Select members | Select **User assigned managed identity** in the **Managed Identity** dropdown and **locker-mi** under **Select**. |
  
-1. In the list of results, select the entry representing the **cyclecloud-mi** Managed Identity, and then select **Select**. Then, select **Review + assign** in the bottom left.
+1. In the list of results, select the entry representing the **locker-mi** Managed Identity, and then select **Select**. Then, select **Review + assign** in the bottom left.
 
 1. On your computer, switch to the web browser window displaying the Azure CycleCloud web application.
 
