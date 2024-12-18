@@ -116,9 +116,9 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
 1. Use the admin credentials you configured earlier to sign in to the on-premises VMware HCX Manager at `https://x.x.x.x:9443`. Replace the x's with the IP address configured for the on-premises appliance.
 
-1. When prompted, enter your key for **HCX License Key**, then select **Add**. If you receive any errors during activation, the on-premises environment might not have open internet access or a proxy configured for activation. Check internet connectivity if VMware HCX Connector on-premises doesn't activate.
+1. When prompted, enter your **HCX License Key**, then select **Add**. If you receive any errors during activation, the on-premises environment might not have open internet access or a proxy configured for activation. Check internet connectivity if VMware HCX Connector on-premises doesn't activate.
 
-    :::image type="content" source="../media/3-enter-hcx-license-key.png" alt-text="Screenshot of where to enter the VMware HCX Connector license key on-premises.":::
+    :::image type="content" source="../media/3-enter-hcx-license-key-to-activate-hcx-instance.png" alt-text="Screenshot of where to enter the VMware HCX Connector license key on-premises to activate it."lightbox="../media/3-enter-hcx-license-key-to-activate-hcx-instance.png":::
 
 1. In **Datacenter Location**, provide the nearest location for installing VMware HCX Connector on-premises, then select **Continue**.
 
