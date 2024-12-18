@@ -163,14 +163,14 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
 1. On the **Managed Identities** page, select **+ Create**.
    
 1. On the **Basics** tab of the **Create User Assigned Managed Identity** pane, configure the following settings:
-   
+
     | Setting | Value |
     | --- | --- |
     | Subscription | Select the name of the Azure subscription you're using in this module. |
     | Resource group | Select the **cyclecloud-rg** entry |
     | Region | Select the name of the Azure region in which you intend to deploy your clusters. |
     | Name | Enter **cyclecloud-mi** |
-   
+
 1. On the **Basics** tab of the **Create User Assigned Managed Identity** pane, select **Review + Create**, wait for the validation process to complete, and then select **Create**.
 
 1. In the web browser window displaying the Azure portal, use the search box to search for **Storage accounts**.
