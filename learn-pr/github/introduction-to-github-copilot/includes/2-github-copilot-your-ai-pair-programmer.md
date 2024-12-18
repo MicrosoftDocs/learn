@@ -34,7 +34,7 @@ Next to the editor and pull requests, the terminal is the place where developers
 
 ## Subscription plans
 
-The service is available through GitHub personal accounts with GitHub Copilot Individual, through organization accounts with GitHub Copilot Business, or through enterprise accounts with GitHub Copilot Enterprise.
+The service is available through GitHub personal accounts with GitHub Copilot Free and GitHub Copilot Pro, through organization accounts with GitHub Copilot Business, or through enterprise accounts with GitHub Copilot Enterprise.
 
 ### GitHub Copilot Business
 
