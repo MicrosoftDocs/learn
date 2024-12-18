@@ -24,8 +24,8 @@ To configure role assignments using Azure CLI, perform the following steps:
 
 1. Find the role for your usage of Azure OpenAI. Depending on how you intend to set that role, you'll need either the name or ID.
 
-- **Role name** - For Azure CLI or Azure PowerShell, you can use a role name.
-- **Role ID** - For Bicep, you need the role ID.
+    - **Role name** - For Azure CLI or Azure PowerShell, you can use a role name.
+    - **Role ID** - For Bicep, you need the role ID.
 
 2. Use the following table to select a role and ID:
 
@@ -36,8 +36,8 @@ To configure role assignments using Azure CLI, perform the following steps:
 
 3. Select an identity type to use.
 
-- **Personal identity**: This identity is your personal identity tied to your sign in to Azure.
-- **Managed identity**: This is an identity managed by and created for use on Azure. For managed identity, create a user-assigned managed identity. When you create the managed identity, you need the Client ID, also known as the app ID.
+    - **Personal identity**: This identity is your personal identity tied to your sign in to Azure.
+    - **Managed identity**: This is an identity managed by and created for use on Azure. For managed identity, create a user-assigned managed identity. When you create the managed identity, you need the Client ID, also known as the app ID.
 
 4. Find your personal identity and use the ID as the \<identity-id> in the next step.
 
