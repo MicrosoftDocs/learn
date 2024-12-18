@@ -9,7 +9,7 @@ Secure authentication and authorization require deep understanding of security, 
 
 Let's take a closer look at how App Service helps you provide security for your app.
 
-- The authentication and authorization security module in Azure App Service runs in the same environment as your application code, yet separately.
+- The [authentication and authorization security module](/azure/app-service/overview-authentication-authorization) in Azure App Service runs in the same environment as your application code, yet separately.
 
 - The security module is configured by using app settings. No SDKs, specific languages, or changes to your application code are required.
 

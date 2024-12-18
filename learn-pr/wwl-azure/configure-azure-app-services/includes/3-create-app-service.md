@@ -21,11 +21,11 @@ Let's examine some of the basic configuration settings you need to create an app
 
 - **Region**: The region location that you choose for your app affects the App Service plans that are available.
 
-- **App Service plan**: Your app needs to be associated with an Azure App Service plan to establish available resources, features, and capacity. You can choose from pricing tiers that are available for the region location you selected.
+- **Pricing plans**: Your app needs to be associated with an Azure App Service plan to establish available resources, features, and capacity. You can choose from pricing tiers that are available for the region location you selected.
 
 #### Post-creation settings
 
-After your app is created, other configuration settings become available in the Azure portal, including app deployment options and path mapping.
+After your app is created, other Configuration settings become available in the Azure portal, including app deployment options and path mapping.
 
 :::image type="content" source="../media/web-app-configuration-27facdc5.png" alt-text="Screenshot that shows other configuration options for an app with the App Service in the Azure portal.":::
 
@@ -33,6 +33,6 @@ Some of the extra configuration settings can be included in the developer's code
 
 - **Always On**: You can keep your app loaded even when there's no traffic. This setting is required for continuous WebJobs or for WebJobs that are triggered by using a CRON expression.
 
-- **ARR affinity**: In a multi-instance deployment, you can ensure your app client is routed to the same instance for the life of the session.
+- **Session affinity**: In a multi-instance deployment, you can ensure your app client is routed to the same instance for the life of the session.
 
-- **Connection strings**: Connection strings for your app are encrypted at rest and transmitted over an encrypted channel.
+- **HTTPS Only**: When enabled, all HTTP traffic is redirected to HTTPS.
