@@ -11,9 +11,30 @@ In this exercise, you implement Azure CycleCloud by following these tasks:
 > [!NOTE]
 > To perform this exercise, you need access to an Azure subscription. Deploying the resources referenced in this exercise will result in some costs being incurred by that subscription.
 
-## Task 1: Deploy an Azure CycleCloud Azure VM
+## Task 1: Create a Managed Identity 
 
-Start by deploying an Azure virtual machine that hosts the Azure CycleCloud application by using its Azure Marketplace image.
+Start by creating a Managed Identity which you will need later in this tutorial.
+
+1. Navigate to [the Azure portal](https://portal.azure.com/?azure-portal=true). When prompted, authenticate with a Microsoft account or a Microsoft Entra account that has the Contributor or Owner role in the Azure subscription that you're using in this module.
+
+1. In the Azure portal search box, search for for **Managed Identities**.
+   
+1. On the **Managed Identities** page, select **+ Create**.
+   
+1. On the **Basics** tab of the **Create User Assigned Managed Identity** pane, configure the following settings:
+
+    | Setting | Value |
+    | --- | --- |
+    | Subscription | Select the name of the Azure subscription you're using in this module. |
+    | Resource group | Select **Create new**. In the **Name** text box, enter **cyclecloud-rg**, and select **OK**. |
+    | Region | Select the name of the Azure region in which you intend to deploy your clusters. |
+    | Name | Enter **locker-mi** |
+
+1. On the **Basics** tab of the **Create User Assigned Managed Identity** pane, select **Review + Create**, wait for the validation process to complete, and then select **Create**.
+
+## Task 2: Deploy an Azure CycleCloud Azure VM
+
+Next, deploy an Azure virtual machine that hosts the Azure CycleCloud application by using its Azure Marketplace image.
 
 1. Navigate to [the Azure portal](https://portal.azure.com/?azure-portal=true). When prompted, authenticate with a Microsoft account or a Microsoft Entra account that has the Contributor or Owner role in the Azure subscription that you're using in this module.
 
@@ -30,7 +51,7 @@ Start by deploying an Azure virtual machine that hosts the Azure CycleCloud appl
     | Setting | Value |
     | --- | --- |
     | Subscription | Select the name of the Azure subscription you're using in this module. |
-    | Resource group | Select **Create new**. In the **Name** text box, enter **cyclecloud-rg**, and select **OK**. |
+    | Resource group | Select the **cyclecloud-rg** entry |
     | Virtual machine name | Enter **cyclecloud-vm**. |
     | Region | Select the name of any Azure region that's close to your location where you can provision Azure VMs. |
     | Availability options | **No infrastructure redundancy required** |
@@ -159,21 +180,6 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
     | Select members | Select **Virtual Machine** in the **Managed Identity** dropdown and **cyclecloud-vm** under **Select**. |
 
 1. In the list of results, select the entry representing the **cyclecloud-vm** Azure VM, and then select **Save**.
-
-1. In the web browser window displaying the Azure portal, use the search box to search for **Managed Identities**.
-   
-1. On the **Managed Identities** page, select **+ Create**.
-   
-1. On the **Basics** tab of the **Create User Assigned Managed Identity** pane, configure the following settings:
-
-    | Setting | Value |
-    | --- | --- |
-    | Subscription | Select the name of the Azure subscription you're using in this module. |
-    | Resource group | Select the **cyclecloud-rg** entry |
-    | Region | Select the name of the Azure region in which you intend to deploy your clusters. |
-    | Name | Enter **cyclecloud-mi** |
-
-1. On the **Basics** tab of the **Create User Assigned Managed Identity** pane, select **Review + Create**, wait for the validation process to complete, and then select **Create**.
 
 1. In the web browser window displaying the Azure portal, use the search box to search for **Storage accounts**.
 
