@@ -1,12 +1,34 @@
 
 In this exercise, we create a new repository using the GitHub template for the Python personal portfolio frontend web application.
 
-## Sign up for GitHub Copilot
+## Accessing GitHub Copilot
 
-Before you install and use the extension, you need to register by setting up [a free trial or subscription for your account](https://github.com/github-copilot/signup).
+To use GitHub Copilot, you need to complete the following steps:
+
+1. **GitHub Account**: 
+   - If necessary, create a GitHub account.
+   - Copilot is a GitHub service, so you need a GitHub account to use it.
+
+2. **Check Copilot Access**: 
+   - Check the [Copilot pricing plans](https://github.com/features/copilot/plans) for your situation.
+   - For learning, the **Copilot Free** option with usage limits should be sufficient. It includes:
+      - Access to inline code completions
+      - Multi-file editing
+      - Copilot Chat
+      - Selecting multple models
+      - Support across all editors and in github.com
 
 >[!Note]
-> Educators, Students and select open-source maintainers can sign up for Copilot for free, learn how at: https://aka.ms/Copilot4Students
+> Educators, Students and select open-source maintainers can receive Copilot Pro for free, learn how at: https://aka.ms/Copilot4Students
+
+3. **Verify Copilot Access is Enabled**:
+   - In GitHub, go to your profile, then head over to **Settings**.
+   - In the left navigation, select **Copilot**.
+   - Verify Copilot is active and **Copilot Chat in the IDE** is enabled.
+
+4. **Install the Extension**:
+   - Extensions are available for major IDEs like Visual Studio, Visual Studio Code, JetBrains IDEs, VIM, and XCode.
+   - Simply search for `GitHub Copilot` in your IDE's extension marketplace and install it.
 
 ## Environment setup
 

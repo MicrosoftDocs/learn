@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Basic understanding of JavaScript, like variables and conditionals
   - Ability to use Git and GitHub for version control
-  - Access to the GitHub Copilot service
+  - GitHub Copilot service enabled
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
