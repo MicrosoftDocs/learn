@@ -6,10 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - configure external collaboration
   description: "Exercise - configure external collaboration"
-  ms.date: 10/25/2023
+  ms.date: 12/18/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/4-exercise-configure-external-collaboration.md)]

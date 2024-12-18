@@ -10,7 +10,7 @@ Let's dive into how GitHub Copilot Business can help you!
 
 At the end of this module, you'll be able to:
 
-- Understand the difference between GitHub Copilot Business versus GitHub Copilot Individuals.
+- Understand the difference between GitHub Copilot Business versus GitHub Copilot Pro.
 - Learn about specific use cases for GitHub Copilot Business and hear how customers are enhancing their productivity.
 - Review how to enable GitHub Copilot Business.
 
