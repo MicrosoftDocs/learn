@@ -16,7 +16,7 @@ quiz:
       choices:
         - content: "Enhanced Security"
           isCorrect: true
-          explanation: "Managed identities eliminate the need to store credentials within application code, reducing the risk of credential leaks. They leverage Azure Active Directory for authentication, providing a more secure and automated method for accessing Azure services."
+          explanation: "Managed identities eliminate the need to store credentials within application code, reducing the risk of credential leaks. They use Entra for authentication, providing a more secure and automated method for accessing Azure services."
         - content: "Increased Performance"
           isCorrect: false
           explanation: "While managed identities improve security, they don't inherently increase application performance."
@@ -38,11 +38,11 @@ quiz:
       choices:
         - content: "`AzureTokenProvider`"
           isCorrect: false
-          explanation: "This is not the correct class mentioned in the provided context for obtaining tokens."
+          explanation: "This isn't the correct class mentioned in the provided context for obtaining tokens."
         - content: "`DefaultAzureCredential`"
           isCorrect: true
-          explanation: "`DefaultAzureCredential` is used to obtain tokens to authenticate to Azure services, as indicated in the context. You will also be able to use `ManagedIdentityCredential` "
+          explanation: "`DefaultAzureCredential` is used to obtain tokens to authenticate to Azure services, as indicated in the context. You'll also be able to use `ManagedIdentityCredential` "
         - content: "`AzureIdentityClient`"
           isCorrect: false
-          explanation: "This is not the correct class mentioned in the provided context for obtaining tokens."
+          explanation: "This isn't the correct class mentioned in the provided context for obtaining tokens."
     
