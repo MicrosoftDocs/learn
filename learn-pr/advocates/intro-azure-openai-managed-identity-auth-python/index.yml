@@ -13,7 +13,7 @@ title: Introduction to Azure OpenAI managed identity authentication with Python
 summary: This module helps you understand how to use a managed identity in Python apps that interact with Azure OpenAI Service.
 abstract: |
  After you complete this module, you'll be able to:
-  - Describe the role-base access control (RBAC) roles for use in Azure OpenAI and configure role assignments.
+  - Describe the role-based access control (RBAC) roles for use in Azure OpenAI and configure role assignments.
   - Describe the differences between using API keys and managed identities within Azure OpenAI.
   - Configure keyless authentication to Azure OpenAI for local development for Python.
   - Configure keyless authentication to Azure OpenAI for Azure-hosted environments for Python.

@@ -1,5 +1,11 @@
 Now that you know how to authenticate an Azure OpenAI Service account with a managed identity, let's explore the benefits of a managed identity from a security perspective.
 
+## Overview of benefits
+
+Managed identities provide many benefits over API keys. They eliminate the need to store credentials within application code, which reduces the risk of credential leaks. They also provide a more secure and automated method for accessing Azure services by using Microsoft Entra authentication. This approach simplifies credential management and enhances security by ensuring that credentials aren't hard-coded or exposed.
+
+## Example
+
 The following code sets up a managed identity credential by using the client ID of a user-assigned identity, which is stored in the environment variable `AZURE_CLIENT_ID`. The only other environment variable that's necessary is the Azure OpenAI endpoint, typically a URL that looks like `https://your-service-name.openai.azure.com`.
 
 ```python
