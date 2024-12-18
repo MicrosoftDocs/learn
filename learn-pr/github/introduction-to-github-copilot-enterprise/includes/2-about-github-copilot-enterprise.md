@@ -67,7 +67,7 @@ Just like in a code editor, Copilot can explain selected code snippets throughou
 
 Now, let's review the differences between GitHub Copilot Enterprise, GitHub Copilot Business, and GitHub Copilot for Individuals.
 
-|   | GitHub Copilot Enterprise|GitHub Copilot for Business| GitHub Copilot for Individual|
+|   | GitHub Copilot Enterprise|GitHub Copilot for Business| GitHub Copilot Pro & Free|
 |---------------------------------------------------------|---|---|
 |**Collaborative Chat within pull requests**| ✓ | ✕ | ✕ |
 |**Lives on Github.com**| ✓ | ✓ | ✓ |
@@ -80,5 +80,7 @@ Now, let's review the differences between GitHub Copilot Enterprise, GitHub Copi
 |**Integration with security tools**| ✓ | Limited | ✕ |
 |**Audit logging and reporting**| ✓ | Limited | ✕ |
 |**VPN proxy support via self-signed certificates**| ✓ | ✓ | ✕ |
+
+*GitHub Copilot Free has usage limits
 
 Wondering how GitHub Copilot Enterprise can help you and your team? Want to get started with GitHub Copilot Enterprise? Let's learn how in our next unit.

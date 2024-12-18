@@ -13,9 +13,9 @@ Features in Copilot Business include:
 
 Now, let's review some of the differences between GitHub Copilot Business and GitHub Copilot Individuals.
 
-## GitHub Copilot Business vs. GitHub Copilot Individuals
+## GitHub Copilot Business vs. GitHub Copilot Pro
 
-||GitHub Copilot Business|GitHub Copilot Individuals|
+||GitHub Copilot Business|GitHub Copilot Pro & Free*|
 |---------------------------------------------------------|---|---|
 |**Exclude specific files from GitHub Copilot**| ✓ | ✕ |
 |**Organization-wide policy management**| ✓ | ✕ |
@@ -23,6 +23,8 @@ Now, let's review some of the differences between GitHub Copilot Business and Gi
 |**Increase GitHub Models rate limites**| ✓ | ✕ |
 |**GitHub Copilot knowledge bases**| ✓ | ✕ |
 |**Fine tuning a custom large lanaguage model**| ✓ | ✕ |
+
+*GitHub Copilot Free has usage limitations
 
 If you're wondering how GitHub Copilot Business can help you and your team, we've got you covered.
 
