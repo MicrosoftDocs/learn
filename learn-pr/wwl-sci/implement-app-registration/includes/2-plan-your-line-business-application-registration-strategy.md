@@ -158,7 +158,7 @@ When it comes to developing apps, developers can choose to configure their app t
 
 In the Azure portal, you can configure your app to be single-tenant or multitenant by setting the audience as follows:
 
-\***Specific app access**
+**Specific app access**
 
 | **Audience**                                                                                                 | **Single/multitenant** | **Who can sign in**                                                                                                                                                                                                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
