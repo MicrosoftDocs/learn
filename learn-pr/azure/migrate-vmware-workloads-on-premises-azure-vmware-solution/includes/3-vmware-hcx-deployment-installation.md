@@ -122,7 +122,7 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
 1. In **Datacenter Location**, provide the nearest location for installing VMware HCX Connector on-premises, then select **Continue**.
 
-    :::image type="content" source="../media/3-hcx-location.png" alt-text="Screenshot that specifies the location of VMware HCX Connector on-premises during deployment.":::
+    :::image type="content" source="../media/3-hcx-on-premises-system-location.png" alt-text="Screenshot that specifies the location of VMware HCX Connector on-premises during deployment."lightbox="../media/3-hcx-on-premises-system-location.png":::
 
 1. In **System Name**, modify the VMware HCX Connector appliance name or accept the default name, and select **Continue**.
 
