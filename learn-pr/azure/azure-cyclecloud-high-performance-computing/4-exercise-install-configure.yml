@@ -7,9 +7,9 @@ metadata:
   unitType: exercise
   title: Exercise - Install and configure Azure CycleCloud
   description: Learn about the process of installing and configuring Azure CycleCloud.
-  ms.date: 12/17/2024
-  author: emilylo
-  ms.author: emilylo
+  ms.date: 12/18/2024
+  author: ahoward
+  ms.author: ahoward
   ms.topic: unit
 durationInMinutes: 25
 content: |
