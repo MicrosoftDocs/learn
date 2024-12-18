@@ -1,0 +1,8 @@
+Having completed this module, you now have an understanding of how to control access to applications developed in Azure OpenAI. You have learned to configure authentication using Java, explored the various RBAC roles available in Azure OpenAI, and understood the benefits of using managed identities over API keys. You can describe the different RBAC roles, configure role assignments, and set up keyless authentication for Azure-hosted environments using Java. This knowledge equips you to implement robust security practices in your Azure OpenAI applications.
+
+## Further reading/learning
+
+- [Securely Connecting Azure Container Apps to Azure OpenAI Using User Managed Identity - DEV Community](https://dev.to/azure/securely-connecting-azure-container-apps-to-azure-openai-using-user-managed-identity-3369)
+- [GitHub - yoshioterada/Secure-OpenAI-Java-App-on-Azure-Container-Apps: Security is crucial for businesses today. Microsoft suggests using Managed Identity over passwords for connections, especially in secure environments like production. This approach uses Microsoft Entra ID authentication to enhance security.](https://github.com/yoshioterada/Secure-OpenAI-Java-App-on-Azure-Container-Apps)
+- [https://learn.microsoft.com/en-us/azure/developer/ai/passwordless-connections?tabs=csharp%2Cazure-cli](/azure/developer/ai/passwordless-connections)
+- <https://github.com/Azure-Samples/openai-chat-app-quickstart>
