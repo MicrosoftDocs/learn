@@ -3,7 +3,7 @@ uid: learn.dotnet-maui.design-a-mvvm-viewmodel.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "Introduction to the MVVM pattern"
+  description: "Introduction to the Model-View-ViewModel (MVVM) pattern"
   ms.date: 04/21/2024
   author: adegeo
   ms.author: adegeo
