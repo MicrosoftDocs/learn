@@ -36,7 +36,7 @@ Before you deploy VMware HCX Connector in the on-premises vCenter Server, downlo
 
 1. The URLs and user credentials for the Azure VMware Solution vCenter and NSX-T Manager appears. Use the copy feature to paste the credential information into the web browser on the jump host VM.
 
-     :::image type="content" source="../media/3-display-vmware-credentials.png" alt-text="Screenshot of where to find the vCenter and NSX sign-in information in the Azure portal."lightbox="../media/3-display-vmware-credentials.png":::
+     :::image type="content" source="../media/3-display-vmware-credentials.png" alt-text="Screenshot of where to find the vCenter Server and NSX sign-in information in the Azure portal."lightbox="../media/3-display-vmware-credentials.png":::
 
 1. Open a browser window within the jump host behind Azure Bastion. Sign in to the Azure VMware Solution VMware HCX Manager on `https://x.x.x.9` over port 443. Replace the x's with the CIDR address block used to configure with Azure VMware Solution.
 
@@ -62,15 +62,15 @@ Next, the VMware HCX Connector OVA file needs to be installed in the on-premises
 
 1. Right-click the vCenter Server datacenter and select **Deploy OVF Template**.
 
-    :::image type="content" source="../media/3-deploy-ovf-template.png" alt-text="Screenshot that shows how to deploy the OVA file downloaded for VMware HCX Connector on-premises in vCenter.":::
+    :::image type="content" source="../media/3-deploy-ovf-template.png" alt-text="Screenshot that shows how to deploy the OVA file downloaded for VMware HCX Connector on-premises in vCenter Server.":::
 
 1. Select the local VMware HCX Connector OVA file already downloaded from the Azure VMware Solution vSphere Client.
 
-    :::image type="content" source="../media/3-select-ovf-template-vmware-hcx.png" alt-text="Screenshot that shows how to select a local file when prompted, during the VMware HCX Connector deployment within vCenter on-premises."lightbox="../media/3-select-ovf-template-vmware-hcx.png":::
+    :::image type="content" source="../media/3-select-ovf-template-vmware-hcx.png" alt-text="Screenshot that shows how to select a local file when prompted, during the VMware HCX Connector deployment within vCenter Server on-premises."lightbox="../media/3-select-ovf-template-vmware-hcx.png":::
 
 1. For **Select a name and folder**, provide a name for the VMware HCX Connector appliance, select the datacenter resource, and select **Next**.
 
-    :::image type="content" source="../media/3-select-name-folder.png" alt-text="Screenshot of where to name the VMware HCX Connector appliance and where to select the datacenter within vCenter on-premises.":::
+    :::image type="content" source="../media/3-select-name-folder.png" alt-text="Screenshot of where to name the VMware HCX Connector appliance and where to select the datacenter within vCenter Server on-premises.":::
 
 1. For **Select a compute resource**, select the vSphere cluster, then select **Next**.
 
@@ -136,7 +136,7 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
 1. Use a username and password of an account that can access vCenter Server on-premises, then select **Continue**.
 
-    :::image type="content" source="../media/3-connect-vcenter-hcx.png" alt-text="Screenshot of where to configure a connection to the on-premises vCenter environment for the VMware HCX Connector appliance.":::
+    :::image type="content" source="../media/3-hcx-on-premises-connect-vcenter-server.png" alt-text="Screenshot of where to configure a connection to the on-premises vCenter Server environment for the VMware HCX Connector appliance."lightbox="../media/3-hcx-on-premises-connect-vcenter-server.png":::
   
 1. In **Configure SSO/PSC**, provide the FQDN or IP address of your Platform Services Controller, then select **Continue**.
 
