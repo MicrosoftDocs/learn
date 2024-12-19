@@ -1,4 +1,3 @@
-
 [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) is the Azure solution for identity and access management. Microsoft Entra ID is a multitenant, cloud-based directory, and identity management service. It combines core directory services, application access management, and identity protection into a single solution. Microsoft Entra ID can be used in cloud or hybrid environments. 
 
 :::image type="content" source="../media/on-premises-identities.png" alt-text="Diagram that shows how Microsoft Entra Connect syncs Active Directory Domain Services and Microsoft Entra ID." border="false":::
