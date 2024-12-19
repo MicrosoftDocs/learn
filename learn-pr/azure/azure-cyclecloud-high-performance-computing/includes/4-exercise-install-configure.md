@@ -32,7 +32,48 @@ Start by creating a Managed Identity.
 
 1. On the **Basics** tab of the **Create User Assigned Managed Identity** pane, select **Review + Create**, wait for the validation process to complete, and then select **Create**.
 
-## Task 2: Deploy an Azure CycleCloud Azure VM
+## Task 2: Create a Storage Account
+
+Next, create a storage account and assign the **Storage Blob Data Reader** role to your managed identity.
+
+1. In the web browser window displaying the Azure portal, use the search box to search for **Storage accounts**.
+
+1. On the **Storage accounts** page, select **+ Create**.
+
+1. On the **Basics** tab of the **Create storage account** pane, configure the following settings (leave others with their default values):
+
+    | Setting | Value |
+    | --- | --- |
+    | Subscription | Select the name of the Azure subscription you're using in this module. |
+    | Resource group | Select the **cyclecloud-rg** entry |
+    | Storage account name | Enter any globally unique name between 3 and 24 characters in length, consisting of letters and digits, and starting with a letter. |
+    | Location | Select the name of the Azure region in which you intend to deploy your clusters. |
+    | Performance | Select the **Standard** option. |
+    | Redundancy | Select the **Locally redundant storage (LRS)** entry. |
+
+1. On the **Basics** tab of the **Create storage account** pane, select **Review + Create**, wait for the validation process to complete, and then select **Create**.
+
+    > [!NOTE]
+    > Wait for the storage account provisioning to complete. This should take about one minute.
+
+1. Once the deployment has finished, select **Go to resource**.
+
+1. On the pane displaying the Azure storage account, in the vertical menu on the left side, select **Access control (IAM)**.
+   
+1. In the **Access control (IAM)** section, select **+ Add**, and in the drop-down menu, select **Add role assignment**.
+   
+1. In the **Add role assignment** section, configure the following settings (leave others with their default values):
+ 
+    | Setting | Value |
+    | --- | --- |
+    | Role | Select the **Storage Blob Data Reader** entry under **Job function roles**. |
+    | Assign access to | Select **Managed Identity**. |
+    | Select members | Select **User assigned managed identity** in the **Managed Identity** dropdown and **locker-mi** under **Select**. |
+ 
+1. In the list of results, select the entry representing the **locker-mi** Managed Identity, and then select **Select**. Then, select **Review + assign** in the bottom left.
+
+
+## Task 3: Deploy an Azure CycleCloud Azure VM
 
 Next, deploy an Azure virtual machine that hosts the Azure CycleCloud application by using its Azure Marketplace image.
 
@@ -118,7 +159,7 @@ Next, deploy an Azure virtual machine that hosts the Azure CycleCloud applicatio
 
 1. In the deployment section, select **Go to resource** to navigate to the **cyclecloud-vm** section.
 
-## Task 3: Connect to the Azure CycleCloud Azure VM
+## Task 4: Connect to the Azure CycleCloud Azure VM
 
 After you deploy the Azure CycleCloud web application to an Azure VM, you can connect to it with the public IP address assigned to the network interface of that VM. After you connect, you'll be prompted to complete an initial setup of the web application. During that initial setup, you define the application authentication settings. We recommend that you use the same username and SSH key pair that you chose when deploying the underlying Azure VM. The SSH key pair you define here provides authentication to cluster nodes.
 
@@ -154,12 +195,12 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
     > [!NOTE]
     > The **Add Subscription** pop-up window might appear at this point. If so, don't close this window or configure its settings at this stage. You configure these settings in the next exercise.
 
-## Task 4: Add an Azure subscription to Azure CycleCloud
+## Task 5: Add an Azure subscription to Azure CycleCloud
 
 To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option to address this requirement is to assign the Contributor role in the subscription to the Azure VM hosting the CycleCloud application. This option works if you enabled the system-assigned managed identity for that Azure VM. Because you configured this setting during the Azure VM deployment in the first task of this exercise, this is the approach you take.
 
 > [!NOTE]
-> CycleCloud doesn't require all permissions associated with the Contributor role. You have the option of defining a custom, more restrictive RBAC role and assigning it to the Azure VM hosting the CycleCloud application. This allows you to apply the principle of least privilege. For details, refer to [Using Managed Identities with CycleCloud](https://learn.microsoft.com/azure/cyclecloud/how-to/managed-identities?preserve-view=true&view=cyclecloud-8#create-a-custom-role-and-managed-identity-for-cyclecloud).
+> CycleCloud doesn't require all permissions associated with the Contributor role. You have the option of defining a custom, more restrictive RBAC role and assigning it to the Azure VM hosting the CycleCloud application. This allows you to apply the principle of least privilege. For details, refer to [Using Managed Identities with CycleCloud](~/azure/cyclecloud/how-to/managed-identities?preserve-view=true&view=cyclecloud-8#create-a-custom-role-and-managed-identity-for-cyclecloud).
 
 1. On your computer, switch to the web browser window displaying the Azure portal, and use the search box at the top of the portal interface to search for **Subscriptions**.
 
@@ -178,42 +219,6 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
     | Select members | Select **Virtual Machine** in the **Managed Identity** dropdown and **cyclecloud-vm** under **Select**. |
 
 1. In the list of results, select the entry representing the **cyclecloud-vm** Azure VM, and then select **Save**.
-
-1. In the web browser window displaying the Azure portal, use the search box to search for **Storage accounts**.
-
-1. On the **Storage accounts** page, select **+ Create**.
-
-1. On the **Basics** tab of the **Create storage account** pane, configure the following settings (leave others with their default values):
-
-    | Setting | Value |
-    | --- | --- |
-    | Subscription | Select the name of the Azure subscription you're using in this module. |
-    | Resource group | Select the **cyclecloud-rg** entry |
-    | Storage account name | Enter any globally unique name between 3 and 24 characters in length, consisting of letters and digits, and starting with a letter. |
-    | Location | Select the name of the Azure region in which you intend to deploy your clusters. |
-    | Performance | Select the **Standard** option. |
-    | Redundancy | Select the **Locally redundant storage (LRS)** entry. |
-
-1. On the **Basics** tab of the **Create storage account** pane, select **Review + Create**, wait for the validation process to complete, and then select **Create**.
-
-    > [!NOTE]
-    > Wait for the storage account provisioning to complete. This should take about one minute.
-
-1. Once the deployment has finished, select **Go to resource**.
-
-1. On the pane displaying the Azure storage account, in the vertical menu on the left side, select **Access control (IAM)**.
-   
-1. In the **Access control (IAM)** section, select **+ Add**, and in the drop-down menu, select **Add role assignment**.
-   
-1. In the **Add role assignment** section, configure the following settings (leave others with their default values):
- 
-    | Setting | Value |
-    | --- | --- |
-    | Role | Select the **Storage Blob Data Reader** entry under **Job function roles**. |
-    | Assign access to | Select **Managed Identity**. |
-    | Select members | Select **User assigned managed identity** in the **Managed Identity** dropdown and **locker-mi** under **Select**. |
- 
-1. In the list of results, select the entry representing the **locker-mi** Managed Identity, and then select **Select**. Then, select **Review + assign** in the bottom left.
 
 1. On your computer, switch to the web browser window displaying the Azure CycleCloud web application.
 
