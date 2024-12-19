@@ -140,7 +140,7 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
   
 1. In **Configure SSO/PSC**, provide the FQDN or IP address of your Platform Services Controller, then select **Continue**.
 
-    :::image type="content" source="../media/3-configure-sso-psc.png" alt-text="Screenshot for the configuration of single sign-on and Platform Services Controller for VMware HCX Connector on-premises.":::
+    :::image type="content" source="../media/3-hcx-system-configure-sso-psc.png" alt-text="Screenshot for the configuration of single sign-on and Platform Services Controller for VMware HCX Connector on-premises."lightbox="../media/3-hcx-system-configure-sso-psc.png":::
 
 1. On the next screen, verify that the information is correct and select **Restart**. A restart can take some time to complete.
 
