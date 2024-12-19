@@ -22,7 +22,7 @@ quiz:
       explanation: Incorrect. The `ICommand` interface is used to avoid handling events like `Clicked` and `Selected` in the code-behind, keeping the logic in the viewmodel.
     - content: It allows for the creation of custom classes for each event handler.
       isCorrect: false
-      explanation: Incorrect. The `ICommand` interface doesn't require the creation of custom classes for each event handler, it provides a way to encapsulate a method inside an object.
+      explanation: Incorrect. The `ICommand` interface doesn't require the creation of custom classes for each event handler. It provides a way to encapsulate a method inside an object.
     - content: It enables binding of UI interactions to properties that expose this interface, maintaining separation of UI behavior from UI implementation.
       isCorrect: true
       explanation: Correct. The `ICommand` interface allows for binding of UI interactions to properties, enabling separation of UI behavior from UI implementation.
