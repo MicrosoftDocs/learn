@@ -1,4 +1,4 @@
-In this Learn Module, we've covered all basics of Natural Language Processing, from text representation to traditional recurrent network models. This serves as an introductory lesson to get you started on any natural language task, and we hope that you'll now be able to approach any NLP problem without fear.
+In this Learn Module, we covered all basics of Natural Language Processing, from text representation to traditional recurrent network models. This serves as an introductory lesson to get you started on any natural language task, and we hope that you'll now be able to approach any NLP problem without fear.
 
 You've learned the following key areas:
   - How to tokenize text into word tokens based on a vocabulary
