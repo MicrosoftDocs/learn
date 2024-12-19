@@ -84,7 +84,7 @@ Later in the exercise, we run some Kusto queries to look at some Azure Cosmos DB
 
     1. Under the **Assigned access to** dropdown, select **Azure AD user, group, or service principal**.
 
-    1. Under the **Select** dropdown, search for the name of the managed identity we created. It should be in the format of ***<your-cosmosdb-account-name>-identity***.
+    1. Under the **Select** dropdown, search for the name of the managed identity we created.
 
     1. Select the **Save** button.
 
