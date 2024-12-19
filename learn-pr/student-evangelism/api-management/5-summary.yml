@@ -7,8 +7,9 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 06/30/2024
-  author: softchris
-  ms.author: chnoring
+  author: dlepow
+  ms.author: danlep
+  manager: susanpotter
   ms.topic: unit
 durationInMinutes: 4
 content: |
