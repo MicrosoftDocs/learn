@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-virtual-machine-availability.inteactive-lab-simulation-scaling
 title: Interactive lab simulation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Interactive lab simulation
   description: "Interactive lab simulation"
-  ms.date: 12/17/2024
+  ms.date: 12/19/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
