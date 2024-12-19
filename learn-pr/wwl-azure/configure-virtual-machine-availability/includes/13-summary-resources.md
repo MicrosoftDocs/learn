@@ -31,5 +31,5 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 - [Implement scale and high availability with Windows Server VM](/training/modules/implement-scale-high-availability-windows-server-virtual-machine/). You learn how to implement scaling for virtual machine scale sets and load-balanced VMs. You also learn how to implement Azure Site Recovery.
 
-- [Introduction to Azure Virtual Machine Scale Sets](/raining/modules/intro-to-azure-virtual-machine-scale-sets/). Learn about what Azure Virtual Machine Scale Sets do, how they work, and when you should use Azure Virtual Machine Scale Sets as a solution for your organization.
+- [Introduction to Azure Virtual Machine Scale Sets](/training/modules/intro-to-azure-virtual-machine-scale-sets/). Learn about what Azure Virtual Machine Scale Sets do, how they work, and when you should use Azure Virtual Machine Scale Sets as a solution for your organization.
 
