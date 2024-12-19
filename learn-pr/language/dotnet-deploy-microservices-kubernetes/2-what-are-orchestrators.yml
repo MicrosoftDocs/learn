@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: What are orchestrators?
   description: Orchestrators help with the manual tasks of managing containerized microservices. Learn about what they do and how Kubernetes fits in.
-  ms.date: 11/06/2023
+  ms.date: 12/06/2024
   author: codemillmatt
   ms.author: masoucou  
   ms.topic: unit  
