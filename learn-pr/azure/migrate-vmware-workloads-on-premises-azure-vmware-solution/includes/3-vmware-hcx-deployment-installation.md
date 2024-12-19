@@ -144,14 +144,14 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
 1. On the next screen, verify that the information is correct and select **Restart**. A restart can take some time to complete.
 
-    :::image type="content" source="../media/3-finish-configuration-hcx-manager.png" alt-text="Screenshot of the end of configuring VMware HCX Manager on-premises.":::
+    :::image type="content" source="../media/3-finish-configuration-hcx-on-premises.png" alt-text="Screenshot of the end of configuring VMware HCX Connector on-premises."lightbox="../media/3-finish-configuration-hcx-on-premises.png":::
 
-1. After the appliance restarts, sign back in to the VMware HCX Manager on-premises.
+1. After the appliance restarts, sign back in to the VMware HCX Connector on-premises.
 
-1. If configured correctly, vCenter appears with a green circle after you sign in.
+1. If configured correctly, vCenter Server appears with a green circle after you sign in.
 
 1. Additionally, SSO indicates that VMware HCX Connector is configured to use the Platform Services Controller on-premises.
 
-    :::image type="content" source="../media/3-hcx-restart-green.png" alt-text="Screenshot of vCenter and Platform Services Controller SSO configured correctly in the on-premises VMware HCX Connector appliance.":::
+    :::image type="content" source="../media/3-hcx-on-premises-configuration-restart-green.png" alt-text="Screenshot of vCenter and Platform Services Controller SSO configured correctly in the on-premises VMware HCX Connector appliance."lightbox="../media/3-hcx-on-premises-configuration-restart-green.png":::
 
 In the next unit, we'll cover how to set up a site pairing, add networking profiles, and add a compute profile.
