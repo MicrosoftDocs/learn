@@ -13,10 +13,21 @@ You can pass in this options instance as the last parameter to the **CosmosClien
 CosmosClient client = new (endpoint, credential, options);  
 ```
 
-This options parameter can also be used if you're using a connection string constructor.
+This options parameter can also be used if you're using a managed identity.
 
 ```csharp
-CosmosClient client = new (connectionString, options);
+using Azure.Identity;
+using Microsoft.Azure.Cosmos;
+
+// Configure the account endpoint
+string accountEndpoint = "https://<cosmos-account-name>.documents.azure.com:443/";
+
+// Use DefaultAzureCredential to authenticate with Managed Identity
+DefaultAzureCredential credential = new DefaultAzureCredential();
+
+// Create CosmosClient with the account endpoint and Managed Identity
+CosmosClient client = new CosmosClient(accountEndpoint, credential);
+
 ```
 
 For context, how do we usually perform a single *Create Item* operation? Here, we invoke the **CreateItemAsync** method, which returns a **Task**, which is in turn immediately invoked using the **await** keyword, so we never really handle the **Task** object. It’s just a syntax shortcut to make our code easier to read.
@@ -56,7 +67,7 @@ foreach(Product product in productsToInsert)
 }
 ```
 
-For each product in the products list, add a task to create an item in our Azure Cosmos DB for NoSQL container. How much simpler can it get? Remember, no action has been taken yet. Even better, no other Azure Cosmos DB-specific code specific code has been written other than the **container.CreateItemAsync** part. All this code is written in C#.
+For each product in the products list, add a task to create an item in our Azure Cosmos DB for NoSQL container. How much simpler can it get? Remember, no action is yet taken. Even better, no other Azure Cosmos DB-specific code specific code is written other than the **container.CreateItemAsync** part. All this code is written in C#.
 
 When we invoke **Task.WhenAll**, the SDK kicks in to create batches to group our operations by physical partition, then distribute the requests to run concurrently. Grouping operations greatly improves efficiency by reducing the number of back-end requests, and allowing batches to be dispatched to different physical partitions in parallel. It also reduces thread count on the client making it easier to consume more throughput that you could if done as individual operations using individual threads.
 
