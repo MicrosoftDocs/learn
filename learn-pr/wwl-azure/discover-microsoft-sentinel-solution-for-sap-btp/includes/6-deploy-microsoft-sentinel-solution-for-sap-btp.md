@@ -20,7 +20,6 @@ To set up the BTP account and the solution:
     :::image type="content" source="../media/btp-audit-log-management-service.png" alt-text="Screenshot that shows selecting the BTP Audit Log Management Service." lightbox="../media/btp-audit-log-management-service.png":::
 
 1. Create an instance of the Audit Log Management Service in the BTP subaccount.
-    :::image type="content" source="../media/btp-audit-log-sub-account.png" alt-text="Screenshot that shows creating an instance of the BTP subaccount." lightbox="../media/btp-audit-log-sub-account.png":::
 
 1. Create a service key and record the values for `url`, `uaa.clientid`, `uaa.clientecret`, and `uaa.url`. These values are required to deploy the data connector. For example:
     - **url**: `https://auditlog-management.cfapps.us10.hana.ondemand.com`

@@ -2,7 +2,7 @@ The Microsoft Sentinel solution for SAP BTP Activity Workbook provides a dashboa
 
 ## Overview tab
 
-:::image type="content" source="../media/sap-btp-workbook-btp-overview.png" alt-text="Screenshot of the Overview tab of the SAP BTP workbook." lightbox="../media/sap-btp-workbook-btp-overview.png":::
+:::image type="content" source="../media/sap-btp-workbook-btp-overview.png" alt-text="Screenshot of the Overview tab of the SAP BTP workbook.":::
 
 The **Overview** tab shows:
 
@@ -12,7 +12,7 @@ The **Overview** tab shows:
 
 ## Identity Management tab
 
-:::image type="content" source="../media/sap-btp-workbook-identity-management.png" alt-text="Screenshot of the Identity Management tab of the SAP BTP workbook." lightbox="../media/sap-btp-workbook-identity-management.png":::
+:::image type="content" source="../media/sap-btp-workbook-identity-management.png" alt-text="Screenshot of the Identity Management tab of the SAP BTP workbook.":::
 
 The **Identity Management** tab shows a grid of identity management events, such as user and security role changes, in a human-readable format. The search bar lets you quickly find specific changes.
 
