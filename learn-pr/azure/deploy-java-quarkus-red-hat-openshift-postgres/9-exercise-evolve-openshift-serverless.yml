@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.9-exercise-evolve-openshift-serverless
+title: Exercise - Evolve the ToDo application to OpenShift Serverless
+metadata:
+  title: Exercise - Evolve the ToDo application to OpenShift Serverless
+  description: In this exercise, follow the steps to evolve the ToDo application to OpenShift Serverless
+  ms.date: 10/18/2024
+  author: danieloh
+  ms.author: edburns
+  ms.topic: unit
+  ms.custom: team=devdiv, devx-track-extended-java, devx-track-azurecli
+  ms.contributors: edburns
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-exercise-evolve-openshift-serverless.md)]
