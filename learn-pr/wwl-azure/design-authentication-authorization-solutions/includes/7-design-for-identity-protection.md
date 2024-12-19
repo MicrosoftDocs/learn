@@ -1,4 +1,3 @@
-
 [Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection) is a tool that allows organizations to accomplish three key tasks:
 
 - [Automate the detection and remediation of identity-based risks](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
