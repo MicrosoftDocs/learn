@@ -1,4 +1,3 @@
-
 An employee of a company might work in several different roles during their tenure. Each position they hold can require access to different resources or have varying levels of permissions requirements. When an employee is first hired, they need initial access to corporate resources and apps. For each position they hold, they can have specific access requirements and privileges. When the employee leaves the company, their access is removed.
 
 :::image type="content" source="../media/employee-access-lifecycle.png" alt-text="Diagram that shows identity management for an employee from their hire date, to access for specific roles, to their access removed when they leave the company." border="false":::

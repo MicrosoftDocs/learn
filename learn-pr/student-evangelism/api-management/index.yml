@@ -6,9 +6,10 @@ metadata:
   title: Manage your generative AI APIs with Azure API Management
   description: Learn how to manage generative AI APIs with Azure API Management.
   ms.date: 06/30/2024
-  author: softchris
-  ms.author: chnoring
-  ms.topic: module
+  author: dlepow
+  ms.author: danlep
+  manager: susanpotter
+  ms.topic: module-standard-task-based
   ms.service: azure-api-management
 title: Manage your generative AI APIs with Azure API Management
 summary: This module will help you understand how to manage APIs at scale with Azure API Management. Specifically it will show how to interact with Azure OpenAI service.
@@ -27,7 +28,8 @@ products:
   - vs
   - azure
   - azure-api-management
-prerequisites: None
+prerequisites: |
+  - An Azure subscription
 units:
   - learn.api-management.introduction
   - learn.api-management.api-management
