@@ -44,7 +44,7 @@ To create your DNS zone:
 
 1. Select **Record Sets** from the top menu bar.
 
-   By default, the NS, and SOA record sets are automatically created and automatically deleted whenever a DNS zone is created or deleted. The NS record set defines the Azure DNS namespaces and contains the four Azure DNS records. You use all four records when you update the registrar.
+   By default, the NS and SOA record sets are automatically created whenever a DNS zone is created, and automatically deleted whenever a DNS zone deleted. The NS record set defines the Azure DNS namespaces and contains the four Azure DNS records. You use all four records when you update the registrar.
 
    The SOA record represents your domain, and is used when other DNS servers are searching for your domain.
 

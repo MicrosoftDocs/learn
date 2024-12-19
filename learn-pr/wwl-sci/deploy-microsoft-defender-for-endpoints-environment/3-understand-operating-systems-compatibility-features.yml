@@ -4,13 +4,12 @@ title: Understand operating systems compatibility and features
 metadata:
   title: Understand operating systems compatibility and features
   description: "Understand operating systems compatibility and features"
-  ms.date: 02/17/2023
+  ms.date: 12/19/2024
   author: wwlpublish
   ms.author: kelawson
   ms.topic: unit
-  ms.custom: linux-related-content
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-understand-operating-systems-compatibility-features.md)]

@@ -2,7 +2,7 @@ Microsoft Entra External Identities is a feature that makes it possible for you 
 
 ## Invitation redemption flow
 
-## :::image type="content" source="../media/business-to-business-invitation-redemption-3caadd6b.png" alt-text="Diagram of the redemption of an external invitation to join Microsoft Entra tenant as a guest."::: 
+## :::image type="content" source="../media/business-to-business-invitation-redemption-3caadd6b-822c0b2a.png" alt-text="Diagram of the redemption of an external invitation to join Microsoft Entra tenant as a guest."::: 
 
 1.  Microsoft Entra ID performs user-based discovery to determine if the user already exists in a managed Microsoft Entra tenant. (Unmanaged Microsoft Entra accounts can no longer be used for redemption.) If the user’s User Principal Name (UPN) matches both an existing Microsoft Entra account and a personal MSA, the user is prompted to choose which account they want to redeem with.
 2.  If an admin has enabled SAML/WS-Fed IdP federation, Microsoft Entra ID checks if the user’s domain suffix matches the domain of a configured SAML/WS-Fed identity provider and redirects the user to the pre-configured identity provider.
@@ -35,7 +35,7 @@ This unit describes how to enable Microsoft Entra B2B collaboration. Then, we ex
 
 By default, all users and guests in your directory can invite guests even if they're not assigned to an admin role. External collaboration settings let you turn guest invitations on or off for different types of users in your organization. You can also delegate invitations to individual users by assigning roles that allow them to invite guests.
 
-Microsoft Entra ID allows you to restrict what external guest users can see in your Microsoft Entra directory. By default, guest users are granted a limited permission level. The guests are blocked from listing users, groups, or other directory resources, but the guests can see membership of non-hidden groups. Admins can change the guest permissions setting allowing you to restrict guest access even further, so that guests can only view their own profile information. For details, see [Restrict guest access permissions](/azure/active-directory/enterprise-users/users-restrict-guest-permissions).
+Microsoft Entra ID allows you to restrict what external guest users can see in your Microsoft Entra directory. By default, guest users are granted a limited permission level. The guests are blocked from listing users, groups, or other directory resources, but the guests can see membership of non-hidden groups. Admins can change the guest permissions setting allowing you to restrict guest access even further, so that guests can only view their own profile information. For details, see [Restrict guest access permissions](/entra/identity/users/users-restrict-guest-permissions).
 
 ## Configure business-to-business external collaboration settings
 
