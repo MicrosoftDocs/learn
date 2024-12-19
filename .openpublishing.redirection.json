@@ -36085,6 +36085,11 @@
       "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/automate-workflow-github-actions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/github-actions/",
+      "redirect_document_id": false
     }
   ]
 }

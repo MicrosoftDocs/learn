@@ -4350,5 +4350,10 @@ achievements:
 - uid: learn.pytorch.intro-computer-vision.badge
   type: badge
   title: Introduction to Computer Vision with PyTorch
-  summary: LWe'll learn about different computer vision tasks and focus on image classification, learning how to use neural networks to classify handwritten digits, as well as some real-world images, such as photographs of cats and dogs. We'll be using one of the most popular deep learning frameworks, PyTorch!
+  summary: We'll learn about different computer vision tasks and focus on image classification, learning how to use neural networks to classify handwritten digits, as well as some real-world images, such as photographs of cats and dogs. We'll be using one of the most popular deep learning frameworks, PyTorch!
   iconUrl: /training/achievements/pytorch-computer-vision.svg
+- uid: learn.automate-workflow-github-actions.trophy
+  type: trophy
+  title: Automate your workflow with GitHub Actions
+  summary: Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.
+  iconUrl: /training/achievements/github/automate-workflow-github-actions.svg
