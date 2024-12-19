@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "One month"
       isCorrect: false
-      explanation: "Incorrect.  The default is six months."
+      explanation: "Incorrect. The default is six months."
     - content: "Six months"
       isCorrect: true
-      explanation: "Correct.  The default is six months."
+      explanation: "Correct. The default is six months."
     - content: "Three months"
       isCorrect: false
-      explanation: "Incorrect.  The default is six months."
+      explanation: "Incorrect. The default is six months."
   - content: "Which of the following options is a valid Microsoft Defender XDR for Endpoint onboarding option for Windows 10 devices?"
     choices:
     - content: "Group policy"
@@ -34,7 +34,7 @@ quiz:
       explanation: "Correct. Group policy is a valid deployment option."
     - content: "Microsoft Store"
       isCorrect: false
-      explanation: "Incorrect.  There isn't an option in the Microsoft store."
+      explanation: "Incorrect. There isn't an option in the Microsoft store."
     - content: "General install package"
       isCorrect: false
       explanation: "Incorrect. This isn't a valid deployment option."
@@ -42,10 +42,10 @@ quiz:
     choices:
     - content: "Manage security settings in Security Center"
       isCorrect: false
-      explanation: "Incorrect.  This permission doesn't allow the configuration of storage settings."
+      explanation: "Incorrect. This permission doesn't allow the configuration of storage settings."
     - content: "Manage portal system settings"
       isCorrect: true
-      explanation: "Correct.  This permission allows the configuration of storage settings."
+      explanation: "Correct. This permission allows the configuration of storage settings."
     - content: "Advanced commands"
       isCorrect: false
-      explanation: "Incorrect.  This permission doesn't allow the configuration of storage settings."
+      explanation: "Incorrect. This permission doesn't allow the configuration of storage settings."
