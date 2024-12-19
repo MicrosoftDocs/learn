@@ -26,7 +26,7 @@ quiz:
       explanation: "That is correct. The Microsoft Sentinel solution for SAP BTP is designed to monitor and protect your SAP BTP system."
     - content: "It provides low-code development capabilities for SAP BTP."
       isCorrect: false
-      explanation: "That is incorrect. While SAP BTP does offer low-code development, this is not a feature provided by the Microsoft Sentinel solution for SAP BTP."
+      explanation: "That is incorrect. While SAP BTP does offer low-code development, this isn't a feature provided by the Microsoft Sentinel solution for SAP BTP."
   - content: "What are the capabilities of the Microsoft Sentinel solution for SAP BTP?"
     choices:
     - content: "It monitors both on-premises and SaaS SAP environments."
@@ -42,7 +42,7 @@ quiz:
     choices:
     - content: "It provides a detailed log of all BTP security alerts."
       isCorrect: false
-      explanation: "That is incorrect. While it does show the number of BTP security alerts, it does not provide a detailed log."
+      explanation: "That is incorrect. While it does show the number of BTP security alerts, it doesn't provide a detailed log."
     - content: "It displays BTP subaccounts, sign-in activity, and a timeline of BTP activity and security alerts."
       isCorrect: true
       explanation: "That is correct. The Overview tab helps analysts identify active accounts, sign-in trends, and any correlation between BTP activity and security alerts."
