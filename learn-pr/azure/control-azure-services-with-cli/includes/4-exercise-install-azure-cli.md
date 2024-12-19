@@ -21,13 +21,13 @@ and how to install the latest version.
 > [!div class="nextstepaction"]
 > [Latest MSI of the Azure CLI (64-bit)](https://aka.ms/installazurecliwindowsx64)
 
-  If you have previously installed the Azure CLI, running either the 32-bit or 64-bit MSI will overwrite an existing installation.
+  If you previously installed the Azure CLI, running either the 32-bit or 64-bit Microsoft installer (MSI) overwrites an existing installation.
 
 1. After the installation is complete, **close and reopen any active terminal window to use the Azure CLI**.
 
 1. Open a Windows Command Prompt to run the Azure CLI.
 
-This exercise guided you through using the Microsoft Installer. For additional Windows installation options, see [Install Azure CLI on Windows](/cli/azure/install-azure-cli-windows)
+This exercise guided you through using the Microsoft Installer. For more Windows installation options, see [Install Azure CLI on Windows](/cli/azure/install-azure-cli-windows)
 
 ::: zone-end
 
@@ -49,7 +49,7 @@ This exercise guided you through using the Microsoft Installer. For additional W
    curl -L https://aka.ms/InstallAzureCli | bash
    ```
 
-For additional Linux installation options, including the supported versions of Ubuntu and Debian, see [Install Azure CLI on Linux](/cli/azure/install-azure-cli-linux)
+For more Linux installation options, including the supported versions of Ubuntu and Debian, see [Install Azure CLI on Linux](/cli/azure/install-azure-cli-linux)
 
 ::: zone-end
 
@@ -118,7 +118,7 @@ So, how do you find the particular commands you need? One way is to use `az find
 
 ## Get help on Azure CLI commands
 
-If you already know the name of the command you want, the `--help` argument for that command will get you more detailed information on the command and a list of the available subcommands for a command group. So, with our storage example, here's how you can get a list of the subgroups and commands for managing blob storage:
+If you already know the name of the command you want, the `--help` argument for that command gets you more detailed information on the command and a list of the available subcommands for a command group. So, with our storage example, here's how you can get a list of the subgroups and commands for managing blob storage:
 
 ```azurecli
 az storage blob --help
@@ -126,12 +126,12 @@ az storage blob --help
 
 ## Connect to Azure
 
-When you're working with a local install of the Azure CLI, you'll need to authenticate before you can execute Azure commands by using the Azure CLI **login** command.
+When you're working with a local install of the Azure CLI, you need to authenticate before you can execute Azure commands by using the Azure CLI **login** command.
 
 ```azurecli
 az login
 ```
 
-The Azure CLI will typically launch your default browser to open the Azure sign-in page. If this doesn't work, follow the command-line instructions and enter an authorization code at [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
+The Azure CLI typically launches your default browser to open the Azure sign-in page. If the Azure sign-in page doesn't launch, follow the command-line instructions and enter an authorization code at [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
 After successfully signing in, you'll be connected to your Azure subscription.

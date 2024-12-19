@@ -48,11 +48,11 @@ subscription.
 Here are some handy tips when authenticating to Azure with Azure CLI:
 
 - If running the Azure CLI in Azure Cloud Shell ...
-  - You are authenticated automatically.
+  - You're authenticated automatically.
   - You might need to change your default subscription.
 
 - When running the Azure CLI through a local installation ...
-  - You are prompted for your Azure credentials.
+  - You're prompted for your Azure credentials.
   - There is a subscription selector at time of login.
 
 ### 2 - Work with subscriptions
@@ -114,7 +114,7 @@ For a more concise view, you can return the list in a table:
 az group list --output table
 ```
 
-When you are developing and testing an Azure CLI script, it's best to create a resource group that contains a random ID in the name. Adding a random ID to your resource group name allows you to retest your code without having to wait for a prior resource group of the same name to be removed from Azure.
+When you're developing and testing an Azure CLI script, it's best to create a resource group that contains a random ID in the name. Adding a random ID to your resource group name allows you to retest your code without having to wait for a prior resource group of the same name to be removed from Azure.
 
 ```azurecli
 # Bash script
@@ -134,7 +134,7 @@ The `az vm create` command is used to create a VM. This command has several para
 - **name**: The name of the VM in Azure.
 - **location**: The geographic region where the VM is provisioned.
 - **image**: The operating system image to use for the VM, typically a Linux distribution or Windows Server.
-- **admin-username**: Administrator username for the VM. You'll be prompted to enter a password at the command line.
+- **admin-username**: Administrator username for the VM. You're prompted to enter a password at the command line.
 
 Here's a Bash script example:
 

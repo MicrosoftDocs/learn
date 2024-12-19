@@ -36,7 +36,7 @@ create a virtual machine:
 ![Screenshot of VS Code with a PowerShell script to create a virtual machine in Azure.](../media/7-vs-code-azure-cli-extension-screenshot.png)
 
 Once you create a script, you can execute it from the command line by passing the name of
-the file preceded by a dot for the current directory and a backslash:
+the file. Precede the file name with a dot for the current directory and a backslash:
 
 ```bash
 .\myScript.sh
@@ -44,7 +44,7 @@ the file preceded by a dot for the current directory and a backslash:
 
 ## Bash techniques
 
-Bash includes features commonly found in programming languages. For the script you're focusing on in this exercise, you will be using three key features: variables, loops, and parameters..
+Bash includes features commonly found in programming languages. For the script you're focusing on in this exercise, you are using three key features: variables, loops, and parameters.
 
 ### Variables
 
@@ -98,7 +98,7 @@ do
 done
 ```
 
-Your output should look similar to this:
+The output looks like this:
 
 ```output
 loop 1 for msdocs
@@ -153,7 +153,7 @@ done
 Save the script as `msdocs-script.sh` and run it from a Bash command line, providing the
 required parameters:
 
-```powershell
+```bash
 # make your file executable
 chmod +x msdocs-script.sh
 

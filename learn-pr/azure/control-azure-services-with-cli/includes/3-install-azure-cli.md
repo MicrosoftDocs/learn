@@ -10,11 +10,11 @@ preferred operating system on their local computers.
 
 The Azure CLI is made up of two types of reference command groups: core and extension.
 
-* **Core:** Azure CLI references that have been published as a permanent part of the CLI are called **core references**. All core references install with the Azure CLI and you can't choose a subset of references. If you run the CLI through Azure Cloud Shell, core references are always up to date.
+* **Core:** Azure CLI references that are published as a permanent part of the CLI are called **core references**. All core references install with the Azure CLI and you can't choose a subset of references. If you run the CLI through Azure Cloud Shell, core references are always up to date.
 
 * **Extensions:** Extensions aren't shipped as part of the CLI but run as CLI commands. Some extensions are a permanent part of the Azure CLI, but often, an extension gives you access to preview and experimental commands. A single reference group, such as `az iot`, can have both core and extension commands.
 
-To execute Azure CLI commands you need to install **core** references on your local computer, or run Azure Cloud Shell which has core references preinstalled. You are prompted to install extension references the first time you try to use the command.
+To execute Azure CLI commands, you need to install **core** references on your local computer, or run Azure Cloud Shell which has core references preinstalled. You're prompted to install extension references the first time you try to use the command.
 
 ## Where to install Azure CLI
 
@@ -25,7 +25,7 @@ The Azure CLI can be installed in several locations:
 * macOS
 * Docker containers
 
-You do not need to install the Azure CLI in Azure Cloud Shell -- core references are preinstalled.
+You don't need to install the Azure CLI in Azure Cloud Shell -- core references are preinstalled.
 
 ## How to install Azure CLI
 
@@ -61,11 +61,11 @@ You can execute Azure CLI in your environment of choice.
 * Windows Cmd shell
 * Azure Cloud Shell
 
-It is important to be aware of environment syntax differences when deciding what environment to use. An Azure CLI script tested in PowerShell 7 might not execute in Windows PowerShell or Bash due to one or more of the following scripting differences:
+It's important to be aware of environment syntax differences when deciding what environment to use. An Azure CLI script tested in PowerShell 7 might not execute in Windows PowerShell or Bash due to one or more of the following scripting differences:
 
 * Line continuation characters
 * Variables
 * Random identifiers
 * Quoting
 
-As you onboard with Azure CLI, the [Learn Azure CLI syntax differences in Bash, PowerShell and Cmd](/cli/azure/get-started-tutorial-2-environment-syntax?tabs=Bash) tutorial step can help you learn more.
+As you onboard with Azure CLI, the [Learn Azure CLI syntax differences in Bash, PowerShell, and Cmd](/cli/azure/get-started-tutorial-2-environment-syntax?tabs=Bash) tutorial step can help you learn more.

@@ -15,118 +15,71 @@ Follow these steps to write a script in Azure Cloud Shell that automates the cre
 machines.
 
 > [!NOTE]
-> Usually, you'd authenticate to Azure using your credentials with `Connect-AzAccount`, but in
+> Usually, you'd authenticate to Azure using your credentials with `az login`, but in
 > Cloud Shell, you're already authenticated, so this step is unnecessary.
 
-1. Switch to your home folder:
+1. Open Azure Cloud Shell through the Azure portal or by using the **Open Cloud Shell** button located in the top right corner of many Azure CLI code blocks.
+
+1. Set your Azure subscription
+
+   ```azurecli-interactive
+   az account set --subscription "my subscription name or ID"
+   ```
+
+1. Using a text editor of choice, save the following script to your local drive.
 
    ```azurecli
-   Set-Location -Path $HOME
+   #!/bin/bash
+    
+   # Assign parameters to variables
+   vmCount=$1
+   resourceGroupPrefix=$2
+   location=$3
+   vmNamePrefix=$4
+   adminUserPrefix=$5
+   shift 5
+   images=("$@")
+       
+   # Loop 
+   for i in $(seq 1 $vmCount)
+   do
+     let "randomIdentifier=$RANDOM*$RANDOM"
+     resourceGroupName=$resourceGroupPrefix-$randomIdentifier
+     adminUserName=$adminUserPrefix-$randomIdentifier
+     VMname=$vmNamePrefix-$randomIdentifier
+     VMimage=${images[$((i-1)) % ${#images[@]}]}
+
+     echo "Creating VM $name in $resourceGroupName on $image with admin $adminUserName"
+     
+     az group create --name $resourceGroupName --location $location
+
+     az vm create \
+         --resource-group $resourceGroupName \
+         --location $location \
+         --name $VMname \
+         --generate-ssh-keys \
+         --admin-username $adminUserName \
+         --image $VMimage
+
+   done
+
    ```
 
-1. Create a new PowerShell script file:
-
-   ```azurecli
-   New-Item -Name ConferenceDailyReset.ps1 -ItemType File
-   ```
-
-1. Open the integrated Visual Studio Code (VS Code) editor:
-
-   ```azurecli
-   code ./ConferenceDailyReset.ps1
-   ```
-
-   > [!TIP]
-   > The integrated Cloud Shell editor also supports vim, nano, and emacs if you prefer to use one
-   > of those editors.
-
-1. Define a parameter for your resource group name:
-
-   Add the following line to your script:
-
-   ```azurecli
-   param (
-       [string]$ResourceGroupName
-   )
-   ```
-
-1. Prompt for VM administrator credentials:
-
-   ```azurecli
-   $adminCredential = Get-Credential -Message 'Enter a username and password for the VM administrator.'
-   ```
-
-1. Create a loop to execute three times:
-
-   ```azurecli
-   $vms = 'web','app','sql'
-   foreach ($vm in $vms) {
-       $vm
-   }
-   ```
-
-1. In the loop, return the name for each VM:
-
-   ```azurecli
-   Write-Output "Creating VM: $vm"
-   ```
-
-1. Create a VM using the `$vm` variable:
-
-   ```azurepowershell
-   $azVmParams = @{
-       ResourceGroupName = $ResourceGroupName
-       Name              = $vm
-       Credential        = $adminCredential
-       Image             = 'Canonical:0001-com-ubuntu-server-jammy:22_04-lts:latest'
-       OpenPorts         = 22
-   }
-   New-AzVm @azVmParams
-   ```
-
-1. Save the file:
-
-   To save the script, use the ellipsis (`...`) context menu at the top-right corner of the editor
-   or the <kbd>Ctrl</kbd> + <kbd>S</kbd> keyboard shortcut.
-
-### Completed script
-
-The completed script should look like the following example:
-
-```azurepowershell
-param (
-    [string]$ResourceGroupName
-)
-
-$adminCredential = Get-Credential -Message 'Enter a username and password for the VM administrator.'
-
-$vms = 'web','app','sql'
-
-foreach ($vm in $vms) {
-
-    Write-Output "Creating VM: $vm"
-
-    $azVmParams = @{
-        ResourceGroupName = $ResourceGroupName
-        Name              = $vm
-        Credential        = $adminCredential
-        Image             = 'Canonical:0001-com-ubuntu-server-jammy:22_04-lts:latest'
-        OpenPorts         = 22
-    }
-    New-AzVm @azVmParams
-}
-```
-
-Once you confirm your script looks like the code in the previous example, close the editor using the
-ellipsis (`...`) context menu at the top-right corner of the editor, or the <kbd>Ctrl</kbd> +
-<kbd>Q</kbd> keyboard shortcut.
+1. Upload the file to your Cloud Shell drive. The easiest way is to use the **Manage files** menu option.
 
 ## Run the script
 
 1. Execute the script using the following command:
 
-   ```azurecli
-   ./ConferenceDailyReset.ps1 -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+   ```bash
+   # make your file executable
+   chmod +x msdocs-script.sh
+   
+   # remove Windows line continuation characters
+   sed -i -e 's/\r$//' msdocs-script.sh
+   
+   # Run the script
+   ./msdocs-script.sh 3 msdocs-rg eastus2 msdocsvm msdocsadmin Debian11 Debian11 Ubuntu2204  
    ```
 
 1. Wait for completion. The script takes several minutes to complete.
@@ -134,8 +87,8 @@ ellipsis (`...`) context menu at the top-right corner of the editor, or the <kbd
 1. Verify the VMs. Once the script finishes, verify it completed successfully by listing the VMs in
    the resource group:
 
-   ```azurepowershell
-   Get-AzVM -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+   ```azurecli
+   az vm list -o table
    ```
 
    You should see three VMs, each with a unique name.
@@ -144,3 +97,44 @@ You successfully created a script that automates the creation of three VMs, each
 resource group, ensuring they're ready for daily demos at the trade show. Although the script is
 short and straightforward, it significantly speeds up a process that would otherwise be
 time-consuming and error-prone if performed manually through the Azure portal.
+
+## Cleanup resources (optional)
+
+   If you want, delete the resource groups you created. Deleting resource groups removes all Azure resources in the resource group.
+
+   Delete a single resource group by name:
+
+   ```azurecli
+   # Delete a single resource group
+   az group delete --name msdocs-00000
+   ```
+
+   Run a script to delete all resource groups with a similar name:
+
+   ```dotnetcli
+   # Set your subscription
+   subscriptionID=00000000-0000-0000-0000-00000000
+   az account set --subscription $subscriptionID
+   
+   # Set your log file location
+   logFileLocation="myLogName.txt"
+   
+   # Get the name of all resource groups that start with 'msdocs'
+   az group list --query "[?starts_with(name, 'msdocs') == \`true\`].name" -o table
+   
+   # Delete resource groups without a confirmation prompt (--yes)
+   # Do not wait for the operation to finish (--no-wait)
+   echo "Deleting resource groups">$logFileLocation
+   for rgList in $(az group list --query "[?starts_with(name, 'msdocs') == \`true\`].name" -o tsv); 
+   do
+       echo "deleting resource group $rgList">>$logFileLocation
+       az group delete --name $rgList --yes --no-wait
+   done
+   
+   # read your log file with Linux "cat" command
+   clear
+   cat $logFileLocation
+   
+   # get a list of resource groups and their status
+   az group list --output table
+   ```
