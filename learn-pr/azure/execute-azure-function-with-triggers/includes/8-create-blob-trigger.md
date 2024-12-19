@@ -22,7 +22,7 @@ Let's continue using your existing Azure Functions application and add a blob tr
 
 1. Accept the default value for the **Path** field.
 
-1. Under the **Storage account connection** dropdown list, select the **New** link. In the **New Storage Account connection** dialog box, select the storage account for this function app, and then select **OK**.
+1. Under the **Storage account connection** dropdown list, select the **New** link. In the **New Storage Account connection** dialog box, select the storage account for this function app (which should start with *learn*), and then select **OK**.
 
 1. Select **Create** to create the function.
 

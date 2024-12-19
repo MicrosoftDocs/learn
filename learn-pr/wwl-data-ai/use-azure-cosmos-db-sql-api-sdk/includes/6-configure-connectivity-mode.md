@@ -6,7 +6,7 @@ The **CosmosClientOptions** class provides a range of options that you can confi
 
 ## Overriding default client options
 
-When connecting to an Azure Cosmos DB account using the **CosmosClient** class, there are a few assumptions that the client makes:
+When you connect to an Azure Cosmos DB account using the **CosmosClient** class, there are a few assumptions that the client makes:
 
 - That you want to connect to the first writable (primary) region of your account
 - That you use the default consistency level for the account with your read requests
@@ -15,22 +15,22 @@ When connecting to an Azure Cosmos DB account using the **CosmosClient** class, 
 > [!NOTE]
 > There are other assumptions that aren't listed here. These assumptions can also be configured with the **CosmosClient** class.
 
-To configure the client, you need to create an instance of the **CosmosClientOptions** class and pass in that instance as the last parameter to the **CosmosClient** constructor. Here are two examples using the constructors discussed earlier in this module.
+To configure the client, you need to create an instance of the CosmosClientOptions class and pass it as the last parameter to the CosmosClient constructor. Using Microsoft Entra ID Managed Identity for authentication ensures secure access to Azure Cosmos DB without exposing secrets like connection strings or keys.
 
-You can either use the constructor that takes in an endpoint and key:
-
-```csharp
-CosmosClientOptions clientOptions = new();
-
-CosmosClient client = new (endpoint, key, options);
-```
-
-Or, use the constructor that takes in a connection string:
+Here’s an example using Microsoft Entra Managed Identity:
 
 ```csharp
-CosmosClientOptions clientOptions = new();
+using Azure.Identity;
+using Microsoft.Azure.Cosmos;
 
-CosmosClient client = new (connectionString, options);
+// Configure the account endpoint
+string accountEndpoint = "https://<youraccountname>.documents.azure.com:443/";
+
+// Use DefaultAzureCredential for Azure Entra Managed Identity authentication
+DefaultAzureCredential credential = new DefaultAzureCredential();
+
+// Initialize CosmosClient with endpoint and credential
+CosmosClient client = new (accountEndpoint, credential);
 ```
 
 ### Changing the connection mode
@@ -84,7 +84,7 @@ The **ConsistencyLevel** enumeration has multiple potential values including:
 
 ### Setting the preferred application region\[s\]
 
-By default, the client uses the first writable region for requests. This is typically referred to as the primary region. You can use either the **CosmosClientOptions.ApplicationRegion** or **CosmosClientOptions.ApplicationPreferredRegions** to override this behavior.
+By default, the client uses the first writable region for requests. This region is typically referred to as the primary region. You can use either the **CosmosClientOptions.ApplicationRegion** or **CosmosClientOptions.ApplicationPreferredRegions** to override this behavior.
 
 The **ApplicationRegion** property sets the single preferred region that the client connects to for operations. If the configured region is unavailable, the client defaults to the fallback priority list set on the account to determine the next region to use. In this example, the preferred region is configured to **West US**.
 

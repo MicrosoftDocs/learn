@@ -135,7 +135,7 @@ New-AzResourceGroupDeployment `
 
 Use linked templates to deploy complex solutions. You can break a template into many templates and deploy these templates through a main template. When you deploy the main template, it triggers the linked template's deployment. You can store and secure the linked template by using a SAS token.
 
-A CI/CD pipeline automates the creation and deployment of development projects, which includes ARM template projects. The two most common pipelines used for template deployment are [Azure Pipelines](/training/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](/training/paths/automate-workflow-github-actions/?azure-portal=true).
+A CI/CD pipeline automates the creation and deployment of development projects, which includes ARM template projects. The two most common pipelines used for template deployment are [Azure Pipelines](/training/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](/training/paths/github-actions/?azure-portal=true).
 
 More information on these two types of deployment is covered in other modules.
 
