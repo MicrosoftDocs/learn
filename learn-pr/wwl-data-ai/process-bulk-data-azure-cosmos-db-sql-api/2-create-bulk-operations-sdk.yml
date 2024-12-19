@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Create bulk operations with the SDK
   description: "Create bulk operations with the SDK"
-  ms.date: 10/23/2024
+  ms.date: 12/19/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
