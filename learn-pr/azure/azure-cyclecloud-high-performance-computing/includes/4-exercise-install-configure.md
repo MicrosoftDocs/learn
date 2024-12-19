@@ -159,7 +159,7 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
 To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option to address this requirement is to assign the Contributor role in the subscription to the Azure VM hosting the CycleCloud application. This option works if you enabled the system-assigned managed identity for that Azure VM. Because you configured this setting during the Azure VM deployment in the first task of this exercise, this is the approach you take.
 
 > [!NOTE]
-> CycleCloud doesn't require all permissions associated with the Contributor role. You have the option of defining a custom, more restrictive RBAC role and assigning it to the Azure VM hosting the CycleCloud application. This allows you to apply the principle of least privilege. For details, refer to Microsoft Learn.
+> CycleCloud doesn't require all permissions associated with the Contributor role. You have the option of defining a custom, more restrictive RBAC role and assigning it to the Azure VM hosting the CycleCloud application. This allows you to apply the principle of least privilege. For details, refer to [Using Managed Identities with CycleCloud](https://learn.microsoft.com/azure/cyclecloud/how-to/managed-identities?view=cyclecloud-8#create-a-custom-role-and-managed-identity-for-cyclecloud).
 
 1. On your computer, switch to the web browser window displaying the Azure portal, and use the search box at the top of the portal interface to search for **Subscriptions**.
 
@@ -217,7 +217,7 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
 
 1. On your computer, switch to the web browser window displaying the Azure CycleCloud web application.
 
-1. In the **Add Subscription** pop-up window, in the **Subscription Name** text box, enter a descriptive name for your Azure subscription, and then select **Validate Credentials**.
+1. In the **Add Subscription** pop-up window, in the **Subscription Name** text box, enter a descriptive name for your Azure subscription. Next, select **Managed Identity** from the Authentication radio buttons, and then select **Validate Credentials**.
 
     > [!NOTE]
     > If the validation fails, you might have to wait a few minutes for the role assignments to take effect and then repeat this step.
