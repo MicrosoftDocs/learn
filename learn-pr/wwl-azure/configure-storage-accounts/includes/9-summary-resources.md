@@ -1,6 +1,6 @@
 In this module, you learned about Azure Storage and how to create a storage account. 
 
-The main takeaways from this module are:
+**The main takeaways from this module are:**
 
 - Azure Storage provides a range of storage options for different types of data, including virtual machine data, unstructured data, and structured data.
 
@@ -12,6 +12,12 @@ The main takeaways from this module are:
 
 - Configuring custom domains and secure endpoints allow you to access and secure your storage account in Azure.
 
+## Learn more with Copilot
+Copilot can assist you in configuring Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot.
+
+- What is an Azure storage account? What type of storage accounts are available?
+
+- Explain for a nontechnical person Azure data redundancy for storage accounts. 
 
 ## Learn more with Azure documentation
 
@@ -19,13 +25,12 @@ The main takeaways from this module are:
 
 - [Azure storage redundancy](/azure/storage/common/storage-redundancy). This article reviews how to tradeoff cost and availability when selecting a redundancy option. 
 
-- [Use private endpoints for Azure Storage](/azure/storage/common/storage-private-endpoints). This article shows when and how to configure Azure private endpoints for storage. 
-
 ## Learn more with self-paced training
 
-- [Create an Azure storage account (sandbox)](/training/modules/create-azure-storage-account/). Learn how to create an Azure Storage account with the correct options for your business needs.
+- [Create an Azure storage account](/training/modules/create-azure-storage-account/). Learn how to create an Azure Storage account with the correct options for your business needs.
 
-- [Design and implement private access to Azure Services](/training/modules/design-implement-private-access-to-azure-services/).  Learn how to implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.
+- [Design and implement private access to Azure Services](/training/modules/design-implement-private-access-to-azure-services/). Learn how to implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.
 
 - [Provide disaster recovery by replicating storage data across regions and failing over to a secondary location](/training/modules/provide-disaster-recovery-replicate-storage-data/). Learn to initiate storage account failover to the secondary region.
+
 
