@@ -36075,6 +36075,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-policy/8-determine-compliance.md",
       "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/3-implement-azure-policies.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
     }
   ]
 }
