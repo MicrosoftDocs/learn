@@ -36145,6 +36145,11 @@
       "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/3-manage-user-accounts.md",
       "redirect_url": "/training/modules/create-configure-manage-identities/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/8-summary-resources.md",
+      "redirect_url": "/training/modules/create-configure-manage-identities/",
+      "redirect_document_id": false
     }
   ]
 }
