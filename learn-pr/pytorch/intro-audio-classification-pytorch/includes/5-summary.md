@@ -7,7 +7,6 @@ You can expand on this knowledge by looking at other datasets and sounds, and al
 Be sure to check out these other modules, too:
 
 * [Introduction to PyTorch](/training/modules/intro-machine-learning-pytorch)
-* [Computer Vision with PyTorch](/training/modules/intro-computer-vision-pytorch)
 * [Natural Language Processing with PyTorch](/training/modules/intro-natural-language-processing-pytorch)
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]

@@ -1,4 +1,4 @@
-In this Learn Module, we've covered all basics of Natural Language Processing, from text representation to traditional recurrent network models. This serves as an introductory lesson to get you started on any natural language task, and we hope that you'll now be able to approach any NLP problem without fear.
+In this Learn Module, we covered all basics of Natural Language Processing, from text representation to traditional recurrent network models. This serves as an introductory lesson to get you started on any natural language task, and we hope that you'll now be able to approach any NLP problem without fear.
 
 You've learned the following key areas:
   - How to tokenize text into word tokens based on a vocabulary
@@ -20,7 +20,6 @@ Now that you learned some of the basics of machine learning using neural network
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
 * [Introduction to PyTorch](/training/modules/intro-machine-learning-pytorch)
-* [Computer Vision with PyTorch](/training/modules/intro-computer-vision-pytorch)
 * [Audio Classification with PyTorch](/training/modules/intro-audio-classification-pytorch)
 
 Happy learning!

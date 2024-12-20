@@ -15,7 +15,7 @@ In this module, you will:
 
 ## Skills measured
 
-The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). 
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/credentials/certifications/resources/study-guides/az-104). 
 
 ## Prerequisites
 
@@ -25,8 +25,8 @@ Here are some common prerequisites that can be beneficial for understanding and 
 
 - Knowledge of Azure fundamentals: Having a basic understanding of Microsoft Azure services and concepts, such as Azure Resource Manager, Azure Storage Accounts, and Azure Virtual Networks, can help you navigate and configure blob storage effectively.
 
-- Familiarity with storage concepts: Understanding fundamental storage concepts like file systems, directories, files, and data replication can be beneficial when working with blob storage.
+- Understand fundamental storage concepts like file systems, directories, files, and data replication can be beneficial when working with blob storage.
 
-- Experience with Azure Portal or Azure CLI: Familiarity with the Azure Portal (web-based management interface) or Azure CLI (command-line interface) can help you navigate and configure blob storage resources efficiently.
+- Experience with Azure portal or Azure CLI: Familiarity with the Azure portal (web-based management interface) or Azure CLI (command-line interface) can help you navigate and configure blob storage resources efficiently.
 
 - Basic programming or scripting skills: While not always required, having some knowledge of programming or scripting languages like PowerShell or Python can be advantageous when automating blob storage configuration tasks.
