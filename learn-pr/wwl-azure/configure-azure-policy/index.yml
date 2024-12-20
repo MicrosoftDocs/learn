@@ -35,7 +35,6 @@ units:
 - learn.wwl.configure-azure-policy.create-management-groups
 - learn.wwl.configure-azure-policy.implement-azure-policies
 - learn.wwl.configure-azure-policy.create-policy-definitions
-- learn.wwl.configure-azure-policy.create-initiative-definitions
 - learn.wwl.configure-azure-policy.scope-initiative-definition
 - learn.wwl.configure-azure-policy.determine-compliance
 - learn.wwl.configure-azure-policy.interactive-lab-simulation-policy
