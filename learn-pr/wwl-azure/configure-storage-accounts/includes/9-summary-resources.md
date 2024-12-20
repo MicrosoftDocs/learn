@@ -25,13 +25,11 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 - [Azure storage redundancy](/azure/storage/common/storage-redundancy). This article reviews how to tradeoff cost and availability when selecting a redundancy option. 
 
-- [Use private endpoints for Azure Storage](/azure/storage/common/storage-private-endpoints). This article shows when and how to configure Azure private endpoints for storage. 
-
 ## Learn more with self-paced training
 
 - [Create an Azure storage account](/training/modules/create-azure-storage-account/). Learn how to create an Azure Storage account with the correct options for your business needs.
 
-- [Design and implement private access to Azure Services](/training/modules/design-implement-private-access-to-azure-services/).  Learn how to implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.
+- [Design and implement private access to Azure Services](/training/modules/design-implement-private-access-to-azure-services/). Learn how to implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.
 
 - [Provide disaster recovery by replicating storage data across regions and failing over to a secondary location](/training/modules/provide-disaster-recovery-replicate-storage-data/). Learn to initiate storage account failover to the secondary region.
 

@@ -16,6 +16,8 @@ Review the following options and think about what storage accounts are required 
 
 ### How to manage your storage account
 
-Learn more about [how to manage your storage account](https://www.youtube.com/embed/-j_8clCWYn8). 
+<iframe width="854" height="480" src="https://www.youtube.com/embed/-j_8clCWYn8" title="How to manage your storage account." allowfullscreen></iframe>
+
+
 
 

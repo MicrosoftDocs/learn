@@ -6,7 +6,7 @@ To access these settings for your storage account, you use the **Firewalls and v
 
 The service endpoints for a storage account provide the base URL for any blob, queue, table, or file object in Azure Storage. Use this base URL to construct the address for any given resource.
 
-:::image type="content" source="../media/service-endpoints-portal-lrg.png" alt-text="Screenshot of the Storage Account Firewalls and virtual networks settings in the Azure portal.":::
+:::image type="content" source="../media/service-endpoints-portal-lrg.png" alt-text="Screenshot of the service endpoint URLs in the Azure portal.":::
 
 
 ### Things to know about configuring service endpoints
