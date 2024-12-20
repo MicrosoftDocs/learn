@@ -31,7 +31,6 @@ products:
 subjects:
 - compliance
 units:
-- learn.wwl.configure-azure-policy.introduction
 - learn.wwl.configure-azure-policy.scope-initiative-definition
 - learn.wwl.configure-azure-policy.knowledge-check
 - learn.wwl.configure-azure-policy.summary-resources
