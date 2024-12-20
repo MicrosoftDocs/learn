@@ -12,7 +12,6 @@ Now that you've learned some of the basics of machine learning using neural netw
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-- [Computer Vision with PyTorch](/training/modules/intro-computer-vision-pytorch)
 - [Natural Language Processing with PyTorch](/training/modules/intro-natural-language-processing-pytorch)
 - [Audio Classification with PyTorch](/training/modules/intro-audio-classification-pytorch)
 
