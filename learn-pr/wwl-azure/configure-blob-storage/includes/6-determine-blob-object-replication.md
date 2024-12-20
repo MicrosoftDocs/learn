@@ -1,8 +1,7 @@
-Object replication copies blobs in a container asynchronously according to policy rules that you configure. During the replication process, the following contents are copied from the source container to the destination container:
+[Object replication](/azure/storage/blobs/object-replication-overview) copies blobs in a container asynchronously according to policy rules that you configure. During the replication process, the following contents are copied from the source container to the destination container:
 - The blob contents
 - The blob metadata and properties
 - Any versions of data associated with the blob
-
 
 The following illustration shows an example of asynchronous replication of blob containers between regions.
 
@@ -32,5 +31,5 @@ There are many benefits to using blob object replication. Consider the following
 
 - **Consider data distribution**. Optimize your configuration for data distribution. You can process or analyze data in a single location and then replicate only the results to other regions.
 
-- **Consider costs benefits**. Manage your configuration and optimize your storage policies to achieve cost benefits. After your data is replicated, you can reduce costs by moving the data to the Archive tier by using lifecycle management policies.
+- **Consider costs benefits**. Manage your configuration and optimize your storage policies. After your data is replicated, you can reduce costs by moving the data to the Archive tier by using lifecycle management policies.
 
