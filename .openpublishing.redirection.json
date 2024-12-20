@@ -36080,6 +36080,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-policy/3-implement-azure-policies.md",
       "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/9-simulation-policy.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
     }
   ]
 }
