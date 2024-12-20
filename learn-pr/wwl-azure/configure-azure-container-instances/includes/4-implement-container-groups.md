@@ -1,4 +1,4 @@
-The top-level resource in Azure Container Instances is the **container group**. A container group is a collection of containers that get scheduled on the same host machine. The containers in a container group share a lifecycle, resources, local network, and storage volumes.
+The top-level resource in Azure Container Instances is the **container group**. A [container group](/azure/container-instances/container-instances-container-groups) is a collection of containers that get scheduled on the same host machine. The containers share a lifecycle, resources, local network, and storage volumes.
 
 ### Things to know about container groups
 
