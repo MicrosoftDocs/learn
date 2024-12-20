@@ -59,7 +59,6 @@ subjects:
 - identity-access
 modules:
 - learn.wwl.understand-azure-active-directory
-- learn.wwl.configure-user-group-accounts
 - learn.azure-security.manage-users-and-groups-in-aad
 - learn.secure-azure-resources-with-rbac
 - learn.azure.allow-users-to-reset-their-password
