@@ -51,7 +51,10 @@ Let's create a logic app that runs whenever a virtual machine change is detected
 
 1. On the **Select a hosting option** page, select **Multi-tenant** under **Consumption**, and choose **Select**.
 
-1. On the **Basics** tab, enter the following values for each setting. Note, don't select the **Looking for the classic consumption create experience? Click here** link as you won't be able to go back.
+1. On the **Basics** tab, enter the following values for each setting.
+
+    > [!NOTE]
+    > Don't select the **Looking for the classic consumption create experience? Click here** link, because you won't be able to go back.
 
     | Setting | Value |
     | --- | --- |
@@ -71,9 +74,9 @@ Let's create a logic app that runs whenever a virtual machine change is detected
 
 ## Add an Event Grid trigger to the logic app
 
-1. In the menu on the left, select **Logic app designer** in the **Development Tools** section.
+1. In the menu on the left, select **Logic app designer** in the **Development Tools** section. The **Logic Apps Designer** pane appears.
 
-1. Scroll down to **Templates** section, then select **Blank Logic App**.  The **Logic Apps Designer** pane appears.
+1. Select **Add trigger**.  
 
     :::image type="content" source="../media/3-choose-logic-app-template.png" alt-text="Screenshot of the template for a blank logic app.":::
 
@@ -90,9 +93,9 @@ Let's create a logic app that runs whenever a virtual machine change is detected
     | **Subscription** | Concierge Subscription |
     | **Resource Type** | `Microsoft.Resources.ResourceGroups` |
     | **Resource Name** | <rgn>[sandbox resource group]</rgn> |
-    | **Event Type Item - 1** | Choose `Microsoft.Resources.ResourceActionSuccess` from the drop-down, then select **Add new item** |
-    | **Event Type Item - 2** | Choose `Microsoft.Resources.ResourceDeleteSuccess` from the drop-down, then select **Add new item** |
-    | **Event Type Item - 3** | Choose `Microsoft.Resources.ResourceWriteSuccess` from the drop-down. |
+    | **Event Type Item - 1** | Enter `Microsoft.Resources.ResourceActionSuccess`, then select **Add new item** |
+    | **Event Type Item - 2** | Enter `Microsoft.Resources.ResourceDeleteSuccess`, then select **Add new item** |
+    | **Event Type Item - 3** | Enter `Microsoft.Resources.ResourceWriteSuccess`. |
     | | |
 
     :::image type="content" source="../media/3-logic-app-event-grid-trigger-details.png" alt-text="Screenshot of the trigger details.":::
