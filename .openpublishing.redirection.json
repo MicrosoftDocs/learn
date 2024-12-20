@@ -36100,6 +36100,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-policy/7-scope-initiative-definition.md",
       "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/11-summary-resources.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
     }
   ]
 }
