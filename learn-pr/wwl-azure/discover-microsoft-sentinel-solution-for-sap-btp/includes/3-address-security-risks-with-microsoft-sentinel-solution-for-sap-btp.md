@@ -19,7 +19,9 @@ To counter these vulnerabilities, it's crucial for organizations to quickly dete
 - **Detect suspicious or illegitimate activities**. The activities include: suspicious logins, illegitimate changes of application settings and user permission, data exfiltration, bypassing of SOD policies, and more.
 - **Investigate and respond** to threats originating from the BTP application: Find an application owner, understand relationships between applications, suspend applications or users, and more.
 - **Monitor** on-premises and SaaS SAP environments.
+
 The solution includes these elements, each of which is described in the following units:
+
 - The **BTP activity workbook**, which provides a dashboard overview of subaccounts and a grid of identity management events.
 - **Built-in analytics rules** for identity management and low-code application development scenarios.
 - The **SAP BTP** connector, which allows you to connect your BTP subaccounts and global account to Microsoft Sentinel via the [Audit Log service for SAP BTP API](https://help.sap.com/docs/btp/sap-business-technology-platform/security-events-logged-by-cf-services).

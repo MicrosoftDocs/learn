@@ -35,9 +35,9 @@ abstract: |
 
   -   Monitor and respond to threats.
 prerequisites: |
-  -   Basic understanding of Microsoft Sentinel
+  -   Basic understanding of Microsoft Sentinel.
 
-  -   SAP system management
+  -   SAP system management.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
