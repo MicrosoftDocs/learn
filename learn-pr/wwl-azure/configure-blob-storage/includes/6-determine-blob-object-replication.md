@@ -3,7 +3,6 @@
 - The blob metadata and properties
 - Any versions of data associated with the blob
 
-
 The following illustration shows an example of asynchronous replication of blob containers between regions.
 
 :::image type="content" source="../media/blob-object-replication-21fd3c07.png" alt-text="Diagram that shows asynchronous replication of blob containers between regions." border="false":::
@@ -32,5 +31,5 @@ There are many benefits to using blob object replication. Consider the following
 
 - **Consider data distribution**. Optimize your configuration for data distribution. You can process or analyze data in a single location and then replicate only the results to other regions.
 
-- **Consider costs benefits**. Manage your configuration and optimize your storage policies to achieve cost benefits. After your data is replicated, you can reduce costs by moving the data to the Archive tier by using lifecycle management policies.
+- **Consider costs benefits**. Manage your configuration and optimize your storage policies. After your data is replicated, you can reduce costs by moving the data to the Archive tier by using lifecycle management policies.
 

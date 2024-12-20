@@ -22,7 +22,7 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 - [Azure Blob Storage Security](/azure/storage/blobs/security-recommendations) - Understanding the security aspects of blob storage is crucial for proper configuration. This article explores authentication, authorization, and encryption options available in Azure Blob Storage. It also covers best practices for securing your blob storage resources. 
 
-- [Azure Blob Storage Performance and Scalability](/azure/storage/blobs/scalability-targets) - This article delves into performance considerations when configuring blob storage. It covers topics such as choosing the right storage account type, optimizing data transfer, and using features like Azure CDN and Azure Data Lake Storage.
+- [Azure Blob Storage Performance and Scalability](/azure/storage/blobs/scalability-targets) - This article delves into performance considerations when configuring blob storage. The module covers the storage account type, and optimizing data transfer.
 
 - [Azure Blob Storage Lifecycle Management](/azure/storage/blobs/storage-lifecycle-management-concepts) - Blob storage lifecycle management allows you to automate the movement and deletion of data based on predefined rules. This article explains how to configure and manage lifecycle policies to optimize storage costs and improve data management. 
 
