@@ -82,23 +82,23 @@ After the network profiles are created, you'll need to create a compute profile.
 
 1. When you have the clusters in your on-premises datacenter, select **Continue**.
 
-1. On the **Select Datastore** pane, select the datastore storage resource for deploying the VMware HCX Interconnect appliances. Then select **Continue**. Note that when you select multiple resources, VMware HCX uses the first resource selected until its capacity is exhausted.
+1. From the **Select Datastore** drop down, select the datastore storage resource for deploying the VMware HCX Interconnect appliances. Then select **Continue**. Note that when you select multiple resources, VMware HCX uses the first resource selected until its capacity is exhausted.
 
     :::image type="content" source="../media/4-deployment-resources-and-reservations.png" alt-text="Screenshot that shows a selected data storage resource and the continue button in the on-premises HCX Connector.":::
 
-1. On the **Select Management Network Profile** pane, select the management network profile that you created in previous steps, then select **Continue**.
+1. From the **Select Management Network Profile** drop down > **Network 1 - Management** > select the management network profile you created in previous steps, then select **Continue**.
 
     :::image type="content" source="../media/4-select-management-network-profile.png" alt-text="Screenshot that shows the selection of a management network profile and the Continue button in the on-premises HCX Connector.":::
 
-1. On the **Select Uplink Network Profile** pane, select the uplink network profile you created in the prior steps, then select **Continue**.
+1. From the **Select Uplink Network Profile** drop down, select the uplink network profile you created in the prior steps, then select **Continue**.
 
     :::image type="content" source="../media/4-select-uplink-network-profile.png" alt-text="Screenshot that shows the selection of an uplink network profile and the Continue button in the on-premises HCX Connector.":::
 
-1. On the **Select vMotion Network Profile** pane, select the vMotion network profile that you created in prior steps, then select **Continue**.
+1. From the **Select vMotion Network Profile** drop down, select the vMotion network profile that you created in prior steps, then select **Continue**.
 
     :::image type="content" source="../media/4-select-vmotion-network-profile.png" alt-text="Screenshot that shows the selection of a vMotion network profile and the Continue button in the on-premises HCX Connector.":::
 
-1. On the **Select vSphere Replication Network Profile** pane, select the replication network profile that you created in prior steps, then select **Continue**.
+1. On the **Select vSphere Replication Network Profile** drop down, select the replication network profile that you created in prior steps, then select **Continue**.
 
     :::image type="content" source="../media/4-select-replication-network-profile.png" alt-text="Screenshot that shows the selection of a replication network profile and the Continue button in the on-premises HCX Connector.":::
 
