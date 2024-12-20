@@ -74,9 +74,7 @@ After the network profiles are created, you'll need to create a compute profile.
 
     :::image type="content" source="../media/4-name-compute-profile.png" alt-text="Screenshot that shows the entry of a compute profile name and the Continue button in HCX Connector on-premises.":::
 
-1. On the next screen, you have services set for activation. Recall that VMware HCX Enterprise deploys with Azure VMware Solution. If you need HCX Enterprise, you must open a ticket with support.
-
-1. Leave all default services checked that can be enabled with the HCX Enterprise key and select **Continue**.
+1. The next screen shows you have services set for activation. Remember that VMware HCX Enterprise deploys with Azure VMware Solution. Leave all default services checked that can be enabled with the HCX Enterprise key and select **Continue**.
 
     :::image type="content" source="../media/4-select-services-activated.png" alt-text="Screenshot of the services selected for activation with HCX Connector on-premises.":::
 
