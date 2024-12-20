@@ -9995,6 +9995,38 @@
     {
       "source_path_from_root": "/learn-pr/cela-accessibility/accessible-content-m365/02-powerpoint.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental"
+    },    
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/2-find-educator-content-in-learn.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/3-create-collection.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/4-navigate-your-learn-profile.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/5-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
     },
     {
       "source_path_from_root": "/learn-pr/cela-accessibility/accessible-content-m365/03-excel.yml",
