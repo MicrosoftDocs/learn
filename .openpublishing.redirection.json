@@ -36045,6 +36045,11 @@
       "source_path": "learn-pr/paths/automate-workflow-github-actions/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/github-actions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/index.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
     }
   ]
 }
