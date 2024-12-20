@@ -56,7 +56,7 @@ VMware HCX Connector on-premises deploys a set of automated virtual appliances t
 
 1. Under **Infrastructure**, select **Interconnect** > **Multi-Site Service Mesh** > **Network Profiles**. Then select **Create Network Profile**.
 
-    :::image type="content" source="../media/4-create-network-profile.png" alt-text="Screenshot of creating the network profile within HCX Connector on-premises.":::
+    :::image type="content" source="../media/4-hcx-create-network-profile.png" alt-text="Screenshot of creating the network profile within HCX Connector on-premises."lightbox="../media/4-hcx-create-network-profile.png":::
 
 1. For each network profile, select the network and port group, provide a name, and create the segment's IP pool. Then select **Create**.
 
