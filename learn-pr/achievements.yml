@@ -4352,3 +4352,8 @@ achievements:
   title: Automate your workflow with GitHub Actions
   summary: Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.
   iconUrl: /training/achievements/github/automate-workflow-github-actions.svg
+- uid: learn.wwl.configure-azure-policy.badge
+  type: badge
+  title: Configure Azure Policy
+  summary: Learn how to configure Azure Policy to implement compliance requirements.
+  iconUrl: /training/achievements/azure-policy-configure.svg
