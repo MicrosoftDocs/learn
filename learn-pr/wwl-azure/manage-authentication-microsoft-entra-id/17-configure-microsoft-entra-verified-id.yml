@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Microsoft Entra Verified ID
   description: "Configure Microsoft Entra Verified ID"
-  ms.date: 09/04/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

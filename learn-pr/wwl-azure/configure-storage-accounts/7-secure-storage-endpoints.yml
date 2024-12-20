@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Secure storage endpoints
   description: "Secure storage endpoints"
-  ms.date: 08/06/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 6
+durationInMinutes: 2
 content: |
   [!include[](includes/7-secure-storage-endpoints.md)]

@@ -4,7 +4,7 @@ Container-based virtualization allows you to virtualize the operating system. Th
 
 ### Things to know about containers versus virtual machines
 
-To better understand container-based virtualization, let's compare containers and virtual machines.
+To better understand container-based virtualization, let's [compare containers and virtual machines](/virtualization/windowscontainers/about/containers-vs-vm).
 
 | Compare | Containers | Virtual machines | 
 | --- | --- | --- |
@@ -26,14 +26,4 @@ Containers offer several advantages over physical and virtual machines. Review t
 
 - **Consider workload density**. Support higher workload density and improve your resource utilization by working with containers.
 
-### Understand container images
 
-All containers are created from container images. A container image is a lightweight, standalone, executable package of software that encapsulates everything needed to run an application. It includes the following components:
-
-- **Code**: The application’s source code.
-- **Runtime**: The environment required to execute the application.
-- **System tools**: Utilities necessary for the application to function.
-- **System libraries**: Shared libraries used by the application.
-- **Settings**: Configuration parameters specific to the application.
-
-When you create a container image, it becomes a portable unit that can run consistently across different computing environments. These images are the building blocks for containers, which are instances of these images running at runtime.

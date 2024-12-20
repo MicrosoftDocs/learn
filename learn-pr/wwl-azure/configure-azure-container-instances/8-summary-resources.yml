@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Summary and resources
   description: "Summary and resources"
-  ms.date: 07/24/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/8-summary-resources.md)]
