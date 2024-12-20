@@ -19,11 +19,6 @@ Now that you've set up your Microsoft Entra Verified ID service, you're going to
 2.  Copy the Tenant identifier value, and record it for later.
 3.  Copy the Decentralized identifier value, and record it for later.
 
-The following screenshot demonstrates how to copy the required values:
-
-:::image type="content" source="../media/tenant-settings-6440e831-2bde49c6.png" alt-text="Screenshot showing the verified identity organization settings page.":::
-
-
 ## Download the sample code
 
 The sample application is available in .NET, and the code is maintained in a GitHub repository. Download the sample code from the [GitHub repo](https://github.com/Azure-Samples/active-directory-verifiable-credentials-dotnet), or clone the repository to your local computer:
@@ -36,9 +31,6 @@ Create a client secret for the registered application you created. The sample ap
 2.  Select the **verifiable-credentials-app** application you created earlier.<br>
 3.  Select the name to go into the **App registrations details**.<br>
 4.  Copy the **Application (client) ID** value, and store it for later.
-    
-    :::image type="content" source="../media/verifiable-credentials-application-955830fc-b51268f0.png" alt-text="Screenshot showing the verifiable credentials application page.":::
-    
 5.  In **App registration details**, from the main menu, under **Manage**, select **Certificates & secrets**.
 6.  Select **New client secret**.
     
@@ -70,9 +62,9 @@ The following JavaScript Object Notation (JSON) demonstrates a complete *appsett
     "Endpoint": "https://verifiedid.did.msidentity.com/v1.0/verifiableCredentials/",
     "VCServiceScope": "3db474b9-6a0c-4840-96ac-1fceb342124f/.default",
     "Instance": "https://login.microsoftonline.com/",
-    "TenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
-    "ClientId": "00001111-aaaa-2222-bbbb-3333cccc4444",
-    "ClientSecret": "123456789012345678901234567890",
+    "TenantId": "Your tenant ID",
+    "ClientId": "Your client ID",
+    "ClientSecret": "Your client secret",
     "CertificateName": "[Or instead of client secret: Enter here the name of a certificate (from the user cert store) as registered with your application]",
     "DidAuthority": "did:web:...your-decentralized-identifier...",
     "CredentialType": "VerifiedCredentialExpert",
