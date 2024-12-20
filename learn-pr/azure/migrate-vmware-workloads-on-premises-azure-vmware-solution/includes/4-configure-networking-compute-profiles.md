@@ -33,7 +33,7 @@ The first step involves creating a *site pair*. A site pair provides network con
 
     Note, if you receive a message about a certificate warning, select **Import Certificate** to continue.
 
-    :::image type="content" source="../media/4-import-certificate-complete-site-pairing.png" alt-text="Screenshot of the certificate warning page with the import certificate option to complete the site pairing."lightbox=../media/4-import-certificate-complete-site-pairing.png":::
+    :::image type="content" source="../media/4-import-certificate-complete-site-pairing.png" alt-text="Screenshot of the certificate warning page with the import certificate option to complete the site pairing."lightbox="../media/4-import-certificate-complete-site-pairing.png":::
 
 1. For the connection to work, VMware HCX Connector needs to route to the VMware HCX Cloud Manager IP over port 443. Use Azure ExpressRoute, which you deployed on-premises.
 
