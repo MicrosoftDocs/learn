@@ -37,7 +37,9 @@ The first step involves creating a *site pair*. A site pair provides network con
 
 1. For the connection to work, VMware HCX Connector needs to route to the VMware HCX Cloud Manager IP over port 443. Use Azure ExpressRoute, which you deployed on-premises.
 
-1. You get a screen showing that VMware HCX Cloud Manager in Azure VMware Solution and the on-premises VMware HCX Connector are connected, or paired.
+1. You get a screen showing that VMware HCX Cloud Manager in Azure VMware Solution and the on-premises VMware HCX Connector are connected or paired.
+
+ :::image type="content" source="../media/4-import-certificate-complete-site-pairing.png" alt-text="Screenshot of the HCX Site Pairing tab that shows a new HCX-Connector-On-Premises connection or site pairing."lightbox="../media/4-hcx-on-premises-site-pairing-connected.png":::
 
 ## Create network profiles
 
