@@ -31,7 +31,6 @@ products:
 subjects:
 - compliance
 units:
-- learn.wwl.configure-azure-policy.scope-initiative-definition
 - learn.wwl.configure-azure-policy.summary-resources
 badge:
   uid: learn.wwl.configure-azure-policy.badge
