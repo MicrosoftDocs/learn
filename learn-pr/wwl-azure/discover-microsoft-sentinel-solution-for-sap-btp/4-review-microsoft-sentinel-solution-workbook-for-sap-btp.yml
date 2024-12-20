@@ -6,10 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Review the Microsoft Sentinel Solution built-in workbook for SAP BTP
   description: "Review how the Microsoft Sentinel solution for SAP BTP activity workbook provides a dashboard overview of BTP activity."
-  ms.date: 12/19/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-review-microsoft-sentinel-solution-workbook-for-sap-btp.md)]

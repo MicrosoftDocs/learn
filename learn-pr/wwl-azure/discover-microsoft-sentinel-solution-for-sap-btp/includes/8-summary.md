@@ -1,5 +1,3 @@
-
-
 **SAP Business Technology Platform** (SAP BTP) is a cloud-based solution that provides a wide range of tools and services for developers to build, run, and manage applications. SAP BTP's low-code development capabilities allow developers to create applications quickly and efficiently by using visual drag-and-drop interfaces and prebuilt components, rather than writing code from scratch.
 
 ## Learning objectives
