@@ -36,7 +36,6 @@ products:
 subjects:
 - identity-access
 units:
-- learn.wwl.configure-user-group-accounts.manage-user-accounts
 - learn.wwl.configure-user-group-accounts.summary-resources
 badge:
   uid: learn.wwl.configure-user-group-accounts.badge
