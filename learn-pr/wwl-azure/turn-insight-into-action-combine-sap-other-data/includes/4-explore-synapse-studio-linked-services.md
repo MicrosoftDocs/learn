@@ -4,7 +4,7 @@ Linked services in Azure Synapse Studio work similarly to the data connectors in
 
 Synapse includes more than 90 linked services, including six for SAP, plus an OData linked service that is used extensively by SAP for integration. You can also customize or build your own linked service.
 
-:::image type="content" source="../media/azure-synapse-studio-linked-services-cropped.png" alt-text="Screenshot of Azure Synapse Studio screen with linked services available for S A P." lightbox="../media/azure-synapse-studio-linked-services.png":::
+:::image type="content" source="../media/azure-synapse-studio-linked-services-cropped.png" alt-text="Screenshot of Azure Synapse Studio screen with linked services available for S A P." lightbox="../media/azure-synapse-studio-linked-services-cropped.png":::
 
 To locate the SAP-specific linked services in the Synapse Studio UI, select **Manage**, then Linked services, then select **+ New** and Search for SAP in the New linked service panel. To find the OData linked service, choose the Generic protocol category or search for OData.
 
@@ -36,7 +36,7 @@ To find other linked services, use the search bar in the New linked service pane
 
 If your business scenario requires data from other sources, search for an available linked service, or create a custom linked service. For example, to analyze data for demand forecasting, you might link to weather data, social sentiment data, or store sales reports.
 
-:::image type="content" source="../media/new-linked-service-categories-cropped.png" alt-text="Screenshot of Azure Synapse Studio screen for adding linked service categories." lightbox="../media/new-linked-service-categories.png":::
+:::image type="content" source="../media/new-linked-service-categories-cropped.png" alt-text="Screenshot of Azure Synapse Studio screen for adding linked service categories." lightbox="../media/new-linked-service-categories-cropped.png":::
   
 You can also view available linked services by category. To see available linked services, Select a category from the options across the top of the UI.
 
