@@ -863,6 +863,12 @@
         },
         "fileMetadata": {
             "sandbox-disabled": {},
+            "adobe-target": {
+                "*/*/*.yml": true
+            },
+            "prefetch-feature-rollout": {
+                "*/*/*.yml": true
+            },
             "localization_scopes": {
                 "azure/**/*.yml": [
                     "de-de",
