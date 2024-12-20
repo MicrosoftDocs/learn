@@ -1,9 +1,10 @@
-
-
-
 Code challenges reinforce what you've learned and help you gain some confidence before continuing.
 
 This module features two code challenges. This first challenge forces you to split up the data depending on its type and either concatenate or add the data accordingly.
+
+> [!NOTE]
+> The code samples in this exercise are designed based on en-US culture settings, and use a period (`.`) as the decimal separator. Building and running the code with a culture setting that uses a different decimal separators (such as a comma `,`) may give unexpected results or errors. To fix this issue, replace the period decimal separators in the code samples with your local decimal separator (such as `,`).
+> Alternatively, to run a program using the en-US culture setting, add the following code to the top of your program: `using System.Globalization;` and after any other `using` statements add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
 
 1. Select and delete all code lines in the Visual Studio Code Editor. Optionally, use the line comment operator `//` to comment out all of the code from the previous step.
 
@@ -17,7 +18,7 @@ This module features two code challenges. This first challenge forces you to spl
 
 1. Complete the required code, placing it within the array looping structure code block. It's necessary to implement the following business rules in your code logic:
 
-    - Rule 1: If the value is alphanumeric, concatenate it to form a message.
+    - Rule 1: If the value is alphabetical, concatenate it to form a message.
     - Rule 2: If the value is numeric, add it to the total.
     - Rule 3: The result should match the following output:
 

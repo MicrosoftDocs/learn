@@ -2,13 +2,14 @@
 uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.explain-high-availability-and-disaster-recovery-options
 title: Explain high availability and disaster recovery options
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explain high availability and disaster recovery options
   description: "Explain high availability and disaster recovery options"
   ms.date: 12/22/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 12

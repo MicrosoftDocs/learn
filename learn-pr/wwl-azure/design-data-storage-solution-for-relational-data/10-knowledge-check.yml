@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/29/2023
+  ms.date: 12/10/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -24,21 +23,21 @@ quiz:
       explanation: "Incorrect. An Azure SQL managed instance doesn't support OS access."
     - content: "Azure SQL Database, single database"
       isCorrect: false
-      explanation: "Incorrect. A SQL database doesn't support OS access."
+      explanation: "Incorrect. An Azure SQL database doesn't support OS access."
     - content: "SQL Server on Azure Virtual Machines"
       isCorrect: true
-      explanation: "Correct. A SQL server in an Azure virtual machine supports OS access."
+      explanation: "Correct. SQL server on an Azure virtual machine supports OS access."
   - content: "What's the optimal Azure SQL deployment option to migrate the HR application?"
     choices:
     - content: "Azure SQL Managed Instance"
       isCorrect: true
-      explanation: "Correct. Azure SQL Managed Instance is the only PaaS service that supports instance-scoped features like CLR and Service Broker."
+      explanation: "Correct. Azure SQL Managed Instance is the only PaaS service that supports instance-scoped features."
     - content: "Azure SQL Database"
       isCorrect: false
-      explanation: "Incorrect. Azure SQL Database doesn't support instance-scoped features like service broker and CLR."
+      explanation: "Incorrect. Azure SQL Database doesn't support instance-scoped features."
     - content: "SQL Server in an Azure virtual machine"
       isCorrect: false
-      explanation: "Incorrect. SQL Server in an Azure VM doesn't meet the requirements for removing management of SQL Server."
+      explanation: "Incorrect. SQL Server on an Azure virtual machine doesn't meet the requirements for removing management of SQL Server."
   - content: "Which database service tier best supports the large on-premises database migration?"
     choices:
     - content: "General Purpose"
@@ -49,4 +48,4 @@ quiz:
       explanation: "Correct. The Hyperscale tier can support up to 100 TB of data."
     - content: "Business Critical"
       isCorrect: false
-      explanation: "Incorrect. The Business Critical tier can't support up to 80 TB of data"
+      explanation: "Incorrect. The Business Critical tier can't support up to 80 TB of data."

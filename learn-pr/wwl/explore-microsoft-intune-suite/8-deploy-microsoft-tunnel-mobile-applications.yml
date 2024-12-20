@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-intune-suite.deploy-microsoft-tunnel-mobile-applications
+title: Deploy Microsoft Tunnel for mobile applications
+metadata:
+  title: Deploy Microsoft Tunnel for mobile applications
+  description: "Deploy Microsoft Tunnel for mobile applications"
+  ms.date: 09/27/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-deploy-microsoft-tunnel-mobile-applications.md)]

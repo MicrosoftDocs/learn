@@ -3,12 +3,3 @@ In the early years of computing systems, every application stored data in its ow
 The simple yet powerful relational model is used by organizations of all types and sizes for a broad variety of information management needs. Relational databases are used to track inventories, process ecommerce transactions, manage huge amounts of mission-critical customer information, and much more. A relational database is useful for storing any information containing related data elements that must be organized in a rules-based, consistent structure.
 
 In this module, you'll learn about the key characteristics of relational databases, and explore relational data structures.
-
-## Learning objectives
-
-In this module you will learn how to:
-
-- Identify characteristics of relational data
-- Define normalization
-- Identify types of SQL statement
-- Identify common relational database objects

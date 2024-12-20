@@ -2,13 +2,14 @@
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 7-Summary
   description: "Summary"
   ms.date: 08/08/2022
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

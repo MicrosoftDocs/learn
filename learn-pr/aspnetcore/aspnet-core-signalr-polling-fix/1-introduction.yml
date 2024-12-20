@@ -4,12 +4,12 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: In this module, you'll learn how to replace client polling with real-time web functionality from ASP.NET Core SignalR.
-  ms.date: 11/09/2021
+  description: In this module, you learn how to replace client polling with real-time web functionality from ASP.NET Core SignalR.
+  ms.date: 06/03/2024
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-data-manipulation-azure-sql-database.work-with-sql-bindings-in-azure-functions
+title: Manipulate data in Azure SQL Database with Azure Functions
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Manipulate data in Azure SQL Database with Azure Functions
+  description: "Learn how to manipulate data in Azure SQL Database with Azure Functions."
+  ms.date: 10/1/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-work-with-sql-bindings-in-azure-functions.md)]
+

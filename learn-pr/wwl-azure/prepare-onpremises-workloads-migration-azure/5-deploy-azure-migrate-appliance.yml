@@ -2,13 +2,14 @@
 uid: learn.wwl.prepare-onpremises-workloads-migration-azure.deploy-azure-migrate-appliance
 title: Deploy the Azure Migrate appliance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy the Azure Migrate appliance
   description: "Deploy the Azure Migrate appliance"
   ms.date: 09/25/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 6
 content: |

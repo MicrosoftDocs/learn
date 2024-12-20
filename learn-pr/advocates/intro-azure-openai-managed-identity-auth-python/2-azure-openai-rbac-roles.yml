@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: introduction-azure-openai-managed-identity-authentication-python.azure-openai-rbac-roles
+title: Azure OpenAI RBAC roles
+metadata:
+  title: Azure OpenAI RBAC roles
+  description: Learn about the Azure OpenAI RBAC roles that are available for managing access to resources.
+  ms.date: 11/11/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-azure-openai-rbac-roles.md)]

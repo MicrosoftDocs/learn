@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dream-destination-ai-copilot.exercise-create-hero-image
+title: 'Exercise: Create the hero image'
+metadata:
+  title: 'Exercise: Create the hero image'
+  description: "Exercise: Create the hero image"
+  ms.date: 12/13/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - copilot-learning-hub
+  - ai-learning-hub
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-exercise-create-hero-image.md)]

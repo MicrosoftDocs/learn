@@ -2,13 +2,14 @@
 uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.understand-azure-function-bindings
 title: Understand Azure Function bindings for Azure Cosmos DB for NoSQL
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Azure Function bindings for Azure Cosmos DB for NoSQL
   description: "Understand Azure Function bindings for Azure Cosmos DB for NoSQL"
   ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

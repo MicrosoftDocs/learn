@@ -1,12 +1,12 @@
-
-
 ## Deployment via the Azure portal
 
 The Azure portal offers an intuitive interface for performing most common administrative tasks manually.
 
+Azure Center for SAP solutions (ACSS) makes SAP a top-level workload on Azure. Azure Center for SAP solutions is an end-to-end solution that enables you to deploy and manage SAP systems as a unified workload. ACSS supports manual Azure portal, tasks for deployment of new Azure-based SAP systems.
+
 ## Deployment via Microsoft Azure PowerShell cmdlets
 
-PowerShell is a powerful and extensible framework that has been widely adopted by customers that deploy larger numbers of systems in Azure. It is a common choice of administrators with Windows background, although with the release of PowerShell 6.0, it became possible to run it also on Linux and macOS.
+PowerShell is a powerful and extensible framework with wide adoption by customers that deploy larger numbers of systems in Azure. It's a common choice of administrators with Windows background, although with the release of PowerShell 6.0, it became possible to run it also on Linux and macOS.
 
 ## Deployment via Microsoft Azure CLI commands
 
@@ -22,7 +22,7 @@ Terraform is a popular tool choice for multicloud scenarios, where similar infra
 
 The GitHub repository [SAP on Azure Deployment Automation Framework](https://github.com/Azure/sap-automation) contains a set of highly customizable templates that can be used to automatically deploy complex SAP landscapes in the Azure Cloud. The templates are split into:
 
-- Terraform modules, which deploy the infrastructure components (such as VMs, network, storage) in Azure and then call the:
+- Terraform modules, which deploy the infrastructure components (such as virtual machines, network, storage) in Azure and then call the:
 - Ansible playbooks that run different roles to install and configure SAP HANA and required applications on the already deployed infrastructure.
 
 The supported scenarios include the full deployment of:
@@ -32,3 +32,4 @@ The supported scenarios include the full deployment of:
 
   - Single-node HANA instance, two-tier HSR (primary/secondary)
   - Pacemaker high-availability cluster, fully configured with SBD and SAP/Azure resource agents
+

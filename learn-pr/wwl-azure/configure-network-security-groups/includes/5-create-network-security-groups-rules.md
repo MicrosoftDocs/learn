@@ -6,9 +6,9 @@ Let's look at some of the properties you need to specify to create your security
 
 :::image type="content" source="../media/add-network-security-rule-2f306d23.png" alt-text="Screenshot that shows how to configure source and destination settings to create a security rule in the Azure portal.":::
 
-- **Source**: Identifies how the security rule controls **inbound** traffic. The value specifies a specific source IP address range that's allowed or denied. The source filter can be any resource, an IP address range, an application security group, or a default tag. 
+- **Source**: Identifies how the security rule controls **inbound** traffic. The value specifies a specific source IP address range to allow or deny. The source filter can be any resource, an IP address range, an application security group, or a default tag. 
 
-- **Destination**: Identifies how the security rule controls **outbound** traffic. The value specifies a specific destination IP address range that's allowed or denied. The destination filter value is similar to the source filter. The value can be any resource, an IP address range, an application security group, or a default tag.
+- **Destination**: Identifies how the security rule controls **outbound** traffic. The value specifies a specific destination IP address range to allow or deny. The destination filter value is similar to the source filter. The value can be any resource, an IP address range, an application security group, or a default tag.
 
 - **Service**: Specifies the destination protocol and port range for the security rule. You can choose a predefined service like RDP or SSH or provide a custom port range. There are a large number of services to select from. 
 

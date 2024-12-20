@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-container-for-use-with-ai-services.understand-containers
+title: Understand containers
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand containers
+  description: Understand containers
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 08/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-containers.md)]
+

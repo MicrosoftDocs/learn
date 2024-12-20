@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.measure-mitigate-risks-azure-ai-studio.create-content-filter
+title: Create a content filter
+metadata:
+  title: Create a content filter
+  description: Learn how to create a content filter and apply the filter to a model.
+  ms.date: 09/14/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-create-content-filter.md)]

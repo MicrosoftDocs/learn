@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.dotnet-aspire
+metadata:
+  title: Build distributed apps with .NET Aspire
+  description: |
+    Learn how to build observable, production ready, distributed applications with .NET Aspire.  
+  ms.date: 06/12/2024
+  author: CamSoper
+  ms.author: casoper
+  ms.topic: learning-path
+title: Build distributed apps with .NET Aspire
+summary: |
+  Learn how to build observable, production ready, distributed applications with .NET Aspire. 
+prerequisites: |
+  - Experience building web applications using .NET and C#
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - developer
+  - solution-architect
+products: 
+  - dotnet
+  - aspnet-core
+  - dotnet-aspire
+  - vs
+  - vs-code
+subjects: 
+  - cross-development
+  - backend-development
+  - frontend-development
+  - architecture
+modules:
+- learn.introduction-dotnet-aspire
+- learn.create-aspire-application
+- learn.use-telemetry-dotnet-aspire
+- learn.use-databases-dotnet-aspire-app
+- learn.improve-performance-cache-aspire
+- learn.send-messages-rabbitmq-dotnet-aspire-app
+trophy:
+  uid: learn.dotnet-aspire.trophy

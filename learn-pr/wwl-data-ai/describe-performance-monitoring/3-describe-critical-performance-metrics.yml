@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-performance-monitoring.describe-critical-performance-metrics
 title: Describe critical performance metrics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe critical performance metrics
   description: "Describe critical performance metrics"
   ms.date: 09/26/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

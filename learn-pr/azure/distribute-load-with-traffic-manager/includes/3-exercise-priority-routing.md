@@ -1,8 +1,8 @@
-Let's assume that your music-streaming application has an equal distribution of users in the western United States and eastern Asia. You'd like to have a failover version of the app in one region.
+Let's assume that your music-streaming application has an equal distribution of users in the western United States and western Europe. You'd like to have a failover version of the app in one region.
 
 The sample application we use for this exercise displays the region in which it's running. One of the two instances has higher priority and is the primary endpoint. The other instance has a lower priority and is the failover endpoint. Taking the primary endpoint offline automatically routes all traffic to the failover endpoint.
 
-In this exercise, you'll set up Traffic Manager to use the United States endpoint as the primary, failing over to the Asian endpoint if any errors occur.
+In this exercise, you'll set up Traffic Manager to use the United States endpoint as the primary, failing over to the European endpoint if any errors occur.
 
 ## Create a new Traffic Manager profile
 
@@ -10,7 +10,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     az network traffic-manager profile create \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --name TM-MusicStream-Priority \
         --routing-method Priority \
         --unique-dns-name TM-MusicStream-Priority-$RANDOM
@@ -23,11 +23,11 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
 ## Deploy the web applications
 
-1. Run the following command to deploy a Resource Manager template. The template creates two servers, one in the East Asia region, and one in the West US 2 region. Be patient, because the deployment might take a few minutes.
+1. Run the following command to deploy a Resource Manager template. The template creates two servers, one in the West Europe region, and one in the West US 2 region. Be patient, because the deployment might take a few minutes.
 
     ```azurecli
     az deployment group create \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --template-uri  https://raw.githubusercontent.com/MicrosoftDocs/mslearn-distribute-load-with-traffic-manager/master/azuredeploy.json \
         --parameters password="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32)"
     ```
@@ -38,13 +38,13 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     WestId=$(az network public-ip show \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --name westus2-vm-nic-pip \
         --query id \
         --output tsv)
 
     az network traffic-manager endpoint create \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --profile-name TM-MusicStream-Priority \
         --name "Primary-WestUS" \
         --type azureEndpoints \
@@ -53,19 +53,19 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
     ```
 
     ```azurecli
-    EastId=$(az network public-ip show \
-        --resource-group <rgn>Sandbox resource group </rgn> \
-        --name eastasia-vm-nic-pip \
+    WestId=$(az network public-ip show \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
+        --name westeurope-vm-nic-pip \
         --query id \
         --output tsv)
 
     az network traffic-manager endpoint create \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --profile-name TM-MusicStream-Priority \
-        --name "Failover-EastAsia" \
+        --name "Failover-WestEurope" \
         --type azureEndpoints \
         --priority 2 \
-        --target-resource-id $EastId
+        --target-resource-id $WestId
     ```
 
     The code gets the resource IDs from both virtual machines. Then, the code uses the IDs to add them as endpoints to the Traffic Manager profile. The code uses the `--priority` flag to set the West US app to the highest priority.
@@ -74,7 +74,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     az network traffic-manager endpoint list \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --profile-name TM-MusicStream-Priority \
         --output table
     ```
@@ -87,18 +87,18 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     nslookup $(az network public-ip show \
-                --resource-group <rgn>Sandbox resource group </rgn> \
+                --resource-group "<rgn>[Sandbox resource group]</rgn>" \
                 --name westus2-vm-nic-pip \
                 --query dnsSettings.fqdn \
                 --output tsv)
     ```
 
-1. Retrieve the address for the East Asia web app:
+1. Retrieve the address for the West Europe web app:
 
     ```azurecli
     nslookup $(az network public-ip show \
-            --resource-group <rgn>Sandbox resource group </rgn> \
-            --name eastasia-vm-nic-pip \
+            --resource-group "<rgn>[Sandbox resource group]</rgn>" \
+            --name westeurope-vm-nic-pip \
             --query dnsSettings.fqdn \
             --output tsv)
      ```
@@ -108,7 +108,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
     ```azurecli
     # Retrieve the address for the Traffic Manager profile
     nslookup $(az network traffic-manager profile show \
-                --resource-group <rgn>Sandbox resource group </rgn> \
+                --resource-group "<rgn>[Sandbox resource group]</rgn>" \
                 --name TM-MusicStream-Priority \
                 --query dnsConfig.fqdn \
                 --output tsv)
@@ -120,7 +120,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     echo http://$(az network traffic-manager profile show \
-        --resource-group <rgn>Sandbox resource group </rgn> \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>" \
         --name TM-MusicStream-Priority \
         --query dnsConfig.fqdn \
         --output tsv)
@@ -136,7 +136,7 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     az network traffic-manager endpoint update \
-        --resource-group <rgn>Sandbox resource group </rgn>  \
+        --resource-group "<rgn>[Sandbox resource group]</rgn>"  \
         --name "Primary-WestUS" \
         --profile-name TM-MusicStream-Priority \
         --type azureEndpoints \
@@ -149,18 +149,18 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     nslookup $(az network public-ip show \
-                --resource-group <rgn>Sandbox resource group </rgn> \
+                --resource-group "<rgn>[Sandbox resource group]</rgn>" \
                 --name westus2-vm-nic-pip \
                 --query dnsSettings.fqdn \
                 --output tsv)
     ```
 
-1. Retrieve the address for the East Asia web app.\:
+1. Retrieve the address for the West Europe web app.\:
 
     ```azurecli
     nslookup $(az network public-ip show \
-                --resource-group <rgn>Sandbox resource group </rgn> \
-                --name eastasia-vm-nic-pip \
+                --resource-group "<rgn>[Sandbox resource group]</rgn>" \
+                --name westeurope-vm-nic-pip \
                 --query dnsSettings.fqdn \
                 --output tsv)
     ```
@@ -169,14 +169,14 @@ In this exercise, you'll set up Traffic Manager to use the United States endpoin
 
     ```azurecli
     nslookup $(az network traffic-manager profile show \
-                --resource-group <rgn>Sandbox resource group </rgn> \
+                --resource-group "<rgn>[Sandbox resource group]</rgn>" \
                 --name TM-MusicStream-Priority \
                 --query dnsConfig.fqdn \
                 --output tsv)
    ```
 
-    The address for the Traffic Manager profile should now match the East Asia web app.
+    The address for the Traffic Manager profile should now match the West Europe web app.
 
-1. Test the application again from your browser by refreshing the web page. Traffic Manager should automatically redirect the traffic to the East Asia endpoint. Depending on your browser, it might take a few minutes for the locally cached address to expire. Opening the site in a private window should bypass the cache, so you can see the change immediately.
+1. Test the application again from your browser by refreshing the web page. Traffic Manager should automatically redirect the traffic to the West Europe endpoint. Depending on your browser, it might take a few minutes for the locally cached address to expire. Opening the site in a private window should bypass the cache, so you can see the change immediately.
 
-    :::image type="content" source="../media/3-east-asia-app.png" alt-text="Screenshot of the running East Asia web app." loc-scope="other":::
+    :::image type="content" source="../media/3-west-europe-app.png" alt-text="Screenshot of the running West Europe web app." loc-scope="other":::

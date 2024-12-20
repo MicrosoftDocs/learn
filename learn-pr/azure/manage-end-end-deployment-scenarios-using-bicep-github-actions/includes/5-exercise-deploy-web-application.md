@@ -1,4 +1,4 @@
-At your toy company, your website development team has committed the latest version of the website to your Git repository. Now, you're ready to update your workflow to build the website, and to deploy it to Azure App Service.
+At your toy company, your website-development team has committed the latest version of the website to your Git repository. Now, you're ready to update your workflow to build the website, and to deploy it to Azure App Service.
 
 In the process, you'll:
 

@@ -20,11 +20,11 @@ Azure Container Instances offers many benefits, including fast startup, per seco
 
 #### Container groups
 
-The top-level resource in Azure Container Instances is the _container group_. A container group is a collection of containers that get scheduled on the same host machine. The containers in a container group share a lifecycle, resources, local network, and storage volumes.
+The top-level resource in Azure Container Instances is the _container group_. A container group is a collection of containers that get scheduled on the same host machine. The containers in a group share a lifecycle, resources, local network, and storage volumes.
 
 :::image type="content" source="../media/container-groups.png" alt-text="Diagram that shows container groups with access from DNS on port 80 and Azure files on port 1433." border="false":::
 
-Multi-container groups are useful when you want to divide a single functional task into several container images. These images can then be delivered by different teams and have separate resource requirements. Some example scenarios include:
+Multi-container groups are useful when you want to divide a single functional task into several container images. Different teams use these images. Some example scenarios include:
 - A container serving a web application and a container pulling the latest content from source control.
 - An application container and a logging container. The logging container collects the logs and metrics output by the main application and writes them to long-term storage.
 - An application container and a monitoring container. The monitoring container periodically makes a request to the application to ensure it's running and responding correctly, and raises alerts as needed.
@@ -50,4 +50,4 @@ The following table compares how important features are supported in Azure Conta
 | **Operating system** | Container Instances runs the user mode portion of an operating system and can be tailored to contain just the needed services for your application. This configuration results in fewer system resources being utilized.| Each virtual machine runs a complete operating system. Azure Virtual Machines typically requires more system resources than Container Instances, such as CPU, memory, and storage. |
 | **Deployment** | Container Instances deploy individual containers by using Docker via the command line. Multiple containers are deployed by using an orchestrator such as Azure Kubernetes Service.| You can deploy individual virtual machines by using Windows Admin Center or Hyper-V Manager. Multiple virtual machines can be deployed by using PowerShell or System Center Virtual Machine Manager. |
 | **Persistent storage** | Container Instances use Azure Disks for local storage for a single node, or Azure Files (SMB shares) for storage shared by multiple nodes or servers. | With Azure Virtual Machines, you can use a virtual hard disk (VHD) for local storage for a single virtual machine, or an SMB file share for storage shared by multiple servers. |
-| **Fault tolerance** | If a cluster node fails in Azure Container Instances, any containers running on it are rapidly recreated by the orchestrator on another cluster node. | A virtual machine can fail over to another server in a cluster with the operating system of the virtual machine restarting on the new server. |
+| **Fault tolerance** | If a cluster node fails in Azure Container Instances, any containers running on it are rapidly recreated. | A virtual machine can fail over to another server in a cluster with the operating system of the virtual machine restarting on the new server. |

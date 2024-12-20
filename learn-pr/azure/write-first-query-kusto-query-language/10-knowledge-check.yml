@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Check your knowledge
   description: Review what you've learned.
-  ms.date: 11/22/2021
-  author: YaelSchuster
-  ms.author: yaschust
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/16/2024
+  author: shsagir
+  ms.author: shsagir
+  ms.topic: unit
 durationInMinutes: 5 
 content: |
 quiz:
@@ -24,7 +23,7 @@ quiz:
       explanation: 'True. Each operator starts with a tabular input and returns a tabular output.'
     - content: "JSON"
       isCorrect: false
-      explanation: "False. JSON is just one of many data types that can be included in the tabular data."
+      explanation: "False. JSON is just one of many data types that the tabular data can include."
   - content: "Which operator will return a specific number of arbitrary rows of data?"
     choices:
     - content: "`take`"

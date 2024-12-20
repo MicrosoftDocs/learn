@@ -2,27 +2,28 @@
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  ms.date: 05/12/2021
+  ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: jejacks
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: lolab
+  ms.topic: unit
 durationInMinutes: 5
 quiz:
   questions:
   - content: "What does an Azure Resource Manager (ARM) template do?"
     choices:
-    - content: "Automates Azure Service deployment"
+    - content: "Automates Azure Service deployment."
       isCorrect: true
       explanation: "Yes, ARM templates let you specify the Azure resources you want to deploy and the properties of those resources."
-    - content: "Automates Visual Studio build validation"
+    - content: "Automates Visual Studio build validation."
       isCorrect: false
-      explanation: "ARM templates are not part of Visual Studio or it's build validation workflow."
-    - content: "Automates app distribution through PowerShell" 
+      explanation: "ARM templates are not part of Visual Studio or its build validation workflow."
+    - content: "Automates app distribution through PowerShell." 
       isCorrect: false
-      explanation: "While ARM templates are executed through PowerShell or Windows Command Prompt, they do not control app distribution."
+      explanation: "Although ARM templates are executed through PowerShell or Windows Command Prompt, they don't control app distribution."
   - content: "What happens to telemetry data when a simulated alert is triggered?"
     choices:
     - content: "The simulator sends a property update to ADT, setting the Alert property to True, and begins polling ADT at a regular interval until the Alert property is set back to False."
@@ -47,9 +48,9 @@ quiz:
       explanation: "This is a quick way to add assets to a Unity Scene, each will require manual configuration after dropping into the scene"
   - content: "Which of the following real-time content use cases is the Azure SignalR service NOT a good fit for?"
     choices:
-    - content: "High frequency data updates"
+    - content: "High-frequency data updates"
       isCorrect: false
-      explanation: "High frequency data updates for gaming, voting, polling, and auctioning are actually great use cases for Azure SignalR."
+      explanation: "High-frequency data updates for gaming, voting, polling, and auctioning are actually great use cases for Azure SignalR."
     - content: "IoT and connected devices"
       isCorrect: false
       explanation: "IoT and connected devices for real-time IoT metrics, remote control, real-time status, and location tracking are fantastic use cases for Azure SignalR."

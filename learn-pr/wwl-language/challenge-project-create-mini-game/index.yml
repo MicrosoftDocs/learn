@@ -3,32 +3,44 @@ uid: learn.wwl.challenge-project-create-mini-game
 metadata:
   title: Challenge project - Create a mini-game
   description: "Use methods with parameters and return values to develop the features of a console mini-game."
-  ms.date: 03/22/2023
+  ms.date: 03/21/2024
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-challenge-project
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: csharp
+  ai-usage: human-only
 title: Challenge project - Create a mini-game
 summary: Demonstrate your ability to create and use different methods to develop features for a console mini-game.
 abstract: |
-  - Use Visual Studio Code to develop a C# console application that uses methods to implement logical workflows.
-  - Understand existing code and make informed changes to design.
-  - Create return values as well as required and optional parameters in methods.
+  -   Use Visual Studio Code to develop a C# console application that uses methods to implement logical workflows.
+
+  -   Understand existing code and make informed changes to design.
+
+  -   Create return values as well as required and optional parameters in methods.
 prerequisites: |
-  - Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
-  - Experience using C# data types including `int`, `string`, and arrays
-  - Experience using `switch` statements, if-else statements, and `for` loops
-  - Experience using the `Random` class to generate a random number.
-  - Basic understanding of C# methods
+  -   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
+
+  -   Experience using C# data types including `int`, `string`, and arrays
+
+  -   Experience using `switch` statements, if-else statements, and `for` loops
+
+  -   Experience using the `Random` class to generate a random number.
+
+  -   Basic understanding of C# methods
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- dotnet-framework
+- dotnet
 - vs-code
 units:
 - learn.wwl.challenge-project-create-mini-game.introduction

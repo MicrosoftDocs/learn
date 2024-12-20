@@ -6,8 +6,8 @@ metadata:
   ms.date: 08/26/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: msteams
 title: Improve SAP seller productivity with Microsoft Teams and Power Platform
 summary: Integrate applications from SAP with the Microsoft 365 applications. Enable productivity and collaboration in &quot;SAP Sales and Service Core&quot; Teams app to support sales by building Power Automate flows.
 abstract: |
@@ -38,7 +38,6 @@ subjects:
 - business-applications
 - collaboration
 - marketing-sales
-- modern-work
 - productivity
 units:
 - learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.introduction

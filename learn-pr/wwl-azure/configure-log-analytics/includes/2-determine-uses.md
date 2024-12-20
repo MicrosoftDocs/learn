@@ -1,4 +1,3 @@
-
 Log Analytics is a tool for Azure Monitor that's available in the Azure portal. You can use Log Analytics to edit and run log queries for the data collected in Azure Monitor Logs. Log queries help you to search for patterns and identify issues.
 
 :::image type="content" source="../media/log-analytics-38112dc9.png" alt-text="Screenshot that shows an example of Azure Monitor Logs in the Azure portal.":::

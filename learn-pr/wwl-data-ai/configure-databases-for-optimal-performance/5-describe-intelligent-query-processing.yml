@@ -2,13 +2,14 @@
 uid: learn.wwl.configure-databases-for-optimal-performance.describe-intelligent-query-processing
 title: Describe intelligent query processing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe intelligent query processing
   description: "Describe intelligent query processing"
   ms.date: 05/05/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

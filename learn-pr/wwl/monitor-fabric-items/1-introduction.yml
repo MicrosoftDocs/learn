@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-fabric-items.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 12/12/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+  ms.custom:
+  - fabric
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

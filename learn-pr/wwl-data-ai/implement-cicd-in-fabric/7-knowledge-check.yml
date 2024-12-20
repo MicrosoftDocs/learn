@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.implement-cicd-in-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/8/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: What is the role of Git in the CI/CD process in Fabric?
+    choices:
+    - content:  Git is used to deploy code changes to different environments.
+      isCorrect: false
+      explanation: Incorrect. Git isn't used for deployment. It's used for version control and collaboration.
+    - content: Git is used for automated testing of code changes.
+      isCorrect: false
+      explanation: Incorrect. Git doesn't perform automated testing, it's used for version control and collaboration.
+    - content: Git lets your team collaborate using branches, and provides version control. It helps manage incremental code changes, and see code history.
+      isCorrect: true
+      explanation: Correct. Git is used for version control and collaboration, allowing teams to manage code changes and view code history.
+  
+  
+  - content: What is the purpose of connecting a Fabric workspace to a Git repository?
+    choices:
+    - content: To automatically deploy changes made in the workspace to a live environment.
+      isCorrect: false
+      explanation: Incorrect. The connection of a Fabric workspace to a Git repository doesn't automatically deploy changes to a live environment.
+    - content: To sync content between the workspace and Git, ensuring they have the same content.
+      isCorrect: true
+      explanation: Correct. Connecting a Fabric workspace to a Git repository allows for synchronization of content between the two, ensuring they have the same content.
+    - content: To allow multiple developers to work on the same code simultaneously without conflicts.
+      isCorrect: false
+      explanation: Incorrect. While Git does allow multiple developers to work simultaneously, the connection of a Fabric workspace to a Git repository isn't primarily for this purpose.
+  
+  
+  - content: What is the primary function of deployment pipelines in Fabric?
+    choices:
+    - content: Deployment pipelines are used to create new content in Fabric.
+      isCorrect: false
+      explanation: Incorrect. Deployment pipelines don't create content. They automate the movement of content through different stages.
+    - content: Deployment pipelines are used to delete old content from Fabric. 
+      isCorrect: false
+      explanation: Incorrect. Deployment pipelines don't delete content. They facilitate the testing and updating of content.
+    - content: Deployment pipelines automate the movement of content through the development, test, and production stages.
+      isCorrect: true
+      explanation: Correct. Deployment pipelines in Fabric help to automate the process of moving and updating content across different environments.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-kusto-fabric.write-queries-kusto-query-language
+title: Store and query real-time data
+metadata:
+  title: Store and query real-time data
+  description: "Understand how to store and query real-time data in Fabric."
+  ms.date: 12/03/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-write-queries-kusto-query-language.md)]

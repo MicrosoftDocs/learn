@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-devops-aspnet-core.explore-different-approaches
+metadata:
+  title: Explore different CI/CD approaches
+  description: Implement and test a GitHub action to deploy an Azure Container Registry image to Azure Kubernetes Service (AKS).
+  ms.date: 12/11/2023
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: unit
+title: Explore different CI/CD approaches
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-explore-different-approaches.md)]

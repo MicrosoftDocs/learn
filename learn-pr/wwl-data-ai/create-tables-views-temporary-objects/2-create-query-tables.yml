@@ -4,13 +4,10 @@ title: Create and query tables
 metadata:
   title: Create and query tables
   description: "Create and query tables"
-  ms.date: 04/12/2023
+  ms.date: 03/18/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-create-query-tables.md)]

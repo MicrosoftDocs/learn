@@ -1,14 +1,14 @@
-In general, NoSQL databases like Azure Cosmos DB are characterized as being both horizontally scalable and nonrelational.
+Azure Cosmos DB is characterized as being both nonrelational and horizontally scalable.
 
 ## Horizontal scale versus vertical scale
 
-Relational databases typically grow by increasing the size of the VM or compute that they're hosted on. NoSQL databases scale up by adding more servers or nodes. These nodes are also known as physical partitions in Cosmos DB. Data stored on these physical partitions needs to be organized so that it can be efficiently accessed later. 
+Relational databases typically grow by increasing the size of the VM or compute that they're hosted on. NoSQL databases like Azure Cosmos DB scale by adding more servers or nodes. This is known as scale-out. These nodes are also known as physical partitions in Cosmos DB. Data stored on these physical partitions needs to be organized so that it can be efficiently accessed later.
 
-Data is predictably routed to different physical partitions by using the value of a required property on each document. This property is called a container's *partition key*, this partition key needs to be specified when creating the container. Passing the partition key when data is written or read from a container ensures that operations are efficient.
+Data is routed to different physical partitions by using the value of a required property on each document. This property is called a container's *partition key*, this partition key needs to be specified when creating the container. Passing the partition key when data is written or read from a container ensures that operations are efficient by only directing the request to the partition it is stored on.
 
 Although the need for a partition key might appear to be constraint, it has some enormous benefits. Typically, relational database possibly will grow to less than 100 TB at most. A NoSQL database can grow to unlimited size, and can do so without any impact on response times when it's accessing data from any single partition. 
 
-Additionally, as partitions are added, so too is more compute added and the amount of processing that is supported by the database simultaneously grows.
+Additionally, as partitions are added, so too is more compute added and the amount of processing that is supported by the database simultaneously grows. This means that it can support more concurrent users as well. Also with no impact on performance.
 
 ## Nonrelational versus relational databases
 
@@ -32,6 +32,6 @@ At this point, you might be wondering whether NoSQL databases are appropriate to
 
 NoSQL databases are often used when a relational database can't meet the desired performance, scale, or availability needs of the application.
 
-The techniques for designing a NoSQL database are different from the techniques for modeling data for a relational database. These techniques are also not intuitive for someone with a background in relational database design. Some of the best practices that you learn for building relational databases don't translate well to non-relational database design. Those relational database best practices are often antipatterns when you're designing for a NoSQL database.
+The techniques for designing a NoSQL database are different from the techniques for modeling data for a relational database. These techniques are also not intuitive for someone with a background in relational database design. Some of the best practices that you learn for building relational databases are often antipatterns when you're designing for a NoSQL database.
 
 For the rest of this module and in the advanced modeling module, we'll step you through the techniques that are used to model data in a manner that will result in a high-performance NoSQL database.

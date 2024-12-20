@@ -2,13 +2,14 @@
 uid: learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.plan-deployment
 title: Plan an Event Hubs resource provider deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan an Event Hubs resource provider deployment
   description: "Plan an Event Hubs resource provider deployment"
   ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 9

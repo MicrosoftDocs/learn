@@ -124,7 +124,7 @@ Now that you have a completed template and a zipped configuration file, you can 
 
     ```azurecli
     az deployment group validate \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --template-file template.json \
         --parameters vmName=hostVM1 adminUsername=serveradmin
     ```
@@ -143,7 +143,7 @@ Now that you know the template is valid, you can deploy it.
 
     ```azurecli
     az deployment group create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --template-file template.json \
         --parameters vmName=hostVM1 adminUsername=serveradmin
     ```
@@ -154,7 +154,7 @@ Now that you know the template is valid, you can deploy it.
 
     ```azurecli
     az resource list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --output table \
         --query "[*].{Name:name, Type:type}"
     ```
@@ -166,7 +166,7 @@ Now that you know the template is valid, you can deploy it.
     ```azurecli
     echo http://$(az vm show \
         --show-details \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
         --name hostVM1 \
         --query publicIps \
         --output tsv)

@@ -2,13 +2,17 @@
 uid: learn.azure.intro-to-form-recognizer.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 03/14/2021
   author: laujan
   ms.author: lajanuar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/30/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!INCLUDE[](includes/7-summary.md)]
+

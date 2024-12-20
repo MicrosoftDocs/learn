@@ -47,7 +47,7 @@ Change Tracking and Inventory relies on Azure Automation. When you start Azure A
 
 ![Screenshot of Azure Automation Account.  The name is defined as ContosoAutomation in the ContosoResourceGroup. The location is configured as East US.](../media/m10-automation-account.png)
 
-To learn how to create an Automation account, visit [Create an Azure Automation account](https://aka.ms/automation-quickstart-create-account?azure-portal=true).
+To learn how to create an Automation account, visit [Create an Azure Automation account](/azure/automation/quickstarts/create-azure-automation-account-portal).
 
 ### Supported operating systems
 

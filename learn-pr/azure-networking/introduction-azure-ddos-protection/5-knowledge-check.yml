@@ -2,13 +2,14 @@
 uid: learn.introduction-azure-ddos-protection.5-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 03/08/2023
+  ms.date: 05/22/2024
   author: AbdullahBell
   ms.author: abell
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -48,3 +49,4 @@ quiz:
     - content: "Immediately clear your logs during the attack."
       isCorrect: false
       explanation: "Incorrect. You shouldn't clear your logs during the attack."
+

@@ -25,12 +25,12 @@ Let's review the characteristics of security rules in network security groups.
 
 #### Inbound traffic rules
 
-Azure defines three default inbound security rules for your network security group. These rules **deny all inbound traffic** except traffic from your virtual network and Azure load balancers. The following image shows the default inbound security rules for a network security group in the Azure portal.
+Azure defines three default inbound security rules for your network security group. These rules **deny all inbound traffic** except traffic from your virtual network and Azure load balancers. The next image shows the default inbound security rules for a network security group in the Azure portal.
 
 :::image type="content" source="../media/inbound-rules-a554314b.png" alt-text="Screenshot that shows default inbound security rules for a network security group in the Azure portal.":::
 
 #### Outbound traffic rules
 
-Azure defines three default outbound security rules for your network security group. These rules **only allow outbound traffic** to the internet and your virtual network. The following image shows the default outbound security rules for a network security group in the Azure portal.
+Azure defines three default outbound security rules for your network security group. These rules **only allow outbound traffic** to the internet and your virtual network. The next image shows the default outbound security rules for a network security group in the Azure portal.
 
 :::image type="content" source="../media/outbound-rules-ff90d802.png" alt-text="Screenshot that shows default outbound security rules for a network security group in the Azure portal.":::

@@ -6,13 +6,12 @@ metadata:
   ms.date: 03/14/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Implement and operate an on-premises and hybrid networking infrastructure
 prerequisites: |
   - Experience with managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS, DNS, DFS, Hyper-V, and File and Storage Services
   - Basic experience with implementing and managing IaaS services in Microsoft Azure
-  - Basic knowledge of Azure Active Directory
+  - Basic knowledge of Microsoft Entra ID
   - Basic understanding security-related technologies (firewalls, encryption, multi-factor authentication, SIEM/SOAR)
   - Basic knowledge of PowerShell scripting
 summary: |

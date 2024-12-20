@@ -2,17 +2,18 @@
 uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 11/16/2021
   author: gloveboxes
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
+  ms.topic: unit
   ms.custom: nextgen
 durationInMinutes: 2
 content: |
-  Choose the best response for each question. Then select **Check your answers**.
+  Choose the best response for each question. 
 quiz:
   questions:
   - content: "Which of the following is an advantage of running a private MQTT broker?"
@@ -46,3 +47,4 @@ quiz:
       isCorrect: false
       explanation: "The virtual disk server runs on your desktop or on a cloud-based virtual machine."
  
+

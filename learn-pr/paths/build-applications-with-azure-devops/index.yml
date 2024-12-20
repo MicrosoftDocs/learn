@@ -4,12 +4,11 @@ metadata:
   title: Build applications with Azure DevOps learning path
   description: In this learning path, find out how to collaborate with others to continuously build, test, and verify your applications using Azure Pipelines and GitHub.
   brand: azure
-  ms.date: 9/1/2019
+  ms.date: 04/02/2024
   author: steved0x
   ms.author: sdanie
   #ms.learn-contact: thpetche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Build applications with Azure DevOps
 summary: |
   Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure build pipelines that continuously build, test, and verify your applications.

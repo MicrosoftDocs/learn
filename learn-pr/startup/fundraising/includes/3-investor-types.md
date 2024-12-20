@@ -1,8 +1,8 @@
-In this unit, we're going to cover three of the most common types of startup investors: friends and family, angel investors, and venture capital (VC) funds.
+In this unit, we explain three of the most common types of startup investors: friends and family, angel investors, and venture capital (VC) funds.
 
 ## Friends and family
 
-It's reasonably common for startup founders to raise their first funding round from friends and family members.
+It's common for startup founders to raise their first funding round from friends and family members.
 
 The motivations of these investors vary. Typically, they want to support the entrepreneur. For example, the investor might be your uncle who wants to help you get started. They also might want to try to generate a return from their investment by *getting in early*.
 
@@ -12,7 +12,7 @@ Friends and family can be a good source of early capital if they're happy to be 
 
 For most founders, the biggest challenge with friends and family rounds is that you have a friend or a family member who's now a shareholder in your company. They're financially exposed to the success or failure of your business.
 
-This arrangement can have a profound effect on your relationship with that person. It's wise to think about how you'd manage this relationship over the long term.
+This arrangement can have a profound effect on your relationship with that person. It's wise to think about how to manage this relationship over the long term.
 
 Tips for raising money from friends and family:
 
@@ -23,18 +23,18 @@ Tips for raising money from friends and family:
 
 ## Angel investors
 
-An angel investor is a wealthy individual who's investing their own money, like Melanie in the previous unit's example. In many cases, they've been successful entrepreneurs themselves.
+An angel investor is a wealthy individual who invests their own money, like Melanie in the previous unit's example. In many cases, they're successful entrepreneurs themselves.
 
 Good angel investors bring capital along with expertise and networks that can help you grow your company. Angel investors often work in groups. An angel round can have a few or sometimes 20 or more individual investors participating.
 
-Angel groups often invest in a wide range of sectors, with their investment interests being heavily influenced by the individual expertise of their members.
+Angel groups often invest in a wide range of sectors, with their investment interests influenced by their members' individual expertise.
 
-Generally, angel investors will consider investing in a startup only after it has launched at least a minimal viable product and generated early traction in the form of product usage and, ideally, revenue.
+Generally, angel investors will consider investing in a startup only after it launches at least a minimal viable product and generates traction in the form of product usage and, ideally, revenue.
 
 Tips for raising money from angel investors:
 
-- Research the investor and ensure that their investment profile is a match for your company. Consider the stage of investment, check size, and sector.
-- Find opportunities for warm introductions via other founders who have raised money from the angel investor or angel group.
+- Research the investor and ensure that their investment profile is a match for your company. Consider the stage, size, and sector of their investments.
+- Find opportunities for warm introductions via other founders who raised money from the angel investor or angel group.
 - Speak to founders of portfolio companies to find out whether their experience with the investor was positive.
 - Be prepared to send your pitch deck in advance of any meeting. Most angel groups ask you to upload a pitch deck or executive summary via their website before they'll meet with you.
 
@@ -65,7 +65,7 @@ Tips for raising money from VC funds:
 
 ## Not all money is equally valuable
 
-Good investors will add significant value to your company by sharing their expertise and networks. They'll also provide guidance to the founders as they work on growing the business. Recognized investors, such as top-tier VC funds, will also add credibility by association. Their involvement might make it easier for you to raise subsequent funding rounds.
+Good investors can add significant value to your company by sharing their expertise and networks. They'll also provide guidance to the founders as they work on growing the business. Recognized investors, such as top-tier VC funds, will also add credibility by association. Their involvement might make it easier for you to raise subsequent funding rounds.
 
 There are investors who will add limited value, such as friends and family, as we discussed previously. There are also investors who add negative value.
 
@@ -75,6 +75,6 @@ The benefits of smart money are clear. Smart money comes from someone who has re
 
 Dumb money comes from people who don't know much about your business or about how startups work. Being passive means they're prepared to take a back seat, and they have no ambitions to contribute to running your company. Dumb, passive money is fine if you have access to other sources of experienced guidance and the investment is on general terms.
 
-Dumb, involved money is problematic. It comes from people who don't have much value to contribute, but who insist on having an active role in your company. Sometimes dumb, involved money comes from inexperienced angel investors who have created wealth in other sectors, such as retail or property investing, and who want to try their hand at angel investing.
+Dumb, involved money is problematic. It comes from people who don't have much value to contribute, but who insist on having an active role in your company. Sometimes dumb, involved money comes from inexperienced angel investors who have created wealth in other sectors, such as retail or property investing, and want to try their hand at angel investing.
 
 It's wise to avoid these investors. Experience has shown that the challenge of managing their involvement frequently outweighs the benefit of the capital they provide.

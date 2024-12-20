@@ -1,4 +1,6 @@
-You can use ARM templates to create a private mobile network and a site. 
+Now that you learned to deploy a private mobile network through the Azure portal, you might want to learn more about how to deploy using the ARM template deployment method. ARM templates can make your deployment more efficient.
+
+You can use ARM templates to create a private mobile network and a site.
 
 |**Task using ARM templates**  | **Reference**  |
 |---------|---------|

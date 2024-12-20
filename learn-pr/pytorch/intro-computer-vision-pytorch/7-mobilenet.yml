@@ -2,14 +2,18 @@
 uid: learn.pytorch.intro-computer-vision.mobilenet
 title: Solving vision problems with MobileNet
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Solving vision problems with MobileNet
-  description: MobileNet is a compact neural network architecture that can be used to solve computer vision problems on mobile and low-power devices. 
+  description: MobileNet is a compact neural network architecture that can be used to solve computer vision problems on mobile and low-power devices.
   author: shwars
-  ms.author: dmitryso
+  ms.author: chnoring
   ms.date: 04/14/2021
-  ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
   ms.custom: team=nextgen
 durationInMinutes: 5
 sandbox: true
 notebook: notebooks/7-mobilenet.ipynb
+

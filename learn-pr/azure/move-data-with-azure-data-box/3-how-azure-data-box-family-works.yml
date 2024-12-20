@@ -2,13 +2,15 @@
 uid: learn.azure.move-data-with-azure-data-box.how-azure-data-box-family-works
 title: How the Azure Data Box family works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How the Azure Data Box family works
-  description: In this unit, you'll learn how administrators use Azure Data Box products to get data into Azure.
-  ms.date: 07/26/2019
-  author: alkohli
-  ms.author: alkohli
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: In this unit, you learn how administrators use Azure Data Box products to get data into Azure.
+  ms.date: 05/01/2023
+  author: stevenmatthew
+  ms.author: shaas
+  manager: femila
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-how-azure-data-box-family-works.md)]
@@ -40,3 +42,4 @@ quiz:
     - content: "ManagedDisk folder"
       isCorrect: false
       explanation: "Use the ManagedDisk folder to migrate virtual hard disks that are in the VHD format."
+

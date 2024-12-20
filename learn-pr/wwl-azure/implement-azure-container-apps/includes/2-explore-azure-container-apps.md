@@ -1,5 +1,3 @@
-
-
 Azure Container Apps enables you to run microservices and containerized applications on a serverless platform that runs on top of Azure Kubernetes Service. Common uses of Azure Container Apps include:
 
 * Deploying API endpoints
@@ -25,7 +23,7 @@ With Azure Container Apps, you can:
 
 ## Azure Container Apps environments
 
-Individual container apps are deployed to a single Container Apps environment, which acts as a secure boundary around groups of container apps. Container Apps in the same environment are deployed in the same virtual network and write logs to the same Log Analytics workspace. You may provide an existing virtual network when you create an environment.
+Individual container apps are deployed to a single Container Apps environment, which acts as a secure boundary around groups of container apps. Container Apps in the same environment are deployed in the same virtual network and write logs to the same Log Analytics workspace. You might provide an existing virtual network when you create an environment.
 
 Reasons to deploy container apps to the same environment include situations when you need to:
 

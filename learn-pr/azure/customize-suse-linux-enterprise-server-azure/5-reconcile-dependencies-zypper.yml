@@ -2,14 +2,17 @@
 uid: learn.azure.customize-suse-linux-enterprise-server-azure.reconcile-dependencies-zypper
 title: Reconcile dependencies with zypper package manager
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Reconcile dependencies with zypper package manager
   description: Learn about how SUSE handles package dependencies with zypper.
-  ms.date: 06/15/2021
+  ms.date: 08/01/2024
   author: yenchiho
   ms.author: yenchiho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 5
 content: |
   [!include[](includes/5-reconcile-dependencies-zypper.md)]
+

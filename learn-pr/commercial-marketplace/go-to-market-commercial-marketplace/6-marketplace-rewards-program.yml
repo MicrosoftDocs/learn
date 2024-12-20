@@ -4,11 +4,10 @@ title: Marketplace Rewards program
 metadata:
   title: Marketplace Rewards program
   description: Overview of the Marketplace Rewards program for commercial marketplace publishers
-  ms.date: 11/10/2020
+  ms.date: 04/04/2024
   author: marleva
   ms.author: maevan
-  ms.topic: interactive-tutorial
-  ms.service: marketplace
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-marketplace-rewards-program.md)]

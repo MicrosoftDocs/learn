@@ -2,13 +2,14 @@
 uid: learn.wwl.survey-components-of-azure-synapse-analytics.describe-sql
 title: Describe Azure Synapse Analytics SQL
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure Synapse Analytics SQL
   description: "Describe Azure Synapse Analytics SQL"
   ms.date: 06/23/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

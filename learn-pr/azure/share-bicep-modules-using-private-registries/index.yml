@@ -1,14 +1,18 @@
 ### YamlMime:Module
 uid: learn.azure.share-bicep-modules-using-private-registries
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Share Bicep modules by using private registries
   description: Work with reusable Bicep modules by using Bicep registries. Create a private registry for your organization. Publish and consume modules by using your organization's registry.
-  ms.date: 03/06/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-resource-manager
+  manager: jasongroce
+  ms.date: 09/27/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
+  ms.devlang: bicep
 title: Share Bicep modules by using private registries
 summary: |
   Reuse Bicep modules to reduce code duplication and increase the quality of your deployments.
@@ -52,3 +56,4 @@ units:
 - learn.azure.share-bicep-modules-using-private-registries.summary
 badge:
   uid: learn.azure.share-bicep-modules-using-private-registries.badge
+

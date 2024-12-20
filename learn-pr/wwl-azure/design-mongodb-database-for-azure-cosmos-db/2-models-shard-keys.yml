@@ -2,13 +2,14 @@
 uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.models-shard-keys
 title: Models and shard keys
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Models and shard keys
   description: "Models and shard keys"
   ms.date: 12/28/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

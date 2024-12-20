@@ -9,7 +9,7 @@ In batch processing, newly arriving data elements are collected and stored, and 
 
 For example, suppose you want to analyze road traffic by counting the number of cars on a stretch of road. A batch processing approach to this would require that you collect the cars in a parking lot, and then count them in a single operation while they're at rest.
 
-![Cars being counted in a parking lot](../media/batch.png)
+![Diagram of cars being counted in a parking lot.](../media/batch.png)
 
 If the road is busy, with a large number of cars driving along at frequent intervals, this approach may be impractical; and note that you don't get any results until you have parked a batch of cars and counted them.
 
@@ -31,7 +31,7 @@ In stream processing, each new piece of data is processed when it arrives. Unlik
 
 For example, a better approach to our hypothetical car counting problem might be to apply a *streaming* approach, by counting the cars in real-time as they pass:
 
-![Cars being counted as they pass](../media/stream.gif)
+![Diagram of cars being counted as they pass.](../media/stream.gif)
 
 In this approach, you don't need to wait until all of the cars have parked to start processing them, and you can aggregate the data over time intervals; for example, by counting the number of cars that pass each minute.
 
@@ -63,7 +63,7 @@ Even when real-time analysis or visualization of data is not required, streaming
 
 The following diagram shows some ways in which batch and stream processing can be combined in a large-scale data analytics architecture.
 
-![A data analytics architecture that includes batch and stream processing](../media/lambda-architecture.png)
+![Diagram of a data analytics architecture that includes batch and stream processing.](../media/lambda-architecture.png)
 
 1. Data events from a streaming data source are captured in real-time.
 2. Data from other sources is ingested into a data store (often a *data lake*) for batch processing.

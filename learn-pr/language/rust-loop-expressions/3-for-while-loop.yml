@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/20/2021
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Use for, while, and loop expressions
 durationInMinutes: 7

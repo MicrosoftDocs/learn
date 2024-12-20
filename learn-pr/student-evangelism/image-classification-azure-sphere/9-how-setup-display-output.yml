@@ -2,14 +2,15 @@
 uid: learn.oxford.image-classification-azure-sphere.how-setup-display-output
 title: How to set up display output
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to set up display output
   description: In this section, we guide the learner in how to set up display output.
-  ms.date: 06/19/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/9-how-setup-display-output.md)]
+

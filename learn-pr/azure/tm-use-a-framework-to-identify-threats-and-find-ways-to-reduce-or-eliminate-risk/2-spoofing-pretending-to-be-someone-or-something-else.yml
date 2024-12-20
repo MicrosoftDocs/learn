@@ -4,11 +4,10 @@ title: Spoofing - pretending to be someone or something else
 metadata:
   title: Spoofing - pretending to be someone or something else
   description: Learn about Spoofing and its corresponding security control
-  ms.date: 02/28/2020
+  ms.date: 07/17/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-spoofing-pretending-to-be-someone-or-something-else.md)]

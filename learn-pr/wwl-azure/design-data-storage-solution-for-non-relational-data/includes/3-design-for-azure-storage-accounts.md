@@ -19,15 +19,15 @@ Azure Storage offers several storage account options. Each [storage account](/az
 
 ### Things to consider when choosing storage accounts
 
-You've reviewed Azure storage account options and some scenarios for when to use different types of storage accounts. Take a few minutes to think about the storage accounts in the Tailwind Traders organization. If you're already using storage accounts, explore how well the configuration meets the business scenarios.
+You review Azure storage account options and some scenarios for when to use different types of storage accounts. Take a few minutes to think about the storage accounts in the Tailwind Traders organization. If you're already using storage accounts, explore how well the configuration meets the business scenarios.
 
-- **Consider your storage locations**. Locate data storage close to where it's most frequently used to increase performance. Does Tailwind Traders have data that's specific to a country or region? You might need a storage account to best support each location.
+- **Consider your storage locations**. Locate data storage close to where it's most frequently used. Does Tailwind Traders have data that's specific to a location? You might need a storage account to best support each location.
 
 - **Consider compliance requirements**. Examine regulatory guidelines for Tailwind Traders business scenarios. Are there guidelines for keeping data in a specific location? Does your company have internal requirements for auditing or storing data? You might require different storage accounts to meet the different requirements.
 
 - **Consider data storage costs**. Factor in data storage costs into your plan for Tailwind Traders. A storage account by itself has no financial cost. But, the settings you choose for the account do influence the cost of services in the account. Geo-redundant storage costs more than locally redundant storage. Premium performance and the hot access tier increase the cost of blobs. Do you need to keep track of expenses or billing by department or project? Are you working with partners where storage costs need to be separated? By creating multiple storage accounts, you can better control the overall costs.
 
-- **Consider replication scenarios**. Configure data storage to support different replication strategies. You could partition your data into critical and non-critical categories. You could place Tailwind Traders critical data into a storage account with geo-redundant storage. You could put Tailwind Traders non-critical data in a different storage account with locally redundant storage.
+- **Consider replication scenarios**. Configure data storage to support different replication strategies. You could partition your data into critical and noncritical categories. You could place Tailwind Traders critical data into a storage account with geo-redundant storage. You could put Tailwind Traders noncritical data in a different storage account with locally redundant storage.
 
 - **Consider administrative overhead**. Plan for administrative overhead in your Tailwind Traders storage design. Each storage account requires some time and attention from an administrator to create and maintain. Using multiple storage accounts increases the complexity for users who add data to your cloud storage. Users in this role need to understand the purpose of each storage account to ensure they add new data to the correct account.
 

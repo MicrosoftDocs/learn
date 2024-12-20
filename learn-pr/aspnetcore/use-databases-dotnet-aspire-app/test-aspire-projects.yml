@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.use-databases-dotnet-aspire-app.test-aspire-projects
+
+title: Create tests with .NET Aspire
+metadata:
+  title: Create tests with .NET Aspire
+  description: "Learn the fundamentals of testing in .NET Aspire."
+  ms.date: 8/23/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
+durationInMinutes: 5
+content: |
+  [!include[](includes/test-aspire-projects.md)]

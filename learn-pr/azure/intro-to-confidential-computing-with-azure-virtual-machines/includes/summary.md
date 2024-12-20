@@ -1,4 +1,4 @@
-In this module you learned about the broad portfolio of Azure confidential computing products. You also learned about confidential computing with virtual machine technologies, and how to choose the virtual machine technology and approach that makes the most sense for your applications. 
+In this module, you learned about the broad portfolio of Azure confidential computing products. You also learned about confidential computing with virtual machine technologies, and how to choose the virtual machine technology and approach that makes the most sense for your applications. 
 
 ### Learn more
 
@@ -6,7 +6,7 @@ In this module you learned about the broad portfolio of Azure confidential compu
 
 - [Azure Friday video: Azure Confidential Computing with Confidential VMs and AKS nodes](/shows/azure-friday/azure-confidential-computing-with-confidential-vms-and-aks-nodes)
 
-- [Azure confidential computing documentation](/azure/confidential-computing/) 
+- [Azure confidential computing documentation](/azure/confidential-computing/)
 
 - [Azure Confidential Computing blog](https://techcommunity.microsoft.com/t5/azure-confidential-computing/bg-p/AzureConfidentialComputingBlog)
 

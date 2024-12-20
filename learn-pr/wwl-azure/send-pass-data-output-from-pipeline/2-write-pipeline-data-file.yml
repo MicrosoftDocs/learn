@@ -2,15 +2,14 @@
 uid: learn.wwl.send-pass-data-output-from-pipeline.write-pipeline-data-file
 title: Write pipeline data to a file
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Write pipeline data to a file
   description: "Write pipeline data to a file"
-  ms.date: 10/14/2022
+  ms.date: 01/29/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/2-write-pipeline-data-file.md)]

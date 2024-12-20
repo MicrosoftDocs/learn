@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-ai-fundamentals.understand-responsible-ai
+title: Understand Responsible AI
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand Responsible AI
+  description: "Understand Responsible AI"
+  ms.date: 10/03/2024
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/8a-understand-responsible-ai.md)]

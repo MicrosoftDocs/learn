@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-delta-lake-tables-fabric.optimize-delta-tables
+title: Optimize delta tables
+metadata:
+  title: Optimize Delta tables
+  description: "Optimize Delta tables"
+  ms.date: 09/26/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+  ms.custom:
+  - build-2023
+durationInMinutes: 5
+content: |
+  [!include[](includes/3b-optimize-delta-tables.md)]

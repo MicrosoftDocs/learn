@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.personalize-remote-development-workflow.exercise-settings-sync
+title: Exercise - Explore Settings Sync
+metadata:
+  title: Exercise - Explore Settings Sync
+  description: "Learn to use the Settings Sync extension to synchronize your Visual Studio Code settings across multiple machines."
+  ms.date: 11/28/2023
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-exercise-explore-settings-sync.md)]

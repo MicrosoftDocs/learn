@@ -4,13 +4,12 @@ title: Design a data integration and analytic solution with Azure Synapse Analyt
 metadata:
   title: Design a data integration and analytic solution with Azure Synapse Analytics
   description: "Design a data integration and analytic solution with Azure Synapse Analytics"
-  ms.date: 03/14/2023
+  ms.date: 12/11/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
 content: |
   [!include[](includes/5-solution-azure-synapse-analytics.md)]

@@ -2,13 +2,14 @@
 uid: learn.wwl.migrate-onpremises-workloads-azure.enable-hyperv-host-servers-replication
 title: Enable Hyper-V host servers for replication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable Hyper-V host servers for replication
   description: "Enable Hyper-V host servers for replication"
   ms.date: 05/17/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 6
 content: |

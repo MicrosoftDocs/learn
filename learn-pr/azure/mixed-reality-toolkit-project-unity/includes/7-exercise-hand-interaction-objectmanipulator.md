@@ -1,106 +1,108 @@
-The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands. This script supports the direct manipulation input model as the script enables the user to touch holograms directly with their hands. Here you'll create a cube and use ObjectManipulator to enable hand interactions so that you can move, scale, and rotate the cube.
+The ObjectManipulator script supports the *direct manipulation* modality of the hands and motion controllers input model. When the script is attached to an object, the user can move, scale, or rotate the object with their hands. In this exercise, you'll create two cubes, attach the necessary scripts to them, and then move the cubes around.
 
-## Add a Cube to the scene
+## Add and adjust the first cube
 
-1. In the **Hierarchy** window, click the **+** icon and select **3D Object** > **Cube**.
+1. In the menu bar, select **GameObject** > **3D Object** > **Cube**.
 
-    :::image type="content" source="../media/add-cube-scene.png" alt-text="Screenshot of the Unity Hierarchy window with the plus icon selected and 3D object, Cube selected.":::
+    :::image type="content" source="../media/027-add-cube.png" alt-text="Screenshot of menu commands for adding the cube.":::
 
-1. Adjust the Scene view camera using the Scene Gizmo to view the front of the cube.
+    The cube's default size is one cubic meter, which is too large for our purposes. We'll scale the size down to 20 cubic centimeters.
 
-    :::image type="content" source="../media/adjust-scene-view.png" alt-text="Screenshot of the Unity editor with the Scene Gizmo object highlighted.":::
+1. Select the cube, and then in the **Inspector**, change the cube's **Scale** values in the **Transform** section to the following:
 
-1. Select the **Cube** object in the **Hierarchy** window. The Cube's properties will display in the **Inspector** window.
+   X = 0.2, Y = 0.2, Z = 0.2
 
-    :::image type="content" source="../media/cube-inspector-window.png" alt-text="Screenshot of the Unity editor with the Cube object highlighted and the Inspector window highlighted.":::
+    The cube was placed in the scene at the default position of (0,0,0). This means the cube is at the same position as the user's headset, and the user won't be able to see the cube until they move backwards. We'll change the cube's position values so it'll be in a better location for viewing.
 
-1. In the **Inspector** window, change the Cube's **Transform Scale** to **.25**, **.25**, **.25**. This will make the cube smaller.
+1. In the **Inspector**, change the cube's **Position** values in the **Transform** section to the following:
 
-    :::image type="content" source="../media/cube-transform-scale.png" alt-text="Screenshot of the Inspector window with the Scale parameters highlighted. The value of x, y, and z are 0.25.":::
+   X = -0.2, Y = 1.6, Z = 0.5
 
-1. Change the Cube **Transform Position** to **0**, **0**, **.8**. This will move the cube object further back on the z-axis.
+    :::image type="content" source="../media/028-cube-transform.png" alt-text="Screenshot of the cube's transform component after updates.":::
 
-    :::image type="content" source="../media/cube-transform-position.png" alt-text="Screenshot of the Inspector window with the Position parameters highlighted. The value of x and y are 0. The value of z is 0.8.":::
+    We want to be able to see three sides of the cube, so we'll change the cube's rotation, too.
 
-## Add a material to the Cube
+1. In the **Inspector**, change the cube's **Rotation** values in the **Transform** section values to the following:
 
-1. In the **Project** window, enter **MRTK_Standard_Blue** into the search bar. Change the Search location to **Packages**.
+   X = 9, Y = 14, Z = 0
 
-    :::image type="content" source="../media/search-mrtk-standard-blue.png" alt-text="Screenshot of the Project window with the search bar highlighted. The phrase m r t k underscore standard underscore blue is entered into the search bar. The search location is highlighted. Packages is selected as the location.":::
+   > [!TIP]
+   > To zoom in on the cube, select it, make sure cursor is hovering over the **Scene** window, and  press the <kbd>F</kbd> key. You can zoom in on any object this way.
 
-1. Select the **MRTK_Standard_Blue** material and drag onto the Cube. This will change the color of the cube to blue.
+## Add the scripts to the cube
 
-    :::image type="content" source="../media/blue-cube.png" alt-text="Screenshot of Scene window, which contains a blue cube.":::
+In order for an object to be "grabbable" with tracked hands, it must have three components attached:
 
-## Add ObjectManipulator to the Cube
+- A Collider component (You don't need to do anything here; Unity's cube already has a Box Collider attached by default)
+- Object Manipulator (script) component
+- Constraint Manager (script) component
 
-1. Select the **Cube** object in the **Hierarchy** window.
-1. In the **Inspector** window, click **Add Component**.
+1. With the cube still selected, in the **Inspector** window, select the **Add Component** button, and then search for and select the **Object Manipulator** script.
 
-    :::image type="content" source="../media/cube-add-component.png" alt-text="Screenshot of the Inspector window with the Add Component button highlighted.":::
+    :::image type="content" source="../media/029-select-object-manipulator.png" alt-text="Screenshot of adding the Object Manipulator script.":::
 
-1. In the **Search** window that appears, enter **Object Manipulator**.
+    The Object Manipulator script makes an object movable, scalable, and rotatable using one or two hands. When you add the Object Manipulator script, the Constraint Manager script is automatically added as well because the Object Manipulator script depends on it.
 
-    :::image type="content" source="../media/search-object-manipulator.png" alt-text="Screenshot of the Inspector window with the search bar highlighted. The phrase Object Manipulator is entered into the search bar.":::
+    :::image type="content" source="../media/030-constraint-manager.png" alt-text="Screenshot of the Constraint Manager script added to the cube.":::
 
-1. Select the **Object Manipulator** script. This script will enable you to manipulate the cube using your hands.
+## Update the cube's material
 
-    :::image type="content" source="../media/select-object-manipulator.png" alt-text="Screenshot of the Inspector window with the Object Manipulator script highlighted in the search results.":::
+For performance purposes, we recommend using MRTK materials instead of the default Unity materials.
 
-## Add NearInteractionGrabbable to the Cube
+1. With the cube still selected, find and expand the **Materials** section on the Mesh Renderer component.
+1. Replace the default material with the **MRTK_Standard_White** material, located under **MRTK Standard Assets** > **Materials**. You can do this by dragging the material directly into the **Element** field in the **Materials** section
 
-1. Select the **Cube** object in the **Hierarchy** window.
-1. In the **Inspector** window, click **Add Component**.
+## Add a second cube
 
-    :::image type="content" source="../media/cube-add-component.png" alt-text="Screenshot of the Inspector window with the Add Component button highlighted.":::
+1. In the **Hierarchy**, right-click the cube and select **Duplicate**. The duplicated cube appears with the name *Cube (1)*.
+1. Right-click the original cube, select **Rename**, and name the cube *Near Cube*.
+1. Right-click the duplicated cube, select **Rename**, and then name the cube *Far Cube*.
 
-1. In the **Search** window that appears, enter **Near Interaction Grabbable**.
+    At the moment, it looks like there's only one cube in the **Scene** view. That's because Near Cube and Far Cube are in the same exact place. Let's change Far Cube's position and rotation.
 
-    :::image type="content" source="../media/search-near-interaction-grabbable.png" alt-text="Screenshot of the Inspector window with the search bar highlighted. The phrase Near Interaction Grabbable is entered into the search bar.":::
+1. With Far Cube still selected, change its values in its **Transform** component to the following:
 
-1. Select the **Near Interaction Grabbable** script. This script will enable you to grab the object from a close distance.
+    **Position**: X = 0.6, Y = 1.6, Z = 1.1
 
-    :::image type="content" source="../media/select-near-interaction-grabbable.png" alt-text="Screenshot of the Inspector window with the Near Interaction Grabbable script highlighted in the search results.":::
+    **Rotation**: X = 27, Y = 0, Z = 0
 
-## Move the Cube in play mode
+    Now the camera should see the Near Cube on the left and the Far Cube a little further away on the right. To confirm this, in the **Hierarchy**, select **Main Camera** (under **MRTK XR Rig** > **Camera Offset**), then look at the **Main Camera** window in the **Scene** window.
 
-1. In the Unity toolbar, click the **Play** icon to enter play mode.
+    :::image type="content" source="../media/040-main-camera-view.png" alt-text="Screenshot of the Main Camera view in the Scene window.":::
 
-    :::image type="content" source="../media/play-mode.png" alt-text="Screenshot of the Unity editor in Play mode. The play button displays blue. A blue cube displays in the Scene and Game window. The diagnostics tools display below the cube in both windows.":::
+    > [!TIP]
+    > If you want the view in the **Scene** window to look more like what the camera sees, scroll around in the **Scene** window. You might have to set the camera's **Clear Flags** to **Skybox** if it's not by default.
 
-1. Using the Unity in-editor input simulation, press the **space bar** on your keyboard to simulate hand input with the right hand.
+## Grab and move the cubes in Play mode
 
-    :::image type="content" source="../media/hand-simulation.PNG" alt-text="Screenshot of the Game window with the blue cube in the center and a right simulated hand to the right of the cube. The diagnostics tools display below the cube.":::
+1. Select the **Play** button. When the project starts playing, the view switches to the **Game** window.
 
-1. While pressing the space bar, use your mouse scroll wheel to adjust the hand's distance to the cube. Left click the mouse to grab the cube and drag.
+    :::image type="content" source="../media/031-game-window.png" alt-text="Screenshot of the Game window after entering Play mode.":::
 
-    :::image type="content" source="../media/grab-cube-drag.png" alt-text="Screenshot of the Game window with the blue cube dragged to the right by a right simulated hand. The diagnostics tools display below the cube.":::
+    > [!NOTE]
+    >  Before Playing, confirm that there is a valid **Profile** set under **Project Settings** > **MRTK3**.
 
-## Rotate the Cube in play mode
+1. Select the **three-dot** button above the upper-right corner of the **Game** window and then select **Maximize**.
 
-1. While in Play mode, press the **space bar** on your keyboard to simulate hand input with the right hand.
+    :::image type="content" source="../media/032-maximize-command.png" alt-text="Screenshot of Maximize command for the Game window.":::
 
-    :::image type="content" source="../media/hand-simulation.PNG" alt-text="Screenshot of the Game window with the blue cube in the center and a right simulated hand to the right of the cube. The diagnostics tools display below the cube.":::
+1. Press and hold the **space bar** to make the simulated right hand appear in the view.
+1. Move the simulated hand closer to the Near Cube until it touches the cube on the side or bottom.
 
-1. While pressing the space bar, use your mouse scroll wheel to adjust the hand's distance to the cube. Left click the mouse to grab the cube.
-1. While pressing the space bar, press the **CTRL** key on your keyboard and left click the mouse to rotate the hand.
+    :::image type="content" source="../media/033-touch-cube.png" alt-text="Screenshot of the simulated right hand touching the Near Cube.":::
 
-    :::image type="content" source="../media/rotate-cube.png" alt-text="Screenshot of the Game window with the blue cube in the middle lifted up and rotated to the left by the right simulated hand. The diagnostics tools display below the cube.":::
+1. Click the left mouse button (this makes the hand "grab" the cube), then drag the cube around the scene.
 
-## Scale the Cube in play mode
+    :::image type="content" source="../media/move-cube.gif" alt-text="Screenshot of Move the cube." lightbox="../media/move-cube.gif":::
 
-To scale an object, at least one hand needs to grab the object while the other is used to scale the object.
+    To grab and move Far Cube, we'll use the far pointer attached to the simulated hand.
 
-1. While in Play mode, press the **T** and **Y** keys on your keyboard to simulate hand input with both the left and right hands. The **T** and **Y** keys will make the hands persistent in the view.
+1. If you need to, press and hold the **space bar** again to make the simulated right hand appear. Note the far pointer that extends from the end of the hand's index finger.
 
-    :::image type="content" source="../media/simulate-two-hands.png" alt-text="Screenshot of the Game window with the blue cube in the center. A left and right simulated hand is on top of the cube. The diagnostics tools display below the cube.":::
+    :::image type="content" source="../media/034-far-pointer.png" alt-text="Screenshot of simulated hand's far pointer.":::
 
-1. Grab the cube with the right hand by first pressing the **space bar** on your keyboard and using the mouse scroll wheel to adjust the hand's distance to the cube. Left click the mouse to grab the cube.
+1. Move the hand closer to Far Cube until you can see the tip of the pointer on the cube. You might have to move the hand around in a circular motion a few times to make the tip of the pointer appear on the cube.
 
-    :::image type="content" source="../media/grab-right-hand.png" alt-text="Screenshot of the Game window with the blue cube in the center. The right simulated hand is grabbing the right middle side of the cube. The left simulated hand is inactive on top of the cube. The diagnostics tools display below the cube.":::
+    :::image type="content" source="../media/035-far-pointer-touches-cube.png" alt-text="Screenshot of the far pointer touching the cube.":::
 
-1. Grab the cube with the left hand by first pressing the **shift** key on your keyboard and using the mouse scroll wheel to adjust the hand's distance to the cube. Left click the mouse to grab the cube.
-
-    While grabbing the cube with the left hand active, left click the mouse and drag to the left to increase the size of the cube. Likewise, to decrease the size of the cube, drag the mouse to the right.
-
-    :::image type="content" source="../media/scale-cube.png" alt-text="Screenshot of the Game window with the blue cube slightly dragged to the left and larger in size. The right simulated hand is grabbing the right middle side of the cube. The left simulated hand is grabbing the lower left side of the cube. The diagnostics tools display below the cube.":::
+1. Click the left mouse button (this makes the hand close, taking on what we call the "pinch gesture"), then drag the cube around the scene.

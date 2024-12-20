@@ -36,7 +36,7 @@ Developer Portal for Teams makes it easy to start creating or integrating your o
 
    :::image type="content" source="../media/3-teams-app-basic-information.png" alt-text="Screenshot that shows the Basic information values.":::
 
-1. You can also provide an Azure Active Directory app ID. To learn how to generate one, see [create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal). This step is optional.
+1. You can also provide a Microsoft Entra app ID. To learn how to generate one, see [create a Microsoft Entra application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal). This step is optional.
 
 1. Under **Configure**, select **Branding**. Branding is about the appearance of the app, such as the icon.
 
