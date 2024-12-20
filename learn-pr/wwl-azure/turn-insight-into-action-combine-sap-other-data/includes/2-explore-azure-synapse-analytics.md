@@ -3,7 +3,7 @@
 
 Azure Synapse Analytics is an integrated analytics platform. Within one environment, users can access data warehousing, big data analytics, data integration, and visualization. Azure Synapse Analytics offers users of all abilities quick insight across their data, enabling a whole new level of performance and scale.
 
-The following figure provides a rough overview of the components that comprise Azure Synapse Analytics. The  potential data sources feeding into Azure Synapse are displayed along with Azure services that are deeply integrated with Azure Synapse. This module focuses on the highlighted components:
+The following figure provides a rough overview of the components that comprise Azure Synapse Analytics. The potential data sources feeding into Azure Synapse are displayed along with Azure services that are deeply integrated with Azure Synapse. This module focuses on the highlighted components:
 
 - SAP Applications and Cosmos DB
 - Synapse Studio
