@@ -36060,6 +36060,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-policy/6-create-initiative-definitions.md",
       "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/2-create-management-groups.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
     }
   ]
 }
