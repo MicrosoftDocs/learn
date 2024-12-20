@@ -34,7 +34,6 @@ units:
 - learn.wwl.configure-azure-policy.introduction
 - learn.wwl.configure-azure-policy.implement-azure-policies
 - learn.wwl.configure-azure-policy.scope-initiative-definition
-- learn.wwl.configure-azure-policy.determine-compliance
 - learn.wwl.configure-azure-policy.interactive-lab-simulation-policy
 - learn.wwl.configure-azure-policy.knowledge-check
 - learn.wwl.configure-azure-policy.summary-resources
