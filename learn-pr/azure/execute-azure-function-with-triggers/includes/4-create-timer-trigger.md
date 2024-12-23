@@ -26,7 +26,7 @@ Let’s start by creating an Azure Function App in the portal.
     | **Instance Details** |
     | Function App name | *\<your-webapp-name\>*. Enter a globally unique name for your function app. |
     | Runtime stack | Select one of the languages supported for in-portal development: **.NET**, **Node.js**, or **PowerShell Core**.  |
-    | Version | For .NET, select **6 (LTS), in-process model**. For Node.js and PowerShell, use the suggested default version of the language runtime. |
+    | Version | For .NET, select **8 (LTS), in-process model**. For Node.js and PowerShell, use the suggested default version of the language runtime. |
     | Region | Select a location close to you. |
     | **Operating system** |
     | Operating System | Windows |
@@ -77,4 +77,4 @@ Now that we've configured the timer, it will invoke the function on the interval
 
 1. To stop the function, select **Stop** in the **Logs** pane command bar.
 
-1. To disable the function, in the **TimerTrigger1** menu, select **Overview**, then select **Disable** in the command bar.
+1. To disable the function, in the **TimerTrigger1** menu, select **Disable** in the command bar.

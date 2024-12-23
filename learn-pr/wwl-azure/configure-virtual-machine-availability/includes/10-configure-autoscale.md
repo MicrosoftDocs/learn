@@ -1,27 +1,30 @@
-When you create an Azure Virtual Machine Scale Sets implementation in the Azure portal, you can enable autoscaling. For optimal performance, you should define a minimum, maximum, and default number of virtual machine instances to use during the autoscale process.
+When you create an Azure Virtual Machine Scale Sets implementation in the Azure portal, you can enable manual or autoscaling. For optimal performance, you should define a minimum, maximum, and default number of virtual machine instances to use.
 
-In the Azure portal, there are several settings to configure to enable autoscaling with Azure Virtual Machine Scale Sets.
+In the Azure portal, you can select the scaling mode.
+
+:::image type="content" source="../media/scale-methods.png" alt-text="Screenshot of the settings for selecting a scale method in the Azure portal.":::
+
+**Scaling mode** 
+
+- **Manually update the capacity**: You can manually update the capacity and maintain a fixed instances count. Set the **Instance count** to the number of virtual machines in the scale set (0 - 1000). Configure the [**Scale-in policy**](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy) which is the order virtual machines are selected for deletion. For example, you could balance across zones and then delete the virtual machine with the highest instance ID. 
+
+- **Autoscaling**: You can autoscale the capacity on any schedule, based on any metrics. Specify the maximum number of virtual machines that can be available when autoscaling is applied on your implementation.
+
+**Configure autoscaling**
+
+Autoscaling is based on a scaling condition. 
 
 :::image type="content" source="../media/implement-autoscale-74d25345.png" alt-text="Screenshot of the settings for configuring virtual machine instances and autoscale in the Azure portal.":::
 
-**Scaling policy**: Manual scale maintains a fixed instance count. Custom autoscale scales the capacity on any schedule, based on any metrics.
+- **Default instance count.** The initial number of virtual machines deployed in this scale set (0-1000).
 
-- **Minimum number of VMs**: Specify the minimum number of virtual machines that should be available when autoscaling is applied on your Virtual Machine Scale Sets implementation.
+- **Instance limit.** The minimum instance count you want this condition to scale down to. The maximum instance count you want this condition to scale up to.
 
-- **Maximum number of VMs**: Specify the maximum number of virtual machines that can be available when autoscaling is applied on your implementation.
+- **Scale out.** The CPU usage percentage threshold for triggering the scale-out autoscale rule. The number of instances to scale out by.
 
-**Scale out**
+- **Scale in.** The CPU usage percentage threshold for triggering the scale-in autoscale rule. The number of instances to scale in by. 
 
-- **CPU threshold**: Specify the CPU usage percentage threshold to trigger the scale-out autoscale rule.
+- **Query duration**: This duration is the time the Autoscale engine looks back for the metric usage average. This look back is to allow your metric to stabilize.
 
-- **Duration in minutes**: Duration in minutes is the amount of time that Autoscale engine looks back for metrics. For example, 10 minutes means that every time autoscale runs, it queries metrics for the past 10 minutes. This delay allows your metrics to stabilize and avoids reacting to transient spikes.
+- **Schedule**: Specify the start and end dates. You can also repeat the schedule on specific days. 
 
-- **Number of VMs to increase by**: Specify the number of virtual machines to add to your Virtual Machine Scale Sets implementation when the scale-out autoscale rule is triggered.
-
-**Scale in**
-
-- **Scale in CPU threshold**: Specify the CPU usage percentage threshold to trigger the scale-in autoscale rule.
-
-- **Number of VMs to decrease by**: Specify the number of virtual machines to remove from your implementation when the scale-in autoscale rule is triggered.
-
-**Scale in policy**: The [scale-in policy](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy) feature provides users a way to configure the order in which virtual machines are scaled-in. 

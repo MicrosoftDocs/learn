@@ -10,7 +10,7 @@ Let's examine some characteristics of Application Insights for Azure Monitor.
 
 - The feature can be used for configurations that are hosted on-premises, in a hybrid environment, or in any public cloud.
 
-- Application Insights integrates with your Azure DevOps process, and has connection points to many development tools.
+- Application Insights integrates with your Azure Pipeline processes, and has connection points to many development tools.
 
 - You can monitor and analyze data from mobile apps by integrating with Visual Studio App Center.
 

@@ -1,4 +1,3 @@
-
 [Conditional Access](/azure/active-directory/conditional-access/overview) is a tool that Microsoft Entra ID uses to allow (or deny) access to resources. When a user signs in, Conditional Access examines who the user is, where the user is, and from what device the user is requesting access. Based on these signals, Conditional Access can allow access, enforce multifactor authentication (MFA), or deny access.  
 
 :::image type="content" source="../media/conditions-actions.png" alt-text="Diagram that shows how the Conditional Access tool evaluates conditions and determines access." border="false":::

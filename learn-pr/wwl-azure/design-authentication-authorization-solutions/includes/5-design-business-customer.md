@@ -1,4 +1,3 @@
-
 [Azure AD B2C](/azure/active-directory-b2c/overview) is a type of Microsoft Entra tenant for managing customer identities and their access to your apps. Azure AD B2C requires a Microsoft Entra tenant, but this tenant _isn't_ the same as the Microsoft Entra tenant for your organization.
 - The **Microsoft Entra tenant** represents your organization.
 - The **Azure AD B2C tenant** represents the identities for your customer apps. 

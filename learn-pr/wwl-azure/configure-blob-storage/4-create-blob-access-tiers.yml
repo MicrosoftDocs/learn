@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Assign blob access tiers
   description: "Assign blob access tiers"
-  ms.date: 02/05/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

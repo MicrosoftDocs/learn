@@ -17,6 +17,9 @@ By the end of this module, you have a playable mini-game application with GitHub
 > [!NOTE]
 > This is a **_challenge project_** module where you will complete a project end-to-end based on a specification. This module is designed to be a test of your skills: there are few guidelines and no step-by-step instructions.
 
+> [!TIP]
+> GitHub Copilot offers a free tier with **2,000 code autocompletes and 50 chat messages per month**. To get started, open Visual Studio Code, click on the GitHub Copilot icon, and then click "Sign in to Use GitHub Copilot for Free". Log in to your GitHub account in the window that will open in the browser. [Learn more](https://gh.io/copilot).
+
 ## Learning objectives
 
 In this module, you demonstrate your ability to:
