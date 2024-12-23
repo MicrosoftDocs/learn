@@ -28,4 +28,4 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 - Secure your [Azure storage account](/training/modules/secure-azure-storage-account/).
 
-- Implement [Azure Storage security](/training/modules/storage-security/).
+- Implement [Azure Storage security](/training/modules/security-storage/).

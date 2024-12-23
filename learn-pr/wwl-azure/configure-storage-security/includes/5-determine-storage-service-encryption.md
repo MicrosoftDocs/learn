@@ -8,7 +8,7 @@ Microsoft recommends that you use Azure Key Vault to manage your access keys, an
 
 Examine the following characteristics of Azure Storage encryption.
 
-- Data is automatically encrypted before written to Azure Managed Disks, Azure Blob Storage, Azure Queue Storage, Azure Cosmos DB, Azure Table Storage, or Azure Files.
+- Data is automatically encrypted before written to Azure storage. 
 
 - Data is automatically decrypted when retrieved.
 
