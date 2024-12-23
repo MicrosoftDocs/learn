@@ -5,24 +5,33 @@ metadata:
   prefetch-feature-rollout: true
   title: Monitor and maintain Microsoft Entra ID
   description: "Audit and diagnostic logs within Microsoft Entra ID provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data."
-  ms.date: 10/23/2023
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Monitor and maintain Microsoft Entra ID
 summary: Audit and diagnostic logs within Microsoft Entra ID provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
 abstract: |
   By the end of this module, you'll be able to:
-  *   Analyze and investigate sign in logs to troubleshoot access issues
-  *   Review and monitor Microsoft Entra audit logs
-  *   Enable and integrate Microsoft Entra diagnostic logs with Log Analytics / Azure Sentinel
-  *   Export sign in and audit logs to a third-party SIEM (security information and event management)
-  *   Review Microsoft Entra activity by using Log Analytics / Azure Sentinel, excluding KQL (Kusto Query Language) use
-  *   Analyze Microsoft Entra workbooks / reporting
-  *   Configure notifications
-prerequisites: |
-  None
+
+  -   Analyze and investigate sign in logs to troubleshoot access issues
+
+  -   Review and monitor Microsoft Entra audit logs
+
+  -   Enable and integrate Microsoft Entra diagnostic logs with Log Analytics / Azure Sentinel
+
+  -   Export sign in and audit logs to a third-party SIEM (security information and event management)
+
+  -   Review Microsoft Entra activity by using Log Analytics / Azure Sentinel, excluding KQL (Kusto Query Language) use
+
+  -   Analyze Microsoft Entra workbooks / reporting
+
+  -   Configure notifications
+prerequisites: None
 iconUrl: /learn/achievements/monitor-and-maintain-azure-active-directory.svg
 levels:
 - advanced
