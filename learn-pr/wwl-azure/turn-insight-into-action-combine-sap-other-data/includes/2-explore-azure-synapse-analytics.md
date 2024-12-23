@@ -13,7 +13,7 @@ The following figure provides a rough overview of the components that comprise A
 - Power Apps
 - Power Automate
 
-:::image type="content" source="../media/azure-synapse-analytics-highlights.png" alt-text="Diagram showing components of Azure Synapse Analytics, along with potential data sources on the left, and Azure services that are deeply integrated with Azure Synapse on the right. Highlighted components: S A P and Cosmos DB, Synapse Studio, SQL, Azure Machine Learning, Power BI, Power Apps, and Power Automate.":::
+:::image type="content" source="../media/azure-synapse-analytics-highlights.png" alt-text="Diagram showing components of Azure Synapse Analytics, along with potential data sources on the left, and Azure services that are deeply integrated with Azure Synapse on the right.":::
 
 ## When to use Azure Synapse Analytics
 

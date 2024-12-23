@@ -4,7 +4,7 @@ title: Examine combining data from multiple sources
 metadata:
   title: Examine combining data from multiple sources
   description: "Use the dedicated SQL pool that Azure Synapse Studio workspace created automatically during setup to combine data from multiple sources."
-  ms.date: 12/20/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
