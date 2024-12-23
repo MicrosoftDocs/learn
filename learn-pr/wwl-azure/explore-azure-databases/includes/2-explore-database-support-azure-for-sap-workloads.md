@@ -7,7 +7,7 @@ As per [SAP Note \#1928533](https://me.sap.com/notes/1928533), the following RDB
 - IBM DB2 10.5 and higher
 - Oracle Database, for versions and restrictions see [SAP Note \#2039619](https://me.sap.com/notes/2039619)
 - SAP MaxDB version 7.9
-- SAP liveCache: The minimum requirement is SAP liveCache 10.0 SP 33 (i.e. Build 100.33) or higher. We strongly recommend using the latest SAP liveCache version compliant to the corresponding SAP SCM 7.0 EHP (see [SAP Note \#2074842](https://me.sap.com/notes/2074842)).
+- SAP liveCache: The minimum requirement is SAP liveCache 10.0 SP 33 (that is, Build 100.33) or higher. We strongly recommend using the latest SAP liveCache version compliant to the corresponding SAP SCM 7.0 EHP (see [SAP Note \#2074842](https://me.sap.com/notes/2074842)).
 - SAP liveCache as part of SAP SCM 7.0 EhP2 (or higher): Minimal version for SAP liveCache: SAP LC/LCAPPS 10.0 SP 27 including liveCache 7.9.08.32 and LCA-Build 27, released for EhP 2 for SAP SCM 7.0 and higher
 
   - SAP liveCache based on SAP MaxDB technology must run on an Azure Virtual Machine solely dedicated to SAP liveCache (that is, without any other application software running on the same virtual machine).
@@ -27,14 +27,14 @@ As per [SAP Note \#1928533](https://me.sap.com/notes/1928533), the following RDB
 - SAP liveCache as part of SAP SCM 7.0 EhP4 (or higher):
 
   - Minimal version for SAP liveCache: SAP LC/LCAPPS 10.0 SP 34 including liveCache 7.9.09.05 and LCA-Build 34, released for EhP 4 for SAP SCM 7.0 and higher.
-  - SAP liveCache: The minimum requirement is SAP liveCache 10.0 SP 33 (i.e. Build 100.33) or higher. We strongly recommend using the latest SAP liveCache version compliant to the corresponding SAP SCM 7.0 EHP (see [SAP Note \#2074842](https://me.sap.com/notes/2074842)).
+  - SAP liveCache: The minimum requirement is SAP liveCache 10.0 SP 33 (that is, Build 100.33) or higher. We strongly recommend using the latest SAP liveCache version compliant to the corresponding SAP SCM 7.0 EHP (see [SAP Note \#2074842](https://me.sap.com/notes/2074842)).
   - SAP liveCache based on SAP MaxDB technology must run on an Azure Virtual Machine solely dedicated to SAP liveCache (that is, without any other application software running on this virtual machine).
 
 ## Oracle Linux
 
 - Oracle Database
 
-For versions and restrictions refer to [SAP Note \#2039619](https://me.sap.com/notes/2039619) containing the Oracle support matrix on Azure.
+For versions and restrictions, refer to [SAP Note \#2039619](https://me.sap.com/notes/2039619) containing the Oracle support matrix on Azure.
 
 - As per [SAP Note \#2039619](https://me.sap.com/notes/2039619) (and the information provided above), Oracle only supports Windows and Oracle Linux as guest OS in Azure Virtual Machines.
 - Using Windows Failover Cluster Service with shared disk configuration for the DBMS layer is NOT supported in Azure Virtual Machines. Instead, to provide high availability, customers should consider using non-shared disk solutions, such as SQL Server Always On, Oracle Data Guard, or HANA System Replication.

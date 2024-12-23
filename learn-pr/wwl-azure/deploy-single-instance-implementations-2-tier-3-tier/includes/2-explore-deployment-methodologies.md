@@ -16,7 +16,7 @@ Deployment of the Azure Monitoring Extension for SAP is available via PowerShell
 
 ## Deployment via Terraform
 
-Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It codifies infrastructure in configuration files that describe the topology of cloud resources, such as virtual machines, storage accounts, and networking interfaces. Terraform's command-line interface (CLI) provides a simple mechanism to deploy and version the configuration files to Azure or any other supported cloud.
+Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. Terraform codifies infrastructure in configuration files that describe the topology of cloud resources, such as virtual machines, storage accounts, and networking interfaces. Terraform's command-line interface (CLI) provides a simple mechanism to deploy and version the configuration files to Azure or any other supported cloud.
 
 Terraform is a popular tool choice for multicloud scenarios, where similar infrastructure is deployed to Azure and other cloud providers or on-premises datacenters. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers.
 
@@ -32,4 +32,3 @@ The supported scenarios include the full deployment of:
 
   - Single-node HANA instance, two-tier HSR (primary/secondary)
   - Pacemaker high-availability cluster, fully configured with SBD and SAP/Azure resource agents
-

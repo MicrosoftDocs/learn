@@ -1,4 +1,4 @@
-In order to back up Azure Virtual Machines, Azure Backup installs an extension on the virtual machine agent running on the machine. If your virtual machine was created from an Azure Marketplace image, the agent will be running. In some cases, for example, if you create a custom virtual machine, or you migrate a machine from on-premises. You might need to install the agent manually. If you do need to install the virtual machine agent manually, use the following OS-specific instructions:
+To back up Azure Virtual Machines, Azure Backup adds an extension to the machine's agent. If your machine is from the Azure Marketplace, the agent's already running. But if you've got a custom machine or one migrated from on-site, you may need to install the agent yourself. If so, follow these OS-specific instructions:
 
 - [Azure Virtual Machine Agent overview (Windows)](/azure/virtual-machines/extensions/agent-windows)
 - [Understanding and using the Azure Linux Agent](/azure/virtual-machines/extensions/agent-linux)
