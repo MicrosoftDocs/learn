@@ -5,7 +5,7 @@ These .vhd files in Azure Storage represent one of two object types—**images o
 - An **image** is a generalized copy of an operating system, which allows you to create any number of virtual machines, each with its own unique characteristics. Images act as templates from which you create disks for Azure Virtual Machines during their deployment. There are various ready-to-use images available from Azure Marketplace. You can create your own images either by uploading .vhd files from your on-premises environment and registering them as images, or by creating them from existing Azure Virtual Machines.
 - A **disk** object is either a non-generalized operating system disk or a data disk. You can use a copy of an operating system disk to create an exact replica of an individual virtual machine. You can also attach a data disk to an existing Azure Virtual Machine to access its content.
 
-Azure Virtual Machines support three types of disks:
+Azure Virtual Machines supports three types of disks:
 
 ## Operating system (OS) disks
 
