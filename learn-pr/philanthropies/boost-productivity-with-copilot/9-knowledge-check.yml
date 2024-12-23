@@ -17,7 +17,7 @@ quiz:
         - content: "Copilot is effective in creating tailored development plans, providing daily challenges, recommending resources, offering code optimization, crafting professional networking messages, giving constructive feedback on presentations, and suggesting career shift options based on user background."
           isCorrect: true
           explanation: "This statement summarizes the functionalities of Copilot and its effectiveness in supporting skill development and career advancement."
-        - content: "Copilot is somewhat effective in providing daily challenges and recommending resources, but it lacks the ability to offer constructive feedback on presentations and to suggest career shift options."
+        - content: "Copilot is somewhat effective in providing daily challenges and recommending resources, but it can't offer constructive feedback on presentations or suggest career shift options."
           isCorrect: false
           explanation: "This statement doesn't fully represent all the functionalities of Copilot, and it underestimates the capabilities of Copilot in offering feedback and career shift suggestions."
         - content: "Copilot is effective in crafting professional networking messages and giving constructive feedback on presentations, but it doesn't provide tailored development plans or daily challenges."
@@ -33,7 +33,7 @@ quiz:
           explanation: "Copilot can assist with both professional and personal tasks."
         - content: "Copilot can help in creating a personalized schedule to balance work and personal tasks efficiently."
           isCorrect: true
-          explanation: "This is correct because Copilot can provide a personalized schedule by optimizing both work and personal tasks in a schedule."
+          explanation: "This answer is correct because Copilot can provide a personalized schedule by optimizing both work and personal tasks in a schedule."
         - content: "Copilot can help with work-related tasks without aiding personal time management."
           isCorrect: false
           explanation: "Copilot can help with both work-related tasks and personal time management."
