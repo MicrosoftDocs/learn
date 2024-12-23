@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-networking-sap-rise.internet-connections-sap-rise
 title: 'Connect SAP RISE with the internet '
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connect SAP RISE with the internet
   description: "Learn to connect your SAP RISE instance to the internet."
-  ms.date: 10/04/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
