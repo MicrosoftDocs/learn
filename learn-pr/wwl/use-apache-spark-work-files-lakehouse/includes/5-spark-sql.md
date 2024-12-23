@@ -1,6 +1,10 @@
+---
+ms.custom:
+  - build-2023
+---
 The Dataframe API is part of a Spark library named Spark SQL, which enables data analysts to use SQL expressions to query and manipulate data.
 
-## Tables and the Spark catalog
+## Creating database objects in the Spark catalog
 
 The Spark catalog is a metastore for relational data objects such as views and tables. The Spark runtime can use the catalog to seamlessly integrate code written in any Spark-supported language with SQL expressions that may be more natural to some data analysts or developers.
 
@@ -25,7 +29,10 @@ df.write.format("delta").saveAsTable("products")
 > [!NOTE]
 > The Spark catalog supports tables based on files in various formats. The preferred format in Microsoft Fabric is **delta**, which is the format for a relational data technology on Spark named *Delta Lake*. Delta tables support features commonly found in relational database systems, including transactions, versioning, and support for streaming data.
 
-Additionally, you can create *external* tables by using the `spark.catalog.createExternalTable` method. External tables define metadata in the catalog but get their underlying data from an external storage location; often a folder in the **Files** storage area of a lakehouse. Deleting an external table doesn't delete the underlying data.
+Additionally, you can create *external* tables by using the `spark.catalog.createExternalTable` method. External tables define metadata in the catalog but get their underlying data from an external storage location; typically a folder in the **Files** storage area of a lakehouse. Deleting an external table doesn't delete the underlying data.
+
+> [!TIP]
+> You can apply the same partitioning technique to delta lake tables as discussed for parquet files in the previous unit. Partitioning tables can result in better performance when querying them.
 
 ## Using the Spark SQL API to query data
 
