@@ -22,7 +22,7 @@ Here's an example of how to check for available patches for SUSE Linux by using 
 
 `sudo zypper list-patches`
 
-Depending on the kind of issue, patches are classified by category and severity.
+The kind of issue determines the classification of patches by category and severity.
 
 Commonly used values for **category** are:
 
