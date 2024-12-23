@@ -9995,6 +9995,38 @@
     {
       "source_path_from_root": "/learn-pr/cela-accessibility/accessible-content-m365/02-powerpoint.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental"
+    },    
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/2-find-educator-content-in-learn.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/3-create-collection.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/4-navigate-your-learn-profile.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/5-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
+    },
+    {
+      "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/educator-center"
     },
     {
       "source_path_from_root": "/learn-pr/cela-accessibility/accessible-content-m365/03-excel.yml",
@@ -36042,8 +36074,163 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/2-image-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/3-train-dense-neural-networks.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/4-convolutional-networks.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/5-multilayer-convolutions.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/6-transfer-learning.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/7-mobilenet.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-computer-vision-pytorch/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/automate-workflow-github-actions/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/index.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/4-create-azure-policies.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/6-create-initiative-definitions.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/2-create-management-groups.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/5-create-policy-definitions.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/8-determine-compliance.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/3-implement-azure-policies.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/9-simulation-policy.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/1-introduction.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/10-knowledge-check.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/7-scope-initiative-definition.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-policy/11-summary-resources.md",
+      "redirect_url": "/training/modules/sovereignty-policy-initiatives/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/index.md",
+      "redirect_url": "/training/modules/create-configure-manage-identities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/5-create.md",
+      "redirect_url": "/training/modules/create-configure-manage-identities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/6-create-administrative-units.md",
+      "redirect_url": "/training/modules/create-configure-manage-identities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/4-create-bulk-user-accounts.md",
+      "redirect_url": "/training/modules/create-configure-manage-identities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/2-create-user-accounts.md",
+      "redirect_url": "/training/modules/create-configure-manage-identities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/1-introduction.md",
+      "redirect_url": "/training/modules/create-configure-manage-identities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/7-knowledge-check.md",
+      "redirect_url": "/training/modules/create-configure-manage-identities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/3-manage-user-accounts.md",
+      "redirect_url": "/training/modules/create-configure-manage-identities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/8-summary-resources.md",
+      "redirect_url": "/training/modules/create-configure-manage-identities/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl/use-apache-spark-work-files-lakehouse/3b-connect.md",
+      "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
       "redirect_document_id": false
     }
   ]
