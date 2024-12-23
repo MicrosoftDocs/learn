@@ -1,46 +1,18 @@
-Servicing channels allow you to choose if new features and functionality are delivered regularly during the production lifespan of the server, or if you will choose when to move to a new server version. Windows Server supports two release channels, Long Term Servicing Channel (LTSC) and the Semi-Annual Channel (SAC).
+Azure Arc's Pay-as-you-go subscription licensing option is an alternative to the conventional perpetual licensing for Windows Server 2025. With Pay-as-you-go, you can deploy a Windows Server device, license it, and only pay for as much as you use. This feature is facilitated through Azure Arc and billed via your Azure subscription. You have the flexibility to disable Pay-as-you-go whenever necessary. Additionally, you can use Pay-as-you-go for free for the first seven days after enabling it as a trial.
 
-## Long-Term Servicing Channel
+## Pricing model
 
-Long-Term Servicing Channel (LTSC) dictates that a major version of Windows Server will release every two or three years. This includes five years of mainstream support and five years of extended support from the release date. Normal security updates and Windows updates  continue to deliver on a regular basis as in the past, but without new features or functionality. LTSC releases do get some new feature functionality. For example, Storage Migration Services is available on Windows Server 2019 and includes updates for workloads such as migrating Linux NAS appliances.
+Windows Server Pay-as-you-go shares the same pricing and model as Windows Server licensing on Microsoft Azure, but is designed for devices that are deployed outside of Microsoft Azure. Windows Server Pay-as-you-go with Azure Arc isn't supported on Microsoft Azure, as there are other ways to license Windows Server with Pay-as-you-go with that service.
 
-LTSC is the traditional "numbered" version of Windows Server. Windows Server 2016 and Windows Server 2019 are LTSC releases.
+Pay-as-you-go regulations differ from traditional perpetual licensing. For instance, in Pay-as-you-go, the cost is the same for both Standard and Datacenter editions, and there are no client access licenses (CALs) required for standard functionality. However, Remote Desktop Services (RDS) CALs are still required.
 
-> [!TIP]
-> For most server requirements, the LTSC will be the best choice.
+The Pay-as-you-go license only applies to the exact device where the feature is enabled on Microsoft Azure. Unlike traditional perpetual licenses, it doesn't provide additional rights for virtual machines (VM) running on the same server. Thus, the Automatic Virtual Machine Activation (AVMA) feature isn't available. Each VM requires its own separate license, regardless of the host server. The host and VMs can run different versions of the operating system (OS) and mix different license types.
 
-## Semi-Annual Channel
+## Pay-as-you-go prerequisites
 
-SAC only releases as Server Core or Nano Server container images, so it's restricted in the roles and features that you can install. New features are delivered semi-annually, once in the second quarter and once in the fourth quarter. SAC is limited to software assurance and cloud customers.
+You choose the Pay-as-you-go licensing option during deployment or later when you would normally enter a product key. Once you choose Pay-as-you-go, you will not need to provide a product key. Windows Server Pay-as-you-go is only available if installed from a retail copy of Windows Server 2025. Pay-as-you-go isn't available in Preview, Evaluation, or volume license versions of Windows Server 2025. Pay-as-you-go has the following prerequisites: 
 
-> [!NOTE]
-> These releases are supported for 18 months from the initial date of release.
-
-Normal security updates and Windows updates will continue to be delivered on a regular basis.
-
-> [!NOTE]
-> Features that are included in SAC are rolled up and delivered to the LTSC on the next major release.
-
-You can identify SAC releases by their version number, which until recently was a combination of the year and month of the features' release. For example, version 1903 means the feature was released in the third month of 2019. However, now SAC releases are numbered by year and in which half of the year. So, 20H2 indicates the second release of 2020, while 21H1 would indicate the first update of 2021.
-
-SAC releases will always be a clean installation. SAC implies you have a CI/CD type pipeline where you'd just deploy the newer operating-system image in the same way that you'd deploy a new container when the base container image got updates.
-
-> [!IMPORTANT]
-> You can't do an in-place upgrade from an LTSC release to a SAC release.
-
-## Choosing a servicing channel
-
-LTSC is recommended for:
-
-- General purpose file servers.
-- Microsoft and non-Microsoft workloads.
-- Traditional apps.
-- Infrastructure roles.
-- Software-defined Datacenter.
-- Hyper-converged infrastructure.
-
-Semi-Annual Channel is recommended for:
-
-- Containerized applications.
-- Container hosts.
-- Application scenarios benefiting from adaption of new features.
+- Your device must be running Windows Server 2025 Standard or Datacenter edition.
+- Your device must be Azure Arc-enabled and be running Microsoft Azure connected machine agent version 1.47 or later.
+- Your device isn't currently licensed (activated) with another license type, such as OEM, Retail, or Volume License (VL).
+- An active internet connection is required.

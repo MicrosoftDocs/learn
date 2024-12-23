@@ -1,11 +1,12 @@
 
 
+
 In this module, you learned how to deliver business insight with Azure Synapse Analytics. You explored how Synapse enables you to combine and transform data from multiple sources, including SAP. You learned concepts to:
 
 - Import and combine data from multiple sources for analysis using linked services in Azure Synapse Analytics.
 - Provide predictions by extracting data from a SQL pool using machine learning.
 - Create a Power BI data visualization of your analysis.
-- Create a Power Apps business app to act on the results and write data to SAP.
+- Create a Power Apps business app to act on the results and write data to SAP systems.
 
 ## Resources
 

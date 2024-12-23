@@ -1,5 +1,6 @@
 
 
+
 Azure Synapse Studio provides a central location to host data and analytic capabilities for your business scenario. Synapse Studio enables you to do the following activities:
 
 - Explore your data estate.
@@ -18,17 +19,17 @@ The different hubs available in Azure Synapse Studio from the left navigation pa
 
 ### Home
 
-The Home hub contains shortcuts to Azure services that enable you to ingest, explore and analyze, plus visualize your data with Power BI. Find links to resources such as the documentation and pricing page. The Home hub also displays your recently accessed and pinned resources.
+The Home hub contains shortcuts to Azure services that enable you to ingest, explore, and analyze, plus visualize your data with Power BI. Find links to resources such as the documentation and pricing page. The Home hub also displays your recently accessed and pinned resources.
 
 ### Data
 
 Access the Data hub one of two ways. Select the **Explore** link in the **Home** hub, or select **Data** from the left navigation pane. In the data hub, you can access the following resources:
 
-- provisioned dedicated SQL pool and serverless SQL databases in your workspace;
-- external data sources, such as storage accounts and other linked services;
-- previews of data tables and data files.
+- All dedicated SQL pool and serverless SQL databases in your workspace.
+- External data sources, such as storage accounts and other linked services.
+- Previews of data tables and data files.
 
-In this module's scenario, you navigate to the Data hub to manage the stored data from your SAP BW system and Cosmos DB.
+In this module's scenario, you navigate to the Data hub to manage the stored data from your SAP Business Warehouse (SAP BW) system and Cosmos DB.
 
 ### Develop
 

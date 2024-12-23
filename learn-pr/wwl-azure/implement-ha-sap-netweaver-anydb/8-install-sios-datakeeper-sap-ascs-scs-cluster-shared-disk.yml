@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-ha-sap-netweaver-anydb.install-sios-datakeeper-cluster-edition-for-sap-ascs-scs-cluster-shared-disk
 title: Install SIOS DataKeeper Cluster Edition for the SAP ASCS-SCS cluster shared disk
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Install SIOS DataKeeper Cluster Edition for the SAP ASCS-SCS cluster shared disk
   description: "Explore the tasks required to install SIOS DataKeeper Cluster Edition for the SAP ASCS-SCS cluster shared disk."
-  ms.date: 08/01/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

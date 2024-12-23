@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-storage.explore-write-accelerator
 title: Explore Write Accelerator
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Write Accelerator
   description: "Improve the I/O latency of writes with Write Accelerator."
-  ms.date: 08/13/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

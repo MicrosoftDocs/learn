@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Deploy Azure File Sync
   description: "Deploy Azure File Sync"
-  ms.date: 04/04/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

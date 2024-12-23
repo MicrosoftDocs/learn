@@ -1,6 +1,6 @@
 The process of deploying an SAP system to Azure is often a manual one. SAP on Azure deployments can quickly become costly because of unintended configurations introduced through human error. SAP on Azure administrators and architects aim to use predictable deployment and maintenance automation to reduce this impact, improve consistency, and reduce lead times. We approach SAP deployment as an opportunity to define the SAP Infrastructure as Code (IaC) and capture the configuration activities as Configuration as Code (CaC).
 
-In this module, you're introduced to the common tools used in automated deployments of SAP on Azure and start customizing your Azure infrastructure deployments templates.
+In this module, you're introduced to the common tools used in automated deployments of SAP on Azure and start to customize Azure infrastructure deployments templates.
 
 ## Learning objectives
 
@@ -14,3 +14,4 @@ In this module, you're introduced to the common tools used in automated deployme
 - Basic understanding of scripting, JSON, and Azure Cloud Shell
 - AZ-104 certification or equivalent knowledge
 - Knowledge of SAP products such as SAP HANA or SAP NetWeaver
+

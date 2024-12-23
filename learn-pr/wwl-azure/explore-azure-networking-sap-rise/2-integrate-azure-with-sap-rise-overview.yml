@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-networking-sap-rise.integration-azure-with-sap-rise
 title: Explore responsibilities during Azure integration with SAP RISE managed workloads
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore responsibilities during Azure integration with SAP RISE managed workloads
   description: "Overview of responsibilities for integrating SAP RISE managed virtual network with customer's own Azure environment."
-  ms.date: 10/04/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

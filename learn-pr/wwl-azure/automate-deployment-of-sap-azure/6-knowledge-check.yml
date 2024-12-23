@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/19/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -29,7 +29,7 @@ quiz:
     - content: "The same template can be deployed many times and gives the same resource types in the same state."
       isCorrect: true
       explanation: "That is correct. \"Idempotent\" means that the same template can be deployed many times and gives the same resource types in the same state."
-  - content: "Which of the following is one of the four basic Terraform commands used when creating and applying a Terraform execution plan to a cloud infrastructure?"
+  - content: "Which of the following choices is one of the four basic Terraform commands used when creating and applying a Terraform execution plan to a cloud infrastructure?"
     choices:
     - content: "Check"
       isCorrect: false

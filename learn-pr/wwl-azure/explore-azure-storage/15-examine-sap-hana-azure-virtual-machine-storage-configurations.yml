@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-storage.examine-sap-hana-azure-virtual-machine-storage-configurations
 title: Examine SAP HANA Azure Virtual Machine storage configurations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine SAP HANA Azure Virtual Machine storage configurations
   description: "Examine SAP HANA Azure Virtual Machine storage configurations."
-  ms.date: 08/13/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
