@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-ha-sap-netweaver-anydb.add-registry-entries-both-cluster-nodes-of-sap-ascs-scs-instance
 title: Add registry entries on both cluster nodes of the SAP ASCS-SCS instance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Add registry entries on both cluster nodes of the SAP ASCS-SCS instance
   description: "Add registry entries on both cluster nodes of the SAP ASCS-SCS instance, to set idle timeout periods."
-  ms.date: 08/01/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
