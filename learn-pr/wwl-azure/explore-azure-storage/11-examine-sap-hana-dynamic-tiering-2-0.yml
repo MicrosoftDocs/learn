@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-storage.examine-sap-hana-dynamic-tiering-v2
 title: Examine SAP HANA Dynamic Tiering 2.0
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine SAP HANA Dynamic Tiering 2.0
   description: "Examine SAP HANA Dynamic Tiering 2.0."
-  ms.date: 08/13/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
