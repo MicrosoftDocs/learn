@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Define a Terraform deployment for an Azure Virtual Machine
   description: "Exercise - Define a Terraform deployment for an Azure Virtual Machine"
-  ms.date: 12/20/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
