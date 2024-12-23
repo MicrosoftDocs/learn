@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.explore-site-recovery
 title: Explore site recovery
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore site recovery
   description: "Explore site recovery in three scenarios."
-  ms.date: 08/01/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
