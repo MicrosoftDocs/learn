@@ -32,7 +32,6 @@ products:
 - azure-machine-learning
 modules:
 - learn.pytorch.intro-machine-learning
-- learn.pytorch.intro-computer-vision
 - learn.pytorch.intro-natural-language-processing
 - learn.pytorch.intro-audio-classification
 trophy:
