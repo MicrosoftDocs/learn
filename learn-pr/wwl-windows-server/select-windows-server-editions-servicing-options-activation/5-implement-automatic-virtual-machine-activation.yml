@@ -5,6 +5,7 @@ metadata:
   title: Implement automatic virtual machine activation
   description: "Implement automatic virtual machine activation"
   ms.date: 12/20/2024
+  author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
 azureSandbox: false
