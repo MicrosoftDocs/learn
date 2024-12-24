@@ -36342,6 +36342,11 @@
       "source_path": "learn-pr/wwl-azure/configure-network-watcher/1-introduction.md",
       "redirect_url": "/training/modules/intro-to-azure-network-watcher/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-watcher/6-knowledge-check.md",
+      "redirect_url": "/training/modules/intro-to-azure-network-watcher/",
+      "redirect_document_id": false
     }
   ]
 }
