@@ -36327,6 +36327,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/11-summary-resources.md",
       "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-watcher/index.md",
+      "redirect_url": "/training/modules/intro-to-azure-network-watcher/",
+      "redirect_document_id": false
     }
   ]
 }
