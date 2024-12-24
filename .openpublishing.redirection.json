@@ -36247,6 +36247,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-application-gateway/2-implement.md",
       "redirect_url": "/training/modules/intro-to-azure-application-gateway/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-application-gateway/1-introduction.md",
+      "redirect_url": "/training/modules/intro-to-azure-application-gateway/",
+      "redirect_document_id": false
     }
   ]
 }
