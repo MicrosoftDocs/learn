@@ -33,6 +33,5 @@ products:
 subjects:
 - networking
 units:
-- learn.wwl.configure-network-watcher.visualize-network-topology
 badge:
   uid: learn.wwl.configure-network-watcher.badge
