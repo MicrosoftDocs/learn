@@ -12,7 +12,7 @@ durationInMinutes: 5
 quiz:
   title: Knowledge check
   questions:
-    - content: "Which of the following statements best assesses the capabilities of Microsoft Copilot?"
+    - content: "Which of the following statements best summarizes the capabilities of Microsoft Copilot?"
       choices:
         - content: "Copilot is effective in creating tailored development plans, providing daily challenges, recommending resources, offering code optimization, crafting professional networking messages, giving constructive feedback on presentations, and suggesting career shift options based on user background."
           isCorrect: true
@@ -26,7 +26,7 @@ quiz:
         - content: "Copilot is effective only in recommending resources and offering code optimization techniques, with limited capabilities in other areas."
           isCorrect: false
           explanation: "This statement underestimates the comprehensive support that Copilot offers in various areas, including creating development plans, providing daily challenges, crafting networking messages, and suggesting career shift options."
-    - content: "Which of the following statements evaluates the effectiveness of Copilot in managing daily tasks?"
+    - content: "Which of the following statements summarizes the effectiveness of Copilot in managing daily tasks?"
       choices:
         - content: "Copilot can assist with drafting professional emails but doesn't yet have the capability to assist with personal tasks."
           isCorrect: false

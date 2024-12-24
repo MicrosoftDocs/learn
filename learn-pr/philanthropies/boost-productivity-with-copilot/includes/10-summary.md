@@ -1,4 +1,4 @@
-In this module, you learned how to assess the effectiveness of Microsoft Copilot in helping with skill development and career growth. You reviewed how Copilot can optimize personal and professional schedules, draft messages and emails, plan projects, and provide support in time management. You also gained the ability to evaluate the usefulness of the retrieval-augmented generation method in Copilot for providing relevant and current information for your needs.
+In this module, you learned how Microsoft Copilot can help with skill development and career growth. You reviewed how Copilot can optimize personal and professional schedules, draft messages and emails, plan projects, and provide support in time management. You also learned how the retrieval-augmented generation method in Copilot can provide relevant and current information for your needs.
 
 ### Learn more
 
