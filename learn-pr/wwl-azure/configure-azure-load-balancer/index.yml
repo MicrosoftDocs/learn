@@ -38,7 +38,6 @@ products:
 - azure-load-balancer
 units:
 - learn.wwl.configure-azure-load-balancer.introduction
-- learn.wwl.configure-azure-load-balancer.implement-public
 - learn.wwl.configure-azure-load-balancer.simulation-load-balancer
 - learn.wwl.configure-azure-load-balancer.knowledge-check
 - learn.wwl.configure-azure-load-balancer.summary-resources
