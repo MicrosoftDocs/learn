@@ -42,7 +42,6 @@ units:
 - learn.wwl.configure-azure-load-balancer.implement-public
 - learn.wwl.configure-azure-load-balancer.implement-internal
 - learn.wwl.configure-azure-load-balancer.determine-skus
-- learn.wwl.configure-azure-load-balancer.create-backend-pools
 - learn.wwl.configure-azure-load-balancer.create-health-probes
 - learn.wwl.configure-azure-load-balancer.create-rules
 - learn.wwl.configure-azure-load-balancer.simulation-load-balancer
