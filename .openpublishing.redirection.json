@@ -36292,6 +36292,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/5-determine-skus.md",
       "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/2-determine-uses.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
     }
   ]
 }
