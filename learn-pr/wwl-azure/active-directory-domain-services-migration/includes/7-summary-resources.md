@@ -12,5 +12,5 @@ Now that you have reviewed this module, you should be able to:
 Use these resources to discover more.
 
 - [Upgrade domain controllers to a newer version of Windows Server](/windows-server/identity/ad-ds/deploy/upgrade-domain-controllers)
-- [ADPrep.exe](windows-server/administration/windows-commands/adprep)
+- [ADPrep.exe](/windows-server/administration/windows-commands/adprep)
 - [Forest and Domain Functional Levels](/windows-server/identity/ad-ds/active-directory-functional-levels)
