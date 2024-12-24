@@ -36,7 +36,6 @@ units:
 - learn.wwl.configure-network-watcher.review-ip-flow-verify-diagnostics
 - learn.wwl.configure-network-watcher.review-next-hop-diagnostics
 - learn.wwl.configure-network-watcher.visualize-network-topology
-- learn.wwl.configure-network-watcher.knowledge-check
 - learn.wwl.configure-network-watcher.summary-resources
 badge:
   uid: learn.wwl.configure-network-watcher.badge
