@@ -37,7 +37,6 @@ roles:
 products:
 - azure-load-balancer
 units:
-- learn.wwl.configure-azure-load-balancer.simulation-load-balancer
 - learn.wwl.configure-azure-load-balancer.summary-resources
 badge:
   uid: learn.wwl.configure-azure-load-balancer.badge
