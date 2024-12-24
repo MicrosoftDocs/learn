@@ -34,7 +34,6 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.wwl.configure-azure-application-gateway.introduction
 - learn.wwl.configure-azure-application-gateway.setup-components
 - learn.wwl.configure-azure-application-gateway.knowledge-check
 - learn.wwl.configure-azure-application-gateway.summary-resources
