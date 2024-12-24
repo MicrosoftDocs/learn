@@ -33,7 +33,6 @@ products:
 subjects:
 - networking
 units:
-- learn.wwl.configure-network-watcher.review-next-hop-diagnostics
 - learn.wwl.configure-network-watcher.visualize-network-topology
 - learn.wwl.configure-network-watcher.summary-resources
 badge:
