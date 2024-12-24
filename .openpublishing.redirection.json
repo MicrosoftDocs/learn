@@ -36232,6 +36232,141 @@
       "source_path": "learn-pr/wwl/use-apache-spark-work-files-lakehouse/3b-connect.md",
       "redirect_url": "/training/modules/use-apache-spark-work-files-lakehouse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-application-gateway/index.md",
+      "redirect_url": "/training/modules/intro-to-azure-application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-application-gateway/3-determine-routing.md",
+      "redirect_url": "/training/modules/intro-to-azure-application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-application-gateway/2-implement.md",
+      "redirect_url": "/training/modules/intro-to-azure-application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-application-gateway/1-introduction.md",
+      "redirect_url": "/training/modules/intro-to-azure-application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-application-gateway/5-knowledge-check.md",
+      "redirect_url": "/training/modules/intro-to-azure-application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-application-gateway/4-app-gateway-components.md",
+      "redirect_url": "/training/modules/intro-to-azure-application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-application-gateway/6-summary-resources.md",
+      "redirect_url": "/training/modules/intro-to-azure-application-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/index.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/6-create-backend-pools.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/7-create-health-probes.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/8-create-load-balancer-rules.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/5-determine-skus.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/2-determine-uses.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/4-implement-internal.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/3-implement-public.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/1-introduction.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/10-knowledge-check.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/9-simulation-load-balancer.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/11-summary-resources.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-watcher/index.md",
+      "redirect_url": "/training/modules/intro-to-azure-network-watcher/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-watcher/2-describe-features.md",
+      "redirect_url": "/training/modules/intro-to-azure-network-watcher/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-watcher/1-introduction.md",
+      "redirect_url": "/training/modules/intro-to-azure-network-watcher/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-watcher/6-knowledge-check.md",
+      "redirect_url": "/training/modules/intro-to-azure-network-watcher/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-watcher/3-review-flow-verify-diagnostics.md",
+      "redirect_url": "/training/modules/intro-to-azure-network-watcher/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-watcher/4-review-next-hop-diagnostics.md",
+      "redirect_url": "/training/modules/intro-to-azure-network-watcher/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-watcher/7-summary-resources.md",
+      "redirect_url": "/training/modules/intro-to-azure-network-watcher/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-watcher/5-visualize-network-topology.md",
+      "redirect_url": "/training/modules/intro-to-azure-network-watcher/",
+      "redirect_document_id": false
     }
   ]
 }
