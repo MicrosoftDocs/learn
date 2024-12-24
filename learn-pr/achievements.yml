@@ -4372,3 +4372,8 @@ achievements:
   title: Configure user and group accounts
   summary: Learn how to configure user and group accounts.
   iconUrl: /training/achievements/user-group-accounts-configure.svg
+- uid: learn.wwl.configure-azure-application-gateway.badge
+  type: badge
+  title: Configure Azure Application Gateway
+  summary: Learn how to configure Azure Application Gateway.
+  iconUrl: /training/achievements/azure-application-gateway-configure.svg
