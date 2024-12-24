@@ -36237,6 +36237,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-application-gateway/index.md",
       "redirect_url": "/training/modules/intro-to-azure-application-gateway/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-application-gateway/3-determine-routing.md",
+      "redirect_url": "/training/modules/intro-to-azure-application-gateway/",
+      "redirect_document_id": false
     }
   ]
 }
