@@ -36317,6 +36317,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/10-knowledge-check.md",
       "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/9-simulation-load-balancer.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
     }
   ]
 }
