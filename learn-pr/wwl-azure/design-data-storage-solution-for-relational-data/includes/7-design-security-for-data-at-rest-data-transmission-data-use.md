@@ -1,13 +1,13 @@
 Many organizations use Azure SQL Database for large customer databases that store phone numbers, addresses, orders, and credit card information.
 They need a security solution to prevent unauthorized data access to their cloud hosted databases. Classifying stored data by sensitivity and business scenario helps organizations determine the risks associated with their data.
 
-There are three basic tenets of good information security: data discovery, classification, and protection. In this unit, we'll review different data states and encryption methods to apply these tenets in a strong security solution. 
+There are three basic tenets of good information security: data discovery, classification, and protection. In this unit, we review different data states and encryption methods to apply these tenets in a strong security solution. 
 
 ## Data encryption for structured data
 
 Data exists in three basic states: data at rest, data in motion, and data in process. 
 
-- **Data at rest** is data on a storage device that isn't being moved or used. data at rest includes archived email messages stored in your Outlook inbox, or files on your laptop that you aren't using.
+- **Data at rest** is data on a storage device that isn't being moved or used. Data at rest includes archived email messages stored in your Outlook inbox, or files on your laptop that you aren't using.
 
 - **Data in motion** (also called _data in transit_) is data that's being moved from one device to another within a private network or public network like the internet. data in motion can also be data that's being read (used) but not changed. Data in motion includes email messages in transit, browsing internet websites, or using company applications like an organization chart.
 
@@ -17,18 +17,18 @@ There are different encryption methods for each of data state. The following tab
 
 | Data state | Encryption method | Encryption level |
 | --- | --- |
-| **Data&nbsp;at&nbsp;rest** | Transparent data encryption (TDE) | Always encrypted |
-| **Data&nbsp;in&nbsp;motion** | Secure Socket Layers and Transport Layer Security (SSL/TLS) | Always encrypted |
-| **Data&nbsp;in&nbsp;process** | Dynamic data masking | Specific data is unencrypted, Remaining data is encrypted |
+| **Data&nbsp;at&nbsp;rest** | Transparent data encryption (TDE) | Always encrypted. |
+| **Data&nbsp;in&nbsp;motion** | Secure Socket Layers and Transport Layer Security (SSL/TLS) | Always encrypted. |
+| **Data&nbsp;in&nbsp;process** | Dynamic data masking | Specific data is unencrypted. Remaining data is encrypted. |
 
-Large organizations, governments, and military entities use data classification to manage their data's integrity. The data classification process has yielded common metadata attributes that enable us to label data as _Public_, _Confidential_, or _Restricted_. After data is classified, you can implement data protection measures for highly classified data.
+Large organizations, governments, and military entities use data classification to manage their data's integrity. The data classification process yields common metadata attributes that enable us to label data as _Public_, _Confidential_, or _Restricted_. After data is classified, you can implement data protection measures for highly classified data.
 
 > [!NOTE]
 > You might be familiar with another state called **Defense in depth**. This state is a cybersecurity strategy that employs a layered approach to slow the advance of an attack aimed at acquiring unauthorized access to information. To learn more, watch the video, [Defense in depth security in Azure](/shows/azure-videos/defense-in-depth-security-in-azure).
 
 ### Things to know about data at rest and TDE
 
-Data encryption at rest is a mandatory step toward data privacy, compliance, and data sovereignty. Encryption helps mitigate risks related to unauthorized data access. data at rest needs to be protected from unauthorized or offline access to raw files or backups to an unsecured server. Data at rest needs to be protected by preventing copying of the database and transaction log files to an unsecured server.
+Data encryption at rest is a mandatory step toward data privacy, compliance, and data sovereignty. Encryption helps mitigate risks related to unauthorized data access. Data at rest needs to be protected from unauthorized or offline access to raw files or backups to an unsecured server. Data at rest needs to be protected by preventing copying of the database and transaction log files to an unsecured server.
 
 Transparent data encryption (TDE) protects Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics against the threat of malicious offline activity by encrypting data at rest. TDE performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application. TDE is enabled by default to all newly deployed Azure SQL Databases. For Azure SQL Managed Instance, databases created after February 2019 have TDE enabled.
 
@@ -44,13 +44,7 @@ Let's review how TDE is implemented for data at rest. Consider how data at rest 
 
 - Database backups are also encrypted because a backup operation copies the data pages from the database file to the backup device. No decryption is done during the backup operation.
 
-- TDE encrypts the storage of an entire database by using a symmetric key called the Database Encryption Key (DEK). There are two ways TDE uses the DEK:
-
-   - **Service-managed TDE**: The DEK is protected by a built-in server certificate.
-
-   - **Customer-managed TDE**: The TDE Protector that encrypts the DEK is supplied by the customer. The TDE Protector is stored in a key management system owned and managed by the customer.
-
-- You can use TDE with databases in an **Always On** Availability Group (AG). The certificate that's used to encrypt the database must be backed up and restored to the other servers within AGs that host copies of the database.
+- You can use TDE with databases in an **Always On** Availability Group (AG). The certificate used to encrypt the database must be backed up and restored to the other servers within AGs that host copies of the database.
 
 ### Things to know about data in motion and SSL/TLS
 
@@ -69,7 +63,7 @@ Consider the following Tailwind Traders scenarios, and possible data in motion s
 
 ### Things to know about data-in-use and dynamic data masking
 
-Encryption for data-in-use is about protecting data and sensitive information while it's being used or changed. The encryption methods target usage scenarios and minimum access required.
+Encryption for data-in-use is about protecting data and sensitive information. The encryption methods target usage scenarios and minimum access required.
 
 Consider a scenario where customer assistants access the Tailwind Traders database that has customer phone numbers and email addresses. The assistants require access to only a portion of the sensitive data. They need to verify the user who is calling by checking the last four digits of the customer's phone number. The assistant doesn't need access to the remaining sensitive data. You can encrypt the remaining customer data and not reveal it to the assistants. 
 

@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.challenge-project-build-speech-translator-app.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Summary
+  description: Summary.
+  author: theoyinbooke
+  ms.author: somelezediko
+  ms.date: 12/13/2023
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-summary.md)]
+

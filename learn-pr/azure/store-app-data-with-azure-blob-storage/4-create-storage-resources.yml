@@ -1,14 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.store-app-data-with-azure-blob-storage.4-create-storage-resources
-title: Exercise - Create Azure storage resources
+title: Exercise - Create Azure Storage resources
 metadata:
-  title: Exercise - Create Azure storage resources
-  description: Exercise - Create Azure storage resources
-  ms.date: 03/23/2023
-  author: normesta
-  ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Create Azure Storage resources
+  description: Exercise - Create Azure Storage resources
+  ms.date: 10/29/2024
+  author: pauljewellmsft
+  ms.author: pauljewell
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
   zone_pivot_groups: dev-lang-csharp-java
 interactive: bash
 azureSandbox: true
@@ -24,3 +27,4 @@ content: |
 #    resource:
 #      type: "Microsoft.Storage/storageAccounts"
 #      kind: "StorageV2"
+

@@ -2,13 +2,15 @@
 uid: learn.wwl.train-evaluate-regression-models.exercise-model
 title: Exercise - Train and evaluate a regression model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Train and evaluate a regression model
   description: "Exercise - Train and evaluate a regression model"
-  ms.date: 01/04/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/10/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/01-training.ipynb
+

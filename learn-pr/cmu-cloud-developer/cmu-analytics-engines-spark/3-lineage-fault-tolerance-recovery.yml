@@ -2,13 +2,14 @@
 uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.3-lineage-fault-tolerance-recovery
 title: Lineage, fault tolerance, and recovery
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Lineage, fault tolerance, and recovery
   description: Lineage, fault tolerance, and recovery
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 7
 content: |
@@ -48,3 +49,4 @@ quiz:
     - content: "Spark fault tolerance is **less** costly to implement. Spark node failure is **more** costly to recover from."
       isCorrect: true
       explanation: "Correct!"
+

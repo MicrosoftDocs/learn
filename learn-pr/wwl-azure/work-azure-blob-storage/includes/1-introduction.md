@@ -1,4 +1,3 @@
-
 The Azure Storage client libraries for .NET offer a convenient interface for making calls to Azure Storage.
 
 After completing this module, you'll be able to:

@@ -4,19 +4,19 @@ You wanted to learn how to containerize and deploy a Java app to Azure. You foll
 
 1. Containerize a Java app
 
-2. Build a container image for the Java app
+1. Build a container image for the Java app
 
-3. Run the container image locally
+1. Run the container image locally
 
-4. Push the container image to Azure Container Registry
+1. Push the container image to Azure Container Registry
 
-5. Deploy the container image to Azure Kubernetes Service
+1. Deploy the container image to Azure Kubernetes Service
 
 You're now confident that you can containerize and deploy a Java app to Azure.
 
 ## Enable diagnostic logging
 
-Learn how Azure provides [built-in diagnostics to help with debugging](/azure/app-service/troubleshoot-diagnostic-logs/?WT.mc_id=java-10785-ropreddy&azure-portal=true).
+Learn how Azure provides [built-in diagnostics to help with debugging](/azure/app-service/troubleshoot-diagnostic-logs).
 
 ## Clean up resources
 

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-fabric-items
+metadata:
+  title: Monitor activities in Microsoft Fabric
+  description: "Monitoring helps you gain visibility into the health of your data systems. Monitoring Hub in Microsoft Fabric collects and aggregates data from Fabric activities and Microsoft Fabric Activator helps you take actions when patterns or conditions are detected in streaming data."
+  ms.date: 12/12/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: module-standard-task-based
+  ms.service: fabric
+  ms.custom:
+title: Monitor activities in Microsoft Fabric
+summary: Monitoring helps you gain visibility into the health of your data systems. Monitoring Hub in Microsoft Fabric collects and aggregates data from Fabric activities. Microsoft Fabric Activator helps you take actions when patterns or conditions are detected in streaming data.
+abstract: |
+  In this module, you learn to:
+  - Apply monitoring concepts to Microsoft Fabric
+  - Use Monitoring Hub in Microsoft Fabric
+  - Trigger actions using Activator in Microsoft Fabric
+prerequisites: |
+  Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - data-engineer
+  - data-analyst
+products:
+  - fabric
+subjects:
+  - data-engineering
+  - data-analytics
+units:
+- learn.wwl.monitor-fabric-items.introduction
+- learn.wwl.monitor-fabric-items.understand-monitoring
+- learn.wwl.monitor-fabric-items.use-monitor-hub
+- learn.wwl.monitor-fabric-items.take-action-with-activator
+- learn.wwl.monitor-fabric-items.exercise
+- learn.wwl.monitor-fabric-items.knowledge-check
+- learn.wwl.monitor-fabric-items.summary
+badge:
+  uid: learn.wwl.monitor-fabric-items.badge

@@ -1,25 +1,37 @@
 ### YamlMime:Module
 uid: learn.wwl.automate-deployment-of-sap-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate Deployment of SAP on Azure
-  description: "After this module, you will be able to run automated deployments of SAP on Azure infrastructure."
-  ms.date: 03/13/2023
+  description: "After this module, you'll be able to run automated deployments of SAP on Azure infrastructure."
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Automate Deployment of SAP on Azure
-summary: After this module, you will be able to run automated deployments of SAP on Azure infrastructure.
+summary: After this module, you'll be able to run automated deployments of SAP on Azure infrastructure.
 abstract: |
-  After completing this module, you will be able to:
-  - Describe Azure built in and external tools and methods to deploy SAP infrastructure on Azure
-  - Create, edit and run Azure Resource Manager Templates to deploy Azure infrastructure for SAP
-  - Create, edit  and run Terraform scripts to deploy Azure infrastructure for SAP
-  - Describe the tools and methods to install SAP software on Azure Infrastructure
+  After completing this module, you'll be able to:
+
+  -   Describe Azure built in and external tools and methods to deploy SAP infrastructure on Azure
+
+  -   Create, edit, and run Azure Resource Manager Templates to deploy Azure infrastructure for SAP
+
+  -   Create, edit, and run Terraform scripts to deploy Azure infrastructure for SAP
+
+  -   Describe the tools and methods to install SAP software on Azure Infrastructure
 prerequisites: |
-  - Basic understanding of scripting and JSON
-  - AZ-104 certification or equivalent knowledge
-  - Knowledge of SAP products such as SAP HANA or SAP NetWeaver
+  -   Basic understanding of scripting, JSON, and Azure Cloud Shell
+
+  -   AZ-104 certification or equivalent knowledge
+
+  -   Knowledge of SAP products such as SAP HANA or SAP NetWeaver
 iconUrl: /training/achievements/automate-deployment-of-sap-on-azure.svg
 levels:
 - advanced
@@ -31,7 +43,6 @@ products:
 - azure-clis
 - azure-cloud-shell
 - azure-resource-manager
-- azure-sap
 subjects:
 - cloud-computing
 units:

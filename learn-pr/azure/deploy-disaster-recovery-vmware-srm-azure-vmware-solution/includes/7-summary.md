@@ -1,7 +1,7 @@
-Your organization runs a mix of VMware vSphere VMs both on-premises and in Azure VMware Solution and had tasked you with implementing disaster recovery for those workloads. In this module, you learned how to install VMware SRM and vSphere Replication with Azure VMware Solution. You explored the following scenarios for implementing protection of VMware vSphere VMs:
+Your organization runs a mix of VMware vSphere VMs both on-premises and in Azure VMware Solution, and tasked you with implementing disaster recovery for those workloads. In this module, you learned how to install VMware SRM and vSphere Replication with Azure VMware Solution. You explored the following scenarios for implementing protection of VMware vSphere VMs:
 
-- On-premises VMware to Azure VMware Solution private cloud disaster recovery.
-- Primary Azure VMware Solution to secondary Azure VMware Solution private cloud disaster recovery.
+- On-premises VMware to Azure VMware Solution private cloud disaster recovery
+- Primary Azure VMware Solution to secondary Azure VMware Solution private cloud disaster recovery
 
 By understanding the steps necessary to install VMware SRM, vSphere Replication and to configure site pairing in vCenter Server, you’re now better equipped to implement disaster recovery for your workloads.
 

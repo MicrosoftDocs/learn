@@ -4,14 +4,11 @@ title: Exercise - Use built-in functions
 metadata:
   title: Exercise - Use built-in functions
   description: "Exercise - Use built-in functions"
-  ms.date: 11/15/2022
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labId: 96514
-labModal: true
+  ms.topic: unit
+  zone_pivot_groups: sql-database
 durationInMinutes: 30
 content: |
   [!include[](includes/8-exercise-built-in-functions.md)]

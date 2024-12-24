@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.design-a-mvvm-viewmodel.what-is-mvvm
+title: What is MVVM?
+metadata:
+  title: What is MVVM?
+  description: Understand the goals of the Model-View-ViewModel pattern and what each part represents.
+  ms.date: 04/21/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: unit
+  
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-mvvm.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: A developer is working on a .NET MAUI application and wants to implement the MVVM pattern. They have created a model for business data and operations, and a view for user interaction. What should they create next to act as an intermediary between the model and the view?
+    choices:
+    - content: A controller
+      isCorrect: false
+      explanation: Incorrect. In the MVVM pattern, a controller isn't used as an intermediary between the model and the view.
+    - content: A service
+      isCorrect: false
+      explanation: Incorrect. While services can be part of an application architecture, they aren't the intermediary in the MVVM pattern.
+    - content: A viewmodel
+      isCorrect: true
+      explanation: Correct. In the MVVM pattern, the viewmodel acts as an intermediary between the model and the view.
+  - content: A team is developing a mobile application using .NET MAUI and wants to ensure that their business logic is portable across different platforms. Where should they place this business logic in the MVVM pattern?
+    choices:
+    - content: In the model
+      isCorrect: true
+      explanation: Correct. In the MVVM pattern, the model is where business data and operations are located.
+    - content: In the view
+      isCorrect: false
+      explanation: Incorrect. The view in MVVM is responsible for user interaction, not business logic.
+    - content: In the viewmodel
+      isCorrect: false
+      explanation: Incorrect. The viewmodel acts as an intermediary between the model and the view, but it's not the primary location for business logic.

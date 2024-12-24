@@ -1,0 +1,56 @@
+###YamlMime:ModuleUnit
+uid: learn.github.github-copilot-management-and-customizations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check - Management and customization considerations with GitHub Copilot.
+  ms.date: 10/18/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which GitHub Copilot plan includes enterprise-grade security and privacy?"
+    choices:
+    - content: "Pro"
+      isCorrect: false
+      explanation: "The Pro plan doesn't include enterprise-grade security and privacy features. It's designed for personal use and lacks the advanced security measures that businesses and enterprises require."
+    - content: "Business"
+      isCorrect: false
+      explanation: "The Business plan does include enterprise-grade security and privacy features, but this isn't the only correct answer."
+    - content: "Enterprise"
+      isCorrect: false
+      explanation: "The Enterprise plan does include enterprise-grade security and privacy features, but this isn't the only correct answer."
+    - content: "Both B and C"
+      isCorrect: true
+      explanation: "Both the Business and Enterprise plans offer enterprise-grade security and privacy features."
+  - content: "What should you do if GitHub Copilot isn't providing code suggestions?"
+    choices:
+    - content: "Restart the computer"
+      isCorrect: false
+      explanation: "Restarting your computer isn't a primary troubleshooting step for this problem. Although it might help in some cases, it isn't the most direct solution."
+    - content: "Check the internet connection"
+      isCorrect: true
+      explanation: "Ensuring a stable internet connection is essential for GitHub Copilot to function properly and provide code suggestions."
+    - content: "Disable the Copilot extension"
+      isCorrect: false
+      explanation: "Disabling the extension would prevent GitHub Copilot from providing any code suggestions at all, which wouldn't solve the problem."
+    - content: "Change the programming language"
+      isCorrect: false
+      explanation: "Changing your programming language isn't a relevant troubleshooting step for resolving problems with code suggestions from GitHub Copilot."
+  - content: What is the purpose of the content exclusion feature in GitHub Copilot?
+    choices:
+    - content: "To enhance code completion accuracy"
+      isCorrect: false
+      explanation: "The main purpose of the content exclusion feature is to manage the content that's used for suggestions."
+    - content: "To prevent specific files or repositories from being used for code suggestions"
+      isCorrect: true
+      explanation: "The content exclusion feature ensures that GitHub Copilot doesn't inadvertently suggest sensitive or proprietary code."
+    - content: "To increase the speed of code suggestions"
+      isCorrect: false
+      explanation: "The content exclusion feature doesn't directly affect the speed of code suggestions."
+    - content: "To provide legal protection against IP claims"
+      isCorrect: false
+      explanation: "The content exclusion feature isn't designed to provide legal protection against IP claims."

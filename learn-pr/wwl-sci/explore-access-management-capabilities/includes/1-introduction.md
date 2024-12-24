@@ -1,7 +1,10 @@
 
-One of the main purposes of Microsoft Azure Active Directory (Azure AD), part of Microsoft Entra, is to manage access. The security perimeter has shifted away from organizational boundaries to user, device, and service identities. In this module, you'll learn how Azure AD uses intelligent access management capabilities to protect organizational assets. This module describes how Conditional Access helps organization improve security. It also describes the benefits of Azure AD roles, role-based access control, and how they're used to control access to Azure AD resources.
+The security perimeter has shifted away from organizational boundaries to user, device, and service identities. Also, applications and data are moving to the cloud. These shifts require more secure and granular access control solutions.
 
-In this module, you'll learn how to:
+This module introduces you to Conditional Access, Microsoft's Zero Trust policy engine that takes signals from various sources into account when enforcing policy decisions. You learn about Global Secure Access, Microsoft's Security Service Edge solution, which combines the identity controls you have with Conditional Access together with network controls to provide advanced protections for your internet-based resources and resources running in your private cloud or on-premises infrastructure. You also learn about Microsoft Entra roles and role-based access control, which are key to implementing least privilege access, a guiding principle of a Zero Trust strategy security.
 
-- Describe Conditional Access in Azure AD.
-- Describe the benefits of Azure AD roles and role-based access control.
+In this module, you learn how to:
+
+- Describe Conditional Access in Microsoft Entra.
+- Describe Global Secure Access in Microsoft Entra.
+- Describe Microsoft Entra roles and role-based access control.

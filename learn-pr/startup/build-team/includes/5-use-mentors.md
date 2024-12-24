@@ -9,13 +9,13 @@ In this unit, we'll focus on two types of mentoring:
 - Informal connections that you make directly with experienced founders and investors
 - Structured mentoring relationships, such as those found in most incubator and accelerator programs
 
-We'll also briefly discuss the mentor network that's part of the [Microsoft for Startups Founders Hub](https://startups.microsoft.com?azure-portal=true) and explain how you can tap into this valuable resource.
+We'll also briefly discuss the mentor network that's part of the [Microsoft for Startups Founders Hub](https://www.microsoft.com/startups?azure-portal=true) and explain how you can tap into this valuable resource.
 
 ## What makes a good mentor
 
 Not everyone who's launched a startup makes a good mentor, even if they've been successful. As highlighted by venture capitalist Bryce Roberts, "When successful people give advice, I hear this: Here are the lottery numbers I played. They worked for me!"
 
-In many cases, successful entrepreneurs have difficulty articulating what it was that led to their success. When they have single-time successes, their one set of experiences might not be directly relevant to other startups. That's especially true if those startups are in different industries or pursuing different business models.
+In many cases, successful entrepreneurs have difficulty articulating what led to their success. When they have single-time successes, their one set of experiences might not be directly relevant to other startups. That's especially true if those startups are in different industries or pursuing different business models.
 
 The best mentors are often those who have broad positive and negative experiences with startups, along with a deep understanding of startup best practices.
 
@@ -55,7 +55,7 @@ Finally, there are opportunities to engage experienced founders and others in a 
 
 ## How to find good mentors
 
-There are many ways to tap into high-quality mentoring. The best way to find good mentors will depend on the maturity of your local startup ecosystem. Here are some practical tips that are likely to be helpful no matter where you're located:
+There are many ways to tap into high-quality mentoring. The best way to find good mentors depends on the maturity of your local startup ecosystem. Here are some practical tips that are likely to be helpful no matter where you're located:
 
 - Engage with your local startup community via networking events, pitch competitions, hackathons, and mentor-matching events.
 - Take part in a structured startup program such as an accelerator, as long as it's delivered by mentors who have broad startup experience.
@@ -70,17 +70,15 @@ Because mentoring is usually not a paid relationship, it's critical that you mak
 Here are practical tips to help you make the best use of mentors:
 
 - Have an agenda for your mentoring meetings. Ideally, have no more than three topics on which you're seeking input.
-- Avoid asking your mentor questions that you could have answered by doing a quick online search, by reading a basic startup book, or by asking one of your peers.
+- Avoid asking your mentor questions that you could answer by doing a quick online search, reading a basic startup book, or asking one of your peers.
 - If you have an ongoing mentoring relationship, have a summary of the key points from your last meeting and demonstrate that you've acted on them.
 - If you're seeking introductions, have a clear idea of who in the mentor's network you want to be connected with and why.
-- Make it easy for your mentor to introduce you to others by sending them a short email with a brief background, the name of the person you're hoping to connect with, your specific question or request, and your contact details. Many introductions will be in the form of a [double-opt-in](https://hughstephens.com/2018/11/how-i-make-double-opt-in-intros-and-how-to-accept-one/?azure-portal=true), so don't be surprised if it takes a couple of days or more to make the connection. After you make contact, be sure to close the loop with your mentor by sending them a brief email about the outcome.
+- Make it easy for your mentor to introduce you to others by sending them a short email with a brief background, the name of the person with whom you're hoping to connect, your specific question or request, and your contact details. Many introductions will be in the form of a [double-opt-in](https://hughstephens.com/2018/11/how-i-make-double-opt-in-intros-and-how-to-accept-one/?azure-portal=true), so don't be surprised if it takes a couple of days or more to make the connection. After you make contact, be sure to close the loop with your mentor by sending them a brief email about the outcome.
 - If you have access to multiple mentors, be prepared for *mentor whiplash*: receiving different perspectives from different individuals. This is a common occurrence and reflects the reality that in startups, there's generally no absolutely right or absolutely wrong answer. Your job is to consider each perspective fully, make a decision on the course of action to take, and keep your mentors informed of your progress.
 - Mentor meetings usually are no more than 30 minutes long. This limit helps you focus and reduces the overhead on the mentor's busy schedule.
 
 ## How to tap into the Microsoft for Startups Mentor Network
 
-The [Microsoft for Startups Mentor Network](https://startups.microsoft.com/en-US/blog/mentorshipprimer?azure-portal=true) offers you access to a diverse mentor community with hundreds of business and technical experts currently working for Microsoft. They're available for one-to-one guidance. Many of them were startup founders themselves.
+The [Microsoft for Startups Mentor Network](https://startups.microsoft.com/blog/mentorshipprimer?azure-portal=true) offers you access to a diverse mentor community with hundreds of business and technical experts currently working for Microsoft. They're available for one-to-one guidance. Many of them were startup founders themselves.
 
 This benefit is available through the Microsoft for Startups Founders Hub. Use it to get expert input on important topics such as feedback on your idea, how to accelerate your development, and exploration of potential go-to-market opportunities with Microsoft.
-
-To learn how to access the network as a member of the Microsoft for Startups Founders Hub, see [About mentorship offer details](https://foundershubsupportcenter.powerappsportals.com/article/KA-01083/?azure-portal=true).

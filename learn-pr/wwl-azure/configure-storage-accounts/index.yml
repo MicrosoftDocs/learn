@@ -1,24 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-storage-accounts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure storage accounts
   description: "Learn how to configure storage accounts, including replication and endpoints."
-  ms.date: 02/24/2023
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: azure-storage
+  ai-usage: ai-assisted
 title: Configure storage accounts
 summary: Learn how to configure storage accounts, including replication and endpoints.
 abstract: |
   In this module, you learn how to:
-  - Identify features and usage cases for Azure storage accounts.
-  - Select between different types of Azure Storage and storage accounts.
-  - Select a storage replication strategy.
-  - Configure network access to storage accounts.
-  - Secure storage endpoints.
+
+  -   Identify features and usage cases for Azure storage accounts.
+
+  -   Select between different types of Azure Storage and create storage accounts.
+
+  -   Select a storage replication strategy.
+
+  -   Configure secure network access to storage endpoints.
 prerequisites: |
-  None
+  -   Experience with the Azure portal.
+
+  -   Familiarity with managing different types of data storage.
 iconUrl: /training/achievements/storage-accounts-configure.svg
 levels:
 - intermediate

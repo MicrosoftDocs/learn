@@ -2,13 +2,14 @@
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers.explore-teaching-best-practices
 title: Explore teaching best practices
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 5-Explore teaching best practices
   description: "Explore teaching best practices"
   ms.date: 08/08/2022
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

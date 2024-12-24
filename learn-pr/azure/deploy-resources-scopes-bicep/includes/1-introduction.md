@@ -1,4 +1,4 @@
-Some Azure resources are deployed outside resource groups, and are instead deployed at various _scopes_: a subscription, a management group, or even your whole tenant. By using Bicep, you can create and configure Azure resources at each of these scopes. And you'll gain the benefits of using infrastructure as code across your full portfolio of Azure resources.
+Some Azure resources are deployed outside resource groups, and are instead deployed at various _scopes_: a subscription, a management group, or even your whole tenant. By using Bicep, you can create and configure Azure resources at each of these scopes, and you'll gain the benefits of using infrastructure as code across your full portfolio of Azure resources.
 
 ## Example scenario
 
@@ -14,7 +14,7 @@ You know the R&D team has recently been given a lot of new funding, so it's like
 
 ## What will we be doing?
 
-In this module, you'll learn about the various scopes that Azure resources can be deployed to and some of the common resources that are deployed outside resource groups. You'll create a Bicep file to deploy to a subscription and a resource group. You'll also create a Bicep file to deploy to a management group. In the process, you'll learn about several features of Bicep, including how to:
+In this module, you'll learn about the various scopes to which Azure resources can be deployed and some of the common resources that are deployed outside resource groups. You'll create a Bicep file to deploy to a subscription and a resource group. You'll also create a Bicep file to deploy to a management group. In the process, you'll learn about several features of Bicep, including how to:
 
 - Set the scope of a Bicep file by using the `targetScope` keyword.
 - Use modules and the `scope` keyword to deploy your resources to various scopes within a single deployment.

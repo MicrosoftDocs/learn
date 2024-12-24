@@ -2,13 +2,18 @@
 uid: learn.secure-your-azure-virtual-machine-disks.3-encrypt-existing-vm-disks
 title: Encrypt existing VM disks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Encrypt existing VM disks
-  description: Encrypt existing VM disks
-  ms.date: 09/24/2018
+  description: Encrypt existing virtual machine (VM) disks.
+  ms.date: 09/10/2024
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
 durationInMinutes: 10
 content: |
   [!include[](includes/3-encrypt-existing-vm-disks.md)]
+

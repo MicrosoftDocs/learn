@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-private-access-azure-resources.private-endpoints
+title: Plan and implement Private Endpoints
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Plan and implement Private Endpoints
+  description: "Plan and implement Private Endpoints"
+  ms.date: 10/03/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-private-endpoints.md)]

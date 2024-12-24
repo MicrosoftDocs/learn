@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.onboard-sensor-microsoft-defender-iot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/21/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 5
+###########################################################################
+###
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "Once onboarded, a cloud-connected sensor displays data on which system or systems?"
+    choices:
+    - content: "Defender for IoT in the Azure portal and the on-premises sensor interface."
+      isCorrect: true
+      explanation: "Correct. Cloud-connected sensors send data to Defender for IoT in the Azure portal and display data on the sensor itself."
+    - content: "Defender for IoT in the Azure portal only."
+      isCorrect: false
+      explanation: "Incorrect. Cloud-connected sensors send data to Defender for IoT in the Azure portal, but also display data on the sensor itself."
+    - content: "The on-premises sensor interface only. Cloud connections are supported for management purposes only, like defining settings or updating software."
+      isCorrect: false
+      explanation: "Incorrect. Cloud-connected sensors display data locally, but also send data to Defender for IoT in the Azure portal."
+  - content: "What is downloaded to the computer after you finish onboarding your sensor?"
+    choices:
+    - content: "You receive a list of endpoints."
+      isCorrect: false
+      explanation: "Incorrect. You'll also receive an activation file to download."
+    - content: "You receive a certification file for the sensor."
+      isCorrect: false
+      explanation: "Incorrect. You'll receive the activation file to download."
+    - content: "You receive the activation file for the sensor."
+      isCorrect: true
+      explanation: "Correct. You'll receive the activation file to download."
+  - content: "What's the recommended action if you don't have your planned sites and zones created yet in Defender for IoT?"
+    choices:
+    - content: "Onboard your sensor with the default site and zone."
+      isCorrect: false
+      explanation: "Incorrect. We recommend that you onboard your sensor with the site and zone you have listed in your deployment plan. When onboarding your sensor, select Create site and Create zone to create them according to your plan."
+    - content: "Stop the onboarding process and request the IT department to upload the site and zone information."
+      isCorrect: false
+      explanation: "Incorrect. You can create new sites or zones from the onboarding interface whenever you need to add them for the first time."
+    - content: "When onboarding your sensor, select **Create site** or **Create zone** to create the sites and zones you've listed in your network diagram."
+      isCorrect: true
+      explanation: "Correct. You can create new sites or zones from the onboarding interface whenever you need to add them for the first time."
+  - content: "What task is completed in the sensor onboarding phase rather than while planning or deploying your sensors?"
+    choices:
+    - content: "Add OT sensors to Defender for IoT on the Azure portal."
+      isCorrect: true
+      explanation: "Correct. The onboarding sensors phase includes onboarding your OT sensors to Defender for IoT in the Azure portal."
+    - content: "Upload an activation file to your sensors."
+      isCorrect: false
+      explanation: "Incorrect. While the activation file is downloaded when your sensor is onboarded, you only upload the activation file to your sensor after it's deployed." 
+    - content: "Plan your sites and zones."
+      isCorrect: false
+      explanation: "Incorrect. We recommend having a plan defined for your sites and zones before you start onboarding your sensors. That way, you'll know which site and zone you want to assign to each sensor."
+      

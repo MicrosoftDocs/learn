@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore-middleware.intro
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to ASP.NET Core middleware.
+  ms.date: 8/28/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

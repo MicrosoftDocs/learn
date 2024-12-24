@@ -14,14 +14,14 @@ To learn more about Microsoft Intune, continue to the next learning module in th
 To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
 - [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/?linkid=845167)
 
-To get expert guidance to help plan, deploy, and migrate your organization to Microsoft Intune, continue by learning more about FastTrack: 
+To get expert guidance to help plan, deploy, and migrate your organization to Microsoft Intune, continue by learning more about FastTrack:
 - [Explore endpoint management support from FastTrack](https://go.microsoft.com/fwlink/?linkid=2143850)
 
 ## Learn more
 
 For additional information about Microsoft Intune, see the following resources:
 
-- [Microsoft Intune documentation](/mem/?azure-portal=true)
-- [Conditional access with Intune](/mem/intune/protect/conditional-access)
+- [Microsoft Intune product and capabilities documentation](/mem/?azure-portal=true)
+- [Learn about Conditional Access and Intune](/mem/intune/protect/conditional-access)
 - [Conditional Access with co-management](/mem/configmgr/comanage/quickstart-conditional-access)
-- [Azure AD Conditional Access documentation](/azure/active-directory/conditional-access/)
+- [Microsoft Entra Conditional Access documentation](/azure/active-directory/conditional-access/)

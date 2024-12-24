@@ -2,13 +2,14 @@
 uid: learn.azure.cna-orchestrate-containers.9-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 10/23/2020
-  author: tomreidnz
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/28/2023
+  author: rayoef
+  ms.author: rayoflores
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]

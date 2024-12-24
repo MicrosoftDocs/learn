@@ -2,14 +2,15 @@
 uid: learn.azure.characterize-dataset-azure-data-explorer.exercise-queries-explore
 title: 'Exercise: Use queries to explore your data'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise
   description: "Exercise: Use queries to explore your data."
-  ms.date: 08/16/2022
-  author: YaelSchuster
-  ms.author: yaschust
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.date: 04/02/2024
+  author: shsagir
+  ms.author: shsagir
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-queries-explore.md)]

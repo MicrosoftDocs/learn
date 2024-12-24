@@ -2,13 +2,14 @@
 uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning.run-pipelines-azure-databricks-compute
 title: Run Azure Machine Learning pipelines on Azure Databricks compute
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run Azure Machine Learning pipelines on Azure Databricks compute
   description: "Run Azure Machine Learning pipelines on Azure Databricks compute"
   ms.date: 03/22/2023
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

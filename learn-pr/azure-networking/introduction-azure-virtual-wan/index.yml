@@ -1,13 +1,16 @@
 ### YamlMime:Module
 uid: introduction-azure-virtual-wan
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Introduction to Azure Virtual WAN"
   description: Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
-  ms.date: 01/12/2023
+  manager: kumud
+  ms.date: 12/06/2023
   author: cherylmc
   ms.author: cherylmc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-intro-to-product
+  ms.service: azure-virtual-wan
 title: "Introduction to Azure Virtual WAN"
 summary: Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
 abstract: |
@@ -41,3 +44,4 @@ units:
 - learn.introduction-azure-virtual-wan.6-summary
 badge:
   uid: learn.introduction-azure-virtual-wan.badge
+

@@ -68,7 +68,7 @@ An environment in Azure DevOps can have checks and approvals configured. Each ti
 
 For example, you can configure manual approvals on your production environment. Before a production deployment starts, the designated approver receives an email notification. That person can manually verify that your policies and procedures are met before the deployment begins. For example, the approver might check that everything is working as they expect in the pre-production environment before they approve the deployment.
 
-Additionally, you could run an automated check to review the logs and error rates in your pre-production environment after your last environment. If the check confirms that the number of errors hasn't substantially increased, it allows the deployment to proceed.
+Additionally, you could run an automated check to review the logs and error rates in your pre-production environment after your last deployment. If the check confirms that the number of errors hasn't substantially increased, it allows the deployment to proceed.
 
 ### Deployment history
 

@@ -1,1 +1,0 @@
-Your team will be responsible for enhancing the security of the company's IoT solution. Your understanding of Microsoft Defender for IoT and custom security alert implementations will help the team to implement a solution that achieves the company's security requirements.

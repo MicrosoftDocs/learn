@@ -43,3 +43,4 @@ Get-Process –Name Notepad | ForEach-Object { $PSItem.Kill() }
 ```
 
 In this example, the **Kill()** method might generate an error. But because it's not a Windows PowerShell command, it doesn't have the *–ErrorAction* parameter. You would instead set `$ErrorActionPreference` to **Stop** before running the method, and then set the variable back to **Continue** after you run the method.
+

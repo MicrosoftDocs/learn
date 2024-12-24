@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: introduction-azure-openai-managed-identity-authentication-python.benefits-of-using-managed-identity-for-azure-openai
+title: Benefits of using a managed identity for Azure OpenAI
+metadata:
+  title: Benefits of using a managed identity for Azure OpenAI
+  description: Learn about the benefits of using a managed identity for Azure OpenAI.
+  ms.date: 11/11/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-benefits-managed-identity-azure-openai.md)]

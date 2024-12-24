@@ -1,10 +1,8 @@
-What fun would it be when you place holograms in the surrounding, but things get interesting when you can manipulate those holograms using your hands or any input source. To manipulate and grab an object with tracked hands, the objects must have the following components attached to them:
+Things get interesting when you can manipulate those holograms using your hands or any input source. To manipulate and grab an object with tracked hands, the objects must have the following components attached to them:
 
-* **Collider**: Collider components outline the form of a GameObject for bodily collisions. An invisible collider doesn't want to be the precisely identical form as the GameObject’s mesh. A rough approximation of the mesh is frequently more efficient and indistinguishable in gameplay.
+* **Collider**: Collider components outline the form of a GameObject for bodily collisions. Colliders are invisible so don't need to exactly match the GameObject's mesh. A rough approximation of the mesh is frequently more efficient and indistinguishable in gameplay.
 
 * **Object Manipulator(Script)**: The ObjectManipulator script makes an object movable, scalable, and rotatable using one or both hands. The object manipulator can be configured to manipulate how the item will reply to numerous inputs. The script must work with maximum sorts of interaction, including HoloLens 2 articulated hand, HoloLens 2 hand rays, HoloLens 1 gaze and gestures, and immersive headset motion controller input.
-
-* **NearInteractionGrabbable**: The NearInteractionGrabbable component helps you grab the object near the tracked hands.
 
 ## Bounds control
 

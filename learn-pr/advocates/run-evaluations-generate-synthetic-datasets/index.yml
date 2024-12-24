@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.run-evaluations-generate-synthetic-datasets
+metadata:
+  ms.author: apspeigh
+  author: aprilspeight
+  ms.date: 10/13/2024
+  title: Run evaluations and generate synthetic datasets
+  description: Learn how to run evaluations and generate synthetic datasets with the Azure AI Evaluation SDK.
+  ms.service: artificial-intelligence
+  ms.topic: module-guided-project
+  ms.collection:
+    - ce-advocates-ai-copilot
+title: Run evaluations and generate synthetic datasets
+summary: Learn how to run evaluations and generate synthetic datasets with the Azure AI Evaluation SDK.
+abstract:  |
+  By the end of this module, you're able to:
+  - Assess a generative AI app response using performance and quality metrics
+  - Assess a generative AI app response using risk and safety metrics
+  - Run an evaluation and track the results in Azure AI Foundry
+  - Create a custom evaluator with Prompty
+  - Send queries to an endpoint and run evaluators on the resulting query and response
+  - Generate a synthetic dataset using conversation starters
+prerequisites: |
+  - An Azure subscription – [Create one for free](https://azure.microsoft.com/free/cognitive-services/)
+  - Familiarity with Azure and the Azure portal
+  - Ability to understand Python at a beginner level
+  - Developing in browser:
+    - [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
+  - Developing locally:
+    - [Docker desktop](https://www.docker.com/products/docker-desktop/)
+    - [Visual Studio Code](https://code.visualstudio.com/)
+      - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-sdks
+- ai-services
+units:
+- learn.run-evaluations-generate-synthetic-datasets.introduction
+- learn.run-evaluations-generate-synthetic-datasets.prepare
+- learn.run-evaluations-generate-synthetic-datasets.performance-quality-metrics
+- learn.run-evaluations-generate-synthetic-datasets.risk-safety-metrics
+- learn.run-evaluations-generate-synthetic-datasets.track-evaluations-azure-ai-studio
+- learn.run-evaluations-generate-synthetic-datasets.custom-evaluator-prompty
+- learn.run-evaluations-generate-synthetic-datasets.evaluate-endpoint
+- learn.run-evaluations-generate-synthetic-datasets.generate-synthetic-dataset
+- learn.run-evaluations-generate-synthetic-datasets.knowledge-check
+- learn.run-evaluations-generate-synthetic-datasets.summary
+badge:
+  uid: learn.run-evaluations-generate-synthetic-datasets-badge

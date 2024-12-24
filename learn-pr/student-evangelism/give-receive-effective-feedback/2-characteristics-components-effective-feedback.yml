@@ -6,9 +6,8 @@ metadata:
   description: This unit explores the characteristics and components of effective feedback, discusses how to give feedback, and describes various types of feedback.
   ms.date: 09/07/2021
   author: interurban
-  ms.author: jadenyer
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4
 content: |

@@ -2,15 +2,16 @@
 uid: learn.wwl.configure-storage-accounts.determine-storage-account-kinds
 title: Determine storage account types
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine storage account types
   description: "Determine storage account types"
-  ms.date: 02/24/2023
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
 content: |
   [!include[](includes/4-determine-storage-account-kinds.md)]

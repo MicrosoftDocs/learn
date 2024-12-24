@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.multistage-reasoning-azure-databricks.langchain
+title: Explore LangChain
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Explore LangChain
+  description: "Explore LangChain"
+  ms.date: 10/23/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/03-langchain.md)]

@@ -4,11 +4,12 @@ title: Exercise - Create your first method
 metadata:
   title: Exercise - Create your first method
   description: "Exercise - Create your first method"
-  ms.date: 04/25/2023
+  ms.date: 06/24/2024
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-your-first-method.md)]

@@ -2,17 +2,18 @@
 uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 11/16/2021
   author: gloveboxes
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
+  ms.topic: unit
   ms.custom: nextgen
 durationInMinutes: 2
 content: |
-  Choose the best response for each question. Then select **Check your answers**.
+  Choose the best response for each question. 
 quiz:
   questions:
   - content: "What role does Azure IoT Central play?"
@@ -27,3 +28,4 @@ quiz:
       isCorrect: true
       explanation: "Azure IoT Central is a cloud-based application that in this case will be used to configure the Altair emulator running on Azure Sphere."
   
+

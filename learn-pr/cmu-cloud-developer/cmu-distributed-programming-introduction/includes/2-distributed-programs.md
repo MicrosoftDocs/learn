@@ -4,17 +4,15 @@ Various analytic techniques at the algorithm and code levels can identify potent
 
 _Figure 3: (a) A sequential program with serial (S1) and parallel (P1) parts. (b) A parallel/distributed program that corresponds to the sequential program in (a), whereby the parallel parts can be either distributed across machines or run concurrently on a single machine._
 
-Distributed programs have also found broad applications beyond science, such as search engines, web servers, and databases. One example is the Folding@Home project<sup>[2][^2]</sup> which uses distributed computing on all kinds of systems, from super computers, to personal PCs to perform molecular dynamics simulations of protein dynamics. Without parallelization, Folding@Home wouldn't be able to access nearly as many computational resources. For example, running a Hadoop MapReduce<sup>[3][^3]</sup> program on a single VM instance is not as effective as running it on a large-scale cluster of VM instances. Of course, committing jobs earlier on the cloud leads to a reduction in cost, which is a key objective for cloud users.
+Distributed programs have also found broad applications beyond science, such as search engines, web servers, and databases. One example is the Folding@Home project which uses distributed computing on all kinds of systems, from super computers, to personal PCs to perform molecular dynamics simulations of protein dynamics. Without parallelization, Folding@Home wouldn't be able to access nearly as many computational resources. For example, running a Hadoop MapReduce<sup>[2][^2]</sup> program on a single VM instance is not as effective as running it on a large-scale cluster of VM instances. Of course, committing jobs earlier on the cloud leads to a reduction in cost, which is a key objective for cloud users.
 
 Distributed programs also help alleviate subsystem bottlenecks. For instance, I/O devices, such as disks and network interface cards, typically represent major bottlenecks in terms of bandwidth, performance, and/or throughput. By distributing work across machines, data can be served from multiple disks simultaneously, offering an increased aggregate I/O bandwidth, improving performance, and maximizing throughput. In summary, distributed programs play a critical role in rapidly solving various computing problems and effectively mitigating resource bottlenecks. This action improves performance, increases throughput, and reduces cost, especially in the cloud.
 <br>
 ***
 ### References
 
-1. _Y. Solihin (2009). [Fundamentals of Parallel Computer Architecture](https://sites.google.com/site/solihinbooks/fundamentals-of-parallel-computer-architecture/slides) Solihin Books_
-2. _Stefan M. Larson, Christopher D. Snow, Michael Shirts, Vijay S. Pande (2002). [Folding@Home and Genome@Home: Using distributed computing to tackle previously intractable problems in computational biology](https://download.foldingathome.org/pub/papers/Horizon_Review.pdf)_
-3. _[Apache Hadoop](http://hadoop.apache.org/)_
+1. _Y. Solihin (2009). [Fundamentals of Parallel Computer Architecture](https://books.google.com.sg/books/about/Fundamentals_of_Parallel_Multicore_Archi.html?id=G2fmCgAAQBAJ&redir_esc=y) Solihin Books_
+2. _[Apache Hadoop](http://hadoop.apache.org/)_
 
-[^1]: <https://sites.google.com/site/solihinbooks/fundamentals-of-parallel-computer-architecture/slides> "Y. Solihin (2009). *Fundamentals of Parallel Computer Architecture* Solihin Books"
-[^2]: <https://download.foldingathome.org/pub/papers/Horizon_Review.pdf> "_Stefan M. Larson, Christopher D. Snow, Michael Shirts, Vijay S. Pande (2002). *Folding@Home and Genome@Home: Using distributed computing to tackle previously intractable problems in computational biology*"
-[^3]: <http://hadoop.apache.org/> "Apache Hadoop"
+[^1]: <https://books.google.com.sg/books/about/Fundamentals_of_Parallel_Multicore_Archi.html?id=G2fmCgAAQBAJ&redir_esc=y> "Y. Solihin (2009). *Fundamentals of Parallel Computer Architecture* Solihin Books"
+[^2]: <http://hadoop.apache.org/> "Apache Hadoop"

@@ -1,4 +1,4 @@
-resource lockResource 'Microsoft.Authorization/locks@2016-09-01' = {
+resource lockResource 'Microsoft.Authorization/locks@2020-05-01' = {
   scope: cosmosDBAccount
   name: 'DontDelete'
   properties: {

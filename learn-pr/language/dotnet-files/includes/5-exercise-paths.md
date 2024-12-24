@@ -2,11 +2,11 @@ The .NET `Path` class and `Directory.GetCurrentDirectory` are two ways to define
 
 In the previous exercise, you wrote a program that iterates through a folder to find any of the *sales.json* files in it or any subfolders.
 
-In this exercise, you'll use the `Path` class and `Directory.GetCurrentDirectory` to improve the program so it will find *any* file with a .json extension.
+In this exercise, you use the `Path` class and `Directory.GetCurrentDirectory` to improve the program so it finds *any* file with a .json extension.
 
 ## Use the current directory and combine paths
 
-In the current Program.cs code, you're passing the static location of the *stores* folder. We'll change that code to use the `Directory.GetCurrentDirectory` value instead of passing a static folder name.
+In the current Program.cs code, you're passing the static location of the *stores* folder. Now, we'll change that code to use the `Directory.GetCurrentDirectory` value instead of passing a static folder name.
 
 1. In the editor, insert the following code above the first line of `Program.cs` file. This code uses the `Directory.GetCurrentDirectory` method to obtain the path for the current directory and store it in a new variable `currentDirectory`:
 
@@ -14,13 +14,13 @@ In the current Program.cs code, you're passing the static location of the *store
     var currentDirectory = Directory.GetCurrentDirectory();
     ```
 
-1. Insert the following code after the one that you just added. This code uses the `Path.Combine` method to create the full path to the *stores* directory and store it in a new variable `storesDirectory`:
+1. Insert the following code after the line that you just added. This code uses the `Path.Combine` method to create the full path to the *stores* directory and store it in a new variable `storesDirectory`:
 
     ```csharp
     var storesDirectory = Path.Combine(currentDirectory, "stores");
     ```
 
-1. Replace the variable `stores` in the `FindFiles` function with the new variable `storesDirectory`:
+1. Replace the string `stores` in the `FindFiles` function call with the new variable `storesDirectory`:
 
      ```csharp
      var salesFiles = FindFiles(storesDirectory);
@@ -63,7 +63,7 @@ In the current Program.cs code, you're passing the static location of the *store
 
 Instead of looking for only *sales.json* files, the program needs to search for any file with a .json extension. To do that, you can use the `Path.GetExtension` method to check the extension for each file.
 
-1. In the `foreach` loop in `foundFiles`, insert the following line of code above the `if` statement to define a new variable `extension`. This code uses the `Path.GetExtension` method to get the extension of each file.
+1. In the `foreach` loop that iterates through `foundFiles`, insert the following line of code above the `if` statement to define a new variable `extension`. This code uses the `Path.GetExtension` method to get the extension of each file.
 
     ```csharp
         var extension = Path.GetExtension(file);
@@ -75,7 +75,7 @@ Instead of looking for only *sales.json* files, the program needs to search for 
            if (extension == ".json")
     ```
 
-    The `foreach` loop should look similar to the following:
+    The `foreach` loop should look similar to the following code:
   
     ```csharp
     foreach (var file in foundFiles)

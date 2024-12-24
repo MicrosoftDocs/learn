@@ -8,7 +8,7 @@ Azure VM extensions provide post-deployment configuration and automation tasks f
 
 ## Review extension status
 
-If you experience problems with VM extensions, then use the following guidance to attempt resolution. The first thing to check is the status of any installed extensions. If the extension you want isn't running, then you'll need to determine why. One possible reason is that the VM Agent isn't running. If the agent isn't running, your extensions won't work correctly.
+If you experience problems with VM extensions, then use the following guidance to attempt resolution. The first thing to check is the status of any installed extensions. If the extension you want isn't running, then you need to determine why. One possible reason is that the VM Agent isn't running. If the agent isn't running, your extensions won't work correctly.
 
 > [!NOTE]
 > The VM Agent is required to manage, install, and execute extensions.
@@ -27,7 +27,7 @@ The returned output describes available extensions and their state. It also indi
 
 - MicrosoftMonitoringAgent
 
-Both are provisioned successfully. Details about the VM agent is also displayed towards the end of the output. It's status is Ready, and the version is 2.7.41491.1029.
+Both are provisioned successfully. Details about the VM agent are also displayed towards the end of the output. Its status is Ready, and the version is 2.7.41491.1029.
 
 ![A screenshot displays the output from the get-azvm cmdlet.](../media/vm-extensions.png)
 

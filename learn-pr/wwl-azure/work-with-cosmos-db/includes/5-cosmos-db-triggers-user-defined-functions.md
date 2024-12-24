@@ -1,11 +1,10 @@
-
-Azure Cosmos DB supports pretriggers and post-triggers. Pretriggers are executed before modifying a database item and post-triggers are executed after modifying a database item. Triggers aren't automatically executed, they must be specified for each database operation where you want them to execute. After you define a trigger, you should register it by using the Azure Cosmos DB SDKs.
+Azure Cosmos DB supports pretriggers and post-triggers. Pretriggers are executed before modifying a database item and post-triggers are executed after modifying a database item. Triggers aren't automatically executed. They must be specified for each database operation where you want them to execute. After you define a trigger, you should register it by using the Azure Cosmos DB SDKs.
 
 For examples of how to register and call a trigger, see [pretriggers](/azure/cosmos-db/sql/how-to-use-stored-procedures-triggers-udfs#pre-triggers) and [post-triggers](/azure/cosmos-db/sql/how-to-use-stored-procedures-triggers-udfs#post-triggers).
 
 ## Pretriggers
 
-The following example shows how a pretrigger is used to validate the properties of an Azure Cosmos item that is being created, it adds a timestamp property to a newly added item if it doesn't contain one. 
+The following example shows how a pretrigger is used to validate the properties of an Azure Cosmos item that is being created. It adds a timestamp property to a newly added item if it doesn't contain one. 
 
 ```javascript
 function validateToDoItemTimestamp() {
@@ -26,9 +25,9 @@ function validateToDoItemTimestamp() {
 }
 ```
 
-Pretriggers can't have any input parameters. The request object in the trigger is used to manipulate the request message associated with the operation. In the previous example, the pretrigger is run when creating an Azure Cosmos item, and the request message body contains the item to be created in JSON format.
+Pretriggers can't have any input parameters. The request object in the trigger is used to manipulate the request message associated with the operation. In the previous example, the pretrigger is run when creating an Azure Cosmos item and the request message body contains the item to be created in JSON format.
 
-When triggers are registered, you can specify the operations that it can run with. This trigger should be created with a `TriggerOperation` value of `TriggerOperation.Create`, which means using the trigger in a replace operation isn't permitted.
+When triggers are registered, you can specify the operations that it can run with. This trigger should be created with a `TriggerOperation` value of `TriggerOperation.Create`, using the trigger in a replace operation isn't permitted.
 
 For examples of how to register and call a pretrigger, visit the [pretriggers](/azure/cosmos-db/sql/how-to-use-stored-procedures-triggers-udfs#pre-triggers) article.
 
@@ -84,7 +83,7 @@ The following sample creates a UDF to calculate income tax for various income br
 }
 ```
 
-The following is a function definition to calculate income tax for various income brackets:
+The following code sample is a function definition to calculate income tax for various income brackets:
 
 ```javascript
 function tax(income) {

@@ -13,8 +13,6 @@ Get-EventLog [-AsString] [-ComputerName <String[]>] [-List] [<CommonParameters>]
 
 The two blocks of text are *parameter sets*, each of which represents a way in which you can run the command. Notice that each parameter set has many parameters, and they both have several parameters in common. You can't mix and match parameters between sets. That is, if you decide to use the *–List* parameter, you can't also use *–LogName*, because these parameters don't appear together in the same parameter set.
 
-In the first parameter set, the *–LogName* parameter is mandatory. You can determine this because the entire parameter, which includes the name and the value, *isn't* enclosed in square brackets. The help syntax also depicts that the parameter accepts `<string>` values, meaning strings of letters, numbers, and other characters.
-
 The *–LogName* parameter name is enclosed in square brackets, meaning it's a *positional parameter*. You can't run the command without a log name. However, you don't have to enter the –*LogName* parameter name. You do need to pass the log name string as the first parameter, because that's the position in the help file where the *–LogName* parameter appears. Therefore, the following two commands provide the same results:
 
 ```ps

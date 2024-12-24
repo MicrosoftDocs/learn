@@ -1,0 +1,48 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-windows-365-cloud-pcs
+metadata:
+  title: MD-015 Implement Windows 365 Cloud PCs
+  description: This learning path provides instruction on the implementation of Windows 365, including application management, and provisioning, deploying, and managing Windows 365 Cloud PCs.
+  ms.date: 01/03/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: learning-path
+title: MD-015 Implement Windows 365 Cloud PCs
+prerequisites: |
+  - Proficient understanding of general IT practices.
+  - Basic understanding of on-premises computer networks and hardware concepts.
+  - Basic understanding of virtual machines and virtual networks.
+  - Basic understanding of Operating System and Application concepts.
+  - Familiarity with Microsoft Entra ID and Microsoft Intune.
+  - Experience using Windows 10 or later.
+summary: |
+  This learning path provides instruction on the implementation of Windows 365, including application management, and provisioning, deploying, and managing Windows 365 Cloud PCs.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure-virtual-desktop
+- m365
+- mem
+- windows-10
+- windows-365
+- windows-11
+- intune
+subjects:
+- business-applications
+- cloud-computing
+- infrastructure
+- productivity
+- virtualization
+- virtual-machine
+modules:
+- learn.wwl.examine-windows-365
+- learn.wwl.provision-windows-365-cloud-pcs
+- learn.wwl.explore-windows-365-cloud-pc-management
+- learn.wwl.manage-apps-windows-365-cloud-pcs
+trophy:
+  uid: learn.wwl.implement-windows-365-cloud-pcs.trophy

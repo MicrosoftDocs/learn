@@ -2,13 +2,14 @@
 uid: learn.wwl.design-azure-virtual-desktop-architecture.recommend-configuration-for-performance-requirements
 title: Recommend a configuration for performance requirements
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommend a configuration for performance requirements
   description: "Recommend a configuration for performance requirements"
   ms.date: 08/01/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 9

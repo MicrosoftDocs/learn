@@ -105,9 +105,9 @@ contract Items {
       string _name;
     }
 
-    function listItem(uint 256 memory _price, string memory _name) public {
+    function listItem(uint256 memory _price, string memory _name) public {
+      items[item_id] = Items_Schema(item_id, _price, _name);
       item_id += 1;
-      items[vehicle_id] = Items_Schema(item_id, _price, _name);
     }
 }
 ```

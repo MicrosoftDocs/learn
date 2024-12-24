@@ -24,7 +24,7 @@ You may have cases where it's important that an app be able to persist data in a
 
 Persistent storage can be provided to Windows containers either via the Docker engine or the container orchestrator. On development/test environments, the Docker engine provides a quick and easy way to assign local storage to Windows containers with Bind mounts or named volumes. Bind mounts allow a container to share a directory with the host. This is useful if you want a place to store files on the local machine that are available if you restart a container or want to share it with multiple containers. If you want the container to run on multiple machines with access to the same files, then a named volume or SMB mount should be used instead.
 
-For production environments, the container orchestrator can provide enterprise grade persistent storage options. For example, Kubernetes natively provides Persistent Volumes which can be used to provide persistent storage for multiple containers running on multiple hosts. Additionally, Kubernetes also provides for 3<sup data-htmlnode="">rd</sup>-party plugins to be used to map volumes on cloud storage, such as Azure Storage.
+For production environments, the container orchestrator can provide enterprise grade persistent storage options. For example, Kubernetes natively provides Persistent Volumes which can be used to provide persistent storage for multiple containers running on multiple hosts. Additionally, Kubernetes also provides for third-party plugins to be used to map volumes on cloud storage, such as Azure Storage.
 
 For more information on persistent storage for Windows containers, see [Container Storage overview](/virtualization/windowscontainers/manage-containers/container-storage).
 

@@ -1,9 +1,9 @@
-You're all done with the tasks for this module. You'll now move the work item to the **Done** state on Azure Boards, and clean up your Azure DevOps environment.
+You're all done with the tasks for this module. You'll now clean up your Azure DevOps environment.
 
 ::: zone pivot="ms-hosted-agents"
 
 > [!IMPORTANT]
-> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes for Microst-hosted agents ([check your usage](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs)). Be sure to do the cleanup steps even if you don't complete this module.
+> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes for Microsoft-hosted agents ([check your usage](/azure/devops/pipelines/licensing/concurrent-jobs#check-the-parallel-jobs-setting-directly)). Be sure to do the cleanup steps even if you didn't complete this module.
 
 ::: zone-end
 
@@ -14,21 +14,6 @@ You're all done with the tasks for this module. You'll now move the work item to
 
 ::: zone-end
 
-## Move the work item to Done
-
-You'll now move the work item you assigned to yourself earlier in this module, **Stabilize the build server**, to the **Done** column.
-
-In practice, "Done" often means that your users have working software. Here, you'll mark this work as complete because you have a working build system on Azure Pipelines.
-
-At the end of each Sprint or work iteration, you and your team might hold a retrospective meeting. At these meetings, you share the work you completed, what went well during the Sprint, and what could be improved.
-
-To complete the work item:
-
-1. From Microsoft Azure DevOps, go to **Boards**, and from the menu, select **Boards**.
-1. Move the **Stabilize the build server** work item from the **Doing** column to the **Done** column:
-
-    :::image type="content" source="../media/9-azure-boards-wi1-done.png" alt-text="Screenshot of Azure Boards showing the work item in the Done column.":::
-
 ## Disable the pipeline or delete your project
 
 To create a clean environment for the duration of the module, each module in this learning path provides a template that you can run.
@@ -37,24 +22,12 @@ Running multiple templates gives you multiple Azure Pipelines projects, each poi
 
 Select one of the following options:
 
-### Option 1: Disable the pipeline
-
-This option disables the pipeline so that it doesn't process further build requests. You can re-enable the build pipeline later if you want to. Select this option if you want to keep your Azure DevOps project and your build pipeline for future reference.
-
-To disable the pipeline:
-
-1. In Azure Pipelines, navigate to your pipeline.
-1. From the dropdown, select **Settings**.
-
-    :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="Screenshot of Azure Pipelines showing the location of the Settings menu.":::
-    
-1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
-
-    Your pipeline will no longer process build requests.
-
-### Option 2: Delete the Azure DevOps project
+### Option 1: Delete the Azure DevOps project
 
 This option deletes your Azure DevOps project, including what's on Azure Boards and your build pipeline. In future modules, you'll be able to run another template that brings up a new project in a state where this one leaves off. Select this option if you don't need your Azure DevOps project for future reference.
+
+> [!TIP]
+> This project isn't needed for subsequent training modules, as each module includes a template that creates a new project that includes the required steps from previous modules.
 
 To delete the project:
 
@@ -68,6 +41,21 @@ To delete the project:
 
     Your project is now deleted.
 
+### Option 2: Disable the pipeline
+
+This option disables the pipeline so that it doesn't process further build requests. You can re-enable the build pipeline later if you want to. Select this option if you want to keep your Azure DevOps project and your build pipeline for future reference.
+
+To disable the pipeline:
+
+1. In Azure Pipelines, navigate to your pipeline.
+1. From the dropdown, select **Settings**.
+
+    :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="Screenshot of Azure Pipelines showing the location of the Settings menu.":::
+
+1. Under **Processing of new run requests**, select **Disabled**, then select **Save**.
+
+    Your pipeline will no longer process build requests.
+
 ::: zone pivot="github-codespaces-agent"
 
 ## Delete your GitHub Codespace
@@ -79,5 +67,7 @@ To delete the project:
 1. Select **...** by your Codespace, and choose **Delete**.
 
     :::image type="content" source="../media/9-delete-codespace.png" alt-text="Screenshot of deleting a Codespace. ":::
+
+1. Select **Delete** again to confirm deletion.
 
 ::: zone-end

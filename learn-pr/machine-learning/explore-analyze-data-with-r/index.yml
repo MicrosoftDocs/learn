@@ -1,18 +1,24 @@
 ### YamlMime:Module
 uid: learn.machine-learning.explore-analyze-data-r
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore and analyze data with R
-  description: In this module, you'll explore, analyze, and visualize data by using the R programming language.
-  ms.date: 05/16/2022
+  description: In this module, you explore, analyze, and visualize data by using the R programming language.
+  ms.date: 08/26/2024
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: nextgen
+  ms.devlang: r
+  ms.service: azure-machine-learning
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
 title: Explore and analyze data with R
-summary: In this module, you'll explore, analyze, and visualize data by using the R programming language.
+summary: In this module, you explore, analyze, and visualize data by using the R programming language.
 abstract:  | 
-  In this module, you'll learn:
+  In this module, you learn:
   - Common data exploration and analysis tasks. 
   - How to use R packages such as ggplot2, dplyr, and tidyr to turn raw data into understanding, insight, and knowledge. 
 prerequisites: |
@@ -40,3 +46,4 @@ units:
 - learn.machine-learning.explore-analyze-data-r.summary
 badge:
   uid: learn.machine-learning.explore-analyze-data-r.badge
+

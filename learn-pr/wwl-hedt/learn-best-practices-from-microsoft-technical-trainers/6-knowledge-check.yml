@@ -2,13 +2,14 @@
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 6-Knowledge check
   description: "Knowledge check"
   ms.date: 08/08/2022
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

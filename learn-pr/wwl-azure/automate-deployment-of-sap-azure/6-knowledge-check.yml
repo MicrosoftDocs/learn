@@ -2,13 +2,16 @@
 uid: learn.wwl.automate-deployment-of-sap-azure.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/13/2023
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -26,18 +29,18 @@ quiz:
     - content: "The same template can be deployed many times and gives the same resource types in the same state."
       isCorrect: true
       explanation: "That is correct. \"Idempotent\" means that the same template can be deployed many times and gives the same resource types in the same state."
-  - content: "Which of the following is one of the four basic Terraform commands used when creating and applying a Terraform execution plan to a cloud infrastructure?"
+  - content: "Which of the following choices is one of the four basic Terraform commands used when creating and applying a Terraform execution plan to a cloud infrastructure?"
     choices:
     - content: "Check"
       isCorrect: false
-      explanation: "Incorrect. The four basic Terraform commands needed for creating and applying a Terraform execution plan are Init, Plan, Apply, and Destroy"
+      explanation: "Incorrect. The four basic Terraform commands needed for creating and applying a Terraform execution plan are Init, Plan, Apply, and Destroy."
     - content: "Apply"
       isCorrect: true
-      explanation: "That is correct. The four basic Terraform commands needed for creating and applying a Terraform execution plan are Init, Plan, Apply, and Destroy"
+      explanation: "That is correct. The four basic Terraform commands needed for creating and applying a Terraform execution plan are Init, Plan, Apply, and Destroy."
     - content: "Delete"
       isCorrect: false
-      explanation: "Incorrect. The four basic Terraform commands needed for creating and applying a Terraform execution plan are Init, Plan, Apply, and Destroy"
-  - content: "When running an Ansible playbook to configure a multiple server solution, such as with 5 VMs in a network, how many servers will need to install Ansible?"
+      explanation: "Incorrect. The four basic Terraform commands needed for creating and applying a Terraform execution plan are Init, Plan, Apply, and Destroy."
+  - content: "When running an Ansible playbook to configure a multiple server solution, such as with 5 VMs in a network, how many servers need to install Ansible?"
     choices:
     - content: "One"
       isCorrect: true

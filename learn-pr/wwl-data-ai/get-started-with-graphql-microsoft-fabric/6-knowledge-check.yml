@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.get-started-with-graphql-microsoft-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/24/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - ignite-2024
+durationInMinutes: 6
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What are the two types of operations supported by the API for GraphQL in Microsoft Fabric?
+    choices:
+    - content: Inserts and Deletes
+      isCorrect: false
+      explanation: Incorrect. Inserts and Deletes aren't the types of operations supported by the API for GraphQL in Microsoft Fabric.
+    - content: Queries and Mutations
+      isCorrect: true
+      explanation: Correct. The API for GraphQL in Microsoft Fabric supports Queries for read operations and Mutations for write operations.
+    - content: Updates and Selects
+      isCorrect: false
+      explanation: Incorrect. Updates and Selects aren't the types of operations supported by the API for GraphQL in Microsoft Fabric.
+  - content: What happens when a query or mutation is disabled in the GraphQL engine of Fabric?
+    choices:
+    - content: The query or mutation is automatically replaced by another one
+      isCorrect: false
+      explanation: Incorrect. The query or mutation isn't replaced. It's disabled.
+    - content: The query or mutation is deleted from the schema
+      isCorrect: false
+      explanation: Incorrect. The query or mutation isn't deleted, it's disabled.
+    - content: Any attempts to execute it results in an error
+      isCorrect: true
+      explanation: Correct. When a query or mutation is disabled, executing it causes an error.
+  - content: What information is needed to connect an application to a GraphQL API in Fabric?
+    choices:
+    - content: GraphQL endpoint address, Schema explorer, and the run panel.
+      isCorrect: false
+      explanation: Incorrect. The Schema explorer and Run panel are components of the GraphQL API interface, not information needed to connect an application to a GraphQL API.
+    - content: Client ID, Tenant ID, and the GraphQL endpoint address.
+      isCorrect: true
+      explanation: Correct. These three pieces of information are necessary to connect an application to a GraphQL API in Fabric.
+    - content: Client ID, Tenant ID, and the SQL Database name.
+      isCorrect: false
+      explanation: Incorrect. While Client ID and Tenant ID are required, the SQL Database name isn't necessary to connect an application to a GraphQL API.

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.api-management
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Manage your generative AI APIs with Azure API Management
+  description: Learn how to manage generative AI APIs with Azure API Management.
+  ms.date: 06/30/2024
+  author: dlepow
+  ms.author: danlep
+  manager: susanpotter
+  ms.topic: module-standard-task-based
+  ms.service: azure-api-management
+title: Manage your generative AI APIs with Azure API Management
+summary: This module will help you understand how to manage APIs at scale with Azure API Management. Specifically it will show how to interact with Azure OpenAI service.
+abstract: |
+  In this module you will:
+  - Identify challenges around managing APIs.
+  - Distinguish key concepts in Azure API Management.
+  - Learn to approach challenges on AI APIs around token management.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - devops-engineer
+products:
+  - vs
+  - azure
+  - azure-api-management
+prerequisites: |
+  - An Azure subscription
+units:
+  - learn.api-management.introduction
+  - learn.api-management.api-management
+  - learn.api-management.token
+  - learn.api-management.exercise-api-management
+  - learn.api-management.summary
+badge:
+  uid: learn.api-management.badge
+

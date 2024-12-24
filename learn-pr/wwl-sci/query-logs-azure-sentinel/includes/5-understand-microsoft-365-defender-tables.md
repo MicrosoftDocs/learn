@@ -1,4 +1,4 @@
-The Microsoft 365 Defender Sentinel Data Connector can populate tables with raw data collected from the Microsoft 365 Defender solutions.
+The Microsoft Defender XDR Sentinel Data Connector can populate tables with raw data collected from the Microsoft Defender XDR solutions.
 
 
 | Table name| Description|

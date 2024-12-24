@@ -7,12 +7,13 @@ metadata:
   ms.date: 02/11/2021
   author: GeekTrainer
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 durationInMinutes: 2
 content: |
-  Choose the best response for each of the questions below. Then select **Check your answers**.
+  Choose the best response for each of the questions below. 
 quiz:
   questions:
   - content: "What happens when you add code to a namespace?"

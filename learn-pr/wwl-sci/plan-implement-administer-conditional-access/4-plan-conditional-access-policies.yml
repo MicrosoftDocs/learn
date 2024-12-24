@@ -2,15 +2,16 @@
 uid: learn.wwl.plan-implement-administer-conditional-access.plan-policies
 title: Plan Conditional Access policies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan Conditional Access policies
   description: "Plan Conditional Access policies"
-  ms.date: 02/03/2023
+  ms.date: 12/16/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/4-plan-conditional-access-policies.md)]

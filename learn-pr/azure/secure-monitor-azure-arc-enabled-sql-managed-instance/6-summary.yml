@@ -2,13 +2,15 @@
 uid: learn.azure.secure-monitor-azure-arc-enabled-sql-managed-instance.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Concluding summary of Azure Arc-enabled SQL Managed Instance.
-  ms.date: 12/23/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/07/2024
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/summary.md)]
+

@@ -2,13 +2,16 @@
 uid: learn.wwl.automate-deployment-of-sap-azure.explore-azure-integrated-automation-for
 title: Explore Azure Resource Manager automation for SAP on Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Resource Manager automation for SAP on Azure
   description: "Explore Azure Resource Manager automation for SAP on Azure"
-  ms.date: 03/13/2023
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/2-explore-azure-resource-manager-automation-for-sap.md)]

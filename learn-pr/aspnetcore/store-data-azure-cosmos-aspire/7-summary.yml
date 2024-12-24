@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.store-data-azure-cosmos-aspire.summary
+title: Summary
+metadata:
+  title: Summary
+  description: In this unit, you'll review what you've learned about using Cosmos DB to store data with a .NET Aspire solution.
+  ms.date: 03/31/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]

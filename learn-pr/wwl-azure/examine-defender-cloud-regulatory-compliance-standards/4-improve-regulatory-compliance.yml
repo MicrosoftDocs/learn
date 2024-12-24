@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-defender-cloud-regulatory-compliance-standards.improve-regulatory-compliance
+title: Improve your regulatory compliance in Defender for Cloud
+metadata:
+  title: Improve your regulatory compliance in Defender for Cloud
+  description: "Improve your regulatory compliance in Defender for Cloud"
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-improve-regulatory-compliance.md)]

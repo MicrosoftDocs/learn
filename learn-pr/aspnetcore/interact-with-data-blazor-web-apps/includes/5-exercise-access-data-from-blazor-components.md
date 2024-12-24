@@ -12,7 +12,7 @@ In this exercise, you'll add packages to support database functionality, connect
     cd BlazingPizza
     ```
 
-1. Run these commands to add the **Microsoft.EntityFrameworkCore**, **Microsoft.EntityFrameworkCore.Sqlite** and **System.Net.Http.Json** packages:
+1. Run these commands to add the **Microsoft.EntityFrameworkCore**, **Microsoft.EntityFrameworkCore.Sqlite**, and **System.Net.Http.Json** packages:
 
     ```powershell
     dotnet add package Microsoft.EntityFrameworkCore --version 6.0.8
@@ -183,7 +183,6 @@ The app checks to see if there's an existing SQLite database and creates one wit
 1. Insert this segment above the `app.Run();` method:
 
     ```csharp
-    ...
     // Initialize the database
     var scopeFactory = app.Services.GetRequiredService<IServiceScopeFactory>();
     using (var scope = scopeFactory.CreateScope())
@@ -214,7 +213,7 @@ The app checks to see if there's an existing SQLite database and creates one wit
 
 We can now replace the hard-coded pizza in the **Index.razor** page.
 
-1. In the file explorer, select **Index.razor**.
+1. In the file explorer, expand **Pages**, and then select **Index.razor**.
 1. Replace the existing `OnInitialized()` method with:
 
     ```csharp
@@ -268,6 +267,5 @@ We can now replace the hard-coded pizza in the **Index.razor** page.
     :::image type="content" source="../media/5-returned-json.png" alt-text="Screenshot showing the browser that shows JSON for pizzas.":::
 
     The JSON has the pizzas listed in descending order of price as specified in the special pizza controller.
-
 
     :::image type="content" source="../media/5-more-blazing-pizzas.png" alt-text="Screenshot showing even more blazing pizzas.":::

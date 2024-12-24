@@ -2,14 +2,18 @@
 uid: learn.azure.structure-bicep-code-collaboration.improve-parameters-names
 title: Improve parameters and names
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Improve parameters and names
   description: Learn how parameters, symbolic names, and resource names can improve your template's readability and maintainability.
-  ms.date: 08/06/2021
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/27/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 8
 content: |
   [!include[](includes/3-improve-parameters-names.md)]
+

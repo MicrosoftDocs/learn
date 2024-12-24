@@ -1,3 +1,4 @@
+
 You should now be familiar with Azure Cosmos DB for MongoDB Basics. Developers should feel right at home using Azure Cosmos DB for MongoDB. Developers can keep on using their same MongoDB drivers, SDKs and tools to manipulate the Azure Cosmos DB for MongoDB databases and collections like they did with their MongoDB databases. 
 
 Now that you've completed this module, you can:
@@ -5,7 +6,7 @@ Now that you've completed this module, you can:
 - Estimate RU/s using the Azure Cosmos DB capacity planner for the Azure Cosmos DB for MongoDB.
 - Learn about support for different MongoDB server versions.
 - Learn how to create accounts, databases and collections using the Azure Cosmos DB for MongoDB.
-- Learn how to connect and query using the Azure Cosmos DB for MongoDB.
+- Learn how to connect and query using the Azure Cosmos DB for MongoDB. 
 
 ## Learn more
 

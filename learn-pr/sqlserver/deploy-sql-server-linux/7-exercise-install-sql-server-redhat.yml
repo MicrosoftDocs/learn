@@ -4,11 +4,11 @@ title: Exercise - Install SQL Server on Red Hat
 metadata:
   title: Exercise - Install SQL Server on Red Hat
   description: In this unit, you will install and configure SQL Server on a Red Hat Enterprise Linux (RHEL) server.
-  ms.date: 06/11/2019
+  ms.date: 05/15/2023
   author: rwestmsft
   ms.author: randolphwest
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 15
 interactive: bash
 azureSandbox: true

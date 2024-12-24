@@ -1,6 +1,6 @@
 During Module 2: Onboarding on-demand, we talked about the importance of early planning to decide how you're going to teach the materials and certify your students. Where your institution is in the process of adopting industry-recognized technical certifications as a part of your curriculum will determine whether you take a course-level or a program-level approach. We’ve developed a Learning Path to help you select the approach that makes sense for your course or institution. The Microsoft Learning Path [Implement certifications in academic programs](https://aka.ms/implementationLP) will introduce you to different approaches for implementing a certification at the course and program level. 
 
-You can also review the “Curriculum Planning” folder in the [Microsoft Learning Download Center](https://aka.ms/ldc) for more information about each approach. 
+You can also review the “Curriculum Planning” folder in the [Microsoft Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123) for more information about each approach. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQde]
 
@@ -20,4 +20,4 @@ Program-level approach:
 
 - Integrate with an existing program (for example, degree, diploma, etc.) 
 
-It's recommended that you refer to the other teaching materials provided in the [Microsoft Learning Download Center](https://aka.ms/ldc). In particular, the Course Datasheet and the Educator Teaching Guide will help to inform the overall integration approach that is appropriate for your delivery plans.
+It's recommended that you refer to the other teaching materials provided in the [Microsoft Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123). In particular, the Course Datasheet and the Educator Teaching Guide will help to inform the overall integration approach that is appropriate for your delivery plans.

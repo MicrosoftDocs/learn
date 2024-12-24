@@ -2,16 +2,18 @@
 uid: learn.azure.logic-apps-and-custom-connectors.5-exercise-create-and-call-a-logic-apps-custom-connector-that-wraps-an-api
 title: Exercise - Create and call a custom connector from a workflow in Azure Logic Apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create and call a custom connector from a workflow in Azure Logic Apps
   description: In this unit, you'll create a custom connector by importing the OpenAPI definition for a Web API.
-  ms.date: 04/11/2019
+  ms.date: 05/02/2023
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-create-and-call-a-logic-apps-custom-connector-that-wraps-an-api.md)]
+

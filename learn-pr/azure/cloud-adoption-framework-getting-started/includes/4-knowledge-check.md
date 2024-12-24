@@ -11,4 +11,4 @@ The guides organize blockers into the following categories on the [getting-start
 - **Accelerate adoption**: Cloud adoption requires technical change, but to digitally transform with the cloud requires more than just IT. Use these guides to start aligning various teams to accelerate migration and innovation efforts.
 - **Align foundation**: Your company's cloud is built on a set of foundational decisions that can affect all cloud-based outcomes. This guide and conceptual information can help you make core decisions and document them.
 
-Choose the best response for each question, then select **Check your answers**.
+Choose the best response for each question.

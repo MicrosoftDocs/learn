@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/11/2022
+  ms.date: 12/13/2024
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -21,7 +20,7 @@ quiz:
     choices:
     - content: "Azure Cosmos DB for NoSQL"
       isCorrect: true
-      explanation: "That's correct.  The API for NoSQL is designed to store and query JSON documents."
+      explanation: "That's correct. The API for NoSQL is designed to store and query JSON documents."
     - content: "Azure Cosmos DB for Apache Cassandra"
       isCorrect: false
       explanation: "That's incorrect. The API for Cassandra stores data in column families."
@@ -46,7 +45,7 @@ quiz:
       explanation: "That's incorrect. You only need a single Azure Cosmos DB account to manage a globally distributed database."
     - content: "Use the API for Table to copy data to Azure Table Storage in each region where you have users."
       isCorrect: false
-      explanation: "That's incorrect. You do not need to use Azure Table storage to distribute data from Cosmos DB."
+      explanation: "That's incorrect. You don't need to use Azure Table storage to distribute data from Cosmos DB."
     - content: "Enable multi-region writes and add the regions where you have users."
       isCorrect: true
       explanation: "That's correct. You can enable multi-region writes in the regions where you want users to work with the data."

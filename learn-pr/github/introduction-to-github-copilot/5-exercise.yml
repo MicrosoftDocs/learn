@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github-copilot.exercise
+title: Exercise - Develop with AI-powered code suggestions by using GitHub Copilot and VS Code
+metadata:
+  title: Exercise - Develop with AI-powered code suggestions by using GitHub Copilot and VS Code
+  description: Learn GitHub Copilot by going through a hands-on exercise to develop by using AI-powered code suggestions in VS Code.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 09/12/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise.md)]

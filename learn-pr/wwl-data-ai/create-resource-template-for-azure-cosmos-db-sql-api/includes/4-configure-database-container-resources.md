@@ -10,7 +10,7 @@ The **Microsoft.DocumentDB/databaseAccounts** resource in Bicep must contain the
 Here is an example of an account that has a unique name with a prefix of **csmsarm** and is deployed to **West US**.
 
 ```bicep
-resource Account 'Microsoft.DocumentDB/databaseAccounts@2021-05-15' = {
+resource Account 'Microsoft.DocumentDB/databaseAccounts@2024-04-15' = {
   name: 'csmsbicep${uniqueString(resourceGroup().id)}'
   location: resourceGroup().location
   properties: {
@@ -34,7 +34,7 @@ This example of a **Microsoft.DocumentDB/databaseAccounts/sqlDatabases** resourc
 Bicep also requires resources to define a **parent** property defining relationships as opposed to the verbose **dependsOn** property.
 
 ```bicep
-resource Database 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2021-05-15' = {
+resource Database 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2024-04-15' = {
   parent: Account
   name: 'cosmicworks'
   properties: {
@@ -53,7 +53,7 @@ resource Database 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2021-05-15
 This **Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers** resource is similar to the JSON equivalent, except it defines a throughput property at this level.
 
 ```bicep
-resource Container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers@2021-05-15' = {
+resource Container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers@2024-04-15' = {
   parent: Database
   name: 'customers'
   properties: {
@@ -63,6 +63,11 @@ resource Container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/container
         paths: [
           '/regionId'
         ]
+      }
+    },
+    options: {
+      autoscaleSettings: {
+        maxThroughput: 1000
       }
     }
   }
@@ -74,7 +79,7 @@ resource Container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/container
 Now that all resources are in place, the template file should now contain the following code.
 
 ```bicep
-resource Account 'Microsoft.DocumentDB/databaseAccounts@2021-05-15' = {
+resource Account 'Microsoft.DocumentDB/databaseAccounts@2024-04-15' = {
   name: 'csmsbicep${uniqueString(resourceGroup().id)}'
   location: resourceGroup().location
   properties: {
@@ -87,20 +92,17 @@ resource Account 'Microsoft.DocumentDB/databaseAccounts@2021-05-15' = {
   }
 }
 
-resource Database 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2021-05-15' = {
+resource Database 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2024-04-15' = {
   parent: Account
   name: 'cosmicworks'
   properties: {
-    options: {
-      
-    }
     resource: {
       id: 'cosmicworks'
     }
   }
 }
 
-resource Container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers@2021-05-15' = {
+resource Container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers@2024-04-15' = {
   parent: Database
   name: 'customers'
   properties: {
@@ -110,6 +112,11 @@ resource Container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/container
         paths: [
           '/regionId'
         ]
+      }
+    },
+    options: {
+      autoscaleSettings: {
+        maxThroughput: 1000
       }
     }
   }

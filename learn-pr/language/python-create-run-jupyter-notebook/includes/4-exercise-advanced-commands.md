@@ -37,8 +37,8 @@ Build a bar chart with some mock data to show how you could plot oxygen levels i
    plt.bar(range(len(oxy_nums)), oxy_nums)
    plt.show()
    ```
-   
-   Of course, this data is a mockup of real data, using `numpy` to create an array of 100 integers between 1 and 10.
+
+   Of course, this data is a mockup of real data, using `numpy` to create an array of 10 integers between 1 and 10.
 
 1. Run the code.
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-ai-content-safety.when-to-use-content-safety
+
+title: When to use Azure AI Content Safety
+metadata:
+  title: When to use Azure AI Content Safety
+  description: There's a need to moderate harmful language in many online situations, including education, e-commerce, and gaming. 
+  ms.date: 10/17/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-when-to-use-content-safety.md)]

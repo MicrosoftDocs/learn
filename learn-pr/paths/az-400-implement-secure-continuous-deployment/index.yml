@@ -3,17 +3,16 @@ uid: learn.wwl.az-400-implement-secure-continuous-deployment
 metadata:
   title: 'AZ-400: Implement a secure continuous deployment using Azure Pipelines'
   description: 'AZ-400: Implement a secure continuous deployment using Azure Pipelines'
-  ms.date: 07/22/2022
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-400: Implement a secure continuous deployment using Azure Pipelines'
 prerequisites: |
   None
 summary: |
-  This learning path helps you understand automated release gates, secrets, and secret management in your pipeline. You will learn how to implement alerting mechanisms, report on your quality, and get notified by using service hooks.
-iconUrl: /training/achievements/az-400-implement-a-secure-continuous-deployment-using-azure-pipelines.svg
+  This learning path helps you understand automated release gates, secrets, and secret management in your pipeline. You learn how to implement alerting mechanisms, report on your quality, and get notified by using service hooks.
+iconUrl: /learn/achievements/az-400-implement-a-secure-continuous-deployment-using-azure-pipelines.svg
 levels:
 - advanced
 roles:

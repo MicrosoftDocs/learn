@@ -1,13 +1,12 @@
-
 With MSAL.NET 3.x, the recommended way to instantiate an application is by using the application builders: `PublicClientApplicationBuilder` and `ConfidentialClientApplicationBuilder`. They offer a powerful mechanism to configure the application either from the code, or from a configuration file, or even by mixing both approaches.
 
 Before initializing an application, you first need to register it so that your app can be integrated with the Microsoft identity platform.  After registration, you may need the following information (which can be found in the Azure portal):
 
-* The client ID (a string representing a GUID)
-* The identity provider URL (named the instance) and the sign-in audience for your application. These two parameters are collectively known as the authority.
-* The tenant ID if you're writing a line of business application solely for your organization (also named single-tenant application).
-* The application secret (client secret string) or certificate (of type X509Certificate2) if it's a confidential client app.
-* For web apps, and sometimes for public client apps (in particular when your app needs to use a broker), you have to also set the `redirectUri` where the identity provider connects back to your application with the security tokens.
+* **Application (client) ID** - This is a string representing a GUID.
+* **Directory (tenant) ID** - Provides identity and access management (IAM) capabilities to applications and resources used by your organization. It can specify if you're writing a line of business application solely for your organization (also named single-tenant application).
+* The identity provider URL (named the **instance**) and the sign-in audience for your application. These two parameters are collectively known as the authority.
+* **Client credentials** - which can take the form of an application secret (client secret string) or certificate (of type `X509Certificate2`) if it's a confidential client app.
+* For web apps, and sometimes for public client apps (in particular when your app needs to use a broker), you need to set the **Redirect URI** where the identity provider will contact back your application with the security tokens.
 
 ## Initializing public and confidential client applications from code
 
@@ -31,18 +30,20 @@ IConfidentialClientApplication app = ConfidentialClientApplicationBuilder.Create
 
 In the code snippets using application builders, `.With` methods can be applied as modifiers (for example, `.WithAuthority` and `.WithRedirectUri`).
 
-* `.WithAuthority` modifier: The `.WithAuthority` modifier sets the application default authority to an Azure Active Directory authority, with the possibility of choosing the Azure Cloud, the audience, the tenant (tenant ID or domain name), or providing directly the authority URI.
+* `.WithAuthority` modifier: The `.WithAuthority` modifier sets the application default authority to a Microsoft Entra authority, with the possibility of choosing the Azure Cloud, the audience, the tenant (tenant ID or domain name), or providing directly the authority URI.
 
     ```csharp
-    var clientApp = PublicClientApplicationBuilder.Create(client_id)
-        .WithAuthority(AzureCloudInstance.AzurePublic, tenant_id)
+    IPublicClientApplication app;
+    app = PublicClientApplicationBuilder.Create(clientId)
+        .WithAuthority(AzureCloudInstance.AzurePublic, tenantId)
         .Build();
     ```
 
 * `.WithRedirectUri` modifier: The `.WithRedirectUri` modifier overrides the default redirect URI. 
 
     ```csharp
-    var clientApp = PublicClientApplicationBuilder.Create(client_id)
+    IPublicClientApplication app;
+    app = PublicClientApplicationBuilder.Create(client_id)
         .WithAuthority(AzureCloudInstance.AzurePublic, tenant_id)
         .WithRedirectUri("http://localhost")
         .Build();
@@ -54,7 +55,7 @@ The table below lists some of the modifiers you can set on a public, or confiden
 
 | Modifier | Description |
 |--|--|
-| `.WithAuthority()` | Sets the application default authority to an Azure Active Directory authority, with the possibility of choosing the Azure Cloud, the audience, the tenant (tenant ID or domain name), or providing directly the authority URI. |
+| `.WithAuthority()` | Sets the application default authority to a Microsoft Entra authority, with the possibility of choosing the Azure Cloud, the audience, the tenant (tenant ID or domain name), or providing directly the authority URI. |
 | `.WithTenantId(string tenantId)` | Overrides the tenant ID, or the tenant description. |
 | `.WithClientId(string)` | Overrides the client ID. |
 | `.WithRedirectUri(string redirectUri)` | Overrides the default redirect URI. This is useful for scenarios requiring a broker. |
@@ -66,9 +67,6 @@ The table below lists some of the modifiers you can set on a public, or confiden
 
 ## Modifiers specific to confidential client applications
 
-The modifiers you can set on a confidential client application builder are:
+The modifiers specific to a confidential client application builder can be found in the `ConfidentialClientApplicationBuilder` class. The different methods can be found in the [Azure SDK for .NET documentation](/dotnet/api/microsoft.identity.client.confidentialclientapplicationbuilder).
 
-| Modifier | Description |
-|--|--|
-| `.WithCertificate(X509Certificate2 certificate)` | Sets the certificate identifying the application with Azure Active Directory. |
-| `.WithClientSecret(string clientSecret)` | Sets the client secret (app password) identifying the application with Azure Active Directory. |
+Modifiers such as `.WithCertificate(X509Certificate2 certificate)` and `.WithClientSecret(string clientSecret)` are mutually exclusive. If you provide both, MSAL throws a meaningful exception.

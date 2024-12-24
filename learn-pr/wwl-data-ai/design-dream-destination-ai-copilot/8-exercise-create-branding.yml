@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dream-destination-ai-copilot.exercise-create-branding
+title: 'Exercise: Create branding material'
+metadata:
+  title: 'Exercise: Create branding material'
+  description: "Exercise: Create branding material"
+  ms.date: 12/13/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - copilot-learning-hub
+  - ai-learning-hub
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-exercise-create-branding.md)]

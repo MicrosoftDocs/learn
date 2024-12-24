@@ -1,16 +1,15 @@
 ### YamlMime:LearningPath
 uid: learn.build-workflows-with-logic-apps
 metadata:
-  title: Build automated workflows to integrate data and apps with Azure Logic Apps
-  description: This learning path guides you through creation of serverless workflows for your organization using Azure Logic Apps, a cloud service that automates your business processes.
+  title: Automate business processes by building integration workflows in Azure Logic Apps
+  description: This learning path introduces Azure Logic Apps and how to automate business processes by building and running integration workflows in Azure cloud.
   brand: azure
-  ms.date: 6/28/2019
+  ms.date: 09/25/2024
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Build automated workflows to integrate data and apps with Azure Logic Apps
-summary: Azure Logic Apps is a cloud service that automates the execution of your business processes. Learn how to leverage logic apps to create serverless workflows that run automatically when data is available.
+  ms.topic: learning-path
+title: Automate business processes with integration workflows in Azure Logic Apps
+summary: Business processes often work with data flowing through various sources, such as cloud services, apps, and on-premises systems. Many businesses often face challenges when building solutions to make these products and technologies work well together. <br><br>This learning path introduces Azure Logic Apps, a cloud platform that helps you build automated workflows that integrate data across many products and technologies. With 1,000+ prebuilt connectors and operations to support your business needs, this platform makes integration easier by providing a visual designer so you rarely have to write or maintain any code.<br><br>
 prerequisites: None
 iconUrl: /training/achievements/build-workflows-with-logic-apps.svg
 levels: 
@@ -23,7 +22,7 @@ products:
 - azure-portal
 - azure-logic-apps
 subjects:
-- serverless-compute
+- serverless-computing
 modules:
 - learn.azure-intro-to-logic-apps
 - learn.azure.route-and-process-data-logic-apps

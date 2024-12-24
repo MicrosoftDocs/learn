@@ -3,11 +3,11 @@ uid: learn.languages.aspnetcore-accessibility.9-exercise-fix-content-for-screen-
 metadata:
   title: Exercise - Find and fix content for screen reader accessibility
   description: Exercise - Find and fix content for accessibility of screen readers.
-  ms.date: 04/20/2021
+  ms.date: 02/13/2024
   author: jongalloway
   ms.author: jogallow
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.topic: unit
   
 title: Exercise - Find and fix content for screen reader accessibility
 durationInMinutes: 10

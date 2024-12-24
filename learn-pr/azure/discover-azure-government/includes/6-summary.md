@@ -1,8 +1,9 @@
-Azure helps public sector customers to deploy various solutions that reflect the specific needs of governments and public agencies. It provides the scale and economic benefits of multi-tenant cloud services. At the same time, it helps prevent customers from accessing one another's data or applications, protecting both classified and unclassified workloads. 
+Azure helps public sector customers to deploy various solutions that reflect the specific needs of governments and public agencies. It provides the scale and economic benefits of multitenant cloud services. At the same time, it helps prevent customers from accessing one another's data or applications, protecting both classified and unclassified workloads. 
 
-Now that you've reviewed this module, you should be able to:
 
-* Explain the basic concept and benefits of multi-tenant cloud services.
+After reviewing this module, you should be able to:
+
+* Explain the basic concept and benefits of multitenant cloud services.
 * Describe how Azure helps customers follow data security requirements in the public sector.
 * Identify scenarios in which Azure could provide solutions for data in the public sector.
 

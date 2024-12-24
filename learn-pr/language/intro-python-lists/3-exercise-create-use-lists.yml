@@ -5,12 +5,13 @@ metadata:
   unitType: exercise
   title: Exercise - Create and use Python lists
   description: In this exercise, you'll create and modify data in a Python list.
-  ms.date: 12/03/2021
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-languages
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
+  ms.topic: unit
+durationInMinutes: 8
 sandbox: true
 notebook: notebooks/3-exercise-create-use-lists.ipynb

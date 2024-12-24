@@ -6,6 +6,9 @@ Before you can assume the role of Alice, you must do some work to set up a bare 
 
 Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud Shell to the right.
 
+> [!NOTE]
+> For this exercise, Cloud Shell needs to be in *Classic* mode. At the top of the Cloud Shell window, select the **More** icon (***...***), select **Settings**, and select **Go to Classic version**.
+
 ### Create a shared bare repo
 
 1. Create a new directory named *Shared.git* to hold the bare repo:

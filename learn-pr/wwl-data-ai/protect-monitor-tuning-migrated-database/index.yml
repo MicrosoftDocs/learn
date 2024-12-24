@@ -1,24 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.protecting-monitoring-tuning-migrated-database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Protect, monitor, and tune a migrated database
   description: "Protect, monitor, and tune a migrated database"
-  ms.date: 09/26/2022
+  ms.date: 10/14/2024
   author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jupadrao
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Protect, monitor, and tune a migrated database
 summary: In this module, you'll learn how to use the Azure features available for protect, monitor, and tune a database.
 abstract: |
   By the end of this module, you'll be able to:
-  - Protect a database running in Azure Database for MySQL and Azure Database for PostgreSQL.
-  - Monitor and tune a database running in Azure Database for MySQL and Azure Database for PostgreSQL.
-  - Trace and track activity for a database running in Azure Database for MySQL and Azure Database for PostgreSQL.
-  - Configure read replicas for a database running in Azure Database for MySQL and Azure Database for PostgreSQL.
+
+  -   Protect a database running in Azure Database for MySQL and Azure Database for PostgreSQL.
+
+  -   Monitor and tune a database running in Azure Database for MySQL and Azure Database for PostgreSQL.
+
+  -   Trace and track activity for a database running in Azure Database for MySQL and Azure Database for PostgreSQL.
+
+  -   Configure read replicas for a database running in Azure Database for MySQL and Azure Database for PostgreSQL.
 prerequisites: |
-  - Knowledge of MySQL or PostgreSQL database management systems, including application development for these systems, administration, backup, and recovery techniques, such as import/export and backup/restore.
-  - Knowledge of Azure fundamental concepts, and experience using the Azure portal.
+  -   Knowledge of MySQL or PostgreSQL database management systems, including application development for these systems, administration, backup, and recovery techniques, such as import/export and backup/restore.
+
+  -   Knowledge of Azure fundamental concepts, and experience using the Azure portal.
 iconUrl: /training/achievements/protecting-monitoring-and-tuning-a-migrated-database.svg
 levels:
 - intermediate

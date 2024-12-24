@@ -1,6 +1,3 @@
-
-
-
 When you’re ready, you can publish a pipeline and use a trigger to run it. Triggers can be defined to run the pipeline:
 
 - Immediately

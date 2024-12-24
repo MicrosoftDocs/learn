@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-finance.2b-opportunities-ai-financial-services-organizations
+title: Opportunities for AI in financial services organizations
+metadata:
+  title: Opportunities for AI in financial services organizations
+  description: "Opportunities for AI in financial services organizations"
+  ms.date: 08/26/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/2b-opportunities-ai-financial-services-organizations.md)]
