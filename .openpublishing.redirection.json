@@ -36297,6 +36297,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/2-determine-uses.md",
       "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-load-balancer/4-implement-internal.md",
+      "redirect_url": "/training/modules/intro-to-azure-load-balancer/",
+      "redirect_document_id": false
     }
   ]
 }
