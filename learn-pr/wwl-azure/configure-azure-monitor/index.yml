@@ -34,6 +34,5 @@ products:
 subjects:
 - site-reliability-engineering
 units:
-- learn.wwl.configure-azure-monitor.summary-resources
 badge:
   uid: learn.wwl.configure-azure-monitor.badge
