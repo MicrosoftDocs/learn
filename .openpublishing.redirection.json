@@ -36432,6 +36432,11 @@
       "source_path": "learn-pr/wwl-azure/configure-log-analytics/3-create-workspace.md",
       "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/2-determine-uses.md",
+      "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
+      "redirect_document_id": false
     }
   ]
 }
