@@ -39,7 +39,6 @@ products:
 units:
 - learn.wwl.configure-log-analytics.introduction
 - learn.wwl.configure-log-analytics.determine-uses
-- learn.wwl.configure-log-analytics.create-workspace
 - learn.wwl.configure-log-analytics.visualize-data
 - learn.wwl.configure-log-analytics.structure-queries
 - learn.wwl.configure-log-analytics.knowledge-check
