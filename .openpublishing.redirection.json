@@ -36422,6 +36422,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-monitor/10-summary-resources.md",
       "redirect_url": "/training/modules/intro-to-azure-monitor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/index.md",
+      "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
+      "redirect_document_id": false
     }
   ]
 }
