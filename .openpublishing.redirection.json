@@ -36487,6 +36487,11 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machines/5-determine-virtual-machine-storage.md",
       "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/1-introduction.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
     }
   ]
 }
