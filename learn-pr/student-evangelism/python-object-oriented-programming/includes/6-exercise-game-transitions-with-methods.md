@@ -17,6 +17,7 @@ This time, you'll focus on the `Behavior` column and populate it with methods th
 Here's your code so far. Let's extend it in the following steps:
 
 1. You should have a file `rock-paper-scissor.py`. If not, then take the following steps:
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
 1. Create the file `rock-paper-scissor` and open the editor:
 
    ```bash

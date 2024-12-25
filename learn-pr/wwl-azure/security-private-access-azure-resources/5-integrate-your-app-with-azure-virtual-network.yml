@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-private-access-azure-resources.integrate-your-app-with-azure-virtual-network
+title: Plan and implement network integration for Azure App Service and Azure Functions
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Plan and implement network integration for Azure App Service and Azure Functions
+  description: "Plan and implement network integration for Azure App Service and Azure Functions"
+  ms.date: 10/03/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-integrate-your-app-with-azure-virtual-network.md)]

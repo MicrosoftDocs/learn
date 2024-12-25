@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.run-iot-edge-device-restricted-network-offline.setup-parent-child-devices
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set up an IoT Edge parent with multiple child IoT devices
   description: Set up an IoT Edge parent with multiple child IoT devices
   ms.date: 05/01/2020
   author: abartolo
   ms.author: abartolo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -17,3 +18,4 @@ title: Set up an IoT Edge parent with multiple child IoT devices
 durationInMinutes: 15
 content: |
   [!include[](includes/3-setup-parent-child-devices.md)]
+

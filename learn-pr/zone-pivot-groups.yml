@@ -308,6 +308,22 @@ groups:
       title: Bash
     - id: vscode
       title: Visual Studio Code
+- id: vscode-shell
+  title: IDE or shell
+  prompt: Choose an Integrated Development Environment (IDE) or the shell
+  pivots:
+    - id: vscode
+      title: Visual Studio Code
+    - id: shell
+      title: .NET CLI
+- id: dev-env-spring-jbosseap
+  title: Java framework
+  prompt: Choose your Java framework
+  pivots:
+    - id: spring
+      title: Spring
+    - id: jbosseap
+      title: JBoss EAP
 - id: dev-env-csharp-java-cli
   title: Development environment
   prompt: Choose your development environment
@@ -416,3 +432,47 @@ groups:
       title: Local development environment using a Microsoft-hosted agent
     - id: github-codespaces-agent
       title: GitHub Codespaces development environment using a self-hosted agent
+- id: dev-m365-tenant
+  title: Development environment
+  prompt: Choose your development environment
+  pivots:
+    - id: m365
+      title: Microsoft 365 tenant
+    - id: devproxy
+      title: Simulated (Dev Proxy)
+- id: azure-resource-interaction
+  title: Azure interaction options
+  prompt: Choose how you interact with resources on Azure
+  pivots:
+    - id: azure-portal
+      title: Azure portal
+    - id: azure-cli
+      title: Azure CLI (local)
+    - id: vs-code
+      title: Visual Studio Code
+- id: microsoft-entra-external-identities-configuration-options
+  title: Configuration options
+  prompt: Select a configuration option
+  pivots:
+    - id: microsoft-entra-admin-center
+      title: Microsoft Entra admin center
+    - id: microsoft-graph-api
+      title: Microsoft Graph API
+- id: sql-database
+  title: SQL database options
+  prompt: Choose the SQL database platform you want to use
+  pivots:
+    - id: azure-sql-database
+      title: Microsoft Azure SQL Database
+    - id: sql-server
+      title: Microsoft SQL Server
+    - id: fabric-database
+      title: Microsoft Fabric
+- id: maven-azure-cli
+  title: Deployment options
+  prompt: Select a deployment option
+  pivots:
+    - id: maven-plugin
+      title: Maven Plugin for Azure App Service
+    - id: azure-cli
+      title: Azure CLI

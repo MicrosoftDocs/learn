@@ -1,14 +1,14 @@
-You've identified the development resources that are in the production resource group, and you've checked that they'll move successfully. Now, you want to move your development resources from the production resource group into the dedicated development resource group. You can use the Azure portal to do so.
+You identified the development resources that are in the production resource group, and you checked that they can move successfully. Now, you want to move your development resources from the production resource group into the dedicated development resource group. You can use the Azure portal to do so.
 
 ## Create a resource group for development resources
 
-First you create the development resource group where you'll move your resources.
+First you create the development resource group where you want to move your resources.
 
 1. Return to the Azure portal.
 
-1. Under **Azure services**, select **Resource groups**.  The **Resource groups** pane appears.
+1. On the home page, select **Create a resource**. Search for and select **Resource group**. The **Resource group** pane appears.
 
-1. On the top menu bar, select **Create**. The **Create a resource group** pane appears.
+1. Select **Create**. The **Create a resource group** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -35,7 +35,7 @@ First you create the development resource group where you'll move your resources
 
 ## Move development resources to the new group
 
-Now that you've created a devgroup resource group, you can move your development resources into it.
+Now that a *devgroup* resource group is created, you can move your development resources into it.
 
 1. At the top of the Azure portal, search for and select **Tags**. The **Tags** pane appears.
 
@@ -51,23 +51,23 @@ Now that you've created a devgroup resource group, you can move your development
 
 1. On the **Source + target** tab, under **Target**, for the **Resource group**, from the dropdown list, select **devgroup**.
 
-1. Select **Next**. On the **Resources to move** tab, the resources will be validated as to whether they can be moved. The validation might take a few minutes.
+1. Select **Next**. On the **Resources to move** tab, the resources are validated as to whether they can be moved. The validation might take a few minutes.
 
 1. After validation succeeds, select **Next**.
 
 1. On the **Review** tab, check the disclaimer box, and then select **Move**.
 
-    The move might take a few minutes. Wait for the notification that your resource has been moved. The notification will appear in the top-right hand section of the portal.
+    The move might take a few minutes. Wait for the "Moving resources complete" notification that confirms your resource is scucessfuly moved. The notification appears in the top-right hand section of the portal.
 
 1. Repeat this process again to move the other storage account.
 
-To confirm that your move operations have succeeded:
+To confirm that your move operations are successful:
 
 1. On the Azure portal home page, under **Azure services**, select **Resource groups**. The **Resource groups** pane appears.
 
 1. Select **devgroup**. The *devgroup* Resource group pane appears.
 
-    You'll notice that the development resources have been moved to the devgroup resource group.
+    Notice that the development resources are now moved to the *devgroup* resource group.
 
     ![Screenshot that shows resources moved.](../media/7-exercise-resources-moved.png)
 

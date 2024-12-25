@@ -1,0 +1,312 @@
+{
+    "redirections": [
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/security-copilot-describe-core-features/5-describe-embedded-experience.md",
+        "redirect_url": "/training/modules/security-copilot-embedded-experiences/2-copilot-for-defender",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/1-introduction.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/introduction",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/2-apply-sensitivity-labels-to-microsoft-teams.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/apply-sensitivity-labels-to-microsoft-365-services",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/3-plan-on-premises-labeling.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/plan-on-premises-labeling",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/4-configure-on-premises-labeling-for-unified-labeling-scanner.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/configure-on-premises-labeling-for-unified-labeling-scanner",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/5-apply-protections-restrictions-to-email-files.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/apply-protections-restrictions-to-email-files",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/6-monitor-label-usage-using-label-analytics.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/monitor-label-usage-using-label-analytics",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/7-knowledge-check.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/knowledge-check",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/8-summary-resources.md",
+        "redirect_url": "/training/modules/apply-manage-sensitivity-labels/summary-resources",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/monitor-label-usage-using-label-analytics.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/apply-manage-sensitivity-labels/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/configure-on-premises-labeling-for-unified-labeling-scanner.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/apply-manage-sensitivity-labels/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/plan-on-premises-labeling.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/apply-manage-sensitivity-labels/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/apply-manage-sensitivity-labels/apply-protections-restrictions-to-email-files.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/apply-manage-sensitivity-labels/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/1-introduction.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/introduction",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/3-explain-retention-sharepoint-online-onedrive-for-business.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-sharepoint-online-onedrive",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/4-explain-retention-teams.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-teams",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/4a-explain-retention-microsoft-yammer.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-viva-engage",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/2-explain-retention-exchange-online.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-exchange-online",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/5-recover-content-microsoft-teams-sharepoint-onedrive.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-exchange-online",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/6-implement-retention-policies-tags-microsoft-exchange.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/explain-retention-exchange-online",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/7-apply-mailbox-holds-microsoft-exchange.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/apply-mailbox-holds-microsoft-exchange",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/8-recover-content-microsoft-exchange.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/apply-mailbox-holds-microsoft-exchange",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/9-knowledge-check.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/knowledge-check",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/manage-data-retention-microsoft-365/10-summary-resources.md",
+        "redirect_url": "/training/modules/manage-data-retention-microsoft-365/summary-resources",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-purview-risk-compliance-governance/9-knowledge-check.md",
+        "redirect_url": "/training/modules/describe-purview-risk-compliance-governance/8-knowledge-check",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-purview-risk-compliance-governance/10-summary.md",
+        "redirect_url": "/training/modules/describe-purview-risk-compliance-governance/9-summary",
+        "redirect_document_id": false
+      },           
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-purview-risk-compliance-governance/8-describe-data-governance-solutions.md",
+        "redirect_url": "/training/modules/describe-purview-risk-compliance-governance/8-knowledge-check",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/index.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/1-introduction.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/",
+        "redirect_document_id": false
+      }, 
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/2-describe-ediscovery-solutions.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/3-describe-ediscovery/",
+        "redirect_document_id": false
+      }, 
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/3-describe-audit-solutions.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/2-describe-audit/",
+        "redirect_document_id": false
+      }, 
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/4-knowledge-check.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/5-summary-resources.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/index.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/",
+        "redirect_document_id": false
+      }, 
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/1-introduction.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/",
+        "redirect_document_id": false
+      }, 
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/2-management-solution.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/5-describe-insider-risk-management/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/3-describe-communication-compliance.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/5-describe-communication-compliance/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/4-knowledge-check.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/5-summary-resources.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/achievements/learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.badge.yml",
+        "redirect_url": "/training/modules/describe-purview-risk-compliance-governance/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/achievements/learn.wwl.describe-insider-risk-capabilities-microsoft-365.badge.yml",
+        "redirect_url": "/training/modules/describe-purview-data-solutions/",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/index.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/1-introduction.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/2-describe-compliance-portal.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/",
+        "redirect_document_id": false
+      },      
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/3-manager.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/4-describe-compliance-manager/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/4-describe-compliance-score.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/4-describe-compliance-manager/",
+        "redirect_document_id": false
+      },         
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/5-knowledge-check.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/",
+        "redirect_document_id": false
+      },        
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft-365/6-summary-resources.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/index.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/1-introduction.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/2-know-your-data-protect-your-data-govern-your-data.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/3-describe-data-classification-capabilities-compliance-portal.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/2-identify-sensitive-data?tabs=activity-explorer/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/4-describe-sensitivity-labels-policies.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/3-describe-sensitivity-labels-policies/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/5-describe-data-loss-prevention.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/4-describe-data-loss-prevention/",
+        "redirect_document_id": false
+      },            
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/6-describe-retention-polices-retention-labels.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/6-describe-data-lifecycle-management/",
+        "redirect_document_id": false
+      },  
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/7-describe-records-management.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-risk-compliance-governance/7-describe-records-management/",
+        "redirect_document_id": false
+      },  
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/7a-describe-purview-governance.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-governance/",
+        "redirect_document_id": false
+      },  
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/8-knowledge-check.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/",
+        "redirect_document_id": false
+      },  
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-information-protection-governance-capabilities-microsoft-365/9-summary-resources.md",
+        "redirect_url": "https://learn.microsoft.com/training/modules/describe-purview-data-solutions/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/achievements/learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.badge.yml",
+        "redirect_url": "/training/modules/describe-purview-data-solutions/",
+        "redirect_document_id": false
+      },
+
+      {
+        "source_path_from_root": "/learn-pr/achievements/learn.wwl.describe-compliance-management-capabilities-microsoft-365.badge.yml",
+        "redirect_url": "/training/modules/describe-purview-risk-compliance-governance/",
+        "redirect_document_id": false
+      } 
+    ]
+}

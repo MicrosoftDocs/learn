@@ -2,9 +2,9 @@ Azure is a cloud services platform that government agencies can use to build var
 
 ## Learning objectives
 
-In this module, you will learn to:
+In this module, you learn to:
 
-* Explain the basic concept and benefits of multi-tenant cloud services.
+* Explain the basic concept and benefits of multitenant cloud services.
 * Describe how Azure helps customers follow data security requirements in the public sector.
 * Identify scenarios in which Azure could provide solutions for data in the public sector.
 

@@ -1,16 +1,17 @@
+
 Azure Monitor can give you insights into how well your search service is being used and performing. You can also receive alerts to proactively notify you of issues.
 
-Here, you'll explore all the monitoring options available for Azure Cognitive Search. Then you'll learn about useful alerts you can create to manage your search solution.
+Here, you'll explore all the monitoring options available for Azure AI Search. Then you'll learn about useful alerts you can create to manage your search solution.
 
-## Monitor Azure Cognitive Search in Azure Monitor
+## Monitor Azure AI Search in Azure Monitor
 
-When you create your Azure Cognitive Search service, without you doing any other setup, you can see your current search latency, queries per second, and the percentage of throttled queries. This data can be viewed on the **Monitoring** tab of the **Overview** page.
+When you create your Azure AI Search service, without you doing any other setup, you can see your current search latency, queries per second, and the percentage of throttled queries. This data can be viewed on the **Monitoring** tab of the **Overview** page.
 
-:::image type="content" source="../media/azure-monitor-cognitive-search.png" alt-text="A screenshot of the monitor tab in Azure Cognitive Search." lightbox="../media/azure-monitor-cognitive-search.png":::
+:::image type="content" source="../media/azure-monitor-cognitive-search-small.png" alt-text="A screenshot of the monitor tab in Azure AI Search." lightbox="../media/azure-monitor-cognitive-search.png":::
 
 You can also check what resources your search solution is using on the **Usage** tab.
 
-:::image type="content" source="../media/usage-tab-cognitive-services.png" alt-text="A screenshot of the usage tab on the overview page of Azure Cognitive Search service." lightbox="../media/usage-tab-cognitive-services.png":::
+:::image type="content" source="../media/usage-tab-cognitive-services-small.png" alt-text="A screenshot of the usage tab on the overview page of Azure AI Search service." lightbox="../media/usage-tab-cognitive-services.png":::
 
 This basic information is a good start to monitoring, but you can go further with some more configuration. If you're familiar with supporting other resources on the Azure platform, you'll know that Azure Monitor can be used for all your Azure resources.
 
@@ -26,7 +27,7 @@ Once you have started using Log Analytics, you get access to performance and dia
 
 Creating charts is a powerful way to view how your search service is performing. Under the **Monitoring** section of your search service, select **Metrics**.
 
-:::image type="content" source="../media/cognitive-search-metrics.png" alt-text="A screenshot of the metrics page." lightbox="../media/cognitive-search-metrics.png":::
+:::image type="content" source="../media/cognitive-search-metrics-small.png" alt-text="A screenshot of the metrics page." lightbox="../media/cognitive-search-metrics.png":::
 
 Now select to add any of these captured metrics:
 
@@ -40,9 +41,9 @@ For example, you could plot search latency against the percentage of throttled q
 
 ### Write Kusto queries against your search solutions logs
 
-Log Analytics allows you to write any Kusto query against captured log data. The easiest way to run these queries is by selecting **Logs** under the Monitor section. **Logs** opens Log Analytics with the quest window automatically scoped to your Azure Cognitive Search solution.
+Log Analytics allows you to write any Kusto query against captured log data. The easiest way to run these queries is by selecting **Logs** under the Monitor section. **Logs** opens Log Analytics with the quest window automatically scoped to your Azure AI Search solution.
 
-:::image type="content" source="../media/azure-diagnostic-log-analytics-query.png" alt-text="A screenshot of a Log Analytics Kusto query against the AzureDiagnostic table." lightbox="../media/azure-diagnostic-log-analytics-query.png":::
+:::image type="content" source="../media/azure-diagnostic-log-analytics-query-small.png" alt-text="A screenshot of a Log Analytics Kusto query against the AzureDiagnostic table." lightbox="../media/azure-diagnostic-log-analytics-query.png":::
 
 
 The above query lets you see a list of recent operations and how many times they happened.
@@ -175,7 +176,7 @@ The following are useful queries to help you monitor and diagnose issues with yo
 
 Alerts can let you proactively manage your search service. Here are some commonly used alerts you should consider creating:
 
-:::image type="content" source="../media/cogntive-search-alerts.png" alt-text="A screenshot of all the metric you can create alerts for." lightbox="../media/cogntive-search-alerts.png":::
+:::image type="content" source="../media/cogntive-search-alerts-new-small.png" alt-text="A screenshot of all the metric you can create alerts for." lightbox="../media/cogntive-search-alerts-new.png":::
 
 - **Search Latency** using the metric signal, you can specify what latency triggers the alert in seconds
 - **Throttled search percentage** using the metric signal, you can specify the percentage

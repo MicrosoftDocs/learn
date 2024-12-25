@@ -2,10 +2,10 @@ As part of planning your server upgrade and migration process, Contoso should al
 
 There are certain licensing characteristics based on the Windows Server edition you decide to deploy. These are discussed in the following table.
 
-| Windows Server 2019 edition | Licensing characteristics                                    |
+| Windows Server 2025 edition | Licensing characteristics                                    |
 | --------------------------- | ------------------------------------------------------------ |
 | Windows Server Essentials   | Licensing for Windows Server Essentials is per server. It includes Client Access Licenses for 25 users and is limited to 2 sockets. You can't purchase licensing for more than this limit. |
-| Windows Server Standard     | The licensing model for Windows Server Standard changed with Windows Server 2016 and continues through the 2019 version. Licensing for Windows Server Standard is now based on the number of cores, not processors. |
+| Windows Server Standard     | Licensing for Windows Server Standard is based on the number of cores, not processors. |
 | Windows Server Datacenter   | As for Windows Server standard, licensing is based on the number of cores. |
 
 > [!NOTE]

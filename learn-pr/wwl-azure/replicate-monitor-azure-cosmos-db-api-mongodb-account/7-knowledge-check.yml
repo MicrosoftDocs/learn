@@ -2,13 +2,14 @@
 uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/12/2022
+  ms.date: 10/15/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -18,32 +19,33 @@ quiz:
     choices:
     - content: "Because the query exceeded the memory limit."
       isCorrect: false
-      explanation: "Incorrect. Exceeding memory limits is defined by exception 16501."
+      explanation: "Incorrect. Exception 16501 occurs when the memory limits are exceeded."
     - content: "Because the query tried to consume more request than the provisioned rate."
       isCorrect: true
-      explanation: "Correct. Exception 16500 occurs when the total number of request units consumed is more than the provisioned request-unit rate for the collection and has been throttled."
+      explanation: "Correct. Exception 16500 occurs when the request-unit rate is throttled because the total number of request units consumed is more than the provisioned request-unit rate for the collection."
     - content: "Because the query tried to insert a duplicate key."
       isCorrect: false
       explanation: "Incorrect. Trying to insert a duplicate shard key would raise exception 11000."
-  - content: "Where would the Azure diagnostic logs be forwarded to, if KQL will be used to query the logs?"
+  - content: "Where would the Azure diagnostic logs be forwarded to, if KQL (Kusto Query Language) is used to query the logs?"
     choices:
     - content: "Stream to an event hub"
       isCorrect: false
-      explanation: "Incorrect. Data is sent to an Event Hubs as it reaches Azure Monitor and exported to destinations located in workspace region. The stream itself is not directly queried using KQL."
+      explanation: "Incorrect. Data is sent to an Event Hubs as it reaches Azure Monitor and exported to destinations located in workspace region. The stream itself isn't directly queried using KQL (Kusto Query Language)."
     - content: "Archive to a storage account"
       isCorrect: false
-      explanation: "Incorrect. The format of blobs in Storage Account is in JSON lines, where each record is delimited by a newline, with no outer records array and no commas between JSON records. These blobs are not queried using KQL."
+      explanation: "Incorrect. The format of blobs in Storage Account is in JSON lines, where a new line delimits each record, with no outer records array and no commas between JSON records. These blobs aren't queried using KQL (Kusto Query Language)."
     - content: "Sent to Log Analytics workspace"
       isCorrect: true
-      explanation: "Correct. The diagnostic logs will be written into tables that can then be queried using KQL."
+      explanation: "Correct. The diagnostic logs are written into tables that can then be queried using KQL (Kusto Query Language)."
   - content: "Which conflict resolution policy does the Azure Cosmos DB for MongoDB use?"
     choices:
     - content: "First write wins."
       isCorrect: false
-      explanation: "Incorrect. There's no such policy, the default policy would be Last Write Wins (LWW)."
+      explanation: "Incorrect. There's no such policy. The default policy would be Last Write Wins (LWW)."
     - content: "Custom numerical property."
       isCorrect: false
-      explanation: "Incorrect. This policy is only available for the SQL API."
+      explanation: "Incorrect. This policy is only available for Azure Cosmos DB for NoSQL."
     - content: "Last Write Wins."
       isCorrect: true
-      explanation: "Correct. This policy uses the timestamp (_ts) to determine which document wrote last. In simple terms, if multiple documents are in conflict, the document with the largest value for the _ts property will win."
+      explanation: "Correct. This policy uses the timestamp (_ts) to determine which document wrote last. In simple terms, if multiple documents are in conflict, the document with the largest value for the _ts property wins."
+

@@ -26,5 +26,5 @@ Module 4 Demos
 - No demos for this module
 
 Module 4 Lab
- 
-- Lab 4.1: [Create a product assortment](https://github.com/MicrosoftLearning/MB-920T00A-Microsoft-Dynamics-365-Fundamentals-Finance-and-Operations-Apps/blob/master/Instructions/Labs/LAB%5BMB920%5D_M04_Lab1_Create_a_product_assortment.md)
+
+- No labs for this module

@@ -2,13 +2,14 @@
 uid: learn.wwl.use-system-catalogs-system-views-postgresql.exercise-investigate-metadata
 title: 'Exercise: Investigate metadata with system catalogs and system views'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Investigate metadata with system catalogs and system views'
   description: "Exercise: Investigate metadata with system catalogs and system views"
   ms.date: 09/29/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 25

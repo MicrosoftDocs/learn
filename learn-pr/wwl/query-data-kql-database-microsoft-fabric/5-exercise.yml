@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-data-kql-database-microsoft-fabric.exercise
+title: Exercise - Work with data in a Microsoft Fabric eventhouse
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Work with data in a Microsoft Fabric eventhouse
+  description: "Get practical experience with real-time data in Microsoft Fabric."
+  ms.date: 12/06/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 35
+content: |
+  [!include[](includes/5-exercise.md)]

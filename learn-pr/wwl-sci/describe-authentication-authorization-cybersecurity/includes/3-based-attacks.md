@@ -1,4 +1,4 @@
-Authentication attacks occur when someone tries to steal another person's credentials. They can then pretend to be that person.  Because an objective of these types of attacks is to impersonate a legitimate user, they can also often be referred to as identity attacks. Common attacks include, but are not limited to:
+Authentication attacks occur when someone tries to steal another person's credentials. They can then pretend to be that person. Because an objective of these types of attacks is to impersonate a legitimate user, they can also often be referred to as identity attacks. Common attacks include, but are not limited to:
 
 - Brute force attack
 - Dictionary attack
@@ -32,7 +32,7 @@ Most authentication attacks involve exploitation of computers or an attempt to t
 
 A number of social engineering techniques can be used for authentication theft, including:
 
-- **Phishing** occurs when an attacker sends a seemingly legitimate email with the objective of having a user reveal their authentication credentials. For example, an email might appear to be from the user’s bank. A link opens to what looks like the bank’s login page, but is actually a fake site. When a user logs in at the fake site, their credentials become available to the attacker. There are several variations of phishing, including spear-phishing, which targets specific organizations, businesses, or individuals.
+- **Phishing** occurs when an attacker sends a seemingly legitimate email with the objective of having a user reveal their authentication credentials. For example, an email might appear to be from the user’s bank. A link opens to what looks like the bank’s sign-in page, but is actually a fake site. When a user logs in at the fake site, their credentials become available to the attacker. There are several variations of phishing, including spear-phishing, which targets specific organizations, businesses, or individuals.
 - **Pretexting** is a method where an attacker gains the victim's trust and convinces them to divulge secure information. This can then be used to steal their identity. For example, a hacker might call you, pretending to be from the bank, and ask for your password to verify your identity. Another approach uses social media. You might get asked to complete a survey or a quiz, where they asked seemingly random and innocent questions that get you to reveal personal facts, or you'll get something that looks fun, like making up the name for your fantasy pop-star band by using the name of your first pet and the place you were born.
 - **Baiting** is a form of attack where the criminal offers a fake reward or prize to encourage the victim to divulge secure information.
 

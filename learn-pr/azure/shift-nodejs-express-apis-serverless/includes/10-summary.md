@@ -1,34 +1,34 @@
 In this module, you refactored your Node.js Express application to Azure Functions. Now you can think less about servers, because you're using serverless!
 
-Node.js and Express are incredibly powerful and often used for serving API endpoints. Now with serverless architecture you can shift your APIs to Azure Functions without worrying about server setup or maintenance. You can also possibly reduce your cost of an always-on server by replacing the Node.js Express server with an Azure Functions app. For all your efforts, you end up with an API that scales well.
+Node.js and Express are powerful solutions for serving API endpoints. With Functions, you can shift your APIs to serverless architecture and not worry about server setup or maintenance.
 
-Ultimately, with Azure Functions you focus on the code, not the servers.
+You might also be able to reduce the cost of an always-on server and improve scalability by replacing the Node.js Express server with the Functions app. Ultimately, with Functions you focus on the code, not the servers.
 
 > [!NOTE]
-> If you want to deploy the Azure Functions app to the cloud, you can [deploy it by following this tutorial](/azure/developer/javascript/how-to/with-web-app/azure-function-resource-group-management/deploy-azure-function-with-visual-studio-code). All you need is an [Azure account](https://azure.microsoft.com/free/) and then use the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code to deploy it.
+> To deploy the Functions app to the cloud, see the tutorial [Manage Azure resource groups with TypeScript Function API](/azure/developer/javascript/how-to/with-web-app/azure-function-resource-group-management/deploy-azure-function-with-visual-studio-code). You can use a [free Azure account](https://azure.microsoft.com/free/) and the Azure Functions extension for Visual Studio Code to deploy the application.
 
-The solution for the [sample project is on GitHub in the _solution_ branch](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless/tree/solution). The instructions on how to get started appear in the README file. You can explore running the Express app or the Azure Functions app to get a sense of the differences. Then try to apply this same shift to your code.
+The solution for the current sample project is in the [solution branch](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless/tree/solution) of the GitHub project. Follow the instructions in the README file to get started. You can explore running the Express app or the Functions app to get a sense of the differences. Then try to apply this same shift to your code.
 
-## Additional resources
+## Other resources
 
-Here are several resources where you can learn more about the Azure Functions, Visual Studio Code, and other concepts covered in this module.
+To learn more about Functions, Visual Studio Code, and debugging, see the following resources:
 
 ### Visual Studio Code
 
-- Get [Visual Studio Code](https://code.visualstudio.com)
-- Get the [Visual Studio Code Extension for Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
-- Get the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
+- Get [Visual Studio Code](https://code.visualstudio.com).
+- Get the [Visual Studio Code Extension for Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack).
+- Get the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions).
 
-### Azure Functions
+### Functions
 
-- Learn about the Azure Functions [local.settings.json](/azure/azure-functions/functions-run-local#local-settings-file) file
-- Learn how to [Deploy to Azure Using Azure Functions](/azure/developer/javascript/how-to/with-web-app/azure-function-resource-group-management/deploy-azure-function-with-visual-studio-code)
-- Learn about [Azure Functions TypeScript Support](https://azure.microsoft.com/blog/improving-the-typescript-support-in-azure-functions/)
-- Sign up for a [Free Trial of Azure](https://azure.microsoft.com/free/)
+- Learn about the Functions [local.settings.json](/azure/azure-functions/functions-run-local#local-settings-file) file.
+- [Deploy a Functions app to Azure](/azure/developer/javascript/how-to/with-web-app/azure-function-resource-group-management?branch=main#5-deploy-resource-manager-function-app).
+- Learn about [Functions TypeScript support](https://azure.microsoft.com/blog/improving-the-typescript-support-in-azure-functions/).
+- Sign up for an [Azure free trial](https://azure.microsoft.com/free/).
 
-### Debugging Resources
+### Debugging resources
 
-- [Debugging Angular.js in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/angular-tutorial)
-- [Debugging React.js in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
-- [Debugging Vue.js in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial)
-- [Tasks in Visual Studio Code](https://code.visualstudio.com/Docs/editor/tasks)
+- [Debug Angular.js in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/angular-tutorial).
+- [Debug React.js in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial).
+- [Debug Vue.js in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial).
+- [Integrate with external tools via Tasks in Visual Studio Code](https://code.visualstudio.com/Docs/editor/tasks).

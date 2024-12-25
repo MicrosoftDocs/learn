@@ -14,8 +14,8 @@ It's difficult to make sense of unordered data. Let's make it a bit easier to un
     | project State, EventType, DamageProperty
     | sort by DamageProperty desc
     ```
-    
-1. You should get results that look like the following image: 
+
+1. You should get results that look like the following image:
 
     :::image type="content" source="../media/6-sort-1.png" alt-text="Screenshot of query results for the sort operator.":::
 
@@ -40,7 +40,7 @@ Each region has unique weather patterns, so now you want to know which events in
 
     :::image type="content" source="../media/6-sort-2.png" alt-text="Screenshot of query results for two sort operators.":::
 
-1. Notice that now you've gotten a table with the same rows as the previous query, but sorted in a different order. Here, we first sort by the state name, starting with Alabama. Within results from the state of Alabama, the property-damage values are sorted in descending order.
+1. Notice that now you have a table with the same rows as the previous query, but sorted in a different order. Here, we first sort by the state name, starting with Alabama. Within results from the state of Alabama, the property-damage values are sorted in descending order.
 
 ## Use the `top` operator
 

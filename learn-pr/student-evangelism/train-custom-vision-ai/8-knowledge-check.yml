@@ -1,13 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.train-custom-vision-ai.8-knowledge-check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 03/10/2021
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/10/2021
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Knowledge check
 durationInMinutes: 4
@@ -57,3 +60,4 @@ quiz:
     - content: "East US 2"
       isCorrect: false
       explanation: "Incorrect. You could choose East US 2, but you don't have to."
+

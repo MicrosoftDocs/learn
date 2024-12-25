@@ -1,5 +1,3 @@
-
-
 In this module, you've learned how to:
 
 - Log models with MLflow.

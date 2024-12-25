@@ -2,13 +2,14 @@
 uid: learn.wwl.understand-concurrency-mysql.understand-lock
 title: Understand locking
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand locking
   description: "Understand locking"
   ms.date: 11/09/2022
   author: wwlpublish
   ms.author: caroline
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

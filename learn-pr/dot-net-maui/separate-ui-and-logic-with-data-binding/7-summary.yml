@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.7-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 02/15/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](./includes/7-summary.md)]

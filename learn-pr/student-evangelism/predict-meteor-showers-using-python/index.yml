@@ -6,8 +6,8 @@ metadata:
   ms.date: 04/20/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: vs-code
   ms.custom: team=nextgen, py-fresh-zinc
 title: Predict meteor showers by using Python and Visual Studio Code
 summary: Learn how to use concepts from machine learning to predict the occurrence of meteor showers (or Moon Goddess tears).
@@ -32,7 +32,6 @@ roles:
 products:
 - vs-code
 subjects:
-- development-tools
 - data-analytics
 units:
 - learn.student-evangelism.predict-meteor-showers-using-python.1-introduction

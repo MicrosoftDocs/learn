@@ -4,13 +4,12 @@ title: Implement Site Recovery from on-premises site to Azure
 metadata:
   title: Implement Site Recovery from on-premises site to Azure
   description: "Implement Site Recovery from on-premises site to Azure"
-  ms.date: 07/29/2022
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/7-implement-site-recovery-from-premises-site-to-azure.md)]

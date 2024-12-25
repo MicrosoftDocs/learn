@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-langstons-ant.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the main benefit of using interfaces as types in C#?"
+    choices:
+    - content: "It allows you to create a new instance of an interface."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces can't be instantiated, they can only be implemented."
+    - content: "It allows objects of different types to be treated uniformly."
+      isCorrect: true
+      explanation: "Correct. Using interfaces as types allows objects of different types to be treated uniformly, promoting flexibility in your code."
+    - content: "It allows you to create tightly coupled code."
+      isCorrect: false
+      explanation: "Incorrect. Using interfaces as a type promotes loosely coupled code."
+  - content: "Which keyword in C# is used to check if an object is compatible with a certain interface?"
+    choices:
+    - content: "cast"
+      isCorrect: false
+      explanation: "Incorrect. The cast keyword is used to convert an object to a different type."
+    - content: "new"
+      isCorrect: false
+      explanation: "Incorrect. The new keyword is used to create a new instance of a class."
+    - content: "is"
+      isCorrect: true
+      explanation: "Correct. The is keyword in C# is used to check if an object is compatible with a certain type or interface."
+  - content: "Which SOLID principle encourages classes to be open for extension but closed for modification?"
+    choices:
+    - content: "Single Responsibility Principle (SRP)"
+      isCorrect: false
+      explanation: "Incorrect. The Single Responsibility Principle states that a class should have only one reason to change."
+    - content: "Liskov Substitution Principle (LSP)"
+      isCorrect: false
+      explanation: "Incorrect. The Liskov Substitution Principle states that a derived class should be substitutable for its base class."
+    - content: "Open/Closed Principle (OCP)"
+      isCorrect: true
+      explanation: "Correct. The Open/Closed Principle states that a class should be open for extension but closed for modification."

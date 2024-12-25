@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.scale-compute-resources
 title: Scale compute resources in Azure Synapse Analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Scale compute resources in Azure Synapse Analytics
   description: "Scale compute resources in Azure Synapse Analytics"
-  ms.date: 03/21/2023
+  ms.date: 06/12/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

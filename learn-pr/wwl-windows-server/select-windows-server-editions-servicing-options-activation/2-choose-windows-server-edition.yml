@@ -4,11 +4,10 @@ title: Choose a Windows Server edition
 metadata:
   title: Choose a Windows Server edition
   description: "Choose a Windows Server edition"
-  ms.date: 02/26/2021
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 7
 content: |

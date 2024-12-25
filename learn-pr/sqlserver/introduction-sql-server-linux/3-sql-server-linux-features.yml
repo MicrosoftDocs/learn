@@ -4,12 +4,12 @@ title: SQL Server on Linux features
 metadata:
   title: SQL Server on Linux features
   description: In this unit, you will learn the features of SQL Server, so that you can decide whether it supports a specific workload.
-  ms.date: 06/11/2019
+  ms.date: 04/25/2023
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 7
 content: |
   [!include[](includes/3-sql-server-linux-features.md)]

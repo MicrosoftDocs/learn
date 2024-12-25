@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-your-ai-copilot-azure-kubernetes.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which tool is used to deploy a Kubernetes manifest file to an AKS cluster?"
+    choices:
+    - content: "`kubectl`"
+      isCorrect: true
+      explanation: "Correct. `kubectl` is the command-line tool for deploying Kubernetes manifests to manage resources in an AKS cluster."
+    - content: "AKS Manager"
+      isCorrect: false
+      explanation: "Incorrect. There is no tool called AKS Manager."
+    - content: "Docker CLI"
+      isCorrect: false
+      explanation: "Incorrect. Docker CLI is used to manage Docker containers, not Kubernetes resources."
+  - content: "What is the primary role of a Kubernetes master node in an AKS cluster?"
+    choices:
+    - content: "To run containerized applications in pods."
+      isCorrect: false
+      explanation: "Incorrect. The worker nodes, not the master node, run the applications in pods."
+    - content: "To manage the Kubernetes environment and coordinate worker nodes."
+      isCorrect: true
+      explanation: "Correct. The master node is responsible for managing the cluster, including scheduling workloads, managing the worker nodes, and coordinating Kubernetes resources."
+    - content: "To handle role-based access control (RBAC) within the cluster."
+      isCorrect: false
+      explanation: "Incorrect. While RBAC is an important feature of Kubernetes, it is managed by the Kubernetes API server, not solely by the master node."
+  - content: "What happens during a rolling update of an AKS deployment?"
+    choices:
+    - content: "All existing pods are stopped and replaced simultaneously."
+      isCorrect: false
+      explanation: "Incorrect. A rolling update gradually replaces old pods with new ones, ensuring no downtime."
+    - content: "The container image is deleted and rebuilt automatically."
+      isCorrect: false
+      explanation: "Incorrect. Kubernetes uses the new image in the update but does not automatically rebuild images. This must be done manually."
+    - content: "New pods are created and replace old ones gradually, minimizing downtime."
+      isCorrect: true
+      explanation: "Correct. During a rolling update, Kubernetes creates new pods to replace old ones in stages, maintaining service availability."

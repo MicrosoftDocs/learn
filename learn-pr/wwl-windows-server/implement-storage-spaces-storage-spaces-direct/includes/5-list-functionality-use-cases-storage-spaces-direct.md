@@ -1,8 +1,8 @@
-Storage Spaces simplify storage provisioning and management. However, when using shared storage, they are subject to scalability and performance limits that might not be acceptable in business critical. To accommodate more performance- and scale-demanding scenarios, you can leverage Storage Spaces Direct.
+Storage Spaces simplify storage provisioning and management. However, when using shared storage, they're subject to scalability and performance limits that might not be acceptable in business critical. To accommodate more performance- and scale-demanding scenarios, you can leverage Storage Spaces Direct.
 
 ## What is Storage Spaces Direct?
 
-Storage Spaces Direct is the evolution of Storage Spaces, first introduced in Windows Server 2012. It leverages Storage Spaces, Failover Clustering, Cluster Shared Volumes (CSVs), Software Storage Bus, and SMB 3.x to implement virtualized, highly-available shared storage by using local disks on each of the Storage Spaces Direct cluster nodes. It is suitable for hosting highly-available workloads, including virtual machines and SQL Server databases. Storage Spaces Direct supports both direct-attached storage (DAS) and JBODs. This eliminates the need for a shared storage fabric and enables you to use a mix of SATA disks to lower costs and NVMe devices to improve performance.
+Storage Spaces Direct is the evolution of Storage Spaces, first introduced in Windows Server 2012. It leverages Storage Spaces, Failover Clustering, Cluster Shared Volumes (CSVs), Software Storage Bus, and SMB 3.x to implement virtualized, highly-available shared storage by using local disks on each of the Storage Spaces Direct cluster nodes. It's suitable for hosting highly-available workloads, including virtual machines and SQL Server databases. Storage Spaces Direct supports both direct-attached storage (DAS) and JBODs. This eliminates the need for a shared storage fabric and enables you to use a mix of SATA disks to lower costs and NVMe devices to improve performance.
 
 > [!NOTE]
 > CSV is a clustered file system that enables cluster nodes to simultaneously read from and write to the same set of NTFS or ReFS volumes. This provides a balanced load distribution and increases failover speed by eliminating the need for drive ownership changes or dismounting and remounting volumes.
@@ -51,7 +51,7 @@ Windows Server offers a range of Storage Spaces Direct-related benefits, includi
 
 ## Storage Spaces Direct use cases
 
-When planning for Storage Spaces Direct, you need to determine whether you want to separate the virtualization and storage layers. This separation determines whether you will implement hyper-converged or disaggregated architecture.
+When planning for Storage Spaces Direct, you need to determine whether you want to separate the virtualization and storage layers. This separation determines whether you'll implement hyper-converged or disaggregated architecture.
 
 In the hyper-converged architecture, you configure a Hyper-V cluster with local storage on each Hyper-V server, and scale this solution by adding extra Hyper-V servers with extra storage. This is the optimal solution for small and medium-sized businesses.
 

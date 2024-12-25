@@ -1,4 +1,3 @@
-
 Windows Server 2022 and later includes a feature called Software Installation and Maintenance that Active Directory Domain Services (AD DS), Group Policy, and the Windows Installer service use to install, maintain, and remove software from your organization’s computers.
 
 #### Use Group Policy to manage the software lifecycle

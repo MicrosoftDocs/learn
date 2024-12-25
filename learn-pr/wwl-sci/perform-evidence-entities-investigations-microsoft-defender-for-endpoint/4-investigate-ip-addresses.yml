@@ -4,11 +4,10 @@ title: Investigate an IP address
 metadata:
   title: Investigate an IP address
   description: "Investigate an IP address"
-  ms.date: 02/20/2023
+  ms.date: 11/28/2023
   author: wwlpublish
-  ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.author: kelawson
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

@@ -31,7 +31,7 @@ For our scenario, we need to build the following configuration:
 
 1. Assign the network interfaces for the virtual machines.
 
-   - For each virtual machine server, assign its NIC to the appropriate application security group.
+   - For each virtual machine server, assign its network interface to the appropriate application security group.
 
 1. Create the network security group and security rules.
 

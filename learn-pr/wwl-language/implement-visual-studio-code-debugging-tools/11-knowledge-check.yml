@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/24/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
@@ -24,7 +25,7 @@ quiz:
     - content: "The WATCH section."
       isCorrect: false
       explanation: "Incorrect. The WATCH section is used to monitor variables or expressions."
-  - content: "Which of the following options can be used set a breakpoint in Visual Studio Code?"
+  - content: "Which of the following options can be used to set a breakpoint in Visual Studio Code?"
     choices:
     - content: "Left-click in the column to the left of a line number in the code editor."
       isCorrect: true

@@ -1,14 +1,16 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to the Altair 8800 and Azure Sphere
   description: Introduction to computing fundamentals with Altair 8800 and Azure Sphere.
   ms.date: 11/16/2021
   author: gloveboxes
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
+  ms.topic: module
   ms.custom: nextgen
+  ms.service: azure-sphere
 title: Introduction to the Altair 8800 and Azure Sphere
 summary: Introduction to computing fundamentals with Altair 8800 and Azure Sphere.
 abstract:  |
@@ -35,7 +37,7 @@ products:
 - azure
 - azure-iot-central
 - azure-sphere
-- azure-app-service-static
+- static-web-apps
 - azure-virtual-machines
 subjects:
 - cloud-computing
@@ -50,3 +52,4 @@ units:
 - learn.student-evangelism.altair-azure-sphere-introduction.summary
 badge:
   uid: learn.student-evangelism.altair-azure-sphere-introduction.badge
+

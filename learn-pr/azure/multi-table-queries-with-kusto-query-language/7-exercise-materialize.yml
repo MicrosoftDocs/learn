@@ -5,11 +5,10 @@ metadata:
   unitType: exercise
   title: Exercise - Optimize queries by using the materialize function
   description: In this exercise, you'll use the materialize function to optimize queries.
-  ms.date: 09/22/2022
+  ms.date: 01/03/2024
   author: shsagir
   ms.author: shsagir
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/7-exercise-materialize.md)]

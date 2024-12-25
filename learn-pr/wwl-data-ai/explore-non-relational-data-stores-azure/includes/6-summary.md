@@ -1,6 +1,6 @@
 Azure Cosmos DB provides a global-scale database solution for non-relational data.
 
-In this module, you'll learn how to:
+In this module, you learned how to:
 
 - Describe key features and capabilities of Azure Cosmos DB
 - Identify Azure Cosmos DB APIs

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-your-first-aspnet-core-web-app.exercise-make-code-changes
+title: Exercise - Make code changes
+metadata:
+  title: Exercise - Make code changes
+  description: Make code changes during local development.
+  ms.date: 9/9/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: unit
+  zone_pivot_groups: vscode-shell
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-exercise-make-code-changes.md)]

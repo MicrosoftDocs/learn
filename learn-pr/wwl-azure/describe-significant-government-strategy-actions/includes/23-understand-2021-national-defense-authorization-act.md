@@ -10,7 +10,7 @@
 
         On December 11, 2020, Congress passed and approved the [National Defense Authorization Act, or NDAA, for the government's fiscal year 2021](https://www.congress.gov/bill/116th-congress/house-bill/6395/text).
 
-        Throughout the Act is a repeated them that cybersecurity is vital to national defense. In fact, there are 314 uses of cybersecurity as it relates to the security of the nation.
+        Throughout the Act is a repeated them that cybersecurity is vital to America's defense. In fact, there are 314 uses of cybersecurity as it relates to the security of the nation.
 
         The Act includes provisions on the section of open systems approaches, but also requires that risk be assessed and cybersecurity play a key role in leveraging such systems.
 

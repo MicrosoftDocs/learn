@@ -4,11 +4,10 @@ title: Exercise - Get started with PC Holographic Remoting
 metadata:
   title: Exercise - Get started with PC Holographic Remoting
   description: Introduction to working with PC Holographic Remoting
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.date: 01/03/2024
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-get-started-with-pc-holographic-remoting.md)]

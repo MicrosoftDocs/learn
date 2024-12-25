@@ -2,8 +2,7 @@ There are two methods for scaling your Azure App Service plan and applications: 
 
 Watch the following video about how to implement automatic scaling for your Azure App Service plan and applications. 
 
-
-<iframe width="854" height="480" src="https://www.youtube.com/embed/LS8ZPbQzRpc" title="How to automatically scale Azure App Service applications | Azure Tips and Tricks" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/LS8ZPbQzRpc]
 
 ### Things to know about Azure App Service scaling
 
@@ -31,4 +30,5 @@ Review the following benefits of implementing scaling for your App Service plan 
 
 - **Consider no redeployment**. When you change your scale settings, you don't need to change your code or redeploy your applications. Changing your plan scale settings takes only seconds to apply. Your changes affect all applications in your App Service plan.
 
-- **Consider scaling for other Azure services**. If your App Service application depends on other Azure services, such as Azure SQL Database or Azure Storage, you can scale these resources separately. These resources aren't managed by your App Service plan.
+- **Consider scaling for other Azure services**. If your App Service application depends on other Azure services, such as Azure SQL Database or Azure Storage, you can scale these resources separately. The App Service Plan doesn't manage these resources.
+

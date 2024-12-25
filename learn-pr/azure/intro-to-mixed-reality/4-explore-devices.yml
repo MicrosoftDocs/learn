@@ -4,11 +4,10 @@ title: Explore mixed reality devices
 metadata:
   title: Explore mixed reality devices
   description: Explore the range of mixed reality devices, the capabilities they offer, and where they fit on the mixed reality spectrum.
-  ms.date: 11/17/2020
+  ms.date: 05/20/2023
   author: Sean-Kerawala
   ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-explore-devices.md)]

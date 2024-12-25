@@ -3,23 +3,22 @@ uid: learn.wwl.select-windows-server-editions-servicing-options-activation
 metadata:
   title: Select Windows Server editions, servicing options, and activation
   description: "Select Windows Server editions, servicing options, and activation"
-  ms.date: 02/26/2021
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: module
+  ms.service: windows-server
 title: Select Windows Server editions, servicing options, and activation
-summary: Select a suitable edition of Windows Server 2019, and then learn to choose the appropriate servicing option and activation method.
+summary: Select a suitable edition of Windows Server 2025, and then learn to choose the appropriate servicing option and activation method.
 abstract: |
   After completing this module, you'll be able to:
-  - Select Windows Server 2019 editions.
-  - Choose a Windows Server servicing channel.
+  - Select Windows Server 2025 editions.
   - Describe licensing and activation.
   - Implement automatic virtual machine activation (AVMA).
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - Active Directory Domain Services concepts and technologies.
-  - Windows Server 2012 or Windows Server 2016.
+  - Windows Server operating system administration.
   - Microsoft Hyper-V and basic server virtualization concepts.
   - Automation and monitoring.
 iconUrl: /training/achievements/select-windows-server-editions-servicing-options-and-activation.svg

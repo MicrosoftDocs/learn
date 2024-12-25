@@ -27,7 +27,7 @@ fn main() {
 
     // Perform the action.
     match action {
-        Add { text } => tasks::add_task(journal_file, Task::new(text)),
+        Add { task } => tasks::add_task(journal_file, Task::new(task)),
         List => tasks::list_tasks(journal_file),
         Done { position } => tasks::complete_task(journal_file, position),
     }
@@ -36,14 +36,14 @@ fn main() {
 
 ```
 
-Our `main.rs` outline looks really simple.
+Our `main.rs` outline looks simple.
 
 We start by *destructuring* our `CommandLineArgs` struct into its fields, so we can pass those
 values independently to our task-handling functions.
 
-Because `journal_file` is of type `Option<PathBuf>`, we need to extract the path to our journal file or emit a `panic`. We'll revisit this step later to make the program look for a default file. For now, this `.expect` instruction will work fine.
+Because `journal_file` is of type `Option<PathBuf>`, we need to extract the path to our journal file or emit a `panic`. We revisit this step later to make the program look for a default file. For now, this `.expect` instruction works fine.
 
-Finally, we match each possible `Action` to its function, passing the required fields from the enum to the functions. We call `.expect` at the end of the `match` block because all functions return a `Result` type, which can fail. Again, we'll polish this functionality later to provide nice error messages to users in case of failure.
+Finally, we match each possible `Action` to its function, passing the required fields from the enum to the functions. We call `.expect` at the end of the `match` block because all functions return a `Result` type, which can fail. Again, we polish this functionality later to provide nice error messages to users if there's a failure.
 
 Let's give it a try. Open your terminal and enter these commands:
 
@@ -68,9 +68,9 @@ $ cargo run -- -j test-journal.json list
 
 It looks like the program is running well!
 
-We started by calling `cargo run --` to ensure that all the arguments passed after `--` will be sent to our program and not to `cargo` itself.
+We started by calling `cargo run --` to ensure that all the arguments passed after `--` are sent to our program and not to `cargo` itself.
 
-Then we added three tasks in a row by using the subcommand `add` followed by a task name string. The `list` subcommand then displayed our three tasks, in order, with their timestamps on the far right. We then called the `done 2` subcommand to mark the second task complete. When we called `list` again, that task was gone. Pretty amazing, don't you think?
+Then we added three tasks in a row by using the subcommand `add` followed by a task name string. The `list` subcommand then displayed our three tasks, in order, with their timestamps on the far right. We then called the `done 2` subcommand to mark the second task complete. When we called `list` again, that task was gone. Amazing, don't you think?
 
 If we peek inside the `test-journal.json` file, we see the following content:
 
@@ -95,4 +95,4 @@ If we pretty-printed the JSON file, it would look like this:
 ]
 ```
 
-In the next two sections, we'll improve the usability of our program by configuring it to use a default journal file and presenting prettier error messages.
+In the next two sections, we improve the usability of our program by configuring it to use a default journal file and presenting prettier error messages.

@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transition-your-business-azure.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Summary
+  description: "Summary"
+  ms.date: 09/25/2024
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]
+interactive: bash

@@ -1,5 +1,3 @@
-
-
 Microsoft Sentinel collects log data that is stored in tables.  The Logs page in Microsoft Sentinel provides a user interface to build and view query results using the Kusto Query Language (KQL).  KQL is the query language used to perform data analysis to create analytics, workbooks, and perform hunting with Microsoft Sentinel.
 
 You're a Security Operations Analyst working at a company that is implementing Microsoft Sentinel.  You must explore the tables available in your workspace. The Logs page using Microsoft Sentinel allows you to write Kusto Query Language (KQL) statements to view data stored in the tables.  When you connect log data to the Microsoft Sentinel workspace, the connectors will write data to specific tables.  

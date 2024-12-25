@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fine-tune-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/20/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the primary benefit of using Azure Databricks for fine-tuning large language models?"
+    choices:
+    - content: "Simplified data storage management."
+      isCorrect: false
+      explanation: "Incorrect. Simplified data storage management isn't the primary benefit of using Azure Databricks for fine-tuning large language models."
+    - content: "Seamless integration with GitHub."
+      isCorrect: false
+      explanation: "Incorrect. Seamless integration with GitHub isn't the primary benefit of using Azure Databricks for fine-tuning large language models."
+    - content: "Distributed computing capabilities for handling large-scale data."
+      isCorrect: true
+      explanation: "Correct. Azure Databricks is designed to handle large-scale data processing by using distributed computing capabilities. Fine-tuning large language models often require processing vast amounts of data."
+  - content: "Which of the following options is a key step in fine-tuning a large language model using Azure OpenAI within Azure Databricks?"
+    choices:
+    - content: "Deploying the model directly without adjustments."
+      isCorrect: false
+      explanation: "Incorrect. Deploying the model directly isn't the key step in fine-tuning a large language model using Azure OpenAI within Azure Databricks"
+    - content: "Collecting and preparing domain-specific datasets."
+      isCorrect: true
+      explanation: "Correct. Fine-tuning a large language model requires the collection and preparation of domain-specific datasets to tailor the model's predictions to a particular task or industry. This step ensures that the model can generalize well to the specific use case it's being fine-tuned for. The other options don't directly contribute to the fine-tuning process."
+    - content: "Using SQL queries to modify the model architecture."
+      isCorrect: false
+      explanation: "Incorrect. Using SQL queries to modify the model architecture isn't the key step in fine-tuning a large language model using Azure OpenAI within Azure Databricks."
+  - content: "What role does the 'learning rate' parameter play during the fine-tuning process in Azure Databricks?"
+    choices:
+    - content: "It determines the size of the training dataset."
+      isCorrect: false
+      explanation: "Incorrect. The 'learning rate' doesn't determine the size of the training dataset."
+    - content: "It controls the step size for weight updates during training"
+      isCorrect: true
+      explanation: "Correct. The learning rate is a critical hyperparameter that controls how much to change the model's weights with respect to the loss gradient. A learning rate that is too high might cause the model to converge too quickly to a suboptimal solution, while a learning rate that is too low could result in a prolonged training process."
+    - content: "It decides the number of layers to freeze in the model"
+      isCorrect: false
+      explanation: "Incorrect. The 'learning rate' doesn't decide the number of layers to freeze in the model."
+

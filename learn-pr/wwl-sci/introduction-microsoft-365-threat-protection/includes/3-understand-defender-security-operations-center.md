@@ -1,15 +1,15 @@
 
-The following graphic provides an overview of how Microsoft 365 Defender and Microsoft Sentinel are integrated in a Modern Security Operations Center (SOC).                                                                                                                                                                                   
+The following graphic provides an overview of how Microsoft Defender XDR and Microsoft Sentinel are integrated in a Modern Security Operations Center (SOC).                                                                                                                                                                                   
 
 :::image type="content" source="../media/security-operations.png" alt-text="Diagram that shows the layers and technologies of Security Operations.":::
 
 
 
-## Security Operations Model - Functions and Tools.
+## Security Operations Model - Functions and Tools
 
 
 
-While the assignment of responsibilities to individual people and teams will vary based on organization size and other factors, security operations are composed of several distinct functions. Each function/team has a primary focus area and also must collaborate closely with other functions and outside teams to be effective. This diagram depicts the full model with fully staffed teams. In smaller organizations, these functions are often combined into a single role or team, performed by IT Operations (for technical roles), or are performed as a temporary function by leadership/delegates (for incident management)
+While the assignment of responsibilities to individual people and teams vary based on organization size and other factors, security operations are composed of several distinct functions. Each function/team has a primary focus area and also must collaborate closely with other functions and outside teams to be effective. This diagram depicts the full model with fully staffed teams. In smaller organizations, these functions are often combined into a single role or team, performed by IT Operations (for technical roles), or are performed as a temporary function by leadership/delegates (for incident management)
 
 > [!NOTE] 
 > We primarily refer to the analysts by the team name, not the Tier numbers as these teams each have unique specialized skills, they are not a literal ranking/hierarchical of value. 
@@ -28,24 +28,24 @@ We'll start with handling reactive alerts – which begins with:
 - **Triage (aka Tier 1)** –Triage analysts focus on rapid remediation of a high volume of well-known incident types that still require (quick) human judgment. These are often tasked with approving automated remediation workflows and identifying anything anomalous or interesting that warrant escalation or consultation with investigation (Tier 2) teams. 
 
     Key learnings for Triage and Automation:
-    - **90% true positive** - We recommend setting a quality standard of 90% true positive for any alert feeds that will require an analyst to respond so analysts aren’t required to respond to a high volume of false alarms.
-    - **Alert Ratio** – In Microsoft’s experience from our Cyber Defense Operation Center, XDR alerts produce most of the high-quality alerts, with the remainders coming from user reported issues, classic log query based alerts, and other sources
+    - **90% true positive** - We recommend setting a quality standard of 90% true positive for any alert feeds that require an analyst to respond so analysts aren’t required to respond to a high volume of false alarms.
+    - **Alert Ratio** – In Microsoft’s experience from our Cyber Defense Operations Center, XDR alerts produce most of the high-quality alerts, with the remainders coming from user reported issues, classic log query based alerts, and other sources
     - **Automation** is a key enabler for triage teams as it helps empower these analysts and reduce the burden of manual effort (for example, provide automated investigation and then prompt them for a human review before approving the remediation sequence that was automatically built for this incident).
-    - **Tool Integration** - One of the most powerful time saving technologies that improved time to remediation in Microsoft’s CDOC is the integration of XDR tools together into Microsoft 365 Defender so analysts have a single console for endpoint, email, identity, and more. This integration enables analysts to rapidly discover and clean up attacker phishing emails, malware, and compromised accounts before they can do significant damage.
+    - **Tool Integration** - One of the most powerful time saving technologies that improved time to remediation in Microsoft’s CDOC is the integration of XDR tools together into Microsoft Defender XDR so analysts have a single console for endpoint, email, identity, and more. This integration enables analysts to rapidly discover and clean up attacker phishing emails, malware, and compromised accounts before they can do significant damage.
     - **Focus** - These teams can't maintain their high speed of resolution for all types of technologies and scenarios, so they keep their focus narrow on a few technical areas and/or scenarios. Most often this is on user productivity, like email, endpoint AV alerts (versus EDR that goes into investigations), and first response for user reports.
 
 ### Investigation and Incident Management (Tier 2)
 
-This team serves as escalation point for issues from Triage (Tier 1), and directly monitors alerts that indicate a more sophisticated attacker that trigger behavioral alerts, special case alerts related to business-critical assets, and monitoring for ongoing attack campaigns. Proactively, this team also periodically reviews the Triage team alert queue and may proactively hunt using XDR tools in their spare time.
+This team serves as the escalation point for issues from Triage (Tier 1), and directly monitors alerts that indicate a more sophisticated attacker. Specifically alerts that trigger behavioral alerts, special case alerts related to business-critical assets, and monitoring for ongoing attack campaigns. Proactively, this team also periodically reviews the Triage team alert queue and can proactively hunt using XDR tools in their spare time.
 
 This team provides deeper investigation into a lower volume of more complex attacks, often multi-stage attacks conducted by human attack operators. This team pilots new/unfamiliar alert types to document processes for Triage team and automation, often including alerts generated by Microsoft Defender for Cloud on cloud hosted apps, VMs, containers and Kubernetes, SQL databases, etc. 
 
-**Incident Management** – This team takes on the non-technical aspects of managing incidents including coordination with other teams like communications, legal, leadership, and other business stakeholders. 
+**Incident Management** – This team takes on the nontechnical aspects of managing incidents including coordination with other teams like communications, legal, leadership, and other business stakeholders. 
 
 
 ### Hunt and Incident Management (Tier 3)
 
-This is a multi-disciplinary team focused on identifying attackers that may have slipped through the reactive detections and handling major business-impacting events. 
+This is a multi-disciplinary team focused on identifying attackers that could have slipped through the reactive detections and handling major business-impacting events.
 
 - **Hunt** – This team proactively hunts for undetected threats, assists with escalations and advanced forensics for reactive investigations, and refines alerts/automation. These teams operate in more of a hypothesis-driven model than a reactive alert model and are also where red/purple teams connect with security operations. 
 
@@ -54,12 +54,12 @@ This is a multi-disciplinary team focused on identifying attackers that may have
 
 To give you an idea of how this works, let’s follow a common incident lifecycle
 
-1. **Triage (Tier 1)** analyst claims a malware alert from the queue and investigates (for example, with Microsoft 365 Defender console)
-1. While most Triage cases are rapidly remediated and closed, this time the analyst observes that malware may require more involved/advanced remediation (for example, device isolation and cleanup). Triage escalates the case to the Investigation analyst (Tier 2), who takes lead for investigation. The Triage team has option to stay involved and learn more (Investigation team may use Microsoft Sentinel or another SIEM for broader context)
+1. **Triage (Tier 1)** analyst claims a malware alert from the queue and investigates (for example, with Microsoft Defender XDR console)
+1. While most Triage cases are rapidly remediated and closed, this time the analyst observes that malware might require more involved/advanced remediation (for example, device isolation and cleanup). Triage escalates the case to the Investigation analyst (Tier 2), who takes lead for investigation. The Triage team has option to stay involved and learn more (Investigation team might use Microsoft Sentinel or another SIEM for broader context)
 1. **Investigation** verifies investigation conclusions (or digs further into it) and proceeds with remediation, closes case. 
-1. Later, **Hunt (Tier 3)** may notice this case while reviewing closed incidents to scan for commonalities or anomalies worth digging into:
-    - Detections that may be eligible for auto-remediation
-    - Multiple similar incidents that may have a common root cause
+1. Later, **Hunt (Tier 3)** might notice this case while reviewing closed incidents to scan for commonalities or anomalies worth digging into:
+    - Detections that might be eligible for autoremediation
+    - Multiple similar incidents that might have a common root cause
     - Other potential process/tool/alert improvements
 In one case, Tier 3 reviewed the case and found that the user had fallen for a tech scam. This detection was then flagged as a potentially higher priority alert because the scammers had managed to get admin level access on the endpoint. A higher risk exposure.
 
@@ -71,6 +71,3 @@ In one case, Tier 3 reviewed the case and found that the user had fallen for a t
 - Proactive technical research into attacker groups, attack trends, high profile attacks, emerging techniques, etc. 
 - Strategic analysis, research, and insights to inform business and technical processes and priorities. 
 - And more
-
-
-

@@ -5,11 +5,13 @@ metadata:
   title: Introduction to software testing concepts
   description: "Evaluate if testing is right for your scenarios, and familiarize yourself with basic testing concepts such as TDD, BDD, unit testing, UI testing, and the test pyramid."
   ms.date: 03/08/2022
-  author: kendrahavens
-  ms.author: chnoring
+  author: CamSoper
+  ms.author: casoper
+  manager: coxford
   ms.custom: team=nextgen, devdivchpfy22
-  ms.topic: interactive-tutorial
-  ms.prod: learning-visual-studio
+  ms.topic: module-standard-concept-based
+  ms.service: visual-studio-windows
+  ms.devlang: csharp
 title: Introduction to software testing concepts
 summary: "Describe the common best practices, theory, and patterns of writing tests. Characterize the types of problems that testing can solve for your repository."
 abstract: |
@@ -29,7 +31,6 @@ products:
   - vs
 subjects:
 - devops
-- development-tools
 units:
 - learn.visual-studio-test-concepts.1-introduction
 - learn.visual-studio-test-concepts.2-what-is-testing

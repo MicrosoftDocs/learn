@@ -2,15 +2,19 @@
 uid: learn.wwl.register-mlflow-model-azure-machine-learning.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 02/17/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/06/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "A data scientist trains and logs a model with MLflow. When the data scientist deploys the model, the schema of the model's input and output isn't correct. What should the data scientist customize to fix the issue?"
     choices:
@@ -34,3 +38,4 @@ quiz:
     - content: "Custom"
       isCorrect: false
       explanation: "Incorrect. No-code deployment isn't available in Azure Machine Learning for custom models."
+

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-linux-postgres.deploy-linux-postgresql-infrastructure
+title: Deploy Linux and PostgreSQL infrastructure
+metadata:
+  title: Deploy Linux and PostgreSQL infrastructure
+  description: "Deploy Linux and PostgreSQL infrastructure in Azure. Learn how to create a Linux virtual machine and an Azure Database for PostgreSQL server."
+  ms.date: 9/16/2024
+  author: asw101
+  ms.author: aawislan
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/2-deploy-linux-postgresql-infrastructure.md)]

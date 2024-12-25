@@ -7,23 +7,24 @@ Revocation is the process in which you disable the validity of one or more certi
 > [!IMPORTANT]
 > Every certificate has its own validity period, after which it is no longer considered valid. With revocation, you can invalidate the certificate before that period passes, for example, to remediate certificate compromise.
 
-:::image type="content" source="../media/m10-ca-cert-revocation.png" alt-text="Several stages of CA lifecycle, focusing on the certificate revocation." border="false":::
+:::image type="content" source="../media/m10-ca-cert-revocation-4df2cccf.png" alt-text="Several stages of CA lifecycle, focusing on the certificate revocation.":::
+
 
 The revocation process consists typically of the following sequence of steps:
 
-1. Revoke a certificate and provide the reason and the target date and time. You can perform this task from the CA console.
-1. Publish a CRL. You have the option to trigger publishing from the CA console or schedule automatic publishing in regular intervals. You can publish CRLs in AD DS, in a shared folder, or on a website.
-1. If an operating systems, applications, or service initiates a secure action that involves the use of a certificate, that triggers an automatic check of the revocation status of that certificate by querying the issuing CA and the corresponding CDP location. This process determines whether the certificate is revoked.
+1.  Revoke a certificate and provide the reason and the target date and time. You can perform this task from the CA console.
+2.  Publish a CRL. You have the option to trigger publishing from the CA console or schedule automatic publishing in regular intervals. You can publish CRLs in AD DS, in a shared folder, or on a website.
+3.  If an operating systems, applications, or service initiates a secure action that involves the use of a certificate, that triggers an automatic check of the revocation status of that certificate by querying the issuing CA and the corresponding CDP location. This process determines whether the certificate is revoked.
 
 > [!IMPORTANT]
 > The support for the automatic check of a certificate revocation status is dependent on the way an operating system, application, or service was implemented. Most modern commercial software supports this functionality.
 
 Windows operating systems include CryptoAPI, which is responsible for the certificate revocation and status-checking processes. CryptoAPI uses the following phases in the certificate-checking process:
 
-- Certificate discovery. Certificate discovery collects CA certificates, AIA information in issued certificates, and details of the certificate enrollment process.
-- Path validation. Path validation is the process of verifying the certificate through the CA chain, or path, until the root CA certificate is reached.
-- Revocation checking. Each certificate in the certificate chain is verified to ensure that none of the certificates are revoked.
-- Network retrieval and caching. Network retrieval is performed by using OCSP. CryptoAPI is responsible for checking the local cache first for revocation information, and if there is no match, making a call by using OCSP, which is based on the URL that the issued certificate provides.
+ -  Certificate discovery. Certificate discovery collects CA certificates, AIA information in issued certificates, and details of the certificate enrollment process.
+ -  Path validation. Path validation is the process of verifying the certificate through the CA chain, or path, until the root CA certificate is reached.
+ -  Revocation checking. Each certificate in the certificate chain is verified to ensure that none of the certificates are revoked.
+ -  Network retrieval and caching. Network retrieval is performed by using OCSP. CryptoAPI is responsible for checking the local cache first for revocation information, and if there is no match, making a call by using OCSP, which is based on the URL that the issued certificate provides.
 
 ## What is an Online Responder service?
 
@@ -37,14 +38,19 @@ You must configure the CAs to include the URL of the Online Responder in the AIA
 
 The following video demonstrates how to:
 
-- Configure CRL publishing.
-- Configure CDP location.
+ -  Configure CRL publishing.
+ -  Configure CDP location.
 
 The main steps in the process are:
 
-1. Create an AD DS environment. Create a single-domain AD DS forest.
-1. Deploy an Enterprise Root CA. 
-1. Configure CRL publishing. Use the Certification Authority console to configure CRL publishing.
-1. Configure CDP location. Use the Certification Authority console to configure CDP location.
+1.  Create an AD DS environment. Create a single-domain AD DS forest.
+2.  Deploy an Enterprise Root CA.
+3.  Configure CRL publishing. Use the Certification Authority console to configure CRL publishing.
+4.  Configure CDP location. Use the Certification Authority console to configure CDP location.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MjvK]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MjvK]
+
+---
+
+
+##

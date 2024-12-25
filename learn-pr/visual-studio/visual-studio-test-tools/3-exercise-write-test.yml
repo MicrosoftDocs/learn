@@ -5,13 +5,11 @@ metadata:
   unitType: learning-content
   title: Exercise - Write a test
   description: Build out a sample app by adding a test project, adding references, and writing asserts in your first test.
-  author: kendrahavens
-  ms.author: chnoring
-  manager: jmartens
+  author: CamSoper
+  ms.author: casoper
   ms.custom: team=nextgen
-  ms.date: 07/19/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-visual-studio
+  ms.date: 07/20/2021
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-write-test.md)]

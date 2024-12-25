@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.introduction-to-application-resiliency-azure
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 08/14/2024
+  title: Introduction to application resiliency in Azure
+  description: A description of how to assess and implement resiliency technologies in Azure.
+  ms.topic: module
+  moduleType: standard
+  ms.service: azure-site-recovery
+title: Introduction to application resiliency in Azure
+summary: An introduction to application resiliency technologies and strategies in Azure.
+abstract: This module provides an introduction to application resiliency technologies and strategies in Azure. You'll learn how to assess and implement resiliency technologies in Azure, and how to design and deploy applications that are resilient to failures.
+prerequisites: An understanding of basic Azure infrastructure concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.introduction-to-application-resiliency-azure.introduction-to-application-resiliency-in-azure
+- learn.introduction-to-application-resiliency-azure.what-is-resiliency
+- learn.introduction-to-application-resiliency-azure.understand-resiliency-requirements
+- learn.introduction-to-application-resiliency-azure.design-for-resiliency
+- learn.introduction-to-application-resiliency-azure.implement-resiliency-strategies
+- learn.introduction-to-application-resiliency-azure.assess-failures-and-response-strategies
+- learn.introduction-to-application-resiliency-azure.deploy-using-a-reliable-process
+- learn.introduction-to-application-resiliency-azure.monitor-application-to-detect-failures
+- learn.introduction-to-application-resiliency-azure.respond-to-application-failures
+- learn.introduction-to-application-resiliency-azure.resiliency-design-patterns
+- learn.introduction-to-application-resiliency-azure.knowledge-check
+- learn.introduction-to-application-resiliency-azure.summary
+badge:
+  uid: learn.introduction-to-application-resiliency-azure-badge
+

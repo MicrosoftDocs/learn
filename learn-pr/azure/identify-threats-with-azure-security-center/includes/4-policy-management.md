@@ -5,8 +5,8 @@ Microsoft Defender for Cloud is fully integrated with Azure Policy. Defender for
 Here are several of the built-in security policies that Defender for Cloud monitors:
 
 - Secure transfer to storage accounts should be enabled.
-- Azure Active Directory (Azure AD) administrator for SQL server should be provisioned.
-- Client authentication should use Azure Active Directory.
+- Microsoft Entra administrator for SQL server should be provisioned.
+- Client authentication should use Microsoft Entra ID.
 - Diagnostics logs in Key Vault should be enabled.
 - System updates should be installed on your machines.
 - Audit missing blob encryption for storage accounts.

@@ -2,15 +2,19 @@
 uid: learn.azure.resource-manager-template-reuse.5-exercise-use-variables-store-expressions
 title: Exercise - Use Azure Resource Manager variables to store expressions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use Azure Resource Manager variables to store expressions
   description: Use an Azure Resource Manager variable to store your Azure Storage account unique name expressions for ease of reuse.
-  ms.date: 07/10/2020
-  author: tfitzmac
-  ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/18/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
   zone_pivot_groups: azure-shell-interface
 azureSandbox: true
 durationInMinutes: 5
 content: |
   [!include[](includes/5-exercise-use-variables-store-expressions.md)]
+

@@ -1,24 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-app-registration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement app registration
-  description: "Line of business developed in-house need registration in Azure AD and assigned to users for a secure Azure solution. Explore how to implement app registration."
-  ms.date: 04/03/2023
+  description: "Line of business developed in-house need registration in Microsoft Entra ID and assigned to users for a secure Azure solution. Explore how to implement app registration."
+  ms.date: 12/18/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Implement app registration
-summary: Line of business developed in-house need registration in Azure AD and assigned to users for a secure Azure solution. Explore how to implement app registration.
+summary: Line of business developed in-house need registration in Microsoft Entra ID and assigned to users for a secure Azure solution. Explore how to implement app registration.
 abstract: |
   By the end of this module you will be able to:
-  - Plan your line of business application registration strategy
-  - Implement application registrations
-  - Configure application permissions
-  - Plan and configure multi-tier application permissions
-prerequisites: |
-  None
-iconUrl: /training/achievements/implement-app-registration.svg
+
+  -   Plan your line of business application registration strategy
+
+  -   Implement application registrations
+
+  -   Configure application permissions
+
+  -   Plan and configure multi-tier application permissions
+prerequisites: None
+iconUrl: /learn/achievements/implement-app-registration.svg
 levels:
 - advanced
 roles:
@@ -27,12 +36,9 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
-- azure-active-directory-domain
-- azure-api-apps
-- defender-for-cloud-apps
 - entra
 - entra-workload-identities
+- entra-id
 units:
 - learn.wwl.implement-app-registration.introduction
 - learn.wwl.implement-app-registration.plan-your-line-of-business-application-registration-strategy

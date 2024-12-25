@@ -8,38 +8,30 @@ Before using the library, you should import the **Microsoft.Azure.Cosmos** names
 using Microsoft.Azure.Cosmos;
 ```
 
-## Use the CosmosClient class
+### Use the CosmosClient Class
 
-The two most common ways to create an instance for the **CosmosClient** class is to instantiate it with one of the following two constructors:
+The recommended way to create an instance of the **CosmosClient** class is to use **Azure Entra ID Managed Identity** for authentication. This method eliminates the need to manage secrets like connection strings or keys and enhances security.
 
-- A constructor that takes a single string value representing the connection string for the account.
-- A constructor that takes two string values representing the endpoint and a key for the account.
+To authenticate with a Managed Identity, the CosmosClient class can be instantiated using the following approach:
 
-> [!NOTE]
-> You can always retrieve the connection string, endpoint, or any of the keys from the Azure portal. For the examples in this section, we will use a fictional endpoint of **https­://dp420.documents.azure.com:443/** and a sample key of **fDR2ci9QgkdkvERTQ==**.
+- A constructor that takes the Azure Cosmos DB account's endpoint and a Microsoft Entra ID credential.
 
-> [!TIP]
-> You can also use the CosmosClient class with the Microsoft Identity Platform directly for Azure AD authentication, but that is beyond the scope of this module.
+### Use with Microsoft Entra Managed Identity
 
-### Use with a connection string
-
-The **CosmosClient** class has a constructor that only takes a single string value. Pass in the connection string of the account to use this constructor. This example uses a connection string in the ``AccountEndpoint=<account-endpoint>;AccountKey=<account-key>`` format with the fictional endpoint and key.
+The **CosmosClient** class can be configured to use Microsoft Entra ID authentication via a Managed Identity, eliminating the need for connection strings or account keys. Managed Identity is a secure and modern authentication method for Azure-hosted resources.
 
 ```csharp
-string connectionString = "AccountEndpoint=https­://dp420.documents.azure.com:443/;AccountKey=fDR2ci9QgkdkvERTQ==";
+using Azure.Identity;
+using Microsoft.Azure.Cosmos;
 
-CosmosClient client = new (connectionString);
-```
+// Configure the account endpoint
+string accountEndpoint = "https://<youraccountname>.documents.azure.com:443/";
 
-### Use with an endpoint and key
+// Use DefaultAzureCredential for Azure Entra Managed Identity authentication
+DefaultAzureCredential credential = new DefaultAzureCredential();
 
-Alternatively, you can use a constructor of the **CosmosClient** class that takes in two string parameters representing the account's **endpoint** and **key** in that order. This example uses the fictional endpoint and key.
-
-```csharp
-string endpoint = "https­://dp420.documents.azure.com:443/";
-string key = "fDR2ci9QgkdkvERTQ==";
-
-CosmosClient client = new (endpoint, key);
+// Initialize CosmosClient with the endpoint and Azure Entra Managed Identity
+CosmosClient client = new CosmosClient(accountEndpoint, credential);
 ```
 
 ## Read properties of the account
@@ -70,7 +62,7 @@ Once you have a client instance, you can retrieve or create a database using one
 - Create a new database passing in a unique database name
 - Have the SDK check for the existence of the database and either create or retrieve it automatically
 
-Any of these three methods will return an instance of type **Database** that you can use to interact with the database.
+Any of these three methods return an instance of type **Database** that you can use to interact with the database.
 
 ### Retrieve an existing database
 
@@ -94,11 +86,11 @@ Database database = await client.CreateDatabaseIfNotExistsAsync("cosmicworks");
 
 Now that you have a database instance, you can retrieve or create a container using one of three methods:
 
-- Retrieve an existing container using just the name
-- Create a new container passing in a unique container name, partition key path, and the amount of throughput to manually provision
-- Have the SDK check for the existence of the container and either create or retrieve it automatically
+- Retrieve an existing container using just the name.
+- Create a new container passing in a unique container name, partition key path, and the amount of throughput to manually provision.
+- Have the SDK check for the existence of the container and either create or retrieve it automatically.
 
-Any of these three methods will return an instance of type **Container** that you can use to interact with the container.
+Any of these three methods return an instance of type **Container** that you can use to interact with the container.
 
 ### Retrieve an existing container
 
@@ -110,9 +102,8 @@ Container container = database.GetContainer("products");
 
 ```csharp
 Container container = await database.CreateContainerAsync(
-    "cosmicworks", 
-    "/categoryId", 
-    400
+    new ContainerProperties(chatContainerName, "/categoryId"), 
+    ThroughputProperties.CreateAutoscaleThroughput(1000)
 );
 ```
 
@@ -120,8 +111,7 @@ Container container = await database.CreateContainerAsync(
 
 ```csharp
 Container container = await database.CreateContainerIfNotExistsAsync(
-    "cosmicworks", 
-    "/categoryId", 
-    400
+    new ContainerProperties(chatContainerName, "/categoryId"), 
+    ThroughputProperties.CreateAutoscaleThroughput(1000)
 );
 ```

@@ -1,23 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure-intro-to-logic-apps
 metadata:
-  title: "Introduction to Azure Logic Apps"
-  description: Learn how to evaluate Azure Logic Apps as an automation choice for your organization using criteria for integration, performance, conditionals, and connectors.
-  ms.date: 4/25/2019
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction to Azure Logic Apps
+  description: Learn how to evaluate Azure Logic Apps as an option for automating business processes using criteria such as integration, performance, control structures, and connectors.
+  ms.date: 11/18/2024
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-intro-to-product
   ROBOTS: INDEX,FOLLOW
-title: "Introduction to Azure Logic Apps"
-summary: "Characterize the types of business processes that Azure Logic Apps can automate. Describe the function of connectors, triggers, and actions and show how you combine them to create an app."
+  ms.service: azure-logic-apps
+  manager: susanpotter
+title: Introduction to Azure Logic Apps
+summary: Get a high-level overview about Azure Logic Apps and the business processes that you can implement and automate. Learn how connectors, triggers, and actions work together to help you build integrations with logic app workflows.
 abstract: |
-  In this module, you will:
-  - Evaluate whether Azure Logic Apps is appropriate to automate your business processes
-  - Describe how the components of a logic app workflow work together to automate a business process
+  In this module, you complete the following tasks:
+  - Get an overview about how Azure Logic Apps helps with integration challenges.
+  - Evaluate whether Azure Logic Apps can help automate your business processes.
+  - Understand how components in a logic app workflow work together to automate a business process.
 prerequisites: |
-  - Basic knowledge of programming concepts such as conditional logic and loops
-  - Basic knowledge of REST services and APIs
+  - Basic knowledge about programming concepts, such as conditional logic and loops
+  - Basic knowledge about APIs and REST services
 iconUrl: /training/achievements/intro-to-logic-apps.svg
 badge:
   uid: learn.azure-intro-to-logic-apps.badge
@@ -25,8 +29,9 @@ levels:
 - beginner
 roles:
 - developer
-- administrator
+- solution-architect
 - business-analyst
+- functional-consultant
 products:
 - azure
 - azure-logic-apps
@@ -39,3 +44,4 @@ units:
 - learn.azure-intro-to-logic-apps.when-to-use-logic-apps
 - learn.azure-intro-to-logic-apps.knowledge-check
 - learn.azure-intro-to-logic-apps.summary
+

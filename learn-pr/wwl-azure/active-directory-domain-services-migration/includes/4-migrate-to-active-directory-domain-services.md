@@ -3,16 +3,12 @@ Migrating to a new Active Directory Domain Services (AD DS) forest requires a hi
 Careful planning is required before you can migrate to a new AD DS forest. Planning includes:
 
 - Select new names. Most migration tools require the source and destination AD DS forests to have unique domain names, NetBIOS names, and user principal name (UPN) suffixes.
-
 - Plan organizational unit (OU) structure. You can replicate the OU structure in the source AD DS forest, but this is an opportunity to restructure to better meet organizational needs if you choose to.
-
 - Plan Group Policies. Evaluate which Group Policy settings should be applied in the new AD DS forest and how they'll be applied in the new OU structure.
-
 - Identify objects to migrate. Depending on the scope of the project, only a subset of users, groups, computers, and servers might be migrated. For these objects, you also need to determine which attributes should be migrated or excluded.
-
 - Identify apps that will be migrated. Apps can have many interdependent components, so you must also identify their components. Only after accurate identification can you plan how each app will be migrated.
 
-After planning is complete, you can create the new AD DS forest by using new domain controllers running Windows Server 2019. For some apps, you'll need to perform schema extensions to prepare the new forest to host those apps. You might also need to install new instances of apps before migrating app data.
+After planning is complete, you can create the new AD DS forest by using new domain controllers running Windows Server 2025. For some apps, you'll need to perform schema extensions to prepare the new forest to host those apps. You might also need to install new instances of apps before migrating app data.
 
 To support a phased migration that allows users to access resources in the source and destination, you must configure a forest trust. This allows users in the source forest to access resources migrated to the target forest. It also allows users migrated to the target forest to access resources in the source forest.
 

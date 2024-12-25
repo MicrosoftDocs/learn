@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.measure-mitigate-risks-azure-ai-studio.prepare
+title: Prepare
+metadata:
+  title: Prepare
+  description: Learn how to prepare for measuring and mitigating risks for a generative AI app in Azure AI Foundry.
+  ms.date: 09/14/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-prepare.md)]

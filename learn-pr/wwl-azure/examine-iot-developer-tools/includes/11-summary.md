@@ -1,1 +1,0 @@
-Your team will be working on an IoT solution and must be comfortable working with the developer tools and resources. Having a thorough understanding the supported development tools, SDK resources, and coding environments will help to ensure that the team can work quickly and effectively once the implementation begins.

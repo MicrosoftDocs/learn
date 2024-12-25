@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-storage-dotnet-aspire-app.store-files-azure-blob-storage
+title: Store files in Azure Blob Storage
+metadata:
+  title: Store files in Azure Blob Storage
+  description: In this unit, you'll learn how to store images, videos, and other files in the Azure Blob Storage service by adding the .NET Aspire Azure Blob Storage integration.
+  author: camsoper
+  ms.author: casoper
+  ms.date: 8/20/2024
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-store-files-azure-blob-storage.md)]

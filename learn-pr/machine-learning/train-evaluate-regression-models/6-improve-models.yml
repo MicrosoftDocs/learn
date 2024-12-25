@@ -2,13 +2,14 @@
 uid: learn.wwl.train-evaluate-regression-models.improve-models
 title: Improve models with hyperparameters
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Improve models with hyperparameters
   description: Improve regression models with hyperparameters
-  ms.date: 01/04/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/10/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |

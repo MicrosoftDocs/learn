@@ -2,7 +2,7 @@ Smart detection notifications are enabled by default and sent to [owners, contri
 
 To change it, click Configure in the email notification, or open Smart Detection settings in Application Insights.
 
-:::image type="content" source="../media/smart-detection-notifications-949f4fe7.png" alt-text="Smart detection notifications.":::
+:::image type="content" source="../media/smart-detection-notifications-949f4fe7.png" alt-text="Diagram showing smart detection notifications.":::
 
 
  -  You can use the unsubscribe link in the smart detection email to stop receiving the email notifications.

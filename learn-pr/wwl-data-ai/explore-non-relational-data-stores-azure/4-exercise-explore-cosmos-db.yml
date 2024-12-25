@@ -4,13 +4,12 @@ title: 'Exercise: Explore Azure Cosmos DB'
 metadata:
   title: 'Exercise: Explore Azure Cosmos DB'
   description: "Exercise: Explore Azure Cosmos DB"
-  ms.date: 10/11/2022
+  ms.date: 12/13/2024
   author: wwlpublish
-  ms.author: wwlpub
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-explore-cosmos-db.md)]

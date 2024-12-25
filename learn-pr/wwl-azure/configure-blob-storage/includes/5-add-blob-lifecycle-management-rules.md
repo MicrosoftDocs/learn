@@ -1,6 +1,12 @@
-Every data set has a unique lifecycle. Early in the lifecycle, users tend to access some of the data in the set, but not all of the data. As the data set ages, access to all of the data in the set tends to dramatically reduce. Some data set stays idle in the cloud and is rarely accessed after it's stored. Some data expires within a few days or months after it's created. Other data is actively read and modified throughout the data set lifetime.
+Every data set has a unique lifecycle. Early in the lifecycle, users tend to access some of the data in the set, but not all of the data. As the data set ages, access to all of the data in the set tends to dramatically reduce. Some data set stays idle in the cloud and is rarely accessed. Some data expires within a few days or months after creation. Other data is actively read and modified throughout the data set lifetime.
 
-Azure Blob Storage supports lifecycle management for data sets. It offers a rich rule-based policy for GPv2 and Blob Storage accounts. You can use lifecycle policy rules to transition your data to the appropriate access tiers, and set expiration times for the end of a data set's lifecycle.
+Azure Blob Storage supports [lifecycle management](/azure/storage/blobs/lifecycle-management-policy-configure) for data sets. It offers a rich rule-based policy for GPv2 and Blob Storage accounts. You can use lifecycle policy rules to transition your data to the appropriate access tiers, and set expiration times for the end of a data set's lifecycle.
+
+### How to automatically manage Azure Blobs lifecycles | Azure Tips and Tricks
+
+#### <!-- Video -->
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/-3k0hhngt7o" title="How to automatically manage Azure Blobs lifecycles" allowfullscreen></iframe>
 
 ### Things to know about lifecycle management
 
@@ -29,7 +35,9 @@ In the Azure portal, you create lifecycle management policy rules for your Azure
 
 - **Then**: The **Then** clause sets the action clause for the policy rule. When the **If** clause evaluates to true, the **Then** clause is executed. Use the **Then** clause to set the transition action for the blob data. The lifecycle management feature transitions the data based on the setting.
    - **Move to cool storage**: The blob data is transitioned to Cool tier storage.
+   - **Move to cold storage**: The blob data is transitioned to Cold tier storage. 
    - **Move to archive storage**: The blob data is transitioned to Archive tier storage.
    - **Delete the blob**: The blob data is deleted.
 
 By designing policy rules to adjust storage tiers in respect to the age of data, you can design the least expensive storage options for your needs.
+

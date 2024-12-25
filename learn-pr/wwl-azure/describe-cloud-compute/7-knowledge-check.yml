@@ -2,15 +2,16 @@
 uid: learn.wwl.describe-cloud-compute.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/24/2023
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -36,9 +37,9 @@ quiz:
     - content: "Hybrid cloud"
       isCorrect: true
       explanation: "The hybrid cloud model is a combination of public cloud and private cloud, using both datacenters dedicated solely to one customer and datacenters that are shared with the public."
-    - content: "Multi-cloud"
+    - content: "Multicloud"
       isCorrect: false
-      explanation: "The multi-cloud model leverages multiple public cloud providers to satisfy cloud needs."
+      explanation: "The multicloud model leverages multiple public cloud providers to satisfy cloud needs."
   - content: "According to the shared responsibility model, which cloud service type places the most responsibility on the customer?"
     choices:
     - content: "Infrastructure as a Service (IaaS)"

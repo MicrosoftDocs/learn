@@ -8,7 +8,7 @@ Create a resource group to contain all the resources that you'll create for the 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
-1. Search for or select **Resource groups**. 
+1. Search for or select **Resource groups**.
 
 1. Select **Create**. The **Create a resource group** pane appears.
 
@@ -32,7 +32,7 @@ Create a Linux VM that's not exposed to the internet.
 
 1. Select **Create**, and then select **Azure Virtual machine** from the dropdown. The **Create a virtual machine** pane appears.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Basics** tab, enter the following values for each setting. Leave any other settings as their defaults.
 
     |Setting |Value  |
     |---------|---------|
@@ -42,7 +42,7 @@ Create a Linux VM that's not exposed to the internet.
     | **Instance details** |
     |Virtual machine name  |   internalappvm       |
     |Region    | Choose a region near you         |
-    |Image     |  Ubuntu Server 18.04 LTS - Gen1       |
+    |Image     |  Ubuntu Server 20.04 LTS - x64 Gen2       |
     | **Administrator account** |
     |Username    | azureuser     |
     |SSH public key source    |  Generate new key pair     |
@@ -52,7 +52,7 @@ Create a Linux VM that's not exposed to the internet.
 
    Use the default values for the rest of the settings on this tab.
 
-1. Select the **Networking** tab, and enter the following values for each setting.
+1. Select the **Networking** tab and enter the following values for each setting. Leave any other settings as their defaults.
 
     |Setting |Value |
     |---------|---------|
@@ -80,7 +80,7 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
 
 1. In the left menu pane, under **Settings**, select **Subnets**.
 
-1. In the top menu bar, select **Subnet** to add a subnet. The **Add subnet** pane appears.
+1. In the top menu bar, select **+ Subnet** to add a subnet. The **Add subnet** pane appears.
 
 1. Enter the following information to create a subnet.
 
@@ -101,7 +101,7 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
 
 1. Select the virtual machine **internalappvm**.
 
-1. Select **Connect** > **Bastion** > **Create Azure Bastion using defaults**.
+1. Select **Connect** > **Bastion** > **Deploy Bastion**.
 
    :::image type="content" source="../media/4-connect-bastion.png" alt-text="Screenshot of the Connect page and Bastion tab, with the Create Azure Bastion using defaults button.":::
 
@@ -113,7 +113,7 @@ Wait a few minutes for the Azure Bastion resource to be created.
 
 1. Enter the Username **azureuser**.
 
-1. Select **SSH Private Key from Local File**.
+1. Select **SSH Private Key from Local File** in the **Authentication Type** drop-down.
 
 1. For **Local file**, select the **internalappvm_key.pem** file that you downloaded when you created the VM.
 

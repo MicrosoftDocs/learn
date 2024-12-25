@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/15/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title:  Use the grep command to match regular expressions
 durationInMinutes: 3

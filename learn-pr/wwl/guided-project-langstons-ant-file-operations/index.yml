@@ -1,0 +1,58 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-langstons-ant-file-operations
+metadata:
+  title: Guided project - Langstons ant with file operations
+  description: "This is a guided project module where you implement file input and output in an existing Langston's Ant simulation."
+  ms.date: 03/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module-guided-project
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ms.devlang: csharp
+  ai-usage: human-only
+title: Guided project - Langstons ant with file operations
+summary: This is a guided project module where you implement file input and output in an existing Langston's Ant simulation.
+abstract: |
+  In this module, you practice how to
+
+  -   Read data from a file.
+
+  -   Write data to a file.
+
+  -   Check if a file or directory exists.
+
+  -   Create a new directory.
+prerequisites: |
+  -   Visual Studio Code installed.
+
+  -   A GitHub account to clone code repositories.
+
+  -   Basic knowledge of the Visual Studio IDE and project structure.
+
+  -   Basic understanding of the C# programming language.
+
+  -   Familiarity with classes, abstract classes, and inheritance.
+
+  -   Familiarity with file operations in C#.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- dotnet
+- vs-code
+units:
+- learn.wwl.guided-project-langstons-ant-file-operations.introduction
+- learn.wwl.guided-project-langstons-ant-file-operations.prepare
+- learn.wwl.guided-project-langstons-ant-file-operations.exercise-support-operations
+- learn.wwl.guided-project-langstons-ant-file-operations.exercise-write-game-file
+- learn.wwl.guided-project-langstons-ant-file-operations.exercise-read-game-from-file
+- learn.wwl.guided-project-langstons-ant-file-operations.knowledge-check
+- learn.wwl.guided-project-langstons-ant-file-operations.summary
+badge:
+  uid: learn.wwl.guided-project-langstons-ant-file-operations.badge

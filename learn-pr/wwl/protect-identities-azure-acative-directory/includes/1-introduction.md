@@ -8,6 +8,6 @@ After this module, you should be able to:
 
  -  Describe Windows Hello for Business
  -  Describe Windows Hello deployment and management
- -  Describe Azure AD Identity Protection
- -  Describe and manage self-service password reset in Azure AD
+ -  Describe Microsoft Entra ID Protection
+ -  Describe and manage self-service password reset in Microsoft Entra ID
  -  Describe and manage multi-factor authentication

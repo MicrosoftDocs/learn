@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-network-solutions.design-outbound-connectivity-routing
+title: Design outbound connectivity and routing
+metadata:
+  title: Design outbound connectivity and routing
+  description: "Design outbound connectivity with NAT and define routes in routing tables."
+  ms.date: 12/09/2024
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-design-outbound-connectivity-routing.md)]

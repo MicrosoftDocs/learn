@@ -2,14 +2,16 @@
 uid: learn.azure-intro-to-logic-apps.what-is-logic-apps
 title: What is Azure Logic Apps?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure Logic Apps?
-  description: An introduction to the Azure Logic apps service for creating and running automated integration workflows.
-  ms.date: 4/25/2019
+  description: This unit introduces you to Azure Logic Apps for building and running integration workflows to automate business processes.
+  ms.date: 11/18/2024
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-logic-apps.md)]
+

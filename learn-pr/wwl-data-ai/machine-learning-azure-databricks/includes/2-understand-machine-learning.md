@@ -20,7 +20,7 @@ This module focuses on supervised machine learning as that's the most common sce
 
     For example, a regression algorithm could be used to train a model that predicts the expected number of ice creams sold by a kiosk in a park on a given day based on features like the month of the year, the day of the week, the temperature, the humidity, and so on.
 
-- ***Classification*** algorithms in which the label is a discrete category (or *class*). Classification algorithms produce models in which the function (***f***) operates on the features (**y**) to calculate a *probability* value for each possible class, and returns the label (**x**) for the class with the highest probability.
+- ***Classification*** algorithms in which the label is a discrete category (or *class*). Classification algorithms produce models in which the function (***f***) operates on the features (**x**) to calculate a *probability* value for each possible class, and returns the label (**y**) for the class with the highest probability.
 
     For example, a classification algorithm could be used to train a model that predicts whether or not a patient has diabetes based on features like blood-insulin level, weight, height, age and so on. A classification model that identifies one of two possible classes (such as true or false) is an example of *binary* classification. Algorithms that predict probability for more than two classes (for example, differentiating between patients without diabetes, type 1 diabetes, or type 2 diabetes) are used for *multiclass* classification.
 

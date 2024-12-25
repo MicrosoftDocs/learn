@@ -2,13 +2,14 @@
 uid: learn.health-bot-enhanced.3-interrupting-scenario
 title: Interrupting scenario
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Interrupting scenario
   description: In this unit, you'll learn how to build a bot by using an interrupting scenario.
   author: shreyan1999
   ms.author: chnoring
-  ms.date: 07/27/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/16/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 15
 content: |

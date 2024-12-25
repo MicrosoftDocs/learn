@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-essentials.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure NetApp Files essentials.
+  ms.date: 11/22/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz: 
+  questions: 
+  - content: "Which Azure-native environment allows resources running on an Azure virtual machine in a virtual network that is peered to a network, to connect to the file storage provided by Azure NetApp Files?"
+    choices: 
+    - content: "Hybrid environments"
+      isCorrect: true
+      explanation: "Hybrid environments allow resources running in an on-premises network connected to the Azure virtual network to connect to the file storage provided by Azure NetApp Files."
+    - content: "Standard peered virtual network"
+      isCorrect: false
+      explanation: "Incorrect. Hybrid environments allow resources running in an on-premises network connected to the Azure virtual network."
+    - content: "Cross-region peered virtual network"
+      isCorrect: false
+      explanation: "Incorrect. This set-up allows resources running on an Azure virtual machine in a virtual network that's peered to the network containing the delegated subnet to connect to the file storage provided by Azure NetApp Files."
+    - content: "Local virtual networks"
+      isCorrect: false 
+      explanation: "Incorrect. A local virtual network allows resources to run on an Azure virtual machine in the same virtual network that contains the delegated subnet to connect to the file storage provided by Azure NetApp Files."
+  - content: "Which monitoring option in Azure NetApp Files system provides insight into subscription-level events, such as when a resource is modified or when a virtual machine is started?"
+    choices: 
+      - content: Azure NetApp Files metrics
+        isCorrect: false
+        explanation: "Incorrect. Azure NetApp Files provides metrics on allocated storage, actual storage usage, volume IOPS, and latency. With these metrics, you can gain a better understanding on the usage pattern and volume performance of your NetApp accounts."
+      - content: Azure Service Health 
+        isCorrect: false
+        explanation: "Incorrect. Azure Service Health provides a personalized view of the status of your Azure services in the regions where they're used. It's a health monitor, not an activity log."
+      - content: Azure Activity log
+        isCorrect: true
+        explanation: "Correct. The Activity log provides insight into subscription-level events."
+      - content: Capacity utilization monitoring 
+        isCorrect: false
+        explanation: "Incorrect. Capacity monitoring shows capacity utilization at the VM level, but not specific subscription-level events." 
+  - content: "Which metric for capacity pools describes the total logical space (GiB) used across volumes in a capacity pool?"
+    choices:
+      - content: Pool allocated size
+        isCorrect: false 
+        explanation: "Incorrect. This metric describes the provisioned size of the protocols."
+      - content: Pool consumed size 
+        isCorrect: true
+        explanation: "Correct. This metric describes the total logical space used by volumes in a capacity pool."
+      - content: Volume quota size 
+        isCorrect: false 
+        explanation: "Incorrect. Volume quota size pertains to individual units, which are constituents of capacity pools."
+      - content: Total snapshot size for the pool 
+        isCorrect: false
+        explanation: "Incorrect. This metric describes the size of all snapshots across all volumes in the capacity pool."

@@ -6,9 +6,9 @@ metadata:
   description: This unit covers various operations from the list module, such as arithmetic operations, sorting, and iteration.
   author: softchris
   ms.author: chnoring
-  ms.date: 07/28/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.date: 03/24/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 6
 content: |

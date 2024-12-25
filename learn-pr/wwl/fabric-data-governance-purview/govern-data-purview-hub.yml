@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.fabric-data-governance-purview.govern-data-purview-hub
+title: Govern data in the Microsoft Purview hub
+metadata:
+  title: Govern data in the Microsoft Purview hub
+  description: "Learn about the tools available for data governance in the Purview hub, once you connect to Fabric."
+  ms.date: 9/25/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-govern-data-purview-hub.md)]

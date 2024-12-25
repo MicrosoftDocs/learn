@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.iot.manage-monitor-devices-iot-hub-azure-monitor
+metadata:
+  title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
+  description: Learn about device management patterns and capabilities, and the solution monitoring tools available in Azure and how to apply them to the IoT Hub service.
+  ms.date: 01/07/2022
+  author: asergaz
+  ms.author: sergaz
+  ms.topic: learning-path
+title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
+prerequisites: |
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
+  - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
+  - Describe the concept of device twins and how devices twins are used.
+summary: |
+  Learn about device management patterns and capabilities, including bulk device management that can be implemented using features of IoT Hub and by developing code. You'll also learn about the solution monitoring tools available in Azure and how to apply them to the IoT Hub service, and how to create event logs that can be used to help troubleshoot your solution.
+iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
+levels:
+- intermediate
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+- azure-iot
+- azure-iot-hub
+- azure-iot-sdk
+- azure-monitor
+subjects:
+- iot
+modules:
+- learn.wwl.examine-device-management-concepts-methods
+- learn.wwl.examine-device-management-tools
+- learn.wwl.examine-approaches-to-device-management-at-scale
+- learn.wwl.examine-azure-iot-solution-monitoring-logging
+- learn.wwl.troubleshoot-device-connections-communication
+- learn.wwl.explore-iot-hub-monitoring
+trophy:
+  uid: learn.iot.manage-monitor-devices-iot-hub-azure-monitor.trophy

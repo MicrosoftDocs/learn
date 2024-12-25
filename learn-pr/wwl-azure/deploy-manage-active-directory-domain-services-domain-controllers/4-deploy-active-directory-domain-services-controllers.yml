@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.deploy-active-directory-domain-services-controllers
+title: Deploy Active Directory Domain Services domain controllers
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Deploy Active Directory Domain Services domain controllers
+  description: "Deploy Active Directory Domain Services domain controllers"
+  ms.date: 06/18/2024
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-deploy-active-directory-domain-services-controllers.md)]

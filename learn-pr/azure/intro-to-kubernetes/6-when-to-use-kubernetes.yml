@@ -3,14 +3,16 @@ uid: learn.intro-to-kubernetes.when-to-use-kubernetes
 title: When to use Kubernetes
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to use Kubernetes
   description: When to use Kubernetes
-  ms.date: 4/24/2020
+  ms.date: 11/13/2024
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 4
 content: |
   [!include[](includes/6-when-to-use-kubernetes.md)]
+

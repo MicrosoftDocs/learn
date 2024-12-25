@@ -2,15 +2,16 @@
 uid: learn.wwl.implement-app-registration.plan-your-line-of-business-application-registration-strategy
 title: Plan your line of business application registration strategy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan your line of business application registration strategy
   description: "Plan your line of business application registration strategy"
-  ms.date: 04/03/2023
+  ms.date: 12/18/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 12
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
 content: |
   [!include[](includes/2-plan-your-line-business-application-registration-strategy.md)]
