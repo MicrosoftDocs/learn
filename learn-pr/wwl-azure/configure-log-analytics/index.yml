@@ -39,7 +39,6 @@ products:
 units:
 - learn.wwl.configure-log-analytics.visualize-data
 - learn.wwl.configure-log-analytics.structure-queries
-- learn.wwl.configure-log-analytics.knowledge-check
 - learn.wwl.configure-log-analytics.summary-resources
 badge:
   uid: learn.wwl.configure-log-analytics.badge
