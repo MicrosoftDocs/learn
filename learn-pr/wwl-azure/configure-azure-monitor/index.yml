@@ -37,7 +37,6 @@ units:
 - learn.wwl.configure-azure-monitor.introduction
 - learn.wwl.configure-azure-monitor.describe-key-capabilities
 - learn.wwl.configure-azure-monitor.describe-components
-- learn.wwl.configure-azure-monitor.define-metrics-logs
 - learn.wwl.configure-azure-monitor.identify-data-types
 - learn.wwl.configure-azure-monitor.describe-activity-log-events
 - learn.wwl.configure-azure-monitor.query-activity-log
