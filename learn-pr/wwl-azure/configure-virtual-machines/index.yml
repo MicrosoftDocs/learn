@@ -39,7 +39,6 @@ subjects:
 - virtual-machine
 units:
 - learn.wwl.configure-virtual-machines.review-cloud-services-responsibilities
-- learn.wwl.configure-virtual-machines.plan
 - learn.wwl.configure-virtual-machines.simulation-create-virtual-machines
 - learn.wwl.configure-virtual-machines.summary-resources
 badge:
