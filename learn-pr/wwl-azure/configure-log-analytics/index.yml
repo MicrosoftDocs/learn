@@ -37,6 +37,5 @@ roles:
 products:
 - azure-log-analytics
 units:
-- learn.wwl.configure-log-analytics.visualize-data
 badge:
   uid: learn.wwl.configure-log-analytics.badge
