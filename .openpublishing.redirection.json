@@ -36502,6 +36502,11 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machines/3-plan.md",
       "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/2-review-cloud-services-responsibilities.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
     }
   ]
 }
