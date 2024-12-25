@@ -38,6 +38,5 @@ products:
 - azure-log-analytics
 units:
 - learn.wwl.configure-log-analytics.visualize-data
-- learn.wwl.configure-log-analytics.summary-resources
 badge:
   uid: learn.wwl.configure-log-analytics.badge
