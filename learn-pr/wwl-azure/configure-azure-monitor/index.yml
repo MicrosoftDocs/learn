@@ -36,7 +36,6 @@ subjects:
 units:
 - learn.wwl.configure-azure-monitor.introduction
 - learn.wwl.configure-azure-monitor.query-activity-log
-- learn.wwl.configure-azure-monitor.interactive-lab-simulation-monitor
 - learn.wwl.configure-azure-monitor.knowledge-check
 - learn.wwl.configure-azure-monitor.summary-resources
 badge:
