@@ -36477,6 +36477,11 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machines/6-create-portal.md",
       "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/4-determine-virtual-machine-sizing.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
     }
   ]
 }
