@@ -43,7 +43,6 @@ units:
 - learn.wwl.configure-virtual-machines.plan
 - learn.wwl.configure-virtual-machines.determine-virtual-machine-sizing
 - learn.wwl.configure-virtual-machines.determine-virtual-machine-storage
-- learn.wwl.configure-virtual-machines.create-portal
 - learn.wwl.configure-virtual-machines.simulation-create-virtual-machines
 - learn.wwl.configure-virtual-machines.knowledge-check
 - learn.wwl.configure-virtual-machines.summary-resources
