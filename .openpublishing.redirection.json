@@ -36382,6 +36382,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-monitor/6-describe-activity-log-events.md",
       "redirect_url": "/training/modules/intro-to-azure-monitor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-monitor/3-describe-components.md",
+      "redirect_url": "/training/modules/intro-to-azure-monitor/",
+      "redirect_document_id": false
     }
   ]
 }
