@@ -4392,3 +4392,8 @@ achievements:
   title: Configure Azure Monitor
   summary: Learn how to configure Azure Monitor, including querying the Azure Monitor activity log.
   iconUrl: /training/achievements/azure-monitor-configure.svg
+- uid: learn.wwl.configure-log-analytics.badge
+  type: badge
+  title: Configure Log Analytics
+  summary: You learn how to configure Log Analytics including structuring queries.
+  iconUrl: /training/achievements/log-analytics-configure.svg
