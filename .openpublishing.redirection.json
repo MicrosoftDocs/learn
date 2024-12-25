@@ -36467,6 +36467,11 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machines/index.md",
       "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/7-connect-to.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
     }
   ]
 }
