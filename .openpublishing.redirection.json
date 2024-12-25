@@ -36447,6 +36447,11 @@
       "source_path": "learn-pr/wwl-azure/configure-log-analytics/6-knowledge-check.md",
       "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/5-structure-queries.md",
+      "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
+      "redirect_document_id": false
     }
   ]
 }
