@@ -4397,3 +4397,8 @@ achievements:
   title: Configure Log Analytics
   summary: You learn how to configure Log Analytics including structuring queries.
   iconUrl: /training/achievements/log-analytics-configure.svg
+- uid: learn.wwl.configure-virtual-machines.badge
+  type: badge
+  title: Configure virtual machines
+  summary: Learn how to configure virtual machines including sizing, storage, and connections.
+  iconUrl: /training/achievements/virtual-machines-configure.svg
