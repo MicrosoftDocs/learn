@@ -41,7 +41,6 @@ units:
 - learn.wwl.configure-virtual-machines.introduction
 - learn.wwl.configure-virtual-machines.review-cloud-services-responsibilities
 - learn.wwl.configure-virtual-machines.plan
-- learn.wwl.configure-virtual-machines.determine-virtual-machine-sizing
 - learn.wwl.configure-virtual-machines.determine-virtual-machine-storage
 - learn.wwl.configure-virtual-machines.simulation-create-virtual-machines
 - learn.wwl.configure-virtual-machines.knowledge-check
