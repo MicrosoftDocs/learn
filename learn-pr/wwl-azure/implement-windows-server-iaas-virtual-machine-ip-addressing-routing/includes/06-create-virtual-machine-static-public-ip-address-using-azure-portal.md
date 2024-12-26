@@ -1,12 +1,9 @@
-
-
 In this demonstration, you'll learn to:
 
 - Create a VM.
 - Add a static public IP address.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AP7Z]
-
 
 ## Next steps
 
