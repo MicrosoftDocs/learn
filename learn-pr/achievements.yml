@@ -5,6 +5,11 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.send-crop-weather-alerts.badge
+  type: badge
+  title: Use Twilio and Azure Maps to receive text message weather alerts 
+  summary: In this module, you'll create an application that allows farmers to use text messaging to set up temperature alerts. These alerts can help farmers know when to plant, when to water, or when to protect their crops. 
+  iconUrl: /training/achievements/advocates/send-crop-weather-alerts.svg 
 - uid: learn.monitor-vm-performance-using-azure-monitor-for-vms.badge
   type: badge
   title: Monitor performance of virtual machines by using Azure Monitor VM Insights
