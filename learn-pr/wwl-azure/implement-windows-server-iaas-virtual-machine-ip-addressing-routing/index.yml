@@ -11,7 +11,7 @@ metadata:
 title: Implement Windows Server IaaS VM IP addressing and routing
 summary: In this module, you'll learn how to manage Microsoft Azure virtual networks (VNets) and IP address configuration for Windows Server infrastructure as a service (IaaS) virtual machines (VM)s.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Implement an Azure virtual network
   - Implement  IP Address Allocation in Azure
   -  Assign and manage IP addresses
