@@ -54,7 +54,6 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn.wwl.configure-virtual-machines
 - learn.wwl.configure-virtual-machine-availability
 - learn.wwl.configure-app-service-plans
 - learn.wwl.configure-azure-app-services

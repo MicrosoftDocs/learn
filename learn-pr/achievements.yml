@@ -4387,3 +4387,18 @@ achievements:
   title: Configure Network Watcher
   summary: You learn how to configure Network Watcher and troubleshoot common networking problems.
   iconUrl: /training/achievements/network-watcher-configure.svg
+- uid: learn.wwl.configure-azure-monitor.badge
+  type: badge
+  title: Configure Azure Monitor
+  summary: Learn how to configure Azure Monitor, including querying the Azure Monitor activity log.
+  iconUrl: /training/achievements/azure-monitor-configure.svg
+- uid: learn.wwl.configure-log-analytics.badge
+  type: badge
+  title: Configure Log Analytics
+  summary: You learn how to configure Log Analytics including structuring queries.
+  iconUrl: /training/achievements/log-analytics-configure.svg
+- uid: learn.wwl.configure-virtual-machines.badge
+  type: badge
+  title: Configure virtual machines
+  summary: Learn how to configure virtual machines including sizing, storage, and connections.
+  iconUrl: /training/achievements/virtual-machines-configure.svg

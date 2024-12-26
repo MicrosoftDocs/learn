@@ -26,7 +26,6 @@ products:
 subjects:
 - virtual-machine
 modules:
-- learn.wwl.configure-virtual-machines
 - learn.add-and-size-disks-in-azure-virtual-machines
 - learn.azure.monitor-azure-vm-using-diagnostic-data
 - learn.protect-virtual-machines-with-azure-backup
