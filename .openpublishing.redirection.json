@@ -36367,6 +36367,156 @@
       "source_path": "learn-pr/wwl-azure/configure-network-watcher/5-visualize-network-topology.md",
       "redirect_url": "/training/modules/intro-to-azure-network-watcher/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-monitor/index.md",
+      "redirect_url": "/training/modules/intro-to-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-monitor/4-define-metrics-logs.md",
+      "redirect_url": "/training/modules/intro-to-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-monitor/6-describe-activity-log-events.md",
+      "redirect_url": "/training/modules/intro-to-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-monitor/3-describe-components.md",
+      "redirect_url": "/training/modules/intro-to-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-monitor/2-describe-key-capabilities.md",
+      "redirect_url": "/training/modules/intro-to-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-monitor/5-identify-data-types.md",
+      "redirect_url": "/training/modules/intro-to-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-monitor/8-simulation-monitor.md",
+      "redirect_url": "/training/modules/intro-to-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-monitor/1-introduction.md",
+      "redirect_url": "/training/modules/intro-to-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-monitor/9-knowledge-check.md",
+      "redirect_url": "/training/modules/intro-to-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-monitor/7-query-activity-log.md",
+      "redirect_url": "/training/modules/intro-to-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-monitor/10-summary-resources.md",
+      "redirect_url": "/training/modules/intro-to-azure-monitor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/index.md",
+      "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/3-create-workspace.md",
+      "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/2-determine-uses.md",
+      "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/1-introduction.md",
+      "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/6-knowledge-check.md",
+      "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/5-structure-queries.md",
+      "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/7-summary-resources.md",
+      "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/4-visualize-data.md",
+      "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/index.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/7-connect-to.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/6-create-portal.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/4-determine-virtual-machine-sizing.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/5-determine-virtual-machine-storage.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/1-introduction.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/9-knowledge-check.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/3-plan.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/2-review-cloud-services-responsibilities.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/8-simulation-create-virtual-machines.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machines/10-summary-resources.md",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
     }
   ]
 }

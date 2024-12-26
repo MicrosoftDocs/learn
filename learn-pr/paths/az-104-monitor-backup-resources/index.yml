@@ -59,8 +59,6 @@ subjects:
 - cloud-computing
 modules:
 - learn.introduction-to-azure-backup
-- learn.wwl.configure-azure-monitor
-- learn.wwl.configure-log-analytics
 - learn.incident-response-with-alerting-on-azure
 - learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.azure.monitor-azure-vm-using-diagnostic-data
