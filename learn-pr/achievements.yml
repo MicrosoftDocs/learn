@@ -4232,7 +4232,7 @@ achievements:
   title: Optimize your web applications by caching read-only data with Redis
   summary: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
   iconUrl: /training/achievements/optimize-web-apps-with-redis.svg
-- uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio
+- uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.badge
   type: badge
   title: Share your location as a text message using Azure Functions and Twilio
   summary: Learn how to use location tracking on your phone mixed with Azure Functions and Twilio to share your location with your friends as a text message.
