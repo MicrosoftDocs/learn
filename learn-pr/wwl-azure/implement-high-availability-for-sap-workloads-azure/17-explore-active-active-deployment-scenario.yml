@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-activeactive-deployment-scenario
 title: Explore the Active/Active deployment scenario
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the Active/Active deployment scenario
   description: "Explore the Active/Active deployment scenario."
-  ms.date: 09/20/2024
+  ms.date: 12/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

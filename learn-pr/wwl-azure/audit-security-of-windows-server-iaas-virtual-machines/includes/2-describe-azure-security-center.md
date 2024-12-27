@@ -1,40 +1,34 @@
+To address the unique security challenges that a hybrid environment presents, such as rapidly changing services, sophisticated attacks, and increased workload, Contoso IT staff need tools to help assess their security posture and identify risks. Ideally, they want to deploy those tools with minimal effort. Microsoft Defender for Cloud can help them meet all these requirements.
 
+## What is Microsoft Defender for Cloud
 
-To address the unique security challenges that a hybrid environment presents, such as rapidly changing services, sophisticated attacks, and increased workload, Contoso IT staff need tools to help assess their security posture and identify risks. Ideally, they want to deploy those tools with minimal effort. Azure's Security Center can help them meet all these requirements.
+*Microsoft Defender for Cloud* is a cloud-based tool for managing the security of your cloud and on-premises infrastructure. With Microsoft Defender for Cloud capabilities, you can:
 
-## What is Azure Security Center
+- Improve your security position. Use Microsoft Defender for Cloud to implement security best practices across your IaaS, platform as a service (PaaS), data, and on-premises resources. In addition to security best practices, you can also track compliance against regulatory standards.
+- Protect your environment. Monitor for security threats to your cloud and on-premises servers, including identifying misconfigurations and providing server Endpoint Detection and Response (EDR) with Microsoft Defender for Endpoint.
+- Protect your data. Identify suspicious activity such as potential data breaches within your servers, files, databases, data warehouses, and storage accounts. Microsoft Defender for Cloud can also perform automatic data classification in your Azure SQL databases.
 
-*Security Center* is a cloud-based tool for managing the security of your cloud and on-premises infrastructure. With Security Center capabilities, you can:
+## How Microsoft Defender for Cloud works in hybrid environments
 
-- Improve your security position. Use Security Center to implement security best practices across your IaaS, platform as a service (PaaS), data, and on-premises resources. In addition to security best practices, you can also track compliance against regulatory standards.
-- Protect your environment. Monitor for security threats to your cloud and on-premises servers, including identifying misconfigurations and providing server Endpoint Detection and Response (EDR) with Microsoft Defender Advanced Threat Protection (ATP).
-- Protect your data. Identify suspicious activity such as potential data breaches within your servers, files, databases, data warehouses, and storage accounts. Security Center can also perform automatic data classification in your Azure SQL databases.
+In addition to Microsoft Defender for Cloud capabilities for monitoring and protecting Azure IaaS, PaaS, and data resources, Microsoft Defender for Cloud also helps protect servers outside of Azure. From the Azure portal, you can install the Log Analytics agent on your on-premises Windows Server and Linux server VMs and non&ndash;Azure cloud VMs. The agent then collects the data that Microsoft Defender for Cloud needs for monitoring and managing those resources.
 
-[![A screenshot of the Overview page on the Azure Security Center blade.](../media/m1-security-center.png)](../media/m1-security-center.png#lightbox)
-
-## How Security Center works in hybrid environments
-
-In addition to Security Center capabilities for monitoring and protecting Azure IaaS, PaaS, and data resources, Security Center also helps protect servers outside of Azure. From the Azure portal, you can install the Log Analytics agent on your on-premises Windows Server and Linux server VMs and non&ndash;Azure cloud VMs. The agent then collects the data that Security Center needs for monitoring and managing those resources.
-
-Security Center collects event log events and Event Tracing for Windows events from the agents. It then scans security-related configurations, and native events in Azure. The Log Analytics agent also collects crash dumps when applications fail, and it enables command-line auditing. It analyzes these data sources and generates a custom list of hardening tasks that it recommends you perform, and it generates security alerts that can be sent to your SIEM solution.
+Microsoft Defender for Cloud collects event log events and Event Tracing for Windows events from the agents. It then scans security-related configurations, and native events in Azure. The Log Analytics agent also collects crash dumps when applications fail, and it enables command-line auditing. It analyzes these data sources and generates a custom list of hardening tasks that it recommends you perform, and it generates security alerts that can be sent to your SIEM solution.
 
 > [!NOTE]
-> In addition to the Log Analytics agent, the Microsoft Defender ATP sensor is automatically enabled on Windows Server computers that are onboarded to Security Center.
+> In addition to the Log Analytics agent, the Microsoft Defender for Endpoint sensor is automatically enabled on Windows Server computers that are onboarded to Microsoft Defender for Cloud.
 
 ### Notifications
 
-One of the first things to do when onboarding to Security Center is to provide contact information so Security Center can notify you when it detects compromised resources. In Security Center, select **Email notifications** on the **Pricing & settings** page and then provide an email address and phone number. Choose whether to get alerts for high-severity events and if all users with an Owner role in the subscription should receive notifications.
+One of the first things to do when onboarding to Microsoft Defender for Cloud is to provide contact information so Microsoft Defender for Cloud can notify you when it detects compromised resources. In Microsoft Defender for Cloud, select **Email notifications** on the **Pricing & settings** page and then provide an email address and phone number. Choose whether to get alerts for high-severity events and if all users with an Owner role in the subscription should receive notifications.
 
-![A screenshot of the Settings email notifications page in the Azure Security Center. The administrator has entered a contact email address and telephone number. They also have enabled email notifications for high severity alerts.](../media/m1-security-center-email.png)
+### Microsoft Defender for Cloud feature coverage for VMs
 
-### Security Center feature coverage for VMs
-
-Security Center provides a wide variety of features, some of which are available for Azure VMs and PaaS services as part of the Free service tier, and some are available only as part of the Standard tier.
+Microsoft Defender for Cloud provides a wide variety of features, some of which are available for Azure VMs and PaaS services as part of the Free service tier, and some are available only as part of the Standard tier.
 
 > [!NOTE]
 > Only some features apply to on-premises servers and VMs, and those that do apply require the Standard tier.
 
-The following list are some of the common Security Center features:
+Some common Microsoft Defender for Cloud features include:
 
 - Microsoft Intune Endpoint Protection assessment
 - Missing operating system patches assessment
@@ -46,7 +40,7 @@ The following list are some of the common Security Center features:
 - Adaptive application controls
 - File integrity monitoring
 - Fileless security alerts
-- Defender ATP
+- Defender for Endpoint
 - Regulatory compliance dashboard and reports
 - Adaptive network controls
 - Adaptive network hardening
@@ -55,4 +49,4 @@ The following list are some of the common Security Center features:
 - Network map
 - Network-based security alerts
 
-You can find out which Security Center features are included with which pricing tier, and learn more about what they do by reviewing [Feature coverage for machines](https://aka.ms/feature-coverage-for-machines?azure-portal=true).
+You can find out which Microsoft Defender for Cloud features are included with which pricing tier, and learn more about what they do by reviewing [Feature coverage for machines](https://aka.ms/feature-coverage-for-machines?azure-portal=true).
