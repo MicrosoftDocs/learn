@@ -36577,6 +36577,41 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machines/10-summary-resources.md",
       "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/pytorch-fundamentals/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/1-introduction.yml",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/2-understand-audio-data.yml",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/3-visualizations-transforms.yml",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/4-speech-model.yml",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/5-summary.yml",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/index.yml",
+      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_document_id": false
     }
   ]
 }

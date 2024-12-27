@@ -4407,3 +4407,13 @@ achievements:
   title: Configure virtual machines
   summary: Learn how to configure virtual machines including sizing, storage, and connections.
   iconUrl: /training/achievements/virtual-machines-configure.svg
+- uid: learn.pytorch.pytorch-fundamentals.trophy
+  type: trophy
+  title: PyTorch Fundamentals
+  summary: Learn the fundamentals of deep learning with PyTorch! This beginner friendly learning path will introduce key concepts to building machine learning models in multiple domains include speech, vision, and natural language processing.
+  iconUrl: /training/achievements/pytorch-intro-trophy.svg
+- uid: learn.pytorch.intro-audio-classification.badge
+  type: badge
+  title: Introduction to audio classification with PyTorch
+  summary: In this Learn module, you learn how to do audio classification with PyTorch. You'll understand more about audio data features and how to transform the sound signals into a visual representation called spectrograms. Then you'll build the model by using computer vision on the spectrogram images. That's right, you can turn audio into an image format, and then do computer vision to classify the word spoken!
+  iconUrl: /training/achievements/pytorch-audio-data.svg
