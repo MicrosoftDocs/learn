@@ -1,6 +1,66 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/0-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/1-create-twilio-account-launch-vs.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/2-create-your-xamarin-forms-app-with-xamarin-essentials.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/3-build-your-xamarin-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/4-detect-the-users-location.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/5-create-an-azure-functions-mobile-backend.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/6-call-the-mobile-backend.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/7-bind-the-azure-function-to-twilio.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/8-publish-to-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/9-summary-and-cleanup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/1-introduction.yml",
       "redirect_url": "/training/modules/monitor-fabric-items/"
     },
