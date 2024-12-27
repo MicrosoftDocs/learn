@@ -28,7 +28,7 @@ Microsoft Defender for Cloud provides a wide variety of features, some of which 
 > [!NOTE]
 > Only some features apply to on-premises servers and VMs, and those that do apply require the Standard tier.
 
-The following list are some of the common Microsoft Defender for Cloud features:
+Some common Microsoft Defender for Cloud features include:
 
 - Microsoft Intune Endpoint Protection assessment
 - Missing operating system patches assessment
