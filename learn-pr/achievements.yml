@@ -4407,3 +4407,8 @@ achievements:
   title: Configure virtual machines
   summary: Learn how to configure virtual machines including sizing, storage, and connections.
   iconUrl: /training/achievements/virtual-machines-configure.svg
+- uid: learn.choose-azure-service-to-integrate-and-automate-business-processes.badge
+  type: badge
+  title: Choose the best Azure service to automate your business processes
+  summary: In this module, we discuss how to choose the appropriate Azure service to integrate and automate business processes.
+  iconUrl: /training/achievements/choose-azure-service-to-integrate-and-automate-business-processes.svg

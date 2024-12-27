@@ -36577,6 +36577,46 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machines/10-summary-resources.md",
       "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/2-identify-technology-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/3-analyze-the-decision-criteria.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/4-logic-apps-and-flow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/5-web-jobs-and-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
     }
   ]
 }
