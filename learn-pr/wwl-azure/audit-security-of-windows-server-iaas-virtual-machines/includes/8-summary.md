@@ -1,6 +1,6 @@
-The IT staff at Contoso need to secure VM resources both in Azure and on-premises.
+The IT operations team at Contoso need to secure VM resources both in Azure and on-premises.
 
-In this module, you learned about using the tools available in Azure to assess current Azure resources and OS internal security configurations. You also learned about enabling Microsoft Defender for Cloud in hybrid environments, and how to onboard Windows Server computers. Finally, you learned to use Microsoft Defender for Cloud to protect your resources, and about Azure Sentinel, SIEM, and SOAR.
+In this module, you learned about using the tools available in Azure to assess current Azure resources and OS internal security configurations. You also learned about enabling Microsoft Defender for Cloud in hybrid environments, and how to onboard Windows Server computers. Finally, you learned to use Microsoft Defender for Cloud to protect your resources, and about Microsoft Sentinel, SIEM, and SOAR.
 
 Now, you can help the Contoso IT team use Microsoft Defender for Cloud to assess the security configuration of their VM resources and the Windows Server OS that's running on the VMs.
 
