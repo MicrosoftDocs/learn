@@ -4407,3 +4407,13 @@ achievements:
   title: Configure virtual machines
   summary: Learn how to configure virtual machines including sizing, storage, and connections.
   iconUrl: /training/achievements/virtual-machines-configure.svg
+- uid: learn.pytorch.intro-machine-learning.badge
+  type: badge
+  title: Introduction to PyTorch
+  summary: In this module, you learn key concepts used to build machine learning models with PyTorch. You also train a neural network model that recognizes and classifies images.
+  iconUrl: /training/achievements/pytorch-intro.svg
+- uid: learn.pytorch.intro-natural-language-processing.badge
+  type: badge
+  title: Introduction to Natural Language Processing with PyTorch
+  summary: This module explores different neural network architectures for dealing with natural language texts. **Natural Language Processing** (NLP) is growing in importance due to the ability of language models to accurately "understand" human language faster while using unsupervised training on large text corpora. This module covers different NLP techniques such as using bag-of-words (BoW), word embeddings and recurrent neural networks for classifying text from news headlines to one of the 4 categories (World, Sports, Business, and Sci-Tech).
+  iconUrl: /training/achievements/pytorch-natural-language-process.svg
