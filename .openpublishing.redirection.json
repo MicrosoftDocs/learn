@@ -36580,57 +36580,57 @@
     },
     {
       "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/1-introduction.yml",
-      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/2-create-azure-function-maven-archetype.yml",
-      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/3-exercise-create-azure-function-maven-archetype.yml",
-      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/4-run-local-azure-function.yml",
-      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/5-exercise-run-local-azure-function.yml",
-      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/6-deploy-function-azure.yml",
-      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/7-exercise-deploy-function-azure.yml",
-      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/8-add-logging-to-azure-function.yml",
-      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/9-exercise-add-logging-to-azure-function.yml",
-      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/10-summary.yml",
-      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/index.yml",
-      "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
       "redirect_document_id": false
     }
   ]
