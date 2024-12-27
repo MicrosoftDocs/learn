@@ -1,4 +1,4 @@
-Given the variety of Azure infrastructure options, nearly all existing SAP NetWeaver and S/4HANA systems can be hosted in Azure. Azure supports virtual machine SKUs with terabytes of memory and more than 200 CPUs.
+Given the variety of Azure infrastructure options, nearly all existing SAP NetWeaver, and S/4HANA systems can be hosted in Azure. Azure supports virtual machine SKUs with terabytes of memory and more than 200 CPUs.
 
 ## Verify workload deployment requirements
 
@@ -32,7 +32,7 @@ Keep in mind that the Azure Virtual Machine limits, provided in the previous ref
 
 ## Resiliency requirements and other considerations
 
-The next step is to evaluate resiliency requirements. In order to mitigate the rare cases where virtual machines are affected by planned maintenance or a platform-related issue, and to facilitate patching guest OS or DBMS components, you need to design high availability and disaster recovery for your production SAP systems.
+The next step is to ensure high availability and disaster recovery for your production SAP systems, you need to evaluate resiliency requirements as the next step. This is crucial to mitigate the infrequent instances where planned maintenance or platform-related issues affect virtual machines, and to aid in patching guest OS or DBMS components.
 
 In addition, your planning should account for manageability, data protection and security, authentication, authorization, and access control, as well as monitoring, licensing, support, and pricing considerations.
 

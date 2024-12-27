@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-center-sap-solutions.examine-prerequisites-azure-center-sap-solutions
 title: Examine prerequisites for Azure Center for SAP solutions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine prerequisites for Azure Center for SAP solutions
   description: "Explore the prerequisites needed to use Azure Center for SAP solutions."
-  ms.date: 08/01/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

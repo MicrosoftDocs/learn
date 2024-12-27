@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/26/2021
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -13,36 +13,36 @@ durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How many users and devices does Windows Server 2019 Essentials support?"
+  - content: "How many users and devices does Windows Server Essentials support?"
     choices:
     - content: "25 users and 50 devices"
       isCorrect: true
-      explanation: "That's correct. This edition allows up to 25 users and 50 devices."
+      explanation: "Correct. This edition allows up to 25 users and 50 devices."
     - content: "50 users and 25 devices"
       isCorrect: false
-      explanation: "That's incorrect. This edition allows up to 25 users and 50 devices."
+      explanation: "Incorrect. This edition allows up to 25 users and 50 devices."
     - content: "50 users and 50 devices"
       isCorrect: false
-      explanation: "That's incorrect. This edition allows up to 25 users and 50 devices."
-  - content: "Contoso's planning team decides to use Windows Server SAC update servicing. For how many months after release are feature updates supported?"
+      explanation: "Incorrect. This edition allows up to 25 users and 50 devices."
+  - content: "What are the following are requirements of using Pay-as-you-go licensing for Windows Server 2025?"
     choices:
-    - content: "12 months"
-      isCorrect: false
-      explanation: "That's incorrect. SAC feature releases are supported for longer."
-    - content: "18 months"
+    - content: "Azure Arc"
       isCorrect: true
-      explanation: "That's correct. These releases will be supported for 18 months from the initial date of release."
-    - content: "36 months"
+      explanation: "Correct. To use Pay-as-you-go licensing with Windows Server, you need to connect the server instance to Azure with Azure Arc."
+    - content: "Server Core"
       isCorrect: false
-      explanation: "That's incorrect. SAC feature releases are supported for fewer months."
+      explanation: "Incorrect. Pay-as-you-go licensing works with the standard desktop and server core installation options of Windows Server 2025."
+    - content: "Microsoft Entra Connect"
+      isCorrect: false
+      explanation: "Incorrect. Pay-as-you-go licensing requires Azure Arc but doesn't require Microsoft Entra Connect."
   - content: "Which edition of Windows Server includes licensing for a maximum of two VMs or Hyper-V containers?"
     choices:
-    - content: "Windows Server 2019 Datacenter edition"
+    - content: "Windows Server Datacenter edition"
       isCorrect: false
-      explanation: "That's incorrect. This is not a feature of Windows Server 2019 Datacenter edition licensing."
-    - content: "Windows Server 2019 Standard edition"
+      explanation: "Incorrect. This isn't a feature of Windows Server Datacenter edition licensing."
+    - content: "Windows Server Standard edition"
       isCorrect: true
-      explanation: "That's correct. Standard edition includes licensing for two VMs or Hyper-V containers."
-    - content: "Windows Server 2019 Essentials edition"
+      explanation: "Correct. Standard edition includes licensing for two VMs or Hyper-V containers."
+    - content: "Windows Server Essentials edition"
       isCorrect: false
-      explanation: "That's incorrect. This is not a feature of Windows Server 2019 Essentials edition licensing."
+      explanation: "Incorrect. This isn't a feature of Windows Server Essentials edition licensing."

@@ -18,7 +18,7 @@ Set up the failover cluster by using Failover Cluster Manager:
 
 To configure Cloud Witness, you must have a valid Azure Storage Account which can be used to store the blob file (used for arbitration). Cloud Witness creates a well-known Container **msft-cloud-witness** under the Microsoft Storage Account. Cloud Witness writes a single blob file with the corresponding cluster's unique ID used as the file name of the blob file under this msft-cloud-witness container. This means that you can use the same Microsoft Azure Storage Account to configure a Cloud Witness for multiple different clusters.
 
-When you use the same Azure Storage Account for configuring Cloud Witness for multiple different clusters, a single msft-cloud-witness container gets created automatically. This container will contain one-blob file per cluster.
+When you use the same Azure Storage Account for configuring Cloud Witness for multiple different clusters, a single msft-cloud-witness container gets created automatically. This container contains one-blob file per cluster.
 
 When creating a storage account, keep in mind that:
 
@@ -26,7 +26,7 @@ When creating a storage account, keep in mind that:
 - You can't use Azure Premium Storage for a Cloud Witness.
 - For Replication, select Locally redundant storage (LRS). Failover Clustering uses the blob file as the arbitration point, which requires some consistency guarantees when reading the data. Therefore you must select Locally redundant storage for Replication type.
 
-When you create a storage account, it's associated with two Access Keys that are automatically generated - Primary Access key and Secondary Access key. For a first-time creation of Cloud Witness, use the Primary Access Key. There is no restriction regarding which key to use for Cloud Witness. You can identify the values of a Storage Account keys directly from the Azure portal or programmatically.
+When you create a storage account, it's associated with two Access Keys that are automatically generated - Primary Access key and Secondary Access key. For a first-time creation of Cloud Witness, use the Primary Access Key. There's no restriction regarding which key to use for Cloud Witness. You can identify the values of a Storage Account keys directly from the Azure portal or programmatically.
 
 When you create a Storage Account, the following URLs are generated using the format: `https://[Storage Account Name].[Storage Type].[Endpoint];`. Cloud Witness always uses Blob as the storage type. Azure uses .core.windows.net as the Endpoint. When configuring Cloud Witness, you can configure it with a different endpoint as per your scenario (for example the Microsoft Azure datacenter in China has a different endpoint).
 

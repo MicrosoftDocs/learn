@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-storage.types
 title: Explore Azure Storage types
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Storage types
   description: "Explore the different Azure Storage types, including blobs, tables, queues, and files."
-  ms.date: 08/13/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

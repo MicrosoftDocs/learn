@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-compute.examine-azure-virtual-machine-compute-considerations
 title: Examine Azure Virtual Machine compute considerations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine Azure Virtual Machine compute considerations
   description: "Examine Azure Virtual Machine compute considerations."
-  ms.date: 09/19/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

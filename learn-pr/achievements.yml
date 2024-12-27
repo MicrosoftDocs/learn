@@ -4232,6 +4232,11 @@ achievements:
   title: Optimize your web applications by caching read-only data with Redis
   summary: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
   iconUrl: /training/achievements/optimize-web-apps-with-redis.svg
+- uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.badge
+  type: badge
+  title: Share your location as a text message using Azure Functions and Twilio
+  summary: Learn how to use location tracking on your phone mixed with Azure Functions and Twilio to share your location with your friends as a text message.
+  iconUrl: /training/achievements/send-location-over-sms-from-mobile-using-azure-functions-twilio.svg
 - uid: learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.badge
   type: badge
   title: Build reports using Power BI within Azure Synapse Analytics
@@ -4372,3 +4377,33 @@ achievements:
   title: Configure user and group accounts
   summary: Learn how to configure user and group accounts.
   iconUrl: /training/achievements/user-group-accounts-configure.svg
+- uid: learn.wwl.configure-azure-application-gateway.badge
+  type: badge
+  title: Configure Azure Application Gateway
+  summary: Learn how to configure Azure Application Gateway.
+  iconUrl: /training/achievements/azure-application-gateway-configure.svg
+- uid: learn.wwl.configure-azure-load-balancer.badge
+  type: badge
+  title: Configure Azure Load Balancer
+  summary: Learn how to configure an internal or public load balancer.
+  iconUrl: /training/achievements/azure-load-balancer-configure.svg
+- uid: learn.wwl.configure-network-watcher.badge
+  type: badge
+  title: Configure Network Watcher
+  summary: You learn how to configure Network Watcher and troubleshoot common networking problems.
+  iconUrl: /training/achievements/network-watcher-configure.svg
+- uid: learn.wwl.configure-azure-monitor.badge
+  type: badge
+  title: Configure Azure Monitor
+  summary: Learn how to configure Azure Monitor, including querying the Azure Monitor activity log.
+  iconUrl: /training/achievements/azure-monitor-configure.svg
+- uid: learn.wwl.configure-log-analytics.badge
+  type: badge
+  title: Configure Log Analytics
+  summary: You learn how to configure Log Analytics including structuring queries.
+  iconUrl: /training/achievements/log-analytics-configure.svg
+- uid: learn.wwl.configure-virtual-machines.badge
+  type: badge
+  title: Configure virtual machines
+  summary: Learn how to configure virtual machines including sizing, storage, and connections.
+  iconUrl: /training/achievements/virtual-machines-configure.svg

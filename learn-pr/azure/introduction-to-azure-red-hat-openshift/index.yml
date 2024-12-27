@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Familiarity with Azure.
   - Basic understanding of Kubernetes concepts and cloud-native architecture.
-iconUrl: /training/achievements/introduction-to-red-hat-openshift.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

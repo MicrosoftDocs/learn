@@ -3,20 +3,14 @@ This module provided you with the necessary knowledge to upgrade and migrate an 
 Now that you have reviewed this module, you should be able to:
 
 - Compare upgrading an AD DS forest and migrating to a new AD DS forest.
-
 - Describe how to upgrade an existing AD DS forest.
-
 - Describe how to migrate to a new AD DS forest.
-
 - Describe Active Directory Migration Tool (ADMT).
 
 ## Resources
 
 Use these resources to discover more.
 
-- [Upgrade Domain Controllers to Windows Server 2016](/windows-server/identity/ad-ds/deploy/upgrade-domain-controllers)
-
-- [Running ADPrep.exe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd464018(v=ws.10))
-
+- [Upgrade domain controllers to a newer version of Windows Server](/windows-server/identity/ad-ds/deploy/upgrade-domain-controllers)
+- [ADPrep.exe](/windows-server/administration/windows-commands/adprep)
 - [Forest and Domain Functional Levels](/windows-server/identity/ad-ds/active-directory-functional-levels)
-
