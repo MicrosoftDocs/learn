@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.examine-capabilities-of-azure-infrastructure
 title: Examine high availability capabilities of Azure infrastructure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine high availability capabilities of Azure infrastructure
   description: "Explore the principles and options behind the high availability capabilities of Azure infrastructure."
-  ms.date: 09/20/2024
+  ms.date: 12/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
