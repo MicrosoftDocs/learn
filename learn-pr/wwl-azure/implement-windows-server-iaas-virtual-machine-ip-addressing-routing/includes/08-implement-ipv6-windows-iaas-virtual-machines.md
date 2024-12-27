@@ -1,6 +1,3 @@
-
-
-
 Contoso hosts a number of applications in their on-premises portfolio that use IPv6. You know that Windows Server and Windows 10 devices both support dual-stack IPv6 and IPv4. You need to investigate Azure's support for IPv6 so that the application workloads can be migrated to Azure.
 
 ## What is IPv6 for Azure VNet?
