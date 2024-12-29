@@ -18,7 +18,7 @@ You can download the MARS agent direct from the Azure portal using the following
 5. For **Prepare infrastructure**, in the **Install Recovery Services agent** section, download the MARS agent.
 6. In the download menu, select **Save**. The **MARSagentinstaller.exe** file is saved automatically to your **Downloads** folder.
 7. Select **Already download or using the latest Recovery Services Agent**, and then selecting **Download** to download the vault credentials.
-8. Select **Save**. The file is downloaded to your Downloads folder. You can't open the vault credentials file, because it is not a executable or text file.
+8. Select **Save**. The file is downloaded to your Downloads folder. You can't open the vault credentials file, because it is not an executable or text file.
 
 You can install the MARS agent on your computer using the following procedure. Run the **MARSagentinstaller.exe** file on the machines that you want to back up and complete the registration process.
 
