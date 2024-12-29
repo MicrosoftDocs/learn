@@ -1,9 +1,8 @@
-
 Azure Backup enables you to back up and recover Windows Server infrastructure as a service (IaaS) virtual machines (VMs), which includes full VM and file-level recovery.
 
 ## Scenario
 
-Contoso is a medium-size financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server. This includes virtualized workloads on Windows Server 2012 R2 hosts. Contoso IT staff are in the process of migrating Contoso servers to Windows Server 2019.
+Contoso is a medium-size financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server. This includes virtualized workloads on Windows Server 2016 hosts. Contoso IT staff are in the process of migrating Contoso servers to Windows Server 2025.
 
 Contoso’s IT director realizes that Contoso has an outdated operational model with limited automation and reliance on dated technology. The Contoso IT Engineering team has started exploring Microsoft Azure capabilities. They want to determine whether Azure services might assist with modernizing the current operational model through automation and virtualization.
 

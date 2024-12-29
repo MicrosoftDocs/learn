@@ -1,4 +1,3 @@
-
 You need to know how to back up files and folders to an Azure Recovery vault, and when necessary, how to restore those files and folders.
 
 ## Back up files and folders
@@ -9,8 +8,6 @@ Backing up files and folders to Azure Backup is straightforward, and follows a r
 2. Download files. Download the Backup Agent for Windows Server or Windows Client, and the vault credentials. The vault credentials will be used in the next step to register the Backup Agent.
 3. Install and register the Backup Agent. Enabling backup through the Azure portal is coming soon. Currently, you use the on-premises Azure Recovery Services agent to back up your files and folders.
 4. Back up your files and folders. Your initial backup includes two key tasks: schedule the backup, and back up the files and folders for the first time.
-
-![A screenshot of the Backup progress dialog box. A backup has been initiated by the administrator.](../media/m20-backup-1.png)
 
 ## Restore files and folders
 
