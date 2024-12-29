@@ -6,7 +6,6 @@ Azure Firewall is a cloud-based network security service. You can use Azure Fire
 
 ![A graphic that displays an Azure Firewall solution. A number of spoke VNets are connected to a Central VNet containing the firewall. This VNet is in turn connected to both an on-premises network and the internet. Traffic is filtered according to different rules between these different environments.](../media/m19-firewall-threat.png)
 
-
 Azure Firewall uses a static public IP address for your virtual network resources. Consequently, external firewalls can identify traffic that originates from your organization's virtual network. Azure Firewall is also fully integrated with Azure Monitor, enabling support for both logging and analytics.
 
 ## Key features of Azure Firewall

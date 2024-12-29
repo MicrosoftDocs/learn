@@ -139,7 +139,6 @@ You can use ASGs to:
 
 Without ASGs, you'd need to create a separate rule for each VM. For example, Contoso has a number of front-end servers in a VNet. IT staff decide to implement NSGs and ASGs to secure the network resources, as depicted in the following graphic.
 
-
 ![The graphic depicts a collection of web servers is protected by an NSG called **ERP - SERVERS-NSG**, as is a collection of SQL servers. This NSG has two rules: one which filters web traffic to port 80 and 8080, and a second that filters SQL traffic on port 1433. The web servers are protected by an ASG called **WEB-SVR-ASG** assigned to their NICs. The SQL servers are protected by an ASG called **SQL-SVR-ASG** which is assigned to their NICs. All resources are connected to the same VNet.](../media/m19-application-security-group.png) 
 
 Using ASGs enables Contoso to meet the following objectives:
