@@ -1,4 +1,4 @@
-In this demonstration, you will learn to:
+In this demonstration, you'll learn to:
 
 - Set up a network.
 - Deploy Azure Firewall.
