@@ -4,7 +4,6 @@ In this demonstration, you'll learn how to:
 - Create a Recovery Services vault.
 - Manage a backup policy for a VM.
 
-
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CIap]
 
 ## Next steps
