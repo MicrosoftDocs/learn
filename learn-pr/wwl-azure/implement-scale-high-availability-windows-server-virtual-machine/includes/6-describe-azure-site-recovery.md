@@ -1,5 +1,3 @@
-
-
 Contoso must adopt a business continuity and disaster recovery strategy that keeps their data safe and their apps and workloads online even when planned and unplanned outages occur. Contoso can use Azure Site Recovery to help ensure business continuity by keeping business apps and workloads running during outages.
 
 Azure Site Recovery replicates workloads running on physical servers and VMs from a primary site to a secondary location. If an outage occurs at the Contoso primary site, workloads fail over to a secondary location and users can access apps from there. After the primary location is running again, an administrator can fail back workloads to the primary location.

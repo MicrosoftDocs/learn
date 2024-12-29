@@ -1,5 +1,3 @@
-
-
 Contoso can use the Azure Site Recovery to help protect access to their critical resources in Azure. After IT staff complete the disaster recovery setup, Contoso's Azure VMs continuously replicate to a secondary region. If an outage occurs, IT staff at Contoso can fail over VMs to the secondary region, and users can access those resources from the new region. After any problems are resolved and everything is running normally again, IT support staff can fail back the VMs, enabling users to continue working in the primary region.
 
 ## Prepare Azure Site Recovery
@@ -75,9 +73,6 @@ The following steps enable VM replication to a secondary location:
 1. In the Azure portal, select **Virtual machines**, and then select the VM to replicate.
 2. On the selected VM's blade, within **Operations**, select **Disaster recovery**.
 3. From **Basics**, select **Target region**, and then select the target region.
-
-   ![A screenshot of the Disaster recovery blade for the ContosoVM1 virtual machine. Central US has been selected as the Target region. A map displays with this region highlighted.](../media/m22-disaster-1.png)
-
 4. To review the replication settings, select **Review + Start replication**. If you need to change any defaults, select **Next: Advanced settings**. 
 5. To start the job that enables VM replication, select **Start replication**.
 
@@ -88,8 +83,6 @@ After the replication job finishes, you can check the replication status, modify
 1. On the Azure portal menu, select **Virtual machines**, and then select the VM that you replicated.
 2. In **Operations**, select **Disaster recovery**.
 3. To view the replication details from **Overview**, select **Essentials**. More details are available in the **Health and status**, **Failover readiness**, and the **Infrastructure view** map.
-
-![A screenshot of the Disaster recovery blade for the ContosoVM1 virtual machine. The administrator has selected Overview. The Infrastructure view displays. A topographical map displays the resources, and a geographic map highlights the selected regions. Currently, a Test Failover is in progress following initial setup.](../media/m22-disaster-2.png)
 
 ## Try it
 
