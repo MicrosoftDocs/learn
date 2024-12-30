@@ -36742,6 +36742,46 @@
       "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/2-explore-chat-completion.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/3-basic-prompt-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/4-deploy-system-message.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/5-system-message-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
     }
   ]
 }
