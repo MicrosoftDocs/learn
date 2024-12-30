@@ -4412,3 +4412,8 @@ achievements:
   title: Configure virtual machines
   summary: Learn how to configure virtual machines including sizing, storage, and connections.
   iconUrl: /training/achievements/virtual-machines-configure.svg
+- uid: learn.azure.shift-express-api-azure-functions.badge
+  type: badge
+  title: Refactor Node.js Express APIs into serverless Azure Functions APIs
+  summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
+  iconUrl: /training/achievements/shift-express-api-azure-functions.svg

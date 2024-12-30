@@ -36622,6 +36622,61 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machines/10-summary-resources.md",
       "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/2-analyze-migration-serverless.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/3-exercise-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/4-plan-migration-from-nodejs-express-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/5-exercise-create-function-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/6-exercise-migrate-services-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/7-review-azure-function-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/8-exercise-debug-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
     }
   ]
 }
