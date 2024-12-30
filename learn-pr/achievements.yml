@@ -4412,6 +4412,11 @@ achievements:
   title: Configure virtual machines
   summary: Learn how to configure virtual machines including sizing, storage, and connections.
   iconUrl: /training/achievements/virtual-machines-configure.svg
+- uid: learn.azure.build-api-azure-functions.badge
+  type: badge
+  title: Build Serverless APIs with Azure Functions
+  summary: Use Visual Studio Code and Azure Functions to rapidly create a serverless API, implement a RESTful architecture and safely store secure information like connection strings.
+  iconUrl: /training/achievements/build-api-azure-functions.svg
 - uid: learn.azure.shift-express-api-azure-functions.badge
   type: badge
   title: Refactor Node.js Express APIs into serverless Azure Functions APIs
