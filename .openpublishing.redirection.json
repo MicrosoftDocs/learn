@@ -1,6 +1,51 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/2-application-architecture.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/3-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/4-create-azure-maps-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/5-create-twilio-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/6-deploy-azure-function-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/7-connect-twilio-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/0-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
       "redirect_document_id": false
@@ -36641,6 +36686,61 @@
     {
       "source_path": "learn-pr/azure/build-api-azure-functions/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/2-analyze-migration-serverless.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/3-exercise-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/4-plan-migration-from-nodejs-express-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/5-exercise-create-function-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/6-exercise-migrate-services-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/7-review-azure-function-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/8-exercise-debug-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
       "redirect_document_id": false
     }
   ]

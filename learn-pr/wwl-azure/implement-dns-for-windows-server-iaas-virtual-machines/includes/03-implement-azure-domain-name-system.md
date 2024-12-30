@@ -1,6 +1,3 @@
-
-
-
 Having learned about public and private Azure DNS zones, the Contoso infrastructure team needs to know how to create and manage them  complete the transition to Azure. In the unit, you'll learn how to create a public zone, populate it with records, and then test name resolution. You'll also learn how to create a private DNS zone, link it to a VNet, and review automatically generated records in that zone.
 
 ## Configure a public DNS zone
@@ -37,7 +34,6 @@ To add a record to your zone, use the following procedure:
 |IP address|Enter the appropriate IP address for the record. This field is only relevant for host records.|
 |Alias|This is for CNAME records only. Enter the hostname this alias (CNAME) record identifies.|
 |Preference and Mail exchange|This is for MX records only. Enter the preference value and the FQDN of the mail exchange server.|
-
 
 ![A screenshot of the ContosoDemo.com zone page. The administrator has selected + Record set. In the Add record set blade, the administrator has entered the name, type, and IP address for a host record.](../media/m7-add-record.png)
 
