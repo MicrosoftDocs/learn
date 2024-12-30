@@ -9,9 +9,9 @@ metadata:
   ms.topic: learning-path
 title: 'AZ-104: Prerequisites for Azure administrators'
 prerequisites: |
-  -   [Microsoft Azure Fundamentals: Describe cloud concepts](https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
-  -   [Azure Fundamentals: Describe Azure architecture and services](https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/)
-  -   [Azure Fundamentals: Describe Azure management and governance](https://learn.microsoft.com/training/paths/describe-azure-management-governance/)
+  -   [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
+  -   [Azure Fundamentals: Describe Azure architecture and services](/training/paths/azure-fundamentals-describe-azure-architecture-services/)
+  -   [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
 summary: |
   Learn the basic Azure concepts you need to know as an Azure administrator.
   Here are the learning paths in the AZ-104 Azure Administrator series:
