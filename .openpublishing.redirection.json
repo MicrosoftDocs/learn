@@ -1,6 +1,51 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/2-application-architecture.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/3-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/4-create-azure-maps-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/5-create-twilio-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/6-deploy-azure-function-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/7-connect-twilio-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/0-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
       "redirect_document_id": false
