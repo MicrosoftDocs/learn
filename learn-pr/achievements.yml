@@ -4422,3 +4422,13 @@ achievements:
   title: Refactor Node.js Express APIs into serverless Azure Functions APIs
   summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
   iconUrl: /training/achievements/shift-express-api-azure-functions.svg
+- uid: learn.student-evangelism.predict-meteor-showers-using-python.badge
+  type: badge
+  title: Predict meteor showers by using Python and Visual Studio Code
+  summary: Learn how to use concepts from machine learning to predict the occurrence of meteor showers (or Moon Goddess tears).
+  iconUrl: /training/achievements/student-evangelism/predict-meteor-showers-using-python.svg
+- uid: learn.student-evangelism.train-custom-vision-ai.badge
+  type: badge
+  title: Use AI to recognize objects in images by using the Custom Vision service
+  summary: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
+  iconUrl: /training/achievements/student-evangelism/train-custom-vision-ai.svg
