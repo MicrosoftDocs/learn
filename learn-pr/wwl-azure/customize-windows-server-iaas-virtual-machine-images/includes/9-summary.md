@@ -1,5 +1,3 @@
-
-
 Contoso IT operations staff have begun the process of creating VMs in Azure. As there are many VMs needed, you had been tasked with discovering ways to accelerate the process. You decided to investigate whether Azure Image Builder and whether preconfigured images might be useful.
 
 In this module, you learned how to create new VMs from a generalized image. You also learned how to implement Azure Image Builder to create and manage images in Azure. Now you and Contoso IT operations staff can use Azure Image Builder and managed images to speed up the process of creating VMs in Azure.
