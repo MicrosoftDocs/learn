@@ -16,8 +16,8 @@ By the end of this module, you're able to deploy Desired State Configuration (DS
 
 After completing this module, you'll be able to:
 
-- Describe Azure automation.
-- Implement Azure automation with DSC.
+- Describe Azure Automation.
+- Implement Azure Automation with DSC.
 - Remediate noncompliant servers.
 - Describe custom script extension.
 - Configure a VM by using DSC extensions.

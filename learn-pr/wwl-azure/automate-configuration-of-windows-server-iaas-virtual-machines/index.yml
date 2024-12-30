@@ -12,8 +12,8 @@ title: Automate the configuration of Windows Server IaaS Virtual Machines
 summary: Learn how to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe Azure automation.
-  - Implement Azure automation with DSC.
+  - Describe Azure Automation.
+  - Implement Azure Automation with DSC.
   - Remediate noncompliant servers.
   - Describe custom script extension.
   - Configure a VM by using DSC extensions.

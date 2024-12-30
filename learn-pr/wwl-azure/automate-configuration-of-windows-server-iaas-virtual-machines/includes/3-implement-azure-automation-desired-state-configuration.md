@@ -68,7 +68,7 @@ To control a VM with DSC, you must first onboard the VM, or *node*, with Azure A
       - **ApplyAndAutoCorrect**. LCM executes the script in regular intervals, automatically correcting any configuration drift.
     - **Allow Module Override**. Controls whether new configurations downloaded from the Azure Automation DSC pull server are allowed to overwrite the old modules already on the target node.
     - **Reboot Node if Needed**. Select to reboot the node if needed to fully apply the configuration.
-    - **Action after Reboot**. The action to perform after a reboot, which are:
+    - **Action after Reboot**. The actions to perform after a reboot, which include:
       - ContinueConfiguration
       - StopConfiguration
 
