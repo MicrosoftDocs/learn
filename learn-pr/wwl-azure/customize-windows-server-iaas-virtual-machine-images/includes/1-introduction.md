@@ -35,6 +35,6 @@ In order to get the best learning experience from this module, it's important th
 - On-premises resiliency Windows Server-based compute and storage technologies.
 - Implementing and managing infrastructure as a service (IaaS) services in Azure.
 - Microsoft Entra ID.
-- Security-related technologies (firewalls, encryption, multi-factor authentication).
+- Security-related technologies (firewalls, encryption, multifactor authentication).
 - Windows PowerShell scripting.
 - Automation and monitoring.
