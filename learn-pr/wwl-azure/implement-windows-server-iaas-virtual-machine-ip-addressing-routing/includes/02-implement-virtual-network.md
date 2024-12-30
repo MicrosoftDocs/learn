@@ -1,6 +1,4 @@
- 
-
-As lead system engineer bringing Microsoft Azure networking services to Contoso, you need to know how Azure VNets link Azure resources together. You also need to learn about Azure VM network interfaces.  
+As lead system engineer bringing Microsoft Azure networking services to Contoso, you need to know how Azure VNets link Azure resources together. You also need to learn about Azure VM network interfaces.
 
 ## Azure VNets
 

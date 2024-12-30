@@ -12,7 +12,7 @@ There are two search methods available on GitHub: the global search at the top o
 
 ### Global search
 
-The global search lets you use [the complete search syntax](https://help.github.com/github/searching-for-information-on-github/searching-on-github?azure-portal=true) to search across all of GitHub.
+The global search lets you use [the complete search syntax](https://docs.github.com/enterprise-cloud@latest/search-github/searching-on-github?azure-portal=true) to search across all of GitHub.
 
 ![A screenshot of a search across GitHub.](../media/2-global-search.png)
 
@@ -37,7 +37,7 @@ Using the context search is the preferred option when you're looking for somethi
 
 ### Using search filters
 
-There are an infinite number of ways to search using [the complete search syntax](https://docs.github.com/search-github/getting-started-with-searching-on-github/about-searching-on-github). However, most searches only make use of a few common filters. While these are often available from context search dropdowns, it's sometimes more convenient to type them in directly.
+There are an infinite number of ways to search using [the complete search syntax](https://docs.github.com/enterprise-cloud@latest/search-github/searching-on-github?azure-portal=true). However, most searches only make use of a few common filters. While these are often available from context search dropdowns, it's sometimes more convenient to type them in directly.
 
 Here are some example filter queries:
 
@@ -48,7 +48,7 @@ Query|Explanation
 `is:pr sidebar in:comments`|Pull requests where "sidebar" is mentioned in the comments
 `is:open is:issue label:bug -linked:pr`|Open issues labeled as bugs that do not have a linked pull request
 
-Learn more about [Understanding the search syntax](https://help.github.com/github/searching-for-information-on-github/understanding-the-search-syntax?azure-portal=true)
+Learn more about [Understanding the search syntax](https://docs.github.com/enterprise-cloud@latest/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax?azure-portal=true)
 
 ## What is git blame?
 

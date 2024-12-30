@@ -1,8 +1,4 @@
-
 You decide to test Azure Image Builder to discover if it can meet the needs of the Contoso IT operations staff. You plan to create a Windows VM by using Azure Image Builder and a sample .json template that you have downloaded from the GitHub library. But first, you must register Azure Image Builder with your Azure subscription.
-
-> [!NOTE]
-> In this preview, you can't use the Azure portal to work with Azure Image Builder.
 
 ## Register Azure Image Builder
 
@@ -39,8 +35,6 @@ To use Azure Image Builder in public preview, you must register the features in 
     ```
 
 When all is ready, all providers should display as `Registered`.
-
-![A screenshot that displays the registration state as registered for all four required components in Azure Image Builder.](../media/m6-registered.png)
 
 ## Create an image
 
