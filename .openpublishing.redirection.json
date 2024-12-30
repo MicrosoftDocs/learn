@@ -36622,6 +36622,126 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machines/10-summary-resources.md",
       "redirect_url": "/training/modules/intro-to-azure-virtual-machines/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/2-exercise-setup-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/3-overview-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/4-exercise-create-function-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/5-app-settings.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/6-exercise-app-settings.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/7-rest-function-routes.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/8-exercise-make-functions-restful.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/9-configure-cors.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/10-exercise-configure-cors.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/11-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/12-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/2-analyze-migration-serverless.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/3-exercise-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/4-plan-migration-from-nodejs-express-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/5-exercise-create-function-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/6-exercise-migrate-services-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/7-review-azure-function-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/8-exercise-debug-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
     }
   ]
 }
