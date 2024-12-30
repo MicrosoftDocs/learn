@@ -4422,3 +4422,13 @@ achievements:
   title: Refactor Node.js Express APIs into serverless Azure Functions APIs
   summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
   iconUrl: /training/achievements/shift-express-api-azure-functions.svg
+- uid: learn.python-partnership.personality-quiz.badge
+  type: badge
+  title: What is your super sleuth personality?
+  summary: What is your super sleuth personality? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
+  iconUrl: /training/achievements/python-partnership/personality-quiz-revised.svg
+- uid: learn.python-partnership.secret-message.badge
+  type: badge
+  title: Crack the code and reveal a secret with Python and Visual Studio Code
+  summary: You're handed a secret message that needs a code cracker to find the truth. Learn how to solve the code mystery to reveal a location and date to find a hidden treasure. Get a glimpse into the popular Python programming language with this introductory lesson that requires no coding experience.
+  iconUrl: /training/achievements/python-partnership/secret-message-revised.svg
