@@ -36742,6 +36742,71 @@
       "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-space-using-python/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/2-rock-samples.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/3-setup-import-data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/4-setup-cleanse.data.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/5-add-modules.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/6-understand-modules.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/7-artemis-capacity.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/8-prioritize-needed-rocks.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/9-develop-recommendation.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
     }
   ]
 }
