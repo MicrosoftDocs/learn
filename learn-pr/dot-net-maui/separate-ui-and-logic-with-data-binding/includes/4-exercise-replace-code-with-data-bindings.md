@@ -1,11 +1,14 @@
 In this exercise, you'll convert an app that uses events and code-behind to one that uses mostly data binding. The sample app is a weather forecasting app that displays the weather for the day.
 
-## Download and run the sample
+## Open the starter solution
 
-To start this exercise module, download the [Weather Sample](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-databinding1/raw/main/part4-exercise-start.zip) project. This project displays the weather from a fake weather reporting service. The code doesn't contain any data binding.
+1. Clone or download the exercise repo from [GitHub](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-databinding1).
 
-01. Download and extract the [Weather Sample](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-databinding1/raw/main/part4-exercise-start.zip) project to a temporary folder.
-01. Navigate to the _before_ folder and open the _WeatherClient.sln_ solution.
+    > [!NOTE]
+    > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+
+1. Open the _WeatherClient.sln_ solution from the **start** folder by using Visual Studio or this folder in Visual Studio Code.
+
 01. Build and run the project to make sure it works. On the screen displayed, you'll see some empty weather details. Press the **Refresh** button and you'll see the weather details update.
 
     :::image type="content" source="../media/4-exercise-replace-code-with-data-bindings/app2.png" alt-text="Screenshot of a weather app showing the weather for the day.":::
