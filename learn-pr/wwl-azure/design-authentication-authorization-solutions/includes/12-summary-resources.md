@@ -35,8 +35,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Design, develop, and manage [access reviews](/training/modules/plan-implement-manage-access-review/).
 
-- Enable [secure external collaboration for your applications with Microsoft Entra B2B](/training/modules/enable-external-collaboration-with-b2b/).
-
 - Support [secure access to your apps for external users with Azure AD B2C](/training/modules/enable-external-access-with-b2c/).
 
 ## Learn more with optional practical exercises
