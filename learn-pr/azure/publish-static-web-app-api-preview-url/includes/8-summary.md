@@ -10,6 +10,5 @@ Here are links to several resources where you can learn more about Azure Static 
 - Learn how to [Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps](/training/modules/publish-app-service-static-web-app-api/)
 - Learn how to [Authenticate users with Azure Static Web Apps](/training/modules/publish-static-web-app-authentication/)
 - [Azure Static Web Apps](/azure/static-web-apps)
-- Learn how to [Refactor Node.js and Express APIs to Serverless APIs with Azure Functions](/training/modules/shift-nodejs-express-apis-serverless/)
 - Learn how to [Deploy to Azure Using Azure Functions](/training/modules/publish-static-web-app-api-preview-url/)
 - Use [Angular.js](https://code.visualstudio.com/docs/nodejs/angular-tutorial), [React.js](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial), and [Vue.js](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial) in Visual Studio Code
