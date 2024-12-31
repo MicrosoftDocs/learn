@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.philanthropies.boost-your-productivity-with-microsoft-copilot.image-document-analysis-with-copilot
-title: Image and document analysis with Copilot
+title: Analyze images and documents with Copilot
 metadata:
-  title: Image and document analysis with Copilot
-  description: This unit is a part of the Boost productivity with Copilot module.
+  title: Analyze images and documents with Copilot
+  description: This unit is a part of the module about boosting productivity with Copilot.
   ms.date: 11/21/2024
-  author: yoosunee
-  ms.author: andreapark
+  author: v-downesmary
+  ms.author: v-downesmary
   ms.topic: unit
 durationInMinutes: 5
 content: |
