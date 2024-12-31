@@ -2,7 +2,7 @@ As system administrator at Contoso, you must ensure that any services hosted in 
 
 ## Network security groups 
 
-An NSG filters inbound and outbound network traffic. Configuring the security rules for a NSG allows you to control network traffic by allowing or denying specific traffic types.
+An NSG filters inbound and outbound network traffic. Configuring the security rules for an NSG allows you to control network traffic by allowing or denying specific traffic types.
 
 You can assign an NSG to:
 
