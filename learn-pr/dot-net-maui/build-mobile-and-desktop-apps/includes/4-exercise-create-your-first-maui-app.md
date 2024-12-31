@@ -5,7 +5,7 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
 1. Open Visual Studio and create a new solution. This action opens the New Project wizard in Visual Studio.
 
     > [!TIP]
-    > Make sure you have the .NET MAUI workload installed with Visual Studio 2022 v17.3 or later (v17.8 preferred with .NET 8). [More info here.](/dotnet/maui/get-started/installation)
+    > Make sure you have the .NET MAUI workload installed with Visual Studio 2022 v17.12 or later with .NET 9. [More info here.](/dotnet/maui/get-started/installation)
 
 1. Select the **MAUI** project type, select the **.NET MAUI App** template, and select **Next**.
 
@@ -15,7 +15,7 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
 
     :::image type="content" source="../media/4-configure-project.png" alt-text="A screenshot of the Configure your new project dialog box. The user names the project Phoneword and selects a location on their hard drive to store it.":::
 
-1. Select **.NET 8.0 (Long Term Support)** in the **Framework** drop-down, then select **Create** to create the app.
+1. Select **.NET 9.0 (Long Term Support)** in the **Framework** drop-down, then select **Create** to create the app.
 
 ## Examine the solution structure
 
@@ -39,7 +39,7 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
 
 ## Build and run the application on Windows
 
-1. In the Visual Studio toolbar, select the **Windows Machine** profile. Select **.net8.0-windows** from the list in the frameworks drop-down list box.
+1. In the Visual Studio toolbar, select the **Windows Machine** profile. Select **.net9.0-windows** from the list in the frameworks drop-down list box.
 
     :::image type="content" source="../media/4-set-startup-profile.png" alt-text="A screenshot of the target runtime dropdown in Visual Studio. The user sets the Windows Machine profile as the startup profile for the solution.":::
 
@@ -89,22 +89,22 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
     :::image type="content" source="../media/4-visual-studio-tools-menu.png" alt-text="A screenshot of the Visual Studio tools menu. The user selected the Android Device Manager option.":::
 
 
-1. In the **Android Device Manager** window, select **+ New**. In the **New Device** window, select the **Pixel 3a (+ Store)** base device, select the **API 30** OS, and select **Create**. Wait while the various libraries are downloaded and the device is configured.
+1. In the **Android Device Manager** window, select **+ New**. In the **New Device** window, select the **Pixel 7 (+ Store)** base device, select the **API 35** OS, and select **Create**. Wait while the various libraries are downloaded and the device is configured.
 
     > [!NOTE]
-    > The example in this exercise uses the **Pixel 3a (+ Store)** base device, but you can use more recent devices. For example the **Pixel 5 - API 31** or **Pixel 5 - API 34**.
+    > The example in this exercise uses the **Pixel 7 (+ Store)** base device, but you can use other devices. For example the **Pixel 5 - API 31** or **Pixel 5 - API 34**.
 
-    :::image type="content" source="../media/4-new-device.png" alt-text="A screenshot of the New Device window from the Android SDK. The user is creating a new Pixel 3 device with API 30 selected.":::
+    :::image type="content" source="../media/4-new-device.png" alt-text="A screenshot of the New Device window from the Android SDK. The user is creating a new Pixel 7 device with API 35 selected.":::
 
 1. When the device is created, return to Visual Studio.
 
-1. In the Visual Studio toolbar, in the **Debug** configuration drop-down list box, select the **Android Emulators** profile. Select the **pixel_3a-api_30** device that you created.
+1. In the Visual Studio toolbar, in the **Debug** configuration drop-down list box, select the **Android Emulators** profile. Select the **Pixel 7 - API 35** device that you created.
 
-    :::image type="content" source="../media/4-select-android-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. The user specified the Pixel 3 with the API 30 profile for the Android emulator to start debugging with.":::
+    :::image type="content" source="../media/4-select-android-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. The user specified the Pixel 7 with the API 35 profile for the Android emulator to start debugging with.":::
 
-1. Start debugging use the **pixel_3a-api_30** profile. This action builds, deploys, and runs the app on the Android device.
+1. Start debugging use the **Pixel 7 - API 35** profile. This action builds, deploys, and runs the app on the Android device.
 
-    :::image type="content" source="../media/4-debug-using-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. It shows the pixel 3 a p i 30 profile is selected and ready to start debugging with as soon as the user presses the play button.":::
+    :::image type="content" source="../media/4-debug-using-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. It shows the pixel 7 a p i 35 profile is selected and ready to start debugging with as soon as the user presses the play button.":::
 
 1. When the app starts running on the emulator (this action can take several minutes), select the **Click me** button and check that the app runs in exactly the same way that it did on Windows.
 
