@@ -17,3 +17,13 @@ In this module, you will:
 - Identify when to use the Model-View-ViewModel pattern.
 - Use a viewmodel to drive visual behavior.
 - Improve code testability through data-bindable properties.
+
+## Prerequisites
+
+- Visual Studio 2022 with the .NET MAUI workload installed
+- Optional: Visual Studio Code with the .NET MAUI Extension and .NET SDK with the .NET MAUI workload installed
+- Familiarity with intermediate programming concepts like interfaces, classes, and attributes.
+- Ability to write XAML code.
+- Completed the previous module in this training path or understand how data binding works in .NET MAUI.
+
+[!include[](../../../includes/install-dotnet-maui-workload.md)]
