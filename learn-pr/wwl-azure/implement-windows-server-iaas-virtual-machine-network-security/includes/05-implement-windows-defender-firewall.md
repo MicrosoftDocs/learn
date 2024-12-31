@@ -1,4 +1,4 @@
-The network administrator at Contoso is concerned about conflicting firewall settings between Microsoft Azure Firewall and Windows Defender Firewall with Windows Server IaaS VMs. You investigate how to set-up these two systems to work together.  
+The network administrator at Contoso is concerned about conflicting firewall settings between Microsoft Azure Firewall and Windows Defender Firewall with Windows Server IaaS VMs. You investigate how to set up these two systems to work together.  
 
 ## What is Windows Defender Firewall with Advanced Security?
 

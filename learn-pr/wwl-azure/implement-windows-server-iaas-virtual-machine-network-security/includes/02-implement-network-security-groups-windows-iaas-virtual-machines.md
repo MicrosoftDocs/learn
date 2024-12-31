@@ -1,8 +1,8 @@
 As system administrator at Contoso, you must ensure that any services hosted in Microsoft Azure with IaaS meet the company's stringent security requirements. To properly secure network traffic, you can set up NSGs.
 
-## Network security groups 
+## Network security groups
 
-An NSG filters inbound and outbound network traffic. Configuring the security rules for a NSG allows you to control network traffic by allowing or denying specific traffic types.
+An NSG filters inbound and outbound network traffic. Configuring the security rules for an NSG allows you to control network traffic by allowing or denying specific traffic types.
 
 You can assign an NSG to:
 
