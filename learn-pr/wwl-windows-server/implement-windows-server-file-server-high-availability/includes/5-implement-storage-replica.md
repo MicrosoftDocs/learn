@@ -21,7 +21,7 @@ The main features of Storage Replica include:
 - High performance initial sync. Storage Replica supports seeded initial sync, which involves copying a subset of data from a source volume to the target via backup or removable media. This way, initial replication consists only of the difference between the two volumes, shortening duration of the initial sync and limiting bandwidth usage.
 - Consistency groups. Write ordering provides assurance that writes of applications such as SQL Server take place in the same sequence at the source and on the replicated volumes.
 - Delegated administration. You can delegate permissions to manage replication without having to resort to granting Administrator-level privileges across replicated nodes.
-- Network constraints. In cases where there are multiple network paths between replicated volumes, you can configure Storage Replica traffic to use designated network adapters. This allows you minimize potential impact of the replication traffic on production workloads.
+- Network constraints. In cases where there are multiple network paths between replicated volumes, you can configure Storage Replica traffic to use designated network adapters. This allows you to minimize the potential impact of the replication traffic on production workloads.
 - Thin provisioning. You have the option of implementing thin provisioning in Storage Spaces Direct, minimizing initial replication times.
 
 ## Prerequisites
