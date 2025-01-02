@@ -1,4 +1,4 @@
-Contoso IT staff are migrating Contoso on-premises servers to Windows Server 2022. As a Windows Server infrastructure administrator, you're responsible for managing and maintaining the networking infrastructure for Windows Server to help Contoso achieve its business goals. This includes name resolution using DNS. Now that you've completed this module, you know how to configure and manage DNS Servers on Windows Server.
+Contoso's IT staff are migrating Contoso on-premises servers to Windows Server 2025. As a Windows Server infrastructure administrator, you're responsible for managing and maintaining the networking infrastructure for Windows Server to help Contoso achieve its business goals. This includes name resolution using DNS. Now that you've completed this module, you know how to configure and manage DNS Servers on Windows Server.
 
 ## Learn more
 
