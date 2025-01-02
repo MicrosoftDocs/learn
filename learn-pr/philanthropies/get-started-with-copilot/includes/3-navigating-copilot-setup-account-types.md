@@ -6,17 +6,17 @@ Ready to get started?
 
 First, navigate Microsoft Copilot. To sign in, locate the "sign in" option at the top right corner by clicking on the round icon. Now, you see the option to sign-in. When signing in with a personal account, you have access to a free basic option. If you don't have a personal account, you can create one for free to access Copilot.
 
-![Copilot interface](../media/image1.png)
+![Screenshot of the Copilot welcome screen.](../media/copilot-get-started.png)
 
 A work or school account is provided by your employer or school for professional use. Signing in with a work or school account ensures your organization's data is protected and Copilot will redirect you to copilot.cloud.com. If you're using Copilot for work or school-related tasks, you should sign-in with your work or school email. If your organization grants you Copilot privileges, you can also use Copilot in Microsoft 365 applications.
 
 If you don't have an account and need to make one, select on "create one" and follow the steps provided. Once you sign in, you unlock access to extended conversations and more features. Now that you have an account, let's explore the interface.
 
-![Login option](../media/image2.png)
+![Screenshot of the sign in screen.](../media/sign-in.png)
 
 To message Copilot, use the text box at the bottom of the page. You can add images to your conversation if you want to ask questions or need a description of an image or even want Copilot to generate content based on an image. To add an image, select on the ‘+' icon. Once you select the file, it appears on the screen and Copilot can analyze it and respond accordingly.
 
-![A screenshot showing a user where to message Copilot.](../media/image3.png)
+![Screenshot showing a user where to message Copilot.](../media/copilot-message-box.png)
 
 If logged into a work or school account, you can add a file or image with the paperclip option. When you select your file, Copilot can access its content. The ‘Recent Conversations' section shows your past interactions with Copilot. You can scroll through your recent conversations, select a specific conversation to open it, and continue where you left off.
 

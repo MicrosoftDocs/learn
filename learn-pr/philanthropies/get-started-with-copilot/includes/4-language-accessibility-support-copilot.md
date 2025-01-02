@@ -18,7 +18,7 @@ Select the circle icon at the top right corner.
 
 Select on "language" and select your preferred language.
 
-![A screenshot highlighting the language setting feature in Copilot.](../media/image4.png)
+![A screenshot highlighting the language setting feature in Copilot.](../media/copilot-language-option.png)
 
 **Using Copilot Voice**:
 
@@ -28,6 +28,6 @@ Select the microphone icon and speak into your device.
 
 Copilot listens and responds in real-time.
 
-![A screenshot highlighting the Microsoft Copilot voice feature.](../media/image5.png)
+![A screenshot highlighting the Microsoft Copilot voice feature.](../media/copilot-microphone-button.png)
 
 Now that you accessed Copilot, navigated the platform, and adjusted the accessibility and language settings, you're all set to dive into engaging conversations with your AI Companion. The next lesson will help you maximize your experience, using Copilot's capabilities to their fullest. Explore how to interact seamlessly with Copilot and make the most out of this AI companion, enhancing your productivity and enjoyment.
