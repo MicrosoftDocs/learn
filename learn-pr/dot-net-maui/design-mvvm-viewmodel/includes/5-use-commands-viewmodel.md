@@ -68,7 +68,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 
 In this code, the `Execute` behavior is provided by the method `GiveBonusExecute`. And `CanExecute` is provided by `GiveBonusCanExecute`. Delegates to those methods are passed to the `Command` constructor. In this example, there's no implementation for `CanExecuteChanged`.
 
-## MVVM Toolkit
+## Simplify with the MVVM Toolkit
 
 The MVVM Toolkit library contains implementations of `ICommand` known as `RelayCommand` and `AsyncRelayCommand`. It also supplies source generators to simplify this code further. In the following example, the `GiveBonusCommand` will be generated setting both the method to call to execute and to call to see if it can execute. The `[RelayCommand]` attribute is used on the `GiveBonus` method and it will generate the `GiveBonusCommand`. Additionally, by setting the `CanExecute` property on the attribute to the name of the method we want to hook up to the `CanExecute` method of the `ICommand`, it will generate the code to set this up for us.
 
