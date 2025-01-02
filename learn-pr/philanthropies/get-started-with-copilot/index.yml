@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.philanthropies.get-started-with-copilot
+metadata:
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 12/31/2024
+  title: "AI Fluency: Get started with Microsoft Copilot"
+  description: Learn how to get started with Microsoft Copilot, understand its main functions and benefits, and explore strategies for effective interaction. This module covers GPT model fundamentals, setup, and tips for engaging conversations.
+  ms.topic: module
+  ms.service: artificial-intelligence
+  moduleType: standard
+  ms.collection: philanthropies-ai-copilot
+title: Get started with Microsoft Copilot
+summary: This module provides an introduction to Microsoft Copilot, covering its main functions, benefits, and strategies for effective interaction. Learn about GPT model fundamentals, setup, and tips for engaging conversations.
+abstract: |
+  By completing this module, you’ll be able to:
+  - Critically assess the main functions and benefits of Copilot at enhancing productivity and creativity.
+  -	Identify and apply specific strategies to interact with Copilot effectively, ensuring productive and meaningful conversations by providing detailed prompts and feedback.
+  -	Explain the fundamental aspects of GPT models, including their architecture and capabilities, and how these features enable the generation of human-like text.
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+- ai-engineer
+- technology-manager
+- solution-architect
+products:
+- azure
+units:
+- learn.philanthropies.get-started-with-copilot.introduction
+- learn.philanthropies.get-started-with-copilot.what-is-microsoft-copilot
+- learn.philanthropies.get-started-with-copilot.navigating-copilot-setup-account-types
+- learn.philanthropies.get-started-with-copilot.language-accessibility-support-copilot
+- learn.philanthropies.get-started-with-copilot.tips-for-engaging-conversation-with-copilot
+- learn.philanthropies.get-started-with-copilot.explore-gpt-technology
+- learn.philanthropies.get-started-with-copilot.knowledge-check
+- learn.philanthropies.get-started-with-copilot.summary
+badge:
+  uid: learn.philanthropies.get-started-with-copilot.badge
