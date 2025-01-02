@@ -93,7 +93,6 @@ public partial class EmployeeViewModel : ObservableObject
 }
 ```
 
-The MVVM Toolkit also handles `async` methods, which are common in .NET programming.
 Below is what is generated when we use the attribute above:
 
 ```csharp
@@ -108,6 +107,9 @@ partial class EmployeeViewModel
     public global::CommunityToolkit.Mvvm.Input.IRelayCommand GiveBonusCommand => giveBonusCommand ??= new global::CommunityToolkit.Mvvm.Input.RelayCommand(new global::System.Action(GiveBonus), GiveBonusCanExecute);
 }
 ```
+
+The MVVM Toolkit also handles `async` methods, which are common in .NET programming.
+
 ## Commands with parameters
 
 The `ICommand` interface accepts an `object` parameter for the `CanExecute` and `Execute` methods. .NET MAUI implements this interface without any type checking through the `Command` class. The delegates you attach to the command must do their own type-checking to ensure that the correct parameter is passed. .NET MAUI also provides the `Command<T>` implementation where you set the type of parameter expected. When you create a command that accepts a single type of parameter, use `Command<T>`.
