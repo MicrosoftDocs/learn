@@ -17,7 +17,7 @@ After you confirm the networking ports and test them as open, take the following
 
 1. From within the VMware HCX Connector dashboard on-premises, under **Infrastructure**, select **Interconnect** > **Service Mesh** > **Create Service Mesh**.
 
-    :::image type="content" source="../media/5-create-service-mesh.png" alt-text="Screenshot of options to select when you're creating a service mesh between the on-premises HCX Connector and Azure VMware Solution.":::
+    :::image type="content" source="../media/5-hcx-create-service-mesh.png" alt-text="Screenshot of options to select when you're creating a service mesh between the on-premises HCX Connector and Azure VMware Solution."lightbox="../media/5-hcx-create-service-mesh.png":::
 
 1. Review the pre-populated sites created during site pairing, then select **Continue**. If this site is the first service mesh configuration, the first screen doesn't need modification.
 
