@@ -1,6 +1,4 @@
-
-
-In this demonstration, you'll learn how to:
+In this demonstration, learn how to:
 
 - Manage costs in Azure
 

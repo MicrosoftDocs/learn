@@ -7,4 +7,4 @@ You can learn more by reviewing the following documents.
 - [Scale-Out File Server for application data overview](/windows-server/failover-clustering/sofs-overview?azure-portal=true)
 - [Use Cluster Shared Volumes in a failover cluster](/windows-server/failover-clustering/failover-cluster-csvs?azure-portal=true)
 - [Storage Replica overview](/windows-server/storage/storage-replica/storage-replica-overview?azure-portal=true)
-- [Course WS-011T00-A: Windows Server 2019 Administration](/certifications/courses/ws-011t00?azure-portal=true)
+
