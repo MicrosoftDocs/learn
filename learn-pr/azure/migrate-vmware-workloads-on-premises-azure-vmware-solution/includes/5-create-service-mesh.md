@@ -35,15 +35,15 @@ After you confirm the networking ports and test them as open, take the following
 
     :::image type="content" source="../media/5-advanced-configuration-optional.png" alt-text="Screenshot of the optional advanced configuration to override uplink network profiles.":::
 
-1. In **Advanced Configuration - Network Extension Appliance Scale Out**, locate the checkbox next to the distributed switch configuration that you configured for the vMotion network profile. You should see that this checkbox is already selected. Simply leave the checkbox selected and select **Continue**.
+1. In **Advanced Configuration - Network Extension Appliance Scale Out**, locate the checkbox next to the distributed switch configuration that you configured for the vMotion network profile. You should see that this checkbox is already selected. Leave the checkbox selected and select **Continue**.
 
 1. When you reach **Advanced Configuration - Traffic Engineering**, select **Continue**.
 
-    :::image type="content" source="../media/5-advanced-configuration-traffic-engineering.png" alt-text="Screenshot displaying that application resiliency can't be selected because there isn't an HCX Enterprise license key.":::
+    :::image type="content" source="../media/5-hcx-advanced-configuration-traffic-engineering.png" alt-text="Screenshot displaying that application resiliency can't be selected because there isn't an HCX Enterprise license key."lightbox="../media/5-hcx-advanced-configuration-traffic-engineering.png":::
 
 1. Review the topology preview, then select **Continue**.
 
-    :::image type="content" source="../media/5-review-topology-preview.png" alt-text="Screenshot of the review topology preview pane during creation of the service mesh.":::
+    :::image type="content" source="../media/5-hcx-review-topology-preview.png" alt-text="Screenshot of the review topology preview pane during creation of the service mesh."lightbox="../media/5-hcx-review-topology-preview.png":::
 
 1. Enter a user-friendly name for this service mesh, then select **Finish** to complete the configuration.
 
