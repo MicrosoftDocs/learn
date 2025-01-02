@@ -119,7 +119,7 @@ public class EmployeeViewModel : ObservableObject
 }
 ```
 
-The code can be further simplified by using source generators in the MVVM Toolkit. By making the class `partial` and adding the `[ObservableProperty]` to the `private` variable the public `Name` with property change notifications built in will be generated.
+The code can be further simplified by using source generators provided by the MVVM Toolkit. By making the class `partial` and adding the `[ObservableProperty]` to the `private` variable, the public property `Name` is generated with the appropriate property change notifications.
 
 ```csharp
 using Microsoft.Toolkit.Mvvm.ComponentModel;
@@ -131,4 +131,24 @@ public partial class EmployeeViewModel : ObservableObject
 }
 ```
 
+The code that is generated is located locally on your machine in the `bin` directory so it isn't checked in to source control. The code below is what is generated when the `[ObservableProperty]` attribute is used:
+
+```csharp
+[global::System.CodeDom.Compiler.GeneratedCode("CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator", "8.4.0.0")]
+[global::System.Diagnostics.DebuggerNonUserCode]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public string Name
+{
+    get => _name;
+    set
+    {
+        if (!global::System.Collections.Generic.EqualityComparer<string>.Default.Equals(_name, value))
+        {
+            OnPropertyChanging(global::CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name);
+            _name= value;
+            OnPropertyChanged(global::CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name);
+        
+        }
+    }
+}
 The MVVM Toolkit is distributed through the `CommunityToolkit.Mvvm` NuGet package.

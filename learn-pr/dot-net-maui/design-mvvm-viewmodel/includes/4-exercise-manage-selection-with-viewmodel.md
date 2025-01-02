@@ -4,10 +4,10 @@ For our exercise, we'll briefly leave behind the example of the human resources 
 
 ## Open the starter solution
 
-1. Clone or download the [exercise repo](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-create-multi-page-apps).
+1. Clone or download the [exercise repo](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-mvvm1).
 
     > [!NOTE]
-    > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+    > It is best to clone or download the exercise content to a short folder path, such as _C:\dev\_, to avoid build-generated files exceeding the maximum path length.
 
 1.  Navigate to the _part4-exercise1_ folder and open the _MovieCatalog.sln_ solution in Visual Studio or the folder in Visual Studio Code.
 1.  Build and run the project to make sure it works. On the screen displayed, you'll see a list of movies. Select one of the movies listed and the app navigates to a detail page.
