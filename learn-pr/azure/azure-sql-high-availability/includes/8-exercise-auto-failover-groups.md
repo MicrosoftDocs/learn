@@ -33,7 +33,7 @@ This exercise guides you through configuring auto-failover groups for your Adven
 
     ```powershell
     $admin = "cloudadmin"
-    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like <rgn>Sandbox resource group name</rgn>
+    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like <rgn>[sandbox resource group name]</rgn>
     $location = $resourceGroup.Location
     $resourceGroup = $resourceGroup.ResourceGroupName
     $database = "AdventureWorks"

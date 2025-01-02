@@ -34,8 +34,8 @@ These scripts should take three to five minutes to complete. Be sure to note you
     # Prompt for local ip address
     $ipAddress = Read-Host "Disconnect your VPN, open PowerShell on your machine and run '(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content'. Enter the value (include periods) next to 'Address': "
     # Get resource group and location and random string
-    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like "<rgn>Sandbox resource group name</rgn>"
-    $resourceGroupName = "<rgn>Sandbox resource group name</rgn>"
+    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like "<rgn>[sandbox resource group name]</rgn>"
+    $resourceGroupName = "<rgn>[sandbox resource group name]</rgn>"
     $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
     $storageAccountName = "mslearnsa"+$uniqueID
     $location = $resourceGroup.Location
