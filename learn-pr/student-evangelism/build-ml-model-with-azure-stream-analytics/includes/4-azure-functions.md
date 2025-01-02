@@ -26,7 +26,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
    *Configure the basic settings for a new function app*
 
-1. On the **Hosting** tab, select the storage account you created to upload wildlife photos to. Then select **Review + create**.
+1. On the **Storage** tab, select the storage account you created to upload wildlife photos to. Then select **Review + create**.
 
    :::image type="content" source="../media/create-new-function-app-hosting-settings.png" alt-text="Screenshot that shows the hosting tab settings for a new function app.":::
 
@@ -266,4 +266,4 @@ Next, run the simulated camera array you created earlier. Then, you'll check the
 
 1. Return to the Command Prompt or terminal window in which *run.js* is running, and select Ctrl+C.
 
-Congratulations! You've built a system that transmits wildlife photos to Blob Storage and uses an Azure AI Custom Vision model to determine which photos contain polar bears. The next step is to make the output more visual, and that starts with creating a SQL database by using Azure SQL Database.
+Congratulations! You've built a system that transmits wildlife photos to Blob Storage and uses an Azure AI Custom Vision model to determine which photos contain polar bears. The next step is to make the output more visual, and that starts with creating an SQL database by using Azure SQL Database.
