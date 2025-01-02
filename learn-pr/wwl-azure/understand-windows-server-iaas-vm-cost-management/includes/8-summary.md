@@ -1,5 +1,3 @@
-
-
 The Contoso IT team had concerns about the cost of hosting workloads in Azure. In the past, most costs associated with IT have been capital expenditure. However, with a cloud-based subscription model, most costs are operating expenditures. The IT director wanted more details about how costs can be managed.
 
 In this module, you learned to use the Azure Pricing calculator to assess likely costs. You also learned to use Azure Advisor to monitor actual costs for Azure resources, and implement Spot VMs to use unused capacity to save costs on VMs. You learned how to use Azure Reservations to cut down the pay-as-you-go cost, and about the advantages of using the Azure Hybrid Benefit licensing offer.
