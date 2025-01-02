@@ -151,4 +151,6 @@ public string Name
         }
     }
 }
+```
+
 The MVVM Toolkit is distributed through the `CommunityToolkit.Mvvm` NuGet package.

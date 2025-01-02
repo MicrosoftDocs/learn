@@ -70,10 +70,10 @@ In this code, the `Execute` behavior is provided by the method `GiveBonusExecute
 
 ## MVVM Toolkit
 
-The **MVVM Toolkit** library, part of the .NET Community Toolkit, also contains implementations of `ICommand` known as `RelayCommand` and `AsyncRelayCommand`. It also supplies source generators to simplify this code further. In the following example, the `GiveBonusCommand` will be generated setting both the method to call to execute and to call to see if it can execute.
+The MVVM Toolkit library contains implementations of `ICommand` known as `RelayCommand` and `AsyncRelayCommand`. It also supplies source generators to simplify this code further. In the following example, the `GiveBonusCommand` will be generated setting both the method to call to execute and to call to see if it can execute. The `[RelayCommand]` attribute is used on the `GiveBonus` method and it will generate the `GiveBonusCommand`. Additionally, by setting the `CanExecute` property on the attribute to the name of the method we want to hook up to the `CanExecute` method of the `ICommand`, it will generate the code to set this up for us.
 
 ```csharp
-public partial class EmployeeViewModel : INotifyPropertyChanged
+public partial class EmployeeViewModel : ObservableObject
 {
     public EmployeeViewModel(Employee model)
     {
@@ -97,17 +97,17 @@ The MVVM Toolkit also handles `async` methods, which are common in .NET programm
 Below is what is generated when we use the attribute above:
 
 ```csharp
-  partial class EmployeeViewModel
-  {
-      /// <summary>The backing field for <see cref="GiveBonusCommand"/>.</summary>
-      [global::System.CodeDom.Compiler.GeneratedCode("CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator", "8.4.0.0")]
-      private global::CommunityToolkit.Mvvm.Input.RelayCommand? giveBonusCommand;
-      /// <summary>Gets an <see cref="global::CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="GiveBonus"/>.</summary>
-      [global::System.CodeDom.Compiler.GeneratedCode("CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator", "8.4.0.0")]
-      [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-      public global::CommunityToolkit.Mvvm.Input.IRelayCommand GiveBonusCommand => giveBonusCommand ??= new global::CommunityToolkit.Mvvm.Input.RelayCommand(new global::System.Action(GiveBonus), GiveBonusCanExecute);
-  }
-
+partial class EmployeeViewModel
+{
+    /// <summary>The backing field for <see cref="GiveBonusCommand"/>.</summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator", "8.4.0.0")]
+    private global::CommunityToolkit.Mvvm.Input.RelayCommand? giveBonusCommand;
+    /// <summary>Gets an <see cref="global::CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="GiveBonus"/>.</summary>
+    [global::System.CodeDom.Compiler.GeneratedCode("CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator", "8.4.0.0")]
+    [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+    public global::CommunityToolkit.Mvvm.Input.IRelayCommand GiveBonusCommand => giveBonusCommand ??= new global::CommunityToolkit.Mvvm.Input.RelayCommand(new global::System.Action(GiveBonus), GiveBonusCanExecute);
+}
+```
 ## Commands with parameters
 
 The `ICommand` interface accepts an `object` parameter for the `CanExecute` and `Execute` methods. .NET MAUI implements this interface without any type checking through the `Command` class. The delegates you attach to the command must do their own type-checking to ensure that the correct parameter is passed. .NET MAUI also provides the `Command<T>` implementation where you set the type of parameter expected. When you create a command that accepts a single type of parameter, use `Command<T>`.
