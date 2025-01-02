@@ -50,15 +50,15 @@ quiz:
       explanation: "False. This option doesn't work to accept GitHub Copilot suggestions."
   - content: "Identify which statement is valid and select the correct answer:"
     choices:
-    - content: "A prompt, which is our output, is a collection of songs that tells our copilot what to generate."
+    - content: "A prompt, which is our output, is a collection of songs that tells GitHub Copilot what to generate."
       isCorrect: false
       explanation: "False. A prompt isn't a collection of songs."
-    - content: "A prompt, which is our input, is a collection of instructions or guidelines that tell our copilot what to generate."
+    - content: "A prompt, which is our input, is a collection of instructions or guidelines that tell GitHub Copilot what to generate."
       isCorrect: true
       explanation: "A prompt is crucial in eliciting specific responses from Copilot. The prompt might be a comment that steers Copilot to generate code on your behalf or writing code that Copilot autocompletes."
-    - content: "A prompt, which is our document, is a collection of instructions that tells our Copilot what to generate."
+    - content: "A prompt, which is a separate document, is a collection of instructions that tells GitHub Copilot what to generate."
       isCorrect: false
-      explanation: "False. A prompt isn't a document full of instructions that tells our Copilot what to generate."
+      explanation: "False. A prompt isn't a separate document full of instructions that tells GitHub Copilot what to generate."
   - content: "What does the quality of GitHub Copilot output depend on?"
     choices:
     - content: "Your code editor."
