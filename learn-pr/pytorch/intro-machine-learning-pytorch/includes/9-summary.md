@@ -8,11 +8,4 @@ You learned the following key areas:
 - How to optimize a model
 - How to optimize model inference
 
-Now that you've learned some of the basics of machine learning using neural networks concepts, we invite you to proceed with [PyTorch Fundamentals Learning Path](/training/paths/pytorch-fundamentals), and learn more:
-
-[!include[](../../../includes/open-link-in-new-tab-note.md)]
-
-- [Natural Language Processing with PyTorch](/training/modules/intro-natural-language-processing-pytorch)
-- [Audio Classification with PyTorch](/training/modules/intro-audio-classification-pytorch)
-
 Happy learning!
