@@ -17,12 +17,12 @@ levels:
   - beginner
 modules:
   - learn.philanthropies.explore-ai-basics
-  - learn.philanthropies.explore-ai-for-all
   - learn.philanthropies.explore-generative-ai
   - learn.philanthropies.explore-internet-search-beyond
-  - learn.philanthropies.get-started-with-copilot
   - learn.philanthropies.explore-responsible-ai
+  - learn.philanthropies.get-started-with-copilot
   - learn.philanthropies.boost-your-productivity-with-microsoft-copilot
+  - learn.philanthropies.explore-ai-for-all
 products:
   - ms-copilot
 roles:
