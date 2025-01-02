@@ -1,6 +1,51 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/2-application-architecture.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/3-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/4-create-azure-maps-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/5-create-twilio-account.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/6-deploy-azure-function-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/7-connect-twilio-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/advocates/send-location-over-sms-using-azure-functions-twilio/0-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
       "redirect_document_id": false
@@ -36616,6 +36661,301 @@
     {
       "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/pytorch-fundamentals/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/2-represent-text-as-tensors.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/3-bow-tfidf.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/4-embeddings.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/3-visualizations-transforms.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/5-recurrent-networks.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/4-speech-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/6-generative-networks.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/2-tensors.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/3-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/4-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/5-autograd.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/6-optimization.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/7-inference.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/8-quickstart.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/2-create-azure-function-maven-archetype.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/3-exercise-create-azure-function-maven-archetype.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/4-run-local-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/5-exercise-run-local-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/6-deploy-function-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/7-exercise-deploy-function-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/8-add-logging-to-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/9-exercise-add-logging-to-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/2-exercise-setup-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/3-overview-api.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/4-exercise-create-function-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/5-app-settings.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/6-exercise-app-settings.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/7-rest-function-routes.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/8-exercise-make-functions-restful.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/9-configure-cors.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/10-exercise-configure-cors.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/11-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/12-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-api-azure-functions/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/2-analyze-migration-serverless.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/3-exercise-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/4-plan-migration-from-nodejs-express-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/5-exercise-create-function-app.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/6-exercise-migrate-services-azure-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/7-review-azure-function-application.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/8-exercise-debug-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
       "redirect_document_id": false
     }
   ]

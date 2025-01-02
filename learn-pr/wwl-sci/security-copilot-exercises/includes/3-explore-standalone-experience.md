@@ -10,7 +10,7 @@ In this exercise, you explore all the key landmarks in the landing page of the s
 
 ### Exercise
 
-For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in the standalone experience of Microsoft Security Copilot.
+For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You work in the standalone experience of Microsoft Security Copilot.
 
 This exercise should take approximately **15** minutes to complete.
 
@@ -37,10 +37,10 @@ In this task, you start your exploration in the home menu.
     1. Select filter to view the available options, then select the X to close.
     1. Select the home menu icon to open the home menu.
 
-1. Select **Owner settings**. These settings are available to you as a Copilot owner. A Copilot contributor does have not access to these menu options.
+1. Select **Owner settings**. These settings are available to you as a Copilot owner. A Copilot contributor doesn't have access to these menu options.
     1. For plugins for Security Copilot, select the drop-down for Who can add and manage their own custom plugins to view the available options.
     1. Select drop-down for Who can add and manage custom plugins for everyone in the organization to view the available options. Note, this option is greyed out if Who can add and manage their own custom plugins is set to owners only.
-    1. Select the information icon next to "Allow Security Copilot to access data from your Microsoft 365 Services."  This setting must be enabled if you want to use the Microsoft Purview plugin. You'll work with this setting in a later exercise.
+    1. Select the information icon next to "Allow Security Copilot to access data from your Microsoft 365 Services."  This setting must be enabled if you want to use the Microsoft Purview plugin. You work with this setting in a later exercise.
     1. Select the drop-down for who can upload files to view the available options.
     1. Select the home menu icon to open the home menu.
 
@@ -51,7 +51,7 @@ In this task, you start your exploration in the home menu.
     1. Select the home menu icon to open the home menu.
 
 1. Select **Usage monitoring**.
-    1. Select the date filter to view available options.
+    1. Select the date filter and view the available options.
     1. Select the home menu icon to open the home menu.
 
 1. Select **Settings**.
@@ -61,7 +61,7 @@ In this task, you start your exploration in the home menu.
     1. Select the X to close the preferences window.
 
 1. Select where it says **Woodgrove** at the bottom left of the home menu.
-    1. When you select this option, you see your tenants. This is referred to as the tenant switcher. In this case, Woodgrove is the only available tenant.
+    1. When you select this option, you see your tenants. This option is referred to as the tenant switcher. In this case, Woodgrove is the only available tenant.
     1. Select the **Home** to return to the landing page.
 
 #### Task: Explore access to recent sessions
@@ -78,9 +78,9 @@ The next section of the Copilot landing page revolves around promptbooks. The la
 
 1. To the right of where it says "Get started with these promptbooks" are a left and right arrow key that allows you to scroll through the tiles for Microsoft security promptbooks. Select the **right arrow >**
 
-1. Each tile shows the title of the promptbook, a brief description, the number of prompts, and a run icon. Select the title of any of the promptbook tiles to open that promptbook. Select **Vulnerability impact assessment**, as an example.
+1. Each tile shows the title of the promptbook, a brief description, the number of prompts, and a run icon. When you select the title of any of the promptbook tiles, it opens that particular promptbook. Select **Vulnerability impact assessment**, as an example.
     1. The window for the selected promptbook provides information, including who created the promptbook, tags, a brief description, inputs required to run the promptbook, and a listing of the prompts.
-    2. Note the information about the promptbook and the available options. For this simulation you can't start a new session, you'll do that in a subsequent exercise. 
+    1. Note the information about the promptbook and the available options. For this simulation, you can't start a new session. You do that in a subsequent exercise. 
     1. Select **X** to close the window.
 
 1. Select **View the promptbook library**.
@@ -92,25 +92,25 @@ The next section of the Copilot landing page revolves around promptbooks. The la
 
 #### Task: Explore the prompts and sources icon in the prompt bar
 
-At the bottom center of the page is the prompt bar. The prompt bar includes the prompts and sources icon, which you explore in this task. In subsequent exercises you'll enter inputs directly in the prompt bar.
+At the bottom center of the page is the prompt bar. The prompt bar includes the prompts and sources icon, which you explore in this task. In subsequent exercises, you enter inputs directly in the prompt bar.
 
 1. From the prompt bar, you can select the prompts icon to select a built-in prompt or a promptbook. Select the **prompts icon** ![prompts icon](../media/prompt-icon.png).
     1. Select **See all promptbooks**
         1. Scroll to view all the available promptbooks.
         1. Select the **back-arrow** next to the search bar to go back.
-    1. Select **See all system  capabilities**. The list shows all available system capabilities (these capabilities are in effect prompts that you can run). Many system capabilities are associated with specific plugins and as such will only be listed if the corresponding plugin is enabled.
+    1. Select **See all system  capabilities**. The list shows all available system capabilities (these capabilities are in effect prompts that you can run). Many system capabilities are associated with specific plugins and as such they're only listed if the corresponding plugin is enabled.
         1. Scroll to view all the available promptbooks.
         1. Select the **back-arrow** next to the search bar to go back.
 
 1. Select the **sources icon** ![sources icon](../media/sources-icon.png).
-    1. The sources icon opens the manage sources window. From here, you can access Plugins or Files. The **Plugins** tab is selected by default.
-        1. Select whether you want to view all plugins, those that are enabled (on), or those that are disabled (off).
+    1. The **Manage sources** window opens. From here, you can access Plugins or Files. The **Plugins** tab is selected by default.
+        1. Select whether you want to view all plugins, the plugins that are enabled (on), or the plugins that are disabled (off).
         1. Expand/collapse list of Microsoft, non-Microsoft, and custom plugins.
         1. Some plugins require configuring parameters. Select the **Set up** button for the Microsoft Sentinel plugin, to view the settings window. Select **cancel** to close the settings window. In a separate exercise, you configure the plugin.
-    1. You should still be in the Manage sources window. Select **Files**.
+    1. You should still be in the **Manage sources** window. Select **Files**.
         1. Review the description.
-        1. Files can be uploaded and used as a knowledge base by Copilot. In a subsequent exercise, you'll work with file uploads.
-        1. Select **X** to close the manage sources window.
+        1. Files can be uploaded and used as a knowledge base by Copilot. In a subsequent exercise, you work with file uploads.
+        1. Select **X** to close the **Manage sources** window.
 
 #### Task:  Explore the help feature
 
