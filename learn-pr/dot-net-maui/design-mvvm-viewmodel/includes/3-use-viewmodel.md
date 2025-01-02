@@ -131,7 +131,7 @@ public partial class EmployeeViewModel : ObservableObject
 }
 ```
 
-The code that is generated is located locally on your machine in the `bin` directory so it isn't checked in to source control. The code below is what is generated when the `[ObservableProperty]` attribute is used:
+The code that is generated is located locally on your machine and will not be checked into source control. The code below is what is generated when the `[ObservableProperty]` attribute is used:
 
 ```csharp
 [global::System.CodeDom.Compiler.GeneratedCode("CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator", "8.4.0.0")]
