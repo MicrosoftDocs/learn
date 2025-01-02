@@ -93,20 +93,6 @@ public partial class EmployeeViewModel : ObservableObject
 }
 ```
 
-Below is what is generated when we use the attribute above:
-
-```csharp
-partial class EmployeeViewModel
-{
-    /// <summary>The backing field for <see cref="GiveBonusCommand"/>.</summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator", "8.4.0.0")]
-    private global::CommunityToolkit.Mvvm.Input.RelayCommand? giveBonusCommand;
-    /// <summary>Gets an <see cref="global::CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="GiveBonus"/>.</summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("CommunityToolkit.Mvvm.SourceGenerators.RelayCommandGenerator", "8.4.0.0")]
-    [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-    public global::CommunityToolkit.Mvvm.Input.IRelayCommand GiveBonusCommand => giveBonusCommand ??= new global::CommunityToolkit.Mvvm.Input.RelayCommand(new global::System.Action(GiveBonus), GiveBonusCanExecute);
-}
-```
 
 The MVVM Toolkit also handles `async` methods, which are common in .NET programming.
 

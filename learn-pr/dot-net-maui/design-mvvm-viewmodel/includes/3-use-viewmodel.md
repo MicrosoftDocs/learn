@@ -131,26 +131,6 @@ public partial class EmployeeViewModel : ObservableObject
 }
 ```
 
-The code that is generated is located locally on your machine and will not be checked into source control. The code below is what is generated when the `[ObservableProperty]` attribute is used:
-
-```csharp
-[global::System.CodeDom.Compiler.GeneratedCode("CommunityToolkit.Mvvm.SourceGenerators.ObservablePropertyGenerator", "8.4.0.0")]
-[global::System.Diagnostics.DebuggerNonUserCode]
-[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
-public string Name
-{
-    get => _name;
-    set
-    {
-        if (!global::System.Collections.Generic.EqualityComparer<string>.Default.Equals(_name, value))
-        {
-            OnPropertyChanging(global::CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name);
-            _name= value;
-            OnPropertyChanged(global::CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name);
-        
-        }
-    }
-}
-```
+The code that is generated is located locally on your machine and will not be checked into source control.
 
 The MVVM Toolkit is distributed through the `CommunityToolkit.Mvvm` NuGet package.
