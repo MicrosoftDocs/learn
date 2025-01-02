@@ -131,6 +131,4 @@ public partial class EmployeeViewModel : ObservableObject
 }
 ```
 
-The code that is generated is located locally on your machine and will not be checked into source control.
-
 The MVVM Toolkit is distributed through the `CommunityToolkit.Mvvm` NuGet package.
