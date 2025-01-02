@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/31/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -17,32 +17,32 @@ quiz:
     choices:
     - content: "Writing to a file"
       isCorrect: false
-      explanation: "That's incorrect. The coordinator node is responsible for applying metadata changes; however, it's not required when performing reads or writes targeting file content."
+      explanation: "Incorrect. The coordinator node is responsible for applying metadata changes; however, it's not required when performing reads or writes targeting file content."
     - content: "Creating a file"
       isCorrect: true
-      explanation: "That's correct. Creating a file involves a metadata change, which requires the use of the coordinator node."
+      explanation: "Correct. Creating a file involves a metadata change, which requires the use of the coordinator node."
     - content: "Reading from a file"
       isCorrect: false
-      explanation: "That's incorrect. The coordinator node is responsible for applying metadata changes; however, it's not required when performing reads or writes targeting file content."
+      explanation: "Incorrect. The coordinator node is responsible for applying metadata changes; however, it's not required when performing reads or writes targeting file content."
   - content: "What is the round-trip latency threshold which, if exceeded, an administrator should use asynchronous replication, rather than synchronous, when implementing Storage Replica?"
     choices:
     - content: "1 ms"
       isCorrect: false
-      explanation: "That's incorrect. Asynchronous replication enables replication across longer distances in cases where network round-trip latency exceeds 5 ms."
+      explanation: "Incorrect. Asynchronous replication enables replication across longer distances in cases where network round-trip latency exceeds 5 ms."
     - content: "5 ms"
       isCorrect: true
-      explanation: "That's correct. Asynchronous replication enables replication across longer distances in cases where network round-trip latency exceeds 5 ms."
+      explanation: "Correct. Asynchronous replication enables replication across longer distances in cases where network round-trip latency exceeds 5 ms."
     - content: "50 ms"
       isCorrect: false
-      explanation: "That's incorrect. Asynchronous replication enables replication across longer distances in cases where network round-trip latency exceeds 5 ms."
+      explanation: "Incorrect. Asynchronous replication enables replication across longer distances in cases where network round-trip latency exceeds 5 ms."
   - content: "What is the maximum length of the name assigned to the Client Access Point when creating the SOFS Windows Server failover cluster role?"
     choices:
     - content: "10"
       isCorrect: false
-      explanation: "That's incorrect. The clustered file server role emulates a Windows-based server, so its name, just as the name of any Windows computer, can't exceed 15 characters."
+      explanation: "Incorrect. The clustered file server role emulates a Windows-based server, so its name, just as the name of any Windows computer, can't exceed 15 characters."
     - content: "15"
       isCorrect: true
-      explanation: "That's correct. The clustered file server role emulates a Windows-based server, so its name, just as the name of any Windows computer, can't exceed 15 characters."
+      explanation: "Correct. The clustered file server role emulates a Windows-based server, so its name, just as the name of any Windows computer, can't exceed 15 characters."
     - content: "255"
       isCorrect: false
-      explanation: "That's incorrect. The clustered file server role emulates a Windows-based server, so its name, just as the name of any Windows computer, can't exceed 15 characters."
+      explanation: "Incorrect. The clustered file server role emulates a Windows-based server, so its name, just as the name of any Windows computer, can't exceed 15 characters."
