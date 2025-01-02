@@ -26,7 +26,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
 
    *Configure the basic settings for a new function app*
 
-1. On the **Hosting** tab, select the storage account you created to upload wildlife photos to. Then select **Review + create**.
+1. On the **Storage** tab, select the storage account you created to upload wildlife photos to. Then select **Review + create**.
 
    :::image type="content" source="../media/create-new-function-app-hosting-settings.png" alt-text="Screenshot that shows the hosting tab settings for a new function app.":::
 
