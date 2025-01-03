@@ -36962,6 +36962,11 @@
       "source_path": "learn-pr/paths/implement-advanced-data-visualization-techniques/index.md",
       "redirect_url": "/training/paths/build-power-bi-visuals-reports/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/index.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
     }
   ]
 }
