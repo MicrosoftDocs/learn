@@ -17,13 +17,13 @@ After you confirm the networking ports and test them as open, take the following
 
 1. From within the VMware HCX Connector dashboard on-premises, under **Infrastructure**, select **Interconnect** > **Service Mesh** > **Create Service Mesh**.
 
-    :::image type="content" source="../media/5-hcx-create-service-mesh.png" alt-text="Screenshot of options to select when you're creating a service mesh between the on-premises HCX Connector and Azure VMware Solution."lightbox="../media/5-hcx-create-service-mesh.png":::
+    :::image type="content" source="../media/5-hcx-create-service-mesh.png" alt-text="Screenshot of options to select when you're creating a service mesh between the on-premises VMware HCX Connector and Azure VMware Solution."lightbox="../media/5-hcx-create-service-mesh.png":::
 
 1. Review the pre-populated sites created during site pairing, then select **Continue**. If this site is the first service mesh configuration, the first screen doesn't need modification.
 
 1. Select both the source and remote compute profiles from the dropdown lists, then select **Continue**. These selections define where VMs can use VMware HCX services for migration.
 
-    :::image type="content" source="../media/5-select-compute-profile-source.png" alt-text="Screenshot that shows selecting the source compute profile in the on-premises HCX Connector.":::
+    :::image type="content" source="../media/5-select-compute-profile-source.png" alt-text="Screenshot that shows selecting the source compute profile in the on-premises VMware HCX Connector.":::
 
     :::image type="content" source="../media/5-select-compute-profile-remote.png" alt-text="Screenshot that shows selecting the remote compute profile in Azure VMware Solution.":::
 
@@ -51,11 +51,11 @@ After you confirm the networking ports and test them as open, take the following
 
 1. Select **View Tasks** to monitor the service mesh deployment.
 
-    :::image type="content" source="../media/5-monitor-service-mesh.png" alt-text="Screenshot of the button for viewing service mesh configuration tasks in the on-premises HCX Connector.":::
+    :::image type="content" source="../media/5-monitor-hcx-service-mesh-tasks.png" alt-text="Screenshot of the button for viewing service mesh configuration tasks in the on-premises VMware HCX Connector."lightbox="../media/5-monitor-hcx-service-mesh-tasks.png":::
 
 1. When the service mesh deployment finishes successfully, all services will show as green.
 
-    :::image type="content" source="../media/5-service-mesh-green.png" alt-text="Screenshot of a finished deployment, where the service mesh displays all services as green in the on-premises HCX Connector.":::
+    :::image type="content" source="../media/5-service-mesh-green.png" alt-text="Screenshot of a finished deployment, where the service mesh displays all services as green in the on-premises VMware HCX Connector.":::
 
 1. Verify the health of the on-premises service mesh, by selecting **Interconnect** > **Appliances**. The tunnels should be green and indicate **Up**.
 
