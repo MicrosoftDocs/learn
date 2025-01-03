@@ -4452,3 +4452,16 @@ achievements:
   title: Refactor Node.js Express APIs into serverless Azure Functions APIs
   summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
   iconUrl: /training/achievements/shift-express-api-azure-functions.svg
+- uid: learn.wwl.implement-advanced-data-visualization-techniques.trophy
+  type: trophy
+  title: Implement advanced data visualization techniques by using Power BI
+  summary: >-
+    This learning path takes analysts through visualizing data in Power BI. You'll learn about visuals in Power BI reports, using Power BI to visualize real-time data, and visualizing data in paginated reports.
+  
+    This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).
+  iconUrl: /training/achievements/implement-advanced-data-visualization-techniques.svg
+- uid: learn.wwl.understand-advanced-data-visualization-concepts.badge
+  type: badge
+  title: Understand advanced data visualization concepts
+  summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
+  iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
