@@ -4460,3 +4460,8 @@ achievements:
   
     This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).
   iconUrl: /training/achievements/implement-advanced-data-visualization-techniques.svg
+- uid: learn.wwl.understand-advanced-data-visualization-concepts.badge
+  type: badge
+  title: Understand advanced data visualization concepts
+  summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
+  iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
