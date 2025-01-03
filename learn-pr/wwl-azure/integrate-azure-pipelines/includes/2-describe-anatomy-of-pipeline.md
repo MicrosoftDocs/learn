@@ -41,13 +41,13 @@ jobs:
 
 Most pipelines will have these components:
 
- -  Name – though often it's skipped (if it's skipped, a date-based name is generated automatically).
- -  Trigger – more on triggers later, but without an explicit trigger. There's an implicit "trigger on every commit to any path from any branch in this repo."
- -  Variables – "Inline" variables (more on other types of variables later).
- -  Job – every pipeline must have at least one job.
- -  Pool – you configure which pool (queue) the job must run on.
- -  Checkout – the "checkout: self" tells the job which repository (or repositories if there are multiple checkouts) to check out for this job.
- -  Steps – the actual tasks that need to be executed: in this case, a "script" task (the script is an alias) that can run inline scripts.
+- Name – though often it's skipped (if it's skipped, a date-based name is generated automatically).
+- Trigger – more on triggers later, but without an explicit trigger. There's an implicit "trigger on every commit to any path from any branch in this repo."
+- Variables – "Inline" variables (more on other types of variables later).
+- Job – every pipeline must have at least one job.
+- Pool – you configure which pool (queue) the job must run on.
+- Checkout – the "checkout: self" tells the job which repository (or repositories if there are multiple checkouts) to check out for this job.
+- Steps – the actual tasks that need to be executed: in this case, a "script" task (the script is an alias) that can run inline scripts.
 
 ## Name
 
@@ -74,7 +74,7 @@ trigger:
 
 ```
 
-This trigger is configured to queue the pipeline only when there's a commit to the main branch. What about triggering for any branch except the main? You guessed it: use exclude instead of include:
+This trigger is configured to queue the pipeline only when a commit to the main branch exists. What about triggering for any branch except the main? You guessed it: use exclude instead of include:
 
 ```YAML
 trigger:
@@ -90,7 +90,7 @@ trigger:
 
 What about a trigger for any branch with a name that starts with topic/ and only if the change is in the webapp folder?
 
-```
+```YAML
 trigger:
   branches:
     include:
@@ -110,146 +110,129 @@ You can mix includes and excludes if you need to. You can also filter on tags.
 
 There are other triggers for other events, such as:
 
- -  Pull Requests (PRs) can also filter branches and paths.
- -  Schedules allow you to specify cron expressions for scheduling pipeline runs.
- -  Pipelines will enable you to trigger pipelines when other pipelines are complete, allowing pipeline chaining.
+- Pull Requests (PRs) can also filter branches and paths.
+- Schedules allow you to specify cron expressions for scheduling pipeline runs.
+- Pipelines will enable you to trigger pipelines when other pipelines are complete, allowing pipeline chaining.
 
 You can find all the documentation on triggers [here](/azure/devops/pipelines/build/triggers).
 
 ## Jobs
 
-A job is a set of steps executed by an agent in a queue (or pool). Jobs are atomic – they're performed wholly on a single agent. You can configure the same job to run on multiple agents simultaneously, but even in this case, the entire set of steps in the job is run on every agent. You'll need two jobs if you need some steps to run on one agent and some on another.
+A job is a set of steps an agent executes in a queue (or pool). Jobs are atomic – they're performed wholly on a single agent. You can configure the same job to run on multiple agents simultaneously, but even in this case, the entire set of steps in the job is run on every agent. You'll need two jobs if you need some steps to run on one agent and some on another.
 
 A job has the following attributes besides its name:
 
- -  displayName – a friendly name.
- -  dependsOn - a way to specify dependencies and ordering of multiple jobs.
- -  condition – a binary expression: if it evaluates to true, the job runs; if false, the job is skipped.
- -  strategy - used to control how jobs are parallelized.
- -  continueOnError - to specify if the rest of the pipeline should continue or not if this job fails.
- -  pool – the name of the pool (queue) to run this job on.
- -  workspace - managing the source workspace.
- -  container - for specifying a container image to execute the job later.
- -  variables – variables scoped to this job.
- -  steps – the set of steps to execute.
- -  timeoutInMinutes and cancelTimeoutInMinutes for controlling timeouts.
- -  services - sidecar services that you can spin up.
+- displayName – a friendly name.
+- dependsOn - a way to specify dependencies and ordering of multiple jobs.
+- condition – a binary expression: if it evaluates to true, the job runs; if false, the job is skipped.
+- strategy - used to control how jobs are parallelized.
+- continueOnError - specify if the rest of the pipeline should continue if this job fails.
+- pool – the pool name (queue) to run this job on.
+- workspace - managing the source workspace.
+- container - for specifying a container image to execute the job later.
+- variables – variables scoped to this job.
+- steps – the set of steps to execute.
+- timeoutInMinutes and cancelTimeoutInMinutes for controlling timeouts.
+- services - sidecar services that you can spin up.
 
 ## Dependencies
 
-You can define dependencies between jobs using the `dependsOn` property. It lets you specify sequences and fan-out and fan-in scenarios.
-
-A sequential dependency is implied if you don't explicitly define a dependency.
-
-If you want jobs to run parallel, you need to specify `dependsOn: []`.
+When you define multiple jobs in a single stage, you can specify dependencies between them. Pipelines must contain at least one job with no dependencies. By default Azure DevOps YAML pipeline jobs run in parallel unless the `dependsOn` value is set.
 
 Let's look at a few examples. Consider this pipeline:
 
 ```YAML
 jobs:
-
-- job: A
+- job: Debug
   steps:
-  # steps omitted for brevity
-
-
-- job: B
+  - script: echo hello from the Debug build
+- job: Release
+  dependsOn: Debug
   steps:
-  # steps omitted for brevity
+  - script: echo hello from the Release build
 
 ```
 
-Because no dependsOn was specified, the jobs will run sequentially: first A and then B.
-
-To have both jobs run in parallel, we add dependsOn: \[\] to job B:
+Example jobs that build in parallel (no dependencies):
 
 ```YAML
 jobs:
-
-- job: A
+- job: Windows
+  pool:
+    vmImage: 'windows-latest'
   steps:
-  # steps omitted for brevity
-
-
-- job: B
-  dependsOn: [] # this removes the implicit dependency on previous stage and causes this to run in parallel
+  - script: echo hello from Windows
+- job: macOS
+  pool:
+    vmImage: 'macOS-latest'
   steps:
-  # steps omitted for brevity
+  - script: echo hello from macOS
+- job: Linux
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - script: echo hello from Linux
 
 ```
 
-If we want to fan out and fan in, we can do that too:
+Example of fan out:
 
 ```YAML
 jobs:
-
-- job: A
+- job: InitialJob
   steps:
-
-  - script: echo' job A.'
-
-
-- job: B
-  dependsOn: A
+  - script: echo hello from initial job
+- job: SubsequentA
+  dependsOn: InitialJob
   steps:
-
-  - script: echo' job B.'
-
-
-- job: C
-  dependsOn: A
+  - script: echo hello from subsequent A
+- job: SubsequentB
+  dependsOn: InitialJob
   steps:
-
-  - script: echo' job C.'
-
-
-- job: D
-  dependsOn:
-
-  - B
-  - C
-  steps:
-
-  - script: echo' job D.'
-
-
-- job: E
-  dependsOn:
-
-  - B
-  - D
-  steps:
-
-  - script: echo' job E.'
-
+  - script: echo hello from subsequent B
 ```
 
-:::image type="content" source="../media/jobs-dependency-chart-7231b7f2.png" alt-text="Diagram that shows a dependency chart. A to B and C to D and E.":::
+Example of fan-in:
 
+```YAML
+jobs:
+- job: InitialA
+  steps:
+  - script: echo hello from initial A
+- job: InitialB
+  steps:
+  - script: echo hello from initial B
+- job: Subsequent
+  dependsOn:
+  - InitialA
+  - InitialB
+  steps:
+  - script: echo hello from subsequent
+```
 
 ## Checkout
 
 Classic builds implicitly checkout any repository artifacts, but pipelines require you to be more explicit using the checkout keyword:
 
- -  Jobs check out the repo they're contained in automatically unless you specify `checkout: none`.
- -  Deployment jobs don't automatically check out the repo, so you'll need to specify checkout: self for deployment jobs if you want access to files in the YAML file's repo.
+- Jobs check out the repo they're contained in automatically unless you specify `checkout: none`.
+- Deployment jobs don't automatically check out the repo, so you'll need to specify checkout: self for deployment jobs if you want access to the YAML file's repo.
 
 ## Download
 
 Downloading artifacts requires you to use the download keyword. Downloads also work the opposite way for jobs and deployment jobs:
 
- -  Jobs don't download anything unless you explicitly define a download.
- -  Deployment jobs implicitly do a download: current, which downloads any pipeline artifacts created in the existing pipeline. To prevent it, you must specify `download: none`.
+- Jobs don't download anything unless you explicitly define a download.
+- Deployment jobs implicitly do a download: current, which downloads any pipeline artifacts created in the existing pipeline. To prevent it, you must specify `download: none`.
 
 ## Resources
 
 What if your job requires source code in another repository? You'll need to use resources. Resources let you reference:
 
- -  other repositories
- -  pipelines
- -  builds (classic builds)
- -  containers (for container jobs)
- -  packages
+- other repositories
+- pipelines
+- builds (classic builds)
+- containers (for container jobs)
+- packages
 
 To reference code in another repo, specify that repo in the resources section and then reference it via its alias in the checkout step:
 

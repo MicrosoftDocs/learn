@@ -30,7 +30,7 @@ The following table describes what's included in each plan at a high level.
 | :--- | :--- | :--- |
 |Automatic onboarding for resources in Azure, AWS, GCP| Yes| Yes|
 |Microsoft threat and vulnerability management| Yes| Yes|
-|Flexibility to use Microsoft Defender for Cloud or Microsoft 365 Defender portal| Yes| Yes|
+|Flexibility to use Microsoft Defender for Cloud or Microsoft Defender portal| Yes| Yes|
 |Integration of Microsoft Defender for Cloud and Microsoft Defender for Endpoint (alerts, software inventory, Vulnerability Assessment)| Yes| Yes|
 |Log-analytics (500 MB free)| | Yes|
 |Vulnerability Assessment using Qualys| | Yes|		

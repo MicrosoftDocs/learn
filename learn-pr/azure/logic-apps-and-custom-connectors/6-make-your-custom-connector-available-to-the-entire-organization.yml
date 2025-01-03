@@ -2,13 +2,14 @@
 uid: learn.azure.logic-apps-and-custom-connectors.6-make-your-custom-connector-available-to-the-entire-organization
 title: Share a custom connector
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Share a custom connector
   description: In this unit, you will learn how to publish your custom connector, both inside your organization and to the wider community.
-  ms.date: 04/11/2019
+  ms.date: 05/02/2023
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 6
 content: |
@@ -38,3 +39,4 @@ quiz:
     - content: "No, you cannot apply for certification."
       isCorrect: false
       explanation: "Modify the API to use OAuth2, an API key, or basic authentication. Client certificate authentication is not supported."
+

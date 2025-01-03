@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.wwl.microsoft-fabric-admin-governance
+metadata:
+  title: Administer and govern Microsoft Fabric
+  description: Microsoft Fabric Administration involves securing and governing data, administering the environment, and monitoring optimizing performance for efficient and compliant data management.
+  ms.date: 10/30/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: learning-path
+title: Administer and govern Microsoft Fabric
+prerequisites: |
+  Before starting this learning path, you should have experience with Microsoft Fabric or Power BI. You should also have a basic understanding of data management and data governance concepts.
+summary: |
+  Microsoft Fabric Administration involves securing and governing data, administering the environment, and monitoring optimizing performance for efficient and compliant data management.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- administrator
+products:
+- fabric
+subjects:
+- big-data
+- data-analytics
+- data-engineering
+- data-integration
+- data-management
+modules:
+- learn.wwl.administer-fabric
+- learn-wwl.secure-data-access-in-fabric
+- learn-wwl.secure-data-warehouse-in-microsoft-fabric
+- learn.fabric-data-governance-purview
+trophy:
+  uid: learn.wwl.microsoft-fabric-admin-governance.trophy

@@ -22,23 +22,23 @@ By using Terraform, you can validate and preview infrastructure changes before y
 
 ## Terraform configuration files
 
-Configuration files generate an execution plan and what the plan will do to reach the wanted state. Terraform can then build the described infrastructure. As the configuration changes, Terraform can determine what changed and then create incremental execution plans.
+Configuration files generate an execution plan and what the plan will do to reach the wanted state. Terraform can then build the described infrastructure. As the configuration changes, Terraform can determine what changed and create incremental execution plans.
 
-Terraform configuration files use their own configuration language, similar to YAML, that's designed to allow a description of the infrastructure.
+Terraform configuration files use their own configuration language similar to YAML that's designed to allow a description of the infrastructure.
 
 You create configuration files by using HashiCorp Configuration Language (HCL) syntax. HCL is declarative, describing an intended goal rather than the steps to reach that goal. HCL syntax allows you to specify the cloud provider, such as Azure, and the elements that make up your cloud infrastructure.
 
 The configuration files are stored as plain text files with a *.tf* extension. They are:
 
-- *main.tf*: (required) Defines the main structure, deploying the complete infrastructure directly or through calls to modules.
-- *outputs.tf*: Identifies each return value of a Terraform module.
-- *variables.tf*: Defines the variables in *main.tf*, whether they're required or not.
+- *main.tf*: (required) Defines the main structure, deploying the complete infrastructure directly or through calls to modules
+- *outputs.tf*: Identifies each return value of a Terraform module
+- *variables.tf*: Defines the variables in *main.tf*, whether they're required or not
 
 ![Screenshot of the Terraform configuration structure.](../media/3-config.png)
 
 ### Modules
 
-Terraform resources can be grouped into a module, which creates a larger unit of configuration. These modules are sets of configuration files that are stored in a single directory. A simple configuration consists of a single directory with one or more *.tf* files.
+You can group Terraform resources into a module, which creates a larger unit of configuration. These modules are sets of configuration files that are stored in a single directory. A simple configuration consists of a single directory with one or more *.tf* files.
 
 Modules offer many benefits. For example, modules:
 
@@ -49,19 +49,19 @@ Modules offer many benefits. For example, modules:
 
 ### The main.tf file
 
-Your *main.tf* file contains the main set of configuration details for your module. This file is often called a Terraform _plan_. Your Terraform plan specifies the infrastructure resources that you need. You can name this file whatever you want, but it's usually named *main.tf*.
+Your *main.tf* file contains the main set of configuration details for your module. This file is often called a Terraform *plan*. Your Terraform plan specifies the infrastructure resources that you need. You can name this file whatever you want, but it's usually named *main.tf*.
 
 ## Terraform workflow
 
-Terraform recommends its core “initialize, plan, and apply” workflow for automation. This workflow runs all Terraform CI/CD actions on new and updated Git pull requests.
+Terraform recommends its core "initialize, plan, and apply" workflow for automation. This workflow runs all Terraform CI/CD actions on new and updated Git pull requests.
 
 ![Diagram of the Terraform workflow, displaying the core actions Init, Plan, and Apply.](../media/3-workflow.png)
 
 The core actions for this workflow are:
 
-- **Init**: Initialize a working directory with Terraform configuration files.
-- **Plan**: Produce a plan for changing resources to match the current configuration.
-- **Apply**: Apply the changes described by the plan.
+- **Init**: Initialize a working directory with Terraform configuration files
+- **Plan**: Produce a plan for changing resources to match the current configuration
+- **Apply**: Apply the changes described by the plan
 
 ### State
 
@@ -75,4 +75,4 @@ You can also store state remotely, an approach that works better in a team envir
 
 ## Next steps
 
-In the next unit, we'll discuss using Terraform with either GitHub Actions or Azure Pipelines, to provision and deploy your applications.
+In the next unit, we'll discuss using Terraform with either GitHub Actions or Azure Pipelines to provision and deploy your applications.

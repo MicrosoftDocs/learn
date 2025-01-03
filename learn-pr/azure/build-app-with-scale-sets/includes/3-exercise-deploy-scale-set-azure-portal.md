@@ -1,6 +1,6 @@
-In the example scenario, you've decided to use a scale set to run the web application for the shipping company. Using a scale set, the shipping company can maintain short response times for users as the workload varies.
+In the example scenario, you decide to use a scale set to run the web application for the shipping company. The shipping company can maintain short response times for users as the workload varies by using a scale set.
 
-Your first task is to create a scale set. You'll configure it to run a web server, in this case **nginx**. When you've configured the scale set correctly, you'll deploy your web application. Then you'll set up a health probe that Azure will use to verify the availability of each VM in the scale set. Finally, you'll test the scale set by sending requests from a web browser.
+Your first task is to create a scale set. Configure it to run a web server, in this case *nginx*. After you configure the scale set correctly, deploy your web application. Then set up a health probe that Azure uses to verify the availability of each virtual machine (VM) in the scale set. Finally, test the scale set by sending requests from a web browser.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use the REST API to retrieve metrics.
@@ -10,6 +10,8 @@ Your first task is to create a scale set. You'll configure it to run a web serve
 ## Deploy a Virtual Machine Scale Set
 
 1. Sign in to the [Azure portal](https://portal.azure.com) and open Azure Cloud Shell.
+
+1. In the toolbar at the top of the Cloud Shell window, select **Settings** > **Go to Classic version**.
 
 1. In Cloud Shell, start the code editor and create a file named *cloud-init.yaml*.
 
@@ -35,9 +37,9 @@ Your first task is to create a scale set. You'll configure it to run a web serve
 
     This file contains configuration information to install nginx on the VMs in the scale set.
 
-1. Press **Ctrl+S** to save the file, then press **Ctrl+Q** to close the code editor.
+1. Select **Ctrl**+**S** to save the file, then **Ctrl**+**Q** to close the code editor.
 
-1. Run the following command to create a new resource group named `scalesetrg` for your scale set:
+1. Run the following command to create a new resource group for your scale set:
 
     ```azurecli
     az group create --location eastus --name myResourceGroup
@@ -49,7 +51,7 @@ Your first task is to create a scale set. You'll configure it to run a web serve
     az vmss create \
       --resource-group myResourceGroup \
       --name webServerScaleSet \
-      --image UbuntuLTS \
+      --image Ubuntu2204 \
       --upgrade-policy-mode automatic \
       --custom-data cloud-init.yaml \
       --admin-username azureuser \
@@ -77,7 +79,7 @@ Your first task is to create a scale set. You'll configure it to run a web serve
       --path /
     ```
 
-    The health probe pings the root of the website through port 80. If the website doesn't respond, the server is considered unavailable. The load balancer won't route traffic to the server.
+    The health probe pings the root of the website through port 80. If the website doesn't respond, the server is considered unavailable. The load balancer doesn't route traffic to the server.
 
 1. Run the following command to configure the load balancer to route HTTP traffic to the instances in the scale set:
 
@@ -88,31 +90,28 @@ Your first task is to create a scale set. You'll configure it to run a web serve
       --lb-name webServerScaleSetLB \
       --probe-name webServerHealth \
       --backend-pool-name webServerScaleSetLBBEPool \
-      --backend-port 80 \
+      --backend-port 8080 \
       --frontend-ip-name loadBalancerFrontEnd \
-      --frontend-port 80 \
+      --frontend-port 8080 \
       --protocol tcp
     ```
 
 ## Test the Virtual Machine Scale Set
 
-1. In the Azure portal, on the left, select **Resource groups** > **scalesetrg**.
+1. In the Azure portal, from the side menu, select **Resource groups** > **myResourceGroup**.
 
 1. Select the **webServerScaleSet** Virtual Machine Scale Set.
 
 1. On the **Overview** page, note the public IP address of the Virtual Machine Scale Set.
 
-    ![Screenshot of the Azure portal, showing the Overview page for the Virtual Machine Scale Set.](../media/3-vmss-properties.png)
+    :::image type="content" source="../media/3-vmss-properties.png" alt-text="Screenshot of the Azure portal, showing the Overview page for the Virtual Machine Scale Set." lightbox="../media/3-vmss-properties.png":::
 
-1. Under **Settings**, select **Instances**. Verify that the scale set contains two running VMs.
+1. Select **Instances**. Verify that the scale set contains two running VMs.
 
-    ![Screenshot of the Azure portal, showing the instances for the Virtual Machine Scale Set.](../media/3-vmss-instances.png)
+    :::image type="content" source="../media/3-vmss-instances.png" alt-text="Screenshot of the Azure portal, showing the instances for the Virtual Machine Scale Set." lightbox="../media/3-vmss-instances.png":::
 
-1. Select an instance and navigate to the **Properties** tab. Verify that the VMs are running Ubuntu Linux.
+1. Select an instance and navigate to the **Properties** page. Verify that the VMs are running Ubuntu Linux.
 
-    ![Screenshot of the Azure portal, showing the operating system for the Virtual Machine Scale Set.](../media/3-vmss-operating-system.png)
+    :::image type="content" source="../media/3-vmss-operating-system.png" alt-text="Screenshot of the Azure portal, showing the operating system for the Virtual Machine Scale Set.":::
 
-
-1. In your web browser, go to the public IP address of the scale set. Verify that the message ```Hello World from Virtual Machine Scale Set !``` appears.
-
-    :::image type="content" source="../media/3-web-app.png" alt-text="Screenshot of the web app running in a web browser with the desired message." loc-scope="other":::
+1. In your web browser, go to the public IP address of the scale set. Verify that the message **Hello World from Virtual Machine Scale Set !** appears.

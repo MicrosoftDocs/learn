@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.store-data-azure-cosmos-aspire.using-azure-cosmos
+title: Using Azure Cosmos DB
+metadata:
+  title: Using Azure Cosmos DB
+  description: "Learn about how to connect a .NET Aspire solution to a Cosmos DB database to read and write data."
+  ms.date: 3/22/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-using-azure-cosmos.md)]

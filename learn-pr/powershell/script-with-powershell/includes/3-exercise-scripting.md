@@ -1,10 +1,12 @@
-In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
+In this unit, you use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
 
-First, you'll learn how to set up a profile so you can customize your working environment the way you want it. You'll then write some basic scripts and get a feeling for interpolation and scope.
+First, you learn how to set up a profile so you can customize your working environment the way you want it. Then, you write some basic scripts and get a feeling for interpolation and scope.
 
 ## Set up a profile
 
 A profile is a script that runs when you start a new session. Having a customized environment can make you more productive.
+
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
 
 1. Enter `pwsh` in a terminal window to start a PowerShell session:
 
@@ -18,7 +20,7 @@ A profile is a script that runs when you start a new session. Having a customize
    $Profile | Select-Object *
    ```
 
-   The output will display something similar to this text:
+   The output displays something similar to this text:
 
    ```output
    CurrentUserAllHosts                        CurrentUserCurrentHost
@@ -35,7 +37,7 @@ A profile is a script that runs when you start a new session. Having a customize
      -Path $Profile.CurrentUserCurrentHost -Force
    ```
 
-   The `-Force` switch will overwrite existing content, so be careful if you run this locally and have an existing profile.
+   The `-Force` switch overwrites existing content, so be careful if you run this command locally and have an existing profile.
 
 1. Run `pwsh` to create a new shell. You should now see the following (in green):
 

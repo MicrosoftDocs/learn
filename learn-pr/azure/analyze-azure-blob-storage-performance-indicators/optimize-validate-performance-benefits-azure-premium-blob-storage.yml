@@ -2,13 +2,15 @@
 uid: learn.azure.analyze-azure-blob-storage-performance-indicators.optimize-validate-performance-benefits-azure-premium-blob-storage 
 title: Optimize and validate performance benefits with Azure Premium Blob Storage 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Optimize and validate performance benefits with Azure Premium Blob Storage
   description: Optimize and validate performance benefits with Azure Premium Blob Storage.
   ms.date: 08/01/2022
   author: ciphertxt
   ms.author: schoag
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/optimize-validate-performance-benefits-azure-premium-blob-storage.md)]
+

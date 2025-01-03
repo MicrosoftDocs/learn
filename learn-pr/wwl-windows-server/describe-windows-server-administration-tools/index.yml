@@ -3,11 +3,11 @@ uid: learn.wwl.describe-windows-server-administration-tools
 metadata:
   title: Describe Windows Server administration tools
   description: "Describe Windows Server administration tools"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: module
+  ms.service: windows-server 
 title: Describe Windows Server administration tools
 summary: Select the most appropriate Windows Server administration tool for a given situation and learn how to use that tool.
 abstract: |

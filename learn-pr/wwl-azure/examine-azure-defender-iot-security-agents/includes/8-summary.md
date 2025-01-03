@@ -1,1 +1,0 @@
-Your team will be responsible for extending security enhancements to the device-side of the IoT solution. Your understanding of Microsoft Defender for IoT security agents and device-side security recommendations will help the team to meet the company's device-side security requirements.

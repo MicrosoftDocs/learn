@@ -168,7 +168,7 @@ Synapse Analytics enables you to ingest data from multiple data sources through 
  
     ![Create a table in Azure Synapse Studio](../media/create-table-synapse-studio-hubs.png)
 
-    In this script, we create a table to store Twitter data stored in Parquet files. We use the **COPY** command to quickly and efficiently load all data stored in Parquet files into the new table.
+    In this script, we create a table to store X data stored in Parquet files. We use the **COPY** command to quickly and efficiently load all data stored in Parquet files into the new table.
 
     Finally, we select the first 10 rows to verify the data load.
 

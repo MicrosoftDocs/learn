@@ -7,12 +7,13 @@ metadata:
   ms.date: 01/27/2023
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
 durationInMinutes: 4
 content: |
-  Choose the best response for each question. Then select **Check your answers**.
+  Choose the best response for each question. 
 quiz:
   questions:
     - content: What is the difference between a class and an object?

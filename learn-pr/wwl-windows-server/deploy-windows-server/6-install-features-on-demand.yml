@@ -4,11 +4,10 @@ title: Install features on demand
 metadata:
   title: Install features on demand
   description: "Install features on demand"
-  ms.date: 02/26/2021
+  ms.date: 12/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |

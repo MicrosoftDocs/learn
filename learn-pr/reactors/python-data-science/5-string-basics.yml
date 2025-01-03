@@ -4,12 +4,13 @@ title: String basics
 metadata:
   title: String basics in Python for data science
   description: Learn the basics of working with strings in Python for data science.
-  ms.date: 04/22/2020
+  ms.date: 03/30/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
 durationInMinutes: 5
 content: |
   [!include[](includes/5-string-basics.md)] 

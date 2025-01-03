@@ -2,13 +2,14 @@
 uid: learn.wwl.introduction-data-platform-modernization.plan-data-migration
 title: Plan a data migration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan a data migration
   description: "Plan a data migration"
   ms.date: 04/14/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

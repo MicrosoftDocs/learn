@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.control-network-traffic-flow-with-routes.2-azure-virtual-network-route
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify routing capabilities of an Azure virtual network
   description: Identify routing capabilities of an Azure virtual network
-  ms.date: 03/02/2022
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/02/2024
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Identify routing capabilities of an Azure virtual network
 durationInMinutes: 10
 content: |
@@ -43,3 +44,4 @@ quiz:
       - content: "To run custom reports that scan and identify what resources are running across all of your virtual networks, as opposed to running reports on each virtual network."
         isCorrect: false
         explanation: "This answer is incorrect. You can run reports at the subscription level to identify what resources are running. Virtual network peering has no effect on these reports."
+

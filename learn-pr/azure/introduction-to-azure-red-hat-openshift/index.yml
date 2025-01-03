@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.introduction-to-azure-red-hat-openshift
+metadata:
+  moduleType: introduction
+  title: Introduction to Azure Red Hat OpenShift
+  description: Evaluate whether to use Azure Red Hat OpenShift for developing and deploying applications.
+  manager: mkluck
+  ms.date: 08/22/2024
+  author: ricmmartins
+  ms.author: ricardomac
+  ms.topic: module-intro-to-product
+  ms.service: azure-redhat-openshift
+title: Introduction to Azure Red Hat OpenShift
+summary: This module provides an introduction to using Azure Red Hat OpenShift. It covers key topics such as the benefits of managed container platforms, continuous integration and continuous deployment, and multi-cluster management.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  - Evaluate the benefits and considerations of using Azure Red Hat OpenShift.
+  - Describe how Azure Red Hat OpenShift supports organizations in implementing hybrid cloud strategies.
+
+prerequisites: |
+  - Familiarity with Azure.
+  - Basic understanding of Kubernetes concepts and cloud-native architecture.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - azure
+  - azure-redhat-openshift
+subjects:
+- cloud-computing
+units:
+- learn.azure.introduction-to-azure-red-hat-openshift.introduction
+- learn.azure.introduction-to-azure-red-hat-openshift.what-is-azure-red-hat-openshift
+- learn.azure.introduction-to-azure-red-hat-openshift.how-azure-red-hat-openshift-works
+- learn.azure.introduction-to-azure-red-hat-openshift.when-to-use-azure-red-hat-openshift
+- learn.azure.introduction-to-azure-red-hat-openshift.knowledge-check
+- learn.azure.introduction-to-azure-red-hat-openshift.summary
+badge:
+  uid: learn.azure.introduction-to-azure-red-hat-openshift.badge

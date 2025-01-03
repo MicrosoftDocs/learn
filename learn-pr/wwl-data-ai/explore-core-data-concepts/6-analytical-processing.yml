@@ -2,15 +2,16 @@
 uid: learn.wwl.explore-core-data-concepts.analytical-data-processing
 title: Explore analytical data processing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore analytical data processing
   description: "Explore analytical data processing"
-  ms.date: 03/15/2023
+  ms.date: 08/28/2024
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/6-analytical-processing.md)]

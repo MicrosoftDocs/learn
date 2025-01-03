@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.large-language-model-deployment.deployment-exercise
+title: "Exercise: Create an Azure OpenAI deployment"
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: "Exercise: Create an Azure OpenAI deployment"
+  description: Practice creating an Azure OpenAI deployment.
+  ms.date: 09/25/2024
+  author: softchris
+  ms.author: chnoring
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-deployment-exercise.md)]

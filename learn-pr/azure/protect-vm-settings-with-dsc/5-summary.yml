@@ -2,13 +2,15 @@
 uid: learn.azure.protect-vm-settings-with-dsc.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 09/13/2019
-  author: cwatson-cat
-  ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/22/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/5-summary.md)]
+

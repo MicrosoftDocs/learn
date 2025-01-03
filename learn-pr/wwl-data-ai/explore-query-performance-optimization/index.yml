@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-query-performance-optimization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore query performance optimization
-  description: "Explore query performance optimization"
-  ms.date: 08/17/2022
+  description: Explore query performance optimization
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Explore query performance optimization
 summary: Read and understand various forms of execution plans. Compare estimated vs actual plans. Learn how and why plans are generated. Understand the purpose and benefits of the Query Store.
 abstract: |
@@ -31,7 +33,7 @@ products:
 - azure-sql-database
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn.wwl.explore-query-performance-optimization.introduction
 - learn.wwl.explore-query-performance-optimization.understand-query-plans
@@ -45,3 +47,4 @@ units:
 - learn.wwl.explore-query-performance-optimization.summary
 badge:
   uid: learn.wwl.explore-query-performance-optimization.badge
+

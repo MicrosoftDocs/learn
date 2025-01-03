@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This article references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+
 As you prepare to deploy across Wide World Importers' thousands of machines, you're first interested in testing Azure Arc-enabled servers and its capabilities. While you can't install Azure Arc-enabled servers on an Azure virtual machine (VM) for production scenarios, it's possible to configure Azure Arc-enabled servers to run on an Azure VM for evaluation and testing purposes only. In this unit, we showcase how Azure VMs can be used to test Azure Arc-enabled servers functionality.
 
 ## Hypothetical environment description

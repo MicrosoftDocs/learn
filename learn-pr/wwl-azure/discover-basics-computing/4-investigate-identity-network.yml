@@ -4,13 +4,10 @@ title: Investigate identity on a network
 metadata:
   title: Investigate identity on a network
   description: "Investigate identity on a network"
-  ms.date: 12/22/2022
+  ms.date: 03/19/2024
   author: wwlpublish
-  ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: robbarefoot
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-investigate-identity-network.md)]

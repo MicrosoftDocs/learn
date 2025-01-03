@@ -2,13 +2,14 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.describe-azure-file-sync
 title: Describe Azure File Sync
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure File Sync
   description: "Describe Azure File Sync"
-  ms.date: 05/17/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 14
 content: |

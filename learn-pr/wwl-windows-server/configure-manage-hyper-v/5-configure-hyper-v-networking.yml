@@ -4,26 +4,24 @@ title: Configure Hyper-V networking
 metadata:
   title: Configure Hyper-V networking
   description: "Configure Hyper-V networking"
-  ms.date: 02/26/2021
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
-azureSandbox: false
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-configure-hyper-v-networking.md)]
 quiz:
   title: "Quick review"
   questions:
-  - content: "What type of virtual switches will facilitate communication between the VMs running on the same Hyper-V host, but not between the VMs and the Hyper-V host?"
+  - content: "What type of virtual switches facilitate communication between the VMs running on the same Hyper-V host, but not between the VMs and the Hyper-V host?"
     choices:
     - content: "External"
       isCorrect: false
-      explanation: "That's incorrect. An External virtual switch is used to map a network to a specific network adapter or network adapter team. It binds to the physical network adapter so that the virtual machines can access a physical network, and as such will allow communication between the VMs on a Hyper-V host and the Hyper-V host."
+      explanation: "Incorrect. An External virtual switch is used to map a network to a specific network adapter or network adapter team. It binds to the physical network adapter so that the virtual machines can access a physical network, and as such allows communication between the VMs on a Hyper-V host and the Hyper-V host."
     - content: "Internal"
       isCorrect: false
-      explanation: "That's incorrect. An Internal virtual switch is used to communicate between each of the VMs on a Hyper-V host, and to communicate between the VMs and the Hyper-V host."
+      explanation: "Incorrect. An Internal virtual switch is used to communicate between each of the VMs on a Hyper-V host, and to communicate between the VMs and the Hyper-V host."
     - content: "Private"
       isCorrect: true
-      explanation: "That's correct. A Private virtual switch facilitates communication between the VMs on the same Hyper-V host but not between the VMs and the Hyper-V host. It can be used only by the virtual machines that run on the physical host."
+      explanation: "Correct. A Private virtual switch facilitates communication between the VMs on the same Hyper-V host but not between the VMs and the Hyper-V host. It can be used only by the virtual machines that run on the physical host."

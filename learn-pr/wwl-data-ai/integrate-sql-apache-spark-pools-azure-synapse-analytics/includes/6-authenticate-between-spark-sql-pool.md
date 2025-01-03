@@ -1,14 +1,14 @@
-Another way to authenticate is using SQL Authentication, instead of Azure Active Directory (Azure AD) with the Azure Synapse Apache Spark Pool to Synapse SQL connector.
+Another way to authenticate is using SQL Authentication, instead of Microsoft Entra ID with the Azure Synapse Apache Spark Pool to Synapse SQL connector.
 
-Currently, the Azure Synapse Apache Spark Pool to Synapse SQL connector does not support a token-based authentication to a dedicated SQL pool that is outside of the workspace of Synapse Analytics. In order to establish and transfer data to a dedicated SQL pool that is outside of the workspace without Azure AD, you would have to use SQL Authentication.
+Currently, the Azure Synapse Apache Spark Pool to Synapse SQL connector does not support a token-based authentication to a dedicated SQL pool that is outside of the workspace of Synapse Analytics. In order to establish and transfer data to a dedicated SQL pool that is outside of the workspace without Microsoft Entra ID, you would have to use SQL Authentication.
 
-To read data from a dedicated SQL pool outside your workspace without Azure AD, you use the Read API. The Read API works for Internal tables (Managed Tables) and External Tables in the dedicated SQL pool. 
+To read data from a dedicated SQL pool outside your workspace without Microsoft Entra ID, you use the Read API. The Read API works for Internal tables (Managed Tables) and External Tables in the dedicated SQL pool. 
 
 The Read API looks as follows when using SQL Authentication:
 
 ```scala
 val df = spark.read.
-option(Constants.SERVER, "samplews.database.windows.net").
+option(Constants.SERVER, "<server-name>.database.windows.net").
 option(Constants.USER, <SQLServer Login UserName>).
 option(Constants.PASSWORD, <SQLServer Login Password>).
 sqlanalytics("<DBName>.<Schema>.<TableName>")
@@ -27,7 +27,7 @@ The Write API using SQL Auth looks as follows:
 
 ```scala
 df.write.
-option(Constants.SERVER, "samplews.database.windows.net").
+option(Constants.SERVER, "<server-name>.database.windows.net").
 option(Constants.USER, <SQLServer Login UserName>).
 option(Constants.PASSWORD, <SQLServer Login Password>).
 sqlanalytics("<DBName>.<Schema>.<TableName>", <TableType>)

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-data-manipulation-azure-sql-database.introduction
+title: Introduction
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction
+  description: "Introduction"
+  ms.date: 10/1/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

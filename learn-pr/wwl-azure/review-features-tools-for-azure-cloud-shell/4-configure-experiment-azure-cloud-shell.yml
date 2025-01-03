@@ -2,15 +2,19 @@
 uid: learn.wwl.review-features-tools-for-azure-cloud-shell.configure-experiment-azure-cloud-shell
 title: Configure and experiment with Azure Cloud Shell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure and experiment with Azure Cloud Shell
   description: "Configure and experiment with Azure Cloud Shell"
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-configure-experiment-azure-cloud-shell.md)]
+

@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.exercise-explore-azure-ai-extension
+title: Exercise-Explore the Azure AI extension
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise-Explore the Azure AI extension
+  description: Exercise-Explore the Azure AI extension
+  author: wwlpublish
+  ms.author: calopez
+  ms.date: 11/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-exercise-explore-azure-ai-extension.md)]
+

@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-ai-studio.introduction
+title: Introduction
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction
+  description: Introduce responsible generative AI.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 11/28/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
+

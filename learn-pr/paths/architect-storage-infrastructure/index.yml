@@ -5,10 +5,9 @@ metadata:
   description: Learn how to architect storage solutions for your applications in Azure.
   brand: azure
   ms.date: 10/23/2019
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: normesta
+  ms.author: normesta
+  ms.topic: learning-path
 title: Architect storage infrastructure in Azure
 summary: Learn how to architect storage solutions for your applications in Azure.
 prerequisites: None
@@ -26,7 +25,6 @@ modules:
 - learn.choose-storage-approach-in-azure
 - learn.create-azure-storage-account
 - learn.upload-download-and-manage-data-with-azure-storage-explorer
-- learn.connect-app-to-azure-storage
 - learn.ha-application-storage-with-grs
 - learn.azure.secure-azure-storage-account
 - learn.choose-the-right-disk-storage-for-vm-workload

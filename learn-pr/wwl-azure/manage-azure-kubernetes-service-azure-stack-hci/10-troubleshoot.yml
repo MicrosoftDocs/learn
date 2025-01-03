@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.troubleshoot
 title: Troubleshoot Azure Kubernetes Service on Azure Stack HCI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot Azure Kubernetes Service on Azure Stack HCI
   description: "Troubleshoot Azure Kubernetes Service on Azure Stack HCI"
   ms.date: 06/09/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 6
 content: |
@@ -24,6 +25,7 @@ quiz:
     - content: "Active Directory"
       isCorrect: false
       explanation: "Incorrect. Windows Servers that are deployed as part of a Kubernetes cluster node pool are not automatically joined to Active Directory."
-    - content: "Azure Active Directory"
+    - content: "Microsoft Entra ID"
       isCorrect: false
-      explanation: "Incorrect. Windows Server does not support Azure Active Directory authentication."
+      explanation: "Incorrect. Windows Server does not support Microsoft Entra authentication."
+

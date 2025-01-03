@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-language-models-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/23/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is one of the key principles of responsible AI when deploying Large Language Models (LLMs) using Azure Databricks?"
+    choices:
+    - content: "Maximizing model performance at all costs."
+      isCorrect: false
+      explanation: "Incorrect. Maximizing model performance at all costs isn't one of the key principles of responsible AI when deploying LLMs using Azure Databricks."
+    - content: "Ensuring transparency and explainability of model decisions."
+      isCorrect: true
+      explanation: "Correct. Transparency and explainability are critical principles of responsible AI. It's essential to ensure that the decisions made by these models can be understood and explained to build trust and accountability in AI systems."
+    - content: "Deploying models without any human oversight."
+      isCorrect: false
+      explanation: "Incorrect. Deploying models without any human oversight isn't one of the key principles of responsible AI when deploying LLMs using Azure Databricks."
+  - content: "Which of the following tools in Azure Databricks can be used to assess and mitigate bias in LLMs?"
+    choices:
+    - content: "Unity Catalog"
+      isCorrect: false
+      explanation: "Incorrect. Unity Catalog isn't used to assess and mitigate bias in LLMs."
+    - content: "Delta Live Tables"
+      isCorrect: false
+      explanation: "Incorrect. Delta Live Tables aren't used to assess and mitigate bias in LLMs."
+    - content: "Fairness Indicators"
+      isCorrect: true
+      explanation: "Correct. Fairness Indicators is a tool that can be integrated within Azure Databricks to assess and mitigate bias in machine learning models, including LLMs. It helps in ensuring that AI systems are fair and don't perpetuate or amplify biases present in the training data."
+  - content: "What is a recommended approach to handle hallucinations in LLMs when using Azure Databricks?"
+    choices:
+    - content: "Ignore them as they're rare and don't affect model performance."
+      isCorrect: false
+      explanation: "Incorrect. Ignoring hallucinations isn't the recommended approach in handling them in LLMs when using Azure Databricks."
+    - content: "Use post-processing techniques to identify and correct them."
+      isCorrect: true
+      explanation: "Correct. Hallucinations in LLMs refer to instances where the model generates outputs that aren't based on real data or facts."
+    - content: "Deploy the model in production without any safeguards."
+      isCorrect: false
+      explanation: "Incorrect. Deploying the model in production without any safeguards isn't the recommended approach in handling them in LLMs when using Azure Databricks."

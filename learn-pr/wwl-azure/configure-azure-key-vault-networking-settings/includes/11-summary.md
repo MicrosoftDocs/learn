@@ -1,0 +1,1 @@
+In this module, you learned to configure Azure Key Vault networking settings to ensure secure access and communication, manage network access control using virtual network service endpoints and private endpoints, and enhance overall security compliance.

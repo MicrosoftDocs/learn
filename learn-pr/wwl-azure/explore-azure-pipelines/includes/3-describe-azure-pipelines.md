@@ -47,47 +47,12 @@ Continuous integration is used to automate tests and builds for your project. CI
 
 Continuous delivery is used to automatically deploy and test code in multiple stages to help drive quality. Continuous integration systems produce deployable artifacts, which include infrastructure and apps. Automated release pipelines consume these artifacts to release new versions and fixes to the target of your choice.
 
-:::row:::
-  :::column:::
-    **Continuous integration (CI)**
-  :::column-end:::
-  :::column:::
-    **Continuous delivery (CD)**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Increase code coverage.
-  :::column-end:::
-  :::column:::
-    Automatically deploy code to production.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Build faster by splitting test and build runs.
-  :::column-end:::
-  :::column:::
-    Ensure deployment targets have the latest code.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Automatically ensure you don't ship broken code.
-  :::column-end:::
-  :::column:::
-    Use tested code from the CI process.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Run tests continually.
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-:::row-end:::
-
+| **Continuous integration (CI)**                  | **Continuous delivery (CD)**                    |
+| ------------------------------------------------ | ----------------------------------------------- |
+| Increase code coverage.                          | Automatically deploy code to production.        |
+| Build faster by splitting test and build runs.   | Ensure deployment targets have the latest code. |
+| Automatically ensure you don't ship broken code. | Use tested code from the CI process.            |
+| Run tests continually.                           |                                                 |
 
 ## Use Azure Pipelines for CI and CD
 

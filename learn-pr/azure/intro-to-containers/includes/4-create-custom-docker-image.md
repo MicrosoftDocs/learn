@@ -6,18 +6,18 @@ In this unit, you'll learn how to create a custom Docker image and how you can a
 
 ## Create a custom image with a Dockerfile
 
-To create a Docker image containing your application, you'll typically begin by identifying a *base image* to which you add files and configuration information. The process of identifying a suitable base image usually starts with an image search on Docker Hub. You want an image that already contains an application framework and all the utilities and tools of a Linux distribution, like Ubuntu or Alpine. For example, if you have an ASP.NET Core application that you want to package into a container, Microsoft publishes an image called `mcr.microsoft.com/dotnet/core/aspnet` that already contains the ASP.NET Core runtime.
+To create a Docker image containing your application, you typically begin by identifying a *base image*, to which you add files and configuration information. The process of identifying a suitable base image usually starts with an image search on Docker Hub. You want an image that already contains an application framework and all the utilities and tools of a Linux distribution, like Ubuntu or Alpine. For example, if you have an ASP.NET Core application that you want to package into a container, Microsoft publishes an image called `mcr.microsoft.com/dotnet/core/aspnet` that already contains the ASP.NET Core runtime.
 
 You can customize an image by starting a container with the base image and making changes to it. Changes usually involve activities such as copying files into the container from the local filesystem and running various tools and utilities to compile code. When you're finished, you use the `docker commit` command to save the changes to a new image.
 
-Manually completing the above process is time-consuming and error-prone. You could script it with a script language like Bash, but Docker provides a more effective way of automating image creation via a *Dockerfile*.
+Manually completing the above process is time consuming and error prone. You could script it with a script language like Bash, but Docker provides a more effective way of automating image creation via a *Dockerfile*.
 
 A Dockerfile is a plain-text file containing all the commands needed to build an image. Dockerfiles are written in a minimal scripting language designed for building and configuring images. They document the operations required to build an image, starting with a base image.
 
-The following example shows a Dockerfile that builds a .NET Core 2.2 application and packages it into a new image.
+The following example shows a Dockerfile that builds a .NET 6.0 application and packages it into a new image.
 
 ```Dockerfile
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2
+FROM mcr.microsoft.com/dotnet/sdk:6.0
 WORKDIR /app
 COPY myapp_code .
 RUN dotnet build -c Release -o /rel
@@ -31,7 +31,7 @@ In this file, the following operations take place:
 | Command | Action |
 | --- | --- |
 | FROM | Downloads the specified image and creates a new container based on this image. |
-| WORKDIR | Sets the current working directory in the container, used by the subsequent commands. |
+| WORKDIR | Sets the current working directory in the container; used by the subsequent commands. |
 | COPY | Copies files from the host computer to the container. The first argument (`myapp_code`) is a file or folder on the host computer. The second argument (`.`) specifies the name of the file or folder to act as the destination in the container. In this case, the destination is the current working directory (`/app`). |
 | RUN | Executes a command in the container. Arguments to the RUN command are command-line commands. |
 | EXPOSE | Creates a configuration in the new image that specifies which ports to open when the container runs. If the container is running a web app, it's common to EXPOSE port 80. |
@@ -42,7 +42,7 @@ By convention, applications meant to be packaged as Docker images typically have
 The `docker build` command creates a new image by running a Dockerfile. This command's syntax has several parameters:
 
 - The *-f* flag indicates the name of the Dockerfile to use.
-- The *-t* flag specifies the name of the image to be created; in this example, *myapp:v1*. 
+- The *-t* flag specifies the name of the image to be created; in this example, *myapp:v1*.
 - The final parameter, *.*, provides the *build context* for the source files for the **COPY** command: the set of files on the host computer needed during the build process.
 
 ```bash

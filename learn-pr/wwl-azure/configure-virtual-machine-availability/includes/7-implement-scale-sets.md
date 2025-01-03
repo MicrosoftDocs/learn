@@ -2,13 +2,18 @@ Azure Virtual Machine Scale Sets are an Azure Compute resource that you can use 
 
 With Virtual Machine Scale Sets, you don't need to pre-provision your virtual machines. It's easier to build large-scale services that target large compute, big data, and containerized workloads. As workloads increase, more virtual machine instances can be added. As workloads decrease, virtual machines instances can be removed. The process of adding and removing machines can be manual or automated, or a combination of both.
 
+### Increase app availability and scalability with Azure Virtual Machine Scale Sets
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/lE2xJXYHnB8" title="Increase app availability and scalability | Azure Virtual Machine Scale Sets" frameborder="0" allowfullscreen></iframe>
+<br>
+
 ### Things to know about Azure Virtual Machine Scale Sets 
 
 Review the following characteristics of Azure Virtual Machine Scale Sets.
 
 - All virtual machine instances are created from the same base operating system image and configuration. This approach lets you easily manage hundreds of virtual machines without extra configuration tasks or network management.
 
-- Virtual Machine Scale Sets support the use of Azure Load Balancer for basic layer-4 traffic distribution, and Azure Application Gateway for more advanced layer-7 traffic distribution and SSL termination.
+- Virtual Machine Scale Sets support the use of Azure Load Balancer for basic layer-4 traffic distribution, and Azure Application Gateway for more advanced layer-7 traffic distribution and TLS/SSL termination.
 
 - You can use Virtual Machine Scale Sets to run multiple instances of your application. If one of the virtual machine instances has a problem, customers continue to access your application through another virtual machine instance with minimal interruption.
 

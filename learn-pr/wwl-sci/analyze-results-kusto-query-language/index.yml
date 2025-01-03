@@ -3,11 +3,11 @@ uid: learn.wwl.analyze-results-kql
 metadata:
   title: Analyze query results using KQL
   description: "Analyze query results using KQL"
-  ms.date: 06/20/2022
+  ms.date: 09/12/2024
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: kusto
 title: Analyze query results using KQL
 summary: Learn how to summarize and visualize data with a KQL statement provides the foundation to build detections in Microsoft Sentinel.
 abstract: |
@@ -23,9 +23,9 @@ levels:
 roles:
 - security-operations-analyst
 products:
-- azure
 - microsoft-sentinel
 - azure-log-analytics
+- defender-xdr
 subjects:
 - data-analytics
 - cloud-security

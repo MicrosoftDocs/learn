@@ -2,15 +2,16 @@
 uid: learn.wwl.implement-manage-external-identities.exercise-add-guest-users-to-directory
 title: Exercise - add guest users to directory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - add guest users to directory
   description: "Exercise - add guest users to directory"
-  ms.date: 02/03/2023
+  ms.date: 12/18/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/6-exercise-add-guest-users-to-directory.md)]

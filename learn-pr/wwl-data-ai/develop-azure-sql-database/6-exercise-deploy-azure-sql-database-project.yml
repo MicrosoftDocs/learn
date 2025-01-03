@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.develop-azure-sql-database.exercise-deploy-azure-sql-database-project
+title: 'Exercise: Configure and deploy CI/CD pipelines for Azure SQL Database projects'
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: 'Exercise: Configure and deploy CI/CD pipelines for Azure SQL Database projects'
+  description: "Learn how to configure and deploy CI/CD pipelines for Azure SQL Database projects."
+  ms.date: 9/27/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-deploy-azure-sql-database-project.md)]

@@ -1,13 +1,16 @@
 ### YamlMime:Module
 uid: learn.startups.build-team
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build your team
   description: Find out how to build your startup team and find cofounders. Learn how to benefit from diversity in teams, mentors, and risk management measures.
-  ms.date: 12/30/2022
-  author: ryanmesches
-  ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.date: 06/06/2024
+  author: vhawk85
+  ms.author: vahughes
+  ms.topic: module
+  ms.service: azure
+  ms.collection: learn-startups
 title: Build your team
 summary: >
   This module gives practical advice on how to build your startup team, including how to find cofounders and recruit your first employees and contractors.
@@ -30,7 +33,7 @@ roles:
 products:
 - consumer
 subjects:
-- modern-work
+- business-applications
 units:
 - learn.startups.build-team.introduction
 - learn.startups.build-team.ideal-startup-team
@@ -41,3 +44,4 @@ units:
 - learn.startups.build-team.summary
 badge:
   uid: learn.startups.build-team.badge
+

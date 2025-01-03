@@ -2,13 +2,16 @@
 uid: learn.wwl.implement-azure-app-configuration.explore-service
 title: Explore the Azure App Configuration service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the Azure App Configuration service
   description: "Explore the Azure App Configuration service"
-  ms.date: 04/25/2023
+  ms.date: 07/17/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-app-configuration-overview.md)]

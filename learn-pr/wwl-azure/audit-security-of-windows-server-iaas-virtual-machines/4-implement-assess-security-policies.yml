@@ -4,11 +4,10 @@ title: Implement and assess security policies
 metadata:
   title: Implement and assess security policies
   description: "Implement and assess security policies"
-  ms.date: 09/24/2020
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 12
 content: |

@@ -2,14 +2,16 @@
 uid: learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.exercise-identify-and-resolve-inbound-network-connectivity
 title: Exercise - Identify and resolve inbound network connectivity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Identify and resolve inbound network connectivity
   description: Exercise - Identify and resolve inbound network connectivity
-  ms.date: 03/23/2020
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/04/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 durationInMinutes: 40
 azureSandbox: false
 content: |
   [!include[](includes/5-exercise-identify-and-resolve-inbound-network-connectivity.md)]
+

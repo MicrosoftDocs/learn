@@ -3,12 +3,11 @@ uid: learn.github.create-host-web-sites-github-pages.4-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check what you've learned.
-  ms.date: 06/26/2020
+  description: Check your knowledge about hosting web sites using GitHub Pages.
+  ms.date: 12/06/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -22,22 +21,22 @@ quiz:
       explanation: "GitHub Pages can be enabled from the **Settings** tab of the repository."
     - content: "Subscribe to GitHub Enterprise and wait for further instructions in email."
       isCorrect: false
-      explanation: "There's no need to subscribe or wait for anything. Simply enable GitHub Pages **Settings** tab of your repository."
+      explanation: "There's no need to subscribe or wait for anything. Just enable GitHub Pages **Settings** tab of your repository."
     - content: "Select a **Source** from the **GitHub Pages** section of the **Settings** tab of your repository."
       isCorrect: true
       explanation: "Correct! After a moment or two, your site will be provisioned and ready to go."
-  - content: "Which of the following **cannot** be hosted on GitHub Pages?"
+  - content: "Which of the following **can't** be hosted on GitHub Pages?"
     choices:
     - content: "Personal sites, like your resume or portfolio."
       isCorrect: false
-      explanation: "GitHub Pages are an excellent option for personal sites. It's the perfect one-two punch. First everyone will be impressed that you have GitHub Pages configured, and then they'll be blown away by your other accomplishments."
+      explanation: "GitHub Pages are an excellent option for personal sites. It's the perfect one-two punch. First, you can impress everyone by configuring GitHub Page, and then blown them away with your other accomplishments."
     - content: "Dynamic server-side applications."
       isCorrect: true
       explanation: "GitHub Pages only hosts static content. However, you can still use JavaScript to add dynamic behavior and even integrate with external services from your site. For server-side apps, step up to Azure Web Apps."
     - content: "Professional sites, like product pages and marketing campaigns."
       isCorrect: false
       explanation: "GitHub Pages are a great solution for sites hosting any content that can be stored in your repository."
-  - content: "Which of the following would you most likely use to edit the body content of your GitHub Pages site?"
+  - content: "What would you most likely use to edit the body content of your GitHub Pages site?"
     choices:
     - content: "Markdown"
       isCorrect: true

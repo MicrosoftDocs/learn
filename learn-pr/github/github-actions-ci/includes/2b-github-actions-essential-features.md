@@ -2,7 +2,7 @@ Here, you'll learn how to use default and custom environment variables, custom s
 
 ## Default environment variables and contexts
 
-Within the GitHub Actions workflow, there are several default environment variables that are available for you to use, but only within the runner that's executing a job. These default variables are case-sensitive, and refer to configuration values for the system and the current user. We recommend that you use these default environment variables to reference the filesystem rather than using hard-coded file paths. To use a default environment variable, specify `$` followed by the environment variable's name.
+Within the GitHub Actions workflow, there are several default environment variables that are available for you to use, but only within the runner that's executing a job. These default variables are case-sensitive, and they refer to configuration values for the system and for the current user. We recommend that you use these default environment variables to reference the filesystem rather than using hard-coded file paths. To use a default environment variable, specify `$` followed by the environment variable's name.
 
 ```yml
 jobs:
@@ -45,7 +45,7 @@ jobs:
 
 ## Scripts in your workflow
 
-In the preceding workflow snippet examples, the `run` keyword is used to simply print a string of text. Because the `run` keyword tells the job to execute a command on the runner, you use the `run` keyword to run actions or scripts.
+In the preceding workflow snippet examples, the `run` keyword is used to print a string of text. Because the `run` keyword tells the job to execute a command on the runner, you use the `run` keyword to run actions or scripts.
 
 ```yml
 jobs:
@@ -54,7 +54,7 @@ jobs:
       - run: npm install -g bats
 ```
 
-In this example, you're using npm to install the bats software testing package by using the `run` keyword. You can also run a script as an action. You can store the script in your repository, often done in a `.github/scripts/` directory, and then supply the path and shell type using the `run` keyword.
+In this example, you're using npm to install the `bats` software testing package by using the `run` keyword. You can also run a script as an action. You can store the script in your repository, often done in a `.github/scripts/` directory, and then supply the path and shell type using the `run` keyword.
 
 ```yml
 jobs:
@@ -63,19 +63,19 @@ jobs:
       - name: Run build script
         run: ./.github/scripts/build.sh
         shell: bash
-``` 
+```
 
 ## Cache dependencies with the cache action
 
 When building out a workflow, you'll often find the need to reuse the same outputs or download dependencies from one run to another. Instead of downloading these dependencies over and over again, you can cache them to make your workflow run faster and more efficiently. This can dramatically reduce the time it takes to run certain steps in a workflow, because jobs on GitHub-hosted runners start in a clean virtual environment each time. Caching dependencies will help speed up the time it takes to recreate these dependency files.
 
-To cache dependencies for a job, you'll need to use GitHub's `cache` action. This action retrieves a cache identified by a unique key that you provide. When the action finds the cache, it then retrieves the cached files to the path that you configure. To use the `cache` action, you'll need to set a few specific parameters in order for it to work successfully:
+To cache dependencies for a job, use GitHub's `cache` action. This action retrieves a cache identified by a unique key that you provide. When the action finds the cache, it then retrieves the cached files to the path that you configure. To use the `cache` action, you'll need to set a few specific parameters:
 
 | Parameter | Description | Required |
 | --- | --- | --- |
 | Key | Refers to the key identifier created when saving and searching for a cache. | Yes |
 | Path | Refers to the file path on the runner to cache or search. | Yes |
-| Restore-keys | consists of alternative existing keys to caches if the desired cache key is not found. | No |
+| Restore-keys | Consists of alternative existing keys to caches if the desired cache key isn't found. | No |
 
 ```yml
 steps:
@@ -90,11 +90,11 @@ steps:
         ${{ runner.os }}-npm-cache-
 ```
 
-In the preceding example, the `path` is set to `~/.npm` and the `key` includes the runner's operating system and the SHA-256 hash of the `package-lock.json` file. Prefixing the key with an ID (`npm-cache` in this example) is useful when you are using the `restore-keys` fallback and have multiple caches.
+In the preceding example, the `path` is set to `~/.npm` and the `key` includes the runner's operating system and the SHA-256 hash of the `package-lock.json` file. Prefixing the key with an ID (`npm-cache` in this example) is useful when you're using the `restore-keys` fallback and have multiple caches.
 
 ## Pass artifact data between jobs
 
-Similar to the idea of caching dependencies within your workflow, you can pass data between jobs within the same workflow. You can do this by using the `upload-artifact` and `download-artifact` actions. Jobs that are dependent on a previous job's artifacts must wait for the dependent job to complete successfully before they can run. This is useful if you have a series of jobs that need to run sequentially based on artifacts uploaded from a previous job. For example, `job_2` requires `job_1` by using the `needs: job_1` syntax.
+Similar to the idea of caching dependencies within your workflow, you can pass data between jobs within the same workflow. You can do this by using the `upload-artifact` and `download-artifact` actions. Jobs that are dependent on a previous job's artifacts must wait for the previous job to complete successfully before they can run. This is useful if you have a series of jobs that need to run sequentially based on artifacts uploaded from a previous job. For example, `job_2` requires `job_1` by using the `needs: job_1` syntax.
 
 ```yml
 name: Share data between jobs
@@ -121,18 +121,18 @@ jobs:
       - run: cat file.txt
 ```
 
-The preceding example has two jobs. `job_1` writes some text into the file `file.txt` and then uses the `actions/upload-artifact@v2` action to upload this artifact and store the data for future use within the workflow. `job_2` requires `job_1` to complete by using the `needs: job_1` syntax, then uses the `actions/download-artifact@v2` action to download that artifact and then print the contents of `file.txt`.
+The preceding example has two jobs. `job_1` writes some text into the file `file.txt`. Then it uses the `actions/upload-artifact@v2` action to upload this artifact and store the data for future use within the workflow. `job_2` requires `job_1` to complete by using the `needs: job_1` syntax. It then uses the `actions/download-artifact@v2` action to download that artifact, and then print the contents of `file.txt`.
 
 ## Enable step debug logging in a workflow
 
-In some cases, the default workflow logs won't provide enough detail to diagnose why a specific workflow run, job, or step has failed. For these situations, you can enable additional debug logging for two options: *runs* and *steps*. You can enable this additional logging by setting some repository secrets that require `admin` access to the repository to `true`. Below are the two options for additional diagnostic logging.
+In some cases, the default workflow logs won't provide enough detail to diagnose why a specific workflow run, job, or step has failed. For these situations, you can enable additional debug logging for two options: *runs* and *steps*. Enable this diagnostic logging by setting two repository secrets that require `admin` access to the repository to `true`:
 
 - To enable runner diagnostic logging, set the `ACTIONS_RUNNER_DEBUG` secret in the repository that contains the workflow to `true`.
 - To enable step diagnostic logging, set the `ACTIONS_STEP_DEBUG` secret in the repository that contains the workflow to `true`.
 
 ## Access the workflow logs from the user interface
 
-When you think about successful automation, you aim to spend the least amount of time looking at what’s automated so you can focus your attention on what’s relevant. But sometimes, things don’t go as planned, and you need to review what happened. That debugging process can be frustrating, but GitHub provides a clear layout structure that enables a quick way to navigate between the jobs while keeping the context of the currently debugging step. To view the logs of a workflow run in GitHub, you can follow these steps:
+When you think about successful automation, you aim to spend the least amount of time looking at what's automated so you can focus your attention on what's relevant. However, sometimes things don't go as planned, and you need to review what happened. That debugging process can be frustrating. GitHub provides a clear layout structure that enables a quick way to navigate between the jobs, while keeping the context of the currently debugging step. To view the logs of a workflow run in GitHub, you can follow these steps:
 
   1. Navigate to the **Actions** tab in your repository.
   2. In the left sidebar, click the desired workflow.

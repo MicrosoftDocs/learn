@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.active-directory-domain-services-migration.migrate-to-ad-ds-windows-server-2022-from-previous-version
-title: Migrate to Active Directory Domain Services in Windows Server 2022 from a previous version
+title: Migrate to Active Directory Domain Services in Windows Server 2025 from a previous version
 metadata:
-  title: Migrate to Active Directory Domain Services in Windows Server 2022 from a previous version
-  description: "Migrate to Active Directory Domain Services in Windows Server 2022 from a previous version"
-  ms.date: 11/04/2022
+  title: Migrate to Active Directory Domain Services in Windows Server 2025 from a previous version
+  description: "Migrate to Active Directory Domain Services in Windows Server 2025 from a previous version"
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

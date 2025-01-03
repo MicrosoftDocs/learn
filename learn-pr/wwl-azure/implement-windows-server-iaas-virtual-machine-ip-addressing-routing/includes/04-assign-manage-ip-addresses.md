@@ -1,8 +1,4 @@
-
-
-
 As the lead system engineer at Contoso, you establish a pilot to examine virtual networking in Azure, including the interaction between public and private address spaces. To implement this pilot, you must find out how to assign both private and public IP addresses during the creation of Azure resources.
-
 
 ## Assign an IP configuration during VM creation
 

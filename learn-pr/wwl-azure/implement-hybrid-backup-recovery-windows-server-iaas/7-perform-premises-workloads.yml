@@ -4,11 +4,10 @@ title: Perform backup and restore of on-premises workloads
 metadata:
   title: Perform backup and restore of on-premises workloads
   description: "Perform backup and restore of on-premises workloads"
-  ms.date: 09/24/2020
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 12
 content: |

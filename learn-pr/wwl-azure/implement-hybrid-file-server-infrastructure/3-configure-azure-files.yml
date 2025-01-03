@@ -2,13 +2,14 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.configure-azure-files
 title: Configure Azure Files
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure Files
   description: "Configure Azure Files"
-  ms.date: 05/17/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 10
 content: |

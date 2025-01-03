@@ -1,10 +1,10 @@
-Network Watcher's tools become automatically available when you create a virtual network in an Azure subscription. You can access Network Watcher directly in the Azure portal by typing **Network Watcher** in the **Search** bar.
+Network Watcher becomes automatically available when you create a virtual network in an Azure region in your subscription. You can access Network Watcher directly in the Azure portal by typing **Network Watcher** in the **Search** bar.
 
-:::image type="content" source="../images/search-portal.png" alt-text="Screenshot that shows how to search for Network Watcher in the portal resource menu.":::
+:::image type="content" source="../images/portal-search.png" alt-text="Screenshot that shows how to search for Network Watcher in the Azure portal.":::
 
 ## Network Watcher Topology tool
 
-The topology capability of Azure Network Watcher allows you to view all of the following resources in a virtual network, the resources associated to resources in a virtual network, and the relationships between the resources.
+The topology capability of Azure Network Watcher allows you to view all of the following resources in a virtual network. Including, the resources associated to resources in a virtual network and the relationships between the resources.
 
 - Subnets
 - Network interfaces
@@ -30,11 +30,11 @@ All resources returned in a topology have the following properties:
 
 ## Connection Monitor tool
 
-Connection Monitor provides unified, end-to-end connection monitoring in Azure Network Watcher. Connection Monitor supports both hybrid and Azure cloud deployments. You can use the Connection Monitor tool to measure the latency between resources. Connection Monitor can detect changes that will affect connectivity, such as network configuration changes or modifications to NSG rules. You can configure Connection Monitor to probe VMs at regular intervals to look for failures or changes. Connection Monitor can diagnose problems and provide explanations about why the issue occurred and the steps that you can take to fix an issue.
+Connection Monitor provides unified, end-to-end connection monitoring in Azure Network Watcher. Connection Monitor supports both hybrid and Azure cloud deployments. You can use the Connection Monitor tool to measure the latency between resources. Connection Monitor can detect changes that affect connectivity, such as network configuration changes or modifications to NSG rules. You can configure Connection Monitor to probe VMs at regular intervals to look for failures or changes. Connection Monitor can diagnose problems and provide explanations about why the issue occurred and the steps that you can take to fix an issue.
 
 :::image type="content" source="../images/connection-monitor-topology.png" alt-text="Diagram that shows how Connection Monitor interacts with Azure Virtual Machines, non-Azure hosts, endpoints, and data storage locations." border="false":::
 
-To use Connection Monitor for monitoring, you need to install monitoring agents on the hosts you will monitor. Connection Monitor uses lightweight executable files to run connectivity checks, whether a host is located in an Azure virtual network or in an on-premises network. With Azure VMs, you can install the Network Watcher Agent VM, also known as the Network Watcher extension. For on-premises computers, you can enable this functionality by installing the Log Analytics agent.
+To use Connection Monitor for monitoring, you need to install monitoring agents on the hosts that you monitor. Connection Monitor uses lightweight executable files to run connectivity checks, whether a host is located in an Azure virtual network or in an on-premises network. With Azure VMs, you can install the Network Watcher Agent VM, also known as the Network Watcher extension. For on-premises computers, you can enable this functionality by installing the Log Analytics agent.
 
 ## IP flow verify
 
@@ -46,7 +46,7 @@ Traffic from an IaaS VM is sent to a destination based on the effective routes a
 
 ## Effective security rules
 
-NSGs filter packets based on their source and destination IP address and port numbers. More than one NSG can apply to an IaaS resource on an Azure virtual network. The Effective Security Rules tool allows you to determine why some traffic might be denied or allowed because it takes into account all rules that are applied across all NSGs that apply to the resource.  
+Network security groups (NSGs) filter packets based on their source and destination IP address and port numbers. More than one NSG can apply to an IaaS resource on an Azure virtual network. By taking into account all rules that are applied across all NSGs for a resource, the Effective Security Rules tool allows you to determine why some traffic might be denied or allowed.
 
 ## Packet capture
 
@@ -64,25 +64,25 @@ If the connection is unsuccessful, the tool displays details about the fault. Yo
 
 - **CPU**: The connection failed because of high CPU utilization.
 - **Memory**: The connection failed because of high memory utilization.
-- **GuestFirewall**: The connection was blocked by a firewall outside Azure.
+- **GuestFirewall**: A firewall outside of Azure blocked the connection.
 - **DNSResolution**: The destination IP address couldn't be resolved.
-- **NetworkSecurityRule**: The connection was blocked by an NSG.
+- **NetworkSecurityRule**: An NSG blocked the connection.
 - **UserDefinedRoute**: There's an incorrect user route in a routing table.
 
 ## VPN troubleshoot
 
 Network Watcher provides the capability to troubleshoot gateways and connections. The capability can be called through the portal, PowerShell, the Azure CLI, or REST API. When called, Network Watcher diagnoses the health of the gateway or connection, and then it returns the appropriate results. The request is a long-running transaction. The preliminary results that are returned give an overall picture of the health of the resource.  
 
-The following list describes the values that are returned with the troubleshoot API:
+The following list describes the values that are returned by calling the VPN troubleshoot API:
 
-- **startTime**: The time the troubleshoot API call started
-- **endTime**: The time the troubleshooting ended
-- **code**: This value is `UnHealthy` if there is a single diagnosis failure
-- **results**: A collection of results returned on the connection or the virtual network gateway
-  - **id**: The fault type
-  - **summary**: A summary of the fault
-  - **detailed**: A detailed description of the fault
-  - **recommendedActions**: A collection of recommended actions to take
-  - **actionText**: Text that describes what action to take
-  - **actionUri**: The URI for documentation that describes what action to take
-  - **actionUriText**: A short description of the action text
+- **startTime**: The time the troubleshooting started.
+- **endTime**: The time the troubleshooting ended.
+- **code**: This value is `UnHealthy` if there's a single diagnosis failure.
+- **results**: A collection of results returned on the connection or the virtual network gateway.
+  - **id**: The fault type.
+  - **summary**: A summary of the fault.
+  - **detailed**: A detailed description of the fault.
+  - **recommendedActions**: A collection of recommended actions to take.
+  - **actionText**: Text that describes what action to take.
+  - **actionUri**: The URI for documentation that describes what action to take.
+  - **actionUriText**: A short description of the action text.

@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.azure.operationalize-ai-responsibly
+title: Operationalize AI responsibly with Azure AI Foundry
+metadata:
+  title: Operationalize AI responsibly with Azure AI Foundry
+  description: Explore Azure AI Foundry's tools for generative AI security, privacy, and quality. Shift from reactive risk management to agile, responsible-by-design governance for better observability and efficiency.
+  ms.date: 09/23/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: learning-path
+summary: >
+  Explore Azure AI Foundry's tools for generative AI security, privacy, and quality. Shift from reactive risk management to agile, responsible-by-design governance for better observability and efficiency.
+prerequisites: |
+  - An Azure subscription – [Create one for free](https://azure.microsoft.com/free/cognitive-services/)
+  - Familiarity with Azure and the Azure portal
+  - Ability to understand Python at a beginner level
+  - Developing in browser:
+    - [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
+  - Developing locally:
+    - [Docker desktop](https://www.docker.com/products/docker-desktop/)
+    - [Visual Studio Code](https://code.visualstudio.com/)
+      - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - beginner
+roles:
+  - developer
+products: 
+  - azure
+  - ai-services
+  - content-safety
+modules:
+  - learn.moderate-content-detect-harm-azure-ai-content-safety-studio
+  - learn.moderate-content-detect-harm-azure-ai-content-safety
+  - learn.measure-mitigate-risks-azure-ai-studio
+trophy:
+  uid: learn.azure.operationalize-ai-responsibly.trophy

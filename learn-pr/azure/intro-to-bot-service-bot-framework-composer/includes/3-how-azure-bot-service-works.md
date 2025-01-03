@@ -1,10 +1,10 @@
-In this unit, you'll explore using Bot Framework Composer to help you design bots in an interactive, visual designer. You'll learn how to extend your bot with AI and language capabilities within Bot Framework Composer and gain a basic understanding of how to create a bot, extend bot capabilities, and publish a bot in the Azure Bot Service.
+In this unit, you explore using Bot Framework Composer to help you design bots in an interactive, visual designer. You learn how to extend your bot with AI and language capabilities within Bot Framework Composer. You also gain a basic understanding of how to create a bot, extend bot capabilities, and publish a bot in the Azure Bot Service.
 
 ## What is the architecture of a bot package?
 
 Azure Bot Service and Bot Framework support the complete bot-creation process. The supported process includes design, building, testing, and publishing tasks.
 
-Bot developers use Bot Framework Composer to create a *bot package.* This package contains the bot logic and details about bot integrations and connections, including input channels and authentication. The bot package also contains any custom bot code. The bot package is hosted by the Azure Bot Service. You can think of an Azure Bot as an Azure Web App with a few extra features that provides the primary endpoint for bot interaction. Through the Bot Service, users can interact with the bot. Meanwhile, it can manage incoming and outgoing REST interactions for external channels and other integrations.
+Bot developers use Bot Framework Composer to create a *bot package.* This package contains the bot logic and details about bot integrations and connections, including input channels and authentication. The bot package also contains any custom bot code. The Azure Bot Service hosts the bot package. You can think of an Azure Bot as an Azure Web App with a few extra features that provides the primary endpoint for bot interaction. Through the Bot Service, users can interact with the bot. Meanwhile, it can manage incoming and outgoing REST interactions for external channels and other integrations.
 
 > [!NOTE]
 > The bot package can also be serviced using the Bot Framework SDK through Visual Studio or Visual Studio Code.
@@ -15,14 +15,14 @@ Bot developers use Bot Framework Composer to create a *bot package.* This packag
 
 Before building your bot, you need to decide what kind of bot you're creating. As you decide, consider the following questions:
 
-- What will you use your bot for? Determine what kind of bot you want to build. Planning helps define the functionalities you want to implement.
-- What problems does your bot intend to solve? Be clear about this. Solving problems for customers is a primary consideration when you're building bots. You should also consider things such as how to solve the user's problem better, easier, or faster than the alternative experiences.
-- Who will use your bot? If you're designing a bot, it's safe to assume that you're expecting users to use it. Different customers will expect different user experiences. Knowing your audience will help determine how complex your bot design should be. Consider what languages to implement for the bot.
+- What is your bot used for? Determine what kind of bot you want to build. Planning helps define the functionalities you want to implement.
+- What problems does your bot intend to solve? Be clear about this answer. Solving problems for customers is a primary consideration when you're building bots. You should also consider things such as how to solve the user's problem better, easier, or faster than the alternative experiences.
+- Who uses your bot? If you're designing a bot, it's safe to assume that you're expecting users to use it. Different customers expect different user experiences. Knowing your audience helps determine how complex your bot design should be. Consider what languages to implement for the bot.
 
     > [!TIP]
     > Ensuring a great user experience should be your number one priority when designing a bot.
 
-- Where will your bot be used? You must decide on which platforms your bot will run. For example, a bot designed to run on a mobile device might require features such as sending SMS.
+- Where is your bot used? You must decide which platforms your bot is going to run on. For example, a bot designed to run on a mobile device might require features such as sending Short Message Service (SMS) messages.
 
     > [!IMPORTANT]
     > The publishing experience varies from platform to platform.
@@ -33,16 +33,16 @@ You can use Composer to design, build, extend, and test a bot. Composer is a vis
 
 You can use Composer's visual designer to intuitively develop the core functionality for your bot. You can use it to:
 
-- Add natural language understanding capabilities to your bot with QnA Maker. You can use capabilities such as LUIS, QnA, or FAQ.
-- Author text and speech variation responses for your Bot using language generation templates.
-- Author bots in multiple languages.
-- Test directly inside Composer using embedded Web Chat.
+- Add natural language understanding capabilities to your bot with QnA Maker. You can use capabilities such as Language Understanding Intelligence Service (LUIS), QnA, or FAQ.
+- Create text and speech variation responses for your Bot using language generation templates.
+- Build bots in multiple languages.
+- Test your bot directly inside Composer using embedded Web Chat.
 - Publish bots to Azure App Service and Azure Functions.
 - Integrate external services such as LUIS apps and QnA Maker knowledge bases.
 
 ### Create dialogs and conversation flow
 
-Dialogs control the conversations that a bot has with its users. Dialogs contain language-generation response templates that define bot responses and instructions for how a bot will perform tasks, such as making dinner reservations at a restaurant or creating an Outlook calendar item.
+Dialogs control the conversations that a bot has with its users. Dialogs contain language-generation response templates that define bot responses and instructions for how a bot performs tasks. For example, making dinner reservations at a restaurant or creating an Outlook calendar item.
 
 Many dialogs are linear, with a simple question and response sequence. But some dialogs also include advanced conversation logic. This logic might include branching, looping, and context-based dynamic and adaptive dialogs. These types of dialogs typically use external data, maintain stateful conversation data, and make necessary interruptions in the conversation.
 
@@ -66,7 +66,7 @@ You can test your bot's functionality directly in Composer with *Web Chat*. Web 
 
 ## Add middleware and extend bot functionality with the Bot Framework SDK
 
-Use Visual Studio, Visual Studio Code, or the supported IDE of your choice and the Bot Framework SDK to edit bot source code and extend bot functionality. Package and publish bots as NuGet packages. Import these packages into Composer for easy integration. You can move seamlessly between Composer and the Bot Framework SDK throughout the bot-development lifecycle. This mobility ensures you're always using the most effective tool for any development task.
+To edit bot source code and extend bot functionality, you can use Visual Studio, Visual Studio Code, or the supported IDE of your choice with the Bot Framework SDK. Package and publish bots as NuGet packages. Import these packages into Composer for easy integration. You can move seamlessly between Composer and the Bot Framework SDK throughout the bot-development lifecycle. This mobility ensures you're always using the most effective tool for any development task.
 
 ## Publish your bot to Azure
 

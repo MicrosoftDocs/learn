@@ -2,28 +2,29 @@
 uid: learn.machine-learning.explore-analyze-data-r.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: This knowledge check validates what you've learned in this module so far.
-  ms.date: 03/10/2022
+  description: This knowledge check validates what you learned in this module so far.
+  ms.date: 08/26/2024
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: You have a tibble, or data frame, with the dimension 20, 2. What does this tell you about it? 
+  - content: You have a tibble, or data frame, with the dimension 20, 2. What does this information tell you about it? 
     choices:
     - content: The tibble consists of 20 rows and 2 columns.
       isCorrect: true
-      explanation: Correct! A dimension of 20, 2 means that the tibble has 2 columns, each with 20 elements. This gives it a rectangular structure of 20 rows and 2 columns. 
+      explanation: Correct! A dimension of 20, 2 means that the tibble has 2 columns, each with 20 elements. This information gives it a rectangular structure of 20 rows and 2 columns. 
     - content: The tibble contains 2 columns, with the values 2 and 20.
       isCorrect: false
-      explanation: Incorrect. A dimension of 20, 2 means that the tibble has 2 columns, each with 20 elements. This gives it a rectangular structure of 20 rows and 2 columns. 
+      explanation: Incorrect. A dimension of 20, 2 means that the tibble has 2 columns, each with 20 elements. This information gives it a rectangular structure of 20 rows and 2 columns. 
     - content: The tibble contains 20 rows, all with the value 2.
       isCorrect: false
-      explanation: Incorrect. A dimension of 20, 2 means that the tibble has 2 columns, each with 20 elements. This gives it a rectangular structure of 20 rows and 2 columns.
+      explanation: Incorrect. A dimension of 20, 2 means that the tibble has 2 columns, each with 20 elements. This information gives it a rectangular structure of 20 rows and 2 columns.
   - content: You have a data frame named df_sales, which contains daily sales data. The data frame displays columns for year, month, day_of_month, and sales_total. You want to find the average sales_total value. Which code should you use? 
     choices:
     - content: df_sales %>% pull(sales_total) %>% avg()
@@ -46,3 +47,4 @@ quiz:
     - content: The units_sold value is, on average, 97 percent of the avg_temp value.
       isCorrect: false
       explanation: Incorrect. The cor function returns the correlation between two numeric columns. 
+

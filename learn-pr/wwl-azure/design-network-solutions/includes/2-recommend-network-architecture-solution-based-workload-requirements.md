@@ -50,14 +50,16 @@ When you create virtual networks as part of your migration, plan out your virtua
 
 - Don't overlap the virtual network address space with on-premises network ranges. Overlapping addresses can cause networks that can't be connected, and routing that doesn't work properly.
 
-- If networks overlap, you'll need to redesign the network. If you absolutely can't redesign the network, network address translation (NAT) can help, but should be avoided or limited as much as possible.
+- If networks overlap, you need to redesign the network. If you absolutely can't redesign the network, network address translation (NAT) can help, but should be avoided or limited as much as possible.
 
 ### Implement hub-spoke network topology
 
 A hub and spoke network topology isolates workloads while sharing services, such as identity and security. The hub is an Azure virtual network that acts as a central point of connectivity. The spokes are virtual networks that connect to the hub virtual network by using peering. Shared services are deployed in the hub, while individual workloads are deployed as spokes.
 
+:::image type="content" source="../media/network-hub-spokes-cluster.png" alt-text="Diagram of an example hub and spoke architecture." lightbox="../media/network-hub-spokes-cluster.png" border="false":::
+
 - Implement a hub-spoke topology in Azure to centralize common services, such as connections to on-premises networks, firewalls, and isolation between virtual networks. The hub virtual network provides a central point of connectivity to on-premises networks, and a place to host services used by workloads hosted in spoke virtual networks.
 
 - Use spoke virtual networks to isolate workloads with each spoke managed separately from other spokes. Each workload can include multiple tiers, and multiple subnets that are connected with Azure load balancers.
 
-- Configure hub and spoke virtual networks in different resource groups, and even in different subscriptions. When you peer virtual networks in different subscriptions, the subscriptions can be associated to the same, or different, Azure Active Directory (Azure AD) tenants. You gain decentralized management of each workload, while sharing services maintained in the hub network.
+- Configure hub and spoke virtual networks in different resource groups, and even in different subscriptions. When you peer virtual networks in different subscriptions, the subscriptions can be associated to the same, or different, Microsoft Entra ID tenants. You gain decentralized management of each workload, while sharing services maintained in the hub network.

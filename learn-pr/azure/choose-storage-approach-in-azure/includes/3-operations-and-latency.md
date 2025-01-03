@@ -18,7 +18,7 @@ The answers to these questions will help you decide on the best storage solution
 
 ## Operations and latency: Evaluate your data types
 
-Let’s walk through each of the datasets with these questions in mind and discuss the requirements.
+Let's walk through each of the datasets with these questions in mind and discuss the requirements.
 
 ### Product catalog data
 
@@ -28,16 +28,16 @@ When a customer places an order, the application must update product quantities.
 
 ### Photos and videos
 
-Photos and videos that are displayed on product pages have different requirements. They need fast retrieval times so that they're displayed on the site at the same time as product catalog data, but they don't need to be queried independently. Instead, you can rely on the results of the product query, and include the video ID or URL as a property on the product data. So, photos and videos need to be retrieved only by their ID.
+Photos and videos that are displayed on product pages have different requirements. They need fast retrieval times so that they're displayed on the site at the same time as product catalog data, but they don't need to be queried independently. Instead, you can rely on the results of the product query, and include the video ID or URL as a property on the product data. You need to retrieve photos and videos using their IDs only.
 
-Customers won't make updates to existing photos or videos. But, they can add new photos for product reviews. For example, a customer might upload an image of them wearing their new shoes.
+Customers won't make updates to existing photos or videos, but they can add new photos for product reviews. For example, a customer might upload an image of them wearing their new shoes.
 
 As an employee, you also upload and delete product photos that are provided by your product vendor. But those updates don't need to happen as quickly as your other product data updates.
 
-In summary, photos and videos can be queried by ID to return an entire file, but create operations and update operations are less frequent and are a lower priority.  
+In summary, you can query photos and videos by ID to return the entire file. However, create and update operations are less frequent and have lower priority.
 
 ### Business data
 
-The data analysis, the company uses only historical data. No original data is updated based on the analysis, so business data is read-only. Users don't expect their complex analytics to run instantly, so it's acceptable to have some latency in the results.
+For data analysis, the company uses only historical data. No original data is updated based on the analysis, so business data is read-only. Users don't expect their complex analytics to run instantly, so it's acceptable to have some latency in the results.
 
 Business data is stored in multiple datasets. Not all business analysts need write access to all datasets, but all business analysts can read from all datasets.

@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-implement-manage-retention.retention-overview
+title: Overview of retention with Microsoft Purview
+metadata:
+  title: Overview of retention with Microsoft Purview
+  description: "Overview of retention with Microsoft Purview."
+  ms.date: 07/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/retention-overview.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the main difference between retention policies and retention labels?"
+    choices:
+    - content: "Retention policies apply to entire systems, while retention labels apply to individual items."
+      isCorrect: true
+      explanation: "Correct: Retention policies are applied at the container level, while retention labels provide granular control over individual items."
+    - content: "Retention policies are for regulatory compliance, while retention labels are for organizing data."
+      isCorrect: false
+      explanation: "Incorrect: Both retention policies and retention labels are used for regulatory compliance."
+    - content: "Retention policies move with the content, while retention labels don't."
+      isCorrect: false
+      explanation: "Incorrect: Retention labels move with the content, not retention policies."

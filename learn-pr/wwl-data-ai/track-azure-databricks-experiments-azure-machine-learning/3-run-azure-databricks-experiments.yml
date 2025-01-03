@@ -2,13 +2,15 @@
 uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning.run
 title: Run Azure Databricks experiments in Azure Machine Learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run Azure Databricks experiments in Azure Machine Learning
   description: "Run Azure Databricks experiments in Azure Machine Learning"
   ms.date: 03/22/2023
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.collection: wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
