@@ -1,5 +1,3 @@
-
-
 Azure Automation State Configuration will enable Contoso to ensure that their VMs remain in a consistent state. That state might include specific applications and configuration. Contoso could use PowerShell DSC to implement declarative configuration management through a combination of PowerShell scripts and operating system features.
 
 > [!NOTE]
@@ -58,8 +56,6 @@ To control a VM with DSC, you must first onboard the VM, or *node*, with Azure A
     > [!TIP]
     > You can create a new **Log Analytics workspace**.
 
-    ![A screenshot of the Configuration management blade in the Azure portal. The administrator has selected the appropriate Log Analytics workspace and left all other values at default.](../media/m2-onboard.png)
-
     > [!NOTE]
     > If you have only a single Automation Account, then the **Automation account subscription** and **Automation account** are implied when you choose the associated Log Analytics workspace.
 
@@ -72,7 +68,7 @@ To control a VM with DSC, you must first onboard the VM, or *node*, with Azure A
       - **ApplyAndAutoCorrect**. LCM executes the script in regular intervals, automatically correcting any configuration drift.
     - **Allow Module Override**. Controls whether new configurations downloaded from the Azure Automation DSC pull server are allowed to overwrite the old modules already on the target node.
     - **Reboot Node if Needed**. Select to reboot the node if needed to fully apply the configuration.
-    - **Action after Reboot**. The action to perform after a reboot, which are:
+    - **Action after Reboot**. The actions to perform after a reboot, which include:
       - ContinueConfiguration
       - StopConfiguration
 
@@ -81,11 +77,7 @@ To control a VM with DSC, you must first onboard the VM, or *node*, with Azure A
 
 ## How to use DSC
 
-After you have onboarded the appropriate VMs to DSC, you can start using DSC to manage your VMs' desired state.
-
-[![A screenshot of the State configuration (DSC) blade in the Azure portal. The administrator has onboarded a single VM: ContosoVM4.](../media/m2-view-state-configuration.png)](../media/m2-view-state-configuration.png#lightbox)
-
-With DSC, you can define the desired state of:
+After you have onboarded the appropriate VMs to DSC, you can start using DSC to manage your VMs' desired state. With DSC, you can define the desired state of:
 
 - An operating system
 - An application
@@ -126,8 +118,6 @@ You can add the configuration to the Automation account by using either the Azur
 > [!TIP]
 > Your configuration scripts can reference Automation assets.
 
-![A screenshot of the Import blade in the Azure portal. The administrator has uploaded a script called iis.ps1.](../media/m2-add-script.png)
-
 The scope of functionality that you can manage with Azure Automation DSC depends on the DSC resources available in the Automation account. A built-in set of resources matches those in the standard PowerShell DSC, but you can also import additional resources by uploading PowerShell integration modules that contain their definitions. The upload functionality is available in the Azure portal. You can also use Azure PowerShell to upload the modules.
 
 ### Compile the configuration
@@ -138,8 +128,6 @@ After you create a configuration script, you must compile it, which you perform 
 2. Select **State configuration (DSC)**, and then, on the **Configurations** tab, select the configuration you uploaded.
 3. On the **Configuration** blade, select **Compile**.
 4. When prompted, select **Yes**.
-
-![A screenshot of the Configuration blade in the Azure portal. The administrator is about to compile a configuration called IISInstall.](../media/m2-compile.png)
 
 ### Compose a configuration in the Azure portal
 
@@ -161,9 +149,7 @@ To assign a compiled configuration, regardless of how you created it, use the fo
 1. In the portal, on the **State configuration (DSC)** blade, select the node you want to configure.
 2. On the **VM_name** blade, select **Assign node configuration**.
 3. In the list of configurations, select the appropriate configuration, and then select **OK**.
-
-    ![A screenshot of the Assign Node Configuration blade in the Azure portal. The administrator has selected one of the listed configurations.](../media/m2-assign-state-configuration.png)
-
 4. Close the **VM_name** blade, and from the **State configuration (DSC)** blade, monitor the assignment.
 
-    [![A screenshot of the State configuration (DSC) blade in the Azure portal. The administrator has onboarded a single VM: ContosoVM4. It's status displays as Pending.](../media/m2-view-state-configuration-2.png)](../media/m2-view-state-configuration-2.png#lightbox)
+> [!NOTE]
+> Azure Machine Configuration is a replacement service combines features of the DSC extension handler, Azure Automation State Configuration, and incorporates commonly requested features based on customer feedback. Azure Machine Configuration is currently in preview. Azure Automation State Configuration is still available and will be retired on September 30, 2027.
