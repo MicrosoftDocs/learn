@@ -128,4 +128,4 @@ The example uses a vertical `StackLayout` so each child view is given a row. `Ho
 
 ## What is Expands?
 
-The second property of the `LayoutOptions` struct is `Expands`. The `Expands` property is a `bool` that in Xamarin.forms allowed a view in a `StackLayout` to request extra space if any is available. This property is now obsolete and is no longer used in .NET MAUI. Later, we explore how to achieve the same type of expanding in the unit on `Grid` layout.
+The second property of the `LayoutOptions` struct is `Expands`. The `Expands` property is a `bool` that in Xamarin.Forms allowed a view in a `StackLayout` to request extra space if any is available. This property is now obsolete and is no longer used in .NET MAUI. Later, we explore how to achieve the same type of expanding in the unit on `Grid` layout.

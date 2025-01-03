@@ -36624,6 +36624,221 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/2-identify-technology-options.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/3-analyze-the-decision-criteria.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/4-logic-apps-and-flow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/5-web-jobs-and-functions.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/choose-azure-service-to-integrate-and-automate-business-processes/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/pytorch-fundamentals/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/2-represent-text-as-tensors.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/3-bow-tfidf.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/4-embeddings.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/3-visualizations-transforms.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/5-recurrent-networks.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/4-speech-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/6-generative-networks.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-audio-classification-pytorch/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/2-tensors.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/3-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/4-model.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/5-autograd.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/6-optimization.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/7-inference.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/8-quickstart.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/2-create-azure-function-maven-archetype.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/3-exercise-create-azure-function-maven-archetype.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/4-run-local-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/5-exercise-run-local-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/6-deploy-function-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/7-exercise-deploy-function-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/8-add-logging-to-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/9-exercise-add-logging-to-azure-function.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/develop-azure-functions-app-with-maven-plugin/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-java?tabs=windows%2Cbash%2Cazure-cli%2Cbrowser",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/build-api-azure-functions/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/automatic-update-of-a-webapp-using-azure-functions-and-signalr/",
       "redirect_document_id": false
@@ -36781,6 +36996,226 @@
     {
       "source_path": "learn-pr/student-evangelism/introduction-chat-completion/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-space-using-python/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/2-story-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/3-prep-predict.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/2-rock-samples.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/4-collect-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/3-setup-import-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/5-prep-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/4-setup-cleanse.data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/6-start-search.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/5-add-modules.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/7-continue-search.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/6-understand-modules.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/8-finish-search.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/7-artemis-capacity.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/8-prioritize-needed-rocks.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/9-develop-recommendation.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/2-bungee-on-the-moon.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/3-set-up-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/4-what-is-ai.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/5-choose-pictures.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/6-train-model.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/7-test-model.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-advanced-data-visualization-techniques/index.md",
+      "redirect_url": "/training/paths/build-power-bi-visuals-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/index.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/5-create-custom-visuals.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/2-create-import-custom-report-theme.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/4-design-configure-power-bi-reports-for-accessibility.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/3-enable-personalized-visuals-report.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/1-introduction.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/7-knowledge-check.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/6-review-report-performance-use-performance-analyzer.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/8-summary.md",
+      "redirect_url": "/power-bi/create-reports/",
       "redirect_document_id": false
     }
   ]

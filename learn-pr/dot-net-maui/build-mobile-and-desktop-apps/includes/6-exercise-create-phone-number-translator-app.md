@@ -23,53 +23,52 @@ Replace the content of the class file with the following code and save the file.
 ```csharp
 using System.Text;
 
-namespace Core;
-
+namespace Phoneword;
 public static class PhonewordTranslator
 {
-    public static string ToNumber(string raw)
-    {
-        if (string.IsNullOrWhiteSpace(raw))
-            return null;
+	public static string? ToNumber(string raw)
+	{
+		if (string.IsNullOrWhiteSpace(raw))
+			return null;
 
-        raw = raw.ToUpperInvariant();
+		raw = raw.ToUpperInvariant();
 
-        var newNumber = new StringBuilder();
-        foreach (var c in raw)
-        {
-            if (" -0123456789".Contains(c))
-                newNumber.Append(c);
-            else
-            {
-                var result = TranslateToNumber(c);
-                if (result != null)
-                    newNumber.Append(result);
-                // Bad character?
-                else
-                    return null;
-            }
-        }
-        return newNumber.ToString();
-    }
+		var newNumber = new StringBuilder();
+		foreach (var c in raw)
+		{
+			if (" -0123456789".Contains(c))
+				newNumber.Append(c);
+			else
+			{
+				var result = TranslateToNumber(c);
+				if (result != null)
+					newNumber.Append(result);
+				// Bad character?
+				else
+					return null;
+			}
+		}
+		return newNumber.ToString();
+	}
 
-    static bool Contains(this string keyString, char c)
-    {
-        return keyString.IndexOf(c) >= 0;
-    }
+	static bool Contains(this string keyString, char c)
+	{
+		return keyString.IndexOf(c) >= 0;
+	}
 
-    static readonly string[] digits = {
-        "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"
-    };
+	static readonly string[] digits = {
+		"ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"
+	};
 
-    static int? TranslateToNumber(char c)
-    {
-        for (int i = 0; i < digits.Length; i++)
-        {
-            if (digits[i].Contains(c))
-                return 2 + i;
-        }
-        return null;
-    }
+	static int? TranslateToNumber(char c)
+	{
+		for (int i = 0; i < digits.Length; i++)
+		{
+			if (digits[i].Contains(c))
+				return 2 + i;
+		}
+		return null;
+	}
 }
 ```
 
@@ -163,12 +162,12 @@ public static class PhonewordTranslator
     public partial class MainPage : ContentPage
     {
         ...
-        string translatedNumber;
+        string? translatedNumber;
     
         private void OnTranslate(object sender, EventArgs e)
         {
             string enteredNumber = PhoneNumberText.Text;
-            translatedNumber = Core.PhonewordTranslator.ToNumber(enteredNumber);
+            translatedNumber = PhonewordTranslator.ToNumber(enteredNumber);
     
             if (!string.IsNullOrEmpty(translatedNumber))
             {
@@ -269,7 +268,7 @@ public static class PhonewordTranslator
         {
             try
             {
-                if (PhoneDialer.Default.IsSupported)
+                if (PhoneDialer.Default.IsSupported && !string.IsNullOrWhiteSpace(translatedNumber))
                     PhoneDialer.Default.Open(translatedNumber);
             }
             catch (ArgumentNullException)
@@ -308,7 +307,7 @@ public static class PhonewordTranslator
 
 1. Save the file.
 
-1. In the Visual Studio toolbar, select the **Android Emulators/Pixel 3a - API 30** (or similar) profile and start debugging.
+1. In the Visual Studio toolbar, select the **Android Emulators/Pixel 7 - API 35** (or similar) profile and start debugging.
 
 1. When the app appears in the emulator (it can take a few minutes), enter a phone number (or accept the default) select **Translate**, then select **Call**.
 

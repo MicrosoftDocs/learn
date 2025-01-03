@@ -1,4 +1,4 @@
-Availability of data is critical for business continuity. Traditionally, increased storage resiliency required expensive, vendor-specific solutions that relied on high-end hardware. Storage Replica eliminates this dependency, providing cost-efficient, hardware-agnostic high availability and disaster recovery capabilities.
+Availability of data is critical for business continuity. Traditionally, increased storage resiliency required expensive, vendor-specific solutions that relied on high-end hardware. Storage Replica eliminates this dependency, providing cost-efficient, hardware-agnostic high availability, and disaster recovery capabilities.
 
 ## What is Storage Replica?
 
@@ -6,7 +6,7 @@ Storage Replica is Windows Server technology that enables unidirectional replica
 
 Storage Replica requires two NTFS file system (NTFS)-formatted or Resilient File System (ReFS)-formatted volumes at the source, and two at the destination, with each pair being used for data and replication logs, respectively. Each pair should have matching size and performance characteristics. The source data volume is referred to as *primary*, while the destination volume is known as *secondary*.
 
-The servers hosting these volumes form a replication partnership. Such partnership can include multiple data volumes, but all of them use the same log volume. Each server, together with all its volumes that are part of a replication partnership, constitutes a *replication group*.
+The servers hosting these volumes form a replication partnership. Such partnership can include multiple data volumes, but all of them use the same log volume. Each server, together with all its volumes that are part of a replication partnership, constitute a *replication group*.
 
 > [!IMPORTANT]
 > You must never use log volumes for other workloads.
@@ -19,7 +19,7 @@ The main features of Storage Replica include:
 - Simplicity. You can rely on Windows Admin Center to guide you through the process of creating a replication partnership between two servers. To deploy a stretch cluster, you can use a Failover Cluster Manager-based wizard.
 - Support for physical servers and virtual machines. All Storage Replica capabilities are available to both virtual guest-based and host-based deployments. This means that guests can replicate their data volumes even if running on non-Windows virtualization platforms or in public clouds.
 - Use of Server Message Block (SMB) 3.x. Storage Replica relies on SMB 3.x, which was introduced in Windows Server 2012 and then considerably enhanced in subsequent versions of Windows Server. All of SMB's advanced characteristics, such as SMB Multichannel and SMB Direct, are available to Storage Replica.
-- Security. Storage Replica features a wide range of security mechanisms, including packet signing, AES-128-GCM full data encryption, support for third-party encryption acceleration, and pre-authentication integrity man-in-the-middle attack prevention. Storage Replica relies on Kerberos AES256 for all authentication between nodes.
+- Security. Storage Replica features a wide range of security mechanisms, including packet signing, AES-128-GCM full data encryption, support for third-party encryption acceleration, and preauthentication integrity man-in-the-middle attack prevention. Storage Replica relies on Kerberos AES256 for all authentication between nodes.
 - High performance initial sync. Storage Replica supports seeded initial sync, which involves copying a subset of data from a source volume to the target via backup or removable media. This way, initial replication consists only of the difference between the two volumes, which shortens the duration of the initial sync and limits bandwidth usage.
 - Consistency groups. Write ordering provides assurance that writes of applications such as SQL Server take place in the same sequence at the source as on the replicated volumes.
 - Delegated administration. You can delegate permissions to manage replication without needing to grant Administrator-level privileges across replicated nodes.
@@ -35,7 +35,7 @@ Storage Replica supports two types of replication:
 
 When using synchronous replication, a data write must complete successfully on both volumes. If that isn't the case, the workload initiating the write must retry the same operation. With synchronous replication, the data on both volumes is identical.
 
-:::image type="content" source="../media/m20-synchronous.png" alt-text="The synchronous replication and volume writes between writing data to the primary volume and the log on the local server and the remote server, including the acknowledgment from the remote server and the application." border="false":::
+:::image type="content" source="../media/m20-synchronous.png" alt-text="The synchronous replication and volume writes between writing data to the primary volume and the replication log on the local server and the remote server, including the acknowledgment from the remote server and the application." border="false":::
 
 > [!TIP]
 > Use synchronous replication when it's imperative that you avoid data loss.
@@ -44,4 +44,4 @@ When using synchronous replication, a data write must complete successfully on b
 
 When using asynchronous replication, after a data write completes successfully on the primary volume, the workload initiating the write receives a confirmation and can proceed with another I/O operation. The corresponding data writes take place afterwards on the secondary volume, without affecting the primary volume.
 
-:::image type="content" source="../media/m20-asynchronous.png" alt-text="The asynchronous replication and volume writes between writing data to the primary volume and the log on the local server and the log on the remote server, including the acknowledgment returned from the remote server and the application." border="false":::
+:::image type="content" source="../media/m20-asynchronous.png" alt-text="The asynchronous replication and volume writes between writing data to the primary volume and the replication log on the local server and the sign in the remote server, including the acknowledgment returned from the remote server and the application." border="false":::

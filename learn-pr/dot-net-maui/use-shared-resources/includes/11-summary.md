@@ -7,7 +7,7 @@ Resources and styles enable you to centralize all the definitions that affect th
 
 More specifically, in this module you learned how to:
 
-- Create and use static resources in a MAUI XAML user interface.
+- Create and use static resources in a .NET MAUI XAML user interface.
 - Create and use dynamic resources.
 - Create a consistent user interface by using styles.
 - Create and use application-wide resources.
