@@ -4,7 +4,7 @@ title: Define least privilege administration
 metadata:
   title: Define least privilege administration
   description: "Define least privilege administration"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "The administrator should sign in using an account that belongs to Enterprise Admins."
       isCorrect: false
-      explanation: "That's incorrect. Enterprise Admins can perform any administrative task in the entire AD DS forest. These are excessive rights for the required task."
+      explanation: "Incorrect. Enterprise Admins can perform any administrative task in the entire AD DS forest. These are excessive rights for the required task."
     - content: "The administrator should sign in using an account that belongs to the local Administrators group."
       isCorrect: false
-      explanation: "That's incorrect. The local Administrators group members can perform all administrative tasks on the local workstation only. This is insufficient for the task required."
+      explanation: "Incorrect. The local Administrators group members can perform all administrative tasks on the local workstation only. This is insufficient for the task required."
     - content: "The administrator should sign in using an account that belongs to the domain local Account Operators group."
       isCorrect: true
-      explanation: "That's correct. Members of the the domain local Account Operators group can add user accounts in the local domain."
+      explanation: "Correct. Members of the domain local Account Operators group can add user accounts in the local domain."
