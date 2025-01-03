@@ -55,7 +55,7 @@ After you confirm the networking ports and test them as open, take the following
 
 1. When the service mesh deployment finishes successfully, all services will show as green.
 
-    :::image type="content" source="../media/5-service-mesh-green.png" alt-text="Screenshot of a finished deployment, where the service mesh displays all services as green in the on-premises VMware HCX Connector.":::
+    :::image type="content" source="../media/5-hcx-service-mesh-ready-green.png" alt-text="Screenshot of a finished deployment, where the service mesh displays all services as green in the on-premises VMware HCX Connector."lightbox="../media/5-hcx-service-mesh-ready-green.png":::
 
 1. Verify the health of the on-premises service mesh, by selecting **Interconnect** > **Appliances**. The tunnels should be green and indicate **Up**.
 
