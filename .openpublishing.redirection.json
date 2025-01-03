@@ -36992,6 +36992,11 @@
       "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/1-introduction.md",
       "redirect_url": "/power-bi/create-reports/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/7-knowledge-check.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
     }
   ]
 }
