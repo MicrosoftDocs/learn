@@ -36957,6 +36957,11 @@
       "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/developer/javascript/how-to/develop-serverless-apps?tabs=v4-ts",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-advanced-data-visualization-techniques/index.md",
+      "redirect_url": "/training/paths/build-power-bi-visuals-reports/",
+      "redirect_document_id": false
     }
   ]
 }
