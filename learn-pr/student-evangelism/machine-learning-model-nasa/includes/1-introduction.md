@@ -1,5 +1,3 @@
-This module follows the previous two modules within the [Predict rocket launch delays with machine learning](/training/paths/machine-learning-predict-launch-delay-nasa) learning path.
-
 > [!TIP]
 > For best results, work through this module right after you complete the previous module in this learning path: [Data collection and manipulation](/training/modules/collect-manipulate-data-python-nasa). Otherwise, you might encounter errors or get different results. If this occurs, you can rerun the commands in the previous module before starting on this one.
 
@@ -21,5 +19,4 @@ In this module, you'll begin to discover:
 
 ## Prerequisites
 
-- [Predict rocket launch delays with machine learning](../../../paths/machine-learning-predict-launch-delay-nasa/index.yml?azure-portal=true)
 - [Visual Studio Code with Python installed](https://aka.ms/LearnOnVSCode?azure-portal=true)

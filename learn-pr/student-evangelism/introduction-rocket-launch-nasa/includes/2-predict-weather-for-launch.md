@@ -1,9 +1,0 @@
-It takes years to develop plans for a successful and safe rocket launch. Because of this reality, NASA might have to choose a time and date to work toward several years before the actual rocket launch. 
-
-Because large amounts of data are available in a digital world, weather predictions are more accurate than they were in the past, even taking into account a changing climate. But, if you pay attention to weather forecasts made by your local weather reporter or meteorologist, you know that it can be a challenge to accurately predict weather just hours in advance. The stakes during a rocket launch are very high. If NASA schedules the launch for a day that ends up having a weather event, the decision to schedule that day might be life-threatening.
-
-To help predict and analyze weather data, NASA partners closely with the [National Oceanic and Atmospheric Administration (NOAA)](https://www.noaa.gov/?azure-portal=true). NOAA shares its data with the public, so you can begin to analyze the patterns and make the same predictions as NASA. You can access NOAA data several ways. At [NOAA Data Access](https://www.ncdc.noaa.gov/data-access?azure-portal=true), you can find [APIs](https://wikipedia.org/wiki/Application_programming_interface?azure-portal=true) that give access to NOAA data through code. You also can download data at no cost, or even order hard copies of data for a small fee.
-
-NASA also collects its own data, which it makes available to the public. At [Data.NASA.gov](https://nasa.github.io/data-nasa-gov-frontpage/?azure-portal=true), you can find tens of thousands of datasets. NASA also provides [developer resources](https://data.nasa.gov/stories/s/gk8h-th3y?azure-portal=true) for people who want to integrate NASA data into their applications.
-
-Experts at NASA use all this data to ensure the best prediction possible, and to select a safe launch date.
