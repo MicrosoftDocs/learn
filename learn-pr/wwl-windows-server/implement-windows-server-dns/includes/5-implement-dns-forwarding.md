@@ -1,4 +1,4 @@
-When a DNS server doesn't host a primary or secondary zone containing resource records in a DNS request, it needs a mechanism to find the required information. By default, each DNS server is configured with root hints that can be used to resolve DNS requests on the internet by finding the authoritative DNS servers. This works if the DNS server has access to the internet and the resource record being requested is available on the internet. Sometimes, both conditions aren't met. In those circumstances, you can enable forwarding.
+When a DNS server doesn't host a primary or secondary zone containing resource records in a DNS request, it needs a mechanism to find the required information. By default, each DNS server is configured with root hints that can be used to resolve DNS requests on the internet by finding the authoritative DNS servers. This process works if the DNS server has access to the internet and the resource record being requested is available on the internet. Sometimes, both conditions aren't met. In those circumstances, you can enable forwarding.
 
 :::image type="content" source="../media/m12-dns-3.png" alt-text="A screenshot of the SEA-DC1.Contoso.com Properties dialog. The administrator has selected the Forwarders tab. One forwarder is listed. Displayed behind this dialog box, the DNS Manager console. Displayed is the Conditional Forwarders node, with one domain record for Adatum.com.":::
 
@@ -6,7 +6,7 @@ When a DNS server doesn't host a primary or secondary zone containing resource r
 
 You can configure each DNS server with one or more forwarders. If a DNS server receives a request for a zone for which it isn't authoritative, and it isn't already cached by the server, the DNS server forwards that request to a forwarder. A DNS server uses a forwarder for all unknown zones.
 
-Forwarders commonly are used for internet name resolution. The internal DNS servers forward requests to resolve internet names to a DNS server that's outside the corporate network. Your organization might configure the external DNS servers in a perimeter network, or use a DNS server provided by your internet service provider. This configuration limits external connectivity and increases security.
+Forwarders commonly are used for internet name resolution. The internal DNS servers forward DNS requests to resolve internet names to a DNS server that's outside the corporate network. Your organization might configure the external DNS servers in a perimeter network, or use a DNS server provided by your internet service provider. This configuration limits external connectivity and increases security.
 
 ## Conditional forwarding
 
