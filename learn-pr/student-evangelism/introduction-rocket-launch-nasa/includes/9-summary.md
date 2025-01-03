@@ -11,7 +11,3 @@ All pictures came from [commons.wikimedia.org](https://commons.wikimedia.org/?az
 
 - [Raspberry](https://commons.wikimedia.org/wiki/File:Raspberry.jpg?azure-portal=true), shared by Pro2
 - [Thimbleberry](https://commons.wikimedia.org/wiki/File:Thimbleberry_(Rubus_parviflorus)_--_fruits.JPG?azure-portal=true), shared by Jesse Taylor
-
-## Next steps
-
-Continue with the NASA-inspired series with [Data collection and manipulation](../../../paths/classify-space-rocks-artificial-intelligence-nasa/index.yml).

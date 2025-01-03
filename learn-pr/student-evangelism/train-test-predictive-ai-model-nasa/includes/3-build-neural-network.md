@@ -74,7 +74,7 @@ Here are some tips to help troubleshoot errors in the setup process:
    1. Restart Visual Studio Code. Restart the Jupyter `myenv` Python kernel.
    1. Run the existing cells in your Jupyter Notebook file, from the first cell to the last.
 
-- If you receive an error about a specific command or library, you might need to refresh a library through your Anaconda prompt environment. Make sure the Anaconda prompt environment indicates that all libraries are downloaded and installed. Follow the steps to [Download the Python AI libraries](/training/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true) as described in an earlier module.
+- If you receive an error about a specific command or library, you might need to refresh a library through your Anaconda prompt environment. Make sure the Anaconda prompt environment indicates that all libraries are downloaded and installed. Follow the steps to Download the Python AI libraries as described in an earlier module.
 
 - If you see errors in Visual Studio Code, try restarting the application, restarting the `myenv` kernel, and running the existing cells in the Jupyter Notebook file.
 

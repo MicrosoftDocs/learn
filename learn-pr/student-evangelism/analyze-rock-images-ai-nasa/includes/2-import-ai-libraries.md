@@ -2,7 +2,7 @@ Now that you have the libraries downloaded, you can begin to import them into a 
 
 ## Prerequisites
 
-- The AI libraries are installed as described in [Download Python AI libraries][AILibs].
+- The AI libraries are installed as described in Download Python AI libraries.
 
 - The [Python extension for Visual Studio Code][VSCodePython] is installed, so Jupyter Notebook files run in the interactive Python environment.
 
@@ -61,5 +61,4 @@ Great job! You've added code to import all the libraries you'll need for your AI
 
 <!-- Links -->
 
-[AILibs]: /training/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true
 [VSCodePython]: https://marketplace.visualstudio.com/items?itemName=ms-python.python
