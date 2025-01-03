@@ -32,7 +32,6 @@ subjects:
 - data-visualization
 units:
 - learn.wwl.understand-advanced-data-visualization-concepts.review-report-performance-use-performance-analyzer
-- learn.wwl.understand-advanced-data-visualization-concepts.knowledge-check
 - learn.wwl.understand-advanced-data-visualization-concepts.summary
 badge:
   uid: learn.wwl.understand-advanced-data-visualization-concepts.badge
