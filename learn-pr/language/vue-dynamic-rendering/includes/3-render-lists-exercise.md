@@ -1,8 +1,8 @@
-Before users decide to book a cruise, they'll want to know what options are available and how much they cost. Let's display these options.
+Before users decide to book a cruise, they want to know what options are available and how much they cost. Let's display these options.
 
 ## Clone the starter repository and explore the code
 
-You've been provided a starter repository for this module.
+You're provided with a starter repository for this module.
 
 1. Clone the starter repository, and open the folder in [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) by running the following code:
 
@@ -19,6 +19,12 @@ You've been provided a starter repository for this module.
 Let's update the HTML code to display the list of options and their prices.
 
 1. Open the *index.html* file.
+1. In the `<head>` section, replace the `<script></script>` line with the following HTML code:
+
+    ```html
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    ```
+
 1. On the line after the comment, "TODO: Add code to display classes," add the following HTML code:
 
     ```html
