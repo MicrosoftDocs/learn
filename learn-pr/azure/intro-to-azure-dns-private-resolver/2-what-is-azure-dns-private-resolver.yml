@@ -8,8 +8,8 @@ metadata:
   title: What is Azure DNS Private Resolver?
   description: Learn about Azure DNS Private Resolver and what can it be used for.
   ms.date: 01/31/2024
-  author: greg-lindsay
-  ms.author: greglin
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 1
 content: |

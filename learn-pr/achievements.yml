@@ -4452,6 +4452,31 @@ achievements:
   title: Refactor Node.js Express APIs into serverless Azure Functions APIs
   summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
   iconUrl: /training/achievements/shift-express-api-azure-functions.svg
+- uid: learn.chat-completions-badge
+  type: badge
+  title: Introduction to chat completion
+  summary: This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Studio playground.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.student-evangelism.predict-meteor-showers-using-python.badge
+  type: badge
+  title: Predict meteor showers by using Python and Visual Studio Code
+  summary: Learn how to use concepts from machine learning to predict the occurrence of meteor showers (or Moon Goddess tears).
+  iconUrl: /training/achievements/student-evangelism/predict-meteor-showers-using-python.svg
+- uid: learn.student-evangelism.train-custom-vision-ai.badge
+  type: badge
+  title: Use AI to recognize objects in images by using the Custom Vision service
+  summary: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
+  iconUrl: /training/achievements/student-evangelism/train-custom-vision-ai.svg
+- uid: learn.explore-space-using-python.trophy
+  type: trophy
+  title: Explore space with Python and Visual Studio Code; inspired by Netflix's Over the Moon
+  summary: This *Over the Moon* - inspired learning path aims to equip you with data science, artificial intelligence, and coding strategies to discover the technology used in space exploration.
+  iconUrl: /training/achievements/explore-space-using-python.svg
+- uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.badge
+  type: badge
+  title: Plan a Moon mission by using Python pandas
+  summary: Like Fei Fei, use data to plan your own mission to the Moon. Ensure that your rocket can not only get you there, but also bring you and all your Moon rocks safely back to Earth.
+  iconUrl: /training/achievements/student-evangelism/plan-moon-mission-using-python-pandas.svg
 - uid: learn.wwl.implement-advanced-data-visualization-techniques.trophy
   type: trophy
   title: Implement advanced data visualization techniques by using Power BI
