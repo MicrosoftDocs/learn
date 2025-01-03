@@ -36972,6 +36972,11 @@
       "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/5-create-custom-visuals.md",
       "redirect_url": "/power-bi/create-reports/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/2-create-import-custom-report-theme.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
     }
   ]
 }
