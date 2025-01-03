@@ -115,8 +115,6 @@ Congratulations! You've installed all the libraries you need to make an AI progr
 
 ### Next steps
 
-Continue to the next module in this Learning path and discover how to [analyze images of rocks by using artificial intelligence](/training/modules/analyze-rock-images-ai-nasa/?azure-portal=true).
-
 > [!IMPORTANT]
 > If you plan to continue to the next module in this Learning path, leave your Anacoda prompt open and your Jupyter Notebook file open in Visual Studio Code.
 > If you close these applications, or plan to work on the module exercises across multiple sessions, you'll have to reopen the tools and reconfigure your working environment to continue your model development.
