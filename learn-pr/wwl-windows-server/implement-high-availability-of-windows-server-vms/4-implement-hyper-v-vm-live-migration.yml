@@ -4,7 +4,7 @@ title: Implement Hyper-V VM live migration
 metadata:
   title: Implement Hyper-V VM live migration
   description: "Implement Hyper-V VM live migration"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Local disk of the first cluster node"
       isCorrect: false
-      explanation: "That's incorrect. The demo illustrated the use of CSV to host disks of a highly available VM. You can't use a local volume on a cluster node to store disks of highly available VMs"
+      explanation: "Incorrect. The demo illustrated the use of CSV to host disks of a highly available VM. You can't use a local volume on a cluster node to store disks of highly available VMs"
     - content: "CSV"
       isCorrect: true
-      explanation: "That's correct. The demo illustrated the use of CSV to host disks of a highly available VM."
+      explanation: "Correct. The demo illustrated the use of CSV to host disks of a highly available VM."
     - content: "VHD Set"
       isCorrect: false
-      explanation: "That's incorrect. VHD Set is an option to implement shared storage for clustered VMs. The demo illustrated the use of CSV to host disks of a highly available VM."
+      explanation: "Incorrect. VHD Set is an option to implement shared storage for clustered VMs. The demo illustrated the use of CSV to host disks of a highly available VM."
