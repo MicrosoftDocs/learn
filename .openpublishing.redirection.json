@@ -36959,6 +36959,216 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/2-explore-chat-completion.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/3-basic-prompt-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/4-deploy-system-message.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/5-system-message-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-chat-completion/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-studio/quickstarts/get-started-playground",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-space-using-python/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/2-story-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/3-prep-predict.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/2-rock-samples.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/4-collect-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/3-setup-import-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/5-prep-data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/4-setup-cleanse.data.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/6-start-search.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/5-add-modules.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/7-continue-search.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/6-understand-modules.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/8-finish-search.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/7-artemis-capacity.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/8-prioritize-needed-rocks.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/9-develop-recommendation.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-meteor-showers-using-python/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/2-bungee-on-the-moon.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/3-set-up-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/4-what-is-ai.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/5-choose-pictures.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/6-train-model.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/7-test-model.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/train-custom-vision-ai/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/ai-services/custom-vision-service/get-started-build-detector",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/plan-moon-mission-using-python-pandas/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/implement-advanced-data-visualization-techniques/index.md",
       "redirect_url": "/training/paths/build-power-bi-visuals-reports/",
       "redirect_document_id": false

@@ -8,8 +8,8 @@ metadata:
   description: learn about Azure DNS Private Resolver and how to use it to resolve DNS queries from on-premises to cloud.
   manager: kumud
   ms.date: 01/31/2024
-  author: greg-lindsay
-  ms.author: greglin  
+  author: ricmmartins
+  ms.author: ricardomac  
   ms.topic: module-intro-to-product
   ms.service: azure-dns
 title: Intro to Azure DNS Private Resolver
