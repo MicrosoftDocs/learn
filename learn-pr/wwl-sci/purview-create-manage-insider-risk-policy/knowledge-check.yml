@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-create-manage-insider-risk-policy.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 1/3/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A company wants to prevent employees from submitting sensitive information into generative AI tools. What should they do?"
+    choices:
+    - content: "Apply the Data theft by departing users policy."
+      isCorrect: false
+      explanation: "Incorrect: This template focuses on data exfiltration related to resignations or terminations."
+    - content: "Create a security policy violation template."
+      isCorrect: false
+      explanation: "Incorrect: Security violations target unauthorized software, not AI data usage."
+    - content: "Use the Risky AI usage policy template."
+      isCorrect: true
+      explanation: "Correct: This template detects risky prompts and inputs in generative AI tools."
+
+  - content: "A small business needs to quickly implement a policy to detect employees sharing sensitive files externally. They have limited resources and need a straightforward solution. What should they do?"
+    choices:
+    - content: "Create a custom policy to define detailed conditions and thresholds."
+      isCorrect: false
+      explanation: "Incorrect: Custom policies require more time and configuration, which might not be suitable for organizations needing a quick setup."
+    - content: "Use a quick policy template for data leaks."
+      isCorrect: true
+      explanation: "Correct: Quick policies provide preconfigured settings, making them ideal for fast deployment and common scenarios like data leaks."
+    - content: "Deploy a risky browser usage policy to monitor internet activity."
+      isCorrect: false
+      explanation: "Incorrect: Risky browser usage policies focus on web activity, not file sharing, and wouldn't address the business's need."  
+
+  - content: "A company wants to create a policy that prioritizes sensitive data labeled as 'Confidential' and assigns higher risk scores when files with this label are accessed. What step should they take during the policy creation process?"  
+    choices:  
+    - content: "Enable content prioritization when defining policy scope."  
+      isCorrect: true  
+      explanation: "Correct: Content prioritization allows organizations to assign higher risk scores to activities involving specific sensitivity labels, such as 'Confidential.'"  
+    - content: "Add all employees to the policy scope without exclusions."  
+      isCorrect: false  
+      explanation: "Incorrect: Adding all employees doesn't address prioritizing sensitive data or assigning higher risk scores."  
+    - content: "Use predefined thresholds for risk scoring."  
+      isCorrect: false  
+      explanation: "Incorrect: Predefined thresholds help set activity sensitivity but don't prioritize specific content types."  
+
+  - content: "A security team wants to test a new policy before applying it broadly. What is the best approach?"
+    choices:
+    - content: "Deploy the policy to a small group first."
+      isCorrect: true
+      explanation: "Correct: Testing with a smaller group allows the team to validate and refine the policy."
+    - content: "Apply the policy organization-wide immediately."
+      isCorrect: false
+      explanation: "Incorrect: Immediate deployment might lead to unexpected results without proper testing."
+    - content: "Use only predefined thresholds."
+      isCorrect: false
+      explanation: "Incorrect: Predefined thresholds might not address all organizational needs without testing."
+
+  - content: "An organization implements policies but finds that alerts are too frequent, even for low-risk activities. What is the best course of action?"
+    choices:
+    - content: "Delete the policy and create a new one."
+      isCorrect: false
+      explanation: "Incorrect: Deleting the policy may result in losing important configurations instead of refining them."
+    - content: "Ignore the alerts and assume they're false positives."
+      isCorrect: false
+      explanation: "Incorrect: Ignoring alerts could result in missing valid risks that require attention."
+    - content: "Adjust thresholds and indicators in the policy settings."
+      isCorrect: true
+      explanation: "Correct: Lowering sensitivity or adjusting conditions can reduce unnecessary alerts and improve accuracy."
