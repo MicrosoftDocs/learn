@@ -2,9 +2,11 @@
 uid: learn.wwl.design-solution-to-log-monitor-azure-resources.design-for-log-analytics
 title: Design for Azure Monitor Logs (Log Analytics) workspaces
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure Monitor Logs (Log Analytics) workspaces
   description: "Design for Azure Monitor Logs (Log Analytics) workspaces"
-  ms.date: 12/05/2024
+  ms.date: 01/06/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
