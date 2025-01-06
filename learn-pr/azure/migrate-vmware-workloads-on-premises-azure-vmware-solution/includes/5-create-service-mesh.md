@@ -57,12 +57,12 @@ After you confirm the networking ports and test them as open, take the following
 
     :::image type="content" source="../media/5-hcx-service-mesh-ready-green.png" alt-text="Screenshot of a finished deployment, where the service mesh displays all services as green in the on-premises VMware HCX Connector."lightbox="../media/5-hcx-service-mesh-ready-green.png":::
 
-1. Verify the health of the on-premises service mesh, by selecting **Interconnect** > **Appliances**. The tunnels should be green and indicate **Up**.
+1. Verify the health of the on-premises service mesh, by selecting **Interconnect** > **Appliances**. Each tunnel status should be green and indicate **Up**.
 
-    :::image type="content" source="../media/5-interconnect-appliance-state.png" alt-text="Screenshot of checking the health status of the on-premises HCX appliances.":::
+    :::image type="content" source="../media/5-hcx-interconnect-appliance-state.png" alt-text="Screenshot of checking the health status of the on-premises HCX appliances."lightbox="../media/5-hcx-interconnect-appliance-state.png":::
 
 1. Next, verify the health of the service mesh in Azure VMware Solution. To do this, in the same **Appliances** pane, examine the appliances deployed underneath the on-premises appliances.
 
     :::image type="content" source="../media/5-interconnect-appliance.png" alt-text="Screenshot of interconnect appliances that were deployed to Azure VMware Solution by enabling the service mesh.":::
 
-In the next unit, we'll cover how to migrate VMs from on-premises vSphere to Azure VMware Solution by using VMware HCX.
+In the next unit, we cover how to migrate VMs from on-premises vSphere to Azure VMware Solution by using VMware HCX.
