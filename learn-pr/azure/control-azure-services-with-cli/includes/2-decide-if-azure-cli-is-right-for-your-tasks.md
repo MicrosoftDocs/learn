@@ -38,7 +38,7 @@ approach can be time-consuming and error-prone for more complex tasks.
 ## Azure PowerShell
 
 Azure PowerShell is a collection of modules that provide PowerShell cmdlets for managing Azure
-resources. It requires PowerShell, a command-line shell and scripting language.
+resources. It requires PowerShell and scripting language.
 
 For example, Azure PowerShell provides the `New-AzVM` cmdlet to create a virtual machine in your
 Azure subscription. To use it, launch PowerShell and execute the following command:
@@ -83,16 +83,16 @@ Azure PowerShell or the Azure CLI. Here are some factors to consider when choosi
 appropriate tool for your needs:
 
 - **Automation**: Do you need to automate complex or repetitive tasks? Azure PowerShell and the
-  Azure CLI support automation, whereas the Azure portal doesn't.
+Azure CLI support automation, whereas the Azure portal doesn't.
 
 - **Learning curve**: Do you need to complete a task quickly without learning new commands or
-  syntax? The Azure portal is user-friendly and doesn't require learning commands or syntax. In
-  contrast, Azure PowerShell and the Azure CLI require an understanding of command shell syntax and
-  the specific requirements for each command.
+syntax? The Azure portal is user-friendly and doesn't require learning commands or syntax. In
+contrast, Azure PowerShell and the Azure CLI require an understanding of command shell syntax and
+the specific requirements for each command.
 
 - **Team skill set**: Does your team have existing expertise? For instance, if your team is already
-  using PowerShell to manage other products like Windows, Exchange Server, or Microsoft 365, they
-  might find Azure PowerShell to be a more comfortable and efficient choice.
+using PowerShell to manage other products like Windows, Exchange Server, or Microsoft 365, they
+might find Azure PowerShell to be a more comfortable and efficient choice.
 
 ## Example
 
@@ -123,76 +123,3 @@ the Azure portal and a scripting solution. In your CRM example, creating resourc
 Azure portal and automating VM creation with Azure CLI is a reasonable approach.
 
 The remainder of this module assumes Azure CLI is your choice for an automation tool.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-******************************************************************
-
-The Azure CLI is a command-line program to connect to Azure and execute administrative commands on Azure resources. It runs on Linux, macOS, and Windows, and allows administrators and developers to execute their commands through a terminal or command-line prompt (or script) instead of a web browser. For example, to restart a virtual machine (VM), you'd use the following command:
-
- ```azurecli
- az vm restart -g MyResourceGroup -n MyVm
- ```
-
-The Azure CLI provides cross-platform command-line tools for managing Azure resources, and you can easily install it locally on Linux, Mac, or Windows computers. You can also use the Azure CLI from a browser through the Azure Cloud Shell. In both cases, you can use it interactively or scripted. For interactive use, you'll first launch a shell (such as cmd.exe on Windows or Bash on Linux or macOS), then issue the command at the shell prompt. To automate repetitive tasks, you assemble the CLI commands into a shell script using the script syntax of your chosen shell, then execute the script.
-
-## How to install the Azure CLI
-
-On both Linux and macOS, use a package manager to install the Azure CLI. The recommended package manager differs by OS and distribution:
-
-- Linux: **apt-get** on Ubuntu, **yum** on Red Hat, and **zypper** on OpenSUSE
-- Mac: **Homebrew**
-
-The Azure CLI is available in the Microsoft repository, so you first need to add that repository to your package manager.
-
-On Windows, you can install the Azure CLI by downloading and running an MSI file.
-
-## Using the Azure CLI in scripts
-
-If you want to use the Azure CLI commands in scripts, you need to be aware of any issues around the "shell" (or environment) used for running the script. For example, in a Bash shell, use this syntax when setting variables:
-
-```azurecli
-variable="value"
-variable=integer
-```
-
-If you use a PowerShell environment for running Azure CLI scripts, use this syntax for variables:
-
-```powershell
-$variable="value"
-$variable=integer
-```
-
-You must install the Azure CLI before you can use it to manage Azure resources from a local computer. The installation steps vary for Windows, Linux, and macOS, but once installed, the commands are common across platforms.

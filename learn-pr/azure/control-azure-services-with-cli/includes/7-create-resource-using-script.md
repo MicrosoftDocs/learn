@@ -3,8 +3,8 @@
 Complex or repetitive tasks can be time-consuming and error-prone when performed manually.
 Organizations prefer to automate these tasks to reduce costs and avoid mistakes.
 
-Automation is essential in the Customer Relationship Management (CRM) example, where you're testing
-your software on multiple Linux virtual machines (VMs) that need to be continuously deleted and
+Automation is essential in the Customer Relationship Management (CRM) example where you're testing
+your software on multiple Linux virtual machines. These machines might need to be continuously deleted and
 re-created. Using a PowerShell script to automate VM creation is much more efficient and reliable
 than manually creating them each time.
 
@@ -44,7 +44,7 @@ the file. Precede the file name with a dot for the current directory and a backs
 
 ## Bash techniques
 
-Bash includes features commonly found in programming languages. For the script you're focusing on in this exercise, you are using three key features: variables, loops, and parameters.
+Bash includes features commonly found in programming languages. For the script you're focusing on in this exercise, you're using three key features: variables, loops, and parameters.
 
 ### Variables
 

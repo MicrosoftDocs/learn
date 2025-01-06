@@ -1,8 +1,8 @@
 <!-- markdownlint-disable MD041 -->
 
-In this scenario, your administrators prefer executing scripts locally on their computers rather
+In our scenario, your administrators prefer executing scripts locally on their computers rather
 than using Azure Cloud Shell. Since your team uses a mixture of Windows, Linux, and macOS, your task
-is to ensure Azure CLI works across all these devices. This empowers your
+is to ensure Azure CLI works across all these devices. Using a script empowers your
 administrators to manage and automate the Azure infrastructure for your organization from their
 preferred operating system on their local computers.
 
@@ -25,7 +25,7 @@ The Azure CLI can be installed in several locations:
 * macOS
 * Docker containers
 
-You don't need to install the Azure CLI in Azure Cloud Shell -- core references are preinstalled.
+You don't need to install the Azure CLI in Azure Cloud Shell because Core Azure CLI references are preinstalled.
 
 ## How to install Azure CLI
 

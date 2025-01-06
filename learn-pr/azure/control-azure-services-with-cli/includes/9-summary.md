@@ -18,11 +18,11 @@ Replace `<resource-group-name>` with the name of the resource group you created:
 > [!CAUTION]
 > The following example deletes the specified resource group and all resources contained within it.
 > If resources outside the scope of this training module exist in the specified resource group,
-> they'll also be deleted.
+> they're also.
 
 ```azurecli
 az group delete --name <resource-group-name> --no-wait
 ```
 
 When prompted to confirm the deletion, answer <kbd>Y</kbd> and <kbd>Enter</kbd>, or add the
-**--yes** parameter to skip the prompt. The command might take several minutes to complete.
+`--yes` parameter to skip the prompt. The command might take several minutes to complete.

@@ -30,7 +30,7 @@ Here are the three steps you need to follow:
 
 1. Work with resource groups using `az group`.
 
-### 1 - Connect to Azure
+### Connect to Azure
 
 When using a local installation of Azure CLI, you must authenticate before executing any
 Azure CLI commands. The `az login` command prompts you for your Azure credentials and
@@ -53,9 +53,9 @@ Here are some handy tips when authenticating to Azure with Azure CLI:
 
 - When running the Azure CLI through a local installation ...
   - You're prompted for your Azure credentials.
-  - There is a subscription selector at time of login.
+  - There's a subscription selector at time of login.
 
-### 2 - Work with subscriptions
+### Work with subscriptions
 
 If you're new to Azure, you only have a single subscription. However, if you've been using Azure for
 a while, you might have multiple subscriptions. Azure CLI allows you to configure which
@@ -83,7 +83,7 @@ using the `az account set` reference command.
    az account set --subscription "00000000-0000-0000-0000-000000000000"
    ```
 
-### 3 - Work with resource groups
+### Work with resource groups
 
 When creating resources in Azure, you place them into a resource group for management purposes.
 
@@ -93,7 +93,7 @@ metadata for your resource group is stored, which can be important for complianc
 `az account list-locations` command to determine the available locations.
 
 > [!NOTE]
-> If you are working in an Azure sandbox, it creates the resource group for you. If you prefer to
+> If you're working in an Azure sandbox, it creates the resource group for you. If you prefer to
 > work in your own subscription, use the following command.
 
 The syntax for creating a resource group is:
@@ -133,7 +133,7 @@ The `az vm create` command is used to create a VM. This command has several para
 - **resource-group**: The resource group where the new VM is placed.
 - **name**: The name of the VM in Azure.
 - **location**: The geographic region where the VM is provisioned.
-- **image**: The operating system image to use for the VM, typically a Linux distribution or Windows Server.
+- **image**: The operating system image to use for the VM, typically a Linux distribution, or Windows Server.
 - **admin-username**: Administrator username for the VM. You're prompted to enter a password at the command line.
 
 Here's a Bash script example:
