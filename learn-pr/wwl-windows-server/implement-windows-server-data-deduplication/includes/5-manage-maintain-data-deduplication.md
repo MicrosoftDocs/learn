@@ -1,4 +1,4 @@
-Data deduplication is a continuous process, which might occasionally require additional oversight, including maintenance and monitoring tasks. It is also important to consider data deduplication in the context of on standard server maintenance tasks, such as backups and restores.
+Data deduplication is a continuous process, which might occasionally require additional oversight, including maintenance and monitoring tasks. It's also important to consider data deduplication in the context of on standard server maintenance tasks, such as backups and restores.
 
 ## Running Data Deduplication jobs on demand
 
@@ -21,11 +21,11 @@ When you enable Data Deduplication on a server, three schedules are enabled by d
 These scheduled jobs run on all the volumes on the server. However, if you want to run a job only on a particular volume, you must create a new job. You can create, modify, or delete job schedules from Server Manager or by using the Windows PowerShell cmdlets: ```New-DedupSchedule```, ```Set-DedupSchedule```, or ```Remove-DedupSchedule```.
 
 > [!NOTE]
-> Data Deduplication jobs support weekly job schedules at most. If you need to create a schedule for a monthly job or for any other custom period, you'll need to use Windows Task Scheduler. However, you won't be able to use the ```Get-DedupSchedule``` cmdlet to access these custom job schedules that you create in Windows Task Scheduler.
+> Data Deduplication jobs support weekly job schedules at most. If you need to create a schedule for a monthly job or for any other custom period, you need to use Windows Task Scheduler. However, you won't be able to use the ```Get-DedupSchedule``` cmdlet to access these custom job schedules that you create in Windows Task Scheduler.
 
 ## Backup and restore considerations with Data Deduplication
 
-One of the benefits of using Data Deduplication is that backup and restore operations are faster. This is because you have reduced the used space on a volume, meaning there is less data to back up. Effectively, when you perform an optimized backup, your backup is smaller. This is because the total size of the optimized files, non-optimized files, and data deduplication chunk store files are much smaller than the logical size of the volume.
+One of the benefits of using Data Deduplication is that backup and restore operations are faster. This is because you have reduced the used space on a volume, meaning there's less data to back up. Effectively, when you perform an optimized backup, your backup is smaller. This is because the total size of the optimized files, non-optimized files, and data deduplication chunk store files are smaller than the logical size of the volume.
 
 Restore operations can also benefit from Data Deduplication. Any file-level, full-volume restore operations can benefit because they're essentially a reverse of the backup procedure, and less data means quicker operations. Block-level restore from an optimized backup is automatically an optimized restore because the restore process occurs under Data Deduplication, which works at the file level.
 
@@ -53,9 +53,3 @@ The main steps in the process are:
 1. Review Data Deduplication status. Use Windows PowerShell to review status of Data Deduplication jobs.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MFIg]
-
----
-
-
-
----

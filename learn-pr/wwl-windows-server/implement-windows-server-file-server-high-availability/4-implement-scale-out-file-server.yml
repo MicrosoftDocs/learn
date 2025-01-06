@@ -4,7 +4,7 @@ title: Implement Scale-Out File Server
 metadata:
   title: Implement Scale-Out File Server
   description: "Implement Scale-Out File Server"
-  ms.date: 03/31/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "`Add-ClusterResource`"
       isCorrect: false
-      explanation: "That's incorrect. You can use this cmdlet to create an IP address resource, not assign it."
+      explanation: "Incorrect. You can use this cmdlet to create an IP address resource, not assign it."
     - content: "`Set-ClusterParameter`"
       isCorrect: true
-      explanation: "That's correct. You can use this cmdlet to assign an existing IP address resource to an SOFS cluster role."
+      explanation: "Correct. You can use this cmdlet to assign an existing IP address resource to an SOFS cluster role."
     - content: "`Add-ClusterScaleOutFileServerRole`"
       isCorrect: false
-      explanation: "That's incorrect. You can use this cmdlet to create an SOFS cluster role."
+      explanation: "Incorrect. You can use this cmdlet to create an SOFS cluster role."
