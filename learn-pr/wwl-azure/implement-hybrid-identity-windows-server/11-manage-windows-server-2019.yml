@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-hybrid-identity-with-windows-server.manage-2019-azure-ad-ds-environment
-title: Manage Windows Server 2019 in a Microsoft Entra Domain Services environment
+title: Manage Windows Server in a Microsoft Entra Domain Services environment
 metadata:
-  title: Manage Windows Server 2019 in a Microsoft Entra Domain Services environment
-  description: "Manage Windows Server 2019 in a Microsoft Entra Domain Services environment"
-  ms.date: 12/13/2021
+  title: Manage Windows Server in a Microsoft Entra Domain Services environment
+  description: "Manage Windows Server in a Microsoft Entra Domain Services environment"
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit

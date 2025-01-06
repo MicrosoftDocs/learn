@@ -2,9 +2,11 @@
 uid: learn.wwl.design-solution-to-log-monitor-azure-resources.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 12/05/2024
+  ms.date: 01/06/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
