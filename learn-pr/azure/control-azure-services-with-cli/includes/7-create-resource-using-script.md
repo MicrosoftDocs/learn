@@ -5,7 +5,7 @@ Organizations prefer to automate these tasks to reduce costs and avoid mistakes.
 
 Automation is essential in the Customer Relationship Management (CRM) example where you're testing
 your software on multiple Linux virtual machines. These machines might need to be continuously deleted and
-re-created. Using a PowerShell script to automate VM creation is much more efficient and reliable
+re-created. Using an Azure CLI script to automate VM creation is much more efficient and reliable
 than manually creating them each time.
 
 Beyond the core operation of creating a VM, your script needs to meet a few other requirements:
@@ -24,16 +24,6 @@ parameters, comments, etc. supplied by Bash.
 
 Azure CLI Bash script files have a `.sh` file extension. You can create and save these files using any
 text editor.
-
-> [!TIP]
-> If you're writing Azure CLI scripts, consider using Visual Studio Code (VS Code), which is free
-> and supported on Windows, Linux, and macOS. The `Azure CLI tools` extension for VS Code offers features
-> like syntax highlighting and a list of available commands.
-
-The following screenshot is an example of VS Code with a sample script to connect to Azure and
-create a virtual machine:
-
-![Screenshot of VS Code with a PowerShell script to create a virtual machine in Azure.](../media/7-vs-code-azure-cli-extension-screenshot.png)
 
 Once you create a script, you can execute it from the command line by passing the name of
 the file. Precede the file name with a dot for the current directory and a backslash:
@@ -109,7 +99,7 @@ loop 3 for msdocs
 You can use parameters as input and a loop to create a set of VMs based on the given
 parameters. This approach keeps the script generic and avoids repeating the same code.
 
-### Create an Azure CLI script
+## Example script
 
 Here's an example script that demonstrates using variables, loops, and parameters to create multiple
 VMs:
