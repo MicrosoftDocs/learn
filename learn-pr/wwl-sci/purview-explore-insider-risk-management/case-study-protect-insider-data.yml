@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-explore-insider-risk-management.case-study-protect-insider-data
+title: 'Case study: Protect sensitive data with Insider Risk Management'
+metadata:
+  title: 'Case study: Protect sensitive data with Insider Risk Management'
+  description: "Case study: Protect sensitive data with Insider Risk Management"
+  ms.date: 1/3/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/case-study-protect-insider-data.md)]
