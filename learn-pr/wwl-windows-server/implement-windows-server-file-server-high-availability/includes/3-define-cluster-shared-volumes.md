@@ -2,7 +2,7 @@ To accommodate a wide range of high availability scenarios, clustering technolog
 
 ## What are Cluster Shared Volumes?
 
-CSV is a general-purpose clustered file system (referred to as CSVFS) that enables cluster nodes to simultaneously read from and write to the same set of NT file system (NTFS) or Resilient File System (ReFs) volumes. CSV maps the volumes hosted on disks connected to cluster nodes to the C:\ClusterStorage\ directory on each cluster node. This approach provides a single namespace, with all CSV content available via the same name and path on any node in a cluster.
+CSV is a general-purpose clustered file system (referred to as CSVFS) that enables cluster nodes to simultaneously read from and write to the same set of NT file system (NTFS) or Resilient File System (ReFS) volumes. CSV maps the volumes hosted on disks connected to cluster nodes to the C:\ClusterStorage\ directory on each cluster node. This approach provides a single namespace, with all CSV content available via the same name and path on any node in a cluster.
 
 :::image type="content" source="../media/m30-csv-architecture-1.png" alt-text="The correlation between the storage pool, CSVs, and C:\ClusterStorage\ file system directories." border="false":::
 
@@ -26,7 +26,7 @@ CSV allows you to store disk files of multiple VMs on a single volume and run th
 
 While each node can independently read from and write to individual files on the volume, a single node functions as the CSV owner (or, *coordinator*) of the volume. That node hosts the mount of the volume. You have the option of assigning an individual volume to a specific owner, however, a failover cluster automatically distributes CSV ownership between cluster nodes. The distribution mechanism considers the number of CSVs that each node owns. The cluster service rebalances the ownership following such changes as adding, removing, or restarting a node.
 
-When changes to file system metadata take place on a CSV volume, the owner is responsible for implementing them and managing their orchestration, synchronizing them across all cluster nodes with access to that volume. Such changes include, for example, starting, creating, migrating, or deleting VM disk files which reside on the volume. Metadata updates don't involve direct communication from non-owner cluster nodes to the shared storage hosting the volume.
+When changes to file system metadata take place on a CSV volume, the owner is responsible for implementing them and managing their orchestration, synchronizing them across all cluster nodes with access to that volume. Such changes include, for example, starting, creating, migrating, or deleting VM disk files which reside on the volume. Metadata updates don't involve direct communication from nonowner cluster nodes to the shared storage hosting the volume.
 
 In contrast, standard write and read operations to open files on a CSV volume don't affect metadata. Effectively, each cluster node with direct connectivity to the underlying storage can perform them independently, without relying on the CSV owner of that volume. Such operations, unlike metadata updates, constitute most of the storage activity.
 
@@ -36,7 +36,7 @@ The owner node also minimizes negative impact of storage connectivity failures a
 
 To use CSV, your storage and disks must satisfy the following requirements:
 
-- File system format and disk configuration. A disk or storage space for a CSV volume must use a basic disk in either NTFS of ReFs format. When using storage spaces, you can configure a simple space, a mirror space, or a parity space.
+- File system format and disk configuration. A disk or storage space for a CSV volume must use a basic disk in either NTFS of ReFS format. When using storage spaces, you can configure a simple space, a mirror space, or a parity space.
 - Physical Disk cluster resources. CSV volume relies on the Physical Disk resource type. To create Physical Disk resource type, you need to add a disk or storage space to cluster storage.
 
 Additional planning considerations include:

@@ -4,7 +4,7 @@ title: Implement Azure Firewall and Windows IaaS VMs
 metadata:
   title: Implement Azure Firewall and Windows IaaS VMs
   description: "Implement Azure Firewall and Windows IaaS VMs"
-  ms.date: 09/25/2020
+  ms.date: 12/24/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "Application rules."
       isCorrect: true
-      explanation: "That's correct. Application rules configure FQDNs that can be accessed from a subnet."
+      explanation: "Correct. Application rules configure FQDNs that can be accessed from a subnet."
     - content: "Network rules."
       isCorrect: false
-      explanation: "That's incorrect. Network rules contain source addresses, protocols, destination ports, and destination addresses as a means to control the flow of network traffic."
+      explanation: "Incorrect. Network rules contain source addresses, protocols, destination ports, and destination addresses as a means to control the flow of network traffic."
     - content: "NAT rules."
       isCorrect: false
-      explanation: "That's incorrect. You use NAT rules to configure DNAT rules to allow incoming Internet connections."
+      explanation: "Incorrect. You use NAT rules to configure DNAT rules to allow incoming Internet connections."

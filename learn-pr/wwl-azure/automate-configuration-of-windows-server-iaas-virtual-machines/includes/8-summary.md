@@ -1,6 +1,4 @@
 
-
-
 The Contoso IT Engineering team wanted you to consider using Azure Automation to automate the configuration of Windows Server IaaS VMs and detect configuration drift for those VMs. They also wanted you to research the steps you can take to remediate the configuration of those VMs.
 
 In this module, you've discovered that *Azure Automation* is an Azure service that provides the ability to automate frequent, time-consuming, and error-prone administrative tasks. You've also discovered that an Automation runbook represents a collection of tasks that perform a custom process, and that Runbooks can execute scripts and workflows either on demand or according to an arbitrary schedule.
@@ -16,3 +14,6 @@ You can learn more by reviewing the following documents:
 - [Introduction to the Azure Desired State Configuration extension handler](https://aka.ms/dsc-overview?azure-portal=true).
 - [Tutorial - Deploy applications to a Windows virtual machine in Azure with the Custom Script Extension](https://aka.ms/tutorial-automate-vm-deployment?azure-portal=true).
 - [Remediate noncompliant Azure Automation State Configuration servers](https://aka.ms/dsc-remediate?azure-portal=true).
+
+> [!NOTE]
+> Azure Machine Configuration is a replacement service combines features of the DSC extension handler, Azure Automation State Configuration, and incorporates commonly requested features based on customer feedback. Azure Machine Configuration is currently in preview. Azure Automation State Configuration is still available and will be retired on September 30, 2027.

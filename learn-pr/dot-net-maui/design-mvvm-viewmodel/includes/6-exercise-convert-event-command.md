@@ -2,12 +2,7 @@ In this exercise, swap back to the "movie list" app you worked with in the previ
 
 ## Download and run the sample
 
-[!include[](../../../includes/android-windows-path-length-warning-maui.md)]
-
-To start this exercise module, download the [Movie List Sample](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-mvvm1/raw/main/part6-exercise-start.zip) project. This project displays a list of movies. Clicking on a movie navigates to a detail page with more information about the movie.
-
-1.  Download and extract the [Movie List Sample](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-mvvm1/raw/main/part6-exercise-start.zip) project to a temporary folder.
-1.  Navigate to the _part6-exercise2_ folder and open the _MovieCatalog.sln_ solution.
+1.  Navigate to the _part6-exercise2_ folder and open the _MovieCatalog.sln_ solution in Visual Studio or the folder in Visual Studio Code..
 1.  Build and run the project to make sure it works. On the screen displayed, you'll see a list of movies. Right-click on one of the movies listed and the app navigates to a detail page.
 
 ## Examine the code

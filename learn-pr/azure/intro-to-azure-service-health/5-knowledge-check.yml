@@ -8,8 +8,8 @@ metadata:
   title: Knowledge check
   description: "Knowledge check for intro to Azure Service Health."
   ms.date: 02/26/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 5
 content: |
