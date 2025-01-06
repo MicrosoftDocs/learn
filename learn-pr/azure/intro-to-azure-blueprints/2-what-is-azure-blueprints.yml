@@ -8,8 +8,8 @@ metadata:
   title: What is Azure Blueprints?
   description: Learn about the Azure Blueprints service and what can it be used for.
   ms.date: 1/2/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 1
 content: |
