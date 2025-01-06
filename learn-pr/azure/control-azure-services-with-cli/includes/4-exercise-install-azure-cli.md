@@ -5,8 +5,8 @@ and how to install the latest version.
 
 > [!NOTE]
 > This exercise guides you through creating a local installation of Azure CLI.
-> However, the remainder of this module uses Azure Cloud Shell to leverage the free Microsoft Learn
-> sandbox environment. If you prefer, you can consider this exercise optional and simply review the
+> However, the remainder of this module uses Azure Cloud Shell to use the free Microsoft Learn
+> sandbox environment. If you prefer, you can consider this exercise optional and only review the
 > instructions.
 
 ::: zone pivot="windows"
