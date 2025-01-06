@@ -4412,6 +4412,11 @@ achievements:
   title: Configure virtual machines
   summary: Learn how to configure virtual machines including sizing, storage, and connections.
   iconUrl: /training/achievements/virtual-machines-configure.svg
+- uid: learn.choose-azure-service-to-integrate-and-automate-business-processes.badge
+  type: badge
+  title: Choose the best Azure service to automate your business processes
+  summary: In this module, we discuss how to choose the appropriate Azure service to integrate and automate business processes.
+  iconUrl: /training/achievements/choose-azure-service-to-integrate-and-automate-business-processes.svg
 - uid: learn.pytorch.intro-machine-learning.badge
   type: badge
   title: Introduction to PyTorch
@@ -4457,3 +4462,76 @@ achievements:
   title: Get started with testing in Python
   summary: Start testing with Python using the unittest module. Get exposed to other testing concepts like functional and integration testing.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.languages.python-apps.trophy
+  type: trophy
+  title: Build real world applications with Python
+  summary: Interested in learning how to build apps in Python that scales and that you want to maintain? Then this is the path for you. It will take you through basics of the language but also teach you various patterns you can use.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.student-evangelism.intro-to-python.badge
+  type: badge
+  title: Introduction to Python
+  summary: Learn how to write a few lines of Python code, declare variables, and work with console input and output.
+  iconUrl: /training/achievements/intro-to-python.svg
+- uid: learn.student-evangelism.python-object-oriented-programming.badge
+  type: badge
+  title: Introduction to object-oriented programming with Python
+  summary: This module will teach you how to model problems by using object-oriented programming (OOP) concepts. You'll also learn to turn your model into working code by using OOP concepts like classes, attributes, and methods.
+  iconUrl: /training/achievements/student-evangelism/python-object-oriented-programming-badge.svg
+- uid: learn.python-partnership.personality-quiz.badge
+  type: badge
+  title: What is your super sleuth personality?
+  summary: What is your super sleuth personality? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
+  iconUrl: /training/achievements/python-partnership/personality-quiz-revised.svg
+- uid: learn.python-partnership.secret-message.badge
+  type: badge
+  title: Crack the code and reveal a secret with Python and Visual Studio Code
+  summary: You're handed a secret message that needs a code cracker to find the truth. Learn how to solve the code mystery to reveal a location and date to find a hidden treasure. Get a glimpse into the popular Python programming language with this introductory lesson that requires no coding experience.
+  iconUrl: /training/achievements/python-partnership/secret-message-revised.svg
+- uid: learn.python-partnership.trophy
+  type: trophy
+  title: Use Python basics to solve mysteries and find answers
+  summary: You are a novice but dedicated sleuth, and you enjoy solving mysteries. Harness the power of Python and Visual Studio Code to find solutions programmatically and resolve intrigue.
+  iconUrl: /training/achievements/python-partnership.svg
+- uid: learn.languages.python-install-vscode.badge
+  type: badge
+  title: Install and configure Visual Studio Code for Python development
+  summary: Install and configure Visual Studio Code to create a development environment for learning to build Python applications.
+  iconUrl: /training/achievements/python-install-vscode.svg
+- uid: learn.chat-completions-badge
+  type: badge
+  title: Introduction to chat completion
+  summary: This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Studio playground.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.student-evangelism.predict-meteor-showers-using-python.badge
+  type: badge
+  title: Predict meteor showers by using Python and Visual Studio Code
+  summary: Learn how to use concepts from machine learning to predict the occurrence of meteor showers (or Moon Goddess tears).
+  iconUrl: /training/achievements/student-evangelism/predict-meteor-showers-using-python.svg
+- uid: learn.student-evangelism.train-custom-vision-ai.badge
+  type: badge
+  title: Use AI to recognize objects in images by using the Custom Vision service
+  summary: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
+  iconUrl: /training/achievements/student-evangelism/train-custom-vision-ai.svg
+- uid: learn.explore-space-using-python.trophy
+  type: trophy
+  title: Explore space with Python and Visual Studio Code; inspired by Netflix's Over the Moon
+  summary: This *Over the Moon* - inspired learning path aims to equip you with data science, artificial intelligence, and coding strategies to discover the technology used in space exploration.
+  iconUrl: /training/achievements/explore-space-using-python.svg
+- uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.badge
+  type: badge
+  title: Plan a Moon mission by using Python pandas
+  summary: Like Fei Fei, use data to plan your own mission to the Moon. Ensure that your rocket can not only get you there, but also bring you and all your Moon rocks safely back to Earth.
+  iconUrl: /training/achievements/student-evangelism/plan-moon-mission-using-python-pandas.svg
+- uid: learn.wwl.implement-advanced-data-visualization-techniques.trophy
+  type: trophy
+  title: Implement advanced data visualization techniques by using Power BI
+  summary: >-
+    This learning path takes analysts through visualizing data in Power BI. You'll learn about visuals in Power BI reports, using Power BI to visualize real-time data, and visualizing data in paginated reports.
+  
+    This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).
+  iconUrl: /training/achievements/implement-advanced-data-visualization-techniques.svg
+- uid: learn.wwl.understand-advanced-data-visualization-concepts.badge
+  type: badge
+  title: Understand advanced data visualization concepts
+  summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
+  iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
