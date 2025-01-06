@@ -2,6 +2,8 @@ AI is the defining technology of our time. It's already enabling faster and more
 
 At Microsoft, we believe that the computational intelligence of AI should be used to amplify the innate creativity and ingenuity of humans. Our vision for AI is to empower every developer to innovate, empower organizations to transform industries, and empower people to transform society.
 
+![Photograph showing people sitting around a conference table having a discussion.](../media/table-discussion.jpg)
+
 ## Societal implications of AI
 
 As with all great technological innovations in the past, the use of AI technology has broad impacts on society, raising complex and challenging questions about the future we want to see. AI has implications on decision-making across industries, data security and privacy, and the skills people need to succeed in the workplace. As we look to this future, we must ask ourselves: 
@@ -16,7 +18,7 @@ It's important to recognize that as new intelligent technology emerges and proli
 
 ### Threats
 
-Each breakthrough in AI technologies brings a new reminder of our shared responsibility. For example, in 2016, Microsoft released a chatbot on X called Tay, which could learn from interactions with X users. The goal was to enable the chatbot to better replicate human communication and personality traits. However, within 24 hours, users realized that the chatbot could learn from bigoted rhetoric, and turned the chatbot into a vehicle for hate speech. This experience is one example of why we must consider human threats when designing AI systems.
+Each breakthrough in AI technologies brings a new reminder of our shared responsibility. For example, in 2016, Microsoft released a chatbot on Twitter called Tay, which could learn from interactions with Twitter users. The goal was to enable the chatbot to better replicate human communication and personality traits. However, within 24 hours, users realized that the chatbot could learn from bigoted rhetoric, and turned the chatbot into a vehicle for hate speech. This experience is one example of why we must consider human threats when designing AI systems.
 
 Novel threats require a constant evolution in our approach to responsible AI. For example, because generative AI enables people to create or edit videos, images, or audio files so credibly that they look real, media authenticity is harder to verify. In response, Microsoft is teaming with other technology and news stakeholders to develop technical standards to address deepfake-related manipulation.  
 
