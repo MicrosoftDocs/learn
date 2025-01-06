@@ -60,7 +60,7 @@ When Contoso IT staff enable pass-through authentication on their Microsoft 365 
 3. The Authentication Agent validates the username and password against the local AD DS by using standard Windows APIs. At this point, this mechanism is similar to what AD FS uses. A username can be either the on-premises default username, usually `userPrincipalName`, or another attribute configured in Microsoft Entra Connect, known as *Alternate ID*.
 4. The on-premises AD DS evaluates the request and returns the appropriate response to the Authentication Agent: success, failure, password expired, or user locked out.
 5. After it receives the response from AD DS, the Authentication Agent returns this response to Microsoft Entra ID.
-6. Microsoft Entra ID evaluates the response and responds to the user as appropriate. For example, Microsoft Entra ID either signs in the user immediately, or requests MultiFactor Authentication. If the user sign-in is successful, the user can access the application.
+6. Microsoft Entra ID evaluates the response and responds to the user as appropriate. For example, Microsoft Entra ID either signs in the user immediately, or requests multifactor authentication. If the user sign-in is successful, the user can access the application.
 
 > [!NOTE]
 > You can consider deploying Microsoft Entra seamless SSO together with pass-through authentication to make the user experience even better when accessing cloud-based resources from domain-joined computers. When you deploy this feature, your users can access cloud resources without signing in if they are already signed in on their corporate domain-joined computers with their domain credentials.
