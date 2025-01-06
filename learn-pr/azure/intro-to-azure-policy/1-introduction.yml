@@ -8,8 +8,8 @@ metadata:
   title: Introduction
   description: "Introduction to Azure Policy."
   ms.date: 07/19/2024
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 1
 content: |

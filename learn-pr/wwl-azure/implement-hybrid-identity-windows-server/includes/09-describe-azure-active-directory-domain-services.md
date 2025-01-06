@@ -1,15 +1,11 @@
-
-
-The Contoso IT team deploys a number of line-of-business (LOB) applications on computers and devices that are domain members. Contoso uses AD DS–based credentials for authentication, and GPOs to manage those devices and apps. Now they are considering moving these apps to run in Azure. A key issue for you is how to provide authentication services to these apps.
+The Contoso IT team deploys a number of line-of-business (LOB) applications on computers and devices that are domain members. Contoso uses AD DS–based credentials for authentication, and GPOs to manage those devices and apps. Now they're considering moving these apps to run in Azure. A key issue for you is how to provide authentication services to these apps.
 
 To satisfy this need, the Contoso IT team can choose to:
 
 - Implement a site-to-site virtual private network (VPN) between your local infrastructure and the Azure IaaS.
 - Deploy replica domain controllers from your local AD DS as VMs in Azure.
 
-However, these approaches can entail additional costs and administrative effort. Also, the difference between these two approaches is that with the first option, authentication traffic will cross the VPN; in the second option, replication traffic will cross the VPN and authentication traffic remains in the cloud. Microsoft provides Microsoft Entra Domain Services as an alternative to these approaches.
-
-<a name='what-is-azure-ad-ds'></a>
+However, these approaches can entail additional costs and administrative effort. Also, the difference between these two approaches is that with the first option, authentication traffic crosses the VPN; in the second option, replication traffic crosses the VPN and authentication traffic remains in the cloud. Microsoft provides Microsoft Entra Domain Services as an alternative to these approaches.
 
 ## What is Microsoft Entra Domain Services?
 
@@ -29,9 +25,9 @@ If you choose to implement Microsoft Entra Domain Services, you must understand 
 
 - Only the base computer Active Directory object is supported.
 - It's not possible to extend the schema for the Microsoft Entra Domain Services domain.
-- The OU structure is flat, and nested OUs are not currently supported.
-- There is a built-in GPO, which exists for computer and user accounts.
-- It's not possible to target OUs with built-in GPOs. Additionally, you cannot use Windows Management Instrumentation (WMI) filters or security-group filtering.
+- The OU structure is flat, and nested OUs aren't currently supported.
+- There's a built-in GPO, which exists for computer and user accounts.
+- It's not possible to target OUs with built-in GPOs. Additionally, you can't use Windows Management Instrumentation (WMI) filters or security-group filtering.
 
 By using Microsoft Entra Domain Services, you can freely migrate applications that use LDAP, NT LAN Manager (NTLM), or the Kerberos protocols from your on-premises infrastructure to the cloud. You can also use applications such as Microsoft SQL Server or SharePoint Server on VMs, or deploy them in Azure IaaS. All this without needing domain controllers in the cloud or a VPN to local infrastructure.
 The following table identifies some common scenarios that utilize Microsoft Entra Domain Services.
