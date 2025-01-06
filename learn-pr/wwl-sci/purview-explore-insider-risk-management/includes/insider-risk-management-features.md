@@ -17,7 +17,7 @@ Policies ensure that Insider Risk Management focuses on the most relevant risks 
 
 Insider Risk Management uses signals, which are data points from user activities from Microsoft 365, Microsoft Defender, and other integrated tools to identify activities that might indicate risks. These signals provide the data needed to analyze user actions and determine whether they align with policy criteria.
 
-Examples of signals include:
+**Examples of signals include**:
 
 - Unusual file downloads or transfers.
 - Patterns of communication that might indicate sensitive information sharing.
@@ -33,25 +33,21 @@ Analytics help organizations identify areas of higher user risk before implement
 
 Microsoft Purview Insider Risk Management offers dashboards that provide a high-level view of risk activities, policies, alerts, and cases.
 
-Key dashboards:
+**Key dashboards**:
 
-- **Alerts dashboard**: A tool that helps reviewers prioritize risks by showing the severity, status, and type of activities flagged by policies. This ensures that the most urgent risks are addressed first.
+- **Alerts dashboard**: Helps reviewers prioritize risks by displaying the severity, status, and type of activities flagged by policies. It highlights critical alerts, enabling quick action on high-priority risks.
 
    :::image type="content" source="../media/insider-risk-alerts-dashboard.png" alt-text="Screenshot showing the alerts dashboard in Insider Risk Management." lightbox="../media/insider-risk-alerts-dashboard.png":::
 
-- **Cases dashboard**: Tracks investigations, highlighting progress, timelines, and outcomes. This helps administrators manage multiple cases efficiently and ensures timely resolution.
+- **Cases dashboard**: Tracks investigations with details on progress, timelines, and outcomes. It streamlines case management to support efficient and timely resolution.
 
-   :::image type="content" source="../media/insider-risk-cases-dashboard.png" alt-text="Screenshot showing the cases dashboard in Insider Risk Management." lightbox="../media/insider-risk-cases-dashboard.png":::
-
-The Alerts Dashboard reduces manual effort by surfacing the most critical alerts first, helping reviewers focus on high-priority risks. The Cases Dashboard tracks progress and outcomes for ongoing investigations, ensuring timely resolution and efficient case management.
-
-Dashboards highlight alerts and cases that require attention, and investigators can use tools like **Content explorer** and **User activity reports** to dig deeper into flagged activities.
+Together, these dashboards provide a centralized view of alerts and investigations, helping organizations respond to insider risks quickly and effectively. Investigators can use tools like **Content explorer** and **User activity reports** to dig deeper into flagged activities.
 
 ## Investigative tools
 
 When an alert requires further review, Microsoft Purview provides tools to help administrators and investigators understand risky activities in detail. These tools are designed to provide the necessary context for identifying whether an activity truly poses a risk and to support decision-making during investigations.
 
-Key features for investigations:
+**Key features for investigations**:
 
 - **User activity reports (preview)**: Allow investigators to view detailed records of a user's actions over a specific time period. For example, these reports can highlight unusual activity such as multiple file downloads in a short timeframe, helping investigators assess whether the behavior aligns with a policy violation.
 
@@ -65,7 +61,7 @@ Together, these tools ensure investigators have a complete picture of risky acti
 
 Not every risk requires punitive action. Microsoft Purview includes tools for guiding users toward better practices.
 
-Tools for addressing risks:
+**Tools for addressing risks**:
 
 - **Notice templates**: Send customized messages to users as reminders of compliance policies or as corrective guidance.
 - **Integrated escalation**: Serious risks can be escalated to tools like eDiscovery (Premium) for further review.
