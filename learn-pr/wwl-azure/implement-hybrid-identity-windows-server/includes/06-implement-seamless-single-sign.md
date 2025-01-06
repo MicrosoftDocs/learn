@@ -1,5 +1,3 @@
-
-
 The Contoso IT team wants a way to enable users to use SSO to access both on-premises resources and resources in Azure. Microsoft Entra seamless SSO is a technology that works with Password Hash Synchronization or Pass-through Authentication. 
 
 Additionally, when Seamless SSO is enabled, users rarely need to type in their usernames, and never their passwords to sign in to Microsoft Entra ID. This feature provides Contoso's users with easy access to their cloud-based applications without requiring any additional on-premises components.
@@ -8,30 +6,24 @@ Additionally, when Seamless SSO is enabled, users rarely need to type in their u
 
 Microsoft Entra pass-through authentication helps ensure that services which rely on Microsoft Entra ID always validate passwords against an on-premises AD DS instance.
 
-![A screenshot of the Microsoft Entra Connect Configuration Wizard, User Sign-In page. The administrator has selected Pass-through authentication and also the Enable single sign-on check box.](../media/m12-active-directory-connect-4.png)
-
 You can configure Microsoft Entra pass-through authentication by using Microsoft Entra Connect, which uses an on-premises agent that listens for external password validation requests. You can deploy this agent to one or more servers to provide high availability. It's not necessary to deploy this server to a perimeter network because all communication is outbound only.
 
-You should join a server that runs the pass-through authentication agent to the AD DS domain where users are located. Before you deploy Microsoft Entra pass-through authentication, you should know which authentication scenarios are supported and which are not.
+You should join a server that runs the pass-through authentication agent to the AD DS domain where users are located. Before you deploy Microsoft Entra pass-through authentication, you should know which authentication scenarios are supported and which aren't.
 
 You can use pass-through authentication for the following authentication scenarios:
 
 - User sign-ins to all web browser–based applications supported by Microsoft Entra ID.
 - User sign-ins to Office applications that support modern authentication. 
-
-  > [!NOTE]
-  > These Office apps include Office 2019, Office 2016, and Office 2013 with modern authentication.
-
 - User sign-ins to Microsoft Outlook clients by using legacy protocols, such as Exchange ActiveSync, Simple Mail Transfer Protocol (SMTP), Post Office Protocol (POP), and Internet Message Access Protocol (IMAP).
 - User sign-ins to Skype for Business application that supports modern authentication, including online and hybrid topologies.
 - Microsoft Entra domain joins for Windows 10 devices.
-- App passwords for multi-factor authentication.
+- App passwords for multifactor authentication.
 
 ## Unsupported scenarios for pass-through authentication
 
 Although pass-through authentication supports most common authentication scenarios, there are still some scenarios in which you can’t use this method. These scenarios include:
 
-- User sign-ins to legacy Office client applications, excluding Outlook. 
+- User sign-ins to legacy Office client applications, excluding Outlook.
 
   > [!NOTE]
   > These legacy client apps include Office 2010 and Office 2013 without modern authentication.
@@ -41,21 +33,19 @@ Although pass-through authentication supports most common authentication scenari
 - User sign-ins to Windows PowerShell version 1.0.
 - Detection of users with leaked credentials.
 - Scenarios that require Microsoft Entra Domain Services. Microsoft Entra Domain Services requires tenants to have password hash synchronization enabled, so tenants that use only pass-through authentication won’t work in these scenarios.
-- Scenarios that require Microsoft Entra Connect Health. Pass-through authentication is not integrated with Microsoft Entra Connect Health.
+- Scenarios that require Microsoft Entra Connect Health. Pass-through authentication isn't integrated with Microsoft Entra Connect Health.
 - If you use the Apple Device Enrollment Program (Apple DEP) that uses the iOS Setup Assistant, then you can’t use modern authentication as it isn't supported. It will fail to enroll Apple DEP devices into Intune for managed domains that use pass-through authentication. Consider using the Intune Company Portal app as an alternative.
 
 ## How pass-through authentication works
 
-Before you deploy pass-through authentication, you should understand how it works and how this method of authentication differs from AD FS. Pass-through authentication is not just a simpler form of AD FS authentication. Both methods use the on-premises infrastructure to authenticate users when accessing resources such as Microsoft 365, but not in the same way.
-
-![A screenshot of the Microsoft Entra Connect Configuration Wizard, Configure page. The wizard is ready to configure the following settings: install the Microsoft Entra Connect Authentication Agent for pass-through authentication, enable pass-through authentication, enable managed authentication in Azure, enable SSO, and enable password hash synchronization. The administrator has selected the Start the synchronization process when configuration completes check box. ](../media/m12-active-directory-connect-5.png)
+Before you deploy pass-through authentication, you should understand how it works and how this method of authentication differs from AD FS. Pass-through authentication isn't just a simpler form of AD FS authentication. Both methods use the on-premises infrastructure to authenticate users when accessing resources such as Microsoft 365, but not in the same way.
 
 Pass-through authentication uses a component called Authentication Agent to authenticate users. Microsoft Entra Connect installs the Authentication Agent during configuration.
 
 After installation, the Authentication Agent registers itself in your Microsoft 365 tenant’s Microsoft Entra ID. During registration, Microsoft Entra ID assigns the Authentication Agent a unique digital-identity certificate. This certificate (with a key pair) enables secure communication with Microsoft Entra ID. The registration procedure also binds the Authentication Agent to your Microsoft Entra tenant.
 
   > [!NOTE]
-  > Authentication requests are not pushed to the Authentication Agent. Instead, during its initialization, the Authentication Agent connects to Microsoft Entra ID over port 443, an HTTPS channel that is secured by using mutual authentication. After establishing the connection, Microsoft Entra ID provides the Authentication Agent with access to the Azure Service Bus queue. From this queue, the Authentication Agent retrieves and manages password validation requests. Because of this, there is no inbound traffic, so it's not necessary to install the Authentication Agent in the perimeter network.
+  > Authentication requests aren't pushed to the Authentication Agent. Instead, during its initialization, the Authentication Agent connects to Microsoft Entra ID over port 443, an HTTPS channel that is secured by using mutual authentication. After establishing the connection, Microsoft Entra ID provides the Authentication Agent with access to the Azure Service Bus queue. From this queue, the Authentication Agent retrieves and manages password validation requests. Because of this, there is no inbound traffic, so it's not necessary to install the Authentication Agent in the perimeter network.
 
 ### Example
 
@@ -70,7 +60,7 @@ When Contoso IT staff enable pass-through authentication on their Microsoft 365 
 3. The Authentication Agent validates the username and password against the local AD DS by using standard Windows APIs. At this point, this mechanism is similar to what AD FS uses. A username can be either the on-premises default username, usually `userPrincipalName`, or another attribute configured in Microsoft Entra Connect, known as *Alternate ID*.
 4. The on-premises AD DS evaluates the request and returns the appropriate response to the Authentication Agent: success, failure, password expired, or user locked out.
 5. After it receives the response from AD DS, the Authentication Agent returns this response to Microsoft Entra ID.
-6. Microsoft Entra ID evaluates the response and responds to the user as appropriate. For example, Microsoft Entra ID either signs in the user immediately, or requests MultiFactor Authentication<!-- So far we've only used lowercase "multi-factor authentication." -->. If the user sign-in is successful, the user can access the application.
+6. Microsoft Entra ID evaluates the response and responds to the user as appropriate. For example, Microsoft Entra ID either signs in the user immediately, or requests multifactor authentication. If the user sign-in is successful, the user can access the application.
 
 > [!NOTE]
 > You can consider deploying Microsoft Entra seamless SSO together with pass-through authentication to make the user experience even better when accessing cloud-based resources from domain-joined computers. When you deploy this feature, your users can access cloud resources without signing in if they are already signed in on their corporate domain-joined computers with their domain credentials.
