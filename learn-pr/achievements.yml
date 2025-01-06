@@ -4452,6 +4452,16 @@ achievements:
   title: Refactor Node.js Express APIs into serverless Azure Functions APIs
   summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
   iconUrl: /training/achievements/shift-express-api-azure-functions.svg
+- uid: learn.student-evangelism.python-flask-build-ai-web-app.badge
+  type: badge
+  title: Build an AI web app by using Python and Flask
+  summary: Use Python, Flask, and Azure AI services to build a web app that incorporates AI.
+  iconUrl: /training/achievements/student-evangelism/python-flask-build-ai-web-app-badge.svg
+- uid: learn.python-get-started-testing.badge
+  type: badge
+  title: Get started with testing in Python
+  summary: Start testing with Python using the unittest module. Get exposed to other testing concepts like functional and integration testing.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn.languages.python-apps.trophy
   type: trophy
   title: Build real world applications with Python
