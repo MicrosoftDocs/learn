@@ -18,4 +18,4 @@ If Python has piqued your interest, you might want to check out the rest of the 
 
 After you complete this learning path, you can find other Learn modules to inspire your next steps on our [Student page](/training/roles/student?azure-portal=true). 
 
-We're here to guide you through new tech with modules that teach you how to [track global air quality with Azure Maps](/training/modules/azure-maps-track-air-pollution/?azure-portal=true) and [help remote farmers protect their crops by using text weather alerts from Azure Functions](/training/modules/send-crop-weather-alerts/?azure-portal=true). Learn new coding skills and solve engaging problems!
+We're here to guide you through new tech with modules that teach you how to [help remote farmers protect their crops by using text weather alerts from Azure Functions](/training/modules/send-crop-weather-alerts/?azure-portal=true). Learn new coding skills and solve engaging problems!

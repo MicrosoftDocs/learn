@@ -21,6 +21,4 @@ Now that you've decoded your first secret message, the natural next step is to d
 
 If Python has piqued your interest, check out the rest of the [Python for beginners](../../../paths/beginner-python/index.yml?azure-portal=true) learning path.
 
-After you complete this learning path, look for other Learn modules to continue your learning journey on our [Student page](/training/roles/student?azure-portal=true). 
-
-From [tracking global air quality with Azure Maps](/training/modules/azure-maps-track-air-pollution/?azure-portal=true) to [helping farmers protect their crops by using text weather alerts from Azure Functions](/training/modules/send-crop-weather-alerts/?azure-portal=true), we're here to guide you as you explore new technology, develop new coding skills, and solve challenging problems!
+After you complete this learning path, look for other Learn modules to continue your learning journey on our [Student page](/training/roles/student?azure-portal=true).
