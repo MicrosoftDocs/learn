@@ -29,7 +29,7 @@ After completing this module, you'll be able to:
 
 In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following:
 
-- Managing the Windows Server operating system (OS) and Windows Server workloads in an on-premises scenarios including AD DS, Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services.
+- Managing the Windows Server operating system (OS) and Windows Server workloads in on-premises scenarios including AD DS, Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services.
 - Common Windows Server management tools.
 - Core Microsoft compute, storage, networking, and virtualization technologies.
 - On-premises resiliency Windows Server–based compute and storage technologies.
