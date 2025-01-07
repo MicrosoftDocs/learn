@@ -4452,6 +4452,11 @@ achievements:
   title: Refactor Node.js Express APIs into serverless Azure Functions APIs
   summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
   iconUrl: /training/achievements/shift-express-api-azure-functions.svg
+- uid: learn.beginner-python.trophy
+  type: trophy
+  title: Python for beginners
+  summary: Get started with Python! Learn how to create programs and projects in Python. Work with strings, lists, loops, dictionaries, and functions.
+  iconUrl: /training/achievements/beginner-python.svg
 - uid: learn.student-evangelism.python-flask-build-ai-web-app.badge
   type: badge
   title: Build an AI web app by using Python and Flask
@@ -4472,6 +4477,11 @@ achievements:
   title: Introduction to Python
   summary: Learn how to write a few lines of Python code, declare variables, and work with console input and output.
   iconUrl: /training/achievements/intro-to-python.svg
+- uid: learn.beginner-python.create-run-program.badge
+  type: badge
+  title: Write your first Python programs
+  summary: In this module, you'll learn a variety of topics, like input and output to the console, variables and data types, and type conversion.
+  iconUrl: /training/achievements/python-create-run-program.svg
 - uid: learn.student-evangelism.python-object-oriented-programming.badge
   type: badge
   title: Introduction to object-oriented programming with Python
