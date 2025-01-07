@@ -4585,7 +4585,6 @@ achievements:
   title: Understand advanced data visualization concepts
   summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
   iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
-<<<<<<< HEAD
 - uid: learn.student-evangelism.basic-python-nasa.badge
   type: badge
   title: Write basic Python in Notebooks
@@ -4601,7 +4600,6 @@ achievements:
   title: Count the number of Moon rocks by type using Python
   summary: Use Python to make a simple program to count the number of each type of space rock.
   iconUrl: /training/achievements/student-evangelism/count-moon-rocks-python-nasa.svg
-=======
 - uid: learn.introduction-python-space-exploration-nasa.trophy
   type: trophy
   title: Discover the role of Python in space exploration
@@ -4622,4 +4620,3 @@ achievements:
   title: Monitor data in real-time with Power BI
   summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
   iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
->>>>>>> e4ff99fa15bd3ca4ff14bd1ea9ab2b0fa7a21a63
