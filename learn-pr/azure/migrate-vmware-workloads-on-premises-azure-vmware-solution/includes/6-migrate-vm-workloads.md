@@ -48,6 +48,14 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
 1. Verify migration has started.
 
+## Configure network extension
+
+Extend a network when you plan to vMotion virtual machines keeping the same IP addresses as the source vSphere environment.
+
+Use the following steps to extend a Network:
+
+1. From the HCX dashboard, to go **Services** > **Network Extension** > **Create a Network Extension**.
+
 
 
 
