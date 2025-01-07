@@ -37592,6 +37592,11 @@
       "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/3-set-up-automatic-page-refresh.md",
       "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/7-summary.md",
+      "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
+      "redirect_document_id": false
     }
   ]
 }
