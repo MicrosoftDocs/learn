@@ -2,10 +2,10 @@ AD DS and its related services form the foundation for enterprise networks that 
 
 AD DS includes both logical and physical components. You should understand how AD DS components work together so that you can manage your infrastructure efficiently. In addition, you can use AD DS options to perform actions such as:
 
- -  Installing, configuring, and updating apps.
- -  Managing the security infrastructure.
- -  Enabling Remote Access Service and DirectAccess.
- -  Issuing and managing digital certificates.
+- Installing, configuring, and updating apps.
+- Managing the security infrastructure.
+- Enabling Remote Access Service and DirectAccess.
+- Issuing and managing digital certificates.
 
 ## What are the logical components?
 
@@ -83,7 +83,6 @@ Physical components in AD DS are those objects that are tangible, or that descri
 
 :::image type="content" source="../media/m6-physical-7d5ab6d9.png" alt-text="A screenshot of Active Directory Sites and Services. The administrator has selected the Sites node. Displayed are two sites, Seattle and Vancouver. Also displayed are two subnets.":::
 
-
 The following table describes some of the physical components of AD DS.
 
 :::row:::
@@ -123,7 +122,7 @@ The following table describes some of the physical components of AD DS.
     Read-only domain controller (RODC)
   :::column-end:::
   :::column:::
-    An RODC is a special, read only installation of AD DS. RODCs are common in branch offices where physical security is not optimal, IT support is less advanced than in the main corporate centers, or line-of-business applications need to run on a domain controller.
+    An RODC is a special read only installation of AD DS. RODCs are common in branch offices where physical security isn't optimal, IT support is less advanced than in the main corporate centers, or line-of-business applications need to run on a domain controller.
   :::column-end:::
 :::row-end:::
 :::row:::

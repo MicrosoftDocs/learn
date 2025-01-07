@@ -51,17 +51,11 @@ The main steps in the process are:
     1. Create a single-domain AD DS forest that includes two domain member servers with four data disks each.
     1. Create a management workstation running Windows 10.
 1. On each domain member server, initialize the source and destination disks:
-    1. Create an ReFS-formatted volume on each disk and assign drive letters to each disk.
+    1. Create a ReFS-formatted volume on each disk and assign drive letters to each disk.
     1. On the domain member servers, use **Server Manager** to initialize the source and destination disks.
-    1. Create an ReFS-formatted volume on each disk and assign drive letters to each disk.
+    1. Create a ReFS-formatted volume on each disk and assign drive letters to each disk.
 1. Use **Windows PowerShell** to enable **CredSSP** on the two domain member servers.
 1. Use **Windows Admin Center** to configure **Storage Replica** between the two domain member servers.
 1. Use **Windows Admin Center** to validate the **Storage Replica** configuration.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Myb3]
-
----
-
-
-
----

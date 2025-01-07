@@ -38,8 +38,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 ## Learn more with self-paced training
 
-- Choose the [best Azure service to automate your business processes](/training/modules/choose-azure-service-to-integrate-and-automate-business-processes/).
-
 - Align [requirements with cloud types and service models in Azure](/training/modules/align-requirements-in-azure/).
 
 - Complete an [introduction to Azure Logic Apps](/training/modules/intro-to-logic-apps/).

@@ -7,8 +7,8 @@ metadata:
   title: Introduction to Azure Advisor
   description: Introduction to Azure Advisor and how to get recommendations for Azure services.
   ms.date: 03/08/2023
-  author: aortoll
-  ms.author: anortoll
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: module-standard-task-based
   ms.service: azure-advisor
 title: Introduction to Azure Advisor

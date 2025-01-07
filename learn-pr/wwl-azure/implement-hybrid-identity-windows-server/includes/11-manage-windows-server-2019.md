@@ -1,5 +1,3 @@
-
-
 Microsoft Entra Domain Services provides a managed domain for users, applications, and services to consume. This approach changes some of the available management tasks you can do, and what privileges you have within the managed domain. These tasks and permissions might differ from what you experience with a regular on-premises AD DS environment.
 
 > [!NOTE]
@@ -31,8 +29,6 @@ You manage Microsoft Entra Domain Services domains using the same administrative
 Common ADAC actions, such as resetting a user account password or managing group membership, are available. However, these actions only work for users and groups created directly in the Microsoft Entra Domain Services–managed domain. Identity information only synchronizes from Microsoft Entra ID to Microsoft Entra Domain Services; there's no writeback from Microsoft Entra Domain Services to Microsoft Entra ID. As a result, you can't change passwords or managed group membership for users synchronized from Microsoft Entra ID and have those changes synchronized back.
 
 You can also use the Active Directory module for Windows PowerShell, which is installed as part of the administrative tools, to manage common actions in your Microsoft Entra Domain Services managed domain.
-
-<a name='enable-user-accounts-for-azure-ad-ds'></a>
 
 ## Enable user accounts for Microsoft Entra Domain Services
 

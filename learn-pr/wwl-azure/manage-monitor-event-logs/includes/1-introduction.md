@@ -3,17 +3,13 @@ Event Viewer provides a convenient and accessible location for you to observe ev
 In this module, you will:
 
 - Learn how to access event information quickly and conveniently.
-
 - Learn how to interpret the data in the event log.
 
 ## Learning objectives
 
 - Describe event logs.
-
 - Use Server Manager and Windows Admin Center to review event logs.
-
 - Implement custom views.
-
 - Configure an event subscription.
 
 ## Prerequisites
@@ -21,8 +17,5 @@ In this module, you will:
 To get the best learning experience from this module, you should have:
 
 - Working knowledge of common Windows Server management tools.
-
 - Some experience of typical Windows Server workloads.
-
 - Basic knowledge of Windows PowerShell.
-
