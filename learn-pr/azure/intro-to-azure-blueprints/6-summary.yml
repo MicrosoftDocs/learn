@@ -8,8 +8,8 @@ metadata:
   title: Summary
   description: "Summary of Azure Blueprints and additional reading"
   ms.date: 1/2/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 1
 content: |

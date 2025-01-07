@@ -150,7 +150,7 @@ An event will trigger on all activity types for the event unless you specify the
 
 A workflow must have at least one *job*. A job is a section of the workflow associated with a *runner*. A runner can be GitHub-hosted or self-hosted, and the job can run on a machine or in a container. You'll specify the runner with the ```runs-on:``` attribute. Here, you're telling the workflow to run this job on ```ubuntu-latest```.
 
-Each job will have steps to complete. In our example, the step uses the action *actions/checkout@v1* to check out the repository. What's interesting is the ```uses: ./action-a``` value, which is the path to the container action that you build in an *action.yml* file. We looked at the contents of an *action.yml* file in the **What is GitHub Actions?** section.
+Each job will have steps to complete. In our example, the step uses the action *actions/checkout@v1* to check out the repository. What's interesting is the ```uses: ./action-a``` value, which is the path to the container action that you build in an *action.yml* file.
 
 The last part of this workflow file sets the `MY_NAME` variable value for this workflow. Recall the container action took an input called `MY_NAME`.
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-explore-insider-risk-management.insider-risk-management-features
+title: Microsoft Purview Insider Risk Management features
+metadata:
+  title: Microsoft Purview Insider Risk Management features
+  description: "Microsoft Purview Insider Risk Management features"
+  ms.date: 1/3/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/insider-risk-management-features.md)]
