@@ -37,7 +37,7 @@ quiz:
     - content: "8"
       isCorrect: false
       explanation: "For a minimum deployment, Azure VMware Solution requires fewer than eight nodes."
-    - content: "2"
+    - content: "3"
       isCorrect: true
       explanation: "For a minimum deployment, Azure VMware Solution requires three nodes."
 
