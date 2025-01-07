@@ -5,13 +5,9 @@ Event logs contain vast amounts of data and narrowing the set of events to just 
 Windows Server Event Viewer provides custom roles based on the installed server roles. For example, as displayed in the following screenshot, the Server Roles custom views displayed are:
 
 - Active Directory Certificate Services
-
 - Active Directory Domain Services
-
 - DHCP Server
-
 - DNS Server
-
 - Remote Desktop Services
 
 There's also an Administrative Events custom view.
@@ -27,14 +23,8 @@ Event Viewer allows you to filter specific events across multiple logs and displ
 You can filter custom views based on multiple criteria, including the:
 
 - Time that the event logged.
-
 - Event level, including errors or warnings.
-
 - Logs from which to include events.
-
 - Specific event IDs to include or exclude.
-
 - User context of the event.
-
 - Computer on which the event occurred.
-

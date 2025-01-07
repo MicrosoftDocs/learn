@@ -6,7 +6,7 @@ In this unit, you'll learn how to enable SSPR in Microsoft Entra ID.
 
 Before you start to configure SSPR, you need a:
 
-- **Microsoft Entra organization**: This organization must have at least a trial license enabled.
+- **Microsoft Entra organization**: This organization must have at least a P1 or P2 trial license enabled.
 - **Microsoft Entra account with Authentication Policy Administrator role**: You'll use this account to set up SSPR.
 - **Non-administrative user account**: You'll use this account to test SSPR. It's important that this account isn't an administrator, because Microsoft Entra imposes extra requirements on administrative accounts for SSPR. This user, and all user accounts, must have a valid license to use SSPR.
 - **Security group with which to test the configuration**: The non-administrative user account must be a member of this group. You'll use this security group to limit who you roll SSPR out to.
