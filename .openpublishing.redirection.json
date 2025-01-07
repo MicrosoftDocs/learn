@@ -37552,6 +37552,51 @@
       "source_path": "learn-pr/language/python-get-started-testing/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/index.md",
+      "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/4-create-real-time-dashboards.md",
+      "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/2-describe-power-bi-real-time.md",
+      "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/5a-exercise-monitor-data-real-time-power-bi.md",
+      "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/1-introduction.md",
+      "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/6-knowledge-check.md",
+      "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/5-set-up-auto-refresh-paginated-reports.md",
+      "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/3-set-up-automatic-page-refresh.md",
+      "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/7-summary.md",
+      "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
+      "redirect_document_id": false
     }
   ]
 }

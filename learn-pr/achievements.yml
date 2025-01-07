@@ -4535,3 +4535,8 @@ achievements:
   title: Understand advanced data visualization concepts
   summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
   iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
+- uid: learn.wwl.monitor-data-real-time-power-bi.badge
+  type: badge
+  title: Monitor data in real-time with Power BI
+  summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
+  iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
