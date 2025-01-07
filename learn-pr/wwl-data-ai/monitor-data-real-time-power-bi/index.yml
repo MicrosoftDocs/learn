@@ -31,7 +31,6 @@ subjects:
 units:
 - learn.wwl.monitor-data-real-time-power-bi.set-up-automatic-page-refresh
 - learn.wwl.monitor-data-real-time-power-bi.set-up-auto-refresh-paginated-reports
-- learn.wwl.monitor-data-real-time-power-bi.knowledge-check
 - learn.wwl.monitor-data-real-time-power-bi.summary
 badge:
   uid: learn.wwl.monitor-data-real-time-power-bi.badge
