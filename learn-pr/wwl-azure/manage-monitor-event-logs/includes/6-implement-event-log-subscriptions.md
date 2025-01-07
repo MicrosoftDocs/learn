@@ -1,4 +1,4 @@
-Event log subscriptions enables a single server to collect copies of events from multiple systems. Using the Windows Remote Management (WinRM) and Windows Event Collector services (Wecsvc), you can collect events in the event logs of a centralized server, where you can analyze them together with the event logs of other computers that are being collected on the same central server.
+Event log subscriptions enable a single server to collect copies of events from multiple systems. Using the Windows Remote Management (WinRM) and Windows Event Collector services (Wecsvc), you can collect events in the event logs of a centralized server, where you can analyze them together with the event logs of other computers that are being collected on the same central server.
 
 ## What are the subscriptions types?
 
@@ -17,17 +17,20 @@ To enable subscriptions, perform the following tasks:
 
 1. On each source computer, run the following command at an elevated Command Prompt to enable WinRM:
 
-    - winrm quickconfig
+```powershell
+   winrm quickconfig
+```
 
-    > [!TIP]
-    > Windows Server computers are already enabled for Windows Remote Management, so this step might not be necessary.
+> [!TIP]
+> Windows Server computers are already enabled for Windows Remote Management, so this step might not be necessary.
 
-1. On the collector computer, enter the following command at an elevated Command Prompt to enable Wecsvc:
+2. On the collector computer, enter the following command at an elevated Command Prompt to enable Wecsvc:
 
-    - wecutil qc
+```powershell
+   wecutil qc
+```
 
-1. Add the computer account of the collector computer to the local Event Log Readers group on each of the source computers.
+3. Add the computer account of the collector computer to the local Event Log Readers group on each of the source computers.
 
 > [!TIP]
 > You can also use the Event Monitor console and Group Policy to enable and configure event subscriptions.
-
