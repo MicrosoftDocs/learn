@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.purview-implement-insider-risk-management
+metadata:
+  title: 'Implement Microsoft Purview Insider Risk Management'
+  description: 'Implement Microsoft Purview Insider Risk Management to detect, investigate, and respond to internal risks while protecting data, ensuring compliance, and maintaining employee trust.'
+  ms.date: 1/3/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: 'Implement Microsoft Purview Insider Risk Management'
+prerequisites: |
+  - Familiarity with Microsoft Purview compliance solutions
+  - Basic understanding of data protection and security concepts
+summary: |
+  Implement Microsoft Purview Insider Risk Management to detect, investigate, and respond to internal risks while protecting data, ensuring compliance, and maintaining employee trust.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- risk-practitioner
+products:
+- microsoft-purview
+subjects:
+- security
+modules:
+- learn.wwl.purview-explore-insider-risk-management
+- learn.wwl.purview-prepare-insider-risk-management
+- learn.wwl.purview-create-manage-insider-risk-policy
+trophy:
+  uid: learn.wwl.purview-implement-insider-risk-management.trophy

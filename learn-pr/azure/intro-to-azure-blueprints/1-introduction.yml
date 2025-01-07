@@ -8,8 +8,8 @@ metadata:
   title: Introduction
   description: Learn how to use Azure Blueprints to implement governance for your organization.
   ms.date: 1/2/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 2
 content: |
