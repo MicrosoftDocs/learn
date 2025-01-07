@@ -37169,56 +37169,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/paths/implement-advanced-data-visualization-techniques/index.md",
-      "redirect_url": "/training/paths/build-power-bi-visuals-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/index.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/5-create-custom-visuals.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/2-create-import-custom-report-theme.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/4-design-configure-power-bi-reports-for-accessibility.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/3-enable-personalized-visuals-report.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/1-introduction.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/7-knowledge-check.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/6-review-report-performance-use-performance-analyzer.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/8-summary.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/paths/python-partnership/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
@@ -37990,6 +37940,166 @@
     },
     {
       "source_path": "learn-pr/language/python-error-handling/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-advanced-data-visualization-techniques/index.md",
+      "redirect_url": "/training/paths/build-power-bi-visuals-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/index.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/5-create-custom-visuals.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/2-create-import-custom-report-theme.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/4-design-configure-power-bi-reports-for-accessibility.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/3-enable-personalized-visuals-report.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/1-introduction.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/7-knowledge-check.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/6-review-report-performance-use-performance-analyzer.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/8-summary.md",
+      "redirect_url": "/power-bi/create-reports/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/introduction-python-space-exploration-nasa/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-python-nasa/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-python-nasa/2-artemis.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-python-nasa/3-artemis-continuation.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-python-nasa/4-nasa-stem.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-python-nasa/5-nasa-inspiration.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-python-nasa/6a-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-python-nasa/6-why-coding.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-python-nasa/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/introduction-python-nasa/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/install-code-tools-python-nasa/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/install-code-tools-python-nasa/2-about-programming-language.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/install-code-tools-python-nasa/3-visual-studio-code.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/install-code-tools-python-nasa/4-python.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/install-code-tools-python-nasa/5-install-vs-code.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/install-code-tools-python-nasa/6-install-vs-code-online.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/install-code-tools-python-nasa/7-install-python.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/install-code-tools-python-nasa/8-install-extensions.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/install-code-tools-python-nasa/9a-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/install-code-tools-python-nasa/9-create-jupyter-file.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/install-code-tools-python-nasa/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/install-code-tools-python-nasa/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
     }
