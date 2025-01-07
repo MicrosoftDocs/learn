@@ -4452,6 +4452,21 @@ achievements:
   title: Refactor Node.js Express APIs into serverless Azure Functions APIs
   summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
   iconUrl: /training/achievements/shift-express-api-azure-functions.svg
+- uid: learn.beginner-python.intro-python-lists.badge
+  type: badge
+  title: Introduction to lists in Python
+  summary: You'll often work with multiple values in a program. In Python, you can group data together by using lists. In this module, you'll learn how to use lists and what the most common tasks with lists are.
+  iconUrl: /training/achievements/intro-python-lists.svg
+- uid: learn.beginner-python.python-loops.badge
+  type: badge
+  title: Use 'while' and 'for' loops in Python
+  summary: With Python, you can use `while` loops to run the same task multiple times and `for` loops to loop once over list data. In this module, you'll learn about the two loop types and when to apply each.
+  iconUrl: /training/achievements/python-loops.svg
+- uid: learn.beginner-python.python-dictionaries.badge
+  type: badge
+  title: Manage data with Python dictionaries
+  summary: Python dictionaries allow you to model complex data. This module explores common scenarios where you could use dictionaries.
+  iconUrl: /training/achievements/python-dictionaries.svg
 - uid: learn.beginner-python.use-boolean-types.badge
   type: badge
   title: Use Boolean logic in Python
