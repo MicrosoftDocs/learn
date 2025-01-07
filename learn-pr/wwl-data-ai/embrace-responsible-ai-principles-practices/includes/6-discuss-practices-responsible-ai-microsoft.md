@@ -64,7 +64,7 @@ We expect every Microsoft employee to:
 * Contact their Responsible AI Champ when they need guidance on responsible AI.
 
 >[!TIP]
->Take a moment to identify challenges in establishing a system of responsible AI governance in your organization.
+>Take a moment to identify challenges in establishing a system of responsible AI governance in your organization. \
 >![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let's see this governance model in action in flagging and addressing sensitive use cases of AI.

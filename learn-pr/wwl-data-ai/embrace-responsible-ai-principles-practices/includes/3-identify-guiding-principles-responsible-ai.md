@@ -91,7 +91,7 @@ To ensure accountability in your AI system, you should:
 We recognize that every individual, company, and region has their own beliefs and standards that should be reflected in their AI journey. We share our perspective with you as you consider developing your own guiding principles.
 
 >[!TIP]
->Take a moment to brainstorm other examples for each of the responsible AI principles.
+>Take a moment to brainstorm other examples for each of the responsible AI principles. \
 >![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 These principles provide a general idea of what we should do when developing and using AI. However, they need to be reflected on a more practical level. Next, let's explore how these principles can be ensured with an AI governance system.
