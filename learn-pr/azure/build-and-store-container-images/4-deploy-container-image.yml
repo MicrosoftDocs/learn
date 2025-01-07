@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Deploy images from Azure Container Registry
   description: Deploy images from Azure Container Registry
-  ms.date: 11/09/2023
+  ms.date: 01/07/2025
   author: tejaswikolli
   ms.author: tejaswikolli
   ms.topic: unit
