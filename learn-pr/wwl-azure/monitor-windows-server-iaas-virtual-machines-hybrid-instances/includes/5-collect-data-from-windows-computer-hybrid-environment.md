@@ -1,4 +1,4 @@
-In this demonstration, you'll learn to:
+In this demonstration, learn to:
 
 - Create a workspace.
 - Install and validate the agent on Windows.
@@ -10,9 +10,3 @@ In this demonstration, you'll learn to:
 ## Next steps
 
 If you want to repeat these steps, [get a free trial Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). After completing the steps, delete any resource groups you created.
-
----
-
-
-
----
