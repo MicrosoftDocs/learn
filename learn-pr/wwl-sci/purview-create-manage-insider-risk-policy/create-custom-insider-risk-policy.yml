@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-create-manage-insider-risk-policy.create-custom-insider-risk-policy
+title: Create a custom Insider Risk Management policy
+metadata:
+  title: Create a custom Insider Risk Management policy
+  description: "Create a custom Insider Risk Management policy."
+  ms.date: 1/3/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/create-custom-insider-risk-policy.md)]
