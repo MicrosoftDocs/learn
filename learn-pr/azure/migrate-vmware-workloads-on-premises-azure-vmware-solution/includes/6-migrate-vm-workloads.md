@@ -31,3 +31,19 @@ One last thing to note is that taking snapshots of a VM during migration, either
 1. After the network configuration finishes, select **Validate** or **Go**. **Validate** ensures the settings are configured correctly. **Go** starts the migration.
 
 1. HCX Manager then migrates all VMs selected. If you see a warning or error when you validate, fix the configuration and select **Go** to start the migration again.
+
+### Steps to migrate virtual machines into Azure VMware Solution using Replication Assisted vMotion
+
+1. From the HCX dashboard on-premises, select **Services** > **migration**.
+
+    :::image type="content" source="../media/6-hcx-services-migration.png" alt-text="Screenshot shows where to start the migration process."lightbox="../media/6-hcx-services-migration.png":::
+
+1. Choose your VMs for Migration, then select **Add**.
+
+    :::image type="content" source="../media/6-hcx-migration-add-virtual-machines.png" alt-text="Screenshot shows where to select VMs for Migration and add them."lightbox="../media/6-hcx-migration-add-virtual-machines.png":::
+
+1. Configure the required fields then choose **Replicaton-Assisted vMotion**.
+
+
+
+
