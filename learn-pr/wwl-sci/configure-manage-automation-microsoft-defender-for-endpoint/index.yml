@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure and manage automation using Microsoft Defender for Endpoint
   description: "Configure and manage automation using Microsoft Defender for Endpoint"
-  ms.date: 11/28/2023
+  ms.date: 1/2/2025
   author: wwlpublish
   ms.author: kelawson
   ms.topic: module
@@ -26,9 +26,11 @@ roles:
 products:
 - m365
 - m365-security-center
-- windows-10
+- windows-11
 - windows-security
 - defender-endpoint
+- intune
+- entra-id
 subjects:
 - information-protection-governance
 - threat-protection

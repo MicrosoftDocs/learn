@@ -10,7 +10,6 @@ Select Save preferences.
 
 Use the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations.
 
-
 ### Automated investigation
 Turn on this feature to take advantage of the automated investigation and remediation features of the service. For more information, see Automated investigation.
 
@@ -25,7 +24,6 @@ Turn on this feature so that users with the appropriate permissions can start a 
 
 ### Live response for servers
 Turn on this feature so that users with the appropriate permissions can start a live response session on servers.
-
 
 ### Live response unsigned script execution
 Enabling this feature allows you to run unsigned scripts in a live response session.
@@ -67,8 +65,6 @@ After turning on this feature, you can block files via the Add Indicator tab on 
 Turning on this feature allows you to create indicators for IP addresses, domains, or URLs, which determine whether they'll be allowed or blocked based on your custom indicator list.
 
 To use this feature, devices must be running Windows 10 version 1709 or later, or Windows 11. They should also have network protection in block mode and version 4.18.1906.3 or later of the antimalware platform see KB 4052623.
-
-
 
 > [!NOTE]
 > Network protection leverages reputation services that process requests in locations that might be outside of the location you've selected for your Defender for Endpoint data.
@@ -114,14 +110,11 @@ To receive contextual device integration in Office 365 Threat Intelligence, you'
 ### Microsoft Threat Experts - Targeted Attack Notifications
  You can only use the experts-on-demand capability if you've applied for preview and your application has been approved. You can receive targeted attack notifications from Microsoft Threat Experts through your portal's alerts dashboard and via email if you configure it.
 
-
 ### Microsoft Defender for Cloud Apps
 Enabling this setting forwards Defender for Endpoint signals to Microsoft Defender for Cloud Apps to provide deeper visibility into cloud application usage. Forwarded data is stored and processed in the same location as your Defender for Cloud Apps data.
 
-
 ### Enable the Microsoft Defender for Endpoint integration from the Microsoft Defender for Identity portal
 To receive contextual device integration in Microsoft Defender for Identity, you'll also need to enable the feature in the Microsoft Defender for Identity portal.
-
 
 ### Web content filtering
 Block access to websites containing unwanted content and track web activity across all domains. To specify the web content categories you want to block, create a web content filtering policy. Ensure you've network protection in block mode when deploying the Microsoft Defender for Endpoint security baseline.
