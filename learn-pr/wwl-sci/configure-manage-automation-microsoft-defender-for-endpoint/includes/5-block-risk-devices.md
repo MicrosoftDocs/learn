@@ -80,7 +80,7 @@ Take the following steps to enable Conditional Access:
 
 1. Enter a policy Name, and select **Users or workload entities**. Use the Include or Exclude options to add your groups for the policy.
 
-1. In the **Cloud apps or actions** area choose which apps to protect. For example, choose Select apps, and select Office 365 SharePoint Online and Office 365 Exchange Online.
+1. In the Cloud apps or actions area, choose which apps to protect. For example, choose Select apps, and select Office 365 SharePoint Online and Office 365 Exchange Online.
 
 1. In the Conditions area, select to apply the policy to Client apps and browsers.  When complete select **done**.
 
@@ -88,4 +88,4 @@ Take the following steps to enable Conditional Access:
 
 1. Select **Enable policy** choice, and then **Create** to save your changes.
 
-For more information see [Use Defender for Endpoint to enforce device compliance with Microsoft Intune](/mem/intune/protect/advanced-threat-protection)
+For more information, see [Use Defender for Endpoint to enforce device compliance with Microsoft Intune](/mem/intune/protect/advanced-threat-protection)
