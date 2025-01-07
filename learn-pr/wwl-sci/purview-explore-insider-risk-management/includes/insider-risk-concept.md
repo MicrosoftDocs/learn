@@ -22,7 +22,7 @@ Understanding these types helps organizations identify and address insider risks
 
 Insider risks can take many forms, including:
 
-- **Data Exfiltration**: Employees transferring confidential files to personal devices or external cloud services.
+- **Data exfiltration**: Employees transferring confidential files to personal devices or external cloud services.
 - **Privileged account misuse**: Misusing admin access to view or alter sensitive data.
 - **Negligent actions**: Failing to follow security protocols, such as leaving a laptop unlocked in a public place.
 - **Departing employees**: Taking sensitive information when leaving the company.
