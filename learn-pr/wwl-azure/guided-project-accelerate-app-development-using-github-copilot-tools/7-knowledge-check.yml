@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/26/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary function of GitHub Copilot in this project?"
+    choices:
+    - content: "To manage the library's patron accounts, books, and book loans."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot helps with code development, not with managing library resources."
+    - content: "To replace the damaged servers."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot doesn't replace servers, it aids in code development."
+    - content: "To assist in the efficient development of the application."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot is used to aid in the efficient development of the application."
+  - content: "What is the primary function of the `ConsoleApp` class in the Library Console application?"
+    choices:
+    - content: "It is responsible for loading and managing data from JSON files."
+      isCorrect: false
+      explanation: "Incorrect. The `ConsoleApp` class doesn't directly handle data loading. Data loading is managed by the `JsonData` class."
+    - content: "It is responsible for setting up the dependency injection container and running the console application."
+      isCorrect: false
+      explanation: "Incorrect. The setup of the dependency injection container and running of the console application is handled by the `Program.cs` file."
+    - content: "It manages the console-based user interface of the application, interacting with various services and repositories to perform operations related to patrons and loans."
+      isCorrect: true
+      explanation: "Correct. The `ConsoleApp` class orchestrates the flow of the console application, allowing users to search for patrons, view patron details, and manage loans."
+  - content: "What is the purpose of the 'SearchBooks' method in the library application?"
+    choices:
+    - content: "It allows a librarian to add new books to the library database."
+      isCorrect: false
+      explanation: "Incorrect. The 'SearchBooks' method doesn't involve adding new books to the library database."
+    - content: "It enables a librarian to delete books from the library database."
+      isCorrect: false
+      explanation: "Incorrect. The 'SearchBooks' method doesn't involve deleting books from the library database."
+    - content: "It enables a librarian to determine the availability status of a book."
+      isCorrect: true
+      explanation: "Correct. The 'SearchBooks' method is used to check if a book is available for loan or if it is currently on loan to another patron."
+  - content: "What is the purpose of using GitHub Copilot in the context of unit testing?"
+    choices:
+    - content: "GitHub Copilot is used to run the unit tests."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot doesn't run the unit tests, it helps with writing them."
+    - content: "GitHub Copilot is used to specify which test framework your company should use."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot doesn't specify the test framework that your company should use."
+    - content: "GitHub Copilot assists in writing unit tests by generating test cases, methods, assertions, and mocks."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot can suggest various elements needed for unit testing based on the existing code."
+  - content: "What is the purpose of refactoring the EnumHelper class to use dictionaries instead of reflection?"
+    choices:
+    - content: "To increase the overhead of reflection."
+      isCorrect: false
+      explanation: "Incorrect. Refactoring is done to reduce overhead, not increase it."
+    - content: "To change the external behavior of the code."
+      isCorrect: false
+      explanation: "Incorrect. Refactoring doesn't change the external behavior of the code, it improves the internal structure."
+    - content: "To improve performance by reducing the overhead of reflection and enhance code readability, maintainability, and security."
+      isCorrect: true
+      explanation: "Correct. Refactoring the EnumHelper class to use dictionaries instead of reflection improves performance, readability, maintainability, and security of the code."

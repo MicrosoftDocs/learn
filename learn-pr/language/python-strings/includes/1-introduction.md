@@ -15,3 +15,9 @@ By the end of this module, you'll be able to:
 ## What is the main objective?
 
 In this module, you'll incorporate string operations when you create a Python program.
+
+## Prerequisites
+
+You should be familiar with the concept of programming.
+
+You don't need to install Python to complete this module. You'll use an interactive sandbox to complete the exercises.

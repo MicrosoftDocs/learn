@@ -3,13 +3,14 @@ uid: learn.wwl.introduction-to-ad-ds
 metadata:
   title: Introduction to AD DS
   description: "Introduction to AD DS"
-  ms.date: 04/01/2022
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: module
+  ms.service: entra-id
+  ms.subservice: domain-services
 title: Introduction to AD DS
-summary: Learn about the fundamentals of Active Directory Domain Services (AD DS) in Windows Server 2019, including forests, domains, sites, domain controllers, organizational units (OUs), users, and groups.
+summary: Learn about the fundamentals of Active Directory Domain Services (AD DS) in Windows Server, including forests, domains, sites, domain controllers, organizational units (OUs), users, and groups.
 abstract: |
   After completing this module, you'll be able to:
   - Describe AD DS.

@@ -6,4 +6,4 @@ Now it's your chance to use PyTorch to train a deep learning model on Azure Data
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-databricks-pytorch?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2283821&azure-portal=true)

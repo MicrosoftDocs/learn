@@ -13,15 +13,15 @@ In this module, you learn how to:
 
 ## Skills measured
 
-The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/credentials/certifications/resources/study-guides/az-104). The module concepts are covered in:
 
 Implement and manage storage (15–20%)
 
 - Secure storage
-   - Generate shared access signature (SAS) tokens
-   - Manage access keys
-   - Configure Azure Active Directory authentication for an Azure storage account
+   - Generate shared access signature (SAS) tokens.
+   - Manage access keys.
+   - Configure stored access policies.
 
 ## Prerequisites
 
-None.
+- Familiarity with navigating the Azure portal. 

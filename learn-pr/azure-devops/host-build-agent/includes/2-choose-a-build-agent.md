@@ -1,24 +1,10 @@
-In this unit, you learn about some of the factors to consider when you're choosing a build agent. You learn about some of the benefits and limitations of using a Microsoft-hosted agent, and what's involved when you set up your own private build agent.
-
-Let's see what's happening with the Tailspin web team. Tim, from operations, wants to learn more about how build agents work in Azure Pipelines. He starts a conversation with our developers, Andy and Mara.
-
-**Tim:** Hi, Andy and Mara. I've been following how you're using Microsoft Azure Pipelines to build the _Space Game_ web application. But I'm curious to learn more about how this works. Does it connect to one of our build machines?
-
-**Andy:** It's possible to connect it to one of our build machines, but right now we use an agent that's hosted by Microsoft.
-
-**Tim:** But we build on Linux. Microsoft provides Linux build agents?
-
-**Mara:** Yes! In fact, you can choose Windows, Linux, or macOS for your build agent. If your application runs on multiple platforms, you can configure the pipeline to build on all of them.
-
-**Tim:** Interesting. One of the other teams mentioned some of the challenges they're having with their build infrastructure. Perhaps Azure Pipelines and either a Microsoft-hosted agent or their own build agent can help?
-
-**Andy:** I'd be interested to know as well. Let's chat a bit more about build agents. Perhaps you can share what you learn with the other team.
+In this unit, you'll learn about some of the factors to consider when you're choosing a build agent. You'll learn about some of the benefits and limitations of using a Microsoft-hosted agent, and what's involved when you set up your own private build agent.
 
 ## What are build agents and agent pools?
 
 A _build agent_ is a system that performs build tasks. Think of it as a dedicated server that runs your build process.
 
-Imagine that you have an Azure Pipelines project that receives build requests many times per day. Or perhaps you have multiple projects that can each use the same type of build agent. You can organize build agents into _agent pools_ to help ensure that there's a server ready to process each build request.
+Imagine that you have an Azure Pipelines project that receives build requests many times per day, or perhaps you have multiple projects that can each use the same type of build agent. You can organize build agents into _agent pools_ to help ensure that there's a server ready to process each build request.
 
 When a build is triggered, Azure Pipelines selects an available build agent from the pool. If all agents are busy, the process waits for one to become available.
 
@@ -35,7 +21,7 @@ When you use a Microsoft-hosted agent, you use `vmImage` to specify which type o
 
 The `demands` section specifies which software or capabilities you require the build machine to have.
 
-When you use a build agent from your own pool, also known as a _private pool_, you specify the name of your pool. Here's an example.
+When you use a build agent from your own pool, also known as a _private pool_, you specify the name of your pool. Here's an example:
 
 ```yml
 pool:
@@ -56,20 +42,20 @@ You'll create a build agent and add it to a pool later in this module.
 
 When you're choosing a build agent, there are two factors to consider:
 
-* The operating system you want to build on
+* The operating system on which you want to build
 * Whether you can use a Microsoft-hosted agent or you need to provide your own agent
 
 Azure Pipelines supports these operating systems:
 
-* Windows
-* macOS
-* Linux (Ubuntu, Red Hat Enterprise Linux, and CentOS)
+* [Windows](/azure/devops/pipelines/agents/windows-agent)
+* [macOS](/azure/devops/pipelines/agents/osx-agent)
+* [Linux](/azure/devops/pipelines/agents/linux-agent)
 
 The build agent you choose depends mainly on what tools you use to build your code. For example, if you use Xcode to build your applications, you might choose a macOS agent. If you need Visual Studio, you'd likely choose a Windows agent.
 
 Your existing build configuration uses a Microsoft-hosted agent. Hosted agents run on infrastructure that Microsoft provides for you.
 
-A private agent uses infrastructure that you provide. Your agent can be a system that runs in the cloud or in your datacenter. Either system works, as long as the agent meets your requirements and can connect to Azure Pipelines. In this module, you use a VM that runs on Azure, which we provide.
+A private agent uses infrastructure that you provide. Your agent can be a system that runs in the cloud or in your datacenter. Either system works, as long as the agent meets your requirements and can connect to Azure Pipelines. In this module, you'll use a VM that runs on Azure, which we provide.
 
 ## When should I use my own build agent?
 
@@ -99,7 +85,7 @@ As a tradeoff, because the build infrastructure is yours, it's your responsibili
 
 A private build agent contains the software that's required to build your applications. It also contains agent software, which enables the system to connect to Azure Pipelines and receive build jobs.
 
-When you set up a private agent, you provide the infrastructure that the builds use to run on. This gives you flexibility in how you bring up and maintain your agents.
+When you set up a private agent, you provide the infrastructure on which the builds run. This gives you flexibility in how you bring up and maintain your agents.
 
 For example, you can:
 
@@ -107,22 +93,12 @@ For example, you can:
 * **Automate the process**: You bring up the system and run a script or tool to install your build tools and the agent software. You can configure the agent after the system comes online or during the provisioning process.
 
     For example, when you run build agents on Azure, you can use an Azure Resource Manager template (ARM template) or Bicep to bring up the system and configure it to act as a build agent, all in one step. [Terraform](https://www.terraform.io?azure-portal=true) by HashiCorp is another way to automate the process. Terraform works with many types of infrastructure, including Azure.
-* **Create an image**: You create an image, or snapshot, of a configured environment. You then use the image to create as many identical systems as you need in your pool.
+* **Create an image**: You create an image—or snapshot—of a configured environment. You then use the image to create as many identical systems as you need in your pool.
 
 Manual configuration is a good way to get started, because it enables you to understand the process. It's also the fastest way to get set up when you need just one build agent.
 
 Automation is useful when you need many build agents, or you need to bring up and tear down build infrastructure on a regular basis. You can move from a manual process to an automated process when you need multiple agents.
 
-Images are a form of automation. They can help save time because all the software is pre-configured. As a tradeoff, you might need to periodically rebuild your images to incorporate the latest OS patches and build tools. [Packer](https://www.packer.io?azure-portal=true) by HashiCorp is a popular tool for creating images.
+Images are a form of automation. They can help save time, because all the software is preconfigured. As a tradeoff, you might need to periodically rebuild your images to incorporate the latest OS patches and build tools. [Packer](https://www.packer.io?azure-portal=true) by HashiCorp is a popular tool for creating images.
 
-## What does the team decide?
-
-Let's check back with the team.
-
-**Tim:** I think I understand some of the various approaches. I'd be interested in creating a private build agent that can build the _Space Game_ website so that I can demo it to the other teams. Would that be hard to set up?
-
-**Mara:** I think we can do it. We could use a VM from our lab, or better yet, we can use a VM that runs on Azure as our build agent. I'd bet we can set up some scripts to run to set up the VM. When we're done experimenting, we can tear down the VM so that we're no longer paying for it.
-
-**Tim:** That sounds good. I can learn a little bit about running VMs on Azure in the process.
-
-**Andy:** Have fun! I can't wait to see what you discover.
+For your _Space Game_ scenario, you decide to use a private build agent.

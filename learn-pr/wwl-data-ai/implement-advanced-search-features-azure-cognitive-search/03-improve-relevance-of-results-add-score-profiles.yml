@@ -2,15 +2,19 @@
 uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve-relevance-of-results-add-score-profiles
 title: Improve the relevance of results by adding scoring profiles
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Improve the relevance of results by adding scoring profiles
-  description: "Improve the relevance of results by adding scoring profiles"
-  ms.date: 09/21/2022
-  author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Improve the relevance of results by adding scoring profiles
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 10/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/03-improve-relevance-of-results-add-score-profiles.md)]
+

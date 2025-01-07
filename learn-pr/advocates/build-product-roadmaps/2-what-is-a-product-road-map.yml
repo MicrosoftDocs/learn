@@ -5,10 +5,9 @@ metadata:
   title: What is a product roadmap?
   description: This unit describes the structure of a product roadmap.
   author: czhu89
-  ms.date: 04/16/2019
+  ms.date: 04/24/2023
   ms.author: cazh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-startups
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/2-what-is-a-product-road-map.md)]

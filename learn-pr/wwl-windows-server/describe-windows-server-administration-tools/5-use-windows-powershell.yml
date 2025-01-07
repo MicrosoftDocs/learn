@@ -4,11 +4,11 @@ title: Use Windows PowerShell
 metadata:
   title: Use Windows PowerShell
   description: "Use Windows PowerShell"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
+  ms.custom:
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-key-vault-networking-settings.azure-key-vault-soft-delete-overview
+title: Azure Key Vault soft delete overview
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Azure Key Vault soft delete overview
+  description: "Azure Key Vault soft delete overview"
+  ms.date: 10/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-azure-key-vault-soft-delete-overview.md)]

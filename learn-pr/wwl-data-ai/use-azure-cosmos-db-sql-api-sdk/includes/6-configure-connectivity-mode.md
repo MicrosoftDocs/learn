@@ -1,4 +1,4 @@
-The **CosmosClientOptions** class provides a range of options that you can configure for the client when it connects to an account. These options include, but are not limited to:
+The **CosmosClientOptions** class provides a range of options that you can configure for the client when it connects to an account. These options include, but aren't limited to:
 
 - The mode used to connect to the account
 - Custom consistency level used specifically for the client instance
@@ -6,31 +6,31 @@ The **CosmosClientOptions** class provides a range of options that you can confi
 
 ## Overriding default client options
 
-When connecting to an Azure Cosmos DB account using the **CosmosClient** class, there are a few assumptions that the client makes:
+When you connect to an Azure Cosmos DB account using the **CosmosClient** class, there are a few assumptions that the client makes:
 
-- That you will want to connect to the first writable (primary) region of your account
-- That you will use the default consistency level for the account with your read requests
-- That you will connect directly to data nodes for requests
+- That you want to connect to the first writable (primary) region of your account
+- That you use the default consistency level for the account with your read requests
+- That you connect directly to data nodes for requests
 
 > [!NOTE]
-> There are other assumptions that are not listed here. These assumptions can also be configured with the **CosmosClient** class.
+> There are other assumptions that aren't listed here. These assumptions can also be configured with the **CosmosClient** class.
 
-To configure the client, you will need to create an instance of the **CosmosClientOptions** class and pass in that instance as the last parameter to the **CosmosClient** constructor. Here are two examples using the constructors discussed earlier in this module.
+To configure the client, you need to create an instance of the CosmosClientOptions class and pass it as the last parameter to the CosmosClient constructor. Using Microsoft Entra ID Managed Identity for authentication ensures secure access to Azure Cosmos DB without exposing secrets like connection strings or keys.
 
-You can either use the constructor that takes in an endpoint and key:
-
-```csharp
-CosmosClientOptions options = new ();
-
-CosmosClient client = new (endpoint, key, options);
-```
-
-Or, use the constructor that takes in a connection string:
+Here’s an example using Microsoft Entra Managed Identity:
 
 ```csharp
-CosmosClientOptions options = new ();
+using Azure.Identity;
+using Microsoft.Azure.Cosmos;
 
-CosmosClient client = new (connectionString, options);
+// Configure the account endpoint
+string accountEndpoint = "https://<youraccountname>.documents.azure.com:443/";
+
+// Use DefaultAzureCredential for Azure Entra Managed Identity authentication
+DefaultAzureCredential credential = new DefaultAzureCredential();
+
+// Initialize CosmosClient with endpoint and credential
+CosmosClient client = new (accountEndpoint, credential);
 ```
 
 ### Changing the connection mode
@@ -84,9 +84,9 @@ The **ConsistencyLevel** enumeration has multiple potential values including:
 
 ### Setting the preferred application region\[s\]
 
-By default, the client will use the first writable region for requests. This is typically referred to as the primary region. You can use either the **CosmosClientOptions.ApplicationRegion** or **CosmosClientOptions.ApplicationPreferredRegions** to override this behavior.
+By default, the client uses the first writable region for requests. This region is typically referred to as the primary region. You can use either the **CosmosClientOptions.ApplicationRegion** or **CosmosClientOptions.ApplicationPreferredRegions** to override this behavior.
 
-The **ApplicationRegion** property sets the single preferred region that the client will connect to for operations. If the configured region is unavailable, the client will default to the fallback priority list set on the account to determine the next region to use. In this example, the preferred region is configured to **West US**.
+The **ApplicationRegion** property sets the single preferred region that the client connects to for operations. If the configured region is unavailable, the client defaults to the fallback priority list set on the account to determine the next region to use. In this example, the preferred region is configured to **West US**.
 
 ```csharp
 CosmosClientOptions options = new ()
@@ -96,7 +96,7 @@ CosmosClientOptions options = new ()
 ```
 
 > [!TIP]
-> If your account is not configured for multi-region write, the client will always use the single writable region for write operations and this setting will only impact read operations.
+> If your account is not configured for multi-region write, the client always uses the single writable region for write operations and this setting only impacts read operations.
 
 If you would like to create a custom failover/priority list for the client to use for operations, you can use the **ApplicationPreferredRegions** property with a list of regions. This example uses a custom list configured to try **West US** first and then **East US**.
 

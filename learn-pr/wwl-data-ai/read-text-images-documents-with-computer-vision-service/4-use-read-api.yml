@@ -2,15 +2,19 @@
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service.using-read-api
 title: Use the Read API
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use the Read API
-  description: "Use the Read API"
-  ms.date: 10/20/2022
+  description: Use the Read API
   author: wwlpublish
-  ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 02/05/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-use-read-api.md)]
+

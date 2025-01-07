@@ -17,7 +17,10 @@ def water_left(astronauts, water_left, days_left):
 Try it out with five astronauts, 100 liters of water left, and two days to go:
 
 ```python
->>> water_left(5, 100, 2)
+water_left(5, 100, 2)
+```
+
+```Output
 'Total water left after 2 days is: -10 liters'
 ```
 
@@ -36,7 +39,10 @@ def water_left(astronauts, water_left, days_left):
 Now run it again:
 
 ```python
->>> water_left(5, 100, 2)
+water_left(5, 100, 2)
+```
+
+```Output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "<stdin>", line 6, in water_left
@@ -55,7 +61,10 @@ except RuntimeError as err:
 The `water_left()` function can also be updated to prevent passing unsupported types. Try passing arguments that aren't integers to check the error output:
 
 ```python
->>> water_left("3", "200", None)
+water_left("3", "200", None)
+```
+
+```Output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "<stdin>", line 3, in water_left
@@ -85,7 +94,10 @@ def water_left(astronauts, water_left, days_left):
 Now try again to get a better error:
 
 ```python
->>> water_left("3", "200", None)
+water_left("3", "200", None)
+```
+
+```Output
 Traceback (most recent call last):
   File "<stdin>", line 5, in water_left
 TypeError: unsupported operand type(s) for /: 'str' and 'int'

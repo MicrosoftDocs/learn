@@ -2,14 +2,15 @@
 uid: learn.intro-to-azure-dns-private-resolver.what-is-azure-dns-private-resolver
 title: What is Azure DNS Private Resolver?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure DNS Private Resolver?
-  description: "What is the Azure DNS Private Resolver and what can it be used for"
-  ms.date: 03/17/2023
-  author: greg-lindsay
-  ms.author: greglin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  description: Learn about Azure DNS Private Resolver and what can it be used for.
+  ms.date: 01/31/2024
+  author: ricmmartins
+  ms.author: ricardomac
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/2-what-is-azure-dns-private-resolver.md)]

@@ -7,7 +7,7 @@ In this module, you learned to prioritize your issues and apply the right layer 
 In this module, you:
 
 - Learned the differences between the data-flow diagram depth layers.
-- Understood when to use each layer.
+- Learned when to use each layer.
 
 > [!NOTE]
 >**Did You Know?**

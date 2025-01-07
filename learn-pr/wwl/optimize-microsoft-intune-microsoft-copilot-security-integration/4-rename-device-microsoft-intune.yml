@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.rename-device-microsoft-intune
+title: Rename a device in Microsoft Intune
+metadata:
+  title: Rename a device in Microsoft Intune
+  description: Rename a device in Microsoft Intune
+  author: wwlpublish
+  ms.author: rstearman
+  ms.date: 06/21/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-rename-device-microsoft-intune.md)]

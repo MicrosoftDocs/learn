@@ -1,15 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-data-azure-data-factory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Data integration with Azure Data Factory
-  description: "Integrate data with Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 01/05/2022
+  description: Integrate data with Azure Data Factory or Azure Synapse Pipeline
+  ms.date: 06/05/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-data-factory
 title: Integrate data with Azure Data Factory or Azure Synapse Pipeline
-summary: In this module, you will examine Azure Data Factory and the core components that enable you to create large scale data ingestion solutions in the cloud
+summary: In this module, you'll examine Azure Data Factory and the core components that enable you to create large scale data ingestion solutions in the cloud
 abstract: |
   In this module, you will:
   * Understand Azure Data Factory
@@ -24,7 +26,7 @@ abstract: |
   * Manage integration runtime
 prerequisites: |
   The student should be able to:
-  - Log into the Azure portal
+  - Log in to the Azure portal
   - Explain and create resource groups
 iconUrl: /training/achievements/integrate-data-azure-data-factory.svg
 levels:
@@ -53,3 +55,4 @@ units:
 - learn.wwl.integrate-data-azure-data-factory.summary
 badge:
   uid: learn.wwl.integrate-data-azure-data-factory.badge
+

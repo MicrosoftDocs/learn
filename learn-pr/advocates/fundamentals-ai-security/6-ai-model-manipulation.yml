@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.fundamentals-of-ai-security.ai-model-manipulation
+title: AI model manipulation
+metadata:
+  title: AI model manipulation
+  description: Understanding AI model manipulation
+  ms.date: 07/17/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-ai-model-manipulation.md)]

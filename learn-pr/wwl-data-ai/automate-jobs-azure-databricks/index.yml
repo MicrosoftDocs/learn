@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.automate-jobs-azure-databricks
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Automate workloads with Azure Databricks Jobs
+  description: Automate workloads with Azure Databricks Jobs
+  ms.date: 07/25/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure
+title: Automate workloads with Azure Databricks Jobs
+summary: Learn how to orchestrate and schedule data workflows with Azure Databricks Jobs. Define and monitor complex pipelines, integrate with tools like Azure Data Factory and Azure DevOps, and reduce manual intervention, leading to improved efficiency, faster insights, and adaptability to business needs.
+abstract: |
+  In this module, you learn how to:
+  - Implement job scheduling and automation.
+  - Optimize workflows with parameters. 
+  - Handle dependency management.
+  - Implement error handling and retry mechanisms.
+  - Explore best practices and guidelines.
+prerequisites: |
+  Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/describe-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.automate-jobs-azure-databricks.introduction
+- learn.wwl.automate-jobs-azure-databricks.implement-jobs
+- learn.wwl.automate-jobs-azure-databricks.parameters
+- learn.wwl.automate-jobs-azure-databricks.dependency-management
+- learn.wwl.automate-jobs-azure-databricks.error-handling
+- learn.wwl.automate-jobs-azure-databricks.best-practices
+- learn.wwl.automate-jobs-azure-databricks.exercise
+- learn.wwl.automate-jobs-azure-databricks.knowledge-check
+- learn.wwl.automate-jobs-azure-databricks.summary
+badge:
+  uid: learn.wwl.automate-jobs-azure-databricks.badge
+

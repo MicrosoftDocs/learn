@@ -4,11 +4,12 @@ title: 'Examine compiler-generated exceptions '
 metadata:
   title: Examine compiler-generated exceptions
   description: "Examine compiler-generated exceptions"
-  ms.date: 03/24/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-examine-compiler-generated-exceptions.md)]

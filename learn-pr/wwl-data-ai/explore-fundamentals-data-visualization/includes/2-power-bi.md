@@ -2,9 +2,9 @@ There are many data visualization tools that data analysts can use to explore da
 
 ## Microsoft Power BI
 
-Microsoft Power BI is a suite of tools and services that data analysts can use to build interactive data visualizations for business users to consume.
+Microsoft Power BI is a suite of tools and services within Microsoft Fabric that data analysts can use to build interactive data visualizations for business users to consume.
 
-![Data from a wide range of sources is imported into Power BI Desktop, which is used to create a data model and report; which is published to the Power BI Service and consumed through a web browser and the Power BI phone app](../media/power-bi-flow.png)
+![Diagram of a Power BI data visualization workflow.](../media/power-bi-flow.png)
 
 A typical workflow for creating a data visualization solution starts with **Power BI Desktop**, a Microsoft Windows application in which you can import data from a wide range of data sources, combine and organize the data from these sources in an analytics data model, and create reports that contain interactive visualizations of the data.
 

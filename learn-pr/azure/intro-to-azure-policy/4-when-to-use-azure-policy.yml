@@ -1,15 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-policy.when-to-use-azure-policy 
+uid: learn.intro-to-azure-policy.when-to-use-azure-policy
 title: When to use Azure Policy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Azure Policy
   description: "Learn ways that you can use Azure Policy to manage resources."
-  ms.date: 9/29/2021
+  ms.date: 07/19/2024
   author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.author: ricardomac
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/4-when-to-use-azure-policy.md)]
+

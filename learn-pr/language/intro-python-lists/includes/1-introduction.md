@@ -20,3 +20,8 @@ After completing this module, you'll be able to:
 
 By the end of this module, you'll understand when to use a list structure and how it can help organize your data.
 
+## Prerequisites
+
+You should be familiar with the concept of programming.
+
+You don't need to install Python to complete this module. You'll use an interactive sandbox to complete the exercises.

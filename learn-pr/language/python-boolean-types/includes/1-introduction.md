@@ -1,4 +1,4 @@
-Booleans are a common type in Python. Their value can only ever be one of two things: true or false. Understanding how to use Boolean values is critical, because you'll need them to write *conditional logic*. 
+Booleans are a common type in Python. Their value can only ever be one of two things: true or false. Understanding how to use Boolean values is critical, because you need them to write *conditional logic*. 
 
 ## Scenario: Print warning messages
 
@@ -16,3 +16,9 @@ By the end of this module, you'll be able to:
 ## What is the main objective?
 
 This module teaches you how to use conditional logic to create decision-driven programs.
+
+## Prerequisites
+
+You should be familiar with the concept of programming.
+
+You don't need to install Python to complete this module. You'll use an interactive sandbox to complete the exercises.

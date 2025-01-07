@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-internet-search-beyond.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 10/07/2024
+  author: v-downesmary
+  ms.author: v-downesmary
+  ms.topic: unit
+durationInMinutes: 7
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Which of the following answers best describes the importance of prompt engineering in AI development?
+    choices:
+    - content: Prompt engineering is important because it directly influences the accuracy and relevance of AI responses.
+      isCorrect: true
+      explanation: "Correct: Prompt engineering is important because it directly influences the accuracy and relevance of AI responses."
+    - content: Prompt engineering is a minor aspect of AI development because it affects only the initial setup.
+      isCorrect: false
+      explanation: "Incorrect: This answer underestimates the ongoing impact of an effective prompt on AI performance."
+    - content: Prompt engineering is important, but not as important as data quality.
+      isCorrect: false
+      explanation: "Incorrect: Although data quality is important, prompt engineering is equally important for guiding AI behavior and responses."
+    - content: Prompt engineering is important for complex systems.
+      isCorrect: false
+      explanation: "Incorrect: Prompt engineering is important for all AI systems, regardless of complexity."
+  - content: "Which of the following answer best assesses the effectiveness of crawling, indexing, and ranking in search engines?"
+    choices:
+    - content: Crawling, indexing, and ranking are effective because they ensure that all webpages are included in the results.
+      isCorrect: false
+      explanation: "Incorrect: Crawling, indexing, and ranking don't include all webpages."
+    - content: Crawling, indexing, and ranking are effective because they help search engines retrieve the most relevant results.
+      isCorrect: true
+      explanation: "Correct: Crawling, indexing, and ranking are effective because they help search engines retrieve the most relevant results for user queries."
+    - content: Crawling, indexing, and ranking are effective because they speed up search results.
+      isCorrect: false
+      explanation: "Incorrect: Speed is a factor, but it isn't the most critical measures of effectiveness."
+    - content: Crawling, indexing, and ranking are effective because they eliminate the need for user input to make searches more streamlined.
+      isCorrect: false
+      explanation: "Incorrect: User input is still valuable for refining and personalizing search results."
+  - content: "Which of these statements best captures the differences between a search engine and a reasoning engine?"
+    choices:
+    - content: A search engine uses natural language processing to understand context, whereas a reasoning engine relies on keyword matching.
+      isCorrect: false
+      explanation: "Incorrect: Search engines and reasoning engines can both use natural language processing. Search engines often use it to improve search results, where reasoning engines use it for logical reasoning."
+    - content: A search engine primarily utilizes data analysis, whereas a reasoning engine is used for web browsing.
+      isCorrect: false
+      explanation: "Incorrect: Search engines are not primarily used for data analysis. They're used for retrieving information from the web."
+    - content: A search engine retrieves information based on keyword matching, whereas a reasoning engine generates new information by applying logical rules and using large language technology.
+      isCorrect: true
+      explanation: "Correct: Search engines retrieve information based on keyword matching. Reasoning engines generate new information by applying logical rules, so they're suitable for tasks that require inference and decision-making."
+    - content: A search engine operates on structured data, whereas a reasoning engine processes unstructured data.
+      isCorrect: false
+      explanation: "Incorrect: Search engines can operate on both structured and unstructured data. Reasoning engines can also process both types of data, depending on their design and application."

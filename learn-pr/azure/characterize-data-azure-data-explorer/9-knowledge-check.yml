@@ -2,14 +2,15 @@
 uid: learn.azure.characterize-dataset-azure-data-explorer.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: "Learn how to characterize an unfamiliar dataset using Azure Data Explorer web UI and KQL queries."
-  ms.date: 08/15/2022
-  author: YaelSchuster
-  ms.author: yaschust
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.date: 04/02/2024
+  author: shsagir
+  ms.author: shsagir
+  ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:
@@ -47,4 +48,5 @@ quiz:
     - content: "Plot the count of events vs. time to see if any data is missing."
       isCorrect: true
       explanation: "True. This visualization will help you determine if there's missing data."
+
 

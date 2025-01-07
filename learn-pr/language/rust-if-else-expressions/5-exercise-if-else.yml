@@ -3,11 +3,10 @@ uid: learn.language.rust-if-else-expressions.5-exercise-if-else
 metadata:
   title: 'Exercise: Work with if/else conditions'
   description: Use what you've learned about test conditions to complete the code.
-  ms.date: 09/20/2021
+  ms.date: 01/14/2022
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: 'Exercise: Work with if/else conditions'
 durationInMinutes: 6

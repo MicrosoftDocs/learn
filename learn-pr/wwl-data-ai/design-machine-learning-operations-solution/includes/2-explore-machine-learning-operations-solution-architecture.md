@@ -1,5 +1,6 @@
 
 
+
 As a data scientist, you want to train the best machine learning model. To implement the model, you want to deploy it to an endpoint and integrate it with an application.
 
 Over time, you may want to retrain the model. For example, you can retrain the model when you have more training data. 
@@ -30,7 +31,7 @@ A typical approach is to:
 
 When you implement MLOps, and work with machine learning models at a large scale, it's a best practice to work with separate environments for different stages.
 
-Imaging your team uses a dev, pre-prod, and prod environment. Not everyone on your team should get access to all environments. Data scientists may only work within the dev environment with non-production data, while machine learning engineers work on deploying the model in the pre-prod and prod environment with production data.
+Imagine your team uses a dev, pre-prod, and prod environment. Not everyone on your team should get access to all environments. Data scientists may only work within the dev environment with non-production data, while machine learning engineers work on deploying the model in the pre-prod and prod environment with production data.
 
 Having separate environments makes it easier to control access to resources. Each environment can then be associated with a separate Azure Machine Learning workspace.
 

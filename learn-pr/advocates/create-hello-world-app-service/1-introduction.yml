@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-hello-app-service.introduction
+title: Introduction
+metadata:
+  description: Module introduction
+  author: KarlErickson
+  ms.author: ayangupta
+  ms.date: 12/11/2024
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
+  ms.assetid: HelloJavaAppService
+durationInMinutes: 2
+content: |
+  [!INCLUDE[](includes/1-introduction.md)]

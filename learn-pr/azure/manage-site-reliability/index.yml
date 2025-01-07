@@ -1,14 +1,16 @@
 ### YamlMime:Module
 uid: learn.azdo.manage-site-reliability
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage site reliability
   description: Learn how to manage site reliability.
   ms.date: 04/21/2023
   author: tpetchel
   ms.author: thpetche
-  ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-devops
+  manager: susanpotter
 title: Manage site reliability
 summary: Learn how to manage site reliability.
 abstract: |
@@ -43,3 +45,4 @@ units:
 - learn.azdo.manage-site-reliability.8-summary
 badge:
   uid: learn.azdo.manage-site-reliability.badge
+

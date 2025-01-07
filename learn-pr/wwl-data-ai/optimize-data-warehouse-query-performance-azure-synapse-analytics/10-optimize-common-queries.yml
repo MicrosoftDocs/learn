@@ -2,13 +2,14 @@
 uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.optimize-common-queries-with-result-set-caching
 title: Optimize common queries with result-set caching
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Optimize common queries with result-set caching
   description: "Optimize common queries with result-set caching"
   ms.date: 08/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

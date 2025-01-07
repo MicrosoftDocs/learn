@@ -1,5 +1,3 @@
-
-
 Contoso's datacenters support remote connectivity so users can work remotely. Also, some branch offices are connected to the head office datacenter through site-to-site VPNs. As lead system engineer, you must implement a VPN solution that enables ongoing support for the current use scenarios.
 
 ## VPN gateway design

@@ -2,15 +2,16 @@
 uid: learn.wwl.configure-azure-app-services.create-app-service
 title: Create an app with App Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create an app with App Service
   description: "Create an app with App Service"
-  ms.date: 01/18/2023
+  ms.date: 12/18/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/3-create-app-service.md)]

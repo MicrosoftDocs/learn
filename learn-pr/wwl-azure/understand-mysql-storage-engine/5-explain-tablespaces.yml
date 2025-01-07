@@ -2,12 +2,14 @@
 uid: learn.wwl.understand-mysql-storage-engine.explain-tablespaces
 title: Explain tablespaces
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explain tablespaces
   description: "Explain tablespaces"
   ms.date: 11/08/2022
   author: wwlpublish
   ms.author: caroline
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

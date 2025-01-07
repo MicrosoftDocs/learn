@@ -15,3 +15,9 @@ In this module, you'll explore the core mathematic capabilities of Python. You'l
 ## What is the main objective?
 
 Build on the power of math operators when you create a Python program.
+
+## Prerequisites
+
+You should be familiar with the concept of programming.
+
+You don't need to install Python to complete this module. You'll use an interactive sandbox to complete the exercises.

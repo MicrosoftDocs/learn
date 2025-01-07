@@ -3,11 +3,10 @@ uid: learn.protect-endpoints-with-endpoint-manager.7-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 10/23/2020
+  ms.date: 10/04/2024
   author: Erikre 
   ms.author: erikre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager  
+  ms.topic: unit
 title: Knowledge check
 durationInMinutes: 3
 quiz:
@@ -26,15 +25,15 @@ quiz:
       explanation: "Settings are contained in policies you create and assign to apps and devices. For instance, device policies allow you to restricts, reset, require, configure, protect, control, and retire many of the aspects of the devices at your organization."
   - content: "What platforms does Microsoft Intune support?"
     choices:
-    - content: "Microsoft Intune supports a number of platforms, including iOS, iPadOS, macOS, Android, and Windows platforms."
+    - content: "Microsoft Intune supports many platforms, including iOS, iPadOS, macOS, Android, and Windows platforms."
       isCorrect: true
-      explanation: "The available platforms that can be managed by Intune include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types."
+      explanation: "Intune manages many available platforms including iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types."
     - content: "Microsoft Intune supports a single, universal platform call Azure."
       isCorrect: false
-      explanation: "The available platforms that can be managed by Intune include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types."
+      explanation: "Intune manages many available platforms including iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types."
     - content: "Microsoft Intune provides the tools you use to design your own endpoint protection platform."
       isCorrect: false
-      explanation: "The available platforms that can be managed by Intune include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types."
+      explanation: "Intune manages many available platforms including iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types."
   - content: "What are configuration policies versus protection policies?"
     choices:
     - content: "Configuration policies are used to set up devices and apps. Protection policies are used to prevent unauthorized access and prevent data leaks."

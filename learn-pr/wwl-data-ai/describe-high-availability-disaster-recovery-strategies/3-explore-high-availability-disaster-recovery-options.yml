@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.explore-ha-dr-options
 title: Explore high availability and disaster recovery options
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore high availability and disaster recovery options
   description: "Explore high availability and disaster recovery options"
-  ms.date: 07/13/2022
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 15

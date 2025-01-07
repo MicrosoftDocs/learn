@@ -1,4 +1,4 @@
-Fabrikam has integrated their new drone service into their existing application. They realize that this solution isn't a good long-term plan for their application. The existing system is a monolithic architecture, but what exactly does that mean?
+Fabrikam integrated their new drone service into their existing application. They realize that this solution isn't a good long-term plan for their application. The existing system is a monolithic architecture, but what exactly does that mean?
 
 ## What is a monolithic architecture?
 
@@ -48,17 +48,17 @@ Because microservices are deployed independently, it's easier to manage bug fixe
 
 #### Small code, small teams
 
-A microservice should be small enough that a single feature team can build, test, and deploy it. Small code bases are easier to understand. In a large monolithic application, code dependencies tend to become tangled over time. Adding a new feature requires touching code in many places. By not sharing code or data stores, a microservices architecture minimizes dependencies. That makes it easier to add new features. 
+A microservice should be small enough that a single feature team can build, test, and deploy it. Small code bases are easier to understand. In a large monolithic application, code dependencies tend to become tangled over time. Adding a new feature requires touching code in many places. A microservices architecture minimizes dependencies by not sharing code or data stores. That makes it easier to add new features.
 
 Small team sizes also promote greater agility. The "two-pizza rule" says that a team should be small enough that two pizzas can feed the team. Obviously, that's not an exact metric and depends on team appetites! But the point is that large groups tend to be less productive because communication is slower, management overhead goes up, and agility diminishes.
 
 #### Mix of technologies
 
-Teams can pick the technology that best fits their service. They can use a mix of technology stacks as appropriate. Each team can evolve the technologies that support their service independently. Services can use different development languages, cloud services, SDKs, and more, because of this independence. Teams can pick the best options for their service, while minimizing any external impact to consumers of the service.
+Teams can pick the technology that best fits their service. They can use a mix of technology stacks as appropriate. Each team can evolve the technologies that support their service independently. Services can use different development languages, cloud services, SDKs, and more, because of this independence. Teams can pick the best options for their service, while minimizing any external effect on consumers of the service.
 
 #### Resiliency
 
-If an individual microservice becomes unavailable, it won't disrupt the entire application. This is the case as long as any upstream microservices are designed to handle faults correctly (for example, by implementing circuit breaking). The benefit to your users or service consumers is an always-on experience for your application.
+If an individual microservice becomes unavailable, it doesn't disrupt the entire application, as long as any upstream microservices are designed to handle faults correctly (for example, by implementing circuit breaking). The benefit to your users or service consumers is an always-on experience for your application.
 
 #### Scalability
 
@@ -95,7 +95,7 @@ The decentralized approach to building microservices has advantages, but it can 
 
 #### Network congestion and latency
 
-The use of many small, granular services can result in more interservice communication. If the chain of service dependencies gets too long, for example, service A calls B, which calls C..., the additional latency of these network calls can become a problem. Design your APIs carefully. Avoid overly chatty APIs, think about serialization formats, and look for places to use asynchronous communication patterns.
+The use of many small, granular services can result in more interservice communication. If the chain of service dependencies gets too long, for example, service A calls B, which calls C..., the extra latency of these network calls can become a problem. Design your APIs carefully. Avoid overly chatty APIs, think about serialization formats, and look for places to use asynchronous communication patterns.
 
 #### Data integrity
 

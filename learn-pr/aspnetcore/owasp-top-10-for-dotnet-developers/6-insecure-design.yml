@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.insecure-design
+title: Insecure design
+metadata:
+  title: Insecure design
+  description: "OWASP Top 10 for .NET Developers. Insecure design."
+  ms.date: 05/31/2024
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: unit
+  ms.custom: devx-track-dotnet
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-insecure-design.md)]
+
+quiz:
+  title: Check your knowledge
+  questions: 
+  - content: "What are the objectives of a threat-modeling exercise?"
+    choices:
+    - content: "It's a guided process to help with manual security testing."
+      isCorrect: false
+      explanation: "Threat modeling indicates areas of the system that need verification after mitigation is applied, but it isn't limited to manual testing."
+    - content: "Helps to identify an accountable person to blame when a security incident happens."
+      isCorrect: false
+      explanation: "Avoid blame culture in your organizations. Learn from mistakes to prevent them from occurring in the future."
+    - content: "Improves understanding of security threats to a system, determines risks from those threats, and establishes appropriate mitigations."
+      isCorrect: true
+      explanation: "You can consider threat modeling part of risk management. It covers the initial phases of the process."

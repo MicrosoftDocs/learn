@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-performance.2-performance-capabilities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Performance capabilities
   description: Performance capabilities
   ms.date: 03/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Performance capabilities
 durationInMinutes: 10
 content: |

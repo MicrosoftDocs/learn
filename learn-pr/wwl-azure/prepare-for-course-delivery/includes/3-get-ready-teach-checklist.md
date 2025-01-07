@@ -6,7 +6,7 @@ Getting ready to teach checklist:
 
 1. Draft my syllabus 
 
-   - Download the most up-to-date version of the Microsoft Official Curriculum from the [Microsoft Learning Download Center](https://aka.ms/LDC) 
+   - Download the most up-to-date version of the Microsoft Official Curriculum from the [Microsoft Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123) 
 
    - Check out the Course Data sheet. This resource contains an outline that provides detailed information about the content included in the instructor-led course modules, including topic areas, interactive guides and videos 
 

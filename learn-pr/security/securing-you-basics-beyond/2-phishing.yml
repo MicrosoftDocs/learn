@@ -3,11 +3,10 @@ uid: learn.securing-you-basics-beyond.2-phishing
 metadata:
   title: Identify and protect yourself from phishing
   description: Identify and protect yourself from phishing
-  ms.date: 05/30/2020
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/26/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Identify and protect yourself from phishing
 durationInMinutes: 10
 content: |

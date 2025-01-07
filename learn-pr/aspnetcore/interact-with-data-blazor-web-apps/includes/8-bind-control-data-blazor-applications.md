@@ -19,7 +19,7 @@ To bind a control, you would use the `@bind` directive:
 </p>
 
 @code {
-    private string customerEmail = "john.doe@contoso.com"
+    private string customerEmail = "user@contoso.com"
 }
 ```
 
@@ -88,7 +88,7 @@ If you display dates to the user, you might want to use a localized data format.
 ```
 
 > [!NOTE]
-> At the time of writing, format strings are only supported with date values. Currency formats, number formats, and other formats might be added in the future. To check the latest information on binding formats, see [Format strings](/aspnet/core/blazor/components/data-binding#format-strings-1) in the Blazor documentation.
+> At the time of writing, format strings are only supported with date values. Currency formats, number formats, and other formats might be added in the future. To check the latest information on binding formats, see [Format strings](/aspnet/core/blazor/components/data-binding?view=aspnetcore-9.0#format-strings&preserve-view=true) in the Blazor documentation.
 
 As an alternative to using the `@bind:format` directive, you can write C# code to format a bound value. Use the `get` and `set` accessors in the member definition, as in this example:
 

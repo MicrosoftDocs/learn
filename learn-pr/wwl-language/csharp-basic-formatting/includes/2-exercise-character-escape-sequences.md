@@ -1,3 +1,6 @@
+
+
+
 Suppose you've been asked to create a mockup of a command-line tool that will generate invoices in both English and Japanese. You don't have to build the actual functionality that generates the invoices yet. You only need to provide the command line interface to internal customers in the billing department for their approval. Your manager asked you to make sure you add formatting to make the current progress of the tool clear. Your manager also asked you to provide instructions for the Japanese users on how to generate invoices in Japanese.
 
 ## Exercise - Format literal strings in C#
@@ -82,7 +85,7 @@ c:\source\repos
 1. To create the mockup of the command line tool, enter the following code in the editor:
 
     ```csharp
-    Console.WriteLine("Generating invoices for customer \"Contoso Corp\" ...\n");
+    Console.WriteLine("Generating invoices for customer \"Contoso Corp\" ... \n");
     Console.WriteLine("Invoice: 1021\t\tComplete!");
     Console.WriteLine("Invoice: 1022\t\tComplete!");
     Console.WriteLine("\nOutput Directory:\t");

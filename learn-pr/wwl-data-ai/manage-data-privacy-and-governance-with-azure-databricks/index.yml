@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Manage data privacy and governance with Azure Databricks
+  description: "Manage data privacy and governance with Azure Databricks"
+  ms.date: 08/14/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: module-standard-task-based
+  ms.service: azure
+title: Manage data privacy and governance with Azure Databricks
+summary: In this module, you explore different features and approaches to help you secure and manage your data within Azure Databricks using tools, such as Unity Catalog.
+abstract: |
+  At the end of this module, you're able to:
+  - Implement data encryption techniques
+  - Manage access controls
+  - Implement data masking and anonymization
+  - Use compliance frameworks and secure data sharing
+  - Use data lineage and metadata management
+  - Roll out governance automation
+prerequisites: |
+  *   Ability to navigate the Azure portal
+  *   Familiarity of the Azure Databricks workspace
+  *   Knowledge of Spark languages and notebooks
+  
+iconUrl: /training/achievements/data-engineer-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- developer
+- data-scientist
+- data-analyst
+products:
+- azure-databricks
+units:
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.introduction
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.implement-data-encryption-techniques
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.manage-access-controls
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.implement-data-masking-and-anonymization
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.use-compliance-frameworks-and-secure-data-sharing
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.use-data-lineage-and-metadata-management
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.implement-governance-automation
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.exercise
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.knowledge-check
+- learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.summary
+badge:
+  uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.badge
+

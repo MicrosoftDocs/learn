@@ -1,18 +1,18 @@
 ## Scenario
 
-Contoso is a medium-size financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server. This includes virtualized workloads on Windows Server 2012 R2 hosts. Contoso IT staff are in the process of migrating Contoso servers to Windows Server 2019.
+Contoso is a medium-size financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server. This includes virtualized workloads on Windows Server 2016 hosts. Contoso's IT staff are in the process of migrating Contoso servers to Windows Server 2025.
 
-Contoso’s IT director realizes that Contoso has an outdated operational model with limited automation and reliance on dated technology. The Contoso IT Engineering team has started exploring Azure capabilities. They want to determine whether Azure services might assist with modernizing the current operational model through automation and virtualization. 
+Contoso’s IT director realizes that Contoso has an outdated operational model with limited automation and reliance on dated technology. The Contoso IT Engineering team is exploring Azure capabilities. They want to determine whether Azure services might assist with modernizing the current operational model through automation and virtualization.
 
-As part of the initial design, the Contoso IT team asked you, their lead system engineer and server administrator, to set up a proof of concept environment. This environment must verify whether Azure services can help to modernize the IT infrastructure and meet business goals. 
+As part of the initial design, the Contoso IT team asked you, their lead system engineer and server administrator, to set up a proof of concept environment. This environment must verify whether Azure services can help to modernize the IT infrastructure and meet business goals.
 
-Security is a big concern. There's reluctance to run critical and sensitive systems "in the cloud." As system administrator, you'll need to address these concerns. In early research, you've discovered that Azure provides change tracking and both inventory and file-integrity monitoring. You've decided to investigate this security features to determine whether they can help to address your colleagues' concerns.
+Security is a core priority for Contoso. There's reluctance from the security team to run critical and sensitive systems "in the cloud." As system administrator, you need to address these concerns. You'll explore change tracking and both inventory and file-integrity monitoring to determine whether these features can help to address the concerns of the security team.
 
-In this module, you'll learn how to implement and manage Change tracking and Inventory. You'll also learn how to manage tracked files, and how to implement File Integrity Monitoring. 
+In this module, learn how to implement and manage Change tracking and Inventory. Also learn how to manage tracked files, and how to implement File Integrity Monitoring.
 
 ## Learning objectives
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
 - Implement Change Tracking and Inventory
 - Manage Change Tracking and Inventory
@@ -29,7 +29,7 @@ To get the best learning experience from this module, it's important that you ha
 - Common Windows Server management tools.
 - Core Microsoft computes, storage, networking, and virtualization technologies.
 - Implementing and managing IaaS services in Microsoft Azure.
-- Azure Active Directory (Azure AD).
-- Security-related technologies (firewalls, encryption, multi-factor authentication).
+- Microsoft Entra ID.
+- Security-related technologies (firewalls, encryption, multifactor authentication).
 - Windows PowerShell scripting.
 - Automation and monitoring.

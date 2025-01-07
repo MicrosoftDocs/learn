@@ -1,13 +1,18 @@
 ### YamlMime:Module
 uid: learn.create-web-app-with-refreshable-models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build a Web App with Refreshable Machine Learning Models
   description: Build a web app powered by machine learning models trained using Custom Vision AI service, and learn how to refresh them with GitHub Actions.
-  author: jlooper
-  ms.date: 12/22/2022
+  author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/22/2022
+  ms.service: azure-ai-services
+  ms.topic: module
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Build a Web App with Refreshable Machine Learning Models
 summary: Build a web app powered by machine learning models trained using Custom Vision AI service, and learn how to refresh them with GitHub Actions.
@@ -31,8 +36,8 @@ roles:
   - ai-engineer
 products:
   - azure
-  - azure-cognitive-services
-  - azure-web-apps
+  - ai-services
+  - azure-app-service
 subjects:
 - cloud-computing
 - machine-learning
@@ -50,3 +55,4 @@ units:
   - learn.advocates.create-web-app-with-refreshable-models.11-summary
 badge:
   uid: learn.advocates.create-web-app-with-refreshable-models.badge
+

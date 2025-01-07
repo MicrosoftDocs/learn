@@ -5,4 +5,4 @@ Now it's your opportunity to explore Azure Cosmos DB.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/dp900-cosmos-lab?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2261870&azure-portal=true)

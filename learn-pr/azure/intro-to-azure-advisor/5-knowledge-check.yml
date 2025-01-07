@@ -2,14 +2,15 @@
 uid: learn.intro-to-azure-advisor.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: "Check your knowledge."
   ms.date: 03/08/2023
   author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: ricardomac
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:

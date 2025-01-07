@@ -2,13 +2,14 @@
 uid: learn.machinelearning.introduction-to-classical-machine-learning.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Multiple-choice questions.
-  ms.date: 05/25/2021
-  author: tomreidnz
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/01/2024
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
@@ -68,3 +69,4 @@ quiz:
     - content: "Both options are correct."
       isCorrect: true
       explanation: "Correct."      
+

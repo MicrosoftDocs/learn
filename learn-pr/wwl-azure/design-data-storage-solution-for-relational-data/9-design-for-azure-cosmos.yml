@@ -4,13 +4,12 @@ title: Design for Azure Cosmos DB and Table Storage
 metadata:
   title: Design for Azure Cosmos DB and Table Storage
   description: "Design for Azure Cosmos DB and Table Storage"
-  ms.date: 03/29/2023
+  ms.date: 12/10/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/9-design-for-azure-cosmos.md)]

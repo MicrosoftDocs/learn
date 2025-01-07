@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-essentials.monitor
+title: Monitor Azure NetApp Files
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: learning-module
+  title: Monitor Azure NetApp Files
+  description: Learn about the monitoring tools recommended for Azure NetApp Files.  
+  ms.date: 11/18/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-monitor.md)]

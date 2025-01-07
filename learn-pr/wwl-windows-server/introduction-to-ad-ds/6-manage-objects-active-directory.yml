@@ -4,11 +4,10 @@ title: Manage objects and their properties in AD DS
 metadata:
   title: Manage objects and their properties in AD DS
   description: "Manage objects and their properties in AD DS"
-  ms.date: 04/01/2022
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
@@ -21,10 +20,10 @@ quiz:
     choices:
     - content: "Get-ADUser"
       isCorrect: false
-      explanation: "That's incorrect. Use this cmdlet to retrieve information about a user."
+      explanation: "Incorrect. Use this cmdlet to retrieve information about a user."
     - content: "New-ADUser"
       isCorrect: true
-      explanation: "That's correct. Use this cmdlet to create a new user account."
+      explanation: "Correct. Use this cmdlet to create a new user account."
     - content: "Set-ADUser"
       isCorrect: false
-      explanation: "That's incorrect. Use this cmdlet to change a user's properties."
+      explanation: "Incorrect. Use this cmdlet to change a user's properties."

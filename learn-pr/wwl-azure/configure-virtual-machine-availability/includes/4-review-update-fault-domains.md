@@ -1,8 +1,8 @@
-Azure Virtual Machine Scale Sets implements two node concepts to help Azure maintain high availability and fault tolerance when deploying and upgrading applications: _update domains_ and _fault domains_. Each virtual machine in an availability set is placed in one update domain and one fault domain.
+Azure Virtual Machine Availability Sets implements two node concepts to help Azure maintain high availability and fault tolerance when deploying and upgrading applications: _update domains_ and _fault domains_. Each virtual machine in an availability set is placed in one update domain and one fault domain.
 
 ### Things to know about update domains
 
-An update domain is a group of nodes that are upgraded together during the process of a service upgrade (or _rollout_). An update domain allows Azure to perform incremental or rolling upgrades across a deployment. Here are some other characteristics of update domains.
+An update domain is a group of nodes that are upgraded together during the process of a service upgrade (or _roll out_). An update domain allows Azure to perform incremental or rolling upgrades across a deployment. Here are some other characteristics of update domains.
 
 - Each update domain contains a set of virtual machines and associated physical hardware that can be updated and rebooted at the same time.
 

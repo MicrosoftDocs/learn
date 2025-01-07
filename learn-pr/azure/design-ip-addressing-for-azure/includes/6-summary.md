@@ -1,4 +1,4 @@
-In this module, you've:
+In this module, you have:
 
 - Identified the private and public IP addressing capabilities of Azure virtual networks.
 - Identified how to integrate on-premises networks with Azure.
@@ -10,5 +10,5 @@ Now that you understand how to plan IP addressing for Azure networks, you unders
 
 For more information about IP addressing in Azure, see the following articles:
 
-- [IP address types and allocation methods in Azure](/azure/virtual-network/virtual-network-ip-addresses-overview-arm)
+- [Public IP addresses](/azure/virtual-network/ip-services/public-ip-addresses)
 - [Public IP address prefix](/azure/virtual-network/public-ip-address-prefix)

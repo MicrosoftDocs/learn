@@ -16,7 +16,7 @@ Depending on the type of backing store used and its latency, it might be helpful
 
 For more information, see the Caching Guidance. The figure illustrates an overview of the External Configuration Store pattern with optional local cache.
 
-:::image type="content" source="../media/applications-accessing-external-configuration-ef278b40.png" alt-text="Applications are accessing the external configuration store, which is accessing cloud storage, or databases.":::
+:::image type="content" source="../media/applications-accessing-external-configuration-ef278b40.png" alt-text="Diagram shows applications are accessing the external configuration store, which is accessing cloud storage, or databases.":::
 
 
 This pattern is helpful for:

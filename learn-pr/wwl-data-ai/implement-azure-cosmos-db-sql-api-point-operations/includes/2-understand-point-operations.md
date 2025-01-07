@@ -25,11 +25,11 @@ public string[] set { get; set; }
 
 public double numbers { get; set; }
 
-public int morenumbers { get; set; }
+public int moreNumbers  { get; set; }
 
 public ComplexClass sophisticated { get; set;}
 
-public List<ComplexType> onetomany { get; set; }
+public List<ComplexType> oneToMany  { get; set; }
 ```
 
 Let's establish a fictional scenario for the remainder of this module. We have a **Product** class with five members for the unique **id**, the product's **name**, the unique **category** identifier, the **price**, and a collection of **tags**. The **category** identifier is the **partition key** path for the container.

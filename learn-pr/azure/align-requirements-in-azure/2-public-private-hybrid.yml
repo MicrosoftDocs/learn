@@ -2,13 +2,14 @@
 uid: learn.align-requirements-in-azure.2-public-private-hybrid
 title: Azure solutions for public, private, and hybrid cloud
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure solutions for public, private, and hybrid cloud
-  description: Azure solutions for public, private, and hybrid cloud
-  ms.date: 09/24/2018
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Learn about Azure solutions for public, private, and hybrid cloud.
+  ms.date: 12/06/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/2-public-private-hybrid.md)]
@@ -16,7 +17,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which cloud deployment model would be the best match for the following situation? A SQL server database is needed for a short-term project. The IT department does not have available hardware that meets the performance requirements or resources to deploy it. The project starts next week. Once the project is over, the database is no longer needed."
+  - content: "Which cloud deployment model would be the best match for the following situation? A SQL server database is needed for a short-term project. The IT department doesn't have available hardware that meets the performance requirements or resources to deploy it. The project starts next week. Once the project is over, the database is no longer needed."
     choices:
     - content: Public cloud
       explanation: "The need for a quick deployment and the short lifecycle of the SQL database make public cloud the best option."
@@ -28,26 +29,26 @@ quiz:
       isCorrect: false
       explanation: "The need for a quick deployment and the short lifecycle of the SQL database make public cloud the best option."
 
-  - content: "Which cloud deployment model is described in the following scenario? You create several virtual machines in the cloud. The VMs are networked together using a virtual network. The VMs have access to x-ray image files in cloud storage. One of the VMs is a web server that host a website exposed to the Internet for customers to access their records. There is a VPN that connects the solution to your on-premises datacenter for customer information to display with the image files."
+  - content: "Which cloud deployment model is described in the following scenario? You create several virtual machines in the cloud. The VMs are networked together using a virtual network. The VMs have access to x-ray image files in cloud storage. One of the VMs is a web server that host a website exposed to the Internet for customers to access their records. There's a VPN that connects the solution to your on-premises datacenter for customer information to display with the image files."
     choices:
     - content: Public cloud
       isCorrect: false
-      explanation: "This scenario uses both public and private cloud with a connection between the two. Therefore, it is a hybrid cloud deployment."
+      explanation: "This scenario uses both public and private cloud with a connection between the two. Therefore, it's a hybrid cloud deployment."
     - content: Private cloud
       isCorrect: false
-      explanation: "This scenario uses both public and private cloud with a connection between the two. Therefore, it is a hybrid cloud deployment."
+      explanation: "This scenario uses both public and private cloud with a connection between the two. Therefore, it's a hybrid cloud deployment."
     - content: Hybrid cloud
-      explanation: "This scenario uses both public and private cloud with a connection between the two. Therefore, it is a hybrid cloud deployment."
+      explanation: "This scenario uses both public and private cloud with a connection between the two. Therefore, it's a hybrid cloud deployment."
       isCorrect: true
 
   - content: "Which cloud deployment model is described in the following scenario? You have two datacenters in your organization. One datacenter has a database that can only reside in one of the datacenters because of a regulatory requirement. You want to access the database from the other datacenter. You create a VPN using a cloud provider to connect the two datacenters."
     choices:
     - content: Public cloud
       isCorrect: false
-      explanation: "The VPN is a public cloud resource; however, because the VPN is a private connection between two private datacenters, this is a private cloud deployment."
+      explanation: "The VPN is a public cloud resource; however, because the VPN is a private connection between two private datacenters, this scenario describes a private cloud deployment."
     - content: Private cloud
-      explanation: "The VPN is a public cloud resource; however, because the VPN is a private connection between two private datacenters, this is a private cloud deployment."
+      explanation: "The VPN is a public cloud resource; however, because the VPN is a private connection between two private datacenters, this scenario describes a private cloud deployment."
       isCorrect: true
     - content: Hybrid cloud
       isCorrect: false
-      explanation: "The VPN is a public cloud resource; however, because the VPN is a private connection between two private datacenters, this is a private cloud deployment."
+      explanation: "The VPN is a public cloud resource; however, because the VPN is a private connection between two private datacenters, this scenario describes a private cloud deployment."

@@ -61,7 +61,7 @@ Don't be shy to ask someone to be your mentor, but be aware that it involves a t
 > [!TIP]
 > Consider asking your manager if you can take time for mentorship, if it's not built into your daily work by the company.  
 
-> In "A story from Twitter," [Will Thompson](https://twitter.com/Will_MI77) recalls a moment from his early career involving a famous CEO who "presented to me and a bunch of new grads once, and said that an intern had once asked him to be their mentor. He couldn't come up with a good reason to say no! He swiftly followed the anecdote by saying "that only works the first time!"
+> In "A story from X," [Will Thompson](https://x.com/Will_MI77) recalls a moment from his early career involving a famous CEO who "presented to me and a bunch of new grads once, and said that an intern had once asked him to be their mentor. He couldn't come up with a good reason to say no! He swiftly followed the anecdote by saying "that only works the first time!"
 
 Set parameters collaboratively with your mentor, agreeing to meet for a given number of hours each month for a given number of months. Set goals for yourself and hold yourself accountable to meet them each month. Be sure to come prepared with questions or scenarios that you'd like your mentor's input on.  
 

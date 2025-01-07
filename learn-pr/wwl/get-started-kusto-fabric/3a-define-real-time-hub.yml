@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-kusto-fabric.define-real-time-hub
+title: Ingest and transform real-time data
+metadata:
+  title: Ingest and transform real-time data
+  description: "Understand features and capabilities of eventstreams, and how they ingest data in a Fabric real-time hub."
+  ms.date: 12/03/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3a-define-real-time-hub.md)]

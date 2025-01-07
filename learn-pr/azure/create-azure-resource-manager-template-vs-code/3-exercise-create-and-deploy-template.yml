@@ -2,15 +2,19 @@
 uid: learn.azure.create-resource-manager-template-vs-code.3-exercise-create-and-deploy-template
 title: Exercise - Create and deploy an Azure Resource Manager template
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create and deploy an Azure Resource Manager template
   description: Create an Azure Resource Manager template and deploy it to Azure. Then update that template to add parameters and outputs.
-  ms.date: 07/08/2020
-  author: tfitzmac
-  ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/29/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
   zone_pivot_groups: azure-shell-interface
 azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-and-deploy-template.md)]
+

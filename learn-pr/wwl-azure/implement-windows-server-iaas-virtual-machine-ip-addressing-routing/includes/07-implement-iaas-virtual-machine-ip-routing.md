@@ -1,6 +1,3 @@
-
-
-
 As a network systems engineer at Contoso, you're particularly interested in the flow of network traffic in and around your Azure resources, to and from the internet, and within your on-premises infrastructure. You decide to investigate Azure routing and how you can implement routing to address Contoso's requirements. You learn that for each subnet within an Azure VNet, Azure creates a route table and populates it with system default routes. By adding to the default routes, you can create your own custom routes.  
 
 ## System routes

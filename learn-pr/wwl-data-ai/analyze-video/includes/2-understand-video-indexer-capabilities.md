@@ -1,4 +1,4 @@
-The **Video Analyzer for Media** service is designed to help you extract information from videos. It provides functionality that you can use for:
+The **Azure Video Indexer** service is designed to help you extract information from videos. It provides functionality that you can use for:
 
 - *Facial recognition* - detecting the presence of individual people in the image. This requires [Limited Access](https://aka.ms/cog-services-limited-access) approval.
 - *Optical character recognition* - reading text in the video.
@@ -12,5 +12,3 @@ The **Video Analyzer for Media** service is designed to help you extract informa
 The Video Analyzer service provides a portal website that you can use to upload, view, and analyze videos interactively.
 
 ![The Video Analyzer portal](../media/video-indexer-portal.png)
-
-You can use a free, standalone version of the Video Analyzer service (with some limitations), or you can connect it to an **Azure Media Services** resource in your Azure subscription for full functionality.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-evaluations-generate-synthetic-datasets.evaluate-endpoint
+title: Exercise - Evaluate an endpoint
+metadata:
+  title: Exercise - Evaluate an endpoint
+  description: Learn how to run an evaluation on an endpoint.
+  ms.date: 10/13/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-evaluate-endpoint.md)]

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-batch-predictions-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 10/25/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "How is the information about a machine learning model's expected inputs and outputs stored when tracking the model with MLflow in Microsoft Fabric?"
+    choices:
+    - content: "In the logged parameters stored with an experiment run."
+      isCorrect: false
+      explanation: "Incorrect. The logged parameters in an experiment run represent the values of the training parameters."
+    - content: "In the `MLmodel` file stored in the `model` folder."
+      isCorrect: true
+      explanation: "Correct. The `MLmodel` file contains the model's signature, which defines the model's expected inputs and outputs."
+    - content: "In the `pickle` file stored in the `model` folder."
+      isCorrect: false
+      explanation: "Incorrect. The `pickle` file contains the model itself."
+  - content: "In Microsoft Fabric, when working with tabular data, what type of model signature would be best to use?"
+    choices:
+    - content: "Column-based signature"
+      isCorrect: true
+      explanation: "Correct. Column-based signatures make for easier alignment with input columns."
+    - content: "Tensor-based signature"
+      isCorrect: false
+      explanation: "Incorrect. Tensor-based signatures provide greater flexibility and introduce unnecessary complexity."
+    - content: "Signature with params"
+      isCorrect: false
+      explanation: "Incorrect. The params field in signatures is optional and not necessary for tabular data."
+  - content: "Which parameters need to be specified when creating the `MLFlowTransformer` object?"
+    choices:
+    - content: "`inputData`, `outputCols`, `modelName` and `modelVersion`"
+      isCorrect: false
+      explanation: "Incorrect. `inputData` isn't a required parameter for the `MLFlowTransformer` object."
+    - content: "`inputCols`, `outputCols`, `modelName`, and `modelVersion`"
+      isCorrect: true
+      explanation: "Correct. All four parameters are used when creating the `MLFlowTransformer` object."
+    - content: "`inputData`, `predictions`, `modelName`, and `modelVersion`"
+      isCorrect: false
+      explanation: "Incorrect. `inputData` and `predictions` aren't parameters when creating the `MLFlowTransformer` object."

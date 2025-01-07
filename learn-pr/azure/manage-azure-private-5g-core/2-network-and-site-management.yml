@@ -2,13 +2,14 @@
 uid: learn.manage-azure-private-5g-core.network-and-site-management
 title: Network and site management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Network and site management
   description: Describes the tasks for managing a private mobile network and its sites.
-  ms.date: 11/29/2022
-  author: michael-weizhong-shan
-  ms.author: michaelshan
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.date: 07/29/2024
+  author: lnyswonger
+  ms.author: joemarshall
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-network-and-site-management.md)]

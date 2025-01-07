@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/13/2023
+  ms.date: 12/04/2024
   author: wwlpublish
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -16,34 +15,34 @@ quiz:
   questions:
   - content: "You must return the Name and Price columns from a table named Product in the Production schema. In the resulting rowset, you want the Name column to be named ProductName. Which of the following Transact-SQL statements should you use?"
     choices:
-    - content: "SELECT * FROM Product AS Production.Product;"
+    - content: "`SELECT * FROM Product AS Production.Product;`"
       isCorrect: false
       explanation: "Incorrect. Select Name and Price from Production.Product table, using the AS keyword to specify the alias ProductName for the Name column."
-    - content: "SELECT Name AS ProductName, Price FROM Production.Product;"
+    - content: "`SELECT Name AS ProductName, Price FROM Production.Product;`"
       isCorrect: true
       explanation: "Correct. Select Name and Price from Production.Product table, using the AS keyword to specify the alias ProductName for the Name column."
-    - content: "SELECT ProductName, Price FROM Production.Product;"
+    - content: "`SELECT ProductName, Price FROM Production.Product;`"
       isCorrect: false
       explanation: "Incorrect. Select Name and Price from Production.Product table, using the AS keyword to specify the alias ProductName for the Name column."
   - content: "You must retrieve data from a column that is defined as char(1). If the value in the column is a digit between 0 and 9, the query should return it as an integer value. Otherwise, the query should return NULL. Which function should you use?"
     choices:
-    - content: "CAST"
+    - content: "`CAST`"
       isCorrect: false
-      explanation: "Incorrect. Use TRY_CONVERT to convert the value to an integer. If the conversion fails, NULL will be returned."
-    - content: "NULLIF"
+      explanation: "Incorrect. Use `TRY_CONVERT` to convert the value to an integer. If the conversion fails, NULL will be returned."
+    - content: "`NULLIF`"
       isCorrect: false
-      explanation: "Incorrect. Use TRY_CONVERT to convert the value to an integer. If the conversion fails, NULL will be returned."
-    - content: "TRY_CONVERT"
+      explanation: "Incorrect. Use `TRY_CONVERT` to convert the value to an integer. If the conversion fails, NULL will be returned."
+    - content: "`TRY_CONVERT`"
       isCorrect: true
-      explanation: "Correct. Use TRY_CONVERT to convert the value to an integer. If the conversion fails, NULL will be returned."
+      explanation: "Correct. Use `TRY_CONVERT` to convert the value to an integer. If the conversion fails, NULL will be returned."
   - content: "You must return the Cellphone column from the Sales.Customer table. Cellphone is a varchar column that permits NULL values. For rows where the Cellphone value is NULL, your query should return the text 'None'. What query should you use?"
     choices:
-    - content: "SELECT ISNULL(Cellphone, 'None') AS Cellphone FROM Sales.Customer;"
+    - content: "`SELECT ISNULL(Cellphone, 'None') AS Cellphone FROM Sales.Customer;`"
       isCorrect: true
-      explanation: "Correct. Use ISNULL to return the specified value when the target column is NULL."
-    - content: "SELECT NULLIF(Cellphone, 'None') AS Cellphone FROM Sales.Customer;"
+      explanation: "Correct. Use `ISNULL` to return the specified value when the target column is NULL."
+    - content: "`SELECT NULLIF(Cellphone, 'None') AS Cellphone FROM Sales.Customer;`"
       isCorrect: false
-      explanation: "Incorrect. Use ISNULL to return the specified value when the target column is NULL."
-    - content: "SELECT CONVERT(varchar, Cellphone) AS None FROM Sales.Customer;"
+      explanation: "Incorrect. Use `ISNULL` to return the specified value when the target column is NULL."
+    - content: "`SELECT CONVERT(varchar, Cellphone) AS None FROM Sales.Customer;`"
       isCorrect: false
-      explanation: "Incorrect. Use ISNULL to return the specified value when the target column is NULL."
+      explanation: "Incorrect. Use `ISNULL` to return the specified value when the target column is NULL."

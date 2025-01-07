@@ -4,11 +4,10 @@ title: Exercise - Upload your project to GitHub
 metadata:
   title: Exercise - Upload your project to GitHub
   description: Prepare and execute a successful upload to GitHub.
-  ms.date: 06/26/2020
+  ms.date: 11/30/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 29
 content: |
   [!include[](includes/3-upload-your-repository-to-github.md)]

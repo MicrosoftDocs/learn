@@ -3,22 +3,22 @@ uid: learn.github.authenticate-authorize-user-identities-github
 metadata:
   title: Authenticate and authorize user identities on GitHub 
   description: Learn how to manage the authentication and authorization of user identities on GitHub.
-  ms.date: 11/17/2022
+  ms.date: 04/09/2024
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: github
 title: Authenticate and authorize user identities on GitHub
 summary: This module provides an overview of the authentication and authorization options available to you in your GitHub organization or GitHub Enterprise.
 abstract: |
   By the end of this module, you will:
-  - Be able to describe the Authentication and Authorization Model
-  - Understand how to manage user access to your GitHub organization through Authorization and Authentication tools
-  - Identify the supported identity providers and technologies that support secure repository access
-  - Understand the implications of enabling SAML SSO
-  - Identify the authorization and authentication options available, and understand the administrator’s role in enforcement of a secure access strategy for a GitHub enterprise
-  - Describe how users access private information in a GitHub organization
-  - Evaluate the benefits of enabling Team Synchronization to manage team membership
+  - Be able to describe the Authentication and Authorization Model.
+  - Understand how to manage user access to your GitHub organization through Authorization and Authentication tools.
+  - Identify the supported identity providers and technologies that support secure repository access.
+  - Understand the implications of enabling SAML SSO.
+  - Identify the authorization and authentication options available, and understand the administrator's role in enforcement of a secure access strategy for a GitHub enterprise.
+  - Describe how users access private information in a GitHub organization.
+  - Evaluate the benefits of enabling Team Synchronization to manage team membership.
 levels:
 - intermediate
 roles:

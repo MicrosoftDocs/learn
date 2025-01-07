@@ -2,13 +2,16 @@
 uid: learn.wwl.automate-deployment-of-sap-azure.use-external-tools-to-deploy
 title: Exercise - Deploy infrastructure Azure Resource Manager template for SAP on Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy infrastructure Azure Resource Manager template for SAP on Azure
   description: "Exercise - Deploy infrastructure Azure Resource Manager template for SAP on Azure"
-  ms.date: 03/13/2023
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/3-exercise-deploy-infrastructure-azure-resource-manager-template-for-sap.md)]

@@ -4,11 +4,10 @@ title: Use privileged access workstations
 metadata:
   title: Use privileged access workstations
   description: "Use privileged access workstations"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -21,10 +20,10 @@ quiz:
     choices:
     - content: "Windows Defender Credential Guard provides this protection. To implement Windows Defender Credential Guard, you require the Hyper-V feature, and ideally a TPM and Unified Extensible Firmware Interface (UEFI) lock."
       isCorrect: false
-      explanation: "That's incorrect. Windows Defender Credential Guard does provide this protection.  However, although a TPM and UEFI lock are optional but recommended, Secure boot is a requirement."
+      explanation: "Incorrect. Windows Defender Credential Guard does provide this protection.  However, although a TPM and UEFI lock are optional but recommended, Secure boot is a requirement."
     - content: "Windows Defender Device Guard provides this protection. To implement Windows Defender Device Guard, you require the Hyper-V feature, Secure boot, and ideally a TPM and UEFI lock."
       isCorrect: false
-      explanation: "That's incorrect. Windows Defender Device Guard combines the features of Windows Defender Application Control with Hyper-V to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code."
+      explanation: "Incorrect. Windows Defender Device Guard combines the features of Windows Defender Application Control with Hyper-V to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code."
     - content: "Windows Defender Credential Guard provides this protection. To implement Windows Defender Credential Guard, you require the Hyper-V feature, Secure boot, and ideally a TPM and UEFI lock."
       isCorrect: true
-      explanation: "That's correct. A TPM and UEFI lock are optional, but recommended."
+      explanation: "Correct. A TPM and UEFI lock are optional, but recommended."

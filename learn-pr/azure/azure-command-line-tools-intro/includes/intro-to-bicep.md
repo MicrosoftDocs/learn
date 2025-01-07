@@ -1,20 +1,12 @@
-# Bicep
-
-Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. In
-a Bicep file, you define the infrastructure you want to deploy to Azure, and then use that file
-throughout the development lifecycle to deploy your infrastructure. Your resources are deployed in a
-consistent manner.
-
-Bicep provides concise syntax, reliable type safety, and support for code reuse. Bicep offers a
-first-class authoring experience for your infrastructure-as-code solutions in Azure.
+In
+a Bicep file, you define the infrastructure that you want to deploy to Azure. You then use that file
+throughout the development lifecycle to deploy your infrastructure.
 
 ## Create a resource group
 
-Before creating a storage account, you need to create a resource group for your Azure storage
-account or use an existing resource group. A resource group is a logical container in which Azure
-resources are deployed and managed as a group.
+Before you create a storage account, you need to create a resource group or use an existing one.
 
-Create an Azure resource group named **storageaccountexamplerg** in the **eastus** region.
+Create an Azure resource group named `storageaccountexamplerg` in the `eastus` region:
 
 # [Azure CLI](#tab/azurecli)
 
@@ -32,7 +24,7 @@ New-AzResourceGroup -Name storageaccountexamplerg -Location eastus
 
 ## Create a storage account
 
-The following code can be used to create a Bicep file for provisioning an Azure storage account:
+Use the following code to create a Bicep file for provisioning an Azure storage account:
 
 ```Bicep
 @description('Specifies the name for resources.')
@@ -52,12 +44,12 @@ resource myStorageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
 }
 ```
 
-If you want to customize the storage account name, storage account names must be between 3 and 24
-characters in length and may contain numbers and lowercase letters only. Your storage account name
+If you want to customize the storage account name, remember that it must be 3 to 24
+characters in length and can contain numbers and lowercase letters only. Your storage account name
 must be unique within Azure.
 
 To deploy Bicep files, use the Azure CLI or Azure PowerShell as shown in the following examples.
-After the command is executed, the deployment begins and the resources are created in the specified
+After you run the command, the deployment begins and the resources are created in the specified
 resource group.
 
 # [Azure CLI](#tab/azurecli)
@@ -76,8 +68,8 @@ New-AzResourceGroupDeployment -ResourceGroupName storageaccountexamplerg -Templa
 
 ## Verify the storage account
 
-To verify an Azure storage account exists, use the Azure CLI or Azure PowerShell as shown in the
-following examples.
+To verify that an Azure storage account exists, use the Azure CLI or Azure PowerShell as shown in the
+following examples:
 
 # [Azure CLI](#tab/azurecli)
 
@@ -96,8 +88,8 @@ Get-AzStorageAccount -ResourceGroupName storageaccountexamplerg
 ## Clean up resources
 
 Deleting a resource group deletes the resource group and all resources
-contained within it. If resources outside the scope of the storage account created in this unit
-exist in the **storageaccountexamplerg** resource group, they will also be deleted.
+that it contains. If resources outside the scope of the storage account that you created in this unit
+exist in the `storageaccountexamplerg` resource group, they're also deleted.
 
 # [Azure CLI](#tab/azurecli)
 

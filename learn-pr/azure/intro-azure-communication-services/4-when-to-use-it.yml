@@ -2,14 +2,15 @@
 uid: learn.azure.intro-to-azure-communication-services.when-to-use-it
 title: When to use Azure Communication Services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Azure Communication Services
   description: "Explains how to evaluate when to use Azure Communication Services for your scenarios."
-  ms.date: 03/09/2022
-  author: ProbablePrime
-  ms.author: rifox
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/17/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-when-to-use-it.md)]

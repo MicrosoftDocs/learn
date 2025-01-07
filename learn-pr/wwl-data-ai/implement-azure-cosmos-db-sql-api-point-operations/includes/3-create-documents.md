@@ -17,13 +17,13 @@ Product saddle = new()
 
 Let’s infer there’s already a variable of type Microsoft.Azure.Cosmos.**Container** named **container**.
 
-We can asynchronously invoke the **CreateItemAsync\<\>** method passing in the generic Product type and the new item variable into the constructor.
+We can asynchronously invoke the **CreateItemAsync\<\>** method passing in the Product type and the new item variable into the constructor.
 
 ```csharp
 await container.CreateItemAsync<Product>(saddle);
 ```
 
-This invocation of the method will create the new item, but you will not have any metadata about the result of the operation. Alternatively, you can store the result of the operation in a variable of type **ItemResponse\<\>**.
+This invocation of the method creates the new item, but doesn't have any metadata about the result of the operation. Alternatively, you can store the result of the operation in a variable of type **ItemResponse\<\>**.
 
 ```csharp
 ItemResponse<Product> response = await container.CreateItemAsync<Product>(saddle);
@@ -34,7 +34,7 @@ double requestUnits = response.RequestCharge;
 Product item = response.Resource;
 ```
 
-If you are using a try-catch block, you can handle the **CosmosException** type, which includes a **StatusCode** property for HTTP status code values. There are a few common HTTP status codes that you should consider in your application code:
+If you're using a try-catch block, you can handle the **CosmosException** type, which includes a **StatusCode** property for HTTP status code values. There are a few common HTTP status codes that you should consider in your application code:
 
 | Code | Title | Reason |
 | :---: | :--- | :--- |

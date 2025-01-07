@@ -2,14 +2,15 @@
 uid: learn.intro-to-azure-advisor.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary of Azure Advisor benefits and additional reading.
   ms.date: 03/08/2023
   author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: ricardomac
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

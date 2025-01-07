@@ -2,15 +2,17 @@
 uid: learn.improve-reliability-deployment.1-introduction
 title: "Introduction"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Introduction"
   description: "Introduction"
-  ms.date: 05/07/2020
+  ms.date: 06/07/2024
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

@@ -1,17 +1,17 @@
-You configure Azure Stack Hub to support users from multiple Azure Active Directory (Azure AD) tenants, allowing them to use services in Azure Stack Hub. For example, consider the following scenario:
+You configure Azure Stack Hub to support users from multiple Microsoft Entra tenants, allowing them to use services in Azure Stack Hub. For example, consider the following scenario:
 
  -  You're the service administrator of `contoso.onmicrosoft.com`, where Azure Stack Hub is installed.
  -  You are the directory administrator of `fabrikam.onmicrosoft.com`, where guest users are located.
  -  Your company receives IaaS and PaaS services from your company and needs to allow users from the guest directory (`fabrikam.onmicrosoft.com`) to sign in and use Azure Stack Hub resources in `contoso.onmicrosoft.com`.
     
-    :::image type="content" source="../media/multi-tenancy-a7b2a87d.png" alt-text="Image showing multi-tenancy and Azure Active Directory.":::
+    :::image type="content" source="../media/multi-tenancy-a7b2a87d.png" alt-text="Image showing multi-tenancy and Microsoft Entra ID.":::
     
 
 This unit provides the steps required to configure multi-tenancy in Azure Stack Hub. In the scenario below, you complete steps to enable users from Fabrikam to sign in and consume services from the Azure Stack Hub deployment in Contoso.
 
 ### Configure Azure Stack Hub directory.
 
-In this section, you configure Azure Stack Hub to allow sign-ins from Fabrikam Azure AD directory tenants.
+In this section, you configure Azure Stack Hub to allow sign-ins from Fabrikam Microsoft Entra directory tenants.
 
 Onboard the guest directory tenant (Fabrikam) to Azure Stack Hub by configuring Azure Resource Manager to accept users and service principals from the guest directory tenant.
 

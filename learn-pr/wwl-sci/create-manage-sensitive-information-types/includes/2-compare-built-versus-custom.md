@@ -1,49 +1,56 @@
-Sensitive information types are used to identify sensitive items. Credit card number and EU debit card number are examples of sensitive information types. Sensitive information types look for specific patterns. Sensitive information types validate the data by looking at its format, its checksums, and look for relevant keywords or other information. Some of this functionality is performed by internal functions.  
+Sensitive information types (SITs) in Microsoft Purview help organizations identify and protect sensitive data such as personal identification numbers, financial information, and intellectual property. By using patterns like regular expressions, keywords, and checksums, SITs can automatically detect sensitive data in emails, documents, and databases to prevent unauthorized sharing or exposure. These built-in SITs, of which there are over 300, cover a wide range of common data types, including credit card numbers, social security numbers, and health records. Custom SITs can also be created to protect organization-specific data such as employee IDs and proprietary project codes.
 
-Microsoft 365 provides more than 100 built-in sensitive information types that can help to identify and protect credit card numbers, bank account numbers, passport numbers, and more, based on patterns that are defined by a regular expression (regex) or a function. These built-in definitions can help organizations to quickly deploy solutions in Microsoft 365 to protect company data, using data loss prevention (DLP), retention labels and policies and sensitivity labels.
+Most organizations can meet compliance requirements using built-in SITs, which integrate seamlessly with tools like Data Loss Prevention (DLP) and retention policies in Microsoft Purview. For organizations with more specific needs, custom SITs offer flexibility in identifying and securing unique data sets. This ensures that sensitive information remains protected, aligned with the organization's governance and compliance strategies.
 
-While the built-in sensitive information types help organizations to quickly identify commonly used types of sensitive data, some sensitive information is organization-specific and require custom sensitive information types. For example, employee IDs, project numbers or other key values of intellectual property may be important to certain industry sectors. To find and protect this information, organizations can create a custom sensitive information type.
+## Built-in sensitive information types
 
-## Sensitive information type parts
+Built-in sensitive information types are preconfigured to detect common sensitive data such as credit card numbers, social security numbers, bank account information, and passport numbers. These SITs use predefined patterns, regular expressions, and checksums to identify sensitive data across documents, emails, and databases.
 
-The fundamental components of sensitive information types are the same for built-in and custom sensitive information types and described in the following table:
+### Advantages of built-in SITs
 
-| **Component**| **Contains**|
-| :--- | :--- |
-| Primary pattern| Employee ID numbers, project numbers, etc. This is typically identified by a regular expression (RegEx), but it can also be a list of keywords.|
-| Additional evidence| Suppose you're looking for a nine-digit employee ID number. Not all nine-digit numbers are employee ID numbers, so you can look for more text with keywords like "employee", "badge", "ID", or other text patterns based on other regular expressions. This supporting evidence (also known as supporting or corroborative evidence) increases the likelihood that nine-digit number found in content is really an employee ID number and lowers the chance for false positives.|
-| Character proximity| The closer the primary pattern and the supporting evidence are to each other, the more likely the detected content is going to be what you are looking for. You can specify the character distance between the primary pattern and the supporting evidence that is also known as the proximity window. This is another factor to reduce false positives and increases the accuracy of finding actual sensitive information to protect.|
-| Confidence level| The more supporting evidence you have, the higher the likelihood that a match contains the sensitive information you're looking for. You can assign higher levels of confidence for matches that are detected by using more evidence. However, this also raises the number of false positives.|
+- **Quick deployment**: Built-in SITs are ready to use out-of-the-box and require no extra setup. They allow organizations to rapidly deploy data protection solutions for common data types.
 
-For example, the sensitive information type search pattern for a " U.S. social security number (SSN)" is defined as the following:
+- **Managed by Microsoft**: Microsoft continuously updates and maintains built-in SITs to ensure they meet the latest compliance and regulatory standards.
 
-- It uses four different functions to search for different regular expressions).
+- **Broad coverage**: These SITs cover a wide range of industries and sensitive data types, from financial information to healthcare records.
 
-- When a regular expression is matched and within 300 characters of a keyword from the *Keyword_ssn* list, this adds more evidence by proximity.
+### When to use built-in SITs
 
+Use built-in SITs when your organization deals with standard types of sensitive information, such as payment details, government-issued IDs, or health records. They're ideal for general compliance and data loss prevention (DLP) needs.
 
-> [!TIP]
-> Whenever possible, use the built-in sensitive information types first, because your organization will benefit from the Microsoft managed data matching patterns from the start.
+## Custom sensitive information types
 
-## Custom sensitive information type features
+Custom SITs allow organizations to define specific patterns and rules for identifying sensitive data unique to their industry or business operations. These can include internal employee IDs, proprietary project codes, or other forms of intellectual property.
 
-Typically, organizational requirements can be fulfilled using the built-in sensitive information types such as protecting customer credit card numbers or employees and customer personal information from accidental sharing. However, organizations may still need to protect custom sensitive data with custom sensitive information types. These requirements may include the need to protect exact data matches from spreadsheets or documents being shared.
+### Features of custom SITs
 
-The special features of custom sensitive information types include:
+- **Exact data match (EDM)**: Matches exact data values by comparing content to predefined databases, making it ideal for organizations that need to protect large datasets with precise information, such as patient records or employee data.
 
-- Exact Data Match (EDM)-based classification
+- **Document fingerprinting**: Converts standardized forms into custom SITs, enabling organizations to detect when sensitive documents, such as government forms or contracts, are shared.
 
-- Document Fingerprinting
+- **Keyword dictionaries**: Allows organizations to manage and detect large lists of sensitive keywords and phrases specific to their operations or industry, such as internal product codes or terminology.
 
-- Keyword dictionaries
+### Advantages of custom SITs
 
-The following table explains the use cases for the three special features:
+- **Flexibility**: Custom SITs allow organizations to create tailored protection for data that isn't covered by built-in options.
 
-| **Feature**| **What is it?**| **When to use it?**| **Recommendation**|
-| :--- | :--- | :--- | :--- |
-| **Exact Data Match (EDM)-based classification**| Enables the creation of databases with custom sensitive information types that refer to exact values. The database can be refreshed daily and contain up to 100 million rows of data.| When large quantities of sensitive information need to be matched daily, for example all the stored personal information of employees of an organization. EDM-based classification enables you to find exact data matches. For example, if the first- and family name and the date of birth of a certain employee is sent in a message, EDM classification can match this information from its database of sensitive information.| Best for organizations that need to store large amounts of personal information, such as hospitals, can benefit from EDM-based classification to make sure no personal information of patients are being shared.|
-| **Document Fingerprinting**| Converts a standard form into a sensitive information type.| A document fingerprint can be created on a blank patent template, Government forms or Employee information forms for Human Resources departments. Whenever the same template is used for creating a new form, the custom sensitive information type is matched independently from the rest of the content.| Ideally, organizations already have an established business practice of using certain forms to transmit sensitive information. After uploading an empty form to be converted to a document fingerprint, and then set up a corresponding policy, any documents in outbound mail or being shared, that match that fingerprint, are detected.|
-| **Keyword dictionaries**| Keyword dictionaries provide a simple solution for managing reused keyword lists for matching of company information at a large scale, supporting up to 1 MB of keywords in any language.| When identifying generic content, such as healthcare-related communication (ICD classification) or inappropriate or explicit language, keyword dictionaries can be used to detect certain words and take actions on them, such as preventing loss or enforcing company guidelines.| Keyword dictionaries aren't as accurate as EDM-based classification, because they only provide simple keywords detection, but they're useful when organizations need to detect industry-specific terms before they're shared with internals or externals or to enforce company guidelines.|
+- **Industry-specific needs**: Organizations in niche industries or with proprietary data requirements can use custom SITs to protect information unique to their operations.
+- **Exact precision**: By using features like exact data match or document fingerprinting, custom SITs offer higher accuracy in detecting specific sensitive information.
 
-Most organizations should start with the built-in sensitive information types for general protection against data loss of most common sensitive data. Then organizations should analyze their individual needs to protect specific data by creating custom sensitive information types. Afterwards organizations should then use the advanced features of custom sensitive information types, to increase accuracy and simplify management.
+### When to use custom SITs
 
+Use custom SITs when your organization has unique or proprietary data that needs protection, such as internal codes, specialized industry terminology, or precise employee data. Custom SITs are also valuable for regulatory compliance in highly specialized sectors.
+
+## Compare built-in vs custom SITs
+
+| **Criteria** | **Built-in SITs** | **Custom SITs** |
+| --- | --- | --- |
+| **Ease of use** | Preconfigured and ready to use | Requires manual setup and configuration |
+| **Maintenance** | Managed and updated by Microsoft | Must be managed and updated by the organization |
+| **Scope of coverage** | Covers common data types (financial, healthcare, etc.) | Can cover organization-specific data (employee IDs, project codes) |
+| **Accuracy** | High, but might result in some false positives | Can be precise using exact data match or document fingerprinting |
+| **Customization** | Limited to built-in data types | Fully customizable for unique data sets |
+| **Regulatory compliance** | Suitable for standard regulations | Can be customized to meet specific regulatory requirements in specific industries |
+| **Recommended use cases** | General data protection and compliance needs | Protecting proprietary or organization-specific data |
+
+Starting with built-in sensitive information types allows organizations to address general information security and compliance needs. As specific requirements arise, creating custom sensitive information types enables tailored protection strategies. Finally, using advanced features like exact data match and document fingerprinting helps increase accuracy and simplifies data protection management.

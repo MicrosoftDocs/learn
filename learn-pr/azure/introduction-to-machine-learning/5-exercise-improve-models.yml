@@ -2,13 +2,15 @@
 uid: learn.machinelearning.introduction-to-machine-learning.exercise-improve-models
 title: Exercise - Visualize inputs and outputs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Visualize inputs and outputs
   description: Exercise unit about visualizing machine learning inputs and outputs
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/21/2024
+  author: msakande
+  ms.author: mopeakande
+  ms.topic: unit
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/1-5-exercise-improve-models.ipynb
+

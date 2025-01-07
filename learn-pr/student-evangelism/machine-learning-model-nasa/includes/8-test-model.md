@@ -41,6 +41,6 @@ tree_model.predict([data_input])
 
 ## Continue to improve
 
-As you continue to improve your model in ways described throughout this learning path, keep an eye out on other [NASA rocket launches](https://www.nasa.gov/launchschedule/?azure-portal=true). See if your model can accurately predict the outcomes.
+As you continue to improve your model in ways described throughout this learning path, keep an eye out on other [NASA rocket launches](https://www.nasa.gov/event-type/launch-schedule/?azure-portal=true). See if your model can accurately predict the outcomes.
 
-You can also use weather predictions combined with your machine learning model to see if you can predict if there's a delay even before the launches happen!
+You can also use weather predictions combined with your machine-learning model to see if you can predict if there's a delay even before the launches happen!

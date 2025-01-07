@@ -3,14 +3,13 @@ uid: learn.wwl.use-css-styles.discover-more-css
 title: Discover more about CSS
 metadata:
   title: Discover more about CSS
-  description: "Discover more about CSS"
-  ms.date: 04/21/2023
+  description: "Explore more ways that CSS can make managing your content easier and your content more interesting for your readers."
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/3-discover-more-css.md)]

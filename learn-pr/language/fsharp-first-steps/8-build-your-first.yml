@@ -5,11 +5,11 @@ metadata:
   unitType: exercise
   title: "Exercise - Create your first F# application"
   description: "Create an F# application to print out a message to a text console"
-  ms.date: 07/20/2021
+  ms.date: 02/22/2023
   author: luisquintanilla
   ms.author: luquinta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/8-build-your-first.md)]

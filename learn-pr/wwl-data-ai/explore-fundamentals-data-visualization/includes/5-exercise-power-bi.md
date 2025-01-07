@@ -5,4 +5,4 @@ Now it's your chance to explore data modeling and visualization with Microsoft P
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/dp900-pbi-lab?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2262124&azure-portal=true)

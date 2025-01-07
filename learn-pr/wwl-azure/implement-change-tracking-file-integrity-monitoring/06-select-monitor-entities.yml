@@ -4,11 +4,10 @@ title: Select and monitor entities
 metadata:
   title: Select and monitor entities
   description: "Select and monitor entities"
-  ms.date: 11/29/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 sandbox: false
 labModal: false

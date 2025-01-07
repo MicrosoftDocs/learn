@@ -3,11 +3,10 @@ uid: learn.language.rust-generic-types-traits.6-exercise-implement-generic-type
 metadata:
   title: Exercise - Implement a generic type
   description: Implement a generic type.
-  ms.date: 05/16/2021
+  ms.date: 12/06/2022
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Implement a generic type
 durationInMinutes: 4
