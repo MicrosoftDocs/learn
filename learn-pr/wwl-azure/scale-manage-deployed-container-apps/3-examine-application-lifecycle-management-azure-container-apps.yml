@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Examine application lifecycle management in Azure Container Apps
   description: "Examine application lifecycle management in Azure Container Apps"
-  ms.date: 10/31/2024
+  ms.date: 01/07/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
