@@ -1,6 +1,6 @@
 ## Change group license assignment
 
-1.  Open http://entra.microsoft.com to get to the Microsoft Entra admin center.
+1.  Open https://entra.microsoft.com to get to the Microsoft Entra admin center.
 2.  In the left navigation, open **Groups**.
 3.  Select **All groups**, then select one of the available groups.
 4.  In the left navigation, under **Manage**, select **Licenses**.
