@@ -1,4 +1,4 @@
-Using Storage Migration Service to migrate data works well for most, but not all, scenarios. When using Storage Migration Service, you should consider the following:
+Using Storage Migration Service to migrate data works well for most, but not all, scenarios. When using Storage Migration Service, you should consider the following issues:
 
 - Locked files aren't migrated. If apps lock the files, the files won't be migrated when in use.
 - You can't migrate the identity of domain controllers. If you're migrating file shares on a domain controller and want to migrate the domain controller identity, you should demote that domain controller to be a member server.
@@ -8,7 +8,7 @@ Using Storage Migration Service to migrate data works well for most, but not all
 
 In most cases, Storage Migration Service provides good performance for data transfer. However, to optimize performance you can do the following:
 
-- Use Windows Server 2019 or later with the Storage Migration Service Proxy service installed as the destination. This allows file transfers to be performed directly from source to destination instead of being copied through the orchestrator server.
+- Use Windows Server 2019 or later with the Storage Migration Service Proxy service installed as the destination. This allows file transfers to be performed directly from source to destination instead of being copied through the orchestrator server. The Storage Migration Service Proxy service can't be installed on an evaluation version of Windows Server.
 - If you have enough network bandwidth, processor performance, and memory, increasing the number of threads used by Storage Migration Service Proxy might increase performance. By default, eight threads are allocated. You can increase the allocated threads by creating a FileTransferThreadCount value in the HKEY_Local_Machine\Software\Microsoft\SMSProxy key and setting a value up to 128.
 - Add processor cores and memory. Monitor source, destination, and orchestrator computers to identify whether processor and memory capacity are bottlenecks.
 - Create multiple jobs. Within a single job, source servers are processed one after the other. If you create multiple jobs, they can be performed in parallel. This is most effective when the Storage Migration Service Proxy is used on Windows Server 2019 or later destination servers.
