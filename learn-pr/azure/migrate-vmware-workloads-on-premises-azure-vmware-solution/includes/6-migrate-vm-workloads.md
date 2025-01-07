@@ -14,7 +14,7 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
 1. Select **Migrate**.
 
-    :::image type="content" source="../media/6-hcx-migrate-virtual-machine.png" alt-text="Screenshot of where to start the migration for existing VMs in the on-premises VMware environment."lightbox="../media/6-hcx-migrate-virtual-machine.png":::
+    :::image type="content" source="../media/6-hcx-migrate-virtual-machines.png" alt-text="Screenshot of where to start the migration for existing VMs in the on-premises VMware environment."lightbox="../media/6-hcx-migrate-virtual-machines.png":::
 
 1. The list of virtual machines available for migration appears on the display. Check the **Name**(s) you want, then select **Add**.
 
