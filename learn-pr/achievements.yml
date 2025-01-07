@@ -4452,6 +4452,26 @@ achievements:
   title: Refactor Node.js Express APIs into serverless Azure Functions APIs
   summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
   iconUrl: /training/achievements/shift-express-api-azure-functions.svg
+- uid: learn.beginner-python.use-boolean-types.badge
+  type: badge
+  title: Use Boolean logic in Python
+  summary: Explore how to use Boolean logic in Python to craft complex expressions that apply conditional logic.
+  iconUrl: /training/achievements/python-use-boolean-types.svg
+- uid: learn.beginner-python.use-strings.badge
+  type: badge
+  title: Use strings in Python
+  summary: Strings and string operations are among the main core types in Python. Manipulating text is an essential developer skill, and Python offers several ways to work with strings.
+  iconUrl: /training/achievements/python-use-strings.svg
+- uid: learn.beginner-python.use-math-operators.badge
+  type: badge
+  title: Use mathematical operations in Python
+  summary: Almost every application a developer creates involves some level of math. This module explores the core functionality in Python and arithmetic operators. You'll also explore how to perform more manipulations of data and numbers. You'll put this knowledge to use to create a project to determine the distance between planets.
+  iconUrl: /training/achievements/python-math-operators.svg  
+- uid: learn.beginner-python.trophy
+  type: trophy
+  title: Python for beginners
+  summary: Get started with Python! Learn how to create programs and projects in Python. Work with strings, lists, loops, dictionaries, and functions.
+  iconUrl: /training/achievements/beginner-python.svg
 - uid: learn.student-evangelism.python-flask-build-ai-web-app.badge
   type: badge
   title: Build an AI web app by using Python and Flask
@@ -4472,6 +4492,11 @@ achievements:
   title: Introduction to Python
   summary: Learn how to write a few lines of Python code, declare variables, and work with console input and output.
   iconUrl: /training/achievements/intro-to-python.svg
+- uid: learn.beginner-python.create-run-program.badge
+  type: badge
+  title: Write your first Python programs
+  summary: In this module, you'll learn a variety of topics, like input and output to the console, variables and data types, and type conversion.
+  iconUrl: /training/achievements/python-create-run-program.svg
 - uid: learn.student-evangelism.python-object-oriented-programming.badge
   type: badge
   title: Introduction to object-oriented programming with Python
@@ -4535,3 +4560,8 @@ achievements:
   title: Understand advanced data visualization concepts
   summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
   iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
+- uid: learn.wwl.monitor-data-real-time-power-bi.badge
+  type: badge
+  title: Monitor data in real-time with Power BI
+  summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
+  iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg

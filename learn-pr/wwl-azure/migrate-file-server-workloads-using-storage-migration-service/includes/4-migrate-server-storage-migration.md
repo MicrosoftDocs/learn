@@ -5,18 +5,15 @@ After you have prepared all the servers for the data migration, you can begin to
 
 ## Inventory source servers
 
-All phases of the migration are controlled by a job that you create for the purpose. The first stage in the job is inventorying source servers. You can identify whether Windows servers or Linux servers are being migrated, and you'll be prompted for credentials to gather information from the source servers.
+All phases of the migration are controlled by a job that you create for the purpose. The first stage in the job is inventorying source servers. You can identify whether Windows servers or Linux servers are being migrated, and you're prompted for credentials to gather information from the source servers.
 
 After you've provided the basic information, add the servers to be inventoried. If you know the server names, enter them in directly. Otherwise, you can search for servers in Active Directory Domain Services (AD DS). After all the servers are added, start a scan.
 
 The scan of the source servers identifies:
 
 - Shares
-
 - Server configuration
-
 - Network adapter configuration
-
 - Volumes
 
 [![Screenshot displaying Storage Migration Service page in Windows Admin Center. Results of scans for servers to be migrated are displayed.](../media/inventory.png)](../media/inventory.png#lightbox)
@@ -28,11 +25,8 @@ To transfer data, you must enter credentials that have administrative permission
 If you want to create an Azure virtual machine (VM) instead of specifying an existing server, the following are required:
 
 - A valid Azure subscription.
-
 - An existing Azure Compute resource group where you have Create rights.
-
 - An existing Azure Virtual Network (VNet) and subnet.
-
 - An Azure Express Route or virtual private network (VPN) solution tied to the VNet and subnet that allows connectivity from this Azure infrastructure as a service (IaaS) VM to your on-premises network and all the computers being used for migration.
 
 To identify where the source data is to be migrated, you must map source volumes to the volumes on the destination servers. You also must identify which shares you want to migrate. In most cases, you won't want to migrate administrative shares.
@@ -60,9 +54,7 @@ Cutting over to the destination server moves the identity information from the s
 When you perform the cutover, you must specify:
 
 - Which adapter on the destination server will be configured with the source IP addresses.
-
 - The IP address to assign to the source server.
-
 - The name to assign to the source server.
 
 When you perform the cutover, user access to the migrated data will be interrupted as the servers are renamed and restarted. This process is typically performed during a maintenance window. After the cutover is complete, users and apps can access the data by using the same server names, IP addresses, and share names as they used before the migration.
@@ -70,4 +62,3 @@ When you perform the cutover, user access to the migrated data will be interrupt
 After a cutover, there's no automated way to roll back to the source server. You can manually reconfigure the computer names and IP addresses on the source and destination servers to roll back.
 
 [![Screenshot displaying Storage Migration Service page in Windows Admin Center. Information is displayed for how the network configuration of the source server will move to the destination.](../media/cutover.png)](../media/cutover.png#lightbox)
-

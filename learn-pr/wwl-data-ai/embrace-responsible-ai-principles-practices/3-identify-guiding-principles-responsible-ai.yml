@@ -6,12 +6,13 @@ metadata:
   prefetch-feature-rollout: true
   title: Identify guiding principles for responsible AI
   description: "Identify guiding principles for responsible AI"
-  ms.date: 08/12/2024
+  ms.date: 01/07/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
   ms.custom:
   - N/A
+  - ai-learning-hub
 durationInMinutes: 12
 content: |
   [!include[](includes/3-identify-guiding-principles-responsible-ai.md)]
