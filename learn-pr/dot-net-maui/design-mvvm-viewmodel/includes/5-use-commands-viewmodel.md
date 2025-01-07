@@ -22,7 +22,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 }
 ```
 
-The `ICommand` interface has an `Execute` method that's called when the button is pressed. In this way, the `ICommand.Execute` directly replaces `Button.Click` event-handling code.
+The `ICommand` interface has an `Execute` method which is called when the button is pressed. In this way, the `ICommand.Execute` directly replaces `Button.Click` event-handling code.
 
 The full `ICommand` interface has two more methods: `CanExecute` and `CanExecuteChanged` that are used to determine whether a control should appear enabled or disabled.
 
@@ -72,7 +72,7 @@ In this code, the `Execute` behavior is provided by the method `GiveBonusExecute
 
 The `ICommand` interface accepts an `object` parameter for the `CanExecute` and `Execute` methods. .NET MAUI implements this interface without any type checking through the `Command` class. The delegates you attach to the command must do their own type-checking to ensure that the correct parameter is passed. .NET MAUI also provides the `Command<T>` implementation where you set the type of parameter expected. When you create a command that accepts a single type of parameter, use `Command<T>`.
 
-.NET MAUI controls that implement the command pattern provide the `CommandParameter` property. By setting this property, you can pass a parameter to the command when it's invoked with `Execute`, or when it checks the `CanExecute` method for status.
+.NET MAUI controls that implement the command pattern provide the `CommandParameter` property. By setting this property, you can pass a parameter to the command when you invoke it with `Execute`, or when the command checks the `CanExecute` method for status.
 
 In this example, the string value "25" is sent to the command:
 
