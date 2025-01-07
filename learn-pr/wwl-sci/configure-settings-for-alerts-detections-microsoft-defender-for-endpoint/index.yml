@@ -27,6 +27,7 @@ products:
 - m365
 - m365-security-center
 - defender-endpoint
+- defender-xdr
 subjects:
 - threat-protection
 units:
