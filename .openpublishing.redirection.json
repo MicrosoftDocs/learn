@@ -37169,56 +37169,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/paths/implement-advanced-data-visualization-techniques/index.md",
-      "redirect_url": "/training/paths/build-power-bi-visuals-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/index.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/5-create-custom-visuals.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/2-create-import-custom-report-theme.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/4-design-configure-power-bi-reports-for-accessibility.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/3-enable-personalized-visuals-report.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/1-introduction.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/7-knowledge-check.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/6-review-report-performance-use-performance-analyzer.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-data-ai/understand-advanced-data-visualization-concepts/8-summary.md",
-      "redirect_url": "/power-bi/create-reports/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/paths/python-partnership/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
