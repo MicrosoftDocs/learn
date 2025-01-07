@@ -2,9 +2,11 @@
 uid: learn.wwl.design-implement-private-access-to-azure-services.define-private-link-service-private-endpoint
 title: Define Private Link Service and private endpoint
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Define Private Link Service and private endpoint
   description: "Define Private Link Service and private endpoint"
-  ms.date: 12/02/2024
+  ms.date: 01/06/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit

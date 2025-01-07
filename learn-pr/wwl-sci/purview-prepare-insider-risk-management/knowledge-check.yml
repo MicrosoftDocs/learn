@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-prepare-insider-risk-management.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 1/3/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your organization wants to address insider risks effectively. What is the first step you should take in developing a successful approach?"
+    choices:
+    - content: "Implement default policies in Microsoft Purview Insider Risk Management."
+      isCorrect: false
+      explanation: "Incorrect: Applying default policies without planning skips critical steps like stakeholder input and strategy development."
+    - content: "Work with stakeholders across departments to align on goals and strategy."
+      isCorrect: true
+      explanation: "Correct: Collaborating with stakeholders ensures the approach is aligned across teams and builds a strong foundation for managing risks."
+    - content: "Enable analytics to begin identifying potential risks."
+      isCorrect: false
+      explanation: "Incorrect: Enabling analytics is valuable but happens later during the configuration process, not as an initial step."
+
+  - content: "Your company operates in multiple regions and needs to address compliance variations in insider risk policies. How should you plan for this?"
+    choices:
+    - content: "Use a single global policy to simplify management."
+      isCorrect: false
+      explanation: "Incorrect: A single global policy risks non-compliance with regional laws."
+    - content: "Focus policies on technical risks, ignoring location-based differences."
+      isCorrect: false
+      explanation: "Incorrect: Ignoring location-based differences leads to incomplete risk coverage."
+    - content: "Tailor policies by region or role and assign investigators fluent in local languages."
+      isCorrect: true
+      explanation: "Correct: Regional tailoring ensures compliance and builds trust with employees."
+
+  - content: "What prerequisite must be in place to configure and manage Insider Risk Management?"
+    choices:
+    - content: "Enable audit logging in Microsoft 365."
+      isCorrect: true
+      explanation: "Correct: Audit logging is critical for tracking activities and supporting analytics."
+    - content: "Assign the Insider Risk Viewer role to all users."
+      isCorrect: false
+      explanation: "Incorrect: Assigning the Viewer role to all users is unnecessary and unrelated to configuration."
+    - content: "Install software on endpoints."
+      isCorrect: false
+      explanation: "Incorrect: Installing software on endpoints isn't required to use Insider Risk Management."      
+
+  - content: "A new policy for detecting data theft by departing users is being tested. What's the best way to start?"
+    choices:
+    - content: "Use a small, anonymized group of users in a production environment."
+      isCorrect: true
+      explanation: "Correct: Testing with a small group allows evaluation in real-world scenarios with reduced bias."
+    - content: "Deploy the policy across the organization immediately."
+      isCorrect: false
+      explanation: "Incorrect: Deploying immediately increases risk of errors."
+    - content: "Test in a sandbox environment with all users."
+      isCorrect: false
+      explanation: "Incorrect: Sandbox testing isn't representative of production conditions."
+
+  - content: "You need to integrate external tools with Insider Risk Management for centralized alert management. What do you enable?"
+    choices:
+    - content: "HR data connectors."
+      isCorrect: false
+      explanation: "Incorrect: HR connectors provide data but don't support external tool integration."
+    - content: "Intelligent detections."
+      isCorrect: false
+      explanation: "Incorrect: Intelligent detections focus on refining internal alerts."
+    - content: "Office 365 Management Activity API."
+      isCorrect: true
+      explanation: "Correct: This API enables exporting alerts to SIEM platforms like Microsoft Sentinel."

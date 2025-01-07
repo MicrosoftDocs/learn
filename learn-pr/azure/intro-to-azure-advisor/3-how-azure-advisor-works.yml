@@ -8,8 +8,8 @@ metadata:
   title: How Azure Advisor works
   description: Learn how Azure Advisor provides proactive, actionable, and personalized recommendations to help you follow best practices in a Microsoft cloud environment.
   ms.date: 03/08/2023
-  author: aortoll
-  ms.author: anortoll
+  author: ricmmartins  
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 5
 content: |
