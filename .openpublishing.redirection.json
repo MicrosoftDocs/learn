@@ -37562,6 +37562,11 @@
       "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/4-create-real-time-dashboards.md",
       "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/monitor-data-real-time-power-bi/2-describe-power-bi-real-time.md",
+      "redirect_url": "/power-bi/connect-data/service-real-time-streaming",
+      "redirect_document_id": false
     }
   ]
 }
