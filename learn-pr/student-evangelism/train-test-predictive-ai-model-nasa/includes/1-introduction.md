@@ -19,4 +19,3 @@ In this module, you'll learn:
 
 - Ability to write and run introductory Python programs
 - [Visual Studio Code](https://aka.ms/LearnOnVSCode?azure-portal=true) with the Python extension installed
-- [AI libraries](/training/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true) installed
