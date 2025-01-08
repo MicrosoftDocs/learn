@@ -4585,6 +4585,16 @@ achievements:
   title: Understand advanced data visualization concepts
   summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
   iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
+- uid: learn.student-evangelism.machine-learning-predict-launch-delay-nasa.trophy
+  type: trophy
+  title: Predict rocket launch delays with machine learning
+  summary: This learning path introduces you to the world of machine learning. You'll take a real-life problem that NASA faces and apply machine learning to solve it. The goal is to get students excited and curious to discover how machine learning could help solve other problems in space discovery and different aspects of life.
+  iconUrl: /training/achievements/machine-learning-predict-launch-delay-nasa.svg
+- uid: learn.student-evangelism.introduction-rocket-launch-nasa.badge
+  type: badge
+  title: Introduction to rocket launches
+  summary: Get an introduction to how NASA chooses a date for a rocket launch and discover machine learning fundamentals.
+  iconUrl: /training/achievements/student-evangelism/introduction-rocket-launch-nasa.svg
 - uid: learn.student-evangelism.basic-python-nasa.badge
   type: badge
   title: Write basic Python in Notebooks
