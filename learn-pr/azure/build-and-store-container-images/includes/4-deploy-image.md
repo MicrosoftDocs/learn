@@ -8,7 +8,7 @@ Azure Container Registry doesn't support unauthenticated access and requires aut
 - The **admin account** included with each registry. The admin account is disabled by default.
 
 > [!IMPORTANT]
-> The admin account provides a quick option to try a new registry. You can enable the account and use the username and password in workflows and apps that need access. After you've confirmed the registry works as expected, you should disable the admin account and use Microsoft Entra identities to ensure the security of your registry. Do not share the admin account credentials with others.
+> The admin account provides a quick option to try a new registry. You can enable the account and use the username and password in workflows and apps that need access. After you've confirmed the registry works as expected, you should disable the admin account and use Microsoft Entra identities to ensure the security of your registry. Don't share the admin account credentials with others.
 
 ## Enable the registry admin account
 
