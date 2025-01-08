@@ -58,8 +58,10 @@ Use the following steps to extend a Network:
 
     :::image type="content" source="../media/6-hcx-create-network-extension.png" alt-text="Screenshot shows where to create a network extension."lightbox="../media/6-hcx-create-network-extension.png":::
 
-1. Select the network you want to extend and select **Next**.
+1. Select the network you want to extend, then select **Next**.
 
+    :::image type="content" source="../media/6-hcx-select-network-extension.png" alt-text="Screenshot shows where to select a network extension."lightbox="../media/6-hcx-select-network-extension.png":::
 
+1. 
 
 
