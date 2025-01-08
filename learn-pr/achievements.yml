@@ -4585,6 +4585,66 @@ achievements:
   title: Understand advanced data visualization concepts
   summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
   iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
+- uid: learn.beginner-python.create-run-jupyter-notebook.badge
+  type: badge
+  title: Get started with Jupyter notebooks for Python
+  summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive, runnable Markdown and code elements.
+  iconUrl: /training/achievements/python-create-jupyter-notebook.svg
+- uid: learn.beginner-python.create-manage-projects.badge
+  type: badge
+  title: Create and manage projects in Python
+  summary: To manage projects, you need a virtual environment, packages that will help you develop faster, and a strategy for maintaining packages.
+  iconUrl: /training/achievements/python-create-manage-projects.svg
+- uid: learn.use-azure-maps-to-track-air-pollution.badge
+  type: badge
+  title: Track global air quality with Azure Maps
+  summary: This module shows how to track global air quality by using the Azure Maps web SDK and pollution data from a third-party air quality API.
+  iconUrl: /training/achievements/advocates/use-azure-maps-to-track-air-pollution.svg
+- uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.badge
+  type: badge
+  title: Classify types of space rocks in random photos by using artificial intelligence
+  summary: Learn how to build an artificial intelligence model to predict types of space rocks in images. Train and test your model by using random photos.
+  iconUrl: /training/achievements/student-evangelism/train-test-predictive-ai-model-nasa.svg
+- uid: learn.student-evangelism.analyze-rock-images-ai-nasa.badge
+  type: badge
+  title: Analyze images of rocks by using artificial intelligence
+  summary: Identify data to add to an artificial intelligence model that classifies space rocks in random photos.
+  iconUrl: /training/achievements/student-evangelism/analyze-rock-images-ai-nasa.svg
+- uid: learn.classify-space-rocks-artificial-intelligence-nasa.trophy
+  type: trophy
+  title: Classify space rocks by using Python and artificial intelligence
+  summary: This learning path gives you a view into the worlds of AI and space. Learn how to create an AI model that can classify the type of space rock in a random photo.
+  iconUrl: /training/achievements/classify-space-rocks-artificial-intelligence-nasa.svg
+- uid: learn.student-evangelism.research-space-rocks-ai-nasa.badge
+  type: badge
+  title: Learn about space rocks and how to classify them
+  summary: Learn about space rocks, where they're found, and why they're valuable for scientific research.
+  iconUrl: /training/achievements/student-evangelism/research-space-rocks-ai-nasa.svg
+- uid: learn.student-evangelism.introduction-artificial-intelligence.nasa.badge
+  type: badge
+  title: Prepare to research space rocks by using artificial intelligence
+  summary: Learn about the scientific research of space rocks and how artificial intelligence can enhance this study.
+  iconUrl: /training/achievements/student-evangelism/introduction-artificial-intelligence-nasa.svg
+- uid: learn.student-evangelism.collect-manipulate-data-python-nasa.badge
+  type: badge
+  title: Data collection and manipulation
+  summary: Learn about the steps to import data into Python and clean the data for use in creating machine learning models.
+  iconUrl: /training/achievements/student-evangelism/collect-manipulate-data-python-nasa.svg
+- uid: learn.student-evangelism.learn.student-evangelism.machine-learning-model-nasa.badge
+  type: badge
+  title: Build a machine learning model
+  summary: In this module, you focus on a local analysis of your data by using scikit-learn, and use a decision tree classifier to gain knowledge from raw weather and rocket launch data.
+  iconUrl: /training/achievements/student-evangelism/machine-learning-model-nasa.svg
+- uid: learn.student-evangelism.machine-learning-predict-launch-delay-nasa.trophy
+  type: trophy
+  title: Predict rocket launch delays with machine learning
+  summary: This learning path introduces you to the world of machine learning. You'll take a real-life problem that NASA faces and apply machine learning to solve it. The goal is to get students excited and curious to discover how machine learning could help solve other problems in space discovery and different aspects of life.
+  iconUrl: /training/achievements/machine-learning-predict-launch-delay-nasa.svg
+- uid: learn.student-evangelism.introduction-rocket-launch-nasa.badge
+  type: badge
+  title: Introduction to rocket launches
+  summary: Get an introduction to how NASA chooses a date for a rocket launch and discover machine learning fundamentals.
+  iconUrl: /training/achievements/student-evangelism/introduction-rocket-launch-nasa.svg
 - uid: learn.student-evangelism.basic-python-nasa.badge
   type: badge
   title: Write basic Python in Notebooks
