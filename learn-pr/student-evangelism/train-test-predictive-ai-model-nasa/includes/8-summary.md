@@ -10,11 +10,7 @@ In this lesson, you built an AI model to detect different types of space rocks.
 
 - You tested your model to predict what types of rocks were shown in random photos.
 
-> *Visualization credit: The model visualizations in this lesson are inspired by the work of Grant Sanderson. To learn more, visit https://www.3blue1brown.com/.*
-
-## Next steps
-
-Continue with the series and learn how to [Predict rocket launch delays with machine learning](../../../paths/machine-learning-predict-launch-delay-nasa/index.yml).
+> *Visualization credit: The model visualizations in this lesson are inspired by the work of Grant Sanderson. To learn more, visit https://www.3blue1brown.com/.*.
 
 > [!TIP]
 > Remember, this module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/XoHR4p8AO9o?azure-portal=true) in a new tab.

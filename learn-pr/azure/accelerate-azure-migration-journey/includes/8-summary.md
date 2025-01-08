@@ -8,11 +8,10 @@ In this module, you completed the following objectives:
 
 # Learn more
 
-Many additional resources are available to help you migrate to Azure.
+Many more resources are available to help you migrate to Azure.
 
 - [Azure migration and modernization center](https://azure.microsoft.com/solutions/migration/)
-- Microsoft [Cloud Adoption Framework](https://azure.microsoft.com/solutions/cloud-enablement/cloud-adoption-framework/)
+- [Microsoft Cloud Adoption Framework for Azure](https://azure.microsoft.com/solutions/cloud-enablement/cloud-adoption-framework/)
 - [Create your Azure free account](https://azure.microsoft.com/free/?azure-portal=true)
-- ebook: [Best practices to accelerate your cloud migration](https://techcommunity.microsoft.com/t5/azure-migration-and/best-practices-for-accelerating-cloud-migration/ba-p/1534495)
-- ebook: [Cloud Migration Simplified](https://azure.microsoft.com/resources/cloud-migration-simplified/?azure-portal=true)
-- Cloud migration and modernization [resources](https://azure.microsoft.com/solutions/migration/)
+- [Best practices to accelerate your cloud migration](https://techcommunity.microsoft.com/t5/azure-migration-and/best-practices-for-accelerating-cloud-migration/ba-p/1534495)
+- [Cloud migration and modernization resources](https://azure.microsoft.com/solutions/migration/)

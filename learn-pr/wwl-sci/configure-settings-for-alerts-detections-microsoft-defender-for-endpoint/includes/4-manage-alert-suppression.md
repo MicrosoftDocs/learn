@@ -1,10 +1,10 @@
-There might be scenarios where you need to suppress alerts from appearing in the portal. You can create suppression rules for specific alerts known to be innocuous, such as known tools or processes in your organization.
+There might be scenarios where you need to perform *alert tuning* to suppress alerts from appearing in the portal. You can create alert tuning rules for specific alerts known to be innocuous, such as known tools or processes in your organization.
 
-**View existing rules**
+### View existing rules
 
-You can view a list of all the suppression rules and manage them in one place. You can also turn an alert suppression rule on or off by completing these actions:
+You can view a list of all the alert tuning rules and manage them in one place. You can also turn an alert tuning rule on or off by completing these actions:
 
-1. In the Microsoft Defender portal, select **Settings** then select **Endpoints** and then under Rules select **Alert suppression**. The list of suppression rules that users in your organization have created is displayed.
+1. In the Microsoft Defender portal, select **Settings**, select **Microsoft Defender XDR**, and then under Rules select **Alert tuning**. The list of *Alert tuning* rules that users in your organization have created are displayed.
 
 1. Select a rule by selecting the check-box beside the rule name.
 

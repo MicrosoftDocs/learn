@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/01/2022
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -22,10 +22,10 @@ quiz:
     choices:
     - content: "IP address of the orchestrator server"
       isCorrect: false
-      explanation: "Incorrect. You do not need to provide the IP address of the orchestrator server when configuring a cutover operation."
+      explanation: "Incorrect. You don't need to provide the IP address of the orchestrator server when configuring a cutover operation."
     - content: "IP address of the domain controller"
       isCorrect: false
-      explanation: "Incorrect. You do not need to provide the IP address of a domain controller during a cutover operation."
+      explanation: "Incorrect. You don't need to provide the IP address of a domain controller during a cutover operation."
     - content: "Name to assign the source server"
       isCorrect: true
       explanation: "Correct. When having Storage Migration Services assign the identity of the source server to the destination server, you must provide a new name for the source server."
@@ -36,18 +36,18 @@ quiz:
       explanation: "Correct. You need an Azure Express Route or VPN solution associated with the VNet or subnet that will host the destination Azure IaaS VM."
     - content: "Enable SMB over QUIC on the Orchestrator server"
       isCorrect: false
-      explanation: "Incorrect. SMB over QUIC does not need to be enabled and is not a part of the Storage Migration Service process."
+      explanation: "Incorrect. SMB over QUIC doesn't need to be enabled and isn't a part of the Storage Migration Service process."
     - content: "Azure DNS reverse lookup zone"
       isCorrect: false
-      explanation: "Incorrect. Storage Migration Services does not use Azure DNS."
+      explanation: "Incorrect. Storage Migration Services doesn't use Azure DNS."
   - content: "Which of the following firewall rules must be enabled on the Storage Migration Services orchestrator server?"
     choices:
     - content: "Hyper-V (RPC)"
       isCorrect: false
-      explanation: "Incorrect. The Hyper-V (RPC) firewall rule does not need to be enabled on the orchestrator server."
+      explanation: "Incorrect. The Hyper-V (RPC) firewall rule doesn't need to be enabled on the orchestrator server."
     - content: "File and Printer Sharing (SMB-In)"
       isCorrect: true
       explanation: "Correct. The File and Printer Sharing (SMB-In) firewall rule must be enabled on the orchestrator server."
     - content: "BranchCache Peer Discovery (WSD-In)"
       isCorrect: false
-      explanation: "Incorrect. The BranchCache Peer Discovery (WSD-In) firewall rule does not need to be enabled on the orchestrator server."
+      explanation: "Incorrect. The BranchCache Peer Discovery (WSD-In) firewall rule doesn't need to be enabled on the orchestrator server."
