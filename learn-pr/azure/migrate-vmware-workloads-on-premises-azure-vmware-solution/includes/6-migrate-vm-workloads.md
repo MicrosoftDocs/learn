@@ -48,6 +48,8 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
 1. Verify migration has started.
 
+    :::image type="content" source="../media/6-hcx-add-rav-migration-started.png" alt-text="Screenshot shows the migration has started."lightbox="../media/6-hcx-add-rav-migration-started.png":::
+
 ## Configure network extension
 
 Extend a network when you plan to vMotion virtual machines keeping the same IP addresses as the source vSphere environment.
@@ -63,5 +65,8 @@ Use the following steps to extend a Network:
     :::image type="content" source="../media/6-hcx-select-network-extension.png" alt-text="Screenshot shows where to select a network extension."lightbox="../media/6-hcx-select-network-extension.png":::
 
 1. 
+
+
+
 
 
