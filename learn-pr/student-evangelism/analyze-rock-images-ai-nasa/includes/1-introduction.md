@@ -20,7 +20,6 @@ In this module, you will:
 
 <!-- Links -->
 [Kaggle]: https://www.kaggle.com
-[AILibs]: /training/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true
 [VideoWalkthrough]: https://youtu.be/XoHR4p8AO9o?azure-portal=true
 [VS Code]: https://aka.ms/LearnOnVSCode?azure-portal=true
 [NASA Space Rocks DataSet]: https://www.kaggle.com/datasets/ifeoyelakin/nasa-space-rocks

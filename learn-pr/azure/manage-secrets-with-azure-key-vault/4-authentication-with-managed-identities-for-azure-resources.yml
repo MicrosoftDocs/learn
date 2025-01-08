@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Vault authentication with managed identities for Azure resources
   description: Vault authentication with managed identities for Azure resources
-  ms.date: 11/06/2023
+  ms.date: 12/12/2024
   author: msmbaldwin
   ms.author: mbaldwin
   ms.topic: unit
@@ -20,26 +20,26 @@ quiz:
     choices:
     - content: The app uses a certificate to authenticate instead of a secret.
       isCorrect: false
-      explanation: When you enable managed identity on your web app, Azure activates a separate token-granting REST service specifically for use by your app. Your app will request tokens from this service instead of Microsoft Entra ID.
+      explanation: When you enable managed identity on your web app, Azure activates a separate token-granting REST service specifically for use by your app. Your app requests tokens from this service instead of Microsoft Entra ID.
     - content: Each user of the app must enter a password.
       isCorrect: false
-      explanation: When you enable managed identity on your web app, Azure activates a separate token-granting REST service specifically for use by your app. Your app will request tokens from this service instead of Microsoft Entra ID.
+      explanation: When you enable managed identity on your web app, Azure activates a separate token-granting REST service specifically for use by your app. Your app requests tokens from this service instead of Microsoft Entra ID.
     - content: The app gets tokens from a token service instead of Microsoft Entra ID.
       isCorrect: true
-      explanation: When you enable managed identity on your web app, Azure activates a separate token-granting REST service specifically for use by your app. Your app will request tokens from this service instead of Microsoft Entra ID.
-    - content: Managed identities are automatically recognized by Azure Key Vault and authenticated automatically.
+      explanation: When you enable managed identity on your web app, Azure activates a separate token-granting REST service specifically for use by your app. Your app requests tokens from this service instead of Microsoft Entra ID.
+    - content: Azure Key Vault automatically recognizes managed identities and authenticates them automatically.
       isCorrect: false
-      explanation: When you enable managed identity on your web app, Azure activates a separate token-granting REST service specifically for use by your app. Your app will request tokens from this service instead of Microsoft Entra ID.
+      explanation: When you enable managed identity on your web app, Azure activates a separate token-granting REST service specifically for use by your app. Your app requests tokens from this service instead of Microsoft Entra ID.
 
   - content: Which one of these statements describes a primary benefit of using managed identities for Azure resources to authenticate an app to Key Vault?
     choices:
     - content: Using managed identities improves application performance.
       isCorrect: false
-      explanation: Your app authenticates to a managed identities token service with a secret injected into its environment variables at runtime. This eliminates the need to store secrets during configuration.
+      explanation: Your app authenticates to a managed identities token service with a secret injected into its environment variables at runtime. This authentication method eliminates the need to store secrets during configuration.
     - content: Using managed identities eliminates the need to handle secrets during configuration.
       isCorrect: true
-      explanation: Your app authenticates to a managed identities token service with a secret injected into its environment variables at runtime. This eliminates the need to store secrets during configuration.
+      explanation: Your app authenticates to a managed identities token service with a secret injected into its environment variables at runtime. This authentication method eliminates the need to store secrets during configuration.
     - content: Managed identities can automatically grant Azure Key Vault permissions.
       isCorrect: false
-      explanation: Your app authenticates to a managed identities token service with a secret injected into its environment variables at runtime. This eliminates the need to store secrets during configuration.
+      explanation: Your app authenticates to a managed identities token service with a secret injected into its environment variables at runtime. This authentication method eliminates the need to store secrets during configuration.
 
