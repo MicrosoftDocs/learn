@@ -4,7 +4,7 @@ You can pull container images from Azure Container Registry using various contai
 
 Azure Container Registry doesn't support unauthenticated access and requires authentication for all operations. Registries support two types of identities:
 
-- **Microsoft Entra identities**, including both user and service principals. Access to a registry with a Microsoft Entra identity is role-based and you can assign identities one of three roles: **reader** (pull access only), **contributor** (push and pull access), or **owner** (pull, push, and assign roles to other users).
+- **Microsoft Entra identities**, including both user and service principals. Access to a registry with a Microsoft Entra identity is role-based, and you can assign identities one of three roles: **reader** (pull access only), **contributor** (push and pull access), or **owner** (pull, push, and assign roles to other users).
 - The **admin account** included with each registry. The admin account is disabled by default.
 
 > [!IMPORTANT]
