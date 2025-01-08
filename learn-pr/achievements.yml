@@ -4585,6 +4585,11 @@ achievements:
   title: Understand advanced data visualization concepts
   summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
   iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
+- uid: learn.use-azure-maps-to-track-air-pollution.badge
+  type: badge
+  title: Track global air quality with Azure Maps
+  summary: This module shows how to track global air quality by using the Azure Maps web SDK and pollution data from a third-party air quality API.
+  iconUrl: /training/achievements/advocates/use-azure-maps-to-track-air-pollution.svg
 - uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.badge
   type: badge
   title: Classify types of space rocks in random photos by using artificial intelligence
