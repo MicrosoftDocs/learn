@@ -4452,6 +4452,91 @@ achievements:
   title: Refactor Node.js Express APIs into serverless Azure Functions APIs
   summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
   iconUrl: /training/achievements/shift-express-api-azure-functions.svg
+- uid: learn.beginner-python.functions-python.badge
+  type: badge
+  title: Python functions
+  summary: The next step after using procedural code is to write modular software by using functions. Functions, from simple ones to multiple-argument ones, are useful in making code reusable.
+  iconUrl: /training/achievements/functions-python.svg
+- uid: learn.beginner-python.python-error-handling.badge
+  type: badge
+  title: Python error handling
+  summary: Handle exceptions and create useful error messages. Improve your skills by using exceptions for code flow control.
+  iconUrl: /training/achievements/python-error-handling.svg
+- uid: learn.beginner-python.intro-python-lists.badge
+  type: badge
+  title: Introduction to lists in Python
+  summary: You'll often work with multiple values in a program. In Python, you can group data together by using lists. In this module, you'll learn how to use lists and what the most common tasks with lists are.
+  iconUrl: /training/achievements/intro-python-lists.svg
+- uid: learn.beginner-python.python-loops.badge
+  type: badge
+  title: Use 'while' and 'for' loops in Python
+  summary: With Python, you can use `while` loops to run the same task multiple times and `for` loops to loop once over list data. In this module, you'll learn about the two loop types and when to apply each.
+  iconUrl: /training/achievements/python-loops.svg
+- uid: learn.beginner-python.python-dictionaries.badge
+  type: badge
+  title: Manage data with Python dictionaries
+  summary: Python dictionaries allow you to model complex data. This module explores common scenarios where you could use dictionaries.
+  iconUrl: /training/achievements/python-dictionaries.svg
+- uid: learn.beginner-python.use-boolean-types.badge
+  type: badge
+  title: Use Boolean logic in Python
+  summary: Explore how to use Boolean logic in Python to craft complex expressions that apply conditional logic.
+  iconUrl: /training/achievements/python-use-boolean-types.svg
+- uid: learn.beginner-python.use-strings.badge
+  type: badge
+  title: Use strings in Python
+  summary: Strings and string operations are among the main core types in Python. Manipulating text is an essential developer skill, and Python offers several ways to work with strings.
+  iconUrl: /training/achievements/python-use-strings.svg
+- uid: learn.beginner-python.use-math-operators.badge
+  type: badge
+  title: Use mathematical operations in Python
+  summary: Almost every application a developer creates involves some level of math. This module explores the core functionality in Python and arithmetic operators. You'll also explore how to perform more manipulations of data and numbers. You'll put this knowledge to use to create a project to determine the distance between planets.
+  iconUrl: /training/achievements/python-math-operators.svg  
+- uid: learn.beginner-python.trophy
+  type: trophy
+  title: Python for beginners
+  summary: Get started with Python! Learn how to create programs and projects in Python. Work with strings, lists, loops, dictionaries, and functions.
+  iconUrl: /training/achievements/beginner-python.svg
+- uid: learn.student-evangelism.python-flask-build-ai-web-app.badge
+  type: badge
+  title: Build an AI web app by using Python and Flask
+  summary: Use Python, Flask, and Azure AI services to build a web app that incorporates AI.
+  iconUrl: /training/achievements/student-evangelism/python-flask-build-ai-web-app-badge.svg
+- uid: learn.python-get-started-testing.badge
+  type: badge
+  title: Get started with testing in Python
+  summary: Start testing with Python using the unittest module. Get exposed to other testing concepts like functional and integration testing.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.languages.python-apps.trophy
+  type: trophy
+  title: Build real world applications with Python
+  summary: Interested in learning how to build apps in Python that scales and that you want to maintain? Then this is the path for you. It will take you through basics of the language but also teach you various patterns you can use.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.student-evangelism.intro-to-python.badge
+  type: badge
+  title: Introduction to Python
+  summary: Learn how to write a few lines of Python code, declare variables, and work with console input and output.
+  iconUrl: /training/achievements/intro-to-python.svg
+- uid: learn.beginner-python.create-run-program.badge
+  type: badge
+  title: Write your first Python programs
+  summary: In this module, you'll learn a variety of topics, like input and output to the console, variables and data types, and type conversion.
+  iconUrl: /training/achievements/python-create-run-program.svg
+- uid: learn.student-evangelism.python-object-oriented-programming.badge
+  type: badge
+  title: Introduction to object-oriented programming with Python
+  summary: This module will teach you how to model problems by using object-oriented programming (OOP) concepts. You'll also learn to turn your model into working code by using OOP concepts like classes, attributes, and methods.
+  iconUrl: /training/achievements/student-evangelism/python-object-oriented-programming-badge.svg
+- uid: learn.python-partnership.personality-quiz.badge
+  type: badge
+  title: What is your super sleuth personality?
+  summary: What is your super sleuth personality? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
+  iconUrl: /training/achievements/python-partnership/personality-quiz-revised.svg
+- uid: learn.python-partnership.secret-message.badge
+  type: badge
+  title: Crack the code and reveal a secret with Python and Visual Studio Code
+  summary: You're handed a secret message that needs a code cracker to find the truth. Learn how to solve the code mystery to reveal a location and date to find a hidden treasure. Get a glimpse into the popular Python programming language with this introductory lesson that requires no coding experience.
+  iconUrl: /training/achievements/python-partnership/secret-message-revised.svg
 - uid: learn.python-partnership.trophy
   type: trophy
   title: Use Python basics to solve mysteries and find answers
@@ -4505,3 +4590,93 @@ achievements:
   title: Get started with Jupyter notebooks for Python
   summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive, runnable Markdown and code elements.
   iconUrl: /training/achievements/python-create-jupyter-notebook.svg
+- uid: learn.beginner-python.create-manage-projects.badge
+  type: badge
+  title: Create and manage projects in Python
+  summary: To manage projects, you need a virtual environment, packages that will help you develop faster, and a strategy for maintaining packages.
+  iconUrl: /training/achievements/python-create-manage-projects.svg
+- uid: learn.use-azure-maps-to-track-air-pollution.badge
+  type: badge
+  title: Track global air quality with Azure Maps
+  summary: This module shows how to track global air quality by using the Azure Maps web SDK and pollution data from a third-party air quality API.
+  iconUrl: /training/achievements/advocates/use-azure-maps-to-track-air-pollution.svg
+- uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.badge
+  type: badge
+  title: Classify types of space rocks in random photos by using artificial intelligence
+  summary: Learn how to build an artificial intelligence model to predict types of space rocks in images. Train and test your model by using random photos.
+  iconUrl: /training/achievements/student-evangelism/train-test-predictive-ai-model-nasa.svg
+- uid: learn.student-evangelism.analyze-rock-images-ai-nasa.badge
+  type: badge
+  title: Analyze images of rocks by using artificial intelligence
+  summary: Identify data to add to an artificial intelligence model that classifies space rocks in random photos.
+  iconUrl: /training/achievements/student-evangelism/analyze-rock-images-ai-nasa.svg
+- uid: learn.classify-space-rocks-artificial-intelligence-nasa.trophy
+  type: trophy
+  title: Classify space rocks by using Python and artificial intelligence
+  summary: This learning path gives you a view into the worlds of AI and space. Learn how to create an AI model that can classify the type of space rock in a random photo.
+  iconUrl: /training/achievements/classify-space-rocks-artificial-intelligence-nasa.svg
+- uid: learn.student-evangelism.research-space-rocks-ai-nasa.badge
+  type: badge
+  title: Learn about space rocks and how to classify them
+  summary: Learn about space rocks, where they're found, and why they're valuable for scientific research.
+  iconUrl: /training/achievements/student-evangelism/research-space-rocks-ai-nasa.svg
+- uid: learn.student-evangelism.introduction-artificial-intelligence.nasa.badge
+  type: badge
+  title: Prepare to research space rocks by using artificial intelligence
+  summary: Learn about the scientific research of space rocks and how artificial intelligence can enhance this study.
+  iconUrl: /training/achievements/student-evangelism/introduction-artificial-intelligence-nasa.svg
+- uid: learn.student-evangelism.collect-manipulate-data-python-nasa.badge
+  type: badge
+  title: Data collection and manipulation
+  summary: Learn about the steps to import data into Python and clean the data for use in creating machine learning models.
+  iconUrl: /training/achievements/student-evangelism/collect-manipulate-data-python-nasa.svg
+- uid: learn.student-evangelism.learn.student-evangelism.machine-learning-model-nasa.badge
+  type: badge
+  title: Build a machine learning model
+  summary: In this module, you focus on a local analysis of your data by using scikit-learn, and use a decision tree classifier to gain knowledge from raw weather and rocket launch data.
+  iconUrl: /training/achievements/student-evangelism/machine-learning-model-nasa.svg
+- uid: learn.student-evangelism.machine-learning-predict-launch-delay-nasa.trophy
+  type: trophy
+  title: Predict rocket launch delays with machine learning
+  summary: This learning path introduces you to the world of machine learning. You'll take a real-life problem that NASA faces and apply machine learning to solve it. The goal is to get students excited and curious to discover how machine learning could help solve other problems in space discovery and different aspects of life.
+  iconUrl: /training/achievements/machine-learning-predict-launch-delay-nasa.svg
+- uid: learn.student-evangelism.introduction-rocket-launch-nasa.badge
+  type: badge
+  title: Introduction to rocket launches
+  summary: Get an introduction to how NASA chooses a date for a rocket launch and discover machine learning fundamentals.
+  iconUrl: /training/achievements/student-evangelism/introduction-rocket-launch-nasa.svg
+- uid: learn.student-evangelism.basic-python-nasa.badge
+  type: badge
+  title: Write basic Python in Notebooks
+  summary: Learn the basics of Python using interactive Notebooks.
+  iconUrl: /training/achievements/student-evangelism/basic-python-nasa.svg
+- uid: learn.student-evangelism.intermediate-python-nasa.badge
+  type: badge
+  title: Code control statements in Python
+  summary: Learn more advanced topics of Python using interactive Notebooks.
+  iconUrl: /training/achievements/student-evangelism/intermediate-python-nasa.svg
+- uid: learn.student-evangelism.count-moon-rocks-python-nasa.badge
+  type: badge
+  title: Count the number of Moon rocks by type using Python
+  summary: Use Python to make a simple program to count the number of each type of space rock.
+  iconUrl: /training/achievements/student-evangelism/count-moon-rocks-python-nasa.svg
+- uid: learn.introduction-python-space-exploration-nasa.trophy
+  type: trophy
+  title: Discover the role of Python in space exploration
+  summary: This learning path introduces you to the world of Python. But the goal is not to learn Python, the goal is to understand how Python plays a role in the innovative solutions that NASA creates. Through the lens of space discovery, this learning path could ignite a passion to persistently learn, discover, and create so that you too can one day help us all understand a little more about the world beyond our Earth.
+  iconUrl: /training/achievements/introduction-python-space-exploration-nasa.svg
+- uid: learn.student-evangelism.install-code-tools-python-nasa.badge
+  type: badge
+  title: Install coding tools for Python development
+  summary: Learn about what coding is and install tools to help you code.
+  iconUrl: /training/achievements/student-evangelism/install-code-tools-python-nasa.svg
+- uid: learn.student-evangelism.introduction-python-nasa.badge
+  type: badge
+  title: Introduction to Python for space exploration
+  summary: Get an introduction to the types of space exploration problems that Python and data science can influence.
+  iconUrl: /training/achievements/student-evangelism/introduction-python-nasa.svg 
+- uid: learn.wwl.monitor-data-real-time-power-bi.badge
+  type: badge
+  title: Monitor data in real-time with Power BI
+  summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
+  iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
