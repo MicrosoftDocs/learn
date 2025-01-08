@@ -34,9 +34,7 @@ Azure AI Foundry provides access to model management, deployment, experimentatio
 
 You can access the Azure AI Foundry through the Azure portal after creating a resource, or at [https://ai.azure.com/](https://ai.azure.com/) by signing in to your Azure account. During the sign-in workflow, select the appropriate directory, Azure subscription, and Azure OpenAI resource.
 
-![Screenshot of the Azure AI Foundry portal which can be used to access several features.](../media/studio-portal.png)
-
-When you first open Azure AI Foundry, you'll want to navigate to the **Azure OpenAI** page, select your resource if you haven't already, and deploy your first model. To do so, select the **Deployments** page, from where you can deploy a base model and start experimenting with it.
+When you first open Azure AI Foundry, you'll want to navigate to the **Azure OpenAI** page (where you focus on only Azure OpenAI Service models), select your resource if you haven't already, and deploy your first model. To do so, select the **Deployments** page, from where you can deploy a base model and start experimenting with it.
 
 >[!NOTE]
 >If you are not the resource owner, you will need the following role-based access controls: 1. *Cognitive Services OpenAI User*: This role allows viewing resources and using the chat playground. 2. *Cognitive Services OpenAI Contributor*: This role allows the user to create new deployments.
@@ -138,6 +136,6 @@ Playgrounds are useful interfaces in Azure AI Foundry that you can use to experi
 
 The Chat playground is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
 
-In the Chat playground, you're able to add *few-shot examples*. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples. 
+In the Chat playground, you're able to use prompt samples, adjust parameters, and add *few-shot examples*. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
 
 ![Screenshot of the Azure AI Foundry portal's Chat playground.](../media/studio-chat-playground.png)
