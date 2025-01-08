@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-explore-insider-risk-management.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 1/3/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is an insider risk?"
+    choices:
+    - content: "A malicious cyberattack from outside the organization."
+      isCorrect: false
+      explanation: "Incorrect: This describes an external cyberattack, not an insider risk."
+    - content: "A trusted individual's actions that could harm the organization."
+      isCorrect: true
+      explanation: "Correct: Insider risks are actions by trusted individuals within the organization that could harm its people, data, or systems."
+    - content: "A failure of the organization's external security measures."
+      isCorrect: false
+      explanation: "Incorrect: While a failure in external security is problematic, it doesn't define an insider risk."
+
+  - content: "What is Microsoft Purview Insider Risk Management?"
+    choices:
+    - content: "A tool for enforcing password policies across an organization."
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Purview Insider Risk Management focuses on identifying risky activities, not enforcing password policies, which are handled by other tools like Microsoft Entra ID."
+    - content: "A software for monitoring employee behavior in real time."
+      isCorrect: false
+      explanation: "Incorrect: It focuses on identifying risky activities, not on real-time employee monitoring."
+    - content: "A tool for detecting, investigating, and responding to potentially harmful internal activities."
+      isCorrect: true
+      explanation: "Correct: This solution helps organizations detect, investigate, and respond to potentially harmful activities from within, ensuring data security and compliance."      
+
+  - content: "What is the main purpose of policies in Microsoft Purview Insider Risk Management?"
+    choices:
+    - content: "To define activities that could indicate risks."
+      isCorrect: true
+      explanation: "Correct: Policies define the types of activities to evaluate, such as data exfiltration or security violations, making them central to identifying risks."
+    - content: "To track alerts and investigations."
+      isCorrect: false
+      explanation: "Incorrect: Alerts and investigations are tracked through dashboards, not policies."
+    - content: "To manage sensitive information in the cloud."
+      isCorrect: false
+      explanation: "Incorrect: While important, managing sensitive information isn't the primary purpose of Insider Risk Management policies."

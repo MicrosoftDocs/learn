@@ -5,10 +5,11 @@ metadata:
   prefetch-feature-rollout: true
   title: Embrace responsible AI principles and practices
   description: "Explore six principles to guide AI development and use - fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability."
-  ms.date: 08/12/2024
+  ms.date: 01/07/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   - ai-learning-hub
