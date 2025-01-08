@@ -4585,6 +4585,16 @@ achievements:
   title: Understand advanced data visualization concepts
   summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
   iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
+- uid: learn.student-evangelism.collect-manipulate-data-python-nasa.badge
+  type: badge
+  title: Data collection and manipulation
+  summary: Learn about the steps to import data into Python and clean the data for use in creating machine learning models.
+  iconUrl: /training/achievements/student-evangelism/collect-manipulate-data-python-nasa.svg
+- uid: learn.student-evangelism.learn.student-evangelism.machine-learning-model-nasa.badge
+  type: badge
+  title: Build a machine learning model
+  summary: In this module, you focus on a local analysis of your data by using scikit-learn, and use a decision tree classifier to gain knowledge from raw weather and rocket launch data.
+  iconUrl: /training/achievements/student-evangelism/machine-learning-model-nasa.svg
 - uid: learn.student-evangelism.machine-learning-predict-launch-delay-nasa.trophy
   type: trophy
   title: Predict rocket launch delays with machine learning
