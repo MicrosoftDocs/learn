@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Scale and manage deployed container apps
   description: "This module addresses the concept of revisions in Azure Container Apps and discusses options for application lifecycle management. It also covers scaling choices and ingress settings, including traffic splitting for Azure Container Apps."
-  ms.date: 10/31/2024
+  ms.date: 01/07/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module

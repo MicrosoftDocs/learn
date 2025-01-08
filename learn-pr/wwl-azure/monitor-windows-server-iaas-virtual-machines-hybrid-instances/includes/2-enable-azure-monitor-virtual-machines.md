@@ -1,4 +1,3 @@
-
 Azure Monitor is a core component of the Microsoft strategy to extend comprehensive, cloud-based monitoring functionality beyond Azure to on-premises datacenters and non-Microsoft cloud providers. Customers such as Contoso that are maintaining their on-premises infrastructure can benefit from this functionality when tracking, auditing, or troubleshooting past events.
 
 ## What is Azure Monitor?
@@ -16,11 +15,11 @@ Azure Monitor delivers focused, in-depth monitoring capabilities through:
 - Deep infrastructure monitoring. This category includes Log Analytics in combination with monitoring solutions such as Service Map, and network monitoring tools such as Network Watcher and ExpressRoute Monitor.
 - Deep application monitoring. This category includes Application Insights, which facilitates monitoring of performance, availability, and web-based application usage regardless of their locations.
 
-Both infrastructure and application monitoring services share a number of capabilities that provide a consistent approach to configuring alerts, including:
+Both infrastructure and application monitoring services share capabilities that provide a consistent approach to configuring alerts, including:
 
 - Common action groups that designate alert-triggered actions, and recipients of the alerts.
 - Designing custom dashboards.
-- Analyzing metrics by leveraging tools such as Metrics Explorer or Microsoft Power BI.
+- Analyzing metrics by using tools such as Metrics Explorer or Microsoft Power BI.
 
 Azure Monitor supports collecting and monitoring metrics, activity and diagnostics logs, and events from a wide range of Azure services and computers residing both in on-premises datacenters and with third-party cloud providers. It provides a quick way to assess the status of your environment by using the Azure portal. Azure Monitor presents a summary of triggered alerts, logs, metrics, and application-related telemetry originating from Application Insights.
 
@@ -33,7 +32,7 @@ Additionally, Azure Monitor enables you to archive collected data in Azure Stora
 - Trigger a remediation action implemented by Azure Logic Apps, Azure Functions, or a runbook in Azure Automation.
 - Raise an incident and work items by leveraging integration between Azure Monitor and your internal IT Service Management (ITSM) platform.
 
-You can also store and analyze near real-time and historical data by using Log Analytics. For on-premises computers and Azure VMs, this requires installing the Log Analytics agent, and in some cases the Dependency Agent as well. This agent-based approach enables you to monitor the operating system and its workloads using Azure Automation or Azure Monitor–based solutions such as Update Management or Change Tracking and Inventory. You can also leverage Azure Security Center to identify vulnerabilities and potential threats.
+You can also store and analyze near real-time and historical data by using Log Analytics. For on-premises computers and Azure VMs, this requires installing the Log Analytics agent, and in some cases the Dependency Agent as well. This agent-based approach enables you to monitor the operating system and its workloads using Azure Automation or Azure Monitor–based solutions such as Update Management or Change Tracking and Inventory. You can also use Microsoft Defender for Cloud to identify vulnerabilities and potential threats.
 
 To learn more, review this five minute tutorial video on Azure Monitoring:
 
