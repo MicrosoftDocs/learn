@@ -4585,6 +4585,11 @@ achievements:
   title: Understand advanced data visualization concepts
   summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
   iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
+- uid: learn.beginner-python.create-run-jupyter-notebook.badge
+  type: badge
+  title: Get started with Jupyter notebooks for Python
+  summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive, runnable Markdown and code elements.
+  iconUrl: /training/achievements/python-create-jupyter-notebook.svg
 - uid: learn.beginner-python.create-manage-projects.badge
   type: badge
   title: Create and manage projects in Python
