@@ -8,8 +8,8 @@ metadata:
   title: Knowledge check
   description: Check what you learned about Azure Blueprints.
   ms.date: 1/2/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 5
 content: |
