@@ -19,7 +19,7 @@ For example, the input for `ChatCompletion` is a conversation with clearly defin
 {"role": "user", "content": "Do other Azure AI Services support translation too?"}
 ```
 
-When you give the AI model a real conversation, it can generate a better response with more accurate tone, phrasing, and context. The `ChatCompletion` endpoint enables the ChatGPT model to have a more realistic conversation by sending the history of the chat with the next user message.
+When you give the AI model a real conversation, it can generate a better response with more accurate tone, phrasing, and context. The `ChatCompletion` endpoint enables the model to have a more realistic conversation by sending the history of the chat with the next user message.
 
 `ChatCompletion` also allows for non-chat scenarios, such as summarization or entity extraction. This can be accomplished by providing a short conversation, specifying the system information and what you want, along with the user input. For example, if you want to generate a job description, provide `ChatCompletion` with something like the following conversation input.
 
@@ -29,7 +29,7 @@ When you give the AI model a real conversation, it can generate a better respons
 ```
 
 > [!NOTE]
-> `Completion` is available for all `gpt-3` generation models, while `ChatCompletion` is the only supported option for `gpt-4` models and is the preferred endpoint when using the `gpt-35-turbo` model.
+> `Completion` is available for earlier `gpt-3` generation models, while `ChatCompletion` is the only supported option for `gpt-4` models and is the preferred endpoint when using the `gpt-35-turbo` model.
 
 ## Use the Azure OpenAI REST API
 
@@ -41,7 +41,7 @@ For each call to the REST API, you need the endpoint and a key from your Azure O
 |--------------|-------|
 | `YOUR_ENDPOINT_NAME` | This base endpoint is found in the **Keys & Endpoint** section in the Azure portal. It's the base endpoint of your resource, such as `https://sample.openai.azure.com/`.|
 | `YOUR_API_KEY` | Keys are found in the **Keys & Endpoint** section in the Azure portal. You can use either key for your resource. |
-| `YOUR_DEPLOYMENT_NAME` | This deployment name is the name provided when you deployed your model in the Azure AI Studio. |
+| `YOUR_DEPLOYMENT_NAME` | This deployment name is the name provided when you deployed your model in the Azure AI Foundry. |
 
 ### Chat completions
 
