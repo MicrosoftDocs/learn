@@ -4585,6 +4585,21 @@ achievements:
   title: Understand advanced data visualization concepts
   summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
   iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
+- uid: learn.classify-space-rocks-artificial-intelligence-nasa.trophy
+  type: trophy
+  title: Classify space rocks by using Python and artificial intelligence
+  summary: This learning path gives you a view into the worlds of AI and space. Learn how to create an AI model that can classify the type of space rock in a random photo.
+  iconUrl: /training/achievements/classify-space-rocks-artificial-intelligence-nasa.svg
+- uid: learn.student-evangelism.research-space-rocks-ai-nasa.badge
+  type: badge
+  title: Learn about space rocks and how to classify them
+  summary: Learn about space rocks, where they're found, and why they're valuable for scientific research.
+  iconUrl: /training/achievements/student-evangelism/research-space-rocks-ai-nasa.svg
+- uid: learn.student-evangelism.introduction-artificial-intelligence.nasa.badge
+  type: badge
+  title: Prepare to research space rocks by using artificial intelligence
+  summary: Learn about the scientific research of space rocks and how artificial intelligence can enhance this study.
+  iconUrl: /training/achievements/student-evangelism/introduction-artificial-intelligence-nasa.svg
 - uid: learn.student-evangelism.collect-manipulate-data-python-nasa.badge
   type: badge
   title: Data collection and manipulation
