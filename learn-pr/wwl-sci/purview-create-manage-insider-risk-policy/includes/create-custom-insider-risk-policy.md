@@ -110,7 +110,7 @@ On the **Choose triggering event for this policy** page, define the conditions t
 > [!IMPORTANT]
 > If some indicators aren't selectable, ensure they're enabled in the Insider Risk Management Settings.
 
-### 7. Review and Submit
+### 7. Review and submit
 
 Review the policy details to ensure all settings are correct:
 
@@ -118,4 +118,4 @@ Review the policy details to ensure all settings are correct:
 - Confirm prioritized content and indicators.
 - Address any warnings or recommendations.
 
-Once reviewed, submit the policy. It becomes active immediately unless dependencies are incomplete.
+After you've completed these steps to create your first insider risk management policy, you'll start to receive alerts from activity indicators after about 24 hours.
