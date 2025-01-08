@@ -1,9 +1,9 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-solutions-azure-openai
 metadata:
-  title: Develop Generative AI solutions with Azure OpenAI Service AI-050T00
-  description: Develop Generative AI solutions with Azure OpenAI Service AI-050T00
-  ms.date: 03/30/2023
+  title: Develop Generative AI solutions with Azure OpenAI Service
+  description: Develop Generative AI solutions with Azure OpenAI Service
+  ms.date: 12/03/2024
   author: ivorb
   ms.author: berryivor
   ms.topic: learning-path
@@ -18,7 +18,7 @@ prerequisites: |
   *   Experience programming with C# or Python.
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
 summary: |
-  Azure OpenAI Service provides access to OpenAI's powerful large language models such as ChatGPT, GPT, Codex, and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure OpenAI Studio.
+  Azure OpenAI Service provides access to OpenAI's powerful large language models such as GPT and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure AI Foundry.
 iconUrl: /training/achievements/develop-ai-solutions-azure-openai.svg
 levels:
 - intermediate
@@ -32,10 +32,7 @@ products:
 subjects:
 - artificial-intelligence
 modules:
-- learn.wwl.get-started-openai
-- learn.wwl.build-language-solution-azure-openai
-- learn.wwl.apply-prompt-engineering-azure-openai
-- learn.wwl.generate-code-azure-openai
+- learn.wwl.develop-applications-openai
 - learn.wwl.use-own-data-azure-openai
 - learn.wwl.generate-images-azure-openai
 trophy:
