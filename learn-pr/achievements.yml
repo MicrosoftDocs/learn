@@ -4585,6 +4585,31 @@ achievements:
   title: Understand advanced data visualization concepts
   summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
   iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
+- uid: learn.beginner-python.create-run-jupyter-notebook.badge
+  type: badge
+  title: Get started with Jupyter notebooks for Python
+  summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive, runnable Markdown and code elements.
+  iconUrl: /training/achievements/python-create-jupyter-notebook.svg
+- uid: learn.beginner-python.create-manage-projects.badge
+  type: badge
+  title: Create and manage projects in Python
+  summary: To manage projects, you need a virtual environment, packages that will help you develop faster, and a strategy for maintaining packages.
+  iconUrl: /training/achievements/python-create-manage-projects.svg
+- uid: learn.use-azure-maps-to-track-air-pollution.badge
+  type: badge
+  title: Track global air quality with Azure Maps
+  summary: This module shows how to track global air quality by using the Azure Maps web SDK and pollution data from a third-party air quality API.
+  iconUrl: /training/achievements/advocates/use-azure-maps-to-track-air-pollution.svg
+- uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.badge
+  type: badge
+  title: Classify types of space rocks in random photos by using artificial intelligence
+  summary: Learn how to build an artificial intelligence model to predict types of space rocks in images. Train and test your model by using random photos.
+  iconUrl: /training/achievements/student-evangelism/train-test-predictive-ai-model-nasa.svg
+- uid: learn.student-evangelism.analyze-rock-images-ai-nasa.badge
+  type: badge
+  title: Analyze images of rocks by using artificial intelligence
+  summary: Identify data to add to an artificial intelligence model that classifies space rocks in random photos.
+  iconUrl: /training/achievements/student-evangelism/analyze-rock-images-ai-nasa.svg
 - uid: learn.classify-space-rocks-artificial-intelligence-nasa.trophy
   type: trophy
   title: Classify space rocks by using Python and artificial intelligence
