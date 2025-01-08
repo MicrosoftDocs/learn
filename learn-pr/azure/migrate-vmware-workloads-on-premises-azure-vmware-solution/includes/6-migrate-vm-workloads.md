@@ -50,7 +50,7 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
     :::image type="content" source="../media/6-hcx-add-rav-migration-started.png" alt-text="Screenshot shows the migration has started."lightbox="../media/6-hcx-add-rav-migration-started.png":::
 
-## Configure network extension
+## Configure Network Extension
 
 Extend a network when you plan to vMotion virtual machines keeping the same IP addresses as the source vSphere environment.
 
@@ -58,15 +58,19 @@ Use the following steps to extend a Network:
 
 1. From the HCX dashboard, to go **Services** > **Network Extension** > **Create a Network Extension**.
 
-    :::image type="content" source="../media/6-hcx-create-network-extension.png" alt-text="Screenshot shows where to create a network extension."lightbox="../media/6-hcx-create-network-extension.png":::
+    :::image type="content" source="../media/6-hcx-create-network-extension.png" alt-text="Screenshot shows where to create a Network Extension."lightbox="../media/6-hcx-create-network-extension.png":::
 
 1. Select the network you want to extend, then select **Next**.
 
-    :::image type="content" source="../media/6-hcx-select-network-extension.png" alt-text="Screenshot shows where to select a network extension."lightbox="../media/6-hcx-select-network-extension.png":::
+    :::image type="content" source="../media/6-hcx-select-network-extension.png" alt-text="Screenshot shows where to select a Network Extension."lightbox="../media/6-hcx-select-network-extension.png":::
 
-1. 
+1. Under **Source Network to Extend**, select the required mandatory fields, then select **Submit**.
 
+    :::image type="content" source="../media/6-hcx-select-source-network-mandatory-fields.png" alt-text="Screenshot shows where to select the required mandatory fields to extend networks."lightbox="../media/6-hcx-select-source-network-mandatory-fields.png":::
 
+1. Verify a green check under **Status** indicating the Network Extension is completed.
+
+    :::image type="content" source="../media/6-hcx-network-extension-complete-status-green.png" alt-text="Screenshot shows a green status check that the Network Extension is complete."lightbox="../media/6-hcx-network-extension-complete-status-green.png":::
 
 
 
