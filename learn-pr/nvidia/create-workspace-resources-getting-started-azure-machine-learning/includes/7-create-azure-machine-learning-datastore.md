@@ -4,13 +4,11 @@ Datastores give you the ability to securely connect to your storage services in 
 
 1. Unless you already launched it from the Machine Learning Overview mentioned at the end of the previous section, sign in to [Azure Machine Learning studio](https://ml.azure.com/), and select your workspace.
 
-1. Select **Datastores** on the left pane under **Manage**.
+1. Select **Data** under **Assets** on the left pane, then select the **Datastores** tab at the top of the window.
 
     :::image type="content" source="../media/7-select-datastores.png" alt-text="A screenshot showing the Datastore option is highlighted." lightbox="../media/7-select-datastores.png":::  
 
-1. Select **+ New datastore**.
-
-    :::image type="content" source="../media/7-select-new-datastore.png" alt-text="A screenshot showing the plus new datastore option is highlighted." lightbox="../media/7-select-new-datastore.png":::  
+1. Select **+ Create**.
 
 1. Complete the form to create and register a new datastore. The form intelligently updates itself based on your selection for Azure storage type and authentication type. Name the Datastore `computervisionimagesraw`. For **Datastore type**, choose **Azure Blob Storage** and ensure the **From Azure subscription** option is selected. You need to reference the values saved previously and select the appropriate **Storage account** and **Blob container** from the respective drop-down. For **Authentication type**, select **Account key** and provide the value of the Access Key used by your storage account. The completed form should look like the following example:
 
@@ -20,4 +18,4 @@ Datastores give you the ability to securely connect to your storage services in 
 
 1. The newly created Datastore is now populated in the **Datastores** section of your Azure Machine Learning studio instance.
 
-    :::image type="content" source="../media/7-datastore-created.png" alt-text="A screenshot showing that the new Datastore is created." lightbox="../media/7-datastore-created.png"::: 
+    :::image type="content" source="../media/7-datastore-created.png" alt-text="A screenshot showing that the new Datastore is created." lightbox="../media/7-datastore-created.png":::

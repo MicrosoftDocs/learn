@@ -3,13 +3,13 @@ uid: learn.wwl.implement-high-availability-of-windows-server-vms
 metadata:
   title: Implement high availability of Windows Server VMs
   description: "Implement high availability of Windows Server VMs"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
   ms.service: windows-server
 title: Implement high availability of Windows Server VMs
-summary: Learn about the core functionality, benefits, use cases, and implementation of highly available Microsoft Hyper-V virtual machines (VMs) in Windows Server 2019.
+summary: Learn about the core functionality, benefits, use cases, and implementation of highly available Microsoft Hyper-V virtual machines (VMs) in Windows Server.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the Hyper-V high availability options.
@@ -18,7 +18,7 @@ abstract: |
   - Implement Hyper-V VMs storage migration.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Windows Server 2012 or Windows Server 2016.
+  - Windows Server systems administration.
   - Core networking technologies.
   - Windows Server Hyper-V fundamentals.
 iconUrl: /training/achievements/implement-high-availability-of-windows-server-vms.svg

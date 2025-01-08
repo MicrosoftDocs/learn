@@ -1,16 +1,20 @@
 ## Change group license assignment
 
-1.  Browse to the Identity - Groups page of the Microsoft Entra admin center.
-2.  In the left navigation, under **Groups**.
-3.  Select one of the available groups. For example, Marketing.
+1.  Open https://entra.microsoft.com to get to the Microsoft Entra admin center.
+2.  In the left navigation, open **Groups**.
+3.  Select **All groups**, then select one of the available groups.
 4.  In the left navigation, under **Manage**, select **Licenses**.
+
+You will see a list of any license assignments that are currently made.  And you will find that you have to use the Microsoft 365 Admin Center to make any updates.
+
 5.  Review the current assignments and then, on the menu, select **+ Assignments**.
-    
-    :::image type="content" source="../media/change-group-license-4fac5a1d-7a8b1ae7.png" alt-text="Screenshot of the group license page in Microsoft Entra ID. The add assignments option is selected.":::
-    
-6.  On the Update license assignments page, select another license, clear the selection of an existing license, add or remove license options, or any combination.
-7.  When complete, select **Save**.
-8.  On the group’s Licenses page, review the change.
+6.  Open https://admin.microsoft.com to open the Microsoft 365 admin center.
+7.  Select **Billing**. Then select **Licenses**."
+8.  Select an available license from the list.
+9.  Select **Groups** from the menu near the top of the page.
+10. Select the **+ Assign licenses** option. 
+11. Pick the group you were looking at earlier in Microsoft Entra.  Then select the **Assign** button at the bottom of the page.
+12. On the group’s Licenses page, review the change.  You should be able to see the change in both the Microsoft Entra admin center and the Microsoft 365 admin center.
 
 ## Identify and resolve license assignment problems for a group in Microsoft Entra ID
 
@@ -19,29 +23,6 @@ Group-based licensing in Microsoft Entra ID introduces the concept of users in a
 When you assign licenses directly to individual users, without using group-based licensing, the assignment operation might fail. For example, when you execute the PowerShell cmdlet `Set-MgUserLicense` on a user object, the cmdlet can fail for many reasons that are related to business logic. For example, there might be an insufficient number of licenses or a conflict between two service plans that can't be assigned at the same time. The problem is immediately reported back to you.
 
 When you're using group-based licensing the same errors can occur, but they happen in the background while the Microsoft Entra service is assigning licenses. For this reason, the errors can't be communicated to you immediately. Instead, they're recorded on the user object and then reported via the administrative portal. The original intent to license the user is never lost, but it's recorded in an error state for future investigation and resolution.
-
-## Find license assignment errors
-
-### To find users in an error state in a group
-
-1.  Open the group to its overview page and select **Licenses**. A notification appears if there are any users in an error state.
-    
-    :::image type="content" source="../media/group-error-notification-919e1667-9d146a23.png" alt-text="Screenshot of the group licenses error notifications message.":::
-    
-2.  Select the notification to open a list of all affected users. You can select each user individually to see more details.
-    
-    :::image type="content" source="../media/list-of-users-with-errors-381fee9b-8dfa2c56.png" alt-text="Screenshot of the list of users in group licensing error state.":::
-    
-3.  To find all groups that contain at least one error, on the **Microsoft Entra - Identity - Billing** menu select **Licenses**, and then select **Overview**. An information box is displayed when groups require your attention.
-    
-    :::image type="content" source="../media/group-errors-widget-3f3842a5-af11454a.png" alt-text="Screenshot of the Microsoft Entra ID licenses Overview page.  Shows information about licenses and if any group licenses are in error state.":::
-    
-4.  Select the box to see a list of all groups with errors. You can select each group for more details.
-    
-    :::image type="content" source="../media/list-of-groups-with-errors-416fb081-4e3faf7b.png" alt-text="Screenshot of the group license assignment error page that is displayed after selecting the error in the previous dialog.":::
-    
-
-The following sections give descriptions of each potential problem and the way to resolve it.
 
 ## Not enough licenses
 
