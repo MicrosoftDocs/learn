@@ -131,5 +131,4 @@ The main steps in the process are:
 3.  Create a forest trust relationship from the first forest to the second one. Use Active Directory Domains and Trusts to establish one-way trust relationship from the first forest to the second forest.
 4.  Create a forest trust relationship from the second forest to the first one. Use Active Directory Domains and Trusts to establish one-way trust relationship from the second forest to the first forest.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4M7ug]
-
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2437f77f-5bd1-4e15-9867-d06a6cef1f8b]
