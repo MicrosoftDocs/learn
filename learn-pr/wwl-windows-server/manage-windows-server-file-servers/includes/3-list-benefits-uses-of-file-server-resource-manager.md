@@ -33,4 +33,4 @@ The main steps in the process are:
 1. Configure file screening. Configure blocking of image files.
 1. Validate quota management. Try creating a file with the extension .png and verify the operation failed.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Mfsg]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=6c942c27-2f14-4418-87f2-90e1c0b2a352]
