@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.control-azure-services-with-cli.9-summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Summary
+  description: Summary
+  ms.date: 01/09/2025
+  author: dbradish-microsoft
+  ms.author: dbradish
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "True or false: The Azure portal, Azure PowerShell, and Azure CLI offer significantly different services, making it unlikely that all three support the operation you need."
+    choices: 
+    - content: "True"
+      isCorrect: false
+      explanation: "The three tools offer almost exactly the same set of services."
+    - content: "False"
+      isCorrect: true
+      explanation: "The three tools offer almost the same set of services. Generally, services aren't a factor in deciding which tool is best for your tasks."
+
+  - content: "Suppose you're building a video-editing application that offers online storage for user-generated video content. You plan to store the videos in Azure Blobs, so you must create an Azure storage account. Once the storage account is in place, you would unlikely remove and recreate it because all the user videos would be deleted. Which tool is likely to offer the quickest and easiest way to create the storage account?"
+    choices: 
+    - content: "Azure portal"
+      isCorrect: true
+      explanation: "The Azure portal is an excellent choice for one-off operations, such as creating a long-lived storage account. It provides a graphical user interface (GUI) that displays all the storage account properties and includes tooltips to help you select the appropriate options for your needs. This makes the Azure portal user-friendly and efficient for setting up resources that don't require frequent changes."
+    - content: "Azure CLI"
+      isCorrect: false
+      explanation: "To use the Azure CLI, you would need to research the specific command for creating a storage account. You would also need to install the Azure CLI locally or sign in to Azure Cloud Shell. For a one-off operation like creating a storage account, using the Azure CLI is likely to take longer than the Azure portal due to the extra steps required."
+    - content: "Azure PowerShell"
+      isCorrect: false
+      explanation: "To use Azure PowerShell, you would need to research the specific cmdlet for creating a storage account. Additionally, You would also need to install PowerShell and the Az PowerShell module locally or sign in to Azure Cloud Shell. For a one-off operation like creating a storage account, using Azure PowerShell is likely to take longer than using the Azure portal due to these extra setup steps."
+
+  - content: "What needs to be installed on your machine to execute Azure CLI locally?"
+    choices:
+    - content: "Azure Cloud Shell"
+      isCorrect: false
+      explanation: "Azure Cloud Shell allows you to execute Azure CLI commands; however, since you use it within a browser, the commands aren't run on your local machine."
+    - content: "The Azure CLI tool"
+      isCorrect: true
+      explanation: "You need both a shell environment, such as Linux, PowerShell or CMD, and the Azure CLI tool."
+    - content: "The Azure CLI and PowerShell"
+      isCorrect: false
+      explanation: "The Azure CLI runs in many environments including Windows PowerShell and PowerShell 7. However, PowerShell is not required to run the Azure CLI. You can run the Azure CLI in macOS, many Linux environments, Docker Containers, and Azure Cloud Shell. PowerShell is just one of many options."

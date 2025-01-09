@@ -35129,6 +35129,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/2-what-is-the-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/control-azure-services-with-cli/2-decide-if-azure-clil-is-right-for-your-tasks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/3-exercise-install-and-run-the-azure-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/control-azure-services-with-cli/3-install-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/4-work-with-the-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/control-azure-services-with-cli/5-create-resource-interactively",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/5-exercise-create-website-using-the-cli.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/control-azure-services-with-cli/7-create-resource-using-script",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/control-azure-services-with-cli/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/control-azure-services-with-cli/9-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/migrate-aspnet-web-application/index.yml",
       "redirect_url": "https://learn.microsoft.com/dotnet/azure/migration/app-service",
       "redirect_document_id": false
