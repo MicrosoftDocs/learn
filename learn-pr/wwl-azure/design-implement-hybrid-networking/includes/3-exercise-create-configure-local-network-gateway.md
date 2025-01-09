@@ -4,6 +4,8 @@ In this exercise, you configure a virtual network gateway to connect the Contoso
 
 ## Architecture diagram
 
+**Important**: Look closely at this design. Did you notice the CoreServicesSubnet overlaps with the GatewaySubnet? As a best practice, these subnets should be segregated to avoid potential connectivity issues.
+
 :::image type="content" source="../media/3-exercise-create-configure-local-network-gateway.png" alt-text="Diagram of virtual network gateway.":::
 
 
