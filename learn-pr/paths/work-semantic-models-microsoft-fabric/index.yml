@@ -27,7 +27,6 @@ modules:
 - learn-bizapps.dax-power-bi-add-measures
 - learn.design-scalable-semantic-models
 - learn-bizapps.optimize-model-power-bi
-- learn.wwl.use-tools-optimize-power-bi-performance
 - learn.wwl.create-manage-power-bi-assets
 - learn.wwl.enforce-power-bi-model-security
 trophy:

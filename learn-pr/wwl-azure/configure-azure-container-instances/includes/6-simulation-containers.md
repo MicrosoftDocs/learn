@@ -1,7 +1,7 @@
 ## Lab scenario
 
 Your organization needs a new platform for its virtualized workloads. As the Azure Administrator you need to:
-+ Evaluate Azure Container Instances.
++ Review and evaluate Azure Container Instances.
 + Identify and test your app container by using Docker images. 
 
 ## Architecture diagram

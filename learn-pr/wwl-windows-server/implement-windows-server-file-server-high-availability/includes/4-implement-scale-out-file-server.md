@@ -14,12 +14,12 @@ SOFS is a CSV-based Windows Server failover clustering role. SOFS provides the f
 
 ## Implement SOFS for VMs
 
-Before you implement SOFS, you need to set up a Windows Server failover cluster, consisting of two or more nodes with the File Services role installed. The cluster must host share storage accessible via CSVs. At that point, you can use Failover Cluster Manager to create a File Server clustered role using the Scale-Out File Server for application data server type. As part of the configuration, you need to provide a name that will serve as the Client Access Point for the file server, which clients will use to access its shares.
+Before you implement SOFS, you need to set up a Windows Server failover cluster, consisting of two or more nodes with the File Services role installed. The cluster must host share storage accessible via CSVs. At that point, you can use Failover Cluster Manager to create a File Server clustered role using the Scale-Out File Server for application data server type. As part of the configuration, you need to provide a name that will serve as the Client Access Point for the file server, which clients use to access its shares.
 
 > [!NOTE]
 > The clustered file server role emulates a Windows-based server, so its name, just as the name of any Windows computer, can't exceed 15 characters.
 
-After you create the File Server role, you need to add to it highly available shares. You can use Failover Cluster Manager for this purpose. When creating shares, choose the SMB Share – Applications profile, which is optimized for Hyper-V VM files and SQL Server database files. After this is completed, you can deploy new or migrate existing VMs such that their disk and configuration files reside on the newly created shares.
+After you create the File Server role, you need to add to it highly available shares. You can use Failover Cluster Manager for this purpose. When creating shares, choose the SMB Share – Applications profile, which is optimized for Hyper-V VM files and SQL Server database files. Once completed, you can deploy new or migrate existing VMs such that their disk and configuration files reside on the newly created shares.
 
 ## Demonstration
 

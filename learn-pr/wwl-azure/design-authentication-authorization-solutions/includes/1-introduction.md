@@ -1,4 +1,3 @@
-
 Authentication technologies are used to control who can access a system. When a process or user tries to access a system, the authentication scheme identifies if the requesting process or user is known. When a user or process is allowed access, they're referred to as _authenticated_. Authentication helps to protect unwanted access to a system by allowing access only to users or processes that are authenticated.
 
 Authorization mechanisms provide a more granular level of access control by guarding access to specific resources. When an authenticated process or user tries to access a particular resource, the authorization scheme verifies if the user or process has permission to access the requested resource. Authorization also considers the type of access requested, such as read-only, write, or administrate.

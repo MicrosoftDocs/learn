@@ -1,5 +1,3 @@
-## Register an application
-
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
 
 1.  Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Global Administrator account.

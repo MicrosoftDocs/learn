@@ -2,9 +2,11 @@
 uid: learn.wwl.design-authentication-authorization-solutions.design-for-azure-active-directory
 title: Design for Microsoft Entra ID
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Microsoft Entra ID
   description: "Design for Microsoft Entra ID"
-  ms.date: 12/05/2024
+  ms.date: 12/31/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

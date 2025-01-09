@@ -122,7 +122,7 @@ In this tutorial, we focus on the Log Analytics part of Azure Monitor. You'll le
    ```
 
    > [!NOTE]
-   > If it still fails, check the VM's event logs for any errors, or install the extension manually by downloading the [Microsoft Monitoring Agent](https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-overview) and running the installer.
+   > If it still fails, check the VM's event logs for any errors, or install the extension manually by downloading the [Microsoft Monitoring Agent](/azure/azure-monitor/agents/azure-monitor-agent-overview) and running the installer.
 
 1. Run the script to configure the below-listed performance counters to be collected from the virtual machine. Replace the values of the variables with your existing resource group and workspace name.
 

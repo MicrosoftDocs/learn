@@ -1,4 +1,5 @@
 
+
 Private DNS zones are typically hosted in the same Azure subscription where the hub VNet is deployed. This central hosting practice is recommended for cross-premises DNS name resolution. In most cases, only networking and identity administrators have permissions to manage DNS records in these zones.
 
 ## Azure Private Endpoint DNS configuration

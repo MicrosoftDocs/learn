@@ -3,7 +3,7 @@ uid: learn.wwl.implement-windows-server-dns
 metadata:
   title: Implement Windows Server DNS
   description: "Implement Windows Server DNS"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
@@ -21,7 +21,7 @@ prerequisites: |
   - Active Directory Domain Services (AD DS) concepts and technologies.
   - Windows Server.
   - Core networking technologies.
-  - Windows client operating systems such as Windows 10.
+  - Windows client operating systems such as Windows 11.
   Windows PowerShell basics.
 iconUrl: /training/achievements/implement-windows-server-dns.svg
 levels:

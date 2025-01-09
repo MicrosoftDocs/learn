@@ -58,7 +58,7 @@ You'll perform this exercise using the Azure sandbox.
 
 ## Examine the code for the .NET MAUI client app
 
-[!include[](../../../includes/dotnet8-sdk-version.md)]
+[!include[](../../../includes/dotnet9-sdk-version.md)]
 
 1. Close the **PartsServer** solution, and open the **PartsClient** solution in the **src\client\PartsClient** folder in the cloned repository. This solution contains a partial implementation of a .NET MAUI client app that uses the **PartsServer** web service.
 

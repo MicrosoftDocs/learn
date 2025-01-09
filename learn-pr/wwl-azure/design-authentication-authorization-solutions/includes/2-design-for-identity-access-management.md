@@ -1,4 +1,3 @@
-
 To implement authentication and authorization, Azure Architects design identity and access management (IAM) solutions. These solutions must work for all users, applications, and devices. A strong IAM solution should have unified identity management, secure adaptive access, simplified identity governance, and a seamless user experience.
 
 :::image type="content" source="../media/identity-access.png" alt-text="Diagram of the four basic guidelines for a strong IAM solution." border="false":::
@@ -21,6 +20,6 @@ Your first step is to determine the ideal IAM solution for Tailwind Traders. The
 
 - **Consider using Microsoft Entra ID**. Develop with [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) for a solution that combines core directory services, application access management, and identity protection. Microsoft Entra ID provides an identity and access management system for Tailwind Traders employees that can operate in a cloud or hybrid environment.
 
-- **Consider your business-to-business (B2B) requirements**. Support collaboration for guest users and external business partners of Tailwind Traders, such as suppliers and vendors. Build your solution with [Microsoft Entra B2B (business-to-business)](/entra/external-id/what-is-b2bazure/active-directory/external-identities/compare-with-b2c) to support business-to-business operations.
+- **Consider your business-to-business (B2B) requirements**. Support collaboration for guest users and external business partners of Tailwind Traders, such as suppliers and vendors. Build your solution with Microsoft Entra B2B (business-to-business) to support business-to-business operations.
 
 - **Consider your business-to-customer scenarios**. Control how Tailwind Traders customers sign up, sign in, and manage their profiles when they use your apps. Use [Azure AD B2C (business-to-customer)](/azure/active-directory-b2c/overview) to develop a Microsoft Entra solution that supports customer-focused operations.

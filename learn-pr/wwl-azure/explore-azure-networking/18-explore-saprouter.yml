@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-networking.explore-saprouter
 title: Explore SAProuter
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore SAProuter
   description: "Explore using SAProuter to enable the TCP/IP communication between participating systems if there's no direct IP connection."
-  ms.date: 10/03/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

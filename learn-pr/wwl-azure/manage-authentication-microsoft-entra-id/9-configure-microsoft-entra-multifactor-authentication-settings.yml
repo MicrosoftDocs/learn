@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement multifactor authentication (MFA)
   description: "Implement multifactor authentication (MFA)"
-  ms.date: 09/04/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

@@ -1,4 +1,4 @@
-Personalized learning is a way of supporting every learner in a way that best suits their needs, interests, and choices. A few of the elements you can apply to personalized learning are explained here:
+Personalized learning is an approach that aims to support every learner in a way that best suits their needs, interests, and choices. A few of the elements you can apply to personalized learning are explained here:
 
 - **Contextual activities**. When learners connect their learning to their personal life or culture, the learning momentum improves. Activities like these make the acquired knowledge more relatable and, therefore, more impactful.
 - **Independence in learning**. When learners are empowered to establish their own learning objectives, they can map their own educational path and learn from their mistakes.

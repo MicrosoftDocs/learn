@@ -3,54 +3,54 @@ uid: learn.philanthropies.boost-your-productivity-with-microsoft-copilot.knowled
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: This unit is a part of the Boost productivity with Copilot module.
+  description: Check your knowledge.
   ms.date: 11/21/2024
-  author: yoosunee
-  ms.author: andreapark
+  author: v-downesmary
+  ms.author: v-downesmary
   ms.topic: unit
 durationInMinutes: 5
 quiz:
   title: Knowledge check
   questions:
-    - content: "Which of the following statements best assesses Copilot's capabilities?"
+    - content: "Which of the following statements best summarizes the capabilities of Microsoft Copilot?"
       choices:
         - content: "Copilot is effective in creating tailored development plans, providing daily challenges, recommending resources, offering code optimization, crafting professional networking messages, giving constructive feedback on presentations, and suggesting career shift options based on user background."
           isCorrect: true
-          explanation: "This statement evaluates the functionalities of Copilot and its effectiveness in supporting skill development and career advancement."
-        - content: "Copilot is somewhat effective in providing daily challenges and recommending resources but lacks the ability to offer constructive feedback on presentations and suggest career shift options."
+          explanation: "This statement summarizes the functionalities of Copilot and its effectiveness in supporting skill development and career advancement."
+        - content: "Copilot is somewhat effective in providing daily challenges and recommending resources, but it can't offer constructive feedback on presentations or suggest career shift options."
           isCorrect: false
-          explanation: "This statement does not fully evaluate all the functionalities of Copilot and underestimates its capabilities in offering feedback and career shift suggestions."
-        - content: "Copilot is effective in crafting professional networking messages and giving constructive feedback on presentations but does not provide tailored development plans or daily challenges."
+          explanation: "This statement doesn't fully represent all the functionalities of Copilot, and it underestimates the capabilities of Copilot in offering feedback and career shift suggestions."
+        - content: "Copilot is effective in crafting professional networking messages and giving constructive feedback on presentations, but it doesn't provide tailored development plans or daily challenges."
           isCorrect: false
-          explanation: "This statement overlooks Copilot's ability to create tailored development plans and provide daily challenges, which are key aspects of its functionality."
-        - content: "Copilot is only effective in recommending resources and offering code optimization techniques, with limited capabilities in other areas."
+          explanation: "This statement overlooks the ability of Copilot to create tailored development plans and provide daily challenges, which are key aspects of its functionality."
+        - content: "Copilot is effective only in recommending resources and offering code optimization techniques, with limited capabilities in other areas."
           isCorrect: false
-          explanation: "This statement underestimates Copilot's comprehensive support in various areas, including creating development plans, providing daily challenges, crafting networking messages, and suggesting career shift options."
-    - content: "Which of the following statements evaluates the effectiveness of Microsoft Copilot in managing daily tasks?"
+          explanation: "This statement underestimates the comprehensive support that Copilot offers in various areas, including creating development plans, providing daily challenges, crafting networking messages, and suggesting career shift options."
+    - content: "Which of the following statements summarizes the effectiveness of Copilot in managing daily tasks?"
       choices:
-        - content: "Microsoft Copilot can assist with drafting professional emails but does not have the capability yet to help assist with personal tasks."
+        - content: "Copilot can assist with drafting professional emails but doesn't yet have the capability to assist with personal tasks."
           isCorrect: false
           explanation: "Copilot can assist with both professional and personal tasks."
-        - content: "Microsoft Copilot can help in creating a personalized schedule to help balance work and person tasks efficiently."
+        - content: "Copilot can help in creating a personalized schedule to balance work and personal tasks efficiently."
           isCorrect: true
-          explanation: "This is correct because Copilot can provide a personalized schedule by optimizing both work and personal tasks into a schedule."
-        - content: "Microsoft Copilot can help with work-related tasks without aiding for personal time management."
+          explanation: "This answer is correct because Copilot can provide a personalized schedule by optimizing both work and personal tasks in a schedule."
+        - content: "Copilot can help with work-related tasks without aiding personal time management."
           isCorrect: false
-          explanation: "Copilot can help assist with both work-related tasks and personal time management."
-        - content: "Microsoft Copilot can provide project outlines but lacks scheduling assistance."
+          explanation: "Copilot can help with both work-related tasks and personal time management."
+        - content: "Copilot can provide project outlines but lacks scheduling assistance."
           isCorrect: false
-          explanation: "Copilot can help assist with the creation of project outlines and can also help with scheduling"
-    - content: "What method does Copilot use to ensure it provides the best assistance to turn an idea into reality?"
+          explanation: "Copilot can assist with the creation of project outlines and can also help with scheduling."
+    - content: "What method does Copilot use to ensure that it provides the best assistance to turn an idea into reality?"
       choices:
         - content: "Sentiment analysis"
           isCorrect: false
-          explanation: "Sentiment analysis involves determining the emotional tone behind a series of words. It is not the primary method Copilot uses to answer a query."
+          explanation: "Sentiment analysis involves determining the emotional tone behind a series of words. It's not the primary method that Copilot uses to answer queries."
         - content: "Predictive analytics"
           isCorrect: false
-          explanation: "Predictive analytics involves using statistical datasets to discover patterns and relationships, but it is not the primary method Copilot uses to provide answers to queries."
-        - content: "Combining a large language model with internet knowledge."
+          explanation: "Predictive analytics involves using statistical datasets to discover patterns and relationships, but it's not the primary method that Copilot uses to answer queries."
+        - content: "Combining a large language model with internet knowledge"
           isCorrect: true
           explanation: "Copilot uses a large language model combined with the vast knowledge of the internet to provide up-to-date information."
         - content: "Data mining"
           isCorrect: false
-          explanation: "Data mining involves analyzing large datasets to discover patterns and relationships, but it is not the primary method Copilot uses."
+          explanation: "Data mining involves analyzing large datasets to discover patterns and relationships, but it's not the primary method that Copilot uses to answer queries."

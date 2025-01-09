@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-networking.traffic-manager
 title: Explore Azure Traffic Manager
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Traffic Manager
   description: "Distribute traffic optimally to services across global Azure regions, by using Azure Traffic Manager."
-  ms.date: 10/03/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

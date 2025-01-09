@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.philanthropies.boost-your-productivity-with-microsoft-copilot.skill-development-with-copilot
-title: Skill development with Copilot
+title: Develop skills with Copilot
 metadata:
-  title: Skill development with Copilot
-  description: This unit is a part of the Boost productivity with Copilot module.
+  title: Develop skills with Copilot
+  description: This unit is a part of the module about boosting productivity with Copilot.
   ms.date: 11/21/2024
-  author: yoosunee
-  ms.author: andreapark
+  author: v-downesmary
+  ms.author: v-downesmary
   ms.topic: unit
 durationInMinutes: 4
 content: |

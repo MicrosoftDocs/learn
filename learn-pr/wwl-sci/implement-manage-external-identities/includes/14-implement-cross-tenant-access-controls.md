@@ -1,6 +1,6 @@
 Microsoft Entra organizations can use external identities cross-tenant access settings to manage how they collaborate with other Microsoft Entra organizations or Microsoft clouds. Cross-tenant access settings give you granular control over how external Microsoft Entra organizations collaborate with you, **inbound access**. You can also control how your users collaborate with external Microsoft Entra organizations, **outbound access**.
 
-:::image type="content" source="../media/cross-tenant-access-f4d1af08.png" alt-text="Screenshot of the Microsoft Entra ID external identities cross-tenant access controls dialog. Configure inbound and outbound access.":::
+:::image type="content" source="../media/cross-tenant-access-f4d1af08-e2d302af.png" alt-text="Screenshot of the Microsoft Entra ID external identities cross-tenant access controls dialog. Configure inbound and outbound access.":::
 
 
 ### Manage inbound and outbound settings
@@ -18,7 +18,7 @@ By default, B2B collaboration with other Microsoft Entra organizations is enable
 
 Above you explored the default settings. These settings are applied to all external connections. However, you can configure specific collaboration settings on a per organization basis as well. In the **cross-tenant access control** screen choose **Organizational settings** then add the tenant. Once added you can configure the inbound and outbound settings.
 
-### Microsoft cloud specific configuration
+### Microsoft Cloud-specific configuration
 
 What if your company has government contracts that need to connect to Microsoft Azure Government or Microsoft Azure China. Use the **Microsoft cloud settings** to connect to and configure the collaboration settings.
 

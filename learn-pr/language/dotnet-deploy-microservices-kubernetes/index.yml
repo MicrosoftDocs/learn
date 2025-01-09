@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Deploy a .NET microservice to Kubernetes
   description: Microservice applications are composed of small, independently versioned, and scalable customer-focused services. Microservices applications deployed in containers make it possible to scale out apps, and respond to increased demand by deploying more container instances, and to scale back if demand is decreasing. In complex solutions of many microservices the process of deploying, updating, monitoring, and removing containers introduces challenges. This module explains some of those challenges and shows how Kubernetes can help.
-  ms.date: 07/17/2023
+  ms.date: 12/06/2024
   author: codemillmatt
   ms.author: masoucou
   manager: coxford

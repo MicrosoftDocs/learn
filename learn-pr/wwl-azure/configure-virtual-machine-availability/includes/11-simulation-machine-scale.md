@@ -1,4 +1,3 @@
-
 ## Lab scenario
 
 Your organization is deploying virtual machines in Azure. As the Azure Administrator you need to:
@@ -18,13 +17,13 @@ Your organization is deploying virtual machines in Azure. As the Azure Administr
     + Review the template and deploy a second virtual machine. 
 + **Task 2**: Configure Azure virtual machines by using virtual machine extensions. 
     + Create a blob storage container. 
-    + Upload an [Azure PowerShell script](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/08/az104-08-install_IIS.ps1). This script installs the Windows Server Web Server role on a virtual machine. 
+    + Upload an [Azure PowerShell script](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Interactive%20Lab%20Simulation%20Files/08/az104-08-install_IIS.ps1). This script installs the Windows Server Web Server role on a virtual machine. 
     + Use the custom script extension feature to run the script on a virtual machine. Export the template.
-    + Configure the exported [template](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/08/az104-08-custom_script_extension.json) to install the role on a different virtual machine. 
+    + Configure the exported [template](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Interactive%20Lab%20Simulation%20Files/08/az104-08-custom_script_extension.json) to install the role on a different virtual machine. 
 + **Task 3**: Scale compute and storage for Azure virtual machines. In this task, you scale compute for Azure virtual machines by changing their size and scale their storage by attaching and configuring their data disks.
     + Resize the virtual machine.
     + Create and attach a new disk to the virtual machine.
-    + [Use Azure PowerShell](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/08/lab08diskcode.txt) to initialize and partition the new disk.
+    + [Use Azure PowerShell](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Interactive%20Lab%20Simulation%20Files/08/lab08diskcode.txt) to initialize and partition the new disk.
     + Customize the template to resize the virtual machine and change the disk configuration. 
 + **Task 4**: Register the Microsoft Insights and Microsoft Alerts Management resource providers.
 + **Task 5**: Deploy zone-resilient Azure Virtual Machine Scale Sets by using the Azure portal.

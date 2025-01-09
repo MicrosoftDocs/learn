@@ -9,15 +9,15 @@ But there are some things, like a `Button` or `MenuItem` activation, that aren't
 Many of the .NET MAUI controls that have this kind of interaction support binding to a property that exposes an `ICommand` interface. This property is most likely named `Command`. The `Button` control is one example:
 
 ```xaml
-<Button Text="Give Bonus" Command="{Binding GiveBonus}" />
+<Button Text="Give Bonus" Command="{Binding GiveBonusCommand}" />
 ```
 
-The control knows when to invoke the command. For example, a button invokes the command when pressed. The command in this example is bound to the `GiveBonus` property of the viewmodel. The property type has to implement the `ICommand` interface. The code would look something like this:
+The control knows when to invoke the command. For example, a button invokes the command when pressed. The command in this example is bound to the `GiveBonus` property of the viewmodel. The property type has to implement the `ICommand` interface. The code would look something like this example:
 
 ```csharp
 public class EmployeeViewModel : INotifyPropertyChanged
 {
-    public ICommand GiveBonus {get; private set;}
+    public ICommand GiveBonusCommand {get; private set;}
     ...
 }
 ```
@@ -48,10 +48,10 @@ Instead of creating several custom classes that implement the interface, it's co
 ```csharp
 public class EmployeeViewModel : INotifyPropertyChanged
 {
-    public ICommand GiveBonus {get; private set;}
+    public ICommand GiveBonusCommand {get; private set;}
     public EmployeeViewModel(Employee model)
     {
-        GiveBonus = new Command(GiveBonusExecute, GiveBonusCanExecute)
+        GiveBonusCommand = new Command(GiveBonusExecute, GiveBonusCanExecute)
     }
 
     void GiveBonusExecute()
@@ -68,6 +68,34 @@ public class EmployeeViewModel : INotifyPropertyChanged
 
 In this code, the `Execute` behavior is provided by the method `GiveBonusExecute`. And `CanExecute` is provided by `GiveBonusCanExecute`. Delegates to those methods are passed to the `Command` constructor. In this example, there's no implementation for `CanExecuteChanged`.
 
+## Simplify with the MVVM Toolkit
+
+The MVVM Toolkit library contains implementations of `ICommand` known as `RelayCommand` and `AsyncRelayCommand`. It also supplies source generators to simplify this code further. In the following example, the `GiveBonusCommand` will be generated setting both the method to call to execute and to call to see if it can execute. The `[RelayCommand]` attribute is used on the `GiveBonus` method and it will generate the `GiveBonusCommand`. Additionally, by setting the `CanExecute` property on the attribute to the name of the method we want to hook up to the `CanExecute` method of the `ICommand`, it will generate the code to set this up for us.
+
+```csharp
+public partial class EmployeeViewModel : ObservableObject
+{
+    public EmployeeViewModel(Employee model)
+    {
+    }
+
+    [RelayCommand(CanExecute = nameof(GiveBonusCanExecute))]
+    void GiveBonus()
+    {
+        //logic for giving bonus
+    }
+
+    bool GiveBonusCanExecute()
+    {
+        //logic for deciding if "give bonus" button should be enabled.
+        return true;
+    }
+}
+```
+
+
+The MVVM Toolkit also handles `async` methods, which are common in .NET programming.
+
 ## Commands with parameters
 
 The `ICommand` interface accepts an `object` parameter for the `CanExecute` and `Execute` methods. .NET MAUI implements this interface without any type checking through the `Command` class. The delegates you attach to the command must do their own type-checking to ensure that the correct parameter is passed. .NET MAUI also provides the `Command<T>` implementation where you set the type of parameter expected. When you create a command that accepts a single type of parameter, use `Command<T>`.
@@ -77,7 +105,7 @@ The `ICommand` interface accepts an `object` parameter for the `CanExecute` and 
 In this example, the string value "25" is sent to the command:
 
 ```xaml
-<Button Text="Give Bonus" Command="{Binding GiveBonus}" CommandParameter="25" />
+<Button Text="Give Bonus" Command="{Binding GiveBonusCommand}" CommandParameter="25" />
 ```
 
 The command would need to interpret and convert that string parameter. There are many ways to provide a strongly typed parameter.
@@ -85,7 +113,7 @@ The command would need to interpret and convert that string parameter. There are
 - Instead of using attribute syntax to define `CommandParameter`, use XAML elements.
 
   ```xaml
-  <Button Text="Give Bonus" Command="{Binding GiveBonus}">
+  <Button Text="Give Bonus" Command="{Binding GiveBonusCommand}">
       <Button.CommandParameter>
           <x:Int32>25</x:Int32>
       </Button.CommandParameter>

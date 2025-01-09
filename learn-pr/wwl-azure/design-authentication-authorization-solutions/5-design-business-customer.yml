@@ -2,9 +2,11 @@
 uid: learn.wwl.design-authentication-authorization-solutions.design-for-azure-ad-b2c
 title: Design for Azure Active Directory B2C (business-to-customer)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure Active Directory B2C (business-to-customer)
   description: "Design for Azure Active Directory B2C (business-to-customer)"
-  ms.date: 12/05/2024
+  ms.date: 12/31/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

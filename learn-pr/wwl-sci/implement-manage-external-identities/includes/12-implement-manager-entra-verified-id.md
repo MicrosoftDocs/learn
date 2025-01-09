@@ -1,7 +1,4 @@
-:::image type="content" source="../media/entra-verified-identity-d15c9bf7.png" alt-text="Screenshot of the Microsoft Entra ID security settings screen, with the Verifiable credentials selected.":::
-
-
-Microsoft Entra Verified ID is a preview feature. This content will continue to update as more capabilities are added, and the feature moves to general-availability. For more information you can also look here: [Configure your tenant for Microsoft Entra Verifiable Credentials](/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant).
+:::image type="content" source="../media/entra-verified-identity-d15c9bf7-67300c67.png" alt-text="Screenshot of the Microsoft Entra ID security settings screen, with the Verifiable credentials selected.":::
 
 ### What is Entra Verified ID?
 

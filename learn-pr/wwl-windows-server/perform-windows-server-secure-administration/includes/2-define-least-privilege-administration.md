@@ -1,6 +1,6 @@
-A firm of IT security specialists have been working at Contoso. They've just produced a report for the main board. The report identifies that most security breaches or data loss incidents at Contoso in the recent past were the result of human error, malicious activity, or both.
+A firm of IT security specialists have been working at Contoso. They've produced a report for the main board. The report identifies that most security breaches or data loss incidents at Contoso in the recent past were the result of human error, malicious activity, or both.
 
-The report gave a number of examples, including signing in with administrative privilege and performing standard user tasks. In one cited example, a user signed in with Enterprise Admins rights and opened an email attachment that ran malicious code. That code then had full administrative rights across the Contoso enterprise because the user that ran it had full administrative rights.
+The report gave numerous examples, including signing in with administrative privilege and performing standard user tasks. In one cited example, a user signed in with Enterprise Admins rights and opened an email attachment that ran malicious code. That code then had full administrative rights across the Contoso enterprise because the user that ran it had full administrative rights.
 
 ## Overview
 
@@ -10,7 +10,7 @@ Least privilege is the concept of restricting access rights to only those rights
 - Service accounts.
 - Computing processes.
 
-Although this principle is easy to understand, it can be complex to implement. As a result, in many cases, least privilege is not adhered to.
+Although this principle is easy to understand, it can be complex to implement. As a result, in many cases, least privilege isn't adhered to.
 
 The principle states that all users should sign in with a user account that has the minimum permissions necessary to complete the current task and nothing more. This principle provides protection against malicious code, among other attacks. It applies to computers and the users of those computers.
 
@@ -18,17 +18,17 @@ The problem, of course, is that administrators typically don't want to sign in w
 
 ## Identify security principals
 
-In an on-premises environment, you should determine which security principals (users and groups) belong to administrative groups. In Active Directory Domain Services (AD DS), there are a number of sensitive administrative groups. These are described in the following table.
+In an on-premises environment, you should determine which security principals (users and groups) belong to administrative groups. In Active Directory Domain Services (AD DS), there are several sensitive administrative groups. These are described in the following table.
 
 |Group|Description|
 |--|--|
 |Enterprise Admins|This universal security group resides in the Users folder of the AD DS forest root domain. Members can perform any administrative task anywhere in the forest. There are few management tasks that require Enterprise Admins membership. By default, only the Administrator user account from the forest root domain belongs to Enterprise Admins.|
 |Domain Admins|This global security group resides in the Users folder of every domain in your AD DS forest. Members can perform any administrative task anywhere in the local domain. By default, only the Administrator user account from the local domain belongs to Domain Admins.|
-|Schema Admins|This universal security group resides in the Users folder of the forest root domain. Members can modify the properties of the AD DS schema. Schema changes are infrequent, but very significant in their effect. By default, only the Administrator user account from the forest root domain belongs to Schema Admins.|
+|Schema Admins|This universal security group resides in the Users folder of the forest root domain. Members can modify the properties of the AD DS schema. Schema changes are infrequent, but significant in their effect. By default, only the Administrator user account from the forest root domain belongs to Schema Admins.|
 |Administrators|This domain local security group resides in the Builtin folder in AD DS. The Administrators local group also exists in all computers in your AD DS forest. Administrators have complete and unrestricted access to the domain (or computer). Typically, the Enterprise Admins and Domain Admins groups are added to the Administrators groups on all computers in your forest.|
 
 > [!NOTE]
-> The AD DS schema is a collection of objects and their properties, sometimes also called classes and attributes.
+> The AD DS schema is a collection of objects and their properties, sometimes also called classes, and attributes.
 
 Other built-in groups that have security privileges include:
 
@@ -78,8 +78,8 @@ You can use the **Local Security Policy** console to determine what rights are a
 
 User Account Control (UAC) is a security feature that provides a way for users to limit the status of their administrative account to that of a standard user account. However, when the user wants to perform a task that requires administrative capability, referred to as *elevation*, the user is prompted to confirm that elevation. By default, UAC prompts the user when they attempt elevation, as follows:
 
-- If the user is an administrator, they are prompted to confirm the elevation.
-- If the user is a standard user, they are prompted for administrative credentials.
+- If the user is an administrator, they're prompted to confirm the elevation.
+- If the user is a standard user, they're prompted for administrative credentials.
 
 You can control UAC prompts and behavior by using GPOs.
 
@@ -97,9 +97,3 @@ JEA allows you to lock down administrative sessions so that only a specific set 
 
 > [!IMPORTANT]
 > JEA only supports Windows PowerShell remoting.
-
----
-
-
-
----

@@ -2,7 +2,7 @@ The first step in building a generative AI solution with Azure OpenAI Service  i
 
 Projects are hosted by an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps.
 
-The Azure AI hub resource is the top-level Azure resource for Azure AI Foundry and provides the working environment for a team to build and manage AI applications. 
+The Azure AI hub resource is the top-level Azure resource for Azure AI Foundry and provides the working environment for a team to build and manage AI applications.
 
 In Azure, resources enable access to Azure services for individuals and teams. Resources also provide a container for billing, security configuration, and monitoring.
 
@@ -14,9 +14,9 @@ In Azure, resources enable access to Azure services for individuals and teams. R
 1. In [Azure AI Foundry](https://ai.azure.com/), select **+Create project**.
 1. Complete the following fields:
     - **Project name**: Provide a name for your project.
-    - **Hub**: Select **Create new hub** and enter a name for the hub.
 1. Select the arrow next to **Azure resources to be created** to review the resources that will be created.
 1. Select **Customize** and modify the following fields as needed:
+    - **Hub**: Leave as default or provide your own name.
     - **Subscription**: Select your Azure subscription.
     - **Resource group**: Select an existing resource group or create a new one.
     - **Location**: Select **East US**.

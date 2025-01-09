@@ -1,5 +1,3 @@
-
-
 Custom Script Extension is primarily used for post deployment configuration and software installation. With it, you can download and run scripts in Azure VMs. The scripts can be run using Resource Manager templates, Azure Command-Line Interface (Azure CLI), REST API, PowerShell, or the Azure portal. You can download script files from Azure storage or GitHub, or you can provide the scripts to the Azure portal at run time.
 
 > [!NOTE]
@@ -14,14 +12,18 @@ The scripts are primarily useful for post deployment configuration, software ins
 
 To use custom script extensions for Windows, you must be running one of the supported Windows operating systems:
 
-- Windows Server 2008 R2
 - Windows Server 2012
 - Windows Server 2012 R2
 - Windows 10
+- Windows 11
 - Windows Server 2016
 - Windows Server 2016 Core
 - Windows Server 2019
 - Windows Server 2019 Core
+- Windows Server 2022
+- Windows Server 2022 Core
+- Windows Server 2025
+- Windows Server 2025 Core
 
 ## Script location
 

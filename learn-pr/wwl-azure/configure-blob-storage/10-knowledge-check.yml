@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/05/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -23,7 +23,7 @@ quiz:
     - content: "The cool access tier is for frequent access of objects in the storage account."
       isCorrect: false
       explanation: "Incorrect. The cool access tier is for infrequently used storage objects."
-    - content: "The hot access tier is for storing large amounts of data that's infrequently accessed."
+    - content: "The hot access tier is for storing large amounts of infrequently accessed data."
       isCorrect: false
       explanation: "Incorrect. The hot access tier is for frequently accessed storage objects."
     - content: "The administrator can switch between hot and cool performance tiers at any time."

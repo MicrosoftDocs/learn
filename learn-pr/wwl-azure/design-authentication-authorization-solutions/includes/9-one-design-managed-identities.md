@@ -1,4 +1,3 @@
-
 A common challenge for developers is how to manage secrets and credentials that secure communication between different components of a solution. Managed identities eliminate the need for developers to manage credentials.
 
 Azure managed identity is a feature of Microsoft Entra ID that you can use free of charge. This feature automatically creates identities to allow apps to authenticate with Azure resources and services. Managed identities are available in all editions of Microsoft Entra ID, including the Free edition that comes with an Azure subscription. You can use managed identities in App Service at no extra cost, and with no required configuration.

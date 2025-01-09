@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-prepare-insider-risk-management.insider-risk-management-integrations
+title: Integrate Insider Risk Management with data sources and tools
+metadata:
+  title: Integrate Insider Risk Management with data sources and tools
+  description: "Integrate Insider Risk Management with data sources and tools"
+  ms.date: 1/3/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/insider-risk-management-integrations.md)]

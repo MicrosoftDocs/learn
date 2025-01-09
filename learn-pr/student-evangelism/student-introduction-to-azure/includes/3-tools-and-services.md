@@ -18,8 +18,6 @@ You can also keep track of your progress via your profile. There you can find in
 
 To be an app developer, you typically need skills in at least one programming language. Python is a great choice of language to learn because it can be used for many purposes, including data science, app development, IoT, and more.
 
-In the path [Python for beginners](../../../paths/beginner-python/index.yml) you’ll be taken through the fundamentals of Python as well as more advanced topics like working with Python in a Notebook or managing many files and dependencies as part of a project.
-
 ## GitHub
 
 :::image type="icon" source="../media/github-logo.png" border="false":::

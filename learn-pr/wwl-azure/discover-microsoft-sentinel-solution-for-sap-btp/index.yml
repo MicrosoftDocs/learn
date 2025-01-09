@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Discover the Microsoft Sentinel solution for SAP BTP
+  description: "Understand the Microsoft Sentinel solution for SAP BTP. The module explores the benefits of monitoring BTP activity, and describes the steps for deploying the Microsoft Sentinel solution for SAP BTP."
+  ms.date: 12/19/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: azure
+  ai-usage: human-only
+title: Discover the Microsoft Sentinel solution for SAP BTP
+summary: Understand the Microsoft Sentinel solution for SAP BTP. The module explores the benefits of monitoring BTP activity, and describes the steps for deploying the Microsoft Sentinel solution for SAP BTP.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Describe the importance of monitoring BTP activity.
+
+  -   Describe how Microsoft Sentinel integrates with SAP BTP.
+
+  -   Identify key components and data flow.
+
+  -   Review built-in analytics rules and detections.
+
+  -   Identify specific threats to BTP applications and how Microsoft Sentinel mitigates these risks.
+
+  -   Deploy the Microsoft Sentinel solution for SAP BTP.
+
+  -   Use the SAP BTP connector and data connector.
+
+  -   Monitor and respond to threats.
+prerequisites: |
+  -   Basic understanding of Microsoft Sentinel
+
+  -   SAP system management
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- functional-consultant
+- security-engineer
+- solution-architect
+products:
+- azure
+- microsoft-sentinel
+subjects:
+- cloud-computing
+- security
+- threat-protection
+units:
+- learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp.introduction
+- learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp.discover-the-microsoft-sentinel-solution-for-sap
+- learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp.address-security-risks-with-microsoft-sentinel-solution-for-sap-btp
+- learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp.review-microsoft-sentinel-solution-workbook-for-sap-btp
+- learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp.explore-microsoft-sentinel-solution-analytics-rules-for-sap-btp
+- learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp.deploy-microsoft-sentinel-solution-for-sap-btp
+- learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp.knowledge-check
+- learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp.summary
+badge:
+  uid: discover-microsoft-sentinel-solution-for-sap-btp.badge

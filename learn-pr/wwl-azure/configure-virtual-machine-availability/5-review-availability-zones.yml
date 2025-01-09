@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-virtual-machine-availability.review-availability-zones
 title: Review availability zones
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review availability zones
   description: "Review availability zones"
-  ms.date: 12/17/2024
+  ms.date: 12/19/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

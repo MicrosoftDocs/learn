@@ -32,5 +32,5 @@ Skills:
 
 Accounts:
 
-- A [GitHub account](https://github.com/login)
-- [Access to GitHub Copilot](https://github.com/github-copilot/signup)
+- [GitHub account](https://github.com/login)
+- [GitHub Copilot](https://github.com/github-copilot/signup)

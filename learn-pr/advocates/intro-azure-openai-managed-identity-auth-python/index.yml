@@ -5,24 +5,24 @@ metadata:
   author: sarah-yo
   ms.date: 11/11/2024
   title: Introduction to Azure OpenAI Managed Identity Authentication with Python
-  description: Introduction to Azure OpenAI Managed Identity Authentication with Python.
+  description: Learn about Azure OpenAI managed identity authentication with Python.
   ms.topic: module
   ms.collection: ce-advocates-ai-copilot
   ms.service: azure-ai-openai
-title: Introduction to Azure OpenAI Managed Identity Authentication with Python
-summary: Understanding how to use managed identity in python apps that interact with Azure OpenAI.
+title: Introduction to Azure OpenAI managed identity authentication with Python
+summary: This module helps you understand how to use a managed identity in Python apps that interact with Azure OpenAI Service.
 abstract: |
- After completing this module, you'll be able to:
-  - Describe the different RBAC roles for use in Azure OpenAI and understand how to configure role assignments
-  - Understand the differences between using API keys and managed identities within Azure OpenAI
-  - Understand how to configure keyless authentication to Azure OpenAI for local development for Python
-  - Understand how to configure keyless authentication to Azure OpenAI for Azure-hosted environments for Python
+ After you complete this module, you'll be able to:
+  - Describe the role-based access control (RBAC) roles for use in Azure OpenAI and configure role assignments.
+  - Describe the differences between using API keys and managed identities within Azure OpenAI.
+  - Configure keyless authentication to Azure OpenAI for local development for Python.
+  - Configure keyless authentication to Azure OpenAI for Azure-hosted environments for Python.
 prerequisites: |
-  To get the best learning experience from this module, you should have knowledge and experience of:
+  To get the best learning experience from this module, you should have knowledge and experience with:
   - Python programming
   - Azure OpenAI
   - Azure RBAC roles
-  - Azure Managed Identity
+  - Azure managed identities
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

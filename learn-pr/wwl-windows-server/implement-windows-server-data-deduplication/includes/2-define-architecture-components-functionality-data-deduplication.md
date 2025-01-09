@@ -4,7 +4,7 @@ Most organizations and businesses, including Contoso, must deal with processing 
 
 Data Deduplication is a role service of Windows Server that identifies and removes duplications within data without compromising data integrity. This achieves the goals of storing more data and using less physical disk space.
 
-To reduce disk utilization, Data Deduplication scans files, then divides those files into chunks, and retains only one copy of each chunk. After deduplication, files are no longer stored as independent streams of data. Instead, Data Deduplication replaces the files with stubs that point to data blocks that it stores in a common chunk store. The process of accessing deduplicated data is completely transparent to users and apps.
+To reduce disk utilization, Data Deduplication scans files, then divides those files into chunks, and retains only one copy of each chunk. After deduplication, files are no longer stored as independent streams of data. Instead, Data Deduplication replaces the files with stubs that point to data blocks that it stores in a common chunk store. The process of accessing deduplicated data is transparent to users and apps.
 
 In many cases, Data Duplication increases overall disk performance, because multiple files can share one chunk cached in memory. This way, it might be possible to retrieve data from these files by performing fewer read operations, which compensates for a small performance impact when reading deduplicated files. Data deduplication has no impact on the performance of disk writes because it applies to data that is already on the disk.
 
@@ -14,7 +14,7 @@ In many cases, Data Duplication increases overall disk performance, because mult
 
 The Data Deduplication role service consists of the following components:
 
-- Filter driver. This component redirects read requests to the chunks that are part of the file being requested. There is one filter driver for every volume.
+- Filter driver. This component redirects read requests to the chunks that are part of the file being requested. There's one filter driver for every volume.
 - Deduplication service. This component manages the following jobs:
   - Deduplication and compression. These jobs process files according to the data deduplication policy for the volume. After initial optimization of a file, if the file is then modified and meets the data deduplication policy threshold for optimization, the file will be optimized again.
   - Garbage Collection. This job processes deleted or modified data on the volume so that any data chunks no longer being referenced are cleaned up, yielding free disk space. By default, Garbage Collection runs weekly, however, you might also consider invoking it after deleting many files.
@@ -32,7 +32,7 @@ The Data Deduplication role service consists of the following components:
 > After disabling Data Deduplication, the volume remains in the deduplicated state, and the existing deduplicated data remains accessible; however, the server stops running optimization jobs for the volume, and it doesn't deduplicate the new data. Afterwards, you could use the unoptimization job to undo the existing deduplicated data on a volume. At the end of a successful de-optimization job, all the data deduplication metadata is deleted from the volume.
 
 > [!IMPORTANT]
-> When using the unoptimization job, make sure to verify that the volume hosting this data has enough free space, because all the deduplicated files will revert to their original size.
+> When using the unoptimization job, make sure to verify that the volume hosting this data has enough free space, because all the deduplicated files revert to their original size.
 
 :::image type="content" source="../media/m18-data-deduplication-components.png" alt-text="The architecture of Data Deduplication, including file driver, deduplication service, its jobs, and the underlying file system chunk store." border="false":::
 

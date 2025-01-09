@@ -2,11 +2,11 @@ Azure App Service is an HTTP-based service for hosting web applications. With Ap
 
 In this module, you reviewed the features and usage cases for Azure App Service. You learned how to create, secure, and back up your web apps. You explored how to configure deployment settings, including deployment slots, and custom domain names for your web apps. You discovered how to use Azure Application Insights to monitor web apps.
 
-The main takeaways from this module are:
+## The main takeaways for this module
 
 - Azure App Service lets you develop and deploy web, mobile, and API apps. 
 
-- Azure App Service configuration settings include runtime stack, operating system, region and App Service plan.
+- Azure App Service configuration settings include runtime stack, operating system, region, and App Service plan.
 
 - Deployment slots help you manage different app stages. For example, development, test, stage, and production.
 
@@ -15,6 +15,13 @@ The main takeaways from this module are:
 - Azure Application Insights is a feature of Azure Monitor that lets you monitor your live applications. You can integrate Application Insights with your App Service configure to automatically detect performance anomalies in your apps. 
 
 - Application Insights lets you continuously monitor the performance and usability of your apps. 
+
+## Learn more with Copilot
+Copilot can assist you in configuring Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot.
+
+- What are the main tasks to configure an Azure App Service web app?
+
+- What options are available for scaling an Azure App Service web app?
 
 ## Learn more with documentation
 

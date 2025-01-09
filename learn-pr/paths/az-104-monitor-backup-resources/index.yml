@@ -3,44 +3,46 @@ uid: learn.az-104-monitor-backup-resources
 metadata:
   title: 'AZ-104: Monitor and back up Azure resources'
   description: 'AZ-104: Monitor and back up Azure resources'
-  ms.date: 06/06/2024
+  ms.date: 12/30/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: learning-path
 title: 'AZ-104: Monitor and back up Azure resources'
 prerequisites: |
-  -   [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
-  -   [Azure Fundamentals: Describe Azure architecture and services](/training/paths/azure-fundamentals-describe-azure-architecture-services/)
-  -   [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
-  -   [AZ-104: Prerequisites for Azure administrators](/training/paths/az-104-administrator-prerequisites/)
+  -   [Microsoft Azure Fundamentals: Describe cloud concepts](https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
+  -   [Azure Fundamentals: Describe Azure architecture and
+       services](https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/)
+  -   [Azure Fundamentals: Describe Azure management and
+       governance](https://learn.microsoft.com/training/paths/describe-azure-management-governance/)
+  -   [AZ-104: Prerequisites for Azure administrators](https://learn.microsoft.com/training/paths/az-104-administrator-prerequisites/)
 summary: |
   Learn how to monitor resources by using Azure Monitor and implement backup and recover in Azure.
    Here are the learning paths in the AZ-104 Azure Administrator series:
   :::row:::
   :::column:::
-   ![The trophy for the AZ-104 Prerequisites for Azure administrators learning path.](/learn/achievements/az-104-administrator-prerequisites.svg) <br/>
+   ![The trophy for the AZ-104 Prerequisites for Azure administrators learning path.](/learn/achievements/az-104-administrator-prerequisites.svg)
   [AZ-104: Prerequisites for Azure administrators](/learn/paths/az-104-administrator-prerequisites/)
   :::column-end:::
   :::column:::
-   ![The trophy for the AZ-104 Manage identities and governance in Azure learning path.](/learn/achievements/az-104-manage-identities-governance.svg) <br/>
+   ![The trophy for the AZ-104 Manage identities and governance in Azure learning path.](/learn/achievements/az-104-manage-identities-governance.svg)
   [AZ-104: Manage identities and governance in Azure](/learn/paths/az-104-manage-identities-governance/)
   :::column-end:::
   :::column:::
-   ![The trophy for the AZ-104 Implement and manage storage in Azure learning path.](/learn/achievements/az-104-manage-storage.svg) <br/>
+   ![The trophy for the AZ-104 Implement and manage storage in Azure learning path.](/learn/achievements/az-104-manage-storage.svg)
   [AZ-104: Implement and manage storage in Azure](/learn/paths/az-104-manage-storage/)
   :::column-end:::
   :::row-end:::
   :::row:::
   :::column:::
-   ![The trophy for the AZ-104 Deploy and manage Azure compute resources learning path.](/learn/achievements/az-104-manage-compute-resources.svg) <br/>
+   ![The trophy for the AZ-104 Deploy and manage Azure compute resources learning path.](/learn/achievements/az-104-manage-compute-resources.svg)
   [AZ-104: Deploy and manage Azure compute resources](/learn/paths/az-104-manage-compute-resources/)
   :::column-end:::
   :::column:::
-   ![The trophy for the AZ-104 Configure and manage virtual networks for Azure administrators learning path.](/learn/achievements/az-104-manage-virtual-networks.svg) <br/>
+   ![The trophy for the AZ-104 Configure and manage virtual networks for Azure administrators learning path.](/learn/achievements/az-104-manage-virtual-networks.svg)
   [AZ-104: Configure and manage virtual networks for Azure administrators](/learn/paths/az-104-manage-virtual-networks/)
   :::column-end:::
   :::column:::
-   ![The trophy for the AZ-104 Monitor and back up Azure resources learning path.](/learn/achievements/az-104-monitor-backup-resources.svg) <br/>
+   ![The trophy for the AZ-104 Monitor and back up Azure resources learning path.](/learn/achievements/az-104-monitor-backup-resources.svg)
   AZ-104: Monitor and back up Azure resources
   :::column-end:::
   :::row-end:::
@@ -59,11 +61,9 @@ subjects:
 - cloud-computing
 modules:
 - learn.introduction-to-azure-backup
-- learn.wwl.configure-azure-monitor
-- learn.wwl.configure-log-analytics
-- learn.wwl.configure-network-watcher
+- learn.protect-virtual-machines-with-azure-backup
+- learn.azure.intro-to-azure-monitor
 - learn.incident-response-with-alerting-on-azure
 - learn.analyze-infrastructure-with-azure-monitor-logs
-- learn.azure.monitor-azure-vm-using-diagnostic-data
 trophy:
   uid: learn.az-104-monitor-backup-resources.trophy

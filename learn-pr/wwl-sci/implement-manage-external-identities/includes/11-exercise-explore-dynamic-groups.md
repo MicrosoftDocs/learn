@@ -11,7 +11,7 @@
 9.  In the Edit rule syntax pane, enter the following expression in the **Rule syntax** box: user.objectId -ne null
 10. Select **OK**. The rule appears in the Rule syntax box.
     
-    :::image type="content" source="../media/dynamic-group-membership-rule-ff845a55.png" alt-text="Screenshot of the dynamic group membership rules screen with rule syntax highlighted. Exist in Microsoft Entra ID.":::
+    :::image type="content" source="../media/dynamic-group-membership-rule-ff845a55-eb3bd60e.png" alt-text="Screenshot of the dynamic group membership rules screen with rule syntax highlighted. Exist in Microsoft Entra ID.":::
     
 11. Select **Save**. The new dynamic group will now include B2B guest users as well as member users.
 12. On the New group page, select **Create** to create the group.

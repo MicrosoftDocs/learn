@@ -17,3 +17,10 @@ This module demonstrates the differences between a code-based UI and a data-boun
 ## What do you learn
 
 By the end of this module, you're able to use data binding to present data in the UI, and transform data when the UI types and data types don't match.
+
+## Prerequisites
+
+- Visual Studio 2022 with the .NET MAUI workload installed
+- Optional: Visual Studio Code with the .NET MAUI Extension and .NET SDK with the .NET MAUI workload installed
+
+[!include[](../../../includes/install-dotnet-maui-workload.md)]
