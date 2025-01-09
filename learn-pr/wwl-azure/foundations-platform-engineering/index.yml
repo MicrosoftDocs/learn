@@ -1,0 +1,70 @@
+### YamlMime:Module
+uid: learn.wwl.foundations-platform-engineering
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Foundations of Platform Engineering
+  description: "This module introduces the core concepts and importance of platform engineering. It explores how platform engineering enhances developer productivity, accelerates time to value, and supports digital transformation. Learners will understand the strategic value of platform engineering as the foundation for both technical success and alignment with broader business goals."
+  ms.date: 01/09/2025
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: module-standard-task-based
+  ms.service: azure
+  ai-usage: human-only
+title: Foundations of Platform Engineering
+summary: This module introduces the core concepts and importance of platform engineering. It explores how platform engineering enhances developer productivity, accelerates time-to-value, and supports digital transformation. Learners will understand the strategic value of platform engineering as the foundation for both technical success and alignment with broader business goals.
+abstract: |
+  -   Understand the importance of platform engineering in enhancing developer productivity and accelerating time-to-value.
+
+  -   Learn how to design and build integrated platforms that optimize the developer experience and streamline development efforts.
+
+  -   Explore the role of platform engineering in driving digital transformation within an enterprise.
+
+  -   Recognize the strategic value of platform engineering as the foundation for both technical success and alignment with broader business goals.
+
+  -   Identify key stakeholders in platform engineering and understand their distinct expectations and requirements
+prerequisites: |
+  -   Understanding of what DevOps is and its concepts.
+
+  -   Beneficial to have experience in an organization that delivers software.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- ai-engineer
+- developer
+- devops-engineer
+- network-engineer
+- security-engineer
+- solution-architect
+- startup-founder
+products:
+- azure
+- azure-devops
+- github
+subjects:
+- app-development
+- architecture
+- asset-management
+- automation
+- cloud-computing
+- cloud-security
+- containers
+- custom-app-development
+- devops
+- infrastructure
+- it-management-monitoring
+- product-lifecycle-management
+- productivity
+- site-reliability-engineering
+units:
+- learn.wwl.foundations-platform-engineering.introduction
+- learn.wwl.foundations-platform-engineering.role-platform-engineering-modern-enterprises
+- learn.wwl.foundations-platform-engineering.core-principles-platform-design
+- learn.wwl.foundations-platform-engineering.platform-engineering-capability-model
+- learn.wwl.foundations-platform-engineering.core-aspects-platform-implementation
+- learn.wwl.foundations-platform-engineering.knowledge-check
+- learn.wwl.foundations-platform-engineering.summary
+badge:
+  uid: learn.wwl.foundations-platform-engineering.badge
