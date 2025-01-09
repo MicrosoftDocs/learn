@@ -2,7 +2,7 @@ Azure landing zones are a logical construct that captures everything that must b
 
 Landing zones help with cloud adoption by creating better ways to organize resources, not just by type, but by organization, cost, and security. Watch the following video:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4xdvm]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=14a106f2-3835-44b1-8452-3849bea9fea7]
 
 When you design and implement an Azure landing zone, consider security throughout the process. The security design area focuses on considerations and recommendations for landing zone decisions. Azure Security Benchmarks are built into Azure landing zones to make adopting a strong security stance easier.
 
