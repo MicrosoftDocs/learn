@@ -78,4 +78,4 @@ The main steps in the process are:
 1. Configure Storage Replica between the two domain member servers. Use Windows PowerShell to configure Storage Replica between the two domain member servers.
 1. Validate the Storage Replica configuration. Use Windows PowerShell to validate the Storage Replica configuration.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MvSn]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=e52da7b6-f652-4d76-ac47-ccb3e0698eef]
