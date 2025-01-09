@@ -38,7 +38,7 @@ Color, lighting, and materials play a crucial role in designing visual assets fo
 
 - **Materials**: Materials are essential in creating realistic holograms. You might create interesting holographic objects that mix well with the physical world by giving them the right visual features. Materials are also necessary for delivering visual feedback for various user input activities. Since there's no physical feedback on holographic objects, providing visual feedback through materials is essential, especially for the direct interactions with hand-tracking input. For example, the holographic button UI in HoloLens 2 offers the following elements to improve the user's interaction confidence.
 
-  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJHgW ]
+  > [!VIDEO https://learn-video.azurefd.net/vod/player?id=142ca4c0-8289-4608-b64f-98ec82bcaabf ]
 
   - Proximity light
   - Hover light

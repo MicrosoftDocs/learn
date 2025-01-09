@@ -4,7 +4,7 @@ Microsoft HoloLens 2 is an untethered holographic computer. It refines the holog
 
 The headset is ergonomic; light and untethered, allowing free movement without wires or external packs. Workers using HoloLens can collaborate heads-up and hands-free, making it easy to act with precision and increase productivity, removing any physical restrictions of ordinary computing that prevent or delay completion of common tasks. Users can use voice commands or hand tracking to touch, grasp, and manipulate holograms and digital content, which can persist over time and space.  
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtxGy]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=755fda08-05af-41e2-ab3b-0d05c0408cbe]
 
 ## HoloLens components
 
