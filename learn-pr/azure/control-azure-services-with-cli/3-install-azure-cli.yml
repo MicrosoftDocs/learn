@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.control-azure-services-with-cli.1-introduction
-title: Introduction
+uid: learn.control-azure-services-with-cli.3-install-azure-cli
+title: Install Azure CLI
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Introduction
-  description: Introduction
+  title: Install Azure CLI
+  description: Install Azure CLI
   ms.date: 01/09/2025
   author: dbradish-microsoft
   ms.author: dbradish
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/3-install-azure-cli.md)]
 

@@ -6,10 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Deploy the Microsoft Sentinel solution for SAP BTP
   description: "Follow the steps to using the SAP BTP connector to deploy the Microsoft Sentinel solution for SAP BTP systems."
-  ms.date: 12/19/2024
+  ms.date: 01/09/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/6-deploy-microsoft-sentinel-solution-for-sap-btp.md)]
