@@ -30,4 +30,4 @@ To create a CI/CD pipeline, you can use Azure Pipelines, GitHub Actions, or the 
 
 This video shows how to integrate Azure Load Testing and Azure Chaos Studio in an Azure CI/CD pipeline.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y50k]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=393a9ab4-6816-4bbf-9c25-94a34a5413e0]
