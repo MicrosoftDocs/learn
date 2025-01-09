@@ -49,7 +49,7 @@ This exercise guided you through using the Microsoft Installer. For more Windows
    curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
    ```
 
-For more Linux installation options, including the supported versions of Ubuntu and Debian, see [Install Azure CLI on Linux](/cli/azure/install-azure-cli-linux)
+For more Linux installation options, including the supported versions of Ubuntu and Debian, see [Install Azure CLI on Linux](/cli/azure/install-azure-cli-linux).
 
 ::: zone-end
 

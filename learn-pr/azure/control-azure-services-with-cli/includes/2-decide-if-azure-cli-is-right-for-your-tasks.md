@@ -92,7 +92,7 @@ the specific requirements for each command.
 
 - **Team skill set**: Does your team have existing expertise? For instance, if your team is already
 using PowerShell to manage other products like Windows, Exchange Server, or Microsoft 365, they
-might find Azure PowerShell to be a more comfortable and efficient choice. If you team has strong Bash
+might find Azure PowerShell to be a more comfortable and efficient choice. If your team has strong Bash
 skills, the Azure CLI is a good choice.
 
 ## Example
