@@ -4,11 +4,13 @@ You set up the Azure File Sync components in your Azure environment and on the t
 
 ## Common problems
 
-Later in this unit, you see how you can monitor Azure File Sync and check for syncing problems. But first, look at some common problems and how they could be resolved.
+Later in this unit, you see how you can monitor Azure File Sync and check for syncing problems. But first, let's look at some common problems and how they can be resolved.
 
 ### Can't mount the Azure file share
 
-If you're unable to mount your Azure file share on Windows Server, it could be that your company's firewall rules are blocking network traffic. Azure needs to have port 445 open to connect to Azure data centers. Azure also denies connections that aren't secure, so your on-premises Windows Server computer has to support SMB encryption. If that isn't possible, you can disable secure transfers on the Azure storage account, but your company has to accept the associated lack of security if you use this approach.
+If you're unable to mount your Azure file share on Windows Server, it could be that your ISP or your company's firewall rules are blocking port 445. Azure Files needs to have port 445 open to connect to Azure data centers.
+
+Azure also denies connections that aren't secure, so your on-premises Windows Server computer has to support SMB encryption. If that isn't possible, you can disable secure transfer on the Azure storage account, but your company has to accept the associated security risks if you use this approach.
 
 ### Files or directory won't sync
 
@@ -35,9 +37,11 @@ You can view server health, server endpoint health, and metrics in the Storage S
   - **Files synced**: Count of files transferred (upload and download)
   - **Server online status**: Count of heartbeats received from the server
 
+For more information, see [Troubleshoot Azure File Sync sync health and errors](/troubleshoot/azure/azure-storage/files/file-sync/file-sync-troubleshoot-sync-errors).
+
 ## Use Azure Monitor
 
-Azure Monitor allows you to view, analyze, and act on data in a central location in the portal. Here are the metrics shown in Azure Monitor that are specific to Azure File Sync:
+Azure Monitor allows you to view, analyze, and act on data in a central location in the portal. Here are metrics shown in Azure Monitor that are specific to Azure File Sync:
 
 - **Bytes synced**: Size of data transferred
 - **Cloud tiering recall**: Size of data recalled
