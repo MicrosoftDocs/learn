@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Create an Azure Resource interactively with Azure CLI
   description: Create an Azure Resource interactively with Azure CLI
-  ms.date: 11/26/2024
+  ms.date: 01/09/2025
   author: dbradish-microsoft
   ms.author: dbradish
   ms.topic: unit

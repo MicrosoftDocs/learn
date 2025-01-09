@@ -23,7 +23,8 @@ The Azure CLI can be installed in several locations:
 * Windows
 * Linux
 * macOS
-* Docker containers
+
+The Azure CLI can also be run inside a Docker container.
 
 You don't need to install the Azure CLI in Azure Cloud Shell because Core Azure CLI references are preinstalled.
 

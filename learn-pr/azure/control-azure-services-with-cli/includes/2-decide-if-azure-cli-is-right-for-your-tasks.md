@@ -35,6 +35,25 @@ However, Azure portal lacks automation capabilities for repetitive tasks. For in
 to set up 15 VMs, you must create each one individually, completing the wizard for each VM. This
 approach can be time-consuming and error-prone for more complex tasks.
 
+## Azure CLI
+
+The Azure CLI is a cross-platform command-line tool that enables you to manage Azure resources. For
+instance, you can create a virtual machine using the following command (this example uses Bash line
+continuation characters):
+
+```azurecli
+az vm create \
+    --resource-group CrmTestingResourceGroup \
+    --name CrmUnitTestVm \
+    --image Ubuntu2204
+```
+
+The Azure CLI is also available in two ways: inside a browser via Azure Cloud Shell or through a
+local installation on Windows, Linux, or macOS. You can use it interactively by launching a shell
+(such as Bash, PowerShell, or `cmd.exe`) and entering commands at the prompt. Alternatively, you can
+automate repetitive tasks by assembling the commands into a shell script using the syntax of your
+chosen shell.
+
 ## Azure PowerShell
 
 Azure PowerShell is a collection of modules that provide PowerShell cmdlets for managing Azure
@@ -57,29 +76,10 @@ installation on Windows, Linux, or macOS. You can use PowerShell interactively, 
 PowerShell commands from PowerShell, or you can create and execute scripts that consist of multiple
 commands.
 
-## Azure CLI
-
-The Azure CLI is a cross-platform command-line tool that enables you to manage Azure resources. For
-instance, you can create a virtual machine using the following command (this example uses Bash line
-continuation characters):
-
-```azurecli
-az vm create \
-    --resource-group CrmTestingResourceGroup \
-    --name CrmUnitTestVm \
-    --image Ubuntu2204
-```
-
-The Azure CLI is also available in two ways: inside a browser via Azure Cloud Shell or through a
-local installation on Windows, Linux, or macOS. You can use it interactively by launching a shell
-(such as Bash, PowerShell, or `cmd.exe`) and entering commands at the prompt. Alternatively, you can
-automate repetitive tasks by assembling the commands into a shell script using the syntax of your
-chosen shell.
-
 ## How to choose a management tool
 
 With few exceptions, any task you can perform in the Azure portal can also be accomplished using
-Azure PowerShell or the Azure CLI. Here are some factors to consider when choosing the most
+the Azure CLI or Azure PowerShell. Here are some factors to consider when choosing the most
 appropriate tool for your needs:
 
 - **Automation**: Do you need to automate complex or repetitive tasks? Azure PowerShell and the

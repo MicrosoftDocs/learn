@@ -117,7 +117,7 @@ When you're developing and testing an Azure CLI script, it's best to create a re
 #!/bin/bash
 let "randomIdentifier=$RANDOM*$RANDOM"
 location="eastus"
-resourceGroup="msdocs-training-rg-$randomIdentifier"
+resourceGroup="msdocs-rg-$randomIdentifier"
 az group create --name $resourceGroup --location $location --output json
 ```
 

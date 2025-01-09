@@ -40,7 +40,7 @@ Bash includes features commonly found in programming languages. For the script y
 
 In Azure CLI, assigning a value to a variable automatically creates the variable. For example:
 
-```powershell
+```bash
 location="eastus"
 ```
 
@@ -122,7 +122,7 @@ do
     vmName="msdocs-vm-$randomIdentifier"
     vmImage=${images[$((i-1)) % ${#images[@]}]}
 
-    echo "Creating VM $name on $image with admin $adminUserName in resource group $resourceGroupName"
+    echo "Creating VM $vmName on $mvImage with admin $adminUserName in resource group $resourceGroupName"
 
     # create the resource group
     az group create --name $resourceGroupName --location $location

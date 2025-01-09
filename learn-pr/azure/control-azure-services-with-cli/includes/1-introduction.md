@@ -14,7 +14,7 @@ to deploy a new VM for each cycle to ensure the consistency and reliability of y
 environment. By developing Azure CLI scripts for deployment, you streamline the process, optimize
 workflow efficiency, and minimize errors through automation.
 
-This module teaches you how to deploy and manage Azure resources using Azure CLIl. You learn
+This module teaches you how to deploy and manage Azure resources using Azure CLI. You learn
 how to use Azure CLI interactively for one-off tasks and how to write CLI scripts to
 automate recurring tasks.
 
@@ -29,6 +29,6 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Experience with a command-line interface, such as PowerShell or Bash.
+- Experience with a command-line interface, such as Bash or PowerShell.
 - Understanding of basic Azure concepts, including resource groups and virtual machines.
 - Experience administering Azure resources using the Azure portal.

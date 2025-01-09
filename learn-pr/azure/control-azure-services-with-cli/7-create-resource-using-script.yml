@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Create resources using an Azure CLI script
   description: Create resources using an Azure CLI script
-  ms.date: 11/26/2024
+  ms.date: 01/09/2025
   author: dbradish-microsoft
   ms.author: dbradish
   ms.topic: unit
