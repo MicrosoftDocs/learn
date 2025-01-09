@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Explore Dynamics 365 Customer Service
 - Lesson 2 – Examine knowledge management and related apps
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dNzS]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=56f968d8-0e6d-46ef-9f71-49389ae14f13]
 
 Module 4 Tips and Tricks
 
