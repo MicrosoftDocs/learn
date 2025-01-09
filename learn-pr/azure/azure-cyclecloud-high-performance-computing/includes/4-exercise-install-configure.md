@@ -17,7 +17,7 @@ Start by creating a Managed Identity.
 
 1. Navigate to [the Azure portal](https://portal.azure.com/?azure-portal=true). When prompted, authenticate with a Microsoft account or a Microsoft Entra account that has the Contributor or Owner role in the Azure subscription that you're using in this module.
 
-1. In the Azure portal search box, search for for **Managed Identities**.
+1. In the Azure portal search box, search for **Managed Identities**.
    
 1. On the **Managed Identities** page, select **+ Create**.
    
