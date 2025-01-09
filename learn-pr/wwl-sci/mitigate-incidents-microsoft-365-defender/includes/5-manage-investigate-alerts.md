@@ -125,7 +125,7 @@ Select an alert from the alerts queue to go to alert page. This view contains th
 
 From the alert page, begin your investigation by selecting the affected assets or any of the entities under the alert story tree view. The details pane automatically populates with further information about what you selected.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4yiO5?rel=0]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8a9c08a6-558c-47a8-a336-d748acbdaa80]
 
 ### Investigate using the alert story
 
@@ -144,4 +144,3 @@ Once you're done investigating, go back to the alert you started with, mark the 
 If you classify it as a true alert, you can also select a determination.
 
 If you're experiencing a false alert with a line-of-business application, create a suppression rule to avoid this type of alert in the future.
-
