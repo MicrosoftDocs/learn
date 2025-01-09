@@ -1,21 +1,19 @@
 Platform engineering is a multidisciplinary approach that combines software engineering, system design, and operational excellence to create a reliable and scalable infrastructure for building and deploying applications. At its core, it involves not just building robust platforms, but creating a self-service environment that empowers development teams while ensuring alignment with business goals. A successful platform engineering initiative starts with the right team and a clear understanding of the problem space. This foundation enables the development of systems that streamline operations, reduce friction, and allow developers to focus on building applications rather than managing infrastructure.
 
-Once the team is in place, the focus shifts to automating high-toil areas, identifying manual, repetitive tasks that can be automated to save time and reduce errors. Following this, an inventory of existing resources is essential, allowing teams to centralize tools and services, making them easier to manage and scale. The next step is referred to as *blazing paved paths*, which involve creating standard workflows and environments that ensure consistency across projects. Afterwards, deploying environments as a service helps to further streamline processes, enabling teams to quickly spin up environments on demand. At that point, the primary objective becomes optimizing self-service developer experiences, empowering developers to manage their workflows independently while ensuring they have the tools and support necessary for success. This approach transforms how development teams interact with infrastructure, creating an agile, high-performing environment for building and delivering applications.
+Once the team is in place, the focus shifts to automating high-toil areas, identifying manual, repetitive tasks that can be automated to save time and reduce errors. Following this, an inventory of existing resources is essential, allowing teams to centralize tools and services, making them easier to manage and scale. The next step is referred to as _blazing paved paths_, which involve creating standard workflows and environments that ensure consistency across projects. Afterwards, deploying environments as a service helps to further streamline processes, enabling teams to quickly spin up environments on demand. At that point, the primary objective becomes optimizing self-service developer experiences, empowering developers to manage their workflows independently while ensuring they have the tools and support necessary for success. This approach transforms how development teams interact with infrastructure, creating an agile, high-performing environment for building and delivering applications.
 
 :::image type="content" source="../media/platform-engineering-steps-b77624b8.png" alt-text="Diagram showing the Platform Engineering jobs to be done.":::
 
-
 Besides having clearly defined implementation plan, rather than approaching platform engineering as a single, broad concept, it can be helpful to break it down into four main areas to facilitate the implementation process:
 
- -  **Engineering Systems**, which includes the tools and services that enable development, such as CI/CD, package management, cloud-based coding environments, code scanners and linters, as well as Artificial Intelligence (AI) assistants such as GitHub Copilot.
- -  **Application Platform**, which consists of curated selection of services used as building blocks of commonly used app stacks (for example, Azure Policy, Azure Key Vault, Azure Container Apps, or Cosmos DB).
- -  **Application Templates**, which provide well-defined, organization-specific templates to facilitate workload provisioning and align with best practices.
- -  **Developer Self-Service Capabilities**, which enable developers to autonomously manage their workflows while ensuring governance and compliance with organizational standards.
+- **Engineering Systems**, which includes the tools and services that enable development, such as CI/CD, package management, cloud-based coding environments, code scanners and linters, as well as Artificial Intelligence (AI) assistants such as GitHub Copilot.
+- **Application Platform**, which consists of curated selection of services used as building blocks of commonly used app stacks (for example, Azure Policy, Azure Key Vault, Azure Container Apps, or Cosmos DB).
+- **Application Templates**, which provide well-defined, organization-specific templates to facilitate workload provisioning and align with best practices.
+- **Developer Self-Service Capabilities**, which enable developers to autonomously manage their workflows while ensuring governance and compliance with organizational standards.
 
 Incorporating these areas into your implementation strategy reduces developer toil, fosters innovation, and creates a seamless development experience.
 
 :::image type="content" source="../media/platform-engineering-areas-a3a98aa7.png" alt-text="Diagram showing the implementation strategy including engineering systems, application platform, application templates and developer self-service capabilities.":::
-
 
 ### Build a team
 
@@ -53,9 +51,7 @@ The **blaze paved paths** approach encourages good practices without being overl
 
 :::image type="content" source="../media/platform-engineering-unsupported-b3a1434a.png" alt-text="Diagram showing the blaze paved path with unsupported CI and CD.":::
 
-
 :::image type="content" source="../media/platform-engineering-deprecated-ea03d433.png" alt-text="Diagram showing the blaze paved path with deprecated CI and CD.":::
-
 
 ### Deploy environments as a service
 
@@ -64,7 +60,6 @@ Deploying environments as a service is designed to enable secure, standardized, 
 With ADE, platform engineers and operations teams collaboratively build and maintain a catalog of templates for specific environment types. These templates, enriched with pre-configured settings, integrate managed identities and control access based on roles. Developers can then use CI/CD pipelines to provision infrastructure through tools like the Azure CLI or Azure Developer CLI, without needing direct access to sensitive credentials or the underlying subscription. This separation ensures compliance and security while preserving developer productivity.
 
 :::image type="content" source="../media/azure-deployment-envs-f5fbc834.png" alt-text="Diagram showing the Platform Engineer workflow with Dev Center Catalog, Environment type mappings, portal and automated deployment pipelines.":::
-
 
 Even if ADE isn’t in use, the same principles can be applied more broadly, with infrastructure as code (IaC) content sourced from secure, immutable locations and secret management automated and isolated. By enabling these practices, platform engineering empowers teams to deploy consistent environments while maintaining organizational governance and operational efficiency.
 

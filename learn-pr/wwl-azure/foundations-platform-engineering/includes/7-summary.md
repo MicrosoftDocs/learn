@@ -8,13 +8,13 @@ This module explored the key areas that organizations must apply to start their 
 
 You learned how to describe the benefits and usage of:
 
- -  Understand the importance of platform engineering in enhancing developer productivity and accelerating time-to-value.
- -  Learn how to design and build integrated platforms that optimize the developer experience and streamline development efforts.
- -  Explore the role of platform engineering in driving digital transformation within an enterprise.
- -  Recognize the strategic value of platform engineering as the foundation for both technical success and alignment with broader business goals.
- -  Identify key stakeholders in platform engineering and understand their distinct expectations and requirements.
+- Understand the importance of platform engineering in enhancing developer productivity and accelerating time-to-value.
+- Learn how to design and build integrated platforms that optimize the developer experience and streamline development efforts.
+- Explore the role of platform engineering in driving digital transformation within an enterprise.
+- Recognize the strategic value of platform engineering as the foundation for both technical success and alignment with broader business goals.
+- Identify key stakeholders in platform engineering and understand their distinct expectations and requirements.
 
 ## Learn more
 
- -  [Platform engineering guide](/platform-engineering/overview/).
- -  [Platform Engineering Maturity Model.](https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/)
+- [Platform engineering guide](/platform-engineering/overview/).
+- [Platform Engineering Maturity Model.](https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/)
