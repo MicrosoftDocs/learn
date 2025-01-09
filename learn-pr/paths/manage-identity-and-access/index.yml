@@ -14,7 +14,7 @@ summary: |
 prerequisites: None
 video:
   title: "Manage Identity and Access in Microsoft Entra video"
-  url: https://www.microsoft.com/videoplayer/embed/RWK4YI
+  url: https://learn-video.azurefd.net/vod/player?id=326409c6-b757-492f-a125-c77ec0c85df0
 iconUrl: /training/achievements/manage-identity-and-access.svg
 levels:
 - beginner

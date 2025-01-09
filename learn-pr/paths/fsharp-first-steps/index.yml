@@ -18,7 +18,7 @@ summary: |
 prerequisites: None
 video:
   title: "Microsoft Learn video: Take your first steps with F#"
-  url: https://www.microsoft.com/videoplayer/embed/RE4X1s9
+  url: https://learn-video.azurefd.net/vod/player?id=e9c1079c-7b51-4c2b-93d3-3636fc5af450
 iconUrl: /training/achievements/fsharp-first-steps-path.svg
 levels:
 - beginner
