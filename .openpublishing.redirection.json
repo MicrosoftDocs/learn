@@ -38762,6 +38762,11 @@
       "source_path": "learn-pr/language/python-create-run-jupyter-notebook/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/discover-microsoft-sentinel-solution-for-sap-btp/2-discover-the-microsoft-sentinel-solution-for-sap.md",
+      "redirect_url": "/training/modules/discover-microsoft-sentinel-solution-for-sap-btp/",
+      "redirect_document_id": false
     }
   ]
 }
