@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe the Microsoft Sentinel solution for SAP BTP
   description: "Discover how the Microsoft Sentinel solution for SAP BTP protects your SAP Business Technology Platform (BTP) system infrastructure and BTP based apps."
-  ms.date: 12/23/2024
+  ms.date: 01/09/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
