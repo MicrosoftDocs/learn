@@ -84,7 +84,7 @@ The following video demonstrates how to administer Windows Server by using Windo
 5. Review the options available on the **Overview** and **Tools** panes.
 6. Review the following: Certificates, Performance Monitoring, Processes, Registry, Roles & Features, Scheduled Tasks, and PowerShell.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McI9]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=9d5d9fde-9ea0-4845-9452-86ad27bdf82a]
 
 ---
 
