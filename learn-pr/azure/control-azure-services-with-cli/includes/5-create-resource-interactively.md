@@ -13,9 +13,6 @@ organized into separate environments:
 Since you only need to create the resource groups once, using Azure CLI interactively for this task
 is a reasonable choice.
 
-When you run a command in Azure CLI, it matches the command to a cmdlet and performs the requested
-action.
-
 ## Example: How to create a resource group with Azure CLI
 
 Let's perform a common task: creating a resource group. Resource groups help you manage related
@@ -90,11 +87,11 @@ When creating resources in Azure, you place them into a resource group for manag
 To create a resource group, use the `az group create` reference command. You must specify a name and a
 location, and the name must be unique within your subscription. The location determines where the
 metadata for your resource group is stored, which can be important for compliance reasons. Use the
-`az account list-locations` command to determine the available locations.
+`az account list-locations` command to determine available locations.
 
 > [!NOTE]
 > If you're working in an Azure sandbox, it creates the resource group for you. If you prefer to
-> work in your own subscription, use the following command.
+> work in your own subscription, use the following commands.
 
 The syntax for creating a resource group is:
 
@@ -117,7 +114,7 @@ az group list --output table
 When you're developing and testing an Azure CLI script, it's best to create a resource group that contains a random ID in the name. Adding a random ID to your resource group name allows you to retest your code without having to wait for a prior resource group of the same name to be removed from Azure.
 
 ```azurecli
-# Bash script
+#!/bin/bash
 let "randomIdentifier=$RANDOM*$RANDOM"
 location="eastus"
 resourceGroup="msdocs-training-rg-$randomIdentifier"
@@ -136,30 +133,58 @@ The `az vm create` command is used to create a VM. This command has several para
 - **image**: The operating system image to use for the VM, typically a Linux distribution, or Windows Server.
 - **admin-username**: Administrator username for the VM. You're prompted to enter a password at the command line.
 
+# [Bash](#tab/Bash)
+
 Here's a Bash script example:
 
 ```azurecli
-# Bash variable block
+#!/bin/bash
+
+# Create variables
 rgName="myResourceGroupName"
-vmname="myVMname"
-username="azureuser"
+vmName="myVMname"
+vmImage="Win2022AzureEditionCore"
+vmAdminUserName="myAzureUserName"
 
 # Create the VM
 az vm create \
     --resource-group $rgName \
-    --name $myVMname \
-    --image Win2022AzureEditionCore \
+    --name $vmName \
+    --image $vmImage \
     --public-ip-sku Standard \
-    --admin-username $username 
+    --admin-username $vmAdminUserName
 ```
 
-## Example: Update the size of an Azure Virtual Machine
+# [PowerShell](#tab/powershell)
 
-You can list the VMs in your subscription using the `az vm list` command. This command also supports retrieving a specific VM by specifying the **name** parameter.
-
-Store the ID of a VM in a variable:
+Here's the equivalent example to create a VM in a PowerShell environment:
 
 ```azurecli
+# Create variables
+$rgName = "myResourceGroupName"
+$vmName = "myVMname"
+$vmImage = "Win2022AzureEditionCore"
+$vmAdminUserName = "myAzureUserName"
+
+# Create the VM
+az vm create `
+    --resource-group $rgName `
+    --name $vmName `
+    --image $vmImage `
+    --public-ip-sku Standard `
+    --admin-username $vmAdminUserName
+```
+
+---
+
+## Example: Get information for a VM
+
+You can list the VMs in your subscription using the `az vm list` command. This command also supports retrieving a specific VM by specifying the `--name` parameter.
+
+Here's how to store the ID of a VM in a variable:
+
+```azurecli
+#!/bin/bash
 rgName="myResourceGroupName"
 vmID=$(az vm list --resource-group $rgName \
     --query "[?name=='myVMname'].id" --output tsv)
@@ -169,17 +194,17 @@ echo $vmID
 Using the `az vm update` command, change the size of your VM:
 
 ```azurecli
-# Bash variable block
+#!/bin/bash
 rgName="myResourceGroupName"
-vmName="myVMname"
+vmName="msdocs-vm-01"
 newVMsize="Standard_DS3_v2"
 
 # Get the VM ID
 vmID=$(az vm list --resource-group $rgName \
-    --query "[?name==$vmName].id" --output tsv)
+    --query "[?name=='$vmName'].id" --output tsv)
 
 # Update the VM size
-az vm update --resource-group $rgName --ids $vmID --size $newVMsize
+az vm update --ids $vmID --size $newVMsize
 
 # Show the new properties of the VM
 az vm show --resource-group $rgName --name $vmName

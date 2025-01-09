@@ -12,7 +12,6 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
-  zone_pivot_groups: platform    
 durationInMinutes: 5
 content: |
   [!include[](includes/5-create-resource-interactively.md)]

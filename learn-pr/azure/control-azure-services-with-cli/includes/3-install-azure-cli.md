@@ -14,7 +14,7 @@ The Azure CLI is made up of two types of reference command groups: core and exte
 
 * **Extensions:** Extensions aren't shipped as part of the CLI but run as CLI commands. Some extensions are a permanent part of the Azure CLI, but often, an extension gives you access to preview and experimental commands. A single reference group, such as `az iot`, can have both core and extension commands.
 
-To execute Azure CLI commands, you need to install **core** references on your local computer, or run Azure Cloud Shell which has core references preinstalled. You're prompted to install extension references the first time you try to use the command.
+To execute Azure CLI commands, you need to install **core** references on your local computer, or run Azure Cloud Shell which has core references preinstalled. You're prompted to install extension references the first time you try to use an extension command.
 
 ## Where to install Azure CLI
 

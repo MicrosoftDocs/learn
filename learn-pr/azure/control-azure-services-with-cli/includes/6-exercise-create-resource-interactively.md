@@ -4,7 +4,7 @@ In the original scenario, you must create virtual machines (VMs) to test your Cu
 
 Let's try the commands to create a VM.
 
-## Create a Linux VM with Azure CLI
+## Exercise - Create a Linux VM with Azure CLI
 
 Since you're using the Azure sandbox, you don't need to create a resource group. Instead, use the
 existing sandbox resource group **<rgn>[sandbox resource group name]</rgn>**. Be aware of the
@@ -13,37 +13,37 @@ location restrictions.
 Here's how to create a new Azure VM with Azure CLI:
 
 1. Use the `az vm create` command to create the VM.
-   - Specify the sandbox resource group: **<rgn>[sandbox resource group name]</rgn>**.
-   - Name the VM, following your organization's naming standards.
-   - Choose a location close to you from the list of available Azure sandbox locations.
+   - Use the `az group list` command to get the name of the sandbox resource group.
+   - Assign a name to the VM following your organization's naming standards.
+   - Choose a location close to you from the list of available Azure sandbox locations:
 
      [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
-   - Use the Ubuntu Linux image: `Win2022AzureEditionCore`.
-   - Assign an administrator username following your organization's naming standards
+   - Use the Linux image: `Ubuntu2204`.
+   - Assign an administrator username following your organization's naming standards.
 
    ```azurecli
-   # Create variables
+   #!/bin/bash
 
-   # Get the resource group name assigned by the sandbox
+   # Get the single resource group name created by the sandbox.
    rgName=$(az group list --query "[].{Name:name}" --output tsv)
    echo $rgName
 
-   # Create additional variables with value of choice
+   # Create additional variables with values of your choice.
    vmName="msdocs-vm-01"
    vmLocation="westus"
-   vmImage="Win2022AzureEditionCore"
-   vmAdmin="msdocs-admin-01"
-  
+   vmImage="Ubuntu2204"
+   vmAdminUserName="myAzureUserName"
+
    # Create the VM
-   az group create --resource-group $rgName --location westus
    az vm create \
      --resource-group $rgName \
      --name $vmName \
      --location $vmLocation \
      --image $vmImage \
      --public-ip-sku Standard \
-     --admin-username $vmAdmin
+     --admin-username $vmAdminUserName \
+     --generate-ssh-keys
    ```
 
    > [!TIP]
@@ -53,16 +53,7 @@ Here's how to create a new Azure VM with Azure CLI:
 
    If your script didn't copy correctly and the sandbox terminal is waiting for addition input, use **CTRL + Z** to return to a prompt and try again.
 
-1. Enter Credentials:
-
-   When prompted, enter a password for your VM's admin user following these guidelines:
-   - passwords must be 12-123 characters long
-   - passwords must meet three of the following four complexity requirements: lowercase
-   characters, uppercase characters, digits, and special characters (Regex match [\W_]).
-
-   For more password information, see [Linux VM FAQ](/azure/virtual-machines/linux/faq#what-are-the-username-requirements-when-creating-a-vm-).
-
-1. Wait for the VM creation:
+1. Wait for the Linux VM creation:
 
    The VM creation process takes a few minutes to finish.
 
@@ -80,7 +71,7 @@ Here's how to create a new Azure VM with Azure CLI:
 
    **Get information about a single VM in JSON format.**
 
-   This same output is what shows after a new VM is created. However, it's helpful to return this information when figuring out nested property names to reference in a script. Property names are case sensitive.
+   Some of this output shows after a new VM is created. However, it's helpful to return more information when figuring out nested property names to reference in a script. Property names are case sensitive.
 
    ```azurecli
    az vm show --resource-group $rgName --name $vmName
@@ -92,8 +83,8 @@ Here's how to create a new Azure VM with Azure CLI:
    # Get the time the VM was created
    az vm show --resource-group $rgName --name $vmName --query "timeCreated"
 
-   # Get the OS disk size
-   az vm show --resource-group $rgName --name $vmName --query "storageProfile.osDisk.diskSizeGb"
+   # Get the OS disk storage account type
+   az vm show --resource-group $rgName --name $vmName --query "storageProfile.osDisk.managedDisk.storageAccountType"
    ```
 
    **Store a property of a VM in a variable.**
@@ -101,20 +92,37 @@ Here's how to create a new Azure VM with Azure CLI:
    The Azure CLI has several available output types. JSON is the default, but when storing values in variables, remove extra formatting with `--output tsv`.
 
    ```azurecli
+   #!/bin/bash
    # Store the VM id
    vmID=$(az vm show --resource-group $rgName --name $vmName --query id --output tsv)
    echo $vmID
 
-   # Store the VM disk name
-   osDiskName=$(az vm show --resource-group $rgName --name $vmName --query "storageProfile.osDisk.name" --output tsv)
-   echo $osDiskName
+   # Store the public IP address
+   publicIP=$(az vm list-ip-addresses \
+       --resource-group $rgName \
+       --name $vmName \
+       --query "[].virtualMachine.network.publicIpAddresses[0].ipAddress" --output tsv)
+   echo $publicIP
    ```
+
+   **Connect to the VM.**
+  
+   ```azurecli
+   #!/bin/bash
+   az ssh vm --private-key-file \path\to\private\key \
+       --resource-group $rgName \
+       --name $vmName \
+       --local-user $vmAdminUserName
+   ```
+
+   Sign out by typing **exit**.
 
    **Show details for all VMs in a resource group.**
 
    If you have chosen to work in your local environment and have multiple VMs in your subscription, query for VMs that meet a filter criteria.
 
    ```azurecli
+   #!/bin/bash
    # details of all VMs in a specified resource group
    az vm show --show-details --ids $(az vm list --resource-group $rgName --query "[].id" -o tsv)
 
@@ -193,6 +201,8 @@ When working with Azure resources at the command-line, you aren't using the Azur
    az vm delete --resource-group $rgName --name $vmName
    ```
 
-   Enter <kbd>Y</kbd> and press <kbd>Enter</kbd> when prompted to continue.
+   Enter **Y** and press <kbd>Enter</kbd> when prompted to continue.
 
-Next, let's look at how to automate tasks using an Azure CLI script.
+While you executed these commands interactively, a better approach is to write an Azure CLI script. Scripts allow you to reuse the logic for creating or deleting a VM in the future.
+
+In the next unit, let's automate these tasks using an Azure CLI script.

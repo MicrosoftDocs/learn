@@ -15,11 +15,11 @@ and how to install the latest version.
 
 1. Download and install the latest release of the Azure CLI. When the installer asks if it can make changes to your computer, select the "Yes" box.
 
-> [!div class="nextstepaction"]
-> [Latest MSI of the Azure CLI (32-bit)](https://aka.ms/installazurecliwindows)
+   > [!div class="nextstepaction"]
+   > [Latest MSI of the Azure CLI (32-bit)](https://aka.ms/installazurecliwindows)
 
-> [!div class="nextstepaction"]
-> [Latest MSI of the Azure CLI (64-bit)](https://aka.ms/installazurecliwindowsx64)
+   > [!div class="nextstepaction"]
+   > [Latest MSI of the Azure CLI (64-bit)](https://aka.ms/installazurecliwindowsx64)
 
   If you previously installed the Azure CLI, running either the 32-bit or 64-bit Microsoft installer (MSI) overwrites an existing installation.
 
@@ -46,7 +46,7 @@ This exercise guided you through using the Microsoft Installer. For more Windows
 1. Install Azure CLI on Ubuntu Linux using the Advanced Packaging Tool (**apt**) and the Bash command line.
 
    ```bash
-   curl -L https://aka.ms/InstallAzureCli | bash
+   curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
    ```
 
 For more Linux installation options, including the supported versions of Ubuntu and Debian, see [Install Azure CLI on Linux](/cli/azure/install-azure-cli-linux)
@@ -118,10 +118,10 @@ So, how do you find the particular commands you need? One way is to use `az find
 
 ## Get help on Azure CLI commands
 
-If you already know the name of the command you want, the `--help` argument for that command gets you more detailed information on the command and a list of the available subcommands for a command group. So, with our storage example, here's how you can get a list of the subgroups and commands for managing blob storage:
+If you already know the name of the command you want, the `--help` argument for that command gets you more detailed information on the command and a list of the available subcommands for a command group. Continuing with our VM examples, here's how you can get a list of the subgroups and commands for managing VM images:
 
 ```azurecli
-az storage blob --help
+az vm image --help
 ```
 
 ## Connect to Azure

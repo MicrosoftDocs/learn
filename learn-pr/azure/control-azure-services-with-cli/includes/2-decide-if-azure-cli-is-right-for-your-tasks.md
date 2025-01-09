@@ -6,8 +6,8 @@ machines (VMs) for each test iteration.
 
 You seek a tool that's easy for administrators to learn, yet powerful enough to automate the
 installation and configuration of multiple virtual machines. With several tools available, your goal
-is to find the best one for your administrators to script the deployment of the entire cloud
-infrastructure efficiently.
+is to find the best one for your administrators to efficiently script the deployment of the entire cloud
+infrastructure.
 
 ## What tools are available?
 
@@ -38,7 +38,7 @@ approach can be time-consuming and error-prone for more complex tasks.
 ## Azure PowerShell
 
 Azure PowerShell is a collection of modules that provide PowerShell cmdlets for managing Azure
-resources. It requires PowerShell and scripting language.
+resources. It requires PowerShell and a scripting language.
 
 For example, Azure PowerShell provides the `New-AzVM` cmdlet to create a virtual machine in your
 Azure subscription. To use it, launch PowerShell and execute the following command:
@@ -92,7 +92,8 @@ the specific requirements for each command.
 
 - **Team skill set**: Does your team have existing expertise? For instance, if your team is already
 using PowerShell to manage other products like Windows, Exchange Server, or Microsoft 365, they
-might find Azure PowerShell to be a more comfortable and efficient choice.
+might find Azure PowerShell to be a more comfortable and efficient choice. If you team has strong Bash
+skills, the Azure CLI is a good choice.
 
 ## Example
 

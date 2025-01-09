@@ -26,9 +26,9 @@ machines.
    az account set --subscription "my subscription name or ID"
    ```
 
-1. Using a text editor of choice, save the following script to your local drive.
+1. Using a text editor of choice, save the following script to your local drive. In this example, the file is named `msdocs-script-expanded.sh`.
 
-   ```azurecli
+   ```azurecli-interactive
    #!/bin/bash
     
    # Assign parameters to variables
@@ -45,21 +45,24 @@ machines.
    do
      let "randomIdentifier=$RANDOM*$RANDOM"
      resourceGroupName=$resourceGroupPrefix-$randomIdentifier
+     location=westus
      adminUserName=$adminUserPrefix-$randomIdentifier
-     VMname=$vmNamePrefix-$randomIdentifier
-     VMimage=${images[$((i-1)) % ${#images[@]}]}
+     vmName=$vmNamePrefix-$randomIdentifier
+     vmImage=${images[$((i-1)) % ${#images[@]}]}
 
-     echo "Creating VM $name in $resourceGroupName on $image with admin $adminUserName"
-     
+     echo "Creating VM $vmName on $vmImage with admin $adminUserName in resource group $resourceGroupName"
+
+     # create the resource group
      az group create --name $resourceGroupName --location $location
 
+     # create the VM
      az vm create \
          --resource-group $resourceGroupName \
          --location $location \
-         --name $VMname \
+         --name $vmName \
          --generate-ssh-keys \
          --admin-username $adminUserName \
-         --image $VMimage
+         --image $vmImage
 
    done
 
@@ -72,14 +75,15 @@ machines.
 1. Execute the script using the following command:
 
    ```bash
+   #!/bin/bash
    # make your file executable
-   chmod +x msdocs-script.sh
+   chmod +x msdocs-script-expanded.sh
    
    # remove Windows line continuation characters
-   sed -i -e 's/\r$//' msdocs-script.sh
+   sed -i -e 's/\r$//' msdocs-script-expanded.sh
    
    # Run the script
-   ./msdocs-script.sh 3 msdocs-rg eastus2 msdocsvm msdocsadmin Debian11 Debian11 Ubuntu2204  
+   ./msdocs-script-expanded.sh 3 msdocs-rg eastus2 msdocsvm msdocsadmin Debian11 Debian11 Ubuntu2204  
    ```
 
 1. Wait for completion. The script takes several minutes to complete.
@@ -91,50 +95,9 @@ machines.
    az vm list -o table
    ```
 
-   You should see three VMs, each with a unique name.
+   You should see three VMs, each with a unique name and in a separate resource group.
 
 You successfully created a script that automates the creation of three VMs, each in a specific
 resource group, ensuring they're ready for daily demos at the trade show. Although the script is
 short and straightforward, it significantly speeds up a process that would otherwise be
 time-consuming and error-prone if performed manually through the Azure portal.
-
-## Cleanup resources (optional)
-
-   If you want, delete the resource groups you created. Deleting resource groups removes all Azure resources in the resource group.
-
-   Delete a single resource group by name:
-
-   ```azurecli
-   # Delete a single resource group
-   az group delete --name msdocs-00000
-   ```
-
-   Run a script to delete all resource groups with a similar name:
-
-   ```dotnetcli
-   # Set your subscription
-   subscriptionID=00000000-0000-0000-0000-00000000
-   az account set --subscription $subscriptionID
-   
-   # Set your log file location
-   logFileLocation="myLogName.txt"
-   
-   # Get the name of all resource groups that start with 'msdocs'
-   az group list --query "[?starts_with(name, 'msdocs') == \`true\`].name" -o table
-   
-   # Delete resource groups without a confirmation prompt (--yes)
-   # Do not wait for the operation to finish (--no-wait)
-   echo "Deleting resource groups">$logFileLocation
-   for rgList in $(az group list --query "[?starts_with(name, 'msdocs') == \`true\`].name" -o tsv); 
-   do
-       echo "deleting resource group $rgList">>$logFileLocation
-       az group delete --name $rgList --yes --no-wait
-   done
-   
-   # read your log file with Linux "cat" command
-   clear
-   cat $logFileLocation
-   
-   # get a list of resource groups and their status
-   az group list --output table
-   ```

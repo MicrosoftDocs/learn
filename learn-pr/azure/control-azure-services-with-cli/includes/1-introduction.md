@@ -11,11 +11,11 @@ integration tests to fail, even after you fixed the bug.
 
 Recognizing the frequency of these testing cycles, which occur multiple times per week, you decide
 to deploy a new VM for each cycle to ensure the consistency and reliability of your test
-environment. By developing PowerShell scripts for deployment, you streamline the process, optimize
+environment. By developing Azure CLI scripts for deployment, you streamline the process, optimize
 workflow efficiency, and minimize errors through automation.
 
-This module teaches you how to deploy and manage Azure resources using Azure PowerShell. You learn
-how to use Azure PowerShell interactively for one-off tasks and how to write PowerShell scripts to
+This module teaches you how to deploy and manage Azure resources using Azure CLIl. You learn
+how to use Azure CLI interactively for one-off tasks and how to write CLI scripts to
 automate recurring tasks.
 
 ## Learning objectives
@@ -25,7 +25,7 @@ In this module, you'll:
 - Determine if Azure CLI is the appropriate tool for your Azure management tasks.
 - Install the Azure CLI on Windows, Linux, or macOS.
 - Connect to Azure using the Azure CLI.
-- Create Azure resources with Azure CLI.
+- Create Azure VMs with Azure CLI.
 
 ## Prerequisites
 

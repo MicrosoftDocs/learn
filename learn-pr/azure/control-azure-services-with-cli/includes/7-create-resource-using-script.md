@@ -4,7 +4,7 @@ Complex or repetitive tasks can be time-consuming and error-prone when performed
 Organizations prefer to automate these tasks to reduce costs and avoid mistakes.
 
 Automation is essential in the Customer Relationship Management (CRM) example where you're testing
-your software on multiple Linux virtual machines. These machines might need to be continuously deleted and
+your software on multiple virtual machines. These machines might need to be continuously deleted and
 re-created. Using an Azure CLI script to automate VM creation is much more efficient and reliable
 than manually creating them each time.
 
@@ -54,7 +54,7 @@ echo $location
 
 Bash has several loop structures, including `until`, `while`, and `for`. The `for` loop is a good choice for scenarios where you need to execute a loop over a set number of values in a collection.
 
-```powershell
+```bash
 #!/bin/bash
 for i in 1 2 3
 do
@@ -77,7 +77,6 @@ Inside the script, capture the values into variables. In this example, the param
 ```azurecli
 #!/bin/bash
 
-# Variable block
 loopCount=3
 name="msdocs"
 
@@ -109,30 +108,33 @@ VMs:
     
 # Assign parameters to variables
 vmCount=$1
-resourceGroup=$2
-location=$3
-vmNamePrefix=$4
-adminUserPrefix=$5
-shift 5
+adminUserPrefix=$2
+shift 2
 images=("$@")
     
 # Loop 
 for i in $(seq 1 $vmCount)
 do
     let "randomIdentifier=$RANDOM*$RANDOM"
-    adminUserName=$adminUserPrefix-$randomIdentifier
-    name=$vmNamePrefix-$randomIdentifier
-    image=${images[$((i-1)) % ${#images[@]}]}
+    resourceGroupName="msdocs-rg-$randomIdentifier"
+    location="westus"
+    adminUserName="msdocs-$randomIdentifier"
+    vmName="msdocs-vm-$randomIdentifier"
+    vmImage=${images[$((i-1)) % ${#images[@]}]}
 
-    echo "Creating VM $name on $image with admin $adminUserName"
+    echo "Creating VM $name on $image with admin $adminUserName in resource group $resourceGroupName"
 
+    # create the resource group
+    az group create --name $resourceGroupName --location $location
+
+    # create the VM
     az vm create \
-        --resource-group $resourceGroup \
+        --resource-group $resourceGroupName \
         --location $location \
-        --name $name \
-        --generate-ssh-keys \
         --admin-username $adminUserName \
-        --image $image
+        --name $vmName \
+        --image $vmImage \
+        --generate-ssh-keys
 
 done
 
@@ -144,20 +146,7 @@ Save the script as `msdocs-script.sh` and run it from a Bash command line, provi
 required parameters:
 
 ```bash
-# make your file executable
-chmod +x msdocs-script.sh
-
-# remove Windows line continuation characters
-sed -i -e 's/\r$//' msdocs-script.sh
-
-# Run the script
-./msdocs-script.sh 3 msdocs-rg-12345 eastus2 msdocsvm msdocsadmin Debian11 Debian11 Ubuntu2204
-
-# Wait for completion
-
-# List the new VMs
-az vm list -o table
+./msdocs-script.sh 3  Debian11 Debian11 Ubuntu2204
 ```
 
-Using Azure CLI scripts, you can efficiently create multiple VMs in different resource groups, automating
-repetitive tasks and ensuring consistency across your Azure environment.
+Using this script, you can efficiently create multiple VMs in different resource groups, automate repetitive tasks, and ensure consistency across your Azure environment. In the next unit, let's build out this script to include additional parameters, and check for successful completion.
