@@ -1,6 +1,6 @@
-To help protect your organization’s workloads from unforeseen disasters, you must first review the company's current business continuity and disaster recovery (BCDR) plan. You need to identify the different recovery objectives and scope for the systems that need protection.
+To help protect your organization’s workloads from unforeseen disasters, you must first review the company's current Business Continuity and Disaster Recovery (BCDR) plan. You need to identify the different recovery objectives and scope for the systems that need protection.
 
-VMware SRM is a BCDR solution that helps you plan, test, and run VM recoveries between a protected VMware vCenter Server site and a recovery vCenter Server site.
+VMware SRM is a BCDR solution that helps you plan, test, and run VM recovery plans between a protected site and a recovery site.
 
 ## BCDR
 
@@ -10,7 +10,7 @@ Any loss of service can be disruptive to your staff and users. Every second that
 
 ### Recovery time objective (RTO)
 
-A *recovery time objective (RTO)* is a measure of the maximum amount of time your business can survive after a disaster until normal service must be restored to avoid unacceptable consequences associated with a break in continuity. For example, if an organization’s RTO is 12 hours, it means that operations can continue for 12 hours without the business's core services functioning. If the downtime is any longer, the business would face serious consequences.
+A Recovery Time Objective (RTO) is a measure of the maximum amount of time your business can survive after a disaster until normal service must be restored to avoid unacceptable consequences associated with a break in continuity. For example, if an organization’s RTO is 12 hours, it means that operations can continue for 12 hours without the business's core services functioning. If the downtime is any longer, the business would face serious consequences.
 
 ### Recovery point objective
 
