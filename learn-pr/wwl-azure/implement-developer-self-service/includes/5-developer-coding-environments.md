@@ -6,11 +6,11 @@ The approach to managing developer environments can vary, but it often includes 
 
 Developer coding environment bootstrapping and normalization can be a major challenge in engineering systems. Key issues include:
 
- -  **Long onboarding times**: It can take weeks for a new developer to contribute, especially when transferring developers between projects or bringing in contractors.
- -  **Inconsistencies**: Differences between developer environments and CI systems often lead to "it works on my machine" problems.
- -  **Environment instability**: Experimenting with or upgrading frameworks and software can break existing configurations, resulting in potentially lengthy and complex troubleshooting.
- -  **Code review delays**: Configuration changes needed for code reviews can slow down development as they need to be undone later.
- -  **Ramp-up for all stakeholders**: Non-development roles (like operators, QA, and business sponsors) also need to be trained and engaged, causing more delays.
+- **Long onboarding times**: It can take weeks for a new developer to contribute, especially when transferring developers between projects or bringing in contractors.
+- **Inconsistencies**: Differences between developer environments and CI systems often lead to "it works on my machine" problems.
+- **Environment instability**: Experimenting with or upgrading frameworks and software can break existing configurations, resulting in potentially lengthy and complex troubleshooting.
+- **Code review delays**: Configuration changes needed for code reviews can slow down development as they need to be undone later.
+- **Ramp-up for all stakeholders**: Non-development roles (like operators, QA, and business sponsors) also need to be trained and engaged, causing more delays.
 
 To address these problems, standardizing and automating the setup of developer environments through tools, scripts, or containerized/virtualized environments can help. Pre-configured environments tailored to specific projects or organizational needs can ensure consistency, reduce setup time, and improve overall productivity.
 
@@ -26,13 +26,13 @@ To promote consistency, standardization, and best practices across development t
 
 When creating templates for development, it's helpful to consider various key areas to ensure that the templates are comprehensive and consistent, adhering to best practices:
 
- -  **Sample source code**: Include sample source code to guide developers toward recommended languages, application models, services, APIs, SDKs, and architectural patterns.
- -  **Build and deployment scripts**: Incorporate scripts that offer a consistent way to trigger builds and deploy locally or to a sandbox environment. Ensure in-IDE or editor debug configurations are included to synchronize with CI/CD pipelines.
- -  **CI/CD configuration**: Provide workflows or pipelines for building and deploying applications, making use of reusable, centralized workflows. Treat these as "start right" templates and ensure they allow for manual triggering when needed.
- -  **Infrastructure as Code (IaC) assets**: Include recommended configurations and references to centrally managed modules to ensure infrastructure setups follow best practices.
- -  **Security and policy as code assets**: Add security-related configuration files, such as CODEOWNERS and dependabot.yaml, to incorporate security directly into the development process. Scheduled workflows for security scans, including tools like Microsoft Defender for Cloud, should be provided to embed security in the CI/CD pipeline and enhance supply chain security.
- -  **Observability, monitoring, and logging**: Provide setup configurations for monitoring tools, such as IaC for agent deployment or configuration-as-code for monitoring dashboards. Include sample code for logging and distributed tracing to ensure applications can be effectively monitored once deployed.
- -  **Coding environment setup**: Add configuration files for linters, formatters, and IDEs, and set up scripts for virtualized development environments like devcontainer.json, devbox.yaml, or Docker-related files.
- -  **Test configuration**: Supply files for unit testing and more extensive testing scenarios, using tools like Microsoft Playwright Testing or Azure Load Testing.
+- **Sample source code**: Include sample source code to guide developers toward recommended languages, application models, services, APIs, SDKs, and architectural patterns.
+- **Build and deployment scripts**: Incorporate scripts that offer a consistent way to trigger builds and deploy locally or to a sandbox environment. Ensure in-IDE or editor debug configurations are included to synchronize with CI/CD pipelines.
+- **CI/CD configuration**: Provide workflows or pipelines for building and deploying applications, making use of reusable, centralized workflows. Treat these as "start right" templates and ensure they allow for manual triggering when needed.
+- **Infrastructure as Code (IaC) assets**: Include recommended configurations and references to centrally managed modules to ensure infrastructure setups follow best practices.
+- **Security and policy as code assets**: Add security-related configuration files, such as CODEOWNERS and dependabot.yaml, to incorporate security directly into the development process. Scheduled workflows for security scans, including tools like Microsoft Defender for Cloud, should be provided to embed security in the CI/CD pipeline and enhance supply chain security.
+- **Observability, monitoring, and logging**: Provide setup configurations for monitoring tools, such as IaC for agent deployment or configuration-as-code for monitoring dashboards. Include sample code for logging and distributed tracing to ensure applications can be effectively monitored once deployed.
+- **Coding environment setup**: Add configuration files for linters, formatters, and IDEs, and set up scripts for virtualized development environments like devcontainer.json, devbox.yaml, or Docker-related files.
+- **Test configuration**: Supply files for unit testing and more extensive testing scenarios, using tools like Microsoft Playwright Testing or Azure Load Testing.
 
 **Collaboration tool setup**: If supported, include task/issue templates or PR templates as code. Optionally, provide workflows that use available CLIs or APIs to update systems or configure collaboration tools like Microsoft Teams or Slack.

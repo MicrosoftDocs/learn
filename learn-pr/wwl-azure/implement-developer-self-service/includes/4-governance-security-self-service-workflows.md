@@ -16,10 +16,10 @@ Tools like Terraform and cloud-native IaC solutions (for example, Cluster API, C
 
 Within an organization, sharing resources like Kubernetes clusters across multiple applications can improve utilization and cost-effectiveness, but requires careful consideration. Key factors include:
 
- -  **Organization Alignment**: Sharing resources within organizational boundaries ensures better alignment with direction, priorities, and requirements.
- -  **Application Tenancy**: Applications have different isolation needs (for example, security, compliance). For example, Kubernetes uses namespace isolation, but mixing environments like production and test on the same cluster can lead to risks. Consistency in approach is essential.
- -  **Resource Consumption**: Each application's resource usage and capacity projections should be evaluated to avoid overloading shared resources. Monitoring and testing help ensure that applications don't exceed available capacity and cause service disruptions.
- -  **Optimizing Shared Configurations**: Shared resources require detailed configuration, including cross-charging, resource allocation, permissions, workload management, and upgrade coordination.
+- **Organization Alignment**: Sharing resources within organizational boundaries ensures better alignment with direction, priorities, and requirements.
+- **Application Tenancy**: Applications have different isolation needs (for example, security, compliance). For example, Kubernetes uses namespace isolation, but mixing environments like production and test on the same cluster can lead to risks. Consistency in approach is essential.
+- **Resource Consumption**: Each application's resource usage and capacity projections should be evaluated to avoid overloading shared resources. Monitoring and testing help ensure that applications don't exceed available capacity and cause service disruptions.
+- **Optimizing Shared Configurations**: Shared resources require detailed configuration, including cross-charging, resource allocation, permissions, workload management, and upgrade coordination.
 
 ### Governance Models
 
@@ -33,8 +33,8 @@ Organizations also need to consider the choice between **centralized vs. decentr
 
 From the strategy standpoint, governance can be divided into two stages:
 
-1.  **Initial Deployment Compliance (Start Right)**: This is achieved through standardized IaC templates, catalogs, and permission management policies to ensure that only authorized resources and configurations are deployed.
-2.  **Maintaining Compliance (Stay Right)**: Policy-based tools help monitor and prevent unauthorized resource changes. These tools extend beyond core infrastructure, supporting compliance within resources like Kubernetes, containers or VMs, and a range of security tools.
+1. **Initial Deployment Compliance (Start Right)**: This is achieved through standardized IaC templates, catalogs, and permission management policies to ensure that only authorized resources and configurations are deployed.
+1. **Maintaining Compliance (Stay Right)**: Policy-based tools help monitor and prevent unauthorized resource changes. These tools extend beyond core infrastructure, supporting compliance within resources like Kubernetes, containers or VMs, and a range of security tools.
 
 The tools to maintain compliance should provide auditing, reporting, and remediation capabilities. Azure Policy, for instance, offers this support through various modes such as Audit, Deny, and DeployIfNotExists. However, these policies can sometimes inadvertently disrupt applications, making the transition to Policy as Code (PaC) beneficial, especially for large-scale environments. PaC enables centrally managed standards, version control for policies, automated testing and validation, and faster rollout with continuous deployment, ensuring a more streamlined and reliable approach to managing compliance.
 

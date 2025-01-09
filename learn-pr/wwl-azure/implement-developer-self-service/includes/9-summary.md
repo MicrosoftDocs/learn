@@ -8,13 +8,13 @@ This module introduced you to the concept of developer self-service within platf
 
 You learned how to describe the benefits and usage of:
 
- -  Learn how to enable developers to independently manage their resources and workflows, fostering agility and innovation.
- -  Understand the importance of combining flexibility with robust governance to ensure security, compliance, and operational consistency.
- -  Explore the benefits of developer self-service in accelerating development cycles and reducing bottlenecks.
- -  Recognize the role of self-service platforms in enhancing developer satisfaction and productivity.
- -  Identify best practices for implementing and managing self-service capabilities within an organization.
+- Learn how to enable developers to independently manage their resources and workflows, fostering agility and innovation.
+- Understand the importance of combining flexibility with robust governance to ensure security, compliance, and operational consistency.
+- Explore the benefits of developer self-service in accelerating development cycles and reducing bottlenecks.
+- Recognize the role of self-service platforms in enhancing developer satisfaction and productivity.
+- Identify best practices for implementing and managing self-service capabilities within an organization.
 
 ## Learn more
 
- -  [What is Azure Deployment Environments?](/azure/deployment-environments/overview-what-is-azure-deployment-environments).
- -  [Microsoft Dev Box documentation](/azure/dev-box/).
+- [What is Azure Deployment Environments?](/azure/deployment-environments/overview-what-is-azure-deployment-environments).
+- [Microsoft Dev Box documentation](/azure/dev-box/).

@@ -8,13 +8,13 @@ This module introduces you to the concept of developer self-service within platf
 
 After completing this module, students and professionals can:
 
- -  Learn how to enable developers to independently manage their resources and workflows, fostering agility and innovation.
- -  Understand the importance of combining flexibility with robust governance to ensure security, compliance, and operational consistency.
- -  Explore the benefits of developer self-service in accelerating development cycles and reducing bottlenecks.
- -  Recognize the role of self-service platforms in enhancing developer satisfaction and productivity.
- -  Identify best practices for implementing and managing self-service capabilities within an organization.
+- Learn how to enable developers to independently manage their resources and workflows, fostering agility and innovation.
+- Understand the importance of combining flexibility with robust governance to ensure security, compliance, and operational consistency.
+- Explore the benefits of developer self-service in accelerating development cycles and reducing bottlenecks.
+- Recognize the role of self-service platforms in enhancing developer satisfaction and productivity.
+- Identify best practices for implementing and managing self-service capabilities within an organization.
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Beneficial to have experience in an organization that delivers software.
+- Understanding of what DevOps is and its concepts.
+- Beneficial to have experience in an organization that delivers software.
