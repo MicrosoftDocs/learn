@@ -2,11 +2,9 @@
 uid: learn.wwl.perform-backups-restores.explore-sql-server-backups
 title: Explore SQL Server backups
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore SQL Server backups
   description: "Explore different methods for carrying out SQL Server backups."
-  ms.date: 08/01/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

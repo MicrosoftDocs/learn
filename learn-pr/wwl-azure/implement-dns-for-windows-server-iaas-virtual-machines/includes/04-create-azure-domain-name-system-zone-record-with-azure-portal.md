@@ -6,7 +6,6 @@ In this demonstration, you'll learn to:
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AWvC]
 
-
 ## Next steps
 
 Review the steps for this demonstration:

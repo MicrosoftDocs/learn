@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-oracle-azure
 title: Explore Oracle high availability for SAP in Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Oracle high availability for SAP in Azure
   description: "Explore methods for providing Oracle high availability for SAP in Azure."
-  ms.date: 09/20/2024
+  ms.date: 12/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

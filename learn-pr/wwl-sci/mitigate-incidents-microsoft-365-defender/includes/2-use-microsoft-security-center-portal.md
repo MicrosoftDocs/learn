@@ -56,4 +56,3 @@ For more information about the required roles and permissions for the Microsoft 
 > Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning.
 
 [![Screenshot of the lab simulation page.](../media/lab-simulation-explore-microsoft-365-defender.png)](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Explore%20Microsoft%20365%20Defender)
-

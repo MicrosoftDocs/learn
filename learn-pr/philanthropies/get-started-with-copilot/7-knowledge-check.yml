@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.get-started-with-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This unit is a part of the Getting Started with Copilot module
+  ms.date: 12/31/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is the primary purpose of Microsoft Copilot?"
+      choices:
+        - content: "Microsoft Copilot is an AI companion that helps with day-to-day activities, enhancing productivity, sparking creativity, and simplifying tasks."
+          isCorrect: true
+          explanation: "Correct: This accurately describes the primary purpose of Microsoft Copilot"
+        - content: "Microsoft Copilot is designed to replace human workers by automating all tasks."
+          isCorrect: false
+          explanation: "Incorrect: While Copilot assists with various tasks, it is not intended to replace human workers but to enhance productivity and creativity"
+        - content: "Microsoft Copilot is a tool exclusively for managing daily schedules and organizing tabs."
+          isCorrect: false
+          explanation: "Incorrect: Although Copilot can help with managing schedules and organizing tabs, its capabilities extend far beyond these functions"
+        - content: "Microsoft Copilot is a specialized tool for coding and technical tasks only."
+          isCorrect: false
+          explanation: "Incorrect: Copilot is versatile and assists with a wide range of tasks, including drafting emails, creating content, and learning new things, not just coding"
+    - content: "Which of the following strategies is most effective for ensuring an engaging and productive conversation with Microsoft Copilot?"
+      choices:
+        - content: "Asking vague questions to allow Copilot to interpret the context freely."
+          isCorrect: false
+          explanation: "Incorrect: Vague questions can lead to less relevant responses as Copilot may not understand the specific context or details you need"
+        - content: "Providing specific and detailed prompts to receive tailored responses."
+          isCorrect: true
+          explanation: "Correct: Specific and detailed prompts help Copilot understand your needs better and provide more relevant and tailored responses."
+        - content: "Avoiding feedback on responses to maintain a smooth conversation flow."
+          isCorrect: false
+          explanation: "Incorrect: Providing feedback is important as it helps refine the responses and improve the interaction quality."
+        - content: "Using only one chat to maintain consistency."
+          isCorrect: false
+          explanation: "Incorrect: Experimenting with multiple chats with Copilot can help you understand how to elicit different responses and make the interaction more engaging."
+    - content: "What is a key feature of GPT models that enhances their ability to generate human-like text?"
+      choices:
+        - content: "GPT models are trained exclusively on technical manuals and coding documentation."
+          isCorrect: false
+          explanation: "Incorrect: GPT models are trained on a diverse range of text data, not just technical manuals and coding documentation"
+        - content: "GPT models are designed to replace human creativity in all forms of content creation."
+          isCorrect: false
+          explanation: "Incorrect: GPT models are designed to assist and enhance human creativity, not replace it"
+        - content: "GPT models use a Transformer architecture that allows them to handle large amounts of data efficiently."
+          isCorrect: true
+          explanation: "Correct: The Transformer architecture is a key feature that enables GPT models to process and generate complex text efficiently"
+        - content: "GPT models are limited to generating text in a single language."
+          isCorrect: false
+          explanation: "Incorrect: GPT models are capable of generating text in multiple languages"

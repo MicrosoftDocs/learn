@@ -8,8 +8,8 @@ metadata:
   title: Knowledge check
   description: Check what you learned about Azure DNS Private Resolver.
   ms.date: 01/31/2024
-  author: greg-lindsay
-  ms.author: greglin
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 5
 content: |

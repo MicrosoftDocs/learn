@@ -3,7 +3,7 @@ uid: learn.dotnet-maui.build-apps-with-dotnet-maui
 metadata:
   title: Build mobile and desktop apps with .NET MAUI
   description: 'In this learning path, use C# and Visual Studio with .NET MAUI to create an app that runs across iOS, Android, and Windows.'
-  ms.date: 05/10/2022
+  ms.date: 01/02/2025
   author: codemillmatt
   ms.author: masoucou
   ms.topic: learning-path
@@ -28,11 +28,11 @@ modules:
 - learn.dotnet-maui.build-mobile-and-desktop-apps
 - learn.dotnet-maui.create-user-interface-xaml
 - learn.dotnet-maui.customize-xaml-pages-layout
+- learn.dotnet-maui.separate-ui-and-logic-with-data-binding
+- learn.dotnet-maui.design-a-mvvm-viewmodel
 - learn.dotnet-maui.use-shared-resources
 - learn.dotnet-maui.create-multi-page-apps
 - learn.dotnet-maui.consume-rest-services
 - learn.dotnet-maui.store-local-data
-- learn.dotnet-maui.separate-ui-and-logic-with-data-binding
-- learn.dotnet-maui.design-a-mvvm-viewmodel
 trophy:
   uid: learn.dotnet-maui.build-apps-with-dotnet-maui.trophy

@@ -1,13 +1,15 @@
 For our exercise, we'll briefly leave behind the example of the human resources app. Instead we'll work with an application that lists movies. The app already has a couple of pages and viewmodels that have some basic bindings. The two pages are a list page and a detail page. We'll modify the selection logic so that the `ListView` and the detail page use the same viewmodel property.
 
-## Download and run the sample
+[!include[](../../../includes/dotnet9-sdk-version.md)]
 
-[!include[](../../../includes/android-windows-path-length-warning-maui.md)]
+## Open the starter solution
 
-To start this exercise module, download the [Movie List Sample](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-mvvm1/raw/main/part4-exercise-start.zip) project. This project displays a list of movies. Clicking on a movie navigates to a detail page with more information about the movie.
+1. Clone or download the [exercise repo](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-mvvm1).
 
-1.  Download and extract the [Movie List Sample](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-mvvm1/raw/main/part4-exercise-start.zip) project to a temporary folder.
-1.  Navigate to the _part4-exercise1_ folder and open the _MovieCatalog.sln_ solution.
+    > [!NOTE]
+    > It is best to clone or download the exercise content to a short folder path, such as _C:\dev\_, to avoid build-generated files exceeding the maximum path length.
+
+1.  Navigate to the _part4-exercise1_ folder and open the _MovieCatalog.sln_ solution in Visual Studio or the folder in Visual Studio Code.
 1.  Build and run the project to make sure it works. On the screen displayed, you'll see a list of movies. Select one of the movies listed and the app navigates to a detail page.
 
 ## Examine the code

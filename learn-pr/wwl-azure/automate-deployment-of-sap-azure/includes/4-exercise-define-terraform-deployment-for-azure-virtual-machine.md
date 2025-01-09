@@ -322,7 +322,7 @@ Now you can create a storage account. This code creates a storage account, with 
 
 ### Create virtual machine
 
-The final step is to create a VM and use all the resources created. This code creates a VM named `myVM` and attaches the virtual NIC named `myNIC`. The latest `Ubuntu 18.04-LTS` image is used, and a user named `azureuser` is created with password authentication disabled.
+The final step is to create a Virtual Machine (VM) and use all the resources created. This code creates a VM named `myVM` and attaches the virtual NIC named `myNIC`. The latest `Ubuntu 18.04-LTS` image is used, and a user named `azureuser` is created with password authentication disabled.
 
 - Review the following code, and then copy and paste it into main.tf in the Cloud Shell editor, at the end of the file. Save the file (Ctrl + S).
 
@@ -429,4 +429,5 @@ When you're ready to apply the execution plan to your cloud infrastructure, run 
 
 >[!NOTE]
 > To avoid unexpected charges, confirm the resource group, `myterraformgroup` is deleted in the Azure Portal.
+
 

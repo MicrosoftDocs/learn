@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-storage.examine-sizing-for-hana-databases-azure-netapp-files
 title: Examine sizing for SAP HANA databases on Azure NetApp Files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine sizing for SAP HANA databases on Azure NetApp Files
   description: "Examine sizing for SAP HANA databases on Azure NetApp Files."
-  ms.date: 08/13/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

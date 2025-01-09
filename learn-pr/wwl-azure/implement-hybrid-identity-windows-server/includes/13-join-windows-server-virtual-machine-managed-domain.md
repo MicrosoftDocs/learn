@@ -1,12 +1,8 @@
-
-
-In this demonstration, you will learn how to:
+In this demonstration, learn how to:
 
 - Join a Windows Server VM to a managed domain.
 
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AD4Y]
-
 
 ## Next steps
 

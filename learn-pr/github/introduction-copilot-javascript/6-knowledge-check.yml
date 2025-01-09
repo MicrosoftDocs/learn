@@ -17,49 +17,49 @@ quiz:
   questions:
   - content: "How does GitHub Copilot work?"
     choices:
-    - content: "GitHub Copilot uses prompts, natural language text, that you type, and it provides suggestions based on what you type."
+    - content: "GitHub Copilot uses the prompts that you write in natural language text, to provide suggestions based on what you type."
       isCorrect: true
-      explanation: "Correct! Trained on billions of lines of code, GitHub Copilot turns natural language prompts into coding suggestions across dozens of languages."
-    - content: "GitHub Copilot uses lights, that you type, and it provides suggestions based on what you type."
+      explanation: "Correct! GitHub Copilot is trained on billions of lines of code. It turns natural language prompts into coding suggestions across dozens of languages."
+    - content: "GitHub Copilot uses flashing lights to instruct you what to type."
       isCorrect: false
-      explanation: "GitHub Copilot uses prompts, natural language text, that you type, and it provides suggestions based on what you type."
-    - content: "GitHub Copilot uses radio language, that you type, and it provides suggestions based on what you type."
+      explanation: "GitHub Copilot uses the prompts that you write in natural language text, to provide suggestions based on what you type."
+    - content: "GitHub Copilot accepts prompts written in radio language, and provides suggestions based on what you type."
       isCorrect: false
       explanation: "GitHub Copilot doesn't use radio language."
-  - content: "What are some GitHub Copilot Free features?"
+  - content: "What are some features of GitHub Copilot Free?"
     choices:
-    - content: "It's a free unrestrticted AI tool that works independent of code editors."
+    - content: "It's a free unrestricted AI tool that works independent of code editors."
       isCorrect: false
       explanation: "Incorrect. GitHub Copilot Free has a quota for code completions and chat messages."
     - content: "It provides several suggestions and chats per month directly in your IDE and on github.com."
       isCorrect: true
-      explanation: "Correct. It also supports multi-file editing and and switching models!"
-    - content: "An option to enable slower responses, preservering your Copilot Pro quota."
+      explanation: "Correct. It also supports multi-file editing and switching models!"
+    - content: "It provides an option to enable slower responses, preserving your Copilot Pro quota."
       isCorrect: false
-      explanation: "Incorrect. Copilot Free has quoat restrictions. Copilot Pro provides unlimited code suggestions and chat."
+      explanation: "Incorrect. Copilot Free has quota restrictions. Copilot Pro provides unlimited code suggestions and chat."
   - content: "How can you accept GitHub Copilot's suggestions?"
     choices:
-    - content: "Press the “Tab” key."
+    - content: "Press the `Tab` key."
       isCorrect: true
-      explanation: "Copilot offers you a suggestion, which appears as grey code if you use black as your text color. To accept the suggestion, you need to press the “Tab” key."
-    - content: "Press “F1” key."
+      explanation: "Copilot offers you a suggestion, which appears as grey code if you use black as your text color. To accept the suggestion, you need to press the `Tab` key."
+    - content: "Press `F1` key."
       isCorrect: false
       explanation: "False. This option doesn't work to accept GitHub Copilot suggestions."
-    - content: "Press “F4” key."
+    - content: "Press `F4` key."
       isCorrect: false
       explanation: "False. This option doesn't work to accept GitHub Copilot suggestions."
   - content: "Identify which statement is valid and select the correct answer:"
     choices:
-    - content: "A prompt, which is our output, is a collection of songs that tells our copilot what to generate."
+    - content: "A prompt, which is our output, is a collection of songs that tells GitHub Copilot what to generate."
       isCorrect: false
       explanation: "False. A prompt isn't a collection of songs."
-    - content: "A prompt, which is our input, is a collection of instructions or guidelines that tell our copilot what to generate."
+    - content: "A prompt, which is our input, is a collection of instructions or guidelines that tell GitHub Copilot what to generate."
       isCorrect: true
-      explanation: "A prompt is crucial in eliciting specific responses from Copilot.  The prompt might be a comment that steers Copilot to generate code on your behalf or writing code that Copilot autocompletes."
-    - content: "A prompt, which is our document, is a collection of laptops that tells our Copilot what to generate."
+      explanation: "A prompt is crucial in eliciting specific responses from Copilot. The prompt might be a comment that steers Copilot to generate code on your behalf or writing code that Copilot autocompletes."
+    - content: "A prompt, which is a separate document, is a collection of instructions that tells GitHub Copilot what to generate."
       isCorrect: false
-      explanation: "False. A prompt isn't our document nor a collection of laptops that tells our Copilot what to generate."
-  - content: "On what depends on the quality of the output from GitHub Copilot?"
+      explanation: "False. A prompt isn't a separate document full of instructions that tells GitHub Copilot what to generate."
+  - content: "What does the quality of GitHub Copilot output depend on?"
     choices:
     - content: "Your code editor."
       isCorrect: false
@@ -69,4 +69,4 @@ quiz:
       explanation: "False. It doesn't depend on how well your extensions were installed."
     - content: "How well you crafted your prompt."
       isCorrect: true
-      explanation: "Designing an effective prompt is, therefore, crucial in ensuring we achieve our desired outcomes. You need to detail your prompt as much as possible."
+      explanation: "Designing an effective prompt is crucial to ensuring that you achieve your desired output from GitHub Copilot. You need to detail your prompt as much as possible."

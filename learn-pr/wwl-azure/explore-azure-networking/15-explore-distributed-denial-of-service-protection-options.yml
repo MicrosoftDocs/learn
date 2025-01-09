@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-networking.explore-distributed-denial-of-service-ddos-protection-options
 title: Explore Distributed Denial-of-Service (DDoS) protection options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Distributed Denial-of-Service (DDoS) protection options
   description: "Explore three Distributed Denial-of-Service (DDoS) protection options provided by Azure."
-  ms.date: 10/03/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

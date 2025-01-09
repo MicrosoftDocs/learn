@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.determine-latency-between-azure-virtual-machines-across-availability-zones
 title: Determine latency between Azure Virtual Machines across availability zones
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Determine latency between Azure Virtual Machines across availability zones
   description: "Learn how to measure the latency between Azure Virtual Machines across availability zones."
-  ms.date: 09/20/2024
+  ms.date: 12/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

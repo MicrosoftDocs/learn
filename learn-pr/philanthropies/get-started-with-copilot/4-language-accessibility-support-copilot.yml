@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.get-started-with-copilot.language-accessibility-support-copilot
+title: Language and accessibility support in Copilot
+metadata:
+  title: Language and accessibility support in Copilot
+  description: This unit is a part of the Getting Started with Copilot module
+  ms.date: 12/31/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-language-accessibility-support-copilot.md)]

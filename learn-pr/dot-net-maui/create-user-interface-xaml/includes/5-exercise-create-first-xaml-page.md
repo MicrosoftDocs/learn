@@ -12,7 +12,7 @@ On Android, the app looks like this:
 
 You've been asked to add some further features to this page. Before you start, you want to understand how the page was created, so you look at the source code. You notice that the UI was created entirely using C# code. Although this approach works, it intermingles the code that handles the layout with the code that controls the way in which the UI works. You realize that before long, there's a danger of the two aspects of the app becoming locked together, making future maintenance difficult and possibly making the app more fragile as more features are added. You decide to separate the UI design from the UI logic by extracting the C# code that defines the layout from the app and replacing it with a XAML page.
 
-[!include[](../../../includes/dotnet8-sdk-version.md)]
+[!include[](../../../includes/dotnet9-sdk-version.md)]
 
 ## Review the existing app
 

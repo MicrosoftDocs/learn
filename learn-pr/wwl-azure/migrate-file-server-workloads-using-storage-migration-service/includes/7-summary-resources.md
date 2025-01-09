@@ -3,11 +3,8 @@ This module provided you with the necessary knowledge to use Storage Migration S
 Now that you have reviewed this module, you should be able to:
 
 - Describe Storage Migration Service and its usage scenarios
-
 - Identify the requirements for using Storage Migration Service
-
 - Describe how to migrate a server with storage migration
-
 - List the considerations for using Storage Migration Service
 
 ## Resources
@@ -15,10 +12,6 @@ Now that you have reviewed this module, you should be able to:
 Use these resources to discover more.
 
 - [Storage Migration Service Overview](/windows-server/storage/storage-migration-service/overview)
-
 - [Use Storage Migration Service to migrate a server](/windows-server/storage/storage-migration-service/migrate-data)
-
 - [How cutover works in Storage Migration Service](/windows-server/storage/storage-migration-service/cutover)
-
 - [Storage Migration Service frequently asked questions (FAQ)](/windows-server/storage/storage-migration-service/faq)
-

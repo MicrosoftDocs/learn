@@ -3,17 +3,18 @@ uid: learn.wwl.configure-azure-files-file-sync
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Configure Azure Files and Azure File Sync
-  description: Learn how to configure Azure Files for SMB cloud file shares and how to use Azure File Sync to transform Windows Server into a quick cache of your Azure file share.
-  ms.date: 04/04/2024
+  title: Configure Azure Files
+  description: "Learn how to configure Azure Files for cloud file shares."
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure-file-storage
   ai-usage: ai-assisted
-title: Configure Azure Files and Azure File Sync
+title: Configure Azure Files
 summary: Learn how to configure Azure Files and Azure File Sync.
 abstract: |
   In this module, you learn how to:
@@ -23,8 +24,6 @@ abstract: |
   -   Configure Azure file shares and file share snapshots.
 
   -   Identify features and use cases of Azure File Sync.
-
-  -   Identify Azure File Sync components and configuration steps.
 prerequisites: None
 iconUrl: /training/achievements/azure-file-sync-configure.svg
 levels:
@@ -48,4 +47,3 @@ units:
 - learn.wwl.configure-azure-files-file-sync.summary-resources
 badge:
   uid: learn.wwl.configure-azure-files-file-sync.badge
-

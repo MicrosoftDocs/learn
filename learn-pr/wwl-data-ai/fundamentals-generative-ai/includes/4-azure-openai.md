@@ -14,7 +14,7 @@ A few common Azure OpenAI models are:
 - *DALL-E*: A language model that generates original images, variations of images, and can edit images.  
 
 ## Large and small language models
-There are many language models available that you can use to power generative AI applications. In general, language models can be considered in two categorize: *Large Language Models* (LLMs) and *Small Language models* (SLMs).
+There are many language models available that you can use to power generative AI applications. In general, language models can be considered in two categories: *Large Language Models* (LLMs) and *Small Language models* (SLMs).
 
 |Large Language Models (LLMs)|Small Language Models (SLMs)|
 |-|-|

@@ -1,4 +1,4 @@
-Managing collaboration and data sharing is an important part of an IT administrator's responsibilities. To fulfill these responsibilities, it is helpful to understand technologies that serve as the basis for Windows file sharing, such as the Server Message Block (SMB) protocol.
+Managing collaboration and data sharing is an important part of an IT administrator's responsibilities. To fulfill these responsibilities, it's helpful to understand technologies that serve as the basis for Windows file sharing, such as the Server Message Block (SMB) protocol.
 
 ## What is SMB?
 
@@ -17,7 +17,7 @@ SMB 3.0, which Microsoft introduced in Windows Server 2012, includes the followi
 - SMB Encryption. This feature provides the end-to-end encryption of SMB data on untrusted networks, and it helps to protect data from eavesdropping.
 - Windows PowerShell commands for managing SMB. You can manage file shares on the file server, end to end, from the command line.
 - SMB Multichannel. This feature enables you to aggregate network bandwidth and network fault tolerance if multiple paths are available between the SMB 3.x client and server.
-- SMB Direct. This feature supports network adapters that have the Remote Direct Memory Access (RDMA) capability and can perform at full speed with very low latency and by using very little central processing unit (CPU) processing time.
+- SMB Direct. This feature supports network adapters that have the Remote Direct Memory Access (RDMA) capability and can perform at full speed with low latency and by using little central processing unit (CPU) processing time.
 
 SMB 3.1.1, which Microsoft introduced in Windows Server 2016, offers several additional enhancements, including:
 

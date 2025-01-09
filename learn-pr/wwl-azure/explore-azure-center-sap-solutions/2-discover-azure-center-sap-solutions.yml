@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-center-sap-solutions.discover-azure-center-sap-solutions
 title: Discover Azure Center for SAP solutions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Discover Azure Center for SAP solutions
   description: "Discover what Azure Center for SAP solutions (ACSS) is and what it can be used for."
-  ms.date: 08/01/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

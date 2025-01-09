@@ -51,14 +51,14 @@ You can also use the Azure CLI command `az sql server firewall-rule` to create, 
 
     ```powershell
     $database_name = "AdventureWorks"
-    $server = Get-AzureRmSqlServer -ResourceGroupName <rgn>Sandbox resource group name</rgn>
+    $server = Get-AzureRmSqlServer -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     $logical_server = $server.ServerName
     ```
 
 1. Enter the following command to list your server's firewall settings:  
 
     ```azurecli
-    az sql server firewall-rule list -g <rgn>Sandbox resource group name</rgn> -s $logical_server
+    az sql server firewall-rule list -g <rgn>[sandbox resource group name]</rgn> -s $logical_server
     ```
 
     The output should be a JSON object for each rule on the **Firewall rules** setting of the **Networking** menu of your Azure SQL logical server in the Azure portal.  

@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.control-azure-services-with-cli.4-exercise-install-azure-cli
+title: Exercise - Install the Azure CLI
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Work with the Azure CLI
+  description: Learn the command structure and syntax to work with the Azure CLI
+  ms.date: 01/09/2025
+  author: dbradish-microsoft
+  ms.author: dbradish
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+  zone_pivot_groups: platform
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-install-azure-cli.md)]
+

@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-compute.implement-verify-high-availability-sap-hana-azure-virtual-machines
 title: Implement and verify high availability SAP HANA on Azure Virtual Machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement and verify high availability SAP HANA on Azure Virtual Machines
   description: "Implement and verify high availability SAP HANA on Azure Virtual Machines."
-  ms.date: 09/19/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
