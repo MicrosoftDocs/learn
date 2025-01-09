@@ -86,4 +86,4 @@ There will be a short delay before the new settings take effect. If the ping fai
 
 In this demonstration you will see how to proactively troubleshoot Conditional Access policies using the What if tool in the Azure portal:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TYMM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0567fa96-4b9a-4b1b-97c2-7c673e1a402f]
