@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.control-azure-services-with-cli.7-create-resource-using-script
+title: Create resources using an Azure CLI script
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create resources using an Azure CLI script
+  description: Create resources using an Azure CLI script
+  ms.date: 01/09/2025
+  author: dbradish-microsoft
+  ms.author: dbradish
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-create-resource-using-script.md)]

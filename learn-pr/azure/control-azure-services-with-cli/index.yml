@@ -5,8 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Control Azure services with the CLI
   description: Learn the steps to install the Azure CLI locally, create a website, and manage Azure resources using the CLI.
-  manager: jasongroce
-  ms.date: 09/07/2023
+  ms.date: 11/26/2024
   author: dbradish-microsoft
   ms.author: dbradish
   ms.topic: module
@@ -14,14 +13,15 @@ metadata:
 title: Control Azure services with the CLI
 summary: Install the Azure CLI locally and use it to manage Azure resources.
 abstract: | 
-  In this module, you'll:
-  - Install the Azure CLI on Linux, macOS, and/or Windows.
-  - Connect to an Azure subscription using the Azure CLI.
-  - Create Azure resources using the Azure CLI.
+  In this module, you:
+  - Decide if Azure CLI is the appropriate tool for your Azure management tasks.
+  - Install Azure CLI on Windows, Linux, or macOS.
+  - Connect to an Azure subscription using Azure CLI.
+  - Create Azure resources using Azure CLI.
 prerequisites: |
-  - Experience with a command-line interface, such as PowerShell or Bash
-  - Knowledge of basic Azure concepts, such as resource groups
-  - Experience administering Azure resources using the Azure portal
+  - Experience with command-line tools
+  - Knowledge of basic Azure concepts, such as resource groups and virtual machines
+  - Experience managing Azure resources using the Azure portal
 iconUrl: /training/achievements/control-azure-services-with-cli.svg
 levels: 
 - beginner
@@ -34,11 +34,14 @@ products:
 - azure-clis
 units:
 - learn.control-azure-services-with-cli.1-introduction
-- learn.control-azure-services-with-cli.2-what-is-the-azure-cli
-- learn.control-azure-services-with-cli.3-exercise-install-and-run-the-azure-cli
-- learn.control-azure-services-with-cli.4-work-with-the-cli
-- learn.control-azure-services-with-cli.5-exercise-create-website-using-the-cli
-- learn.control-azure-services-with-cli.6-summary
+- learn.control-azure-services-with-cli.2-decide-if-azure-cli-is-right-for-your-tasks
+- learn.control-azure-services-with-cli.3-install-azure-cli
+- learn.control-azure-services-with-cli.4-exercise-install-azure-cli
+- learn.control-azure-services-with-cli.5-create-resource-interactively
+- learn.control-azure-services-with-cli.6-exercise-create-resource-interactively
+- learn.control-azure-services-with-cli.7-create-resource-using-script
+- learn.control-azure-services-with-cli.8-exercise-create-resource-using-script
+- learn.control-azure-services-with-cli.9-summary
 badge:
   uid: learn.control-azure-services-with-cli.badge
 
