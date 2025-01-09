@@ -15,3 +15,4 @@ Without Microsoft Priva, Contoso would face manual, inconsistent processes for m
 - [Learn about Microsoft Priva](/privacy/priva/priva-overview?azure-portal=true)
 - [Learn about the new Microsoft Priva portal (preview)](/privacy/priva/priva-portal?azure-portal=true)
 - [Get started with Priva](/privacy/priva/priva-setup?azure-portal=true)
+- [Configure Priva settings](/privacy/priva/priva-settings?azure-portal=true)
