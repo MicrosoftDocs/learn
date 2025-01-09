@@ -1,7 +1,7 @@
 MongoDB is a document-oriented database. MongoDB eschews the relational model in favor of a "schema-less" model, which is designed to be more flexible and mimics the way data is modeled in modern object-oriented programming languages. MongoDB is also designed to be scalable from the ground up, it can automatically split up data among multiple servers and balance load across servers in a cluster. MongoDB also allows for complex queries such as those that involve MapReduce-style aggregations and geo-spatial queries, making MongoDB popular as a data store for mapping-related applications. Video 4.42 covers MongoDB
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pXRr]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b3c26f2b-5ab5-4927-884b-7d12c9802fca]
 
 ## MongoDB data model
 
