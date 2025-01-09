@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwTWD]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=88f15665-73a5-4af0-9ecb-b4bb1bde80e6]
 _This video's content is still valid, but the principle numbers may differ due to the Green Software Foundation's principle renumbering._
 
 The device on which you're reading this document released some carbon in its creation; once it reaches the end of life, disposing of it may release more. Embodied carbon (otherwise referred to as "Embedded Carbon") is the amount of carbon pollution emitted during the creation and disposal of a device. When calculating the total carbon pollution for the computers running your software, account for the carbon pollution to run the computer and the computer's embodied carbon.

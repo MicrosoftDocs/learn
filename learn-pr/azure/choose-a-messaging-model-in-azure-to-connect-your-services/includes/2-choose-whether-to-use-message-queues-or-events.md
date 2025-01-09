@@ -6,7 +6,7 @@ The first thing to understand about a communication is whether it sends **messag
 
 #### Communication strategies in Azure (APIs)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuaw]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f7698848-6fdb-444c-8e7b-a95617a3dda5]
 
 ## What is a message?
 

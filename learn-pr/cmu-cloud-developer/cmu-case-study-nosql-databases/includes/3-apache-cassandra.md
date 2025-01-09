@@ -1,6 +1,6 @@
 Apache Cassandra is a fully distributed, structured key-value storage system. Cassandra marries the best aspects of both HBase and Amazon's set of storage techniques, referred to as Dynamo.<sup>[3][^3]</sup> Cassandra uses the data model of HBase and the implementation architecture of Dynamo. The following video covers Cassandra.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pQ3Z]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5df707a0-cdca-4028-9a12-1d52421b9425]
 
 ### Cassandra data model
 

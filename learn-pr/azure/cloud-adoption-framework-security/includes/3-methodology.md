@@ -2,7 +2,7 @@ The Secure methodology of the Microsoft Cloud Adoption Framework for Azure provi
 
 Watch the following video to learn more about the Secure methodology and how it helps guide continuing security improvements over time:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWVBXs]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6d57c51e-2055-4874-8de1-374a4844f127]
 
 The following infographic provides a visual mapping of the key ways security integrates with the larger organization and the disciplines within security:
 

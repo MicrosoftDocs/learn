@@ -12,7 +12,7 @@ To communicate *effectively*, you need to set aside your own preconceived notion
 
 To understand what active listening is all about, review the following short video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OFC5]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b2e93a18-6f7a-456a-aeb4-936a6d41848c]
 
 When you engage in active listening, you need to:
 

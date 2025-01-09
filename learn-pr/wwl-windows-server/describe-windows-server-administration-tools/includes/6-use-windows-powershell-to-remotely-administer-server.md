@@ -157,7 +157,7 @@ The following video demonstrates how to manage a remote Windows Server by using 
    Get-Service -Name IISAdmin | Restart-Service
    ```
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Mfs3]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=ca06d570-3461-45c2-af28-4dd01420a53d]
 
 ---
 

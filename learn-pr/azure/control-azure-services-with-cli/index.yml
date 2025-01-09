@@ -10,6 +10,7 @@ metadata:
   ms.author: dbradish
   ms.topic: module
   ms.service: azure-cli
+  ai-usage: ai-assisted
 title: Control Azure services with the CLI
 summary: Install the Azure CLI locally and use it to manage Azure resources.
 abstract: | 

@@ -5,4 +5,4 @@ Microsoft Entra seamless single sign-on (seamless SSO) automatically signs in us
 
 Watch this video to learn more about basic aspects of PTA and seamless SSO.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Mzo1]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0d92926f-d813-4f75-94ea-6fc780010596]

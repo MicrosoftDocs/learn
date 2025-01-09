@@ -17,7 +17,7 @@ _Figure 2: SDN component planes_
 The following video provides more details about software-defined networking. 
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pPUg]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=64f2147b-b853-4c0f-9211-a637b57e3738]
 
 
 ### SDN architecture

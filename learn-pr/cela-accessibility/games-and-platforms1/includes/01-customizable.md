@@ -105,7 +105,7 @@ Allow players to customize the amount of time and location in which notification
 
 Allow players to customize onscreen content that's moving, blinking, scrolling, or otherwise animated. This type of customization is important during game experiences where players are required to read text onscreen but can become distracted or disoriented by background movement. The following video capture shows the Forza Horizon 5 accessibility settings menu. Players can enable and disable background movement while they navigate their menu settings.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPEGs]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f36d9825-08c1-42c5-a99b-4e6f17704d8d]
 
 ## Customize other elements and mechanics
 
