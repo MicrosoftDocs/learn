@@ -15,7 +15,7 @@ Azure RBAC is an authorization system built on Azure Resource Manager that provi
 
 The following video describes Azure RBAC in detail:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEvk]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0c2fa19a-79e6-4922-a1c6-03041e8369e7]
 
 You can grant access by assigning the appropriate Azure role to users, groups, and applications at a certain scope. The scope of a role assignment can be a management group, subscription, a resource group, or a single resource. A role assigned at a parent scope also grants access to the child scopes contained within it. For example, a user with access to a resource group can manage all the resources it contains like websites, virtual machines, and subnets. The Azure role that you assign dictates what resources the user, group, or application can manage within that scope.
 
