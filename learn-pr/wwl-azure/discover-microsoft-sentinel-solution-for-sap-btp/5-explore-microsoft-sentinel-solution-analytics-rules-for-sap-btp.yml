@@ -1,15 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp.explore-microsoft-sentinel-solution-analytics-rules-for-sap-btp
-title: Explore Microsoft Sentinel Solution analytics rules for SAP BTP
+title: Explore Microsoft Sentinel solution analytics rules for SAP BTP
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Explore Microsoft Sentinel Solution analytics rules for SAP BTP
+  title: Explore Microsoft Sentinel solution analytics rules for SAP BTP
   description: "Explore Microsoft Sentinel solution for SAP BTP includes several built-in analytics rules for identity management and low-code application development scenarios."
-  ms.date: 12/19/2024
+  ms.date: 01/09/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-explore-microsoft-sentinel-solution-analytics-rules-for-sap-btp.md)]
