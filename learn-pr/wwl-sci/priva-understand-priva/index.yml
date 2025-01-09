@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.priva-understand-microsoft-priva
+metadata:
+  title: Understand Microsoft Purview Insider Risk Management
+  description: "Understand Microsoft Purview Insider Risk Management."
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Understand Microsoft Purview Insider Risk Management
+summary: Understand insider risks and discover how Microsoft Purview Insider Risk Management identifies risky activities, analyzes context, and helps organizations protect data while respecting privacy.
+abstract: |
+  After completing this module, you'll be able to:
+  - Define insider risks and their effect on organizations.
+  - Understand the purpose of Microsoft Purview Insider Risk Management.
+  - Identify key features like policies, signals, analytics, dashboards, and investigative tools.
+  - Recognize how these tools detect and address potential risks.
+  - Explore scenarios that demonstrate effective risk management strategies.
+prerequisites: |
+  - Familiarity with basic cybersecurity concepts.
+  - Awareness of organizational data security practices.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.priva-understand-microsoft-priva.introduction
+- learn.wwl.priva-understand-microsoft-priva.address-privacy-challenges
+- learn.wwl.priva-understand-microsoft-priva.priva-overview
+- learn.wwl.priva-understand-microsoft-priva.navigate-priva-portal
+- learn.wwl.priva-understand-microsoft-priva.configure-priva-settings
+- learn.wwl.priva-understand-microsoft-priva.knowledge-check
+- learn.wwl.priva-understand-microsoft-priva.summary
+
+badge:
+  uid: learn.wwl.priva-understand-microsoft-priva.badge
