@@ -1,20 +1,5 @@
 Controlling when content is refreshed is important for any caching mechanism. A cached resource might be out-of-date or stale (compared to the corresponding resource on the origin server).
 
-## Controlling caching behavior
-
-You can use content delivery network caching rules to set or modify default cache expiration behavior. These caching rules can either be global or with custom conditions. Azure Content Delivery Network offers two ways to control how your files get cached:
-
-* **Caching rules:** Azure Content Delivery Network provides global and custom types of caching rules.
-
-    * Global caching rules - You can set one global caching rule for each endpoint in your profile, which affects all requests to the endpoint. The global caching rule overrides any HTTP cache-directive headers, if set.
-
-    * Custom caching rules - You can set one or more custom caching rules for each endpoint in your profile. Custom caching rules match specific paths and file extensions, get processed in order, and override the global caching rule, if set.
-
-* **Query string caching:** You can adjust how the Azure content delivery network treats caching for requests with query strings. If the file isn't cacheable, the query string caching setting has no effect, based on caching rules and content delivery network default behaviors.
-
-> [!NOTE]
-> Caching rules are available only for **Azure CDN Standard from Edgio** profiles. For **Azure CDN from Microsoft** profiles, you must use the [Standard rules engine](/azure/cdn/cdn-standard-rules-engine-reference) For **Azure CDN Premium from Edgio** profiles, you must use the [Edgio Premium rules engine](/azure/cdn/cdn-verizon-premium-rules-engine) in the **Manage** portal for similar functionality.
-
 ## Standard rules engine
 
 In the Standard rules engine for Azure Content Delivery Network, a rule consists of one or more match conditions and an action. The rules engine is designed to be the final authority on how specific types of requests get processed by Standard Azure Content Delivery Network.
@@ -59,7 +44,7 @@ You can purge content in several ways.
 * Specify a file, by including the path to that file or all assets on the selected endpoint by checking the **Purge All** checkbox in the Azure portal.
 * Based on wildcards (*) or using the root (/).
 
-The Azure CLI provides a special purge verb that unpublishes cached assets from an endpoint. This is useful if you have an application scenario where a large amount of data is invalidated and should be updated in the cache. To unpublish assets, you must specify either a file path, a wildcard directory, or both:
+The Azure CLI provides a special purge verb that unpublishes cached assets from an endpoint which is useful if you have an application scenario where a large amount of data is invalidated and should be updated in the cache. To unpublish assets, you must specify either a file path, a wildcard directory, or both:
 
 ```bash
 az cdn endpoint purge \
@@ -69,7 +54,7 @@ az cdn endpoint purge \
     --resource-group ExampleGroup
 ```
 
-You can also preload assets into an endpoint. This is useful for scenarios where your application creates a large number of assets, and you want to improve the user experience by prepopulating the cache before any actual requests occur:
+You can also preload assets into an endpoint which is useful for scenarios where your application creates a large number of assets. You can improve the user experience by prepopulating the cache before any actual requests occur:
 
 ```bash
 az cdn endpoint load \
