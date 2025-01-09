@@ -29,14 +29,14 @@ On the other hand, certain systems aggregate and analyze data in order to gain i
 The following video provides an overview of OLTP vs. OLAP:
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pKCh]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=25d787af-1e14-4252-b4a1-e174386d98ee]
 
 ## Scalability
 
 Over time, when a database system's user base and data grow, the system may require some form of **scaling**, which would expand its capacity and/or performance in order to support more users or data, or both. Database scaling is complex for a variety of reasons, which we will cover in detail in the following video:
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q0eC]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8bf02ff1-29d7-4bb4-9d09-a9bddb3a09d5]
 
 ### Vertical scaling
 
