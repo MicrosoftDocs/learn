@@ -73,13 +73,13 @@ Continuous delivery provides a consistent way for you and your team to continuou
 
 In this short video, Abel Wang, Cloud Advocate at Microsoft, explains more.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LEDS]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0e182ec0-6671-48f6-a0f2-9b71a021c0c4]
 
 ## How does continuous delivery compare to continuous deployment?
 
 In the DevOps community, you might hear the terms *continuous delivery* and *continuous deployment*. Do these terms mean the same thing? In this short video, Abel explains the difference.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LEyh]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=adad1dd8-4d15-4d93-92ed-c31b2e5a16ff]
 
 ## What continuous delivery tools can I use?
 
@@ -102,7 +102,7 @@ For example, Jenkins is open source. It has many plug-ins, and many companies us
 
 Here's a short video where Abel talks about using DevOps best practices to deploy code to Azure.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LLYQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9c9bff59-be44-423f-b0c9-6692dd9ccbcc]
 
 **Mara:** My vote is to stay with Azure Pipelines.
 
