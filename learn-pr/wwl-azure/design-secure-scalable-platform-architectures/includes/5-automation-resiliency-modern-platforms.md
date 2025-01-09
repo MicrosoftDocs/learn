@@ -14,11 +14,9 @@ Let's consider a scenario that illustrates the integration of GitHub Actions wit
 
 :::image type="content" source="../media/eac-application-infra-e43f181d.png" alt-text="Diagram showing the scenario that illustrates the integration of GitHub Actions with IaC and deployment identities housed in Azure Deployment Environments.":::
 
-
 In this setup, a secure, centralized repository stores a collection of files that define what should be provisioned and configured, including formats like Bicep, Terraform, Helm charts, and other Kubernetes-native configurations. The repository is managed by an operations team or administrators, and developers (or automated systems) can submit pull requests for updates. Once the pull requests are reviewed and merged into the main branch by the administrators, the same CI/CD tools used for application development are triggered to process the changes and implement them across the environment.
 
 :::image type="content" source="../media/eac-gitops-2aa72246.png" alt-text="Diagram showing the scenario that illustrates the integration of GitHub Actions with IaC with the pull requests are reviewed and merged into the main branch by the administrators.":::
-
 
 As with application development, any secrets or managed identities required for these workflows are securely stored in the pipeline engine or within the native capabilities of the provisioning service. Since the individuals making the pull requests won't have direct access to these secrets, this process ensures that developers can initiate actions they don’t have direct permission to execute. This approach follows the principle of least privilege while still providing developers with a self-service option for making changes.
 

@@ -8,13 +8,13 @@ This module introduces you to the core principles of secure and scalable platfor
 
 After completing this module, students and professionals can:
 
- -  Gain insights into designing platform architectures that are secure, scalable, and compliant with regulatory standards.
- -  Explore the role of automation in maintaining consistency, reducing manual errors, and accelerating deployments.
- -  Understand the importance of capacity planning and estimation for forecasting future resource needs.
- -  Learn cost optimization strategies to manage resources efficiently and avoid over-provisioning.
- -  Discover how to implement scalable solutions that can handle increasing demand and complex workflows.
+- Gain insights into designing platform architectures that are secure, scalable, and compliant with regulatory standards.
+- Explore the role of automation in maintaining consistency, reducing manual errors, and accelerating deployments.
+- Understand the importance of capacity planning and estimation for forecasting future resource needs.
+- Learn cost optimization strategies to manage resources efficiently and avoid over-provisioning.
+- Discover how to implement scalable solutions that can handle increasing demand and complex workflows.
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Beneficial to have experience in an organization that delivers software.
+- Understanding of what DevOps is and its concepts.
+- Beneficial to have experience in an organization that delivers software.

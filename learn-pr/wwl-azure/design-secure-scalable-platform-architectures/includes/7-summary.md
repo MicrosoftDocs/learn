@@ -6,14 +6,14 @@ This module introduced you to the core principles of secure and scalable platfor
 
 You learned how to describe the benefits and usage of:
 
- -  Gain insights into designing platform architectures that are secure, scalable, and compliant with regulatory standards.
- -  Explore the role of automation in maintaining consistency, reducing manual errors, and accelerating deployments.
- -  Understand the importance of capacity planning and estimation for forecasting future resource needs.
- -  Learn cost optimization strategies to manage resources efficiently and avoid over-provisioning.
- -  Discover how to implement scalable solutions that can handle increasing demand and complex workflows.
+- Gain insights into designing platform architectures that are secure, scalable, and compliant with regulatory standards.
+- Explore the role of automation in maintaining consistency, reducing manual errors, and accelerating deployments.
+- Understand the importance of capacity planning and estimation for forecasting future resource needs.
+- Learn cost optimization strategies to manage resources efficiently and avoid over-provisioning.
+- Discover how to implement scalable solutions that can handle increasing demand and complex workflows.
 
 ## Learn more
 
- -  [Overview of Azure Policy - Azure Policy](/azure/governance/policy/overview).
- -  [About GitHub Advanced Security.](https://docs.github.com/get-started/learning-about-github/about-github-advanced-security)
- -  [Understanding GitHub Actions](https://docs.github.com/actions/about-github-actions/understanding-github-actions).
+- [Overview of Azure Policy - Azure Policy](/azure/governance/policy/overview).
+- [About GitHub Advanced Security.](https://docs.github.com/get-started/learning-about-github/about-github-advanced-security)
+- [Understanding GitHub Actions](https://docs.github.com/actions/about-github-actions/understanding-github-actions).
