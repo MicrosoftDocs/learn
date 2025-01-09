@@ -5,10 +5,13 @@ metadata:
   prefetch-feature-rollout: true
   title: Discover the Microsoft Sentinel solution for SAP BTP
   description: "Understand the Microsoft Sentinel solution for SAP BTP. The module explores the benefits of monitoring BTP activity, and describes the steps for deploying the Microsoft Sentinel solution for SAP BTP."
-  ms.date: 12/19/2024
+  ms.date: 01/09/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: azure
   ai-usage: human-only
 title: Discover the Microsoft Sentinel solution for SAP BTP
@@ -32,9 +35,9 @@ abstract: |
 
   -   Monitor and respond to threats.
 prerequisites: |
-  -   Basic understanding of Microsoft Sentinel
+  -   Basic understanding of Microsoft Sentinel.
 
-  -   SAP system management
+  -   SAP system management.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
