@@ -4,7 +4,7 @@ title: Use commands in a viewmodel
 metadata:
   title: Use commands in a viewmodel
   description: "Use commands to trigger app logic in the viewmodel."
-  ms.date: 04/21/2024
+  ms.date: 01/08/2025
   author: adegeo
   ms.author: adegeo
   ms.topic: unit
@@ -39,12 +39,12 @@ quiz:
       explanation: Incorrect. Commands aren't provided to mirror events on a control. If a control is designed for commanding, it provides a single command which is invoked when the user interacts with the control. Commands are implemented in the viewmodel to provide a way to invoke logic in the viewmodel.
   - content: What is the role of the `CommandParameter` property in .NET MAUI controls?
     choices:
-    - content: It allows passing a parameter to the command when it's invoked.
+    - content: It allows the passing of a parameter to the command when the command invoked.
       isCorrect: true
       explanation: Correct. The `CommandParameter` property is passed a parameter to the command's Execute and CanExecute delegates.
     - content: It determines whether a control should appear enabled or disabled.
       isCorrect: false
-      explanation: Incorrect. It's ultimately up to the control to appear enabled or disabled, which requires checking the command's CanExecute return value. The `CommandParameter` property is passed to that method when it's invoked.
+      explanation: Incorrect. It's ultimately up to the control to appear enabled or disabled, which requires checking the command's CanExecute return value. The `CommandParameter` property is passed to that method when the method is invoked.
     - content: It's used to bind the `ICommand` interface to a property.
       isCorrect: false
-      explanation: Incorrect. The `CommandParameter` property isn't used for binding `ICommand`, it's used to pass a parameter to the command when it's invoked.
+      explanation: Incorrect. The `CommandParameter` property isn't used for binding `ICommand`, it's used to pass a parameter to the command when the command is invoked.

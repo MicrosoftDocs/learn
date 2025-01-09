@@ -1,8 +1,8 @@
-.NET MAUI apps that don't use MVVM generally have more code in their *code-behind* files. The code-behind files in .NET MAUI follow this pattern: *{something}.xaml.cs*. Most code in the code-behind file usually controls the user interface (UI) behavior. *UI behavior* can include anything that happens *to* the UI, like changing a color or some text. And it can include anything that happens *because of* the UI, including button click handlers.
+.NET MAUI apps that don't use Model-View-ViewModel (MVVM) generally have more code in their *code-behind* files. The code-behind files in .NET MAUI follow this pattern: *{something}.xaml.cs*. Most code in the code-behind file usually controls the user interface (UI) behavior. *UI behavior* can include anything that happens *to* the UI, like changing a color or some text. And it can include anything that happens *because of* the UI, including button click handlers.
 
-One problem with this approach is that it's hard to write unit tests against code-behind files. Code-behind files often assume an application state that's created by parsing XAML or even created by other pages. These conditions are difficult to handle in a unit test runner that might not even be running on a mobile device, let alone with a user interface. So, unit tests are rarely able to test the UI behaviors in these files.
+One problem with this approach is that it's hard to write unit tests against code-behind files. Code-behind files often assume an application state created by parsing XAML or even created by other pages. These conditions are difficult to handle in a unit test runner that might not even be running on a mobile device, let alone with a user interface. So, unit tests are rarely able to test the UI behaviors in these files.
 
-But here's where the MVVM pattern comes in useful. When used correctly, the MVVM pattern solves these problems by moving most UI behavior logic to unit-testable classes that are called **viewmodels**. The MVVM pattern is most commonly used with frameworks that support data-binding. That's because with .NET MAUI, you can data-bind each UI element to a `viewmodel` and eliminate or nearly eliminate code in a view or code-behind.
+But here's where the MVVM pattern comes in useful. When used correctly, the MVVM pattern solves these problems by moving most UI behavior logic to unit-testable classes that are called **viewmodels**. The MVVM pattern is most commonly used with frameworks that support data-binding. With .NET MAUI, you can data-bind each UI element to a `viewmodel` and eliminate or nearly eliminate code in a view or code-behind.
 
 ## What are the parts of an MVVM application?
 
@@ -87,7 +87,7 @@ Think about what a `viewmodel` might do for the HR application. Let's say that t
 
 In this example, the model contains the *business logic*. This logic isn't bound to a visual display or device. You could use the same logic for a handheld device or desktop computer. The view knows nothing of the business logic. The view controls, like the label, know how to get text on the screen, but doesn't care if it's a vacation balance or a random string. The `viewmodel` knows a *little* of both worlds, so it can act as an intermediary.
 
-What's interesting is how the `viewmodel` accomplishes being an intermediary: It exposes properties to which a view can bind. Public properties are the only way a `viewmodel` provides data. This brings us to why it's *called* a `viewmodel`. The "model" in MVVM represents the structure, data, and logic of the business processes, the `viewmodel` represents the structure, data, and logic that the view requires.
+What's interesting is how the `viewmodel` accomplishes being an intermediary: It exposes properties to which a view can bind. Public properties are the only way a `viewmodel` provides data. A `viewmodel` is so called because the "model" in MVVM represents the structure, data, and logic of the business processes, while the `viewmodel` represents the structure, data, and logic that the view requires.
 
 ## How does the view work with the `viewmodel`?
 
@@ -122,7 +122,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 }
 ```
 
-The view that describes the employee's details contains a label control that's bound to the `viewmodel`'s `Name` property:
+The view that describes the employee's details contains a label control which is bound to the `viewmodel`'s `Name` property:
 
 ```xaml
 <Label Text="{Binding Name}" />

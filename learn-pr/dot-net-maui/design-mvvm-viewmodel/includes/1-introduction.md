@@ -6,9 +6,7 @@ Say your company produces management software for human resources departments. T
 
 MVVM itself is a design pattern that's the basis for many frameworks and programming tool-kits. Most of those frameworks also provide other things, like navigation and messaging abstractions, that help MVVM promote unit testing. In this discussion, you concentrate on the basics of the pattern because frameworks can widely vary in their implementations.
 
-## What you'll do
-
-In this module, you learn the parts of the MVVM pattern and the responsibilities of the model, view, and viewmodel. Then, you write code in a viewmodel to handle application behavior in a way that's isolated from the UI libraries (even from .NET MAUI itself).
+In this module, you learn the parts of the MVVM pattern and the responsibilities of the model, view, and viewmodel. Then, you write code in a viewmodel that handles application behavior in a way which is isolated from the UI libraries (even from .NET MAUI itself).
 
 ## What do you learn
 
