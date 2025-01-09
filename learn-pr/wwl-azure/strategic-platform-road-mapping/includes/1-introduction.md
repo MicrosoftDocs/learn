@@ -10,13 +10,13 @@ This module introduces you to the strategic importance of platform engineering, 
 
 After completing this module, students and professionals can:
 
- -  Learn how to align platform engineering initiatives with long-term organizational goals and market trends.
- -  Explore key principles of strategic platform road mapping, including preparing for technological advancements and fostering innovation.
- -  Understand the importance of defining a clear platform vision that aligns with broader organizational goals.
- -  Discover how to build a platform roadmap with actionable milestones and specific deliverables.
- -  Learn techniques for phased implementation and prioritization to ensure the platform evolves in a way that supports business goals.
+- Learn how to align platform engineering initiatives with long-term organizational goals and market trends.
+- Explore key principles of strategic platform road mapping, including preparing for technological advancements and fostering innovation.
+- Understand the importance of defining a clear platform vision that aligns with broader organizational goals.
+- Discover how to build a platform roadmap with actionable milestones and specific deliverables.
+- Learn techniques for phased implementation and prioritization to ensure the platform evolves in a way that supports business goals.
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Beneficial to have experience in an organization that delivers software.
+- Understanding of what DevOps is and its concepts.
+- Beneficial to have experience in an organization that delivers software.

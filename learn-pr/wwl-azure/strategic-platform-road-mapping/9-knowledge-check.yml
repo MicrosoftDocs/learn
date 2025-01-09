@@ -7,9 +7,89 @@ metadata:
   title: Knowledge Check
   description: "Knowledge Check"
   ms.date: 01/09/2025
-  author: wwlpublish
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What role does platform engineering play in digital transformation within an enterprise?
+      choices:
+        - content: Platform engineering is solely focused on maintaining existing infrastructure without considering new technologies.
+          isCorrect: false
+          explanation: Incorrect. Platform engineering is pivotal in adopting and integrating new technologies such as cloud computing, AI, and edge computing.
+        - content: Platform engineering is responsible for marketing and promoting new technologies within the organization.
+          isCorrect: false
+          explanation: Incorrect. Platform engineering doesn't directly involve marketing or promotion, but rather the adoption and integration of new technologies.
+        - content: Platform engineering serves as the foundation for adopting and integrating new technologies, offering flexibility and scalability.
+          isCorrect: true
+          explanation: Correct. In the context of digital transformation, platform engineering ensures that the infrastructure can support shifts, offering flexibility and scalability.
+    - content: What is the role of capacity planning in platform engineering?
+      choices:
+        - content: It's essential for forecasting future resource needs and ensuring that the platform can handle projected growth without compromising performance or stability.
+          isCorrect: true
+          explanation: Correct. Capacity planning involves analyzing historical data, identifying usage patterns, and estimating the infrastructure needs for the future.
+        - content: It's used to design new features for the platform.
+          isCorrect: false
+          explanation: Incorrect. Capacity planning doesn't directly involve feature design. It's about ensuring the platform can handle growth and maintain performance.
+        - content: It's used to reduce the cost of resources by limiting their usage.
+          isCorrect: false
+          explanation: Incorrect. While cost optimization is a part of platform engineering, capacity planning specifically focuses on forecasting future resource needs and ensuring performance and stability.
+    - content: What is a key aspect of future-proofing a platform?
+      choices:
+        - content: Relying heavily on a single technology stack.
+          isCorrect: false
+          explanation: Incorrect. Relying heavily on a single technology stack can lead to technology lock-in, making future transitions costly and complex.
+        - content: Adopting a modular architecture.
+          isCorrect: true
+          explanation: Correct. A modular architecture allows new services and features to be added without affecting the core platform.
+        - content: Avoiding the adoption of emerging technologies.
+          isCorrect: false
+          explanation: Incorrect. Adopting emerging technologies early can provide competitive advantages and improve business outcomes.
+    - content: What is the role of feedback loops in continuous improvement in platform engineering?
+      choices:
+        - content: Feedback loops collect data from various sources, including metrics, monitoring tools, and user feedback, to guide decisions on platform changes and optimizations.
+          isCorrect: true
+          explanation: Correct. Feedback loops are vital for understanding how the platform is performing and where improvements are needed.
+        - content: Feedback loops are used to limit the input from developers, operations staff, and end users.
+          isCorrect: false
+          explanation: Incorrect. Feedback loops don't limit input, they use it to highlight pain points and unmet needs.
+        - content: Feedback loops are used to reduce the amount of data collected from various sources.
+          isCorrect: false
+          explanation: Incorrect. Feedback loops don't reduce data, they collect it from various sources to guide decisions on platform changes and optimizations.
+    - content: What is the first step in creating an actionable platform roadmap?
+      choices:
+        - content: Building the platform roadmap.
+          isCorrect: false
+          explanation: Incorrect. Building the platform roadmap is a part of the process, but it isn't the first step.
+        - content: Defining the Platform Vision.
+          isCorrect: true
+          explanation: Correct. Defining a clear platform vision is the first step in creating an actionable roadmap.
+        - content: Implementing the platform roadmap.
+          isCorrect: false
+          explanation: Incorrect. Implementation comes after the roadmap has been defined and created.
+    - content: What is a key strategy for mitigating risks in platform engineering?
+      choices:
+        - content: Focusing solely on technological risks and ignoring operational and compliance-related concerns.
+          isCorrect: false
+          explanation: Incorrect. All types of risks, including operational, technological, and compliance-related, need to be addressed.
+        - content: Implementing strategies that build resilience into the platform, such as automation and continuous monitoring.
+          isCorrect: true
+          explanation: Correct. Building resilience into the platform helps identify and address issues early, minimizing the impact of risks.
+        - content: Ignoring potential risks until they become actual problems.
+          isCorrect: false
+          explanation: Incorrect. Ignoring potential risks can lead to larger issues down the line.
+    - content: What is the importance of visualizing the platform roadmap?
+      choices:
+        - content: It's only useful for the technical teams to understand the platform's progress.
+          isCorrect: false
+          explanation: Incorrect. Visualization of the roadmap is beneficial for all stakeholders, not just the technical teams.
+        - content: It helps in creating a complex and detailed view of the platform's development.
+          isCorrect: false
+          explanation: Incorrect. While visualization does provide a view of the platform's development, it shouldn't be complex but clear and engaging.
+        - content: It helps stakeholders quickly understand the scope, progress, and timing of the platform’s development.
+          isCorrect: true
+          explanation: Correct. Visualizing the roadmap provides a clear and engaging view of the platform's development for all stakeholders.

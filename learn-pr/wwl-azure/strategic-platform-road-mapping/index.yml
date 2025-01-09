@@ -6,68 +6,64 @@ metadata:
   title: Strategic Platform Road Mapping
   description: "This module covers the principles of strategic platform road mapping, including aligning platform initiatives with business objectives, preparing for technological advancements, and fostering innovation. Learners will understand how to develop actionable roadmaps that guide the platform’s evolution, ensuring it remains efficient, reliable, and capable of evolving with future innovations."
   ms.date: 01/09/2025
-  author: wwlpublish
+  author: LuizMacedo
   ms.author: lumac
   ms.topic: module-standard-task-based
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
+  hidden: true
 title: Strategic Platform Road Mapping
 summary: This module covers the principles of strategic platform road mapping, including aligning platform initiatives with business objectives, preparing for technological advancements, and fostering innovation. Learners will understand how to develop actionable roadmaps that guide the platform’s evolution, ensuring it remains efficient, reliable, and capable of evolving with future innovations.
 abstract: |
   -   Learn how to align platform engineering initiatives with long-term organizational goals and market trends.
-
   -   Explore key principles of strategic platform road mapping, including preparing for technological advancements and fostering innovation.
-
   -   Understand the importance of defining a clear platform vision that aligns with broader organizational goals.
-
   -   Discover how to build a platform roadmap with actionable milestones and specific deliverables.
-
   -   Learn techniques for phased implementation and prioritization to ensure the platform evolves in a way that supports business goals.
 prerequisites: |
   -   Understanding of what DevOps is and its concepts.
-
   -   Beneficial to have experience in an organization that delivers software.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- ai-engineer
-- developer
-- devops-engineer
-- network-engineer
-- security-engineer
-- solution-architect
-- startup-founder
+  - administrator
+  - ai-engineer
+  - developer
+  - devops-engineer
+  - network-engineer
+  - security-engineer
+  - solution-architect
+  - startup-founder
 products:
-- azure
-- azure-devops
-- github
+  - azure
+  - azure-devops
+  - github
 subjects:
-- app-development
-- architecture
-- asset-management
-- automation
-- cloud-computing
-- cloud-security
-- containers
-- custom-app-development
-- devops
-- infrastructure
-- it-management-monitoring
-- product-lifecycle-management
-- productivity
-- site-reliability-engineering
+  - app-development
+  - architecture
+  - asset-management
+  - automation
+  - cloud-computing
+  - cloud-security
+  - containers
+  - custom-app-development
+  - devops
+  - infrastructure
+  - it-management-monitoring
+  - product-lifecycle-management
+  - productivity
+  - site-reliability-engineering
 units:
-- learn.wwl.strategic-platform-road-mapping.introduction
-- learn.wwl.strategic-platform-road-mapping.understand-strategic-importance-platform-engineering
-- learn.wwl.strategic-platform-road-mapping.develop-scalable-platform-architecture
-- learn.wwl.strategic-platform-road-mapping.future-proofing-platform
-- learn.wwl.strategic-platform-road-mapping.continuous-improvement-innovation-management
-- learn.wwl.strategic-platform-road-mapping.roadmap-development-execution
-- learn.wwl.strategic-platform-road-mapping.risk-management-platform-engineering
-- learn.wwl.strategic-platform-road-mapping.communicate-roadmap-stakeholders
-- learn.wwl.strategic-platform-road-mapping.knowledge-check
-- learn.wwl.strategic-platform-road-mapping.summary
+  - learn.wwl.strategic-platform-road-mapping.introduction
+  - learn.wwl.strategic-platform-road-mapping.understand-strategic-importance-platform-engineering
+  - learn.wwl.strategic-platform-road-mapping.develop-scalable-platform-architecture
+  - learn.wwl.strategic-platform-road-mapping.future-proofing-platform
+  - learn.wwl.strategic-platform-road-mapping.continuous-improvement-innovation-management
+  - learn.wwl.strategic-platform-road-mapping.roadmap-development-execution
+  - learn.wwl.strategic-platform-road-mapping.risk-management-platform-engineering
+  - learn.wwl.strategic-platform-road-mapping.communicate-roadmap-stakeholders
+  - learn.wwl.strategic-platform-road-mapping.knowledge-check
+  - learn.wwl.strategic-platform-road-mapping.summary
 badge:
   uid: learn.wwl.strategic-platform-road-mapping.badge
