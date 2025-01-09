@@ -8,7 +8,7 @@ When you’re architecting your solution, you’ll need to account for service a
 
 This short video describes Azure SLAs in more detail.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEA4z]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=638d4983-a571-47a3-a7be-382ed4a028ce]
 
 ## Scalability
 
