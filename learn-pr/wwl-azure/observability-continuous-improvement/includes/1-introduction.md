@@ -8,13 +8,13 @@ This module introduces you to the concepts of observability and continuous impro
 
 After completing this module, students and professionals can:
 
- -  Discover the significance of observability in providing real-time insights into system performance and identifying inefficiencies.
- -  Understand how continuous improvement creates a feedback loop that drives platform enhancements and optimizes resources.
- -  Learn about benchmarking and performance monitoring to track the success of the platform and identify areas for improvement.
- -  Explore strategies for adapting to market trends and anticipating shifts in user needs or technological landscapes.
- -  Foster a culture of innovation within platform engineering teams to continuously propose and test new ideas.
+- Discover the significance of observability in providing real-time insights into system performance and identifying inefficiencies.
+- Understand how continuous improvement creates a feedback loop that drives platform enhancements and optimizes resources.
+- Learn about benchmarking and performance monitoring to track the success of the platform and identify areas for improvement.
+- Explore strategies for adapting to market trends and anticipating shifts in user needs or technological landscapes.
+- Foster a culture of innovation within platform engineering teams to continuously propose and test new ideas.
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Beneficial to have experience in an organization that delivers software.
+- Understanding of what DevOps is and its concepts.
+- Beneficial to have experience in an organization that delivers software.
