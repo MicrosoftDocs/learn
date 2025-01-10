@@ -1,4 +1,5 @@
 
+
 Azure Front Door is Microsoft’s modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between your users and your applications. Azure Front Door delivers your content using the Microsoft’s global edge network with hundreds of global and local POPs distributed around the world close to both your enterprise and consumer end users.
 
 Many organizations have applications they want to make available to their customers, their suppliers, and almost certainly their users. The tricky part is making sure those applications are highly available. In addition, they need to be able to quickly respond while being appropriately secured. Azure Front Door provides different SKUs (pricing tiers) that meet these requirements. Let's briefly review the features and benefits of these SKUs so you can determine which option best suits your requirements.
@@ -150,7 +151,7 @@ Azure Front Door uses the same three-step process across all algorithms to deter
 
 If you have a single backend in your backend pool, you can choose to disable the health probes reducing the load on your application backend. Even if you have multiple backends in the backend pool but only one of them is in enabled state, you can disable health probes.
 
-## Secure Front Door with TSL/SSL
+## Secure Front Door with TLS/SSL
 
 Using the HTTPS protocol ensures sensitive data is delivered securely. When your web browser is connected to a web site via HTTPS, it validates the web site's security certificate and verifies that it is from a legitimate certificate authority. This process provides security and protects your web applications from attacks.
 

@@ -2,9 +2,11 @@
 uid: learn.wwl.load-balancing-https-traffic-azure.design-azure-application-gateway
 title: Design Azure Application Gateway
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design Azure Application Gateway
   description: "Design Azure Application Gateway"
-  ms.date: 11/25/2024
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
