@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-data-warehouse
 metadata:
   title: Get started with data warehouses in Microsoft Fabric
   description: "Understand the key components and design considerations for implementation of data warehouses in Microsoft Fabric."
-  ms.date: 11/10/2024
+  ms.date: 01/10/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module

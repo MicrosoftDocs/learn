@@ -28,6 +28,6 @@ Become familiar with the objective domains which are a comprehensive set of spec
 
 - Module 12: Caching and content delivery 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5andc]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0eb3ea60-312e-4ec5-97d0-674bff1a13ca]
 
 Remember that each module points back to the core theme of tools and services used to develop solutions for Microsoft Azure. Details for each module are included in the corresponding module best practice sections below. 

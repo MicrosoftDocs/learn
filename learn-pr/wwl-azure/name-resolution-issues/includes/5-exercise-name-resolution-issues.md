@@ -134,4 +134,4 @@ Optionally, you can test pinging the VMs, using their DNS names.
 
 In this demonstration you will see how to proactively troubleshoot Conditional Access policies using the What if tool in the Azure portal:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TYML]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=89995f75-c563-4a72-98f2-9bb11c610c5a]

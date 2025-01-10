@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQc9]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7fbff95a-7896-43ba-803e-b8e5ae66a26f]
 
 MSLE provides higher education institutions that offer accredited degree, diploma, certificate, or continuing education programs and some STEM-focused secondary schools with comprehensive resources to enable innovative technology education. Participating institutions and faculty gain access to Microsoft curriculum and teaching materials to easily offer in-demand content to students while providing opportunities to earn industry-recognized certifications.  
 

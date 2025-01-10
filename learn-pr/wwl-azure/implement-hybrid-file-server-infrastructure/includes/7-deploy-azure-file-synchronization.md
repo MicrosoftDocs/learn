@@ -2,7 +2,7 @@ In this demonstration, learn to:
 
 - Prepare for Azure File Sync.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CPMa]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2fd84341-f7b2-43da-ae5e-63bc78e0547d]
 
 ## Next steps
 

@@ -13,7 +13,7 @@ Watch this video to learn more.
 
 </br>
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3WHNE]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7fdb732c-b732-4186-a35f-af589e796164]
 
 ### Motivations
 

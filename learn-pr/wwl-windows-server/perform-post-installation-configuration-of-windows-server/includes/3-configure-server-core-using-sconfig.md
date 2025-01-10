@@ -40,7 +40,7 @@ The following video demonstrates how to implement complete post-installation con
 3. Reconfigure the date and time.
 4. Review the network settings.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Mfs4]
+ > [!VIDEO https://learn-video.azurefd.net/vod/player?id=262e15c4-a5c4-4eb9-a1c2-bbb03ba5bd25]
 
 ---
 

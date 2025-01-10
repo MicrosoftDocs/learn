@@ -4,7 +4,7 @@ The answer to this question will help you define the next moves to make when pla
 
 Watch this video to learn about motivations for moving to the cloud:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14BmT]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5bb9e600-d059-4b92-84ec-130e3a688785]
 
 ## Key Takeaways
 

@@ -14,7 +14,7 @@ This module consists of seven lessons:
 - Lesson 6 – Protect information in Microsoft Purview
 - Lesson 7 – Apply and manage sensitivity labels
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXmP5]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ef4e82f0-841d-4a9f-9d75-9b0dfabaf07e]  
 
 Module 1 Tips and Tricks
 

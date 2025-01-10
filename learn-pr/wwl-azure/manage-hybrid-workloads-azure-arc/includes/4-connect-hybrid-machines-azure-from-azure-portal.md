@@ -4,7 +4,7 @@ In this demonstration, you'll learn to:
  -  Install and validate the agent on Windows.
  -  Verify the connection with Azure Arc.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zf4p]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e374c5fb-485b-4616-acca-55c9cc99bce7]
 
 ## Next steps
 
