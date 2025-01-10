@@ -10,17 +10,17 @@ Harmful content has many negative effects. It damages trusted brands, discourage
 
 Azure AI Content Safety is designed to be used in applications and services to protect against harmful user-generated and AI-generated content.
 
-## Content Safety in Azure AI Studio
+## Content Safety in Azure AI Foundry
 
-Azure AI Content Safety Studio is available as part of [Azure AI Studio](https://ai.azure.com/explore/contentsafety), a unified platform that enables you to explore many different Azure AI services, including Content Safety.
+Azure AI Content Safety Studio is available as part of [Azure AI Foundry](https://ai.azure.com/explore/contentsafety), a unified platform that enables you to explore many different Azure AI services, including Content Safety.
 
-![Screenshot of Content Safety Studio in Azure AI Studio.](../media/ai-studio-content-safety.jpg)
+![Screenshot of Content Safety Studio in Azure AI Foundry.](../media/ai-studio-content-safety.jpg)
 
-From the [Azure AI Studio](https://ai.azure.com/) home page, scroll down to find Content Safety and then select **View all Content Safety capabilities**.
+From the [Azure AI Foundry](https://ai.azure.com/) home page, scroll down and select *Explore Azure AI Services*. From here, you can explore Content Safety by selecting **View all Content Safety capabilities**.
 
 Azure AI Content Safety Studio enables you to explore and test Content Safety features for yourself. Select the feature you want to try, and then select *Try it out*. You can then use the user interface to test samples or your own material. Select *View code* to generate sample code in C#, Java, or Python. You can then copy and paste the sample code and amend the variables to use your own data.  
 
 > [!NOTE]
-> You can access Azure AI Content Studio either through [Azure AI Studio](https://ai.azure.com/) or through [Content Safety Studio](https://contentsafety.cognitive.azure.com/).
+> You can access Azure AI Content Studio either through [Azure AI Foundry](https://ai.azure.com/) or through [Content Safety Studio](https://contentsafety.cognitive.azure.com/).
 
 For guided practice using Azure AI Content Studio, see [Moderate content and detect harm with Azure AI Content Safety Studio](/training/modules/moderate-content-detect-harm-azure-ai-content-safety-studio/). 
