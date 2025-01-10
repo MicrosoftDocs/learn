@@ -64,7 +64,7 @@ You can use the following steps to deploy ExpressRoute Global Reach.
 1. On the **ExpressRoute Global Reach** tab, in the **On-prem cloud connections** section, select **+ Add**.
 1. In the **On-prem cloud connections** window, provide information for circuit ID and Authorization key, and then select **Create**.
 
-    :::image type="content"  source="../media/3-add-global-reach-cloud-connection.png" alt-text="Screenshot of the On-prem cloud connections window in Azure VMware Solution."lightbox="../media/3-add-global-reach-cloud-connection.png:::
+    :::image type="content"  source="../media/3-add-global-reach-cloud-connection.png" alt-text="Screenshot of the On-prem cloud connections window in Azure VMware Solution."lightbox="../media/3-add-global-reach-cloud-connection.png":::
 
 1. Verify that the **State** of the connection displays the status as **Connected**.
 
