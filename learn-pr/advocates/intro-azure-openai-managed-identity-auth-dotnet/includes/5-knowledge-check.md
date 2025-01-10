@@ -1,1 +1,0 @@
-Knowledge check placeholder
