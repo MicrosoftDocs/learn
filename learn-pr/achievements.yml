@@ -3957,22 +3957,22 @@ achievements:
   title: Configure role-based access control
   summary: Learn how to use role-based access control (RBAC) to ensure resources are protected, but users can still access the resources they need.
   iconUrl: /training/achievements/roles-based-access-control.svg
-- uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365
+- uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365.badge
   type: badge
   title: Describe the insider risk capabilities in Microsoft Purview
   summary: Insider risks are a top concern for organizations. These risks can be challenging to identify and mitigate. Learn how Microsoft Purview enables organizations to identify, analyze, and remediate internal risks before they cause harm.
   iconUrl: /training/achievements/describe-insider-risk-capabilities-in-microsoft-365.svg
-- uid: learn.wwl.describe-ediscovery-capabilities-of-microsoft-365
+- uid: learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.badge
   type: badge
   title: Describe the eDiscovery and Audit capabilities in Microsoft Purview
   summary: Organizations may need to identify, collect, and/or audit information for legal, regulatory, or business reasons. Learn how the eDiscovery and audit capabilities of Microsoft Purview help organizations find relevant data quickly.
   iconUrl: /training/achievements/describe-the-ediscovery-capabilities-of-microsoft-365.svg
-- uid: learn.wwl.describe-compliance-management-capabilities-microsoft-365
+- uid: learn.wwl.describe-compliance-management-capabilities-microsoft-365.badge
   type: badge
   title: Describe the compliance management capabilities in Microsoft Purview
   summary: Explore the Microsoft Purview compliance portal, the portal for organizations to manage their compliance needs.  Learn about the Compliance Manager and compliance score, which can help organizations manage, simplify, and improve compliance across their organization.
   iconUrl: /training/achievements/describe-compliance-management-capabilities-microsoft-365.svg
-- uid: learn.wwl.describe-information-protection-governance-capabilities-microsoft-365
+- uid: learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.badge
   type: badge
   title: Describe information protection, data lifecycle management, and data governance capabilities in Microsoft Purview
   summary: Microsoft Purview is a comprehensive set of solutions that help you govern, protect, and manage your entire data estate, providing unified data governance and risk management for your organization.

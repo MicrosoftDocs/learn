@@ -4,7 +4,7 @@ AZ-900: Module 3 Management and governance
 
 As you are preparing to teach this module, get familiar with what the students will learn during the module. In this module, students will learn about the six factors that affect Azure costs, understand each factor, and why they affect the cost. Students will also become familiar with the recommendations for monitoring tools, the tools that monitor Azure resources and provide recommendations on how to better improve a Cloud environment.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dSQr]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e3bb06ef-9f9b-4cf7-8739-935a1873a9d9]
 
 Module 3 Tips and Tricks
 

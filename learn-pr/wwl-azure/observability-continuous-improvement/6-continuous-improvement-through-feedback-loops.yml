@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.observability-continuous-improvement.continuous-improvement-through-feedback-loops
+title: Continuous Improvement through Feedback Loops
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Continuous Improvement through Feedback Loops
+  description: "Continuous Improvement through Feedback Loops"
+  ms.date: 01/09/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-continuous-improvement-through-feedback-loops.md)]

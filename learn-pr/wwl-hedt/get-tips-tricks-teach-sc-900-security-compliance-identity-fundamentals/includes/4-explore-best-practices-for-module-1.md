@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Describe security and compliance concepts
 - Lesson 2 – Describe identity concepts
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXa3b]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=72650824-81ca-453a-b846-a4ffedb2d1d7]  
 
 Module 1 Tips and tricks
 

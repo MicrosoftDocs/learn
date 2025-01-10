@@ -14,7 +14,7 @@ Watch this video to learn more.
 
 </br>
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3WHNC]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=04f1e274-fc63-448d-b9fc-0969593ae04e]
 
 ## Cloud governance
 

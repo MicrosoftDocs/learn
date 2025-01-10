@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.observability-continuous-improvement.importance-observability-modern-platforms
+title: The Importance of Observability in Modern Platforms
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: The Importance of Observability in Modern Platforms
+  description: "The Importance of Observability in Modern Platforms"
+  ms.date: 01/09/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-importance-observability-modern-platforms.md)]

@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Compare storage for file shares and blob data
   description: "Compare storage for file shares and blob data"
-  ms.date: 12/23/2024
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
