@@ -1,16 +1,16 @@
-After configuring both sites with VMware Site Recovery Manage (SRM), you should proceed with installing the VMware vSphere Replication solution. VMware vSphere Replication is an integrated component of VMware vSphere, and uses a VM replication appliance at the hypervisor level.
+After configuring both sites with VMware Site Recovery Manage (SRM), you should proceed with installing the VMware vSphere Replication solution. VMware vSphere Replication is an integrated component of VMware vSphere, and uses a virtual machine (VM) replication appliance at the hypervisor level.
 
 ## vSphere Replication appliance components
 
-vSphere Replication is an Azure VMware Solution private-cloud add-on that you can use to help protect your VMs from partial or complete site failure. Any changes to the primary site VM are captured by vSphere Replication and applied to the VM’s offline disk copies (replicas).
+vSphere Replication is an Azure VMware Solution private cloud add-on that you can use to help protect your VMs from partial or complete site failure. Any changes to the primary site VM are captured by vSphere Replication and applied to the VM offline disk copies (replicas).
 
 The vSphere Replication appliance provides the following components for the protection scenarios:
 
-- A SRM user interface for working with vSphere Replication
-- A plug-in to the vSphere web client and vSphere client that provides a user interface for vSphere Replication health status
-- A VMware standard embedded PostgreSQL database that stores the replication configuration
-- A vSphere Replication management server that manages replications
-- A vSphere Replication server that provides the core of the vSphere Replication infrastructure
+- A VMware SRM user interface for working with vSphere Replication.
+- A plug-in to the vSphere web client and vSphere client that provides a user interface for vSphere Replication health status.
+- A VMware standard embedded PostgreSQL database that stores the replication configuration.
+- A vSphere Replication management server that manages replications.
+- A vSphere Replication server that provides the core of the vSphere Replication infrastructure.
 
 ## Install vSphere Replication appliance
 
@@ -18,10 +18,11 @@ Use the following procedure to enable the add-on in Azure VMware Solution:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 1. Search for and select your Azure VMware Solution.
-1. From the navigation menu in the **Manage** section, select **Add-ons**.
-1. On the navigation pane, under **Disaster Recovery**, select **Start**.
-1. Go to **Setup replication**.
-1. From the drop-down menu, select **vSphere Replication**.
+1. From the navigation menu, under **Manage**, select **Add-ons**.
+1. Select the **Disaster Recovery** tab, then select **Start**.
+1. Under **Feedback**, from the drop-down list, select **VMware Site Recovery Manager (SRM)**.
+1. Under **License key**, enter your license key and select **Save**.
+1. Under **Setup replication**, from the **Replication using** drop-down menu, select **vSphere Replication**.
 1. Configure the number of vSphere servers, then select **Install**.
 
 :::image type="content"  source="../media/4-avsukwest-add-ons.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution. The vSphere Replication option is selected under Setup replication.":::
