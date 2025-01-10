@@ -12,7 +12,7 @@ Azure AI Content Safety is designed to be used in applications and services to p
 
 ## Content Safety in Azure AI Foundry
 
-Azure AI Content Safety Studio is available as part of [Azure AI Foundry](https://ai.azure.com/explore/contentsafety), a unified platform that enables you to explore many different Azure AI services, including Content Safety.
+Azure AI Content Safety is available as part of [Azure AI Foundry](https://ai.azure.com/explore/contentsafety), a unified platform that enables you to explore many different Azure AI services, including Content Safety.
 
 ![Screenshot of Content Safety Studio in Azure AI Foundry.](../media/ai-studio-content-safety.jpg)
 
