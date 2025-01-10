@@ -6,7 +6,7 @@ In this demonstration, you'll learn to:
 - Download flow log.
 - View flow log.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AP80] 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=96ac360f-d4dd-4fb9-8b96-9ff9c71bbd87] 
 
 ## Next steps
 

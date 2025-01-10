@@ -10,7 +10,7 @@ This module consists of one lesson:
 
 - Lesson 1 – Discover Azure message queues 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aCtj]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=52062e9e-963f-4fec-af8f-8c800b7bc2c5]
 
 Module 10 Tips and Tricks 
 

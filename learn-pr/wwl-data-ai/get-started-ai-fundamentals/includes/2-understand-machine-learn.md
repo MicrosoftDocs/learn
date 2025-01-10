@@ -6,7 +6,7 @@ Sustainable farming techniques are essential to maximize food production while p
 
 View the following video to learn more.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4voJG]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c090b7e4-4daa-4bdf-8d96-0aa538eb72cb]
 
 ## How machine learning works
 

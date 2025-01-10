@@ -1,6 +1,6 @@
 Providing technical skills in data, security, AI, and cloud technologies will help ensure your students are well prepared for today’s job opportunities. Earning Microsoft Certifications will help students stand out among other job applicants and demonstrate their technical skills. Offering Microsoft technical skills and certification exams will also set your institution apart.   
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TYe7] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c1a932f8-2eda-47ef-8c8b-29e258146564] 
 
 How you are going to teach those skills and certify your students is important to think about early in your planning. Three common types of curriculum adoption include: 
 

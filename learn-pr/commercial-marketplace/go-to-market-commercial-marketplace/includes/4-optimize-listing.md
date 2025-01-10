@@ -4,7 +4,7 @@ In this unit, we'll look at some best practices to create your online store list
 
 ## Creating a compelling listing
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IFjS]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3c89d11c-6c18-4a48-bb7a-4791dd89aafa]
 
 Your marketplace listing in the online stores has a lot of useful information for buyers. When you publish your offer in Partner Center, you'll be required to provide certain information that will appear on your product listing in Azure Marketplace and Microsoft AppSource.
 

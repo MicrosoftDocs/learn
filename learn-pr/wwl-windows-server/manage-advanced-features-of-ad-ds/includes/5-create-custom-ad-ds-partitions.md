@@ -29,7 +29,7 @@ The following video demonstrates how to create a custom AD DS partition. The mai
 3.  Verify that a custom AD DS partition exists. Use command-line tools to verify existence of a custom application partition.
 4.  Delete a custom AD DS partition. Use command-line tools to delete a custom application partition.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4McIf]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fdf5d007-2df8-4587-80cb-7e0c1782f3eb]
 
 ---
 

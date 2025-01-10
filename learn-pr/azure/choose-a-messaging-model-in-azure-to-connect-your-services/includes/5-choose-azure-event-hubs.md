@@ -8,7 +8,7 @@ You want to use historic sensor data to find patterns in the sensor readings tha
 
 [Event Hubs](https://azure.microsoft.com/services/event-hubs/) is an intermediary for the publish-subscribe communication pattern. Unlike [Event Grid](https://azure.microsoft.com/services/event-grid/), however, it's optimized for extremely high throughput, a large number of publishers, security, and resiliency.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuat]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=793a9396-f674-4df7-9395-a1de02153b95]
 
 Whereas Event Grid fits perfectly into the publish-subscribe pattern in that it simply manages subscriptions and routes communications to those subscribers, Event Hubs performs quite a few extra services. These extra services make it look more like a service bus or message queue than a simple event broadcaster.
 

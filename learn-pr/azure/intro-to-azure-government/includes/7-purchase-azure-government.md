@@ -2,7 +2,7 @@ Azure Government is available to US federal, state, local, or tribal government 
 
 ### Azure Government onboarding overview
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2FKJG]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a1782643-65a6-4add-8565-c1a38a67bb13]
 
 ## Eligibility criteria
 

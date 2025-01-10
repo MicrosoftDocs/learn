@@ -57,7 +57,7 @@ The main steps in the process are:
 > [!IMPORTANT]
 > When using the `New-VM` Windows PowerShell cmdlet to create a new VM, Generation 2 VMs do not support Floppy, LegacyNetworkAdapter, or IDE. Using these values in a Windows PowerShell cmdlet causes an error.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MC7h]
+ > [!VIDEO https://learn-video.azurefd.net/vod/player?id=d0f2eb1e-872a-4303-8b4f-52e4acdb70c9]
 
 ---
 

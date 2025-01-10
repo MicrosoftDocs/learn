@@ -1,6 +1,6 @@
 The following video introduces the different services that should be available with Azure Storage.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MAbS]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=477e6b92-9bc6-425d-90fe-2468ab8ab0f1]
 
 A storage account provides a unique namespace for your Azure Storage data that's accessible from anywhere in the world over HTTP or HTTPS. Data in this account is secure, highly available, durable, and massively scalable.
 

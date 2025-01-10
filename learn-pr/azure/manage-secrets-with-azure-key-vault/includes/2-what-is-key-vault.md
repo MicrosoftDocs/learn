@@ -1,6 +1,6 @@
 Azure Key Vault is a *secret store*: a centralized cloud service for storing app secrets, such as configuration values like passwords and connection strings that must always remain secure. Key Vault helps you control your apps' secrets by keeping them in a single central location. It provides secure access, permissions control, and access logging.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHck]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0bfd13a0-a16b-4191-9c56-fcfb3bd63247]
 
 The main benefits of using Key Vault are:
 

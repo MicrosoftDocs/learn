@@ -6,7 +6,7 @@ Traditional machine learning model development is resource-intensive, requiring 
 
 - [Azure Free Trial Account](https://azure.microsoft.com/pricing/purchase-options/azure-account?icid=azurefreeaccount)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Xc9t]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=eddb2bd4-407e-470d-8fe9-6e60585b9910]
 
 ## Scenario: Use AutoML to train a labeled dataset and develop a production model
 
