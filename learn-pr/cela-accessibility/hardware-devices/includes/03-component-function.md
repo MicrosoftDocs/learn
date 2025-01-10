@@ -14,7 +14,7 @@ Consider how this experience might differ for a player who can't see these label
 
 The following video discusses these considerations and how to address them through accessible supports in more detail.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPdrJ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d8a21912-8265-478d-b452-1e4724ff6f14]
 
 ## Indicate device status through multiple sensory channels
 
@@ -28,4 +28,4 @@ These status indicators often use visual cues to communicate this information to
 
 The following video introduces these barriers in more detail. It presents best practices on how this information can be provided to more players through accessible channels.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPjko]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1725f39d-39d0-4edf-8eda-d0b7831a251e]

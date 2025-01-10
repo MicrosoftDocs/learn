@@ -2,7 +2,7 @@ As a faculty member teaching this course and setting students up for success, yo
 
 Practice makes perfect! 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50LQx] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=aee67166-0ac1-45b2-a370-6b31e78a7a40] 
 
 To prepare for the exam, students can access free Fundamentals practice tests and certification exam vouchers by visiting: 
 

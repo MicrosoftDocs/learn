@@ -94,7 +94,7 @@ The main steps in the process are:
 1. Configure failover and failback settings of the newly-created cluster role by using **Failover Cluster Manager**.
 1. Perform failover and failback of the newly-created cluster role by using **Failover Cluster Manager**.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MHJL]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=97c7cdd9-dde4-42be-90cc-5b370e2b9857]
 
 ---
 

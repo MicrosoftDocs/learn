@@ -10,6 +10,7 @@ metadata:
   author: dbradish-microsoft
   ms.author: dbradish
   ms.topic: unit
+  ms.collection: ce-skilling-ai-copilot
   ms.custom:
     - devx-track-azurecli
 durationInMinutes: 5

@@ -25,7 +25,7 @@ All traffic to and from the internet is denied by default. Traffic is only allow
 > [!NOTE]
 > Azure Firewall works not only for traffic to and from the internet, but also internally. Internal traffic filtering includes spoke-to-spoke traffic and hybrid cloud traffic between your on-premises network and your Azure virtual network.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCoAv]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=84af3f87-d43d-42bd-b794-7bcb658abf81]
 
 #### Key features of Azure Firewall Standard
 
