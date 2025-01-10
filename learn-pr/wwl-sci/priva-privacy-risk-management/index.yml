@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.priva-privacy-risk-management
+metadata:
+  title: Understand Microsoft Priva
+  description: "Understand Microsoft Priva."
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Understand Microsoft Priva
+summary: Understand how Microsoft Priva helps organizations manage privacy risks, streamline data handling, and comply with privacy requirements. Explore tools like Privacy Risk Management, Consent Management, and Subject Rights Requests, and understand how to configure settings and assign roles to ensure secure and effective use of Priva.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the purpose and key principles of Microsoft Priva.
+  - Navigate the Priva portal and locate core features.
+  - Explain the functionality of Priva solutions, including Privacy Risk Management and Subject Rights Requests.
+  - Configure settings like anonymization and data retention for privacy tools.
+  - Understand how Priva supports compliance and promotes responsible data handling practices.
+prerequisites: |
+  - Familiarity with Microsoft 365 environments.
+  - Basic understanding of privacy management and compliance requirements.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- privacy-manager
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.priva-privacy-risk-management.introduction
+
+- learn.wwl.priva-privacy-risk-management.address-privacy-challenges
+- learn.wwl.priva-privacy-risk-management.priva-overview
+- learn.wwl.priva-privacy-risk-management.navigate-priva-portal
+- learn.wwl.priva-privacy-risk-management.configure-priva-settings
+- learn.wwl.priva-privacy-risk-management.knowledge-check
+- learn.wwl.priva-privacy-risk-management.summary
+
+badge:
+  uid: learn.wwl.priva-privacy-risk-management.badge
