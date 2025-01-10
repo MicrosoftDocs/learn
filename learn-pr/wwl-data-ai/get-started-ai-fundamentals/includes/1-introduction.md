@@ -2,7 +2,7 @@ AI enables us to build amazing software that can improve health care, enable peo
 
 Watch the following video to see some ways that AI can be used.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vyDl]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3a307b1e-dd44-4a5d-b5bd-0ac67d03385c]
 
 ## What is AI?
 

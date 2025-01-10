@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.observability-continuous-improvement.knowledge-check
+title: Knowledge Check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 01/09/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What are the three pillars of observability in platform engineering?
+      choices:
+        - content: Metrics, Logs, and Traces.
+          isCorrect: true
+          explanation: Correct. Metrics, logs, and traces are the three pillars of observability, providing quantitative data, detailed event information, and request flow tracking respectively.
+        - content: Metrics, Logs, and Alerts.
+          isCorrect: false
+          explanation: Incorrect. While alerts are important, they aren't considered a pillar of observability. The pillars are metrics, logs, and traces.
+        - content: Metrics, Traces, and Errors.
+          isCorrect: false
+          explanation: Incorrect. Errors are part of the information that can be obtained from the pillars of observability, but they aren't a pillar themselves. The pillars are metrics, logs, and traces.
+    - content: What is the primary purpose of integrating observability into the architecture of a platform?
+      choices:
+        - content: To reduce the need for manual monitoring and troubleshooting.
+          isCorrect: false
+          explanation: Incorrect. While observability can reduce manual efforts, its primary purpose isn't to eliminate them entirely.
+        - content: To proactively monitor every layer of the system, quickly detecting, diagnosing, and resolving issues.
+          isCorrect: true
+          explanation: Correct. Observability allows platform teams to monitor all layers of the system, enhancing reliability and collaboration.
+        - content: To replace traditional logging and monitoring tools.
+          isCorrect: false
+          explanation: Incorrect. Observability complements, rather than replaces, traditional logging and monitoring tools.
+    - content: What is the role of Azure Monitor in maintaining platform health?
+      choices:
+        - content: It focuses on user-facing performance and system reliability metrics.
+          isCorrect: false
+          explanation: Incorrect. Azure Monitor is used for gathering infrastructure metrics, not user-facing performance metrics.
+        - content: It simulates user interactions with the platform to identify performance issues.
+          isCorrect: false
+          explanation: Incorrect. Azure Monitor doesn't simulate user interactions, it provides a unified view of infrastructure health.
+        - content: It provides a unified view of infrastructure health by gathering key metrics from various resources.
+          isCorrect: true
+          explanation: Correct. Azure Monitor gathers infrastructure metrics from resources like virtual machines, databases, storage, and network resources, providing a real-time view of the system’s capacity and health.
+    - content: What is the role of anomaly detection tools in automating incident detection?
+      choices:
+        - content: They're used to set up alerting and thresholds for system performance.
+          isCorrect: false
+          explanation: Incorrect. While alerting and thresholds are part of incident detection, they aren't specifically related to anomaly detection tools.
+        - content: They analyze historical data to establish normal behavior patterns and can automatically identify when the platform behaves abnormally.
+          isCorrect: true
+          explanation: Correct. Anomaly detection tools use AI and ML to analyze historical data and identify abnormal behavior, enhancing incident detection.
+        - content: They're used to manually monitor system performance and alert the platform team when issues arise.
+          isCorrect: false
+          explanation: Incorrect. Anomaly detection tools don't require manual monitoring, they automatically analyze historical data to identify abnormal behavior.
+    - content: What is the role of feedback loops in platform engineering?
+      choices:
+        - content: Feedback loops play a critical role in continuous improvement by helping teams learn from their experiences and make data-driven decisions.
+          isCorrect: true
+          explanation: Correct. Feedback loops in platform engineering help in learning from experiences and making improvements based on data-driven decisions.
+        - content: Feedback loops are used to create a barrier between developers and platform engineers.
+          isCorrect: false
+          explanation: Incorrect. Feedback loops don't create barriers, but rather foster communication and continuous improvement.
+        - content: Feedback loops are used only for identifying system failures and bugs.
+          isCorrect: false
+          explanation: Incorrect. While feedback loops can help identify system issues, they also drive continuous improvement by informing platform enhancements.

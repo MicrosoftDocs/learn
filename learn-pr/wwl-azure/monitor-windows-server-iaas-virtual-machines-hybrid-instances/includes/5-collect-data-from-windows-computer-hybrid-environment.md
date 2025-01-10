@@ -5,7 +5,7 @@ In this demonstration, learn to:
 - Collect event and performance data.
 - View collected data.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zf4r]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d954bd0e-3ca8-43be-853d-6c13ba2a59a5]
 
 ## Next steps
 
