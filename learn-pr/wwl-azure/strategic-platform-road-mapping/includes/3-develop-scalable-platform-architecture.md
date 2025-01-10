@@ -1,12 +1,12 @@
 Building a scalable platform is critical for ensuring that an organization can grow without compromising the performance, reliability, or flexibility of its systems. As the organization expands, it's essential that the platform can handle increasing demand, new feature requirements, and more complex workflows. The platform must not only support more users but also be flexible enough to adapt to new technologies and features. By focusing on capacity planning, platform engineers are able to ensure that the organization can continue to innovate while meeting evolving expectations of its users.
 
-### Capacity Planning and Estimation
+### Capacity planning and estimation
 
 Capacity planning is essential for forecasting future resource needs and ensuring that the platform can handle projected growth without compromising performance or stability. Capacity planning involves analyzing historical data, identifying usage patterns, and estimating the infrastructure needs for the future. Tools like cloud cost calculators, load testing tools, and monitoring platforms are key for gathering this data and making informed decisions about resource provisioning.
 
 Estimating capacity needs also involves understanding both short-term and long-term growth patterns. By using automated scaling tools and defining auto-scaling policies, the platform can adjust resources dynamically in response to changes in demand, ensuring optimal performance without the need for manual intervention. Proper capacity planning allows the platform to handle growth smoothly, ensuring that resources are allocated efficiently and that performance doesn't degrade during peak usage periods.
 
-### Cost Optimization
+### Cost optimization
 
 To effectively manage costs in platform engineering, it's essential to identify workload owners and track resource usage. This can be done by using metadata, such as AKS labels, Azure Resource Manager tags, and deployment environments, to associate resources with specific owners. Regular reporting can help track orphaned resources, and cost management tools like Microsoft Cost Management can help allocate costs to individual teams. For shared resources, costs can be divided evenly or based on usage, with tools like OpenCost or Kubecost offering insights into consumption.
 
