@@ -25,7 +25,7 @@ Use the following procedure to enable the add-on in Azure VMware Solution:
 1. Under **Setup replication**, from the **Replication using** drop-down menu, select **vSphere Replication**.
 1. Configure the number of vSphere servers, then select **Install**.
 
-:::image type="content"  source="../media/4-avsukwest-add-ons.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution. The vSphere Replication option is selected under Setup replication.":::
+:::image type="content"  source="../media/4-vsphere-replication-install-add-ons.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution. The vSphere Replication option is selected under Setup replication."lightbox="../media/4-vsphere-replication-install-add-ons.png":::
 
 After you set up the replication infrastructure, you can select the VMs to be replicated at a different RPO. You can enable the multiple point-in-time retention policy to store more than one instance of the replicated VM. After recovery, the retained instances are available as snapshots of the recovered VM.
 
