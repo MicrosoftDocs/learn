@@ -59,7 +59,7 @@ Deploying environments as a service is designed to enable secure, standardized, 
 
 With ADE, platform engineers and operations teams collaboratively build and maintain a catalog of templates for specific environment types. These templates, enriched with pre-configured settings, integrate managed identities and control access based on roles. Developers can then use CI/CD pipelines to provision infrastructure through tools like the Azure CLI or Azure Developer CLI, without needing direct access to sensitive credentials or the underlying subscription. This separation ensures compliance and security while preserving developer productivity.
 
-:::image type="content" source="../media/azure-deployment-envs-f5fbc834.png" alt-text="Diagram showing the Platform Engineer workflow with Dev Center Catalog, Environment type mappings, portal and automated deployment pipelines.":::
+:::image type="content" source="../media/azure-deployment-environments-f5fbc834.png" alt-text="Diagram showing the Platform Engineer workflow with Dev Center Catalog, Environment type mappings, portal and automated deployment pipelines.":::
 
 Even if ADE isn’t in use, the same principles can be applied more broadly, with infrastructure as code (IaC) content sourced from secure, immutable locations and secret management automated and isolated. By enabling these practices, platform engineering empowers teams to deploy consistent environments while maintaining organizational governance and operational efficiency.
 

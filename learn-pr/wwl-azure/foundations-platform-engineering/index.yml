@@ -19,7 +19,7 @@ abstract: |
   -   Learn how to design and build integrated platforms that optimize the developer experience and streamline development efforts.
   -   Explore the role of platform engineering in driving digital transformation within an enterprise.
   -   Recognize the strategic value of platform engineering as the foundation for both technical success and alignment with broader business goals.
-  -   Identify key stakeholders in platform engineering and understand their distinct expectations and requirements
+  -   Identify key stakeholders in platform engineering and understand their distinct expectations and requirements.
 prerequisites: |
   -   Understanding of what DevOps is and its concepts.
   -   Beneficial to have experience in an organization that delivers software.
