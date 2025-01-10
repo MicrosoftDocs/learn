@@ -40,8 +40,10 @@ Enable anonymization to mask user identities in Privacy Risk Management. This se
 
 To configure anonymization:
 
-1. Navigate to the Priva **Settings** page.
-1. Toggle anonymization on or off.
+1. From the [Microsoft Priva portal](https://purview.microsoft.com/priva), navigate to the **Settings** card, then select **Privacy Risk Management**.
+1. On the **Microsoft Priva settings** page, selected the desired option for **Anonymization**.
+
+:::image type="content" source="../media/priva-anonymization.png" alt-text="Screenshot showing the anonymization options in the Microsoft Priva settings." lightbox=" ../media/priva-anonymization.png":::
 
 ### User notification emails
 
@@ -49,9 +51,9 @@ Privacy Risk Management policies can send notification emails to users when a po
 
 To manage email notifications:
 
-1. Navigate to **User notification emails** in **Settings**.
-1. Enable or disable email notifications globally or on a per-policy basis.
-1. Specify an internal email account as the sender.
+1. From the Microsoft Priva settings page, navigate to **User notification emails**.
+1. Select or deselect the option to **Send user notification emails to users**.
+1. Specify an internal email account as the sender by selecting the **Customize sender alias** option.
 
 Get full details on how to set up and customize user notification emails:
 
@@ -64,19 +66,45 @@ Integrate Microsoft Teams with Subject Rights Requests to streamline collaborati
 
 To enable Teams collaboration:
 
-1. Navigate to **Settings** in the Priva portal.
-1. Select the checkbox to enable Teams capabilities.
+1. From the Microsoft Priva settings page, navigate to **Teams collaboration**.
+1. Select the checkbox for **Turn on Microsoft Teams capabilities for subject rights requests**.
 
 ### Data matching
 
-Data matching helps identify personal data related to data subjects by using schemas and attributes. This feature is especially useful for Subject Rights Requests.
+The **Data matching** section in Microsoft Priva includes three tabs that allow you to define, manage, and upload personal data schemas and sensitive information types for Subject Rights Requests.
 
-To configure data matching:
+#### Personal data schema
 
-1. Navigate to **Personal data upload** in **Settings**.
-1. Upload data schemas or match files from Azure.
+A personal data schema describes the attributes of your data subjects. This schema helps identify and categorize personal data during Subject Rights Requests.
 
-For more information, see [Data matching for Subject Rights Requests](/privacy/priva/subject-rights-requests-data-match?azure-portal=true).
+To configure a personal data schema:
+
+1. Navigate to **Data matching** in **Microsoft Priva settings**.
+1. Select the **Personal data schema** tab.
+1. Select **Add** to upload your schema file in XML format and associated rule package.
+   - Find an example schema and learn more about creating a schema.
+
+#### Sensitive info types
+
+The **Sensitive info types** tab enables you to define custom types that classify sensitive data based on exact data values rather than generic patterns. These types are used across compliance solutions to ensure precise detection of sensitive information.
+
+To create sensitive info types:
+
+1. Set up a personal data match (PDM) schema.
+1. Define the PDM info type based on this schema.
+1. Use this info type in compliance solutions like data classification and privacy risk management.
+
+#### Personal data upload
+
+The **Personal data upload** tab allows you to provide personal data that matches the schema defined in the Personal data schema tab. This data can be uploaded as a file or sourced directly from Azure.
+
+To upload personal data:
+
+1. Select the **Personal data upload** tab.
+1. Choose to upload your file manually or import data from Azure.
+1. Follow guidelines on uploading personal data.
+
+:::image type="content" source="../media/priva-data-matching.png" alt-text="Screenshot showing the data matching options in the Microsoft Priva settings." lightbox=" ../media/priva-data-matching.png":::
 
 ### Data retention periods
 
@@ -84,7 +112,7 @@ Set data retention periods for Subject Rights Requests to determine how long col
 
 To configure data retention:
 
-1. Open the **Settings** page.
+1. Navigate to **Data retention periods** in **Microsoft Priva settings**.
 1. Specify your preferred retention period.
 
 ### Data review tags
@@ -93,7 +121,7 @@ Manage data review tags to mark content items retrieved during Subject Rights Re
 
 To edit tags:
 
-1. Go to **Data review tags** in **Settings**.
+1. Navigate to **Data review tags** in **Microsoft Priva settings**.
 1. Select the tag to edit and update its name or description.
 1. Save your changes.
 
