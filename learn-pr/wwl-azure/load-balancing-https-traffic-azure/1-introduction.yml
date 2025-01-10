@@ -2,9 +2,11 @@
 uid: learn.wwl.load-balancing-https-traffic-azure.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 11/25/2024
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit

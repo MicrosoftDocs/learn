@@ -2,7 +2,7 @@ Access to groups and applications for employees and guests changes over time. To
 
 **Watch this video to learn more about how to deploy and create access reviews.**
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MAkF]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a19daf17-4ff4-47fa-896a-275b878fe9cf]
 
 ## Prerequisites
 

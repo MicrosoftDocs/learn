@@ -2,7 +2,7 @@ In this demonstration, learn how to:
 
 - Manage costs in Azure
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zf4q]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=1e9d5525-b58f-44d9-937b-44525defa7f7]
 
 ## Next steps
 

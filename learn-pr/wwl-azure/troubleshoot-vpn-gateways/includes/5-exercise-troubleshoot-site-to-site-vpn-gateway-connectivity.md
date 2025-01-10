@@ -177,4 +177,4 @@ You'll now check the address spaces don't overlap for the two virtual networks.
 
 In this demonstration you will see how to proactively troubleshoot Conditional Access policies using the What if tool in the Azure portal:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Ubff]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=55a46c8a-c366-4f38-be07-35c67d2ea97e]

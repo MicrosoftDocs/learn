@@ -110,4 +110,4 @@ The following video demonstrates how to manage objects in AD DS by using Active 
 6. Open the new computer object and review its properties, including its Extensions.
 7. Review the Windows PowerShell history and examine the `New-ADComputer` command.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MjvF]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=caf2f3f8-4a16-471f-80e3-aec1f3016fd3]

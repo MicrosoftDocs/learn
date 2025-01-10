@@ -12,7 +12,7 @@ This module consists of five lessons:
 
 **Lesson 5** – Design an enterprise governance strategy 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50LQ6] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a2d4b08a-2f60-4046-ba5e-1332c186fc5d] 
 
 ### Module 1 Tips and Tricks 
 

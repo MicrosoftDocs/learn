@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Explore Dynamics 365 Field Service
 - Lesson 2 – Describe the scheduling process
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dXUM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=17af6847-c3ff-4577-b3fb-c7f5707c2ad2]
 
 Module 5 Tips and Tricks
 

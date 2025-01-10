@@ -16,7 +16,7 @@ This module consists of the following areas of focus:
 - Workspaces 
 - Sharing and managing Power BI assets 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5anzC]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f33aad69-8f3e-4e20-879b-d4bd0e8ab0a8]
 
 Module 10 Tips and Tricks 
 
