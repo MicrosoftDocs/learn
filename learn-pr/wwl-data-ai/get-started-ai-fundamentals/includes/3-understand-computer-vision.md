@@ -4,7 +4,7 @@ The **Seeing AI** app is a great example of the power of computer vision. Design
 
 View the following video to learn more about Seeing AI.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vC2Q]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fd441a16-d288-47ec-abda-5c35b4ec709b]
 
 To find out more, check out the [Seeing AI web page](https://www.microsoft.com/ai/seeing-ai).
 

@@ -26,7 +26,7 @@ The NoSQL API for Azure Cosmos DB stores individual documents in JSON format as 
 
 ## Partitioning & Partition Keys
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OAlA]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8035d1e3-ff9c-4f26-96c6-1782b8274676]
 
 Every Azure Cosmos DB for NoSQL container is required to specify a **partition key path** that is used to distribute data for scale out. Behind the scenes, Azure Cosmos DB for NoSQL uses this path to logically partition data using **partition key values**. For example, consider the following JSON document:
 

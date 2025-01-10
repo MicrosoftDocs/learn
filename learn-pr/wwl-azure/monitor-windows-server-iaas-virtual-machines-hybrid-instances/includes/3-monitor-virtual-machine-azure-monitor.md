@@ -4,7 +4,7 @@ In this demonstration, learn to:
 - Configure a workspace.
 - View collected data.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zwXy]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=decd510d-9206-4ec6-8640-ae0d740bbcee]
 
 ## Next steps
 

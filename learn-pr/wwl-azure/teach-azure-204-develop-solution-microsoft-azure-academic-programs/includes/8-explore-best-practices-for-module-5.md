@@ -14,7 +14,7 @@ This module consists of four lessons:
 - Lesson 3 – Manage container images in Azure Container Registry 
 - Lesson 4 – Run container images in Azure Container Instances 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aHD8]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d588a344-0a60-4b7c-9154-e9c95d4ced16]
 
 Module 5 Tips and Tricks 
 

@@ -10,7 +10,7 @@ Another example is Microsoft's implementation of [Responsible AI with the Face s
 
 For more details about considerations for fairness, watch the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vqfa]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b596cc09-78ec-4f24-8dc3-88781aa3c060]
 
 ## Reliability and safety
 
@@ -20,7 +20,7 @@ AI-based software application development must be subjected to rigorous testing 
 
 For more information about considerations for reliability and safety, watch the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vvIl]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ff42dea9-84f2-42a5-8d4f-d346a4524c9f]
 
 ## Privacy and security
 
@@ -28,7 +28,7 @@ AI systems should be secure and respect privacy. The machine learning models on 
 
 For more details about considerations for privacy and security, watch the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4voJF]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=64960a58-4a26-489d-9a0a-b2b882ab8690]
 
 ## Inclusiveness
 
@@ -36,7 +36,7 @@ AI systems should empower everyone and engage people. AI should bring benefits t
 
 For more details about considerations for inclusiveness, watch the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vl9v]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d6ebe62d-5908-44ee-a0f1-238f7412fe2e]
 
 ## Transparency
 
@@ -44,7 +44,7 @@ AI systems should be understandable. Users should be made fully aware of the pur
 
 For more details about considerations for transparency, watch the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vqfb]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3b1ca304-459b-4324-aac2-f3d184e807b3]
 
 ## Accountability
 
@@ -52,7 +52,7 @@ People should be accountable for AI systems. Designers and developers of AI-base
 
 For more details about considerations for accountability, watch the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vvIk]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=616eb792-f9dc-4def-b3a4-92139e952081]
 
 The principles of responsible AI can help you understand some of the challenges facing developers as they try to create ethical AI solutions. 
 
