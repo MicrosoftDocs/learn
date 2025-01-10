@@ -8,4 +8,4 @@ Outliers are values that are unusually high or low compared to the other values 
 
 In this video, you'll see how a dataset can be filtered to answer a question, and how columns can be sorted to discover the highest and lowest values within a range:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TYJa]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d93ab60c-9d59-4a1e-80fb-eca80b33b68f]

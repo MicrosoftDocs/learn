@@ -10,4 +10,4 @@ It's important that you understand the data in your dataset before analyzing it.
 
 In this video, you'll see an example of a dataset and how the different types of date, string, and numeric fields combine into rows and columns. You'll learn how analysis can be done on a dataset to understand patterns within the data:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U38r]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=032a24f6-573c-45c3-b93c-35ecd04180c2]
