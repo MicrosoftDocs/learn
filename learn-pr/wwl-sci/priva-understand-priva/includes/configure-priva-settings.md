@@ -40,7 +40,7 @@ Enable anonymization to mask user identities in Privacy Risk Management. This se
 
 To configure anonymization:
 
-1. From the [Microsoft Priva portal](https://purview.microsoft.com/priva), navigate to the **Settings** card, then select **Privacy Risk Management**.
+1. From the [Microsoft Priva portal](https://purview.microsoft.com/priva?azure-portal=true), navigate to the **Settings** card, then select **Privacy Risk Management**.
 1. On the **Microsoft Priva settings** page, selected the desired option for **Anonymization**.
 
 :::image type="content" source="../media/priva-anonymization.png" alt-text="Screenshot showing the anonymization options in the Microsoft Priva settings." lightbox=" ../media/priva-anonymization.png":::
