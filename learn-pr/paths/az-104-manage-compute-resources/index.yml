@@ -9,10 +9,10 @@ metadata:
   ms.topic: learning-path
 title: 'AZ-104: Deploy and manage Azure compute resources'
 prerequisites: |
-  -   [Microsoft Azure Fundamentals: Describe cloud concepts](https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
-  -   [Azure Fundamentals: Describe Azure architecture and services](https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/)
-  -   [Azure Fundamentals: Describe Azure management and governance](https://learn.microsoft.com/training/paths/describe-azure-management-governance/)
-  -   [AZ-104: Prerequisites for Azure administrators](https://learn.microsoft.com/training/paths/az-104-administrator-prerequisites/)
+  -   [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
+  -   [Azure Fundamentals: Describe Azure architecture and services](/training/paths/azure-fundamentals-describe-azure-architecture-services/)
+  -   [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
+  -   [AZ-104: Prerequisites for Azure administrators](/training/paths/az-104-administrator-prerequisites/)
 summary: |
   Learn how to deploy and configure virtual machines, containers, and Web Apps in Azure.
   Here are the learning paths in the AZ-104 Azure Administrator series:
