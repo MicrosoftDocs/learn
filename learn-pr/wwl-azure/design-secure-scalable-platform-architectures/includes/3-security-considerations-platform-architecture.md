@@ -25,10 +25,10 @@ However, as platform engineering evolves, access management might require extra 
 
 Teams can be defined and managed through different sources, depending on the tools and frameworks in use. For instance, adopting a "Teams as Code" (TaC) pattern allows platforms to treat team configurations as version-controlled code. By tracking changes in repositories, platform providers can cache team metadata and user profiles, ensuring updates are auditable and easily automated. Alternatively, tools like Azure Dev Center Projects can directly integrate with identity provider constructs, providing pre-built RBAC frameworks to simplify team definition and role assignments. These methods enhance consistency across systems while reducing manual efforts in managing memberships and permissions.
 
-:::image type="content" source="../media/eac-teams-as-code-with-platform-2465e9ea.png" alt-text="Diagram showing the team as code pattern, including the user creating the PR, and code in git.":::
+:::image type="content" source="../media/teams-code-with-platform-2465e9ea.png" alt-text="Diagram showing the team as code pattern, including the user creating the PR, and code in git.":::
 
 In addition, many downstream systems abstract groups and users into their own formats, which can complicate data aggregation and RBAC implementation. For example, APIs in downstream systems may not directly use identity provider attributes, such as Entra ID's Object ID, requiring platforms to implement custom attribute mappings. Patterns like TaC help resolve this challenge by storing relationships between teams or group IDs in a centralized, secure repository. This repository becomes a source of truth, with CI/CD pipelines ensuring downstream systems are updated consistently. By maintaining mappings and using pull requests to control changes, platforms can manage team and user identities across systems efficiently and securely, avoiding misalignments and improving interoperability.
 
 This effectively enables the following relationships to be stored for in API calls:
 
-:::image type="content" source="../media/pe-api-calls-22146d20.png" alt-text="Diagram showing the functional model for managing platform access, including team, roles, groups and teams.":::
+:::image type="content" source="../media/api-calls-22146d20.png" alt-text="Diagram showing the functional model for managing platform access, including team, roles, groups and teams.":::

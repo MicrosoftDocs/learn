@@ -56,7 +56,7 @@ subjects:
   - site-reliability-engineering
 units:
   - learn.wwl.design-secure-scalable-platform-architectures.introduction
-  - learn.wwl.design-secure-scalable-platform-architectures.core-principles-secure-scalable-platform-design-
+  - learn.wwl.design-secure-scalable-platform-architectures.core-principles-secure-scalable-platform-design
   - learn.wwl.design-secure-scalable-platform-architectures.security-considerations-platform-architecture
   - learn.wwl.design-secure-scalable-platform-architectures.scale-platform-architectures-growth-adaptability
   - learn.wwl.design-secure-scalable-platform-architectures.automation-resiliency-modern-platforms
