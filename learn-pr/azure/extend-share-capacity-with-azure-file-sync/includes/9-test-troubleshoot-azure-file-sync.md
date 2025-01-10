@@ -1,20 +1,6 @@
 There are several ways to monitor Azure File Sync. You could use the Azure portal, Azure Monitor, or the event log on one of the Windows Server computers. You could also monitor Azure File Sync by adding Azure File Sync performance counters to Performance Monitor.
 
-You set up the Azure File Sync components in your Azure environment and on the target server. Now, you want to ensure the environment functions correctly and monitor replication and file-copy jobs.
-
-## Common problems
-
-Later in this unit, you see how you can monitor Azure File Sync and check for syncing problems. But first, let's look at some common problems and how they can be resolved.
-
-### Can't mount the Azure file share
-
-If you're unable to mount your Azure file share on Windows Server, it could be that your ISP or your company's firewall rules are blocking port 445. Azure Files needs to have port 445 open to connect to Azure data centers.
-
-Azure also denies connections that aren't secure, so your on-premises Windows Server computer has to support SMB encryption. If that isn't possible, you can disable secure transfer on the Azure storage account, but your company has to accept the associated security risks if you use this approach.
-
-### Files or directory won't sync
-
-The most common cause for files not syncing is invalid file names. The assessment tool can help you identify problems with existing file names. However, if new files are created with invalid characters after the sync is set up, you need to identify them with the monitoring tools.
+You've set up the Azure File Sync components in your Azure environment and on the target server. Now, you want to ensure the environment functions correctly and monitor replication and file-copy jobs.
 
 ## Check the file share sync
 
@@ -23,6 +9,8 @@ To check that files are replicating, open two File Explorer sessions. In the fir
 In the second File Explorer window, add a network connection that maps to the Azure file share, like `\\<your-azure-file-share>.file.core.windows.net\foldername`.
 
 In the first window, add a new text document in the *CADFolder*, then add some text to the file. The file should appear in the mapped drive location within seconds. Open the file and check whether the contents match the contents of your local copy. If the contents match, the replication between Azure and the server endpoint is healthy.
+
+The most common cause for files not syncing is invalid file names. The assessment tool can help you identify problems with existing file names. However, if new files are created with invalid characters after the sync is set up, you'll need to identify them using the monitoring tools.
 
 ## View server health and metrics for Storage Sync Service
 
