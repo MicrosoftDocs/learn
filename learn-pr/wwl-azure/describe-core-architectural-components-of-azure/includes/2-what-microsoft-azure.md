@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEsag]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c27bf1d6-d1b6-410e-a271-e7ae999f2434]
 
 Azure is a continually expanding set of cloud services that help you meet current and future business challenges. Azure gives you the freedom to build, manage, and deploy applications on a massive global network using your favorite tools and frameworks.
 
