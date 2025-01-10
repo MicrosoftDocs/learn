@@ -80,7 +80,7 @@ You can use the following steps to deploy VMware SRM:
 1. On the navigation pane, under **Disaster Recovery**, select **Get Started**.
 1. On the drop-down menu, select **VMware Site Recovery Manager (SRM) - vSphere replication** as a disaster recovery solution.
 1. Provide a license key or select to use an evaluation version.
-1. Accept the terms and conditions, and then select **Install**.
+1. Accept the terms and conditions, then select **Install**.
 
     :::image type="content"  source="../media/3-deploy-site-recovery-manager-appliance.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution."lightbox="../media/3-deploy-site-recovery-manager-appliance.png":::
 
