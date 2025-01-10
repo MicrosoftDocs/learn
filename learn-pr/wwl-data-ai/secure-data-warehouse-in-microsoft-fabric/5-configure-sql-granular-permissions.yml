@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure SQL granular permissions using T-SQL
   description: "Learn how to configure granular access to database objects in a data warehouse in Microsoft Fabric."
-  ms.date: 11/10/2024
+  ms.date: 01/10/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
