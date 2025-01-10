@@ -66,7 +66,7 @@ You can use the following steps to deploy ExpressRoute Global Reach.
 
     :::image type="content"  source="../media/3-add-global-reach-cloud-connection.png" alt-text="Screenshot of the On-prem cloud connections window in Azure VMware Solution."lightbox="../media/3-add-global-reach-cloud-connection.png":::
 
-1. Verify that the **State** of the connection displays the status as **Connected**.
+1. Verify the **State** of the connection shows the status as **Connected**.
 
 ### Deploy Site Recovery Manager on Azure VMware Solution
 
@@ -82,6 +82,6 @@ You can use the following steps to deploy VMware SRM:
 1. Provide a license key or select to use an evaluation version.
 1. Accept the terms and conditions, and then select **Install**.
 
-    :::image type="content"  source="../media/3-neavs-add-ons.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution.":::
+    :::image type="content"  source="../media/3-deploy-site-recovery-manager-appliance.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution."lightbox="../media/3-deploy-site-recovery-manager-appliance.png":::
 
 Ensure that both the primary and secondary Azure VMware Solution private clouds have provisioned VMware SRM.
