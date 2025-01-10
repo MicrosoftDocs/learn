@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-managed-identity-azure-openai-dotnet.keyless-authentication-methods
+title: Keyless authentication methods
+metadata:
+  title: Keyless authentication methods
+  description: Learn to implement keyless authentication methods in Azure OpenAI integration with managed identity and authentication in .NET
+  ms.date: 01/09/2025
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-keyless-authentication-methods.md)]
