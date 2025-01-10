@@ -12,7 +12,7 @@ prerequisites: |
   Before starting this learning path, you should have a fundamental understanding of core data concepts, relational data, and non-relational data.
 summary: |
   The phenomenal growth in data in recent years is fueling digital transformation of businesses and other organizations by empowering fast and informed decision making through data analytics. Microsoft Azure provides multiple services that you can combine to build large-scale analytics solutions that leverage the latest technologies and techniques for data ingestion, storage, modeling, and visualization.
-  This learning path helps you prepare for the [Azure Data Fundamentals](https://docs.microsoft.com/certifications/azure-data-fundamentals?azure-portal=true) certification.
+  This learning path helps you prepare for the [Azure Data Fundamentals](/certifications/azure-data-fundamentals?azure-portal=true) certification.
 iconUrl: /training/achievements/azure-data-fundamentals-explore-data-warehouse-analytics.svg
 levels:
 - beginner
