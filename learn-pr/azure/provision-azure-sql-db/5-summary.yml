@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Summary and cleanup
   description: Summary and cleanup
-  ms.date: 10/17/2023
+  ms.date: 01/10/2025
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
@@ -32,22 +32,22 @@ quiz:
       choices:
       - content: "An administrative container for your databases."
         isCorrect: true
-        explanation: "You can control logins, firewall rules, and security policies through the logical server."
+        explanation: "You can control logins, firewall rules, and security policies through the logical SQL server."
       - content: "Another name for the Azure SQL Managed Instance service."
         isCorrect: false
-        explanation: "Remember that you can have multiple databases. You can manage multiple databases in a single Azure SQL Database logical server. Azure SQL Managed Instance is a different Azure service."
-      - content: "A server that defines the logical rules that sort and compare data."
+        explanation: "Azure SQL Managed Instance is a different Azure service. You can manage multiple databases in a single Azure SQL Database logical server."
+      - content: "A server that defines the rules that sort and compare text."
         isCorrect: false
-        explanation: "_Collation_ refers to the rules that sort and compare data in tables. You can manage multiple databases in a single Azure SQL Database logical server."
-    - content: "Your Azure SQL database provides adequate storage and compute power. But you find that you need more IO throughput. Which performance model might you use?"
+        explanation: "The logical SQL server doesn't contain this information, each database does. _Collation_ refers to the rules that sort and compare character data in tables. You can manage multiple databases in a single Azure SQL Database logical server."
+    - content: "Your Azure SQL database provides adequate storage and memory. But you find that you need more CPU capacity. Which should you use?"
       choices:
       - content: "DTU"
         isCorrect: false
-        explanation: "DTU, or Database Transaction Unit, provides a simple, preconfigured purchase option. To increase IO throughput, you would need to move to a higher tier. The higher tier increases your storage and compute power, things you don't need."
+        explanation: "DTU, or Database Transaction Unit, provides a simple, preconfigured purchase option. To increase CPU capacity, you would need to move to a higher tier. The higher tier increases your storage and memory as well, things you don't need. A more customizable option for your workload would be to use the vCore purchasing model."
       - content: "vCore"
         isCorrect: true
-        explanation: "vCore gives you greater control over what compute and storage resources you create and pay for. You can increase IO throughput but keep the existing amount of compute and storage."
+        explanation: "vCore gives you greater control over what compute and storage resources you create and pay for. You can increase vCore capacity throughput but keep the existing amount of compute and storage."
       - content: "SQL elastic pool"
         isCorrect: false
-        explanation: "SQL elastic pools enable you to buy a set of compute and storage resources that are shared among all the databases in the pool. This option doesn't help with IO performance because you're working with just one database."
+        explanation: "SQL elastic pools enable you to buy a set of compute and storage resources that are shared among all the databases in the pool. This option doesn't help with an individual database's CPU performance because you're working with just one database. If you had multiple databases, paying for a single elastic pool for many database workloads could provide higher performance capacity and consolidated billing, depending on your utilization patterns."
 
