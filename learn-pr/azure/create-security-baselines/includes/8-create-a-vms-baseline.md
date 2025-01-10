@@ -4,7 +4,7 @@ Azure Policy is an Azure service you can use to create, assign, and manage polic
 
 The following sections describe the Azure VM security recommendations that are in CIS Microsoft Azure Foundations Security Benchmark v. 3.0.0. Included with each recommendation are the basic steps to complete in the Azure portal. You should complete these steps for your own subscription and by using your own resources to validate each security recommendation. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
 
-### Ensure that OS disk are encrypted - Level 1
+### Ensure that OS disks are encrypted - Level 1
 
 Azure Disk Encryption helps protect and safeguard your data to meet your organization's security and compliance commitments. Azure Disk Encryption:
 
