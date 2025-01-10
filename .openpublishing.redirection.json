@@ -38779,11 +38779,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/student-evangelism/student-introduction-to-azure/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/student-evangelism/student-introduction-to-azure/2-cloud-computing-and-azure.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
       "redirect_document_id": false
