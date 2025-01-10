@@ -54,7 +54,7 @@ Use the following steps to connect to Azure Virtual Network with ExpressRoute:
 
 You need to connect both the primary and secondary Azure VMware Solution private clouds using ExpressRoute Global Reach.
 
-With ExpressRoute Global Reach, you can link both the Azure VMware Solution sites and enable communication, which is necessary for disaster recovery. Both, primary and secondary Azure VMware Solution private clouds require that you provision the ExpressRoute circuit. With ExpressRoute Global Reach, you can make a private network between the primary and secondary Azure VMware Solution site.
+With ExpressRoute Global Reach, you can link both the Azure VMware Solution sites and enable communication, which is necessary for disaster recovery. Both primary and secondary Azure VMware Solution private clouds require that you provision the ExpressRoute circuit. With ExpressRoute Global Reach, you can make a private network between the primary and secondary Azure VMware Solution site.
 
 You can use the following steps to deploy ExpressRoute Global Reach.
 
@@ -64,7 +64,7 @@ You can use the following steps to deploy ExpressRoute Global Reach.
 1. On the **ExpressRoute Global Reach** tab, in the **On-prem cloud connections** section, select **+ Add**.
 1. In the **On-prem cloud connections** window, provide information for circuit ID and Authorization key, and then select **Create**.
 
-    :::image type="content"  source="../media/3-on-prem-cloud-connections.png" alt-text="Screenshot of the On-prem cloud connections window in Azure VMware Solution.":::
+    :::image type="content"  source="../media/3-add-global-reach-cloud-connection.png" alt-text="Screenshot of the On-prem cloud connections window in Azure VMware Solution."lightbox="../media/3-add-global-reach-cloud-connection.png:::
 
 1. Verify that the **State** of the connection displays the status as **Connected**.
 
