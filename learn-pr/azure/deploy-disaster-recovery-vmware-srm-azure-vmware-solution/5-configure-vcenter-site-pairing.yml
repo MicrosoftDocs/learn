@@ -5,7 +5,7 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   unitType: learning-content
-  title: Configure vCenter site pairing
+  title: Configure vCenter Server site pairing
   description: This unit details the steps to configure vCenter site pairing.
   ms.date: 07/14/2023
   author: rmcmurray
