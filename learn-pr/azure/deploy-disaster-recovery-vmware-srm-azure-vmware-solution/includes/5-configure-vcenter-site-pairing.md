@@ -9,7 +9,7 @@ To configure site pairing, perform the following steps:
 2. In the jump-box VM, open a browser and connect to the private cloud vCenter Server and NSX-T Manager using credentials that you can retrieve from the **Identity** pane in your Azure VMware Solution private cloud.
 
     > [!NOTE]
-    > The first time you attempt to connect to vCenter Server, you’ll be prompted to use either a Flash-based vSphere web client or an HTML5-based client. We recommend you use the HTML5-based client.
+    > The first time you attempt to connect to vCenter Server, you’ll use the HTML5-based client. 
 
 3. In the vSphere web client, select **Menu**, then select **Site Recovery**.
 
