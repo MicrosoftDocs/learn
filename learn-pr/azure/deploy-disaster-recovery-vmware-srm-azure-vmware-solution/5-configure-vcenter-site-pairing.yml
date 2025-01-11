@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.5-configure-vcenter-site-pairing
-title: Configure vCenter site pairing
+title: Configure vCenter Server site pairing
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
