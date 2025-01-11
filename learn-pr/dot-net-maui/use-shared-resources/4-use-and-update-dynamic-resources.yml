@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "It's easier to use."
       isCorrect: false
-      explanation: "Incorrect. The usage of a `StaticResource` and a `DynamicResource` are similar, only keywords are different in a practical sense."
+      explanation: "Incorrect. The usage of a `StaticResource` and a `DynamicResource` are similar. In a practical sense, only the keywords are different."
     - content: "It listens for changes in the backing Dictionary and updates the user interface on a change."
       isCorrect: true
       explanation: "Correct. `DynamicResource` is an extension for looking up values in a dictionary, but it propagates any changes in those values to the user interface."

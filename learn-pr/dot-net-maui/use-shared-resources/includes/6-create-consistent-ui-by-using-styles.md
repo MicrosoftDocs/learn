@@ -39,7 +39,7 @@ You can use a resource for the value in a setter, as shown in the following code
 ```
 
 > [!NOTE]
-> The property value that you specify in a setter must be implemented as a bindable property. All properties on controls in .NET MAUI that end with the suffix *Property* are bindable properties. If you're trying to use a property such as **TextColor** in a setter, make sure there's a corresponding bindable property named **TextColorProperty** for that control. In practice, almost all the properties you'll want to use in your setters are implemented this way.
+> The property value that you specify in a setter must be implemented as a bindable property. All properties on controls in .NET MAUI that end with the suffix *Property* are bindable properties. If you're trying to use a property such as **TextColor** in a setter, make sure there's a corresponding bindable property named **TextColorProperty** for that control. In practice, almost all the properties you want to use in your setters are implemented this way.
 
 ## What is a style?
 
@@ -104,7 +104,7 @@ The following code shows the previous example declared as an implicit style. Thi
 ```
 
 > [!IMPORTANT]
-> The matching of implicit styles to controls requires an exact match to the specified **TargetType**. Controls that inherit from the target type will not receive the styles. To affect inherited controls, you can set the **Style.ApplyToDerivedTypes** attribute to **True** when you define the style. For example, to apply a style to the **Button** type and have it affect any of your buttons that inherit from **Button** (such as an **ImageButton**, **RadioButton**, or a custom type that you create), you could use a style such as this.
+> The matching of implicit styles to controls requires an exact match to the specified **TargetType**. Controls that inherit from the target type don't receive the styles. To affect inherited controls, you can set the **Style.ApplyToDerivedTypes** attribute to **True** when you define the style. For example, to apply a style to the **Button** type and have it affect any of your buttons that inherit from **Button** (such as an **ImageButton**, **RadioButton**, or a custom type that you create), you could use a style such as this.
 
 ```XML
 <ContentPage.Resources>
@@ -175,7 +175,7 @@ Suppose you want to create a cohesive look for your UI. You decide that all cont
 
 You can use style inheritance to factor out the duplicate setter into a base style. To create a derived style, set its **BasedOn** property to reference the base style. The new style inherits all the setters from its base style. The derived style can also add new setters or replace an inherited setter with one that contains a different value.
 
-The following code shows the previous example styles refactored into a hierarchy. The common setter appears only in the base style rather than being repeated. Notice that you use the **StaticResource** mark-up extension to look up the base style. You can't use **DynamicResource** in this situation.
+The following code shows the styles from the previous example refactored into a hierarchy. The common setter appears only in the base style rather than being repeated. Notice that you use the **StaticResource** mark-up extension to look up the base style. You can't use **DynamicResource** in this situation.
 
 ```XML
 <Style x:Key="MyVisualElementStyle" TargetType="VisualElement">
