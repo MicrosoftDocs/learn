@@ -18,6 +18,7 @@ summary: |
   :::row:::
   :::column:::
    ![The trophy for the AZ-104 Prerequisites for Azure administrators learning path.](/training/achievements/az-104-administrator-prerequisites.svg)
+
    AZ-104: Prerequisites for Azure administrators
   :::column-end:::
   :::column:::
@@ -27,7 +28,7 @@ summary: |
   :::column-end:::
   :::column:::
    ![The trophy for the AZ-104 Implement and manage storage in Azure learning path.](/training/achievements/az-104-manage-storage.svg)
-   
+
    [AZ-104: Implement and manage storage in Azure](/training/paths/az-104-manage-storage/)
   :::column-end:::
   :::row-end:::
