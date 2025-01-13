@@ -1,4 +1,4 @@
-Resources are great for avoiding hard-coded, duplicate values in your XAML mark-up, but they can be tedious to apply. You assign each property value individually, which can result in cluttered and verbose XAML. This unit shows you how to group multiple settings into a style, which can help to declutter your code and make it more maintainable.
+In .NET Multi-platform App UI (MAUI), resources are great for avoiding hard-coded, duplicate values in your Extensible Application Markup Language (XAML) mark-up, but they can be tedious to apply. You assign each property value individually, which can result in cluttered and verbose XAML. This unit shows you how to group multiple settings into a style, which can help to declutter your code and make it more maintainable.
 
 ## How resources can clutter your XAML
 

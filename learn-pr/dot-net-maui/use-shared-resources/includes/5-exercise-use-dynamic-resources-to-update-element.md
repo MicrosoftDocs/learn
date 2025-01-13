@@ -73,7 +73,7 @@ You start by writing code that updates a few resources stored in a page's resour
 
 ## Update the UI dynamically
 
-To fix the problem, modify your XAML so that updated resource values are loaded into your UI.
+To fix the problem, modify your Extensible Application Markup Language (XAML) so that updated resource values are loaded into your UI.
 
 1. Stop the app, and open the **StandardTipPage.xaml** file.
 
