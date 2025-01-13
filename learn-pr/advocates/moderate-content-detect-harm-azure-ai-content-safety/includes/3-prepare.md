@@ -38,7 +38,7 @@ GitHub Codespaces runs a development container managed by GitHub with Visual Stu
 
 1. Create a new GitHub Codespace using the `https://codespaces.new/Azure-Samples/RAI-workshops?quickstart=1` template.
 
-    :::image type="content" border="true" source="https://github.com/codespaces/badge.svg" alt-text="Open in GitHub Codespaces" link="https://codespaces.new/Azure-Samples/aacs-workshops?quickstart=1?azure-portal=true":::
+    :::image type="content" border="true" source="https://github.com/codespaces/badge.svg" alt-text="Open in GitHub Codespaces" link="https://codespaces.new/Azure-Samples/RAI-workshops?quickstart=1?azure-portal=true":::
 
 1. On the **Create codespace** page, review the codespace configuration settings, then select **Create new codespace**.
 
