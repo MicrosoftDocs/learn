@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Explore dynamic data masking
   description: "Explore the concept and how to implement dynamic data masking in a data warehouse in Microsoft Fabric."
-  ms.date: 11/10/2024
+  ms.date: 01/10/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

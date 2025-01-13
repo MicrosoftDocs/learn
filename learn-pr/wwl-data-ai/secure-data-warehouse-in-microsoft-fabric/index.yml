@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Secure a Microsoft Fabric data warehouse
   description: Learn the key concepts and strategies for protecting sensitive data in Microsoft Fabric data warehouses.
-  ms.date: 11/10/2024
+  ms.date: 01/10/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
