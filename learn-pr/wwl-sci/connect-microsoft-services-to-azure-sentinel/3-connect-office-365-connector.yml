@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.connect-microsoft-services-to-azure-sentinel.connect-office-365-connector
-title: Connect the Microsoft Defender XDR connector
+title: Connect the Microsoft 365 connector
 metadata:
-  title: Connect the Microsoft Defender XDR connector
-  description: "Connect the Microsoft Defender XDR connector"
+  title: Connect the Microsoft 365 connector
+  description: "Connect the Microsoft 365 connector"
   ms.date: 01/13/2025
   author: wwlpublish
   ms.author: kelawson

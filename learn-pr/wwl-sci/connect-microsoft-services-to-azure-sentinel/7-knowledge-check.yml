@@ -27,11 +27,11 @@ quiz:
     - content: "SecurityAlert"
       isCorrect: false
       explanation: "Incorrect.  This connector doesn't write to the SecurityAlert table."
-  - content: "Which table (data type) would you query for the Defender XDR data?"
+  - content: "Which table (data type) would you query for the Microsoft 365 data?"
     choices:
     - content: "EmailEvents"
       isCorrect: true
-      explanation: "Correct.  This connector writes to the EmailEvents table."
+      explanation: "Correct.  This connector writes to the OfficeActivity table."
     - content: "SecurityAlert"
       isCorrect: false
       explanation: "Incorrect.  This connector doesn't write to the SecurityAlert table."
