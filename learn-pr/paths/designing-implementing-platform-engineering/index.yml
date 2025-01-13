@@ -1,0 +1,81 @@
+### YamlMime:LearningPath
+uid: learn.wwl.designing-implementing-platform-engineering
+metadata:
+  title: Designing and Implementing Platform Engineering
+  description: This learning path provides a comprehensive guide to designing and implementing platform engineering within modern enterprises. It covers the foundational principles, strategic alignment with business goals, and the practical aspects of building scalable, secure, and future-proof platforms. By following this path, learners will gain the knowledge and skills needed to enhance developer productivity, ensure operational excellence, and drive continuous innovation.
+  ms.date: 01/13/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: learning-path
+  ms.service: azure
+title: Designing and Implementing Platform Engineering
+prerequisites: |
+  Successful learners will have prior knowledge and understanding of the following:
+  -   Cloud computing concepts include understanding PaaS, SaaS, and IaaS implementations.
+  -   Azure administration and Azure development with proven expertise in at least one of these areas.
+  -   Intermediate to advanced DevOps concepts, including version control, Agile software development, and core software development principles. It would be helpful to have experience in an organization that delivers software.
+  **If you're new to development practices and DevOps**, consider taking the following:
+  -   Free online: [DevOps foundations: The core principles and practices](https://go.microsoft.com/fwlink/?linkid=2268284).
+  -   Instructor-led course: AZ-2008: DevOps foundations: The core principles and practices.
+  -   Free online:
+    -   [AZ-400: Development for enterprise DevOps](https://go.microsoft.com/fwlink/?linkid=2300367).
+    -   [AZ-400: Implement CI with Azure Pipelines and GitHub Actions](https://go.microsoft.com/fwlink/?linkid=2300272).
+    -   [AZ-400: Design and implement a release strategy](https://go.microsoft.com/fwlink/?linkid=2300607).
+    -   [AZ-400: Implement a secure continuous deployment using Azure Pipelines](https://go.microsoft.com/fwlink/?linkid=2300608).
+    -   [AZ-400: Manage infrastructure as code using Azure and DSC](https://go.microsoft.com/fwlink/?linkid=2300609).
+    -   [AZ-400: Design and implement a dependency management strategy](https://go.microsoft.com/fwlink/?linkid=2300368).
+    -   [AZ-400: Implement continuous feedback](https://go.microsoft.com/fwlink/?linkid=2300718).
+    -   [AZ-400: Implement security and validate code bases for compliance](https://go.microsoft.com/fwlink/?linkid=2300719).
+  -   Instructor-led course: [AZ-400: Designing and Implementing Microsoft DevOps solutions](https://learn.microsoft.com/training/courses/az-400t00).
+  If you're new to Azure and cloud computing, consider one of the following resources:
+  -   Free online: [Azure Fundamentals](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/).
+  -   Instructor-led course: [AZ-900: Azure Fundamentals](https://docs.microsoft.com/learn/certifications/courses/az-900t01).
+  If you're new to Azure Administration, consider taking the:
+  -   Free online: [Prerequisites for Azure Administrators](https://docs.microsoft.com/learn/paths/az-104-administrator-prerequisites/).
+  -   Instructor-led courses: [AZ-104: Microsoft Azure Administrator](https://docs.microsoft.com/learn/certifications/courses/az-104t00).
+  If you're new to Azure Developer, consider taking the:
+  -   Free online: [Create serverless applications](https://docs.microsoft.com/learn/paths/create-serverless-applications/).
+  -   Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](https://docs.microsoft.com/learn/certifications/courses/az-204t00).
+summary: |
+  This learning path provides a comprehensive guide to designing and implementing platform engineering within modern enterprises. It covers the foundational principles, strategic alignment with business goals, and the practical aspects of building scalable, secure, and future-proof platforms. By following this path, learners will gain the knowledge and skills needed to enhance developer productivity, ensure operational excellence, and drive continuous innovation.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+  - advanced
+roles:
+  - administrator
+  - ai-engineer
+  - developer
+  - devops-engineer
+  - network-engineer
+  - security-engineer
+  - solution-architect
+  - startup-founder
+  - technology-manager
+products:
+  - azure
+  - azure-devops
+  - github
+subjects:
+  - app-development
+  - architecture
+  - asset-management
+  - automation
+  - cloud-computing
+  - cloud-security
+  - containers
+  - custom-app-development
+  - devops
+  - infrastructure
+  - it-management-monitoring
+  - product-lifecycle-management
+  - productivity
+  - site-reliability-engineering
+modules:
+  - learn.wwl.foundations-platform-engineering
+  - learn.wwl.design-secure-scalable-platform-architectures
+  - learn.wwl.implement-developer-self-service
+  - learn.wwl.observability-continuous-improvement
+  - learn.wwl.strategic-platform-road-mapping
+trophy:
+  uid: learn.wwl.designing-implementing-platform-engineering.trophy
