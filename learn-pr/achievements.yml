@@ -4550,7 +4550,7 @@ achievements:
 - uid: learn.chat-completions-badge
   type: badge
   title: Introduction to chat completion
-  summary: This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Studio playground.
+  summary: This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Foundry portal playground.
   iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.student-evangelism.predict-meteor-showers-using-python.badge
   type: badge
