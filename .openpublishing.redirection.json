@@ -19352,6 +19352,42 @@
       "redirect_url": "https://learn.microsoft.com/windows/wsl/about"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/wwl-mba/microsoft-cloud-adoption-framework/1-introduction"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/2-cloud-adoption-framework-overview.yml",
+      "redirect_url": "https://learn.microsoft.com/wwl-mba/microsoft-cloud-adoption-framework/1-introduction"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/3-define-strategy.yml",
+      "redirect_url": "https://learn.microsoft.com/wwl-mba/microsoft-cloud-adoption-framework/2-strategy"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/4-plan.yml",
+      "redirect_url": "https://learn.microsoft.com/wwl-mba/microsoft-cloud-adoption-framework/3-plan"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/5-ready.yml",
+      "redirect_url": "https://learn.microsoft.com/wwl-mba/microsoft-cloud-adoption-framework/4-ready"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/6-adopt.yml",
+      "redirect_url": "https://learn.microsoft.com/wwl-mba/microsoft-cloud-adoption-framework/5-adopt"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/7-govern-and-manage.yml",
+      "redirect_url": "https://learn.microsoft.com/wwl-mba/microsoft-cloud-adoption-framework/5-adopt"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/wwl-mba/microsoft-cloud-adoption-framework/5-adopt"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/9-summary-and-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/wwl-mba/microsoft-cloud-adoption-framework/5-adopt"
+    },
+    {
       "source_path_from_root": "/learn-pr/windows/wsl-introduction/what-is-wsl.yml",
       "redirect_url": "https://learn.microsoft.com/windows/wsl/about"
     },
