@@ -51,7 +51,7 @@ Before you start protecting the VMs, you first need to map the objects on the pr
 
 :::image type="content"  source="../media/5-recovery-networks.png" alt-text="Screenshot of the Recovery networks window with relevant mappings set for objects between the protected site and the recovery site.":::
 
-By configuring mappings, you can ensure that the VMs will have access to all resources available in the recovery site. If you don’t create the proper mapping, then you’ve to configure these settings for every VM individually.
+By configuring mappings, you can ensure that the VMs will have access to all resources available at the recovery site. If you don’t create the proper mapping, then you’ve to configure these settings for every VM individually.
 
 ### Configure replication on the VMs
 
