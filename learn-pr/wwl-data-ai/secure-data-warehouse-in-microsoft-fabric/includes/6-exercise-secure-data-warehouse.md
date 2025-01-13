@@ -4,7 +4,7 @@ In this exercise, you’ll learn how to secure a warehouse using the concepts ex
 
 > [!NOTE]
 > - You need a Microsoft Fabric trial license with the Fabric preview enabled in your tenant. See [**Getting started with Fabric**](/fabric/get-started/fabric-trial?azure-portal=true) to enable your Fabric trial license.
->- To complete the exercises in this lab, you'll need two users. Your account can be one of the users. If you don't have  permission to create the second user, you can still complete the exercise but you won't be able review what a user sees when their access to specific functionality is granted or restricted.
+> - To complete the exercises in this lab, you'll need two user identities. If you're unable to create a second user, you can still complete the exercise using your user account, but you won't be able to experiment with what a less privileged user sees when they are granted or restricted access to specific functionality.
 
 ## **How to create a second user for this exercise** 
 **If you're part of an organization that has an Entra or Microsoft 365 tenant:** 
