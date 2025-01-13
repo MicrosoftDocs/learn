@@ -1,4 +1,4 @@
-The Microsoft Sentinel solution for SAP BTP Activity Workbook provides a dashboard overview of BTP activity.
+The Microsoft Sentinel Solution for SAP BTP Activity Workbook provides a dashboard overview of BTP activity.
 
 ## Overview tab
 
@@ -6,9 +6,9 @@ The Microsoft Sentinel solution for SAP BTP Activity Workbook provides a dashboa
 
 The **Overview** tab shows:
 
-- An overview of BTP subaccounts, helping analysts identify the most active accounts and the type of ingested data.
+- An overview of SAP BTP subaccounts, helping analysts identify the most active accounts and the type of ingested data.
 - Subaccount sign-in activity, helping analysts identify spikes and trends that might be associated with sign-in failures in SAP Business Application Studio (BAS).
-- A timeline of BTP activity and number of BTP security alerts, helping analysts search for any correlation between the two.
+- A timeline of SAP BTP activity and number of BTP security alerts, helping analysts search for any correlation between the two.
 
 ## Identity Management tab
 
