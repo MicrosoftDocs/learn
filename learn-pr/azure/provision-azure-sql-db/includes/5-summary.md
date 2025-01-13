@@ -6,9 +6,11 @@ There's no infrastructure or software patches to maintain. You're now free to fo
 
 Remember that each Azure SQL logical server contains one or more databases. Azure SQL Database provides two pricing models, DTU and vCore, to help you balance cost versus performance across all your databases.
 
-Choose DTU if you're just getting started or want a simple, preconfigured buying option. Choose vCore when you want greater control over what compute and storage resources you create and pay for.
+Choose DTU if you're just getting started or want a simple, preconfigured buying option. Choose vCore when you want greater control over what compute and storage resources you create and pay for. Use elastic pools to give a group of databases access to a single resource pool for cost savings.
 
 Azure Cloud Shell makes it easy to start working with your databases. From Cloud Shell, you have access to the Azure CLI, which enables you to get information about your Azure resources. Cloud Shell also provides many other common utilities, such as `sqlcmd`, to help you start working right away with your new database.
+
+The extensions for Visual Studio Code allow you to query and manage your Azure SQL Database alongside other development activities in the popular lightweight developer tool.
 
 ## Clean up
 
@@ -24,7 +26,10 @@ The following documentation provides more information, including tutorials and s
 - [Azure SQL Database documentation](/azure/sql-database/)
 - [Azure SQL Database purchasing models and resources](/azure/sql-database/sql-database-service-tiers)
 - [Azure SQL Database logical servers and their management](/azure/sql-database/sql-database-logical-servers)
-- [Azure SQL Database and SQL Data Warehouse firewall rules](/azure/sql-database/sql-database-firewall-configure)
+- [Azure SQL Database firewall rules](/azure/sql-database/sql-database-firewall-configure)
+- [Quickstart: Use Visual Studio Code to connect and query Azure SQL Database or Azure SQL Managed Instance](/azure/azure-sql/database/connect-query-vscode?view=azuresql-db&preserve-view=true)
+- [Quickstart: Connect to and query a database with the MSSQL extension for Visual Studio Code](/sql/tools/visual-studio-code-extensions/mssql/connect-database-visual-studio-code)
+- 
 
 To learn more about Cloud Shell, see [Overview of Azure Cloud Shell](/azure/cloud-shell/overview).
 

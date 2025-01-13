@@ -5,8 +5,8 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Explore Microsoft Sentinel solution analytics rules for SAP BTP
-  description: "Explore Microsoft Sentinel solution for SAP BTP includes several built-in analytics rules for identity management and low-code application development scenarios."
-  ms.date: 01/09/2025
+  description: "Explore Microsoft Sentinel Solution for SAP BTP includes several built-in analytics rules for identity management and low-code application development scenarios."
+  ms.date: 01/13/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
