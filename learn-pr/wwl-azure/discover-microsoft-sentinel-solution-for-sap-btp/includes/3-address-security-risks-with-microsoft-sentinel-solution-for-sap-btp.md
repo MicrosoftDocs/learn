@@ -1,6 +1,6 @@
 Although low-code development platforms can help to accelerate the application development process, there are also security risks that organizations must consider. For example, citizen developers who might lack the security awareness of professional developers could introduce security vulnerabilities.
 
-Beyond the low-code aspect, BTP applications also have the following aspects that make them a target for cyber threats:
+Beyond the low-code aspect, SAP BTP applications also have the following aspects that make them a target for cyber threats:
 
 - They **access sensitive business data**, such as customer lists, opportunities, orders, financial data, and manufacturing processes.
 - They **access and integrate** with multiple different business applications and data stores.
@@ -12,7 +12,7 @@ For more information, see [Nice patch SAP! Revisiting your SAP BTP security meas
 
 ## Explore how the solution addresses BTP security risks
 
-To counter these vulnerabilities, it's crucial for organizations to quickly detect and respond to threats on BTP applications. With the Microsoft Sentinel solution for SAP BTP, you can:
+To counter these vulnerabilities, it's crucial for organizations to quickly detect and respond to threats on BTP applications. With the Microsoft Sentinel Solution for SAP BTP, you can:
 
 - Gain visibility to activities **on** BTP applications; including creation, modification, permissions change, execution, and more.
 - Gain visibility to activities **in** BTP applications; including who uses the application, which business applications the BTP application accesses, business data Create, Read, Update, Delete (CRUD) activities, and more.
