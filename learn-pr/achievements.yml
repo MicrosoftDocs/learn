@@ -4680,3 +4680,13 @@ achievements:
   title: Monitor data in real-time with Power BI
   summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
   iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
+- uid: learn.student-evangelism.create-git-project.badge
+  type: badge
+  title: How to create and modify a Git project
+  summary: Learn how to create, modify and track changes on a project using Git.
+  iconUrl: /training/achievements/create-git-project.svg
+- uid: learn.student-evangelism.branch-merge-git.badge
+  type: badge
+  title: Edit code through branching and merging in Git
+  summary: Level up your Git knowledge by learning how to keep code separate in branches, and how to merge them later.
+  iconUrl: /training/achievements/student-evangelism/branch-merge-git-badge.svg
