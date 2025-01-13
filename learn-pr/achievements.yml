@@ -4680,3 +4680,8 @@ achievements:
   title: Monitor data in real-time with Power BI
   summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
   iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
+- uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.badge
+  type: badge
+  title: Microsoft Cloud Adoption Framework for Azure
+  summary: This module covers the basics of how to use the Cloud Adoption Framework—a set of documentation, implementation guidance, best practices, and tools that aid in aligning the strategy for business, people, and technology.
+  iconUrl: /learn/achievements/microsoft-cloud-adoption-framework-for-azure.svg

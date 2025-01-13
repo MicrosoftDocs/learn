@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.strategy
+title: Strategy
+metadata:
+  title: Strategy
+  description: "Strategy"
+  ms.date: 01/18/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-strategy.md)]

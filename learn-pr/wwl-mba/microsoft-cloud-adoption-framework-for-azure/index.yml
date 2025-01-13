@@ -1,14 +1,14 @@
 ### YamlMime:Module
-uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2
 metadata:
-  title: Microsoft Cloud Adoption Framework for Azure
-  description: "Microsoft Cloud Adoption Framework for Azure"
-  ms.date: 08/23/2023
+  title: Introduction to the Microsoft Cloud Adoption Framework
+  description: "Introduction to the Microsoft Cloud Adoption Framework"
+  ms.date: 01/18/2025
   author: Zimmergren
   ms.author: tozimmergren
   ms.service: caf
   ms.topic: module
-title: Microsoft Cloud Adoption Framework for Azure
+title: Introduction to the Microsoft Cloud Adoption Framework
 summary: This module covers the basics of how to use the Cloud Adoption Framework—a set of documentation, implementation guidance, best practices, and tools that aid in aligning the strategy for business, people, and technology.
 abstract: |
   In this module, you will:
@@ -28,14 +28,12 @@ subjects:
 - cloud-computing
 - knowledge-management
 units:
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.1-introduction
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.2-cloud-adoption-framework-overview
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.3-motivations
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.4-strategy
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.5-plan
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.6-ready
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.7-adopt
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.8-operate
-- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.9-knowledge-check
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.introduction
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.strategy
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.plan
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.ready
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.adopt
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.operate
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.knowledge-check
 badge:
-  uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.badge
+  uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.badge
