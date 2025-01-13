@@ -98,7 +98,7 @@ You're now ready to refactor your styles by using inheritance. Refactoring lets 
 
 1. Open the **StandardTipPage.xaml** file.
 
-1. Locate the **infoLabelStyle** style in the page's resource dictionary. Move this style below the **baseLabelStyle** in the resource dictionary.
+1. Locate the **infoLabelStyle** style in the page's resource dictionary. Ensure that this style is below the **baseLabelStyle** in the resource dictionary.
 
 1. Set the **BasedOn** property for the **infoLabelStyle** style to **baseLabelStyle**. Remove the setter for **FontSize**. You no longer need it because this style now inherits the **FontSize** setting from the base style.
 

@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: "Design consistent .NET MAUI XAML pages by using shared resources"
   description: "Learn how to use static and dynamic shared resources to build a .NET Multi-platform App UI (MAUI) user interface. And see how styles can make the user interface both consistent and accessible."
-  ms.date: 11/08/2023
+  ms.date: 01/13/2025
   author: codemillmatt
   ms.author: masoucou
   manager: coxford
