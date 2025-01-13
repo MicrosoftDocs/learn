@@ -11,7 +11,7 @@ To configure site pairing, perform the following steps:
     > [!NOTE]
     > The first time you attempt to connect to vCenter Server, you’ll use the HTML5-based client. 
 
-3. In the vSphere web client, select **Menu**, then select **Site Recovery**.
+3. In the vSphere Client, select **Menu**, then select **Site Recovery**.
 
 4. In the **Site Recovery** window, verify that the status **OK** displays for both **vSphere Replication** and **Site Recovery Manager**, then select **Open Site Recovery**.
 
