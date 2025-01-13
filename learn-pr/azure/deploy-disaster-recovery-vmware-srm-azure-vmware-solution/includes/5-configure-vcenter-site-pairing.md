@@ -6,7 +6,7 @@ To configure site pairing, perform the following steps:
 
 1. Ensure that the jump-box device has connectivity to both Azure VMware Solution private clouds.
 
-2. In the jump-box VM, open a browser and connect to the private cloud vCenter Server and NSX-T Manager using credentials that you can retrieve from the **Identity** pane in your Azure VMware Solution private cloud.
+2. In the jump-box VM, open a browser and connect to the private cloud vCenter Server and NSX-T Manager using credentials that you can retrieve from **Identity**, located in the left navigation of your Azure VMware Solution private cloud.
 
     > [!NOTE]
     > The first time you attempt to connect to vCenter Server, you’ll use the HTML5-based client. 
@@ -25,7 +25,7 @@ To configure site pairing, perform the following steps:
 
     :::image type="content"  source="../media/5-site-pair-details.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution. The vSphere Replication option is selected under Setup replication.":::  
 
-The address that you provide for the Platform Services Controller must exactly match the address that you provided when you installed Site Recovery Manager Server on the recovery site.
+The address you provide for the Platform Services Controller must match the address used when you installed Site Recovery Manager Server on the recovery site.
 
 ### Connect the Site Recovery Manager instances on the protected and recovery sites
 
