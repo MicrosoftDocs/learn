@@ -7,7 +7,6 @@ metadata:
   author: LuizMacedo
   ms.author: lumac
   ms.topic: learning-path
-  ms.service: azure
 title: Designing and Implementing Platform Engineering
 prerequisites: |
   Successful learners will have prior knowledge and understanding of the following:
