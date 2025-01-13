@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Check what you learn in this module."
-  ms.date: 01/09/2025
+  ms.date: 01/13/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -18,29 +18,29 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the primary function of the Microsoft Sentinel solution for SAP BTP?"
+  - content: "What is the primary function of the Microsoft Sentinel Solution for SAP BTP?"
     choices:
     - content: "It offers a bird's-eye view across your enterprise."
       isCorrect: false
-      explanation: "That is incorrect. This is a feature of Microsoft Sentinel in general, not specifically the Microsoft Sentinel solution for SAP BTP."
+      explanation: "That is incorrect. This is a feature of Microsoft Sentinel in general, not specifically the Microsoft Sentinel Solution for SAP BTP."
     - content: "It monitors and protects your SAP BTP system by collecting audits and activity logs from the BTP infrastructure and BTP-based apps."
       isCorrect: true
-      explanation: "That is correct. The Microsoft Sentinel solution for SAP BTP is designed to monitor and protect your SAP BTP system."
+      explanation: "That is correct. The Microsoft Sentinel Solution for SAP BTP is designed to monitor and protect your SAP BTP system."
     - content: "It provides low-code development capabilities for SAP BTP."
       isCorrect: false
-      explanation: "That is incorrect. While SAP BTP does offer low-code development, this isn't a feature provided by the Microsoft Sentinel solution for SAP BTP."
-  - content: "What are the capabilities of the Microsoft Sentinel solution for SAP BTP?"
+      explanation: "That is incorrect. While SAP BTP does offer low-code development, this isn't a feature provided by the Microsoft Sentinel Solution for SAP BTP."
+  - content: "What are the capabilities of the Microsoft Sentinel Solution for SAP BTP?"
     choices:
     - content: "It monitors both on-premises and SaaS SAP environments."
-      isCorrect: true
-      explanation: "That is correct. The Microsoft Sentinel solution for SAP BTP can monitor both on-premises and SaaS SAP environments."
+      isCorrect: false
+      explanation: "That is incorrect. The Microsoft Sentinel Solution for SAP BTP can monitor only SaaS SAP environments."
     - content: "It monitors only on-premises SAP environments."
       isCorrect: false
-      explanation: "That is incorrect. The Microsoft Sentinel solution for SAP BTP can monitor both on-premises and SaaS SAP environments."
+      explanation: "That is incorrect. The Microsoft Sentinel Solution for SAP BTP can monitor only SaaS SAP environments."
     - content: "It monitors only Saas SAP environments."
-      isCorrect: false
-      explanation: "That is incorrect. The Microsoft Sentinel solution for SAP BTP can monitor both on-premises and SaaS SAP environments."
-  - content: "What does the Overview tab in the Microsoft Sentinel solution for SAP BTP Activity Workbook display?"
+      isCorrect: true
+      explanation: "That is correct. The Microsoft Sentinel Solution for SAP BTP can monitor only SaaS SAP environments."
+  - content: "What does the Overview tab in the Microsoft Sentinel Solution for SAP BTP Activity Workbook display?"
     choices:
     - content: "It provides a detailed log of all BTP security alerts."
       isCorrect: false
@@ -51,7 +51,7 @@ quiz:
     - content: "It shows a grid of identity management events in a human-readable format."
       isCorrect: false
       explanation: "That is incorrect. This is the function of the Identity Management tab, not the Overview tab."
-  - content: "Which is one of the values found in the service key created when deploying the Microsoft Sentinel solution for SAP BTP?"
+  - content: "Which is one of the values found in the service key created when deploying the Microsoft Sentinel Solution for SAP BTP?"
     choices:
     - content: "`uaa.clientid`"
       isCorrect: true
