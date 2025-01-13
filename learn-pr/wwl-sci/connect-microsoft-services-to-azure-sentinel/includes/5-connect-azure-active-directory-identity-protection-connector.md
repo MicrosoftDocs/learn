@@ -1,8 +1,18 @@
 Microsoft Entra ID Protection provides a consolidated view of at-risk users, risk events, and vulnerabilities, with the ability to remediate risk immediately and set policies to autoremediate future events.
 
-To view the connector page, do the following steps:
+## Install the solution
 
-1. Select Data connectors page.
+Start by installing the solution that contains the data connector. 
+
+1. For Microsoft Sentinel in the Azure portal, under **Content management**, select **Content hub**. <br>For Microsoft Sentinel in the Defender portal, select **Microsoft Sentinel** > **Content management** > **Content hub**.
+1. Search for and select **Microsoft Entra ID Protection**.
+1. On the right-hand side pane, select **Install**.
+ 
+## Configure the data connector
+
+After the solution is installed, connect the data connector.
+
+1. In the Microsoft Sentinel left navigation menu expand **Configuration**,  and select **Data connectors**.
 
 1. Select **Microsoft Entra ID Protection**.
 
