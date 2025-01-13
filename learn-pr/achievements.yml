@@ -4680,3 +4680,13 @@ achievements:
   title: Monitor data in real-time with Power BI
   summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
   iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
+- uid: learn.django.get-started.badge
+  type: badge
+  title: Get started with Django
+  summary: Django is one of the most popular Python web frameworks. It's especially powerful when working with a data-driven application, where the main goal is to provide a front end to a database. Django comes with numerous features built in to streamline the development process. In this module, we explore the benefits of Django, how to install it, and how to create your first project.
+  iconUrl: /training/achievements/django-get-started.svg
+- uid: learn.django.generic-views.badge
+  type: badge
+  title: Use generic views in Django
+  summary: Because Django was designed for data-driven applications, it includes numerous built-in utilities to streamline the amount of code needed. One key area where Django makes a developer's life easier is by providing generic views, which are prebuilt with all the necessary code to perform core operations like displaying and editing data. We'll see how we can use generic views to greatly reduce the amount of code required.
+  iconUrl: /training/achievements/django-generic-views.svg
