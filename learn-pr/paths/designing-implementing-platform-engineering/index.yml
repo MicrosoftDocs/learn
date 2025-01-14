@@ -16,7 +16,6 @@ prerequisites: |
 summary: |
   This learning path provides a comprehensive guide to designing and implementing platform engineering within modern enterprises. It covers the foundational principles, strategic alignment with business goals, and the practical aspects of building scalable, secure, and future-proof platforms. By following this path, learners will gain the knowledge and skills needed to enhance developer productivity, ensure operational excellence, and drive continuous innovation.
 iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
 levels:
   - advanced
 roles:
