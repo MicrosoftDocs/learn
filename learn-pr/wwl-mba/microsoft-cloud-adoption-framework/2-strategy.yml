@@ -4,10 +4,10 @@ title: Strategy
 metadata:
   title: Strategy
   description: "Strategy"
-  ms.date: 01/18/2025
+  ms.date: 01/14/2025
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-strategy.md)]
+  [!include[](includes/2-strategy.md)]

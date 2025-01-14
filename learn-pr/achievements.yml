@@ -3113,6 +3113,16 @@ achievements:
   title: Configure Azure Kubernetes Service
   summary: Learn how to configure Azure Kubernetes Service including networking, storage, and scaling.
   iconUrl: /training/achievements/azure-kubernetes-configure.svg
+- uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.badge
+  type: badge
+  title: Microsoft Cloud Adoption Framework for Azure
+  summary: This module covers the basics of how to use the Cloud Adoption Framework—a set of documentation, implementation guidance, best practices, and tools that aid in aligning the strategy for business, people, and technology.
+  iconUrl: /learn/achievements/microsoft-cloud-adoption-framework-for-azure.svg
+- uid: learn.azure.cloud-adoption-framework-getting-started.badge
+  type: badge
+  title: Getting started with the Microsoft Cloud Adoption Framework for Azure
+  summary: The Microsoft Cloud Adoption Framework for Azure is a guide to the full lifecycle of cloud adoption. Along your organization's journey to the cloud, you encounter roadblocks that can be easily removed through common approaches that thousands of customers share.
+  iconUrl: /training/achievements/cloud-adoption-framework-getting-started.svg
 - uid: learn.data-ai.azure-for-the-data-engineer.trophy
   type: trophy
   title: Azure for the Data Engineer
@@ -4680,8 +4690,3 @@ achievements:
   title: Monitor data in real-time with Power BI
   summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
   iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
-- uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.badge
-  type: badge
-  title: Microsoft Cloud Adoption Framework for Azure
-  summary: This module covers the basics of how to use the Cloud Adoption Framework—a set of documentation, implementation guidance, best practices, and tools that aid in aligning the strategy for business, people, and technology.
-  iconUrl: /learn/achievements/microsoft-cloud-adoption-framework-for-azure.svg
