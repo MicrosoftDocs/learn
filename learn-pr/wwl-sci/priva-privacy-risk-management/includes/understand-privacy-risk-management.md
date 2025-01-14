@@ -11,3 +11,7 @@ Priva's policies address three major privacy concerns:
 - **Data minimization**: Identifies personal data that has been retained unnecessarily or remains unused over time. These policies help organizations manage or delete outdated data, reducing risks and meeting regulatory requirements for minimal retention of personal data.
 
 This approach ensures organizations can proactively address privacy risks while aligning with their compliance and operational goals.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

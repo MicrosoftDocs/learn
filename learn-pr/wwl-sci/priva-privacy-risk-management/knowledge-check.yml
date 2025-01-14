@@ -59,7 +59,7 @@ quiz:
       explanation: "Correct: The report highlights the count of sensitive information types and where they're stored."
     - content: "The total number of employees with access to sensitive data."
       isCorrect: false
-      explanation: "Incorrect: The report does not track user access, only the presence and location of sensitive information."
+      explanation: "Incorrect: The report doesn't track user access, only the presence and location of sensitive information."
     - content: "The types of personal data shared outside the organization."
       isCorrect: false
       explanation: "Incorrect: This information is captured by data transfer policies, not this report."

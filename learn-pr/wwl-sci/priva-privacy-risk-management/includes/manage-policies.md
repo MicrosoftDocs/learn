@@ -67,3 +67,7 @@ Each policy has a details page that provides insights into its performance and e
 - **Matches by data type**: Identifies the types of personal data detected.
 
 The **Matched items** tab lists all content items detected by the policy, with options to preview items and review details such as data types, file activities, and remediation history. These insights help administrators refine policies and take appropriate corrective actions to reduce risks.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

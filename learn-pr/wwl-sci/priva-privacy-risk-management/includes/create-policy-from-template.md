@@ -36,7 +36,7 @@ Identifies older, inactive personal data to reduce unnecessary retention risks. 
 
 Follow these steps to quickly create a policy using default template settings:
 
-1. Sign in to the [Priva portal (preview)](https://purview.microsoft.com/priva).
+1. Sign in to the [Priva portal (preview)](https://purview.microsoft.com/priva?azure-portal=true).
 1. Navigate to the **Privacy Risk Management** solution card and select **Policies**.
 1. Select **Create a policy** in the top-right corner to open the policy creation pane.
 1. Choose the desired policy type, then select **Create**.
@@ -50,10 +50,14 @@ Follow these steps to quickly create a policy using default template settings:
 
    :::image type="content" source="../media/create-data-overexposure-from-template.png" alt-text="Screenshot showing the options when creating a Data overexposure policy." lightbox="../media/create-data-overexposure-from-template.png":::
 
-Once created, the policy will appear on your **Policies** page.
+Once created, the policy appears on your **Policies** page.
 
 The policy starts running in test mode, meaning no alerts or notifications are generated, and you can monitor its performance. When you're ready to turn on your policy, select your policy and edit it to turn in on.
 
 ## Testing overview and matched items
 
 Test mode allows you to review a policy's performance and adjust settings before activating it. Metrics like matches by location, user, and data type help validate the policy's effectiveness.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

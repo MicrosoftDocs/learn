@@ -16,3 +16,7 @@ By the end of this module, you'll be able to:
 - Create and manage policies to detect and mitigate privacy risks.
 - Use risk management reports to gain insights into data handling practices.
 - Investigate and respond to privacy-related alerts.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

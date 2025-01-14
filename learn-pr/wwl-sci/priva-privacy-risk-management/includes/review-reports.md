@@ -1,4 +1,4 @@
-Microsoft Priva Privacy Risk Management provides insights into personal data across your environment through comprehensive reports and visualizations. The Overview page and Reports section in the [Priva portal (preview)](https://purview.microsoft.com/priva) enable admins to monitor sensitive information, track trends, and evaluate risks to improve data privacy practices.
+Microsoft Priva Privacy Risk Management provides insights into personal data across your environment through comprehensive reports and visualizations. The Overview page and Reports section in the [Priva portal (preview)](https://purview.microsoft.com/priva?azure-portal=true) enable admins to monitor sensitive information, track trends, and evaluate risks to improve data privacy practices.
 
 ## Overview page
 
@@ -55,3 +55,7 @@ Regularly reviewing Privacy Risk Management reports allows your organization to:
 - Identify high-risk content and take corrective actions.
 - Monitor trends in personal data usage and overexposure.
 - Optimize policies for better compliance and data protection.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)
