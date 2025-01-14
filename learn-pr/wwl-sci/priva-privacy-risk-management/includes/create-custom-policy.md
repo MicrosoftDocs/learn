@@ -1,4 +1,4 @@
-Microsoft Priva Privacy Risk Management allows organizations to create custom policies tailored to address specific privacy risks. Unlike template-based policies, custom policies provide the flexibility to configure all aspects of a policy, including conditions, notifications, and alerts. These policies can be designed for **data overexposure**, **data transfers**, and **data minimization**, each addressing unique privacy scenarios.
+Microsoft Priva Privacy Risk Management allows organizations to create custom policies tailored to address specific privacy risks. Unlike template-based policies, custom policies provide the flexibility to configure all aspects of a policy, including conditions, notifications, and alerts. These policies can be designed for **data overexposure**, **data transfers**, and **data minimization**, each addressing unique privacy scenarios. This approach is ideal for organizations with unique privacy scenarios requiring tailored configurations.
 
 ### Steps to create a custom policy
 
