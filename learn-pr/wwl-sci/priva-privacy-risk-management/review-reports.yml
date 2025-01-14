@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-privacy-risk-management.review-reports
+title: Review Privacy Risk Management reports
+metadata:
+  title: Review Privacy Risk Management reports
+  description: "Review Privacy Risk Management reports"
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/review-reports.md)]

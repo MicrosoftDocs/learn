@@ -36,11 +36,12 @@ subjects:
 - security
 units:
 - learn.wwl.priva-privacy-risk-management.introduction
-
-- learn.wwl.priva-privacy-risk-management.address-privacy-challenges
-- learn.wwl.priva-privacy-risk-management.priva-overview
-- learn.wwl.priva-privacy-risk-management.navigate-priva-portal
-- learn.wwl.priva-privacy-risk-management.configure-priva-settings
+- learn.wwl.priva-privacy-risk-management.understand-privacy-risk-management
+- learn.wwl.priva-privacy-risk-management.create-policy-from-template
+- learn.wwl.priva-privacy-risk-management.create-custom-policy
+- learn.wwl.priva-privacy-risk-management.manage-policies
+- learn.wwl.priva-privacy-risk-management.investigate-alerts
+- learn.wwl.priva-privacy-risk-management.review-reports
 - learn.wwl.priva-privacy-risk-management.knowledge-check
 - learn.wwl.priva-privacy-risk-management.summary
 

@@ -1,0 +1,77 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-privacy-risk-management.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary reason your organization chose Microsoft Priva Privacy Risk Management?"
+    choices:
+    - content: "To ensure compliance with privacy regulations by managing personal data risks proactively"
+      isCorrect: true
+      explanation: "Correct: Privacy Risk Management helps organizations manage personal data risks and comply with privacy regulations."
+    - content: "To enforce disciplinary actions for employees who mishandle data"
+      isCorrect: false
+      explanation: "Incorrect: Privacy Risk Management focuses on mitigating risks and enabling corrective actions, not disciplinary enforcement."
+    - content: "To create retention labels for archiving older data"
+      isCorrect: false
+      explanation: "Incorrect: While retention labels can be applied, Privacy Risk Management is primarily about mitigating privacy risks, not archiving data."
+
+  - content: "Which policy type should you prioritize to address the overexposure of Social Security numbers and medical histories in internal file shares?"
+    choices:
+    - content: "Data minimization"
+      isCorrect: false
+      explanation: "Incorrect: Data minimization policies focus on identifying and managing older, unused personal data, not overexposure."
+    - content: "Data overexposure"
+      isCorrect: true
+      explanation: "Correct: Data overexposure policies detect when sensitive data is accessible to more users than necessary."
+    - content: "Data transfers"
+      isCorrect: false
+      explanation: "Incorrect: Data transfer policies monitor the movement of personal data, not access within file shares."
+
+  - content: "How can you ensure the effectiveness of a newly created data overexposure policy before it starts generating alerts?"
+    choices:
+    - content: "Enable test mode to review matches and refine conditions"
+      isCorrect: true
+      explanation: "Correct: Test mode allows you to evaluate a policy's performance and adjust settings before activation."
+    - content: "Activate the policy immediately and monitor alerts in real time"
+      isCorrect: false
+      explanation: "Incorrect: Activating the policy without testing could lead to unnecessary alerts and missed opportunities for refinement."
+    - content: "Set thresholds for immediate alerts without running the policy in test mode"
+      isCorrect: false
+      explanation: "Incorrect: Test mode provides essential insights that help refine thresholds and conditions."
+
+  - content: "What insights can be gained from the 'Instances of sensitive info types' report in Privacy Risk Management?"
+    choices:
+    - content: "The number of sensitive information types detected and their locations."
+      isCorrect: true
+      explanation: "Correct: The report highlights the count of sensitive information types and where they're stored."
+    - content: "The total number of employees with access to sensitive data."
+      isCorrect: false
+      explanation: "Incorrect: The report does not track user access, only the presence and location of sensitive information."
+    - content: "The types of personal data shared outside the organization."
+      isCorrect: false
+      explanation: "Incorrect: This information is captured by data transfer policies, not this report."
+
+  - content: "What feature in Privacy Risk Management can notify content owners of potential risks and suggest remediation actions?"
+    choices:
+    - content: "Alerts"
+      isCorrect: false
+      explanation: "Incorrect: Alerts notify admins about policy matches but don't provide direct notifications to content owners."
+    - content: "Notifications"
+      isCorrect: true
+      explanation: "Correct: Notifications alert content owners to risks and provide actionable suggestions for remediation."
+    - content: "Issues"
+      isCorrect: false
+      explanation: "Incorrect: Issues are created by admins for structured investigation and follow-up, not for notifying content owners."
