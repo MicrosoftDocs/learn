@@ -1,4 +1,4 @@
-To complete the steps for protecting your VMware vSphere VMs, you now need to connect instances of VMware SRM on the protected and recovery sites, then configure a protection policy. The process of connecting VMware SRM instances is known as *site pairing*. You can configure site pairing from a Windows client VM, called a *jump box*, that’s deployed on the virtual network that has access to both Azure VMware Solution private clouds. 
+To complete the steps for protecting your VMware vSphere virtual machines (VMs), you now need to connect instances of VMware SRM on the protected and recovery sites, then configure a protection policy. The process of connecting VMware SRM instances is known as *site pairing*. You can configure site pairing from a Windows client VM, called a *jump box*, that’s deployed on the virtual network that has access to both Azure VMware Solution private clouds. 
 
 ## Configure site pairing in vCenter Server
 
@@ -32,7 +32,7 @@ The address you provide for the Platform Services Controller must match the addr
 After you configure the VMware SRM, you should connect both instances of VMware SRM on the protected and recovery sites.
 
 > [!NOTE]
-> The following ports should be open to provide cloud-to-cloud recovery: 80, 443, 902, 1433, 1521, 1526, 5480, 8123, 9086, 31031, 32032, 8043, and 10000-10010
+> The following ports should be open to provide cloud-to-cloud recovery: 80, 443, 902, 1433, 1521, 1526, 5480, 8123, 9086, 31031, 32032, 8043, and 10000-10010.
 
 ### Configure mappings between sites
 
@@ -47,7 +47,7 @@ Before you start protecting the VMs, you first need to map the objects on the pr
 - Storage policy mappings
 
 > [!NOTE]
-> To enable bidirectional protection and reprotect, you can configure reverse mappings to map the objects on the recovery site back to their corresponding objects on the protected site.
+> To enable bidirectional protection and reprotect, configure reverse mappings to map the objects on the recovery site back to their corresponding objects on the protected site.
 
 :::image type="content"  source="../media/5-recovery-networks.png" alt-text="Screenshot of the Recovery networks window with relevant mappings set for objects between the protected site and the recovery site.":::
 
