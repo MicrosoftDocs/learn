@@ -4680,6 +4680,21 @@ achievements:
   title: Monitor data in real-time with Power BI
   summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
   iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
+- uid: learn.django-create-data-driven-websites.trophy
+  type: trophy
+  title: Create data-driven websites by using the Python framework Django
+  summary: Use Django to create data-driven websites.
+  iconUrl: /training/achievements/django-create-data-driven-websites.svg
+- uid: learn.django.views-templates.badge
+  type: badge
+  title: Create views and templates in Django
+  summary: As with every web framework, Django has a templating engine for creating dynamic HTML. The information that the user wants to access is created by this engine and presented through views. We'll explore how the engine works and the process of creating views in Django.
+  iconUrl: /training/achievements/django-views-templates.svg
+- uid: learn.django.deployment.badge
+  type: badge
+  title: Deploy a Django application to Azure by using PostgreSQL
+  summary: To make your application available to the world, you need to host it somewhere. Here you'll deploy your application to Azure and create a database for the data.
+  iconUrl: /training/achievements/django-deployment.svg
 - uid: learn.student-intro-azure.trophy
   type: trophy
   title: Introduction to Azure
