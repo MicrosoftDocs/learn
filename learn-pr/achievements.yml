@@ -4680,3 +4680,18 @@ achievements:
   title: Monitor data in real-time with Power BI
   summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
   iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
+- uid: learn.student-intro-azure.trophy
+  type: trophy
+  title: Introduction to Azure
+  summary: In this path, you'll learn various Azure fundamentals, including cloud concepts, core Azure services, useful tools and programs and more. If you're a beginner, this path is for you.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.student-introduction-to-azure.badge
+  type: badge
+  title: Introduction to Azure for students
+  summary: In this module, you'll learn about cloud computing and how Microsoft Azure and other helpful tools and services can help you solve common problems as a student.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.student-evangelism.student-introduction-github.badge
+  type: badge
+  title: Tooling, Git and GitHub products
+  summary: This module provides an overview of Git, GitHub, and version control. It provides step-by-step guidance for performing basic tasks in GitHub.
+  iconUrl: /learn/achievements/generic-badge.svg
