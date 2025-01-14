@@ -5,13 +5,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Observability and Continuous Improvement
   description: "Learners will discover the significance of observability in providing real-time insights into system performance and identifying inefficiencies. This module emphasizes the importance of continuous improvement through feedback loops, performance monitoring, and market analysis. Learners will explore strategies for adapting to market trends and fostering a culture of innovation within platform engineering teams."
-  ms.date: 01/09/2025
+  ms.date: 01/14/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module-standard-task-based
   ms.service: azure
   ai-usage: ai-assisted
-  hidden: true
 title: Observability and Continuous Improvement
 summary: Learners will discover the significance of observability in providing real-time insights into system performance and identifying inefficiencies. This module emphasizes the importance of continuous improvement through feedback loops, performance monitoring, and market analysis. Learners will explore strategies for adapting to market trends and fostering a culture of innovation within platform engineering teams.
 abstract: |
