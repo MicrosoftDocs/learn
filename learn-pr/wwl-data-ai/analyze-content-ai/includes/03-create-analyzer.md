@@ -28,7 +28,7 @@ In Azure AI Foundry, you can create a Content Understanding project in an existi
 
 After creating a project, the first step in building an analyzer is to define a schema for the content the analyzer will process, and the information it will extract. Azure AI Foundry provides a schema editor interface in which you can upload a file (document, image, audio, or video) on which the schema should be based. You can then apply an appropriate schema template and define the specific fields you want the analyzer to identify.
 
-![Screenshot of the Define schema user interface in Azure AI Foundry.](../media/define-schema.png)
+[ ![Screenshot of the Define schema user interface in Azure AI Foundry.](../media/define-schema.png) ](../media/define-schema-large.png)
 
 > [!NOTE]
 > The templates and field types available in a schema depend on the content type of the file on which the schema is based. Some content types support additional optional functionality, such as extracting barcodes and formulae from text in documents. For more information about using Content Understanding with different content types, see the following articles in the product documentation:
