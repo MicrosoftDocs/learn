@@ -1,4 +1,4 @@
-In the _Getting Started_ module, we shared the narrative for Tailwind Traders. The central operations team and platform team at Tailwind Traders are experienced at managing the company's existing datacenters. The ongoing project to migrate two of the datacenters to Azure is already exposing a few critical learning curves that the company's current skill sets can't address.
+In the _Prepare for successful cloud adoption_ module, we shared the narrative for Tailwind Traders. The central operations team and platform team at Tailwind Traders are experienced at managing the company's existing datacenters. The ongoing project to migrate two of the datacenters to Azure is already exposing a few critical learning curves that the company's current skill sets can't address.
 
 ## Important constraints
 
@@ -64,7 +64,7 @@ Although the company has grudgingly accepted this SLA, the new CIO is not impres
 
 ### Retail innovation
 
-The customer narrative from the _Getting Started_ module introduced you to the retail innovation team within Tailwind Traders. That team was originally a startup that Tailwind Traders acquired. The startup's original CEO is now Tailwind's chief technology officer (CTO). The CTO still runs that division like a startup, by prioritizing experimentation and innovation.
+The retail innovation team was originally a startup that Tailwind Traders acquired. The startup's original CEO is now Tailwind's chief technology officer (CTO). The CTO still runs that division like a startup, by prioritizing experimentation and innovation.
 
 The current processes for operations management require that all new innovations from that team go through a release process. The central operations team within IT reviews the architecture for security, governance, and operations management concerns. After the team is comfortable with the solution, it releases the solution into a centrally managed production environment. This process is expected to continue in the cloud.
 
