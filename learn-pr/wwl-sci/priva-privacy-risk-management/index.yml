@@ -10,7 +10,7 @@ metadata:
   ms.service: purview
   hidden: false
 title: Implement and manage Microsoft Purview Privacy Risk Management
-summary: Understand hhow Microsoft Priva Privacy Risk Management empowers organizations to mitigate privacy risks, safeguard sensitive data, and support compliance with privacy regulations. Discover how to create and manage policies for data overexposure, data transfers, and data minimization, and use insights from reports to improve data handling practices.
+summary: Understand how Microsoft Priva Privacy Risk Management empowers organizations to mitigate privacy risks, safeguard sensitive data, and support compliance with privacy regulations. Discover how to create and manage policies for data overexposure, data transfers, and data minimization, and use insights from reports to improve data handling practices.
 abstract: |
   After completing this module, you'll be able to:
   - Describe the purpose and key capabilities of Microsoft Priva Privacy Risk Management.
