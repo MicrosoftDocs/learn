@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  ms.date: 10/16/2023
+  ms.date: 01/14/2025
   author: fossygirl
   ms.author: carols
   ms.topic: unit
@@ -27,7 +27,7 @@ quiz:
     - content: "Serial console"
       isCorrect: false
       explanation: "Serial console connects over the Azure Linux VM's serial port, but is independent of network connectivity."
-  - content: "Which Azure resource must be provisioned before you can deploy an Azure Linux VM?"
+  - content: "Which Azure resource must you provision before you can deploy an Azure Linux VM?"
     choices:
     - content: "A storage account"
       isCorrect: false
@@ -78,7 +78,7 @@ quiz:
       explanation: "Data disks are intended for storing files that need to persist across operations such as resizing, redeployments, or restarts."
     - content: "Temporary disk"
       isCorrect: true
-      explanation: "The primary purpose of the temporary disk is to store a swap file."
+      explanation: "The temporary disk's primary purpose is to store a swap file."
     - content: "OS disk"
       isCorrect: false
       explanation: "You should use the OS disk to store the OS files."
