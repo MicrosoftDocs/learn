@@ -4680,6 +4680,16 @@ achievements:
   title: Monitor data in real-time with Power BI
   summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
   iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
+- uid: learn.django.models-data.badge
+  type: badge
+  title: Work with models and data in Django
+  summary: Django is focused on data-driven applications, so it provides its own object-relational mapper (ORM). We'll explore ORM concepts and how the Django ORM works. We'll create our own models and set up the database.
+  iconUrl: /training/achievements/django-models-data.svg
+- uid: learn.django.admin-site.badge
+  type: badge
+  title: Work with the Django admin site
+  summary: Probably the most popular feature of the Python framework Django is its built-in admin site, which allows internal users to manage data without having to create a special utility. We'll explore how to configure users to use this site and how to set up the site itself.
+  iconUrl: /training/achievements/django-admin-site.svg
 - uid: learn.django.get-started.badge
   type: badge
   title: Get started with Django
