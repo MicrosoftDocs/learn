@@ -49,7 +49,7 @@ Before you start protecting the VMs, you first need to map the objects on the pr
 > [!NOTE]
 > To enable bidirectional protection and reprotect, configure reverse mappings to map the objects on the recovery site back to their corresponding objects on the protected site.
 
-:::image type="content"  source="../media/5-recovery-networks.png" alt-text="Screenshot of the Recovery networks window with relevant mappings set for objects between the protected site and the recovery site.":::
+:::image type="content"  source="../media/5-configure-network-mappings.png" alt-text="Screenshot of the Recovery networks window with relevant mappings set for objects between the protected site and the recovery site."lightbox="../media/5-configure-network-mappings.png":::
 
 By configuring mappings, you can ensure that the VMs will have access to all resources available at the recovery site. If you don’t create the proper mapping, then you’ve to configure these settings for every VM individually.
 
