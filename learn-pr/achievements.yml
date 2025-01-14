@@ -4680,6 +4680,16 @@ achievements:
   title: Monitor data in real-time with Power BI
   summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
   iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
+- uid: learn.student-evangelism.intro-to-vc-git.trophy
+  type: trophy
+  title: Introduction to version control with Git
+  summary: Git is the leading version control tool, and it's essential for developers. Learn how to use Git to track your own changes and collaborate with others.
+  iconUrl: /training/achievements/student-evangelism/intro-to-vc-git-badge.svg
+- uid: learn.student-evangelism.collaborate-with-git.badge
+  type: badge
+  title: Collaborate with Git
+  summary: Use Git to track changes to source code and collaborate with other developers.
+  iconUrl: /training/achievements/student-evangelism/collaborate-with-git-badge.svg
 - uid: learn.django.models-data.badge
   type: badge
   title: Work with models and data in Django
