@@ -6,14 +6,14 @@ This module introduced the concepts of observability and continuous improvement 
 
 You learned how to describe the benefits and usage of:
 
- -  Discover the significance of observability in providing real-time insights into system performance and identifying inefficiencies.
- -  Understand how continuous improvement creates a feedback loop that drives platform enhancements and optimizes resources.
- -  Learn about benchmarking and performance monitoring to track the success of the platform and identify areas for improvement.
- -  Explore strategies for adapting to market trends and anticipating shifts in user needs or technological landscapes.
- -  Foster a culture of innovation within platform engineering teams to continuously propose and test new ideas.
+- Discover the significance of observability in providing real-time insights into system performance and identifying inefficiencies.
+- Understand how continuous improvement creates a feedback loop that drives platform enhancements and optimizes resources.
+- Learn about benchmarking and performance monitoring to track the success of the platform and identify areas for improvement.
+- Explore strategies for adapting to market trends and anticipating shifts in user needs or technological landscapes.
+- Foster a culture of innovation within platform engineering teams to continuously propose and test new ideas.
 
 ## Learn more
 
- -  [Azure Monitor documentation](/azure/azure-monitor).
- -  [Kusto Query Language (KQL) overview](/kusto/query).
- -  [Log Analytics tutorial](/azure/azure-monitor/logs/log-analytics-tutorial).
+- [Azure Monitor documentation](/azure/azure-monitor).
+- [Kusto Query Language (KQL) overview](/kusto/query).
+- [Log Analytics tutorial](/azure/azure-monitor/logs/log-analytics-tutorial).

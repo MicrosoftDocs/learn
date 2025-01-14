@@ -6,10 +6,10 @@ metadata:
   prefetch-feature-rollout: true
   title: Roadmap Development and Execution
   description: "Roadmap Development and Execution"
-  ms.date: 01/09/2025
+  ms.date: 01/14/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/6-roadmap-development-execution.md)]
