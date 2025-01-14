@@ -38862,6 +38862,81 @@
       "source_path": "learn-pr/student-evangelism/django-deployment/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/student-intro-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-to-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-to-azure/2-cloud-computing-and-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-to-azure/3-tools-and-services.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-to-azure/4-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-to-azure/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-to-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-github/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-github/2-what-is-version-control.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-github/3-set-up-github.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-github/4-when-to-use-github.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-github/5-exercise-pull-requests.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-github/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-github/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/student-introduction-github/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-github/",
+      "redirect_document_id": false
     }
   ]
 }

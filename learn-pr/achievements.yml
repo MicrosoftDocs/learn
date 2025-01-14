@@ -4550,7 +4550,7 @@ achievements:
 - uid: learn.chat-completions-badge
   type: badge
   title: Introduction to chat completion
-  summary: This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Studio playground.
+  summary: This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Foundry portal playground.
   iconUrl: /learn/achievements/generic-badge.svg
 - uid: learn.student-evangelism.predict-meteor-showers-using-python.badge
   type: badge
@@ -4695,3 +4695,18 @@ achievements:
   title: Deploy a Django application to Azure by using PostgreSQL
   summary: To make your application available to the world, you need to host it somewhere. Here you'll deploy your application to Azure and create a database for the data.
   iconUrl: /training/achievements/django-deployment.svg
+- uid: learn.student-intro-azure.trophy
+  type: trophy
+  title: Introduction to Azure
+  summary: In this path, you'll learn various Azure fundamentals, including cloud concepts, core Azure services, useful tools and programs and more. If you're a beginner, this path is for you.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.student-introduction-to-azure.badge
+  type: badge
+  title: Introduction to Azure for students
+  summary: In this module, you'll learn about cloud computing and how Microsoft Azure and other helpful tools and services can help you solve common problems as a student.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.student-evangelism.student-introduction-github.badge
+  type: badge
+  title: Tooling, Git and GitHub products
+  summary: This module provides an overview of Git, GitHub, and version control. It provides step-by-step guidance for performing basic tasks in GitHub.
+  iconUrl: /learn/achievements/generic-badge.svg

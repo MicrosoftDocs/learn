@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-content-ai.introduction
+title: Introduction
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction
+  description: Introduction to analyzing content with Azure AI Content Understanding.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 01/13/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/01-introduction.md)]
+

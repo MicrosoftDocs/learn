@@ -5,7 +5,7 @@ In this workshop, you learned how to create and apply a mitigation plan across t
 - Safety system
 - Model 
 
-While manual evaluation enables human graders to spot-check, output performance, assessing your app with AI assistance in Azure AI Studio is a critical step in discovering model vulnerabilities at scale. Safeguarding your app with Azure AI Content Safety enables you to detect and mitigate problematic text and images. 
+While manual evaluation enables human graders to spot-check, output performance, assessing your app with AI assistance in Azure AI Foundry portal is a critical step in discovering model vulnerabilities at scale. Safeguarding your app with Azure AI Content Safety enables you to detect and mitigate problematic text and images. 
 
 The next step for your app pre-deployment is to operationalize by creating a deployment and operational readiness plan. Operationalizing includes planning for phased delivery, developing an incident response plan, and ensuring you build features and processes to monitor your AI system and user feedback.
 
