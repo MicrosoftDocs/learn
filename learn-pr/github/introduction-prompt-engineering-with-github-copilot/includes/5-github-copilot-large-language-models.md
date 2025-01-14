@@ -39,7 +39,7 @@ Fine-tuning is essential to adapt LLMs for specific tasks, enhancing their perfo
 
 ### LoRA fine-tuning
 
-Traditional full fine-tuning means to train all parts of a neural network, which can be slow and heavily reliant on resources. But LoRA (Learning to Rank) fine-tuning is a clever alternative. It's used to make large pretrained language models (LLMs) work better for specific tasks without redoing all the training.
+Traditional full fine-tuning means to train all parts of a neural network, which can be slow and heavily reliant on resources. But LoRA (Low-Rank Adaptation) fine-tuning is a clever alternative. It's used to make large pretrained language models (LLMs) work better for specific tasks without redoing all the training.
 
 Here's how LoRA works:
 
