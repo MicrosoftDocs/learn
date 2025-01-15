@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/18/2024
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -25,7 +25,7 @@ quiz:
     - content: "Create a `static` or singleton instance using the `HttpClient` class and set `PooledConnectionLifetime`."
       isCorrect: true
       explanation: "Correct. For long-lived clients, create a `static` or singleton instance using the `HttpClient` class and set `PooledConnectionLifetime`."
-  - content: "What is the purpose of `IHttpClientFactory` in an ASP.NET Razor Pages app?"
+  - content: "What is the purpose of `IHttpClientFactory` in an ASP.NET Core app?"
     choices:
     - content: "To handle the creation and disposal of REST operations"
       isCorrect: false
@@ -36,14 +36,14 @@ quiz:
     - content: "To handle the creation and disposal of HTTP clients"
       isCorrect: true
       explanation: "Correct. `IHttpClientFactory` handles the creation and disposal of HTTP clients, which can be used to perform REST operations."
-  - content: "What is the naming convention for handler methods in Razor Pages?"
+  - content: "What is the purpose of the `PooledConnectionLifetime` property in the `HttpClient` class in .NET Core?"
     choices:
-    - content: "The word 'Action' added to the beginning of the HTTP request verb"
-      isCorrect: false
-      explanation: "Incorrect. The word 'On' is added to the beginning of the HTTP request verb for handler methods in Razor Pages."
-    - content: "The word 'Handler' added to the beginning of the HTTP request verb"
-      isCorrect: false
-      explanation: "Incorrect. The word 'On' is added to the beginning of the HTTP request verb for handler methods in Razor Pages."
-    - content: "The word 'On' added to the beginning of the HTTP request verb"
+    - content: "To limit the lifetime of the connection, forcing a DNS lookup when the connection is replaced."
       isCorrect: true
-      explanation: "Correct. Handler methods in Razor Pages follow the naming convention of the word 'On' added to the beginning of the HTTP request verb."
+      explanation: "Correct. The `PooledConnectionLifetime` property is used to limit the lifetime of the connection, forcing a DNS lookup when the connection is replaced."
+    - content: "To allow the HttpClient to track time to live (TTL) durations specified by the DNS server."
+      isCorrect: false
+      explanation: "Incorrect. The HttpClient does not track TTL durations. Instead, it only resolves DNS entries when a connection is created."
+    - content: "To provide a central location for naming and configuring logical HttpClient instances."
+      isCorrect: false
+      explanation: "Incorrect. The `PooledConnectionLifetime` property doesn't provide a central location for naming and configuring HttpClient instances, that is a feature of the `IHttpClientFactory`."

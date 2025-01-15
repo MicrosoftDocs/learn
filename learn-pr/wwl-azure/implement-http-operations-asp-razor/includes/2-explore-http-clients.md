@@ -45,4 +45,3 @@ There are several ways `IHttpClientFactory` can be used in an app:
 
 The best approach depends upon the app's requirements.
 
-
