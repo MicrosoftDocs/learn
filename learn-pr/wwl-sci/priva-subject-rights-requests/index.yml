@@ -35,12 +35,9 @@ subjects:
 - security
 units:
 - learn.wwl.priva-subject-rights-requests.introduction
-- learn.wwl.priva-subject-rights-requests.understand-privacy-risk-management
-- learn.wwl.priva-subject-rights-requests.create-policy-from-template
-- learn.wwl.priva-subject-rights-requests.create-custom-policy
-- learn.wwl.priva-subject-rights-requests.manage-policies
-- learn.wwl.priva-subject-rights-requests.investigate-alerts
-- learn.wwl.priva-subject-rights-requests.review-reports
+- learn.wwl.priva-subject-rights-requests.understand-subject-rights-request-types
+- learn.wwl.priva-subject-rights-requests.subject-rights-requests-m365
+
 - learn.wwl.priva-subject-rights-requests.knowledge-check
 - learn.wwl.priva-subject-rights-requests.summary
 
