@@ -10,7 +10,7 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more.
 
-- [AD DS Troubleshooting](windows-server/identity/ad-ds/manage/ad-ds-troubleshooting)
+- [AD DS Troubleshooting](/windows-server/identity/ad-ds/manage/ad-ds-troubleshooting)
 - [How to restore deleted user accounts and their group memberships in Active Directory](/troubleshoot/windows-server/identity/retore-deleted-accounts-and-groups-in-ad)
 - [How to rebuild the sysvol tree and its content in a domain](/troubleshoot/windows-server/group-policy/rebuild-sysvol-tree-and-content-in-a-domain)
 - [Active Directory Replication Concepts](/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts)
