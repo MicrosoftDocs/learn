@@ -33,7 +33,7 @@ Before you can use change tracking, you must enable change tracking at the datab
 ```sql
 ALTER DATABASE AdventureWorksLT
 SET CHANGE_TRACKING = ON
-(CHANGE_RETENTION = 2 DAYS, AUTO_CLEANUP = ON)
+(CHANGE_RETENTION = 2 DAYS, AUTO_CLEANUP = ON);
 ```
 
 You can also enable change tracking in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](/sql/relational-databases/databases/database-properties-changetracking-page) dialog box. If a database contains memory optimized tables, you can't enable change tracking with SQL Server Management Studio. To enable, use T-SQL.
