@@ -44,9 +44,10 @@ The following table shows the available render modes for rendering Razor compone
 
 | Name | Description | Render location | Interactive |
 |--|--|--|--|
-| Static Server | Static server-side rendering (static SSR) | Server | No | Interactive Server | Interactive server-side rendering (interactive SSR) using Blazor Server. | Server | Yes |
+| Static Server | Static server-side rendering (static SSR) | Server | No | 
 | Interactive WebAssembly | Client-side rendering (CSR) using Blazor WebAssembly. | Client | Yes |
 | Interactive Auto | Interactive SSR using Blazor Server initially and then CSR on subsequent visits after the Blazor bundle is downloaded. | Server, then client | Yes |
+| Interactive Server | Interactive server-side rendering (interactive SSR) using Blazor Server. | Server | Yes |
 
 ## Enable support for interactive render modes
 
