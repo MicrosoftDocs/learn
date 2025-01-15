@@ -78,7 +78,7 @@ Use the following procedure to configure replication for the VM:
 
 8. On the **Protection group** tab, add the VMs to an existing or a new protection group. Alternately, you can choose not to add the VMs to any protection group at this stage. Select **Next**.
 
-9. On the **Ready to complete** page, review your settings, and then select **Finish**.
+9. On the **Ready to complete** page, review your settings, then select **Finish**.
 
     > [!NOTE]
     > You can configure replications for powered-off VMs, but the data synchronization begins when the VM is powered on. While the source VM is powered off, the replication displays a **Not active** status.
@@ -91,18 +91,18 @@ You can create a protection group containing multiple VMs that VMware SRM protec
 
 You must assign the VMs that are part of the replication plan to an existing resource pool, folder, and network on the recovery site. You can configure these settings in the inventory mappings or individually for every VM in the protection groups.
 
-VMware Site Recovery Manager creates placeholder VMs on the recovery site, and then applies the inventory mappings to each VM in the group. vSphere Replication then synchronizes the disk files of the replication target VM according to the recovery point objective that you set when you configured vSphere Replication on the VM.
+VMware Site Recovery Manager creates placeholder VMs on the recovery site, then applies the inventory mappings to each VM in the group. vSphere Replication then synchronizes the disk files of the replication target VM according to the recovery point objective that you set when you configured vSphere Replication on the VM.
 
 Use the following procedure to create vSphere Replication protection groups:
 
-1. In the vSphere Client or the vSphere web client, select **Site Recovery**, and then select **Open Site Recovery**.
+1. In the vSphere Client or the vSphere web client, select **Site Recovery**, then select **Open Site Recovery**.
 
-2. On the **Site Recovery** home tab, select a site pair, and then select **View Details**.
+2. On the **Site Recovery** home tab, select a site pair, then select **View Details**.
 
     > [!NOTE]
     > You might be prompted to sign in with **cloudadmin** credentials.
 
-3. Select the **Protection Groups** tab, and then select **New** to create a protection group.
+3. Select the **Protection Groups** tab, then select **New Protection Group** to create a protection group.
 
 4. On the **Name and direction** page, enter a name and description for the protection group, select a direction, then select **Next**.
 
@@ -138,7 +138,7 @@ Use the following procedure to create a recovery plan:
     > [!NOTE]
     > You might be prompted to sign in with **cloudadmin** credentials.
 
-3. Select the **Recovery Plans** tab, and then select **New** to create a recovery plan.
+3. Select the **Recovery Plans** tab, then select **New** to create a recovery plan.
 
 4. On the **Name and direction** page, enter the name and description of the recovery plan, select the direction of the replication, then select **Next**.
 
