@@ -1,7 +1,7 @@
 ---
 author: mumian
 ms.topic: include
-ms.date: 06/09/2021
+ms.date: 01/15/2025
 ms.author: jgao
 ---
 ### Sign in to Azure
