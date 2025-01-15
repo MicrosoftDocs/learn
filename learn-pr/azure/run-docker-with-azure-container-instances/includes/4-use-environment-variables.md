@@ -1,6 +1,6 @@
 Environment variables allow you to dynamically configure the application or script the container runs. You can use the Azure CLI, PowerShell, or the Azure portal to set variables when you create the container. Secured environment variables prevent sensitive information from displaying in the container's output.
 
-Create an Azure Cosmos DB instance and use environment variables to pass the connection information to an Azure container instance. An application in the container uses the variables to write and read data from Azure Cosmos DB. Create both an environment variable and a secured environment variable so that you can see the difference between them.
+Here, you create an Azure Cosmos DB instance and use environment variables to pass the connection information to an Azure container instance. An application in the container uses the variables to write and read data from Azure Cosmos DB. you create both an environment variable and a secured environment variable so that you can see the difference between them.
 
 ## Deploy Azure Cosmos DB
 
@@ -36,7 +36,7 @@ Create an Azure Cosmos DB instance and use environment variables to pass the con
 
 ## Deploy a container that works with your database
 
-Create an Azure container instance that can read from and write records to your Azure Cosmos DB instance.
+Next, you create an Azure container instance that can read from and write records to your Azure Cosmos DB instance.
 
 The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT` and `COSMOS_DB_MASTERKEY`, hold the values you need to connect to the Azure Cosmos DB instance.
 
@@ -83,7 +83,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
 
 In the previous section, you used two environment variables to create your container. By default, these environment variables are accessible through the Azure portal and command-line tools in plain text.
 
-In this section, learn how to prevent sensitive information, such as connection keys, from being displayed in plain text.
+In this section, you learn how to prevent sensitive information such as connection keys from being displayed in plain text.
 
 1. Let's start by seeing the current behavior in action. Run the following `az container show` command to display your container's environment variables:
 
