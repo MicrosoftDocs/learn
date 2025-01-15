@@ -11,7 +11,7 @@ ms.author: jgao
 
     :::image type="content" source="media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash option shown.":::
 
-  If a shell other than **bash** appears, select the shell dropdown arrow, and then select **Git Bash**.
+    If a shell other than **bash** appears, select the shell dropdown arrow, and then select **Git Bash**.
 
     :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and Git Bash Default selected.":::
 
