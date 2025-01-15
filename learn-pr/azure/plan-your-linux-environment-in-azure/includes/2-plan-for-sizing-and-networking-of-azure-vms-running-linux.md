@@ -2,13 +2,13 @@ Azure VM is a popular infrastructure-as-a-service (IaaS) compute resource type i
 
 This unit describes overall factors and considerations for planning Azure Linux VM deployments. The planning process should consider the compute, networking, and storage aspects of the VM configuration. Some of these characteristics are OS–specific, with implementation details varying across different Linux distributions.
 
-Microsoft partners with prominent Linux vendors to integrate their products with the Azure platform. To fully benefit from this integration, you can create Azure VMs from prebuilt images for various popular Linux distributions, such as SUSE, Red Hat, and Ubuntu. Optionally, you can build a custom image of a Linux distribution to run in the cloud environment. In this case, there might be more steps in your Azure VM provisioning process.
+Microsoft partners work with prominent Linux vendors to integrate their products with the Azure platform. To fully benefit from this integration, you can create Azure VMs from prebuilt images for various popular Linux distributions, such as SUSE, Red Hat, and Ubuntu. Optionally, you can build a custom image of a Linux distribution to run in the cloud environment. In this case, there might be more steps in your Azure VM provisioning process.
 
 In either case, this learning module can help further optimize your resulting deployment. Optimization requires you to have a strong understanding of the Azure VM resource and its dependencies.
 
 ## Understand resource dependencies
 
-When you create an Azure VM, you also need to create several associated resources that the Azure VM depends on to provide full functionality to the virtualized OS. These resources include:
+When you create an Azure VM, you also need to create several associated resources on which the Azure VM depends to provide full functionality to the virtualized OS. These resources include:
 
 - Virtual disks to store the OS, applications, and data.
 - A virtual network with one or more subnets to connect the Azure VM to other Azure services, or to your on-premises datacenters.
@@ -18,7 +18,7 @@ When you create an Azure VM, you also need to create several associated resource
   > Every network interface must have at least one private IP address assigned to it dynamically or statically. Private IP addresses aren't separate Azure resources, but are part of the subnet configuration.
 
 - A resource group to host the Azure VM.
-- Optionally, a public IP address associated with the VM's network interface, to provide direct inbound access to the VM from the internet.
+- Optionally, a public IP address associated with the VM's network interface to provide direct inbound access to the VM from the internet.
 
 Now that you understand the Azure VM resource dependencies, you can begin planning for VM sizing.
 
@@ -28,14 +28,14 @@ To determine the right size for your Azure VM, you need to consider its intended
 
 - Processing power
 - Memory
-- Storage capacity 
+- Storage capacity
 - Performance
 - Support for advanced networking features
 
 > [!IMPORTANT]
-> Azure VMs have virtual CPU (vCPU) quota limits, which you should account for in planning. To raise quota limits after deployment, you must submit an online request to Azure Support.
+> Azure VMs have virtual CPU (vCPU) quota limits for which you should account in planning. To raise quota limits after deployment, you must submit an online request to Azure Support.
 
-Azure offers a wide range of sizes with different specifications and price points to meet a wide variety of needs. VM sizes are grouped into several categories that represent the types of workloads they're optimized for. Each category includes one or more series, or *families*, which share common underlying hardware characteristics but offer a range of different sizes.
+Azure offers a wide range of sizes with different specifications and price points to meet a wide variety of needs. VM sizes are grouped into several categories that represent the types of workloads for which they're optimized. Each category includes one or more series, or *families*, which share common underlying hardware characteristics but offer a range of different sizes.
 
 The following list shows the workload types and common use cases for each workload type. Each workload type has corresponding families that include various sizes.
 
@@ -48,13 +48,13 @@ The following list shows the workload types and common use cases for each worklo
 
 When you plan for Azure VM sizes, also consider the following factors:
 
-- Changing the Azure VM series or size, while straightforward and commonplace, requires an OS restart. To avoid restarts, size the VM appropriately from the beginning if possible.
+- Changing the Azure VM series or size, while straightforward and commonplace, requires an OS restart. To avoid restarts, size the VM appropriately from the beginning, if possible.
 - VM size availability varies by region, so account for regional availability when you plan your deployment.
 - The maximum number of disks you can attach to an Azure VM depends on its size.
 
 ### Other size considerations
 
-Consider using the [Microsoft Azure VM Selector](https://azure.microsoft.com/pricing/vm-selector/) to determine the most suitable VM size based on the workload type, OS, software installed, and deployment region.
+Consider using [Microsoft Copilot in Azure](https://techcommunity.microsoft.com/blog/azurecompute/using-microsoft-copilot-in-azure-to-find-the-best-vm-size-for-you/4356049) to determine the most suitable VM size based on the workload type, OS, software installed, and deployment region.
 
 If you plan to use the same or similar size Azure VMs in the same region over an extended period, consider using [Azure Reservations](/azure/cost-management-billing/reservations/save-compute-costs-reservations) to reduce compute cost by up to 72 percent.
 
@@ -92,7 +92,7 @@ To authenticate over an SSH connection, you can use a username and password or a
 Even with SSH keys, by default you must open connectivity to a public IP address associated with the target Azure VM's network adapter. This public IP is vulnerable to external threats and represents a potential attack vector. To mitigate this risk, consider implementing Azure Bastion or just-in-time (JIT) VM access.
 
 > [!NOTE]
-> In hybrid scenarios, to eliminate the need for public IP addresses when connecting from your on-premises environment to Azure VMs, you can use a site-to-site virtual private network (VPN) or Azure ExpressRoute.
+> To eliminate the need for public IP addresses when connecting from your on-premises environment to Azure VMs in hybrid scenarios, you can use a site-to-site virtual private network (VPN) or Azure ExpressRoute.
 
 ### Azure Bastion
 
@@ -101,4 +101,3 @@ You deploy the Azure Bastion service into a dedicated subnet of a virtual networ
 ### JIT VM Access
 
 JIT VM access is a Microsoft Defender for Cloud feature that limits access to a public IP address associated with an Azure VM's network interface. These limits dynamically adjust the NSG to allow incoming connections only from a designated IP address range during a designated time window. As with Azure Bastion, users must authenticate before initiating a connection from the Azure portal.
-
