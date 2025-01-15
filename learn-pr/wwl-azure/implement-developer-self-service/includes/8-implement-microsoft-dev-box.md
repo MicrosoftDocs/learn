@@ -6,7 +6,7 @@ In this lab, you'll learn about
 
 ## Objectives
 
-After completing this lab, you'll be able to:
+After completing this lab, you'll:
 
 - Implement a Microsoft Dev Box environment
 - Customize a Microsoft Dev Box environment
