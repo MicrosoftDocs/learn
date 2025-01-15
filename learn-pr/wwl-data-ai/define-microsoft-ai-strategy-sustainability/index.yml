@@ -7,10 +7,11 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
+  ms.service: microsoft-cloud-sustainability
   ms.custom:
   - N/A
   - ai-learning-hub
-  ms.service: microsoft-cloud-sustainability
+  - microsoft-cloud-sustainability
   ai-usage: human-only
 title: Define a Microsoft AI strategy to create business value in sustainability
 summary: This module is designed to help sustainability professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
@@ -30,6 +31,7 @@ roles:
 - business-user
 products:
 - azure-openai
+- microsoft-cloud-sustainability
 units:
 - learn.wwl.define-microsoft-ai-strategy-sustainability.introduction
 - learn.wwl.define-microsoft-ai-strategy-sustainability.1b-ai-sustainability
