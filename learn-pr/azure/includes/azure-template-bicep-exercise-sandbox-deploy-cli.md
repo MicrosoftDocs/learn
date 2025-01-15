@@ -1,7 +1,7 @@
 ---
 author: mumian
 ms.topic: include
-ms.date: 01/08/2025
+ms.date: 01/15/2025
 ms.author: jgao
 ---
 [!INCLUDE [Introduction (CLI)](azure-template-exercise-sandbox-intro-cli.md)]
