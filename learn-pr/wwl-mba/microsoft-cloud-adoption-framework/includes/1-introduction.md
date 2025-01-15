@@ -2,17 +2,16 @@ The Cloud Adoption Framework for Azure is a collection of documentation, technic
 
 The cloud fundamentally changes how organizations procure and use technology resources. You can use the cloud to provision and consume resources only when needed. The cloud offers tremendous flexibility in design choices, but you need a proven and consistent methodology to adopt cloud technologies. The Cloud Adoption Framework meets that need. It can help guide your decisions throughout cloud adoption to accelerate a specific business objective.
 
-The Cloud Adoption Framework includes nine main stages:
+The Cloud Adoption Framework includes eight methodologies:
 
 - Strategy
 - Plan
 - Ready
 - Migrate
 - Innovate
-- Secure
-- Manage
 - Govern
-- Organize
+- Manage
+- Secure
 
 In this module, you will:
 
