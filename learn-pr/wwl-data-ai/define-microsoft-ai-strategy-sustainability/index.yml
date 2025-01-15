@@ -31,7 +31,6 @@ roles:
 - business-user
 products:
 - azure-openai
-- microsoft-cloud-sustainability
 units:
 - learn.wwl.define-microsoft-ai-strategy-sustainability.introduction
 - learn.wwl.define-microsoft-ai-strategy-sustainability.1b-ai-sustainability
