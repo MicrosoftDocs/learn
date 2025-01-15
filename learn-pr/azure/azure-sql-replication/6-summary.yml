@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   unitType: learning-content
   title: Summary
-  description: "Reviewing all Azure SQL data tracking tools covered in this Learn Module - change data capture (CDC), SQL Data Sync, and change tracking."
-  ms.date: 08/30/2023
+  description: "Reviewing all Azure SQL data tracking tools covered in this Learn Module - change data capture (CDC) and change tracking."
+  ms.date: 01/15/2025
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/6-summary.md)]
 
