@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Design for access reviews
   description: "Design for access reviews"
-  ms.date: 12/31/2024
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 46
+durationInMinutes: 6
 content: |
   [!include[](includes/8-design-for-access-reviews.md)]
