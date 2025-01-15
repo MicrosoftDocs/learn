@@ -7,7 +7,7 @@ ms.author: jgao
 
 1. On the **Terminal** menu, select **New Terminal**. The terminal window usually opens in the lower half of your screen.
 
-1. If the terminal window displays **pwsh** or **powershell** on the right side, it means the correct shell is already open. Alternatively, if you see a powershell shell icon on the right, you can select it to launch the shell.
+1. If the terminal window displays **pwsh** or **powershell** on the right side, it means the correct shell is already open. Alternatively, if you see a PowerShell shell icon on the right, you can select it to launch the shell.
 
     :::image type="content" source="media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the pwsh option displayed in the shell dropdown list.":::
 
