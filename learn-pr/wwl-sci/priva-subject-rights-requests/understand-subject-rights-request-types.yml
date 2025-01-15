@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-subject-rights-requests.understand-subject-rights-request-types
+title: Understand subject rights request types in Microsoft Priva
+metadata:
+  title: Understand subject rights request types in Microsoft Priva
+  description: "Understand subject rights request types in Microsoft Priva"
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/understand-subject-rights-request-types.md)]

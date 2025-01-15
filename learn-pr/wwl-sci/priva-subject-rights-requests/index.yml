@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.priva-subject-rights-requests
+metadata:
+  title: Implement and manage Microsoft Purview Privacy Risk Management
+  description: "Implement and manage Microsoft Purview Privacy Risk Management."
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Implement and manage Microsoft Purview Privacy Risk Management
+summary: Understand hhow Microsoft Priva Privacy Risk Management empowers organizations to mitigate privacy risks, safeguard sensitive data, and support compliance with privacy regulations. Discover how to create and manage policies for data overexposure, data transfers, and data minimization, and use insights from reports to improve data handling practices.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the purpose and key capabilities of Microsoft Priva Privacy Risk Management.
+  - Create and manage policies using templates or custom configurations to address privacy risks.
+  - Investigate and respond to alerts triggered by privacy policies.
+  - Use reports to gain insights into personal data handling and refine policies to align with organizational goals.
+prerequisites: |
+  - Familiarity with Microsoft 365 environments.
+  - Basic understanding of privacy regulations and data protection requirements.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- privacy-manager
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.priva-subject-rights-requests.introduction
+- learn.wwl.priva-subject-rights-requests.understand-privacy-risk-management
+- learn.wwl.priva-subject-rights-requests.create-policy-from-template
+- learn.wwl.priva-subject-rights-requests.create-custom-policy
+- learn.wwl.priva-subject-rights-requests.manage-policies
+- learn.wwl.priva-subject-rights-requests.investigate-alerts
+- learn.wwl.priva-subject-rights-requests.review-reports
+- learn.wwl.priva-subject-rights-requests.knowledge-check
+- learn.wwl.priva-subject-rights-requests.summary
+
+badge:
+  uid: learn.wwl.priva-subject-rights-requests.badge
