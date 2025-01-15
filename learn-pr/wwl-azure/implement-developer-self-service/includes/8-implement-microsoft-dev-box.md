@@ -13,7 +13,7 @@ After completing this lab, you'll be able to:
 
 ## Requirements
 
-- A Microsoft Entra tenant with 3 pre-created user accounts (and, optionally 3 pre-created Microsoft Entra groups) representing 3 different roles involved in Microsoft Dev Box deployments. For the sake of clarity, the user and group names in the lab instructions will be matching the information in the following table:
+- A Microsoft Entra tenant with three pre-created user accounts (and, optionally three pre-created Microsoft Entra groups) representing three different roles involved in Microsoft Dev Box deployments. For the sake of clarity, the user and group names in the lab instructions will be matching the information in the following table:
 
   | User              | Group                        | Role                  |
   | ----------------- | ---------------------------- | --------------------- |
