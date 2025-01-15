@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-app-service-plans.implement-azure
 title: Implement Azure App Service plans
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Azure App Service plans
   description: "Implement Azure App Service plans"
-  ms.date: 12/17/2024
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
