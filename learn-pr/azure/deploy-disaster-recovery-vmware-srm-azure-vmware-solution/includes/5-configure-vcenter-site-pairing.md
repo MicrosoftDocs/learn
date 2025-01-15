@@ -127,7 +127,7 @@ Use the following procedure to create vSphere Replication protection groups:
 
 ### Create, test, and run recovery plans
 
-Recovery plans control every step of the recovery process. They control the sequence in which VMware SRM powers VMs on and off. You can create a recovery plan that contains one or multiple protection groups. You can also include a protection group in multiple recovery plans. This enables you to choose between recovery plans to decide how to recover the VM.
+Recovery plans control every step of the recovery process. They control the sequence in which VMware SRM powers VMs on and off. You can create a recovery plan that contains one or multiple protection groups. You can also include a protection group in multiple recovery plans. This enables you to choose between recovery plans and decide how to recover the VM.
 
 Use the following procedure to create a recovery plan:
 
