@@ -46,4 +46,4 @@ quiz:
       explanation: "Incorrect. The HttpClient does not track TTL durations. Instead, it only resolves DNS entries when a connection is created."
     - content: "To provide a central location for naming and configuring logical HttpClient instances."
       isCorrect: false
-      explanation: "Incorrect. The `PooledConnectionLifetime` property doesn't provide a central location for naming and configuring HttpClient instances, that is a feature of the `IHttpClientFactory`."
+      explanation: "Incorrect. The `PooledConnectionLifetime` property doesn't provide a central location for naming and configuring HttpClient instances that is a feature of the `IHttpClientFactory`."

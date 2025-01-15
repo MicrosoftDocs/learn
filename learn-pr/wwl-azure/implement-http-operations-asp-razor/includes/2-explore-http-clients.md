@@ -30,7 +30,7 @@ When you call any of the [AddHttpClient](/dotnet/api/microsoft.extensions.depend
 * Exposes the `HttpClient` class as a dependency injection-ready type.
 * Provides a central location for naming and configuring logical `HttpClient` instances.
 * Codifies the concept of outgoing middleware via delegating handlers in `HttpClient`.
-* Provides extension methods for Polly-based middleware to take advantage of delegating handlers in `HttpClient`.
+* Provides extension methods for Polly based middleware to take advantage of delegating handlers in `HttpClient`.
 * Manages the caching and lifetime of underlying [HttpClientHandler](/dotnet/api/system.net.http.httpclienthandler) instances. Automatic management avoids common Domain Name System (DNS) problems that occur when manually managing `HttpClient` lifetimes.
 *   Adds a configurable logging experience for all requests sent through clients created by the factory.
 
