@@ -47,7 +47,7 @@ quiz:
       explanation: "Correct! The function cdc.fn_cdc_get_all_changes_<capture_instance> is used to query for all changes on table within the specified LSN range."
     - content: "cdc.fn_cdc_get_net_changes_<capture_instance>"
       isCorrect: false
-      explanation: "If the capture instance is configured to support net changes, the enumeration function cdc.fn_cdc_get_net_changes_<capture_instance> also gets created which returns one net change row for each source row changed within the specified LSN range."
+      explanation: "If the capture instance is configured to support net changes, the enumeration function `cdc.fn_cdc_get_net_changes_<capture_instance>` also gets created which returns one net change row for each source row changed within the specified LSN range."
   - content: "Which tool should I use if I want to identify whether an insert / update / delete was executed on my data, but without needing a historical record of my data changes?"
     choices:
     - content: "Change data capture (CDC)"

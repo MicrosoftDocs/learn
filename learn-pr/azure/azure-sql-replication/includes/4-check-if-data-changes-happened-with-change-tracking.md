@@ -53,7 +53,7 @@ The following example shows how to enable change tracking for a table by using `
 ```sql
 ALTER TABLE SalesLT.Product
 ENABLE CHANGE_TRACKING
-WITH (TRACK_COLUMNS_UPDATED = ON)
+WITH (TRACK_COLUMNS_UPDATED = ON);
 ```
 
 You can also enable change tracking for a table in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](/sql/relational-databases/databases/database-properties-changetracking-page) dialog box.
