@@ -41,10 +41,10 @@ The following code examples show how the `@` character can be used to implement 
 
 The following code sample shows how to use a combination of .NET code and HTML to create the body of a table from a data model. The `@foreach`statement iterates through the `Model.FruitModels` data model and generates a table row containing the fruit name and if it's available.
 
-```cshtml
+```razor
 @* Code is truncated for readability. *@
 <tbody>
-    @foreach (var obj in Model.FruitModels)
+    @foreach (var obj in _fruitList ?? [])
     {
         <tr>
             <td>@obj.name</td>
@@ -58,5 +58,5 @@ The following code sample shows how to use a combination of .NET code and HTML t
 
 To learn more about Razor syntax, visit the following pages:
 
-* [Razor syntax reference for ASP.NET Core](/aspnet/core/mvc/views/razor?view=aspnetcore-7.0&preserve-view=true)
+* [Razor syntax reference for ASP.NET Core .NET 8](/aspnet/core/mvc/views/razor?view=aspnetcore-8.0)
 * [Introduction to ASP.NET Web Programming Using the Razor Syntax (C#)](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c#the-top-8-programming-tips)
