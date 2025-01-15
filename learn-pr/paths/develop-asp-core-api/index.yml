@@ -2,7 +2,7 @@
 uid: learn.wwl.develop-asp-core-api
 metadata:
   title: Develop an ASP.NET Core web app that consumes an API
-  description: Learn how to gather information from API documentation and perform HTTP operations in an [ASP.NET](http://ASP.NET) Core Razor Pages web app.
+  description: Learn how to gather information from API documentation and perform HTTP operations in an&nbsp;[ASP.NET](https://asp.net/)&nbsp;Core Blazor web app.
   ms.date: 01/15/2025
   author: wwlpublish
   ms.author: jeffko
@@ -14,7 +14,7 @@ prerequisites: |
   -   Ability to write HTML at an intermediate level
   -   Knowledge of RESTful services and HTTP action verbs
 summary: |
-  Learn how to gather information from API documentation and perform HTTP operations in an [ASP.NET](http://ASP.NET) Core Blazor web app.
+  Learn how to gather information from API documentation and perform HTTP operations in an&nbsp;[ASP.NET](https://asp.net/)&nbsp;Core Blazor web app.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
