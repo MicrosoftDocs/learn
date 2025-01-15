@@ -1,4 +1,4 @@
-Once you've installed the Content Hub solutions, you can connect Microsoft Defender and Azure-related services in the Data Connector page configuration section in just a few mouse clicks.  It's easy to overlook specific considerations for each connector.  This module demonstrates the connecting of four services. Each service sends data to different Data Types (tables).
+Once you've installed the Content Hub solutions, you can connect Microsoft 365 and Azure-related services in the Data Connector page configuration section in just a few mouse clicks.  It's easy to overlook specific considerations for each connector.  This module demonstrates the connecting of four services. Each service sends data to different Data Types (tables).
 
 First is the Microsoft 365 connector. The Configuration option allows for the sending of Exchange, SharePoint, and Teams data.  Based on your organization's specific needs, you can decide which data to ingest. The Data types show that all the data resides in the OfficeActivity table.
 
