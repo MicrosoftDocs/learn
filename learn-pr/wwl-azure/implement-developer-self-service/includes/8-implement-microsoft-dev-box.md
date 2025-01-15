@@ -1,12 +1,14 @@
-**Estimated time:** 60 minutes.
+**Estimated Time**: 60 minutes
 
 ## Scenario
 
-In this lab, you'll learn about
+In this lab, you'll learn about Microsoft Dev Box, a self-service developer environment provisioning service that enables developers to create and manage their development environments.
+
+You'll implement a Microsoft Dev Box environment and customize it to meet the needs of your development team.
 
 ## Objectives
 
-After completing this lab, you'll:
+After completing this lab, you can:
 
 - Implement a Microsoft Dev Box environment
 - Customize a Microsoft Dev Box environment
