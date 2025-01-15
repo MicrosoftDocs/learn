@@ -22,6 +22,6 @@ After the solution is installed, connect the data connector.
 
 1. Select whether alerts from Microsoft Entra ID Protection automatically generate incidents by selecting **Enable**.
 
-:::image type="content" source="../media/azure-active-directory-protocol.png" alt-text="Screen shot of the Microsoft Entra ID Protection connector page.":::
+:::image type="content" source="../media/microsoft-entra-id-protection.png" alt-text="Screen shot of the Microsoft Entra ID Protection connector page.":::
 
 If you enable creating incidents, the default analytics rule "Create incidents based on Microsoft Entra ID Protection alerts" is enabled with default values. You can edit this analytical rule on the Analytics page.

@@ -20,4 +20,4 @@ After the solution is installed, connect the data connector.
 
 1. Mark the checkboxes next to the logs you want to stream into Microsoft Sentinel, and select **Connect**.
 
-:::image type="content" source="../media/azure-active-directory.png" alt-text="Screen shot of the Microsoft Entra connector page.":::
+:::image type="content" source="../media/microsoft-entra-id.png" alt-text="Screen shot of the Microsoft Entra connector page.":::
