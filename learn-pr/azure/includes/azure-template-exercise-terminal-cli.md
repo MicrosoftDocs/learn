@@ -1,7 +1,7 @@
 ---
 author: mumian
 ms.topic: include
-ms.date: 06/06/2024
+ms.date: 01/15/2025
 ms.author: jgao
 ---
 
@@ -11,11 +11,11 @@ ms.author: jgao
 
     :::image type="content" source="media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash option shown.":::
 
-1. If a shell other than **bash** appears, select the shell dropdown arrow, and then select **Azure Cloud Shell (Bash)**.
+1. If a shell other than **bash** appears, select the shell dropdown arrow, and then select **Git Bash**.
 
     :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and Git Bash Default selected.":::
 
-1. In the list of terminal shells, select **bash**.
+1. In the list of terminal shells on the right, select **bash**. You might need to enlarge the pane to see the **bash** label, otherwise, it only shows the icon.
 
    :::image type="content" source="media/select-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal selected.":::
 
