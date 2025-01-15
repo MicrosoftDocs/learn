@@ -34,7 +34,7 @@ roles:
 products:
 - azure-openai
 - industry-solutions
-- mscloud-healhcare
+- mscloud-healthcare
 subjects:
 - data-management
 units:
