@@ -33,6 +33,8 @@ roles:
 - business-user
 products:
 - azure-openai
+- industry-solutions
+- mscloud-healhcare
 subjects:
 - data-management
 units:
