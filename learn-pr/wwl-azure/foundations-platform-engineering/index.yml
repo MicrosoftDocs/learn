@@ -5,13 +5,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Foundations of Platform Engineering
   description: "This module introduces the core concepts and importance of platform engineering. It explores how platform engineering enhances developer productivity, accelerates time to value, and supports digital transformation. Learners will understand the strategic value of platform engineering as the foundation for both technical success and alignment with broader business goals."
-  ms.date: 01/09/2025
+  ms.date: 01/14/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: module-standard-task-based
   ms.service: azure
   ai-usage: ai-assisted
-  hidden: true
 title: Foundations of Platform Engineering
 summary: This module introduces the core concepts and importance of platform engineering. It explores how platform engineering enhances developer productivity, accelerates time-to-value, and supports digital transformation. Learners will understand the strategic value of platform engineering as the foundation for both technical success and alignment with broader business goals.
 abstract: |
