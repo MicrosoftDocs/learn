@@ -1,6 +1,6 @@
 Environment variables allow you to dynamically configure the application or script the container runs. You can use the Azure CLI, PowerShell, or the Azure portal to set variables when you create the container. Secured environment variables prevent sensitive information from displaying in the container's output.
 
-Here, you create an Azure Cosmos DB instance and use environment variables to pass the connection information to an Azure container instance. An application in the container uses the variables to write and read data from Azure Cosmos DB. you create both an environment variable and a secured environment variable so that you can see the difference between them.
+Here, you create an Azure Cosmos DB instance and use environment variables to pass the connection information to an Azure container instance. An application in the container uses the variables to write and read data from Azure Cosmos DB. You create both an environment variable and a secured environment variable so that you can see the difference between them.
 
 ## Deploy Azure Cosmos DB
 
