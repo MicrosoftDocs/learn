@@ -46,12 +46,12 @@ In this exercise, you'll replace the current HTML fields with a Blazor component
 1. In the file explorer, expand **Shared**, then select **AddressEditor.razor**.
 
 1. Select the **Edit** menu, then select **Replace**.
-1. In the first field, enter `<input` in the replace field enter `<InputText`, then select replace all.
+1. In the first field enter `<input`, in the replace field enter `<InputText`, and then select replace all.
 
     :::image type="content" source="../media/5-replace-input-elements.png" alt-text="Screenshot of Visual Studio Code and the text replace dialog.":::
 
 1. Select the **Edit** menu, then select **Replace**.
-1. In the first field, enter `@bind=` in the replace field enter `@bind-Value=`, then select replace all.
+1. In the first field enter `@bind=`, in the replace field enter `@bind-Value=`, and then select replace all.
 1. Remove the `@ref="startName"` code on the Name field.
 1. Remove all the code below the Parameter declaration in the `@code` block. The block should now look like this.
 

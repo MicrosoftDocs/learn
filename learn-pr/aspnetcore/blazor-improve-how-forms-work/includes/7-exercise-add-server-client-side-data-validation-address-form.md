@@ -67,7 +67,7 @@ In this exercise, you'll replace the current server-side validation to use data 
 
     :::image type="content" source="../media/7-show-validation-errors.png" alt-text="Screenshot of the error messages for each field.":::
 
-    This interaction improves the error checks for each field, but the error for each field would be much better next to the field it's related to.
+    This interaction improves the error checks for each field, but the error for each field would be better next to the field it's related to.
 
 1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.
 

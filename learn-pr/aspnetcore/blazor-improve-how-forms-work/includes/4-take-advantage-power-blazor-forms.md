@@ -85,7 +85,7 @@ The following image shows an example of the page running:
 
 The HTML `<form>` element supports the `<input>` element to enable the user to enter data. The `<input>` has a `type` property that specifies the type of the input and how it should be displayed; as a number, a text box, a radio button, a check box, a button, and so on.
 
-Blazor has its own set of components designed to work specifically with the `<EditForm>` element and support data binding among other features. The following table lists these components. When Blazor renders a page containing these components, they are converted to the corresponding HTML `<input>` elements listed in the table. Some of the Blazor components are generic; the type parameter is ascertained by the Blazor runtime depending on the type of the data bound to the element:
+Blazor has its own set of components designed to work specifically with the `<EditForm>` element and support data binding among other features. The following table lists these components. When Blazor renders a page containing these components, they're converted to the corresponding HTML `<input>` elements listed in the table. Some of the Blazor components are generic; the Blazor runtime ascertains the type paramater depending on the type of the data bound to the element:
 
 | Input component           | Rendered as (HTML)           |
 |---------------------------|------------------------------|
@@ -180,12 +180,12 @@ When you run the form, it looks like this:
 
 ## Handle form submission
 
-You've seen that you can use an `EditForm` to modify data in the underlying model. When the changes are complete, you can submit the form to validate the data on the server and save the changes. Blazor supports two types of validation; declarative and programmatic. Declarative validation rules operate on the client, in the browser. They're useful for performing basic client-side validation before data is transmitted to the server. Server-side validation is useful for handling complex scenarios that are not available with declarative validation, such as cross-checking the data in a field against data from other sources. A real-world application should utilize a combination of client-side and server-side validation. The client-side validation traps basic user input errors and prevents many cases of invalid data being sent to the server for processing. Server-side validation ensures that a user request to save data doesn't attempt to bypass data validation and store incomplete or corrupt data.
+You've seen that you can use an `EditForm` to modify data in the underlying model. When the changes are complete, you can submit the form to validate the data on the server and save the changes. Blazor supports two types of validation; declarative and programmatic. Declarative validation rules operate on the client, in the browser. They're useful for performing basic client-side validation before data is transmitted to the server. Server-side validation is useful for handling complex scenarios that aren't available with declarative validation, such as cross-checking the data in a field against data from other sources. A real-world application should utilize a combination of client-side and server-side validation. The client-side validation traps basic user input errors and prevents many cases of invalid data being sent to the server for processing. Server-side validation ensures that a user request to save data doesn't attempt to bypass data validation and store incomplete or corrupt data.
 
 > [!NOTE]
-> You can also trap JavaScript events such as `onchange` and `oninput`, and the Blazor equivalent `@onchange` and `@oninput` events for many controls in an `EditForm`. You can use these events to examine and validate data programmatically, on a field-by-field basis, before the user submits the form. However, this approach is not recommended. It can be frustrating to a user to have validation messages appear as they enter each keystroke or tab between fields. Save validation for when the user has completed their input.
+> You can also trap JavaScript events such as `onchange` and `oninput`, and the Blazor equivalent `@onchange` and `@oninput` events for many controls in an `EditForm`. You can use these events to examine and validate data programmatically, on a field-by-field basis, before the user submits the form. However, this approach isn't recommended. It can be frustrating to a user to have validation messages appear as they enter each keystroke or tab between fields. Save validation for when the user has completed their input.
 
-An `EditForm` has three events that run when it is submitted:
+An `EditForm` has three events that run when it's submitted:
 
 - `OnValidSubmit`: This event is triggered if the input fields successfully pass the validation rules defined by their validation attributes.
 - `OnInvalidSubmit`: This event is triggered if any of the input fields on the form fail the validation defined by their validation attributes.
@@ -204,8 +204,8 @@ The `EditForm` tracks the state of the current object acting as model, including
 
 The following example shows the `EditForm` from the previous example with a submit button. The `EditForm` captures the `OnSubmit` event to validate the changes made to a T-shirt object. In this example, only certain combinations of values are allowed:
 
-- Red T-shirts are not available in the Extra Large size.
-- Blue T-shirts are not available in the Small or Medium sizes.
+- Red T-shirts aren't available in the Extra Large size.
+- Blue T-shirts aren't available in the Small or Medium sizes.
 - White T-shirts have a maximum price of $50.
 
 If an illegal combination is detected, the `Message` field on the form displays the reason for the validation failure. If the fields are valid, the data is processed and the data is saved (the logic for this process isn't shown).
@@ -225,7 +225,7 @@ If an illegal combination is detected, the `Message` field on the form displays 
 
     private async Task ValidateData(EditContext editContext)
     {
-        if (editContext.Model is not Shirt shirt)
+        if (editContext.Model isn't Shirt shirt)
         {
             Message = "T-Shirt object is invalid";
             return;
