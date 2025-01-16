@@ -1,4 +1,4 @@
-After configuring both sites with VMware Site Recovery Manage (SRM), you should proceed with installing the VMware vSphere Replication solution. VMware vSphere Replication is an integrated component of VMware vSphere, and uses a virtual machine (VM) replication appliance at the hypervisor level.
+After configuring both sites with VMware Site Recovery Manager (SRM), you should proceed with installing the VMware vSphere Replication solution. VMware vSphere Replication is an integrated component of VMware vSphere, and uses a virtual machine (VM) replication appliance at the hypervisor level.
 
 ## vSphere Replication appliance components
 

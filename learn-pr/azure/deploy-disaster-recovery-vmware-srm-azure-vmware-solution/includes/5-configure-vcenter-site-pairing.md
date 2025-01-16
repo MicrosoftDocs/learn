@@ -172,3 +172,13 @@ Use the following procedure to run a recovery plan:
 4. On the **Ready to complete** page, review your selected settings, then select **Finish**.
 
     :::image type="content"  source="../media/5-recovery-plan-confirmation-options.png" alt-text="Screenshot of the Confirmation options window in Azure VMware Solution with the selected recovery confirmation options.":::
+
+## Other supported third-party Disaster Recovery solutions
+
+In addition to Site Recovery Manager (SRM), there are third-party Disaster Recovery solutions that customers can use for Azure VMware Solution, such as Zerto and JetStream. 
+
+### Zerto
+
+Zerto is a disaster recovery solution designed to minimize downtime of virtual machines (VMs) should a disaster occur. The Zerto platform is built on the foundation of Continuous Data Protection (CDP) that enables minimal or close to no data loss. The platform provides the level of protection wanted for many business-critical and mission-critical enterprise applications. Zerto also automates and orchestrates failover and failback to ensure minimal downtime in a disaster.
+
+
