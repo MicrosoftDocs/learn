@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-replication.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Reviewing and assessing lessons learned on change data capture (CDC) and change tracking."
+  ms.date: 01/15/2025
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  ms.topic: unit
+durationInMinutes: 2
+###########################################################################
+###
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What is the default retention policy for the change data capture (CDC) cleanup process?"
+    choices: 
+    - content: "One day"
+      isCorrect: false
+      explanation: "Review the change data capture (CDC) section."
+    - content: "Two days"
+      isCorrect: false
+      explanation: "Review the change data capture (CDC) section."
+    - content: "Three days"
+      isCorrect: true
+      explanation: "Correct! The CDC cleanup process is responsible for enforcing the retention-based cleanup policy. By default, three days of data are retained."
+  - content: "Which is the default function that CDC provides for querying all the changes on table within the specified log sequence number (LSN) range?"
+    choices:
+    - content: "cdc.fn_cdc_get_all_changes_<capture_instance>"
+      isCorrect: true
+      explanation: "Correct! The function cdc.fn_cdc_get_all_changes_<capture_instance> is used to query for all changes on table within the specified LSN range."
+    - content: "cdc.fn_cdc_get_net_changes_<capture_instance>"
+      isCorrect: false
+      explanation: "If the capture instance is configured to support net changes, the enumeration function `cdc.fn_cdc_get_net_changes_<capture_instance>` also gets created which returns one net change row for each source row changed within the specified LSN range."
+  - content: "Which tool should I use if I want to identify whether an insert / update / delete was executed on my data, but without needing a historical record of my data changes?"
+    choices:
+    - content: "Change data capture (CDC)"
+      isCorrect: false
+      explanation: "CDC tracks insert, update, and delete activity that applies to a table and also records historical data changes."
+    - content: "SQL Data Sync"
+      isCorrect: false
+      explanation: "SQL Data Sync is a soon-to-be retired tool and shouldn't be considered for future application development."
+    - content: "Change tracking"
+      isCorrect: true
+      explanation: "Correct! Change tracking should be used to verify whether a row has changed and to get information about the change."
+
