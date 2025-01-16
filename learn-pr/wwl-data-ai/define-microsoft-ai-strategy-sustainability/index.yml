@@ -11,6 +11,7 @@ metadata:
   - N/A
   - ai-learning-hub
   ai-usage: human-only
+  ms.service: microsoft-cloud-sustainability
 title: Define a Microsoft AI strategy to create business value in sustainability
 summary: This module is designed to help sustainability professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
 abstract: |
