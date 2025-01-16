@@ -29,7 +29,12 @@ achievements:
   type: badge 
   title: Introduction to WebXR with Babylon.jss 
   summary: In this learning module, we'll introduce you to the core concepts of building Mixed Reality experiences with Babylon.js. We'll create a simple WebXR app that can be run cross-platform. 
-  iconUrl: /training/achievements/build-mixed-reality-with-babylonjs.svg  
+  iconUrl: /training/achievements/build-mixed-reality-with-babylonjs.svg
+- uid: learn.azure-intro-to-blockchain.badge
+  type: badge
+  title: Introduction to blockchain on Azure
+  summary: Discover how blockchain protocols enable trust. Learn to assess scenarios for when to use blockchain and decide if it's right for your solution.
+  iconUrl: /training/achievements/intro-to-blockchain.svg
 - uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.badge
   type: badge
   title: Explore the key concepts of quantum computing by using Q#
@@ -4750,6 +4755,26 @@ achievements:
   title: Tooling, Git and GitHub products
   summary: This module provides an overview of Git, GitHub, and version control. It provides step-by-step guidance for performing basic tasks in GitHub.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.student-evangelism.node-web-routes.badge
+  type: badge
+  title: Introduction to route management in Node.js with JavaScript
+  summary: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript. This module uses JavaScript (CommonJS) with the Express.js server framework in the Node.js runtime.
+  iconUrl: /training/achievements/student-evangelism/introduction-route-management-nodejs.svg
+- uid: learn.azure.build-web-api-nodejs-express.badge
+  type: badge
+  title: Build a web API with Node.js and Express
+  summary: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging, authentication and authorization, and other web development technologies. This module uses JavaScript (CommonJS) with the Express.js server framework in the Node.js runtime.
+  iconUrl: /training/achievements/build-web-api-nodejs-express.svg
+- uid: learn.azure.nodejs-files.badge
+  type: badge
+  title: Work with files and directories in a Node.js app
+  summary: Build an app that manipulates files and directories with Node.js. This module uses JavaScript CommonJS in the Node.js runtime.
+  iconUrl: /training/achievements/nodejs-files.svg
+- uid: learn.azure.debug-nodejs.badge
+  type: badge
+  title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers
+  summary: Learn how to efficiently debug your Node.js app by using Visual Studio Code to fix your bugs quickly. This module uses JavaScript CommonJS in the Node.js runtime.
+  iconUrl: /training/achievements/debug-nodejs.svg
 - uid: learn.build-javascript-applications-nodejs.trophy
   type: trophy
   title: Build JavaScript applications with Node.js
