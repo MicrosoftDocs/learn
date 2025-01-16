@@ -85,7 +85,7 @@ The following image shows an example of the page running:
 
 The HTML `<form>` element supports the `<input>` element to enable the user to enter data. The `<input>` has a `type` property that specifies the type of the input and how it should be displayed; as a number, a text box, a radio button, a check box, a button, and so on.
 
-Blazor has its own set of components designed to work specifically with the `<EditForm>` element and support data binding among other features. The following table lists these components. When Blazor renders a page containing these components, they're converted to the corresponding HTML `<input>` elements listed in the table. Some of the Blazor components are generic; the Blazor runtime ascertains the type paramater depending on the type of the data bound to the element:
+Blazor has its own set of components designed to work specifically with the `<EditForm>` element and support data binding among other features. The following table lists these components. When Blazor renders a page containing these components, they're converted to the corresponding HTML `<input>` elements listed in the table. Some of the Blazor components are generic; the Blazor runtime ascertains the type parameter depending on the type of the data bound to the element:
 
 | Input component           | Rendered as (HTML)           |
 |---------------------------|------------------------------|
