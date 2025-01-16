@@ -5,10 +5,13 @@ metadata:
   prefetch-feature-rollout: true
   title: MD-102 Explore the Enterprise Desktop
   description: "This module covers modern endpoint management and enterprise desktop lifecycle concepts."
-  ms.date: 09/09/2024
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: rstearman
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: azure
   ai-usage: human-only
 title: Explore the Enterprise Desktop

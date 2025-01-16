@@ -54,14 +54,15 @@ subjects:
   - productivity
   - site-reliability-engineering
 units:
-  - learn.wwl.implement-developer-self-service.introduction
-  - learn.wwl.implement-developer-self-service.introduction-developer-self-service
-  - learn.wwl.implement-developer-self-service.developer-self-service-platform-architecture
-  - learn.wwl.implement-developer-self-service.governance-security-self-service-workflows
-  - learn.wwl.implement-developer-self-service.developer-coding-environments
-  - learn.wwl.implement-developer-self-service.automation-self-service-tools
-  - learn.wwl.implement-developer-self-service.monitor-audit-developer-activities
-  - learn.wwl.implement-developer-self-service.knowledge-check
-  - learn.wwl.implement-developer-self-service.summary
+- learn.wwl.implement-developer-self-service.introduction
+- learn.wwl.implement-developer-self-service.introduction-developer-self-service
+- learn.wwl.implement-developer-self-service.developer-self-service-platform-architecture
+- learn.wwl.implement-developer-self-service.governance-security-self-service-workflows
+- learn.wwl.implement-developer-self-service.developer-coding-environments
+- learn.wwl.implement-developer-self-service.automation-self-service-tools
+- learn.wwl.implement-developer-self-service.monitor-audit-developer-activities
+- learn.wwl.implement-developer-self-service.implement-microsoft-dev-box
+- learn.wwl.implement-developer-self-service.knowledge-check
+- learn.wwl.implement-developer-self-service.summary
 badge:
   uid: learn.wwl.implement-developer-self-service.badge
