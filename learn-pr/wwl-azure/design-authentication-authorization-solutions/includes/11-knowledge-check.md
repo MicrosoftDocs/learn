@@ -1,5 +1,6 @@
 
 
+
 Tailwind Traders is planning on making some significant changes to their identity and access management solution. They ask for your assistance on some recommendations and questions. Here are the specific requirements.
 
 - **Device access to company applications**. The CTO agreed to allow some level of device access. Employees at the company’s retail stores require access to certain company applications. This access, however, should be restricted to only approved devices. 

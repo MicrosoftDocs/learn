@@ -67,20 +67,22 @@ The Swagger UI displays the version and the added information:
 
 :::image type="content" source="../media/api-information.png" alt-text="Screenshot showing additional descriptive information added to an API.":::
 
-You can add descriptive headings to the different functions in your API by using the `.WithTags` option. The following sample code shows adding "Add fruit to list" as a heading to a POST mapping:
+You can group operations in your API with the `.WithTags` option. You can also add descriptive text describing the operation with the `.WithSummary` option. The following sample code shows using `.WithTags` to group the POST operation into both a *post* group, and a *fruit* group. It also adds the summary specified in the `.WithSummary` option to the operation.
 
 ```csharp
-app.MapPost("/fruitlist", async (Fruit fruit, FruitDb db) =>
+app.MapPost("/fruits", async (Fruit fruit, FruitDb db) =>
 {
     db.Fruits.Add(fruit);
     await db.SaveChangesAsync();
 
-    return Results.Created($"/fruitlist/{fruit.Id}", fruit);
+    return Results.Created($"/{fruit.Id}", fruit);
 })
-    .WithTags("Add fruit to list");
+    .Produces<Fruit>(201)
+    .WithTags("post", "fruits")
+    .WithSummary("Create a new fruit");
 ```
 
-The Swagger UI displays the "Add fruit to list" tag as a heading above the POST action.
+The Swagger UI displays the specified grouping and summary description. 
 
-:::image type="content" source="../media/add-fruit.png" alt-text="Screenshot displaying sample output of the previous code sample.":::
+:::image type="content" source="../media/api-options-example.png" alt-text="Screenshot of the Swagger UI displaying the post operation in two groups with a summary description.":::
 

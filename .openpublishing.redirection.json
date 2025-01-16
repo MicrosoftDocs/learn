@@ -114,7 +114,7 @@
       "redirect_url": "/training/modules/monitor-fabric-items/"
     },
     {
-      "source_path_from_root":"/learn-pr/wwl/optimize-performance-microsoft-fabric/3-optimize-pipeline.yml",
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/3-optimize-pipeline.yml",
       "redirect_url": "/training/modules/monitor-fabric-items/"
     },
     {
@@ -146,7 +146,7 @@
       "redirect_url": "/training/paths/manage-microsoft-fabric-environment/"
     },
     {
-      "source_path_from_root":"/learn-pr/wwl/optimize-performance-microsoft-fabric/index.yml",
+      "source_path_from_root": "/learn-pr/wwl/optimize-performance-microsoft-fabric/index.yml",
       "redirect_url": "/training/paths/manage-microsoft-fabric-environment/"
     },
     {
@@ -579,47 +579,47 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
-    "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/2-what-is-generative-ai.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
-    "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/3-describe-azure-openai.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
-    "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/4-how-to-use-azure-openai.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
-    "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/5-understand-openai-natural-language.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
-    "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/6-understand-openai-code-generation.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
-    "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/7-understand-openai-image-generation.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
-    "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/8-describe-openai-responsible-ai.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
-    "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/8a-exercise-openai.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
-    "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/9-knowledge-check.yml",
@@ -629,7 +629,7 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/10-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
-    "redirect_document_id": false
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/index.md",
@@ -10100,7 +10100,7 @@
     {
       "source_path_from_root": "/learn-pr/cela-accessibility/accessible-content-m365/02-powerpoint.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/accessibility-fundamental"
-    },    
+    },
     {
       "source_path_from_root": "/learn-pr/educator/navigate-microsoft-learn-for-educators-school-leaders/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/educator-center"
@@ -17501,65 +17501,65 @@
       "source_path_from_root": "/learn-pr/reactors/test-azure-cognitive-services/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/prepare-to-develop-ai-solutions-azure/"
     },
-    { 
-      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/0-introduction.yml", 
-      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
-      "redirect_document_id": false 
+    {
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/0-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01",
+      "redirect_document_id": false
     },
-    { 
-        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/1-webxr-babylonjs.yml", 
-        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
-        "redirect_document_id": false 
+    {
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/1-webxr-babylonjs.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01",
+      "redirect_document_id": false
     },
-    { 
-        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/2-environment-setup.yml", 
-        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
-        "redirect_document_id": false 
+    {
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/2-environment-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01",
+      "redirect_document_id": false
     },
-    { 
-        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/3-get-started-with-babylonjs.yml", 
-        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
-        "redirect_document_id": false 
+    {
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/3-get-started-with-babylonjs.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01",
+      "redirect_document_id": false
     },
-    { 
-        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/4-add-floor-mesh-and-texture.yml", 
-        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
-        "redirect_document_id": false 
+    {
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/4-add-floor-mesh-and-texture.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01",
+      "redirect_document_id": false
     },
-    { 
-        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/5-create-environment.yml", 
-        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
-        "redirect_document_id": false 
+    {
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/5-create-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01",
+      "redirect_document_id": false
     },
-    { 
-        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/6-create-player-icons.yml", 
-        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
-        "redirect_document_id": false 
+    {
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/6-create-player-icons.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01",
+      "redirect_document_id": false
     },
-    { 
-        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/7-create-actions.yml", 
-        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
-        "redirect_document_id": false 
+    {
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/7-create-actions.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01",
+      "redirect_document_id": false
     },
-    { 
-        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/8-initialize-environment.yml", 
-        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
-        "redirect_document_id": false 
+    {
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/8-initialize-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01",
+      "redirect_document_id": false
     },
-    { 
-        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/9-knowledge-check.yml", 
-        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
-        "redirect_document_id": false 
+    {
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01",
+      "redirect_document_id": false
     },
-    { 
-        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/10-summary.yml", 
-        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
-        "redirect_document_id": false 
+    {
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01",
+      "redirect_document_id": false
     },
-    { 
-        "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/index.yml", 
-        "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01", 
-        "redirect_document_id": false 
+    {
+      "source_path": "learn-pr/sports-machine-learning/build-mixed-reality-with-babylonjs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01",
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/sqlserver/automatically-tune-sql-server-linux/1-introduction.yml",
@@ -31958,7 +31958,7 @@
       "redirect_url": "training/modules/implement-manage-fslogix/11-summary",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/implement-manage-fslogix/2-plan-for-fslogix.md",
       "redirect_url": "training/modules/implement-manage-fslogix/",
       "redirect_document_id": false
@@ -32043,7 +32043,7 @@
       "redirect_url": "/training/modules/configure-user-experience-settings/5-configure-universal-print",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/configure-user-experience-settings/9-implement-start-virtual-machine-connect-feature.md",
       "redirect_url": "/training/modules/configure-user-experience-settings/4-implement-start-virtual-machine-connect-feature",
       "redirect_document_id": false
@@ -32077,97 +32077,97 @@
       "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-manufacturing/8-summary.md",
       "redirect_url": "/training/modules/define-microsoft-ai-strategy-manufacturing/7-summary",
       "redirect_document_id": false
-   },
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/2-monitor-azure-virtual-desktop-azure-monitor.md",
       "redirect_url": "/training/modules/monitor-manage-performance-health/3-monitor-azure-virtual-desktop-azure-monitor",
       "redirect_document_id": false
-   }, 
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/3-log-analytics-workspace-for-azure-monitor.md",
       "redirect_url": "/training/modules/monitor-manage-performance-health/",
       "redirect_document_id": false
-   },
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/4-monitor-azure-virtual-desktop-azure-advisor.md",
       "redirect_url": "/training/modules/monitor-manage-performance-health/5-monitor-azure-virtual-desktop-azure-advisor",
       "redirect_document_id": false
-   },
-     {
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/5-how-to-resolve-azure-advisor-recommendations.md",
       "redirect_url": "/training/modules/monitor-manage-performance-health/",
       "redirect_document_id": false
-   },
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/6-diagnose-graphics-performance-issues.md",
       "redirect_url": "/training/modules/monitor-manage-performance-health/",
       "redirect_document_id": false
-   },
-     {
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/7-knowledge-check.md",
       "redirect_url": "/training/modules/monitor-manage-performance-health/",
       "redirect_document_id": false
-   },
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/monitor-manage-performance-health/8-summary.md",
       "redirect_url": "/training/modules/monitor-manage-performance-health/9-summary",
       "redirect_document_id": false
-   },
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/10-troubleshoot-application-issues-user-input-delay.md",
       "redirect_url": "/training/modules/install-configure-apps-session-host/",
       "redirect_document_id": false
-   },
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/11-knowledge-check.md",
       "redirect_url": "/training/modules/install-configure-apps-session-host/",
       "redirect_document_id": false
-   },
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/12-summary.md",
       "redirect_url": "/training/modules/install-configure-apps-session-host/11-summary",
       "redirect_document_id": false
-   },
-     {
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/2-msix-app-attach.md",
       "redirect_url": "/training/modules/install-configure-apps-session-host/",
       "redirect_document_id": false
-   },
-     {
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/3-how-msix-app-attach-works.md",
       "redirect_url": "/training/modules/install-configure-apps-session-host/",
       "redirect_document_id": false
-   },
-      {
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/4-setup-file-share-for-msix-app-attach.md",
       "redirect_url": "/training/modules/install-configure-apps-session-host/",
       "redirect_document_id": false
-   },
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/5-upload-msix-images-azure-netapp-files-azure-virtual-desktop.md",
       "redirect_url": "/training/modules/install-configure-apps-session-host/",
       "redirect_document_id": false
-   },
-     {
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/6-demonstration-configure-apps-for-users.md",
       "redirect_url": "/training/modules/install-configure-apps-session-host/",
       "redirect_document_id": false
-   },
-     {
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/7-onedrive-sync-app-virtual-desktops.md",
       "redirect_url": "/training/modules/install-configure-apps-session-host/",
       "redirect_document_id": false
-   },
-     {
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/8-microsoft-teams-azure-virtual-desktop.md",
       "redirect_url": "/training/modules/install-configure-apps-session-host/",
       "redirect_document_id": false
-   },
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-azure/install-configure-apps-session-host/9-publish-apps-azure-virtual-desktop.md",
       "redirect_url": "/training/modules/install-configure-apps-session-host/",
       "redirect_document_id": false
-   },
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-sustainability/2-explore-ai-goals-challenges-sustainability.md",
       "redirect_url": "/training/modules/define-microsoft-ai-strategy-sustainability/",
@@ -32178,7 +32178,7 @@
       "redirect_url": "/training/modules/define-microsoft-ai-strategy-sustainability/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/define-microsoft-ai-strategy-finance/2-discover-ai-finance.md",
       "redirect_url": "/training/modules/define-microsoft-ai-strategy-finance/",
       "redirect_document_id": false
@@ -32208,12 +32208,12 @@
       "redirect_url": "/training/modules/intro-to-azure-image-builder/3-how-does-azure-image-builder-work",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/10-knowledge-check.md",
       "redirect_url": "/training/modules/leverage-ai-tools/",
       "redirect_document_id": false
     },
-      {
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/11-summary.md",
       "redirect_url": "/training/modules/leverage-ai-tools/6b-summary",
       "redirect_document_id": false
@@ -32223,7 +32223,7 @@
       "redirect_url": "/training/modules/leverage-ai-tools/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/leverage-ai-tools/8-explore-potential-azure-cognitive-services.md",
       "redirect_url": "/training/modules/leverage-ai-tools/",
       "redirect_document_id": false
@@ -32278,22 +32278,22 @@
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
-        {
+    {
       "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/2-understand-azure-data-ecosystem.md",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
-        {
+    {
       "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/3-explore-modern-analytics-solution-architecture.md",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
-        {
+    {
       "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/4-knowledge-check.md",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
-        {
+    {
       "source_path": "learn-pr/wwl-data-ai/explore-azure-data-services-for-modern-analytics/5-summary.md",
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
@@ -32353,7 +32353,7 @@
       "redirect_url": "/azure/synapse-analytics/",
       "redirect_document_id": false
     },
-       {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/manage-access/2-role-based-access-control-for-azure-virtual-desktop.md",
       "redirect_url": "/training/modules/manage-access/4-role-based-access-control-virtual-desktop",
       "redirect_document_id": false
@@ -32363,32 +32363,32 @@
       "redirect_url": "/training/modules/manage-access/5-plan-implement-azure-roles-role-based-access-control",
       "redirect_document_id": false
     },
-      {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/manage-access/4-use-azure-virtual-desktop-with-intune.md",
       "redirect_url": "/training/modules/manage-access/8-use-azure-virtual-desktop-with-intune",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/manage-access/5-configure-screen-capture-protection-for-azure-virtual-desktop.md",
       "redirect_url": "/training/modules/manage-access/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/manage-access/6-knowledge-check.md",
       "redirect_url": "/training/modules/manage-access/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/manage-access/7-summary.md",
       "redirect_url": "/training/modules/manage-access/10-summary",
       "redirect_document_id": false
     },
-      {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/10-summary.md",
       "redirect_url": "/training/modules/create-manage-session-host-image/9-summary",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/3-modify-session-host-image.md",
       "redirect_url": "/training/modules/create-manage-session-host-image/",
       "redirect_document_id": false
@@ -32408,17 +32408,17 @@
       "redirect_url": "/training/modules/create-manage-session-host-image/4-create-virtual-desktop-image-image-builder",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/7-install-office-master-image.md",
       "redirect_url": "/training/modules/create-manage-session-host-image/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/8-install-language-packs-azure-virtual-desktop.md",
       "redirect_url": "/training/modules/create-manage-session-host-image/7-install-language-packs-azure-virtual-desktop",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/create-manage-session-host-image/9-knowledge-check.md",
       "redirect_url": "/training/modules/create-manage-session-host-image/",
       "redirect_document_id": false
@@ -32624,47 +32624,47 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-azure-ad-tenant.yml", 
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-azure-ad-tenant.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-create-vm.yml", 
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-create-vm.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/achievements/learn.azure.create-basic-hybrid-environment.badge.yml", 
+      "source_path": "learn-pr/achievements/learn.azure.create-basic-hybrid-environment.badge.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-install-ad-create-user.yml", 
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/exercise-install-ad-create-user.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/create-basic-hybrid-environment/index.yml", 
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/index.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/create-basic-hybrid-environment/introduction.yml", 
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/introduction.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/create-basic-hybrid-environment/knowledge-check.yml", 
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/create-basic-hybrid-environment/prepare.yml", 
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/prepare.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/create-basic-hybrid-environment/summary.yml", 
+      "source_path": "learn-pr/azure/create-basic-hybrid-environment/summary.yml",
       "redirect_url": "https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/tutorial-basic-ad-azure",
       "redirect_document_id": false
     },
@@ -32963,7 +32963,7 @@
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-azure/examine-azure-security-center-azure-defender-for-iot/index.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
@@ -33328,7 +33328,7 @@
       "redirect_url": "/training/modules/explore-fundamentals-stream-processing/8-summary",
       "redirect_document_id": false
     },
-      {
+    {
       "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/4-stream-analytics.md",
       "redirect_url": "/training/modules/explore-fundamentals-stream-processing/",
       "redirect_document_id": false
@@ -33338,12 +33338,12 @@
       "redirect_url": "/training/modules/explore-fundamentals-stream-processing/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/6-spark-streaming.md",
       "redirect_url": "/training/modules/explore-fundamentals-stream-processing/5-spark-streaming",
       "redirect_document_id": false
     },
-      {
+    {
       "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/7-exercise-spark-streaming.md",
       "redirect_url": "/training/modules/explore-fundamentals-stream-processing/",
       "redirect_document_id": false
@@ -33353,12 +33353,12 @@
       "redirect_url": "/training/modules/explore-fundamentals-stream-processing/",
       "redirect_document_id": false
     },
-      {
+    {
       "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/8b-exercise-fabric-realtime.md",
       "redirect_url": "/training/modules/explore-fundamentals-stream-processing/",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/9-knowledge-check.md",
       "redirect_url": "/training/modules/explore-fundamentals-stream-processing/7-knowledge-check",
       "redirect_document_id": false
@@ -33498,7 +33498,7 @@
       "redirect_url": "https://learn.microsoft.com/azure/storage/queues/storage-quickstart-queues-dotnet",
       "redirect_document_id": false
     },
-    {   
+    {
       "source_path": "learn-pr/azure/control-access-to-azure-storage-with-sas/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/storage-blob-user-delegation-sas-create-dotnet",
       "redirect_document_id": false
@@ -34439,9 +34439,9 @@
       "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/intro-to-azure-stack/1-introduction.yml",
-        "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-azure-stack/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure-stack/hci/overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-stack/2-azure-stack.yml",
@@ -34683,7 +34683,7 @@
       "redirect_url": "https://learn.microsoft.com/azure/migrate/tutorial-app-containerization-aspnet-app-service",
       "redirect_document_id": false
     },
-    {  
+    {
       "source_path": "learn-pr/language/cpp-first-program/1-introduction.yml",
       "redirect_url": "https://code.visualstudio.com/docs/cpp/introvideos-cpp",
       "redirect_document_id": false
@@ -34743,7 +34743,7 @@
       "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/5-knowledge-check",
       "redirect_document_id": false
     },
-     {
+    {
       "source_path": "learn-pr/wwl-azure/configure-integrate-analytics-agent-defender-cloud/9-summary.md",
       "redirect_url": "/training/modules/configure-integrate-analytics-agent-defender-cloud/6-summary",
       "redirect_document_id": false
@@ -35299,7 +35299,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path":"learn-pr/achievements/learn.azure.azure-netapp-files-sap-hana.badge.yml",
+      "source_path": "learn-pr/achievements/learn.azure.azure-netapp-files-sap-hana.badge.yml",
       "redirect_url": "/training/modules/azure-netapp-files-application-volume-group",
       "redirect_document_id": "false"
     },
@@ -35922,7 +35922,7 @@
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/10-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/azure/build-chat-bot-azure-cosmos-db-openai-blazor/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db",
@@ -38757,7 +38757,7 @@
       "source_path": "learn-pr/language/python-create-run-jupyter-notebook/6-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/language/python-create-run-jupyter-notebook/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
@@ -39261,6 +39261,136 @@
     {
       "source_path": "learn-pr/student-evangelism/branch-merge-git/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/build-javascript-applications-nodejs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/2-what.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/3-when-use.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/4-how-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/5-try.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/2-package-json.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/3-exercise-package-json.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/4-dependency.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/5-exercise-dependency.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/6-dependency-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/7-exercise-dependency-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-developer-self-service/8-knowledge-check.yml",
+      "redirect_url": "/training/modules/implement-developer-self-service/9-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-developer-self-service/9-summary.yml",
+      "redirect_url": "/training/modules/implement-developer-self-service/10-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/4-synchronize-data-with-sql-data-sync.yml",
+      "redirect_url": "/training/modules/azure-sql-replication/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/5-check-if-data-changes-happened-with-change-tracking.yml",
+      "redirect_url": "/training/modules/azure-sql-replication/4-check-if-data-changes-happened-with-change-tracking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/6-exercise-check-if-data-changes-happened-with-change-tracking.yml",
+      "redirect_url": "/training/modules/azure-sql-replication/5-exercise-check-if-data-changes-happened-with-change-tracking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/7-summary.yml",
+      "redirect_url": "/training/modules/azure-sql-replication/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/8-knowledge-check.yml",
+      "redirect_url": "/training/modules/azure-sql-replication/7-knowledge-check",
       "redirect_document_id": false
     },
     {

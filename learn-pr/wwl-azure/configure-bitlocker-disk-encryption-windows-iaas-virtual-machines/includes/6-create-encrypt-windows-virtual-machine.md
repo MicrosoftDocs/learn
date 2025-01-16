@@ -1,6 +1,4 @@
-
-
-In this demonstration, you'll learn to:
+In this demonstration, you learn to:
 
 - Create and encrypt a Windows VM
 

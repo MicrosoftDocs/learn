@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.render-api-responses-razor-pages.explore-asp-core-razor-pages
-title: Explore Razor Pages project structure
+title: Explore Blazor render modes and component lifecycle
 metadata:
-  title: Explore Razor Pages project structure
-  description: "Explore Razor Pages project structure"
-  ms.date: 03/18/2024
+  title: Explore Blazor render modes and component lifecycle
+  description: "Explore Blazor render modes and component lifecycle"
+  ms.date: 01/16/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit

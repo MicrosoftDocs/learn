@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-app-service-plans.plan-scaling
 title: Configure Azure App Service autoscale
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure App Service autoscale
   description: "Configure Azure App Service autoscale"
-  ms.date: 12/17/2024
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

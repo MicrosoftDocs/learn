@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design authentication and authorization solutions
   description: "Azure Architects design and recommend authentication and authorization solutions."
-  ms.date: 12/31/2024
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
