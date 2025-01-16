@@ -9,6 +9,7 @@ metadata:
   author: jupadrao
   ms.author: jupadrao
   ms.topic: module-standard-task-based
+  ms.collection: wwl-ai-copilot
   ms.service: azure
   ai-usage: ai-assisted
 title: Get started with Azure SQL Database for modern application development
