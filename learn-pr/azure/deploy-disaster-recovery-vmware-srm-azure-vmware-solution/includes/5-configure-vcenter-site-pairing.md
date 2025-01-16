@@ -181,4 +181,10 @@ In addition to Site Recovery Manager (SRM), there are third-party Disaster Recov
 
 Zerto is a disaster recovery solution designed to minimize downtime of virtual machines (VMs) should a disaster occur. The Zerto platform is built on the foundation of Continuous Data Protection (CDP) that enables minimal or close to no data loss. The platform provides the level of protection wanted for many business-critical and mission-critical enterprise applications. Zerto also automates and orchestrates failover and failback to ensure minimal downtime in a disaster.
 
+Core components of the Zerto platform
+
+| **Component**                          | **Description**                                              |
+| ----------------------------------- | ------------------------------------------------------------ |
+| **Zerto Virtual Manager (ZVM)**   | Management application for Zerto implemented as a Windows service installed on a Windows VM. The private cloud administrator installs and manages the Windows VM. The ZVM enables Day 0 and Day 2 disaster recovery configuration.      |
+| **Virtual Replication appliance (vRA)** | Linux VM is used to handle data replication from the source to the replication target. One instance of vRA is installed per ESXi host, delivering a true scale architecture that grows and shrinks along with the private cloud's hosts. The vRA manages data replication to and from protected VMs to its local or remote target, storing the data in the journal. |
 
