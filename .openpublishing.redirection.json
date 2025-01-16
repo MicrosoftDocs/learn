@@ -39264,6 +39264,101 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/build-javascript-applications-nodejs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/2-what.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/3-when-use.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/4-how-works.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/5-try.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/intro-to-nodejs/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/2-package-json.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/3-exercise-package-json.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/4-dependency.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/5-exercise-dependency.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/6-dependency-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/7-exercise-dependency-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/implement-developer-self-service/8-knowledge-check.yml",
       "redirect_url": "/training/modules/implement-developer-self-service/9-knowledge-check",
       "redirect_document_id": false
@@ -39272,6 +39367,31 @@
       "source_path": "learn-pr/wwl-azure/implement-developer-self-service/9-summary.yml",
       "redirect_url": "/training/modules/implement-developer-self-service/10-summary",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/4-synchronize-data-with-sql-data-sync.yml",
+      "redirect_url": "/training/modules/azure-sql-replication/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/5-check-if-data-changes-happened-with-change-tracking.yml",
+      "redirect_url": "/training/modules/azure-sql-replication/4-check-if-data-changes-happened-with-change-tracking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/6-exercise-check-if-data-changes-happened-with-change-tracking.yml",
+      "redirect_url": "/training/modules/azure-sql-replication/5-exercise-check-if-data-changes-happened-with-change-tracking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/7-summary.yml",
+      "redirect_url": "/training/modules/azure-sql-replication/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/8-knowledge-check.yml",
+      "redirect_url": "/training/modules/azure-sql-replication/7-knowledge-check",
+      "redirect_document_id": false
+    },
   ]
 }
