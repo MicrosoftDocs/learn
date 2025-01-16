@@ -216,10 +216,10 @@ In this exercise, you'll replace the current server-side validation to use data 
 
 ## Enable the submit button when all fields are correct
 
-Would a better user experience be a customer can't submit their order until they've completed all the fields? Let's change the checkout page to support this requirement. Change the `EditForm` to use an EditContext instead of a model.
+Would a better user experience be that a customer can't submit their order until they've completed all the fields? Let's change the checkout page to support this requirement. Change the `EditForm` to use an EditContext instead of a model.
 
 1. In the file explorer, expand **Pages**, then select **Checkout.razor**.
-1. Update `EditFrom` element.
+1. Update `EditForm` element.
 
     ```razor
     <EditForm EditContext=editContext OnValidSubmit=PlaceOrder> 

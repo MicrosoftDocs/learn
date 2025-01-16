@@ -144,7 +144,7 @@ The following image shows the result when the user selects the button:
 :::image type="content" source="../media/2-change-focus.png" alt-text="Screenshot of the web page after the user has clicked the button to set the focus to the input element.":::
 
 > [!NOTE]
-> An app should only direct the focus to a specific control for a specific reason, such as to ask the user to modify input after an error. Don't use focusing to force the user to navigate through the elements on a page in a fixed order; this can be very frustrating to the user who might want to revisit elements to change their input.  
+> An app should only direct the focus to a specific control for a specific reason, such as to ask the user to modify input after an error. Don't use focusing to force the user to navigate through the elements on a page in a fixed order. This can be very frustrating to the user who might want to revisit elements to change their input.  
 
 ## Write inline event handlers
 
@@ -167,7 +167,7 @@ C# supports lambda expressions. A lambda expression enables you to create an ano
 > [!NOTE]
 > For details on how lambda expressions work, read [Lambda expressions and anonymous functions](/dotnet/csharp/language-reference/operators/lambda-expressions).
 
-This approach is also useful if you want to provide other arguments for an event-handling method. In the following example, the method `HandleClick` takes a `MouseEventArgs` parameter in the same way as an ordinary click event handler, but it also accepts a string parameter. The method processes the click event as before, but also displays the message in the user has pressed the <kbd>Ctrl</kbd> key. The lambda expression calls the `HandleCLick` method, passing in the `MouseEventArgs` parameter (`mouseEvent`), and a string.
+This approach is also useful if you want to provide other arguments for an event-handling method. In the following example, the method `HandleClick` takes a `MouseEventArgs` parameter in the same way as an ordinary click event handler, but it also accepts a string parameter. The method processes the click event as before, but also displays the message if the user has pressed the <kbd>Ctrl</kbd> key. The lambda expression calls the `HandleCLick` method, passing in the `MouseEventArgs` parameter (`mouseEvent`), and a string.
 
 ```razor
 @page "/counter"
@@ -202,7 +202,7 @@ This approach is also useful if you want to provide other arguments for an event
 
 ## Override default DOM actions for events
 
-Several DOM events have default actions that run when the event occurs, regardless of whether there's an event handler available for that event. For example, the `@onkeypress` event for an \<input\> element always displays the character that corresponds to the key that the user has pressed, and handling the key press. In the next example, the `@onkeypress` event is used to convert the user's input to uppercase. Additionally, if the user types an `@` character, the event handler displays an alert:
+Several DOM events have default actions that run when the event occurs, regardless of whether there's an event handler available for that event. For example, the `@onkeypress` event for an \<input\> element always displays the character that corresponds to the key that the user has pressed and handles the key press. In the next example, the `@onkeypress` event is used to convert the user's input to uppercase. Additionally, if the user types an `@` character, the event handler displays an alert:
 
 ```razor
 <input value=@data @onkeypress="ProcessKeyPress"/>
@@ -279,7 +279,7 @@ A Blazor page can contain one or more Blazor components, and components can be n
 
 A callback can take a single parameter. `EventCallback` is a generic type. The type parameter specifies the type of the argument passed to the callback.
 
-As an example, consider the following scenario. You want to create a component named `TextDisplay` that enables the user to enter an input string and transform that string in some way; you might want to convert it to upper case, lower case, mixed case, filter characters from it, or perform some other type of transformation. However, when you write the code for the `TextDisplay` component, you don't know what the transformation process will be, and instead want to defer this operation to another component. The following code shows the `TextDisplay` component. It provides the input string in the form of an \<input\> element that enables the user to enter a text value.
+As an example, consider the following scenario. You want to create a component named `TextDisplay` that enables the user to enter an input string and transform that string in some way. You might want to convert it to upper case, lower case, mixed case, filter characters from it, or perform some other type of transformation. However, when you write the code for the `TextDisplay` component, you don't know what the transformation process will be. Instead, you want to defer this operation to another component. The following code shows the `TextDisplay` component. It provides the input string in the form of an \<input\> element that enables the user to enter a text value.
 
 ```razor
 @* TextDisplay component *@

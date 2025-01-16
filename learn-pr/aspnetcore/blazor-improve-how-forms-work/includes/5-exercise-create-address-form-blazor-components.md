@@ -2,7 +2,7 @@ At the moment, the Blazing Pizza app is using HTML elements to capture data and 
 
 The team would like you to replace the current HTML elements with Blazor components. The team would like you to only submit orders if the address and name aren't blank.
 
-In this exercise, you'll replace the current HTML fields with a Blazor component and change how the customer submits orders. You'll see how to use the EditContext to write manual validations for a form.
+In this exercise, you'll replace the current HTML fields with a Blazor component and change how customers submit orders. You'll see how to use the EditContext to write manual validations for a form.
 
 ## Add a Blazor EditForm component
 

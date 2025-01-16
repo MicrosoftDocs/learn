@@ -1,8 +1,8 @@
 Users enter data using forms. In a classic web app, you create a form using the `<form>` element, and enable the user to provide data using `<input>` elements. When the user submits the form, the input can be validated. If the validation is successful, the appropriate actions can then be taken, such as using the information provided to add a new entry to a database or to update a record.
 
-The facilities the `<form>` and `<input>` elements provide are simple, but relatively primitive. Blazor extends the capabilities of forms with its `<EditForm>` component. Additionally, Blazor provides a series of specialized input elements that you can use to format and validate the data the user enters.
+The facilities the `<form>` and `<input>` elements provide are simple but relatively primitive. Blazor extends the capabilities of forms with its `<EditForm>` component. Additionally, Blazor provides a series of specialized input elements that you can use to format and validate the data the user enters.
 
-In this unit, you'll learn how to use the `<EditForm>` element and the input elements to build functional forms. You'll also see how to data binding with a form.
+In this unit, you'll learn how to use the `<EditForm>` element and the input elements to build functional forms. You'll also see how to use data binding with a form.
 
 ## What is an EditForm?
 
@@ -10,7 +10,7 @@ An `EditForm` is a Blazor component that fulfills the role of an HTML form on a 
 
 - **Data binding**: You can associate an object with an EditForm. The EditForm acts like a view of the object for data entry and display purposes.
 - **Validation**: An `EditForm` provides extensive and extensible validation capabilities. You can add attributes to the elements in an `EditForm` that specify validation rules. The `EditForm` will apply these rules automatically. This functionality is described in a later unit in this module.
-- **Form submission**: An HTML form sends a post request to a form handler when it is submitted. This form handler is expected to perform the submit process, and then display any results. An `EditForm` follows the Blazor event model; you specify a C# event handler that captures the `OnSubmit` event. The event handler performs the submit logic.
+- **Form submission**: An HTML form sends a post request to a form handler when it's submitted. This form handler is expected to perform the submit process, and then display any results. An `EditForm` follows the Blazor event model; you specify a C# event handler that captures the `OnSubmit` event. The event handler performs the submit logic.
 - **Input elements**: An HTML form uses an `<input>` control to gather user input, and a `submit` button to post the form for processing. An `EditForm` can use these same elements, but Blazor provides a library of input components that have other features, such as built-in validation and data binding.
 
 ## Create an EditForm with data binding
@@ -79,7 +79,7 @@ The following image shows an example of the page running:
 :::image type="content" source="../media/4-editform-data-binding.png" alt-text="Screenshot of the EditForm containing controls bound to a WeatherForecast object.":::
 
 > [!IMPORTANT]
-> The `EditForm` component implements two-way data binding. The form displays the values retrieved from the model, but the user can update these values in the form and they'll be pushed back to the model.
+> The `EditForm` component implements two-way data binding. The form displays the values retrieved from the mode. However, the user can update these values in the form, and they'll be pushed back to the model.
 
 ## Understand Blazor input controls
 
@@ -99,7 +99,7 @@ Blazor has its own set of components designed to work specifically with the `<Ed
 | `InputText`               | `<input>`                    |
 | `InputTextArea`           | `<textarea>`                 |
 
-Each of these elements has attributes that Blazor recognizes, such as `DisplayName`, which is used to associate an input element with a label; and `@ref`, which you can use to save a reference to a field in a C# variable. Any unrecognized non-Blazor attributes are passed unchanged to the HTML renderer. This means you can utilize HTML input element attributes. For example, you can add the `min`, `max`, and `step` attributes to an `InputNumber` component, and they'll function correctly as part of the `<input type="number">` element that's rendered. In the previous example, you could specify the `TemperatureC` input field as:
+Each of these elements has attributes that Blazor recognizes. Examples such as `DisplayName`, which is used to associate an input element with a label, and `@ref`, which you can use to save a reference to a field in a C# variable. Any unrecognized non-Blazor attributes are passed unchanged to the HTML renderer. This means you can utilize HTML input element attributes. For example, you can add the `min`, `max`, and `step` attributes to an `InputNumber` component, and they'll function correctly as part of the `<input type="number">` element that's rendered. In the previous example, you could specify the `TemperatureC` input field as:
 
 ```razor
 <EditForm Model=@currentForecast>
@@ -180,10 +180,10 @@ When you run the form, it looks like this:
 
 ## Handle form submission
 
-You've seen that you can use an `EditForm` to modify data in the underlying model. When the changes are complete, you can submit the form to validate the data on the server and save the changes. Blazor supports two types of validation; declarative and programmatic. Declarative validation rules operate on the client, in the browser. They're useful for performing basic client-side validation before data is transmitted to the server. Server-side validation is useful for handling complex scenarios that are not available with declarative validation, such as cross-checking the data in a field against data from other sources. A real-world application should utilize a combination of client-side and server-side validation; the client-side validation traps basic user input errors and prevents many cases of invalid data being sent to the server for processing. Server-side validation ensures that a user request to save data doesn't attempt to bypass data validation and store incomplete or corrupt data.
+You've seen that you can use an `EditForm` to modify data in the underlying model. When the changes are complete, you can submit the form to validate the data on the server and save the changes. Blazor supports two types of validation; declarative and programmatic. Declarative validation rules operate on the client, in the browser. They're useful for performing basic client-side validation before data is transmitted to the server. Server-side validation is useful for handling complex scenarios that are not available with declarative validation, such as cross-checking the data in a field against data from other sources. A real-world application should utilize a combination of client-side and server-side validation. The client-side validation traps basic user input errors and prevents many cases of invalid data being sent to the server for processing. Server-side validation ensures that a user request to save data doesn't attempt to bypass data validation and store incomplete or corrupt data.
 
 > [!NOTE]
-> You can also trap JavaScript events such as `onchange` and `oninput`, and the Blazor equivalent `@onchange` and `@oninput` events for many controls in an `EditForm`. You can use these events to examine and validate data programmatically, on a field by field basis, before the user submits the form. However, this approach is not recommended. It can be frustrating to a user to have validation messages appear as they enter each keystroke or tab between fields. Save validation for when the user has completed their input.
+> You can also trap JavaScript events such as `onchange` and `oninput`, and the Blazor equivalent `@onchange` and `@oninput` events for many controls in an `EditForm`. You can use these events to examine and validate data programmatically, on a field-by-field basis, before the user submits the form. However, this approach is not recommended. It can be frustrating to a user to have validation messages appear as they enter each keystroke or tab between fields. Save validation for when the user has completed their input.
 
 An `EditForm` has three events that run when it is submitted:
 
@@ -191,7 +191,7 @@ An `EditForm` has three events that run when it is submitted:
 - `OnInvalidSubmit`: This event is triggered if any of the input fields on the form fail the validation defined by their validation attributes.
 - `OnSubmit`: This event occurs when the EditForm is submitted regardless of whether all of the input fields are valid or not.
 
-The `OnValidSubmit` and `OnInvalidSubmit` events are useful for an EditForm that implements basic validation at the individual input field level. If you have more complex validation requirements, such as cross-checking one input field against another to ensure a valid combination of values, then consider using the `OnSubmit` event. An `EditForm` can either handle the `OnValidSubmit` and `OnInvalidSubmit` pair of events or the `OnSubmit` event, but not all three. You trigger submission by adding a `Submit` button to the `EditForm`. When the user selects this button, the submit events specified by the `EditForm` are triggered.
+The `OnValidSubmit` and `OnInvalidSubmit` events are useful for an EditForm that implements basic validation at the individual input field level. If you have more complex validation requirements, such as cross-checking one input field against another to ensure a valid combination of values, then consider using the `OnSubmit` event. An `EditForm` can either handle the `OnValidSubmit` and `OnInvalidSubmit` pair of events or the `OnSubmit` event but not all three. You trigger submission by adding a `Submit` button to the `EditForm`. When the user selects this button, the submit events specified by the `EditForm` are triggered.
 
 > [!NOTE]
 > The build and deploy process doesn't check for an invalid combination of submit events, but an illegal selection will generate an error at runtime. For example, if you attempt to use `OnValidSubmit` with `OnSubmit`, your application will generate the following runtime exception:
@@ -204,8 +204,8 @@ The `EditForm` tracks the state of the current object acting as model, including
 
 The following example shows the `EditForm` from the previous example with a submit button. The `EditForm` captures the `OnSubmit` event to validate the changes made to a T-shirt object. In this example, only certain combinations of values are allowed:
 
-- Red T-shirts are not available in the Extra Large size
-- Blue T-shirts are not available in the Small or Medium sizes
+- Red T-shirts are not available in the Extra Large size.
+- Blue T-shirts are not available in the Small or Medium sizes.
 - White T-shirts have a maximum price of $50.
 
 If an illegal combination is detected, the `Message` field on the form displays the reason for the validation failure. If the fields are valid, the data is processed and the data is saved (the logic for this process isn't shown).
