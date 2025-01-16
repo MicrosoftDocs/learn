@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.render-api-responses-razor-pages.discover-razor-syntax
-title: Discover Razor Pages syntax
+title: Discover Razor syntax
 metadata:
-  title: Discover Razor Pages syntax
-  description: "Discover Razor Pages syntax"
-  ms.date: 03/18/2024
+  title: Discover Razor syntax
+  description: "Discover Razor syntax"
+  ms.date: 01/16/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
