@@ -1,6 +1,6 @@
 Blazor is a .NET frontend web framework that supports both server-side rendering and client interactivity in a single programming model:
 
-* Create rich interactive UIs using [C#](chrome-extension://hajanaajapkhaabfcofdjgjnlgkdkknm/en-us/dotnet/csharp/).
+* Create rich interactive UIs using C#.
 * Share server-side and client-side app logic written in .NET.
 * Render the UI as HTML and CSS for wide browser support, including mobile browsers.
 * Build hybrid desktop and mobile apps with .NET and Blazor.
