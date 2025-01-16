@@ -115,7 +115,7 @@ In SQL Server Management Studio (SSMS), open a new query window and enable CDC o
 
 ```sql
 -- Connect to your AdventureWorksLT  Azure SQL Database, enable CDC
-EXEC sys.sp_cdc_enable_db
+EXEC sys.sp_cdc_enable_db;
 GO
 ```
 
@@ -129,7 +129,7 @@ Once you enable CDC on the database, you'll notice the CDC artifacts being creat
     EXEC sys.sp_cdc_enable_table
     @source_schema = N'SalesLT',
     @source_name   = N'Customer', 
-    @role_name     = Null
+    @role_name     = Null;
     ```
 
 2. Once you enable CDC on your table, you'll notice two more CDC system tables being created: the CDC scheduler jobs for scan and cleanup (`cdc.cdc_jobs`) and the change table (`cdc.SalesLT_Customer_CT`) associated with the table you enabled for CDC. As expected, the change table is still empty because no changes were made to the source table.
@@ -156,7 +156,7 @@ Once you enable CDC on the database, you'll notice the CDC artifacts being creat
     > [!NOTE]
     > In case you don't get the change data updated in the above table, then you may wait for scheduler to run. Otherwise, you can run the scheduler manually (`EXEC sys.sp_cdc_scan`) and check again.
 
-5. Let’s try out one more type of DML operation, this time an update statement.
+5. Let's try out one more type of DML operation, this time an update statement.
 
     ```sql
     UPDATE [SalesLT].[Customer]
@@ -178,7 +178,7 @@ You can disable CDC on `SalesLT.Customer` table by running following query:
 EXEC sys.sp_cdc_disable_table
 @source_schema=N'SalesLT',
 @source_name=N'Customer',
-@capture_instance = N'SalesLT_Customer'
+@capture_instance = N'SalesLT_Customer';
 ```
 
 > [!NOTE]
@@ -187,7 +187,7 @@ EXEC sys.sp_cdc_disable_table
 Once you disable CDC on the table, the change tracking table also gets dropped. You can confirm this by running the same command again, and seeing that the table no longer exists: 
 
 ```sql
-SELECT * FROM cdc.SalesLT_Customer_CT
+SELECT * FROM cdc.SalesLT_Customer_CT;
 ```
 
 
@@ -196,5 +196,5 @@ SELECT * FROM cdc.SalesLT_Customer_CT
 You can disable CDC on database by executing `sys.sp_cdc_disable_db` stored procedure:
 
 ```sql
-EXEC sys.sp_cdc_disable_db
+EXEC sys.sp_cdc_disable_db;
 ```

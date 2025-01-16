@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/18/2024
+  ms.date: 01/16/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -14,17 +14,6 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What are Razor Pages?"
-    choices:
-    - content: "A client-side programming model for building web UI with ASP.NET Core."
-      isCorrect: false
-      explanation: "Incorrect. Razor Pages is a server-side programming model."
-    - content: "A replacement for HTML, CSS, and JavaScript."
-      isCorrect: false
-      explanation: "Incorrect. Razor Pages aren't a replacement for HTML, CSS, or JavaScript. They're a way to combine these technologies to create dynamic web content."
-    - content: "A server-side, page-centric programming model for building web UI with ASP.NET Core."
-      isCorrect: true
-      explanation: "Correct. Razor Pages is a server-side, page-centric programming model for building web UI with ASP.NET Core."
   - content: "What is Razor syntax?"
     choices:
     - content: "A markup syntax for embedding .NET based code into webpages."
@@ -36,3 +25,25 @@ quiz:
     - content: "A markup syntax for embedding JavaScript code into webpages."
       isCorrect: false
       explanation: "Incorrect. Razor syntax is a markup syntax for embedding .NET based code into webpages."
+  - content: "What does the render mode 'Interactive Auto' in a Blazor Web App signify?"
+    choices:
+    - content: "The component is rendered on the client and isn't interactive."
+      isCorrect: false
+      explanation: "Incorrect. 'Interactive Auto' mode implies interactivity, which means user events can be processed."
+    - content: "The component is rendered on the server and isn't interactive."
+      isCorrect: false
+      explanation: "Incorrect. 'Interactive Auto' mode implies both server and client-side rendering with interactivity."
+    - content: "The component is initially rendered on the server, then on the client on subsequent visits after the Blazor bundle is downloaded."
+      isCorrect: true
+      explanation: "Correct. 'Interactive Auto' mode uses both server and client-side rendering with interactivity."
+  - content: "What is the purpose of the '@' symbol in Razor syntax?"
+    choices:
+    - content: "It's used to transition from HTML to C# or Razor-specific markup."
+      isCorrect: true
+      explanation: "Correct. The '@' symbol in Razor syntax is used to transition from HTML to C# or Razor-specific markup."
+    - content: "It's used to denote email addresses in Razor markup."
+      isCorrect: false
+      explanation: "Incorrect. While '@' is used in email addresses, in Razor syntax it transitions from HTML to C# or Razor-specific markup."
+    - content: "It's used to escape HTML tags in Razor markup."
+      isCorrect: false
+      explanation: "Incorrect. The '@' symbol does not escape HTML tags. It is used to transition from HTML to C# or Razor-specific markup."
