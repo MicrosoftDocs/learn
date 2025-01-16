@@ -29,7 +29,12 @@ achievements:
   type: badge 
   title: Introduction to WebXR with Babylon.jss 
   summary: In this learning module, we'll introduce you to the core concepts of building Mixed Reality experiences with Babylon.js. We'll create a simple WebXR app that can be run cross-platform. 
-  iconUrl: /training/achievements/build-mixed-reality-with-babylonjs.svg  
+  iconUrl: /training/achievements/build-mixed-reality-with-babylonjs.svg
+- uid: learn.azure-intro-to-blockchain.badge
+  type: badge
+  title: Introduction to blockchain on Azure
+  summary: Discover how blockchain protocols enable trust. Learn to assess scenarios for when to use blockchain and decide if it's right for your solution.
+  iconUrl: /training/achievements/intro-to-blockchain.svg
 - uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.badge
   type: badge
   title: Explore the key concepts of quantum computing by using Q#
