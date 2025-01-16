@@ -183,7 +183,7 @@ Zerto is a disaster recovery solution designed to minimize downtime of virtual m
 
 Core components of the Zerto platform
 
-| **Component**                          | **Description**                                              |
+| **Component**                       | **Description**                                              |
 | ----------------------------------- | ------------------------------------------------------------ |
 | **Zerto Virtual Manager (ZVM)**   | Management application for Zerto implemented as a Windows service installed on a Windows VM. The private cloud administrator installs and manages the Windows VM. The ZVM enables Day 0 and Day 2 disaster recovery configuration.      |
 | **Virtual Replication appliance (vRA)** | Linux VM is used to handle data replication from the source to the replication target. One instance of vRA is installed per ESXi host, delivering a true scale architecture that grows and shrinks along with the private cloud's hosts. The vRA manages data replication to and from protected VMs to its local or remote target, storing the data in the journal. |
