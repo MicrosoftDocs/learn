@@ -5,7 +5,7 @@ Contoso Camping Store provides customers with the ability to upload photos to co
 Let’s first test an image of a family camping.
 
 1. In the notebook, go to the `SAFE IMAGE` cell.
-1. Replace `sample_data` with the `data/Image Moderation` folder.
+1. Replace `sample_data` with the `../data/Image Moderation` folder.
 1. Replace `image.jpg` with `family-builds-campfire.jpg`.
 1. Run the cell.
 
