@@ -4750,6 +4750,16 @@ achievements:
   title: Tooling, Git and GitHub products
   summary: This module provides an overview of Git, GitHub, and version control. It provides step-by-step guidance for performing basic tasks in GitHub.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.azure.nodejs-files.badge
+  type: badge
+  title: Work with files and directories in a Node.js app
+  summary: Build an app that manipulates files and directories with Node.js. This module uses JavaScript CommonJS in the Node.js runtime.
+  iconUrl: /training/achievements/nodejs-files.svg
+- uid: learn.azure.debug-nodejs.badge
+  type: badge
+  title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers
+  summary: Learn how to efficiently debug your Node.js app by using Visual Studio Code to fix your bugs quickly. This module uses JavaScript CommonJS in the Node.js runtime.
+  iconUrl: /training/achievements/debug-nodejs.svg
 - uid: learn.build-javascript-applications-nodejs.trophy
   type: trophy
   title: Build JavaScript applications with Node.js
