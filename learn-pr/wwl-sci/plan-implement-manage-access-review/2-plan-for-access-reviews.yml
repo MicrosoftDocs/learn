@@ -4,10 +4,12 @@ title: Plan for access reviews
 metadata:
   title: Plan for access reviews
   description: "Plan for access reviews"
-  ms.date: 10/23/2023
+  ms.date: 01/17/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 18
 content: |
   [!include[](includes/2-plan-for-access-reviews.md)]

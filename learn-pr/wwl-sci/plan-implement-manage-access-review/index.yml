@@ -3,22 +3,32 @@ uid: learn.wwl.plan-implement-manage-access-review
 metadata:
   title: Plan, implement, and manage access review
   description: "Once identity is deployed, proper governance using access reviews is necessary for a secure solution. Explore how to plan for and implement access reviews."
-  ms.date: 10/23/2023
+  ms.date: 01/17/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: access
+  ai-usage: human-only
 title: Plan, implement, and manage access review
 summary: Once identity is deployed, proper governance using access reviews is necessary for a secure solution. Explore how to plan for and implement access reviews.
 abstract: |
   By the end of this module, you will be able to:
-  - Plan for access reviews
-  - Create access reviews for groups and apps
-  - Monitor the access review findings
-  - Manage licenses for access reviews
-  - Automate management tasks for access review
-  - Configure recurring access reviews
-prerequisites: ""
+
+  -   Plan for access reviews
+
+  -   Create access reviews for groups and apps
+
+  -   Monitor the access review findings
+
+  -   Manage licenses for access reviews
+
+  -   Automate management tasks for access review
+
+  -   Configure recurring access reviews
+prerequisites: Deep knowledge of Microsoft Entra user creation and access management.
 iconUrl: /learn/achievements/plan-implement-and-manage-access-review.svg
 levels:
 - advanced
