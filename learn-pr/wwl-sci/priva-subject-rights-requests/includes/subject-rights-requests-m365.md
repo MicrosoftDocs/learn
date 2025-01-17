@@ -29,3 +29,6 @@ The request details page is the central hub for managing subject rights requests
 - **Reports tab**: Displays reports generated for the request, including data subject packages and internal summaries.
 - **History tab**: Tracks key events and progress, such as stage changes and item counts for redaction, inclusion, and tagging.
 
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

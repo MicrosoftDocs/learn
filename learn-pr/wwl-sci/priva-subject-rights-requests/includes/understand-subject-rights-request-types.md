@@ -36,3 +36,7 @@ Subject rights requests for both data within Microsoft 365 and data beyond Micro
    :::image type="content" source="../media/subject-rights-request-overview-page.png" alt-text="Screenshot showing overview page where you select what type of subject rights request to create." lightbox="../media/subject-rights-request-overview-page.png":::
 
 Each pathway provides a set of setup tasks to help get you started with the solution. Select a setup task to begin your journey, or select one of the pages on the left navigation to launch you into the desired request fulfillment process.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

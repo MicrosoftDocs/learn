@@ -37,6 +37,9 @@ units:
 - learn.wwl.priva-subject-rights-requests.introduction
 - learn.wwl.priva-subject-rights-requests.understand-subject-rights-request-types
 - learn.wwl.priva-subject-rights-requests.subject-rights-requests-m365
+- learn.wwl.priva-subject-rights-requests.create-subject-rights-request-m365
+- learn.wwl.priva-subject-rights-requests.review-subject-rights-request-data
+- learn.wwl.priva-subject-rights-requests.subject-rights-requests-beyond-m365
 
 - learn.wwl.priva-subject-rights-requests.knowledge-check
 - learn.wwl.priva-subject-rights-requests.summary
