@@ -2,7 +2,7 @@ After you incorporate the best sizing, networking, and management practices into
 
 ## Optimize network performance
 
-To optimize network performance for Azure Linux VMs, you can use kernel-based network optimizations and implement accelerated networking if available.
+To optimize network performance for Azure Linux VMs, you can use kernel-based network optimizations and implement accelerated networking, if available.
 
 ### Kernel-based network optimizations
 
@@ -55,14 +55,14 @@ To achieve the highest IOPS on Premium SSD disks that have their caches set to `
 
 - If you use reiserFS file system, disable barriers by using the mount option `barrier=none`.
 - If you use ext3/ext4, disable barriers by using the mount option `barrier=0`.
-- If you use XFS, disable barriers by using the mount option `nobarrier`. 
+- If you use XFS, disable barriers by using the mount option `nobarrier`.
 
 ### I/O scheduling algorithm for Premium SSDs
 
 The Linux kernel offers two sets of disk I/O schedulers to reorder requests, one for the older `blk` subsystem, and one for the newer `blk-mq` subsystem. For Azure Premium storage disks, use a scheduler that passes the scheduling decisions to the underlying virtualization platform.
 
-- For Linux kernels that use the `blk` subsystem, choose the `noop` scheduler. 
-- For Linux kernels that use the `blk-mq` subsystem, choose the `none` scheduler. 
+- For Linux kernels that use the `blk` subsystem, choose the `noop` scheduler.
+- For Linux kernels that use the `blk-mq` subsystem, choose the `none` scheduler.
 
 ### Multi-disk configurations
 

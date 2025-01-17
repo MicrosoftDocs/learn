@@ -29,7 +29,12 @@ achievements:
   type: badge 
   title: Introduction to WebXR with Babylon.jss 
   summary: In this learning module, we'll introduce you to the core concepts of building Mixed Reality experiences with Babylon.js. We'll create a simple WebXR app that can be run cross-platform. 
-  iconUrl: /training/achievements/build-mixed-reality-with-babylonjs.svg  
+  iconUrl: /training/achievements/build-mixed-reality-with-babylonjs.svg
+- uid: learn.azure-intro-to-blockchain.badge
+  type: badge
+  title: Introduction to blockchain on Azure
+  summary: Discover how blockchain protocols enable trust. Learn to assess scenarios for when to use blockchain and decide if it's right for your solution.
+  iconUrl: /training/achievements/intro-to-blockchain.svg
 - uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.badge
   type: badge
   title: Explore the key concepts of quantum computing by using Q#
@@ -4680,3 +4685,108 @@ achievements:
   title: Monitor data in real-time with Power BI
   summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
   iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
+- uid: learn.student-evangelism.create-git-project.badge
+  type: badge
+  title: How to create and modify a Git project
+  summary: Learn how to create, modify and track changes on a project using Git.
+  iconUrl: /training/achievements/create-git-project.svg
+- uid: learn.student-evangelism.branch-merge-git.badge
+  type: badge
+  title: Edit code through branching and merging in Git
+  summary: Level up your Git knowledge by learning how to keep code separate in branches, and how to merge them later.
+  iconUrl: /training/achievements/student-evangelism/branch-merge-git-badge.svg
+- uid: learn.student-evangelism.intro-to-vc-git.trophy
+  type: trophy
+  title: Introduction to version control with Git
+  summary: Git is the leading version control tool, and it's essential for developers. Learn how to use Git to track your own changes and collaborate with others.
+  iconUrl: /training/achievements/student-evangelism/intro-to-vc-git-badge.svg
+- uid: learn.student-evangelism.collaborate-with-git.badge
+  type: badge
+  title: Collaborate with Git
+  summary: Use Git to track changes to source code and collaborate with other developers.
+  iconUrl: /training/achievements/student-evangelism/collaborate-with-git-badge.svg
+- uid: learn.django.models-data.badge
+  type: badge
+  title: Work with models and data in Django
+  summary: Django is focused on data-driven applications, so it provides its own object-relational mapper (ORM). We'll explore ORM concepts and how the Django ORM works. We'll create our own models and set up the database.
+  iconUrl: /training/achievements/django-models-data.svg
+- uid: learn.django.admin-site.badge
+  type: badge
+  title: Work with the Django admin site
+  summary: Probably the most popular feature of the Python framework Django is its built-in admin site, which allows internal users to manage data without having to create a special utility. We'll explore how to configure users to use this site and how to set up the site itself.
+  iconUrl: /training/achievements/django-admin-site.svg
+- uid: learn.django.get-started.badge
+  type: badge
+  title: Get started with Django
+  summary: Django is one of the most popular Python web frameworks. It's especially powerful when working with a data-driven application, where the main goal is to provide a front end to a database. Django comes with numerous features built in to streamline the development process. In this module, we explore the benefits of Django, how to install it, and how to create your first project.
+  iconUrl: /training/achievements/django-get-started.svg
+- uid: learn.django.generic-views.badge
+  type: badge
+  title: Use generic views in Django
+  summary: Because Django was designed for data-driven applications, it includes numerous built-in utilities to streamline the amount of code needed. One key area where Django makes a developer's life easier is by providing generic views, which are prebuilt with all the necessary code to perform core operations like displaying and editing data. We'll see how we can use generic views to greatly reduce the amount of code required.
+  iconUrl: /training/achievements/django-generic-views.svg
+- uid: learn.django-create-data-driven-websites.trophy
+  type: trophy
+  title: Create data-driven websites by using the Python framework Django
+  summary: Use Django to create data-driven websites.
+  iconUrl: /training/achievements/django-create-data-driven-websites.svg
+- uid: learn.django.views-templates.badge
+  type: badge
+  title: Create views and templates in Django
+  summary: As with every web framework, Django has a templating engine for creating dynamic HTML. The information that the user wants to access is created by this engine and presented through views. We'll explore how the engine works and the process of creating views in Django.
+  iconUrl: /training/achievements/django-views-templates.svg
+- uid: learn.django.deployment.badge
+  type: badge
+  title: Deploy a Django application to Azure by using PostgreSQL
+  summary: To make your application available to the world, you need to host it somewhere. Here you'll deploy your application to Azure and create a database for the data.
+  iconUrl: /training/achievements/django-deployment.svg
+- uid: learn.student-intro-azure.trophy
+  type: trophy
+  title: Introduction to Azure
+  summary: In this path, you'll learn various Azure fundamentals, including cloud concepts, core Azure services, useful tools and programs and more. If you're a beginner, this path is for you.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.student-introduction-to-azure.badge
+  type: badge
+  title: Introduction to Azure for students
+  summary: In this module, you'll learn about cloud computing and how Microsoft Azure and other helpful tools and services can help you solve common problems as a student.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.student-evangelism.student-introduction-github.badge
+  type: badge
+  title: Tooling, Git and GitHub products
+  summary: This module provides an overview of Git, GitHub, and version control. It provides step-by-step guidance for performing basic tasks in GitHub.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.student-evangelism.node-web-routes.badge
+  type: badge
+  title: Introduction to route management in Node.js with JavaScript
+  summary: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript. This module uses JavaScript (CommonJS) with the Express.js server framework in the Node.js runtime.
+  iconUrl: /training/achievements/student-evangelism/introduction-route-management-nodejs.svg
+- uid: learn.azure.build-web-api-nodejs-express.badge
+  type: badge
+  title: Build a web API with Node.js and Express
+  summary: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging, authentication and authorization, and other web development technologies. This module uses JavaScript (CommonJS) with the Express.js server framework in the Node.js runtime.
+  iconUrl: /training/achievements/build-web-api-nodejs-express.svg
+- uid: learn.azure.nodejs-files.badge
+  type: badge
+  title: Work with files and directories in a Node.js app
+  summary: Build an app that manipulates files and directories with Node.js. This module uses JavaScript CommonJS in the Node.js runtime.
+  iconUrl: /training/achievements/nodejs-files.svg
+- uid: learn.azure.debug-nodejs.badge
+  type: badge
+  title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers
+  summary: Learn how to efficiently debug your Node.js app by using Visual Studio Code to fix your bugs quickly. This module uses JavaScript CommonJS in the Node.js runtime.
+  iconUrl: /training/achievements/debug-nodejs.svg
+- uid: learn.build-javascript-applications-nodejs.trophy
+  type: trophy
+  title: Build JavaScript applications with Node.js
+  summary: Node.js provides a large set of built-in APIs that help you build various types of applications, command-line apps, web apps, and more. It also offers testing and debugging capabilities and a rich ecosystem of third-party packages that you can easily add to your application.
+  iconUrl: /training/achievements/build-javascript-applications-nodejs.svg
+- uid: learn.azure.intro-to-nodejs.badge
+  type: badge
+  title: Introduction to Node.js
+  summary: "Learn about Node.js: what it is, how it works, and when to use it. This module uses JavaScript in the Node.js runtime."
+  iconUrl: /training/achievements/intro-to-nodejs.svg
+- uid: learn.azure.create-nodejs-project-dependencies.badge
+  type: badge
+  title: Create a new Node.js project and work with dependencies
+  summary: Use dependencies from the npm registry to develop Node.js applications faster. Learn how to manage dependencies for your project. This module uses JavaScript CommonJS in the Node.js runtime.
+  iconUrl: /training/achievements/create-nodejs-project-dependencies.svg

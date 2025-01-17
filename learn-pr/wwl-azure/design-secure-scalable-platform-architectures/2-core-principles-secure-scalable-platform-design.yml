@@ -6,10 +6,10 @@ metadata:
   prefetch-feature-rollout: true
   title: Core Principles of Secure and Scalable Platform Design
   description: "Core Principles of Secure and Scalable Platform Design"
-  ms.date: 01/09/2025
+  ms.date: 01/14/2025
   author: LuizMacedo
   ms.author: lumac
   ms.topic: unit
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/2-core-principles-secure-scalable-platform-design.md)]

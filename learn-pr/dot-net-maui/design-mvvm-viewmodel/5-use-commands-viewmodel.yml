@@ -4,7 +4,7 @@ title: Use commands in a viewmodel
 metadata:
   title: Use commands in a viewmodel
   description: "Use commands to trigger app logic in the viewmodel."
-  ms.date: 04/21/2024
+  ms.date: 01/08/2025
   author: adegeo
   ms.author: adegeo
   ms.topic: unit
@@ -22,7 +22,7 @@ quiz:
       explanation: Incorrect. The `ICommand` interface is used to avoid handling events like `Clicked` and `Selected` in the code-behind, keeping the logic in the viewmodel.
     - content: It allows for the creation of custom classes for each event handler.
       isCorrect: false
-      explanation: Incorrect. The `ICommand` interface doesn't require the creation of custom classes for each event handler, it provides a way to encapsulate a method inside an object.
+      explanation: Incorrect. The `ICommand` interface doesn't require the creation of custom classes for each event handler. It provides a way to encapsulate a method inside an object.
     - content: It enables binding of UI interactions to properties that expose this interface, maintaining separation of UI behavior from UI implementation.
       isCorrect: true
       explanation: Correct. The `ICommand` interface allows for binding of UI interactions to properties, enabling separation of UI behavior from UI implementation.
@@ -33,18 +33,18 @@ quiz:
       explanation: Correct. `Command` or `Command<T>` classes implement `ICommand`, simplifying the use of `ICommand` interface.
     - content: They enable the use of `ICommand` without any type checking.
       isCorrect: false
-      explanation: Incorrect. `ICommand` itself uses `Object` parameter types. It's ultimately up to you to provide type checking while using the `Command` class, but `Command<T>` helps by by checking the parameter type for you.
+      explanation: Incorrect. `ICommand` itself uses `Object` parameter types. It's ultimately up to you to provide type checking while using the `Command` class, but `Command<T>` helps by checking the parameter type for you.
     - content: They allow for the creation of multiple `ICommand` instances for each event handler.
       isCorrect: false
-      explanation: Incorrect. Commands aren't provided to mirror events on a control. If a control is designed for commanding, it provides a single command that's invoked when the user interacts with the control. Commands are implemented in the viewmodel to provide a way to invoke logic in the viewmodel.
+      explanation: Incorrect. Commands aren't provided to mirror events on a control. If a control is designed for commanding, it provides a single command which is invoked when the user interacts with the control. Commands are implemented in the viewmodel to provide a way to invoke logic in the viewmodel.
   - content: What is the role of the `CommandParameter` property in .NET MAUI controls?
     choices:
-    - content: It allows passing a parameter to the command when it's invoked.
+    - content: It allows the passing of a parameter to the command when the command invoked.
       isCorrect: true
       explanation: Correct. The `CommandParameter` property is passed a parameter to the command's Execute and CanExecute delegates.
     - content: It determines whether a control should appear enabled or disabled.
       isCorrect: false
-      explanation: Incorrect. It's ultimately up to the control to appear enabled or disabled, which requires checking the command's CanExecute return value. The `CommandParameter` property is passed to that method when it's invoked.
+      explanation: Incorrect. It's ultimately up to the control to appear enabled or disabled, which requires checking the command's CanExecute return value. The `CommandParameter` property is passed to that method when the method is invoked.
     - content: It's used to bind the `ICommand` interface to a property.
       isCorrect: false
-      explanation: Incorrect. The `CommandParameter` property isn't used for binding `ICommand`, it's used to pass a parameter to the command when it's invoked.
+      explanation: Incorrect. The `CommandParameter` property isn't used for binding `ICommand`, it's used to pass a parameter to the command when the command is invoked.
