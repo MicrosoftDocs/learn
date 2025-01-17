@@ -27,7 +27,7 @@ quiz:
     - content: "Get-WindowsEdition"
       isCorrect: false
       explanation: "Incorrect. You would use the Get-WindowsFeature cmdlet to obtain and display information about Windows Server roles, services, and features that are installed or are available for installation."
-  - content: "Which PowerShell module superseeds the **WebAdministration** module for managing IIS websites?"
+  - content: "Which PowerShell module supersedes the **WebAdministration** module for managing IIS websites?"
     choices:
     - content: "ServerManager"
       isCorrect: false
