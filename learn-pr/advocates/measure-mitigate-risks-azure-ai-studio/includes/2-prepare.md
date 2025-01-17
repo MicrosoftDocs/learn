@@ -9,19 +9,17 @@ In Azure, resources enable access to Azure services for individuals and teams. R
 ## Create an Azure AI Foundry project resource
 
 > [!IMPORTANT]
-> This exercise uses the East US region because that region supports all features that this module includes. If you select a different region, you might not be able to complete the exercises. To learn more, see [Region availability](/azure/ai-services/content-safety/overview#region-availability).
+> This exercise uses the East US 2 region because that region supports all features that this module includes. If you select a different region, you might not be able to complete the exercises. To learn more, see [Region availability](/azure/ai-services/content-safety/overview#region-availability).
 
 1. In [Azure AI Foundry](https://ai.azure.com/), select **+Create project**.
-1. Complete the following fields:
-    - **Project name**: Provide a name for your project.
-1. Select the arrow next to **Azure resources to be created** to review the resources that will be created.
+1. For **Project name**, provide a name for your project.
 1. Select **Customize** and modify the following fields as needed:
-    - **Hub**: Leave as default or provide your own name.
+    - **Hub name**: Select an existing hub or provide a name for a new one.
     - **Subscription**: Select your Azure subscription.
     - **Resource group**: Select an existing resource group or create a new one.
-    - **Location**: Select **East US**.
+    - **Location**: Select **East US 2**.
     - **Connect Azure AI Services or Azure OpenAI**: Either select an existing service, use the default name provided for a new service, or select **Create new AI Services** to provide your own name for the service.
-    - **Connect Azure AI Search**: Select **Create new AI Search**.
+    - **Connect Azure AI Search**: Select **Create new AI Search**. Provide a name for the resource and select **Next**.
 1. Select **Next**.
 1. Review the hub details, and then select **Create**.
 
