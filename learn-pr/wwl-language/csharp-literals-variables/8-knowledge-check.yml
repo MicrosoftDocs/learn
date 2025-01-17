@@ -4,10 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/20/2024
+  ms.date: 01/17/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -16,14 +18,14 @@ quiz:
     choices:
     - content: "$DATA"
       isCorrect: true
-      explanation: "Correct. The `$` can't be used in a variable name. Furthermore, you shouldn't use all uppercase characters for a variable name."
+      explanation: "Correct! The `$` can't be used in a variable name. Furthermore, you shouldn't use all uppercase characters for a variable name."
     - content: "registrationComplete"
       isCorrect: false
       explanation: "Incorrect. `registrationComplete` is a valid variable name."
     - content: "flag"
       isCorrect: false
       explanation: "Incorrect. `flag` is a valid variable name."
-  - content: "What is the problem with this line of code: `var message;`"
+  - content: "What is the problem with this line of code: `var message;`?"
     choices:
     - content: "`var` isn't a data type."
       isCorrect: false
@@ -47,10 +49,10 @@ quiz:
       explanation: "Correct! Using the decimal literal `M` or `m` denotes a decimal data type. Decimal values include the values after the decimal point when displayed."
   - content: "Which of the following lines of code creates a variable correctly?"
     choices:
-    - content: "`int x = 12.3 m;`"
+    - content: "`int x = 12.3m;`"
       isCorrect: false
       explanation: "Incorrect. An `int` can't be set to a literal decimal value."
-    - content: "`decimal x = 12.3 m;`"
+    - content: "`decimal x = 12.3m;`"
       isCorrect: true
       explanation: "Correct! The assignment correctly matches the declared data type."
     - content: "`bool x = 'False';`"
