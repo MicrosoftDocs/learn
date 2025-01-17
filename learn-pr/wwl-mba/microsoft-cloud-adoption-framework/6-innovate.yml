@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.innovate
+title: Innovate
+metadata:
+  title: Innovate
+  description: "Innovate"
+  ms.date: 01/14/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-innovate.md)]

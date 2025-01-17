@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.migrate
+title: Migrate
+metadata:
+  title: Migrate
+  description: "Migrate"
+  ms.date: 01/14/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-migrate.md)]
+  
