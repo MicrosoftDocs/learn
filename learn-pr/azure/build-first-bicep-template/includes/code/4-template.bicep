@@ -1,5 +1,5 @@
 resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
-  name: 'store${uniqueString(subscription().subscriptionId)}'
+  name: 'toylaunchstorage'
   location: 'eastus'
   sku: {
     name: 'Standard_LRS'
@@ -19,7 +19,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2024-04-01' = {
 }
 
 resource appServiceApp 'Microsoft.Web/sites@2024-04-01' = {
-  name: 'toy-product-launch-${uniqueString(subscription().subscriptionId)}'
+  name: 'toy-product-launch-1'
   location: 'eastus'
   properties: {
     serverFarmId: appServicePlan.id
