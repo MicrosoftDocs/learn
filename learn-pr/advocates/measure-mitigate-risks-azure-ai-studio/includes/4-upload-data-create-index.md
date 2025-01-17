@@ -32,7 +32,7 @@ Let’s add the Contoso Camping Store product data via an upload of the products
 1. For the **Data source** drop-down, select **Upload files/folders**.
 1. Select **Upload files or folders** > **Upload folder**.
 1. Browse to where you saved the **Products** folder and select the folder for upload.
-1. For the **Upload 20 files to this site?** pop-up, select **Upload** and select **Next**.
+1. Select **Next**.
 1. For the **Data name** field, enter: *Products*.
 1. Select **Create**.
 

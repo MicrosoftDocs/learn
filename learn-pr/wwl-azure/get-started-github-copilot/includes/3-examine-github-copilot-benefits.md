@@ -10,7 +10,7 @@ GitHub Copilot is available as an extension for Visual Studio Code, Visual Studi
 
 ## GitHub Copilot subscription plans
 
-GitHub Copilot has two subscription offerings for developer organizations, one for professional developers that don't have access to GitHub Copilot through an organization, and one free offering for individuals. All the offerings include code completions and chat assistance in the developer IDE. Paid subscriptions currently range between $10 and $39 (US dollars) per month and can be billed monthly or annually.
+GitHub Copilot has two subscription offerings for developer organizations, one for professional developers that don't have access to GitHub Copilot through an organization, and one free offering for individuals. All the offerings include code completions and chat assistance in the developer IDE. Paid subscriptions currently range between 10 and 39 dollars (USD) per month and can be billed monthly or annually.
 
 ### GitHub Copilot Free
 

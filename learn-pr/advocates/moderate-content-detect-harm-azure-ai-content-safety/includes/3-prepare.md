@@ -51,13 +51,12 @@ The remaining exercises in this project take place in the context of this develo
 The Dev Containers extension for Visual Studio Code requires Docker to be installed on your local machine. The extension hosts the development container locally using the Docker host with the correct developer tools and dependencies preinstalled to complete this training module.
 
 1. Start Docker on your computer.
-1. Open **Visual Studio Code** in an empty folder.
+1. Open **Visual Studio Code**.
 1. Use the **Command Palette** (**CTRL + SHIFT/COMMAND + P**) and enter **Git Clone**.
 1. Enter the repository URL `https://github.com/azure-samples/RAI-workshops`.
 1. Select a folder to store the cloned repository.
 1. Open the repository.
 1. Use the **Command Palette** or the automatic prompt to **Reopen in Container**.
-1. At the top-right of the notebook, for **Select Kernel** select **Python 3.11.9**.
 
 The remaining exercises in this project take place in the context of this development container.
 
@@ -67,9 +66,10 @@ The remaining exercises in this project take place in the context of this develo
 
 Once you have the development container open, you can create environment variables for your Content Safety resource key and endpoint.
 
-1. In the files, select `.env` file.
+1. At the root of the folder, create an `.env` file.
 1. Assign your **Subscription Key** to `CONTENT_SAFETY_KEY`.
 1. Assign your **Endpoint** to `CONTENT_SAFETY_ENDPOINT`.
+1. Save the `.env` file.
 
 > [!NOTE]
 > For demo purposes, we'll be using an `.env` file to store your subscription key. However, it's best practice to use token-based authentication. You can use the `DefaultAzureCredential` class the AzureSDK provides, which automatically detects and uses the appropriate authentication method based on your environment.
@@ -78,5 +78,4 @@ Once you have the development container open, you can create environment variabl
 
 1. In the repository files, navigate to the **Azure AI Content Safety Workshop** folder and open the **azure-ai-content-safety-module.ipynb** notebook.
 1. If the kernel isn't selected, select **Select Kernel** at the upper-right of the notebook.
-1. Select **Python Environments** in the kernel drop-down menu.
-1. Choose the **Python 3.11** environment.
+1. Select **Python 3.11** (or newer).
