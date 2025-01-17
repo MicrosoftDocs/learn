@@ -196,4 +196,6 @@ Core components of the Zerto platform
 
 You can use Zerto with Azure VMware Solution in the following three scenarios:
 
-On-premises
+On-premises VMware vSphere to Azure VMware Solution disaster recovery in this scenario, the primary site is an on-premises vSphere-based environment. Teh disaster recovery site is an Azure VMware Solution private cloud.
+
+
