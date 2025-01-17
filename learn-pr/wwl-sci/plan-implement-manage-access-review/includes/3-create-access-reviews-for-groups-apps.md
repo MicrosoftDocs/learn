@@ -28,7 +28,8 @@ Access to groups and applications for employees and guests changes over time. To
     - **Select teams + groups**. Select this option if you would like to specify a finite set of teams and/or groups to review. After selecting on this option, you'll see a list of groups to the right to pick from.
         
        :::image type="content" source="../media/teams-groups.png" alt-text="Screenshot of the Teams and groups settings.  Pick your groups to exclude.":::
-       :::image type="content" source="../m edia/teams-groups-detailed.png" alt-text="Screenshot of the Teams and groups chosen in the user interface. Selected items are excluded.":::
+
+       :::image type="content" source="../media/teams-groups-detailed.png" alt-text="Screenshot of the Teams and groups chosen in the user interface. Selected items are excluded.":::
         
 6.  If you selected **Applications** in Step 1, you can then select one or more applications in Step 2.
     

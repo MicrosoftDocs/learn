@@ -8,7 +8,7 @@ The access reviews API in Microsoft Graph enables organizations to audit and att
 
 ## Access Review API for a security groups
 
-This learning module will not attempt to recreate the step by step method to use the API, to get that information see the article - [Revew access to security groups using access reviews APIs.](/graph/tutorial-accessreviews-securitygroup)  Here are the high level steps that will need to be perfomed.
+This learning module doesn't recreate the step by step method to use the API, to get that information see the article - [Review access to security groups using access reviews APIs.](/graph/tutorial-accessreviews-securitygroup)  Here are the high level steps that need to be performed.
 
 1. Create an access review for the security group
 2. List instances of the access review
