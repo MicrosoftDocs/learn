@@ -1,5 +1,5 @@
 resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
-  name: 'toylaunchstorage'
+  name: 'store${uniqueString(subscription().subscriptionId)}'
   location: 'eastus'
   sku: {
     name: 'Standard_LRS'
@@ -10,7 +10,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
   }
 }
 
-resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
+resource appServicePlan 'Microsoft.Web/serverfarms@2024-04-01' = {
   name: 'toy-product-launch-plan-starter'
   location: 'eastus'
   sku: {
@@ -18,8 +18,8 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
   }
 }
 
-resource appServiceApp 'Microsoft.Web/sites@2023-12-01' = {
-  name: 'toy-product-launch-1'
+resource appServiceApp 'Microsoft.Web/sites@2024-04-01' = {
+  name: 'toy-product-launch-${uniqueString(subscription().subscriptionId)}'
   location: 'eastus'
   properties: {
     serverFarmId: appServicePlan.id

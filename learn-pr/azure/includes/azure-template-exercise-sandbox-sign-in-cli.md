@@ -14,7 +14,7 @@ ms.author: jgao
    
 1. In the browser that opens, sign in to your Azure account. The Visual Studio Code terminal displays a list of the subscriptions associated with this account. Select the subscription called **Concierge Subscription**.
 
-   If you've used more than one sandbox recently, the terminal might display more than one instance of *Concierge Subscription*. In this case, use the next two steps to set one as the default subscription. If the preceding command was successful, and only one *Concierge Subscription* is listed, skip the next two steps.
+   If you've used more than one sandbox recently, the terminal might display more than one instance of *Concierge Subscription*. In this case, use the next two steps to set one as the default subscription. 
 
    1. Get the Concierge Subscription IDs.
   
