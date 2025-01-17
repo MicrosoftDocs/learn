@@ -16,10 +16,7 @@ Although the process applied today might look linear, it's an iterative process.
 
 ### Learn more
 
-[Infuse responsible AI tools and practices in your LLMops](https://azure.microsoft.com/blog/infuse-responsible-ai-tools-and-practices-in-your-llmops/)
-
-[Model catalog and collections in Azure AI Foundry](/azure/ai-studio/how-to/model-catalog-overview)
-
-[Harm categories in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/harm-categories)
-
-[Evaluation and monitoring metrics for generative AI](/azure/ai-studio/concepts/evaluation-metrics-built-in)
+- [Infuse responsible AI tools and practices in your LLMops](https://azure.microsoft.com/blog/infuse-responsible-ai-tools-and-practices-in-your-llmops/)
+- [Model catalog and collections in Azure AI Foundry](/azure/ai-studio/how-to/model-catalog-overview)
+- [Harm categories in Azure AI Content Safety](/azure/ai-services/content-safety/concepts/harm-categories)
+- [Evaluation and monitoring metrics for generative AI](/azure/ai-studio/concepts/evaluation-metrics-built-in)
