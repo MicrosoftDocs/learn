@@ -35939,6 +35939,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-blockchain/1-introduction.yml",
+      "redirect_url": "/training/paths/ethereum-blockchain-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-blockchain/2-what-is-blockchain.yml",
+      "redirect_url": "/training/paths/ethereum-blockchain-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-blockchain/3-how-blockchain-works.yml",
+      "redirect_url": "/training/paths/ethereum-blockchain-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-blockchain/4-blockchain-types.yml",
+      "redirect_url": "/training/paths/ethereum-blockchain-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-blockchain/5-when-use-blockchain.yml",
+      "redirect_url": "/training/paths/ethereum-blockchain-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-blockchain/6-knowledge-check.yml",
+      "redirect_url": "/training/paths/ethereum-blockchain-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-blockchain/7-summary.yml",
+      "redirect_url": "/training/paths/ethereum-blockchain-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-blockchain/index.yml",
+      "redirect_url": "/training/paths/ethereum-blockchain-development/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl/query-data-kql-database-microsoft-fabric/4a-using-kql-with-notebooks.yml",
       "redirect_url": "https://learn.microsoft.com/fabric/real-time-intelligence/notebooks",
       "redirect_document_id": false
