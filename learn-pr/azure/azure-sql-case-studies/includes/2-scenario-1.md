@@ -22,7 +22,7 @@ In production, there are normally six phases to create a solution. Developing th
 1. **Implementation**: Implementing a phased-in rollout of the completed solution based on findings from the previous phases.
 1. **Handoff**: A postmortem on the project with a discussion of future enhancements.
 
-Throughout this module, you can take advantage of [project templates](https://github.com/microsoft/sqlworkshops/tree/master/ProjectResources?azure-portal=true) and [the latest icons](https://www.microsoft.com/download/confirmation.aspx?id=41937&azure-portal=true). You can also use these assets in your production workloads.  
+Throughout this module, you can take advantage of [project templates](https://github.com/microsoft/sqlworkshops/tree/master/ProjectResources?azure-portal=true) and [the latest icons](/azure/architecture/icons/). You can also use these assets in your production workloads.  
 
 For the scenarios in this module, you'll spend some time determining the problem statement (*discovery*). But the big focus will be on the *architecture design session*. If you want to develop a solution further after the module, you can use the assets in the module to do so.
 
