@@ -208,4 +208,8 @@ In this scenario, the primary site is an Azure VMware Solution private cloud in 
 
 :::image type="content"  source="../media/5-zerto-disaster-recovery-scenario-2-diagram.png" alt-text="Screenshot of the zerto disaster recovery scenario of an Azure VMware Solution private cloud in one Azure Region."lightbox="../media/5-zerto-disaster-recovery-scenario-2-diagram.png":::
 
+**Scenario 3:** Azure VMware Solution to Azure VMs cloud disaster recovery.
 
+In this scenario, the primary site is an Azure VMware Solution private cloud in one Azure Region. Azure Blobs and Azure VMs (Hyper-V based) are used in times of Disaster.
+
+:::image type="content"  source="../media/5-zerto-disaster-recovery-scenario-3-diagram.png" alt-text="Screenshot of the zerto disaster recovery scenario of an Azure VMware Solution to Azure VMs cloud disaster recovery."lightbox="../media/5-zerto-disaster-recovery-scenario-3-diagram.png":::
