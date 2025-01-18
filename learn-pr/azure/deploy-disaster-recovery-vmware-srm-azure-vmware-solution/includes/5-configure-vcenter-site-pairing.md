@@ -213,3 +213,9 @@ In this scenario, the primary site is an Azure VMware Solution private cloud in 
 In this scenario, the primary site is an Azure VMware Solution private cloud in one Azure Region. Azure Blobs and Azure VMs (Hyper-V based) are used in times of Disaster.
 
 :::image type="content"  source="../media/5-zerto-disaster-recovery-scenario-3-diagram.png" alt-text="Screenshot of the zerto disaster recovery scenario of an Azure VMware Solution to Azure VMs cloud disaster recovery."lightbox="../media/5-zerto-disaster-recovery-scenario-3-diagram.png":::
+
+### JetStream
+
+JetStream disaster recovery (DR) is a cloud-native disaster recovery solution designed to minimize downtime of virtual machines (VMs) should a disaster occur. Instances of JetStream DR are deployed at both the protected and recovery sites. 
+
+JetStream is built on the foundation of Continuous Data Protection (CDP), which enables minimal or close to no data loss. JetStream DR provides the level of protection wanted for business and mission-critical applications. It also enables cost-effective DR by using minimal resources at the DR site and using cost-effective cloud storage, such as Azure Blob Storage 
