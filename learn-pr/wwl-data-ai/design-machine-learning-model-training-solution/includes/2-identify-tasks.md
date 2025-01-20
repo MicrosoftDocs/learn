@@ -34,3 +34,4 @@ Understanding the entire process before you start gives you an opportunity to ma
 1. **Score model**: Generate predictions on test data.
 1. **Evaluate**: Calculate performance metrics.
 
+Training a machine learning model is often an iterative process, where you go through each of these steps multiple times to find the best performing model.

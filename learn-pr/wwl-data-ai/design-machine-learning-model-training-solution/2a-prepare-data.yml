@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.design-machine-learning-model-training-solution.identify-tasks
-title: Define the problem
+uid: learn.wwl.design-machine-learning-model-training-solution.prepare-data
+title: Get and prepare data
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Define the problem
-  description: Define the problem
+  title: Get and prepare data
+  description: Get and prepare data
   author: wwlpublish
   ms.author: madiepev
   ms.date: 01/20/2025
@@ -14,7 +14,7 @@ metadata:
     - wwl-ai-copilot
 azureSandbox: false
 labModal: false
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
-  [!include[](includes/2-identify-tasks.md)]
+  [!include[](includes/2a-prepare-data.md)]
 
