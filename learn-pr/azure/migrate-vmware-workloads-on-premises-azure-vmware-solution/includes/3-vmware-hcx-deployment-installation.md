@@ -78,7 +78,7 @@ Next, the VMware HCX Connector OVA file needs to be installed in the on-premises
 
 1. Review the advanced configuration options and select **Next**.
 
-    :::image type="content" source="../media/3-review-details.png" alt-text="Screenshot to review advanced configuration details of the VMware HCX Connector appliance.":::
+    :::image type="content" source="../media/3-hcx-review-details.png" alt-text="Screenshot to review advanced configuration details of the VMware HCX Connector appliance."lightbox="../media/3-hcx-review-details.png":::
 
 1. For **License agreements**, if you agree, select **I accept all license agreements**, then select **Next**.
 
