@@ -4595,6 +4595,11 @@ achievements:
   title: Get started with Jupyter notebooks for Python
   summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive, runnable Markdown and code elements.
   iconUrl: /training/achievements/python-create-jupyter-notebook.svg
+- uid: learn.iot.introduction-to-azure-digital-twins.badge
+  type: badge
+  title: Introduction to Azure Digital Twins
+  summary: Introduction to Azure Digital Twins
+  iconUrl: /training/achievements/introduction-to-azure-digital-twins.svg
 - uid: learn.beginner-python.create-manage-projects.badge
   type: badge
   title: Create and manage projects in Python

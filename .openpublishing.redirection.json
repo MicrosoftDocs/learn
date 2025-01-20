@@ -35644,6 +35644,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/2-what-is-azure-digital-twins.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/3-how-azure-digital-twins-works.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/4-when-to-use-azure-digital-twins.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/5-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/6-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
       "redirect_document_id": false
