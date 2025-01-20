@@ -120,6 +120,11 @@ achievements:
   title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
   summary: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
   iconUrl: /training/achievements/enrollment-group-task.svg
+- uid: learn.wwl.provision-iot-devices-at-scale-by-using-device.trophy
+  type: trophy
+  title: Provision IoT devices at scale by using Azure IoT Hub Device Provisioning Service (DPS)
+  summary: Provision IoT devices at scale by using Azure IoT Hub Device Provisioning Service (DPS)
+  iconUrl: /training/achievements/iot-provisions-device-scale.svg
 - uid: learn-xamarin.university-veteran.badge
   type: badge
   title: Xamarin University Veteran

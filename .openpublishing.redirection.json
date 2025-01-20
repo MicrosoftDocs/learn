@@ -35419,10 +35419,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/provision-iot-devices-scale-use-device/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },  
+    {
       "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/1-introduction.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
-    },    {
+    },    
+    {
       "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/2-device-enrollment-tools-processes.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
