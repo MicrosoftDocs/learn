@@ -40,6 +40,41 @@ achievements:
   title: Explore the key concepts of quantum computing by using Q#
   summary: Explore the key concepts of quantum computing by using Q#
   iconUrl: /training/achievements/quantum/qsharp-explore-key-concepts-quantum-computing.svg
+- uid: learn.iot.manage-monitor-devices-iot-hub-azure-monitor.trophy
+  type: trophy
+  title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
+  summary: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
+  iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
+- uid: learn.wwl.explore-iot-hub-monitoring.badge
+  type: badge
+  title: Guided project - Explore Azure IoT Hub monitoring
+  summary: Guided project - Explore Azure IoT Hub monitoring
+  iconUrl: /training/achievements/iot-hub-monitoring.svg
+- uid: learn.wwl.troubleshoot-device-connections-communication.badge
+  type: badge
+  title: Troubleshoot Azure IoT Hub device connections and communication
+  summary: Troubleshoot Azure IoT Hub device connections and communication
+  iconUrl: /training/achievements/device-connection-communication.svg
+- uid: learn.wwl.examine-azure-iot-solution-monitoring-logging.badge
+  type: badge
+  title: Examine Azure IoT Hub monitoring and logging
+  summary: Examine Azure IoT Hub monitoring and logging
+  iconUrl: /training/achievements/azure-iot-monitoring-logging.svg
+- uid: learn.wwl.examine-approaches-to-device-management-at-scale.badge
+  type: badge
+  title: Examine approaches to device management at scale using Azure IoT Hub
+  summary: Examine approaches to device management at scale using Azure IoT Hub
+  iconUrl: /training/achievements/device-management-at-scale.svg
+- uid: learn.wwl.examine-device-management-concepts-methods.badge
+  type: badge
+  title: Examine device management concepts and methods for Azure IoT Hub
+  summary: Examine device management concepts and methods for Azure IoT Hub
+  iconUrl: /training/achievements/device-management-examine.svg
+- uid: learn.wwl.examine-device-management-tools.badge
+  type: badge
+  title: Evaluate device management tools for Azure IoT Hub
+  summary: Evaluate device management tools for Azure IoT Hub
+  iconUrl: /training/achievements/device-management-tools.svg
 - uid: learn.quantum.use-qsharp-libraries.badge
   type: badge
   title: Use the Q# libraries
@@ -100,6 +135,31 @@ achievements:
   title: Introduction to Azure solutions
   summary: Introduction to Azure solutions
   iconUrl: /training/achievements/intro-to-azure-areas-and-solutions.svg
+- uid: learn.wwl.examine-device-provisioning-service-terms-concepts.badge
+  type: badge
+  title: Introduction to Azure IoT Hub Device Provisioning Service
+  summary: Introduction to Azure IoT Hub Device Provisioning Service
+  iconUrl: /training/achievements/provisioning-device-terms-conditions.svg
+- uid: learn.wwl.examine-device-provisioning-service-coding-tools-access.badge
+  type: badge
+  title: Examine IoT Hub Device Provisioning Service coding tools and access
+  summary: Examine IoT Hub Device Provisioning Service coding tools and access
+  iconUrl: /training/achievements/provisioning-device-service.svg
+- uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.badge
+  type: badge
+  title: Examine IoT Hub Device Provisioning Service lifecycle tasks
+  summary: Examine IoT Hub Device Provisioning Service lifecycle tasks
+  iconUrl: /training/achievements/provisioning-lifecycle-device.svg
+- uid: learn.wwl.explore-group-enrollment-tasks.badge
+  type: badge
+  title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
+  summary: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
+  iconUrl: /training/achievements/enrollment-group-task.svg
+- uid: learn.wwl.provision-iot-devices-at-scale-by-using-device.trophy
+  type: trophy
+  title: Provision IoT devices at scale by using Azure IoT Hub Device Provisioning Service (DPS)
+  summary: Provision IoT devices at scale by using Azure IoT Hub Device Provisioning Service (DPS)
+  iconUrl: /training/achievements/iot-provisions-device-scale.svg
 - uid: learn-xamarin.university-veteran.badge
   type: badge
   title: Xamarin University Veteran
