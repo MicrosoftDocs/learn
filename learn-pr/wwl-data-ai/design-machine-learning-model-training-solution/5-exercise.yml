@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-machine-learning-model-training-solution.exercise
-title: 'Exercise: Design a model training strategy'
+title: Monitor the model
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: "Exercise: Design a model training strategy"
-  description: "Exercise: Design a model training strategy"
+  title: Monitor the model
+  description: Monitor the model
   author: wwlpublish
   ms.author: madiepev
   ms.date: 01/20/2025
@@ -14,7 +14,7 @@ metadata:
     - wwl-ai-copilot
 azureSandbox: false
 labModal: false
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/5-exercise.md)]
 

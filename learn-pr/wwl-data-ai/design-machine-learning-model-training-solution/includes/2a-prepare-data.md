@@ -42,7 +42,7 @@ A common approach for a data ingestion solution is to:
 1. Store the prepared data in an Azure Blob Storage.
 1. Train the model with Azure Machine Learning.
 
-:::image type="content" source="../media/data-ingestion-pipeline.png" alt-text="Diagram showing an example of JSON data converted to a table.":::
+:::image type="content" source="../media/data-ingestion-pipeline.png" alt-text="Diagram showing an example of a data ingestion pipeline.":::
 
 ## Explore an example
 

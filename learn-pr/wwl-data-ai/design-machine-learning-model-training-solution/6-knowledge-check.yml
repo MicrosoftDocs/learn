@@ -19,25 +19,25 @@ content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: "What type of predictions are needed by the mobile application?"
+  - content: "Which compute would you recommend to train the model?"
+    choices:
+    - content: "Spark cluster"
+      isCorrect: false
+      explanation: "Incorrect. Since the data scientists aren't familiar with Spark, it's not the preferred solution right now."
+    - content: "CPU"
+      isCorrect: true
+      explanation: "Correct. CPU compute is the best option for training the model. There can be a need for GPU or Spark when model training takes too long, but for now it's best to start with CPUs."
+    - content: "GPU"
+      isCorrect: false
+      explanation: "Incorrect. There's no indication yet that GPUs are needed to train the model, and using GPUs over CPUs now, only incurs unnecessary extra costs."
+  - content: "What type of predictions does the mobile application need to generate?"
     choices:
     - content: "Real-time predictions"
       isCorrect: true
-      explanation: "Correct. There is a need for immediate predictions for individual patients."
+      explanation: "Correct. There's a need for immediate predictions for individual patients."
     - content: "Batch predictions"
       isCorrect: false
       explanation: "Incorrect. Batch predictions would take too long. We need immediate predictions."
     - content: "Local predictions"
       isCorrect: false
-      explanation: "Incorrect. There is a need for immediate predictions for individual patients so we need real-time predictions."
-  - content: "What kind of compute should be used by the deployed model?"
-    choices:
-    - content: "Virtual machines"
-      isCorrect: false
-      explanation: "Incorrect. Virtual machine will be too expensive to have running all the time. Containers will be a more cost-effective solution."
-    - content: "Containers"
-      isCorrect: true
-      explanation: "Correct. Containers will be the more cost-effective solution as we want the model to be always available and respond immediately."
-    - content: "Local device"
-      isCorrect: false
-      explanation: "Incorrect. A local device will be too expensive to have running all the time. Containers will be a more cost-effective solution."
+      explanation: "Incorrect. There's a need for immediate predictions for individual patients so we need real-time predictions."
