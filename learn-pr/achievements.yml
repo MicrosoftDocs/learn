@@ -4685,6 +4685,26 @@ achievements:
   title: Get started with Jupyter notebooks for Python
   summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive, runnable Markdown and code elements.
   iconUrl: /training/achievements/python-create-jupyter-notebook.svg
+- uid: learn.iot.introduction-to-azure-digital-twins.badge
+  type: badge
+  title: Introduction to Azure Digital Twins
+  summary: Introduction to Azure Digital Twins
+  iconUrl: /training/achievements/introduction-to-azure-digital-twins.svg
+- uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.badge
+  type: badge
+  title: Explore the Azure Digital Twins API for creating a graph
+  summary: Explore the Azure Digital Twins API for creating a graph
+  iconUrl: /training/achievements/explore-azure-digital-twins-api-for-creating-a-graph.svg
+- uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data.badge
+  type: badge
+  title: Synchronize Azure Digital Twins with IoT device data
+  summary: Synchronize Azure Digital Twins with IoT device data
+  iconUrl: /training/achievements/synchronize-azure-digital-twins-with-iot-device-data.svg
+- uid: learn.iot.build-azure-digital-twins-solution.trophy
+  type: trophy
+  title: Build out an Azure Digital Twins solution
+  summary: Build out an Azure Digital Twins solution
+  iconUrl: /training/achievements/build-out-an-azure-digital-twins-solution.svg
 - uid: learn.beginner-python.create-manage-projects.badge
   type: badge
   title: Create and manage projects in Python
