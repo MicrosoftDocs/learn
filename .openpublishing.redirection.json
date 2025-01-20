@@ -36144,6 +36144,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/2-message-routing-event-grid.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/3-message-enrichments.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/4-iot-hub-quotas-throttle.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/5-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/consider-message-processing-options-constraints/6-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/examine-iot-hub-message-routing/8-summary.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false

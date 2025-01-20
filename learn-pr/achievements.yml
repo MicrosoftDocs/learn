@@ -4562,6 +4562,11 @@ achievements:
   title: Examine Azure IoT Hub message routing
   summary: Examine Azure IoT Hub message routing
   iconUrl: /training/achievements/iot-hub-message-routing.svg
+- uid: learn.wwl.consider-message-processing-options-constraints.badge
+  type: badge
+  title: Consider Azure IoT Hub message processing options and constraints
+  summary: Consider Azure IoT Hub message processing options and constraints
+  iconUrl: /training/achievements/messaging-processing-options.svg
 - uid: learn.student-evangelism.predict-meteor-showers-using-python.badge
   type: badge
   title: Predict meteor showers by using Python and Visual Studio Code
