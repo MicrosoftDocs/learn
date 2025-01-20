@@ -35468,6 +35468,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/2-prepare.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/3-exercise-generate-configure-certificate.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/4-exercise-configure-simulated-device-with-certificate.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/5-exercise-create-additional-instances-simulated-device.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/6-exercise-run-simulated-devices.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/7-exercise-deprovision-single-device-from-group-enrollment.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/8-exercise-deprovision-group-enrollment.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/9-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/10-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/1-introduction.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false

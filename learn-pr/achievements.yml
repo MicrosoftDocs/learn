@@ -115,6 +115,11 @@ achievements:
   title: Examine IoT Hub Device Provisioning Service lifecycle tasks
   summary: Examine IoT Hub Device Provisioning Service lifecycle tasks
   iconUrl: /training/achievements/provisioning-lifecycle-device.svg
+- uid: learn.wwl.explore-group-enrollment-tasks.badge
+  type: badge
+  title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
+  summary: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
+  iconUrl: /training/achievements/enrollment-group-task.svg
 - uid: learn-xamarin.university-veteran.badge
   type: badge
   title: Xamarin University Veteran
