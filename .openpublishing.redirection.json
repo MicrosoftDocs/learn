@@ -35679,6 +35679,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/explore-azure-digital-twins-api-for-creating-graph/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-azure-digital-twins-api-for-creating-graph/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-azure-digital-twins-api-for-creating-graph/2-set-up-http-file.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-azure-digital-twins-api-for-creating-graph/3-upload-models-twins-graph-bulk.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-azure-digital-twins-api-for-creating-graph/4-update-graph-elements.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-azure-digital-twins-api-for-creating-graph/5-query-graph.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-azure-digital-twins-api-for-creating-graph/6-create-endpoints-event-routes.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-azure-digital-twins-api-for-creating-graph/7-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
       "redirect_document_id": false
