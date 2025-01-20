@@ -24,6 +24,8 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
 1. To set machine-specific **Transfer and Placement** and **Switchover** options, under **VM for Migration**, select a specific virtual machine and expand the entry.
 
+    :::image type="content" source="../media/6-hcx-select-vm-for-migration-extended-options.png" alt-text="Screenshot of where to select a virtual machine and expand the entry."lightbox="../media/6-hcx-select-vm-for-migration-extended-options.png":::
+
 1. Select the destination network for each virtual machine to be migrated.
 
     :::image type="content" source="../media/6-select-network-vm-migration.png" alt-text="Screenshot of where to configure the network settings for the VMware VM.":::
