@@ -40,6 +40,41 @@ achievements:
   title: Explore the key concepts of quantum computing by using Q#
   summary: Explore the key concepts of quantum computing by using Q#
   iconUrl: /training/achievements/quantum/qsharp-explore-key-concepts-quantum-computing.svg
+- uid: learn.iot.manage-monitor-devices-iot-hub-azure-monitor.trophy
+  type: trophy
+  title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
+  summary: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
+  iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
+- uid: learn.wwl.explore-iot-hub-monitoring.badge
+  type: badge
+  title: Guided project - Explore Azure IoT Hub monitoring
+  summary: Guided project - Explore Azure IoT Hub monitoring
+  iconUrl: /training/achievements/iot-hub-monitoring.svg
+- uid: learn.wwl.troubleshoot-device-connections-communication.badge
+  type: badge
+  title: Troubleshoot Azure IoT Hub device connections and communication
+  summary: Troubleshoot Azure IoT Hub device connections and communication
+  iconUrl: /training/achievements/device-connection-communication.svg
+- uid: learn.wwl.examine-azure-iot-solution-monitoring-logging.badge
+  type: badge
+  title: Examine Azure IoT Hub monitoring and logging
+  summary: Examine Azure IoT Hub monitoring and logging
+  iconUrl: /training/achievements/azure-iot-monitoring-logging.svg
+- uid: learn.wwl.examine-approaches-to-device-management-at-scale.badge
+  type: badge
+  title: Examine approaches to device management at scale using Azure IoT Hub
+  summary: Examine approaches to device management at scale using Azure IoT Hub
+  iconUrl: /training/achievements/device-management-at-scale.svg
+- uid: learn.wwl.examine-device-management-concepts-methods.badge
+  type: badge
+  title: Examine device management concepts and methods for Azure IoT Hub
+  summary: Examine device management concepts and methods for Azure IoT Hub
+  iconUrl: /training/achievements/device-management-examine.svg
+- uid: learn.wwl.examine-device-management-tools.badge
+  type: badge
+  title: Evaluate device management tools for Azure IoT Hub
+  summary: Evaluate device management tools for Azure IoT Hub
+  iconUrl: /training/achievements/device-management-tools.svg
 - uid: learn.quantum.use-qsharp-libraries.badge
   type: badge
   title: Use the Q# libraries
