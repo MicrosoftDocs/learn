@@ -4567,6 +4567,11 @@ achievements:
   title: Examine Cloud storage options for Azure IoT Hub solutions
   summary: Examine Cloud storage options for Azure IoT Hub solutions
   iconUrl: /training/achievements/iot-cloud-storage.svg
+- uid: learn.wwl.explore-message-processing-tasks.badge
+  type: badge
+  title: Guided project - Route and process messages from your Azure IoT Hub devices
+  summary: Guided project - Route and process messages from your Azure IoT Hub devices
+  iconUrl: /training/achievements/message-process-explore-tasks.svg
 - uid: learn.wwl.examine-azure-stream-analytics-azure-functions.badge
   type: badge
   title: Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions

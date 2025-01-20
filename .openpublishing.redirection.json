@@ -36144,6 +36144,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/route-process-messages-from-your-iot-devices/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-process-messages-from-your-iot-devices/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-process-messages-from-your-iot-devices/2-prepare.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-process-messages-from-your-iot-devices/3-exercise-write-code-generate-vibration-telemetry.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-process-messages-from-your-iot-devices/4-exercise-create-message-route-azure-blob-storage.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-process-messages-from-your-iot-devices/5-exercise-create-azure-stream-analytics-job.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-process-messages-from-your-iot-devices/6-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/route-process-messages-from-your-iot-devices/7-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
