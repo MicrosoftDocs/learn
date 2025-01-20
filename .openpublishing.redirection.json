@@ -36069,6 +36069,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/manage-monitor-devices-iot-hub-azure-monitor/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/troubleshoot-device-connections-communication/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false

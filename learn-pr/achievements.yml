@@ -40,6 +40,11 @@ achievements:
   title: Explore the key concepts of quantum computing by using Q#
   summary: Explore the key concepts of quantum computing by using Q#
   iconUrl: /training/achievements/quantum/qsharp-explore-key-concepts-quantum-computing.svg
+- uid: learn.iot.manage-monitor-devices-iot-hub-azure-monitor.trophy
+  type: trophy
+  title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
+  summary: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
+  iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
 - uid: learn.wwl.explore-iot-hub-monitoring.badge
   type: badge
   title: Guided project - Explore Azure IoT Hub monitoring
