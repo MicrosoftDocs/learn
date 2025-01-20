@@ -68,7 +68,7 @@ After the network profiles are created, you'll need to create a compute profile.
 
 1. Under **Infrastructure**, select **Interconnect** > **Compute Profiles** > **Create Compute Profile**.
 
-    :::image type="content" source="../media/4-create-compute-profile.png" alt-text="Screenshot of where to create an HCX compute profile in HCX Connector on-premises.":::
+    :::image type="content" source="../media/4-hcx-create-compute-profile.png" alt-text="Screenshot of where to create an HCX compute profile in HCX Connector on-premises."lightbox="../media/4-hcx-create-compute-profile.png":::
 
 1. Enter a name for the profile and select **Continue**.
 
