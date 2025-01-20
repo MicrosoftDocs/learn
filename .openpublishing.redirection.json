@@ -36069,6 +36069,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/examine-device-management-tools/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-management-tools/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-management-tools/2-device-management-tools.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-management-tools/3-device-management-use-azure-command-line-interface.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-management-tools/4-device-management-use-azure-iot-tools-visual-studio-code.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-management-tools/5-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-management-tools/6-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/build-azure-machine-learn-custom-skill-for-azure-cognitive-search/index.md",
       "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
       "redirect_document_id": false
