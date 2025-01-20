@@ -100,6 +100,11 @@ achievements:
   title: Introduction to Azure solutions
   summary: Introduction to Azure solutions
   iconUrl: /training/achievements/intro-to-azure-areas-and-solutions.svg
+- uid: learn.wwl.examine-device-provisioning-service-terms-concepts.badge
+  type: badge
+  title: Introduction to Azure IoT Hub Device Provisioning Service
+  summary: Introduction to Azure IoT Hub Device Provisioning Service
+  iconUrl: /training/achievements/provisioning-device-terms-conditions.svg
 - uid: learn-xamarin.university-veteran.badge
   type: badge
   title: Xamarin University Veteran
