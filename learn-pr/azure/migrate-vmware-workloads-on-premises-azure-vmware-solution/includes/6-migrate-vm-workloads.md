@@ -46,7 +46,9 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
 1. Configure the required fields then choose **Replicaton-Assisted vMotion**.
 
-1. Ensure you update the target Network settings as necessary.
+1. For each VM you're migrating, select the Destination Network, then select the **GO** button.
+
+    :::image type="content" source="../media/6-hcx-migration-add-workload-mobility-rav-network.png" alt-text="Screenshot shows where to select destination networks and 'GO' to migrate them."lightbox="../media/6-hcx-migration-add-workload-mobility-rav-network.png":::
 
 1. Verify migration has started.
 
