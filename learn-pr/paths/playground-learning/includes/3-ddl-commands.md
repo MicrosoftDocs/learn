@@ -1,0 +1,1 @@
+Markdown with all details about DDL commands in PG.

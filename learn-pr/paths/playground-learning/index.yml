@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.playground-learning
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Data types and basic SQL commands.
+  description: "This tutorial provides a comprehensive overview of basic SQL commands, specifically focusing on Data Definition Language (DDL) in PostgreSQL. It begins with a detailed explanation of the various data types supported by PostgreSQL, highlighting the flexibility and range of options available for different kinds of data. Following the data types section, the tutorial covers the creation, alteration, and deletion of tables providing practical examples and best practices."
+  ms.date: 01/20/2025
+  author: wwlpublish
+  ms.author: mpopovic
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: azure-database-postgresql
+  ai-usage: human-only
+title: Data types and basic SQL commands.
+summary: "This tutorial provides a comprehensive overview of basic SQL commands, specifically focusing on Data Definition Language (DDL) in PostgreSQL. It begins with a detailed explanation of the various data types supported by PostgreSQL, highlighting the flexibility and range of options available for different kinds of data. Following the data types section, the tutorial covers the creation, alteration, and deletion of tables providing practical examples and best practices." 
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Do better with PostgreSQL than you're able to do today. Hopefully.
+prerequisites: |
+  -   Demonstrate you're able to follow simple instructions.
+iconUrl: /training/achievements/explore-postgresql-architecture.svg
+levels:
+- beginner
+roles:
+- database-administrator
+- developer
+products:
+- azure-database-postgresql
+subjects:
+- databases
+units:
+- learn.wwl.test-introduction.introduction
+- learn.wwl.test-introduction.data-types
+- learn.wwl.test-introduction.ddl-commands
+- learn.wwl.test-introduction.summary
+badge:
+  uid: learn.wwl.test-introduction.badge

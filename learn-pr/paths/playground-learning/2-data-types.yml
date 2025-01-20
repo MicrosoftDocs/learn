@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.playground-learning.data-types
+title: Data types in PostgreSQL
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Data types in PostgreSQL
+  description: "Introduction to data types in PostgreSQL"
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: mpopovic
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-data-types.md)]
