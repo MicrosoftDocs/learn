@@ -35419,6 +35419,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/2-azure-command-line-interface-support-device-provisioning-service.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/3-powershell-support-dps.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/4-device-provisioning-service-software-development-kits.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/5-control-access-device-provisioning-service.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/6-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/7-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/1-introduction.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false

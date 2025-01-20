@@ -105,6 +105,11 @@ achievements:
   title: Introduction to Azure IoT Hub Device Provisioning Service
   summary: Introduction to Azure IoT Hub Device Provisioning Service
   iconUrl: /training/achievements/provisioning-device-terms-conditions.svg
+- uid: learn.wwl.examine-device-provisioning-service-coding-tools-access.badge
+  type: badge
+  title: Examine IoT Hub Device Provisioning Service coding tools and access
+  summary: Examine IoT Hub Device Provisioning Service coding tools and access
+  iconUrl: /training/achievements/provisioning-device-service.svg
 - uid: learn-xamarin.university-veteran.badge
   type: badge
   title: Xamarin University Veteran
