@@ -45,6 +45,11 @@ achievements:
   title: Examine device management concepts and methods for Azure IoT Hub
   summary: Examine device management concepts and methods for Azure IoT Hub
   iconUrl: /training/achievements/device-management-examine.svg
+- uid: learn.wwl.examine-device-management-tools.badge
+  type: badge
+  title: Evaluate device management tools for Azure IoT Hub
+  summary: Evaluate device management tools for Azure IoT Hub
+  iconUrl: /training/achievements/device-management-tools.svg
 - uid: learn.quantum.use-qsharp-libraries.badge
   type: badge
   title: Use the Q# libraries
