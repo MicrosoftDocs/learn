@@ -2,9 +2,11 @@
 uid: learn.wwl.describe-cloud-compute.what-cloud-compute
 title: What is cloud computing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is cloud computing
   description: "What is cloud computing"
-  ms.date: 09/20/2024
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit

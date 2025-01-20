@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.azure-netapp-file-cost-optimization
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  moduleType: introduction        
+  title: Optimize costs with Azure NetApp Files      
+  description: This module looks at cost models and cost optimization features in Azure NetApp Files.    
+  ms.date: 11/26/2024
+  author: b-ahibbard   
+  ms.author: anfdocs           
+  ms.topic: module
+  ms.service: azure-netapp-files
+title:  Optimize costs with Azure NetApp Files       
+summary: This module looks at cost models and cost optimization features in Azure NetApp Files. Understanding the cost model for Azure NetApp Files helps you manage your expenses from the service. You also learn about storage with cool access in Azure NetApp Files, and cost calculations with varying coolness periods.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Evaluate various pricing examples for Azure NetApp Files 
+  - Describe how cool access works in Azure NetApp Files and the effects of cool access on data.
+  - Save storage cost with reserved capacity 
+prerequisites: |
+  - Basic understanding of Azure NetApp Files. 
+iconUrl: /training/achievements/introduction-to-azure-netapp-files.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+- cloud-computing
+- storage
+units:
+- learn.azure.azure-netapp-files-cost-optimization.introduction
+- learn.azure.azure-netapp-files-cost-optimization.storage-cool-access
+- learn.azure.azure-netapp-files-cost-optimization.reserved-capacity
+- learn.azure.azure-netapp-files-cost-optimization.knowledge-check
+- learn.azure.azure-netapp-files-cost-optimization.summary
+badge:
+  uid: learn.azure.azure-netapp-files-cost-optimization
+

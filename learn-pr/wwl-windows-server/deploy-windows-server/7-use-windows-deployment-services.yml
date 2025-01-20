@@ -4,7 +4,7 @@ title: Use WDS to deploy Windows Server
 metadata:
   title: Use WDS to deploy Windows Server
   description: "Use WDS to deploy Windows Server"
-  ms.date: 02/26/2021
+  ms.date: 12/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "The deployment server"
       isCorrect: false
-      explanation: "That's incorrect. The deployment server uses the multicasting engine that the transport server component provides, to push operating system images across the network."
+      explanation: "Incorrect. The deployment server uses the multicasting engine that the transport server component provides, to push operating system images across the network."
     - content: "The transport server"
       isCorrect: true
-      explanation: "That's correct. The transport server component provides the core networking functionality of WDS for multicast transmission."
-    - content: "Multicast is not supported in WDS, so this component is not present"
+      explanation: "Correct. The transport server component provides the core networking functionality of WDS for multicast transmission."
+    - content: "Multicast isn't supported in WDS, so this component isn't present"
       isCorrect: false
-      explanation: "That's incorrect. Multicasting is the means by which WDS communicates with devices."
+      explanation: "Incorrect. Multicasting is the means by which WDS communicates with devices."

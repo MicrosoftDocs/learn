@@ -3,7 +3,7 @@ uid: learn.languages.csharp-if-elseif-else
 metadata:
   title: Add decision logic to your code using `if`, `else`, and `else if` statements in C#
   description: "Learn to branch your code's execution path by evaluating Boolean expressions."
-  ms.date: 02/22/2024
+  ms.date: 11/15/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
@@ -11,18 +11,26 @@ metadata:
   - N/A
   ms.service: dotnet-csharp
   ms.devlang: csharp
+  ai-usage: human-only
 title: Add decision logic to your code using `if`, `else`, and `else if` statements in C#
 summary: Learn to branch your code's execution path by evaluating Boolean expressions.
 abstract: |
   In this module, you will:
+
   -   Write code that evaluates conditions using if, else, and else if statements.
+
   -   Build Boolean expressions to evaluate a condition.
+
   -   Combine Boolean expressions using logical operators.
+
   -   Nest code blocks within other code blocks.
 prerequisites: |
   -   Experience declaring, initializing, setting, and retrieving variables by using the int data type.
+
   -   Experience printing messages to output by using Console.WriteLine().
+
   -   Experience with string interpolation to combine variables into literal strings.
+
   -   Experience working with the System. Random class to generate random numbers.
 iconUrl: /training/achievements/csharp-if-elseif-else.svg
 levels:

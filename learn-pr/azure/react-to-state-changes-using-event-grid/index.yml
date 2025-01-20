@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.react-to-state-changes-using-event-grid
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: React to state changes in your Azure services by using Event Grid
   description: Build a serverless application architecture, automate your operations, and integrate applications by handling Azure events with Event Grid.
   ms.date: 10/04/2024
@@ -39,3 +41,4 @@ units:
 - learn.react-to-state-changes-using-event-grid.7-summary
 badge:
   uid: learn.react-to-state-changes-using-event-grid.badge
+

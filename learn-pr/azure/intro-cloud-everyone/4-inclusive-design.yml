@@ -2,6 +2,8 @@
 uid: learn.azure.intro-cloud-everyone.inclusive-design
 title: What is inclusive design?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is inclusive design?
   description: You learn about inclusive design.
   ms.date: 04/30/2024
@@ -11,4 +13,5 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-inclusive-design.md)]
+
 

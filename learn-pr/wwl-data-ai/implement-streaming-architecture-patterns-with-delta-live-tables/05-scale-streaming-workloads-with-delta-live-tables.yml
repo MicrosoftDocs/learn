@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.scale-streaming-workloads-with-delta-live-tables
 title: Scale streaming workloads with Delta Live tables
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Scale streaming workloads with Delta Live tables
   description: "Streaming workload scale is a critical aspect of modern data processing pipelines, particularly when dealing with large volumes of real-time data"
   ms.date: 7/25/2024

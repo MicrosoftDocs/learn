@@ -2,6 +2,8 @@
 uid: learn.wwl.design-data-partitioning-strategy.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 04/16/2024

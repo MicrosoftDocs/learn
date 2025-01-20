@@ -1,8 +1,6 @@
-A virtual private network (VPN) provides a secure encrypted connection across another network. VPNs typically are deployed to connect two or more trusted private networks to one another over an untrusted network such as the internet. Traffic is encrypted while traveling over the untrusted network to prevent a third party from eavesdropping on the network communication.
+A virtual private network (VPN) provides a secure encrypted connection across another network. VPNs typically are deployed to connect two or more trusted private networks to one another over an untrusted network such as the internet. Traffic is encrypted while traveling over the untrusted network to prevent a third-party from eavesdropping on the network communication.
 
-One option for connecting an on-premises network to an Azure Virtual Network is a VPN connection.
-
-Here, we'll look at Azure VPN Gateway, which provides an endpoint for incoming connections to an Azure Virtual Network. 
+One option for connecting an on-premises network to an Azure virtual network is a VPN connection. A VPN gateway provides an endpoint for incoming connections to an Azure virtual network. 
 
 ## Azure VPN Gateways
 
@@ -11,7 +9,7 @@ An Azure VPN gateway is a specific type of virtual network gateway that is used 
 > [!NOTE] 
 > A virtual network gateway is composed of two or more special VMs that are deployed to a specific subnet called the gateway subnet. Virtual network gateway VMs host routing tables and run specific gateway services. These VMs that constitute the gateway are created when you create the virtual network gateway and are managed automatically by Azure and do not require administrative attention.
 
-Creating a virtual network gateway can take some time to complete, so it's vital that you plan appropriately. When you create a virtual network gateway, the provisioning process generates the gateway VMs and deploys them to the gateway subnet. These VMs will have the settings that you configure on the gateway.
+Creating a virtual network gateway can take some time to complete, so it's vital that you plan appropriately. When you create a virtual network gateway, the provisioning process generates the gateway VMs and deploys them to the gateway subnet. These VMs have the settings that you configure on the gateway.
 
 Now, let's look at the factors you need to consider for planning your VPN gateway deployment.
 
@@ -37,7 +35,7 @@ Factors that you need to cover during your planning process include:
 
 ### Choose the appropriate Gateway SKU and Generation
 
-When you create a virtual network gateway, you need to specify the gateway SKU that you want to use. Select the SKU that satisfies your requirements based on the types of workloads, throughputs, features, and SLAs. The table below shows the available SKUs and what S2S and P2S configurations they support.
+When you create a virtual network gateway, you need to specify the gateway SKU that you want to use. Select the SKU that satisfies your requirements based on the types of workloads, throughputs, features, and SLAs. This table displays the available SKUs and what S2S and P2S configurations they support.
 
 | **VPN Gateway Generation** | **SKU**  | **S2S/VNet-to-Vnet Tunnels** | **P2S SSTP Connections** | **P2S IKEv2/OpenVPN Connections** | **Aggregate Throughput Benchmark** |    **BGP**    | **Zone-redundant** |
 |:--------------------------:|:--------:|:----------------------------:|:------------------------:|:---------------------------------:|:----------------------------------:|:-------------:|:------------------:|
@@ -61,23 +59,23 @@ When you create a virtual network gateway, you need to specify the gateway SKU t
 
  -  The resizing of VpnGw SKUs is allowed within the same generation, except resizing of the Basic SKU. The Basic SKU is a legacy SKU and has feature limitations. To move from Basic to another VpnGw SKU, you must delete the Basic SKU VPN gateway and create a new gateway with the desired Generation and SKU size combination.
  -  These connection limits are separate. For example, you can have 128 SSTP connections and 250 IKEv2 connections on a VpnGw1 SKU.
- -  On a single tunnel a maximum of 1 Gbps throughput can be achieved. Aggregate Throughput Benchmark in the above table is based on measurements of multiple tunnels aggregated through a single gateway. The Aggregate Throughput Benchmark for a VPN Gateway is S2S + P2S combined. If you have a lot of P2S connections, it can negatively impact a S2S connection due to throughput limitations. The Aggregate Throughput Benchmark is not a guaranteed throughput due to Internet traffic conditions and your application behaviors.
+ -  On a single tunnel, a maximum of 1-Gbps throughput can be achieved. Aggregate Throughput Benchmark is based on measurements of multiple tunnels aggregated through a single gateway. The Aggregate Throughput Benchmark for a VPN Gateway is S2S + P2S combined. If you have numerous P2S connections, it can negatively impact a S2S connection due to throughput limitations. The Aggregate Throughput Benchmark isn't a guaranteed throughput due to Internet traffic conditions and your application behaviors.
 
 ## VPN Gateway types
 
-When you create the virtual network gateway for a VPN gateway configuration, you must specify a VPN type. The VPN type that you choose depends on the connection topology that you want to create. For example, a P2S connection requires a RouteBased VPN type. A VPN type can also depend on the hardware that you are using. S2S configurations require a VPN device. Some VPN devices only support a certain VPN type.
+When you create the virtual network gateway for a VPN gateway configuration, you must specify a VPN type. The VPN type that you choose depends on the connection topology that you want to create. For example, a P2S connection requires a RouteBased VPN type. A VPN type can also depend on the hardware that you're using. S2S configurations require a VPN device. Some VPN devices only support a certain VPN type.
 
 The VPN type you select must satisfy all the connection requirements for the solution you want to create. For example, if you want to create a S2S VPN gateway connection and a P2S VPN gateway connection for the same virtual network, use VPN type RouteBased because P2S requires a RouteBased VPN type. You would also need to verify that your VPN device supported a RouteBased VPN connection.
 
-Once a virtual network gateway has been created, you can't change the VPN type. You must delete the virtual network gateway and create a new one. There are two VPN types:
+Once a virtual network gateway is created, you can't change the VPN type. You must delete the virtual network gateway and create a new one. There are two VPN types:
 
 ### PolicyBased
 
-PolicyBased VPNs were previously called static routing gateways in the classic deployment model. Policy-based VPNs encrypt and direct packets through IPsec tunnels based on the IPsec policies configured with the combinations of address prefixes between your on-premises network and the Azure VNet. The policy (or traffic selector) is usually defined as an access list in the VPN device configuration. The value for a PolicyBased VPN type is PolicyBased. When using a PolicyBased VPN, keep in mind the following limitations:
+PolicyBased VPNs were previously called static routing gateways in the classic deployment model. Policy-based VPNs encrypt and direct packets through IPsec tunnels based on the IPsec policies. The policy (or traffic selector) is defined as an access list in the VPN device configuration. The value for a PolicyBased VPN type is PolicyBased. When using a PolicyBased VPN, keep in mind the following limitations:
 
 Policy based VPNs which support IKEv1 protocols can be used with Basic Gateway SKUs only.
 
-You can have only 1 tunnel when using a PolicyBased VPN.
+You can have only one tunnel when using a PolicyBased VPN.
 
 You can only use PolicyBased VPNs for S2S connections, and only for certain configurations. Most VPN Gateway configurations require a RouteBased VPN.
 
@@ -93,41 +91,41 @@ The following table lists the requirements for PolicyBased and RouteBased VPN ga
 |:---------------------------------:|:---------------------------------:|:----------------------------------------------------------------------:|:----------------------------------------------------------------------:|:----------------------------------------------------------------------:|
 |  Site-to-Site connectivity (S2S)  |   PolicyBased VPN configuration   |                      RouteBased VPN configuration                      |                      RouteBased VPN configuration                      |                      RouteBased VPN configuration                      |
 | Point-to-Site connectivity (P2S)  |           Not supported           |                    Supported (Can coexist with S2S)                    |                    Supported (Can coexist with S2S)                    |                    Supported (Can coexist with S2S)                    |
-|       Authentication method       |          Pre-shared key           | Pre-shared key for S2S connectivity, Certificates for P2S connectivity | Pre-shared key for S2S connectivity, Certificates for P2S connectivity | Pre-shared key for S2S connectivity, Certificates for P2S connectivity |
+|       Authentication method       |          Preshared key           | Preshared key for S2S connectivity, Certificates for P2S connectivity | Preshared key for S2S connectivity, Certificates for P2S connectivity | Preshared key for S2S connectivity, Certificates for P2S connectivity |
 | Maximum number of S2S connections |                 1                 |                                   10                                   |                                   10                                   |                                   30                                   |
 | Maximum number of P2S connections |           Not supported           |                                  128                                   |                                  128                                   |                                  128                                   |
 | Active routing support (BGP) (\*) |           Not supported           |                             Not supported                              |                               Supported                                |                               Supported                                |
 
-(\*) BGP is not supported for the classic deployment model.
+(\*) BGP isn't supported for the classic deployment model.
 
 ### Create the VPN Gateway
 
 The VPN gateway settings that you chose are critical to creating a successful connection. 
-:::image type="content" source="../media/vpn-gateway-config-79862df4.png" alt-text="Create a virtual network gateway page in the Azure portal":::
+:::image type="content" source="../media/vpn-gateway-config-79862df4.png" alt-text="Screenshot of the virtual network gateway page in the Azure portal.":::
 
 
  -  Gateway type. VPN or ExpressRoute.
  -  VPN Type. Route based or Policy based. Most VPN types are Route-based. The type of VPN you choose depends on the make and model of your VPN device, and the kind of VPN connection you intend to create. Typical route-based gateway scenarios include point-to-site, inter-virtual network, or multiple site-to-site connections. Route-based is also selected when you coexist with an ExpressRoute gateway or if you need to use IKEv2. Policy-based gateways support only IKEv1.
- -  SKU. Use the drop-down to select a gateway SKU. Your choice will affect the number of tunnels you can have and the aggregate throughput benchmark. The benchmark is based on measurements of multiple tunnels aggregated through a single gateway. It is not a guaranteed throughput due to Internet traffic conditions and your application behaviors.
- -  Generation. Generation1 or Generation2. You cannot change generations or SKUs across generations. Basic and VpnGw1 SKUs are only supported in Generation1. VpnGw4 and VpnGw5 SKUs are only supported in Generation2.
- -  Virtual Networks. The virtual network that will be able to send and receive traffic through the virtual network gateway. A virtual network cannot be associated with more than one gateway.
+ -  SKU. Use the drop-down to select a gateway SKU. Your choice affects the number of tunnels you can have and the aggregate throughput benchmark. The benchmark is based on measurements of multiple tunnels aggregated through a single gateway. It isn't a guaranteed throughput due to Internet traffic conditions and your application behaviors.
+ -  Generation. Generation1 or Generation2. You can't change generations or SKUs across generations. Basic and VpnGw1 SKUs are only supported in Generation1. VpnGw4 and VpnGw5 SKUs are only supported in Generation2.
+ -  Virtual Networks. The virtual network that is able to send and receive traffic through the virtual network gateway. A virtual network can't be associated with more than one gateway.
 
 > [!NOTE]
 > You can view the IP address assigned to the gateway. The gateway should appear as a connected device.
 
 ### Gateway subnet
 
-VPN Gateways require a gateway subnet. You can create a Gateway subnet before you create a VPN gateway, or you can create it during the creation of the VPN Gateway. The gateway subnet contains the IP addresses that the virtual network gateway VMs and services use. When you create your virtual network gateway, gateway VMs are deployed to the gateway subnet and configured with the required VPN gateway settings. Never deploy anything else (for example, additional VMs) to the gateway subnet. The gateway subnet must be named GatewaySubnet to work properly. Naming the gateway subnet GatewaySubnet tells Azure that this is the subnet to deploy the virtual network gateway VMs and services to.
+VPN Gateways require a gateway subnet. You can create a Gateway subnet before you create a VPN gateway, or you can create it during the creation of the VPN Gateway. The gateway subnet contains the IP addresses that the virtual network gateway VMs and services use. When you create your virtual network gateway, gateway VMs are deployed to the gateway subnet and configured with the required VPN gateway settings. Never deploy anything else (for example, more VMs) to the gateway subnet. The gateway subnet must be named GatewaySubnet to work properly. Naming the gateway subnet GatewaySubnet tells Azure which subnets to deploy the virtual network gateway VMs and services to.
 
 When you create the gateway subnet, you specify the number of IP addresses that the subnet contains. The IP addresses in the gateway subnet are allocated to the gateway VMs and gateway services. Some configurations require more IP addresses than others.
 
-When you are planning your gateway subnet size, refer to the documentation for the configuration that you are planning to create. For example, the ExpressRoute/VPN Gateway coexist configuration requires a larger gateway subnet than most other configurations. Additionally, you may want to make sure your gateway subnet contains enough IP addresses to accommodate possible future additional configurations. While you can create a gateway subnet as small as /29, we recommend that you create a gateway subnet of /27 or larger (/27, /26 etc.) if you have the available address space to do so. This will accommodate most configurations.
+When you're planning your gateway subnet size, refer to the documentation for the configuration that you're planning to create. For example, the ExpressRoute/VPN Gateway coexist configuration requires a larger gateway subnet than most other configurations. Additionally, you may want to make sure your gateway subnet contains enough IP addresses to accommodate possible future configurations. While you can create a gateway subnet as small as /29, we recommend that you create a gateway subnet of /27 or larger. 
 
 ### Create the Local Network Gateway
 
-The local network gateway typically refers to the on-premises location. You give the site a name by which Azure can refer to it, then specify the IP address or FQDN of the on-premises VPN device for the connection. You also specify the IP address prefixes that will be routed through the VPN gateway to the VPN device. The address prefixes you specify are the prefixes located in the on-premises network.
+The local network gateway typically refers to the on-premises location. You give the site a name by which Azure can refer to it, then specify the IP address or FQDN of the on-premises VPN device for the connection. You also specify the IP address prefixes to route through the VPN gateway to the VPN device. The address prefixes you specify are the prefixes located in the on-premises network.
 
-:::image type="content" source="../media/local-network-gateway-9d46963c.png" alt-text="Screenshot of the Create local network gateway page. The Name is VNet1LocalNet. The IP address is 128.8.8.8. The Address space is 10.101.0.0 24.":::
+:::image type="content" source="../media/local-network-gateway-9d46963c.png" alt-text="Screenshot of the local network gateway page. The Name is VNet1LocalNet. The IP address is 128.8.8.8. The Address space is 10.101.0.0 24.":::
 
 
 **IP Address.** The public IP address of the local gateway.
@@ -136,11 +134,11 @@ The local network gateway typically refers to the on-premises location. You give
 
 ### Configure the on-premises VPN device
 
-There is a validated list of standard VPN devices that work well with the VPN gateway. This list was created in partnership with device manufacturers like Cisco, Juniper, Ubiquiti, and Barracuda Networks.
+There's a validated list of standard VPN devices that work well with the VPN gateway. This list was created in partnership with device manufacturers like Cisco, Juniper, and Barracuda Networks.
 
-When your device is not listed in the validated VPN devices table, the device may still work. Contact your device manufacturer for support and configuration instructions.
+When your device isn't listed in the validated VPN devices table, the device may still work. Contact your device manufacturer for support and configuration instructions.
 
-To configure your VPN device, you will need:
+To configure your VPN device, you need:
 
 **A shared key**. The same shared key that you specify when creating the VPN connection.
 
@@ -153,7 +151,7 @@ To configure your VPN device, you will need:
 
 Once your VPN gateways are created, you can create the connection between them. If your VNets are in the same subscription, you can use the portal.
 
-:::image type="content" source="../media/gateway-conections-993fd031.png" alt-text="Screenshot of the Add Connection page in the Azure portal. TestVNet4GW is selected as the second virtual network gateway. The Shared key is abc123.":::
+:::image type="content" source="../media/gateway-conections-993fd031.png" alt-text="Screenshot of the gateway connection page in the Azure portal. TestVNet4GW is selected as the second virtual network gateway. The Shared key is abc123.":::
 
 
 **Name**. Enter a name for your connection.
@@ -164,7 +162,7 @@ Once your VPN gateways are created, you can create the connection between them. 
 
 ### Verify the VPN Connection
 
-After you have configured all the Site-to-Site components, it is time to verify that everything is working. You can verify the connections either in the portal, or by using PowerShell.
+After you configure all the Site-to-Site components, it's time to verify that everything is working. You can verify the connections either in the portal, or by using PowerShell.
 
 ## High availability options for VPN connections
 
@@ -177,16 +175,16 @@ To provide better availability for your VPN connections, there are a few options
 
 ### VPN Gateway redundancy
 
-Every Azure VPN gateway consists of two instances in an active-standby configuration. For any planned maintenance or unplanned disruption that happens to the active instance, the standby instance would take over (failover) automatically and resume the S2S VPN or VNet-to-VNet connections. The switch over will cause a brief interruption. For planned maintenance, the connectivity should be restored within 10 to 15 seconds. For unplanned issues, the connection recovery will be longer, about 1 to 3 minutes in the worst case. For P2S VPN client connections to the gateway, the P2S connections will be disconnected, and the users will need to reconnect from the client machines.
+Every Azure VPN gateway consists of two instances in an active-standby configuration. For any planned maintenance or unplanned disruption that happens to the active instance, the standby instance would take over (failover) automatically and resume the S2S VPN or VNet-to-VNet connections. The switch over causes a brief interruption. For planned maintenance, the connectivity should be restored within 10 to 15 seconds. For unplanned issues, the connection recovery is longer, about 1 to 3 minutes in the worst case. For P2S VPN client connections to the gateway, the P2S connections are disconnected, and the users need to reconnect from the client machines.
 
-:::image type="content" source="../media/vpn-active-standby-587ca913.png" alt-text="Single Azure VPN Gateway in active standby VPN configuration.":::
+:::image type="content" source="../media/vpn-active-standby-587ca913.png" alt-text="Diagram of an Azure VPN Gateway in active standby configuration.":::
 
 
 ### Multiple on-premises VPN devices
 
 You can use multiple VPN devices from your on-premises network to connect to your Azure VPN gateway, as shown in the following diagram:
 
-:::image type="content" source="../media/vpn-multiple-onprem-vpns-61d52189.png" alt-text="Multiple Azure VPN Gateways in active standby VPN configuration.":::
+:::image type="content" source="../media/vpn-multiple-onprem-vpns-61d52189.png" alt-text="Diagram of multiple Azure VPN gateways in active standby configuration.":::
 
 
 This configuration provides multiple active tunnels from the same Azure VPN gateway to your on-premises devices in the same location. There are some requirements and constraints:
@@ -194,50 +192,50 @@ This configuration provides multiple active tunnels from the same Azure VPN gate
 1.  You need to create multiple S2S VPN connections from your VPN devices to Azure. When you connect multiple VPN devices from the same on-premises network to Azure, you need to create one local network gateway for each VPN device, and one connection from your Azure VPN gateway to each local network gateway.
 2.  The local network gateways corresponding to your VPN devices must have unique public IP addresses in the GatewayIpAddress property.
 3.  BGP is required for this configuration. Each local network gateway representing a VPN device must have a unique BGP peer IP address specified in the BgpPeerIpAddress property.
-4.  You should use BGP to advertise the same prefixes of the same on-premises network prefixes to your Azure VPN gateway, and the traffic will be forwarded through these tunnels simultaneously.
+4.  You should use BGP to advertise the same prefixes of the same on-premises network prefixes to your Azure VPN gateway, and the traffic is forwarded through these tunnels simultaneously.
 5.  You must use Equal-cost multi-path routing (ECMP).
 6.  Each connection is counted against the maximum number of tunnels for your Azure VPN gateway, 10 for Basic and Standard SKUs, and 30 for HighPerformance SKU.
 
-In this configuration, the Azure VPN gateway is still in active-standby mode, so the same failover behavior and brief interruption will still happen as described above. But this setup guards against failures or interruptions on your on-premises network and VPN devices.
+In this configuration, the Azure VPN gateway is still in active-standby mode, so the same failover behavior and brief interruption occurs. But this setup guards against failures or interruptions on your on-premises network and VPN devices.
 
 ### Active-active VPN gateways
 
-You can create an Azure VPN gateway in an active-active configuration, where both instances of the gateway VMs will establish S2S VPN tunnels to your on-premises VPN device, as shown the following diagram:
+You can create an Azure VPN gateway in an active-active configuration, where both instances of the gateway VMs establish S2S VPN tunnels to your on-premises VPN device, as shown the following diagram:
 
-:::image type="content" source="../media/vpn-active-active-89241ba7.png" alt-text="Single Azure VPN Gateway in active active configuration.":::
+:::image type="content" source="../media/vpn-active-active-89241ba7.png" alt-text="Diagram of an Azure VPN Gateway in active-active configuration.":::
 
 
-In this configuration, each Azure gateway instance will have a unique public IP address, and each will establish an IPsec/IKE S2S VPN tunnel to your on-premises VPN device specified in your local network gateway and connection. Note that both VPN tunnels are part of the same connection. You will still need to configure your on-premises VPN device to accept or establish two S2S VPN tunnels to those two Azure VPN gateway public IP addresses.
+In this configuration, each Azure gateway instance has a unique public IP address, and each establishes an IPsec/IKE S2S VPN tunnel to your on-premises VPN device. Both VPN tunnels are part of the same connection. You need to configure your on-premises VPN device to accept or establish two S2S VPN tunnels to those two Azure VPN gateway public IP addresses.
 
-Because the Azure gateway instances are in active-active configuration, the traffic from your Azure virtual network to your on-premises network will be routed through both tunnels simultaneously, even if your on-premises VPN device may favor one tunnel over the other. For a single TCP or UDP flow, Azure attempts to use the same tunnel when sending packets to your on-premises network. However, your on-premises network could use a different tunnel to send packets to Azure.
+Because the Azure gateway instances are in active-active configuration, the traffic from your Azure virtual network to your on-premises network is routed through both tunnels simultaneously, even if your on-premises VPN device may favor one tunnel over the other. For a single TCP or UDP flow, Azure attempts to use the same tunnel when sending packets to your on-premises network. However, your on-premises network could use a different tunnel to send packets to Azure.
 
-When a planned maintenance or unplanned event happens to one gateway instance, the IPsec tunnel from that instance to your on-premises VPN device will be disconnected. The corresponding routes on your VPN devices should be removed or withdrawn automatically so that the traffic will be switched over to the other active IPsec tunnel. On the Azure side, the switch over will happen automatically from the affected instance to the active instance.
+When a planned maintenance or unplanned event happens to one gateway instance, the IPsec tunnel from that instance to your on-premises VPN device is disconnected. The corresponding routes on your VPN devices should be removed or withdrawn automatically so that the traffic is switched over to the other active IPsec tunnel. On the Azure side, the switch happens automatically from the affected instance to the active instance.
 
 ### Dual-redundancy: active-active VPN gateways for both Azure and on-premises networks
 
-The most reliable option is to combine the active-active gateways on both your network and Azure, as shown in the diagram below.
+The most reliable option is to combine the active-active gateways on both your network and Azure, as shown in the diagram.
 
-:::image type="content" source="../media/vpn-dual-redundancy-567620af.png" alt-text="active-active VPN gateway configuration diagram":::
+:::image type="content" source="../media/vpn-dual-redundancy-567620af.png" alt-text="Diagram of a VPN gateway in dual redundancy configuration.":::
 
 
-Here you create and set up the Azure VPN gateway in an active-active configuration and create two local network gateways and two connections for your two on-premises VPN devices as described above. The result is a full mesh connectivity of 4 IPsec tunnels between your Azure virtual network and your on-premises network.
+Here you create and set up the Azure VPN gateway in an active-active configuration and create two local network gateways and two connections for your two on-premises VPN devices. The result is a full mesh connectivity of 4 IPsec tunnels between your Azure virtual network and your on-premises network.
 
-All gateways and tunnels are active from the Azure side, so the traffic will be spread among all 4 tunnels simultaneously, although each TCP or UDP flow will again follow the same tunnel or path from the Azure side. Even though by spreading the traffic, you may see slightly better throughput over the IPsec tunnels, the primary goal of this configuration is for high availability. And due to the statistical nature of the spreading, it is difficult to provide the measurement on how different application traffic conditions will affect the aggregate throughput.
+All gateways and tunnels are active from the Azure side, so the traffic is spread among all four tunnels simultaneously. By spreading the traffic, you may see slightly better throughput over the IPsec tunnels, the primary goal of this configuration is for high availability. And due to the statistical nature of the spreading, it's difficult to provide the measurement on how different application traffic conditions affects the aggregate throughput.
 
-This topology will require two local network gateways and two connections to support the pair of on-premises VPN devices, and BGP is required to allow the two connections to the same on-premises network. These requirements are the same as the above.
+This topology requires two local network gateways and two connections to support the pair of on-premises VPN devices, and BGP is required to allow the two connections to the same on-premises network. 
 
 ### Highly Available VNet-to-VNet
 
-The same active-active configuration can also apply to Azure VNet-to-VNet connections. You can create active-active VPN gateways for both virtual networks, and connect them together to form the same full mesh connectivity of 4 tunnels between the two VNets, as shown in the diagram below:
+The same active-active configuration can also apply to Azure VNet-to-VNet connections. You can create active-active VPN gateways for both virtual networks, and connect them together to form the same full mesh connectivity of four tunnels between the two VNets.
 
-:::image type="content" source="../media/vpn-vnet-vnet-92bddb64.png" alt-text="Highly available VNet-to-VNet VPN Gateway configuration.":::
+:::image type="content" source="../media/vpn-vnet-vnet-92bddb64.png" alt-text="Diagram of a highly available VNet-to-VNet VPN gateway configuration.":::
 
 
-This ensures there are always a pair of tunnels between the two virtual networks for any planned maintenance events, providing even better availability. Even though the same topology for cross-premises connectivity requires two connections, the VNet-to-VNet topology shown above will need only one connection for each gateway. Additionally, BGP is optional unless transit routing over the VNet-to-VNet connection is required.
+Even though the same topology for cross-premises connectivity requires two connections, the VNet-to-VNet topology only needs one connection for each gateway. Additionally, BGP is optional unless transit routing over the VNet-to-VNet connection is required.
 
 ## Troubleshoot Azure VPN Gateway
 
-VPN Gateway connections can fail for a variety of reasons. Although a network engineer will be able to troubleshoot many connectivity issues from experience, the following Microsoft documentation provides help and guidance for resolving many common problems.
+VPN Gateway connections can fail for various reasons. Although a network engineer is able to troubleshoot many connectivity issues from experience, the following Microsoft documentation provides help and guidance for resolving many common problems.
 
 **Validate VPN throughput to a VNet**
 
@@ -249,7 +247,7 @@ This article lists common point-to-site connection problems that you might exper
 
 **Site-to-Site connections**
 
-After you configure a site-to-site VPN connection between an on-premises network and an Azure virtual network, the VPN connection suddenly stops working and cannot be reconnected. This article provides troubleshooting steps to help you resolve this problem. See [Troubleshoot an Azure site-to-site VPN connection that cannot connect - Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-cannot-connect).
+After you configure a site-to-site VPN connection between an on-premises network and an Azure virtual network, the VPN connection suddenly stops working and can't be reconnected. This article provides troubleshooting steps to help you resolve this problem. See [Troubleshoot an Azure site-to-site VPN connection that can't connect - Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-troubleshoot-site-to-site-cannot-connect).
 
 **VPN and Firewall device settings**
 

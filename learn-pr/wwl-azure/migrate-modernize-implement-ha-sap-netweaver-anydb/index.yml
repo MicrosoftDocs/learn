@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Modernize and implement high availability in SAP NetWeaver with AnyDB on Azure Virtual Machines
   description: 'This module explores the preparation for SAP NetWeaver high availability AnyDB deployment on Azure. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024
@@ -35,3 +37,4 @@ units:
 - learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.summary
 badge:
   uid: learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.badge
+

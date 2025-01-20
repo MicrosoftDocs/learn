@@ -2,6 +2,8 @@
 uid: learn.tensorflow.intro-computer-vision.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: In this last unit, we briefly recap what we have learned, and set directions for further learning.
   author: shwars
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
+

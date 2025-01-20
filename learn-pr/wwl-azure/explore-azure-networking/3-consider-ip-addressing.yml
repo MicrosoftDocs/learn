@@ -4,7 +4,7 @@ title: Consider IP addressing
 metadata:
   title: Consider IP addressing
   description: "Explore the characteristics of the unique private IP address of each Azure Virtual Machine, Azure load balancer, and application gateway in your virtual network."
-  ms.date: 10/03/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

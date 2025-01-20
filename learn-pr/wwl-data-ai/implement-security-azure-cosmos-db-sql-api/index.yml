@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-security-azure-cosmos-db-sql-api
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement security in Azure Cosmos DB for NoSQL
   description: "We will learn the different security models that Azure Cosmos DB uses."
   ms.date: 10/18/2022
@@ -39,3 +41,4 @@ units:
 - learn.wwl.implement-security-azure-cosmos-db-sql-api.summary
 badge:
   uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.badge
+

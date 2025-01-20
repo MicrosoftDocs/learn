@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-application-configuration-data.examine-app-configuration-feature-management
 title: Examine App configuration feature management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine App configuration feature management
   description: "Examine App configuration feature management"
   ms.date: 05/28/2024

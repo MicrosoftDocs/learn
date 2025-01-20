@@ -2,14 +2,17 @@
 uid: learn.wwl.fundamentals-generative-ai.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: This unit is a summary of the concepts covered in Fundamentals of generative AI.
   author: sherzyang
   ms.author: sheryang
-  ms.date: 5/15/2024
+  ms.date: 11/26/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-objective-domains
 title: Explore objective domains
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore objective domains
   description: "Explore objective domains"
   ms.date: 05/23/2024

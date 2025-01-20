@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-sap-workloads.discover-sap-microsoft-partnership
 title: Discover the SAP and Microsoft partnership
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover the SAP and Microsoft partnership
   description: "Discover the SAP and Microsoft partnership."
   ms.date: 08/01/2024

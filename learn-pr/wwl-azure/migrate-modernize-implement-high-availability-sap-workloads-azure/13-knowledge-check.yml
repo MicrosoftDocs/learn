@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Check what you learn in this module."
   ms.date: 10/10/2024

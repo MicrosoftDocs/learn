@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This content is a part of the "Build accessible SharePoint sites." module.
-  ms.date: 04/12/2024
+  ms.date: 10/31/2024
   author: erzelman
   ms.author: erzelman
   ms.topic: unit
@@ -35,7 +35,7 @@ quiz:
           explanation: "Incorrect. Alt text isn't used to convey the site structure, but rather the content of specific images. Site structure can be communicated by using headings, lists, and other semantic elements."
         - content: "Alt text provides context for screen readers to understand video captions."
           isCorrect: false
-          explanation: "Incorrect. Alt text isn't used for video captions, but for images. Video captions are usually provided by using a separate file or embedded in the video itself."
+          explanation: "Incorrect. Alt text isn't used for video captions but for images. Video captions are usually provided by using a separate file or embedded in the video itself."
         - content: "Alt text provides context for screen readers to understand the content of an image."
           isCorrect: true
           explanation: "Correct. Alt text helps them understand what the image is about and how it relates to the surrounding content."

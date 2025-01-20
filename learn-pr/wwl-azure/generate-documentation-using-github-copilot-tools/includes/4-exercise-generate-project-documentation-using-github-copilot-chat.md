@@ -19,7 +19,7 @@ Project documentation can be generated in Visual Studio Code using the Chat view
 
 1. Ensure that you have the `APL2007M2Sample1` project open in Visual Studio Code.
 
-1. On the Visual Studio Code activity bar, select **Chat**.
+1. To open the GitHub Copilot Chat view, select **Open Chat**.
 
 1. In the Chat view, to generate documentation for the workspace, enter the following prompt:
 

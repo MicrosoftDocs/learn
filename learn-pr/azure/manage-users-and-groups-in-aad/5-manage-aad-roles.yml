@@ -2,9 +2,11 @@
 uid: learn.azure-security.manage-users-and-groups-in-aad.manage-aad-roles
 title: Use roles to control resource access
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use roles to control resource access
   description: Use roles to control resource access
-  ms.date: 11/08/2023
+  ms.date: 11/04/2024
   author: shlipsey3
   ms.author: sarahlipsey
   ms.topic: unit
@@ -26,11 +28,11 @@ quiz:
        isCorrect: false
    - content: "Which of the following sets the _scope_ of a role to be the resource group `myResourceGroup`?"
      choices:
-     - content: "`/subscriptions/de324015-0284-4582-9d9c-6f1e52a30471`"
+     - content: "`/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e`"
        isCorrect: false
-     - content: "`/subscriptions/ef67bd4f-d0f2-4845-b6dd-6cba225b4f10/resourceGroups/myResourceGroup/backupvm1`"
+     - content: "`/subscriptions/bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/resourceGroups/myResourceGroup/backupvm1`"
        isCorrect: false
-     - content: "`/subscriptions/ef67bd4f-d0f2-4845-b6dd-6cba225b4f10/resourceGroups/myResourceGroup`"
+     - content: "`/subscriptions/bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/resourceGroups/myResourceGroup`"
        isCorrect: true
        explanation: "Correct."
    - content: "How are `NotActions` used in a role definition?"
@@ -42,3 +44,4 @@ quiz:
        isCorrect: false
      - content: "`NotActions` allow you to specify a single operation that is not allowed."
        isCorrect: false
+

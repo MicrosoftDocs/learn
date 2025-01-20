@@ -2,6 +2,8 @@
 uid: learn.monitor-java-azure.logging
 title: Log streaming
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Log streaming
   description: We'll discuss logging concepts and commands
@@ -17,3 +19,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/4-logging.md)]
+

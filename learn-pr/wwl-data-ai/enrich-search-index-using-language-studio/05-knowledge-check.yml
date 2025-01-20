@@ -2,6 +2,8 @@
 uid: learn.wwl.enrich-search-index-using-language-studio.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -48,3 +50,4 @@ quiz:
     - content: "You can find the endpoint in the Azure extension inside VS Code."
       isCorrect: true
       explanation: "Correct. You right click on the function name in the Azure extension and select Copy function URL."
+

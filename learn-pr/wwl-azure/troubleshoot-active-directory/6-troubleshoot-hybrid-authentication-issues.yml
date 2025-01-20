@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-active-directory.troubleshoot-hybrid-authentication-issues
 title: Troubleshoot hybrid authentication issues
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot hybrid authentication issues
   description: "Troubleshoot hybrid authentication issues"
   ms.date: 06/08/2022

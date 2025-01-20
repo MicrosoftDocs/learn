@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-geographically-distributed-application.6-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: In this unit, you'll review what you've learned about multi-region application architectures in Azure.
   ms.date: 03/17/2023

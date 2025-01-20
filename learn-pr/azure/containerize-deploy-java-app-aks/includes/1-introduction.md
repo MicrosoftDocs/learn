@@ -4,7 +4,7 @@ Unlike virtual machines that emulate hardware, containers run directly on top of
 
 With Containers, you'll ensure your apps and dependencies are always isolated in container image(s) and ready for deployment at scale.
 
-In this module, you'll first containerize a Java app. For convenience, we've selected an existing Java app for you to use. From the open internet and shared under the [MIT license](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt), [Flight Booking System for Airline Reservations](https://github.com/Azure-Samples/containerize-and-deploy-Java-app-to-Azure) is a fully responsive, sample web-based Flight Booking System based on a sample airline, built with the Model View Controller (MVC) Architecture made using Java Servlets and Java Server Pages (JSPs).
+In this module, you'll first containerize a Java app. For convenience, we've selected an existing Java app for you to use. From the open internet and shared under the [MIT license](https://github.com/git/git-scm.com/blob/gh-pages/MIT-LICENSE.txt), [Flight Booking System for Airline Reservations](https://github.com/Azure-Samples/containerize-and-deploy-Java-app-to-Azure) is a fully responsive, sample web-based Flight Booking System based on a sample airline, built with the Model View Controller (MVC) Architecture made using Java Servlets and Java Server Pages (JSPs).
 
 You'll then construct a Dockerfile and write the Docker instructions needed to build a container image. Next, you'll run the container image locally and test the app. You'll then push the container image into Azure Container Registry and deploy it to Azure Kubernetes Service.
 

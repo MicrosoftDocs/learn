@@ -39,7 +39,7 @@ Complete the following steps to create the GitHub Actions build action:
       RESOURCE_GROUP: 'rg-eshop'
       CLUSTER_NAME: 'aks-eshop'
       DEPLOYMENT_MANIFEST_PATH: './product.yml'
-      DOCKER_PATH: './DockerfileProducts'
+      DOCKER_PATH: './DockerfileProducts.acr'
     
     jobs:
       buildImage:

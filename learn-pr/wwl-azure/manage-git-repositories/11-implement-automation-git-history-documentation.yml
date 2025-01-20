@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-git-repositories.implement-automation-git-history-documentation
 title: Implement automation of Git history documentation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement automation of Git history documentation
   description: "Implement automation of Git history documentation"
   ms.date: 05/24/2024

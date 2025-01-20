@@ -41,12 +41,14 @@ The challenge instructions have you download the sample app for this challenge.
 
 1. In the Chat view, hover the mouse pointer over the code block containing the new method, and then select **Insert at Cursor**.
 
-    The code should be similar to the following snippet:
+1. If the method is enclosed in a class, strip away the class definition and any other unnecessary code.
+
+    Your code should be similar to the following snippet:
 
     ```csharp
     public static string ConstructProductId(SalesData salesDataItem)
     {
-        Random random = new Random();
+        Random random = new();
         int indexOfDept = Array.IndexOf(ProdDepartments.departmentNames, salesDataItem.departmentName);
         string deptAbb = ProdDepartments.departmentAbbreviations[indexOfDept];
         string firstDigit = (indexOfDept + 1).ToString();
@@ -119,7 +121,7 @@ The challenge instructions have you download the sample app for this challenge.
 
 The `DeconstructProductId` method extracts the department abbreviation, product serial number, size code, color code, and manufacturing site from the productID. The method returns a 2-dimensional array containing the description and value for each of these components.
 
-The QuarterlySalesReport method uses the extracted product serial number from DeconstructProductId to identify the most profitable product for each quarter (ignoring size, color, and manufacturing location).
+Your goal is a QuarterlySalesReport method that uses the extracted product serial number from DeconstructProductId to identify the most profitable product for each quarter (ignoring size, color, and manufacturing location).
 
 1. Create a blank code line below the ConstructProductId method.
 
@@ -130,6 +132,8 @@ The QuarterlySalesReport method uses the extracted product serial number from De
     ```
 
 1. Review the suggested code update and then select **Accept**.
+
+    The suggested code update should be similar to the following snippet:
 
     ```csharp
         public static string[,] DeconstructProductId(string productID)
@@ -224,7 +228,148 @@ The QuarterlySalesReport method uses the extracted product serial number from De
     Use extended ASCII characters to add border lines to the top three most profitable products table. Border lines should enclose the table perimeter. Border lines should separate the interior columns of the table. 
     ```
 
+1. Your updated report should appear similar to the following output:
+
+    ```output
+    Quarterly Sales Report
+    ----------------------
+    Q1: Sales: $2,010,770.47, Profit: $250,625.54, Profit Percentage: 18.00%
+    By Department:
+    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
+    │      Department       │       Sales       │       Profit      │ Profit Percentage │
+    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
+    │ Accessories           │       $252,135.52 │        $30,488.55 │             12.00 │
+    │ Children's Clothing   │       $228,808.70 │        $30,664.28 │              8.00 │
+    │ Footwear              │       $312,223.23 │        $37,551.63 │              8.00 │
+    │ Men's Clothing        │       $233,815.71 │        $29,824.88 │             18.00 │
+    │ Outerwear             │       $313,551.48 │        $39,147.46 │             13.00 │
+    │ Sportswear            │       $243,726.05 │        $26,286.92 │             18.00 │
+    │ Undergarments         │       $217,172.86 │        $28,275.53 │              9.00 │
+    │ Women's Clothing      │       $209,336.93 │        $28,386.29 │             14.00 │
+    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    
+    Top 3 Sales Orders:
+    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
+    │      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │
+    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
+    │ UNDR-838-S-YL-CA1     │                97 │           $292.46 │        $28,368.69 │         $5,390.05 │             19.00 │
+    │ FOOT-556-XL-WT-US1    │                91 │           $250.74 │        $22,817.69 │         $4,563.54 │             20.00 │
+    │ UNDR-855-XL-GY-CA1    │                76 │           $265.29 │        $20,162.19 │         $4,032.44 │             20.00 │
+    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    
+    Top 3 Most Profitable Product Serial Numbers:
+    ┌───────────────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
+    │      Product Serial Number    │   Units Sold      │    Total Sales    │   Avg Unit Cost   │   Total Profit    │ Avg Profit %      │
+    ├───────────────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
+    │ UNDR-838-ss-cc-mmm            │                97 │        $28,368.69 │           $292.46 │         $5,390.05 │             19.00 │
+    │ MENS-152-ss-cc-mmm            │               120 │        $30,943.28 │           $257.86 │         $4,797.87 │             15.51 │
+    │ ACCS-445-ss-cc-mmm            │               152 │        $41,133.81 │           $270.62 │         $4,590.81 │             11.16 │
+    └───────────────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    
+    Q2: Sales: $2,068,016.14, Profit: $236,217.45, Profit Percentage: 15.00%
+    By Department:
+    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
+    │      Department       │       Sales       │       Profit      │ Profit Percentage │
+    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
+    │ Accessories           │       $268,849.76 │        $26,080.13 │             15.00 │
+    │ Children's Clothing   │       $305,464.95 │        $37,580.35 │             15.00 │
+    │ Footwear              │       $216,937.30 │        $25,441.11 │             17.00 │
+    │ Men's Clothing        │       $278,199.36 │        $30,657.58 │              5.00 │
+    │ Outerwear             │       $302,285.12 │        $35,261.71 │             12.00 │
+    │ Sportswear            │       $224,366.31 │        $26,223.01 │             15.00 │
+    │ Undergarments         │       $299,010.01 │        $32,781.72 │              7.00 │
+    │ Women's Clothing      │       $172,903.33 │        $22,191.85 │             13.00 │
+    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    
+    Top 3 Sales Orders:
+    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
+    │      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │
+    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
+    │ UNDR-817-M-BL-JP1     │                80 │           $261.50 │        $20,919.64 │         $3,974.73 │             19.00 │
+    │ SPRT-793-S-GR-UK3     │                97 │           $215.94 │        $20,946.30 │         $3,560.87 │             17.00 │
+    │ SPRT-768-L-WT-CA1     │                94 │           $289.49 │        $27,211.60 │         $3,265.39 │             12.00 │
+    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    
+    Top 3 Most Profitable Product Serial Numbers:
+    ┌───────────────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
+    │      Product Serial Number    │   Units Sold      │    Total Sales    │   Avg Unit Cost   │   Total Profit    │ Avg Profit %      │
+    ├───────────────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
+    │ CHLD-376-ss-cc-mmm            │               195 │        $46,889.55 │           $240.46 │         $6,774.29 │             14.45 │
+    │ SPRT-768-ss-cc-mmm            │               254 │        $49,206.83 │           $193.73 │         $6,379.36 │             12.96 │
+    │ WOMN-227-ss-cc-mmm            │               131 │        $33,440.90 │           $255.27 │         $5,366.41 │             16.05 │
+    └───────────────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    
+    Q3: Sales: $1,935,109.61, Profit: $236,097.44, Profit Percentage: 9.00%
+    By Department:
+    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
+    │      Department       │       Sales       │       Profit      │ Profit Percentage │
+    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
+    │ Accessories           │       $209,769.49 │        $23,696.91 │             14.00 │
+    │ Children's Clothing   │       $284,063.17 │        $36,659.61 │              9.00 │
+    │ Footwear              │       $317,501.38 │        $46,104.88 │             11.00 │
+    │ Men's Clothing        │       $247,665.36 │        $26,148.64 │              7.00 │
+    │ Outerwear             │       $192,230.64 │        $20,248.42 │              9.00 │
+    │ Sportswear            │       $157,918.85 │        $19,439.11 │             16.00 │
+    │ Undergarments         │       $235,916.29 │        $28,426.17 │             13.00 │
+    │ Women's Clothing      │       $290,044.42 │        $35,373.69 │              8.00 │
+    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    
+    Top 3 Sales Orders:
+    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
+    │      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │
+    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
+    │ CHLD-335-L-RD-JP2     │                99 │           $270.39 │        $26,769.08 │         $5,353.82 │             20.00 │
+    │ FOOT-521-M-GY-JP1     │                92 │           $243.07 │        $22,362.70 │         $4,472.54 │             20.00 │
+    │ FOOT-580-M-WT-CA1     │                71 │           $247.36 │        $17,562.49 │         $3,336.87 │             19.00 │
+    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    
+    Top 3 Most Profitable Product Serial Numbers:
+    ┌───────────────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
+    │      Product Serial Number    │   Units Sold      │    Total Sales    │   Avg Unit Cost   │   Total Profit    │ Avg Profit %      │
+    ├───────────────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
+    │ CHLD-335-ss-cc-mmm            │                99 │        $26,769.08 │           $270.39 │         $5,353.82 │             20.00 │
+    │ FOOT-521-ss-cc-mmm            │                92 │        $22,362.70 │           $243.07 │         $4,472.54 │             20.00 │
+    │ FOOT-580-ss-cc-mmm            │               112 │        $23,402.50 │           $208.95 │         $4,446.48 │             19.00 │
+    └───────────────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    
+    Q4: Sales: $1,921,871.92, Profit: $243,382.82, Profit Percentage: 19.00%
+    By Department:
+    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
+    │      Department       │       Sales       │       Profit      │ Profit Percentage │
+    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
+    │ Accessories           │       $256,825.90 │        $33,466.30 │             19.00 │
+    │ Children's Clothing   │       $304,779.08 │        $34,547.16 │              7.00 │
+    │ Footwear              │       $254,356.72 │        $33,535.07 │             20.00 │
+    │ Men's Clothing        │       $238,480.94 │        $34,185.50 │             19.00 │
+    │ Outerwear             │       $265,190.55 │        $34,568.15 │              9.00 │
+    │ Sportswear            │       $202,590.30 │        $23,044.17 │             15.00 │
+    │ Undergarments         │       $176,759.63 │        $22,135.85 │             13.00 │
+    │ Women's Clothing      │       $222,888.81 │        $27,900.62 │              7.00 │
+    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    
+    Top 3 Sales Orders:
+    ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
+    │      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │
+    ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
+    │ MENS-109-XS-RD-US2    │                96 │           $262.21 │        $25,171.89 │         $5,034.38 │             20.00 │
+    │ MENS-128-L-YL-UK2     │                89 │           $291.70 │        $25,961.39 │         $4,153.82 │             16.00 │
+    │ MENS-176-XS-WT-US3    │                87 │           $282.90 │        $24,611.94 │         $3,937.91 │             16.00 │
+    └───────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+    
+    Top 3 Most Profitable Product Serial Numbers:
+    ┌───────────────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
+    │      Product Serial Number    │   Units Sold      │    Total Sales    │   Avg Unit Cost   │   Total Profit    │ Avg Profit %      │
+    ├───────────────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
+    │ MENS-176-ss-cc-mmm            │               128 │        $32,260.04 │           $252.03 │         $5,314.57 │             16.47 │
+    │ ACCS-489-ss-cc-mmm            │               129 │        $31,755.76 │           $246.17 │         $5,063.68 │             15.95 │
+    │ MENS-109-ss-cc-mmm            │                96 │        $25,171.89 │           $262.21 │         $5,034.38 │             20.00 │
+    └───────────────────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┴───────────────────┘
+
+    ```
+
 ## Updated Source Code
+
+You can review the code updates for this challenge below.
 
 ```csharp
 namespace ReportGenerator

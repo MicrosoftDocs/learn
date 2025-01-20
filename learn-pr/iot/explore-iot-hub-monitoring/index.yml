@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-iot-hub-monitoring
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Guided project - Explore Azure IoT Hub monitoring
   description: "Explore configuring IoT Hub monitoring for your solution, setting up and triggering alerts, and reviewing the diagnostics logs."
   ms.date: 11/05/2023
@@ -45,3 +47,4 @@ units:
 - learn.wwl.explore-iot-hub-monitoring.summary
 badge:
   uid: learn.wwl.explore-iot-hub-monitoring.badge
+

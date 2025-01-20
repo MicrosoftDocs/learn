@@ -2,6 +2,8 @@
 uid: learn.azure.plan-deploy-azure-arc-enabled-servers.what-is-azure-arc-enabled-servers
 title: What is Azure Arc-enabled servers and its capabilities? 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure Arc-enabled servers and its capabilities? 
   description: Overview of Azure Arc-enabled servers and the basic architecture of the Connected Machine agent
   ms.date: 03/22/2023
@@ -12,3 +14,4 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-is-azure-arc-enabled-servers.md)]
+

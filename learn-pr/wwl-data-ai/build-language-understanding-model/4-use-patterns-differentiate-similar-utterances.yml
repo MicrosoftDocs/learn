@@ -2,6 +2,8 @@
 uid: learn.wwl.build-language-understanding-model.use-patterns-differentiate-similar-utterances
 title: Use patterns to differentiate similar utterances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use patterns to differentiate similar utterances
   description: Use patterns to differentiate similar utterances
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/4-use-patterns-differentiate-similar-utterances.md)]
+

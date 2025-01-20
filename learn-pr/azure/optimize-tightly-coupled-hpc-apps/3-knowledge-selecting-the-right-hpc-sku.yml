@@ -2,6 +2,8 @@
 uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.3-knowledge-selecting-the-right-hpc-sku
 title: Knowledge check - Select the appropriate HPC SKU
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check - Select the appropriate HPC SKU
   description: Test your knowledge for selecting the appropriate HPC SKU for each type of HPC application.
   ms.date: 08/05/2024
@@ -47,3 +49,4 @@ quiz:
     - content: HB60
       isCorrect: false
       explanation: HB60 doesn't have sufficient floating-point and parallel scaling performance for this HPC application.
+

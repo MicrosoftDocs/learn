@@ -2,6 +2,8 @@
 uid: learn-wwl.explore-data-manipulation-azure-sql-database.move-data-by-using-additional-tools
 title: Understand the data movement tools available
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand the data movement tools available
   description: "Learn the data movement tools available in Azure SQL Database."
   ms.date: 10/1/2024

@@ -2,6 +2,8 @@
 uid: learn.deploy-vms-from-vhd-templates.6-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 09/09/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

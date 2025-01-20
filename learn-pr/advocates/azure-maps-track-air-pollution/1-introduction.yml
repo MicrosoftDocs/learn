@@ -2,6 +2,8 @@
 uid: learn.advocates.use-azure-maps-to-track-air-pollution.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Learn about the capabilities of the Azure Maps web SDK and use it to visualize air pollution data.
   author: acomfort248

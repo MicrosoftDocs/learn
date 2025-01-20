@@ -36,6 +36,5 @@ modules:
 - learn.wwl.active-directory-domain-services-migration
 - learn.wwl.migrate-file-server-workloads-using-storage-migration-service
 - learn.wwl.migrate-windows-server-roles
-- learn.azure.migrate-aspnet-app-azure-app-service
 trophy:
   uid: learn.wwl.migrate-servers-workloads-premises-hybrid-environments.trophy

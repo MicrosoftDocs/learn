@@ -2,6 +2,8 @@
 uid: learn.intro-hdinsight-aks-data-transformation-flink.create-flink-cluster  
 title: Create an Apache Flink cluster
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: Create an Apache Flink cluster
   description: Create an Apache Flink cluster.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/create-flink-cluster.md)]
+

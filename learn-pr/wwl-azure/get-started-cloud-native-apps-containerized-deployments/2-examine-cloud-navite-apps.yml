@@ -2,6 +2,8 @@
 uid: learn.wwl.get-started-cloud-native-apps-containerized-deployments.examine-cloud-navite-apps
 title: Examine cloud-native apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine cloud-native apps
   description: "Examine cloud-native apps"
   ms.date: 02/26/2024

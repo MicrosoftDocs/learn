@@ -2,6 +2,8 @@
 uid: learn.design-your-site-recovery-solution-in-azure.5-build-resilient-data-services
 title: Build resilient data services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build resilient data services
   description: Build resilient data services.
   ms.date: 04/15/2024

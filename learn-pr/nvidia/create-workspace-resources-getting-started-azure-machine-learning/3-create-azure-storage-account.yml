@@ -2,6 +2,8 @@
 uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.create-azure-storage-account
 title: Create an Azure Storage Account
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create an Azure Storage Account
   description: Deploy an Azure Storage Account for storing and loading image data.
   author: toolboc
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-create-azure-storage-account.md)]
+

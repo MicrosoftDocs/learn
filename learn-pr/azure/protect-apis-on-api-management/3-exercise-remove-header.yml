@@ -2,6 +2,8 @@
 uid: learn.protect-apis-on-api-management.3-exercise-remove-header
 title: Exercise - Remove header information
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Remove header information
   description: In this exercise, you'll add a web API to Azure API Management and then use a policy to control the HTTP headers that the API returns.
   ms.date: 08/10/2023
@@ -13,3 +15,4 @@ interactive: bash
 azureSandbox: false
 content: |
   [!include[](includes/3-exercise-remove-header.md)]
+

@@ -1,5 +1,5 @@
 
-In a previous unit, we defined a prompt as the text-based, natural language input you provide in the prompt bar that instructs Microsoft Copilot for Security to generate a response. Copilot provides promptbooks and prompt suggestions, which are helpful, particularly if you're just starting an incident investigation. At some point, however, you'll want and need to enter your own prompts. In those cases, the quality of the response that Copilot returns depends in large part on the quality of the prompt used. In general, a well-crafted prompt with clear and specific inputs leads to more useful responses by Copilot.
+In a previous unit, we defined a prompt as the text-based, natural language input you provide in the prompt bar that instructs Microsoft Security Copilot to generate a response. Copilot provides promptbooks and prompt suggestions, which are helpful, particularly if you're just starting an incident investigation. At some point, however, you'll want and need to enter your own prompts. In those cases, the quality of the response that Copilot returns depends in large part on the quality of the prompt used. In general, a well-crafted prompt with clear and specific inputs leads to more useful responses by Copilot.
 
 ### Elements of an effective prompt
 
@@ -18,7 +18,7 @@ For Copilot, context can refer to the time frame, or that you'll use the respons
 
 Watch this short video for a summary on how to create effective prompts.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=972d5cc0-e83a-48fa-9729-7dea11edba9d]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b7fe7b15-6342-4f0b-bed0-9e8ad118ad96]
 
 ### Other prompting tips
 

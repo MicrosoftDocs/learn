@@ -2,6 +2,8 @@
 uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.execute-jupyter-notebook-produce-object-detection-model-automl
 title: Execute the Jupyter Notebook to produce an object detection model using AutoML
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Execute the Jupyter Notebook to produce an object detection model using AutoML
   description: Execute the Jupyter Notebook to produce an object detection model using AutoML.
   author: toolboc
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-execute-jupyter-notebook-produce-object-detection-model-automl.md)]
+

@@ -122,7 +122,7 @@ When you enable the auto-provision option, a default workspace will be automatic
     :::image type="content" source="../media/find-policy-08c93581.png" alt-text="Screenshot showing how to assign a custom workspace through Azure policy.":::
     
 3.  Select Definitions.
-4.  Search for policy ID `64def556-fbad-4622-930e-72d1d5589bf5`.
+4.  Search for policy ID `1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5`.
     
     :::image type="content" source="../media/assignments-tab-d859a246.png" alt-text="Screenshot showing assignments that are configured in the Policy definition page.":::
     

@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-storage-security.create-shared-access-signatures
 title: Create shared access signatures
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create shared access signatures
   description: "Create shared access signatures"
-  ms.date: 03/05/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

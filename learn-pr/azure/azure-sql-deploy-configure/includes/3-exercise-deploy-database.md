@@ -6,10 +6,10 @@ In this activity, you deploy Azure SQL Database by using the Azure portal. Throu
 
 1. In the top search bar, enter *Azure SQL* and wait for results so you can review what appears.  
 
-    There are many items and categories here, but this menu gives you filters to search with. Let's break them down:
+    There are many items and categories here, but this menu gives you filters to search. Let's break them down:
 
-    * **Services**: With this filter, you can see your existing resources all together. For example, if you selected Azure SQL, you would see all of your SQL virtual machines, databases, logical servers, managed instances, and pools.
-    * **Resources**: This search is based on existing resource names. For example, if you searched for *adventureworks*, any resources with "adventureworks" in the name would be returned here.
+    * **Services**: With this filter, you can see your existing resources all together. For example, if you selected Azure SQL, you'd see all of your SQL virtual machines, databases, logical servers, managed instances, and pools.
+    * **Resources**: This search is based on existing resource names. For example, if you searched for *adventureworks*, any resources with "adventureworks" in the name would be returned.
     * **Marketplace**: This filter allows you to deploy new resources from Azure Marketplace.
     * **Documentation**: This searches `learn.microsoft.com` for relevant documentation.
     * **Resource groups**: This filter allows you to search based on resource group name.
@@ -54,7 +54,7 @@ In this activity, you deploy Azure SQL Database by using the Azure portal. Throu
 
 1. On the **Additional settings** tab for Azure SQL Database, you can select the `AdventureWorksLT` database as the sample in the Azure portal. For this exercise, for **Use existing data**, select **Sample**. Select **OK** when prompted.
 
-1. Select **Review + create**. Review your deployment selections and the Azure Marketplace terms. Review all the options to ensure that all of your selections match the exercise instructions, and then select **Create** to deploy the service.  
+1. Select **Review + create**. Review your deployment selections and the Azure Marketplace terms. Review all the options to ensure that all of your selections match the exercise instructions, then select **Create** to deploy the service.  
 
    You're redirected to a pane where you can monitor the status of your deployment. You can also go to your resource group and select **Deployments** to open this same pane. It gives you the various deployments, their status, and more information. This deployment typically takes less than five minutes.  
 
@@ -68,7 +68,7 @@ In this activity, you deploy Azure SQL Database by using the Azure portal. Throu
 
 ## Connect to Azure SQL Database
 
-Next, look at the basics of connecting to your deployed SQL database and compare that experience to connecting to SQL Server.
+Next, we look at the basics of connecting to your deployed SQL database and compare that experience to connecting to SQL Server.
 
 ### What does connecting to SQL Server 2019 look like?
 
@@ -105,8 +105,10 @@ Keep that in mind as a reference for comparison as you complete the following st
 
     :::image type="content" source="../media/3-azure-server.png" alt-text="Screenshot of the view of SQL Database folders in SSMS.":::  
 
-    Spend a few minutes exploring the differences, at first glance, between the Azure SQL Database logical server and SQL Server. You don't deploy a managed instance as part of this exercise, but the following image shows how a managed instance would appear in SSMS:
+    Spend a few minutes exploring the differences between the Azure SQL Database logical server and SQL Server.
+
+    You don't deploy an Azure SQL Managed Instance as part of this exercise, but the following image shows how a SQL managed instance would appear in SSMS:
 
     :::image type="content" source="../media/3-managed-instance.png" alt-text="Screenshot of the view of a managed instance in SSMS.":::  
 
-In this exercise, you saw how to deploy and connect to Azure SQL Database, and how it compares, at first glance, to SQL Server and Azure SQL Managed Instance. In the next exercise, continue this comparison. Go deeper and explore various methods to verify your deployment and installation.
+In this exercise, you saw how to deploy and connect to Azure SQL Database, and how it compares to SQL Server and Azure SQL Managed Instance. In the next exercise, you continue this comparison and go deeper by exploring various methods to verify your deployment and installation.

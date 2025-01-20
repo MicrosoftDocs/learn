@@ -182,10 +182,10 @@ Your app is finished. Deploy it and see it work.
     ```
 
     ```azurecli
-    az webapp deployment source config-zip \
-    --src ../site.zip \
-    --name <your-unique-app-name> \
-    --resource-group "<rgn>[sandbox resource group name]</rgn>"
+    az webapp deploy \
+    --src-path ../site.zip \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --name <your-unique-app-name>
     ```
 
     To see the running app, in a browser, open `https://<your-unique-app-name>.azurewebsites.net`. It should look like the following image.

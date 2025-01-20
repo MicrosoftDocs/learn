@@ -41,6 +41,20 @@ This SQL query loads data from a CSV file stored in Azure Blob Storage into a ta
 
 ![Screenshot of the SQL query editor with a query open.](../media/create-table-manual.png)
 
+### Clone tables
+
+You can create zero-copy table clones with minimal storage costs in a data warehouse. These clones are essentially replicas of tables created by copying the metadata while still referencing the same data files in OneLake. This means that the underlying data stored as parquet files is not duplicated, which helps in saving storage costs.
+
+[Table clones](/fabric/data-warehouse/clone-table) are particularly useful in several scenarios.
+
+- **Development and testing:** Clones allow developers and testers to create copies of tables in lower environments, facilitating development, debugging, testing, and validation processes.
+- **Data recovery:** In the event of a failed release or data corruption, table clones can retain the previous state of data, enabling data recovery.
+- **Historical reporting:** They help create historical reports that reflect the state of data at specific points in time and preserve data at specific business milestones.
+
+You can create a table clone using the [`CREATE TABLE AS CLONE OF`](/sql/t-sql/statements/create-table-as-clone-of-transact-sql) T-SQL command.
+
+To learn more about table clones, see [Tutorial: Clone a table using T-SQL in Microsoft Fabric](/fabric/data-warehouse/tutorial-clone-table).
+
 ### Table considerations
 
 After creating tables in a data warehouse, it's important to consider the process of loading data into those tables. A common approach is to use *staging tables*. In Fabric, you can use T-SQL commands to load data from files into staging tables in the data warehouse.

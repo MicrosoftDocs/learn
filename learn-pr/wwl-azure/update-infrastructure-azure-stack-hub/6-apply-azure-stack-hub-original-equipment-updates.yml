@@ -2,6 +2,8 @@
 uid: learn.wwl.update-infrastructure-for-azure-stack-hub.apply-oem-updates
 title: Apply Azure Stack Hub OEM updates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Apply Azure Stack Hub OEM updates
   description: "Apply Azure Stack Hub OEM updates"
   ms.date: 03/29/2022

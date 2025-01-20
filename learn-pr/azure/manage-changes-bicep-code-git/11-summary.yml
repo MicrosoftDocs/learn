@@ -2,6 +2,8 @@
 uid: learn.azure.manage-changes-bicep-code-git.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/11-summary.md)]
+

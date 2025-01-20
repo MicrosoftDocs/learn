@@ -2,6 +2,8 @@
 uid: learn.monitor-authentication-methods.use-logs-get-status-information
 title: Use logs to get status information
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Use logs to get status information
   description: Use Microsoft Entra activity logs to get status information.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 20
 content: |
   [!include[](includes/use-logs-get-status-information.md)]
+

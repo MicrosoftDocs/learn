@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.design-processes-to-automate-application-analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design processes to automate application analytics
   description: "Design processes to automate application analytics"
   ms.date: 05/06/2024

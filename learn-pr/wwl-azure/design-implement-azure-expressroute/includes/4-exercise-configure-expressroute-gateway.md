@@ -1,6 +1,6 @@
 ## Lab scenario
 
-In this lab, you'll create a virtual network gateway for ExpressRoute. 
+In this lab, you create a virtual network gateway for ExpressRoute. 
 
 ## Architecture diagram
 
@@ -9,7 +9,7 @@ In this lab, you'll create a virtual network gateway for ExpressRoute.
 
 ## Objectives
 
- -  Task 1: Create the VNet and gateway subnet
+ -  Task 1: Create the virtual network and gateway subnet
  -  Task 2: Create the virtual network gateway
 
 

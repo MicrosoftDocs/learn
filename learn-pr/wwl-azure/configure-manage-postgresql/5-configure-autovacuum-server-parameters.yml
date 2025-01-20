@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-manage-postgresql.configure-autovacuum-server-parameters
 title: Configure autovacuum server parameters
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure autovacuum server parameters
   description: "Configure autovacuum server parameters."
   ms.date: 05/10/2024

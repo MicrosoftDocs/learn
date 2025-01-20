@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-devops-continuous-security-operations.explore-continuous-operations
 title: Explore Continuous Operations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Continuous Operations
   description: "Explore Continuous Operations"
   ms.date: 09/20/2020

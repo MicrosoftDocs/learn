@@ -2,14 +2,17 @@
 uid: learn.wwl.translate-speech-speech-service.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 08/20/2024
+  ms.author: berryivor
+  ms.date: 12/13/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

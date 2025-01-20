@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-identity-services.exercise-integrate-active-directory-sap-single-sign-on
 title: Integrate Active Directory with SAP single sign-on (Kerberos-SPNEGO)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Integrate Active Directory with SAP single sign-on (Kerberos-SPNEGO)
   description: "Integrate Active Directory with SAP single sign-on (Kerberos-SPNEGO)"
   ms.date: 01/10/2024

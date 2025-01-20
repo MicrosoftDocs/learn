@@ -2,6 +2,8 @@
 uid: learn.wwl.survey-components-of-azure-synapse-analytics.exercise-create-pools
 title: Exercise - Create pools in Azure Synapse Analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create pools in Azure Synapse Analytics
   description: "Exercise - Create pools in Azure Synapse Analytics"
   ms.date: 06/23/2022

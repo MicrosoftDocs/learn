@@ -45,7 +45,7 @@ namespace InvokePlatformCodeDemos.Services
 }
 ```
 
-Retrieving your device orientation requires writing platform code. You can accomplish this by writing a method that uses conditional compilation to target different platforms:
+Retrieving your device orientation requires writing platform code, which you can accomplish by writing a method that uses conditional compilation to target different platforms:
 
 ```csharp
 #if ANDROID

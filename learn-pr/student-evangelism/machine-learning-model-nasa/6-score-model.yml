@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.machine-learning-model-nasa.6-score-model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Score the machine learning model that predicts rocket launch success
   description: See how accurate the model is.
   ms.date: 09/04/2024

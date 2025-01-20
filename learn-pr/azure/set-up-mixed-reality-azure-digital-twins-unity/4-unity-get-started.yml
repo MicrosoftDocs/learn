@@ -2,6 +2,8 @@
 uid: learn.azure.set-up-mixed-reality-azure-digital-twins-unity.unity-get-started
 title: Get started with Unity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Get started with Unity
   description: Learn how to download and create a Unity project from scratch for mixed reality and Azure Digital Twins.
   ms.date: 01/24/2024

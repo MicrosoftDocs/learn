@@ -2,6 +2,8 @@
 uid: learn.azure.arm-template-specs.exercise-create-deploy-template-spec
 title: Exercise - Create and deploy a template spec
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Create and deploy a template spec
   description: Learn how to create, publish, and deploy a template spec.
@@ -15,3 +17,4 @@ durationInMinutes: 7
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-create-deploy-template-spec.md)]
+

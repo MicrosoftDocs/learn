@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.bicep-conditions-loops
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Build flexible Bicep templates by using conditions and loops
   description: Build advanced Bicep templates by using conditions to conditionally deploy resources and using loops to deploy multiple instances of resources.
@@ -56,3 +58,4 @@ units:
 - learn.azure.bicep-conditions-loops.summary
 badge:
   uid: learn.azure.bicep-conditions-loops.badge
+

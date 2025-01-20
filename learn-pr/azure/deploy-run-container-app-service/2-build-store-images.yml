@@ -2,9 +2,11 @@
 uid: learn.azure.deploy-run-container-app-service.2-build-store-images
 title: Build and store images by using Azure Container Registry
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build and store images by using Azure Container Registry
   description: Summarize the advantages of storing a Docker image by using Azure Container Registry.
-  ms.date: 04/27/2023
+  ms.date: 10/15/2024
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: unit

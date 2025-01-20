@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-capacityfor-azure-stack-hub.add-ip-pools
 title: Add IP pools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Add IP pools
   description: "Add IP pools"
   ms.date: 03/29/2022

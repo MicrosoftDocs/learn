@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-manage-storage-for-azure-virtual-desktop.plan-storage-user-data
 title: Plan storage for Azure Virtual Desktop user data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan storage for Azure Virtual Desktop user data
   description: "Plan storage for Azure Virtual Desktop user data"
   ms.date: 08/16/2024

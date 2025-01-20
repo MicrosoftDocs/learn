@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  ms.date: 11/12/2024
+  author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
   ms.custom:
@@ -14,9 +14,8 @@ metadata:
   - build-2023-fabric
 durationInMinutes: 3
 quiz:
-  title: "Check your knowledge"
   questions:
-  - content: "What is a Microsoft Fabric Lakehouse?"
+  - content: "What is a Microsoft Fabric lakehouse?"
     choices:
     - content: "A relational database based on the Microsoft SQL Server database engine."
       isCorrect: false
@@ -35,7 +34,7 @@ quiz:
     - content: "Create a shortcut."
       isCorrect: true
       explanation: "Correct. A shortcut enables you to include external data in the lakehouse."
-    - content: "Create a Dataflow (Gen2) that extracts the data and loads it into a table."
+    - content: "Create a Dataflow Gen2 that extracts the data and loads it into a table."
       isCorrect: false
       explanation: "Incorrect. A dataflow that loads the data into a table would copy the data."
   - content: "You want to use Apache Spark to interactively explore data in a file in the lakehouse. What should you do?"
@@ -46,6 +45,6 @@ quiz:
     - content: "Switch to the SQL analytics endpoint mode."
       isCorrect: false
       explanation: "Incorrect. The SQL analytics endpoint mode doesn't support interactive Spark code."
-    - content: "Create a Dataflow (Gen2)."
+    - content: "Create a Dataflow Gen2."
       isCorrect: false
       explanation: "Incorrect. A dataflow doesn't provide an interactive Spark coding interface."

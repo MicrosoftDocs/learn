@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-enabled-data-services.6-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: This unit is the summary for the module.
   ms.date: 03/07/2023
@@ -12,3 +14,4 @@ title: Summary
 durationInMinutes: 3
 content: |
   [!include[](includes/6-summary.md)]
+

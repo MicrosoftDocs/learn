@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-user-experience-settings.virtual-desktop-optimization-principles
 title: Connect to Azure Virtual Desktop with the Remote Desktop client for Windows
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect to Azure Virtual Desktop with the Remote Desktop client for Windows
   description: "Connect to Azure Virtual Desktop with the Remote Desktop client for Windows"
   ms.date: 08/08/2024

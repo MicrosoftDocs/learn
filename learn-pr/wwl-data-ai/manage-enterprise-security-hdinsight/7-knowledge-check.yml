@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-enterprise-security-in-hdinsight.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/07/2024
@@ -57,3 +59,4 @@ quiz:
     - content: "Access control list."
       isCorrect: false
       explanation: "Access control lists are used to control authorized access to resources on a cluster."
+

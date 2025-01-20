@@ -2,6 +2,8 @@
 uid: learn.wwl.publish-container-image-to-azure-container-registry.explore-storage-capabilities
 title: Explore storage capabilities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore storage capabilities
   description: "Explore storage capabilities"
   ms.date: 07/15/2024

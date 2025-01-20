@@ -2,12 +2,12 @@ Here, you learn about GitHub Actions and workflows for CI.
 
 You learn how to:
 
-- Create a workflow from a template
-- Understand the GitHub Actions logs
-- Test against multiple targets
-- Separate build and test jobs
-- Save and access build artifacts
-- Automate labeling a PR on review
+- Create a workflow from a template.
+- Understand the GitHub Actions logs.
+- Test against multiple targets.
+- Separate build and test jobs.
+- Save and access build artifacts.
+- Automate labeling a PR on review.
 
 ## Create a workflow from a template
 
@@ -69,8 +69,8 @@ The last part of this step executes commands used by Node.js projects. The `npm 
 
 To learn more about npm, check out the npm documentation:
 
-- [npm install](https://docs.npmjs.com/cli/install?azure-portal=true) 
-- [npm run](https://docs.npmjs.com/cli/run-script?azure-portal=true) 
+- [npm install](https://docs.npmjs.com/cli/install?azure-portal=true)
+- [npm run](https://docs.npmjs.com/cli/run-script?azure-portal=true)
 - [npm test](https://docs.npmjs.com/cli/test.html?azure-portal=true)
 
 ## Action Logs for the build
@@ -96,7 +96,7 @@ strategy:
     node-version: [16.x, 18.x]
 ```
 
-Here, we configured a [build matrix](https://docs.github.com/enterprise-server/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix) for testing across multiple operating systems and language versions. This matrix produces four builds, one for each operating system paired with each version of Node.
+Here, we configured a [build matrix](https://docs.github.com/enterprise-server@3.14/actions/writing-workflows/about-workflows#using-a-build-matrix) for testing across multiple operating systems and language versions. This matrix produces four builds, one for each operating system paired with each version of Node.
 
 Four builds, along with all their tests, produce quite a bit of log information. It might be difficult to sort through it all. In the following sample, we show you how to move the test step to a dedicated test job. This job tests against multiple targets. Separating the build and test steps makes it easier to understand the log.
 
@@ -125,7 +125,7 @@ test:
 
 When a workflow produces something other than a log entry, the product is called an *artifact*. For example, the Node.js build produces a Docker container that can be deployed. This artifact, the container, can be uploaded to storage by using the action [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true) and later downloaded from storage by using the action [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true).
 
-Storing an artifact preserves it between jobs. Each job uses a fresh instance of a virtual machine (VM), so you can't reuse the artifact by saving it on the VM. If you need your artifact in a different job, you can upload the artifact to storage in one job and download it for the other job.
+Storing an artifact preserves it between jobs. Each job uses a fresh instance of a virtual machine (VM), so you can't reuse the artifact by saving it on the VM. If you need your artifact in a different job, you can upload the artifact to storage in one job, and download it for the other job.
 
 ## Artifact storage
 
@@ -148,7 +148,7 @@ In the following workflow snippet, notice that in the `actions/upload-artifact@m
           path: public/
 ```
 
-To download the artifact for testing, the build must complete successfully and uploaded the artifact. In the following code, we specify that the test job depends on the build job.
+To download the artifact for testing, the build must complete successfully and upload the artifact. In the following code, we specify that the test job depends on the build job.
 
 ```yml
 test:

@@ -1,4 +1,4 @@
-You've now learned how to create an AI service resource and associate it with an Azure AI studio. But how do you ensure that only those authorized have access to your AI service? This is done through authentication, the process of verifying that the user or service is who they say they are, and that they are authorized to use the service. 
+You've now learned how to create an AI service resource. But how do you ensure that only those authorized have access to your AI service? This is done through authentication, the process of verifying that the user or service is who they say they are, and that they are authorized to use the service. 
 
 Most Azure AI services are accessed through a RESTful API, although there are other ways. The API defines what information is passed between two software components: the Azure AI service and whatever is using it. Having a clearly defined interface is important, because if the AI service is updated, your application must continue to work correctly.
 

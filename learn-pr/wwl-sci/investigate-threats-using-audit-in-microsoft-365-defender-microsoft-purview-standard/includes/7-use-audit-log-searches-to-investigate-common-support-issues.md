@@ -242,4 +242,4 @@ You can also use the **New-MailboxAuditLogSearch** cmdlet to search the audit lo
 
 ## Knowledge check
 
-Choose the best response for the following question. Then select “Check your answers.”
+Choose the best response for the following question. 

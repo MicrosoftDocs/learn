@@ -22,9 +22,9 @@ Apply the following best practices for consent and authorization in your app:
 
 * **Consider the end user and admin experience**. Directly affects end user and admin experiences. For example:
 
-    * Consider who will be consenting to your application, either end users or administrators, and configure your application to [request permissions appropriately](/azure/active-directory/develop/v2-permissions-and-consent).
+    * Consider who is consenting to your application, either end users or administrators, and configure your application to [request permissions appropriately](/azure/active-directory/develop/v2-permissions-and-consent).
 
-    * Ensure that you understand the difference between [static, dynamic and incremental consent](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
+    * Ensure that you understand the difference between [static, dynamic, and incremental consent](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
 
 * **Consider multi-tenant applications**. Expect customers to have various application and consent controls in different states. For example:
 
@@ -42,4 +42,4 @@ Depending on the requests you make to Microsoft Graph, your applications should 
 
 ## Storing data locally
 
-Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally necessary for a specific scenario, and if that use case is covered by your terms of use and privacy policy, and doesn't violate the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=/graph/context). Your application should also implement proper retention and deletion policies.
+Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally necessary for a specific scenario. If that use case is covered by your terms of use and privacy policy, and doesn't violate the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=/graph/context), your application should also implement proper retention and deletion policies.

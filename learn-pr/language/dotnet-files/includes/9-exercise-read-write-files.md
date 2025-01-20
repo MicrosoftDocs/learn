@@ -4,12 +4,12 @@ You're almost finished creating a .NET masterpiece for Tailwind Traders. So far,
 
 In this exercise, you complete the project by reading the .json files, adding up the store totals, and writing the grand total to the *totals.txt* file.
 
-## Add Json.NET to the project
+## Add System.Text.Json to the project
 
 1. Using the terminal, add *Json.NET* to the project.
 
     ```bash
-    dotnet add package Newtonsoft.Json
+    dotnet add package System.Text.Json
     ```
 
 ## Prepare for sales data
@@ -17,7 +17,7 @@ In this exercise, you complete the project by reading the .json files, adding up
 1. At the top of `Program.cs`, add `using Newtonsoft.Json`:
 
     ```csharp
-    using Newtonsoft.Json;
+    using System.Text.Json;
     ```
 
 1. In `Program.cs` directly under the `FindFiles` method, [add a new `record`](/dotnet/csharp/language-reference/builtin-types/record/) that models the *sales.json* data:
@@ -55,7 +55,7 @@ In this exercise, you complete the project by reading the .json files, adding up
             string salesJson = File.ReadAllText(file);
         
             // Parse the contents as JSON
-            SalesData? data = JsonConvert.DeserializeObject<SalesData?>(salesJson);
+            SalesData? data = JsonSerializer.Deserialize<SalesData?>(salesJson);
         
             // Add the amount found in the Total field to the salesTotal variable
             salesTotal += data?.Total ?? 0;

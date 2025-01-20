@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-manage-active-directory-certificate-services.explore-fundamentals-of-pki-ad-cs
 title: Explore the fundamentals of PKI and AD CS
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the fundamentals of PKI and AD CS
   description: "Explore the fundamentals of PKI and AD CS"
   ms.date: 06/11/2024

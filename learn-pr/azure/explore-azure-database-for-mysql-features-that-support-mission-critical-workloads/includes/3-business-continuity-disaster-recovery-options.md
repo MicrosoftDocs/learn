@@ -17,11 +17,8 @@ New features and bug fixes happen automatically as part of service planned maint
 The database can go down unexpectedly for several reasons, such as:
 
 - Database hardware failure.
-
 - Storage drive failure.
-
 - Application or user errors (e.g. accidentally dropping tables).
-
 - Availability zone & region failures.
 
 If high availability (HA) isn't enabled, then Azure attempts recovery such as copying lost data, restarting the server, or even starting the server on another physical node. Enabling HA can reduce or even eliminate these kinds of downtime, as discussed in the following section.
@@ -75,11 +72,8 @@ You can choose a system-managed schedule or define a custom schedule for each My
 You can receive scheduled maintenance notifications in one of several ways. Notifications might be:
 
 - Emailed to a specific address or Azure Resource Manager role.
-
 - Sent via text message (SMS).
-
 - Pushed as an Azure app notification.
-
 - Delivered via voice message.
 
 ### Custom maintenance windows
@@ -93,7 +87,3 @@ HA-enabled servers benefit from Near Zero Downtime Maintenance, a new feature, w
 ### Reschedule maintenance (public preview)
 
 You can reschedule maintenance when using the General Purpose or Business Critical service tiers. In the maintenance section of the Azure portal, you can reschedule the next scheduled maintenance to another date and time. You can also initiate maintenance on demand by selecting **Reschedule to Now**.
-
-> [!NOTE]  
->  
-> You can't reschedule a maintenance period if there are 15 or fewer minutes before the scheduled maintenance begins.

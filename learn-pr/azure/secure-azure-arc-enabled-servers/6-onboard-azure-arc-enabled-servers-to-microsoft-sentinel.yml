@@ -2,6 +2,8 @@
 uid: learn.azure.secure-azure-arc-enabled-servers.onboard-azure-arc-enabled-servers-to-microsoft-sentinel
 title: Onboard Azure Arc-enabled servers to Microsoft Sentinel
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Onboard Azure Arc-enabled servers to Microsoft Sentinel
   description: Learn how to onboard Azure Arc-enabled servers to Microsoft Sentinel.
   ms.date: 04/24/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/6-onboard-azure-arc-enabled-servers-to-microsoft-sentinel.md)]
+

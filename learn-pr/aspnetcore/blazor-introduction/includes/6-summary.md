@@ -2,7 +2,7 @@ In this module, you learned that Blazor is a modern full stack web UI framework 
 
 Are you ready to build your first Blazor web app? Continue on to the next module to get started.
 
-Also, check out the following additional resources to learn more about Blazor.
+Also, check out the following resources to learn more about Blazor.
 
 ## References
 

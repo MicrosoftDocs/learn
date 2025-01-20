@@ -139,4 +139,4 @@ Use the **Remove-UnifiedAuditLogRetentionPolicy** cmdlet in the Security and Com
 
 ## Knowledge check
 
-Choose the best response for the following question. Then select “Check your answers.”
+Choose the best response for the following question. 

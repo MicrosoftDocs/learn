@@ -2,6 +2,8 @@
 uid: learn.azure.debug-nodejs.7-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check what you've learned.
   author: diberry
@@ -59,3 +61,4 @@ quiz:
         - content: "By watching a variable"
           isCorrect: false
           explanation: "Incorrect. When you watch a variable, you see its value at all times during debugging in the Watch panel, not in the Debug console."
+

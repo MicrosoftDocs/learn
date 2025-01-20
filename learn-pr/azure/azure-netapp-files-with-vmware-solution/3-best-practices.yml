@@ -2,6 +2,8 @@
 uid: learn.azure.azure-netapp-files-with-vmware-solution.best-practices
 title: Prerequisites, best practices, and performance sizing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Prerequisites, best practices, and performance sizing
   description: After completing this unit, you should be able to describe the prerequisites, best practices, and performance conditions for using Azure NetApp Files with Azure VMware Solution. 

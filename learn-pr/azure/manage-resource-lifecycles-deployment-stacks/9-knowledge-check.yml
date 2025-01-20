@@ -2,6 +2,8 @@
 uid: learn.azure.manage-resource-lifecycles-deployment-stacks.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check.
   ms.date: 08/01/2023
@@ -45,3 +47,4 @@ quiz:
     - content: Detach all
       isCorrect: false
       explanation: The detach all option detaches all resources, resource groups, and management groups from the deployment stack.
+

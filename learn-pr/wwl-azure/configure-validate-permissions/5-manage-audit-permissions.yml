@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-validate-permissions.manage-audit-permissions
 title: Manage and audit permissions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage and audit permissions
   description: "Manage and audit permissions."
   ms.date: 1/25/2023

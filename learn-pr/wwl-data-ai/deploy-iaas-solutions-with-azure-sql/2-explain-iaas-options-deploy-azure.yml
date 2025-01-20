@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.explain-iaas-options-deploy-azure
 title: Explain IaaS options to deploy SQL Server in Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explain IaaS options to deploy SQL Server in Azure
   description: "Explain IaaS options to deploy SQL Server in Azure"
   ms.date: 12/22/2022

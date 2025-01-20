@@ -2,6 +2,8 @@
 uid: learn-wwl.perform-post-migration-tasks-azure-sql.automate-database-tasks-scalability
 title: Automate database tasks for scalability
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate database tasks for scalability
   description: "Learn how to automate database tasks for scalability."
   ms.date: 09/14/2023

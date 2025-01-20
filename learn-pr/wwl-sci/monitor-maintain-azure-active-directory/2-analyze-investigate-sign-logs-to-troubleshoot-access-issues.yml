@@ -2,12 +2,16 @@
 uid: learn.wwl.monitor-maintain-azure-active-directory.analyze-investigate-sign-logs-to-troubleshoot-access-issues
 title: Analyze and investigate sign-in logs to troubleshoot access issues
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Analyze and investigate sign-in logs to troubleshoot access issues
   description: "Analyze and investigate sign-in logs to troubleshoot access issues"
-  ms.date: 10/23/2023
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/2-analyze-investigate-sign-logs-to-troubleshoot-access-issues.md)]

@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-and-api.2-exercise-get-started
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Get started
   description: Exercise - Get started
   ms.date: 11/18/2022
@@ -12,3 +14,4 @@ title: Exercise - Get started
 durationInMinutes: 3
 content: |
   [!include[](includes/2-exercise-get-started.md)]
+

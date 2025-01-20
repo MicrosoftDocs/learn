@@ -3,10 +3,11 @@ uid: learn.wwl.describe-cloud-service-types
 metadata:
   title: Describe cloud service types
   description: "Introduction to cloud service types (Infrastructure, Platform, and Software as a Service models) and associated use cases for each."
-  ms.date: 09/19/2024
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure-architecture-center

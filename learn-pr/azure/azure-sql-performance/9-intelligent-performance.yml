@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-performance.9-intelligent-performance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Intelligent performance
   description: Intelligent performance
   ms.date: 03/15/2023

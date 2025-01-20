@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.4-install-vsphere-replication-appliance
 title: Install vSphere Replication appliance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Install vSphere Replication appliance
   description: This unit describes the steps to install vSphere Replication appliance.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-install-vsphere-replication-appliance.md)]
+

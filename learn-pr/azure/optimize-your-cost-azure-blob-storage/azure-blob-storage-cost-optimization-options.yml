@@ -2,6 +2,8 @@
 uid: learn.azure.optimize-your-cost-azure-blob-storage.azure-blob-storage-cost-optimization-options
 title: Identify Azure Blob Storage cost optimization options
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify Azure Blob Storage cost optimization options
   description: Identify Azure Blob Storage cost optimization options.
   ms.date: 08/14/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/azure-blob-storage-cost-optimization-options.md)]
+

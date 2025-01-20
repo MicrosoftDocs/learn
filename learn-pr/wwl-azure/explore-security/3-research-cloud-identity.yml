@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-security.research-cloud-identity
 title: Research cloud identity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Research cloud identity
   description: "The research cloud identity discusses the cloud aspect of identity as it related to security in the broader module."
   ms.date: 09/23/2024

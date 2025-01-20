@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Explore how route parameters affect your Blazor app's routing
   description: "Learn how route parameters affect your Blazor app's routing and find information about the current webpage."
-  ms.date: 8/24/2021
+  ms.date: 11/15/2024
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl

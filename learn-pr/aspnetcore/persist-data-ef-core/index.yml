@@ -2,8 +2,8 @@
 uid: learn.persist-data-ef-core
 metadata:
   title: Persist and retrieve relational data by using EF Core
-  description: This module guides you through the steps to create a data access project, connect to a relational database, and write create, read, update, and delete (CRUD) queries by using Entity Framework Core (EF Core).
-  ms.date: 10/04/2023
+  description: This module guides you through the steps to create a data access project. You connect to a relational database and construct create, read, update, and delete (CRUD) queries by using Entity Framework Core (EF Core).
+  ms.date: 10/21/2024
   author: camsoper
   ms.author: casoper
   manager: coxford

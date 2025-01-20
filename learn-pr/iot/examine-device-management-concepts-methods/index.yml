@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-device-management-concepts-methods
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine device management concepts and methods for Azure IoT Hub
   description: "Examine the principles and common patterns of device management, and device management using device twins and direct methods in Azure IoT Hub."
   ms.date: 09/26/2023
@@ -43,3 +45,4 @@ units:
 - learn.wwl.examine-device-management-concepts-methods.summary
 badge:
   uid: learn.wwl.examine-device-management-concepts-methods.badge
+

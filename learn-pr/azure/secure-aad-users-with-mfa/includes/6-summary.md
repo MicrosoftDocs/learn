@@ -4,6 +4,6 @@ Using Microsoft Entra multifactor authentication, you can ensure that when users
 
 To learn more about some of the topics examined in this module, check out the following links to documentation.
 
-- [What is Microsoft Entra ID Protection?](/azure/active-directory/active-directory-identityprotection)
-- [Plan a cloud-based Microsoft Entra multifactor authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted)
-- [Deploy Microsoft Entra self-service password reset](/azure/active-directory/authentication/howto-sspr-deployment)
+- [What is Microsoft Entra ID Protection?](/entra/id-protection/overview-identity-protection)
+- [Plan a Microsoft Entra multifactor authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted)
+- [Reset your work or school password using security info](https://support.microsoft.com/account-billing/reset-your-work-or-school-password-using-security-info-23dde81f-08bb-4776-ba72-e6b72b9dda9e)

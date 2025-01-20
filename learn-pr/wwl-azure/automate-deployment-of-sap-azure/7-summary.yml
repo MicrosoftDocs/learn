@@ -2,9 +2,11 @@
 uid: learn.wwl.automate-deployment-of-sap-azure.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 08/19/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

@@ -1,4 +1,4 @@
-Your new Web App for Contoso Fashions is nearly ready for some initial pilot testing. You want to review and analyze all the various trace messages that have been saved to your app's log files. Before you can do any review, you need to know how to find the logged information.
+Your new Web App for Contoso Fashions is nearly ready for some initial pilot testing. You want to review and analyze all the various trace messages that were saved to your app's log files. Before you can do any review, you need to know how to find the logged information.
 
 In this unit, you retrieve log files ready for later offline analysis.
 
@@ -33,6 +33,9 @@ In this step, you use Azure CLI to retrieve file system logs to your cloud share
    code *.txt
    ```
 
+   > [!NOTE]
+   > If you see a prompt to **Switch to Classic Cloud shell**, select **Confirm**. Then, re-enter the previous command `code *.txt` to display the application log file.
+
 1. In Cloud Shell, press <kbd>Ctrl+Q</kbd> to close the editor.
 
 ### Retrieve file system logs using Kudu
@@ -43,7 +46,7 @@ In this step, to download file system logs to your computer, use the Kudu consol
 
 1. In the **App Services** list, select **contosofashions\<_your-number_\>**. The **contosofashions\<_your-number_\>** App Service pane appears.
 
-1. In the middle menu pane, under **Development Tools**, select **Advanced Tools**.  The **Advanced Tools** pane appears.
+1. In the middle menu pane, under **Development Tools**, select **Advanced Tools**. The **Advanced Tools** pane appears.
 
 1. Select **Go**. The *Kudu Services* window appears.
 
@@ -73,7 +76,7 @@ In this procedure, you open the verbose logs that were saved into your Azure Blo
 
 1. You should now see a folder for each hour that the application has been logging to blob storage. Double-click the hour folder (or the earliest, if there's more than one).
 
-1. The folder should contain one or more CSV files; to download it, double-click the largest file (you may need to scroll right to see the file sizes). If you have Microsoft Excel on your computer, the log file automatically opens as a worksheet. Otherwise, open the file using a text editor, such as Notepad.
+1. The folder should contain one or more CSV files; to download it, double-click the largest file (you might need to scroll right to see the file sizes). If you have Microsoft Excel on your computer, the log file automatically opens as a worksheet. Otherwise, open the file using a text editor, such as Notepad.
 
 1. In the opened log file, search for the following string.
 

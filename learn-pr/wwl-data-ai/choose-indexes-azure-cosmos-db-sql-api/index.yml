@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Customize an indexing policy in Azure Cosmos DB for NoSQL
   description: "Tune the indexing policy based on your SQL queries in Azure Cosmos DB for NoSQL."
   ms.date: 10/18/2022

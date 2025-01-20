@@ -3,10 +3,11 @@ uid: learn.wwl.describe-benefits-use-cloud-services
 metadata:
   title: Describe the benefits of using cloud services
   description: "Introduction to concepts surrounding cloud computing. Mostly platform agnostic, focused instead on general concepts."
-  ms.date: 09/19/2024
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure-architecture-center

@@ -2,6 +2,8 @@
 uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables.exercise
 title: Exercise - optimize data pipelines for better performance in Azure Databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - optimize data pipelines for better performance in Azure Databricks
   description: "Exercise - optimize data pipelines for better performance in Azure Databricks."
   ms.date: 08/06/2024

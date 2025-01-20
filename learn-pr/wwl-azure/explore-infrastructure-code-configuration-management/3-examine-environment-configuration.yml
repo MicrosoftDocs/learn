@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-infrastructure-as-code-configuration-management.examine-environment-configuration
 title: Examine environment configuration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine environment configuration
   description: "Examine environment configuration"
   ms.date: 05/08/2024

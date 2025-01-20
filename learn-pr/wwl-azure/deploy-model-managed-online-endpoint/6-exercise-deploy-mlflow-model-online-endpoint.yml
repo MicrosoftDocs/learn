@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-model-managed-online-endpoint.exercise-deploy-mlflow-model-online-endpoint
 title: Exercise - Deploy an MLflow model to an online endpoint
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy an MLflow model to an online endpoint
   description: Exercise - Deploy an MLflow model to an online endpoint
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-deploy-mlflow-model-online-endpoint.md)]
+

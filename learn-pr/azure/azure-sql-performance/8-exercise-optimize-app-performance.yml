@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-performance.8-exercise-optimize-app-performance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Optimize application performance
   description: Exercise - Optimize application performance
   ms.date: 03/15/2023

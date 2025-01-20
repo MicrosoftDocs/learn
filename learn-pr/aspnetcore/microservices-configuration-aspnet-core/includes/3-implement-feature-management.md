@@ -88,7 +88,7 @@ Complete the following steps to create an App Configuration instance in your Azu
         "keyVaultProperties": null
       },
       "endpoint": "https://eshop-app-features1168054702.azconfig.io",
-      "id": "/subscriptions/7eebce2a-0884-4df2-8d1d-2a3c051e47fe/resourceGroups/rg-eshop/providers/Microsoft.AppConfiguration/configurationStores/eshop-app-features1168054702",
+      "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/rg-eshop/providers/Microsoft.AppConfiguration/configurationStores/eshop-app-features1168054702",
       "identity": null,
     ```
 

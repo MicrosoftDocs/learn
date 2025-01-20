@@ -3,6 +3,8 @@ uid: learn.aks-optimize-compute-costs.resource-quota-azure-policy
 title: Configure AKS resource-quota policies by using Azure Policy for Kubernetes
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure AKS resource-quota policies by using Azure Policy for Kubernetes
   description: Azure Policy helps to enforce organizational standards and to assess compliance at-scale. You apply Azure Policies in AKS by using Azure Policy for Kubernetes. Here you'll explore how to configure Azure Policy for Kubernetes and apply a built-in policy to optimize costs.
   ms.date: 12/20/2023
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-resource-quota-azure-policy.md)]
+

@@ -71,9 +71,9 @@ To prepare for the exercises in this module, complete the following steps:
 
 The prompts you write for GitHub Copilot Chat should provide a clearly defined *context* and *intent*. The *intent* portion of the prompt describes the goal that you what to achieve. For example, you may ask GitHub Copilot to "refactor to improve code modularity". The *context* portion of the prompt tells GitHub Copilot what resources to consider. For example, you may want GitHub Copilot to consider the entire workspace, but focus on a specific file or code section. Consider the following suggestions when developing your prompts:
 
-- Define an outer context that's scoped at a higher level than the code you want to update. For example, if you want to refactor a method, specify the class or file that contains the method as the outer context. Identify the method as an inner context.
-- Use chat participants and chat variables to help specify context. You can use the `#file:` and `#selection` chat variables to identify the specific code you are focused on. You can also include the full workspace (`@workspace`) when appropriate. Suppose you want to refactor a method in a specific file. You can use the `#file:` chat variable to tell GitHub Copilot which file to look at. You can select the method in the editor and use the `#selection` chat variable to tell GitHub Copilot what code to you want to refactor. You can also use the `@workspace` chat variable to tell GitHub Copilot to consider the entire workspace. Reinforce the specified context by referring to the selection or file in the natural language portion of your prompt. For example, you might say, "how can I improve the readability of the selected code?"
-- The intent should be clear and specific, and should specify the code quality aspect that you want to improve. For example, you might ask GitHub Copilot Chat to "How can I improve the modularity of the selected code".
+- Define an outer context that's scoped at a higher level than the code you want to update. For example, if you want to refactor a method, define the outer context by specifying the class or file that contains the method and any code that interacts with or depends on the method. Identify the method as an inner context.
+- Use chat participants and chat variables to help specify context. You can use the **Attach Context** button to add files to the Chat context, and the `#selection` chat variable to identify the specific code you are focused on. You can also include the full workspace (`@workspace`) when appropriate. Suppose you want to refactor a method in a specific file. You can use the **Attach Context** button to tell GitHub Copilot which files to examine when generating suggestions. You can select the method in the editor and use the `#selection` chat variable to tell GitHub Copilot what code to you want to refactor. You can also use the `@workspace` chat variable to tell GitHub Copilot to consider the entire workspace. Reinforce the specified context by referring to the selection or file in the natural language portion of your prompt. For example, you might say, "how can I improve the readability of the Transfer method?"
+- The intent should be clear and specific, and should specify the code quality aspect that you want to improve. For example, you might ask GitHub Copilot Chat to "How can I improve the modularity of the selected generate account methods".
 
 During this portion of the exercise, you review the **APL2007M5BankAccount** project and create three prompts for GitHub Copilot Chat. The prompts focus on improving code readability, maintainability, and modularity.
 
@@ -89,17 +89,17 @@ Use the following steps to complete this portion of the exercise:
 
 1. Take a minute to write some prompts you can use to improve code readability, maintainability, and modularity.
 
-    For the BankAccount project, your prompts could be similar to the following examples:
+    For the BankAccount project, you should attach the BankAccount.cs and/or Program.cs files to the Chat context. Your prompts could be similar to the following examples:
 
-    Prompt: `@workspace /explain #file:Program.cs How can I improve the readability of the selected code?`
+    Prompt: `@workspace /explain How can I improve the readability of the [selected code]?`
 
-    Prompt: `@workspace /explain #file:Program.cs #selection How can I improve the maintainability of the selected code?`
+    Prompt: `@workspace /explain #selection How can I improve the maintainability of the [selected code]?`
 
-    Prompt: `@workspace /explain #file:Program.cs How can I improve the modularity of the selected code?`
+    Prompt: `@workspace /explainHow can I improve the modularity of the [selected code]?`
 
-    Prompt: `#file:Program.cs #selection How can I refactor the selected code to improve modularity?`
+    Prompt: `#selection How can I refactor the [selected code] to improve modularity?`
 
-    Prompt: `@workspace /explain #file:Program.cs What are some options for simplifying the selected code?`
+    Prompt: `@workspace /explain What are some options for simplifying the [selected code]?`
 
 1. Create three prompts to use during the remainder of the exercise.
 
@@ -131,17 +131,23 @@ Use the following steps to complete this portion of the exercise:
 
 1. Choose your first prompt from the prompts that you prepared.
 
-1. Select the code that you want to improve, open the Chat view, and then enter your prompt.
+1. Select the code that you want to improve, and then open the Chat view.
+
+1. In the Chat view, use the **Attach Context** button to add relevant files to the Chat context, and then enter your prompt.
 
 1. Review the suggestions provided by GitHub Copilot Chat.
 
     For example, suppose you complete the following actions:
 
-    - You choose the following prompt: `@workspace /explain #file:Program.cs How can I improve the readability of the selected code?`
-    - You select the following method(s): `GenerateRandomBalance`, `GenerateRandomAccountHolder`, `GenerateRandomAccountType`, `GenerateRandomDateOpened`.
+    - You decide to work on the Program.cs file.
+    - You choose the following prompt: `@workspace /explain #selection How can I improve the readability of the GenerateRandomBalance, GenerateRandomAccountHolder, GenerateRandomAccountType, and GenerateRandomDateOpened methods?`
+    - You open the Program.cs file and select the following methods: `GenerateRandomBalance`, `GenerateRandomAccountHolder`, `GenerateRandomAccountType`, `GenerateRandomDateOpened`.
+    - You open the Chat view and attach the Program.cs file to the Chat context.
     - You enter the prompt in the Chat view.
 
     After you complete these actions, GitHub Copilot Chat suggests updates that are similar to the following response:
+
+    *To improve the readability of these methods, you can follow these steps:*
 
     *1. Extract repeated code into separate methods: The Random object is created multiple times in different methods. You could create a static Random object at the class level and use it in all methods. This would not only improve readability but also provide better randomness.*
 
@@ -214,13 +220,15 @@ Use the following steps to complete this portion of the exercise:
     For example, suppose you complete the following actions:
 
     - You implement the updates that GitHub Copilot Chat suggested for the first example prompt.
-    - You choose the following prompt: `@workspace /explain #file:Program.cs How can I improve the maintainability of the selected code?`.
+    - You decide to continue working on the Program.cs file.
+    - You choose the following prompt: `@workspace /explain How can I improve the maintainability of the Main, GenerateRandomBalance, GenerateRandomAccountHolder, GenerateRandomAccountType, and GenerateRandomDateOpened methods?`.
     - You select the following method(s): `Main`, `GenerateRandomBalance`, `GenerateRandomAccountHolder`, `GenerateRandomAccountType`, `GenerateRandomDateOpened`.
+    - You open the Chat view and attach the Program.cs file to the Chat context.
     - You enter the prompt in the Chat view.
 
     After you complete these actions, GitHub Copilot Chat suggests updates that are similar to the following response:
 
-    *The selected code is well-structured and follows good practices, but there are a few areas where it could be improved for better maintainability:*
+    *To improve the maintainability of these methods, you can follow these steps:*
 
     *1. Separation of Concerns: The Main method is doing a lot of things: creating accounts, simulating transactions, and simulating transfers. These could be broken down into separate methods to improve readability and maintainability.*
 
@@ -289,14 +297,16 @@ Use the following steps to complete this portion of the exercise:
 
     For example, suppose you complete the following actions:
 
-    - You implement the updates that GitHub Copilot Chat suggested for the first and second example prompts.
-    - You choose the following prompt: `@workspace /explain #file:Program.cs How can I improve the modularity of the selected code?`.
+    - You implement the updates that GitHub Copilot Chat suggested for the first and second prompts.
+    - You decide to continue working on the Program.cs file.
+    - You choose the following prompt: `@workspace /explain How can I improve the modularity of the Program.cs file?`.
     - You select the following code: Select all of the Program.cs file.
+    - You open the Chat view and attach the Program.cs file to the Chat context.
     - You enter the prompt in the Chat view.
 
     After you complete these actions, GitHub Copilot Chat suggests updates that are similar to the following response:
 
-    *The selected code is a simulation of a banking system. It creates bank accounts, simulates transactions, and transfers between these accounts. While the code is functional, it could be improved in terms of modularity. Here are some suggestions:*
+    *To improve the modularity of the Program.cs file, you can follow these steps:*
 
     *1. Separate Concerns: The `Program` class is doing too much. It's creating accounts, simulating transactions, and generating random data. Each of these responsibilities could be a separate class. For example, you could have a `BankAccountFactory` class that's responsible for creating bank accounts, a `TransactionSimulator` class for simulating transactions, and a `RandomDataGenerator` class for generating random data.*
 

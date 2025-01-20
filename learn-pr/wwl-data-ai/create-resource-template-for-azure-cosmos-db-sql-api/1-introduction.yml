@@ -2,6 +2,8 @@
 uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 10/18/2022

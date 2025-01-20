@@ -2,6 +2,8 @@
 uid: learn.advocates.cv-classify-bird-species.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   author: cassiebreviu
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

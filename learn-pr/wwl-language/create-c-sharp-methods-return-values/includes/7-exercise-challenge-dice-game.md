@@ -12,13 +12,13 @@ In this challenge, you're given some starting code. You must determine what meth
 
 In the code that you start with, there are two unavailable methods referenced:
 
-`ShouldPlay`: This method should retrieve user input and determine if the user wants to play again
-`WinOrLose`: This method should determine if the player has won or lost
+- `ShouldPlay`: This method should retrieve user input and determine if the user wants to play again
+- `WinOrLose`: This method should determine if the player has won or lost
 
 There are also two uninitialized variables:
 
-`target`: The random target number between 1 and 5
-`roll`: The result of a random six-sided die roll
+- `target`: The random target number between 1 and 5
+- `roll`: The result of a random six-sided die roll
 
 Your challenge is to create the `ShouldPlay` and `WinOrLose` methods, and create methods that set `target` and `roll` to random values in the correct range. When all the methods are complete, the game should run successfully.
 

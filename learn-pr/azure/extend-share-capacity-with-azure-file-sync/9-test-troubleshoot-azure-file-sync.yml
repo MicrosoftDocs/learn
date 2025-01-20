@@ -2,6 +2,8 @@
 uid: learn.azure.extend-share-capacity-with-azure-file-sync.test-troubleshoot-azure-file-sync
 title: Test and troubleshoot Azure File Sync
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Test and troubleshoot Azure File Sync
   description: Learn how to test Azure File Sync and troubleshoot a sync issue.
   ms.date: 11/17/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/9-test-troubleshoot-azure-file-sync.md)]
+

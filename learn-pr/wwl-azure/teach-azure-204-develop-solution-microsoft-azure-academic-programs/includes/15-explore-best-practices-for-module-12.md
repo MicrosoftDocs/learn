@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Develop for Azure Cache for Redis  
 - Lesson 2 – Develop for storage on CDNs 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aCti]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=08244b96-c1f7-4bde-83ab-aadeac0e9161]
 
 Module 12 Tips and Tricks 
 

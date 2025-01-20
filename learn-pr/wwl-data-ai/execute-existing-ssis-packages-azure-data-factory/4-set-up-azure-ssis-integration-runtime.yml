@@ -2,6 +2,8 @@
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.set-up-azure-ssis-integration-runtime
 title: Set-up Azure SSIS Integration Runtime
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set-up Azure SSIS Integration Runtime
   description: "Set-up Azure SSIS Integration Runtime"
   ms.date: 06/07/2023

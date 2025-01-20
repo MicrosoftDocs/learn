@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.configure-dependency-injection
+metadata:
+  title: Configure services with dependency injection in ASP.NET Core
+  description: "Understand and implement dependency injection in an ASP.NET Core app. Use ASP.NET Core's built-in service container to manage dependencies. Register services with the service container."
+  ms.date: 11/7/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: module
+  ms.service: aspnet-core
+  ai-usage: ai-assisted
+title: Configure services with dependency injection in ASP.NET Core
+summary: "Understand and implement dependency injection in an ASP.NET Core app. Use ASP.NET Core's built-in service container to manage dependencies. Register services with the service container."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe the role of the service container in an ASP.NET Core app.
+    - Register services with the service container.
+    - Retrieve services from the service container in C# code.
+prerequisites: |
+  - Ability to write C# code at a beginner level.
+  - Ability to use the .NET CLI at a beginner level.
+  - Latest [.NET SDK](https://dot.net) installed.
+  - [Visual Studio Code with C# Dev Kit extension](https://code.visualstudio.com/docs/csharp/get-started) installed.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- aspnet-core
+units:
+- learn.configure-dependency-injection.intro
+- learn.configure-dependency-injection.understand-dependency-injection
+- learn.configure-dependency-injection.exercise-register-services
+- learn.configure-dependency-injection.service-lifetimes
+- learn.configure-dependency-injection.exercise-explore-service-lifetime
+- learn.configure-dependency-injection.knowledge-check
+- learn.configure-dependency-injection.summary
+badge:
+  uid: learn.configure-dependency-injection.badge

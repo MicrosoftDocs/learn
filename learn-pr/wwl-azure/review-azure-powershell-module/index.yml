@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.review-azure-powershell-module
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review Azure PowerShell module
   description: This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Microsoft Entra ID by using PowerShell modules.
   ms.date: 03/22/2024
@@ -56,3 +58,4 @@ units:
 - learn.wwl.review-azure-powershell-module.summary
 badge:
   uid: learn.wwl.review-azure-powershell-module.badge
+

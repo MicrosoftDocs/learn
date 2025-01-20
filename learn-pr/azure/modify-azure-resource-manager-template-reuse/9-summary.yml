@@ -2,12 +2,15 @@
 uid: learn.azure.resource-manager-template-reuse.9-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary.
-  ms.date: 01/30/2024
-  author: tfitzmac
-  ms.author: tomfitz
+  ms.date: 10/18/2024
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
+

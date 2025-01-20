@@ -2,6 +2,8 @@
 uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 08/06/2024
@@ -46,3 +48,4 @@ quiz:
     - content: "Init scripts are used for installing necessary libraries, configuring system settings, or setting environment variables."
       isCorrect: true
       explanation: "Correct. Init scripts run on each node of the cluster before the Spark driver or worker starts, ensuring consistent cluster configurations and reducing runtime errors due to misconfigurations."
+

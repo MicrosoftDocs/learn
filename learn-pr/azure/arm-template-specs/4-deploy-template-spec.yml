@@ -2,6 +2,8 @@
 uid: learn.azure.arm-template-specs.deploy-template-spec
 title: Deploy a template spec
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Deploy a template spec
   description: Learn how to deploy a template spec, including how to use template specs within another deployment.
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-deploy-template-spec.md)]
+

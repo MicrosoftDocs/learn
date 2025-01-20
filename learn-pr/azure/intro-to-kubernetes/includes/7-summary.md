@@ -2,13 +2,13 @@ The goal here was to help you evaluate whether Kubernetes would be a good choice
 
 Through this module, you saw how Kubernetes provides for:
 
-- Deployment of containers.
-- Self-healing of containers.
+- Deploying containers.
+- Self-healing containers.
 - Dynamically scaling container count up or down.
 - Automated rolling updates and rollbacks of containers.
-- Management of storage.
-- Management of network traffic.
-- Storage and management of sensitive information such as usernames and passwords.
+- Managing storage.
+- Managing network traffic.
+- Storing and managing sensitive information such as usernames and passwords.
 
 To deploy and manage your drone-tracking solution into new customer regions, you found a container-orchestration platform. You now understand how Kubernetes can help you develop, deploy, and manage apps in your container environment.
 
@@ -54,6 +54,6 @@ If you want to remove the Multipass VM manager from your machine, there are a fe
 To learn more about Kubernetes, running Kubernetes on Azure, and related tools, visit the following sites and articles:
 
 - [Kubernetes](https://kubernetes.io?azure-portal=true)
-- [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/?azure-portal=true)
+- [Azure Kubernetes Service](https://azure.microsoft.com/products/kubernetes-service/?azure-portal=true)
 - [MicroK8s](https://microk8s.io?azure-portal=true)
 - [Multipass GitHub repository](https://github.com/canonical/multipass/releases?azure-portal=true)

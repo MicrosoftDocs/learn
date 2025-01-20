@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-agile-github-projects-azure-boards.configure
 title: Configure GitHub Projects
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure GitHub Projects
   description: "Configure GitHub Projects"
   ms.date: 05/24/2024

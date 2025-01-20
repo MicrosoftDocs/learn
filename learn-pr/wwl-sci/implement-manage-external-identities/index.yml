@@ -1,23 +1,32 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-manage-external-identities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement and manage external identities
   description: "Inviting external users to use company Azure resources is a great benefit, but you want to do it in a secure way. Explore how to enable secure external collaboration."
-  ms.date: 10/25/2023
+  ms.date: 12/18/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Implement and manage external identities
 summary: Inviting external users to use company Azure resources is a great benefit, but you want to do it in a secure way. Explore how to enable secure external collaboration.
 abstract: |
   By the end of this module, you will be able to:
-  - Manage external collaboration settings in Microsoft Entra ID
-  - Invite external users (individually or in bulk)
-  - Manage external user accounts in Microsoft Entra ID
-  - Configure identity providers (social and SAML/WS-fed)
-prerequisites: |
-  None
+
+  -   Manage external collaboration settings in Microsoft Entra ID
+
+  -   Invite external users (individually or in bulk)
+
+  -   Manage external user accounts in Microsoft Entra ID
+
+  -   Configure identity providers (social and SAML/WS-fed)
+prerequisites: None
 iconUrl: /learn/achievements/implement-and-manage-external-identities.svg
 levels:
 - advanced

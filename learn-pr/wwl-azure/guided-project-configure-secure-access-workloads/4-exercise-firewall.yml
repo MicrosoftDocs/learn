@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-configure-secure-access-workloads.exercise3
-title: Exercise - Protect the web application from malicious traffic and block unauthorized access
+title: Exercise 03 - Create and configure Azure Firewall
 metadata:
-  title: Exercise - Protect the web application from malicious traffic and block unauthorized access
-  description: "Exercise - Protect the web application from malicious traffic and block unauthorized access"
-  ms.date: 03/08/2024
+  title: Exercise 03 - Create and configure Azure Firewall
+  description: "Create and configure Azure Firewall"
+  ms.date: 11/08/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-firewall.md)]

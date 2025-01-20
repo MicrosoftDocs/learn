@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-sap-hana-azure-large-instances-deployments.examine-storage-considerations
 title: Examine SAP HANA on Azure (Large Instances) storage considerations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine SAP HANA on Azure (Large Instances) storage considerations
   description: "Examine SAP HANA on Azure (Large Instances) storage considerations"
   ms.date: 12/08/2021

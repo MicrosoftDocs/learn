@@ -2,6 +2,8 @@
 uid: learn.advocates.cv-classify-bird-species.2-machine-learning-process
 title: Understand Custom Vision
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Custom Vision
   description: Understand Custom Vision
   author: cassiebreviu
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/2-machine-learning-process.md)]
+

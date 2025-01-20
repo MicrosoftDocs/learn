@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-access-for-azure-stack-hub.authentication-authorization
 title: Authentication and authorization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Authentication and authorization
   description: "Authentication and authorization"
   ms.date: 07/29/2022

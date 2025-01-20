@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.react-to-state-changes-using-event-grid.3-exercise-trigger-logic-app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Trigger a logic app by using Event Grid
   description: Set up a virtual machine and trigger an event on Event Grid.
   ms.date: 10/04/2024
@@ -12,3 +14,4 @@ durationInMinutes: 7
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-trigger-logic-app.md)]
+

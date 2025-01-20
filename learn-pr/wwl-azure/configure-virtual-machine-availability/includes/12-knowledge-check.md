@@ -1,3 +1,5 @@
+
+
 Your organization has diverse requirements for the configuration and availability of their virtual machines. You're responsible for helping with the configuration to fulfill requests and resolve issues.
 
 - The Admin team is testing an implementation of Azure Virtual Machine Scale Sets with five virtual machines. During testing, monitoring alerts show all virtual machines running at maximum capacity. However, you discover that when the CPU is fully consumed more virtual machines aren't deploying in the scale set. 
@@ -8,4 +10,4 @@ Your organization has diverse requirements for the configuration and availabilit
 
 ### Answer the following questions
 
-Choose the best response for each of the following questions. Then select **Check your answers**.
+Choose the best response for each question.

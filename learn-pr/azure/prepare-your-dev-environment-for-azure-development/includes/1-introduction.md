@@ -2,7 +2,7 @@ Microsoft Azure enables you to quickly and efficiently build, deploy, monitor, a
 
 Using Azure means you use your favorite IDE, you choose from a large range of development languages—from C# to Java to Node.js—and you choose your development operating system. Microsoft provides and supports a wide range of development tools for Windows, Linux, and macOS.
 
-Here, you'll learn how to set up your development environment with several popular IDEs.
+Here, you learn how to set up your development environment with Visual Studio Code, Visual Studio, Eclipse, and Intellij IDWEA.
 
 ## Learning objectives
 

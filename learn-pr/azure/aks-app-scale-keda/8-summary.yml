@@ -2,6 +2,8 @@
 uid: learn.aks-app-scaling-keda.8-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary

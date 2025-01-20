@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Modernize and implement high availability for SAP workloads in Azure
   description: "Explore high availability and disaster recovery support of Azure for SAP workloads. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud."
   ms.date: 10/10/2024

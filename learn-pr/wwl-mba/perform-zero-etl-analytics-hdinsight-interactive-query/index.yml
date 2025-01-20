@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform Zero ETL analytics with HDInsight Interactive Query
   description: "Perform Zero ETL analytics with HDInsight Interactive Query."
   ms.date: 04/08/2024
@@ -45,3 +47,4 @@ units:
 - learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.9-knowledge-check
 badge:
   uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.badge
+

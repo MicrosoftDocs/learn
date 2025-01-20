@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-fabric-items.understand-monitoring
+title: Understand monitoring
+metadata:
+  title: Understand monitoring
+  description: "Understand monitoring"
+  ms.date: 12/12/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+  ms.custom:
+  - fabric
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-monitoring.md)]

@@ -1,4 +1,4 @@
- Now that you've set up a gateway, you're ready to import and publish an API so that partners can access inventory and product information.
+ Now that your gateway is set up, you're ready to import and publish an API so that partners can access inventory and product information.
 
 Here, you import your web API that exposes an OpenAPI endpoint. Then, you test the imported API using visualization. Finally, you publish the API.
 

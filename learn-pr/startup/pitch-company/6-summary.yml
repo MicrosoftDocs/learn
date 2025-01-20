@@ -2,12 +2,15 @@
 uid: learn.startups.pitch-company.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Review what you learned in this module.
   ms.date: 04/22/2024
   author: vhawk85
   ms.author: vahughes
   ms.topic: unit
+  ms.collection: learn-startups
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

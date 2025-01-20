@@ -2,6 +2,8 @@
 uid: learn.machine-learning.explore-analyze-data-r.exercise-examine-real-world-data
 title: Exercise - Examine real-world data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Examine real-world data
   description: In this exercise, you'll examine real-world data.
   ms.date: 08/26/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 15
 sandbox: true
 notebook: notebooks/7-exercise-examine-real-world-data.ipynb
+

@@ -6,8 +6,8 @@ metadata:
   title: Evaluate solutions for securing data in Microsoft 365 using Microsoft Purview
   description: "SC-100 preparatory unit on the topic: Evaluate solutions for securing data in Microsoft 365 using Microsoft Purview."
   ms.date: 5/21/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 10
 content: |

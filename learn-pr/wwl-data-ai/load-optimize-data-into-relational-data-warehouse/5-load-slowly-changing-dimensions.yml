@@ -2,6 +2,8 @@
 uid: learn.wwl.load-data-into-relational-data-warehouse.load-slowly-changing-dimensions
 title: Load slowly changing dimensions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Load slowly changing dimensions
   description: "Load slowly changing dimensions"
   ms.date: 10/27/2023

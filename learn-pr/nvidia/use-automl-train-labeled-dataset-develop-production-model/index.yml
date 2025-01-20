@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use Automated Machine Learning to train a labeled dataset and develop a production model
   description: Use AutoML to train a labeled dataset and develop a production model.
   ms.date: 09/03/2024
@@ -46,3 +48,4 @@ units:
 - learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.summary
 badge:
   uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.badge
+

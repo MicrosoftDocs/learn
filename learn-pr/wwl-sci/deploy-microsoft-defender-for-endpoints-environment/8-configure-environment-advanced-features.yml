@@ -4,12 +4,12 @@ title: Configure environment advanced features
 metadata:
   title: Configure environment advanced features
   description: "Configure environment advanced features"
-  ms.date: 02/17/2023
+  ms.date: 1/7/2025
   author: wwlpublish
   ms.author: kelawson
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/8-configure-environment-advanced-features.md)]

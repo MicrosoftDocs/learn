@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.exercise-set-up-disaster-recovery-active-directory-dns
 title: Set up disaster recovery for Active Directory and DNS
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set up disaster recovery for Active Directory and DNS
   description: "Set up disaster recovery for Active Directory and DNS"
   ms.date: 01/09/2024

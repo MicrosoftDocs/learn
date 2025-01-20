@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.aks-manage-application-state
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy and manage a stateful application by using Azure Cosmos DB and Azure Kubernetes Service
   description: Create and manage a stateful application with an external storage by using Azure Cosmos DB and Azure Kubernetes Service
   manager: rayoflores
@@ -46,3 +48,4 @@ units:
   - learn.aks-manage-application-state.4-summary
 badge:
   uid: learn.aks-manage-application-state.badge
+

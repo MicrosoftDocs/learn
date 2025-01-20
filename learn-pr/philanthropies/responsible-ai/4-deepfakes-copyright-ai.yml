@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-responsible-ai.deepfakes-copyright-ai
+title: Deepfakes and copyright in AI
+metadata:
+  title: Deepfakes and copyright in AI
+  description: This content is a part of the responsible AI module.
+  ms.date: 10/18/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-deepfakes-copyright-ai.md)]

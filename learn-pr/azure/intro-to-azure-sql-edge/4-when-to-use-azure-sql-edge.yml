@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-sql-edge.4-when-to-use-azure-sql-edge  
 title: When to use Azure SQL Edge  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: When to use Azure SQL Edge
   description: When to use Azure SQL Edge

@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-cassandra-workloads-cosmos-db.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 02/01/2021

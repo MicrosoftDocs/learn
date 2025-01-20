@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 06/04/2022
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!INCLUDE[](includes/1-introduction.md)]
+

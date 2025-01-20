@@ -2,10 +2,10 @@ This module explored the diverse approaches for deploying and updating organizat
 
 ### Learn more
 
- -  [What is Microsoft Intune app management?](/intune/apps/app-management)
- -  [Add Android store apps to Microsoft Intune](/intune/store-apps-android)
- -  [Add iOS store apps to Microsoft Intune](/intune/store-apps-ios)
- -  [Add Microsoft Store apps to Microsoft Intune](/intune/store-apps-windows)
- -  [Add built-in apps to Microsoft Intune](/intune/apps-add-built-in)
- -  [Intune Standalone - Win32 app management](/intune/apps-win32-app-management)
+ -  [What is Microsoft Intune app management?](/mem/intune/apps/app-management)
+ -  [Add Android store apps to Microsoft Intune](/mem/intune/apps/store-apps-android)
+ -  [Add iOS store apps to Microsoft Intune](/mem/intune/apps/store-apps-ios)
+ -  [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft)
+ -  [Add built-in apps to Microsoft Intune](/mem/intune/apps/apps-add-built-in)
+ -  [Intune Standalone - Win32 app management](/mem/intune/apps/apps-win32-app-management)
  -  [Using group policy to remotely install software in Windows server](/troubleshoot/windows-server/group-policy/use-group-policy-to-install-software)

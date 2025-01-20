@@ -245,7 +245,7 @@ In this task, you'll run your application and verify that your updated code work
 
 1. Verify that the messages associated with the two exception types are displayed:
 
-    Your transactions report should include the following "Could not make transaction" messages:
+    Your transactions report should include the following "Could not complete transaction" messages:
 
     ```output
     Customer is making a $42 purchase
@@ -253,7 +253,7 @@ In this task, you'll run your application and verify that your updated code work
              Using 0 ten dollar bills
              Using 0 five dollar bills
              Using 0 one dollar bills
-    Could not make transaction: InvalidOperationException: Not enough money provided to complete the transaction.
+    Could not complete transaction: InvalidOperationException: Not enough money provided to complete the transaction.
     ```
 
     ```output
@@ -267,7 +267,7 @@ In this task, you'll run your application and verify that your updated code work
              A five
              A one
              A one
-    Could not make transaction: InvalidOperationException: The till is unable to make change for the cash provided.
+    Could not complete transaction: InvalidOperationException: The till is unable to make change for the cash provided.
     
     ```
 

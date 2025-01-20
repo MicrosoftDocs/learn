@@ -2,9 +2,11 @@
 uid: learn.align-requirements-in-azure.3-service-models
 title: Cloud service models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Cloud service models
   description: Learn about cloud service models.
-  ms.date: 10/13/2023
+  ms.date: 12/06/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

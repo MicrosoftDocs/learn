@@ -77,9 +77,9 @@ One of the event types in the last query's results is called **Thunderstorm Wind
 
     :::image type="content" source="../media/5-where-has.png" alt-text="Screenshot of query results for where and has operators.":::
 
-1. Notice in the results that events such as tornadoes no longer appear, but **Thunderstorm Wind** and **Strong Wind** event types do appear.
+1. Notice in the results that events like tornadoes no longer appear, but **Thunderstorm Wind** and **Strong Wind** event types do appear.
 
-The `contains` operator is similar to `has`, but it matches on any substring. For example, the following query will return results such as *Freezing fog* and *Frost/Freeze*.
+The `contains` operator is similar to `has`, but it matches on any substring. For example, the following query returns results such as *Freezing fog* and *Frost/Freeze*.
 
 ```kusto
 StormEvents | where EventType contains "free"

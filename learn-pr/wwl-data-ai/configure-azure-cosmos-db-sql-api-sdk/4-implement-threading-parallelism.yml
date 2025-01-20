@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk.implement-threading-parallelism
 title: Implement threading and parallelism
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement threading and parallelism
   description: "Implement threading and parallelism"
   ms.date: 10/17/2022
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/4-implement-threading-parallelism.md)]
+

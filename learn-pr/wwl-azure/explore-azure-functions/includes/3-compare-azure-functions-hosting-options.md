@@ -66,7 +66,7 @@ Use the Azure Functions programming model to build event-driven, serverless, clo
 Consider hosting your functions on Container Apps in the following situations:
 
 * You want to package custom libraries with your function code to support line-of-business apps.
-* You need to migration code execution from on-premises or legacy apps to cloud native microservices running in containers.
+* You need to migrate code execution from on-premises or legacy apps to cloud native microservices running in containers.
 * You want to avoid the overhead and complexity of managing Kubernetes clusters and dedicated compute.
 * You need the high-end processing power provided by dedicated CPU compute resources for your functions.
 

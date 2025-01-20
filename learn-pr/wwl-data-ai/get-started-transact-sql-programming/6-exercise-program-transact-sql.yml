@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-transact-sql-programming.exercise-program-t-sql
-title: 'Exercise: Program with T-SQL'
+title: 'Exercise: Program with Transact-SQL'
 metadata:
-  title: 'Exercise: Program with T-SQL'
-  description: "Exercise: Program with T-SQL"
-  ms.date: 12/22/2022
+  title: 'Exercise: Program with Transact-SQL'
+  description: "Exercise: Program with Transact-SQL"
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labId: 105119
-labModal: true
+  zone_pivot_groups: sql-database
 durationInMinutes: 30
 content: |
   [!include[](includes/6-exercise-program-transact-sql.md)]

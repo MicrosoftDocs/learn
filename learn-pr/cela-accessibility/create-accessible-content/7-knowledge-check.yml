@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This content is a part of the "Create accessible content" module.
-  ms.date: 04/12/2024
+  ms.date: 10/24/2024
   author: erzelman
   ms.author: erzelman
   ms.topic: unit
@@ -30,16 +30,16 @@ quiz:
       explanation: "Incorrect. Alt text doesn't create a link to the image."
   - content: "Accessibility Checker is available in which of the following apps?"
     choices:
-    - content: "Word"
+    - content: "Word only"
       isCorrect: false
       explanation: "Incorrect. Accessibility Checker is available in Word and other drop-down menu tools."
-    - content: "Excel"
+    - content: "Excel only"
       isCorrect: false
       explanation: "Incorrect. Accessibility Checker is available in Excel and other Microsoft 365 tools."
-    - content: "Outlook"
+    - content: "Outlook only"
       isCorrect: false
       explanation: "Incorrect. Accessibility Checker is available in Outlook and other Microsoft 365 tools."
-    - content: "PowerPoint"
+    - content: "PowerPoint only"
       isCorrect: false
       explanation: "Incorrect. Accessibility Checker is available in PowerPoint and other Microsoft 365 tools."
     - content: "All of the above"
@@ -58,13 +58,13 @@ quiz:
       explanation: "Correct. Closed captions can be turned on or off by the user."
   - content: "What are some ways you can ensure your emails are accessible in Outlook?"
     choices:
-    - content: "Add captions to videos"
+    - content: "Only add captions to videos"
       isCorrect: false
       explanation: "Incorrect. Captions, alt text, and headings can all make your emails more accessible to people with disabilities."
-    - content: "Add alt text to images"
+    - content: "Only add alt text to images"
       isCorrect: false
       explanation: "Incorrect. Captions, alt text, and headings can all make your emails more accessible to people with disabilities."
-    - content: "Include headings"
+    - content: "Only include headings"
       isCorrect: false
       explanation: "Incorrect. Captions, alt text, and headings can all make your emails more accessible to people with disabilities."
     - content: "All of the above"
@@ -72,13 +72,13 @@ quiz:
       explanation: "Correct. Captions, alt text, and headings can all make your emails more accessible to people with disabilities."
   - content: "As you're creating a document, how does Accessibility Assistant assist you?"
     choices:
-    - content: "It flags any issues that could prevent your documents from being accessible."
+    - content: "It just flags any issues that could prevent your documents from being accessible."
       isCorrect: false
       explanation: "Incorrect. Accessibility Assistant flags issues, presents real time remediation, and delivers simple guidance"
-    - content: "It presents real-time, in-context remediation to correct issues as they arise."
+    - content: "It just presents real-time, in-context remediation to correct issues as they arise."
       isCorrect: false
       explanation: "Incorrect. Accessibility Assistant flags issues, presents real time remediation, and delivers simple guidance."
-    - content: "It delivers clear, simple guidance that appears in the flow of your work."
+    - content: "It just delivers clear, simple guidance that appears in the flow of your work."
       isCorrect: false
       explanation: "Incorrect. Accessibility Assistant flags issues, presents real time remediation, and delivers simple guidance."
     - content: "All of the above"

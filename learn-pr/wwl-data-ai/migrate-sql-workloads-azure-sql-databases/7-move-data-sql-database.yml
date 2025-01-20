@@ -2,6 +2,8 @@
 uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.move-data-sql-database
 title: Move data to Azure SQL Database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Move data to Azure SQL Database
   description: "Learn how to move or transfer data partially from an existing database or source to Azure SQL Database."
   ms.date: 10/31/2023

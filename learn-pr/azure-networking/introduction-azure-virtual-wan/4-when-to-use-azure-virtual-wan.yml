@@ -2,6 +2,8 @@
 uid: learn.introduction-azure-virtual-wan.4-when-to-use-azure-virtual-wan
 title: When to use Azure Virtual WAN
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to use Azure Virtual WAN
   description: After you complete this unit, you'll understand use cases for Azure Virtual WAN
   ms.date: 12/06/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-virtual-wan.md)]
+

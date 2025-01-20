@@ -2,6 +2,8 @@
 uid: learn.saas-technical-foundations.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Learn from Microsoft about SaaS (Software-as-a-Service) architecture foundations. This module covers tenancy models, monolithic or microservices architecture, and authentication in SaaS."
   ms.date: 2/9/2024

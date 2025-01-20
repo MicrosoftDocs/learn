@@ -2,6 +2,8 @@
 uid: learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi.realtime-query
 title: Create a query for real-time visualization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a query for real-time visualization
   description: "Create a query for real-time visualization"
   ms.date: 12/30/2022

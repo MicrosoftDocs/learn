@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-azure-database-postgresql-flexible-server.exercise-postgresql-online-migration
 title: Exercise – Online PostgreSQL database migration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise – Online PostgreSQL database migration
   description: "Exercise – Online PostgreSQL database migration."
   ms.date: 05/10/2024

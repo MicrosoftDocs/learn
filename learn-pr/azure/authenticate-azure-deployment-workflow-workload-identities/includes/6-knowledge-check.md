@@ -17,9 +17,9 @@ jobs:
     - uses: actions/checkout@v3
     - uses: azure/login@v1
       with:
-        client-id: 'A123b4567c-1234-1a2b-2b1a-1234abc12345'
-        tenant-id: 'b31a1123-3210-10ab-23bc-123c1b32a012'
-        subscription-id: 'B123a4567c-1234-2b1a-1b2b-11a2b01b2b3c0'
+        client-id: '44445555-eeee-6666-ffff-7777aaaa8888'
+        tenant-id: 'aaaabbbb-0000-cccc-1111-dddd2222eeee'
+        subscription-id: 'ffff5f5f-aa6a-bb7b-cc8c-dddddd9d9d9d'
     - uses: azure/arm-deploy@v1
       with:
         resourceGroupName: MyResourceGroup

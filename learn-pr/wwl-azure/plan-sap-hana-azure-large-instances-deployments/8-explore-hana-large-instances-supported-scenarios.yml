@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-sap-hana-azure-large-instances-deployments.explore-supported-scenarios
 title: Explore SAP HANA on Azure (Large Instances) supported scenarios
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore SAP HANA on Azure (Large Instances) supported scenarios
   description: "Explore SAP HANA on Azure (Large Instances) supported scenarios"
   ms.date: 12/08/2021

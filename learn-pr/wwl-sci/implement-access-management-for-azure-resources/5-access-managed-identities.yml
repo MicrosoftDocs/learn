@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-access-management-for-azure-resources.access-managed-identities
 title: Access Azure resources with managed identities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Access Azure resources with managed identities
   description: "Access Azure resources with managed identities"
   ms.date: 10/30/2023

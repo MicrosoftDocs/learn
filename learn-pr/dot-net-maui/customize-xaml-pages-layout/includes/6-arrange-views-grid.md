@@ -10,7 +10,7 @@ You place views in the cells that are created from the intersection of the rows 
 
 ## How to specify the rows and columns of a Grid
 
-When you create a `Grid`, you can define each row and column individually. This system gives you full control over the height of each row and the width of each column. Every `Grid` has a collection of `RowDefinition` and `ColumnDefinition` objects that define the shape of the grid. You populate these collections with instances of `RowDefinition` and `ColumnDefinition`, each representing a row or column in your UI.
+When you create a `Grid`, you can define each row and column individually. This system gives you full control over the height of each row and the width of each column. Every `Grid` has a collection of `RowDefinition` and `ColumnDefinition` objects that define the shape of the grid. You populate these collections with instances of `RowDefinition` and `ColumnDefinition`, each representing a row, or column in your UI.
 
 Here are two snippets of code that show the class definitions for `RowDefinition` and `ColumnDefinition`:
 
@@ -61,7 +61,7 @@ Let's take a closer look at each of these values.
 var row = new RowDefinition() { Height = new GridLength(100) };
 ```
 
-In XAML, you just provide a numeric value. The XAML parser invokes a type converter to create the `GridLength` instance. Here's an example that shows the same thing in XAML:
+In Extensible Application Markup Language (XAML), you just provide a numeric value. The XAML parser invokes a type converter to create the `GridLength` instance. Here's an example that shows the same thing in XAML:
 
 ```xaml
 <RowDefinition Height="100" />
@@ -129,7 +129,7 @@ This definition can be shortened to:
 </Grid>
 ```
 
-The XAML for defining columns is analogous to this XAML, except you would use `ColumnDefinitions` and you would set the width.
+The XAML for defining columns is analogous to the previous XAML. Except you would use `ColumnDefinitions` and set the `Width`.
 
 At runtime, this XAML produces a `Grid` with four rows. The first row has a fixed height of `100` device units. The second row has the height of the tallest view in the row. The third and fourth rows use star sizing, which means they take the remaining available space and divide it proportionally based on their `Value` multiplier. Because the third row is `1*` and the fourth row is `2*`, the fourth row is twice the height of the third row.
 

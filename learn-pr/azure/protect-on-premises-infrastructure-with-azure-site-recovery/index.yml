@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Protect your on-premises infrastructure from disasters with Azure Site Recovery
   description: Learn how to provide disaster recovery for your on-premises infrastructure by using Azure Site Recovery to manage and orchestrate replication. Use Site Recovery to perform failover and failback of VMware virtual machines, Hyper-V virtual machines, and physical servers.
   manager: jsuri
@@ -38,3 +40,4 @@ units:
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery.6-summary
 badge:
   uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.badge
+

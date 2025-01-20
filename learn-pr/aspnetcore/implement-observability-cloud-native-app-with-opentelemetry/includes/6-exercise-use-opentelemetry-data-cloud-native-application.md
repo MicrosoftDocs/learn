@@ -389,7 +389,7 @@ The last step is to add Application Insights to your app.
 
     ```console
     {
-      "appId": "fb6e1af0-7556-469d-a31f-85e4550c8fde",
+      "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "applicationId": "eShopLiteInsights",
       "applicationType": "web",
       "connectionString": "InstrumentationKey=00000000-0000-0000-0000-000000000000;IngestionEndpoint=https://eastus-2.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/",
@@ -399,7 +399,7 @@ The last step is to add Application Insights to your app.
       "flowType": "Bluefield",
       "hockeyAppId": null,
       "hockeyAppToken": null,
-      "id": "/subscriptions/7eebce2a-0884-4df2-8d1d-2a3c051e47fe/resourceGroups/eShopLite/providers/microsoft.insights/components/eShopLiteInsights",
+      "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/eShopLite/providers/microsoft.insights/components/eShopLiteInsights",
       "immediatePurgeDataOn30Days": null,
       "ingestionMode": "ApplicationInsights",
       "instrumentationKey": "00000000-0000-0000-0000-000000000000",
@@ -415,7 +415,7 @@ The last step is to add Application Insights to your app.
       "retentionInDays": 90,
       "samplingPercentage": null,
       "tags": {},
-      "tenantId": "7eebce2a-0884-4df2-8d1d-2a3c051e47fe",
+      "tenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
       "type": "microsoft.insights/components"
     }
     ```

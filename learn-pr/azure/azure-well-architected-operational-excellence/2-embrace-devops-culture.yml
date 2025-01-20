@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-operational-excellence.embrace-devops-culture
 title: Embrace DevOps culture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Embrace DevOps culture
   description: Learn how embracing DevOps culture can improve your operational excellence.
   ms.date: 12/07/2023
@@ -52,3 +54,4 @@ quiz:
       isCorrect: true
       explanation: 'Correct. Contoso suffered from a lack of standardization in their toolset. This affected productivity and quality.'
  
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.datacenter-integration-for-azure-stack-hub.certificate-requirements
 title: Certificate requirements
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Certificate requirements
   description: "Certificate requirements"
   ms.date: 03/15/2022

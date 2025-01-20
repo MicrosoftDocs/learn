@@ -2,6 +2,8 @@
 uid: learn.wwl.transform-data-spark-azure-synapse-analytics.partition-data
 title: Partition data files
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Partition data files
   description: "Partition data files"
   ms.date: 08/25/2023

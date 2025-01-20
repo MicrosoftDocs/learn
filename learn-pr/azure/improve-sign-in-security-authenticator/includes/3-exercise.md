@@ -14,7 +14,7 @@ When you're finished, you'll be ready to validate the user experience. You'll cr
 Before enabling a registration campaign, make sure prerequisites are complete. You need to enable your users to use Microsoft Authenticator for authentication.
 
 > [!NOTE]
-> This exercise assumes you already have an organization set up, with a user group for your remote workers. You can learn how to set up your organization in the [Create Azure users and groups in Microsoft Entra ID](/training/modules/create-users-and-groups-in-azure-active-directory/) module.
+> This exercise assumes you already have an organization set up, with a user group for your remote workers. You can learn how to set up your organization in the [Manage users and groups in Microsoft Entra ID](/training/modules/manage-users-and-groups-in-aad/) module.
 
 1. In the [Azure portal](https://portal.azure.com), search for and select **Microsoft Entra ID**.
 1. In the Microsoft Entra admin center, select **Security** > **Authentication methods** > **Policies**.
@@ -32,7 +32,7 @@ The easiest way to create the registration campaign is to use the Microsoft Entr
 
 Your company is concerned about sign-ins from users in your **Remote employees** security group. Let's use the Azure portal to enable a registration campaign for that group. You'll want to nudge remote employees to set up Microsoft Authenticator every time they sign in by setting the snooze to *0*.
 
-1. In the [Azure portal](https://portal.azure.com), sign in as either authentication policy administrator or global administrator, then search for and select **Microsoft Entra ID**.
+1. In the [Azure portal](https://portal.azure.com), sign in as Authentication Policy Administrator, then search for and select **Microsoft Entra ID**.
 1. In the Microsoft Entra admin center, select **Security** > **Authentication methods** > **Registration campaign**.
 1. Change **State** to **Enabled**.
 1. For **Days allowed to snooze**, select **0 days**, then set **Limited number of snoozes** to **Disabled**. Remote employees will be prompted to set up Microsoft Authenticator every time they sign in.

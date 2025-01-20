@@ -3,7 +3,7 @@ uid: learn.azure.azure-savings-plan-for-compute
 metadata:
   title: 'Purchase Azure savings plan for compute'
   description: Purchase Azure savings plan for compute helps customers minimize their operational costs.
-  ms.date: 06/15/2023
+  ms.date: 11/14/2024
   author: bandersmsft
   ms.author: banders
   ms.reviewer: onwokolo
@@ -20,7 +20,7 @@ abstract:  |
   
 prerequisites: |
   To get the best learning experience from this module, you should have:
-  - A basic understanding of Azure cost management.
+  - A basic understanding of Microsoft cost management.
   
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

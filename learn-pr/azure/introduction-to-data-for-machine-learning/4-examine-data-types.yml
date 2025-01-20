@@ -2,9 +2,11 @@
 uid: learn.machinelearning.introduction-to-data-for-machine-learning.examine-data-types
 title: Examine different types of data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine different types of data
   description: Conceptual unit about examining different types of data in machine learning
-  ms.date: 01/30/2024
+  ms.date: 10/10/2024
   author: fbsolo-ms1
   ms.author: franksolomon
   ms.topic: unit
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-examine-data-types.md)]
+

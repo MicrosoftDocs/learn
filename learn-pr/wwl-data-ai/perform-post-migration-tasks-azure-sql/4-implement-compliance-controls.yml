@@ -2,6 +2,8 @@
 uid: learn-wwl.perform-post-migration-tasks-azure-sql.implement-compliance-controls
 title: Implement compliance controls for sensitive data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement compliance controls for sensitive data
   description: "Learn how to implement compliance controls for sensitive data in Azure SQL."
   ms.date: 09/14/2023

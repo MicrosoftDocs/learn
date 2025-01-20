@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Microsoft Defender for Cloud for Azure Arc-enabled servers
   description: "By the end of this module, you'll understand how Microsoft Defender for Cloud for Azure Arc-enabled servers can help you protect your cloud-based applications from various cyber threats."
   ms.date: 06/11/2024

@@ -2,6 +2,8 @@
 uid: learn-pr.azure.manage-azure-stack-hci-storage.describe-drive-symmetry-considerations
 title: Describe drive symmetry considerations in Azure Stack HCI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe drive symmetry considerations in Azure Stack HCI
   description: Read an overview of drive symmetry, capacity imbalance, and cache imbalance considerations in Azure Stack HCI.
   ms.date: 08/20/2024

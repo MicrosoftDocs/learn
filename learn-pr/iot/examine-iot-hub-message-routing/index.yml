@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-iot-hub-message-routing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure IoT Hub message routing
   description: "This module introduces you to Azure IoT Hub message routing, the common set of message features implemented by Azure IoT Hub, Azure IoT Hub's service-facing endpoints, and the message routing query syntax."
   ms.date: 02/06/2024
@@ -41,3 +43,4 @@ units:
 - learn.wwl.examine-iot-hub-message-routing.summary
 badge:
   uid: learn.wwl.examine-iot-hub-message-routing.badge
+

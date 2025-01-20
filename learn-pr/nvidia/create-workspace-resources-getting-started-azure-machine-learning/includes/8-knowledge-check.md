@@ -1,1 +1,1 @@
-Answer the following questions, then select **Check your answers**.
+Answer the following questions.

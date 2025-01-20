@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-governance-manageability.policy
 title: Explore Azure Policy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Policy
   description: "Create, assign, and manage policies to enforce different rules over your resources."
   ms.date: 08/02/2024

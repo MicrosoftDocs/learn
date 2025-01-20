@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-storage-security.identify-uri-sas-parameters
 title: Identify URI and SAS parameters
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify URI and SAS parameters
   description: "Identify URI and SAS parameters"
-  ms.date: 03/05/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

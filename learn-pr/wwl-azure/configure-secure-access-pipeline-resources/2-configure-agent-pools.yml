@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-secure-access-pipeline-resources.configure-agent-pools
 title: Configure agent pools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure agent pools
   description: "Configure agent pools."
   ms.date: 1/25/2023

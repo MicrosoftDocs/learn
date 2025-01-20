@@ -2,6 +2,8 @@
 uid: learn.azure.azure-netapp-files-with-vmware-solution.why-azure-netapp-files-vmware-solution
 title: Why use Azure NetApp Files with Azure VMware Solution? 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Why use Azure NetApp Files with Azure VMware Solution? 
   description: Learn about the benefits of using Azure NetApp Files with Azure VMware Solution.

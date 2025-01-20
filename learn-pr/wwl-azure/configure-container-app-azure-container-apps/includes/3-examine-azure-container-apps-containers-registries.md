@@ -8,11 +8,11 @@ Azure Container Apps supports:
 
 - Containers from any public or private container registry
 
-- Sidecar and init containers
+- Optional sidecar and init containers
 
 Features also include:
 
-- Changes to the template configuration section trigger a new container app revision.
+- Apps use the template configuration section to define the container image and other settings. Changes to the template configuration section trigger a new container app revision.
 
 - If a container crashes, it automatically restarts.
 

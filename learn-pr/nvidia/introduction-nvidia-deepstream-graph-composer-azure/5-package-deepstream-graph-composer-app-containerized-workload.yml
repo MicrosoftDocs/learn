@@ -2,6 +2,8 @@
 uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.5-package-deepstream-graph-composer-app-containerized-workload
 title: Exercise - Package an NVIDIA DeepStream Graph Composer application into a containerized workload
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Package an NVIDIA DeepStream Graph Composer application into a containerized workload
   description: Exercise - Package an NVIDIA DeepStream Graph Composer application into a containerized workload.
   author: toolboc
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-package-deepstream-graph-composer-app-containerized-workload.md)]
+

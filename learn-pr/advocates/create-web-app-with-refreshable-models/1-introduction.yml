@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.create-web-app-with-refreshable-models.1-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Create a web app consuming a custom vision machine learning model and build it with GitHub Actions.
   author: GitHubber17
@@ -14,3 +16,4 @@ title: Introduction
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

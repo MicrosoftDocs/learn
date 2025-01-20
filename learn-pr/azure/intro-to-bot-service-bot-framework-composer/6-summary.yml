@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-bot-service-bot-framework-composer.6-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: Summary
   title: Summary
   description: Summary
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

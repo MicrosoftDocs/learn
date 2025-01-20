@@ -1,4 +1,3 @@
-
 Many organizations use Azure SQL Database for large customer databases that store phone numbers, addresses, orders, and credit card information.
 They need a security solution to prevent unauthorized data access to their cloud hosted databases. Classifying stored data by sensitivity and business scenario helps organizations determine the risks associated with their data.
 
@@ -29,7 +28,7 @@ Large organizations, governments, and military entities use data classification 
 
 ### Things to know about data at rest and TDE
 
-Data encryption at rest is a mandatory step toward data privacy, compliance, and data sovereignty. Encryption helps mitigate risks related to unauthorized data access. data at rest needs to be protected from unauthorized or offline access to raw files or backups to an unsecured server. Data at rest needs to be protected by preventing copying of the database and transaction log files to an unsecured server.
+Data encryption at rest is a mandatory step toward data privacy, compliance, and data sovereignty. Encryption helps mitigate risks related to unauthorized data access. Data at rest needs to be protected from unauthorized or offline access to raw files or backups to an unsecured server. Data at rest needs to be protected by preventing copying of the database and transaction log files to an unsecured server.
 
 Transparent data encryption (TDE) protects Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics against the threat of malicious offline activity by encrypting data at rest. TDE performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application. TDE is enabled by default to all newly deployed Azure SQL Databases. For Azure SQL Managed Instance, databases created after February 2019 have TDE enabled.
 
@@ -44,12 +43,6 @@ Let's review how TDE is implemented for data at rest. Consider how data at rest 
 - The end result is all data pages on the disk are encrypted.
 
 - Database backups are also encrypted because a backup operation copies the data pages from the database file to the backup device. No decryption is done during the backup operation.
-
-- TDE encrypts the storage of an entire database by using a symmetric key called the Database Encryption Key (DEK). There are two ways TDE uses the DEK:
-
-   - **Service-managed TDE**: The DEK is protected by a built-in server certificate.
-
-   - **Customer-managed TDE**: The TDE Protector that encrypts the DEK is supplied by the customer. The TDE Protector is stored in a key management system owned and managed by the customer.
 
 - You can use TDE with databases in an **Always On** Availability Group (AG). The certificate used to encrypt the database must be backed up and restored to the other servers within AGs that host copies of the database.
 
@@ -70,7 +63,7 @@ Consider the following Tailwind Traders scenarios, and possible data in motion s
 
 ### Things to know about data-in-use and dynamic data masking
 
-Encryption for data-in-use is about protecting data and sensitive information while it's used or changed. The encryption methods target usage scenarios and minimum access required.
+Encryption for data-in-use is about protecting data and sensitive information. The encryption methods target usage scenarios and minimum access required.
 
 Consider a scenario where customer assistants access the Tailwind Traders database that has customer phone numbers and email addresses. The assistants require access to only a portion of the sensitive data. They need to verify the user who is calling by checking the last four digits of the customer's phone number. The assistant doesn't need access to the remaining sensitive data. You can encrypt the remaining customer data and not reveal it to the assistants. 
 

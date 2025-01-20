@@ -2,11 +2,13 @@
 uid: learn.wwl.create-azure-cognitive-search-solution.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 12/11/2023
+  ms.date: 10/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,50 +17,50 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "You want to find information in Microsoft Word documents that are stored in an Azure Storage blob container. What should you do to ensure the files can be accessed by Azure AI Search?"
+  - content: "You want to find information in Microsoft Word documents that are stored in an Azure Storage blob container. What should you do to ensure Azure AI Search can access the files?"
     choices:
     - content: "Add a JSON file that defines an Azure AI Search index to the blob container"
       isCorrect: false
-      explanation: "Incorrect. Adding an index file to the blob container does not help Azure AI Search access the data."
+      explanation: "Incorrect. Adding an index file to the blob container doesn't help Azure AI Search access the data."
     - content: "Enable anonymous access for the blob container"
       isCorrect: false
       explanation: "Incorrect. Anonymous access is not required for Azure AI Search to access documents in a blob container."
     - content: "In an Azure AI Services resource, and add a data source that references the container where the files are stored"
       isCorrect: true
       explanation: "Correct. To search files in a blob container, you should create a data source"
-  - content: "You are creating an index that includes a field named modified_date. You want to ensure that the modified_date field can be included in search results. Which attribute must you apply to the modified_date field in the index definition?"
+  - content: "You're creating an index that includes a field named modified_date. You want to ensure that the modified_date field can be included in search results. Which attribute must you apply to the modified_date field in the index definition?"
     choices:
-    - content: "searchable"
+    - content: "`searchable`"
       isCorrect: false
-      explanation: "Incorrect. Making a field searchable means that it can be queried for search terms. It does not mean the field can be included in the results."
-    - content: "filterable"
+      explanation: "Incorrect. Making a field searchable means that it can be queried for search terms. It doesn't mean the field can be included in the results."
+    - content: "`filterable`"
       isCorrect: false
-      explanation: "Incorrect. Making a field filterable means that it can be used to apply a filter expression. It does not mean the field can be included in the results."
-    - content: "retrievable"
+      explanation: "Incorrect. Making a field filterable means that it can be used to apply a filter expression. It doesn't mean the field can be included in the results."
+    - content: "`retrievable`"
       isCorrect: true
       explanation: "Correct. To enable a field to be included in the results, you must make it retrievable."
-  - content: "You have created a data source and an index. What must you create to map the data values in the data source to the fields in the index?"
+  - content: "You created a data source and an index. What must you create to map the data values in the data source to the fields in the index?"
     choices:
     - content: "A synonym map"
       isCorrect: false
-      explanation: "Incorrect. A synonym map does not map data to index fields."
+      explanation: "Incorrect. A synonym map doesn't map data to index fields."
     - content: "An indexer"
       isCorrect: true
       explanation: "Correct. Use an indexer to map data to index fields."
     - content: "A suggester"
       isCorrect: false
-      explanation: "Incorrect. A suggester does not map data to index fields."
+      explanation: "Incorrect. A suggester doesn't map data to index fields."
   - content: "You want to create a search solution that uses a built-in AI skill to determine the language in which each indexed document is written, and enrich the index with a field indicating the language. Which kind of Azure AI Search object must you create?"
     choices:
     - content: "Synonym map"
       isCorrect: false
-      explanation: "Incorrect. A synonym map does not integrate AI skills into the indexing process."
+      explanation: "Incorrect. A synonym map doesn't integrate AI skills into the indexing process."
     - content: "Skillset"
       isCorrect: true
       explanation: "Correct. A skillset enables you to define an enrichment pipeline composed of AI skills."
     - content: "Scoring Profile"
       isCorrect: false
-      explanation: "Incorrect. A scoring profile does not integrate AI skills into the indexing process."
+      explanation: "Incorrect. A scoring profile doesn't integrate AI skills into the indexing process."
   - content: "You want your search solution to show results in descending order of the file_size field value. What is the simplest way to accomplish this goal?"
     choices:
     - content: "Create a scoring profile that boosts results based on the file_size field"
@@ -70,14 +72,15 @@ quiz:
     - content: "Make the file_size field sortable, and include an orderby parameter that specifies the file_size field in queries."
       isCorrect: true
       explanation: "Correct. Making a field sortable enables you to apply an orderby parameter to sort results by that field."
-  - content: "You have created a search solution. Users want to be able to enter a partial search expression and have the user interface automatically complete the input. What should you add to the index?"
+  - content: "You created a search solution. Users want to be able to enter a partial search expression and have the user interface automatically complete the input. What should you add to the index?"
     choices:
     - content: "A suggester"
       isCorrect: true
       explanation: "Correct. A suggester makes it possible to implement autocomplete and suggestions."
     - content: "A synonym map."
       isCorrect: false
-      explanation: "Incorrect. A synonym map does not enable you to implement autocomplete."
+      explanation: "Incorrect. A synonym map doesn't enable you to implement autocomplete."
     - content: "A scoring profile."
       isCorrect: false
-      explanation: "Incorrect. A scoring profile does not enable you to implement autocomplete."
+      explanation: "Incorrect. A scoring profile doesn't enable you to implement autocomplete."
+

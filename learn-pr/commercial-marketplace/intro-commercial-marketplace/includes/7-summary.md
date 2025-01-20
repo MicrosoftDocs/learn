@@ -6,7 +6,7 @@ Next, you demonstrate to your team the many ways you can engage with your custom
 
 At the end of the presentation, you give an overview of Microsoft initiatives like **Marketplace Rewards**, highlighting how the benefits are strategically designed to help accelerate customer discovery and revenue growth for Microsoft's partners.
 
-Your initial presentation to the executive team is met with enthusiasm! Following your presentation, they ask you take the first steps of your Microsoft commercial marketplace journey.
+Your initial presentation to the executive team is met with enthusiasm! Following your presentation, they ask you to take the first steps of your Microsoft commercial marketplace journey.
 
 ## Resources
 
@@ -27,5 +27,5 @@ Your initial presentation to the executive team is met with enthusiasm! Followin
 - [Reach 4 million active customers by publishing on Microsoft commercial marketplace](https://www.microsoft.com/en-us/americas-partner-blog/2021/12/14/reach-4m-active-customers-by-publishing-on-microsoft-commercial-marketplace/)
 - [Grow sales and scaling impact with Marketplace Rewards](https://techcommunity.microsoft.com/t5/marketplace-blog/marketplace-rewards-your-key-to-growing-sales-and-scaling-impact/ba-p/4076725)
 - [Learn about the Marketplace Rewards program](https://aka.ms/marketplacerewards)
-- [Market with Azure Marketplace and AppSource](https://partner.microsoft.com/asset/collection/marketing-with-azure-marketplace-and-appsource#/)
+- [Marketing with Azure Marketplace and AppSource](https://partner.microsoft.com/asset/collection/marketing-with-azure-marketplace-and-appsource#/)
 - [Understand your listing options](/azure/marketplace/determine-your-listing-type#choose-a-listing-option)

@@ -1,17 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-kusto-fabric.define-real-time-analytics
-title: Describe Microsoft Fabric Real-Time Intelligence?
+title: What is real-time data analytics?
 metadata:
-  title: Describe Microsoft Fabric Real-Time Intelligence?
-  description: "What is Microsoft Fabric Real-Time Intelligence?"
-  ms.date: 05/14/2024
+  title: What is real-time data analytics?
+  description: "What are the common elements of a real-time data analytics solution?"
+  ms.date: 12/03/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: unit
-  ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
 durationInMinutes: 10
 content: |
   [!include[](includes/2-define-real-time-analytics.md)]

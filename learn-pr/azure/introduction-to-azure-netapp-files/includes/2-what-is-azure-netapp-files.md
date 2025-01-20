@@ -84,7 +84,7 @@ Azure NetApp Files is designed to securely manage your data.
 
 Azure NetApp Files is purpose-built to offer high levels of security and compliance:
 
-- **Security**: Azure NetApp Files offers FIPS-140-2-compliant data encryption at rest, role-based access control (RBAC), Microsoft Entra ID authentication, and export policies for network-based access control lists (ACLs). Azure NetApp Files also supports customer-managed keys.
+- **Security**: Azure NetApp Files offers FIPS-140-2-compliant data encryption at rest, role-based access control (RBAC), and export policies for network-based access control lists (ACLs). Azure NetApp Files also supports customer-managed keys.
 - **Compliance**: Azure NetApp Files complies with leading industry certifications, such as the Health Insurance Portability and Accountability Act (HIPAA) and many other certifications.
 
 ### Data encryption

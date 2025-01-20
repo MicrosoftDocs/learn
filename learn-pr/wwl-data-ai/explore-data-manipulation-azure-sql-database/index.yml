@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn-wwl.explore-data-manipulation-azure-sql-database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore data manipulation options in Azure SQL Database
   description: "Learn how to invoke REST endpoints in Azure SQL Database and manipulate data using Azure Functions. Also, explore various tools and options for importing and exporting data to and from Azure SQL Database."
   ms.date: 10/1/2024
@@ -42,5 +44,6 @@ units:
 - learn-wwl.explore-data-manipulation-azure-sql-database.summary
 badge:
   uid: learn-wwl.explore-data-manipulation-azure-sql-database.badge
+
 
 

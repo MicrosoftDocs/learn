@@ -2,6 +2,8 @@
 uid: learn.wwl.train-evaluate-deep-learn-models.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 07/10/2024

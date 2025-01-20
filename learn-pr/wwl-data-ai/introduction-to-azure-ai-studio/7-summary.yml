@@ -2,11 +2,13 @@
 uid: learn.wwl.introduction-to-azure-ai-studio.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
-  description: Summary of key learning points for Azure AI Studio.
+  description: Summary of key learning points for Azure AI Foundry.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 05/08/2024
+  ms.date: 11/25/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
+

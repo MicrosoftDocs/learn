@@ -2,6 +2,8 @@
 uid: learn.choose-messaging-model.6-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 07/31/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.datacenter-integration-for-azure-stack-hub.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/15/2022
@@ -49,3 +51,4 @@ quiz:
     - content: "Software Assurance"
       isCorrect: false
       explanation: "Incorrect. Software Assurance is a comprehensive program that includes a unique set of technologies, services, and rights for using Microsoft products efficiently."
+

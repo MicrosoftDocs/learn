@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.cosmos-db-java-app.1-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 11/02/2020
   author: kushagraThapar
   ms.author: kuthapar
-  manager: jroth
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java
@@ -14,3 +15,4 @@ title: Introduction
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

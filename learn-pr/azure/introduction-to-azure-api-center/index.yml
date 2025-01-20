@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.introduction-to-azure-api-center
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure API Center    
   description: "Introduction to Azure API Center, a centralized secure inventory of APIs to help you govern, discover, and consume APIs across your organization."              
   ms.date: 5/3/2024              

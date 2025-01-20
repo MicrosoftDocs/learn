@@ -2,6 +2,8 @@
 uid: learn.wwl.train-evaluate-cluster-models.different-types-clustering
 title: Evaluate different types of clustering
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Evaluate different types of clustering
   description: Review more advanced types of clustering algorithms
   ms.date: 09/07/2023

@@ -21,7 +21,8 @@ summary: |
   
   > [!NOTE]
   > [!INCLUDE [](../../includes/azure-subscription-prerequisite.md)]
-iconUrl: /training/achievements/develop-data-driven-app-sql-db.svg
+
+iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:

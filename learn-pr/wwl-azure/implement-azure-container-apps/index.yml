@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-azure-container-apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Azure Container Apps
   description: "Run serverless containerized apps in Azure Container Apps service."
   ms.date: 07/16/2024

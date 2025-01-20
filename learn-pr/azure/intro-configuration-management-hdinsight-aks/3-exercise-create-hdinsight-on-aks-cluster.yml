@@ -2,6 +2,8 @@
 uid: learn.intro-configuration-management-hdinsight-aks.3-exercise-create-hdinsight-on-aks-cluster  
 title: Exercise - Create HDInsight on AKS cluster
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: Exercise - Create HDInsight on AKS cluster
   description: Exercise - Create HDInsight on AKS cluster
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-exercise-create-hdinsight-on-aks-cluster.md)]
+

@@ -4,12 +4,13 @@ title: Examine GitHub Copilot tools, benefits, and limitations
 metadata:
   title: Examine GitHub Copilot tools, benefits, and limitations
   description: "Examine GitHub Copilot tools, benefits, and limitations"
-  ms.date: 08/13/2024
+  ms.date: 12/09/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
   ms.custom:
   - N/A
+  - ai-learning-hub
 durationInMinutes: 6
 content: |
   [!include[](includes/3-examine-github-copilot-benefits.md)]

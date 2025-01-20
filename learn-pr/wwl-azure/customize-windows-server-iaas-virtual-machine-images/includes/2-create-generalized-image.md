@@ -1,12 +1,8 @@
-
-
 IT operations staff at Contoso have spent a considerable amount of time deploying VMs to Azure as part of a pilot program. Before they begin deploying additional VMs, they've asked you to determine whether imaging could be used to assist with these deployments. You've worked with creating VMs from generalized images at Contoso in an on-premises environment, and learn that it's possible to create Azure IaaS VMs using the same approach. But first, you need to know how to create a generalized image in Azure.
 
 ## What are VM images?
 
 When you create a VM, you must specify a VM image that contains a generalized operating system and optionally, other preconfigured software. Azure uses the image to create a new virtual hard disk (VHD) from which it can start your VM. The **Image** list on the **Create a virtual machine** blade in the Azure portal, displayed in the following screenshot, presents a list of commonly used images.
-
-![A screenshot of the Create a virtual machine blade in the Azure portal. The administrator is selecting the Windows Server 2019 Datacenter image from the list.](../media/m6-select-image.png)
 
 > [!NOTE]
 > A *VM image* is a template from which you can create the VHDs to run a VM. The VHDs for a typical VM image contain a preconfigured version of an operating system.
@@ -45,8 +41,6 @@ Use the **Sysprep.exe** tool to generalize a Windows VM. Follow these steps:
 |**System Cleanup Action**|Enter System Out-of-Box Experience (OOBE)|
 |**Generalize**|Select|
 |**Shutdown Options**|Shutdown|
-
-![A screenshot of the System Preparation Tool 3.14 dialog box. The administrator has configured the settings described in the preceding table.](../media/m6-system-preparation.png)
 
 After the VM has been shut down, you should deallocate it while it's in this clean state. You can do this via the Azure portal, via Azure PowerShell, or Azure Command-Line Interface (Azure CLI). In the Azure portal, select the appropriate VM, and then on the toolbar, select **Stop**. At the **Stop this virtual machine** prompt, select **OK**.
 

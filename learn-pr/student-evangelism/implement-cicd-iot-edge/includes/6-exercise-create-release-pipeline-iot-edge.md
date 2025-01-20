@@ -56,7 +56,7 @@ Deployments to devices need to be done under tight control in production environ
 
        ```
        {
-       "appId": "12345678-1234-1234-1234-1234567890ab",
+       "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
        "displayName": "azure-iot-edge-device-container-sp",
        "name": "http://azure-iot-edge-device-container-sp",
        "password": "MyPassword",

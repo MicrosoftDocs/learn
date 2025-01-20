@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.protect-azure-for-sap-workloads
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Securely connect to SAP on Azure
   description: "Learn to describe Azure Networking services and components for connecting and securing SAP S/4 HANA in Azure, and learn how different requirements might adjust networking services requirements."
   ms.date: 12/10/2021
@@ -43,3 +45,4 @@ units:
 - learn.wwl.protect-azure-for-sap-workloads.summary
 badge:
   uid: learn.wwl.protect-azure-for-sap-workloads.badge
+

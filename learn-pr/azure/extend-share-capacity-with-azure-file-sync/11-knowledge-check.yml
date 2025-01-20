@@ -2,6 +2,8 @@
 uid: learn.azure.extend-share-capacity-with-azure-file-sync.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Check your knowledge
   description: Review what you've learned.
   ms.date: 11/17/2023
@@ -89,3 +91,4 @@ quiz:
     - content: Your on-premises server doesn't support SMB encryption.
       isCorrect: false
       explanation: Azure denies connections that aren't secure.
+

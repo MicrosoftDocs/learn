@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and implement application allowlists with adaptive application control
   description: "You're able to implement Adaptive application controls within your organization to protect your Windows Server IaaS VMs."
   ms.date: 04/18/2024

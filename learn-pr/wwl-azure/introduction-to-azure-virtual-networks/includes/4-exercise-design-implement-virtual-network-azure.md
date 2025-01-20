@@ -1,6 +1,6 @@
 ## Lab scenario
 
-Contoso Ltd, a fictitious organization, is in the process of migrating infrastructure and applications to Azure. As network engineer, you will plan and implement three virtual networks and subnets to support resources in those virtual networks.
+Contoso Ltd, a fictitious organization, is in the process of migrating infrastructure and applications to Azure. As network engineer, you plan and implement three virtual networks and subnets to support resources in those virtual networks.
 
 ## Architecture diagram
 

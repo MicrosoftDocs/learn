@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure-security.secure-aad-users-with-mfa
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure Microsoft Entra users with multifactor authentication
   description: Learn how to use multifactor authentication with Microsoft Entra ID to harden your user accounts.
-  ms.date: 11/03/2023
+  ms.date: 11/01/2024
   author: Justinha
   ms.author: justinha
   ms.topic: module
@@ -12,9 +14,9 @@ title: Secure Microsoft Entra users with multifactor authentication
 summary: Learn how to use multifactor authentication with Microsoft Entra ID to harden your user accounts.
 abstract: |
   In this module, you will:
-  - Learn about Microsoft Entra multifactor authentication
-  - Create a plan to deploy Microsoft Entra multifactor authentication
-  - Turn on Microsoft Entra multifactor authentication for users and specific apps
+  - Learn about Microsoft Entra multifactor authentication.
+  - Create a plan to deploy Microsoft Entra multifactor authentication.
+  - Turn on Microsoft Entra multifactor authentication for users and specific apps.
 prerequisites: |
   - Basic knowledge of the Azure portal
   - Basic knowledge of Microsoft Entra ID
@@ -39,3 +41,4 @@ units:
 - learn.azure-security.secure-aad-users-with-mfa.exercise-mfa
 - learn.azure-security.secure-aad-users-with-mfa.configure-authentication-methods
 - learn.azure-security.secure-aad-users-with-mfa.summary
+

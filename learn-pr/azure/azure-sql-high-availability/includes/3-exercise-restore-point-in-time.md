@@ -16,8 +16,8 @@ These scripts should take three to five minutes to complete. Make sure to note y
     # Prompt for local IP address
     $ipAddress = Read-Host "Disconnect your VPN, open PowerShell on your machine and run '(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content'. Please enter the value (include periods) next to 'Address': "
     # Get resource group and location and random string
-    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like "<rgn>Sandbox resource group name</rgn>"
-    $resourceGroupName = "<rgn>Sandbox resource group name</rgn>"
+    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like "<rgn>[sandbox resource group name]</rgn>"
+    $resourceGroupName = "<rgn>[sandbox resource group name]</rgn>"
     $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
     $storageAccountName = "mslearnsa"+$uniqueID
     $location = $resourceGroup.Location
@@ -82,7 +82,7 @@ These scripts should take three to five minutes to complete. Make sure to note y
         -Type "Standard_LRS"
     ```
 
-1. On your local computer, open SSMS and create a new connection to your logical server. For the server name, enter the name of your Azure SQL Database logical server. If you didn't save the name earlier, you might need to refer to the Azure portal to get it. For example: **aw-server\<unique ID>.database.windows.net**.  
+1. On your local computer, open SSMS and create a new connection to your logical server. For the server name, enter the name of your Azure SQL Database logical server. If you didn't save the name earlier, you might need to refer to the Azure portal to get it. For example: `aw-server\<unique ID>.database.windows.net`.  
 
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
@@ -144,7 +144,7 @@ First, let's confirm that the table we'll *accidentally* delete exists and has d
 1. Finally, before you start the steps to restore the database, run the following code in Azure Cloud Shell on the right side of this page to configure your environment:
 
     ```powershell
-    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like <rgn>Sandbox resource group name</rgn>
+    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like <rgn>[sandbox resource group name]</rgn>
     $server = Get-AzureRmSqlServer -ResourceGroupName $resourceGroup.ResourceGroupName
     $logical_server = $server.ServerName
     $resource_group = $resourceGroup.ResourceGroupName

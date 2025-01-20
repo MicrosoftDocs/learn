@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-identity-services.explore-azure-virtual-machine-auth-access-control
 title: Explore Azure Virtual Machine authentication, authorization, and access control
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Virtual Machine authentication, authorization, and access control
   description: "Explore Azure Virtual Machine authentication, authorization, and access control"
   ms.date: 01/10/2024

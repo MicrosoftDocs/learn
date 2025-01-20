@@ -2,6 +2,8 @@
 uid: learn.wwl.create-question-answer-solution-ai-language.consume-client-interfaces
 title: Use a knowledge base
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use a knowledge base
   description: Use a knowledge base
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/7-consume-client-interfaces.md)]
+

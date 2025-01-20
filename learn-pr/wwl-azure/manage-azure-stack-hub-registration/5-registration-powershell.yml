@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-stack-hub-registration.registration-using-powershell
 title: Registration using PowerShell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Registration using PowerShell
   description: "Registration using PowerShell"
   ms.date: 03/29/2022
@@ -14,3 +16,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/5-registration-powershell.md)]
+

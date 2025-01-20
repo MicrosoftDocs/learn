@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.improve-app-scalability-resiliency-with-load-balancer.3-public-load-balancer
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure a public load balancer
   description: Configure a public load balancer
   ms.date: 10/14/2024
@@ -11,3 +13,4 @@ title: Configure a public load balancer
 durationInMinutes: 10
 content: |
   [!include[](includes/3-public-load-balancer.md)]
+

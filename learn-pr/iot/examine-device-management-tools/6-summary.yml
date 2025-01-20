@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-device-management-tools.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: This content is part of Evaluate device management tools for Azure IoT.
   ms.date: 09/06/2023

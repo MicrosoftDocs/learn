@@ -2,6 +2,8 @@
 uid: learn.azure.optimize-performance-and-costs-using-azure-disk-storage.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to Azure Disk Storage solutions for optimizing performance and costs.
   ms.date: 07/16/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

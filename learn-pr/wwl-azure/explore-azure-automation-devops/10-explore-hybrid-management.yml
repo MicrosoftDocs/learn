@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-automation-devops.explore-hybrid-management
 title: Explore hybrid management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore hybrid management
   description: "Explore hybrid management"
   ms.date: 05/23/2024

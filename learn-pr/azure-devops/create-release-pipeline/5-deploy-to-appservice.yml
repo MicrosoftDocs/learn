@@ -2,6 +2,8 @@
 uid: learn.azdo.create-release-pipeline.5-deploy-to-appservice
 title: Exercise - Deploy the web application to Azure App Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Deploy the web application to Azure App Service
   description: Deploy your web application to Azure App Service.
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 13
 content: |
   [!include[](includes/5-deploy-to-appservice.md)]
+

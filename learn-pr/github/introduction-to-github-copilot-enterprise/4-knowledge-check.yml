@@ -22,9 +22,9 @@ quiz:
     - content: "Copilot Pull Request Summaries"
       isCorrect: false
       explanation: "Incorrect. This feature enables developers to generate summaries of pull requests based on code changes, enhancing understanding and accelerating review processes."
-    - content: "Copilot Documentation Search and Summaries using Docsets"
+    - content: "Copilot Documentation Search"
       isCorrect: false
-      explanation: "Incorrect. This feature allows organizations to create and manage custom docsets from their internal code and documentation, tailoring Copilot's suggestions to their specific projects and domains."
+      explanation: "Incorrect. This feature allows organizations to get answers from their internal code and documentation, tailoring Copilot's suggestions to their specific projects and domains."
     - content: "None of the above"
       isCorrect: true
       explanation: "Correct. While all the listed features are available in GitHub Copilot Enterprise, the question asks for features distinguishing it from the previous Copilot for Business plan."
@@ -56,18 +56,3 @@ quiz:
     - content: "None of the above"
       isCorrect: false
       explanation: "Incorrect. Copilot's pull request summaries automatically generate concise overviews of pull requests based on code changes, enhancing understanding and accelerating review processes."
-  - content: How can organizations manage and utilize docsets within Copilot Enterprise to tailor code suggestions and improve development workflows?
-    choices:
-    - content: "By using docsets to create custom collections of internal code and documentation"
-      isCorrect: true
-      explanation: "Correct. Docsets allow organizations to create custom collections of internal code and documentation, tailoring Copilot's suggestions to their specific projects and domains."
-    - content: "By using docsets to automatically generate code snippets"
-      isCorrect: false
-      explanation: "Incorrect. Docsets allow organizations to create custom collections of internal code and documentation, tailoring Copilot's suggestions to their specific projects and domains."
-    - content: "By using docsets to track developers' activity within a project"
-      isCorrect: false
-      explanation: "Incorrect. Docsets allow organizations to create custom collections of internal code and documentation, tailoring Copilot's suggestions to their specific projects and domains."
-    - content: "By using docsets to enforce coding standards"
-      isCorrect: false
-      explanation: "Incorrect. Docsets allow organizations to create custom collections of internal code and documentation, tailoring Copilot's suggestions to their specific projects and domains."
-

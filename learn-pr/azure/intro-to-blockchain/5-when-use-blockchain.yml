@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-intro-to-blockchain.when-use-blockchain
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to use blockchain
   description: When to use blockchain
   ms.date: 07/09/2024
@@ -11,3 +13,4 @@ title: When to use blockchain
 durationInMinutes: 5
 content: |
   [!include[](includes/5-when-use-blockchain.md)]
+

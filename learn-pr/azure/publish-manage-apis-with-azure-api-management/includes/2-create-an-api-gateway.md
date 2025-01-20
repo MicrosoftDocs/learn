@@ -17,11 +17,11 @@ For developers, API Management provides a range of benefits.
 - **API documentation**. Documentation of APIs enables calling clients to quickly integrate their solutions. API Management allows you to quickly expose the structure of your API to calling clients through modern standards like OpenAPI. You can have more than one version of an API. With multiple versions, you can stage app updates as your consuming apps don't have to use the new version straight away.
 - **Rate limiting access**. If your API could potentially access a large amount of data, it's a good idea to limit the rate at which clients can request data. Rate limiting helps maintain optimal response times for every client. API Management lets you set rate limits as a whole or for specific individual clients.
 - **Health monitoring**. Remote clients consume your APIs, so it can be difficult to identify potential problems or errors. API Management lets you view error responses and log files, and filter by types of responses.
-- **Modern formats like JSON**. APIs have used many different data exchange formats over the years from XML to CSV and many more. API Management enables you to expose these formats using modern data models like JSON.
+- **Modern formats like JSON**. Over the years, many different data exchange formats were used by APIs from XML to CSV and many more. API Management enables you to expose these formats using modern data models like JSON.
 - **Connections to any API**. In many businesses, APIs are located across different countries/regions and use different formats. API Management lets you add all of these disparate APIs into a single modern interface.
-- **Analytics**. As you develop your APIs, it's useful to see how often your APIs are being called and by which types of systems. API Management allows you to visualize this data within the Azure portal. 
+- **Analytics**. As you develop your APIs, it's useful to see how often your APIs are being called and by which types of systems. API Management allows you to visualize this data within the Azure portal.
 - **Security**. Security is paramount when dealing with system data. Unauthorized breaches can cost companies money, time lost in reworking code, and reputational loss. Security tools that you can use with Azure API management include OAuth 2.0 user authorization, and integration with Microsoft Entra ID.
-- **Pricing tiers**. API Management offers tiers with different capabilities for request throughput, SLA, network isolation, upgrade flexibility, and so on. When you create an Azure API management gateway, you choose the tier that meets your needs.
+- **Pricing tiers**. API Management offers tiers with different capabilities for request throughput, service level agreement (SLA), network isolation, upgrade flexibility, and so on. When you create an Azure API management gateway, you choose the tier that meets your needs.
 
 ## API management setup
 

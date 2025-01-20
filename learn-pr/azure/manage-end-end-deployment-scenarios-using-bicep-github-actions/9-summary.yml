@@ -2,6 +2,8 @@
 uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary for managing end-to-end deployment scenarios by using Bicep and GitHub Actions.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
+

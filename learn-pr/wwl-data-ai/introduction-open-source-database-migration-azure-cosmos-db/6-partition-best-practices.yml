@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.cosmos-db-partitioning-best-practices
 title: Cosmos DB provisioning best practices
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Cosmos DB provisioning best practices
   description: "Cosmos DB provisioning best practices"
   ms.date: 03/26/2024

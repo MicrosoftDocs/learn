@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-open-source-software-azure.explore-common-licenses
 title: Explore common open-source licenses
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore common open-source licenses
   description: "Explore common open-source licenses"
   ms.date: 05/07/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-perform-backups-restores.explore-application-backup
 title: Explore application backup
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore application backup
   description: "Explore application backup"
   ms.date: 01/09/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/4-explore-application-backup.md)]
+

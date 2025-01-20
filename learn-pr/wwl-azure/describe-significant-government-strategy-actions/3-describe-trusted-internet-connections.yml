@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-significant-government-strategy-actions.describe-trusted-internet-connections
 title: Describe trusted internet connections
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe trusted internet connections
   description: "Describe trusted internet connections"
   ms.date: 04/29/2022

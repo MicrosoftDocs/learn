@@ -2,9 +2,11 @@
 uid: learn.wwl.plan-implement-administer-conditional-access.exercise-implement-conditional-access-policies-roles-assignments
 title: Exercise - Implement Conditional Access policies roles and assignments
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Implement Conditional Access policies roles and assignments
   description: "Exercise - Implement Conditional Access policies roles and assignments"
-  ms.date: 10/14/2024
+  ms.date: 12/16/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

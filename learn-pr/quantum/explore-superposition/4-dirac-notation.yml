@@ -2,6 +2,8 @@
 uid: learn.quantum.explore-superposition.dirac-notation
 title: Dirac notation and operators
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Dirac notation and operators
   description: Learn how to represent a qubit using Dirac notation.
   ms.date: 03/25/2024

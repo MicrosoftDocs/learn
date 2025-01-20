@@ -2,14 +2,17 @@
 uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: wwlpublish
-  ms.author: rcaper
-  ms.date: 04/29/2024
+  ms.author: calopez
+  ms.date: 11/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

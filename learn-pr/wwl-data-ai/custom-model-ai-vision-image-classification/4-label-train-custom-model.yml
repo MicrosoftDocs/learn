@@ -2,6 +2,8 @@
 uid: learn.wwl.custom-model-ai-vision-image-classification.label-train-custom-model
 title: Label and train a custom model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Label and train a custom model
   description: Label and train a custom model in Azure AI Vision.
   author: ivorb
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-label-train-custom-model.md)]
+

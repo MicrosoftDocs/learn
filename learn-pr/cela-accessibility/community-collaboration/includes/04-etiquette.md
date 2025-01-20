@@ -1,4 +1,4 @@
-After you've established a way to engage with members of the disability community, start inviting these community members to provide accessibility feedback. Shortly after, you can start hosting these collaborative sessions online or at your studio.
+After you establish a way to engage with members of the disability community, start inviting these community members to provide accessibility feedback. Shortly after, you can start hosting these collaborative sessions online or at your studio.
 
 This unit provides best practices that you can follow throughout the processes of invitation and active collaboration. These best practices can help ensure that the players you work with have an accessible and enjoyable experience.
 
@@ -31,7 +31,7 @@ For in-person sessions, the physical spaces that participants use must be access
 
 Ensure that any virtual meeting platforms, survey platforms, and forms are accessible. For example, participants who are d/Deaf or hard of hearing might need live transcription of what's being said in the meeting. If the virtual meeting platform doesn't provide that capability, that participant is unable to participate.
 
-Make sure that online documents and survey platforms comply with WCAG 2.1 web accessibility standards. Example considerations include:
+Make sure that online documents and survey platforms comply with Web Content Accessibility Guidelines (WCAG) standards. Example considerations include:
 
 - Is all text in a survey accessible for people who use a screen reader?
 - Do the images provide proper alternative text (alt text) descriptions?

@@ -35,7 +35,7 @@ This code works, but it's in the page's code-behind file. The padding is a user-
 .NET MAUI XAML provides the `OnPlatform` markup extension, which allows you to detect the runtime platform from within your XAML code. You can apply this markup extension as part of the XAML code that sets a property value. The extension requires you to provide the property type, together with a series of `On Platform` blocks in which you set the property value according to the platform.
 
 > [!NOTE]
-> The `OnPlatform` markup extension is generic; it takes a type parameter. The type specified by the `TypeArguments` attribute ensures the correct type of extension is used.
+> The `OnPlatform` markup extension is generic; it takes a type parameter. The type the `TypeArguments` attribute specifies ensures the correct extension type is used.
 
 You can set the `Padding` property like this. Notice that the type of the `Padding` property is `Thickness`:
 

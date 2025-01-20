@@ -2,12 +2,15 @@
 uid: learn.azure.capture-application-logs-app-service.4-view-live-application-logging-activity-with-the-log-streaming-service
 title: View live application logging with the log streaming service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: View live application logging with the log streaming service
   description: View live application logging with the log streaming service
-  ms.date: 08/15/2023
+  ms.date: 11/12/2024
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-view-live-application-logging-activity-with-the-log-streaming-service.md)]
+

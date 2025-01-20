@@ -2,6 +2,8 @@
 uid: learn.azure.create-your-first-speech-to-text-app.exercise-create-continuous-recognition-speech-to-text-app
 title: Exercise - Create a continuous-recognition speech to text application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a continuous-recognition speech to text application
   description: In this exercise, you'll create a continuous-recognition speech to text application.
   author: rmcmurray
@@ -15,3 +17,4 @@ interactive: bash
 durationInMinutes: 10
 content: |
   [!INCLUDE[](includes/7-exercise-create-continuous-recognition-speech-to-text-app.md)]
+

@@ -2,9 +2,11 @@
 uid: learn.wwl.multistage-reasoning-azure-databricks.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 08/12/2024
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: madiepev
   ms.topic: unit

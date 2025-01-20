@@ -3,10 +3,11 @@ uid: learn.wwl.explore-azure-functions
 metadata:
   title: Explore Azure Functions
   description: "Learn how Azure Functions can be a great solution for data processing, systems integration, and building simple APIs and microservices."
-  ms.date: 07/09/2024
+  ms.date: 12/06/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   - ai-learning-hub

@@ -1,4 +1,4 @@
-GitHub Copilot is an advanced AI-powered coding assistant designed that can dramatically enhance developer efficiency. GitHub Copilot saves time for developers, enabling them to concentrate on higher-level problem-solving and innovation by removing menial tasks off their plate and providing relevant code completion and generating entire blocks of code.
+GitHub Copilot is an advanced AI-powered coding assistant that can dramatically enhance developer efficiency. GitHub Copilot saves time for developers, enabling them to concentrate on higher-level problem-solving and innovation by removing menial tasks off their plate and providing relevant code completion and generating entire blocks of code.
 
 GitHub Copilot offers flexible interaction options tailored to your workflow. Whether through code completion, chat, or commands, Copilot meets you where you are, enhancing your development experience and productivity. Understanding these interaction modes is key to unlocking the full potential of GitHub Copilot and optimizing your coding workflow.
 

@@ -5,8 +5,8 @@ metadata:
   title: Design solutions for mitigating ransomware attacks, including prioritization of BCDR and privileged access
   description: "Learn Microsoft best practices for ransomware protection."
   ms.date: 09/26/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 10
 content: |

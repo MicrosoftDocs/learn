@@ -3,6 +3,8 @@ uid: learn.intro-to-azure-service-fabric.how-azure-service-fabric-works
 title: How Azure Service Fabric works
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Azure Service Fabric works
   description: Learn how Azure Service Fabric works, and how workloads are developed and deployed.
   ms.date: 01/03/2024
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-how-azure-service-fabric-works.md)]
+

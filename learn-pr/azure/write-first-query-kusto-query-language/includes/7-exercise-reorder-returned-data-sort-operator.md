@@ -40,7 +40,7 @@ Each region has unique weather patterns, so now you want to know which events in
 
     :::image type="content" source="../media/6-sort-2.png" alt-text="Screenshot of query results for two sort operators.":::
 
-1. Notice that now you've gotten a table with the same rows as the previous query, but sorted in a different order. Here, we first sort by the state name, starting with Alabama. Within results from the state of Alabama, the property-damage values are sorted in descending order.
+1. Notice that now you have a table with the same rows as the previous query, but sorted in a different order. Here, we first sort by the state name, starting with Alabama. Within results from the state of Alabama, the property-damage values are sorted in descending order.
 
 ## Use the `top` operator
 

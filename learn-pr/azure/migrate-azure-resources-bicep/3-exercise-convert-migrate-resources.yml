@@ -2,6 +2,8 @@
 uid: learn.azure.migrate-azure-resources-bicep.exercise-convert-migrate-resources
 title: Exercise - Convert and migrate resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Convert and migrate resources
   description: Learn how to export your Azure resources to JSON ARM templates and how to use the Bicep decompiler to convert the templates to Bicep files.
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-convert-migrate-resources.md)]
+

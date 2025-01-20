@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-geographically-distributed-application.1-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: In this unit, you'll learn about a business scenario that requires a robust, geographically distributed application architecture.
   ms.date: 03/17/2023

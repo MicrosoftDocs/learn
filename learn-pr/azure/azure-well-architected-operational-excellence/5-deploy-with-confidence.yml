@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-operational-excellence.deploy-with-confidence
 title: Deploy with confidence
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy with confidence
   description: Learn how to deploy with confidence to improve your operational excellence.
   ms.date: 12/05/2023
@@ -56,3 +58,4 @@ quiz:
     - content: 'Maintaining a separate repository for your DR environment'
       isCorrect: false
       explanation: "Incorrect. Maintaining a separate repository for your DR environment can lead to inconsistencies between environments, which can cause issues when deploying your DR environment."
+

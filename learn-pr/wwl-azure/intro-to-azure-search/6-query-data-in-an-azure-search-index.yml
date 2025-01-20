@@ -2,6 +2,8 @@
 uid: learn.azure-introduction-to-azure-search.6-query-data-in-an-azure-search-index
 title: Query data in an Azure AI Search index
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Query data in an Azure AI Search index
   description: Write simple search queries in the Search explorer, then append extra parameters to manipulate those results
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-query-data-in-an-azure-search-index.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.create-release-pipeline.explore-release-jobs
 title: Explore release jobs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore release jobs
   description: "Explore release jobs"
   ms.date: 05/28/2024

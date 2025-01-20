@@ -1,4 +1,5 @@
 
+
 Tailwind Traders is planning on making some significant changes to their governance solution. They would like your assistance with recommendations and questions. Here are the specific requirements:
 
 - **Consistency across subscriptions**. It appears each subscription has different policies for the creation of virtual machines. The IT department would like to standardize the policies across the Azure subscriptions.
@@ -8,4 +9,4 @@ Tailwind Traders is planning on making some significant changes to their governa
 
 ### Answer the following questions
 
-Choose the best response for each of the questions. Then select **Check your answers**.
+Choose the best response for each of the questions.

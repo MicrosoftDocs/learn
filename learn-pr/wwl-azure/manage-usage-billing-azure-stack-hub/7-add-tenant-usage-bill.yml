@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-usage-billing-for-azure-stack-hub.add-tenant-for
 title: Add a tenant for usage and billing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Add a tenant for usage and billing
   description: "Add a tenant for usage and billing"
   ms.date: 08/09/2022

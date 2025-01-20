@@ -2,6 +2,8 @@
 uid: learn.wwl.publish-container-image-to-azure-container-registry.discover
 title: Discover the Azure Container Registry
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover the Azure Container Registry
   description: "Discover the Azure Container Registry"
   ms.date: 07/15/2024

@@ -2,14 +2,17 @@
 uid: learn.wwl.detect-analyze-recognize-faces.detect-faces-computer-vision-service
 title: Detect faces with the Azure AI Vision service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Detect faces with the Azure AI Vision service
   description: Detect faces with the Azure AI Vision service
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 03/11/2024
+  ms.author: berryivor
+  ms.date: 12/13/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 4
 content: |
   [!include[](includes/4-detect-faces-computer-vision-service.md)]
+

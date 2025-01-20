@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.failback-from-to-production-site
 title: Failback from a disaster recovery to a production site
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Failback from a disaster recovery to a production site
   description: "Failback from a disaster recovery to a production site"
   ms.date: 12/08/2021

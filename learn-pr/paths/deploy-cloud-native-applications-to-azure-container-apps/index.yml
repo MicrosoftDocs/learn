@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.deploy-cloud-native-applications-to-azure-container-apps
 metadata:
-  title: Deploy cloud-native apps using Azure Container Apps
-  description: Learn how to build, deploy, scale, and manage containerized cloud-native apps using Azure Container Apps, Azure Container Registry, and Azure Pipelines.
+  title: Deploy cloud-native apps using Azure Container Apps AZ-2003
+  description: Learn how to build, deploy, scale, and manage containerized cloud-native apps using Azure Container Apps, Azure Container Registry, and Azure Pipelines. (AZ-2003)
   ms.date: 11/22/2023
   author: wwlpublish
   ms.author: cahowd

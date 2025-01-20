@@ -7,9 +7,6 @@ Understanding the dependencies between various configuration settings is key to 
 - Disabling storage autogrow isn't supported for servers with high availability enabled.
 - High availability isn't supported in the Burstable tier, although you can deploy the server into a specific availability zone.
 
-> [!NOTE]  
-> You cannot modify the connectivity mode after you deploy a server with public or private access (via VNet integration). However, in public access mode, you can enable or disable private endpoints as required and disable public access if needed.
-
 ### How to deploy an Azure Database for MySQL flexible server
 
 You can use several different methods to provision an Azure Database for MySQL flexible server. While you can use fully automated deployments, the most straightforward deployment method is to create an instance via the Azure portal, a graphical user interface (GUI). When you create an instance via the portal, you can configure a range of server settings, which can be divided into five groups: Basics, Compute and Storage, Networking, Security, and Tags. Each group and its corresponding settings options are presented on the page:
@@ -61,35 +58,32 @@ Before connecting to your flexible server, consider the network configuration yo
 
 For secure connections from Azure VMs or containerized workloads running in Azure, consider enabling private endpoints. Private endpoints allow you to connect securely to your flexible server over a private network, eliminating exposure to the public internet. Additionally, ensure that the network you're connecting from allows outbound traffic to Azure over TCP port 3306, which is required by an Azure Database for MySQL flexible server.
 
-> [!NOTE]  
-> You cannot modify the connectivity mode after deploying a server with public or private access (via VNet integration). However, in public access mode, you can enable or disable private endpoints as required and public access if needed.
-
 Because encryption is enabled by default for new deployments, you'll need to [download the public certificate](https://dl.cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem) installed on the server and use it when establishing a connection over TLS 1.2.
 
 After you address the networking and certificate requirements, you should be able to connect to the Azure Database for MySQL flexible server and query it in several different ways, including using:
 
 - Azure CLI (az mysql) or Azure Cloud Shell
   - Use the following command format in Azure CLI to connect:
-    `az mysql flexible-server connect --name <server-name> --user <username>@<server-name>`
+    `az mysql flexible-server connect --name <server-name> --user <username>`
 
 - mysql.exe command line utility
   - Use the following command format in the MySQL command-line tool to connect:
-    `mysql -h <server-name>.mysql.database.azure.com -u <username>@<server-name> -p`
+    `mysql -h <server-name>.mysql.database.azure.com -u <username> -p`
 
 - MySQL Workbench graphical tool
   - Use the following connection details in the MySQL Workbench graphical tool:
     - **Hostname**: `<server-name>.mysql.database.azure.com`
     - **Port**: 3306
-    - **Username**: `<username>@<server-name>`
+    - **Username**: `<username>`
     - **Password**: `<your-password>`
 
 - Azure Data Studio with the MySQL extension
   - Launch Azure Data Studio and make sure the MySQL extension is installed.
   - Select the **New Connection** icon or navigate to **File** > **New Query**.
-  - In the connection dialog box, fror **Connection type**, select **MySQL**.
+  - In the connection dialog box, for **Connection type**, select **MySQL**.
   - Specify the **Connection details**:
     - **Server name**: `<server-name>.mysql.database.azure.com`
-    - **Username**: `<username>@<server-name>`
+    - **Username**: `<username>`
     - **Password**: `<your-password>` - Alternatively, you can log in using Microsoft Entra ID authentication.
     - **Port**: 3306
     - **Database name** (Optional): Specify a specific database name to connect to, or leave blank to list all databases
@@ -100,28 +94,34 @@ After you address the networking and certificate requirements, you should be abl
   - Optionally, you can save the connection details for future use by selecting **Save Password**.
   - Select **Connect** to establish the connection to your Azure Database for MySQL flexible server.
 
-- Many programming languages, such as Python, PHP, C#, C++, Java, JavaScript, Rust, Go, and Ruby.
+- Many programming languages, such as PHP, Java, Python, C#, C++, JavaScript, Rust, Go, and Ruby.
 
-Here's a basic example of connecting to an Azure Database for MySQL flexible server using Python's `mysql-connector` library:
+Here's a basic example of connecting to an Azure Database for MySQL flexible server using PHP's **MySQL Improved extension** (mysqli) class:
 
-```python
-import mysql.connector
+```php
+<?php
+$host = '<server-name>.mysql.database.azure.com';
+$username = '<username>';
+$password = '<your-password>';
+$db_name = '<database-name>';
 
-conn = mysql.connector.connect(
-    host="<server-name>.mysql.database.azure.com",
-    user="<username>@<server-name>",
-    password="<your-password>",
-    database="<database-name>",
-    ssl_ca="path/to/BaltimoreCyberTrustRoot.crt.pem"
-)
+//Establish the connection
+$conn = mysqli_init();
+mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306);
+if (mysqli_connect_errno($conn)) {
+    die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
 
-cursor = conn.cursor()
-cursor.execute("SELECT DATABASE()")
-result = cursor.fetchone()
-print(f"Connected to database: {result}")
+//Run a query
+printf("Reading data from table: \n");
+$res = mysqli_query($conn, 'SELECT * FROM Products');
+while ($row = mysqli_fetch_assoc($res)) {
+    var_dump($row);
+}
 
-cursor.close()
-conn.close()
+//Close the connection
+mysqli_close($conn);
+?>
 ```
 
 > [!NOTE]  

@@ -2,6 +2,8 @@
 uid: learn.wwl.select-sort-measure-objects-use-pipeline.sort-group-objects-property-pipeline
 title: Sort and group objects by property in the pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Sort and group objects by property in the pipeline
   description: "Sort and group objects by property in the pipeline"
   ms.date: 05/30/2024

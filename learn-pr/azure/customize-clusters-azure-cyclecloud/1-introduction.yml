@@ -2,6 +2,8 @@
 uid: learn.azure.customize-clusters-azure-cyclecloud.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: This unit is an introduction to the course.

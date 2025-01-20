@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-llmops-azure-databricks.deployments-overview
 title: Understand model deployments
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand model deployments
   description: "Understand model deployments"
   ms.date: 08/23/2024

@@ -132,8 +132,6 @@ Over time, if you realize you need more compute power to keep up with demand, yo
 
 While deployment is in progress, **Deployment details** displays the resources that are created. When deployment completes, optionally, select **Pin to dashboard**, then select **Go to resource**. The **Overview** pane for your SQL database server appears.
 
-   :::image type="content" source="../media/3-notifications-complete.png" alt-text="Screenshot of the Azure portal showing the Overview pane of a newly created SQL database." lightbox="../media/3-notifications-complete.png":::
-
    Your **Logistics** SQL database has a unique name based on your server name and login credentials.
 
 ## Set the server firewall

@@ -2,6 +2,8 @@
 uid: learn.oxford.deploy-prebuilt-module-edge-device.2-what-is-prebuilt-module
 title: Use a pre-built module to generate test data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use a pre-built module to generate test data
   description: In this unit, we provide a definition of a pre-built module
   ms.date: 11/27/2023
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/2-what-is-prebuilt-module.md)]
+

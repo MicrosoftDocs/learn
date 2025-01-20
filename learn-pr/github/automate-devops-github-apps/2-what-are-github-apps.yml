@@ -2,6 +2,8 @@
 uid: learn.github.automate-devops-github-apps.2-what-are-github-apps
 title: What are GitHub Apps?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What are GitHub Apps?
   description: Learn to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
   ms.date: 04/14/2023

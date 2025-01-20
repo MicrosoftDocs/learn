@@ -36,15 +36,15 @@ Identifying and resolving internal risk activities and compliance issues with in
 
 Insider risk management can help you detect, investigate, and take action to mitigate internal risks in your organization in several common scenarios. These scenarios include data theft by employees, the intentional, or unintentional leak of confidential information, offensive behavior, and more.
 
-### Integration with Microsoft Copilot for Security
+### Integration with Microsoft Security Copilot
 
-Microsoft Purview Insider Risk Management supports integration with Microsoft Copilot for Security, through the standalone and embedded experiences.
+Microsoft Purview Insider Risk Management supports integration with Microsoft Security Copilot, through the standalone and embedded experiences.
 
 To experience Copilot integration, organizations must be onboarded to Copilot, have enabled Copilot to access data from Microsoft 365 services, and users must have the appropriate role permissions.
 
 The Microsoft Purview capabilities, that you can view in the standalone experience by selecting the prompt icon and selecting all capabilities, are built-in prompts that you can use, but you can also enter your own prompts based on the capabilities supported.
 
-:::image type="content" source="../media/purview-capabilities.png" lightbox="../media/purview-capabilities.png" alt-text="Screen capture of the Microsoft Purview capabilities available Microsoft Copilot for Security.":::
+:::image type="content" source="../media/purview-capabilities.png" lightbox="../media/purview-capabilities.png" alt-text="Screen capture of the Microsoft Purview capabilities available Microsoft Security Copilot.":::
 
 In the embedded experience, Copilot in Microsoft Purview Insider Risk Management supports alert summarization. To access Copilot from within Microsoft Purview Insider Risk Management, navigate to the alerts queue to select the alert you want to review. Information about the alert and the option to summarize the alert are displayed. You select Summarize to have Copilot generate the alert summary.
 

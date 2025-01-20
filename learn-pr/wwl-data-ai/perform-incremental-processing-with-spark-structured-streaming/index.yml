@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform incremental processing with spark structured streaming
   description: "Learn about spark structured streaming and ways to optimize and use it to populate destination objects"
   ms.date: 7/25/2024
@@ -42,3 +44,4 @@ units:
 - learn.wwl.perform-incremental-processing-with-spark-structured-streaming.summary
 badge:
   uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.badge
+

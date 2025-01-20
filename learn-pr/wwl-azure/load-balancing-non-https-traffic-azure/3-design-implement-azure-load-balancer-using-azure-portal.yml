@@ -2,6 +2,8 @@
 uid: learn.wwl.load-balancing-non-https-traffic-azure.design-implement-azure-load-balancer-using-azure-portal
 title: Design and implement Azure load balancer using the Azure portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design and implement Azure load balancer using the Azure portal
   description: "Design and implement Azure load balancer using the Azure portal"
   ms.date: 10/07/2024

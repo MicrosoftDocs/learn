@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-secure-access-azure-repos-from-pipelines.lab-integrate-azure-key-vault-with-azure-pipelines
 title: Lab - Integrate Azure Key Vault with Azure Pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Lab - Integrate Azure Key Vault with Azure Pipelines
   description: "This unit contains a hands-on exercise. Learners can use the exercise to configure secure access to Azure Repos from pipelines."
   ms.date: 6/14/2023

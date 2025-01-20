@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-azure-stream-analytics-azure-functions.examine-features-characteristics-of
 title: Examine features and characteristics of Azure Functions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine features and characteristics of Azure Functions
   description: This content is part of Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions.
   ms.date: 03/13/2024

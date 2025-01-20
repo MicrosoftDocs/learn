@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-package-dependencies.what-is-dependency-management
 title: What is dependency management?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is dependency management?
   description: "What is dependency management?"
   ms.date: 05/07/2024

@@ -2,14 +2,16 @@
 uid: learn.wwl.design-authentication-authorization-solutions.design-service-principles
 title: Design service principals for applications
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design service principals for applications
   description: "Design service principals for applications"
-  ms.date: 03/06/2024
+  ms.date: 12/31/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 4
+durationInMinutes: 9
 content: |
   [!include[](includes/9-two-design-service-principals.md)]

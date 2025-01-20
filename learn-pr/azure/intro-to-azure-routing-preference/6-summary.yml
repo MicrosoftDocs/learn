@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-routing-preference.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: summary
   description: Review what you learned in this module about Azure routing preference.
   ms.date: 04/08/2024

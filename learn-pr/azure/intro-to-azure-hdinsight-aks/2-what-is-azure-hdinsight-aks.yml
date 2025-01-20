@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-hdinsight-aks.2-what-is-azure-hdinsight-aks  
 title: Technical architecture of HDInsight on AKS
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: Technical architecture of HDInsight on AKS
   description: Technical architecture of HDInsight on AKS
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-hdinsight-aks.md)]
+

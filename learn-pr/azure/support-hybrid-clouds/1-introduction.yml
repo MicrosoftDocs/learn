@@ -2,6 +2,8 @@
 uid: learn.azure.support-hybrid-clouds.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to Support data classification with private and hybrid clouds.
   ms.date: 07/22/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 1 
 content: |
   [!include[](includes/1-introduction.md)] 
+

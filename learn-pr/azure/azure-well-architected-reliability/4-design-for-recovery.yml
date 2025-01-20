@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-reliability.design-for-recovery
 title: Design for recovery
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for recovery
   description: Learn strategies for designing your Azure workload to support recovery.
   ms.date: 12/18/2023
@@ -56,3 +58,4 @@ quiz:
     - content: "Use Azure Advisor to identify potential performance issues with the application"
       isCorrect: false
       explanation: "Azure Advisor can be used to identify potential performance issues, but it can't perform self-healing actions."
+

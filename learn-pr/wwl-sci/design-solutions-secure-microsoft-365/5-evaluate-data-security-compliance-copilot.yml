@@ -5,8 +5,8 @@ metadata:
   title:  Evaluate data security and compliance controls in Microsoft Copilot for Microsoft 365 services
   description: "SC-100 preparatory unit on the topic: Evaluate data security and compliance controls in Microsoft Copilot for Microsoft 365 services."
   ms.date: 5/21/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 10
 content: |

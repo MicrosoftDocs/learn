@@ -2,6 +2,8 @@
 uid: learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure.exercise4
 title: Exercise - Back up virtual machines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Back up virtual machines
   description: "Exercise - Back up Linux virtual machines"
   ms.date: 07/30/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.define-data-flows
 title: Define data flows
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Define data flows
   description: "Define data flows"
   ms.date: 10/06/2023

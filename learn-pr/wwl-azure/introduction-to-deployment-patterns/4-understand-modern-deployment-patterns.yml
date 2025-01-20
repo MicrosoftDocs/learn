@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-deployment-patterns.understand-modern-deployment-patterns
 title: Understand modern deployment patterns
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand modern deployment patterns
   description: "Understand modern deployment patterns"
   ms.date: 05/06/2024

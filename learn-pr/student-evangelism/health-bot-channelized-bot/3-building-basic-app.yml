@@ -2,6 +2,8 @@
 uid: learn.health-bot-channelized-bot.3-building-a-basic-app
 title: Build a basic app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build a basic app
   description: In this unit, you'll learn how to build a basic app with App Studio for Teams.
   author: shreyan1999

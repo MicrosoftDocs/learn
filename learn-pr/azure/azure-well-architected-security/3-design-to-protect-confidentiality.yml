@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-security.design-to-protect-confidentiality
 title: Design to protect confidentiality
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design to protect confidentiality
   description: Learn how to design your workload to protect confidential data safely and securely.
   ms.date: 12/04/2023

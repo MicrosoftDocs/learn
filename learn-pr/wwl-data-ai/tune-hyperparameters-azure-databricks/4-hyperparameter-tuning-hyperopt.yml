@@ -2,6 +2,8 @@
 uid: learn.wwl.tune-hyperparameters-azure-databricks.hyperparameter-tuning-hyperopt
 title: Hyperparameter tuning with Hyperopt
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Hyperparameter tuning with Hyperopt
   description: "Hyperparameter tuning with Hyperopt"
   ms.date: 03/27/2023

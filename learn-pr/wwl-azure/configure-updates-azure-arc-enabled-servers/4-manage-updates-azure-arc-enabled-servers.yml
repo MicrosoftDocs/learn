@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-updates-azure-arc-enabled-servers.manage-updates-azure-arc-enabled-servers
 title: How to manage updates for Azure Arc-enabled servers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to manage updates for Azure Arc-enabled servers
   description: "How to manage updates for Azure Arc-enabled servers"
   ms.date: 06/13/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.oxford.run-cognitive-services-iot-edge
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Run Azure AI services on IoT Edge"
   description: Implement a cognitive service for performing language detection on an IoT Edge device.
   ms.date: 07/08/2024
@@ -44,3 +46,4 @@ units:
 - learn.oxford.run-cognitive-services-iot-edge.exercise-test-cognitive-service
 - learn.oxford.run-cognitive-services-iot-edge.knowledge-check
 - learn.oxford.run-cognitive-services-iot-edge.summary
+

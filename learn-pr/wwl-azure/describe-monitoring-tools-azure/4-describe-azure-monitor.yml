@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-monitoring-tools-azure.describe-azure-monitor
 title: Describe Azure Monitor
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure Monitor
   description: "Describe Azure Monitor"
   ms.date: 09/19/2024

@@ -8,7 +8,7 @@
 
 1. After you're signed in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, the Concierge Subscription should be in this list.
 
-1. Get the subscription ID. The following command lists your subscriptions and their IDs in an easy-to-read table format. The subscription ID is the second column. Look for `Concierge Subscription` and copy the second column. It looks something like `cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0`.
+1. Get the subscription ID. The following command lists your subscriptions and their IDs in an easy-to-read table format. The subscription ID is the second column. Look for `Concierge Subscription` and copy the second column. It looks something like `aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e`.
 
     ```powershell
     Get-AzSubscription

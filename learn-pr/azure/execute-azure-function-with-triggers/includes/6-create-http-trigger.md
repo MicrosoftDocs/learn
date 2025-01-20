@@ -26,7 +26,7 @@ Now that we've created the HTTP trigger, let's get the function URL so we can be
 
 1. On the top menu bar, select **Get Function Url**. The **Get Function Url** dialog appears.
 
-1. In the **URL** field, select the **Copy to clipboard** icon.
+1. In the **default (Function key)** field, select the **Copy to clipboard** icon.
 
 ## Issue a GET request to your HTTP trigger
 

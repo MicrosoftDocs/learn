@@ -2,12 +2,15 @@
 uid: learn.publish-manage-apis-with-azure-api-management.4-import-and-publish-an-api
 title: Import and publish an API
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Import and publish an API
   description: Import and publish an API
-  ms.date: 10/30/2023
+  ms.date: 12/05/2024
   author: dlepow
   ms.author: danlep
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-import-and-publish-an-api.md)]
+

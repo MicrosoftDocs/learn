@@ -2,6 +2,8 @@
 uid: learn.wwl.update-infrastructure-for-azure-stack-hub.update-azure-ad-home-director
 title: Update Microsoft Entra Home Director
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Update Microsoft Entra Home Director
   description: "Update Microsoft Entra Home Director"
   ms.date: 03/29/2022
@@ -13,3 +15,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/5-update-azure-home-director.md)]
+

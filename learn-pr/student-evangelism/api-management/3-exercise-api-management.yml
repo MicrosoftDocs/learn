@@ -2,10 +2,13 @@
 uid: learn.api-management.exercise-api-management
 title: Exercise - deploy API Management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - deploy API Management
   description: Exercise to deploy Azure API Management by using an Azure Sample.
-  author: softchris
-  ms.author: chnoring
+  author: dlepow
+  ms.author: danlep
+  manager: susanpotter
   ms.date: 04/14/2020
   ms.topic: unit
 durationInMinutes: 5

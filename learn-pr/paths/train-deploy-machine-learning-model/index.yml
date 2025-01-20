@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.train-deploy-machine-learning-model
 metadata:
-  title: Train and manage a machine learning model with Azure Machine Learning
-  description: To train a machine learning model with Azure Machine Learning, you need to make data available and configure compute. After training your model and tracking model metrics with MLflow, you can decide to deploy your model to an endpoint for real-time predictions.
+  title: Train and manage a machine learning model with Azure Machine Learning DP-3007
+  description: To train a machine learning model with Azure Machine Learning, you need to make data available and configure compute. After training your model and tracking model metrics with MLflow, you can decide to deploy your model to an endpoint for real-time predictions. (DP-3007)
   ms.date: 12/12/2023
   author: wwlpublish
   ms.author: madiepev

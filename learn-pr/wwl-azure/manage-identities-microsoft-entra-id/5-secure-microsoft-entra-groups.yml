@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-identities-microsoft-entra-id.secure-microsoft-entra-groups
 title: Secure Microsoft Entra groups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure Microsoft Entra groups
   description: "Secure Microsoft Entra groups"
   ms.date: 07/03/2024

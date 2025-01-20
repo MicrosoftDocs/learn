@@ -2,6 +2,8 @@
 uid: learn.introduction-to-device-provisioning-service.when-to-use-device-provisioning-service
 title: When to use Device Provisioning Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to use Device Provisioning Service
   description: "When to use Device Provisioning Service"
   ms.date: 12/15/2023

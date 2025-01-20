@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.load-balance-web-traffic-with-application-gateway
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Load balance your web service traffic with Application Gateway
   description: In this module, you'll learn to improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
   manager: kumud
@@ -40,3 +42,4 @@ units:
 - learn.load-balance-web-traffic-with-application-gateway.7-summary
 badge:
   uid: learn.load-balance-web-traffic-with-application-gateway.badge
+

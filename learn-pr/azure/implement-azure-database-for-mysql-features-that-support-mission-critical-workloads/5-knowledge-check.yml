@@ -2,6 +2,8 @@
 uid: learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "This unit is a knowledge check for implementing Azure Database for MySQL - Flexible Server features that support mission-critical workloads."
   ms.date: 08/28/2024
@@ -9,7 +11,7 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 5
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -82,3 +84,4 @@ quiz:
     - content: "Add additional IOPS."
       isCorrect: false
       explanation: "While IOPS do help scale, they don't help with CPU and RAM usage from queries."
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.collaborate-pull-requests-azure-repos.collaborate-pull-requests
 title: Collaborate with pull requests
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Collaborate with pull requests
   description: "Collaborate with pull requests"
   ms.date: 05/24/2024

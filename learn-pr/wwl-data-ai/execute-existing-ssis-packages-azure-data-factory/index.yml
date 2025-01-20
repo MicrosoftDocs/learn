@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Execute existing SSIS packages in Azure Data Factory
   description: Execute existing SSIS packages in Azure Data Factory or Azure Synapse Pipeline
   ms.date: 06/07/2023
@@ -48,3 +50,4 @@ units:
 - learn.wwl.execute-existing-ssis-packages-azure-data-factory.summary
 badge:
   uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.badge
+

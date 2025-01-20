@@ -1,11 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-bicep
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Bicep
   description: "Implement Bicep"
   ms.date: 05/23/2024
   author: wwlpublish
-  ms.author: yasa
+  ms.author: lumac
   ms.topic: module
   ms.custom:
   - N/A

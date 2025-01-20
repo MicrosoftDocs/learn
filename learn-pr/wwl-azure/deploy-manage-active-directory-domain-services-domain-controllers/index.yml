@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy and manage Active Directory Domain Services domain controllers
   description: "This module introduces you to the topology of domain controllers within an Active Directory environment. It also starts you down the path of deploying, managing, and migrating a domain controller between servers."
   ms.date: 06/18/2024

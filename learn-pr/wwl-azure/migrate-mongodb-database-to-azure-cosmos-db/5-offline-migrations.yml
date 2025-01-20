@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.offline-migrations
 title: Offline migrations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Offline migrations
   description: "Offline migrations"
   ms.date: 02/06/2023

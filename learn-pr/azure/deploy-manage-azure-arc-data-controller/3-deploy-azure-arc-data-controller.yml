@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-manage-azure-arc-data-controller.deploy-azure-arc-data-controller
 title: Deploy the Azure Arc data controller
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy Azure Arc data controller
   description: Demonstrates how to deploy Azure Arc data controller.
   ms.date: 07/22/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/deploy-azure-arc-data-controller.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.8-selecting-the-right-mpi-library
 title: Select the right MPI library
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Select the right MPI library
   description: Discussion about what MPI library to use when you're running optimized HPC applications.
   ms.date: 08/05/2024

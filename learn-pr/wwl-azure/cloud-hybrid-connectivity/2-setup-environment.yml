@@ -2,6 +2,8 @@
 uid: learn.wwl.cloud-hybrid-connectivity.setup-troubleshooting-environment
 title: Set up a troubleshooting environment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set up a troubleshooting environment
   description: "Set up a troubleshooting environment"
   ms.date: 04/27/2023

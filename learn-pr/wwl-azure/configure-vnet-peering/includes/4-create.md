@@ -13,7 +13,7 @@ There are a few points to review before we look at how to create the peering in 
 - Initially, the virtual machines in your virtual networks can't communicate with each other. After the peering is established, the machines can communicate within the peered network based on your configuration settings.
 
 
-## How to connect virtual networks across Azure regions with Azure Global VNet peering 
+## How to connect virtual networks across Azure regions with Azure Global virtual network peering 
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/pSqDlQlcsLo" title="How to move Azure Storage Blobs between containers" allowfullscreen></iframe>
 

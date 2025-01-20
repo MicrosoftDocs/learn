@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.machine-learning-azure-databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Train a machine learning model in Azure Databricks
   description: Learn how to train machine learning models using Spark and the MLlib library in Azure Databricks.
   author: wwlpublish
@@ -43,3 +45,4 @@ units:
 - learn.wwl.machine-learning-azure-databricks.summary
 badge:
   uid: learn.wwl.machine-learning-azure-databricks.badge
+

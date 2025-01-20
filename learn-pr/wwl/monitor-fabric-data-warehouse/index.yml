@@ -3,9 +3,9 @@ uid: learn.wwl.monitor-fabric-data-warehouse
 metadata:
   title: Monitor a Microsoft Fabric data warehouse
   description: "A data warehouse is a vital component of an enterprise analytics solution. It's important to learn how to monitor a data warehouse so you can better understand the activity that occurs in it."
-  ms.date: 04/02/2024
+  ms.date: 11/10/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jupadrao
   ms.topic: module
   ms.service: fabric
 title: Monitor a Microsoft Fabric data warehouse

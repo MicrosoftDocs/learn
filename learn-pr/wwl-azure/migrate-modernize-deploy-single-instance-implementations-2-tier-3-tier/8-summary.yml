@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 01/09/2024

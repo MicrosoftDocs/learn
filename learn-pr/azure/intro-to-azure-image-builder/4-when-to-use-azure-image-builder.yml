@@ -2,6 +2,8 @@
 uid: learn.introduction-to-azure-image-builder.when-to-use-azure-image-builder
 title: When to use Azure Image Builder?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to use Azure Image Builder?
   description: Learn about when to use Azure Image Builder (AIB). See a list that describes the strengths and limitations of AIB.
   ms.date: 08/15/2024
@@ -13,3 +15,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-when-to-use-azure-image-builder.md)]
+

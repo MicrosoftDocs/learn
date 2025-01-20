@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Modernize and explore Azure Center for SAP solutions
   description: 'Explore Azure Center for SAP Solutions (ACSS) to deploy and manage SAP workloads more efficiently. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/09/2024
@@ -42,3 +44,4 @@ units:
 - learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.summary
 badge:
   uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.badge
+

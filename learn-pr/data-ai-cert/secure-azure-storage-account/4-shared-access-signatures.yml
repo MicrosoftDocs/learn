@@ -2,6 +2,8 @@
 uid: learn.azure.secure-azure-storage-account.shared-access-signatures
 title: Understand shared access signatures
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand shared access signatures
   description: "Understand shared access signatures"
   ms.date: 09/02/2022

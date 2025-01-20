@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-provision-environments.set-up-run-functional-tests
 title: Set up and run functional tests
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set up and run functional tests
   description: "Set up and run functional tests"
   ms.date: 05/06/2024

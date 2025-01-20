@@ -11,9 +11,7 @@ Most of the functionality of data pipelines in Microsoft Fabric comes from Azure
 
 There are a few ways to launch the data pipeline editor.
 
-- **From the workspace:** Select **+ New**, then select **Data pipeline**. If it's not visible in the list, select **More options**, then find **Data pipeline** under the **Data Factory** section. 
-    
-    :::image type="content" border="false" source="../media/3-data-pipeline-create.gif" alt-text="Animated GIF showing how to launch Data Pipeline from the workspace.":::
+- **From the workspace:** Select **+ New**, then select **Data pipeline**. If it's not visible in the list, select **More options**, then find **Data pipeline** under the **Get data** section. 
 
 - **From the warehouse asset -** Select **Get Data**, and then **New data pipeline**. 
 

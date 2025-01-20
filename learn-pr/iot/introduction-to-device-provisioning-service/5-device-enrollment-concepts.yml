@@ -2,6 +2,8 @@
 uid: learn.introduction-to-device-provisioning-service.enrollment-concepts
 title: Examine device enrollment concepts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine device enrollment concepts
   description: "Examine device enrollment concepts"
   ms.date: 12/15/2023

@@ -2,6 +2,8 @@
 uid: learn-wwl.explore-security-practices-azure-sql-database.explore-advanced-data-security
 title: Explore advanced data security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore advanced data security
   description: "Learn the features and tools to enable advanced data security in Azure SQL Database."
   ms.date: 09/24/2024

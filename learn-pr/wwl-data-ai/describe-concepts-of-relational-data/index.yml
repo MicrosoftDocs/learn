@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-concepts-of-relational-data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe concepts of relational data
   description: "This content is a part of Describe concepts of relational data."
   ms.date: 03/18/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-azure-kubernetes-service-deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan an Azure Kubernetes Service deployment
   description: In this module, you learn about the core Kubernetes infrastructure components, including control plane nodes, node pools, and workload resources such as pods, deployments, and sets.
   ms.date: 04/23/2024
@@ -39,3 +41,4 @@ units:
 - learn.wwl.plan-azure-kubernetes-service-deployment.summary
 badge:
   uid: learn.wwl.plan-azure-kubernetes-service-deployment.badge
+

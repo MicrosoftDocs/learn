@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-pass-through-authentication
 title: Microsoft Entra pass-through authentication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Microsoft Entra pass-through authentication
   description: "Microsoft Entra pass-through authentication"
-  ms.date: 09/04/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

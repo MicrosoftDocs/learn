@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-data-share.describe
 title: Describe Azure Data Share
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure Data Share
   description: "Describe Azure Data Share"
   ms.date: 01/05/2022

@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.set-alerts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set and view alerts in your Log Analytics workspace
   description: Set and view alerts fin your Log Analytics workspace.
   ms.date: 03/01/2023
@@ -11,3 +13,4 @@ title: Set and view alerts in your Log Analytics workspace
 durationInMinutes: 7
 content: |
   [!include[](includes/3b-set-alerts.md)]
+

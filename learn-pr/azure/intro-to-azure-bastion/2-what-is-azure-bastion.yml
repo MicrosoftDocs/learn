@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-bastion.2-what-is-azure-bastion  
 title: What is Azure Bastion?  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure Bastion?
   description: What is Azure Bastion?
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-is-azure-bastion.md)]
+

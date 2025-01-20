@@ -2,6 +2,8 @@
 uid: learn.azure.create-batch-account-using-azure-portal.azure-batch-security
 title: Consider features for Azure Batch security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Consider features for Azure Batch security
   description: Learn about implementing security for Azure Batch applications.
   ms.date: 08/05/2024

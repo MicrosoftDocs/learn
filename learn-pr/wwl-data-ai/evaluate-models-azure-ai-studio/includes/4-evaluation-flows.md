@@ -1,10 +1,10 @@
-When you want to create a custom copilot, you use prompt flow to develop the chat application. You can evaluate the performance of a copilot by evaluating the responses after running your flow.
+When you want to create a generative AI app, you use prompt flow to develop the chat application. You can evaluate the performance of an app by evaluating the responses after running your flow.
 
 ## Test your flow with individual prompts
 
 During active development, you can test the **chat flow** you're creating by using the **chat** feature when you have a compute session running:
 
-:::image type="content" source="../media/chat-flow.png" alt-text="Screenshot of chatting within a prompt flow in the Azure AI Studio." lightbox="../media/chat-flow.png":::
+:::image type="content" source="../media/chat-flow.png" alt-text="Screenshot of chatting within a prompt flow in the Azure AI Foundry portal." lightbox="../media/chat-flow.png":::
 
 When you test your flow with an individual prompt in the chat window, your flow runs with your provided input. After it successfully runs, a response is shown in the chat window. You can also explore the output of each individual node of your flow to understand how the final response was constructed:
 
@@ -39,13 +39,13 @@ The built-in or **Microsoft-curated metrics** include the following metrics:
 To evaluate your chat flow with the built-in automated evaluations, you need to:
 
 1. Create a test dataset.
-1. Create a new automated evaluation in the Azure AI Studio.
+1. Create a new automated evaluation in the Azure AI Foundry portal.
 1. Select a flow or a dataset with model generated outputs.
 1. Select the metrics you want to evaluate on.
 1. Run the evaluation flow.
 1. Review the results.
 
-:::image type="content" source="../media/metric-dashboard.png" alt-text="Screenshot of the metric dashboard in the Azure AI Studio." lightbox="../media/metric-dashboard.png":::
+:::image type="content" source="../media/metric-dashboard.png" alt-text="Screenshot of the metric dashboard in the Azure AI Foundry portal." lightbox="../media/metric-dashboard.png":::
 
 > [!Tip]
 > Learn more about [evaluation and monitoring metrics](/azure/ai-studio/concepts/evaluation-metrics-built-in?azure-portal=true)
@@ -73,7 +73,7 @@ Assign each response a score of 1 to 5 for user satisfaction, with 5 being the h
 
 After creating an evaluation flow, you can evaluate a chat flow by providing a test dataset and running the evaluation flow.
 
-:::image type="content" source="../media/custom-evaluation-tool.png" alt-text="Screenshot of an evaluation flow in the Azure AI Studio." lightbox="../media/custom-evaluation-tool.png":::
+:::image type="content" source="../media/custom-evaluation-tool.png" alt-text="Screenshot of an evaluation flow in the Azure AI Foundry portal." lightbox="../media/custom-evaluation-tool.png":::
 
 When you use a language model in an evaluation flow, you can review the results in the output trace:
 
@@ -82,4 +82,4 @@ When you use a language model in an evaluation flow, you can review the results 
 Additionally, you can add a Python node in the evaluation flow to aggregate the results for all prompts in your test dataset and return an overall metric.
 
 > [!Tip]
-> Learn how to [develop an evaluation flow in the Azure AI Studio.](/azure/ai-studio/how-to/flow-develop-evaluation?azure-portal=true)
+> Learn how to [develop an evaluation flow in the Azure AI Foundry portal.](/azure/ai-studio/how-to/flow-develop-evaluation?azure-portal=true)

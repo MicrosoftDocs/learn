@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-multi-tenancy-for-azure-stack-hub.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 10/26/2022

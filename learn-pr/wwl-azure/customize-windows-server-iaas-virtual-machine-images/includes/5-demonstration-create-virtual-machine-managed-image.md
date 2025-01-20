@@ -1,5 +1,3 @@
-
-
 In this demonstration, you'll learn to:
 
 - Create a VM from a managed image.

@@ -2,6 +2,8 @@
 uid: learn.develop-apps-with-azure-database-mysql.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge Check for Develop applications with Azure Database for MySQL - Flexible Server module.
@@ -70,3 +72,4 @@ quiz:
     - content: "Business Critical"
       isCorrect: false
       explanation: "Try again. The Business Critical tier is designed for high-performance database workloads. It may not be a cost-effective option for simple websites or applications."
+

@@ -5,4 +5,4 @@ One scenario you're working to resolve involves the manufacturing division. They
 
 ### Answer the following questions
 
-Choose the best response for each of the questions. Then select **Check your answers**.
+Choose the best response for each question.

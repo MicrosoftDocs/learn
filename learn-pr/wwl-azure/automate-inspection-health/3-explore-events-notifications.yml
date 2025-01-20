@@ -2,6 +2,8 @@
 uid: learn.wwl.automate-inspection-of-health.explore-events-notifications
 title: Explore events and notifications
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore events and notifications
   description: "Explore events and notifications"
   ms.date: 05/28/2024

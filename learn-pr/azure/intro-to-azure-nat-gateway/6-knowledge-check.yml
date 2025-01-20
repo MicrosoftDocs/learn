@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-azure-nat-gateway.6-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: A knowledge check unit.
@@ -57,3 +59,4 @@ quiz:
     - content: "You don’t need to create both objects. Only one object is mandatory."
       isCorrect: true
       explanation: "Correct. Azure NAT Gateway requires that you create at least one IP object—address or prefix."
+

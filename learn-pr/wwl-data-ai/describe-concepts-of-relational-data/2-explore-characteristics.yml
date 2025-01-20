@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-concepts-of-relational-data.explore-characteristics
 title: Explore the characteristics of relational data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the characteristics of relational data
   description: "Explore the characteristics of relational data"
   ms.date: 03/18/2024

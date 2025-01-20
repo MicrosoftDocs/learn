@@ -8,7 +8,6 @@ metadata:
   author: alfredodeza
   ms.author: alfredodeza
   ms.topic: module
-  ms.service: azure-python
 title: Advanced testing with pytest
 summary: Improve multi-input tests with parametrize and use pytest fixtures for reusable code.
 abstract: |

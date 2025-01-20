@@ -2,6 +2,8 @@
 uid: learn.wwl.microsoft-learn-for-educator-program-open-house.define-resources-benefits-my-students
 title: Define the resources and benefits for my students
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Define the resources and benefits for my students
   description: "Define the resources and benefits for my students"
   ms.date: 07/19/2024

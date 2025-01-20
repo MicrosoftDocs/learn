@@ -2,6 +2,8 @@
 uid: learn.wwl.azure-event-hubs.perform-common-operations-client-library
 title: Perform common operations with the Event Hubs client library
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform common operations with the Event Hubs client library
   description: "Perform common operations with the Event Hubs client library"
   ms.date: 07/17/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.learning-path-best-practices
 title: Learning path best practices
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Learning path best practices
   description: "Learning path best practices"
   ms.date: 05/23/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-mysql-storage-engine.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 11/08/2022

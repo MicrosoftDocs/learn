@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-azure-storage.explore-network-file-system-v-4-1-volumes-azure-netapp-files
 title: Explore NFS v4.1 volumes on Azure NetApp Files
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore NFS v4.1 volumes on Azure NetApp Files
   description: "Explore NFS v4.1 volumes on Azure NetApp Files"
   ms.date: 01/09/2024

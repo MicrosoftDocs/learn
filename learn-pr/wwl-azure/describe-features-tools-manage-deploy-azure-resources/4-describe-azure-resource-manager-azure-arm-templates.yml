@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-features-tools-manage-deploy-azure-resources.describe-azure-resource-manager-azure-arm-templates
 title: Describe Azure Resource Manager and Azure ARM templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure Resource Manager and Azure ARM templates
   description: "Describe Azure Resource Manager and Azure ARM templates"
   ms.date: 09/19/2024

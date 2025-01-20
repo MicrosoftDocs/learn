@@ -2,9 +2,9 @@ Microsoft Intune comes pre-built with device profiles that allow for common conf
 
 ### Learn more
 
- -  [What's new in Microsoft Intune](/intune/fundamentals/whats-new)
+ -  [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new)
  -  [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference)
- -  [Use a custom device profile to create a WiFi profile with a pre-shared key – Intune](/intune/wi-fi-profile-shared-key)
- -  [Use and manage Android Enterprise devices with OEMConfig in Microsoft Intune](/intune/configuration/android-oem-configuration-overview)
- -  [Use custom settings for iOS and iPadOS devices in Microsoft Intune](/intune/custom-settings-ios)
- -  [Use custom settings for macOS devices in Microsoft Intune](/intune/custom-settings-macos)
+ -  [Use a custom device profile to create a WiFi profile with a pre-shared key – Intune](/mem/intune/configuration/wi-fi-profile-shared-key)
+ -  [Use and manage Android Enterprise devices with OEMConfig in Microsoft Intune](/mem/intune/configuration/android-oem-configuration-overview)
+ -  [Use custom settings for iOS and iPadOS devices in Microsoft Intune](/mem/intune/configuration/custom-settings-ios)
+ -  [Use custom settings for macOS devices in Microsoft Intune](/mem/intune/configuration/custom-settings-macos)

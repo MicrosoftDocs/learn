@@ -6,11 +6,11 @@ Here, you'll explore how to write more complex Lucene queries. You'll then impro
 
 Azure AI Search lets you query an index using a REST endpoint or inside the Azure portal with the search explorer tool. If you want a quick recap of the stages of query processing, see the *search index* unit in [Create an Azure AI Search solution](/training/modules/create-azure-cognitive-search-solution/5-search-index).
 
-:::image type="content" source="../media/query-processing-small.png" alt-text="A diagram showing the four stages of query processing." lightbox="../media/query-processing.png" border="false":::
+:::image type="content" source="../media/query-processing-small.png" alt-text="Diagram showing the four stages of query processing." lightbox="../media/query-processing.png" border="false":::
 
 In this unit, you'll be focusing on query parsing.
 
-You'll use the search explorer to see the difference between using the simple and full query type changes your search results.
+You'll use the search explorer to see the difference between using the simple and full query type and the effect this has your search results.
 
 > [!NOTE]
 > If you want to run the queries yourself you'll need an Azure subscription. [Create an Azure AI Search service](/azure/search/search-create-service-portal) and import the hotels' sample data into an index.
@@ -81,11 +81,11 @@ There's no lexical analysis needed so document retrieval returns 14 documents. T
 }
 ```
 
-The customer might be surprised that the top hotel you have that's supposed to be **luxury** is in the budget category and doesn't have any air conditioning. If the customer enters multiple words in their search, your app assumes all terms should be in the results, so it adds + between terms to the query. This query it sends to the API is:
+The customer might be surprised that the top hotel you have that's supposed to be **luxury** is in the budget category and doesn't have any air conditioning. If the customer enters multiple words in their search, your app assumes all terms should be in the results, so it adds + between terms to the query. The query it sends to the API is:
 
 `search=luxury + air con&$select=HotelId, HotelName, Category, Tags, Description&$count=true`
 
-The search service now returns five documents but still the top results are in the budget category.
+The search service now returns five documents, but the top results are still in the budget category.
 
 #### Enable the Lucene Query Parser
 
@@ -95,20 +95,20 @@ You can tell the search explorer to use the Lucene Query parser by adding `&quer
 
 With the Lucene syntax, you can write more precise queries. Here is a summary of available features:
 
-- **Boolean operators**: `AND`, `OR`, `NOT` for example `luxury AND 'air con'`
-- **Fielded search**: `fieldName:search term` for example `Description:luxury AND Tags:air con`
-- **Fuzzy search**: `~` for example `Description:luxury~` returns results with misspelled versions of luxury
-- **Term proximity search**: `"term1 term2"~n` for example `"indoor swimming pool"~3` returns documents with the words indoor swimming pool within three words of each other
-- **Regular expression search**: `/regular expression/` use a regular expression between `/` for example `/[mh]otel/` would return documents with hotel and motel
-- **Wildcard search**: `*`, `?` where `*` will match many characters and `?` matches a single character for example `'air con'*` would find air con and air conditioning
-- **Precedence grouping**: `(term AND (term OR term))` for example `(Description:luxury OR Category:luxury) AND Tags:air?con*`
-- **Term boosting**: `^` for example `Description:luxury OR Category:luxury^3` would give hotels with the category luxury a higher score than luxury in the description
+- **Boolean operators**: `AND`, `OR`, `NOT` for example `luxury AND 'air con'`.
+- **Fielded search**: `fieldName:search term` for example `Description:luxury AND Tags:air con`.
+- **Fuzzy search**: `~` for example `Description:luxury~` returns results with misspelled versions of luxury.
+- **Term proximity search**: `"term1 term2"~n` for example `"indoor swimming pool"~3` returns documents with the words indoor swimming pool within three words of each other.
+- **Regular expression search**: `/regular expression/` use a regular expression between `/` for example `/[mh]otel/` would return documents with hotel and motel.
+- **Wildcard search**: `*`, `?` where `*` will match many characters and `?` matches a single character for example `'air con'*` would find air con and air conditioning.
+- **Precedence grouping**: `(term AND (term OR term))` for example `(Description:luxury OR Category:luxury) AND Tags:air?con*`.
+- **Term boosting**: `^` for example `Description:luxury OR Category:luxury^3` would give hotels with the category luxury a higher score than luxury in the description.
 
-To read more detail about these features, see [Lucene query syntax in Azure AI Search](/azure/search/query-lucene-syntax) in the docs.
+To read more detail about these features, see [Lucene query syntax in Azure AI Search](/azure/search/query-lucene-syntax).
 
 #### Boost search terms
 
-Using the above you can improve the results. The parser should give a higher priority to hotels in the luxury category. You can also be more precise and look for air conditioning in the Tags field.
+Using the above you can improve the results. The parser should give a higher priority to hotels in the luxury category. You can also be more precise and look for air conditioning in the **Tags** field.
 
 `(Description:luxury OR Category:luxury^3) AND Tags:'air con'*`
 

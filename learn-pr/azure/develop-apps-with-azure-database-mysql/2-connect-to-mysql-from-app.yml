@@ -2,6 +2,8 @@
 uid: learn.develop-apps-with-azure-database-mysql.connect-to-mysql-from-app
 title: Connect to and query an Azure Database for MySQL flexible server from your app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Connect to and query an Azure Database for MySQL flexible server from your app
   description: Learn how to connect to and query Azure Database for MySQL - Flexible Server from your application, developed in languages like PHP, Java, Python.
@@ -19,3 +21,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-connect-to-mysql-from-app.md)]
+

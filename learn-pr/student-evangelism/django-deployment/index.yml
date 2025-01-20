@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.django.deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy a Django application to Azure by using PostgreSQL
   description: Learn how to deploy an application built with the Python framework Django.
   ms.date: 03/01/2021
@@ -48,3 +50,4 @@ units:
 - learn.django.deployment.summary
 badge:
   uid: learn.django.deployment.badge
+

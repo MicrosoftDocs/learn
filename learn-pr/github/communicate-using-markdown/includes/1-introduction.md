@@ -1,4 +1,4 @@
-Markdown enables you to organize and emphasize what you're trying to communicate on GitHub.
+Markdown allows you to organize and emphasize what you're trying to communicate on GitHub.
 
 A markup language, Markdown offers a lean approach to content editing. It defines a concise, lightweight syntax that strips out the overhead inherent to HTML, providing a more approachable creation experience. It's become the standard for sites like GitHub, and enjoys broad editor support in both client and browser forms.
 

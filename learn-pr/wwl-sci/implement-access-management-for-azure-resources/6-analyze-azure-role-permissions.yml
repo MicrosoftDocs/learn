@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-access-management-for-azure-resources.analyze-azure-role-permissions
 title: Analyze Azure role permissions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Analyze Azure role permissions
   description: "Analyze Azure role permissions"
   ms.date: 10/30/2023

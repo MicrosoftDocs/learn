@@ -1,4 +1,4 @@
-As a global admin or admin agent, you can use Microsoft Cost Management to reconcile the pretax costs on your invoice.
+As an admin agent or [billing admin](/partner-center/account-settings/permissions-overview#billing-admin-role), you can use Microsoft Cost Management to reconcile the pretax costs on your invoice.
 
 :::image type="content" source="../media/03-example-invoice.png" alt-text="Screenshot that shows an example invoice with resource costs." lightbox="../media/03-example-invoice.png" :::
 
@@ -10,10 +10,10 @@ You can use cost analysis to intuitively analyze the pretax costs that are on yo
 
 The following images are examples with fictitious costs.
 
-1. To [analyze costs](/azure/cost-management-billing/costs/quick-acm-cost-analysis) on your invoice, select **Cost Management + Billing**, then select **Cost analysis**.
+1. To [analyze costs](/azure/cost-management-billing/costs/quick-acm-cost-analysis) on your invoice, select **Cost Management + Billing**, and then **Cost Management**. Under **Reporting + analytics** select **Cost analysis**.
 1. In **Cost analysis**, you can select the scope of the billing account. You can then select the appropriate billing profile that's associated with the invoice and the invoiced currency.  
     :::image type="content" source="../media/03-select-billing-account.png" alt-text="Screenshot that shows how to select a billing account scope in Cost Management." lightbox="../media/03-select-billing-account.png" :::
-    :::image type="content" source="../media/03-select-billing-profile.png" alt-text="Sreenshot that shows how to select a billing profile under the account scope." lightbox="../media/03-select-billing-profile.png" :::
+    :::image type="content" source="../media/03-select-billing-profile.png" alt-text="Screenshot that shows how to select a billing profile under the account scope." lightbox="../media/03-select-billing-profile.png" :::
 1. You can filter costs in a billing profile for a specific invoice by using the **InvoiceID**  filter. The filter shows the consumption and product purchase costs for a specific invoice.  
     :::image type="content" source="../media/03-invoice-id-filter.png" alt-text="Screenshot that shows costs filtered for a specific invoice." lightbox="../media/03-invoice-id-filter.png" :::
 
@@ -35,7 +35,7 @@ Partners can use the scope to reconcile to invoices. They can also use this scop
 
 To reconcile pretax costs on your invoice, use the CSV file for usage details. It shows granular daily usage for resources. This file is similar to the daily usage file in Partner Center.
 
-1. To download the invoice and the associated usage details file, select **Cost Management + Billing**, then select **Invoices** under **Billing** on the left pane. Select the required invoice based on the billing period or the invoice ID.  
+1. To download the invoice and the associated usage details file, select **Cost Management + Billing**, then select **Cost Management**, and then select **Invoices** under **Billing** on the left pane. Select the required invoice based on the billing period or the invoice ID.  
     :::image type="content" source="../media/03-invoices.png" alt-text="Screenshot that shows invoices in the Azure portal." lightbox="../media/03-invoices.png" :::
 1. Download the following files as required:
     - PDF copy of the invoice.

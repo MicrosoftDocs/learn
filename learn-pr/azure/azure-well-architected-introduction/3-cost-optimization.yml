@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-introduction.3-cost-optimization
 title: Cost optimization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Cost optimization
   description: Learn about how you can design your cloud architecture to optimize for cost.
   ms.date: 04/17/2023
@@ -56,3 +58,4 @@ quiz:
     - content: "Add monitoring and instrumentation to your application."
       isCorrect: true
       explanation: "Continuous monitoring gives you the data that you need to find cost savings. For example, you might find that demand is variable, and multiple small VMs with autoscale might cost less than the single large VM you currently use."
+

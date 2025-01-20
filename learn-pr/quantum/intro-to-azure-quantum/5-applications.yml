@@ -2,6 +2,8 @@
 uid: learn.quantum.intro-to-azure-quantum.applications
 title: Uses and applications of quantum computing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Uses and applications of quantum computing
   description: See how quantum computing can be applied to solve real-world problems.
   ms.date: 01/09/2024

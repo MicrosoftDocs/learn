@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-azure-databricks-models-azure-machine-learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy Azure Databricks models in Azure Machine Learning
   description: "Deploy Azure Databricks models in Azure Machine Learning"
   ms.date: 03/22/2023

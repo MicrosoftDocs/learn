@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-azure-iot-solution-monitoring-logging.monitor-support
 title: Examine Azure Monitor support for Azure IoT Hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure Monitor support for Azure IoT Hub
   description: "Examine Azure Monitor support for Azure IoT Hub"
   ms.date: 01/17/2024

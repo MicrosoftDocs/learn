@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.explore-elastic-jobs
 title: Explore Elastic jobs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Elastic jobs
   description: "Explore Elastic jobs"
   ms.date: 06/10/2022
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/2-explore-elastic-jobs.md)]
+

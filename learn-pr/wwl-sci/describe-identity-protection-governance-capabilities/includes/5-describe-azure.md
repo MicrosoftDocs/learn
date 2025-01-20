@@ -30,7 +30,7 @@ Any risks detected on an identity are tracked with reporting. Identity Protectio
   - The user has one or more Risky sign-ins.
   - One or more risk detections are reported.
 
-  For businesses that are onboarded to Microsoft Copilot for Security The risky users' report, embeds the capabilities of Microsoft Copilot for Security to summarize a user's risk level, provide insights relevant to the incident at hand, and provide recommendations for rapid mitigation.
+  For businesses that are onboarded to Microsoft Security Copilot The risky users' report, embeds the capabilities of Microsoft Security Copilot to summarize a user's risk level, provide insights relevant to the incident at hand, and provide recommendations for rapid mitigation.
 
 Investigation of events is key to understanding and identifying any weak points in your security strategy.
 

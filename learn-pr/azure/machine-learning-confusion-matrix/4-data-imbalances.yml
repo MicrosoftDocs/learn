@@ -2,6 +2,8 @@
 uid: learn.machinelearning.evaluate-real-world-models.data-imbalances
 title: Data imbalances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Data imbalances
   description: Conceptual unit about data imbalances in machine learning
   ms.date: 07/20/2024

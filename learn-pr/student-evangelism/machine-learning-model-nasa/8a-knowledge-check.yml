@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.machine-learning-model-nasa.8a-knowledge-check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Answer questions to see what you've learned.
   ms.date: 09/04/2024
@@ -36,3 +38,4 @@ quiz:
     - content: "To have different data for training and testing your model."
       isCorrect: true
       explanation: "Correct. If you train and test your machine learning model with the same data, it'll only be effective at telling you what data you have. It won't yield accurate predictions."
+

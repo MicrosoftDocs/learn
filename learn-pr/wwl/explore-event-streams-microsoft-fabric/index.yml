@@ -1,27 +1,21 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-event-streams-microsoft-fabric
 metadata:
-  title: Use real time eventstreams in Microsoft Fabric
-  description: "This Microsoft training module explores the use of eventstreams in Microsoft Fabric. It covers the basics of eventstreams, how to create and use them, and how to handle errors. The module also includes a hands-on lab where learners can practice creating and using eventstreams in a sample application."
-  ms.date: 09/19/2024
+  title: Use real-time eventstreams in Microsoft Fabric
+  description: "Microsoft Fabric Eventstreams is a technology for ingesting and transforming real-time streams of data."
+  ms.date: 12/05/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: module-standard-task-based
-  ms.custom:
-  - N/A
   ms.service: fabric
   ai-usage: human-only
-title: Use real time eventstreams in Microsoft Fabric
-summary: This module is an introduction to the Microsoft Fabric Eventstream within Real-Time Intelligence (RTI).
+title: Use real-time eventstreams in Microsoft Fabric
+summary: Microsoft Fabric Eventstreams within Real-Time Intelligence (RTI) enable you to ingest and transform real-time data.
 abstract: |
   After completing this module, you'll be able to:
-
-  -   Establish source and destinations in Eventstream.
-
-  -   View the data in-flight in eventstream items.
-
-  -   Capture, transform, and route data using Eventstream.
-prerequisites: Introduction to Microsoft Fabric and Introduction to Real-Time Intelligence (RTI)
+  - Establish source and destinations in Microsoft Fabric Eventstreams.
+  - Capture, transform, and route data using Microsoft Fabric Eventstreams.
+prerequisites: Before starting this module, you should be familiar with Microsoft Fabric and real-time data concepts.
 iconUrl: /training/achievements/explore-event-streams-in-microsoft-fabric.svg
 levels:
 - beginner

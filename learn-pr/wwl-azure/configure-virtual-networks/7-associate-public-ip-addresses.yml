@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-virtual-networks.associate-public-ip-addresses
 title: Associate public IP addresses
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Associate public IP addresses
   description: "Associate public IP addresses"
   ms.date: 03/08/2024

@@ -6,7 +6,6 @@ Ensuring that your development and operations teams have access to the same tele
 
 For a more hands-on approach to Azure Monitor and Application Insights, you have many options. Check out these modules to learn more:
 
-* [Gather metrics from your Azure Blob Storage containers](/training/modules/gather-metrics-blob-storage?azure-portal=true)
 * [Analyze your Azure infrastructure by using Azure Monitor logs](/training/modules/analyze-infrastructure-with-azure-monitor-logs?azure-portal=true)
 * [Design a holistic monitoring strategy on Azure](/training/modules/design-monitoring-strategy-on-azure?azure-portal=true)
 * [Improve incident response with alerting on Azure](/training/modules/incident-response-with-alerting-on-azure?azure-portal=true)

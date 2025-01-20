@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-identity-services.exercise-microsoft-entra-id-sap-cloud-platform-identity-authentication
 title: Integrate Microsoft Entra ID with SAP Cloud Platform Identity Authentication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Integrate Microsoft Entra ID with SAP Cloud Platform Identity Authentication
   description: "Integrate Microsoft Entra ID with SAP Cloud Platform Identity Authentication"
   ms.date: 01/10/2024

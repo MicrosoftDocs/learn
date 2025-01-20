@@ -3,8 +3,8 @@ uid: learn.dotnet-maui.customize-xaml-pages-layout.specify-size-view
 title: Specify the size of a view
 metadata:
   title: Specify the size of a view
-  description: Learn how a layout and views enable you to build a user interface in a .NET MAUI application.
-  ms.date: 11/07/2023
+  description: Learn how a layout and views enable you to build a user interface in a .NET Multi-platform App UI (MAUI) application.
+  ms.date: 12/04/2024
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl
@@ -22,7 +22,7 @@ quiz:
     - content: "Holds a collection of child views and determines their size and position."
       isCorrect: true
       explanation: "Correct. Multiple panels in .NET MAUI inherit from `LayoutPanel`. Each panel manages its child views differently."
-    - content: "Arrange its child views in a single row or column."
+    - content: "Arranges its child views in a single row or column."
       isCorrect: false
       explanation: "Incorrect. A `StackLayout`, arranges its child views in a single row or column."
     - content: "Encapsulates the layout options, such as `LayoutAlignment` and `Expands`."

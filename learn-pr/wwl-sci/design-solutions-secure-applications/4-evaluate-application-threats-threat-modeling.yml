@@ -5,8 +5,8 @@ metadata:
   title: Evaluate application threats with threat modeling
   description: "SC-100 preparatory unit on this topic: evaluate application threats with threat modeling."
   ms.date: 3/14/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 10
 content: |

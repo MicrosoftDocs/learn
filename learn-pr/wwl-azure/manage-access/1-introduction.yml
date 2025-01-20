@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-access.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 08/20/2024

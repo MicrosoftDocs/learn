@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-synapse-link-for-sql.synapse-link-azure-sql
 title: Configure Azure Synapse Link for Azure SQL Database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure Synapse Link for Azure SQL Database
   description: "Configure Azure Synapse Link for Azure SQL Database"
   ms.date: 02/10/2023

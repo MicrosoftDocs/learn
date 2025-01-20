@@ -47,5 +47,3 @@ In this exercise, you use a custom script extension to roll out a new version of
     ```
 
 1. In your web browser, go to the public address of the scale set load balancer. Verify that you see the message **This is the updated app installed on the Virtual Machine Scale Set !**.
-
-    :::image type="content" source="../media/7-web-app.png" alt-text="Screenshot of the updated web app." loc-scope="other":::

@@ -2,6 +2,8 @@
 uid: learn.wwl.cloud-hybrid-connectivity.troubleshoot-site-to-site-vpns
 title: Troubleshoot virtual network connectivity in Microsoft Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot virtual network connectivity in Microsoft Azure
   description: "Troubleshoot virtual network connectivity in Microsoft Azure"
   ms.date: 04/27/2023

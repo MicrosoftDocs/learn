@@ -2,6 +2,8 @@
 uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/23/2023

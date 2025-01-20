@@ -2,7 +2,7 @@ Part of the release process starts with your version control. You'll understand 
 
 In the following modules, you'll see details about deploying a piece of software after packaging your code, binary files, release notes, and related tasks.
 
-Releases in GitHub are based on [Git tags](https://git-scm.com/book/en/Git-Basics-Tagging). You can think of a tag as a photo of your repository's current state. If you need to mark an essential phase of your code or your following deliverable code is done, you can create a tag and use it during the build and release process to package and deploy that specific version. For more information, see [Viewing your repository's releases and tags.](https://docs.github.com/repositories/releasing-projects-on-github/viewing-your-repositorys-releases-and-tags)
+Releases in GitHub are based on [Git tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging). You can think of a tag as a photo of your repository's current state. If you need to mark an essential phase of your code or your following deliverable code is done, you can create a tag and use it during the build and release process to package and deploy that specific version. For more information, see [Viewing your repository's releases and tags.](https://docs.github.com/repositories/releasing-projects-on-github/viewing-your-repositorys-releases-and-tags)
 
 When creating new releases with release notes, it's possible to @mentions contributors, add links to binary files and edit or delete existing releases.
 

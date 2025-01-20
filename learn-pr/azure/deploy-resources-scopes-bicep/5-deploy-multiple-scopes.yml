@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-resources-different-scopes.deploy-multiple-scopes
 title: Deploy resources to multiple scopes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Deploy resources to multiple scopes
   description: Learn how to create a Bicep file that deploys your resources to multiple scopes.
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-deploy-multiple-scopes.md)]
+

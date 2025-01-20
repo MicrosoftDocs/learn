@@ -2,12 +2,14 @@
 uid: learn.create-dashboards-azure-data-explorer.exercise-connect-to-resources
 title: 'Exercise: Connect to resources'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise
   description: "This unit shows you how to connect to a free data cluster in Azure Data Explorer. This cluster will be used to create a dashboard."
   ms.date: 01/19/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 3
 content: |

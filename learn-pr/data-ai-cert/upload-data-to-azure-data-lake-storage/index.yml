@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.data-ai.upload-data-to-azure-data-lake-storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Upload data to Azure Data Lake Storage
   description: "Learn about creating an Azure Data Lake Storage account and uploading data to Data Lake Storage Gen 2 through the Azure Storage Explorer."
   ms.date: 03/25/2022
@@ -32,3 +34,4 @@ units:
 - learn.data-ai.upload-data-to-azure-data-lake-storage.summary
 badge:
   uid: learn.data-ai.upload-data-to-azure-data-lake-storage.badge
+

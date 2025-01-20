@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.protect-apis-on-api-management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Protect your APIs on Azure API Management
   description: Protect your backend APIs from information exposure and implement throttling (rate limiting) to prevent resource exhaustion with policies in Azure API Management.
   ms.date: 08/10/2023
@@ -41,3 +43,4 @@ units:
 - learn.protect-apis-on-api-management.8-summary
 badge:
   uid: learn.protect-apis-on-api-management.badge
+

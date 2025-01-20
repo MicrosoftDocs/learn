@@ -2,6 +2,8 @@
 uid: learn.azure.build-webapp-java-tomcat.3
 title: Exercise - Create a JavaServer Faces web app on Tomcat
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a JavaServer Faces web application on Tomcat
   description: Build a simple JavaServer Faces application, set up its resources, and run it locally.
   author: yoshioterada
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-create-javaserver-faces-app.md)]
+

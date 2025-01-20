@@ -2,6 +2,8 @@
 uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.determine-migration-high-availability-strategies
 title: Determine migration and high availability strategies in HDInsight HBase
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine migration and high availability strategies in HDInsight HBase
   description: "Determine migration and high availability strategies in HDInsight HBase"
   ms.date: 04/09/2024

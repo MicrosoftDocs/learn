@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-identify-sap-certified-configurations.identify-deployment-options-sap-solutions-azure
 title: Identify deployment options for SAP solutions on Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify deployment options for SAP solutions on Azure
   description: "Identify deployment options for SAP solutions on Azure"
   ms.date: 01/09/2024

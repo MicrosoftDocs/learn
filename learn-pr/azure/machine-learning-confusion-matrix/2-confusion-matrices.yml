@@ -2,6 +2,8 @@
 uid: learn.machinelearning.evaluate-real-world-models.confusion-matrices
 title: Confusion matrices
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Confusion matrices
   description: Conceptual unit about confusion matrices in machine learning
   ms.date: 07/20/2024

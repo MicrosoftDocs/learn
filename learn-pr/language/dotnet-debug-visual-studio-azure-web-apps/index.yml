@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.dotnet-debug-visual-studio-app-service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Remotely debug ASP.NET Core apps hosted on Azure App Service using Visual Studio
   description: 'Hands-on training to deploy and remotely debug your ASP.NET Core apps on Azure App Service directly using Visual Studio 2022.'
   ms.custom: engagement-fy23
@@ -43,3 +45,4 @@ units:
 
 badge:
   uid: learn.dotnet-debug-visual-studio-app-service.badge
+

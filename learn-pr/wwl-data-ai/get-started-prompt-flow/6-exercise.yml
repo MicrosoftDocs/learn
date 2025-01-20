@@ -2,6 +2,8 @@
 uid: learn.get-started-prompt-flow.exercise
 title: Exercise - Explore LLM apps with prompt flow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Explore LLM apps with prompt flow
   description: "Exercise to explore large language model (LLM) apps with Azure Machine Learning's prompt flow."
   ms.date: 11/30/2023

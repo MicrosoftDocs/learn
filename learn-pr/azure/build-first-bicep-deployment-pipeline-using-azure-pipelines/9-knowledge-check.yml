@@ -2,6 +2,8 @@
 uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
@@ -60,3 +62,4 @@ quiz:
     - content: The *Azure Resource Group Deployment* task.
       isCorrect: true
       explanation: Correct. You can use the *Azure Resource Group Deployment* task to execute a deployment of a Bicep file.
+

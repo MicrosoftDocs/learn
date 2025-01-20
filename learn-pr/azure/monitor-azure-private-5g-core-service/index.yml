@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.monitor-azure-private-5g-core-service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor the Azure Private 5G Core service
   description: Describes the monitoring capabilities of Azure Private 5G Core, the tools for monitoring the service, and the tool for diagnosing network issues.
   ms.date: 07/31/2024

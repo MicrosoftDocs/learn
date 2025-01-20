@@ -121,4 +121,4 @@ You have to use Exchange Online PowerShell to turn off auditing.
 
 ## Knowledge check
 
-Choose the best response for the question below, then select **Check your answers**.
+Choose the best response for the question below.

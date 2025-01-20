@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 04/12/2024
+  ms.date: 11/24/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

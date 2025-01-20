@@ -1,7 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.troubleshoot-windows-containers.introduction
 title: Introduction
-metadata: 
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true 
   title: Introduction
   description: This content is part of the "Troubleshooting Windows Containers" module.
   ms.date: 08/13/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

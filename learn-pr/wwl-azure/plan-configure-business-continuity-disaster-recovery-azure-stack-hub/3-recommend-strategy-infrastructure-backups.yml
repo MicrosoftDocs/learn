@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-configure-business-continuity-disaster-recovery-for-azure-stack-hub.recommend-strategy-for-infrastructure-backups
 title: Recommend a strategy for infrastructure backups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommend a strategy for infrastructure backups
   description: "Recommend a strategy for infrastructure backups"
   ms.date: 06/09/2022

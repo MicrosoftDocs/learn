@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Analyze data in a relational data warehouse
   description: "Relational data warehouses are a core element of most enterprise Business Intelligence (BI) solutions, and are used as the basis for data models, reports, and analysis."
   ms.date: 04/11/2024

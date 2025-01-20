@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.publish-container-image-to-azure-container-registry
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage container images in Azure Container Registry
   description: "Learn how to use Azure Container Registry to store your container images, and automate builds and deployments."
   ms.date: 07/15/2024

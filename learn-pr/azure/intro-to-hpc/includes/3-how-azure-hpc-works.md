@@ -12,11 +12,11 @@ High-performance computing resources are offered at nearly unlimited scale on Az
 
 ## Storage
 
-The highly secure cloud storage is available to customers at a massive scale. It allows HPC applications to use it efficiently, customizing with either HPC Cache or Azure NetApp files or Cray ClusterSor.
+The highly secure cloud storage is available to customers at a massive scale. It allows HPC applications to use it efficiently, customizing with either Azure Managed Lustre, Azure NetApp Files, or Cray ClusterStor.
 
-- Burst your HPC applications into Azure using data stored in on-premises NAS devices with **HPC Cache**.
+- **Azure Managed Lustre** is ideal for HPC workloads that require high throughput and low latency, making it suitable for applications that process large datasets quickly.
 - Access large amounts of I/O with a submillisecond latency with **Azure NetApp Files**, delivered as an Azure service natively within an Azure datacenter.
-- For a high throughput storage solution, use **Cray ClusterSor**, a Lustre-based, bare-metal HPC storage solution that’s fully integrated with Azure.
+- For a high throughput storage solution, use **Cray ClusterStor**, a Lustre-based, bare-metal HPC storage solution that’s fully integrated with Azure.
 
 ![Diagram of Azure storage.](../media/7-azure-storage.png)
 
@@ -96,21 +96,21 @@ The following H-series and N-series VMs are RDMA capable and can communicate ove
     - Resiliency
     - Familiar Programmability
 
-- **Azure HPC Cache**
-  - Azure HPC Cache speeds access to your data for high-performance computing (HPC) tasks.
-    - By caching files in Azure, Azure HPC Cache brings the scalability of cloud computing to your existing workflow.
-    - Can be used even for workflows where your data is stored across WAN links, such as in your local datacenter network-attached storage (NAS) environment.
+- **Azure Managed Lustre**
+  - Azure Managed Lustre service gives you the capability to quickly create an Azure-based Lustre file system for cloud-based high-performance computing jobs.
+    - Azure Managed Lustre is a fully managed parallel file system best suited to medium to large HPC workloads.
+    - Enables HPC applications in the cloud without breaking application compatibility by providing familiar Lustre parallel file system functionality, behaviors, and performance, securing long-term application investments.
 
   - When to use:
-    - Read-heavy file access workflow.
-    - Data stored in NFS-accessible storage, Azure Blob, or both.
-    - Compute farms of up to 75,000 CPU cores.
+    - Ideal for HPC workloads that require high throughput and low latency, making it suitable for applications that process large datasets quickly.
 
   - Key benefits include:
-    - Easy to launch and monitor from the Azure portal. Existing NFS storage or new Blob containers can become part of its aggregated namespace, which makes client access simple even if you change the back-end storage target.
-    - High performance with up to 8 GB/s throughput, reducing latency for cacheable workloads.
-    - Scalable to meet changing compute demand.
-    - Aggregated namespace bringing together multiple file sources.
+    - High storage capacity up to 12.5 PiB upon request.
+    - Low (~2ms) latency.
+    - Up to 1M IOPS, up to 500 GiB/s throughput.
+    - Spin up new clusters in minutes.
+    - Supports containerized workloads with AKS.
+    - Integrates with Azure Blob Storage as a source for importing and exporting data for long-term storage.
 
 - **VM-based file systems**
   - Single VM NAS

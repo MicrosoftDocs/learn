@@ -2,6 +2,8 @@
 uid: learn.azure.create-foundation-modern-apps.ci-cd-for-azure-sql-database
 title: Implement CI/CD for Azure SQL Database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Implement CI/CD for Azure SQL Database
   description: Understand how CI/CD applies to databases. Get an overview of GitHub Actions and Azure DevOps and how it relates to Azure SQL Database.
@@ -43,3 +45,4 @@ quiz:
       - content: "Technology"
         isCorrect: false
         explanation: "This option is one of the pieces, review the unit."
+

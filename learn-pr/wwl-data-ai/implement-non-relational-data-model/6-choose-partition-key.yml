@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-non-relational-data-model.choose-partition-key
 title: Choose a partition key
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose a partition key
   description: "Choose a partition key"
-  ms.date: 04/16/2024
+  ms.date: 10/22/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/6-choose-partition-key.md)]
+

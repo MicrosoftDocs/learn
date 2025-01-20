@@ -71,7 +71,7 @@ Review the JSON configuration code for your event triggers, and you'll recognize
                                     "Microsoft.Resources.ResourceWriteSuccess"
                                 ]
                             },
-                            "topic": "/subscriptions/826d0748-8207-40ad-9e9c-44be4fa3f764/resourceGroups/learn-d022bcb1-0ce2-4e71-99a6-2ddd19e85389"
+                            "topic": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
                         }
                     },
                     "host": {
@@ -79,7 +79,7 @@ Review the JSON configuration code for your event triggers, and you'll recognize
                             "name": "@parameters('$connections')['azureeventgrid']['connectionId']"
                         }
                     },
-                    "path": "/subscriptions/@{encodeURIComponent('826d0748-8207-40ad-9e9c-44be4fa3f764')}/providers/@{encodeURIComponent('Microsoft.Resources.ResourceGroups')}/resource/eventSubscriptions",
+                    "path": "/subscriptions/@{encodeURIComponent('aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e')}/providers/@{encodeURIComponent('Microsoft.Resources.ResourceGroups')}/resource/eventSubscriptions",
                     "queries": {
                         "x-ms-api-version": "2017-09-15-preview"
                     }
@@ -93,9 +93,9 @@ Review the JSON configuration code for your event triggers, and you'll recognize
         "$connections": {
             "value": {
                 "azureeventgrid": {
-                    "connectionId": "/subscriptions/826d0748-8207-40ad-9e9c-44be4fa3f764/resourceGroups/learn-d022bcb1-0ce2-4e71-99a6-2ddd19e85389/providers/Microsoft.Web/connections/azureeventgrid",
+                    "connectionId": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/providers/Microsoft.Web/connections/azureeventgrid",
                     "connectionName": "azureeventgrid",
-                    "id": "/subscriptions/826d0748-8207-40ad-9e9c-44be4fa3f764/providers/Microsoft.Web/locations/westus/managedApis/azureeventgrid"
+                    "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/providers/Microsoft.Web/locations/westus/managedApis/azureeventgrid"
                 }
             }
         }

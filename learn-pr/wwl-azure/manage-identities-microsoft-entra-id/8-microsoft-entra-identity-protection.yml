@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-identities-microsoft-entra-id.microsoft-entra-identity-protection
 title: Implement Microsoft Entra Identity protection
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Microsoft Entra Identity protection
   description: "Implement Microsoft Entra Identity protection"
   ms.date: 07/03/2024

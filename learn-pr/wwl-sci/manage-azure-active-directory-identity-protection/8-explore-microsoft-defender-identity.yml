@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-azure-ad-identity-protection.explore-microsoft-defender-identity
 title: Explore Microsoft Defender for Identity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Microsoft Defender for Identity
   description: "Explore Microsoft Defender for Identity"
-  ms.date: 04/03/2024
+  ms.date: 12/17/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

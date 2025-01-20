@@ -2,6 +2,8 @@
 uid: learn.wwl.find-best-classification-model-automated-machine-learning.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: In this module, you've learned how to use Azure Machine Learning's automated machine learning to find the best classification model.
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
+

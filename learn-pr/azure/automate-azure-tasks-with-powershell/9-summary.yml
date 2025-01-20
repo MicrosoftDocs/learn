@@ -2,6 +2,8 @@
 uid: learn.automate-azure-tasks-with-powershell.9-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 06/07/2024
@@ -49,3 +51,4 @@ quiz:
     - content: "The Azure CLI and Azure PowerShell"
       isCorrect: false
       explanation: "The Azure CLI is an alternative command-line scripting tool for managing Azure resources. If you plan to use Azure PowerShell, it isn't required, as both tools provide similar functionality."
+

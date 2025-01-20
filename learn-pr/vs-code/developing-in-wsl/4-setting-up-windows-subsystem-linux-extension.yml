@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.developing-in-wsl.setting-up-windows-subsystem-linux-extension
-title: Setting up the Visual Studio Code WSL extension
+title: Set up the Visual Studio Code WSL extension
 metadata:
-  title: Setting up the Visual Studio Code WSL extension
+  title: Set up the Visual Studio Code WSL extension
   description: "Install the Visual Studio Code WSL extension and understand its basic usage."
-  ms.date: 11/28/2023
+  ms.date: 11/18/2024
   author: gwynethp
   ms.author: gwynethp
   ms.topic: unit

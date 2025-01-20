@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.azure.azure-netapp-files-data-protection
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  moduleType: introduction        
+  title: Understand data protection and resiliency in Azure NetApp Files   
+  description: This module teaches you about data protection options in Azure NetApp Files to help you improve the resiliency of your data.       
+  ms.date: 11/26/2024
+  author: b-ahibbard   
+  ms.author: anfdocs           
+  ms.topic: module
+  ms.service: azure-netapp-files
+title:  Understand data protection and resiliency in Azure NetApp Files
+summary: This module teaches you about data protection options in Azure NetApp Files to help you improve the resiliency of your data.    
+abstract: |
+  By the end of this module, you'll be able to: 
+  - Enumeration protection and disaster recovery features in Azure NetApp Files 
+  - Explain how Azure NetApp Files snapshots work 
+  - Describe Azure NetApp Files backup and recovery 
+  - Describe the different benefits of cross-region and cross-zone replication  
+prerequisites: |
+  - Basic understanding of Azure NetApp Files
+iconUrl: /training/achievements/introduction-to-azure-netapp-files.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+  - azure-virtual-machines
+subjects:
+- cloud-computing
+- storage
+- cloud-security
+units:
+- learn.azure.azure-netapp-files-data-protection.introduction
+- learn.azure.azure-netapp-files-data-protection.snapshots
+- learn.azure.azure-netapp-files-data-protection.backups
+- learn.azure.azure-netapp-files-data-protection.cross-region
+- learn.azure.azure-netapp-files-data-protection.cross-zone
+- learn.azure.azure-netapp-files-data-protection.knowledge-check
+- learn.azure.azure-netapp-files-data-protection.summary
+badge:
+  uid: learn.azure.azure-netapp-files-data-protection.badge
+

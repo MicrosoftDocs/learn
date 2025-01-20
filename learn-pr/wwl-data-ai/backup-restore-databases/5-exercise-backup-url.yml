@@ -2,6 +2,8 @@
 uid: learn.wwl.backup-restore-databases.exercise
 title: 'Exercise: Backup to URL'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Backup to URL'
   description: "Exercise: Backup to URL"
   ms.date: 07/25/2023

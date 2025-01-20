@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-reliability.design-for-business-requirements
 title: Design for business requirements
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for business requirements
   description: Learn about designing your workload to achieve the reliability requirements set by the business.
   ms.date: 12/18/2023
@@ -56,3 +58,4 @@ quiz:
     - content: "The Azure App Service FAQ."
       isCorrect: false
       explanation: "The Azure App Service FAQ  provides information about how to use Azure App Service, but not the guaranteed uptime."
+

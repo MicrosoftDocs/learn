@@ -2,6 +2,8 @@
 uid: learn.wwl.identify-technical-debt.measure-manage-technical-debt
 title: Measure and manage technical debt
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Measure and manage technical debt
   description: "Measure and manage technical debt"
   ms.date: 05/06/2024

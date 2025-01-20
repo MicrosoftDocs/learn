@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.create-first-azure-front-door
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: build-your-first-using-product
   title: Load balance your web service traffic with Front Door
   description: "Accelerate the delivery and maintain high availability of web applications by distributing web traffic across multiple web servers."
@@ -46,3 +48,4 @@ units:
 - learn.create-first-azure-front-door.summary
 badge:
   uid: learn.create-first-azure-front-door.badge
+

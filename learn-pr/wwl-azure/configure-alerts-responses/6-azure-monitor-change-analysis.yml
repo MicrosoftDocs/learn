@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-alerts-responses.azure-monitor-change-analysis
 title: Azure Monitor change analysis
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Monitor change analysis
   description: "Azure Monitor change analysis"
   ms.date: 10/25/2023

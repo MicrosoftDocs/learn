@@ -2,9 +2,11 @@
 uid: learn.azure.deploy-run-container-app-service.8-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 04/27/2023
+  ms.date: 10/15/2024
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: unit

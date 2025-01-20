@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines.examine-sample-functional-workflow
 title: Examine a sample functional workflow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine a sample functional workflow
   description: "Examine a sample functional workflow"
   ms.date: 01/08/2024

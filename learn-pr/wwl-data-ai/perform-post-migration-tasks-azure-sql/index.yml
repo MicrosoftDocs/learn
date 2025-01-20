@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn-wwl.perform-post-migration-tasks-azure-sql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform post-migration tasks on Azure SQL
   description: "Learn post-migration tasks and the tools available to configure automation, high availability and disaster recovery, and monitoring."
   ms.date: 09/14/2023

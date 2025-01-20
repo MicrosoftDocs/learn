@@ -2,6 +2,8 @@
 uid: learn.wwl.integrate-data-azure-data-factory.set-up
 title: Set-up Azure Data Factory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set-up Azure Data Factory
   description: "Set-up Azure Data Factory"
   ms.date: 06/05/2023

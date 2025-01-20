@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-consolidating-secure-artifacts.migrate-integrating-artifact-repositories
 title: Migrate and integrating artifact repositories
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate and integrating artifact repositories
   description: "Migrate and integrating artifact repositories"
   ms.date: 05/08/2024

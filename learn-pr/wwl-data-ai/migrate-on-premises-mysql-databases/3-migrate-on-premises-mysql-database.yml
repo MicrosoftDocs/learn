@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-premises-mysql-databases-azure-database-mysql.migrate-premises-mysql-database-azure
 title: Migrate on-premises MySQL database to Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate on-premises MySQL database to Azure
   description: "Migrate on-premises MySQL database to Azure"
   ms.date: 11/09/2022

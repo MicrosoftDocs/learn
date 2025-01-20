@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-transition-modern-endpoint-management.evaluate-upgrades-migrations-modern-transitioning
 title: Evaluate upgrades and migrations in modern transitioning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Evaluate upgrades and migrations in modern transitioning
   description: "Evaluate upgrades and migrations in modern transitioning"
   ms.date: 05/12/2023

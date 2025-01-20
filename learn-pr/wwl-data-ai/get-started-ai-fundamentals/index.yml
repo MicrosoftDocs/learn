@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-ai-fundamentals
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Fundamental AI Concepts
   description: "This module introduces common AI workloads and their corresponding Azure AI Services. It also introduces Microsoft's Responsible AI policies."
   ms.date: 10/03/2024

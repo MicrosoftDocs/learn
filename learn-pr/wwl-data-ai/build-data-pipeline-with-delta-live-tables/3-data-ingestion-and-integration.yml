@@ -2,6 +2,8 @@
 uid: learn.wwl.build-data-pipeline-with-delta-live-tables.data-ingestion-and-integration
 title: Data ingestion and integration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Data ingestion and integration
   description: "Data ingestion and integration"
   ms.date: 07/23/2024

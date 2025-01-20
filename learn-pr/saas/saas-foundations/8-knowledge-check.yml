@@ -2,6 +2,8 @@
 uid: learn.saas-foundations.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Test your knowledge.
   ms.date: 05/28/2024
@@ -57,3 +59,4 @@ quiz:
     - content: "Adoption creates more leads during the Land phase of the LAER model."
       isCorrect: false
       explanation: "Adoption comes into play starting from the Adopt phase in the LAER model."
+

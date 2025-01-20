@@ -1,15 +1,4 @@
-Azure offers several networking services to help deliver applications. In this unit, we examine Azure Content Delivery Network, Front Door, Traffic Manager, Load Balancer, and Application Gateway. 
-
-### Azure Content Delivery Network
-
-Azure Content Delivery Network offers a global solution for rapidly delivering high-bandwidth content to users. Content Delivery Network lets you cache your content at strategically placed physical nodes across the world.
-
-#### Business scenarios
-
-- Implement point-of-presence locations that are close to large clusters of users
-- Reduce latency, both the transmission delay and the number of router hops
-- Support Microsoft, Akamai, and Verizon content delivery networks
-- Use custom domains, file compression, caching, and geo-filtering
+Azure offers several networking services to help deliver applications. In this unit, we examine Front Door, Traffic Manager, Load Balancer, and Application Gateway. 
 
 ### Azure Front Door
 
@@ -17,11 +6,12 @@ Azure Front Door lets you define, manage, and monitor the global routing for you
  
 #### Business scenarios
 
-- Low latency: Ensure requests are sent to the lowest latency backends
-- Priority: Support primary and secondary backends
-- Weighted: Distribute traffic by using weight coefficients
-- Affinity: Ensure requests from the same end user are sent to the same backend
-- Support WAF and CDN integration for HTTP(S) traffic
+- Low latency: Ensure requests are sent to the lowest latency backends.
+- Priority: Support primary and secondary backends.
+- Weighted: Distribute traffic by using weight coefficients.
+- Affinity: Ensure requests from the same end user are sent to the same backend.
+- Support WAF and CDN integration for HTTP(S) traffic.
+- Support for content delivery services. 
 
 ### Azure Traffic Manager
 
@@ -29,10 +19,10 @@ Azure Traffic Manager is a DNS-based traffic load balancer that enables you to d
 
 #### Business scenarios
 
-- Increase application availability
-- Improve application performance
-- Combine hybrid applications
-- Distribute traffic for complex deployments
+- Increase application availability.
+- Improve application performance.
+- Combine hybrid applications.
+- Distribute traffic for complex deployments.
 
 ### Azure Load Balancer
 
@@ -40,9 +30,9 @@ Azure Load Balancer provides high-performance, low-latency Layer 4 load-balancin
 
 #### Business scenarios
 
-- Manage inbound and outbound connections 
-- Configure public and internal load-balanced endpoints
-- Manage service availability by mapping inbound connections to back-end pool destinations (via TCP and HTTP health-probe rules)
+- Manage inbound and outbound connections.
+- Configure public and internal load-balanced endpoints.
+- Manage service availability by mapping inbound connections to back-end pool destinations (via TCP and HTTP health-probe rules).
 
 ### Azure Application Gateway 
 
@@ -50,5 +40,5 @@ Azure Application Gateway is a web traffic load balancer that enables you to man
 
 #### Business scenarios
 
-- Path-based routing: Send requests with different URL paths to a different pool of back-end servers
-- Multiple-site routing: Support tenants with virtual machines or other resources that host a web application
+- Path-based routing: Send requests with different URL paths to a different pool of back-end servers.
+- Multiple-site routing: Support tenants with virtual machines or other resources that host a web application.

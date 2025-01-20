@@ -1,6 +1,6 @@
 ::: zone pivot="vscode"
 
-To use Visual Studio Code for Azure development, you'll need to install Visual Studio Code locally and one or more Azure extensions. In this exercise, we'll add the **Azure App Service** extension.
+To use Visual Studio Code for Azure development, you need to install Visual Studio Code locally and add one or more Azure extensions. In this exercise, we add the **Azure App Service** extension.
 
 ## Install Visual Studio Code
 
@@ -18,7 +18,7 @@ To install Visual Studio Code, use the appropriate steps for your operating syst
 
 1. [Download Visual Studio Code for macOS](https://code.visualstudio.com/).
 
-1. Double-click the downloaded archive to expand the contents.
+1. Expand the contents by double-clicking the downloaded archive.
 
 1. Drag Visual Studio Code.app to the Applications folder.
 
@@ -53,7 +53,7 @@ To install Visual Studio Code, use the appropriate steps for your operating syst
 
 #### openSUSE and SLE
 
-1. The yum repository also works for openSUSE and SLE-based systems. The following script will install the key and repository:
+1. The yum repository also works for openSUSE and SLE-based systems. The following script installs the key and repository:
 
    ```bash
    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -84,13 +84,13 @@ To install Visual Studio Code, use the appropriate steps for your operating syst
 
    ![Screenshot of Visual Studio Code showing the Extensions tab with the Azure App Service extension highlighted in the search results.](../media/3-install-azure-extension.png)
 
-Visual Studio Code will install the extension. You're now ready to connect to your Azure subscription and deploy a web, mobile, or API app to an Azure App Service.
+Visual Studio Code installs the extension. You're now ready to connect to your Azure subscription and deploy a web, mobile, or API app to an Azure App Service.
 
 ::: zone-end
 
 ::: zone pivot="vstudio"
 
-Here, you'll install Visual Studio on either your Windows or macOS development machine.
+Here, you install Visual Studio on either your Windows or macOS development machine.
 
 ## Exercise steps
 
@@ -105,7 +105,7 @@ To install Visual Studio, use the appropriate steps for your operating system.
 
 1. When the executable finishes downloading, launch the installer and select **Modify**.
 
-1. On the **Workloads** tab, select the **Azure development** workload. The **Installation details** pane on the right displays the tools and extensions for Azure.
+1. On the **Workloads** tab, select the **Azure development** workload. On the right-hand side of the screen, the **Installation details** pane displays the tools and extensions for Azure.
 
     :::image type="content" source="../media/5-select-azure-workload.png" alt-text="Screenshot of Visual Studio Installer Workloads with Azure development highlighted." loc-scope="vs":::
 
@@ -121,7 +121,7 @@ To install Visual Studio, use the appropriate steps for your operating system.
 
 ::: zone pivot="eclipse"
 
-Here, you'll install Eclipse and the Azure Toolkit on your development machine. By the end of the exercise, you'll have everything you need to create a Java application connected to Azure.
+Here, you install Eclipse and the Azure Toolkit on your development machine. By the end of the exercise, you have everything you need to create a Java application connected to Azure.
 
 ## Install Eclipse IDE
 
@@ -148,7 +148,7 @@ Installing the Azure Toolkit is the same across Windows, macOS, and Linux.
 
 1. Start Eclipse and open a workspace.
 
-1. Drag the following icon into the Eclipse workspace to install the Azure Toolkit for Eclipse plugin.
+1. Install the Azure Toolkit for Eclipse plugin, by dragging the following icon into the Eclipse workspace.
 
    [![Screenshot of the Eclipse install icon.](../media/3-eclipse-install-button.png)](https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client")
 
@@ -158,7 +158,7 @@ Installing the Azure Toolkit is the same across Windows, macOS, and Linux.
 
 1. Review and accept the license agreements, then select **Finish**.
 
-1. Eclipse will download and install the Azure Toolkit.
+1. Eclipse downloads and installs the Azure Toolkit.
 
 1. Restart Eclipse, if necessary.
 
@@ -168,7 +168,7 @@ Installing the Azure Toolkit is the same across Windows, macOS, and Linux.
 
 ::: zone pivot="intellij"
 
-Here, you'll install IntelliJ IDEA and the Azure Toolkit on your development machine. By the end of the exercise, you'll have everything you need to create a Java application connected to Azure.
+Here, you install IntelliJ IDEA and the Azure Toolkit on your development machine. By the end of the exercise, you have everything you need to create a Java application connected to Azure.
 
 ## Install IntelliJ IDEA
 
@@ -201,7 +201,7 @@ Installing the Azure Toolkit is the same across Windows, macOS, and Linux.
 
 1. Select **OK**, then select **Install**.
 
-1. Review and accept the license agreements if prompted. IntelliJ IDEA will download and install the Azure Toolkit.
+1. Review and accept the license agreements if prompted. IntelliJ IDEA downloads and installs the Azure Toolkit.
 
 1. Restart IntelliJ IDEA after the installation.
 

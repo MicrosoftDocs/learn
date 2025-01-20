@@ -2,6 +2,8 @@
 uid: learn.wwl.use-system-catalogs-system-views-postgresql.overview-of-system-catalogs-views
 title: An overview of system catalogs and system views
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: An overview of system catalogs and system views
   description: "An overview of system catalogs and system views"
   ms.date: 09/29/2022

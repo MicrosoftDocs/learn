@@ -2,6 +2,8 @@
 uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Review the key points in this module."
   ms.date: 05/23/2023

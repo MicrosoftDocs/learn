@@ -2,14 +2,17 @@
 uid: learn.wwl.embrace-responsible-ai-principles-practices.put-responsible-ai-frameworks
 title: Put responsible AI frameworks in action
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Put responsible AI frameworks in action
   description: "Put responsible AI frameworks in action"
-  ms.date: 08/12/2024
+  ms.date: 01/07/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
   ms.custom:
   - N/A
+  - ai-learning-hub
 durationInMinutes: 8
 content: |
   [!include[](includes/7-put-responsible-ai-frameworks.md)]

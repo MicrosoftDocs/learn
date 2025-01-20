@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.3a-one-lake
 title: Explore Microsoft OneLake in Fabric
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Microsoft OneLake in Fabric
   description: "Explore Azure Data Lake Storage Gen2"
   ms.date: 09/17/2024

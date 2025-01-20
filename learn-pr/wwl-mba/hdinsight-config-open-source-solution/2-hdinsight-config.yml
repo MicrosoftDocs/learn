@@ -2,6 +2,8 @@
 uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.2-hdinsight-configuration-options
 title: HDInsight configuration options
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: HDInsight configuration options
   description: "HDInsight configuration options"
   ms.date: 04/06/2024

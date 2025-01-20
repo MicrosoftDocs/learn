@@ -2,6 +2,8 @@
 uid: learn.wwl.use-prebuilt-form-recognizer-models.use-general-document-read-layout-models
 title: Use the General Document, Read, and Layout models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use the General Document, Read, and Layout models
   description: Use the General Document, Read, and Layout models
   author: ivorb
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/3-use-general-document-read-layout-models.md)]
+

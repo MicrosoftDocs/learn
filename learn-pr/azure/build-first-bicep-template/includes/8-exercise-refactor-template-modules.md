@@ -95,7 +95,7 @@ New-AzResourceGroupDeployment `
 
 ### Check your deployment
 
-1. In your browser, go back to the Azure portal. Go to your resource group, and you'll see that there are now two successful deployments.
+1. In your browser, go back to the Azure portal. Go to your resource group; there are now two successful deployments.
 
 1. Select the **2 Succeeded** link. Notice that you have a deployment called **main** in the list, and a new deployment called **appService**.
 

@@ -1,4 +1,4 @@
-The developer in the introductory scenario didn't engage the disability community during the development process. The developer might have been unsure of where to start, or had concerns about launch timelines and bandwidth. 
+The developer in the introductory scenario didn't engage the disability community during the development process. The developer might be unsure of where to start, or have concerns about launch timelines and bandwidth. 
 
 In this unit, learn foundational concepts for community engagement that address these concerns. These concepts include:
 
@@ -8,7 +8,7 @@ In this unit, learn foundational concepts for community engagement that address 
 
 ## Embed accessibility feedback into existing feedback processes
 
-If your team is new to accessibility, gathering disability perspectives might seem overwhelming. Gathering these perspectives doesn't have to be the case. Think about the standard processes that your team or organization follows when gathering general user feedback or conducting user research outside  accessibility.
+If your team is new to accessibility, gathering disability perspectives might seem overwhelming but it doesn't have to be. Think about the standard processes that your team or organization follows when gathering general user feedback or conducting user research outside accessibility.
 
 For example, your team might already send surveys, conduct regular research studies, or run play tests for all products in development. If so, one way to begin gathering disability feedback without creating entirely new processes or programs is simply ensuring that players with disabilities are included in these existing participant pools.
 
@@ -20,7 +20,7 @@ For example, your team might already send surveys, conduct regular research stud
 Before you get started, you might have questions like:
 
 - "How many players with disabilities should be included in a feedback session?"
-- "How do I know that the feedback from one player represents the feedback of other players with similar disabilities?" 
+- "How do I know that the feedback from one player represents the feedback of other players with similar disabilities?"
 
 Although there's no definitive answer or guideline, it's important to note that the experience of one player with a disability can widely differ from another.
 
@@ -34,7 +34,7 @@ Last-minute efforts to implement accessibility solutions aren't effectively inte
 
 The following information outlines potential ways to gather feedback at various points in development:
 
-- **Pre-development:** Even if your team hasn't begun formal planning or development, there are still opportunities to engage the disability community. Consider using this time to gather foundational insights from players about barriers they've experienced in the past while playing other games of similar genres to what your team develops. An awareness of these barriers before development can help you avoid introducing them in your game altogether.
+- **Pre-development:** Even if your team has yet to begin formal planning or development, there are still opportunities to engage the disability community. Consider using this time to gather foundational insights from players about barriers they experienced in the past while playing other games of similar genres to what your team develops. An awareness of these barriers before development can help you avoid introducing them in your game altogether.
 
 - **Early planning and goal setting:** After you establish early planning and goals, use this information to source feedback. Players can improve accessible development by identifying potential barriers that the anticipated settings, mechanics, and other design elements might pose. They can also provide valuable feedback on your proposed accessibility goals and your plans to achieve them.
 

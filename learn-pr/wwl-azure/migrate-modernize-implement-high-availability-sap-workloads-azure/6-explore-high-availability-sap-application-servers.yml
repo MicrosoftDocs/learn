@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-high-availability-sap-application-servers
 title: Explore high availability of SAP application servers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore high availability of SAP application servers
   description: "Explore high availability of SAP application servers."
   ms.date: 10/10/2024

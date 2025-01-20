@@ -2,6 +2,8 @@
 uid: learn.azure.cna-orchestrate-containers.6-connecting-components
 title: Connecting cloud-native components
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connecting cloud-native components
   description: Connecting cloud-native components
   ms.date: 12/28/2023

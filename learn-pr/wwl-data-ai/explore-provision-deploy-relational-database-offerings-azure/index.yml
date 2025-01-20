@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore relational database services in Azure
   description: "This content is a part of Explore relational database services in Azure."
   ms.date: 10/09/2024

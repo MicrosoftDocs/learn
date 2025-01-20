@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.creating-and-configuring-hdinsight-cluster
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Creating and configuring a HDInsight cluster
   description: "Creating and configuring a HDInsight cluster."
   ms.date: 04/05/2024
@@ -43,3 +45,4 @@ units:
 - learn.wwl.creating-and-configuring-hdinsight-cluster.10-knowledge-check
 badge:
   uid: learn.wwl.creating-and-configuring-hdinsight-cluster.badge
+

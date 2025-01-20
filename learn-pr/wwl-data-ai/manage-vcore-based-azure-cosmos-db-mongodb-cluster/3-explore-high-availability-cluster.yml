@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.explore-high-availability-cluster
 title: Explore high availability in a vCore-based Azure Cosmos DB for MongoDB cluster
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore high availability in a vCore-based Azure Cosmos DB for MongoDB cluster
   description: "Explore high availability in a vCore-based Azure Cosmos DB for MongoDB cluster."
-  ms.date: 04/12/2024
+  ms.date: 11/24/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

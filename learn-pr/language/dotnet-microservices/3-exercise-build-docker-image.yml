@@ -4,7 +4,7 @@ title: Exercise - Build a container image for your .NET microservice
 metadata:
   title: Exercise - Build a container image for your .NET microservice
   description: Learn how to build a container with the .NET SDK or Dockerfile that creates an image for your microservice, and then run the image to see your web API in action.
-  ms.date: 01/22/2024
+  ms.date: 10/23/2024
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit

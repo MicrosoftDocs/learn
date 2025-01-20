@@ -4,6 +4,8 @@ title: Exercise - Deploy a PHP and MySQL - Flexible Server app on Azure App Serv
 sandbox: true
 interactive: bash
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Deploy a PHP and MySQL - Flexible Server app on Azure App Service
   description: Build and deploy a sample PHP application to Azure App Service, and integrate it with Azure Database for MySQL - Flexible Server on the back end.
@@ -19,3 +21,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-app-service-mysql.md)]
+

@@ -2,16 +2,16 @@ You've now seen the Azure portal, SQL Server Management Studio (SSMS), and SQL n
 
 To complete this activity, you can use a PowerShell notebook, which is the same concept as a SQL notebook but the coding language is PowerShell. You can use PowerShell notebooks to take advantage of Azure CLI or Azure PowerShell. This article focuses on Azure CLI commands. For both of these tools, you can also use Azure Cloud Shell, which is an interactive shell environment that you can use through your browser in the Azure portal.
 
-In this exercise, use Cloud Shell. It already includes the Azure CLI and Azure PowerShell modules.
+In this exercise, we use Cloud Shell. It already includes the Azure CLI and Azure PowerShell modules.
 
 ## Connecting with Azure Cloud Shell and the Azure CLI
 
-In the example that follows, explore the latency effects of using different connection policies in Azure SQL.  
+In the example that follows, you explore the latency effects of using different connection policies in Azure SQL.  
 
-Run all of the commands by Cloud Shell. You can easily copy them and then select **Shift**+**Insert** to paste into the terminal.
+Run all of the commands by using Cloud Shell. You can easily copy them and then select **Shift**+**Insert** to paste into the terminal.
 
 > [!NOTE]
-> In PowerShell by using Azure Cloud Shell, you can use the PowerShell Az module or the Azure CLI. In this activity, explore the Azure CLI, but similar commands are available for the PowerShell Az module.
+> In PowerShell by using Azure Cloud Shell, you can use the PowerShell Az module or the Azure CLI. In this activity, we explore the Azure CLI, but similar commands are available for the PowerShell Az module.
 
 1. Go to [shell.azure.com](https://shell.azure.com) and sign in to your Azure account, if prompted.
 
@@ -61,9 +61,9 @@ For detailed explanations of all the available commands, refer to the [Azure CLI
 
 ## Manage connection policies with the Azure CLI
 
-One thing for which you might use the Azure CLI or Azure PowerShell commands is updating the connection policy. This update is an example for how you can manage Azure SQL by using a tool like the Azure CLI. In this example, you look at Azure SQL Database and its commands for managing the connection policies. The implementation is similar in Azure SQL Managed Instance.  
+One thing for which you might use the Azure CLI or Azure PowerShell commands is updating the connection policy. This update is an example of how you can manage Azure SQL by using a tool like the Azure CLI. In this example, you look at Azure SQL Database and its commands for managing the connection policies. The implementation is similar in Azure SQL Managed Instance.  
 
-1. See what the current policy is by using the Azure CLI.  
+1. Discover the current policy by using the Azure CLI.  
 
     ```azurecli
     az sql server conn-policy show

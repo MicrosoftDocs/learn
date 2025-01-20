@@ -2,6 +2,8 @@
 uid: learn.monitor-authentication-methods.exercise-use-logs-get-status-information
 title: Exercise - Access sign-in logs directly
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Access sign-in logs directly
   description: Exercise - Access sign-in logs directly

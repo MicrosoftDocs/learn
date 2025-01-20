@@ -13,7 +13,7 @@ metadata:
     - devx-track-js
 durationInMinutes: 2
 content: |
-  Choose the best response for each of the questions below. Then select **Check your answers**.
+  Choose the best response for each of the questions below. 
 quiz:
   questions:
   - content: "What happens when you add code to a namespace?"

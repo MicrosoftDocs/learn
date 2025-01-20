@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.publish-static-web-app-and-api-dotnet
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
   description: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
   ms.date: 11/14/2023
@@ -54,3 +56,4 @@ units:
   - learn.azure.publish-static-web-app-and-api-dotnet.12-summary
 badge:
   uid: learn.azure.publish-static-web-app-and-api-dotnet.badge
+

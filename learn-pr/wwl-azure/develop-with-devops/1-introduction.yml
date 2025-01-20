@@ -2,6 +2,8 @@
 uid: learn.wwl.develop-with-devops.introduction
 title: 'Introduction'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Introduction'
   description: "In this module, learn about the principles and benefits of version and source control, the differences between centralized and distributed version control systems, Git terminology and features."
   ms.date: 02/06/2024

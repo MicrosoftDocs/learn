@@ -4,8 +4,8 @@ metadata:
   title: Design solutions that align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)
   description: "You learn about the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB) and how you can use them to design more secure solutions."
   ms.date: 09/09/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted

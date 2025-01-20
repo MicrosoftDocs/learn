@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-implement-administer-conditional-access
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan, implement, and administer Conditional Access
   description: "Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe."
-  ms.date: 10/14/2024
+  ms.date: 12/16/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: module-standard-task-based

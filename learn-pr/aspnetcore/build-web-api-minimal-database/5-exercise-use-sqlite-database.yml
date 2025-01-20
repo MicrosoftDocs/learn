@@ -5,9 +5,8 @@ metadata:
   title: Exercise - Use the SQLite database provider with EF Core
   description: Use the SQLite database provider with EF Core to add database persistence to your application.
   ms.date: 02/01/2023
-  author: jongalloway
-  ms.author: chnoring
-  ms.manager: markl
+  author: CamSoper
+  ms.author: casoper
   ms.custom: team=nextgen
   ms.topic: unit
 durationInMinutes: 10

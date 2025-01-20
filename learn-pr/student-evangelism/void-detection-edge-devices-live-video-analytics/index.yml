@@ -2,6 +2,8 @@
 # Oxford University Module - Oxford responsible for ongoing maintenance
 uid: learn.oxford.void-detection-edge-devices-lva
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Void detection on Edge devices with Live Video Analytics using own images and video"
   description: "This module helps learner to deploy void detection solution using Live Video Analytics and Custom Vision"
   ms.date: 07/20/2024
@@ -55,3 +57,4 @@ units:
 - learn.oxford.void-detection-edge-devices-lva.how-deploy-solution
 - learn.oxford.void-detection-edge-devices-lva.exercise-deploy-solution
 - learn.oxford.void-detection-edge-devices-lva.summary
+

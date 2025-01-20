@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: introduction-azure-ddos-protection
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Introduction to Azure DDoS Protection"
   description: Learn how to guard your Azure services from a denial of service attack using Azure DDoS Protection.
   manager: kumud
@@ -45,3 +47,4 @@ units:
 - learn.introduction-azure-ddos-protection.6-summary
 badge:
   uid: learn.introduction-azure-ddos-protection.badge
+

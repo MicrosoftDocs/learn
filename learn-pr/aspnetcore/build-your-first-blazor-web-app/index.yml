@@ -7,7 +7,7 @@ metadata:
   author: danroth27
   ms.author: daroth
   manager: coxford
-  ms.topic: module
+  ms.topic: module-build-your-first
   ms.service: aspnet-core
   ms.subservice: blazor
 title: Build your first web app with Blazor

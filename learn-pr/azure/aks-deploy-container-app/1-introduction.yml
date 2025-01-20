@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-deploy-container-app.1-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.published: 07/31/2020

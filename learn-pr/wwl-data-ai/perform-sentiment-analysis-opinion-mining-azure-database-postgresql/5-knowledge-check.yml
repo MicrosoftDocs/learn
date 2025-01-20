@@ -2,11 +2,13 @@
 uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
-  ms.author: rcaper
-  ms.date: 04/26/2024
+  ms.author: calopez
+  ms.date: 11/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -49,3 +51,4 @@ quiz:
     - content: "Overall sentiment orientation"
       isCorrect: false
       explanation: "Incorrect. Overall sentiment orientation refers to text classification based on underlying sentiment. Sentiment analysis labels are used to describe this, but it doesn't define the labels sentiment analysis provides."
+

@@ -2,6 +2,8 @@
 uid: learn.machinelearning.introduction-to-machine-learning.exercise-test-ml-models
 title: Exercise - Use machine learning models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use machine learning models
   description: Exercise unit using a machine learning model
   ms.date: 08/21/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 12
 sandbox: true
 notebook: notebooks/1-7-exercise-test-ml-models.ipynb
+

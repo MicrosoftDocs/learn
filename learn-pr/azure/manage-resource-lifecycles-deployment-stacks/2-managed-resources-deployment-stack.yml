@@ -2,6 +2,8 @@
 uid: learn.azure.manage-resource-lifecycles-deployment-stacks.managed-resources-deployment-stack
 title: Managed resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Managed resources
   description: Learn about managed resources in a deployment stack.
   ms.date: 08/01/2023
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 7
 content: | 
   [!include[](includes/2-managed-resources-deployment-stack.md)]
+

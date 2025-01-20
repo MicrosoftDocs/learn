@@ -2,6 +2,8 @@
 uid: learn.caching-and-performance-azure-storage-and-disks.6-exercise-manage-cache-settings-with-powershell
 title: Exercise - Manage cache settings with PowerShell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Manage cache settings with PowerShell
   description: Exercise - Manage cache settings with PowerShell
   ms.date: 12/28/2023
@@ -15,3 +17,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-manage-cache-settings-with-powershell.md)]
+

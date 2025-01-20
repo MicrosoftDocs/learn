@@ -5,9 +5,8 @@ metadata:
   title: Use the SQLite database provider with EF Core
   description: Learn how to use the SQLite database provider with EF Core to persist your data.
   ms.date: 02/01/2023
-  author: jongalloway
-  ms.author: chnoring
-  ms.manager: markl
+  author: CamSoper
+  ms.author: casoper
   ms.custom: team=nextgen
   ms.topic: unit
 durationInMinutes: 4

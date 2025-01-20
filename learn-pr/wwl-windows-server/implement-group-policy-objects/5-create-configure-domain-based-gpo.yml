@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-group-policy-objects.create-configure-domain-based-gpo
 title: Create and configure a domain-based GPO
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and configure a domain-based GPO
   description: "Create and configure a domain-based GPO"
   ms.date: 04/17/2024

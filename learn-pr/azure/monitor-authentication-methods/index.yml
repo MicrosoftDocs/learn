@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.monitor-authentication-methods
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: build-your-first-using-product 
   title: Monitor and report on authentication methods used in Microsoft Entra ID
   description: "This module teaches you how to create a Microsoft Entra workbook that helps you to create a report of the authentication methods used in your tenant."                        # Copy your 'apply' Learning Objective here (see below)
@@ -46,3 +48,4 @@ units:
 - learn.monitor-authentication-methods.summary
 badge:
   uid: learn.monitor-authentication-methods.badge
+

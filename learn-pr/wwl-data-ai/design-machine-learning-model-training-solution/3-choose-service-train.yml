@@ -2,6 +2,8 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.choose-service-train
 title: Choose a service to train a machine learning model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose a service to train a machine learning model
   description: Choose a service to train a machine learning model
   author: wwlpublish
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/3-choose-service-train.md)]
+

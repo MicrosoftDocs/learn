@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-roles-responsibilities-world-of-data.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 10/09/2024

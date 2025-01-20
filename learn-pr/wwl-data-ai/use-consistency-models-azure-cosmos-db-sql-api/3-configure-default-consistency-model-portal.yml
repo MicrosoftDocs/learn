@@ -2,6 +2,8 @@
 uid: learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.configure-default-consistency-model-portal
 title: Configure default consistency model in the portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure default consistency model in the portal
   description: "Configure default consistency model in the portal"
   ms.date: 10/17/2022

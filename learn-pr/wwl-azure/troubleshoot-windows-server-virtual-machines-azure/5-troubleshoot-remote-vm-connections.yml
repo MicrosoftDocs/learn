@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-connectivity
 title: Troubleshoot VM connectivity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot VM connectivity
   description: "Troubleshoot VM connectivity"
   ms.date: 02/17/2023

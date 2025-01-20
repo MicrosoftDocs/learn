@@ -2,6 +2,8 @@
 uid: learn.azure.child-extension-bicep-templates.resource-types
 title: Understand Azure resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand Azure resources
   description: Learn about Azure resource types and resource IDs.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-azure-resources.md)]
+

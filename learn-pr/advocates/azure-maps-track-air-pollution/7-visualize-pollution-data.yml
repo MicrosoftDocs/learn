@@ -2,6 +2,8 @@
 uid: learn.advocates.use-azure-maps-to-track-air-pollution.7-visualize-pollution-data
 title: Exercise - Show air quality data on a map
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Show air quality data on a map
   description: Get air quality data from an API, convert it to GeoJSON, and show it on the map as a bubble layer.
   author: acomfort248

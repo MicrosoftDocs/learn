@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.1-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 11/13/2023

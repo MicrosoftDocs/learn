@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-open-source-database-migration-azure.considerations-migration
 title: Considerations for migration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Considerations for migration
   description: "Considerations for migration"
   ms.date: 11/07/2022

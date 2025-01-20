@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build multi-item transactions with the Azure Cosmos DB for NoSQL
   description: "Author stored procedures using JavaScript in Azure Cosmos DB for NoSQL."
   ms.date: 10/17/2022

@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-git-branches-workflows.version-control-git-azure-repos
 title: Version Control with Git in Azure Repos
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Version Control with Git in Azure Repos
   description: "Version Control with Git in Azure Repos"
   ms.date: 05/24/2024

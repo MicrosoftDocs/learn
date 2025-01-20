@@ -2,6 +2,8 @@
 uid: learn.azure.terraform-introduction-to-infrastructure-as-code.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your learning.
@@ -92,3 +94,4 @@ quiz:
     - content: Hyper Cloud Language
       isCorrect: false
       explanation: Incorrect.
+

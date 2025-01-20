@@ -22,7 +22,7 @@ Let’s start by defining the system message. The system message, also referred 
 
 Let’s create a system message for the Contoso Camping Store chatbot that instructs the model to act as a conversational agent and only discuss company products.
 
-:::image type="content" source="../media/system-message.png" alt-text="A screenshot of the system message section of the chat playground in Azure AI Studio. The button to apply changes and the section for the system message are highlighted." lightbox="../media/system-message.png":::
+:::image type="content" source="../media/system-message.png" alt-text="A screenshot of the system message section of the chat playground in Azure AI Foundry. The system message section is highlighted." lightbox="../media/system-message.png":::
 
 1. On the **Chat playground** page, within the **System message** box, enter:
 
@@ -36,9 +36,9 @@ Let’s create a system message for the Contoso Camping Store chatbot that instr
 
 ## Add a safety system message
 
-When defining more safety and behavioral guardrails, it’s helpful to first identify and prioritize the harms you’d like to address. Depending on the application, the sensitivity and severity of certain harms could be more important than others. Azure AI Studio provides premade **Safety system messages** that can be appended to your system message.
+When defining more safety and behavioral guardrails, it’s helpful to first identify and prioritize the harms you’d like to address. Depending on the application, the sensitivity and severity of certain harms could be more important than others. Azure AI Foundry provides pre-made **Safety system messages** that can be appended to your system message.
 
-:::image type="content" source="../media/safety-system-message.png" alt-text="A screenshot of the safety system message window within the chat playground of Azure AI Studio." lightbox="../media/safety-system-message.png":::
+:::image type="content" source="../media/safety-system-message.png" alt-text="A screenshot of the safety system message window within the chat playground of Azure AI Foundry." lightbox="../media/safety-system-message.png":::
 
 1. Select the **+ Add section** drop-down and select **Safety system messages**.
 1. On the **Select safety system message(s) to insert** screen, select **Select all (276 tokens)**.

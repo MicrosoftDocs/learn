@@ -2,7 +2,7 @@ RAG with Azure OpenAI allows developers to use supported AI chat models that can
 
 > [!VIDEO https://play.vidyard.com/2E323dRGxhs8P8fvXNhdg7?loop=1]
 
-Azure OpenAI enables RAG by connecting pretrained models to your own data sources. Azure OpenAI on your data utilizes the search ability of Azure AI Search to add the relevant data chunks to the prompt. Once your data is in a AI Search index, Azure OpenAI on your data goes through the following steps:
+Azure OpenAI enables RAG by connecting pretrained models to your own data sources. Azure OpenAI on your data utilizes the search ability of Azure AI Search to add the relevant data chunks to the prompt. Once your data is in an AI Search index, Azure OpenAI on your data goes through the following steps:
 
 1. Receive user prompt.
 1. Determine relevant content and intent of the prompt.
@@ -17,4 +17,4 @@ By default, Azure OpenAI on your data encourages, but doesn't require, the model
 
 Fine-tuning is a technique used to create a custom model by training an existing foundational model such as `gpt-35-turbo` with a dataset of additional training data. Fine-tuning can result in higher quality requests than prompt engineering alone, customize the model on examples larger than can fit in a prompt, and allow the user to provide fewer examples to get the same high quality response. However, the process for fine-tuning is both costly and time intensive, and should only be used for use cases where it's necessary.
 
-RAG with Azure OpenAI on your data still uses the stateless API to connect to the model, which removes the requirement of training a custom model with your data and simplifies the interaction with the AI model. AI Search first finds the useful information to answer the prompt, adds that to the prompt as grounding data, and Azure OpenAI forms the response based on that information.
+RAG with Azure OpenAI on your data still uses the stateless API to connect to the model, which removes the requirement of training a custom model with your data and simplifies the interaction with the AI model. AI Search first finds the useful information to answer the prompt, it then adds that information to the prompt as grounding data, and Azure OpenAI then forms the response based on that information.

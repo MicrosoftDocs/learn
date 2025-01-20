@@ -40,4 +40,4 @@ However, if your friend is in a different city or country/region, you need to po
 
 In this short two-minute video, you'll see how everyday activities form networks, from speaking with your friends on the phone, to sharing emails. Then you'll look at the way messages are broken down into packets that can be sent across the network. Finally, you'll see how each packet of a message is routed across the internet to get to its recipient.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWP56O]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3607e138-2528-4343-ab06-aaf456d71715]

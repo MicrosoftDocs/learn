@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.security-copilot-getting-started.describe-how-to-enable-security-copilot
-title: Describe how to enable Microsoft Copilot for Security
+title: Describe how to enable Microsoft Security Copilot
 metadata:
-  title: Describe how to enable Microsoft Copilot for Security
-  description: Describe how to enable Microsoft Copilot for Security.
+  title: Describe how to enable Microsoft Security Copilot
+  description: Describe how to enable Microsoft Security Copilot.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 08/22/2024
+  ms.date: 11/20/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

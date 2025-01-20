@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.large-language-model-deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   ms.author: chnoring
   author: softchris
   ms.date: 09/25/2024
@@ -38,3 +40,4 @@ units:
 - learn.large-language-model-deployment.summary
 badge:
   uid: learn.module-2-create-an-llm-deployment-badge
+

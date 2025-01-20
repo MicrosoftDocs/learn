@@ -1,19 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-custom-copilots-ai-studio
 metadata:
-  title: Develop your own custom copilots with Azure AI Studio
-  description: Learn how to create custom copilots with the Azure AI Studio.
-  ms.date: 05/08/2024
+  title: Develop generative AI apps in the Azure AI Foundry portal AI-3016
+  description: Learn how to develop generative AI apps in the Azure AI Foundry portal. (AI-3016)
+  ms.date: 11/25/2024
   author: wwlpublish
   ms.author: madiepev
   ms.topic: learning-path
   ms.collection: wwl-ai-copilot
   ms.custom: [copilot-learning-hub]
-title: Develop your own custom copilots with Azure AI Studio
+title: Develop generative AI apps in Azure AI Foundry portal
 prerequisites: |
   Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.
 summary: |
-  Generative Artificial Intelligence (AI) is becoming more accessible through easy-to-use platforms like Azure AI Studio. Learn how to build generative AI applications like custom copilots that use language models and prompt flow to provide value to your users.
+  Generative Artificial Intelligence (AI) is becoming more accessible through easy-to-use platforms like Azure AI Foundry. Learn how to build generative AI applications that use language models with prompt flow to provide value to your users.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

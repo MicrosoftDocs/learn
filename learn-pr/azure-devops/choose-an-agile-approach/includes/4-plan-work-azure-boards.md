@@ -23,7 +23,7 @@ Here, you'll create an Azure DevOps project.
     Open-source project creators will often choose public visibility so that others can view active issues and build status.
 1. Select **Advanced**.
 1. Under **Version control**, ensure that **Git** is selected. Under **Work item process**, ensure that **Basic** is selected.
-1. Select **Create**.
+1. Select **Create Project**.
 
 After just a few moments, you're taken to your new project.
 
@@ -35,7 +35,7 @@ Here, you'll create a team for the project.
 
 1. On the **Project details** page, under **General**, select **Teams**.
 
-    You see that a default team, based on the name of the project, **Space Game - web Team**, has been created. We'll use this team, but in practice you might have multiple teams that contribute to the same project.
+    Based on the name of the project **Space Game - web Team**, you see that a default team has been created. We'll use this team, but in practice you might have multiple teams that contribute to the same project.
 
 1. Select **Space Game - web Team**.
 
@@ -46,7 +46,7 @@ Here, you'll create a team for the project.
 Now's a good time to add members to your team. Although not required, if you'd like to add a coworker to your Azure DevOps organization, here's how:
 
 1. Under **Members**, select **Add**.
-1. Enter the email address of the user you'd like to add, then select **Save**.
+1. Enter the email address of the user you'd like to add, and then select **Save**.
 1. Repeat the process for any other members you'd like to add.
 
 Mara adds entries for herself and her team members: *andy@tailspintoys.com*, *amita@tailspintoys.com*, *mara@tailspintoys.com*, and *tim@tailspintoys.com*.
@@ -67,7 +67,7 @@ Although Mara and her team identified a number of issues, here you'll add the th
 
     If you choose a different process, like Scrum, you'll see a layout that supports that process.
 
-1. In the **To Do** column, select the green **+** button next to the **New item** field.
+1. In the **To Do** column, select the **+ New item** button.
 
 1. Enter **Stabilize the build server**, and then press <kbd>Enter</kbd>.
 
@@ -114,7 +114,7 @@ When you create an Azure Boards project, you get an initial sprint called **Spri
 
 An _iteration_ is another name for a sprint.
 
-You have an initial set of work items and a timeline for your first sprint. Here, you'll connect work items to your sprint and assign the tasks to yourself.
+You have an initial set of work items and a timeline for your first sprint. Here, you'll connect work items to your sprint, and assign the tasks to yourself.
 
 1. Under **Boards**, select **Work items**.
 
@@ -124,7 +124,7 @@ You have an initial set of work items and a timeline for your first sprint. Here
 
     :::image type="content" source="../media/3-assign-sprint.png" alt-text="Screenshot of Azure Boards showing the location of the Sprint 1 iteration.":::
 
-1. From the same window, select **Unassigned** and set yourself as the task owner.
+1. From the same window, select **No one selected**, and set yourself as the task owner.
 
     :::image type="content" source="../media/3-assign-owner.png" alt-text="Screenshot of Azure Boards showing the location of the task owner.":::
 

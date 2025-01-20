@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.altair-azure-sphere-program-emulator.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 11/16/2021
@@ -11,7 +13,7 @@ metadata:
   ms.custom: nextgen
 durationInMinutes: 2 # dummy number at present
 content: | 
-  Choose the best response for each of the following questions. Then select **Check your answers**.
+  Choose the best response for each of the following questions. 
 quiz:
   questions:
   - content: "Which of the following options is true about Altair BASIC?"
@@ -36,3 +38,4 @@ quiz:
     - content: "When the Altair emulator starts, you can program in Altair BASIC, Microsoft BASIC, C, and Assembler."
       isCorrect: false
       explanation: "You can program with Microsoft BASIC, C, and Assembler, but that's not how the emulator starts."
+

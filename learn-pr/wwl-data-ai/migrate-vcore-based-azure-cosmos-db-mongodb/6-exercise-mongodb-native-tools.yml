@@ -2,9 +2,11 @@
 uid: learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.exercise-mongodb-native-tools
 title: 'Exercise: Migrate to vCore-based Azure Cosmos DB for MongoDB with MongoDB native tools'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Migrate to vCore-based Azure Cosmos DB for MongoDB with MongoDB native tools'
   description: "Exercise: Migrate to vCore-based Azure Cosmos DB for MongoDB with MongoDB native tools"
-  ms.date: 04/08/2024
+  ms.date: 11/24/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

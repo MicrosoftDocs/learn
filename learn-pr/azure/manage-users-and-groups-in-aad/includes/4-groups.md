@@ -1,4 +1,4 @@
-A Microsoft Entra group helps organize users, which makes it easier to manage permissions. Using groups lets the resource owner (or Microsoft Entra directory owner), assign a set of access permissions to all the group members instead of having to provide the rights one by one. Groups allow you to define a security boundary, then add and remove specific users to grant or deny access with a minimum amount of effort. Even better, Microsoft Entra ID supports the ability to define membership based on rules, such as what department a user works in or the job title they have.
+A Microsoft Entra group helps organize users, which makes it easier to manage permissions. Using groups lets the resource owner (or Microsoft Entra directory owner) assign a set of access permissions to all the group members instead of having to provide the rights one by one. Groups allow you to define a security boundary, then add and remove specific users to grant or deny access with a minimum amount of effort. Even better, Microsoft Entra ID supports the ability to define membership based on rules, such as what department a user works in or the job title they have.
 
 Microsoft Entra ID allows you to define two different types of groups.
 
@@ -8,21 +8,21 @@ Microsoft Entra ID allows you to define two different types of groups.
 
 ## View available groups
 
-You can view all groups by selecting **Groups** under the **Manage** section from the Microsoft Entra dashboard. A new Microsoft Entra ID install won't have any groups defined.
+You can view all groups by selecting **Groups**, then **Overview** in the left pane in Microsoft Entra admin center. A new Microsoft Entra ID install won't have any groups defined.
 
-![Screenshot that depicts all the existing groups.](../media/M1-Groups1.png)
+![Screenshot of the Groups Overview pane in Microsoft Entra admin center.](../media/M1-Groups1.png)
 
 <a name='add-groups-to-azure-ad'></a>
 
 ## Add groups to Microsoft Entra ID
 
-The same options we saw with users are available to create groups in Microsoft Entra ID. The Azure portal is the easiest way to create groups. You must select the group type (Security or Microsoft 365), assign a unique group name, description and a *membership type*.
+The Microsoft Entra admin center is the easiest way to create groups. You must select the group type (Security or Microsoft 365), assign a unique group name, description and a *membership type*.
 
 ![Screenshot of the Create Group feature in the Azure portal.](../media/4-add-group-portal.png)
 
 The membership type field can be one of three values:
 
-1. **Assigned (static)**. The group will contain specific users or groups that you select.
+1. **Assigned**. The group will contain specific users or groups that you select.
 
 1. **Dynamic user**. You can create rules based on characteristics to enable attribute-based dynamic memberships for groups. For example, if a user’s department is Sales, that user will be dynamically assigned to the Sales group.
 

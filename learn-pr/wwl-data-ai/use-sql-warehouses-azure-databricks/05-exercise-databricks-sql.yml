@@ -2,6 +2,8 @@
 uid: learn.wwl.use-sql-warehouses-azure-databricks.exercise-use-sql-warehouse
 title: Exercise - Use a SQL Warehouse in Azure Databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use a SQL Warehouse in Azure Databricks
   description: "Exercise - Use a SQL Warehouse in Azure Databricks"
   ms.date: 09/05/2024

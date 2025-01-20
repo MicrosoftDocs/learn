@@ -4,7 +4,7 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 05/11/2023
+  ms.date: 11/19/2024
   author: ju-shim
   ms.author: jushiman
   ms.topic: unit
@@ -19,24 +19,24 @@ quiz:
       choices:
       - content: "You're working with highly structured, relational data."
         isCorrect: false
-        explanation: "MongoDB, the \"M\" in the MEAN stack, is a NoSQL database. A NoSQL database is non-relational, which means it doesn't require data to be structured like SQL Server or other relational databases."
+        explanation: "MongoDB, the \"M\" in the MEAN stack, is a NoSQL database. A NoSQL database is nonrelational, which means it doesn't require data to be structured like SQL Server or other relational databases."
       - content: "MEAN apps run faster than ones created with other development stacks."
         isCorrect: false
-        explanation: "There are many development stacks out there. No one is necessarily faster or better than others. Each was created with a certain kind of app and developer skill set in mind."
+        explanation: "There are many development stacks out there. No one is necessarily faster or better than others. Each was created with a certain type of app and developer skill set in mind."
       - content: "Everyone on your development team is an expert with JavaScript."
         isCorrect: true
         explanation: "The MEAN stack greatly relies on JavaScript. JavaScript appears in both the client side and the server side of your web app."
     - content: "What's a NoSQL database?"
       choices:
-      - content: "It's a term used to describe any free, open-source database software."
+      - content: "It's a term used to describe any free, open-source, database software."
         isCorrect: false
         explanation: "While many databases are free and open source, NoSQL describes how data is structured."
-      - content: "It's a database that doesn't require data to be structured in a pre-defined way."
+      - content: "It's a database that doesn't require data to be structured in a predefined way."
         isCorrect: true
         explanation: "MongoDB, for example, stores its data in JSON-like documents that don't require the rigid data structures required by MySQL or other relational databases."
       - content: "It's a kind of relational database, but doesn't use the SQL language to access and manipulate data."
         isCorrect: false
-        explanation: "NoSQL databases are non-relational, which means that it doesn't require data to be structured in a pre-defined way."
+        explanation: "NoSQL databases are nonrelational, which means that it doesn't require data to be structured in a predefined way."
     - content: "What's the role of AngularJS in the MEAN stack?"
       choices:
       - content: "AngularJS implements data binding for HTML and JavaScript. For example, you can use AngularJS to retrieve items from a database and display those items in the UI."
@@ -44,7 +44,7 @@ quiz:
         explanation: "Data binding helps keep your HTML clean and minimal. AngularJS displays updates immediately to the user when the underlying data changes."
       - content: "It's a browser plugin that gets installed on your user's computer."
         isCorrect: false
-        explanation: "You don't technically install AngularJS &mdash; it's simply JavaScript code that you reference from a script tag in your HTML page."
+        explanation: "You don't technically install AngularJS. It's simply JavaScript code that you reference from a script tag in your HTML page."
       - content: "It helps run the web application from the server side."
         isCorrect: false
         explanation: "Node.js, not AngularJS, is what hosts a MEAN web app from the server side."

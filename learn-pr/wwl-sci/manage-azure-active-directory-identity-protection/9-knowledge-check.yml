@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-azure-ad-identity-protection.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/03/2024
+  ms.date: 12/17/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
@@ -38,7 +40,7 @@ quiz:
     - content: "Hybrid identity sign-in risk policy"
       isCorrect: false
       explanation: "Incorrect. There's no directory policy for hybrid identity."
-  - content: "In Microsoft Graph, which three APIs expose information about risky users and sign-ins"
+  - content: "In Microsoft Graph, which three APIs expose information about risky users and sign-ins?"
     choices:
     - content: "`riskDetection, riskyUsers, signIns`"
       isCorrect: true

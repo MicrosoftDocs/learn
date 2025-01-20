@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.perform-system-diagnostics-test-azurestack
 title: Perform system diagnostics by using Test-AzureStack
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform system diagnostics by using Test-AzureStack
   description: "Perform system diagnostics by using Test-AzureStack"
   ms.date: 03/29/2022

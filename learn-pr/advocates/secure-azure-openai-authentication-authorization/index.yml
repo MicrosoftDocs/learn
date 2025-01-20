@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.secure-azure-openai-authentication-authorization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   ms.author: sayoung
   author: sarah-yo
   ms.date: 10/16/2024
@@ -36,3 +38,4 @@ units:
 - learn.secure-azure-openai-authentication-authorization.summary
 badge:
   uid: learn.secure-azure-openai-authentication-authorization-badge
+

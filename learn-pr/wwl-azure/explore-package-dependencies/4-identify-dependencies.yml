@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-package-dependencies.identify-dependencies
 title: Identify dependencies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify dependencies
   description: "Identify dependencies"
   ms.date: 05/07/2024

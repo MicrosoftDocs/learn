@@ -2,6 +2,8 @@
 uid: learn.azure.accelerate-migration-journey.8-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Use the skills you learned to help your organization migrate to the cloud to improve cost-efficiency, agility, and scalability.
   ms.date: 05/15/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]
+

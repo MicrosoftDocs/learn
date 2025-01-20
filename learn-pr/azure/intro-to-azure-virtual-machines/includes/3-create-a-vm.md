@@ -40,7 +40,7 @@ You need to configure the basic parameters of your virtual machine. If some of t
     | Region | From the dropdown list, select a geographical location close to you. |
     | Availability options  | No infrastructure redundancy required |
     | Security type  | Standard |
-    | Image | Ubuntu Server 20.04 LTS - Gen2 |
+    | Image | Ubuntu Server 24.04 LTS - Gen2 |
     | VM architecture  | x64 |
     | Run with Azure Spot discount | Unchecked |
     | Size | Standard D2s V3 |

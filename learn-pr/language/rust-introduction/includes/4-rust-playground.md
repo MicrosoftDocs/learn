@@ -42,4 +42,4 @@ You can read more about the features of the Rust playground on the [Rust website
 
 ### Check your knowledge
 
-Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
+Answer the following questions to see what you've learned. Choose one answer for each question.

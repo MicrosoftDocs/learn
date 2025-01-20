@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.mongodb-cosmos-db-migration-planning
 title: MongoDB to Cosmos DB migration planning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: MongoDB to Cosmos DB migration planning
   description: "MongoDB to Cosmos DB migration planning"
   ms.date: 02/03/2021
@@ -15,3 +17,4 @@ azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-migration-plan.md)]
+

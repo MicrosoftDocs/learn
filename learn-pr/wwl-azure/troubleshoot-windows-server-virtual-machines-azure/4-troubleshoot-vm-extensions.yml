@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-extensions
 title: Troubleshoot VM extensions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot VM extensions
   description: "Troubleshoot VM extensions"
   ms.date: 02/17/2023

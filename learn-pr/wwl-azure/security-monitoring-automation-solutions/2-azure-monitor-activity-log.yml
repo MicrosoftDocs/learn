@@ -2,6 +2,8 @@
 uid: learn.wwl.security-monitoring-automation-solutions.azure-monitor-activity-log
 title: Monitor security events by using Azure Monitor
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor security events by using Azure Monitor
   description: "Monitor security events by using Azure Monitor"
   ms.date: 04/26/2024

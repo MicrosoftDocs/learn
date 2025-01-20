@@ -2,6 +2,8 @@
 uid: learn.wwl.get-started-ai-fundamentals.introduction-ai
 title: Introduction to AI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to AI
   description: "Introduction to AI"
   ms.date: 10/03/2024

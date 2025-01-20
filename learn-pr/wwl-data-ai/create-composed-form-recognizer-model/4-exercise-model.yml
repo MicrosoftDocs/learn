@@ -2,6 +2,8 @@
 uid: learn.wwl.create-composed-form-recognizer-model.exercise-model
 title: 'Exercise: Create a composed model'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Exercise: Create a composed model"
   description: "Exercise: Create a composed model"
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-exercise-model.md)]
+

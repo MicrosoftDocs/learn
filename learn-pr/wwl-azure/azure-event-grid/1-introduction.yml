@@ -2,6 +2,8 @@
 uid: learn.wwl.azure-event-grid.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 07/17/2024

@@ -15,7 +15,7 @@ You'll create a static class to hold the app's font color and background color v
 
 1. In the **Solution Explorer** window, right-click the **Notes** project, select **Add**, then select **Class**.
 
-1. In the **Add New Item** dialog box, make sure the **Class** template is selected. Name the new class file **SharedResources.cs**, and then select **Add**:
+1. In the **Add New Item** dialog box, make sure the **Class** template is selected. Name the new class file **SharedResources.cs**, then select **Add**:
 
     :::image type="content" source="../media/8-add-class-file.png" alt-text="A screenshot of the Add New Item dialog box. The user is adding a class named SharedResources.":::
 

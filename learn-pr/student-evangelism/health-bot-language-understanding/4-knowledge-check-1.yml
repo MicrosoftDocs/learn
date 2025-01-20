@@ -2,6 +2,8 @@
 uid: learn.health-bot-language-understanding.4-knowledge-check-1
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Four multiple-choice questions
   ms.date: 03/10/2023

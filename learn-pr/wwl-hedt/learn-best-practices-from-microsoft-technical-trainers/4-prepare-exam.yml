@@ -2,6 +2,8 @@
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers.prepare-exam
 title: Prepare for the exam
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 4-Prepare for the exam
   description: "Prepare for the exam"
   ms.date: 08/08/2022

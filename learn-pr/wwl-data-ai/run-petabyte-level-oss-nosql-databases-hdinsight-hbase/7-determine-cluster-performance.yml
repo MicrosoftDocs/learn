@@ -2,6 +2,8 @@
 uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.determine-cluster-performance
 title: Determine HDInsight HBase cluster performance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine HDInsight HBase cluster performance
   description: "Determine HDInsight HBase cluster performance"
   ms.date: 04/09/2024

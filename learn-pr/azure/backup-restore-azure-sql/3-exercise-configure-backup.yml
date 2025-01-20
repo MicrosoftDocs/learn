@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.backup-restore-azure-sql.3-exercise-configure-backup
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Configure backups for Azure SQL Database
   description: Learn how to set up an Azure SQL database and configure automated backups for it.
   ms.date: 12/11/2023

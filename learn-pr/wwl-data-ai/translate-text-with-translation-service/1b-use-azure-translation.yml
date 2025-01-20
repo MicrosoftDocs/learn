@@ -2,6 +2,8 @@
 uid: learn.wwl.translate-text-with-translation-service.understand-translation-azure
 title: Understand translation in Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand translation in Azure
   description: "Understand translation in Azure"
   ms.date: 09/13/2024

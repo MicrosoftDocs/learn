@@ -1,16 +1,16 @@
-As a GitHub administrator, your goal is to keep everything working smoothly for your users. In this unit, you'll learn about the different levels in the GitHub organizational hierarchy and the administration tasks associated with each level.
+As a GitHub administrator, your goal is to keep everything working smoothly for your users. In this unit, you learn about the different levels in the GitHub organizational hierarchy and the administration tasks associated with each level.
 
 ## Administration at team level
 
 :::image type="content" source="../media/teams.png" alt-text="Screenshot of the organization screen with the Teams tab highlighted.":::
 
-In GitHub, each user is an organization member that you can add to a team. You can create teams in your organization with cascading access permissions and mentions reflecting your company or group's structure. Teams are useful for refining repository permissions on a more granular level and enabling communication and notification between team members.
+In GitHub, each user is an organization member that you can add to a team. You can create teams in your organization with cascading access permissions and mentions reflecting your company or group's structure. A team is a useful substructure for refining repository permissions on a more granular level and enabling communication and notification between team members.
 
 Additionally, GitHub allows you to sync your teams with identity provider (IdP) groups such as Microsoft Entra ID. When you synchronize a GitHub team with Microsoft Entra ID, you can replicate changes to GitHub automatically. This sync reduces the need for manual updates and custom scripts. You can use Microsoft Entra ID with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions, and removing member access to the organization.
 
 Members of a team with *team maintainer* or repository *admin* permissions can:
 
-- Create a new team as well as select or change the parent team.
+- Create a new team and select or change the parent team.
 - Delete or rename a team.
 - Add or remove organization members from a team, or synchronize a GitHub team's membership with an IdP group.
 - Add or remove outside collaborators (people who aren't explicitly members of your organization, such as consultants or temporary employees) from team repositories.
@@ -25,7 +25,7 @@ Members of a team with *team maintainer* or repository *admin* permissions can:
 Creating teams in your organization enables greater flexibility for collaboration and can make it easier to separate repositories and permissions. The following are some best practices for setting up teams on GitHub:
 
 - Create nested teams to reflect your group or company's hierarchy within your GitHub organization.
-- Create teams based on interests or specific technology (JavaScript, data science, etc.) to help streamline PR review processes. Individuals can choose to join these teams according to their interests or skills.
+- Help streamline PR review processes by creating teams based on interests or specific technology (JavaScript, data science, etc.). Individuals can choose to join these teams according to their interests or skills.
 - Enable team synchronization between your IdP and GitHub to allow organization owners and team maintainers to connect teams in your organization with IdP groups. When you synchronize a GitHub team with an IdP group, you can replicate changes to GitHub automatically, reducing the need for manual updates and custom scripts. You can use an IdP with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions, and removing member access to the organization.
 
 ## Administration at organization level
@@ -43,9 +43,9 @@ Members of an organization with the *owner* permission can perform a wide range 
 - Extract various types of information about repositories via the use of custom scripts.
 - Apply organization-wide changes such as migrations via the use of custom scripts.
 
-We recommend setting up only one organization for your users and repositories. If specific constraints in your company require you to create multiple organizations, be aware that:
+We recommend setting up only one organization for your users and repositories. If specific constraints in your company require you to create multiple organizations, you should be aware of the following points:
 
-- It isn't possible to duplicate an organization or share configurations between two organizations. This means that you must set up everything from scratch every time you create an organization, which increases the risk of errors in your settings.
+- Duplicating an organization or sharing configurations between two organizations isn't possible. This means that you must set up everything from scratch every time you create an organization, which increases the risk of errors in your settings.
 - Depending on your software providers' policies, you might incur extra costs if you need to install some applications in multiple organizations.
 - Managing multiple organizations is more difficult!
 
@@ -55,7 +55,7 @@ Enterprise accounts include GitHub Enterprise Cloud and Enterprise Server instan
 
 At the enterprise level, members of an enterprise with the *owner* permissions can:
 
-- Enable SAML single sign-on for their enterprise account, allowing each enterprise member to link their external identity on your IdP to their existing GitHub account.
+- Enable security assertion markup language (SAML) single sign-on for their enterprise account, allowing each enterprise member to link their external identity on your IdP to their existing GitHub account.
 - Add or remove organizations from the enterprise.
 - Set up billing or assign a billing manager for all organizations in the enterprise.
 - Set up repository management policies, project board policies, team policies, and other security settings that apply to all the organizations, repositories, and members in the enterprise.

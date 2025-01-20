@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-mysql-storage-engine.describe-common-storage-engines
 title: Describe the common storage engines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the common storage engines
   description: "Describe the common storage engines"
   ms.date: 11/08/2022

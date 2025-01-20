@@ -2,9 +2,11 @@
 uid: learn.wwl.plan-implement-administer-conditional-access.plan-security-defaults
 title: Plan security defaults
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan security defaults
   description: "Plan security defaults"
-  ms.date: 10/14/2024
+  ms.date: 12/16/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

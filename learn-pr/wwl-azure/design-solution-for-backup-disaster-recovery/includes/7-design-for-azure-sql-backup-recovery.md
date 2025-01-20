@@ -20,7 +20,7 @@ You can use the automated backups in several ways.
 
 - [Restore a database to another geographic region](/azure/azure-sql/database/recovery-using-backups). Geo-restore allows you to recover from a geographic disaster when you can't access your database or backups in the primary region. It creates a new database on any existing server or managed instance, in any Azure region.
 
-- [Restore a database from a specific long-term backup](/azure/azure-sql/database/long-term-retention-overview) of a single database or pooled database. If the database is configured with a long-term retention polic, you can restore an old version of the database.
+- [Restore a database from a specific long-term backup](/azure/azure-sql/database/long-term-retention-overview) of a single database or pooled database. If the database is configured with a long-term retention policy, you can restore an old version of the database.
 
  
 

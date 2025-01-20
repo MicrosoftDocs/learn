@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.machine-learning-model-nasa.8-test-model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Predict the success of a rocket launch using machine learning
   description: Use the model you created to make predictions about rocket launches.
   ms.date: 09/04/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.develop-with-devops.explore-shift-left-testing
 title: 'Explore shift-left testing'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Explore shift-left testing'
   description: "In this unit, explore shift-left testing to improve code quality and minimize operational risk in software development."
   ms.date: 02/06/2024

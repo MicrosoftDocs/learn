@@ -41,7 +41,7 @@ Let's look at the preceding example with the firewall rules configured. From a t
 SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
 ```  
 
-The result would be `174.17.218.16`. This is the public IP address of the Azure VM. Even though we're using firewall rules, all the connections being made are public.
+The result would be `203.0.113.1`. This is the public IP address of the Azure VM. Even though we're using firewall rules, all the connections being made are public.
 
 ### Virtual network rules
 
@@ -73,7 +73,7 @@ Address: 168.63.129.16
 
 Non-authoritative answer:
 Name:   cr2.eastus1-a.control.database.windows.net
-Address:    174.17.218.16
+Address:    203.0.113.1
 Aliases:    aw-server.database.windows.net
             dataslice2.eastus.database.windows.net
 ```

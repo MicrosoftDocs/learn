@@ -2,11 +2,13 @@
 uid: learn.wwl.build-copilot-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check to test your knowledge on grounding models with RAG.
   author: madiepev
   ms.author: madiepev
-  ms.date: 02/21/2024
+  ms.date: 11/26/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -47,3 +49,4 @@ quiz:
     - content: "Index Lookup tool."
       isCorrect: true
       explanation: "Correct. You can use the Index lookup tool to retrieve grounding data from an index in Prompt Flow."
+

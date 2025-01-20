@@ -2,7 +2,7 @@ We begin by:
 
 - Reviewing branches and their importance to pull requests.
 - Defining what a pull request is.
-- Learning about creating a pull request, reviewing pull request statuses, and merging a pull request.
+- Learning how to create a pull request, review pull request statuses, and merge a pull request.
 
 ## Branches
 
@@ -41,7 +41,7 @@ Now let’s review how to create a pull request!
 
    :::image type="content" source="../media/2-compare-and-pull-request.png" alt-text="Screenshot of a yellow text box, highlighting the green compare and pull request button." border="false":::
 
-1. In the **base branch** dropdown menu, select the branch you'd like to merge your changes into. Then select the **compare branch** dropdown menu to select the topic branch you made your changes in.
+1. In the **base branch** dropdown menu, select the branch you'd like to merge your changes into. Then select the **compare branch** dropdown menu to select the branch you made your changes in.
 
 1. Enter a title and description for your pull request.
 

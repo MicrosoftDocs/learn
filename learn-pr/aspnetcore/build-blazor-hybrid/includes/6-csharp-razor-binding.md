@@ -1,8 +1,8 @@
-You've defined the UI for your web app. Now, let's explore how to add logic to the app. In a Blazor app, you can add C# code in separate .cs files or inline in your Razor components.
+You've defined the UI for your web app. Now, let's explore how to add logic to the app. In a Blazor app, you can add C# code in separate *.cs* files or inline in your Razor components.
 
 ## C# inline in components
 
-A common practice is to mix HTML and C# in a single Razor component file. For simple components with lighter code requirements, this approach works well. To add code into a Razor file, you'll use Razor syntax.
+It's common practice to mix HTML and C# in a single Razor component file. For simple components with lighter code requirements, this approach works well. To add code into a Razor file, you'll use Razor syntax.
 
 ## What are Razor directives?
 

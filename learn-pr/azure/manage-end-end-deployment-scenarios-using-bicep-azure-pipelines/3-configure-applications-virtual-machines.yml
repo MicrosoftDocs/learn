@@ -2,6 +2,8 @@
 uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.configure-applications-virtual-machines
 title: Configure applications and virtual machines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Configure applications and virtual machines
   description: In this unit, you learn how to build and deploy applications in a Bicep deployment pipeline.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/3-configure-applications-virtual-machines.md)]
+

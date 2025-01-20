@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-authentication-microsoft-entra-id.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/04/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

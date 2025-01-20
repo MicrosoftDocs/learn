@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.register-deployed-sap-system
 title: Register an existing SAP system
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Register an existing SAP system
   description: "Register an existing SAP system in Azure Center for SAP solutions."
   ms.date: 01/09/2024

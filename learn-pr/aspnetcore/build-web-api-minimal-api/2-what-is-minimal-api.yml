@@ -5,9 +5,8 @@ metadata:
   title: What is minimal API?
   description: Learn what minimal API is and how to create a project with it.
   ms.date: 12/22/2022
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: CamSoper
+  ms.author: casoper
   ms.custom: team=nextgen
   ms.topic: unit
 durationInMinutes: 6

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-teach-az-104-microsoft-azure-administrator
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Get tips and tricks for teaching AZ-104 Microsoft Azure Administrator
   description: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
   ms.date: 04/01/2024
@@ -58,3 +60,4 @@ units:
 - learn.wwl.get-tips-tricks-teach-az-104-microsoft-azure-administrator.summary
 badge:
   uid: learn.wwl.get-tips-tricks-for-teaching-az-104-microsoft-azure-administrator.badge
+

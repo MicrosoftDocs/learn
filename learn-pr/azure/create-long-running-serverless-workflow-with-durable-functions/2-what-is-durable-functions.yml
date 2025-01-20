@@ -2,6 +2,8 @@
 uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions.2-what-is-durable-functions
 title: What is Durable Functions?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Durable Functions?
   description: What is Durable Functions?
   ms.date: 10/19/2023
@@ -47,3 +49,4 @@ quiz:
     - content: "It allows the output from one function to be applied to input of the next function in a series of function calls."
       isCorrect: false
       explanation: "No. Use the Function Chaining application pattern for this situation."
+

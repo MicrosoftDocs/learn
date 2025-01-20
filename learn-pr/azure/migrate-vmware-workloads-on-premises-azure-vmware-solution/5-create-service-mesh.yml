@@ -2,6 +2,8 @@
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.create-service-mesh
 title: Create a service mesh for VMware HCX
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Create a service mesh for VMware HCX
   description: Create a service mesh for VMware HCX.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/5-create-service-mesh.md)]
+

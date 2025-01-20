@@ -2,6 +2,8 @@
 uid: learn.azure.communication-service-send-sms-console-app.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary of what you learned in the module and next steps for learning.
   author: softchris
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]
+

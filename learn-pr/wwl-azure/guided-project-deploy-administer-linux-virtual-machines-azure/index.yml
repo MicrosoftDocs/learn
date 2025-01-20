@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Guided Project: Deploy and administer Linux virtual machines on Azure'
   description: "You learn how to create and configure Linux virtual machines in Microsoft Azure."
   ms.date: 07/30/2024

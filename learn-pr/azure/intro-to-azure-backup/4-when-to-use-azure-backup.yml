@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-azure-backup.when-to-use-azure-backup
 title: When to use Azure Backup
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Azure Backup
   description: Discover key scenarios where Azure Backup can be used.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-when-to-use-azure-backup.md)]
+

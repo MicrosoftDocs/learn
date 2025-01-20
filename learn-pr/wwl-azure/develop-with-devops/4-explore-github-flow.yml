@@ -2,6 +2,8 @@
 uid: learn.wwl.develop-with-devops.explore-github-flow
 title: 'Explore GitHub flow'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Explore GitHub flow'
   description: "GitHub Flow provides prescriptive guidance on applying changes to GitHub-hosted projects, streamlining collaborative software development with Git."
   ms.date: 02/06/2024

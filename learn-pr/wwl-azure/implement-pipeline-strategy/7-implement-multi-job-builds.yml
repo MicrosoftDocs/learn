@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-pipeline-strategy.implement-multi-job-builds
 title: Implement multi-job builds
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement multi-job builds
   description: "Implement multi-job builds"
   ms.date: 05/26/2024

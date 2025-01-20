@@ -2,6 +2,8 @@
 uid: learn.wwl.use-functions-modules-windows-powershell-scripts.review-functions
 title: Review functions in Windows PowerShell scripts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review functions in Windows PowerShell scripts
   description: "Review functions in Windows PowerShell scripts"
   ms.date: 07/03/2023
@@ -14,3 +16,4 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/2-review-functions.md)]
+

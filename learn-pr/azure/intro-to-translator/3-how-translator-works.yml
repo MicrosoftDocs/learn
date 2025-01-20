@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-translator.how-translator-works
 title: How Translator works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Translator works
   description: How Translator works
   author: laujan
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!INCLUDE[](includes/3-how-translator-works.md)]
+

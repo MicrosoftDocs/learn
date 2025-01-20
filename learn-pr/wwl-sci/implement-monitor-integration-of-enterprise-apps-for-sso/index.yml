@@ -1,25 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement and monitor the integration of enterprise apps for SSO
   description: "Deploying and monitoring enterprise applications to Azure solutions can ensure security. Explore how to deploy on-premises and cloud based apps to users."
-  ms.date: 10/25/2023
+  ms.date: 12/16/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Implement and monitor the integration of enterprise apps for SSO
 summary: Deploying and monitoring enterprise applications to Azure solutions can ensure security. Explore how to deploy on-premises and cloud based apps to users.
 abstract: |
   By the end of this module, you will be able to:
-  - Implement token customizations
-  - Implement and configure consent settings
-  - Integrate on-premises apps by using Microsoft Entra application proxy
-  - Integrate custom SaaS apps for SSO
-  - Implement application user provisioning
-  - Monitor and audit access/Sign-On to Microsoft Entra ID integrated enterprise applications
-prerequisites: |
-  None
+
+  -   Implement token customizations
+
+  -   Implement and configure consent settings
+
+  -   Integrate on-premises apps by using Microsoft Entra application proxy
+
+  -   Integrate custom SaaS apps for SSO
+
+  -   Implement application user provisioning
+
+  -   Monitor and audit access/Sign-On to Microsoft Entra ID integrated enterprise applications
+prerequisites: None
 iconUrl: /learn/achievements/implement-and-monitor-the-integration-of-enterprise-apps-for-sso.svg
 levels:
 - advanced

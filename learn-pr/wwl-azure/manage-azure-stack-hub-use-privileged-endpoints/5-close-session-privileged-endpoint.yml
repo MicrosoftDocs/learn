@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.close-session-privileged-endpoint
 title: Close the session on the privileged endpoint
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Close the session on the privileged endpoint
   description: "Close the session on the privileged endpoint"
   ms.date: 03/29/2022

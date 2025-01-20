@@ -1,10 +1,12 @@
 ### YamlMime:Module
 uid: learn.control-network-traffic-flow-with-routes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage and control traffic flow in your Azure deployment with routes
   description: Learn how to control Azure virtual network traffic by implementing custom routes.
   manager: kumud
-  ms.date: 10/10/2024
+  ms.date: 12/02/2024
   author: mbender-ms
   ms.author: mbender
   ms.topic: module
@@ -43,3 +45,4 @@ units:
 - learn.control-network-traffic-flow-with-routes.7-summary
 badge:
   uid: learn.control-network-traffic-flow-with-routes.badge
+

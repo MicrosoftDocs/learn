@@ -2,12 +2,15 @@
 uid: learn.azdo.manage-delivery-plans.8-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Learn how to continue your journey by configuring build pipelines that continuously build, test, and verify your applications.
-  ms.date: 10/06/2023
+  ms.date: 10/18/2024
   author: chcomley
   ms.author: chcomley
   ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-summary.md)]
+

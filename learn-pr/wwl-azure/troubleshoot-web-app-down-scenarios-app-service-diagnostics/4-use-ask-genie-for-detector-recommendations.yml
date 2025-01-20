@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.use-ask-genie-for-detector-recommendations
 title: Use Ask Genie for detector recommendations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use Ask Genie for detector recommendations
   description: "Use Ask Genie for detector recommendations"
   ms.date: 07/13/2022

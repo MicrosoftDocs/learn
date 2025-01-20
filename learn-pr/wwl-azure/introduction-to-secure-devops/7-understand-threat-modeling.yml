@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-secure-devops.understand-threat-modeling
 title: Understand threat modeling
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand threat modeling
   description: "Understand threat modeling"
   ms.date: 05/22/2024

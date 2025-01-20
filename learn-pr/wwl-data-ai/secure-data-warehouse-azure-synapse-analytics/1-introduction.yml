@@ -2,6 +2,8 @@
 uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 07/04/2023

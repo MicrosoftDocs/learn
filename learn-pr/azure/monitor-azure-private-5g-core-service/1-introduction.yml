@@ -2,6 +2,8 @@
 uid: learn.monitor-azure-private-5g-core-service.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduces the monitoring capabilities of Azure Private 5G Core.
   ms.date: 07/31/2024

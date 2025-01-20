@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-governance-manageability.resource-manager-template-structure-schema
 title: Explore the Azure Resource Manager template structure and schema
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the Azure Resource Manager template structure and schema
   description: "Explore the Azure Resource Manager template structure and schema."
   ms.date: 08/02/2024

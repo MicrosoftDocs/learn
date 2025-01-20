@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.generate-code-azure-openai
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Generate code with Azure OpenAI Service
   description: Learn how to use the Azure OpenAI Service to generate and improve code.
   author: ivorb
@@ -45,3 +47,4 @@ units:
 - learn.wwl.generate-code-azure-openai.summary
 badge:
   uid: learn.wwl.generate-code-azure-openai.badge
+

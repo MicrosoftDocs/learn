@@ -2,6 +2,8 @@
 uid: learn.azure.build-first-azure-developer-cli-template.add-source-code
 title: Add the application source code
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Add the application source code
   description: Add the application source code to the template
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-add-source-code.md)]
+

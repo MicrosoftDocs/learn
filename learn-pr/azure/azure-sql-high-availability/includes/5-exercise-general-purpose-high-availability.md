@@ -41,7 +41,7 @@ The first step is to create a long-running workload. This workload allows you to
 1. In the Azure Cloud Shell terminal on the right side of this page, run this PowerShell script to configure your environment:  
 
     ```powershell
-    $resourceGroup = "<rgn>Sandbox resource group name</rgn>"
+    $resourceGroup = "<rgn>[sandbox resource group name]</rgn>"
     $database = "AdventureWorks"
     $server = Get-AzureRmSqlServer -ResourceGroupName $resourceGroup
     $server = $server.ServerName

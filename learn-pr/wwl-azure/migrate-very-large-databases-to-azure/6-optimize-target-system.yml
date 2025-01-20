@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-very-large-databases-vldb-to-azure.optimize-target-system
 title: Optimize the target system
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Optimize the target system
   description: "Optimize the target system."
   ms.date: 08/01/2024

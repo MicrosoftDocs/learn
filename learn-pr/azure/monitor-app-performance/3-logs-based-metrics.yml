@@ -2,6 +2,8 @@
 uid: learn.wwl.monitor-app-performance.discover-log-based-metrics
 title: Discover log-based metrics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover log-based metrics
   description: "Discover log-based metrics"
   ms.date: 07/18/2024

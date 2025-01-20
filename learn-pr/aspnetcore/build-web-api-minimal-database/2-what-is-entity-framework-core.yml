@@ -5,9 +5,8 @@ metadata:
   title: What is Entity Framework Core?
   description: Learn what Entity Framework (EF) Core is and how to use it with your API.
   ms.date: 02/01/2023
-  author: jongalloway
-  ms.author: chnoring
-  ms.manager: markl
+  author: CamSoper
+  ms.author: casoper
   ms.custom: team=nextgen
   ms.topic: unit
 durationInMinutes: 6

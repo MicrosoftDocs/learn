@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-cache-for-redis 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Introduction to Azure Cache for Redis
   description: Evaluate how Azure Cache for Redis can improve the performance and scalability of your apps. Describe how Redis provides a critical low-latency and high-throughput data storage solution to modern apps.
@@ -40,3 +42,4 @@ units:
 - learn.intro-to-azure-cache-for-redis.6-summary
 badge:
   uid: learn.intro-to-azure-cache-for-redis.badge
+

@@ -2,14 +2,14 @@ When you want to fine-tune a language model, you can use a base or foundation mo
 
 When you want to use a fine-tuned model to generate responses in a chat application, you need to use a base model that can be fine-tuned on a chat completion task. The Azure AI Studio model catalog allows you to filter based on fine-tuning tasks to decide which base model to select. You can, for example, select a GPT-4 or Llama-2-7b model to fine-tune on your own training data.
 
-To fine-tune a language model from Azure AI Studio's model catalog, you can use the user interface provided in the studio.
+To fine-tune a language model from Azure AI Foundry's model catalog, you can use the user interface provided in the portal.
 
 ## Select the base model
 
-When you navigate to the model catalog in the Azure AI Studio, you can explore all available language models.
+When you navigate to the model catalog in the Azure AI Foundry portal, you can explore all available language models.
 
 > [!Note]
-> Though all available language models will appear in the Azure AI Studio model catalog, you might not be able to fine-tune the model you want depending on the available quota. Ensure the model you want to fine-tune is available in the region you created your AI hub in.
+> Though all available language models will appear in the Azure AI Foundry model catalog, you might not be able to fine-tune the model you want depending on the available quota. Ensure the model you want to fine-tune is available in the region you created your AI hub in.
 
 You can filter the available models based on the task you want to fine-tune a model for. Per task, you have several options for foundation models to choose from. When deciding between foundation models for a task, you can examine the description of the model, and the referenced model card.
 
@@ -21,11 +21,11 @@ Some considerations you can take into account when deciding on a foundation mode
 - **Language support**: Explore which models offer the specific language support or multilingual capabilities that you need for your use case.
 
 > [!Tip]
-> Though the Azure AI Studio provides you with descriptions for each foundation model in the model catalog, you can also find more information about each model through the respective model card. The model cards are referenced in the overview of each model and hosted on [the website of Hugging Face](https://huggingface.co/models?azure-portal=true)
+> Though the Azure AI Foundry portal provides you with descriptions for each foundation model in the model catalog, you can also find more information about each model through the respective model card. The model cards are referenced in the overview of each model and hosted on [the website of Hugging Face](https://huggingface.co/models?azure-portal=true).
 
 ## Configure the fine-tuning job
 
-To configure a fine-tuning job using the Azure AI studio, you need to do the following steps:
+To configure a fine-tuning job using the Azure AI Foundry portal, you need to do the following steps:
 
 1. Select a base model.
 1. Select your training data.

@@ -34,21 +34,9 @@ AssignableScopes : {/}
 
 Try the same for the **Contributor** and **Reader** roles to see the actions allowed and denied.
 
-## Examine the built-in roles
+## Built-in roles
 
-Next, let's explore some of the other built-in roles.
-
-1. Open the [Azure portal](https://portal.azure.com?azure-portal=true).
-
-1. On the Azure home page, select **Resource groups** in the left-hand menu.
-
-1. Select a resource group. Your *Resource group* pane appears.
-
-1. In the left menu pane, select the **Access control (IAM)**. The **Access control (IAM)** pane appears for your resource group.
-
-1. On the interior menu bar, select the **Roles** tab as follows to see the list of available roles.
-
-    ![Screenshot showing the roles in the Azure portal.](../media/5-list-roles.png)
+For an in-depth examination of the RBAC and user roles in Microsoft Entra ID, see [Examine RBAC and user roles in Microsoft Entra ID](/training/modules/manage-identities-azure-active-directory/2-examine-rbac-user-roles-azure-active-directory).
 
 ## What's a role definition?
 
@@ -103,7 +91,7 @@ As an example, here are the actions for the three roles we looked at previously:
 |Contributor (allow all actions except writing or deleting role assignments)|`*`|`Microsoft.Authorization/*/Delete, Microsoft.Authorization/*/Write, Microsoft.Authorization/elevateAccess/Action`|
 |Reader (allow all read actions)|`*/read`| - |
 
-The wildcard (`*`) operation under `Actions` indicates that the principal assigned to this role can perform all actions; or in other words, this role can manage everything, including actions defined in the future, as Azure adds new resource types. With the **Reader** role, only the `read` action is allowed.
+The wildcard (`*`) operation under `Actions` indicates that the principal assigned to this role can perform all actions; or in other words, this role can manage everything, including actions defined in the future as new resource types are added to Azure. With the **Reader** role, only the `read` action is allowed.
 
 The operations under `NotActions` are subtracted from `Actions`. With the **Contributor** role, `NotActions` removes this role's ability to manage access to resources, and also removes assigning access to resources.
 
@@ -151,10 +139,12 @@ Microsoft Entra ID comes with built-in roles that are likely to cover 99% of wha
 
 You can create a new role through several mechanisms:
 
+* **Microsoft Entra admin center**: You can use the Microsoft Entra admin center to create a custom role by selecting **Roles & admins** under **Roles & admins** in the left menu, then selecting **New custom role**.
+
 * **Azure portal**: You can use the Azure portal to create a custom role by selecting **Microsoft Entra ID** > **Roles and administrators** > **New custom role**.
 
 * **Azure PowerShell**: You can use the `New-AzRoleDefinition` cmdlet to define a new role.
 
 * **Azure Graph API**: You can use a REST call to the Graph API to programmatically create a new role.
 
-This module's Summary section includes a link to the documentation for all three approaches.
+This module's Summary section includes a link to the documentation for these approaches.

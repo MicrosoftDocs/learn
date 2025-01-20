@@ -13,6 +13,9 @@ prerequisites: |
   -   Experience creating resources in Azure.
 summary: |
   Learn how to implement GitHub Actions and configure Azure Load Testing to automate testing app deployments.
+  > [!IMPORTANT]
+  > The release for the Applied Skills assessment is currently delayed. The course content remains available for self-paced learning or associated ILT deliveries. This page will be updated with a confirmed release date as soon as it is available.
+  
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate

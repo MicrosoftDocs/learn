@@ -2,14 +2,16 @@
 uid: learn.wwl.configure-azure-app-services.use-application-insights
 title: Use Azure Application Insights
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use Azure Application Insights
   description: "Use Azure Application Insights"
-  ms.date: 11/14/2023
+  ms.date: 12/18/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/10-use-application-insights.md)]

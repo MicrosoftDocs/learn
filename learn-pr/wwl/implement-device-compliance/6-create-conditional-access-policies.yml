@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-device-compliance.create-conditional-access-policies
 title: Create conditional access policies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create conditional access policies
   description: "Create conditional access policies"
   ms.date: 10/09/2023

@@ -1,4 +1,5 @@
-As you continue your development work for a logistics company, you begin building a series of small applications.  Combined, the applications take data from one partner's system, modify the data, then pass it to an internal system in the format it requires.
+
+As you continue your development work for a logistics company, you begin building a series of small applications. These applications work together to take data from one partner's system, modify it, and then pass it to an internal system in the required format.
 
 To perform data transformation, you need to accept incoming data as a string, parse it into smaller data elements, then manipulate it to match different format required. How can you parse the string data into smaller data elements?
 
@@ -6,7 +7,7 @@ To perform data transformation, you need to accept incoming data as a string, pa
 
 The variables of type `string` have many built-in methods that convert a single string into either an array of smaller strings, or an array of individual characters.
 
-When processing data from other computer systems, sometimes it's formatted or encoded in a way that's not useful for your purposes. In these cases, you can use the `string` data type's Array methods to parse a string into an array.
+When you process data from other computer systems, sometimes it formats or encodes in a way that's not useful for your purposes. In these cases, you use the `string` data type's Array methods to parse a string into an array.
 
 ### Use the `ToCharArray()` to reverse a `string`
 
@@ -20,11 +21,11 @@ When processing data from other computer systems, sometimes it's formatted or en
 
     ```
 
-Here you use the `ToCharArray()` method to create an array of `char`, each element of the array has one character of the original string.
+In this example, the `ToCharArray()` method is used to create an array of `char`, where each element of the array represents one character of the original string.
 
 ### Reverse, then combine the char array into a new string
 
-Next, you reverse the order of the chars in the array, then use the `Write` method to combine them back into a single output.
+Next, the order of the characters in the array is reversed, and then the `Write` method is used to combine them back into a single output.
 
 1. Update your code in the Visual Studio Code Editor as follows:
 
@@ -64,7 +65,7 @@ Next, you reverse the order of the chars in the array, then use the `Write` meth
 
 ### Combine all of the chars into a new comma-separated-value string using `Join()`
 
-Perhaps you need to separate each element of the char array using a comma, as is common when working with data that is represented as ASCII text. To do that, you'll comment out the line of code you added in Step 2 and use the `String` class' `Join()` method, passing in the char you want to delimit each segment (the comma) and the array itself.
+In some cases, you might need to separate each element of the character array using a comma, which is a common practice when working with data represented as ASCII text. To do that, you comment out the line of code you added in Step 2 and use the `String` class' `Join()` method, passing in the char you want to delimit each segment (the comma) and the array itself.
 
 1. Update your code in the Visual Studio Code Editor as follows:
 
@@ -89,7 +90,7 @@ Perhaps you need to separate each element of the char array using a comma, as is
 
 ### `Split()` the comma-separated-value string into an array of strings
 
-To complete the code, you use the `Split()` method, which is for variables of type `string` to create an array of strings.
+To complete the code, the `Split()` method is used. This method is designed for variables of type `string` and creates an array of strings.
 
 1. Use the Visual Studio Code Editor to add the following lines of code at the bottom of the file:
 
@@ -125,7 +126,7 @@ To complete the code, you use the `Split()` method, which is for variables of ty
 
 1. Save your code file, and then use Visual Studio Code to run your code. 
 
-    When you run the code, you'll see the following output:
+    When you run the code, you see the following output:
 
     ```Output
     3,2,1,c,b,a
@@ -141,7 +142,7 @@ To complete the code, you use the `Split()` method, which is for variables of ty
 
 ## Recap
 
-Here's a few things to remember when working with strings and arrays:
+Here are a few key points to remember when working with strings and arrays:
 
-- Use methods like `ToCharArray()` and `Split()` to create an array
-- Use methods like `Join()`, or create a new string passing in an array of `char` to turn the array back into a single string
+- To create an array, use methods like `ToCharArray()` and `Split()`
+- To turn the array back into a single string, use methods like `Join()`, or create a new string passing in an array of `char`

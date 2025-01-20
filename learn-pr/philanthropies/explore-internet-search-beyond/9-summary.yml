@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-internet-search-beyond.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is a part of the module about internet search and beyond.
+  ms.date: 10/07/2024
+  author: v-downesmary
+  ms.author: v-downesmary
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

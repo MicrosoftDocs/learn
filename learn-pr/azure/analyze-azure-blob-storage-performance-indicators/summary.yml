@@ -2,6 +2,8 @@
 uid: learn.azure.analyze-azure-blob-storage-performance-indicators.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Provide an introduction of Azure Premium Blob Storage.
   ms.date: 08/01/2022
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/summary.md)]
+

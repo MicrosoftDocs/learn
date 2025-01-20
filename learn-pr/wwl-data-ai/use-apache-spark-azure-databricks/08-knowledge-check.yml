@@ -2,11 +2,13 @@
 uid: learn.wwl.use-apache-spark-azure-databricks.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/29/2023
+  ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: unit
 azureSandbox: false
 labModal: false

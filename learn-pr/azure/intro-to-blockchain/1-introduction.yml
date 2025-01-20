@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-intro-to-blockchain.introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 07/09/2024
@@ -11,3 +13,4 @@ title: Introduction
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

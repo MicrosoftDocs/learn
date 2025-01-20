@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.machinelearning.introduction-to-classical-machine-learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build classical machine learning models with supervised learning
   description: Supervised learning is a form of machine learning where an algorithm learns from examples of data. We progressively paint a picture of how supervised learning automatically generates a model that can make predictions about the real world. We also touch on how these models are tested, and difficulties that can arise in training them.
-  ms.date: 09/20/2024
+  ms.date: 11/01/2024
   ms.service: azure-machine-learning
   ms.collection:
     - TBD
@@ -18,7 +20,7 @@ abstract: |
   In this module, you will:
   - Define supervised and unsupervised learning.
   - Explore how cost functions affect the learning process.
-  - Discover how models are optimized by gradient descent.
+  - Discover how to optimize models by using gradient descent.
   - Experiment with learning rates, and see how they can affect training.
 prerequisites: A basic familiarity with inputs, outputs, and models
 iconUrl: /training/achievements/machine-learning/introduction-to-classical-machine-learning.svg
@@ -45,3 +47,4 @@ units:
 - learn.machinelearning.introduction-to-classical-machine-learning.summary
 badge: 
   uid: learn.machinelearning.introduction-to-classical-machine-learning.badge #add the uid for your achievement badge.
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.deep-learning-azure-databricks.deep-learning
 title: Understand deep learning concepts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand deep learning concepts
   description: Understand deep learning concepts
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-deep-learning.md)]
+

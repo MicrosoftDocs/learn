@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.examine-how-to-manage-disenrollment
 title: Examine how to manage disenrollment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine how to manage disenrollment
   description: "Examine how to manage disenrollment"
   ms.date: 01/08/2024

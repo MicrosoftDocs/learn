@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-implement-privileged-access.configure-privileged-identity-management-for-azure-resources
 title: Configure Privileged Identity Management for Azure resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Privileged Identity Management for Azure resources
   description: "Configure Privileged Identity Management for Azure resources"
   ms.date: 10/23/2023

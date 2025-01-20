@@ -5,7 +5,7 @@ In this unit, you create a Spring Boot application that sends messages to an Azu
 To create our Spring Boot project, we use [Spring Initializr](https://start.spring.io/) with the following command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web -d baseDir=spring-sender-application -d bootVersion=2.4.1.RELEASE -d javaVersion=1.8 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web -d baseDir=spring-sender-application -d bootVersion=3.3.0.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
 ## Send messages to a Service Bus queue
@@ -17,11 +17,12 @@ Now, let's send some messages to a Service Bus queue.
 In the `pom.xml` file in your `spring-sender-application`, add the following command under dependencies:
 
 ```xml
-            <dependency>
-                <groupId>com.microsoft.azure</groupId>
-                <artifactId>azure-servicebus-jms-spring-boot-starter</artifactId>
-                <version>2.3.3</version>
-            </dependency>
+		<!-- https://mvnrepository.com/artifact/com.azure.spring/spring-cloud-azure-starter-servicebus-jms -->
+		<dependency>
+		    <groupId>com.azure.spring</groupId>
+		    <artifactId>spring-cloud-azure-starter-servicebus-jms</artifactId>
+		    <version>5.18.0</version>
+		</dependency>
 ```
 
 ### Add the configuration parameters
@@ -31,6 +32,7 @@ In the `pom.xml` file in your `spring-sender-application`, add the following com
     ```java
     spring.jms.servicebus.connection-string=<xxxxx>
     spring.jms.servicebus.idle-timeout=20000
+    spring.jms.servicebus.pricing-tier=premium
     ```
 
 2. Set the `spring.jms.servicebus.connection-string` property to the connection string to your Service Bus namespace, which you saved earlier.

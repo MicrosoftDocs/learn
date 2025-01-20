@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-incident-readiness
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Incident Readiness
   description: "This Azure Incident Readiness module focuses on preparedness and proactive measures for managing Azure incidents. It provides guidance on getting notified and staying informed, building secure and resilient applications, understanding the incident process including information relating to our post incident reviews (PIRs), and when to engage support. Additionally, customers with support contracts will receive information on building their Major Incident Response Plan with their Microsoft account team."
   ms.date: 6/25/2023
@@ -38,3 +40,4 @@ units:
 - learn.intro-to-azure-incident-readiness.summary
 badge:
   uid: learn.intro-to-azure-incident-readiness.badge
+

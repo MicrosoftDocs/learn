@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.onboard-linux-server
 title: Onboard a Linux server
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Onboard a Linux server
   description: "Onboard a Linux server"
   ms.date: 06/11/2024
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/9-onboard-linux-server.md)]
+

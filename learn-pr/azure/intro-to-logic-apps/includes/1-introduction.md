@@ -20,11 +20,15 @@ Azure Logic Apps is a cloud platform that helps you:
 
 Suppose you work at an athletic shoe company that is planning a new product. You sell the shoes on your website, manage your cloud-hosted advertising videos, and monitor industry news about your company and your competitors.
 
-The following diagram shows these processes, which include tasks for customer-focused processes, such as direct sales, administrative tasks, such as autoarchiving outdated videos, and marketing tasks, such as monitoring and analyzing news for market perception:
+The following diagram shows the tasks for these business processes:
+
+- Customer-focused processes, such as direct sales. 
+- Administrative tasks, such as autoarchiving outdated videos.
+- Marketing tasks, such as monitoring and analyzing news for market perception.
 
 :::image type="content" source="../media/business-processes.png" alt-text="Diagram shows three business processes for a fictitious shoe company, including online sales to customers, news analysis, and video asset management." lightbox="../media/business-processes.png":::
 
-The first business process shows a typical flow for online sales, which include getting a customer order, charging a credit card, and shipping the product. The second process shows managing video assets by moving outdated videos to lower-cost storage. The third shows monitoring and analyzing industry news.
+The first business process shows a typical flow for online sales, which includes getting a customer order, charging a credit card, and shipping the product. The second process shows managing video assets by moving outdated videos to lower-cost storage. The third shows monitoring and analyzing industry news.
 
 In this module, you learn how Azure Logic Apps can automate these types of business processes. You also learn how these processes work behind the scenes. This module should help you decide whether Azure Logic Apps is a good fit for implementing your business scenario.
 

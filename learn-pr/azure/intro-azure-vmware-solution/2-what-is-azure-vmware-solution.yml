@@ -2,9 +2,11 @@
 uid: learn.azure.intro-azure-vmware-solution.what-is-azure-vmware-solution
 title: What is Azure VMware Solution?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure VMware Solution?
   description: Learn about what Azure VMware Solution is and what it does.
-  ms.date: 04/30/2024
+  ms.date: 10/23/2024
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -27,7 +29,7 @@ quiz:
     - content: "Azure VMware Solution is the fastest way to force a move off Azure-centric operational processes."
       isCorrect: false
       explanation: "Incorrect. Azure VMware Solution provides a fast path to cloud."
-  - content: "Which native Azure service can be used to mount VM file shares using SMB or NFS?"
+  - content: "Which native Azure service can be used to mount virtual machine (VM) file shares using server message block (SMB) or network file system (NFS)?"
     choices:
     - content: "Azure Databricks"
       isCorrect: false
@@ -39,3 +41,4 @@ quiz:
       isCorrect: true
       explanation: "Correct. Azure NetApp Files supports mounting volumes using SMB or NFS on VMs."
   
+

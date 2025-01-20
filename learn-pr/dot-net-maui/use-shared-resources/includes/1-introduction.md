@@ -4,14 +4,11 @@ Suppose you're building a mobile application called **TipCalculator**. The app i
 
 In this module, you learn how to define and apply a resource both in code and in XAML. You also see how to group multiple settings into a style so you can apply them all at once.
 
-> [!NOTE]
-> This module requires Visual Studio 2022. You can use either Windows or a Mac. If you're running on Windows, make sure you have the Mobile development with .NET workload installed. Refer to the documentation if you need to add it to your installation. If you're running on a Mac, the standard Visual Studio for Mac installation includes everything you need to build apps with .NET MAUI.
-
 ## Learning objectives
 
 In this module, you learn how to:
 
-- Create and use static resources in a MAUI XAML user interface.
+- Create and use static resources in a .NET MAUI XAML user interface.
 - Create and use dynamic resources.
 - Create a consistent user interface by using styles.
 - Create and use application-wide resources.

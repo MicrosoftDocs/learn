@@ -15,9 +15,9 @@ Alternatively, you could also create your own custom content filter for Azure Op
 
 ## Create a content filter
 
-:::image type="content" source="../media/create-content-filter.png" alt-text="A screenshot of the create content filter wizard within Azure AI Studio. The screenshot displays the input filter settings." lightbox="../media/create-content-filter.png":::
+:::image type="content" source="../media/create-content-filter.png" alt-text="A screenshot of the create content filter wizard within Azure AI Foundry. The screenshot displays the input filter settings." lightbox="../media/create-content-filter.png":::
 
-1. In the left navigation, within the **Shared Resources** section, select **Content filters**.
+1. In the left navigation, within the **Safety + security** section, select the **Content filters** tab.
 1. In the **Content filters** tab, select + **Create content filter**.
 
 **Basic Information**
@@ -46,9 +46,9 @@ On the **Output filter** page, you can configure the filter for output, which ap
 
 You could add the content filter to a deployment as part of the creation workflow. Alternatively, you could add the content filter later via the **Deployments** section of the Hub.
 
-1. Select the **gpt-4** model.
-1. For the **Replacing existing content filter** window, select **Replace**.
+1. Select the **gpt-4o** model.
 1. Select **Next**.
+1. For the **Replacing existing content filter** window, select **Replace**.
 
 **Review**
 

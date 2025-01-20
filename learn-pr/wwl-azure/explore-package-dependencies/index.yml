@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-package-dependencies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore package dependencies
   description: Explore package dependencies
   ms.date: 05/07/2024
@@ -52,3 +54,4 @@ units:
 - learn.wwl.explore-package-dependencies.summary
 badge:
   uid: learn.wwl.explore-package-dependencies.badge
+

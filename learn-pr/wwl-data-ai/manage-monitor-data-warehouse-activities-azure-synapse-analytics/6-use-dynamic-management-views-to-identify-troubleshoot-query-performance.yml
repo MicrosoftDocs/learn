@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.use-dynamic-management-views-to-identify-troubleshoot-query-performance
 title: Use dynamic management views to identify and troubleshoot query performance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use dynamic management views to identify and troubleshoot query performance
   description: "Use dynamic management views to identify and troubleshoot query performance"
   ms.date: 06/12/2023

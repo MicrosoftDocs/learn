@@ -2,6 +2,8 @@
 uid: learn.azure.optimize-performance-and-costs-using-azure-disk-storage.choose-right-azure-disk-storage-option
 title: Choose the right Azure Disk Storage option
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose the right Azure Disk Storage option
   description: Learn about the disk types available in Azure.
   ms.date: 07/16/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/2-choose-right-azure-disk-storage-option.md)]
+

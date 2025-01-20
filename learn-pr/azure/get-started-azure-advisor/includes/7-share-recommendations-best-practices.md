@@ -49,7 +49,7 @@ You can set up a recommendation digest from the Advisor dashboard by first selec
 
 :::image alt-text="Screenshot showing how to open the recommendation digest page." lightbox="../media/azure-advisor-recommendation-digest-select.png" source="../media/azure-advisor-recommendation-digest-select.png" type="content":::
 
-In the **Advisor - Recommendation digests** page that opens, select **New Recommendation Digest** to start creating a new recommendation digest. Ff you already have one set up, you can select it to edit.
+In the **Advisor - Recommendation digests** page that opens, select **New Recommendation Digest** to start creating a new recommendation digest. If you already have one set up, you can select it to edit.
 
 Specify similar configurations as you did for Advisor Alerts:
 

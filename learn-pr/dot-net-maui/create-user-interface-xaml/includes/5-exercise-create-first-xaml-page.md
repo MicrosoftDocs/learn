@@ -10,16 +10,16 @@ On Android, the app looks like this:
     :::column-end:::
 :::row-end:::
 
-You've been asked to add some further features to this page. Before you start, you want to understand how the page was created, so you look at the source code. You notice that the UI was created entirely using C# code. While this approach works, it intermingles the code that handles the layout with the code that controls the way in which the UI works. You realize that before long, there's a danger of the two aspects of the app becoming locked together, making future maintenance difficult and possibly making the app more fragile as more features are added. You decide to separate the UI design from the UI logic by extracting the C# code that defines the layout from the app and replacing it with a XAML page.
+You've been asked to add some further features to this page. Before you start, you want to understand how the page was created, so you look at the source code. You notice that the UI was created entirely using C# code. Although this approach works, it intermingles the code that handles the layout with the code that controls the way in which the UI works. You realize that before long, there's a danger of the two aspects of the app becoming locked together, making future maintenance difficult and possibly making the app more fragile as more features are added. You decide to separate the UI design from the UI logic by extracting the C# code that defines the layout from the app and replacing it with a XAML page.
 
-[!include[](../../../includes/dotnet8-sdk-version.md)]
+[!include[](../../../includes/dotnet9-sdk-version.md)]
 
 ## Review the existing app
 
 1. Clone the [GitHub repository](https://github.com/microsoftdocs/mslearn-dotnetmaui-create-user-interface-xaml) for this exercise locally on your computer.
 
     > [!NOTE]
-    > It is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+    > It's best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
 
 1. Move to the **exercise1** folder in your local copy of the repository.
 
@@ -185,7 +185,7 @@ You've been asked to add some further features to this page. Before you start, y
 
 1. Remove the **Editor** field from the **MainPage** class.
 
-1. In the **MainPage.xaml.cs** file,  in the **MainPage** constructor, remove all the code that creates the user interface elements, and replace them with a call to the **InitializeComponent** method. Add code that checks whether the file used to store the notes exists, and if so, read the contents and populate the **Text** field of the **Editor** control. The constructor should look like this:
+1. In the **MainPage.xaml.cs** file,  in the **MainPage** constructor, remove all the code that creates the user interface elements, and replace them with a call to the **InitializeComponent** method. Add code that checks whether the file used to store the notes exists, and if so, reads the contents and populates the **Editor** control's **Text** field. The constructor should look like this:
 
     ```csharp
     public partial class MainPage : ContentPage

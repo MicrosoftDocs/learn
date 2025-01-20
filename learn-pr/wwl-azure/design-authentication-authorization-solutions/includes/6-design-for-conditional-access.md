@@ -44,6 +44,6 @@ Tailwind Traders wants to implement Conditional Access into their identity solut
 
 - **Consider blocking legacy authentication protocols**. Attackers exploit weaknesses in older protocols every day, particularly for password spray attacks. Configure Conditional Access to [block legacy protocols](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy) from accessing Tailwind Traders apps.
 
-- **Consider running Report-only mode**. Run Report-only mode to predict the number and names of Tailwind Traders users who will be affected by common deployment initiatives. Use Report-only mode to test blocking legacy authentication, requiring MFA, and implementing sign-in risk policies. 
+- **Consider running Report-only mode**. Run Report-only mode to predict the number and names of Tailwind Traders users who are affected with common deployment initiatives. Use Report-only mode to test blocking legacy authentication, requiring MFA, and implementing sign-in risk policies. 
 
 - **Consider using the What If tool**. Use the What If tool to test your proposed Conditional Access policies before you implement them.

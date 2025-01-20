@@ -2,6 +2,8 @@
 uid: learn.wwl.machine-learning-production-azure-databricks.exercise
 title: Exercise - Manage a machine learning model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Manage a machine learning model
   description: "Exercise - Manage a machine learning model"
   ms.date: 07/17/2024

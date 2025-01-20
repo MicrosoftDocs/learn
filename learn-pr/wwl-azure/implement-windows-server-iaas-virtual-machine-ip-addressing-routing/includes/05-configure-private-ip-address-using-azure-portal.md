@@ -1,6 +1,3 @@
-
-
-
 In this demonstration, you'll learn to:
 
 - Create a VNet.
@@ -8,9 +5,7 @@ In this demonstration, you'll learn to:
 - Retrieve private IP address information for a VM.
 - Add a static private IP address to an existing VM.
 
-
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Azyv]
-
 
 ## Next steps
 

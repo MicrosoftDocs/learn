@@ -2,6 +2,8 @@
 uid: learn.azure.support-hybrid-clouds.2-secure-stack-hub
 title: Secure data with Azure Stack Hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure data with Azure Stack Hub
   description: Overview of how Azure Stack Hub can be helpful in environments with limited connectivity in a safe, private way. A range of use cases is discussed.
   ms.date: 07/22/2024

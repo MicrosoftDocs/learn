@@ -2,11 +2,13 @@
 uid: learn.wwl.use-own-data-azure-openai.adding-own-data-source
 title: Add your own data source
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Add your own data source
   description: Learn how to add your own data source with Azure OpenAI on your own data.
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/06/2024
+  ms.date: 11/15/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

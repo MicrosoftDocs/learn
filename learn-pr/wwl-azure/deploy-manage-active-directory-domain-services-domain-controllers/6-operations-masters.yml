@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.operations-masters
 title: Manage Active Directory Domain Services operations masters
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Active Directory Domain Services operations masters
   description: "Manage Active Directory Domain Services operations masters"
   ms.date: 06/18/2024

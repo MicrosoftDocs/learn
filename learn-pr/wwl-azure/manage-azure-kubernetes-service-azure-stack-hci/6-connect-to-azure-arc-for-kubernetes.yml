@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.connect-to-azure-arc-for-kubernetes
 title: Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes
   description: "Connect Azure Kubernetes Service on Azure Stack HCI to Azure Arc for Kubernetes"
   ms.date: 06/09/2021

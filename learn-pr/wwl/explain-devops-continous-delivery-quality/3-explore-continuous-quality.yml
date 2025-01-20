@@ -2,6 +2,8 @@
 uid: learn.wwl.explain-devops-continous-delivery-quality.explore-continuous-quality
 title: Explore Continuous Quality
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Continuous Quality
   description: "Explore Continuous Quality"
   ms.date: 09/20/2020

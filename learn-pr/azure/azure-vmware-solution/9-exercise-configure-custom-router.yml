@@ -2,6 +2,8 @@
 uid: learn.azure.azure-vmware-solution.exercise-configure-custom-router
 title: Exercise - configure custom router  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - configure custom router  
   description: This content is part of the "Secure outbound internet connectivity for Azure VMware Solution" module.
   ms.date: 03/23/2023
@@ -44,3 +46,4 @@ quiz:
         - content: "3"
           isCorrect: false
           explanation: "Incorrect. Two private IP addresses are assigned to Azure Route Server."
+

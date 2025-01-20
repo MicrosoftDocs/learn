@@ -3,6 +3,8 @@ uid: learn.azure.create-composable-bicep-files-using-modules.exercise-create-use
 title: Exercise - Create and use a module
 sandbox: true
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Create and use a module
   description: Create a set of Bicep modules and a template that uses them.
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 9
 content: |
   [!include[](includes/4-exercise-create-use-module.md)]
+

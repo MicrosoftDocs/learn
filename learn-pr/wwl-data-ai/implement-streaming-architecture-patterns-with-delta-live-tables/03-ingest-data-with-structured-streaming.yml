@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.ingest-data-with-structured-streaming
 title: Ingest data with structured streaming
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Ingest data with structured streaming
   description: Ingestion with Structured Streaming in Azure Databricks enables real-time data processing."
   ms.date: 7/25/2024

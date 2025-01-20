@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-deploy-single-instance-implementations-2-tier-3-tier.prepare-azure-virtual-machines-manual-installation-sap-hana
 title: Prepare Azure Virtual Machines for a manual installation of SAP HANA
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Prepare Azure Virtual Machines for a manual installation of SAP HANA
   description: "Prepare Azure virtual machines for a manual installation of SAP HANA"
   ms.date: 01/09/2024

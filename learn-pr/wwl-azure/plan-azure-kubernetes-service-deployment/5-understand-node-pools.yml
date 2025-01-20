@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-azure-kubernetes-service-deployment.understand-node-pools
 title: Nodes and node pools for Azure Kubernetes Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Nodes and node pools for Azure Kubernetes Service
   description: "Nodes and node pools for Azure Kubernetes Service"
   ms.date: 04/23/2024

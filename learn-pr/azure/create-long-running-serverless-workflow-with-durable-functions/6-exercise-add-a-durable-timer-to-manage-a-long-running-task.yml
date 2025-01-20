@@ -2,6 +2,8 @@
 uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions.6-exercise-add-a-durable-timer-to-manage-a-long-running-task
 title: Exercise - Add a durable timer to manage a long-running task
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Add a durable timer to manage a long-running task
   description: Exercise - Add a durable timer to manage a long-running task
   ms.date: 10/19/2023
@@ -12,3 +14,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-add-a-durable-timer-to-manage-a-long-running-task.md)]
+

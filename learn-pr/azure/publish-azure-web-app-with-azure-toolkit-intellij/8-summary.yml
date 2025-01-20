@@ -2,6 +2,8 @@
 uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.8-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: In this unit, you'll review what you've learned about the Azure Toolkit for IntelliJ.
   ms.date: 03/18/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]
+

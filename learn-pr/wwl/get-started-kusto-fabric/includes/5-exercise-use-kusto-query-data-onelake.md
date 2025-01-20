@@ -1,9 +1,10 @@
-Now it's your chance to build an event house that contains a KQL database then run some KQL queries.
-<!-- This link should still be valid after, but may need revisited prior to BUILD -->
+Now it's time to try out Fabric Real-Time Intelligence for yourself.
+
+In this exercise, you'll ingest real-time data into Microsoft Fabric. You'll then query and visualize the data before defining an alert to automate an action based on a threshold value in the real-time data stream.
 
 > [!NOTE]
-> You need a Microsoft Fabric trial license with the Fabric preview enabled in your tenant. See [**Getting started with Fabric**](/fabric/get-started/fabric-trial) to enable your Fabric trial license.
+> You need a Microsoft Fabric tenant to complete this exercise. For more information about accessing Microsoft Fabric, see [**Getting started with Fabric**](/fabric/get-started/fabric-trial).
 
 Launch the exercise and follow the instructions.
 
-[![Icon for Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2260722)
+[![Icon for Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2260722&azure-portal=true)

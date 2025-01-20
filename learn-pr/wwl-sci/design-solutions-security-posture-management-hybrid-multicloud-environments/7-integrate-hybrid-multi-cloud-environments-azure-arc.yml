@@ -5,8 +5,8 @@ metadata:
   title: Integrate hybrid and multicloud environments with Azure Arc
   description: "SC-100 preparatory unit on the topic: Integrate hybrid and multicloud environments with Azure Arc."
   ms.date: 3/19/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 10
 content: |

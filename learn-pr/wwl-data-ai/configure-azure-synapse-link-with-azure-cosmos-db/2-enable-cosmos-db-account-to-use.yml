@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.enable-cosmos-db-account-to-use
 title: Enable Cosmos DB account to use Azure Synapse Link
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable Cosmos DB account to use Azure Synapse Link
   description: "Enable Cosmos DB account to use Azure Synapse Link"
   ms.date: 12/19/2022

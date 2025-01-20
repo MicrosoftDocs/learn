@@ -2,14 +2,16 @@
 uid: learn.wwl.configure-azure-app-services.interactive-simulation-web-apps
 title: Interactive lab simulation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Interactive lab simulation
   description: "Interactive lab simulation"
-  ms.date: 11/14/2023
+  ms.date: 12/18/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 25
 content: |
   [!include[](includes/11-simulation-web-apps.md)]

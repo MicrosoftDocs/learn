@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-resources-windows-powershell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Azure resources with Windows PowerShell
   description: "Learn to manage Azure resources with Windows PowerShell."
   ms.date: 03/22/2024

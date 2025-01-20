@@ -2,6 +2,8 @@
 uid: learn.azdo.create-a-build-pipeline.2-what-is-azure-pipelines
 title: What is Azure Pipelines?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure Pipelines?
   description: See how Azure Pipelines automatically builds and tests your code projects and makes them available to others.
   ms.date: 09/13/2024
@@ -27,3 +29,4 @@ quiz:
     - content: "An email that summarizes the build run."
       isCorrect: false
       explanation: "Although most pipeline systems provide build notifications, an email isn't the final product of the pipeline."
+

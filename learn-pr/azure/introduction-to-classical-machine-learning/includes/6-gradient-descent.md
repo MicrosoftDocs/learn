@@ -1,8 +1,8 @@
-We've seen how cost functions evaluate how well models perform by using data. The optimizer is the final piece of the puzzle.
+We saw how cost functions evaluate how well models perform by using data. The optimizer is the final piece of the puzzle.
 
 The optimizer's role is to alter the model in a way that improves its performance. It does this alteration by inspecting the model outputs and cost and suggesting new parameters for the model.
 
-For example, in our farming scenario, our linear model has two parameters: the line's intercept and the line's slope. If the line's intercept is wrong, the model underestimates or overestimates temperatures on average. If the slope is set wrong, the model won't do a good job of demonstrating how temperatures have changed since the 1950s. The optimizer changes these two parameters so that they do an optimal job of modeling temperatures over time.
+For example, in our farming scenario, our linear model has two parameters: the line's intercept and the line's slope. If the line's intercept is wrong, the model underestimates or overestimates temperatures on average. If the slope is set wrong, the model doesn't do a good job of demonstrating how temperatures have been changing since the 1950s. The optimizer changes these two parameters so that they do an optimal job of modeling temperatures over time.
 
 :::image type="content" source="../media/2-6-a.png" alt-text="Diagram that shows the optimizer part of the machine-learning lifecycle." border="false":::
 
@@ -14,23 +14,23 @@ Gradient descent uses calculus to estimate how changing each parameter changes t
 
 Gradient descent is named as such because it calculates the gradient (slope) of the relationship between each model parameter and the cost. The parameters are then altered to move down this slope.
 
-This algorithm is simple and powerful, yet it isn't guaranteed to find the optimal model parameters that minimize the cost. The two main sources of error are local minima and instability.
+This algorithm is simple and powerful, yet it isn't guaranteed to find the optimal model parameters that minimize the cost. The two main sources of error are local *minima* and *instability*.
 
 ### Local minima
 
-Our previous example looked to do a good job, assuming that cost would have kept increasing when the parameter was smaller than 0 or greater than 10:
+Our previous example appeared to do a good job, assuming that cost would keep increasing when the parameter was smaller than 0 or greater than 10:
 
 :::image type="content" source="../media/2-6-b.png" alt-text="Plot of cost versus model parameter, with a minima for cost when the model parameter is five." border="false":::
 
-This job wouldn't have been so great if parameters smaller than zero or larger than 10 would have resulted in lower costs, like in this image:
+This job wouldn't appear to be so great if parameters smaller than zero or larger than 10 resulted in lower costs, like in this image:
 
 :::image type="content" source="../media/2-6-c.png" alt-text="Plot of cost versus model parameter, with a local minima for cost when the model parameter is five but a lower cost when the model parameter is at negative six." border="false":::
 
-In the preceding graph, a parameter value of negative seven would have been a better solution than five, because it has a lower cost. Gradient descent doesn't know the full relationship between each parameter and the cost—which is represented by the dotted line—in advance. Therefore, it's prone to finding local minima: parameter estimates that aren't the best solution, but the gradient is zero.
+In the preceding graph, a parameter value of negative seven would be a better solution than five, because it has a lower cost. Gradient descent doesn't know the full relationship between each parameter and the cost—represented by the dotted line—in advance. Therefore, it's prone to finding local minima: parameter estimates that aren't the best solution, but the gradient is zero.
 
 ### Instability
 
-A related issue is that gradient descent sometimes shows instability. This instability usually occurs when the step size or learning rate—the amount that each parameter is adjusted by each iteration—is too large. The parameters are then adjusted too far on each step, and the model actually gets worse with each iteration:
+A related issue is that gradient descent sometimes shows instability. This instability usually occurs when the step size or learning rate—the amount that each parameter gets adjusted by each iteration—is too large. The parameters are then adjusted too far on each step, and the model actually gets worse with each iteration:
 
 :::image type="content" source="../media/2-6-d.png" alt-text="Plot of cost versus model parameter, which shows cost moving in large steps with minimal decrease in cost." border="false":::
 

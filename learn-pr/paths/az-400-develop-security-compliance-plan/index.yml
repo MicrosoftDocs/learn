@@ -33,8 +33,7 @@ subjects:
 - security
 modules:
 - learn.intro-to-azure-ad
-- learn.azure.create-users-and-groups-in-azure-active-directory
-- learn.authenticate-apps-with-managed-identities
+- learn.azure-security.manage-users-and-groups-in-aad
 - learn.azure-security.configure-and-manage-azure-key-vault
 - learn.control-authentication-with-apim
 - learn.monitor-report-aad-security-events

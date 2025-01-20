@@ -2,6 +2,8 @@
 uid: learn.wwl.identify-sap-certified-configurations.discover-sap-certifications-configurations-running-microsoft-azure
 title: Discover SAP certifications and configurations running on Microsoft Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover SAP certifications and configurations running on Microsoft Azure
   description: "Discover the growing list of SAP certifications and configurations running on Microsoft Azure."
   ms.date: 09/19/2024

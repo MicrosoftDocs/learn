@@ -2,6 +2,8 @@
 uid: learn.oxford.image-classification-azure-sphere.exercise-setup-display-output
 title: Exercise - Set up display output
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up display output
   description: In this section, we help the learner to set up a terminal emulator to display output from the app.
   ms.date: 07/20/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/10-exercise-setup-display-output.md)]
+

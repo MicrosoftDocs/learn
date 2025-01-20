@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-mysql-storage-engine.exercise-compare-options
 title: 'Exercise: Compare storage engine options'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Compare storage engine options'
   description: "Exercise: Compare storage engine options"
   ms.date: 11/08/2022

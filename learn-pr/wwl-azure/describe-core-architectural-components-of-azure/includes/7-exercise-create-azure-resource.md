@@ -8,7 +8,7 @@ In this exercise, you’ll use the Azure portal to create a resource. The focus 
 In this task, you’ll create a virtual machine using the Azure portal.
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-2.  Select Create a resource &gt; Compute &gt; Virtual Machine &gt; Create.
+2.  Select Create a resource &gt; Virtual Machine &gt; Create.
 3.  The Create a virtual machine pane opens to the basics tab.
 4.  Verify or enter the following values for each setting. If a setting isn’t specified, leave the default value.
     

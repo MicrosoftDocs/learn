@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-agile-github-projects-azure-boards.introduction-to-project-boards
 title: Introduction to GitHub Projects and Project boards
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to GitHub Projects and Project boards
   description: "Introduction to GitHub Projects and Project boards"
   ms.date: 05/24/2024

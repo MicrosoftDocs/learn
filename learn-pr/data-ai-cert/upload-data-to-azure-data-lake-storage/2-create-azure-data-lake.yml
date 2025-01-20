@@ -2,6 +2,8 @@
 uid: learn.data-ai.upload-data-to-azure-data-lake-storage.create-azure-data-lake
 title: Exercise - Create an Azure Storage account for Azure Data Lake Storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an Azure Storage account for Azure Data Lake Storage
   description: "Create an Azure Storage account for Azure Data Lake Storage"
   ms.date: 03/25/2022

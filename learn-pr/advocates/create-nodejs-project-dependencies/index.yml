@@ -8,6 +8,8 @@
 
 uid: learn.azure.create-nodejs-project-dependencies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a new Node.js project using JavaScript and work with package dependencies 
   description: Create a Node.js project and learn to add packages and manage package dependencies in your project. Use the npm CLI and registry to add libraries and tools to your JavaScript/TypeScript web development CommonJS projects using Visual Studio Code.
   ms.date: 04/19/2024
@@ -49,3 +51,4 @@ units:
 
 badge:
   uid: learn.azure.create-nodejs-project-dependencies.badge
+

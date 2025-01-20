@@ -34,7 +34,7 @@ Cost analysis shows charges as they appear on your bill. The charges are shown a
 
 You can create a chargeback report to charge internal cost centers using amortized data. In amortized data, the cost of a reservation is the consumption value based on the discounted price for the instances covered by reservations. Amortized cost data provides the monetary value of a reservation's utilization for:
 
-- Resources, such as a VM
+- Resources, such as a virtual machine (VM)
 - Resource group
 - Tags
 - Subscription
@@ -43,7 +43,7 @@ To view amortized data, navigate to **Cost Management + Billing** > **Exports**,
 
 ### Chargeback with Power BI
 
-Enterprise Agreement and Microsoft Customer Agreement customers can view the RI Chargeback report in the Power BI Cost Management App. Review the reservation transactions, subscription names, and resource groups to help identify teams using resources.
+Enterprise Agreement and Microsoft Customer Agreement customers can view the RI Chargeback report in the Power BI Cost Management App. Review the reservation transactions, subscription names, and resource groups. This data can help you identify which teams are using resources.
 
 1. Get the [Cost Management App](https://appsource.microsoft.com/product/power-bi/costmanagement.azurecostmanagementapp).
 

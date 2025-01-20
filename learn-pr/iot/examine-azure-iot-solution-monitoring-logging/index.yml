@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-azure-iot-solution-monitoring-logging
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure IoT Hub monitoring and logging
   description: "Examine Azure IoT Hub monitoring and logging"
   ms.date: 01/08/2024

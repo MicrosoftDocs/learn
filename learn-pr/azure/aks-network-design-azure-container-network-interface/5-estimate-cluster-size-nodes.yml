@@ -2,6 +2,8 @@
 uid: learn.aks-network-design-azure-container-network-interface.5-estimating-cluster-size-nodes
 title: Estimating cluster size - Nodes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Estimating cluster size - Nodes
   description: Once you know how many pods your application needs, you need to determine what type of virtual machines to use for the nodes and how many of them you need.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-estimate-cluster-size-nodes.md)]
+

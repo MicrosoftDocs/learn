@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.design-model-deployment-solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a model deployment solution
   description: Design a model deployment solution with Azure Machine Learning Python SDK v2
   author: wwlpublish
@@ -35,3 +37,4 @@ units:
 - learn.wwl.design-model-deployment-solution.summary
 badge:
   uid: learn.wwl.design-model-deployment-solution.badge
+

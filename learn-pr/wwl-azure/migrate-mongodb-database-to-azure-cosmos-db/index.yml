@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate a MongoDB database to Azure Cosmos DB
   description: "Online and offline migration option to Azure Cosmos DB API for MongoDB."
   ms.date: 02/06/2023

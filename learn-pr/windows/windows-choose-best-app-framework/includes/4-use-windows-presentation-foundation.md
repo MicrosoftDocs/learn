@@ -8,10 +8,10 @@ In this scenario, we discuss the requirements of the application and decide whic
 
 The healthcare application is an enterprise application that is intended to be deployed to healthcare professionals such as doctors, nurses, and administrators in hospitals. The key requirements to focus on for this application are:
 
-- **Appearance and style of the application.** The application should incorporate each hospital's branding components such as color theme and logo.
-- **Device compatibility.** Hospitals don't always have the latest hardware and software, so backward compatibility is important.
-- **Application performance is key.** Hospitals are high-stress environments, so the application must be responsive and fast.
-- **Modernize existing app.** The customer has a .NET Framework WPF application and wants to modernize and incorporate some of the existing screens and functionality in the new application over time.
+- **Appearance and style of the application:** The application should incorporate each hospital's branding components such as color theme and logo.
+- **Device compatibility:** Hospitals don't always have the latest hardware and software, so backward compatibility is important.
+- **Application performance is key:** Hospitals are high-stress environments, so the application must be responsive and fast.
+- **Modernize existing app:** The customer has a .NET Framework WPF application. They want to modernize and incorporate some of the existing screens and functionality in the new application over time.
 
 Let's walk through all the decision criteria for this project and see how each framework can be used to meet those requirements.
 
@@ -37,7 +37,7 @@ The development team is familiar with all three frameworks being considered for 
 
 ### Application performance and responsiveness
 
-This application is used in a hospital setting, which is a high-stress environment, so it's important that it's responsive and fast.
+This application is used in a hospital setting, which is a high-stress environment. It's important that it's responsive and fast.
 
 WPF fits this requirement. Applications built with WPF and .NET are performant and responsive. It's a good option for enterprise applications with multiple screens and complex data binding requirements. WPF also has a rich set of controls that can be used to build the application.
 

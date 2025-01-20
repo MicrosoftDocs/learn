@@ -2,6 +2,8 @@
 uid: learn.iot.connect-iot-edge-device-to-iot-central.implement-iot-application-with-edge-pattern
 title: Implement the IoT application with IoT Edge pattern
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement the IoT application with IoT Edge pattern
   description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
@@ -39,3 +41,4 @@ quiz:
     - content: "It specifies the type of Azure IoT Central application to deploy to your Azure subscription"
       isCorrect: false
       explanation: "No. An Azure IoT Central application template specifies the initial configuration of your Azure IoT Central application."
+

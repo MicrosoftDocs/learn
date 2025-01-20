@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-client-server-communication-postgresql.understand-connection-handling
 title: Understand connection handling
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand connection handling
   description: "Understand connection handling."
   ms.date: 05/12/2024

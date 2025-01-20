@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.exercise-integrate-logs-azure-monitor
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Integrate logs with a Log Analytics workspace
   description: Exercise - Integrate logs with a Log Analytics workspace.
   ms.date: 03/01/2023
@@ -11,3 +13,4 @@ title: Exercise - Integrate logs with a Log Analytics workspace
 durationInMinutes: 10
 content: |
   [!include[](includes/3a-exercise-integrate-logs-azure-monitor.md)]
+

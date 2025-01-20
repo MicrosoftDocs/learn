@@ -2,6 +2,8 @@
 uid: learn.data-ai-introduction-to-azure-data-lake-storage.use-cases
 title: Use Azure Data Lake Storage Gen2 in data analytics workloads
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use Azure Data Lake Storage Gen2 in data analytics workloads
   description: "Use Azure Data Lake Storage Gen2 in data analytics workloads"
   ms.date: 07/18/2023

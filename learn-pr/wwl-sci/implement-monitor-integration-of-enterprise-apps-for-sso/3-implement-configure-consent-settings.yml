@@ -2,12 +2,16 @@
 uid: learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso.implement-configure-consent-settings
 title: Implement and configure consent settings
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement and configure consent settings
   description: "Implement and configure consent settings"
-  ms.date: 10/25/2023
+  ms.date: 12/16/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/3-implement-configure-consent-settings.md)]

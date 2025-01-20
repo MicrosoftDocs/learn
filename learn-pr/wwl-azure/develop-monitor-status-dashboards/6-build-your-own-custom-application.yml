@@ -2,6 +2,8 @@
 uid: learn.wwl.develop-monitor-status-dashboards.build-your-own-custom-application
 title: Build your own custom application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build your own custom application
   description: "Build your own custom application"
   ms.date: 05/08/2024

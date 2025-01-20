@@ -2,6 +2,8 @@
 uid: learn.machinelearning.understand-regression-machine-learning.exercise-train-linear-regression
 title: Exercise - Train a simple linear regression model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Train a simple linear regression model
   description: Learn how to train a simple linear regression model.
   ms.date: 07/21/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 sandbox: true
 notebook: notebooks/4-3-exercise-train-linear-regression.ipynb
+

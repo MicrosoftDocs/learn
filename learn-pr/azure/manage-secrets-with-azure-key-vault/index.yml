@@ -1,15 +1,17 @@
 ### YamlMime:Module
 uid: learn.manage-secrets-with-azure-key-vault
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage secrets in your server apps with Azure Key Vault
   description: Learn how to create an Azure Key Vault to store secret values and how to enable secure access to the vault.
-  ms.date: 11/06/2023
+  ms.date: 12/12/2024
   author: msmbaldwin
   ms.author: mbaldwin
   ms.topic: module
   ms.service: azure-key-vault
 title: Manage secrets in your server apps with Azure Key Vault
-summary: Your application requires service passwords, connection strings, and other secret configuration values to do its job. Storing and handling secret values is risky, and every usage introduces the possibility of leakage. Azure Key Vault, in combination with managed identities for Azure resources, enables your Azure web app to access secret configuration values easily and securely without needing to store any secrets in your source control or configuration.
+summary: Your application requires service passwords, connection strings, and other secret configuration values to do its job. Storing and handling secret values is risky, and every usage introduces the possibility of leakage. Azure Key Vault, in combination with managed identities for Azure resources, enables your Azure web app to access secret configuration values easily and securely. It does so without needing to store any secrets in your source control or configuration.
 abstract:  | 
   In this module, you will:
   - Explore what types of information can be stored in Azure Key Vault
@@ -39,3 +41,4 @@ units:
 - learn.manage-secrets-with-azure-key-vault.7-summary
 badge:
   uid: learn.manage-secrets-with-azure-key-vault.badge
+

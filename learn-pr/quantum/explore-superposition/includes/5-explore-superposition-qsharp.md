@@ -1,52 +1,42 @@
 
-That's enough theory for now! Let's explore superposition in Q# by writing some code. 
+In the previous units, you learned about superposition and Dirac notation. That's enough theory for now! Let's explore superposition in Q# by writing some code. 
 
-In this unit, you'll learn to create quantum superposition and dive into probabilities with Q# by using the `DumpMachine` function.  The `DumpMachine` function dumps information about the current status of the quantum system at the point where it's called.
-
-> [!NOTE]
-> The `DumpMachine` function is useful only for simulations. On quantum
-> hardware, `DumpMachine` does nothing because you can't access the
-> state of the qubit register during execution. Remember that measuring the
-> state of a qubit can change its state. On simulated virtual quantum computers,
-> you can use tools like `DumpMachine` to explore the state of the system.
+In this unit, you'll create quantum superposition and dive into probabilities with Q# by using the `DumpMachine` function.  The `DumpMachine` function dumps information about the current status of the quantum system at the point where it's called.
 
 ## Create a new Q# file
 
 1. Open Visual Studio Code.
-1. In Visual Studio Code, select **File > New Text File** and save the file as **Superposition.qs**.
+1. In Visual Studio Code, select **File > New Text File** and save the file as **Main.qs**.
 1. Select **View -> Command Palette** and type **Q#: Set the Azure Quantum QIR target profile**. Press **Enter**.
 1. Select **Q#: Unrestricted**.
 
-### Get started
+## Get started with superposition
 
 Let's start with a simple program that generates a random bit using a qubit in superposition. You'll use the `DumpMachine` function to see the state of the qubit at different points in the program.
 
-1. Add the following code to the **Superposition.qs** file:
+1. Add the following code to the **Main.qs** file:
 
     ```qsharp
-    namespace ExploringSuperposition {
-        open Microsoft.Quantum.Diagnostics;
-        
-        @EntryPoint()
-        operation GenerateRandomBit() : Result {
-            use q = Qubit();
-            Message("Initialized qubit:");
-            DumpMachine(); // First dump
-            Message(" ");
-            H(q);
-            Message("Qubit after applying H:");
-            DumpMachine(); // Second dump
-            Message(" ");
-            let randomBit = M(q);
-            Message("Qubit after the measurement:");
-            DumpMachine(); // Third dump
-            Message(" ");
-            Reset(q);
-            Message("Qubit after resetting:");
-            DumpMachine(); // Fourth dump
-            Message(" ");
-            return randomBit;
-        }
+    import Microsoft.Quantum.Diagnostics.*;
+    
+    operation Main() : Result {
+        use q = Qubit();
+        Message("Initialized qubit:");
+        DumpMachine(); // First dump
+        Message(" ");
+        H(q);
+        Message("Qubit after applying H:");
+        DumpMachine(); // Second dump
+        Message(" ");
+        let randomBit = M(q);
+        Message("Qubit after the measurement:");
+        DumpMachine(); // Third dump
+        Message(" ");
+        Reset(q);
+        Message("Qubit after resetting:");
+        DumpMachine(); // Fourth dump
+        Message(" ");
+        return randomBit;
     }
     ```
 
@@ -59,7 +49,7 @@ Let's start with a simple program that generates a random bit using a qubit in s
 
     You split the operation `MResetZ` into two operations: `M` and `Reset`. You do so because you want to inspect the state after the measurement.
 
-1. To run your program locally on the built-in simulator, click on **Run** from the list of commands below `@EntryPoint()`, or press **Ctrl+F5**. Your output will appear in the debug console.
+1. To run your program on the built-in simulator, click **Run** above the `Main` operation or press **Ctrl+F5**. Your output will appear in the debug console.
 1. The `DumpMachine` function creates a table of information that describes the state of the qubit register. Specifically, it gives the probability amplitude, the probability, and the phase in radians for each basis state.
 1. At the end of the program, you get a result of `Zero` or `One`. Let's look at each step.
     1. **Initialized qubit:** Every qubit that's allocated with the `use` statement starts in the state $|0\rangle$. So `DumpMachine` produces the information that corresponds to a single-qubit register in the state $|0\rangle$.
@@ -115,9 +105,9 @@ Let's start with a simple program that generates a random bit using a qubit in s
     > [!NOTE]
     > Your outputs might differ because the random number generator is probabilistic. The probabilities of the outcomes are not deterministic.
 
-## Explore some superpositions
+## Explore other types of superposition states
 
-Now that you know how to inspect the state of a register, you can see operations that modify the state of your qubits and place them into a superposition.
+Now that you know how to inspect the state of a register, you can see more operations that modify the state of your qubits and place them into a superposition.
 
 The current random number generator produces either `Zero` or `One` with a 50% probability. Let's look at a second example that generates random numbers with a different probability.
 
@@ -136,32 +126,30 @@ using the operation [Ry](/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure
 
 > [!TIP]
 > To learn more about the math behind single-qubit operations, check out the
-> [Single-Qubit Gates tutorial in Quantum Katas](https://quantum.microsoft.com/en-us/experience/quantum-katas).
+> [Single-Qubit Gates tutorial in Quantum Katas](https://quantum.microsoft.com/tools/quantum-katas).
 
-1. Modify *Superposition.qs* like the following example, and then save the file. This example chooses $\alpha$ to be about $\frac13$.
+1. Modify **Main.qs** like the following example, and then save the file. This example chooses $\alpha$ to be about $\frac13$.
 
     ```qsharp
-    namespace ExploringSuperposition {
-        open Microsoft.Quantum.Diagnostics;
-        open Microsoft.Quantum.Math;
-    
-        @EntryPoint()
-        operation GenerateSpecificState() : Result {
-            use q = Qubit();
-            let P = 0.333333; // P is 1/3
-            Ry(2.0 * ArcCos(Sqrt(P)), q);
-            Message("The qubit is in the desired state.");
-            Message("");
-            DumpMachine(); // Dump the state of the qubit 
-            Message("");
-            Message("Your skewed random bit is:");
-            let skewedrandomBit = M(q);
-            Reset(q);
-            return skewedrandomBit;
-        }
+    import Microsoft.Quantum.Diagnostics.*;
+    import Microsoft.Quantum.Math.*;
+
+    operation Main() : Result {
+        use q = Qubit();
+        let P = 0.333333; // P is 1/3
+        Ry(2.0 * ArcCos(Sqrt(P)), q);
+        Message("The qubit is in the desired state.");
+        Message("");
+        DumpMachine(); // Dump the state of the qubit 
+        Message("");
+        Message("Your skewed random bit is:");
+        let skewedrandomBit = M(q);
+        Reset(q);
+        return skewedrandomBit;
     }
     ```
 
+1. To run your program on the built-in simulator, click **Run** above the `Main` operation or press **Ctrl+F5**. Your output will appear in the debug console.
 1. You can see how `DumpMachine` displays the expected state after it applies the operations and displays the associated probabilities. Notice that the probability of getting `Zero` is about 33.33% and the probability of getting `One` is about 66.67%. Thus, the random bit generator is skewed.
 
     ```output
@@ -209,27 +197,24 @@ instead of measuring one qubit three times.
 |$\ket{110}$|6|
 |$\ket{111}$|7|
 
-1. Modify *Superposition.qs* like the following example, and then save the file.
+1. Modify **Main.qs** like the following example, and then save the file.
 
     ```qsharp
-    namespace ExploringSuperposition {
-        open Microsoft.Quantum.Diagnostics;
-        open Microsoft.Quantum.Math;
-        open Microsoft.Quantum.Convert;
-        open Microsoft.Quantum.Arrays;
-    
-        @EntryPoint()
-        operation GenerateRandomNumber() : Int {
-            use qubits = Qubit[3];
-            ApplyToEach(H, qubits);
-            Message("The qubit register in a uniform superposition: ");
-            DumpMachine();
-            let result = ForEach(M, qubits);
-            Message("Measuring the qubits collapses the superposition to a basis state.");
-            DumpMachine();
-            ResetAll(qubits);
-            return BoolArrayAsInt(ResultArrayAsBoolArray(result));
-        }
+    import Microsoft.Quantum.Diagnostics.*;
+    import Microsoft.Quantum.Math.*;
+    import Microsoft.Quantum.Convert.*;
+    import Microsoft.Quantum.Arrays.*;
+
+    operation Main() : Int {
+        use qubits = Qubit[3];
+        ApplyToEach(H, qubits);
+        Message("The qubit register in a uniform superposition: ");
+        DumpMachine();
+        let result = ForEach(M, qubits);
+        Message("Measuring the qubits collapses the superposition to a basis state.");
+        DumpMachine();
+        ResetAll(qubits);
+        return BoolArrayAsInt(ResultArrayAsBoolArray(result));
     }
     ```
 
@@ -239,7 +224,7 @@ instead of measuring one qubit three times.
     * The operations `ApplyToEach` and `ForEach` are useful to measure and act on multiple qubits, and they use less code. Q# libraries offer many kinds of operations and functions that make writing quantum programs more efficient.
     * The `BoolArrayAsInt` and `ResultArrayAsBoolArray` functions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array that's returned by `ForEach(M, qubits)` into an integer.
 
-1. To run the program, click on **Run** from the list of commands below `@EntryPoint()`, or press **Ctrl+F5**. Your output will appear in the debug console.
+1. To run the program, click **Run** above the `Main` operation or press **Ctrl+F5**. Your output will appear in the debug console.
 1. By using `DumpMachine`, you see how the act of measuring the three qubits collapses the state of the register to one of the eight possible basis states. For example, if you get the result `3`, it means that the state of the register collapsed to $|110\rangle$.
 
     ```output
@@ -272,37 +257,34 @@ instead of measuring one qubit three times.
     > [!NOTE]
     > Your output might differ because the random number generator is probabilistic. The probabilities of the outcomes are not deterministic.
 
-1. The `ForEach(M, qubit)` operation measures each qubit in turn, gradually collapsing the state. You can also dump the intermediary states after each measurement. To do so, modify *Superposition.qs* like the following example, and then save the file.
+1. The `ForEach(M, qubit)` operation measures each qubit in turn, gradually collapsing the state. You can also dump the intermediary states after each measurement. To do so, modify **Main.qs** like the following example, and then save the file.
 
     ```qsharp
-    namespace ExploringSuperposition {
-        open Microsoft.Quantum.Diagnostics;
-        open Microsoft.Quantum.Measurement;
-        open Microsoft.Quantum.Math;
-        open Microsoft.Quantum.Convert;
-    
-        @EntryPoint()
-        operation GenerateUniformState() : Int {
-            use qubits = Qubit[3];
-            ApplyToEach(H, qubits);
-            Message("The qubit register in a uniform superposition: ");
-            DumpMachine();
-            mutable results = [];
-            for q in qubits {
-                Message(" ");
-                set results += [M(q)];
-                DumpMachine();
-            }
+    import Microsoft.Quantum.Diagnostics.*;
+    import Microsoft.Quantum.Measurement.*;
+    import Microsoft.Quantum.Math.*;
+    import Microsoft.Quantum.Convert.*;
+
+    operation Main() : Int {
+        use qubits = Qubit[3];
+        ApplyToEach(H, qubits);
+        Message("The qubit register in a uniform superposition: ");
+        DumpMachine();
+        mutable results = [];
+        for q in qubits {
             Message(" ");
-            Message("Your random number is: ");
-            ResetAll(qubits);
-            return BoolArrayAsInt(ResultArrayAsBoolArray(results));
+            set results += [M(q)];
+            DumpMachine();
         }
+        Message(" ");
+        Message("Your random number is: ");
+        ResetAll(qubits);
+        return BoolArrayAsInt(ResultArrayAsBoolArray(results));
     }
     ```
 
 1. Here, you use a `for` loop to act on each qubit sequentially. Q# has classical flow control capabilities, such as `for` loops, and `if` statements, that you can use to control the flow of your program.
-1. To run the program, click on **Run** from the list of commands below `@EntryPoint()`, or press **Ctrl+F5**.
+1. To run the program, click on **Run** from the list of commands above the `Main` operation or press **Ctrl+F5**.
 1. You can see how each consecutive measurement changes the quantum state and therefore the probabilities of obtaining each outcome. For example, if your result is number five, you'll get the following output. Let's look briefly at each step:
 
     1. **State preparation**: After applying `H` to each qubit of the register, we obtain a uniform superposition.

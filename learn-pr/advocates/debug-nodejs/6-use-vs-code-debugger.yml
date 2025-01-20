@@ -2,6 +2,8 @@
 uid: learn.azure.debug-nodejs.6-use-vs-code-debugger
 title: Exercise - Debug with Visual Studio Code
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Debug with Visual Studio Code
   description: Learn how to use the Visual Studio Code debugger with Node.js programs.
   author: diberry
@@ -17,3 +19,4 @@ durationInMinutes: 12
 content: |
   [!include[](includes/6-use-vs-code-debugger.md)]
   
+

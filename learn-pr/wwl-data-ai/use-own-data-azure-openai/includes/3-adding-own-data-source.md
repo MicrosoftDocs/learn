@@ -1,4 +1,4 @@
-Adding your data is done through the Azure AI Studio, in the **Chat** playground, or by specifying your data source in an API call. The data source you add is then used to augment the prompt sent to the model. When setting up your data in the studio, you can choose to upload your data files, use data in a blob storage account, or connect to an existing AI Search index.
+Adding your data can be done through the Azure AI Studio, in the **Chat** playground, or by specifying your data source in an API call. The data source you add is then used to augment the prompt sent to the model. When setting up your data in the studio, you can choose to upload your data files, use data in a blob storage account, or connect to an existing AI Search index.
 
 If you're uploading or using files already in a storage account, Azure OpenAI on your data supports `.md`, `.txt`, `.html`, `.pdf`, and Microsoft Word or PowerPoint files. If any of these files contain graphics or images, the response quality depends on how well text can be extracted from the visual content.
 
@@ -8,7 +8,7 @@ Enabling [semantic search](/azure/search/semantic-search-overview?azure-portal=t
 
 You can also use the wizard in your AI Search resource to vectorize your data appropriately, which you'll walk through in this module's exercise. It takes a few extra steps compared to doing so in AI Studio, however serves as a good example of using the RAG pattern with an existing dataset.
 
-## Connect your data
+## Connect your data in Azure AI Studio
 
 To connect your data, navigate to the **Chat** playground in Azure AI Studio and select the **Add your data** tab. Select the **Add a data source** button to get your data connected. The prompts guide you through setting up the connection to each data source, and getting that data into a search index.
 

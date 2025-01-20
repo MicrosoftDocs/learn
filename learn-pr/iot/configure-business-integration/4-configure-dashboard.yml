@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-business-integration.configure-dashboard
 title: Examine the Azure IoT Central dashboard page for administrators
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine the Azure IoT Central dashboard page for administrators
   description: This content is a part of Configure business integration in Azure IoT Central
   ms.date: 05/11/2023

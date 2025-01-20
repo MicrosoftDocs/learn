@@ -168,7 +168,7 @@ Identify the subtasks of module title.
 
    Your company is specifically concerned about sign-ins from users in your **Remote employees** security group. Let's use the portal to enable a registration campaign for that group. 
 
-   1. In the Microsoft Entra admin center, sign in as either authentication policy administrator or global administrator.
+   1. In the Microsoft Entra admin center, sign in as an Authentication Policy Administrator.
    1. Click **Security** > **Authentication methods** > **Registration campaign**.
    1. Change **State** to **Enabled**.
    1. For **Day allowed to snooze**, select **0 days**. Remote employees will be prompted to set up Microsoft Authenticator every time the sign in. 

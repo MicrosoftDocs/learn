@@ -1,4 +1,5 @@
-Microsoft Fabric lakehouses provide data engineers and analysts with the combined benefits of data lake storage and a relational data warehouse. You can use a lakehouse as the basis of an end-to-end data analytics solution that includes data ingestion, transformation, modeling, and visualization.
+In this module, we explored how lakehouses fit into a data analytics solution using Microsoft Fabric. Lakehouses provide data engineers and analysts with the combined benefits of data lake storage and a relational data warehouse. You can use a lakehouse as the basis of an end-to-end data analytics solution that includes data ingestion, transformation, modeling, and visualization.
 
-> [!TIP]
-> To learn more about lakehouses in Microsoft Fabric, see the [**What is a lakehouse?**](/fabric/data-engineering/lakehouse-overview) reference documentation.
+Fabric lakehouses provide value as a Software-as-a-Service data store that provides all of the benefits with less administration.
+
+For more information, see the [Data Engineering in Microsoft Fabric](/fabric/data-engineering/) documentation.

@@ -2,6 +2,8 @@
 uid: learn.wwl.analyze-images.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -38,3 +40,4 @@ quiz:
     - content: "To detect the presence and location of specific sounds within an audio file"
       isCorrect: false
       explanation: "Incorrect. The Azure AI Vision service is designed to extract information from images, not audio."
+

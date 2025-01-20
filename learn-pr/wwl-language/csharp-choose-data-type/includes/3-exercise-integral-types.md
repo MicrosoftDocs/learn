@@ -1,3 +1,4 @@
+
 In this exercise, you work with integral types. An **integral type** is a simple value type that represents whole numbers with no fraction (such as `-1`, `0`, `1`, `2`, `3`). The most popular in this category is the **`int`** data type.
 
 There are two subcategories of integral types: **signed** and **unsigned** integral types.

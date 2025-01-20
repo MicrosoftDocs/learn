@@ -1,8 +1,11 @@
-This tutorial provides a brief introduction to KQL (Kusto Query Language) queries. KQL is a powerful query language used in Microsoft Fabric to analyze large volumes of data and to create querysets for consumption in Real-Time Dashboards and Power BI reports. This includes the ability to use Copilot to ask questions about your data, which in turn, will create the KQL code for you. 
+An *eventhouse* in Microsoft Fabric provides a data store for large volumes of data. An eventhouse is optimized for data that represents time-based events, as is common in real-time data analytics scenarios. They're designed to handle real-time data streams efficiently, which enables organizations to query and analyze data in near real-time.
 
-The tutorial covers the basics of writing KQL and T-SQL queries against a KQL Database in Microsoft Fabric, including selecting data, filtering data, and aggregating data. By the end of the tutorial, you'll have a good understanding of how to get started with KQL queries in Microsoft Fabric and begin analyzing your data effectively.
-By following these best practices, you can optimize your queries for better performance and efficiency. We'll discuss techniques such as using the right data types, applying indexing, and avoiding unnecessary functions. This training helps you become more proficient in writing efficient KQL queries.
+It's common in Microsoft Fabric to use an *eventstream* to load a stream of real-time data into an eventhouse. You can then:
 
-In this training session, we'll explore advanced features that can enhance your productivity. These features include shortcuts, automation tools, and collaboration options. By utilizing shortcuts, you can perform tasks more efficiently and save time. Automation tools allow you to automate repetitive tasks, freeing up your time for more important work. Collaboration options enable you to work seamlessly with others, whether it's through real-time editing or sharing files. By mastering these advanced features, you can take your productivity to the next level.
+- Query the data using Kusto Query Language (KQL) or a subset of Structured query Language (SQL) in a *KQL Queryset*.
+- Use *Real-Time Dashboards* to visualize the data.
+- Use *Fabric Activator* to automate actions based on the data.
 
-The content includes an exercise that will last approximately 35 minutes.
+An eventhouse is the Fabric data store at the center of all of these capabilities.
+
+![Diagram of Real-Time Intelligence components in Microsoft Fabric.](../media/real-time-intelligence-core.png)

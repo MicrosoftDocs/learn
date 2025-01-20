@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid:  learn.student-evangelism.machine-learning-model-nasa.3-choose-algorithm
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Choose the machine learning algorithm to predict rocket launch success
   description: Learn about machine learning algorithms, and choose the one we'll use for this project.
   ms.date: 09/04/2024
@@ -14,3 +16,4 @@ title: Exercise - Choose the machine learning algorithm to predict rocket launch
 durationInMinutes: 4
 content: |
   [!include[](includes/3-choose-algorithm.md)]
+

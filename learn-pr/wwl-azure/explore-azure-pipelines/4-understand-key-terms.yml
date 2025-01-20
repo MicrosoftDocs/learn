@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-pipelines.understand-key-terms
 title: Understand Azure Pipelines key terms
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Azure Pipelines key terms
   description: "Understand Azure Pipelines key terms"
   ms.date: 05/07/2024

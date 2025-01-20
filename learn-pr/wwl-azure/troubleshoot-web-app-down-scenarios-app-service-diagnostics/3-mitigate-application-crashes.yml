@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.mitigate-application-crashes
 title: Mitigate application crashes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Mitigate application crashes
   description: "Mitigate application crashes"
   ms.date: 07/13/2022

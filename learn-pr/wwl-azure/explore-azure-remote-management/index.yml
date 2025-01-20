@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-remote-management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore remote management for SAP on Azure
   description: "This module explores ways to apply Azure remote management components to design remote management of virtual machines and set up the Azure connector for SAP Landscape Management. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
   ms.date: 08/01/2024

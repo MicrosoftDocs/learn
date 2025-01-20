@@ -5,9 +5,8 @@ metadata:
   title: Design a front end for your app
   description: Learn how to design a front end for your app and what to consider.
   ms.date: 08/11/2023
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: CamSoper
+  ms.author: casoper
   ms.custom: team=nextgen
   ms.topic: unit
 durationInMinutes: 3

@@ -2,6 +2,8 @@
 uid: learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.knowledge-check  
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check 
   description: In this unit, you answer questions based on a scenario. 

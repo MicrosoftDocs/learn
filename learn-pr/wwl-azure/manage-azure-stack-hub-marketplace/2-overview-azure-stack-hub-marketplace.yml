@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-stack-hub-marketplace.overview-of
 title: Overview of Azure Stack Hub Marketplace
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Overview of Azure Stack Hub Marketplace
   description: "Overview of Azure Stack Hub Marketplace"
   ms.date: 03/30/2022

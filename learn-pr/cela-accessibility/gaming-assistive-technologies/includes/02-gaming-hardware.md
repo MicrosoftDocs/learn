@@ -1,18 +1,18 @@
 You're now familiar with some of the common software-based assistive technologies (AT) used by players. AT also includes hardware and physical devices.
 
-In this unit, learn about some common hardware AT devices used for gaming access. This unit also offers you important insights to consider when you develop game experiences that support players who use these devices.
+In this unit, you'll learn about some common hardware AT devices used for gaming access. This unit also offers you important insights to consider when you develop game experiences that support players who use these devices.
 
 ## What are the common types of hardware assistive technologies used in gaming?
 
 Many hardware AT devices might be referred to as "adaptive" input devices or "adaptive controllers." In general, these devices provide an accessible alternative for players who have difficulty using standard input devices like commercial controllers, a mouse, and a keyboard.
 
-In the following video, learn about some common AT devices like the Xbox Adaptive Controller, switch buttons, and mouth-operated joysticks.
+Watch the following video to learn about some common AT devices like the Xbox Adaptive Controller, switch buttons, and mouth-operated joysticks.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPOy2]
 
 ## Hardware considerations for accessible game development
 
-A primary challenge that AT users encounter is a lack of compatibility between their device and the game platform or game title they want to use the device with. The methods of activation players use with these devices can vary from the traditional input methods that games are typically optimized for. Consider the following information when you develop games and platforms that support players who use these devices.
+A primary challenge that AT users encounter is a lack of compatibility between their device and the game platform or game title with which they want to use the device. The methods of activation players use with these devices can vary from the traditional input methods for which games are typically optimized. Consider the following information when you develop games and platforms that support players who use these devices.
 
 ### Device compatibility
 
@@ -24,7 +24,7 @@ In general, the scope of other AT devices can include:
 - Mouth-based joysticks seen as mouse input.
 - The Xbox Adaptive Controller seen as a game pad or controller input.
 
-Regardless of a player's specific AT device of choice, you can support these players by ensuring the games and platforms you create allow an array of input types including controller, mouse, and keyboard input.
+Regardless of a player's specific AT device of choice, you can support these players by ensuring the games and platforms you create allow an array of input types, including controller, mouse, and keyboard input.
 
 ### Challenging game mechanics
 

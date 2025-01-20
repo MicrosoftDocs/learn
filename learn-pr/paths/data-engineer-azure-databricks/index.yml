@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.data-engineer-azure-databricks
 metadata:
-  title: Implement a data lakehouse analytics solution with Azure Databricks
-  description: Implement a data lakehouse analytics solution with Azure Databricks
+  title: Implement a data lakehouse analytics solution with Azure Databricks DP-3011
+  description: Implement a data lakehouse analytics solution with Azure Databricks. (DP-3011)
   ms.date: 08/30/2024
   author: theresa-i
   ms.author: theresai

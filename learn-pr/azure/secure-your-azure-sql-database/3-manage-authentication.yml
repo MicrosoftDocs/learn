@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-your-azure-sql-database.3-manage-authentication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Control who can access your database
   description: Learn to control access to the database by creating users with deliberately reduced access.
   ms.date: 11/07/2023

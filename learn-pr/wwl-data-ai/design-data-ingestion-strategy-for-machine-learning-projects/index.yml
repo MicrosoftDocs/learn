@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a data ingestion strategy for machine learning projects
   description: Learn how to design a data ingestion solution for training data used in machine learning projects.
   author: wwlpublish
@@ -41,3 +43,4 @@ units:
 - learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.summary
 badge:
   uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.badge
+

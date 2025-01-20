@@ -3,10 +3,10 @@ uid: learn.security-copilot-describe-core-features.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Describe the core features of Microsoft Copilot for Security.
+  description: Describe the core features of Microsoft Security Copilot.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 08/22/2024
+  ms.date: 11/20/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -18,7 +18,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: A security analyst needs to review past sessions created in Microsoft Copilot for Security. After accessing the standalone experience, which option should they select to manage and review these sessions?
+  - content: A security analyst needs to review past sessions created in Microsoft Security Copilot. After accessing the standalone experience, which option should they select to manage and review these sessions?
     choices:
     - content: Select the My sessions option from the home menu.
       isCorrect: true
@@ -40,7 +40,7 @@ quiz:
     - content: Is my external attack surface impacted by CVE-2023-21709?
       isCorrect: true
       explanation: Correct. This prompt specifically checks for the impact of a given CVE on the organization's external attack surface.
-  - content: A security analyst needs to integrate ServiceNow incident management with Microsoft Copilot for Security. Which authentication method should be configured to enable this integration?
+  - content: A security analyst needs to integrate ServiceNow incident management with Microsoft Security Copilot. Which authentication method should be configured to enable this integration?
     choices:
     - content: Anonymous authentication
       isCorrect: false
@@ -62,7 +62,7 @@ quiz:
     - content: Choose the 'Save session' option to preserve the current state of the session for later use. 
       isCorrect: false
       explanation: Incorrect. Saving the session preserves its state but doesn't result in the creation of a promptbook.
-  - content: After uploading a PDF file to Microsoft Copilot for Security, an analyst wants to ensure the file is included as a source in their current session. What should the analyst do next?
+  - content: After uploading a PDF file to Microsoft Security Copilot, an analyst wants to ensure the file is included as a source in their current session. What should the analyst do next?
     choices:
     - content: Toggle the button on the right-hand side of the file until the toggle is lit up.
       isCorrect: true

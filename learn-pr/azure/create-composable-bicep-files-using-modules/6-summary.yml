@@ -2,6 +2,8 @@
 uid: learn.azure.create-composable-bicep-files-using-modules.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary for creating composable Bicep files by using modules.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
+

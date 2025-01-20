@@ -42,9 +42,9 @@ After you complete the assessment, you can begin the process of migrating your t
 ### Stage 3: Optimize your migrated workloads
 
 For the optimization stage, there are three main efforts to focus on for your planning:
-- Analyze migration costs for your workloads
-- Review recommendations for reducing your costs
-- Identify options for improving your workload performance
+- Analyze migration costs for your workloads.
+- Review recommendations for reducing your costs.
+- Identify options for improving your workload performance.
 
 You can use Microsoft Cost Management in the Azure portal to analyze your workload costs. This tool is available for the Azure resource group that contains your migrated workloads. You can locate the tool in the **Costs analysis** > **Cost Management** section. The following screenshot shows cost analysis for the last billable period for the `ContosoResourceGroup` resource group. The results display the costs according to service name, region, and resource. You can customize the display results to meet your needs.
 
@@ -54,13 +54,9 @@ To help reduce your costs, you can use the Azure Advisor features by choosing **
 
 ### Stage 4: Monitor your workloads
 
-You can use Azure Monitor to capture health and performance information from your Azure virtual machines. Install the Azure Monitor Logs (formerly known as Log Analytics) agent on target virtual machines, and then set up alerting and reporting.
+You can use Azure Monitor to capture health and performance information from your Azure virtual machines. Azure Monitor works on machines running Linux or Windows. It is easy to set up alerting and reporting. You can set up alerts based on a range of data sources:
 
-> [!Note]
-> You can install the Azure Monitor Logs agent on machines running Windows or Linux.
-
-You can set up alerts based on a range of data sources:
-- Specific metric values like CPU usage
-- Specific text in log files
-- Health metrics
-- Autoscale metrics
+- Specific metric values like CPU usage.
+- Specific text in log files.
+- Health metrics.
+- Autoscale metrics.

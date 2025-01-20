@@ -2,13 +2,16 @@
 uid: learn.intro-to-azure-policy.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: "Summary of Azure Policy and other reading."
   ms.date: 07/19/2024
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
+

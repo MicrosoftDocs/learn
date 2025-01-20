@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-monitoring-applications.application-insights-sampling
 title: Application Insights sampling
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Application Insights sampling
   description: "Application Insights sampling"
   ms.date: 10/25/2023

@@ -2,6 +2,8 @@
 uid: learn.wwl.create-manage-session-host-image.create-managed-vm-image
 title: Create a golden image in Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a golden image in Azure
   description: "Create a golden image in Azure"
   ms.date: 08/21/2024

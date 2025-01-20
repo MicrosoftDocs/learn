@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing.troubleshoot-load-balancing-issues
 title: Troubleshoot load-balancing issues
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot load-balancing issues
   description: "Troubleshoot load-balancing issues"
   ms.date: 04/27/2023

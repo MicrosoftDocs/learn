@@ -2,6 +2,8 @@
 uid: learn.azure.build-first-azure-developer-cli-template.create-infrastructure
 title: Create the infrastructure as code
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Create the infrastructure as code
   description: Create the infrastructure as code files for the template
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/4-create-infrastructure.md)]
+

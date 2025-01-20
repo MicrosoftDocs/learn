@@ -2,6 +2,8 @@
 uid: learn.wwl.get-started-ai-fundamentals.understand-generative-ai
 title: Understand generative AI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand generative AI
   description: "Understand generative AI"
   ms.date: 10/03/2024

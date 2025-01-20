@@ -2,6 +2,8 @@
 uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.create-network-security-group
 title: How network security groups filter network traffic
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How network security groups filter network traffic
   description: "How network security groups filter network traffic"
   ms.date: 06/12/2024

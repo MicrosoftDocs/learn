@@ -1,3 +1,4 @@
+
 In this exercise, you use the `IndexOf()` method to locate the position of one or more characters string inside a larger string. You use the `Substring()` method to return the part of the larger string that follows the character positions you specify.
 
 You'll also use an overloaded version of the `Substring()` method to set the length of characters to return after a specified position in a string.

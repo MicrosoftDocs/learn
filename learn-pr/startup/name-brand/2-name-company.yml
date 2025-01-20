@@ -2,12 +2,15 @@
 uid: learn.startups.name-brand.name-company
 title: How to name your company
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to name your company
   description: Find out how to pick a good name for your startup. Understand why company names should be simple and memorable. Learn about other criteria that names should meet.
   ms.date: 06/05/2024
   author: ryanmesches
   ms.author: vahughes
   ms.topic: unit
+  ms.collection: learn-startups
 durationInMinutes: 10
 content: |
   [!include[](includes/2-name-company.md)]

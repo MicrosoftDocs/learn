@@ -14,7 +14,7 @@ In the Azure portal, the **Help me choose** default tab highlights other configu
 
 - **Availability**: Does the service [SLA](https://azure.microsoft.com/support/legal/sla/) meet your requirements?
 
-- **Cost**: Have you outlined your cost expectations? You can review the [Azure pricing](https://azure.microsoft.com/pricing/) options. In addition to the cost of the service itself, consider the operations cost for managing a solution built on that service.
+- **Cost**: What are your cost expectations? You can review the [Azure pricing](https://azure.microsoft.com/pricing/) options. In addition to the cost of the service itself, consider the operations cost for managing a solution built on that service.
 
 - **Features and limits**: What are the overall limitations of each service? You can review the [service limits](/azure/azure-subscription-service-limits).
 

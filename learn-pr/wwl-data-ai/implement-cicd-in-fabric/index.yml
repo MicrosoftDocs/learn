@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn-wwl.implement-cicd-in-fabric
+metadata:
+  title: Implement continuous integration and continuous delivery (CI/CD) in Microsoft Fabric
+  description: Learn the key concepts and strategies for implementing continuous integration and continuous deployment (CI/CD) in Microsoft Fabric.
+  ms.date: 11/8/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: module
+  ms.service: azure
+title: Implement continuous integration and continuous delivery (CI/CD) in Microsoft Fabric
+summary: Microsoft Fabric implements CI/CD using Git integration and deployment pipelines. These tools help you collaborate with your development team and provide you with an efficient process for delivering and updating content.  
+abstract: |
+  In this module, you'll learn how to:
+  - Define CI/CD and describe how it's implemented in Fabric.
+  - Implement version control and Git integration.
+  - Use deployment pipelines to automate the deployment process.
+  - Automate CI/CD using Fabric APIs.
+prerequisites: |
+  Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-engineering
+- data-analytics
+units:
+- learn-wwl.implement-cicd-in-fabric.introduction
+- learn-wwl.implement-cicd-in-fabric.understand-cicd
+- learn-wwl.implement-cicd-in-fabric.implement-version-control-and-git-integration
+- learn-wwl.implement-cicd-in-fabric.implement-deployment-pipelines
+- learn-wwl.implement-cicd-in-fabric.automate-cicd-using-fabric-apis
+- learn-wwl.implement-cicd-in-fabric.exercise
+- learn-wwl.implement-cicd-in-fabric.knowledge-check
+- learn-wwl.implement-cicd-in-fabric.summary
+badge:
+  uid: learn-wwl.implement-cicd-in-fabric.badge

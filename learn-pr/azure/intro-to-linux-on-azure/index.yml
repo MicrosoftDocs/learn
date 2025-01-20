@@ -1,10 +1,12 @@
 ### YamlMime:Module
 uid: learn.introduction-to-linux-on-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   ms.author: carols
   author: fossygirl
   manager: rayoflores
-  ms.date: 05/01/2023
+  ms.date: 10/31/2024
   title: Introduction to Linux on Azure
   description: This module introduces the services and platforms that Azure provides for Linux environments.
   ms.topic: module
@@ -14,7 +16,7 @@ summary: This module helps you understand the types of services and platforms Az
 abstract: |
   By the end of this module, you'll be able to: 
   - Identify the Azure infrastructure as a service (IaaS) and platform as a service (PaaS) resources and services available for Linux deployments.  
-  - Determine which virtual machine images will be most suitable for your IaaS deployment.
+  - Determine which virtual-machine images will be most suitable for your IaaS deployment.
   - Identify Microsoft-supported Linux distributions.
   - Identify additional Azure tools and services you can use.
 prerequisites: |
@@ -40,3 +42,4 @@ units:
 - learn.introduction-to-linux-on-azure.summary
 badge:
   uid: learn.introduction-to-linux-on-azure-badge
+

@@ -5,9 +5,8 @@ metadata:
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 12/22/2022
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: CamSoper
+  ms.author: casoper
   ms.custom: team=nextgen
   ms.topic: unit
 durationInMinutes: 4

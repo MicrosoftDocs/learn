@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-git-hooks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Git hooks
   description: Explore Git hooks
   ms.date: 05/08/2024
@@ -50,3 +52,4 @@ units:
 - learn.wwl.explore-git-hooks.summary
 badge:
   uid: learn.wwl.explore-git-hooks.badge
+

@@ -1,4 +1,13 @@
-There are several tools you can use to migrate data to an Azure Database for MySQL flexible server. Each option has its pros and cons, as explained in the following sections.
+There are several tools you can use to plan and migrate data to an Azure Database for MySQL flexible server. Each option has its pros and cons, as explained in the following sections.
+
+## Discover and assess your MySQL workloads using Azure Migrate
+
+[Azure Migrate](https://azure.microsoft.com/products/azure-migrate/) offers a centralized hub for discovering, assessing, and migrating on-premises infrastructure, including servers, databases, and web applications hosted in physical environments, to Azure Platform-as-a-Service (PaaS) and Infrastructure-as-a-Service (IaaS) targets at scale. The MySQL discovery and assessment functionality in Azure Migrate (preview) assists you during the **planning** phase by enabling you to:
+
+- Discover MySQL instances and their attributes in your environment,
+- Assess their readiness for migration to Azure Database for MySQL – Flexible Server, and
+- Receive recommendations on the appropriate compute and storage SKU for hosting MySQL workloads on Azure Database for MySQL – Flexible Server, along with the associated costs.
+
 ## Azure Database for MySQL Import CLI
 
 Azure Database for MySQL Import is a single CLI command that enables you to migrate your MySQL on-premises or Virtual Machine (VM) workload seamlessly to Azure Database for MySQL - Flexible Server. It offers a simple and fast migration path. The command provisions your target flexible server configured according to user inputs, then restores your physical backup file (taken using Percona XtraBackup) of the source server stored in the Azure Blob storage account to the target Flexible Server instance.
@@ -15,16 +24,13 @@ When evaluating the import CLI, be sure to take into account the following consi
   ```
 
 - The system tablespace name should be `ibdata1` with a size equal to at least 12 MB (the MySQL default).
-
 - Only the InnoDB engine is supported for migration.
-
 - Certain elements on the source server like configuration (firewalls, users, privileges) aren't migrated.
-
 - High availability (HA) is disabled during the migration to optimize performance. Be sure to reenable HA after the migration is complete.
 
-## Azure Migrate and Azure Database Migration Service
+## Azure Database Migration Service
 
-[Azure Migrate](https://azure.microsoft.com/products/azure-migrate/) is a unified platform that discovers assets suitable for migration and assesses their readiness for the process. [Azure Database Migration Service](https://azure.microsoft.com/products/database-migration) assists with migrating databases to Azure.
+[Azure Database Migration Service](https://azure.microsoft.com/products/database-migration) is a fully managed service that helps you simplify, guide, and automate your database migrations to Azure data platforms.
 
 Azure Database Migration Service works by creating and running repeatable migration projects. Sources range from on-premises workloads to cloud-based workloads like Amazon RDS MySQL. While Azure Database Migration Service is technically an offline migration tool, it makes use of the MySQL `binlog` to perform near-zero downtime online migrations.
 
@@ -57,7 +63,6 @@ The `mysqlbinlog` [tool](https://dev.mysql.com/doc/refman/8.0/en/mysqlbinlog.htm
 You can use binary log as part of both online and offline migrations:
 
 - With online migrations, the binary log is the key mechanism for replicating live data changes from the source to the target.
-
 - With offline migrations, the binary log enables incremental migrations by precisely generating changes since a previously migrated snapshot.
 
 Binary log maintenance requires additional processing and storage resources.

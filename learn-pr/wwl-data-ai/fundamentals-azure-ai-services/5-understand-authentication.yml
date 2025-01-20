@@ -2,6 +2,8 @@
 uid: learn.wwl.fundamentals-azure-ai-services.understand-authentication
 title: Understand authentication for Azure AI services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand authentication for Azure AI services
   description: "Understand authentication for Azure AI services"
   ms.date: 10/03/2024

@@ -2,6 +2,8 @@
 uid: learn.azure.customize-clusters-azure-cyclecloud.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: This is a summary unit.

@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-github-actions.explore-jobs
 title: Explore Jobs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Jobs
   description: "Explore Jobs"
   ms.date: 05/08/2024

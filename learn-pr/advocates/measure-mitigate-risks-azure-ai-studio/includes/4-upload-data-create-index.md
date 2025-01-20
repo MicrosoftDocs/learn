@@ -23,11 +23,11 @@ Let’s now upload the data and then create an index.
 
 Data can be sourced from an existing Azure Blob Storage connection, a storage URL, or uploaded via the **Add your data** interface. Furthermore, data can be organized into either a single reference file or a folder.
 
-:::image type="content" source="../media/add-your-data.png" alt-text="A screenshot of the add your data window within Azure AI Studio." lightbox="../media/add-your-data.png":::
+:::image type="content" source="../media/add-your-data.png" alt-text="A screenshot of the add your data window within Azure AI Foundry." lightbox="../media/add-your-data.png":::
 
 Let’s add the Contoso Camping Store product data via an upload of the products folder.
 
-1. Within Azure AI Studio, in the left navigation under **Components** select **Data**.
+1. Within Azure AI Foundry, in the left navigation under **My assets** select **Data + indexes**.
 1. Select **+ New data**.
 1. For the **Data source** drop-down, select **Upload files/folders**.
 1. Select **Upload files or folders** > **Upload folder**.
@@ -40,11 +40,12 @@ Let’s add the Contoso Camping Store product data via an upload of the products
 
 Now that the data is uploaded, let’s create an index.
 
-:::image type="content" source="../media/create-an-index.png" alt-text="A screenshot of an index titled products-index created in Azure AI Studio." lightbox="../media/create-an-index.png":::
+:::image type="content" source="../media/create-an-index.png" alt-text="A screenshot of an index titled products-index created in Azure AI Foundry." lightbox="../media/create-an-index.png":::
 
-1. Within the left navigation in the **Components** section, select **Indexes**.
-1. Select **+ New index**
-1. On the **Source data** page, for the **Data source** field, select **Data in Azure AI Studio**.
+1. Within the left navigation in the **My assets** section, select **Data + indexes**.
+1. Select the **Indexes** tab.
+1. Select **+ New index**.
+1. On the **Source location** page, for the **Data source** field, select **Data in Azure AI Foundry**.
 1. Select **Products**.
 1. Select **Next**.
 1. On the **Index settings** page, for the **Select Azure AI Search service**, select your **AzureAISearch** service.
@@ -52,9 +53,8 @@ Now that the data is uploaded, let’s create an index.
 1. For the **Virtual machine** field, select **Auto select**.
 1. Select **Next**.
 1. On the **Configure search settings** page, check the box for **Add vector search to this search resource**.
-1. For the **Select an embedding model** field, select your embedding model.
 1. Select **Next**.
-1. On the **Review and finish** page, select **Create**.
+1. On the **Review and finish** page, select **Create vector index**.
 
 > [!NOTE]
 > It takes ~8 minutes to create the index. When the index creation is complete, all 3 steps will reflect **Completed** within the **Status** section.
@@ -63,10 +63,10 @@ Now that the data is uploaded, let’s create an index.
 
 We can now return to the **Chat playground** to test the model and validate whether it has the capability to ground its responses about Contoso Camping Store products with the provided product data.
 
-:::image type="content" source="../media/add-data-chat-playground.png" alt-text="A screenshot of the add your data section within the chat playground of Azure AI Studio. The fields for the section are highlighted." lightbox="../media/add-data-chat-playground.png":::
+:::image type="content" source="../media/add-data-chat-playground.png" alt-text="A screenshot of the add your data section within the chat playground of Azure AI Foundry. The fields for the section are highlighted." lightbox="../media/add-data-chat-playground.png":::
 
-1. Within the left navigation, in the **Project playground** section, select **Chat**.
-1. On the **Chat playground** page, select the **Add your data** tab.
+1. Navigate to the **Chat playground**.
+1. On the **Chat playground** page, within the **Setup** section, expand the **Add your data** section.
 1. Select the **Select available project index** drop-down and select **products-index**.
 
 > [!TIP]

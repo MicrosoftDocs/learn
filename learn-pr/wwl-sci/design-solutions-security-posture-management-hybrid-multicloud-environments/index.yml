@@ -4,8 +4,8 @@ metadata:
   title: Design solutions for security posture management in hybrid and multicloud environments
   description: "You learn how to design security posture management solutions that integrate into hybrid and multicloud scenarios using capabilities in Microsoft Defender for Cloud, Azure Arc and Microsoft Cloud Security Benchmark (MCSB)."
   ms.date: 09/25/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted

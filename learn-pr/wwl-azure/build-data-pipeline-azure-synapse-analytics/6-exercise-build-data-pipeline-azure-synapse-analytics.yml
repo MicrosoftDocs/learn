@@ -2,6 +2,8 @@
 uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.exercise-build-data-pipeline-azure-synapse-analytics
 title: Exercise - Build a data pipeline in Azure Synapse Analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Build a data pipeline in Azure Synapse Analytics
   description: "Exercise - Build a data pipeline in Azure Synapse Analytics"
   ms.date: 10/06/2023

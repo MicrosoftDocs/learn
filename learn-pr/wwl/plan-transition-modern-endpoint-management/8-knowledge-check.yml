@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-transition-modern-endpoint-management.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/12/2023
@@ -36,3 +38,4 @@ quiz:
     - content: "Configuration Manager"
       isCorrect: false
       explanation: "Incorrect. Configuration Manager can be used to create and integrate a USMT package. Try again."
+

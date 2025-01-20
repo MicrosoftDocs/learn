@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure-introduction-to-azure-search
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Fundamentals of Knowledge Mining and Azure AI Search
   description: Explore Azure AI Search to discover how to create an index, import data, and query the index for better search results.
   author: wwlpublish
@@ -45,3 +47,4 @@ units:
 - learn.azure-introduction-to-azure-search.9-summary
 badge:
   uid: learn.azure-introduction-to-azure-search.badge
+

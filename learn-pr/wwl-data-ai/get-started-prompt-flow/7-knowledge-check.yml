@@ -2,6 +2,8 @@
 uid: learn.get-started-prompt-flow.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check to test your knowledge on Azure Machine Learning's prompt flow."
   ms.date: 11/30/2023
@@ -59,3 +61,4 @@ quiz:
     - content: "Production"
       isCorrect: false
       explanation: "Incorrect. During production you deploy and monitor the flow."
+

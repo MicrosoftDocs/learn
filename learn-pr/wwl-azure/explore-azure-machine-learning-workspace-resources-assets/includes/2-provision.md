@@ -2,19 +2,19 @@ To get access to an Azure Machine Learning workspace, you first need to create t
 
 ## Understand the Azure Machine Learning service
 
-To create an Azure Machine Learning service, you'll have to:
+To create an Azure Machine Learning service, you have to:
 
 1. Get access to **Azure**, for example through the Azure portal.
 1. Sign in to get access to an **Azure subscription**.
 1. Create a **resource group** within your subscription.
-1. Create an **Azure Machine Learning service** to create a workspace. 
+1. Create an **Azure Machine Learning service** to create a workspace.
 
-    When a workspace is provisioned, Azure will automatically create other Azure resources within the same resource group to support the workspace:
+When a workspace is provisioned, Azure automatically creates other Azure resources within the same resource group to support the workspace:
 
 1. **Azure Storage Account**: To store files and notebooks used in the workspace, and to store metadata of jobs and models.
 1. **Azure Key Vault**: To securely manage secrets such as authentication keys and credentials used by the workspace.
-1.  **Application Insights**: To monitor predictive services in the workspace.
-1.  **Azure Container Registry**: Created when needed to store images for Azure Machine Learning environments. 
+1. **Application Insights**: To monitor predictive services in the workspace.
+1. **Azure Container Registry**: Created when needed to store images for Azure Machine Learning environments.
 
 :::image type="content" source="../media/overview-azure-resources.png" alt-text="Diagram of hierarchy of Azure resources needed for the Azure Machine Learning workspace.":::
 
@@ -45,7 +45,7 @@ ml_client.workspaces.begin_create(ws_basic)
 
 ## Explore the workspace in the Azure portal
 
-Creating an Azure Machine Learning workspace will typically take between 5-10 minutes to complete. When your workspace is created, you can select the workspace to view its details.
+Creating an Azure Machine Learning workspace typically takes between 5-10 minutes to complete. When your workspace is created, you can select the workspace to view its details.
 
 :::image type="content" source="../media/workspace-portal.png" alt-text="Screenshot of the overview page of the Azure Machine Learning workspace in the Azure portal.":::
 

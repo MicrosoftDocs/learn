@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-hdinsight-aks.4-when-to-use-azure-hdinsight-aks  
 title: When to use HDInsight on AKS
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: When to use HDInsight on AKS
   description: When to use HDInsight on AKS
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-when-to-use-azure-hdinsight-aks.md)]
+

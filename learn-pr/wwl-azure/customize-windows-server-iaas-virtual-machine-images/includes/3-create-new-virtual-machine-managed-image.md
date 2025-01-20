@@ -1,5 +1,3 @@
-
-
 After you have generalized the VM, you can create a managed image. You can then create new VMs from this managed image.
 
 > [!CAUTION]
@@ -24,8 +22,6 @@ To create an image in the Azure portal, use the following procedure:
     > You must enter the existing VM's name to confirm this action.
 
 5. Select **Create**.
-
-    ![A screenshot of the Create an image blade in the Azure portal. The Name and Resource group have been selected, and the administrator has selected the Automatically delete this virtual machine after creating the image check box.](../media/m6-create-image.png)
 
 > [!TIP]
 > Additionally, you can create resilient images that are backed by zone-redundant storage. This feature provides increased availability for your images. To enable this feature, change **Zone resiliency** to **On**.
@@ -67,9 +63,6 @@ To use the Azure portal to create a new VM, perform the following procedure:
 3. Then select **Browse all public and private images**.
 4. On the **Select an image** blade, select the **My Items** tab.
 5. Your newly created image should be present in the list. Select it.
-
-    ![A screenshot of the My Items tab on the Select an image blade in the Azure portal. My Images is selected, and the Contoso-Standard-VM-Image is listed.](../media/m6-select-image-2.png)
-
 6. Configure the remaining required information: **Size**, **Username**, **Password**, **Inbound port rules**, and **License type**.
 
     > [!TIP]
@@ -109,5 +102,3 @@ az vm create \
 > If you want to try out what you've learned, run this exercise: [Create an image of an Azure VM from the Azure CLI and provision a new VM](https://aka.ms/create-image-of-vm-from-cli-and-provision-new-vm?Azure-portal=true). It's based on a sandbox, so you don't need an Azure subscription.
 
 If you review your list of VMs in the Azure portal, after creating your new VM from your managed image you'll notice that the new VM displays the source as **Image**.
-
-![A screenshot of a Virtual Machines blade displaying the list of VMs in an Azure subscription called Contoso Demo. ContosoVM6 (selected) displays the Source as Image, while the other three VMs have a source of Marketplace.](../media/m6-new-virtual-machine.png)

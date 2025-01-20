@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.security-public-access-azure-resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan and implement security for public access to Azure resources
   description: "Plan and implement security for public access to Azure resources"
   ms.date: 06/25/2024

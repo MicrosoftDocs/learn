@@ -7,15 +7,15 @@ Among the types of threats that WAF can protect against are distributed denial o
 
 :::image type="content" source="../media/2-web-app-firewall.png" alt-text="Diagram showing how the Web Application Firewall provides protection against common exploits.":::
 
-#### Integration with Microsoft Copilot for Security (preview)
+#### Integration with Microsoft Security Copilot
 
-Azure Web Application Firewall is integrated with Microsoft Copilot for Security.
+Azure Web Application Firewall is integrated with Microsoft Security Copilot.
 
-For organizations onboarded to Microsoft Copilot for Security, users can experience the Copilot integration through the standalone experience.
+For organizations onboarded to Microsoft Security Copilot, users can experience the Copilot integration through the standalone experience.
 
 Azure Web Application Firewall integration in Copilot enables deep investigation of Azure WAF events, using natural language prompts and responses. It can help you investigate WAF logs triggered by Azure WAF in a matter of minutes and provide related attack vectors. Azure WAF integration with Copilot provides visibility into your environment’s threat landscape.
 
-To use the Azure WAF integration in Copilot, the Azure WAF plugin in Copilot for Security must be turned on and configured.
+To use the Azure WAF integration in Copilot, the Azure WAF plugin in Security Copilot must be turned on and configured.
 
 :::image type="content" source="../media/azure-web-firewall-plugin.png" lightbox="../media/azure-web-firewall-plugin.png" alt-text="Screen capture of the Azure Web Application Firewall plugin.":::
 
@@ -23,4 +23,4 @@ Azure Web Application Firewall capabilities in Copilot are built-in prompts that
 
 :::image type="content" source="../media/azure-web-application-firewall-capabilities.png" lightbox="../media/azure-web-application-firewall-capabilities.png" alt-text="Screen capture of the Azure Web Application Firewall capabilities that can be run in the standalone experience.":::
 
-The summary and resources unit of this module provides a link to more detailed information on Azure Web Application Firewall integration in Microsoft Copilot for Security.
+The summary and resources unit of this module provides a link to more detailed information on Azure Web Application Firewall integration in Microsoft Security Copilot.

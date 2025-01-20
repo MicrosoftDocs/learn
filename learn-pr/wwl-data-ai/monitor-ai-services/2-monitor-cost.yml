@@ -2,6 +2,8 @@
 uid: learn.monitor-ai-services.monitor-cost
 title: Monitor cost
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor cost
   description: Learn how to monitor cost.
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/2-monitor-cost.md)]
+

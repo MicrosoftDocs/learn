@@ -27,11 +27,11 @@ After your device is enrolled, it becomes *managed*. Your organization can assig
 
 ## Apps
 
-After you've added an app to Microsoft Intune, you can assign the app to users and devices. It's important to note that you can assign an app to a device whether or not the device is managed by Intune.
+After you've added an app to Microsoft Intune, you can assign the app to users and devices. It's important to note that you can assign an app to a device whether Intune manages it or not.
 
 In Intune, you can determine who has access to an app by assigning groups of users to include and exclude. Before you assign groups to the app, you must set the assignment type for an app. The assignment type makes the app available, required, or uninstalls the app.
 
-To set the availability of an app, you include and exclude app assignments to a group of users or devices by using a combination of include and exclude group assignments. This capability can be useful when you make the app available by including a large group, then narrow the selected users by also excluding a smaller group. The smaller group might be a test group or an executive group.
+To set the availability of an app, you include and exclude app assignments to a group of users or devices. You can accomplish this using a combination of include and exclude group assignments. This capability can be useful when you make the app available by including a large group. Then narrow the selected users by also excluding a smaller group. The smaller group might be a test group or an executive group.
 
 As a best practice, create and assign apps specifically for your user groups and separately for your device groups.
 
@@ -45,7 +45,7 @@ You can assign policies to groups using Intune. When you assign policies, you ca
 
 ## User groups vs. device groups
 
-Many users ask when to use user groups and when to use device groups. The answer depends on your goal. Here's some guidance to get you started:
+Many users ask when to utilize user groups versus device groups. The answer depends on your goal. Here's some guidance to get you started:
 
 ### Device groups
 
@@ -53,9 +53,9 @@ If you want to apply settings on a device regardless of who's signed in, assign 
 
 For example:
 
-- Device groups are useful for managing devices that don't have a dedicated user. For example, you have devices that print tickets, scan inventory, are shared by shift workers, are assigned to a specific warehouse, and so on. Put these devices in a device group and assign your profiles to this device group.
+- Device groups are useful for managing devices that don't have a dedicated user. For example, you have devices that print tickets, scan inventory, share information across shift workers, assign tickets to specific warehouses, and so on. Put these devices in a device group and assign your profiles to this device group.
 - You create a Device Firmware Configuration Interface (DFCI) Intune profile that updates settings in the BIOS. For example, you configure this profile to disable the device camera or lock down the boot options to prevent users from booting up another OS. This profile is a good scenario to assign to a device group.
-- On some specific Windows devices, you always want to control some Microsoft Edge settings, regardless of who's using the device. For example, you want to block all downloads, limit all cookies to the current browsing session, and delete the browsing history. For this scenario, put these specific Windows devices in a device group, then create an Administrative Template in Intune, add these device settings, and assign this profile to the device group.
+- On some specific Windows devices, you always want to control some Microsoft Edge settings, regardless of who's using the device. For example, you want to block all downloads, limit all cookies to the current browsing session, and delete the browsing history. For this scenario, put these specific Windows devices in a device group. Then create an Administrative Template in Intune, add these device settings, and assign this profile to the device group.
 
 To summarize, use device groups when you don't care who's signed in on the device, or if anyone is signed in. You want your settings to always be on the device.
 
@@ -71,4 +71,4 @@ For example:
 
   For example, you want to block untrusted ActiveX controls in your Office apps. You can create an Administrative Template in Intune, configure this setting, and assign this profile to a user group.
 
-To summarize, use user groups when you want your settings and rules to always go with the user, whatever device they use.
+To summarize, utilize user groups when you want your settings and rules to always go with the user, whatever device they use.

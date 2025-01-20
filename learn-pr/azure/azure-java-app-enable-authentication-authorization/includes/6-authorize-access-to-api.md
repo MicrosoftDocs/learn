@@ -1,6 +1,6 @@
 You can now sign in your company's users into the web application. Next, you want to display information such as their job title, work email, and so on from their employee profile on the page. You find that the Microsoft Graph API provides access to user related data.
 
-In this unit, you'll learn how MSAL can help you get authorized access to Microsoft services such as the Microsoft Graph API.
+In this unit, you learn how MSAL can help you get authorized access to Microsoft services such as the Microsoft Graph API.
 
 ## API permissions and scopes
 
@@ -11,7 +11,7 @@ Web services secured by Microsoft Entra ID define a set of permissions that prov
 * Send mail as a user
 
 Users and administrators can exercise control and know what data the application can access.
-Before your application can access an API secured by Microsoft, you'll need to provide the application permissions to perform the actions.
+Before your application can access an API secured by Microsoft, you need to provide the application permissions to perform the actions.
 
 Microsoft Entra ID supports two types of permissions: delegated permissions and application permissions.
 
@@ -37,29 +37,29 @@ Several of MSAL's token acquisition methods require a `scopes` parameter, which 
 
 MSAL caches a token after it has been acquired. For Web applications that use the OpenID Connect authorization code flow, the recommended pattern in the controllers is to:
 
-* First try to get a token silently from the cache before attempting to acquire a token by other means:
+* First try to get a token silently from the cache before attempting to acquire a token by other means. The following code is an excerpt from the implementation of the `acquireTokenSilently` method in the `AuthHelper` class.
 
-    ```Java
-    final SilentParameters parameters = SilentParameters
-                                            .builder(Collections.singleton(Config.SCOPES), context.getAccount())
-                                            .build();
+  ```java
+  final SilentParameters parameters = SilentParameters
+                                          .builder(Collections.singleton(Config.SCOPES), context.getAccount())
+                                          .build();
 
-    final ConfidentialClientApplication client = getConfidentialClientInstance();
-    
-    client.tokenCache().deserialize(context.getTokenCache());
+  final ConfidentialClientApplication client = getConfidentialClientInstance();
 
-    final IAuthenticationResult result = client.acquireTokenSilently(parameters).get();
-    ```
+  client.tokenCache().deserialize(context.getTokenCache());
+
+  final IAuthenticationResult result = client.acquireTokenSilently(parameters).get();
+  ```
 
 * If there's no token in the cache and the silent token request fails to get a token, you can acquire the token using the authorization code flow:
 
-    ```Java
-    final AuthorizationCodeParameters authParams = AuthorizationCodeParameters
-                                                        .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES))
-                                                        .build();
+  ```java
+  final AuthorizationCodeParameters authParams = AuthorizationCodeParameters
+                                                      .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES))
+                                                      .build();
 
-    final IAuthenticationResult result = app.acquireToken(authParams).get();
-    ```
+  final IAuthenticationResult result = app.acquireToken(authParams).get();
+  ```
 
 MSAL is also capable of refreshing a token when it's getting close to expiration (as the token cache also contains a refresh token).
 

@@ -9,7 +9,7 @@ In this exercise, you'll:
 ## Prerequisites
 
 * An active Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-* A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription
+* A Microsoft account assigned to the _Owner_ or _Contributor_ role in the Azure subscription.
 
 ## Create an Azure IoT Central application
 

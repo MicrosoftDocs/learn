@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-deployment-scenarios
 title: Explore deployment scenarios
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore deployment scenarios
   description: "Explore three different deployment scenarios."
   ms.date: 10/10/2024

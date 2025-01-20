@@ -8,9 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: unit
-azureSandbox: false
-labId: 96511
-labModal: true
+  zone_pivot_groups: sql-database
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise-sort-filter-query-results.md)]

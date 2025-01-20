@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.django.deployment.cloud-resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deployment considerations
   description: When you're ready to deploy your application, select the necessary components and method. See how to ensure a successful deployment.
   ms.date: 03/01/2021 

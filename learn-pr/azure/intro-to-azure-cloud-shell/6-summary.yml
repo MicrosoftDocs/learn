@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-cloud-shell.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: In this unit, you review what you learned about Azure Cloud Shell.
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

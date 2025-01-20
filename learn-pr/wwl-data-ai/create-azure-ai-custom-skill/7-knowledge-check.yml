@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-ai-custom-skill.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Check your knowledge."
+  ms.date: 10/23/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You want to include a sentiment score for each document in an index. What should you do?"
+    choices:
+    - content: "Create a custom skill that uses an Azure Machine Learning model to predict the sentiment for a document"
+      isCorrect: false
+      explanation: "Incorrect. There's no need to create a custom skill in this scenario."
+    - content: "Create a custom skill that calls the Azure AI Language service and predicts the sentiment of each document."
+      isCorrect: false
+      explanation: "Incorrect. There's no need to create a custom skill in this scenario."
+    - content: "Add the built-in Sentiment skill to the skillset used by the indexer."
+      isCorrect: true
+      explanation: "Correct. The built-in sentiment skill can be used to accomplish the goal in this scenario."
+  - content: "You implemented a custom skill as an Azure function. You want to include the custom skill in your Azure AI Search indexing process. What should you do?"
+    choices:
+    - content: "Add a WebApiSkill to a skillset, referencing the Azure function's URI"
+      isCorrect: true
+      explanation: "Correct. To integrate an Azure function custom skill into an indexing process, you must define a skillset containing a WebApiSkill with the URI for the function."
+    - content: "Create a JSON document with the input schema for your function, and save it in the folder where the documents to be indexed are stored."
+      isCorrect: false
+      explanation: "Incorrect. Creating a JSON document with the function schema doesn't include the function in the indexing pipeline."
+    - content: "Submit each document to the function, and store the output in a separate data source. Then use the Merge skill to add the results to the index."
+      isCorrect: false
+      explanation: "Incorrect. The merge skill merges document fields within a single enrichment pipeline. It doesn't merge data from multiple data sources."
+  - content: "When you create an Azure AI Language project, if you let the model automatically split your training data, what percentage of the documents will it use to train the model, by default?"
+    choices:
+    - content: "20%"
+      isCorrect: false
+      explanation: "Incorrect. If you let the model automatically split your training data, it uses 80% of the documents to train the model, by default."
+    - content: "50%"
+      isCorrect: false
+      explanation: "Incorrect. If you let the model automatically split your training data, it uses 80% of the documents to train the model, by default."
+    - content: "80%"
+      isCorrect: true
+      explanation: "Correct. If you let the model automatically split your training data, it uses 80% of the documents to train the model, by default."
+  - content: "When you create an Azure Machine Learning custom skill, what type of endpoint does the URI have to use?"
+    choices:
+    - content: "The URI has to use an HTTPS endpoint"
+      isCorrect: true
+      explanation: "Correct. The URI has to use an HTTPS endpoint."
+    - content: "The URI has to use an HTTP endpoint"
+      isCorrect: false
+      explanation: "Incorrect. The URI can't use an HTTP endpoint."
+    - content: "The URI has to use an FTP endpoint"
+      isCorrect: false
+      explanation: "Incorrect. The URI can't use an FTP endpoint."
+

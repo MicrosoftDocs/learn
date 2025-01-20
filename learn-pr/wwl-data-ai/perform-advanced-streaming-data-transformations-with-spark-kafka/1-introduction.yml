@@ -2,6 +2,8 @@
 uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 04/07/2024

@@ -1,15 +1,15 @@
 ### YamlMime:LearningPath
 uid: learn.azure.operationalize-ai-responsibly
-title: Operationalize AI responsibly with Azure AI Studio
+title: Operationalize AI responsibly with Azure AI Foundry
 metadata:
-  title: Operationalize AI responsibly with Azure AI Studio
-  description: Explore Azure AI Studio’s tools for generative AI security, privacy, and quality. Shift from reactive risk management to agile, responsible-by-design governance for better observability and efficiency.
+  title: Operationalize AI responsibly with Azure AI Foundry
+  description: Explore Azure AI Foundry's tools for generative AI security, privacy, and quality. Shift from reactive risk management to agile, responsible-by-design governance for better observability and efficiency.
   ms.date: 09/23/2024
   author: aprilspeight
   ms.author: apspeigh
   ms.topic: learning-path
 summary: >
-  Explore Azure AI Studio’s tools for generative AI security, privacy, and quality. Shift from reactive risk management to agile, responsible-by-design governance for better observability and efficiency.
+  Explore Azure AI Foundry's tools for generative AI security, privacy, and quality. Shift from reactive risk management to agile, responsible-by-design governance for better observability and efficiency.
 prerequisites: |
   - An Azure subscription – [Create one for free](https://azure.microsoft.com/free/cognitive-services/)
   - Familiarity with Azure and the Azure portal

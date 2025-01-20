@@ -2,6 +2,8 @@
 uid: learn.introduction-to-azure-api-center.api-discovery-consumption
 title: API discovery and consumption
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: API discovery and consumption
   description: "API Center supports seamlessly discovering and engaging with APIs in your API inventory."
   ms.date: 5/3/2024

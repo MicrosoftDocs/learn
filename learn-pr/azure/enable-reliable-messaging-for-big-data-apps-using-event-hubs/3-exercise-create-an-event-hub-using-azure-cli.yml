@@ -2,6 +2,8 @@
 uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.3-exercise-create-an-event-hub-using-azure-cli
 title: Exercise - Use the Azure CLI to Create an event hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use the Azure CLI to Create an event hub
   description: Use the Azure CLI to Create an event hub
   ms.date: 11/22/2023
@@ -15,3 +17,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-an-event-hub-using-azure-cli.md)]
+

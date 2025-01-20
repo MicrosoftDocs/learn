@@ -2,6 +2,8 @@
 uid: learn.wwl.datacenter-integration-for-azure-stack-hub.connection-models
 title: Connection models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connection models
   description: "Connection models"
   ms.date: 03/15/2022

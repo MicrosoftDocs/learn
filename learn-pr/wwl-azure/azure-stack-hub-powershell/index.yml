@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-stack-hub-powershell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Stack Hub PowerShell
   description: "Azure Stack Hub PowerShell"
   ms.date: 03/17/2022
@@ -38,3 +40,4 @@ units:
 - learn.wwl.azure-stack-hub-powershell.summary
 badge:
   uid: learn.wwl.azure-stack-hub-powershell.badge
+

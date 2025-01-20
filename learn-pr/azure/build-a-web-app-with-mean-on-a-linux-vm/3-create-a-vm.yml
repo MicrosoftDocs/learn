@@ -3,8 +3,8 @@ uid: learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux
 title: Exercise - Create a VM to host your web application
 metadata:
   title: Exercise - Create a VM to host your web application
-  description: Exercise - Create a VM to host your web application
-  ms.date: 05/11/2023
+  description: Exercise - Create a virtual machine (VM) to host your web application.
+  ms.date: 11/19/2024
   author: ju-shim
   ms.author: jushiman
   ms.topic: unit

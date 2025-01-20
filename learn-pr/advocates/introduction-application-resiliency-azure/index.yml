@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.introduction-to-application-resiliency-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   ms.author: orthomas
   author: Orin-Thomas
   ms.date: 08/14/2024
@@ -35,3 +37,4 @@ units:
 - learn.introduction-to-application-resiliency-azure.summary
 badge:
   uid: learn.introduction-to-application-resiliency-azure-badge
+

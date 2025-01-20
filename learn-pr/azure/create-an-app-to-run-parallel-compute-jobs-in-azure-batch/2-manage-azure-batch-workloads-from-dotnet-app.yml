@@ -2,6 +2,8 @@
 uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.manage-azure-batch-workloads-from-dotnet-app
 title: Manage Azure Batch workloads from a .NET app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Azure Batch workloads from a .NET app
   description: Learn about the components of an Azure Batch workload, from pools, nodes, jobs and tasks.
   ms.date: 02/14/2024
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-manage-azure-batch-workloads-from-dotnet-app.md)]
+

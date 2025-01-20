@@ -2,6 +2,8 @@
 uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps.4-debugging-performance-bottlenecks
 title: Debug performance bottlenecks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Debug performance bottlenecks
   description: Learn about preparing to run a large and tightly coupled high-performance computing (HPC) application. Including, how to check if an HPC application is underperforming, and how to correct underperformance.
   ms.date: 05/29/2024

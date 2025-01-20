@@ -2,6 +2,8 @@ In this exercise, you add a Razor component to your application's home page.
 
 ## Add the Counter component to the Home page
 
+::: zone pivot="vstudio"
+
 1. Expand the folders in the Visual Studio Solution Explorer. If you don't have the Solution Explorer displayed, select **View** > **Solution Explorer**.
 
 1. Select **Components/Pages** to view the existing Razor pages.
@@ -20,8 +22,6 @@ In this exercise, you add a Razor component to your application's home page.
    <Counter />
    ```
 
-::: zone pivot="vstudio"
-
 If you still have the app running, save the file and select the **Hot reload** (<kbd>Alt+F10</kbd>) command so that the `Counter` component shows up on the Home page. In the running app, verify the counter appears by selecting another tab, then selecting the **Home** tab to return to the Home page. If you stopped debugging previously, start the app again by selecting **Debug** > **Start Debugging**.
 
 When you're ready to stop, return to Visual Studio and press <kbd>Shift+F5</kbd> to stop the app.
@@ -30,7 +30,25 @@ When you're ready to stop, return to Visual Studio and press <kbd>Shift+F5</kbd>
 
 ::: zone pivot="vscode"
 
-If you still have the app running, return to Visual Studio Code, and press <kbd>Shift+F5</kbd> to stop the app. Save the file and start the app again by selecting **Run** > **Start Debugging**
+1. Expand the folders in the Visual Studio Code Explorer. If you don't have the Explorer displayed, select **View** > **Explorer**.
+
+1. Select **Components/Pages** to view the existing Razor pages.
+
+1. Select the **Home.razor** file to open it.
+
+1. Add a `Counter` component to the page by adding a `<Counter />` element at the end of the _Home.razor_ file.
+
+   ```razor
+   @page "/"
+
+   <h1>Hello, world!</h1>
+
+   Welcome to your new app.
+
+   <Counter />
+   ```
+
+If you still have the app running, return to Visual Studio Code, and press <kbd>Shift+F5</kbd> to stop the app. Save the file and start the app again by selecting **Run** > **Start Debugging**.
 
 When you're ready to stop, return to Visual Studio Code, and press <kbd>Shift+F5</kbd> to stop the app.
 

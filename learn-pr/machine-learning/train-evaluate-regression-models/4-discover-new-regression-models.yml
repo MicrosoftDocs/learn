@@ -2,6 +2,8 @@
 uid: learn.wwl.train-evaluate-regression-models.discover-new-regression-models
 title: Discover new regression models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover new regression models
   description: Review new types of regression models, such as tree-based algorithms
   ms.date: 08/10/2024

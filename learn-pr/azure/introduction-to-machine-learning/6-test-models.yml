@@ -2,6 +2,8 @@
 uid: learn.machinelearning.introduction-to-machine-learning.test-models
 title: How to use a model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to use a model
   description: Conceptual unit about how to use a machine learning models
   ms.date: 08/21/2024

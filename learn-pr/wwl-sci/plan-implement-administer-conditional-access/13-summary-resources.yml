@@ -2,9 +2,11 @@
 uid: learn.wwl.plan-implement-administer-conditional-access.summary-resources
 title: Summary and resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary and resources
   description: "Summary and resources"
-  ms.date: 10/14/2024
+  ms.date: 12/16/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

@@ -23,7 +23,7 @@ A single DCR can contain multiple data sources of different types. Depending on 
 
 The DCR is applied to a particular agent by creating a [data collection rule association (DCRA)](/azure/azure-monitor/essentials/data-collection-rule-overview#data-collection-rule-associations-dcra) between the DCR and the agent. One DCR can be associated with multiple agents, and each agent can be associated with multiple DCRs. When an agent is installed, it connects to Azure Monitor to retrieve any DCRs that are associated with it. The agent periodically checks back with Azure Monitor to determine if there are any changes to existing DCRs or associations with new ones.
 
-:::image type="content" source="../media/data-collection-rule-associations.png" alt-text="Diagram showing an example of Data collection rule association.":::
+:::image type="content" source="../media/data-collection-rule-associations-2887d79f.png" alt-text="Diagram showing an example of Data collection rule association.":::
 
 
 ### Windows agents

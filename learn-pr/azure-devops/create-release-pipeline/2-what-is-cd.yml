@@ -2,6 +2,8 @@
 uid: learn.azdo.create-release-pipeline.2-what-is-cd
 title: What is continuous delivery?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is continuous delivery?
   description: Learn what continuous delivery is, why it's important, and what tools you can use.
   ms.custom: devdivchpfy22, engagement-fy23
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-cd.md)]
+

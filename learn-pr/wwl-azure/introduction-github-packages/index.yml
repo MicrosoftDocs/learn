@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-github-packages
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to GitHub Packages
   description: "Introduction to GitHub Packages"
   ms.date: 05/07/2024

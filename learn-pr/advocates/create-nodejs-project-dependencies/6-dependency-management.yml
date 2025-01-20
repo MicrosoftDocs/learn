@@ -2,6 +2,8 @@
 uid: learn.azure.create-nodejs-project-dependencies.6-dependency-management
 title: Manage dependency updates in your Node.js project
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage dependency updates in your Node.js project
   description: This unit explains how to update the dependencies in your app and how to do so in a predictable way.
   author: diberry
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-dependency-management.md)]
+

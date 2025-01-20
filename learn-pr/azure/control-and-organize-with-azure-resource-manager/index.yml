@@ -1,10 +1,12 @@
 ### YamlMime:Module
 uid: learn.control-and-organize-with-resource-manager
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Control and organize Azure resources with Azure Resource Manager
   description: Use Azure Resource Manager to organize resources, enforce standards, and protect critical assets from deletion.
   manager: jasongroce
-  ms.date: 09/27/2024
+  ms.date: 10/29/2024
   author: mumian
   ms.author: jgao
   ms.topic: module
@@ -42,3 +44,4 @@ units:
 - learn.control-and-organize-with-resource-manager.8-summary
 badge:
   uid: learn.control-and-organize-with-resource-manager.badge
+

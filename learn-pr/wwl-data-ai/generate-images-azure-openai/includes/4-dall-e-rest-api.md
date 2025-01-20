@@ -4,7 +4,7 @@ To make a REST call to the service, you need the endpoint and authorization key 
 
 - **prompt**: The description of the image to be generated.
 - **n**: The number of images to be generated. DALL-E 3 only supports n=1.
-- **size**: The resolution of the image(s) to be generated (*1024x1024*, *1792x1024*, or *1024x1792*).
+- **size**: The resolution of the image(s) to be generated (*1024x1024*, *1792x1024*, or *1024x1792* for DALL-E 3; *256x256*, *512x512*, or *1024x1024* for DALL-E 2).
 - **quality** *Optional*: The quality of the image (*standard* or *hd*). Defaults to *standard*.
 - **style** *Optional*: The visual style of the image (*natural* or *vivid*). Defaults to *vivid*.
 

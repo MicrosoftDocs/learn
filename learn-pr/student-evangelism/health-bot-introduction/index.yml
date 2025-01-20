@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.health-bot-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Health Bot
   description: In this module, you'll learn about Azure Health Bot and its capabilities. You'll then learn how businesses can use the service to build powerful health bots. No prior knowledge is required, so if you're a beginner, this module will get you going. If you know how a health bot works, this module will tie concepts together and fill in the gaps. 
   ms.collection: TBD
@@ -39,3 +41,4 @@ units:
   - learn.health-bot-introduction.7-summary
 badge:
   uid: learn.student-evangelism.health-bot-introduction.badge
+

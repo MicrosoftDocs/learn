@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-azure-database-postgresql-flexible-server
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate to Azure Database for PostgreSQL flexible server
   description: "Azure Database for PostgreSQL Flexible Server supports effective data migration from PostgreSQL servers. This module covers both online and offline migration methods and tools, helping you choose the right approach for your scenario. Learn practical techniques for managing migrations efficiently, ideal for minimizing downtime and maintaining productivity."
   ms.date: 05/10/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 05/22/2024

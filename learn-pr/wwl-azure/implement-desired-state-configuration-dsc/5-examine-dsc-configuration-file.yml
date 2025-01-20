@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-desired-state-configuration-dsc.examine-dsc-configuration-file
 title: Examine DSC configuration file
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine DSC configuration file
   description: "Examine DSC configuration file"
   ms.date: 05/23/2024

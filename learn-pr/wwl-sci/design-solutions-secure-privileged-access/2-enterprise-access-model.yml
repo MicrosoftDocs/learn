@@ -5,8 +5,8 @@ metadata:
   title: The enterprise access model
   description: "This is a unit to prepare for the Microsoft cybersecurity architect certification on the topic: the enterprise access model."
   ms.date: 3/14/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 15
 content: |

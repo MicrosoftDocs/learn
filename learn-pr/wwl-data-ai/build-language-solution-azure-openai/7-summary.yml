@@ -2,6 +2,8 @@
 uid: learn.wwl.build-language-solution-azure-openai.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: In this module, you learned how to integrate Azure OpenAI into your application for intelligent natural language processing.
   author: ivorb
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.monitor-app-performance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor app performance
   description: "Monitor app performance"
   ms.date: 07/18/2024

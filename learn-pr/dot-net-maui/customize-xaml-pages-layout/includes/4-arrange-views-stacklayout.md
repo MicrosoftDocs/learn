@@ -6,13 +6,13 @@ Stacking views in a vertical or horizontal list is a common design for user inte
 
 :::image type="content" source="../media/4-stack-layout.png" alt-text="Illustration showing four blocks stacked vertically from top to bottom of the screen.":::
 
-- `StackLayout` has a list of `Children` that it inherits from its base class `Layout<T>`. The list stores views, which is helpful because most UI elements you work with in .NET MAUI derive from `View`. Layout panels also derive from `View`, which means you can nest panels if you need to.
+- `StackLayout` has a list of `Children` that it inherits from its base class `Layout<T>`. The list stores views, which is helpful because most UI elements you work with in .NET Multi-platform App UI (MAUI) derive from `View`. Layout panels also derive from `View`, which means you can nest panels if you need to.
 
 - `VerticalStackLayout` and `HorizontalStackLayout` are the preferred layouts to use when you know that your orientation isn't going to change, because they're optimized for performance.
 
 ## How to add views to a StackLayout
 
-In .NET MAUI, you can add views to a `StackLayout` in C# code or in XAML. Here's an example of three views added using code:
+In .NET MAUI, you can add views to a `StackLayout` in C# code or in Extensible Application Markup Language (XAML). Here's an example of three views added using code:
 
 ```xaml
 <StackLayout x:Name="stack">

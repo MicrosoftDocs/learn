@@ -12,7 +12,7 @@ To see purchase recommendations, sign in to the Azure portal. Navigate to **Rese
 
 :::image type="content" source="../media/2-select-product-recommended-quantity.png" alt-text="Screenshot showing recommended quantities." lightbox="../media/2-select-product-recommended-quantity.png" :::
 
-You can group the recommendations by the smallest instance size in an *instance flexibility group* by using the toggle option shown in the previous example.
+You can group the recommendations by the smallest instance size in an *instance flexibility group*, by using the toggle option shown in the previous example.
 
 When you select **See details** for a recommendation, you see the past usage pattern and your projected savings for a different quantity.
 
@@ -26,7 +26,7 @@ You can also see how your savings would change if you purchase a different quant
 
 :::image type="content" source="../media/2-savings-by-quantity.png" alt-text="Screenshot showing the savings by quantity tab." lightbox="../media/2-savings-by-quantity.png" :::
 
-You can also get the [reservation recommendations using an API](/rest/api/consumption/reservationrecommendations/list).
+You can also get a list of [Reservation Recommendations](/rest/api/consumption/reservationrecommendations/list) by using an API.
 
 ## View reservation recommendations in Azure Advisor
 
@@ -38,7 +38,7 @@ To view purchase recommendations in Advisor, navigate to **Advisor** in the Azur
 
 ## Use the Reservation Coverage report in the Cost Management app
 
-Enterprise Agreement and Microsoft Customer Agreement customers can use the VM RI Coverage report for VMs and purchase recommendations. This is a great tool for determining the different instance size groups that are currently used by your organization. It also lets you see a breakdown of the total usage alongside the usage that's already covered by reserved instances if you purchased reservations in the past.
+Enterprise Agreement and Microsoft Customer Agreement customers can use the VM RI Coverage report for VMs and purchase recommendations. This report is a great tool for determining the different instance size groups that are currently used by your organization. It also lets you see a breakdown of the total usage alongside the usage which is already covered by reserved instances if you purchased reservations in the past.
 
 1. Get the [Cost Management App for Power BI](https://appsource.microsoft.com/product/power-bi/costmanagement.azurecostmanagementapp).
 
@@ -50,4 +50,4 @@ Enterprise Agreement and Microsoft Customer Agreement customers can use the VM R
 
 To view details, select the drill-down filter highlighted in red.
 
-After you've finished your analysis, and determined both the type of reservation you want to purchase and the capacity included in your commitment, you're ready to continue to the next unit, and make a purchase in the Azure portal.
+After you finish your analysis, and determine the type of reservation you want to purchase and the capacity included in your commitment. You're ready to continue to the next unit, and make a purchase in the Azure portal.

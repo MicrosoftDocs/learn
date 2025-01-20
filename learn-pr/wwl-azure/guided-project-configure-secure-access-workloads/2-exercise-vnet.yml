@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-configure-secure-access-workloads.exercise1
-title: Exercise - Provide network isolation and segmentation for the web application
+title: Exercise 01 - Create and configure virtual networks
 metadata:
-  title: Exercise - Provide network isolation and segmentation for the web application
-  description: "Exercise - Provide network isolation and segmentation for the web application"
-  ms.date: 03/08/2024
+  title: Exercise 01 - Create and configure virtual networks
+  description: "Create and configure virtual networks"
+  ms.date: 11/08/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-vnet.md)]

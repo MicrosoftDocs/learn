@@ -2,6 +2,8 @@
 uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.understand-azure-resource-manager-resources
 title: Understand Azure Resource Manager resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Azure Resource Manager resources
   description: "Understand Azure Resource Manager resources"
   ms.date: 10/18/2022
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/2-understand-azure-resource-manager-resources.md)]
+

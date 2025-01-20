@@ -20,7 +20,7 @@ Let's take a look at some best practices for storage security. Think about optio
 
   - Microsoft-managed keys: By default, Microsoft manages the keys used to encrypt your storage account.
 
-  - Customer-managed keys: You can optionally choose to manage encryption keys for your storage account. [Customer-managed keys](/azure/storage/common/storage-encryption-key-model-get) must be stored in Azure Key Vault.
+  - [Customer-managed keys](/azure/storage/common/storage-encryption-key-model-get): You can optionally choose to manage encryption keys for your storage account. These keys must be stored in Azure Key Vault.
 
 ### Things to consider when implementing storage security
 

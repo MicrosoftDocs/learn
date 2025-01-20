@@ -2,6 +2,8 @@
 uid: learn.wwl.automate-azure-virtual-desktop-management-tasks.create-azure-logic-app-execution-schedule
 title: Create the Azure Logic App and execution schedule
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create the Azure Logic App and execution schedule
   description: "Create the Azure Logic App and execution schedule"
   ms.date: 06/21/2023

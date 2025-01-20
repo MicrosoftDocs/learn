@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-deployment-patterns.examine-classical-deployment-patterns
 title: Examine classical deployment patterns
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine classical deployment patterns
   description: "Examine classical deployment patterns"
   ms.date: 05/06/2024

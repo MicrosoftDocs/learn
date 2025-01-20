@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.migrate-sql-workloads-to-azure
 metadata:
-  title: Migrate SQL Server workloads to Azure SQL
-  description: Learn how to perform online and offline SQL Server migrations to Azure SQL.
+  title: Migrate SQL Server workloads to Azure SQL DP-3001
+  description: Learn how to perform online and offline SQL Server migrations to Azure SQL. (DP-3001)
   ms.date: 01/18/2021
   author: JulianePadrao
   ms.author: jupadrao

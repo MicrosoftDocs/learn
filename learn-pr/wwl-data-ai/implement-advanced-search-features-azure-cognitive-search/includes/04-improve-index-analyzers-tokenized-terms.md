@@ -177,3 +177,7 @@ It's also possible to use a different analyzer when indexing the field and when 
    "searchAnalyzer": "ContosoSearchAnalyzer"
  },
 ```
+
+## Learn more
+
+[Add custom analyzers to string fields in an Azure AI Search index](/azure/search/index-add-custom-analyzers)

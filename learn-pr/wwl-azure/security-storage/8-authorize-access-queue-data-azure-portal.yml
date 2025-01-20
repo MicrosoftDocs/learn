@@ -2,6 +2,8 @@
 uid: learn.wwl.security-storage.authorize-access-queue-data-azure-portal
 title: Select and configure an appropriate method for access to Azure Queues
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Select and configure an appropriate method for access to Azure Queues
   description: "Select and configure an appropriate method for access to Azure Queues"
   ms.date: 06/25/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-business-integration.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: This content is a part of Configure business integration in Azure IoT Central
   ms.date: 05/11/2023

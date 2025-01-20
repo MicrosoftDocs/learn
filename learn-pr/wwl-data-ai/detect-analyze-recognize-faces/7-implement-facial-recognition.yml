@@ -2,14 +2,17 @@
 uid: learn.wwl.detect-analyze-recognize-faces.implement-facial-recognition
 title: Implement facial recognition
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement facial recognition
   description: Implement facial recognition
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 03/11/2024
+  ms.author: berryivor
+  ms.date: 12/13/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/7-implement-facial-recognition.md)]
+

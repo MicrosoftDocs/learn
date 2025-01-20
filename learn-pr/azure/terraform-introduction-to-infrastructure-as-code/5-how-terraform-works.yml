@@ -2,6 +2,8 @@
 uid: learn.azure.terraform-introduction-to-infrastructure-as-code.how-terraform-works
 title: How Terraform works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: How Terraform works
   description: Learn how Terraform deploys your Azure infrastructure.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/5-how-terraform-works.md)]
+

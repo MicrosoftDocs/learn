@@ -1,4 +1,4 @@
-.NET MAUI provides multiple storage options for caching data locally on a device, depending on the nature, structure, and size of the data. The three most commonly used options for storing data locally in a .NET MAUI app are:
+.NET Multi-platform App UI (MAUI) provides multiple storage options for caching data locally on a device, depending on the nature, structure, and size of the data. The three most commonly used options for storing data locally in a .NET MAUI app are:
 
 - **Preferences**: Stores data in key-value pairs
 - **File system**: Stores loose files directly on the device through file-system access
@@ -6,7 +6,7 @@
 
 :::image type="content" source="../media/2-data-storage-options.svg" alt-text="Diagram of the common local storage options available to a .NET MAUI app.":::
 
-In this unit, you'll look at these storage options and the situations for which each option is most appropriate.
+In this unit, we look at these storage options and the situations for which each option is most appropriate.
 
 ## When to use Preferences
 
@@ -51,13 +51,13 @@ customers = JsonSerializer.Deserialize<List<Customer>>(rawData);
 
 ### Access the app sandbox
 
-When you're working with loose files such XML files, you need to store them in a suitable location in the file system. Some of this data might be sensitive, and you don't want to save it to a location where other apps or users could easily access it. .NET MAUI apps provide the **app sandbox**. The app sandbox is a private area with which your application can work. By default, no other applications can access this area other than the operating system. You can access the sandbox by using the `AppDataDirectory` static property of the `FileSystem` class:
+When you're working with loose files such as XML files, you need to store them in a suitable location in the file system. Some of this data might be sensitive, and you don't want to save it to a location where other apps or users could easily access it. .NET MAUI apps provide the **app sandbox**. The app sandbox is a private area with which your application can work. By default, no other applications can access this area other than the operating system. You can access the sandbox by using the `AppDataDirectory` static property of the `FileSystem` class:
 
 ```csharp
 string path = FileSystem.AppDataDirectory;
 ```
 
-In this code, the `path` variable contains the file path to the location where you can store files for the application to use. You can read and write data to files in this folder using the techniques shown in the *When to use the file system* section.
+In this code, the `path` variable contains the file path to the location where you can store files for the application to use. You can read and write data to files in this folder, by using the techniques shown in the *When to use the file system* section.
 
 > [!NOTE]
 > The `FileSystem.AppDataDirectory` property is an abstraction of a device-specific path; it evaluates to different folders on Android, iOS, and WinUI3. This abstraction allows you to write code that references the sandbox in a manner that's independent of the platform on which it runs. Use this abstraction rather than referencing a device-specific path explicitly in your code.
@@ -66,7 +66,7 @@ In this code, the `path` variable contains the file path to the location where y
 
 Apple has iOS guidelines for where files should be stored. There are two main folder locations:
 
-- **The *Library* folder**: This folder is returned by the `FileSystem.AppDataDirectory` property, as described previously. Use the Library folder when you're storing data that's app-generated.
+- **The *Library* folder**: As described previously, the `FileSystem.AppDataDirectory` property returns this folder. Use the Library folder when you're storing app-generated data.
 
 - **The *Documents* folder**: The following code snippet shows how to reference this folder in the `docFolder` variable. Use the Documents folder to store user-generated data only. This data is created in direct response to a user action. For example, if you were creating a text-editing application such as Microsoft Word, you'd store the document in the Documents folder.
 

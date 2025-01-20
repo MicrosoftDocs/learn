@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-data-science-fabric
 metadata:
   title: Get started with data science in Microsoft Fabric
   description: "Get started with data science in Microsoft Fabric by learning how to train a model in a notebook, and track your metrics with MLflow and experiments."
-  ms.date: 11/23/2023
+  ms.date: 11/25/2024
   author: wwlpublish
   ms.author: madiepev
   ms.topic: module-standard-task-based

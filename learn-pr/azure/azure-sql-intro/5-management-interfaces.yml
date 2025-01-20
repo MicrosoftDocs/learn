@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-intro.5-management-interfaces
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Management interfaces for Azure SQL
   description: Learn about management interfaces for Azure SQL, like the Azure portal, CLI, and APIs.
   ms.date: 10/03/2024

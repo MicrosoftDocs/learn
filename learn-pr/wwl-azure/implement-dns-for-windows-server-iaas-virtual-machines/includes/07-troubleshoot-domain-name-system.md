@@ -1,6 +1,3 @@
-
-
-
 As lead system engineer at Contoso, you need to know how to identify and resolve critical name resolution and DNS service problems. In this unit, you'll explore troubleshooting Azure DNS and Windows Server DNS, and general name resolution troubleshooting.
 
 ## Troubleshooting Azure DNS
@@ -13,7 +10,7 @@ If you experience problems administering Azure DNS, review the following table f
 |You can't create a DNS record|Start by reviewing the Azure DNS audit logs. Next, verify that the record set doesn't already exist. Verify that you are not attempting to create a record set at the zone root; if you are, use the `@` character as a prefix. Ensure you do not have an alias (CNAME) conflict. Also, check whether you have reached the limit on the record set number permitted in your DNS zone.  If you have, then either delete some record sets or contact Azure Support to increase the limit.|
 |You can't resolve a DNS record|Verify that the queried records are correct. Make sure that the records are correct in Azure DNS. Verify that the petitioned records can be resolved on the Azure DNS name servers. If you're using a local computer to perform the query, check the DNS name cache. If necessary, empty this cache and try again.|
 
-> [!NOTE] 
+> [!NOTE]
 > You can access DNS log information using DNS Analytics. 
 
 ## Troubleshoot Windows Server DNS
@@ -57,7 +54,7 @@ When troubleshooting name resolution, you must understand the name resolution me
    ipconfig /flushdns
    ```
 
-   > [!NOTE] 
+   > [!NOTE]
    > The equivalent Windows PowerShell command is: `Clear-DNSClientCache`.
 
 2. Attempt to ping the remote host by its IP address. This helps identify whether the issue is related to name resolution. If the ping succeeds by using the IP address but fails by using its host name, then the problem is related to name resolution.
@@ -67,7 +64,7 @@ When troubleshooting name resolution, you must understand the name resolution me
    Ping LON-DC1.contoso.com
    ```
 
-   > [!NOTE] 
+   > [!NOTE]
    > The equivalent Windows PowerShell command is: `Test-connection LON-DC1.Contoso.com`.
 
 4. At the command prompt, enter the following command, and then select Enter:
@@ -76,7 +73,7 @@ When troubleshooting name resolution, you must understand the name resolution me
    NSLookup.exe -d2 LON-DC1.contoso.com. > filename.txt
    ```
 
-   > [!NOTE] 
+   > [!NOTE]
    > The equivalent Windows PowerShell command is: `Resolve-dnsname lon-DC1.Contoso.com. > filename.txt`.
 
 5. Examine the contents of the filename.txt file to identify the failed stage in name resolution.

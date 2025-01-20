@@ -2,6 +2,8 @@
 uid: learn.azure.azure-vmware-solution
 title: Secure outbound internet connectivity for Azure VMware Solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure outbound internet connectivity for Azure VMware Solution
   description: Secure outbound internet connectivity for Azure VMware Solution using Azure Route Server, Azure Firewall and 3rd party NVA
   ms.date: 03/23/2023

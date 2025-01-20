@@ -5,8 +5,8 @@ metadata:
   title: Specify security requirements for containers and container orchestration
   description: "SC-100 preparatory unit on the topic: specify security requirements for containers and container orchestration."
   ms.date: 09/26/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 10
 content: |

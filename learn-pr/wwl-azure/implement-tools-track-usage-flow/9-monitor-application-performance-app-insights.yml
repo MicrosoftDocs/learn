@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-tools-to-track-usage-flow.monitor-application-performance-app-insights
-title: Monitor application performance with Application Insights
+title: Monitor Application Performance with Azure Load Testing
 metadata:
-  title: Monitor application performance with Application Insights
-  description: "Monitor application performance with Application Insights"
-  ms.date: 05/24/2024
+  title: Monitor Application Performance with Azure Load Testing
+  description: "Monitor Application Performance with Azure Load Testing"
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: lumac
   ms.topic: unit
   ms.custom:
-  - N/A
+    - N/A
 durationInMinutes: 60
 content: |
   [!include[](includes/9-monitor-application-performance-app-insights.md)]

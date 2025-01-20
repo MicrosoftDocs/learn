@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 06/15/2023
+  ms.date: 11/14/2024
   author: bandersmsft
   ms.author: banders
   ms.reviewer: onwokolo
@@ -46,18 +46,18 @@ quiz:
       explanation: "Incorrect. Although Azure savings plan for compute can be applied to a management group, it isn't the largest supported scope."
     - content: "Shared"
       isCorrect: true
-      explanation: "Correct. Shared scope is the largest scope to which Azure savings plan for compute can be applied."
+      explanation: "Correct. The shared scope is the largest scope to which Azure savings plan for compute can be applied."
     - content: "Subscription"
       isCorrect: false
       explanation: "Incorrect. Although Azure savings plan for compute can be applied to a subscription, it isn't the largest supported scope."
-  - content: "How are Azure savings plan for compute commitments priced for EA and MCA/MCP customers"
+  - content: "How are Azure savings plan for compute commitments priced for EA and MCA/MCP customers?"
     choices:
     - content: "Always in local currency"
       isCorrect: false
-      explanation: "Incorrect. Saving plan commitments aren't priced in local currency for all customers."
+      explanation: "Incorrect. Savings-plan commitments aren't priced in local currency for all customers."
     - content: "In local currency for EA customers and in USD for MCA/MPA customers"
       isCorrect: true
-      explanation: "Correct. Saving plan commitments are priced in local currency for EA customers and in USD for MCA/MPA customers."
+      explanation: "Correct. Savings-plan commitments are priced in local currency for EA customers and in USD for MCA/MPA customers."
     - content: "Always in USD"
       isCorrect: false
-      explanation: "Incorrect. Saving plan commitments aren't priced in USD for all customers."
+      explanation: "Incorrect. Savings-plan commitments aren't priced in USD for all customers."

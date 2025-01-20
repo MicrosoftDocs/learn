@@ -1,9 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.1-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  ms.date: 10/11/2023
+  ms.date: 11/04/2024
   author: asudbring
   ms.author: allensu
   ms.topic: unit
@@ -11,3 +13,4 @@ title: Introduction
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

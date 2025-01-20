@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-sap-hana-azure-large-instances-deployments.examine-single-multiple-sap-systems
 title: Examine SAP HANA on Azure (Large Instances) single and multiple SAP systems
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine SAP HANA on Azure (Large Instances) single and multiple SAP systems
   description: "Examine SAP HANA on Azure (Large Instances) single and multiple SAP systems"
   ms.date: 12/08/2021

@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-iot-hub-monitoring.exercise-configure-an-alert
 title: Exercise - Configure an alert
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Configure an alert
   description: "Configure an alert"
   ms.date: 11/05/2023

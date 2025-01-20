@@ -2,6 +2,8 @@
 uid: learn.explore-foundation-models-in-model-catalog.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check to test your knowledge on the history of natural language processing models.
   author: madiepev
@@ -61,3 +63,4 @@ quiz:
     - content: "LLaMA"
       isCorrect: false
       explanation: "Incorrect. LLaMA is commonly used for tasks like text generation and chat completions."
+

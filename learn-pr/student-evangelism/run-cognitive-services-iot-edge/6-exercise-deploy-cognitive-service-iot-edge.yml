@@ -2,6 +2,8 @@
 uid: learn.oxford.run-cognitive-services-iot-edge.exercise-deploy-cognitive-service-iot-edge
 title: Exercise - Deploying a cognitive service to IoT Edge as a container
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploying a prebuilt module to IoT Edge as a container
   description: In this section, the exercise guides the learners in how to deploy an Azure AI services container to the edge device
   ms.date: 07/08/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-deploy-cognitive-service-iot-edge.md)]
+

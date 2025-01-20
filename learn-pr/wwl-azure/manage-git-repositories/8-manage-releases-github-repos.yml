@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-git-repositories.manage-releases-github-repos
 title: Manage releases with GitHub Repos
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage releases with GitHub Repos
   description: "Manage releases with GitHub Repos"
   ms.date: 05/24/2024

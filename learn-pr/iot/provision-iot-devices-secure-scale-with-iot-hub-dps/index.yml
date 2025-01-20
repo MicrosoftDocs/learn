@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-group-enrollment-tasks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
   description: "Create code that authenticates with Azure IoT Hub Device Provisioning Service (DPS) using X.509 certificates, generates telemetry and accesses device twin properties. Use X.509 certificates to implement group enrollments, and deprovision enrollments groups and individual devices from an enrollment group."
   ms.date: 10/11/2023
@@ -50,3 +52,4 @@ units:
 - learn.wwl.explore-group-enrollment-tasks.summary
 badge:
   uid: learn.wwl.explore-group-enrollment-tasks.badge
+

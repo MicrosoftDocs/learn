@@ -24,7 +24,7 @@ When the cost visibility policy is set to **Yes**, subscription users associated
 
 ## View Contoso's costs in its tenant
 
-To view costs in Contoso's tenant, open **Cost Management + Billing**. Select **Cost analysis**, and then change the scope to one of Contoso's subscriptions to start reviewing costs. Anyone with RBAC access to Contoso's subscriptions can see these views.
+To view costs in Contoso's tenant, open **Cost Management + Billing**. Select **Cost Management**, **Cost analysis**, and then change the scope to one of Contoso's subscriptions to start reviewing costs. Anyone with RBAC access to Contoso's subscriptions can see these views.
 
 :::image type="content" source="../media/05-view-costs-in-tenant.png" alt-text="Screenshot that shows subscription costs for the tenant." lightbox="../media/05-view-costs-in-tenant.png" :::
 

@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-active-directory.recover-sysvol
 title: Recover SYSVOL
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recover SYSVOL
   description: "Recover SYSVOL"
   ms.date: 06/08/2022

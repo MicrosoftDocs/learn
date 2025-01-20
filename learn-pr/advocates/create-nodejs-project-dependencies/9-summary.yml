@@ -2,6 +2,8 @@
 uid: learn.azure.create-nodejs-project-dependencies.9-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: diberry
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
+

@@ -10,11 +10,11 @@ However, for hierarchical data, stack navigation might be more appropriate. Stac
 
 Consider the following scenario:
 
-You've added a new page to the astronomy app that displays astronomical bodies. You want the user to tap on one of those celestial objects and then display information about it. The page listing the astronomical bodies would be best presented in a tab page as a sibling of the moon phase and sunrise pages. The detailed information about the astronomical body is better presented as a series of steps using stack navigation. This mechanism also enables the user to return to the main astronomical bodies page by tapping a back button.
+You add a new page to the astronomy app that displays astronomical bodies. You want the user to tap on one of those celestial objects and then display information about it. The page listing the astronomical bodies would be best presented in a tab page as a sibling of the moon phase and sunrise pages. The detailed information about the astronomical body is better presented as a series of steps using stack navigation. This mechanism also enables the user to return to the main astronomical bodies page by tapping a back button.
 
 ## Navigate with stack navigation
 
-.NET Multi-platform App UI (.NET MAUI) Shell includes a URI-based navigation experience that uses routes to navigate to any page in the app, without having to follow a set navigation hierarchy. In addition, it allows you to navigate backwards without having to visit all of the pages on the navigation stack.
+.NET Multi-platform App UI (MAUI) Shell includes a URI-based navigation experience that uses routes to navigate to any page in the app, without having to follow a set navigation hierarchy. In addition, it allows you to navigate backwards without having to visit all of the pages on the navigation stack.
 
 The Shell class defines the following navigation-related properties:
 

@@ -2,6 +2,8 @@
 uid: learn.wwl.consider-message-processing-options-constraints.examine-message-enrichments-for-d2c-messages
 title: Examine message enrichments for device-to-cloud Azure IoT Hub messages
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine message enrichments for device-to-cloud Azure IoT Hub messages
   description: "Examine message enrichments for device-to-cloud Azure IoT Hub messages"
   ms.date: 02/22/2024

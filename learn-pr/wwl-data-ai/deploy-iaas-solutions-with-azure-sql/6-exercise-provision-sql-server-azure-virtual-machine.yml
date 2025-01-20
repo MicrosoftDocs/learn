@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.provision-on-azure-virtual-machines
 title: 'Exercise: Provision a SQL Server on an Azure Virtual Machine'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Provision a SQL Server on an Azure Virtual Machine'
   description: "Exercise: Provision a SQL Server on an Azure Virtual Machine"
   ms.date: 12/22/2022

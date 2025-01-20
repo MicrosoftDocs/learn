@@ -2,11 +2,13 @@
 uid: learn.wwl.register-mlflow-model-azure-machine-learning.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 01/12/2024
+  ms.date: 11/06/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -36,3 +38,4 @@ quiz:
     - content: "Custom"
       isCorrect: false
       explanation: "Incorrect. No-code deployment isn't available in Azure Machine Learning for custom models."
+

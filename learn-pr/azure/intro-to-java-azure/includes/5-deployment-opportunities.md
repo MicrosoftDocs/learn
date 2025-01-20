@@ -24,7 +24,7 @@ One of the easiest and most straightforward deployment opportunities for Java ap
 
 Azure Container Apps enables you to focus on building containerized Java applications, whether monolithic or microservices, without the need to manage infrastructure. You can deploy JARs, WARs, or even source code, and the platform automatically optimizes memory and scales your applications based on demand. It also integrates advanced diagnostic features for JVM troubleshooting, ensuring efficient performance for your Java apps.
 
-Additionally, Azure Container Apps supports managed Spring components like Eureka Server and Config Server, providing seamless Spring integration. As part of the Azure ecosystem, it is designed to handle enterprise workloads with cost-effective scaling and sophisticated memory management, making it ideal for both traditional and modern application architectures.
+Additionally, Azure Container Apps supports managed Spring components like Eureka Server and Config Server, providing seamless Spring integration. As part of the Azure ecosystem, it's designed to handle enterprise workloads with cost-effective scaling and sophisticated memory management, making it ideal for both traditional and modern application architectures.
 
 ## Functions
 
@@ -32,6 +32,6 @@ You can deploy your Java code as Azure functions. You'll benefit from great tool
 
 Here are sample scenarios for functions:
 
-- Web, mobile and Internet of Things (IoT)-connected back ends
+- Web, mobile, and Internet of Things (IoT)-connected back ends
 - Bot or real-time file and stream processing
-- Automation of scheduled tasks
+- Automating scheduled tasks

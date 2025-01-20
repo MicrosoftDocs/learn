@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-cloud-business-case-analysis.perform-bca
 title: Perform a business case analysis (BCA)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform a business case analysis (BCA)
   description: "Perform a business case analysis (BCA)"
   ms.date: 09/25/2024

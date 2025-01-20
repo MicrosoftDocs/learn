@@ -8,6 +8,8 @@
 ###     @mention diberry, ggailey777 for review
 uid: learn.advocates.azure-functions-and-signalr
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable real-time updates in a web application using Azure Functions and SignalR Service
   description: Change a JavaScript web app update mechanism from polling to real-time push-based architecture with SignalR Service, Azure Cosmos DB and Azure Functions. Use Vue.js and JavaScript to use SignalR using Visual Studio Code.
   ms.date: 08/12/2024
@@ -55,3 +57,4 @@ units:
 iconUrl: /training/achievements/advocates/enable-automatic-updates-in-a-web-app-using-azure-functions-and-signalr.svg
 badge:
   uid: learn.advocates.azure-functions-and-signalr.badge
+

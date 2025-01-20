@@ -2,6 +2,8 @@
 uid: learn.wwl.create-release-pipeline.examine-considerations-for-deployment-to-stages
 title: Examine considerations for deployment to stages
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine considerations for deployment to stages
   description: "Examine considerations for deployment to stages"
   ms.date: 05/28/2024

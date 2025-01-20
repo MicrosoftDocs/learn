@@ -2,6 +2,8 @@
 uid: learn.nvidia.setup-configure-nvidia-deepstream-development.5-modify-deepstream-reference-application-samples
 title: Exercise - Modify the DeepStream sample applications
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Modify the DeepStream sample applications
   description: Exercise - Modify the DeepStream sample applications.
   author: toolboc
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/5-modify-deepstream-reference-application-samples.md)]
+

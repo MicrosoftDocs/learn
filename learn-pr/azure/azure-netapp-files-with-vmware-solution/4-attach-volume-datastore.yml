@@ -2,6 +2,8 @@
 uid: learn.azure.azure-netapp-files-with-vmware-solution.attach-volume-datastore
 title: Attach Azure NetApp Files volumes as datastores to Azure VMware Solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Attach Azure NetApp Files volumes as datastores to Azure VMware Solution
   description: Describes how to map an Azure NetApp Files Server Message Block (SMB) and Network File System (NFS) file share to a virtual machine running in Azure VMware Solution. 

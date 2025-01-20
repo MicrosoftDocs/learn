@@ -2,6 +2,8 @@
 uid: learn.app-package-management-using-helm.exercise-install-helm-chart
 title: Exercise - Install a Helm chart
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   description: In this exercise, you install a pre-configured Helm chart for a sample store front application.
   title: Exercise - Install a Helm chart
   author: schaffererin
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/5-exercise-install-helm-chart.md)]
+

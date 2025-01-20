@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-identities-microsoft-entra-id.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 07/03/2024

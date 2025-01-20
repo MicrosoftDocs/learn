@@ -2,6 +2,8 @@
 uid: learn.wwl.define-indexes-azure-cosmos-db-sql-api.understand-indexing-policies
 title: Understand indexing policies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand indexing policies
   description: "Understand indexing policies"
   ms.date: 11/03/2022

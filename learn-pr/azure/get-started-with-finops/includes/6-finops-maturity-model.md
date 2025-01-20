@@ -1,4 +1,4 @@
-The FinOps Maturity Model serves as guidance for evaluating and steering an organization's progress in FinOps capabilities. It presents a structured method to comprehend and enhance cloud management practices. The model delineates various stages, each signifying increasing levels of maturity and proficiency in cloud management. Let's delve into the stages within the FinOps Maturity Model:
+The FinOps Maturity Model serves as guidance for evaluating and steering an organization's progress in FinOps capabilities. It presents a structured method to comprehend and enhance cloud-management practices. The model delineates various stages, each signifying increasing levels of maturity and proficiency in cloud management. Let's delve into the stages within the FinOps Maturity Model:
 
 ## Crawl
 
@@ -16,7 +16,7 @@ Characteristics:
 Characteristics:
 
 - Capability is understood and followed within the organization
-- Difficult edge cases are identified but decision to not address them is adopted
+- Difficult edge cases are identified, but decision to not address them is adopted
 - Automation and/or processes cover most of the Capability requirements
 - Most difficult edge cases (ones that threaten the financial well-being of the organization) are identified and effort to resolve has been estimated
 - Medium to high goals/KPIs set on the measurement of success
@@ -26,7 +26,7 @@ Characteristics:
 Characteristics:
 
 - Capability is understood and followed by all teams within the organization
-- Difficult edge cases are being addressed
+- Difficult edge cases are addressed
 - Very high goals/KPIs set on the measurement of success
 - Automation is the preferred approach
 

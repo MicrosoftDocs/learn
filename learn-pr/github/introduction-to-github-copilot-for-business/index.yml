@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.github.introduction-to-github-copilot-for-business
-title: Introduction to GitHub Copilot for Business
+title: Introduction to GitHub Copilot Business
 metadata:
-  title: Introduction to GitHub Copilot for Business
-  description: GitHub Copilot for Business builds the power of generative AI into an editor extension that suggests code in real-time. By using context to provide and synthesize code to match, it allows developers to convert comments to code, autofill repetitive code, and show alternatives.
+  title: Introduction to GitHub Copilot Business
+  description: GitHub Copilot Business builds the power of generative AI into an editor extension that suggests code in real-time. By using context to provide and synthesize code to match, it allows developers to convert comments to code, autofill repetitive code, and show alternatives.
   author: a-a-ron
   ms.author: aastewar
   ms.date: 09/16/2024
@@ -13,12 +13,12 @@ metadata:
    - github-ai-copilot
   ms.custom: ai-learning-hub
 summary: > 
-  Learn about the difference between GitHub Copilot for Business versus GitHub Copilot for Individuals. Also learn about specific use cases and customer stories for GitHub Copilot for Business as well as how to enable it. 
+  Learn about the difference between GitHub Copilot Business versus GitHub Copilot Individuals. Also learn about specific use cases and customer stories for GitHub Copilot Business as well as how to enable it. 
 abstract: |
   At the end of this module, you'll be able to: 
-  - Understand the difference between GitHub Copilot for Business versus GitHub Copilot for Individuals.
-  - Learn about specific use cases for GitHub Copilot for Business and hear how customers are enhancing their productivity.
-  - Review how to enable GitHub Copilot for Business.
+  - Understand the difference between GitHub Copilot Business versus GitHub Copilot Individuals.
+  - Learn about specific use cases for GitHub Copilot Business and hear how customers are enhancing their productivity.
+  - Review how to enable GitHub Copilot Business.
 prerequisites: |
   - Basic understanding of GitHub fundamentals
   - A GitHub Enterprise Cloud account

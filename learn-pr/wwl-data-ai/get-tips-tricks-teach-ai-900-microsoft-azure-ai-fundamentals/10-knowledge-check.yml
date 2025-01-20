@@ -2,6 +2,8 @@
 uid: learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -16,7 +18,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How often should you download content from the [Learning Download Center](https://aka.ms/ldc) (LDC) to ensure you have the most up-to-date course materials?"
+  - content: "How often should you download content from the [Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123) (LDC) to ensure you have the most up-to-date course materials?"
     choices:
     - content: "Every three years"
       isCorrect: false
@@ -49,3 +51,4 @@ quiz:
     - content: "GitHub"
       isCorrect: false
       explanation: "Incorrect. GitHub is an Internet hosting service for software development and version control using Git. Incorporating Microsoft Learn AI interactive demos can showcase a selection of the capabilities of the Microsoft AI platform and bring module concepts to life. Instructors are encouraged to incorporate demos throughout the AI-900 Microsoft Azure AI Fundamentals course."
+

@@ -2,12 +2,16 @@
 uid: learn.wwl.create-manage-active-directory-objects.configure-objects
 title: Configure objects in Active Directory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure objects in Active Directory
   description: "Configure objects in Active Directory"
-  ms.date: 06/18/2024
+  ms.date: 10/22/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-configure-objects.md)]

@@ -2,6 +2,8 @@
 uid: learn.wwl.train-evaluate-deep-learn-models.transfer-learning
 title: Transfer learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Transfer learning
   description: "Transfer learning"
   ms.date: 07/10/2024

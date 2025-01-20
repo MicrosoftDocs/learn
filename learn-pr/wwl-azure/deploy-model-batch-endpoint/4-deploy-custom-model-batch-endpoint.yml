@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-model-batch-endpoint.deploy-custom-model-batch-endpoint
 title: Deploy a custom model to a batch endpoint
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy a custom model to a batch endpoint
   description: Deploy a custom model to a batch endpoint
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 9
 content: |
   [!include[](includes/4-deploy-custom-model-batch-endpoint.md)]
+

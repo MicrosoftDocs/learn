@@ -2,6 +2,8 @@
 uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.exercise-use-table-distribution-indexes-to-improve-performance
 title: Exercise - Use table distribution and indexes to improve performance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use table distribution and indexes to improve performance
   description: "Exercise - Use table distribution and indexes to improve performance"
   ms.date: 08/05/2022

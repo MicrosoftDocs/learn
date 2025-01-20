@@ -1,14 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.exercise-azure-database-for-mysql-import-cli-from-on-premises
-title: "Exercise: Use the Azure Database for MySQL import CLI from an on-premises MySQL"
+title: "Migrate an on-premises MySQL server using Azure Database for MySQL Import CLI"
 metadata:
-  title: "Exercise: Use the Azure Database for MySQL import CLI from an on-premises MySQL"
-  description: "This exercise covers migrating on-premises MySQL data to an Azure Database for MySQL flexible server using the import CLI."
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: "Migrate an on-premises MySQL server using Azure Database for MySQL Import CLI"
+  description: "This unit explains how to migrate on-premises MySQL data to an Azure Database for MySQL flexible server using the import CLI."
   ms.date: 08/28/2024
   author: shreyaaithal
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: unit
-durationInMinutes: 20
+durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-azure-database-for-mysql-import-cli-from-on-premises.md)]
+

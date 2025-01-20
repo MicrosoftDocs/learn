@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.challenge-project-build-speech-translator-app.exercise-create-data-model-and-canvas-app
 title: Exercise - Create data model and canvas app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create data model and canvas app
   description: Exercise - Create data model and canvas app.
   author: theoyinbooke
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 45
 content: |
   [!include[](includes/3-exercise-create-data-model-and-canvas-app.md)]
+

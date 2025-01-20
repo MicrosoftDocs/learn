@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-implement-retention-ediscovery-communication-compliance
 metadata:
-  title: 'Implement retention, eDiscovery, and Communication compliance in Microsoft Purview'
-  description: 'Implement retention, eDiscovery, and Communication compliance in Microsoft Purview'
+  title: 'Implement retention, eDiscovery, and Communication compliance in Microsoft Purview SC-5007'
+  description: 'Manage data lifecycle, records management, eDiscovery, and communication compliance with Microsoft Purview. (SC-5007)'
   ms.date: 06/05/2024
   author: wwlpublish
   ms.author: riswinto

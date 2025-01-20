@@ -12,7 +12,7 @@ Let's look at the configuration characteristics of containers and blobs.
 
 - You can create the container in the Azure portal.
 
-- You upload blobs into a container.
+- You can upload blobs into a container.
 
 
 ### How to move content between containers

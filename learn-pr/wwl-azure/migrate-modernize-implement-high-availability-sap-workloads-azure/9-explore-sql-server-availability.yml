@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-sql-server-availability
 title: Explore SQL Server high availability for SAP in Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore SQL Server high availability for SAP in Azure
   description: "Explore different methods for providing SQL Server high availability for SAP in Azure."
   ms.date: 10/10/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.train-evaluate-classification-models.exercise-alternative-classification-metrics
 title: Exercise - Perform classification with alternative metrics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Perform classification with alternative metrics
   description: Review alternative metrics for classification scenarios
   ms.date: 08/25/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/02-metrics.ipynb
+

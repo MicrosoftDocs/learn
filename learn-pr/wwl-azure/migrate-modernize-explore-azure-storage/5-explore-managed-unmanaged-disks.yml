@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-azure-storage.explore-managed-unmanaged-disks
 title: Explore managed and unmanaged disks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore managed and unmanaged disks
   description: "Explore managed and unmanaged disks"
   ms.date: 01/09/2024

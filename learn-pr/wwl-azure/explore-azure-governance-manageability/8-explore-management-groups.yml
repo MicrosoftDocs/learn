@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-azure-governance-manageability.explore-management-groups
 title: Explore management groups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore management groups
   description: "Use management groups to efficiently manage access, policies, and compliance for multiple subscriptions."
   ms.date: 08/02/2024

@@ -2,6 +2,8 @@
 uid: learn.machinelearning.understand-classification-machine-learning.what-is-classification
 title: What are classification models?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What are classification models?
   description: Conceptual unit introducing what classification models are
   ms.date: 07/20/2024

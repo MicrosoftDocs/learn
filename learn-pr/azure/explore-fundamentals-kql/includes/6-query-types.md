@@ -19,9 +19,9 @@ StormEvents // tabular expression statement 1
 
 ## Let statements
 
-A `let` statement defines a binding between a name and an expression. Let statements can be used to break a long query into small named parts that are easier to understand.
+A `let` statement defines a binding between a name and an expression. You can use let statements to break a long query into small named parts that are easier to understand.
 
-For example, the `let` statements in the following query are used to define scalar values:
+For example, we used the `let` statements in the following query to define scalar values:
 
 ```kusto
 let n = 10;  // number
@@ -34,7 +34,7 @@ StormEvents
 
 ## Built-in functions
 
-Built-in functions are hard-coded functions defined by KQL that can't be modified. KQL has a rich library of functions available for use, which can be found in the official [KQL documentation](/azure/data-explorer/kusto/query/). The functions range from simple sorting and matching to complex statistical and geospatial functions.
+Built-in functions are hard-coded functions defined by KQL that can't be modified. KQL has a rich library of functions available for use, which you can find in the official [KQL documentation](/azure/data-explorer/kusto/query/). The functions range from simple sorting and matching to complex statistical and geospatial functions.
 
 For example, the following `strcat()` function concatenates string arguments:
 
@@ -44,7 +44,7 @@ print str = strcat("hello", " ", "world")
 
 ## User-defined functions
 
-User-defined functions are, as their name suggests, defined by the user. User-defined functions can be divided into two types:
+User-defined functions are, as their name suggests, defined by the user. We can divide user-defined functions into two types:
 
 * **Stored functions**: User-defined functions that are stored and managed database schema entities, similar to tables. Different products use different ways to store functions.
 
@@ -56,7 +56,7 @@ User-defined functions are, as their name suggests, defined by the user. User-de
      MyFunction2(myLimit: long)  {StormEvents | take myLimit}
     ```
 
-    In other environments, such as Azure Monitor and Microsoft Sentinel, queries can be saved through the UI.
+    In other environments, such as Azure Monitor and Microsoft Sentinel, you can save queries through the UI.
 
 * **Query-defined functions**: User-defined functions that are defined and used within the scope of a single query. The definition of such functions is done through a let statement.
 

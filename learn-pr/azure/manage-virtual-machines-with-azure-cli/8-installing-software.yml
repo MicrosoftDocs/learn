@@ -2,6 +2,8 @@
 uid: learn.manage-vms-with-azure-cli-data.8-installing-software
 title: Exercise - Install software on your VM
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Install software on your VM
   description: Install software to run a web server on your Linux VM
   ms.date: 09/25/2024
@@ -14,3 +16,4 @@ azureSandbox: true
 durationInMinutes: 5
 content: |
   [!include[](includes/8-installing-software.md)]
+

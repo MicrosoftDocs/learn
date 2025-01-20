@@ -2,13 +2,16 @@
 uid: learn.intro-to-azure-policy.how-azure-policy-works
 title: How Azure Policy works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: How Azure Policy works
   description: "Learn how to use Azure Policy to apply compliance and control in your environment."
   ms.date: 07/19/2024
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/3-how-azure-policy-works.md)]
+

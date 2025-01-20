@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-docker-containers-aci.6-troubleshoot-aci
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Troubleshoot Azure Container Instances
   description: Troubleshoot Azure Container Instances.
   ms.date: 04/03/2024
@@ -13,3 +15,4 @@ title: Exercise - Troubleshoot Azure Container Instances
 durationInMinutes: 10
 content: |
   [!include[](includes/6-troubleshoot-aci.md)]
+

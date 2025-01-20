@@ -2,6 +2,8 @@
 uid: learn.wwl.use-data-factory-pipelines-fabric.run-monitor-pipelines
 title: Run and monitor pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run and monitor pipelines
   description: "Run and monitor pipelines"
   ms.date: 05/08/2024

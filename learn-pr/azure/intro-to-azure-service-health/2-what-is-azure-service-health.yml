@@ -2,12 +2,14 @@
 uid: learn.intro-to-azure-service-health.what-is-azure-service-health
 title: What is Azure Service Health?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure Service Health?
   description: What is Azure Service Health and what can it be used for?
   ms.date: 02/26/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 2
 content: |

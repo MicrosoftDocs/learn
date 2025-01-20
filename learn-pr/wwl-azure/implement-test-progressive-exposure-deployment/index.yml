@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-testing-progressive-exposure-deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement A/B testing and progressive exposure deployment
   description: "Implement A/B testing and progressive exposure deployment"
   ms.date: 05/27/2024

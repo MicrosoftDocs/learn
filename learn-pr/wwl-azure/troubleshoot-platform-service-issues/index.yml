@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-platform-service-issues
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot platform-as-a-service issues in Microsoft Azure
   description: "To benefit from Azure PaaS services, you must be able to troubleshoot connectivity issues quickly and effectively both from an on-premises user to an Azure PaaS service and between PaaS services. AZ720 AZ-720 az-720 networking"
   ms.date: 04/27/2023
@@ -50,3 +52,4 @@ units:
 - learn.wwl.troubleshoot-platform-service-issues.summary
 badge:
   uid: learn.wwl.troubleshoot-platform-as-service-issues.badge
+

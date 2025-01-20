@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.lifecycle-workflows
 title: Lifecycle workflows
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Lifecycle workflows
   description: "Lifecycle workflows"
   ms.date: 08/07/2024

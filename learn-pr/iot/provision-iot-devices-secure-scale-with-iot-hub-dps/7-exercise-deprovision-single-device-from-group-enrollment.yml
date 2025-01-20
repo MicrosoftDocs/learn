@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-group-enrollment-tasks.exercise-deprovision-single-device-from-group-enrollment
 title: Exercise - Deprovision a single device from the group enrollment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deprovision a single device from the group enrollment
   description: "Deprovision a single device from the group enrollment"
   ms.date: 10/11/2023

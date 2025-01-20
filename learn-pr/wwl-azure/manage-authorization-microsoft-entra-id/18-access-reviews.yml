@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.access-reviews
 title: Access reviews
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Access reviews
   description: "Access reviews"
   ms.date: 08/07/2024

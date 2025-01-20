@@ -4,7 +4,7 @@ title: Practice "nothing about us without us"
 metadata:
   title: Practice "nothing about us without us"
   description: This content is part of the "Community collaboration for accessible design" module.
-  ms.date: 05/05/2023
+  ms.date: 10/17/2024
   author: kaitlynjones
   ms.author: kaitlynjones
   ms.topic: unit
@@ -18,13 +18,13 @@ quiz:
     choices:
     - content: "Individuals with disabilities should play an active role in the development of bespoke accessibility efforts, such as new accessibility features or gaming assistive technologies."
       isCorrect: false
-      explanation: "Incorrect. This statement is true in the sense that individuals with disabilities should play an active role in the development of accessibility-focused products like assistive technologies. But this response limits the role of “nothing about is without us” to only accessibility-focused efforts. The disability community should be included throughout the development process of all gaming products and experiences."
+      explanation: "Incorrect. This statement is true in the sense that individuals with disabilities should play an active role in the development of accessibility-focused products like assistive technologies. But this response limits the role of 'nothing about us without us' to only accessibility-focused efforts. The disability community should be included throughout the development process of all gaming products and experiences."
     - content: "Individuals with disabilities should play an active role in the development of all gaming products and experiences."
       isCorrect: true
-      explanation: "Correct. This option accurately describes the meaning of “nothing about us without us” in the context of gaming. Games, platforms, and hardware devices should be accessible to all players, regardless of whether they're considered assistive technologies."
-    - content: "Individuals with disabilities should develop their own accessibility features and support for each unique platform, game, and hardware device to ensure that each of these experiences is truly accessible for each individual player."
+      explanation: "Correct. This option accurately describes the meaning of 'nothing about us without us' in the context of gaming. Games, platforms, and hardware devices should be accessible to all players, regardless of whether they're considered assistive technologies."
+    - content: "Individuals with disabilities should develop their own accessibility features and support for each unique platform, game, and hardware device. This approach ensures that each of these experiences is truly accessible for each individual player."
       isCorrect: false
-      explanation: "Incorrect. Although it's true that players are experts on their own experiences and needs, developers should not place the responsibility of creating accessible experiences on each individual customer with disabilities. An accurate description of “nothing about us without us” would instead urge developers to collaborate with members of the disability community to ensure that the resulting accessible solutions are available to any player who wants to use them."
+      explanation: "Incorrect. It's true that players are experts on their own experiences and needs. However, developers shouldn't place the responsibility of creating accessible experiences on each individual customer with disabilities. An accurate description of 'nothing about us without us' would instead urge developers to collaborate with members of the disability community. This approach ensures that the resulting accessible solutions are available to any player who wants to use them."
   - content: "Why is active collaboration with members of the disability community a critical part of creating accessible products and experiences?"
     choices:
     - content: "These players have lived experiences that can't be replaced through simulation or assumptions." 
@@ -33,6 +33,6 @@ quiz:
     - content: "Marketing your team's efforts to work with the disability community is the best way to increase positive PR and sales."
       isCorrect: false
       explanation: "Incorrect. This collaboration is important in creating truly accessible experiences, not for marketing purposes."
-    - content: "Working with these community members is not an important part of creating accessible products and experiences, and it can be avoided."
+    - content: "Working with these community members isn't an important part of creating accessible products and experiences, and it can be avoided."
       isCorrect: false 
       explanation: "Incorrect. This collaboration is a necessary part of creating accessible products and experiences."  

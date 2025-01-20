@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-azure-vmware-solution.connect-on-premises-vmware
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect to an on-premises VMware vSphere environment
   description: Connect to an on-premises VMware vSphere environment.
   ms.date: 08/01/2024
@@ -16,7 +18,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which resource is required to configure ExpressRoute peering on the Azure VMware Solution private cloud to the on-premises environment?"
+  - content: "Which resource is required to configure ExpressRoute peering on the Azure VMware Solution private cloud to the on-premises vSphere environment?"
     choices:
     - content: "Customer-provided ExpressRoute circuit"
       isCorrect: true
@@ -27,7 +29,7 @@ quiz:
     - content: "Network virtual appliance"
       isCorrect: false
       explanation: "A network virtual appliance (NVA) is a virtual appliance that primarily performs network functions through virtualization. This appliance isn't required to peer the Azure VMware Solution environment to on-premises."
-  - content: "For on-premises network traffic to reach Azure VMware Solution, which component is required?"
+  - content: "For on-premises vSphere network traffic to reach Azure VMware Solution, which component is required?"
     choices: 
     - content: "Virtual private network"
       isCorrect: false
@@ -38,3 +40,4 @@ quiz:
     - content: "Load balancer"
       isCorrect: false
       explanation: "A load balancer provides high availability by distributing incoming traffic among healthy VMs. This functionality isn't required for on-premises network traffic to reach Azure VMware Solution."
+

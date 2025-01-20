@@ -2,6 +2,8 @@
 uid: learn.tensorflow.intro-computer-vision.multilayer-dense-neural-networks
 title: Multi-layer networks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Multi-layer networks
   description: Learn how multi-layer neural networks can be constructed to improve model accuracy
   author: shwars
@@ -42,4 +44,5 @@ quiz:
     - content: "We have forgotten to specify activation function between layers"
       isCorrect: true
       explanation: "When we do not specify non-linear activation, two layers are equivalent to one layer"
+
 

@@ -2,6 +2,8 @@
 uid: learn.machine-learning.explore-analyze-data-r.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: This unit summarizes what you've learned in this module.
   ms.date: 08/26/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
+

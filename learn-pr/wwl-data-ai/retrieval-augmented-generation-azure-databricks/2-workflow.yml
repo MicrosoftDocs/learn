@@ -2,6 +2,8 @@
 uid: learn.wwl.retrieval-augmented-generation-azure-databricks.workflow
 title: Explore the main concepts of a RAG workflow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the main concepts of a RAG workflow
   description: "Explore the main concepts of a RAG workflow"
   ms.date: 08/12/2024
@@ -13,3 +15,4 @@ labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/2-workflow.md)]
+

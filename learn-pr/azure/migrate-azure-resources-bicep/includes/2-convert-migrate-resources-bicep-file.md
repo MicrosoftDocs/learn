@@ -116,7 +116,7 @@ By selecting a resource, you can view the JSON representation, like this example
 ```json
 {
     "name": "DependencyAgentWindows",
-    "id": "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/rg-app-prod-truckline/providers/Microsoft.Compute/virtualMachines/vm-prod-001/extensions/DependencyAgentWindows",
+    "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/rg-app-prod-truckline/providers/Microsoft.Compute/virtualMachines/vm-prod-001/extensions/DependencyAgentWindows",
     "type": "Microsoft.Compute/virtualMachines/extensions",
     "location": "eastus",
     "properties": {

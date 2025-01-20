@@ -4,14 +4,10 @@ title: Understand data warehouse fundamentals
 metadata:
   title: Understand data warehouse fundamentals
   description: "Understand data warehouse fundamentals"
-  ms.date: 05/17/2024
-  author: wwlpublish
+  ms.date: 11/10/2024
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
-  ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
 durationInMinutes: 7
 content: |
   [!include[](includes/2-understand-data-warehouse.md)]

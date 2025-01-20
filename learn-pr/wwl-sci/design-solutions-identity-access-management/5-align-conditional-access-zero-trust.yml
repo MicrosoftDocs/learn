@@ -5,8 +5,8 @@ metadata:
   title: Align conditional access and Zero Trust
   description: "This is a unit which prepares for the Microsoft Cybersecurity Architect certification on the topic: align conditional access and Zero Trust."
   ms.date: 09/26/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 10
 content: |

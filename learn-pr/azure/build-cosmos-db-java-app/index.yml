@@ -1,12 +1,13 @@
 ### YamlMime:Module
 uid: learn.cosmos-db-java-app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build a Java app with cloud-scale NoSQL Cosmos DB
   description: Learn how to create a Java application to store and query data in Azure Cosmos DB
   ms.date: 09/13/2020
   author: kushagraThapar
   ms.author: kuthapar
-  manager: jroth
   ms.topic: module
   ms.service: azure-cosmos-db
 title: Build a Java app with cloud-scale NoSQL Cosmos DB
@@ -35,3 +36,4 @@ units:
 - learn.cosmos-db-java-app.6-summary
 badge:
   uid: learn.cosmos-db-java-app.badge
+

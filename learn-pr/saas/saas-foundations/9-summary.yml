@@ -2,6 +2,8 @@
 uid: learn.saas-foundations.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Review what you learned about Software as a Service (SaaS), including service-level agreement (SLA), service-level objectives (SLO), security, and privacy.
   ms.date: 05/28/2024

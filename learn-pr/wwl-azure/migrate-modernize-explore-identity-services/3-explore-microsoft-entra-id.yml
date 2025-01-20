@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-identity-services.explore-microsoft-entra-id
 title: Explore Microsoft Entra ID
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Microsoft Entra ID
   description: "Explore Microsoft Entra ID"
   ms.date: 01/10/2024

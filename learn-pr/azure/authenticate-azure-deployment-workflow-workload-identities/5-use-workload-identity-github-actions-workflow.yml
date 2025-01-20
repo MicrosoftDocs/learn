@@ -2,6 +2,8 @@
 uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.use-workload-identity-github-actions-workflow
 title: Use a workload identity from a GitHub Actions workflow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Use a workload identity from a GitHub Actions workflow
   description: Learn how to update a GitHub Actions workflow definition to use a workload identity to deploy to Azure.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/5-use-workload-identity-github-actions-workflow.md)]
+

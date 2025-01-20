@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-azure-application-gateway.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction.
   ms.date: 01/31/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

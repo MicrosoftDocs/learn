@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-dependency-injection.understand-dependency-injection
+
+title: Understand dependency injection
+
+metadata:
+  title: Understand dependency injection
+
+  description: This unit explains what dependency injection is and how it works in an ASP.NET Core app.
+  ms.date: 11/7/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand-dependency-injection.md)]

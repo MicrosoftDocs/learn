@@ -2,6 +2,8 @@
 uid: learn.wwl.azure-event-grid.filter-events
 title: Filter events
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Filter events
   description: "Filter events"
   ms.date: 07/17/2024

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.boost-your-productivity-with-microsoft-copilot.elevate-your-job-search-with-copilot
+title: Elevate your job search with Copilot
+metadata:
+  title: Elevate your job search with Copilot
+  description: This unit is a part of the module about boosting productivity with Copilot.
+  ms.date: 11/21/2024
+  author: v-downesmary
+  ms.author: v-downesmary
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-elevate-your-job-search-with-copilot.md)]

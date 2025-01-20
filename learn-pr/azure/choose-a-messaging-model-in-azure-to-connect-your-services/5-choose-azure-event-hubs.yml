@@ -2,6 +2,8 @@
 uid: learn.choose-messaging-model.5-choose-azure-event-hubs
 title: Choose Azure Event Hubs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose Azure Event Hubs
   description: Choose Azure Event Hubs
   ms.date: 07/31/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-choose-azure-event-hubs.md)]
+

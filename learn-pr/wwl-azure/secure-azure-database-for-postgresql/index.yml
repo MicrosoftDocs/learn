@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-azure-database-for-postgresql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure Azure Database for PostgreSQL
   description: "Azure Database for PostgreSQL includes comprehensive security features including encryption in transit and at rest, authentication, and granting permissions to database users. In this module you learn about the security features of Azure Database for PostgreSQL, and how to configure them."
   ms.date: 05/10/2024

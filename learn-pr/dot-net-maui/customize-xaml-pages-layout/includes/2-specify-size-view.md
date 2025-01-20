@@ -1,6 +1,6 @@
 Designing a user interface that's consistent across multiple devices is difficult because devices can be different sizes and have different pixel densities. Think about the different devices that are available: mobile, tablet, desktop, and so on. How do we create a user interface that looks similar on each?
 
-.NET MAUI provides layout panels to help you build consistent user interfaces. The layout panel is responsible for sizing and positioning the views of its children. In this unit, you learn how the layout system works in .NET MAUI. Especially, we look at how views are sized by default and how to request a specific size and position for a view at runtime.
+.NET Multi-platform App UI (MAUI) provides layout panels to help you build consistent user interfaces. The layout panel is responsible for sizing and positioning the views of its children. In this unit, you learn how the layout system works in .NET MAUI. Especially, we look at how views are sized by default and how to request a specific size and position for a view at runtime.
 
 ## What is a layout panel?
 
@@ -13,7 +13,7 @@ A layout panel is a .NET MAUI container that holds a collection of child views a
 
 :::image type="content" source="../media/2-layouts.png" alt-text="Illustration showing representative StackLayout, AbsoluteLayout, FlexLayout, and Grid designs.":::
 
-- `StackLayout`: arranges its child views in a single row or column. In addition to `StackLayout`, there's also a new optimized `VerticalStackLayout` and `HorizontalStackLayout` when you don't need to change orientation.
+- `StackLayout`: arranges its child views in a single row or column. In addition to `StackLayout`, there's also an optimized `VerticalStackLayout` and `HorizontalStackLayout` when you don't need to change orientation.
 - `AbsoluteLayout`: arranges its child views by using x and y coordinates.
 - `Grid`: arranges its child views in cells that are created from the intersection of rows and columns.
 - `FlexLayout`: arranges its child views like a `StackLayout` except that you can wrap them if they don't fit into a single row or column.
@@ -27,7 +27,7 @@ Before you look at how to request a specific size for a view, let's see how the 
 
 ## Default size of a view
 
-If you don't specify the size of a view, it grows automatically to be exactly large enough to fit around its content. For example, consider this XAML:
+If you don't specify the size of a view, it grows automatically to be exactly large enough to fit around its content. For example, consider this Extensible Application Markup Language (XAML):
 
 ```xaml
 <Label
@@ -128,4 +128,4 @@ The example uses a vertical `StackLayout` so each child view is given a row. `Ho
 
 ## What is Expands?
 
-The second property of the `LayoutOptions` struct is `Expands`. The `Expands` property is a `bool` that in Xamarin.forms allowed a view in a `StackLayout` to request extra space if any is available. This property is now obsolete and is no longer used in .NET MAUI. Later, we explore how to achieve the same type of expanding in the unit on `Grid` layout.
+The second property of the `LayoutOptions` struct is `Expands`. The `Expands` property is a `bool` that in Xamarin.Forms allowed a view in a `StackLayout` to request extra space if any is available. This property is now obsolete and is no longer used in .NET MAUI. Later, we explore how to achieve the same type of expanding in the unit on `Grid` layout.

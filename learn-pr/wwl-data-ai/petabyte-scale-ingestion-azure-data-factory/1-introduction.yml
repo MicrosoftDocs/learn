@@ -2,6 +2,8 @@
 uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 01/05/2022

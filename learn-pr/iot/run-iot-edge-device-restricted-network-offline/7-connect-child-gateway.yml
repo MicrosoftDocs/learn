@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.run-iot-edge-device-restricted-network-offline.connect-child-gateway
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect a child IoT device to an IoT Edge gateway
   description: Connect a child IoT device to an IoT Edge gateway
   ms.date: 05/01/2020
@@ -16,3 +18,4 @@ title: Connect a child IoT device to an IoT Edge gateway
 durationInMinutes: 15
 content: |
   [!include[](includes/7-connect-child-gateway.md)]
+

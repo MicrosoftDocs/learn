@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-git-branches-workflows.explore-github-flow
 title: Explore GitHub flow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore GitHub flow
   description: "Explore GitHub flow"
   ms.date: 05/24/2024

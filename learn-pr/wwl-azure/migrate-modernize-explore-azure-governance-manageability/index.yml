@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-explore-azure-governance-manageability
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Modernize and explore governance and manageability for SAP on Azure
   description: 'This module explores using the Azure Governance collection of concepts and services that are designed to enable management of Azure resources at scale. Prepare for AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/11/2024
@@ -40,3 +42,4 @@ units:
 - learn.wwl.migrate-modernize-explore-azure-governance-manageability.summary
 badge:
   uid: learn.wwl.migrate-modernize-explore-azure-governance-manageability.badge
+

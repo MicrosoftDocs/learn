@@ -2,9 +2,11 @@
 uid: learn.languages.dotnet-deploy-microservices-kubernetes.exercise-scale-the-microservice
 title: Exercise - Scale a container instance in Kubernetes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Scale a container instance in Kubernetes
   description: Learn how to scale a containerized microservice once inside Kubernetes.
-  ms.date: 11/06/2023
+  ms.date: 12/06/2024
   author: codemillmatt
   ms.author: masoucou  
   ms.topic: unit
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/5-exercise-scale-microservice.md)]
+

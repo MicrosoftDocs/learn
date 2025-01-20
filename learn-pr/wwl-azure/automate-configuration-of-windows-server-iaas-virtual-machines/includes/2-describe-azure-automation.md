@@ -1,4 +1,3 @@
-
 *Azure Automation* is an Azure service that provides the ability to automate frequent, time-consuming, and error-prone administrative tasks. Contoso IT administrators can run Azure Automation runbooks on any server that runs Windows Server with connectivity to Azure. This includes the servers that reside in their on-premises datacenters or are hosted by third-party cloud providers.
 
 > [!NOTE]
@@ -21,11 +20,7 @@ Azure Automation also offers a large number of ready-to-use runbooks in addition
 
 ## Azure Automation architecture
 
-The core component of Azure Automation is an account. An Automation Account serves as a container for a variety of related automation components.
-
-![A screenshot of the Add Automation Account blade in the Azure portal. The account name is ContosoAutomation.](../media/m2-account.png)
-
-You can create multiple Automation accounts per Azure subscription. This helps with scenarios where you might want to separate the management of your development and production environments, with each of them containing different settings. You can define these settings by using assets described in the following table.
+The core component of Azure Automation is an account. An Automation Account serves as a container for a variety of related automation components. You can create multiple Automation accounts per Azure subscription. This helps with scenarios where you might want to separate the management of your development and production environments, with each of them containing different settings. You can define these settings by using assets described in the following table.
 
 |Asset|Description|
 |------------|------------------------------------------------------------|
@@ -76,17 +71,8 @@ To test a runbook, in the Azure portal, use the following procedure:
 
 1. Select the appropriate Automation Account, and then select **Runbooks**.
 2. Select any runbook that you want to test.
-
-     ![A screenshot of the Runbooks blade in the Azure portal for an automation account. Four runbooks are displayed, one of which is in the draft mode with the status New.](../media/m2-runbooks.png)
-
 3. In the **Runbook** blade, select **Edit**.
-
-     [![A screenshot of the Edit Graphical Runbook blade in the Azure portal.](../media/m2-runbooks-2.png)](../media/m2-runbooks-2.png#lightbox)
-
 4. In the selected runbook, select **Test pane**.
-
-     ![A screenshot of the Test  blade in the Azure portal.](../media/m2-runbooks-3.png)
-
 Testing allows you to validate the runbook operation before making the runbook available for use. This makes it possible to test the runbook without overwriting an existing published version of the runbook. Depending on the runbook type, you can initiate testing from the graphical or textual editor, and then monitor its results in the **Output** pane.
 
 > [!CAUTION]
@@ -95,3 +81,6 @@ Testing allows you to validate the runbook operation before making the runbook a
 After you validate a runbook, you can publish it directly from the graphical or textual editor in the Azure portal. At that point, you can link it to one or more schedules with different recurrence settings (one time, monthly, weekly, hourly, and daily) and expiration dates. You do have the option to enable or disable individual schedules without affecting other schedules linked to the same runbook. You can also modify any of the runbook's input parameters and run settings.
 
 You also have the option to execute a published runbook on demand. Invoking execution creates an automation job. A runbook job represents a single execution of a runbook. You can run multiple instances of the same runbook simultaneously or according to overlapping schedules.
+
+> [!NOTE]
+> Azure Machine Configuration is a replacement service combines features of the DSC extension handler, Azure Automation State Configuration, and incorporates commonly requested features based on customer feedback. Azure Machine Configuration is currently in preview. Azure Automation State Configuration is still available and will be retired on September 30, 2027.

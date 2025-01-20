@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.get-started-with-devops.3-what-is-azure-devops
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure DevOps?
   description: What is Azure DevOps?
   ms.date: 10/02/2024
@@ -48,3 +50,4 @@ quiz:
     - content: "A DevOps course offered by Microsoft"
       isCorrect: false
       explanation: "Although you can take our courses, Azure DevOps is a collection of software and services."
+

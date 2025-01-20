@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.collaborate-pull-requests-azure-repos
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Collaborate with pull requests in Azure Repos
   description: "Collaborate with pull requests in Azure Repos"
   ms.date: 05/24/2024
@@ -8,7 +10,7 @@ metadata:
   ms.author: lumac
   ms.topic: module
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Collaborate with pull requests in Azure Repos
 summary: This module presents pull requests for collaboration and code reviews using Azure DevOps and GitHub mobile for pull request approvals. It helps understanding how pull requests works and how to configure them.
 abstract: |

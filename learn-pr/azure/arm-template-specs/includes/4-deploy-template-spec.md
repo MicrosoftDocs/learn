@@ -8,7 +8,7 @@ To deploy a template spec to a resource group, you use the same `New-AzResourceG
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
-  -TemplateSpecId '/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/SharedTemplates/providers/Microsoft.Resources/templateSpecs/StorageWithoutSAS'
+  -TemplateSpecId '/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/SharedTemplates/providers/Microsoft.Resources/templateSpecs/StorageWithoutSAS'
 ```
 
 Although template specs have to be created within a resource group, you can deploy them to subscriptions, management groups, or even tenants by using these cmdlets:
@@ -31,7 +31,7 @@ To deploy a template spec to a resource group, you use the same `az deployment g
 
 ```azurecli
 az deployment group create \
-  --template-spec "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/SharedTemplates/providers/Microsoft.Resources/templateSpecs/StorageWithoutSAS"
+  --template-spec "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/SharedTemplates/providers/Microsoft.Resources/templateSpecs/StorageWithoutSAS"
 ```
 
 Although template specs have to be created within a resource group, you can deploy them to subscriptions, management groups, or even tenants by using these commands:

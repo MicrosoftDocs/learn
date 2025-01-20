@@ -2,6 +2,8 @@
 uid: learn.wwl.monitor-manage-performance-health.monitor-azure-virtual-desktop-by-using-azure-monitor
 title: Monitor Azure Virtual Desktop by using Azure Monitor
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor Azure Virtual Desktop by using Azure Monitor
   description: "Monitor Azure Virtual Desktop by using Azure Monitor"
   ms.date: 08/13/2024

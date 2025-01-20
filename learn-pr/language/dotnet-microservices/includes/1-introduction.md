@@ -4,6 +4,6 @@ Suppose that you started a new job as a software developer at the Contoso outdoo
 
 In this module, you gain an understanding of the microservices architectural pattern and the problems that it solves. You see how you can use Docker to implement the microservices architectural pattern with an ASP.NET web API.
 
-By the end of this module, you'll have the foundation to build microservices with .NET and understand how you can use Docker to implement the microservices architectural pattern.
+By the end of this module, you'll have the foundation to build microservices with .NET, and understand how you can use Docker to implement the microservices architectural pattern.
 
 If you need to learn more about Docker, review the training module [Introduction to Docker containers](/training/modules/intro-to-docker-containers/).

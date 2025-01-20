@@ -2,6 +2,8 @@
 uid: learn.azure.optimize-your-cost-azure-blob-storage.azure-blob-storage-pricing-considerations
 title: Describe Azure Blob Storage pricing considerations 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure Blob Storage pricing considerations
   description: Describe Azure Blob Storage pricing considerations.
   ms.date: 08/14/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/azure-blob-storage-pricing-considerations.md)]
+

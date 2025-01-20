@@ -2,12 +2,15 @@
 uid: learn.azure.safeguard-data-sector.8-customize-data-protection
 title: Extend and customize data protection with extra Azure services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Extend and customize data protection with extra Azure services
-  description: Overview of a wide range of Azure services that help government agencies ensure in-depth security on the cloud, such as Microsoft Defender for Cloud, Azure Monitor, Azure Policy, Azure Firewall, Azure Watcher, Azure DDoS Protection, Microsoft Sentinel, Azure Advisor, and Azure Blueprints.
-  ms.date: 07/25/2023
+  description: Overview of a wide range of Azure services that help government agencies ensure in-depth security on the cloud. Such as, Microsoft Defender for Cloud, Azure Monitor, Azure Policy, Azure Firewall, Azure Watcher, Azure DDoS Protection, Microsoft Sentinel, Azure Advisor, and Azure Blueprints.
+  ms.date: 11/27/2024
   author: EliotSeattle
   ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/8-customize-data-protection.md)] 
+

@@ -2,6 +2,8 @@
 uid: learn-wwl.develop-azure-sql-database.build-deploy-github-actions
 title: Build and deploy database projects in GitHub Actions and Azure DevOps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build and deploy database projects in GitHub Actions and Azure DevOps
   description: "Learn how to build and deploy database projects in GitHub Actions and Azure DevOps."
   ms.date: 9/27/2024

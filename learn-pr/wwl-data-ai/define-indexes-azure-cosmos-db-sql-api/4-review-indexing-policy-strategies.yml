@@ -2,6 +2,8 @@
 uid: learn.wwl.define-indexes-azure-cosmos-db-sql-api.review-index-data-types
 title: Review indexing policy strategies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review indexing policy strategies
   description: "Review indexing policy strategies"
   ms.date: 11/03/2022

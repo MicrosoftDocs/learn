@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-authentication-microsoft-entra-id.authentication-options
 title: Authentication options
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Authentication options
   description: "Authentication options"
-  ms.date: 09/04/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

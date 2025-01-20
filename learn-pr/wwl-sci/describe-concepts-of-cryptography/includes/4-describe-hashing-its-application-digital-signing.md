@@ -24,6 +24,6 @@ When Victoria receives the digitally signed document, she uses the same digital 
 
 The following two-minute video demonstrates how digital signatures work, and how they show if a document has been tampered with.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWNvVP]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6fe3b1b9-438f-42dd-bef5-bed01b4f1278]
 
 Digital signing requires using a digital signing service. Many companies offer this capability. Two of the most popular are DocuSign and Adobe Sign.

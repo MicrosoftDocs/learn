@@ -6,6 +6,6 @@ The main takeaways from this module include understanding the Hyperscale service
 
 - [Azure SQL Database Overview](/azure/azure-sql/database/sql-database-paas-overview)
 - [Understanding Azure SQL Database's Hyperscale service tier](/azure/azure-sql/database/service-tier-hyperscale)
-- [Serverless compute tier for Azure SQL Database](/azure/azure-sql/database/serverless-tier-overview&tabs=general-purpose)
+- [Serverless compute tier for Azure SQL Database](/azure/azure-sql/database/serverless-tier-overview)
 - [Business continuity and disaster recovery in Azure SQL Database](/azure/azure-sql/database/auto-failover-group-overview)
 - [Intelligent applications with Azure SQL Database](/azure/azure-sql/database/ai-artificial-intelligence-intelligent-applications)

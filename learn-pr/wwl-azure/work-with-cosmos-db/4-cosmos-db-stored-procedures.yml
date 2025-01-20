@@ -2,6 +2,8 @@
 uid: learn.wwl.work-with-cosmos-db.create-stored-procedures
 title: Create stored procedures
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create stored procedures
   description: "Create stored procedures"
   ms.date: 07/15/2024

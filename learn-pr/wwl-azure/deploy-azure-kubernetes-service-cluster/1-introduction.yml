@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-azure-kubernetes-service-cluster.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 03/08/2024

@@ -10,7 +10,7 @@ You'll host the website in Azure using Azure App Service. You'll incorporate a s
 
 You decide to build the resources using infrastructure as code (IaC) techniques so you can reuse the template for future product launches.
 
-## What will we be doing?
+## What will we learn?
 
 In this module, you'll create a reusable Bicep template to deploy a set of Azure resources for new product launches. You'll use many elements of the Bicep language, including:
 

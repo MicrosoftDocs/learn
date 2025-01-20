@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.chain-azure-functions-data-using-input-output-bindings.7-write-data-with-output-bindings-portal-lab
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Write data with output bindings
   description: In this hands-on unit, we write data from our Azure function to Azure Cosmos DB with the help of an output binding.
   ms.date: 06/06/2024
@@ -17,3 +19,4 @@ azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/7-write-data-with-output-bindings-portal-lab.md)]
+

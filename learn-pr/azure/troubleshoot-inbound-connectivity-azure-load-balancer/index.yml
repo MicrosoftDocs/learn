@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: troubleshoot-inbound-network-connectivity-azure-load-balancer
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot inbound network connectivity for Azure Load Balancer
   description: Learn how to troubleshoot inbound network connectivity for Azure Load Balancer.
   manager: kumud
@@ -41,3 +43,4 @@ units:
 - learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.summary
 badge:
   uid: learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.badge
+

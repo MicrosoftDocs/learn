@@ -2,9 +2,11 @@
 uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db.connect-query-api-for-mongodb
 title: Connect and query with an Azure Cosmos DB for MongoDB
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect and query with an Azure Cosmos DB for MongoDB
   description: "Connect and query with an Azure Cosmos DB for MongoDB"
-  ms.date: 03/20/2024
+  ms.date: 12/09/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

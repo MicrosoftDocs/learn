@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-datalake-storage-gen2
 title: Explore Azure Data Lake Storage Gen2
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Data Lake Storage Gen2
   description: "Explore Azure Data Lake Storage Gen2"
   ms.date: 09/17/2024

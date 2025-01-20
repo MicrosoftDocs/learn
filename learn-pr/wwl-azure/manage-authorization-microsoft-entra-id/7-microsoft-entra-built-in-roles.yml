@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-built-in-roles
 title: Microsoft Entra built-in roles
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Microsoft Entra built-in roles
   description: "Microsoft Entra built-in roles"
   ms.date: 08/07/2024

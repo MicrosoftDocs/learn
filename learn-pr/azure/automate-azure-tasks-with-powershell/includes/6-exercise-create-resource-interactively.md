@@ -74,7 +74,7 @@ Here's how to create a new Azure VM with Azure PowerShell:
 
    ```Output
    ResourceGroupName : <rgn>[sandbox resource group name]</rgn>
-   Id                : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/testvm-eus-01
+   Id                : /subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/testvm-eus-01
    VmId              : 00000000-0000-0000-0000-000000000000
    Name              : testvm-eus-01
    Type              : Microsoft.Compute/virtualMachines
@@ -181,20 +181,11 @@ To try more commands, let's delete the VM. Follow these steps:
    The `Remove-AzVM` command only deletes the VM. It doesn't clean up any of the other resources. To
    manually clean them up, follow these steps:
 
-1. Delete the virtual network:
+1. Delete the network interface:
 
    ```azurepowershell
-   Get-AzVirtualNetwork -ResourceGroupName $vm.ResourceGroupName |
-       Remove-AzVirtualNetwork
-   ```
-
-   Enter <kbd>Y</kbd> and press <kbd>Enter</kbd> when prompted to continue.
-
-1. Delete the public IP address:
-
-   ```azurepowershell
-   Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName |
-       Remove-AzPublicIpAddress
+   Get-AzNetworkInterface -ResourceGroupName $vm.ResourceGroupName -Name $vm.Name |
+       Remove-AzNetworkInterface
    ```
 
    Enter <kbd>Y</kbd> and press <kbd>Enter</kbd> when prompted to continue.
@@ -208,11 +199,20 @@ To try more commands, let's delete the VM. Follow these steps:
 
    Enter <kbd>Y</kbd> and press <kbd>Enter</kbd> when prompted to continue.
 
-1. Delete the network interface:
+1. Delete the public IP address:
 
    ```azurepowershell
-   Get-AzNetworkInterface -ResourceGroupName $vm.ResourceGroupName -Name $vm.Name |
-       Remove-AzNetworkInterface
+   Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName |
+       Remove-AzPublicIpAddress
+   ```
+
+   Enter <kbd>Y</kbd> and press <kbd>Enter</kbd> when prompted to continue.
+
+1. Delete the virtual network:
+
+   ```azurepowershell
+   Get-AzVirtualNetwork -ResourceGroupName $vm.ResourceGroupName |
+       Remove-AzVirtualNetwork
    ```
 
    Enter <kbd>Y</kbd> and press <kbd>Enter</kbd> when prompted to continue.

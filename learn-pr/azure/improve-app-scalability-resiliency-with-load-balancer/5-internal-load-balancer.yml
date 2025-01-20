@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.improve-app-scalability-resiliency-with-load-balancer.5-internal-load-balancer
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Internal load balancers
   description: Internal load balancers
   ms.date: 10/14/2024
@@ -36,3 +38,4 @@ quiz:
     - content: "They have a public IP address."
       isCorrect: true
       explanation: "External load balancers have public IP addresses."
+

@@ -12,6 +12,6 @@ Consider the following Microsoft resources to initiate or advance your FinOps jo
 
 - **[FinOps e-book](https://info.microsoft.com/ww-landing-finops-with-azure-bringing-finops-to-life-through-organizational-and-cultural-alignment.html)**<br>This e-book guides you through the FinOps principles to highlight Microsoft solutions that can support your cloud journey.
 
-- **[FinOps Docs](/azure/cost-management-billing/finops/)**<br>Find technical documentation and guidance to help make informed decisions and follow FinOps best practices.
+- **[FinOps Docs](/cloud-computing/finops/)**<br>Find technical documentation and guidance to help make informed decisions and follow FinOps best practices.
 
 - **[FinOps on Azure](https://azure.microsoft.com/solutions/finops/)**<br>Explore the range of Microsoft products and services designed to bolster your efforts in implementing FinOps best practices.

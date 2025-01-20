@@ -2,6 +2,8 @@
 uid: learn.oxford.deploy-prebuilt-module-edge-device.8-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: In this unit, we summarize the key ideas in the module and emphasize the ideas to ensure learning retention
   ms.date: 11/27/2023
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2 # dummy number at present
 content: |
   [!include[](includes/8-summary.md)]
+

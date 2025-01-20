@@ -1,6 +1,3 @@
-
-
-
 *Azure DNS* is an Azure service that provides name resolution for your Azure resources. Currently, Contoso uses Windows Server VMs in their on-premises datacenter to implement DNS. You must consider whether you can implement Azure DNS to replace the functionality of these on-premises workloads. It's also important to determine if there are currently any limitations in Azure DNS that you might need to manage around.
 
 ## Overview
@@ -49,6 +46,7 @@ The following table describes the features of  Azure private DNS.
 |Reverse DNS lookup within the VNet scope|Reverse DNS lookup for a private IP address within a VNet that you assign to a private zone returns the host's fully qualified domain name (FQDN) that includes the host/record name and the zone name as the suffix.|
 
 ## Additional reading
+
 You can learn more by reviewing the following documents.
 
 - [Delegation of DNS zones with Azure DNS](https://aka.ms/dns-domain-delegation?azure-portal=true).

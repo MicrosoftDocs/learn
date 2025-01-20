@@ -1,22 +1,23 @@
+
 A Network Security Group (NSG) in Azure allows you to filter network traffic to and from Azure resources in an Azure virtual network. A network security group contains security rules that allow or deny inbound network traffic to, or outbound network traffic from, several types of Azure resources. For each rule, you can specify source and destination, port, and protocol.
 
 ## NSG security rules
 
-A network security group contains zero, or as many rules as desired, within Azure subscription limits. Each rule specifies the following properties:
+A network security group contains zero, or as many rules as desired, within Azure subscription limits. Each rule has these properties.
 
-- **Name** \- Must be a unique name within the network security group.
-- **Priority** \- Can be any number between 100 and 4096. Rules are processed in priority order, with lower numbers processed before higher numbers, because lower numbers have higher priority. Once traffic matches a rule, processing stops. As a result, any rules that exist with lower priorities (higher numbers) that have the same attributes as rules with higher priorities aren't processed.
-- **Source or destination** \- Can be set to Any, or an individual IP address, or classless inter-domain routing (CIDR) block (10.0.0.0/24, for example), service tag, or application security group.
-- **Protocol** \- Can be TCP, UDP, ICMP, ESP, AH, or Any.
-- **Direction** \- Can be configured to apply to inbound, or outbound traffic.
-- **Port range** \- Can be specified either as an individual port or range of ports. For example, you could specify 80 or 10000-10005. Specifying ranges enables you to create fewer security rules.
-- **Action** \- Can be set to Allow or deny.
+- **Name**. Must be a unique name within the network security group.
+- **Priority**. Can be any number between 100 and 4096. Rules are processed in priority order, with lower numbers processed before higher numbers, because lower numbers have higher priority. Once traffic matches a rule, processing stops. A
+- **Source or destination**. Can be set to Any, or an individual IP address, or classless inter-domain routing (CIDR) block (10.0.0.0/24, for example), service tag, or application security group.
+- **Protocol**. Can be TCP, UDP, ICMP, ESP, AH, or Any.
+- **Direction**. Can be configured to apply to inbound, or outbound traffic.
+- **Port range**. Can be specified either as an individual port or range of ports. For example, you could specify 80 or 10000-10005. Specifying ranges enables you to create fewer security rules.
+- **Action**. Can be configured to allow or deny.
 
-The firewall evaluates network security group security rules by priority, using the 5-tuple information (source, source port, destination, destination port, and protocol) to either allow or deny the traffic.
+The firewall evaluates the rules using the source, source port, destination, destination port, and protocol.
 
 ## Default security rules
 
-Azure creates the following default rules in each network security group that you create:
+Azure creates these default rules.
 
 | **Direction** |           **Name**            | **Priority** |    **Source**     | **Source Ports** | **Destination** | **Destination Ports** | **Protocol** | **Access** |
 |:-------------:|:-----------------------------:|:------------:|:-----------------:|:----------------:|:---------------:|:---------------------:|:------------:|:----------:|
@@ -27,9 +28,9 @@ Azure creates the following default rules in each network security group that yo
 |   Outbound    |     `AllowInternetOutBound`     |    65001     |     0.0.0.0/0     |     0-65535      |    `Internet`     |        0-65535        |     Any      |   Allow    |
 |   Outbound    |        `DenyAllOutBound`       |    65500     |     0.0.0.0/0     |     0-65535      |    0.0.0.0/0    |        0-65535        |     Any      |    Deny    |
 
-The following diagram and bullet points illustrate different scenarios for how network security groups might be deployed to allow network traffic to and from the internet over TCP port 80:
+This diagram and bullet points illustrate different scenarios for how network security groups might be deployed.
 
-:::image type="content" source="../media/network-security-group-interaction-92030446.png" alt-text="Diagram of the Network security group example setup.":::
+:::image type="content" source="../media/network-security-group-interaction-92030446.png" alt-text="Diagram of the network security group example.":::
 
 For **inbound traffic** Azure processes the rules in a network security group associated to a subnet first, if there's one, and then the rules in a network security group associated to the network interface, if there's one.
 
@@ -49,26 +50,21 @@ For **outbound traffic**, Azure processes the rules in a network security group 
 
 An Application Security Group (ASG) enables you to configure network security as a natural extension of an application's structure, allowing you to group virtual machines and define network security policies based on those groups. You can reuse your security policy at scale without manual maintenance of explicit IP addresses. The platform handles the complexity of explicit IP addresses and multiple rule sets, allowing you to focus on your business logic.
 
-To minimize the number of security rules you need, and the need to change the rules, plan out the application security groups you need and create rules using service tags or application security groups, rather than individual IP addresses, or ranges of IP addresses, whenever possible.
+To minimize the number of security rules you need, create rules using service tags or application security groups. Avoid rules with individual IP addresses, or ranges of IP addresses.
 
 ## Filter network traffic with an NSG using the Azure portal
 
 You can use a network security group to filter network traffic inbound and outbound from a virtual network subnet. Network security groups contain security rules that filter network traffic by IP address, port, and protocol. Security rules are applied to resources deployed in a subnet.
 
-The key stages to filter network traffic with an NSG using the Azure portal are:
+The key stages to filter network traffic with an NSG are:
 
-1. **Create a resource group** - this can either be done beforehand or as you create the virtual network in the next stage. All other resources that you create must be in the same region specified here.
-2. **Create a virtual network** - this must be deployed in the same resource group you created previously.
-3. **Create application security groups** - the application security groups you create here enables you to group together servers with similar functions, such as web servers or management servers. You would create two application security groups here; one for web servers and one for management servers (for example, MyAsgWebServers and MyAsgMgmtServers)
-4. **Create a network security group** \- the network security group secures network traffic in your virtual network. This NSG will be associated with a subnet in the next stage.
-5. **Associate a network security group with a subnet** - this is where you associate the network security group you create previously, with the subnet of the virtual network you created in stage 2 above.
-6. **Create security rules** - this is where you create your inbound security rules. Here you would create a security rule to allow ports 80 and 443 to the application security group for your web servers (for example, MyAsgWebServers). Then you would create another security rule to allow RDP traffic on port 3389 to the application security group for your management servers (for example, MyAsgMgmtServers). These rules control from where you can access your VM remotely and your IIS Webserver.
-7. **Create virtual machines** - this is where you create the web server (for example, MyVMWeb) and management server (for example, MyVMMgmt) virtual machines that will be associated with their respective application security group in the next stage.
-8. **Associate NICs to an ASG** - this is where you associate the network interface card (NIC) attached to each virtual machine with the relevant application security group that you created in stage 3 above.
-9. **Test traffic filters** - the final stage is where you test that your traffic filtering is working as expected.
-     - To test this, you would attempt to connect to the management server virtual machine (for example, MyVMMgmt) by using an RDP connection, thereby verifying that you can connect because port 3389 is allowing inbound connections from the Internet to the management servers application security group (for example, MyAsgMgmtServers).
-     - While connected to the RDP session on the management server (for example, MyVMMgmt), you would then test an RDP connection from the management server virtual machine (for example, MyVMMgmt) to the web server virtual machine (for example, MyVMWeb), which again should succeed because virtual machines in the same network can communicate with each over any port by default.
-     - However, you'll not be able to create an RDP connection to the web server virtual machine (for example, MyVMWeb) from the internet, because the security rule for the web servers application security group (for example, MyAsgWebServers) prevents connections to port 3389 inbound from the Internet. Inbound traffic from the Internet is denied to all resources by default.
-     - While connected to the RDP session on the web server (for example, MyVMWeb), you could then install IIS on the web server, then disconnect from the web server virtual machine RDP session, and disconnect from the management server virtual machine RDP session. In the Azure portal, you would then determine the Public IP address of the web server virtual machine (for example, MyVMWeb), and confirm you can access the web server virtual machine from the Internet by opening a web browser on your computer and navigating to http:// (for example, http://23.96.39.113) **.** You should see the standard IIS welcome screen, because port 80 is allowed inbound access from the Internet to the web servers application security group (for example, MyAsgWebServers). The network interface attached to the web server virtual machine (for example, MyVMWeb) is associated with the web servers application security group (for example, MyAsgWebServers) and therefore allows the connection.
+1. Create a resource group.
+2. Create a virtual network.
+3. Create application security groups.
+4. Create a network security group.
+5. Associate a network security group with a subnet.
+6. Create security rules.
+8. Associate NICs to an ASG.
+9. Test traffic filters.
 
 To view the detailed steps for all these tasks, see [Tutorial: Filter network traffic with a network security group using the Azure portal](/azure/virtual-network/tutorial-filter-network-traffic).

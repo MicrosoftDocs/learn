@@ -2,6 +2,8 @@
 uid: learn.app-package-management-using-helm.manage-helm-release
 title: Manage a Helm release
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   description: Explore how to use Helm to track changes when installing, upgrading, rolling back, or deleting a Helm release on a Kubernetes cluster.
   title: Manage a Helm release
   author: schaffererin
@@ -41,3 +43,4 @@ quiz:
     - content: "Create a single Helm chart for both applications, and set the caching service as a dependency chart."
       isCorrect: true
       explanation: "When you deploy a Helm chart, the applications deployed in the chart are deployed as a release. A single release can make it easier to manage upgrades and fixes to the components that have dependencies."
+

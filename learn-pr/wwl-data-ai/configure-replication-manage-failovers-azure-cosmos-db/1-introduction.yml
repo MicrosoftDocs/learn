@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 12/06/2022

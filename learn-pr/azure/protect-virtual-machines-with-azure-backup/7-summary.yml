@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-virtual-machines-with-azure-backup.7-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Review what you learned in this module.
   ms.date: 09/05/2024

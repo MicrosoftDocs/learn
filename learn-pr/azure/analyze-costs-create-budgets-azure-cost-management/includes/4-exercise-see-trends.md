@@ -24,17 +24,13 @@ Next, in the Azure portal, navigate to **Cost analysis**.
 
 Next, group your results to view resources.
 
-- Select the **Group by** list to view a list of values to filter by, then select **Resource**.
+- Select the **Group by** list to view a list of values to filter by, then select **Resources**.
 
 ## Adjust date range and granularity
 
 Lastly, adjust results to find your most expensive resources.
 
-1. Select the **Granularity** item to view a list of time grain values to filter by.
-
-1. Select **Daily**.
-
-1. Select the date list item (calendar symbol) to view available date ranges, and then under **Calendar months**, select **Last 3 months**.
+1. Select the date list item to view available date ranges, and then under **Calendar months**, select **Last 3 months**.
 
 1. Note your most expensive resource.
 

@@ -2,14 +2,16 @@
 uid: learn.wwl.configure-blob-storage.determine-blob-object-replication
 title: Determine blob object replication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine blob object replication
   description: "Determine blob object replication"
-  ms.date: 02/05/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/6-determine-blob-object-replication.md)]

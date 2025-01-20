@@ -2,6 +2,8 @@
 uid: learn.intro-hdinsight-aks-data-transformation-flink.knowledge-check  
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
@@ -58,3 +60,4 @@ quiz:
     - content: "None of these choices"
       isCorrect: false
       explanation: Incorrect. Both Savepoint, and Checkpoint together aren't the automatic snapshot created by Apache Flink's primary for failure recovery.
+

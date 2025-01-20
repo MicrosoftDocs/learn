@@ -1,17 +1,17 @@
 <!-- See comment at the start of the previous unit about Navigation Pages within Tabbed Pages on Android and iOS-->
 
-In the astronomy app, you've been asked to add pages that enable the user to select different astronomical bodies and display their details. There can be any number of bodies, so creating a tab for each body isn't a feasible approach. Therefore, to enable the user to select which body to view, you decide to add another page containing a list. The user can select a body from this list and the app displays the details for that body in a new page. The list page acts as a *root page* for stack navigation. You add the list page as a tab in the existing user interface.
+In the astronomy app, you're asked to add pages that enable the user to select different astronomical bodies and display their details. There can be any number of bodies, so creating a tab for each body isn't a feasible approach. Therefore, to enable the user to select which body to view, you decide to add another page containing a list. The user can select a body from this list and the app displays the details for that body in a new page. The list page acts as a *root page* for stack navigation. You add the list page as a tab in the existing user interface.
 
 :::image type="content" source="../media/7-stack-navigation.png" alt-text="Diagram of the stack navigation model for moving between pages for astronomical bodies.":::
 
 ## Open the starter solution
 
-1. Go to the **exercise3** folder in repo that you cloned at the start of this module, and then move to the **start** folder.
+1. Go to the **exercise3** folder in the repo that you cloned at the start of this module, and then move to the **start** folder.
 
 1. Use Visual Studio to open the **Astronomy.sln** solution or the folder in Visual Studio Code.
 
     > [!NOTE]
-    > This solution contains pages that aren't in the version of the app you used in the previous exercises.
+    > This solution contains pages and styles that aren't in the version of the app you used in the previous exercises.
 
 1. In the Solution Explorer window, open the **Pages** folder. In addition to the **MoonPhasePage**, **SunrisePage**, and **AboutPage** files, this folder contains two more pages:
 
@@ -19,7 +19,7 @@ In the astronomy app, you've been asked to add pages that enable the user to sel
 
     - **AstronomicalBodyPage**. This page is used to display the information for an astronomical body.
 
-The **AstronomicalBodiesPage** has already been added as a tab on the page that appears when the **Astronomy** flyout is clicked.
+The **AstronomicalBodiesPage** is already added as a tab on the page that appears when the **Astronomy** flyout is clicked.
 
 ## Add a route for the details page
 

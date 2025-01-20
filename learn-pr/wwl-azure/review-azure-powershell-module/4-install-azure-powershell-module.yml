@@ -2,6 +2,8 @@
 uid: learn.wwl.review-azure-powershell-module.install-azure-powershell-module
 title: Install the Azure PowerShell module
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Install the Azure PowerShell module
   description: "Install the Azure PowerShell module"
   ms.date: 03/22/2024
@@ -14,3 +16,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/4-install-azure-powershell-module.md)]
+

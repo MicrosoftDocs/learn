@@ -2,6 +2,8 @@
 uid: learn.github.automate-devops-github-apps.4-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check what you've learned.
   ms.date: 04/14/2023

@@ -2,6 +2,8 @@
 uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.use-apache-phoenix-on
 title: Use Apache Phoenix on HDInsight HBase
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use Apache Phoenix on HDInsight HBase
   description: "Use Apache Phoenix on HDInsight HBase"
   ms.date: 04/09/2024

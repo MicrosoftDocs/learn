@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-azure-container-apps.exercise-deploy-app
 title: Exercise - Deploy a container app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy a container app
   description: "Exercise - Deploy a container app"
   ms.date: 07/16/2024

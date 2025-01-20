@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-release-strategy-recommendations.use-release-gates-to-protect-quality
 title: Use release gates to protect quality
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use release gates to protect quality
   description: "Use release gates to protect quality"
   ms.date: 05/21/2024

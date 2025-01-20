@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-agents-azure-open-ai-semantic-kernel-sdk
 metadata:
-  title: Develop AI agents using Azure OpenAI and the Semantic Kernel SDK
-  description: Develop AI agents using Azure OpenAI and the Semantic Kernel SDK
+  title: Develop AI agents using Azure OpenAI and the Semantic Kernel SDK AZ-2005
+  description: Learn how to use the Semantic Kernel SDK to build intelligent applications that automate tasks and perform natural language processing. (AZ-2005)
   ms.date: 08/30/2024
   author: wwlpublish
   ms.author: buzahid

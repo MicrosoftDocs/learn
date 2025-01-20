@@ -2,12 +2,16 @@
 uid: learn.wwl.explore-api-management.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/25/2023
+  ms.date: 10/28/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -23,11 +27,11 @@ quiz:
     - content: "Developer portal"
       isCorrect: true
       explanation: "Correct. The Developer portal serves as the main web presence for developers, and is where they can subscribe to get API keys."
-  - content: "Which of the following API Management policies would one use if one wants to apply a policy based on a condition?"
+  - content: "Which of the following API Management policies applies a policy based on a condition?"
     choices:
     - content: "forward-request"
       isCorrect: false
-      explanation: "Incorrect. The forward-request policy forwards the incoming request to the backend service specified in the request context."
+      explanation: "Incorrect. This policy forwards the incoming request to the backend service specified in the request context."
     - content: "choose"
       isCorrect: true
       explanation: "Correct. The choose policy applies enclosed policy statements based on the outcome of evaluation of boolean expressions."

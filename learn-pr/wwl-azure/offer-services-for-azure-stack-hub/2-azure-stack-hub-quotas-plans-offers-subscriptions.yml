@@ -2,6 +2,8 @@
 uid: learn.wwl.offer-services-for-azure-stack-hub.quotas-plans-offers-subscriptions
 title: Azure Stack Hub quotas, plans, offers, and subscriptions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Stack Hub quotas, plans, offers, and subscriptions
   description: "Azure Stack Hub quotas, plans, offers, and subscriptions"
   ms.date: 09/15/2023

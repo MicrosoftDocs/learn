@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.connect-aks-edge-essentials-azure-arc
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 
   description: Deploy applications to Azure Arc-enabled AKS Edge Essentials cluster with GitOps and Flux.
   manager: lizross
@@ -51,3 +53,4 @@ units:
 - learn.connect-aks-edge-essentials-azure-arc.summary
 badge:
   uid: learn.connect-aks-edge-essentials-azure-arc.badge
+

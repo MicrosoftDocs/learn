@@ -2,11 +2,13 @@
 uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.enhance-index-to-include-multiple-languages
 title: Enhance an index to include multiple languages
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enhance an index to include multiple languages
   description: Enhance an index to include multiple languages
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 10/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/05-enhance-index-to-include-multiple-languages.md)]
+

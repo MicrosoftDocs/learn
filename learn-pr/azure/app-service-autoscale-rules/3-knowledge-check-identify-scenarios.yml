@@ -2,6 +2,8 @@
 uid: learn.app-service-autoscale-rules.3-knowledge-check-identify-scenarios
 title: Knowledge check - Identify suitable scenarios for autoscaling
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check - Identify suitable scenarios for autoscaling
   description: Knowledge check - Identify suitable scenarios for autoscaling
   ms.date: 04/15/2024

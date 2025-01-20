@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-event-grid
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Event Grid
   description: "Explore Azure Event Grid"
   ms.date: 07/17/2024

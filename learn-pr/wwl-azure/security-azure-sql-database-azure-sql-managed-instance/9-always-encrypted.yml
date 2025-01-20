@@ -2,6 +2,8 @@
 uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.always-encrypted
 title: Recommend when to use Azure SQL Database Always Encrypted
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommend when to use Azure SQL Database Always Encrypted
   description: "Deploy always encrypted​ features"
   ms.date: 05/29/2024

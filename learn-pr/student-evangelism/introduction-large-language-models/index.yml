@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.introduction-large-language-models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   ms.author: chnoring
   author: softchris
   ms.date: 11/30/2023
@@ -37,3 +39,4 @@ units:
 - learn.introduction-large-language-models.summary
 badge:
   uid: learn.introduction-large-language-models-badge
+

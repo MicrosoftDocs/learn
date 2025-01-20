@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-application-gateway
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction
   title: Introduction to Azure Application Gateway
   description: This module explains what Azure Application Gateway does, how it works, and when you should choose to use Application Gateway as a solution to meet your organization's needs.
@@ -39,3 +41,4 @@ units:
   - learn.azure.intro-to-azure-application-gateway.summary
 badge:
   uid: learn.azure.intro-to-azure-application-gateway.badge
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-monitoring-applications
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure monitoring for applications
   description: In this module you learn how to use Application Insights to monitor application performance and how to use Azure ASQL Insights to improve performance of Azure SQL database applications.
   ms.date: 10/25/2023
@@ -33,3 +35,4 @@ units:
 - learn.wwl.configure-monitoring-applications.summary
 badge:
   uid: learn.wwl.configure-monitoring-applications.badge
+

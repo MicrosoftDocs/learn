@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-and-api.3-static-web-apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan your Azure Static Web App
   description: Plan your Azure Static Web App
   ms.date: 11/18/2022
@@ -26,3 +28,4 @@ quiz:
         - content: 'navigationFallback'
           isCorrect: true
           explanation: Correct. 'The `navigationFallback` section is where you define a server-side fallback route to serve the appropriate HTML page (which is generally the index.html for your client-side app).'
+

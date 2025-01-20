@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.create-release-pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a release pipeline
   description: "Create a release pipeline"
   ms.date: 05/28/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-alerts-responses.alert-processing-rules
 title: Alert processing rules
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Alert processing rules
   description: "Alert processing rules"
   ms.date: 10/25/2023

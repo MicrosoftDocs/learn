@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.stage-deploy-app-service-deployment-slots
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Stage a web app deployment for testing and rollback by using App Service deployment slots
   description: Discover the benefits of creating deployment slots to streamline deployment and roll back a web app in Azure App Service.
   ms.date: 04/11/2023
@@ -38,3 +40,4 @@ units:
 - learn.azure.stage-deploy-app-service-deployment-slots.6-summary
 badge:
   uid: learn.stage-deploy-app-service-deployment-slots.badge
+

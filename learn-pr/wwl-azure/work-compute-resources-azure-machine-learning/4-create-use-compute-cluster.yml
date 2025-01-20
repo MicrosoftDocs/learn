@@ -2,6 +2,8 @@
 uid: learn.wwl.work-compute-resources-azure-machine-learning.create-use-compute-cluster
 title: Create and use a compute cluster
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and use a compute cluster
   description: Learn about how to create and use a compute cluster in Azure Machine Learning. A compute cluster is ideal for scalable and parallel machine learning workloads.
   author: wwlpublish
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/4-create-use-compute-cluster.md)]
+

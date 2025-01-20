@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.django.deployment.deployment-considerations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deployment considerations
   description: When developing an application, you take certain shortcuts for the sake of convenience. When you deploy to production, however, many of these settings need to change. Explore how to prepare your application for deployment.
   ms.date: 03/01/2021 

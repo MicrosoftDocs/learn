@@ -2,6 +2,8 @@
 uid: learn.control-azure-services-with-cli.5-exercise-create-website-using-the-cli
 title: Exercise - Create an Azure website using the CLI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an Azure website using the CLI
   description: Work with the Azure CLI to create a new PHP website
   ms.date: 09/07/2023
@@ -23,3 +25,4 @@ content: |
 #  azure:
 #    resource:
 #      type: "Microsoft.Web/sites"
+

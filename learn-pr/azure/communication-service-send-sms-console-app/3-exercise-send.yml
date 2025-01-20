@@ -2,6 +2,8 @@
 uid: learn.azure.communication-service-send-sms-console-app.exercise-send
 title: Exercise - Send an SMS using Azure Communication Services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Send an SMS using Azure Communication Services
   description: Send an SMS with an SMS-enabled telephone number provisioned via Azure Communication Services.
   author: softchris
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/3-exercise-send.md)]
+

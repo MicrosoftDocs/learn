@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Case studies: NoSQL databases and cloud object storage'
   description: Carnegie Mellon University's Cloud Developer course. Learn about two more types of storage - NoSQL databases and object storage - with case studies from industry.
   brand: azure
@@ -58,3 +60,4 @@ units:
 - learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.6-summary
 badge:
   uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.badge
+

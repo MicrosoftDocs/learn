@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-versioning-strategy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement a versioning strategy
   description: "Implement a versioning strategy"
   ms.date: 05/24/2024

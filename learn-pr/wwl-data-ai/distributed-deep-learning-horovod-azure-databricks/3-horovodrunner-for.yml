@@ -2,6 +2,8 @@
 uid: learn.wwl.distributed-deep-learning-horovod-azure-databricks.horovodrunner-for
 title: HorovodRunner for distributed deep learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: HorovodRunner for distributed deep learning
   description: "HorovodRunner for distributed deep learning"
   ms.date: 03/27/2023

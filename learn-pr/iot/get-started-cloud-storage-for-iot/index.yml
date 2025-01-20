@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-cloud-storage-for-iot
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Cloud storage options for Azure IoT Hub solutions
   description: "This module introduces you to the Azure data storage options that are often used in Azure IoT solutions, and the hot and cold storage paths that can be implemented in support of various business requirements."
   ms.date: 02/16/2024
@@ -46,3 +48,4 @@ units:
 - learn.wwl.get-started-cloud-storage-for-iot.summary
 badge:
   uid: learn.wwl.get-started-cloud-storage-for-iot.badge
+

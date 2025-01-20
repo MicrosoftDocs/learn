@@ -1,4 +1,4 @@
-*Vector search* is a new capability available in AI Search used to index, store and retrieve vector embedding from a search index. You can use it to power applications implementing the Retrieval Augmented Generation (RAG) architecture, similarity and multi-modal searches or recommendation engines.
+*Vector search* is a capability available in AI Search used to index, store and retrieve vector embedding from a search index. You can use it to power applications implementing the Retrieval Augmented Generation (RAG) architecture, similarity and multi-modal searches or recommendation engines.
 
 Below is an illustration of the indexing and query workflows for vector search.
 
@@ -13,9 +13,9 @@ Here are some scenarios where you should use vector search:
 - Use OpenAI or open source models to encode text, and use queries encoded as vectors to retrieve documents.
 - Do a similarity search across encoded images, text, video and audio, or a mixture of these (multi-modal).
 - Represent documents in different languages using a multi-lingual embedded model to find documents in any language.
-- Build hybrid searched from vector and searchable text fields as vector searches are implemented at field level. The results will be merged to return a single response.
+- Build hybrid searches from vector and searchable text fields as vector searches are implemented at field level. The results will be merged to return a single response.
 - Apply filters to text and numeric fields and include this in your query to reduce the data that your vector search needs to process.
-- To create a vector database to provide an external knowledge base or use as a long term memory.
+- Create a vector database to provide an external knowledge base or use as a long term memory.
 
 ## Limitations
 

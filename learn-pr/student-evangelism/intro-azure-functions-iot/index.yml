@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-iot-funtions-iot
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Introduction to Azure Functions for IoT"
   description: "Learn about Azure Functions for IoT. University of Oxford"
   ms.date: 07/25/2024
@@ -42,3 +44,4 @@ units:
 - learn.oxford.intro-iot-funtions-iot.when-use-azure-functions-iot
 - learn.oxford.intro-iot-funtions-iot.knowledge-check
 - learn.oxford.intro-iot-funtions-iot.summary
+

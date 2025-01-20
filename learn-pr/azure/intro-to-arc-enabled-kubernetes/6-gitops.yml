@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-enabled-kubernetes.6-gitops
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use GitOps to configure Azure Arc-enabled Kubernetes clusters
   description: Learn about GitOps, and how to use GitOps to apply configurations to Azure Arc-enabled Kubernetes clusters.
   author: JnHs
@@ -14,3 +16,4 @@ title: Use GitOps to configure Azure Arc-enabled Kubernetes clusters
 durationInMinutes: 7
 content: |
   [!include[](includes/6-gitops.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.autoscale-java-azure.patterns
 title: Common autoscaling patterns
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Common autoscaling patterns
   description: We look at common autoscaling patterns
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/8-patterns.md)]
+

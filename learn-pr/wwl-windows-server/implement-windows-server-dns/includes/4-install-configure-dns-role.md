@@ -35,7 +35,7 @@ You can configure each DNS zone with security settings for dynamic updates. For 
 > When a zone isn't Active Directory-integrated, you can still allow dynamic updates, but you can't enforce security.
 
 > [!TIP]
-> Only domain-joined Windows computers that are part of the same forest can perform secure dynamic updates. To allow non-domain joined Windows clients or non-Windows devices to perform dynamic updates, you must allow nonsecure dynamic updates.
+> Only domain-joined Windows computers that are part of the same forest can perform secure dynamic updates. To allow nondomain joined Windows clients or non-Windows devices to perform dynamic updates, you must allow nonsecure dynamic updates.
 
 ### Windows PowerShell cmdlets to manage DNS zones
 

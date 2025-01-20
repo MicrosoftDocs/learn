@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.manage-vms-with-azure-cli
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage virtual machines with the Azure CLI
   description: Learn how to use the cross-platform Azure CLI to create, start, stop, and perform other management tasks related to virtual machines in Azure.
   manager: akashdubey
@@ -45,3 +47,4 @@ units:
 - learn.manage-vms-with-azure-cli-data.9-cleanup
 badge:
   uid: learn.manage-vms-with-azure-cli-data.badge
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-azure-files-azure-blobs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Guided Project - Azure Files and Azure Blobs
   description: "Guided Project - Azure Files and Azure Blobs"
   ms.date: 09/02/2024

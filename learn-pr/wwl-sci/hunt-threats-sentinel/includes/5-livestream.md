@@ -39,4 +39,4 @@ You might use a livestream to track baseline activities for Azure resource delet
 
 If the query returns significant results, you can select **Create analytics rule** from the command bar to create an analytics rule based on the query. After the rule refines the query to identify the specific resources, it can generate alerts or incidents when the resources are deleted.
 
-Choose the best response for the following question, then select **Check your answers**.
+Choose the best response for the following question.

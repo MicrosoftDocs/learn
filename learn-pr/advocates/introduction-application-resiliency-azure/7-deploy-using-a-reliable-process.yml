@@ -2,6 +2,8 @@
 uid: learn.introduction-to-application-resiliency-azure.deploy-using-a-reliable-process
 title: Deploy using a reliable process
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy using a reliable process
   description: Deploy using a reliable process in Azure
   ms.date: 08/14/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/7-deploy-using-a-reliable-process.md)]
+

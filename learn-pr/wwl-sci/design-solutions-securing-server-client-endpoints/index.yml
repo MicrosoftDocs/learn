@@ -4,8 +4,8 @@ metadata:
   title: Design solutions for securing server and client endpoints
   description: "You learn how to analyze the security requirements for different types of endpoints including servers, clients, IoT, OT, mobile, and embedded devices. These requirements take into account different platforms and operating systems and set standards for endpoint protection, hardening, and configuration."
   ms.date: 09/09/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted

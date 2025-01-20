@@ -7,6 +7,6 @@ Become familiar with the objective domains, which are a comprehensive set of spe
 - Module 3: Implement data lifecycle and records management with Microsoft Purview
  
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXk6N]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0984f018-2a0f-4ec1-acc0-f8d365b209e9]  
 
 Remember that each module points back to the core theme of protecting information in Microsoft 365 deployments. Details for each module are included in the corresponding module best practice sections.

@@ -2,12 +2,14 @@
 uid: learn.intro-to-azure-policy.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: "Check your knowledge about Azure Policy."
   ms.date: 07/19/2024
-  author: davidsmatlak
-  ms.author: davidsmatlak
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 5
 content: |
@@ -46,3 +48,4 @@ quiz:
     - content: "Adding required configuration at scale."
       isCorrect: true
       explanation: "Correct. As example, you can create a policy to enable Azure Backup for all virtual machines within an Azure subscription."
+

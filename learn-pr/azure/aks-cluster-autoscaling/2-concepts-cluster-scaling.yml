@@ -2,6 +2,8 @@
 uid: learn.aks-cluster-autoscaling.2-concepts-cluster-scaling
 title: Cluster scalability concepts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   type: knowledge_check
   title: Cluster scalability concepts
   description: Learn about cluster scalability, why it's important, and how AKS can help with it.
@@ -50,3 +52,4 @@ quiz:
     - content: "When the node runs Windows containers."
       isCorrect: false
       explanation: "Incorrect. The underlying operating system isn't a factor."
+

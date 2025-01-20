@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.ha-application-storage-with-grs.6-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 05/17/2023
@@ -11,3 +13,4 @@ title: Summary
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
+

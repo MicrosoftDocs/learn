@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.exercise-generate-certificates
 title: Exercise - Secure the connection to an MQTT broker
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure the connection to an MQTT broker
   description: In this exercise, you'll secure the connection to an MQTT broker.
   ms.date: 11/16/2021
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/05-exercise-generate-certificates.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-package-management.explore-common-public-package-sources
 title: Explore common public package sources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore common public package sources
   description: "Explore common public package sources"
   ms.date: 05/07/2024

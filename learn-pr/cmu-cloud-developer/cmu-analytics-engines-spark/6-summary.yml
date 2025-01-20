@@ -2,6 +2,8 @@
 uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.6-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 03/09/2022
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

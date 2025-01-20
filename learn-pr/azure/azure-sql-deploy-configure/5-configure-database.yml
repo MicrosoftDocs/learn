@@ -1,9 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-deploy-configure.5-configure-database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure SQL Database and Azure SQL Managed Instance
   description: Configure Azure SQL Database and Azure SQL Managed Instance
-  ms.date: 10/16/2023
+  ms.date: 11/11/2024
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: unit
@@ -42,3 +44,4 @@ quiz:
       - content: "Proxy for connections outside Azure and redirect for connections within Azure"
         isCorrect: true
         explanation: "Redirect can be used by default because the ports needed are open within Azure."
+

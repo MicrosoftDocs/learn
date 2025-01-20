@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-implement-privileged-access.analyze-privileged-identity-management-audit-history-reports
 title: Analyze Privileged Identity Management audit history and reports
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Analyze Privileged Identity Management audit history and reports
   description: "Analyze Privileged Identity Management audit history and reports"
   ms.date: 10/23/2023

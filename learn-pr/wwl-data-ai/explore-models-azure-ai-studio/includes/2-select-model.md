@@ -1,21 +1,21 @@
-Selecting a language model for your own custom copilot is important as it affects how well your custom copilot works. When you develop a custom copilot with the Azure AI Studio, you build a chat application that can use language models for several purposes:
+Selecting a language model for your generative AI app is important as it affects how well your app works. When you develop a generative AI app with Azure AI Foundry, you build a chat application that can use language models for several purposes:
 
 - To understand the user question.
 - To search for relevant context.
 - To generate an answer to the user question.
 
-Within the Azure AI Studio, you can browse available language models in the model catalog. Let's explore the model catalog and the types of language models available through Azure AI.
+Within the Azure AI Foundry portal, you can browse available language models in the model catalog. Let's explore the model catalog and the types of language models available through Azure AI.
 
 ## Explore the model catalog
 
-In the Azure AI Studio, you can navigate to the model catalog to explore all available language models. Additionally, you can import any model from the Hugging Face open-source library into the model catalog.
+In the Azure AI Foundry portal, you can navigate to the model catalog to explore all available language models. Additionally, you can import any model from the Hugging Face open-source library into the model catalog.
 
 > [!Tip]
 > Hugging Face is an open-source community making models available to the public. You can find all models in their [catalog](https://huggingface.co/models?azure-portal=true). Additionally, you can explore the documentation to learn more about how individual models work, like [BERT](https://huggingface.co/docs/transformers/main/model_doc/bert?azure-portal=true).
 
-:::image type="content" source="../media/model-catalog.png" alt-text="Screenshot of the model catalog in the Azure AI Studio." lightbox="../media/model-catalog.png":::
+:::image type="content" source="../media/model-catalog.png" alt-text="Screenshot of the model catalog in the Azure AI Foundry portal." lightbox="../media/model-catalog.png":::
 
-The Azure AI Studio model catalog integrates with models from Hugging Face and other sources. Through the model catalog, you can explore, fine-tune, and deploy models.
+The Azure AI Foundry model catalog integrates with models from Hugging Face and other sources. Through the model catalog, you can explore, fine-tune, and deploy models.
 
 > [!Important]
 > Model availability differs per location, also referred to as region. Your location is specified on the AI hub level. When you create a new AI Hub, you can use the **Location helper** to specify the model you want to deploy to get a list of locations you can deploy it in. You can also explore the [model summary table and region availability](/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability?azure-portal=true) to learn more.
@@ -41,7 +41,7 @@ Some language models that are commonly used for various tasks are:
 |[**LLaMA**](https://huggingface.co/docs/transformers/main/model_doc/llama?azure-portal=true) (Large Language Model Meta AI)|A family of models created by Meta. When training LLaMA models, the focus has been on providing more training data than increasing the complexity of the models. You can use LLaMA models for *text generation* and *chat completions*.|
 |[**Phi-3-mini**](https://huggingface.co/docs/transformers/main/model_doc/phi3?azure-portal=true) (3.8B parameters variation of phi models)| A lightweight, state-of-the-art model optimized for resource-constrained environments and local inference (like on a phone), supporting long-context prompts up to 128-K tokens. It's developed with a focus on safety, alignment, and reinforcement learning from human feedback.|
 
-After selecting a task and filtering the available models that are suitable for your objective, you can review the model summary in the Azure AI Studio to take some other considerations into account:
+After selecting a task and filtering the available models that are suitable for your objective, you can review the model summary in the Azure AI Foundry to take some other considerations into account:
 
 - **Model capabilities**: Evaluate the capabilities of the language model and how well they align with your task. For example, a model like BERT is better at understanding short texts.
 - **Pretraining data**: Consider the dataset used for pretraining the language model. For example, GPT-2 is trained on unfiltered content from the internet that can result in biases.
@@ -49,13 +49,13 @@ After selecting a task and filtering the available models that are suitable for 
 - **Language support**: Explore which models offer the specific language support or multilingual capabilities that you need for your use case.
 
 > [!Tip]
-> Though the Azure AI Studio provides you with descriptions for each language model in the model catalog, you can also find more information about each model through the respective model card. The model cards are referenced in the overview of each model and hosted on [the website of Hugging Face](https://huggingface.co/models?azure-portal=true)
+> Though the Azure AI Foundry provides you with descriptions for each language model in the model catalog, you can also find more information about each model through the respective model card. The model cards are referenced in the overview of each model and hosted on [the website of Hugging Face](https://huggingface.co/models?azure-portal=true)
 
 ## Compare benchmarks across models
 
-When you're exploring language models, you can also compare the available model **benchmarks** to assess the quality of the models before you deploy and integrate a model. Benchmarks are like report cards for language models. Benchmarks help you understand how well a model performs by comparing it to other models using specific tests or tasks. The model benchmarks in the Azure AI Studio provide a curated list of the best performing models for a given task, based on benchmarking metrics.
+When you're exploring language models, you can also compare the available model **benchmarks** to assess the quality of the models before you deploy and integrate a model. Benchmarks are like report cards for language models. Benchmarks help you understand how well a model performs by comparing it to other models using specific tests or tasks. The model benchmarks in the Azure AI Foundry portal provide a curated list of the best performing models for a given task, based on benchmarking metrics.
 
-:::image type="content" source="../media/model-benchmarks.png" alt-text="Screenshot of model benchmarks in the Azure AI Studio." lightbox="../media/model-benchmarks.png":::
+:::image type="content" source="../media/model-benchmarks.png" alt-text="Screenshot of model benchmarks in the Azure AI Foundry portal." lightbox="../media/model-benchmarks.png":::
 
 Some commonly used metrics to assess the performance of language models are:
 

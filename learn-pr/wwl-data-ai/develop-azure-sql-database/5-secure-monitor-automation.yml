@@ -2,6 +2,8 @@
 uid: learn-wwl.develop-azure-sql-database.secure-monitor-automation
 title: Secure and monitor Continuous Integration and Continuous Deployment (CI/CD)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure and monitor Continuous Integration and Continuous Deployment (CI/CD)
   description: "Learn how to secure and monitor Continuous Integration and Continuous Deployment (CI/CD)."
   ms.date: 9/27/2024

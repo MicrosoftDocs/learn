@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-enterprise-security-in-hdinsight.understand-operating-system-security
 title: Understand operating system security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand operating system security
   description: "Understand operating system security"
   ms.date: 04/07/2024

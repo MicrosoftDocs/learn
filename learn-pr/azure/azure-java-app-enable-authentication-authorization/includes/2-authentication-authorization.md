@@ -2,7 +2,7 @@ Microsoft Entra ID provides authentication and authorization service by supporti
 
 In the employee-portal scenario, you learn that your organization uses Microsoft Entra ID as the Identity provider for authentication and authorization.
 
-In this unit, you'll learn about authentication, authorization, and how they're supported in Microsoft Entra ID.
+In this unit, you learn about authentication, authorization, and how they're supported in Microsoft Entra ID.
 
 ## Authentication
 

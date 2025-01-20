@@ -2,6 +2,8 @@
 uid: learn.wwl.azure-event-grid.discover-event-schemas
 title: Discover event schemas
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover event schemas
   description: "Discover event schemas"
   ms.date: 07/17/2024

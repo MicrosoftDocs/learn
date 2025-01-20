@@ -2,6 +2,8 @@
 uid: learn.wwl.share-knowledge-within-teams.share-acquired-development-teams
 title: Share acquired knowledge within development teams
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Share acquired knowledge within development teams
   description: "Share acquired knowledge within development teams"
   ms.date: 05/24/2024

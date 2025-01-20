@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-application-autoscaling-native.2-concepts-scaling
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Concepts of scalability
   description: In this module, learn the core principles of scalability
   ms.date: 01/05/2024
@@ -47,3 +49,4 @@ quiz:
         - content: "It's cheaper to duplicate a stateless application than increase the resources on its VM."
           isCorrect: true
           explanation: "Correct. While a stateless application can be vertically scaled, the cost of adding more resources to a VM surpasses the cost of duplicating the same VM."
+

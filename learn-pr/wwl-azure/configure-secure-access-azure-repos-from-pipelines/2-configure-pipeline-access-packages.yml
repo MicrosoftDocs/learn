@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-secure-access-azure-repos-from-pipelines.configure-pipeline-access-packages
 title: Configure pipeline access to packages
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure pipeline access to packages
   description: "Configure pipeline access to packages."
   ms.date: 1/25/2023

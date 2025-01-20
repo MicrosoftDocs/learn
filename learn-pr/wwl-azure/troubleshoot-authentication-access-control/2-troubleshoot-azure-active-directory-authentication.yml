@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-authentication-access-control.troubleshoot-azure-ad-authentication
 title: Troubleshoot Microsoft Entra authentication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot Microsoft Entra authentication
   description: "Troubleshoot Microsoft Entra authentication"
   ms.date: 04/27/2023
@@ -13,3 +15,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-troubleshoot-azure-active-directory-authentication.md)]
+

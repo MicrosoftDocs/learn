@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure-netapp-files-with-vmware-solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Using Azure NetApp Files with Azure VMware Solution
   description: This module helps you understand Azure NetApp Files and how to use it with the Azure VMware Solution. 
   ms.date: 07/03/2024

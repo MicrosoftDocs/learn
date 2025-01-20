@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-group-policy-objects.define-domain-based-gpos
 title: Define domain-based GPOs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Define domain-based GPOs
   description: "Define domain-based GPOs"
   ms.date: 04/17/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-app-service-deployment-slots.swap
 title: Swap deployment slots
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Swap deployment slots
   description: "Swap deployment slots"
   ms.date: 06/10/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-defender-windows-client.explore-windows-defender-firewall-advanced-security
 title: Explore Windows Defender Firewall with Advanced Security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Windows Defender Firewall with Advanced Security
   description: "Explore Windows Defender Firewall with Advanced Security"
   ms.date: 05/10/2023

@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-ip-addressing-for-azure.4-plan-design-ip-addressing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan IP addressing for your networks
   description: Plan IP addressing for your networks
   ms.date: 10/10/2024
@@ -11,3 +13,4 @@ title: Plan IP addressing for your networks
 durationInMinutes: 7
 content: |
   [!include[](includes/4-plan-design-ip-addressing.md)]
+

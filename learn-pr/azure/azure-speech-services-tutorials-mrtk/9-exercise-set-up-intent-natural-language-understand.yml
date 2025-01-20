@@ -2,6 +2,8 @@
 uid: learn.azure.azure-speech-services-tutorials-mrtk.9-exercise-set-up-intent-natural-language-understand
 title: Exercise - Set up intent and natural language understanding
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up intent and natural language understanding
   description: Exercise on Set up intent and natural language understanding
   author: marlenaklein-msft
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 9
 content: |
   [!include[](includes/9-exercise-set-up-intent-natural-language-understand.md)]
+

@@ -7,7 +7,7 @@ Once you create an Azure AI service resource, you can build applications using t
 Studio interfaces provide a friendly user interface to explore Azure AI services. There are different studios for different Azure AI services, such as Vision Studio, Language Studio, Speech Studio, and the Content Safety Studio. You can test out Azure AI services using the samples provided, or experiment with your own content. A studio-based approach allows you to explore, demo, and evaluate Azure AI services regardless of your experience with AI or coding.
 
 > [!NOTE]
-> In addition to individual studios for individual Azure AI services, Microsoft Azure has another studio,  **Azure AI Studio**, which combines multiple Azure AI services into one platform. Developers can use the web platform to create AI applications with the latest APIs and models. Azure AI Studio is covered in its own module: [Introduction to Azure AI Studio](/training/modules/introduction-to-azure-ai-studio/).
+> In addition to studios for individual Azure AI services, Microsoft Azure has another portal, [**Azure AI Foundry portal**](https://ai.azure.com/), which combines access to multiple Azure AI services and generative AI models into one user interface.
 
 ## Associate the AI service resource
 Before you can use an AI service resource, you must associate it with the studio you want to use on the Settings page. Select the resource, and then select **Use Resource**. You are then ready to explore the Azure AI service within the studio.

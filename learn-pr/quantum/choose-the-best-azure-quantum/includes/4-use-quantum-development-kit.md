@@ -3,44 +3,38 @@ In this unit, you'll learn how to use the Quantum Development Kit (QDK) extensio
 
 ## Install the required tools
 
-1. Install [Visual Studio Code](https://code.visualstudio.com/) or open [VS Code for the Web](https://vscode.dev/quantum).
-2. Install the [Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
-3. If you want to run your programs on real hardware, you also need:
+1. Install [Visual Studio Code](https://code.visualstudio.com/).
+1. Install the [Azure Quantum Development Kit](https://marketplace.visualstudio.com/items?itemName=quantum.qsharp-lang-vscode) extension.
+    - You can also open [Visual Studio Code on the Web](https://vscode.dev/quantum), which already includes the Quantum Development Kit extension.
+1. If you want to run your programs on real hardware, you also need:
 
     - An Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=academic-15963-cxa) before you begin.
     - An Azure Quantum workspace.
-
-    > [!TIP]
-    > If you have an Azure Quantum workspace, you can benefit from **USD500 free** in Azure Quantum Credits when you submit your Q# programs to Azure Quantum.
 
 ## Create and run a Q# program in Visual Studio Code
 
 The QDK includes a set of Q# samples that you can use to learn more about Q# and quantum computing. To view the samples, open a new Q# file and type `sample`, then select the sample you want to view from the list of options.
 
 1. Open Visual Studio Code and select **File** > **New Text File** to create a new file.
-1. Save the file as `RandomNum.qs`. This file will contain the Q# code for your program.
-1. Copy and save the following code in the `RandomNum.qs` file.
+1. Save the file as `Main.qs`. This file will contain the Q# code for your program.
+1. Copy and save the following code in the `Main.qs` file.
 
     ```qsharp
-    namespace Sample {
-    
-        @EntryPoint()
-        operation RandomBit() : Result {
-            // Qubits are only accessible for the duration of the scope where they
-            // are allocated and are automatically released at the end of the scope.
-            use qubit = Qubit();
-    
-            // Set the qubit in superposition by applying a Hadamard transformation.
-            H(qubit);
-    
-            // Measure the qubit. There is a 50% probability of measuring either 
-            // `Zero` or `One`.
-            let result = M(qubit);
-    
-            // Reset the qubit so it can be safely released.
-            Reset(qubit);
-            return result;
-        }
+    operation Main() : Result {
+        // Qubits are only accessible for the duration of the scope where they
+        // are allocated and are automatically released at the end of the scope.
+        use qubit = Qubit();
+
+        // Set the qubit in superposition by applying a Hadamard transformation.
+        H(qubit);
+
+        // Measure the qubit. There is a 50% probability of measuring either 
+        // `Zero` or `One`.
+        let result = M(qubit);
+
+        // Reset the qubit so it can be safely released.
+        Reset(qubit);
+        return result;
     }
     ```
 
@@ -51,12 +45,11 @@ The QDK includes a set of Q# samples that you can use to learn more about Q# and
 
 ### Run the program locally
 
-1. To test run your program locally on the built-in simulator, select **Run Q# File** from the play icon drop-down in the top-right, or press **Ctrl+F5**. Your output will appear in the debug console.
-1. To debug your program before submitting it to Azure Quantum, select **Debug Q# file** from the play icon, or **press F5**. Use the debugging controls at the top to step over, into, and out of the code. 
+To run your program on the built-in simulator, click **Run** above the `Main` operation or press **Ctrl+F5**. Your output will appear in the debug console.
 
 ### Connect to Azure Quantum and submit your job
 
-If you have an Azure Quantum workspace, you can connect to it from VS Code and submit your Q# programs to Azure Quantum. For this example, you submit the `RandomNum.qs` program to the Rigetti simulator.
+If you have an Azure Quantum workspace, you can connect to it from VS Code and submit your Q# programs to Azure Quantum. For this example, you submit the `Main.qs` program to the Rigetti simulator.
 
 1. Open the **QUANTUM WORKSPACES** section in the **Explorer** view of the VS Code sidebar.
 1. Select **Add an existing workspace** and follow the prompts to connect to your preferred directory, subscription, and workspace. 

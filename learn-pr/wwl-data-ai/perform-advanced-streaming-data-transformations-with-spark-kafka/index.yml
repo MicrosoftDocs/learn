@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight
   description: "Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight"
   ms.date: 04/07/2024
@@ -47,3 +49,4 @@ units:
 - learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.summary
 badge:
   uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.badge
+

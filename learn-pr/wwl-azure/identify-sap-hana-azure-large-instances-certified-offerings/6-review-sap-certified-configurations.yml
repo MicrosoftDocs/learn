@@ -2,6 +2,8 @@
 uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.review-sap-certified-configurations
 title: Review SAP-certified configurations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review SAP-certified configurations
   description: "Review SAP-certified configurations"
   ms.date: 07/07/2022

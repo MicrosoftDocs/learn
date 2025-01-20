@@ -2,6 +2,8 @@
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: In this unit, we create interactive questions that validate if the learner has understood the learning objectives
   ms.date: 07/10/2024
@@ -48,3 +50,4 @@ quiz:
       explanation: "IoT Edge Runtime installs and updates workloads on the device."
     
     
+

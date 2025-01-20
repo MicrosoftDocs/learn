@@ -11,8 +11,8 @@ Distributed programs also help alleviate subsystem bottlenecks. For instance, I/
 ***
 ### References
 
-1. _Y. Solihin (2009). [Fundamentals of Parallel Computer Architecture](https://sites.google.com/site/solihinbooks/fundamentals-of-parallel-computer-architecture/slides) Solihin Books_
+1. _Y. Solihin (2009). [Fundamentals of Parallel Computer Architecture](https://books.google.com.sg/books/about/Fundamentals_of_Parallel_Multicore_Archi.html?id=G2fmCgAAQBAJ&redir_esc=y) Solihin Books_
 2. _[Apache Hadoop](http://hadoop.apache.org/)_
 
-[^1]: <https://sites.google.com/site/solihinbooks/fundamentals-of-parallel-computer-architecture/slides> "Y. Solihin (2009). *Fundamentals of Parallel Computer Architecture* Solihin Books"
+[^1]: <https://books.google.com.sg/books/about/Fundamentals_of_Parallel_Multicore_Archi.html?id=G2fmCgAAQBAJ&redir_esc=y> "Y. Solihin (2009). *Fundamentals of Parallel Computer Architecture* Solihin Books"
 [^2]: <http://hadoop.apache.org/> "Apache Hadoop"

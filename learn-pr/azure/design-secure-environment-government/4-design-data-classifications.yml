@@ -2,6 +2,8 @@
 uid: learn.azure.design-secure-environment-government.4-design-data-classifications
 title: Design a conceptual architecture with private and hybrid cloud deployment models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a conceptual architecture with private and hybrid cloud deployment models
   description: Overview of the available services on Azure for protecting data based on a typical data classification.
   ms.date: 05/04/2023

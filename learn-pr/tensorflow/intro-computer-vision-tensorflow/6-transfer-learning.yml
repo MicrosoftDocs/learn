@@ -2,6 +2,8 @@
 uid: learn.tensorflow.intro-computer-vision.transfer-learning
 title: Pretrained models and transfer learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Pretrained models and transfer learning
   description: Learn how to use models pre-trained on large datasets, and how to train our own models using them.
   author: shwars
@@ -31,4 +33,5 @@ quiz:
         - content: "less than 1000"
           isCorrect: false
           explanation: "Number of classes in pre-trained network is not important since we are training our own final classifier"
+
 

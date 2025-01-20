@@ -1,15 +1,15 @@
 
-So now that there's a basic understanding of plugins, capabilities, and how the user interacts with Microsoft Copilot for Security through prompts, it’s worth taking a look under the hood to see how these components come together to process a prompt request and help security analysts.
+So now that there's a basic understanding of plugins, capabilities, and how the user interacts with Microsoft Security Copilot through prompts, it’s worth taking a look under the hood to see how these components come together to process a prompt request and help security analysts.
 
 ### Process flow
 
 When a user submits a prompt, Copilot processes that prompt to generate the best possible response. The diagram that follows illustrates, at a high level, steps that Copilot takes to process the prompt and generate a response.
 
-:::image type="content" source="../media/copilot-how-it-works.png" lightbox="../media/copilot-how-it-works.png" alt-text="Diagram illustrating how Microsoft Copilot for Security processes a prompt request.":::
+:::image type="content" source="../media/copilot-how-it-works-v2.png" lightbox="../media/copilot-how-it-works-v2.png" alt-text="Diagram illustrating how Microsoft Security Copilot processes a prompt request.":::
 
 1. Submit a prompt: The process starts when a user submits a prompt in the prompt bar.
 
-1. Orchestrator: Copilot for Security sends the information to the Copilot backend referred to as the orchestrator. The orchestrator is Copilot’s system for composing capabilities together to answer a user’s prompt. It determines the initial context and builds a plan using all the available capabilities (skills).
+1. Orchestrator: Security Copilot sends the information to the Copilot backend referred to as the orchestrator. The orchestrator is Copilot’s system for composing capabilities together to answer a user’s prompt. It determines the initial context and builds a plan using all the available capabilities (skills).
 
 1. Build context: Once a plan is defined and built, Copilot executes that plan to get the required data context to answer the prompt.
 

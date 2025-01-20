@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/28/2023
+  ms.date: 11/26/2024
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -16,14 +16,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "The security operations analyst has found an interesting event, what should be done to mark it for further review?"
+  - content: "The security operations analyst discovered an interesting event, what should be done to mark it for further review?"
     choices:
     - content: "Tag"
       isCorrect: false
-      explanation: "Incorrect.  You can Flag events."
+      explanation: "Incorrect. You can Flag events."
     - content: "Highlight"
       isCorrect: false
-      explanation: "Incorrect.  You can Flag events."
+      explanation: "Incorrect. You can Flag events."
     - content: "Flag"
       isCorrect: true
       explanation: "Correct. You can Flag events."
@@ -31,13 +31,13 @@ quiz:
     choices:
     - content: "Client behavior blocking."
       isCorrect: false
-      explanation: "Incorrect.  This is used with Defender AV."
+      explanation: "Incorrect. This is used with Defender AV."
     - content: "EDR in block mode"
       isCorrect: true
-      explanation: "Correct.  EDR in Block allows for blocking even when third party AV is used."
+      explanation: "Correct. EDR in Block allows for blocking even when third party AV is used."
     - content: "Feedback-loop blocking"
       isCorrect: false
-      explanation: "Incorrect.  This is used with Defender AV."
+      explanation: "Incorrect. This is used with Defender AV."
   - content: "A Windows 10 Device doesn't appear in the device list, what could be the problem?"
     choices:
     - content: "The Device was renamed."
@@ -46,6 +46,6 @@ quiz:
     - content: "The Device is missing the latest KBs"
       isCorrect: false
       explanation: "Incorrect. KBs has no impact on the Device list."
-    - content: "The Device hasn't had alerts in the past 30 days."
+    - content: "The Device had no alerts in the past 30 days."
       isCorrect: true
-      explanation: "Correct.  You can adjust the time setting to find the device."
+      explanation: "Correct. You can adjust the time setting to find the device."

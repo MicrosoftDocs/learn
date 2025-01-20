@@ -10,7 +10,7 @@ By the end of this module, you'll:
 
 - Understand how GitHub Copilot can help you code by offering autocomplete-style suggestions.
 - Understand the various ways to trigger GitHub Copilot.
-- Comprehend the differences among GitHub Copilot Individual, Business, and Enterprise.
+- Comprehend the differences among GitHub Copilot Free, Pro, Business, and Enterprise.
 - Know how to configure GitHub Copilot.
 - Know how to troubleshoot GitHub Copilot.
 
@@ -18,6 +18,3 @@ By the end of this module, you'll:
 
 - GitHub account
 - Basic understanding of GitHub fundamentals
-
-> [!IMPORTANT]
-> When you sign up for the GitHub Copilot free trial, you're asked to submit a form of payment, even though you aren't charged until the free trial is over. To avoid being charged, be sure to cancel before the 30 days are over.

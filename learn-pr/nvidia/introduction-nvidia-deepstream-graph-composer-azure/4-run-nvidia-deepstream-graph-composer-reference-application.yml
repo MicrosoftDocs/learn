@@ -2,6 +2,8 @@
 uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.4-run-nvidia-deepstream-graph-composer-reference-application
 title: Exercise - Run an NVIDIA DeepStream Graph Composer reference application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Run an NVIDIA DeepStream Graph Composer reference application
   description: Exercise - Run an NVIDIA DeepStream Graph Composer reference application.
   author: toolboc
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-run-nvidia-deepstream-graph-composer-reference-application.md)]
+

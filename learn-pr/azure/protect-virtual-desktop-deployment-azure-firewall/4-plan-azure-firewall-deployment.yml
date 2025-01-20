@@ -2,6 +2,8 @@
 uid: learn.protect-virtual-desktop-deployment-azure-firewall.plan-azure-firewall-deployment
 title: Plan Azure Firewall deployment 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Plan Azure Firewall deployment
   description: Plan Azure Firewall deployment
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-plan-azure-firewall-deployment.md)]
+

@@ -57,7 +57,7 @@ The following annotated excerpt from a `pom.xml` file demonstrates some of the r
   <version>2.13.0</version>  
   <configuration> 
     <schemaVersion>v2</schemaVersion>  
-    <subscriptionId>11111111-1111-1111-1111-111111111111</subscriptionId>  
+    <subscriptionId>aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e</subscriptionId>  
     <resourceGroup>learn-9c627899-58ae-4ef5-9630-3336ec7bce0c</resourceGroup>  
     <appName>MyWebApp-1610102860270</appName>  
     <pricingTier>S1</pricingTier>  

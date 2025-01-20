@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: introduction-azure-private-link
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Introduction to Azure Private Link"
   description: Describe how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
   manager: kumud
@@ -43,3 +45,4 @@ units:
 - learn.introduction-azure-private-link.6-summary
 badge:
   uid: learn.introduction-azure-private-link.badge
+

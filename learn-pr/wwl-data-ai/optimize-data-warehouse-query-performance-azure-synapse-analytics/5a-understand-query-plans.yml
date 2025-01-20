@@ -2,6 +2,8 @@
 uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.understand-query-plans
 title: Understand query plans
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand query plans
   description: "Understand query plans"
   ms.date: 08/05/2022

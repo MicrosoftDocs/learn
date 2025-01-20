@@ -2,6 +2,8 @@
 uid: learn.pitch-your-product-prototype.5-demonstrate-your-prototype
 title: Demonstrate your prototype
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Demonstrate your prototype
   description: This unit teaches you how to demonstrate a prototype.
   author: czhu89

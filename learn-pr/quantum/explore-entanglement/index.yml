@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.quantum.explore-entanglement
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Teleport a qubit using entanglement and the Quantum Development Kit
   description: Teleport a qubit using entanglement and the Quantum Development Kit
   ms.date: 04/25/2024

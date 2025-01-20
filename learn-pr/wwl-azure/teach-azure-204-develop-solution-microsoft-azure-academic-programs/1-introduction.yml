@@ -2,6 +2,8 @@
 uid: learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-programs.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 06/02/2023

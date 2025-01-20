@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-government.9-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Azure Government - module summary
   ms.date: 08/23/2023

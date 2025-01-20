@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.5-configure-vcenter-site-pairing
 title: Configure vCenter site pairing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Configure vCenter site pairing
   description: This unit details the steps to configure vCenter site pairing.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-configure-vcenter-site-pairing.md)]
+

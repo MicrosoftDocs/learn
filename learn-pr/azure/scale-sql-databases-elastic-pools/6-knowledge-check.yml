@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-scale-azure-sql-databases-elastic-pools.knowledge-check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge Check
   description: Check what you learned about SQL elastic pools.
   ms.date: 12/15/2023
@@ -37,3 +39,4 @@ quiz:
     - content: "False"
       isCorrect: false
       explanation: "Incorrect. You can add Azure SQL databases into elastic pools."
+

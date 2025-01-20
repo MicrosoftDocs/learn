@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-modernize-use-sap-workload-planning-deployment-checklist
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Modernize, use the planning and deployment checklist for SAP workloads on Azure
   description: 'Use SAP workload planning and deployment checklist through phases of the SAP on Azure migration process. Explore an introduction to very large database (VLDB) migration. The module is part of the AZ-1006 course: Migrate and Modernize SAP in the Microsoft Cloud.'
   ms.date: 01/08/2024
@@ -39,3 +41,4 @@ units:
 - learn.wwl.migrate-modernize-use-sap-workload-planning-deployment-checklist.summary
 badge:
   uid: learn.wwl.migrate-modernize-use-sap-workload-planning-deployment-checklist.badge
+

@@ -1,4 +1,4 @@
-In the previous exercise, you wrote code for your team's API to implement database operations. In this exercise, you'll test the API now that it's connected to the database.
+In the previous exercise, you wrote code for your team's API to implement database operations. In this exercise, you test the API that you connected to the database.
 
 ## Run the API
 
@@ -11,9 +11,9 @@ In the previous exercise, you wrote code for your team's API to implement databa
 1. Inspect the output from running the app, and note the following information:
 
     - EF Core echoes SQL commands as `info` log events when they execute.
-    - If the database does not already exist, the tables and indexes are defined by using SQL `CREATE` commands.
-    - If the database has not yet been seeded, `INSERT` commands are executed to add the seed data.
-    - For security, the parameter values are not echoed to the console. You can change this setting by using [EnableSensitiveDataLogging](/ef/core/logging-events-diagnostics/extensions-logging#sensitive-data).
+    - If the database doesn't already exist, the tables and indexes are defined by using SQL `CREATE` commands.
+    - If the database isn't seeded yet, `INSERT` commands are executed to add the seed data.
+    - For security, the parameter values aren't echoed to the console. You can change this setting by using [EnableSensitiveDataLogging](/ef/core/logging-events-diagnostics/extensions-logging#sensitive-data).
 
 1. Use SQLite Explorer to explore the seeded database. Each table has data.
 
@@ -34,7 +34,7 @@ Now that the API is running, test the API to see if the operations work as expec
 
 ## Test CRUD operations
 
-In the following steps, you'll use the Swagger UI to test each of the API's operations the way that a client application would. After each operation, inspect the database in SQLite Explorer to see the database changes as they happen.
+In the following steps, you use the Swagger UI to test each of the API's operations the way that a client application would. After each operation, inspect the database in SQLite Explorer to see the database changes as they happen.
 
 1. Request the full list of pizzas:
 
@@ -78,7 +78,7 @@ In the following steps, you'll use the Swagger UI to test each of the API's oper
 
 1. Add a new pizza:
 
-    1. Scroll up to the **POST /Pizza** operation (located between the **GET** operations you just used) and expand it, then select the **Try it out** button.
+    1. Scroll up to the **POST /Pizza** operation (located between the **GET** operations you used) and expand it, then select the **Try it out** button.
     1. In the **Request body** text box, paste the following JSON:
 
         ```json
@@ -145,7 +145,7 @@ In the following steps, you'll use the Swagger UI to test each of the API's oper
     }
     ```
 
-1. You've realized that a smoked brisket pizza with Alfredo sauce and pineapple is a terrible idea.
+1. You just realized a smoked brisket pizza with Alfredo sauce and pineapple is a terrible idea.
 
     Delete the pizza:
 
@@ -160,4 +160,4 @@ In the following steps, you'll use the Swagger UI to test each of the API's oper
 > [!TIP]
 > You can experiment with the app. Whenever you'd like to start with a fresh database, stop the app and delete the *ContosoPizza.db*, *.db-shm*, and *.db-wal* files. Then, run the app again.
 
-Great work! The app is working with your database as expected! In the next unit, you'll scaffold entity models from an existing database.
+Great work! The app is working with your database as expected! In the next unit, you scaffold entity models from an existing database.

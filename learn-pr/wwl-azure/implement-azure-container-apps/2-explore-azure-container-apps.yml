@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-azure-container-apps.explore-azure-container-apps
 title: Explore Azure Container Apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Container Apps
   description: "Explore Azure Container Apps"
   ms.date: 07/16/2024

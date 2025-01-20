@@ -2,11 +2,13 @@
 uid: learn.wwl.translate-speech-speech-service.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 08/20/2024
+  ms.author: berryivor
+  ms.date: 12/13/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -47,3 +49,4 @@ quiz:
     - content: "When translating to one or more target languages."
       isCorrect: false
       explanation: "Incorrect. You can only use event-based synthesis when translating to a single target language."
+

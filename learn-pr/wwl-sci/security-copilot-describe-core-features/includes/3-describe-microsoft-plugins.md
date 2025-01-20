@@ -1,5 +1,5 @@
 
-Microsoft Copilot for Security integrates with various sources, including Microsoft's own security products, non-Microsoft vendors, open-source intelligence feeds, websites, and knowledge bases to generate guidance that’s specific to your organization. 
+Microsoft Security Copilot integrates with various sources, including Microsoft's own security products, non-Microsoft vendors, open-source intelligence feeds, websites, and knowledge bases to generate guidance that’s specific to your organization. 
 
 One of the mechanisms by which Copilot integrates to these various sources is through plugins. Plugins extend Copilot’s capabilities. In this unit, you'll explore the Microsoft plugins.
 
@@ -7,7 +7,15 @@ One of the mechanisms by which Copilot integrates to these various sources is th
 
 Microsoft plugins give Copilot access to information and capabilities from within your organization's Microsoft products. The image that follows shows only a subset of the available Microsoft plugins and the order in which the plugins are listed may vary from what is displayed in the product.
 
-:::image type="content" source="../media/microsoft-plugins.png" lightbox="../media/microsoft-plugins.png" alt-text="Screen capture of the Manage plugins window that shows the Microsoft services.":::
+If a Copilot owner has restricted plugin access, then those plugins that have been set to restricted will show greyed out and restricted.
+
+# [Plugins](#tab/plugins)
+:::image type="content" source="../media/microsoft-plugins.png" lightbox="../media/microsoft-plugins.png" alt-text="Screen capture of plugins page, showing Microsoft plugins.":::
+
+# [Restricted plugins](#tab/restricted-plugins)
+:::image type="content" source="../media/restricted-plugins.png" lightbox="../media/restricted-plugins.png" alt-text="Screen capture of the Manage plugins window that shows the Microsoft services.":::
+
+---
 
 Generally speaking, Microsoft plugins in Copilot use the OBO (on behalf of) model – meaning that  Copilot knows that a customer has licenses to specific products and is automatically signed into those products. Copilot can then access the specific products when the plugin is enabled and, where applicable, parameters are configured. Some Microsoft plugins that require setup, as noted by the settings icon or the setup button, may include configurable parameters that are used for authentication in-lieu of the OBO model.
 
@@ -15,7 +23,7 @@ To view the system capabilities supported by the enabled plugins, you select the
 
 :::image type="content" source="../media/prompts-to-system-capabilities.png" lightbox="../media/prompts-to-system-capabilities.png" alt-text="Screen capture of the prompt icon that when selected opens the window to select system capabilities.":::
 
-The sections that follow provide brief descriptions for many of the available Microsoft plugins. Microsoft Copilot for Security is continually adding support for Microsoft products.
+The sections that follow provide brief descriptions for many, but not all, of the available Microsoft plugins. Microsoft Security Copilot is continually adding support for Microsoft products.
 
 #### Azure Firewall (Preview)
 
@@ -25,9 +33,9 @@ The Azure Firewall integration with Copilot helps analysts perform detailed inve
 
 To use the Azure Firewall integration with Copilot:
 
-- The Azure Firewalls to be used with Copilot for Security must be configured with resource specific structured logs for IDPS and these logs must be sent to a Log Analytics workspace.
-- The users using the Azure Firewall plugin in Copilot for Security must have the appropriate Azure role-based access control (RBAC) roles to access the Firewall and associated Log Analytics workspace.
-- The Azure Firewall plugin in Copilot for Security must be turned on.
+- The Azure Firewalls to be used with Security Copilot must be configured with resource specific structured logs for IDPS and these logs must be sent to a Log Analytics workspace.
+- The users using the Azure Firewall plugin in Security Copilot must have the appropriate Azure role-based access control (RBAC) roles to access the Firewall and associated Log Analytics workspace.
+- The Azure Firewall plugin in Security Copilot must be turned on.
 
 Azure Firewall capabilities in Copilot are built-in prompts that you can use but you can also enter your own prompts based on the capabilities supported.
 
@@ -41,11 +49,11 @@ Example prompts include:
 
 #### Azure Web Application Firewall (Preview)
 
-Azure Web Application Firewall (WAF) integration in Copilot for Security enables deep investigation of Azure WAF events. It can help you investigate WAF logs triggered by Azure WAF in a matter of minutes and provide related attack vectors using natural language responses at machine speed. It provides visibility into your environment’s threat landscape. It allows you to retrieve a list of most frequently triggered WAF rules and identify the top offending IP addresses in your environment.
+Azure Web Application Firewall (WAF) integration in Security Copilot enables deep investigation of Azure WAF events. It can help you investigate WAF logs triggered by Azure WAF in a matter of minutes and provide related attack vectors using natural language responses at machine speed. It provides visibility into your environment’s threat landscape. It allows you to retrieve a list of most frequently triggered WAF rules and identify the top offending IP addresses in your environment.
 
-Copilot for Security integration is supported on both Azure WAF integrated with Azure Application Gateway and Azure WAF integrated with Azure Front Door.
+Security Copilot integration is supported on both Azure WAF integrated with Azure Application Gateway and Azure WAF integrated with Azure Front Door.
 
-To use the Azure WAF integration in Copilot, the Azure WAF plugin in Copilot for Security must be turned on and configured.
+To use the Azure WAF integration in Copilot, the Azure WAF plugin in Security Copilot must be turned on and configured.
 
 The preview standalone experience in Azure WAF can help you with:
 
@@ -66,25 +74,25 @@ Example prompts include:
 
 #### Azure AI Search (Preview)
 
-The Azure AI Search plugin allows you to connect your company’s knowledge bases or repositories to Microsoft Copilot for Security. Details on this plugin and connections to knowledge bases are described in a subsequent unit of this module.
+The Azure AI Search plugin allows you to connect your company’s knowledge bases or repositories to Microsoft Security Copilot. Details on this plugin and connections to knowledge bases are described in a subsequent unit of this module.
 
 #### Microsoft Entra
 
 Microsoft Entra is a family of multicloud identity and network access solutions that enables organizations to protect any identity and secure access to any resource. It provides a unified platform for identity and network access management, making it easier to secure identities and access to resources across multicloud and hybrid environments.
 
-Copilot for Security integrates with Microsoft Entra. With the Entra plugin enabled, security analysts can instantly get a risk summary, steps to remediate, and recommended guidance for each identity at risk, in natural language. Analysts can use Copilot to guide in the creation of a lifecycle workflow to streamline the process of creating and issuing user credentials and access rights. These and many other Entra capabilities are supported by Copilot.
+Security Copilot integrates with Microsoft Entra. With the Entra plugin enabled, security analysts can instantly get a risk summary, steps to remediate, and recommended guidance for each identity at risk, in natural language. Analysts can use Copilot to guide in the creation of a lifecycle workflow to streamline the process of creating and issuing user credentials and access rights. These and many other Entra capabilities are supported by Copilot.
 
 Microsoft Entra capabilities in Copilot are built-in prompts that you can use but you can also enter your own prompts based on the capabilities supported.
 
 :::image type="content" source="../media/entra-skills.png" lightbox="../media/entra-skills.png" alt-text="Screen capture of the Entra capabilities that can be run in the standalone experience.":::
 
-With the plugin enabled, Copilot integration with Microsoft Entra can also be experienced through the embedded experience. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe the embedded experiences of Microsoft Copilot for Security."
+With the plugin enabled, Copilot integration with Microsoft Entra can also be experienced through the embedded experience. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe the embedded experiences of Microsoft Security Copilot."
 
 #### Microsoft Intune
 
 Microsoft Intune is a cloud-based endpoint management solution. It manages user access to organizational resources and simplifies app and device management across your many devices, including mobile devices, desktop computers, and virtual endpoints.
 
-Copilot for Security integrates with Microsoft Intune. If Microsoft Intune is available in the same tenant as Copilot and the plugin is enabled, Copilot will be able to get information about your devices, apps, compliance & configuration policies, and policy assignments managed in Intune.
+Security Copilot integrates with Microsoft Intune. If Microsoft Intune is available in the same tenant as Copilot and the plugin is enabled, Copilot will be able to get information about your devices, apps, compliance & configuration policies, and policy assignments managed in Intune.
 
 To utilize the Microsoft Intune plugin, the user would need to be assigned an Intune service-specific role like the Intune Endpoint Security Manager role in addition to the role permission that grants access to Copilot.
 
@@ -108,7 +116,7 @@ Some sample prompts include:
 - How many devices were enrolled in Intune in the last 24 hours?
 - What is the hardware configuration difference between the DeviceA and DeviceB devices?
 
-With the plugin enabled, Copilot integration with Microsoft Intune can also be experienced through the embedded experience. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe the embedded experiences of Microsoft Copilot for Security."
+With the plugin enabled, Copilot integration with Microsoft Intune can also be experienced through the embedded experience. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe the embedded experiences of Microsoft Security Copilot."
 
 #### Microsoft Defender XDR
 
@@ -139,7 +147,7 @@ The Microsoft Defender XDR plugin includes capabilities that enable users to:
 
 Copilot also includes a builtin promptbook for Microsoft Defender XDR incident investigation you can use to get a report about a specific incident, with related alerts, reputation scores, users, and devices.
 
-With the plugin enabled, Copilot integration with Defender XDR can also be experienced through the embedded experience. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe the embedded experiences of Microsoft Copilot for Security."
+With the plugin enabled, Copilot integration with Defender XDR can also be experienced through the embedded experience. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe the embedded experiences of Microsoft Security Copilot."
 
 ***Natural language to KQL for Microsoft Defender***
 
@@ -169,7 +177,7 @@ To use this plugin, it's necessary to configure parameters to identify your orga
 
 Microsoft Defender Threat Intelligence (Defender TI) is a platform that streamlines triage, incident response, threat hunting, vulnerability management, and cyber threat intelligence analyst workflows when conducting threat infrastructure analysis and gathering threat intelligence.
 
-Copilot for Security integrates with Microsoft Defender TI. With the Defender TI plugin enabled, Copilot delivers information about threat activity groups, indicators of compromise (IOCs), tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape.
+Security Copilot integrates with Microsoft Defender TI. With the Defender TI plugin enabled, Copilot delivers information about threat activity groups, indicators of compromise (IOCs), tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape.
 
 Microsoft Defender TI capabilities in Copilot are built-in prompts that you can use, but you can also enter your own prompts based on the capabilities supported.
 
@@ -191,13 +199,13 @@ Builtin promptbooks that deliver information from Defender TI, include:
 
 Microsoft Purview is a comprehensive set of solutions that can help your organization govern, protect, and manage data, wherever it lives. Microsoft Purview solutions provide integrated coverage and help address the fragmentation of data across organizations, the lack of visibility that hampers data protection and governance, and the blurring of traditional IT management roles.
 
-The Purview plugin in Copilot for Security, enables you to gain valuable data and user risk insights to help identify the source of an attack and any sensitive data that may be at risk, provided you have the appropriate role permission within Microsoft Purview. Because Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer the queries, you need to have the required role permissions to access the data. Also, your organization must be licensed and onboarded to the applicable Microsoft Purview solutions.
+The Purview plugin in Security Copilot, enables you to gain valuable data and user risk insights to help identify the source of an attack and any sensitive data that may be at risk, provided you have the appropriate role permission within Microsoft Purview. Because Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer the queries, you need to have the required role permissions to access the data. Also, your organization must be licensed and onboarded to the applicable Microsoft Purview solutions.
 
 Microsoft Purview capabilities in Copilot are built-in prompts that you can use, but you can also enter your own prompts based on the capabilities supported.
 
 :::image type="content" source="../media/purview-skills.png" lightbox="../media/purview-skills.png" alt-text="Screen capture of the Purview capabilities.":::
 
-Copilot capabilities can also be experienced directly from within Purview solutions, through the embedded experience. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe the embedded experiences of Microsoft Copilot for Security."
+Copilot capabilities can also be experienced directly from within Purview solutions, through the embedded experience. The scenarios supported through the embedded experience are described in more detail in the module titled, "Describe the embedded experiences of Microsoft Security Copilot."
 
 #### Microsoft Sentinel (Preview)
 

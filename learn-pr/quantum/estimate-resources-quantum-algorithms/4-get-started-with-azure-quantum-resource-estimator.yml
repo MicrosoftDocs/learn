@@ -2,6 +2,8 @@
 uid: learn.quantum.estimate-resources-quantum-algorithms.get-started-with-azure-quantum-resource-estimator
 title: Exercise - Get started with the Azure Quantum Resource Estimator
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Get started with the Azure Quantum Resource Estimator
   description: Learn to enable the Azure Quantum Resource Estimator and how to submit a job.
   ms.date: 06/05/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/4-get-started-with-azure-quantum-resource-estimator.md)]
+

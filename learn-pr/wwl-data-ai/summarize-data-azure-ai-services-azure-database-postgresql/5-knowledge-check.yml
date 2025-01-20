@@ -2,11 +2,13 @@
 uid: learn.wwl.summarize-data-azure-ai-services-azure-database-postgresql.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
-  ms.author: rcaper
-  ms.date: 04/29/2024
+  ms.author: calopez
+  ms.date: 11/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -49,3 +51,4 @@ quiz:
     - content: "The sentence's relevance to the original text's primary idea."
       isCorrect: true
       explanation: "Correct. The rank score, a value between 0 and 1 (inclusive), indicates how relevant a sentence is to the main idea of the original document."
+

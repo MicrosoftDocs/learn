@@ -2,6 +2,8 @@
 uid: learn.wwl.creating-and-configuring-hdinsight-cluster.10-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/05/2024
@@ -35,3 +37,4 @@ quiz:
     - content: "Apache Ranger"
       isCorrect: false
       explanation: "Apache Ranger is a security feature."
+

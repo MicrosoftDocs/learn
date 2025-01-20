@@ -4,10 +4,12 @@ title: Recommend a network architecture solution based on workload requirements
 metadata:
   title: Recommend a network architecture solution based on workload requirements
   description: "Recommend a network architecture solution based on workload requirements"
-  ms.date: 10/09/2023
+  ms.date: 12/09/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
-durationInMinutes: 5
+  ms.custom:
+  - N/A
+durationInMinutes: 7
 content: |
   [!include[](includes/2-recommend-network-architecture-solution-based-workload-requirements.md)]

@@ -26,7 +26,7 @@ You can implement the soft delete feature to protect an individual blob, snapsho
 
 The following diagram shows a high-level view of the soft delete feature for containers and blobs, and blob versions.
 
-:::image type="content" source="../media/soft-delete.png" alt-text="Image that shows a high-level view of the soft delete feature as described in the text." border="false":::
+:::image type="content" source="../media/soft-delete.png" alt-text="Diagram that shows a high-level view of the soft delete feature." border="false":::
 
 There are different options for implementing soft delete and blob versioning:
 
@@ -45,7 +45,7 @@ Like soft delete, [point-in-time restore for block blobs](/azure/storage/blobs/p
 
 The following diagram shows how point-in-time restore works. One or more containers or blob ranges is restored to its previous state. The result of the process is to revert write and delete operations that occurred during the retention period. 
 
-:::image type="content" source="../media/blob-point-restore.png" alt-text="Image that shows how point-in-time restore works as described in the text." border="false":::
+:::image type="content" source="../media/blob-point-restore.png" alt-text="Diagram that shows how point-in-time restore works." border="false":::
 
 ### Things to consider when using resource locks
 

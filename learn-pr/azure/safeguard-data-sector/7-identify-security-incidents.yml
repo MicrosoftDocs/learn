@@ -2,9 +2,11 @@
 uid: learn.azure.safeguard-data-sector.7-identify-security-incidents
 title: Identify potential security incidents
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify potential security incidents
   description: Introduction to data breach notifications and Microsoft shared responsibility model.
-  ms.date: 07/25/2023
+  ms.date: 11/27/2024
   author: EliotSeattle
   ms.author: eliotgra
   ms.topic: unit

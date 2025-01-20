@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.nvidia.setup-configure-nvidia-deepstream-development
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set up and configure an NVIDIA DeepStream development environment
   description: Learn how to set up and configure an x86-based Ubuntu 18.04 system to host an NVIDIA DeepStream development environment.
   ms.date: 09/03/2024
@@ -43,3 +45,4 @@ units:
 - learn.nvidia.setup-configure-nvidia-deepstream-development.7-summary
 badge:
   uid: learn.nvidia.setup-configure-nvidia-deepstream-development.badge
+

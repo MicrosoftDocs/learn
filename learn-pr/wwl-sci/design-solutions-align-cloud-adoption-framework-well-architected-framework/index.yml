@@ -4,8 +4,8 @@ metadata:
   title: Design security solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)
   description: "You'll learn about the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF) and how you can use them to design more secure solutions."
   ms.date: 3/14/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted

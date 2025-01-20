@@ -2,6 +2,8 @@
 uid: learn.improve-sign-in-security-authenticator.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: "Check how well you understand security for different authentication methods for Microsoft Entra ID. Test your understanding of how to switch users to Microsoft Authenticator push notifications for better security."
@@ -68,3 +70,4 @@ quiz:
     - content: "Set the snooze duration to 0."
       isCorrect: true
       explanation: "Correct. The snooze duration determines how many days a user can postpone the setup of Microsoft Authenticator. If you set it to **0** days, users are prompted to set up Microsoft Authenticator every time they sign in. "
+

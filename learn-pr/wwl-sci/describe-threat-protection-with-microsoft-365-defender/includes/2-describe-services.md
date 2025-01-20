@@ -9,10 +9,10 @@ The Microsoft Defender XDR suite includes:
 - **Microsoft Defender for Identity** - Microsoft Defender for Identity uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 - **Microsoft Defender for Cloud Apps** - Microsoft Defender for Cloud Apps delivers full protection for software as a service (SaaS) applications. Defender for Cloud apps is a cloud access security broker that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 
-Microsoft Defender XDR now also **integrates with Microsoft Copilot for Security**. Integration with Copilot for Security can be experienced through the standalone and embedded experiences.
+Microsoft Defender XDR now also **integrates with Microsoft Security Copilot**. Integration with Security Copilot can be experienced through the standalone and embedded experiences.
 
 The information and insights surfaced by the Microsoft Defender XDR suite of solutions are centralized in the **Microsoft Defender portal**, which delivers a unified security operations platform. As a unified security operations platform, the Microsoft Defender portal now includes information and insights from other Microsoft security products, including Microsoft Sentinel and Microsoft Defender for Cloud.
 
 Users also access the **Microsoft Threat Intelligence** solution from the Microsoft Defender XDR portal. Microsoft Defender TI aggregates and enriches critical threat information to help security analyst triage, incident response, threat hunting, and vulnerability management workflows.
 
-Throughout the rest of this module, you'll learn more about the solutions that are part of Microsoft Defender XDR, the Microsoft Defender portal, the integration of Microsoft Defender XDR with Microsoft Copilot for Security, and Microsoft Defender Threat Intelligence.
+Throughout the rest of this module, you'll learn more about the solutions that are part of Microsoft Defender XDR, the Microsoft Defender portal, the integration of Microsoft Defender XDR with Microsoft Security Copilot, and Microsoft Defender Threat Intelligence.

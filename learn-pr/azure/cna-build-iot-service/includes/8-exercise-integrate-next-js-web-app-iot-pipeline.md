@@ -11,7 +11,7 @@ In this exercise, you:
 To perform this exercise, you need:
 
 - An Azure subscription.
-- A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant. The tenant must be associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- A Microsoft account assigned to the _Owner_ or _Contributor_ role in the Azure subscription.
 - To complete the exercise units **Set up Azure Cosmos DB** and **Integrate Azure Cosmos DB with the IoT data pipeline**.
 
 In this exercise, you use an existing Next.js application code that retrieves IoT telemetry data from the Cosmos DB collection you implemented in the previous exercise unit of this module.

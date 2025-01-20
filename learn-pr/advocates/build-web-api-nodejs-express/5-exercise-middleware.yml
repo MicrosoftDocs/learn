@@ -2,6 +2,8 @@
 uid: learn.azure.build-web-api-nodejs-express.7-exercise-middleware
 title: Exercise - Manage request lifecycle
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Manage request lifecycle
   description: Use middleware to manage a request lifecycle. Learn how to examine the request for valid credentials before you construct a response.
   author: diberry
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/5-exercise-middleware.md)]
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.iot.introduction-to-azure-digital-twins
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Digital Twins
   description: Learn about Azure Digital Twins and evaluate whether it's appropriate for digitally representing your IoT environment.
   manager: lizross
@@ -45,3 +47,4 @@ units:
 - learn.iot.introduction-to-azure-digital-twins.summary
 badge:
   uid: learn.iot.introduction-to-azure-digital-twins.badge
+

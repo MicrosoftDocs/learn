@@ -2,6 +2,8 @@
 uid: learn.wwl.load-data-into-relational-data-warehouse.load-staging-tables
 title: Load staging tables
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Load staging tables
   description: "Load staging tables"
   ms.date: 10/27/2023

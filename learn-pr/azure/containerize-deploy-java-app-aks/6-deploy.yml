@@ -2,6 +2,8 @@
 uid: learn.containerize-deploy-java-app-aks.deploy
 title: Deploy the container image to Azure Kubernetes Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: Deploy the container image to Azure Kubernetes Service
   title: Deploy the container image to Azure Kubernetes Service
   description: Deploy the container image to Azure Kubernetes Service
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 9
 content: |
   [!include[](includes/6-deploy.md)]
+

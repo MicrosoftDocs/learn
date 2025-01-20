@@ -2,6 +2,8 @@
 uid: learn.wwl.security-monitoring-and-governance.integrate-github-advanced-security-microsoft-defender
 title: Integrate GitHub Advanced Security with Microsoft Defender for Cloud
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Integrate GitHub Advanced Security with Microsoft Defender for Cloud
   description: "Integrate GitHub Advanced Security with Microsoft Defender for Cloud"
   ms.date: 05/13/2024

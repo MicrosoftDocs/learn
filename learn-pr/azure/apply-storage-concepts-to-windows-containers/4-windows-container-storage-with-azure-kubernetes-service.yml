@@ -2,6 +2,8 @@
 uid: learn.azure.apply-storage-concepts-to-windows-containers.windows-container-storage-with-azure-kubernetes-service
 title: Windows container storage with Azure Kubernetes Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Windows container storage with Azure Kubernetes Service
   description: In the previous unit, we learned how Kubernetes manages and orchestrates your container-based applications and their associated storage components. We also learned about the Kubernetes cluster architecture that consists of a control plane for core services, and nodes for application resources.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/4-windows-container-storage-with-azure-kubernetes-service.md)]
+

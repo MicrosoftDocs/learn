@@ -4,8 +4,8 @@ metadata:
   title: Design solutions for securing Microsoft 365
   description: "You learn how to design security solutions for Exchange, Sharepoint, OneDrive, and Teams."
   ms.date: 9/06/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted

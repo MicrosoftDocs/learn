@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-data-science-virtual-machine
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and connect to a Data Science Virtual Machine
   description: Learn how to create and connect to an Azure-based virtual machine preloaded with data science and machine learning tools.
   ms.date: 06/02/2023
@@ -36,3 +38,4 @@ units:
   - learn.azure.intro-to-data-science-virtual-machine.summary
 badge:
   uid: learn.azure.intro-to-data-science-virtual-machine.badge
+

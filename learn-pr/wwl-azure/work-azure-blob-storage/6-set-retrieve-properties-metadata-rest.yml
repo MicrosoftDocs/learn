@@ -2,6 +2,8 @@
 uid: learn.wwl.work-azure-blob-storage.set-retrieve-properties-metadata-for-blob-resources-by-using-rest
 title: Set and retrieve properties and metadata for blob resources by using REST
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Set and retrieve properties and metadata for blob resources by using REST
   description: "Set and retrieve properties and metadata for blob resources by using REST"
   ms.date: 07/12/2024

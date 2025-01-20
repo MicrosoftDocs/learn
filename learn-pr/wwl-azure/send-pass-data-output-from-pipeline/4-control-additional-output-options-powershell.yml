@@ -2,6 +2,8 @@
 uid: learn.wwl.send-pass-data-output-from-pipeline.control-additional-output-options-powershell
 title: Control additional output options in PowerShell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Control additional output options in PowerShell
   description: "Control additional output options in PowerShell"
   ms.date: 01/29/2024

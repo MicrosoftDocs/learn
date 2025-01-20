@@ -2,6 +2,8 @@
 uid: learn.wwl.create-configure-group-policy-objects-active-directory.define-domain-based
 title: Define domain-based Group Policy Objects
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Define domain-based Group Policy Objects
   description: "Define domain-based Group Policy Objects"
   ms.date: 09/22/2024

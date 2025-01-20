@@ -4,7 +4,7 @@ title: Troubleshoot ExpressRoute connection issues
 metadata:
   title: Troubleshoot ExpressRoute connection issues
   description: "Troubleshoot ExpressRoute connection issues"
-  ms.date: 11/02/2023
+  ms.date: 12/06/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
@@ -27,14 +27,14 @@ quiz:
     - content: "Circuit number."
       isCorrect: false
       explanation: "Incorrect. There's no circuit number property."
-  - content: "An engineer wants to know if their service provider has made any changes that affect their circuit. Where can they check for this information?"
+  - content: "An engineer wants to know if their service provider has any changes that affect their circuit. What is the quickest way to check?"
     choices:
     - content: "Check the **Last modified by** property of the relevant peering."
       isCorrect: true
       explanation: "Correct. Azure resources record information about changes, in this case, who made the last change."
     - content: "Call the service provider and ask them."
       isCorrect: false
-      explanation: "Incorrect. This might get you the correct answer, but it isn't the quickest way to check."
+      explanation: "Incorrect. There is a better answer."
     - content: "Raise a support ticket with Microsoft."
       isCorrect: false
-      explanation: "Incorrect. This might get you the correct answer, but it isn't the quickest way to check."
+      explanation: "Incorrect. There is a better answer."

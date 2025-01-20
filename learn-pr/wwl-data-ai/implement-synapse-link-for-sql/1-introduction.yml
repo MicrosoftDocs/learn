@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-synapse-link-for-sql.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 02/10/2023

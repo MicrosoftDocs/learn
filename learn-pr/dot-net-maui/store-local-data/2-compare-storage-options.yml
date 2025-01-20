@@ -4,8 +4,8 @@ title: Compare storage options
 metadata:
   unitType: unit
   title: "Compare storage options"
-  description: "Describe the options available for storing data locally in a .NET MAUI application"
-  ms.date: 10/13/2023
+  description: "Describe the options available for storing data locally in a .NET Multi-platform App UI (MAUI) application"
+  ms.date: 11/11/2024
   author: codemillmatt 
   ms.author: masoucou
   ms.topic: unit
@@ -23,7 +23,7 @@ quiz:
       explanation: "No. The App Sandbox doesn't include a Music folder by default. Instead you need to use a system provided folder."
     - content: "Documents"
       isCorrect: true
-      explanation: "This is the correct answer. You use the Documents folder to store user generated content."
+      explanation: "Correct. You use the Documents folder to store user generated content."
     - content: "Library"
       isCorrect: false
       explanation: "No. The Library folder is designed to store app-generated data. The music content is data that the user specifically asks to save. You would use the Library folder for files created without any direct action from the user. Use the Documents folder for this scenario."
@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "Preferences."
       isCorrect: true
-      explanation: "This is the correct answer. Preferences are used to store data as key-value pairs. This location is a great place for simple bits of data."
+      explanation: "Correct. Preferences are used to store data as key-value pairs. This location is a great place for simple bits of data."
     - content: "File system"
       isCorrect: false
       explanation: "No. Use the file system to store raw files like XML or text files. For this scenario, use Preferences."

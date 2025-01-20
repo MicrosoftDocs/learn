@@ -2,6 +2,8 @@
 uid: learn.azure.automate-virtual-machine-software-installation-configuration.automate-configuration-web-server
 title: Automate the configuration of a web server
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate the configuration of a web server
   description: Learn how to automate the configuration of a web server.
   ms.date: 04/04/2024
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-automate-configuration-web-server.md)]
+

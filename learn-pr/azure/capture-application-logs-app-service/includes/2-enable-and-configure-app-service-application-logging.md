@@ -1,10 +1,10 @@
-In this unit, we look at how app logging can help with your Web apps, and show you how to enable these logs.
+In this unit, we look at how app logging can help with your Web apps, and show you how to enable app logs.
 
 ## What are app logs?
 
-Azure provides built-in diagnostics with app logging. App logs are the output of runtime trace statements in app code. For example, you might want to check some logic in your code by adding a trace to show when a particular function is being processed. Or, you might only want to see a logged message when a particular level of error has occurred. App logging is primarily for apps in preproduction and for troublesome issues, because excessive logs can carry a performance hit and quickly consume storage. for this reason, logging to the file system is automatically disabled after 12 hours.
+Azure provides built-in diagnostics with app logging. App logs are the output of runtime trace statements in app code. For example, you might want to check some logic in your code by adding a trace to show when a particular function is being processed. Or, you might only want to see a logged message when a particular level of error occurs. App logging is primarily for apps in preproduction and for troublesome issues, because excessive logs can carry a performance hit and quickly consume storage. For this reason, logging to the file system is automatically disabled after 12 hours.
 
-App logging has scale limitations, primarily because ***files*** are being used to save the logged output. If you have multiple instances of an app, and the same storage is shared across all instances, messages from different instances may be interleaved, making troubleshooting difficult. If each instance has its own log file, then there are multiple logs, again making it difficult to troubleshoot instance-specific issues.
+App logging has scale limitations, primarily because *files* are being used to save the logged output. If you have multiple instances of an app, and the same storage is shared across all instances, messages from different instances might be interleaved, making troubleshooting difficult. If each instance has its own log file, then there are multiple logs, again making it difficult to troubleshoot instance-specific issues.
 
 The types of logging available through the Azure App Service depends on the code framework of the app, and on whether the app is running on a Windows or Linux app host.
 
@@ -48,9 +48,9 @@ Both types of message are written to the Azure app service error level logs.
 
 ### Logging differences between Windows and Linux hosts
 
-To route messages to log files, Azure Web apps use the Web server (IIS process). Because Windows-based Web apps are a well-established Azure service, and messaging for ASP.NET apps is tightly integrated with the underlying IIS service, Windows apps benefit from a rich logging infrastructure. For other apps, logging options are limited by the development platform, even when running on a Windows app service.
+To route messages to log files, Azure Web apps use the Internet Information Services (IIS) Web server. Because Windows-based Web apps are a well-established Azure service, and messaging for ASP.NET apps is tightly integrated with the underlying IIS service, Windows apps benefit from a rich logging infrastructure. For other apps, logging options are limited by the development platform, even when running on a Windows app service.
 
-The Docker image used for the app's container, determines the logging functionality available to Linux-based scripted apps, such as Node. Basic logging, such as using redirections to STDERR or STDOUT, uses the Docker logs. Richer logging functionality is dependent on the underlying image, and whether it's running PHP, Perl, Ruby, and so on. To download equivalent Web application logging as provided by IIS for Windows apps, may require connecting to your container using SSH.
+The Docker image used for the app's container, determines the logging functionality available to Linux-based scripted apps, such as Node. Basic logging, such as using redirections to STDERR or STDOUT, uses the Docker logs. Richer logging functionality is dependent on the underlying image, and whether it's running PHP, Perl, Ruby, and so on. To download equivalent Web application logging as provided by IIS for Windows apps, might require connecting to your container using SSH.
 
 The following table summarizes the logging support for common app environments and hosts.
 
@@ -65,9 +65,9 @@ The following table summarizes the logging support for common app environments a
 
 ### Alternatives to app diagnostics
 
-Azure Application Insights is a site extension that provides more performance monitoring features, such as detailed usage and performance data. It's designed for production app deployments and is a potentially useful development tool. Application Insights works with a range of app development environments, providing the same set of rich telemetry and performance data whether the app is ASP.NET or Node. However, to make use of Application Insights, you have to include specific code within your app, using the App Insights SDK. Application Insights is also a billable service. So, depending on the scale of your app deployments and data collected, you may need to plan for regular costs.
+Azure Application Insights is a site extension that provides more performance monitoring features, such as detailed usage and performance data. Application Insights is designed for production app deployments and is a potentially useful development tool. It works with a range of app development environments, providing the same set of rich telemetry and performance data whether the app is ASP.NET or Node. However, to make use of Application Insights, you have to include specific code within your app, using the App Insights SDK. Application Insights is also a billable service. So, depending on the scale of your app deployments and data collected, you might need to plan for regular costs.
 
-You can also view **Metrics** for your app, which can help you profile how your app is operating. these counters are useful in production and development. You can view CPU, memory, network, and file system usage, and set up alerts when a counter hits a particular threshold. Billing for metrics is covered by the app service plan tier.
+You can also view **Metrics** for your app, which can help you profile how your app is operating. These counters are useful in production and development. You can view CPU, memory, network, and file system usage, and set up alerts when a counter hits a particular threshold. Billing for metrics is covered by the app service plan tier.
 
 ## Enable logging using the Azure portal
 

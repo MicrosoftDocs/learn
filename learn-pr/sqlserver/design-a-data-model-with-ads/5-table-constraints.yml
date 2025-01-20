@@ -2,6 +2,8 @@
 uid: learn.design-a-data-model-with-ads.table-constraints
 title: Table constraints
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Table constraints
   description: "Use primary keys, foreign keys, and table constraints on relational database tables for identity, default values, and restrict data values"
   ms.date: 03/05/2024

@@ -1,17 +1,11 @@
 You have decided on the features you want to include use on Wingtip Toys' MySQL flexible server and you know how to configure them. In summary, you have:
 
 - Configured Microsoft Entra for centralized user management.
-
 - Encrypted data at rest with a customer-managed key.
-
 - Enabled the database with zone redundant high availability.
-
 - Configured geo-redundant database backups.
-
 - Deployed Business Critical compute SKUs.
-
 - Enabled the Autoscale IOPS feature.
-
 - Provisioned a read replica for reporting queries and data analytics.
 
 You're now ready to migrate the Wingtip Toys' data from the on-premises MySQL server to your Azure Database for MySQL flexible server.

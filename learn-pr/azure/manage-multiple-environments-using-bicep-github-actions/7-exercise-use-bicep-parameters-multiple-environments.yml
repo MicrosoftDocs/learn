@@ -2,6 +2,8 @@
 uid: learn.azure.manage-multiple-environments-using-bicep-github-actions.exercise-use-bicep-parameters-multiple-environments
 title: Exercise - Use Bicep parameters with multiple environments
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Use Bicep parameters with multiple environments
   description: Update a deployment workflow to use inputs and secrets for each environment's settings.
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/7-exercise-use-bicep-parameters-multiple-environments.md)]
+

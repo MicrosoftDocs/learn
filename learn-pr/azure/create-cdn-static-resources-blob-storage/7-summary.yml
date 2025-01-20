@@ -2,6 +2,8 @@
 uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.7-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 01/10/2024
@@ -38,3 +40,4 @@ quiz:
     - content: "Cache every unique URL"
       isCorrect: true
       explanation: "Correct. Cache every unique URL is inefficient for caching queries that use unique query strings."
+

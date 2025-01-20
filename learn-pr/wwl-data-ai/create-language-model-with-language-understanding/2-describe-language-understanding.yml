@@ -2,6 +2,8 @@
 uid: learn.wwl.create-language-model-with-luis.describe-language-understanding
 title: Describe conversational language understanding
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe conversational language understanding
   description: "Describe conversational language understanding"
   ms.date: 09/26/2024

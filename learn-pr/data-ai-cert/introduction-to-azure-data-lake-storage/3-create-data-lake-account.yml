@@ -2,6 +2,8 @@
 uid: learn.data-ai-introduction-to-azure-data-lake-storage.create-data-lake-account
 title: Enable Azure Data Lake Storage Gen2 in Azure Storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable Azure Data Lake Storage Gen2 in Azure Storage
   description: "Enable Azure Data Lake Storage Gen2 in Azure Storage"
   ms.date: 07/18/2023

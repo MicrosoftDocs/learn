@@ -4,8 +4,8 @@ metadata:
   title: Design solutions for regulatory compliance
   description: "You'll learn how to interpret and translate regulatory requirements into technical solutions. You'll also learn how to use capabilities found in Microsoft Purview, Microsoft Priva, and Defender for Cloud for compliance."
   ms.date: 09/09/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted

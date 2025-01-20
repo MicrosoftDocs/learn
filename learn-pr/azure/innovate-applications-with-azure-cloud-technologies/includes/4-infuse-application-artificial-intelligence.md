@@ -33,13 +33,13 @@ Tailwind Traders sees a high potential in Azure AI services, because its data-sc
 
 Other Azure AI services features have potential for Tailwind Traders, but the company decided to start with the previous three. The reason is the positive ratio between the potential increase in business impact and the low effort that their introduction would require.
 
-### Knowledge mining and Azure Cognitive Search
+### Knowledge mining and Azure AI Search
 
-[Azure Cognitive Search](/azure/search/search-what-is-azure-search?azure-portal=true) helps introduce knowledge mining and flexible search engines into applications with little coding effort. Not only can the service index massive amounts of data, it can also add enrichments to augment the information available to search.
+[Azure AI Search](/azure/search/search-what-is-azure-search?azure-portal=true) helps introduce knowledge mining and flexible search engines into applications with little coding effort. Not only can the service index massive amounts of data, it can also add enrichments to augment the information available to search.
 
-One of the areas where the Tailwind Traders application needs to be improved is the product search. Customers spend too much time trying to find the product they're looking for. Replacing the existing search engine with Azure Cognitive Search could allow the company to expose rich search controls such as faceted navigation (multiple-category filters), relevance tuning, and autocomplete.
+One of the areas where the Tailwind Traders application needs to be improved is the product search. Customers spend too much time trying to find the product they're looking for. Replacing the existing search engine with Azure AI Search could allow the company to expose rich search controls such as faceted navigation (multiple-category filters), relevance tuning, and autocomplete.
 
-Internet users are used to sophisticated search engines, so Tailwind Traders can't afford to continue offering the old-fashioned functionality in the present version of the e-commerce platform. Fortunately, Azure Cognitive Search is offered as a set of APIs that enable the quick creation of MVPs.
+Internet users are used to sophisticated search engines, so Tailwind Traders can't afford to continue offering the old-fashioned functionality in the present version of the e-commerce platform. Fortunately, Azure AI Search is offered as a set of APIs that enable the quick creation of MVPs.
 
 ### Azure Bot Service
 
@@ -63,4 +63,4 @@ Tailwind Traders formulates the hypothesis that "A recommendation engine would i
 
 For now, the company decides to use the Personalizer feature in Azure AI services to enrich the application without the need for data scientists. If the hypothesis is validated, the data science team that's eventually hired can evolve the prototype with custom machine-learning models built with Azure. An example is in the article [Build a real-time Recommendation API on Azure](/azure/architecture/reference-architectures/ai/real-time-recommendation?azure-portal=true).
 
-Additionally, the company decides to validate the existing hypothesis around building a support chat with Azure Bot Service and improving the e-commerce site with Azure Cognitive Search. Both prototypes can be built with relatively low effort, so Tailwind Traders can start its foray into machine learning and AI at full speed.
+Additionally, the company decides to validate the existing hypothesis around building a support chat with Azure Bot Service and improving the e-commerce site with Azure AI Search. Both prototypes can be built with relatively low effort, so Tailwind Traders can start its foray into machine learning and AI at full speed.

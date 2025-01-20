@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.cosmos-db-apis
 title: A List of the Cosmos DB APIs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: List of the Cosmos DB APIs
   description: "List of the Cosmos DB APIs"
   ms.date: 03/26/2024

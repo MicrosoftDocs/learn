@@ -2,14 +2,17 @@
 uid: learn.wwl.generate-images-azure-openai.dall-e-in-openai-studio
 title: Explore DALL-E in Azure AI Studio
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore DALL-E in Azure AI Studio
   description: Use the playground in Azure AI Studio to explore DALL-E image generation
   author: ivorb
   ms.author: berryivor
-  ms.date: 08/06/2024
+  ms.date: 11/15/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/3-dall-e-in-openai-studio.md)]
+

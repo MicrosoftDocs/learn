@@ -1,7 +1,6 @@
-Entanglement is one of the key features of quantum mechanics that distinguishes it from classical mechanics. 
+Entanglement is one of the key features of quantum mechanics that distinguishes it from classical mechanics. But what *is* entanglement? How does it work? And why is it so important for quantum information? 
 
-But what *is* entanglement? How does it work? And why is it so important for quantum information? 
-
+In this unit, you'll see how to define and describe quantum entanglement, and understand why it's such a powerful resource for quantum computing.
 
 ## Understanding quantum entanglement
 

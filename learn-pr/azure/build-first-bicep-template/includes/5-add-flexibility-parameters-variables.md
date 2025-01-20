@@ -110,7 +110,7 @@ You can now use the resource location parameter inside the template, like this:
 
 Many Azure resources need unique names. In your scenario, you have two resources that need unique names: the storage account and the App Service app. Asking for these values to be set as parameters can make it difficult for whoever uses the template, because they need to find a name that nobody else has used.
 
-Bicep has another function called `uniqueString()` that comes in handy when you're creating resource names. When you use this function, you need to provide a _seed value_, which should be different across different deployments, but consistent across all deployments of the same resources.
+Bicep has another function called `uniqueString()` that comes in handy when you're creating resource names. When you use this function, you need to provide a _seed value_, which should be different across different deployments, but consistent across all deployments for the same resources.
 
 If you choose a good seed value, you can get the same name every time you deploy the same set of resources, but you'll get a different name whenever you deploy a different set of resources by using the same template. Let's look at how you might use the `uniqueString()` function:
 
@@ -121,10 +121,10 @@ param storageAccountName string = uniqueString(resourceGroup().id)
 This parameter's default value uses the `resourceGroup()` function again, like you did when you set the resource location. This time, though, you're getting the ID for a resource group. Here's what a resource group ID looks like:
 
 ```Output
-/subscriptions/3e57e557-826f-460b-8f1c-4ce38fd53b32/resourceGroups/MyResourceGroup
+/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/MyResourceGroup
 ```
 
-The resource group ID includes the Azure subscription ID (`3e57e557-826f-460b-8f1c-4ce38fd53b32`) and the resource group name (`MyResourceGroup`). The resource group ID is often a good candidate for a seed value for resource names, because:
+The resource group ID includes the Azure subscription ID (`aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e`) and the resource group name (`MyResourceGroup`). The resource group ID is often a good candidate for a seed value for resource names, because:
 
 - Every time you deploy the same resources, they'll go into the same resource group. The `uniqueString()` function will return the same value every time.
 - If you deploy into two different resource groups in the Azure subscription, the `resourceGroup().id` value will be different, because the resource group names will be different. The `uniqueString()` function will give different values for each set of resources.
@@ -153,7 +153,7 @@ The default value for the `storageAccountName` parameter now has two parts to it
 
 ### Selecting SKUs for resources
 
-The other members of your team have been impressed with the Bicep code you've built so far. You've decided together that you'll use your template to deploy the resources to support all your new toy launches.
+The other members of your team are impressed with the Bicep code you've built so far. You've decided together that you'll use your template to deploy the resources to support all your new toy launches.
 
 One of your colleagues has suggested that you create non-production environments for each product launch to help the marketing team test the sites before they're available to customers. However, you want to make sure you don't spend too much money on your non-production environments, so you decide on some policies together:
 
@@ -192,6 +192,6 @@ We can translate these rules to:
 - For the `appServicePlanSkuName` variable, if the `environmentType` parameter is set to `prod`, then use the `P2V3` SKU and the `PremiumV3` tier. Otherwise, use the `F1` SKU.
 
 > [!TIP]
-> When you create multi-part expressions like this, it's best to use variables rather than embedding the expressions directly into the resource properties. This makes your templates easier to read and understand, because it avoids cluttering your resource definitions with logic.
+> When you create multipart expressions like this, it's best to use variables rather than embedding the expressions directly into the resource properties. This makes your templates easier to read and understand, because it avoids cluttering your resource definitions with logic.
 
 When you use parameters, variables, and expressions in your template, you can reuse your template and quickly deploy a new set of resources. For example, each time your marketing department asks you to deploy a new website for the next toy launch, you supply new parameter values for each environment that you deploy, and you'll be set!

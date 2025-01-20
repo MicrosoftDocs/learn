@@ -14,15 +14,15 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 1. In the previous exercise, you deployed your function app and opened it. If it isn't already open, you can open it from the Home page by selecting **All resources**, and then selecting your function app, named something like **escalator-functions-xxx**.
 
-1. On the Function App screen under the **Functions** tab, select **Create in Azure portal**. The **Create function** pane appears.
+1. On the Function App screen under the **Functions** tab and **Create in Azure portal**, select **Create Function**. The **Create function** pane appears.
 
-1. Under **Select a template**, select *HTTP trigger*.
+1. Under **Select a template**, select *HTTP trigger* and select **Next**.
 
 ::: zone pivot="javascript"
 
-4. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
+4. Leave the **Function name** as *HttpTrigger1* and the **Authorization Level** as *Function*, and select **Create**. The function **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
 
-5. In the Developer menu on the left, select **Code + Test**. The code editor opens, displaying the contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
+5. Select the **Code + Test** tab. The code editor opens, displaying the contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
 
     ```javascript
     module.exports = async function (context, req) {
@@ -72,7 +72,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 ::: zone pivot="powershell"
 
-4. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
+4. In the **Template details** section, in the **Function Name** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
 
 5. In the Function menu, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
 
@@ -146,7 +146,7 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
 1. Expand the **Logs** frame at the bottom of the trigger function pane. Select **Filesystem Logs** in the drop-down at the top of the Logs frame. The log frame should start accruing trace notifications every minute.
 
-1. To find the endpoint URL of the function, from the command bar, select **Get function URL**, as shown in the following image. Save this link by selecting the *Copy to clipboard* icon at the end of the URL. Store this link in Notepad or a similar app for later use.
+1. To find the endpoint URL of the function, from the command bar, select **Get function URL**, as shown in the following image. Save the **_master (Host key)** link by selecting the *Copy to clipboard* icon at the end of the URL. Store this link in Notepad or a similar app for later use.
 
     :::image type="content" source="../media/5-get-function-url.png" alt-text="Screenshot of the Azure portal showing the function editor, with the Get function URL button highlighted." lightbox="../media/5-get-function-url.png":::
 
@@ -182,11 +182,11 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
 ### Secure HTTP triggers
 
-HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the *authorization level*. By default, it's set to *Function*, which requires a function-specific API key. It can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
+HTTP triggers let you use API keys to block unknown callers by requiring a key as part of the request. When you create a function, you select the *authorization level*. By default, the level is set to *Function*, which requires a function-specific API key. It can also be set to *Admin* to use a global "master" key, or *Anonymous* to indicate that no key is required. You can also change the authorization level through the function properties after creation.
 
 Because you specified *Function* when you created this function, you need to supply the key when you send the HTTP request. You can send it as a query string parameter named `code`. Or, use the preferred method and pass it as an HTTP header named `x-functions-key`.
 
-1. To find the function and master keys, in the Function App menu, under **Developer**, select **Function Keys**. The Function Keys pane for your function opens.
+1. To find the function keys, open the **Code + Test** menu by selecting the name of your function (for example, *HttpTriger1*) under the **Functions** tab on the **Overview** menu. Then, select the **Function Keys** tab.
 
 1. By default the function key value is hidden. Show the default function key value by selecting **Show value**. Copy the contents of the **Value** field to the clipboard, and then store this key in Notepad or a similar app for later use.
 
@@ -208,6 +208,7 @@ Because you specified *Function* when you created this function, you need to sup
 1. Check the logs.
 
     The **Code + Test** pane should open a session displaying log file output (ensure **Filesystem Logs** is selected in the drop-down at the top of the **Logs** pane). The log file updates with the status of your request, which should look something like this:
+
 ::: zone pivot="javascript"
 
     ```output
@@ -217,6 +218,7 @@ Because you specified *Function* when you created this function, you need to sup
     ```
 
 ::: zone-end
+
 ::: zone pivot="powershell"
 
     ```output
@@ -230,11 +232,11 @@ Because you specified *Function* when you created this function, you need to sup
 
 Let's add the logic to the function, to check temperature readings that it receives, and set a status for each temperature reading.
 
-Our function is expecting an array of temperature readings. The following JSON snippet is an example of the request body that we'll send to our function. Each `reading` entry has an ID, timestamp, and temperature.
+Our function is expecting an array of temperature readings. The following JSON snippet is an example of the request body that we send to our function. The name of the array might be slightly different for JavaScript or PowerShell, but each entry in the array has an ID, timestamp, and temperature.
 
 ```json
 {
-    "readings": [
+    "Readings": [
         {
             "driveGearId": 1,
             "timestamp": 1534263995,
@@ -254,7 +256,7 @@ Our function is expecting an array of temperature readings. The following JSON s
 }
 ```
 
-Let's replace the default code in our function with the following code, to implement our business logic.
+Let's replace the default code in our function with the following code that implements our business logic.
 
 ::: zone pivot="javascript"
 
@@ -296,6 +298,34 @@ module.exports = function (context, req) {
 The logic we added is straightforward. We iterate through the array and set the status as **OK**, **CAUTION**, or **DANGER** based on the value of the temperature field. We then send back the array of readings with a status field added to each entry.
 
 Notice the `Log` statements when you expand **Logs** at the bottom of the pane. When the function runs, these statements add messages in the Logs window.
+
+## Test our business logic
+
+We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to test our function.
+
+1. On the **Code + Test** tab, select **Test/Run**. In the **Input** tab, replace the contents of the **Body** text box with the following code to create our sample request.
+
+    ```json
+    {
+        "readings": [
+            {
+                "driveGearId": 1,
+                "timestamp": 1534263995,
+                "temperature": 23
+            },
+            {
+                "driveGearId": 3,
+                "timestamp": 1534264048,
+                "temperature": 45
+            },
+            {
+                "driveGearId": 18,
+                "timestamp": 1534264050,
+                "temperature": 55
+            }
+        ]
+    }
+    ```
 
 ::: zone-end
 
@@ -344,17 +374,15 @@ The logic we added is straightforward. We iterate through the array and set the 
 
 Note the calls to the `Write-Host` cmdlet. When the function runs, these statements add messages in the Logs window.
 
-::: zone-end
-
-## Test our business logic
+## Test the business logic
 
 We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to test our function.
 
-1. In the **Input** tab, replace the contents of the **Body** text box with the following code to create our sample request.
+1. On the **Code + Test** tab, select **Test/Run**. In the **Input** tab, replace the contents of the **Body** text box with the following code to create our sample request.
 
     ```json
     {
-        "readings": [
+        "Readings": [
             {
                 "driveGearId": 1,
                 "timestamp": 1534263995,
@@ -374,12 +402,10 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
     }
     ```
 
-1. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane (if it isn't already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
+::: zone-end
+
+2. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the flyout of the pane (if it isn't already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
 
    :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::  
 
-    The **Output** tab shows that a status field has been correctly added to each of the readings.
-
-1. In the Developer menu on the left, select **Monitor** to see that the request has been logged to Application Insights. The **Monitor** pane appears for your function.
-
-   The **Invocations Tab** of the pane displays **Invocation Traces** for each of your function invocations. Select the **Date(UTC)** value for one of the invocations and view the detail about the execution of your function.
+    The **Output** tab shows that a status field was correctly added to each of the readings.

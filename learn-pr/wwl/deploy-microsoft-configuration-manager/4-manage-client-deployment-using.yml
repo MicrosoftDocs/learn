@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-microsoft-configuration-manager.manage-client-deployment-using
 title: Manage client deployment using Configuration Manager
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage client deployment using Configuration Manager
   description: "Manage client deployment using Configuration Manager"
   ms.date: 05/15/2023

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-application-access-microsoft-entra-id
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage application access in Microsoft Entra ID
   description: "This module focuses on effectively managing identities and enhancing security in Microsoft Enterprise Identity, ensuring that users, groups, and external identities are protected against security threats and unauthorized access."
   ms.date: 04/29/2024

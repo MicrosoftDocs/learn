@@ -2,6 +2,8 @@
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers.discovery-accessibility-features
 title: Discover accessibility features
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 2-Discover accessibility features
   description: "Discover accessibility features"
   ms.date: 08/08/2022

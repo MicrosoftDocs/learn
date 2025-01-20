@@ -2,12 +2,15 @@
 uid: learn.azure.cloud-scale-messaging-jms-service-bus.5-receive-messages-from-service-bus
 title: Exercise - Receive messages from Azure Service Bus
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Receive messages from Azure Service Bus
   description: Write a Spring Boot app to receive messages from Azure Service Bus.
-  ms.date: 02/07/2024
+  ms.date: 11/11/2024
   author: spelluru
   ms.author: spelluru
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-receive-messages-from-service-bus.md)]
+

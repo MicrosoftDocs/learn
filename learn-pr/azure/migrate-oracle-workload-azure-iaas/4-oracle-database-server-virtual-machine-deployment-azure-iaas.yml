@@ -2,6 +2,8 @@
 uid: learn.azure.migrate-oracle-workload-azure-iaas.oracle-database-server-virtual-machine-deployment-azure-iaas
 title: Examine the process of deploying Oracle database server VMs to Azure IaaS
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine the process of deploying Oracle database server VMs to Azure IaaS
   description: Learn how to deploy Oracle database server VMs to Azure IaaS.
   ms.date: 05/01/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-oracle-database-server-virtual-machine-deployment-azure-iaas.md)]
+

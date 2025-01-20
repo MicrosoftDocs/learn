@@ -1,7 +1,4 @@
-
-
-
-It is important to know  whether your files have been modified. It's also important to know how they've been changed. In this unit, you'll learn how to enable file content tracking, how to view file modified file content, and how to enable alerts on file changes in your Windows VMs.
+It's important to know  whether your files have been modified. It's also important to know how they've been changed. In this unit, you learn how to enable file content tracking, how to view file modified file content, and how to enable alerts on file changes in your Windows VMs.
 
 ## Enable file content tracking
 
@@ -16,8 +13,6 @@ With file content tracking, you can compare file contents before and after a tra
 > [!TIP] 
 > You must create a storage account to use file content tracking.  
 
-[![A screenshot of the Workspace Configuration blade in Change Tracking. The Administrator has selected the File Content tab, and has linked a storage account.](../media/m10-file-content.png)](../media/m10-file-content.png#lightbox)
-
 ### Review the contents of a tracked file
 
 After Change Tracking and Inventory detects a change for a tracked file, you can review the file contents on the **Change Details** pane. Use the following procedure:
@@ -30,25 +25,18 @@ After Change Tracking and Inventory detects a change for a tracked file, you can
 
 3. By default, you review the file contents in a side-by-side layout. Select **Inline** to review an inline layout of the changes.
 
-   ![A screenshot of the View File Content Changes blade. The hosts file is in side by side view.](../media/m10-file-content-2.png)
-
 ### Create alerts on changes
 
 You can configure alerts on file changes. For example, if someone edited the Hosts file on a VM, that would impact the way that name resolution occurred on that VM. It would be important to know that this change had occurred.
 
-![A screenshot of the Change types line graph indicating that the Hosts file was changed in the selected folder.](../media/m10-change-1.png)
-
 To configure an alert on a file change similar to this, use the following procedure:
 
 1. In your automation account, on the **Change tracking** blade, select **Log Analytics**.
-
 2. In the Logs search, enter the following query:
 
    ```
    ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
    ```
-
-   ![A screenshot of the Logs blade. The administrator has entered a new query.](../media/m10-change-2.png)
 
 3. When the query is complete, select **New alert rule** in the log search to open the **Alert creation** page. Check your query again and modify the **alert logic**.
 
@@ -56,8 +44,6 @@ To configure an alert on a file change similar to this, use the following proced
    > In this case, because the file is critical, you want the alert to be triggered if there's even one change detected across all the machines in the environment.
 
 4. Configure the Action group settings, and then customize actions. In this example, an action group called CreateTicket will run and prompt Azure to email the Azure Resource Manager Role holder.
-
-   ![A screenshot of the Logs blade, Create alert rule section. The administrator has entered a new query with the alert being set to email an alert when the host file is modified.](../media/m10-alert-rule.png)
 
 ## Additional reading
 

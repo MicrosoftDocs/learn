@@ -2,6 +2,8 @@
 uid: learn.wwl.design-machine-learning-operations-solution.case-study
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Learn what to think about when designing for retraining a model.
   author: wwlpublish
@@ -38,3 +40,4 @@ quiz:
     - content: "When there's data drift."
       isCorrect: false
       explanation: "Incorrect. It's stated that new data is not seen as trustworthy. Currently, we shouldn't rely on monitoring the data to decide when to retrain the model."
+

@@ -4,7 +4,7 @@ title: Exercise - Interact with data
 metadata:
   title: Exercise - Interact with data
   description: "Write code to interact with databases by using EF Core."
-  ms.date: 10/04/2023
+  ms.date: 10/21/2024
   author: camsoper
   ms.author: casoper
   ms.manager: markl
@@ -20,8 +20,8 @@ quiz:
       choices:
       - content: "Set the entity's state to `EntityState.Unchanged`."
         isCorrect: false
-        explanation: "Incorrect. The entity is automatically tracked by `DbContext`. Manually setting the `Unchanged` state directs the `DbContext` process as if there were no object graph changes."
-      - content: "Chain the `ToListAsync()` method call to the LINQ query or fluent method chain."
+        explanation: "Incorrect. `DbContext` automatically tracks the entity. Manually setting the `Unchanged` state directs the `DbContext` process as if there were no object graph changes."
+      - content: "Chain the `ToListAsync()` method call to the Language Integrated Query (LINQ) query or fluent method chain."
         isCorrect: false
         explanation: "Incorrect. The `ToListAsync` method returns the result set as a `List<T>` collection."
       - content: "Chain the `AsNoTracking()` method call to the `DbSet` object for the entity."

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.secure-data-at-rest
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to securing data at rest on Azure
   description: Identify the data in your organization and store it on Azure. Store secrets securely, and use client-side encryption and Storage Service Encryption to help protect your data.
   ms.service: azure-key-vault
@@ -41,3 +43,4 @@ units:
 - learn.secure-data-at-rest.4-secure-azure-sql-cosmos-db-data
 - learn.secure-data-at-rest.5-azure-key-vault
 - learn.secure-data-at-rest.6-summary
+

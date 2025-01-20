@@ -2,6 +2,8 @@
 uid: learn.wwl.use-prebuilt-form-recognizer-models.understand-prebuilt-models
 title: Understand prebuilt models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand prebuilt models
   description: Understand prebuilt models
   author: ivorb
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-prebuilt-models.md)]
+

@@ -2,11 +2,13 @@
 uid: learn.wwl.detect-objects-images.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 07/10/2024
+  ms.date: 11/5/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -39,3 +41,4 @@ quiz:
     - content: "Train an image classification (multilabel) model."
       isCorrect: false
       explanation: "That's incorrect. To take advantage of the smart labeler, tag some images and train an initial model. Subsequently, the portal will suggest tags for new images."
+

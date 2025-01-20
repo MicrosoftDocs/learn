@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.run-training-script-command-job-azure-machine-learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run a training script as a command job in Azure Machine Learning
   description: Run a command job with the Azure Machine Learning Python SDK v2.
   author: wwlpublish
@@ -38,3 +40,4 @@ units:
 - learn.wwl.run-training-script-command-job-azure-machine-learning.summary
 badge:
   uid: learn.wwl.run-training-script-command-job-azure-machine-learning.badge
+

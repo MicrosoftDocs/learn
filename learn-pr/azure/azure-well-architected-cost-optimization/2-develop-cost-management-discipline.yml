@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-cost-optimization.develop-cost-management-discipline
 title: Develop cost-management discipline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Develop cost-management discipline
   description: Learn how to build a team culture that has awareness of budget, expenses, reporting, and cost tracking.
   ms.date: 10/23/2023

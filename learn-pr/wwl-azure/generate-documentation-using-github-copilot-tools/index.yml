@@ -2,14 +2,15 @@
 uid: learn.wwl.generate-documentation-using-github-copilot-tools
 metadata:
   title: Generate documentation using GitHub Copilot tools
-  description: This module explores the generation of code explanations, project documentation, and inline code comment documentation using the GitHub Copilot Chat extension for Visual Studio Code.
+  description: "This module explores the generation of code explanations, project documentation, and inline code comment documentation using the GitHub Copilot Chat extension for Visual Studio Code."
+  ms.date: 11/14/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.date: 07/24/2024
-  ms.service: github-copilot
   ms.topic: module-standard-task-based
-  ms.collection:
-    - wwl-ai-copilot
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: github-copilot
   ms.devlang: csharp
   ai-usage: ai-assisted
 title: Generate documentation using GitHub Copilot tools
@@ -23,15 +24,13 @@ abstract: |
 
   -   Generate inline code documentation using the GitHub Copilot Chat extension for Visual Studio Code.
 prerequisites: |
-  -   An active subscription for GitHub Copilot&nbsp;is required&nbsp;for either your personal GitHub account or a GitHub account managed by an organization or enterprise.
+  -   GitHub Copilot enabled on your account. For learning, the Copilot Free option with usage limits should sufficient.
 
-  -   A basic understanding of the features provided by the GitHub Copilot extensions for Visual Studio Code.&nbsp;
+  -   A basic understanding of the features provided by the GitHub Copilot extensions for Visual Studio Code.
 
   -   One or more years of software development experience is recommended.
 
   -   Experience developing C# applications using Visual Studio Code and the C# Dev Kit extension is recommended.
-
-  -   Awareness of the GitHub Copilot free trial conditions. If you choose the free trial offer for GitHub Copilot, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

@@ -199,4 +199,4 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## Knowledge check
 
-Choose the best response for the following question. Then select “Check your answers.”
+Choose the best response for the following question. 

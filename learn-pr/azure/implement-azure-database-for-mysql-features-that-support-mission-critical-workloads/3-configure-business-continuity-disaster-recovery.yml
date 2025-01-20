@@ -2,6 +2,8 @@
 uid: learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.configure-business-continuity-disaster-recovery
 title: Configure business continuity and disaster recovery
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure business continuity and disaster recovery
   description: "This unit reviews implementing business continuity and disaster recovery features for Azure Database for MySQL - Flexible Server. It covers high availability, and backup and restore."
   ms.date: 08/28/2024
@@ -9,6 +11,7 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/3-configure-business-continuity-disaster-recovery.md)]
+

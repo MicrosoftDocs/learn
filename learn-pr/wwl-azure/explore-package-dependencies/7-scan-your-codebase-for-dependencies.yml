@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-package-dependencies.scan-your-codebase-for-dependencies
 title: Scan your codebase for dependencies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Scan your codebase for dependencies
   description: "Scan your codebase for dependencies"
   ms.date: 05/07/2024

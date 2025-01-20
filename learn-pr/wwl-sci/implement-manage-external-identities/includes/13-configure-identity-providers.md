@@ -70,7 +70,7 @@ Required claims for the WS-Fed token issued by the IdP:
 By setting up federation with Google, you can allow invited users to sign in to your shared apps and resources with their own Gmail accounts, without having to create Microsoft accounts.
 
 > [!NOTE]
-> Google federation is designed specifically for Gmail users. To federate with G Suite domains, use [direct federation](/azure/active-directory/external-identities/direct-federation).
+> Google federation is designed specifically for Gmail users. To federate with G Suite domains, use [direct federation](/education/windows/configure-aad-google-trust).
 
 ## What is the experience for the Google user?
 
@@ -81,7 +81,7 @@ When you send an invitation to Google Gmail users, the guest users should access
 
 Guest users who see a *header too long* error can clear their cookies or open a private or incognito window and try to sign in again.
 
-:::image type="content" source="../media/google-sign-in-3086918d.png" alt-text="Screenshot of shows the Google sign-in page. Users have to sign-in for access.":::
+:::image type="content" source="../media/google-sign-in-3086918d-4b07f997.png" alt-text="Screenshot of shows the Google sign-in page. Users have to sign-in for access.":::
 
 
 ## Deprecation of WebView sign-in support
@@ -116,7 +116,7 @@ Other applications' common endpoints might not support Google users. Google gues
 
 If Google guest users try to use a link like `https://myapps.microsoft.com` or `https://portal.azure.com`, they'll get an error.
 
-You can also give Google guest users a direct link to an application or resource, as long as the link includes your tenant information. For example, `https://myapps.microsoft.com/signin/x/ application ID?tenantId= your tenant ID`
+You can also give Google guest users a direct link to an application or resource, as long as the link includes your tenant information. For example, `https://myapps.microsoft.com/signin/Twitter/ application ID?tenantId= your tenant ID`
 
 ### Step 1: Configure a Google developer project
 
@@ -126,23 +126,23 @@ First, create a new project in the Google Developers Console to obtain a client 
 2.  Accept the terms of service if you're prompted to do so.
 3.  Create a new project: On the dashboard, select **Create Project**, give the project a name (for example, **Microsoft Entra B2B**), and then select **Create**:
     
-    :::image type="content" source="../media/google-new-project-5eeb7717.png" alt-text="Screenshot of the New Project page within the Google developers page.":::
+    :::image type="content" source="../media/google-new-project-5eeb7717-5f1b65d0.png" alt-text="Screenshot of the New Project page within the Google developers page.":::
     
 4.  On the **APIs and Services** page, select **View** under your new project.
 5.  Select **Go to APIs overview** on the APIs card. Select **OAuth consent screen**.
 6.  Select **External**, and then select **Create**.
 7.  On the **OAuth consent screen**, enter an **Application name**:
     
-    :::image type="content" source="../media/google-oauth-consent-screen-90a0c899.png" alt-text="Screenshot of the Google OAuth consent screen. Users have to confirm their usage.":::
+    :::image type="content" source="../media/google-oauth-consent-screen-90a0c899-82f19911.png" alt-text="Screenshot of the Google OAuth consent screen. Users have to confirm their usage.":::
     
 8.  Scroll to the **Authorized domains** section and enter **microsoftonline.com**:
     
-    :::image type="content" source="../media/google-oauth-authorized-domains-ce2eb72d.png" alt-text="Screenshot of the Authorized domains section, showing with Google domains are valid.":::
+    :::image type="content" source="../media/google-oauth-authorized-domains-ce2eb72d-39eead35.png" alt-text="Screenshot of the Authorized domains section, showing with Google domains are valid.":::
     
 9.  Select **Save**.
 10. Select **Credentials**. On the **Create credentials** menu, select **OAuth client ID**:
     
-    :::image type="content" source="../media/google-api-credentials-17808992.png" alt-text="Screenshot of the Google APIs Create credentials menu. Configure your credentials here.":::
+    :::image type="content" source="../media/google-api-credentials-17808992-6d0670a2.png" alt-text="Screenshot of the Google APIs Create credentials menu. Configure your credentials here.":::
     
 11. Under **Application type**, select **Web application**. Give the application a suitable name, like **Microsoft Entra B2B**. Under **Authorized redirect URIs**, enter the following URIs:
     
@@ -150,11 +150,11 @@ First, create a new project in the Google Developers Console to obtain a client 
      -  `https://login.microsoftonline.com`
      -  `https://login.microsoftonline.com/te/ tenant ID /oauth2/authresp` (where **tenant ID** is your tenant ID in Azure)
     
-    :::image type="content" source="../media/google-create-oauth-client-id-2e5afde1.png" alt-text="Screenshot of the Authorized redirect URIs section. Where do users go to validate authorization.":::
+    :::image type="content" source="../media/google-create-oauth-client-id-2e5afde1-2e7ca896.png" alt-text="Screenshot of the Authorized redirect URIs section. Where do users go to validate authorization.":::
     
 12. Select **Create**. Copy the client ID and client secret. You'll use them when you add the identity provider in the Azure portal.
     
-    :::image type="content" source="../media/google-auth-client-id-secret-3bda508c.png" alt-text="Screenshot of the OAuth client ID and client secret. Set your access secret.":::
+    :::image type="content" source="../media/google-auth-client-id-secret-3bda508c-75786b50.png" alt-text="Screenshot of the OAuth client ID and client secret. Set your access secret.":::
     
 
 ## Step 2: Configure Google federation in Microsoft Entra ID
@@ -168,7 +168,7 @@ You'll now set the Google client ID and client secret. You can use the Azure por
 3.  Select **All identity providers**, and then select the **Google** button.
 4.  Enter the client ID and client secret you obtained earlier. Select **Save**:
     
-    :::image type="content" source="../media/google-identity-provider-efa96217.png" alt-text="Screenshot of Add Google identity provider page. You have to enter the Client ID and Client secret from previous steps.":::
+    :::image type="content" source="../media/google-identity-provider-efa96217-9c67ebe3.png" alt-text="Screenshot of Add Google identity provider page. You have to enter the Client ID and Client secret from previous steps.":::
     
 
 ## How do I remove Google federation?
@@ -182,7 +182,7 @@ You can delete your Google federation setup. If you do so, Google guest users wh
 3.  Select **All identity providers**.
 4.  On the **Google** line, select the ellipsis button (**...**) and then select **Delete**.
     
-    :::image type="content" source="../media/google-social-identity-providers-22681be3.png" alt-text="Screenshot of the Delete the Google identity provider page. Use the ellipsis at the end to open the delete command.":::
+    :::image type="content" source="../media/google-social-identity-providers-22681be3-340462d2.png" alt-text="Screenshot of the Delete the Google identity provider page. Use the ellipsis at the end to open the delete command.":::
     
 5.  Select **Yes** to confirm the deletion.
 
@@ -235,7 +235,7 @@ Now you'll set the Facebook client ID and client secret, either by entering it i
 5.  For the **Client ID**, enter the **App ID** of the Facebook application that you created earlier.
 6.  For the **Client secret**, enter the **App Secret** that you recorded.
     
-    :::image type="content" source="../media/add-social-identity-provider-page-50bdac92.png" alt-text="Screenshot of the Add social identity provider page. Pick your social media provider.":::
+    :::image type="content" source="../media/add-social-identity-provider-page-50bdac92-6a1ab149.png" alt-text="Screenshot of the Add social identity provider page. Pick your social media provider.":::
     
 7.  Select **Save**.
 

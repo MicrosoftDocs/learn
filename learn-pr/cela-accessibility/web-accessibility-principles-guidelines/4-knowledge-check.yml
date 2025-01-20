@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This content is a part of the "Web accessibility principles and guidelines" module.
-  ms.date: 04/11/2024
+  ms.date: 11/12/2024
   author: erzelman
   ms.author: erzelman 
   ms.topic: unit
@@ -35,13 +35,13 @@ quiz:
           explanation: "Incorrect. Failing to comply with web accessibility standards and regulations would make a product or service unusable and inaccessible to people with disabilities."
         - content: "Ensuring web content is easy to navigate, clear, and consistent."
           isCorrect: true
-          explanation: "Correct. In addition to following the accessibility principles and guidelines, ensuring that content is easy to navigate, clear, and consistent, makes it possible for people with disabilities to access your products and services."
+          explanation: "Correct. In addition to following the accessibility principles and guidelines, ensuring that content is easy to navigate, clear, and consistent makes it possible for people with disabilities to access your products and services."
         - content: "Focusing on the needs of only users who accessed your prior content."
           isCorrect: false
           explanation: "Incorrect. Web content should be accessible to everyone, regardless of their previous experience or familiarity with the content."
         - content: "Completing this training and relying on others to address accessibility issues."
           isCorrect: false
-          explanation: "Incorrect. While completing this training is a great way to learn about accessibility, accessibility is everyone’s responsibility."
+          explanation: "Incorrect. While completing this training is a great way to learn about accessibility, accessibility is everyone's responsibility."
     - content: "What are the POUR web accessibility principles?"
       choices:
         - content: "Powerful, Objective, Uniform, and Realistic."
@@ -75,7 +75,7 @@ quiz:
         - content: "Maximize compatibility with future user agents."
           isCorrect: false
           explanation: "Incorrect. This option is a Robust principle."
-        - content: "You can use keyboard to access content."
+        - content: "You can use the keyboard to access content."
           isCorrect: true
           explanation: "Correct. Making something operable from the keyboard is an Operable principle."
     - content: "Which is the recommended Web Content Accessibility Guidelines (WCAG) level of compliance for most web content?"

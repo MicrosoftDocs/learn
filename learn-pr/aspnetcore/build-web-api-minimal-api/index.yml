@@ -4,8 +4,8 @@ metadata:
   title: Build a web API with minimal API, ASP.NET Core, and .NET
   description: Learn how to build a web API by using .NET. You'll also learn how to set up different routes to handle both reading and writing.
   ms.date: 12/22/2022
-  author: softchris
-  ms.author: chnoring
+  author: CamSoper
+  ms.author: casoper
   manager: coxford
   ms.custom: team=nextgen
   ms.topic: module-standard-task-based

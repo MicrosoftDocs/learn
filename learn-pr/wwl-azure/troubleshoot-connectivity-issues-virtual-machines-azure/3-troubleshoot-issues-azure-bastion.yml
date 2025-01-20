@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.troubleshoot-issues-azure-bastion
 title: Troubleshoot issues with Azure Bastion
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot issues with Azure Bastion
   description: "Troubleshoot issues with Azure Bastion"
   ms.date: 08/01/2024

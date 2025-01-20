@@ -2,6 +2,8 @@
 uid: learn.tour-azure-portal-features.2-azure-management
 title: Azure management options
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure management options
   description: Azure management options
   ms.date: 04/08/2024
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/2-azure-management.md)]
+

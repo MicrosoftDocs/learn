@@ -2,6 +2,8 @@
 uid: learn.wwl.create-business-value.discover-ai-success
 title: Discover the path to AI success
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover the path to AI success
   description: "Discover the path to AI success"
   ms.date: 08/12/2024

@@ -10,23 +10,23 @@ Scaling is defined by the combination of limits, rules, and behavior.
 
     | Scale limit | Default value | Min value | Max value |
     | --- | --- | --- | --- |
-    | Minimum number of replicas per revision | 0 | 0 | 300 |
-    | Maximum number of replicas per revision | 10 | 1 | 300 |
+    | Minimum number of replicas per revision | 0 | 0 | 1000 |
+    | Maximum number of replicas per revision | 10 | 1 | 1000 |
 
     To request an increase in maximum replica amounts for your container app, submit a support ticket.
 
 - Rules are the criteria used by Container Apps to decide when to add or remove replicas.
 
-    Scale rules are implemented as HTTP, TCP, or custom.
+    Scale rules are implemented as HTTP, TCP (Transmission Control Protocol), or custom.
 
 - Behavior is how the rules and limits are combined together to determine scale decisions over time.
 
     Scale behavior explains how scale decisions are calculated.
 
-As you define your scaling rules, keep in mind the following items:
+As you define your scaling rules, it's important to consider the following items:
 
 - You aren't billed usage charges if your container app scales to zero.
-- Replicas that aren't processing, but remain in memory might be billed at a lower "idle" rate. For more information, see Billing.
+- Replicas that aren't processing, but remain in memory might be billed at a lower "idle" rate.
 - If you want to ensure that an instance of your revision is always running, set the minimum number of replicas to 1 or higher.
 
 ## Scale rules

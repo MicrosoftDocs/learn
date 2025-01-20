@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-concurrency-mysql
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand concurrency in MySQL
   description: "Learn about concurrency in MySQL, including how to limit the number of connections, and when to use thread pools."
   ms.date: 11/09/2022

@@ -2,12 +2,15 @@
 uid: learn.startups.fundamentals.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Review startup fundamentals. Topics include factors that lead to success and failure, and the best approach to exploring startup ideas.
   ms.date: 01/09/2024
   author: ryanmesches
   ms.author: ryanmesches
   ms.topic: unit
+  ms.collection: learn-startups
 durationInMinutes: 3
 quiz:
   questions:
@@ -61,3 +64,4 @@ quiz:
     - content: "All of the above."
       isCorrect: true
       explanation: "Correct. Many factors can lead to failure. Examples include unnecessary secrecy and building a product before validating the idea with customers. Not seeking the right advice and scaling too early can also lead to failure."
+

@@ -2,12 +2,14 @@
 uid: learn.intro-to-azure-data-explorer.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: "Introduction to Azure Data Explorer"
   description: "Evaluate whether Azure Data Explorer is appropriate to process and analyze your big data."
   ms.date: 08/21/2023
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 3
 content: |
@@ -81,3 +83,4 @@ quiz:
       isCorrect: false
       explanation: "Azure Data Explorer is optimized for high query concurrency."
   
+

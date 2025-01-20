@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-intro-to-blockchain.blockchain-types
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Blockchain types
   description: The different types of blockchain and protocols
   ms.date: 07/09/2024

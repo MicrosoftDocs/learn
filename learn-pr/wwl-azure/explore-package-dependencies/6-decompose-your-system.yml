@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-package-dependencies.decompose-your-system
 title: Decompose your system
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Decompose your system
   description: "Decompose your system"
   ms.date: 05/07/2024

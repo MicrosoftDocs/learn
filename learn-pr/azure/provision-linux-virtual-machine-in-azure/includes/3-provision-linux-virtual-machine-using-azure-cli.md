@@ -96,7 +96,7 @@ The command's output should resemble the following example:
 
 ```json
 {
-  "id": "/subscriptions/fd7edadd-187f-41dd-a5df-f80bad63c167/resourceGroups/sample-RG",
+  "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/sample-RG",
   "location": "eastus",
   "managedBy": null,
   "name": "rg_lnx-cli",
@@ -130,7 +130,7 @@ The Azure VM will begin running shortly afterwards, usually within a couple of m
 ```json
 {
   "fqdns": "",
-  "id": "/subscriptions/fd7edadd-187f-0000-0000-000000000000/resourceGroups/rg_lnx-cli/providers/Microsoft.Compute/virtualMachines/lnx-cli-vm",
+  "id": "/subscriptions/bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/resourceGroups/rg_lnx-cli/providers/Microsoft.Compute/virtualMachines/lnx-cli-vm",
   "location": "eastus",
   "macAddress": "00-0D-3A-8C-C6-AE",
   "powerState": "VM running",

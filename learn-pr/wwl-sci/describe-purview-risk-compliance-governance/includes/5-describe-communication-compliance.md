@@ -1,9 +1,9 @@
 
-Microsoft Purview Communication Compliance is an insider risk solution that helps you detect, capture, and act on inappropriate messages that can lead to potential data security or compliance incidents within your organization. Communication compliance evaluates text and image-based messages in Microsoft and third-party apps (Teams, Viva Engage, Outlook, WhatsApp, etc.) for potential business policy violations including inappropriate sharing of sensitive information, threatening or harassing language as well as potential regulatory violations.
+Microsoft Purview Communication Compliance is an insider risk solution that helps you detect, capture, and act on inappropriate messages that can lead to potential data security or compliance incidents within your organization. Communication compliance evaluates text and image-based messages in Microsoft and third-party apps (Teams, Viva Engage, Outlook, WhatsApp, etc.) for potential business policy violations. Including inappropriate sharing of sensitive information, threatening or harassing language and potential regulatory violations.
 
-Microsoft Purview Communication Compliance is an insider risk solution that helps minimize communication risks by helping you detect, capture, and act on potentially inappropriate messages in your organization. Predefined and custom policies allow you to check internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate email, Microsoft Teams, Microsoft Copilot for Microsoft 365, Viva Engage, or third-party communications in your organization and take appropriate actions to make sure they're compliant with your organization's message standards.
+Communication Compliance has predefined and custom policies that allow you to check internal and external communications for policy matches so that designated reviewers can examine them. Reviewers can investigate email, Microsoft Teams, Microsoft Copilot for Microsoft 365, Viva Engage, or third-party communications in your organization and take appropriate actions to make sure they're compliant with your organization's message standards.
 
-With role-based access controls, Communication compliance supports the separation of duties between your IT admins and your compliance management team. For example, the IT group for your organization may be responsible for setting up communication compliance role permissions, groups, and policies and investigators and reviewers may be responsible for message triage, review, and mitigation actions.
+With role-based access controls, Communication compliance supports the separation of duties between your IT admins and your compliance management team. For example, the IT group for your organization might be responsible for setting up communication compliance role permissions, groups, and policies. While investigators and reviewers might be responsible for message triage, review, and mitigation actions.
 
 Identifying and resolving compliance issues with communication compliance in Microsoft Purview uses the following workflow:
 
@@ -11,7 +11,7 @@ Identifying and resolving compliance issues with communication compliance in Mic
 
 - **Configure** – in this step, admins identify compliance requirements and configure applicable communication compliance policies.
 - **Investigate** – admins look deeper into the issues detected when matching your communication compliance policies. Tools and steps that help include alerts, issue management to help remediation, document reviews, reviewing user history, and filters.
-- **Remediate** – remediate communications compliance issues. Options include resolving an alert, tagging a message, notifying the user, escalating to another reviewer, marking an alert as a false positive, removing a message in Teams, and escalating for investigation.
+- **Remediate** – remediate communications compliance issues. Options include: resolving an alert, tagging a message, notifying the user, escalating to another reviewer, marking an alert as a false positive, removing a message in Teams, and escalating for investigation.
 - **Monitor** – Keeping track and managing compliance issues identified by communication compliance policies spans the entire workflow process. Communication compliance dashboard widgets, export logs, and events recorded in the unified audit logs can be used to continually evaluate and improve your compliance posture.
 
 Some important compliance areas where communication compliance policies can assist with reviewing messages include:
@@ -22,9 +22,9 @@ Some important compliance areas where communication compliance policies can assi
 
 Communication compliance is a powerful tool that can help maintain and safeguard your staff your data and your organization.
 
-### Integration with Microsoft Copilot for Security
+### Integration with Microsoft Security Copilot
 
-Microsoft Purview Communication Compliance supports integration with Microsoft Copilot for Security, through the embedded experience. Users whose organization has been onboarded to Copilot, have enabled Copilot to access data from Microsoft 365 services, and have the appropriate role permissions can experience Copilot integration through the following supported capabilities:
+Microsoft Purview Communication Compliance supports integration with Microsoft Security Copilot, through the embedded experience. Users whose organization is onboarded to Copilot, enable Copilot to access data from Microsoft 365 services, and have the appropriate role permissions can experience Copilot integration through the following supported capabilities:
 
 - Get a contextual summary of a message and its attachments in the context of classifier conditions that flagged the message.
 - Ask follow-up contextual questions about the message and its attachments.
@@ -34,7 +34,7 @@ Contextual Summarization currently supports trainable classifiers as context and
 To access Copilot from within Microsoft Purview Communication Compliance:
 
 1. Navigate to the Communication Compliance solution from the Microsoft Purview compliance portal, or the new Microsoft Purview portal currently in preview, then navigate to the Policies tab in Communication Compliance.
-1. Navigate to a policy that uses trainable classifiers as part of the policy’s configurations and select a policy match to view message content.
+1. Navigate to a policy that uses trainable classifiers as part of the policy’s configurations and view message content by selecting a policy match.
 1. A Copilot action button appears in the upper left command bar or a Summarize action button in the lower right command bar. Select either action to generate a contextual summary of the message and supported attachments.
 
     :::image type="content" source="../media/copilot-communication-compliance-v2.png" lightbox="../media/copilot-communication-compliance-v2.png" alt-text="Screen capture of a Communication Compliance policy alerts page and the Security Copilot summary for that policy alert.":::

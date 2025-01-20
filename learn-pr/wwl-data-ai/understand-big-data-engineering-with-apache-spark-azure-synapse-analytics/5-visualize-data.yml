@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.visualize-data-spark
 title: Visualize data with Spark
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Visualize data with Spark
   description: "Visualize data with Spark"
   ms.date: 05/25/2023

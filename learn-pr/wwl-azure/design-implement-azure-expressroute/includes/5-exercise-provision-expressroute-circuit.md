@@ -1,6 +1,6 @@
 ## Lab scenario
 
-In this exercise, you will create an ExpressRoute circuit using the Azure portal and the Azure Resource Manager deployment model.
+In this exercise, you create an ExpressRoute circuit using the Azure portal and the Azure Resource Manager deployment model.
 
 ## Architecture diagram
 

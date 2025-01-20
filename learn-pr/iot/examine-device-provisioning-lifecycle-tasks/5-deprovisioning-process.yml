@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.examine-deprovisioning-process
 title: Examine the deprovisioning process
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine the deprovisioning process
   description: "Examine the deprovisioning process"
   ms.date: 01/08/2024

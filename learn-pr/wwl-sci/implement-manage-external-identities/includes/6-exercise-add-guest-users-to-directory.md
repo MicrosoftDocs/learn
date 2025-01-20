@@ -5,7 +5,7 @@
 3.  Under **Users**, select **All Users**.
 4.  Select **New user - Invite external user**.
     
-    :::image type="content" source="../media/new-guest-user-menu-selection-9080639a.png" alt-text="Screenshot of the Users screen with the New guest user menu option selected.":::
+    :::image type="content" source="../media/new-guest-user-menu-selection-9080639a-7747484e.png" alt-text="Screenshot of the Users screen with the New guest user menu option selected.":::
     
 5.  On the New user page, select **Invite user** and then add your information as the guest user.
 6.  Group email addresses are not supported; enter the email address for an individual. Also, some email providers allow users to add a plus symbol (+) and additional text to their email addresses to help with things like inbox filtering. However, Microsoft Entra ID does not currently support plus symbols in email addresses. To avoid delivery issues, omit the plus symbol and any characters following it up to the @ symbol.

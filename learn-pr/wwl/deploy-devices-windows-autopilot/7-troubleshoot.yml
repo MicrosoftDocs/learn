@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-devices-windows-autopilot.troubleshoot
 title: Troubleshoot Windows Autopilot
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot Windows Autopilot
   description: "Troubleshoot Windows Autopilot"
   ms.date: 01/24/2024

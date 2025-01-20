@@ -2,6 +2,8 @@
 uid: learn.health-bot-basic-bot.3-build-the-basic-bot
 title: Build a basic bot
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build a basic bot
   description: In this unit, you'll learn how to build a basic bot.
   author: Meghana-ch

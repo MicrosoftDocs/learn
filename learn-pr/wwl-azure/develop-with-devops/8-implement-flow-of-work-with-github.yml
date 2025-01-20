@@ -2,6 +2,8 @@
 uid: learn.wwl.develop-with-devops.implement-flow-of-work-with-github
 title: Implement flow of work with GitHub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement flow of work with GitHub
   description: "This lab gives you the opportunity to manage GitHub repositories and implement a flow of work."
   ms.date: 2/23/2024

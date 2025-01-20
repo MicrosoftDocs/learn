@@ -8,9 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-azureSandbox: false
-labId: 96513
-labModal: true
+  zone_pivot_groups: sql-database
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-subqueries.md)]

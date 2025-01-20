@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.test-bicep-code-using-azure-pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Test your Bicep code by using Azure Pipelines
   description: Build a deployment pipeline for Bicep infrastructure as code templates. Lint, validate, preview, and test your Bicep code by using Azure DevOps and Azure Pipelines.
@@ -69,3 +71,4 @@ units:
 - learn.azure.test-bicep-code-using-azure-pipelines.summary
 badge:
   uid: learn.azure.test-bicep-code-using-azure-pipelines.badge
+

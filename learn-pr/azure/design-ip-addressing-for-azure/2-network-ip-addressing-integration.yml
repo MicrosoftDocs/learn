@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-ip-addressing-for-azure.2-network-ip-addressing-integration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Network IP addressing and integration
   description: Network IP addressing and integration
   ms.date: 10/10/2024
@@ -39,3 +41,4 @@ quiz:
     - content: "192.168.0.1 to 192.168.255.255"
       isCorrect: false
       explanation: "This range isn't routable over the internet."
+

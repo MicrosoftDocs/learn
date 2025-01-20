@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.connect-vm-with-azure-bastion
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect to virtual machines through the Azure portal by using Azure Bastion
   description: Learn how to deploy Azure Bastion to securely connect to Azure virtual machines directly within the Azure portal.
   manager: kumud
@@ -41,3 +43,4 @@ units:
 - learn.connect-vm-with-azure-bastion.summary
 badge:
   uid: learn.connect-vm-with-azure-bastion.badge
+

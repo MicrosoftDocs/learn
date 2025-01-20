@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.choose-deployment-type-supported-software
 title: Choose deployment options with Azure Center for SAP solutions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose deployment options with Azure Center for SAP solutions
   description: "Choose deployment type options with Azure Center for SAP solutions for distributed with High Availability (HA), distributed non-HA, and single server. Select SAP software and operating system (OS)."
   ms.date: 01/09/2024

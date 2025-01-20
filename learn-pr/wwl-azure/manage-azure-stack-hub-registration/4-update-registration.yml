@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-stack-hub-registration.update-registration
 title: Update registration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Update registration
   description: "Update registration"
   ms.date: 03/29/2022

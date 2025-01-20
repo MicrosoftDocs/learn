@@ -1,4 +1,4 @@
-After joining the Microsoft Learn for Educators (MSLE) program, you'll be granted access to the [Microsoft Learning Download Center (LDC)](https://aka.ms/LDC). The LDC is the repository where educators download MSLE content. You'll receive an email that confirms your access to the LDC. The email contains information on how to access the LDC from the [MSLE Portal](https://aka.ms/MSLEPort) or navigate directly to the LDC. 
+After joining the Microsoft Learn for Educators (MSLE) program, you'll be granted access to the [Microsoft Learning Download Center (LDC)](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123). The LDC is the repository where educators download MSLE content. You'll receive an email that confirms your access to the LDC. The email contains information on how to access the LDC from the [MSLE Portal](https://aka.ms/MSLEPort) or navigate directly to the LDC. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=66bf1276-e086-4fbf-9fad-dbf3f89ca270]
 

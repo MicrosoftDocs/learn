@@ -2,6 +2,8 @@
 uid: learn.wwl.operate-with-devops.explore-observability-through-performance-monitoring
 title: 'Explore observability through performance monitoring'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Explore observability through performance monitoring'
   description: "In this unit, learn how performance monitoring-based observability can yield significant benefits for organizations relying on technology."
   ms.date: 02/06/2024

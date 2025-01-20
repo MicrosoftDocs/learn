@@ -4,8 +4,8 @@ title: "Exercise: Use SQLite asynchronously"
 metadata:
   unitType: exercise
   title: "Exercise: Use SQLite asynchronously"
-  description: "Perform SQLite operations asynchronously to maintain responsiveness in a .NET MAUI app"
-  ms.date: 10/13/2023
+  description: "Perform SQLite operations asynchronously to maintain responsiveness in a .NET Multi-platform App UI (MAUI) app"
+  ms.date: 11/11/2024
   author: codemillmatt 
   ms.author: masoucou
   ms.topic: unit

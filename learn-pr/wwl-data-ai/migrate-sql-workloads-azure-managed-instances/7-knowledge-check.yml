@@ -2,6 +2,8 @@
 uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/31/2023
@@ -47,3 +49,4 @@ quiz:
     - content: To create a Windows Server Failover Cluster on the source and target.
       isCorrect: false
       explanation: Incorrect. This isn't required when using a distributed AG to migrate a standalone instance.
+

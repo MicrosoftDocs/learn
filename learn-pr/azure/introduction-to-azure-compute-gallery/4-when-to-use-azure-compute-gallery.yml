@@ -2,6 +2,8 @@
 uid: learn.introduction-to-azure-compute-gallery.when-to-use-azure-compute-gallery
 title: When to Use Azure Compute Gallery
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: When to Use Azure Compute Gallery
   description: In this unit, you'll learn when you should use Azure Compute Gallery.
   ms.date: 08/16/2023
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-when-to-use-azure-compute-gallery.md)]
+

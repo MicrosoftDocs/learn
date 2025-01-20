@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-database-for-mysql.4-when-to-use-azure-database-for-mysql  
 title: When to use Azure Database for MySQL  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: When to use Azure Database for MySQL
   description: When to use Azure Database for MySQL
@@ -10,6 +12,7 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: unit
-durationInMinutes: 9
+durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-database-for-mysql.md)]
+

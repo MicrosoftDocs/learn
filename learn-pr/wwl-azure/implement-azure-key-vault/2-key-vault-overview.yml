@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-azure-key-vault.explore
 title: Explore Azure Key Vault
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Key Vault
   description: "Explore Azure Key Vault"
   ms.date: 03/12/2024

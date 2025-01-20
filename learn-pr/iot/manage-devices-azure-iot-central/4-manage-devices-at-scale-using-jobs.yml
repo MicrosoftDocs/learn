@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-devices-azure-iot-central.at-scale-using-jobs
 title: Manage devices at scale using jobs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage devices at scale using jobs
   description: This content is a part of Manage devices in Azure IoT Central
   ms.date: 05/11/2023

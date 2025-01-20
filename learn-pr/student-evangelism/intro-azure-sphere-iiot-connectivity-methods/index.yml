@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.oxford.industrial-iot-connectivity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Introduction to Azure Sphere for industrial IoT connectivity"
   description: "This module introduces Azure Sphere connectivity methods"
   ms.date: 06/11/2021
@@ -39,3 +41,4 @@ units:
 - learn.oxford.industrial-iot-connectivity.when-use-azure-sphere-connectivity
 - learn.oxford.industrial-iot-connectivity.knowledge-check
 - learn.oxford.industrial-iot-connectivity.summary
+

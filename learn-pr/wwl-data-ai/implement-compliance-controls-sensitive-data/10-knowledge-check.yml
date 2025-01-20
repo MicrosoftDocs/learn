@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 09/02/2022

@@ -2,14 +2,17 @@
 uid: learn.wwl.finetune-model-copilot-ai-studio.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary of fine-tuning language models.
   author: madiepev
   ms.author: madiepev
-  ms.date: 6/26/2024
+  ms.date: 11/28/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
+

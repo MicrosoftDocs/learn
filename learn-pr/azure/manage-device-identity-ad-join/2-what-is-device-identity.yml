@@ -2,6 +2,8 @@
 uid: learn.azure.manage-device-identity-ad-join.what-is-device-identity
 title: What is device identity in Azure?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is device identity in Azure?
   description: Learn about device identity in Azure.
   ms.date: 03/17/2023
@@ -47,3 +49,4 @@ quiz:
     - content: "After first-factor authentication"
       isCorrect: true
       explanation: "A Conditional Access policy is applied after first-factor authentication has taken place."
+

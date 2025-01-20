@@ -63,7 +63,7 @@ quiz:
     - content: Business owners and IT.
       isCorrect: false
       explanation: Although these persons are important, it's imperative to achieve organizational alignment among all key stakeholders.
-    - content: Finance, marketing, sales, human resources, and executive leadership.
+    - content: Finance, marketing, sales, human resources, IT, and executive leadership.
       isCorrect: true
       explanation: Correct.
     - content: IT and cloud vendors.

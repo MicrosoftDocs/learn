@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-device-compliance.explore-policy
 title: Explore device compliance policy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore device compliance policy
   description: "Explore device compliance policy"
   ms.date: 10/09/2023

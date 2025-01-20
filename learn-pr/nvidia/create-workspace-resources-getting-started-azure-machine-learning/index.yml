@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create workspace resources for getting started with Azure Machine Learning
   description: Create workspace resources for getting started with Azure Machine Learning.
   ms.date: 09/04/2024
@@ -47,3 +49,4 @@ units:
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.summary
 badge:
   uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.badge
+

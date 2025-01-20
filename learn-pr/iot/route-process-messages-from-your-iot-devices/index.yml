@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-message-processing-tasks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Guided project - Route and process messages from your Azure IoT Hub devices
   description: "This module provides you with experience analyzing and processing IoT device messages using IoT Hub message routing and the Azure Stream Analytics services, and experience configuring Azure Blob Storage for your device data."
   ms.date: 10/25/2023
@@ -46,3 +48,4 @@ units:
 - learn.wwl.explore-message-processing-tasks.summary
 badge:
   uid: learn.wwl.explore-message-processing-tasks.badge
+

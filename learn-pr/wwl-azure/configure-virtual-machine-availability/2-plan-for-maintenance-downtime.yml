@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-virtual-machine-availability.plan-for-maintenance-downtime
 title: Plan for maintenance and downtime
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan for maintenance and downtime
   description: "Plan for maintenance and downtime"
-  ms.date: 07/24/2024
+  ms.date: 12/19/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

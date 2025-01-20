@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-databases-for-optimal-performance.exercise
 title: 'Exercise: Detect and correct fragmentation issues'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Detect and correct fragmentation issues'
   description: "Exercise: Detect and correct fragmentation issues"
   ms.date: 05/05/2022

@@ -63,7 +63,7 @@ By suggesting improvements, Copilot Chat may help you to write better code that 
 
 ## GitHub Copilot Chat in Visual Studio Code
 
-Copilot Chat integrates with the Visual Studio Code UI to provide assistance where you need it.
+GitHub Copilot Chat integrates with the Visual Studio Code user interface to provide assistance where you need it.
 
 Here are some ways that you can access GitHub Copilot Chat features within Visual Studio Code:
 
@@ -74,16 +74,16 @@ Here are some ways that you can access GitHub Copilot Chat features within Visua
 
 ### Chat view
 
-The Chat view is a panel that displays the chat messages between you and the AI pair programmer. The Chat view interface is a text input field that allows you to interact with the AI pair programmer by typing messages and receiving responses.
+The Chat view is a panel that displays the chat messages between you and the AI pair programmer. The Chat view interface includes a text input field that allows you to interact with the AI pair programmer by typing messages and receiving responses.
 
-You can open the Chat view in two ways:
+There are several ways to open the Chat view, but the following methods are recommended:
 
-- Select the **Chat** icon in the Visual Studio Code activity bar.
-- Open the GitHub Copilot status menu, and then select **GitHub Copilot Chat**. To open the GitHub Copilot status menu, select the GitHub Copilot icon on the Visual Studio Code status bar.
-
-Either way, the Chat view opens in the Visual Studio Code interface, allowing you to interact with the AI pair programmer.
+- Select the **Open Chat** button on Visual Studio Code's top menu bar.
+- Use the **Ctrl+Alt+I** keyboard shortcut.
 
 ![Screenshot showing how to access the Chat view in Visual Studio Code.](../media/chat-view-1.png)
+
+Either way, the Chat view opens in the Visual Studio Code interface, allowing you to interact with the AI pair programmer.
 
 The Chat view allows you to interact with the AI pair programmer by typing messages and receiving responses. You can use the Chat view to ask questions, request explanations, propose fixes, generate documentation, and more. The AI pair programmer responds with natural language descriptions, code snippets, and other relevant information to help you with your coding tasks.
 
@@ -144,10 +144,14 @@ For example, you can ask Copilot Chat to explain the purpose of a specific varia
 
 One of GitHub Copilot Chat's key features is answering questions inline as you're coding. This allows you to harness the power of AI directly within your code editor, with minimal interruption to your development workflow.
 
-You can open an inline chat in two ways:
+The inline chat feature is only accessible when a file is open in the editor. There are several ways to open an inline chat session:
 
-- With an active file open in the code editor, press the `Ctrl` + `I` keys on your keyboard.
-- Right-click inside the code editor and select **Start in Editor** from the context menu.
+- Select **Editor Inline Chat** from the Copilot Chat menu.
+- Use a keyboard shortcut: **Ctrl+I**.
+
+![Screenshot showing how to access the inline chat from the Copilot Chat menu.](../media/inline-chat-0.png)
+
+Another option for opening an inline chat session is to right-click inside the code editor, select **Copilot** from the context menu, and then select **Editor Inline Chat**.
 
 ![Screenshot showing how to access the inline chat from the Copilot menu in Visual Studio Code.](../media/inline-chat-1.png)
 
@@ -187,7 +191,7 @@ You can use an inline chat session to suggest a code update as follows:
 1. Ask GitHub Copilot Chat how to complete the update.
 1. Review the suggestions and select the best option.
 
-In this case, you could ask: `How can I update this code to ensure that the list doesn't include duplicate numbers?`
+In this case, you could ask: `Update this code to ensure that numbers doesn't include any duplicates`
 
 If you like the proposed code updates, you can select **Accept** and continue coding.
 
@@ -195,7 +199,7 @@ If you like the proposed code updates, you can select **Accept** and continue co
 
 If you don't like the proposed updates, you can ask Copilot Chat to generate another suggestion by selecting the **Rerun...** icon. The Rerun icon is displayed as a circular arrow that and appears below the prompt textbox.
 
-If you rerun the prompt and still don't get the results you need, try updating your prompt with additional context. Copilot Chat generates better suggestions when the prompt is clear, succinct, and accurate.
+If you rerun the prompt and still don't get the results you need, try updating your prompt with additional context. Copilot Chat generates better suggestions when the prompt is clear, succinct, and accurate. You can choose **Discard** to close the inline chat without making any changes.
 
 ### Smart actions
 
@@ -203,9 +207,9 @@ Some tasks are so common that they can be automated. GitHub Copilot Chat include
 
 The following smart actions are available:
 
-- **Explain This**: The `Explain This` action generates a natural language description of the selected code. This can be useful for understanding the purpose and functionality of a code snippet. The `Explain This` action is especially useful if you're working with unfamiliar code or need to explain the code to others.
-- **Fix This**: The `Fix This` action suggests a fix for the selected code. This can be helpful if you encounter an error or issue in your code and need guidance on how to resolve it. Copilot Chat can suggest changes to variables, control structures, or function calls that might resolve the issue.
-- **Review This**: The `Review This` action provides a code review of the selected code. This can be useful for identifying potential issues, improving code quality, and ensuring best practices are followed. The `Review This` action can help you identify bugs, performance bottlenecks, and security vulnerabilities in your code.
+- **Explain**: The `Explain` action generates a natural language description of the selected code. This can be useful for understanding the purpose and functionality of a code snippet. The `Explain` action is especially useful if you're working with unfamiliar code or need to explain the code to others.
+- **Fix**: The `Fix` action suggests a fix for the selected code. This can be helpful if you encounter an error or issue in your code and need guidance on how to resolve it. Copilot Chat can suggest changes to variables, control structures, or function calls that might resolve the issue.
+- **Review and Comment**: The `Review and Comment` action provides a code review of the selected code. This can be useful for identifying potential issues, improving code quality, and ensuring best practices are followed. The `Review and Comment` action can help you identify bugs, performance bottlenecks, and security vulnerabilities in your code.
 - **Generate Docs**: The `Generate Docs` action creates documentation for the selected code. This can be useful for documenting your codebase, especially if you're working on a project with multiple contributors or need to share your code with others.
 - **Generate Tests**: The `Generate Tests` action creates unit tests for the selected code. This can be helpful for ensuring the correctness and reliability of your code, especially if you're working on a project with complex logic or critical functionality.
 
@@ -269,15 +273,15 @@ Although using a `HashSet` works efficiently to ensure a collection of unique el
 
 ![Screenshot showing a compilation error in Visual Studio Code.](../media/smart-actions-2.png)
 
-Fortunately, you can use the **Fix This** smart action to correct the error. To use the **Fix This** smart action:
+Fortunately, you can use the **Fix** smart action to correct the error. To use the **Fix** smart action:
 
 1. Right-click on the code snippet that needs to be fixed. In this case, the code underlined in red.
 
-1. Select **Fix This** from the Copilot context menu.
+1. Select **Fix** from the Copilot context menu.
 
 1. Review the suggested fix and select **Accept** to apply the changes.
 
-The `Fix This` smart action generates one or more suggestions to fix an error. In this case, one of the suggestions uses the `ToList()` method to convert the `HashSet` to a `List` inside the call to `addPrimeNumbersInNumericList`. The resulting code will look similar to the following code snippet:
+The `Fix` smart action generates one or more suggestions to fix an error. In this case, one of the suggestions uses the `ToList()` method to convert the `HashSet` to a `List` inside the call to `addPrimeNumbersInNumericList`. The resulting code will look similar to the following code snippet:
 
 ```csharp
 // create a list of 100 random numbers between 1 and 1000
@@ -304,7 +308,7 @@ The third option that GitHub Copilot Chat provides for chat interactions is Quic
 
 You can use the Quick Chat feature of GitHub Copilot Chat when you want to have a quick, interactive conversation with the AI. This can be useful when you're trying to solve a problem, need help with understanding a piece of code, or want to brainstorm ideas. It's designed to feel like you're chatting with a fellow developer, making it a great tool for collaborative problem-solving.
 
-To open a Quick Chat window, you can press `Ctrl`+`Shift`+`I` in the Visual Studio Code editor, or you can open Quick Chat from the Visual Studio Code command palette.
+To open a Quick Chat window, you can press **Ctrl+Shift+Alt+L** in the Visual Studio Code editor, or you can open Quick Chat from the Copilot Chat menu.
 
 ![Screenshot showing how to access the Quick Chat in Visual Studio Code.](../media/quick-chat-1.png)
 

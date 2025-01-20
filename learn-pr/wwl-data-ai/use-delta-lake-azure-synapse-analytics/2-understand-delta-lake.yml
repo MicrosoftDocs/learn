@@ -2,6 +2,8 @@
 uid: learn.wwl.use-delta-lake-azure-synapse-analytics.understand-delta-lake
 title: Understand Delta Lake
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Delta Lake
   description: "Understand Delta Lake"
   ms.date: 10/11/2023

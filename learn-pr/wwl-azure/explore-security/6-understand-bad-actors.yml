@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-security.understand-bad-actors
 title: Understand bad actors
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand bad actors
   description: "The understand bad actors unit discusses some of the bad actors and tactics that may undermine security, as it relates to security in the broader module."
   ms.date: 09/23/2024

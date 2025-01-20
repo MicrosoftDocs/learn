@@ -2,6 +2,8 @@
 uid: learn.wwl.operate-with-devops.explore-shift-right-testing
 title: 'Explore shift-right testing'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Explore shift-right testing'
   description: "In this unit, explore the justification for shift-right testing and its criteria for assessing system reliability and fault injection."
   ms.date: 02/06/2024

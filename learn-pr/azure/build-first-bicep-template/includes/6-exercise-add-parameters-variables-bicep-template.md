@@ -1,4 +1,5 @@
-In this exercise, you'll update the Bicep template you previously created so it:
+In this exercise, you'll update the Bicep template you previously created so it:\
+
 - Accepts parameters for the resource locations and names.
 - Uses your business rules to select the right SKUs for the resources being deployed.
 

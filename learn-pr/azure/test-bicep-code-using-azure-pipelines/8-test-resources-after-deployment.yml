@@ -2,6 +2,8 @@
 uid: learn.azure.test-bicep-code-using-azure-pipelines.test-resources-after-deployment
 title: Test your resources after deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Test your resources after deployment
   description: Learn about testing your Azure resources in your deployment pipeline.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/8-test-resources-after-deployment.md)]
+

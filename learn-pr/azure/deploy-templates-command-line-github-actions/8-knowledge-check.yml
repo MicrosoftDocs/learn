@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-templates-command-line-github-actions.8-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 03/13/2024
@@ -49,3 +51,4 @@ quiz:
     - content: "Use GitHub Actions to control the deployment."
       isCorrect: false
       explanation: "GitHub Actions are a great way to deploy your infrastructure as code (IaC) in a controlled manner, but they don't provide any benefits to modularize your templates."
+

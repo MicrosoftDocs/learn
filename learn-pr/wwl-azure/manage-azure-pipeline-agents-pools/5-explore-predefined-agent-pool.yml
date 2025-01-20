@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-pipeline-agents-pools.explore-predefined-agent-pool
 title: Explore predefined agent pool
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore predefined agent pool
   description: "Explore predefined agent pool"
   ms.date: 05/07/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.explore-server-and-database-audit
 title: Explore server and database audit
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore server and database audit
   description: "Explore server and database audit"
   ms.date: 09/02/2022

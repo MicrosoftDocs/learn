@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-business-integration.introduction-to-rules
 title: Examine the configuration of rules in Azure IoT Central
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine the configuration of rules in Azure IoT Central
   description: This content is a part of Configure business integration in Azure IoT Central
   ms.date: 05/11/2023

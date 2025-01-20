@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.aks-cluster-upgrades-patches  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard  
   title: Apply cluster upgrades and security patches with Azure Kubernetes Service
   description: |
@@ -41,3 +43,4 @@ units:
 - learn.aks-cluster-upgrades-patches.summary
 badge:  
   uid: learn.aks-cluster-upgrades-patches.badge
+

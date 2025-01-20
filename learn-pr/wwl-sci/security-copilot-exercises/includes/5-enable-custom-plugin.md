@@ -5,10 +5,12 @@ The creation of the YAML or JSON plugin manifest file, which describes metadata 
 > [!NOTE]
 > The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
+>
+> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you'll find that the user interface still reflects the original name.
 
 ### Exercise
 
-For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in Microsoft Copilot for Security and will be accessing a GitHub repository to download the sample manifest file for the plugin.
+For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in Microsoft Security Copilot and will be accessing a GitHub repository to download the sample manifest file for the plugin.
 
 This exercise should take approximately **10** minutes to complete.
 
@@ -30,17 +32,17 @@ For this exercise, you'll be using a sample .yaml file, 'KQL_DefenderExample.yam
 
 In this task, you configure Copilot so that Copilot owners and contributors can add and manage their own custom plugins and for everyone in the organization. 
 
-1. Open the simulated environment by selecting this link: **[Microsoft Copilot for Security](https://app.highlights.guide/start/89f9d04d-283c-4788-8214-22e4d5b4b171?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/89f9d04d-283c-4788-8214-22e4d5b4b171?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. Select the **Home menu** (hamburger) icon
 
 1. Select **Owner settings**.
 
-1. Under Plugins for Copilot for Security,
+1. Under Plugins for Security Copilot,
     1. Set "Who can add and manage their own custom plugins" to **Contributors and owners**.
     1. Set "Who can add and manage custom plugins for everyone in the organization" to **Contributors and owners**.
 
-1. Return to the landing page. Select **Microsoft Copilot for Security** next to the home menu (hamburger) icon.
+1. Return to the landing page. Select **Microsoft Security Copilot** next to the home menu (hamburger) icon.
 
 #### Task: Upload the file for your custom plugin
 
@@ -52,7 +54,7 @@ In this task, you upload the file named, KQL_DefenderExample.yaml, that you down
 
 1. In the Add a plugin window, ensure the setting for Who can use this plugin is set to **Just me**.
 
-1. For this exercise, select **Copilot for Security Plugin** as this is the format for the .yaml file of your custom plugin.
+1. For this exercise, select **Security Copilot Plugin** as this is the format for the .yaml file of your custom plugin.
 
 1. From the upload box that appears, select **Upload file**, then select the file you previously downloaded to your local computer, **KQL_DefenderExample.yaml** then select **Add**.
 

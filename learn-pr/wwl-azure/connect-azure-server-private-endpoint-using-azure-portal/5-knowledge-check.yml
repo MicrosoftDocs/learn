@@ -2,9 +2,11 @@
 uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/31/2024
+  ms.date: 10/29/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

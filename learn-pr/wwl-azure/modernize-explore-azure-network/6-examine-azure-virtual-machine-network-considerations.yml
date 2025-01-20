@@ -2,6 +2,8 @@
 uid: learn.wwl.modernize-explore-azure-network.examine-azure-virtual-machine-network-considerations
 title: Examine Azure virtual machine networking considerations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure virtual machine networking considerations
   description: "Examine Azure virtual machine networking considerations"
   ms.date: 01/09/2024

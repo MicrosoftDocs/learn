@@ -2,6 +2,8 @@
 uid: learn.wwl.fundamentals-azure-ai-services.exercise
 title: Exercise - Explore Azure AI Services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Explore Azure AI Services
   description: "Exercise - Explore Azure AI Services"
   ms.date: 10/03/2024

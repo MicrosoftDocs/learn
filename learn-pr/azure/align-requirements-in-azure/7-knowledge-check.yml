@@ -2,9 +2,11 @@
 uid: learn.align-requirements-in-azure.7-knowledge-check
 title: Knowledge check - IaaS, PaaS & SaaS
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check - IaaS, PaaS, and SaaS
   description: Check what you learned about IaaS, PaaS, and SaaS.
-  ms.date: 10/13/2023
+  ms.date: 12/06/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
@@ -29,15 +31,15 @@ quiz:
     choices:
     - content: IaaS
       isCorrect: true
-      explanation: "All the resources used in this scenario can be implemented using IaaS. Only part of the solution could be implemented using PaaS, so it wouldn't be a good choice. Since this is a custom solution, we can assume there isn't a SaaS offering that delivers this functionality."
+      explanation: "All the resources used in this scenario can be implemented using IaaS. Only part of the solution could be implemented using PaaS, so it wouldn't be a good choice. Because it's a custom solution, we can assume there isn't a SaaS offering that delivers this functionality."
     - content: PaaS
       isCorrect: false
-      explanation: "All the resources used in this scenario can be implemented using IaaS. Only part of the solution could be implemented using PaaS, so it wouldn't be a good choice. Since this is a custom solution, we can assume there isn't a SaaS offering that delivers this functionality."
+      explanation: "All the resources used in this scenario can be implemented using IaaS. Only part of the solution could be implemented using PaaS, so it wouldn't be a good choice. Because it's a custom solution, we can assume there isn't a SaaS offering that delivers this functionality."
     - content: SaaS
       isCorrect: false
-      explanation: "All the resources used in this scenario can be implemented using IaaS. Only part of the solution could be implemented using PaaS, so it wouldn't be a good choice. Since this is a custom solution, we can assume there isn't a SaaS offering that delivers this functionality."
+      explanation: "All the resources used in this scenario can be implemented using IaaS. Only part of the solution could be implemented using PaaS, so it wouldn't be a good choice. Because it's a custom solution, we can assume there isn't a SaaS offering that delivers this functionality."
 
-  - content: "Which cloud service model is the best match for the following situation? You work at a start-up company with a small number of employees who need to collaborate. They need email, calendar scheduling, and somewhere to store documents. The team is technical but don't have the time or hardware to implement and manage a solution."
+  - content: "Which cloud service model is the best match for the following situation? You work at a start-up company with a few employees who need to collaborate. They need email, calendar scheduling, and somewhere to store documents. The team is technical but don't have the time or hardware to implement and manage a solution."
     choices:
     - content: IaaS
       isCorrect: false
@@ -61,3 +63,4 @@ quiz:
 ###    - content: SaaS
 ###      isCorrect: false
 ###      explanation: "VPN is an IaaS resource so this would be considered an IaaS solution."
+

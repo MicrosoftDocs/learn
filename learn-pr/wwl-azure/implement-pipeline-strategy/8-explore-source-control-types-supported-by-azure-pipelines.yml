@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-pipeline-strategy.explore-source-control-types-supported-by-azure-pipelines
 title: Explore source control types supported by Azure Pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore source control types supported by Azure Pipelines
   description: "Explore source control types supported by Azure Pipelines"
   ms.date: 05/26/2024

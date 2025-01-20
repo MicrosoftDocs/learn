@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-security-through-pipeline-using-devops
 metadata:
-  title: Implement security through a pipeline using Azure DevOps
-  description: "Implement security through a pipeline using Azure DevOps"
+  title: Implement security through a pipeline using Azure DevOps AZ-2001
+  description: "Implement security through a pipeline using Azure DevOps. (AZ-2001)"
   ms.date: 01/18/2024
   author: LuizMacedo
   ms.author: lumac

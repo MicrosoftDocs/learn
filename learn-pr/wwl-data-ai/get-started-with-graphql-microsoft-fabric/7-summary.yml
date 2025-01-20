@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.get-started-with-graphql-microsoft-fabric.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 10/24/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - ignite-2024
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-summary.md)]

@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-deploy-to-azure
 title: Exercise - Deploy your app on Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy your app on Azure
   description: "Deploy your app on Azure"
   ms.date: 9/5/2023

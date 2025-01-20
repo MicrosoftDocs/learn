@@ -2,12 +2,14 @@
 uid: learn.azure.characterize-dataset-azure-data-explorer.exercise-inventory-data
 title: 'Exercise: Take a first look at your data'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise
   description: "Exercise: take a first look at your data."
   ms.date: 04/02/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 5
 content: |

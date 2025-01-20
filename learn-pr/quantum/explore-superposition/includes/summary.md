@@ -1,4 +1,4 @@
-In this module, you learned about the concept of superposition in quantum physics, where a quantum system can exist in multiple states simultaneously. You've explored the idea of a "qubit" or "quantum bit", a quantum particle with two possible states that can exist in any superposition of these states. 
+Congratulations! In this module, you learned about the concept of superposition in quantum physics, where a quantum system can exist in multiple states simultaneously. You've explored the idea of a "qubit" or "quantum bit", a quantum particle with two possible states that can exist in any superposition of these states. 
 
 Here are some key takeaways from this module:
 

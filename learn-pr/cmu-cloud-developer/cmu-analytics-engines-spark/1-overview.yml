@@ -2,6 +2,8 @@
 uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.1-overview
 title: Spark overview
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Spark overview
   description: An overview of the Apache Spark distributed programming analytics engine.
   ms.date: 03/09/2022
@@ -31,3 +33,4 @@ quiz:
     - content: "Driver"
       isCorrect: true
       explanation: "Correct!"
+

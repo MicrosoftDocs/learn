@@ -2,9 +2,11 @@
 uid: learn.azdo.manage-delivery-plans.4-set-up-environment
 title: Exercise - Set up your environment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up your environment
   description: Create your Azure DevOps project.
-  ms.date: 10/06/2023
+  ms.date: 10/18/2024
   ms.custom: devdivchpfy22
   author: chcomley
   ms.author: chcomley
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-set-up-environment.md)]
+

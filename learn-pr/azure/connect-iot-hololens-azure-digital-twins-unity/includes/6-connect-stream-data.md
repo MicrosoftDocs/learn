@@ -46,6 +46,8 @@ Configure your `DeviceSimulator` with your Azure Digital Twins connection parame
 
 Configure the `DeviceSimulator` with the primary connection string for the IoT Hub that the ARM template created.
 
+[!INCLUDE [iot-authentication-device-connection-string.md](../../../iot/includes/iot-authentication-device-connection-string.md)]
+
 1. From the *Azure_config_settings.txt* file or from the output of your `get-content` command in PowerShell, locate the key/value pair for the `connectionString` key and copy the value. It should look similar to:
 
    ```console

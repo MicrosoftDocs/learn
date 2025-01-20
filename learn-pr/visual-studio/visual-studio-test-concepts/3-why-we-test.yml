@@ -6,8 +6,8 @@ metadata:
   title: Why we test
   description: Why do we test? Testing can help improve the quality of your code by consistently running checks against the behavior of your app. This practice makes your code more stable and builds confidence in your code health.
   ms.date: 03/08/2022
-  author: kendrahavens
-  ms.author: chnoring
+  author: CamSoper
+  ms.author: casoper
   ms.custom: team=nextgen, devdivchpfy22
   ms.topic: unit
 durationInMinutes: 5

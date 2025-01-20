@@ -2,12 +2,15 @@
 uid: learn.azure.move-azure-resources-to-another-resource-group.move-verify-resources
 title: Identify steps to move resources between Azure resource groups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify steps to move resources between Azure resource groups
   description: Learn what steps you might need to take to move and verify resources between Azure resource groups
   ms.date: 11/21/2023
-  author: tfitzmac
-  ms.author: tomfitz
+  author: mumian
+  ms.author: jgao
   ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/6-move-verify-resources.md)]
+

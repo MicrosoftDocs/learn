@@ -2,12 +2,16 @@
 uid: learn.wwl.implement-manage-external-identities.collaboration
 title: Manage external collaboration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage external collaboration
   description: "Manage external collaboration"
-  ms.date: 10/25/2023
+  ms.date: 12/18/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/3-collaboration.md)]

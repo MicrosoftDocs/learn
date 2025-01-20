@@ -67,4 +67,4 @@ The Azure Connected Machine agent supports the following operating systems:
 - Amazon Linux 2
 - Oracle Linux 7 and 8
 
-Choose the best response for each of the following questions, then select **Check your answers**.
+Choose the best response for each of the following questions.

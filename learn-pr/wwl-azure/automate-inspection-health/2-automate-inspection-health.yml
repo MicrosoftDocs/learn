@@ -2,6 +2,8 @@
 uid: learn.wwl.automate-inspection-of-health.automate-inspection-health
 title: Automate inspection of health
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate inspection of health
   description: "Automate inspection of health"
   ms.date: 05/28/2024

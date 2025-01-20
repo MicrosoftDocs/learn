@@ -2,6 +2,8 @@
 uid: learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.understand-automated-pull-request-validation
 title: Understand pull request validation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand pull request validation
   description: In this unit, you learn how automated checks run within the pull request lifecycle, and the types of automated review checks that you might perform on Bicep code.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-automated-pull-request-validation.md)]
+

@@ -1,5 +1,5 @@
 
-Microsoft Copilot for Security is embedded in Microsoft Defender XDR to enable security teams to quickly and efficiently investigate and respond to incidents. Microsoft Copilot for Microsoft Defender XDR supports the following features.
+Microsoft Security Copilot is embedded in Microsoft Defender XDR to enable security teams to quickly and efficiently investigate and respond to incidents. Microsoft Copilot for Microsoft Defender XDR supports the following features.
 
 - Summarize incidents
 - Guided responses
@@ -11,7 +11,7 @@ Microsoft Copilot for Security is embedded in Microsoft Defender XDR to enable s
 
 There are also some options that are common across all these features, including the ability to provide feedback on prompt responses and seamlessly moving to the standalone experience.
 
-As described in the introduction unit, in the embedded experience Copilot is able to invoke the product specific capabilities directly, providing processing efficiency. That said, to ensure access to these Microsoft Copilot for Security features, the Microsoft Defender XDR plugin needs to be enabled and this is done through the standalone experience. To learn more, refer to [Describe the features available in the standalone experience of Microsoft Copilot for Security](/training/modules/security-copilot-describe-core-features/2-describe-standalone-experience).
+As described in the introduction unit, in the embedded experience Copilot is able to invoke the product specific capabilities directly, providing processing efficiency. That said, to ensure access to these Microsoft Security Copilot features, the Microsoft Defender XDR plugin needs to be enabled and this is done through the standalone experience. To learn more, refer to [Describe the features available in the standalone experience of Microsoft Security Copilot](/training/modules/security-copilot-describe-core-features/2-describe-standalone-experience).
 
 :::image type="content" source="../media/manage-plugins-microsoft-defender-xdr.png" lightbox="../media/manage-plugins-microsoft-defender-xdr.png" alt-text="Screen capture of the Manage plugins window that highlights the Microsoft Defender XDR plugin.":::
 
@@ -119,33 +119,42 @@ The generated report depends on the incident information available from Microsof
 
 Sophisticated attacks often use files that mimic legitimate or system files to avoid detection. Copilot in Microsoft Defender XDR enables security teams to quickly identify malicious and suspicious files through AI-powered file analysis capabilities.
 
-There are many ways to access the detailed profile page of a specific file. For example, you can use the search feature, select on a link from the Alert process tree, Incident graph, Artifact timeline, or select an event listed in the Device timeline.
+There are many ways to access the detailed profile page of a specific file. For example, you can use the search feature, you can select files from the evidence and response tab of an incident, or use the Incident graph.
 
-In this example, you navigate to files through the incident graph of an incident with impacted files.  The incident graph shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went.
+In this example, you navigate to files through the incident graph of an incident with impacted files. The incident graph shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went.
 
-From the incident graph, selecting files displays the option to view files. Selecting view files opens a panel on the right side of the screen listing impacted files.
+From the incident graph, selecting files displays the option to view files. Selecting view files opens a panel on the right side of the screen listing impacted files. Selecting any file displays an overview of the file details and the option to analyze the file. Selecting Analyze opens the Copilot file analysis.
 
+# [Select file to analyze](#tab/select-file-to-analyze)
 :::image type="content" source="../media/defender-xdr-files-v3.png" lightbox="../media/defender-xdr-files-v3.png" alt-text="Screen capture showing the incident graph of an incident, with files highlighted.":::
 
-Selecting any file displays an overview of the file details and the option to analyze the file. Selecting Analyze opens the Copilot file analysis.
-
+# [File analysis](#tab/file-analysis)
 :::image type="content" source="../media/defender-xdr-file-analyze.png" lightbox="../media/defender-xdr-file-analyze.png" alt-text="Screen capture showing the file analyze option and the file analysis output from Copilot.":::
 
-### Summarize devices
+---
+
+#### Summarize devices and identities
 
 The device summary capability of Copilot in Defender enables security teams to get a device’s security posture, vulnerable software information, and any unusual behaviors. Security analysts can use a device’s summary to speed up their investigation of incidents and alerts.
 
 There are many ways to access a device summary. In this example, you navigate to the device summary through the incident assets page. Selecting the assets tab for an incident displays all the assets. From the left navigation panel, select Devices then select a specific device name. From the overview page that opens on the right is the option to select Copilot.
 
-:::image type="content" source="../media/defender-xdr-devices-v2.png" lightbox="../media/defender-xdr-devices-v2.png" alt-text="Screen capture showing the device summary option from the incident assets page.":::
+Similarly, Copilot in Microsoft Defender XDR can summarize identities.
 
-:::image type="content" source="../media/defender-xdr-device-summary.png" lightbox="../media/defender-xdr-device-summary.png" alt-text="Screen capture showing the device summary from Copilot.":::
+# [Device summary](#tab/device-summary)
+:::image type="content" source="../media/device-summary.png" lightbox="../media/device-summary.png" alt-text="Screen capture showing the device summary from Copilot.":::
+
+# [Identity summary](#tab/identity-summary)
+:::image type="content" source="../media/identity-summary.png" lightbox="../media/identity-summary.png" alt-text="Screen capture showing the identity summary from Copilot.":::
+
+---
 
 ### Common functionality across key features
 
 There are some options that are common across the features of Copilot for Microsoft Defender XDR.
 
 #### Providing Feedback
+
 As with the standalone experience, the embedded experience provides users a mechanism to provide feedback on the accuracy of the AI generated response. For any AI generated content, you can select the feedback prompt on the bottom right of the content window and select from the available options.
 
 :::image type="content" source="../media/verify-for-accuracy-v2.png" lightbox="../media/verify-for-accuracy-v2.png" alt-text="Screen capture of the feedback icon for AI generated content and the three options. The options are confirmed, it looks great, off target, inaccurate, and potentially harmful, inappropriate.":::

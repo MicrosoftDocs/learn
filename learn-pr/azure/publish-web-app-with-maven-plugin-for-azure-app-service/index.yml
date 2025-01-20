@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Develop Java web app on Azure using Maven
   description: Use the Maven plugin for Azure App Service to develop a Java web app and deploy the app to Azure.
   ms.date: 02/26/2024
@@ -39,3 +41,4 @@ units:
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.summary
 badge:
   uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.badge
+

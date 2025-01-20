@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Manage multiple environments by using Bicep and Azure Pipelines
   description: Build a deployment pipeline for Bicep IaC templates. Deploy to multiple environments by using pipeline template YAML files. Learn how to provide environment-specific parameters from your pipeline.
@@ -66,3 +68,4 @@ units:
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.summary
 badge:
   uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.badge
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api.review-write-heavy-index-patterns
 title: Review write-heavy index patterns
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review write-heavy index patterns
   description: "Review write-heavy index patterns"
   ms.date: 10/15/2024
@@ -13,3 +15,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/4-review-write-heavy-index-patterns.md)]
+

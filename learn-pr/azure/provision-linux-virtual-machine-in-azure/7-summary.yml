@@ -2,6 +2,8 @@
 uid: learn.provision-linux-virtual-machine-in-azure.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 10/30/2023
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
+

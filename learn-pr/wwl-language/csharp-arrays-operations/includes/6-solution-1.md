@@ -1,8 +1,8 @@
 The following solution provided is one of many possible solutions. The approach taken to solve this challenge was to break down the solution into four steps:
 
-1. Split the `pangram` string on the space character to create the string array `message`.
-1. Create a new `newMessage`array that will store a reversed copy of the "word" string from the `message` array.
-1. Loop through each element in the `message` array, reverse it and store this element in `newMessage` array.
+1. To create the string array `message`, split the `pangram` string on the space character.
+1. Create a new `newMessage`array that stores a reversed copy of the "word" string from the `message` array.
+1. Loop through each element in the `message` array, reverse it, and store this element in `newMessage` array.
 1. Join "word" strings from the array `newMessage`, using a space again, to create the desired single  string to write to the console.
 
 The final result of this example solution.
@@ -30,7 +30,7 @@ Console.WriteLine(result);
 
 ```
 
-This code is merely "*one possible solution*" because you could have taken different approaches to various steps in this process. As long as your output matches the following, you succeeded.
+This code is merely "*one possible solution*" because you can take different approaches to various steps in this process. As long as your output matches the following, you succeeded.
 
 ```Output
 ehT kciuq nworb xof spmuj revo eht yzal god

@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.examine-when-get-notification
 title: Examine when to get a notification
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine when to get a notification
   description: "Examine when to get a notification"
   ms.date: 05/08/2024

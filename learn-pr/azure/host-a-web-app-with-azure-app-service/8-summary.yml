@@ -2,6 +2,8 @@
 uid: learn.host-a-web-application-with-azure-web-apps.8
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 10/3/2024
@@ -35,3 +37,4 @@ quiz:
     - content: "SharePoint"
       isCorrect: true
       explanation: "Azure currently supports Azure Repos, GitHub, Bitbucket, and external Git repositories."
+

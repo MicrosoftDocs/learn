@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-real-time-dashboards-microsoft-fabric.get-started-with-real-time-dashboards
-title: Get started with Real-Time Dashboards
+title: Get started with real-time dashboards
 metadata:
-  title: Get started with Real-Time Dashboards
-  description: "Get started with Real-Time Dashboards"
-  ms.date: 05/29/2024
+  title: Get started with real-time dashboards
+  description: "Get started with real-time dashboards"
+  ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 15
+durationInMinutes: 6
 content: |
   [!include[](includes/2-get-started-with-real-time-dashboards.md)]

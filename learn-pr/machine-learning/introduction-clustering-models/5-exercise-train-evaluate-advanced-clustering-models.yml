@@ -2,6 +2,8 @@
 uid: learn.machine-learning.introduction-clustering-models.exercise-train-evaluate-advanced-models
 title: Exercise - Train and evaluate advanced clustering models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Train and evaluate advanced clustering models
   description: Exercise - Train and evaluate advanced clustering models.
   ms.date: 05/16/2022
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 15
 sandbox: true
 notebook: notebooks/5-exercise-train-evaluate-advanced-clustering-models.ipynb
+

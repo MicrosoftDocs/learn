@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-application-configuration-data.implement-azure-devops-secure-files
 title: Implement Azure DevOps secure files
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Azure DevOps secure files
   description: "Implement Azure DevOps secure files"
   ms.date: 05/28/2024

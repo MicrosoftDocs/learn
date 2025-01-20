@@ -8,7 +8,7 @@ The starter solution contains a fully functional tip calculator app.
 
 1. Using Visual Studio, open the starter solution in the **exercise3/TipCalculator** folder in the repo that you cloned at the start of the previous exercise.
 
-1. Open **MainPage.xaml**. Notice that all the views are displayed using one vertical `StackLayout` panel:
+1. Open **MainPage.xaml**. Notice that all the views are displayed using one `VerticalStackLayout` panel:
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -95,7 +95,7 @@ The starter solution contains a fully functional tip calculator app.
 
 1. Set the `Margin` property for all four buttons to `5`.
 
-The complete XAML markup for the page should look like this:
+The complete Extensible Application Markup Language (XAML) markup for the page should look like this:
 
 ```xml
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"

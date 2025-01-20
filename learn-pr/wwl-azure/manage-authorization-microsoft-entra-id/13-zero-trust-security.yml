@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.zero-trust-security
 title: Zero Trust security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Zero Trust security
   description: "Zero Trust security"
   ms.date: 08/07/2024

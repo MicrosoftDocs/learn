@@ -63,7 +63,7 @@ For example, consider a scenario where you own and operate a restaurant where cu
 >
 > **Review 3**: "*The croque monsieur avec frites was terrific. Bon appetit!*"
 
-You can use the text analytics capabilities in Azure AI Language to detect the language foreach of these reviews; and it might respond with the following results:
+You can use the text analytics capabilities in Azure AI Language to detect the language for each of these reviews; and it might respond with the following results:
 
 |Document|Language Name| ISO 6391 Code|Score|
 |---|---|---|---|

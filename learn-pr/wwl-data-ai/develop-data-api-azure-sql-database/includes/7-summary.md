@@ -4,7 +4,7 @@ One of the main takeaways from this module include understanding the functionali
 
 ### Additional reading
 
-- [Azure's Data API Builder Documentation](/azure/developer/javascript/tutorial/static-web-app-api?azure-portal=true)
+- [Azure's Data API Builder Documentation](/azure/static-web-apps/apis-overview)
 - [Introduction to Azure Static Web Apps](/azure/static-web-apps/overview?azure-portal=true)
 - [Azure Web App for Containers Documentation](/azure/app-service/containers?azure-portal=true)
 - [Developing a data API for Azure SQL Database](/azure/azure-sql/database/connect-query-dotnet-core?azure-portal=true)

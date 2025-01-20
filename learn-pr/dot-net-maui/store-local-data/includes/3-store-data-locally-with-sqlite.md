@@ -1,10 +1,10 @@
 SQLite is useful when you have relational data. Suppose you're building a social-media app. You need to store information about subscribers to the app. This data includes a unique ID for each user and their name. You can easily model this kind of relationship in a SQLite database.
 
-In this unit, you'll learn how to use SQLite in a .NET MAUI application by using SQLite-net.
+In this unit, you learn how to use SQLite in a .NET MAUI application by using SQLite-net.
 
 ## What is SQLite?
 
-SQLite is a lightweight cross-platform local database that's become an industry standard for mobile applications. SQLite doesn't require a server. The database is stored in a single disk file on the device's file system. All read and write operations are run directly against the SQLite disk file.
+SQLite is a lightweight cross-platform local database that's an industry standard for mobile applications. SQLite doesn't require a server. The database is stored in a single disk file on the device's file system. All read and write operations are run directly against the SQLite disk file.
 
 The SQLite native libraries are built into Android and iOS by default; however, the engine only supports a C/C++ API. This scenario isn't ideal for .NET developers, who want some way for SQLite and .NET to interact.
 
@@ -29,11 +29,11 @@ class User
 
 By using an object-relational mapper, you can take this initial `User` class and create a database table called `User` that has columns for the `Id` and `Username` fields in this class.
 
-SQLite-net is shipped as a NuGet package. You must add the **sqlite-net-pcl** package to your apps to use it. Use the NuGet package manager in Visual Studio. Additionally, if you want to run an app on Android, you must also add the **SQLitePCLRaw.provider.dynamic_cdecl** package.
+SQLite-net is shipped as a NuGet package. You must add the **sqlite-net-pcl** package to your apps to use it.
 
 ## How to connect to a SQLite database
 
-You can establish a connection to a SQLite database from an app through a `SQLiteConnection` object. This class is defined in the `SQLite` namespace, together with the other types and methods SQLite provides. When you instantiate this object, you pass in the filename for the database file. The constructor will then either open the file if it exists or create it if it isn't present.
+You can establish a connection to a SQLite database from an app through a `SQLiteConnection` object. This class is defined in the `SQLite` namespace, together with the other types and methods SQLite provides. When you instantiate this object, you pass in the filename for the database file. The constructor then either opens the file if it exists or creates it if it isn't present.
 
 The following code shows an example:
 
@@ -48,16 +48,16 @@ Remember that `filename` should point to a location in the app sandbox.
 
 ## How to create a table
 
-Recall that SQLite-net is an object-relational mapper, which means you can build your database schema from C# classes. SQLite-net can build a database table from an ordinary C# class, but there are many attributes that you can add to a class to provide additional metadata. This metadata helps SQLite to enforce features such as uniqueness and apply constraints to your data.
+Recall that SQLite-net is an object-relational mapper, which means you can build your database schema from C# classes. SQLite-net can build a database table from an ordinary C# class, but there are many attributes that you can add to a class to provide more metadata. This metadata helps SQLite to enforce features such as uniqueness and apply constraints to your data.
 
-The attributes available include:
+The available attributes include:
 
-- **`Table`**: Specify the name of the table if you want it to be something other than the class's name
-- **`PrimaryKey`**: Specify that a column is the primary key
-- **`AutoIncrement`**: Specify that a column should automatically increase in value when a new row is inserted
-- **`Column`**: Specify the name of a column if you want it to be something other than the property name
-- **`MaxLength`**: Specify the maximum number of characters that can be used in the column
-- **`Unique`**: Specify that the value in the column must be unique from all other rows
+- **`Table`**: Specify the name of the table if you want it to be something other than the class's name.
+- **`PrimaryKey`**: Specify that a column is the primary key.
+- **`AutoIncrement`**: Specify that a column should automatically increase in value when a new row is inserted.
+- **`Column`**: Specify the name of a column if you want it to be something other than the property name.
+- **`MaxLength`**: Specify the maximum number of characters that can be used in the column.
+- **`Unique`**: Specify that the value in the column must be unique from all other rows.
 
 The following code shows an updated version of the `User` class that applies these attributes:
 
@@ -116,17 +116,17 @@ The `Table` method retrieves all the rows from a table. On most occasions, you w
 
 SQLite-net supports many common LINQ queries including:
 
-- Where
-- Take
-- Skip
-- OrderBy
-- OrderByDescending
-- ThenBy
-- ElementAt
-- First
-- FirstOrDefault
-- ThenByDescending
-- Count
+- `Where`
+- `Take`
+- `Skip`
+- `OrderBy`
+- `OrderByDescending`
+- `ThenBy`
+- `ElementAt`
+- `First`
+- `FirstOrDefault`
+- `ThenByDescending`
+- `Count`
 
 With these methods, you can use the extension method syntax or the LINQ C# syntax. For example, here's a snippet of code that enables you to retrieve the details of a specified user:
 

@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-performance-monitoring.describe-azure-sql-insights
 title: Describe Azure SQL Insights
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure SQL Insights
   description: "Describe Azure SQL Insights"
   ms.date: 09/26/2022

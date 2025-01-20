@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-system-health-azure-stack-hub.find-your-cloud-id
 title: Find your Cloud ID
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Find your Cloud ID
   description: "Find your Cloud ID"
   ms.date: 08/10/2022

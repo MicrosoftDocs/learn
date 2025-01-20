@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-device-provisioning-service-coding-tools-access.sdks
 title: Examine the Device Provisioning Service SDKs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine the Device Provisioning Service SDKs
   description: "Examine the Device Provisioning Service SDKs"
   ms.date: 01/08/2024

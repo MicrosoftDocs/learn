@@ -2,6 +2,8 @@
 uid: learn.azure.migrate-azure-resources-bicep.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
+

@@ -14,7 +14,7 @@ In the following diagram, an Azure VM in Subnet A has an instance-level public I
 
 :::image type="content" source="../media/4-inbound-outbound.svg" alt-text="Diagram depicting inbound and outbound traffic flow for two subnets." border="false":::
 
-The following screenshot has an Azure VM that uses 20.107.71.22 as its public IP address that it uses to make inbound RDP connection to the VM. However, its IP address for outbound connections has a different address of 40.68.136.21. This public IP address is used by the Azure NAT Gateway service.
+The following screenshot has an Azure VM that uses 192.0.2.22 as its public IP address that it uses to make inbound RDP connection to the VM. However, its IP address for outbound connections has a different address of 203.0.113.22. This public IP address is used by the Azure NAT Gateway service.
 
 :::image type="content" source="../media/4-ip-address.png" alt-text="Screenshot that depicts the difference in an Azure VM's public IP address and its IP address for outbound connections.":::
 

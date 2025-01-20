@@ -4,7 +4,7 @@ Organizations in all sectors deal with a constant flow of data, and need to turn
 
 A Kusto query is a read-only request to process data and return results. The request is stated in plain text that's easy to read, author, and automate. A Kusto query has one or more query statements and returns data in a tabular or graph format.
 
-Tabular query statements contain zero or more *operators*. Each operator starts with a tabular input and returns a tabular output. Operators are sequenced by a pipe (`|`). Data flows, or is *piped*, from one operator to the next. The data is filtered or manipulated at each step and fed into the following step.
+Tabular query statements contain zero or more *operators*. Each operator starts with a tabular input and returns a tabular output. Operators are sequenced by a pipe (`|`). Data flows—or is *piped*—from one operator to the next. The data is filtered or manipulated at each step and fed into the following step.
 
 Think of it like a funnel, where you start out with an entire data table. Each time the data passes through another operator, it's filtered, rearranged, or summarized. Because the piping of information from one operator to another is sequential, the query's operator order is important. At the end of the funnel, you're left with a refined output.
 

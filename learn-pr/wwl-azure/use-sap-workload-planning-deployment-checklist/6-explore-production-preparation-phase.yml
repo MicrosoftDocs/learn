@@ -2,6 +2,8 @@
 uid: learn.wwl.use-sap-workload-planning-deployment-checklist.explore-production-preparation-phase
 title: Explore the production preparation phase
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the production preparation phase
   description: "Explore the production preparation phase of deploying SAP workloads to Azure."
   ms.date: 08/01/2024

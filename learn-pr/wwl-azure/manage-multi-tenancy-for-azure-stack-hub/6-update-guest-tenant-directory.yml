@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-multi-tenancy-for-azure-stack-hub.update-guest-tenant-directory
 title: Update guest tenant directory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Update guest tenant directory
   description: "Update guest tenant directory"
   ms.date: 10/26/2022

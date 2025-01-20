@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-sap-hana-azure-large-instances.manage-azure-via-azure-portal
 title: Manage Azure HANA on Azure (Large Instances) via the Azure portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Azure HANA on Azure (Large Instances) via the Azure portal
   description: "Manage Azure HANA on Azure (Large Instances) via the Azure portal"
   ms.date: 12/08/2021

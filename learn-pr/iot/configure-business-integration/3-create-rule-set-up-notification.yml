@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-business-integration.create-rule-set-up-notification
 title: Examine how to configure a rule with condition-based actions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine how to configure a rule with condition-based actions
   description: This content is a part of Configure business integration in Azure IoT Central
   ms.date: 05/11/2023

@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-your-azure-sql-database.2-restrict-network-access
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Restrict network access
   description: Learn how to restrict network access to your Azure SQL Server database.
   ms.date: 11/07/2023

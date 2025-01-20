@@ -2,6 +2,8 @@
 uid: learn.deploy-vms-from-vhd-templates.2-generalize-server-create-image
 title: Generalize a server
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Generalize a server
   description: Generalize a server
   ms.date: 09/09/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-generalize-server.md)]
+

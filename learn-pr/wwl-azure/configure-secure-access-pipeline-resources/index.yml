@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-secure-access-pipeline-resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure secure access to pipeline resources
   description: Configure secure access to pipeline resources.
   ms.date: 01/18/2024
@@ -62,3 +64,4 @@ units:
 - learn.wwl.configure-secure-access-pipeline-resources.summary
 badge:
   uid: learn.wwl.configure-secure-access-pipeline-resources.badge
+

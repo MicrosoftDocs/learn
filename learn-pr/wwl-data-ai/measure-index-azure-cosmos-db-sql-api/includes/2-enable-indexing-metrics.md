@@ -1,4 +1,4 @@
-You may often wonder how your index and indexing policy specifically impact a SQL query you authored. Azure Cosmos DB for NoSQL includes opt-in indexing metrics that illuminate how the current state of the index affects your query filters. The indexing metrics will go even further and recommend single or composite indexes to improve future query performance.
+You may often wonder how your index and indexing policy specifically impact a NoSQL query you authored. Azure Cosmos DB for NoSQL includes opt-in indexing metrics that illuminate how the current state of the index affects your query filters. The indexing metrics will go even further and recommend single or composite indexes to improve future query performance.
 
 Using the Azure Cosmos DB for NoSQL SDK for .NET, you can build a typical query request to select all items from your container.
 

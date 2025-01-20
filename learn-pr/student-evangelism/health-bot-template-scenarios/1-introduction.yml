@@ -2,6 +2,8 @@
 uid: learn.health-bot-template-scenarios.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: In this module, you'll use the triage and handoff scenario template to build a health bot that extends the built-in symptom checker and transitions the conversation to a live nurse.
   author: sfoteini
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

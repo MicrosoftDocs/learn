@@ -2,10 +2,12 @@
 uid: learn.azure.deploy-azure-resources-bicep.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary.
-  ms.date: 09/27/2024
+  ms.date: 10/31/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
+

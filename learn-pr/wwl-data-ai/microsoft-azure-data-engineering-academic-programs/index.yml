@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.microsoft-azure-data-engineering-academic-programs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Get tips and tricks for teaching DP-203 Microsoft Azure Data Engineering in academic programs
   description: Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials.
   ms.date: 06/02/2023
@@ -51,3 +53,4 @@ units:
 - learn.wwl.microsoft-azure-data-engineering-academic-programs.summary
 badge:
   uid: learn.wwl.get-tips-tricks-for-teaching-dp-203-microsoft-azure-data-engineering-academic-programs.badge
+

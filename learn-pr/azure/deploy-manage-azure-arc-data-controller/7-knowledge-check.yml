@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-manage-azure-arc-data-controller.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Demonstrate your understanding of Azure Arc data controller.
   ms.date: 07/22/2024
@@ -56,3 +58,4 @@ quiz:
     - content: "Application migrations"
       isCorrect: true
       explanation: "Correct. The data controller doesn't migrate your applications. You're responsible for updating connection strings and application code as needed after migrating to an Azure Arc-enabled data controller."
+

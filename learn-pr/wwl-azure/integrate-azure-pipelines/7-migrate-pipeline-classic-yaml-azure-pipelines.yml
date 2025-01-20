@@ -2,6 +2,8 @@
 uid: learn.wwl.integrate-azure-pipelines.migrate-pipeline-classic-yaml-azure-pipelines
 title: Migrate a pipeline from classic to YAML in Azure Pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate a pipeline from classic to YAML in Azure Pipelines
   description: "Migrate a pipeline from classic to YAML in Azure Pipelines"
   ms.date: 05/26/2024

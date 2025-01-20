@@ -147,7 +147,7 @@ In this step, you'll extend the `TwoCoins` method to find more pairs of coins wh
         }
     ```
 
-    Notice that `count` is incremented every time a pair is added to the array. This can cause an index out of bounds error if there are more than five pairs found. To prevent this error, you can add code to check the value of `count` and return the result the `result` array is filled.
+    Notice that `count` is incremented every time a pair is added to the array. This can cause an index out of bounds error if there are more than five pairs found. To prevent this error, you can add code to check the value of `count` and return the result of the `result` array is filled.
 
 1. Update the logic in the `TwoCoins` method with the following code:
 

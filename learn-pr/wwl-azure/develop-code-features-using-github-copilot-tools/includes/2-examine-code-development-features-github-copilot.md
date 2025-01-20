@@ -4,7 +4,7 @@ Visual Studio Code implements GitHub Copilot using two extensions, GitHub Copilo
 - The GitHub Copilot Chat extension generates code suggestions based on chat interactions or smart actions that act on selected code.
 
 > [!NOTE]
-> In this module, you use the GitHub Copilot extensions to develop new features and applications. There are two separate modules that cover using GitHub Copilot to create unit tests and improve existing code.
+> In this module, you use the GitHub Copilot extensions to develop new code features and applications. There are two separate modules that cover using GitHub Copilot to create unit tests and make improvements to existing code.
 
 ## GitHub Copilot tools in Visual Studio Code
 
@@ -38,7 +38,7 @@ Developers use code completions to accelerate the development of an initial code
 
 ## Generate code using GitHub Copilot Chat
 
-GitHub Copilot Chat helps you create code using chat interfaces and smart actions. For example, if you enter a prompt asking GitHub Copilot Chat to create a new method, GitHub Copilot can provide suggestions for one or more method signatures and implementations. Reviewing, and then accepting or discarding the suggestions helps you create an initial version of your code more quickly and accurately.
+GitHub Copilot Chat helps you create code using chat interfaces and smart actions. For example, if you enter a prompt asking GitHub Copilot Chat to create a new method, GitHub Copilot provides suggestions for one or more method signatures and implementations. Reviewing, and then accepting or discarding the suggestions helps you create an initial version of your code more quickly and accurately.
 
 > [!NOTE]
 > The GitHub Copilot Chat extension for Visual Studio Code includes a chat interface that processes user input. This training uses the terms *question* and *prompt* when referring to the input you provide during a chat session.
@@ -63,13 +63,13 @@ GitHub Copilot can scaffold more complex workspaces. For example, the following 
 
 ### Generate code with GitHub Copilot Chat using the Chat view
 
-The Chat view in Visual Studio Code provides an AI assistant that can help you develop your code. You can ask questions and get help from the AI assistant without leaving the Visual Studio Code environment. The Chat view helps you to develop code and explore coding options. You can also use the Chat view to ask questions about existing code, to get help with errors or logic issues, and to get information about using resources. The Chat view can help you learn new coding techniques, explore different coding styles, and improve your coding skills.
+The Chat view in Visual Studio Code provides access to an AI assistant that helps you develop code. You can ask questions and get help from your AI assistant without leaving the Visual Studio Code environment. The Chat view provides assistance when you're developing code and when you're exploring approaches to solving difficult coding problems. You can also use the Chat view to ask questions about existing code, to get help with errors or coding logic, and to get information about using project resources. The Chat view can help you learn new coding techniques, explore different coding styles, and improve your coding skills.
 
-The Chat view enables a chat conversation with GitHub Copilot in Visual Studio Code's Side Bar panel. You can access the Chat view by selecting **Chat** from the Activity Bar, or by pressing **Ctrl** + **Alt** + **I**. The Chat view displays a greeting message and sample questions the first time you open it.
+The Chat view opens in its own panel to the right of Visual Studio Code's code editor. To open the Chat view, select **Open Chat** from the Visual Studio Code Command Center or use the **Ctrl+Alt+I** keyboard shortcut.
 
 ![Screenshot showing the Chat view "welcome" message in Visual Studio Code.](../media/chat-view-1.png)
 
-If you need access to other Visual Studio Code views while using the Chat interface, you can open Chat in the editor by selecting **Open Chat in Editor** from the Chat view's context menu.
+If you need more screen space in Visual Studio Code, you can open the Chat view in a separate window by selecting **Open Chat in New Window** from the Chat view's context menu.
 
 ![Screenshot showing the Chat view responding to a question in Visual Studio Code.](../media/chat-view-2.png)
 
@@ -78,26 +78,24 @@ GitHub Copilot Chat provides rich and interactive results that include the follo
 - Simple text. For example, to provide a natural language response to a question.
 - Images. For example, to show a diagram or a screenshot.
 - Buttons. For example, to trigger an action.
-- References. For example, a Uniform Resource Identifiers (URIs) where you can find more information.
+- References. For example, Uniform Resource Identifiers (URIs) where you can find more information.
 - File trees. For example, to show a workspace preview when a chat participant proposes to create a new workspace.
 
 The following example shows the response for a prompt that's used to create an Express app. GitHub Copilot Chat provides a simple text explanation, a tree view showing a suggested workspace structure, and a button that can be used to create the new workspace.
 
 ![Screenshot showing the Chat view with the "Create Workspace" button displayed.](../media/chat-view-3.png)
 
-GitHub Copilot maintains a history of your conversation. The history is used to improve the responses and follow-up questions provided by GitHub Copilot Chat.
+GitHub Copilot maintains a history of your conversation. The history is used to improve the responses and follow-up questions suggested by GitHub Copilot Chat.
 
 #### Manage code blocks in the Chat view
 
 Depending on your question, GitHub Copilot Chat may return source code in the response. Source code is displayed as a code block, and you can manage the code in a few different ways.
 
-If you hover the mouse pointer over the code block, options for managing the code block are displayed. Your initial options are **Copy** and **Apply in Editor (Ctrl+Enter)**.
+If you hover the mouse pointer over the code block, options for managing the code block are displayed. Your initial options are **Apply in Editor**, **Insert At Cursor (Ctrl+Enter)**, and **Copy**.
 
 ![Screenshot showing a code block in the Chat view.](../media/chat-view-4.png)
 
-The More Actions (...) button displays the options to **Insert Into New File** and **Insert into Terminal (Ctrl+Alt+Enter)**.
-
-![Screenshot showing the "More Actions" button in the Chat view.](../media/chat-view-5.png)
+The More Actions (...) button displays the options to **Insert into Terminal (Ctrl+Alt+Enter)** and **Insert into New File**.
 
 If Copilot Chat detects that a code block contains a command, you can run it directly in the integrated terminal with **Insert into Terminal (Ctrl+Alt+Enter)**. This option creates or opens the active terminal and inserts the command text, ready for you to run.
 
@@ -105,7 +103,7 @@ If Copilot Chat detects that a code block contains a command, you can run it dir
 
 ### Generate code with GitHub Copilot Chat using inline chat
 
-The inline chat interface provides access to powerful AI features while keeping focused on your code. When you're working in the code editor, you can open the inline chat by pressing `Ctrl` + `I` on the keyboard.
+The inline chat interface provides access to powerful AI features while keeping you focused on your code. When you're working in the code editor, you can open the inline chat by pressing **Ctrl+I** on the keyboard.
 
 You can use inline chat in the following ways:
 
@@ -121,7 +119,7 @@ You can create a new code feature using inline chat by completing the following 
 
 1. Select code in the editor.
 
-1. Open the inline chat interface by pressing **Ctrl** + **I** on the keyboard.
+1. Open the inline chat interface by pressing **Ctrl+I** on the keyboard.
 
 1. Enter a prompt that describes the feature you want to create.
 
@@ -155,23 +153,25 @@ Here's an example that demonstrates how to create a regular expression for email
 
 It's always important to review the responses generated by GitHub Copilot Chat.
 
-Let's break down the regular expression generated by Copilot Chat to validate email addresses:
+Copilot Chat suggests the following regular expression can be used to validate email addresses: `^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$`.
+
+Let's take a minute to evaluate the suggested regular expression.
 
 `^`: This symbol indicates the start of a line. The email address must start here.
 
-`[a-zA-Z0-9._%+-]+`: This part of the expression matches one or more (+) of the characters inside the square brackets ([]). The characters can be lowercase (a-z), uppercase (A-Z), numeric (0-9), or special characters like period (.), underscore (_), percent (%), plus (+), or hyphen (-).
+`[a-zA-Z0-9_.+-]+`: This part of the expression matches one or more (+) of the characters inside the square brackets ([]). The characters can be lowercase (a-z), uppercase (A-Z), numeric (0-9), or special characters like underscore (_), period (.), plus (+), or hyphen (-).
 
 `@`: This part of the expression is the "at" symbol (@). It's a literal character in the email address.
 
-`[a-zA-Z0-9.-]+`: This part of the expression is similar to the first, but it's for the domain name portion of the email. It can contain lowercase, uppercase, numeric, or period (.) or hyphen (-) characters.
+`[a-zA-Z0-9-]+`: This part of the expression is similar to the first, but it's for the domain name portion of the email. It can contain one or more lowercase, uppercase, numeric, or hyphen (-) characters.
 
 `\.`: This part of the expression is a literal period (.) character. It separates the domain name from the domain extension.
 
-`[a-zA-Z]{2,}`: This part of the expression matches the domain extension. It can be two or more ({2,}) lowercase or uppercase letters.
+`[a-zA-Z0-9-.]+`: This part of the expression matches the domain extension. It can contain one or more lowercase, uppercase, numeric, hyphen (-), or period (.) characters.
 
 `$`: This symbol indicates the end of a line. The email address must end here.
 
-So, this regex matches any string that starts with one or more alphanumeric or special characters, followed by an @ symbol, then one or more alphanumeric or special characters, a period, and finally two or more alphabetic characters. In other words, it matches valid email addresses.
+Overall, this regular expression is a good starting point for validating email addresses, but it has some limitations and may not cover all valid email formats. You may want to consider using more comprehensive patterns or even dedicated email validation libraries for critical applications.
 
 ## Summary
 

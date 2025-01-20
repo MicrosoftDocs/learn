@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Use the Blazor router component to control your app's navigation
   description: "Learn how to ensure that user requests are routed to the right Blazor component."
-  ms.date: 8/24/2021
+  ms.date: 11/15/2024
   author: csharpfritz
   ms.author: jefritz
   ms.manager: markl
@@ -20,7 +20,7 @@ quiz:
       choices:
       - content: "RouteManager"
         isCorrect: false
-        explanation: "This isn't a real object in the Blazor framework."
+        explanation: "RouteManager isn't a real object in the Blazor framework."
       - content: "NavigationManager"
         isCorrect: true
         explanation: "NavigationManager allows you to get the full URI, a relative URI, and querystring information as the user interacts with the component."

@@ -2,6 +2,8 @@
 uid: learn.wwl.integrate-data-azure-data-factory.understand
 title: Understand Azure Data Factory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Azure Data Factory
   description: "Understand Azure Data Factory"
   ms.date: 06/05/2023

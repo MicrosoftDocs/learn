@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-defender-windows-client.antivirus
 title: Manage Microsoft Defender Antivirus
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Microsoft Defender Antivirus
   description: "Manage Microsoft Defender Antivirus"
   ms.date: 05/10/2023

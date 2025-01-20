@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.run-iot-edge-device-restricted-network-offline.configure-gateway
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure an IoT Edge device as gateway
   description: Configure an IoT Edge device as gateway
   ms.date: 05/01/2020
@@ -16,3 +18,4 @@ title: Configure an IoT Edge device as gateway
 durationInMinutes: 15
 content: |
   [!include[](includes/4-configure-gateway.md)]
+

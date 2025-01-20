@@ -2,6 +2,8 @@
 uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.describe
 title: Describe a modern data warehouse
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe a modern data warehouse
   description: "Describe a modern data warehouse"
   ms.date: 07/30/2024
@@ -17,3 +19,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-describe.md)]
+

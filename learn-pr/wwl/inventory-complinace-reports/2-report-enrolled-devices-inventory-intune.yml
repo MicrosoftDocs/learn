@@ -2,6 +2,8 @@
 uid: learn.wwl.inventory-compliance-reports.report-enrolled-devices-inventory-intune
 title: Report enrolled devices inventory in Intune
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Report enrolled devices inventory in Intune
   description: "Report enrolled devices inventory in Intune"
   ms.date: 11/23/2023

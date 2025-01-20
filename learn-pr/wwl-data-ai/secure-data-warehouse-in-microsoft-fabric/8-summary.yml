@@ -2,10 +2,12 @@
 uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 5/23/2024
-  author: wwlpublish
+  ms.date: 11/10/2024
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 2

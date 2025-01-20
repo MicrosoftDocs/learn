@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid:  learn.student-evangelism.machine-learning-model-nasa.4-split-data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Split data into training and testing datasets
   description: Learn how to call functions to split data into two groups.
   ms.date: 09/04/2024

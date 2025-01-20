@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-azure-hybrid-services
 metadata:
   title: Introduction to Azure hybrid cloud services
   description: Get an introductory overview of hybrid cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.
-  ms.date: 08/01/2024
+  ms.date: 11/21/2024
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: module

@@ -2,6 +2,8 @@
 uid: learn.oxford.image-classification-azure-sphere.design-image-classification-model
 title: Design an image classification model on Azure Sphere
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design an image classification model on Azure Sphere
   description: In this section, we explain the architecture of running an image classification model on Azure Sphere.
   ms.date: 07/20/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/2-design-image-classification-model.md)]
+

@@ -1,6 +1,6 @@
 ## Requirements for .NET MAUI development
 
-To create .NET MAUI apps with .NET 8, you need to install [Visual Studio version 17.8](https://visualstudio.microsoft.com/) or newer with the following workload installed:
+To create .NET MAUI apps with .NET 9, you need to install [Visual Studio version 17.12](https://visualstudio.microsoft.com/) or newer with the following workload installed:
 
 - .NET Multi-Platform App UI development
 

@@ -2,6 +2,8 @@
 uid: learn.wwl.train-evaluate-deep-learn-models.convolutional-neural-networks
 title: Convolutional neural networks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Convolutional neural networks
   description: "Convolutional neural networks"
   ms.date: 07/10/2024

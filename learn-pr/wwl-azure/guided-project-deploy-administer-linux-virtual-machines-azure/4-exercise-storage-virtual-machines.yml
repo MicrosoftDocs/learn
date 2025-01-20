@@ -2,6 +2,8 @@
 uid: learn.wwl.guided-project-deploy-administer-linux-virtual-machines-azure.exercise3
 title: Exercise - Configure storage for virtual machines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Configure storage for virtual machines
   description: "Exercise - Configure storage for Linux virtual machines"
   ms.date: 07/30/2024

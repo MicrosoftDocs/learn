@@ -2,6 +2,8 @@
 uid: learn.wwl.integrate-azure-pipelines.detail-templates
 title: Detail templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Detail templates
   description: "Detail templates"
   ms.date: 05/26/2024

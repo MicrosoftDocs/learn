@@ -2,6 +2,8 @@
 uid: learn.azdo.deploy-kubernetes.2-why-container-orchestration
 title: Why is container orchestration important?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Why is container orchestration important?
   description: Understand the benefits of Kubernetes and when to use it.
   ms.date: 02/01/2024
@@ -48,3 +50,4 @@ quiz:
     - content: "Very little. The application should require no changes and the containers can be produced as before. Only one or more Kubernetes manifest files that specify container requirements will need to be added."
       isCorrect: true
       explanation: "The application and containers don't need to account for Kubernetes, but Kubernetes needs to account for the containers."
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-compare-models-azure-machine-learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and explore the Responsible AI dashboard for a model in Azure Machine Learning
   description: Create and explore the Responsible AI dashboard for a model in Azure Machine Learning using the Python SDK v2.
   author: wwlpublish
@@ -37,3 +39,4 @@ units:
 - learn.wwl.manage-compare-models-azure-machine-learning.summary
 badge:
   uid: learn.wwl.manage-compare-models-azure-machine-learning.badge
+

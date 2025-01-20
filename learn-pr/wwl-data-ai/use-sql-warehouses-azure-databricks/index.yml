@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.use-sql-warehouses-azure-databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use SQL Warehouses in Azure Databricks
   description: Use SQL Warehouses in Azure Databricks
   ms.date: 09/05/2024
@@ -38,3 +40,4 @@ units:
 - learn.wwl.use-sql-warehouses-azure-databricks.summary
 badge:
   uid: learn.wwl.use-sql-warehouses-azure-databricks.badge
+

@@ -2,6 +2,8 @@
 uid: learn.design-health-model-mission-critical-workload.health-states
 title: Health states, metrics, and thresholds
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Health states, metrics, and thresholds
   description: Learn about health states, metrics, and thresholds in a health model.
   ms.date: 08/05/2024
@@ -42,3 +44,4 @@ quiz:
     - content: "Not all parts of the system have the same criticality. Sometimes, suboptimal performance doesn't break the application for its users."
       isCorrect: true
       explanation: "Correct. It's important to distinguish between nonhealthy states that break the application for its users and states that can potentially break the user experience."
+

@@ -2,6 +2,8 @@
 uid: learn.optimize-operations-with-automanage.create-custom-configuration-profile
 title: Create and assign a custom configuration profile
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and assign a custom configuration profile
   description: Get step by step guidance on creating and assigning a custom configuration profile using the Azure portal.
   ms.date: 12/19/2023

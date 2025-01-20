@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-cassandra-workloads-cosmos-db.cassandra-cosmos-db-migration-planning
 title: Cassandra to Cosmos DB migration planning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Cassandra to Cosmos DB migration planning
   description: "Cassandra to Cosmos DB migration planning"
   ms.date: 02/01/2021

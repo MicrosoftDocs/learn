@@ -2,7 +2,7 @@ In this module, you learned how to manage changes to your repository source by u
 
 You learned about:
 
-- Reviewing branches and their importance to pull requests. 
+- Reviewing branches and their importance to pull requests.
 - Defining what a pull request is.
 - Learning how to create a pull request.
 - Understanding the different pull request statuses.

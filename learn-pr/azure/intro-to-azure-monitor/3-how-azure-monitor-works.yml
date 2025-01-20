@@ -2,13 +2,16 @@
 uid: learn.azure.intro-to-azure-monitor.how-azure-monitor-works
 title: Metrics and Logs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Azure Monitor Metrics and Logs
   description: Learn about using Azure Monitor Metrics for collecting and analyzing quantitative data, and Azure Monitor Logs for textual and unstructured data.
-  ms.date: 08/31/2023
+  ms.date: 11/13/2024
   author: guywi-ms
   ms.author: guywild
   ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-how-azure-monitor-works.md)]
+

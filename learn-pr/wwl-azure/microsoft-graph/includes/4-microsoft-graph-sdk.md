@@ -6,6 +6,9 @@ The core library provides a set of features that enhance working with all the Mi
 
 In this unit, you learn about the available SDKs and see some code examples of some of the most common operations.
 
+> [!NOTE]
+> The code samples in this unit are based on version 5.65 of the Microsoft Graph .NET SDK.
+
 ## Install the Microsoft Graph .NET SDK
 
 The Microsoft Graph .NET SDK is included in the following NuGet packages:
@@ -51,7 +54,7 @@ var graphClient = new GraphServiceClient(deviceCodeCredential, scopes);
 
 ## Read information from Microsoft Graph
 
-To read information from Microsoft Graph, you first need to create a request object and then run the `GET` method on the request.
+To read information from Microsoft Graph, you first need to create a request object, and then run the `GET` method on the request.
 
 ```csharp
 // GET https://graph.microsoft.com/v1.0/me
@@ -62,20 +65,19 @@ var user = await graphClient.Me
 
 ## Retrieve a list of entities
 
-Retrieving a list of entities is similar to retrieving a single entity except there are other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition.  The `$orderBy` query parameter requests that the server provides the list of entities sorted by the specified properties.
+Retrieving a list of entities is similar to retrieving a single entity except there are other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition. The `$orderBy` query parameter requests that the server provides the list of entities sorted by the specified properties.
 
 ```csharp
-// GET https://graph.microsoft.com/v1.0/me/messages?$select=subject,sender&$filter=<some condition>&orderBy=receivedDateTime
-
+// GET https://graph.microsoft.com/v1.0/me/messages?
+// $select=subject,sender&$filter=subject eq 'Hello world'
 var messages = await graphClient.Me.Messages
-    .Request()
-    .Select(m => new {
-        m.Subject,
-        m.Sender
-    })
-    .Filter("<filter condition>")
-    .OrderBy("receivedDateTime")
-    .GetAsync();
+    .GetAsync(requestConfig =>
+    {
+        requestConfig.QueryParameters.Select =
+            ["subject", "sender"];
+        requestConfig.QueryParameters.Filter =
+            "subject eq 'Hello world'";
+    });
 ```
 
 ## Delete an entity
@@ -84,32 +86,29 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 ```csharp
 // DELETE https://graph.microsoft.com/v1.0/me/messages/{message-id}
-
-string messageId = "AQMkAGUy...";
-var message = await graphClient.Me.Messages[messageId]
-    .Request()
+// messageId is a string containing the id property of the message
+await graphClient.Me.Messages[messageId]
     .DeleteAsync();
 ```
 
 ## Create a new entity
 
-For SDKs that support a fluent style, new items can be added to collections with an `Add` method. For template-based SDKs, the request object exposes a `post` method. 
+For fluent style and template-based SDKs, new items can be added to collections with a `POST` method. 
 
 ```csharp
 // POST https://graph.microsoft.com/v1.0/me/calendars
-
 var calendar = new Calendar
 {
-    Name = "Volunteer"
+    Name = "Volunteer",
 };
 
 var newCalendar = await graphClient.Me.Calendars
-    .Request()
-    .AddAsync(calendar);
+    .PostAsync(calendar);
 ```
 
 ## Other resources
 
 * [Microsoft Graph REST API v1.0 reference](/graph/api/overview)
+
 
 

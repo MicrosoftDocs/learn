@@ -1,13 +1,11 @@
-Now that you have reviewed this module, you should be able to:
+In this module, you learned about:
 
- -  Learn about Express Route, its use cases and implementation
- -  Understand Express Route configuration and when to choose the appropriate SKU
- -  Learn about ExpressRoute Global Reach and connecting branch offices
- -  Explore Express Route FastPath to improve performance
- -  Understand Express Route peering, Private and Microsoft peering
+ -  ExpressRoute and how to design your network with ExpressRoute.
+ -  ExpressRoute configuration choices and how to decide on the appropriate SKU based on your requirements.
+ -  ExpressRoute Global Reach.
+ -  ExpressRoute FastPath.
+ -  ExpressRoute peering. 
 
 ## Resources
 
-Use these resources to discover more.
-
- -  [ExpressRoute documentation \| Microsoft Learn](/azure/expressroute/)
+-  [ExpressRoute documentation \| Microsoft Docs](/azure/expressroute/)

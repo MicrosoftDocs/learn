@@ -100,7 +100,7 @@ Use the following steps to complete this challenge:
     Q1: Sales: $2,098,948.87, Profit: $266,548.80, Profit Percentage: 7.00%
     By Department:
     ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
+    │ Department            │             Sales │            Profit │ Profit Percentage │
     ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
     │ Accessories           │       $227,101.75 │        $31,619.50 │             11.00 │
     │ Children's Clothing   │       $242,999.83 │        $32,129.93 │              9.00 │
@@ -115,7 +115,7 @@ Use the following steps to complete this challenge:
     Q2: Sales: $2,035,550.16, Profit: $253,516.25, Profit Percentage: 11.00%
     By Department:
     ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
+    │ Department            │             Sales │            Profit │ Profit Percentage │
     ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
     │ Accessories           │       $284,685.66 │        $34,442.28 │             17.00 │
     │ Children's Clothing   │       $285,753.69 │        $36,672.14 │             20.00 │
@@ -130,7 +130,7 @@ Use the following steps to complete this challenge:
     Q3: Sales: $1,959,738.57, Profit: $249,994.39, Profit Percentage: 12.00%
     By Department:
     ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
+    │ Department            │             Sales │            Profit │ Profit Percentage │
     ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
     │ Accessories           │       $268,249.09 │        $33,662.40 │             16.00 │
     │ Children's Clothing   │       $262,402.85 │        $32,550.39 │              7.00 │
@@ -145,7 +145,7 @@ Use the following steps to complete this challenge:
     Q4: Sales: $2,056,371.76, Profit: $273,122.03, Profit Percentage: 8.00%
     By Department:
     ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
+    │ Department            │             Sales │            Profit │ Profit Percentage │
     ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
     │ Accessories           │       $329,926.72 │        $49,008.34 │             18.00 │
     │ Children's Clothing   │       $161,918.53 │        $23,062.50 │              9.00 │
@@ -194,7 +194,7 @@ Use the following steps to complete this challenge:
     Q1: Sales: $2,147,913.85, Profit: $259,780.34, Profit Percentage: 6.00%
     By Department:
     ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
+    │ Department            │             Sales │            Profit │ Profit Percentage │
     ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
     │ Accessories           │       $250,965.22 │        $32,137.16 │             10.00 │
     │ Children's Clothing   │       $240,996.59 │        $30,624.26 │             20.00 │
@@ -208,7 +208,7 @@ Use the following steps to complete this challenge:
     
     Top 3 Sales Orders:
     ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │
+    │ Product ID            │     Quantity Sold │        Unit Price │       Total Sales │            Profit │ Profit Percentage │
     ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
     │ SPRT-702-S-BK-CA1     │                96 │           $295.33 │        $28,351.45 │         $4,536.23 │             16.00 │
     │ OUTR-609-M-GR-JP1     │                92 │           $243.62 │        $22,412.59 │         $4,482.52 │             20.00 │
@@ -218,7 +218,7 @@ Use the following steps to complete this challenge:
     Q2: Sales: $2,003,845.44, Profit: $244,961.30, Profit Percentage: 5.00%
     By Department:
     ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
+    │ Department            │             Sales │            Profit │ Profit Percentage │
     ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
     │ Accessories           │       $209,829.83 │        $26,133.08 │             12.00 │
     │ Children's Clothing   │       $262,972.68 │        $34,363.99 │             15.00 │
@@ -232,7 +232,7 @@ Use the following steps to complete this challenge:
     
     Top 3 Sales Orders:
     ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │
+    │ Product ID            │     Quantity Sold │        Unit Price │       Total Sales │            Profit │ Profit Percentage │
     ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
     │ CHLD-368-XL-WT-UK2    │                87 │           $290.23 │        $25,250.21 │         $4,292.54 │             17.00 │
     │ SPRT-732-S-YL-UK2     │                86 │           $265.58 │        $22,839.86 │         $3,882.78 │             17.00 │
@@ -242,7 +242,7 @@ Use the following steps to complete this challenge:
     Q3: Sales: $2,261,407.77, Profit: $277,077.73, Profit Percentage: 18.00%
     By Department:
     ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
+    │ Department            │             Sales │            Profit │ Profit Percentage │
     ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
     │ Accessories           │       $291,046.00 │        $36,782.43 │              9.00 │
     │ Children's Clothing   │       $221,364.18 │        $26,993.37 │              7.00 │
@@ -256,7 +256,7 @@ Use the following steps to complete this challenge:
     
     Top 3 Sales Orders:
     ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │
+    │ Product ID            │     Quantity Sold │        Unit Price │       Total Sales │            Profit │ Profit Percentage │
     ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
     │ MENS-120-XL-BK-UK3    │                98 │           $235.28 │        $23,057.74 │         $4,611.55 │             20.00 │
     │ OUTR-609-XS-OR-JP1    │                96 │           $270.57 │        $25,975.01 │         $4,156.00 │             16.00 │
@@ -266,7 +266,7 @@ Use the following steps to complete this challenge:
     Q4: Sales: $2,076,474.81, Profit: $255,995.79, Profit Percentage: 20.00%
     By Department:
     ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Department       │       Sales       │       Profit      │ Profit Percentage │
+    │ Department            │             Sales │            Profit │ Profit Percentage │
     ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┤
     │ Accessories           │       $230,203.59 │        $26,018.53 │             20.00 │
     │ Children's Clothing   │       $208,243.96 │        $24,647.41 │              5.00 │
@@ -280,7 +280,7 @@ Use the following steps to complete this challenge:
     
     Top 3 Sales Orders:
     ┌───────────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┬───────────────────┐
-    │      Product ID       │   Quantity Sold   │    Unit Price     │   Total Sales     │      Profit       │ Profit Percentage │
+    │ Product ID            │     Quantity Sold │        Unit Price │       Total Sales │            Profit │ Profit Percentage │
     ├───────────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┼───────────────────┤
     │ UNDR-819-XS-BL-US2    │                87 │           $293.23 │        $25,510.94 │         $4,847.08 │             19.00 │
     │ SPRT-710-S-OR-JP1     │                87 │           $279.28 │        $24,297.67 │         $4,130.60 │             17.00 │

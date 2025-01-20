@@ -210,7 +210,7 @@ For example, as you enter the word `dice` slowly, IntelliSense will show all C# 
 
     Notice that the popup window includes three sections, one on the left and two on the right.
 
-    On the right side, you should see `int Random.Next(int minValue, int maxValue)` in the top section, and `Returns a non-negative random integer.` in the bottom section. The `int` defines the return type for the method. In other words, when this version of the method is executed, it will return a value of type `int`.
+    On the right side, you should see `int Random.Next()` in the top section, and `Returns a non-negative random integer.` in the bottom section. The `int` defines the return type for the method. In other words, when this version of the method is executed, it will return a value of type `int`.
 
     On the left side of the IntelliSense popup, it displays `1/3`.
 

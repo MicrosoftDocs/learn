@@ -48,7 +48,7 @@ The Threat intelligence node on the navigation panel of the Microsoft Defender p
 
 :::image type="content" source="../media/threat-intelligence.png" alt-text="A screenshot of the selectable options for threat intelligence on the left navigation panel of the Microsoft Defender portal.":::
 
-To view a screen capture from each of the categories, select the tab from the image that follows. In each case, there's a side panel that shows the embedded Microsoft Copilot for Security capability.
+To view a screen capture from each of the categories, select the tab from the image that follows. In each case, there's a side panel that shows the embedded Microsoft Security Copilot capability.
 
 # [Threat analytics](#tab/threat-analytics)
 :::image type="content" source="../media/threat-analytics.png" lightbox="../media/threat-analytics.png" alt-text="A screenshot of the threat analytics dashboard.":::
@@ -64,9 +64,9 @@ To view a screen capture from each of the categories, select the tab from the im
 
 ---
 
-### Microsoft Copilot for Security integration with Microsoft Threat Intelligence
+### Microsoft Security Copilot integration with Microsoft Threat Intelligence
 
-Copilot for Security integrates with Microsoft Defender TI. With the Defender TI plugin enabled, Copilot delivers information about threat activity groups, indicators of compromise (IOCs), tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape.
+Security Copilot integrates with Microsoft Defender TI. With the Defender TI plugin enabled, Copilot delivers information about threat activity groups, indicators of compromise (IOCs), tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape.
 
 Microsoft Defender Threat Intelligence capabilities in Copilot are built-in prompts that you can use, but you can also enter your own prompts based on the capabilities supported. The image that follows shows only a subset of the capabilities supported.
 
@@ -77,7 +77,7 @@ Copilot also includes a builtin promptbook that deliver information from Defende
 - Vulnerability impact assessment - Generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
 - Threat actor profile - Generates a report profiling a known activity group, including suggestions to defend against their common tools and tactics.
 
-Copilot integration with Defender TI can also be experienced through the embedded experience. You can experience Copilot for Security's capability to look up threat intelligence in the following pages of the Microsoft Defender portal:
+Copilot integration with Defender TI can also be experienced through the embedded experience. You can experience Security Copilot's capability to look up threat intelligence in the following pages of the Microsoft Defender portal:
 
 - Threat analytics
 - Intel profiles

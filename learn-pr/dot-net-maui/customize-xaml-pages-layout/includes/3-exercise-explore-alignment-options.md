@@ -1,6 +1,6 @@
-In this exercise, you use a .NET MAUI application to see the effect of the four primary layout options when applied to a view contained in a `Grid`. You don't write code in the exercise. Instead, you use the provided solution and select buttons to change the layout options of a label.
+In this exercise, you use a .NET Multi-platform App UI (MAUI) application to see the effect of the four primary layout options when applied to a view contained in a `Grid`. You don't write code in the exercise. Instead, you use the provided solution and select buttons to change the layout options of a label.
 
-[!include[](../../../includes/dotnet8-sdk-version.md)]
+[!include[](../../../includes/dotnet9-sdk-version.md)]
 
 ## Open the starter solution
 

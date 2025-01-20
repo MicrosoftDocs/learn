@@ -2,6 +2,8 @@
 uid: learn.secure-azure-openai-authentication-authorization.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Demonstrate your understanding of the module by answering these questions
   ms.date: 10/16/2024
@@ -9,7 +11,7 @@ metadata:
   ms.author: sayoung
   ms.topic: unit
 durationInMinutes: 4
-content: Choose the best response for each question. Then select **Check your answers**.
+content: Choose the best response for each question. 
 quiz:
   questions:
     - content: "Why are Microsoft Entra identities and Managed Identities better to use for authentication to Azure OpenAI?"
@@ -49,3 +51,4 @@ quiz:
   
 
   
+

@@ -1,6 +1,6 @@
-Flyout navigation is a type of navigation where a window of menu items slides (or flies out) from the side of the device's screen. It's invoked by tapping on what's called a "hamburger" menu, or an icon with three horizontal lines stacked on top of each other.
+Flyout navigation is a type of navigation where a window of menu items slides (or flies out) from the side of the device's screen. It's invoked by tapping on a "hamburger" menu, an icon with three horizontal lines stacked on top of each other.
 
-In this unit, you learn how to build an app that implements flyout navigation.
+In this unit, you learn how to build an app that implements flyout navigation in a .NET Multi-platform App UI (MAUI).
 
 ## What is flyout navigation?
 
@@ -18,7 +18,7 @@ Because the flyout menu isn't always visible, it can be used to switch context b
 
 You use the `FlyoutItem` class to implement flyout navigation in .NET MAUI. `FlyoutItem` is part of the [Shell app development](/dotnet/maui/fundamentals/shell) paradigm provided by .NET MAUI.
 
-Navigation with a flyout in .NET MAUI occurs when a `FlyoutItem` item is tapped. The `FlyoutItem` automatically switches what's displayed in your app. You specify what gets displayed when a `FlyoutItem` is tapped by setting its `ShellContent` property. That property points to a page in your application.
+Navigation with a flyout in .NET MAUI occurs when a `FlyoutItem` item is tapped. The `FlyoutItem` automatically switches the content displayed in your app. You specify what gets displayed when a `FlyoutItem` is tapped by setting its `ShellContent` property. That property points to a page in your application.
 
 The `FlyoutItem` needs to be hosted in a `Shell` page, which serves as your application's main page. And you can have as many `FlyoutItem`s as you'd like.
 

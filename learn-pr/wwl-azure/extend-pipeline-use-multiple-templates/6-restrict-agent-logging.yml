@@ -2,6 +2,8 @@
 uid: learn.wwl.extend-pipeline-use-multiple-templates.restrict-agent-logging
 title: Restrict agent logging
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Restrict agent logging
   description: "Restrict agent logging."
   ms.date: 1/25/2023

@@ -26,11 +26,11 @@ Module 3 Demos
 - Demo 3.2: [Configure and deploy self-service password reset](https://aka.ms/SC300exam)
 - Demo 3.3: [Implement and test a conditional access policy](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_22_CreateAndManageACatalogOfResourcesInAADEntitlementManagement.md)
 - Demo 3.4: [Configure Azure AD multifactor authentication registration policy](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_02_WorkingWithTenantProperties.md)
-- Demo 3.5: [Using Azure Key Vault for managed identities](https://aka.ms/ldc)
+- Demo 3.5: [Using Azure Key Vault for managed identities](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_16_UsingAzureKeyVaultForManagedIdentities.md)
 
 Module 3 Labs
 
-- Lab 3.1: [Enable Azure AD multifactor authentication](https://aka.ms/ldc)
+- Lab 3.1: [Enable Azure AD multifactor authentication](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_08_EnableAzureADMultiFactorAuthentication.md)
 - Lab 3.2: [Configure and deploy self-service password reset](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_05_AddGuestUsersToTheDirectory.md)
 - Lab 3.3: [Azure AD authentication for Windows and Linux VM](https://aka.ms/LearnTV)
 - Lab 3.4: [Assign Azure resource roles in privileged identity](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Instructions/Labs/Lab_28_MonitorIdentitySecureScore.md)

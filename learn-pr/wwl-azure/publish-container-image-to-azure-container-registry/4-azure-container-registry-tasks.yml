@@ -2,6 +2,8 @@
 uid: learn.wwl.publish-container-image-to-azure-container-registry.build-manage-containers-tasks
 title: Build and manage containers with tasks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Build and manage containers with tasks
   description: "Build and manage containers with tasks"
   ms.date: 07/15/2024

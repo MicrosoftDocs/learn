@@ -2,9 +2,11 @@
 uid: learn.wwl.migrate-file-server-workloads-using-storage-migration-service.requirements
 title: Storage migration requirements
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Storage migration requirements
   description: "Storage migration requirements"
-  ms.date: 06/01/2022
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit

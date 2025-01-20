@@ -33,11 +33,11 @@ The following table lists the authentication methods and the services that can u
 
 ### Password
 
-This method is the only one that you can’t disable.
+This method is the only one that you can't disable.
 
 ### Security questions
 
-This method is available only for nonadministrative accounts that use Self-Service Password Reset.
+This method is available only for non-administrative accounts that use Self-Service Password Reset.
 
 * Azure stores security questions privately and in a security-enhanced manner on a user object in the directory. Only users can answer the questions, and only during registration. An administrator can't read or change a user's questions or answers.
 
@@ -55,17 +55,17 @@ Windows Hello for Business provides reliable, fully integrated biometric authent
 
 ### FIDO2 security keys
 
-FIDO2 security keys are an unphishable, standards-based passwordless authentication method that can come in any form factor. Fast Identity Online (FIDO) is an open standard for passwordless authentication.
+FIDO2 security keys are an unphishable, standards-based, and passwordless authentication method that can come in any form factor. Fast Identity Online (FIDO) is an open standard for passwordless authentication.
 
-Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC.
+Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices but could also use Bluetooth or NFC.
 
-FIDO2 security keys can be used to sign in to their Microsoft Entra ID or Microsoft Entra hybrid joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers.
+FIDO2 security keys can be used to sign in to their Microsoft Entra ID or Microsoft Entra hybrid joined Windows 10 devices. They can get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers.
 
 ### Microsoft Authenticator app
 
-This method is available for Android and iOS. Users can register their mobile app at [https://aka.ms/mfasetup](https://aka.ms/mfasetup).
+This method is available for Android and iOS. Users can [register their mobile app here](https://aka.ms/mfasetup).
 
-* The Microsoft Authenticator app helps prevent unauthorized access to accounts and helps stop fraudulent transactions by pushing a notification to your smartphone or tablet. Users view the notification and confirm or deny the request.
+* The Microsoft Authenticator app helps prevent unauthorized access to accounts. It pushes a notification that helps stop fraudulent transactions to your smartphone or tablet. Users view the notification, and confirm or deny the request.
 
 * Users can use the Microsoft Authenticator app or a third-party app as a software token to generate an OATH verification code. After the user enters the username and password, the users enter the code provided by the app on the sign-in screen. The verification code provides a second form of authentication. Users can also set the Microsoft Authenticator app to deliver a push notification that they select and approve to sign in.
 
@@ -87,7 +87,7 @@ Azure uses an automated voice system to call the number and the owner uses the k
 
 ### App password
 
-Certain nonbrowser apps don't support Microsoft Entra multifactor authentication. If users are enabled for Microsoft Entra multifactor authentication and try to use nonbrowser apps, they're unable to authenticate. The app password allows users to continue to authenticate.
+Certain non-browser apps don't support Microsoft Entra multifactor authentication. If users are enabled for Microsoft Entra multifactor authentication and try to use nonbrowser apps, they're unable to authenticate. The app password allows users to continue to authenticate.
 
 ## Monitoring adoption
 

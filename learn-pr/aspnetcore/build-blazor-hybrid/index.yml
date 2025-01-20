@@ -3,7 +3,7 @@ uid: learn.build-blazor-hybrid
 metadata:
   title: Build a mobile and desktop app with Blazor Hybrid and .NET MAUI
   description: Learn how to set up your development environment and build your first cross-platform hybrid app with Blazor, .NET MAUI, and C#.
-  ms.date: 10/20/2023
+  ms.date: 12/05/2024
   author: jamesmontemagno
   ms.author: jamont
   manager: coxford

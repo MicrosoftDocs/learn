@@ -2,6 +2,8 @@
 uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.exercise-implement-high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance
 title: Exercise - high availability and disaster recovery - Azure Arc-enabled SQL Managed Instance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - high availability and disaster recovery - Azure Arc-enabled SQL Managed Instance
   description: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance.
   ms.date: 08/06/2024
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 20
 content: |
   [!include[](includes/exercise-implement-high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.md)]
+

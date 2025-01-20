@@ -81,4 +81,4 @@ In Microsoft Teams, the system logs various aspects of communication, such as:
 
 ## Knowledge check
 
-Choose the best response for the question below, then select **Check your answers**.
+Choose the best response for the question below.

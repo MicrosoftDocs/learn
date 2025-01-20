@@ -5,8 +5,8 @@ metadata:
   title: Different types of testing and the testing pyramid
   description: There are many different types of testing, including unit testing, performance testing, load testing, and UI testing. These types of tests all have different advantages in improving software quality.
   ms.date: 03/08/2022
-  author: kendrahavens
-  ms.author: chnoring
+  author: CamSoper
+  ms.author: casoper
   ms.custom: team=nextgen, devdivchpfy22
   ms.topic: unit
 durationInMinutes: 4

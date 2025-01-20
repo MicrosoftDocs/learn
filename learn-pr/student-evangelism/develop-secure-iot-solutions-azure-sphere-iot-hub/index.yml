@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Develop secure IoT Solutions for Azure Sphere with IoT Hub"
   description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Hub"
   ms.date: 07/20/2024
@@ -65,3 +67,4 @@ units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-partnering-with-rtos-environment
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.knowledge-check
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.summary
+

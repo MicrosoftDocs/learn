@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-device-connections-communication.troubleshoot-device-message-routing
 title: Examine message routing troubleshooting
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine message routing troubleshooting
   description: "Examine message routing troubleshooting"
   ms.date: 12/06/2023

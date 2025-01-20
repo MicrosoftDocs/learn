@@ -91,7 +91,7 @@ Let's create the Azure VM with Windows 11 Enterprise using Azure Cloud Shell.
     ```output
     {
         "fqdns": "",
-        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/aksedge-training/providers/Microsoft.Compute/virtualMachines/myVM",
+        "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/aksedge-training/providers/Microsoft.Compute/virtualMachines/myVM",
         "location": "westus3",
         "macAddress": "00-00-00-00-00-00",
         "powerState": "VM running",

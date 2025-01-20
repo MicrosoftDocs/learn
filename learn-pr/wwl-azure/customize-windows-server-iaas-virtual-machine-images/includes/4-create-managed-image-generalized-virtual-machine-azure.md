@@ -1,5 +1,3 @@
-
-
 In this demonstration, you'll learn to:
 
 - Generalize the Windows VM using Sysprep.exe.

@@ -2,6 +2,8 @@
 uid: learn.wwl.deliver-with-devops.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 02/06/2024
@@ -57,3 +59,4 @@ quiz:
         - content: "To store and reuse data across steps in a workflow."
           isCorrect: false
           explanation: "Incorrect. This is the purpose of a variable in a GitHub Actions workflow."
+

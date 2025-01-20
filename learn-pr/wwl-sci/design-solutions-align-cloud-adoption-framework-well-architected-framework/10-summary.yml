@@ -5,8 +5,8 @@ metadata:
   title: Summary - Design solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)
   description: "Summary of module on the topic: Design solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)."
   ms.date: 3/14/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 3
 content: |

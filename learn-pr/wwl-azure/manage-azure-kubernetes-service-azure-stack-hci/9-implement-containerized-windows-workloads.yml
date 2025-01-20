@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.implement-containerized-windows-workloads
 title: Implement containerized Windows workloads
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement containerized Windows workloads
   description: "Implement containerized Windows workloads"
   ms.date: 06/09/2021

@@ -2,6 +2,8 @@
 uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.create-configure
 title: Learn about Redis for Java and Spring Boot applications
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Learn about Redis for Java and Spring Boot applications
   description: Learn about Redis, Azure Cache for Redis, and Spring Data Redis, and how to use them with Java and Spring Boot applications.
   author: judubois
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-create-configure.md)]
+

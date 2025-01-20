@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-migration-options.explore-downtime-optimized-database-move-only
 title: Explore downtime-optimized DMO
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore downtime-optimized DMO
   description: "Explore the downtime-optimized DMO migration option, where large tables are migrated as part of the uptime phase."
   ms.date: 08/01/2024

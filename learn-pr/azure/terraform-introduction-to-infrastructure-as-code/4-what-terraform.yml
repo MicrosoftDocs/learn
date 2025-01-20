@@ -2,6 +2,8 @@
 uid: learn.azure.terraform-introduction-to-infrastructure-as-code.what-terraform
 title: What is Terraform?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Terraform?
   description: Learn what Terraform is, and how it works with Azure.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 3 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/4-what-terraform.md)]
+

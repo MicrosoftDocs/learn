@@ -15,14 +15,14 @@ Tailwind Traders is planning on moving apps from on-premises servers to Azure-ho
 - Resources that support system-assigned managed identities allow you to:
    - Enable or disable managed identities at the resource level.
    - Use RBAC roles to grant permissions.
-   - Review create, read, update, delete (CRUD) operations in Azure Activity logs.
+   - Review create, read, update, or delete (CRUD) operations in Azure Activity logs.
    - Review sign-in activity in Microsoft Entra sign-in logs.
 
 - Managed identities can be enabled or disabled on an app at any time.
 
 There are two types of managed identities:
 
-- **System-assigned**: Some Azure services allow you to enable a managed identity directly on a service instance. When you enable a system-assigned managed identity, an identity is created in Microsoft Entra that's tied to the lifecycle of that service instance. When the resource is deleted, Azure automatically deletes the identity. By design, only that Azure resource can use that identity to request tokens from Microsoft Entra ID.
+- **System-assigned**: Some Azure services allow you to enable a managed identity directly on a service instance. When you enable a system-assigned managed identity, an identity is created in Microsoft Entra tied to the lifecycle of that service instance. When the resource is deleted, Azure automatically deletes the identity. By design, only that Azure resource can use that identity to request tokens from Microsoft Entra ID.
 
 - **User-assigned**: You can create a managed identity as a standalone Azure resource. Create a user-assigned managed identity and assign it to one or more instances of an Azure service. A user-assigned identity is managed separately from the resources that use it.
 
@@ -30,7 +30,7 @@ There are two types of managed identities:
 
 Now you're ready to think about how you're going to implement managed identities for your Tailwind Traders VMs on Azure.
 
-- **Consider your Azure services and your targets**: Build your Tailwind Traders apps with Azure App Service and access Azure Storage, and by using managed identities, you won't have to manage any credentials.
+- **Consider your Azure services and your targets**: Build your Tailwind Traders apps with Azure App Service and access Azure Storage, and by using managed identities.
 
    | Build your app with an Azure service | Access a target without managing credentials |
    | --- | --- |
@@ -38,12 +38,12 @@ Now you're ready to think about how you're going to implement managed identities
 
 - **Consider using system-assigned managed identities**. Implement system-assigned managed identities for Tailwind Traders workloads that are contained within a single Azure resource, or for workloads that need independent identities.
 
-- **Consider choosing user-assigned managed identities**. Choose user-assigned managed identities for workloads that run on multiple resources that can share a single identity. This type of identity is also good for workloads that need pre-authorization to a secure resource as part of a provisioning flow. User-assigned identities are suited for workloads with resources that are recycled frequently, but where permissions should stay consistent.
+- **Consider choosing user-assigned managed identities**. Choose user-assigned managed identities for workloads that run on multiple resources that can share a single identity. This type of identity is also good for workloads that need preauthorization to a secure resource as part of a provisioning flow. User-assigned identities are suited for workloads with resources that are recycled frequently, but where permissions should stay consistent.
 
 - **Consider the benefits of managed identities for VMs in Azure**. Review these scenarios that highlight the benefits to being able to use managed identities for VMs that are hosted in Azure:
 
    - You decide to run the Tailwind Traders stock-tracking apps inside an Azure-hosted VM that has an assigned managed identity. This setup allows the app to use an Azure key vault to authenticate without having to store a username and password in code.
-   - Now that your company has migrated your VM from on-premises to Azure, you can remove the hard-coded authentication details from the application code. You want to use the more secure managed identity token for access to Azure resources.
+   - Once your company migrates your VM from on-premises to Azure, you can remove the hard-coded authentication details from the application code. You want to use the more secure managed identity token for access to Azure resources.
 
 - **Consider Azure Key Vault authentication for Azure resources**. Authenticate managed identities for Azure resources by integrating with Azure Key Vault.
 

@@ -2,6 +2,8 @@
 uid: learn.azure.build-first-deployment-stack.exercise-update-delete-deployment-stack
 title: Exercise - Update and delete a deployment stack
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Update and delete a deployment stack
   description: Learn how to update and delete an existing deployment stack.
   ms.date: 08/01/2023
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 10
 content: | 
   [!include[](includes/5-exercise-update-delete-deployment-stack.md)]
+

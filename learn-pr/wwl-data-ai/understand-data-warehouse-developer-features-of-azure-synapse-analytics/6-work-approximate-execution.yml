@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.work-with-approximate-execution
 title: Work with approximate execution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Work with approximate execution
   description: "Work with approximate execution"
   ms.date: 06/23/2022

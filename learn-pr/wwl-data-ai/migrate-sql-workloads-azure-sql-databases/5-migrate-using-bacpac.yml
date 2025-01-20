@@ -2,6 +2,8 @@
 uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.migrate-using-bacpac
 title: Migrate to Azure SQL Database using BACPAC
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate to Azure SQL Database using BACPAC
   description: "Learn how to migrate to Azure SQL Database using BACPAC."
   ms.date: 10/31/2023

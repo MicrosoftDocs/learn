@@ -1,5 +1,4 @@
-
-The final option we consider is relational table data storage by using Azure Cosmos DB.
+The final option we consider is relational table data storage using Azure Cosmos DB.
 
 [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/) is a fully managed NoSQL database service for modern app development. As a fully managed service, Azure Cosmos DB takes database administration off your hands with automatic management, updates, and patching. It also handles capacity management with cost-effective serverless and automatic scaling options that respond to application needs to match capacity with demand.
 

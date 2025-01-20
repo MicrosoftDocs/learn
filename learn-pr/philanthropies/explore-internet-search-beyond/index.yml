@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.philanthropies.explore-internet-search-beyond
+metadata:
+  author: v-downesmary
+  ms.author: v-downesmary
+  ms.date: 10/07/2024
+  ms.service: artificial-intelligence
+  title: "AI fluency: Explore internet search and beyond"    
+  description: Discover the intricacies of internet search engines and reasoning engines in this comprehensive module. Learn how search engines crawl, index, and rank content to deliver relevant results, and explore the emerging field of reasoning engines. Enhance your skills in prompt engineering and critical thinking to optimize search queries and evaluate search technologies effectively.
+  ms.topic: module
+  moduleType: standard
+  ms.collection: philanthrpies-ai-copilot
+title: Explore internet search and beyond
+summary: Learn the intricacies of internet search engines and reasoning engines, and enhance your skills in prompt engineering and critical thinking.
+abstract: |
+  By completing this module, you'll be able to:
+  - Evaluate the differences between a search engine and a reasoning engine by comparing their functionalities, underlying technologies, and applications. 
+  - Assess the effectiveness of the crawling, indexing, and ranking processes in search engines, and understand how these processes contribute to the retrieval of relevant search results. 
+  - Assess the importance of prompt engineering by evaluating the effectiveness of various prompts, critiquing best practices in prompting, and determining how critical thinking plays a crucial part. 
+prerequisites: A basic understanding of AI 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.philanthropies.explore-internet-search-beyond.introduction
+- learn.philanthropies.explore-internet-search-beyond.the-evolution-of-search
+- learn.philanthropies.explore-internet-search-beyond.how-does-a-search-engine-work
+- learn.philanthropies.explore-internet-search-beyond.reasoning-engines
+- learn.philanthropies.explore-internet-search-beyond.new-way-to-search-microsoft-copilot
+- learn.philanthropies.explore-internet-search-beyond.prompt-engineering
+- learn.philanthropies.explore-internet-search-beyond.critical-thinking
+- learn.philanthropies.explore-internet-search-beyond.knowledge-check
+- learn.philanthropies.explore-internet-search-beyond.summary
+badge:
+  uid: learn.philanthropies.explore-internet-search-beyond-badge

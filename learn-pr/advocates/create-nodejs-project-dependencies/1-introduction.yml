@@ -2,6 +2,8 @@
 uid: learn.azure.create-nodejs-project-dependencies.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Build your app faster by using packages from npm. Manage your package dependencies and your Node.js project by configuring the package.json file.  
   author: diberry
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

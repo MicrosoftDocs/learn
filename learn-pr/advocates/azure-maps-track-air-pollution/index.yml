@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.advocates.use-azure-maps-to-track-air-pollution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Track global air quality with Azure Maps
   description: This module shows how to track global air quality by using the Azure Maps web SDK and pollution data from a third-party air quality API.
   ms.collection: TBD
@@ -52,3 +54,4 @@ units:
 
 badge:
   uid: learn.use-azure-maps-to-track-air-pollution.badge
+

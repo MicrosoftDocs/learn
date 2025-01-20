@@ -2,6 +2,8 @@
 uid: learn.introduction-to-azure-compute-gallery.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 08/16/2023
@@ -47,3 +49,4 @@ quiz:
     - content: Both RBAC Sharing and RBAC + Community gallery sharing would enable you to share your images with another tenant.
       isCorrect: false
       explanation: "Incorrect: Neither RBAC Sharing nor RBAC + Community gallery sharing enable you to share your images with another tenant."
+

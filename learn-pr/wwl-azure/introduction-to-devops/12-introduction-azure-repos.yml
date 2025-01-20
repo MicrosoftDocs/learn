@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-devops.introduction-azure-repos
 title: Introduction to Azure Repos
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Repos
   description: "Introduction to Azure Repos"
   ms.date: 05/29/2024

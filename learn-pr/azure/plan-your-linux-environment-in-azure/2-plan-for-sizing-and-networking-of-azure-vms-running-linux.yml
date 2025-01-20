@@ -2,6 +2,8 @@
 uid: learn.plan-your-linux-environment-in-azure.plan-for-sizing-and-networking-of-azure-vms-running-linux
 title: Plan for sizing and networking
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan for sizing and networking
   description: Understand and plan for resource dependencies, sizing, networking, and remote access for Azure Linux virtual machines.
   ms.date: 10/16/2023
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-for-sizing-and-networking-of-azure-vms-running-linux.md)]
+

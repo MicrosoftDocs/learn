@@ -2,6 +2,8 @@
 uid: learn.azure.build-first-deployment-stack.create-deployment-stack
 title: Create a deployment stack
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a deployment stack
   description: Learn how to create and deploy a deployment stack with Bicep.
   ms.date: 08/01/2023
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 7
 content: | 
   [!include[](includes/2-create-deployment-stack.md)]
+

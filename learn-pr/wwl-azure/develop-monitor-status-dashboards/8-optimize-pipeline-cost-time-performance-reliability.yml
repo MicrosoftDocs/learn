@@ -2,6 +2,8 @@
 uid: learn.wwl.develop-monitor-status-dashboards.optimize-pipeline-cost-time-performance-reliability
 title: Optimize a pipeline for cost, time, performance, and reliability
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Optimize a pipeline for cost, time, performance, and reliability
   description: "Optimize a pipeline for cost, time, performance, and reliability"
   ms.date: 05/08/2024

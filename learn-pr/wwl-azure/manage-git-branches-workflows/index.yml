@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-git-branches-workflows
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design and implement branch strategies and workflows
   description: Design and implement branch strategies and workflows
   ms.date: 05/24/2024
@@ -55,3 +57,4 @@ units:
 - learn.wwl.manage-git-branches-workflows.summary
 badge:
   uid: learn.wwl.manage-git-branches-workflows.badge
+

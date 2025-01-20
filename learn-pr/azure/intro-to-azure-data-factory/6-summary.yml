@@ -2,13 +2,16 @@
 uid: learn.intro-to-azure-data-factory.6-summary  
 title: Summary  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary  
   title: Summary
   description: Summary
-  ms.date: 02/13/2024  
+  ms.date: 10/22/2024  
   author: jonburchel
   ms.author: jburchel  
   ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-summary.md)]
+

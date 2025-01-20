@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.philanthropies.explore-responsible-ai
+metadata:
+  author: yoosunee
+  ms.author: andreapark
+  ms.date: 10/18/2024
+  title: "AI fluency: Explore responsible AI"
+  description: Learn how to explore and implement responsible AI practices, including best practices, principles, and the global implications of human-AI interaction.
+  ms.topic: module
+  moduleType: standard
+  ms.service: artificial-intelligence
+  ms.collection: philanthrpies-ai-copilot
+title: Explore responsible AI
+summary: Understand and implement responsible AI practices, including best practices, principles, and the global implications of human-AI interaction.
+abstract: |
+  By completing this module, you'll be able to:
+  - Evaluate the ethical implications in AI by critically analyzing AI-generated content and cross-verifying information from multiple sources. 
+  - Assess the ethical and security concerns associated with deepfakes, including their potential misuse in spreading misinformation and impersonation. 
+  - Evaluate the global human-AI interactions by analyzing key factors such as data privacy, algorithmic bias, transparency, and legal liability. 
+
+prerequisites: Basic understanding of AI, generative AI, and reasoning engines.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.philanthropies.explore-responsible-ai.introduction
+- learn.philanthropies.explore-responsible-ai.using-ai-responsibly-best-practices
+- learn.philanthropies.explore-responsible-ai.principles-responsible-ai
+- learn.philanthropies.explore-responsible-ai.deepfakes-copyright-ai
+- learn.philanthropies.explore-responsible-ai.human-ai-interaction-global-implications
+- learn.philanthropies.explore-responsible-ai.knowledge-check
+- learn.philanthropies.explore-responsible-ai.summary
+badge:
+  uid: learn.philanthropies.explore-responsible-ai-badge

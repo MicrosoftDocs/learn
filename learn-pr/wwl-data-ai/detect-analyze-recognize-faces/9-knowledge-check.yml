@@ -2,11 +2,13 @@
 uid: learn.wwl.detect-analyze-recognize-faces.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 03/11/2024
+  ms.author: berryivor
+  ms.date: 12/13/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -47,3 +49,4 @@ quiz:
     - content: "Compare the Age, head pose, and hair color for the faces in the reception and ward photo's."
       isCorrect: false
       explanation: "That's incorrect. The most efficient approach is to compare the two faces using the detected face ID within 24 hours."
+

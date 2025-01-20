@@ -4,12 +4,11 @@ title: 'Exercise: Pivoting and grouping sets'
 metadata:
   title: 'Exercise: Pivoting and grouping sets'
   description: "Exercise: Pivoting and grouping sets"
-  ms.date: 03/18/2024
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
-labId: 105118
-labModal: true
+  zone_pivot_groups: sql-database
 durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-pivoting-grouping-sets.md)]

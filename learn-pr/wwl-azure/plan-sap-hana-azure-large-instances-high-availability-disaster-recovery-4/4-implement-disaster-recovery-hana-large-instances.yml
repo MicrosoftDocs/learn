@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.implement-hana-large-instances
 title: Implement disaster recovery on HANA Large Instances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement disaster recovery on HANA Large Instances
   description: "Implement disaster recovery on HANA Large Instances"
   ms.date: 12/08/2021

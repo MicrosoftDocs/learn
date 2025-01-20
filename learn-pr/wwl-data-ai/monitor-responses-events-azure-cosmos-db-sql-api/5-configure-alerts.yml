@@ -2,6 +2,8 @@
 uid: learn.wwl.monitor-responses-events-azure-cosmos-db-sql-api.configure-alerts
 title: Configure Alerts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Alerts
   description: "Configure Alerts"
   ms.date: 10/18/2022

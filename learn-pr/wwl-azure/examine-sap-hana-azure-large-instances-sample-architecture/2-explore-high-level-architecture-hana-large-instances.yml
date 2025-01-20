@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.explore-high-level-architecture-of
 title: Explore the high-level architecture of SAP HANA on Azure (Large Instances)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore the high-level architecture of SAP HANA on Azure (Large Instances)
   description: "Explore the high-level architecture of SAP HANA on Azure (Large Instances)"
   ms.date: 07/07/2022

@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.verify-machines-connected
 title: Verify that your machines are connected
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Verify that your machines are connected
   description: "Verify that your machines are connected"
   ms.date: 06/11/2024

@@ -37,7 +37,7 @@ description: Load test website home page
 testPlan: SampleTest.jmx
 testType: JMX
 engineInstances: 1
-subnetId: /subscriptions/abcdef01-2345-6789-0abc-def012345678/resourceGroups/sample-rg/providers/Microsoft.Network/virtualNetworks/load-testing-vnet/subnets/load-testing
+subnetId: /subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/sample-rg/providers/Microsoft.Network/virtualNetworks/load-testing-vnet/subnets/load-testing
 configurationFiles:
   - 'sampledata.csv'
 zipArtifacts:
@@ -53,7 +53,7 @@ autoStop:
 secrets:
   - name: my-secret
     value: https://akv-contoso.vault.azure.net/secrets/MySecret/abc1234567890def12345
-keyVaultReferenceIdentity: /subscriptions/abcdef01-2345-6789-0abc-def012345678/resourceGroups/sample-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/sample-identity
+keyVaultReferenceIdentity: /subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/sample-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/sample-identity
 ```
 
 ## Configure load parameters

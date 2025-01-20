@@ -2,6 +2,8 @@
 uid: learn.azure.authenticate-azure-deployment-pipeline-service-principals.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Learn how to create, manage, and grant permissions to service principals, which enable your deployment pipelines to securely authenticate to Azure. 

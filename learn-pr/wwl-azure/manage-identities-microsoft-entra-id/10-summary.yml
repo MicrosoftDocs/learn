@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-identities-microsoft-entra-id.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 07/03/2024

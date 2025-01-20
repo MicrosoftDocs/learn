@@ -3,6 +3,8 @@ uid: learn.azure.route-and-process-data-logic-apps.branch-based-on-sentiment
 title: Exercise - Branch based on sentiment
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Branch based on sentiment
   description: Exercise - Branch based on sentiment
   ms.date: 08/21/2024
@@ -15,3 +17,4 @@ interactive: bash
 durationInMinutes: 12
 content: |
   [!include[](includes/8-exercise-branch-based-on-sentiment.md)]
+

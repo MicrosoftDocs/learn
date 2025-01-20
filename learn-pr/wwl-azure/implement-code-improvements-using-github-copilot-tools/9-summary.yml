@@ -3,13 +3,13 @@ uid: learn.wwl.implement-code-improvements-using-github-copilot-tools.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary
+  description: "Summary"
+  ms.date: 12/09/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.date: 05/20/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/9-summary.md)]

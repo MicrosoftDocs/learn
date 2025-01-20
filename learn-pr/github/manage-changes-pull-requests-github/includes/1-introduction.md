@@ -1,8 +1,8 @@
-Change is inevitable, especially in software repositories. Project improvements often require the coordination of many people working together in parallel to produce the right output. Responsibly tracking and merging those changes has always been a substantial challenge.
+Change is inevitable, especially in software repositories. Project improvements often require the coordination of many people working together in parallel to produce the right output. Responsibly tracking and merging those changes is a complex and substantial challenge.
 
 Fortunately, pull requests offer the right balance of control and convenience. Whether you're interested in making changes, reviewing changes, or understanding the effect of changes across the repository, pull requests are the way GitHub users collaborate on code.
 
-In this module, you’ll learn how to manage changes to your repository source by using pull requests.
+In this module, you learn how to manage changes to your repository source by using pull requests.
 
 ## Learning objectives
 

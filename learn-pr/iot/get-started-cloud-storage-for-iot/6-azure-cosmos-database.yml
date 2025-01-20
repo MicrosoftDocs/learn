@@ -2,6 +2,8 @@
 uid: learn.wwl.get-started-cloud-storage-for-iot.examine-azure-cosmos-db
 title: Examine Azure Cosmos DB
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure Cosmos DB
   description: "Examine Azure Cosmos DB"
   ms.date: 02/16/2024

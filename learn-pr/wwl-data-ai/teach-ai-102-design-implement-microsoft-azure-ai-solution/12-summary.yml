@@ -2,6 +2,8 @@
 uid: learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: wwlpublish
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/12-summary.md)]
+

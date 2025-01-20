@@ -2,9 +2,11 @@
 uid: learn.wwl.describe-cloud-compute.introduction-microsoft-azure-fundamentals
 title: Introduction to Microsoft Azure Fundamentals
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Microsoft Azure Fundamentals
   description: "Introduction to Microsoft Azure Fundamentals"
-  ms.date: 09/20/2024
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit

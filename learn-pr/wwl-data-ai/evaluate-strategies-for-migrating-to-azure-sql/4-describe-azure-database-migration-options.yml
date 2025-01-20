@@ -2,6 +2,8 @@
 uid: learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.describe-azure-database-migration-options
 title: Describe Azure database migration options
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure database migration options
   description: "Describe Azure database migration options"
   ms.date: 04/15/2022

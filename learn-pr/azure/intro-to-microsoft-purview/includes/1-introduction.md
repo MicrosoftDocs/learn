@@ -2,7 +2,7 @@ As the volume and variety of data increases, the challenges of good data governa
 
 All these questions aren't easy to answer without insights into the data and the source of storage. Before you can develop data-governance plans for usage and storage, you need to understand the data your organization uses.
 
-:::image type="content" source="../media/where-is-data.png" lightbox="../media/where-is-data-expanded.png" alt-text="Depiction of a pie chart that shows 81% of data is stored in multiple public cloud sources. It shows that 11% is stored in private dedicated clouds. It also shows that 7.5% is stored in one public and one or more private clouds and 0.5% is in multiple public clouds only. Icons represent various source locations for on-premises and cloud sources.":::
+:::image type="content" source="../media/where-is-data.png" lightbox="../media/where-is-data-expanded.png" alt-text="Depiction of a pie chart that shows 81% of data is stored in multiple public cloud sources. It shows that 11% is stored in private dedicated clouds. It also shows that 7.5% is stored in one public and one or more private clouds, and 0.5% is in multiple public clouds only. Icons represent various source locations for on-premises and cloud sources.":::
 
 ## Example scenario
 
@@ -20,12 +20,12 @@ Microsoft Purview is designed to address these issues and help enterprises get t
 
 ## What will we be doing?
 
-This high-level overview of Microsoft Purview helps you discover the key aspects that make it the tool of choice for mapping out your enterprise data. You learn how it can help you: 
+This high-level overview of Microsoft Purview helps you discover the key aspects that make it the tool of choice for mapping out your enterprise data. You learn how it can help you:
 
-* Manage and govern your data across various platforms and locations. 
-* Map out your data landscape. 
-* Classify sensitive data. 
-* Empower customers to find trustworthy data. 
+* Manage and govern your data across various platforms and locations.
+* Map out your data landscape.
+* Classify sensitive data.
+* Empower customers to find trustworthy data.
 
 ## What's the main goal?
 

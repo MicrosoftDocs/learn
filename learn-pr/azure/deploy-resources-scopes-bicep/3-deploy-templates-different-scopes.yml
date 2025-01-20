@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-resources-different-scopes.deploy-templates-different-scopes
 title: Deploy templates at various scopes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Deploy templates at various scopes
   description: Learn how to create Bicep files that deploy resources to a subscription, management group, or tenant.
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/3-deploy-templates-different-scopes.md)]
+

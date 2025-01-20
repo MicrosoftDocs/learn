@@ -16,5 +16,5 @@ To find out more about any of the articles covered in this module, go to:
 - [Microsoft cloud security benchmark in Defender for Cloud](/azure/defender-for-cloud/concept-regulatory-compliance)
 - [Secure score](/azure/defender-for-cloud/secure-score-security-controls)
 - [Cloud Security Posture Management (CSPM)](/azure/defender-for-cloud/concept-cloud-security-posture-management)
-- [Copilot for Security in Defender for Cloud (Preview)](/azure/defender-for-cloud/copilot-security-in-defender-for-cloud)
+- [Security Copilot in Defender for Cloud](/azure/defender-for-cloud/copilot-security-in-defender-for-cloud)
 - [Overview of Defender for DevOps](/azure/defender-for-cloud/defender-for-devops-introduction)

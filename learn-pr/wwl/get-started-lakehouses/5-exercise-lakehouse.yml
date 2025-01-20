@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-lakehouses.exercise-lakehouse
-title: Exercise - Create and ingest data with a Microsoft Fabric Lakehouse
+title: Exercise - Create a Microsoft Fabric lakehouse
 metadata:
-  title: Exercise - Create and ingest data with a Microsoft Fabric Lakehouse
-  description: "Exercise - Create and ingest data with a Microsoft Fabric Lakehouse"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  title: Exercise - Create a Microsoft Fabric lakehouse
+  description: "Exercise - Create a Microsoft Fabric lakehouse"
+  ms.date: 11/12/2024
+  author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
   ms.custom:

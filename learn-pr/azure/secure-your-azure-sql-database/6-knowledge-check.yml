@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-your-azure-sql-database.6-knowledge-check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Test your knowledge 
   ms.date: 11/07/2023

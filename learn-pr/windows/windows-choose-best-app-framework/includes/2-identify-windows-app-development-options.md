@@ -26,14 +26,14 @@ Windows Forms is still used to create system utility apps or line-of-business ap
 
 ## WinUI applications with Windows App SDK
 
-WinUI is the native UI platform component that ships with the Windows App SDK. Unlike its predecessor the Universal Windows Platform (UWP), Windows App SDK APIs are decoupled from the Windows Software Development Kits (SDKs). The Windows App SDK provides a set of APIs and tools that are used to create desktop apps for Windows. The Windows App SDK can be used to create applications on Windows 11 and downlevel to Windows 10, version 1809.
+WinUI is the native UI platform component that ships with the Windows App SDK. Unlike its predecessor, the Universal Windows Platform (UWP), Windows App SDK APIs are decoupled from the Windows Software Development Kits (SDKs). The Windows App SDK provides a set of APIs and tools that are used to create desktop apps for Windows. The Windows App SDK can be used to create applications on Windows 11 and downlevel to Windows 10, version 1809.
 
 > [!NOTE]
 > Windows App SDK use is not limited to WinUI projects. You can leverage the Windows App SDK and its APIs when creatings apps with WinUI, WPF, or Windows Forms. Learn how to use the Windows App SDK in an existing project [here](/windows/apps/windows-app-sdk/use-windows-app-sdk-in-existing-project).
 
 WinUI apps offer a modern UI design, providing the look-and-feel in-box Windows apps with the same great usability. WinUI apps can be written in C# or C++. The XAML UI framework feels familiar to Windows developers who are experienced in WPF development. It's the best choice for native app development if the current feature set meets your requirements, and the ongoing development efforts in the framework regularly provide new features and functionality. Microsoft is accelerating the adoption of WinUI and the Windows App SDK in its own Windows apps including Photos, File Explorer, Dev Home, PowerToys, Phone Link, and others. WinUI is currently positioned as the framework of choice for teams that want to build first-class Windows applications.
 
-Modern Windows design principles aren't just a set of styles and themes. They also include accessibility and the overall user experience when interacting with applications. WinUI embodies all that. The upcoming version of in .NET 9 WPF will have a modern Windows style, but it won't go all the way if the best overall user experience is a requirement.
+Modern Windows design principles aren't just a set of styles and themes. They also include accessibility and the overall user experience when interacting with applications. WinUI embodies all that. The upcoming version of .NET 9 WPF will have a modern Windows style, but it won't go all the way if the best overall user experience is a requirement.
 
 WinUI applications can be distributed through the Microsoft Store, installed via stand-alone packages, or deployed with enterprise software management systems.
 

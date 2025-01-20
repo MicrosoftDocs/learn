@@ -8,14 +8,14 @@ Capabilities:
 
 - Data ingestion
 - Allocation
-- Reporting + analytics
+- Reporting and analytics
 - Anomaly management
 
 ## Domain: Quantify business value
 
 Capabilities:
 
-- Planning + estimating
+- Planning and estimating
 - Forecasting
 - Budgeting
 - Benchmarking
@@ -26,7 +26,7 @@ Capabilities:
 Capabilities:
 
 - Rate optimization
-- Licensing + SaaS
+- Licensing and SaaS
 - Workload optimization
 - Architecting for cloud
 - Cloud sustainability
@@ -36,12 +36,12 @@ Capabilities:
 Capabilities:
 
 - FinOps practice operations
-- FinOps tooling + services
+- FinOps tooling and services
 - FinOps assessment
-- FinOps education + enablement
-- Invoicing + chargeback
+- FinOps education and enablement
+- Invoicing and chargeback
 - Onboarding workloads
-- Cloud policy + governance
+- Cloud policy and governance
 - Intersecting disciplines
 
 For more information, see [FinOps Domains](https://www.finops.org/framework/domains/) and [FinOps Capabilities](https://www.finops.org/framework/capabilities/) by the [FinOps Foundation](https://www.finops.org/).

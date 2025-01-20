@@ -2,6 +2,8 @@
 uid: learn.wwl.get-started-cloud-storage-for-iot.examine-azure-blob-storage-storage-accounts
 title: Examine Azure Blob storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Azure Blob storage
   description: "Examine Azure Blob storage"
   ms.date: 02/16/2024

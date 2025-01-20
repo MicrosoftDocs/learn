@@ -4,7 +4,7 @@ title: Explore name resolution
 metadata:
   title: Explore name resolution
   description: "Explore naming of resources created in Azure by Azure-provided or client-provided DNS services."
-  ms.date: 10/03/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

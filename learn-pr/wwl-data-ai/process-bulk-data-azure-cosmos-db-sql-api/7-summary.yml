@@ -2,9 +2,11 @@
 uid: learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 03/20/2024
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
+

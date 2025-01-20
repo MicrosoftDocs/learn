@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.choose-messaging-model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure messaging services
   description: Learn how Azure storage queues, Event Hubs, Event Grid, and service bus can improve your communication between devices.
   ms.date: 07/31/2023
@@ -42,3 +44,4 @@ units:
 - learn.choose-messaging-model.6-summary
 badge:
   uid: learn.choose-messaging-model.badge
+

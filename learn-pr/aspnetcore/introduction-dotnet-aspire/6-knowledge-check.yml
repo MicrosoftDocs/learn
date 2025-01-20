@@ -3,8 +3,8 @@ uid: learn.introduction-dotnet-aspire.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "In this unit, you'll answer questions about .NET Aspire to check the knowledge you've gained in this module."
-  ms.date: 2/6/2024
+  description: "In this unit, you answer questions about .NET Aspire to check the knowledge you gained in this module."
+  ms.date: 11/08/2024
   author: camsoper
   ms.author: casoper
   ms.topic: unit
@@ -17,14 +17,14 @@ quiz:
     choices:
     - content: "Each microservice is an independent ancillary resource, such as a database or caching service."
       isCorrect: false
-      explanation: "Incorrect. However, microservices may call ancillary resources, which are often called backing services."
+      explanation: "Incorrect. However, microservices might call ancillary resources, which are often called backing services."
     - content: "Each microservice is loosely coupled to the others"
       isCorrect: true
       explanation: "Correct. Because microservices are loosely coupled, each team can implement fixes and new versions independently without waiting for the others."
     - content: "Each microservice implements the entire web app's functionality in parallel with the others."
       isCorrect: false
       explanation: "Incorrect. Each microservice implements a small part of the business functionality."
-  - content: "You're setting up the software environment for your developers to use for your company's new .NET Aspire cloud-native app. Which of the following is required?"
+  - content: "You're setting up the software environment for your developers to use for your company's new .NET Aspire cloud-native app. Which of the following items is required?"
     choices:
     - content: "Docker Desktop or Podman"
       isCorrect: true
@@ -45,4 +45,4 @@ quiz:
       explanation: "Incorrect. The .NET Aspire Azure Blob Storage integration connects to the Azure Blob Storage service, which stores blob files such as images and videos, not semi-structured data."
     - content: "MySQL"
       isCorrect: false
-      explanation: "Incorrect. The .NET Aspire MySQL integration connects to the MySQL database server, which stores structrured, relational data, not semi-structured data."
+      explanation: "Incorrect. The .NET Aspire MySQL integration connects to the MySQL database server, which stores structured, relational data, not semi-structured data."

@@ -2,12 +2,14 @@
 uid: learn.create-dashboards-azure-data-explorer.dashboards
 title: Dashboards in Azure Data Explorer
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Dashboards in Azure Data Explorer
   description: "Learn about why dashboards are useful for data visualization and exploration."
   ms.date: 01/19/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 1
 content: |

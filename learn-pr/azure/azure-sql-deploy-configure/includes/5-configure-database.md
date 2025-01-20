@@ -60,13 +60,13 @@ Azure SQL Managed Instance and SQL Database are platform as a service (PaaS) off
 
 For Azure SQL Managed Instance, there's a possible maximum storage size allowed for the instance based on your chosen SLO. You choose a maximum storage for the instance up to this possible maximum size. If you reach the maximum storage, you might get Message 1105 for a managed database or Message 1133 for the instance.
 
-Just like SQL Server, the size of any new database is based on the size of the model database. The model database is a 100-MB data file and an 8-MB log file. Also like SQL Server, the size of model is configurable. You can alter the size and the number of files, but you don't have control over their physical location. Microsoft has commitments on I/O performance based on your deployment choice. Additionally, because remote storage is used in the General Purpose service tier, the data file and log file size can affect performance.
+Just like SQL Server, any new database's size is based on the `model` database size. The `model` database is a 100-MB data file and an 8-MB log file. Also like SQL Server, the `model` size is configurable. You can alter the size and the number of files, but you don't have control over their physical location. Microsoft has commitments on I/O performance based on your deployment choice. Additionally, because remote storage is used in the General Purpose service tier, the data file and log file size can affect performance.
 
 For Azure SQL Database, there's a possible maximum size of database files based on your chosen SLO. You choose a **Data max size** up to this possible maximum size. **Maxsize** for database files, as defined by the `sys.database_files.max_size` column, can grow to **Data max size**.
 
 To understand this idea of **Data max size** versus **Maxsize**, consider an example where a 1 TB (**Data max size**) General Purpose database is deployed. When you do this deployment, your database requires only ~500 GB, not 1 TB. As your database grows and approaches **Data max size**, **Maxsize** for database files also grows up to the 1-TB level.
 
-The transaction log is in addition to the data size and is included in what you pay for storage. It's truncated regularly due to automatic backups because Accelerated Database Recovery is on by default. The log's maximum size is always 30 percent of **Data max size**. For example, if **Data max size** is 1 TB, then the maximum transaction log size is 0.3 TB, and the total of **Data max size** and log size is 1.3 TB.
+The transaction log is in addition to the data size and is included in what you pay for storage. It's truncated regularly due to automatic backups, and Accelerated Database Recovery is on by default. The log's maximum size is always 30 percent of **Data max size**. For example, if **Data max size** is 1 TB, then the maximum transaction log size is 0.3 TB, and the total of **Data max size** and log size is 1.3 TB.
 
 The Azure SQL Database Hyperscale tier is different from the other service tiers. It creates a database that's initially 40 GB and grows automatically in size to the limit of 100 TB. The transaction log has a fixed size restriction of 1 TB.  
 
@@ -76,7 +76,7 @@ Part of configuring your Azure SQL Database logical server or configuring Azure 
 
 For Azure SQL Managed Instance, you can choose the connection type or policy during the deployment. In Azure SQL Database, you can choose the connection type after deployment.
 
-You can keep the default of **Proxy for connections from outside and Redirect for connections within Azure** or configure something else.
+You can keep the default of **Proxy for connections from outside and Redirect for connections within Azure** or configure something else. The following diagram shows how gateways are used for the [proxy or redirect connection policy](/azure/azure-sql/database/connectivity-architecture#connection-policy).
 
 :::image type="content" source="../media/5-connectivity.png" alt-text="Diagram of the connection policies in Azure SQL." border="false":::
 
@@ -84,4 +84,4 @@ At the highest level, in Proxy mode, all connections are proxied through the gat
 
 The direct connection (redirect) allows for reduced latency and improved throughput. It also requires opening more ports to allow inbound and outbound communication in the range of 11000 to 11999.  
 
-In the next exercise, you see some commands for configuring Azure SQL with the Azure CLI. Then, dive into evaluating the proxy and redirect connection policies.
+In the next exercise, you see some commands for configuring Azure SQL with the Azure CLI. Then, you dive into evaluating the proxy and redirect connection policies.

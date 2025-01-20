@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-relational-data-offerings
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore fundamental relational data concepts
   description: "This content is a part of Explore fundamental relational data concepts."
   ms.date: 08/28/2024

@@ -2,6 +2,8 @@
 uid: learn.wwl.deploy-azure-databricks-models-azure-machine-learning.plan-for-deployment-endpoints
 title: Plan for Azure Machine Learning deployment endpoints
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan for Azure Machine Learning deployment endpoints
   description: "Plan for Azure Machine Learning deployment endpoints"
   ms.date: 03/22/2023

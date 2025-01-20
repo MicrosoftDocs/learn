@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Windows security enhancements with Microsoft Defender for Endpoint
   description: "Implement Windows security enhancements with Microsoft Defender for Endpoint"
   ms.date: 11/28/2023

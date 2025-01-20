@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check what you learn in this module."
-  ms.date: 08/01/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "Microsoft Azure PowerShell cmdlets"
       isCorrect: false
-      explanation: "Incorrect. Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers."
+      explanation: "Incorrect. Hashicorp Terraform is an open-source tool that provisions and manages cloud infrastructure. It allows developers to use identical tools and configuration files to manage infrastructure across various cloud providers."
     - content: "Microsoft Azure CLI"
       isCorrect: false
-      explanation: "Incorrect. Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers."
+      explanation: "Incorrect. Hashicorp Terraform is an open-source tool that provisions and manages cloud infrastructure. It allows developers to use identical tools and configuration files to manage infrastructure across various cloud providers."
     - content: "Hashicorp Terraform"
       isCorrect: true
-      explanation: "Correct. Hashicorp Terraform is an open-source tool for provisioning and managing cloud infrastructure. It enables developers to use the same tools and configuration files to manage infrastructure on multiple cloud providers."
+      explanation: "Correct. Hashicorp Terraform is an open-source tool that provisions and manages cloud infrastructure. It allows developers to use identical tools and configuration files to manage infrastructure across various cloud providers."
   - content: "Which kind of deployment can be carried out using the SAP HANA Database Lifecycle Manager (HDBLCM) tool?"
     choices:
     - content: "HANA-based NetWeaver deployments"

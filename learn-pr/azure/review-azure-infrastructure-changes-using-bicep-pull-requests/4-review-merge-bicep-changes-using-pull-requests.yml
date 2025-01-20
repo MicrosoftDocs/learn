@@ -2,6 +2,8 @@
 uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.review-merge-bicep-changes-using-pull-requests
 title: Review and merge Bicep changes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Review and merge Bicep changes by using pull requests
   description: Learn about pull requests, including how to create, review, approve, and merge them.
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-review-merge-bicep-changes-using-pull-requests.md)]
+

@@ -2,9 +2,11 @@
 uid: learn.align-requirements-in-azure.5-paas
 title: Platform as a service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: PaaS
   description: Learn about platform as a service and if it might be the right choice for your application.
-  ms.date: 10/13/2023
+  ms.date: 12/06/2024
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit

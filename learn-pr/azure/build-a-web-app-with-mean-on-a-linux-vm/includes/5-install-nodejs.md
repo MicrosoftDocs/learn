@@ -1,23 +1,23 @@
 Here you install Node.js, the **N** in the MEAN acronym. Like MongoDB, Node.js is open source. 
 
-Node.js acts as the server-side host for your web application and handle inbound HTTP traffic. Node.js also provides you with a way to communicate with your MongoDB installation, which you see later.
+Node.js acts as the server-side host for your web application and handles inbound HTTP traffic. Node.js also provides you with a way to communicate with your MongoDB installation, which you see later.
 
 ## What versions of Node.js are available?
 
 You can get Node.js in two ways:
 
-- **Long Term Support (LTS)**: LTS is considered to be more stable and is recommended for most users and for production environments.
+- **Long Term Support (LTS)**: Long Term Support (LTS) is considered to be more stable and is recommended for most users and for production environments.
 - **Current**: Current is for those users who want to experiment with the latest features. Because it can introduce breaking changes between releases, it isn't recommended for production environments.
 
 Here you use Node.js LTS.
 
 ## How do I install Node.js?
 
-Like MongoDB, you can run Node.js on Windows, macOS, and Linux. Node.js also supports Unix-based operating systems such as SunOS and AIX.
+Like MongoDB, you can run Node.js on Windows, macOS, and Linux. Node.js also supports Unix-based operating systems such as SunOS and Advanced Interactive eXecutive (AIX).
 
-Just like with MongoDB, here you register the Node.js repository so that `apt` can locate the package.
+Just like with MongoDB, you register the Node.js repository so that `apt` can locate the package.
 
-Recall that you're working with an Ubuntu VM. Later, you can [check out the installation guide](https://nodejs.org/en/download/package-manager?azure-portal=true) to learn how to install Node.js on your favorite platform.
+Recall that you're working with an Ubuntu virtual machine (VM). Later, you can [check out the installation guide](https://nodejs.org/en/download/package-manager?azure-portal=true) to learn how to install Node.js on your favorite platform.
 
 ## Install Node.js
 

@@ -2,6 +2,8 @@
 uid: learn.wwl.design-for-user-identities-profiles.plan-for-azure-virtual-desktop-client-deployment-remote-desktop-protocol-rdp
 title: Plan for Azure Virtual Desktop client deployment - Remote Desktop Protocol (RDP)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan for Azure Virtual Desktop client deployment - Remote Desktop Protocol (RDP)
   description: "Plan for Azure Virtual Desktop client deployment - Remote Desktop Protocol (RDP)"
   ms.date: 02/10/2023

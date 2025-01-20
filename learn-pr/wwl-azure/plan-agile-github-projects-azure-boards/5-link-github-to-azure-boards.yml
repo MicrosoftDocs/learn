@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-agile-github-projects-azure-boards.link-github-to-azure-boards
 title: Link GitHub to Azure Boards
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Link GitHub to Azure Boards
   description: "Link GitHub to Azure Boards"
   ms.date: 05/24/2024

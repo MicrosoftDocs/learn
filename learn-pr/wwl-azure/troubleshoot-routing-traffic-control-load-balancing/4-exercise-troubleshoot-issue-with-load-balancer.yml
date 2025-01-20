@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing.exercise
 title: 'Exercise: Troubleshoot routing, traffic control and load balancing issues'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Troubleshoot routing, traffic control and load balancing issues'
   description: "Exercise: Troubleshoot routing, traffic control and load balancing issues"
   ms.date: 04/27/2023

@@ -12,7 +12,7 @@ The following Azure resources must be available in your Resource group named RG1
 
 You've been asked to configure a continuous integration environment for Container Apps that meets the following requirements:
 
-- You need an Azure Container Apps deployment task in your ADO environment.
+- You need an Azure Container Apps deployment task in your Azure DevOps environment.
 - `Pipeline1` must deploy a container image from your container registry to your container app using a self-hosted agent pool.
 - You must ensure that the pipeline successfully deploys the image at least once.
 
@@ -48,7 +48,9 @@ You complete the following tasks during this exercise:
     steps:
     ```
 
-1. Select **Save**.
+    Recall that the `pool` section specifies the agent pool to use for the pipeline. The `name` property specifies the name of the agent pool. In this case, the name is `default`, which is the pool you configured as a self-hosted agent pool.
+
+1. Under **Validate and save**, select **Save without validating**.
 
 1. Enter a commit message, and then select **Save**.
 
@@ -82,16 +84,16 @@ You complete the following tasks during this exercise:
 
     ```yml
     trigger:
-    - main
+      - main
     pool:
       name: default
     steps:
-    - task: AzureContainerApps@1
-      inputs:
-        azureSubscription: '<Subscription>(<Subscription ID>)'
-        imageToDeploy: '<Registry>/<Image>:<Image tag>' from Container App resource
-        containerAppName: '<Name>' from Container App resource 
-        resourceGroup: '<resource group name>'
+      - task: AzureContainerApps@1
+        inputs:
+          azureSubscription: '<Subscription>(<Subscription ID>)'
+          imageToDeploy: '<Registry>/<Image>:<Image tag>' from Container App resource
+          containerAppName: '<Name>' from Container App resource 
+          resourceGroup: '<resource group name>'
     
     ```
 
@@ -99,29 +101,35 @@ You complete the following tasks during this exercise:
 
     ```yml
     trigger:
-    - main
+      - main
     pool:
       name: default
     steps:
-    - task: AzureContainerApps@1
-      inputs:
-        azureSubscription: 'Visual Studio Enterprise(1111aaaa-22bb-33cc-44dd-555555eeeeee)'
-        imageToDeploy: 'acrapl2003cah12oct.azurecr.io/aspnetcorecontainer:latest'
-        containerAppName: 'aca-apl2003'
-        resourceGroup: 'RG1'
+      - task: AzureContainerApps@1
+        inputs:
+          azureSubscription: 'Visual Studio Enterprise(1111aaaa-22bb-33cc-44dd-555555eeeeee)'
+          imageToDeploy: 'acraz2003cah12oct.azurecr.io/aspnetcorecontainer:latest'
+          containerAppName: 'aca-az2003'
+          resourceGroup: 'RG1'
     ```
 
-1. Select **Save**, and then select **Save** again to commit.
+1. Select **Validate and save**, and then select **Save** again to commit directly to the main branch.
+
+    The contents of the YAML file must be formatted correctly, including indentation. If you encounter an error, review the YAML file and correct any indentation issues.
+
+1. Navigate back to the main page of your pipeline.
 
 ## Run the `Pipeline1` deployment task
 
 1. Ensure that you have `Pipeline1` open in Azure DevOps.
 
-1. To run the AzureContainerApps task, select **Run**.
+1. On the Runs tab of the Pipeline1 page, select **Run pipeline**.
 
-1. On the Run pipeline page, select **Run**.
+    A Run pipeline page opens to display the associated job.
 
-    A pipeline page opens to display the associated job. The job section displays job status, which progresses from Queued to Waiting.
+1. Select **Run**.
+
+    The Jobs section displays job status, which progresses from Queued to Waiting.
 
     It can take a couple minutes for the status to transition from Queued to Waiting.
 

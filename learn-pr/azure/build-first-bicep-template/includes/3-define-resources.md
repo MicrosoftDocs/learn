@@ -36,7 +36,7 @@ Let's look closely at some key parts of this resource definition:
 - You have to declare a _resource name_, which is the name the storage account will be assigned in Azure. You'll set a resource name using the `name` keyword.
 
   > [!IMPORTANT]
-  > Symbolic names are used only within the Bicep template, and don't appear in Azure. Resource names _do_ appear in Azure.
+  > Symbolic names are used only within the Bicep template and don't appear in Azure. Resource names _do_ appear in Azure.
 
 - You'll then set other details of the resource, such as its location, SKU (pricing tier), and kind. There are also properties you can define that are different for each resource type. Different API versions might introduce different properties, too. In this example, we're setting the storage account's access tier to `Hot`.
 
@@ -45,7 +45,7 @@ Let's look closely at some key parts of this resource definition:
 
 ## What happens when resources depend on each other?
 
-A Bicep template usually includes several resources. Often, you need a resource to depend on another resource. You might have to extract some information from one resource to be able to define another. Or, if you're deploying a web application, you'll have to create the server infrastructure before you can add an application to it. These relationships are called _dependencies_.
+A Bicep template usually includes several resources. Often, you need a resource to depend on another resource. You might have to extract some information from one resource to be able to define another. If you're deploying a web application, you'll have to create the server infrastructure before you can add an application to it. These relationships are called _dependencies_.
 
 You'll need to deploy an App Service app for the template that will help launch the toy product, but to create an App Service app, you first need to create an App Service plan. The App Service plan represents the server-hosting resources, and it's declared like this example:
 
@@ -79,4 +79,4 @@ This template instructs Azure to host the app on the plan you created. Notice th
 > [!TIP]
 > In Azure, a _resource ID_ is a unique identifier for each resource. The resource ID includes the Azure subscription ID, the resource group name, and the resource name, along with some other information.
 
-By declaring the app resource with a property that references the symbolic name of the plan, Azure understands the _implicit dependency_ between the App Service app and the plan. When it deploys the resources, Azure will ensure it fully deploys the plan before it starts to deploy the app.
+By declaring the app resource with a property that references the plan's symbolic name, Azure understands the _implicit dependency_ between the App Service app and the plan. When it deploys the resources, Azure ensures it fully deploys the plan before it starts to deploy the app.

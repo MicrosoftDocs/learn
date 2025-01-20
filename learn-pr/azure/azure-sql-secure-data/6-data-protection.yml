@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.6-data-protection
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Protect your data
   description: Protect your data
   ms.date: 11/13/2023
@@ -42,3 +44,4 @@ quiz:
       - content: "All of the above"
         isCorrect: true
         explanation: "`JOIN`, `GROUP BY`, and `DISTINCT` operators are supported by deterministic encryption."
+

@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-azure-load-balancer.how-azure-load-balancer-works
 title: How Azure Load Balancer works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Azure Load Balancer works
   description: Learn how Azure Load Balancer works and how to implement it in your organization.
   ms.date: 01/12/2024
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-how-azure-load-balancer-works.md)]
+

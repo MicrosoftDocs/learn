@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-updates.manage-updates-for-your-azure-vms
 title: Manage updates for your Azure Virtual Machines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage updates for your Azure Virtual Machines
   description: "Manage updates for your Azure Virtual Machines"
   ms.date: 09/24/2020

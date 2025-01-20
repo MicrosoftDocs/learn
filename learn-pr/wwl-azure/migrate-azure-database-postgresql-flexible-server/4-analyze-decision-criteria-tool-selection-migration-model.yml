@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-azure-database-postgresql-flexible-server.analyze-decision-criteria-tool-selection-migration-model
 title: Analyze the decision criteria for tool selection and migration model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Analyze the decision criteria for tool selection and migration model
   description: "PostgreSQL Migration to Azure Database for PostgreSQL Flexible Server."
   ms.date: 05/10/2024

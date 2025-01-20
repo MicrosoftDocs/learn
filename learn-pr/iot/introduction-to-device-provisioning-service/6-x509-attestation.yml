@@ -2,6 +2,8 @@
 uid: learn.introduction-to-device-provisioning-service.get-started-x-509-certificate-attestation
 title: Examine X.509 certificate attestation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine X.509 certificate attestation
   description: "Examine X.509 certificate attestation"
   ms.date: 12/15/2023

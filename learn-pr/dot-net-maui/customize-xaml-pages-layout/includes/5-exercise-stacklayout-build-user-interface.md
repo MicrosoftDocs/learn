@@ -117,7 +117,7 @@ Now that you saw the app run, you can make it look better by adding `HorizontalS
     </HorizontalStackLayout>
     ```
 
-1. Add a final `HorizontalStackLayout` to group the `Button` with the caption, **Round Down** and the `Button` with the caption, **Round Up.**. Set the `Margin` property of this `StackLayout` to `0,20,0,0`, and the `Spacing` property to `10`:
+1. Add a final `HorizontalStackLayout` to group the `Button` with the caption **Round Down** and the `Button` with the caption **Round Up.**. Set the `Margin` property of this `StackLayout` to `0,20,0,0`, and the `Spacing` property to `10`:
 
     ```xml
     <HorizontalStackLayout Margin="0,20,0,0" Spacing="10">
@@ -132,7 +132,7 @@ Now that you saw the app run, you can make it look better by adding `HorizontalS
     <Button Text="15%" WidthRequest="150" HorizontalOptions="Center" ... />
     ```
 
-The complete XAML markup for the content page should look like this:
+The complete Extensible Application Markup Language (XAML) markup for the content page should look like this:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

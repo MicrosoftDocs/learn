@@ -2,6 +2,8 @@
 uid: learn.machine-learning.explore-analyze-data-r.exercise-transform-data-with-dplyr
 title: Exercise - Transform data by using dplyr
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Transform data by using dplyr
   description: In this exercise, you'll learn how to transform data by using dplyr.
   ms.date: 08/26/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 15
 sandbox: true
 notebook: notebooks/3-exercise-transform-data-with-dplyr.ipynb
+

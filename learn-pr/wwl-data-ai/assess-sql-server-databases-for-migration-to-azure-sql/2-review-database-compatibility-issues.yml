@@ -2,6 +2,8 @@
 uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.review-database-compatibility-issues
 title: Review database for compatibility
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review database compatibility issues
   description: "Review the importance of assessing SQL Server databases for potential migration blockers and breaking changes before migrating them to Azure SQL offerings."
   ms.date: 05/23/2023

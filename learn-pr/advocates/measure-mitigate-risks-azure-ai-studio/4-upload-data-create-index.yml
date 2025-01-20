@@ -3,7 +3,7 @@ uid: learn.measure-mitigate-risks-azure-ai-studio.upload-data-create-index
 title: Upload data and create an index
 metadata:
   title: Upload data and create an index
-  description: Learn how to upload data and create an index in Azure AI Studio.
+  description: Learn how to upload data and create an index in Azure AI Foundry.
   ms.date: 09/14/2024
   author: aprilspeight
   ms.author: apspeigh

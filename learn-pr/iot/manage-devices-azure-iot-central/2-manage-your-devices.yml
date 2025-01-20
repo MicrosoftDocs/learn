@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-devices-azure-iot-central.manage-your-devices
 title: Review the Azure IoT Central UI tools for device management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review the Azure IoT Central UI tools for device management
   description: This content is a part of Manage devices in Azure IoT Central
   ms.date: 05/11/2023

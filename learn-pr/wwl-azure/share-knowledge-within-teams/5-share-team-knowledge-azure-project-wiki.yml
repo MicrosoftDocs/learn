@@ -2,6 +2,8 @@
 uid: learn.wwl.share-knowledge-within-teams.share-team-knowledge-azure-project-wiki
 title: Share team knowledge using Azure Project Wiki
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Share team knowledge using Azure Project Wiki
   description: "Share team knowledge using Azure Project Wiki"
   ms.date: 05/24/2024

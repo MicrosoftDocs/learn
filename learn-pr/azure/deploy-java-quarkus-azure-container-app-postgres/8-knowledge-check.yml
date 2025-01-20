@@ -2,6 +2,8 @@
 uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.8-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 02/14/2024
@@ -48,3 +50,4 @@ quiz:
     - content: "From 255.255.255.255 to 255.255.255.255"
       isCorrect: false
       explanation: "This range isn't valid."
+

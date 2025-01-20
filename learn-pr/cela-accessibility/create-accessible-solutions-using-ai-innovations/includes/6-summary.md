@@ -1,10 +1,10 @@
 In this module, you learned how and why it's important to create accessible AI solutions. Here are some of the things we covered: 
 
-- The potential of generative AI to enhance accessibility for people with disabilities
-- Examples of AI applications for accessibility, including speech recognition, natural language processing, computer vision, and machine learning
-- Accessibility considerations for AI copilots
-- Generative AI challenges and risks for accessibility related to biases and ableism
-- The benefits of user testing and evaluation of accessible and inclusive AI solutions
+- The potential of generative AI to enhance accessibility for people with disabilities.
+- Examples of AI applications for accessibility, including speech recognition, natural language processing, computer vision, and machine learning.
+- Accessibility considerations for AI copilots.
+- Generative AI challenges and risks for accessibility related to biases and ableism.
+- The benefits of user testing and evaluation of accessible and inclusive AI solutions.
 
 ## Learn more
 

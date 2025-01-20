@@ -120,4 +120,4 @@ This approach helps the healthcare facility's compliance team address and manage
 
 ## Knowledge check
 
-Choose the best response for the question below, then select **Check your answers**.
+Choose the best response for the question below.

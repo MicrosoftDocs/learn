@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-azure-hybrid-services.3-hybrid-cloud-networking
 metadata:
   title: Hybrid cloud networking
   description: Hybrid cloud networking
-  ms.date: 08/01/2024
+  ms.date: 11/21/2024
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: unit
@@ -30,7 +30,7 @@ quiz:
       explanation: "Correct. Azure ExpressRoute allows you to have a dedicated connection from your organization's on-premises location to an Azure datacenter. Traffic that passes across an ExpressRoute circuit never crosses the public internet."
 
 
-  - content: "At present, all Tailwind Traders branch office locations link to the Sydney office by using a VPN connection. Internal network traffic between branch offices is all routed through Sydney in a hub-and-spoke architecture. Rather than use the Sydney office as the hub for routing traffic between branch offices, Tailwind Traders would prefer to use Azure. Which of the following technologies can Tailwind Traders use to accomplish this goal?"
+  - content: "Currently, all Tailwind Traders branch office locations link to the Sydney office by using a VPN connection. Internal network traffic between branch offices is all routed through Sydney in a hub-and-spoke architecture. Rather than use the Sydney office as the hub for routing traffic between branch offices, Tailwind Traders would prefer to use Azure. Which of the following technologies can Tailwind Traders use to accomplish this goal?"
     choices:
     - content: "Azure VPN Gateway"
       isCorrect: false
@@ -40,4 +40,4 @@ quiz:
       explanation: "Correct. Azure Virtual WAN allows you to set up hub-and-spoke traffic routing and is compatible with both Azure VPN Gateway and Azure ExpressRoute."
     - content: "Azure ExpressRoute"
       isCorrect: false
-      explanation: "Incorrect. Azure ExpressRoute allows you to have a dedicated connection from your organization's on-premises location to an Azure datacenter, but Azure ExpressRoute does not route traffic between branch office sites."
+      explanation: "Incorrect. Azure ExpressRoute allows you to have a dedicated connection from your organization's on-premises location to an Azure datacenter, but Azure ExpressRoute doesn't route traffic between branch office sites."

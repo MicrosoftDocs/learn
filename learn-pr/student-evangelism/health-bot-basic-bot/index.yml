@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.health-bot-basic-bot
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Basic Azure Health Bot 
   description: This module is an introduction to custom scenarios and briefly walks you through the contents of the module.
   ms.collection: TBD
@@ -38,3 +40,4 @@ units:
   - learn.health-bot-basic-bot.7-summary
 badge:
   uid: learn.student-evangelism.health-bot-basic-bot.badge
+

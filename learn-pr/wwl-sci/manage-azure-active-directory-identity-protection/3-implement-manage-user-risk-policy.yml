@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-azure-ad-identity-protection.implement-manage-user-risk-policy
 title: Implement and manage user risk policy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement and manage user risk policy
   description: "Implement and manage user risk policy"
-  ms.date: 04/03/2024
+  ms.date: 12/17/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

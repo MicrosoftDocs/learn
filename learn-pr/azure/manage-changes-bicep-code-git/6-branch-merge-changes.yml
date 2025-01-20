@@ -2,6 +2,8 @@
 uid: learn.azure.manage-changes-bicep-code-git.branch-merge-changes
 title: Branch and merge your changes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Branch and merge your changes
   description: Learn how Git enables you to maintain multiple versions of files by using branches, and how to merge branches together.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/6-branch-merge-changes.md)]
+

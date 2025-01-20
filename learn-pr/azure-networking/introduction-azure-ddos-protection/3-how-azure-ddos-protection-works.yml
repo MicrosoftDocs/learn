@@ -2,6 +2,8 @@
 uid: learn.introduction-azure-ddos-protection.3-how-azure-ddos-protection-works
 title: How Azure DDoS Protection works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Azure DDoS Protection works
   description: Learn about the features of DDoS Protection and how it works.
   ms.date: 05/22/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-how-azure-ddos-protection-works.md)]
+

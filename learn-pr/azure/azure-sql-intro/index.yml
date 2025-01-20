@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure-sql-intro
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure SQL
   description: Learn about Azure SQL deployment options and service tiers and what to use for your organization. 
   ms.date: 10/03/2024
@@ -41,3 +43,4 @@ units:
 - learn.azure-sql-intro.6-summary
 badge:
   uid: learn.azure-sql-intro.badge
+

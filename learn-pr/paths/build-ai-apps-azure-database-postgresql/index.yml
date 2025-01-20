@@ -1,11 +1,11 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.build-ai-apps-azure-database-postgresql
 metadata:
-  title: Build AI Apps with Azure Database for PostgreSQL
-  description: Build AI Apps with Azure Database for PostgreSQL.
-  ms.date: 04/30/2024
+  title: Build AI Apps with Azure Database for PostgreSQL AI-3019
+  description: Build AI Apps with Azure Database for PostgreSQL. (AI-3019)
+  ms.date: 11/24/2024
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: calopez
   ms.topic: learning-path
   ms.custom: ai-learning-hub
 title: Build AI Apps with Azure Database for PostgreSQL

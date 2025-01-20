@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-deployment
 title: Troubleshoot VM deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot VM deployment
   description: "Troubleshoot VM deployment"
   ms.date: 02/17/2023

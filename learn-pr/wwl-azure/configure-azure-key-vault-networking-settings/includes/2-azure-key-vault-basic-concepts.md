@@ -1,6 +1,6 @@
 Azure Key Vault is a cloud service for securely storing and accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic keys. Key Vault service supports two types of containers: vaults and managed hardware security module (HSM) pools. Vaults support storing software and HSM-backed keys, secrets, and certificates. Managed HSM pools only support HSM-backed keys. See Azure Key Vault REST API overview for complete details.
 
-Here are other important terms:<br>
+Here are other important terms:
 
  -  Tenant: A tenant is the organization that owns and manages a specific instance of Microsoft cloud services. It's most often used to refer to the set of Azure and Microsoft 365 services for an organization.<br>
  -  Vault owner: A vault owner can create a key vault and gain full access and control over it. The vault owner can also set up auditing to log who accesses secrets and keys. Administrators can control the key lifecycle. They can roll to a new version of the key, back it up, and do related tasks.<br>
@@ -31,9 +31,9 @@ Perfect Forward Secrecy (PFS) protects connections between customers’ client s
 
 ## Key Vault roles
 
-Use the following table to better understand how Key Vault can help to meet the needs of developers and security administrators.<br>
+Use the following table to better understand how Key Vault can help to meet the needs of developers and security administrators.
 
-:::image type="content" source="../media/azure-key-vault-roles-1fa07c98-38723f1c.png" alt-text="Screenshot showing Azure Key Vault roles.":::
+:::image type="content" source="../media/azure-key-vault-roles-1fa07c98-38723f1c-a04deef2.png" alt-text="Screenshot showing Azure Key Vault roles.":::
 <br>
 
 Anybody with an Azure subscription can create and use key vaults. Although Key Vault benefits developers and security administrators, it can be implemented and managed by an organization's administrator who manages other Azure services. For example, this administrator can sign in with an Azure subscription, create a vault for the organization in which to store keys, and then be responsible for operational tasks like these:
@@ -46,7 +46,7 @@ Anybody with an Azure subscription can create and use key vaults. Although Key V
 
 This administrator then gives developers URIs to call from their applications. This administrator also gives key usage logging information to the security administrator.
 
-:::image type="content" source="../media/azure-key-vault-overview-3f10b2d5.png" alt-text="Screenshot showing an example of Key Vault creation and management.":::
+:::image type="content" source="../media/azure-key-vault-overview-3f10b2d5-be58a081.png" alt-text="Screenshot showing an example of Key Vault creation and management.":::
 
 
 Developers can also manage the keys directly, by using APIs.

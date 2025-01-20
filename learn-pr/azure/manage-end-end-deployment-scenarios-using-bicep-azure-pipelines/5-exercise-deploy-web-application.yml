@@ -2,6 +2,8 @@
 uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.exercise-deploy-web-application
 title: Exercise - Deploy a web application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Deploy a web application
   description: In this unit, you update a pipeline to build and deploy an application.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-deploy-web-application.md)]
+

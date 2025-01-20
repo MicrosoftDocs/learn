@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-client-server-communication-mysql.describe-client-interfaces
 title: Describe client interfaces
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe client interfaces
   description: "Describe client interfaces"
   ms.date: 11/08/2022

@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-data-platform-modernization.5-exercise-compare-onpremises-azure-costs
 title: 'Exercise: Compare on-premises Azure costs'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Compare on-premises Azure costs'
   description: "Exercise: Compare on-premises Azure costs"
   ms.date: 04/14/2023

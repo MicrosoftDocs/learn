@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-group-policy-objects.define-gpos
 title: Define GPOs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Define GPOs
   description: "Define GPOs"
   ms.date: 04/17/2024

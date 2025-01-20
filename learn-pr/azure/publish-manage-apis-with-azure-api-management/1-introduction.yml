@@ -2,12 +2,15 @@
 uid: learn.publish-manage-apis-with-azure-api-management.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  ms.date: 10/30/2023
+  ms.date: 12/05/2024
   author: dlepow
   ms.author: danlep
   ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-intro-to-blockchain.how-blockchain-works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How blockchain works
   description: In this unit, we discuss how blockchain works its architecture.
   ms.date: 07/09/2024
@@ -11,3 +13,4 @@ title: How blockchain works
 durationInMinutes: 10
 content: |
   [!include[](includes/3-how-blockchain-works.md)]
+

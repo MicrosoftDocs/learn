@@ -10,18 +10,18 @@ A job is a linear series of steps. Steps can be tasks, scripts, or references to
 
 This hierarchy is reflected in the structure of a YAML file like:
 
- -  Pipeline
-     -  Stage A
-         -  Job 1
-             -  Step 1.1
-             -  Step 1.2
-             -  ...
-         -  Job 2
-             -  Step 2.1
-             -  Step 2.2
-             -  ...
-     -  Stage B
-         -  ...
+- Pipeline
+  - Stage A
+    - Job 1
+      - Step 1.1
+      - Step 1.2
+      - ...
+    - Job 2
+      - Step 2.1
+      - Step 2.2
+      - ...
+  - Stage B
+    - ...
 
 Simple pipelines don't require all these levels. For example, you can omit the containers for stages and jobs in a single job build because there are only steps.
 
@@ -70,7 +70,7 @@ Checks are a mechanism available to the resource owner. They control when a stag
 
 As an owner of a resource like an environment, you can define checks required before a stage that consumes the resource can start.
 
-This example runs three stages, one after another. The middle stage runs two jobs in parallel.
+This example runs three stages, one after another. The second stage depends on the first stage, and the third stage depends on the second stage:
 
 ```YAML
 stages:
@@ -129,11 +129,11 @@ Deployment strategies allow you to use specific techniques to deliver updates wh
 
 Techniques examples:
 
- -  Enable initialization.
- -  Deploy the update.
- -  Route traffic to the updated version.
- -  Test the updated version after routing traffic.
- -  If there's a failure, run steps to restore to the last known good version.
+- Enable initialization.
+- Deploy the update.
+- Route traffic to the updated version.
+- Test the updated version after routing traffic.
+- If there's a failure, run steps to restore to the last known good version.
 
 ### RunOnce
 
@@ -168,7 +168,7 @@ strategy:
                 ...
 ```
 
-*For details and examples, see [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs).*
+_For details and examples, see [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs)._
 
 ### Rolling
 
@@ -178,28 +178,28 @@ A rolling deployment replaces instances of the previous version of an applicatio
 strategy:
     rolling:
         maxParallel: [ number or percentage as x% ]
-        preDeploy:       
+        preDeploy:
             steps:
             - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
-        deploy:         
+        deploy:
             steps:
             ...
-        routeTraffic:       
+        routeTraffic:
             steps:
-            ...       
-        postRouteTraffic:         
+            ...
+        postRouteTraffic:
             steps:
             ...
         on:
-            failure:       
+            failure:
                 steps:
                 ...
-            success:         
+            success:
                 steps:
                 ...
 ```
 
-*For details and examples, see [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs).*
+_For details and examples, see [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs)._
 
 ### Canary
 
@@ -211,34 +211,34 @@ As you gain more confidence in the new version, you can release it to more serve
 strategy:
     canary:
         increments: [ number ]
-        preDeploy:       
-            pool: [ server | pool ] # See pool schema.       
+        preDeploy:
+            pool: [ server | pool ] # See pool schema.
             steps:
             - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
-        deploy:         
-            pool: [ server | pool ] # See pool schema.       
+        deploy:
+            pool: [ server | pool ] # See pool schema.
             steps:
             ...
-        routeTraffic:       
-            pool: [ server | pool ]       
+        routeTraffic:
+            pool: [ server | pool ]
             steps:
-            ...       
-        postRouteTraffic:         
-            pool: [ server | pool ]       
+            ...
+        postRouteTraffic:
+            pool: [ server | pool ]
             steps:
             ...
         on:
-            failure:       
-                pool: [ server | pool ]         
+            failure:
+                pool: [ server | pool ]
                 steps:
                 ...
-            success:         
-                pool: [ server | pool ]         
+            success:
+                pool: [ server | pool ]
                 steps:
                 ...
 ```
 
-*For details and examples, see [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs).*
+_For details and examples, see [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs)._
 
 ## Lifecycle hooks
 
@@ -248,11 +248,11 @@ Lifecycle hooks inherit the pool specified by the deployment job. Deployment job
 
 Available lifecycle hooks:
 
- -  **preDeploy:** Used to run steps that initialize resources before application deployment starts.
- -  **deploy:** Used to run steps that deploy your application. Download artifact task will be auto-injected only in the deploy hook for deployment jobs. To stop downloading artifacts, use - download: none or choose specific artifacts to download by specifying [Download Pipeline Artifact task](/azure/devops/pipelines/yaml-schema/steps-download).
- -  **routeTraffic:** Used to run steps that serve the traffic to the updated version.
- -  **postRouteTraffic:** Used to run the steps after the traffic is routed. Typically, these tasks monitor the health of the updated version for a defined interval.
- -  **on: failure** or **on: success:** Used to run steps for rollback actions or clean-up.
+- **preDeploy:** Used to run steps that initialize resources before application deployment starts.
+- **deploy:** Used to run steps that deploy your application. Download artifact task will be auto-injected only in the deploy hook for deployment jobs. To stop downloading artifacts, use - download: none or choose specific artifacts to download by specifying [Download Pipeline Artifact task](/azure/devops/pipelines/yaml-schema/steps-download).
+- **routeTraffic:** Used to run steps that serve the traffic to the updated version.
+- **postRouteTraffic:** Used to run the steps after the traffic is routed. Typically, these tasks monitor the health of the updated version for a defined interval.
+- **on: failure** or **on: success:** Used to run steps for rollback actions or clean-up.
 
 ## Steps
 

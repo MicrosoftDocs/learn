@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-service-fabric
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Service Fabric
   description: Get acquainted with the Azure Service Fabric distributed systems management platform.
   manager: akashdubey
@@ -39,3 +41,4 @@ units:
 - learn.intro-to-azure-service-fabric.when-to-use-azure-service-fabric
 - learn.intro-to-azure-service-fabric.knowledge-check
 - learn.intro-to-azure-service-fabric.summary
+

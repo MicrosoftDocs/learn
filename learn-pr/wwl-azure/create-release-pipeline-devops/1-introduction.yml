@@ -2,6 +2,8 @@
 uid: learn.wwl.create-release-pipeline.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 05/28/2024

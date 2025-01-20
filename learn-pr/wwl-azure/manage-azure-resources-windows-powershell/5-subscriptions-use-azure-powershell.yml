@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-resources-windows-powershell.subscriptions-use-azure-powershell
 title: Manage Azure subscriptions by using Azure PowerShell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Azure subscriptions by using Azure PowerShell
   description: "Manage Azure subscriptions by using Azure PowerShell"
   ms.date: 03/22/2024
@@ -14,3 +16,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/5-subscriptions-use-azure-powershell.md)]
+

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.work-delta-lake-tables-fabric.optimize-delta-tables
-title: Create delta tables
+title: Optimize delta tables
 metadata:
   title: Optimize Delta tables
   description: "Optimize Delta tables"

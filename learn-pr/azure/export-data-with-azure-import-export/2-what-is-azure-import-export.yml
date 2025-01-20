@@ -3,6 +3,8 @@ uid: learn.azure.export-data-with-azure-import-export.what-is-azure-import-expor
 title: What is Azure Import/Export?
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure Import/Export?
   description: What is Azure Import/Export?
   ms.date: 03/08/2023
@@ -40,3 +42,4 @@ quiz:
     - content: Use it to create an import job. You specify the files that the disk contains and what should be imported into Azure Storage.
       isCorrect: false
       explanation: You create the import job in the Azure portal.
+

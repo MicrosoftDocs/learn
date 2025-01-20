@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-devops.what-is-github
 title: What is GitHub?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is GitHub?
   description: "What is GitHub?"
   ms.date: 05/29/2024

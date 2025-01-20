@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.cosmos-db-overview
 title: An overview of Cosmos DB
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: An overview of Cosmos DB
   description: "An overview of Cosmos DB"
   ms.date: 03/26/2024

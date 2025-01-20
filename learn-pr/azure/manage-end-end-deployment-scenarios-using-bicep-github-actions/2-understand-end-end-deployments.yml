@@ -2,6 +2,8 @@
 uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.understand-end-end-deployments
 title: Understand end-to-end deployments
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand end-to-end deployments
   description: Learn about control and data plane operations, and how you perform each within a Bicep infrastructure as code deployment workflow. Also, learn about how to design the scope of your workflow, options you have for performing data-plane operations, and how to work with outputs from your Bicep file in a workflow.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-end-end-deployments.md)]
+

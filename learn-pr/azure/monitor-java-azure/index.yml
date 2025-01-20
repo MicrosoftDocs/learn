@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.monitor-java-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Monitoring Java applications on Azure
   description: Learn how to use monitoring for your Java applications on Azure
@@ -50,3 +52,4 @@ units:
 - learn.monitor-java-azure.summary
 badge:
   uid: learn.monitor-java-azure.badge
+

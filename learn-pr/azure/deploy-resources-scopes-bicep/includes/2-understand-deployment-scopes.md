@@ -70,7 +70,7 @@ You might deploy resources to your tenant when:
 By now, you're familiar with resource IDs for resources that live inside subscriptions. For example, here's a resource ID that represents a resource group, which is a subscription-scoped resource:
 
 ```
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyDevelopment
+/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/ToyDevelopment
 ```
 
 Here's a visual representation of the same information:
@@ -80,7 +80,7 @@ Here's a visual representation of the same information:
 Subscriptions themselves have their own IDs, like this:
 
 ```
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c
+/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e
 ```
 
 > [!NOTE]
@@ -104,7 +104,7 @@ Here's what that looks like:
 When a resource is deployed at a management group scope, its resource ID includes the management group ID. Here's an example resource ID for a role definition that has been created at a management group scope:
 
 ```
-/providers/Microsoft.Management/managementGroups/ProductionMG/providers/Microsoft.Authorization/roleDefinitions/d79b8492-6f38-49f9-99e6-b2e667d4f3ca
+/providers/Microsoft.Management/managementGroups/ProductionMG/providers/Microsoft.Authorization/roleDefinitions/00000000-0000-0000-0000-000000000000
 ```
 
 Here's a visual representation of the same ID:
@@ -114,7 +114,7 @@ Here's a visual representation of the same ID:
 Another role definition might be defined at a subscription scope, so its resource ID looks a little different:
 
 ```
-/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/providers/Microsoft.Authorization/roleDefinitions/d79b8492-6f38-49f9-99e6-b2e667d4f3ca
+/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/providers/Microsoft.Authorization/roleDefinitions/00000000-0000-0000-0000-000000000000
 ```
 
 Here's a visual representation of the same ID:

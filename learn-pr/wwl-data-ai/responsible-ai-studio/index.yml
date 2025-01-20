@@ -1,11 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.responsible-ai-studio
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Responsible generative AI
-  description: A practical approach to implementing generative AI responsibly, and exploring content filters in AI Studio.
+  description: A practical approach to implementing generative AI responsibly, and exploring content filters in AI Foundry portal.
   author: ivorb
   ms.author: berryivor
-  ms.date: 8/29/2024
+  ms.date: 11/28/2024
   ms.service: azure-ai-openai
   ms.topic: module-standard-task-based
   ms.collection:
@@ -20,7 +22,7 @@ abstract: |
     - Mitigate harms in a generative AI solution
     - Prepare to deploy and operate a generative AI solution responsibly
 prerequisites: |
-  Before starting this module, you should be familiar with the Azure AI Studio. Consider completing the [Introduction to Azure AI Studio](/training/modules/introduction-to-azure-ai-studio) module before starting this one.
+  Before starting this module, you should be familiar with Azure AI Foundry. Consider completing the [Introduction to Azure AI Foundry](/training/modules/introduction-to-azure-ai-studio) module before starting this one.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
@@ -47,3 +49,4 @@ units:
 - learn.wwl.responsible-ai-studio.summary
 badge:
   uid: learn.wwl.responsible-ai-studio.badge
+

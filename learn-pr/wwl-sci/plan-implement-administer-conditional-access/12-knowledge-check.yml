@@ -2,9 +2,11 @@
 uid: learn.wwl.plan-implement-administer-conditional-access.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/14/2024
+  ms.date: 12/16/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

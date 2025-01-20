@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.software-composition-analysis
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Software Composition Analysis
   description: "Software Composition Analysis"
   ms.date: 05/13/2024

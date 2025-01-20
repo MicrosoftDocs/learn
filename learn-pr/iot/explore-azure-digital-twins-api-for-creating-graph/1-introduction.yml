@@ -2,6 +2,8 @@
 uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Learn about the scenario and main goal of this module.
   ms.date: 08/08/2024

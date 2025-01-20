@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-virtual-machine-availability.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 07/24/2024
+  ms.date: 12/19/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

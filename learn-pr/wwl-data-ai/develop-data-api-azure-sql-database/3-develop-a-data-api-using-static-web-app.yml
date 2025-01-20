@@ -2,6 +2,8 @@
 uid: learn-wwl.develop-data-api-azure-sql-database.develop-a-data-api-using-static-web-app
 title: Develop a data API using Azure Static Web Apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Develop a data API using Azure Static Web Apps
   description: "Learn how to develop a data API using Azure Static Web Apps."
   ms.date: 10/10/2024

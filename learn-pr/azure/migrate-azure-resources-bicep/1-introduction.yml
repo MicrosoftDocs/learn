@@ -2,6 +2,8 @@
 uid: learn.azure.migrate-azure-resources-bicep.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Learn how to migrate your Azure resources to Bicep.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

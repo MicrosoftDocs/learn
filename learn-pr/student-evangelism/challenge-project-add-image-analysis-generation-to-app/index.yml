@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Challenge project - Add image analysis and generation capabilities to your application
   description: "Add image analysis and generation capabilities to your application"
   ms.date: 9/5/2023
@@ -62,5 +64,4 @@ units:
 - learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.summary
 
 badge:
-  uid: |
-    learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.badge
+  uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.badge

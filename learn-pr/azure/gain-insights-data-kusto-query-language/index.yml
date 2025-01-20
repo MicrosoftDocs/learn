@@ -4,20 +4,20 @@ metadata:
   moduleType: standard
   title: Gain insights from your data by using Kusto Query Language
   description: "Learn how to write advanced queries in Kusto Query Language (KQL) by using the aggregation functions, the render operator, and variables."
-  ms.date: 12/01/2022
-  author: YaelSchuster
-  ms.author: yaschust
+  ms.date: 11/14/2024
+  author: shsagir
+  ms.author: shsagir
   ms.topic: module
   ms.service: kusto
 title: Gain insights from your data by using Kusto Query Language
 summary: "Write advanced queries in Kusto Query Language to help you gain insights from your data. Use the aggregation functions `count`, `dcount`, `countif`, `sum`, `min`, `max`, `avg`, `percentiles`, and others. Communicate these results visually in charts."
 abstract: |
-  By the end of this module, you'll be able to:
-    - Use the Kusto Query Language to gain insights from your data by using the aggregation functions `count`, `dcount`, `countif`, `sum`, `min`, `max`, `avg`, `percentiles`, and others
-    - Communicate query results visually using the `render` operator
-    - Assign variables by using a `let` statement
+  By the end of this module, you should be able to:
+    - Use the Kusto Query Language to gain insights from your data by using the aggregation functions `count`, `dcount`, `countif`, `sum`, `min`, `max`, `avg`, `percentiles`, and others.
+    - Communicate query results visually using the `render` operator.
+    - Assign variables by using a `let` statement.
 prerequisites: |
-  - An Azure subscription. Create a [free Azure account](https://azure.microsoft.com/free/)
+  - An Azure subscription; you can create a [free Azure account](https://azure.microsoft.com/free/)
   - Familiarity with database structures like tables, columns, and rows
   - Familiarity with Kusto Query Language operators such as count, take, project, where, and sort
 iconUrl: /training/achievements/gain-insights-in-your-data-using-kusto-query-language.svg

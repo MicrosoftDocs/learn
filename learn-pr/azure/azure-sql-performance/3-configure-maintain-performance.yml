@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-performance.3-configure-maintain-performance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure and maintain performance
   description: Configure and maintain performance
   ms.date: 03/15/2023

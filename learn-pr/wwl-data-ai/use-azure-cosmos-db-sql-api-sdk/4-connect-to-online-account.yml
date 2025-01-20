@@ -2,9 +2,11 @@
 uid: learn.wwl.use-azure-cosmos-db-sql-api-sdk.connect-to-online-account
 title: Connect to an online account
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect to an online account
   description: "Connect to an online account"
-  ms.date: 03/28/2024
+  ms.date: 12/19/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,3 +15,4 @@ labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/4-connect-to-online-account.md)]
+

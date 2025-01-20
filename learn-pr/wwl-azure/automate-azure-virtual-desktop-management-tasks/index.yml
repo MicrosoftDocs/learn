@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.automate-azure-virtual-desktop-management-tasks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate Azure Virtual Desktop management tasks
   description: Automate Azure Virtual Desktop management tasks
   ms.date: 06/21/2023
@@ -40,3 +42,4 @@ units:
 - learn.wwl.automate-azure-virtual-desktop-management-tasks.summary
 badge:
   uid: learn.wwl.automate-azure-virtual-desktop-management-tasks.badge
+

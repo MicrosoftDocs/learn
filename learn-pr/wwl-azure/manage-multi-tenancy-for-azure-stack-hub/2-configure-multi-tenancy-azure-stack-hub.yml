@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-multi-tenancy-for-azure-stack-hub.configure-multi-tenancy
 title: Configure multi-tenancy in Azure Stack Hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure multi-tenancy in Azure Stack Hub
   description: "Configure multi-tenancy in Azure Stack Hub"
   ms.date: 10/26/2022
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-configure-multi-tenancy-azure-stack-hub.md)]
+

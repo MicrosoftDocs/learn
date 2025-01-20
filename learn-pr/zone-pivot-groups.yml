@@ -308,6 +308,14 @@ groups:
       title: Bash
     - id: vscode
       title: Visual Studio Code
+- id: vscode-shell
+  title: IDE or shell
+  prompt: Choose an Integrated Development Environment (IDE) or the shell
+  pivots:
+    - id: vscode
+      title: Visual Studio Code
+    - id: shell
+      title: .NET CLI
 - id: dev-env-spring-jbosseap
   title: Java framework
   prompt: Choose your Java framework
@@ -450,3 +458,21 @@ groups:
       title: Microsoft Entra admin center
     - id: microsoft-graph-api
       title: Microsoft Graph API
+- id: sql-database
+  title: SQL database options
+  prompt: Choose the SQL database platform you want to use
+  pivots:
+    - id: azure-sql-database
+      title: Microsoft Azure SQL Database
+    - id: sql-server
+      title: Microsoft SQL Server
+    - id: fabric-database
+      title: Microsoft Fabric
+- id: maven-azure-cli
+  title: Deployment options
+  prompt: Select a deployment option
+  pivots:
+    - id: maven-plugin
+      title: Maven Plugin for Azure App Service
+    - id: azure-cli
+      title: Azure CLI

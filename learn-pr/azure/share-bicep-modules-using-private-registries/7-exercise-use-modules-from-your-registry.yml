@@ -3,6 +3,8 @@ uid: learn.azure.share-bicep-modules-using-private-registries.exercise-use-modul
 title: Exercise - Use modules from your registry
 sandbox: true
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Use modules from your registry
   description: Create a Bicep file that uses modules from your private registry.
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/7-exercise-use-modules-from-your-registry.md)]
+

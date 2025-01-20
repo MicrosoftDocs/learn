@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-command-line-tools-intro.intro-to-bicep
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Bicep
   description: Overview of using Bicep to manage and provision Azure resources
   ms.published: 02/27/2023
@@ -14,3 +16,4 @@ title: Introduction to Bicep
 durationInMinutes: 3
 content: |
   [!include[](includes/intro-to-bicep.md)]
+

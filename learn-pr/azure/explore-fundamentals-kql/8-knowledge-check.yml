@@ -2,11 +2,13 @@
 uid: learn.azure.explore-fundamentals-kql.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "A knowledge check about how Kusto Query Language (KQL) is used to query data in Microsoft services, including various Azure services, for monitoring and real-time analytics."
-  ms.date: 11/02/2023
-  author: YaelSchuster
-  ms.author: yaschust
+  ms.date: 11/01/2024
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 5
 content: |
@@ -14,13 +16,13 @@ quiz:
   questions:
   - content: "What are the strengths of Kusto Query Language (KQL) as a query language?" 
     choices:
-    - content: "KQL is efficient at retrieving and processing data in near real-time."
+    - content: "KQL is efficient at retrieving and processing data in near real time."
       isCorrect: true
       explanation: "KQL is designed specifically for large data sets and outperforms many other query languages. It returns query results without modifying the stored data or metadata."
     - content: "KQL can be used to retrieve, update, and delete data."
       isCorrect: false
       explanation: " KQL is for querying only. Unlike SQL, KQL doesn't update or delete data."
-    - content: "KQL is good for use cases other than cybersecurity while SQL is primarily used for security-related queries."
+    - content: "KQL is good for use cases other than cybersecurity, while SQL is primarily used for security-related queries."
       isCorrect: false
       explanation: "KQL is primarily used for near-real-time analytics and monitoring and is ideal for querying data related to reliability, performance, and security."
   - content: "How is a KQL query built?"
@@ -38,7 +40,7 @@ quiz:
     choices:
     - content: "Save them as files and import them as needed."
       isCorrect: false
-      explanation: "While you can technically save KQL queries as files on your computer, this method isn't efficient and can lead to errors."
+      explanation: "Although you can technically save KQL queries as files on your computer, this method isn't efficient and can lead to errors."
     - content: "Save them as functions."
       isCorrect: true
       explanation: "You can use a function as a standalone saved query or as a command as part of another query. Use functions to simplify complex queries, reuse common query patterns, and improve query readability."
@@ -56,3 +58,4 @@ quiz:
     - content: "Azure Cosmos DB"
       isCorrect: true
       explanation: "Azure Cosmos DB is a globally distributed, multi-model database service that has a built-in query syntax."
+

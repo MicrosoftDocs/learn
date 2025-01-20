@@ -12,9 +12,7 @@ Azure offers several types of managed disks. The following table shows a [compar
 | Comparison | Ultra-disk | Premium SSD | Standard SSD | Standard HDD |
 | --- | --- | --- | --- | --- |
 | **Disk type** | SSD | SSD | SSD | HDD |
-| **Scenario** | IO-intensive workloads, such as SAP HANA, top tier databases like SQL Server and Oracle, and other transaction-heavy workloads | Production and performance sensitive workloads | Web servers, Lightly used enterprise applications, Development and testing | Backup, Noncritical, Infrequent access |
-| **Max throughput** | 2,000 Mbps| 900 Mbps| 750 Mbps| 500 Mbps |
-| **Max IOPS** | 160,000 | 20,000 | 6,000 | 2,000 |
+| **Scenario** | IO-intensive workloads, such as SAP HANA, top tier databases like SQL Server and Oracle, and other transaction-heavy workloads | Production and performance sensitive workloads | Web servers, Lightly used enterprise applications, development, and testing | Backup, Noncritical, Infrequent access |
 
 #### Choose an encryption option
 
@@ -45,4 +43,3 @@ Think about what data disk types are needed for Tailwind Traders. Consider your 
    > [!Warning]
    > Disk caching isn't supported for disks 4 TiB and larger. When multiple disks are attached to your Virtual Machine, each disk smaller than 4 TiB supports caching. Changing the cache setting of an Azure disk, detaches and reattaches the target disk. When it's the OS disk, the VM is restarted. 
 
-- **Consider using encryption**. Secure your data disks with encryption. To fully protect your data disks, combine encryption services: ADE, SSE, and encryption at rest.

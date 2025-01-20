@@ -1,6 +1,6 @@
 Several options are available when you're running Kubernetes locally. You can install Kubernetes on physical machines or VMs, or use a cloud-based solution such as Azure Kubernetes Service (AKS). 
 
-Your goal in this exercise is to explore a Kubernetes installation with a single-node cluster. In this exercise, you learn how to configure and install a _MicroK8s_ environment that's easy to set up and tear down. Then, you deploy a Kubernetes service and scale it out to multiple instances to host a website.
+Your goal in this exercise is to explore a Kubernetes installation with a single-node cluster. In this exercise, you learn how to configure and install a *MicroK8s* environment that's easy to set up and tear down. Then, you deploy a Kubernetes service and scale it out to multiple instances to host a website.
 
 > [!NOTE]
 > This exercise is optional and includes steps that show how to delete and uninstall the software and resources you'll use in the exercise.
@@ -120,7 +120,7 @@ You're now ready to install add-ons on the cluster.
 
 ## Prepare the cluster
 
-To view the status of the installed add-ons on your cluster, run the status command in MicroK8s. These add-ons provide several services, some of which you covered previously. One example is DNS functionality.
+To view the status of the installed add-ons on your cluster, run the `status` command in MicroK8s. These add-ons provide several services, some of which you covered previously. One example is DNS functionality.
 
 1. To check the status of the installation, run the `microk8s.status --wait-ready` command.
 
@@ -200,20 +200,20 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
     sudo kubectl get nodes
     ```
 
-    The result is similar to the following example, which shows you that there's only one node in the cluster with the name microk8s-vm. Notice that the node is in a ready state. The ready state indicates that the control plane might schedule workloads on this node.
+    The result is similar to the following example, which shows you that there's only one node in the cluster with the name `microk8s-vm`. Notice that the node is in a *Ready* state. The ready state indicates that the control plane might schedule workloads on this node.
 
     ```output
     NAME          STATUS   ROLES    AGE   VERSION
     microk8s-vm   Ready    <none>   35m   v1.17.3
     ```
 
-    You can get more information for the specific resource that's requested. For example, let's assume that you need to find the IP address of the node. To fetch extra information from the API server, run the `-o wide` parameter:
+    You can get more information for the specific resource that's requested. For example, let's assume that you need to find the node's IP address. To fetch extra information from the API server, run the `-o wide` parameter:
 
     ```bash
     sudo kubectl get nodes -o wide
     ```
 
-    The result is similar to the following example. Notice that you now can see the internal IP address of the node, the OS running on the node, the kernel version, and the container runtime.
+    The result is similar to the following example. Notice that you now can see the node's internal IP address, the OS running on the node, the kernel version, and the container runtime.
 
     ```output
     NAME          STATUS   ROLES    AGE   VERSION   INTERNAL-IP      EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
@@ -263,7 +263,7 @@ You want to schedule a web server on the cluster to serve a website to your cust
 
 Recall from earlier that you can use pod manifest files to describe your pods, replica sets, and deployments to define workloads. Because you haven't covered these files in detail, you run `kubectl` to directly pass the information to the API server.
 
-Even though the use of `kubectl` is handy, using manifest files is a best practice. Manifest files allow you to roll forward or roll back deployments with ease in your cluster. These files also help document the configuration of a cluster.
+Even though the use of `kubectl` is handy, using manifest files is a best practice. Manifest files allow you to roll forward or roll back deployments with ease in your cluster. These files also help document a cluster's configuration.
 
 1. To create your NGINX deployment, run the `kubectl create deployment` command. Specify the name of the deployment and the container image to create a single instance of the pod.
 
@@ -307,7 +307,7 @@ Even though the use of `kubectl` is handy, using manifest files is a best practi
 
 Test the NGINX installation by connecting to the web server through the pod's IP address.
 
-1. To find the address of the pod, pass the `-o wide` parameter:
+1. To find the pod's address, pass the `-o wide` parameter:
 
     ```bash
     sudo kubectl get pods -o wide

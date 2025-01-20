@@ -2,6 +2,8 @@
 uid: learn.azure.create-batch-account-using-azure-portal.exercise-create-azure-batch-account
 title: Exercise - Create an Azure Batch job and virtual network
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an Azure Batch job and virtual network
   description: Create a Batch account, a virtual network, and a Batch pool.
   ms.date: 08/05/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-azure-batch-account.md)]
+

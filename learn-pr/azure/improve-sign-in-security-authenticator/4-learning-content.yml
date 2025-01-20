@@ -2,6 +2,8 @@
 uid: learn.improve-sign-in-security-authenticator.learning-content.validate-sign-in
 title: Validate the user sign-in experience
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Validate the user sign-in experience
   description: "Create a new user account in Microsoft Entra ID and enable it for Microsoft Authenticator. Sign in, perform MFA, and set up Microsoft Authenticator."
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/4-learning-content.md)]
+

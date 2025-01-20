@@ -3,13 +3,14 @@ uid: learn.wwl.implement-knowledge-mining-azure-cognitive-search
 metadata:
   title: Implement knowledge mining with Azure AI Search
   description: Implement knowledge mining with Azure AI Search
-  ms.date: 10/12/2022
-  author: wwlpublish
+  ms.date: 10/23/2024
+  author: ivorb
   ms.author: berryivor
   ms.topic: learning-path
   ms.custom:
     - build-2023
     - build-2023-dataai
+  adobe-target: true
 title: Implement knowledge mining with Azure AI Search
 prerequisites: |
   - Familiarity with Microsoft Azure
@@ -31,11 +32,9 @@ subjects:
 - artificial-intelligence
 modules:
 - learn.wwl.create-azure-cognitive-search-solution
-- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search
+- learn.wwl.create-azure-ai-custom-skill
 - learn.wwl.create-knowledge-store-with-azure-cognitive-search
-- learn.wwl.enrich-search-index-using-language-studio
 - learn.wwl.implement-advanced-search-features-azure-cognitive-search
-- learn.wwl.build-azure-machine-learn-custom-skill-for-azure-cognitive-search
 - learn.wwl.search-data-outside-azure-platform-cognitive-search
 - learn.wwl.maintain-azure-cognitive-search-solution
 - learn.use-semantic-search

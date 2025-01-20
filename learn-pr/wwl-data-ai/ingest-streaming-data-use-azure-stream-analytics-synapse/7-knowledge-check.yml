@@ -2,11 +2,13 @@
 uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/24/2023
+  ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: unit
 durationInMinutes: 3
 quiz:

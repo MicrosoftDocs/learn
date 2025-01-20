@@ -2,6 +2,8 @@
 uid: learn.aks-governance-azure-policy.exercise-check-compliance-status
 title: Check compliance status using Azure Policy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Check compliance status using Azure Policy
   description: Check compliance status using Azure Policy from the Azure portal.
   ms.date: 04/22/2024

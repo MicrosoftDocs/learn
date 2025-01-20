@@ -2,6 +2,8 @@
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-create-virtual-machine
 title: Monitor VM host data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: View VM host monitoring data
   description: Create a Linux VM with recommended alerts and boot diagnostics enabled, and view built-in metrics graphs, boot diagnostics, and the activity log.
   ms.date: 09/26/2024
@@ -37,3 +39,4 @@ quiz:
     - content: Percentage CPU (average)
       isCorrect: false
       explanation: The Percentage CPU (average) metrics graph appears by default after you create a VM.
+

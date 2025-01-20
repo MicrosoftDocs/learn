@@ -1,4 +1,4 @@
-In this unit, you'll create C# entity classes that will map to tables in a local SQLite database. The EF Core migrations feature produces tables from those entities.
+In this unit, you create C# entity classes that map to tables in a local SQLite database. The EF Core migrations feature produces tables from those entities.
 
 A migration provides a way to incrementally update the database schema.
 
@@ -13,7 +13,7 @@ If you have a compatible container runtime installed, you also can use the [Dev 
 
 ### Use GitHub Codespaces
 
-A codespace is an IDE that's hosted in the cloud. If you're using GitHub Codespaces, [go to the repository in your browser](https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core). Select **Code**, and then create a new codespace in the `main` branch.
+A codespace is an IDE hosted in the cloud. If you're using GitHub Codespaces, [go to the repository in your browser](https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core). Select **Code**, and then create a new codespace in the `main` branch.
 
 ### Clone the GitHub repository
 
@@ -36,7 +36,7 @@ If you aren't using GitHub Codespaces, you can clone the project GitHub repo, th
 
 Now that you have the project files to work with, let's see what's in the project and review the code.
 
-- The project, an ASP.NET Core web API, is located in the *ContosoPizza* directory. The file paths we refer to in this module are relative to the *ContosoPizza* directory.
+- The ASP.NET Core web API project is located in the *ContosoPizza* directory. The file paths we refer to in this module are relative to the *ContosoPizza* directory.
 - *Services/PizzaService.cs* is a service class that defines create, read, update, and delete (CRUD) methods. All the methods currently throw `System.NotImplementedException`.
 - In *Program.cs*, `PizzaService` is registered with the ASP.NET Core dependency injection system.
 - *Controllers/PizzaController.cs* is a value for `ApiController` that exposes an endpoint for HTTP POST, GET, PUT, and DELETE verbs. These verbs call the corresponding CRUD methods on `PizzaService`. `PizzaService` is injected into the `PizzaController` constructor.
@@ -64,7 +64,7 @@ To build the app in Visual Studio Code:
 
 ## Add NuGet packages and EF Core tools
 
-The database engine with which you work in this module is SQLite. SQLite is a lightweight, file-based database engine. It's a good choice for development and testing, and it's also a good choice for small-scale production deployments.
+The database engine you work with in this module is SQLite. SQLite is a lightweight, file-based database engine. It's a good choice for development and testing, and it's also a good choice for small-scale production deployments.
 
 > [!NOTE]
 > As mentioned earlier, database providers in EF Core are pluggable. SQLite is a good choice for this module because it's lightweight and cross-platform. You can use the same code to work with different database engines, such as SQL Server and PostgreSQL. You can even use multiple database engines in the same app.
@@ -93,14 +93,14 @@ Before you start, add the required packages:
     dotnet tool install --global dotnet-ef
     ```
 
-    This command installs `dotnet ef`, the tool you'll use to create migrations and scaffolding.
+    This command installs `dotnet ef`, the tool you use to create migrations and scaffolding.
 
    > [!TIP]
    > If `dotnet ef` is already installed, you can update it by running `dotnet tool update --global dotnet-ef`.
 
 ## Scaffold models and DbContext
 
-Now you'll add and configure a `DbContext` implementation. `DbContext` is a gateway through which you can interact with the database.
+Now you add and configure a `DbContext` implementation. `DbContext` is a gateway through which you can interact with the database.
 
 1. Right-click the *ContosoPizza* directory and add a new folder called *Data*.
 1. In the *Data* folder, create a new file named *PizzaContext.cs*. Add the following code to the empty file:
@@ -128,8 +128,8 @@ Now you'll add and configure a `DbContext` implementation. `DbContext` is a gate
 
     - The constructor accepts a parameter of type `DbContextOptions<PizzaContext>`. The constructor allows external code to pass in the configuration so that the same `DbContext` can be shared between test and production code, and even be used with different providers.
     - The `DbSet<T>` properties correspond to tables to create in the database.
-    - The table names will match the `DbSet<T>` property names in the `PizzaContext` class. You can override this behavior if needed.
-    - When instantiated, `PizzaContext` will expose the `Pizzas`, `Toppings`, and `Sauces` properties. Changes you make to the collections that those properties expose will be propagated to the database.
+    - The table names match the `DbSet<T>` property names in the `PizzaContext` class. You can override this behavior if needed.
+    - When instantiated, `PizzaContext` exposes the `Pizzas`, `Toppings`, and `Sauces` properties. Changes you make to the collections that those properties expose are propagated to the database.
 
 1. In *Program.cs*, replace `// Add the PizzaContext` with the following code:
 
@@ -140,11 +140,11 @@ Now you'll add and configure a `DbContext` implementation. `DbContext` is a gate
     The preceding code:
 
     - Registers `PizzaContext` with the ASP.NET Core dependency injection system.
-    - Specifies that `PizzaContext` will use the SQLite database provider.
+    - Specifies that `PizzaContext` uses the SQLite database provider.
     - Defines a SQLite connection string that points to a local file, *ContosoPizza.db*.
 
    > [!NOTE]
-   > SQLite uses local database files, so it's probably okay to hard-code the connection string. For network databases like PostgreSQL and SQL Server, you should always store your connection strings securely. For local development, use [Secret Manager](/aspnet/core/security/app-secrets). For production deployments, consider using a service like [Azure Key Vault](/aspnet/core/security/key-vault-configuration).
+   > SQLite uses local database files, so it's *okay* to hard-code the connection string. For network databases like PostgreSQL and SQL Server, you should always store your connection strings securely. For local development, use [Secret Manager](/aspnet/core/security/app-secrets). For production deployments, consider using a service like [Azure Key Vault](/aspnet/core/security/key-vault-configuration).
 
 1. Also in *Program.cs*, replace `// Additional using declarations` with the following code.
 
@@ -169,7 +169,7 @@ Next, create a migration that you can use to create your initial database.
 
     In the preceding command:
 
-    - The migration is given a name of *:::no-loc text="InitialCreate":::*.
+    - The migration is named: *:::no-loc text="InitialCreate":::*.
     - The `--context` option specifies the name of the class in the *:::no-loc text="ContosoPizza":::* project, which derives from `DbContext`.
 
     A new *:::no-loc text="Migrations":::* directory appears in the *:::no-loc text="ContosoPizza":::* project root. The directory contains a *:::no-loc text="&lt;timestamp&gt;_InitialCreate.cs":::* file that describes the database changes to be translated to a Data Definition Language (DDL) change script.
@@ -211,7 +211,7 @@ EF Core created a database for your app. Next, let's take a look inside the data
 
 ## Change the model and update the database schema
 
-Your manager at Contoso Pizza gives you some new requirements, so you have to change your entity models. In the following steps, you'll modify the models by using mapping attributes (sometimes called *data annotations*).
+Your manager at Contoso Pizza gives you some new requirements, so you have to change your entity models. In the following steps, you modify the models by using mapping attributes (sometimes called *data annotations*).
 
 1. In *Models\Pizza.cs*, make the following changes:
 
@@ -219,7 +219,7 @@ Your manager at Contoso Pizza gives you some new requirements, so you have to ch
     1. Add a `[Required]` attribute before the `Name` property to mark the property as required.
     1. Add a `[MaxLength(100)]` attribute before the `Name` property to specify a maximum string length of 100.
 
-    Your updated *Pizza.cs* file should look like the following:
+    Your updated *Pizza.cs* file should look like the following code:
 
     ```csharp
     using System.ComponentModel.DataAnnotations;
@@ -247,7 +247,7 @@ Your manager at Contoso Pizza gives you some new requirements, so you have to ch
     1. Add a `[MaxLength(100)]` attribute before the `Name` property to specify a maximum string length of 100.
     1. Add a `bool` property named `IsVegan`.
 
-    Your updated *Sauce.cs* file should look like the following:
+    Your updated *Sauce.cs* file should look like the following code:
 
     ```csharp
     using System.ComponentModel.DataAnnotations;
@@ -272,13 +272,13 @@ Your manager at Contoso Pizza gives you some new requirements, so you have to ch
     1. Add a `[Required]` attribute before the `Name` property to mark the property as required.
     1. Add a `[MaxLength(100)]` attribute before the `Name` property to specify a maximum string length of 100.
     1. Add a `decimal` property named `Calories` immediately after the `Name` property.
-    1. Add a `Pizzas` property of type  `ICollection<Pizza>?` to make `Pizza`-`Topping` a many-to-many relationship.
+    1. Add a `Pizzas` property of type  `ICollection<Pizza>?`. This change makes `Pizza`-`Topping` a many-to-many relationship.
     1. Add a `[JsonIgnore]` attribute to the `Pizzas` property.
 
         > [!IMPORTANT]
         > This attribute prevents `Topping` entities from including the `Pizzas` property when the web API code serializes the response to JSON. Without this change, a serialized collection of toppings would include a collection of every pizza that uses the topping. Each pizza in *that* collection would contain a collection of toppings, which each would again contain a collection of pizzas. This type of infinite loop is called a *circular reference* and can't be serialized.
 
-    Your updated *Topping.cs* file should look like the following:
+    Your updated *Topping.cs* file should look like the following code:
 
     ```csharp
     using System.ComponentModel.DataAnnotations;
@@ -309,7 +309,7 @@ Your manager at Contoso Pizza gives you some new requirements, so you have to ch
     dotnet ef migrations add ModelRevisions --context PizzaContext
     ```
 
-    This command creates a migration named *:::no-loc text="ModelRevisions":::*.
+    This command creates a migration named: *:::no-loc text="ModelRevisions":::*.
 
    > [!NOTE]
    > You'll see this message: *An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy*. This message appeared because you changed the relationship from `Pizza` to `Topping` from one-to-many to many-to-many, which requires that an existing foreign-key column is dropped. Because you don't yet have any data in your database, this change isn't problematic. However, in general, it's a good idea to check the generated migration when this warning appears to make sure that the migration doesn't delete or truncate any data.
@@ -330,18 +330,18 @@ Your manager at Contoso Pizza gives you some new requirements, so you have to ch
    > The SQLite extension reuses open **SQLite** tabs.
 
     - A `PizzaTopping` join table was created to represent the many-to-many relationship between pizzas and toppings.
-    - New fields have been added to `Toppings` and `Sauces`.
+    - New fields were added to `Toppings` and `Sauces`.
         - `Calories` is defined as a `text` column because SQLite doesn't have a matching `decimal` type.
         - Similarly, `IsVegan` is defined as an `integer` column. SQLite doesn't define a `bool` type.
         - In both cases, EF Core manages the translation.
-    - The `Name` column in each table has been marked `not null`, but SQLite doesn't have a `MaxLength` constraint.
+    - The `Name` column in each table was marked `not null`, but SQLite doesn't have a `MaxLength` constraint.
 
    > [!TIP]
    > EF Core database providers map a model schema to the features of a specific database. Although SQLite doesn't implement a corresponding constraint for `MaxLength`, other databases like SQL Server and PostgreSQL do.
 
-1. In the **SQLite Explorer** folder, right-click the `_EFMigrationsHistory` table and select **Show Table**. The table contains a list of all migrations that are applied to the database. Because you've run two migrations, there are two entries: one for the *InitialCreate* migration and another for *ModelRevisions*.
+1. In the **SQLite Explorer** folder, right-click the `_EFMigrationsHistory` table and select **Show Table**. The table contains a list of all migrations that are applied to the database. Because you ran two migrations, there are two entries: one for the *InitialCreate* migration and another for *ModelRevisions*.
 
 > [!NOTE]
 > This exercise used mapping attributes (data annotations) to map models to the database. As an alternative to mapping attributes, you can use the [ModelBuilder fluent API](/ef/core/modeling/#use-fluent-api-to-configure-a-model) to configure models. Both approaches are valid, but some developers prefer one approach over the other.
 
-You've used migrations to define and update a database schema. In the next unit, you'll finish the methods in `PizzaService` that manipulate data.
+You used migrations to define and update a database schema. In the next unit, you'll finish the methods in `PizzaService` that manipulate data.

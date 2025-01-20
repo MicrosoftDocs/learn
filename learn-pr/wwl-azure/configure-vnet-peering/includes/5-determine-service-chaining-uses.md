@@ -11,7 +11,7 @@ There are a few ways to extend the capabilities of your peering for resources an
 
 You can implement these mechanisms and create a multi-level hub and spoke architecture. These options can help overcome the limit on the number of virtual network peerings per virtual network.
 
-The following diagram shows a hub and spoke virtual network with an NVA and VPN gateway. The hub and spoke network is accessible to other virtual networks via user-defined routes and service chaining.
+The next diagram shows a hub and spoke virtual network with an NVA and VPN gateway. The hub and spoke network is accessible to other virtual networks via user-defined routes and service chaining.
 
 :::image type="content" source="../media/service-chains-5c9286d1.png" alt-text="Diagram that shows a hub virtual network with an NVA and VPN gateway that are accessible to other virtual networks." border="false":::
 

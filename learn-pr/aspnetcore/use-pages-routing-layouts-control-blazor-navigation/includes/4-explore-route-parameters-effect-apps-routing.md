@@ -1,11 +1,11 @@
-You've seen how, in Blazor, you can use parts of the URI to route requests to the right component. You can also intercept other parts of the URI and access them in your code by using *route parameters*.
+So far, in this Blazor module, you saw how to use parts of the URI to route requests to the right component. You can also use *route parameters* to intercept other parts of the URI and access them in your code.
 
-Suppose you're working on the pizza delivery company's website, and you've routed pizza requests to the **Pizzas.razor** component. Now, you want to get the user's favorite pizza from the URI and use it to display information about other pizzas they might like.
+Suppose you're working on the pizza delivery company's website, and you're routing pizza requests to the **Pizzas.razor** component. Now, you want to get the user's favorite pizza from the URI and use it to display information about other pizzas they might like.
 
-Here, you'll learn how to use route parameters to specify parts of the URL to process in your code.
+Here, you learn how to use route parameters to specify parts of the URL to process in your code.
 
 > [!NOTE]
-> The code blocks in this unit are illustrative examples. You'll write your own code in the next unit.
+> The code blocks in this unit are illustrative examples. You write your own code in the next unit.
 
 ## Route parameters
 
@@ -13,9 +13,9 @@ Earlier in this module, you learned how parts of the URI that the user requests 
 
 `http://www.contoso.com/favoritepizza/hawaiian`
 
-By using the `@page` directive, you've learned how to route this request to, for example, the **FavoritePizza.razor** component. Now you want to make use of the value **hawaiian** in your component. To obtain this value, you can declare it as a route parameter.
+By using the `@page` directive, you saw how to route this request to, for example, the **FavoritePizza.razor** component. Now you want to make use of the value **hawaiian** in your component. To obtain this value, you can declare it as a route parameter.
 
-Use the `@page` directive to specify parts of the URI that will be passed to the component as route parameters. In your component's code, you can obtain the value of a route parameter in the same way as you would obtain the value of a component parameter:
+Use the `@page` directive to specify the parts of the URI that are passed to the component as route parameters. In your component's code, you can obtain the value of a route parameter in the same way as you would obtain the value of a component parameter:
 
 ```razor
 @page "/FavoritePizzas/{favorite}"
@@ -25,8 +25,8 @@ Use the `@page` directive to specify parts of the URI that will be passed to the
 <p>Your favorite pizza is: @Favorite</p>
 
 @code {
-	[Parameter]
-	public string Favorite { get; set; }
+    [Parameter]
+    public string Favorite { get; set; }
 }
 ```
 
@@ -47,13 +47,13 @@ In the preceding example, the `{favorite}` parameter is required. To make the ro
 <p>Your favorite pizza is: @Favorite</p>
 
 @code {
-	[Parameter]
-	public string Favorite { get; set; }
-	
-	protected override void OnInitialized()
-	{
-		Favorite ??= "Fiorentina";
-	}
+    [Parameter]
+    public string Favorite { get; set; }
+    
+    protected override void OnInitialized()
+    {
+        Favorite ??= "Fiorentina";
+    }
 }
 ```
 
@@ -74,8 +74,8 @@ In the previous examples, the consequence of requesting the URI `http://www.cont
 <p>Your favorite pizza size is: @FavoriteSize inches.</p>
 
 @code {
-	[Parameter]
-	public int FavoriteSize { get; set; }
+    [Parameter]
+    public int FavoriteSize { get; set; }
 }
 ```
 
@@ -103,12 +103,12 @@ Consider the following component from earlier in this unit:
 <p>Your favorite pizza is: @Favorite</p>
 
 @code {
-	[Parameter]
-	public string Favorite { get; set; }
+    [Parameter]
+    public string Favorite { get; set; }
 }
 ```
 
-Now suppose the user tried to specify two favorites by requesting the URI `http://www.contoso.com/favoritepizza/margherita/hawaiian`. The page displays the message *Your favorite pizza is: margherita* and ignores the subfolder **hawaiian**. You can change this behavior by using a *catch-all route parameter*, which captures paths across multiple URI folder boundaries (forward slashes). Prefix an asterisk (`*`) to the route parameter name to make the route parameter catch-all:
+Now suppose the user tries to specify two favorites by requesting the URI `http://www.contoso.com/favoritepizza/margherita/hawaiian`. The page displays the message *Your favorite pizza is: margherita* and ignores the subfolder **hawaiian**. You can change this behavior by using a *catch-all route parameter*, which captures paths across multiple URI folder boundaries (forward slashes). Prefix an asterisk (`*`) to the route parameter name to make the route parameter catch-all:
 
 ```razor
 @page "/FavoritePizza/{*favorites}"
@@ -118,8 +118,8 @@ Now suppose the user tried to specify two favorites by requesting the URI `http:
 <p>Your favorite pizzas are: @Favorites</p>
 
 @code {
-	[Parameter]
-	public string Favorites { get; set; }
+    [Parameter]
+    public string Favorites { get; set; }
 }
 ```
 

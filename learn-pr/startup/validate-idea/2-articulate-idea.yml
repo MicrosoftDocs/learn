@@ -2,12 +2,15 @@
 uid: learn.startups.validate-idea.articulate-idea
 title: Articulate your idea
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Articulate your idea
   description: Learn about tools that show whether your product creates value for customers. See how to use customer feedback to increase value.
   ms.date: 03/19/2024
   author: ryanmesches
   ms.author: ryanmesches
   ms.topic: unit
+  ms.collection: learn-startups
 durationInMinutes: 10
 content: |
   [!include[](includes/2-articulate-idea.md)]

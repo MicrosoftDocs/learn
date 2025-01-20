@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-cost-optimization.design-for-usage-optimization
 title: Design for usage optimization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for usage optimization
   description: Learn how to maximize the use of resources and operations.
   ms.date: 10/23/2023

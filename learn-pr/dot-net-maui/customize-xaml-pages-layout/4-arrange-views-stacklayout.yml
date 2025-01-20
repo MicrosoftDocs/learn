@@ -4,7 +4,7 @@ title: Arrange views with StackLayout
 metadata:
   title: Arrange views with StackLayout
   description: Arrange views horizontally or vertically with a StackLayout.
-  ms.date: 11/07/2023
+  ms.date: 12/04/2024
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl
@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "By adding child views to the `ChildViews` property in C#."
       isCorrect: false
-      explanation: "There isn't a property called `ChildViews` in .NET MAUI."
+      explanation: "There isn't a property called `ChildViews` in .NET Multi-platform App UI (MAUI)."
     - content: "Through XAML or C# code."
       isCorrect: true
-      explanation: "Correct. You can add child views to a `StackLayout` by using XAML or in the code-behind page using C#."
+      explanation: "Correct. You can add child views to a `StackLayout` by using Extensible Application Markup Language (XAML) or in the code-behind page using C#."
     - content: "Declare the child views and then use either `HorizontalOptions` or `VerticalOptions` depending on how you'd like the views to be displayed."
       isCorrect: false
       explanation: "While `HorizontalOptions` and `VerticalOptions` does control how the views are rendered, they don't add child views."

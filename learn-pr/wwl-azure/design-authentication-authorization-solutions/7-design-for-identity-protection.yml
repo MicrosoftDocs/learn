@@ -2,14 +2,16 @@
 uid: learn.wwl.design-authentication-authorization-solutions.design-for-identity-protection
 title: Design for identity protection
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for identity protection
   description: "Design for identity protection"
-  ms.date: 03/06/2024
+  ms.date: 12/31/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/7-design-for-identity-protection.md)]

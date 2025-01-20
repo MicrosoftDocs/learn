@@ -1,6 +1,6 @@
 Azure provides several high availability options for virtual machines. You can achieve high availability by using availability sets, availability zones, and Azure Virtual Machine Scale Sets.
 
-In this module, you learned how to configure virtual machine availability by using availability sets and availability zones with update and fault domains. You discovered how to autoscale virtual machines and configure vertical and horizontal scaling. You reviewed how to implement Virtual Machine Scale Sets, including storage resiliency and scalability options. You explored how to use Azure Virtual Machine Custom Script extensions to automatically configure virtual machines.
+In this module, you learned how to configure virtual machine availability by using availability sets and availability zones with update and fault domains. You discovered how to autoscale virtual machines and configure vertical and horizontal scaling. You reviewed how to implement Virtual Machine Scale Sets, including storage resiliency and scalability options. 
 
 The main takeaways from this module are:
 
@@ -9,6 +9,13 @@ The main takeaways from this module are:
 - Autoscaling with Virtual Machine Scale Sets helps optimize performance by automatically adjusting the number of instances based on workload demands.
 
 - Availability sets and availability zones are important features in Azure for achieving high availability and fault tolerance for virtual machines.
+
+## Learn more with Copilot
+Copilot can assist you in configuring Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot.
+
+- How do virtual machine scale sets work with Azure availability zones and sets?
+
+- What is the difference between manual and autoscaling of Azure virtual machines?
 
 ## Learn more with documentation
 
@@ -25,3 +32,4 @@ The main takeaways from this module are:
 - [Implement scale and high availability with Windows Server VM](/training/modules/implement-scale-high-availability-windows-server-virtual-machine/). You learn how to implement scaling for virtual machine scale sets and load-balanced VMs. You also learn how to implement Azure Site Recovery.
 
 - [Introduction to Azure Virtual Machine Scale Sets](/training/modules/intro-to-azure-virtual-machine-scale-sets/). Learn about what Azure Virtual Machine Scale Sets do, how they work, and when you should use Azure Virtual Machine Scale Sets as a solution for your organization.
+

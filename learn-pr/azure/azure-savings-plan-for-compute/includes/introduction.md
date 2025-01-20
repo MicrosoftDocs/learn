@@ -8,9 +8,9 @@ To minimize the cost, you decided to take advantage of Azure reservations and ap
 
 Now you’re looking for an alternative offering that provides comparable cost savings but minimizes the management overhead associated with the dynamic nature and size of your environment. You want to examine the Azure savings plan for compute and determine whether it can help you accomplish your objective.
 
-### What are we doing?
+### What will we learn?
 
-In this module, you'll explore the characteristics and benefits of Azure savings plan for compute and identify scenarios where these benefits are relevant. You'll review the process for purchasing Azure savings plan for compute. Then you'll examine considerations associated with managing and maintaining Azure savings plan throughout the entire duration of the commitment period.
+In this module, you'll explore the characteristics and benefits of Azure savings plan for compute and identify scenarios where these benefits are relevant. You'll review the process for purchasing Azure savings plan for compute. Then, you'll examine considerations associated with managing and maintaining Azure savings plan throughout the entire duration of the commitment period.
 
 ### What is the main goal?
 

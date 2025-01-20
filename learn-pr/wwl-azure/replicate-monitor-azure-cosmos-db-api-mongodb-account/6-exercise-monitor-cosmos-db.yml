@@ -2,9 +2,11 @@
 uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.exercise-monitoring
 title: Exercise – Monitor an Azure Cosmos DB for MongoDB account
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise – Monitor an Azure Cosmos DB for MongoDB account
   description: "Exercise – Monitor an Azure Cosmos DB for MongoDB account"
-  ms.date: 12/12/2022
+  ms.date: 12/19/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

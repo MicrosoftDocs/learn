@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-canary-releases-dark-launching.understand-dark-launching
 title: Understand dark launching
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand dark launching
   description: "Understand dark launching"
   ms.date: 05/06/2024

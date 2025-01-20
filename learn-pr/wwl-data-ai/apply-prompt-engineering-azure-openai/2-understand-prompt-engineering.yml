@@ -2,6 +2,8 @@
 uid: learn.wwl.apply-prompt-engineering-azure-openai.understand-prompt-engineering
 title: Understand prompt engineering
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand prompt engineering
   description: Understand what prompt engineering is and how it can be used to improve the quality of responses from Azure OpenAI.
   author: ivorb
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-prompt-engineering.md)]
+

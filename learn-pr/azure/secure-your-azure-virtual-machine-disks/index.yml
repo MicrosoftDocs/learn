@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.secure-your-azure-virtual-machine-disks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Secure your Azure virtual machine disks
   description: Explore the options for Azure disk encryption to encrypt OS and data disks on existing and new virtual machines.
   manager: akashdubey
@@ -46,3 +48,4 @@ units:
 - learn.secure-your-azure-virtual-machine-disks.7-summary
 badge:
   uid: learn.secure-your-azure-virtual-machine-disks.badge
+

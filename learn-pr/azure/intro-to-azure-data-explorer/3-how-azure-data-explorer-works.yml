@@ -2,13 +2,16 @@
 uid: learn.intro-to-azure-data-explorer.how-azure-data-explorer-works
 title: How Azure Data Explorer works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Introduction to Azure Data Explorer
   description: Evaluate whether Azure Data Explorer is appropriate to process and analyze your big data.
   ms.date: 08/21/2023
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-how-azure-data-explorer-works.md)]
+

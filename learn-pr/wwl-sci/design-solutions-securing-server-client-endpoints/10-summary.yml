@@ -5,8 +5,8 @@ metadata:
   title: Summary - Design solutions for securing server and client endpoints
   description: "Summary of the module on the topic: design solutions for securing server and client endpoints."
   ms.date: 09/26/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 10
 content: |

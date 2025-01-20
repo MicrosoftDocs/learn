@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.5-analyze-resource-utilization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor VMs and containers by using insights
   description: Analyze VM and container utilization and performance by using Azure Monitor VM insights and container insights.
   ms.date: 11/13/2023
@@ -36,3 +38,4 @@ quiz:
     - content: Grafana
       isCorrect: false
       explanation: Grafana is a dashboard platform for analyzing and visualizing data from data sources like Prometheus.
+

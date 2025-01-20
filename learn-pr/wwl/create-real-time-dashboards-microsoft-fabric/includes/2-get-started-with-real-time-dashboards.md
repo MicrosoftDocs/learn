@@ -1,45 +1,46 @@
-When you create a Real-Time Dashboard, you find an experience similar to any other Office 365 document where you have the ability to edit or view the dashboard based upon your permission settings. 
+Real-Time dashboards in Microsoft Fabric are built on real-time streaming data sources, such as tables in an *Eventhouse* that are populated by an *eventstream*. Each dashboard consists of one or more *tiles*, each displaying a real-time data visualization.
 
-### Create a new Real-Time Dashboard
+![Screenshot of a real-time dashboard.](../media/dashboard.png)
 
-The Real-Time Dashboard is integrated within a workspace environment. Whenever you create a new Real-Time Dashboard, it's inherently linked to the workspace currently in use. If you're creating a new dashboard, then it starts in the editing mode. However, when you open an existing dashboard you are in viewing mode and need to switch to editing mode to modify its contents.
+## Creating a real-time dashboard
 
-![Screenshot of Edit and View reports.](../media/edit-view-real-time-dashboard.png)
+To create a real-time dashboard, you'll need a source of real-time data; such as an Eventhouse containing a KQL database. You can then create a real-time dashboard with a *data source* that references the real-time data.
 
-To ***create*** a new report, you navigate to the Real-Time Intelligence section of Power BI and when presented with the ***New*** selection list, select the Real-Time Dashboard button. You can also select the ***Create*** button ![Screenshot of create button to create a new object.](../media/create-button.png) on the left side of the canvas and then scroll in the various services, then select the Real-Time Dashboard card.
+### Configuring authorization for data sources
 
-![Screenshot of Create Tool Bar in RTI.](../media/real-time-intelligence-services.png)
+When connecting the dashboard to the data source, you can specify one of two authorization schemes:
 
-Give it a name per the standards established within your organization. Once you have given it a name and clicked ***Create***, you'll see a new dashboard in your workspace that is opened up in ***Editing*** mode.
+- **Pass-through identity** - The data in the dashboard is accessed using the identity of the user viewing the dashboard.
+- **Dashboard editor's identity** - The data in the dashboard is accessed using the identity of the user who created the dashboard.
 
-![Screenshot of New Real-Time Dashboard.](../media/new-real-time-dashboard.png)
+### Creating tiles
 
-The next step is to connect to a data source to query data from. In this context, a data source is a reusable reference to a database in Azure Data Explorer Cluster with the path being a connection URI in the format of ***https://clustername.kusto.windows.net*** and then selecting a database from the cluster. You can also select an existing KQL database in the OneLake data hub. In this case, you give it a ***Data source name*** and then select a OneLake KQL database in your environment.
+A dashboard contains at least one tile, in which the results of a KQL query are displayed.
 
-![Screenshot of Data sources.](../media/data-source.png)
+#### Specifying a query
 
-Once you have filled out the properties for the appropriate source, select ***Create***.
+When you first add a tile, you can enter and test the query you want to use to query the underlying data source. For example, you might use a KQL query similar to the following example to query a table named **bikes** and retrieve details of available bikes and empty bike parking docks for a bike rental system in a city:
 
-### Add a Tile to the Dashboard
+```kql
+bikes
+| where ingestion_time() between (ago(30min) .. now())
+| summarize latest_observation = arg_max(ingestion_time(), *) by Neighbourhood
+| project Neighbourhood, latest_observation, No_Bikes, No_Empty_Docks
+| order by Neighbourhood asc
+```
 
-Dashboard tiles are designed to utilize snippets from the Kusto Query Language to fetch data and produce visual representations. Each individual tile or query is configured to support only one type of visual. 
+> [!TIP]
+> The query in the example retrieves the most recent observation (the latest record ingested into the source table) within the last 30 minutes for each neighborhood.
 
-1. Either select on the dashboard within the canvas, or choose ***New text tile*** or ***New tile*** from the menu bar located at the top of the canvas to add a new tile.
-1. In the ***Query pane***
-    1. Select the data source created earlier.
-    1. Enter or type your query and then select ***Run***.
-    1. Select the ***+ Add visual***.
+Initially, the tile displays the results of the query as a table.
 
-    ![Screenshot of Adding a tile to the dashboard.](../media/add-tile.png)
+![Screenshot of a dashboard with a tile containing a table.](../media/tile-table.png)
 
-1. We can now add a visual by going into the ***Visual formatting tab*** by selecting ***Add visual***.
+#### Visualizing the data
 
-    > [!NOTE]
-    > The query was modified in this example to make it more user friendly. 
+After creating a tile, you can edit it to define a visual in which the data is represented as a chart, map or other data visualization. For example, it may make more sense to display the rental bike data as a bar chart that shows the number of bikes and empty parking docks in each neighborhood.
 
-     
-    ![Screenshot of Adding a visual for the tile based on KQL query.](../media/add-visual.png)
+![Screenshot of a tile being edited to include a bar chart.](../media/tile-bar-chart.png)
 
-1. When you're happy with the visualization and the formatting of it, select ***Apply Changes*** to add more visualizations, adjust its size, or rearrange your visualization on the canvas.
+You can add multiple tiles to a dashboard and arrange them to organize the way the data is visualized. You can also add *text tiles* to provide additional information.
 
-    ![Screenshot of Viewing the visualization when completed.](../media/adjust-visual-canvas.png)

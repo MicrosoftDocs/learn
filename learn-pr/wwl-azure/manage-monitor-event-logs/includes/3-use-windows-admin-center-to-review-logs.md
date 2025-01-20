@@ -11,11 +11,8 @@ You can use Windows Admin Center to review logs on added server computers. For e
 The following features are supported in Events:
 
 - Browse and search events
-
 - View event details
-
 - Clear events from the log
-
 - Export events from the log
 
 ## Use preview features
@@ -23,14 +20,10 @@ The following features are supported in Events:
 If you enable the Preview Mode, you can also use Events to perform the following functions.
 
 - Create workspaces
-
 - Save workspaces
-
 - Delete workspaces
-
 - View events in a stacked bar format
 
 The following screenshot displays the Setup log being reviewed in Preview Mode. Events with an Event ID of 9 are added to a list.
 
 ![This screenshot displays the Setup log being reviewed in Preview Mode. Events with an Event ID of 9 are added to a list.](../media/event-preview.png)
-

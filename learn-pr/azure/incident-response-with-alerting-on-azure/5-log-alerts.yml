@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.incident-response-with-alerting-on-azure.5-log-alerts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use log search alerts to alert on events in your application
   description: Understand how log data can be used to improve resilience in your system.
   ms.date: 09/24/2024
@@ -11,3 +13,4 @@ title: Use log search alerts to alert on events in your application
 durationInMinutes: 4
 content: |
   [!include[](includes/5-log-alerts.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Introduction to reviewing your Azure infrastructure changes by using Bicep and pull requests.
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.governance-security.create-key-vault-use-azure-portal
 title: Create and configure an Azure Key Vault
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and configure an Azure Key Vault
   description: "Create and configure an Azure Key Vault"
   ms.date: 10/08/2024

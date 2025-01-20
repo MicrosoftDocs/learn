@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.node-web-routes.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Multiple-choice questions
   ms.date: 04/19/2024
@@ -9,7 +11,7 @@ metadata:
   ms.author: diberry
   ms.topic: unit
 durationInMinutes: 2
-content: Choose the best response for each question. Then select **Check your answers**.
+content: Choose the best response for each question. 
 quiz:
   title: Check your knowledge
   questions:
@@ -68,3 +70,4 @@ quiz:
       - content: res.send() can send any type of response while res.json() is specifically designed for sending JSON data
         isCorrect: true
         explanation: Correct. While both methods can send JSON responses, res.json() is specifically designed for sending JSON data. res.send() can send any type of response, including JSON, plain text, HTML, and more.
+

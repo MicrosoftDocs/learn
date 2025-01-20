@@ -2,6 +2,8 @@
 uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.3-exercise-activate-openapi-to-web-api-using-swashbuckle
 title: Exercise - Use Swashbuckle to create an OpenAPI document
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use Swashbuckle to create an OpenAPI document
   description: Create an OpenAPI document for your ASP.NET Core web API with Swashbuckle
   ms.date: 09/13/2024
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-activate-openapi-to-web-api-using-swashbuckle.md)]
+

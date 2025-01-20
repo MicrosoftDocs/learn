@@ -1,6 +1,6 @@
-The decoupled design of microservices combined with the atomicity of containers makes it possible to scale out apps that respond to demand. In complex solutions, like the drone-tracking app, the process of deploying, updating, monitoring, and removing containers introduces challenges.
+The decoupled design of microservices combined with the atomicity of containers makes it possible to scale out apps that respond to demand. In complex solutions like the drone-tracking app, the process of deploying, updating, monitoring, and removing containers introduces challenges.
 
-Before looking at what's in Kubernetes, there are two concepts that you should understand first, container management and orchestrators.
+Before looking at what's in Kubernetes, there are two concepts that you should understand first: container management and orchestrators.
 
 ## What is container management?
 
@@ -10,7 +10,7 @@ The drone-tracking app consists of multiple microservices responsible for tasks 
 
 :::image type="content" source="../media/2-container.png" alt-text="Diagram of a server or application replicated as containers for cloud deployment." border="false":::
 
-For example, with the drone-tracking app's website, you find during specific times of the day, you need more instances of the site's caching service to maintain performance, so you add more caching service container instances.
+For example, with the drone-tracking app's website, you find that you need more instances of the site's caching service to maintain performance during specific times of the day, so you add more caching service container instances.
 
 Next, assume that you've increased the number of caching instances and need to roll out a new version of the microservice. You need to update *all* the active containers to use the new version.
 
@@ -24,7 +24,7 @@ A container orchestrator is a system that automatically deploys and manages cont
 
 ## Define Kubernetes
 
-Kubernetes is a portable, extensible open-source platform for your management and orchestration of containerized workloads. Kubernetes simplifies complex container-management tasks and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility you might already know from platform as a service (PaaS) or infrastructure as a service (IaaS) offerings.
+Kubernetes is a portable, extensible open-source platform for managing and orchestrating containerized workloads. Kubernetes simplifies complex container-management tasks and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility you might already know from platform as a service (PaaS) or infrastructure as a service (IaaS) offerings.
 
 :::image type="content" source="../media/2-deploy-multiple-containers-k8s.png" alt-text="Diagram of replicated servers as multiple containers in a Kubernetes cluster." border="false":::
 
@@ -63,7 +63,7 @@ However, it's important to understand that Kubernetes isn't a single installed a
 
 - Kubernetes doesn't limit the types of apps that can run on the platform. If your app can run in a container, it can run on Kubernetes. To make optimal use of containerized solutions, your developers need to understand concepts such as microservices architecture.
 
-- Kubernetes doesn't provide middleware, data-processing frameworks, databases, caches, or cluster-storage systems. All these items are run as containers, or as part of another service offering.
+- Kubernetes doesn't provide middleware, data-processing frameworks, databases, caches, or cluster-storage systems. All these items are run as containers or as part of another service offering.
 
 - For Kubernetes to run containers, it needs a container runtime like Docker or containerd. The container runtime is the object that's responsible for managing containers. For example, the container runtime starts, stops, and reports on the container's status.
 

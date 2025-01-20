@@ -2,11 +2,13 @@
 uid: learn.wwl.maintain-azure-cognitive-search-solution.improve-reliability-of-azure-cognitive-search-solution
 title: Improve reliability of an Azure AI Search solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Improve reliability of an Azure AI Search solution
   description: Improve reliability of an Azure AI Search solution
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 10/24/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,3 +17,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/05-improve-reliability-of-azure-cognitive-search-solution.md)]
+

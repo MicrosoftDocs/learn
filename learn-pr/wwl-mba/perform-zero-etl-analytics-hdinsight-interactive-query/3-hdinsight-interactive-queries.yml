@@ -2,6 +2,8 @@
 uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.3-hdinsight-adhoc-analytics-architecture-patterns
 title: HDInsight interactive queries
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: HDInsight interactive queries
   description: "HDInsight interactive queries"
   ms.date: 04/08/2024

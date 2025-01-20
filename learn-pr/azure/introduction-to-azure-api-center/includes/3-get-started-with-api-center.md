@@ -212,7 +212,9 @@ az apic metadata list -g <resource-group-name> -n <api-center-name>
 
 The Contoso organization would like to recommend technical conferences for their engineering teams as part of their internal skilling drive. We'll add a Conference API with speakers, sessions, and topics.
 
-Conference API URL: <https://conferenceapi.azurewebsites.net/>
+Conference API URL: <https://bigconference.azurewebsites.net/>
+
+For the following steps, you can copy the OpenAPI definition from the website above and save it as a JSON file on your local machine. Or, substitute a different API definition when adding an API to the inventory.
 
 ::: zone pivot="azure-portal"
 
@@ -308,7 +310,7 @@ To add a Definition, use the following command, passing in:
 az apic api definition create -g contoso -n contoso-apis --api-id conference-api --version-id 2024-07-03 --title OpenAPI --definition-id openapi 
 ```
 
-To import an OpenAPI definition file from a url, use the **az apic api definition import-specification** command to import . Example: <https://conferenceapi.azurewebsites.net/?format=json>
+To import an OpenAPI definition file from a url, use the **az apic api definition import-specification** command to import . Example: <https://learn.microsoft.com/cli/azure/apic/api/definition?view=azure-cli-latest#az-apic-api-definition-import-specification-examples>
 
 ```bash
 az apic api definition import-specification -g contoso -n contoso-apis --api-id conference-api --version-id 2024-07-03 --definition-id openapi --format "link" --value 'https://petstore3.swagger.io/api/v3/openapi.json' --specification '{"name":"openapi","version":"3.0.2"}'

@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-enterprise-security-in-hdinsight.describe-hdinsight-security-areas
 title: Describe HDInsight security areas
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe HDInsight security areas
   description: "Describe HDInsight security areas"
   ms.date: 04/07/2024

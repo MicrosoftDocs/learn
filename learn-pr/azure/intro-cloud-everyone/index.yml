@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.intro-cloud-everyone
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Cloud for Everyone
   description: Introduction to Cloud for Everyone
   manager: mkluck
@@ -39,3 +41,4 @@ units:
 - learn.azure.intro-cloud-everyone.summary
 badge:
   uid: learn.azure.intro-cloud-everyone.badge
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.governance-security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan, implement, and manage governance for security
   description: "This module focuses on enabling administrators to effectively plan, implement, and manage security governance in Azure, ensuring compliance with organizational policies and best practices."
   ms.date: 10/08/2024

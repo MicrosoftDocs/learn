@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-application-configuration-data.enable-dynamic-configuration-feature-flags
 title: Enable Dynamic Configuration and Feature Flags
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable Dynamic Configuration and Feature Flags
   description: "Enable Dynamic Configuration and Feature Flags"
   ms.date: 05/28/2024

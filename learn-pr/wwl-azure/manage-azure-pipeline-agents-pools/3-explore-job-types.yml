@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-pipeline-agents-pools.explore-job-types
 title: Explore job types
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore job types
   description: "Explore job types"
   ms.date: 05/07/2024

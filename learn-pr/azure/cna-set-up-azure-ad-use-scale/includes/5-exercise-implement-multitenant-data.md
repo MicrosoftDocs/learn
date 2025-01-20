@@ -22,9 +22,11 @@ In this exercise, you'll:
 
 To perform this exercise, you'll need:
 
-- An Azure subscription.
+- To have completed the exercise _Set up Microsoft Entra ID_ in your Azure subscription.
 - A Microsoft account or a Microsoft Entra account with the Global Administrator role in the Microsoft Entra tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-- To have completed the first exercise of this module.
+
+> [!WARNING]
+> Use a test environment because the exercises in this module perform sensitive operations that require elevated administrative privileges.
 
 ## Create an instance of Azure Database for PostgreSQL server
 
@@ -47,7 +49,7 @@ You'll start by creating an instance of Azure Database for PostgreSQL server:
     | Version | Select **11**. |
     | Compute + storage | Select the **Configure server** link. On the **Configure** blade, select **Basic**, set the **vCore** value to **1** and **Storage** to **5 GB**, and then select **OK**. |
     | Admin username | Enter **student**. |
-    | Password | Enter **Pa55w0rd1234**. |
+    | Password | Enter a `<password>`. |
 
     :::image type="content" source="../media/5-azure-db-postgresql-create-basics.png" alt-text="Screenshot of the Basics tab of the server blade in the Azure portal.":::
 
@@ -90,7 +92,7 @@ With the Azure Database for PostgreSQL server provisioned, you'll connect to it 
 1. Within the Bash session on the **Cloud Shell** pane, paste the value of the **psql** connection string from the clipboard, modify it so it matches the following command, and run it to connect to the **postgres** database hosted on the newly deployed server instance of Azure Database for PostgreSQL. The value of the `<server_name>` placeholder will be already included in the connection string you pasted from the clipboard:
 
     ```
-    psql "host=<server_name>.postgres.database.azure.com port=5432 dbname=postgres user=student@<server_name>.postgres.database.azure.com password=Pa55w0rd1234 sslmode=require"
+    psql "host=<server_name>.postgres.database.azure.com port=5432 dbname=postgres user=student@<server_name>.postgres.database.azure.com password=<enter your password> sslmode=require"
     ```
 
     > [!NOTE]
@@ -125,7 +127,7 @@ With the Azure Database for PostgreSQL server provisioned, you'll connect to it 
 
     ```t-sql
     CREATE TABLE inventory (
-    id bigserial, 
+    id bigserial,
     tenant_id bigint REFERENCES tenants (id),
     name VARCHAR(50),
     quantity INTEGER,
@@ -179,7 +181,7 @@ To integrate the Azure Database for PostgreSQL server instance with Microsoft En
 
 1. Within the browser window displaying the Azure portal with the Azure Database for PostgreSQL server blade, in the vertical menu, in the **Settings** section, select **Active Directory admin**, and then in the toolbar, select **Set admin**.
 1. On the **Active Directory admin** blade, in the list of Microsoft Entra user accounts, select the **adatumadmin1** user account you created in the previous exercise, select **Select**, and then select **Save**.
-1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in by using the **adatumadmin1** user account (with the **Pa55w.rd1234** password) you created in the previous exercise.
+1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in by using the **adatumadmin1** user account with the password you created in the previous exercise.
 1. In the Azure portal, open the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. When you're prompted to select either **Bash** or **PowerShell**, select **Bash**, and then when presented with the message **You have no storage mounted**, select **Create storage**.
 1. Within the Bash session on the **Cloud Shell** pane, run the following commands to retrieve and display a Microsoft Entra access token required to access Azure Database for PostgreSQL:
@@ -363,7 +365,7 @@ With the application registered in the Microsoft Entra tenant, you can now proce
     const cca = new msal.ConfidentialClientApplication(config);
 
     app.get('/auth', (req, res) => {
-    
+
     redirectUri = req.hostname.toLowerCase()=="localhost" ? "http://localhost:8080/redirect" : "https://<webapp_name>.azurewebsites.net/redirect";
 
     // Construct a request object for auth code
@@ -381,7 +383,7 @@ With the application registered in the Microsoft Entra tenant, you can now proce
 
     app.get('/redirect', (req, res) => {
     redirectUri = req.hostname.toLowerCase()=="localhost" ? "http://localhost:8080/redirect" : "https://<webapp_name>.azurewebsites.net/redirect";
-    
+
     // Use the auth code in redirect request to construct a token request object
     const tokenRequest = {
         code: req.query.code,

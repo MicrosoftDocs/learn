@@ -2,6 +2,8 @@
 uid: learn.nvidia.deploy-model-nvidia-triton-inference-server.install-prerequisites-nvidia-triton-inference-server
 title: Install prerequisites and NVIDIA Triton Inference Server
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Install prerequisites and NVIDIA Triton Inference Server
   description: Install prerequisites and NVIDIA Triton Inference Server.
   author: toolboc
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-install-prerequisites-nvidia-triton-inference-server.md)]
+

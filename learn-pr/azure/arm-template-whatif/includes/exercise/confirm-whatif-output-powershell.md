@@ -21,11 +21,11 @@ Resource and property changes are indicated with this symbol:
 
 The deployment will update the following scope:
 
-Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff
+Scope: /subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f
 
   - Microsoft.Network/virtualNetworks/vnet-001
 
-      id: "/subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff/providers/Microsoft.Network/virtualNetworks/vnet-001"
+      id: "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/providers/Microsoft.Network/virtualNetworks/vnet-001"
       location:        "westus"
       name:            "vnet-001"
       tags.CostCenter: "12345"
@@ -34,7 +34,7 @@ Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-
 
   - Microsoft.Storage/storageAccounts/cloudshell843483168
 
-      id: "/subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff/providers/Microsoft.Storage/storageAccounts/cloudshell843483168"
+      id: "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/providers/Microsoft.Storage/storageAccounts/cloudshell843483168"
       kind:                   "Storage"
       location:               "southeastasia"
       name:                   "cloudshell843483168"

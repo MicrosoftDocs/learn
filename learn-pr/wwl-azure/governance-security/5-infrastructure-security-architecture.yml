@@ -2,6 +2,8 @@
 uid: learn.wwl.governance-security.infrastructure-security-architecture
 title: Deploy secure infrastructures by using a landing zone
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy secure infrastructures by using a landing zone
   description: "Deploy secure infrastructures by using a landing zone"
   ms.date: 10/08/2024

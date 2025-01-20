@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-sql-edge.1-introduction  
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction  
   title: Introduction
   description: Azure SQL Edge is an optimized relational database engine designed for IoT and IoT Edge deployments. It provides capabilities to create a high-performance data storage and processing layer for IoT applications and solutions.
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]
+

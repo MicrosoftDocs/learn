@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk.enable-offline-development
 title: Enable offline development
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable offline development
   description: "Enable offline development"
   ms.date: 10/17/2022

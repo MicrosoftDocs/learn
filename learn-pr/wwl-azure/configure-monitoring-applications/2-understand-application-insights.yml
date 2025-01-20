@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-monitoring-applications.understand-application-insights
 title: Understand Application Insights
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Application Insights
   description: "Understand Application Insights"
   ms.date: 10/25/2023

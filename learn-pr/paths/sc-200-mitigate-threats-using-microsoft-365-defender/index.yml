@@ -3,7 +3,7 @@ uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender
 metadata:
   title: 'SC-200: Mitigate threats using Microsoft Defender XDR'
   description: 'SC-200: Mitigate threats using Microsoft Defender XDR'
-  ms.date: 10/01/2024
+  ms.date: 10/22/2024
   author: wwlpublish
   ms.author: kelawson
   ms.topic: learning-path
@@ -33,9 +33,9 @@ subjects:
 modules:
 - learn.wwl.introduction-microsoft-365-threat-protection
 - learn.wwl.mitigate-incidents-microsoft-365-defender
+- learn-m365.m365-threat-remediate
 - learn.wwl.manage-azure-ad-identity-protection
 - learn-m365.m365-threat-safeguard
-- learn-m365.m365-threat-remediate
 - learn-m365.cloud-app-security
 trophy:
   uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender.trophy

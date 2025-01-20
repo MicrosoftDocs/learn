@@ -5,8 +5,8 @@ metadata:
   title: Introduction to privileged access
   description: "This is a unit to prepare for the Microsoft cybersecurity architect certification on the topic: introduction to privileged access."
   ms.date: 3/14/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 5
 content: |

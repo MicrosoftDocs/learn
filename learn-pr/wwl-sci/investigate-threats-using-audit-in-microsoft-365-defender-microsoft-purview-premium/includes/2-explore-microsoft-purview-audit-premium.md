@@ -171,4 +171,4 @@ All organizations are initially allocated a baseline of 2,000 requests per minut
 
 ## Knowledge check
 
-Choose the best response for the following question. Then select “Check your answers.”
+Choose the best response for the following question. 

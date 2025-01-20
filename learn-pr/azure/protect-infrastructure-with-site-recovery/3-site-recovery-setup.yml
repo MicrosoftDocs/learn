@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-infrastructure-with-azure-site-recovery.3-site-recovery-setup
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Prepare for disaster recovery with Azure Site Recovery
   description: Here, we'll explore the configuration of an Azure Site Recovery job. We'll also complete the initial configuration of our exercise environment.
   ms.date: 12/07/2023

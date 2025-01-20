@@ -2,6 +2,8 @@
 uid: learn.wwl.create-release-pipeline.describe-azure-devops-capabilities
 title: Describe Azure DevOps release pipeline capabilities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure DevOps release pipeline capabilities
   description: "Describe Azure DevOps release pipeline capabilities"
   ms.date: 05/28/2024

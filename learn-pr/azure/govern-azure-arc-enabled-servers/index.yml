@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.govern-azure-arc-enabled-servers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Govern your hybrid and multicloud machines through Azure Arc-enabled servers
   description: Understand the governance capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Azure Policy, Azure Automation, and Azure Automanage.
   ms.date: 08/09/2024
@@ -39,3 +41,4 @@ units:
 - learn.azure.govern-azure-arc-enabled-servers.summary
 badge:
   uid: learn.azure.govern-azure-arc-enabled-servers.badge
+

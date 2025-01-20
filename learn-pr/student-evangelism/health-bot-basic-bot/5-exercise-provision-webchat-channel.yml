@@ -2,6 +2,8 @@
 uid: learn.health-bot-basic-bot.5-exercise-provision-webchat-channel
 title: Exercise - Provision the web chat channel
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Provision the web chat channel
   description: Learn how to create a web chat channel, which allows users to communicate with your Azure Health Bot instance.
   author: Dwitrisha

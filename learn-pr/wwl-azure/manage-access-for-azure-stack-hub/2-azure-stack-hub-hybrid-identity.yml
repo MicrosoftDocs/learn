@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-access-for-azure-stack-hub.hybrid-identity
 title: Azure Stack Hub and Hybrid Identity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Stack Hub and Hybrid Identity
   description: "Azure Stack Hub and Hybrid Identity"
   ms.date: 07/29/2022

@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-operator-nexus
 hidden: true
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Operator Nexus
   description: "Learn the functionalities of Azure Operator Nexus, which enables you to execute applications within a local infrastructure while offering access to Azure services within a Telco operator's data center."
   ms.date: 05/05/2023

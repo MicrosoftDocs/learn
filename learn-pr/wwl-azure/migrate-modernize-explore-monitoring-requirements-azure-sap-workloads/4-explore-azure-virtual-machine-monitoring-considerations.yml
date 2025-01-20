@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.explore-azure-virtual-machine-monitoring-considerations
 title: Explore Azure Virtual Machine monitoring considerations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Virtual Machine monitoring considerations
   description: "Explore Azure virtual machine monitoring considerations"
   ms.date: 01/08/2024

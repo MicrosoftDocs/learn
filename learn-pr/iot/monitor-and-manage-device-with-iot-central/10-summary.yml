@@ -2,6 +2,8 @@
 uid: learn.monitor-manage-device-with-iotcentral.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: This content is a part of Build your first Azure IoT Central application to manage your coffee machines
   ms.date: 06/14/2023
@@ -14,3 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
+

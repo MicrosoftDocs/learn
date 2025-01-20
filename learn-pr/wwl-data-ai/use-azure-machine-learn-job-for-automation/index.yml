@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.use-azure-machine-learn-job-for-automation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use an Azure Machine Learning job for automation
   description: MLOps, automation, Machine learning operations
   author: wwlpublish
@@ -43,3 +45,4 @@ units:
 - learn.wwl.use-azure-machine-learn-job-for-automation.summary
 badge:
   uid: learn.wwl.use-azure-machine-learning-job-for-automation.badge
+

@@ -1,8 +1,8 @@
-Now we'll examine three common networking patterns for organizing workloads in Azure:
+Now we examine three common networking patterns for organizing workloads in Azure:
 
-- Single virtual network
-- Multiple virtual networks with peering
-- Multiple virtual networks in a hub-spoke topology
+- Single virtual network.
+- Multiple virtual networks with peering.
+- Multiple virtual networks in a hub-spoke topology.
 
 Each pattern provides a different type of isolation and connectivity. 
 
@@ -24,7 +24,7 @@ Here's how you might implement a single virtual network pattern:
 - Another subnet (`Subnet 2`) can contain your web workloads.
 - To govern subnet traffic, you can implement NSGs to specify that `Subnet 1` can talk only with `Subnet 2`, and `Subnet 2` can talk to the internet.
 - You can enforce segmentation by using an NVA from Azure Marketplace or Azure Firewall.
-- You can modify the pattern to support many workloads. You might carve out subnets that won't allow one workload to communicate to the backend of another workload.
+- You can modify the pattern to segment and support many different workloads. 
 
 ## Pattern 2: Multiple virtual networks with peering
 
@@ -49,5 +49,5 @@ The following table compares capabilities of the three networking patterns. Revi
 | **Connectivity/Routing** (how segments communicate) | System routing provides default connectivity to any workload in any subnet. | System routing provides default connectivity to any workload in any subnet. | No default connectivity between spoke virtual networks. A layer 3 router (such as Azure Firewall) in the hub virtual network is required to enable connectivity. |
 | **Network-level traffic filtering** | Traffic is allowed by default. NSG can be used for filtering. | Traffic is allowed by default. NSG can be used for filtering. | Traffic between spoke virtual networks is denied by default. Azure Firewall configuration can enable selected traffic, such as `windowsupdate.com`. |
 | **Centralized logging** | NSG logs for the virtual network. | Aggregate NSG logs across all virtual networks. | Azure Firewall logs to Azure Monitor all accepted/denied traffic sent via a hub. |
-| **Unintended open public endpoints** | DevOps can accidentally open a public endpoint via incorrect NSG rules. | DevOps can accidentally open a public endpoint via incorrect NSG rules. | An accidentally opened public endpoint in a spoke virtual network won't enable access. The return packet is dropped via stateful firewall (asymmetric routing). |
+| **Unintended open public endpoints** | DevOps can accidentally open a public endpoint via incorrect NSG rules. | DevOps can accidentally open a public endpoint via incorrect NSG rules. | A spoke virtual network open port doesn't allow access. The return packet is dropped via stateful firewall (asymmetric routing). |
 | **Application level protection** | NSG provides network layer support only. | NSG provides network layer support only. | Azure Firewall supports FQDN filtering for HTTP/S and MSSQL for outbound traffic and across virtual networks. |

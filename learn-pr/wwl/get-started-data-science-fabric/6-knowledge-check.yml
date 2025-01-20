@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/23/2023
+  ms.date: 11/25/2024
   author: wwlpublish
   ms.author: madiepev
   ms.topic: unit
@@ -16,7 +16,7 @@ durationInMinutes: 3
 quiz:
   title: ""
   questions:
-  - content: "You have access to a historical dataset that contains the monthly expenses of the marketing department. You want to generate predictions of the expenses for the coming month. Which type of machine learning model is needed?"
+  - content: "You have access to a historical dataset that contains the monthly expenses of the marketing department. You want to generate predictions of the expenses for the coming month. What task do you need to perform to predict the expenses for the coming month?"
     choices:
     - content: "Classification"
       isCorrect: false

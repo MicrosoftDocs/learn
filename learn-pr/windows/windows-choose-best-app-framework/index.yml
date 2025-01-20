@@ -3,7 +3,7 @@ uid: learn.windows.windows-best-app-framework
 metadata:
   title: Choose the best UI framework for a native Windows development project
   description: Windows developers have various options for creating applications that run on Windows. This module introduces the native Windows UI frameworks that are available for Windows development. It also provides guidance on how to choose the best framework for your application.
-  ms.date: 01/17/2024
+  ms.date: 11/22/2024
   author: alvinashcraft
   ms.author: aashcraft
   ms.topic: module-choose-best-product
@@ -17,7 +17,7 @@ abstract: |
     - Choose the native Windows UI framework that best addresses your organization's application requirements and target audience.
 prerequisites: |
   - You should be familiar with .NET and Windows application development concepts and terminology.
-  - An understanding of the C# programming language and Extensible Application Markup Language (XAML) is helpful, but isn't necessary.
+  - An understanding of the C# programming language and Extensible Application Markup Language (XAML) is helpful, but it isn't necessary.
 iconUrl: /learn/achievements/windows-best-app-framework.svg
 levels: 
   - beginner

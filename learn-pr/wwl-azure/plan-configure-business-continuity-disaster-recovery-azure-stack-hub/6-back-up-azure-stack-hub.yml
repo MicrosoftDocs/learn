@@ -2,6 +2,8 @@
 uid: learn.wwl.plan-configure-business-continuity-disaster-recovery-for-azure-stack-hub.back-up
 title: Back up Azure Stack Hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Back up Azure Stack Hub
   description: "Back up Azure Stack Hub"
   ms.date: 06/09/2022

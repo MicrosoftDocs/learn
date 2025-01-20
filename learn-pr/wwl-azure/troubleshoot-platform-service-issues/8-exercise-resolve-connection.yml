@@ -2,6 +2,8 @@
 uid: learn.wwl.troubleshoot-platform-service-issues.exercise-resolve-paas-connection
 title: 'Exercise: Resolve virtual machine connection'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Resolve virtual machine connection'
   description: "Exercise: Resolve virtual machine connection"
   ms.date: 04/27/2023

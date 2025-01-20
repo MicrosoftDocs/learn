@@ -2,6 +2,8 @@
 uid: learn.azure-well-architected-introduction.6-reliability
 title: Reliability
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Reliability
   description: Reliability
   ms.date: 04/17/2023
@@ -39,3 +41,4 @@ quiz:
     - content: "The type of load-balancing technology used in your application."
       isCorrect: false
       explanation: "The type of load-balancing technology used in your application can be an important decision, but your defined RPO doesn't affect it."
+

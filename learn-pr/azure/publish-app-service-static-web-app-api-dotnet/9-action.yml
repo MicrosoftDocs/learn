@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-and-api-dotnet.9-action
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Publish the API with GitHub Actions
   description: Publish the API with GitHub Actions
   ms.date: 11/14/2023
@@ -16,3 +18,4 @@ title: Publish the API with GitHub Actions
 durationInMinutes: 3
 content: |
   [!include[](includes/9-action.md)]
+

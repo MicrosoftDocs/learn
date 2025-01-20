@@ -23,8 +23,6 @@ To enable public endpoint for managed instance, two steps are required. For SoD,
 1. A database administrator who has role-based access control permissions in scope Microsoft.Sql/managedInstances/* must run a PowerShell script to enable public endpoint for managed instance.
 1. A network administrator who has role-based access control permissions in scope Microsoft.Network/* must open the port 3342 used by the public endpoint on the network security group (NSG), and provide a UDR route to avoid asymmetric routing.
 
-:::image type="content" source="../media/4-public-endpoint-secure-access.png" alt-text="Diagram showing how public endpoint works for Azure SQL Managed Instance.":::
-
 ## Choose a synchronization method
 
 You can use many methods to synchronize data from a SQL Database managed instance to an on-premises server and back.

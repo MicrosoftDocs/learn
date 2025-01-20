@@ -2,17 +2,17 @@
 uid: learn.wwl.classify-images.exercise-custom-vision
 title: Exercise - Classify images with Azure AI Custom Vision
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Classify images with Azure AI Custom Vision
   description: Exercise - Classify images with Azure AI Custom Vision
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 07/10/2024
+  ms.date: 11/5/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-azureSandbox: false
-labId: 100992
-labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-custom-vision.md)]
+

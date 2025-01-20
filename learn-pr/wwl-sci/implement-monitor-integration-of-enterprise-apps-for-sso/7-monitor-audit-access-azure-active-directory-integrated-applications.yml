@@ -2,12 +2,16 @@
 uid: learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso.monitor-audit-access-to-azure-ad-integrated-applications
 title: Monitor and audit access to Microsoft Entra integrated enterprise applications
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Monitor and audit access to Microsoft Entra integrated enterprise applications
   description: "Monitor and audit access to Microsoft Entra integrated enterprise applications"
-  ms.date: 10/25/2023
+  ms.date: 12/16/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/7-monitor-audit-access-azure-active-directory-integrated-applications.md)]

@@ -2,6 +2,8 @@
 uid: learn.wwl.datacenter-integration-for-azure-stack-hub.run-azure-datacenter
 title: Running Azure in your datacenter
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Running Azure in your datacenter
   description: "Running Azure in your datacenter"
   ms.date: 03/15/2022

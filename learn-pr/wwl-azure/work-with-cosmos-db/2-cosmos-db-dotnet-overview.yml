@@ -2,6 +2,8 @@
 uid: learn.wwl.work-with-cosmos-db.cosmos-db-dotnet-overview
 title: Explore Microsoft .NET SDK v3 for Azure Cosmos DB
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Microsoft .NET SDK v3 for Azure Cosmos DB
   description: "Explore Microsoft .NET SDK v3 for Azure Cosmos DB"
   ms.date: 07/15/2024

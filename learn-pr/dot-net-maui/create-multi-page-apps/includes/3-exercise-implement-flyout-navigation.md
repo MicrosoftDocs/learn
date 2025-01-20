@@ -1,8 +1,8 @@
-In the sample scenario, you have a MAUI app that contains pages for displaying information about astronomical bodies, the phases of the moon, and sunrise/sunset times. The app also includes an About page. Currently, these pages are all stand-alone, but you want to provide a logical way for the user to move between them.
+In the sample scenario, you have a .NET MAUI app that contains pages for displaying information about astronomical bodies, the phases of the moon, and sunrise/sunset times. The app also includes an About page. Currently, these pages are all stand-alone, but you want to provide a logical way for the user to move between them.
 
 In this exercise, you add flyout navigation to the app.
 
-[!include[](../../../includes/dotnet8-sdk-version.md)]
+[!include[](../../../includes/dotnet9-sdk-version.md)]
 
 ## Open the starter solution
 

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement high availability and disaster recovery for Azure Arc-enabled SQL Managed Instance
   description: Learn how to manage availability and recover from disasters with Azure Arc-enabled SQL Managed Instance.
   ms.date: 08/06/2024
@@ -47,3 +49,4 @@ units:
 badge:
   uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.badge
   
+

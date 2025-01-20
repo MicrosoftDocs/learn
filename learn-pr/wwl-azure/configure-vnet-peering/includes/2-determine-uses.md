@@ -22,7 +22,7 @@ Let's examine some prominent characteristics of Azure Virtual Network peering.
 
 ### Things to consider when using Azure Virtual Network peering
 
-Consider the following benefits of using Azure Virtual Network peering.
+Consider the benefits of using Azure Virtual Network peering.
 
 | Benefit | Description |
 | --- | --- |

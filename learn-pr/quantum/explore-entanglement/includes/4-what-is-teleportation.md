@@ -1,12 +1,11 @@
 
-Quantum entanglement can be an excellent resource for quantum communication. One of the most famous applications of entanglement is quantum teleportation.
+In the previous units, you learned that quantum entanglement can be an excellent resource for quantum communication. In this unit, you'll see one of the most famous applications of entanglement: **the quantum teleportation protocol**.
 
-In teleportation, we use entanglement to transfer the state of a qubit from one location to another. The state of the qubit is transferred to another qubit, but the qubit itself is not physically moved. This is an important thing to remember! The information of the state of the qubit is transferred to another qubit which is used as a vessel to write the information of the message qubit on.
+In teleportation, entanglement is used to transfer the state of a qubit from one location to another. The state of the qubit is transferred to another qubit, but the qubit itself is not physically moved. This is an important thing to remember! The information of the state of the qubit is transferred to another qubit which is used as a vessel to write the information of the message qubit on.
 
-Teleportation protocol uses a combination of entanglement and classical communication. The classical communication is important because the teleportation protocol requires the sender to communicate the results of their measurements to the receiver. This means that we cannot use teleportation to send information faster than the speed of light. The classical communication between the sender and the receiver is limited by the speed of light.
+The teleportation protocol uses a combination of entanglement and classical communication. The classical communication is important because the teleportation protocol requires the sender to communicate the results of their measurements to the receiver. This means that teleportation **can't** send information **faster than the speed of light**. The classical communication between the sender and the receiver is limited by the speed of light.
 
 Let's review the protocol of quantum teleportation.
-
 
 ## The protocol of quantum teleportation
 

@@ -1,4 +1,4 @@
-In the astronomy app, you've been asked to combine tabs with the flyout to help with navigation between the different pages.
+In the astronomy app, you're asked to combine tabs with the flyout to help with navigation between the different pages.
 
 The first thing you decide to do is remove all the pages from the flyout and add them to a `TabBar`, so you can see how the app feels.
 

@@ -2,9 +2,11 @@
 uid: learn.wwl.explore-models-copilot-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check about configuring language models."
-  ms.date: 7/2/2024
+  ms.date: 11/25/2024
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
@@ -34,7 +36,7 @@ quiz:
     - content: "Data Understanding Support Text (DUST)"
       isCorrect: false
       explanation: "Incorrect. DUST isn't a recognized pattern for grounding prompts."
-  - content: "Where can you test a deployed model in the Azure AI Studio?"
+  - content: "Where can you test a deployed model in the Azure AI Foundry portal?"
     choices:
     - content: "Chat playground"
       isCorrect: true
@@ -45,3 +47,4 @@ quiz:
     - content: "Development toolbox"
       isCorrect: false
       explanation: "Incorrect. The development toolbox can contain various tools for development purposes, but it isn't the place where you would test a deployed model."
+

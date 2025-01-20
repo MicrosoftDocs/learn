@@ -3,7 +3,7 @@ uid: learn.save-money-with-azure-reserved-instances
 metadata:
   title: Save money with Azure Reserved Instances
   description: Learn how to save money by taking advantage of Azure Reserved Instances.
-  ms.date: 06/07/2023
+  ms.date: 10/24/2024
   author: bandersmsft
   ms.author: banders
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
 title: Save money with Azure Reserved Instances
 summary: Save money by taking advantage of Azure Reservations. Learn how to analyze and buy reserved instances, optimize against underused resources, and understand the benefits provided through compute purchases. Perform basic reporting on your reservations.
 abstract: | 
-  In this module, you'll learn how to:
+  In this module, you learn how to:
   - Determine the usefulness of reserved instances.
   - Choose the right reserved instance, buy one, and then manage it.
   - Monitor and improve your reservations.

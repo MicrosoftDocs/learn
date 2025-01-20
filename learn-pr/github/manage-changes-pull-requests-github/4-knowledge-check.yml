@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check what you learned.
-  ms.date: 11/21/2023
+  ms.date: 12/09/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
@@ -24,8 +24,8 @@ quiz:
       explanation: "Many projects protect important branches and require changes to be reviewed via pull request before approving."
     - content: "Your branch can't be merged into `main` due to upstream changes made since you created it. Creating a pull request lets the other contributor know they need to pull their changes out so you can put yours in."
       isCorrect: true
-      explanation: "This isn't how pull requests work. Also, the etiquette is for you to be sure your branch can be cleanly merged into the base before creating a pull request."
-  - content: "How can you ensure that pull requests for a given area of the repository aren't merged unless certain users or teams approve?"
+      explanation: "Pull requests don't work this way. Also, the etiquette is for you to be sure your branch can be cleanly merged into the base before creating a pull request."
+  - content: "How can you ensure that pull requests for a given area of the repository, aren't merged unless certain users or teams approve?"
     choices:
     - content: "Clearly explain the pull request policy in *CONTRIBUTING.md*."
       isCorrect: false
@@ -33,10 +33,10 @@ quiz:
     - content: "Use a *CODEOWNERS* file and enable required reviews."
       isCorrect: true
       explanation: "A *CODEOWNERS* file enables you to assign users or teams as required reviewers using the same syntax as *.gitingore* files."
-    - content: "Add a table mapping directory paths to required users in *SECURITY.md*."
+    - content: "Add a table that maps directory paths to required users in *SECURITY.md*."
       isCorrect: false
       explanation: "While this file is a great way to explain your security policy, it doesn't automatically enforce anything."
-  - content: "You've been requested to review a pull request. As you read through it, you notice several minor coding errors and typos. How should you handle the review?"
+  - content: "You're requested to review a pull request. As you read through it, you notice several minor coding errors and typos. How should you handle the review?"
     choices:
     - content: "Start a review and fix obvious typos inline. Add comments in places that require further discussion or offer educational value. Complete the review with changes requested."
       isCorrect: true

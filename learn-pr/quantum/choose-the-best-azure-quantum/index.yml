@@ -1,10 +1,12 @@
 ### YamlMime:Module
 uid: learn.quantum.choose-the-best-azure-quantum
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose the best Azure Quantum option for your needs
   description: Learn how to get started with Azure Quantum and choose the best service for your needs.
   manager: tedhudek
-  ms.date: 12/13/2023
+  ms.date: 10/30/2024
   author: SoniaLopezBravo
   ms.author: sonialopez
   ms.topic: module
@@ -49,3 +51,4 @@ units:
 - learn.quantum.choose-the-best-azure-quantum.summary
 badge:
   uid: learn.quantum.choose-the-best-azure-quantum-service.badge
+

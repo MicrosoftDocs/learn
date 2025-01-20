@@ -2,6 +2,8 @@
 uid: learn.azure-sql-replication.introduction
 title: Introduction - Data tracking with Azure SQL Databases
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Introduction - Data tracking with Azure SQL Database
   description: "Introducing data tracking concepts such as common use cases, tools, and performance considerations."

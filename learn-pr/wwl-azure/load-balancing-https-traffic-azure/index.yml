@@ -3,13 +3,13 @@ uid: learn.wwl.load-balancing-https-traffic-azure
 metadata:
   title: Load balance HTTP(S) traffic in Azure
   description: "You learn how to design load balancer solutions for HTTP(S) traffic and how to implement Azure Application gateway and Azure Front Door."
-  ms.date: 08/01/2024
+  ms.date: 11/25/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
-  adobe-target: true
   ms.service: azure-application-gateway
   ai-usage: human-only
 title: Load balance HTTP(S) traffic in Azure

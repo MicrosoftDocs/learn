@@ -2,6 +2,8 @@
 uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.7-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 11/09/2021
@@ -48,3 +50,4 @@ quiz:
     - content: "GPU acceleration isn't possible because of access limitations when you run workloads as a container."
       isCorrect: false
       explanation: Incorrect. Containerized workloads can theoretically access any devices made accessible to the host kernel, which includes GPU acceleration hardware.
+

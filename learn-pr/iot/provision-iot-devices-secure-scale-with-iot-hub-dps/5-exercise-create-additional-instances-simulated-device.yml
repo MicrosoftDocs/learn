@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-group-enrollment-tasks.exercise-create-additional-instances-simulated-device
 title: Exercise - Create a second simulated device
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a second simulated device
   description: "Make copies of your simulated device project, and then update your code to use the different device certificates."
   ms.date: 10/11/2023

@@ -2,12 +2,14 @@
 uid: learn.intro-to-azure-service-health.how-azure-service-health-works
 title: How Azure Service Health works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: How Azure Serice Health works
   description: Learn how Azure Service Health provides information about the health of your Azure environment.
   ms.date: 02/26/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 3
 content: |

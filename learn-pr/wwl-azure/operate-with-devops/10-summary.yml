@@ -2,6 +2,8 @@
 uid: learn.wwl.operate-with-devops.summary
 title: 'Summary'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Summary'
   description: "Learn about continuous operations, monitoring, incident management, security integration, and more."
   ms.date: 02/06/2024

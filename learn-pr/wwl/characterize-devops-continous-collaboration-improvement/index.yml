@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.characterize-devops-continous-collaboration-improvement
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Characterize DevOps Continuous Collaboration and Continuous Improvement
   description: "Characterize DevOps Continuous Collaboration and Continuous Improvement"
   ms.date: 04/16/2021
@@ -44,3 +46,4 @@ units:
 - learn.wwl.characterize-devops-continous-collaboration-improvement.summary
 badge:
   uid: learn.wwl.characterize-devops-continous-collaboration-improvement.badge
+

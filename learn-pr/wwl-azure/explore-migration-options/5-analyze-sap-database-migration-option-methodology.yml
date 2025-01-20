@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-migration-options.analyze-sap-database-migration-option-methodology
 title: Analyze the SAP database migration option methodology
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Analyze the SAP database migration option methodology
   description: "Analyze the SAP database migration option methodology."
   ms.date: 08/01/2024

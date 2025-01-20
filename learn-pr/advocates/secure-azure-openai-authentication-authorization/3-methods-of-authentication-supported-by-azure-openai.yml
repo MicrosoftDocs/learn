@@ -2,6 +2,8 @@
 uid: learn.secure-azure-openai-authentication-authorization.methods-of-authentication-supported-by-azure-open-ai
 title: Methods of authentication supported by Azure OpenAI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Methods of authentication supported by Azure OpenAI
   description: Azure OpenAI authentication methods
   ms.date: 10/16/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-methods-of-authentication-supported-by-azure-openai.md)]
+

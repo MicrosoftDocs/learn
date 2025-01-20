@@ -6,7 +6,7 @@
 4.  On the Security blade, in the left navigation, select **Identity protection**.
 5.  In the Identity protection blade, in the left navigation, select User risk policy.
     
-    :::image type="content" source="../media/browse-identity-protection-77fc07bc.png" alt-text="Screenshot of the User risk policy page and highlighted browsing path.":::
+    :::image type="content" source="../media/browse-identity-protection-77fc07bc-d9f2fdaa.png" alt-text="Screenshot of the User risk policy page and highlighted browsing path.":::
     
 6.  Under **Assignments**, select **All users** and review the available options. You can select from **All users** or **Select individuals and groups** if limiting your rollout. Additionally, you can choose to exclude users from the policy.
 7.  Under **User risk**, select **Low and above**.

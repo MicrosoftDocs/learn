@@ -4,7 +4,7 @@ title: Examine Azure Virtual Machine networking considerations
 metadata:
   title: Examine Azure Virtual Machine networking considerations
   description: "Examine the effects different networking practices can have on networking performance."
-  ms.date: 10/03/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

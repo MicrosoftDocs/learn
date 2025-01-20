@@ -1,8 +1,8 @@
-Now that you have your development environment set up, you'll explore the structure of a Blazor Hybrid project and learn how to add new pages.
+Now that you have your development environment set up, let's explore the structure of a Blazor Hybrid project and learn how to add new pages.
 
 ## What is Razor?
 
-Razor is a markup syntax for embedding .NET based code into webpages. The Razor syntax consists of HTML, C#, and Razor-specific syntax that typically begins with an `@` character. Files containing Razor generally have a `.cshtml` file extension (used in server-side development with Razor Pages and MVC) or a `.razor` extension when used in [Razor components](/aspnet/core/blazor/components/) files. Razor syntax is similar to the templating engines of various JavaScript single-page application (SPA) frameworks, such as Angular, React, VueJs, and Svelte.
+Razor is a markup syntax for embedding .NET based code into webpages. The Razor syntax consists of HTML, C#, and Razor-specific syntax that typically begins with an `@` character. Files containing Razor generally have a `.cshtml` file extension (used in server-side development with Razor Pages and MVC) or a `.razor` extension when used in [Razor components](/aspnet/core/blazor/components/) files. Razor syntax is similar to the templating engines of various JavaScript single-page application (SPA) frameworks such as Angular, React, VueJs, and Svelte.
 
 ## What are Razor components?
 

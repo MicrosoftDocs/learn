@@ -4,8 +4,8 @@ metadata:
   title: Specify requirements for securing SaaS, PaaS, and IaaS services
   description: "You learn how to analyze security requirements for different cloud offerings (SaaS, PaaS, and IaaS), IoT workloads, web workloads and containers."
   ms.date: 09/09/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: module
   ms.service: security
   ai-usage: ai-assisted

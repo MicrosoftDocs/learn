@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-approaches-to-device-management-at-scale.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: This content is part of Examine approaches to device management at scale using Azure IoT Hub
   ms.date: 10/01/2023

@@ -2,6 +2,8 @@
 uid: learn.improve-sign-in-security-authenticator.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: "You needed to roll out a low-cost to help users move away from signing in with less secure methods like Voice calls or SMS. You chose to create a registration campaign to help users set up Microsoft Authenticator, a free app, and use it as their default sign-in method."
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
+

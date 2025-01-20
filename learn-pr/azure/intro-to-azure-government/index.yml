@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-government
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Government
   description: Learn how to use Azure Update Management to update virtual machines, verify agent connectivity, and use Azure log analytics in your cloud environment.
   ms.date: 08/23/2023
@@ -43,3 +45,4 @@ units:
 - learn.intro-to-azure-government.9-summary
 badge:
   uid: learn.intro-to-azure-government.badge
+

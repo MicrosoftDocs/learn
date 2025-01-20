@@ -2,6 +2,8 @@
 uid: learn.azure.optimize-your-cost-azure-blob-storage.implement-azure-blob-storage-lifecycle-management
 title: Implement Azure Blob Storage lifecycle management  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Azure Blob Storage lifecycle management  
   description: Implement Azure Blob Storage lifecycle management.
   ms.date: 08/14/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/implement-azure-blob-storage-lifecycle-management.md)]
+

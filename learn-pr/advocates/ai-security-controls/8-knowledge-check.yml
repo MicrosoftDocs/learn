@@ -9,7 +9,7 @@ metadata:
   ms.author: sayoung
   ms.topic: unit
 durationInMinutes: 3
-content: Choose the best response for each question. Then select **Check your answers**.
+content: Choose the best response for each question. 
 quiz:
   questions:
     - content: "What steps can you take to improve the data security of an AI enabled application?"

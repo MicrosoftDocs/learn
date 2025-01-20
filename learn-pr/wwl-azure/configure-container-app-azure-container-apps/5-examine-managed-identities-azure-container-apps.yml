@@ -4,10 +4,12 @@ title: Examine managed identities in Azure Container Apps
 metadata:
   title: Examine managed identities in Azure Container Apps
   description: "Examine managed identities in Azure Container Apps"
-  ms.date: 11/22/2023
+  ms.date: 11/06/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - ai-learning-hub
 durationInMinutes: 5
 content: |
   [!include[](includes/5-examine-managed-identities-azure-container-apps.md)]

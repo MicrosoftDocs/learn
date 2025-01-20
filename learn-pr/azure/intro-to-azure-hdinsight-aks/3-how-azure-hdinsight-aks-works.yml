@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-hdinsight-aks.3-how-azure-hdinsight-aks-works  
 title: Security in HDInsight on AKS  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content  
   title: Security in HDInsight on AKS  
   description: Security in HDInsight on AKS  
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-how-azure-hdinsight-aks-works.md)]
+

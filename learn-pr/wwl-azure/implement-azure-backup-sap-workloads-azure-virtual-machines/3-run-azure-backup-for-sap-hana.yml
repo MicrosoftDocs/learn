@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-azure-backup-for-sap-workloads-azure-vms.running-azure-backup-sap-hana-azure-vms
 title: Run Azure Backup for SAP HANA on Azure VMs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run Azure Backup for SAP HANA on Azure VMs
   description: "Explore the high-level tasks needed to run Azure Backup for SAP HANA on Azure Virtual Machines."
   ms.date: 03/27/2024

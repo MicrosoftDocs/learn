@@ -2,6 +2,8 @@
 uid: learn.configure-the-network-for-your-virtual-machines.2-describe-azure-virtual-networking
 title: Explore Azure virtual networking
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure virtual networking
   description: Explore Azure virtual networking
   ms.date: 11/01/2023
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-describe-azure-virtual-networking.md)]
+

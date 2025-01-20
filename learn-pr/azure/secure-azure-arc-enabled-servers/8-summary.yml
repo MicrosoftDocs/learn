@@ -2,6 +2,8 @@
 uid: learn.azure.secure-azure-arc-enabled-servers.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 04/24/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]
+

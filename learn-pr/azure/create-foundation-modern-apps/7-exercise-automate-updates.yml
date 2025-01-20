@@ -2,6 +2,8 @@
 uid: learn.azure.create-foundation-modern-apps.exercise-automate-updates
 title: Exercise - Automate updates with GitHub Actions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Automate updates with GitHub Actions
   description: Configure GitHub secrets and YAML file. Then, monitor the complete solution.
@@ -13,3 +15,4 @@ durationInMinutes: 5
 azureSandbox: True
 content: |
   [!include[](includes/7-exercise-automate-updates.md)]
+

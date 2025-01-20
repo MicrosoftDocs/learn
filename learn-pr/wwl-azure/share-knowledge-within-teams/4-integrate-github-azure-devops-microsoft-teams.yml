@@ -2,6 +2,8 @@
 uid: learn.wwl.share-knowledge-within-teams.integrate-github-azure-devops-microsoft-teams
 title: Integrate GitHub and Azure DevOps with Microsoft Teams
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Integrate GitHub and Azure DevOps with Microsoft Teams
   description: "Integrate GitHub and Azure DevOps with Microsoft Teams"
   ms.date: 05/24/2024

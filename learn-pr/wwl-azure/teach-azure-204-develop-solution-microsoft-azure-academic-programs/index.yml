@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-programs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Get tips and tricks for teaching AZ-204 Developing Solution for Microsoft Azure in academic programs
   description: "Get tips and tricks for teaching AZ-204 Developing Solution for Microsoft Azure in academic programs"
   ms.date: 06/02/2023

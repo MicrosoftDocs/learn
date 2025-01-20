@@ -2,6 +2,8 @@
 uid: learn.azure.nodejs-files.6-create-files-directories
 title: Create files and directories
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create files and directories
   description: Create files and directories
   ms.date: 04/19/2024
@@ -15,3 +17,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/6-create-files-directories.md)]
+

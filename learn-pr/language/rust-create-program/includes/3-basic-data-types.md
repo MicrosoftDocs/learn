@@ -163,7 +163,7 @@ What happens if we don't specify the ampersand `&` before `str` in this example?
 
 ### Check your knowledge
 
-Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
+Answer the following questions to see what you've learned. Choose one answer for each question.
 
 <!-- Links -->
 

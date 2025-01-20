@@ -2,6 +2,8 @@
 uid: learn.azure.apply-networking-concepts-to-windows-containers.networking-concepts-for-kubernetes-containers
 title: Networking concepts for Kubernetes containers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Networking concepts for Kubernetes containers
   description: Kubernetes is a portable, extensible open-source platform for automating the deployment, scaling, and management of your containerized workloads. As an orchestration platform, Kubernetes provides ease of use and flexibility like Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 16
 content: |
   [!include[](includes/4-networking-concepts-for-kubernetes-containers.md)]
+

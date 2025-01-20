@@ -8,7 +8,7 @@ Let's go through an example. Select the relevant tab for your environment.
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
-Azure Data Explorer offers a help cluster with different types of data preloaded. This cluster can be accessed using the Azure Data Explorer web UI.
+Azure Data Explorer offers a help cluster with different types of data preloaded. You can access this cluster using the Azure Data Explorer web UI.
 
 > [!div class="nextstepaction"]
 > <a href="https://dataexplorer.azure.com/clusters/help" target="_blank">Azure Data Explorer help cluster</a>
@@ -53,11 +53,10 @@ The following steps demonstrate how to build a query by applying operators to a 
 
 ### [Azure Monitor/Microsoft Sentinel](#tab/azure-monitor)
 
-Microsoft Sentinel and Log Analytics in Azure Monitor both use the demo environment that is accessed by searching for and selecting **Logs** in the Azure portal.
+Microsoft Sentinel and Log Analytics in Azure Monitor both use the demo environment, which you can access by searching for and selecting **Logs** in the Azure portal.
 
 > [!div class="nextstepaction"]
 > <a href="https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade" target="_blank">Log Analytics demo environment</a>
-
 
 The following steps demonstrate how to build a query by applying operators to a starting tabular dataset. Each query is composed of tabular expression statements, some of which contain operators. Operators take a tabular input, perform an operation, and produce a new tabular output.
 
@@ -99,7 +98,7 @@ The following steps demonstrate how to build a query by applying operators to a 
 
 ### [Azure Resource Graph](#tab/azure-resource-grid)
 
-The Azure Resource Graph Explorer is accessed by searching for and selecting **Resource Graph Explorer** in the Azure portal.
+You can access the Azure Resource Graph Explorer by searching for and selecting **Resource Graph Explorer** in the Azure portal.
 
 > [!div class="nextstepaction"]
 > <a href="https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/" target="_blank">Azure Resource Graph Explorer</a>

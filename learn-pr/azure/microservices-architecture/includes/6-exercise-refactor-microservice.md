@@ -158,10 +158,10 @@ Now that our service is running on Azure Functions, we need to point our drone a
 
     ```bash
     zip -r DroneDelivery-after.zip . -x \*/obj/\* \*/bin/\*
-    az webapp deployment source config-zip \
+    az webapp deploy \
         --resource-group "<rgn>[sandbox resource group]</rgn>" \
         --name $APPSERVICENAME \
-        --src DroneDelivery-after.zip
+        --src-path DroneDelivery-after.zip
     ```
 
 1. With the site redeployed, refresh your page. It should now be updated.

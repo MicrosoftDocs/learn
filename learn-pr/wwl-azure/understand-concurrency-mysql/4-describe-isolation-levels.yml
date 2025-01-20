@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-concurrency-mysql.describe-isolation-levels
 title: Describe isolation levels
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe isolation levels
   description: "Describe isolation levels"
   ms.date: 11/09/2022

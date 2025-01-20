@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-cloud-sync
 title: Microsoft Entra Cloud Sync
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Microsoft Entra Cloud Sync
   description: "Microsoft Entra Cloud Sync"
-  ms.date: 09/04/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

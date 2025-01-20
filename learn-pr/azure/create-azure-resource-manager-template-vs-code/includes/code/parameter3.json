@@ -38,7 +38,7 @@
       "location": "[resourceGroup().location]",
       "kind": "StorageV2",
       "sku": {
-        "name": "[parameters('storageSKU')]",
+        "name": "[parameters('storageSKU')]"
       }
     }
   ],

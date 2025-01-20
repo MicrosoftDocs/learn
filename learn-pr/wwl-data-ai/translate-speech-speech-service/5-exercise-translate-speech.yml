@@ -2,11 +2,13 @@
 uid: learn.wwl.translate-speech-speech-service.exercise-translate-speech
 title: Exercise - Translate speech
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Translate speech
   description: Exercise - Translate speech
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 08/20/2024
+  ms.date: 12/13/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,3 +17,4 @@ labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-translate-speech.md)]
+

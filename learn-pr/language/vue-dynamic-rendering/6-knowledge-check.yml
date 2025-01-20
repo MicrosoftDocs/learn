@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 2
 content: |
-  Choose the best response for each question, and then select **Check your answers**.
+  Choose the best response for each question.
 quiz:
   questions:
   - content: Which directive do you use to iterate through a list of items?

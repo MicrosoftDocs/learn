@@ -2,6 +2,8 @@
 uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.replicate-data-to-secondary-cluster
 title: Replicate data to a secondary cluster
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Replicate data to a secondary cluster
   description: "Replicate data to a secondary cluster"
   ms.date: 04/07/2024

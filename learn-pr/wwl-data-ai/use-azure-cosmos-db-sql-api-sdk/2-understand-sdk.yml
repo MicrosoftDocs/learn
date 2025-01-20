@@ -2,6 +2,8 @@
 uid: learn.wwl.use-azure-cosmos-db-sql-api-sdk.understand-sdk
 title: Understand the SDK
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand the SDK
   description: "Understand the SDK"
   ms.date: 03/28/2024

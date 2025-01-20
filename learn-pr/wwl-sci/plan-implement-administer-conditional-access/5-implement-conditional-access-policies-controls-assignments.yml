@@ -2,9 +2,11 @@
 uid: learn.wwl.plan-implement-administer-conditional-access.implement-policy-controls-assignments
 title: Implement Conditional Access policy controls and assignments
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Conditional Access policy controls and assignments
   description: "Implement Conditional Access policy controls and assignments"
-  ms.date: 10/14/2024
+  ms.date: 12/16/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

@@ -3,7 +3,7 @@ uid: learn.github.introduction-to-github-copilot-for-business.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: This content is part of the Introduction to GitHub Copilot for Business module.
+  description: This content is part of the Introduction to GitHub Copilot Business module.
   author: a-a-ron
   ms.author: aastewar
   ms.date: 09/16/2024
@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What functionality isn't supported in GitHub Copilot for Individuals?"
+    - content: "What functionality isn't supported in GitHub Copilot Pro?"
       choices:
         - content: "VPN Proxy support via self-signed certificates"
           isCorrect: true
@@ -27,7 +27,7 @@ quiz:
           explanation: Editor integration is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot for Business.
         - content: "Blocks suggestions matching public code"
           isCorrect: false
-          explanation: Blocks suggestions matching public code is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot for Business.
+          explanation: Blocks suggestions matching public code is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot Business.
     - content: "What percentage of developers said that GitHub Copilot helps them code faster?"
       choices:
         - content: "70%"
@@ -42,17 +42,17 @@ quiz:
         - content: "90%"
           isCorrect: true
           explanation: Ninety percent (90%) is the correct percentage of developers that said GitHub Copilot helps them code faster.
-    - content: "After you enforced your GitHub Copilot for Business policy, where do you first navigate in order to enable Copilot for Business for all current and future users?"
+    - content: "After you enforced your GitHub Copilot Business policy, where do you first navigate in order to enable Copilot Business for all current and future users?"
       choices:
         - content: "Policies"
           isCorrect: false
-          explanation: Policies isn't the first place to navigate in order to enable GitHub Copilot for Business.
+          explanation: Policies isn't the first place to navigate in order to enable GitHub Copilot Business.
         - content: "Your organizations in your profile dropdown menu"
           isCorrect: true
-          explanation: Correct! This "Your organizations" in your profile dropdown menu is the first place to navigate to in order to enable GitHub Copilot for Business.
+          explanation: Correct! This "Your organizations" in your profile dropdown menu is the first place to navigate to in order to enable GitHub Copilot Business.
         - content: "Settings in your profile dropdown menu"
           isCorrect: false
-          explanation: Close, but Settings isn't the first place to navigate in order to enable GitHub Copilot for Business.
+          explanation: Close, but Settings isn't the first place to navigate in order to enable GitHub Copilot Business.
         - content: "Selected teams/users"
           isCorrect: false
-          explanation: Selected teams/users isn't the first place to navigate in order to enable GitHub Copilot for Business.
+          explanation: Selected teams/users isn't the first place to navigate in order to enable GitHub Copilot Business.

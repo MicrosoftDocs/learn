@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.node-web-routes.manage-routes
 title: Understand URLs and routes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand URLs and routes
   description: Divide your application into sections for the different resources.
   author: diberry
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-manage-routes.md)]
+

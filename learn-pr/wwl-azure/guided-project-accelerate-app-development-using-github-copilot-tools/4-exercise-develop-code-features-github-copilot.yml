@@ -4,10 +4,12 @@ title: Exercise - Develop code features using GitHub Copilot tools
 metadata:
   title: Exercise - Develop code features using GitHub Copilot tools
   description: "Exercise - Develop code features using GitHub Copilot tools"
-  ms.date: 08/19/2024
+  ms.date: 11/26/2024
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 20
 content: |
   [!include[](includes/4-exercise-develop-code-features-github-copilot.md)]

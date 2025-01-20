@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-non-relational-data-model.identify-access-patterns-for-your-app
 title: Identify access patterns for your app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify access patterns for your app
   description: "Identify access patterns for your app"
-  ms.date: 04/16/2024
+  ms.date: 10/22/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/3-identify-access-patterns-for-your-app.md)]
+

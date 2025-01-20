@@ -24,7 +24,7 @@ To prepare for the exercises in this module, complete the following steps:
 
 1. Open a new instance of Visual Studio Code, and then open the Chat view.
 
-    You can open the Chat view by selecting **Chat** from Visual Studio Code's activity bar.
+    You can open the Chat view by selecting **Open Chat** from the Visual Studio Code Command Center or using the **Ctrl+Alt+I** keyboard shortcut.
 
 1. In the Chat view, enter the following prompt:
 
@@ -32,15 +32,15 @@ To prepare for the exercises in this module, complete the following steps:
     @workspace /new console application named APL2007M3. Use C# LangVersion 12 and NET8.0. Only .cs and .csproj files. Enable ImplicitUsings and Nullable
     ```
 
-    GitHub Copilot uses this prompt to create the workspace for a new console application. The application uses `C#` and `.NET8.0`. The code project is named `APL2007M3`, and includes the `.cs` and `.csproj` files. The `APL2007M3.csproj` file specifies C# `LangVersion 12` and enables `ImplicitUsings` and `Nullable`.
-
 1. In the Chat view, select **Create Workspace**.
 
-    You're prompted to select a parent folder for the workspace. Selecting the Desktop folder is a good choice for this exercise. The Desktop folder is easy to find. Remember to clean up when you complete this training.
+    GitHub Copilot uses your prompt to create the workspace for a new console application. The application uses `C#` and `.NET8.0`. The code project is named `APL2007M3`, and includes the `.cs` and `.csproj` files. The `APL2007M3.csproj` file specifies C# `LangVersion 12` and enables `ImplicitUsings` and `Nullable`.
 
 1. In the Select Folder dialog, navigate to your Desktop folder, select **Desktop**, and then select **Select as Parent Folder**.
 
-    After GitHub Copilot creates the application files, it opens your new application folder in the Explorer view.
+    You're prompted to select a parent folder for the new workspace. Selecting the Desktop folder is a good choice for this exercise. The Desktop folder is easy to find. Remember to clean up when you complete this training.
+
+1. When prompted to open the new project, select **Open**.
 
 1. In the Explorer view, select **Program.cs**.
 
@@ -143,6 +143,8 @@ Use the following steps to complete this section of the exercise:
     > [!NOTE]
     > If GitHub Copilot suggests a single code line rather than a completed `GenerateSalesData` method, press **Ctrl** + **Enter** to open the GitHub Copilot Suggestions tab. Review the suggestions on the new tab. On the next step, use the "Accept suggestion #" button to accept the suggestion. GitHub Copilot presents suggestions incrementally on occasion. Although you can accept the code completions incrementally, it's better to use the GitHub Copilot Suggestions tab to review full suggestion before making a decision to accept or discard.
 
+1. Scroll through the code completion suggestions and select the best match for the requirements.
+
 1. To accept the code completion, press the Tab key.
 
     Notice that the code completion suggestion includes a syntax error in the code used to generate the `DateSold` field. `DateOnly` accepts three integer values that must be listed in the correct order: **Year**, **Month**, **Day**.
@@ -151,6 +153,27 @@ Use the following steps to complete this section of the exercise:
 
     ```C#
     salesData[i].DateSold = new DateOnly(2023, random.Next(1, 13), random.Next(1, 29));
+    ```
+
+1. If necessary, adjust the other code lines to match the following code snippet:
+
+    ```C#
+    public SalesData[] GenerateSalesData()
+    {
+        SalesData[] salesData = new SalesData[1000];
+        Random random = new Random();
+
+        for (int i = 0; i < salesData.Length; i++)
+        {
+            salesData[i].dateSold = new DateOnly(2023, random.Next(1, 13), random.Next(1, 29));
+            salesData[i].departmentName = "Department " + random.Next(1, 11);
+            salesData[i].productID = random.Next(1, 101);
+            salesData[i].quantitySold = random.Next(1, 101);
+            salesData[i].unitPrice = random.NextDouble() * 100;
+        }
+
+        return salesData;
+    }
     ```
 
 The ability to generate code from code comments is a powerful feature of GitHub Copilot. With just two comments, you were able to generate a data structure and a method that generates test data.
@@ -278,7 +301,7 @@ Use the following steps to complete this section of the exercise:
     Console.WriteLine("----------------------");
     foreach (KeyValuePair<string, double> quarter in quarterlySales)
     {
-        Console.WriteLine("{0}: ${1}", quarter.Key, quarter.Value);
+        Console.WriteLine(entry.Key + ": $" + entry.Value);
     }
 
     ```
@@ -344,7 +367,7 @@ Use the following steps to complete this section of the exercise:
         // call the GenerateSalesData method
         SalesData[] salesData = report.GenerateSalesData();
 
-        // call the DisplayReport method
+        // call the QuarterlySalesReport method
         report.QuarterlySalesReport(salesData);
     }
 
@@ -365,7 +388,7 @@ Use the following steps to complete this section of the exercise:
                 // call the GenerateSalesData method
                 SalesData[] salesData = report.GenerateSalesData();
     
-                // call the DisplayReport method
+                // call the QuarterlySalesReport method
                 report.QuarterlySalesReport(salesData);
             }
     
@@ -391,7 +414,7 @@ Use the following steps to complete this section of the exercise:
                     salesData[i].departmentName = "Department " + random.Next(1, 11);
                     salesData[i].productID = random.Next(1, 101);
                     salesData[i].quantitySold = random.Next(1, 101);
-                    salesData[i].unitPrice = random.Next(1, 101) + random.NextDouble();
+                    salesData[i].unitPrice = random.NextDouble() * 100;
                 }
     
                 return salesData;
@@ -424,7 +447,7 @@ Use the following steps to complete this section of the exercise:
                 Console.WriteLine("----------------------");
                 foreach (KeyValuePair<string, double> quarter in quarterlySales)
                 {
-                    Console.WriteLine("{0}: ${1}", quarter.Key, quarter.Value);
+                    Console.WriteLine(entry.Key + ": $" + entry.Value);
                 }
             }
     
@@ -452,7 +475,7 @@ Use the following steps to complete this section of the exercise:
     
     ```
 
-    Remember that this code was created, almost entirely, using code line completions generated by GitHub Copilot.
+    This code was created, almost entirely, using code line completions generated by GitHub Copilot. However, your review of code suggestions is important, and corrections were required. You should always review the code completions suggested by GitHub Copilot to ensure that the code meets your requirements.
 
 1. To review the report output, run the app.
 
@@ -466,7 +489,7 @@ Use the following steps to complete this section of the exercise:
 
 1. Review the output in the Terminal window.
 
-    You should see output similar to the following output:
+    Although the quarterly results are based on random numeric values, you should see a report that's formatted similar to the following output:
 
     ```output
 

@@ -72,6 +72,6 @@ The **Tags** tab can be used to specify name/value pairs that enable you to cate
 The **Review + create** tab performs a validation check and provides the option to review your configuration settings before you create your Container App and Container Apps Environment.
 
 > [!NOTE]
-> The deployment for a Container App can takes about 10 minutes to complete.
+> The deployment for a Container App can take about 3-8 minutes to complete.
 
 A page with the message Deployment is in progress is displayed. Once the deployment is successfully completed, you'll see the message: Your deployment is complete.

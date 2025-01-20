@@ -2,6 +2,8 @@
 uid: learn.azure.support-hybrid-clouds
 title: Support data classification with private and hybrid clouds
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Support data classification with private and hybrid clouds
   description: Discussion of the private and hybrid cloud solutions for government customers to enforce data sovereignty, meet compliance requirements, and protect sensitive data.
   ms.service: azure-government
@@ -40,3 +42,4 @@ units:
 - learn.azure.support-hybrid-clouds.7-summary
 badge: 
   uid: learn.azure.support-hybrid-clouds.badge
+

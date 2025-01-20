@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Web Development with Blazor          # Do not edit: title must be "Introduction to (product)"
   description: "Evaluate whether Blazor is appropriate for your next web development project and learn how Blazor works."             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 01/12/2024             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 11/01/2024             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: csharpfritz      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: jefritz           # Alias of the Microsoft employee either authoring or project-managing this content
   manager: coxford
@@ -13,7 +13,7 @@ metadata:
 title: Introduction to Web Development with Blazor
 summary: "Discover the key features of Blazor for building your next web app."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Evaluate whether Blazor is appropriate for your next web development project.
     - Describe how Blazor works for building web apps.
 prerequisites: |

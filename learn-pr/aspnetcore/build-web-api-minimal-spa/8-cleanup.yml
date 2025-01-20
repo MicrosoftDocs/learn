@@ -11,8 +11,8 @@ metadata:
     Clean up the project's Visual Studio Code environment after concluding the guided project steps.
   sandbox: true
   interactive: bash
-  author: seesharprun
-  ms.author: sidandrews
+  author: CamSoper
+  ms.author: casoper
   ms.topic: unit
   ms.date: 6/5/2023
 durationInMinutes: 1

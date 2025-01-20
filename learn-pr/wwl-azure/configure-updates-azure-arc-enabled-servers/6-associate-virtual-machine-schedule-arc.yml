@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-updates-azure-arc-enabled-servers.associate-virtual-machine-schedule-arc
 title: Associate a virtual machine with a schedule
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Associate a virtual machine with a schedule
   description: "Associate a virtual machine with a schedule"
   ms.date: 06/13/2024

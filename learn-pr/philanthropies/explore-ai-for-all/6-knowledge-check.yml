@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-ai-for-all.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the Explore AI for all module.
+  ms.date: 10/31/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: unit
+durationInMinutes: 6
+quiz:
+  title: Knowledge check
+  questions:
+  - content: How are AI initiatives enhancing accessibility for individuals with disabilities?
+    choices:
+    - content: AI is creating new user interfaces and platforms that are more intuitive and adaptable, making technology more accessible.
+      isCorrect: true
+      explanation: "Correct: AI creates new user interfaces and platforms that are more intuitive and adaptable, which makes technology more accessible for individuals with disabilities"
+    - content: AI is being developed to focus on enhancing braille literacy.
+      isCorrect: false
+      explanation: "Incorrect: While AI is enhancing braille literacy through projects like the Hexis-Antara project in India, it is also being used in various other ways to improve accessibility, such as making math assessments more accessible and generating detailed text descriptions for artwork."
+    - content: AI is not involved in improving employment opportunities for neurodivergent individuals.
+      isCorrect: false
+      explanation: "Incorrect: AI is being used by initiatives like Mentra to improve employment opportunities for neurodivergent individuals by matching their unique strengths with rewarding careers."
+    - content: AI development is focused on enhancing accessibility for individuals with physical disabilities.
+      isCorrect: false
+      explanation: "Incorrect: AI initiatives are enhancing accessibility for individuals with various types of disabilities."
+  - content: Which of the following statements best illustrates the transformative effect of AI in the energy sector?
+    choices:
+    - content: AI helps fraud detection and risk management, improving client experiences
+      isCorrect: false
+      explanation: "Incorrect: This statement pertains to the finance sector, not the energy sector."
+    - content: AI sensors in wind farms predict wind patterns and adjust turbine angles to capture maximum wind.
+      isCorrect: true
+      explanation: "Correct: This statement accurately describes the impact of AI in the energy sector by enhancing efficiency and sustainability."
+    - content: AI helps in diagnostics, making tests more precise and detecting conditions like depression through speech patterns.
+      isCorrect: false
+      explanation: "Incorrect: This statement is related to the healthcare sector, not the energy sector."
+    - content: AI personalizes the shopping experience by tailoring the shopper's journey and enhancing store associates' experience.
+      isCorrect: false
+      explanation: "Incorrect: This statement is relevant to the retail sector, not the energy sector."
+  - content: Which of the following best demonstrates the effectiveness of AI in enhancing humanitarian action?
+    choices:
+    - content: AI's role in creating a modern website for humanitarian organizations.
+      isCorrect: false
+      explanation: "Incorrect: While a modern website can improve communication, it does not directly demonstrate the effectiveness of AI in enhancing humanitarian action through case studies and real-world applications"
+    - content: AI's use in optimizing the distribution of services globally.
+      isCorrect: false
+      explanation: "Incorrect: AI's role in ensuring efficient delivery globally important, but it is not the best demonstration of AI's effectiveness in enhancing humanitarian action."
+    - content: AI's ability to help predict natural disasters and transform the approach from reactive to proactive.
+      isCorrect: true
+      explanation: "Correct: This is correct because AI's predictive capabilities, such as forecasting disasters before they strike, significantly enhance the effectiveness of humanitarian action by allowing for proactive measures."
+    - content: AI's ability to enhance the voices of humanitarian leaders.
+      isCorrect: false
+      explanation: "Incorrect: While enhancing the voice of humanitarian leaders is valuable, this isn't a concrete example of AI's effectiveness in practical humanitarian scenarios."

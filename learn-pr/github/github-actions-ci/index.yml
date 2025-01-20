@@ -3,7 +3,7 @@ uid: learn.github.github-actions-ci
 metadata:
   title: "Build continuous integration (CI) workflows by using GitHub Actions"
   description: Learn how to create workflows that enable you to use Continuous Integration (CI) for your projects.
-  ms.date: 11/12/2023
+  ms.date: 11/15/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module
@@ -12,10 +12,10 @@ title: "Build continuous integration (CI) workflows by using GitHub Actions"
 summary: Learn how to create workflows that enable you to use Continuous Integration (CI) for your projects.
 abstract: |
   In this module, you will:
-  - Learn essential features and techniques to build robust and dynamic workflows
-  - Build and test a Node.js project by using GitHub Actions and a templated workflow
-  - Debug a failed test using the GitHub Actions Log
-  - Customize your workflow with GitHub Actions
+  - Learn essential features and techniques to build robust and dynamic workflows.
+  - Build and test a Node.js project by using GitHub Actions and a templated workflow.
+  - Debug a failed test using the GitHub Actions Log.
+  - Customize your workflow with GitHub Actions.
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub

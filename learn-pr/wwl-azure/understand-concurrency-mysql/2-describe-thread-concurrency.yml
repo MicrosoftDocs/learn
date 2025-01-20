@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-concurrency-mysql.describe-thread-concurrency
 title: Describe thread concurrency
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe thread concurrency
   description: "Describe thread concurrency"
   ms.date: 11/09/2022

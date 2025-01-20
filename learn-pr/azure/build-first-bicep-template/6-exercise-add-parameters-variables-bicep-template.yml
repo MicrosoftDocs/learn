@@ -3,10 +3,12 @@ uid: learn.azure.deploy-azure-resources-bicep.add-parameters-variables-bicep-tem
 title: Exercise - Add parameters and variables to your Bicep template
 sandbox: true
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Add parameters and variables to your Bicep template
   description: Learn how to build reusable templates by using parameters to accept input, and variables to store and reuse values within the template.
-  ms.date: 09/27/2024
+  ms.date: 10/31/2024
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -16,3 +18,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-add-parameters-variables-bicep-template.md)]
+

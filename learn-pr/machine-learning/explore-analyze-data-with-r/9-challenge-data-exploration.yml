@@ -2,6 +2,8 @@
 uid: learn.machine-learning.explore-analyze-data-r.challenge-data-exploration
 title: Challenge - Data exploration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Challenge - Data exploration
   description: Challenge - Data exploration.
   ms.date: 08/26/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 15
 sandbox: true
 notebook: notebooks/9-challenge-data-exploration.ipynb
+

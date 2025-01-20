@@ -2,6 +2,8 @@
 uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.mongodb-cosmos-db-migration-benefits
 title: MongoDB to Cosmos DB migration benefits
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: MongoDB to Cosmos DB migration benefits
   description: "MongoDB to Cosmos DB migration benefits"
   ms.date: 02/03/2021
@@ -15,3 +17,4 @@ azureSandbox: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-benefits.md)]
+

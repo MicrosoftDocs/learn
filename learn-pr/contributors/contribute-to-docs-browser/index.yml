@@ -3,9 +3,9 @@ uid: learn.contribute-docs-browser
 metadata:
   title: Contribute to Microsoft Learn documentation in your browser
   description: Become a contributor to Microsoft Learn documentation by making edits with a web editor in GitHub. Make your changes, then create, validate, and submit pull requests to get your changes published.
-  ms.date: 8/1/2023
+  ms.date: 11/25/2024
   author: sgaspari815
-  ms.author: v-sgaspari
+  ms.author: robmcm
   ms.topic: module-standard-task-based
   ms.service: learn
 title: Contribute to Microsoft Learn documentation in your browser
@@ -15,8 +15,8 @@ abstract: |
   - Define your impact as a contributor to Microsoft Learn documentation.
   - Edit Microsoft Learn documentation using a web editor in GitHub.
 prerequisites: |
-  - Familiarity with Microsoft Learn documentation at the beginner level.
-  - Awareness of contributions to open-source projects at the beginner level.
+  - Familiarity with Microsoft Learn documentation at the beginner level
+  - Awareness of contributions to open-source projects at the beginner level
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

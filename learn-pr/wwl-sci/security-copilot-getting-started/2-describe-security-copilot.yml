@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.security-copilot-getting-started.describe-security-copilot
-title: Get acquainted with Microsoft Copilot for Security
+title: Get acquainted with Microsoft Security Copilot
 metadata:
-  title: Get acquainted with Microsoft Copilot for Security
-  description: Get acquainted with Microsoft Copilot for Security
+  title: Get acquainted with Microsoft Security Copilot
+  description: Get acquainted with Microsoft Security Copilot
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 08/22/2024
+  ms.date: 11/20/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

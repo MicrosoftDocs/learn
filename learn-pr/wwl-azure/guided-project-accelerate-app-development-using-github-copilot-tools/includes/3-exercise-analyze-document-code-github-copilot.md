@@ -31,48 +31,29 @@ Use the following steps to complete this section of the exercise:
     You should see a response similar to the following description:
 
     ```markdown
-    This project appears to be a library management system with a multi-layered architecture, including application core, console application, and infrastructure layers. Here's a breakdown of the project structure:
+    This project is a library management system implemented in C#. It consists of three main components:
     
-    ### Project Structure
+    1. **Library.ApplicationCore**: This is the core application library containing the main business logic, entities, enums, and interfaces. It includes:
     
-    - **Solution File**
-      - `AccelerateDevGitHubCopilot.sln`: The solution file that ties all the projects together.
-    
-    - **Source Code (`src/`)**
-      - **Library.ApplicationCore**
-        - Contains core business logic and entities.
-        - **Entities**: Likely contains domain models.
-        - **Enums**: Contains enumerations used across the application.
-        - **Interfaces**: Defines contracts for repositories and services.
-        - **Services**: Likely contains implementations of the business logic.
-        - `Library.ApplicationCore.csproj`: Project file for the application core.
-    
-      - **Library.Console**
-        - Contains the console application that interacts with the core library.
-        - `appSettings.json`: Configuration file for the console application.
-        - ConsoleApp: Main class for the console application.
-        - ConsoleState: Likely manages the state of the console application.
-        - `Library.Console.csproj`: Project file for the console application.
-        - `Program.cs`: Entry point for the console application.
-    
-      - **Library.Infrastructure**
-        - Likely contains data access implementations and other infrastructure-related code.
-        - **Data**: Contains data access classes.
-        - `Library.Infrastructure.csproj`: Project file for the infrastructure layer.
-    
-    - **Tests (`tests/`)**
-      - **UnitTests**
-        - Contains unit tests for the application core.
-        - **ApplicationCore**
-          - **LoanService**
-          - **PatronService**
-        - `LoanFactory.cs`: Likely contains factory methods for creating loan objects for tests.
-        - `PatronFactory.cs`: Likely contains factory methods for creating patron objects for tests.
-        - UnitTests.csproj: Project file for the unit tests.
-    
-    ### Summary
+        - Entities such as Book, Patron, Loan, etc.
+        - Enums like MembershipRenewalStatus, LoanReturnStatus, and LoanExtensionStatus.
+        - Services like LoanService and PatronService.
+        - Interfaces like ILoanRepository, IPatronRepository, ILoanService, and IPatronService.
 
-    This project is a .NET-based library management system with a clear separation of concerns across different projects for core logic, console interface, infrastructure, and testing. The solution is well-structured to support development, testing, and deployment.
+    2. **Library.Console**: This is a console application that interacts with the user. It includes:
+    
+        - The main entry point in Program.cs.
+        - Configuration settings in appSettings.json.
+        - Console interaction logic in ConsoleApp.cs.
+
+    3. **Library.Infrastructure**: This library handles data persistence. It includes:
+    
+        - JSON-based repositories like JsonPatronRepository and JsonLoanRepository.
+        - Data loading and saving logic in JsonData.
+
+    Additionally, there are unit tests located in the UnitTests directory, which test the functionality of the core services using the NSubstitute mocking framework and xUnit.
+    
+    The project uses .NET 8.0 and is configured to build and test using GitHub Actions as defined in the build-test.yml file. The solution file is AccelerateDevGitHubCopilot.sln, which includes all the projects and their configurations.
     ```
 
 1. Use the Solution Explorer view to expand the project folders.
@@ -86,7 +67,7 @@ Use the following steps to complete this section of the exercise:
     For example, enter the following prompt in the Chat view:
 
     ```plaintext
-    @workspace #file:ConsoleApp.cs Describe the ConsoleApp class
+    @workspace #editor Describe the ConsoleApp class
     ```
 
 1. Take a couple minutes to review the response.
@@ -94,8 +75,8 @@ Use the following steps to complete this section of the exercise:
     You should see a response similar to the following description:
 
     ```markdown
-    The `ConsoleApp` class in `src/Library.Console/ConsoleApp.cs` is responsible for managing the console-based user interface of the application. It interacts with various services and repositories to perform operations related to patrons and loans. Here are the key components and methods of the `ConsoleApp` class:
-    
+    The `ConsoleApp` class in `ConsoleApp.cs` is responsible for managing the console-based user interface of the library management system. It handles user interactions, processes user inputs, and coordinates actions with the underlying services and repositories.
+
     ### Fields
     - `_currentState`: Tracks the current state of the console application.
     - `matchingPatrons`: A list of patrons that match a search query.
@@ -105,10 +86,10 @@ Use the following steps to complete this section of the exercise:
     - `_loanRepository`: An instance of `ILoanRepository` for accessing loan data.
     - `_loanService`: An instance of `ILoanService` for performing loan-related operations.
     - `_patronService`: An instance of `IPatronService` for performing patron-related operations.
-    
+
     ### Constructor
     - `ConsoleApp(ILoanService loanService, IPatronService patronService, IPatronRepository patronRepository, ILoanRepository loanRepository)`: Initializes the `ConsoleApp` with the provided services and repositories.
-    
+
     ### Methods
     - `Run()`: The main entry point for running the console application.
     - `PatronSearch()`: Handles the logic for searching patrons.
@@ -119,38 +100,8 @@ Use the following steps to complete this section of the exercise:
     - `WriteInputOptions(CommonActions options)`: Writes the available input options to the console.
     - `PatronDetails()`: Displays details of the selected patron.
     - `LoanDetails()`: Displays details of the selected loan and handles actions like extending or returning the loan.
-    
-    ### Example Usage
-    ```
 
-    ```cs
-    public async Task Run()
-    {
-        while (_currentState != ConsoleState.Quit)
-        {
-            switch (_currentState)
-            {
-                case ConsoleState.PatronSearch:
-                    _currentState = await PatronSearch();
-                    break;
-                case ConsoleState.PatronSearchResults:
-                    _currentState = await PatronSearchResults();
-                    break;
-                case ConsoleState.PatronDetails:
-                    _currentState = await PatronDetails();
-                    break;
-                case ConsoleState.LoanDetails:
-                    _currentState = await LoanDetails();
-                    break;
-                default:
-                    throw new InvalidOperationException("Unknown state.");
-            }
-        }
-    }
-    ```
-
-    ```markdown
-    The `ConsoleApp` class orchestrates the flow of the console application, allowing users to search for patrons, view patron details, and manage loans. it uses a state machine pattern to manage different states of the console application, making it easier to handle user interactions and transitions between different operations.
+    The class uses a state machine approach to manage different states of the console application, such as searching for patrons, displaying search results, showing patron details, and handling loan details.
     ```
 
 1. Open the `Program.cs` file.
@@ -160,7 +111,7 @@ Use the following steps to complete this section of the exercise:
     For example, enter the following prompt in the Chat view:
 
     ```plaintext
-    @workspace #file:Program.cs Describe the Program.cs file
+    @workspace #editor Describe the Program.cs file
     ```
 
 1. Take a couple minutes to review the response.
@@ -168,62 +119,38 @@ Use the following steps to complete this section of the exercise:
     You should see a response similar to the following description:
 
     ```markdown
-    The `Program.cs` file in the `src/Library.Console/Program.cs` path is responsible for setting up the dependency injection container and running the console application. Here's a breakdown of its key components:
+    The `Program.cs` file is the entry point for the console application. It sets up the dependency injection container, configures services, and starts the `ConsoleApp`.
     
     1. **Dependency Injection Setup**:
-        - It creates a `ServiceCollection` to register services.
-        - It builds a configuration object from the `appSettings.json` file.
-        - It registers various services and repositories with different lifetimes (singleton, scoped).
+        - Creates a `ServiceCollection` to register services.
+        - Builds a configuration object from the `appSettings.json` file.
+        - Registers various services and repositories with different lifetimes (singleton, scoped).
     
     2. **Service Registration**:
-        - Configuration is registered as a singleton.
-        - Repositories (`IPatronRepository`, `ILoanRepository`) and services (`ILoanService`, `IPatronService`) are registered as scoped.
-        - `JsonData` and `ConsoleApp` are registered as singletons.
+        - Registers the repositories: JsonPatronRepository and JsonLoanRepository.
+        - Registers the services: LoanService and PatronService.
+        - Registers the JsonData class as a singleton.
+        - Registers the ConsoleApp class as a singleton.
     
     3. **Service Provider**:
-        - It builds the service provider from the registered services.
-        - It retrieves the `ConsoleApp` service and runs it asynchronously.
-    
-    Here's a simplified version of the code:
+        - Builds the service provider from the registered services.
+        - Retrieves the `ConsoleApp` service and runs it asynchronously.
+
+    This setup ensures that all dependencies are properly injected and configured before the application starts running.
     ```
 
-    ```csharp
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Configuration;
-    using Library.Infrastructure.Data;
-    using Library.ApplicationCore;
-    
-    var services = new ServiceCollection();
-    
-    var configuration = new ConfigurationBuilder()
-        .SetBasePath(Directory.GetCurrentDirectory())
-        .AddJsonFile("appSettings.json")
-        .Build();
-    
-    services.AddSingleton<IConfiguration>(configuration);
-    services.AddScoped<IPatronRepository, JsonPatronRepository>();
-    services.AddScoped<ILoanRepository, JsonLoanRepository>();
-    services.AddScoped<ILoanService, LoanService>();
-    services.AddScoped<IPatronService, PatronService>();
-    services.AddSingleton<JsonData>();
-    services.AddSingleton<ConsoleApp>();
-    
-    var serviceProvider = services.BuildServiceProvider();
-    
-    var consoleApp = serviceProvider.GetRequiredService<ConsoleApp>();
-    consoleApp.Run().Wait();
-    ```
+1. Expand the Library.Infrastructure project folder.
 
-    ```markdown
-    This file is crucial for initializing and running the console application with the necessary dependencies.
-    ```
+1. Add the `JsonData.cs`, `JsonLoanRepository.cs`, and `JsonPatronRepository.cs` files to the Chat context.
+
+    Use the **Attach Context** button to add the files to the Chat context. You can also use a drag-and-drop operation to add the files to the Chat context.
 
 1. Enter a prompt in the Chat view that generates an explanation of the data access classes.
 
     For example, enter the following prompt in the Chat view:
 
     ```plaintext
-    @workspace #file:JsonData.cs #file:JsonLoanRepository.cs #file:JsonPatronRepository.cs Explain how the data access classes work
+    @workspace /explain Explain how the data access classes work
     ```
 
 1. Take a couple minutes to review the response.
@@ -231,47 +158,19 @@ Use the following steps to complete this section of the exercise:
     You should see a response similar to the following description:
 
     ```markdown
-    The data access classes in your workspace, specifically `JsonData`, `JsonLoanRepository`, and `JsonPatronRepository`, work together to manage and access data stored in JSON files. Here's an overview of how they function:
+    The `JsonData` class in `JsonData.cs` is responsible for managing the loading and saving of data from JSON files. It handles various entities such as `Author`, `Book`, `BookItem`, Patron`, and `Loan`. The class uses the `IConfiguration` interface to read file paths from the configuration settings, ensuring that the correct JSON files are loaded.
     
-    ### `JsonData`
+    The constructor of the `JsonData` class initializes the file paths for each entity by reading from the configuration section "JsonPaths". If the paths are not specified in the configuration, it defaults to specific paths within a "Json" directory.
     
-    The `JsonData` class is responsible for loading and managing data from JSON files. It uses paths specified in the configuration to locate these files. The class has properties to hold lists of various entities like `Authors`, `Books`, `BookItems`, `Patrons`, and `Loans`.
+    The `EnsureDataLoaded` method checks if the data is already loaded and, if not, calls the `LoadData` method to load the data from the JSON files. The `LoadData` method reads the JSON files and deserializes them into the respective lists of entities.
     
-    - **Constructor**: Initializes file paths from the configuration.
-    - **EnsureDataLoaded**: Ensures that data is loaded into memory.
-    - **LoadData**: Loads data from JSON files into the respective properties.
-    - **GetPopulatedPatron**: Populates a `Patron` object with its associated `Loans`.
+    The `SaveLoans` and `SavePatrons` methods handle saving the loan and patron data back to the JSON files. These methods ensure that only a subset of properties is saved, maintaining data integrity and consistency.
     
-    ### `JsonLoanRepository`
+    The class also provides methods to populate entities with related data. For example, `GetPopulatedPatrons` and `GetPopulatedPatron` methods populate patron entities with their associated loans. Similarly, `GetPopulatedLoan` and `GetPopulatedBookItem` methods populate loan and book item entities with their related data.
     
-    The `JsonLoanRepository` class implements the `ILoanRepository` interface and uses `JsonData` to manage loan data.
+    The `LoadJson` and `SaveJson` methods are utility methods for reading from and writing to JSON files. They use the `JsonSerializer` class to handle the serialization and deserialization processes.
     
-    - **Constructor**: Accepts a `JsonData` instance.
-    - **GetLoan**: Retrieves a loan by its ID, ensuring data is loaded first.
-    - **UpdateLoan**: Updates an existing loan and saves the changes back to the JSON file.
-    
-    ### `JsonPatronRepository`
-    
-    The `JsonPatronRepository` class implements the `IPatronRepository` interface and uses `JsonData` to manage patron data.
-    
-    - **Constructor**: Accepts a `JsonData` instance.
-    - **GetPatron**: Retrieves a patron by its ID, ensuring data is loaded first.
-    - **SearchPatrons**: Searches for patrons based on a search input.
-    - **UpdatePatron**: Updates an existing patron.
-    
-    ### Example Usage
-    
-    - **Loading Data**: When a method like `GetPatron` or `GetLoan` is called, it first ensures that data is loaded by calling `EnsureDataLoaded` on the `JsonData` instance.
-    - **Retrieving Data**: The repositories use the loaded data to find and return specific entities.
-    - **Updating Data**: When updating, the repositories modify the in-memory data and then save it back to the JSON files.
-    
-    ### Code Links
-    
-    - `JsonData`
-    - `JsonLoanRepository`
-    - `JsonPatronRepository`
-    
-    This setup allows for a clear separation of concerns, with `JsonData` handling the low-level data loading and saving, while the repositories provide higher-level data access methods.
+    Overall, the `JsonData` class serves as a central point for managing the persistence of data in JSON format, ensuring that the application can load, save, and manipulate data efficiently.
     ```
 
 1. Take a couple minutes to examine the JSON data files that are used to simulate library records.
@@ -359,9 +258,14 @@ Use the following steps to complete this section of the exercise:
 
 1. In Visual Studio Code, open the Source Control view.
 
-1. Select **Publish to GitHub**, and then select **Publish to GitHub private repository**.
+1. Select **Publish to GitHub**.
 
-    Accept the default name for the repository: AccelerateDevGitHubCopilot.
+1. Accept the default name for the repository (AccelerateDevGitHubCopilotSelect) and select **Publish to GitHub private repository**.
+
+    > [!NOTE]
+    > If you're not signed in to GitHub in Visual Studio Code, you'll be prompted to sign in. Once you're signed in, authorize Visual Studio Code with the requested permissions.
+
+1. In the Source Control view, enter a commit message, such as "Initial commit", and then select **Publish Branch**.
 
 1. Notice that Visual Studio Code displays status messages during the publish process.
 
@@ -416,6 +320,8 @@ Use the following steps to complete this section of the exercise:
 
 1. Open the Chat view.
 
+1. Use drag-and-drop operations to add files to the Chat view context.
+
 1. To generate project documentation for your README file, enter the following prompt:
 
     ```plaintext
@@ -436,62 +342,102 @@ Use the following steps to complete this section of the exercise:
     # Library App
     
     ## Description
-    Library App is a console application designed to manage library operations such as book loans, patron management, and inventory tracking. It is built using .NET and follows a modular architecture with separate projects for core application logic, infrastructure, and console interface.
+    Library App is a console-based application for managing library operations such as patron management, book loans, and membership renewals. It uses a JSON-based data storage system and provides various services to handle library functionalities.
     
     ## Project Structure
-    - `AccelerateDevGitHubCopilot.sln` - Solution file
-    - `README.md` - Project documentation
-    - `src/`
+    - AccelerateDevGitHubCopilot.sln
+    - README.md
+    - src
       - `Library.ApplicationCore/`
-        - `Entities/` - Core entities like `Book`
-        - `Enums/` - Enumerations used across the application
-        - `Interfaces/` - Interfaces for services and repositories
-        - `Library.ApplicationCore.csproj` - Project file for Application Core
-        - `Services/` - Core services like `LoanService`
+        - `Entities/`
+          - `Author.cs`
+          - `Book.cs`
+          - `BookItem.cs`
+          - `Loan.cs`
+          - `Patron.cs`
+        - `Enums/`
+          - `LoanExtensionStatus.cs`
+          - `LoanReturnStatus.cs`
+          - `MembershipRenewalStatus.cs`
+        - `Interfaces/`
+          - `IPatronRepository.cs`
+          - `IPatronService.cs`
+          - `ILoanRepository.cs`
+          - `ILoanService.cs`
+        - `Library.ApplicationCore.csproj`
+        - `Services/`
+          - `PatronService.cs`
+          - `LoanService.cs`
       - `Library.Console/`
-        - `appSettings.json` - Configuration file
-        - `CommonActions.cs` - Common actions for the console app
-        - `ConsoleApp.cs` - Main console application class
-        - `ConsoleState.cs` - State management for the console app
-        - `Json/` - JSON files for configuration
-        - `Library.Console.csproj` - Project file for Console application
-        - `Program.cs` - Entry point for the console application
+        - `appSettings.json`
+        - `CommonActions.cs`
+        - `ConsoleApp.cs`
+        - `ConsoleState.cs`
+        - `Library.Console.csproj`
+        - `Program.cs`
       - `Library.Infrastructure/`
-        - `Data/` - Data access implementations
-        - `Library.Infrastructure.csproj` - Project file for Infrastructure
-    - `tests/`
+        - `Data/`
+          - `JsonData.cs`
+          - `JsonLoanRepository.cs`
+          - `JsonPatronRepository.cs`
+        - `Library.Infrastructure.csproj`
+    - tests
       - `UnitTests/`
-        - `ApplicationCore/` - Unit tests for Application Core
+        - `ApplicationCore/`
+          - `LoanService/`
+            - `ReturnLoan.cs`
+            - `ExtendLoan.cs`
+          - `PatronService/`
+            - `RenewMembership.cs`
+        - `UnitTests.csproj`
     
     ## Key Classes and Interfaces
-    - **Library.ApplicationCore**
-      - `Entities.Book`: Represents a book in the library.
-      - `Interfaces.ILoanService`: Interface for loan service operations.
-      - `Interfaces.IPatronService`: Interface for patron service operations.
-      - `Interfaces.IPatronRepository`: Interface for patron repository operations.
-      - `Interfaces.ILoanRepository`: Interface for loan repository operations.
-    - **Library.Console**
-      - `ConsoleApp`: Main class for the console application.
-      - `Program`: Entry point of the console application.
-    - **Library.Infrastructure**
-      - `Data`: Contains data access implementations.
-
+    - **Entities**
+      - **Author**: Represents an author with properties like `Id` and `Name`.
+      - **Book**: Represents a book with properties like `Id`, `Title`, `AuthorId`, `Genre`, `ImageName`, and `ISBN`.
+      - **BookItem**: Represents a specific copy of a book with properties like `Id`, `BookId`, `AcquisitionDate`, and `Condition`.
+      - **Loan**: Represents a loan with properties like `Id`, `BookItemId`, `PatronId`, `LoanDate`, `DueDate`, and `ReturnDate`.
+      - **Patron**: Represents a library patron with properties like `Id`, `Name`, `MembershipStart`, `MembershipEnd`, and `Loans`.
+    
+    - **Enums**
+      - **LoanExtensionStatus**: Enum for loan extension statuses.
+      - **LoanReturnStatus**: Enum for loan return statuses.
+      - **MembershipRenewalStatus**: Enum for membership renewal statuses.
+    
+    - **Interfaces**
+      - **IPatronRepository**: Interface for patron repository with methods like `GetPatron`, `SearchPatrons`, and `UpdatePatron`.
+      - **IPatronService**: Interface for patron service with method `RenewMembership`.
+      - **ILoanRepository**: Interface for loan repository with methods like `GetLoan` and `UpdateLoan`.
+      - **ILoanService**: Interface for loan service with methods like `ReturnLoan` and `ExtendLoan`.
+    
+    - **Services**
+      - **PatronService**: Implements `IPatronService` to handle patron-related operations.
+      - **LoanService**: Implements `ILoanService` to handle loan-related operations.
+    
+    - **Console**
+      - **ConsoleApp**: Main console application class that handles user interactions and application flow.
+      - **ConsoleState**: Enum for different states of the console application.
+      - **CommonActions**: Enum for common actions in the console application.
+    
+    - **Infrastructure**
+      - **JsonData**: Handles loading and saving data to JSON files.
+      - **JsonLoanRepository**: Implements `ILoanRepository` to manage loan data.
+      - **JsonPatronRepository**: Implements `IPatronRepository` to manage patron data.
+    
     ## Usage
-    To run the console application, navigate to the `src/Library.Console` directory and execute the following command:
-    ```
-
-    ```sh
-    dotnet run
-    ```
-
-    ```markdown
+    1. Clone the repository.
+    2. Open the solution file AccelerateDevGitHubCopilot.sln in Visual Studio.
+    3. Build the solution to restore dependencies.
+    4. Run the `Library.Console` project to start the console application.
+    5. Follow the on-screen instructions to search for patrons, view patron details, extend loans, return books, and renew memberships.
+    
     ## License
     This project is licensed under the MIT License.
     ```
 
-1. Save the updated README.md file.
+1. Adjust the formatting manually if needed, and then save the updated README.md file.
 
-1. Open the Source Control view.
+1. Open Visual Studio Code's Source Control view.
 
 1. To have GitHub Copilot generate a commit message, select the icon on the right side of the message box.
 

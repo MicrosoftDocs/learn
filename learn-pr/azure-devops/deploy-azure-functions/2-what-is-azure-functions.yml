@@ -2,6 +2,8 @@
 uid: learn.azdo.deploy-azure-functions.2-what-is-azure-functions
 title: What is Azure Functions?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure Functions?
   description: Understand the benefits of Azure Functions and when to use them.
   ms.date: 06/19/2023
@@ -47,3 +49,4 @@ quiz:
     - content: "Receiving a carefully filled-out form via fax machine."
       isCorrect: true
       explanation: "At this time, incoming fax messages aren't directly supported. However, there's no reason you couldn't wire up fax software to another trigger method."
+

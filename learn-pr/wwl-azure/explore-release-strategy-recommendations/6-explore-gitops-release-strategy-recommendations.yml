@@ -2,6 +2,8 @@
 uid: learn.wwl.explore-release-strategy-recommendations.explore-gitops-release-strategy-recommendations
 title: Explore GitOps release strategy and recommendations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore GitOps release strategy and recommendations
   description: "Explore GitOps release strategy and recommendations"
   ms.date: 05/21/2024

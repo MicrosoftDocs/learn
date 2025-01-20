@@ -15,13 +15,13 @@ Containers are an excellent choice when developing software based on microservic
 
 :::image type="content" source="../media/1-container-benefits.svg" alt-text="Diagram that shows three benefits of containerization; efficiency, isolation, and scalability." border="false":::
 
-The standard container management runtime focuses on managing individual containers. If you want to scale a complex system with multiple containers working together, this scenario becomes challenging. Consider the following aspects:
+The standard container-management runtime focuses on managing individual containers. If you want to scale a complex system with multiple containers working together, this scenario becomes challenging. Consider the following aspects:
 
 - Configuring and maintaining load balancing
 - Network connectivity
 - Orchestrating the deployment process
 
-You use containerized instances to quickly deploy into new customer regions, and scale resources as needed to meet customer demands. To simplify developing, deploying, and managing these complex containerized applications, you use a container orchestration platform, such as Kubernetes.
+You use containerized instances to quickly deploy into new customer regions and scale resources as needed to meet customer demands. To simplify developing, deploying, and managing these complex containerized applications, you use a container orchestration platform, such as Kubernetes.
 
 ## Learning objectives
 

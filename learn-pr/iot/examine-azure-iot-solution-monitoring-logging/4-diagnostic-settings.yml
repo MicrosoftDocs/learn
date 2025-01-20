@@ -2,6 +2,8 @@
 uid: learn.wwl.examine-azure-iot-solution-monitoring-logging.diagnostic-settings
 title: Examine diagnostic settings for Azure IoT Hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine Diagnostic settings for Azure IoT Hub
   description: "Examine diagnostic settings for Azure IoT Hub"
   ms.date: 01/08/2024

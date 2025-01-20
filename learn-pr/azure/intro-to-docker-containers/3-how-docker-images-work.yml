@@ -3,6 +3,8 @@ uid: learn.intro-to-docker-containers.3-how-docker-images-work
 title: How Docker images work
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Docker images work
   description: In this unit, we discuss how we build Docker images and explore basic image management.
   ms.date: 10/09/2024
@@ -52,3 +54,4 @@ quiz:
     - content: "A container image is a read-only portable package that contains software."
       isCorrect: false
       explanation: "A container image is an immutable package that contains all the application code, system packages, binaries, libraries, configuration files, and the operating system running in the container."
+

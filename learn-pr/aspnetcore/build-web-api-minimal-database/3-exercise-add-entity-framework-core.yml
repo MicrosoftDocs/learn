@@ -5,9 +5,8 @@ metadata:
   title: Exercise - Add EF Core to minimal API
   description: Add EF Core to your minimal API.
   ms.date: 02/01/2023
-  author: jongalloway
-  ms.author: chnoring
-  ms.manager: markl
+  author: CamSoper
+  ms.author: casoper
   ms.custom:
     - team=nextgen
     - devx-track-dotnet

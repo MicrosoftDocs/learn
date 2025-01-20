@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-blob-storage-lifecycle
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage the Azure Blob storage lifecycle
   description: "Learn how to manage data availability throughout the Azure Blob storage lifecycle."
   ms.date: 07/12/2024

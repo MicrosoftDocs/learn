@@ -2,12 +2,14 @@
 uid: learn.azure.characterize-dataset-azure-data-explorer.exercise-query-trends
 title: 'Exercise: Use queries to explore trends'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: exercise
   description: "Exercise: Use queries to explore trends."
   ms.date: 04/02/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 5
 content: |

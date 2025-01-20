@@ -2,6 +2,8 @@
 uid: learn.oxford.deploy-prebuilt-module-edge-device.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: In this unit, we help the learner to decide if the product will meet their needs by explaining when to use the product and how it works.
   ms.date: 11/27/2023
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 3 # dummy number at present
 content: |
   [!include[](includes/1-introduction.md)]
+

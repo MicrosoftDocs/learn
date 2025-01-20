@@ -2,6 +2,8 @@
 uid: learn.wwl.secure-mysql.understand-encryption-mysql
 title: Understand encryption in MySQL
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand encryption in MySQL
   description: "Understand encryption in MySQL"
   ms.date: 11/08/2022

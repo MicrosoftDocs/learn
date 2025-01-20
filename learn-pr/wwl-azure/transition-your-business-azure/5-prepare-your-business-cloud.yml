@@ -2,6 +2,8 @@
 uid: learn.wwl.transition-your-business-azure.prepare-your-business-cloud
 title: Prepare your business for the cloud
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Prepare your business for the cloud
   description: "Prepare your business for the cloud"
   ms.date: 09/25/2024

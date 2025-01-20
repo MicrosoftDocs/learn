@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-private-5g-core.key-features
 title: Key features
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Key features
   description: "Lists the key features of Azure Private 5G Core"
   ms.date: 05/16/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-key-features.md)]
+

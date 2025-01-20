@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn-pr.azure.manage-azure-stack-hci-storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan and implement Azure Stack HCI storage
   description: Microsoft Azure Stack HCI provides highly resilient and performant software-defined storage. Learn how to plan and implement this storage.
   manager: femila

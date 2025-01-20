@@ -2,11 +2,13 @@
 uid: learn.wwl.design-solutions-security-operations.knowledge-check
 title: Knowledge check - Design solutions for security operations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check - Design solutions for security operations
   description: "Knowledge check for module on the topic: design solutions for security operations."
   ms.date: 09/26/2024
-  author: hrasheed-msft
-  ms.author: hrasheed
+  author: ceperezb
+  ms.author: ceperezb
   ms.topic: unit
 durationInMinutes: 3
 ###########################################################################
@@ -85,3 +87,4 @@ quiz:
         - content: "To map detections and responses to specific adversary tactics and techniques."
           isCorrect: true
           explanation: "The MITRE ATT&CK framework offers a common language used by security teams to describe attacker behavior, test security defenses, and understand whether the implemented security measures are effective at stopping or identifying attacks in real-time."
+

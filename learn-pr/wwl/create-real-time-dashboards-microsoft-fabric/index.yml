@@ -1,30 +1,29 @@
 ### YamlMime:Module
 uid: learn.wwl.create-real-time-dashboards-microsoft-fabric
 metadata:
-  title: Create Real-Time Dashboards with Microsoft Fabric
-  description: "Real-Time Dashboards can fetch data from various sources, provide visual representations, and update automatically. This dashboard should be easy to use, accessible, and secure. It should also allow for data exploration, filtering, and drill-down capabilities. This scenario is common in many industries where real-time data analysis is crucial for decision-making."
-  ms.date: 05/29/2024
+  title: Create real-time dashboards with Microsoft Fabric
+  description: "Real-time Dashboard is a Real-Time Intelligence capability in Microsoft Fabric that you can use to create real-time data visualizations."
+  ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure
   ai-usage: human-only
 title: Create Real-Time Dashboards with Microsoft Fabric
-summary: In this module, you’ll explore the user-friendly Real-Time Dashboard in Microsoft Fabric. This dashboard offers an auto-refresh feature for data, supports parameterization, and allows for a multi-page dashboarding experience without requiring any coding. It also integrates with Copilot for managing underlying query sets. This creates a seamless and efficient user experience.
+summary: Real-time Dashboard is a Real-Time Intelligence capability in Microsoft Fabric that you can use to create real-time data visualizations.
 abstract: |
   By the end of this module, you're able to:
 
-  -   Create a Real-Time Dashboard in Microsoft Fabric.
+  -   Create a real-time dashboard in Microsoft Fabric.
 
-  -   Understand some of its advanced features.
+  -   Use advanced feature of real-time dashboards.
 
-  -   Apply some best practices for effective use.
-
-  -   Have hands-on experience in a lab exercise.
-prerequisites: '- Familiarity with Microsoft Fabric.'
-iconUrl: /training/achievements/generic-badge.svg
+  -   Apply best practices for real-time dashboards.
+prerequisites: Before starting this module, you should be familiar with Real-Time Intelligence capabilities in Microsoft Fabric.
+iconUrl: /training/achievements/create-real-time-dashboards-microsoft-fabric.svg
 levels:
 - beginner
 roles:

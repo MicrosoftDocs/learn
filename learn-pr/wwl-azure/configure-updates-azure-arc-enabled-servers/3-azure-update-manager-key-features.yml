@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-updates-azure-arc-enabled-servers.azure-update-manager-key-features
 title: Azure Update Manager key features
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Update Manager key features
   description: "Azure Update Manager key features"
   ms.date: 06/13/2024

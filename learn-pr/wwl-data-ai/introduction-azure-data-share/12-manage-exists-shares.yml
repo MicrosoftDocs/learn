@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-data-share.manage-existing-shares
 title: Manage existing Shares
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage existing Shares
   description: "Manage existing Shares"
   ms.date: 01/05/2022

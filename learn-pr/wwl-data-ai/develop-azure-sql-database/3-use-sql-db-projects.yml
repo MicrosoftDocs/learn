@@ -2,6 +2,8 @@
 uid: learn-wwl.develop-azure-sql-database.use-sql-db-projects
 title: Use SQL Database Projects
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use SQL Database Projects
   description: "Learn how to use SQL Database Projects."
   ms.date: 9/27/2024

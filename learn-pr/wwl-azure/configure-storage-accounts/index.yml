@@ -1,12 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-storage-accounts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure storage accounts
   description: "Learn how to configure storage accounts, including replication and endpoints."
-  ms.date: 08/06/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure-storage

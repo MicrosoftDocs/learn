@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.terraform-introduction-to-infrastructure-as-code
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: introduction
   title: Introduction to infrastructure as code using Terraform
   description: Learn the fundamentals of how Terraform can help you adopt infrastructure as code to quickly and confidently scale your cloud deployments.
@@ -46,3 +48,4 @@ units:
 - learn.azure.terraform-introduction-to-infrastructure-as-code.summary
 badge:
   uid: learn.azure.terraform-introduction-to-infrastructure-as-code.badge
+

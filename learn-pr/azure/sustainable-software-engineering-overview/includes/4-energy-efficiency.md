@@ -3,7 +3,7 @@ _This video's content is still valid, but the principle numbers may differ due t
 
 ## Electricity and carbon
 
-Most people think electricity is clean. When we plug something into a wall, our hands don't become dirty, and our laptops don't need exhaust pipes. However, the truth is that most electricity is produced through burning fossil fuel ([usually coal](https://ourworldindata.org/grapher/world-electricity-by-source)) and energy supply is the [single most significant](https://www.eea.europa.eu/data-and-maps/daviz/change-of-co2-eq-emissions-2#tab-chart_4) cause of carbon emission.
+Most people think electricity is clean. When we plug something into a wall, our hands don't become dirty, and our laptops don't need exhaust pipes. However, the truth is that most electricity is produced through burning fossil fuel ([usually coal](https://ourworldindata.org/grapher/electricity-prod-source-stacked)) and energy supply is the [single most significant](https://www.eea.europa.eu/data-and-maps/daviz/change-of-co2-eq-emissions-2#tab-chart_4) cause of carbon emission.
 
 Because we can draw a direct line from electricity to carbon emissions, we can consider electricity to be one of the proxies for carbon.
 
@@ -39,13 +39,13 @@ A common way of referring to energy consumption is _Power over a unit of Time, s
 
 Utilization measures how much of a computer's resources are being used, which is typically represented as a percentage. An idle computer has a low utilization percentage and isn't being utilized. A computer running at its maximum capacity has a high percentage and is being fully utilized.
 
-[Energy proportionality](https://en.wikipedia.org/wiki/Energy_proportional_computing) is a measure of the relationship between power consumed in a computer system and the rate at which useful work is done (its utilization). If the overall power consumption is proportional to the computer's utilization, then it's energy proportional.
+[Energy proportionality](https://en.wikipedia.org/wiki/Energy_proportional_computing) is a measure of the relationship between power consumed in a computer system, and the rate at which useful work is done (its utilization). If the overall power consumption is proportional to the computer's utilization, then it's energy proportional.
 
-In an energy-proportional system, the energy efficiency is a constant; no matter the utilization, the energy efficiency remains the same. However, the energy efficiency of hardware isn't constant. It varies based on context. Due to the complex interactions of many different hardware device components, it can be nonlinear, which means that the relationship between power and utilization isn't proportional.
+In an energy-proportional system, the energy efficiency is a constant; no matter the utilization, the energy efficiency remains the same. However, the energy efficiency of hardware isn't constant. It varies based on context. Due to the complex interactions of many different hardware device components, it can be nonlinear. This means that the relationship between power and utilization isn't proportional.
 
 ![Diagram showing power versus utilization.](../media/7-energy-proportionality-1.svg)
 
-At 0% utilization, the computer still draws `100 W`; at 50% utilization, it draws `180 W`, and at 100% utilization, it draws `200 W`. The relationship between power consumption and utilization isn't linear, and it doesn't cross the origin.
+At 0% utilization, the computer still draws `100 W`. At 50% utilization, it draws `180 W`. At 100% utilization, it draws `200 W`. The relationship between power consumption and utilization isn't linear, and it doesn't cross the origin.
 
 Because of this relationship, **the more you utilize a computer, the more efficient it becomes at converting electricity to useful computing operations**. Running your work on as few servers as possible with the highest utilization rate maximizes their energy efficiency.
 
@@ -53,7 +53,7 @@ Because of this relationship, **the more you utilize a computer, the more effici
 
 There are various reasons for this lack of energy proportionality, one of which is static power draw.
 
-An idle computer, even at zero percent utilization, still draws electricity. This static power draw varies by configuration and hardware components, but all components have some static power draw. This potential power draw is one of the reasons that PCs, laptops, and mobile devices have power-save modes available. If the device is idle, it eventually triggers a hibernation mode, which puts the disk and screen to sleep, or even changes the CPU frequency. These power-save modes save on electricity but have other trade-offs, such as a slower restart when the device wakes up.
+An idle computer, even at zero percent utilization, still draws electricity. This static power draw varies by configuration and hardware components, but all components have some static power draw. This potential power draw is one of the reasons that PCs, laptops, and mobile devices have power-save modes available. If the device is idle, it eventually triggers a hibernation mode. This puts the disk and screen to sleep, or even changes the CPU frequency. These power-save modes save on electricity but have other trade-offs, such as a slower restart when the device wakes up.
 
 Servers aren't typically configured for aggressive or even minimal power-saving. Many server use cases demand full capacity as quickly as possible in response to rapidly changing demands. This scenario can leave many servers in idle mode during low-demand periods. An idle server has a cost both from embedded carbon and its inefficient utilization.
 

@@ -2,6 +2,8 @@
 uid: learn.wwl.fine-tune-azure-databricks.exercise
 title: Exercise - Fine-tune an Azure OpenAI model
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Fine-tune an Azure OpenAI model
   description: "Exercise - Fine-tune an Azure OpenAI model"
   ms.date: 08/20/2024

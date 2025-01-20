@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-manage-active-directory-certificate-services.manage-certificate-trusts
 title: Manage certificate trusts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage certificate trusts
   description: "Manage certificate trusts"
   ms.date: 06/11/2024

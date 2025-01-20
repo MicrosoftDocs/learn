@@ -2,6 +2,8 @@
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.identify-performance-events
 title: Exercise - Identify wind farm performance events and take action
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Identify wind farm performance events and take action
   description: Learn how to identify wind farm performance events and take action in your project.
   ms.date: 09/10/2024

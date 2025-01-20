@@ -1,6 +1,6 @@
-In the last unit, you created an Azure Resource Manager (ARM) template and added an Azure storage account to it. You might have noticed that there's a problem with your template. The storage account name is hardcoded. You can only use this template to deploy the same storage account every time. To deploy a storage account with a different name, you'd have to create a new template, which isn't a practical way to automate your deployments. The storage account SKU is also hardcoded, which means you can't vary the type of storage account for different environments. Recall that in our scenario, each deployment might have a different type of storage account. You can make your template more reusable by adding a parameter for the storage account SKU.
+In the last unit, you created an Azure Resource Manager (ARM) template and added an Azure storage account to it. You might notice that there's a problem with your template. The storage account name is hardcoded. You can only use this template to deploy the same storage account every time. To deploy a storage account with a different name, you have to create a new template, which isn't a practical way to automate your deployments. The storage account SKU is also hardcoded, which means you can't vary the type of storage account for different environments. Recall that in our scenario, each deployment might have a different type of storage account. You can make your template more reusable by adding a parameter for the storage account SKU.
 
-In this unit, you'll learn about the *parameters* and *outputs* sections of the template.
+In this unit, you learn about the *parameters* and *outputs* sections of the template.
 
 ## ARM-template parameters
 
@@ -69,7 +69,7 @@ Here's an example of a template file with a parameter for the storage-account SK
 }
 ```
 
-Then, use the parameter in the resource definition. The syntax is ```[parameters('name of the parameter')]```. You'll use the ```parameters``` function. You'll learn more about functions in the next module.
+Then, use the parameter in the resource definition. The syntax is ```[parameters('name of the parameter')]```. Then, when you deploy you use the ```parameters``` function. In the next module, you learn more about functions.
 
 ```json
 "resources": [
@@ -115,7 +115,7 @@ New-AzResourceGroupDeployment `
 
 ## ARM template outputs
 
-In your ARM template's outputs section, you can specify values that will be returned after a successful deployment. Here are the elements that make up the outputs section.
+In your ARM template's outputs section, you can specify the values that are returned after a successful deployment. Here are the elements that make up the outputs section.
 
 ```json
 "outputs": {
@@ -136,7 +136,7 @@ In your ARM template's outputs section, you can specify values that will be retu
 | **output-name** | Must be a valid JavaScript identifier. |
 | **condition** | (Optional) A Boolean value that indicates whether this output value is returned. When true, the value is included in the output for the deployment. When false, the output value is skipped for this deployment. When not specified, the default value is true. |
 | **type** | The type of the output value. |
-| **value** | (Optional) A template language expression that's evaluated and returned as an output value. |
+| **value** | (Optional) A template language expression to be evaluated and returned as an output value. |
 | **copy** | (Optional) Copy is used to return more than one value for an output. |
 
 ### Use outputs in an ARM template
@@ -156,4 +156,4 @@ Notice the ```reference``` part of the expression. This function gets the runtim
 
 ## Deploy an ARM template again
 
-Recall that ARM templates are *idempotent*, which means you can deploy the template to the same environment again, and if nothing was changed in the template, nothing will change in the environment. If a change was made to the template (for example, you changed a parameter value), only that change will be deployed. Your template can contain all of the resources you need for your Azure solution, and you can safely execute a template again. Resources will be created only if they didn't already exist and updated only if there's a change.
+Recall that ARM templates are *idempotent*, which means you can deploy the template to the same environment again, and if nothing changes in the template, nothing changes in the environment. If a change is made to the template (for example, you change a parameter value), only that change is deployed. Your template can contain all of the resources you need for your Azure solution, and you can safely execute a template again. Resources are created only if they don't already exist, and updated only if there's a change.

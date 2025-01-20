@@ -1,12 +1,14 @@
 ### YamlMime:Module
 uid: learn.create-dashboards-azure-data-explorer
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Create dashboards in Azure Data Explorer
   description: "Learn how to create dashboards in Azure Data Explorer. You add tiles and visualizations, and then share the dashboard with others."
   ms.date: 01/19/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: module
   ms.service: azure-data-explorer
 title: Create dashboards in Azure Data Explorer
@@ -48,3 +50,4 @@ units:
 - learn.create-dashboards-azure-data-explorer.summary
 badge:
   uid: learn.create-dashboards-azure-data-explorer.badge
+

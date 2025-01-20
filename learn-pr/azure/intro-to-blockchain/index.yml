@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure-intro-to-blockchain
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to blockchain on Azure
   description: Introduction to blockchain on Azure. See how blockchain allows business partners to trust each other's data without a central authority. You also learn a bit about how blockchain works. The goal is to help you decide if blockchain is a good choice for your scenario.
   ms.date: 07/09/2024
@@ -40,3 +42,4 @@ units:
 - learn.azure-intro-to-blockchain.summary
 badge:
   uid: learn.azure-intro-to-blockchain.badge
+

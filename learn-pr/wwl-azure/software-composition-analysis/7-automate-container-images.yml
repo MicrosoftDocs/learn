@@ -2,6 +2,8 @@
 uid: learn.wwl.software-composition-analysis.automate-container-images
 title: Automate container scanning, including container images
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate container scanning, including container images
   description: "Automate container scanning, including container images"
   ms.date: 05/13/2024

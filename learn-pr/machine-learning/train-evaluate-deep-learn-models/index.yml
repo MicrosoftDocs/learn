@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.train-evaluate-deep-learn-models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Train and evaluate deep learning models
   description: "Train and evaluate deep learning models"
   ms.collection: TBD
@@ -42,3 +44,4 @@ units:
 - learn.wwl.train-evaluate-deep-learn-models.summary
 badge:
   uid: learn.wwl.train-evaluate-deep-learn-models.badge
+

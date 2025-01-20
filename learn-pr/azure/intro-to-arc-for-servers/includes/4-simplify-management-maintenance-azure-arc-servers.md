@@ -48,4 +48,4 @@ Azure Arc-enabled servers offers advantages when it comes to the onboarding proc
 
 In addition, integration with Azure Resource Manager provides support for the resource context access to Log Analytics data. Resource context allows you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because each Azure Arc-enabled server exists as an Azure resource, you can control access to its Log Analytics logs by relying on Azure role-based access control (Azure RBAC) permissions assigned to that resource.
 
-Choose the best response for each of the following questions, then select **Check your answers**.
+Choose the best response for each of the following questions.

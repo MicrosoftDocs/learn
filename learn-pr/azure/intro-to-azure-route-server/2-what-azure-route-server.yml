@@ -2,6 +2,8 @@
 uid: learn.azure.intro-to-azure-route-server.2-what-azure-route-server
 title: What is Azure Route Server?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure Route Server?
   description: This unit provides an overview of Azure Route Server.
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-azure-route-server.md)]
+

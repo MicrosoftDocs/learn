@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-app-with-azure-maps.introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   description: Outlines the learning objectives, prerequisites, and the route-finding scenario, for this module.
   ms.date: 08/13/2024
   author: PeterTurcan

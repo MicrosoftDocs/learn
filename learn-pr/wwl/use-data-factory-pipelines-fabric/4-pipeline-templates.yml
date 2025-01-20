@@ -2,6 +2,8 @@
 uid: learn.wwl.use-data-factory-pipelines-fabric.pipeline-templates
 title: Use pipeline templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use pipeline templates
   description: "Use pipeline templates"
   ms.date: 05/08/2024

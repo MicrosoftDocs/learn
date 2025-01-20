@@ -2,6 +2,8 @@
 uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.5-configure-azure-iot-edge-nvidia-embedded-hardware
 title: Exercise - Configure Azure IoT Edge on NVIDIA embedded hardware
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Configure Azure IoT Edge on NVIDIA embedded hardware
   description: Exercise - Configure Azure IoT Edge on NVIDIA embedded hardware.
   author: toolboc

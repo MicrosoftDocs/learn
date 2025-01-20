@@ -2,6 +2,8 @@
 uid: learn.azdo.create-release-pipeline.3-plan-release-pipeline
 title: Plan a release pipeline by using Azure Pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan a release pipeline by using Azure Pipelines
   description: Plan a basic CD pipeline that runs on Azure Pipelines.
   ms.custom: devdivchpfy22, engagement-fy23
@@ -49,3 +51,4 @@ quiz:
       isCorrect: false
       explanation: "A job defines a series of steps and the agent those steps run on. It doesn't schedule stages."
     
+

@@ -103,7 +103,7 @@ Can you guess the output? Visit the [Rust Playground][RustPlay-shadow] to run th
 
 ### Check your knowledge
 
-Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
+Answer the following questions to see what you've learned. Choose one answer for each question.
 
 
 <!-- Links -->

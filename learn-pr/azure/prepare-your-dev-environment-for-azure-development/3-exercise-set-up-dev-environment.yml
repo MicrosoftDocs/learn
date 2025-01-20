@@ -2,9 +2,11 @@
 uid: learn.prepare-azure-dev-environment.3-exercise-set-up-dev-environment
 title: Exercise - Set up your development environment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up your development environment
   description: Exercise - Set up your development environment
-  ms.date: 07/03/2024
+  ms.date: 12/09/2024
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: unit
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-set-up-dev-environment.md)]
+

@@ -2,13 +2,16 @@
 uid: learn.create-dashboards-azure-data-explorer.exercise-cross-filter
 title: "Exercise: Create a cross-filter"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: "Exercise: Create a cross-filter"
   description: "Create a cross-filter, which is a way to select a parameter on a visual in Azure Data Explorer dashboards."
   ms.date: 01/19/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/8-exercise-cross-filter.md)]
+

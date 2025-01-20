@@ -2,6 +2,8 @@
 uid: learn.intro-to-azure-database-for-mysql.1-introduction  
 title: What is Azure Database for MySQL?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction  
   title: What is Azure Database for MySQL?
   description: Azure Database for MySQL is a managed database as a service (DBaaS) offering that can handle mission-critical workloads with predictable performance and dynamic scalability.
@@ -13,3 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.create-first-aks-edge-essentials
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
   description: Deploy AKS Edge Essentials in a single machine K3S cluster with a Linux and Windows node. 
   manager: lizross
@@ -49,3 +51,4 @@ units:
 - learn.create-first-aks-edge-essentials.summary
 badge:
   uid: learn.create-first-aks-edge-essentials.badge
+

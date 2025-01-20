@@ -2,6 +2,8 @@
 uid: learn-wwl.get-started-sql-database-application-development.explain-sql-database-deployment-options
 title: Explain deployment options
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explain deployment options
   description: "Learn to explain the deployment options available."
   ms.date: 10/02/2024

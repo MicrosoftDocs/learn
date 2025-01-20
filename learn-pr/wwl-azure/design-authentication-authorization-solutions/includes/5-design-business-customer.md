@@ -8,7 +8,7 @@ After you set up your Azure AD B2C tenant, you must register your app. You use u
 
 ### Things to know about Azure AD B2C
 
-You've reviewed the B2B features of Microsoft Entra ID and considered how they might be implemented in an identity solution for Tailwind Traders. Let's look at the customer features offered by Azure AD B2C.
+You review the B2B features of Microsoft Entra ID and consider how they might be implemented in an identity solution for Tailwind Traders. Let's look at the customer features offered by Azure AD B2C.
 
 - Azure AD B2C provides secure authentication for your customers by using their preferred identity providers.
 
@@ -40,12 +40,12 @@ Now that you have some basic knowledge about the Microsoft Entra identity soluti
 
 | <!-- Blank --> | Microsoft Entra B2B (business-to-business) | Azure AD B2C (business-to-customer) |
 | --- | --- | --- |
-| **Define your focus** | Tailwind Traders wants to collaborate with business partners from external organizations like suppliers, partners, and vendors. You'll support users as guest users in your directory, and they might or might not have managed IT. | Tailwind Traders wants to engage with customers of their products. You'll manage users in a separate Microsoft Entra directory / tenant. |
-| **Identify your users** | Your users will represent a Tailwind Traders partner company, or be employees of Tailwind Traders. | Your users will be customers of Tailwind Traders who represent themselves. |
-| **Manage user profiles** | Tailwind Traders will manage partner user profiles through access reviews, email verification, or access and blocklists. | Customer users of Tailwind Traders will manage their own profiles. |
-| **Store user information** | You'll manage external users in the same directory as Tailwind Traders employees, but the external users will typically be annotated as guest users. Guest users can be managed the same way as employees, added to the same groups, and so on. | You'll manage external users in the Azure AD B2C directory. They're managed separately from the Tailwind Traders employee and partner directory (if any). |
-| **Enable user discovery and support privacy** | Partner users of Tailwind Traders will be discoverable and they can find other users from their organization. | Customer users of Tailwind Traders will be invisible to other users. Privacy and content will be enforced. |
-| **Work with identity providers** | External users will collaborate by using work accounts, school accounts, any email address, SAML and WS-Fed based identity providers, Gmail, and Facebook. | Consumer users with local app accounts (any email address or user name), various supported social identities, and users with corporate and government-issued identities via SAML/WS-Fed based identity provider federation will access the apps. |
+| **Define your focus** | Tailwind Traders wants to collaborate with business partners from external organizations like suppliers, partners, and vendors. You support users as guest users in your directory, and they might or might not use IT. | Tailwind Traders wants to engage with customers of their products. You manage users in a separate Microsoft Entra directory / tenant. |
+| **Identify your users** | Your users represent a Tailwind Traders partner company, or be employees of Tailwind Traders. | Your users are customers of Tailwind Traders who represent themselves. |
+| **Manage user profiles** | Tailwind Traders manage partner user profiles through access reviews, email verification, or access and blocklists. | Customer users of Tailwind Traders manage their own profiles. |
+| **Store user information** | You manage external users in the same directory as Tailwind Traders employees, but the external users are annotated as guest users. Guest users can be managed the same way as employees, added to the same groups, and so on. | You manage external users in the Azure AD B2C directory. They're managed separately from the Tailwind Traders employee and partner directory (if any). |
+| **Enable user discovery and support privacy** | Partner users of Tailwind Traders are discoverable and they can find other users from their organization. | Customer users of Tailwind Traders are invisible to other users. Privacy and content are enforced. |
+| **Work with identity providers** | External users collaborate by using work accounts, school accounts, any email address, SAML and WS-Fed based identity providers, Gmail, and Facebook. | Consumer users with local app accounts (any email address or user name), various supported social identities, and users with corporate and government-issued identities access the apps. |
 | **Customize UI and support branding** | You expect to use customized UI branding for the host or inviting organization (Tailwind Traders). | You want the branding to be fully customizable per app or organization and not specific to Tailwind Traders. |
 
 ## WoodGrove Groceries tutorial

@@ -2,6 +2,8 @@
 uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory.understand-pipelines
 title: Understand Azure Databricks notebooks and pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Azure Databricks notebooks and pipelines
   description: "Understand Azure Databricks notebooks and pipelines"
   ms.date: 08/29/2023

@@ -28,9 +28,9 @@ While you consider how to use Microsoft Entra access reviews for Tailwind Trader
 
 - Access reviews can also be used for Microsoft Entra roles and Azure Resource roles as defined in Privileged Identity Management (PIM).
 
-### Determine who will conduct the access reviews
+### Determine who conducts the access reviews
 
-Access reviews are only as good as the person doing the reviewing. Selecting good reviewers is critical to your success. The creator of the access review decides who will conduct the review. This setting can't be changed after the review is started. There are three types of reviewers:
+Access reviews are only as good as the person doing the reviewing. Selecting good reviewers is critical to your success. The creator of the access review decides who conducts the review. This setting can't be changed after the review is started. There are three types of reviewers:
 
 - **Resource owners**: The business owners of a resource.
 
@@ -53,6 +53,6 @@ Review the following implementation scenario of an access review plan for Micros
 | **Who are the reviewers** | Dynamics business group program managers |
 | **How will reviewers be notified** | 24 hours before the start of the review, send email to the alias `Dynamics-PMs@tailwind-traders.org`. Include an encouraging custom message to secure reviewer cooperation. |
 | **How long should the review take to complete** | At most, 24 hours, which is 48 hours after the reviewers are first notified. |
-| **Are there automatic actions for these resources** | Yes. Automatic actions include: <br>- Remove access for any user account that has had no interactive sign-in within 90 days. <br>- Remove users from the security group `dynamics-access`. <br> - Perform access review actions for any user accounts that aren't reviewed within the specified time to complete. |
+| **Are there automatic actions for these resources** | Yes. Automatic actions include: <br>- Remove access for any user account that has no interactive sign-in within 90 days. <br>- Remove users from the security group `dynamics-access`. <br> - Perform access review actions for any user accounts that aren't reviewed within the specified time to complete. |
 | **Are there manual actions available to the reviewers** | Yes. Reviewers can approve user account removals before the automated action is completed, as desired. |
 | **How will affected users be notified** | Send email to internal (member) users who are removed, explain their removal, and how they can regain access. 

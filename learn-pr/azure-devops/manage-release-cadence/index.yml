@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.azdo.manage-release-cadence
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage release cadence in Azure Pipelines by using deployment patterns
   description: Choose and implement a deployment pattern that helps you smoothly roll out new application features to your users.
   ms.date: 02/05/2024
@@ -49,3 +51,4 @@ units:
 - learn.azdo.manage-release-cadence.7-summary
 badge:
   uid: learn.azdo.manage-release-cadence.badge
+

@@ -1,6 +1,6 @@
 Before you start fine-tuning a model, you need to have a clear understanding of what fine-tuning is and when you should use it.
 
-When you want to develop a custom copilot with the Azure AI Studio, you can use prompt flow to create a chat application that is integrated with a language model to generate responses. To improve the quality of the responses the model generates, you can try various strategies. The easiest strategy is to apply **prompt engineering**. You can change the way you format your question, but you can also update the **system message** that is sent along with the prompt to the language model.
+When you want to develop a chat application with Azure AI Foundry, you can use prompt flow to create a chat application that is integrated with a language model to generate responses. To improve the quality of the responses the model generates, you can try various strategies. The easiest strategy is to apply **prompt engineering**. You can change the way you format your question, but you can also update the **system message** that is sent along with the prompt to the language model.
 
 Prompt engineering is a quick and easy way to improve *how the model acts*, and *what the model needs to know*. When you want to improve the quality of the model even further, there are two common techniques that are used:
 

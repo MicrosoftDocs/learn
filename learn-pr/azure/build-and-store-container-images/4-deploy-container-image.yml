@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.deploy-image
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy images from Azure Container Registry
   description: Deploy images from Azure Container Registry
   ms.date: 11/09/2023
@@ -13,3 +15,4 @@ title: Exercise - Deploy images from Azure Container Registry
 durationInMinutes: 15
 content: |
   [!include[](includes/4-deploy-image.md)]
+

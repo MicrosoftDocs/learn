@@ -2,6 +2,8 @@
 uid: learn.student-evangelism.altair-azure-sphere-introduction.altair
 title: The Altair 8800
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: The Altair 8800
   description: Introduction to the Altair 8800.
   ms.date: 11/16/2021
@@ -12,3 +14,4 @@ metadata:
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/02-introduction-altair.md)]
+

@@ -2,7 +2,7 @@ You've been asked to write a query that answers the following question:
 
 > In the month of April 2007, what were the top five damage-causing storm events in the state of Virginia?
 
-This solution provides one possible way to construct a query that answers the question.
+The following solution provides one possible way to construct a query that answers the question.
 
 ## Solution process
 

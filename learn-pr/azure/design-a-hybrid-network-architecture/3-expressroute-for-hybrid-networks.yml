@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-hybrid-network-architecture.3-expressroute-for-hybrid-networks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use Azure ExpressRoute for hybrid networks
   description: Explore on-premises hybrid connectivity by using Azure ExpressRoute, get an overview of the components available in ExpressRoute, and walk through a reference architecture that supports this topology.
   ms.date: 02/16/2024
@@ -57,3 +59,4 @@ quiz:
     - content: As a coexisting connection for failover.
       isCorrect: true
       explanation: A VPN gateway can be configured as a failover route if there's a loss of connectivity to an ExpressRoute circuit.
+

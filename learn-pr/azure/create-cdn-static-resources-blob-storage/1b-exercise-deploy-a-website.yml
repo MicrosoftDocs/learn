@@ -2,6 +2,8 @@
 uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.1b-exercise-deploy-a-website
 title: Exercise - Deploy a static website to blob storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy a static website to blob storage
   description: Deploy a static website to blob storage
   ms.date: 01/10/2024
@@ -13,3 +15,4 @@ interactive: bash
 durationInMinutes: 8
 content: |
   [!include[](includes/1b-exercise-deploy-a-website.md)]
+

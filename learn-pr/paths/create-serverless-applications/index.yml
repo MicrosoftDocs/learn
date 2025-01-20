@@ -32,7 +32,6 @@ subjects:
 - app-development
 modules:
 - learn.intro-azure-functions
-- learn.choose-azure-service-to-integrate-and-automate-business-processes
 - learn.create-serverless-logic-with-functions
 - learn.execute-azure-function-with-triggers
 - learn.chain-azure-functions-data-using-input-output-bindings

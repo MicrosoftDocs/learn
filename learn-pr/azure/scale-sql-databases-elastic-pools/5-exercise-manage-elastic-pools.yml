@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-scale-azure-sql-databases-elastic-pools.exercise-manage-elastic-pool
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Manage SQL elastic pools
   description: Use this exercise to learn how to manage SQL elastic pools.
   ms.date: 12/15/2023
@@ -16,3 +18,4 @@ azureSandbox: true
 durationInMinutes: 6
 content: |
   [!include[](includes/5-exercise-manage-elastic-pools.md)]
+

@@ -2,6 +2,8 @@
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers.understand-objective-domains
 title: Understand the objective domains
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 3-Understand the objective domains
   description: "Understand the objective domains"
   ms.date: 08/08/2022

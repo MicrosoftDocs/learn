@@ -2,6 +2,8 @@
 uid: learn.wwl.analyze-devops-continuous-planning-intergration.analyze-continuous-integration
 title: Analyze Continuous Integration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Analyze Continuous Integration
   description: "Analyze Continuous Integration"
   ms.date: 09/20/2020

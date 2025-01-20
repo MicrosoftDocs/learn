@@ -8,7 +8,7 @@
 
 1. After you're signed in, you see a JSON list of the subscriptions associated with this account in the terminal. If you activated the sandbox, the Concierge Subscription should be in this list.
 
-1. Get the subscription ID. The following command lists your subscriptions and their IDs. The subscription ID is the third column. Look for `Concierge Subscription` and copy the third column. It looks something like `cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0`.
+1. Get the subscription ID. The following command lists your subscriptions and their IDs. The subscription ID is the third column. Look for `Concierge Subscription` and copy the third column. It looks something like `aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e`.
 
     ```azurecli
     az account list -o table
@@ -122,24 +122,24 @@ In this exercise, we review and deploy a template that includes two linked templ
 
       ```json
       {- Finished ..
-        "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-3-2020-08-19",
+        "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/providers/Microsoft.Resources/deployments/DeployLocalTemplate-3-2020-08-19",
         "location": null,
         "name": "DeployLocalTemplate-3-2020-08-19",
         "properties": {
-          "correlationId": "f127f689-badf-4063-ad55-dff549e63e48",
+          "correlationId": "aaaa0000-bb11-2222-33cc-444444dddddd",
           "debugSetting": null,
           "dependencies": [
             {
               "dependsOn": [
                 {
-                  "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/storage",
-                  "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b",
+                  "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/providers/Microsoft.Resources/deployments/storage",
+                  "resourceGroup": "learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
                   "resourceName": "storage",
                   "resourceType": "Microsoft.Resources/deployments"
                 }
               ],
-              "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/identity",
-              "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b",
+              "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/providers/Microsoft.Resources/deployments/identity",
+              "resourceGroup": "learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
               "resourceName": "identity",
               "resourceType": "Microsoft.Resources/deployments"
             }
@@ -150,12 +150,12 @@ In this exercise, we review and deploy a template that includes two linked templ
           "onErrorDeployment": null,
           "outputResources": [
             {
-              "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Network/virtualNetworks/vnet-001",
-              "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b"
+              "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/providers/Microsoft.Network/virtualNetworks/vnet-001",
+              "resourceGroup": "learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
             },
             {
-              "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Storage/storageAccounts/store7zk7eyqew54l4",
-              "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b"
+              "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f/providers/Microsoft.Storage/storageAccounts/store7zk7eyqew54l4",
+              "resourceGroup": "learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f"
             }
           ],
           "outputs": {},
@@ -192,7 +192,7 @@ In this exercise, we review and deploy a template that includes two linked templ
           "timestamp": "2020-08-19T21:07:18.729310+00:00",
           "validatedResources": null
         },
-        "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b",
+        "resourceGroup": "learn-bbbb1b1b-cc2c-dd3d-ee4e-ffffff5f5f5f",
         "tags": null,
         "type": "Microsoft.Resources/deployments"
       }

@@ -1,12 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-authentication-microsoft-entra-id
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage authentication by using Microsoft Entra ID
   description: "This module is designed to provide administrators with the knowledge and skills needed to manage authentication effectively using Microsoft Entra ID, ensuring secure access to resources and enhancing user experience."
-  ms.date: 09/04/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Migrate VMware resources on-premises to Azure VMware Solution
   description: Learn how to migrate virtual machines from an on-premises VMware environment to Azure VMware Solution by using VMware HCX.
@@ -46,3 +48,4 @@ units:
 
 badge:
   uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.badge
+

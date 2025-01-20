@@ -2,6 +2,8 @@
 uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 05/29/2024

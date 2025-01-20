@@ -1,57 +1,58 @@
-The following examples are some advanced features of KQL queries in Microsoft Fabric:
+While you can often achieve your analytical goals by querying tables and using built-in functions and operators, KQL provides some advanced features that you can use to create new objects that encapsulate data or logic that you frequently need to use.
 
-**Materialized view**: A materialized view is a summary of data from a source table or another materialized view.
+## Materialized views
 
-There are two types of materialized views:
+A materialized view is a summary of data from a source table or another materialized view. The view encapsulates a **summarize** statement.
 
-1. ***Empty materialized view*** which uses the `.set-or-append` command to add records ingested after view creation. It's immediately available for query.
-1. ***Materialized View based on existing records in the source table***: The creation might take a long while to complete, depending on the number of records in the source table and the rules applied to its creation query.
+For example, the following statement creates a materialized view that contains the number of trips for each vendor each day.
 
-```kusto
-
-.create materialized-view MyMV on table Trips
+```kql
+.create materialized-view TripsByVendor on table Automotive
 {
-    Trips
-    | summarize count() by vendor_id
+    Automotive
+    | summarize trips = count() by vendor_id, pickup_date = format_datetime(pickup_datetime, "yyyy-MM-dd")
 }
-
 ```
 
-[ ![Screenshot of command to create materialized view with its results and a display of the columns after it's created.](../media/materialized-view.png)](../media/materialized-view-expanded.png#lightbox)
+Running this statement creates a materialized view, but doesn't immediately populate it with the data in the existing table. The view will be populated as new data is ingested into the source table. To ingest existing data, you can use an asynchronous operation to create the materialized view with the *backfill* option, like this:
 
-- **Custom Functions**: You can create your own custom functions in KQL to perform specific data analysis tasks.
-- **Data Visualization**: KQL supports various data visualization techniques such as `render timechart`, `render columnchart`, and a more **advanced function** visualization that is beyond the scope of this module named`render anomalychart` and allow for anomaly detection and forecast prediction using the `series_decompose_anomalies()` and the `series_decompose_forecast()` functions respectively.
-
-An example of a `render timechart` between two dates can be shown by defining x and y values.
-
-```kusto
-
-Trips
-| where pickup_datetime >= datetime("2014-10-01") and pickup_datetime < datetime("2014-11-01")
-| summarize count() by bin(pickup_datetime, 1d)
-| render timechart with (ytitle="Number of Trips", xtitle="Date")
-
+```kql
+.create async materialized-view with (backfill=true)
+TripsByVendor on table Automotive
+{
+    Automotive
+    | summarize trips = count() by vendor_id, pickup_date = format_datetime(pickup_datetime, "yyyy-MM-dd")
+}
 ```
 
-[ ![Screenshot of a rendered time chart by number of trips and date in line chart.](../media/render-timechart.png)](../media/render-timechart-expanded.png#lightbox)
+After creating and populating the materialized view, you can query it just like a table.
 
-An example of a `render columnchart` between two dates and total trips can be shown by defining x and y values.
-
-```kusto
-
-Trips
-| where pickup_datetime >= datetime("2014-10-01") and pickup_datetime < datetime("2014-11-01")
-| summarize count() by bin(pickup_datetime, 1d)
-| render columnchart with (ytitle="Number of Trips", xtitle="Date")
-
+```kql
+TripsByVendor
+| project pickup_date, vendor_id, trips
+| sort by pickup_date desc
 ```
 
-[ ![Screenshot of a rendered time chart by number of trips and date in columnchart.](../media/render-columnchart.png)](../media/render-columnchart-expanded.png#lightbox)
+Materialized views are listed in the **Materialized views** folder for the KQL database where you defined them in the eventhouse page.
 
-- **Data Ingestion**: KQL allows you to ingest data from various sources such as Azure Event Hubs, Azure IoT Hub, and Azure Storage.
-- **Data Export**: You can export query results from KQL to various destinations such as Azure Blob Storage, Azure Data Lake Storage, and Azure Event Hubs.
+## Stored functions
 
-Here are some other resources:
+KQL includes the ability to encapsulate a query as a function, making it easier to repeat common queries. You can also specify parameters for a function, so you can repeat the same query with variable values.
 
-- [Microsoft Fabric terminology - Microsoft Fabric.](/fabric/get-started/fabric-terminology)
-- [Query data in a KQL queryset - Microsoft Fabric.](/fabric/real-time-analytics/kusto-query-set)
+To create a function, use the **.create-or-alter function** KQL command. For example, the following function retrieves the trip ID and pickup time for trips with at least the specified number of passengers:
+
+```kql
+.create-or-alter function trips_by_min_passenger_count(num_passengers:long)
+{
+    Automotive
+    | where passenger_count >= num_passengers 
+    | project trip_id, pickup_datetime
+}
+```
+
+To call the function, use it like a table. In this example, the **trips_by_min_passenger_count** function is used to find 10 trips with at least three passengers:
+
+```kql
+trips_by_min_passenger_count (3)
+| take 10
+```

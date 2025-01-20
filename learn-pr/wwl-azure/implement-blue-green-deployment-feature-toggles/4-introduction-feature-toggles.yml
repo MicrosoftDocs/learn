@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-blue-green-deployment-feature-toggles.introduction-feature-toggles
 title: Introduction to feature toggles
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to feature toggles
   description: "Introduction to feature toggles"
   ms.date: 05/27/2024

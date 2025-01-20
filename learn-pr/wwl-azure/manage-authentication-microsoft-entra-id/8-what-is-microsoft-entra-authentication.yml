@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-authentication-microsoft-entra-id.what-is-microsoft-entra-authentication
 title: What is Microsoft Entra authentication?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Microsoft Entra authentication?
   description: "What is Microsoft Entra authentication?"
-  ms.date: 09/04/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

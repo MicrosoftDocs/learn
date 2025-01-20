@@ -2,6 +2,8 @@
 uid: learn.wwl.security-private-access-azure-resources.azure-private-link-services
 title: Plan and implement Private Link services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Plan and implement Private Link services
   description: "Plan and implement Private Link services"
   ms.date: 10/03/2024

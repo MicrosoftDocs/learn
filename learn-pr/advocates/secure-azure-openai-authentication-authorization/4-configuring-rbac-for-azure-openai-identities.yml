@@ -2,6 +2,8 @@
 uid: learn.secure-azure-openai-authentication-authorization.configuring-rbac-for-azure-open-ai-identities
 title: Configuring RBAC for Azure OpenAI identities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configuring RBAC for Azure OpenAI identities
   description: Understand RBAC roles for Azure OpenAI identities
   ms.date: 10/16/2024
@@ -11,3 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-configuring-rbac-for-azure-openai-identities.md)]
+

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the identity protection and governance capabilities of Microsoft Entra
   description: "Describe the identity protection and governance capabilities of Microsoft Entra."
   ms.date: 08/02/2024

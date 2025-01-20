@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-access.assign-roles-azure-virtual-desktop-service-principals
 title: Assign RBAC roles to the Azure Virtual Desktop service principals
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Assign RBAC roles to the Azure Virtual Desktop service principals
   description: "Assign RBAC roles to the Azure Virtual Desktop service principals"
   ms.date: 08/20/2024

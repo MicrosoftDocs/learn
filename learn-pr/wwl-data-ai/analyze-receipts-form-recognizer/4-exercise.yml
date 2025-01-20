@@ -2,6 +2,8 @@
 uid: learn.wwl.analyze-receipts-form-recognizer.exercise
 title: Exercise - Extract form data in Document Intelligence Studio
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Extract form data in Document Intelligence Studio
   description: "Exercise - Extract form data in Document Intelligence Studio"
   ms.date: 10/04/2024

@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.distributed-deep-learning-horovod-azure-databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Distributed deep learning with Horovod and Azure Databricks
   description: "Distributed deep learning with Horovod and Azure Databricks"
   ms.date: 03/27/2023

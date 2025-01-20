@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-shared-access-signatures.explore-stored-access-policies
 title: Explore stored access policies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore stored access policies
   description: "Explore stored access policies"
   ms.date: 03/13/2024

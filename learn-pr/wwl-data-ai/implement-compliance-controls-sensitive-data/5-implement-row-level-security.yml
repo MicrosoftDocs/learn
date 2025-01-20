@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.implement-row-level-security
 title: Implement Row Level security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Row Level security
   description: "Implement Row Level security"
   ms.date: 09/02/2022

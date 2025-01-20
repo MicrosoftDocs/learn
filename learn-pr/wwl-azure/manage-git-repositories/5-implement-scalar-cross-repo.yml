@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-git-repositories.implement-scalar-cross-repo
 title: Implement Scalar and cross repo when cross repo sharing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Scalar and cross repo when cross repo sharing
   description: "Implement Scalar and cross repo when cross repo sharing"
   ms.date: 05/24/2024

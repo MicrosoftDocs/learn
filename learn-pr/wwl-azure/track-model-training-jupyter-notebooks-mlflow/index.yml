@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Track model training in Jupyter notebooks with MLflow
   description: Learn how to use MLflow for model tracking when experimenting in notebooks.
   author: wwlpublish
@@ -36,3 +38,4 @@ units:
 - learn.wwl.track-model-training-jupyter-notebooks-mlflow.summary
 badge:
   uid: learn.wwl.track-model-training-jupyter-notebooks-mlflow.badge
+

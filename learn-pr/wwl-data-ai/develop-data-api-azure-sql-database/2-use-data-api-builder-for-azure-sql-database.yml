@@ -2,6 +2,8 @@
 uid: learn-wwl.develop-data-api-azure-sql-database.use-data-api-builder-for-azure-sql-database
 title: Explore Data API Builder for Azure SQL Database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Data API Builder for Azure SQL Database
   description: "Learn how to use Data API Builder for Azure SQL Database."
   ms.date: 10/10/2024

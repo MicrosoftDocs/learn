@@ -2,12 +2,14 @@
 uid: learn.intro-to-azure-service-health.when-to-use-azure-service-health
 title: When to use Azure Service Health
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Azure Service Health
   description: Learn when to use Azure Service Health and how you can benefit from the provided information.
   ms.date: 02/26/2024
-  author: rmcmurray
-  ms.author: robmcm
+  author: ricmmartins
+  ms.author: ricardomac
   ms.topic: unit
 durationInMinutes: 3
 content: |

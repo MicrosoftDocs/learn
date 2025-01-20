@@ -2,6 +2,8 @@
 uid: learn.wwl.governance-security.azure-key-vault
 title: Azure Key Vault
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Key Vault
   description: "Azure Key Vault"
   ms.date: 10/08/2024

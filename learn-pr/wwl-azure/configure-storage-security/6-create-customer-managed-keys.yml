@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-storage-security.create-customer-managed-keys
 title: Create customer-managed keys
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create customer-managed keys
   description: "Create customer-managed keys"
-  ms.date: 03/05/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

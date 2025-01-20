@@ -2,6 +2,8 @@
 uid: learn.wwl.advanced-security-compute.azure-security-baseline-api-management
 title: Recommend security configurations for Azure API Management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommend security configurations for Azure API Management
   description: "Service supports its own native backup capability (if not using Azure Backup)."
   ms.date: 06/10/2024

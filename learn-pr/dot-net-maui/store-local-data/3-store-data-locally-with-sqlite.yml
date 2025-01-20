@@ -4,8 +4,8 @@ title: Store data locally with SQLite
 metadata:
   unitType: unit
   title: "Store data locally with SQLite"
-  description: "Use SQLite to store data in a .NET MAUI application"
-  ms.date: 10/13/2023
+  description: "Use SQLite to store data in a .NET Multi-platform App UI (MAUI) application"
+  ms.date: 11/11/2024
   author: codemillmatt 
   ms.author: masoucou
   ms.topic: unit

@@ -2,6 +2,8 @@
 uid: learn.wwl.describe-monitoring-tools-azure.describe-azure-service-health
 title: Describe Azure Service Health
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure Service Health
   description: "Describe Azure Service Health"
   ms.date: 09/19/2024

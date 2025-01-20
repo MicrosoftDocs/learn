@@ -4,13 +4,14 @@ title: Exercise - Analyze data with Apache Spark
 metadata:
   title: Exercise - Analyze data with Apache Spark
   description: "Exercise - Analyze data with Apache Spark"
-  ms.date: 09/25/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: unit
   ms.custom:
-    - build-2023-dataai
-    - build-2023-fabric
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
 durationInMinutes: 45
 content: |
   [!include[](includes/7-exercise-spark.md)]

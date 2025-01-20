@@ -1,4 +1,4 @@
-An important way to ensure your multimedia is accessible to people with disabilities is to provide captions and audio descriptions for your video and audio files. This makes your documents more inclusive and engaging for everyone. Both captions and audio description benefit people who are learning a new language, are neurodiverse, or have difficulty hearing or seeing the content due to environmental factors. 
+An important way to ensure your multimedia is accessible to people with disabilities is to provide captions and audio descriptions for your video and audio files. This makes your documents more inclusive and engaging for everyone. Both captions and audio descriptions benefit people who are learning a new language, are neurodiverse, or have difficulty hearing or seeing the content due to environmental factors. 
 
 ## Captions
 
@@ -14,12 +14,11 @@ Captions are the text of the spoken content and sound effects in a video or audi
 
 An audio description is the narration of the visual elements in a video or audio file. This description is meant to paint a vivid picture of a scene for people with low or no vision.
 
-
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=63c69938-4615-4131-ba28-6cf1710e1ec6]
 
-## Exercise – How to add captions to videos in PowerPoint
+## Exercise - How to add captions to videos in PowerPoint
 
-Follow these steps to increase multimedia accessibility in PowerPoint by adding captions: 
+Follow these steps to increase multimedia accessibility in PowerPoint by adding captions:
 
 1. Insert the video into your slide by selecting **Insert > Video > This Device or Online Video.**
 2. Select the video on the slide, and then select **Playback > Video Options > Insert Captions.**

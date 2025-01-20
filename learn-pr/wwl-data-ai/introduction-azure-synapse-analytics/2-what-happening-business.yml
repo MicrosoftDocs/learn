@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-azure-synapse-analytics.what-is
 title: What is Azure Synapse Analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure Synapse Analytics
   description: "What is Azure Synapse Analytics"
   ms.date: 08/17/2022

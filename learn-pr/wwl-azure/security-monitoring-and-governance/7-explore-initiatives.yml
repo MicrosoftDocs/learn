@@ -2,6 +2,8 @@
 uid: learn.wwl.security-monitoring-and-governance.explore-initiatives
 title: Explore initiatives
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore initiatives
   description: "Explore initiatives"
   ms.date: 05/13/2024

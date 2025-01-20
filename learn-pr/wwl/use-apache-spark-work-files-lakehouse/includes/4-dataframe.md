@@ -1,6 +1,8 @@
-In the previous unit, you learned how to connect to a data source, load data into a *dataframe*, and optionally save the dataframe to a lakehouse as a file or table. Now let's explore the dataframe in a little more detail.
-
-Natively, Spark uses a data structure called a *resilient distributed dataset* (RDD); but while you *can* write code that works directly with RDDs, the most commonly used data structure for working with structured data in Spark is the dataframe, which is provided as part of the *Spark SQL* library. Dataframes in Spark are similar to those in the ubiquitous *Pandas* Python library, but optimized to work in Spark's distributed processing environment.
+---
+ms.custom:
+  - build-2023
+---
+Natively, Spark uses a data structure called a *resilient distributed dataset* (RDD); but while you *can* write code that works directly with RDDs, the most commonly used data structure for working with structured data in Spark is the *dataframe*, which is provided as part of the *Spark SQL* library. Dataframes in Spark are similar to those in the ubiquitous *Pandas* Python library, but optimized to work in Spark's distributed processing environment.
 
 > [!NOTE]
 > In addition to the Dataframe API, Spark SQL provides a strongly-typed *Dataset* API that is supported in Java and Scala. We'll focus on the Dataframe API in this module.
@@ -30,7 +32,7 @@ df = spark.read.load('Files/data/products.csv',
 display(df.limit(10))
 ```
 
-As you learned previously, the `%%pyspark` line at the beginning is called a *magic*, and tells Spark that the language used in this cell is PySpark. In most cases, PySpark is the default language; and we'll generally stick to it in the examples in this module. However, for completeness, here's the equivalent Scala code for the products data example:
+The `%%pyspark` line at the beginning is called a *magic*, and tells Spark that the language used in this cell is PySpark. You can select the language you want to use as a default in the toolbar of the Notebook interface, and then use a magic to override that choice for a specific cell. For example, here's the equivalent Scala code for the products data example:
 
 ```scala
 %%spark
@@ -38,7 +40,7 @@ val df = spark.read.format("csv").option("header", "true").load("Files/data/prod
 display(df.limit(10))
 ```
 
-The magic `%%spark` is used to specify Scala. Notice that the Scala implementation of the dataframe behaves similarly to the PySpark version.
+The magic `%%spark` is used to specify Scala.
 
 Both of these code samples would produce output like this:
 
@@ -146,3 +148,47 @@ The results from this code example would look something like this:
 | Wheels | 14 |
 | Mountain Bikes | 32 |
 | ... | ... |
+
+## Saving a dataframe
+
+You'll often want to use Spark to transform raw data and save the results for further analysis or downstream processing. The following code example saves the dataFrame into a *parquet* file in the data lake, replacing any existing file of the same name.
+
+```python
+bikes_df.write.mode("overwrite").parquet('Files/product_data/bikes.parquet')
+```
+
+ > [!Note]
+ > The Parquet format is typically preferred for data files that you will use for further analysis or ingestion into an analytical store. Parquet is a very efficient format that is supported by most large scale data analytics systems. In fact, sometimes your data transformation requirement may simply be to convert data from another format (such as CSV) to Parquet!
+
+### Partitioning the output file
+
+Partitioning is an optimization technique that enables Spark to maximize performance across the worker nodes. More performance gains can be achieved when filtering data in queries by eliminating unnecessary disk IO.
+
+To save a dataframe as a partitioned set of files, use the **partitionBy** method when writing the data. The following example saves the **bikes_df** dataframe (which contains the product data for the *mountain bikes* and *road bikes* categories), and partitions the data by category:
+
+```python
+bikes_df.write.partitionBy("Category").mode("overwrite").parquet("Files/bike_data")
+```
+
+The folder names generated when partitioning a dataframe include the partitioning column name and value in a ***column=value*** format, so the code example creates a folder named **bike_data** that contains the following subfolders:
+
+- **Category=Mountain Bikes**
+- **Category=Road Bikes**
+
+Each subfolder contains one or more parquet files with the product data for the appropriate category.
+
+> [!NOTE]
+> You can partition the data by multiple columns, which results in a hierarchy of folders for each partitioning key. For example, you might partition sales order data by year and month, so that the folder hierarchy includes a folder for each year value, which in turn contains a subfolder for each month value.
+
+## Load partitioned data
+
+When reading partitioned data into a dataframe, you can load data from any folder within the hierarchy by specifying explicit values or wildcards for the partitioned fields. The following example loads data for products in the **Road Bikes** category:
+
+```python
+road_bikes_df = spark.read.parquet('Files/bike_data/Category=Road Bikes')
+display(road_bikes_df.limit(5))
+```
+
+> [!NOTE]
+> The partitioning columns specified in the file path are omitted in the resulting dataframe. The results produced by the example query would not include a **Category** column - the category for all rows would be *Road Bikes*.
+

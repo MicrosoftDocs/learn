@@ -31,4 +31,4 @@ You can select each entity on the graph to observe complete contextual informati
 
 You can select the bookmark item on the graph to observe important bookmark metadata related to the bookmark's security and environment context.
 
-Choose the best response for the following question, then select **Check your answers**.
+Choose the best response for the following question.

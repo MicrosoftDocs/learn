@@ -1,4 +1,4 @@
-You've registered your web application with Microsoft Entra ID. You're now ready to add the authentication code to sign in users in your application and would like to use an SDK that can handle the authentication details for you. In this unit, you'll learn about the Microsoft Authentication Library for Java (MSAL4J) and how it helps with authentication.
+You've registered your web application with Microsoft Entra ID. You're now ready to add the authentication code to sign in users in your application and would like to use an SDK that can handle the authentication details for you. In this unit, you learn about the Microsoft Authentication Library for Java (MSAL4J) and how it helps with authentication.
 
 ## Microsoft Authentication Library for Java
 
@@ -13,7 +13,7 @@ The library provides convenient APIs that enable authentication with Microsoft E
 
 ### Initialize the MSAL object
 
-To start using MSAL, you'll need to initialize and configure the MSAL object in your application code.
+To start using MSAL, you need to initialize and configure the MSAL object in your application code.
 
 MSAL represents client applications as public clients and confidential clients, distinguished by their ability to authenticate securely with the authorization server and maintain the confidentiality of their client credentials.
 
@@ -21,7 +21,7 @@ MSAL represents client applications as public clients and confidential clients, 
 
 You can create an instance of the Confidential client as follows:
 
-```Java
+```java
 IClientCredential credential = ClientCredentialFactory.createFromSecret(CLIENT_SECRET);
 ConfidentialClientApplication app = ConfidentialClientApplication
                                         .builder(CLIENT_ID, credential)
@@ -41,7 +41,7 @@ When a user completes sign in, an ID token is returned in the authentication res
 
 Here's an example of acquiring tokens with MSAL:
 
-```Java
+```java
 final AuthorizationCodeParameters authParams = AuthorizationCodeParameters
                                                     .builder(authCode, new URI(Config.REDIRECT_URI)).scopes(Collections.singleton(Config.SCOPES))
                                                     .build();
@@ -49,7 +49,7 @@ final AuthorizationCodeParameters authParams = AuthorizationCodeParameters
 final IAuthenticationResult result = app.acquireToken(authParams).get();
 ```
 
-- **REDIRECT_URI**: The redirect URI is the URI to which the identity provider will send the security tokens back. It must match the redirect URI in the Microsoft Entra app registration.
+- **REDIRECT_URI**: The redirect URI is the URI to which the identity provider sends the security tokens back. It must match the redirect URI in the Microsoft Entra app registration.
 - **SCOPES**: Scopes are permissions the application requested. Normally, the three scopes `openid profile offline_access` suffice for receiving an ID token response for a user sign in and are set by default by MSAL.
 
 Use the `acquireToken` methods in your application when initiating a sign-in flow for users and calling APIs to access data.

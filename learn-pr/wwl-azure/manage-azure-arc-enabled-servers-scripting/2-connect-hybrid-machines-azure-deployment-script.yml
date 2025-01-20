@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-azure-arc-enabled-servers-scripting.connect-hybrid-machines-azure-deployment-script
 title: Connect hybrid machines to Azure using a deployment script
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect hybrid machines to Azure using a deployment script
   description: "Connect hybrid machines to Azure using a deployment script"
   ms.date: 06/11/2024

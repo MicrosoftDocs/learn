@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-identity-projects-pipelines-agents
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage identity for projects, pipelines, and agents
   description: Manage identity for projects, pipelines, and agents.
   ms.date: 01/18/2024
@@ -60,3 +62,4 @@ units:
 - learn.wwl.manage-identity-projects-pipelines-agents.summary
 badge:
   uid: learn.wwl.manage-identity-projects-pipelines-agents.badge
+

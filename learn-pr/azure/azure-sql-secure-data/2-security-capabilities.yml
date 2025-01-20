@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.2-security-capabilities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Security capabilities and tasks
   description: Security capabilities and tasks
   ms.date: 11/13/2023
@@ -28,9 +30,9 @@ quiz:
       - content: "Private Link"
         isCorrect: true
         explanation: "This will create a DNS hierarchy without information related to the Azure SQL Database logical server, and will create a truly private endpoint."
-    - content: "Consider the example from the unit where the Azure VM public IP address is 174.17.218.16 and the Azure VM private IP address is 10.0.0.2. When you use virtual network rules to configure network access to Azure SQL Database, what will be returned from `SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;`?"
+    - content: "Consider the example from the unit where the Azure VM public IP address is 203.0.113.1 and the Azure VM private IP address is 10.0.0.2. When you use virtual network rules to configure network access to Azure SQL Database, what will be returned from `SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;`?"
       choices:
-      - content: "174.17.218.16"
+      - content: "203.0.113.1"
         isCorrect: false
         explanation: "This would be returned if firewall rules and/or Allow Azure Services is enabled."
       - content: "10.0.0.2"
@@ -42,3 +44,4 @@ quiz:
       - content: "Neither IP address"
         isCorrect: false
         explanation: "Review the unit again for more information."
+

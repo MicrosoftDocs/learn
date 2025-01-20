@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-write-ahead-logging.understand-replication-logical-decode
 title: Describe replication and logical decoding
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe replication and logical decoding
   description: "Describe replication and logical decoding."
   ms.date: 05/10/2024

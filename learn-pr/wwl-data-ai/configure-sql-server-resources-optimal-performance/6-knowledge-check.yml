@@ -2,6 +2,8 @@
 uid: learn.wwl.configure-sql-server-resources-for-optimal-performance.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 07/13/2022

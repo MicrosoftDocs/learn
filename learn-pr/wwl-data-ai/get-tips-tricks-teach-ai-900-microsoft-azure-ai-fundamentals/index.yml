@@ -1,6 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Get tips and tricks for teaching AI-900 Microsoft Azure AI Fundamentals
   description: Get tips and tricks for teaching AI-900 Microsoft Azure AI Fundamentals
   author: wwlpublish
@@ -64,3 +66,4 @@ units:
 - learn.wwl.get-tips-tricks-teach-ai-900-microsoft-azure-ai-fundamentals.summary
 badge:
   uid: learn.wwl.get-tips-tricks-for-teaching-ai-900-microsoft-azure-ai-fundamentals.badge
+

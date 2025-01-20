@@ -1,9 +1,9 @@
-Now that you have reviewed this module, you should be able to:
+After reviewing this module, you should be able to:
 
-- Describe Azure built-in and external tools and methods to deploy SAP infrastructure on Azure.
-- Create, edit, and run Azure Resource Manager Templates to deploy Azure infrastructure for SAP.
-- Create, edit, and run Terraform scripts to deploy Azure infrastructure for SAP.
-- Describe the tools and methods to install SAP software on Azure infrastructure.
+- Describe Azure built-in and external tools and methods that deploy SAP infrastructure on Azure.
+- Create, edit, and run Azure Resource Manager Templates that deploy Azure infrastructure for SAP.
+- Create, edit, and run Terraform scripts that deploy Azure infrastructure for SAP.
+- Describe the tools and methods that install SAP software on Azure infrastructure.
 
 ## References
 
@@ -25,5 +25,6 @@ Now that you have reviewed this module, you should be able to:
 
 - [Installing Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 - [SAP on Azure Deployment Automation Framework](/azure/sap/automation/deployment-framework)
-- [Quickstart: Configure Ansible on an Azure VM](/azure/virtual-machines/linux/ansible-install-configure)
+- [Quickstart: Configure Ansible on an Azure Virtual Machine](/azure/virtual-machines/linux/ansible-install-configure)
 - [Ansible Playbook Samples for Azure](https://github.com/Azure-Samples/ansible-playbooks)
+

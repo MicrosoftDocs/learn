@@ -2,12 +2,16 @@
 uid: learn.wwl.implement-manage-external-identities.implement-cross-tenant-access-controls
 title: Implement cross-tenant access controls
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement cross-tenant access controls
   description: "Implement cross-tenant access controls"
-  ms.date: 10/25/2023
+  ms.date: 12/18/2024
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/14-implement-cross-tenant-access-controls.md)]
