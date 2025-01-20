@@ -36069,6 +36069,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/device-management-scale/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/device-management-scale/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/device-management-scale/2-schedule-jobs-multiple-devices.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/device-management-scale/3-automatic-device-management-use-azure-portal.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/device-management-scale/4-automatic-device-management-use-azure-command-line-interface.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/device-management-scale/5-device-configuration-best-practices.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/device-management-scale/6-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/device-management-scale/7-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/examine-device-management-tools/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
