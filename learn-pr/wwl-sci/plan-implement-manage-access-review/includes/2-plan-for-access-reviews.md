@@ -8,13 +8,13 @@ Consider your organizational needs to determine the strategy for deploying acces
 
 When technology projects fail, they typically do so due to mismatched expectations, outcomes, and responsibilities. To avoid these pitfalls, ensure that you're engaging the right stakeholders and that project roles are clear. For access reviews, you will likely include representatives from the following teams within your organization:
 
- -  **IT administration** manages your IT infrastructure and administers your cloud investments and Software as a Service (SaaS) apps.
- -  **Development teams** build and maintain applications for your organization
- -  **Business units** manage projects and own applications.
- -  **Corporate governance** ensures that the organization is following internal policy and complying with regulations.
+- **IT administration** manages your IT infrastructure and administers your cloud investments and Software as a Service (SaaS) apps.
+- **Development teams** build and maintain applications for your organization
+- **Business units** manage projects and own applications.
+- **Corporate governance** ensures that the organization is following internal policy and complying with regulations.
     
-    > [!NOTE]
-    > For reviews requiring manual evaluations, be sure to plan for adequate reviewers and review cycles that meet your policy and compliance needs. If review cycles are too frequent, or there are too few reviewers, quality is lost and too many or too few people have access.
+   > [!NOTE]
+   > For reviews requiring manual evaluations, be sure to plan for adequate reviewers and review cycles that meet your policy and compliance needs. If review cycles are too frequent, or there are too few reviewers, quality is lost and too many or too few people have access.
 
 ## What is Microsoft Entra ID Governance?
 
@@ -22,10 +22,10 @@ Microsoft Entra Identity Governance enables you to balance your organization's n
 
 Identity Governance gives organizations the ability to complete tasks across employees, business partners and vendors, and across services and applications both on-premises and in clouds. Specifically, it is intended to help organizations address these four key questions:
 
- -  Which users should have access to which resources?
- -  What are those users doing with that access?
- -  Are there effective organizational controls for managing access?
- -  Can auditors verify that the controls are working?
+- Which users should have access to which resources?
+- What are those users doing with that access?
+- Are there effective organizational controls for managing access?
+- Can auditors verify that the controls are working?
 
 ## Plan a pilot
 
@@ -33,10 +33,10 @@ We encourage customers to initially pilot access reviews with a small group and 
 
 In your pilot, we recommend that you:
 
- -  Start with reviews where the results are not automatically applied, and you can control the implications.
- -  Ensure that all users have valid email addresses listed in Microsoft Entra ID and that they receive email communication to take the appropriate action.
- -  Document any access removed as a part of the pilot in case you need to quickly restore it.
- -  Monitor audit logs to ensure all events are properly audited.
+- Start with reviews where the results are not automatically applied, and you can control the implications.
+- Ensure that all users have valid email addresses listed in Microsoft Entra ID and that they receive email communication to take the appropriate action.
+- Document any access removed as a part of the pilot in case you need to quickly restore it.
+- Monitor audit logs to ensure all events are properly audited.
 
 ### What resource types can be reviewed?
 
@@ -44,10 +44,10 @@ Once you integrate your organization’s resources with Microsoft Entra ID (such
 
 Typical targets for review include:
 
- -  User access to applications integrated with Microsoft Entra ID for single-sign-on (such as SaaS, line-of-business).
- -  Group membership (synchronized to Microsoft Entra ID, or created in Microsoft Entra ID or Microsoft 365, including Microsoft Teams).
- -  Access Package that groups resources (groups, apps, and sites) into a single package to manage access.
- -  Microsoft Entra roles and Azure Resource roles as defined in Privileged Identity Management (PIM).
+- User access to applications integrated with Microsoft Entra ID for single-sign-on (such as SaaS, line-of-business).
+- Group membership (synchronized to Microsoft Entra ID, or created in Microsoft Entra ID or Microsoft 365, including Microsoft Teams).
+- Access Package that groups resources (groups, apps, and sites) into a single package to manage access.
+- Microsoft Entra roles and Azure Resource roles as defined in Privileged Identity Management (PIM).
 
 ### Who will create and manage access reviews?
 
@@ -83,9 +83,9 @@ The administrative role required to create, manage, or read an Access Review dep
 
 The creator of the access review decides at the time of creation who will perform the review. This setting can't be changed once the review is started. Reviewers are represented by three personas:
 
- -  Resource Owners, who are the business owners of the resource.
- -  A set of individually selected delegates, as selected by the access reviews administrator.
- -  End users who will each self-attest to their need for continued access.
+- Resource Owners, who are the business owners of the resource.
+- A set of individually selected delegates, as selected by the access reviews administrator.
+- End users who will each self-attest to their need for continued access.
 
 When the administrator creates an Access Review, administrators can choose one or more reviewers. All reviewers can start and carry out a review, choosing to grant users continued access to a resource or removing them.
 
@@ -95,16 +95,16 @@ Before implementing your access reviews, you should plan the types of reviews re
 
 To create an access review policy, you must have the following information.
 
- -  What resource(s) must be reviewed?
- -  Whose access is being reviewed?
- -  How often should the review occur?
- -  Who will perform the review?
- -  How will they be notified to review?
- -  What are the timelines to be enforced for review?
- -  What automatic actions should be enforced based on the review?
- -  What happens if the reviewer doesn't respond in time?
- -  What manual actions will be taken as a result based on the review?
- -  What communications should be sent based on actions taken?
+- What resource(s) must be reviewed?
+- Whose access is being reviewed?
+- How often should the review occur?
+- Who will perform the review?
+- How will they be notified to review?
+- What are the timelines to be enforced for review?
+- What automatic actions should be enforced based on the review?
+- What happens if the reviewer doesn't respond in time?
+- What manual actions will be taken as a result based on the review?
+- What communications should be sent based on actions taken?
 
 **Example Access Review plan**
 
@@ -135,21 +135,21 @@ A single group can be granted access to all appropriate resources. You can assig
 
 Group membership can be reviewed by:
 
- -  Administrators
- -  Group owners
- -  Selected users, delegated review capability when the review is created
- -  Members of the group, attesting for themselves
+- Administrators
+- Group owners
+- Selected users, delegated review capability when the review is created
+- Members of the group, attesting for themselves
 
 ### Group ownership
 
 We recommend that group owners review membership, as they're best situated to know who needs access. Ownership of groups differs with the type of group.
 
- -  Groups that are created in Microsoft 365 and Microsoft Entra ID have one or more well-defined owners. In most cases, these owners make perfect reviewers for their own groups as they know who should have access. For example, Microsoft Teams uses Microsoft 365 Groups as the underlying authorization model to grant users access to resources that are in SharePoint, Exchange, OneNote, or other Microsoft 365 services. The creator of the team automatically becomes an owner and should be responsible for attesting to the membership of that group.
- -  Groups created manually in the Microsoft Entra admin center portal or via scripting through Microsoft Graph might not necessarily have owners defined. We recommend that you define them either through the admin portal in the group’s “Owners” section or via Graph.
- -  Groups that are synchronized from on-premises Active Directory cannot have an owner in Microsoft Entra ID. When creating an Access Review for them, you should select individuals who are best suited to decide on membership in them.
+- Groups that are created in Microsoft 365 and Microsoft Entra ID have one or more well-defined owners. In most cases, these owners make perfect reviewers for their own groups as they know who should have access. For example, Microsoft Teams uses Microsoft 365 Groups as the underlying authorization model to grant users access to resources that are in SharePoint, Exchange, OneNote, or other Microsoft 365 services. The creator of the team automatically becomes an owner and should be responsible for attesting to the membership of that group.
+- Groups created manually in the Microsoft Entra admin center portal or via scripting through Microsoft Graph might not necessarily have owners defined. We recommend that you define them either through the admin portal in the group’s “Owners” section or via Graph.
+- Groups that are synchronized from on-premises Active Directory cannot have an owner in Microsoft Entra ID. When creating an Access Review for them, you should select individuals who are best suited to decide on membership in them.
     
-    > [!NOTE]
-    > We recommend defining business policies that define how groups are created to ensure clear group ownership and accountability for regular review of membership.
+   > [!NOTE]
+   > We recommend defining business policies that define how groups are created to ensure clear group ownership and accountability for regular review of membership.
 
 ### Review membership of exclusion groups in CA policies
 
@@ -169,10 +169,10 @@ When you review access to an application, you're reviewing the access for employ
 
 We recommend you plan reviews for applications in the following scenarios:
 
- -  Users are granted direct access to the application (outside of a group or Access Package).
- -  The application exposes critical or sensitive information.
- -  The application has specific compliance requirements to which you must attest.
- -  You suspect inappropriate access.
+- Users are granted direct access to the application (outside of a group or Access Package).
+- The application exposes critical or sensitive information.
+- The application has specific compliance requirements to which you must attest.
+- You suspect inappropriate access.
 
 ### Reviewers for an application
 
@@ -184,12 +184,12 @@ Privileged Identity Management (PIM) simplifies how enterprises manage privilege
 
 Access reviews allow reviewers to attest whether users still need to be in a role. Just like access reviews for Access Packages, reviews for Microsoft Entra roles and Azure resource are integrated into the PIM admin user experience. We recommend you review the following role assignments regularly:
 
- -  Global Administrator
- -  User Administrator
- -  Privileged Authentication Administrator
- -  Conditional Access Administrator
- -  Security Administrator
- -  All Microsoft 365 and Dynamics Service Administration roles
+- Global Administrator
+- User Administrator
+- Privileged Authentication Administrator
+- Conditional Access Administrator
+- Security Administrator
+- All Microsoft 365 and Dynamics Service Administration roles
 
 ## Deploy access reviews
 
@@ -219,15 +219,15 @@ The access reviews methods in the Microsoft Graph API are available for both app
 
 Popular access reviews tasks to automate using the Graph API for access reviews are:
 
- -  Create and start an Access Review.
- -  Manually end an Access Review before its scheduled end.
- -  List all running Access Reviews and their status.
- -  See the history of a review series and the decisions and actions taken in each review.
- -  Collect decisions from an Access Review.
- -  Collect decisions from completed reviews where the reviewer took a different decision than what the system recommended.
+- Create and start an Access Review.
+- Manually end an Access Review before its scheduled end.
+- List all running Access Reviews and their status.
+- See the history of a review series and the decisions and actions taken in each review.
+- Collect decisions from an Access Review.
+- Collect decisions from completed reviews where the reviewer took a different decision than what the system recommended.
     
-    > [!NOTE]
-    > When creating new Graph API queries for automation, we recommend using the Graph Explorer. You can build and explore your Graph queries before putting them into scripts and code. This can help you quickly iterate your query so that you get exactly the results you're looking for, without changing the code of your script.
+   > [!NOTE]
+   > When creating new Graph API queries for automation, we recommend using the Graph Explorer. You can build and explore your Graph queries before putting them into scripts and code. This can help you quickly iterate your query so that you get exactly the results you're looking for, without changing the code of your script.
 
 ## Monitor access reviews
 
@@ -261,9 +261,9 @@ Administrators can choose to send this notification either halfway before the re
 
 The email sent to reviewers can be customized to include a custom short message that encourages them to act on the review. We recommend you use the additional text to:
 
- -  Include a personal message to reviewers, so they understand it is sent by your Compliance or IT department.
- -  Include a hyperlink or reference to internal information on what the expectations of the review are and additional reference or training material.
- -  Include a link to instructions on how to perform a self-review of access.
+- Include a personal message to reviewers, so they understand it is sent by your Compliance or IT department.
+- Include a hyperlink or reference to internal information on what the expectations of the review are and additional reference or training material.
+- Include a link to instructions on how to perform a self-review of access.
 
 Upon selecting Start review, reviewers will be directed to the MyAccess portal for group and application Access Reviews. The portal gives them an overview of all users who have access to the resource they're reviewing and system recommendations based on last sign-in and access information.
 
@@ -271,16 +271,16 @@ Upon selecting Start review, reviewers will be directed to the MyAccess portal f
 
 Your directory needs at least as many Microsoft Entra ID Premium P2 licenses as the number of employees who will be performing the following tasks:
 
- -  Member users who are assigned as reviewers
- -  Member users who perform a self-review
- -  Member users as group owners who perform an access review
- -  Member users as application owners who perform an access review
+- Member users who are assigned as reviewers
+- Member users who perform a self-review
+- Member users as group owners who perform an access review
+- Member users as application owners who perform an access review
 
 For guest users, licensing needs will depend on the licensing model you’re using. However, the below guest users’ activities are considered Microsoft Entra ID Premium P2 usage:
 
- -  Guest users who are assigned as reviewers
- -  Guest users who perform a self-review
- -  Guest users as group owners who perform an access review
- -  Guest users as application owners who perform an access review
+- Guest users who are assigned as reviewers
+- Guest users who perform a self-review
+- Guest users as group owners who perform an access review
+- Guest users as application owners who perform an access review
 
 Microsoft Entra ID Premium P2 licenses are not required for users with the Global Administrator or User Administrator roles who set up access reviews, configure settings, or apply the decisions from the reviews.
