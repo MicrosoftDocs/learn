@@ -4567,6 +4567,11 @@ achievements:
   title: Examine Cloud storage options for Azure IoT Hub solutions
   summary: Examine Cloud storage options for Azure IoT Hub solutions
   iconUrl: /training/achievements/iot-cloud-storage.svg
+- uid: learn.wwl.examine-azure-stream-analytics-azure-functions.badge
+  type: badge
+  title: Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions
+  summary: Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions
+  iconUrl: training/achievements/azure-stream-analytics.svg
 - uid: learn.wwl.consider-message-processing-options-constraints.badge
   type: badge
   title: Consider Azure IoT Hub message processing options and constraints

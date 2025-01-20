@@ -36144,6 +36144,86 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/10-azure-stream-analytics-queries-time-considerations.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/11-examine-azure-stream-analytics-window-functions.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/12-azure-stream-analytics-outputs.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/13-azure-functions.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/14-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/15-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/2-what-azure-stream-analytics.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/3-azure-stream-analytics-other-stream-process-technologies.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/4-azure-stream-analytics-patterns-guidelines.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/5-azure-stream-analytics-input-types.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/6-azure-stream-analytics-streaming-data-input.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/7-azure-stream-analytics-reference-data-input.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/8-azure-stream-analytics-queries.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-stream-analytics-azure-functions/9-azure-stream-analytics-queries-parse-complex-data-types.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
