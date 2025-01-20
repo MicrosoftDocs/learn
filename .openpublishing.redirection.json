@@ -36024,6 +36024,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/explore-iot-hub-monitoring/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-iot-hub-monitoring/2-prepare.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/iot/explore-iot-hub-monitoring/3-exercise-simulate-device.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/iot/explore-iot-hub-monitoring/4-exercise-setup-use-metrics-diagnostic-logs-iot-hub.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-iot-hub-monitoring/5-exercise-configure-an-alert.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-iot-hub-monitoring/6-exercise-review-metrics-alerts-archive.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-iot-hub-monitoring/7-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-iot-hub-monitoring/8-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/explore-iot-hub-monitoring/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/troubleshoot-device-connections-communication/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
