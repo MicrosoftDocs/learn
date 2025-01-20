@@ -36144,6 +36144,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/implement-device-message-processing-data-analytics/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/route-process-messages-from-your-iot-devices/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false

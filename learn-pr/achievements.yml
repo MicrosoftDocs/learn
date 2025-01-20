@@ -4562,6 +4562,11 @@ achievements:
   title: Examine Azure IoT Hub message routing
   summary: Examine Azure IoT Hub message routing
   iconUrl: /training/achievements/iot-hub-message-routing.svg
+- uid: learn.wwl.implement-device-message-processing-data-analytics.trophy
+  type: trophy
+  title: Implement message processing for data storage and analytics by using Azure IoT Hub
+  summary: Implement message processing for data storage and analytics by using Azure IoT Hub
+  iconUrl: /training/achievements/message-device-processing.svg
 - uid: learn.wwl.get-started-cloud-storage-for-iot.badge
   type: badge
   title: Examine Cloud storage options for Azure IoT Hub solutions
