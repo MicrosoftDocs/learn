@@ -35419,6 +35419,216 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/provision-iot-devices-scale-use-device/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/2-device-enrollment-tools-processes.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/3-configure-verified-certificate-authority-certificates.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/4-roll-device-certificates.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/5-deprovisioning-process.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/6-manage-disenrollment.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/7-provision-for-multitenancy.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/8-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/9-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/2-prepare.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/3-exercise-generate-configure-certificate.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/4-exercise-configure-simulated-device-with-certificate.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/5-exercise-create-additional-instances-simulated-device.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/6-exercise-run-simulated-devices.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/7-exercise-deprovision-single-device-from-group-enrollment.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/8-exercise-deprovision-group-enrollment.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/9-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/10-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/provision-iot-devices-secure-scale-with-iot-hub-dps/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/2-azure-command-line-interface-support-device-provisioning-service.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/3-powershell-support-dps.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/4-device-provisioning-service-software-development-kits.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/5-control-access-device-provisioning-service.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/6-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/7-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/2-what-is-device-provisioning-service.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/3-how-device-provisioning-service-works.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/4-when-to-use-device-provisioning-service.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/5-device-enrollment-concepts.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/6-x509-attestation.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/7-trusted-platform-module-attestation.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/8-symmetric-key-attestation.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/9-reprovisioning.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/10-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/11-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-device-provisioning-service/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/explore-generative-ai-copilot-bing/index.md",
       "redirect_url": "/training/modules/design-dream-destination-ai-copilot/",
       "redirect_document_id": false

@@ -100,6 +100,31 @@ achievements:
   title: Introduction to Azure solutions
   summary: Introduction to Azure solutions
   iconUrl: /training/achievements/intro-to-azure-areas-and-solutions.svg
+- uid: learn.wwl.examine-device-provisioning-service-terms-concepts.badge
+  type: badge
+  title: Introduction to Azure IoT Hub Device Provisioning Service
+  summary: Introduction to Azure IoT Hub Device Provisioning Service
+  iconUrl: /training/achievements/provisioning-device-terms-conditions.svg
+- uid: learn.wwl.examine-device-provisioning-service-coding-tools-access.badge
+  type: badge
+  title: Examine IoT Hub Device Provisioning Service coding tools and access
+  summary: Examine IoT Hub Device Provisioning Service coding tools and access
+  iconUrl: /training/achievements/provisioning-device-service.svg
+- uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.badge
+  type: badge
+  title: Examine IoT Hub Device Provisioning Service lifecycle tasks
+  summary: Examine IoT Hub Device Provisioning Service lifecycle tasks
+  iconUrl: /training/achievements/provisioning-lifecycle-device.svg
+- uid: learn.wwl.explore-group-enrollment-tasks.badge
+  type: badge
+  title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
+  summary: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
+  iconUrl: /training/achievements/enrollment-group-task.svg
+- uid: learn.wwl.provision-iot-devices-at-scale-by-using-device.trophy
+  type: trophy
+  title: Provision IoT devices at scale by using Azure IoT Hub Device Provisioning Service (DPS)
+  summary: Provision IoT devices at scale by using Azure IoT Hub Device Provisioning Service (DPS)
+  iconUrl: /training/achievements/iot-provisions-device-scale.svg
 - uid: learn-xamarin.university-veteran.badge
   type: badge
   title: Xamarin University Veteran
