@@ -1,6 +1,6 @@
 To prepare for cloud adoption, you must set up your environment and create landing zones to host your workloads.
 
-Use the ready methodology of the Cloud Adoption Framework to help guide the following aspects of preparation:
+Use the Ready methodology of the Cloud Adoption Framework to help guide the following aspects of preparation:
 
 - Set up your Azure environment.
 - Define a cloud operating model.

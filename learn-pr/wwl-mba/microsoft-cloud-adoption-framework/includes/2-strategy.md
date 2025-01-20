@@ -1,4 +1,4 @@
-You can use the strategy methodology to create a comprehensive plan that outlines your organization's approach when you adopt and integate cloud technologies. A cloud adoption strategy helps you align with business goals.
+You can use the Strategy methodology to create a comprehensive plan that outlines your organization's approach when you adopt and integate cloud technologies. A cloud adoption strategy helps you align with business goals.
 
 ## Understand motivations for cloud adoption
 In the "Motivations for Cloud Adoption" article, you explore the various reasons why your organization might choose to adopt cloud technologies. It's important to identify and understand these motivations to ensure a successful cloud adoption journey. Key motivations include cost savings, agility, scalability, and innovation. By aligning your cloud adoption strategies with these motivations, you can achieve your business goals more effectively. The article also emphasizes the need for clear communication and collaboration among stakeholders to address any concerns and ensure a smooth transition to the cloud.

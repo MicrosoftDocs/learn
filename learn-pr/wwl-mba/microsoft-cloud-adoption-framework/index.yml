@@ -34,6 +34,8 @@ units:
 - learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.ready
 - learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.migrate
 - learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.innovate
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.govern
+- learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.manage
 - learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.summary
 badge:
   uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.badge

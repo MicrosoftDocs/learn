@@ -1,4 +1,4 @@
-The Cloud Adoption Framework Innovate methodology helps you understand customer needs and rapidly build innovations that improve how your customers interact with your products.
+The Innovate methodology helps you understand customer needs and rapidly build innovations that improve how your customers interact with your products.
 
 Before you establish your innovation approach. Ensure that your team can make the following important commitments:
 
