@@ -4557,6 +4557,11 @@ achievements:
   title: Introduction to chat completion
   summary: This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Foundry portal playground.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.examine-iot-hub-message-routing.badge
+  type: badge
+  title: Examine Azure IoT Hub message routing
+  summary: Examine Azure IoT Hub message routing
+  iconUrl: /training/achievements/iot-hub-message-routing.svg
 - uid: learn.student-evangelism.predict-meteor-showers-using-python.badge
   type: badge
   title: Predict meteor showers by using Python and Visual Studio Code

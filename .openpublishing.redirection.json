@@ -36144,6 +36144,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/8-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/7-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/6-message-routing-query-syntax.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/5-iot-hub-built-in-end-point.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/4-introduction-to-message-routing.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/3-iot-hub-common-message-format.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/2-what-is-message-processing.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-iot-hub-message-routing/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/configure-subscriptions/index.md",
       "redirect_url": "/training/modules/describe-core-architectural-components-of-azure/",
       "redirect_document_id": false
