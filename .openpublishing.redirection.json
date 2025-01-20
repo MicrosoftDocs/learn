@@ -36144,6 +36144,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/10-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/9-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/8-other-storage-options.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/7-azure-sql-database.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/6-azure-cosmos-database.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/5-azure-data-lake.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/4-azure-storage-options.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/3-common-storage-options-azure-iot-solutions.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/2-introduction-lambda-architecture.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/get-started-cloud-storage-for-iot/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/consider-message-processing-options-constraints/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
