@@ -15,6 +15,11 @@ achievements:
   title: Monitor performance of virtual machines by using Azure Monitor VM Insights
   summary: Monitor performance of virtual machines by using Azure Monitor VM Insights
   iconUrl: /training/achievements/monitor-performance-using-azure-monitor-for-vms.svg
+- uid: learn.intro-to-azure-government.badge
+  type: badge
+  title: Introduction to Azure Government
+  summary: Introduction to Azure Government
+  iconUrl: /training/achievements/intro-to-azure-government.svg
 - uid: learn.make-your-virtual-machines-highly-available.badge
   type: badge
   title: Make your virtual machines highly available
