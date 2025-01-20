@@ -18,7 +18,7 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
 1. The list of virtual machines available for migration appears on the display. Check the **Name**(s) you want, then select **Add**.
 
-    :::image type="content" source="../media/6-select-vms-migration.png" alt-text="Screenshot of how to select the VMs for migration.":::
+    :::image type="content" source="../media/6-hcx-select-vms-migration-add.png" alt-text="Screenshot of how to select the VMs for migration."lightbox="../media/6-hcx-select-vms-migration-add.png":::
 
 1. Set the **Transfer and Placement**, **Switchover**, and **Extended Options** needed for the VM being migrated.
 
