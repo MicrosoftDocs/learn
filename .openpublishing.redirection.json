@@ -35419,6 +35419,55 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/2-device-enrollment-tools-processes.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/3-configure-verified-certificate-authority-certificates.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/4-roll-device-certificates.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/5-deprovisioning-process.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/6-manage-disenrollment.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/7-provision-for-multitenancy.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/8-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/9-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/examine-device-provisioning-service-coding-tools-access/1-introduction.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false

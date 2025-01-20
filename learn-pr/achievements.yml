@@ -110,6 +110,11 @@ achievements:
   title: Examine IoT Hub Device Provisioning Service coding tools and access
   summary: Examine IoT Hub Device Provisioning Service coding tools and access
   iconUrl: /training/achievements/provisioning-device-service.svg
+- uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.badge
+  type: badge
+  title: Examine IoT Hub Device Provisioning Service lifecycle tasks
+  summary: Examine IoT Hub Device Provisioning Service lifecycle tasks
+  iconUrl: /training/achievements/provisioning-lifecycle-device.svg
 - uid: learn-xamarin.university-veteran.badge
   type: badge
   title: Xamarin University Veteran
