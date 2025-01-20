@@ -4605,6 +4605,11 @@ achievements:
   title: Explore the Azure Digital Twins API for creating a graph
   summary: Explore the Azure Digital Twins API for creating a graph
   iconUrl: /training/achievements/explore-azure-digital-twins-api-for-creating-a-graph.svg
+- uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data.badge
+  type: badge
+  title: Synchronize Azure Digital Twins with IoT device data
+  summary: Synchronize Azure Digital Twins with IoT device data
+  iconUrl: /training/achievements/synchronize-azure-digital-twins-with-iot-device-data.svg
 - uid: learn.beginner-python.create-manage-projects.badge
   type: badge
   title: Create and manage projects in Python
