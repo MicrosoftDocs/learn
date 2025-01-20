@@ -40,6 +40,11 @@ achievements:
   title: Explore the key concepts of quantum computing by using Q#
   summary: Explore the key concepts of quantum computing by using Q#
   iconUrl: /training/achievements/quantum/qsharp-explore-key-concepts-quantum-computing.svg
+- uid: learn.wwl.examine-device-management-concepts-methods.badge
+  type: badge
+  title: Examine device management concepts and methods for Azure IoT Hub
+  summary: Examine device management concepts and methods for Azure IoT Hub
+  iconUrl: /training/achievements/device-management-examine.svg
 - uid: learn.quantum.use-qsharp-libraries.badge
   type: badge
   title: Use the Q# libraries
