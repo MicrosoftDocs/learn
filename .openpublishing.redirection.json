@@ -36024,6 +36024,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/troubleshoot-device-connections-communication/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/troubleshoot-device-connections-communication/7-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/troubleshoot-device-connections-communication/6-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/troubleshoot-device-connections-communication/5-troubleshoot-device-message-routing.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/troubleshoot-device-connections-communication/4-troubleshoot-guide-device-communication.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/troubleshoot-device-connections-communication/3-troubleshoot-device-disconnects.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/troubleshoot-device-connections-communication/2-examine-device-reconnection-management.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/troubleshoot-device-connections-communication/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/examine-azure-iot-solution-monitoring-logging/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
