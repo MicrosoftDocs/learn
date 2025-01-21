@@ -218,4 +218,12 @@ In this scenario, the primary site is an Azure VMware Solution private cloud in 
 
 JetStream disaster recovery (DR) is a cloud-native disaster recovery solution designed to minimize downtime of virtual machines (VMs) should a disaster occur. Instances of JetStream DR are deployed at both the protected and recovery sites. 
 
-JetStream is built on the foundation of Continuous Data Protection (CDP), which enables minimal or close to no data loss. JetStream DR provides the level of protection wanted for business and mission-critical applications. It also enables cost-effective DR by using minimal resources at the DR site and using cost-effective cloud storage, such as Azure Blob Storage 
+JetStream is built on the foundation of Continuous Data Protection (CDP), which enables minimal or close to no data loss. JetStream DR provides the level of protection wanted for business and mission-critical applications. It also enables cost-effective DR by using minimal resources at the DR site and using cost-effective cloud storage, such as Azure Blob Storage.
+
+**Core components of the JetStream DR solution**
+
+| **Items**  | **Description**  |
+| ----------------------- | ----------------------- |
+| **JetStream Management Server Virtual Appliance (MSA)**   | MSA enables both Day 0 and Day 2 configuration, such as primary sites, protection domains, and recovering VMs. The MSA is deployed from an OVA file on a vSphere node by the cloud admin. The MSA collects and maintains statistics relevant to VM protection and implements a vCenter Server plugin that allows you to manage JetStream DR natively with the vSphere Client. The MSA doesn't handle replication data of protected VMs. |
+| **JetStream DR Virtual Appliance (DRVA)** | Linux-based virtual machine appliance receives protected VMs replication data from the source ESXi host. It maintains the replication log and manages the transfer of the VMs and their data to the object store such as Azure Blob Storage. Depending upon the number of protected VMs and the amount of VM data to replicate, the private cloud admin can create one or more DRVA instances. |
+| **JetStream ESXi host components (IO Filter packages)** | JetStream software installed on each ESXi host configured for JetStream DR. The host driver intercepts the vSphere VMs I/O and sends the replication data to the DRVA. The IO filters also monitor relevant events, such as vMotion, Storage vMotion, snapshots, etc.
