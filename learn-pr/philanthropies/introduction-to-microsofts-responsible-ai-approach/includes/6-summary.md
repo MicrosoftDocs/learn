@@ -5,7 +5,7 @@ In conclusion, Microsoft's commitment to responsible AI development is a testame
 To continue your learning journey, go to:
 
 - [Guidelines for Human-AI Interaction (Microsoft)](https://www.microsoft.com/research/uploads/prod/2019/01/Guidelines-for-Human-AI-Interaction-camera-ready.pdf)
-- [Guidelines for human-AI interaction design/](https://www.microsoft.com/research/blog/guidelines-for-human-ai-interaction-design/)
+- [Guidelines for human-AI interaction design](https://www.microsoft.com/research/blog/guidelines-for-human-ai-interaction-design/)
 - [Guidelines for Human-AI Interaction (Medium)](https://medium.com/microsoft-design/guidelines-for-human-ai-interaction-9aa1535d72b9)
 - [AI Guidelines in the Creative Process](https://medium.com/microsoft-design/ai-guidelines-in-the-creative-process-807b6d31cda2)
 - [Collaborating to bring AI innovation to education](https://educationblog.microsoft.com/2023/06/collaborating-to-bring-ai-innovation-to-education#:~:text=%5BSolution%5D%20Responsible%20AI%20in%20Microsoft%201%20Put%20responsible,responsible%20AI%20through%20our%20work%20with...%20See%20More.)

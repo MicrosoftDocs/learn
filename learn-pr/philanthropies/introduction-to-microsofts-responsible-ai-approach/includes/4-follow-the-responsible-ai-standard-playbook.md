@@ -4,7 +4,7 @@ Microsoft's Responsible AI Standard Playbook was developed to bridge the policy 
 
 The Responsible AI Standard also helps users determine whether an AI system is created and implemented with responsible AI principles in mind. It's composed of two key aspects:
 
-**Goals**: Goals or outcomes are the conditions that must be achieved in creating an AI system. These goals help breakdown the six responsible AI principles like "accountability" into specific goals such as impact assessment, data governance, and human oversight.
+**Goals**: Goals or outcomes are the conditions that must be achieved in creating an AI system. These goals help break down the six responsible AI principles like "accountability" into specific goals such as impact assessment, data governance, and human oversight.
 
 | Principle | Goals |
 | --------- | ----- |
