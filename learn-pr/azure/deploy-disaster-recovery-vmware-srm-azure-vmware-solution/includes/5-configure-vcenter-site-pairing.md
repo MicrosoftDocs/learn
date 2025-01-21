@@ -23,9 +23,9 @@ To configure site pairing, perform the following steps:
 
 7. Enter the address of the Platform Services Controller for the Site Recovery Manager Server on the second site.
 
-8. Provide the username and password, then select **Next**.
+8. Provide the username and password, the select **Find vCenter Server Instances**. Once the desired vCenter Server appears, select it, then select **Next**.
 
-    :::image type="content"  source="../media/5-site-pair-details.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution. The vSphere Replication option is selected under Setup replication.":::  
+    :::image type="content"  source="../media/5-new-pair-peer-vcenter-server.png" alt-text="Screenshot of the Disaster recovery tab in Azure VMware Solution. The vSphere Replication option is selected under Setup replication."lightbox="../media/5-new-pair-peer-vcenter-server.png":::  
 
 The address you provide for the Platform Services Controller must match the address used when you installed Site Recovery Manager Server on the recovery site.
 
