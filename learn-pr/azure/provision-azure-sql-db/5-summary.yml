@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Summary and cleanup
   description: Summary and cleanup
-  ms.date: 01/10/2025
+  ms.date: 01/17/2025
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
@@ -28,7 +28,7 @@ quiz:
       - content: "No one. Your database stays with its original OS and software configuration."
         isCorrect: false
         explanation: "Azure SQL databases are a Platform-as-a-Service (PaaS) offering. The cloud provider typically manages and updates PaaS services for you."
-    - content: "What is an _Azure SQL logical server_?"
+    - content: "What is an *Azure SQL logical server*?"
       choices:
       - content: "An administrative container for your databases."
         isCorrect: true
@@ -38,7 +38,7 @@ quiz:
         explanation: "Azure SQL Managed Instance is a different Azure service. You can manage multiple databases in a single Azure SQL Database logical server."
       - content: "A server that defines the rules that sort and compare text."
         isCorrect: false
-        explanation: "The logical SQL server doesn't contain this information, each database does. _Collation_ refers to the rules that sort and compare character data in tables. You can manage multiple databases in a single Azure SQL Database logical server."
+        explanation: "The logical SQL server doesn't contain this information. Each database does. *Collation* refers to the rules that sort and compare character data in tables. You can manage multiple databases in a single Azure SQL Database logical server."
     - content: "Your Azure SQL database provides adequate storage and memory. But you find that you need more CPU capacity. Which should you use?"
       choices:
       - content: "DTU"
