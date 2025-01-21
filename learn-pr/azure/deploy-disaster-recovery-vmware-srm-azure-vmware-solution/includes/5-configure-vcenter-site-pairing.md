@@ -76,7 +76,9 @@ Use the following procedure to configure replication for the VM:
 
 6. On the **Target datastore** page, configure the protected VM’s **Disk format** and **VM storage policy**, then select **Next**.
 
-7. On the **Replication settings** page, select **Recovery point objective**, and optionally, enable point-in-time instances, network compression, or encryption of the data. Select **Next**.
+7. On the **Replication settings** page, under **Recovery point objective (RPO)**, select **Enable network compression for VR data**, then select **Next**.
+
+    :::image type="content"  source="../media/5-srm-replication-settings-enable-netword-compression.png" alt-text="Screenshot of the Replication settings window in Azure VMware Solution, with the configured RPO settings."lightbox="../media/5-srm-replication-settings-enable-netword-compression.png":::
 
 8. On the **Protection group** tab, add the VMs to an existing or a new protection group. Alternately, you can choose not to add the VMs to any protection group at this stage. Select **Next**.
 
