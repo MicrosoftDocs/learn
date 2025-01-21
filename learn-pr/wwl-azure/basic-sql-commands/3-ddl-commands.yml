@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-command.ddl-commands
+uid: learn.wwl-azure.basic-sql-commands.ddl-commands
 title: DDL Commands
 metadata:
   title: DDL Commands
@@ -22,10 +22,10 @@ metadata:
 ###
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
-  ms.service: postgresql
+  ms.service: azure-database-postgresql
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-2-ddl-commands.md)]
+  [!include[](includes/3-ddl-commands.md)]
 ###########################################################################
 ###
 ### Optional end-of-unit knowledge check

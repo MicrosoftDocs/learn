@@ -6,7 +6,7 @@ metadata:
   ms.date: 1/20/2025
   author: mpopovic
   ms.author: mpopovic
-  ms.topic: module-concept
+  ms.topic: module-standard-task-based
 ###########################################################################
 ###
 ### ms.service value
@@ -21,7 +21,7 @@ metadata:
 ###
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
-  ms.service: TODO
+  ms.service: azure-database-postgresql
 title: basic-sql-commands
 ###########################################################################
 ###
@@ -127,7 +127,7 @@ prerequisites: |
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/achievements-creation`
 ###
-iconUrl: TODO
+iconUrl: /training/achievements/generic-badge.svg
 ###########################################################################
 ###
 ### Learning level
