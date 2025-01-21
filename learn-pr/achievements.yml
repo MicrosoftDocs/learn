@@ -4900,3 +4900,8 @@ achievements:
   title: Create a new Node.js project and work with dependencies
   summary: Use dependencies from the npm registry to develop Node.js applications faster. Learn how to manage dependencies for your project. This module uses JavaScript CommonJS in the Node.js runtime.
   iconUrl: /training/achievements/create-nodejs-project-dependencies.svg
+- uid: learn.azdo.explore-azure-devops-with-github.trophy
+  type: trophy
+  title: Explore Azure DevOps with GitHub to streamline your development process
+  summary: Learn how to use GitHub Actions, Azure DevOps, and Azure Pipelines to build, test, and deploy applications.
+  iconUrl: /training/achievements/explore-azure-devops-with-github.svg
