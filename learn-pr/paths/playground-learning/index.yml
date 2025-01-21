@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.wwl.playground-learning
+uid: learn.wwl-azure.playground-learning
 metadata:
   title: 'Playground tutorials'
   description: "Learn PostgreSQL with Azure Playground. Explore our tutorials to focus on a specific topic, or discover a subject that interest you and delve deeper."
@@ -23,6 +23,6 @@ products:
 subjects:
 - databases
 modules:
-- learn.wwl.basic-sql-commands
+- learn.wwl-azure.basic-sql-commands
 trophy:
-  uid: learn.wwl.microsoft-learn-azure-database-for-postgresql.trophy
+  uid: learn.wwl-azure.azure-pg-playground.trophy
