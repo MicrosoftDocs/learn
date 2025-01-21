@@ -39,7 +39,7 @@ The first step involves creating a *site pair*. A site pair provides network con
 
 1. You get a screen showing that VMware HCX Cloud Manager in Azure VMware Solution and the on-premises VMware HCX Connector are connected or paired.
 
- :::image type="content" source="../media/4-import-certificate-complete-site-pairing.png" alt-text="Screenshot of the HCX Site Pairing tab that shows a new HCX-Connector-On-Premises connection or site pairing."lightbox="../media/4-hcx-on-premises-site-pairing-connected.png":::
+    :::image type="content" source="../media/4-import-certificate-complete-site-pairing.png" alt-text="Screenshot of the HCX Site Pairing tab that shows a new HCX-Connector-On-Premises connection or site pairing."lightbox="../media/4-hcx-on-premises-site-pairing-connected.png":::
 
 ## Create network profiles
 
@@ -112,6 +112,6 @@ After the network profiles are created, you'll need to create a compute profile.
 
 1. After the compute profile finishes creation, the compute profile is listed in the **Compute Profiles** within **Interconnect**.
 
-:::image type="content" source="../media/4-finished-compute-profile.png" alt-text="Screenshot showing the compute profile completely configured in the on-premises HCX Connector.":::
+    :::image type="content" source="../media/4-finished-compute-profile.png" alt-text="Screenshot showing the compute profile completely configured in the on-premises HCX Connector.":::
 
 In the next unit, we'll cover how to set up a service mesh to complete the on-premises configuration of VMware HCX Connector.
