@@ -65,6 +65,8 @@ Use the following procedure to configure replication for the VM:
 
 2. On the **Site Recovery** home tab, select a site pair, then select **View Details**.
 
+    :::image type="content"  source="../media/5-srm-new-site-pair-view-details.png" alt-text="Screenshot of the Site Recovery new site pair window where you can view the details."lightbox="../media/5-srm-new-site-pair-view-details.png":::
+
     > [!NOTE]
     > You might be prompted to sign in with **cloudadmin** credentials.
 
