@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  ms.date: 10/30/2023
+  ms.date: 01/17/2024
   author: fossygirl
   ms.author: carols
   ms.topic: unit
@@ -48,7 +48,7 @@ quiz:
     - content: "Terraform"
       isCorrect: false
       explanation: "Incorrect: Terraform doesn't provide direct support to run Azure CLI commands and requires adding the Terraform executable."
-  - content: "Which parameter of the Azure CLI az vm image command should you use to list all images from the same vendor?"
+  - content: "Which parameter of the Azure CLI `az vm image` command should you use to list all images from the same vendor?"
     choices:
     - content: "`--sku`"
       explanation: "Incorrect: SKU represents an individual image version from a given publisher, and the same offer."

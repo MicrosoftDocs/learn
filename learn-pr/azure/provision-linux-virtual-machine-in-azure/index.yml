@@ -6,7 +6,7 @@ metadata:
   ms.author: carols
   author: fossygirl
   manager: rayoflores
-  ms.date: 10/30/2023
+  ms.date: 01/17/2024
   ms.service: azure-virtual-machines
   title: Provisioning a Linux virtual machine in Microsoft Azure
   description: Learn about different methods of provisioning Linux virtual machines in Microsoft Azure.
@@ -20,9 +20,9 @@ abstract: |
   - Provision an Azure VM running Linux by using Hashicorp Terraform.
   - Provision an Azure VM running Linux by using Bicep.
 prerequisites: |
-  - Ability to configure and administer a Linux server.
-  - Access to a Microsoft Azure account.
-  - Ability to navigate the Azure portal.
+  - Ability to configure and administer a Linux server
+  - Access to a Microsoft Azure account
+  - Ability to navigate the Azure portal
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
