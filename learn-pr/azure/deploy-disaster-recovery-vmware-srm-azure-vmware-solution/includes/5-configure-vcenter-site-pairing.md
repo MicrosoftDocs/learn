@@ -17,7 +17,9 @@ To configure site pairing, perform the following steps:
 
 5. Select the **New Site Pair** button.
 
-6. Select the first site from the list.
+6. Select the first site from the list and select the **Pair type** accordingly. The following image example demonstrates a customer choosing **Pair with a peer vCenter Server located in a different SSO domain**, then selecting **Next**.
+
+    :::image type="content"  source="../media/5-add-new-pair-type.png" alt-text="Screenshot of the page to add a new pair type."lightbox="../media/5-add-new-pair-type.png"::: 
 
 7. Enter the address of the Platform Services Controller for the Site Recovery Manager Server on the second site.
 
