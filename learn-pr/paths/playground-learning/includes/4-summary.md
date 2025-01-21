@@ -1,1 +1,0 @@
-Markdown with summary of module.
