@@ -80,16 +80,17 @@ Use the following procedure to configure replication for the VM:
 
 7. On the **Replication settings** page, under **Recovery point objective (RPO)**, select **Enable network compression for VR data**, then select **Next**.
 
-    :::image type="content"  source="../media/5-srm-replication-settings-enable-netword-compression.png" alt-text="Screenshot of the Replication settings window in Azure VMware Solution, with the configured RPO settings."lightbox="../media/5-srm-replication-settings-enable-netword-compression.png":::
+    :::image type="content"  source="../media/5-srm-replication-settings-enable-netword-compression.png" alt-text="Screenshot of the Replication settings window in Azure VMware Solution, with the configured RPO settings to enable network compression for VR data."lightbox="../media/5-srm-replication-settings-enable-netword-compression.png":::
 
 8. On the **Protection group** tab, add the VMs to an existing or a new protection group. Alternately, you can choose not to add the VMs to any protection group at this stage. Select **Next**.
 
 9. On the **Ready to complete** page, review your settings, then select **Finish**.
 
+    :::image type="content"  source="../media/5-srm-configure-replication-ready-to-complete.png" alt-text="Screenshot of the Replication settings window in Azure VMware Solution, with the configured RPO settings."lightbox="../media/5-srm-configure-replication-ready-to-complete.png":::
+
     > [!NOTE]
     > You can configure replications for powered-off VMs, but the data synchronization begins when the VM is powered on. While the source VM is powered off, the replication displays a **Not active** status.
 
-    :::image type="content"  source="../media/5-replication-settings.png" alt-text="Screenshot of the Replication settings window in Azure VMware Solution, with the configured RPO settings.":::
 
 ### Create and manage protection groups
 
