@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.secure
+title: Secure
+metadata:
+  title: Secure
+  description: "Secure"
+  ms.date: 01/14/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-secure.md)]

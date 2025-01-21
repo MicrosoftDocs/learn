@@ -1,7 +1,8 @@
 You can use the Strategy methodology to create a comprehensive plan that outlines your organization's approach when you adopt and integate cloud technologies. A cloud adoption strategy helps you align with business goals.
 
-## Understand motivations for cloud adoption
-In the "Motivations for Cloud Adoption" article, you explore the various reasons why your organization might choose to adopt cloud technologies. It's important to identify and understand these motivations to ensure a successful cloud adoption journey. Key motivations include cost savings, agility, scalability, and innovation. By aligning your cloud adoption strategies with these motivations, you can achieve your business goals more effectively. The article also emphasizes the need for clear communication and collaboration among stakeholders to address any concerns and ensure a smooth transition to the cloud.
+## Understand your motivations for cloud adoption
+
+To ensure a successful cloud adoption journey, identify and understand your motivations to move to the cloud. Key motivations include cost savings, agility, scalability, and innovation. Align your cloud adoption strategies with these motivations so that you can achieve your business goals more effectively. For example, if critical business events are a top priority, you might start migration early, alongside strategy and planning efforts. Clearly communicate and collaborate with stakeholders to address any concerns and ensure a smooth transition to the cloud.
 
 ## Defining Mission and Objectives for Cloud Adoption
 The "Mission and Objectives for Cloud Adoption" article focuses on the importance of establishing a clear mission and set of objectives for your cloud adoption. It outlines the steps to define a mission statement that aligns with your organization's overall business goals and provides a roadmap for cloud adoption. The article also discusses the significance of setting measurable objectives to track progress and ensure that your cloud adoption efforts are delivering the desired outcomes. By having a well-defined mission and objectives, you can stay focused and motivated throughout your cloud adoption journey.
