@@ -4617,6 +4617,36 @@ achievements:
   title: Introduction to chat completion
   summary: This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Foundry portal playground.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.examine-iot-hub-message-routing.badge
+  type: badge
+  title: Examine Azure IoT Hub message routing
+  summary: Examine Azure IoT Hub message routing
+  iconUrl: /training/achievements/iot-hub-message-routing.svg
+- uid: learn.wwl.implement-device-message-processing-data-analytics.trophy
+  type: trophy
+  title: Implement message processing for data storage and analytics by using Azure IoT Hub
+  summary: Implement message processing for data storage and analytics by using Azure IoT Hub
+  iconUrl: /training/achievements/message-device-processing.svg
+- uid: learn.wwl.get-started-cloud-storage-for-iot.badge
+  type: badge
+  title: Examine Cloud storage options for Azure IoT Hub solutions
+  summary: Examine Cloud storage options for Azure IoT Hub solutions
+  iconUrl: /training/achievements/iot-cloud-storage.svg
+- uid: learn.wwl.explore-message-processing-tasks.badge
+  type: badge
+  title: Guided project - Route and process messages from your Azure IoT Hub devices
+  summary: Guided project - Route and process messages from your Azure IoT Hub devices
+  iconUrl: /training/achievements/message-process-explore-tasks.svg
+- uid: learn.wwl.examine-azure-stream-analytics-azure-functions.badge
+  type: badge
+  title: Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions
+  summary: Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions
+  iconUrl: /training/achievements/azure-stream-analytics.svg
+- uid: learn.wwl.consider-message-processing-options-constraints.badge
+  type: badge
+  title: Consider Azure IoT Hub message processing options and constraints
+  summary: Consider Azure IoT Hub message processing options and constraints
+  iconUrl: /training/achievements/messaging-processing-options.svg
 - uid: learn.student-evangelism.predict-meteor-showers-using-python.badge
   type: badge
   title: Predict meteor showers by using Python and Visual Studio Code
@@ -4655,6 +4685,26 @@ achievements:
   title: Get started with Jupyter notebooks for Python
   summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive, runnable Markdown and code elements.
   iconUrl: /training/achievements/python-create-jupyter-notebook.svg
+- uid: learn.iot.introduction-to-azure-digital-twins.badge
+  type: badge
+  title: Introduction to Azure Digital Twins
+  summary: Introduction to Azure Digital Twins
+  iconUrl: /training/achievements/introduction-to-azure-digital-twins.svg
+- uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.badge
+  type: badge
+  title: Explore the Azure Digital Twins API for creating a graph
+  summary: Explore the Azure Digital Twins API for creating a graph
+  iconUrl: /training/achievements/explore-azure-digital-twins-api-for-creating-a-graph.svg
+- uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data.badge
+  type: badge
+  title: Synchronize Azure Digital Twins with IoT device data
+  summary: Synchronize Azure Digital Twins with IoT device data
+  iconUrl: /training/achievements/synchronize-azure-digital-twins-with-iot-device-data.svg
+- uid: learn.iot.build-azure-digital-twins-solution.trophy
+  type: trophy
+  title: Build out an Azure Digital Twins solution
+  summary: Build out an Azure Digital Twins solution
+  iconUrl: /training/achievements/build-out-an-azure-digital-twins-solution.svg
 - uid: learn.beginner-python.create-manage-projects.badge
   type: badge
   title: Create and manage projects in Python
