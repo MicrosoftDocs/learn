@@ -16,7 +16,7 @@ The following diagram shows VMware HCX deployed on-premises. VMware HCX then rep
 
 ## Example scenario
 
-Imagine you work for a healthcare company that runs production workloads on a VMware vSphere platform. Your company decided to migrate existing VMware vSphere workloads to Azure VMware Solution. Your company doesn't have to change virtualization platforms or alter existing operational patterns by using Azure VMware Solution. You've planned for and deployed Azure VMware Solution. Now, you need to migrate VMware workloads on-premises to Azure. In this module, you'll learn how to migrate existing VMware vSphere workloads on-premises into Azure VMware Solution.
+Imagine you work for a healthcare company that runs production workloads on a VMware vSphere platform. Your company decided to migrate existing VMware vSphere workloads to Azure VMware Solution. Your company doesn't have to change virtualization platforms or alter existing operational patterns by using Azure VMware Solution. You planned for and deployed Azure VMware Solution, now you need to migrate VMware workloads on-premises to Azure. In this module, you'll learn how to migrate existing VMware vSphere workloads on-premises into Azure VMware Solution.
 
 ## What will we be doing?
 
@@ -24,4 +24,4 @@ First, you'll learn how to plan for the VMware HCX Connector deployment on-premi
 
 ## What is the main goal?
 
-The main goal is to quickly migrate VMware vSphere VMs on-premises into Azure VMware Solution. This helps your company deal with aging hardware and new hardware requests.
+The main goal is to quickly migrate VMware vSphere VMs on-premises into Azure VMware Solution which helps your company deal with aging hardware and new hardware requests.
