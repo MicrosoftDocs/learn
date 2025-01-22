@@ -226,7 +226,7 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
 
     | Setting | Value |
     | --- | --- |
-    | Role | Select the **Storage Blob Data Reader** entry under **Job function roles**. |
+    | Role | Select the **Storage Blob Data Contributor** entry under **Job function roles**. |
     | Assign access to | Select **Managed Identity**. |
     | Select members | Select **Virtual Machine** in the **Managed Identity** dropdown and **cyclecloud-vm** under **Select**. |
 
