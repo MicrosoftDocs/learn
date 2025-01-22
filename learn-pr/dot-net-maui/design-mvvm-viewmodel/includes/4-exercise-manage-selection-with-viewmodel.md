@@ -5,7 +5,6 @@ For our exercise, we briefly leave behind the example of the human resources app
 ## Open the starter solution
 
 1. Clone or download the [exercise repo](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-mvvm1).
-1. Download and extract the [Movie List Sample](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-mvvm1/raw/main/part4-exercise-start.zip) project to a temporary folder.
 1. Navigate to the *part4-exercise1* folder and open the *MovieCatalog.sln* solution.
 1. Build and run the project to make sure it works. You should see a list of movies displayed on the screen. Select one of the movies in the list and the app navigates to a detail page.
 
