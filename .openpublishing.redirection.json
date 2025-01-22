@@ -40507,6 +40507,36 @@
       "source_path": "learn-pr/advocates/build-web-api-nodejs-express/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-device-identity-ad-join/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-device-identity-ad-join/2-what-is-device-identity.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-device-identity-ad-join/3-what-is-ad-join.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-device-identity-ad-join/4-what-is-enterprise-state-roaming.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-device-identity-ad-join/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-device-identity-ad-join/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "redirect_document_id": false
     }
   ]
 }

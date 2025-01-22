@@ -4905,3 +4905,9 @@ achievements:
   title: Create a new Node.js project and work with dependencies
   summary: Use dependencies from the npm registry to develop Node.js applications faster. Learn how to manage dependencies for your project. This module uses JavaScript CommonJS in the Node.js runtime.
   iconUrl: /training/achievements/create-nodejs-project-dependencies.svg
+- uid: learn.azure.manage-device-identity-ad-join.badge
+  type: badge
+  title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
+  summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
+  iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+  
