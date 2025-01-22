@@ -1,4 +1,4 @@
-To complete the steps for protecting your VMware vSphere virtual machines (VMs), you now need to connect instances of VMware SRM on the protected and recovery sites, then configure a protection policy. The process of connecting VMware SRM instances is known as *site pairing*. You can configure site pairing from a Windows client VM, called a *jump box*, that’s deployed on the virtual network that has access to both Azure VMware Solution private clouds. 
+To complete the steps for protecting your VMware vSphere virtual machines (VMs), you now need to connect instances of VMware SRM on the protected and recovery sites, then configure a protection policy. The process of connecting VMware SRM instances is known as *site pairing*. You can configure site pairing from a Windows client VM, called a *jump box*, that is deployed on the virtual network and has access to both Azure VMware Solution private clouds. 
 
 ## Configure site pairing in vCenter Server
 
@@ -72,7 +72,7 @@ Use the following procedure to configure replication for the VM:
 
 3. Select the **Replication** tab, then select **New**.
 
-4. On the **Target site** page, ensure that you select a target site, and optionally, select a vSphere Replication Server that will manage the replication.
+4. On the **Target site** page, ensure that you select a target site, and optionally, select a vSphere Replication Server to manage the replication.
 
 5. On the **Virtual machines** page, select one or multiple VMs that you want to protect, then select **Next**.
 
@@ -134,7 +134,7 @@ Use the following procedure to create vSphere Replication protection groups:
 
 ### Create, test, and run recovery plans
 
-Recovery plans control every step of the recovery process. They control the sequence in which VMware SRM powers VMs on and off. You can create a recovery plan that contains one or multiple protection groups. You can also include a protection group in multiple recovery plans. This enables you to choose between recovery plans and then decide how to recover the VM.
+Recovery plans control every step of the recovery process. They control the sequence in which VMware SRM powers VMs on and off. You can create a recovery plan that contains one or multiple protection groups. You can also include a protection group in multiple recovery plans which enables you to choose between recovery plans and then decide how to recover the VM.
 
 Use the following procedure to create a recovery plan:
 
@@ -195,8 +195,8 @@ Core components of the Zerto platform
 | **Zerto Virtual Manager (ZVM)**   | Management application for Zerto implemented as a Windows service installed on a Windows VM. The private cloud administrator installs and manages the Windows VM. The ZVM enables Day 0 and Day 2 disaster recovery configuration.      |
 | **Virtual Replication appliance (vRA)** | Linux VM is used to handle data replication from the source to the replication target. One instance of vRA is installed per ESXi host, delivering a true scale architecture that grows and shrinks along with the private cloud's hosts. The vRA manages data replication to and from protected VMs to its local or remote target, storing the data in the journal. |
 | **Zerto ESXi host driver** | Installed on each VMware ESXi host configured for Zerto disaster recovery. The host driver intercepts a vSphere VM's IO and sends the replication data to the chosen vRA for that host. The vRA is then responsible for replicating the VM's data to one or more disaster recovery targets. |
-| **ZertoCloud Appliance (ZCA)** | Windows VM only used when Zerto is used to recover vSphere VMs as Azure Native IaaS VMs. The ZCA is composed of: <br>-   **ZVM**: A Windows service that hosts the UI and integrates with the native APIs of Azure for management and orchestration. <br>-   **VRA**: A Windows service that replicates the data from or to Azure. <br> The ZCA integrates natively with the platform it's deployed on, allowing you to use Azure Blob storage withing a storage account on Microsoft Azure. As a result, it ensures the most cost-efficient deployment on each of these platforms. |
-| **Virtual Protection Group (VPG)** | Logical group of VMs created on the ZVM. Zerto allows confiruging disaster recovery, Backup, and Mobility policies on a VPG. This mechanism enables a consistent set of policies to be applied to a group of VMs. |
+| **ZertoCloud Appliance (ZCA)** | Windows VM only used when Zerto is used to recover vSphere VMs as Azure Native IaaS VMs. The ZCA is composed of: <br>-   **ZVM**: A Windows service that hosts the UI and integrates with the native APIs of Azure for management and orchestration. <br>-   **VRA**: A Windows service that replicates the data from or to Azure. <br> The ZCA integrates natively with the platform it gets deployed on, allowing you to use Azure Blob storage withing a storage account on Microsoft Azure. As a result, it ensures the most cost-efficient deployment on each of these platforms. |
+| **Virtual Protection Group (VPG)** | Logical group of VMs created on the ZVM. Zerto allows configuring disaster recovery, Backup, and Mobility policies on a VPG. This mechanism enables a consistent set of policies to be applied to a group of VMs. |
 
 
 ### Supported Zerto scenarios
@@ -211,7 +211,7 @@ In this scenario, the primary site is an on-premises vSphere-based environment. 
 
 **Scenario 2:** Azure VMware Solution to Azure VMware Solution cloud disaster recovery.
 
-In this scenario, the primary site is an Azure VMware Solution private cloud in one Azure Region. The disaster recovery site is an Azure VMware Soluiton private cloud in a different Azure Region.
+In this scenario, the primary site is an Azure VMware Solution private cloud in one Azure Region. The disaster recovery site is an Azure VMware Solution private cloud in a different Azure Region.
 
 :::image type="content"  source="../media/5-zerto-disaster-recovery-scenario-2-diagram.png" alt-text="Screenshot of the zerto disaster recovery scenario of an Azure VMware Solution private cloud in one Azure Region."lightbox="../media/5-zerto-disaster-recovery-scenario-2-diagram.png":::
 
