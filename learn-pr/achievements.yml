@@ -4632,6 +4632,11 @@ achievements:
   title: Configure business integration in Azure IoT Central
   summary: Configure business integration in Azure IoT Central
   iconUrl: /training/achievements/iot/configure-business-integration.svg
+- uid: learn.introduction-to-azure-iot-central.badge
+  type: badge
+  title: Introduction to Azure IoT Central
+  summary: Introduction to Azure IoT Central
+  iconUrl: /training/achievements/iot/introduction-to-azure-iot-central.svg
 - uid: learn.chat-completions-badge
   type: badge
   title: Introduction to chat completion
