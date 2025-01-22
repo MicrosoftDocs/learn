@@ -10,7 +10,7 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
 1. From within the HCX dashboard on-premises, select **Services** > **Migration**.
 
-1. The **Migration Tracking** page displays a summary of virtual machine migrations. This is your first migration, so no VMs will appear.
+1. The **Migration Tracking** page displays a summary of virtual machine migrations. Since this is your first migration, no VMs are shown.
 
 1. Select **Migrate**.
 
@@ -52,7 +52,7 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
 1. Verify migration has started.
 
-    :::image type="content" source="../media/6-hcx-add-rav-migration-started.png" alt-text="Screenshot shows the migration has started."lightbox="../media/6-hcx-add-rav-migration-started.png":::
+    :::image type="content" source="../media/6-hcx-add-rav-migration-started.png" alt-text="Screenshot shows the migration started."lightbox="../media/6-hcx-add-rav-migration-started.png":::
 
 ## Configure Network Extension
 
