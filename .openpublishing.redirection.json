@@ -35739,6 +35739,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/create-manage-device-templates/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/2-introduction-to-device-templates.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/3-create-device-capability-model.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/4-add-cloud-properties-to-device-template.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/5-add-customizations-to-device-template.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/6-add-dashboards-to-device-template.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/7-version-device-template.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/8-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/9-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/index.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false

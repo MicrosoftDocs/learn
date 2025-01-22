@@ -4612,6 +4612,11 @@ achievements:
   title: Install and configure Visual Studio Code for Python development
   summary: Install and configure Visual Studio Code to create a development environment for learning to build Python applications.
   iconUrl: /training/achievements/python-install-vscode.svg
+- uid: learn.wwl.create-manage-device-templates.badge
+  type: badge
+  title: Create and manage device templates in Azure IoT Central
+  summary: Create and manage device templates in Azure IoT Central
+  iconUrl: /training/achievements/iot/create-manage-device-templates.svg
 - uid: learn.chat-completions-badge
   type: badge
   title: Introduction to chat completion
