@@ -35944,6 +35944,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/2-create-azure-iot-central-application.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/3-define-coffee-machine-device-template.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/4-create-coffee-machine-device-template.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/5-define-coffee-machine-device-simulator.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/6-connect-coffee-machine-device-simulator.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/7-monitor-manage-coffee-machines.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/8-configure-rules-actions.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/9-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/10-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/index.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false

@@ -4637,6 +4637,11 @@ achievements:
   title: Introduction to Azure IoT Central
   summary: Introduction to Azure IoT Central
   iconUrl: /training/achievements/iot/introduction-to-azure-iot-central.svg
+- uid: learn.monitor-manage-device-with-iotcentral.badge
+  type: badge
+  title: Build your first Azure IoT Central application to manage your coffee machines
+  summary: Build your first Azure IoT Central application to manage your coffee machines
+  iconUrl: /training/achievements/iot/monitor-and-manage-device-with-iot-central.svg
 - uid: learn.chat-completions-badge
   type: badge
   title: Introduction to chat completion
