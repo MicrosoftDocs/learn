@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Monitor VMs and containers by using insights
   description: Analyze virtual machine (VM) and container utilization and performance by using Azure Monitor VM insights and container insights.
-  ms.date: 11/13/2023
+  ms.date: 01/22/2025
   author: kayodeprinceMS
   ms.author: kaprince
   ms.topic: unit
