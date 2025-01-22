@@ -1,4 +1,4 @@
-Create a container in Azure and expose it to the Internet with a fully qualified domain name (FQDN).
+In this unit, you create a container in Azure and expose it to the Internet with a fully qualified domain name (FQDN).
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -37,7 +37,9 @@ For scenarios where you need full container orchestration, including service dis
     DNS_NAME_LABEL=aci-demo-$RANDOM
     ```
 
-1. Run the following `az container create` command to start a container instance:
+1. Create a container by providing a name, a Docker image, and an Azure resource group to the `az container create` command. You can optionally expose the container to the Internet by specifying a DNS name label. In this example, deploy a container that hosts a small web app. You can also select the location to place the image; we use the **East US** region, but you can change it to a location close to you.
+
+    Run the following `az container create` command to start a container instance:
 
     ```azurecli
     az container create \
@@ -69,7 +71,7 @@ For scenarios where you need full container orchestration, including service dis
     aci-demo-0000.eastus.azurecontainer.io  Succeeded
     ````
 
-    If your container is in the **Creating** state, wait a few moments, and run the command again until you see the **Succeeded** state.
+    If your container is in the **Creating** state, wait a few moments and run the command again until you see the **Succeeded** state.
 
 1. From a browser, go to your container's FQDN to see it running. Ensure you enter the *http://* prefix in front of the *aci-demo...* string. You should get this welcome page:
 
@@ -77,4 +79,4 @@ For scenarios where you need full container orchestration, including service dis
 
 ## Summary
 
-Here, you created an Azure container instance to run a web server and application. You also accessed this application using the FQDN of the container instance.
+Here, you created an Azure container instance to run a web server and application. You also accessed this application using the container instance's FQDN.
