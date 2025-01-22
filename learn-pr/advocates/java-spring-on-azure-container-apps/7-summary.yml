@@ -3,8 +3,9 @@ uid: learn.java-on-azure-container-apps.7-summary
 title: Summary
 metadata:
   title: Summary
-  description: This unit introduces how to deploy spring apps on azure container apps.
-  author: hangwan
+  titleSuffix: Azure
+  description: This unit introduces how to deploy Spring apps on Azure Container Apps.
+  author: KarlErickson
   ms.author: hangwan
   ms.date: 10/22/2024
   ms.topic: unit

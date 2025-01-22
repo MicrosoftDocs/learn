@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.java-on-azure-container-apps.2-prepare-spring-boot-application
 title: Prepare Spring Boot application
+titleSuffix: Azure
 metadata:
   title: Prepare Spring Boot application
-  description: Learn about application rediness before deploying to Azure Container Apps.
-  author: hangwan
+  description: Learn about application readiness before deploying to Azure Container Apps.
+  author: KarlErickson
   ms.author: hangwan
-  ms.date: 10/22/2024
+  ms.date: 01/21/2025
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates

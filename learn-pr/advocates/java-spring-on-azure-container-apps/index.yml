@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.java-on-azure-container-apps
 metadata:
-  title: Deploy a Spring Boot app to azure container apps
-  description: In this module, you'll learn how to deploy a Spring Boot app to azure container apps. You will deploy a Spring Boot application to Azure Container Apps and maintain it using the built-in Java stack.
-  author: hangwan
+  title: Deploy a Spring Boot app to Azure Container Apps
+  description: In this module, you learn how to deploy a Spring Boot app to azure container apps. You will deploy a Spring Boot application to Azure Container Apps and maintain it using the built-in Java stack.
+  author: KarlErickson
   ms.author: hangwan
-  ms.date: 10/22/2024
+  ms.date: 01/21/2025
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.contributors: hangwan97
   ms.service: azure-container-apps
-title: Deploy a Spring Boot app to azure container apps
+title: Deploy a Spring Boot app to Azure Container Apps
 summary: Explore the deployment of Spring Boot applications to Azure Container Apps and learn how to maintain them using the built-in Java stack.
 abstract: | 
  By the end of this tutorial, you'll be able to:
