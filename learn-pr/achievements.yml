@@ -4622,6 +4622,11 @@ achievements:
   title: Manage devices in Azure IoT Central
   summary: Manage devices in Azure IoT Central
   iconUrl: /training/achievements/iot/manage-devices-azure-iot-central.svg
+- uid: learn.iot.connect-iot-edge-device-to-iot-central.badge
+  type: badge
+  title: Connect an Azure IoT Edge device to your Azure IoT Central application
+  summary: Connect an Azure IoT Edge device to your Azure IoT Central application
+  iconUrl: /training/achievements/iot/connect-iot-edge-device-to-iot-central.svg
 - uid: learn.chat-completions-badge
   type: badge
   title: Introduction to chat completion

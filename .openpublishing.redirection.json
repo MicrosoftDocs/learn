@@ -35824,6 +35824,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/2-implement-iot-application-with-edge-pattern.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/3-exercise-create-iot-central-application.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/4-deploy-iot-edge-to-virtual-machine.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/5-exercise-deploy-and-manage-an-iot-edge-device.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/6-deploy-azure-function-to-iot-edge.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/7-exercise-deploy-azure-function-to-filter-telemetry.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/8-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/index.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
