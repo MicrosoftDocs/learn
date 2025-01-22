@@ -22,7 +22,7 @@ Mara and Andy move to the whiteboard for a discussion on version control.
 
 :::image type="content" source="../media/2-whiteboard-centralized-vs-distributed-drawing.png" border="false" alt-text="Diagram of a hand-drawn illustration of centralized versus distributed source control.":::
 
-**Mara:** The drawing on the left is _centralized version control_, like what we're using now. We have a central version of the code base :::image type="icon" source="../../shared/media/callout-01.png"::: in Team Foundation Version Control (TFVC) that everyone uses. We each work on the files we need to change, and then merge them back into the main repository when we're finished with them.
+**Mara:** The drawing on the left is _centralized version control_, like what we're using now. We have a central version of the code base :::image type="icon" source="../../shared/media/callout-01.png"::: in Team Foundation Version Control (TFVC) that everyone uses. We each work on the files we need to change and then merge them back into the main repository when we're finished with them.
 
 **Andy:** Yes, and that's working for us. Well, except when I was blocked that time when a breaking change got merged into the central repo.
 
