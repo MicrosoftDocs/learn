@@ -10,7 +10,7 @@ Mara is diligently working on her assigned features when Andy walks in.
 
 **Andy:** Hi Mara. In the leadership meeting this morning, it was brought up that our team and the game-development team are using different version-control systems. To streamline how we share resources between teams, we've been asked to move to a distributed version-control system that can better handle the collaboration.
 
-**Mara:** That's good to know. If you remember, we put it on our board. Currently, we're using a centralized version-control system. It works great for us now, but I agree that a distributed version-control system is a better choice when we start to share between teams and our team gets bigger. It's also a task on our board to increase visibility so that all the stakeholders know what everyone is doing. I think a distributed source-control system like Git would also help.
+**Mara:** That's good to know. If you remember, we put it on our board. Currently, we're using a centralized version-control system. It works great for us now, but I agree that a distributed version-control system is a better choice when we start to share between teams, and our team gets bigger. It's also a task on our board to increase visibility so that all the stakeholders know what everyone is doing. I think a distributed source-control system like Git would also help.
 
 **Andy:** I've been wanting to try Git for a while. I never seem to have the time. Is it difficult to learn or set up? If it seems reasonable, maybe we could work on it now. I'm tired of always putting things off. And it would be nice to be able to see what everyone is doing and to have access to the entire repository. OK, what's it all about?
 
@@ -22,7 +22,7 @@ Mara and Andy move to the whiteboard for a discussion on version control.
 
 :::image type="content" source="../media/2-whiteboard-centralized-vs-distributed-drawing.png" border="false" alt-text="Diagram of a hand-drawn illustration of centralized versus distributed source control.":::
 
-**Mara:** The drawing on the left is _centralized version control_, like what we're using now. We have a central version of the code base :::image type="icon" source="../../shared/media/callout-01.png"::: in Team Foundation Version Control (TFVC) that everyone uses. We each work on the files we need to change and then merge them back into the main repository when we're finished with them.
+**Mara:** The drawing on the left is _centralized version control_, like what we're using now. We have a central version of the code base :::image type="icon" source="../../shared/media/callout-01.png"::: in Team Foundation Version Control (TFVC) that everyone uses. We each work on the files we need to change, and then merge them back into the main repository when we're finished with them.
 
 **Andy:** Yes, and that's working for us. Well, except when I was blocked that time when a breaking change got merged into the central repo.
 
@@ -54,9 +54,9 @@ What's cool about Azure DevOps is that it works well both with centralized versi
 
 ## How do I work with Git?
 
-**Mara:** Like I mentioned before, with distributed systems, developers are free to access any file they need without affecting other developers' work, because they have their own copy of the repository. A _clone_ is your local copy of a repository.
+**Mara:** Like I mentioned before, with distributed systems, developers are free to access any file they need without affecting other developers' work. This is because they have their own copy of the repository. A _clone_ is your local copy of a repository.
 
-When we work on a feature or a bug fix, we usually want to try out different approaches until we find the best solution. However, trying out code on your copy of the main code base isn't a good idea, because you might not want to keep the first few tries.
+When we work on a feature or a bug fix, we usually want to try out different approaches until we find the best solution. However, trying out code on your copy of the main code base isn't a good idea because you might not want to keep the first few tries.
 
 To give you a better option, Git has a feature called _branching_, where you can maintain as many copies as you want and merge back only the one you want to keep. This keeps the main branch stable.
 
@@ -94,7 +94,7 @@ Before you make changes to a file, you check out a new branch so that you know y
  :::row:::
     :::column span="8":::
 **Step 3**:
-You're now safe to make whatever changes you want, because these changes are only in your branch. As you work, you can _commit_ your changes to your branch to ensure that you don't lose any work, and to provide a way to roll back any changes you've made to earlier versions. Before you can commit changes, you need to stage your files so that Git knows which ones you're ready to commit.
+You're now safe to make whatever changes you want because these changes are only in your branch. As you work, you can _commit_ your changes to your branch to ensure that you don't lose any work, and to provide a way to roll back any changes you've made to earlier versions. Before you can commit changes, you need to stage your files so that Git knows which ones you're ready to commit.
     :::column-end:::
     :::column:::
         :::image type="content" source="../media/2-github-paths-3.png" border="false" alt-text="Diagram of the commits being made to the local branch.":::
@@ -112,7 +112,7 @@ The next step is to _push_, or upload, your local branch up to the remote reposi
 :::row:::
     :::column span="8":::
 **Step 5**:
-This step is a common one, but not required. When you're satisfied that your code is working as you want it to, you can _pull_, or merge, the remote `main` branch back into your local `main` branch. Changes have been taking place there that your local `main` branch doesn't have yet. After you've synchronized the remote `main` branch with yours, merge your local `main` branch into your working branch and test your build again.
+This step is a common one but not required. When you're satisfied that your code is working as you want it to, you can _pull_, or merge, the remote `main` branch back into your local `main` branch. Changes have been taking place there that your local `main` branch doesn't have yet. After you've synchronized the remote `main` branch with yours, merge your local `main` branch into your working branch and test your build again.
 
 This process helps ensure that your feature works with the latest code. It also helps ensure that your work will integrate smoothly when you submit your pull request.
     :::column-end:::
@@ -132,7 +132,7 @@ Your local code now needs to be committed and pushed up to the hosted repository
 :::row:::
     :::column span="8":::
 **Step 7**:
-You're finally ready to propose your changes to the remote `main` branch. To do this, you begin a pull request. When configured in Azure Pipelines or another CI/CD system, this step triggers the build process, and you can watch your changes move through the pipeline. After the build succeeds and others approve your pull request, your code can be merged into the remote `main` branch. (It's still up to a human to merge the changes.)
+You're finally ready to propose your changes to the remote `main` branch. To do this, you begin a pull request. When configured in Azure Pipelines or another CI/CD system, this step triggers the build process. You can watch your changes move through the pipeline. After the build succeeds and others approve your pull request, your code can be merged into the remote `main` branch. (It's still up to a human to merge the changes.)
     :::column-end:::
     :::column:::
         :::image type="content" source="../media/2-github-paths-7.png" border="false" alt-text="Diagram of a pull request from a branch into main.":::
