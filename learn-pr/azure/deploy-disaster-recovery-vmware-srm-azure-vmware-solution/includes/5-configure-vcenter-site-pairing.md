@@ -234,3 +234,22 @@ JetStream is built on the foundation of Continuous Data Protection (CDP), which 
 | **JetStream Management Server Virtual Appliance (MSA)**   | MSA enables both Day 0 and Day 2 configuration, such as primary sites, protection domains, and recovering VMs. The MSA is deployed from an OVA file on a vSphere node by the cloud admin. The MSA collects and maintains statistics relevant to VM protection and implements a vCenter Server plugin that allows you to manage JetStream DR natively with the vSphere Client. The MSA doesn't handle replication data of protected VMs. |
 | **JetStream DR Virtual Appliance (DRVA)** | Linux-based virtual machine appliance receives protected VMs replication data from the source ESXi host. It maintains the replication log and manages the transfer of the VMs and their data to the object store such as Azure Blob Storage. Depending upon the number of protected VMs and the amount of VM data to replicate, the private cloud admin can create one or more DRVA instances. |
 | **JetStream ESXi host components (IO Filter packages)** | JetStream software installed on each ESXi host configured for JetStream DR. The host driver intercepts the vSphere VMs I/O and sends the replication data to the DRVA. The IO filters also monitor relevant events, such as vMotion, Storage vMotion, snapshots, etc.
+| **JetStream Protected Domain** | Logical group of VMs that are protected together using the same policies and runbook. The data for all VMs in a protection domain is stored in the same Azure Blob container instance. A single DRVA instance handles replication to remote DR storage for all VMs in a protected domain. | 
+| **Azure Blob Storage containers** | The protected VM replicated data is stored in Azure Blobs. JetStream software creates one Azure Blob container instance for each JetStream Protected Domain. |
+
+**JetStream scenarios on Azure VMware Solution**
+
+You can use JetStream DR with Azure VMware Solution for the follwoing two scenarios.
+
+**Scenario 1:** On-premises VMware vSphere to Azure VMware Solution DR.
+
+In this scenario, the primary site is your on-premises VMware vSphere environment and the DR site is an Azure VMware Solution private cloud. 
+
+:::image type="content"  source="../media/5-jetstream-on-premises-to-cloud-diagram-diagram.png" alt-text="Diagram shows the VMware vSphere environment where the DR site is an Azure VMware Solution private cloud."lightbox="../media/5-jetstream-on-premises-to-cloud-diagram.png":::
+
+**Scenario 2:** Azure VMware Solution to Azure VMware Solution DR.
+
+In this scenario, the primary site is an Azure VMware Solution private cloud in one Azure region. The disaster recovery site is an Azure VMware Solution private cloud in a different Azure region.
+
+:::image type="content"  source="../media/5-jetstream-cloud-to-cloud-diagram.png" alt-text="Diagram shows the Azure VMware Solution private cloud in one Azure region and the DR site is an Azure VMware Solution private cloud in a different Azure region."lightbox="../media/5-jetstream-cloud-to-cloud-diagram.png":::
+
