@@ -220,6 +220,18 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
 
 1. In the list of results, select the entry representing the **cyclecloud-vm** Azure VM, and then select **Save**.
 
+1. Once back at the **Access control (IAM)** page, select **+ Add**, and in the drop-down menu, select **Add role assignment** to add another role.
+
+1. In the **Add role assignment** section, configure the following settings (leave others with their default values):
+
+    | Setting | Value |
+    | --- | --- |
+    | Role | Select the **Storage Blob Data Reader** entry under **Job function roles**. |
+    | Assign access to | Select **Managed Identity**. |
+    | Select members | Select **Virtual Machine** in the **Managed Identity** dropdown and **cyclecloud-vm** under **Select**. |
+
+1. In the list of results, select the entry representing the **cyclecloud-vm** Azure VM, and then select **Save**.
+
 1. On your computer, switch to the web browser window displaying the Azure CycleCloud web application.
 
 1. In the **Add Subscription** pop-up window, in the **Subscription Name** text box, enter a descriptive name for your Azure subscription. Next, select **Managed Identity** from the Authentication radio buttons, and then select **Validate Credentials**.
