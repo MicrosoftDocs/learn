@@ -17,43 +17,43 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What is the purpose of setting the environment variable spring.profiles.active to postgres in the Azure Container Apps configuration?"
+    - content: "What is the purpose of setting the environment variable `spring.profiles.active` to `postgres` in the Azure Container Apps configuration?"
       choices:
         - content: "It enables Azure Container Apps to automatically connect to any available PostgreSQL database instance."
           isCorrect: false
-          explanation: "Setting spring.profiles.active does not automatically connect to any PostgreSQL database; the database connection still needs to be configured manually."
+          explanation: "Setting `spring.profiles.active` doesn't automatically connect to any PostgreSQL database. The database connection still needs to be configured manually."
         - content: "It activates a specific Spring profile that configures the application to use PostgreSQL instead of the default H2 database."
           isCorrect: true
-          explanation: "This is correct; the spring.profiles.active variable activates the PostgreSQL configuration within the Spring application."
-        - content: "It creates a new PostgreSQL database automatically if one is not already specified."
+          explanation: "This is correct; the `spring.profiles.active` variable activates the PostgreSQL configuration within the Spring application."
+        - content: "It creates a new PostgreSQL database automatically if one isn't already specified."
           isCorrect: false
-          explanation: "This is incorrect; setting the profile does not create a new PostgreSQL database"
+          explanation: "This is incorrect. Setting the profile doesn't create a new PostgreSQL database."
         - content: "It sets a default admin password for the PostgreSQL database."
           isCorrect: false
-          explanation: "This answer is incorrect as the profile setting does not impact the PostgreSQL database password."
-    - content: "What benefits does enabling the Java Stack in Azure Container Apps provide for your Java applications?"
+          explanation: "This answer is incorrect. The profile setting doesn't affect the PostgreSQL database password."
+    - content: "What benefits does enabling the Java stack in Azure Container Apps provide for your Java applications?"
       choices:
-        - content: "Automatic memory fit tailored for Java applications, optimizing resource usage."
+        - content: "Automatic memory fitting tailored for Java applications, optimizing resource usage."
           isCorrect: false
-          explanation: "Correct. Java Stack includes automatic memory fitting, optimizing memory usage for Java applications."
+          explanation: "Correct. The Java stack includes automatic memory fitting, optimizing memory usage for Java applications."
         - content: "Access to built-in JVM metrics for tracking memory usage, garbage collection, and thread count."
           isCorrect: false
-          explanation: "Correct. Java Stack provides JVM-level metrics that help monitor application health and performance."
+          explanation: "Correct. The Java stack provides JVM-level metrics that help monitor application health and performance."
         - content: "Built-in Java diagnostics tools to monitor application health and performance."
           isCorrect: false
-          explanation: "Correct. Built-in diagnostics tools are part of Java Stack, enabling deeper monitoring and troubleshooting."
+          explanation: "Correct. Built-in diagnostics tools are part of the Java stack, enabling deeper monitoring and troubleshooting."
         - content: "All of the above."
           isCorrect: true
-          explanation: "Correct. All of the listed features are benefits provided by the Java Stack in Azure Container Apps."
-    - content: "When deploying the Spring Petclinic application on Azure Container Apps, which resource is automatically set up to enable centralized logging and monitoring for the application?"
+          explanation: "Correct. All of the listed features are benefits provided by the Java stack in Azure Container Apps."
+    - content: "When deploying the Spring PetClinic application on Azure Container Apps, which resource is automatically set up to enable centralized logging and monitoring for the application?"
       choices:
         - content: "Azure Cosmos DB"
           isCorrect: false
-          explanation: "Incorrect. Azure Cosmos DB is a database service and is not automatically set up for logging or monitoring in Azure Container Apps."
+          explanation: "Incorrect. Azure Cosmos DB is a database service and isn't automatically set up for logging or monitoring in Azure Container Apps."
         - content: "Log Analytics workspace"
           isCorrect: true
           explanation: "Correct. A Log Analytics workspace is automatically created during deployment to collect logs and monitor the application's performance."
         - content: "Azure Front Door"
           isCorrect: false
-          explanation: "Incorrect. Azure Front Door is a global load balancer and is not automatically created when deploying applications in Azure Container Apps."
+          explanation: "Incorrect. Azure Front Door is a global load balancer, and isn't automatically created when deploying applications in Azure Container Apps."
               
