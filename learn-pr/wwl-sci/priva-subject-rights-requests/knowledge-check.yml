@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-subject-rights-requests.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your company needs to manage privacy requests across multiple systems, including Amazon Web Services and on-premises servers. Which Microsoft Priva capability addresses this need?"
+    choices:
+    - content: "Requests for data beyond Microsoft 365."
+      isCorrect: true
+      explanation: "Correct: This feature enables managing privacy requests across multicloud and on-premises environments."
+    - content: "Data retention policies."
+      isCorrect: false
+      explanation: "Incorrect: Retention policies manage data retention but don't fulfill privacy requests."
+    - content: "Requests for data within Microsoft 365."
+      isCorrect: false
+      explanation: "Incorrect: These requests focus on data stored in Microsoft 365 services only."
+
+  - content: "A customer has requested a summary of their personal data stored in your systems. Which Priva request type should you use?"
+    choices:
+    - content: "Delete."
+      isCorrect: false
+      explanation: "Incorrect: A delete request removes data but doesn't provide summaries."
+    - content: "Export."
+      isCorrect: false
+      explanation: "Incorrect: An export request includes the data itself, not just a summary."
+    - content: "Access."
+      isCorrect: true
+      explanation: "Correct: An access request provides a summary of the customer's personal information."
+
+  - content: "Your team wants to ensure new requests meet compliance standards before activation. What should they do?"
+    choices:
+    - content: "Run the request in test mode."
+      isCorrect: true
+      explanation: "Correct: Test mode allows you to evaluate a request's performance before activation."
+    - content: "Approve the request immediately."
+      isCorrect: false
+      explanation: "Incorrect: Immediate approval risks compliance errors without testing."
+    - content: "Assign tasks manually to data owners."
+      isCorrect: false
+      explanation: "Incorrect: Assigning tasks is part of request processing, not pre-activation testing."
+
+  - content: "A task owner needs to identify duplicates in a request's data set. What should they do?"
+    choices:
+    - content: "Apply advanced filters to remove duplicates."
+      isCorrect: false
+      explanation: "Incorrect: Filters refine results but don't detect duplicates."
+    - content: "Use the detect duplicates option in the Data Collected tab."
+      isCorrect: true
+      explanation: "Correct: This tool identifies duplicate items for review."
+    - content: "Download all files and compare them manually."
+      isCorrect: false
+      explanation: "Incorrect: Manual comparison is unnecessary when detection tools are available."
+
+  - content: "What is an important first step before using subject rights requests for data beyond Microsoft 365?"
+    choices:
+    - content: "Manually assign Privacy Reader roles to task owners."
+      isCorrect: false
+      explanation: "Incorrect: While roles are important, registering assets is the first step."
+    - content: "Enable test mode for all workflows."
+      isCorrect: false
+      explanation: "Incorrect: Test mode evaluates requests but isn't a setup prerequisite."
+    - content: "Register data assets in the Unified Catalog."
+      isCorrect: true
+      explanation: "Correct: Registered assets ensure tasks are assigned to the appropriate data owners."

@@ -12,19 +12,9 @@ These requests can be initiated in two ways:
 1. **By the data subject**: An external individual, such as a customer or former employee, submits a request via an online form created by your organization.
 2. **Manually by your organization**: A user in your organization creates a request on behalf of the data subject.
 
-## Prerequisites
-
-Before creating a request, ensure the following:
-
-- **Access to the Microsoft Purview Data Map**: Verify that your organization has access to the Data Map, as it's a core component for locating and classifying data.
-- **Data assets registered in the Unified Catalog**: Ensure your assets are registered and contain classifications and owners to enable task assignments.
-- **Appropriate roles assigned**: Users must have roles such as Privacy Curator, Privacy Reader, or Data Reader to perform specific tasks.
-
-For detailed role descriptions, see [Governance roles and permissions](/purview/roles-permissions).
-
 ## Create a request manually
 
-When a data subject contacts your organization to request an export or deletion of their personal data, you can create a request manually. This involves selecting a template to define how the request will be fulfilled and entering basic details about the data subject.
+When a data subject contacts your organization to request an export or deletion of their personal data, you can create a request manually. This process involves selecting a template to define how the request will be fulfilled and entering basic details about the data subject.
 
 ### Steps to create a request
 

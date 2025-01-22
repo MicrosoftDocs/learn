@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-subject-rights-requests.configure-prerequisites-beyond-m365
+title: Configure prerequisites for requests for data beyond Microsoft 365 (preview)
+metadata:
+  title: Configure prerequisites for requests for data beyond Microsoft 365 (preview)
+  description: "Configure prerequisites for requests for data beyond Microsoft 365 (preview)"
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/configure-prerequisites-beyond-m365.md)]

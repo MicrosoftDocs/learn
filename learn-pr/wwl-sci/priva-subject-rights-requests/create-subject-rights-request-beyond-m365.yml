@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-subject-rights-requests.create-subject-rights-request-beyond-m365
+title: Create and manage subject rights requests for data beyond Microsoft 365 (preview)
+metadata:
+  title: Create and manage subject rights requests for data beyond Microsoft 365 (preview)
+  description: "Create and manage subject rights requests for data beyond Microsoft 365 (preview)."
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/create-subject-rights-request-beyond-m365.md)]

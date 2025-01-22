@@ -25,16 +25,6 @@ Roles determine the tasks users can perform within the subject rights requests s
 
 For more information, see [Microsoft Purview governance roles and permissions](https://learn.microsoft.com/purview/roles-permissions).
 
-## Ensure a strong data governance foundation
-
-For subject rights requests to be effective, your organization needs a well-structured data governance solution. Strong governance ensures data is classified, understood, and actionable, which directly impacts your ability to manage requests efficiently. Key steps include:
-
-- **Establishing glossary terms**: Use business-friendly terms to make data more discoverable and understandable for stakeholders.
-- **Defining objectives and outcomes (OKRs)**: Align data usage with organizational goals to enhance compliance and decision-making.
-- **Improving data quality**: Address issues like accuracy, consistency, and completeness to build trust in your data.
-
-Implementing these practices helps your team maximize the value of subject rights requests and ensures a sustainable approach to managing data privacy.
-
 ## Set up request forms and templates
 
 To process subject rights requests, your organization must first create request forms and templates. These components define how requests are submitted and processed.
@@ -44,8 +34,8 @@ To process subject rights requests, your organization must first create request 
 Request forms are publicly available web forms that data subjects use to submit requests. These forms are customized with:
 
 - **Contact details**: Include a privacy contact and organization privacy statement.
-- **Questionnaire**: Add fields such as name, email address, and additional identifiers to locate the data subject’s information.
-- **Validation steps**: Implement identity validation, such as a one-time PIN (OTP) sent to the data subject’s email.
+- **Questionnaire**: Add fields such as name, email address, and additional identifiers to locate the data subject's information.
+- **Validation steps**: Implement identity validation, such as a one-time PIN (OTP) sent to the data subject's email.
 
 Follow these steps to build a request form in the Microsoft Purview portal:
 
@@ -62,6 +52,8 @@ Templates establish the parameters for fulfilling subject rights requests. Each 
 - **Connected request forms**
 - **Workflow requirements**
 
+Templates define the fulfillment workflow for requests submitted through connected forms, ensuring that the request process aligns with organizational requirements and deadlines.
+
 Steps to create a template:
 
 1. Navigate to **Request forms and templates** in the Microsoft Purview portal.
@@ -71,15 +63,15 @@ Steps to create a template:
 
 Once completed, templates and forms enable seamless request submission and processing.
 
-## Build a strong data governance foundation
+## Ensure a strong data governance foundation
 
-A robust data governance strategy ensures subject rights requests are managed effectively. Key practices include:
+For subject rights requests to be effective, your organization needs a well-structured data governance solution. Strong governance ensures data is classified, understood, and actionable, which directly impacts your ability to manage requests efficiently. Key steps include:
 
-- **Defining glossary terms**: Use business-friendly terms to enhance data discoverability.
-- **Setting objectives and key results (OKRs)**: Align data governance efforts with organizational goals.
+- **Establishing glossary terms**: Use business-friendly terms to make data more discoverable and understandable for stakeholders.
+- **Defining objectives and outcomes (OKRs)**: Align data usage with organizational goals to enhance compliance and decision-making.
 - **Improving data quality**: Address issues like accuracy, consistency, and completeness to build trust in your data.
 
-Investing in these practices ensures a sustainable and efficient approach to managing privacy requests.
+Implementing these practices helps your team maximize the value of subject rights requests and ensures a sustainable approach to managing data privacy.
 
 ## Legal disclaimer
 
