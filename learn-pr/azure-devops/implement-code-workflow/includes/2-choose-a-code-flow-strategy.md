@@ -10,7 +10,7 @@ Mara is diligently working on her assigned features when Andy walks in.
 
 **Andy:** Hi Mara. In the leadership meeting this morning, it was brought up that our team and the game-development team are using different version-control systems. To streamline how we share resources between teams, we've been asked to move to a distributed version-control system that can better handle the collaboration.
 
-**Mara:** That's good to know. If you remember, we put it on our board. Currently, we're using a centralized version-control system. It works great for us now, but I agree that a distributed version-control system is a better choice when we start to share between teams, and our team gets bigger. It's also a task on our board to increase visibility so that all the stakeholders know what everyone is doing. I think a distributed source-control system like Git would also help.
+**Mara:** That's good to know. If you remember, we put it on our board. Currently, we're using a centralized version-control system. It works great for us now, but I agree that a distributed version-control system is a better choice when we start to share between teams and our team gets bigger. It's also a task on our board to increase visibility so that all the stakeholders know what everyone is doing. I think a distributed source-control system like Git would also help.
 
 **Andy:** I've been wanting to try Git for a while. I never seem to have the time. Is it difficult to learn or set up? If it seems reasonable, maybe we could work on it now. I'm tired of always putting things off. And it would be nice to be able to see what everyone is doing and to have access to the entire repository. OK, what's it all about?
 
