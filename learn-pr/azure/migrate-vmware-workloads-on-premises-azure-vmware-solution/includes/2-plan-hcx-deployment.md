@@ -30,7 +30,7 @@ All required network ports need to be open for communication between the on-prem
 | Port   | Protocol | Notes |
 | :------| :------- | :---- |
 | 4500 | UDP | Used for VMs in the source network communicating with VMs in the VMware HCX extended network, IX transport path carries VMware HCX migration and disaster recovery traffic.
-| 443 | TCP | Configure and manage the following: VMware HCX services, activation and service updates, VMware HCX initiated connections, VPXA listener, VMware HCX vMotion control, traffic control for vMotion migration operations, ESX authentication, vCloud Director API, VMware HCX metrics for Aria Operations, virtual machine data transfer, VMware HCX HTTPS communication, and NSX API.
+| 443 | TCP | Configure and manage: VMware HCX services, activation and service updates, VMware HCX initiated connections, VPXA listener, VMware HCX vMotion control, traffic control for vMotion migration operations, ESX authentication, vCloud Director API, VMware HCX metrics for Aria Operations, virtual machine data transfer, VMware HCX HTTPS communication, and NSX API.
 | 9443 | TCP | VMware HCX service appliance configuration and control, VMware HCX internal control, activate, and register vCenter Server and management servers.
 | 45000 to 44600 | TCP | Virtual machine data transfer. |
 | 5672 | TCP | Advanced message queue protocol. |
@@ -48,7 +48,7 @@ Next, you need to factor in the following network segments in the on-premises VM
 | :-------------- | :---- |
 | Management network | - Use the same management network as the on-premises VMware cluster. <br>- At a minimum, select two IPs on this network segment for VMware HCX. <br>- Create a new /26 network segment for larger environments. <br>- Present that network segment as a port group to the on-premises VMware cluster. |
 Uplink network | - Use the same management network for the uplink network segment. |
-| vMotion network | - Use the same network as vMotion by the on-premises VMware cluster. <br>- At a minimum, identify two IPs on this network segment for VMware HCX. <br>- You might need more IPs, depending on the scale of the deployment. <br>- The vMotion network should be exposed to a distributed virtual switch or vSwitch0. <br>- If the vMotion isn't configured that way, you need to modify the configuration. <br>- VMware vSphere environments typically use non-routed network segments for vMotion, which doesn't cause a problem.
+| vMotion network | - Use the same network as vMotion by the on-premises VMware cluster. <br>- At a minimum, identify two IPs on this network segment for VMware HCX. <br>- You might need more IPs, depending on the scale of the deployment. <br>- The vMotion network should be exposed to a distributed virtual switch or vSwitch0. <br>- If the vMotion isn't configured that way, you need to modify the configuration. <br>- VMware vSphere environments typically use nonrouted network segments for vMotion, which doesn't cause a problem.
 | Replication network | - Use the same network segment as the management and uplink network segments. <br>- If the on-premises hosts use a dedicated replication VMkernel network, reserve two IP addresses in this network segment. <br>- Use the replication VMkernel network for the replication network segment.
 
 ## Different migration types
