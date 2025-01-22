@@ -237,7 +237,7 @@ JetStream is built on the foundation of Continuous Data Protection (CDP), which 
 | **JetStream Protected Domain** | Logical group of VMs that are protected together using the same policies and runbook. The data for all VMs in a protection domain is stored in the same Azure Blob container instance. A single DRVA instance handles replication to remote DR storage for all VMs in a protected domain. | 
 | **Azure Blob Storage containers** | The protected VM replicated data is stored in Azure Blobs. JetStream software creates one Azure Blob container instance for each JetStream Protected Domain. |
 
-**JetStream scenarios on Azure VMware Solution**
+### JetStream scenarios on Azure VMware Solution
 
 You can use JetStream DR with Azure VMware Solution for the follwoing two scenarios.
 
