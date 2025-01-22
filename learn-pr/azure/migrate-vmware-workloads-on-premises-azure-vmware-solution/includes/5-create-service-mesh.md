@@ -19,7 +19,7 @@ After you confirm the networking ports and test them as open, take the following
 
     :::image type="content" source="../media/5-hcx-create-service-mesh.png" alt-text="Screenshot of options to select when you're creating a service mesh between the on-premises VMware HCX Connector and Azure VMware Solution."lightbox="../media/5-hcx-create-service-mesh.png":::
 
-1. Review the pre-populated sites created during site pairing, then select **Continue**. If this site is the first service mesh configuration, the first screen doesn't need modification.
+1. Review the prepopulated sites created during site pairing, then select **Continue**. If this site is the first service mesh configuration, the first screen doesn't need modification.
 
 1. Select both the source and remote compute profiles from the dropdown lists, then select **Continue**. These selections define where VMs can use VMware HCX services for migration.
 
@@ -27,7 +27,7 @@ After you confirm the networking ports and test them as open, take the following
 
     :::image type="content" source="../media/5-select-compute-profile-remote.png" alt-text="Screenshot that shows selecting the remote compute profile in Azure VMware Solution.":::
 
-1. Review the services that will be enabled during the service mesh configuration, then select **Continue**.
+1. Review the services to be enabled during the service mesh configuration, then select **Continue**.
 
     :::image type="content" source="../media/5-review-services-enabled-configuration.png" alt-text="Screenshot of where to review the services enabled for Azure VMware Solution.":::
 
@@ -43,17 +43,17 @@ After you confirm the networking ports and test them as open, take the following
 
 1. Review the topology preview, then select **Continue**.
 
-    :::image type="content" source="../media/5-hcx-review-topology-preview.png" alt-text="Screenshot of the review topology preview pane during creation of the service mesh."lightbox="../media/5-hcx-review-topology-preview.png":::
+    :::image type="content" source="../media/5-hcx-review-topology-preview.png" alt-text="Screenshot of the review topology preview page during creation of the service mesh."lightbox="../media/5-hcx-review-topology-preview.png":::
 
 1. Enter a user-friendly name for this service mesh, then select **Finish** to complete the configuration.
 
-    :::image type="content" source="../media/5-hcx-service-mesh-finish-to-complete.png" alt-text="Screenshot of the final configuration pane before creating the service mesh for VM migration."lightbox="../media/5-hcx-service-mesh-finish-to-complete.png":::
+    :::image type="content" source="../media/5-hcx-service-mesh-finish-to-complete.png" alt-text="Screenshot of the final configuration page before creating the service mesh for VM migration."lightbox="../media/5-hcx-service-mesh-finish-to-complete.png":::
 
 1. Select **View Tasks** to monitor the service mesh deployment.
 
     :::image type="content" source="../media/5-monitor-hcx-service-mesh-tasks.png" alt-text="Screenshot of the button for viewing service mesh configuration tasks in the on-premises VMware HCX Connector."lightbox="../media/5-monitor-hcx-service-mesh-tasks.png":::
 
-1. When the service mesh deployment finishes successfully, all services will show as green.
+1. When the service mesh deployment finishes successfully, all services show as green.
 
     :::image type="content" source="../media/5-hcx-service-mesh-ready-green.png" alt-text="Screenshot of a finished deployment, where the service mesh displays all services as green in the on-premises VMware HCX Connector."lightbox="../media/5-hcx-service-mesh-ready-green.png":::
 
@@ -61,7 +61,7 @@ After you confirm the networking ports and test them as open, take the following
 
     :::image type="content" source="../media/5-hcx-interconnect-appliance-state.png" alt-text="Screenshot of checking the health status of the on-premises HCX appliances."lightbox="../media/5-hcx-interconnect-appliance-state.png":::
 
-1. Next, verify the health of the service mesh in Azure VMware Solution. To do this, in the same **Appliances** pane, examine the appliances deployed underneath the on-premises appliances.
+1. Next, verify the health of the service mesh in Azure VMware Solution. To verify, navigate to the same **Appliances** page, examine the appliances deployed underneath the on-premises appliances.
 
     :::image type="content" source="../media/5-interconnect-appliance.png" alt-text="Screenshot of interconnect appliances that were deployed to Azure VMware Solution by enabling the service mesh.":::
 
