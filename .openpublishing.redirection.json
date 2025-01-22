@@ -36679,6 +36679,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-azure-government/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/2-what-is-azure-government.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/3-security-on-azure-government.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/4-compliance-on-azure-government.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/5-connect-to-azure-government.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/6-marketplace.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/7-purchase-azure-government.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/8-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/9-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/configure-azure-resources-tools/index.md",
       "redirect_url": "/training/modules/describe-features-tools-manage-deploy-azure-resources/",
       "redirect_document_id": false
