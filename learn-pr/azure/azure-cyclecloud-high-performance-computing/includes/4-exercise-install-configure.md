@@ -220,7 +220,7 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
 
 1. In the list of results, select the entry representing the **cyclecloud-vm** Azure VM, and then select **Save**.
 
-1. Once back at the **Access control (IAM)** page, select **+ Add**, and in the drop-down menu, select **Add role assignment** to add another role.
+1. Once back on the **Access control (IAM)** page, select **+ Add**, and in the drop-down menu, select **Add role assignment** to add another role.
 
 1. In the **Add role assignment** section, configure the following settings (leave others with their default values):
 
