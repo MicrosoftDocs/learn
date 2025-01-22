@@ -15,6 +15,11 @@ achievements:
   title: Monitor performance of virtual machines by using Azure Monitor VM Insights
   summary: Monitor performance of virtual machines by using Azure Monitor VM Insights
   iconUrl: /training/achievements/monitor-performance-using-azure-monitor-for-vms.svg
+- uid: learn.intro-to-azure-government.badge
+  type: badge
+  title: Introduction to Azure Government
+  summary: Introduction to Azure Government
+  iconUrl: /training/achievements/intro-to-azure-government.svg
 - uid: learn.make-your-virtual-machines-highly-available.badge
   type: badge
   title: Make your virtual machines highly available
@@ -4612,6 +4617,41 @@ achievements:
   title: Install and configure Visual Studio Code for Python development
   summary: Install and configure Visual Studio Code to create a development environment for learning to build Python applications.
   iconUrl: /training/achievements/python-install-vscode.svg
+- uid: learn.wwl.create-manage-device-templates.badge
+  type: badge
+  title: Create and manage device templates in Azure IoT Central
+  summary: Create and manage device templates in Azure IoT Central
+  iconUrl: /training/achievements/iot/create-manage-device-templates.svg
+- uid: learn.wwl.manage-devices-azure-iot-central.badge
+  type: badge
+  title: Manage devices in Azure IoT Central
+  summary: Manage devices in Azure IoT Central
+  iconUrl: /training/achievements/iot/manage-devices-azure-iot-central.svg
+- uid: learn.iot.connect-iot-edge-device-to-iot-central.badge
+  type: badge
+  title: Connect an Azure IoT Edge device to your Azure IoT Central application
+  summary: Connect an Azure IoT Edge device to your Azure IoT Central application
+  iconUrl: /training/achievements/iot/connect-iot-edge-device-to-iot-central.svg
+- uid: learn.wwl.configure-business-integration.badge
+  type: badge
+  title: Configure business integration in Azure IoT Central
+  summary: Configure business integration in Azure IoT Central
+  iconUrl: /training/achievements/iot/configure-business-integration.svg
+- uid: learn.introduction-to-azure-iot-central.badge
+  type: badge
+  title: Introduction to Azure IoT Central
+  summary: Introduction to Azure IoT Central
+  iconUrl: /training/achievements/iot/introduction-to-azure-iot-central.svg
+- uid: learn.monitor-manage-device-with-iotcentral.badge
+  type: badge
+  title: Build your first Azure IoT Central application to manage your coffee machines
+  summary: Build your first Azure IoT Central application to manage your coffee machines
+  iconUrl: /training/achievements/iot/monitor-and-manage-device-with-iot-central.svg
+- uid: learn.iot.evaluate-iot-scenario-with-iot-central.trophy
+  type: trophy
+  title: Evaluate your IoT Scenario by using Azure IoT Central
+  summary: Evaluate your IoT Scenario by using Azure IoT Central
+  iconUrl: /training/achievements/iot/evaluate-iot-scenario-with-iot-central.svg
 - uid: learn.chat-completions-badge
   type: badge
   title: Introduction to chat completion
@@ -4900,3 +4940,9 @@ achievements:
   title: Create a new Node.js project and work with dependencies
   summary: Use dependencies from the npm registry to develop Node.js applications faster. Learn how to manage dependencies for your project. This module uses JavaScript CommonJS in the Node.js runtime.
   iconUrl: /training/achievements/create-nodejs-project-dependencies.svg
+- uid: learn.azure.manage-device-identity-ad-join.badge
+  type: badge
+  title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
+  summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
+  iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+  
