@@ -245,7 +245,7 @@ You can use JetStream DR with Azure VMware Solution for the follwoing two scenar
 
 In this scenario, the primary site is your on-premises VMware vSphere environment and the DR site is an Azure VMware Solution private cloud. 
 
-:::image type="content"  source="../media/5-jetstream-on-premises-to-cloud-diagram-diagram.png" alt-text="Diagram shows the VMware vSphere environment where the DR site is an Azure VMware Solution private cloud."lightbox="../media/5-jetstream-on-premises-to-cloud-diagram.png":::
+:::image type="content"  source="../media/5-jetstream-on-premises-to-cloud-diagram.png" alt-text="Diagram shows the VMware vSphere environment where the DR site is an Azure VMware Solution private cloud."lightbox="../media/5-jetstream-on-premises-to-cloud-diagram.png":::
 
 **Scenario 2:** Azure VMware Solution to Azure VMware Solution DR.
 
