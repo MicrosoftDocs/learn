@@ -35739,6 +35739,271 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/create-manage-device-templates/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/2-introduction-to-device-templates.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/3-create-device-capability-model.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/4-add-cloud-properties-to-device-template.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/5-add-customizations-to-device-template.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/6-add-dashboards-to-device-template.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/7-version-device-template.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/8-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-manage-device-templates/9-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-devices-azure-iot-central/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-devices-azure-iot-central/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-devices-azure-iot-central/2-manage-your-devices.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-devices-azure-iot-central/3-introduction-to-device-groups.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-devices-azure-iot-central/4-manage-devices-at-scale-using-jobs.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-devices-azure-iot-central/5-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/manage-devices-azure-iot-central/6-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/2-implement-iot-application-with-edge-pattern.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/3-exercise-create-iot-central-application.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/4-deploy-iot-edge-to-virtual-machine.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/5-exercise-deploy-and-manage-an-iot-edge-device.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/6-deploy-azure-function-to-iot-edge.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/7-exercise-deploy-azure-function-to-filter-telemetry.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-iot-edge-device-to-iot-central/8-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/configure-business-integration/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/configure-business-integration/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/configure-business-integration/2-introduction-to-rules.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/configure-business-integration/3-create-rule-set-up-notification.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/configure-business-integration/4-configure-dashboard.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/configure-business-integration/5-analyze-your-device-data.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/configure-business-integration/6-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/configure-business-integration/7-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-iot-central/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-iot-central/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-iot-central/2-what-is-azure-iot-central.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-iot-central/3-how-azure-iot-central-works.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-iot-central/4-when-to-use-azure-iot-central.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-iot-central/5-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-azure-iot-central/6-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/2-create-azure-iot-central-application.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/3-define-coffee-machine-device-template.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/4-create-coffee-machine-device-template.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/5-define-coffee-machine-device-simulator.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/6-connect-coffee-machine-device-simulator.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/7-monitor-manage-coffee-machines.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/8-configure-rules-actions.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/9-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/monitor-and-manage-device-with-iot-central/10-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/evaluate-iot-scenario-with-iot-central/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/index.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
@@ -36676,6 +36941,56 @@
     {
       "source_path": "learn-pr/wwl-data-ai/build-form-recognizer-custom-skill-for-azure-cognitive-search/2-understand-enrichment-pipelines.md",
       "redirect_url": "/training/modules/create-azure-ai-custom-skill/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/2-what-is-azure-government.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/3-security-on-azure-government.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/4-compliance-on-azure-government.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/5-connect-to-azure-government.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/6-marketplace.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/7-purchase-azure-government.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/8-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/9-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-government/index.yml",
+      "redirect_url": "/training/",
       "redirect_document_id": false
     },
     {
@@ -40461,6 +40776,36 @@
     {
       "source_path": "learn-pr/paths/explore-azure-devops-with-github/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-400-implement-ci-azure-pipelines-github-actions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-device-identity-ad-join/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-device-identity-ad-join/2-what-is-device-identity.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-device-identity-ad-join/3-what-is-ad-join.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-device-identity-ad-join/4-what-is-enterprise-state-roaming.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-device-identity-ad-join/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-device-identity-ad-join/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
       "redirect_document_id": false
     }
   ]

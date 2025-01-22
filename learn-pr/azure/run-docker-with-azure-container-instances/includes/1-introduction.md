@@ -9,3 +9,7 @@ In this module, you'll:
 - Use environment variables to configure your container when it starts.
 - Attach a data volume to persist data when your container exits.
 - Learn some basic ways to troubleshoot issues on your Azure containers.
+
+## Prerequisites
+
+You need your own Azure subscription to run this exercise, and you might incur charges. If you don't already have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
