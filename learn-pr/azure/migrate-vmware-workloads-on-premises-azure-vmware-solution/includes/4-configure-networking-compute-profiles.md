@@ -2,7 +2,7 @@ After VMware HCX Connector is installed on-premises, link it to VMware HCX Cloud
 
 ## What is a site pair?  
 
-The first step involves creating a *site pair*. A site pair provides network connectivity needed for management, authentication, and orchestration of VMware's HCX migration services across a source and destination VMware vSphere environment. In your scenario, the source is the on-premises VMware vSphere environment and the destination is Azure VMware Solution. The following table provides additional details:
+The first step involves creating a *site pair*. A site pair provides network connectivity needed for management, authentication, and orchestration of VMware's HCX migration services across a source and destination VMware vSphere environment. In your scenario, the source is the on-premises VMware vSphere environment and the destination is Azure VMware Solution. The following table provides more details:
 
 | Component| Notes |
 | :------- | :----- |
@@ -37,13 +37,13 @@ The first step involves creating a *site pair*. A site pair provides network con
 
 1. For the connection to work, VMware HCX Connector needs to route to the VMware HCX Cloud Manager IP over port 443. Use Azure ExpressRoute, which you deployed on-premises.
 
-1. You get a screen showing that VMware HCX Cloud Manager in Azure VMware Solution and the on-premises VMware HCX Connector are connected or paired.
+1. You get a screen showing that VMware HCX Cloud Managers in Azure VMware Solution and the on-premises VMware HCX Connector are connected or paired.
 
     :::image type="content" source="../media/4-import-certificate-complete-site-pairing.png" alt-text="Screenshot of the HCX Site Pairing tab that shows a new HCX-Connector-On-Premises connection or site pairing."lightbox="../media/4-hcx-on-premises-site-pairing-connected.png":::
 
 ## Create network profiles
 
-VMware HCX Connector on-premises deploys a set of automated virtual appliances that require multiple IP segments. You need to first configure network profiles. You'll create these network profiles for each network intended for use with VMware HCX. When you create network profiles, you'll use the IP segments identified during the VMware HCX deployment planning phase.
+VMware HCX Connector on-premises deploys a set of automated virtual appliances that require multiple IP segments. You need to first configure network profiles so you can then create network profiles for each network intended for use with VMware HCX. When you create network profiles, you then use the IP segments identified during the VMware HCX deployment planning phase.
 
 1. Sign in to the on-premises VMware HCX Connector.
 
@@ -82,7 +82,7 @@ After the network profiles are created, you'll need to create a compute profile.
 
 1. When you have the clusters in your on-premises datacenter, select **Continue**.
 
-1. From the **Select Datastore** drop down, select the datastore storage resource for deploying the VMware HCX Interconnect appliances. Then select **Continue**. Note that when you select multiple resources, VMware HCX uses the first resource selected until its capacity is exhausted.
+1. From the **Select Datastore** drop down, select the datastore storage resource for deploying the VMware HCX Interconnect appliances. Then select **Continue**. Note when you select multiple resources, VMware HCX uses the first resource selected until its capacity is exhausted.
 
     :::image type="content" source="../media/4-deployment-resources-and-reservations.png" alt-text="Screenshot that shows a selected data storage resource and the continue button in the on-premises HCX Connector.":::
 
