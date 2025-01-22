@@ -4617,6 +4617,11 @@ achievements:
   title: Create and manage device templates in Azure IoT Central
   summary: Create and manage device templates in Azure IoT Central
   iconUrl: /training/achievements/iot/create-manage-device-templates.svg
+- uid: learn.wwl.manage-devices-azure-iot-central.badge
+  type: badge
+  title: Manage devices in Azure IoT Central
+  summary: Manage devices in Azure IoT Central
+  iconUrl: /training/achievements/iot/manage-devices-azure-iot-central.svg
 - uid: learn.chat-completions-badge
   type: badge
   title: Introduction to chat completion
