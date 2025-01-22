@@ -132,7 +132,7 @@ Your local code now needs to be committed and pushed up to the hosted repository
 :::row:::
     :::column span="8":::
 **Step 7**:
-You're finally ready to propose your changes to the remote `main` branch. To do this, you begin a pull request. When configured in Azure Pipelines or another CI/CD system, this step triggers the build process. You can watch your changes move through the pipeline. After the build succeeds and others approve your pull request, your code can be merged into the remote `main` branch. (It's still up to a human to merge the changes.)
+You're finally ready to propose your changes to the remote `main` branch. To do this, you begin a pull request. When configured in Azure Pipelines or another CI/CD system, this step triggers the build process, and you can watch your changes move through the pipeline. After the build succeeds and others approve your pull request, your code can be merged into the remote `main` branch. (It's still up to a human to merge the changes.)
     :::column-end:::
     :::column:::
         :::image type="content" source="../media/2-github-paths-7.png" border="false" alt-text="Diagram of a pull request from a branch into main.":::
