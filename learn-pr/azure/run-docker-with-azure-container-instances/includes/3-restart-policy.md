@@ -8,7 +8,7 @@ Azure Container Instances has three restart-policy options:
 
 | Restart policy   | Description |
 | ---------------- | :---------- |
-| **Always** | Containers in the container group are always restarted. This policy makes sense for long-running tasks like a web server. This setting is the **default** applied when no restart policy is specified at container creation. |
+| **Always** | Containers in the container group are always restarted. This policy makes sense for long-running tasks like a web server. This setting is the *default* applied when no restart policy is specified at container creation. |
 | **Never** | Containers in the container group are never restarted. The containers run one time only. |
 | **OnFailure** | Containers in the container group are restarted only when the process executed in the container fails (when it terminates with a nonzero exit code). The containers are run at least once. This policy works well for containers that run short-lived tasks. |
 

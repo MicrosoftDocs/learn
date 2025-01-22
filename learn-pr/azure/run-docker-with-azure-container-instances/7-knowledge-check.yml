@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  ms.date: 04/03/2024
+  ms.date: 01/15/2025
   author: v-tcassi
   ms.author: tomcassidy
   ms.topic: unit
@@ -19,35 +19,35 @@ quiz:
     choices:
     - content: Always
       isCorrect: true
-      explanation: "The restart policy **Always** will ensure needed processes continue to be available even if a restart is required."
+      explanation: "The restart policy **Always** ensures needed processes continue to be available even if a restart is required."
     - content: Never
       isCorrect: false
-      explanation: "The restart policy **Always** will ensure needed processes continue to be available even if a restart is required."
+      explanation: "The restart policy **Always** ensures needed processes continue to be available even if a restart is required."
     - content: OnFailure
       isCorrect: false
-      explanation: "The restart policy **Always** will ensure needed processes continue to be available even if a restart is required."
+      explanation: "The restart policy **Always** ensures needed processes continue to be available even if a restart is required."
 
   - content: "By default, you can see the values of an environment variable in:"
     choices:
     - content: "Only the Azure portal."
       isCorrect: false
-      explanation: "Environment variables are not secured by default and their values can be seen in the Azure portal and the Azure CLI output."
+      explanation: "Environment variables are not secured by default, and you can see their values in the Azure portal and the Azure CLI output."
     - content: "Only the Azure CLI output."
       isCorrect: false
-      explanation: "Environment variables are not secured by default and their values can be seen in the Azure portal and the Azure CLI output."
+      explanation: "Environment variables are not secured by default, and you can see their values in the Azure portal and the Azure CLI output."
     - content: "Both the Azure portal and the Azure CLI output."
       isCorrect: true
-      explanation: "Environment variables are not secured by default and their values can be seen in the Azure portal and the Azure CLI output."
+      explanation: "Environment variables are not secured by default, and you can see their values in the Azure portal and the Azure CLI output."
 
-  - content: "Which troubleshooting command can be used to view container startup events?"
+  - content: "Which troubleshooting command can you use to view container startup events?"
     choices:
-    - content: az container logs
+    - content: "`az container logs`"
       isCorrect: false
       explanation: "The `az container logs` command examines the logs for a container in a container group."
-    - content: az container attach
+    - content: "`az container attach`"
       isCorrect: true
       explanation: "The `az container attach` command shows container events and logs. By contrast, the `az container logs` only shows the logs and not the startup events."
-    - content: az container exec
+    - content: "`az container exec`"
       isCorrect: false
       explanation: "The `az container exec` command executes a command from within a running container of a container group."
 

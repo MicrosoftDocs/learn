@@ -1,10 +1,10 @@
 By default, Azure Container Instances are stateless. If the container crashes or stops, all of its state is lost. To persist state beyond the lifetime of the container, you must mount a volume from an external store.
 
-Mount an Azure file share to an Azure container instance so that you can store data and access it later.
+In this exercise, you mount an Azure file share to an Azure container instance so that you can store data and access it later.
 
 ## Create an Azure file share
 
-Create a storage account and a file share. Later, you can make the file share accessible to an Azure container instance.
+First, you create a storage account and a file share. Later, you can make the file share accessible to an Azure container instance.
 
 1. Your storage account requires a unique name. For learning purposes, run the following command to store a unique name in a Bash variable:
 
@@ -101,7 +101,7 @@ To mount an Azure file share as a volume in a container, you specify the share a
 
     :::image type="content" source="../media/5-files-ui.png" alt-text="Screenshot of the Azure Container Instances file share demo running in a browser." loc-scope="other"::: <!-- no-loc -->
 
-1. Enter some text into the form, and select **Submit**. This action creates a file that contains the text you entered in the Azure file share.
+1. Enter some text into the form and select **Submit**. This action creates a file that contains the text you entered in the Azure file share.
 
 1. Run this `az storage file list` command to display the files that are contained in your file share:
 
