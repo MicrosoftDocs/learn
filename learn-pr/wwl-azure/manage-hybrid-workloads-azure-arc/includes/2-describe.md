@@ -2,11 +2,11 @@
 
 *Azure Arc* is a set of technologies that brings Azure security and cloud-native services to hybrid and multicloud environments. It provides a centralized, unified, and self-service approach to managing, securing, and monitoring:
 
- -  Windows Server
- -  Linux servers
- -  Kubernetes clusters
- -  SQL servers
- -  Azure Data Services
+- Windows Server
+- Linux servers
+- Kubernetes clusters
+- SQL servers
+- Azure Data Services
 
 Azure Arc also extends adoption of cloud native services and DevOps across hybrid, multicloud, and edge environments. In addition to extending the control plane for managing infrastructure, Azure Arc enables companies to run Azure data services, and Azure Machine Learning on containerized infrastructure anywhere.
 
@@ -70,10 +70,9 @@ Azure Arc enables you to deploy and configure the following cloud based technolo
   :::column-end:::
 :::row-end:::
 
-
 ## Additional reading
 
 You can learn more by reviewing the following documents.
 
- -  [What is Azure Resource Manager?](https://aka.ms/azure-resource-manager-management-overview?azure-portal=true)
- -  [What is Azure Arc for servers?](https://aka.ms/azure-arc-servers?azure-portal=true)
+- [What is Azure Resource Manager?](https://aka.ms/azure-resource-manager-management-overview?azure-portal=true)
+- [What is Azure Arc for servers?](https://aka.ms/azure-arc-servers?azure-portal=true)
