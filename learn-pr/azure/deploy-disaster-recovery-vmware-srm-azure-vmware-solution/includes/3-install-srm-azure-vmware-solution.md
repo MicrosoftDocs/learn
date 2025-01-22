@@ -74,7 +74,7 @@ After you prepare all requirements for setting up disaster recovery for your Azu
 
 You can use the following steps to deploy VMware SRM:
 
-1. Log in to the Azure portal.
+1. Sign in to the Azure portal.
 1. Navigate to your subscription and search for **Azure VMware Solution**.
 1. In the **Manage** section, select **Add-ons**.
 1. On the navigation pane, under **Disaster Recovery**, select **Get Started**.
