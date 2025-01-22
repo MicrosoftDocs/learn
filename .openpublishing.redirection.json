@@ -35999,6 +35999,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/evaluate-iot-scenario-with-iot-central/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/index.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
