@@ -72,7 +72,7 @@ The Azure Cloud Shell is available in the Sandbox environment that we're using f
 
 1. Select **Apply** to save your **Signing out + notifications** selections.
 
-1. Select the **Appearance + startup views** tab at the left. Under **Theme**, select one of the different colored themes and select **Apply**. Observe the changes to the portal. Try all of the options, and leave it set to the one you like the best.
+1. Select the **Appearance + startup views** tab at the left. Under **Theme**, select one of the different colored themes and select **Apply**. Observe the changes to the portal, and leave it set to the one you like the best.
 
 1. Select the **Language + region** tab at the left. In the **Language** drop-down box, select **Español**. Select the **Apply** button, then select **OK** to confirm your changes. If a **Translate this page** dialog box appears, close the box. The whole Azure portal now appears in Spanish. You can select **Microsoft Azure** to view the **Home** page in Spanish, or navigate to other pages.
 
