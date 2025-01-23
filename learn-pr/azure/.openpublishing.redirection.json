@@ -6,27 +6,27 @@
           "redirect_document_id": false
            },
            {
-          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/2-introduction.yml",
+          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/2-what-is-azure-hdinsight-aks.yml",
           "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
           "redirect_document_id": false
           },
           {
-          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/3-introduction.yml",
+          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/3-how-azure-hdinsight-aks-works.yml",
           "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
           "redirect_document_id": false
           },
           {
-          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/4-introduction.yml",
+          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/4-when-to-use-azure-hdinsight-aks.yml",
           "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
           "redirect_document_id": false
           },
           {
-          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/5-introduction.yml",
+          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/5-knowledge-check.yml",
           "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
           "redirect_document_id": false
           }, 
           {
-          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/6-introduction.yml",
+          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/6-summary.yml",
           "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
           "redirect_document_id": false
           },
