@@ -35964,6 +35964,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/2-what-is-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/3-how-aks-edge-essentials-works.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/4-when-to-use-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/5-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/6-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
       "redirect_document_id": false

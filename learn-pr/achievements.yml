@@ -4602,6 +4602,11 @@ achievements:
   title: Crack the code and reveal a secret with Python and Visual Studio Code
   summary: You're handed a secret message that needs a code cracker to find the truth. Learn how to solve the code mystery to reveal a location and date to find a hidden treasure. Get a glimpse into the popular Python programming language with this introductory lesson that requires no coding experience.
   iconUrl: /training/achievements/python-partnership/secret-message-revised.svg
+- uid: learn.introduction-to-aks-edge-essentials.badge
+  type: badge
+  title: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
+  summary: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
+  iconUrl: /training/achievements/iot/introduction-to-aks-edge-essentials.svg
 - uid: learn.python-partnership.trophy
   type: trophy
   title: Use Python basics to solve mysteries and find answers
