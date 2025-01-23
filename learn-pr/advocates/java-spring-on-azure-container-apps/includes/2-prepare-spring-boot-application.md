@@ -32,71 +32,71 @@ Before deploying, ensure that the PetClinic application runs successfully on you
 
 1. Navigate to the project directory by using the following command:
 
-# [Bash](#tab/bash)
+    # [Bash](#tab/bash)
 
-```bash
-cd azure-container-apps-java-samples/spring-petclinic/spring-petclinic/
-```
+    ```bash
+    cd azure-container-apps-java-samples/spring-petclinic/spring-petclinic/
+    ```
 
-# [PowerShell](#tab/powershell)
+    # [PowerShell](#tab/powershell)
 
-```powershell
-cd azure-container-apps-java-samples/spring-petclinic/spring-petclinic/
-```
+    ```powershell
+    cd azure-container-apps-java-samples/spring-petclinic/spring-petclinic/
+    ```
 
----
+    ---
 
 1. Initialize and update the `pet-clinic` git submodule to the latest version by using the following command:
 
-# [Bash](#tab/bash)
+    # [Bash](#tab/bash)
 
-```bash
-git submodule update --init --recursive
-```
+    ```bash
+    git submodule update --init --recursive
+    ```
 
-# [PowerShell](#tab/powershell)
+    # [PowerShell](#tab/powershell)
 
-```powershell
-git submodule update --init --recursive
-```
+    ```powershell
+    git submodule update --init --recursive
+    ```
 
----
+    ---
 
 1. Build the project by using the following Maven command:
 
-# [Bash](#tab/bash)
+    # [Bash](#tab/bash)
 
-```bash
-./mvnw clean install
-```
+    ```bash
+    ./mvnw clean install
+    ```
 
-# [PowerShell](#tab/powershell)
+    # [PowerShell](#tab/powershell)
 
-```powershell
-./mvnw clean install
-```
+    ```powershell
+    ./mvnw clean install
+    ```
 
----
+    ---
 
 1. Run the application by using the following command:
 
-# [Bash](#tab/bash)
+    # [Bash](#tab/bash)
 
-```bash
-./mvnw spring-boot:run
-```
+    ```bash
+    ./mvnw spring-boot:run
+    ```
 
-# [PowerShell](#tab/powershell)
+    # [PowerShell](#tab/powershell)
 
-```powershell
-./mvnw spring-boot:run
-```
+    ```powershell
+    ./mvnw spring-boot:run
+    ```
 
----
+    ---
 
 1. Once the application is running, you can access it locally via [http://localhost:8080](http://localhost:8080). You should see the Spring PetClinic interface.
 
-:::image type="content" source="../media/pet-clinic.png" alt-text="Screenshot of the home page of the PetClinic application." lightbox="../media/pet-clinic.png":::
+    :::image type="content" source="../media/pet-clinic.png" alt-text="Screenshot of the home page of the PetClinic application." lightbox="../media/pet-clinic.png":::
 
 ## Database configuration
 
