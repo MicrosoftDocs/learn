@@ -3,10 +3,11 @@ uid: learn.wwl.create-plugins-semantic-kernel
 metadata:
   title: Create plugins for semantic kernel
   description: "This module explores Semantic Kernel SDK plugins. Learn how plugins to the SDK are used to accomplish customized tasks and create intelligent applications."
-  ms.date: 08/27/2024
+  ms.date: 01/23/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: semantic-kernel
@@ -38,13 +39,13 @@ products:
 - azure-openai
 units:
 - learn.wwl.create-plugins-semantic-kernel.introduction
-- learn.wwl.create-plugins-semantic-kernel.explore-built-in-plugins
-- learn.wwl.create-plugins-semantic-kernel.exercise-use-built-in-plugins
 - learn.wwl.create-plugins-semantic-kernel.optimize-language-model-prompts
-- learn.wwl.create-plugins-semantic-kernel.exercise-write-your-own-prompts
-- learn.wwl.create-plugins-semantic-kernel.exercise-use-personas-prompts
-- learn.wwl.create-plugins-semantic-kernel.save-prompts-files
-- learn.wwl.create-plugins-semantic-kernel.exercise-save-prompts-files
+- learn.wwl.create-plugins-semantic-kernel.use-semantic-kernel-prompt-templates
+- learn.wwl.create-plugins-semantic-kernel.exercise-use-semantic-kernel-prompt-templates
+- learn.wwl.create-plugins-semantic-kernel.use-handlebars-prompt-templates
+- learn.wwl.create-plugins-semantic-kernel.exercise-use-handlebars-prompts-templates
+- learn.wwl.create-plugins-semantic-kernel.store-chat-history
+- learn.wwl.create-plugins-semantic-kernel.exercise-store-chat-history
 - learn.wwl.create-plugins-semantic-kernel.knowledge-check
 - learn.wwl.create-plugins-semantic-kernel.summary
 badge:

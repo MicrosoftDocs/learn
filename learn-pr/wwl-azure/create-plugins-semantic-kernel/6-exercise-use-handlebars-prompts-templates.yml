@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-plugins-semantic-kernel.exercise-use-handlebars-prompts-templates
+title: Exercise - Use Handlebars prompt templates
+metadata:
+  title: Exercise - Use Handlebars prompt templates
+  description: "Exercise - Use Handlebars prompt templates"
+  ms.date: 01/23/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-use-handlebars-prompts-templates.md)]
