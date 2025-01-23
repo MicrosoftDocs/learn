@@ -124,7 +124,7 @@ Here, you'll create a pull request for your branch:
     > [!IMPORTANT]
     > This step is important because you can't merge your changes into the Microsoft repository. Ensure that the base repository points to your GitHub account and not MicrosoftDocs.
     >
-    > If you end up with a pull request against MicrosoftDocs, simply close the pull request and repeat these steps.
+    > If you end up with a pull request against MicrosoftDocs, close the pull request and repeat these steps.
 
     This process involves an extra step because you're working from a forked repository. When you work directly with your own repository, and not a fork, your `main` branch is selected by default.
 
@@ -139,7 +139,7 @@ Here, you'll create a pull request for your branch:
 
 1. To complete your pull request, select **Create pull request**.
 
-    This step does not merge any code. It tells others that you have proposed changes to be merged into the `main` branch.
+    This step doesn't merge any code. It tells others that you have proposed changes to be merged into the `main` branch.
 
     :::image type="content" source="../media/4-github-pr-details.png" alt-text="Screenshot of GitHub showing the pull request description and the location of the Create pull request button.":::
 
