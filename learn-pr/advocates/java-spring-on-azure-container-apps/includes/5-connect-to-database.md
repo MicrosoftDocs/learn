@@ -1,20 +1,20 @@
-Since you’ve deployed the Spring Pet Clinic application with the default H2 in-memory database, you might want to connect it to a more powerful, persistent database like PostgreSQL. This will ensure that your application data is stored even when the application is restarted, providing greater durability and scalability for production use.
+Since you deployed the Spring PetClinic application with the default H2 in-memory database, you might want to connect it to a more powerful, persistent database like PostgreSQL. This type of connection ensures that your application data is stored even when the application is restarted, providing greater durability and scalability for production use.
 
 > [!NOTE]
-> This chapter is optional, you may skip it if you are already familar with database configurations.
+> This chapter is optional. You can skip it if you're already familiar with database configurations.
 
-## Create the PostgreSQL Server
+## Create the PostgreSQL server
 
-These environment variables will be used to create necessary database connections in this section.
+Use the following commands to create environment variables used to create the database connections:
 
 ```bash
 export POSTGRESQLSERVER="petclinic-server"
 export DATABASE="petclinic"
 ```
 
-### Update `spring.profiles.active` for PostgreSQL
+### Update spring.profiles.active for PostgreSQL
 
-Firstly let's update the environment variables of the deployed container apps to set the database as PostgreSql
+Use the following command to update the environment variables of the deployed container apps to set the database as PostgreSql:
 
 ```bash
 az containerapp update \
@@ -23,58 +23,67 @@ az containerapp update \
    --set-env-vars "spring.profiles.active"="postgres"
 ```
 
-### Create a new Database
+### Create a new database
 
-Now, let's create a PostgreSQL flexible server.
+To create a database within a new PostgreSQL flexible server instance, use the following steps:
 
-```bash
-az postgres flexible-server create \
-   --name $POSTGRESQLSERVER \
-   --resource-group $RESOURCE_GROUP
-```
+1. Create a PostgreSQL flexible server by using the following command:
 
-You may find the auto-generated admin username and admin password in the output, save in a secure place if you want to connect and config later on.
+    ```azurecli
+    az postgres flexible-server create \
+       --resource-group $RESOURCE_GROUP
+       --name $POSTGRESQLSERVER \
+    ```
 
-We will create a new database on the PostgreSQL flexible server instance.
+    If you find the auto-generated admin username and admin password in the output, save these credentials in a secure place. You can optionally use them later to connect and configure the database.
 
+1. Create a new database in the PostgreSQL flexible server instance by using the following command:
 
-```bash
-az postgres flexible-server db create \
-   --database-name $DATABASE \
-   --resource-grou $RESOURCE_GROUP \
-   --server-name $POSTGRESQLSERVER
-```
+    ```azurecli
+    az postgres flexible-server db create \
+       --resource-group $RESOURCE_GROUP \
+       --database-name $DATABASE \
+       --server-name $POSTGRESQLSERVER
+    ```
 
-You may check [Create an Azure Database for PostgreSQL - Flexible Server instance using Azure CLI](https://learn.microsoft.com/azure/postgresql/flexible-server/quickstart-create-server-cli) for more details.
+    For more information, see [Quickstart: Create an instance of Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/quickstart-create-server-cli).
 
 ### Connect via Service Connector
 
-With the database been created, now let's connect our previously deployed container app to the PostgreSQL Database.
+Next, connect your previously deployed container app to the PostgreSQL database by using the following steps:
 
-1. In the Azure portal, navigate to your **Azure Container Apps** instance.
-
-2. Go to **Settings** > **Service Connector**.
-
-3. Click on **Create**, then fill out the connection form:
-
+1. In the Azure portal, navigate to **Azure Container Apps** and find your container apps instance.
+1. Go to **Settings** > **Service Connector**.
+1. Select **Create**, and then fill out the connection form using these details:
    - Basic:
-      - **Service type**: DB for PostgreSQL flexible server
-      - **PostgreSQL flexible server**: petclinic-server
-      - **PostgreSQL database**: petclinic
-      - **Client type**: SpringBoot
+      - **Service type**: **DB for PostgreSQL flexible server**
+      - **PostgreSQL flexible server**: **petclinic-server**
+      - **PostgreSQL database**: **pet clinic**
+      - **Client type**: **SpringBoot**
    - Authentication:
-      - Choose Connection string.
-      - Fill in your `Username` and `Password` and leave others as default.
+      - Select **Connection string**.
+      - Fill in your **Username** and **Password** and leave the other fields with their default settings.
 
-![Diagram of the Service Connector.](../media/service_connector.png)
+    :::image type="content" source="../media/service_connector.png" alt-text="Screenshot of the Service Connector (preview) page, with the Service Connector (preview) setting highlighted, along with the Create option.":::
 
-4. Confirm and deploy your changes.
+1. Confirm and deploy your changes.
+1. Once the deployment is ready, select **Validate** to validate your connection status.
 
-5. Once the deploy is ready, cLick on Validate to validate your connection status.
+For more information, see [Connect to PostgreSQL Database from a Java Quarkus Container App without secrets using a managed identity](/azure/container-apps/tutorial-java-quarkus-connect-managed-identity-postgresql-database).
 
-You may check [Connect to PostgreSQL Database from a Java Quarkus Container App without secrets using a managed identity](https://learn.microsoft.com/azure/container-apps/tutorial-java-quarkus-connect-managed-identity-postgresql-database) for more details.
+## Validate the database setup
 
-## Validate the Database setup
-Now that the configuration is complete. If you connect to your PostgreSQL, you will see that the table has already been created.
+The configuration is complete. If you connect to your PostgreSQL database, you can see that the table was created.
 
-![Diagram of the PostgreSQL.](../media/postgresql.png)
+```
+           List of relations
+| Schema | Name            | Type  |
+|--------|-----------------|-------|
+| public | owners          | table |
+| public | pets            | table |
+| public | specialties     | table |
+| public | types           | table |
+| public | vet_specialties | table |
+| public | vets            | table |
+| public | visits          | table |
+```
