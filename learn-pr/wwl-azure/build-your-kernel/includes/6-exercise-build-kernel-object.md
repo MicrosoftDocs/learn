@@ -33,7 +33,7 @@ In this exercise, you learn how to build your first Semantic Kernel SDK project.
     Kernel kernel = builder.Build();
     ```
 
-    Use the endpoint and key values from your Azure OpenAI resource deloyment.
+    Use the endpoint and key values from your Azure OpenAI resource deployment.
 
 5. To test that your kernel and endpoint is working, enter the following code:
 

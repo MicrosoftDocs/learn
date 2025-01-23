@@ -22,7 +22,7 @@ quiz:
     - content: "Semantic Kernel SDK is exclusively designed for gaming applications."
       isCorrect: false
       explanation: "Incorrect. The Semantic Kernel SDK isn't exclusively designed for gaming applications."
-    - content: "Semantic Kernel SDK acts as an bridge between code and large language models."
+    - content: "Semantic Kernel SDK acts as a bridge between code and large language models."
       isCorrect: true
       explanation: "Correct. Semantic Kernel provides a layer for seamless integration with large language models."
   - content: "Which of the following statements is true about the Semantic Kernel SDK?"
