@@ -1,4 +1,4 @@
-Semantic Kernel supports using the Handlebars template syntax for prompts. Handlebars is a straightforward templating language primarily used for generating HTML, but it can also create other text formats. Handlebars templates consist of regular text interspersed with Handlebars expressions. 
+Semantic Kernel supports using the Handlebars template syntax for prompts. Handlebars are a straightforward templating language primarily used for generating HTML, but it can also create other text formats. Handlebars templates consist of regular text interspersed with Handlebars expressions. 
 
 To use Handlebars template with Semantic Kernel, start by installing the package:
 
@@ -25,7 +25,7 @@ In this example, there are two input objects:
 1. `request` - Contains the request the assistant should complete.
 1. `imageData` - Contains the base64 image data.
 
-To use the prompt template, you need to create a `PromptTemplateConfig` object that contains the template and its format. Afterwards, you create a `KernelFunction` object from the template configurtion and specify the Handlebars template factory. Here's an example:
+To use the prompt template, you need to create a `PromptTemplateConfig` object that contains the template and its format. Afterwards, you create a `KernelFunction` object from the template configuration and specify the Handlebars template factory. Here's an example:
 
 ```c#
 // Create the prompt template configuration
@@ -59,7 +59,7 @@ The response to this prompt would be similar to the following output:
 The image is a solid block of bright red color. There are no additional features, shapes, or textures present.
 ```
 
-## Use Handlebars tempaltes in YAML prompts
+## Use Handlebars templates in YAML prompts
 
 You can create prompt functions from YAML files, allowing you to store your prompt templates alongside associated metadata and prompt execution settings. These files can be managed in version control, which is beneficial for tracking changes to complex prompts.
 
