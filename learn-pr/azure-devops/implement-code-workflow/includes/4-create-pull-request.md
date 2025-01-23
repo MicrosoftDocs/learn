@@ -8,7 +8,7 @@ Recall that a *pull request* tells the other developers that you have code ready
 
 Before we start, let's check in with Mara and Andy.
 
-**Andy:** Hi, Mara. I know you've got a build pipeline running on Azure. I'm adding a feature to the website and I want to see the build process for myself. Are we ready to do that?
+**Andy:** Hi, Mara. I know you've got a build pipeline running on Azure. I'm adding a feature to the website, and I want to see the build process for myself. Are we ready to do that?
 
 **Mara:** Absolutely. I created the pipeline on a branch. Why don't we create a pull request and get it merged into `main` so you can use the pipeline, too?
 
@@ -167,7 +167,7 @@ Here, you'll create a pull request for your branch:
 
     :::image type="content" source="../media/4-github-delete-branch.png" alt-text="Screenshot of GitHub showing the location of the Delete branch button.":::
 
-    It's completely safe to delete a branch from GitHub after you've merged your pull request. In fact, it's a common practice, because the branch is no longer needed. The changes are merged and you can still find the details about the changes on GitHub or from the command line. Deleting a merged branch also helps others see only the work that's currently active.
+    It's completely safe to delete a branch from GitHub after you've merged your pull request. In fact, it's a common practice, because the branch is no longer needed. The changes are merged, and you can still find the details about the changes on GitHub or from the command line. Deleting a merged branch also helps others see only the work that's currently active.
 
     Git branches are meant to be short-lived. After you merge a branch, you don't push additional commits onto it or merge it a second time. In most cases, every time you start on a new feature or bug fix, you start with a clean branch that's based on the `main` branch.
 

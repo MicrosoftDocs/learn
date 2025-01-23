@@ -26,7 +26,7 @@ In this section, you'll set up a rule on GitHub that requires at least one revie
 1. Select the **Settings** tab near the top of the page.
 1. On the left menu, select **Branches**.
 1. Make sure that **main** is selected as your default branch.
-1. Select **Add branch protection rule**.
+1. Select **Add classic branch protection rule**.
 1. Under **Branch name pattern**, enter **main**.
 1. Select the **Require a pull request before merging** check box.
 1. Select the **Require approvals** check box.
