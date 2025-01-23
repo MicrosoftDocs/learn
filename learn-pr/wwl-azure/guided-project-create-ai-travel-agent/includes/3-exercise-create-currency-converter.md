@@ -108,4 +108,4 @@ In this task, you create a native function that can convert an amount from a bas
     $52000 VND is approximately $2.13 in US Dollars (USD)
     ```
 
-Now you have a plugin that allows your travel agent to convernt currencies. Great work!
+Now you have a plugin that allows your travel agent to convert currencies. Great work!

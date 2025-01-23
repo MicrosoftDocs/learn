@@ -1,4 +1,4 @@
-In this exercise, you create a handlebars prompt function that instructs the model to get the length of the user's trip before offering an itenerary. Let's get started!
+In this exercise, you create a handlebars prompt function that instructs the model to get the length of the user's trip before offering an itinerary. Let's get started!
 
 1. Navigate to the **Program.cs** file.
 
@@ -6,8 +6,8 @@ In this exercise, you create a handlebars prompt function that instructs the mod
 
     ```c#
     string hbprompt = """
-    <message role="system">Instructions: Before providing the the user with a travel itenerary, ask how many days their trip is.</message>
-    <message role="user">I'm going to Rome. Can you create an itenerary for me?</message>
+    <message role="system">Instructions: Before providing the the user with a travel itinerary, ask how many days their trip is.</message>
+    <message role="user">I'm going to Rome. Can you create an itinerary for me?</message>
     <message role="assistant">Sure, how many days is your trip?</message>
     <message role="user">{{input}}</message>
     """;
@@ -21,7 +21,7 @@ In this exercise, you create a handlebars prompt function that instructs the mod
     {
         Template = hbprompt,
         TemplateFormat = "handlebars",
-        Name = "CreateItenerary",
+        Name = "CreateItinerary",
     };
     ```
 
@@ -29,11 +29,11 @@ In this exercise, you create a handlebars prompt function that instructs the mod
 
     ```c#
     var function = kernel.CreateFunctionFromPrompt(promptTemplateConfig, templateFactory);
-    var plugin = kernel.CreatePluginFromFunctions("TravelItenerary", [function]);
+    var plugin = kernel.CreatePluginFromFunctions("TravelItinerary", [function]);
     kernel.Plugins.Add(plugin);
     ```
 
-    Now the kernel will be able to call your function when the user requests an itenerary.
+    Now the kernel will be able to call your function when the user requests an itinerary.
 
 1. Update the agent's conversation flow with the following code:
 
@@ -63,10 +63,10 @@ In this exercise, you create a handlebars prompt function that instructs the mod
 
 1. Enter `dotnet run` in the terminal.
 
-    In the console, enter a prompt that requests an itenerary for a destination. You should see a response similar to the following:
+    In the console, enter a prompt that requests an itinerary for a destination. You should see a response similar to the following:
 
     ```output
-    User: I want to go to Japan, can you create an itenerary for me?
+    User: I want to go to Japan, can you create an itinerary for me?
     Assistant: Sure! I can help you create an itinerary for your trip to Japan. How many days will you be staying in Japan?
     User: 10 days
     Assistant: Great! Here is a suggested 10-day itinerary for your trip to Japan:
