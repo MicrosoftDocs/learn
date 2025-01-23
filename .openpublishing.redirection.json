@@ -40802,6 +40802,16 @@
       "source_path": "learn-pr/azure/manage-device-identity-ad-join/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-create-ai-travel-agent/4-exercise-route-user-intent.md",
+      "redirect_url": "/training/modules/guided-project-create-ai-travel-agent/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-create-ai-travel-agent/5-exercise-provide-context-cues.md",
+      "redirect_url": "/training/modules/guided-project-create-ai-travel-agent/",
+      "redirect_document_id": false
     }
   ]
 }
