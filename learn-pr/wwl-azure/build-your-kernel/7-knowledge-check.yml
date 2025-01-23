@@ -36,3 +36,14 @@ quiz:
     - content: "Semantic Kernel SDK is only suitable for advanced AI developers."
       isCorrect: false
       explanation: "Incorrect. The Semantic Kernel SDK is suitable for developers of all levels."
+  - content: "How does the Semantic Kernel handle prompts sent to an AI service?"
+    choices:
+    - content: "It builds the prompt using a provided template and processes the response."
+      isCorrect: true
+      explanation: "Correct. The kernel builds the prompt, sends it to the AI service, receives the response, and parses it before returning it to the application."
+    - content: "It selects multiple AI services simultaneously to run the prompt."
+      isCorrect: false
+      explanation: "Incorrect. The kernel selects the best single AI service to run the prompt."
+    - content: "It bypasses the use of templates to streamline the workflow."
+      isCorrect: false
+      explanation: "Incorrect. The kernel uses provided prompt templates as part of the process."
