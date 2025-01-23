@@ -1,32 +1,40 @@
-Now that you’ve deployed the Spring Pet Clinic application on Azure Container Apps, you can enhance its performance by enabling Azure’s built-in Java support features, known collectively as the **Java Stack.**. One of these features, Java metrics, can help to collect and monitor data include memory usage, garbage collection, thread count of your JVM.
-
-This chapter will guide you through **Javak Stack** to enhance your Spring Boot application on Azure Container Apps. 
+Now that you deployed the Spring PetClinic application on Azure Container Apps, you can enhance its performance by enabling Azure's built-in Java support features, known collectively as the *Java stack*. One of these features, Java metrics, can help to collect and monitor data, including memory usage, garbage collection, and thread count of your JVM. This chapter guides you through the Java stack to enhance your Spring Boot application on Azure Container Apps.
 
 ## Enable built-in Java features in Azure Container Apps
 
-Open your portal and find your deployed Container App, click on the **manage** of Development stack, in the pop up window, select **Java**. This will turn on the **Java Stack** to enhance your Java applications, click on "Apply" to confirm the change.
+To enable built-in Java features in Container Apps, perform the following steps:
 
-![Diagram of the choosing Java Stack.](../media/portal_select.png)
+1. Open your portal and find your deployed container app.
+1. In the pop up that appears, select **manage** for the **Development stack**, and then select **Java**. This turns on the Java stack feature to enhance your Java applications.
+1. Select **Apply** to confirm the change.
 
-Now you will see that your development stack is now set to **Java**.
+    :::image type="content" source="../media/portal_select.png" alt-text="Screenshot highlighting 'Development Stack' option selected, with a Development Stack area, appearing too.":::
 
-![Diagram of the Java Stack.](../media/javastackinfo.png)
+    The **Development stack** field is now set to **Java**.
+
+    :::image type="content" source="../media/javastackinfo.png" alt-text="Screenshot highlighting the 'Manage' option for Java.":::
 
 ## Explore the enhanced Java experiences on Azure
 
-1. In the Azure portal, navigate to your **Azure Container Apps** instance.
+To view metrics for your application, use the following steps:
 
-2. Go to **Monitoring** > **Metrics**.
+1. In the Azure portal, navigate to **Azure Container Apps** and select your container apps instance.
+1. Go to **Monitoring** > **Metrics**.
+1. You're presented with a chart that plots the metrics you're tracking in your application.
 
-3. From there, you're presented with a chart that plots the metrics you're tracking in your application.
-![Diagram of the Java Metrics.](../media/javametrics.png)
+    :::image type="content" source="../media/javametrics.png" alt-text="Screenshot showing the menu with 'jvm.gc.duration' highlighted, along with additional information about that option.":::
 
 ## View log streams via the Azure CLI
 
-You can view your container app's log streams from the Azure CLI with the `az containerapp logs show` command or your container app's environment system log stream with the `az containerapp env logs show` command.
+You can view your container app's log streams from the Azure CLI by using the `az containerapp logs show` command, and you can view your container app's environment system log stream by using the `az containerapp env logs show` command. To view logs within the Azure CLI, use the following command:
 
 ```bash
 az containerapp logs show -n petclinic -g petclinic-containerapps
+```
+
+The command produces the following output:
+
+```output
 {"TimeStamp": "2024-12-13T08:16:41.11806", "Log": "Connecting to the container 'petclinic'..."}
 {"TimeStamp": "2024-12-13T08:16:41.20563", "Log": "Successfully Connected to container: 'petclinic' [Revision: 'petclinic--kx4kswa-7988849646-554xk', Replica: 'petclinic--kx4kswa']"}
 {"TimeStamp": "2024-12-13T08:16:11.328+00:00", "Log": "INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]"}
@@ -43,6 +51,6 @@ az containerapp logs show -n petclinic -g petclinic-containerapps
 {"TimeStamp": "2024-12-13T08:16:13.722+00:00", "Log": "INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
 ```
 
-You can check more on [View log streams in Azure Container Apps](https://learn.microsoft.com/azure/container-apps/log-streaming).
+You can find out more about viewing log streams at [View log streams in Azure Container Apps](/azure/container-apps/log-streaming).
 
-Azure Container Apps can run any containerized Java application in the cloud while giving flexible options for how you deploy your applications. With the the support of Java Stack, you can enhance your application with Automatic memory fitting, varies deployment options and built-in Java diagnostics tools. You can learn more on [Java on Azure Container Apps overview](https://learn.microsoft.com/azure/container-apps/java-overview).
+Azure Container Apps can run any containerized Java application in the cloud while giving flexible options for how you deploy your applications. With the support of the Java stack, you can enhance your application with automatic memory fitting, different deployment options, and built-in Java diagnostics tools. You can learn more at [Java on Azure Container Apps overview](/azure/container-apps/java-overview).
