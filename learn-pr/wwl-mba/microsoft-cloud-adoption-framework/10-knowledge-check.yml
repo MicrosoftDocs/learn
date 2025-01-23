@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/30/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Apache Hadoop stores data in what type of file system?"
+    choices:
+    - content: "It has no storage, it is stored in memory."
+      isCorrect: false
+      explanation: "Apache Hadoop requires physical storage to persist data"
+    - content: "HDFS"
+      isCorrect: true
+      explanation: "HDFS is an acronym for Hadoop Distributed File System, and is the data store for a Hadoop system."
+    - content: "RDD"
+      isCorrect: false
+      explanation: "RDD is an acronym for Resilient Distributed Dataset, which provides an in-memory data engine. A Hadoop system will persist data in storage, it is not a in memory data platform technology"
+  - content: "Which Hadoop component is responsible for managing resources on a Hadoop system?"
+    choices:
+    - content: "Spark"
+      isCorrect: false
+      explanation: "Spark is a type of Hadoop cluster implementation."
+    - content: "MapReduce"
+      isCorrect: false
+      explanation: "MapReduce is a programming model that enables you to process and analyze data."
+    - content: "YARN"
+      isCorrect: true
+      explanation: "This is the component that is responsible for managing resources on a Hadoop cluster."
