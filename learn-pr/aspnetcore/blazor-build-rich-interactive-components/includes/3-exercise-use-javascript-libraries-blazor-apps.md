@@ -6,7 +6,7 @@ In this exercise, you extend the pizza delivery company's existing app by using 
 
 ## Clone the existing app
 
-To use Blazor, make sure you have the [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed. For more information, see [Check everything installed correctly](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro).
+To use Blazor, make sure you have the [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed. For more information, see [Build your first web app with ASP.NET Core using Blazor](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro).
 
 1. Open Visual Studio Code, and open an integrated terminal by selecting **Terminal** > **New Terminal** from the top menu.
 
@@ -42,7 +42,7 @@ To use JS interop, you inject the `IJSRuntime` abstraction.
     @inject IJSRuntime JavaScript
     ```
 
-1. Currently, the `onclick` event for the remove pizza functionality calls the `OrderState.RemoveConfiguredPizza(configuredPizza))` method directly. Replace the entire `<a @onclick="@(() => OrderState.RemoveConfiguredPizza(configuredPizza))" class="delete-item">❌</a>` element with the following code:
+1. Currently, the `onclick` event for the functionality to remove a pizza calls the `OrderState.RemoveConfiguredPizza(configuredPizza))` method directly. Replace the entire `<a @onclick="@(() => OrderState.RemoveConfiguredPizza(configuredPizza))" class="delete-item">❌</a>` element with the following code:
 
    ```razor
    <button type="button" class="close text-danger" aria-label="Close"
@@ -65,7 +65,7 @@ To use JS interop, you inject the `IJSRuntime` abstraction.
    }
    ```
 
-   The server uses the <xref:Microsoft.JSInterop.IJSRuntime.InvokeAsync%2A?displayProperty=nameWithType> method to call the `confirm` function on the client side. The response from the call returns a `bool` value. If the result of the confirm dialog is `true`, the pizza is removed from the order.
+   The server uses the <xref:Microsoft.JSInterop.IJSRuntime.InvokeAsync%2A?displayProperty=nameWithType> method to call the `confirm` function on the client side. The response from the call returns a `bool` value. If the result of the confirmation dialog is `true`, the pizza is removed from the order.
 
 1. Press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
@@ -75,13 +75,13 @@ To use JS interop, you inject the `IJSRuntime` abstraction.
 
    :::image type="content" source="../media/3-confirm-remove-dialog.png" lightbox="../media/3-confirm-remove-dialog.png" alt-text="Screenshot of the default JavaScript confirm dialog.":::
 
-1. Select **OK** and verify that the pizza is removed from your order. Select **X** next to another pizza, select **Cancel** in the confirm dialog, and verify that the pizza remains in your order.
+1. Select **OK** and verify that the pizza is removed from your order. Select **X** next to another pizza, select **Cancel** in the confirmation dialog, and verify that the pizza remains in your order.
 
 1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> or select **Run** > **Stop Debugging** to stop the app.
 
 ## Add a third-party JavaScript library to a Blazor app
 
-The pizza company wants clearer text on the buttons in the confirm dialog, and wants to use their branding and styling in the dialog box. After some research, you decide to use a small JavaScript library called SweetAlert as a good replacement for the standard dialog.
+The pizza company wants clearer text on the buttons in the confirmation dialog, and wants to use their branding and styling in the dialog box. After some research, you decide to use a small JavaScript library called SweetAlert as a good replacement for the standard dialog.
 
 1. In Visual Studio Code **Explorer**, expand *Pages* and then select *_Host.cshtml*.
 
@@ -128,7 +128,7 @@ The pizza company wants clearer text on the buttons in the confirm dialog, and w
 
 1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> or select **Run** > **Stop Debugging** to stop the app.
 
-## Update the order page to show real-time order status
+## Show the real-time order status on the order page
 
 Once a customer places a pizza order, the **My Orders** page uses the `OrderDetail` component to show the current status of the order. The pizza company wants customers to see how their order is progressing in real-time. You update the component to call a .NET method from JavaScript that continuously gets the order status until the status shows delivered.
 
