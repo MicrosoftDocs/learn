@@ -40774,6 +40774,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/explore-azure-devops-with-github/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-implement-ci-azure-pipelines-github-actions/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/manage-device-identity-ad-join/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
       "redirect_document_id": false
