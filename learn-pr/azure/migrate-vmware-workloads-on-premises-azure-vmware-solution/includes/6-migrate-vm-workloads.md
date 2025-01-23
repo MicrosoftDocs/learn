@@ -6,7 +6,7 @@ VMware HCX provides several ways of migrating VMs running Windows Server and Lin
 
 One last thing to note is that taking snapshots of a VM during migration, either manually or via a third-party backup solution, can disrupt the migration process. To prevent any disruption, disable backups until the VM completely migrates into Azure VMware Solution.
 
-### Steps to migrate virtual machines into Azure VMware Solution
+### Steps to migrate virtual machines into Azure VMware Solution using Bulk Migration
 
 1. From within the HCX dashboard on-premises, select **Services** > **Migration**.
 
@@ -28,7 +28,7 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
 1. Select the destination network for each virtual machine to be migrated.
 
-    :::image type="content" source="../media/6-select-network-vm-migration.png" alt-text="Screenshot of where to configure the network settings for the VMware VM.":::
+    :::image type="content" source="../media/6-hcx-migrate-select-destination-network-vm-migration.png" alt-text="Screenshot of where to configure the network settings for the VMware VM."lightbox="../media/6-hcx-migrate-select-destination-network-vm-migration.png":::
 
 1. After the network configuration finishes, select **Validate** or **Go**. **Validate** ensures the settings are configured correctly. **Go** starts the migration.
 
@@ -40,7 +40,7 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
     :::image type="content" source="../media/6-hcx-services-migration.png" alt-text="Screenshot shows where to start the migration process."lightbox="../media/6-hcx-services-migration.png":::
 
-1. Choose your VMs for Migration, then select **Add**.
+1. Under the **Select VMs for Migration** tab, add the desired virtual machines, then select **Add**.
 
     :::image type="content" source="../media/6-hcx-migration-add-virtual-machines.png" alt-text="Screenshot shows where to select VMs for Migration and add them."lightbox="../media/6-hcx-migration-add-virtual-machines.png":::
 
@@ -68,7 +68,7 @@ Use the following steps to extend a Network:
 
     :::image type="content" source="../media/6-hcx-select-network-extension.png" alt-text="Screenshot shows where to select a Network Extension."lightbox="../media/6-hcx-select-network-extension.png":::
 
-1. Under **Source Network to Extend**, select the required mandatory fields, then select **Submit**.
+1. Under **Source Network to Extend**, select the required **mandatory fields**, then select **Submit**.
 
     :::image type="content" source="../media/6-hcx-select-source-network-mandatory-fields.png" alt-text="Screenshot shows where to select the required mandatory fields to extend networks."lightbox="../media/6-hcx-select-source-network-mandatory-fields.png":::
 
