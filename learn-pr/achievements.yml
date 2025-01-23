@@ -4607,6 +4607,11 @@ achievements:
   title: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
   summary: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
   iconUrl: /training/achievements/iot/introduction-to-aks-edge-essentials.svg
+- uid: learn.create-first-aks-edge-essentials.badge
+  type: badge
+  title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
+  summary: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
+  iconUrl: /training/achievements/iot/create-first-aks-edge-essentials.svg
 - uid: learn.python-partnership.trophy
   type: trophy
   title: Use Python basics to solve mysteries and find answers

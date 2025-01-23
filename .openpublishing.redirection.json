@@ -35999,6 +35999,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/2-prepare-machine-for-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/3-exercise-deploy-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/4-deploy-application-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/5-exercise-deploy-application-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/6-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/7-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
       "redirect_document_id": false
