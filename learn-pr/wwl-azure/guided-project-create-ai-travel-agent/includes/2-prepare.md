@@ -30,7 +30,7 @@ Use the following steps to prepare for the Guided Project exercises:
 
 1. Expand the **Starter** folder
 
-1. Open the **appsettings.json** file and update the values with your Azure OpenAI Services model id, endpoint, and API key.
+1. Open the **appsettings.json** file and update the values with your Azure OpenAI Services modelId, endpoint, and API key.
 
     ```json
     {
