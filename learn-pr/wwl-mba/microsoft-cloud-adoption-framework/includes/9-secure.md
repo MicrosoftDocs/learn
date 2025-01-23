@@ -1,4 +1,4 @@
-The Secure methodology focuses on an approach that you can use to secure your Azure cloud estate. This guidance is relevant to all methodologies within the Cloud Adoption Framework because you should implement security as an integral part of each phase. All recommendations in the Secure methodology adhere to the Zero Trust principles of assume compromise (or assume breach), least privilege, and explicit verification of trust.
+You can use the Secure methodology to help secure your Azure cloud estate. This guidance is relevant to all methodologies within the Cloud Adoption Framework because you should implement security as an integral part of each phase. All recommendations in the Secure methodology adhere to the Zero Trust principles of assume compromise (or assume breach), least privilege, and explicit verification of trust.
 
 This Cloud Adoption Framework Secure guidance is one component of a larger holistic set of Microsoft security guidance designed to help various teams understand and perform their security responsibilities. The complete set includes the following guidance:
 

@@ -1,4 +1,4 @@
-The Govern methodology helps you maintain cosistent control and address tangible risks across your portfolio of workloads. The Govern methodology provides a structured approach that you can use to establish and optimize governance in Azure. The Govern methodology consists of five steps:
+You can use the Govern methodology to help you maintain cosistent control of your environment and address tangible risks. The Govern methodology provides a structured approach that you can use to establish and optimize governance in Azure. The Govern methodology consists of five steps:
 
 - Build a cloud governance team.
 - Assess cloud risks.

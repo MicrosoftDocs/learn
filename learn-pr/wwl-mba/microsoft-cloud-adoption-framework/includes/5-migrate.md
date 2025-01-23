@@ -1,6 +1,11 @@
-The Migrate methodology helps you prepare for and carry out a migration to the cloud.
+You can use the Migrate methodology to prepare for and carry out a migration to the cloud. The Migration methodology includes four stages:
 
-The migration process includes four stages: prepare, assess, deploy, and release. This approach is vendor-neutral, so you can migrate workloads to any cloud service.
+- Prepare for migration
+- Assess your workload
+- Deploy your assets
+- Release your workload
+
+This approach is vendor-neutral, so you can migrate workloads to any cloud service.
 
 ## Prepare for migration
 
@@ -19,10 +24,10 @@ Before you plan individual workload migrations, you must ready your organization
 
 You also need to prepare tools to assess, replicate, and track your workloads through iterations, including remediation activities. You can use resources, like:
 
-- Azure Migrate
+- Azure Migrate and Modernize
 - Azure DevOps
 - Microsoft Project
-- The Migration Execution Guide
+- [The Migration Execution Guide](https://github.com/Azure/migration)
 
 You should also create a backlog that includes:
 

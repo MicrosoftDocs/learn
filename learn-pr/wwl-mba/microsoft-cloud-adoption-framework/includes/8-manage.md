@@ -1,4 +1,4 @@
-The Manage methodology focuses on how to manage the digital assets that you migrate.
+You can use the Manage methodology to manage the digital assets that you migrate.
 
 **Define business commitments**, such as sustainability, service quality, and financial performance. Use calculations to determine the criticality of workloads. The level of criticality determines the required level of management for each workload. For example, a mission-critical workload might require specialized management.
 
