@@ -3,10 +3,10 @@ Microsoft Security Copilot is accessible within Microsoft Purview data security 
 In this exercise, you explore the Copilot summarization capabilities available in each of these solutions. You start by verifying that the Microsoft Purview plugin is enabled.
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
->:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this message occurs, select OK and continue the exercise steps.  
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
 >
-> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you'll find that the user interface still reflects the original name.
+> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you might find that the user interface still reflects the original name.
 
 ### Exercise
 
@@ -17,7 +17,7 @@ You'll work with specific Microsoft Purview solutions, using the new Microsoft P
 This exercise should take approximately **30** minutes to complete.
 
 > [!NOTE]
-> When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
+> When a lab instruction calls for opening a link to the simulated environment, it's recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
 
 #### Task: Enable the Microsoft Purview plugin
@@ -36,8 +36,8 @@ In this task, you enable the Microsoft Purview plugin. For this task, you work i
     1. Enable the toggle switch next to **Allow Security Copilot to access data from your Microsoft 365 services**.
     1. Return to the Copilot home page, by selecting **Microsoft Security Copilot** on the top-left of the page next to the home menu (hamburger) icon.
 
-1. Now that you’ve enabled Copilot to access data from your Microsoft 365 services, return to the plugins page and enable the Microsoft Purview plugin.
-    1. From the promptbar, select the **Sources icon**.
+1. Now that Copilot is enabled to access data from your Microsoft 365 services, return to the plugins page and enable the Microsoft Purview plugin.
+    1. From the prompt bar, select the **Sources icon**.
     1. From the manage sources window, under the Microsoft plugins, select **Show 11 more**.
     1. Enable the toggle switch next to Microsoft Purview to enable the plugin.
     1. Close the manage sources window by selecting the **X**.
@@ -46,7 +46,7 @@ In this task, you enable the Microsoft Purview plugin. For this task, you work i
 
 For this and all subsequent tasks, you explore the Copilot functionality embedded in Microsoft Purview.
 
-In this task, you explore the value Copilot provides in summarizing an Insider Risk Management alert. You start by first reviewing an alert, without Security Copilot. It can be challenging to know where to start your investigation when risky activities are detected over a long period of time. You'll then see how Copilot can address this same task with the click of a button.
+In this task, you explore the value Copilot provides in summarizing an Insider Risk Management alert. You start by first reviewing an alert, without Security Copilot. It can be challenging to know where to start your investigation when risky activities are detected over a long period of time. Then, you see how Copilot can address this same task with the click of a button.
 
 Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Insider Risk Management solution, the Copilot user should have previously been assigned an appropriate role.
 
@@ -118,7 +118,7 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
 
 In this task, you explore the capability of Copilot to Microsoft Purview to gain a contextual summary of evidence collected in an eDiscovery review set. 
 
-Legal investigations can take hours, days, even weeks to sift through the list of evidence collected in review sets, requiring costly resources like outside council to manually go through each document to determine the relevancy to the case. Copilot can significantly reduce that burden by generating summaries of conversations in a variety of languages and the documents that may be included as attachments.
+Legal investigations can take hours, days, even weeks to sift through the list of evidence collected in review sets, requiring costly resources like outside counsel to manually go through each document to determine the relevancy to the case. Copilot can significantly reduce that burden by generating summaries of conversations in a variety of languages and the documents that may be included as attachments.
 
 Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview eDiscovery solution, users should have previously been assigned an appropriate role.
 

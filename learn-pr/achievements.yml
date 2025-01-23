@@ -15,6 +15,11 @@ achievements:
   title: Monitor performance of virtual machines by using Azure Monitor VM Insights
   summary: Monitor performance of virtual machines by using Azure Monitor VM Insights
   iconUrl: /training/achievements/monitor-performance-using-azure-monitor-for-vms.svg
+- uid: learn.intro-to-azure-government.badge
+  type: badge
+  title: Introduction to Azure Government
+  summary: Introduction to Azure Government
+  iconUrl: /training/achievements/intro-to-azure-government.svg
 - uid: learn.make-your-virtual-machines-highly-available.badge
   type: badge
   title: Make your virtual machines highly available
@@ -40,6 +45,41 @@ achievements:
   title: Explore the key concepts of quantum computing by using Q#
   summary: Explore the key concepts of quantum computing by using Q#
   iconUrl: /training/achievements/quantum/qsharp-explore-key-concepts-quantum-computing.svg
+- uid: learn.iot.manage-monitor-devices-iot-hub-azure-monitor.trophy
+  type: trophy
+  title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
+  summary: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
+  iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
+- uid: learn.wwl.explore-iot-hub-monitoring.badge
+  type: badge
+  title: Guided project - Explore Azure IoT Hub monitoring
+  summary: Guided project - Explore Azure IoT Hub monitoring
+  iconUrl: /training/achievements/iot-hub-monitoring.svg
+- uid: learn.wwl.troubleshoot-device-connections-communication.badge
+  type: badge
+  title: Troubleshoot Azure IoT Hub device connections and communication
+  summary: Troubleshoot Azure IoT Hub device connections and communication
+  iconUrl: /training/achievements/device-connection-communication.svg
+- uid: learn.wwl.examine-azure-iot-solution-monitoring-logging.badge
+  type: badge
+  title: Examine Azure IoT Hub monitoring and logging
+  summary: Examine Azure IoT Hub monitoring and logging
+  iconUrl: /training/achievements/azure-iot-monitoring-logging.svg
+- uid: learn.wwl.examine-approaches-to-device-management-at-scale.badge
+  type: badge
+  title: Examine approaches to device management at scale using Azure IoT Hub
+  summary: Examine approaches to device management at scale using Azure IoT Hub
+  iconUrl: /training/achievements/device-management-at-scale.svg
+- uid: learn.wwl.examine-device-management-concepts-methods.badge
+  type: badge
+  title: Examine device management concepts and methods for Azure IoT Hub
+  summary: Examine device management concepts and methods for Azure IoT Hub
+  iconUrl: /training/achievements/device-management-examine.svg
+- uid: learn.wwl.examine-device-management-tools.badge
+  type: badge
+  title: Evaluate device management tools for Azure IoT Hub
+  summary: Evaluate device management tools for Azure IoT Hub
+  iconUrl: /training/achievements/device-management-tools.svg
 - uid: learn.quantum.use-qsharp-libraries.badge
   type: badge
   title: Use the Q# libraries
@@ -100,6 +140,31 @@ achievements:
   title: Introduction to Azure solutions
   summary: Introduction to Azure solutions
   iconUrl: /training/achievements/intro-to-azure-areas-and-solutions.svg
+- uid: learn.wwl.examine-device-provisioning-service-terms-concepts.badge
+  type: badge
+  title: Introduction to Azure IoT Hub Device Provisioning Service
+  summary: Introduction to Azure IoT Hub Device Provisioning Service
+  iconUrl: /training/achievements/provisioning-device-terms-conditions.svg
+- uid: learn.wwl.examine-device-provisioning-service-coding-tools-access.badge
+  type: badge
+  title: Examine IoT Hub Device Provisioning Service coding tools and access
+  summary: Examine IoT Hub Device Provisioning Service coding tools and access
+  iconUrl: /training/achievements/provisioning-device-service.svg
+- uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.badge
+  type: badge
+  title: Examine IoT Hub Device Provisioning Service lifecycle tasks
+  summary: Examine IoT Hub Device Provisioning Service lifecycle tasks
+  iconUrl: /training/achievements/provisioning-lifecycle-device.svg
+- uid: learn.wwl.explore-group-enrollment-tasks.badge
+  type: badge
+  title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
+  summary: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
+  iconUrl: /training/achievements/enrollment-group-task.svg
+- uid: learn.wwl.provision-iot-devices-at-scale-by-using-device.trophy
+  type: trophy
+  title: Provision IoT devices at scale by using Azure IoT Hub Device Provisioning Service (DPS)
+  summary: Provision IoT devices at scale by using Azure IoT Hub Device Provisioning Service (DPS)
+  iconUrl: /training/achievements/iot-provisions-device-scale.svg
 - uid: learn-xamarin.university-veteran.badge
   type: badge
   title: Xamarin University Veteran
@@ -4552,11 +4617,76 @@ achievements:
   title: Install and configure Visual Studio Code for Python development
   summary: Install and configure Visual Studio Code to create a development environment for learning to build Python applications.
   iconUrl: /training/achievements/python-install-vscode.svg
+- uid: learn.wwl.create-manage-device-templates.badge
+  type: badge
+  title: Create and manage device templates in Azure IoT Central
+  summary: Create and manage device templates in Azure IoT Central
+  iconUrl: /training/achievements/iot/create-manage-device-templates.svg
+- uid: learn.wwl.manage-devices-azure-iot-central.badge
+  type: badge
+  title: Manage devices in Azure IoT Central
+  summary: Manage devices in Azure IoT Central
+  iconUrl: /training/achievements/iot/manage-devices-azure-iot-central.svg
+- uid: learn.iot.connect-iot-edge-device-to-iot-central.badge
+  type: badge
+  title: Connect an Azure IoT Edge device to your Azure IoT Central application
+  summary: Connect an Azure IoT Edge device to your Azure IoT Central application
+  iconUrl: /training/achievements/iot/connect-iot-edge-device-to-iot-central.svg
+- uid: learn.wwl.configure-business-integration.badge
+  type: badge
+  title: Configure business integration in Azure IoT Central
+  summary: Configure business integration in Azure IoT Central
+  iconUrl: /training/achievements/iot/configure-business-integration.svg
+- uid: learn.introduction-to-azure-iot-central.badge
+  type: badge
+  title: Introduction to Azure IoT Central
+  summary: Introduction to Azure IoT Central
+  iconUrl: /training/achievements/iot/introduction-to-azure-iot-central.svg
+- uid: learn.monitor-manage-device-with-iotcentral.badge
+  type: badge
+  title: Build your first Azure IoT Central application to manage your coffee machines
+  summary: Build your first Azure IoT Central application to manage your coffee machines
+  iconUrl: /training/achievements/iot/monitor-and-manage-device-with-iot-central.svg
+- uid: learn.iot.evaluate-iot-scenario-with-iot-central.trophy
+  type: trophy
+  title: Evaluate your IoT Scenario by using Azure IoT Central
+  summary: Evaluate your IoT Scenario by using Azure IoT Central
+  iconUrl: /training/achievements/iot/evaluate-iot-scenario-with-iot-central.svg
 - uid: learn.chat-completions-badge
   type: badge
   title: Introduction to chat completion
   summary: This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Foundry portal playground.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.examine-iot-hub-message-routing.badge
+  type: badge
+  title: Examine Azure IoT Hub message routing
+  summary: Examine Azure IoT Hub message routing
+  iconUrl: /training/achievements/iot-hub-message-routing.svg
+- uid: learn.wwl.implement-device-message-processing-data-analytics.trophy
+  type: trophy
+  title: Implement message processing for data storage and analytics by using Azure IoT Hub
+  summary: Implement message processing for data storage and analytics by using Azure IoT Hub
+  iconUrl: /training/achievements/message-device-processing.svg
+- uid: learn.wwl.get-started-cloud-storage-for-iot.badge
+  type: badge
+  title: Examine Cloud storage options for Azure IoT Hub solutions
+  summary: Examine Cloud storage options for Azure IoT Hub solutions
+  iconUrl: /training/achievements/iot-cloud-storage.svg
+- uid: learn.wwl.explore-message-processing-tasks.badge
+  type: badge
+  title: Guided project - Route and process messages from your Azure IoT Hub devices
+  summary: Guided project - Route and process messages from your Azure IoT Hub devices
+  iconUrl: /training/achievements/message-process-explore-tasks.svg
+- uid: learn.wwl.examine-azure-stream-analytics-azure-functions.badge
+  type: badge
+  title: Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions
+  summary: Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions
+  iconUrl: /training/achievements/azure-stream-analytics.svg
+- uid: learn.wwl.consider-message-processing-options-constraints.badge
+  type: badge
+  title: Consider Azure IoT Hub message processing options and constraints
+  summary: Consider Azure IoT Hub message processing options and constraints
+  iconUrl: /training/achievements/messaging-processing-options.svg
 - uid: learn.student-evangelism.predict-meteor-showers-using-python.badge
   type: badge
   title: Predict meteor showers by using Python and Visual Studio Code
@@ -4595,6 +4725,26 @@ achievements:
   title: Get started with Jupyter notebooks for Python
   summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive, runnable Markdown and code elements.
   iconUrl: /training/achievements/python-create-jupyter-notebook.svg
+- uid: learn.iot.introduction-to-azure-digital-twins.badge
+  type: badge
+  title: Introduction to Azure Digital Twins
+  summary: Introduction to Azure Digital Twins
+  iconUrl: /training/achievements/introduction-to-azure-digital-twins.svg
+- uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.badge
+  type: badge
+  title: Explore the Azure Digital Twins API for creating a graph
+  summary: Explore the Azure Digital Twins API for creating a graph
+  iconUrl: /training/achievements/explore-azure-digital-twins-api-for-creating-a-graph.svg
+- uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data.badge
+  type: badge
+  title: Synchronize Azure Digital Twins with IoT device data
+  summary: Synchronize Azure Digital Twins with IoT device data
+  iconUrl: /training/achievements/synchronize-azure-digital-twins-with-iot-device-data.svg
+- uid: learn.iot.build-azure-digital-twins-solution.trophy
+  type: trophy
+  title: Build out an Azure Digital Twins solution
+  summary: Build out an Azure Digital Twins solution
+  iconUrl: /training/achievements/build-out-an-azure-digital-twins-solution.svg
 - uid: learn.beginner-python.create-manage-projects.badge
   type: badge
   title: Create and manage projects in Python
@@ -4790,3 +4940,9 @@ achievements:
   title: Create a new Node.js project and work with dependencies
   summary: Use dependencies from the npm registry to develop Node.js applications faster. Learn how to manage dependencies for your project. This module uses JavaScript CommonJS in the Node.js runtime.
   iconUrl: /training/achievements/create-nodejs-project-dependencies.svg
+- uid: learn.azure.manage-device-identity-ad-join.badge
+  type: badge
+  title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
+  summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
+  iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+  
