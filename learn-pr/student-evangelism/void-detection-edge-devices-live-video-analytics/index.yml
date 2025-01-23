@@ -34,7 +34,7 @@ prerequisites: |
     
 iconUrl: /training/achievements/student-evangelism/void-detection-edge-devices-lva.svg
 badge:
-  uid: learn.oxford.anomaly-detection-5g-edge-devices
+  uid: learn.oxford.anomaly-detection-5g-edge-devices.badge
 levels:
 - intermediate
 roles:
