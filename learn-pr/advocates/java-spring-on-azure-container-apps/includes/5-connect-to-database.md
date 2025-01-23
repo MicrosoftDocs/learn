@@ -64,7 +64,7 @@ Next, connect your previously deployed container app to the PostgreSQL database 
       - Select **Connection string**.
       - Fill in your **Username** and **Password** and leave the other fields with their default settings.
 
-    :::image type="content" source="../media/service_connector.png" alt-text="Screenshot of the Service Connector (preview) page, with the Service Connector (preview) setting highlighted, along with the Create option.":::
+    :::image type="content" source="../media/service-connector.png" alt-text="Screenshot of the Service Connector (preview) page, with the Service Connector (preview) setting highlighted, along with the Create option.":::
 
 1. Confirm and deploy your changes.
 1. Once the deployment is ready, select **Validate** to validate your connection status.

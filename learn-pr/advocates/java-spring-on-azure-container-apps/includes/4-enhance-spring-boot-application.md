@@ -12,7 +12,7 @@ To enable built-in Java features in Container Apps, use the following steps:
 
     The **Development stack** field is now set to **Java**.
 
-    :::image type="content" source="../media/javastackinfo.png" alt-text="Screenshot highlighting the 'Manage' option for Java.":::
+    :::image type="content" source="../media/java-stack-info.png" alt-text="Screenshot highlighting the 'Manage' option for Java.":::
 
 ## Explore the enhanced Java experiences on Azure
 
@@ -22,7 +22,7 @@ To view metrics for your application, use the following steps:
 1. Go to **Monitoring** > **Metrics**.
 1. You're presented with a chart that plots the metrics you're tracking in your application.
 
-    :::image type="content" source="../media/javametrics.png" alt-text="Screenshot showing the menu with 'jvm.gc.duration' highlighted, along with additional information about that option.":::
+    :::image type="content" source="../media/java-metrics.png" alt-text="Screenshot showing the menu with 'jvm.gc.duration' highlighted, along with additional information about that option.":::
 
 ## View log streams via the Azure CLI
 

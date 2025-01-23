@@ -139,4 +139,4 @@ az containerapp up `
 
 Once your deployment is done, you should be able to see a success message with the project endpoint printed in the console. You can open the URL to verify your project deployed to Azure.
 
-:::image type="content" source="../media/deployment_success.png" alt-text="Diagram of the deployment verification." lightbox="../media/deployment_success.png":::
+:::image type="content" source="../media/deployment-success.png" alt-text="Diagram of the deployment verification." lightbox="../media/deployment-success.png":::

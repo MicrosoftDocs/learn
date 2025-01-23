@@ -96,7 +96,7 @@ git submodule update --init --recursive
 
 1. Once the application is running, you can access it locally via [http://localhost:8080](http://localhost:8080). You should see the Spring PetClinic interface.
 
-:::image type="content" source="../media/petclinic.png" alt-text="Screenshot of the home page of the PetClinic application.":::
+:::image type="content" source="../media/pet-clinic.png" alt-text="Screenshot of the home page of the PetClinic application.":::
 
 ## Database configuration
 
