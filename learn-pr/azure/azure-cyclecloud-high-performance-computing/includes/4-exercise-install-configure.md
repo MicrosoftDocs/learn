@@ -197,7 +197,7 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
 
 ## Task 5: Add an Azure subscription to Azure CycleCloud
 
-To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option to address this requirement is to assign the Contributor role and the Storage Blob Data Contributor role in the subscription to the system-assigned identity of that Azure VM hosting the CycleCloud application. (Alternatively, you can create a user-assigned identity, associate it with the VM, and use that identity in the steps below.)
+To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option is to assign the Contributor role and the Storage Blob Data Contributor role in the subscription to the system-assigned identity of the Azure VM hosting the CycleCloud application. (Alternatively, you can create a user-assigned identity, associate it with the VM, and use that identity in the steps below.)
 
 > [!NOTE]
 > CycleCloud doesn't require all permissions associated with the Contributor role. You have the option of defining a custom, more restrictive RBAC role and assigning it to the Azure VM hosting the CycleCloud application. This allows you to apply the principle of least privilege. For details, refer to [Using Managed Identities with CycleCloud](https://learn.microsoft.com/azure/cyclecloud/how-to/managed-identities?preserve-view=true&view=cyclecloud-8#create-a-custom-role-and-managed-identity-for-cyclecloud).
