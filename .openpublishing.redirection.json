@@ -36039,6 +36039,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/2-arc-enable-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/3-exercise-arc-enable-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/4-remote-application-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/5-exercise-remote-application-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/6-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/7-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
       "redirect_document_id": false
