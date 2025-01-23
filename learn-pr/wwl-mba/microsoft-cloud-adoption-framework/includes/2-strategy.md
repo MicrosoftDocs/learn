@@ -6,7 +6,7 @@ Assess your existing cloud adoption strategy. Use the feedback from your assessm
 
 To assess your current cloud strategy posture, use the [Cloud Adoption Strategy Evaluator](/assessments/8fefc6d5-97ac-42b3-8e97-d82701e55bab/) assessment tool. 
 
-:::image type="content" source="./media/cloud-adoption-strategy-evaluator-assessment.png" alt-text="A screenshot that shows the Cloud Adoption Strategy Evaluator assessment.":::
+:::image type="content" source="../media/cloud-adoption-strategy-evaluator-assessment.png" alt-text="A screenshot that shows the Cloud Adoption Strategy Evaluator assessment.":::
 
 ## Determine your motivations, mission, and objectives
 
