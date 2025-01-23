@@ -23,6 +23,7 @@ prerequisites: |
     - Basic knowledge of DevOps
     - Basic knowledge of IoT Edge
 iconUrl: /training/achievements/student-evangelism/introduction-to-mlops-iot-edge.svg
+hidden: true
 badge:
   uid: learn.oxford.introduction-to-mlops-iot-edge.badge
 levels:
