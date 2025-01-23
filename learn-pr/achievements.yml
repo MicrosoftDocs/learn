@@ -4617,6 +4617,11 @@ achievements:
   title: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 
   summary: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 
   iconUrl: /training/achievements/iot/connect-aks-edge-essentials-azure-arc.svg
+- uid: learn.get-started-aks-edge-essentials.trophy
+  type: trophy
+  title: Get started with Azure Kubernetes Service (AKS) Edge Essentials
+  summary: Get started with Azure Kubernetes Service (AKS) Edge Essentials
+  iconUrl: /training/achievements/iot/get-started-aks-edge-essentials.svg
 - uid: learn.python-partnership.trophy
   type: trophy
   title: Use Python basics to solve mysteries and find answers

@@ -36079,6 +36079,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/get-started-aks-edge-essentials/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
       "redirect_document_id": false
