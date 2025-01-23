@@ -28,7 +28,7 @@ Here's' an example route table, before enabling a Service Endpoint.
 |  Default   |  Active   |     10.1.1.0/24      |       VNet        |
 |  Default   |  Active   |      0.0.0.0./0      |     Internet      |
 |  Default   |  Active   |      10.0.0.0/8      |       None        |
-|  Default   |  Active   |     100.64.0.0./     |       None        |
+|  Default   |  Active   |     100.64.0.0/10     |       None        |
 |  Default   |  Active   |    192.168.0.0/16    |       None        |
 
 Here's an example route table after you add two Service Endpoints to the virtual network.
@@ -38,7 +38,7 @@ Here's an example route table after you add two Service Endpoints to the virtual
 |  Default   |  Active   |       10.1.1.0/24       |             VNet              |
 |  Default   |  Active   |       0.0.0.0./0        |           Internet            |
 |  Default   |  Active   |       10.0.0.0/8        |             None              |
-|  Default   |  Active   |      100.64.0.0./       |             None              |
+|  Default   |  Active   |      100.64.0.0/10       |             None              |
 |  Default   |  Active   |     192.168.0.0/16      |             None              |
 |  Default   |  Active   | 20.38.106.0/23, 10 more | VirtualNetworkServiceEndpoint |
 |  Default   |  Active   |  20.150.2.0/23, 9 more  | VirtualNetworkServiceEndpoint |
