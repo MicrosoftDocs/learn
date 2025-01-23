@@ -2,7 +2,7 @@ In this unit, you learn how to prepare a Spring Boot application for deployment 
 
 The Spring PetClinic is a simple web application that manages a list of veterinarians, their patients, and the visits those patients had. This application provides a practical way to understand key Spring Boot concepts while preparing a Spring Boot application for deployment to Azure.
 
-## Prerequisite
+## Prerequisites
 
 - An Azure account. If you don't have one, [create an account for free](https://azure.microsoft.com/free/). You need the `Contributor` or `Owner` permission on the Azure subscription to proceed. Refer to [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal) for details.
 - [Git](https://git-scm.com/downloads)
@@ -96,7 +96,7 @@ git submodule update --init --recursive
 
 1. Once the application is running, you can access it locally via [http://localhost:8080](http://localhost:8080). You should see the Spring PetClinic interface.
 
-:::image type="content" source="../media/pet-clinic.png" alt-text="Screenshot of the home page of the PetClinic application.":::
+:::image type="content" source="../media/pet-clinic.png" alt-text="Screenshot of the home page of the PetClinic application." lightbox="../media/pet-clinic.png":::
 
 ## Database configuration
 

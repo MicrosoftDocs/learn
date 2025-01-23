@@ -64,7 +64,7 @@ Next, connect your previously deployed container app to the PostgreSQL database 
       - Select **Connection string**.
       - Fill in your **Username** and **Password** and leave the other fields with their default settings.
 
-    :::image type="content" source="../media/service-connector.png" alt-text="Screenshot of the Service Connector (preview) page, with the Service Connector (preview) setting highlighted, along with the Create option.":::
+    :::image type="content" source="../media/service-connector.png" alt-text="Screenshot of the Service Connector (preview) page, with the Service Connector (preview) setting highlighted, along with the Create option." lightbox="../media/service-connector.png":::
 
 1. Confirm and deploy your changes.
 1. Once the deployment is ready, select **Validate** to validate your connection status.
@@ -75,7 +75,7 @@ For more information, see [Connect to PostgreSQL Database from a Java Quarkus Co
 
 The configuration is complete. If you connect to your PostgreSQL database, you can see that the table was created.
 
-```
+```output
            List of relations
 | Schema | Name            | Type  |
 |--------|-----------------|-------|
