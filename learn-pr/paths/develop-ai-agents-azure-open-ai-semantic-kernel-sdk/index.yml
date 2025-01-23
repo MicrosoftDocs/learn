@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-agents-azure-open-ai-semantic-kernel-sdk
 metadata:
-  title: Develop AI agents using Azure OpenAI and the Semantic Kernel SDK AZ-2005
-  description: Learn how to use the Semantic Kernel SDK to build intelligent applications that automate tasks and perform natural language processing. (AZ-2005)
-  ms.date: 08/30/2024
+  title: Develop generative AI apps with Azure OpenAI and Semantic Kernel
+  description: Develop generative AI apps with Azure OpenAI and Semantic Kernel
+  ms.date: 01/23/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: learning-path
-title: Develop AI agents using Azure OpenAI and the Semantic Kernel SDK
+title: Develop generative AI apps with Azure OpenAI and Semantic Kernel
 prerequisites: |
   -   Experience programming in C#.
   -   Visual Studio Code IDE installed.
@@ -29,7 +29,6 @@ modules:
 - learn.wwl.create-plugins-semantic-kernel
 - learn.wwl.give-your-ai-agent-skills
 - learn.wwl.combine-prompts-functions
-- learn.wwl.automatic-function-calling
 - learn.wwl.guided-project-create-ai-travel-agent
 trophy:
   uid: learn.wwl.develop-ai-agents-azure-open-ai-semantic-kernel-sdk.trophy
