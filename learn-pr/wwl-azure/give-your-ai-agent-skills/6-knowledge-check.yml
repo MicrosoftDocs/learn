@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.give-your-ai-agent-skills.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/23/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of a native function in the Semantic Kernel SDK?"
+    choices:
+    - content: "To customize prompts and generated responses."
+      isCorrect: false
+      explanation: "Incorrect. Native functions aren't used to create custom prompts."
+    - content: "To summarize conversations and chat history"
+      isCorrect: false
+      explanation: "Incorrect. Native functions are used to run native code in the application."
+    - content: "To create skills that can be invoked by the kernel."
+      isCorrect: true
+      explanation: "Correct. Native functions can be used by the kernel to augment your intelligent application."
+  - content: "How does the Semantic Kernel SDK enable automatic invocation of functions?"
+    choices:
+    - content: "By setting the `FunctionChoiceBehavior` property to `Auto()`."
+      isCorrect: true
+      explanation: "Correct. This setting allows the kernel to automatically choose and invoke the appropriate functions."
+    - content: "By using function calls in response to specific prompts only."
+      isCorrect: false
+      explanation: "Incorrect. Functions can be automatically invoked based on user input with the right configuration."
+    - content: "By writing custom scripts to trigger functions based on keywords."
+      isCorrect: false
+      explanation: "Incorrect. Automatic invocation is controlled by setting properties in the SDK, not through custom scripts."
+  - content: "What does function advertising allow in the Semantic Kernel SDK?"
+    choices:
+    - content: "It lets you automatically generate functions based on user inputs."
+      isCorrect: false
+      explanation: "Incorrect. Function advertising does not generate functions automatically."
+    - content: "It lets you control which functions are accessible to the AI model during execution."
+      isCorrect: true
+      explanation: "Correct. Function advertising allows you to select which functions are available for the AI model to invoke based on the scenario."
+    - content: "It automatically invokes functions without requiring a prompt from the user."
+      isCorrect: false
+      explanation: "Incorrect. Function advertising is about choosing which functions can be invoked, prompts are still required for invocation."

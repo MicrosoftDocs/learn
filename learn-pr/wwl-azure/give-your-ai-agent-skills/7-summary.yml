@@ -2,17 +2,14 @@
 uid: learn.wwl.give-your-ai-agent-skills.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
-  description: Summary
+  description: "Summary"
+  ms.date: 01/23/2025
   author: wwlpublish
   ms.author: buzahid
-  ms.date: 06/11/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-summary.md)]
-
+  [!include[](includes/7-summary.md)]

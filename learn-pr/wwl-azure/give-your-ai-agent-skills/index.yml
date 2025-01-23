@@ -1,18 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.give-your-ai-agent-skills
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Give your AI agent skills
-  description: Learn how native functions can be combined with prompts to accomplish customized tasks with the semantic kernel SDK.
+  description: "Learn how native functions can accomplish customized tasks with the semantic kernel SDK."
+  ms.date: 01/23/2025
   author: wwlpublish
   ms.author: buzahid
-  ms.date: 06/11/2024
-  ms.service: azure-ai-services
-  ai-usage: human-only
   ms.topic: module
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: semantic-kernel
+  ai-usage: human-only
 title: Give your AI agent skills
 summary: This module explores native functions in the Semantic Kernel SDK. Learn how native functions can accomplish customized tasks, effectively giving your AI agent a &quot;skill.&quot;
 abstract: |
@@ -40,10 +38,11 @@ products:
 - azure-openai
 units:
 - learn.wwl.give-your-ai-agent-skills.introduction
-- learn.wwl.give-your-ai-agent-skills.understand-native-functions
-- learn.wwl.give-your-ai-agent-skills.exercise-create-native-functions
+- learn.wwl.give-your-ai-agent-skills.understand-native-plugins
+- learn.wwl.give-your-ai-agent-skills.exercise-create-native-plugins
+- learn.wwl.give-your-ai-agent-skills.configure-function-choices
+- learn.wwl.give-your-ai-agent-skills.exercise-configure-available-functions
 - learn.wwl.give-your-ai-agent-skills.knowledge-check
 - learn.wwl.give-your-ai-agent-skills.summary
 badge:
   uid: learn.wwl.give-your-ai-agent-skills.badge
-

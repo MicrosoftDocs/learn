@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.give-your-ai-agent-skills.exercise-configure-available-functions
+title: Exercise - Configure available functions
+metadata:
+  title: Exercise - Configure available functions
+  description: "Exercise - Configure available functions"
+  ms.date: 01/23/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-configure-available-functions.md)]
