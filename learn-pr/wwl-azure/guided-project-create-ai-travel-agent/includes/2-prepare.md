@@ -9,37 +9,37 @@ In this project, you apply what you learned about the Semantic Kernel SDK. The A
 Use the following steps to prepare for the Guided Project exercises:
 
 > [!IMPORTANT]
-> You must have .NET Framework 8.0 installed and a Github account to complete these steps.
+> You must have Visual Studio Code and the .NET Framework 8.0 installed to complete these steps. 
+> You may also need to install the Visual Studio Code C# Dev Kit extension.
 
-1. Open Visual Studio Code
+1. Open Visual Studio Code.
 
-1. Under the Visual Studio Code **Start** section, select **Clone Git Repository**
+1. Under the Visual Studio Code **Start** section, select **Clone Git Repository**.
 
 1. In the URL bar, enter `https://github.com/MicrosoftLearning/APL-2005-Guided-Project.git`
 
-1. In the File Explorer, create a new folder in a location that is easy to find and remember, such as a folder in your Desktop
+1. In the File Explorer, create a new folder in a location that is easy to find and remember, such as a folder in your Desktop.
 
-1. Click the **Select as Repository Destination** button
+1. Click the **Select as Repository Destination** button.
 
-    You need to be signed in to GitHub to successfully clone the project
+    You need to be signed in to GitHub to successfully clone the project.
 
-1. Open the project in Visual Studio Code
+1. Open the project in Visual Studio Code.
 
 1. In Explorer, right-click the **AITravelAgent/Starter** folder and click **Open in Integrated Terminal**
 
 1. Expand the **Starter** folder
 
-    You should see a "Plugins" folder, a "Prompts" folder, and "Program.cs" file.
+1. Open the **appsettings.json** file and update the values with your Azure OpenAI Services model id, endpoint, and API key.
 
-1. Open the **Program.cs** file and update the following variables with your Azure OpenAI Services deployment name, API key, endpoint
-
-    ```csharp
-    string yourDeploymentName = "";
-    string yourEndpoint = "";
-    string yourKey = "";
+    ```json
+    {
+        "modelId": "gpt-35-turbo-16k",
+        "endpoint": "",
+        "apiKey": ""
+    }
     ```
 
-    > [!NOTE]
-    > The deployment model must be "gpt-35-turbo-16k" for some of the Semantic Kernel SDK features to work.
+1. In Explorer, right-click the **Starter** folder and click **Open in Integrated Terminal**.
 
 Now you're ready to begin the Guided Project exercises. Good luck!

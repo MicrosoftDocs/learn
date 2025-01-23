@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-create-ai-travel-agent.exercise-create-travel-itenerary
+title: Exercise - Create travel itenerary
+metadata:
+  title: Exercise - Create travel itenerary
+  description: "Exercise - Create travel itenerary"
+  ms.date: 01/23/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-create-travel-itenerary.md)]
