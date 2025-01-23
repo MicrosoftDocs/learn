@@ -1,6 +1,6 @@
-This unit summarizes key aspects of the Plan methodology, including rationalizing your digital estate, initial organizational alignment, adapting roles and skills, planning for sustainability, and avoiding common antipatterns.
+You can use the Plan methodology to rationalize your digital estate, align your organization, adapt roles and skills, plan for sustainability, and avoid common antipatterns.
 
-Your cloud adoption plan is an iterative project plan that helps you transition from traditional IT approaches to modern, agile methodologies. This plan aligns your business objectives with technical efforts, ensuring that transitions are managed and communicated effectively.
+Your cloud adoption plan is an iterative project plan that helps you transition from traditional IT approaches to modern, agile methodologies. This plan aligns your business objectives with technical efforts to help ensure that you manage and communicate transitions effectively.
 
 ## Manage your digital estate
 

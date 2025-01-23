@@ -19412,6 +19412,10 @@
       "redirect_url": "https://learn.microsoft.com/wwl-mba/microsoft-cloud-adoption-framework/1-introduction"
     },
     {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-getting-started/index.yml",
+      "redirect_url": "https://learn.microsoft.com/wwl-mba/microsoft-cloud-adoption-framework"
+    },
+    {
       "source_path_from_root": "/learn-pr/windows/wsl-introduction/what-is-wsl.yml",
       "redirect_url": "https://learn.microsoft.com/windows/wsl/about"
     },

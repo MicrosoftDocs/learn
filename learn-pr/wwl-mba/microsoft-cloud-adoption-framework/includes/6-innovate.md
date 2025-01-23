@@ -3,6 +3,7 @@ The Innovate methodology helps you understand customer needs and rapidly build i
 Before you establish your innovation approach. Ensure that your team can make the following important commitments:
 
 - [Commitment to prioritize customers over technology](/azure/cloud-adoption-framework/innovate/considerations/#commitment-to-prioritize-customers-over-technology): The primary goal of innovation is to meet the needs and expectations of your customers. Implement changes that are relevent and valuable to them.
+
 - [Commitment to transparency](/azure/cloud-adoption-framework/innovate/considerations/#commitment-to-transparency): Transparency among leadership and strategy teams provides an opportunity to learn from and improve your solution.
 - [Commitment to iteration](/azure/cloud-adoption-framework/innovate/considerations/#commitment-to-iteration): Iteration is inevitable. Commit to making changes so that you can continuously align with desired business outcomes.
 
@@ -16,13 +17,14 @@ After you define and align your solution, you can integrate it into your applica
 
 ## Measure success
 
-To measure the success of your solution, you should define business metrics. Business metrics are quantifiable metrics that you can use to track and assess a specific business goal. Generally, your business metrics align with the [motivations](/azure/cloud-adoption-framework/strategy/motivations) and [business outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes/) that you defined in the Strategy methodology. Your strategic metrics might align with one or more of the following outcome areas:
+To measure the success of your solution, you should define business metrics. Business metrics are quantifiable metrics that you can use to track and assess a specific business goal. Generally, your business metrics align with the [motivations](/azure/cloud-adoption-framework/strategy/motivations) and [objectives](/azure/cloud-adoption-framework/strategy/mission-objectives) that you defined in the Strategy methodology. Your strategic metrics might align with one or more of the following areas:
 
-- [Business agility](../../strategy/business-outcomes/agility-outcomes.md)
-- [Customer engagement](../../strategy/business-outcomes/engagement-outcomes.md)
-- [Customer reach](../../strategy/business-outcomes/reach-outcomes.md)
-- [Financial impact](../../strategy/business-outcomes/fiscal-outcomes.md)
-- [Solution performance](../../strategy/business-outcomes/fiscal-outcomes.md), in the case of operational innovation
+- AI
+- Compliance
+- Data
+- Security
+- Sustainability
+
 
 The end of every iteration provides an opportunity to learn from the build and measure cycles. 
 
