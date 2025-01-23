@@ -1,42 +1,42 @@
-This section guides you through deploying a Spring Boot application to Azure Container Apps. We'll cover packaging the application, setting up the Azure environment, and pushing the  application to Azure Container Apps.
-                                                                                     |
+This section guides you through deploying a Spring Boot application to Azure Container Apps. We cover packaging the application, setting up the Azure environment, and pushing the  application to Azure Container Apps.
+
 ## Setup
 
-To sign in to Azure from the CLI, run the following command and follow the prompts to complete the authentication process.
+To sign in to the latest version of Azure CLI, use the following steps, and follow the prompts to complete the authentication process:
 
-# [Bash](#tab/bash)
+1. Use the following command to sign in to Azure CLI:
 
-```bash
-az login
-```
+    # [Bash](#tab/bash)
 
-# [Azure PowerShell](#tab/azure-powershell)
+    ```bash
+    az login
+    ```
 
-```shell
-Connect-AzAccount
-```
+    # [Azure PowerShell](#tab/azure-powershell)
 
----
+    ```azurepowershell
+    Connect-AzAccount
+    ```
 
-To ensure you're running the latest version of the CLI, run the upgrade command.
+    ---
 
-# [Bash](#tab/bash)
+1. To ensure you're running the latest version of the CLI, use the following upgrade command:
 
-```bash
-az upgrade
-```
+    # [Bash](#tab/bash)
 
-# [Azure PowerShell](#tab/azure-powershell)
+    ```bash
+    az upgrade
+    ```
 
-```shell
-Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
-```
+    # [Azure PowerShell](#tab/azure-powershell)
 
----
+    ```azurepowershell
+    Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
+    ```
 
-Next, install or update the Azure Container Apps extension for the CLI.
+    ---
 
-If you receive errors about missing parameters when you run `az containerapp` commands in Azure CLI, be sure you have the latest version of the Azure Container Apps extension installed.
+Next, install or update the Azure Container Apps extension for the CLI by using the following command or commands, depending on whether you use Bash or Powershell. If you receive errors about missing parameters when you run `az containerapp` commands in Azure CLI, be sure you have the latest version of the Azure Container Apps extension installed.
 
 # [Bash](#tab/bash)
 
@@ -46,14 +46,14 @@ az extension add --name containerapp --upgrade
 
 # [Azure PowerShell](#tab/azure-powershell)
 
-```shell
+```azurepowershell
 Install-Module -Name Az.App
 Update-Module -Name Az.App
 ```
 
 ---
 
-Now that the current extension or module is installed, register the `Microsoft.App` and `Microsoft.OperationalInsights` namespaces.
+Now that the current extension or module is installed, register the `Microsoft.App` and `Microsoft.OperationalInsights` namespaces by using the following commands:
 
 # [Bash](#tab/bash)
 
@@ -64,7 +64,7 @@ az provider register --namespace Microsoft.OperationalInsights
 
 # [Azure PowerShell](#tab/azure-powershell)
 
-```shell
+```azurepowershell
 Register-AzResourceProvider -ProviderNamespace Microsoft.App
 Register-AzResourceProvider -ProviderNamespace Microsoft.OperationalInsights
 ```
@@ -73,7 +73,7 @@ Register-AzResourceProvider -ProviderNamespace Microsoft.OperationalInsights
 
 ## Create environment variables
 
-Now that your Azure CLI setup is complete, you can define the environment variables that are used throughout this article.
+Now that your Azure CLI setup is complete, you can define the environment variables that are used throughout this article by using the following commands:
 
 # [Bash](#tab/bash)
 
@@ -86,7 +86,7 @@ export APP_NAME="petclinic"
 
 # [Azure PowerShell](#tab/azure-powershell)
 
-```shell
+```azurepowershell
 $RESOURCE_GROUP = "petclinic-containerapps"
 $LOCATION = "canadacentral"
 $ENVIRONMENT = "env-petclinic-containerapps"
@@ -97,26 +97,26 @@ $APP_NAME = "petclinic"
 
 ## Locate the sample code
 
-Since we have already prepared the code sample in the last chapter, make sure that your are now in the `azure-container-apps-java-samples/spring-petclinic/spring-petclinic` directory of the project.
+Since we have already prepared the code sample in the last chapter, make sure that your are now in the **azure-container-apps-java-samples/spring-petclinic/spring-petclinic** directory of the project.
 
 ## Build and deploy the container app
 
-Build and deploy your first Spring Boot app with the containerapp up command. This command will:
+Build and deploy your first Spring Boot app with the `containerapp up` command, which does the following:
 
-- Create the resource group.
-- Create an Azure Container Registry.
-- Build the container image and push it to the registry.
-- Create the Container Apps environment with a Log Analytics workspace.
-- Create and deploy the container app using the built container image.
+- Creates the resource group.
+- Creates an Azure container registry.
+- Builds the container image and pushes it to the registry.
+- Creates the Container Apps environment with a Log Analytics workspace.
+- Creates and deploys the container app using the built container image.
 
-The `up` command uses the Dockerfile in the root of the repository to build the container image. In the following code example, the `..` (dot dot) tells `containerapp up` to run the `dockerfile` in the previous folder.
+The `containerapp up` command uses the Dockerfile in the root of the repository to build the container image. In the following code example, the `..` (dot dot) tells `containerapp up` to run the Dockerfile in the folder one level up.
 
 # [Bash](#tab/bash)
 
 ```bash
 az containerapp up \
-    --name $APP_NAME \
     --resource-group $RESOURCE_GROUP\
+    --name $APP_NAME \
     --location $LOCATION \
     --environment $ENVIRONMENT \
     --source ..
@@ -124,10 +124,10 @@ az containerapp up \
 
 # [Azure PowerShell](#tab/azure-powershell)
 
-```shell
+```azurepowershell
 az containerapp up `
-    --name $APP_NAME `
     --resource-group $RESOURCE_GROUP `
+    --name $APP_NAME `
     --location $LOCATION `
     --environment $ENVIRONMENT `
     --source ..
@@ -136,6 +136,7 @@ az containerapp up `
 ---
 
 ## Verify deployment
-Once your deployment is done, you should be able to see a success message with the project endpoint printed in the console. You may open the url to verify your project deployed on azure.
 
-![Diagram of the deployment verification.](../media/deployment_success.png)
+Once your deployment is done, you should be able to see a success message with the project endpoint printed in the console. You can open the URL to verify your project deployed to Azure.
+
+:::image type="content" source="../media/deployment_success.png" alt-text="Diagram of the deployment verification." lightbox="../media/deployment_success.png":::
