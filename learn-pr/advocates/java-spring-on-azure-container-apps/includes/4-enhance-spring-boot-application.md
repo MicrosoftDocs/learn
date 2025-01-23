@@ -8,7 +8,7 @@ To enable built-in Java features in Container Apps, use the following steps:
 1. In the pop up that appears, select **manage** next to the **Development stack** are of the screen, and then select **Java**. This turns on the Java stack feature to enhance your Java applications.
 1. Select **Apply** to confirm the change.
 
-    :::image type="content" source="../media/portal_select.png" alt-text="Screenshot highlighting 'Development Stack' option selected, with a Development Stack area appearing next to the option.":::
+    :::image type="content" source="../media/portal-select.png" alt-text="Screenshot highlighting 'Development Stack' option selected, with a Development Stack area appearing next to the option." lightbox="../media/portal-select.png":::
 
     The **Development stack** field is now set to **Java**.
 
