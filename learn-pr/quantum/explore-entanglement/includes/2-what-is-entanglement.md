@@ -54,3 +54,6 @@ If you measure only the qubit  $A$  and you get the $|0\rangle$ state, this mean
 Therefore, without measuring the qubit $B$ you can be positive that the second qubit is also in $|0\rangle$ state. The measurement outcomes are correlated because the qubits are entangled.
 
 Entanglement can exist between two particles even if they are separated by large distances. This correlation is stronger than any classical correlation, and it is a key resource for quantum information processing tasks such as quantum teleportation, quantum cryptography, and quantum computing.
+
+In the next unit, you'll write a Q# program that creates Bell states by applying quantum operations to qubits. 
+
