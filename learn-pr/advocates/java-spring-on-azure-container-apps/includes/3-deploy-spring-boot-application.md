@@ -103,7 +103,7 @@ Since you already prepared the code sample in the last chapter, make sure that y
 
 ## Build and deploy the container app
 
-Build and deploy your first Spring Boot app with the `containerapp up` command, which does the following tasks:
+Next, you build and deploy your first Spring Boot app with the `containerapp up` command, which accomplishes the following tasks:
 
 - Creates the resource group.
 - Creates an Azure container registry.
