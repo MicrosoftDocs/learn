@@ -24477,14 +24477,6 @@
       "redirect_url": "/training/modules/give-your-ai-agent-skills/"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/6-knowledge-check.md",
-      "redirect_url": "/training/modules/give-your-ai-agent-skills/4-knowledge-check"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/7-summary.md",
-      "redirect_url": "/training/modules/give-your-ai-agent-skills/5-summary"
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-azure/governance-security/10-azure-key-vault-backup-restore.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/13-azure-key-vault-backup-restore"
     },
@@ -40936,6 +40928,26 @@
     {
       "source_path": "learn-pr/wwl-azure/guided-project-create-ai-travel-agent/5-exercise-provide-context-cues.md",
       "redirect_url": "/training/modules/guided-project-create-ai-travel-agent/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/2-understand-native-functions.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/3-exercise-create-native-functions.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/3-exercise-create-native-plugins",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/4-knowledge-check.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/5-summary.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/7-summary",
       "redirect_document_id": false
     }
   ]

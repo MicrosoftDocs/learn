@@ -27,5 +27,5 @@ az group delete --name <name of your resource group>
 * [JSF 2.3](https://jakarta.ee/specifications/faces/2.3/)
 * [Expression Language](https://jakarta.ee/specifications/expression-language/3.0/)
 * [Project Lombok](https://projectlombok.org/)
-* [PrimeFaces](https://www.primefaces.org/documentation/)
+* [PrimeFaces](https://primefaces.github.io/primefaces/7_0/)
 * [Maven Plugin for Azure Web Apps](https://github.com/microsoft/azure-maven-plugins)
