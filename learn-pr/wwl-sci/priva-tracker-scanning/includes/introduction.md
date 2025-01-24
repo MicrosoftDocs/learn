@@ -12,6 +12,8 @@ You need a solution to automatically identify and categorize web trackers, ensur
 
 By the end of this module, you'll be able to:
 
-- Explain the purpose of tracker scanning and its importance in privacy compliance.
-- Use Microsoft Priva Tracker Scanning to identify, categorize, and manage trackers.
-- Describe how to use tracker scanning to create a comprehensive inventory of tracking technologies.
+- Explain the purpose and benefits of Microsoft Priva Tracker Scanning.
+- Set up Tracker Scanning and configure prerequisites.
+- Create and manage tracker categories and assign trackers.
+- Configure and run scans to detect tracking technologies and compliance objects.
+- Support privacy compliance and responsible data practices using Tracker Scanning.

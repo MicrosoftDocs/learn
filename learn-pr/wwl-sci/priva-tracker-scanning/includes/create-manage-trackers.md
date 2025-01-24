@@ -95,4 +95,4 @@ To map common trackers to your organization's categories:
 
 The **User-defined category** column now reflects the mapped categories, ensuring consistency across your tracker inventory.
 
-Managing trackers and tracker categories in Microsoft Priva Tracker Scanning is crucial for maintaining an organized inventory of tracking technologies and ensuring compliance with privacy standards. By creating tracker categories, categorizing trackers, and using tools like the tracker library and common tracker database, your organization can streamline tracking practices and support responsible data usage.
+Once your trackers and tracker categories are created and organized, the next step is to use Microsoft Priva Tracker Scanning to identify and analyze tracking technologies across your registered websites. Running scans enables you to detect trackers in action, validate compliance elements like consent banners, and ensure your tracking practices align with privacy expectations. Let’s explore how to configure and run scans to monitor and manage web trackers effectively.
