@@ -4,16 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 09/10/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 1/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric
+
 durationInMinutes: 3
 quiz:
   questions:
