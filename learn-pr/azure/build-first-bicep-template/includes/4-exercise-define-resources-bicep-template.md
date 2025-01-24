@@ -50,7 +50,7 @@ During the process, you'll:
 Run the following command from the terminal in Visual Studio Code to deploy the Bicep template to Azure. The command can take a minute or two to complete, and then you'll see a successful deployment. If you see a warning about the location being hard-coded, you can ignore it. You'll fix the location later in the module. It's safe to proceed and the deployment will succeed.
 
 ```azurecli
-az deployment group create --template-file main.bicep
+az deployment group create --name main --template-file main.bicep
 ```
 
 You'll see `Running...` in the terminal.
@@ -137,7 +137,7 @@ In the previous task, you learned how to create a template that contains a singl
 Run the following Azure CLI command in the terminal. You can ignore the warnings about the hard-coded location. You'll fix the location soon.
 
 ```azurecli
-az deployment group create --template-file main.bicep
+az deployment group create --name main --template-file main.bicep
 ```
 
 ::: zone-end
