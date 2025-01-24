@@ -1,10 +1,10 @@
-In this unit, you learn how to prepare a Spring Boot application for deployment on Azure Container Apps. We use the popular Spring PetClinic sample application, which demonstrates the use of Spring Framework and database access.
+In this unit, you learn how to prepare a Spring Boot application for deployment on Azure Container Apps. We use the popular Spring PetClinic sample application, which demonstrates the use of the Spring Framework and database access.
 
 The Spring PetClinic is a simple web application that manages a list of veterinarians, their patients, and the visits those patients had. This application provides a practical way to understand key Spring Boot concepts while preparing a Spring Boot application for deployment to Azure.
 
 ## Prerequisites
 
-- An Azure account. If you don't have one, [create an account for free](https://azure.microsoft.com/free/). You need the `Contributor` or `Owner` permission on the Azure subscription to proceed. Refer to [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal) for details.
+- An Azure account. If you don't have one, [create an account for free](https://azure.microsoft.com/free/). You need the `Contributor` or `Owner` permission for the Azure subscription to proceed. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 - [Git](https://git-scm.com/downloads)
 - [The Azure CLI](/cli/azure/install-azure-cli)
 
@@ -46,7 +46,7 @@ Before deploying, ensure that the PetClinic application runs successfully on you
 
     ---
 
-1. Initialize and update the `pet-clinic` git submodule to the latest version by using the following command:
+1. Initialize and update the `pet-clinic` Git submodule to the latest version by using the following command:
 
     # [Bash](#tab/bash)
 
