@@ -1,6 +1,6 @@
 ﻿Use the following process to complete Contoso's Azure VMware Solution configuration.
 
-1. Navigate to your Azure VMware Solution private cloud in Azure portal and select the **Internet connectivity** menu. Select option, **Do not connect or connect using default route from Azure**.
+1. Navigate to your Azure VMware Solution private cloud in Azure portal and select the **Internet connectivity** menu. Select option, **Do not connect or connect using default route from Azure** which is the default setting when the Azure VMware Solution private cloud is initially deployed.
 
    :::image type="content" source="../media/3-internet-connectivity-selected.png" alt-text="Screenshot of Azure portal menu showing the entry titled, 'Do not connect or connect using the default route from Azure' is selected." lightbox="../media/3-internet-connectivity-selected.png":::
 
