@@ -24477,14 +24477,6 @@
       "redirect_url": "/training/modules/give-your-ai-agent-skills/"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/6-knowledge-check.md",
-      "redirect_url": "/training/modules/give-your-ai-agent-skills/4-knowledge-check"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/7-summary.md",
-      "redirect_url": "/training/modules/give-your-ai-agent-skills/5-summary"
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-azure/governance-security/10-azure-key-vault-backup-restore.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/13-azure-key-vault-backup-restore"
     },
@@ -36229,6 +36221,126 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/2-what-is-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/3-how-aks-edge-essentials-works.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/4-when-to-use-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/5-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/introduction-to-aks-edge-essentials/6-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/2-prepare-machine-for-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/3-exercise-deploy-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/4-deploy-application-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/5-exercise-deploy-application-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/6-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/create-first-aks-edge-essentials/7-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/2-arc-enable-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/3-exercise-arc-enable-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/4-remote-application-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/5-exercise-remote-application-aks-edge-essentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/6-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/connect-aks-edge-essentials-azure-arc/7-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/get-started-aks-edge-essentials/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/optimize-archive-costs-blob-storage/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview",
       "redirect_document_id": false
@@ -40774,6 +40886,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/explore-azure-devops-with-github/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-400-implement-ci-azure-pipelines-github-actions/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/manage-device-identity-ad-join/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
       "redirect_document_id": false
@@ -40801,6 +40918,36 @@
     {
       "source_path": "learn-pr/azure/manage-device-identity-ad-join/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/entra/identity/devices/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-create-ai-travel-agent/4-exercise-route-user-intent.md",
+      "redirect_url": "/training/modules/guided-project-create-ai-travel-agent/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-create-ai-travel-agent/5-exercise-provide-context-cues.md",
+      "redirect_url": "/training/modules/guided-project-create-ai-travel-agent/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/2-understand-native-functions.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/3-exercise-create-native-functions.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/3-exercise-create-native-plugins",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/4-knowledge-check.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/5-summary.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/7-summary",
       "redirect_document_id": false
     }
   ]

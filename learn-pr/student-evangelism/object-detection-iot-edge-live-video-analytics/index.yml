@@ -32,6 +32,7 @@ prerequisites: |
     - Basic knowledge of containers
     - Ability to use Docker
 iconUrl: /training/achievements/student-evangelism/object-detection-iot-edge-live-video-analytics.svg
+hidden: true
 badge:
   uid: learn.oxford.azure-edge-zones-5g.badge
 levels:
