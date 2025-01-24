@@ -1,4 +1,4 @@
-In this exercise, you extend your AI travel assistant to help users convert currency and get the weather forecast in ther destination city. You focus on function choice behaviors to ensure the assistant invokes the correct functions for specific tasks. Let's get started!
+In this exercise, you extend your AI travel assistant to help users convert currency and get the weather forecast in their destination city. You focus on function choice behaviors to ensure the assistant invokes the correct functions for specific tasks. Let's get started!
 
 ## Task 1: Advertise selected functions
 
@@ -99,7 +99,7 @@ WeatherPlugin: Provides weather forecasts for travel destinations.
 
 ## Task 2: Enforcing Required Function Choice Behavior
 
-In this task, you will require the model to choose at least one function, ensuring the assistant provides the necessary information about weather for a particular destination.
+In this task, you'll require the model to choose at least one function, ensuring the assistant provides the necessary information about weather for a particular destination.
 
 1. Add the weather plugin to the kernel with the following code:
 
@@ -132,7 +132,7 @@ In this task, you will require the model to choose at least one function, ensuri
 
 1. Enter `dotnet run` in the terminal to test the code.
 
-    You should see a response similar to the following oujtput:
+    You should see a response similar to the following output:
 
     ```output
     User: What is the weather in Tokyo

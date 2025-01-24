@@ -22,7 +22,7 @@ A starter project is available for you to use for this exercise. Use the followi
 
 1. Open the project in Visual Studio Code.
 
-1. Open the **appsettings.json** file and update the values with your Azure OpenAI Services model id, endpoint, and API key.
+1. Open the **appsettings.json** file and update the values with your Azure OpenAI Services modelId, endpoint, and API key.
 
     ```json
     {

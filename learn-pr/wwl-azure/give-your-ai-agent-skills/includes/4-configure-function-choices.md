@@ -1,4 +1,4 @@
-Function advertising and function choice behavior allow developers to control how the AI model accesses and invokes external functions during execution. These lets you tailor the AI's responses based on specific scenarios, such as integrating with APIs for real-time data, restricting functionality for privacy or security, or enhancing the relevance of responses by narrowing the available functions. By strategically managing these behaviors, developers can optimize their AI application's performance.
+Function advertising and function choice behavior allow developers to control how the AI model accesses and invokes external functions during execution. These let you tailor the AI's responses based on specific scenarios, such as integrating with APIs for real-time data, restricting functionality for privacy or security, or enhancing the relevance of responses by narrowing the available functions. By strategically managing these behaviors, developers can optimize their AI application's performance.
 
 ## Function Advertising
 

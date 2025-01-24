@@ -1,8 +1,8 @@
-Plugins are a key component of the Semantic Kernel SDK. Plugins allow you to encapsulate your functions into a collection that can be used by the AI. Behind the scenes, Semantic Kernel uses function caling to perform planning and invoke your code. The LLM (Large Language Model) can request specific functions and the Semantic Kernel will route the request to the appropriate function in your code. The results are returned back to the LLM so that it can generate a final response.
+Plugins are a key component of the Semantic Kernel SDK. Plugins allow you to encapsulate your functions into a collection that can be used by the AI. Behind the scenes, Semantic Kernel uses function calling to perform planning and invoke your code. The LLM (Large Language Model) can request specific functions and the Semantic Kernel will route the request to the appropriate function in your code. The results are returned back to the LLM so that it can generate a final response.
 
 ## Creating a plugin
 
-For the Semantic Kernel to correctly route requests to your functions, the plugins you create must include details that describe the function's behavior. The details need to be written in a way that can be understood by the AI. The function's input, output and side effects should be described so that they AI can use the function. To create a plugin function, you add the following attributes to your function: `KernelFunction`, `Description`, and `return` if there is data returned from the function. Here is an example of a task managment plugin with a function and its description:
+For the Semantic Kernel to correctly route requests to your functions, the plugins you create must include details that describe the function's behavior. The details need to be written in a way that can be understood by the AI. The function's input, output and side effects should be described so that they AI can use the function. To create a plugin function, you add the following attributes to your function: `KernelFunction`, `Description`, and `return` if there's data returned from the function. Here's an example of a task management plugin with a function and its description:
 
 ```c#
 using System.ComponentModel;
@@ -37,7 +37,7 @@ public class TaskManagementPlugin
 }
 ```
 
-In this example, there is a simple `CompleteTask` function that marks a task as complete. To call your function, you need to add the plugin to the kernel using `Plugins.AddFromType`. This will give the kernel access to the plugin's functions. Afterwards you can invoke a function using the `InvokeAsync` method.
+In this example, there's a simple `CompleteTask` function that marks a task as complete. To call your function, you need to add the plugin to the kernel using `Plugins.AddFromType`. This will give the kernel access to the plugin's functions. Afterwards you can invoke a function using the `InvokeAsync` method.
 
 ```c#
 var builder = new KernelBuilder();
@@ -51,7 +51,7 @@ var arguments = new KernelArguments { ["id"] = id };
 var updatedTask = await kernel.InvokeAsync("TaskManagement", "complete_task", arguments);
 ```
 
-Using plugin functions allows your agent to perform tasks beyond the capabilities of a typical LLM, such as managing data, interacting with external systems, or handling specific business logic. The modularity of plugins make it easy to add new functionality to your agent without modofying core logic. This approach keeps your code organized, reusable, and easier to maintain.
+Using plugin functions allows your agent to perform tasks beyond the capabilities of a typical LLM, such as managing data, interacting with external systems, or handling specific business logic. The modularity of plugins make it easy to add new functionality to your agent without modifying core logic. This approach keeps your code organized, reusable, and easier to maintain.
 
 ## Invoke functions automatically
 
@@ -116,7 +116,7 @@ To enhance the LLM's ability to understand and utilize your plugin functions, co
 
 - **Use descriptive and concise function names** 
     
-    Names that clearly convey the function's purpose will help the model understand when to call the function. Avoid using abbreviations or acroynms to shorten function names. The DescriptionAttribute increases token consumption, so use it to provide context and instructions when necessary.
+    Names that clearly convey the function's purpose will help the model understand when to call the function. Avoid using abbreviations or acronyms to shorten function names. The DescriptionAttribute increases token consumption, so use it to provide context and instructions when necessary.
 
 - **Minimize function parameters**
     
