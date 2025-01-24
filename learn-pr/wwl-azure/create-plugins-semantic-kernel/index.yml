@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.create-plugins-semantic-kernel
 metadata:
-  title: Create plugins for semantic kernel
+  title: Run prompts with Semantic Kernel
   description: "This module explores Semantic Kernel SDK plugins. Learn how plugins to the SDK are used to accomplish customized tasks and create intelligent applications."
-  ms.date: 01/23/2025
+  ms.date: 01/24/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -12,7 +12,7 @@ metadata:
   - N/A
   ms.service: semantic-kernel
   ai-usage: human-only
-title: Create plugins for semantic kernel
+title: Run prompts with Semantic Kernel
 summary: This module explores Semantic Kernel SDK plugins. Learn how plugins to the SDK are used to accomplish customized tasks and create intelligent applications.
 abstract: |
   -   Understand the purpose of Semantic Kernel plugins
