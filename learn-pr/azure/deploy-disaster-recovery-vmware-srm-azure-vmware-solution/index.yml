@@ -22,7 +22,7 @@ abstract: |
 
 prerequisites: |
   - Basic understanding of disaster recovery concepts.
-  -	Understanding of the VMware infrastructure, such as vSphere, vCenter, NSX-T, and VMware HCX.
+  -	Understanding of the VMware infrastructure, such as vSphere, vCenter, NSX, and VMware HCX.
   
 iconUrl: /training/achievements/deploy-disaster-recovery-vmware-srm-azure-vmware-solution.svg
 levels:
