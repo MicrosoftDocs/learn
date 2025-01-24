@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.priva-tracker-scanning
+metadata:
+  title: Implement and manage Microsoft Priva Subject Rights Requests
+  description: "Implement and manage Microsoft Priva Subject Rights Requests."
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Implement and manage Microsoft Priva Subject Rights Requests
+summary: Microsoft Priva Subject Rights Requests helps organizations manage privacy rights requests, meet compliance requirements, and protect sensitive data. Explore how to create and manage subject rights requests for data stored in Microsoft 365 and beyond, streamline workflows, and ensure compliance with privacy obligations.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain the purpose of Microsoft Priva Subject Rights Requests.
+  - Create and manage requests for data stored in Microsoft 365 and beyond.
+  - Customize workflows to address privacy rights requests effectively.
+  - Use Priva tools to handle requests securely and comply with regulations.
+prerequisites: |
+  - Familiarity with Microsoft 365 services.
+  - Basic understanding of privacy rights and data protection.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- privacy-manager
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.priva-tracker-scanning.introduction
+- learn.wwl.priva-tracker-scanning.tracker-scanning-overview
+- learn.wwl.priva-tracker-scanning.configure-tracker-scanning
+- learn.wwl.priva-tracker-scanning.create-manage-trackers
+- learn.wwl.priva-tracker-scanning.run-a-scan
+- learn.wwl.priva-tracker-scanning.knowledge-check
+- learn.wwl.priva-tracker-scanning.summary
+
+badge:
+  uid: learn.wwl.priva-tracker-scanning.badge
