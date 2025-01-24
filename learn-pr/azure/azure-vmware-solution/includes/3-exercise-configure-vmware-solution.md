@@ -1,7 +1,8 @@
 ﻿Use the following process to complete Contoso's Azure VMware Solution configuration.
-1. Navigate to your Azure VMware Solution private cloud in Azure portal and select the "Internet Connectivity" menu. Select the "Don't connect or connect using default route from Azure" option.
 
-   :::image type="content" source="../media/3-internet-connectivity.png" alt-text="Screenshot of Azure portal menu. The menu entry titled 'Don't connect or connect using the default route from Azure' is highlighted." lightbox="../media/3-internet-connectivity.png":::
+1. Navigate to your Azure VMware Solution private cloud in Azure portal and select the **Internet connectivity** menu. Select option, **Do not connect or connect using default route from Azure**.
+
+   :::image type="content" source="../media/3-internet-connectivity-selected.png" alt-text="Screenshot of Azure portal menu showing the entry titled, 'Do not connect or connect using the default route from Azure' is selected." lightbox="../media/3-internet-connectivity-selected.png":::
 
 1. Create an NSX-T Manager network segment in the Azure portal.
 
