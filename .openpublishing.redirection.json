@@ -4230,35 +4230,71 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/10-knowledge-check.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/11-summary.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/4-save-retrieve-share-azure-spatial-anchors.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/5-exercise-save-retrieve-share-azure-spatial-anchors.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/6-display-feedback-from-azure-spatial-anchors.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/7-exercise-display-feedback-from-azure-spatial-anchors.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/8-azure-spatial-anchors-for-android-ios.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/9-exercise-azure-spatial-anchors-for-android-ios.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.azure.azure-spatial-anchors-tutorials-mrtk.badge.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/8-integrate-azure-spatial-anchors.yml",
+      "redirect_url": "/training/modules/azure-cloud-services-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/9-exercise-integrate-azure-spatial-anchors.yml",
+      "redirect_url": "/training/modules/azure-cloud-services-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/1-introduction.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/2-get-started-with-azure-spatial-anchors.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/3-exercise-get-started-with-azure-spatial-anchors.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/4-knowledge-check.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/5-summary.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/index.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-sql-secure-data/3-exercise-configure-auditing.md",
