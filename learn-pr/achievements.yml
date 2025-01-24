@@ -4607,6 +4607,26 @@ achievements:
   title: Crack the code and reveal a secret with Python and Visual Studio Code
   summary: You're handed a secret message that needs a code cracker to find the truth. Learn how to solve the code mystery to reveal a location and date to find a hidden treasure. Get a glimpse into the popular Python programming language with this introductory lesson that requires no coding experience.
   iconUrl: /training/achievements/python-partnership/secret-message-revised.svg
+- uid: learn.introduction-to-aks-edge-essentials.badge
+  type: badge
+  title: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
+  summary: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
+  iconUrl: /training/achievements/iot/introduction-to-aks-edge-essentials.svg
+- uid: learn.create-first-aks-edge-essentials.badge
+  type: badge
+  title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
+  summary: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
+  iconUrl: /training/achievements/iot/create-first-aks-edge-essentials.svg
+- uid: learn.connect-aks-edge-essentials-azure-arc.badge
+  type: badge
+  title: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 
+  summary: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 
+  iconUrl: /training/achievements/iot/connect-aks-edge-essentials-azure-arc.svg
+- uid: learn.get-started-aks-edge-essentials.trophy
+  type: trophy
+  title: Get started with Azure Kubernetes Service (AKS) Edge Essentials
+  summary: Get started with Azure Kubernetes Service (AKS) Edge Essentials
+  iconUrl: /training/achievements/iot/get-started-aks-edge-essentials.svg
 - uid: learn.python-partnership.trophy
   type: trophy
   title: Use Python basics to solve mysteries and find answers

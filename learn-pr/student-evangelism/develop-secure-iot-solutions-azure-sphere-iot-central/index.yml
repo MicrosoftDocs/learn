@@ -35,6 +35,7 @@ prerequisites: |
   - Basic knowledge of Azure Sphere
   - Basic knowledge of Azure IoT
 iconUrl: /training/achievements/student-evangelism/develop-secure-iot-solutions-with-azure-sphere.svg
+hidden: true
 badge:
   uid: learn.develop-secure-iot-solutions-with-azure-sphere.badge
 levels:

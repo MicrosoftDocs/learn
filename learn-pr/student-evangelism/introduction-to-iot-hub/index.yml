@@ -23,6 +23,7 @@ abstract: |
 prerequisites: |
     - Basic knowledge of IoT applications and deploying applications in the Cloud
 iconUrl: /training/achievements/student-evangelism/introduction-to-iot-hub.svg
+hidden: true
 badge:
   uid: learn.introduction-to-iot-hub.badge
 levels:

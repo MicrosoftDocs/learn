@@ -38,6 +38,7 @@ prerequisites: |
     - .NET SDK installed on your computer
 
 iconUrl: /training/achievements/student-evangelism/connecting-iot-devices-to-cognitive-services-using-azure-functions.svg
+hidden: true
 badge:
   uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.badge
 levels:
