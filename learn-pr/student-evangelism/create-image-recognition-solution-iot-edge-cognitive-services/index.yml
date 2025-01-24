@@ -36,6 +36,7 @@ prerequisites: |
     - Docker Community Edition installed on your computer
 
 iconUrl: /training/achievements/student-evangelism/create-image-recognition-solution-iot-edge-cognitive-services.svg
+hidden: true
 badge:
   uid: learn.oxford.learn.oxford.create-image-recognition-with-azure-iot-edge.badge
 levels:

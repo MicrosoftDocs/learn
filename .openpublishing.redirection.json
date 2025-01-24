@@ -4230,35 +4230,71 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/10-knowledge-check.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/11-summary.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/4-save-retrieve-share-azure-spatial-anchors.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/5-exercise-save-retrieve-share-azure-spatial-anchors.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/6-display-feedback-from-azure-spatial-anchors.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/7-exercise-display-feedback-from-azure-spatial-anchors.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/8-azure-spatial-anchors-for-android-ios.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/9-exercise-azure-spatial-anchors-for-android-ios.yml",
-      "redirect_url": "/training/modules/azure-spatial-anchors-tutorials/"
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.azure.azure-spatial-anchors-tutorials-mrtk.badge.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/8-integrate-azure-spatial-anchors.yml",
+      "redirect_url": "/training/modules/azure-cloud-services-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/9-exercise-integrate-azure-spatial-anchors.yml",
+      "redirect_url": "/training/modules/azure-cloud-services-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/1-introduction.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/2-get-started-with-azure-spatial-anchors.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/3-exercise-get-started-with-azure-spatial-anchors.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/4-knowledge-check.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/5-summary.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-spatial-anchors-tutorials/index.yml",
+      "redirect_url": "/training/paths/beginner-hololens-2-tutorials/"
     },
     {
       "source_path_from_root": "/learn-pr/azure/azure-sql-secure-data/3-exercise-configure-auditing.md",
@@ -24477,14 +24513,6 @@
       "redirect_url": "/training/modules/give-your-ai-agent-skills/"
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/6-knowledge-check.md",
-      "redirect_url": "/training/modules/give-your-ai-agent-skills/4-knowledge-check"
-    },
-    {
-      "source_path_from_root": "/learn-pr/wwl-azure/give-your-ai-agent-skills/7-summary.md",
-      "redirect_url": "/training/modules/give-your-ai-agent-skills/5-summary"
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-azure/governance-security/10-azure-key-vault-backup-restore.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/governance-security/13-azure-key-vault-backup-restore"
     },
@@ -35422,12 +35450,12 @@
       "source_path": "learn-pr/paths/provision-iot-devices-scale-use-device/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
-    },  
+    },
     {
       "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/1-introduction.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/iot/examine-device-provisioning-lifecycle-tasks/2-device-enrollment-tools-processes.yml",
       "redirect_url": "/training/",
@@ -36737,12 +36765,12 @@
       "source_path": "learn-pr/iot/explore-iot-hub-monitoring/2-prepare.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/iot/explore-iot-hub-monitoring/3-exercise-simulate-device.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/iot/explore-iot-hub-monitoring/4-exercise-setup-use-metrics-diagnostic-logs-iot-hub.yml",
       "redirect_url": "/training/",
@@ -40586,92 +40614,92 @@
     {
       "source_path": "learn-pr/paths/build-javascript-applications-nodejs/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/intro-to-nodejs/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/intro-to-nodejs/2-what.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/intro-to-nodejs/3-when-use.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/intro-to-nodejs/4-how-works.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/intro-to-nodejs/5-try.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/intro-to-nodejs/6-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/intro-to-nodejs/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/intro-to-nodejs/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/2-package-json.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/3-exercise-package-json.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/4-dependency.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/5-exercise-dependency.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/6-dependency-management.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/7-exercise-dependency-management.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/8-knowledge-check.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/9-summary.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/advocates/create-nodejs-project-dependencies/index.yml",
@@ -40936,6 +40964,61 @@
     {
       "source_path": "learn-pr/wwl-azure/guided-project-create-ai-travel-agent/5-exercise-provide-context-cues.md",
       "redirect_url": "/training/modules/guided-project-create-ai-travel-agent/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/2-understand-native-functions.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/3-exercise-create-native-functions.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/3-exercise-create-native-plugins",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/4-knowledge-check.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/give-your-ai-agent-skills/5-summary.md",
+      "redirect_url": "/training/modules/give-your-ai-agent-skills/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/2-explore-built-in-plugins.md",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/3-exercise-use-built-in-plugins.md",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/4-optimize-language-model-prompts.md",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/2-optimize-language-model-prompts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/5-exercise-write-your-own-prompts.md",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/6-exercise-use-personas-prompts.md",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/7-save-prompts-files.md",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/8-exercise-save-prompts-files.md",
+      "redirect_url": "/training/modules/create-plugins-semantic-kernel/",
       "redirect_document_id": false
     }
   ]

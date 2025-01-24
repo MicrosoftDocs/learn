@@ -42,8 +42,6 @@ quiz:
       isCorrect: false
     - content: "Azure Virtual Rooms"
       isCorrect: true
-    - content: "Azure Spatial Anchors"
-      isCorrect: false
       explanation: "Virtual rooms is not an Azure service."
   - content: "Which application will allow HoloLens employees to collaborate in real time with remote colleagues?"
     choices:  
