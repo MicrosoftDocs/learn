@@ -14,7 +14,7 @@ metadata:
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Your company is considering deploying VMware SRM to provide disaster recovery for their Azure VMware Solution. What is the recommended connection that needs to exist between both the primary and secondary Azure VMware Solution site?"
+  - content: "Your company is considering deploying VMware SRM to provide disaster recovery for their Azure VMware Solution. What is the recommended connection between the primary and secondary Azure VMware Solution site?"
     choices:
     - content: "Peering between Azure VMware Solution sites."
       isCorrect: false
@@ -27,16 +27,16 @@ quiz:
       explanation: "Incorrect. Each Azure VMware Solution environment is its own ExpressRoute region (its own virtual MSEE device), so it requires ExpressRoute Global Reach."
   - content: "Which of the following scenarios does VMware SRM not support for implementation of BCDR?"
     choices:
-    - content: "From an on-premises VMware vCenter Server site to the recovery site in Azure VMware Solution private cloud."
+    - content: "From an on-premises VMware vSphere site to the recovery site in Azure VMware Solution private cloud."
       isCorrect: false
       explanation: "Incorrect. Azure supports this scenario."
     - content: "From a primary Azure VMware Solution site in one Azure region to a secondary Azure VMware Solution site in another region."
       isCorrect: false
       explanation: "Incorrect. Azure supports this scenario."
-    - content: "From on-premises VMware vCenter Server site to Azure VMs."
+    - content: "From on-premises VMware vSphere site to Azure VMs."
       isCorrect: true
       explanation: "Correct. VMware Site Recovery Manager is a BCDR solution that helps you plan, test, and run the recovery of VMs between a protected vCenter Server site and a recovery vCenter Server site."
-  - content: "An administrator has established connectivity between a primary and secondary Azure VMware Solution sites. What are the next steps in the process for setting up protection for their workload?"
+  - content: "An administrator has established connectivity between primary and secondary Azure VMware Solution sites. What are the next steps in the process for setting up protection for their workload?"
     choices:
     - content: "Replicate VMs between sites."
       isCorrect: false
