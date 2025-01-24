@@ -4,9 +4,9 @@
 
    :::image type="content" source="../media/3-internet-connectivity-selected.png" alt-text="Screenshot of Azure portal menu showing the entry titled, 'Do not connect or connect using the default route from Azure' is selected." lightbox="../media/3-internet-connectivity-selected.png":::
 
-1. Create an NSX-T Manager network segment in the Azure portal.
+1. Create an NSX Manager network segment in the Azure portal.
 
-   :::image type="content" source="../media/3-network-segment.png" alt-text="Screenshot of the Azure portal showing how to add an NSX-T Manager network segment.":::
+   :::image type="content" source="../media/3-create-nsx-manager-network-segments.png" alt-text="Screenshot of the Azure portal showing how to add a NSX Manager network segment."lightbox="../media/3-create-nsx-manager-network-segments.png":::
 
 1. Create a DHCP server or DHCP relay in the Azure portal.
 
