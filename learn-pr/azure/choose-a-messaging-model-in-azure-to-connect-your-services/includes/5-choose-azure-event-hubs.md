@@ -14,7 +14,7 @@ Whereas Event Grid fits perfectly into the publish-subscribe pattern in that it 
 
 #### Partitions
 
-As Event Hubs receives communications, it divides them into partitions. Partitions are buffers into which the communications are saved. Because of the event buffers, events aren't ephemeral, and an event isn't missed just because a subscriber is busy or even offline. The subscriber can always use the buffer to "catch up." By default, events stay in the buffer for 24 hours before they automatically expire. The buffers are called partitions because the data is divided amongst them. Each partition has a separate set of subscribers.
+As Event Hubs receives communications, it divides them into partitions. Partitions are buffers into which the communications are saved. Because of the event buffers, events aren't ephemeral, and an event isn't missed just because a subscriber is busy or even offline. The subscriber can always use the buffer to "catch up." By default, events stay in the buffer for 24 hours before they automatically expire. The buffers are called partitions because the data is divided among them. Each partition has a separate set of subscribers.
 
 #### Capture
 
@@ -40,7 +40,7 @@ Just like our queue choice, selecting between these two event delivery services 
 
 - You need to support authenticating a large number of publishers.
 - You need to save a stream of events to Data Lake or Blob storage.
-- You need aggregation or analytics on your event stream.
+- You need aggregation or analytics on your events
 - You need reliable messaging or resiliency.  
 
 Otherwise, if you need a simple event publish-subscribe infrastructure with trusted publishers (for instance, your own web server), you should choose Event Grid.
