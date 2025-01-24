@@ -53,7 +53,7 @@ Before you start protecting the VMs, you first need to map the objects on the pr
 
 :::image type="content"  source="../media/5-configure-network-mappings.png" alt-text="Screenshot of the Recovery networks window with relevant mappings set for objects between the protected site and the recovery site."lightbox="../media/5-configure-network-mappings.png":::
 
-By configuring mappings, you can ensure that the VMs will have access to all resources available at the recovery site. If you don’t create the proper mapping, then you’ve to configure these settings for every VM individually.
+By configuring mappings, you can ensure that the VMs have access to all resources available at the recovery site. If you don’t create the proper mapping, then you’ve to configure these settings for every VM individually.
 
 ### Configure replication on the VMs
 
@@ -157,7 +157,7 @@ Use the following procedure to create a recovery plan:
 
 ### Testing the recovery plan
 
-After you've created a recovery plan, you can test or run the recovery plan. When you test the recovery plan, the source VM continues to operate in the source Azure VMware Solution, and a replica of that VM is created in the recovery site in the test network.
+After you created a recovery plan, you can test or run the recovery plan. When you test the recovery plan, the source VM continues to operate in the source Azure VMware Solution, and a replica of that VM is created in the recovery site in the test network.
 
 Use the following procedure to test the recovery plan:
 
@@ -239,7 +239,7 @@ JetStream is built on the foundation of Continuous Data Protection (CDP), which 
 
 ### JetStream scenarios on Azure VMware Solution
 
-You can use JetStream DR with Azure VMware Solution for the follwoing two scenarios.
+You can use JetStream DR with Azure VMware Solution for the following two scenarios.
 
 **Scenario 1:** On-premises VMware vSphere to Azure VMware Solution DR.
 
