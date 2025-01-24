@@ -25,6 +25,7 @@ prerequisites: |
     - Basic knowledge of Azure IoT Hub
     - An active Azure account
 iconUrl: /training/achievements/student-evangelism/run-cognitive-services-on-iot-edge.svg
+hidden: true
 badge:
   uid: learn.oxford.run-cognitive-services-iot-edge.badge
 levels:

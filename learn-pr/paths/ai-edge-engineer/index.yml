@@ -42,6 +42,7 @@ summary: |
 
 prerequisites: None
 iconUrl: /training/achievements/ai-edge-engineer.svg
+hidden: true
 levels:
 - beginner
 roles:

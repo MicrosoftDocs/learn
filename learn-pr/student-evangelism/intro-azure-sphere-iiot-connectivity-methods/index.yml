@@ -24,6 +24,7 @@ prerequisites: |
     - Basic knowledge of IoT
     - Basic knowledge of Azure Sphere
 iconUrl: /training/achievements/student-evangelism/azure-sphere-industrial-iot.svg
+hidden: true
 badge:
   uid: learn.industrial-iot-connectivity.badge
 levels:

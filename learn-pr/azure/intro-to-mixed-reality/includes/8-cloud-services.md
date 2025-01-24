@@ -6,10 +6,6 @@ You can use *Azure Remote Rendering* to render highly complex 3D models in real 
 
 :::image type="content" source="../media/azure-remote-rendering-engine.png" alt-text="Photograph of two 3D car engine models. The left model has a high triangle count, and the right model has a low triangle count.":::
 
-You can use *Azure Spatial Anchors* to build spatially aware applications. You can map, persist, and share holographic content across multiple devices at real-world scale. This service is cross-platform and is uniquely suited to way finding, multiuser experiences, and saving your object information.
-
-:::image type="content" source="../media/persistence.gif" alt-text="Animated illustration of a spatial anchor persisting on a table between application sessions.":::
-
 Microsoft has several *cognitive services* that can be integrated into mixed reality applications. For example, the Speech service enables the integration of speech-processing capabilities into any app or service. You can convert spoken language into text or produce natural-sounding speech from text by using standard or customizable voice fonts.
 
 Another example is the Vision service, which lets your app recognize, identify, caption, index, and moderate your pictures, videos, and digital ink content. It's even possible for your apps to accurately identify and analyze content within an image or video.

@@ -26,6 +26,7 @@ prerequisites: |
     - Basic understanding of IoT 
     
 iconUrl: /training/achievements/student-evangelism/introduction-to-azure-functions-iot-edge.svg
+hidden: true
 badge:
   uid: learn.oxford.intro-iot-funtions-iot.badge
 levels:
