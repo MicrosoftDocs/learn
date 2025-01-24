@@ -1,6 +1,6 @@
-One of the core features of the Semantic Kernel SDK is that it allows developers to combine native code with the power of large language models (LLMs). Plugins containing native functions can be used to extend the functionality of your artificially intelligent (AI) agent. These native functions can perform a wide range of tasks, from complex calculations to personalized recommendations.
+One of the core features of the Semantic Kernel SDK is that it allows developers to combine native code with the power of large language models (LLMs). Plugins encapsulate your functions and allow them to be used by the AI. This enables your AI the ability to perform actions that it wouldn't otherwise be able to do.
 
-Suppose you want to create a smart music service that can provide a personalized listening experience. You can use native functions to interact with a music library, add songs to a user's "Recently Played" list, and then use a semantic prompt to recommend songs and concerts.
+Suppose you want to create a smart travel agent that has the ability to search for and book flights. You can add plugin functions to your kernel that can interact with a flights library, search for flights to a destination, and even book a flight for the user.
 
 In this module, you learn how native functions work in the Semantic Kernel SDK. You can understand how native functions accomplish customized tasks, effectively giving your AI agent a "skill."
 
@@ -8,6 +8,7 @@ In this module, you learn how native functions work in the Semantic Kernel SDK. 
 
 - Understand native functions in the Semantic Kernel SDK.
 - Learn how to create native function plugins.
+- Learn how to configure function availability.
 
 ## Prerequisites
 
