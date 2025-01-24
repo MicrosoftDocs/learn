@@ -5,7 +5,7 @@ Now that you deployed the Spring PetClinic application on Azure Container Apps, 
 To enable built-in Java features in Container Apps, use the following steps:
 
 1. Open your portal and find your deployed container app.
-1. In the pop up that appears, select **manage** next to the **Development stack** are of the screen, and then select **Java**. This turns on the Java stack feature to enhance your Java applications.
+1. In the pop up that appears, select **manage** next to the **Development stack** area of the screen, and then select **Java**. This turns on the Java stack feature to enhance your Java applications.
 1. Select **Apply** to confirm the change.
 
     :::image type="content" source="../media/portal-select.png" alt-text="Screenshot highlighting 'Development Stack' option selected, with a Development Stack area appearing next to the option." lightbox="../media/portal-select.png":::
@@ -51,6 +51,6 @@ The command produces the following output:
 {"TimeStamp": "2024-12-13T08:16:13.722+00:00", "Log": "INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)"}
 ```
 
-You can find out more about viewing log streams at [View log streams in Azure Container Apps](/azure/container-apps/log-streaming).
+For more information about viewing log streams, see [View log streams in Azure Container Apps](/azure/container-apps/log-streaming).
 
-Azure Container Apps can run any containerized Java application in the cloud while giving flexible options for how you deploy your applications. With the support of the Java stack, you can enhance your application with automatic memory fitting, different deployment options, and built-in Java diagnostics tools. You can learn more at [Java on Azure Container Apps overview](/azure/container-apps/java-overview).
+Azure Container Apps can run any containerized Java application in the cloud while giving flexible options for how you deploy your applications. With the support of the Java stack, you can enhance your application with automatic memory fitting, different deployment options, and built-in Java diagnostics tools. For more information, see [Java on Azure Container Apps overview](/azure/container-apps/java-overview).
