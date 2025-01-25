@@ -9,7 +9,7 @@ To view scan results, navigate to the **Registered websites** page in Tracker Sc
 1. Select a website name to open its **Details** page.
 1. In the left navigation menu, select **Compliance scans** to see a list of all scans for the selected website.
 
-From here, you can view a summary of the scans and select individual scans to see more detailed results.
+From here, you can view a summary of the scans and select individual scans to see more in-depth results.
 
 ## Understand scan results
 
@@ -23,14 +23,14 @@ The website's **Details** page provides an overview of scan results, including:
 - **Compliance scans**: A list of scans created for the website. Selecting a scan opens its detailed page, where you can edit the scan, rerun it, or view its results.
 - **Trackers identified**: A list of all trackers found in scans of the website.
 
-> [!NOTE]
-> To display the list of trackers, you must select Show filtered list on the page. The list reflects the current point in time and might change as additional scans are performed.
+   > [!NOTE]
+   > To display the list of trackers, you must select Show filtered list on the page. The list reflects the current point in time and might change as extra scans are performed.
 
-- **Consent models**: Lists any consent models associated with the website.
+- **Consent models**: Lists any [consent models](/privacy/priva/consent-management-create) associated with the website.
 
 ## Detailed scan results
 
-To dive deeper into scan results, select a scan name from the **Compliance scans** tab. On the scan's details page, you'll find the following tabs:
+To explore scan results in more detail, select a scan name from the **Compliance scans** tab, then select **See results**. The scan's details page includes the following tabs:
 
 ### Scan details
 
@@ -40,6 +40,8 @@ The **Scan details** tab provides a high-level summary, including:
 - Number of pages scanned.
 - Number of trackers identified.
 
+   :::image type="content" source="../media/scan-details.png" alt-text="Screenshot showing the scan details page in tracker scanning." lightbox="../media/scan-details.png":::
+
 ### Scan results
 
 The **Scan results** tab highlights critical issues requiring attention, such as:
@@ -48,9 +50,11 @@ The **Scan results** tab highlights critical issues requiring attention, such as
 - **Compliance issues**: Missing compliance objects like consent banners or privacy notices.
 - **Failed URLs**: Pages that couldn't be scanned due to errors.
 
+   :::image type="content" source="../media/scan-results.png" alt-text="Screenshot showing the scan results page in tracker scanning." lightbox="../media/scan-results.png":::
+
 Below these summaries, you'll find detailed tables with additional information, such as:
 
-- **Trackers** and **Tags**: Displays trackers identified during the scan, including their type, category, frequency, and associated HTML tags.
+- **Trackers identified** and **Tags**: Displays trackers identified during the scan, including their type, category, frequency, and associated HTML tags.
 - **External websites**: Lists webpages outside the scan's scope, such as those with different top-level domains.
 - **Compliance issues**: Summarizes potential issues, such as uncategorized trackers or missing compliance elements.
 - **Failed URLs**: Identifies unscanned pages within the website's domain, with troubleshooting details.
@@ -72,7 +76,7 @@ The External websites tab identifies webpages outside the scan scope. For exampl
 - Pages on subdomains (for example, products.contoso.com).
 - Pages with different top-level domains (for example, contoso.net).
 
-These pages might require additional review or configuration to ensure they're included in future scans.
+These pages might require further review or configuration to ensure they're included in future scans.
 
 ## Scan time estimates
 
@@ -82,6 +86,6 @@ If you enabled scan time estimates during setup, the Scan time estimates tab dis
 - Total pages scanned versus unscanned pages.
 - Any unscanned pages within the domain.
 
-These insights can help you optimize scan configurations and troubleshoot issues.
+These insights can help you optimize scan configurations and troubleshoot issues. For instance, reducing the number of pages or narrowing the scan scope can improve performance.
 
 Analyzing scan results in Microsoft Priva Tracker Scanning provides valuable insights into your organization's tracking technologies and compliance status. By reviewing detailed scan data, addressing compliance issues, and understanding tracker relationships, you can take informed steps to enhance transparency and align with privacy standards. With regular scans and proactive management, your organization can maintain trust and meet evolving privacy expectations.

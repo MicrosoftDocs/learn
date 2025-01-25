@@ -17,7 +17,7 @@ abstract: |
   - Set up and configure Tracker Scanning to meet your organization's needs.
   - Create and manage tracker categories and assign trackers effectively.
   - Configure and run scans to detect tracking technologies and compliance objects.
-  - Support privacy compliance by using Tracker Scanning to align tracking practices with organizational policies and user expectations.
+  - Analyze scan results to address compliance issues and improve tracking practices.
 prerequisites: |
   - Familiarity with Microsoft 365 services.
   - Basic understanding of web trackers, cookies, and privacy compliance practices.
