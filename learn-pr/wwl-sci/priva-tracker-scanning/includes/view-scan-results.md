@@ -26,7 +26,7 @@ The website's **Details** page provides an overview of scan results, including:
    > [!NOTE]
    > To display the list of trackers, you must select Show filtered list on the page. The list reflects the current point in time and might change as extra scans are performed.
 
-- **Consent models**: Lists any [consent models](/privacy/priva/consent-management-create) associated with the website.
+- **Consent models**: Lists any [consent models](/privacy/priva/consent-management-create?azure-portal=true) associated with the website.
 
 ## Detailed scan results
 
@@ -89,3 +89,7 @@ If you enabled scan time estimates during setup, the Scan time estimates tab dis
 These insights can help you optimize scan configurations and troubleshoot issues. For instance, reducing the number of pages or narrowing the scan scope can improve performance.
 
 Analyzing scan results in Microsoft Priva Tracker Scanning provides valuable insights into your organization's tracking technologies and compliance status. By reviewing detailed scan data, addressing compliance issues, and understanding tracker relationships, you can take informed steps to enhance transparency and align with privacy standards. With regular scans and proactive management, your organization can maintain trust and meet evolving privacy expectations.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

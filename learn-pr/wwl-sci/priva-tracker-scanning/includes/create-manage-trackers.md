@@ -1,4 +1,4 @@
-Trackers and tracker categories are essential components of Microsoft Priva Tracker Scanning. They enable your organization to identify and organize tracking technologies across websites, ensuring better compliance with privacy practices and supporting user consent preferences. Tracker categories also integrate with [Microsoft Priva Consent Management (preview)](/privacy/priva/consent-management) to ensure only consented trackers are active, helping organizations build trust and comply with privacy standards.
+Trackers and tracker categories are essential components of Microsoft Priva Tracker Scanning. They enable your organization to identify and organize tracking technologies across websites, ensuring better compliance with privacy practices and supporting user consent preferences. Tracker categories also integrate with [Microsoft Priva Consent Management (preview)](/privacy/priva/consent-management?azure-portal=true) to ensure only consented trackers are active, helping organizations build trust and comply with privacy standards.
 
 ## Tracker management overview
 
@@ -96,3 +96,7 @@ To map common trackers to your organization's categories:
 The **User-defined category** column now reflects the mapped categories, ensuring consistency across your tracker inventory.
 
 Once your trackers and tracker categories are created and organized, the next step is to use Microsoft Priva Tracker Scanning to identify and analyze tracking technologies across your registered websites. Running scans enables you to detect trackers in action, validate compliance elements like consent banners, and ensure your tracking practices align with privacy expectations. Let’s explore how to configure and run scans to monitor and manage web trackers effectively.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

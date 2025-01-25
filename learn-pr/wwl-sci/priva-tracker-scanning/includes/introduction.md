@@ -17,3 +17,7 @@ By the end of this module, you'll be able to:
 - Manage tracker categories and assign trackers effectively.
 - Run scans to detect tracking technologies and compliance issues.
 - Analyze scan results to support privacy compliance and optimize tracking practices.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

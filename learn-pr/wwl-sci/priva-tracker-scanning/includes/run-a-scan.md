@@ -35,7 +35,7 @@ In this step, define what the scan should detect:
   - **Consent banners**
   - **Privacy statements**
 
-To add a compliance object, enter its location path manually or use the Microsoft Edge extension to generate and upload a JSON file. For more information, see [Collecting location paths](/privacy/priva/location-paths).
+To add a compliance object, enter its location path manually or use the Microsoft Edge extension to generate and upload a JSON file. For more information, see [Collecting location paths](/privacy/priva/location-paths?azure-portal=true).
 
 ## Scheduling scans
 
@@ -58,3 +58,7 @@ Before running the scan, review the scan settings on the **Review your scan** pa
 Once the scan is complete, results are available on the **Scan results** page, where you can analyze detected trackers, review compliance objects, and address potential issues.
 
 Running scans in Microsoft Priva Tracker Scanning is a critical step for maintaining compliance with privacy regulations and ensuring transparency in your organization's tracking practices. By using features like regional scanning, customizable tracker detection, and recurring schedules, you can proactively manage compliance and support responsible data practices.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

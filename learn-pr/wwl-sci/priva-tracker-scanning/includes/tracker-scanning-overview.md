@@ -29,3 +29,7 @@ Microsoft Priva Tracker Scanning detects and categorizes several types of tracki
 Microsoft Priva Tracker Scanning provides organizations with the tools they need to manage and evaluate web tracking technologies effectively. By automating the identification and categorization of trackers, the tool helps ensure that tracking practices are transparent and aligned with privacy expectations.
 
 Now that you understand what Tracker Scanning is and how it works, you're ready to configure it for your organization.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

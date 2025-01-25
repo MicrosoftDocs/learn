@@ -14,7 +14,13 @@ Without a solution like Microsoft Priva Tracker Scanning, organizations often re
 
 ## Resources
 
-- [Learn about tracker scanning (preview)](/privacy/priva/tracker-scanning)
-- [Get started with tracker scanning (preview)](/privacy/priva/tracker-scanning-setup)
-- [Register websites in tracker scanning (preview)](/privacy/priva/tracker-scanning-register-websites)
-- 
+- [Learn about tracker scanning (preview)](/privacy/priva/tracker-scanning?azure-portal=true)
+- [Get started with tracker scanning (preview)](/privacy/priva/tracker-scanning-setup?azure-portal=true)
+- [Register websites in tracker scanning (preview)](/privacy/priva/tracker-scanning-register-websites?azure-portal=true)
+- [Create tracker categories and manage trackers in tracker scanning (preview)](/privacy/priva/tracker-scanning-tracker-categories?azure-portal=true)
+- [Create and run a scan on registered websites with tracker scanning (preview)](/privacy/priva/tracker-scanning-scan-create?azure-portal=true)
+- [View scan results in tracker scanning (preview)](/privacy/priva/tracker-scanning-scan-results?azure-portal=true)
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)
