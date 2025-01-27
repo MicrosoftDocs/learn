@@ -83,7 +83,7 @@ To integrate any of the function filters, you can use the following methods:
 
 - **Kernel Properties**:
 
-    Add the function to the kerne'ls `FunctionInvocationFilters` list:
+    Add the function to the kernel's `FunctionInvocationFilters` list:
 
     ```c#
     kernel.FunctionInvocationFilters.Add(new LoggingFilter(logger));
