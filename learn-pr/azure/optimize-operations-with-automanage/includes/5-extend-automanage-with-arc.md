@@ -19,7 +19,7 @@ Arc-enabled servers onboarded with Automanage enjoy the same benefits and servic
 
 Automanage supports the following operating systems for Azure Arc-enabled servers:
 
-- Windows Server 2012 R2, 2016, 2019, 2022
+- Windows Server 2012 R2, 2016, 2019, 2022, 2025
 - CentOS 7.3+, 8
 - RHEL 7.4+, 8
 - Ubuntu 16.04, 18.04, 20.04
