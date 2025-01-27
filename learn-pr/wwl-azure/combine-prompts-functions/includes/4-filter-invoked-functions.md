@@ -1,10 +1,10 @@
-Filters in Semantic Kernel empower developers to manage and secure function execution by enabling fine-grained control and visibility. They are instrumental in building responsible AI solutions that meet enterprise standards. Filters validate actions like user permissions or modify interactions with AI models to ensure compliance and reliability.
+Filters in Semantic Kernel empower developers to manage and secure function execution by enabling fine-grained control and visibility. They're instrumental in building responsible AI solutions that meet enterprise standards. Filters validate actions like user permissions or modify interactions with AI models to ensure compliance and reliability.
 
 ## Types of filters
 
 Semantic Kernel offers three types of filters to enhance control and customization: **Function Invocation Filters** for managing function execution, **Prompt Render Filters** for modifying prompts before submission, and **Auto Function Invocation Filters** for directing multi-step workflows. Each filter type addresses specific needs, enabling developers to build secure and adaptable AI solutions.
 
-### **Function Invocation Filter**
+### Function Invocation Filter
 
 This filter runs every time a function is executed, whether it originates from a prompt or is implemented in C#. Its capabilities include:
 
@@ -12,7 +12,7 @@ This filter runs every time a function is executed, whether it originates from a
 - Logging or validating actions before and after execution.
 - Overriding results or retrying operations using alternative AI models.
 
-Here is an example of a function invocation filter that logs the invoked plugin function:
+Here's an example of a function invocation filter that logs the invoked plugin function:
 
 ```c#
 public sealed class LoggingFilter(ILogger logger) : IFunctionInvocationFilter
@@ -30,7 +30,7 @@ public sealed class LoggingFilter(ILogger logger) : IFunctionInvocationFilter
 
 ### Prompt Render Filter
 
-Triggered during prompt rendering, this filter provides control over how prompts are formatted and submitted to AI. It is ideal for tasks like modifying prompts for sensitive information (e.g., PII redaction) or enabling semantic caching.
+Triggered during prompt rendering, this filter provides control over how prompts are formatted and submitted to AI. It's ideal for tasks like modifying prompts for sensitive information (e.g., PII redaction) or enabling semantic caching.
 
 Here's an example of a prompt render filter:
 
@@ -51,7 +51,7 @@ public class SafePromptFilter : IPromptRenderFilter
 
 This filter is invoked only during the automatic function calling process. It can adjust or even terminate workflows based on intermediate results.
 
-Here is an example of a function invocation filter that terminates the function calling process:
+Here's an example of a function invocation filter that terminates the function calling process:
 
 ```c#
 public sealed class EarlyTerminationFilter : IAutoFunctionInvocationFilter
@@ -73,7 +73,7 @@ public sealed class EarlyTerminationFilter : IAutoFunctionInvocationFilter
 
 To integrate any of the function filters, you can use the following methods:
 
-- **Dependency Injection:**
+- **Dependency Injection**:
     
     Add the function to the KernelBuilder services:
 
@@ -81,7 +81,7 @@ To integrate any of the function filters, you can use the following methods:
     builder.Services.AddSingleton<IFunctionInvocationFilter, LoggingFilter>();
     ```
 
-- **Kernel Properties:**
+- **Kernel Properties**:
 
     Add the function to the kerne'ls `FunctionInvocationFilters` list:
 
@@ -89,6 +89,6 @@ To integrate any of the function filters, you can use the following methods:
     kernel.FunctionInvocationFilters.Add(new LoggingFilter(logger));
     ```
 
-Always invoke the `next` delegate in your function filter to allow subsequent filters or the primary operation to execute. Skipping this step will block the operation.
+Always invoke the `next` delegate in your function filter to allow subsequent filters or the primary operation to execute. Skipping this step blocks the operation.
 
 By integrating these filters thoughtfully, you can enhance both the functionality and security of your Semantic Kernel implementations, aligning with best practices for responsible AI development.

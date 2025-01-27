@@ -22,7 +22,7 @@ For these exercises, a starter project is available for you to use. Use the foll
 
 1. Open the project in Visual Studio Code.
 
-1. Open the **appsettings.json** file and update the values with your Azure OpenAI Services model id, endpoint, and API key.
+1. Open the **appsettings.json** file and update the values with your Azure OpenAI Services model ID, endpoint, and API key.
 
     ```json
     {
@@ -42,11 +42,11 @@ Now you're ready to begin the exercise. Good luck!
 
 ## Trust a function call result
 
-In this task, you register a plugin that reads the previous conversaton between the user and assistant. 
+In this task, you register a plugin that reads the previous conversation between the user and assistant. 
 
 1. In the **Program.cs** file, navigate to the `SyncPreviousChat` method.
 
-1. Add the `PreviousChatPlugin` to the kernel with the folloiwng code:
+1. Add the `PreviousChatPlugin` to the kernel with the following code:
 
     ```c#
     async Task SyncPreviousChat() {
