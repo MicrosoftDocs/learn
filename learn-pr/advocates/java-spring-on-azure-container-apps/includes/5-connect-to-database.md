@@ -7,14 +7,27 @@ Since you deployed the Spring PetClinic application with the default H2 in-memor
 
 Use the following commands to create environment variables used to create the database connections:
 
+### [Bash](#tab/bash)
+
 ```bash
 export POSTGRESQLSERVER="petclinic-server"
 export DATABASE="petclinic"
 ```
 
+### [PowerShell](#tab/powershell)
+
+```powershell
+$Env:POSTGRESQLSERVER = "petclinic-server"
+$Env:DATABASE= "petclinic"
+```
+
+---
+
 ### Update spring.profiles.active for PostgreSQL
 
 Use the following command to update the environment variables of the deployed container apps to set the database as PostgreSql:
+
+#### [Bash](#tab/bash)
 
 ```azurecli
 az containerapp update \
@@ -23,26 +36,58 @@ az containerapp update \
    --set-env-vars "spring.profiles.active"="postgres"
 ```
 
+#### [PowerShell](#tab/powershell)
+
+```azurepowershell
+az containerapp update `
+   --name $APP_NAME `
+   --resource-group $RESOURCE_GROUP `
+   --set-env-vars "spring.profiles.active"="postgres"
+```
+
+---
+
 ### Create a new database
 
 To create a database within a new PostgreSQL flexible server instance, use the following steps:
 
 1. Create a PostgreSQL flexible server by using the following command:
 
+    #### [Bash](#tab/bash)
+
     ```azurecli
     az postgres flexible-server create \
-       --resource-group $RESOURCE_GROUP
-       --name $POSTGRESQLSERVER \
+       --resource-group $RESOURCE_GROUP \
+       --name $POSTGRESQLSERVER
+    ```
+
+    #### [PowerShell](#tab/powershell)
+
+    ```azurepowershell
+    az postgres flexible-server create `
+       --resource-group $RESOURCE_GROUP `
+       --name $POSTGRESQLSERVER
     ```
 
     If you find the auto-generated admin username and admin password in the output, save these credentials in a secure place. You can optionally use them later to connect and configure the database.
 
 1. Create a new database in the PostgreSQL flexible server instance by using the following command:
 
+    #### [Bash](#tab/bash)
+
     ```azurecli
     az postgres flexible-server db create \
        --resource-group $RESOURCE_GROUP \
        --database-name $DATABASE \
+       --server-name $POSTGRESQLSERVER
+    ```
+
+    #### [PowerShell](#tab/powershell)
+
+    ```azurepowershell
+    az postgres flexible-server db create `
+       --resource-group $RESOURCE_GROUP `
+       --database-name $DATABASE `
        --server-name $POSTGRESQLSERVER
     ```
 
