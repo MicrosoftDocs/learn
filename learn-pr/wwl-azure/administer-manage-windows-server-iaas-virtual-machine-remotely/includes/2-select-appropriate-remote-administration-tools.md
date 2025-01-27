@@ -1,5 +1,3 @@
-
-
 At Contoso, the server operations team is used to performing remote management of their on-premises servers. They understand that it's more efficient to remotely administer and maintain servers than it is to interactively administer them using locally installed tools. They realize that for the Windows IaaS VMs being deployed in Azure, they must rely solely on remote management to administer and maintain cloud-based resources. As lead engineer, you've set up a short presentation on the available management tools for the new hybrid environment that exists at Contoso.
 
 ## What is the Azure portal?
