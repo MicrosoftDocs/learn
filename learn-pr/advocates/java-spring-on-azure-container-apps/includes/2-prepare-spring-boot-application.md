@@ -20,7 +20,7 @@ git clone https://github.com/Azure-Samples/azure-container-apps-java-samples.git
 
 # [PowerShell](#tab/powershell)
 
-```bash
+```powershell
 git clone https://github.com/Azure-Samples/azure-container-apps-java-samples.git
 ```
 
@@ -40,7 +40,7 @@ Before deploying, ensure that the PetClinic application runs successfully on you
 
     # [PowerShell](#tab/powershell)
 
-    ```bash
+    ```powershell
     cd azure-container-apps-java-samples/spring-petclinic/spring-petclinic/
     ```
 
@@ -56,7 +56,7 @@ Before deploying, ensure that the PetClinic application runs successfully on you
 
     # [PowerShell](#tab/powershell)
 
-    ```bash
+    ```powershell
     git submodule update --init --recursive
     ```
 
@@ -72,7 +72,7 @@ Before deploying, ensure that the PetClinic application runs successfully on you
 
     # [PowerShell](#tab/powershell)
 
-    ```bash
+    ```powershell
     ./mvnw clean install
     ```
 
@@ -88,7 +88,7 @@ Before deploying, ensure that the PetClinic application runs successfully on you
 
     # [PowerShell](#tab/powershell)
 
-    ```bash
+    ```powershell
     ./mvnw spring-boot:run
     ```
 
