@@ -11,9 +11,9 @@ Before you determine technical solutions, identify how new innovations can drive
 
 ## Address misalignment
 
-At this stage, you might have misalignment between customer needs and business opportunities, motivations and outcomes, or among team members or departments. Alignment in these areas helps create a cohesive, focused, productive environment that drives success. Consider and implement [approaches to address any misalignment](/azure/cloud-adoption-framework/innovate/business-value#address-solution-alignment). You also need to determine how to manage customer feedback.
+At this stage, you might have misalignment between customer needs and business opportunities, motivations and outcomes, or among team members or departments. Alignment in these areas helps create a cohesive, focused, productive environment that drives success. Consider and implement [approaches to address any misalignment](/azure/cloud-adoption-framework/innovate/business-value#address-solution-alignment).
 
-After you define and align your solution, you can integrate it into your application. You can build your first minimum viable product (MVP). An MVP is a version of a product that has just enough features for early customers to use. The customers provide feedback for future product development. The goal of every MVP is to test your solution and to receive feedback directly from the customer. In each iteration and with each release, you improve the solution toward your scale-ready solution that represents multiple disciplines of invention.
+After you define and align your solution, you can integrate it into your application. You can build your first minimum viable product (MVP). An MVP is a version of a product that has just enough features for early customers to use. The customers provide feedback for future product development. Determine how you want to manage customer feedback, such as a centralized repository to record and act on feedback. The goal of every MVP is to test your solution and to receive feedback directly from the customer. In each iteration and with each release, you improve the solution toward your scale-ready solution that represents multiple disciplines of invention.
 
 ## Measure success
 
@@ -30,7 +30,7 @@ The end of every iteration provides an opportunity to learn from the build and m
 
 ## Develop digital inventions
 
-Digital inventions are the products of technological innovation that solve customers' needs and provide innovative solutions. The process of developing digital inventions involves:
+Digital inventions are the products of technological innovation that solve customers' needs and provide innovative solutions. The process of developing digital inventions involves the following steps:
 
 - **Democratize data:** [Get data into the right hands](/azure/cloud-adoption-framework/innovate/considerations/data) to drive innovation. Collect, centralize, govern, and share data so that your teams can use the data to form and test hypotheses.
 

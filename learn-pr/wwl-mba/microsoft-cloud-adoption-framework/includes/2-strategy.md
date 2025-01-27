@@ -22,7 +22,7 @@ Assign accountability for each key result, and review key results and their asso
 
 ## Define your team
 
-The cloud strategy team helps facilitate the alignment between the business and the adoption initiatives. Assign each member of your team to a valuable function that benefits your cloud adoption. For example, you might have a lead architect to translate the business objectives into technical architectures or a compliance team to help ensure that cloud practices meet regulatory standards.
+The cloud strategy team helps facilitate alignment between the business and the adoption initiatives. Assign each member of your team to a valuable function that benefits your cloud adoption. For example, you might have a lead architect to translate the business objectives into technical architectures or a compliance team to help ensure that cloud practices meet regulatory standards.
 
 To ensure alignment in your business, your cloud strategy team should continuously seek input from other areas of your business, such as human resources or the marketing team. Form a small core strategy team, including IT, finance, and security, and involve other functions as you expand. Regularly review your team to maintain diverse representation and uncover opportunities and risks. Develop an initial strategy with your core team, and expand it as you gain executive support.
 

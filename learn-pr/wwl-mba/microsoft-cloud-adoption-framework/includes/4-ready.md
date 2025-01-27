@@ -1,4 +1,4 @@
-You can use the Ready methodology of the Cloud Adoption Framework to help guide the following aspects of preparation:
+You can use the [Ready methodology](/azure/cloud-adoption-framework/ready/) of the Cloud Adoption Framework to help guide the following aspects of preparation:
 
 - Set up your Azure environment.
 - Define a cloud operating model.
@@ -16,7 +16,7 @@ A cloud operating model shifts the focus from hardware to digital assets and wor
 
 ## Implement landing zones
 
-Landing zones provide a scalable and modular environment to help you manage your cloud environment. They provide a foundation for security, governance, and resource management. The landing zone implementation that you choose depends on your organizational needs, required customizations, and how you use various technologies. To deploy a landing zone, you can use tools like the Azure portal, Bicep, or Terraform.
+[Landing zones](/azure/cloud-adoption-framework/ready/landing-zone/) provide a scalable and modular environment to help you manage your cloud environment. They provide a foundation for security, governance, and resource management. The landing zone implementation that you choose depends on your organizational needs, required customizations, and how you use various technologies. To deploy a landing zone, you can use tools like the Azure portal, Bicep, or Terraform.
 
 After you implement your landing zones, you must optimize your landing zone operations as you scale.
 Continuous optimizations can help you:
@@ -34,4 +34,9 @@ Cloud adoption requires that your team has the necessary technical skills and or
 
 ## Avoid antipatterns
 
-Common antipatterns during the readiness phase can hinder your cloud adoption efforts. These antipatterns include inadequate preparation, miconception about cloud service features, and lack of knowledge about cloud provider operations. Effectively avoid these pitfalls to help ensure a smooth and successful cloud adoption process.
+Common antipatterns during the readiness phase can hinder your cloud adoption efforts. These antipatterns include:
+- Inadequate preparation.
+- Miconception about cloud service features.
+- Lack of knowledge about cloud provider operations.
+
+Effectively avoid these pitfalls to help ensure a smooth and successful cloud adoption process.

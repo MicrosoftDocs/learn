@@ -1,9 +1,6 @@
-You can use the Migrate methodology to prepare for and carry out a migration to the cloud. The Migration methodology includes four stages:
+You can use the Migrate methodology to prepare for and carry out a migration to the cloud. The Migration methodology includes four stages.
 
-- Prepare for migration
-- Assess your workload
-- Deploy your assets
-- Release your workload
+:::image type="content" source="../media/migrate-overview.svg" alt-text="A screenshot that shows the four stages of the Migrate methodology: prepare, assess, deploy, and release.":::
 
 This approach is vendor-neutral, so you can migrate workloads to any cloud service.
 
@@ -14,10 +11,10 @@ Before you plan individual workload migrations, you must ready your organization
 - Establish hybrid connectivity.
 - Prepare identity.
 - Extend Active Directory domain controllers. 
-- Enable hybrid DNS.
+- Enable hybrid Domain Name System (DNS).
 - Configure custom DNS resolution.
 - Configure an Azure Firewall DNS proxy.
-- Configure the hub firewall.
+- Configure a hub firewall.
 - Establish routing.
 - Enable subscription vending.
 - Set policies to enable Microsoft Defender for Cloud.
@@ -29,23 +26,23 @@ You also need to prepare tools to assess, replicate, and track your workloads th
 - Microsoft Project
 - [The Migration Execution Guide](https://github.com/Azure/migration)
 
-You should also create a backlog that includes:
+You should also maintain a backlog that you can use throughout the migration process. A backlog helps you identify potential risks and helps inform all teams of progress. Include information like:
 
 - Business outcomes and metrics.
 - Business priorities.
 - Core assumptions.
 
-You also need to properly assign roles to cover all aspects of the migration, from planning and implementation to communication and support. Each role has specific responsibilities that contribute to the overall success of the migration project.
+You must properly assign roles to cover all aspects of the migration, from planning and implementation to communication and support. Each role has specific responsibilities that contribute to the overall success of the migration project.
 
 ## Assess your workload
 
 After you establish your preparations, evaluate the readiness of your workload and plan for the migrated state. Your cloud adoption team should evaluate technical compatibility, the required architecture, performance and sizing expectations, and dependencies. Calculate the cost of operating in Azure.
 
-Classify workloads based on how significantly an outage affects your business. Classify data in your workloads based on how a potential leak of that data affects your business or customers. Highly sensitive data increases the security risk. 
+Classify workloads based on how significantly an outage affects your business. And classify data in your workloads based on how a potential leak of that data affects your business or customers. Highly sensitive data increases the security risk. 
 
 Ensure that all assets and associated dependencies are compatible with your deployment model and cloud provider. Evaluate whether you have blockers for migration, and document any necessary remediation of compatibility problems.
 
-Design the intended migrated state of your workload. During this process, you design your:
+Design the intended migrated state of your workload. During this process, design the following aspects:
 
 - Application landing zone architecture
 - Workload network architecture with resources
@@ -56,7 +53,7 @@ After you design essential components, revisit your cloud estimate and make adju
 
 ## Deploy your assets
 
-Deploy all services to ensure that your workload can operate successfully. Your workload likely requires services for resource organization, networking, identity and security, and management. Identify configurations that might make an asset incompatible with your cloud provider. Perform necessary remediation to ensure that you can properly replicate and stage your workload in the cloud.
+Deploy all services to ensure that your workload can operate successfully in the cloud. Your workload likely requires services for resource organization, networking, identity and security, and management. Identify configurations that might make an asset incompatible with your cloud provider. Perform necessary remediation to ensure that you can properly replicate and stage your workload in the cloud.
 
 The replication process consists of the following steps:
 
@@ -68,7 +65,13 @@ After you complete your migration, prepare to carry out management activities to
 
 ## Release your workload
 
-You need to complete the migration steps, communicate the upcoming changes to other teams, make final change approvals, clean up resources, and do a retrospective.
+To release your workload, you need to:
+
+- Communicate the upcoming changes to other teams.
+- Complete the migration steps.
+- Make final change approvals.
+- Clean up resources.
+- Do a retrospective.
 
 Inform your organization about upcoming changes to ensure that everyone that the migration might affect knows the process. Communicate changes for each workload because each one has dedicated users and operators.
 
