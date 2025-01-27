@@ -30,7 +30,7 @@ The Azure hybrid services tool in Windows Admin Center consolidates all the inte
 [![A screenshot of Windows Admin Center. The administrator has selected the Azure hybrid services node.](../media/m23-windows-admin-center.png)](../media/m23-windows-admin-center.png#lightbox)
 
 > [!IMPORTANT]
-> Windows Admin Center requires connectivity to your Azure VMs. you'll need to either assign a public IP address to a VM, set up a gateway, or establish a virtual private network (VPN) connection from the Windows Admin Center computer to Azure.
+> Windows Admin Center requires connectivity to your Azure VMs. You'll need to either assign a public IP address to a VM, set up a gateway, or establish a virtual private network (VPN) connection from the Windows Admin Center computer to Azure.
 
 ## What is Azure PowerShell?
 
