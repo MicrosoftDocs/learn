@@ -41020,6 +41020,26 @@
       "source_path": "learn-pr/wwl-azure/create-plugins-semantic-kernel/8-exercise-save-prompts-files.md",
       "redirect_url": "/training/modules/create-plugins-semantic-kernel/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/combine-prompts-functions/2-call-functions-within-prompts.md",
+      "redirect_url": "/training/modules/combine-prompts-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/combine-prompts-functions/3-exercise-use-nested-functions-song-suggestions.md",
+      "redirect_url": "/training/modules/combine-prompts-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/combine-prompts-functions/4-knowledge-check.md",
+      "redirect_url": "/training/modules/combine-prompts-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/combine-prompts-functions/5-summary.md",
+      "redirect_url": "/training/modules/combine-prompts-functions/7-summary",
+      "redirect_document_id": false
     }
   ]
 }

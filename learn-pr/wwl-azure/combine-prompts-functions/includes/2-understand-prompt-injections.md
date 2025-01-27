@@ -80,7 +80,7 @@ var expected =
 """;
 ```
 
-This example illustrates how user input could attempt to exploit a prompt template. By injecting XML content into the input placeholder, an attacker can manipulate the structure of the rendered prompt. In this example, the malicious input prematurely closes the <message> tag and inserts an unauthorized system message, demonstrating a vulnerability that can lead to unintended behavior or security risks in applications relying on dynamic prompts. However, the attack is prevented by the Semantic Kernel's automatic HTML encoding. The actual prompt is rendered as follows:
+This example illustrates how user input could attempt to exploit a prompt template. By injecting XML content into the input placeholder, an attacker can manipulate the structure of the rendered prompt. In this example, the malicious input prematurely closes the `<message>` tag and inserts an unauthorized system message, demonstrating a vulnerability that can lead to unintended behavior or security risks in applications relying on dynamic prompts. However, the attack is prevented by the Semantic Kernel's automatic HTML encoding. The actual prompt is rendered as follows:
 
 ```output
 <message role='system'>This is the system message</message>
