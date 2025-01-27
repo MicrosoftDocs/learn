@@ -69,6 +69,8 @@ To create a database within a new PostgreSQL flexible server instance, use the f
        --name $POSTGRESQLSERVER
     ```
 
+    ---
+
     If you find the auto-generated admin username and admin password in the output, save these credentials in a secure place. You can optionally use them later to connect and configure the database.
 
 1. Create a new database in the PostgreSQL flexible server instance by using the following command:
@@ -90,6 +92,8 @@ To create a database within a new PostgreSQL flexible server instance, use the f
        --database-name $DATABASE `
        --server-name $POSTGRESQLSERVER
     ```
+
+    ---
 
     For more information, see [Quickstart: Create an instance of Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/quickstart-create-server-cli).
 

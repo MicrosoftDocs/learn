@@ -4,9 +4,19 @@ In this module, you learned about building, deploying, and maintaining your Spri
 
 When you no longer need the resources, you can remove them to avoid Azure charges by using the following command:
 
+### [Bash](#tab/bash)
+
 ```azurecli
 az group delete --name $RESOURCE_GROUP
 ```
+
+### [PowerShell](#tab/powershell)
+
+```azurepowershell
+az group delete --name $RESOURCE_GROUP
+```
+
+---
 
 ## Related content
 
