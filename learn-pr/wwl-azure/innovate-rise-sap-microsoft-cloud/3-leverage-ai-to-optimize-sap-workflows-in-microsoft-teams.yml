@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.innovate-rise-sap-microsoft-cloud.leverage-ai-to-optimize-sap-workflows-in-microsoft-teams
+title: Use AI to optimize SAP workflows in Microsoft Teams
+metadata:
+  title: Use AI to optimize SAP workflows in Microsoft Teams
+  description: "Explore how to enhance and optimize SAP workflows using various Microsoft technologies."
+  ms.date: 01/27/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-leverage-ai-to-optimize-sap-workflows-in-microsoft-teams.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How can Azure AI services enhance SAP workflows?"
+    choices:
+    - content: "By providing secure authentication mechanisms"
+      isCorrect: false
+      explanation: "That is incorrect. Secure authentication mechanisms are provided by Microsoft Entra ID, not Azure AI services."
+    - content: "By integrating language models and AI Search"
+      isCorrect: true
+      explanation: "That is correct. Azure AI services enhance SAP workflows by integrating language models and AI Search for tasks like demand forecasting and intelligent inventory management."
+    - content: "By creating custom business applications"
+      isCorrect: false
+      explanation: "That is incorrect. Creating custom business applications is a feature of Power Apps, not Azure AI services."
