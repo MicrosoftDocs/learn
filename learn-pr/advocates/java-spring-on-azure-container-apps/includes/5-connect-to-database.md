@@ -16,7 +16,7 @@ export DATABASE="petclinic"
 
 Use the following command to update the environment variables of the deployed container apps to set the database as PostgreSql:
 
-```bash
+```azurecli
 az containerapp update \
    --name $APP_NAME \
    --resource-group $RESOURCE_GROUP \
