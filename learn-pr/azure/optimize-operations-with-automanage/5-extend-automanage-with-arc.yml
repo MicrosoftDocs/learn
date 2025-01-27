@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Extend Azure Automanage across non-Azure infrastructure with Azure Arc
   description: Learn how to extend Azure Automanage across non-Azure infrastructure using Azure Arc.
-  ms.date: 12/19/2023
+  ms.date: 01/20/2025
   author: johnmarco
   ms.author: johnmarc
   ms.topic: unit

@@ -22,7 +22,7 @@ abstract: |
 
   -   Create and manage fact tables and dimensions within a data warehouse.
 prerequisites: Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/get-started-data-warehouse.svg
 levels:
 - beginner
 roles:
