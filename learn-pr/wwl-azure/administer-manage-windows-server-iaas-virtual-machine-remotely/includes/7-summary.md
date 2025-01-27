@@ -1,8 +1,6 @@
+The IT operations staff at Contoso needed to know how to remotely manage Windows Server IaaS VMs. They also wanted to be able to restrict administrative connections to those VMs. You were tasked with evaluating the options and recommending solutions.
 
-
-The IT operations staff at Contoso needed to know how to remotely manage Windows Azure IaaS VMs. They also wanted to be able to restrict administrative connections to those VMs. You were tasked with evaluating the options and recommending solutions.
-
-In this module, you've learned about remote administration tools for Windows Azure IaaS VMs, such as Cloud Shell. You've also learned how to secure management connections to Windows Azure IaaS VMs with Azure Bastion and to configure JIT VM access. Now, you and Contoso's IT operations staff can use Azure Bastion and other tools to make secure connections to VMs and manage them remotely.
+In this module, you've learned about remote administration tools for Windows Server IaaS VMs, such as Cloud Shell. You've also learned how to secure management connections to Windows Server IaaS VMs with Azure Bastion and to configure JIT VM access. Now, you and Contoso's IT operations staff can use Azure Bastion and other tools to make secure connections to VMs and manage them remotely.
 
 ## Learn more
 
