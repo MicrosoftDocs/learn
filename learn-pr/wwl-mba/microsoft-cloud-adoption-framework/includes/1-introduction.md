@@ -1,4 +1,4 @@
-The Cloud Adoption Framework for Azure is a collection of documentation, technical guidance, best practices, and tools that you can use to align business, organizational readiness, and technology strategies. The steps in this framework outline a clear and actionable journey to the cloud.
+The [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview) is a collection of documentation, technical guidance, best practices, and tools that you can use to align business, organizational readiness, and technology strategies. The steps in this framework outline a clear and actionable journey to the cloud.
 
 The cloud fundamentally changes how organizations procure and use technology resources and introduces tremendous flexibility in design choices. The Cloud Adoption Framework provides a proven and consistent methodology to help you adopt those cloud technologies.
 

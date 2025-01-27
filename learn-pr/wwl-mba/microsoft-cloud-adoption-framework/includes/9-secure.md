@@ -1,4 +1,4 @@
-You can use the Secure methodology to enhance your security posture. This guidance is relevant to all methodologies within the Cloud Adoption Framework because you should implement security as an integral part of each phase. All recommendations in the Secure methodology adhere to the Zero Trust principles of assume compromise (or assume breach), least privilege, and explicit verification of trust.
+You can use the [Secure methodology](/azure/cloud-adoption-framework/secure/overview) to enhance your security posture. This guidance is relevant to all methodologies within the Cloud Adoption Framework because you should implement security as an integral part of each phase. All recommendations in the Secure methodology adhere to the Zero Trust principles of assume compromise (or assume breach), least privilege, and explicit verification of trust.
 
 ## Take advantage of security guidance
 
@@ -12,11 +12,11 @@ This Cloud Adoption Framework Secure guidance is one component of a larger holis
 
 - [Zero Trust guidance](/security/zero-trust/) provides guidance for security teams to implement technical capabilities to support a Zero Trust modernization initiative.
 
-Throughout your cloud adoption journey, look for opportunities to enhance your overall security posture through modernization, incident preparation, and response. Your ability to prepare for and respond to incidents can significantly affect your success in the cloud. Well-designed preparation mechanisms and operational practices enable quick threat detection and help minimize the blast radius of incidents.
+Throughout your cloud adoption journey, look for opportunities to enhance your overall security posture through [modernization](/azure/cloud-adoption-framework/secure/overview#security-posture-modernization), [incident preparation](/azure/cloud-adoption-framework/secure/overview#incident-preparation-and-response), and response. Your ability to prepare for and respond to incidents can significantly affect your success in the cloud. Well-designed preparation mechanisms and operational practices enable quick threat detection and help minimize the blast radius of incidents.
 
 ## Use the CIA Triad model
 
-The CIA Triad is a fundamental model in information security that represents three core principles: confidentiality, integrity, and availability.
+The [CIA Triad](/azure/cloud-adoption-framework/secure/overview#the-cia-triad) is a fundamental model in information security that represents three core principles: confidentiality, integrity, and availability.
 
 - **Confidentiality** ensures that only authorized individuals can access sensitive information. This principle includes measures like encryption and access controls to protect data from unauthorized access.
 
@@ -34,7 +34,7 @@ Some ways that the triad principles can help ensure security and reliability inc
 
 ## Assign roles
 
-Assign appropriate security roles to help ensure that your team can carry out security functions during every stage of the cloud lifecycle, from development to continuous improvement. 
+[Assign appropriate security roles](/azure/cloud-adoption-framework/secure/teams-roles) to help ensure that your team can carry out security functions during every stage of the cloud lifecycle, from development to continuous improvement. 
 
 - Map out your existing roles and what functions they cover.
 - Check for gaps.

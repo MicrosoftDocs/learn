@@ -34,7 +34,7 @@ Cloud adoption requires that your team has the necessary technical skills and or
 
 ## Avoid antipatterns
 
-Common antipatterns during the readiness phase can hinder your cloud adoption efforts. These antipatterns include:
+Common [antipatterns](/azure/cloud-adoption-framework/antipatterns/ready-antipatterns) during the readiness phase can hinder your cloud adoption efforts. These antipatterns include:
 - Inadequate preparation.
 - Miconception about cloud service features.
 - Lack of knowledge about cloud provider operations.

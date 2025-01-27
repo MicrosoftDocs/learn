@@ -1,4 +1,4 @@
-You can use the Plan methodology to rationalize your digital estate, align your organization, adapt roles and skills, plan for sustainability, and avoid common antipatterns.
+You can use the [Plan methodology](/azure/cloud-adoption-framework/plan/) to rationalize your digital estate, align your organization, adapt roles and skills, plan for sustainability, and avoid common antipatterns.
 
 A cloud adoption plan is an iterative project plan that helps you transition from traditional IT approaches to modern, agile methodologies. This plan aligns your business objectives with technical efforts to help ensure that you manage and communicate transitions effectively.
 

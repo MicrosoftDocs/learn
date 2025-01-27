@@ -12,7 +12,7 @@ metadata:
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 12
+durationInMinutes: 10
 quiz:
   questions:
   - content: "What should you do to ensure alignment in your business during cloud adoption?"
@@ -124,5 +124,6 @@ quiz:
     - content: "To reduce the number of security roles."
       isCorrect: false
       explanation: "Reducing the number of security roles doesn't contribute to improving security. In fact, having appropriate security roles is essential for maintaining a robust security posture."
+    - content: "To reduce the frequency of security audits."
       isCorrect: false
       explanation: "Reducing the frequency of security audits likely weakens your security posture. Regular audits are important for identifying and addressing security problems."

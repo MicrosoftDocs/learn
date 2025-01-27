@@ -8,7 +8,7 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 10
 content: |
   [!include[](includes/5-migrate.md)]
   
