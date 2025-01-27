@@ -1,11 +1,13 @@
 
-The Azure Quantum Resource Estimator is a resource-estimation tool that computes and displays the resources that are required for a quantum algorithm, assuming that it's executed on a fault-tolerant, error-corrected quantum computer. 
+The Azure Quantum Resource Estimator is a resource-estimation tool that computes and displays the resources that are required for a quantum algorithm, assuming that it's executed on a fault-tolerant, large-scale quantum computer. 
 
-You can use the estimator to assess architectural decisions, compare qubit technologies, and determine the resources you need to execute a specific quantum algorithm. You can see the total number of physical qubits, wall clock time, the required computational resources, and the details of the formulas and values used for each estimate.
+You can use the Resource Estimator to assess architectural decisions, compare qubit technologies, and determine the resources you need to execute a specific quantum algorithm. You can see the total number of physical qubits, runtime, the required computational resources, and the details of the formulas and values used for each estimate.
+
+In this unit, you'll learn how you can customize the Azure Quantum Resource Estimator to different parameters. 
 
 ## How does the Azure Quantum Resource Estimator work?
 
-The Azure Quantum Resource Estimator takes some inputs that are called *target parameters*, which have predefined values, to easily get you started. The main target parameters are:
+The Azure Quantum Resource Estimator takes some *target parameters* as inputs. The target parameters have predefined values to easily get you started, or you can customize their values. The main target parameters are:
 
 - Physical qubit parameters: The qubit architecture of the quantum computer, that is, the type of qubits. 
 - Quantum error correction (QEC) scheme: The type of error correction that you want to apply to your quantum algorithm.
@@ -13,7 +15,7 @@ The Azure Quantum Resource Estimator takes some inputs that are called *target p
 
 ### Choose the physical qubit model
 
-The Azure Quantum Resource Estimator has six predefined qubit models. Four of the models have *gate-based* instruction sets, and two models have *Majorana* instruction sets. These predefined qubit models represent different qubit architectures like ions or superconductors, which are defined in published research articles. The qubit models cover a range of operation times and error rates, so you can use them to explore the required resource costs for practical quantum applications.
+The Azure Quantum Resource Estimator has six predefined qubit models. Four of the models have *gate-based* instruction sets, and two models have *Majorana* instruction sets. These predefined qubit models represent different qubit architectures like ions or superconductors. The qubit models cover a range of operation times and error rates, so you can use them to explore the required resource costs for practical quantum applications.
 
 | Predefined qubit models | Instruction set type |
 |------------------------------|-----------------|
@@ -45,4 +47,4 @@ The total error budget sets the overall allowed error for the algorithm. The all
 
 For more information, see [Error budget in the Azure Quantum Resource Estimator](/azure/quantum/overview-resources-estimator#error-budget).
 
-
+In the next unit, you'll get started with the Azure Quantum Resource Estimator and learn how to use it to estimate the Shor's algorithm.
