@@ -101,10 +101,10 @@ Next, connect your previously deployed container app to the PostgreSQL database 
 1. Go to **Settings** > **Service Connector**.
 1. Select **Create**, and then fill out the connection form using these details:
    - Basic:
-      - **Service type**: **DB for PostgreSQL flexible server**
-      - **PostgreSQL flexible server**: **petclinic-server**
-      - **PostgreSQL database**: **pet clinic**
-      - **Client type**: **SpringBoot**
+      - For **Service type**, use **DB for PostgreSQL flexible server**.
+      - For **PostgreSQL flexible server**, use **petclinic-server**.
+      - For **PostgreSQL database**, use **pet clinic**.
+      - For **Client type**, use **SpringBoot**.
    - Authentication:
       - Select **Connection string**.
       - Fill in your **Username** and **Password** and leave the other fields with their default settings.
