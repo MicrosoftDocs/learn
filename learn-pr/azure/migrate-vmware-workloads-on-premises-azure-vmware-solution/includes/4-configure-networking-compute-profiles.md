@@ -15,7 +15,7 @@ The first step involves creating a *site pair*. A site pair provides network con
 
 1. Under **Menu**, select **HCX**.
 
-    :::image type="content" source="../media/4-select-hcx-onpremises.png" alt-text="Screenshot of where to find HCX in the menu within vCenter on-premises."lightbox="../media/4-select-hcx-onpremises.png":::
+    :::image type="content" source="../media/4-select-hcx-on-premises.png" alt-text="Screenshot of where to find HCX in the menu within vCenter on-premises."lightbox="../media/4-select-hcx-on-premises.png":::
 
 1. Under **Infrastructure**, select **Site Pairing**.
 
