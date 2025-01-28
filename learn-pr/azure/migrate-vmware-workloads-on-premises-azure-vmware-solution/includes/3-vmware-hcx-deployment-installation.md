@@ -98,7 +98,7 @@ Next, the VMware HCX Connector OVA file needs to be installed in the on-premises
 
 1. On **Ready to complete**, verify all configurations and select **Finish**.
 
-    :::image type="content" source="../media/3-ready-to-complete-hcx-on-premises.png" alt-text="Screenshot that shows the appliance is ready to complete the installation on-premises."lightbox="../media/3-ready-to-complete-hcx-on-premises.png":::
+    :::image type="content" source="../media/3-ready-complete-hcx-on-premises.png" alt-text="Screenshot that shows the appliance is ready to complete the installation on-premises."lightbox="../media/3-ready-complete-hcx-on-premises.png":::
 
 1. After the appliance deploys, you'll need to power on the virtual appliance manually in vCenter Server. Then wait 10-15 minutes before finishing the configuration.
 
@@ -118,7 +118,7 @@ After deploying and powering on the VMware HCX Connector appliance on-premises, 
 
 1. When prompted, enter your **HCX License Key**, then select **Add**. If you receive any errors during activation, the on-premises environment might not have open internet access or a proxy configured for activation. Check internet connectivity if VMware HCX Connector on-premises doesn't activate.
 
-    :::image type="content" source="../media/3-enter-hcx-license-key-to-activate-hcx-instance.png" alt-text="Screenshot of where to enter the VMware HCX Connector license key on-premises to activate it."lightbox="../media/3-enter-hcx-license-key-to-activate-hcx-instance.png":::
+    :::image type="content" source="../media/3-enter-hcx-license-key-activate-hcx-instance.png" alt-text="Screenshot of where to enter the VMware HCX Connector license key on-premises to activate it."lightbox="../media/3-enter-hcx-license-key-activate-hcx-instance.png":::
 
 1. In **Datacenter Location**, provide the nearest location for installing VMware HCX Connector on-premises, then select **Continue**.
 
