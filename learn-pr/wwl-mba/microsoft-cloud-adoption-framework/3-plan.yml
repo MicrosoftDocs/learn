@@ -3,7 +3,7 @@ uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-2.plan
 title: Plan
 metadata:
   title: Plan
-  description: "Summarizes key aspects of the plan methodology, including rationalizing your digital estate, initial organizational alignment, adapting roles and skills, planning for sustainability, and avoiding common antipatterns."
+  description: "A high-level overview of the Plan methodology in the Cloud Adoption Framework, including how to manage your digital estate, align your organization, and adapt roles."
   ms.date: 01/14/2025
   author: Zimmergren
   ms.author: tozimmergren
