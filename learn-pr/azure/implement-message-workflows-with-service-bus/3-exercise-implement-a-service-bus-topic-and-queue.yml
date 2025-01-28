@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Create Service Bus queue and topic
   description: Create Service Bus messaging components—a namespace that contains a queue, a topic, and subscriptions.
-  ms.date: 10/25/2023
+  ms.date: 01/27/2025
   author: spelluru
   ms.author: spelluru
   ms.topic: unit
