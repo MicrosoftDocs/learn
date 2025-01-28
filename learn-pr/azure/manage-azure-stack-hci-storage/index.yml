@@ -31,7 +31,7 @@ roles:
 - solution-architect
 - security-engineer
 products:
-- azure-stack-hci
+- azure-local
 units:
 - learn-pr.azure.manage-azure-stack-hci-storage.introduction
 - learn-pr.azure.manage-azure-stack-hci-storage.describe-azure-stack-storage-drives
