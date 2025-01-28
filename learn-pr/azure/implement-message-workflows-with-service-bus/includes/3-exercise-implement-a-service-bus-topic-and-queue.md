@@ -1,13 +1,13 @@
 You have an application for the sales team in your global company. Each team member has your app installed on a mobile device to use for sales. An Azure web service hosts the business logic implemented for your application and stores information in Azure SQL Database. Each geographical region has its own instance of the web service.
 
-You've identified the following scenarios for message exchange between the mobile app and the web service:
+You identified the following scenarios for message exchange between the mobile app and the web service:
 
 - Messages that relate to individual sales must be sent to the web service instance in the user's region.
 - Messages that relate to sales performance must be sent to all instances of the web service.
 
-You've decided to implement a Service Bus queue for the first use case and a Service Bus topic for the second use case.
+You decided to implement a Service Bus queue for the first use case and a Service Bus topic for the second use case.
 
-In this exercise, you'll create a Service Bus namespace that contains a queue, a topic, and subscriptions in the Azure portal.
+In this exercise, you create a Service Bus namespace that contains a queue, a topic, and subscriptions in the Azure portal.
 
 ## Create a Service Bus namespace
 
@@ -24,8 +24,8 @@ Start by creating the namespace. In Azure Service Bus, a namespace is a containe
     | Setting | Value | Description |
     | ------- | --- | ---- |
     | **Project Details** |
-    | Subscription | Concierge subscription | The subscription in which this new app is created. |
-    | Resource group | <rgn>[Sandbox resource group name]</rgn> | The name of the resource group in which to create your Service Bus namespace. In this exercise, you'll create the namespace in the resource group that was assigned when you activated the sandbox. |
+    | Subscription | Concierge subscription | The subscription where you want the app to be created.  |
+    | Resource group | <rgn>[Sandbox resource group name]</rgn> | The name of the resource group in which to create your Service Bus namespace. In this exercise, you create the namespace in the resource group that was assigned when you activated the sandbox. |
     | **Instance Details** |
     | Namespace name | [Globally unique name] | Enter a name that is unique in Azure.<br />If you want to use the format _salesteamapp_<_Company_><_year_>, your namespace name would look like the example _salesteamappContoso2022_. |
     | Location | Select from the dropdown | Choose from the free *sandbox regions* listed following this table. |
@@ -53,13 +53,13 @@ Next, add a queue for messages about individual sales to your namespace:
   
     :::image type="content" source="../media/3-create-queue.png" alt-text="Screenshot of Service Bus namespace and Create queue panes with Queue and Create highlighted.":::
 
-1. In the **Create queue** pane, for **Name**, enter **salesmessages**, then select **Create**.  
+1. In the **Create queue** pane, for **Name**, enter `salesmessages`, then select **Create**.  
   
-When the message queue has been created, **salesmessages** is listed under **Queues** at the bottom of the Service Bus namespace pane.
+When the message queue is created, `salesmessages` is listed under **Queues** at the bottom of the Service Bus namespace pane.
 
 ## Create a Service Bus topic and subscriptions
 
-You also want to create a topic that will be used for messages that relate to sales performance. Each instance of the business logic web service subscribes to this topic, and each sales performance message will be delivered to all web service subscriptions.
+You also want to create a topic that's used for messages that relate to sales performance. Each instance of the business logic web service subscribes to this topic, and each sales performance message is delivered to all web service subscriptions.
 
 Add a Service Bus topic and subscriptions:
 
@@ -69,7 +69,7 @@ Add a Service Bus topic and subscriptions:
 
 1. In the **Create topic** pane, for **Name**, enter *salesperformancemessages*, then select **Create**.
 
-   When the topic has been created, **salesperformancemessages** is listed under **Topics** at the bottom of the Service Bus namespace pane.
+   When the topic is created, **salesperformancemessages** is listed under **Topics** at the bottom of the Service Bus namespace pane.
 
 1. You can add or remove subscriptions in queues and topics by using the tabs in the Service Bus namespace, or you can use the Azure portal resource menu. To use the menu option, in the left menu, under **Entities**, select **Topics**, and then select **salesperformancemessages** in the list of topics.
 
@@ -85,4 +85,13 @@ Add a Service Bus topic and subscriptions:
 
 The **Subscriptions** section of the **salesperformancemessages** Service Bus topic for your sales team app now lists two subscriptions.
   
-You've built the infrastructure to use Service Bus to increase the resilience of your distributed application. You've created a queue for messages about individual sales, and a topic for messages about sales performance. You've added multiple subscriptions to the topic, so topic messages can be delivered to multiple web services around the world.
+You built the infrastructure to use Service Bus to increase the resilience of your distributed application. You created a queue for messages about individual sales, and a topic for messages about sales performance. You added multiple subscriptions to the topic, so topic messages can be delivered to multiple web services around the world.
+
+## Get connnection string
+
+1. On the **Service Bus Namespace** page, select **Shared access policies** on the left menu. 
+1. Select **RoothManageSharedAccessKey** in the middle pane.
+1. In the **SAS Policy: RootManageSharedAccessKey** pane, select the copy button next to the **Primary connection string** field. 
+1. Paste the primary connection string into an editor of your choice. You use this connection string later in this training. 
+
+    :::image type="content" source="../media/3-connection-string.png" alt-text="Screenshot of the Shared access policies page." lightbox="../media/3-connection-string.png":::
