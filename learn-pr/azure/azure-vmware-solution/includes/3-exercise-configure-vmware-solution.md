@@ -16,7 +16,7 @@
 
    :::image type="content" source="../media/3-dns-forwarder.png" alt-text="Screenshot of the Azure portal showing where to configure DNS zones under Workload Networking.":::
 
-1. Deploy the VM as you would in any vSphere environment.
+1. Deploy the VM as you would in any VMware vSphere environment.
 1. Log on to the VM created above and ensure that the VM doesn't have any internet connectivity.
 
-You've now ensured that Azure VMware Solution private cloud is configured correctly. This allows you to build the foundation for securing outbound internet connectivity as discussed in following unit.
+You've now ensured that Azure VMware Solution private cloud is configured correctly. This allows you to build the foundation for securing outbound internet connectivity as discussed in the following unit.
