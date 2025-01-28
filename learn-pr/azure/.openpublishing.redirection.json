@@ -74,6 +74,56 @@
           "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/write-event-message.yml",
           "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
           "redirect_document_id": false
-        }         
+          },
+          {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/1-introduction.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },          
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/2-guidelines-for-hdinsight-on-aks-cluster.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/3-exercise-create-hdinsight-on-aks-cluster.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },          
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/4-manage-hdinsight-on-aks-cluster.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/5-exercise-customize-cluster-configuration.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },          
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/6-manage-observability-of-hdinsight-on-aks-cluster.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/7-exercise-enable-log-analytics.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },          
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/8-knowledge-check.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/9-summary.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },          
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/index.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             }
       ]
 }
