@@ -16,24 +16,24 @@ The diagram illustrates a sample architecture for integrating Microsoft Power Pl
    Diagram that shows an architecture of a Microsoft Power Platform integration with a typical SAP landing zone.
 :::image-end:::
 
-### Power Platform Environment
+### Power Platform environment
 
 - Contains Power BI, Power Apps, Power Pages, and Copilot Studio, all connected to Power Automate.
 - Power Automate connects to SAP ERP connector, OData connector, and a custom connector.
 - Connects to a Microsoft Entra tenant.
 
-### Data Flow
+### Data flow
 
 - Data from Power BI and SAP ERP connector passes through a firewall to the SAP environment.
 - Data from OData and custom connectors goes through an API gateway into the SAP environment.
 
-### SAP Environment
+### SAP environment
 
 - Contains an on-premises data gateway, receiving data from the firewall.
 - Shows data flows from the gateway to SAP .NET Connector.
 - Includes OData API, REST/SOAP API, and HANA SQL port for data flow from the API gateway into SAP.
 
-### Client Applications Box
+### Client applications box
 
 - Data flows from laptop, mobile device, Power Automate desktop, SAP GUI, and Power BI Desktop.
 - Data from Power BI Desktop flows to SAP .NET Connector and SAP HANA ODBC driver.
