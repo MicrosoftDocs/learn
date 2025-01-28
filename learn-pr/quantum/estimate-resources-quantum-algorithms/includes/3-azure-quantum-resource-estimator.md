@@ -30,7 +30,7 @@ For more information, see [Qubit parameters of the Azure Quantum Resource Estima
 
 ### Choose the QEC scheme
 
-Quantum error correction (QEC) is crucial for any quantum-computing platform to achieve truly scalable quantum computation. The set of operations a quantum computing platform permits is limited by physical constraints and might not match the operations prescribed in the algorithm. Even if the operations that the quantum computer offers match the operations in the algorithm, the accuracy to which the quantum computer can perform each operation is likely to be limited.
+Quantum error correction (QEC) is crucial for any quantum-computing platform to achieve truly scalable quantum computation. The set of operations a quantum computing platform permit is limited by physical constraints and might not match the operations prescribed in the algorithm. Even if the operations that the quantum computer offers match the operations in the algorithm, the accuracy to which the quantum computer can perform each operation is likely to be limited.
 
 The Azure Quantum Resource Estimator provides three predefined QEC schemes: two *surface code* protocols for gate-based and Majorana physical instruction sets, and the *Floquet code* protocol, which can be used only with a Majorana physical instruction set.
 
@@ -43,7 +43,9 @@ For more information, see [Quantum error correction schemes in the Azure Quantum
 
 ### Choose the error budget
 
-The total error budget sets the overall allowed error for the algorithm. The allowed error is the number of times the algorithm is allowed to fail. The value of the error budget must be between 0 and 1, and the default value is 0.001. The default value corresponds to 0.1 percent, and means that the algorithm is allowed to fail once in 1,000 executions. This parameter is highly specific to the application. For example, if you're running Shor’s algorithm for factoring integers, a large value for the error budget can be tolerated because you can check that the output is indeed the prime factors of the input. On the other hand, a smaller error budget might be needed for an algorithm solving a problem with a solution that can't be efficiently verified.
+The total error budget sets the overall allowed error for the algorithm. The allowed error is the number of times the algorithm is allowed to fail. The value of the error budget must be between 0 and 1, and the default value is 0.001. The default value corresponds to 0.1 percent, and means that the algorithm is allowed to fail once in 1,000 executions. 
+
+The error budget is highly specific to the application. For example, if you're running Shor’s algorithm for factoring integers, a large value for the error budget can be tolerated because you can check that the output is indeed the prime factors of the input. On the other hand, a smaller error budget might be needed for an algorithm solving a problem with a solution that can't be efficiently verified.
 
 For more information, see [Error budget in the Azure Quantum Resource Estimator](/azure/quantum/overview-resources-estimator#error-budget).
 

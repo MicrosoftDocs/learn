@@ -6,13 +6,13 @@ In this unit, you'll learn why the estimation of these resources is important in
 
 Quantum computers have the potential of *quantum advantage* to solve some scientifically and commercially valuable problems. For example, one of the top applications for quantum computing is to break encryption. The RSA encryption algorithm is based on the difficulty of factoring large numbers. A quantum computer can factor large numbers exponentially faster than a classical computer. So, the question is, how long does it take to run a quantum algorithm that breaks encryption on a real quantum computer? Or in other words, how long are my passwords secure?
 
-The truth is the required resources needed to run a quantum algorithm on a future scaled quantum computer vary for different computational scenarios based on the type of qubits, the error correction scheme, and other architecture design choices. The Azure Quantum Resource Estimator is a tool that helps you estimate the resources needed to run a quantum algorithm. 
+The truth is the required resources needed to run a quantum algorithm on a future scaled quantum computer vary for different computational scenarios based on the type of qubits, the error correction scheme, and other architecture design choices. The Azure Quantum Resource Estimator is a tool that helps you estimate the resources needed to run a quantum algorithm for a future scaled quantum computer. For example, the Azure Quantum Resource Estimator can estimate the resources needed to break a particular encryption algorithm. 
 
-The Azure Quantum Resource Estimator is a tool that helps you estimate the resources needed to run a quantum algorithm for a future scaled quantum computer. For example, the Azure Quantum Resource Estimator can estimate the resources needed to break a particular encryption algorithm. The diagram shows the estimated runtime and number of qubits needed to break different encryption algorithms for different qubit types. The diagram shows the following:
+The diagram shows the estimated runtime and number of qubits needed to break different encryption algorithms for different qubit types. The diagram shows the following:
 
-- Classical encryption algorithm, which are RSA (blue), Elliptic Curve (green), and Advanced Encryption Standard (red).
+- Classical encryption algorithms, which are RSA (blue), Elliptic Curve (green), and Advanced Encryption Standard (red).
 - Key strength, which is set to highest.
-- Qubit type, which are topological (circle) and superconducting (triangle).
+- Qubit types, which are topological (circle) and superconducting (triangle).
 - Qubit error rate, which is set to reasonable.
 
 

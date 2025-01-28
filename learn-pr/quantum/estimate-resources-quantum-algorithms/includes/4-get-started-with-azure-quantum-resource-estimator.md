@@ -55,7 +55,7 @@ To get started with the Resource Estimator, you estimate the required resources 
 
 ## Estimate the quantum algorithm
 
-Now, run the Resource Estimator to estimate the physical resources for the `RandomBit` operatio. If you don't specify anything, the Resource Estimator uses the default assumptions, that is the `qubit_gate_ns_e3` qubit model, the `surface_code` error correction code, and 0.001 error budget.
+Now, run the Resource Estimator to estimate the physical resources for the `RandomBit` operation. If you don't specify anything, the Resource Estimator uses the default assumptions, that is the `qubit_gate_ns_e3` qubit model, the `surface_code` error correction code, and 0.001 error budget.
 
 1. Add a new cell and copy the following code:
 
