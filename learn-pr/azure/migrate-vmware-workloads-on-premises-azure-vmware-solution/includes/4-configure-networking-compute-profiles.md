@@ -29,7 +29,7 @@ The first step involves creating a *site pair*. A site pair provides network con
 
 1. Select **Connect**. Note, if you receive a message about a certificate warning, select **Import Certificate** to continue.
 
-    :::image type="content" source="../media/4-connect-to-hcx-cloud-manager.png" alt-text="Screenshot of how to connect to the remote HCX URL from the on-premises HCX Connector.":::
+    :::image type="content" source="../media/4-connect-hcx-cloud-manager.png" alt-text="Screenshot of how to connect to the remote HCX URL from the on-premises HCX Connector."lightbox="../media/4-connect-hcx-cloud-manager.png":::
 
     Note, if you receive a message about a certificate warning, select **Import Certificate** to continue.
 
