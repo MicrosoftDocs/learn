@@ -31,18 +31,18 @@ Use the following command to update the environment variables of the deployed co
 
 ```azurecli
 az containerapp update \
-   --name $APP_NAME \
-   --resource-group $RESOURCE_GROUP \
-   --set-env-vars "spring.profiles.active"="postgres"
+    --resource-group $RESOURCE_GROUP \
+    --name $APP_NAME \
+    --set-env-vars "spring.profiles.active"="postgres"
 ```
 
 #### [PowerShell](#tab/powershell)
 
 ```azurepowershell
 az containerapp update `
-   --name $APP_NAME `
-   --resource-group $RESOURCE_GROUP `
-   --set-env-vars "spring.profiles.active"="postgres"
+    --resource-group $RESOURCE_GROUP `
+    --name $APP_NAME `
+    --set-env-vars "spring.profiles.active"="postgres"
 ```
 
 ---
@@ -57,21 +57,21 @@ To create a database within a new PostgreSQL flexible server instance, use the f
 
     ```azurecli
     az postgres flexible-server create \
-       --resource-group $RESOURCE_GROUP \
-       --name $POSTGRESQLSERVER
+        --resource-group $RESOURCE_GROUP \
+        --name $POSTGRESQLSERVER
     ```
 
     #### [PowerShell](#tab/powershell)
 
     ```azurepowershell
     az postgres flexible-server create `
-       --resource-group $RESOURCE_GROUP `
-       --name $POSTGRESQLSERVER
+        --resource-group $RESOURCE_GROUP `
+        --name $POSTGRESQLSERVER
     ```
 
     ---
 
-    If you find the auto-generated admin username and admin password in the output, save these credentials in a secure place. You can optionally use them later to connect and configure the database.
+    If you find the auto-generated admin username and password in the output, save these credentials in a secure place. You can optionally use them later to connect and configure the database.
 
 1. Create a new database in the PostgreSQL flexible server instance by using the following command:
 
@@ -79,18 +79,18 @@ To create a database within a new PostgreSQL flexible server instance, use the f
 
     ```azurecli
     az postgres flexible-server db create \
-       --resource-group $RESOURCE_GROUP \
-       --database-name $DATABASE \
-       --server-name $POSTGRESQLSERVER
+        --resource-group $RESOURCE_GROUP \
+        --database-name $DATABASE \
+        --server-name $POSTGRESQLSERVER
     ```
 
     #### [PowerShell](#tab/powershell)
 
     ```azurepowershell
     az postgres flexible-server db create `
-       --resource-group $RESOURCE_GROUP `
-       --database-name $DATABASE `
-       --server-name $POSTGRESQLSERVER
+        --resource-group $RESOURCE_GROUP `
+        --database-name $DATABASE `
+        --server-name $POSTGRESQLSERVER
     ```
 
     ---
@@ -111,7 +111,7 @@ Next, connect your previously deployed container app to the PostgreSQL database 
       - For **Client type**, use **SpringBoot**.
    - Authentication:
       - Select **Connection string**.
-      - Fill in your **Username** and **Password** and leave the other fields with their default settings.
+      - Fill in values for the **Username** and **Password** fields, and leave the other fields with their default settings.
 
     :::image type="content" source="../media/service-connector.png" alt-text="Screenshot of the Service Connector (preview) page, with the Service Connector (preview) setting highlighted, along with the Create option." lightbox="../media/service-connector.png":::
 
