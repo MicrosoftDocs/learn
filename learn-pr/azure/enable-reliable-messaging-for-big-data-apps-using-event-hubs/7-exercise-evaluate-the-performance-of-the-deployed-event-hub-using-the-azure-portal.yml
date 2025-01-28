@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Evaluate the performance of the deployed event hub using the Azure portal
   description: Evaluate the performance of the deployed event hub using the Azure portal
-  ms.date: 11/22/2023
+  ms.date: 01/28/2025
   author: spelluru
   ms.author: spelluru
   ms.topic: unit
