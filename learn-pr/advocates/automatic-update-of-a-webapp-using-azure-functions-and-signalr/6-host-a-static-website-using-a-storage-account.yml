@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Use a storage account to host a static website
   description: Learn how an Azure Storage account is able to host static files over a secure server.
-  ms.date: 08/12/2024
+  ms.date: 01/22/2025
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: unit

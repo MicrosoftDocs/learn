@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Introduction
   description: Learn to update an application to implement automatic updates that are nearly instantaneous.
-  ms.date: 08/12/2024
+  ms.date: 01/22/2025
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: unit

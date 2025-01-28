@@ -81,7 +81,7 @@ Before you change the prototype, you need to run it to validate the assumptions.
 
 1. If you receive a notification about installing the latest Azure Functions Core Tools, select **Install**.
 
-## Know the client and server URLs
+## Get the client and server URLs
 
 When running locally, the client and server applications need to know where to find each other. The URLs are:
 
