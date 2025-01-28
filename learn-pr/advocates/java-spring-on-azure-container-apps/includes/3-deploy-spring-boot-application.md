@@ -145,4 +145,17 @@ az containerapp up `
 
 Once your deployment is done, you should be able to see a success message with the project endpoint printed in the console. You can open the URL to verify that your project deployed to Azure.
 
-:::image type="content" source="../media/deployment-success.png" alt-text="Diagram of the deployment verification." lightbox="../media/deployment-success.png":::
+```output
+Run ID: cxl was successful after 3m30s
+Creating Containerapp petclinic in resource group petclinic-containerapps
+
+Container app created. Access your app at https://petclinic.wonderful
+
+Your container app petclinic has been created and deployed! Congrats!
+
+Browse to your container app at: http://petclinic.wonderful
+
+Stream logs for your container with: az containerapp logs show -n petclinic -g petclinic-containerapps
+
+See full output using: az containerapp show -n petclinic -g petclinic-containerapps
+```
