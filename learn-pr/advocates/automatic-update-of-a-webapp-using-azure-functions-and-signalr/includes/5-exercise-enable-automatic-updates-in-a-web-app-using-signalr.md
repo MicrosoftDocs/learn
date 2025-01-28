@@ -85,7 +85,7 @@ The web client uses the SignalR client SDK to establish a connection to the serv
     ```bash
     git add .
     git commit -m "Add SignalR functions"
-    git push
+    git push origin main
     ```
 
 ## Create the `signalr-send-message` function
@@ -175,7 +175,7 @@ At this point, the managed identity and Functions app have been created but not 
     ```bash
     git add .
     git commit -m "Update deployment workflow to use package path"
-    git push
+    git push origin main
     ```
 
     This change will trigger the workflow to run. You can watch the workflow from the **Actions** section of the fork on GitHub.
@@ -194,9 +194,8 @@ At this point, the managed identity and Functions app have been created but not 
 
 ## Test the deployment of the API Functions
 
-1. In the Azure portal, select **Overview** and select **URL** to open the app in a browser. 
-1. Copy the URL, you'll need that when you update the client `.env` file for the `BACKEND_URL` value when you work in Unit 7. 
-1. Open the URL in a browser to test the API functions.
+1. In the Azure portal, select **Overview** and select **Default domain** to open the app in a browser to test the API functions.
 1. Append `/api/getStocks` to the URL in the browser and press **Enter**. You should see a JSON array with stock data.
+1. Copy the URL, you'll need that when you update the client `.env` file for the `BACKEND_URL` value when you work in Unit 7. 
 
 You've updated the server code to return stocks with SignalR and you've deployed to a function app. Next, you'll update the client to use SignalR to receive updates.
