@@ -10,9 +10,37 @@ Integrating AI solutions into SAP workflows can significantly enhance efficiency
 - **Self-service capabilities**: Enable users to interact with AI agents for simple tasks like data retrieval, status updates, and transaction initiations directly within the SAP system.
 - **Streamlined processes**: Automate workflows such as approvals, data entry, and report generation to reduce manual errors and accelerate business processes.
 
+The diagram illustrates a sample architecture for integrating Microsoft Power Platform with a typical SAP landing zone, applicable to SAP on-premises, SAP on Azure VMs, or RISE with SAP. It includes a Power Platform environment, an SAP environment, and a client applications box.
+
 :::image type="complex" source="../media/sap-power-platform-architecture.png" border="false" alt-text="Diagram that shows an architecture of a Microsoft Power Platform integration with a typical SAP landing zone." lightbox="../media/sap-power-platform-architecture.png":::
-   Diagram that shows an architecture of a Microsoft Power Platform integration with a typical SAP landing zone. The architecture contains a Power Platform environment, an SAP environment, and box for client applications. The Power Platform environment contains Power BI, Power Apps, Power Pages, and Copilot Studio, all of which connect to Power Automate. Power Automate connects to SAP ERP connector, OData connector, and a custom connector. The Power Platform environment connects to a Microsoft Entra tenant. Data from Power BI and the SAP ERP connector go through a firewall and then to an SAP environment. Data from the OData connector and the custom connector goes through an API gateway into the SAP environment. The SAP environment contains an on-premises data gateway. Data enters this gateway from the firewall. From this gateway, data flows to SAP .NET Connector. The SAP environment also contains icons that represent OData API, REST / SOAP API, and HANA SQL port. Data flows from the API gateway through these APIs and into SAP. Data from HANA SQL port also flows into SAP. The client application box contains a laptop, a mobile device, Power Automate desktop, SAP GUI, and Power BI Desktop. In this box, data from Power BI Desktop flows to SAP .NET Connector and an SAP HANA ODBC driver. Data from SAP .NET Connector crosses through a DIAG and RFC port in the SAP environment and then flows to SAP. Data from the SAP HANA ODBC driver flows into a HANA SQL port in the SAP environment and then into SAP.  
+   Diagram that shows an architecture of a Microsoft Power Platform integration with a typical SAP landing zone.
 :::image-end:::
+
+### Power Platform Environment
+
+- Contains Power BI, Power Apps, Power Pages, and Copilot Studio, all connected to Power Automate.
+- Power Automate connects to SAP ERP connector, OData connector, and a custom connector.
+- Connects to a Microsoft Entra tenant.
+
+### Data Flow
+
+- Data from Power BI and SAP ERP connector passes through a firewall to the SAP environment.
+- Data from OData and custom connectors goes through an API gateway into the SAP environment.
+
+### SAP Environment
+
+- Contains an on-premises data gateway, receiving data from the firewall.
+- Shows data flows from the gateway to SAP .NET Connector.
+- Includes OData API, REST/SOAP API, and HANA SQL port for data flow from the API gateway into SAP.
+
+### Client Applications Box
+
+- Data flows from laptop, mobile device, Power Automate desktop, SAP GUI, and Power BI Desktop.
+- Data from Power BI Desktop flows to SAP .NET Connector and SAP HANA ODBC driver.
+- Data from SAP .NET Connector crosses through DIAG and RFC ports into SAP.
+- Data from SAP HANA ODBC driver flows into HANA SQL port and then into SAP.
+
+Additional information is found in the article [Extend SAP by using Microsoft Power Platform](/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-fundamental).
 
 ## Implement Azure services to support AI functionalities in SAP workflows
 
@@ -39,6 +67,6 @@ Microsoft Copilot Studio provides a visual design tool for creating custom chatb
 
 - **Custom chatbots**: Design and publish chatbots to handle routine tasks and provide interactive user experiences. These chatbots can answer queries, guide users through processes, and even perform simple tasks, enhancing user engagement and productivity.
 - **Autonomous agents**: Automate processes on behalf of individuals or teams, enhancing efficiency and minimizing manual effort within SAP workflows. Includes executing repetitive tasks such as selecting and inputting data into fields, effectively acting as the user's digital assistant.
-- **Azure AI Services Integration**: Enhances chatbot functions using advanced language models and AI Search. It leads to more accurate responses, improved understanding of user needs, and better search results, thus providing a superior user experience."
+- **Azure AI Services Integration**: Enhances chatbot functions using advanced language models and AI Search. It leads to more accurate responses, improved understanding of user needs, and better search results, thus providing a superior user experience.
 
 By using Copilot Studio, you can significantly enhance the SAP user experience, making SAP more efficient, user-friendly, and responsive to business needs.

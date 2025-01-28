@@ -4,7 +4,7 @@ title: Explore RISE with SAP on the Microsoft cloud
 metadata:
   title: Explore RISE with SAP on the Microsoft cloud
   description: "Explore the key features and integration aspects of RISE with SAP on Microsoft Cloud."
-  ms.date: 01/27/2025
+  ms.date: 01/28/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -12,21 +12,10 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-rise-with-sap-on-the-microsoft-cloud.md)]
+  [!include[](includes/2-sap-with-microsoft-cloud.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which is one of the key benefits of RISE with SAP on Microsoft Cloud?"
-    choices:
-    - content: "Limited scalability and flexibility"
-      isCorrect: false
-      explanation: "That is incorrect. RISE with SAP on Microsoft Cloud offers scalability and flexibility, not limited scalability."
-    - content: "Integration with Microsoft services"
-      isCorrect: true
-      explanation: "That is correct. One of the key features is seamless integration with Microsoft services like Azure, Power Platform, and Teams."
-    - content: "Basic security features"
-      isCorrect: false
-      explanation: "That is incorrect. RISE with SAP on Microsoft Cloud provides advanced security features, not just basic ones."
   - content: "Which Azure service is used for secure authentication and authorization in RISE with SAP?"
     choices:
     - content: "Azure Key Vault"
@@ -35,17 +24,17 @@ quiz:
     - content: "Microsoft Entra ID"
       isCorrect: true
       explanation: "That is correct. Microsoft Entra ID is used for secure authentication and authorization."
-    - content: "Microsoft Sentinel solution for SAP BTP"
+    - content: "Microsoft Sentinel solution for SAP BTP."
       isCorrect: false
-      explanation: "That is incorrect. The Microsoft Sentinel solution for SAP BTP monitors and protects your SAP BTP system, it doesen't provide secure authentication and authorization."
+      explanation: "That is incorrect. The Microsoft Sentinel solution for SAP BTP monitors and protects your SAP BTP system, it doesn't provide secure authentication and authorization."
   - content: "How does Microsoft Power Automate enhance SAP systems?"
     choices:
-    - content: "By creating custom business applications"
+    - content: "By creating custom business applications."
       isCorrect: false
       explanation: "That is incorrect. Creating custom business applications is a feature of Power Apps, not Power Automate."
-    - content: "By generating real-time analytics and visualizations"
+    - content: "By generating real-time analytics and visualizations."
       isCorrect: false
       explanation: "That is incorrect. Generating real-time analytics and visualizations is a feature of Power BI, not Power Automate."
-    - content: "By automating workflows and tasks"
+    - content: "By automating workflows and tasks."
       isCorrect: true
       explanation: "That is correct. Power Automate enhances SAP systems by automating workflows and tasks."

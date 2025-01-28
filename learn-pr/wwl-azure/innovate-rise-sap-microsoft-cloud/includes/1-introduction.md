@@ -11,5 +11,3 @@ After completion of this module, you'll be able to:
 - Explain opportunities to use Microsoft Power Platform with RISE with SAP.
 - Explain workflow capabilities of Microsoft Copilot Studio within RISE with SAP.
 - Identify Microsoft Teams automation opportunities with RISE with SAP.
-
-After completing this module, you'll have a solid understanding of how to apply both RISE with SAP and Microsoft Cloud to optimize workflows, automate tasks, enhance decision-making, and improve team communication and collaboration.
