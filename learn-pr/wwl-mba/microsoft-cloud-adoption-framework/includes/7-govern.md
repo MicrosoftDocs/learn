@@ -22,7 +22,7 @@ Before you create new policies or update existing policies, you need to [assess 
 
 ## Document policies
 
-After you identify business risks that are associated with the cloud, you must [document or update policies](/cloud-adoption-framework/govern/document-cloud-governance-policies) to mitigate the risks. Healthy cloud governance strategy begins with sound cloud governance policy.
+After you identify business risks that are associated with the cloud, you must [document or update policies](/azure/cloud-adoption-framework/govern/document-cloud-governance-policies) to mitigate the risks. Healthy cloud governance strategy begins with sound cloud governance policy.
 
 Cloud governance policies establish the requirements, standards, and goals that your IT staff and automated systems must align with. Individual policy statements are guidelines that you can use to address specific risks that you identify during your risk analysis. Define an approach to document your policies, including how to create, maintain, and update rules that govern the use of your cloud services. Add policies to a centralized repository to inform everyone who needs to adhere to the policies.
 

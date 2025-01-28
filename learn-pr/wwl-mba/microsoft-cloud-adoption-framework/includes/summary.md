@@ -1,6 +1,7 @@
 This module described how to:
 
 - Use the Cloud Adoption Framework to identify where you are in the digital transformation journey and determine why you want to move to the cloud.
+
 - Align your organization with your strategy and create a cloud adoption plan.
 - Set up your Azure environment, define a cloud operating model, implement landing zones, and develop necessary skills.
 - Prepare for and carry out a migration to the cloud, including preparing for migration, assessing workloads, deploying assets, and releasing workloads.

@@ -8,7 +8,7 @@ This Cloud Adoption Framework Secure guidance is one component of a larger holis
 
 - [Azure Well-Architected Framework security guidance](/azure/well-architected/security/) provides guidance for individual workload owners about how to apply security best practices to application development and DevOps and DevSecOps processes. Microsoft provides guidance that complements this documentation about how to apply security practices and DevSecOps controls in a security development lifecycle.
 
-- [Microsoft Cloud Security Benchmark](/security/benchmark/azure/) provides best practice guidance for stakeholders to ensure robust cloud security. This guidance includes security baselines that describe the available security features and recommended optimal configurations for Azure services.
+- The [Microsoft cloud security benchmark](/security/benchmark/azure/) provides best practice guidance for stakeholders to ensure robust cloud security. This guidance includes security baselines that describe the available security features and recommended optimal configurations for Azure services.
 
 - [Zero Trust guidance](/security/zero-trust/) provides guidance for security teams to implement technical capabilities to support a Zero Trust modernization initiative.
 
