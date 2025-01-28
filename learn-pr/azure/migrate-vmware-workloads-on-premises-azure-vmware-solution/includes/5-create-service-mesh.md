@@ -47,7 +47,7 @@ After you confirm the networking ports and test them as open, take the following
 
 1. Enter a user-friendly name for this service mesh, then select **Finish** to complete the configuration.
 
-    :::image type="content" source="../media/5-hcx-service-mesh-finish-to-complete.png" alt-text="Screenshot of the final configuration page before creating the service mesh for VM migration."lightbox="../media/5-hcx-service-mesh-finish-to-complete.png":::
+    :::image type="content" source="../media/5-hcx-service-mesh-finish-complete.png" alt-text="Screenshot of the final configuration page before creating the service mesh for VM migration."lightbox="../media/5-hcx-service-mesh-finish-complete.png":::
 
 1. Select **View Tasks** to monitor the service mesh deployment.
 
