@@ -2,7 +2,7 @@ Now that you deployed the Spring PetClinic application on Azure Container Apps, 
 
 ## Enable built-in Java features in Azure Container Apps
 
-To enable built-in Java features in Container Apps, use the following steps:
+To enable built-in Java features in Azure Container Apps, use the following steps:
 
 1. Open your portal and find your deployed container app.
 1. In the pop up that appears, select **manage** next to the **Development stack** area of the screen, and then select **Java**. This turns on the Java stack feature to enhance your Java applications.
@@ -26,7 +26,7 @@ To view metrics for your application, use the following steps:
 
 ## View log streams via the Azure CLI
 
-You can view your container app's log streams from the Azure CLI by using the `az containerapp logs show` command, and you can view your container app's environment system log stream by using the `az containerapp env logs show` command. To view logs within the Azure CLI, use the following command:
+You can view the log streams for your container app in the Azure CLI by using the `az containerapp logs show` command, and you can view your container app's environment system log stream by using the `az containerapp env logs show` command. To view logs within the Azure CLI, use the following command:
 
 ### [Bash](#tab/bash)
 
