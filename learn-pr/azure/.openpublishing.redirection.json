@@ -34,6 +34,86 @@
           "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/index.yml",
           "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
           "redirect_document_id": false
-          } 
+          },
+          {
+            "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/create-flink-cluster.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/flink-architecture.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/index.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/introduction.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/knowledge-check.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/run-job-in-flink.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/summary.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/write-event-message.yml",
+            "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+            {
+              "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/create-flink-cluster.yml",
+              "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+              "redirect_document_id": false
+               },
+               {
+              "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/flink-architecture.yml",
+              "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+              "redirect_document_id": false
+               },
+               {
+              "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/index.yml",
+              "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+              "redirect_document_id": false
+               },
+               {
+              "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/introduction.yml",
+              "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+              "redirect_document_id": false
+               },
+               {
+              "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/knowledge-check.yml",
+              "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+              "redirect_document_id": false
+               },
+               {
+              "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/run-job-in-flink.yml",
+              "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+              "redirect_document_id": false
+               },
+               {
+              "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/summary.yml",
+              "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+              "redirect_document_id": false
+               },
+               {
+              "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/write-event-message.yml",
+              "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/",
+              "redirect_document_id": false
+               }     
       ]
 }
