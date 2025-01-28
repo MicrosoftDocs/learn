@@ -10,7 +10,7 @@ The Spring PetClinic is a simple web application that manages a list of veterina
 
 ## Clone the PetClinic repository
 
-To get started with PetClinic, clone the [Azure Container Apps Java Samples](https://github.com/Azure-Samples/azure-container-apps-java-samples) repository from GitHub by using the following command:
+To get started with the PetClinic application, clone the [Azure Container Apps Java Samples](https://github.com/Azure-Samples/azure-container-apps-java-samples) repository from GitHub by using the following command:
 
 # [Bash](#tab/bash)
 
@@ -28,7 +28,7 @@ git clone https://github.com/Azure-Samples/azure-container-apps-java-samples.git
 
 ## Run the application locally
 
-Before deploying, ensure that the PetClinic application runs successfully on your local machine, by using the following steps:
+Before deploying the PetClinic application, ensure that it runs successfully on your local machine, by using the following steps:
 
 1. Navigate to the project directory by using the following command:
 
