@@ -56,11 +56,20 @@ Before you change the prototype, you need to run it to validate the assumptions.
     |Azure Storage|Referred to as STORAGE_CONNECTION_STRING|
     |Resource Group|Referred to as RESOURCE_GROUP_NAME.|
 
-1. Use a Node.js script to upload sample data into the database with the following command.
+1. At the terminal, still in the `setup-resources` directory, use a Node.js script to upload sample data into the database with the following command.
 
     ```bash
     npm start
     ```
+
+    The output shows the starting data for the fictitious stock application:
+
+    ```console
+    Seed data added. Symbol ABC
+    Seed data added. Symbol DEF
+    Seed data added. Symbol GHI
+    ```
+    
 
 1. In the terminal, navigate to the **root** folder.
 

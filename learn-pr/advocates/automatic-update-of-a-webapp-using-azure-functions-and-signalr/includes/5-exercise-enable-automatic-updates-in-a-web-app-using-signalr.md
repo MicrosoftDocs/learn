@@ -88,7 +88,7 @@ The web client uses the SignalR client SDK to establish a connection to the serv
     git push origin main
     ```
 
-## Create the `signalr-send-message` function
+## Create the Azure Functions app
 
 Create a function app and related resources in Azure to which you can publish the new functions code.
 
@@ -123,23 +123,12 @@ Connect your new function app to the GitHub repository to enable continuous depl
     | Organization    | Select your GitHub account.                       |
     | Repository                        | Search for and select `mslearn-advocates.azure-functions-and-signalr`.                       |
     | Branch            | Select the **main** branch.                    |
-    | Workflow Option| Select **Add a workflow ...**.|
     | Authentication type | Select **User-assigned-identity**.|
     | Subscription | Select the same subscription as seen at the top of the page. |
     | Identity | Select **Create new**.|
 
 1. Select **Save** at the top of the section to save the settings. This creates a new workflow file in your forked repository.
 1. This deployment configuration creates a GitHub Actions workflow file in the repository. You need to update the workflow file to use the correct package path for the function app.
-
-<!--- Remove this content section after the OIDC subject bug gets fixed by the Functions folks -->
-At this point, the managed identity and Functions app have been created but not connected together. 
-
-## Update the Functions app identity
-
-1. In your new function app page in the Azure portal, in the **Settings** section, select **Identity**.
-1. In the **User assigned** section, select **+Add**.
-1. Select the new managed identity then select **Add**. This adds the user-assigned managed identity to the Functions app.
-<!--- end removal section -->
 
 ## Edit GitHub deployment workflow
 
