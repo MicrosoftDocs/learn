@@ -2,9 +2,11 @@
 uid: learn.wwl.design-application-architecture.design-caching-solution
 title: Design a caching solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a caching solution
   description: "Design a caching solution"
-  ms.date: 12/08/2024
+  ms.date: 01/29/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
