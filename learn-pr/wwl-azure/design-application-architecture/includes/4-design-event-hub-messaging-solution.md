@@ -13,12 +13,12 @@ For this architecture, you might choose a messaging solution that uses _event hu
 - You can send and receive events in many different languages. Messages can also be received from Azure Event Hubs by using Apache Storm.
 
 - Events received by Azure Event Hubs are added to the end of its data stream.
-   - The data stream orders events according to the time they event is received.
+   - The data stream orders events according to the time the event is received.
    - Consumers can seek along the data stream by using time offsets.
 
 - Event Hubs implements a _pull_ model that differentiates it from other messaging services like Azure Service Bus queues.
    - Event Hubs holds each message in its cache and allows it to be read.
-   - Event Hub messages aren't deleted. Messages remain for other consumers.
+   - Messages remain for other consumers.
 
 - Event Hubs doesn't have a built-in mechanism to handle messages that aren't processed as expected. 
 
