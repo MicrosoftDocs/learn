@@ -1,1 +1,1 @@
-Choose the best response for each question. 
+Test your knowledge of the concepts covered in this module. Choose the right response for each question.
