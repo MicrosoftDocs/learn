@@ -36032,6 +36032,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-storage/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-storage/describe-azure-stack-storage-drives.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-storage/describe-drive-symmetry-considerations.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-storage/describe-storage-pool-cache.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-storage/implement-read-cache.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-storage/introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-storage/knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-storage/manage-multichannel.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-storage/manage-storage-repair.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-storage/replace-drives.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/manage-azure-stack-hci-storage/summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/catalog-data-artifacts-use-microsoft-purview/index.md",
       "redirect_url": "/purview/",
       "redirect_document_id": false
