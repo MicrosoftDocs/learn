@@ -2,7 +2,7 @@
   "redirections": [
            {
           "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/1-introduction.yml",
-          "redirect_url": "/training/modules/azure/intro-to-azure-hdinsight/index.yml",
+          "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-hdinsight/",
           "redirect_document_id": false
            },
            {
