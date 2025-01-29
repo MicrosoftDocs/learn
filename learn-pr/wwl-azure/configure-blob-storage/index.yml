@@ -35,7 +35,7 @@ prerequisites: |
 
   -   Knowledge of Azure fundamentals. Having a basic understanding of Microsoft Azure services and concepts, such as Azure Resource Manager, Azure Storage Accounts, and Azure Virtual Networks, can help you navigate and configure blob storage effectively.
 
-  -   Familiarity with storage concepts like file systems, directories, files, and data replication .
+  -   Familiarity with storage concepts like file systems, directories, files, and data replication.
 
   -   Experience with Azure portal or Azure CLI. Familiarity with the Azure portal (web-based management interface) or Azure CLI (command-line interface) can help you navigate and configure blob storage resources efficiently.
 
