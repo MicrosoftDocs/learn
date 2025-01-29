@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "Hot tier to cool tier"
       isCorrect: true
-      explanation: "Correct. Changes between the hot and cool tiers happen immediately"
+      explanation: "Correct. Changes between the hot and cool tiers happen immediately."
     - content: "Archive tier to cool tier"
       isCorrect: false
       explanation: "Incorrect. Changes from the archive tier don't happen immediately."
