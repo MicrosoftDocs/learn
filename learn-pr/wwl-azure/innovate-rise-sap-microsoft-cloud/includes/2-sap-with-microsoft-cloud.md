@@ -4,15 +4,13 @@ As the project manager for a manufacturer, you utilize RISE with SAP on Microsof
 
 ## Explore deployment options
 
-### Deploy SAP and integrate the Microsoft Cloud
-
 There are a range of SAP deployment options for combining with Microsoft Cloud:
 
 - **RISE with SAP**: An SAP fully managed service that handles all underlying infrastructure, enabling businesses to concentrate on their core operations. When RISE with SAP is deployed in Azure, SAP owns and manages the Azure tenant and SAP services.
 - **Customer managed VMs on Azure**: Businesses retain greater control over their SAP systems by managing their own virtual machines (VMs) on Azure. SAP on Azure VMs is a solution for businesses with specific customization needs or those desiring more hands-on control.
 - **On-premises**: Host SAP applications on the business's own infrastructure for maximum control and customization. Ideal for organizations with strict data security needs or existing on-premises investments, and supports businesses still migrating to cloud VMs or RISE with SAP.
 
-### Deploy Microsoft integration for RISE with SAP
+### Microsoft integration for RISE with SAP
 
 The following Microsoft integration architecture example for SAP apples to RISE with SAP, Azure VMs, or on-premises, offering a wide range of options to suit different business needs and contexts. Regardless of the deployment option chosen, Azure networking and Microsoft Entra ID ensure seamless integration and secure access. Microsoft Entra ID use across products is beneficial for businesses with strict data sovereignty requirements, or businesses who want to use their existing infrastructure.
 
