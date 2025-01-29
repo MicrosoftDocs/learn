@@ -14347,6 +14347,41 @@
       "redirect_url": "/training/modules/route-output-from-azure-digital-twins-to-downstream-services"
     },
     {
+      "source_path_from_root": "/learn-pr/iot/introduction-to-azure-iot/index.md",
+      "redirect_url": "https://learn.microsoft.com/azure/iot/iot-introduction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/iot/introduction-to-azure-iot/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/azure/iot/iot-introduction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/iot/introduction-to-azure-iot/2-what-is-azure-iot.md",
+      "redirect_url": "https://learn.microsoft.com/azure/iot/iot-introduction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/iot/introduction-to-azure-iot/3-how-azure-iot-works.md",
+      "redirect_url": "https://learn.microsoft.com/azure/iot/iot-introduction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/iot/introduction-to-azure-iot/4-use-criteria-iot.md",
+      "redirect_url": "https://learn.microsoft.com/azure/iot/iot-introduction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/iot/introduction-to-azure-iot/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/azure/iot/iot-introduction/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/iot/introduction-to-azure-iot/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/azure/iot/iot-introduction/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/iot/examine-azure-iot-central-application-architecture/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/"
     },
