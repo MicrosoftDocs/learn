@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.wwl.innovate-rise-sap-microsoft-cloud
+metadata:
+  title: Innovate Using RISE with SAP on the Microsoft Cloud
+  description: "Explore how to leverage both RISE with SAP and Microsoft Cloud to optimize workflows, automate tasks, enhance decision-making, and improve team communication and collaboration."
+  ms.date: 01/29/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: sap-on-azure
+  ai-usage: ai-assisted
+title: Innovate using RISE with SAP on the Microsoft Cloud
+summary: Explore how to leverage both RISE with SAP and Microsoft Cloud to optimize workflows, automate tasks, enhance decision-making, and improve team communication and collaboration.
+abstract: |
+  After completing this module, you should be able to:
+
+  - Describe key features of RISE with SAP on Microsoft Cloud.
+
+  - Plan Azure integration with RISE with SAP.
+
+  - Understand the role of Microsoft Power Platform with RISE with SAP.
+
+  - Explain workflow capabilities of Microsoft Copilot Studio within RISE with SAP.
+
+  - Identify Microsoft Teams automation opportunities with RISE with SAP.
+prerequisites: |
+  -   Azure Data Fundamentals.
+
+  -   Knowledge of SAP products such as SAP HANA or SAP NetWeaver.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- business-owner
+- data-engineer
+- data-scientist
+- functional-consultant
+products:
+- azure
+- microsoft-copilot-studio
+- microsoft-teams-phone
+- power-platform
+subjects:
+- cloud-computing
+- data-analytics
+units:
+- learn.wwl.innovate-rise-sap-microsoft-cloud.introduction
+- learn.wwl.innovate-rise-sap-microsoft-cloud.rise-with-sap-on-the-microsoft-cloud
+- learn.wwl.innovate-rise-sap-microsoft-cloud.leverage-ai-to-optimize-sap-workflows-in-microsoft-teams
+- learn.wwl.innovate-rise-sap-microsoft-cloud.knowledge-check
+- learn.wwl.innovate-rise-sap-microsoft-cloud.summary
+badge:
+  uid: learn.wwl.innovate-rise-sap-microsoft-cloud.badge

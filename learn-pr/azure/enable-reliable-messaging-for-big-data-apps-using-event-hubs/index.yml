@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Enable reliable messaging for Big Data applications using Azure Event Hubs
   description: Learn to use Azure Event Hubs to reliably process high-volume data streams to enable you to code applications to send and receive messages through the hub.
-  ms.date: 11/22/2023
+  ms.date: 01/28/2025
   author: spelluru
   ms.author: spelluru
   ms.topic: module
