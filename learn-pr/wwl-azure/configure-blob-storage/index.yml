@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Azure Blob Storage
   description: "Learn how to configure Azure Blob Storage, including tiers and object replication."
-  ms.date: 12/20/2024
+  ms.date: 01/29/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module

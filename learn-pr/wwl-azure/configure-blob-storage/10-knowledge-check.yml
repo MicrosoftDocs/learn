@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/20/2024
+  ms.date: 01/29/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "Hot tier to cool tier"
       isCorrect: true
-      explanation: "Correct. Changes between the hot and cool tiers, and to the archive tier, happen immediately"
+      explanation: "Correct. Changes between the hot and cool tiers happen immediately"
     - content: "Archive tier to cool tier"
       isCorrect: false
       explanation: "Incorrect. Changes from the archive tier don't happen immediately."
