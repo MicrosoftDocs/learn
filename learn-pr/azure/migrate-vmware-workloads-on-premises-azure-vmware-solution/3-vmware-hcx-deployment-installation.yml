@@ -19,26 +19,26 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which account is typically used to access the HCX Connector on-premises?"
+  - content: "Which account is typically used to access the VMware HCX Connector on-premises?"
     choices:
     - content: "Global Administrator"
       isCorrect: false
       explanation: "The Global Administrator has access to all administrative features in the Azure Resource Manager portal."
     - content: "admin"
       isCorrect: true
-      explanation: "admin is the account used to access the HCX Manager on-premises."
+      explanation: "admin is the account used to access the VMware HCX Connector on-premises."
     - content: "cloudadmin"
       isCorrect: false
       explanation: "cloudadmin is the account used to access the Azure VMware Solution vCenter and HCX environment in Azure."
-  - content: "If Juan can't activate the HCX Advanced Key on-premises, what might be the issue?"
+  - content: "If you can't activate the HCX Enterprise Key on-premises, what could be the issue?"
     choices:
     - content: "The on-premises environment doesn't have open internet access or a proxy configured for activation."
       isCorrect: true
-      explanation: "The on-premises environment needs open internet access or a proxy configured to activate the HCX Advanced Key."
+      explanation: "The on-premises environment needs open internet access or a proxy configured to activate the HCX Enterprise Key."
     - content: "The HCX appliance wasn't deployed correctly."
       isCorrect: false
-      explanation: "If Dragan got to this point, the HCX appliance deployed correctly."
+      explanation: "If you got to this point, the HCX appliance deployed correctly."
     - content: "A NAT rule isn't configured."
       isCorrect: false
-      explanation: "A NAT rule isn't configured to activate the HCX Advanced Key."
+      explanation: "A NAT rule isn't configured to activate the HCX Enterprise Key."
 

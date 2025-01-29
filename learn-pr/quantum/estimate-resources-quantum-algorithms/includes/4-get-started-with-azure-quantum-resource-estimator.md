@@ -1,6 +1,8 @@
-Let's get some practice with the Azure Quantum Resource Estimator. In the following example, you estimate the physical resources of a Shor's algorithm sample.
+In the previous unit, you learned that the Azure Quantum Resource Estimator works by taking three main inputs: the physical qubit parameters, the quantum error correction (QEC) scheme, and the error budget. 
 
-## Install qsharp and qsharp-widgets
+Let's get some practice with the Azure Quantum Resource Estimator. In this unit, you estimate the physical resources of a simple program using the Azure Quantum Resource Estimator.
+
+## Install the required packages
 
 First, install the latest Azure Quantum `qsharp` and `qsharp-widgets` packages.  
 
@@ -8,9 +10,12 @@ First, install the latest Azure Quantum `qsharp` and `qsharp-widgets` packages.
 python -m pip install --upgrade qsharp qsharp-widgets 
 ```
 
-## Create the quantum algorithm
+## Create the quantum algorithm in a Jupyter notebook
 
-1. In Visual Studio Code, select **View > Command palette** and select **Create: New Jupyter Notebook**.
+To get started with the Resource Estimator, you estimate the required resources for a simple quantum algorithm that generates a random bit.
+
+1. Open Visual Studio Code.
+1. Select **View > Command palette** and select **Create: New Jupyter Notebook**.
 1. In the notebook's first cell, import the `qsharp` package:
 
     ```python
@@ -48,9 +53,11 @@ python -m pip install --upgrade qsharp qsharp-widgets
         }
     ```
 
-# Estimate the quantum algorithm
+## Estimate the quantum algorithm
 
-1. Now, estimate the physical resources for the `RandomBit` operation using the default assumptions. Add a new cell and copy the following code:
+Now, run the Resource Estimator to estimate the physical resources for the `RandomBit` operation. If you don't specify anything, the Resource Estimator uses the default assumptions, that is the `qubit_gate_ns_e3` qubit model, the `surface_code` error correction code, and 0.001 error budget.
+
+1. Add a new cell and copy the following code:
 
     ```python
     result = qsharp.estimate("RandomBit()")
@@ -104,22 +111,17 @@ python -m pip install --upgrade qsharp qsharp-widgets
       'twoQubitGateTime': '50 ns'}}
      ```
 
-    You can see that the Resource Estimator takes the `qubit_gate_ns_e3` qubit model, the `surface_code` error correction code, and 0.001 error budget as default values for the estimation.
+    You can see that the Resource Estimator takes the `qubit_gate_ns_e3` qubit model, the `surface_code` error correction code, and 0.001 error budget, which are the default values for the estimation.
 
 ## Change the default values and estimate the algorithm
 
-When submitting a resource estimate request for your program, you can specify some optional parameters. These are the target parameters you can customize:
-
-* `errorBudget`: The overall allowed error budget for the algorithm
-* `qecScheme`: The quantum error correction (QEC) scheme
-* `qubitParams`: The physical qubit parameters
-* `constraints`: The constraints on the component-level
-* `distillationUnitSpecifications`: The specifications for T factories distillation algorithms
-* `estimateType`: Single or frontier
+If you don't want to use the default values, you can specify optional parameters. Let's change the qubit model, the QEC scheme, and the error budget.
 
 ### Change qubit model
 
-You can estimate the cost for the same algorithm using the Majorana-based qubit parameter, `qubitParams`, `qubit_maj_ns_e6`.
+You estimate the cost for the same algorithm using the Majorana-based qubit parameter, `qubit_maj_ns_e6`. To do this, you need to pass the `qubitParams` parameter with the `name` field set to `qubit_maj_ns_e6`.
+
+In a new cell, copy and run the following code:
 
 ```python
 result_maj = qsharp.estimate("RandomBit()", params={
@@ -131,7 +133,9 @@ EstimateDetails(result_maj)
 
 ### Change quantum error correction scheme
 
-You can rerun the resource estimation job for the same example on the Majorana-based qubit parameters with a floqued QEC scheme, `qecScheme`.
+You estimate the cost for the same algorithm using the Majorana-based qubit parameters with a floqued QEC scheme, `qecScheme`. To do this, you also need to pass the `qecScheme` parameter with the `name` field set to `floquet_code`.
+
+In a new cell, copy and run the following code:
 
 ```python
 result_maj = qsharp.estimate("RandomBit()", params={
@@ -146,7 +150,9 @@ EstimateDetails(result_maj)
 
 ### Change error budget
 
-Next, rerun the same quantum circuit with an `errorBudget` of 10%.
+Next, estimate the cost for the same parameters with an `errorBudget` of 10%. To do this, you need to pass the `errorBudget` parameter with the value set to 0.1.
+
+In a new cell, copy and run the following code:
 
 ```python
 result_maj = qsharp.estimate("RandomBit()", params={
@@ -159,3 +165,7 @@ result_maj = qsharp.estimate("RandomBit()", params={
                 "errorBudget": 0.1})
 EstimateDetails(result_maj)
 ```
+
+Congratulations! You've successfully estimated the physical resources for a simple quantum algorithm using the Azure Quantum Resource Estimator and customized the parameters to see how they affect the resource estimates.
+
+In the next unit, you'll level up the difficulty and estimate the resources for the Shor's algorithm using the Azure Quantum Resource Estimator.
