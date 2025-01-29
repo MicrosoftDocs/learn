@@ -15,17 +15,17 @@ metadata:
 title: Innovate Using RISE with SAP on the Microsoft Cloud
 summary: Explore how to leverage both RISE with SAP and Microsoft Cloud to optimize workflows, automate tasks, enhance decision-making, and improve team communication and collaboration.
 abstract: |
-  After completing&nbsp;this module, you should be able to:
+  After completing this module, you should be able to:
 
-  -   Describe key features of RISE with SAP on Microsoft Cloud.
+  - Describe key features of RISE with SAP on Microsoft Cloud.
 
-  -   Plan Azure integration with RISE with SAP.
+  - Plan Azure integration with RISE with SAP.
 
-  -   Understand the role of Microsoft Power Platform with RISE with SAP.
+  - Understand the role of Microsoft Power Platform with RISE with SAP.
 
-  -   Explain workflow capabilities of Microsoft Copilot Studio within RISE with SAP.
+  - Explain workflow capabilities of Microsoft Copilot Studio within RISE with SAP.
 
-  -   Identify Microsoft Teams automation opportunities with RISE with SAP.
+  - Identify Microsoft Teams automation opportunities with RISE with SAP.
 prerequisites: |
   -   Azure Data Fundamentals.
 
