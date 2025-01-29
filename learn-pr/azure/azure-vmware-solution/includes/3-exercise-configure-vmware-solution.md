@@ -6,7 +6,7 @@
 
 1. Create an NSX Manager network segment in the Azure portal.
 
-   :::image type="content" source="../media/3-create-nsx-manager-network-segments.png" alt-text="Screenshot of the Azure portal showing how to add a NSX Manager network segment."lightbox="../media/3-create-nsx-manager-network-segments.png":::
+   :::image type="content" source="../media/3-create-nsx-manager-network-segments.png" alt-text="Screenshot of the Azure portal showing how to add an NSX Manager network segment."lightbox="../media/3-create-nsx-manager-network-segments.png":::
 
 1. Create a DHCP server or DHCP relay in the Azure portal.
 
@@ -17,6 +17,6 @@
    :::image type="content" source="../media/3-dns-forwarder.png" alt-text="Screenshot of the Azure portal showing where to configure DNS zones under Workload Networking.":::
 
 1. Deploy the VM as you would in any VMware vSphere environment.
-1. Log on to the VM created above and ensure that the VM doesn't have any internet connectivity.
+1. Sign in to the VM you created and verify the VM doesn't have internet connectivity.
 
-You've now ensured that Azure VMware Solution private cloud is configured correctly. This allows you to build the foundation for securing outbound internet connectivity as discussed in the following unit.
+You've ensured that Azure VMware Solution private cloud is configured correctly. This allows you to build the foundation for securing outbound internet connectivity as discussed in the following unit.
