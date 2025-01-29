@@ -6,8 +6,8 @@ metadata:
   title: "Introduction to Azure IoT Hub"
   description: "Learn how to assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub."
   ms.date: 07/20/2024
-  author: leestott
-  ms.author: chnoring
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud-advocates
   ms.service: azure-iot-hub
