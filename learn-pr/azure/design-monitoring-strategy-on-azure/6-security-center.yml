@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Manage infrastructure security by using Defender for Cloud
   description: Learn how to monitor, analyze, and manage infrastructure security by using Microsoft Defender for Cloud.
-  ms.date: 11/13/2023
+  ms.date: 01/22/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
@@ -16,11 +16,11 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: How can you use Defender for Cloud to prevent persistent access to your VMs?
+  - content: How can you use Defender for Cloud to prevent persistent access to your virtual machines?
     choices:
     - content: Use Azure Logic Apps.
       isCorrect: false
-      explanation: You can trigger an automated alert response with Logic Apps, but not manage VM access.
+      explanation: You can trigger an automated alert response with Logic Apps, but not manage virtual machine (VM) access.
     - content: Use just-in-time (JIT) access.
       isCorrect: true
       explanation: With JIT access, your VMs are accessed based only on rules that you configure.
@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: Use just-in-time (JIT) access.
       isCorrect: false
-      explanation: Just-in-time access is used to control VM access, not respond to alerts.
+      explanation: Just-in-time access is used to control VM access, not to respond to alerts.
     - content: Use adaptive application controls.
       isCorrect: false
       explanation: You use adaptive controls to control which applications can run on your VMs, not to respond to alerts.
