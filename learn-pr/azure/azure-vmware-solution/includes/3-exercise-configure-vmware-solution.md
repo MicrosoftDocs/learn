@@ -14,7 +14,7 @@
 
 1. Configure a DNS forwarder in the Azure portal.
 
-   :::image type="content" source="../media/3-dns-forwarder.png" alt-text="Screenshot of the Azure portal showing where to configure DNS zones under Workload Networking.":::
+   :::image type="content" source="../media/3-configure-dns-forwarder.png" alt-text="Screenshot of the Azure portal showing where to configure DNS zones under Workload Networking."lightbox="../media/3-configure-dns-forwarder.png":::
 
 1. Deploy the VM as you would in any VMware vSphere environment.
 1. Sign in to the VM you created and verify the VM doesn't have internet connectivity.
