@@ -6,8 +6,8 @@ metadata:
   title: "Run Azure AI services on IoT Edge"
   description: Implement a cognitive service for performing language detection on an IoT Edge device.
   ms.date: 07/08/2024
-  author: PatAltimore
-  ms.author: chnoring
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.collection: ce-advocates-ai-copilot

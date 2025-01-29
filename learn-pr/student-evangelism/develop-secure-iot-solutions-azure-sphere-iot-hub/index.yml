@@ -6,8 +6,8 @@ metadata:
   title: "Develop secure IoT Solutions for Azure Sphere with IoT Hub"
   description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Hub"
   ms.date: 07/20/2024
-  author: leestott
-  ms.author: chnoring
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
