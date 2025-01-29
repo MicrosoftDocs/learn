@@ -23,7 +23,7 @@ Now that you have Azure VMware Solution private cloud configured, you need to se
 
 ## Deploy Azure Route Server
 
-Azure Route Server uses BGP to exchange routes between a custom or third-party NVA router and ExpressRoute Gateway. ExpressRoute Gateway is the one, which is used to terminate Azure VMware Solution private cloud. Use the following instructions to create Azure Route Server.
+Azure Route Server uses BGP to exchange routes between a custom or third-party NVA router and ExpressRoute Gateway. ExpressRoute Gateway is the one used to terminate Azure VMware Solution private cloud. Use the following instructions to create Azure Route Server.
 
 ```azurecli
 az network routeserver create --name <routeserver-name>  --resource-group <resource-group-name>  --hosted-subnet $ars_subnet_id  --public-ip-address <name-for-route-server-pip> 
