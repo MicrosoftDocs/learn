@@ -18,7 +18,7 @@ For this architecture, you might choose a messaging solution that uses _event hu
 
 - Event Hubs implements a _pull_ model that differentiates it from other messaging services like Azure Service Bus queues.
    - Event Hubs holds each message in its cache and allows it to be read.
-   - Event Hub messages aren't deleted. Messages remain for other consumers.
+   - Messages remain for other consumers.
 
 - Event Hubs doesn't have a built-in mechanism to handle messages that aren't processed as expected. 
 
