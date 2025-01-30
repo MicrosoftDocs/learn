@@ -60,7 +60,7 @@ products:
 subjects:
 - artificial-intelligence
 modules:
-- learn.introduction-to-azure-iot
+#- learn.introduction-to-azure-iot
 - learn.oxford.intro-to-iot-hub
 - learn.oxford.intro-to-iot-edge
 - learn.oxford.deploy-prebuilt-module-edge-device
