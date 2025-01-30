@@ -2,7 +2,7 @@
 
 1. Navigate to your Azure VMware Solution private cloud in Azure portal and select the **Internet connectivity** menu. Select option, **Do not connect or connect using default route from Azure** which is the default setting when the Azure VMware Solution private cloud is initially deployed.
 
-   :::image type="content" source="../media/3-internet-connectivity-selected.png" alt-text="Screenshot of Azure portal menu showing the entry titled, 'Do not connect or connect using the default route from Azure' is selected." lightbox="../media/3-internet-connectivity-selected.png":::
+   :::image type="content" source="../media/3-internet-connectivity-selected.png" alt-text="Screenshot of Azure portal menu showing the entry titled, 'Don't connect or connect using the default route from Azure' is selected." lightbox="../media/3-internet-connectivity-selected.png":::
 
 1. Create an NSX Manager network segment in the Azure portal.
 
@@ -17,6 +17,6 @@
    :::image type="content" source="../media/3-configure-dns-forwarder.png" alt-text="Screenshot of the Azure portal showing where to configure DNS zones under Workload Networking."lightbox="../media/3-configure-dns-forwarder.png":::
 
 1. Deploy the VM as you would in any VMware vSphere environment.
-1. Sign in to the VM you created and verify the VM doesn't have internet connectivity.
+1. Sign in to the VM you created, then verify the VM doesn't have internet connectivity.
 
-You've ensured that Azure VMware Solution private cloud is configured correctly. This allows you to build the foundation for securing outbound internet connectivity as discussed in the following unit.
+You ensured that Azure VMware Solution private cloud is configured correctly which allows you to build the foundation for securing outbound internet connectivity as discussed in the following unit.
