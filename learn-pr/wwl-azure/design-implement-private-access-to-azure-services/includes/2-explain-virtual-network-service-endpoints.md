@@ -65,8 +65,6 @@ A service tag represents a group of IP address prefixes from a given Azure servi
 
 You can use service tags to define network access controls on network security groups or Azure Firewall. Use service tags in place of specific IP addresses when you create security rules. By specifying the service tag name, such as API Management, in the appropriate source or destination field of a rule, you can allow or deny the traffic for the corresponding service.
 
-As of March 2021, you can also use Service Tags in place of explicit IP ranges in user defined routes. This feature is currently in Public Preview.
-
 You can use service tags to achieve network isolation and protect your Azure resources from the general Internet while accessing Azure services that have public endpoints. Create inbound/outbound network security group rules to deny traffic to/from Internet and allow traffic to/from AzureCloud or other available service tags of specific Azure services.
 
 :::image type="content" source="../media/service-tags-efcdf95b.png" alt-text="Diagram of a network security group with service tags." lightbox="../media/service-tags-efcdf95b.png":::
