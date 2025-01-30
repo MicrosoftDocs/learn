@@ -4672,6 +4672,11 @@ achievements:
   title: Build your first Azure IoT Central application to manage your coffee machines
   summary: Build your first Azure IoT Central application to manage your coffee machines
   iconUrl: /training/achievements/iot/monitor-and-manage-device-with-iot-central.svg
+- uid: learn.introduction-to-iot.badge
+  type: badge
+  title: Introduction to Azure IoT
+  summary: Introduction to Azure IoT
+  iconUrl: /training/achievements/introduction-to-azure-iot.svg
 - uid: learn.iot.evaluate-iot-scenario-with-iot-central.trophy
   type: trophy
   title: Evaluate your IoT Scenario by using Azure IoT Central
