@@ -104,8 +104,8 @@ This step configures the FRR NVA to have Azure Route Server as its BGP neighbor.
 
 1. sign in to FRR shell.
 1. Paste the script with updated variables.
-1. Run `show ip bgp` to confirm that the NVA hasn't learned routes yet except its own default route.
-1. Run `show ip bgp sum` to confirm that the NVA hasn't established BGP sessions.
+1. Run `show ip bgp` to confirm that the NVA didn't learned routes except its own default route.
+1. Run `show ip bgp sum` to confirm that the NVA didn't established BGP sessions.
 
    :::image type="content" source="../media/9-config-bgp-showip-nosession.png" alt-text="Screenshot of command execution on NVA VM. Screenshot shows Azure Route Server as BGP neighbor for NVA.":::
 
@@ -122,11 +122,11 @@ The following steps establish a BGP peer relationship between the FRR NVA and Az
    ```
 
 1. Sign in to FRR shell.
-1. Run `show ip bgp` to confirm that the NVA has learned routes from Azure Route Server.
+1. Run `show ip bgp` to confirm that the NVA learned routes from Azure Route Server.
 
     :::image type="content" source="../media/9-config-bgp-showip-routes.png" alt-text="Screenshot of command execution on NVA VM. Screenshot shows Azure Route Server as next hop for AVS network.":::
 
-1. Ensure that Azure Firewall has direct internet connectivity. This can be done using Azure portal by inspecting Route Table associated with Azure Firewall's subnet.
+1. Ensure that Azure Firewall has direct internet connectivity by using Azure portal to inspect the Route Table associated with Azure Firewall's subnet.
 
     :::image type="content" source="../media/9-config-bgp-route-table.png" alt-text="Screenshot of Azure portal menu. The menu entry titled “ToInternet” route table highlights default route configured with Internet as next hop.":::
 
