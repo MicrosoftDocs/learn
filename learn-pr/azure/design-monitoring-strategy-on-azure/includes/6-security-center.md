@@ -1,4 +1,4 @@
-Because your company is a financial organization, it needs to meet the highest standards for security. Each customer or partner transaction must be completely protected from threats, and you must also respond effectively to potential threats. For example, if a virtual machine (VM) is compromised, you must act rapidly to address the issue.
+Because your company is a financial organization, it needs to meet the highest standards for security. Each customer or partner transaction must be protected completely from threats, and you must also respond effectively to potential threats. For example, if a virtual machine (VM) is compromised, you must act rapidly to address the issue.
 
 This unit describes how to protect resources and respond to threats by using Microsoft Defender for Cloud. Defender for Cloud helps you ensure that the security configuration of your infrastructure is as secure as possible.
 
@@ -46,7 +46,7 @@ To configure adaptive controls, select **Adaptive application control** on the *
 
 :::image type="content" source="../media/6-security-center-update-04.png" alt-text="Screenshot of Adaptive application controls." lightbox="../media/6-security-center-update-04.png":::
 
-Select a resource group and use the **Configure application control rules** screen to target VMs and applications that should have the control rules applied.
+When you select a resource group, it opens **Configure application control rules**. On this screen, use the options to target VMs and applications that should have the control rules applied.
 
 ## Respond to threats
 
@@ -75,7 +75,7 @@ Expand any of the following sections to take action on the alert:
 
 :::image type="content" source="../media/6-security-center-update-10.png" alt-text="Screenshot of the Take action pane." lightbox="../media/6-security-center-update-10.png":::
 
-In the alert details, you should dismiss alerts if no action is required, for example if there are false positives. You should act to address known attacks, for example by blocking known malicious IP addresses, and you should decide which alerts require more investigation.
+In the alert details, you should dismiss alerts if no action is required, for example if there are false positives. You should act to address known attacks, for example by blocking known malicious IP addresses, and you should decide which alerts require further investigation.
 
 :::image type="content" source="../media/6-security-center-update-09.png" alt-text="Screenshot of alert status." lightbox="../media/6-security-center-update-09.png":::
 

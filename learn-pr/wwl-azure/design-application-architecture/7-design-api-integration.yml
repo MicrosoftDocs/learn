@@ -2,9 +2,11 @@
 uid: learn.wwl.design-application-architecture.design-api-integration
 title: Design API integration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design API integration
   description: "Design API integration"
-  ms.date: 12/08/2024
+  ms.date: 01/29/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
