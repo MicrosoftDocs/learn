@@ -1,4 +1,4 @@
-﻿As a leader in the healthcare industry, Contoso must operate in a strict regulatory compliance environment. You'll look at some of the key considerations for network communication in such an environment.
+﻿As a leader in the healthcare industry, Contoso must operate in a strict regulatory compliance environment. Take a look at some of the key considerations for network communication in such an environment.
 
 ## Protecting digital assets
 
@@ -6,10 +6,10 @@ You must protect every virtual machine (VM) that gets deployed in Azure and Azur
 
 ## Controlling network traffic
 
-Contoso has multiple Azure Virtual Networks (VNets). Each VNet has multiple subnets. Contoso should have clearly defined rules which allow well-defined network traffic across subnets. Such rules enable Contoso to control how each subnet initiates network traffic. It also gives them the ability to override Azure's default network policy of allowing network flow across subnets.
+Contoso has multiple Azure Virtual Networks (VNets). Each VNet has multiple subnets. Contoso needs clearly defined rules established that permit well-defined network traffic across subnets. Such rules enable Contoso to control how each subnet initiates network traffic. It also gives them the ability to override Azure's default network policy of allowing network flow across subnets.
 
 ## Firewall Internet Route
 
-Looking at the requirements around protection and controlling of network traffic, Contoso chose to use Azure Firewall. It's a stateful, managed firewall as a service. Azure Firewall provides traffic filtering through hybrid network connectivity using ExpressRoute and VPN gateways – which is relevant for Azure VMware Solution private cloud. While Azure Firewall can be used for traffic filtering, it needs direct access to the internet itself. You can easily achieve this by configuring the appropriate rules on the subnet in which Azure Firewall is deployed.
+After Contoso evaluated the requirements around protection and controlling of network traffic, they chose to use Azure Firewall. It's a stateful, managed firewall as a service. Azure Firewall provides traffic filtering through hybrid network connectivity using ExpressRoute and VPN gateways – which is relevant for Azure VMware Solution private cloud. While Azure Firewall can be used for traffic filtering, it needs direct access to the internet itself which is achieved by configuring the appropriate rules on the subnet in which Azure Firewall is deployed.
 
-You'll use instructions in the following unit for technical implementation of Azure Firewall and network traffic controls. This implementation helps to meet key network security requirements discussed in this unit.
+Use instructions in the following unit for technical implementation of Azure Firewall and network traffic controls. This implementation helps to meet key network security requirements discussed in this unit.
