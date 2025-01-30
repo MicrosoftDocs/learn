@@ -2,9 +2,11 @@
 uid: learn.wwl.design-application-architecture.describe-message-event-scenarios
 title: Describe message and event scenarios
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe message and event scenarios
   description: "Describe message and event scenarios"
-  ms.date: 12/08/2024
+  ms.date: 01/29/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
