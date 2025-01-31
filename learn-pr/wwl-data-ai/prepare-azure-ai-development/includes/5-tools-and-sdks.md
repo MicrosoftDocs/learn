@@ -18,7 +18,7 @@ As an alternative to installing and configuring your own development environment
 
 ### GitHub and GitHub Copilot
 
-GitHub is the world's most popular platform for source control and DevOps management, and can be a critical element of any team development effort. Visual Studio and VS Code (including the Azure AI Foundry VS Code container image) both provide native integration with GitHub, and access to GitHub Copilot; and AI assistant that can significantly improve developer productivity and effectiveness.
+GitHub is the world's most popular platform for source control and DevOps management, and can be a critical element of any team development effort. Visual Studio and VS Code (including the Azure AI Foundry VS Code container image) both provide native integration with GitHub, and access to GitHub Copilot; an AI assistant that can significantly improve developer productivity and effectiveness.
 
 ## Programming languages, APIs, and SDKs
 
