@@ -67,3 +67,7 @@ Once a profile is created and its status is Complete, you can:
 1. Publish the profile to a CDN for wider distribution.
 
 This ensures that consent models are deployed consistently across multiple websites and that updates are automatically applied when consent models change.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

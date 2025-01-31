@@ -118,3 +118,7 @@ Consent models retain a version history, allowing you to:
 - Restore or promote a previous version if needed.
 
 After marking a consent model as complete, create a package to **publish and deploy** it on your website.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

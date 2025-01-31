@@ -35,7 +35,7 @@ Assigning the right roles to users in your organization is crucial for effective
 |Privacy Curator |Create consent models<br>Create layouts<br>Generate packages<br>Configure publishing profiles<br>Read reports|
 |Privacy Reader |View consent models<br>View layouts<br>Read reports|
 
-For more information on roles and how to assign them, see [Data governance roles and permissions in Microsoft Purview](/purview/data-governance-roles-permissions).
+For more information on roles and how to assign them, see [Data governance roles and permissions in Microsoft Purview](/purview/data-governance-roles-permissions?azure-portal=true).
 
 ## Understand the consent management overview page
 
@@ -47,4 +47,8 @@ The **Create new** section lets you quickly start a consent model, layout, or pu
 
 ## Create tracker categories
 
-You can automatically link consent models to the tracker categories you create in Priva tracker scanning or in consent management. Set up tracker categories in advance to automatically link them with consent models. For more information on creating a tracker category, see [Create tracker categories and manage trackers in tracker scanning (preview)](/privacy/priva/tracker-scanning-tracker-categories).
+You can automatically link consent models to the tracker categories you create in Priva tracker scanning or in consent management. Set up tracker categories in advance to automatically link them with consent models. For more information on creating a tracker category, see [Create tracker categories and manage trackers in tracker scanning (preview)](/privacy/priva/tracker-scanning-tracker-categories?azure-portal=true).
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

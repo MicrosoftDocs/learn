@@ -8,6 +8,10 @@ Microsoft Priva Consent Management (preview) offers a flexible, regulation-indep
 
 Once your consent models are ready, you can publish them globally using a centralized process. Deployment options include manually downloading packages, connecting to Azure Storage, or using content delivery networks (CDNs) such as Microsoft Azure, Amazon Web Services, and Cloudflare.
 
-Consent Management integrates with [**Microsoft Priva Tracker Scanning (Preview)**](/privacy/priva/tracker-scanning) to use website scan results for enabling or disabling tracker categories. This integration ensures user preferences are respected in real time.
+Consent Management integrates with [**Microsoft Priva Tracker Scanning (Preview)**](/privacy/priva/tracker-scanning?azure-portal=true) to use website scan results for enabling or disabling tracker categories. This integration ensures user preferences are respected in real time.
 
 By streamlining consent management, Microsoft Priva helps organizations manage personal data effectively while meeting data privacy requirements. Next, learn how to set up consent models, configure tracker categories, and deploy them efficiently in your organization.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

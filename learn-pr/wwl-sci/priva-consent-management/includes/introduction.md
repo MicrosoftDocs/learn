@@ -12,11 +12,11 @@ You need a solution to simplify consent management, ensure compliance, and build
 
 By the end of this module, you'll be able to:
 
-- Explain the purpose and benefits of Microsoft Priva Consent Management.
-- Configure Consent Management and set up prerequisites.
-- Manage and honor user consent preferences.
-- Monitor consent activities to meet privacy commitments.
-- Use consent data to improve transparency and build trust.
+- Describe the purpose and benefits of Microsoft Priva Consent Management.
+- Set up consent models and configure prerequisites like tracker categories.
+- Create and apply publishing profiles to manage consent models.
+- Deploy consent models across websites using consent model packages.
+- Ensure consent models remain accurate and aligned with privacy requirements.
 
 ## Legal disclaimer
 
