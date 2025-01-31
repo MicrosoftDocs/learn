@@ -1,6 +1,6 @@
 Your company has several critical virtual machine (VM) workloads running on Azure. As the lead solution architect, you're asked to ensure that the company can recover these VMs if there's data loss or corruption. You're asked to use the built-in capabilities of Azure Backup to help protect these VMs.
 
-Azure Backup is a service that allows you to back up Azure virtual machines, on-premises servers, Azure file shares, and SQL Server or SAP High-performance Analytic Appliance (HANNA) running on Azure VMs, and other application workloads.
+Azure Backup is a service that allows you to back up Azure virtual machines, on-premises servers, Azure file shares, and SQL Server or SAP HANA (High-performance Analytic Appliance running on Azure VMs, and other application workloads.
 
 In this module, you learn about Azure Backup and you see how you can use the Azure portal to back up and restore a VM.
 
@@ -17,4 +17,4 @@ In this module, you:
 - Basic knowledge of disk storage for virtual machines.
 
 > [!NOTE]
-> For this module, you need use your own subscription to complete the optional exercises. A trial subscription or a subscription that you already have access to will work for these exercises.
+> For this module, you need use your own subscription to complete the optional exercises. A trial subscription or a subscription that you already have access to works for these exercises.
