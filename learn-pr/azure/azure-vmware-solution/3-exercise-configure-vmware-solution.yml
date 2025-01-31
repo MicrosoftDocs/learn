@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Knowledge Check
   questions:
-    - content: "Which of the following option is suitable when you need a fixed public IP for outbound internet traffic?"
+    - content: "Which of the following options is suitable when you need a fixed public IP for outbound internet traffic?"
       choices:
         - content: "Managed SNAT."
           isCorrect: false
