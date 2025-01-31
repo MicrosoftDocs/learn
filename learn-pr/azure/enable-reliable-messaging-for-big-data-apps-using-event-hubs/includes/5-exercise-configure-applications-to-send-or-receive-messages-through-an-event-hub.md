@@ -75,7 +75,7 @@ In this exercise, you use Visual Studio Code (VS Code) to modify the SimpleSend 
 
 1. Launch VS Code. 
 1. Select **File** -> **Open Folder**, and select the **SimpleSend** folder under c:/users/USERID/azure-event-hubs/samples/java/basic. 
-1. In the Code Explorer in the left pane, double-click **SimpleSend.java** to open it in the editor. 
+1. In the Code Explorer in the left pane, expand **src**, and then double-click **SimpleSend.java** to open it in the editor. 
 1. In the editor, locate and replace the following strings under `ConnectionStringBuilder``:
 
     - `<EVENT HUBS NAMESPACE - CONNECTION STRING>` with the connection string to your Event Hubs namespace. 
@@ -115,7 +115,7 @@ In this procedure, you use the `EventProcessorClient` method. You edit the Event
 
 1. Launch another instance of the VS Code. 
 1. Select **File** -> **Open Folder**, and select the **EventProcessorSample** folder under c:/users/USERID/azure-event-hubs/samples/java/basic. 
-1. In the Code Explorer in the left pane, double-click **EventProcessorSample.java** to open it in the editor. 
+1. In the Code Explorer in the left pane, expand **src**, and then double-click **EventProcessorSample.java** to open it in the editor. 
 1. In the editor, locate and replace the following strings in the editor:
 
     - `<EVENT HUBS NAMESPACE - CONNECTION STRING>` - connection string to the Event Hubs namespace.
@@ -150,13 +150,19 @@ In this procedure, you use the `EventProcessorClient` method. You edit the Event
     cd ~/azure-event-hubs/samples/Java/Basic/EventProcessorSample
     java -jar ./target/eventprocessorsample-1.0.0-jar-with-dependencies.jar
     ```
+1. You should see the following output from the receiver app:
+
+    ```bash
+    Starting event processor
+    Press enter to stop.
+    ```    
 1. Switch to the VS Code window that has the sending application (SimpleSend) code open. In the integrated terminal, run the Java application from the command line by running the following `java` command, and specifying a .jar package. 
 
     ```bash
     cd ~/azure-event-hubs/samples/Java/Basic/SimpleSend
     java -jar ./target/simplesend-1.0.0-jar-with-dependencies.jar
     ```
-1. When you see **Send Complete...**, <kbd>Enter</kbd> to stop the application.
+1. When you see the **Send Complete...** message, <kbd>Enter</kbd> or <kbd>CTRL+C</kbd> to stop the application.
 
     ```output
     jar-with-dependencies.jar
@@ -169,31 +175,13 @@ In this procedure, you use the `EventProcessorClient` method. You edit the Event
 
     ```output
     ...
-    SAMPLE: Partition 0 checkpointing at 1064,19
-    SAMPLE (3,1120,20): "Message 80"
-    SAMPLE (3,1176,21): "Message 84"
-    SAMPLE (3,1232,22): "Message 88"
-    SAMPLE (3,1288,23): "Message 92"
-    SAMPLE (3,1344,24): "Message 96"
-    SAMPLE: Partition 3 checkpointing at 1344,24
-    SAMPLE (2,1120,20): "Message 83"
-    SAMPLE (2,1176,21): "Message 87"
-    SAMPLE (2,1232,22): "Message 91"
-    SAMPLE (2,1288,23): "Message 95"
-    SAMPLE (2,1344,24): "Message 99"
-    SAMPLE: Partition 2 checkpointing at 1344,24
-    SAMPLE: Partition 1 batch size was 3 for host mystorageacct2018-46d60a17-7060-4b53-b0e0-cca70c970a47
-    SAMPLE (0,1120,20): "Message 81"
-    SAMPLE (0,1176,21): "Message 85"
-    SAMPLE: Partition 0 batch size was 10 for host mystorageacct2018-46d60a17-7060-4b53-b0e0-cca70c970a47
-    SAMPLE: Partition 0 got event batch
-    SAMPLE (0,1232,22): "Message 89"
-    SAMPLE (0,1288,23): "Message 93"
-    SAMPLE (0,1344,24): "Message 97"
-    SAMPLE: Partition 0 checkpointing at 1344,24
-    SAMPLE: Partition 3 batch size was 8 for host mystorageacct2018-46d60a17-7060-4b53-b0e0-cca70c970a47
-    SAMPLE: Partition 2 batch size was 9 for host mystorageacct2018-46d60a17-7060-4b53-b0e0-cca70c970a47
-    SAMPLE: Partition 0 batch size was 3 for host mystorageacct2018-46d60a17-7060-4b53-b0e0-cca70c970a47
+    Starting event processor
+    Press enter to stop.
+    Processing event from partition 0 with sequence number 1 with body: Message 0
+    Processing event from partition 0 with sequence number 2 with body: Message 1
+    Processing event from partition 0 with sequence number 3 with body: Message 2
+    Processing event from partition 0 with sequence number 4 with body: Message 3
+    Processing event from partition 0 with sequence number 5 with body: Message 4
     ```
 
 ## Summary
