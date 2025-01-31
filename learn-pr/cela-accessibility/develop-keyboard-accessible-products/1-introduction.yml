@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.develop-keyboard-accessible-products.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This unit is a part of the \"Design keyboard accessible products\" module.
+  ms.date: 01/31/2025
+  author: bmackinney
+  ms.author: kichand
+  ms.topic: unit
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/1-introduction.md)]

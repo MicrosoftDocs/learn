@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.cela-accessibility.develop-keyboard-accessible-products
+metadata:
+  ms.author: kichand
+  author: bmackinney
+  ms.date: 01/31/2025
+  title: Develop keyboard-accessible products
+  description: Learn how to develop keyboard-accessible products with our comprehensive module. This course covers essential guidelines, design considerations, implementation strategies, and testing methods to ensure your products are accessible to all users, including those with disabilities.
+  ms.topic: module
+  moduleType: standard
+title: Develop keyboard-accessible products
+summary: |
+  Keyboard accessibility is crucial because it ensures that users who rely on keyboards, including those with disabilities, can navigate and interact with websites and apps effectively. This broadens the user experience for a wider audience and ensures compliance with legal accessibility requirements.
+abstract: |
+  In this module, you learn the importance of keyboard accessibility, cover key principles and requirements. You recall essential considerations, apply practical tips for ensuring keyboard accessibility, and identify tools and tips for testing. 
+  By the end of this module, you’ll be able to:
+  -	Explain the importance of keyboard accessibility
+  -	Recognize the principles and requirements for supporting keyboard accessibility, including operability, focus order, visual indicators, and contrast standards
+  -	Describe keyboard navigation conventions and the functions of key combinations in web and app contexts
+  -	Identify tips for ensuring keyboard accessibility during the development phase
+prerequisites: |
+  -	Basic knowledge of accessibility principles
+  -	Basic understanding of assistive technology
+
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- designer
+products:
+- azure
+units:
+- learn.cela-accessibility.develop-keyboard-accessible-products.introduction
+- learn.cela-accessibility.develop-keyboard-accessible-products.review-accessibility-guidelines
+- learn.cela-accessibility.develop-keyboard-accessible-products.review-design-considerations
+- learn.cela-accessibility.develop-keyboard-accessible-products.design-for-keyboard-accessibility
+- learn.cela-accessibility.develop-keyboard-accessible-products.implement-keyboard-accessibility
+- learn.cela-accessibility.develop-keyboard-accessible-products.test-keyboard-accessibility
+- learn.cela-accessibility.develop-keyboard-accessible-products.knowledge-check
+- learn.cela-accessibility.develop-keyboard-accessible-products.summary
+badge:
+  uid: learn.cela-accessibility.develop-keyboard-accessible-products-badge

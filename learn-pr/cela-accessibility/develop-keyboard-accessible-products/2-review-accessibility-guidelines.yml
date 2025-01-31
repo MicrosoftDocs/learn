@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.develop-keyboard-accessible-products.review-accessibility-guidelines
+title: Review accessibility guidelines
+metadata:
+  title: Review accessibility guidelines
+  description: This unit is a part of the \"Design keyboard accessible products\" module.
+  ms.date: 01/31/2025
+  author: bmackinney
+  ms.author: kichand
+  ms.topic: unit
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-review-accessibility-guidelines.md)]
