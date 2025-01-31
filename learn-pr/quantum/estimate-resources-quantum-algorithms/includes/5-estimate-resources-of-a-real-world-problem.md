@@ -449,14 +449,14 @@ params.items[5].qec_scheme.name = QECScheme.FLOQUET_CODE
 qsharp.estimate("RunProgram()", params=params).summary_data_frame(labels=labels)
 ```
 
-|Qubit model|Logical qubits|	Logical depth|	T states|	Code distance|	T factories|	T factory fraction|	Physical qubits|	rQOPS	|Physical runtime|
-|----|----|----|----|----|----|----|----|----|----|
-|Gate-based µs, 10⁻³|	223	3.64M|	4.70M|	17|	13	|40.54 %	|216.77k|	21.86k|	10 hours|
-|Gate-based µs, 10⁻⁴	|223	|3.64M	|4.70M|	9|	14|	43.17 %|	63.57k|	41.30k|	5 hours|
-|Gate-based ns, 10⁻³|	223	3.64M|	4.70M|	17|	16|	69.08 %	|416.89k|	32.79M|	25 secs|
-|Gate-based ns, 10⁻⁴|	223	3.64M	|4.70M|	9|	14|	43.17 %|	63.57k|	61.94M|	13 secs|
-|Majorana ns, 10⁻⁴|	223	3.64M|	4.70M|	9|	19|	82.75 %	|501.48k|	82.59M	|10 secs|
-|Majorana ns, 10⁻⁶|	223	3.64M|	4.70M|	5|	13|	31.47 %|	42.96k|	148.67M	|5 secs|
+|Qubit model|Logical qubits|	Logical depth|	T states|	Code distance|	T factories|	T factory fraction|	Physical qubits	|Physical runtime|
+|----|----|----|----|----|----|----|----|----|
+|Gate-based µs, 10⁻³| 223 |3.64M|	4.70M|	17|	13	|40.54 %	|216.77k|		10 hours|
+|Gate-based µs, 10⁻⁴	|223	|3.64M	|4.70M|	9|	14|	43.17 %|	63.57k|	5 hours|
+|Gate-based ns, 10⁻³|	223|	3.64M|	4.70M|	17|	16|	69.08 %	|416.89k|	25 secs|
+|Gate-based ns, 10⁻⁴|	223|	3.64M	|4.70M|	9|	14|	43.17 %|	63.57k|	13 secs|
+|Majorana ns, 10⁻⁴|	223|3.64M|	4.70M|	9|	19|	82.75 %	|501.48k	|10 secs|
+|Majorana ns, 10⁻⁶|	223|3.64M|	4.70M|	5|	13|	31.47 %|	42.96k	|5 secs|
 
 ## Extract resource estimates from logical resource counts
 
