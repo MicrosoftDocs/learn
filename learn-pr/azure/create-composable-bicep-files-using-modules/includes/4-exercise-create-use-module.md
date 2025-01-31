@@ -101,6 +101,14 @@ Here, you add the _app_ module to your Bicep template as a starting point.
 
 1. Save the changes to the file.
 
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your main.bicep file should look like this example:
+
+:::code language="bicep" source="code/4-template-2.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
+
 ## Deploy the Bicep template to Azure
 
 ::: zone pivot="cli"
