@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-azure-ai-development.exercise-explore-ai-foundry
+title: Exercise - Explore the Azure AI Foundry portal
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Explore the Azure AI Foundry portal
+  description: Explore the Azure AI Foundry portal for AI development on the Azure cloud platform.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 01/31/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-explore-ai-foundry.md)]
+

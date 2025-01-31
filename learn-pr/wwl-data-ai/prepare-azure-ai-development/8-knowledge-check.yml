@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-azure-ai-development.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: Test your knowledge.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 01/31/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which Azure resource provides language and vision services from a single endpoint?"
+    choices:
+    - content: "Azure AI Language"
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Language provides only language services."
+    - content: "Azure AI Vision"
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Vision provides only vision services."
+    - content: "Azure AI Services"
+      isCorrect: true
+      explanation: "Correct. Azure AI Services provides multiple services from a single endpoint."
+  - content: "How should you provide access to resources for developers who will work on multiple AI projects?"
+    choices:
+    - content: "Create resource connections in an Azure AI Foundry hub."
+      isCorrect: true
+      explanation: "Correct. Creating resource connections in a hub means they can be used from all projects created in that hub."
+    - content: "Create resource connections in each Azure AI Foundry project."
+      isCorrect: false
+      explanation: "Incorrect. Creating project-level connections isn't the most efficient way to manage resource access across projects."
+    - content: "Assign each developer direct access to all of the resources."
+      isCorrect: false
+      explanation: "Incorrect. Giving each developer direct access makes it difficult to manage ongoing access permissions."
+  - content: "Which SDK enables you to connect to shared resources in a hub?"
+    choices:
+    - content: "Azure AI Services SDK"
+      isCorrect: false
+      explanation: "Incorrect. Azure AI services often have their own SDKs, and don't rely on connections in a hub."
+    - content: "Semantic Kernel SDK"
+      isCorrect: false
+      explanation: "Incorrect. The Semantic Kernel SDK is used to build generative AI apps and doesn't rely on connections in a hub."
+    - content: "Azure AI Foundry SDK"
+      isCorrect: true
+      explanation: "Correct. The Azure AI Foundry SDK provides the AI Projects client library, which you can use to access connections in a project or hub."
+
