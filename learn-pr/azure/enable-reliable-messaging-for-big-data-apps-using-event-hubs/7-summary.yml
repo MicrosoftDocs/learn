@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.8-summary
+uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.7-summary
 title: Summary
 metadata:
   adobe-target: true
@@ -12,7 +12,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/7-summary.md)]
 quiz:
   title: Check your knowledge
   questions:
