@@ -4,7 +4,7 @@ You've learned how to:
 - Design centralized logging and auditing
 - Design Security Information and Event Management (SIEM) solutions
 - Design a solution for detection and response that includes Extended Detection and Response (XDR)
-- Design a solution for security orchestration, automation and response (SOAR)
+- Design a solution for security orchestration, automation, and response (SOAR)
 - Design security workflows
 - Design and evaluate threat detection with the MITRE ATT&CK framework
 
@@ -21,6 +21,9 @@ You've learned how to:
 - [Understand threat intelligence in Microsoft Sentinel | Microsoft Learn](/azure/sentinel/understand-threat-intelligence?source=recommendations)
 - [Hunting capabilities in Microsoft Sentinel | Microsoft Learn](/azure/sentinel/hunting)
 - [View MITRE coverage for your organization from Microsoft Sentinel | Microsoft Learn](/azure/sentinel/mitre-coverage)
+- [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design)
+- [Designing and configuring data access in a workspace](manage-access.md).
+- [Sample workspace architectures for Microsoft Sentinel](/azure/sentinel/sample-workspace-designs).
 
 ## Learn more with reference architectures
 
