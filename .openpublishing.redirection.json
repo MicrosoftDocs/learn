@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/enable-reliable-messaging-for-big-data-apps-using-event-hubs/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/enable-reliable-messaging-for-big-data-apps-using-event-hubs/7-exercise-evaluate-the-performance-of-the-deployed-event-hub-using-the-azure-portal.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/enable-reliable-messaging-for-big-data-apps-using-event-hubs/7-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/advocates/send-crop-weather-alerts/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/azure-functions/functions-bindings-twilio",
       "redirect_document_id": false
