@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classes-objects-c-sharp.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/31/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 4
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a class?"
+    choices:
+    - content: "An object stored in memory."
+      isCorrect: false
+      explanation: "Incorrect. While a class is the blueprint for an object that is stored in memory, a class itself is not stored in memory."
+    - content: "Something for which you receive a letter grade."
+      isCorrect: false
+      explanation: "Incorrect. This is not the kind of class being discussed here."
+    - content: "A blueprint that you can use to create an object."
+      isCorrect: true
+      explanation: "Correct! A class defines what an object contains and what it can do."
+  - content: "What is an object?"
+    choices:
+    - content: "It's a term used to describe an entity or thing."
+      isCorrect: false
+      explanation: "Incorrect. While the term object can be used in this way, in computer programming the term refers to the instantiation of a class."
+    - content: "A data record that represents a single entity."
+      isCorrect: false
+      explanation: "Incorrect. An object is not thought of as a data record."
+    - content: "An object is an in-memory instance of a class."
+      isCorrect: true
+      explanation: "Correct! An object in an in-memory \"instance\" of a class."
+  - content: "What is a constructor?"
+    choices:
+    - content: "A 64-bit native data variable."
+      isCorrect: false
+      explanation: "Incorrect. While you can pass variables into a constructor, a constructor itself is not a data variable."
+    - content: "Tools that can be used to build related objects."
+      isCorrect: false
+      explanation: "Incorrect. Constructors are not tools to build related object."
+    - content: "Constructors are methods used to initialize your object with any initial values required by your object."
+      isCorrect: true
+      explanation: "Correct! The primary job of a constructor is to initialize your object with any values it might require."
+  - content: "What is the role of a constructor in a class?"
+    choices:
+    - content: "It is used to release any resources which must be handled appropriately before the object is removed from memory."
+      isCorrect: false
+      explanation: "Incorrect. This is the role of a finalizer, not a constructor."
+    - content: "It provides notifications about occurrences, such as button clicks or the successful completion of a method, to other objects."
+      isCorrect: false
+      explanation: "Incorrect. This is the role of events, not a constructor."
+    - content: "It is called when the object is first created and is often used to initialize the data of an object."
+      isCorrect: true
+      explanation: "Correct. A constructor initializes the data of an object when it is first created."

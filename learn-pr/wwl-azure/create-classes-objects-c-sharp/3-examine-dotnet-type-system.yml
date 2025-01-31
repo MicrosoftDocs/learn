@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classes-objects-c-sharp.examine-dotnet-type-system
+title: Examine the .NET type system
+metadata:
+  title: Examine the .NET type system
+  description: "Examine the .NET type system"
+  ms.date: 01/31/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-examine-dotnet-type-system.md)]
