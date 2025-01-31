@@ -35,7 +35,7 @@ If you're developing an action for other people to use, whether it's public or p
 
 ### Good practices for release and version management
 
-A good release-management strategy should include versioning recommendations. Users should not be referencing an action's default branch with the action. This is because the default branch that's likely to contain the latest code (which might or might not be stable) could result in your workflow breaking. Instead, we recommend that users specify a major version when using the action, and to only direct them to a more specific version if they encounter issues. They can do this by configuring their GitHub Actions workflow to target a tag, a commit's SHA, or a specific branch named for a release. Let's take a closer look at these release options.
+A good release-management strategy should include versioning recommendations. Users shouldn't be referencing an action's default branch with the action. This is because the default branch that's likely to contain the latest code (which might or might not be stable) could result in your workflow breaking. Instead, we recommend that users specify a major version when using the action, and to only direct them to a more specific version if they encounter issues. They can do this by configuring their GitHub Actions workflow to target a tag, a commit's SHA, or a specific branch named for a release. Let's take a closer look at these release options.
 
 #### Tags
 
@@ -58,7 +58,7 @@ steps:
 
 #### Use a commit's SHA
 
-Tags are useful and widely used, but one downside to using tags is that they can be deleted or moved. With Git, each commit receives a calculated SHA value, which is unique and cannot be modified. Using a commit SHA for versioning will give you the most reliable and secure way to version and use an action. However, often in Git you can abbreviate the SHA hash to the first several characters, and Git will recognize the reference. If you're using the commit's SHA for release management, you need to use the full SHA value and not the abbreviated value.
+Tags are useful and widely used, but one downside to using tags is that they can be deleted or moved. With Git, each commit receives a calculated SHA value, which is unique and can't be modified. Using a commit SHA for versioning will give you the most reliable and secure way to version and use an action. However, often in Git you can abbreviate the SHA hash to the first several characters, and Git will recognize the reference. If you're using the commit's SHA for release management, you need to use the full SHA value and not the abbreviated value.
 
 ```yml
 steps:

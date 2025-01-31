@@ -22,6 +22,6 @@ This module assumes you have basic familiarity with GitHub Actions and workflows
 - The ability to navigate and edit files in GitHub
   - For more information about GitHub, see [Introduction to GitHub](https://github.com/skills/introduction-to-github).
 - Basic familiarity with GitHub Actions and workflows
-  - If you aren't familiar with workflows, jobs and steps, check out the [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/) module.
+  - If you aren't familiar with workflows, jobs, and steps, check out the [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/) module.
 - Basic familiarity with continuous integration using GitHub Actions and workflows
   - If you're unfamiliar with continuous integration using GitHub Actions and workflows, check out [Build continuous integration (CI) workflows by using GitHub Actions](/training/modules/github-actions-ci/).
