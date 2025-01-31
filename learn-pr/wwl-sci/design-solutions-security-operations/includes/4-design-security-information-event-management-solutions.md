@@ -10,20 +10,20 @@ Your design should always start with a single workspace to reduce the complexity
 Designing a workspace configuration includes evaluation of multiple criteria. But some of the criteria might be in conflict. For example, you might be able to reduce egress charges by creating a separate workspace in each Azure region. Consolidating into a single workspace might allow you to reduce charges even more with a commitment tier. Evaluate each of the criteria independently. Consider your requirements and priorities to determine which design is most effective for your environment.
 
 ## Design criteria
-The following table presents criteria to consider when you design your workspace architecture. The links provided in the table describe the criteria.
+The following table presents criteria to consider when you design your workspace architecture. 
 
 | Criteria | Description |
 |:---|:---|
-| [Operational and security data](#operational-and-security-data) | You may choose to combine operational data from Azure Monitor in the same workspace as security data from Microsoft Sentinel or separate each into their own workspace. Combining them gives you better visibility across all your data, while your security standards might require separating them so that your security team has a dedicated workspace. You may also have cost implications to each strategy. |
-| [Azure tenants](#azure-tenants) | If you have multiple Azure tenants, you'll usually create a workspace in each one. Several data sources can only send monitoring data to a workspace in the same Azure tenant. |
-| [Azure regions](#azure-regions) | Each workspace resides in a particular Azure region. You might have regulatory or compliance requirements to store data in specific locations. |
-| [Data ownership](#data-ownership) | You might choose to create separate workspaces to define data ownership. For example, you might create workspaces by subsidiaries or affiliated companies. | 
-| [Split billing](#split-billing) | By placing workspaces in separate subscriptions, they can be billed to different parties. |
-| [Data retention](#data-retention) | You can set different retention settings for each workspace and each table in a workspace. You need a separate workspace if you require different retention settings for different resources that send data to the same tables. |
-| [Commitment tiers](#commitment-tiers) | Commitment tiers allow you to reduce your ingestion cost by committing to a minimum amount of daily data in a single workspace. |
-| [Legacy agent limitations](#legacy-agent-limitations) | Legacy virtual machine agents have limitations on the number of workspaces they can connect to. |
-| [Data access control](#data-access-control) | Configure access to the workspace and to different tables and data from different resources. |
-|[Resilience](#resilience)| To ensure that data in your workspace is available in the event of a region failure, you can ingest data into multiple workspaces in different regions.|
+| [Operational and security data](/azure/azure-monitor/logs/workspace-design#operational-and-security-data&preserve-view=true) | You may choose to combine operational data from Azure Monitor in the same workspace as security data from Microsoft Sentinel or separate each into their own workspace. Combining them gives you better visibility across all your data, while your security standards might require separating them so that your security team has a dedicated workspace. You may also have cost implications to each strategy. |
+| [Azure tenants](/azure/azure-monitor/logs/workspace-design#azure-tenants&preserve-view=true) | If you have multiple Azure tenants, you'll usually create a workspace in each one. Several data sources can only send monitoring data to a workspace in the same Azure tenant. |
+| [Azure regions](/azure/azure-monitor/logs/workspace-design#azure-regions&preserve-view=true) | Each workspace resides in a particular Azure region. You might have regulatory or compliance requirements to store data in specific locations. |
+| [Data ownership](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/workspace-design#data-ownership&preserve-view=true) | You might choose to create separate workspaces to define data ownership. For example, you might create workspaces by subsidiaries or affiliated companies. |
+| [Split billing](/azure/azure-monitor/logs/workspace-design#split-billing&preserve-view=true) | By placing workspaces in separate subscriptions, they can be billed to different parties. |
+| [Data retention](/azure/azure-monitor/logs/workspace-design#data-retention&preserve-view=true) | You can set different retention settings for each workspace and each table in a workspace. You need a separate workspace if you require different retention settings for different resources that send data to the same tables. |
+| [Commitment tiers](azure/azure-monitor/logs/workspace-design#commitment-tiers&preserve-view=true) | Commitment tiers allow you to reduce your ingestion cost by committing to a minimum amount of daily data in a single workspace. |
+| [Legacy agent limitations](azure/azure-monitor/logs/workspace-design#legacy-agent-limitations&preserve-view=true) | Legacy virtual machine agents have limitations on the number of workspaces they can connect to. |
+| [Data access control](azure/azure-monitor/logs/workspace-design#data-access-control&preserve-view=true) | Configure access to the workspace and to different tables and data from different resources. |
+|[Resilience](azure/azure-monitor/logs/workspace-design#resilience&preserve-view=true)| To ensure that data in your workspace is available in the event of a region failure, you can ingest data into multiple workspaces in different regions.|
 
 ## Work with multiple workspaces
 Many designs include multiple workspaces. For example, a central security operations team might use its own Microsoft Sentinel workspaces to manage centralized artifacts like analytics rules or workbooks.
@@ -58,9 +58,9 @@ Advantages to this strategy:
 
 Disadvantages to this strategy:
 
-- Running a query over a large number of workspaces is slow and can't scale above 100 workspaces. This means that you can create a central visualization and data analytics but it is slow if there are more than a few dozen workspaces. This situation is less acute if all workspaces are colocated on the same [dedicated cluster](logs-dedicated-clusters.md). See [here](cross-workspace-query.md) for more details on running queries across workspaces.
+- Running a query over a large number of workspaces is slow and can't scale above 100 workspaces. This means that you can create a central visualization and data analytics but it is slow if there are more than a few dozen workspaces. This situation is less acute if all workspaces are colocated on the same [dedicated cluster](/azure/azure-monitor/logs/logs-dedicated-clusters). See [here](/azure/azure-monitor/logs/cross-workspace-query) for more details on running queries across workspaces.
 - If customers aren't onboarded for Azure delegated resource management, service provider administrators must be provisioned in the customer directory. This requirement makes it more difficult for the service provider to manage many customer tenants at once.
-- When running a query on a workspace, the workspace admins might have visibility to the full text of the query via [query audit](query-audit.md).
+- When running a query on a workspace, the workspace admins might have visibility to the full text of the query via [query audit](/azure/azure-monitor/logs/query-audit).
 
 ### Centralized
 A single workspace is created in the service provider's subscription. This option can collect data from customer virtual machines and Azure PaaS services based on diagnostics settings. Agents installed on the virtual machines and PaaS services can be configured to send their logs to this central workspace.
@@ -83,8 +83,7 @@ In a hybrid model, each tenant has its own workspace. A mechanism is used to pul
 There are several options to implement logs in a central location:
 
 - **Central workspace**: The service provider creates a workspace in its tenant and pulls data from the various workspaces using:
-    - A script that uses the [Query API](api/overview.md) with the [logs ingestion API](logs-ingestion-api-overview.md) to send the data from the tenant workspaces to the central workspace.
+    - A script that uses the [Query API](/azure/azure-monitor/logs/api/overview) with the [logs ingestion API](/azure/azure-monitor/logs/logs-ingestion-api-overview) to send the data from the tenant workspaces to the central workspace.
     - [Azure Logic Apps](/azure/logic-apps/logic-apps-overview) to copy data to the central workspace.
-    - [Data export](logs-data-export.md) from the source workspace and re-ingestion to the central workspace. You can also create [summary rules](summary-rules.md) to export an aggregation of key data from the original workspaces into the central workspace.
-- **Power BI**: The tenant workspaces export data to Power BI by using the integration between the [Log Analytics workspace and Power BI](log-powerbi.md).
-
+    - [Data export](/azure/azure-monitor/logs/logs-data-export) from the source workspace and re-ingestion to the central workspace. You can also create [summary rules](/azure/azure-monitor/logs/summary-rules) to export an aggregation of key data from the original workspaces into the central workspace.
+- **Power BI**: The tenant workspaces export data to Power BI by using the integration between the [Log Analytics workspace and Power BI](/azure/azure-monitor/logs/log-powerbi).

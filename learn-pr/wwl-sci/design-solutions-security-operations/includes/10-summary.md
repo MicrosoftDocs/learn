@@ -15,14 +15,14 @@ You've learned how to:
 - [Workspace architecture best practices for Microsoft Sentinel | Microsoft Learn](/azure/sentinel/best-practices-workspace-architecture)
 - [Microsoft cloud security benchmark - Logging and threat detection | Microsoft Learn](/security/benchmark/azure/mcsb-logging-threat-detection)
 - [Azure Monitor overview](/azure/azure-monitor/overview)
-- [Evaluate and pilot Microsoft Defender XDR, an XDR solution | Microsoft Learn](/microsoft-365/security/defender/eval-overview?view=o365-worldwide)
+- [Evaluate and pilot Microsoft Defender XDR, an XDR solution | Microsoft Learn](/microsoft-365/security/defender/eval-overview)
 - [Introduction to automation in Microsoft Sentinel | Microsoft Learn](/azure/sentinel/automation)
 - [Microsoft cloud security benchmark - Incident Response | Microsoft Learn](/security/benchmark/azure/mcsb-incident-response)
 - [Understand threat intelligence in Microsoft Sentinel | Microsoft Learn](/azure/sentinel/understand-threat-intelligence?source=recommendations)
 - [Hunting capabilities in Microsoft Sentinel | Microsoft Learn](/azure/sentinel/hunting)
 - [View MITRE coverage for your organization from Microsoft Sentinel | Microsoft Learn](/azure/sentinel/mitre-coverage)
 - [Design a Log Analytics workspace architecture](/azure/azure-monitor/logs/workspace-design)
-- [Designing and configuring data access in a workspace](manage-access.md).
+- [Designing and configuring data access in a workspace](/azure/azure-monitor/logs/manage-access).
 - [Sample workspace architectures for Microsoft Sentinel](/azure/sentinel/sample-workspace-designs).
 
 ## Learn more with reference architectures
