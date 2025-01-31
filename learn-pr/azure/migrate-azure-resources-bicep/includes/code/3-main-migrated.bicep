@@ -4,7 +4,7 @@ param networkInterfaces_toytruckserver154_name string = 'toytruckserver154'
 param publicIPAddresses_ToyTruckServer_ip_name string = 'ToyTruckServer-ip'
 param networkSecurityGroups_ToyTruckServer_nsg_name string = 'ToyTruckServer-nsg'
 
-resource networkSecurityGroups_ToyTruckServer_nsg_name_resource 'Microsoft.Network/networkSecurityGroups@2022-05-01' = {
+resource networkSecurityGroups_ToyTruckServer_nsg_name_resource 'Microsoft.Network/networkSecurityGroups@2024-05-01' = {
   name: networkSecurityGroups_ToyTruckServer_nsg_name
   location: 'westus3'
   properties: {
@@ -12,7 +12,7 @@ resource networkSecurityGroups_ToyTruckServer_nsg_name_resource 'Microsoft.Netwo
   }
 }
 
-resource publicIPAddresses_ToyTruckServer_ip_name_resource 'Microsoft.Network/publicIPAddresses@2022-05-01' = {
+resource publicIPAddresses_ToyTruckServer_ip_name_resource 'Microsoft.Network/publicIPAddresses@2024-05-01' = {
   name: publicIPAddresses_ToyTruckServer_ip_name
   location: 'westus3'
   sku: {
@@ -28,7 +28,7 @@ resource publicIPAddresses_ToyTruckServer_ip_name_resource 'Microsoft.Network/pu
   }
 }
 
-resource virtualMachines_ToyTruckServer_name_resource 'Microsoft.Compute/virtualMachines@2022-08-01' = {
+resource virtualMachines_ToyTruckServer_name_resource 'Microsoft.Compute/virtualMachines@2024-07-01' = {
   name: virtualMachines_ToyTruckServer_name
   location: 'westus3'
   properties: {
@@ -90,7 +90,7 @@ resource virtualMachines_ToyTruckServer_name_resource 'Microsoft.Compute/virtual
   }
 }
 
-resource virtualNetworks_ToyTruck_vnet_name_resource 'Microsoft.Network/virtualNetworks@2022-05-01' = {
+resource virtualNetworks_ToyTruck_vnet_name_resource 'Microsoft.Network/virtualNetworks@2024-05-01' = {
   name: virtualNetworks_ToyTruck_vnet_name
   location: 'westus3'
   properties: {
@@ -117,7 +117,7 @@ resource virtualNetworks_ToyTruck_vnet_name_resource 'Microsoft.Network/virtualN
   }
 }
 
-resource virtualNetworks_ToyTruck_vnet_name_default 'Microsoft.Network/virtualNetworks/subnets@2022-05-01' = {
+resource virtualNetworks_ToyTruck_vnet_name_default 'Microsoft.Network/virtualNetworks/subnets@2024-05-01' = {
   name: '${virtualNetworks_ToyTruck_vnet_name}/default'
   properties: {
     addressPrefix: '10.0.0.0/24'
@@ -130,7 +130,7 @@ resource virtualNetworks_ToyTruck_vnet_name_default 'Microsoft.Network/virtualNe
   ]
 }
 
-resource networkInterfaces_toytruckserver154_name_resource 'Microsoft.Network/networkInterfaces@2022-05-01' = {
+resource networkInterfaces_toytruckserver154_name_resource 'Microsoft.Network/networkInterfaces@2024-05-01' = {
   name: networkInterfaces_toytruckserver154_name
   location: 'westus3'
   kind: 'Regular'
