@@ -18,7 +18,7 @@ When you create an assessment, you build a questionnaire that respondents comple
 
 ### Before you create an assessment
 
-Consider the following:
+Consider:
 
 - **Assessment name and purpose**: What data use case does this assessment cover?
 - **Reviewers and approvers**: Who will review submitted responses?
@@ -28,7 +28,7 @@ Consider the following:
 
 1. In **Privacy Assessments**, navigate to **Assessment management**.
 1. On the **Assessments** tab, select **New assessment**, then choose:
-   - **From template**: Use a predefined privacy impact or data use inventory template.
+   - **From template**: Use a predefined privacy assessment or data use inventory template.
    - **Custom**: Build a custom questionnaire.
 1. Enter a **Name** and **Description**, then select **Next**.
 1. At **Assign reviewers**, select users with the **Privacy Curator** role to review and approve responses.
@@ -56,7 +56,7 @@ Each question includes:
 
 - **Prompt**: The question text respondents see.
 - **Required answer**: Ensures a response is provided.
-- **Attachments**: Allows respondents to upload supporting files if required.
+- **Attachments**:  Allows respondents to upload supporting files, up to six files, 5MB each.
 - **Risk settings**: Assigns risk levels to responses (if applicable).
 
 The assessment editor provides options to add and configure questions. The example shows a text-based question with toggles for required responses, attachments, and risk settings.
@@ -71,7 +71,11 @@ Logic controls whether a question appears based on a previous response. To confi
 1. Set conditions that determine when a question appears. For example, "If Question 3 is answered 'Yes,' show Question 4."
 1. Choose whether to **Show** or **Hide** the question based on the conditions.
 
-Use **Preview** to test question logic before publishing.
+The screenshot shows an example of logic applied to an assessment question, where the "Assessment Concluded" question is only shown if the response to "Personal Data Use" is No.
+
+:::image type="content" source="../media/logic-conditions-example.png" alt-text="Screenshot of an assessment question with logic conditions applied, showing how a question is displayed based on a previous response." lightbox="../media/logic-conditions-example.png":::
+
+Use **Preview** at any time to test how the questionnaire behaves, including logic-based visibility settings.
 
 ## Assigning assessments to assets
 
@@ -123,9 +127,9 @@ For **Choice** and **Checkbox** questions, assign a risk level (No risk, Low, Me
 
 Risk scores quantify potential privacy risks based on assessment responses.
 
-- Each question with a risk factor is assigned a maximum possible risk score.
-- When respondents answer, their selections contribute to the total risk score.
-- The final score is calculated as a percentage of the maximum possible risk.
+- Assign a maximum possible risk score to each question with a risk factor.
+- Calculate the total risk score based on respondents' selections.
+- Determine the final score as a percentage of the maximum possible risk.
 
 Risk levels are categorized as:
 
@@ -135,7 +139,7 @@ Risk levels are categorized as:
 | 4 - 7 | Medium |
 | 8 - 10 | High|
 
-Risk scores help organizations compare assessments and identify high-risk data practices
+Risk scores help organizations quantify potential privacy risks, making it easier to prioritize mitigation efforts.
 
 ## Exporting an assessment response
 
@@ -154,3 +158,5 @@ Once assessments are in place, organizations can:
 1. **Monitor assessment responses** to ensure privacy compliance.
 1. **Adjust risk settings** based on changing business needs.
 1. **Automate privacy rules** to streamline assessment assignments.
+
+Regularly reviewing assessments ensures organizations stay aligned with evolving privacy requirements.
