@@ -218,7 +218,7 @@ static class Program
 
 ```
 
-In the preceding example, the `Person` class is defined with three constructors. The first constructor initializes the `personName` and `personAge` fields to "unknown". The second constructor initializes the `personName` field to the value passed in the `name` parameter and the `personAge` field to "unknown". The third constructor initializes the `personName` and `personAge` fields to the values passed in the `name` and `age` parameters, respectively.
+In the preceding example, the `Person` class is defined with three constructors. The first constructor initializes the `personName` and `personAge` fields to `"unknown"`. The second constructor initializes the `personName` field to the value passed in the `name` parameter and the `personAge` field to `"unknown"`. The third constructor initializes the `personName` and `personAge` fields to the values passed in the `name` and `age` parameters, respectively.
 
 Since the fields are public, they can be accessed directly from the `Main` method. When the code runs, the following output is generated:
 
@@ -250,9 +250,9 @@ public class Car
 
 The `Car` class has a single public field, `modelName`, which is of type `string`. The `modelName` field is intended to store the name of the car model.
 
-The `Car` class also includes a constructor that takes a single string parameter named `model`. The constructor uses an expression body definition (denoted by the `=>` syntax) to initialize the `modelName` field with the value passed to the `model` parameter. This means that when a new `Car` object is instantiated, the `modelName` field will be set to the value provided as an argument to the constructor.
+The `Car` class also includes a constructor that takes a single string parameter named `model`. The constructor uses an expression body definition (denoted by the `=>` syntax) to initialize the `modelName` field with the value passed to the `model` parameter. This means that when a new `Car` object is instantiated, the `modelName` field is set to the value provided as an argument to the constructor.
 
-As the term *expression* implies, the right side of the `=>` operator is an expression and is not limited to a simple assignment statement. The expression can be any valid C# expression that returns a value.
+As the term *expression* implies, the right side of the `=>` operator is an expression and isn't limited to a simple assignment statement. The expression can be any valid C# expression that returns a value.
 
 The following code snippet demonstrates how to implement an expression body definition that performs a simple calculation:
 
@@ -333,11 +333,11 @@ The updated `Person` class has two instance fields, `personName` and `personAge`
 
 Additionally, the class defines two static fields, `defaultName` and `defaultAge`, also of type `string`. Static fields are shared among all instances of the class and are initialized only once. In this case, the static fields are used to provide default values for the `personName` and `personAge` fields.
 
-The static constructor `static Person()` is responsible for initializing the static fields. It sets `defaultName` to "unknown" and `defaultAge` to "unknown". The static constructor is called automatically before any instances of the class are created or any static members are accessed.
+The static constructor `static Person()` is responsible for initializing the static fields. It sets `defaultName` to "unknown" and `defaultAge` to `"unknown"`. The static constructor is called automatically before any instances of the class are created or any static members are accessed.
 
 The `Person` class includes three instance constructors:
 
-The parameterless constructor `public Person()` initializes the `personName` and `personAge` fields with the values of the static fields `defaultName` and `defaultAge`. This means that if no arguments are provided when creating a `Person` object, the default values "unknown" will be used for both the name and age.
+The parameterless constructor `public Person()` initializes the `personName` and `personAge` fields with the values of the static fields `defaultName` and `defaultAge`. This means that if no arguments are provided when creating a `Person` object, the default values "unknown" is used for both the name and age.
 
 The constructor `public Person(string name)` takes a single parameter, `name`, and initializes the `personName` field with this value. The `personAge` field is initialized with the value of the static field `defaultAge`. This constructor allows for the creation of a `Person` object with a specified name while using the default age.
 
@@ -367,7 +367,7 @@ Static constructors have the following properties:
 
 - A field declared as `static readonly` can only be assigned as part of its declaration or in a static constructor. When an explicit static constructor isn't required, initialize static fields at declaration rather than through a static constructor for better runtime optimization.
 
-- The runtime calls a static constructor no more than once in a single application domain. That call is made in a locked region based on the specific type of the class. No extra locking mechanisms are needed in the body of a static constructor. To avoid the risk of deadlocks, don't block the current thread in static constructors and initializers. For example, don't wait on tasks, threads, wait handles or events, don't acquire locks, and don't execute blocking parallel operations such as parallel loops, `Parallel.Invoke` and Parallel LINQ queries.
+- The runtime calls a static constructor no more than once in a single application domain. That call is made in a locked region based on the specific type of the class. No extra locking mechanisms are needed in the body of a static constructor.
 
 > [!NOTE]
 > Though not directly accessible, the presence of an explicit static constructor should be documented to assist with troubleshooting initialization exceptions.

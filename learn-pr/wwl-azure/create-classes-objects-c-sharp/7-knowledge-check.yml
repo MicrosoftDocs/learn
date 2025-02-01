@@ -12,47 +12,58 @@ durationInMinutes: 4
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is a class?"
+  - content: "What is a `class` type in a C# program?"
     choices:
     - content: "An object stored in memory."
       isCorrect: false
-      explanation: "Incorrect. While a class is the blueprint for an object that is stored in memory, a class itself is not stored in memory."
+      explanation: "Incorrect. While a class is the blueprint for an object that is stored in memory, a class itself isn't stored in memory."
     - content: "Something for which you receive a letter grade."
       isCorrect: false
-      explanation: "Incorrect. This is not the kind of class being discussed here."
-    - content: "A blueprint that you can use to create an object."
+      explanation: "Incorrect. Letter grades are awarded for educational classes, but that's not the type of class being discussed here."
+    - content: "A blueprint that's used to create an object."
       isCorrect: true
       explanation: "Correct! A class defines what an object contains and what it can do."
-  - content: "What is an object?"
+  - content: "What is an object in a C# program?"
     choices:
     - content: "It's a term used to describe an entity or thing."
       isCorrect: false
       explanation: "Incorrect. While the term object can be used in this way, in computer programming the term refers to the instantiation of a class."
     - content: "A data record that represents a single entity."
       isCorrect: false
-      explanation: "Incorrect. An object is not thought of as a data record."
+      explanation: "Incorrect. An object isn't thought of as a data record."
     - content: "An object is an in-memory instance of a class."
       isCorrect: true
       explanation: "Correct! An object in an in-memory \"instance\" of a class."
-  - content: "What is a constructor?"
-    choices:
-    - content: "A 64-bit native data variable."
-      isCorrect: false
-      explanation: "Incorrect. While you can pass variables into a constructor, a constructor itself is not a data variable."
-    - content: "Tools that can be used to build related objects."
-      isCorrect: false
-      explanation: "Incorrect. Constructors are not tools to build related object."
-    - content: "Constructors are methods used to initialize your object with any initial values required by your object."
-      isCorrect: true
-      explanation: "Correct! The primary job of a constructor is to initialize your object with any values it might require."
   - content: "What is the role of a constructor in a class?"
     choices:
-    - content: "It is used to release any resources which must be handled appropriately before the object is removed from memory."
+    - content: "It's used to release any resources which must be handled appropriately before the object is removed from memory."
       isCorrect: false
-      explanation: "Incorrect. This is the role of a finalizer, not a constructor."
+      explanation: "Incorrect. Releasing resources is the role of a finalizer, not a constructor."
     - content: "It provides notifications about occurrences, such as button clicks or the successful completion of a method, to other objects."
       isCorrect: false
-      explanation: "Incorrect. This is the role of events, not a constructor."
-    - content: "It is called when the object is first created and is often used to initialize the data of an object."
+      explanation: "Incorrect. Providing notifications is the role of events, not a constructor."
+    - content: "It's called when the object is first created and is often used to initialize the data of an object."
       isCorrect: true
-      explanation: "Correct. A constructor initializes the data of an object when it is first created."
+      explanation: "Correct. A constructor initializes the data of an object when it's first created."
+  - content: "What is the purpose of class properties in C# programming?"
+    choices:
+    - content: "Class properties are used to define the actions (behaviors) that a class can perform."
+      isCorrect: false
+      explanation: "Incorrect. Class methods, not properties, define the actions or behaviors that a class can perform."
+    - content: "Class properties are used to organize large code projects."
+      isCorrect: false
+      explanation: "Incorrect. Namespaces, not class properties, are used to organize large code projects."
+    - content: "Class properties are used to manage the data that differentiates one object (class instance) from another object of the same type."
+      isCorrect: true
+      explanation: "Correct. Class properties manage the data that differentiates one object from another of the same type."
+  - content: "What is the purpose of a static constructor in a class?"
+    choices:
+    - content: "It can be called directly and multiple times throughout the program."
+      isCorrect: false
+      explanation: "Incorrect. A static constructor can't be called directly and is only meant to be called by the common language runtime (CLR). It's invoked automatically and only once."
+    - content: "It's used to initialize any instance field variables when an object is created."
+      isCorrect: false
+      explanation: "Incorrect. Instance constructors, not static constructors, are used to initialize instance field variables when an object is created."
+    - content: "It's used to initialize any static data, or to perform a particular action that needs to be performed only once."
+      isCorrect: true
+      explanation: "Correct. A static constructor is used to initialize any static data, or to perform a particular action that needs to be performed only once. It's called automatically before the first instance is created or any static members are referenced."

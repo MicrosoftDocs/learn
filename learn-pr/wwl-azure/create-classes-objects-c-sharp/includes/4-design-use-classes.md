@@ -7,7 +7,7 @@ Examining the real-world objects around you can help you understand how classes 
 
 ## Real world objects
 
-People interact with objects constantly in their daily lives. In fact, nearly everything that we interact with can be thought of as an object. Objects can be simple or complex, naturally occurring or man-made, inert or living.
+People interact with objects constantly in their daily lives. In fact, nearly everything that we interact with can be thought of as an object. Objects can be simple or complex, naturally occurring or manufactured, inert or living.
 
 The following criteria can be used to define objects in the real world:
 
@@ -19,7 +19,7 @@ A pencil is an example of a physical object. The purpose of a pencil is to creat
 
 There are also physical objects that exist as an assembly of other objects. The following list provides examples of objects that are composed of other objects:
 
-- A car: The purpose of a car is to provide ground transportation for individuals and families. The parts of a car include an engine, wheels, seats, a steering wheel, and many others. The parts of a car work together to enable ground transportation.
+- A car: The purpose of a car is to provide ground transportation for individuals and families. The parts of a car include an engine, the wheels, a steering wheel, and many others. The parts of a car work together to enable ground transportation.
 - A house: The purpose of a house is to provide shelter. The parts of a house include a foundation, outside walls, a roof, and rooms. These parts work together to create a living space.
 - A smart phone: The purpose of a smart phone is to assist the user with day-to-day tasks and activities. The parts of a smart phone include a screen, a microprocessor, memory and storage, a battery, cameras, and buttons. These parts work together to enable communication, entertainment, and productivity features.
 
@@ -42,19 +42,19 @@ Physical attributes are often referred to as properties, while behavioral attrib
 
 ## Code classes and objects in the C# type system
 
-In the world of C# programming, object properties and methods are defined by a class. The class provides a blueprint for what an object (an instance of the class) is able to do.
+In the world of C# programming, object properties and methods are components of a class. The class provides a blueprint for what an object (an instance of the class) is able to do.
 
-When an app runs, it uses a class definition to create an object (an instance of the class). An object is basically a block of memory that's been allocated and configured according to the blueprint. A code object, just like a physical object, can have different values assigned to its properties.
+When an app runs, it uses a class definition to create an object (an instance of the class). An object is basically a block of memory that's allocated and configured according to the blueprint. A code object, just like a physical object, can have different values assigned to its properties.
 
 ### Classes encapsulate data and behavior
 
-Classes provide a way to encapsulate data and behavior. Encapsulation is the process of combining data and behavior into a single unit. In the case of classes, the data is represented by properties, and the behavior is represented by methods.
+Classes provide a way to encapsulate data and behavior. Encapsulation is the process of combining data and behavior into a single unit. Classes use properties to enable access to data and methods to enable behaviors.
 
 ### Class properties
 
 Class properties are used to manage the data that differentiates one object (class instance) from another object of the same type.
 
-Class properties provide the ability to read, write, or compute the value of variables (data fields) defined within the class. Properties appear as public data members, but they're implemented as special methods called *accessors*. This feature enables callers to access data easily and still helps promote data safety and flexibility.  
+Class properties enable objects to read, write, or compute the value of variables (data fields) defined within the class. Properties appear as public data members, but they're implemented as special methods called *accessors*. This feature enables callers to access data easily and still helps promote data safety and flexibility.
 
 Property values can be read using a `get` accessor and assigned using a `set` accessor.
 
@@ -114,7 +114,7 @@ System.Console.WriteLine("Hello World!");
 
 In this example, `System` is a namespace and `Console` is a class in that namespace.
 
-Providing the fully qualified name of the class (`System.Console`) ensures that the correct class is used. However, this can be cumbersome when working with many classes from the same namespace. To improve code readability, you can use the `using` directive. The `using` directive allows you to use types defined in a namespace without specifying the fully qualified namespace of that type.
+Providing the fully qualified name of the class (`System.Console`) ensures that the correct class is used. However, using fully qualified names can be cumbersome when working with many classes from the same namespace. To improve code readability, you can use the `using` directive. The `using` directive allows you to use types defined in a namespace without specifying the fully qualified namespace of that type.
 
 The following code snippet implements the `using` directive to improve code readability:
 
@@ -127,7 +127,7 @@ Console.WriteLine("Hello World!");
 ```
 
 > [!NOTE]
-> Starting in .NET 6, *implicit* `global using` directives are added to new C# projects. This means that you can use types defined in these namespaces without having to specify their fully qualified name or manually add a using directive. The *implicit* aspect refers to the fact that the global using directives are added to a generated file in the project's obj directory. This is why you can use `Console.WriteLine` without explicitly declaring `using System` when developing apps in .versions 6.0 or later of .NET. This is a convenience feature that makes it easier to write code.
+> Starting in .NET 6, *implicit* `global using` directives are added to new C# projects. This means that you can use types defined in these namespaces without having to specify their fully qualified name or manually add a using directive. The *implicit* aspect refers to the fact that the global using directives are added to a generated file in the project's obj directory. This feature enables you to use `Console.WriteLine` without explicitly declaring `using System` when developing apps in versions 6.0 or later of .NET.
 
 ### Organizing classes with namespaces
 
