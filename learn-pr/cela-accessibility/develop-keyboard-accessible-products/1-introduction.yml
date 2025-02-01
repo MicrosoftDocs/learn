@@ -8,7 +8,6 @@ metadata:
   author: bmackinney
   ms.author: kichand
   ms.topic: unit
-  ms.prod: learning-azure
-durationInMinutes: 13
+  durationInMinutes: 13
 content: |
   [!include[](includes/1-introduction.md)]

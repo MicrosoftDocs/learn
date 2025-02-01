@@ -8,7 +8,6 @@ metadata:
   author: bmackinney
   ms.author: kichand
   ms.topic: unit
-  ms.prod: learning-azure
-durationInMinutes: 8
+  durationInMinutes: 8
 content: |
   [!include[](includes/2-review-accessibility-guidelines.md)]

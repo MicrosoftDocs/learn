@@ -21,12 +21,11 @@ abstract: |
 prerequisites: |
   -	Basic knowledge of accessibility principles
   -	Basic understanding of assistive technology
-
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
-- designer
+- developer
 products:
 - azure
 units:

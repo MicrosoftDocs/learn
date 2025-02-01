@@ -8,7 +8,6 @@ metadata:
   author: bmackinney
   ms.author: kichand
   ms.topic: unit
-  ms.prod: learning-azure
-durationInMinutes: 14
+  durationInMinutes: 14
 content: |
   [!include[](includes/5-implement-keyboard-accessibility.md)]
