@@ -59,7 +59,7 @@ Each question includes:
 - **Attachments**: Allows respondents to upload supporting files if required.
 - **Risk settings**: Assigns risk levels to responses (if applicable).
 
-In the assessment editor, you can configure these settings directly when adding or editing a question. The following screenshot shows an example of an assessment in progress, where users can define the question prompt, enable required responses, allow attachments, and configure risk settings.
+The assessment editor provides options to add and configure questions. The example shows a text-based question with toggles for required responses, attachments, and risk settings.
 
 :::image type="content" source="../media/assessment-editor.png" alt-text="Screenshot showing the assessment editor where users can configure question text, required answers, attachments, and risk settings." lightbox="../media/assessment-editor.png":::
 
