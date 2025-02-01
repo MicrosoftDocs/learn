@@ -36,7 +36,7 @@ To assign an asset to a privacy assessment, it must first be registered in Priva
 
 1. In **Privacy Assessments**, navigate to the **Assessment management** page.
 1. On the **Assets** tab, select **Register asset**.
-1. At **Asset type**, the default type is **Project**. You can leave  default setting or select a different type from the dropdown.
+1. At **Asset type**, the default is **Project**. You can keep this selection or choose a different asset type from the dropdown.
 1. Enter a **Name** and an optional **Description**.
 1. In the **Contacts** section, assign the appropriate owner to ensure they receive notifications about assessment activity, such as assignment, approval, or decline.
 1. Select **Create**.
@@ -45,4 +45,4 @@ Once an asset is created, its details page displays privacy-related information.
 
 Organizations can also create logical business assets directly in Microsoft Purview Data Map and Unified Catalog, which allows for more advanced customization.
 
-After registering assets, the next step is to assign privacy assessments to them.
+With assets registered, organizations can now assign privacy assessments to track data usage in business operations.
