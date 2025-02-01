@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.create-classes-objects-c-sharp
 metadata:
-  title: Create classes and objects in C#
+  title: Get started with classes and objects in C#
   description: "Learn how to create classes and instantiate objects that expose encapsulated field data by using class definitions, constructors, and the 'new' operator."
-  ms.date: 01/31/2025
+  ms.date: 02/01/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
   ms.subservice: fundamentals
   ms.devlang: dotnet
   ai-usage: human-only
-title: Create classes and objects in C#
+title: Get started with classes and objects in C#
 summary: Learn how to&nbsp;create classes and instantiate objects that expose encapsulated field data by using class definitions, constructors, and the 'new' operator.
 abstract: |
   After completing this module, you'll be able to:

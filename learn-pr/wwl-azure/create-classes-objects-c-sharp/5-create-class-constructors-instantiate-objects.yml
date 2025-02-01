@@ -4,10 +4,10 @@ title: Create class constructors and instantiate objects
 metadata:
   title: Create class constructors and instantiate objects
   description: "Create class constructors and instantiate objects"
-  ms.date: 01/31/2025
+  ms.date: 02/01/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 12
+durationInMinutes: 14
 content: |
   [!include[](includes/5-create-class-constructors-instantiate-objects.md)]

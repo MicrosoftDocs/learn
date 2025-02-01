@@ -4,10 +4,10 @@ title: Examine the .NET type system
 metadata:
   title: Examine the .NET type system
   description: "Examine the .NET type system"
-  ms.date: 01/31/2025
+  ms.date: 02/01/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 9
 content: |
   [!include[](includes/3-examine-dotnet-type-system.md)]
