@@ -7,8 +7,8 @@ metadata:
   title: Introduction
   description: Publish an Azure Static Web App
   ms.date: 12/20/2022
-  author: sinedied
-  ms.author: yolasors
+  author: craigshoemaker
+  ms.author: cshoe
   ms.topic: unit
   ms.custom:
   - team=nextgen
