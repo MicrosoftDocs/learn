@@ -8,6 +8,6 @@ metadata:
   author: bmackinney
   ms.author: kichand
   ms.topic: unit
-  durationInMinutes: 3
+durationInMinutes: 3
 content: |
   [!include[](includes/4-design-for-keyboard-accessibility.md)]

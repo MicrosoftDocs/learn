@@ -8,6 +8,6 @@ metadata:
   author: bmackinney
   ms.author: kichand
   ms.topic: unit
-  durationInMinutes: 10
+durationInMinutes: 10
 content: |
   [!include[](includes/3-review-design-considerations.md)]
