@@ -1,6 +1,6 @@
 Before assigning privacy assessments, organizations need a way to define and structure the data assets they evaluate. Privacy assessments are typically assigned to business assets, such as projects or business processes, rather than individual datasets like a database or table. These business assets provide context about how data is used across an organization.
 
-Microsoft Purview’s metamodel helps organizations represent business assets in a structured way. By defining business assets and their relationships to physical data, organizations can ensure privacy assessments evaluate data usage within the correct context.
+Microsoft Purview's metamodel helps organizations represent business assets in a structured way. By defining business assets and their relationships to physical data in the Microsoft Purview Unified Catalog, organizations ensure privacy assessments evaluate data usage within the correct context.
 
 ## Why configure the metamodel?
 
