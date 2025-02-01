@@ -1,26 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.priva-consent-management
 metadata:
-  title: Use Microsoft Priva Tracker Scanning for web tracking compliance
-  description: "Use Microsoft Priva Tracker Scanning for web tracking compliance."
+  title: Manage user consent across digital platforms
+  description: "Manage user consent across digital platforms."
   ms.date: 01/24/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
   hidden: false
-title: Use Microsoft Priva Tracker Scanning for web tracking compliance
-summary: Microsoft Priva Tracker Scanning helps organizations identify, categorize, and manage web tracking technologies to ensure compliance and transparency. Learn how to configure Tracker Scanning, create and manage tracker categories, run scans to detect tracking technologies, and support responsible data practices aligned with user expectations.
+title: Manage user consent across digital platforms
+summary: Microsoft Priva Consent Management helps organizations manage user consent preferences, ensuring transparency and alignment with privacy expectations. Learn how to configure consent models, set up prerequisites, deploy publishing profiles, and manage consent across digital platforms.
 abstract: |
-  After completing this module, you'll be able to:
-  - Explain the purpose and benefits of Microsoft Priva Tracker Scanning.
-  - Set up and configure Tracker Scanning to meet your organization's needs.
-  - Create and manage tracker categories and assign trackers effectively.
-  - Configure and run scans to detect tracking technologies and compliance objects.
-  - Analyze scan results to address compliance issues and improve tracking practices.
+  After completing this module, you'll be able to:  
+  - Explain the purpose and benefits of Microsoft Priva Consent Management.  
+  - Set up and configure consent models, including prerequisites like tracker categories.  
+  - Create and apply publishing profiles to manage consent models across websites.  
+  - Deploy consent models using consent model packages for consistent application.  
+  - Ensure consent models remain accurate and up to date with privacy requirements.
 prerequisites: |
-  - Familiarity with Microsoft 365 services.
-  - Basic understanding of web trackers, cookies, and privacy compliance practices.
+  - Familiarity with Microsoft 365 services.  
+  - Basic understanding of data privacy, user consent, and compliance principles.  
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
