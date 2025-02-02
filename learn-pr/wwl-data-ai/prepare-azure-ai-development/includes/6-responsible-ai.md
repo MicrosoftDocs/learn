@@ -6,7 +6,7 @@ Let's discuss some core principles for responsible AI that have been adopted at 
 
 ## Fairness
 
-![A diagram of scales](../media/fairness.png)
+![A diagram of scales.](../media/fairness.png)
 
 AI systems should treat all people fairly. For example, suppose you create a machine learning model to support a loan approval application for a bank. The model should make predictions of whether or not the loan should be approved without incorporating any bias based on gender, ethnicity, or other factors that might result in an unfair advantage or disadvantage to specific groups of applicants.
 
@@ -14,7 +14,7 @@ Fairness of machine learned systems is a highly active area of ongoing research,
 
 ## Reliability and safety
 
-![A diagram of a shield](../media/reliability-safety.png)
+![A diagram of a shield.](../media/reliability-safety.png)
 
 AI systems should perform reliably and safely. For example, consider an AI-based software system for an autonomous vehicle; or a machine learning model that diagnoses patient symptoms and recommends prescriptions. Unreliability in these kinds of system can result in substantial risk to human life.
 
@@ -22,13 +22,13 @@ As with any software, AI-based software application development must be subjecte
 
 ## Privacy and security
 
-![A diagram of a padlock](../media/privacy-security.png)
+![A diagram of a padlock.](../media/privacy-security.png)
 
 AI systems should be secure and respect privacy. The machine learning models on which AI systems are based rely on large volumes of data, which may contain personal details that must be kept private. Even after models are trained and the system is in production, they use new data to make predictions or take action that may be subject to privacy or security concerns; so appropriate safeguards to protect data and customer content must be implemented.
 
 ## Inclusiveness
 
-![A diagram of a diverse group of people](../media/inclusiveness.png)
+![A diagram of a diverse group of people.](../media/inclusiveness.png)
 
 AI systems should empower everyone and engage people. AI should bring benefits to all parts of society, regardless of physical ability, gender, sexual orientation, ethnicity, or other factors.
 
@@ -36,7 +36,7 @@ One way to optimize for inclusiveness is to ensure that the design, development,
 
 ## Transparency
 
-![A diagram of an eye](../media/transparency.png)
+![A diagram of an eye.](../media/transparency.png)
 
 AI systems should be understandable. Users should be made fully aware of the purpose of the system, how it works, and what limitations may be expected.
 
@@ -46,7 +46,7 @@ When an AI application relies on personal data, such as a facial recognition sys
 
 ## Accountability
 
-![A diagram of a handshake](../media/accountability.png)
+![A diagram of a handshake.](../media/accountability.png)
 
 People should be accountable for AI systems. Although many AI systems seem to operate autonomously, ultimately it's the responsibility of the developers who trained and validated the models they use, and defined the logic that bases decisions on model predictions to ensure that the overall system meets responsibility requirements. To help meet this goal, designers and developers of AI-based solution should work within a framework of governance and organizational principles that ensure the solution meets responsible and legal standards that are clearly defined.
 
