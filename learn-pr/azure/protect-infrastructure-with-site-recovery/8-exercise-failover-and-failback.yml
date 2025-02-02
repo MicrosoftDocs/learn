@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Failover and failback using Azure Site Recovery
   description: Exercise - Failover and failback using Azure Site Recovery
-  ms.date: 12/07/2023
+  ms.date: 01/25/2025
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: unit
