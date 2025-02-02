@@ -7,7 +7,7 @@ Examining the real-world objects around you can help you understand how classes 
 
 ## Real world objects
 
-People interact with objects constantly in their daily lives. In fact, nearly everything that we interact with can be thought of as an object. Objects can be simple or complex, naturally occurring or manufactured, inert or living.
+People interact with objects constantly in their daily lives. In fact, nearly everything that we interact with can be thought of as an object.
 
 The following criteria can be used to define objects in the real world:
 
@@ -34,17 +34,19 @@ Some pencils are short, some are long. Some pencils are yellow, some are black. 
 The attributes of an object are often divided into the following physical and behavioral categories:
 
 - Physical: Physical attributes are the aspects of an object that can be seen or measured.
-- Behavioral: Behavioral attributes are the aspects of an object that describe it's capabilities or interactions with other objects.
+- Behavioral: Behavioral attributes are the aspects of an object that describe its capabilities or interactions with other objects.
 
 For the pencil example, physical attributes include the length of the body, the color of the body, the sharpness of the tip, and whether or not the pencil has an eraser. The behavioral attributes include the ability to write, the ability to erase, and the ability to be sharpened. A pencil interacts with paper or other solid objects that can be written or drawn on.
 
 Physical attributes are often referred to as properties, while behavioral attributes are often referred to as functions (methods in C# programming).
 
-## Code classes and objects in the C# type system
+## Code classes and objects in C# programming
 
-In the world of C# programming, object properties and methods are components of a class. The class provides a blueprint for what an object (an instance of the class) is able to do.
+In the world of C# programming, object properties and methods are defined by a class. Classes provide the blueprint for what an object (an instance of the class) is able to do. The blueprint for a class is called a class definition.
 
-When an app runs, it uses a class definition to create an object (an instance of the class). An object is basically a block of memory that's allocated and configured according to the blueprint. A code object, just like a physical object, can have different values assigned to its properties.
+When an app is running, the computer uses a class definition to allocate memory for an object (an instance of the class). The computer uses the blueprint to configure a block of memory that's the right size for the object. An object is basically a block of memory.
+
+Code objects, just like physical objects, can have different values assigned to its properties.
 
 ### Classes encapsulate data and behavior
 
@@ -183,8 +185,8 @@ The advantage of this new syntax is that it's simpler, saving horizontal space a
 Namespaces have the following properties:
 
 - They organize large code projects.
-- They're delimited by using the . operator.
-- The using directive obviates the requirement to specify the name of the namespace for every class.
-- The global namespace is the "root" namespace: global::System always refers to the .NET System namespace.
+- They're delimited by using the `.` operator.
+- The `using` directive obviates the requirement to specify the name of the namespace for every class.
+- The global namespace is the "root" namespace: `global::System` always refers to the .NET System namespace.
 
 Using namespaces to group related types together makes it easier to find and use them.
