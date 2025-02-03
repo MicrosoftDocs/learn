@@ -41140,6 +41140,41 @@
       "source_path": "learn-pr/wwl-azure/combine-prompts-functions/5-summary.md",
       "redirect_url": "/training/modules/combine-prompts-functions/7-summary",
       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/2-azure-monitor-activity-log.md",
+       "redirect_url": "/training/modules/security-monitoring-automation-solutions/",
+       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/3-microsoft-sentinel-data-connectors.md",
+       "redirect_url": "/training/modules/security-monitoring-automation-solutions/6-microsoft-sentinel-data-connectors",
+       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/4-create-custom-analytics-rules-detect-threats.md",
+       "redirect_url": "/training/modules/security-monitoring-automation-solutions/",
+       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/5-evaluate-alerts-and-incidents.md",
+       "redirect_url": "/training/modules/security-monitoring-automation-solutions/",
+       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/6-respond-threats-by-using-playbooks-with-automation-rules-microsoft-sentinel.md",
+       "redirect_url": "/training/modules/security-monitoring-automation-solutions/8-respond-threats-by-using-playbooks-with-automation-rules-microsoft-sentinel",
+       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/7-knowledge-check.md",
+       "redirect_url": "/training/modules/security-monitoring-automation-solutions/10-knowledge-check",
+       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/8-summary.md",
+       "redirect_url": "/training/modules/security-monitoring-automation-solutions/11-summary",
+       "redirect_document_id": false
     }
   ]
 }

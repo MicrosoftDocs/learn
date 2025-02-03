@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure automation in Microsoft Sentinel
   description: "Configure automation in Microsoft Sentinel"
-  ms.date: 04/26/2024
+  ms.date: 02/03/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-respond-threats-by-using-playbooks-with-automation-rules-microsoft-sentinel.md)]
+  [!include[](includes/8-respond-threats-by-using-playbooks-with-automation-rules-microsoft-sentinel.md)]

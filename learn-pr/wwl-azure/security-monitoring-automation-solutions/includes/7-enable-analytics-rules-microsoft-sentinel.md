@@ -4,11 +4,10 @@ Analytics rules search for specific events or sets of events across your environ
 
 ## Create a custom analytics rule with a scheduled query
 
-1. From the Microsoft Sentinel navigation menu, select **Analytics**.
+1.  From the Microsoft Sentinel navigation menu, select **Analytics**.
+2.  In the action bar at the top, select **+ Create** and select **Scheduled query rule**. This opens the Analytics rule wizard.
 
-2. In the action bar at the top, select **+ Create** and select **Scheduled query rule**. This opens the Analytics rule wizard.
-
-:::image type="content" source="../media/create-scheduled-query-small-80002ed3.png" alt-text="Screenshot showing an example of how to run a scheduled query.":::
+:::image type="content" source="../media/create-scheduled-query-small-80002ed3-b6def32c.png" alt-text="Screenshot showing an example of how to run a scheduled query.":::
 
 
 ## Analytics rule wizard - General tab
@@ -17,6 +16,8 @@ Analytics rules search for specific events or sets of events across your environ
  -  In the Tactics and techniques field, you can choose from among categories of attacks by which to classify the rule. These are based on the tactics and techniques of the MITRE ATT&CK framework.
  -  Incidents created from alerts that are detected by rules mapped to MITRE ATT&CK tactics and techniques automatically inherit the rule's mapping.
  -  Set the alert Severity as appropriate.
+    
+    
      -  Informational. No impact on your system, but the information might be indicative of future steps planned by a threat actor.<br>
      -  Low. The immediate impact would be minimal. A threat actor would likely need to conduct multiple steps before achieving an impact on an environment.
      -  Medium. The threat actor could have some impact on the environment with this activity, but it would be limited in scope or require additional activity.
@@ -25,7 +26,7 @@ Analytics rules search for specific events or sets of events across your environ
  -  Severity definitions for Microsoft Sentinel analytics rule templates are relevant only for alerts created by analytics rules. For alerts ingested from other services, the severity is defined by the source security service.<br>
  -  When you create the rule, its Status is Enabled by default, which means it will run immediately after you finish creating it. If you don’t want it to run immediately, select Disabled, and the rule will be added to your Active rules tab and you can enable it from there when you need it.
 
-:::image type="content" source="../media/general-tab-b265927c.png" alt-text="Screenshot showing an example of how to create a new rule.":::
+:::image type="content" source="../media/general-tab-b265927c-c6f47bdf.png" alt-text="Screenshot showing an example of how to create a new rule.":::
 
 
 ## Define the rule query logic and configure settings
@@ -35,7 +36,7 @@ In the Set rule logic tab, you can either write a query directly in the Rule que
  -  Queries are written in Kusto Query Language (KQL).
  -  The example shown in this screenshot queries the SecurityEvent table to display a type of failed Windows logon events.
 
-:::image type="content" source="../media/set-rule-logic-tab-82e1fd7c.png" alt-text="Screenshot showing an example of how to set rule logic.":::
+:::image type="content" source="../media/set-rule-logic-tab-82e1fd7c-682a5782.png" alt-text="Screenshot showing an example of how to set rule logic.":::
 
 
 Here's another sample query, one that would alert you when an anomalous number of resources is created in Azure Activity.
@@ -55,7 +56,7 @@ AzureActivity
 <!--- raw content end --->
 
 <!--- raw content start --->
-| make-series dcount(ResourceId)  default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller
+| make-series dcount(ResourceId) default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller
 <!--- raw content end --->
 
 > [!IMPORTANT]
@@ -65,7 +66,9 @@ AzureActivity
 
  -  The query length should be between 1 and 10,000 characters and can't contain `search *` or `union *`. You can use user-defined functions to overcome the query length limitation.<br>
  -  Using ADX functions to create Azure Data Explorer queries inside the Log Analytics query window isn't supported.<br>
- -  When using the **`bag_unpack`** function in a query, if you project the columns as fields using `project field1` and the column doesn't exist, the query will fail. To guard against this happening, you must project the column as follows:<br>
+ -  When using the **`bag_unpack`** function in a query, if you project the columns as fields using `project field1` and the column doesn't exist, the query will fail. To guard against this happening, you must project the column as follows:
+    
+    
      -  `project field1 = column_ifexists("field1","")`<br>
 
 ### Alert enrichment
@@ -85,16 +88,18 @@ AzureActivity
 
  -  In the Query scheduling section, set the following parameters:
 
-### :::image type="content" source="../media/set-rule-logic-threshold-5a90257c.png" alt-text="Screenshot showing an example of creating a new scheduled rule."::: 
+### :::image type="content" source="../media/set-rule-logic-threshold-5a90257c-a5c99aa3.png" alt-text="Screenshot showing an example of creating a new scheduled rule."::: 
 
  -  Set Run query every to control how often the query is run—as frequently as every 5 minutes or as infrequently as once every 14 days.
  -  Set Lookup data from the last to determine the time period of the data covered by the query—for example, it can query the past 10 minutes of data, or the past 6 hours of data. The maximum is 14 days.
  -  For the new Start running setting (in Preview):
+    
+    
      -  Leave it set to Automatically continue the original behavior: the rule will run for the first time immediately upon being created, and after that at the interval set in the Run query every setting.
      -  Toggle the switch to At specific time if you want to determine when the
      -  rule first runs, instead of having it run immediately. Then choose the date using the calendar picker and enter the time in the format of the example shown.
 
-:::image type="content" source="../media/advanced-scheduling-639fd185.png" alt-text="Screenshot showing an example how to configure query scheduling parameters.":::
+:::image type="content" source="../media/advanced-scheduling-639fd185-93d895a3.png" alt-text="Screenshot showing an example how to configure query scheduling parameters.":::
 
 
 Future runnings of the rule will occur at the specified interval after the first running.
@@ -115,7 +120,7 @@ Use the Alert threshold section to define the sensitivity level of the rule. For
 
 In the Incident Settings tab, you can choose whether and how Microsoft Sentinel turns alerts into actionable incidents. If this tab is left alone, Microsoft Sentinel will create a single, separate incident from each and every alert. You can choose to have no incidents created, or to group several alerts into a single incident, by changing the settings in this tab.
 
-Incident settings<br>
+Incident settings
 
 In the Incident settings section, Create incidents from alerts triggered by this analytics rule is set by default to Enabled, meaning that Microsoft Sentinel will create a single, separate incident from each and every alert triggered by the rule.
 
@@ -157,10 +162,12 @@ Use automation rules to perform basic triage, assignment, workflow, and closing 
 
 Automate more complex tasks and invoke responses from remote systems to remediate threats by calling playbooks from these automation rules. You can do this for incidents as well as for individual alerts.
 
-:::image type="content" source="../media/automated-response-tab-2d26d892.png" alt-text="Screenshot showing an example how to configure an automated response.":::
+:::image type="content" source="../media/automated-response-tab-2d26d892-3ae7817f.png" alt-text="Screenshot showing an example how to configure an automated response.":::
 
 
  -  Under Alert automation (classic) at the bottom of the screen, you'll see any playbooks you've configured to run automatically when an alert is generated using the old method.
+    
+    
      -  As of June 2023, you can no longer add playbooks to this list. Playbooks already listed here will continue to run until this method is deprecated, effective March 2026.
      -  If you still have any playbooks listed here, you should instead create an automation rule based on the alert created trigger and invoke the playbook from there. After you've done that, select the ellipsis at the end of the line of the playbook listed here, and select Remove.
 
