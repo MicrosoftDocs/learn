@@ -5,10 +5,11 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe Azure storage services
   description: "Azure storage services, tiers, redundancy options, and migration options and tools."
-  ms.date: 09/19/2024
+  ms.date: 02/03/2025
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module-standard-task-based
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure-architecture-center
