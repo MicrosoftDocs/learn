@@ -22,12 +22,12 @@ Prioritize actions based on the severity level, and understand the context given
 *Contoso's challenge*
 
 - Users are reporting that, after a recent update to the Contoso Real Estate application, they're occasionally seeing a blank page or a generic error message on the search page of the Web App.  The errors seem random, and the search functionality usually works if the users just refresh the page or resubmit the search.
-- Reviewing the logs on the search microservice, the team notices an increase in errors due to timeouts connecting to the Azure Database for PostgreSQL, but they currently have no way to tell whether an error they see in the search microservice logs corresponds to the error pages the users see or not.
+- Reviewing the logs on the search microservice, the team notices an increase in errors due to time-outs connecting to the Azure Database for PostgreSQL, but they currently have no way to tell whether an error they see in the search microservice logs corresponds to the error pages the users see or not.
 
 *Applying the approach and outcomes*
 
 - The development team has decided to expand on the information they log from both the web app and the core micro-services to dig deeper into the issue. For the search scenario, they’re making sure to capture the search terms along with other available transaction attributes like time, client ip, and the username associated with the search. This extra data should give them enough information to be able to correlate transactions across tiers.
-- This change allowed the team to confirm that database query timeouts, which weren't being properly handled in the latest update of the app, were the root cause of the failures the users were experiencing. After finding the root cause, it was straightforward for the team to implement a fix. 
+- This change allowed the team to confirm that database query time-outs, which weren't being properly handled in the latest update of the app, were the root cause of the failures the users were experiencing. After finding the root cause, it was straightforward for the team to implement a fix. 
 - The team is now designing a new approach, using OpenTelemetry, to implement a more comprehensive distributed tracing solution that covers all solution tiers.
 
 ### Visualize monitoring data in dashboards
