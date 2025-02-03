@@ -22,7 +22,7 @@ In this task, you'll create a new storage account.
     | -------------------------------------------------------- | --------- |
     | Allow enabling anonymous access on individual containers | Checked   |
     
-    :::image type="content" source="../media/storage-account-anonymous-containers-5e5f584a-947456b6.png" alt-text="Screenshot showing how to enable anonymous-access containers on a storage account.":::
+    :::image type="content" source="../media/storage-account-anonymous-containers.png" alt-text="Screenshot showing how to enable anonymous-access containers on a storage account.":::
     
 7.  Select **Review** to review your storage account settings and allow Azure to validate the configuration.
 8.  Once validated, select **Create**. Wait for the notification that the account was successfully created.
@@ -34,7 +34,7 @@ In this section, you'll create a Blob container and upload a picture.
 
 1.  Under **Data storage**, select **Containers**.
     
-    :::image type="content" source="../media/storage-account-menu-9472480e-c96b545a.png" alt-text="Screenshot of the Container add section of a storage account.":::
+    :::image type="content" source="../media/storage-account-menu.png" alt-text="Screenshot of the Container add section of a storage account.":::
     
 2.  Select **+ Container** and complete the information.
     
@@ -58,12 +58,7 @@ In this section, you'll create a Blob container and upload a picture.
     <Error>
     <Code>ResourceNotFound</Code>
       <Message>The specified resource does not exist. RequestId:4a4bd3d9-101e-005a-1a3e-84bd42000000</Message>
-    </Error>
-    
-    
-    
-    
-    
+    </Error>    
     ```
 
 ## Change the access level of your blob
@@ -72,7 +67,7 @@ In this section, you'll create a Blob container and upload a picture.
 2.  Select Change access level.
 3.  Set the Anonymous access level to Blob (anonymous read access for blobs only).
     
-    :::image type="content" source="../media/blob-access-level-213a74e6-604b0eb5.png" alt-text="Screenshot with Change access level highlighted.":::
+    :::image type="content" source="../media/blob-access-level.png" alt-text="Screenshot with Change access level highlighted.":::
     
 4.  Select OK.
 5.  Refresh the tab where you attempted to access the file earlier.
