@@ -24,7 +24,7 @@ There are many benefits to using ARM templates for your resource provisioning. A
 
 #### ARM template formats
 
-There are two formats available for ARM templates and Azure resource deployments, JSON and Bicep. JavaScript Object Notation (JSON) is an open-standard file format that multiple languages can use. Bicep is a new domain-specific language that was recently developed for authoring templates by using an easier syntax. You can use the Bicep CLI to decompile any JSON template into a Bicep template.
+There are two formats available for ARM templates and Azure resource deployments, JSON and Bicep. JavaScript Object Notation (JSON) is an open-standard file format that multiple languages can use. Bicep is a domain-specific language that was recently developed for authoring templates by using an easier syntax. You can use the Bicep CLI to decompile any JSON template into a Bicep template.
 
 ### Things to know about Azure Bicep templates
 
