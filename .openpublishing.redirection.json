@@ -33842,6 +33842,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/manage-multi-tenancy-for-azure-stack-hub/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-multi-tenancy-for-azure-stack-hub/8-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-multi-tenancy-for-azure-stack-hub/7-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-multi-tenancy-for-azure-stack-hub/6-update-guest-tenant-directory.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-multi-tenancy-for-azure-stack-hub/5-disable-multi-tenancy.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-multi-tenancy-for-azure-stack-hub/4-direct-users-sign-in.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-multi-tenancy-for-azure-stack-hub/3-configure-azure-stack-hub-guest-directory.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-multi-tenancy-for-azure-stack-hub/2-configure-multi-tenancy-azure-stack-hub.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-multi-tenancy-for-azure-stack-hub/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/9-knowledge-check.md",
       "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
       "redirect_document_id": false

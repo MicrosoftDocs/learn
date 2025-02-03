@@ -1382,6 +1382,11 @@ achievements:
   title: Manage access for Azure Stack Hub
   summary: Manage access for Azure Stack Hub
   iconUrl: /training/achievements/2-manage-access-for-azure-stack-hub.svg
+- uid: learn.wwl.manage-multi-tenancy-for-azure-stack-hub.badge
+  type: badge
+  title: Manage multi-tenancy for Azure Stack Hub
+  summary: Manage multi-tenancy for Azure Stack Hub
+  iconUrl: /training/achievements/1-manage-multi-tenancy-for-azure-stack-hub.svg
 - uid: learn.wwl.design-processes-to-capture-analyze-user-feedback.badge
   type: badge
   title: Design processes to capture and analyze user feedback
