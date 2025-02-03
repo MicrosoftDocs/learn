@@ -33772,6 +33772,76 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/9-set-access-permissions-role-based-access-control.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/8-recommend-permission-model.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/7-create-service-principal-client-secret-credentials.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/6-create-service-principal-certificate-credential.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/5-provision-service-principal-azure-stack-hub.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/4-authentication-authorization.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/3-identify-appropriate-method-access-service-principal-users-groups.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/2-azure-stack-hub-hybrid-identity.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/12-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/11-create-azure-custom-role-azure-powershell.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/10-add-new-azure-stack-hub-user-account.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-access-for-azure-stack-hub/13-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/9-knowledge-check.md",
       "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
       "redirect_document_id": false

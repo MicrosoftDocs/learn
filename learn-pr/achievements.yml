@@ -1377,6 +1377,11 @@ achievements:
   title: Integrate AKS with pipelines
   summary: Integrate AKS with pipelines
   iconUrl: /training/achievements/5-integrate-aks-with-pipelines.svg
+- uid: learn.wwl.manage-access-for-azure-stack-hub.badge
+  type: badge
+  title: Manage access for Azure Stack Hub
+  summary: Manage access for Azure Stack Hub
+  iconUrl: /training/achievements/2-manage-access-for-azure-stack-hub.svg
 - uid: learn.wwl.design-processes-to-capture-analyze-user-feedback.badge
   type: badge
   title: Design processes to capture and analyze user feedback
