@@ -16,7 +16,7 @@ Semantic captions and answers provide additional results alongside the ranked se
 
 Semantic captions extract summary sentences from the document verbatim and highlight the most relevant text in the summary sentences.
 
-Semantic answers is an optional additional feature of semantic ranking that provides answers to questions. If the search query appears to be a question and the search results contains text that appears to be a relevant answer, then the semantic answer is returned.
+Semantic answers is an optional additional feature of semantic ranking that provides answers to questions. If the search query appears to be a question and the search results contain text that appears to be a relevant answer, then the semantic answer is returned.
 
 ## How semantic ranking works
 
@@ -36,7 +36,7 @@ See the following video for an overview of the capabilities of AI Search:
 
 Semantic ranking has two key advantages over traditional search results:
 
-* Semantic ranking can rank results to more closely match the semantics of the original query. This can make it more likely hat the most useful documents appear at the top of the search results.
+* Semantic ranking can rank results to more closely match the semantics of the original query. This can make it more likely that the most useful documents appear at the top of the search results.
 * Semantic ranking can find strings within the results to render as a caption on the search results page and to provide an answer to a question.
 
 ## Semantic ranking limitations
