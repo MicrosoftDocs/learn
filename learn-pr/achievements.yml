@@ -4632,6 +4632,11 @@ achievements:
   title: Encrypt public sector data in Azure
   summary: Encrypt public sector data in Azure
   iconUrl: /training/achievements/encrypt-sector-data.svg
+- uid: learn.azure.protect-public-sector-data.trophy
+  type: trophy
+  title: Protect public sector data in Azure
+  summary: Protect public sector data in Azure
+  iconUrl: /training/achievements/protect-public-sector-data.svg
 - uid: learn.connect-aks-edge-essentials-azure-arc.badge
   type: badge
   title: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 

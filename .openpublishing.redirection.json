@@ -38071,6 +38071,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/protect-public-sector-data/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/encrypt-sector-data/7-summary.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
