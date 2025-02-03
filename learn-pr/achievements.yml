@@ -4642,6 +4642,11 @@ achievements:
   title: Manage Azure Stack Hub registration
   summary: Manage Azure Stack Hub registration
   iconUrl: /training/achievements/3-manage-azure-stack-hub-registration.svg
+- uid: learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.badge
+  type: badge
+  title: Manage infrastructure certificates for Azure Stack Hub
+  summary: Manage infrastructure certificates for Azure Stack Hub
+  iconUrl: /training/achievements/2-manage-infrastructure-certificates-for-azure-stack-hub.svg
 - uid: learn.python-partnership.trophy
   type: trophy
   title: Use Python basics to solve mysteries and find answers

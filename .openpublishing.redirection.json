@@ -33907,6 +33907,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/manage-infrastructure-certificates-azure-stack-hub/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-infrastructure-certificates-azure-stack-hub/6-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-infrastructure-certificates-azure-stack-hub/5-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-infrastructure-certificates-azure-stack-hub/4-run-secret-rotation-powershell-commands-external-certificates.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-infrastructure-certificates-azure-stack-hub/3-validate-certificates.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-infrastructure-certificates-azure-stack-hub/2-recommend-certificate-strategy.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-infrastructure-certificates-azure-stack-hub/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-registration/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
