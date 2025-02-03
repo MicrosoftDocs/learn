@@ -4602,6 +4602,11 @@ achievements:
   title: What is your super sleuth personality?
   summary: What is your super sleuth personality? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
   iconUrl: /training/achievements/python-partnership/personality-quiz-revised.svg
+- uid: learn.azure.discover-azure-government.badge
+  type: badge
+  title: Discover the potential of Azure for government
+  summary: Discover the potential of Azure for government
+  iconUrl: /training/achievements/discover-azure-government.svg
 - uid: learn-pr.azure.manage-azure-stack-hci-storage.badge 
   type: badge
   title: Plan and implement Azure Stack HCI storage

@@ -37767,6 +37767,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/discover-azure-government/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/discover-azure-government/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/discover-azure-government/2-cloud-solutions-azure.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/discover-azure-government/3-transparency-public-sector.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/discover-azure-government/4-workloads-use-cases.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/discover-azure-government/5-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/discover-azure-government/6-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/configure-user-group-accounts/5-create.md",
       "redirect_url": "/training/modules/create-configure-manage-identities/",
       "redirect_document_id": false
