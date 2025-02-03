@@ -112,15 +112,15 @@ A *connection string* contains all the information needed for an application to 
 
 Run the following `az sql db show-connection-string` command to get the connection string to the `Logistics` database in a format that `sqlcmd` can use:
 
-    ```azurecli
-    az sql db show-connection-string --client sqlcmd
-    ```
+```azurecli
+ az sql db show-connection-string --client sqlcmd
+```
 
-    Your output resembles the following example. Copy this output for use in the next step.
+Your output resembles the following example. Copy this output for use in the next step.
 
-    ```output
-    "sqlcmd -S tcp:<server-name>.database.windows.net,1433 -d Logistics -U <username> -P <password> -N -l 30"
-    ```
+```output
+"sqlcmd -S tcp:<server-name>.database.windows.net,1433 -d Logistics -U <username> -P <password> -N -l 30"
+```
 
 ### Connection string from the Azure portal
 
