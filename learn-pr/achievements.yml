@@ -1387,6 +1387,11 @@ achievements:
   title: Manage multi-tenancy for Azure Stack Hub
   summary: Manage multi-tenancy for Azure Stack Hub
   iconUrl: /training/achievements/1-manage-multi-tenancy-for-azure-stack-hub.svg
+- uid: learn.wwl.manage-identity-access-for-azure-stack-hub.trophy
+  type: trophy
+  title: Manage Identity and Access for Azure Stack Hub
+  summary: Manage Identity and Access for Azure Stack Hub
+  iconUrl: /training/achievements/manage-identity-and-access-for-azure-stack-hub.svg
 - uid: learn.wwl.design-processes-to-capture-analyze-user-feedback.badge
   type: badge
   title: Design processes to capture and analyze user feedback

@@ -33852,6 +33852,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/manage-identity-access-for-azure-stack-hub/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/manage-multi-tenancy-for-azure-stack-hub/7-knowledge-check.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
