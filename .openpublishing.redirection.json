@@ -41654,6 +41654,41 @@
        "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/8-summary.md",
        "redirect_url": "/training/modules/security-monitoring-automation-solutions/11-summary",
        "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-custom-azure-roles-with-rbac/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-custom-azure-roles-with-rbac/2-what-are-custom-roles.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-custom-azure-roles-with-rbac/3-exercise-create-custom-role.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-custom-azure-roles-with-rbac/4-manage-custom-roles.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-custom-azure-roles-with-rbac/5-exercise-manage-custom-roles.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-custom-azure-roles-with-rbac/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-custom-azure-roles-with-rbac/index.yml",
+      "redirect_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles-portal",
+      "redirect_document_id": false
     }
   ]
 }
