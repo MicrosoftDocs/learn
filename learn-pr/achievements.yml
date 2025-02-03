@@ -4612,6 +4612,11 @@ achievements:
   title: Safeguard public sector data with Azure
   summary: Safeguard public sector data with Azure
   iconUrl: /training/achievements/safeguard-data-sector.svg
+- uid: learn.azure.support-hybrid-clouds.badge
+  type: badge
+  title: Support data classification with private and hybrid clouds
+  summary: Support data classification with private and hybrid clouds
+  iconUrl: /training/achievements/support-hybrid-clouds.svg
 - uid: learn-pr.azure.manage-azure-stack-hci-storage.badge 
   type: badge
   title: Plan and implement Azure Stack HCI storage
