@@ -4607,6 +4607,11 @@ achievements:
   title: Discover the potential of Azure for government
   summary: Discover the potential of Azure for government
   iconUrl: /training/achievements/discover-azure-government.svg
+- uid: learn.azure.safeguard-data-sector.badge
+  type: badge
+  title: Safeguard public sector data with Azure
+  summary: Safeguard public sector data with Azure
+  iconUrl: /training/achievements/safeguard-data-sector.svg
 - uid: learn-pr.azure.manage-azure-stack-hci-storage.badge 
   type: badge
   title: Plan and implement Azure Stack HCI storage
