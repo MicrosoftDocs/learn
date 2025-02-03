@@ -25,23 +25,7 @@ First, you create a new Bicep template with an Azure Cosmos DB account. To do so
 
 1. Add the following content to the file. It's a good idea to enter it manually rather than copy and paste it. That way, you can see how the tooling helps you write your Bicep files.
 
-   ```bicep
-   param cosmosDBAccountName string = 'toyrnd-${uniqueString(resourceGroup().id)}'
-   param location string = resourceGroup().location
-   
-   resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2024-05-15' = {
-     name: cosmosDBAccountName
-     location: location
-     properties: {
-       databaseAccountOfferType: 'Standard'
-       locations: [
-         {
-           locationName: location
-         }
-       ]
-     }
-   }
-   ```
+   :::code language="bicep" source="code/4-documentdb-databaseaccount.bicep" :::
 
    > [!TIP]
    > Bicep is strict about where you put line breaks, so be sure to add line breaks only where shown here.
@@ -68,20 +52,7 @@ Next, you create the database, which is a child resource of the Azure Cosmos DB 
 
 1. Add the following resource definition at the bottom of the file, below the Azure Cosmos DB account resource definition.
 
-   ```bicep
-   resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2024-05-15' = {
-     parent: cosmosDBAccount
-     name: cosmosDBDatabaseName
-     properties: {
-       resource: {
-         id: cosmosDBDatabaseName
-       }
-       options: {
-         throughput: cosmosDBDatabaseThroughput
-       }
-     }
-   }
-   ```
+   :::code language="bicep" source="code/4-documentdb-databaseaccount-sqldatabases.bicep" :::
 
    Notice that this code deploys the database, which is a child resource, by using the `parent` property. Also notice that the code uses the fully qualified resource type, with the API version specified  explicitly.
 
@@ -100,31 +71,19 @@ Now you add another child resource. This time, you add it as a nested resource i
 
 1. Near the bottom of the file, within the database resource definition and before its closing brace (`}`), add the following nested resource definition:
 
-   ```bicep
-   resource container 'containers' = {
-     name: cosmosDBContainerName
-     properties: {
-       resource: {
-         id: cosmosDBContainerName
-         partitionKey: {
-           kind: 'Hash'
-           paths: [
-             cosmosDBContainerPartitionKey
-           ]
-         }
-       }
-       options: {}
-     }
-   }
-   ```
+   :::code language="bicep" source="code/4-container" :::
 
-   Notice that you used a short resource type, `containers`, because Bicep understands that it belongs under the parent resource type. Bicep knows that the fully qualified resource type is `Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers`. You didn't't specify an API version, so Bicep uses the version from the parent resource, `2020-04-01`.
-
-   After you're finished, your complete Bicep template should look like this example:
-
-   :::code language="bicep" source="code/4-complete.bicep" :::
+   Notice that you used a short resource type, `containers`, because Bicep understands that it belongs under the parent resource type. Bicep knows that the fully qualified resource type is `Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers`. You didn't specify an API version, so Bicep uses the version from the parent resource.
 
 1. Save the changes to the file.
+
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your _main.bicep_ file should look like this example:
+
+:::code language="bicep" source="code/4-complete.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
 
 ## Deploy the template to Azure
 
@@ -137,7 +96,7 @@ Now you add another child resource. This time, you add it as a nested resource i
 Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This operation can take a minute or two to complete, before you see a successful deployment.
 
 ```azurecli
-az deployment group create --template-file main.bicep
+az deployment group create --name main --template-file main.bicep
 ```
 
 ::: zone-end
@@ -151,7 +110,7 @@ az deployment group create --template-file main.bicep
 Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This operation can take a minute or two to complete, before you see a successful deployment.
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep
+New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 ```
 
 ::: zone-end
