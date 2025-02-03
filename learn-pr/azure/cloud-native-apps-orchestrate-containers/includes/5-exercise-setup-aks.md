@@ -11,16 +11,16 @@ In this unit, you will:
 > [!NOTE]
 > If you exited your Azure Cloud Shell tab, you need to reapply the following commands or enter the resource names for each step.
 
-    ```azurecli-interactive
-    # Environment variable for the registry name
-    REGISTRYNAME={registry_name}
+```azurecli-interactive
+# Environment variable for the registry name
+REGISTRYNAME={registry_name}
+
+# Environment variable for the resource group name
+RESOURCEGROUP={resource-group-name}
     
-    # Environment variable for the resource group name
-    RESOURCEGROUP={resource-group-name}
-    
-    # Environment variable for the cluster name
-    CLUSTERNAME={cluster-name}
-    ```
+# Environment variable for the cluster name
+CLUSTERNAME={cluster-name}
+```
 
 ## Connect to the cluster using kubectl
 
