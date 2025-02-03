@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-enforcement-cloud-governance-policies.implement-security-controls-to-protect-backups
+title: Implement security controls to protect backups
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Implement security controls to protect backups
+  description: "Implement security controls to protect backups"
+  ms.date: 02/03/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/17-implement-security-controls-to-protect-backups.md)]
