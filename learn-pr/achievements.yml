@@ -4627,6 +4627,11 @@ achievements:
   title: Design cloud solutions for the public sector
   summary: Design cloud solutions for the public sector
   iconUrl: /training/achievements/design-secure-environment-government.svg
+- uid: learn.azure.encrypt-sector-data.badge
+  type: badge
+  title: Encrypt public sector data in Azure
+  summary: Encrypt public sector data in Azure
+  iconUrl: /training/achievements/encrypt-sector-data.svg
 - uid: learn.connect-aks-edge-essentials-azure-arc.badge
   type: badge
   title: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 
