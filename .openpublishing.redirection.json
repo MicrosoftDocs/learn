@@ -38022,6 +38022,40 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/design-secure-environment-government/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-secure-environment-government/6-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-secure-environment-government/5-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-secure-environment-government/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-secure-environment-government/4-design-data-classifications.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },    {
+      "source_path": "learn-pr/azure/design-secure-environment-government/3-safeguard-data-azure.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/design-secure-environment-government/2-discover-cloud-solutions.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/configure-log-analytics/6-knowledge-check.md",
       "redirect_url": "/training/modules/analyze-infrastructure-with-azure-monitor-logs/",
       "redirect_document_id": false

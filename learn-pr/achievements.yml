@@ -4622,6 +4622,11 @@ achievements:
   title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
   summary: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
   iconUrl: /training/achievements/iot/create-first-aks-edge-essentials.svg
+- uid: learn.azure.design-secure-environment-government.badge
+  type: badge
+  title: Design cloud solutions for the public sector
+  summary: Design cloud solutions for the public sector
+  iconUrl: /training/achievements/design-secure-environment-government.svg
 - uid: learn.connect-aks-edge-essentials-azure-arc.badge
   type: badge
   title: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 
