@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Connect on-premises networks to Azure by using site-to-site VPN gateways
   description: Connect on-premises networks to Azure by using site-to-site VPN gateways
-  ms.date: 12/06/2023
+  ms.date: 01/31/2025
   author: cherylmc
   ms.author: cherylmc
   ms.topic: unit
