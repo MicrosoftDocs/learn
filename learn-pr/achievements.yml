@@ -4637,6 +4637,11 @@ achievements:
   title: Prepare for Azure Stack Hub deployment
   summary: Prepare for Azure Stack Hub deployment
   iconUrl: /learn/achievements/1-prepare-for-azure-stack-hub-deployment.svg
+- uid: learn.wwl.manage-azure-stack-hub-registration.badge
+  type: badge
+  title: Manage Azure Stack Hub registration
+  summary: Manage Azure Stack Hub registration
+  iconUrl: /training/achievements/3-manage-azure-stack-hub-registration.svg
 - uid: learn.python-partnership.trophy
   type: trophy
   title: Use Python basics to solve mysteries and find answers
