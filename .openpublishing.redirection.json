@@ -33917,6 +33917,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/implement-data-center-integration-for-azure-stack-hub/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/manage-infrastructure-certificates-azure-stack-hub/5-knowledge-check.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
