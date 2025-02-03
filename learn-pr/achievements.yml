@@ -4667,6 +4667,26 @@ achievements:
   title: Get started with Azure Kubernetes Service (AKS) Edge Essentials
   summary: Get started with Azure Kubernetes Service (AKS) Edge Essentials
   iconUrl: /training/achievements/iot/get-started-aks-edge-essentials.svg
+- uid: learn.wwl.prepare-for-azure-stack-hub-deployment.badge
+  type: badge
+  title: Prepare for Azure Stack Hub deployment
+  summary: Prepare for Azure Stack Hub deployment
+  iconUrl: /learn/achievements/1-prepare-for-azure-stack-hub-deployment.svg
+- uid: learn.wwl.manage-azure-stack-hub-registration.badge
+  type: badge
+  title: Manage Azure Stack Hub registration
+  summary: Manage Azure Stack Hub registration
+  iconUrl: /training/achievements/3-manage-azure-stack-hub-registration.svg
+- uid: learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.badge
+  type: badge
+  title: Manage infrastructure certificates for Azure Stack Hub
+  summary: Manage infrastructure certificates for Azure Stack Hub
+  iconUrl: /training/achievements/2-manage-infrastructure-certificates-for-azure-stack-hub.svg
+- uid: learn.wwl.implement-data-center-integration-for-azure-stack-hub.trophy
+  type: trophy
+  title: Implement Data Center Integration for Azure Stack Hub
+  summary: Implement Data Center Integration for Azure Stack Hub
+  iconUrl: /training/achievements/implement-data-center-integration-for-azure-stack-hub.svg
 - uid: learn.python-partnership.trophy
   type: trophy
   title: Use Python basics to solve mysteries and find answers
