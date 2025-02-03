@@ -49,7 +49,7 @@ In this step you transfer data from your old server to the destination server af
 1. On the **Transfer data** page, select **Enter credentials**. Enter the admin credentials that work on the destination servers you want to migrate to, and then select **Next**.
 2. On the **Add a destination device and mappings** page, the first source server is listed. Enter the name of the server or clustered file server to which you want to migrate, and then select **Scan device**.
    If you're migrating from a domain-joined source computer, the destination server must be joined to the same domain.
-   You can also select **Create a new Azure VM** then use the wizard to deploy a new destination server in Azure. This will automatically size your VM, provision storage, format disks, join the domain, and add the Storage Migration Service proxy to a Windows Server 2025 destination. You can choose from Windows Server 2025 (recommended) or ealier versions of any size and use managed disks.
+   You can also select **Create a new Azure VM** then use the wizard to deploy a new destination server in Azure. This will automatically size your VM, provision storage, format disks, join the domain, and add the Storage Migration Service proxy to a Windows Server 2025 destination. You can choose from Windows Server 2025 (recommended) or earlier versions of any size and use managed disks.
 
     [![A screenshot of the Windows Admin Center in Microsoft Edge. The administrator has selected the Storage Migration Service. In the details pane, the administrator is executing step 2: Transfer data. A single server is listed: Engineering5.corp.contoso.com.](../media/m17-storage-migrate-2.png)](../media/m17-storage-migrate-2.png#lightbox)
 
