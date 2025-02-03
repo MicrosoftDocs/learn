@@ -9,7 +9,6 @@ In this unit, you will:
 * Review and deploy the service manifest file.
 
 > [!NOTE]
->  
 > If you exited your Azure Cloud Shell tab, you need to reapply the following commands or enter the resource names for each step.
 
     ```azurecli-interactive
