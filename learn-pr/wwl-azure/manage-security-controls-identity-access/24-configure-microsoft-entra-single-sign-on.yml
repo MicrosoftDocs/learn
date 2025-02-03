@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-controls-identity-access.configure-microsoft-entra-single-sign-on
+title: Implement single sign-on (SSO)
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Implement single sign-on (SSO)
+  description: "Implement single sign-on (SSO)"
+  ms.date: 02/03/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/24-configure-microsoft-entra-single-sign-on.md)]

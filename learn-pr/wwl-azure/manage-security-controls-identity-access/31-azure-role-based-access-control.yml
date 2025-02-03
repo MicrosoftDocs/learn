@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-controls-identity-access.azure-role-based-access-control
+title: Azure role-based access control
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Azure role-based access control
+  description: "Azure role-based access control"
+  ms.date: 02/03/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/31-azure-role-based-access-control.md)]
