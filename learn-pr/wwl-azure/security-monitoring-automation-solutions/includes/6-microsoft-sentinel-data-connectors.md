@@ -11,7 +11,7 @@ The Microsoft Sentinel Data connectors page shows the full list of connectors an
 
 From the Data connectors page, select the active or custom connector you want to connect, and then select Open connector page. If you don't see the data connector you want, install the solution associated with it from the Content Hub.
 
-Once you fulfill all the prerequisites listed in the Instructions tab, the connector page describes how to ingest the data to Microsoft Sentinel. It may take some time for data to start arriving.<br>
+Once you fulfill all the prerequisites listed in the Instructions tab, the connector page describes how to ingest the data to Microsoft Sentinel. It may take some time for data to start arriving.
 
 After you connect, you see a summary of the data in the Data received graph, and the connectivity status of the data types.
 
@@ -19,7 +19,7 @@ After you connect, you see a summary of the data in the Data received graph, and
 
 Many security technologies provide a set of APIs for retrieving log files, and some data sources can use those APIs to connect to Microsoft Sentinel.
 
-Data connectors that use APIs either integrate from the provider side or integrate using Azure Functions, as described in the following sections.<br>
+Data connectors that use APIs either integrate from the provider side or integrate using Azure Functions, as described in the following sections.
 
 ### REST API integration on the provider side<br>
 
@@ -39,7 +39,7 @@ The following sections describe the different types of Microsoft Sentinel agent-
 
 You can stream events from Linux-based, Syslog-supporting devices into Microsoft Sentinel using the Azure Monitor Agent (AMA). Depending on the device type, the agent is installed either directly on the device, or on a dedicated Linux-based log forwarder. The AMA receives events from the Syslog daemon over UDP. The Syslog daemon forwards events to the agent internally, communicating over UDS (Unix Domain Sockets). The AMA then transmits these events to the Microsoft Sentinel workspace.
 
-Here is a simple flow that shows how Microsoft Sentinel streams Syslog data.<br>
+Here is a simple flow that shows how Microsoft Sentinel streams Syslog data.
 
 1.  The device's built-in Syslog daemon collects local events of the specified types, and forwards the events locally to the agent.<br>
 2.  The agent streams the events to your Log Analytics workspace.
