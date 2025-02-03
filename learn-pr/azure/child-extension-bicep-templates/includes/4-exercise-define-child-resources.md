@@ -71,7 +71,7 @@ Now you add another child resource. This time, you add it as a nested resource i
 
 1. Near the bottom of the file, within the database resource definition and before its closing brace (`}`), add the following nested resource definition:
 
-   :::code language="bicep" source="code/4-container" :::
+   :::code language="bicep" source="code/4-container.bicep" :::
 
    Notice that you used a short resource type, `containers`, because Bicep understands that it belongs under the parent resource type. Bicep knows that the fully qualified resource type is `Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers`. You didn't specify an API version, so Bicep uses the version from the parent resource.
 
