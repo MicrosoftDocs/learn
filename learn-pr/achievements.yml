@@ -4617,6 +4617,11 @@ achievements:
   title: Support data classification with private and hybrid clouds
   summary: Support data classification with private and hybrid clouds
   iconUrl: /training/achievements/support-hybrid-clouds.svg
+- uid: learn.azure.optimize-government-operations.trophy
+  type: trophy
+  title: Optimize government operations with Azure
+  summary: Optimize government operations with Azure
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn-pr.azure.manage-azure-stack-hci-storage.badge 
   type: badge
   title: Plan and implement Azure Stack HCI storage

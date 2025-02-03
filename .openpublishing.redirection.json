@@ -37877,6 +37877,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/optimize-government-operations/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/support-hybrid-clouds/5-services-data-classification.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
