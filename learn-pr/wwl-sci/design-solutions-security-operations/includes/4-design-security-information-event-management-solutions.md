@@ -1,47 +1,89 @@
-XDR security is a step forward in cyber security because it takes the threat data from systems that were once isolated and unifies them so that you can see patterns and act on them faster.
+Microsoft Sentinel is a cloud-native Security Information and Event Management (SIEM) and Security Orchestration, Automation, and Response (SOAR) solution. It helps enterprises collect large volumes of security data, detect and investigate potential threats, and automate response actions. By integrating with a wide array of data sources and using advanced analytics, Microsoft Sentinel streamlines security operations and reduces the time needed to address threats.
 
-For example, Microsoft XDR unifies endpoint (endpoint detection and response or EDR), email, app, and identity security in one place.
+A Log Analytics workspace is a data store into which you can collect any type of log data from all of your Azure and non-Azure resources and applications. Microsoft Sentinel, and other Azure services, including Azure Monitor and Microsoft Defender for Cloud use a Log Analytics workspace as the underlying storage and analytics engine for all ingested data. Microsoft Sentinel uses the data in the workspace to power its core features, including analytics rules, threat hunting, incident investigation, and workbooks.
 
-Microsoft Defender XDR is an **eXtended detection and response (XDR) solution** that automatically collects, correlates, and analyzes signal, threat, and alert data from *across* your Microsoft 365 environment, including *endpoint, email, applications, and identities*. It leverages **artificial intelligence (AI) and automation to *automatically* stop attacks**, and remediate affected assets to a safe state.
+Because the Log Analytics workspace is where all ingested data is stored, organizations need to consider factors including the number of workspaces needed for their environment and the configuration and placement of those workspaces to meet their requirements while optimizing costs. This unit presents criteria to consider when designing your workspace architecture. For information on Microsoft Sentinel capabilities, see [What is Microsoft Sentinel?](/azure/sentinel/overview) For information on concepts related to Log Analytics workspaces, see [Log Analytics workspace overview](/azure/azure-monitor/logs/log-analytics-workspace-overview).
 
-## Microsoft recommendations for evaluating Microsoft Defender XDR security
+## Design strategy
+Your design should always start with a single workspace to reduce the complexity of managing multiple workspaces and in querying data from them. There are no performance limitations from the amount of data in your workspace. Multiple services and data sources can send data to the same workspace. As you identify criteria to create more workspaces, your design should use the fewest number of workspaces to meet your requirements.
 
-Microsoft recommends you create your evaluation in an existing production subscription of Office 365. This way you will gain real-world insights immediately and can tune settings to work against current threats in your environment. After you've gained experience and are comfortable with the platform, simply promote each component, one at a time, to production.
+Designing a workspace configuration includes evaluation of multiple criteria. But some of the criteria might be in conflict. For example, you might be able to reduce egress charges by creating a separate workspace in each Azure region. Consolidating into a single workspace might allow you to reduce charges even more with a commitment tier. Evaluate each of the criteria independently. Consider your requirements and priorities to determine which design is most effective for your environment.
 
-### Microsoft Defender XDR components secure devices, identity, data, and applications
+## Design criteria
+The following table presents criteria to consider when you design your workspace architecture. 
 
-Microsoft Defender XDR is made up of these security technologies, operating in tandem. You don't need all of these components to benefit from the capabilities of XDR and Microsoft Defender XDR. You will realize gains and efficiencies through using one or two as well.
+| Criteria | Description |
+|:---|:---|
+| [Operational and security data](/azure/azure-monitor/logs/workspace-design#operational-and-security-data) | You may choose to combine operational data from Azure Monitor in the same workspace as security data from Microsoft Sentinel or separate each into their own workspace. Combining them gives you better visibility across all your data, while your security standards might require separating them so that your security team has a dedicated workspace. You may also have cost implications to each strategy. |
+| [Azure tenants](/azure/azure-monitor/logs/workspace-design#azure-tenants) | If you have multiple Azure tenants, you'll usually create a workspace in each one. Several data sources can only send monitoring data to a workspace in the same Azure tenant. |
+| [Azure regions](/azure/azure-monitor/logs/workspace-design#azure-regions) | Each workspace resides in a particular Azure region. You might have regulatory or compliance requirements to store data in specific locations. |
+| [Data ownership](/azure/azure-monitor/logs/workspace-design#data-ownership) | You might choose to create separate workspaces to define data ownership. For example, you might create workspaces by subsidiaries or affiliated companies. |
+| [Split billing](/azure/azure-monitor/logs/workspace-design#split-billing) | By placing workspaces in separate subscriptions, they can be billed to different parties. |
+| [Data retention](/azure/azure-monitor/logs/workspace-design#data-retention) | You can set different retention settings for each workspace and each table in a workspace. You need a separate workspace if you require different retention settings for different resources that send data to the same tables. |
+| [Commitment tiers](/azure/azure-monitor/logs/workspace-design#commitment-tiers) | Commitment tiers allow you to reduce your ingestion cost by committing to a minimum amount of daily data in a single workspace. |
+| [Legacy agent limitations](/azure/azure-monitor/logs/workspace-design#legacy-agent-limitations) | Legacy virtual machine agents have limitations on the number of workspaces they can connect to. |
+| [Data access control](/azure/azure-monitor/logs/workspace-design#data-access-control) | Configure access to the workspace and to different tables and data from different resources. |
+| [Resilience](/azure/azure-monitor/logs/workspace-design#resilience)| To ensure that data in your workspace is available in the event of a region failure, you can ingest data into multiple workspaces in different regions.|
 
-|Component|Description|Reference material|
-|---|---|---|
-|Microsoft Defender for Identity|Microsoft Defender for Identity uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.|[What is Microsoft Defender for Identity?](/defender-for-identity/what-is)|
-|Exchange Online Protection|Exchange Online Protection is the native cloud-based SMTP relay and filtering service that helps protect your organization against spam and malware.|[Exchange Online Protection (EOP) overview - Office 365](/defender-office-365/eop-about)|
-|Microsoft Defender for Office 365|Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.|[Microsoft Defender for Office 365 - Office 365](/defender-office-365/defender-for-office-365-whats-new)|
-|Microsoft Defender for Endpoint|Microsoft Defender for Endpoint is a unified platform for device protection, post-breach detection, automated investigation, and recommended response.|[Microsoft Defender for Endpoint - Windows security](/defender-endpoint/microsoft-defender-endpoint)|
-|Microsoft Defender for Cloud Apps|Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.|[What is Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)|
-|Microsoft Entra ID Protection|Microsoft Entra ID Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Microsoft Entra ID to allow or prevent account access, depending on how Conditional Access policies are configured. Microsoft Entra ID Protection is licensed separately from Microsoft Defender XDR. It is included with Microsoft Entra ID P2.|[What is Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)|
+## Work with multiple workspaces
+Many designs include multiple workspaces. For example, a central security operations team might use its own Microsoft Sentinel workspaces to manage centralized artifacts like analytics rules or workbooks.
 
-## Microsoft Defender XDR architecture
+Microsoft Sentinel includes features to assist you in analyzing this data across workspaces. For more information, see [Extend Microsoft Sentinel across workspaces and tenants](/azure/sentinel/extend-sentinel-across-workspaces-tenants)
 
-The diagram below illustrates high-level architecture for key Microsoft Defender XDR components and integrations. *Detailed* architecture for each Defender component, and use-case scenarios, are given throughout this series of articles.
+When naming each workspace, we recommend including a meaningful indicator in the name so that you can easily identity the purpose of each workspace.
 
-:::image type="content" source="../media/eval-defender-xdr-m365-defender-eval-architecture.png" alt-text="A diagram that shows the high-level architecture of Microsoft Defender XDR." lightbox="../media/eval-defender-xdr-m365-defender-eval-architecture.png":::
+## Multiple tenant strategies
+Environments with multiple Azure tenants, including Microsoft service providers (MSPs), independent software vendors (ISVs), and large enterprises, often require a strategy where a central administration team has access to administer workspaces located in other tenants. Each of the tenants might represent separate customers or different business units.
 
-In this illustration:
+> [!NOTE]
+> For partners and service providers who are part of the [Cloud Solution Provider (CSP) program](https://partner.microsoft.com/membership/cloud-solution-provider), Log Analytics in Azure Monitor is one of the Azure services available in Azure CSP subscriptions.
 
-- Microsoft Defender XDR combines the signals from all of the Defender components to provide extended detection and response (XDR) across domains. This includes a unified incident queue, automated response to stop attacks, self-healing (for compromised devices, user identities, and mailboxes), cross-threat hunting, and threat analytics.
-- Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. It shares signals resulting from these activities with Microsoft Defender XDR. Exchange Online Protection (EOP) is integrated to provide end-to-end protection for incoming email and attachments.
-- Microsoft Defender for Identity gathers signals from servers running Active Directory Federated Services (AD FS) and on-premises Active Directory Domain Services (AD DS). It uses these signals to protect your hybrid identity environment, including protecting against hackers that use compromised accounts to move laterally across workstations in the on-premises environment.
-- Microsoft Defender for Endpoint gathers signals from and protects devices used by your organization.
-- Microsoft Defender for Cloud Apps gathers signals from your organization's use of cloud apps and protects data flowing between your environment and these apps, including both sanctioned and unsanctioned cloud apps.
-- Microsoft Entra ID Protection evaluates risk data from billions of sign-in attempts and uses this data to evaluate the risk of each sign-in to your environment. This data is used by Microsoft Entra ID to allow or prevent account access, depending on how Conditional Access policies are configured. Microsoft Entra ID Protection is licensed separately from Microsoft Defender XDR. It is included with Microsoft Entra ID P2.
+Two basic strategies for this functionality are described in the following sections.
 
-<a name='microsoft-siem-and-soar-can-use-data-from-microsoft-365-defender'></a>
+### Distributed architecture
+In a distributed architecture, a Log Analytics workspace is created in each Azure tenant. This option is the only one you can use if you're monitoring Azure services other than virtual machines.
 
-## Microsoft SIEM and SOAR can use data from Microsoft Defender XDR
+There are two options to allow service provider administrators to access the workspaces in the customer tenants:
 
-Additional optional architecture components not included in this illustration:
+- Use [Azure Lighthouse](/azure/lighthouse/overview) to access each customer tenant. The service provider administrators are included in a Microsoft Entra user group in the service provider's tenant. This group is granted access during the onboarding process for each customer. The administrators can then access each customer's workspaces from within their own service provider tenant instead of having to sign in to each customer's tenant individually. For more information, see [Monitor customer resources at scale](/azure/lighthouse/how-to/monitor-at-scale).
+- Add individual users from the service provider as [Microsoft Entra guest users (B2B)](/azure/active-directory/external-identities/what-is-b2b). The customer tenant administrators manage individual access for each service provider administrator. The service provider administrators must sign in to the directory for each tenant in the Azure portal to access these workspaces.
 
-- **Detailed signal data from all Microsoft Defender XDR components can be integrated into Microsoft Sentinel** and combined with other logging sources to offer full SIEM and SOAR capabilities and insights.
-- **For more reading on using Microsoft Sentinel, an Azure SIEM, with Microsoft Defender XDR** as an XDR, take a look at this [Overview article](/azure/sentinel/microsoft-365-defender-sentinel-integration) and the Microsoft Sentinel and Microsoft Defender XDR [integration steps](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE).
-- For more on SOAR in Microsoft Sentinel (including links to playbooks in the Microsoft Sentinel GitHub Repository), please read [this article](/azure/sentinel/automate-responses-with-playbooks).
+Advantages to this strategy:
+
+- Logs can be collected from all types of resources.
+- The customer can confirm specific levels of permissions with [Azure delegated resource management](/azure/lighthouse/concepts/architecture). Or the customer can manage access to the logs by using their own [Azure RBAC](/azure/role-based-access-control/overview).
+- Each customer can have different settings for their workspace, such as retention and data cap.
+- Isolation between customers for regulatory and compliance.
+- The charge for each workspace is included in the bill for the customer's subscription.
+
+Disadvantages to this strategy:
+
+- Running a query over a large number of workspaces is slow and can't scale above 100 workspaces. This means that you can create a central visualization and data analytics but it is slow if there are more than a few dozen workspaces. This situation is less acute if all workspaces are colocated on the same [dedicated cluster](/azure/azure-monitor/logs/logs-dedicated-clusters). See [here](/azure/azure-monitor/logs/cross-workspace-query) for more details on running queries across workspaces.
+- If customers aren't onboarded for Azure delegated resource management, service provider administrators must be provisioned in the customer directory. This requirement makes it more difficult for the service provider to manage many customer tenants at once.
+- When running a query on a workspace, the workspace admins might have visibility to the full text of the query via [query audit](/azure/azure-monitor/logs/query-audit).
+
+### Centralized
+A single workspace is created in the service provider's subscription. This option can collect data from customer virtual machines and Azure PaaS services based on diagnostics settings. Agents installed on the virtual machines and PaaS services can be configured to send their logs to this central workspace.
+
+Advantages to this strategy:
+
+- It's easy to manage many customers.
+- The service provider has full ownership over the logs and the various artifacts, such as functions and saved queries.
+- A service provider can perform analytics across all of its customers.
+
+Disadvantages to this strategy:
+
+- Logs can only be collected from virtual machines with an agent or Azure PaaS services (via Azure Lighthouse delegation). It won't work with SaaS connectors, or Azure Service Fabric data sources.
+- It might be difficult to separate data between customers because their data shares a single workspace. Queries need to use the computer's fully qualified domain name or the Azure subscription ID.
+- All data from all customers will be stored in the same region with a single bill and the same retention and configuration settings.
+
+### Hybrid
+In a hybrid model, each tenant has its own workspace. A mechanism is used to pull data into a central location for reporting and analytics. This data could include a small number of data types or a summary of the activity, such as daily statistics.
+
+There are several options to implement logs in a central location:
+
+- **Central workspace**: The service provider creates a workspace in its tenant and pulls data from the various workspaces using:
+    - A script that uses the [Query API](/azure/azure-monitor/logs/api/overview) with the [logs ingestion API](/azure/azure-monitor/logs/logs-ingestion-api-overview) to send the data from the tenant workspaces to the central workspace.
+    - [Azure Logic Apps](/azure/logic-apps/logic-apps-overview) to copy data to the central workspace.
+    - [Data export](/azure/azure-monitor/logs/logs-data-export) from the source workspace and re-ingestion to the central workspace. You can also create [summary rules](/azure/azure-monitor/logs/summary-rules) to export an aggregation of key data from the original workspaces into the central workspace.
+- **Power BI**: The tenant workspaces export data to Power BI by using the integration between the [Log Analytics workspace and Power BI](/azure/azure-monitor/logs/log-powerbi).

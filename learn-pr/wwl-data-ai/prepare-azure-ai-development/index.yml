@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.prepare-azure-ai-development
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Plan and Prepare to Develop AI Solutions on Azure
+  description: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Proper planning and preparation involves identifying the services you'll use and creating an optimal working environment for your development team.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 01/31/2025
+  ms.service: azure-ai-services
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: ai-learning-hub
+title: Plan and prepare to develop AI solutions on Azure
+summary: "Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Proper planning and preparation involves identifying the services you'll use and creating an optimal working environment for your development team."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Identify common AI capabilities that you can implement in applications
+    - Describe Azure AI Services and considerations for using them
+    - Describe Azure AI Foundry and considerations for using it
+    - Identify appropriate developer tools and SDKs for an AI project
+    - Describe considerations for responsible AI
+prerequisites: |
+  Before starting this module, you should be familiar with:
+    - Basic software development concepts
+    - Basic AI concepts
+    - Basic Azure concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - ai-engineer
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - azure
+  - ai-services
+subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - artificial-intelligence
+  - app-development
+units:
+- learn.wwl.prepare-azure-ai-development.introduction
+- learn.wwl.prepare-azure-ai-development.what-is-ai
+- learn.wwl.prepare-azure-ai-development.azure-ai-services
+- learn.wwl.prepare-azure-ai-development.azure-ai-foundry
+- learn.wwl.prepare-azure-ai-development.tools-and-sdks
+- learn.wwl.prepare-azure-ai-development.responsible-ai
+- learn.wwl.prepare-azure-ai-development.exercise-explore-ai-foundry
+- learn.wwl.prepare-azure-ai-development.knowledge-check
+- learn.wwl.prepare-azure-ai-development.summary
+badge:
+  uid: learn.wwl.prepare-azure-ai-development.badge
+
