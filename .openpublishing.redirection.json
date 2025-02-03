@@ -37887,6 +37887,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/safeguard-data-sector/10-summary-resources.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/support-hybrid-clouds/4-choose-deployment-model.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
