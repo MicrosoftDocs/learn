@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Prepare Azure and on-premises virtual networks by using Azure CLI commands
   description: Exercise - Prepare Azure and on-premises virtual networks by using Azure CLI commands
-  ms.date: 12/06/2023
+  ms.date: 01/31/2025
   author: cherylmc
   ms.author: cherylmc
   ms.topic: unit
