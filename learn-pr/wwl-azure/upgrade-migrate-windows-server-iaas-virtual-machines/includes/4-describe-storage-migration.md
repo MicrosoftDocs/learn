@@ -1,4 +1,4 @@
-In addition to migrating on-premises VMs, Contoso IT staff are also planning how best to migrate storage. They've asked you to research the Windows Server Migration Service.
+In addition to migrating on-premises VMs, Contoso's IT staff are also planning how best to migrate storage. They've asked you to research the Windows Server Migration Service.
 
 The Windows Server Storage Migration Service is part of Windows Admin Center (WAC). This service automates the process of migrating from legacy Windows Server versions to supported platforms, whether on-premises or to Azure.
 
@@ -6,7 +6,7 @@ Storage migration has always been a difficult process to perform because the mos
 
 ## Why use Storage Migration Service?
 
-You'll want to use Storage Migration Service if you have a server (or multiple servers) that you want to migrate to newer hardware or VMs. Storage Migration Service is designed to help with this by:
+You want to use Storage Migration Service if you have a server (or multiple servers) that you want to migrate to newer hardware or VMs. Storage Migration Service is designed to help with this by:
 
 - Inventorying multiple servers and their data.
 - Rapidly transferring files, file shares, and security configuration from the source servers.
@@ -28,16 +28,16 @@ The destination servers assume the source servers' former identities so that app
 To use Storage Migration Service, you need the following:
 
 - A source server or failover cluster from which to migrate files and data.
-- A destination server running Windows Server 2019 or Windows Server 2022 (clustered or standalone) to migrate to. You can also use Windows Server 2016 or even Windows Server 2012 R2, but both are around 50 percent slower than Windows Server 2019 or Windows Server 2022.
-- An Orchestrator server running Windows Server 2019 or Windows Server 2022 to manage the migration.
+- A destination server running Windows Server 2019 or later (clustered or standalone) to migrate to. You can also use Windows Server 2016 or even Windows Server 2012 R2, but both are around 50 percent slower than Windows Server 2019 or later.
+- An Orchestrator server running Windows Server 2019 or later to manage the migration.
 
 > [!TIP]
-> If you're migrating only a few servers and one of the servers is running Windows Server 2019 or Windows Server 2022, you can use that as the Orchestrator. If you're migrating more servers, we recommend using a separate server to function as the Orchestrator server.
+> If you're migrating only a few servers and one of the servers is running Windows Server 2019 or later, you can use that as the Orchestrator. If you're migrating more servers, we recommend using a separate server to function as the Orchestrator server.
 
 - A PC or server running WAC to run the Storage Migration Service user interface, unless you prefer using Windows PowerShell to manage the migration. 
 
 > [!NOTE]
-> Microsoft strongly recommends that the Orchestrator and destination computers have at least two cores or two virtual CPUs (vCPUs), and at least 2 gigabytes (GB) of memory. Inventory and transfer operations are significantly faster with more processors and memory.
+> Microsoft strongly recommends that the Orchestrator and destination computers have at least two cores or two virtual CPUs (vCPUs), and at least 2 gigabytes (GB) of memory. Inventory and transfer operations are faster with more processors and memory.
 
 ### Security requirements, the Storage Migration Service proxy service, and firewall ports
 
@@ -51,7 +51,7 @@ The following is the security requirements, Storage Migration Service proxy serv
   - Netlogon Service (NP-In)
   - Windows Management Instrumentation (DCOM-In)
   - Windows Management Instrumentation (WMI-In)
-- If the computers belong to an AD DS domain, they should all belong to the same forest. The destination server must also be in the same domain as the source server if you want to transfer the source's domain name to the destination when cutting over. Cutover technically works across domains, but the fully-qualified domain name (FQDN) of the destination will be different from the source.
+- If the computers belong to an AD DS domain, they should all belong to the same forest. The destination server must also be in the same domain as the source server if you want to transfer the source's domain name to the destination when cutting over. Cutover technically works across domains, but the fully qualified domain name (FQDN) of the destination will be different from the source.
 
 ### Requirements for source servers
 
