@@ -4632,6 +4632,11 @@ achievements:
   title: Get started with Azure Kubernetes Service (AKS) Edge Essentials
   summary: Get started with Azure Kubernetes Service (AKS) Edge Essentials
   iconUrl: /training/achievements/iot/get-started-aks-edge-essentials.svg
+- uid: learn.wwl.prepare-for-azure-stack-hub-deployment.badge
+  type: badge
+  title: Prepare for Azure Stack Hub deployment
+  summary: Prepare for Azure Stack Hub deployment
+  iconUrl: /learn/achievements/1-prepare-for-azure-stack-hub-deployment.svg
 - uid: learn.python-partnership.trophy
   type: trophy
   title: Use Python basics to solve mysteries and find answers
