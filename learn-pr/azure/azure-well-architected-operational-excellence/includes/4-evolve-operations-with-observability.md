@@ -11,7 +11,7 @@ A crucial aspect of application monitoring is using health modeling to help you 
 
 Contoso developed an app for internal use called Contoso Real Estate. This web app allows new hires or existing employees that are relocating to search for and reserve short-term housing to help with their relocation. Contoso's HR department also uses the app to assist with relocations. 
 
-The app is in production and is deployed entirely in Azure. It’s built on micro-services using Azure Container Apps and also uses Azure Functions, Azure Database for PostrgreSQL, Azure Blob Storage, and Azure Monitor.
+The app is in production and is deployed entirely in Azure. It’s built on micro-services using Azure Container Apps and also uses Azure Functions, Azure Database for PostgreSQL, Azure Blob Storage, and Azure Monitor.
 
 ### Observe your workload through telemetry
 
