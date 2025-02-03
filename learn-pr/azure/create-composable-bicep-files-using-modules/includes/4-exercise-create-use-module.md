@@ -103,7 +103,7 @@ Here, you add the _app_ module to your Bicep template as a starting point.
 
 ## Verify your Bicep file
 
-After you've completed all of the preceding changes, your main.bicep file should look like this example:
+After you've completed all of the preceding changes, your _main.bicep_ file should look like this example:
 
 :::code language="bicep" source="code/4-template-2.bicep" :::
 
