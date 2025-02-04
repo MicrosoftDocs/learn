@@ -4,8 +4,8 @@ Privileged Identity Management (PIM) is a service in Microsoft Entra ID that ena
 
 Organizations want to minimize the number of people who have access to secure information or resources, because that reduces the chance of
 
- -  a malicious actor getting access
- -  an authorized user inadvertently impacting a sensitive resource
+ -  a malicious actor getting access.
+ -  an authorized user inadvertently impacting a sensitive resource.
 
 However, users still need to carry out privileged operations in Microsoft Entra ID, Azure, Microsoft 365, or SaaS apps. Organizations can give users just-in-time privileged access to Azure and Microsoft Entra resources and can oversee what those users are doing with their privileged access.
 
@@ -13,16 +13,16 @@ Privileged Identity Management (PIM) provides a time-based and approval-based ro
 
 PIM enables you to allow a specific set of actions at a particular scope. Key features include:
 
- -  Provide just-in-time privileged access to resources<br>
- -  Assign eligibility for membership or ownership of PIM for Groups<br>
- -  Assign time-bound access to resources using start and end dates<br>
- -  Require approval to activate privileged roles<br>
- -  Enforce Multifactor authentication to activate any role<br>
- -  Enforce Conditional Access policies to activate any role (Public preview)<br>
- -  Use justification to understand why users activate<br>
- -  Get notifications when privileged roles are activated<br>
- -  Conduct access reviews to ensure users still need roles<br>
- -  Download audit history for internal or external audit<br>
+ -  Provide just-in-time privileged access to resources.<br>
+ -  Assign eligibility for membership or ownership of PIM for Groups.<br>
+ -  Assign time-bound access to resources using start and end dates.<br>
+ -  Require approval to activate privileged roles.<br>
+ -  Enforce Multifactor authentication to activate any role.<br>
+ -  Enforce Conditional Access policies to activate any role (Public preview).<br>
+ -  Use justification to understand why users activate.<br>
+ -  Get notifications when privileged roles are activated.<br>
+ -  Conduct access reviews to ensure users still need roles.<br>
+ -  Download audit history for internal or external audit.<br>
 
 ## Understand PIM<br>
 
@@ -168,7 +168,7 @@ We recommend you have at least one administrator read through all audit events o
 
 [Configure security alerts for the Microsoft Entra roles](/entra/id-governance/privileged-identity-management/pim-how-to-configure-security-alerts) which triggers an alert in case of suspicious and unsafe activity.
 
-## Plan and implement PIM for Azure Resource roles
+## Plan and implement PIM for Azure resource roles
 
 Follow these tasks to prepare PIM to manage Azure resource roles.
 
@@ -192,7 +192,7 @@ We also recommend you work with Subscription or Resource owners of critical serv
 
 For subscriptions or resources that aren’t as critical, you won’t need to set up PIM for all roles. However, you should still protect the Owner and User Access Administrator roles with PIM.
 
-### Configure PIM settings for Azure Resource roles
+### Configure PIM settings for Azure resource roles
 
 [Draft and configure settings](/entra/id-governance/privileged-identity-management/pim-resource-roles-configure-role-settings) for the Azure Resource roles that you’ve planned to protect with PIM.
 

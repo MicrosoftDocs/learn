@@ -24,17 +24,17 @@ For many organizations, identity lifecycle for employees and other workers is ti
 
 In Microsoft Entra ID Governance, you can automate the identity lifecycle for these individuals using:
 
- -  inbound provisioning from your organization's HR sources, including retrieving from Workday and SuccessFactors, to automatically maintain user identities in both Active Directory and Microsoft Entra ID.<br>
- -  lifecycle workflows to automate workflow tasks that run at certain key events, such before a new employee is scheduled to start work at the organization, as they change status during their time in the organization, and as they leave the organization. For example, a workflow can be configured to send an email with a temporary access pass to a new user's manager, or a welcome email to the user, on their first day.
- -  automatic assignment policies in entitlement management to add and remove a user's group memberships, application roles, and SharePoint site roles, based on changes to the user's attributes.
- -  user provisioning to create, update and remove user accounts in other applications, with connectors to hundreds of cloud and on-premises applications via System for Cross-domain Identity Management (SCIM), Lightweight Directory Access Protocol (LDAP) and Structured Query Language (SQL).
+ -  Inbound provisioning from your organization's HR sources, including retrieving from Workday and SuccessFactors, to automatically maintain user identities in both Active Directory and Microsoft Entra ID.<br>
+ -  Lifecycle workflows to automate workflow tasks that run at certain key events, such before a new employee is scheduled to start work at the organization, as they change status during their time in the organization, and as they leave the organization. For example, a workflow can be configured to send an email with a temporary access pass to a new user's manager, or a welcome email to the user, on their first day.
+ -  Automatic assignment policies in entitlement management to add and remove a user's group memberships, application roles, and SharePoint site roles, based on changes to the user's attributes.
+ -  User provisioning to create, update and remove user accounts in other applications, with connectors to hundreds of cloud and on-premises applications via System for Cross-domain Identity Management (SCIM), Lightweight Directory Access Protocol (LDAP) and Structured Query Language (SQL).
 
 Organizations also need additional identities, for partners, suppliers and other guests, to enable them to collaborate or have access to resources.
 
 In Microsoft Entra ID Governance, you can enable business groups to determine which of these guests should have access, and for how long, using:
 
- -  entitlement management in which you can specify the other organizations whose users are allowed to request access to your organization's resources. When such a user request is approved, they are automatically added by entitlement management as a B2B guest to your organization's directory, and assigned appropriate access. And entitlement management automatically removes the B2B guest user from your organization's directory when their access rights expire or are revoked.<br>
- -  access reviews that automate recurring reviews of existing guests already in your organization's directory, and removes those users from your organization's directory when they no longer need access.
+ -  Entitlement management in which you can specify the other organizations whose users are allowed to request access to your organization's resources. When such a user request is approved, they are automatically added by entitlement management as a B2B guest to your organization's directory, and assigned appropriate access. And entitlement management automatically removes the B2B guest user from your organization's directory when their access rights expire or are revoked.<br>
+ -  Access reviews that automate recurring reviews of existing guests already in your organization's directory, and removes those users from your organization's directory when they no longer need access.
 
 ## Access lifecycle
 

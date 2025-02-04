@@ -91,13 +91,13 @@ Azure implementation and additional context:
 
 AWS guidance: Use the following security best practices to secure your AWS IAM:
 
- -  Set up AWS account root user access keys for emergency access as described in PA-5 (Set up emergency access)
- -  Follow least privilege principles for access assignments
+ -  Set up AWS account root user access keys for emergency access as described in PA-5 (Set up emergency access).
+ -  Follow least privilege principles for access assignments.
  -  Leverage IAM groups to apply policies instead of individual user(s).
- -  Follow strong authentication guidance in IM-6 (Use strong authentication controls) for all users
- -  Use AWS Organizations SCP (Service Control Policy) and permission boundaries
- -  Use IAM Access Advisor to audit service access
- -  Use IAM credential report to track user accounts and credential status
+ -  Follow strong authentication guidance in IM-6 (Use strong authentication controls) for all users.
+ -  Use AWS Organizations SCP (Service Control Policy) and permission boundaries.
+ -  Use IAM Access Advisor to audit service access.
+ -  Use IAM credential report to track user accounts and credential status.
 
 Note: Follow published best practices if you have other identity and authentication systems, e.g., follow the Microsoft Entra ID security baseline if you use Microsoft Entra ID to manage AWS identity and access.
 
@@ -111,13 +111,13 @@ GCP guidance: Use the following security best practices to secure to your Google
 
  -  Set up a super admin account for emergency access by following the recommendations in PA-5 ("Set up emergency access").
  -  Create a super admin email address (as the Google Workspace or Cloud Identity super admin account) and this account should be not specific to a particular user in case an emergency recovery is needed.
- -  Follow least privilege and separation of duties principles
- -  Avoid using super admin account for daily activities
+ -  Follow least privilege and separation of duties principles.
+ -  Avoid using super admin account for daily activities.
  -  Leverage Google Cloud Identity groups to apply policies instead of applying policies to individual user(s).
  -  Follow strong authentication guidance as described in IM-6 ("Use strong authentication controls") for all users that have elevated privileges.
- -  Use IAM policies to restrict access to resources
- -  Use the Organization Policy Service to control and configure constraints on resources
- -  Use IAM audit logging within Cloud Audit logs to review privileged activities
+ -  Use IAM policies to restrict access to resources.
+ -  Use the Organization Policy Service to control and configure constraints on resources.
+ -  Use IAM audit logging within Cloud Audit logs to review privileged activities.
 
 Note: Follow published best practices if you have other identity and authentication systems, e.g., follow the Microsoft Entra ID security baseline if you use Microsoft Entra ID to manage GCP identity and access.
 
@@ -333,13 +333,13 @@ Azure guidance: Use Microsoft Entra ID conditional access for more granular acce
 
 Define the applicable conditions and criteria for Microsoft Entra ID conditional access in the workload. Consider the following common use cases:
 
- -  Requiring multi-factor authentication for users with administrative roles
- -  Requiring multi-factor authentication for Azure management tasks
- -  Blocking sign-ins for users attempting to use legacy authentication protocols
- -  Requiring trusted locations for Microsoft Entra ID Multi-Factor Authentication registration
- -  Blocking or granting access from specific locations
- -  Blocking risky sign-in behaviors
- -  Requiring organization-managed devices for specific applications
+ -  Requiring multi-factor authentication for users with administrative roles.
+ -  Requiring multi-factor authentication for Azure management tasks.
+ -  Blocking sign-ins for users attempting to use legacy authentication protocols.
+ -  Requiring trusted locations for Microsoft Entra ID Multi-Factor Authentication registration.
+ -  Blocking or granting access from specific locations.
+ -  Blocking risky sign-in behaviors.
+ -  Requiring organization-managed devices for specific applications.
 
 Note: Granular authentication session management controls can also be implemented through Microsoft Entra ID conditional access policy, such as sign-in frequency and persistent browser session.
 

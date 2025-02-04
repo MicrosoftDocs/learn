@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-security-controls-identity-access.create-access-review-azure-resource-microsoft-entra-roles
+uid: learn.wwl.manage-security-controls-identity-access.configure-role-management-access-reviews-microsoft-entra-id-governance
 title: Configure role management and access reviews by using Microsoft Entra ID Governance
 metadata:
   adobe-target: true
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/49-create-access-review-azure-resource-microsoft-entra-roles.md)]
+  [!include[](includes/49-configure-role-management-access-reviews-microsoft-entra-id-governance.md)]

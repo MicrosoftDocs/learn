@@ -210,7 +210,7 @@ To enable Report Suspicious Activity from the Authentication Methods Settings:
 2.  Set Report Suspicious Activity to Enabled.
 3.  Select All users or a specific group.
 
-## **View suspicious activity events**
+## View suspicious activity events
 
 When a user reports a multifactor authentication prompt as suspicious, the event shows up in the Sign-ins report (**as a sign-in that was rejected by the user**), in the **Audit logs**, and in the **Risk detections** report.
 
@@ -230,7 +230,7 @@ Once a user has reported a prompt as suspicious, the risk should be investigated
 
 If Fraud Alert is enabled with Automatic Blocking and Report Suspicious Activity is enabled, the user will be added to the blocklist and set as high-risk and in-scope for any other policies configured. These users will need to be removed from the blocklist and have their risk remediated to enable them to sign in with MFA.
 
-## **Notifications**
+## Notifications
 
 You can configure Microsoft Entra ID to send email notifications when users report fraud alerts. These notifications are typically sent to identity administrators because the user's account credentials are likely compromised. The following example shows what a fraud alert notification email looks like:
 

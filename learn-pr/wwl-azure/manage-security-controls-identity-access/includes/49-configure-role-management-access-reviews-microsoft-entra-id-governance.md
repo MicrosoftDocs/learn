@@ -62,10 +62,10 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 2.  If you want to automatically remove access for users that were denied, set Auto apply results to resource to Enable. If you want to manually apply the results when the review completes, set the switch to Disable.<br>
 3.  Use the If reviewer doesn't respond list to specify what happens for users that aren't reviewed by the reviewer within the review period. This setting doesn't impact users who were reviewed by the reviewers.
 
- -  No change - Leave user's access unchanged
- -  Remove access - Remove user's access
- -  Approve access - Approve user's access
- -  Take recommendations - Take the system's recommendation on denying or approving the user's continued access
+ -  No change - Leave user's access unchanged.
+ -  Remove access - Remove user's access.
+ -  Approve access - Approve user's access.
+ -  Take recommendations - Take the system's recommendation on denying or approving the user's continued access.
 
 4.  Use the Action to apply on denied guest users list to specify what happens for guest users that are denied. This setting isn't editable for Microsoft Entra ID and Azure resource role reviews at this time; guest users, like all users, will always lose access to the resource if denied.
 5.  You can send notifications to additional users or groups to receive review completion updates. This feature allows for stakeholders other than the review creator to be updated on the progress of the review. To use this feature, select Select User(s) or Group(s) and add an additional user or group upon you want to receive the status of completion.<br>

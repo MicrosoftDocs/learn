@@ -73,7 +73,7 @@ Previously, Azure RBAC was an allow-only model with no deny, but now Azure RBAC 
 
 ## How Azure RBAC determines if a user has access to a resource
 
-The following are the high-level steps that Azure RBAC uses to determine if you have access to a resource. These steps apply to Azure Resource Manager or data plane services integrated with Azure RBAC. This is helpful to understand if you are trying to troubleshoot an access iissue.
+The following are the high-level steps that Azure RBAC uses to determine if you have access to a resource. These steps apply to Azure Resource Manager or data plane services integrated with Azure RBAC. This is helpful to understand if you are trying to troubleshoot an access issue.
 
 1.  A user (or service principal) acquires a token for Azure Resource Manager. The token includes the user's group memberships (including transitive group memberships).
 2.  The user makes a REST API call to Azure Resource Manager with the token attached.

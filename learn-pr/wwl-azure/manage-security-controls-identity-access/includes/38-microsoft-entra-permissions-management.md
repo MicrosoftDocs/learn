@@ -2,7 +2,7 @@ Microsoft Entra Permissions Management is a cloud infrastructure entitlement man
 
 Permissions Management detects, automatically right-sizes, and continuously monitors unused and excessive permissions.
 
- -  Organizations have to consider permissions management as a central piece of their Zero Trust security to implement least privilege access across their entire infrastructure:<br>
+ -  Organizations have to consider permissions management as a central piece of their Zero Trust security to implement least privilege access across their entire infrastructure.<br>
  -  Organizations are increasingly adopting multicloud strategy and are struggling with the lack of visibility and the increasing complexity of managing access permissions.<br>
  -  With the growth of identities and cloud services, the number of high-risk cloud permissions is exploding, expanding the attack surface for organizations.
  -  IT security teams are under increased pressure to ensure access to their expanding cloud estate is secure and compliant.

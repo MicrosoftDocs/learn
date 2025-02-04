@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-security-controls-identity-access.new-technology-local-area-network-manager--ntlm-
+uid: learn.wwl.manage-security-controls-identity-access.new-technology-local-area-network-manager
 title: New Technology Local Area Network Manager (NTLM)
 metadata:
   adobe-target: true
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/19-new-technology-local-area-network-manager--ntlm-.md)]
+  [!include[](includes/19-new-technology-local-area-network-manager.md)]

@@ -1,14 +1,14 @@
 Privileged Identity Management provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about. Here are some of the key features of Privileged Identity Management:
 
- -  Provide just-in-time privileged access to Microsoft Entra ID and Azure resources
- -  Assign time-bound access to resources using start and end dates
- -  Require approval to activate privileged roles
- -  Enforce multifactor authentication to activate any role
- -  Use justification to understand why users activate
- -  Get notifications when privileged roles are activated
- -  Conduct access reviews to ensure users still need roles
- -  Download audit history for internal or external audit
- -  Prevents removal of the last active Global Administrator and Privileged Role Administrator role assignments
+ -  Provide just-in-time privileged access to Microsoft Entra ID and Azure resources.
+ -  Assign time-bound access to resources using start and end dates.
+ -  Require approval to activate privileged roles.
+ -  Enforce multifactor authentication to activate any role.
+ -  Use justification to understand why users activate.
+ -  Get notifications when privileged roles are activated.
+ -  Conduct access reviews to ensure users still need roles.
+ -  Download audit history for internal or external audit.
+ -  Prevents removal of the last active Global Administrator and Privileged Role Administrator role assignments.
 
 Once you set up Privileged Identity Management, you'll see Tasks, Manage, and Activity options in the left navigation menu. As an administrator, you can choose between options such as managing Microsoft Entra roles, managing Azure resource roles, or PIM for Groups. When you choose what you want to manage, you see the appropriate set of options for that option.
 
@@ -78,8 +78,8 @@ Delegated approvers receive email notifications when a role request is pending t
 
 After administrators set up time-bound owner or member assignments, the first question you might ask is what happens if an assignment expires? In this new version, we provide two options for this scenario:
 
- -  **Extend** – When a role assignment nears expiration, the user can use Privileged Identity Management to request an extension for the role assignment<br>
- -  **Renew** – When a role assignment has already expired, the user can use Privileged Identity Management to request a renewal for the role assignment
+ -  **Extend** – When a role assignment nears expiration, the user can use Privileged Identity Management to request an extension for the role assignment.<br>
+ -  **Renew** – When a role assignment has already expired, the user can use Privileged Identity Management to request a renewal for the role assignment.
 
 Both user-initiated actions require an approval from a Global Administrator or Privileged Role Administrator. Admins don't need to be in the business of managing assignment expirations. You can just wait for the extension or renewal requests to arrive for simple approval or denial.
 
@@ -89,25 +89,25 @@ Privileged Identity Management supports the following scenarios:
 
 ### Privileged Role Administrator permissions<br>
 
- -  Enable approval for specific roles
- -  Specify approver users or groups to approve requests
- -  View request and approval history for all privileged roles
+ -  Enable approval for specific roles.
+ -  Specify approver users or groups to approve requests.
+ -  View request and approval history for all privileged roles.
 
 ### Approver permissions
 
- -  View pending approvals (requests)
- -  Approve or reject requests for role elevation (single and bulk)
- -  Provide justification for my approval or rejection
+ -  View pending approvals (requests).
+ -  Approve or reject requests for role elevation (single and bulk).
+ -  Provide justification for my approval or rejection.
 
 ### Eligible role user permissions
 
- -  Request activation of a role that requires approval
- -  View the status of your request to activate
- -  Complete your task in Microsoft Entra ID if activation was approved
+ -  Request activation of a role that requires approval.
+ -  View the status of your request to activate.
+ -  Complete your task in Microsoft Entra ID if activation was approved.
 
 ## Microsoft Graph APIs
 
 You can use Privileged Identity Management programmatically through the following Microsoft Graph APIs:
 
- -  PIM for Microsoft Entra roles APIs<br>
- -  PIM for groups APIs
+ -  PIM for Microsoft Entra roles APIs.<br>
+ -  PIM for groups APIs.

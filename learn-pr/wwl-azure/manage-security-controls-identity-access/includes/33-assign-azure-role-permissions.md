@@ -19,7 +19,7 @@ When you assign roles, you must specify a scope. Scope is the set of resources t
 
 The following shows an example resource group.
 
-:::image type="content" source="../media/resource-group-example-c72538bd-671e6fe1.png" alt-text="Screenshot showing an example of an Azure reource group.":::
+:::image type="content" source="../media/resource-group-example-c72538bd-671e6fe1.png" alt-text="Screenshot showing an example of an Azure resource group.":::
 
 
 ## Step 2: Open the Add role assignment page

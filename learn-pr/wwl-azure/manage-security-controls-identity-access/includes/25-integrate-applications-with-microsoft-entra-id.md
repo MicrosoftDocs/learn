@@ -196,6 +196,6 @@ The objective of this section is to create a user called B.Simon in Slack. Slack
 
 In this section, you test your Microsoft Entra single sign-on configuration with following options.
 
- -  Click on **Test this application.** This will redirect to Slack Sign-on URL where you can initiate the login flow.
+ -  Click on **Test this application**. This will redirect to Slack Sign-on URL where you can initiate the login flow.
  -  Go to Slack Sign-on URL directly and initiate the login flow from there.
  -  You can use Microsoft My Apps. When you click the Slack tile in the My Apps, this will redirect to Slack Sign-on URL.

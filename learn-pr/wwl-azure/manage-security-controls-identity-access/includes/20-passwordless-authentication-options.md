@@ -126,8 +126,8 @@ The following scenarios are supported:
  -  Configuring certificate-to-user account bindings by using any of the certificate fields:
     
     
-     -  Subject Alternate Name (SAN) PrincipalName and SAN RFC822Name
-     -  Subject Key Identifier (SKI) and SHA1PublicKey
+     -  Subject Alternate Name (SAN) PrincipalName and SAN RFC822Name.
+     -  Subject Key Identifier (SKI) and SHA1PublicKey.
  -  Configuring certificate-to-user account bindings by using any of the user object attributes:
     
     

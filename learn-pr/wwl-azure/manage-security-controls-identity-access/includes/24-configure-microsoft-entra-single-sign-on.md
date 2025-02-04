@@ -25,9 +25,9 @@ When you enable federation on SAML application, Microsoft Entra ID creates a cer
 
 You change that certificate duration in the Microsoft Entra admin center. Make sure to document the expiration and know how you'll manage your certificate renewal. It’s important to identify the right roles and email distribution lists involved with managing the lifecycle of the signing certificate. The following roles are recommended:
 
- -  Owner for updating user properties in the application
- -  Owner On-Call for application troubleshooting support
- -  Closely monitored email distribution list for certificate-related change notifications
+ -  Owner for updating user properties in the application.
+ -  Owner On-Call for application troubleshooting support.
+ -  Closely monitored email distribution list for certificate-related change notifications.
 
 Set up a process for how you'll handle a certificate change between Microsoft Entra ID and your application. By having this process in place, you can help prevent or minimize an outage due to a certificate expiring or a forced certificate rollover.
 

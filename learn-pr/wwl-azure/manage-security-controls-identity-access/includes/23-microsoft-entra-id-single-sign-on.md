@@ -29,7 +29,7 @@ Choosing an SSO method depends on how the application is configured for authenti
          -  You're not ready to integrate this application with Microsoft Entra single sign-on
          -  You're testing other aspects of the application
          -  An on-premises application doesn't require users to authenticate, but you want them to. With SSO disabled, the user needs to authenticate.
-         -  If you configured the application for SP-initiated SAML-based SSO and you change the SSO mode to disabled, it doesn't stop users from signing in to the application outside the MyApps portal. To stop users from signing in from outside My apps portal, you need to disable the ability for users to sign in.
+         -  If you configured the application for SP-initiated SAML-based SSO and you change the SSO mode to disabled, it doesn't stop users from signing in to the application outside the My Apps portal. To stop users from signing in from outside My Apps portal, you need to disable the ability for users to sign in.
 
 ## Plan SSO deployment
 

@@ -9,8 +9,8 @@ Conditional Access policies, at their simplest, are if-then statements; if a use
 
 Administrators are faced with two primary goals:
 
- -  Empower users to be productive wherever and whenever
- -  Protect the organization's assets
+ -  Empower users to be productive wherever and whenever.
+ -  Protect the organization's assets.
 
 Use Conditional Access policies to apply the right access controls when needed to keep your organization secure.
 
@@ -60,26 +60,26 @@ These signals include:
  -  Block access
     
     
-     -  Most restrictive decision
+     -  Most restrictive decision.
  -  Grant access
     
     
      -  The least restrictive decision can still require one or more of the following options:
         
         
-         -  Require multifactor authentication
-         -  Require the device to be marked as compliant
-         -  Require Hybrid Microsoft Entra ID joined device
-         -  Require approved client app
+         -  Require multifactor authentication.
+         -  Require the device to be marked as compliant.
+         -  Require Hybrid Microsoft Entra ID joined device.
+         -  Require approved client app.
 
 ## Commonly applied policies
 
 Many organizations have common access concerns that Conditional Access policies can help with, such as:
 
- -  Requiring multifactor authentication for users with administrative roles
- -  Requiring multifactor authentication for Azure management tasks
- -  Blocking sign-ins for users attempting to use legacy authentication protocols
- -  Requiring trusted locations for Microsoft Entra ID multifactor authentication registration
- -  Blocking or granting access from specific locations
- -  Blocking risky sign-in behaviors
- -  Requiring organization-managed devices for specific applications
+ -  Requiring multifactor authentication for users with administrative roles.
+ -  Requiring multifactor authentication for Azure management tasks.
+ -  Blocking sign-ins for users attempting to use legacy authentication protocols.
+ -  Requiring trusted locations for Microsoft Entra ID multifactor authentication registration.
+ -  Blocking or granting access from specific locations.
+ -  Blocking risky sign-in behaviors.
+ -  Requiring organization-managed devices for specific applications.

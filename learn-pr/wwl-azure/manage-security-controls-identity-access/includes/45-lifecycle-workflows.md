@@ -1,10 +1,8 @@
 Lifecycle workflows are a new identity governance feature that enables organizations to manage Microsoft Entra users by automating these three basic lifecycle processes:
 
-**Joiner**: When an individual enters the scope of needing access. An example is a new employee joining a company or organization.
-
-**Mover**: When an individual moves between boundaries within an organization. This movement might require more access or authorization. An example is a user who was in marketing and is now a member of the sales organization.
-
-**Leaver**: When an individual leaves the scope of needing access. This movement might require the removal of access. Examples are an employee who's retiring or an employee who's terminated.
+ -  **Joiner**: When an individual enters the scope of needing access. An example is a new employee joining a company or organization.
+ -  **Mover**: When an individual moves between boundaries within an organization. This movement might require more access or authorization. An example is a user who was in marketing and is now a member of the sales organization.
+ -  **Leaver**: When an individual leaves the scope of needing access. This movement might require the removal of access. Examples are an employee who's retiring or an employee who's terminated.
 
 Workflows contain specific processes that run automatically against users as they move through their lifecycle. Workflows consist of tasks and execution conditions.
 
@@ -18,7 +16,7 @@ An automatic workflow schedules a trigger based on user attributes. Scoping of a
 
 Lifecycle workflows can even integrate with the ability of logic apps tasks to extend workflows for more complex scenarios through your existing logic apps.
 
-## Why to use lifecycle workflows<br>
+## Why to use lifecycle workflows?<br>
 
 Anyone who wants to modernize an identity lifecycle management process for employees needs to ensure:
 
@@ -38,7 +36,7 @@ Key reasons to use lifecycle workflows include:
 
 Those capabilities can help ensure a holistic experience by allowing you to remove other dependencies and applications to achieve the same result. You can then increase efficiency in new employee orientation and in removal of former employees from the system.
 
-## When to use lifecycle workflows
+## When to use lifecycle workflows?
 
 You can use lifecycle workflows to address any of the following conditions:
 

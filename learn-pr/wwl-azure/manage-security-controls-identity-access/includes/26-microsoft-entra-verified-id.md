@@ -44,7 +44,7 @@ In this flow, the credential holder interacts with the issuer to request a verif
 :::image type="content" source="../media/dec-issuance-9ccef32c-f56ec5e3.png" alt-text="Diagram showing an example of a verifiable credential issuance.":::
 
 
-1.  The holder starts the flow by using a browser or native application to access the issuer’s web frontend. There, the issuer website drives the user to collect data and executes issuer-specific logic to determine whether the credential can be issued, and its content.)
+1.  The holder starts the flow by using a browser or native application to access the issuer’s web frontend. There, the issuer website drives the user to collect data and executes issuer-specific logic to determine whether the credential can be issued, and its content.
 2.  The issuer web frontend calls the Microsoft Entra Verified ID service to generate a VC issuance request.
 3.  The web frontend renders a link to the request as a QR code or a device-specific deep link (depending on the device).
 4.  The holder scans the QR code or deep link from step 3 using a Wallet app such as Microsoft Authenticator

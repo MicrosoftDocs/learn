@@ -25,9 +25,9 @@ The typical process for establishing identity lifecycle management in an organiz
 
 When planning identity lifecycle management for employees, or other individuals with an organizational relationship such as a contractor or student, many organizations model the "join, move, and leave" as following process:
 
- -  **Join** \- when an individual comes into scope of needing access, an identity is needed by those applications, so a new digital identity may need to be created if one isn't already available<br>
- -  **Move** \- when an individual moves between boundaries that require additional access authorizations to be added or removed to their digital identity
- -  **Leave** \- when an individual leaves the scope of needing access, access may need to be removed, and subsequently the identity may no longer be required by applications other than for audit or forensics purposes
+ -  **Join** \- when an individual comes into scope of needing access, an identity is needed by those applications, so a new digital identity may need to be created if one isn't already available.<br>
+ -  **Move** \- when an individual moves between boundaries that require additional access authorizations to be added or removed to their digital identity.
+ -  **Leave** \- when an individual leaves the scope of needing access, access may need to be removed, and subsequently the identity may no longer be required by applications other than for audit or forensics purposes.
 
 So for example, if a new employee joins your organization and that employee has never been affiliated with your organization before, that employee will require a new digital identity, represented as a user account in Microsoft Entra ID. The creation of this account would fall into a "Joiner" process, which could be automated if there was a system of record such as Workday that could indicate when the new employee starts work. Later, if your organization has an employee move from say, Sales to Marketing, they would fall into a "Mover" process. This move would require removing the access rights they had in the Sales organization, which they no longer require, and granting them rights in the Marketing organization that they new require.
 

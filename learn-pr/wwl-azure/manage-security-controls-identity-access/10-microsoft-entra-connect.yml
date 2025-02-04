@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-security-controls-identity-access.microsoft-entra-connect
-title: Microsoft Entra connect
+title: Microsoft Entra Connect
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Microsoft Entra connect
-  description: "Microsoft Entra connect"
+  title: Microsoft Entra Connect
+  description: "Microsoft Entra Connect"
   ms.date: 02/04/2025
   author: wwlpublish
   ms.author: serlingdavis

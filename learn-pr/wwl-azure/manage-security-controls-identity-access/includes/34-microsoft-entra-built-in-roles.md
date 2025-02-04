@@ -2,18 +2,18 @@ In Microsoft Entra ID, if another administrator or non-administrator needs to ma
 
 The following is a list of Microsoft Entra built-in roles and is not an exhaustive representation.
 
- -  Application Administrator \[**PRIVILEGED**\]
- -  Application Developer \[**PRIVILEGED**\]
+ -  Application Administrator **PRIVILEGED**
+ -  Application Developer **PRIVILEGED**
  -  Attribute Assignment Administrator
  -  Attribute Assignment Reader
  -  Attribute Definition Administrator
  -  Attribute Definition Reader
  -  Attribute Log Administrator
  -  Attribute Log Reader
- -  Authentication Administrator \[**PRIVILEGED**\]
+ -  Authentication Administrator **PRIVILEGED**
  -  Authentication Policy Administrator
 
-## Application Administrator
+## Application administrator
 
 This is a privileged role. Users in this role can create and manage all aspects of enterprise applications, application registrations, and application proxy settings. Note that users assigned to this role are not added as owners when creating new application registrations or enterprise applications.
 
@@ -39,7 +39,7 @@ This role grants the ability to manage application credentials. Users assigned t
 | microsoft.directory/applications/audience/update                                                     | Update the audience property for applications                                                                                                                  |
 | microsoft.directory/applications/authentication/update                                               | Update authentication on all types of applications                                                                                                             |
 | microsoft.directory/applications/basic/update                                                        | Update basic properties for applications                                                                                                                       |
-| microsoft.directory/applications/credentials/update                                                  | Update application credentials<br>\[**PRIVILEGED**\]                                                                                                           |
+| microsoft.directory/applications/credentials/update                                                  | Update application credentials<br>**PRIVILEGED**                                                                                                               |
 | microsoft.directory/applications/extensionProperties/update                                          | Update extension properties on applications                                                                                                                    |
 | microsoft.directory/applications/notes/update                                                        | Update notes of applications                                                                                                                                   |
 | microsoft.directory/applications/owners/update                                                       | Update owners of applications                                                                                                                                  |
@@ -56,10 +56,10 @@ This role grants the ability to manage application credentials. Users assigned t
 | microsoft.directory/connectorGroups/delete                                                           | Delete application proxy connector groups                                                                                                                      |
 | microsoft.directory/connectorGroups/allProperties/read                                               | Read all properties of application proxy connector groups                                                                                                      |
 | microsoft.directory/connectorGroups/allProperties/update                                             | Update all properties of application proxy connector groups                                                                                                    |
-| microsoft.directory/customAuthenticationExtensions/allProperties/allTasks                            | Create and manage custom authentication extensions<br>\[**PRIVILEGED**\]                                                                                       |
+| microsoft.directory/customAuthenticationExtensions/allProperties/allTasks                            | Create and manage custom authentication extensions<br>**PRIVILEGED**                                                                                           |
 | microsoft.directory/deletedItems.applications/delete                                                 | Permanently delete applications, which can no longer be restored                                                                                               |
 | microsoft.directory/deletedItems.applications/restore                                                | Restore soft deleted applications to original state                                                                                                            |
-| microsoft.directory/oAuth2PermissionGrants/allProperties/allTasks                                    | Create and delete OAuth 2.0 permission grants, and read and update all properties<br>\[**PRIVILEGED**\]                                                        |
+| microsoft.directory/oAuth2PermissionGrants/allProperties/allTasks                                    | Create and delete OAuth 2.0 permission grants, and read and update all properties<br>**PRIVILEGED**                                                            |
 | microsoft.directory/applicationPolicies/create                                                       | Create application policies                                                                                                                                    |
 | microsoft.directory/applicationPolicies/delete                                                       | Delete application policies                                                                                                                                    |
 | microsoft.directory/applicationPolicies/standard/read                                                | Read standard properties of application policies                                                                                                               |
@@ -85,7 +85,7 @@ This role grants the ability to manage application credentials. Users assigned t
 | microsoft.directory/servicePrincipals/audience/update                                                | Update audience properties on service principals                                                                                                               |
 | microsoft.directory/servicePrincipals/authentication/update                                          | Update authentication properties on service principals                                                                                                         |
 | microsoft.directory/servicePrincipals/basic/update                                                   | Update basic properties on service principals                                                                                                                  |
-| microsoft.directory/servicePrincipals/credentials/update                                             | Update credentials of service principals \[**PRIVILEGED**\]                                                                                                    |
+| microsoft.directory/servicePrincipals/credentials/update                                             | Update credentials of service principals **PRIVILEGED**                                                                                                        |
 | microsoft.directory/servicePrincipals/notes/update                                                   | Update notes of service principals                                                                                                                             |
 | microsoft.directory/servicePrincipals/owners/update                                                  | Update owners of service principals                                                                                                                            |
 | microsoft.directory/servicePrincipals/permissions/update                                             | Update permissions of service principals                                                                                                                       |
@@ -99,17 +99,17 @@ This role grants the ability to manage application credentials. Users assigned t
 | microsoft.office365.supportTickets/allEntities/allTasks                                              | Create and manage Microsoft 365 service requests                                                                                                               |
 | microsoft.office365.webPortal/allEntities/standard/read                                              | Read basic properties on all resources in the Microsoft 365 admin center                                                                                       |
 
-## Application Developer
+## Application developer
 
 This is a privileged role. Users in this role can create application registrations when the "Users can register applications" setting is set to No. This role also grants permission to consent on one's own behalf when the "Users can consent to apps accessing company data on their behalf" setting is set to No. Users assigned to this role are added as owners when creating new application registrations.
 
-| **Actions**                                              | **Description**                                                                           |
-| -------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| microsoft.directory/applications/createAsOwner           | Create all types of applications, and creator is added as the first owner                 |
-| microsoft.directory/oAuth2PermissionGrants/createAsOwner | Create OAuth 2.0 permission grants, with creator as the first owner<br>\[**PRIVILEGED**\] |
-| microsoft.directory/servicePrincipals/createAsOwner      | Create service principals, with creator as the first owner                                |
+| **Actions**                                              | **Description**                                                                       |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| microsoft.directory/applications/createAsOwner           | Create all types of applications, and creator is added as the first owner             |
+| microsoft.directory/oAuth2PermissionGrants/createAsOwner | Create OAuth 2.0 permission grants, with creator as the first owner<br>**PRIVILEGED** |
+| microsoft.directory/servicePrincipals/createAsOwner      | Create service principals, with creator as the first owner                            |
 
-## Attribute Assignment Administrator
+## Attribute assignment administrator
 
 Users with this role can assign and remove custom security attribute keys and values for supported Microsoft Entra objects such as users, service principals, and devices.
 
@@ -128,7 +128,7 @@ By default, Global Administrator and other administrator roles do not have permi
 | microsoft.directory/users/customSecurityAttributes/read                    | Read custom security attribute values for users                                |
 | microsoft.directory/users/customSecurityAttributes/update                  | Update custom security attribute values for users                              |
 
-## Attribute Assignment Reader
+## Attribute assignment reader
 
 Users with this role can read custom security attribute keys and values for supported Microsoft Entra objects.
 
@@ -143,7 +143,7 @@ By default, Global Administrator and other administrator roles do not have permi
 | microsoft.directory/servicePrincipals/customSecurityAttributes/read       | Read custom security attribute values for service principals                 |
 | microsoft.directory/users/customSecurityAttributes/read                   | Read custom security attribute values for users                              |
 
-## Attribute Definition Administrator
+## Attribute definition administrator
 
 Users with this role can define a valid set of custom security attributes that can be assigned to supported Microsoft Entra objects. This role can also activate and deactivate custom security attributes.
 
@@ -154,18 +154,18 @@ By default, Global Administrator and other administrator roles do not have permi
 | microsoft.directory/attributeSets/allProperties/allTasks                      | Manage all aspects of attribute sets                        |
 | microsoft.directory/customSecurityAttributeDefinitions/allProperties/allTasks | Manage all aspects of custom security attribute definitions |
 
-## Attribute Definition Reader
+## Attribute definition reader
 
 Users with this role can read the definition of custom security attributes.
 
-By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes. To work with custom security attributes, you must be assigned one of the custom security attribu
+By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes. To work with custom security attributes, you must be assigned one of the custom security attribute
 
 | **Actions**                                                               | **Description**                                              |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | microsoft.directory/attributeSets/allProperties/read                      | Read all properties of attribute sets                        |
 | microsoft.directory/customSecurityAttributeDefinitions/allProperties/read | Read all properties of custom security attribute definitions |
 
-## Attribute Log Administrator
+## Attribute log administrator
 
 Assign the Attribute Log Reader role to users who need to do the following tasks:
 
@@ -182,7 +182,7 @@ By default, Global Administrator and other administrator roles do not have permi
 | microsoft.directory/customSecurityAttributeAuditLogs/allProperties/read                      | Read audit logs related to custom security attributes                   |
 | microsoft.azure.customSecurityAttributeDiagnosticSettings/allEntities/allProperties/allTasks | Configure all aspects of custom security attributes diagnostic settings |
 
-## Attribute Log Reader
+## Attribute log reader
 
 Assign the Attribute Log Reader role to users who need to do the following tasks:
 
@@ -200,7 +200,7 @@ By default, Global Administrator and other administrator roles do not have permi
 | ----------------------------------------------------------------------- | ----------------------------------------------------- |
 | microsoft.directory/customSecurityAttributeAuditLogs/allProperties/read | Read audit logs related to custom security attributes |
 
-## Authentication Administrator
+## Authentication administrator
 
 This is a privileged role. Assign the Authentication Administrator role to users who need to do the following:
 
@@ -235,26 +235,26 @@ The following table compares the capabilities of authentication-related roles.
 | **Actions**                                                             | **Description**                                                                                                      |
 | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | microsoft.directory/users/authenticationMethods/create                  | Update authentication methods for users<br><br>                                                                      |
-| microsoft.directory/users/authenticationMethods/delete                  | Delete authentication methods for users<br>\[**PRIVILEGED**\]                                                        |
+| microsoft.directory/users/authenticationMethods/delete                  | Delete authentication methods for users<br>**PRIVILEGED**                                                            |
 | microsoft.directory/users/authenticationMethods/standard/restrictedRead | Read standard properties of authentication methods that do not include personally identifiable information for users |
-| microsoft.directory/users/authenticationMethods/basic/update            | Update basic properties of authentication methods for users<br>**\[PRIVILEGED\]**                                    |
+| microsoft.directory/users/authenticationMethods/basic/update            | Update basic properties of authentication methods for users<br>**PRIVILEGED**                                        |
 | microsoft.directory/deletedItems.users/restore                          | Restore soft deleted users to original state                                                                         |
-| microsoft.directory/users/delete                                        | Delete users<br>\[**PRIVILEGED**\]                                                                                   |
-| microsoft.directory/users/disable                                       | Disable users<br>\[**PRIVILEGED**\]                                                                                  |
-| microsoft.directory/users/enable                                        | Enable users<br>\[**PRIVILEGED**\]                                                                                   |
-| microsoft.directory/users/invalidateAllRefreshTokens                    | Force sign-out by invalidating user refresh tokens<br>\[**PRIVILEGED**\]                                             |
+| microsoft.directory/users/delete                                        | Delete users<br>**PRIVILEGED**                                                                                       |
+| microsoft.directory/users/disable                                       | Disable users<br>**PRIVILEGED**                                                                                      |
+| microsoft.directory/users/enable                                        | Enable users<br>**PRIVILEGED**                                                                                       |
+| microsoft.directory/users/invalidateAllRefreshTokens                    | Force sign-out by invalidating user refresh tokens<br>**PRIVILEGED**                                                 |
 | microsoft.directory/users/restore                                       | Restore deleted users                                                                                                |
 | microsoft.directory/users/basic/update                                  | Update basic properties on users                                                                                     |
 | microsoft.directory/users/manager/update                                | Update manager for users                                                                                             |
-| microsoft.directory/users/password/update                               | Reset passwords for all users<br>\[**PRIVILEGED**\]                                                                  |
-| microsoft.directory/users/userPrincipalName/update                      | Update User Principal Name of users<br>\[**PRIVILEGED**\]                                                            |
+| microsoft.directory/users/password/update                               | Reset passwords for all users<br>**PRIVILEGED**                                                                      |
+| microsoft.directory/users/userPrincipalName/update                      | Update User Principal Name of users<br>**PRIVILEGED**                                                                |
 | microsoft.azure.serviceHealth/allEntities/allTasks                      | Read and configure Azure Service Health                                                                              |
 | microsoft.azure.supportTickets/allEntities/allTasks                     | Create and manage Azure support tickets                                                                              |
 | microsoft.office365.serviceHealth/allEntities/allTasks                  | Read and configure Service Health in the Microsoft 365 admin center                                                  |
 | microsoft.office365.supportTickets/allEntities/allTasks                 | Create and manage Microsoft 365 service requests                                                                     |
 | microsoft.office365.webPortal/allEntities/standard/read                 | Read basic properties on all resources in the Microsoft 365 admin center                                             |
 
-## Authentication Policy Administrator
+## Authentication policy administrator
 
 Assign the Authentication Policy Administrator role to users who need to do the following:
 
