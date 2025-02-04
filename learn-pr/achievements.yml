@@ -1427,6 +1427,11 @@ achievements:
   title: Manage system health on Azure Stack Hub
   summary: Manage system health on Azure Stack Hub
   iconUrl: /training/achievements/1-manage-system-health-on-azure-stack-hub.svg
+- uid: learn.wwl.azure-monitor-azure-stack-hub.badge
+  type: badge
+  title: Azure Monitor on Azure Stack Hub
+  summary: Azure Monitor on Azure Stack Hub
+  iconUrl: /training/achievements/2-azure-monitor-on-azure-stack-hub.svg
 - uid: learn.wwl.manage-alerts-incidents-microsoft-defender-for-endpoints.badge
   type: badge
   title: Manage alerts and incidents in Microsoft Defender for Endpoint
