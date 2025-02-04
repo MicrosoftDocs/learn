@@ -25,7 +25,7 @@ Each component lifecycle method has a specific purpose, and you can override the
 | **1** | Component created | The component is instantiated. |
 | **2** | <xref:Microsoft.AspNetCore.Components.ComponentBase.SetParametersAsync%2A> | Sets parameters from the component's parent in the render tree. |
 | **3** | <xref:Microsoft.AspNetCore.Components.ComponentBase.OnInitialized%2A> / <xref:Microsoft.AspNetCore.Components.ComponentBase.OnInitializedAsync%2A> | Occurs when the component is ready to start. |
-| **4** | <xref:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet%2A> / <xref:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync%2A> | Occurs when the component has received parameters and properties have been assigned. |
+| **4** | <xref:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSet%2A> / <xref:Microsoft.AspNetCore.Components.ComponentBase.OnParametersSetAsync%2A> | Occurs when the component has received parameters and properties are assigned. |
 | **5** | <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender%2A> / <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync%2A> | Occurs after the component renders. |
 | **6** | `Dispose` / `DisposeAsync` | If the component implements either <xref:System.IDisposable> or <xref:System.IAsyncDisposable>, the appropriate disposable occurs as part of destroying the component. |
 
