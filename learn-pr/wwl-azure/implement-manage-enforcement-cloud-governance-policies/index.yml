@@ -4,8 +4,8 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Implement and manage enforcement of cloud governance policies
-  description: "This module focuses on enabling administrators to effectively plan, implement, and manage security governance in Azure, ensuring compliance with organizational policies and best practices."
-  ms.date: 02/03/2025
+  description: "This module equips administrators with the skills to design, deploy, and oversee security governance in Azure, ensuring alignment with organizational policies and industry best practices."
+  ms.date: 02/04/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module
@@ -41,23 +41,23 @@ products:
 - azure-policy
 units:
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.introduction
-- learn.wwl.implement-manage-enforcement-cloud-governance-policies.mcsb-security-controls--access--data--identity--network--endpoin
-- learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-governance-and-management
+- learn.wwl.implement-manage-enforcement-cloud-governance-policies.mcsb-security-controls-access-data-identity-network-endpoint
+- learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-governance
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.create-custom-azure-security-initiatives-policies
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-blueprints
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.configure-azure-blueprints
-- learn.wwl.implement-manage-enforcement-cloud-governance-policies.infrastructure-security-architecture
+- learn.wwl.implement-manage-enforcement-cloud-governance-policies.deploy-secure-infrastructures
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-key-vault
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-key-vault-security
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-key-vault-authentication
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.create-key-vault-use-azure-portal
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-dedicated-hardware-security-module
-- learn.wwl.implement-manage-enforcement-cloud-governance-policies.provide-access-key-vault-keys-certificates-secrets
+- learn.wwl.implement-manage-enforcement-cloud-governance-policies.configure-access-key-vault-including-vault-access-policies
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-key-vault-keys-secrets-certificates
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.configure-cryptographic-key-auto-rotation-azure-key-vault
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-key-vault-backup-restore
-- learn.wwl.implement-manage-enforcement-cloud-governance-policies.implement-security-controls-to-protect-backups
-- learn.wwl.implement-manage-enforcement-cloud-governance-policies.implement-security-controls-for-asset-management
+- learn.wwl.implement-manage-enforcement-cloud-governance-policies.implement-security-controls-protect-backups
+- learn.wwl.implement-manage-enforcement-cloud-governance-policies.implement-security-controls-asset-management
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.knowledge-check
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.summary
 badge:

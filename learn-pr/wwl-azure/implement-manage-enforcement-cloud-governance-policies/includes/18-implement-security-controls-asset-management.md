@@ -16,17 +16,18 @@ Ensure that security organizations have access to a continuously updated invento
 
 Ensure security organizations are granted Security Reader permissions in your Azure tenant and subscriptions so they can monitor for security risks using Microsoft Defender for Cloud. Security Reader permissions can be applied broadly to an entire tenant (Root Management Group) or scoped to management groups or specific subscriptions.
 
-Note: Additional permissions might be required to get visibility into workloads and services.
+> [!NOTE]
+> Additional permissions might be required to get visibility into workloads and services.
 
 GCP guidance: Use Google Cloud Asset Inventory to provide inventory services based on a time series database. This database keeps a five-week history of GCP asset metadata. The Cloud Asset Inventory export service allows you to export all asset metadata at a certain timestamp or export event change history during a timeframe.
 
-Additionally, Google Cloud Security Command Center supports a different naming convention. Assets are an organization’s Google Cloud resources. The IAM roles for Security Command Center can be granted at the organization, folder, or project level. Your ability to view, create, or update findings, assets, and security sources depends on the level for which you are granted access.
+Additionally, Google Cloud Security Command Center supports a different naming convention. Assets are an organization’s Google Cloud resources. The IAM roles for Security Command Center can be granted at the organization, folder, or project level. Your ability to view, create, or update findings, assets, and security sources depends on the level for which you're granted access.
 
 GCP implementation and additional context:
 
- -  [Cloud Asset Inventory](https://cloud.google.com/asset-inventory)
- -  [Introduction to Cloud Asset Inventory](https://cloud.google.com/asset-inventory/docs/overview)
- -  [Supported asset types in Security Command Center](https://cloud.google.com/security-command-center/docs/supported-asset-types)
+ -  [Identity and Access Management (IAM)](https://cloud.google.com/iam)
+ -  [Overview of VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/overview)
+ -  [Resource Manager](https://cloud.google.com/resource-manager)
 
 Azure implementation and additional context:
 
@@ -41,7 +42,8 @@ Logically organize assets according to your organization's taxonomy using tags a
 
 Ensure that security organizations have access to a continuously updated inventory of assets on AWS. Security teams often need this inventory to evaluate their organization's potential exposure to emerging risks, and as an input for continuous security improvements.
 
-Note: Additional permissions might be required to get visibility into workloads and services.
+> [!NOTE]
+> Additional permissions might be required to get visibility into workloads and services.
 
 AWS implementation and additional context:
 
@@ -64,7 +66,7 @@ Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/org
 
 | **CIS Controls v8 ID(s)** | **NIST SP 800-53 r4 ID(s)** | **PCI-DSS ID(s) v3.2.1** |
 | ------------------------- | --------------------------- | ------------------------ |
-| 2.5, 2.6 , 2.7, 4.8       | CM-8, PM-5                  | 6.3                      |
+| 2.5, 2.6, 2.7, 4.8        | CM-8, PM-5                  | 6.3                      |
 
 Security principle: Ensure that only approved cloud services can be used, by auditing and restricting which services users can provision in the environment.<br>
 
@@ -106,7 +108,7 @@ Security principle: Ensure security attributes or configurations of the assets a
 
 Azure guidance: Establish or update security policies/process that address asset lifecycle management processes for potentially high impact modifications. These modifications include changes to identity providers and access, data sensitivity level, network configuration, and administrative privilege assignment.
 
-Identify and remove Azure resources when they are no longer needed.
+Identify and remove Azure resources when they're no longer needed.
 
 Azure implementation and additional context:
 
@@ -114,7 +116,7 @@ Azure implementation and additional context:
 
 AWS guidance: Establish or update security policies/process that address asset lifecycle management processes for potentially high impact modifications. These modifications include changes to identity providers and access, data sensitivity level, network configuration, and administrative privilege assignment.
 
-Identify and remove AWS resources when they are no longer needed.
+Identify and remove AWS resources when they're no longer needed.
 
 AWS implementation and additional context:
 
@@ -137,7 +139,7 @@ Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/org
  -  [Posture management](/azure/cloud-adoption-framework/organize/cloud-security-posture-management)
  -  [Security Compliance Management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management)
 
-## AM-4: Limit access to asset management
+AM-4: Limit access to asset management
 
 | **CIS Controls v8 ID(s)** | **NIST SP 800-53 r4 ID(s)** | **PCI-DSS ID(s) v3.2.1** |
 | ------------------------- | --------------------------- | ------------------------ |
@@ -147,7 +149,7 @@ Security principle: Limit users' access to asset management features, to avoid a
 
 Azure guidance: Azure Resource Manager is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources (assets) in Azure. Use Azure AD Conditional Access to limit users' ability to interact with Azure Resource Manager by configuring "Block access" for the "Microsoft Azure Management" App.
 
-Use Azure Role-based Access Control (Azure RBAC) to assign roles to identities to control their permissions and access to Azure resources. For example, a user with only the 'Reader' Azure RBAC role can view all resources, but is not allowed to make any changes.
+Use Azure Role-based Access Control (Azure RBAC) to assign roles to identities to control their permissions and access to Azure resources. For example, a user with only the 'Reader' Azure RBAC role can view all resources, but isn't allowed to make any changes.
 
 Use Resource Locks to prevent either deletions or modifications to resources. Resource Locks may also be administered through Azure Blueprints.
 
@@ -163,7 +165,7 @@ AWS implementation and additional context:
 
  -  [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html)
 
-GCP guidance: Use Google Cloud VM Manager to discover the applications installed on Compute Engines instances. OS inventory and configuration management can be used ensure that non-authorized software is blocked from executing on Compute Engine instances.
+GCP guidance: Use Google Cloud VM Manager to discover the applications installed on Compute Engines instances. OS inventory and configuration management can be used to ensure that non-authorized software is blocked from executing on Compute Engine instances.
 
 You can also use a third-party solution to discover and identify unapproved software.
 
@@ -183,9 +185,9 @@ Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/org
 | ------------------------- | --------------------------- | ------------------------ |
 | 2.5, 2.6, 2.7, 4.8        | CM-8, CM-7, CM-10, CM-11    | 6.3                      |
 
-Security principle: Ensure that only authorized software executes by creating an allow list and block the unauthorized software from executing in your environment.<br>
+Security principle: Ensure that only authorized software executes by creating an allowlist and block the unauthorized software from executing in your environment.<br>
 
-Azure guidance: Use Microsoft Defender for Cloud adaptive application controls to discover and generate an application allow list. You can also use ASC adaptive application controls to ensure that only authorized software can executes, and all unauthorized software is blocked from executing on Azure Virtual Machines.
+Azure guidance: Use Microsoft Defender for Cloud adaptive application controls to discover and generate an application allowlist. You can also use ASC adaptive application controls to ensure that only authorized software can executes, and all unauthorized software is blocked from executing on Azure Virtual Machines.
 
 Use Azure Automation Change Tracking and Inventory to automate the collection of inventory information from your Windows and Linux VMs. Software name, version, publisher, and refresh time information are available from the Azure portal. To get the software installation date and other information, enable guest-level diagnostics and direct the Windows Event Logs to a Log Analytics workspace.
 

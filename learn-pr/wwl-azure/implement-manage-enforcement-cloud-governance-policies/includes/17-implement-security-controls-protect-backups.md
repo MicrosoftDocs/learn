@@ -1,13 +1,13 @@
-One of the most important steps you can take to protect your data is to have a reliable backup infrastructure. But it's just as important to ensure that your data is backed up in a secure fashion, and that your backups are protected at all times. Azure Backup provides security to your backup environment - both when your data is in transit and at rest. This article lists security capabilities in Azure Backup that help you protect your backup data and meet the security needs of your business.
+One of the most important steps you can take to protect your data is to have a reliable backup infrastructure. But it's just as important to ensure that your data is backed up in a secure fashion, and that your backups are protected at all times. Azure Backup provides security to your backup environment - both when your data is in transit and at rest. This unit lists security capabilities in Azure Backup that help you protect your backup data and meet the security needs of your business.
 
 ## Management and control of identity and user access
 
-Storage accounts used by Recovery Services vaults are isolated and can't be accessed by users for any malicious purposes. The access is only allowed through Azure Backup management operations, such as restore. Azure Backup enables you to control the managed operations through fine-grained access using [Azure role-based access control (Azure RBAC)](/azure/backup/backup-rbac-rs-vault). Azure RBAC allows you to segregate duties within your team and grant only the amount of access to users necessary to do their jobs.
+Storage accounts used by Recovery Services vaults are isolated and can't be accessed by users for any malicious purposes. The access is only allowed through Azure Backup management operations, such as restore. Azure Backup enables you to control the managed operations through fine-grained access using [Azure role-based access control](/azure/backup/backup-rbac-rs-vault). Azure role-based access control allows you to segregate duties within your team and grant only the amount of access to users necessary to do their jobs.
 
 Azure Backup provides three [built-in roles](/azure/role-based-access-control/built-in-roles) to control backup management operations:
 
  -  Backup Contributor: To create and manage backups, except deleting Recovery Services vault and giving access to others
- -  Backup Operator: Everything a contributor does except removing backup and managing backup policies
+ -  Backup Operator: Everything a contributor does except removing backup, and managing backup policies
  -  Backup Reader: permissions to view all backup management operations
 
 Learn more about [Azure role-based access control to manage Azure Backup](/azure/backup/backup-rbac-rs-vault).
@@ -20,7 +20,7 @@ With Azure Backup, the vaulted backup data is stored in Microsoft-managed Azure 
 
 In Azure, all communications and data in transit is securely transferred with *HTTPS* and *TLS 1.2+* protocols. This data remains on the Azure backbone network ensuring reliable and efficient data transmission. The backup data at rest is encrypted by default using *Microsoft-managed keys*. You can also bring your own keys for encryption if you require greater control over the data. To enhance protection, you can use [immutability](/azure/backup/backup-azure-immutable-vault-concept), which prevents data from being altered or deleted before its retention period. Azure Backup gives you diverse options such as [soft delete](/azure/backup/backup-azure-enhanced-soft-delete-about), stop backup and delete data or retain data if you need to stop backups at any time. To protect critical operations, you can add [Multi-User Authorization (MUA)](/azure/backup/multi-user-authorization-concept) that adds additional layer of protection by using an Azure resource called Azure Resource Guard.
 
-This robust approach ensures that even in a compromised environment, existing backups cannot be tampered with or deleted by unauthorized users.
+This robust approach ensures that even in a compromised environment, existing backups can't be tampered with or deleted by unauthorized users.
 
 ## Internet connectivity not required for Azure VM backup
 
@@ -28,7 +28,7 @@ Backup of Azure VMs requires movement of data from your virtual machine's disk t
 
 ## Private Endpoints for Azure Backup
 
-You can now use [Private Endpoints](/azure/private-link/private-endpoint-overview) to back up your data securely from servers inside a virtual network to your Recovery Services vault. The private endpoint uses an IP from the VNET address space for your vault, so you don't need to expose your virtual networks to any public IPs. Private Endpoints can be used for backing up and restoring your SQL and SAP HANA databases that run inside your Azure VMs. It can also be used for your on-premises servers using the MARS agent.
+You can now use [Private Endpoints](/azure/private-link/private-endpoint-overview) to back up your data securely from servers inside a virtual network to your Recovery Services vault. The private endpoint uses an IP from the virtual network address space for your vault, so you don't need to expose your virtual networks to any public IPs. Private Endpoints can be used for backing up and restoring your SQL and SAP HANA databases that run inside your Azure VMs. It can also be used for your on-premises servers using the MARS agent.
 
 Read more on private endpoints for Azure Backup [here](/azure/backup/private-endpoints).
 

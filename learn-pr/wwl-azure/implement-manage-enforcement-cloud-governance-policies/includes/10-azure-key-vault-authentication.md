@@ -37,7 +37,7 @@ Key Vault authentication occurs as part of every request operation on Key Vault.
 6.  Key Vault checks if the security principal has the necessary permission for requested operation. If not, Key Vault returns a forbidden response.
 7.  Key Vault carries out the requested operation and returns the result.
 
-:::image type="content" source="../media/key-vault-operation-flow-73ab0ee9-fe2a3417.png" alt-text="Diagram showing an example of  the process for an application calling a Key Vault Get Secret application programming interface call.":::
+:::image type="content" source="../media/key-vault-operation-flow-73ab0ee9-fe2a3417.png" alt-text="Diagram showing an example of the process for an application calling a Key Vault Get Secret application programming interface call.":::
 
 
 > [!NOTE]

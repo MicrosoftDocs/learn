@@ -57,5 +57,3 @@ Anybody with an Azure subscription can create and use key vaults. Although Key V
  -  Authorize users or applications to access the key vault, so they can then manage or use its keys and secrets
  -  Configure key usage (for example, sign or encrypt)
  -  Monitor key usage
-
-:::image type="content" source="../media/azure-key-vault-7aacaffa-844c8b5a.png" alt-text="Diagram showing an example of an Administrator with an Azure subscription creates and manages vaults and keys.":::

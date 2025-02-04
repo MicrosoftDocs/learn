@@ -227,11 +227,11 @@ Backup and Recovery covers controls to ensure that data and configuration backup
 
 Security principle: Ensure backup data and operations are protected from data exfiltration, data compromise, ransomware/malware and malicious insiders. The security controls that should be applied include user and network access control, data encryption at-rest and in-transit.
 
-Azure guidance: Use multi-factor-authentication and Azure RBAC to secure the critical Azure Backup operations (such as delete, change retention, updates to backup config). For Azure Backup supported resources, use Azure RBAC to segregate duties and enable fine grained access, and create private endpoints within your Azure Virtual Network to securely backup and restore data from your Recovery Services vaults.
+Azure guidance: Use multi-factor authentication and Azure RBAC to secure the critical Azure Backup operations (such as delete, change retention, updates to backup config). For Azure Backup supported resources, use Azure RBAC to segregate duties and enable fine grained access, and create private endpoints within your Azure Virtual Network to securely backup and restore data from your Recovery Services vaults.
 
 For Azure Backup supported resources, backup data is automatically encrypted using Azure platform-managed keys with 256-bit AES encryption. You can also choose to encrypt the backups using a customer managed key. In this case, ensure the customer-managed key in the Azure Key Vault is also in the backup scope. If you use a customer-managed key, use soft delete and purge protection in Azure Key Vault to protect keys from accidental or malicious deletion. For on-premises backups using Azure Backup, encryption-at-rest is provided using the passphrase you provide.
 
-Safeguard backup data from accidental or malicious deletion, such as ransomware attacks/attempts to encrypt or tamper backup data. For Azure Backup supported resources, enable soft delete to ensure recovery of items with no data loss for up to 14 days after an unauthorized deletion, and enable multifactor authentication using a PIN generated in the Azure portal. Also enable geo-redundant storage or cross-region restoration to ensure backup data is restorable when there is a disaster in primary region. You can also enable Zone-redundant Storage (ZRS) to ensure backups are restorable during zonal failures.
+Safeguard backup data from accidental or malicious deletion, such as ransomware attacks/attempts to encrypt or tamper backup data. For Azure Backup supported resources, enable soft delete to ensure recovery of items with no data loss for up to 14 days after an unauthorized deletion, and enable multi-factor authentication using a PIN generated in the Azure portal. Also enable geo-redundant storage or cross-region restoration to ensure backup data is restorable when there is a disaster in primary region. You can also enable Zone-redundant Storage (ZRS) to ensure backups are restorable during zonal failures.
 
 Note: If you use a resource's native backup feature or backup services other than Azure Backup, refer to the Microsoft Cloud Security Benchmark (and service baselines) to implement the above controls.
 
@@ -341,7 +341,7 @@ Azure guidance: Enforce secure transfer in services such as Azure Storage, where
 
 Enforce HTTPS for web application workloads and services by ensuring that any clients connecting to your Azure resources use transport layer security (TLS) v1.2 or later. For remote management of VMs, use SSH (for Linux) or RDP/TLS (for Windows) instead of an unencrypted protocol.
 
-For remote management of Azure virtual machines, use SSH (for Linux) or RDP/TLS (for Windows) instead of an unencrypted protocol. For secure file transfer, use the SFTP/FTPS service in Azure Storage Blob, App Service apps, and Function apps, instead of using the regular FTP service.
+For remote management of Azure Virtual Machines, use SSH (for Linux) or RDP/TLS (for Windows) instead of an unencrypted protocol. For secure file transfer, use the SFTP/FTPS service in Azure Storage Blob, App Service apps, and Function apps, instead of using the regular FTP service.
 
 Note: Data in transit encryption is enabled for all Azure traffic traveling between Azure datacenters. TLS v1.2 or later is enabled on most Azure services by default. And some services such as Azure Storage and Application Gateway can enforce TLS v1.2 or later on the server side.
 
@@ -411,7 +411,7 @@ Azure Key Vault Premium uses a shared HSM infrastructure in the backend. Azure K
 Azure implementation and additional context:
 
  -  [Azure Key Vault overview](/azure/key-vault/general/overview)
- -  [Azure data encryption at rest--Key Hierarchy](/azure/security/fundamentals/encryption-atrest#key-hierarchy)
+ -  [Azure data encryption at rest Key Hierarchy](/azure/security/fundamentals/encryption-atrest#key-hierarchy)
  -  [BYOK (Bring Your Own Key) specification](/azure/key-vault/keys/byok-specification)
 
 AWS guidance: Use AWS Key Management Service (KMS) to create and control your encryption keys life cycle, including key generation, distribution, and storage. Rotate and revoke your keys in KMS and your service based on the defined schedule and when there is a key retirement or compromise.
@@ -769,12 +769,12 @@ General guidance: Ensure a multi-cloud strategy is defined in your cloud and sec
 
  -  Multi-cloud adoption: For organizations that operate multi-cloud infrastructure and Educate your organization to ensure teams understand the feature difference between the cloud platforms and technology stack. Build, deploy, and/or migrate solutions that are portable. Allow for ease of movement between cloud platforms with minimum vendor lock-in while utilizing cloud native features adequately for the optimal result from the cloud adoption.
  -  Cloud and security operations: Streamline security operations to support the solutions across each cloud, through a central set of governance and management processes which share common operations processes, regardless of where the solution is deployed and operated.
- -  Tooling and technology stack: Choose the appropriate tooling that supports multi-cloud environment to help with establishing unified and centralized management platforms which may include all the security domains discussed in this security benchmark.
+ -  Tooling and technology stack: Choose the appropriate tooling that supports multicloud environment to help with establishing unified and centralized management platforms which may include all the security domains discussed in this security benchmark.
 
 Implementation and additional context:
 
- -  [Azure hybrid and multi-cloud](/hybrid)
- -  [Azure hybrid and multi-cloud documentation](/azure/cloud-adoption-framework/scenarios/hybrid/scenario-overview)
+ -  [Azure hybrid and multicloud](/hybrid)
+ -  [Azure hybrid and multicloud documentation](/azure/cloud-adoption-framework/scenarios/hybrid/scenario-overview)
  -  [AWS to Azure services comparison](/azure/architecture/aws-professional/services)
  -  [Azure for AWS professionals](/azure/architecture/aws-professional)
 
@@ -869,7 +869,7 @@ Azure guidance: Ensure your security operations team can query and use diverse d
  -  Identity and access log data: Use Azure AD logs and workload (such as operating systems or application level) access logs for correlating identity and access events.
  -  Network data: Use network security groups' flow logs, Azure Network Watcher, and Azure Monitor to capture network flow logs and other analytics information.
  -  Incident related activity data of from snapshots of the impacted systems, which can be obtained through:
-     -  The azure virtual machine's snapshots capability, to create a snapshot of the running system's disk.
+     -  The Azure Virtual Machine's snapshots capability, to create a snapshot of the running system's disk.
      -  The operating system's native memory dump capability, to create a snapshot of the running system's memory.
      -  The snapshot feature of other supported Azure services or your software's own capability, to create snapshots of the running systems.
 
@@ -1051,7 +1051,7 @@ Be mindful about different types of logs for security, audit, and other operatio
 
  -  Azure resource log: Logging of operations that are performed within an Azure resource (the data plane). For example, getting a secret from a key vault or making a request to a database. The content of resource logs varies by the Azure service and resource type.
  -  Azure activity log: Logging of operations on each Azure resource at the subscription layer, from the outside (the management plane). You can use the Activity Log to determine what, who, and when for any write operations (PUT, POST, DELETE) taken on the resources in your subscription. There is a single Activity log for each Azure subscription.
- -  Azure Active Directory logs: Logs of the history of sign-in activity and audit trail of changes made in the Azure Active Directory for a particular tenant.
+ -  Microsoft Entra ID logs: Logs of the history of sign-in activity and audit trail of changes made in the Microsoft Entra ID for a particular tenant.
 
 You can also use Microsoft Defender for Cloud and Azure Policy to enable resource logs and log data collecting on Azure resources.
 
@@ -1086,7 +1086,7 @@ Be mindful about different types of logs for security, audit, and other operatio
  -  Component logs - similar to platform logs, but they are logs generated by Google-provided software components that run on your systems.
  -  Security logs - mainly audit logs that record administrative activities and accesses within your resources.
  -  User-written - logs written by custom applications and services
- -  Multi-cloud logs and Hybrid-cloud logs - logs from other cloud providers like Microsoft Azure and logs from on-premises infrastructure.
+ -  Multicloud logs and Hybrid-cloud logs - logs from other cloud providers like Microsoft Azure and logs from on-premises infrastructure.
 
 GCP implementation and additional context:
 
@@ -1259,7 +1259,7 @@ Note: Azure Marketplace VM images published by Microsoft are managed and maintai
 Azure implementation and additional context:
 
  -  [How to implement Microsoft Defender for Cloud vulnerability assessment recommendations](/azure/security-center/security-center-vulnerability-assessment-recommendations)
- -  [How to create an Azure virtual machine from an ARM template](/azure/virtual-machines/windows/ps-template)
+ -  [How to create an Azure Virtual Machine from an Azure Resource Manager template](/azure/virtual-machines/windows/ps-template)
  -  [Azure Automation State Configuration overview](/azure/automation/automation-dsc-overview)
  -  [Create a Windows virtual machine in the Azure portal](/azure/virtual-machines/windows/quick-create-portal)
  -  [Container security in Microsoft Defender for Cloud](/azure/security-center/container-security)
@@ -1268,7 +1268,7 @@ Azure implementation and additional context:
 
 AWS guidance: Use AWS System Manager's State Manager feature to regularly assess and remediate configuration deviations on your EC2 instances. In addition, you can use CloudFormation templates, custom operating system images to maintain the security configuration of the operating system. AMI templates in conjunction with Systems Manager can assist in meeting and maintaining security requirements.
 
-You can also centrally monitor and manage the operating system configuration drift through Azure Automation State Configuration and onboard the applicable resources to Azure security governance using the following methods :
+You can also centrally monitor and manage the operating system configuration drift through Azure Automation State Configuration and onboard the applicable resources to Azure security governance using the following methods:
 
  -  Onboard your AWS account into Microsoft Defender for Cloud
  -  Use Azure Arc for servers to connect your EC2 instances to Microsoft Defender for Cloud
@@ -1283,9 +1283,9 @@ AWS implementation and additional context:
  -  [Connect your AWS accounts to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings)
  -  [Enable Azure Automation State Configuration](/azure/automation/automation-dsc-onboarding#enable-physicalvirtual-windows-machines)
 
-GCP guidance: Use VM Manager and Google Cloud Security Command Center to regularly assess and remediate configuration deviation of your Compute Engine instances, Containers, and Serverless contracts. In addition, you can use Deployment Manager VM templates, custom operating system images to maintain the security configuration of the operating system. Deployment Manager VM templates templates in conjunction with VM Manager can assist in meeting and maintaining security requirements.
+GCP guidance: Use VM Manager and Google Cloud Security Command Center to regularly assess and remediate configuration deviation of your Compute Engine instances, Containers, and Serverless contracts. In addition, you can use Deployment Manager VM templates, custom operating system images to maintain the security configuration of the operating system. Deployment Manager VM templates in conjunction with VM Manager can assist in meeting and maintaining security requirements.
 
-You can also centrally monitor and manage the operating system configuration drift through Azure Automation State Configuration and onboard the applicable resources to Azure security governance using the following methods :
+You can also centrally monitor and manage the operating system configuration drift through Azure Automation State Configuration and onboard the applicable resources to Azure security governance using the following methods:
 
  -  Onboard your GCP project into Microsoft Defender for Cloud
  -  Use Azure Arc for servers to connect your GCP VM instances to Microsoft Defender for Cloud
@@ -1312,7 +1312,7 @@ Security principle: Perform vulnerabilities assessment for your cloud resources 
 
 Be aware of the potential risks associated with the privileged access used by the vulnerability scanners. Follow the privileged access security best practice to secure any administrative accounts used for the scanning.<br>
 
-Azure guidance: Follow recommendations from Microsoft Defender for Cloud for performing vulnerability assessments on your Azure virtual machines, container images, and SQL servers. Microsoft Defender for Cloud has a built-in vulnerability scanner for virtual machines. Use a third-party solution for performing vulnerability assessments on network devices and applications (e.g., web applications)
+Azure guidance: Follow recommendations from Microsoft Defender for Cloud for performing vulnerability assessments on your Azure Virtual Machines, container images, and SQL servers. Microsoft Defender for Cloud has a built-in vulnerability scanner for virtual machines. Use a third-party solution for performing vulnerability assessments on network devices and applications (e.g., web applications)
 
 Export scan results at consistent intervals and compare the results with previous scans to verify that vulnerabilities have been remediated. When using vulnerability management recommendations suggested by Microsoft Defender for Cloud, you can pivot into the selected scan solution's portal to view historical scan data.
 

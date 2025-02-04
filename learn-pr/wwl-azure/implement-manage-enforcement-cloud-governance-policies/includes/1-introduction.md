@@ -2,11 +2,11 @@ This module focuses on enabling administrators to effectively plan, implement, a
 
 ## Scenario
 
-Imagine you are a cloud security specialist responsible for safeguarding your organization's cloud resources. Your organization relies on multiple cloud providers and services, and you need to maintain a strong security posture across the entire environment, proactively identifying and addressing security risks.
+Imagine you're a cloud security specialist responsible for safeguarding your organization's cloud resources. Your organization relies on multiple cloud providers and services, and you need to maintain a strong security posture across the entire environment, proactively identifying and addressing security risks.
 
 ## Learning objectives
 
-By the end of this module, participants will be able to:
+By the end of this module, participants are able to:
 
  -  Enforce compliance using Azure Policy to create and manage security policies.
  -  Streamline secure infrastructure deployment with Azure Blueprint.
@@ -15,4 +15,4 @@ By the end of this module, participants will be able to:
 
 ## Goals
 
-This module aims to provide participants with the knowledge and expertise necessary to effectively implement and manage security governance in Azure, align with organizational policies, proactively identify and remediate multi-cloud security risks, maintain compliance using tools like Azure Policy and Azure Blueprint, protect against external threats with Microsoft Defender for Cloud, and ensure cloud resilience through assessments, key management, and advanced threat protection.
+This module aims to provide participants with the knowledge and expertise necessary to effectively implement and manage security governance in Azure, align with organizational policies, proactively identify and remediate multicloud security risks, maintain compliance using tools like Azure Policy and Azure Blueprint, protect against external threats with Microsoft Defender for Cloud, and ensure cloud resilience through assessments, key management, and advanced threat protection.

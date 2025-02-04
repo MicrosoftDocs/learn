@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/03/2025
+  ms.date: 02/04/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -44,7 +44,7 @@ quiz:
     choices:
     - content: "By deploying pre-configured templates that include security settings."
       isCorrect: true
-      explanation: "Azure Blueprints automate the deployment of resources, including security policies, RBAC settings, and ARM templates, ensuring a consistent and compliant environment."
+      explanation: "Azure Blueprints automate the deployment of resources, including security policies, RBAC settings, and Azure Resource Manager templates, ensuring a consistent and compliant environment."
     - content: "By manually managing each resource individually."
       isCorrect: false
       explanation: "Blueprints provide automation for deployment, not manual management."

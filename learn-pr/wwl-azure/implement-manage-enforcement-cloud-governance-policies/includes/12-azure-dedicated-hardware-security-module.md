@@ -55,7 +55,7 @@ Whether Azure Dedicated HSM will work for you depends on a potentially complex m
 
 Situations in which you'll have to weigh your options include:
 
- -  New code running in a customer’s Azure virtual machine
- -  SQL Server TDE in an Azure virtual machine
+ -  New code running in a customer’s Azure Virtual Machine
+ -  SQL Server TDE in an Azure Virtual Machine
  -  Azure Storage client-side encryption
  -  SQL Server and Azure SQL DB Always Encrypted

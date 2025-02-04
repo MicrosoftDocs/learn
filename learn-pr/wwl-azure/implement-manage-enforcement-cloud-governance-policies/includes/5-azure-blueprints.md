@@ -4,20 +4,20 @@ Blueprints are a declarative way to orchestrate the deployment of various resour
 
  -  Role Assignments
  -  Policy Assignments
- -  Azure Resource Manager templates (ARM templates)
+ -  Azure Resource Manager templates (Azure Resource Manager templates)
  -  Resource Groups
 
 The Azure Blueprints service is backed by the globally distributed [Azure Cosmos DB](/azure/cosmos-db/introduction). Blueprint objects are replicated to multiple Azure regions. This replication provides low latency, high availability, and consistent access to your blueprint objects, regardless of which region Azure Blueprints deploys your resources to.
 
-## How it's different from ARM templates
+## How it's different from Azure Resource Manager templates
 
-The service is designed to help with *environment setup*. This setup often consists of a set of resource groups, policies, role assignments, and ARM template deployments. A blueprint is a package to bring each of these *artifact* types together and allow you to compose and version that package, including through a continuous integration and continuous delivery (CI/CD) pipeline. Ultimately, each is assigned to a subscription in a single operation that can be audited and tracked.
+The service is designed to help with *environment setup*. This setup often consists of a set of resource groups, policies, role assignments, and Azure Resource Manager template deployments. A blueprint is a package to bring each of these *artifact* types together and allow you to compose and version that package, including through a continuous integration and continuous delivery (CI/CD) pipeline. Ultimately, each is assigned to a subscription in a single operation that can be audited and tracked.
 
-Nearly everything that you want to include for deployment in Azure Blueprints can be accomplished with an ARM template. However, an ARM template is a document that doesn't exist natively in Azure - each is stored either locally or in source control or in [Templates (preview)](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Gallery%2Fmyareas%2Fgalleryitems). The template gets used for deployments of one or more Azure resources, but once those resources deploy there's no active connection or relationship to the template.
+Nearly everything that you want to include for deployment in Azure Blueprints can be accomplished with an Azure Resource Manager template. However, an Azure Resource Manager template is a document that doesn't exist natively in Azure - each is stored either locally or in source control or in [Templates (preview)](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Gallery%2Fmyareas%2Fgalleryitems). The template gets used for deployments of one or more Azure resources, but once those resources deploy there's no active connection or relationship to the template.
 
 With Azure Blueprints, the relationship between the blueprint definition (what *should be* deployed) and the blueprint assignment (what *was* deployed) is preserved. This connection supports improved tracking and auditing of deployments. Azure Blueprints can also upgrade several subscriptions at once that are governed by the same blueprint.
 
-There's no need to choose between an ARM template and a blueprint. Each blueprint can consist of zero or more ARM template *artifacts*. This support means that previous efforts to develop and maintain a library of ARM templates are reusable in Azure Blueprints.
+There's no need to choose between an Azure Resource Manager template and a blueprint. Each blueprint can consist of zero or more Azure Resource Manager template *artifacts*. This support means that previous efforts to develop and maintain a library of Azure Resource Manager templates are reusable in Azure Blueprints.
 
 ## How it's different from Azure Policy
 
@@ -33,12 +33,12 @@ A policy can be included as one of many *artifacts* in a blueprint definition. B
 
 A blueprint is composed of *artifacts*. Azure Blueprints currently supports the following resources as artifacts:
 
-| **Resource**      | **Hierarchy options**        | **Description**                                                                                                                                                                                                                                                                                                              |
-| ----------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Resource Groups   | Subscription                 | Create a new resource group for use by other artifacts within the blueprint. These placeholder resource groups enable you to organize resources exactly the way you want them structured and provides a scope limiter for included policy and role assignment artifacts and ARM templates.                                   |
-| ARM template      | Subscription, Resource Group | Templates, including nested and linked templates, are used to compose complex environments. Example environments: a SharePoint farm, Azure Automation State Configuration, or a Log Analytics workspace.                                                                                                                     |
-| Policy Assignment | Subscription, Resource Group | Allows assignment of a policy or initiative to the subscription the blueprint is assigned to. The policy or initiative must be within the scope of the blueprint definition location. If the policy or initiative has parameters, these parameters are assigned at creation of the blueprint or during blueprint assignment. |
-| Role Assignment   | Subscription, Resource Group | Add an existing user or group to a built-in role to make sure the right people always have the right access to your resources. Role assignments can be defined for the entire subscription or nested to a specific resource group included in the blueprint.                                                                 |
+| **Resource**                    | **Hierarchy options**        | **Description**                                                                                                                                                                                                                                                                                                              |
+| ------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Resource Groups                 | Subscription                 | Create a new resource group for use by other artifacts within the blueprint. These placeholder resource groups enable you to organize resources exactly the way you want them structured and provides a scope limiter for included policy and role assignment artifacts and Azure Resource Manager templates.                |
+| Azure Resource Manager template | Subscription, Resource Group | Templates, including nested and linked templates, are used to compose complex environments. Example environments: a SharePoint farm, Azure Automation State Configuration, or a Log Analytics workspace.                                                                                                                     |
+| Policy Assignment               | Subscription, Resource Group | Allows assignment of a policy or initiative to the subscription the blueprint is assigned to. The policy or initiative must be within the scope of the blueprint definition location. If the policy or initiative has parameters, these parameters are assigned at creation of the blueprint or during blueprint assignment. |
+| Role Assignment                 | Subscription, Resource Group | Add an existing user or group to a built-in role to make sure the right people always have the right access to your resources. Role assignments can be defined for the entire subscription or nested to a specific resource group included in the blueprint.                                                                 |
 
 > [!NOTE]
 > Each artifact must be 2 MB or less. If the artifact exceeds 2 MB, you'll get an HTTP 500 error (Internal Server Error).
@@ -49,7 +49,7 @@ When creating a blueprint definition, you'll define where the blueprint is saved
 
 ### Blueprint parameters
 
-Blueprints can pass parameters to either a policy/initiative or an ARM template. When adding either *artifact* to a blueprint, the author decides to provide a defined value for each blueprint assignment or to allow each blueprint assignment to provide a value at assignment time. This flexibility provides the option to define a pre-determined value for all uses of the blueprint or to enable that decision to be made at the time of assignment.
+Blueprints can pass parameters to either a policy/initiative or an Azure Resource Manager template. When adding either *artifact* to a blueprint, the author decides to provide a defined value for each blueprint assignment or to allow each blueprint assignment to provide a value at assignment time. This flexibility provides the option to define a pre-determined value for all uses of the blueprint or to enable that decision to be made at the time of assignment.
 
 > [!NOTE]
 > A blueprint can have its own parameters, but these can currently only be created if a blueprint is generated from REST API instead of through the Portal. For more information, see [blueprint parameters](/azure/governance/blueprints/concepts/parameters).
