@@ -5,7 +5,7 @@ Logging and monitoring are critical requirements when you try to identify, detec
 
 ## Logging policy recommendations
 
-The following sections describe the security recommendations in CIS Microsoft Azure Foundations Security Benchmark v. 1.3.0 to set logging and monitoring policies on your Azure subscriptions. Included with each recommendation are the basic steps to complete in the Azure portal. You should complete these steps for your own subscription and by using your own resources to validate each security recommendation. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
+The following sections describe the security recommendations in CIS Microsoft Azure Foundations Security Benchmark v. 3.0.0 to set logging and monitoring policies on your Azure subscriptions. Included with each recommendation are the basic steps to complete in the Azure portal. You should complete these steps for your own subscription and by using your own resources to validate each security recommendation. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
 
 ### Ensure that a diagnostic setting exists - Level 1
 

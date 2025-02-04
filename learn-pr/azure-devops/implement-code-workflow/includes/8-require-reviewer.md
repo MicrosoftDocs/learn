@@ -1,6 +1,6 @@
 In this unit, you'll set up a rule on GitHub that requires a reviewer to approve changes before they can be merged into the `main` branch. As a bonus, you'll also fix the typing error on the *Space Game* website's home page.
 
-Currently, the team allows anyone who makes a pull request to merge the code into the `main` branch. Because no review is required, it's possible for incorrect or unstable code to creep in.
+Currently, the team allows anyone who makes a pull request to merge the code into the `main` branch. Because no review is required, it's possible for incorrect or unstable code to find its way in.
 
 Andy decides that he wants to add a check to the pull request in the form of another pair of eyes. He wants to set up GitHub to require someone other than the pull request author to review the code before it's merged. Let's see how to do this.
 
@@ -26,7 +26,7 @@ In this section, you'll set up a rule on GitHub that requires at least one revie
 1. Select the **Settings** tab near the top of the page.
 1. On the left menu, select **Branches**.
 1. Make sure that **main** is selected as your default branch.
-1. Select **Add branch protection rule**.
+1. Select **Add classic branch protection rule**.
 1. Under **Branch name pattern**, enter **main**.
 1. Select the **Require a pull request before merging** check box.
 1. Select the **Require approvals** check box.
@@ -39,7 +39,7 @@ In this section, you'll set up a rule on GitHub that requires at least one revie
 
 ### Submit the fix
 
-In this section, you submit a fix to the typing error on the home page. Remember that the word "official" is mistyped as "oficial".
+In this section, you submit a fix to the typing error on the home page. Remember that the word "official" is mistyped as "oficial."
 
  :::image type="content" source="../media/5-web-site-revised-text.png" alt-text="Screenshot of the Space Game website showing a typing error.":::
 

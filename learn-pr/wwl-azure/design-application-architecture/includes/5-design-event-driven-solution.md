@@ -10,7 +10,7 @@ Let's reconsider our design for the Tailwind Traders product demo application, a
 
 - Azure Event Grid aggregates all your events and provides routing from any source to any destination. 
 
-- Event Grid distributes events from sources like Azure Blob Storage accounts and Azure Media Services.
+- Event Grid distributes events from sources like Azure Blob Storage accounts.
 
 - Events are distributed to handlers like Azure functions and webhooks. 
 

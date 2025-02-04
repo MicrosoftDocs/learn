@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-secure-scalable-platform-architectures.automation-resiliency-modern-platforms
+title: Automation and Resiliency for Modern Platforms
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Automation and Resiliency for Modern Platforms
+  description: "Automation and Resiliency for Modern Platforms"
+  ms.date: 01/14/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 17
+content: |
+  [!include[](includes/5-automation-resiliency-modern-platforms.md)]

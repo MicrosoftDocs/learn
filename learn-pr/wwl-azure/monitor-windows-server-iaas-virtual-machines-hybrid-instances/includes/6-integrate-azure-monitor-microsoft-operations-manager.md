@@ -1,5 +1,3 @@
-
-
 Customers such as Contoso, who are running Operations Manager 2016 or newer and that want to leverage Azure Monitor capabilities, can integrate their existing deployment with Log Analytics. This provides the benefits described earlier in this module, while also using Operations Manager to:
 
 - Monitor the health of on-premises services.
@@ -29,7 +27,7 @@ If a management server loses connectivity to Azure Monitor, it temporarily cache
 
 ## Implement Azure Monitor integration with Operations Manager
 
-In general, to implement integration between Operations Manager and a Log Analytics workspace, you must register the Microsoft Operations Management Suite (OMS) connection by using the **Operations Management Suite Onboarding Wizard**, available from the Operations Manager console. During the registration process, you'll be prompted to provide the target Azure tenant, subscription, and Log Analytics workspace.
+In general, to implement integration between Operations Manager and a Log Analytics workspace, you must register the Microsoft Operations Management Suite (OMS) connection by using the **Operations Management Suite Onboarding Wizard**, available from the Operations Manager console. During the registration process, you are prompted to provide the target Azure tenant, subscription, and Log Analytics workspace.
 
 After you register Operations Manager with an Azure Log Analytics workspace, you must designate agent-managed computers that will collect log data for Azure Monitor.
 
@@ -37,11 +35,11 @@ After you register Operations Manager with an Azure Log Analytics workspace, you
 > These agent-managed computers can be either individual computer objects or groups containing Windows computer objects.
 
 > [!CAUTION]
-> If you don't designate the computers, Log Analytics will not collect data from the agents reporting to your management group.
+> If you don't designate the computers, Log Analytics won't collect data from the agents reporting to your management group.
 
 After configuration is complete, the Operations Manager management group establishes a persistent connection to Azure Monitor. That connection is used to retrieve management packs corresponding to the Azure Monitor solutions that you decided to implement.
 
-Operations Manager automatically downloads and imports these management packs after they are enabled.
+Operations Manager automatically downloads and imports these management packs after they're enabled.
 
 > [!TIP]
 > As with any management pack, you have the option of configuring overrides and rules that enable you to control the updates schedule, or disable them completely.
@@ -51,7 +49,7 @@ In some cases, additional configuration might be required. For example, to imple
 > [!NOTE]
 > The node provides the ability to designate the target Log Analytics workspace by using the **Add Microsoft Operations Management Suite Workspace Wizard**.
 
-The registration process will add the Service Map node to the **Administration** pane.
+The registration process adds the Service Map node to the **Administration** pane.
 
 From the Service Map node, you can monitor:
 

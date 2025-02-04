@@ -45,7 +45,7 @@ The Spark open source ecosystem includes multiple versions of the Spark *runtime
 
 In some cases, organizations may need to define multiple *environments* to support a diverse range of data processing tasks. Each environment defines a specific runtime version as well as the libraries that must be installed to perform specific operations. Data engineers and scientists can then select which environment they want to use with a Spark pool for a particular task.
 
-### Spark runtimes Microsoft Fabric
+### Spark runtimes in Microsoft Fabric
 
 Microsoft Fabric supports multiple Spark runtimes, and will continue to add support for new runtimes as they are released. You can use the workspace settings interface to specify the Spark runtime that is used by default environment when a Spark pool is started.
 

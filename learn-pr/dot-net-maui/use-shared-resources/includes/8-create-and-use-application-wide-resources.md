@@ -1,4 +1,4 @@
-Defining resources and styles on a XAML page is a great way to reduce repeated code. There's a problem, though. Those resources and styles are available only on that specific XAML page. Page-level resource dictionaries aren't sufficient to let you avoid repeated code across an application when you have multiple pages. In this unit, you see how to share resources and styles across all the pages in your application.
+Defining resources and styles on an Extensible Application Markup Language (XAML) page is a great way to reduce repeated code. There's a problem, though. Those resources and styles are available only on that specific XAML page. Page-level resource dictionaries aren't sufficient to let you avoid repeated code across an application when you have multiple pages. In this unit, you see how to share resources and styles across all the pages in your .NET Multi-platform App UI (MAUI) application.
 
 ## Where resource dictionaries are available
 
@@ -9,7 +9,7 @@ The **Application** class also defines a **Resources** property. **Application**
 The following illustration shows the structure of a typical application. Each of the elements shown has a **Resources** property that can hold a resource dictionary.
 
 > [!NOTE]
-> This diagram shows a much simplified depiction of how the items in an application are organized. In this diagram, the term *View* refers to a singleton control such as **Button** or **Label** that doesn't act as a container for any child controls. Also, the term *Layout* implies a container that is responsible for organizing the layout of its child controls. A layout can be nested. For example a **Grid** control could be held within a **StackLayout** control.
+> This diagram shows a much simplified depiction of how the items in an application are organized. In this diagram, the term *View* refers to a singleton control such as **Button** or **Label** that doesn't act as a container for any child controls. Also, the term *Layout* implies a container that is responsible for organizing the layout of its child controls. A layout can be nested. For example, a **Grid** control could be held within a **StackLayout** control.
 
 :::image type="content" source="../media/8-resource-scope.png" alt-text="A diagram of the  high-level structure of a typical .NET MAUI application.":::
 
@@ -48,7 +48,7 @@ The search returns the first item found with a matching **x:Key** value. The fol
 In practice, most developers ignore the **Resources** property in views and layouts. They use the page-level dictionaries for things they use on a single page. Resources and styles they want to share across multiple pages are defined at the application level. The lookup process then needs to check only two dictionaries: the one in the current page instance and the one in application.
 
 > [!NOTE]
-> If a resource with the specified key isn't found, the app will use default values for the styling.
+> If a resource with the specified key isn't found, the app uses default values for the styling.
 
 ## Duplicate keys
 

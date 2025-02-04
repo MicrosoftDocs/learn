@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/08/2022
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -28,7 +28,7 @@ quiz:
       explanation: "Incorrect. If available, the `wbadmin -authsysvol` approach is simpler."
     - content: "The administrator has no choice. They can only recover the sysvol folder to an earlier time using the msDFSR-Options attribute method."
       isCorrect: false
-      explanation: "Incorrect. Both methods are usually available."
+      explanation: "Incorrect. Both methods are available."
   - content: "A departmental administrator is making changes to Group Policy. They're having problems. The issue is escalated by the helpdesk to Tier 3 support. An engineer wonders whether the operations master is offline. Which of the following domain level operations masters is the likely culprit?"
     choices:
     - content: "RID master."
@@ -45,7 +45,7 @@ quiz:
     - content: "The users don't have licenses assigned for cloud apps. The administrator must select the option to sync licenses across."
       isCorrect: false
       explanation: "Incorrect. Microsoft Entra Connect doesn't sync licenses."
-    - content: "The users don't have licenses assigned for cloud apps. These users cannot be synced."
+    - content: "The users don't have licenses assigned for cloud apps. These users can't be synced."
       isCorrect: false
       explanation: "Incorrect. Users can be synced, but Microsoft Entra Connect doesn't sync licenses."
     - content: "The users don't have licenses assigned for cloud apps. Microsoft Entra Connect doesn't sync licenses, and the administrator must manage these licenses manually."

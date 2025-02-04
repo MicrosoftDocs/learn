@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-content-ai.exercise
+title: Exercise - Analyze content with Azure AI Content Understanding
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Analyze content with Azure AI Content Understanding
+  description: Use Azure AI Content Understanding to build and consume an analyzer.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 01/13/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 30
+content: |
+  [!include[](includes/05-exercise.md)]

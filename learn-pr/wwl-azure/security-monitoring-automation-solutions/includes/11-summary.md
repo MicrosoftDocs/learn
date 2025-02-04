@@ -1,0 +1,1 @@
+In this module, you learned how to configure and manage advanced security monitoring, implement workflow automation, integrate data connectors, enable analytics rules, and respond to security alerts using Microsoft Defender for Cloud and Microsoft Sentinel.

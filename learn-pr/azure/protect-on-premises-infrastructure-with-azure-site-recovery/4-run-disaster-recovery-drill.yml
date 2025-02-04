@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Run a disaster recovery drill
   description: Understand recovery time and recovery point objectives. Then, see how a recovery drill can test that Azure Site Recovery was configured correctly to meet these objectives.
-  ms.date: 05/25/2023
+  ms.date: 01/25/2025
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: unit

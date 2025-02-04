@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-text-moderation
-title: Exercise - Text moderation
+title: Exercise - Text guardrails
 metadata:
-  title: Exercise - Text moderation
-  description: Learn how to moderate text content by using Azure AI Content Safety.
+  title: Exercise - Text guardrails
+  description: Learn how to configure text guardrails by using Azure AI Content Safety.
   author: aprilspeight
   ms.author: apspeigh
   ms.date: 08/29/2024

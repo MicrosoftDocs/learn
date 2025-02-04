@@ -7,8 +7,8 @@ metadata:
   title: "Create an image recognition solution with Azure IoT Edge and Azure AI services"
   description: "This is a computer vision solution using Azure IoT Edge"
   ms.date: 07/10/2024
-  author: leestott
-  ms.author: chnoring
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.service: azure-ai-services
@@ -36,6 +36,7 @@ prerequisites: |
     - Docker Community Edition installed on your computer
 
 iconUrl: /training/achievements/student-evangelism/create-image-recognition-solution-iot-edge-cognitive-services.svg
+hidden: true
 badge:
   uid: learn.oxford.learn.oxford.create-image-recognition-with-azure-iot-edge.badge
 levels:

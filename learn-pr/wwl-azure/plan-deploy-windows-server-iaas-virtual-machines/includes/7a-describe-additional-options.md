@@ -1,5 +1,4 @@
-
-Once Contoso has deployed numerous virtual machines in Azure across Windows Server, they'll need to optimize their operations and management tasks. Azure Automanage and Windows Server Azure edition contain specialized functionality to help alleviate these day-to-day operational tasks.
+Once Contoso has deployed numerous virtual machines in Azure across Windows Server, they need to optimize their operations and management tasks. Azure Automanage and Windows Server Azure edition contain specialized functionality to help alleviate these day-to-day operational tasks.
 
 ## Azure Automanage
 
@@ -17,7 +16,7 @@ After onboarding your Windows Server VMs to Azure Automanage, each best practice
 
 :::image type="content" source="../media/intelligently-onboard-services-1.png" alt-text="Diagram of intelligently onboard services.":::
 
-Your Windows Server VMs will be automatically onboarded to these participating services when you use the best practices configuration profiles. Following is a list of participating services:
+Your Windows Server VMs are automatically onboarded to these participating services when you use the best practices configuration profiles. Following is a list of participating services:
 
 |Service |Description |
 |--------|------------|
@@ -65,7 +64,7 @@ There are two types of baselines: **planned baselines** and **unplanned baseline
 
 - Planned baselines are released on a regular cadence, with hotpatch releases in between. Planned baselines include all the updates in a comparable *Latest Cumulative Update* for that month, and require a reboot.
     - The sample schedule above illustrates four planned baseline releases in a calendar year (five total in the diagram), and eight hotpatch releases.
-- Unplanned baselines are released when an important update (such as a zero-day fix) is released, and that particular update can't be released as a Hotpatch. When unplanned baselines are released, a hotpatch release will be replaced with an unplanned baseline in that month. Unplanned baselines also include all the updates in a comparable *Latest Cumulative Update* for that month, and also require a reboot.
+- Unplanned baselines are released when an important update (such as a zero-day fix) is released, and that particular update can't be released as a Hotpatch. When unplanned baselines are released, a hotpatch release is replaced with an unplanned baseline in that month. Unplanned baselines also include all the updates in a comparable *Latest Cumulative Update* for that month, and also require a reboot.
     - The sample schedule above illustrates two unplanned baselines that would replace the hotpatch releases for those months (the actual number of unplanned baselines in a year isn't known in advance).
 
 ### SMB over QUIC

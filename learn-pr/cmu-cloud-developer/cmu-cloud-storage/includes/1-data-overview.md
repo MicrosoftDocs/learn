@@ -3,7 +3,7 @@ Data is simply a collection of raw facts and figures. Applications are responsib
 The nature and properties of data typically influence the design and implementation of storage systems. Some of the properties include volume, content, and the frequency of access of data. As an example, Facebook<sup>[2][^2]</sup> recently studied the access patterns of image and video content posted by its users to find that the access rate exponentially decreases as time passes. Facebook used these findings to design and implement a storage system specific to its needs. In the following video, we look at the various properties of data that influence the design of storage systems.
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pFkn]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e04f5149-dc17-42ec-bc2b-67d4950c8aa5]
 
 ## Structure of data
 

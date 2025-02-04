@@ -10,7 +10,7 @@ This module consists of one lesson:
 
 - Lesson 1 – Explore API Management 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5and3]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=54732cab-41d9-4893-a7c1-4dad9c0233c9]
 
 Module 8 Tips and Tricks 
 

@@ -1,6 +1,6 @@
 The technical training we make available to you is a supplement to your vast knowledge and will help you feel confident to teach your students the skills they need to sit for and pass a Microsoft Certification exam. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4UdgJ] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=943df350-6d71-4a8e-851c-abac967e0717] 
 
 If you are teaching the advanced role-based courses start with [Microsoft Learn](https://aka.ms/learn). Microsoft Learn provides you with: 
 

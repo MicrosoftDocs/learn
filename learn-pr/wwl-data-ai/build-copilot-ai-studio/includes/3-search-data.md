@@ -10,8 +10,6 @@ While a text-based index will improve search efficiency, you can usually achieve
 
 An embedding is a special format of data representation that a search engine can use to easily find the relevant information. More specifically, an embedding is a vector of floating-point numbers.
 
-> [!VIDEO https://play.vidyard.com/sq5CuXbmZzdpqWABdwVjug?loop=1]
-
 For example, imagine you have two documents with the following contents:
 
 - *"The children played joyfully in the park."*

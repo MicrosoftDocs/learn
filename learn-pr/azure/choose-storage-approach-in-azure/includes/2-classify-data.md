@@ -6,7 +6,7 @@ Application data can be classified in one of three ways: structured, semi-struct
 
 The following video introduces your options for storing data in the cloud:<br /><br />
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEuY]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=63e54d98-9834-402e-9e92-360d47428740]
 
 ### Structured data
 
@@ -26,7 +26,7 @@ A data serialization language defines semi-structured data. In data classificati
 
 Software developers use data serialization languages to write data stored in memory to a file, which can then be sent to another system, parsed, and read. The sender and receiver don't need to know details about the other system. Both systems can understand the data if using the same serialization language.<br /><br />
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LBu6]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=620c2034-171d-4403-9ac9-56f72156922f]
 
 ### Common serialization languages
 
@@ -104,7 +104,7 @@ It's often used for configuration files written by people but parsed by programs
 
 The following video describes semi-structured data and NoSQL data storage options:<br /><br />
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEvd]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=42b1d775-8bc0-4210-b1f5-d406a9d89a70]
 
 ### Unstructured data
 

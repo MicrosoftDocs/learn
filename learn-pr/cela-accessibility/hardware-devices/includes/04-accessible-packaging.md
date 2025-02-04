@@ -76,6 +76,6 @@ The following images show the packaging for the Xbox Series X. The surrounding m
 
 The following video features many of the best practices outlined in this unit in action. It discusses the accessible packaging components designed and implemented for the Xbox Adaptive Controller. This product and its packaging exemplify a "gold standard" of accessible design. The intent of this video is to reinforce best practices information presented in this unit and to provide inspiration for future packaging design efforts.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOcyB]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ee240e40-5f4c-4464-b021-42e000163b09]
 
 Devices differ in terms of size, weight, fragility, and cost. These variables might introduce challenges when you design and create accessible packaging. When you identify and implement solutions for these challenges, you can help improve customer satisfaction. You can also help to provide more customers a truly delightful experience from the moment they have their device at home.

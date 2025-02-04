@@ -1,6 +1,6 @@
 Throughout the module series, you have learned about the features you will implement and how Azure Cloud services tie in to making your HoloLens 2 application. You added the required components into the project and prepared the scene for this module series. 
 
-You can now store data and images in the cloud with Azure Storage, use Azure AI Custom Vision to associate images and train a model, and bring objects to a local context with Azure Spatial Anchors.
+You can now store data and images in the cloud with Azure Storage, use Azure AI Custom Vision to associate images and train a model.
 
 ## Next steps
 

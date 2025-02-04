@@ -1,7 +1,7 @@
 We shall now dive into the actual devices used to store and persist data. This video should serve as a refresher on various types of storage technologies that are available, with their relative cost/performance tradeoffs. 
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pFkn]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e04f5149-dc17-42ec-bc2b-67d4950c8aa5]
 
 ## Memory hierarchy
 

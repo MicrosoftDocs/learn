@@ -11,7 +11,7 @@ For example, *Starship Commander* is a virtual reality (VR) game from Human Inte
 
 Watch the following video to learn more.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vyDj]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=486ba23e-53be-4666-bea1-52df83a290bd]
 
 ## Natural language processing in Microsoft Azure
 

@@ -2,7 +2,7 @@ In this demonstration, you'll learn to:
 
 - Complete the deployment of Azure File Sync.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CIao]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=612b0475-f5d0-473b-a441-f76d626d1c28]
 
 ## Next steps
 

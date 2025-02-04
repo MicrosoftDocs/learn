@@ -8,7 +8,7 @@ metadata:
   description: Build Bicep modules that are reusable, flexible, and shareable. Add parameters, conditions, and outputs to make your modules composable into templates.
   ms.service: azure-resource-manager
   manager: jasongroce
-  ms.date: 09/27/2024
+  ms.date: 01/31/2025
   author: mumian
   ms.author: jgao
   ms.topic: module

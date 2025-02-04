@@ -94,7 +94,7 @@ You start with an existing template that your team has been using. The template 
 Run `New-AzResourceGroupDeployment` to deploy the template.
 
 ```powershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep
+New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 ```
 
 The text **Running...** appears in the terminal. The deployment takes a minute or two to finish.
@@ -108,7 +108,7 @@ The text **Running...** appears in the terminal. The deployment takes a minute o
 Run `New-AzResourceGroupDeployment` to deploy the template.
 
 ```powershell
-New-AzResourceGroupDeployment -TemplateFile azuredeploy.json
+New-AzResourceGroupDeployment -Name main -TemplateFile azuredeploy.json
 ```
 
 The text **Running...** appears in the terminal. The deployment takes a minute or two to finish.
@@ -122,7 +122,7 @@ The text **Running...** appears in the terminal. The deployment takes a minute o
 Run `az deployment group create` to deploy the template.
 
 ```azurecli
-az deployment group create --template-file main.bicep
+az deployment group create --name main --template-file main.bicep
 ```
 
 The deployment takes a minute or two to finish.
@@ -136,7 +136,7 @@ The deployment takes a minute or two to finish.
 Run `az deployment group create` to deploy the template.
 
 ```azurecli
-az deployment group create --template-file azuredeploy.json
+az deployment group create --name main --template-file azuredeploy.json
 ```
 
 The deployment takes a minute or two to finish.

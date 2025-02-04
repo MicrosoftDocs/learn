@@ -1,4 +1,4 @@
-In the previous unit, you defined a resource in XAML and used it as a static value. However, there are some cases where **StaticResource** isn't appropriate. Consider the following scenarios:
+In the previous unit, you defined a resource in Extensible Application Markup Language (XAML) and used it as a static value. However, there are some cases where **StaticResource** isn't appropriate. Consider the following scenarios:
 
 - Suppose you want to implement color themes that let the user change the look of the app at runtime. The **StaticResource** mark-up extension does the dictionary lookup only once, so it can't update the UI dynamically.
 

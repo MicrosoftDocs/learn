@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.combine-prompts-functions.understand-prompt-injections
+title: Understand prompt injections
+metadata:
+  title: Understand prompt injections
+  description: "Understand prompt injections"
+  ms.date: 01/27/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand-prompt-injections.md)]

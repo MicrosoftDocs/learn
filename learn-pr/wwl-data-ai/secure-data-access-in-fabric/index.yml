@@ -9,6 +9,7 @@ metadata:
   author: wwlpublish
   ms.author: theresai
   ms.topic: module
+  ms.collection: wwl-ai-copilot
   ms.service: azure
 title: Secure data access in Microsoft Fabric
 summary: Microsoft Fabric uses a multi-layer security model with access controls at different levels. 

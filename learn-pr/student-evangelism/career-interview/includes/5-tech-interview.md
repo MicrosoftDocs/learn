@@ -4,7 +4,7 @@ This unit give you tips on what to do before and during a *technical* interview,
 
 To get started, watch this short video about the lessons that one Microsoft employee learned from technical interviews:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4O7Th]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0b818536-d7e6-46e3-89ef-a0c9d3db0b76]
 
 ## The take-home assignment
 

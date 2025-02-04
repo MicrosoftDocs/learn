@@ -103,7 +103,7 @@ The main steps in the process are:
 2.  Configure prerequisites for an enterprise root CA. Install the required server role and server role services.
 3.  Deploy an enterprise root CA. Configure Enterprise Root CA settings.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McIg]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e275f719-9caa-408e-8480-4d7103f2624f]
 
 ---
 
