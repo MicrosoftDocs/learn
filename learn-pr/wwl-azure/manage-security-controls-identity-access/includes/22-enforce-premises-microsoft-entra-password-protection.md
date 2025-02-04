@@ -54,7 +54,7 @@ The on-premises Microsoft Entra Password Protection components work as follows:
  -  Microsoft Entra Password Protection isn't a real-time policy application engine. There can be a delay between when a password policy configuration change is made in Microsoft Entra ID and when that change reaches and is enforced on all DCs.
  -  Microsoft Entra Password Protection acts as a supplement to the existing Microsoft Entra ID password policies, not a replacement. This includes any other 3rd-party password filter dlls that may be installed. Microsoft Entra ID always requires that all password validation components agree before accepting a password.
 
-## Forest / tenant binding for Microsoft Entra Password Protection
+## Forest tenant binding for Microsoft Entra Password Protection
 
 Deployment of Microsoft Entra Password Protection in an AD DS forest requires registration of that forest with Microsoft Entra ID. Each proxy service that's deployed must also be registered with Microsoft Entra ID. These forest and proxy registrations are associated with a specific Microsoft Entra tenant, which is identified implicitly by the credentials that are used during registration.
 

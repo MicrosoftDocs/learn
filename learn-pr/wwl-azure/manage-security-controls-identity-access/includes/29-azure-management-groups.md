@@ -6,10 +6,7 @@ For example, you can apply policies to a management group that limits the region
 
 ## Hierarchy of management groups and subscriptions
 
-You can build a flexible structure of management groups and subscriptions to organize your resources into a hierarchy for unified policy and access management. The following diagram shows an example of creating a hierarchy for governance using management groups.
-
-:::image type="content" source="../media/azure-management-groups-38f2d580-eb450a01.png" alt-text="Diagram showing an example of the hierarchy of management groups and subscriptions.":::
-
+You can build a flexible structure of management groups and subscriptions to organize your resources into a hierarchy for unified policy and access management.
 
 You can create a hierarchy that applies a policy, for example, which limits VM locations to the West US region in the management group called "Corp". This policy will inherit all the Enterprise Agreement (EA) subscriptions that are descendants of that management group and will apply to all VMs under those subscriptions. This security policy cannot be altered by the resource or subscription owner, allowing for improved governance.
 
@@ -67,9 +64,10 @@ The following chart shows the list of roles and the supported actions on managem
 | Resource Policy Contributor |            |            |              |            |                   | X                 |          |
 | User Access Administrator   |            |            |              |            | X                 | X                 |          |
 
-\*: The **Management Group Contributor** and **Management Group Reader** roles allow users to perform those actions only on the management group scope.
+The **Management Group Contributor** and **Management Group Reader** roles allow users to perform those actions only on the management group scope.
 
-\*\*: Role assignments on the root management group aren't required to move a subscription or management group to and from it.
+ -  The **Management Group Contributor** and **Management Group Reader** roles allow users to perform those actions only on the management group scope.
+ -  Role assignments on the root management group aren't required to move a subscription or management group to and from it.
 
 ## Azure custom role definition and assignment
 

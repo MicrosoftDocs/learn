@@ -1,7 +1,7 @@
 Once you've enabled Permissions Management, you can connect it to your Amazon Web Services (AWS), Microsoft Azure, or Google Cloud Platform (GCP) platforms.
 
 > [!NOTE]
-> To complete this task, you must have at least [*Billing Administrator*](https://go.microsoft.com/fwlink/?linkid=2248574) permissions. You can't enable Permissions Management as a user from another tenant who has signed in via B2B or via Azure Lighthouse.
+> To complete this task, you must have at least Billing Administrator permissions. You can't enable Permissions Management as a user from another tenant who has signed in via B2B or via Azure Lighthouse.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ In your browser:
  -  In your browser:
     
     
-     -  Browse to the [Microsoft Entra admin center](https://entra.microsoft.com/) and sign in to [Microsoft Entra ID](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) as at least a Billing Administrator.
+     -  Browse to the Microsoft Entra admin center and sign in to Microsoft Entra ID as at least a Billing Administrator.
      -  If needed, activate the *Permissions Management Administrator* role in your Microsoft Entra tenant.
      -  In the Azure portal, select **Microsoft Entra Permissions Management**, then select the link to purchase a license or begin a trial.
 
@@ -25,12 +25,12 @@ In your browser:
 
 There are two ways to activate a trial or a full product license.
 
-1.  The first way is to go to the [Microsoft 365 admin center](https://admin.microsoft.com/).
+1.  The first way is to go to the Microsoft 365 admin center.
     
     
      -  Sign in as a *Global Administrator* for your tenant.
      -  Go to Setup and sign up for a Microsoft Entra Permissions Management trial.
-     -  For self-service, Go to the [Microsoft 365 portal](https://aka.ms/TryPermissionsManagement) to sign up for a 45-day free trial or to purchase licenses.
+     -  For self-service, Go to the Microsoft 365 portal to sign up for a 45-day free trial or to purchase licenses.
 2.  The second way is through Volume Licensing or Enterprise agreements.
     
     

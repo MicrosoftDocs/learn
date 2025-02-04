@@ -2,9 +2,6 @@ Password hash synchronization is one of the sign-in methods used to accomplish h
 
 Password hash synchronization is an extension to the directory synchronization feature implemented by Microsoft Entra Connect Sync. You can use this feature to sign in to Microsoft Entra services like Microsoft 365. You sign in to the service by using the same password you use to sign in to your on-premises Active Directory instance.
 
-:::image type="content" source="../media/password-hash-synchronization-architecture-d8637c23-7f5cfd22.png" alt-text="Diagram showing an example of password hash synchronization functionality.":::
-
-
 Password hash synchronization helps by reducing the number of passwords, your users need to maintain to just one. Password hash synchronization can:
 
  -  Improve the productivity of your users.

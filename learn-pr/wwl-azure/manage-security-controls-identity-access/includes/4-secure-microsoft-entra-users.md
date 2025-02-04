@@ -1,8 +1,5 @@
 Microsoft Entra ID allows you to create several types of users in your tenant, which provides greater flexibility in how you manage your organization's users.
 
-> [!NOTE]
-> For information about viewing or deleting personal data, please review Microsoft's guidance on the Windows data subject requests for the General Data Protection Regulation (GDPR) site.
-
 ## Prerequisites
 
 The required role of least privilege varies based on the type of user you're adding and if you need to assign Microsoft Entra roles at the same time. Global Administrator can create users and assign roles, but whenever possible you should use the least privileged role.

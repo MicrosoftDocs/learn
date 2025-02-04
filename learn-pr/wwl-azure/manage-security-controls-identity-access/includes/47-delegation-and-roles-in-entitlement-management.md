@@ -10,62 +10,21 @@ By default, users in the Global Administrator role or the Identity Governance Ad
 
 ## Delegate example
 
-To understand how you might delegate access governance in entitlement management, it helps to consider an example. Suppose your organization has the following administrator and managers.
+To understand how you might delegate access governance in entitlement management, it helps to consider an example. Suppose your organization has an IT administrator and managers in various departments such as Marketing, Finance, and Legal, who are responsible for their department's resources and business-critical content.
 
-:::image type="content" source="../media/delegate-administrators-managers-4aed1265-daa09816.png" alt-text="Diagram showing an example of delegate access governance.":::
+With entitlement management, you can delegate access governance to these non-administrators because they know which users need access, for how long, and to which resources. Delegating to non-administrators ensures the right people are managing access for their departments.
 
+Here's one way that the IT administrator could delegate access governance to the marketing, finance, and legal departments:
 
-As the IT administrator, Hana has contacts in each department--Mamta in Marketing, Mark in Finance, and Joe in Legal who are responsible for their department's resources and business critical content.
+The IT administrator creates a new Microsoft Entra security group and adds the department managers as members of the group. This group is then added to the catalog creators role. The department managers can now create catalogs for their departments, add resources that their departments need, and do further delegation within the catalog. They can't see each other's catalogs.
 
-With entitlement management, you can delegate access governance to these non-administrators because they're the ones who know which users need access, for how long, and to which resources. Delegating to non-administrators ensures the right people are managing access for their departments.
-
-Here's one way that Hana could delegate access governance to the marketing, finance, and legal departments.
-
-1.  Hana creates a new Microsoft Entra security group, and adds Mamta, Mark, and Joe as members of the group.<br>
-2.  Hana adds that group to the catalog creators role.<br>
-3.  Mamta, Mark, and Joe can now create catalogs for their departments, add resources that their departments need, and do further delegation within the catalog. They can't see each other's catalogs.<br>
-4.  Mamta creates a **Marketing** catalog, which is a container of resources.<br>
-5.  Mamta adds the resources that the marketing department owns to this catalog.<br>
-6.  Mamta can add other people from that department as catalog owners for this catalog, which helps share the catalog management responsibilities.<br>
-7.  Mamta can further delegate the creation and management of access packages in the Marketing catalog to project managers in the Marketing department. She can do this by assigning them to the access package manager role on a catalog. An access package manager can create and manage access packages, along with policies, requests and assignments in that catalog. If the catalog allows it, the access package manager can configure policies to bring in users from connected organizations.<br>
-
-The following diagram shows catalogs with resources for the marketing, finance, and legal departments. Using these catalogs, project managers can create access packages for their teams or projects.
-
-:::image type="content" source="../media/entitlement-management-delegate-881906a0-51c3b849.png" alt-text="Diagram showing an example of catalogs with resources.":::
-
-
-After delegation, the marketing department might have roles similar to the following table.
-
-| **User** | **Organizational role**   | **Microsoft Entra role**                                  | **Entitlement management role**   |
-| -------- | ------------------------- | --------------------------------------------------------- | --------------------------------- |
-| Hana     | IT administrator          | Global administrator or Identity Governance administrator |                                   |
-| Mamta    | Marketing manager         | User                                                      | Catalog creator and Catalog owner |
-| Bob      | Marketing lead            | User                                                      | Catalog owner                     |
-| Jessica  | Marketing project manager | User                                                      | Access package manager            |
-
-## Entitlement management roles
+For example, the marketing manager creates a Marketing catalog, which is a container of resources. The marketing manager adds the resources that the marketing department owns to this catalog and can add other people from that department as catalog owners, which helps share the catalog management responsibilities. The marketing manager can further delegate the creation and management of access packages in the Marketing catalog to project managers in the Marketing department by assigning them to the access package manager role on a catalog. An access package manager can create and manage access packages, along with policies, requests, and assignments in that catalog. If the catalog allows it, the access package manager can configure policies to bring in users from connected organizations.
 
 Entitlement management has the following roles, with permissions for administering entitlement management itself, that applies across all catalogs.
 
-| **Entitlement management role** | **Role definition ID**                 | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| ------------------------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Catalog creator                 | `ba92d953-d8e0-4e39-a797-0cbedb0a89e8` | Create and manage catalogs. Typically an IT administrator who isn't a Global administrator, or a resource owner for a collection of resources. The person that creates a catalog automatically becomes the catalog's first catalog owner, and can add more catalog owners. A catalog creator can’t manage or see catalogs that they don’t own and can’t add resources they don’t own to a catalog. If the catalog creator needs to manage another catalog or add resources they don’t own, they can request to be a co-owner of that catalog or resource. |
-
 Entitlement management has the following roles that are defined for each particular catalog, for administering access packages and other configuration within a catalog. An administrator or a catalog owner can add users, groups of users, or service principals to these roles
 
-| **Entitlement management role**   | **Role definition ID**                 | **Description**                                                                                                                                                 |
-| --------------------------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Catalog owner                     | `ae79f266-94d4-4dab-b730-feca7e132178` | Edit and manage access packages and other resources in a catalog. Typically an IT administrator or resource owners, or a user who the catalog owner has chosen. |
-| Catalog reader                    | `44272f93-9762-48e8-af59-1b5351b1d6b3` | View existing access packages within a catalog.                                                                                                                 |
-| Access package manager            | `7f480852-ebdc-47d4-87de-0d8498384a83` | Edit and manage all existing access packages within a catalog.                                                                                                  |
-| Access package assignment manager | `e2182095-804a-4656-ae11-64734e9b7ae5` | Edit and manage all existing access packages' assignments.                                                                                                      |
-
 Also, the chosen approver and a requestor of an access package have rights, although they're not roles
-
-| **Right** | **Description**                                                                                                                 |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Approver  | Authorized by a policy to approve or deny requests to access packages, though they can't change the access package definitions. |
-| Requestor | Authorized by a policy of an access package to request that access package.                                                     |
 
 The following table lists the tasks that the entitlement management roles can do within entitlement management
 

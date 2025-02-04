@@ -13,13 +13,7 @@ You can change the name of the management group by using the portal, PowerShell,
 3.  Select the management group you would like to rename.
 4.  Select **details**.
 5.  Select the **Rename group** option at the top of the page.
-    
-    :::image type="content" source="../media/detail-action-small-4c3e9c4c-1825daba.png" alt-text="Screenshot showing the rename group control bar in the Azure portal.":::
-    
 6.  When the menu opens, enter the new name you would like to have displayed.
-    
-    :::image type="content" source="../media/rename-group-92580662-3e5588d4.png" alt-text="Screenshot showing the rename group menu tab in the Azure portal.":::
-    
 7.  Select **Save**.
 
 ### Change the name in PowerShell
@@ -366,9 +360,7 @@ If you're doing the move action, you need permission at each of the following la
 
 If the Owner role on the subscription is inherited from the current management group, your move targets are limited. You can only move the subscription to another management group where you have the Owner role. You can't move the subscription to a management group where you're only a contributor because you would lose ownership of the subscription. If you're directly assigned to the Owner role for the subscription, you can move it to any management group where you're a contributor.
 
-## Move subscriptions
-
-### Add an existing Subscription to a management group in the portal
+## Add an existing Subscription to a management group in the portal
 
 1.  Log into the [Azure portal](https://portal.azure.com/).
 2.  Select **All services** &gt; **Management groups**.

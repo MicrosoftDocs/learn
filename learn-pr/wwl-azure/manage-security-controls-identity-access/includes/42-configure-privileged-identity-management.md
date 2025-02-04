@@ -1,4 +1,4 @@
-Privileged Identity Management (PIM) is a service in Microsoft Entra ID that enables you to manage, control, and monitor access to important resources in your organization. These resources include resources in Microsoft Entra ID, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune. The following video explains important PIM concepts and features.
+Privileged Identity Management (PIM) is a service in Microsoft Entra ID that enables you to manage, control, and monitor access to important resources in your organization. These resources include resources in Microsoft Entra ID, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune.
 
 ## Reasons to use
 
@@ -45,9 +45,6 @@ You can assign the following to these roles or groups:
 ## Principle of least privilege
 
 You assign users the role with the [least privileges necessary to perform their tasks](/entra/identity/role-based-access-control/delegate-by-task). This practice minimizes the number of Global Administrators and instead uses specific administrator roles for certain scenarios.
-
-> [!NOTE]
-> Microsoft has very few Global Administrators. Learn more at [how Microsoft uses Privileged Identity Management](https://www.microsoft.com/itshowcase/Article/Content/887/Using-Azure-AD-Privileged-Identity-Management-for-elevated-access).
 
 ## Type of assignments
 

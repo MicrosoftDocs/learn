@@ -18,9 +18,6 @@ An automatic workflow schedules a trigger based on user attributes. Scoping of a
 
 Lifecycle workflows can even integrate with the ability of logic apps tasks to extend workflows for more complex scenarios through your existing logic apps.
 
-:::image type="content" source="../media/life-cycle-workflows-930f9b9e-246ae47f.png" alt-text="Diagram showing an example of lifecycle workflows.":::
-
-
 ## Why to use lifecycle workflows<br>
 
 Anyone who wants to modernize an identity lifecycle management process for employees needs to ensure:

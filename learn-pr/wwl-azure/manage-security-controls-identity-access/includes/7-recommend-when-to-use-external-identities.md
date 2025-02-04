@@ -31,9 +31,6 @@ As an administrator, you can easily add guest users to your organization in the 
  -  Assign guest users to apps or groups.
  -  [Send an invitation email](/entra/external-id/invitation-email-elements) that contains a redemption link, or send a direct link to an app you want to share.
 
-:::image type="content" source="../media/invite-external-user-1b53c66b-764a9703.png" alt-text="Screenshot showing the Microsoft Entra admin center for inviting an external user.":::
-
-
  -  Guest users follow a few simple redemption steps to sign in.
 
 :::image type="content" source="../media/review-permissions-f0a7a68d-8820455b.png" alt-text="Screenshot showing the review permissions template that is used to invite guest users.":::

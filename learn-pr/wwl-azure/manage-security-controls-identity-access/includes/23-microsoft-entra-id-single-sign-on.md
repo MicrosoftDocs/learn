@@ -2,9 +2,6 @@ Single sign-on is an authentication method that allows users to sign in using on
 
 Many applications already exist in Microsoft Entra ID that you can use with SSO. You have several options for SSO depending on the needs of the application and how it's implemented. Take time to plan your SSO deployment before you create applications in Microsoft Entra ID. The management of applications can be made easier by using the My Apps portal.
 
-:::image type="content" source="../media/single-sign-on-example-9cf5ab58-4522f466.jpg" alt-text="Diagram showing an example of single sign-on functionality.":::
-
-
 ## Single sign-on options
 
 Choosing an SSO method depends on how the application is configured for authentication. Cloud applications can use federation-based options, such as OpenID Connect, Open Authorization (OAuth), and Security Assertion Markup Language (SAML). The application can also use password-based SSO, linked-based SSO, or SSO can be disabled.
