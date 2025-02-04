@@ -1452,6 +1452,11 @@ achievements:
   title: Update infrastructure for Azure Stack Hub
   summary: Update infrastructure for Azure Stack Hub
   iconUrl: /training/achievements/5-update-infrastructure-for-azure-stack-hub.svg
+- uid: learn.wwl.manage-infrastructure-for-azure-stack-hub.trophy
+  type: trophy
+  title: Manage Infrastructure for Azure Stack Hub
+  summary: Manage Infrastructure for Azure Stack Hub
+  iconUrl: /training/achievements/manage-infrastructure-for-azure-stack-hub.svg
 - uid: learn.wwl.manage-alerts-incidents-microsoft-defender-for-endpoints.badge
   type: badge
   title: Manage alerts and incidents in Microsoft Defender for Endpoint
