@@ -1,6 +1,6 @@
 You can automate a load test in Azure Load Testing by creating a CI/CD pipeline. In this exercise you learn how to configure GitHub Actions to deploy a sample web app and start a load test using Azure Load Testing.
 
-In this exercise you will:
+In this exercise you:
 
 * Create App Service and Load Testing resources in Azure.
 * Create and configure a service principal to enable GitHub Actions workflows to perform actions in your Azure account.
@@ -28,3 +28,4 @@ Select the **Launch Exercise** button, it opens the exercise instructions in a n
 <a href="https://go.microsoft.com/fwlink/?linkid=2295513" target="_blank">
     <img src="../media/launch-exercise.png" alt="Button to launch exercise.">
 </a>
+
