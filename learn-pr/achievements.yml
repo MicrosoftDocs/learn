@@ -1447,6 +1447,11 @@ achievements:
   title: Manage Azure Stack Hub by using privileged endpoints
   summary: Manage Azure Stack Hub by using privileged endpoints
   iconUrl: /training/achievements/6-manage-azure-stack-hub-by-using-privileged-endpoints.svg
+- uid: learn.wwl.update-infrastructure-for-azure-stack-hub.badge
+  type: badge
+  title: Update infrastructure for Azure Stack Hub
+  summary: Update infrastructure for Azure Stack Hub
+  iconUrl: /training/achievements/5-update-infrastructure-for-azure-stack-hub.svg
 - uid: learn.wwl.manage-alerts-incidents-microsoft-defender-for-endpoints.badge
   type: badge
   title: Manage alerts and incidents in Microsoft Defender for Endpoint

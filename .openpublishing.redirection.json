@@ -34141,6 +34141,65 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },    {
+      "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/9-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/8-monitor-updates-powershell-azure-stack-hub.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/7-azure-stack-hub-update-activity-checklist.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/6-apply-azure-stack-hub-original-equipment-updates.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/5-update-azure-home-director.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/4-prepare-azure-stack-hub-updates.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/3-download-import-update-packages-manually.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/2-update-azure-stack-hub.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/10-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/use-azure-resource-manager/9-knowledge-check.md",
       "redirect_url": "/training/modules/control-and-organize-with-azure-resource-manager/",
       "redirect_document_id": false
