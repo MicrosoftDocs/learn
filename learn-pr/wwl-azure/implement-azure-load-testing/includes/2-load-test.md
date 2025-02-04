@@ -1,4 +1,4 @@
-Azure Load Testing is a service provided by Microsoft Azure that allows developers and testers to generate high-scale loads to identify performance bottlenecks in applications and automate regression testing. It's designed to help optimize the performance, scalability, and capacity of applications by simulating real-world loads.
+Azure Load Testing is a service provided by Microsoft Azure that allows developers and testers to generate high-scale loads to identify performance bottlenecks in applications and automate regression testing. Azure Load Testing is designed to help optimize the performance, scalability, and capacity of applications by simulating real-world loads.
 
 ## Azure Load Testing components
 
@@ -9,8 +9,6 @@ Azure load testing consists of the following components:
 - **Test Run**
 - **Test engine**
 - **App component**
-
-:::image type="content" source="../media/load-testing.png" alt-text="Diagram illustrating the process of load testing.":::
 
 ### Load testing resource
 
@@ -26,14 +24,13 @@ A test describes the load test configuration settings for running a load test. Y
 
 A test contains the following configuration settings for running the load test:
 
-- **Test plan**: the steps to invoke the application endpoint. You can define the test plan in either of two ways:
-
-  - Upload a JMeter test script.
-  - Specify the list of URL endpoints to test.
+- **Test plan**: the steps to invoke the application endpoint. You can define the test plan in two ways:
+    - Upload a JMeter test script.
+    - Specify the list of URL endpoints to test.
 
 - **Load test parameters**: Environment variables, secrets, and certificates.
 - **Load configuration**: Specify the number of test engines in the load test configuration. Specify the number of virtual users in the test script.
-- **Test criteria**: Define failure criteria to specify the performance expectations in the test and configure auto-stop settings for the test.
+- **Test criteria**: Define failure criteria to specify the performance expectations in the test and configure auto stop settings for the test.
 - **Monitoring settings**: Configure the list of Azure app components and resource metrics to monitor.
 
 When you start a test, Azure Load Testing deploys the JMeter test script, related files, and configuration to the test engine instances. The test engine instances then initiate the JMeter test script to simulate the application load.
@@ -63,6 +60,6 @@ Examples of load patterns:
 
 When you run a load test for an Azure-hosted application, you can monitor resource metrics for the different Azure application components (server-side metrics). While the load test runs, and after completion of the test, you can monitor and analyze the resource metrics in the Azure Load Testing dashboard.
 
-When you create or update a load test, you can configure the list of app components that Azure Load Testing will monitor. You can modify the list of default resource metrics for each app component.
+When you create or update a load test, you can configure the list of app components that Azure Load Testing monitors. You can modify the list of default resource metrics for each app component.
 
-Now that you understand the key concepts and components of Azure Load Testing, lets learn how to create and manage an Azure Load Testing resource.
+Learn more about which [Azure resource types that Azure Load Testing supports](/azure/load-testing/resource-supported-azure-resource-types).
