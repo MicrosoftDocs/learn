@@ -48,7 +48,7 @@ quiz:
       explanation: "Incorrect: Immediate approval risks compliance errors without testing."
     - content: "Assign tasks manually to data owners."
       isCorrect: false
-      explanation: "Incorrect: Assigning tasks is part of request processing, not pre-activation testing."
+      explanation: "Incorrect: Assigning tasks is part of request processing, not preactivation testing."
 
   - content: "A task owner needs to identify duplicates in a request's data set. What should they do?"
     choices:
