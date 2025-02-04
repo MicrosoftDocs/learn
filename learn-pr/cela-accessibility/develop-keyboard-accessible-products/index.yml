@@ -7,7 +7,7 @@ metadata:
   title: Develop keyboard-accessible products
   description: Learn how to develop keyboard-accessible products with our comprehensive module. This course covers essential guidelines, design considerations, implementation strategies, and testing methods to ensure your products are accessible to all users, including those with disabilities.
   ms.topic: module
-  ms.service: m365
+  ms.service: microsoft-365
   moduleType: standard
 title: Develop keyboard-accessible products
 summary: |
@@ -31,6 +31,7 @@ products:
 - azure
 units:
 - learn.cela-accessibility.develop-keyboard-accessible-products.introduction
+- learn.cela-accessibility.develop-keyboard-accessible-products.keyboard-navigation
 - learn.cela-accessibility.develop-keyboard-accessible-products.review-accessibility-guidelines
 - learn.cela-accessibility.develop-keyboard-accessible-products.review-design-considerations
 - learn.cela-accessibility.develop-keyboard-accessible-products.design-for-keyboard-accessibility
