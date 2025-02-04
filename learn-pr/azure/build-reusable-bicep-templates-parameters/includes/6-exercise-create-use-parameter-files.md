@@ -69,6 +69,7 @@ Run the following Azure CLI command in the terminal. Notice that you're providin
 
 ```azurecli
 az deployment group create \
+  --name main \
   --template-file main.bicep \
   --parameters main.parameters.dev.json
 ```
@@ -81,6 +82,7 @@ Run the following Azure PowerShell command in the terminal. Notice that you're p
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
+  -Name main `
   -TemplateFile main.bicep `
   -TemplateParameterFile main.parameters.dev.json
 ```
@@ -205,6 +207,7 @@ Run the following Azure CLI command in the terminal. You're providing a paramete
 
 ```azurecli
 az deployment group create \
+  --name main \
   --template-file main.bicep \
   --parameters main.parameters.dev.json
 ```
@@ -217,6 +220,7 @@ Run the following Azure PowerShell command in the terminal. You're providing a p
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
+  -Name main `
   -TemplateFile main.bicep `
   -TemplateParameterFile main.parameters.dev.json
 ```

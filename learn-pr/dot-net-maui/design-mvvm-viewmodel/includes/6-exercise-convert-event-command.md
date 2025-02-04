@@ -60,7 +60,7 @@ The first step in converting the event handler to a command is adding the comman
 
     The `DeleteMovie` method already exists and accepts a `MovieViewModel` parameter. The command wraps that method and exposes it on the viewmodel.
 
-1. Open the *ViewModels\\MoviesListPage.xaml* file.
+1. Open the *Views\\MoviesListPage.xaml* file.
 1. Update the `MenuItem` to binding the `Command` parameter to the `DeleteMovieCommand`. Pass the current binding context as the `CommandParameter`.
 
     ```xaml
