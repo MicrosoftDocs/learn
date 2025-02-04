@@ -1439,9 +1439,14 @@ achievements:
   iconUrl: /training/achievements/3-plan-configure-business-continuity-disaster-recovery.svg
 - uid: learn.wwl.manage-capacityfor-azure-stack-hub.badge
   type: badge
-  title: Manage capacity for Azure Stack Hub Plan and configure business continuity and disaster recovery
+  title: Manage capacity for Azure Stack Hub 
   summary: Manage capacity for Azure Stack Hub
   iconUrl: /training/achievements/4-manage-capacity-for-azure-stack-hub.svg
+- uid: learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.badge
+  type: badge
+  title: Manage Azure Stack Hub by using privileged endpoints
+  summary: Manage Azure Stack Hub by using privileged endpoints
+  iconUrl: /training/achievements/6-manage-azure-stack-hub-by-using-privileged-endpoints.svg
 - uid: learn.wwl.manage-alerts-incidents-microsoft-defender-for-endpoints.badge
   type: badge
   title: Manage alerts and incidents in Microsoft Defender for Endpoint
