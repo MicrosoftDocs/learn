@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 04/08/2024
+  ms.date: 01/17/2025
   author: JnHs
   ms.author: jenhayes
   ms.topic: unit
@@ -48,7 +48,7 @@ quiz:
       explanation: "Azure dashboards aren't stored as XML files."
     - content: JSON
       isCorrect: true
-      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
+      explanation: "Azure dashboards are stored as JSON files, which allows them to be uploaded and downloaded to share with other members of the Azure directory."
     - content: HTML
       isCorrect: false
       explanation: "Azure dashboards aren't stored as HTML files."

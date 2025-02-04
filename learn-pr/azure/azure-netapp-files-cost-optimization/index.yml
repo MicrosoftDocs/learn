@@ -38,5 +38,5 @@ units:
 - learn.azure.azure-netapp-files-cost-optimization.knowledge-check
 - learn.azure.azure-netapp-files-cost-optimization.summary
 badge:
-  uid: learn.azure.azure-netapp-files-cost-optimization
+  uid: learn.azure.azure-netapp-files-cost-optimization.badge
 

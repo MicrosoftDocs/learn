@@ -6,9 +6,9 @@ The computers required to run the cluster can be physical or virtual, and are co
 
 |Computer|Machine name|OS|
 |---|---|---|
-|Administrator workstation|ADM|Windows Server 2019|
+|Administrator workstation|ADM|Windows Server 2019 or later|
 |Master/control-plane node|K8S-M|Linux Ubuntu|
-|Worker node|K8S-W|Windows Server 2019 Core|
+|Worker node|K8S-W|Windows Server 2019 or later Core|
 
 To create a Kubernetes cluster, you can connect ADM to the node machines by using the Remote Desktop Protocol (RDP) or Secure Shell (SSH):
 
@@ -42,11 +42,11 @@ To create a Kubernetes cluster, you can connect ADM to the node machines by usin
 
 1. After the cluster initializes, follow the instructions in the terminal output to copy the **Kubernetes configuration (config)** file.
 
-    - Make a note of the `kubeadm join` command in the terminal output because you'll use the `kubeadm join` command in a later step to join the worker node to the cluster. The following image is an example of the terminal output from the command `kubeadm init`:
+    - Make a note of the `kubeadm join` command in the terminal output because you use the `kubeadm join` command in a later step to join the worker node to the cluster. The following image is an example of the terminal output from the command `kubeadm init`:
 
     :::image type="content" source="../media/m26-kubeadm-init.png" alt-text="A screenshot of the terminal output from the command `kubeadm init` in a terminal window." border="false":::
 
-1. Install a pod network for the cluster by adding a suitable network plug-in configuration manifest **.yaml** file such as **Flannel**. For example, in a terminal window on the master, add the file **network-plug-in.yaml** by using the following command :
+1. Install a pod network for the cluster by adding a suitable network plug-in configuration manifest **.yaml** file such as **Flannel**. For example, in a terminal window on the master, add the file **network-plug-in.yaml** by using the following command:
 
     ```bash
     kubectl apply -f <network-plug-in.yaml>

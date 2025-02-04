@@ -14,5 +14,5 @@ You should now be able to:
 
 The following additional resources are intended to provide more information on topics in this module or on additional topics related to this module.
 
- -  [Run container images in Azure Container Instances](/learn/modules/create-run-container-images-azure-container-instances/) is a Microsoft Learn module that provides additional information about running container images using Azure Container Instances.
- -  [Configure Azure Container Instances](/learn/modules/configure-azure-container-instances/) is a Microsoft Learn module that helps you configure Azure Container Instances and container groups.
+- [Run container images in Azure Container Instances](/learn/modules/create-run-container-images-azure-container-instances/) is a Microsoft Learn module that provides additional information about running container images using Azure Container Instances.
+- [Configure Azure Container Instances](/learn/modules/configure-azure-container-instances/) is a Microsoft Learn module that helps you configure Azure Container Instances and container groups.

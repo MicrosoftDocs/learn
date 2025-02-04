@@ -6,8 +6,8 @@ metadata:
   title: "Develop secure IoT solutions for Azure Sphere with Azure IoT Central"
   description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Central"
   ms.date: 07/10/2024
-  author: leestott
-  ms.author: chnoring
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.service: azure-sphere
@@ -35,6 +35,7 @@ prerequisites: |
   - Basic knowledge of Azure Sphere
   - Basic knowledge of Azure IoT
 iconUrl: /training/achievements/student-evangelism/develop-secure-iot-solutions-with-azure-sphere.svg
+hidden: true
 badge:
   uid: learn.develop-secure-iot-solutions-with-azure-sphere.badge
 levels:

@@ -1,7 +1,7 @@
 Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the portal. Based on the roles and groups you create, you have fine-grained control over what users with access to the portal can see and do.  The following video explains the use of Role-Based Access Control (RBAC) and Device Groups (Machine Groups).
 
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bJ2a?rel=0]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c9903800-3d26-4b30-bd0b-fed00dfc6a5c]
 
 Defender for Endpoint RBAC is designed to support your tier or role-based model of choice. It gives you granular control over what roles can see, devices they can access, and actions they can take. The RBAC framework is centered around the following controls:
 

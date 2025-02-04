@@ -16,7 +16,7 @@ Azure Logic Apps is a cloud platform that helps you:
 
 - Monitor and maintain your solutions more easily using tools and services in Azure.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qhug]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b73a5a71-e109-4c38-800e-31905808eac9]
 
 Suppose you work at an athletic shoe company that is planning a new product. You sell the shoes on your website, manage your cloud-hosted advertising videos, and monitor industry news about your company and your competitors.
 

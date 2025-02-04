@@ -51,4 +51,4 @@ modules:
 - learn.github.search-organize-repository-history-github
 - learn.github-copilot-with-python
 trophy:
-  uid: 8-learn-continuous-integration-with-github-actions.svg
+  uid: 8-learn-continuous-integration-with-github-actions.badge

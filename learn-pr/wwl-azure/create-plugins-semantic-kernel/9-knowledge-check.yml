@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check your knowledge"
-  ms.date: 08/27/2024
+  ms.date: 01/24/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -14,36 +14,36 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following options assigns a role to the large language model (LLM) when prompting for a response?"
+  - content: "How is a KernelFunction object invoked with the Semantic Kernel SDK?"
     choices:
-    - content: "Using the `role` attribute in the `message` tag."
+    - content: "By calling the `CreateAsync` method on the kernel."
+      isCorrect: false
+      explanation: "Incorrect. Invocation is done with `InvokeAsync`, not `CreateAsync`."
+    - content: "By using the `Execute` method with no arguments."
+      isCorrect: false
+      explanation: "Incorrect. The method is `InvokeAsync` and requires arguments."
+    - content: "By calling the `InvokeAsync` method on the KernelFunction object or kernel."
       isCorrect: true
-      explanation: "Correct. You can assign a role to the LLM by using the `role` attribute in the `message` tag."
-    - content: "Using the `ChatHistory` object on the LLM response."
-      isCorrect: false
-      explanation: "Incorrect. The `ChatHistory` object is used to store the conversation history."
-    - content: "Using the `assignRole` attribute in the `chat` tag."
-      isCorrect: false
-      explanation: "Incorrect. There isn't a `chat` tag."
-  - content: "Which of the following types is a built-in plugin?"
+      explanation: "Correct. The `InvokeAsync` method is used to invoke a KernelFunction on either the object or kernel."
+  - content: "In what scenario would zero-shot learning be most effective?"
     choices:
-    - content: "FileIOPlugin"
+    - content: "When tasks require step-by-step explanations."
+      isCorrect: false
+      explanation: "Incorrect. Zero-shot learning is not suited for detailed step-by-step tasks."
+    - content: "When tasks are straightforward and require minimal guidance."
       isCorrect: true
-      explanation: "Correct. The FileIOPlugin is a built-in plugin."
-    - content: "TravelPlugins"
+      explanation: "Correct. Zero-shot learning is ideal for simple, general tasks."
+    - content: "When reducing ambiguity with specific examples is necessary."
       isCorrect: false
-      explanation: "Incorrect. TravelPlugins isn't a built-in plugin."
-    - content: "InvokeAsync"
-      isCorrect: false
-      explanation: "Incorrect. InvokeAsync isn't a built-in plugin."
-  - content: "A custom prompt 'SuggestMusic' is located in a 'Prompts' folder. Which line imports this prompt to the kernel?"
+      explanation: "Incorrect. Few-shot learning is better for reducing ambiguity with examples."
+  - content: "What is the role of the ChatHistory object in the Semantic Kernel SDK?"
     choices:
-    - content: "`kernel.ImportPluginFromType<SuggestMusic>();`"
-      isCorrect: false
-      explanation: "Incorrect. `ImportPluginFromType` imports a plugin from a type, not a prompt from a folder."
-    - content: "`kernel.ImportPluginFromPromptDirectory(\"Prompts\");`"
+    - content: "To maintain context and continuity in chat interactions."
       isCorrect: true
-      explanation: "Correct. `ImportPluginFromPromptDirectory` imports the prompt from the Prompts folder."
-    - content: "`kernel.InvokeAsync(\"SuggestMusic\");`"
+      explanation: "Correct. The ChatHistory object ensures a smooth and context-aware conversation."
+    - content: "To store a static set of predefined responses."
       isCorrect: false
-      explanation: "Incorrect. `InvokeAsync` invokes a prompt, but we need to import it first."
+      explanation: "Incorrect. The ChatHistory object dynamically records the sequence of messages in a conversation."
+    - content: "To act as a replacement for the ChatMessage object."
+      isCorrect: false
+      explanation: "Incorrect. The ChatMessage object complements the ChatHistory object by adding detailed metadata."

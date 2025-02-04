@@ -2,16 +2,16 @@
 uid: learn.wwl.design-implement-hybrid-networking.design-implement-hybrid-networking
 title: Design and implement Azure VPN Gateway
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design and implement Azure VPN Gateway
   description: "Design and implement Azure VPN Gateway"
-  ms.date: 11/21/2024
+  ms.date: 01/09/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
   ms.custom:
   - N/A
-azureSandbox: false
-labModal: false
 durationInMinutes: 24
 content: |
   [!include[](includes/2-design-implement-vpn-gateway.md)]

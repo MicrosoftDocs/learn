@@ -26,6 +26,6 @@ manifests / m / Microsoft / PowerShell / 7.1.4.0
 
 The following video walks through the Windows Package Manager Community Repository and talks about each of the sections where you can interact and find information from.
 
-****insert video****
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWLSrQ]
+
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=e5e12234-919b-4f66-ba4f-93de5b3356a3]

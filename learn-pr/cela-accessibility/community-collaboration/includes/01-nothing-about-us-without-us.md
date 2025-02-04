@@ -25,7 +25,7 @@ Players who have experience gaming with a disability can help identify barriers 
 The following video contains examples of how game developers from [The Coalition](https://www.thecoalitionstudio.com/) actively collaborated with members of the gaming and disability community during development.
 
 **Making gaming for everyone real (audio-described version):**
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWO6HD]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e8082596-d288-429a-ad16-0c00a032c5e3]
 
 **Making gaming for everyone real (non-audio-described version):**
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWNZN7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e5e1ea93-5fd1-458c-a65e-5b6ee6bcdcd7]

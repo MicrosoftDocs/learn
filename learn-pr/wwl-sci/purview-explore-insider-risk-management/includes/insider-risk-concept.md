@@ -39,7 +39,7 @@ This trust-based access makes detecting insider risks more complex. Organization
 
 The effects of insider risks can be severe and long-lasting:
 
-- **Financial Consequences**: Organizations might face fines, legal fees, or lost revenue due to data breaches.
+- **Financial consequences**: Organizations might face fines, legal fees, or lost revenue due to data breaches.
 - **Reputation damage**: A loss of trust can harm relationships with customers, employees, and partners.
 - **Operational disruption**: Insider risks can lead to downtime, loss of intellectual property, or competitive disadvantages.
 

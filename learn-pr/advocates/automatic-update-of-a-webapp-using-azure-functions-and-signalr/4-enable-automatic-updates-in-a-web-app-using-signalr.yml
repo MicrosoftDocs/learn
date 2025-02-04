@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Enable automatic updates in a web application using SignalR Service
   description: Learn how a push-based architecture can make a better performing application.
-  ms.date: 08/12/2024
+  ms.date: 01/22/2025
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: unit

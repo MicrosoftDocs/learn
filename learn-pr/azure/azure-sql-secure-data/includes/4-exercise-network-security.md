@@ -78,4 +78,4 @@ In this video, you'll learn how to create, configure, and compare the vari
 * Virtual network rules
 * Private endpoint
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Mx9S]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b809eaa2-1212-48dc-8b65-7f3ab88aa048]

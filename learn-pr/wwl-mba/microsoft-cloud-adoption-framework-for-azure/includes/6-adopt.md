@@ -13,7 +13,7 @@ Watch this video to learn more.
 
 </br>
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3WN54]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=66965aac-2b9d-4caf-a34a-efa37d10792a]
 
 ## Cloud migration
 

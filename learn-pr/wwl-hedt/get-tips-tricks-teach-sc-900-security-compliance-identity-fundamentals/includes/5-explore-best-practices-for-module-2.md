@@ -14,7 +14,7 @@ This module consists of four lessons:
 - Lesson 4 – Describe identity protection governance capabilities of Microsoft Entra ID
 
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXhNM]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b9372d8c-1acb-4ce8-9b0a-a8e3c3e350df]  
 
 Module 2 Tips and Tricks
 
