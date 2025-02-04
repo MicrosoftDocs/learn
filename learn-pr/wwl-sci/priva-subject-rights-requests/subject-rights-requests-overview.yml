@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.priva-subject-rights-requests.understand-subject-rights-request-types
+uid: learn.wwl.priva-subject-rights-requests.subject-rights-requests-overview
 title: Understand and subject rights requests across Microsoft 365 and beyond
 metadata:
   title: Understand and subject rights requests across Microsoft 365 and beyond
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/understand-subject-rights-request-types.md)]
+  [!include[](includes/subject-rights-requests-overview.md)]

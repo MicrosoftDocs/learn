@@ -2,11 +2,11 @@ Subject rights requests for data beyond Microsoft 365 allow organizations to man
 
 ## Confirm access to the Data Map
 
-The Microsoft Purview Data Map is a foundational tool for managing subject rights requests. It enables the service to search for data classifications and helps data owners locate and act on personal data. Verify that your organization has access to the [Microsoft Purview Data Map](https://learn.microsoft.com/purview/concept-elastic-data-map) to use these capabilities effectively.
+The Microsoft Purview Data Map is a foundational tool for managing subject rights requests. It enables the service to search for data classifications and helps data owners locate and act on personal data. Verify that your organization has access to the [Microsoft Purview Data Map](/purview/concept-elastic-data-map?azure-portal=true) to use these capabilities effectively.
 
 ## Register assets in the Unified Catalog
 
-To fully utilize subject rights requests, register your organization's data assets in the [Microsoft Purview Unified Catalog](https://learn.microsoft.com/purview/unified-catalog-search). Registered assets must include classifications and data owners, which ensures:
+To fully utilize subject rights requests, register your organization's data assets in the [Microsoft Purview Unified Catalog](/purview/unified-catalog-search?azure-portal=true). Registered assets must include classifications and data owners, which ensures:
 
 - Relevant classifications can be searched efficiently.
 - Tasks are automatically assigned to the appropriate data owners.
@@ -23,7 +23,7 @@ Roles determine the tasks users can perform within the subject rights requests s
 | **Privacy Curator** | Read-write access | Enables creation and management of subject rights requests. |
 | **Privacy Reader** | Read-only access | Provides view-only access to requests and tasks but doesn't allow modifications. |
 
-For more information, see [Microsoft Purview governance roles and permissions](https://learn.microsoft.com/purview/roles-permissions).
+For more information, see [Microsoft Purview governance roles and permissions](/purview/roles-permissions?azure-portal=true).
 
 ## Set up request forms and templates
 
