@@ -20,50 +20,33 @@ Familiarizing yourself with key terms is essential for effective keyboard access
 ## Keyboard navigation conventions
 
 Keyboard navigation conventions ensure that users can efficiently and effectively navigate through websites, apps, and content using a keyboard. One of the most fundamental conventions is the use of the **Tab** key to move focus sequentially through interactive elements such as links, buttons, and form fields. 
-
-The **Shift** +** Tab** combination allows users to move focus in the reverse order. This predictable and consistent navigation pattern helps users understand the structure of the content and locate the elements they need to interact with.
-
-In addition to the **Tab** key, several other keys enhance navigation and usability. For example: 
-
-The **Enter** key is used to activate buttons, open links, or open menus.
-
-The **Spacebar** key is used to activate buttons, select or deselect checkboxes, scroll down the page, or open a dropdown menu.
-
-On the web, to scroll pages, the **Arrow** **keys** are used to navigate within menus, dropdowns, and other list-based elements.
-
-The **Escape** key is used to dismiss dialogs and task panes. 
+- The **Shift** +** Tab** combination allows users to move focus in the reverse order. This predictable and consistent navigation pattern helps users understand the structure of the content and locate the elements they need to interact with.
+- In addition to the **Tab** key, several other keys enhance navigation and usability. For example: 
+- The **Enter** key is used to activate buttons, open links, or open menus.
+- The **Spacebar** key is used to activate buttons, select or deselect checkboxes, scroll down the page, or open a dropdown menu.
+- On the web, to scroll pages, the **Arrow** **keys** are used to navigate within menus, dropdowns, and other list-based elements.
+- The **Escape** key is used to dismiss dialogs and task panes. 
 
 Common UI components like radio groups, tab lists, menus, and grids have several parts you can focus on. For example, a radio group has multiple radio buttons you can select. Only one radio button is part of the tab order. When you press the **Tab** key, it moves focus to a radio button in the group. You can then use the **Arrow** **keys** to move between the radio buttons. Pressing the **Tab** key again moves focus out of the radio group to the next item.
 
 On the web, the **Home** and **End** keys allow users to quickly move to the beginning or end of a page or document. In apps, specific key combinations may be used to access features or perform actions, such as **Ctrl** + **S** to save a document or **Alt** + **F4** to close a window. 
 
 On Mac computers, you can use keyboard navigation by turning Full Keyboard Access on. To do so:
-
-Go to **System Settings**.
-
-Click on the **Accessibility** sidebar.
-
-Under Motor, click **Keyboard**.
-
-Toggle **Full Keyboard Access** on or off.
+1.  Go to **System Settings**.
+1.  Click on the **Accessibility** sidebar.
+1.  Under Motor, click **Keyboard**.
+1.  Toggle **Full Keyboard Access** on or off.
 
 When this feature is activated, the item with focus will be highlighted, and users can change the color, contrast, and size of this highlight. Here are some keyboard navigation conventions on Mac:
 
-Use **Tab** to navigate to the next UI element and **Shift** +** Tab** to the previous element. 
-
-Select items by pressing the **Spacebar** and navigate within a group using the **Arrow keys**. 
-
-To navigate to the next item, press **Ctrl** + **Tab**, then **Ctrl** + **Shift** + **Tab** to the previous one. 
-
-In Mac, use **Cmd (command)** + **Tab**, **Cmd** +** Shift** +** Tab** to switch between applications, and **Cmd** +** ~** between windows of the same application.
-
-Press **Tab** + **W** to open the window chooser and **Tab** + **A** to open the application chooser.
-
-To open the Control Center, press **Fn** + **C** and **Fn** + **N** to open the Notification Center.
-
-To move the pointer to keyboard focus, press **Tab + C**  
-
-Familiarizing yourself with these conventions and shortcuts can significantly improve the user experience for keyboard users, making navigation more intuitive and efficient.
+- Use **Tab** to navigate to the next UI element and **Shift** +** Tab** to the previous element. 
+- Select items by pressing the **Spacebar** and navigate within a group using the **Arrow keys**. 
+- To navigate to the next item, press **Ctrl** + **Tab**, then **Ctrl** + **Shift** + **Tab** to the previous one. 
+- In Mac, use **Cmd (command)** + **Tab**, **Cmd** +** Shift** +** Tab** to switch between applications, and **Cmd** +** ~** between windows of the same application.
+- Press **Tab** + **W** to open the window chooser and **Tab** + **A** to open the application chooser.
+- To open the Control Center, press **Fn** + **C** and **Fn** + **N** to open the Notification Center.
+- To move the pointer to keyboard focus, press **Tab + C**  
+- Familiarizing yourself with these conventions and shortcuts can significantly improve the user experience for keyboard users, making navigation more intuitive and efficient.
 
 ## Practical examples of keyboard navigation 
 
@@ -88,37 +71,26 @@ Please note that some of these are dependent on the user's enabled settings and 
 ### Exercise 1
 
 Complete these tasks using only your keyboard:
-
-Create a blank document on Microsoft Word.
-
-Increase the zoom level using **Cmd (command)** + **plus sign** or **Ctrl** + **plus sign**. 
-
-Add some text using **=lorem ()**.
-
-Bold two words using the Ribbon without access keys. 
-
-Insert any hyperlink using access keys.
-
-Change the font of some text using the menu dropdown.
+- Create a blank document on Microsoft Word.
+- Increase the zoom level using **Cmd (command)** + **plus sign** or **Ctrl** + **plus sign**. 
+- Add some text using **=lorem ()**.
+- Bold two words using the Ribbon without access keys. 
+- Insert any hyperlink using access keys.
+- Change the font of some text using the menu dropdown.
 
 ### Exercise 2
 
 Complete these tasks using only your keyboard:
-
-Open a web page of your choice.
-
-Start at the top of the web page and move through each interactive element on the page.
-
-Once you've navigated to a button or link, activate it.
-
-Use the **Arrow Keys** and **Spacebar** to scroll through the page's content.
-
-If the page has a pop-up or modal, use **Esc** to close it.
+- Open a web page of your choice.
+- Start at the top of the web page and move through each interactive element on the page.
+- Once you've navigated to a button or link, activate it.
+- Use the **Arrow Keys** and **Spacebar** to scroll through the page's content.
+- If the page has a pop-up or modal, use **Esc** to close it.
 
 Please note that each web page is different and might have varying levels of keyboard accessibility. Also, Mac users will need to enable keyboard navigation in the settings. 
 
 These practical examples demonstrate the importance of keyboard navigation in providing accessible digital experiences. By understanding how keyboard navigation works, you can design and develop user-friendly websites and apps that are inclusive of users with disabilities.
 
-### <br>Resources
+### Resource
 
-The Roles of Spacebar and Enter in Keyboard Navigation
+[The Roles of Spacebar and Enter in Keyboard Navigation](https://webaim.org/techniques/keyboard/)
