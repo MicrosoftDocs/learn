@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Push a change through the pipeline
   description: Practice the entire process by adding a feature to a branch and then pushing that branch to GitHub.
-  ms.date: 10/24/2023
+  ms.date: 1/21/2025
   author: juliakm
   ms.author: jukullam
   ms.custom: devdivchpfy22

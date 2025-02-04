@@ -12,7 +12,7 @@ After you've created an estimate, you can save it. You can also export it in Mic
 
 In common with other Azure resources, you can view details of accumulated costs for AI services resources in the Azure portal.
 
-To view costs for AI services, sign into the Azure portal and select your subscription. You can then view overall costs for the subscription by selecting the **Cost analysis** tab. To view only costs for AI services, add a filter that restricts the data to reflect resources with a **service name** of **Cognitive Services**.
+To view costs for AI services, sign into the Azure portal and select your subscription. You can then view overall costs for the subscription by selecting the **Cost analysis** tab. To view only costs for AI services, add a filter that restricts the data to reflect resources with a **service name** of **Azure AI Services**.
 
 > [!NOTE]
 > For more information, see [Plan and manage costs for Azure AI services](/azure/ai-services/plan-manage-costs) in the AI services documentation.

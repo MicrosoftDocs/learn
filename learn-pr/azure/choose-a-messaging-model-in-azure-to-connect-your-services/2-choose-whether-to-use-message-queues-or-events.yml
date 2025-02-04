@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Choose whether to use messages or events
   description: Choose whether to use messages or events
-  ms.date: 07/31/2023
+  ms.date: 01/24/2025
   author: spelluru
   ms.author: spelluru
   ms.topic: unit
@@ -17,21 +17,21 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Suppose you have a distributed application with a web service that authenticates users. When a user logs on, the web service notifies all the client applications so they can display that user's status as \"Online\". Is the login notification an example of a message or an event?"
+  - content: "Suppose you have a distributed application with a web service that authenticates users. When a user signs in, the web service notifies all the client applications so they can display that user's status as Online. Is the sign-in notification an example of a message or an event?"
     choices:
     - content: "Message"
       isCorrect: false
-      explanation: "The login notification is an event: it contains only a simple piece of status data and there is no expectation by the authentication service for the client applications to react to the notice in any particular way."
+      explanation: "The sign-in notification is an event: it contains only a simple piece of status data and there's no expectation by the authentication service for the client applications to react to the notice in any particular way."
     - content: "Event"
       isCorrect: true
-      explanation: "The login notification is an event: it contains only a simple piece of status data and there is no expectation by the authentication service for the client applications to react to the notice in any particular way."
+      explanation: "The sign-in notification is an event: it contains only a simple piece of status data and there's no expectation by the authentication service for the client applications to react to the notice in any particular way."
 
-  - content: "Suppose you have a distributed application with a web service that lets users manage their account. Users can sign up, edit their profile, and delete their account. When a user deletes their account, your web service notifies your data layer so the user's data will be removed from the database. Is the delete-account notification an example of a message or an event?"
+  - content: "Suppose you have a distributed application with a web service that lets users manage their account. Users can sign up, edit their profile, and delete their account. When a user deletes their account, your web service notifies your data layer so the user's data is removed from the database. Is the delete-account notification an example of a message or an event?"
     choices:
     - content: "Message"
       isCorrect: true
-      explanation: "The delete-account notification is a message. The key factor is that the web service has an expectation about how the data layer will process the message: the data layer must remove the user's data from the database for the system to function correctly. Note that the message itself contains only simple information so this aspect of the communication could be considered an event; however, the fact that the web service requires the data layer to handle the notification in a specific way is sufficient to make this a message."
+      explanation: "The delete-account notification is a message. The key factor is that the web service has an expectation about how the data layer processes the message: the data layer must remove the user's data from the database for the system to function correctly. The message itself contains only simple information so the type of the communication could be considered an event; however, the fact that the web service requires the data layer to handle the notification in a specific way is sufficient to make it a message."
     - content: "Event"
       isCorrect: false
-      explanation: "The delete-account notification is a message. The key factor is that the web service has an expectation about how the data layer will process the message: the data layer must remove the user's data from the database for the system to function correctly. Note that the message itself contains only simple information so this aspect of the communication could be considered an event; however, the fact that the web service requires the data layer to handle the notification in a specific way is sufficient to make this a message."
+      explanation: "The delete-account notification is a message. The key factor is that the web service has an expectation about how the data layer processes the message: the data layer must remove the user's data from the database for the system to function correctly. The message itself contains only simple information so the type of the communication could be considered an event; however, the fact that the web service requires the data layer to handle the notification in a specific way is sufficient to make it a message."
 

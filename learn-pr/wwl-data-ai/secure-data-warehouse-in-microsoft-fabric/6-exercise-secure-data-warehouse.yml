@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: 'Exercise: Secure a warehouse in Microsoft Fabric'
   description: "Learn how to secure a warehouse using T-SQL in Microsoft Fabric."
-  ms.date: 11/10/2024
+  ms.date: 01/10/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

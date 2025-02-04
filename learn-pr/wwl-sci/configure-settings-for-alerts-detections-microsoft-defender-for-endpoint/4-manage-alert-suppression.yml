@@ -6,9 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Manage alert suppression
   description: "Manage alert suppression"
-  ms.date: 11/28/2023
+  ms.date: 1/7/2025
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: unit
 azureSandbox: false
 labModal: false

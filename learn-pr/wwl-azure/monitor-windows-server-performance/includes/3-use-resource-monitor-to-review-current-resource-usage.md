@@ -11,4 +11,4 @@ The following screenshot displays the Overview tab in Resource Monitor. The admi
 ![The following screenshot displays the Overview tab in Resource Monitor. The administrator has selected the System process, and that process's details are displayed under the Filtered by System heading. The graphical output in the right of the display highlights the filtered elements impact on the resources, such as CPU, Disk, Network, and Memory.](../media/resource-monitor.png)
 
 > [!TIP]
-> When using Resource Monitor, consider that you are reviewing performance data for a moment in time. This might not be representative of the computer's overall performance - which might be better, or, indeed, worse. 
+> When using Resource Monitor, consider that you're reviewing performance data for a moment in time. This might not be representative of the computer's overall performance - which might be better, or, indeed, worse.

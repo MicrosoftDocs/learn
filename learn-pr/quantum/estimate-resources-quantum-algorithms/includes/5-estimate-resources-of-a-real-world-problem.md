@@ -1,10 +1,12 @@
-Shor's factoring algorithm is one of the most well-known quantum algorithms. It offers an exponential speedup over any known classical factoring algorithm. 
+In the previous unit, you learned the basic concepts of the Azure Quantum Resource Estimator and how to use it. 
+
+In this unit, you'll estimate the resources required to factor a 2,048-bit integer using Shor's algorithm. Shor's factoring algorithm is one of the most well-known quantum algorithms. It offers an exponential speedup over any known classical factoring algorithm.
 
 Classic cryptography uses physical or mathematical means, like computational difficulty, to accomplish a task. A popular cryptographic protocol is the [Rivest–Shamir–Adleman (RSA) scheme](https://wikipedia.org/wiki/RSA_(cryptosystem)), which is based on the assumption of the difficulty of factoring prime numbers by using a classical computer.
 
 The Shor's algorithm implies that sufficiently large quantum computers can break public-key cryptography. Estimating the resources required for Shor’s algorithm is important to assess the vulnerability of these types of cryptographic schemes.
 
-In the following exercise, you'll calculate the resource estimates for the factoring of a 2,048-bit integer. For this application, you'll compute the physical resource estimates directly from precomputed logical resource estimates. For the tolerated error budget, you'll use $\epsilon = 1/3$.
+In the following exercise, you'll calculate the resource estimates for the factoring of a 2,048-bit integer. For this application, you'll compute the physical resource estimates directly from precomputed logical resource estimates. For the error budget, you'll use $\epsilon = 1/3$.
 
 ## Write the Shor's algorithm
 
@@ -16,7 +18,7 @@ In the following exercise, you'll calculate the resource estimates for the facto
     import qsharp
     ```
 
-1. Use the `Microsoft.Quantum.ResourceEstimation` namespace to define a cached, optimized version of Shor's integer factorization algorithm. Add a new cell and copy and paste the following code:
+1. Add a new cell and copy and paste the following code:
 
     ```qsharp
     %%qsharp
@@ -409,7 +411,7 @@ For example, collapse the **Logical qubit parameters** group to see that the cod
 > [!TIP]
 > For a more compact version of the output table, you can use `result.summary`.
 
-### Space diagram
+### Visualize the space diagram
 
 The distribution of physical qubits used for the algorithm and the T factories is a factor which might impact your algorithm's design. You can use the `qsharp-widgets` package to visualize this distribution to better understand the algorithm's estimated space requirements.
 
@@ -447,14 +449,14 @@ params.items[5].qec_scheme.name = QECScheme.FLOQUET_CODE
 qsharp.estimate("RunProgram()", params=params).summary_data_frame(labels=labels)
 ```
 
-|Qubit model|Logical qubits|	Logical depth|	T states|	Code distance|	T factories|	T factory fraction|	Physical qubits|	rQOPS	|Physical runtime|
-|----|----|----|----|----|----|----|----|----|----|
-|Gate-based µs, 10⁻³|	223	3.64M|	4.70M|	17|	13	|40.54 %	|216.77k|	21.86k|	10 hours|
-|Gate-based µs, 10⁻⁴	|223	|3.64M	|4.70M|	9|	14|	43.17 %|	63.57k|	41.30k|	5 hours|
-|Gate-based ns, 10⁻³|	223	3.64M|	4.70M|	17|	16|	69.08 %	|416.89k|	32.79M|	25 secs|
-|Gate-based ns, 10⁻⁴|	223	3.64M	|4.70M|	9|	14|	43.17 %|	63.57k|	61.94M|	13 secs|
-|Majorana ns, 10⁻⁴|	223	3.64M|	4.70M|	9|	19|	82.75 %	|501.48k|	82.59M	|10 secs|
-|Majorana ns, 10⁻⁶|	223	3.64M|	4.70M|	5|	13|	31.47 %|	42.96k|	148.67M	|5 secs|
+|Qubit model|Logical qubits|	Logical depth|	T states|	Code distance|	T factories|	T factory fraction|	Physical qubits	|Physical runtime|
+|----|----|----|----|----|----|----|----|----|
+|Gate-based µs, 10⁻³| 223 |3.64M|	4.70M|	17|	13	|40.54 %	|216.77k|		10 hours|
+|Gate-based µs, 10⁻⁴	|223	|3.64M	|4.70M|	9|	14|	43.17 %|	63.57k|	5 hours|
+|Gate-based ns, 10⁻³|	223|	3.64M|	4.70M|	17|	16|	69.08 %	|416.89k|	25 secs|
+|Gate-based ns, 10⁻⁴|	223|	3.64M	|4.70M|	9|	14|	43.17 %|	63.57k|	13 secs|
+|Majorana ns, 10⁻⁴|	223|3.64M|	4.70M|	9|	19|	82.75 %	|501.48k	|10 secs|
+|Majorana ns, 10⁻⁶|	223|3.64M|	4.70M|	5|	13|	31.47 %|	42.96k	|5 secs|
 
 ## Extract resource estimates from logical resource counts
 
@@ -490,3 +492,5 @@ In the worst scenario, a quantum computer using gate-based µs qubits (qubits th
 If you use a different qubit technology—for example, gate-based ns ion qubits—and the same surface code, the number of qubits doesn't change much, but the runtime becomes two days in the worst case and 18 hours in the optimistic case. If you change the qubit technology and the QEC code—for example, by using Majorana-based qubits—factoring a 2,048-bit integer by using Shor’s algorithm could be done in hours with an array of 6.25 millions of qubits in the best-case scenario.
 
 From your experiment, you can conclude that using Majorana qubits and a Floquet QEC code is the best choice to execute Shor's algorithm and factor a 2,048-bit integer.
+
+

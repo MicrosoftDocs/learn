@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety
 metadata:
-  title: Moderate Content and Detect Harm with Azure AI Content Safety
-  description: Learn how to choose and build a content moderation system with Azure AI Content Safety.
+  title: Implement generative AI guardrails with Azure AI Content Safety
+  description: Learn how to implement generative AI guardrails with Azure AI Content Safety.
   author: aprilspeight
   ms.author: apspeigh
   ms.date: 08/30/2024
@@ -11,8 +11,8 @@ metadata:
   ms.collection:
     - TBD
     - ce-advocates-ai-copilot
-title: Moderate Content and Detect Harm with Azure AI Content Safety
-summary: Learn how to moderate content and detect harm with Azure AI Content Safety.
+title: Implement generative AI guardrails with Azure AI Content Safety
+summary: Learn how to implement generative AI guardrails with Azure AI Content Safety.
 abstract: |
   By the end of this module, you're able to:
   - Perform text and image moderation for harmful content.

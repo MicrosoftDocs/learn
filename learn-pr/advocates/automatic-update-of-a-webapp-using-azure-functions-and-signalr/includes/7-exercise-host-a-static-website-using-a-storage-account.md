@@ -90,7 +90,7 @@ The workflow needs to have the `BACKEND_URL` environment variable set to the dep
     ```bash
     git add .
     git commit -m "Add BACKEND_URL environment variable"
-    git push
+    git push origin main
     ```
 
 1. Open the **Actions** tab in the GitHub fork repository to watch the deployment. 

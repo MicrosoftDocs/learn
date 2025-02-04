@@ -4,7 +4,7 @@ In this exercise, change the security setting so it allows you to download the A
 
 The following video shows you how set up your on-premises server to work with Azure File Sync. Complete the steps in this exercise to continue following along in your Azure subscription.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBP1]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3dbc4b01-5cad-4b07-8ca0-e577a54527be]
 
 ### Disable IE Enhanced Security Configuration
 

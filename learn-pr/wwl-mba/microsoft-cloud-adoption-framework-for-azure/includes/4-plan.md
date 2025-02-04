@@ -18,7 +18,7 @@ Watch this video to learn more.
 
 </br>
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3WHND]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c350339c-a22e-440d-a831-7ca8a42853a6]
 
 ## Rationalize your digital estate
 

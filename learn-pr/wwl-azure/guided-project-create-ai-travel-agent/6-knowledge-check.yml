@@ -2,16 +2,14 @@
 uid: learn.wwl.guided-project-create-ai-travel-agent.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
-  description: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/23/2025
   author: wwlpublish
   ms.author: buzahid
-  ms.date: 06/11/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -27,17 +25,17 @@ quiz:
     - content: "Semantic Kernel SDK is only suitable for advanced AI developers."
       isCorrect: false
       explanation: "Incorrect. The Semantic Kernel SDK is suitable for developers of all levels."
-  - content: "Which of the following is true about native functions?"
+  - content: "What is the main purpose of plugins in the Semantic Kernel SDK?"
     choices:
-    - content: "Native functions can only be used in prompts."
+    - content: "To process large language models and generate responses."
       isCorrect: false
-      explanation: "Incorrect. Native functions can be used in prompts, but they can also be invoked directly."
-    - content: "Native functions can be used in prompts, invoked directly, or called by other functions."
+      explanation: "Incorrect. Plugins are not responsible for generating responses, but for executing custom functions."
+    - content: "To encapsulate functions that can be used by the AI."
       isCorrect: true
-      explanation: "Correct. Native functions are extremely flexible and can be called in various ways."
-    - content: "Native functions can't be used in prompts."
+      explanation: "Correct. Plugins allow you to organize and expose functions to be invoked by the kernel."
+    - content: "To improve the accuracy of prompts in the AI model."
       isCorrect: false
-      explanation: "Incorrect. Native functions can be used in prompts."
+      explanation: "Incorrect. Plugins are used to execute code and interact with external systems, not to improve prompt accuracy."
   - content: "Which option assigns a role in a prompt to the large language model (LLM)?"
     choices:
     - content: "Using the `role` attribute in the `message` tag."
@@ -49,4 +47,3 @@ quiz:
     - content: "Using the `assignRole` attribute in the `chat` tag."
       isCorrect: false
       explanation: "Incorrect. You can assign a role to the LLM by using the `role` attribute in the `message` tag."
-

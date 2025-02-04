@@ -6,12 +6,11 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Send and receive messages by using a queue
   description: Write code that sends messages to and receives messages from a Service Bus queue.
-  ms.date: 10/25/2023
+  ms.date: 01/27/2025
   author: spelluru
   ms.author: spelluru
   ms.topic: unit
 interactive: bash
-azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-write-code-that-uses-service-bus-queues.md)]

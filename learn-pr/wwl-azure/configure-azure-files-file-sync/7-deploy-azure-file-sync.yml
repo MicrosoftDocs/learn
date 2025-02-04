@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-files-file-sync.setup
-title: Deploy Azure File Sync
+title: Consider Azure File Sync
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Deploy Azure File Sync
-  description: "Deploy Azure File Sync"
-  ms.date: 12/23/2024
+  title: Consider Azure File Sync
+  description: "Consider Azure File Sync"
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

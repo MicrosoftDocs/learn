@@ -2,7 +2,7 @@ During Module 2: Onboarding on-demand, we talked about the importance of early p
 
 You can also review the “Curriculum Planning” folder in the [Microsoft Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123) for more information about each approach. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQde]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c971accd-f994-4cd9-89b2-b108bab7032e]
 
 You can tailor the student journey for any Microsoft courses to best fit your delivery schedule and available resources, creating a positive experience for your learners. These are the main implementation approaches we’ve observed that can be applied to each course. As an educator you can choose to adopt and modify any approach for your needs: 
 

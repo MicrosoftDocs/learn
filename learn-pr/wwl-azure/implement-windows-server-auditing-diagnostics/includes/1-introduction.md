@@ -3,15 +3,12 @@ As a network administrator responsible for managing Windows Server, it’s impor
 In this module, you will:
 
 - Learn about basic and advanced auditing categories.
-
 - Describe how to log user access.
-
 - Enable setup and boot event collection.
 
 ## Learning objectives
 
 - Audit Windows Server events.
-
 - Configure Windows Server to record diagnostic information.
 
 ## Prerequisites
@@ -19,8 +16,5 @@ In this module, you will:
 To get the best learning experience from this module, you should have:
 
 - Working knowledge of common Windows Server management tools.
-
 - Some experience of typical Windows Server workloads.
-
 - Basic knowledge of Windows PowerShell.
-

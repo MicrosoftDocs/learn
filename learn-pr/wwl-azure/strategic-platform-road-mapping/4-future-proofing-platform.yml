@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.strategic-platform-road-mapping.future-proofing-platform
+title: Future-Proofing the Platform
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Future-Proofing the Platform
+  description: "Future-Proofing the Platform"
+  ms.date: 01/14/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-future-proofing-platform.md)]

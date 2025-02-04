@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Prepare for disaster recovery with Azure Site Recovery
   description: Here, we'll explore the configuration of an Azure Site Recovery job. We'll also complete the initial configuration of our exercise environment.
-  ms.date: 12/07/2023
+  ms.date: 01/25/2025
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: unit

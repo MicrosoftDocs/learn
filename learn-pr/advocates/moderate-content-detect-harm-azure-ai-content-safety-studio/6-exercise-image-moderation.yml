@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio.exercise-image-moderation
-title: Exercise - Image moderation
+title: Exercise - Image guardrails
 metadata:
-  title: Exercise - Image moderation
-  description: Learn how to moderate image content by using Azure AI Content Safety.
+  title: Exercise - Image guardrails
+  description: Learn how to configure image guardrails by using Azure AI Content Safety.
   author: aprilspeight
   ms.author: apspeigh
   ms.date: 08/29/2024

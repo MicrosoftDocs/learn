@@ -1,4 +1,3 @@
-
 In this demonstration, you'll learn how to:
 
 - Create a VM.
@@ -6,7 +5,7 @@ In this demonstration, you'll learn how to:
 - Install a web server.
 - Access the Microsoft Internet Information Services (IIS) welcome page.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AEAU]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=9f595a96-9f14-4432-9636-2d4bd34dd9d4]
 
 ## Next steps
 

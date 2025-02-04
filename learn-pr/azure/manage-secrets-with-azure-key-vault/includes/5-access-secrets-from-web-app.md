@@ -11,7 +11,7 @@ The official Key Vault client for .NET Core is the `SecretClient` class in the `
 > [!TIP]
 > Regardless of the framework or language you use to build your app, you should design it to cache secret values locally or load them into memory at startup, unless you have a specific reason not to. Reading them directly from the vault every time you need them is unnecessarily slow and expensive.
 
-`AddAzureKeyVault` only requires the vault name as an input, which you get from your local app configuration. It also automatically handles managed identity authentication. When used in an app deployed to Azure App Service with managed identities for Azure resources enabled, it detects the managed identities token service and use it to authenticate. It's a good fit for most scenarios and implements all best practices. You use it in this unit's exercise.
+`AddAzureKeyVault` only requires the vault name as an input, which you get from your local app configuration. It also automatically handles managed identity authentication. When the API is used in an app deployed to Azure App Service with managed identities for Azure resources enabled. It detects the managed identities token service and uses it to authenticate. It's a good fit for most scenarios and implements all best practices. You use it in this unit's exercise.
 
 ::: zone-end
 
@@ -25,7 +25,7 @@ The official Key Vault client for Node.js apps is the `SecretClient` class in th
 
 Before your app can create a `SecretClient` instance, it must get a credential object for authenticating to the vault. To authenticate, use the `DefaultAzureCredential` provided by the `@azure/identity` npm package. The `DefaultAzureCredential` is appropriate for most scenarios where the application is intended to ultimately run in the Azure Cloud because the `DefaultAzureCredential` combines credentials commonly used to authenticate when deployed, with credentials used to authenticate in a development environment. The `DefaultAzureCredential` attempts to authenticate by using the following mechanisms in order:
 
-* Environment. The `DefaultAzureCredential` reads account information specified by using environment variables and use it to authenticate.
+* Environment. The `DefaultAzureCredential` reads account information specified by using environment variables and uses it to authenticate.
 * Managed Identity. If the application is deployed to an Azure host with Managed Identity enabled, the `DefaultAzureCredential` authenticates with that account.
 * Visual Studio Code. If the developer authenticated by using the Visual Studio Code Azure Account plugin, the `DefaultAzureCredential` authenticates with that account.
 * Azure CLI. If the developer authenticated an account by using the Azure CLI `az login` command, the `DefaultAzureCredential` authenticates with that account.
@@ -39,7 +39,7 @@ For more information, [see the documentation](https://github.com/Azure/azure-sdk
 
 ## Handle secrets in an app
 
-After a secret is loaded into your app, it's up to your app to handle it securely. In the app that you build in this module, you write your secret value out to the client response, and to demonstrate that it loaded successfully, you view it in a web browser. **Returning a secret value to the client is *not* something you'd normally do!** Usually, you use secrets to do things like initialize client libraries for databases or remote APIs.
+After a secret is loaded into your app, it's up to your app to handle it securely. In the app that you build in this module, you write your secret value out to the client response, and to demonstrate that it loaded successfully, you view it in a web browser. **Returning a secret value to the client is *not* something you should normally do!** Usually, you use secrets to do things like initialize client libraries for databases or remote APIs.
 
 > [!IMPORTANT]
 > Always carefully review your code to ensure your app never writes secrets to any kind of output, including logs, storage, and responses.
@@ -68,7 +68,7 @@ To load the secret from our vault, you create a new ASP.NET Core web API, and us
     dotnet restore
     ```
 
-### Add code to load and use secrets
+### Add code that loads and uses secrets
 
 To demonstrate good use of Key Vault, modify your app to load secrets from the vault at startup. You also add a new controller with an endpoint that gets your `SecretPassword` secret from the vault.
 
@@ -132,7 +132,7 @@ To demonstrate good use of Key Vault, modify your app to load secrets from the v
 1. For the controller, create a new file in the `Controllers` folder called `SecretTestController.cs`, and paste in the following code.
 
     > [!TIP]
-    > To create a new file, use the `touch` command in Cloud Shell. In this case, run the `touch Controllers/SecretTestController.cs` command. To find it in the top right corner of the *Files* pane of the editor, select the Refresh icon.
+    > To create a new file, use the `touch` command in Cloud Shell. In this case, run the `touch Controllers/SecretTestController.cs` command. To find it in the top right corner of the *Files* pane of the editor, select the **Refresh** icon.
 
     ```csharp
     using System;
@@ -178,7 +178,7 @@ To demonstrate good use of Key Vault, modify your app to load secrets from the v
     }
     ```
 
-1. Run the `dotnet build` command in Azure Cloud Shell to make sure everything compiles. The app is ready to run. Now it's time to get it into Azure!
+1. Run the `dotnet build` command in Azure Cloud Shell and make sure everything compiles. The app is ready to run. Now it's time to get it into Azure!
 
 ::: zone-end
 
@@ -199,11 +199,11 @@ touch app.js
 code app.js
 ```
 
-### Add code to load and use secrets
+### Add code that loads and uses secrets
 
 To demonstrate good use of Key Vault, your app loads secrets from the vault at startup. To demonstrate that your secrets loaded, create an endpoint that displays the value of the `SecretPassword` secret.
 
-1. To set up the app, paste the following code into the editor. This code imports the necessary packages, set up the port and vault URI configuration, and create a new object to hold the secret names and values.
+1. To set up the app, paste the following code into the editor. This code imports the necessary packages, sets up the port and vault URI configuration, and creates a new object to hold the secret names and values.
 
     ```javascript
     // Importing dependencies

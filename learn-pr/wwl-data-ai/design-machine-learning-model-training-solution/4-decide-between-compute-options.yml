@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-machine-learning-model-training-solution.decide-between-compute-options
-title: Decide between compute options
+title: Integrate a model
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Decide between compute options
-  description: Decide between compute options
+  title: Integrate a model
+  description: Integrate a model
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 01/20/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

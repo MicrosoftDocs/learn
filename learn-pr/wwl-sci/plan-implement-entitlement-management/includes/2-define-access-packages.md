@@ -11,7 +11,7 @@ This video provides an overview of entitlement management and its value:
 
 **Watch this video to learn more about Microsoft Entra entitlement management**
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MFIb]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7688733a-4672-4c14-a811-98e324ceeb0b]
 
 ## What can I do with entitlement management?
 

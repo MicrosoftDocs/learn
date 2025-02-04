@@ -44,6 +44,6 @@ HoloLens can run software that helps to improve your support services. For examp
 > [!NOTE]
 > You can find many software applications in the Microsoft app store. There's a link to the Microsoft app store available in this module's *Summary* section.  
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWQWwC]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=306ebdb8-884e-4b4a-b2d2-a6b5778b202b]
 
 When you pair HoloLens devices with Microsoft Dynamics 365 applications, you'll be able to improve modern business processes such as assembly, training, service, or design. If your team envisions a use for mixed reality outside of available applications, developers can build their own apps. Microsoft can help get you there, no matter the device, language, or environment.

@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Write code to send and receive messages by using a queue
   description: Learn how to write code that sends messages to and receives messages from a Service Bus queue.
-  ms.date: 10/25/2023
+  ms.date: 01/27/2025
   author: spelluru
   ms.author: spelluru
   ms.topic: unit

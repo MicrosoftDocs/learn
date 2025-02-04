@@ -1,8 +1,8 @@
-Your organization has migrated several applications from on-premises to Azure virtual machines (VMs) and Azure Kubernetes Service (AKS). Several hundred Azure resources are now deployed across several Azure subscriptions.
+Your organization migrated several applications from on-premises to Azure virtual machines (VMs) and Azure Kubernetes Service (AKS). Several hundred Azure resources are now deployed across several Azure subscriptions.
 
 You must track resource usage to ensure that cloud resources are adequately provisioned and their performance meets business requirements. You need a monitoring approach that provides broad visibility and the capability to triage and isolate problems quickly.
 
-This unit explains how to use Azure Monitor insights and other tools for an at-scale monitoring view across all your VM and container resources. You also learn how to drill into specific nodes and containers for troubleshooting.
+This unit explains how to use Azure Monitor insights and other tools for an at-scale monitoring view across all your virtual machine (VM) and container resources. You also learn how to drill into specific nodes and containers for troubleshooting.
 
 ## Azure Monitor insights
 
@@ -13,7 +13,7 @@ You can use Azure Monitor insights to monitor resource utilization and performan
 
 ## Azure Monitor VM insights
 
-VM insights is an Azure Monitor feature that helps get you started monitoring your VM clients by collecting a set of commonly used metrics and sending them to a Log Analytics workspace. You can use Azure Monitor VM insights to:
+The Azure Monitor feature **VM insights** helps you get started monitoring your VM clients by collecting a set of commonly used metrics and sending them to a Log Analytics workspace. You can use Azure Monitor VM insights to:
 
 - View your VMs' health and performance.
 - Monitor your VMs at scale across multiple subscriptions and resource groups.
@@ -37,7 +37,7 @@ You can drill down into Azure Monitor Logs by selecting an event type from the l
 
 :::image type="content" source="../media/5-analyze-resource-utilization-03.png" alt-text="Screenshot of drilling into Azure Monitor Logs from VM insights." lightbox="../media/5-analyze-resource-utilization-03.png":::
 
-The Azure Monitor VM insights **Map** tab shows network connections for an entire resource group, virtual machine scale set, or individual VM. Use the filters at the top of the view to select the resources of interest.
+The Azure Monitor VM insights **Map** tab shows network connections for an entire resource group, virtual machine scale set, or individual VM. To select the resources of interest, use the filters at the top of the view.
 
 You can expand the number of processes for a complete list and to view the network connections per process. Select the arrow representing the connection for network usage and performance details.
 
@@ -45,7 +45,7 @@ You can expand the number of processes for a complete list and to view the netwo
 
 ## Azure Monitor container insights
 
-Container insights is a feature of Azure Monitor that monitors the performance and health of container workloads deployed to Azure, including AKS. Container insights collects memory and processor metrics from controllers, nodes, and containers, and gathers container logs. You can use Azure Monitor container insights to:
+**Container insights** is a feature of Azure Monitor that monitors the performance and health of container workloads deployed to Azure, including AKS. The Container insights feature collects memory and processor metrics from controllers, nodes, and containers, and gathers container logs. You can use Azure Monitor container insights to:
 
 - View your Kubernetes workloads' health and performance at scale across multiple subscriptions and resource groups.
 - Get visibility into memory and processor performance metrics from controllers, nodes, and containers.
@@ -69,7 +69,7 @@ The **Monitored clusters** tab shows an at-scale view of the health and status o
 
 ## Azure Monitor managed service for Prometheus
 
-[Prometheus](https://prometheus.io/) is an open-source monitoring system specifically designed for containers and microservices. Prometheus focuses on distributed applications, making it a popular tool for monitoring Kubernetes, distributed services, and containerized microservices.
+[Prometheus](https://prometheus.io/) is an open-source monitoring system designed specifically for containers and microservices. Prometheus focuses on distributed applications, making it a popular tool for monitoring Kubernetes, distributed services, and containerized microservices.
 
 Azure Monitor managed service for Prometheus is a component of Azure Monitor Metrics that supports open-source querying and visualization tools like PromQL and Grafana. Azure Monitor managed service for Prometheus can collect data from AKS or from any Kubernetes cluster that runs self-managed Prometheus using remote-write. To enable Azure Monitor managed service for Prometheus, you create an Azure Monitor workspace to store the Prometheus metrics.
 

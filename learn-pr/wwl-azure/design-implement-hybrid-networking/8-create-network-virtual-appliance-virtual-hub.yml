@@ -2,16 +2,16 @@
 uid: learn.wwl.design-implement-hybrid-networking.create-network-virtual-appliance-nva-virtual-hub
 title: Create a network virtual appliance (NVA) in a virtual hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a network virtual appliance (NVA) in a virtual hub
   description: "Create a network virtual appliance (NVA) in a virtual hub"
-  ms.date: 11/21/2024
+  ms.date: 01/09/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
   ms.custom:
   - N/A
-azureSandbox: false
-labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/8-create-network-virtual-appliance-virtual-hub.md)]

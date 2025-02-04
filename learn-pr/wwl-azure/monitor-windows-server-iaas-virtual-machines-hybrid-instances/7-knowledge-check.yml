@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/13/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -20,21 +20,21 @@ quiz:
     choices:
     - content: "Maria needs ONLY the Workspace ID."
       isCorrect: false
-      explanation: "That's incorrect. Maria needs both the Workspace ID and the Primary key."
+      explanation: "Incorrect. Maria needs both the Workspace ID and the Primary key."
     - content: "Maria needs ONLY the Primary key."
       isCorrect: false
-      explanation: "That's incorrect. Maria needs both the Workspace ID and the Primary key."
+      explanation: "Incorrect. Maria needs both the Workspace ID and the Primary key."
     - content: "Maria needs BOTH the Workspace ID and the Primary key."
       isCorrect: true
-      explanation: "That's correct. Maria needs both of these to configure the agent."
-  - content: "Maria decides to enable monitoring on a VM in Azure that's running Windows Server. She opens the Azure portal, navigates to the required VM, and selects the **Insights** page, but she cannot enable monitoring. Which of the following options is the most likely reason?"
+      explanation: "Correct. Maria needs both of these to configure the agent."
+  - content: "Maria decides to enable monitoring on a VM in Azure that's running Windows Server. She opens the Azure portal, navigates to the required VM, and selects the **Insights** page, but she can't enable monitoring. Which of the following options is the most likely reason?"
     choices:
     - content: "Maria must install the Log Analytics agent first."
       isCorrect: false
-      explanation: "That's incorrect. Maria doesn't need to install this agent."
+      explanation: "Incorrect. Maria doesn't need to install this agent."
     - content: "Maria must install the Dependency agent."
       isCorrect: true
-      explanation: "That's correct. Without this agent, you cannot enable monitoring."
-    - content: "Maria must shutdown the VM first."
+      explanation: "Correct. Without this agent, you can't enable monitoring."
+    - content: "Maria must shut down the VM first."
       isCorrect: false
-      explanation: "That's incorrect. The VM must be running."
+      explanation: "Incorrect. The VM must be running."

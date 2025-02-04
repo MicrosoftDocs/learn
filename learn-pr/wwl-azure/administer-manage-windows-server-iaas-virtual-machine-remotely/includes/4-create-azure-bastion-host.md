@@ -1,10 +1,8 @@
-
-
 In this demonstration, you'll learn to:
 
 - Create an Azure Bastion host.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSkm]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f650ca2d-d5d9-4aae-9b36-5b4038b53658]
 
 ## Next steps
 

@@ -1,6 +1,4 @@
-
-
-After the Contoso IT department has selected the workloads that want to migrate, they are ready to undertake a project-planning stage. They'll need to know the four main technical implementation steps involved in actually moving a server workload to an Azure VM workload using Azure Migrate:
+After the Contoso IT department has selected the workloads that want to migrate, they're ready to undertake a project-planning stage. They need to know the four main technical implementation steps involved in actually moving a server workload to an Azure VM workload using Azure Migrate:
 
 1. Prepare Azure for the Azure Migrate: Server Migration tool.
 2. Prepare the on-premises VMs for migration.
@@ -9,13 +7,13 @@ After the Contoso IT department has selected the workloads that want to migrate,
 
 ## Preplanning
 
-Before reviewing the main steps in detail, you should note that these steps are only part of the overall migration. Most of the work is in the preplanning phases that involve a thorough assessment of the business model, the current processes and systems, and finally, what will be envisioned in Azure. In other words, how will the business process present in Azure when the migration is completed? The following table identifies various considerations.
+Before reviewing the main steps in detail, you should note that these steps are only part of the overall migration. Most of the work is in the preplanning phases that involve a thorough assessment of the business model, the current processes and systems, and finally, what will be envisioned in Azure. In other words, how will the business process function in Azure when the migration is completed? The following table identifies various considerations.
 
 |Consideration|Details|
 |--------------|-------|
 |Business motivations |IT Leadership must work closely with business partners to understand what they want to achieve with the migration. The business drivers should focus on addressing business growth, limiting risks, and specifying the extent of the migration.|
 |Migration goals|Migration goals are used to determine the best migration method.|
-|Solution design|After understanding the goals and requirements, IT Leadership will design and review a deployment solution, and identify the migration process, including the Azure services that they will use for the migration.|
+|Solution design|After understanding the goals and requirements, IT Leadership will design and review a deployment solution, and identify the migration process, including the Azure services that they'll use for the migration.|
 
 ## Technical implementation
 
@@ -39,7 +37,7 @@ After configuration completes, it will take some time for the tool to enumerate 
 
 ### 2. Prepare on-premises VMs
 
-After migration, you will connect to the Azure VMs and allow Azure to manage the VMs. To do this, perform the relevant steps: 
+After migration, you'll connect to the Azure VMs and allow Azure to manage the VMs. To do this, perform the relevant steps: 
 
 - For access over the internet:
    - Enable Remote Desktop Protocol (RDP) or Secure Shell (SSH) on the on-premises VM.
@@ -75,7 +73,7 @@ Before you can run a migration to Azure, you need to set up and enable replicati
    - Select **No** if you don't want to apply Azure Hybrid Benefit, and then select **Next**.
    - Select **Yes** if you have Windows Server machines that are included in your active Software Assurance or Windows Server subscriptions, and you want to apply the benefit to the machines you're migrating. Then select **Next**.
 9. In **Compute**, review the VM name, size, OS disk type, and availability set. (VMs must conform with Azure requirements.)
-   - **VM size**. If you're using assessment recommendations, the VM size dropdown list will contain the recommended size. Otherwise, Azure Migrate chooses a size based on the closest match in the Azure subscription. Alternatively, pick a manual size in Azure VM size.
+   - **VM size**. If you're using assessment recommendations, the VM size dropdown list contains the recommended size. Otherwise, Azure Migrate chooses a size based on the closest match in the Azure subscription. Alternatively, pick a manual size in Azure VM size.
    - **OS disk**. Specify the OS (boot) disk for the VM. The OS disk is the disk that has the operating system bootloader and installer.
    - **Availability set**. If the VM should be in an Azure availability set after migration, specify the set. The set must be in the target resource group you specify for the migration.
 10. In **Disks**, specify whether the VM disks should be replicated to Azure, select the disk type (standard SSD/HDD or premium-managed disks) in Azure, and then select **Next**.

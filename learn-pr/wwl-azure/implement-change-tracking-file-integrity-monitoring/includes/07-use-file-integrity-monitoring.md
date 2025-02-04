@@ -8,7 +8,7 @@ In this demonstration, learn to:
 - Implement folder and path monitoring using wildcards.
 - Disable File Integrity Monitoring.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4C2RP]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=bf4b08de-6e30-4680-9a21-2c840317ded9]
 
 ## Next steps
 

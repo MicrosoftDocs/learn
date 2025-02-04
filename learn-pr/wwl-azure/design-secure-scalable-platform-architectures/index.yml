@@ -1,0 +1,65 @@
+### YamlMime:Module
+uid: learn.wwl.design-secure-scalable-platform-architectures
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Design Secure and Scalable Platform Architectures
+  description: "In this module, learners will gain insights into designing platform architectures that are secure, scalable, and compliant with regulatory standards. The module covers capacity planning, cost optimization, and the role of automation in maintaining consistency and reducing manual errors. Learners will also explore strategies for building scalable solutions that can handle increasing demand and complex workflows."
+  ms.date: 01/14/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: module-standard-task-based
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Design Secure and Scalable Platform Architectures
+summary: In this module, learners will gain insights into designing platform architectures that are secure, scalable, and compliant with regulatory standards. The module covers capacity planning, cost optimization, and the role of automation in maintaining consistency and reducing manual errors. Learners will also explore strategies for building scalable solutions that can handle increasing demand and complex workflows.
+abstract: |
+  -   Gain insights into designing platform architectures that are secure, scalable, and compliant with regulatory standards.
+  -   Explore the role of automation in maintaining consistency, reducing manual errors, and accelerating deployments.
+  -   Understand the importance of capacity planning and estimation for forecasting future resource needs.
+  -   Learn cost optimization strategies to manage resources efficiently and avoid over-provisioning.
+  -   Discover how to implement scalable solutions that can handle increasing demand and complex workflows.
+prerequisites: |
+  -   Understanding of what DevOps is and its concepts.
+  -   Beneficial to have experience in an organization that delivers software.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - advanced
+roles:
+  - administrator
+  - ai-engineer
+  - developer
+  - devops-engineer
+  - network-engineer
+  - security-engineer
+  - solution-architect
+  - startup-founder
+products:
+  - azure
+  - azure-devops
+  - github
+subjects:
+  - app-development
+  - architecture
+  - asset-management
+  - automation
+  - cloud-computing
+  - cloud-security
+  - containers
+  - custom-app-development
+  - devops
+  - infrastructure
+  - it-management-monitoring
+  - product-lifecycle-management
+  - productivity
+  - site-reliability-engineering
+units:
+  - learn.wwl.design-secure-scalable-platform-architectures.introduction
+  - learn.wwl.design-secure-scalable-platform-architectures.core-principles-secure-scalable-platform-design
+  - learn.wwl.design-secure-scalable-platform-architectures.security-considerations-platform-architecture
+  - learn.wwl.design-secure-scalable-platform-architectures.scale-platform-architectures-growth-adaptability
+  - learn.wwl.design-secure-scalable-platform-architectures.automation-resiliency-modern-platforms
+  - learn.wwl.design-secure-scalable-platform-architectures.knowledge-check
+  - learn.wwl.design-secure-scalable-platform-architectures.summary
+badge:
+  uid: learn.wwl.design-secure-scalable-platform-architectures.badge

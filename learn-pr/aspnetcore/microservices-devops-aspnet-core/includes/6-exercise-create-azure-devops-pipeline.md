@@ -150,7 +150,7 @@ In DevOps, go back to the pipeline summary page. You're going to edit the create
     The eShop uses a different docker file for the product service named **DockerfileProducts**. Edit Line 17 to be:
     
     ```yaml
-      dockerfilePath: '**/DockerfileProducts'
+      dockerfilePath: '**/DockerfileProducts.acr'
     ```
 
 1. Select **Save**.

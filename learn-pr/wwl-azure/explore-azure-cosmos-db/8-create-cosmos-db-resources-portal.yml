@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: 'Exercise: Create Azure Cosmos DB resources by using the Azure portal'
   description: "Exercise: Create Azure Cosmos DB resources by using the Azure portal"
-  ms.date: 07/12/2024
+  ms.date: 01/24/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
