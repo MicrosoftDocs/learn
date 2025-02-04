@@ -193,15 +193,15 @@ To validate that your deployment has been created and sent to Azure, go to the [
 
 1. In the *main.bicep* file in Visual Studio Code, delete the tag named `Owner` and its value. After you're done, the `tags` property of the virtual network should look like this: 
 
-   :::code language="bicep" source="code/4-template-after.bicep" range="4-6" :::
+   :::code language="bicep" source="code/4-template-after.bicep" range="6-8" :::
 
 1. Update the `addressPrefixes` to change the `/16` to `/15`. After you're done, the `addressSpace` property of the virtual network should look like this:
 
-   :::code language="bicep" source="code/4-template-after.bicep" range="8-12" :::
+   :::code language="bicep" source="code/4-template-after.bicep" range="10-14" :::
 
 1. Delete the subnet named `subnet001`. Make sure to delete the whole subnet object. After you're done, the `subnets` property of the virtual network should look like this:
 
-   :::code language="bicep" source="code/4-template-after.bicep" range="15-22" :::
+   :::code language="bicep" source="code/4-template-after.bicep" range="17-24" :::
 
 1. Save the template.
 
