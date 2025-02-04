@@ -158,7 +158,7 @@ By default, Global Administrator and other administrator roles do not have permi
 
 Users with this role can read the definition of custom security attributes.
 
-By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes. To work with custom security attributes, you must be assigned one of the custom security attribute
+By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes. To work with custom security attributes, you must be assigned one of the custom security attribute.
 
 | **Actions**                                                               | **Description**                                              |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -169,9 +169,9 @@ By default, Global Administrator and other administrator roles do not have permi
 
 Assign the Attribute Log Reader role to users who need to do the following tasks:
 
- -  Read audit logs for custom security attribute value changes<br>
- -  Read audit logs for custom security attribute definition changes and assignments
- -  Configure diagnostic settings for custom security attributes
+ -  Read audit logs for custom security attribute value changes.<br>
+ -  Read audit logs for custom security attribute definition changes and assignments.
+ -  Configure diagnostic settings for custom security attributes.
 
 Users with this role **cannot** read audit logs for other events.
 
@@ -186,13 +186,13 @@ By default, Global Administrator and other administrator roles do not have permi
 
 Assign the Attribute Log Reader role to users who need to do the following tasks:
 
- -  Read audit logs for custom security attribute value changes<br>
- -  Read audit logs for custom security attribute definition changes and assignments
+ -  Read audit logs for custom security attribute value changes.<br>
+ -  Read audit logs for custom security attribute definition changes and assignments.
 
 Users with this role **cannot** do the following tasks:
 
- -  Configure diagnostic settings for custom security attributes<br>
- -  Read audit logs for other events
+ -  Configure diagnostic settings for custom security attributes.<br>
+ -  Read audit logs for other events.
 
 By default, Global Administrator and other administrator roles do not have permissions to read audit logs for custom security attributes. To read audit logs for custom security attributes, you must be assigned this role or the Attribute Log Administrator role.
 

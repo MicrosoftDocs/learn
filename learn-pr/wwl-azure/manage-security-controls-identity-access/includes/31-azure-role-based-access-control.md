@@ -6,10 +6,10 @@ Azure RBAC is an authorization system built on Azure Resource Manager that provi
 
 Here are some examples of what you can do with Azure RBAC:
 
- -  Allow one user to manage virtual machines in a subscription and another user to manage virtual networks
- -  Allow a database administrator (DBA) group to manage SQL databases in a subscription
- -  Allow a user to manage all resources in a resource group, such as virtual machines, websites, and subnets
- -  Allow an application to access all resources in a resource group
+ -  Allow one user to manage virtual machines in a subscription and another user to manage virtual networks.
+ -  Allow a database administrator (DBA) group to manage SQL databases in a subscription.
+ -  Allow a user to manage all resources in a resource group, such as virtual machines, websites, and subnets.
+ -  Allow an application to access all resources in a resource group.
 
 ## How Azure RBAC works
 

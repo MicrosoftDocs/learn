@@ -62,7 +62,7 @@ To delete a management group, the following requirements must be met:
 
 7.  Select **Yes**.
 
-### Delete in PowerShell<br>
+### Delete in PowerShell
 
 Use the **Remove-AzManagementGroup** command within PowerShell to delete management groups.
 
@@ -263,7 +263,7 @@ az account management-group update --name 'Contoso' --parent ContosoIT
 
 ```
 
-## Audit management groups using activity logs<br>
+## Audit management groups using activity logs
 
 Management groups are supported within [Azure Activity Log](/azure/azure-monitor/essentials/platform-logs-overview). You can query all events that happen to a management group in the same central location as other Azure resources. For example, you can see all Role Assignments or Policy Assignment changes made to a particular management group.
 

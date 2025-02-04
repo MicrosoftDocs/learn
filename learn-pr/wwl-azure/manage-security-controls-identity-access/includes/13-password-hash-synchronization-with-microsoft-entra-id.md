@@ -16,6 +16,6 @@ Optionally, you can set up password hash synchronization as a backup if you deci
 
 To use password hash synchronization in your environment, you need to:
 
- -  Install Microsoft Entra Connect.
- -  Configure directory synchronization between your on-premises Active Directory instance and your Microsoft Entra instance.
- -  Enable password hash synchronization.
+1.  Install Microsoft Entra Connect.
+2.  Configure directory synchronization between your on-premises Active Directory instance and your Microsoft Entra instance.
+3.  Enable password hash synchronization.

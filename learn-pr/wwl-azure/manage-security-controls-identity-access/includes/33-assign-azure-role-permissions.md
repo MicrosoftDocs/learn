@@ -37,7 +37,7 @@ The following shows an example resource group.
     :::image type="content" source="../media/add-role-assignment-menu-example-f69cae06-14b8b6e4.png" alt-text="Screenshot showing an example of how to add role assignments.":::
     
 
-## Step 3: Select the appropriate role<br>
+## Step 3: Select the appropriate role
 
 1.  On the Role tab, select a role that you want to use. You can search for a role by name or by description. You can also filter roles by type and category.
     

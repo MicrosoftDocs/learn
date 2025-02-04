@@ -16,7 +16,8 @@ Azure guidance: Microsoft Entra ID ([Microsoft Entra ID](/azure/active-directory
 
 For the Azure services that apply, avoid use of local authentication methods and instead use Microsoft Entra ID to centralize your service authentications.
 
-Note: As soon as it is technically feasible, you should migrate on-premises Active Directory based applications to Micosoft Entra ID. This could be an Mcirosoft Entra ID Enterprise Directory, Business to Business configuration, or Business to consumer configuration.
+> [!NOTE]
+> As soon as it is technically feasible, you should migrate on-premises Active Directory based applications to Micosoft Entra ID. This could be an Mcirosoft Entra ID Enterprise Directory, Business to Business configuration, or Business to consumer configuration.
 
 Azure implementation and additional context:
 
@@ -38,7 +39,8 @@ GCP guidance: Google Cloud's Identity and Access Management (IAM) system is Goog
 
 Google Cloud Identity is the identity provider for all Google services. It supports Single Sign-On which allows you to bridge your corporate's third party identities (such as Windows Active Directory, or other identity stores) with Google Cloud identities to avoid creating duplicate accounts to access GCP resources.
 
-Note: Using Google Cloud Directory Sync. Google provides connector tool that integrates with most enterprise LDAP management systems and synchronizes identities on a schedule. By configuring a Cloud Identity account and sing Google Cloud Directory Sync, you can configure which of your user accounts – including users, groups , and user profiles, aliases and more – will synchronize on a schedule between your local identity management system and your GCP system.
+> [!NOTE]
+> Using Google Cloud Directory Sync. Google provides connector tool that integrates with most enterprise LDAP management systems and synchronizes identities on a schedule. By configuring a Cloud Identity account and sing Google Cloud Directory Sync, you can configure which of your user accounts – including users, groups , and user profiles, aliases and more – will synchronize on a schedule between your local identity management system and your GCP system.
 
 GCP implementation and additional context:
 
@@ -80,7 +82,8 @@ Azure guidance: Use the Microsoft Entra ID security baseline and the Microsoft E
 
 Use Microsoft Entra ID Identity Protection to detect, investigate, and remediate identity-based risks. To similarly protect your on-premises Active Directory domain, use Defender for Identity.
 
-Note: Follow published best practices for all other identity components, including your on-premises Active Directory and any third party capabilities, and the infrastructures (such as operating systems, networks, databases) that host them.
+> [!NOTE]
+> Follow published best practices for all other identity components, including your on-premises Active Directory and any third party capabilities, and the infrastructures (such as operating systems, networks, databases) that host them.
 
 Azure implementation and additional context:
 
@@ -99,7 +102,8 @@ AWS guidance: Use the following security best practices to secure your AWS IAM:
  -  Use IAM Access Advisor to audit service access.
  -  Use IAM credential report to track user accounts and credential status.
 
-Note: Follow published best practices if you have other identity and authentication systems, e.g., follow the Microsoft Entra ID security baseline if you use Microsoft Entra ID to manage AWS identity and access.
+> [!NOTE]
+> Follow published best practices if you have other identity and authentication systems, e.g., follow the Microsoft Entra ID security baseline if you use Microsoft Entra ID to manage AWS identity and access.
 
 AWS implementation and additional context:
 
@@ -119,7 +123,8 @@ GCP guidance: Use the following security best practices to secure to your Google
  -  Use the Organization Policy Service to control and configure constraints on resources.
  -  Use IAM audit logging within Cloud Audit logs to review privileged activities.
 
-Note: Follow published best practices if you have other identity and authentication systems, e.g., follow the Microsoft Entra ID security baseline if you use Microsoft Entra ID to manage GCP identity and access.
+> [!NOTE]
+> Follow published best practices if you have other identity and authentication systems, e.g., follow the Microsoft Entra ID security baseline if you use Microsoft Entra ID to manage GCP identity and access.
 
 GCP implementation and additional context:
 
@@ -159,7 +164,8 @@ AWS guidance: Use AWS IAM roles instead of creating user accounts for resources 
 
 You may use service-linked roles which are attached with pre-defined permission policies for access between AWS services instead of customizing your own role permissions for the IAM roles.
 
-Note: For services that don't support IAM roles, use access keys but follow the security best practice such as IM-8 Restrict the exposure of credential and secrets to secure your keys.
+> [!NOTE]
+> For services that don't support IAM roles, use access keys but follow the security best practice such as IM-8 Restrict the exposure of credential and secrets to secure your keys.
 
 AWS implementation and additional context:
 
@@ -189,11 +195,13 @@ Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/org
 
 Security principle: Authenticate remote servers and services from your client side to ensure you are connecting to trusted server and services. The most common server authentication protocol is Transport Layer Security (TLS), where the client-side (often a browser or client device) verifies the server by verifying the server’s certificate was issued by a trusted certificate authority.
 
-Note: Mutual authentication can be used when both the server and the client authenticate one another.<br>
+> [!NOTE]
+> Mutual authentication can be used when both the server and the client authenticate one another.
 
 Azure guidance: Many Azure services support TLS authentication by default. For services that don't support TLS authentication by default, or support disabling TLS, ensure it is always enabled to support the server/client authentication. Your client application should also be designed to verify server/client identity (by verifying the server’s certificate issued by a trusted certificate authority) in the handshake stage.
 
-Note: Services such as API Management and API Gateway supports TLS mutual authentication.
+> [!NOTE]
+> Services such as API Management and API Gateway supports TLS mutual authentication.
 
 Azure implementation and additional context:
 
@@ -201,7 +209,8 @@ Azure implementation and additional context:
 
 AWS guidance: Many AWS services support TLS authentication by default. For services that don't support TLS authentication by default, or support disabling TLS, ensure it is always enabled to support the server/client authentication. Your client application should also be designed to verify server/client identity (by verifying the server’s certificate issued by a trusted certificate authority) in the handshake stage.
 
-Note: Services such as API Gateway supports TLS mutual authentication.
+> [!NOTE]
+> Services such as API Gateway supports TLS mutual authentication.
 
 AWS implementation and additional context:
 
@@ -210,7 +219,8 @@ AWS implementation and additional context:
 
 GCP guidance: Many GCP services support TLS authentication by default. For services that don't support this by default or support disabling TLS, ensure it is always enabled to support the server/client authentication. Your client application should also be designed to verify server/client identity (by verifying the server’s certificate issued by a trusted certificate authority) in the handshake stage.
 
-Note: Services such as Cloud Load Balancing support TLS mutual authentication.
+> [!NOTE]
+> Services such as Cloud Load Balancing support TLS mutual authentication.
 
 GCP implementation and additional context:
 
@@ -271,7 +281,8 @@ Security principle: Enforce strong authentication controls (strong passwordless 
 
 When deploying strong authentication, configure administrators and privileged users first, to ensure the highest level of the strong authentication method, quickly followed by rolling out the appropriate strong authentication policy to all users.
 
-Note: If legacy password-based authentication is required for legacy applications and scenarios, ensure password security best practices such as complexity requirements, are followed.<br>
+> [!NOTE]
+> If legacy password-based authentication is required for legacy applications and scenarios, ensure password security best practices such as complexity requirements, are followed.<br>
 
 Azure guidance: Microsoft Entra ID supports strong authentication controls through passwordless methods and multi-factor authentication (MFA).
 
@@ -294,7 +305,8 @@ AWS guidance: AWS IAM supports strong authentication controls through multi-fact
 
 If you use corporate accounts from a third-party directory (such as Windows Active Directory) with AWS identities, follow the respective security guidance to enforce strong authentication. Refer to the Azure Guidance for this control if you use Microsoft Entra ID to manage AWS access.
 
-Note: For third-party applications and AWS services that may have default IDs and passwords, you should disable or change them during initial service setup.
+> [!NOTE]
+> For third-party applications and AWS services that may have default IDs and passwords, you should disable or change them during initial service setup.
 
 AWS implementation and additional context:
 
@@ -307,7 +319,8 @@ If you use corporate accounts from a third-party directory (such as Windows Acti
 
 Use Identity-Aware Proxy to establish a central authorization layer for applications accessed by HTTPS, so you can use an application-level access control model instead of relying on network-level firewalls.
 
-Note: For third-party applications and GCP services that may have default IDs and passwords, you should disable or change them during the initial service setup.
+> [!NOTE]
+> For third-party applications and GCP services that may have default IDs and passwords, you should disable or change them during the initial service setup.
 
 GCP implementation and additional context:
 
@@ -341,7 +354,8 @@ Define the applicable conditions and criteria for Microsoft Entra ID conditional
  -  Blocking risky sign-in behaviors.
  -  Requiring organization-managed devices for specific applications.
 
-Note: Granular authentication session management controls can also be implemented through Microsoft Entra ID conditional access policy, such as sign-in frequency and persistent browser session.
+> [!NOTE]
+> Granular authentication session management controls can also be implemented through Microsoft Entra ID conditional access policy, such as sign-in frequency and persistent browser session.
 
 Azure implementation and additional context:
 

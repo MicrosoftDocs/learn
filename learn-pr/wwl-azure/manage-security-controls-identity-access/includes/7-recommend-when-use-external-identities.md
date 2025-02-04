@@ -7,7 +7,7 @@ A simple invitation and redemption process lets partners use their own credentia
 
 Developers can use Microsoft Entra business-to-business APIs to customize the invitation process or write applications like self-service sign-up portals. For licensing and pricing information related to guest users, refer to [Microsoft Entra External ID pricing](https://azure.microsoft.com/pricing/details/active-directory/external-identities/).
 
-**Collaborate with any partner using their identities**
+## Collaborate with any partner using their identities
 
 With Microsoft Entra B2B, the partner uses their own identity management solution, so there's no external administrative overhead for your organization. Guest users sign in to your apps and services with their own work, school, or social identities.
 
@@ -42,7 +42,7 @@ With a self-service sign-up user flow, you can create a sign-up experience for e
 
 You can also use API connectors to integrate your self-service sign-up user flows with external cloud systems. You can connect with custom approval workflows, perform identity verification, and validate user-provided information.
 
-:::image type="content" source="../media/sign-up-and-sign-in-page-422a2552-11afe66c.png" alt-text="Screenshot showing the external identities sign up page.":::
+:::image type="content" source="../media/sign-up-sign-in-page-422a2552-a7720872.png" alt-text="Screenshot showing the external identities sign up page.":::
 
 
 ## Use policies to securely share your apps and services
@@ -84,5 +84,5 @@ Microsoft Entra External ID supports external identity providers like Facebook, 
 
 You can [enable integration with SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration) to share files, folders, list items, document libraries, and sites with people outside your organization, while using Azure B2B for authentication and management. The users you share resources with are typically guest users in your directory, and permissions and groups work the same for these guests as they do for internal users. When enabling integration with SharePoint and OneDrive, you also enable the [email one-time passcode](/entra/external-id/one-time-passcode) feature in Microsoft Entra B2B to serve as a fallback authentication method.
 
-:::image type="content" source="../media/email-one-time-passcode-for-guests-d5d36965-59530419.png" alt-text="Screenshot showing how to configure an identity provider email with a one-time passcode.":::
+:::image type="content" source="../media/email-one-time-passcode-guests-d5d36965-2bda286b.png" alt-text="Screenshot showing how to configure an identity provider email with a one-time passcode.":::
 <br>

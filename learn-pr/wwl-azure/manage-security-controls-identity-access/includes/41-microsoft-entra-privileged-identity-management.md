@@ -87,7 +87,7 @@ Both user-initiated actions require an approval from a Global Administrator or P
 
 Privileged Identity Management supports the following scenarios:
 
-### Privileged Role Administrator permissions<br>
+### Privileged Role Administrator permissions
 
  -  Enable approval for specific roles.
  -  Specify approver users or groups to approve requests.

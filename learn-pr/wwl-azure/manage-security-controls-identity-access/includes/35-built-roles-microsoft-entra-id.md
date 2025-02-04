@@ -47,7 +47,7 @@ You can change the settings of a role assignment, for example to change an activ
     :::image type="content" source="../media/remove-update-role-assignment-024b45df-5b181558.png" alt-text="Screenshot showing eligible assignments and available remove or update actions in the Azure portal.":::
     
 
-## Remove roles<br>
+## Remove roles
 
 You can remove role assignments from the **Administrative roles** page for a selected user.
 

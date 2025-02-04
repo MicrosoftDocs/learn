@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-security-controls-identity-access.delegation-and-roles-in-entitlement-management
+uid: learn.wwl.manage-security-controls-identity-access.delegation-roles-entitlement-management
 title: Delegation and roles in entitlement management
 metadata:
   adobe-target: true
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/47-delegation-and-roles-in-entitlement-management.md)]
+  [!include[](includes/47-delegation-roles-entitlement-management.md)]

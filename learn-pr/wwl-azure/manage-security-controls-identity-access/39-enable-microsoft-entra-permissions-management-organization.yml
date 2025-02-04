@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-security-controls-identity-access.enable-microsoft-entra-permissions-management-your-organization
+uid: learn.wwl.manage-security-controls-identity-access.enable-microsoft-entra-permissions-management-organization
 title: Implement and manage Microsoft Entra Permissions Management
 metadata:
   adobe-target: true
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/39-enable-microsoft-entra-permissions-management-your-organization.md)]
+  [!include[](includes/39-enable-microsoft-entra-permissions-management-organization.md)]

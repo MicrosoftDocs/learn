@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-security-controls-identity-access.create-a-new-user
+uid: learn.wwl.manage-security-controls-identity-access.create-new-user
 title: Create a new user in Microsoft Entra ID
 metadata:
   adobe-target: true
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-create-a-new-user.md)]
+  [!include[](includes/5-create-new-user.md)]

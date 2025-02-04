@@ -107,7 +107,7 @@ Now you're ready to present and verify your first verified credential expert car
 5.  Using Authenticator, scan the QR code, or scan it directly from your mobile camera.
 6.  When you see the warning message, *This app or website may be risky*, select **Advanced**. You're seeing this warning because your domain isn't verified. For this example, you can skip the domain registration.
     
-    :::image type="content" source="../media/at-risk-3e120e91-b77e1091.png" alt-text="Screenshot showing the application or website may be risky.":::
+    :::image type="content" source="../media/risk-3e120e91-6209d7b8.png" alt-text="Screenshot showing the application or website may be risky.":::
     
 7.  At the risky website warning, select **Proceed anyways (unsafe)**.
     

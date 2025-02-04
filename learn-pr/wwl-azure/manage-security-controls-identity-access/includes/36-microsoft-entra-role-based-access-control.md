@@ -1,7 +1,7 @@
 Microsoft Entra roles allow you to grant granular permissions to your admins, abiding by the principle of least privilege. Microsoft Entra built-in and custom roles operate on concepts similar to those you find in the role-based access control system for Azure resources (Azure roles). The difference between these two role-based access control systems is:
 
- -  **Microsoft Entra roles control access to Microsoft Entra resources** such as users, groups, and applications using the Microsoft Graph API<br>
- -  **Azure roles control access to Azure resources** such as virtual machines or storage using Azure Resource Management
+ -  **Microsoft Entra roles control access to Microsoft Entra resources** such as users, groups, and applications using the Microsoft Graph API.<br>
+ -  **Azure roles control access to Azure resources** such as virtual machines or storage using Azure Resource Management.
 
 Both systems contain similarly used role definitions and role assignments. However, Microsoft Entra role permissions can't be used in Azure custom roles and vice versa.
 

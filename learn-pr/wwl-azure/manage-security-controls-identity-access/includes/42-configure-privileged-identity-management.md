@@ -24,7 +24,7 @@ PIM enables you to allow a specific set of actions at a particular scope. Key fe
  -  Conduct access reviews to ensure users still need roles.<br>
  -  Download audit history for internal or external audit.<br>
 
-## Understand PIM<br>
+## Understand PIM
 
 The PIM concepts in this section will help you understand your organization’s privileged identity requirements.
 
@@ -73,7 +73,7 @@ At each stage of your deployment ensure that you are evaluating that the results
  -  Verify whether all the configuration you set up for the roles or PIM for Groups are working correctly.<br>
  -  Roll it to production only after it’s thoroughly tested.<br>
 
-### Plan communications<br>
+### Plan communications
 
 Communication is critical to the success of any new service. Proactively communicate with your users how their experience changes, when it changes, and how to gain support if they experience issues.
 
@@ -112,13 +112,13 @@ If PIM fails to work as desired in the production environment, you can change th
 
 Follow these tasks to prepare PIM to manage Microsoft Entra roles.
 
-### Discover and mitigate privileged roles<br>
+### Discover and mitigate privileged roles
 
 List who has privileged roles in your organization. Review the users assigned, identify administrators who no longer need the role, and remove them from their assignments.
 
 You can use [Microsoft Entra roles access reviews](/entra/id-governance/privileged-identity-management/pim-create-roles-and-resource-roles-review) to automate the discovery, review, and approval or removal of assignments.
 
-### Determine roles to be managed by PIM<br>
+### Determine roles to be managed by PIM
 
 Prioritize protecting Microsoft Entra roles that have the most permissions. It’s also important to consider what data and permission are most sensitive for your organization.
 
@@ -144,8 +144,8 @@ For Microsoft Entra roles in PIM, only a user who is in the Privileged Role Admi
 
 Follow the instructions in the links below:
 
-1.  [Give eligible assignments](/entra/id-governance/privileged-identity-management/pim-how-to-add-role-to-user).
-2.  [Allow eligible users to activate their Microsoft Entra role just-in-time](/entra/id-governance/privileged-identity-management/pim-how-to-activate-role)
+ -  [Give eligible assignments](/entra/id-governance/privileged-identity-management/pim-how-to-add-role-to-user).
+ -  [Allow eligible users to activate their Microsoft Entra role just-in-time](/entra/id-governance/privileged-identity-management/pim-how-to-activate-role)
 
 When role nears its expiration, use [PIM to extend or renew the roles](/entra/id-governance/privileged-identity-management/pim-resource-roles-renew-extend). Both user-initiated actions require an approval from a Global administrator or Privileged role administrator.
 
@@ -164,7 +164,7 @@ A delegated approver receives an email notification when a request is pending fo
 
 We recommend you have at least one administrator read through all audit events on a weekly basis and export your audit events on a monthly basis.
 
-### Security alerts for Microsoft Entra roles<br>
+### Security alerts for Microsoft Entra roles
 
 [Configure security alerts for the Microsoft Entra roles](/entra/id-governance/privileged-identity-management/pim-how-to-configure-security-alerts) which triggers an alert in case of suspicious and unsafe activity.
 
@@ -172,7 +172,7 @@ We recommend you have at least one administrator read through all audit events o
 
 Follow these tasks to prepare PIM to manage Azure resource roles.
 
-### Discover and mitigate privileged roles<br>
+### Discover and mitigate privileged roles
 
 Minimize Owner and User Access Administrator assignments attached to each subscription or resource and remove unnecessary assignments.
 
@@ -180,7 +180,7 @@ As a Global Administrator you can [elevate access to manage all Azure subscripti
 
 Use [access reviews for Azure resources](/entra/id-governance/privileged-identity-management/pim-create-roles-and-resource-roles-review) to audit and remove unnecessary role assignments.
 
-### Determine roles to be managed by PIM<br>
+### Determine roles to be managed by PIM
 
 When deciding which role assignments should be managed using PIM for Azure resource, you must first identify the management groups, subscriptions, resource groups, and resources that are most vital for your organization. Consider using management groups to organize all their resources within their organization.
 
@@ -210,8 +210,8 @@ You can [assign eligibility to members or owners of the PIM for Groups.](/entra/
 > [!NOTE]
 > You can assign the group to one or more Microsoft Entra ID and Azure resource roles in the same way as you assign roles to users. A **maximum of 500 role-assignable groups** can be created in a single Microsoft Entra organization (tenant).
 
-:::image type="content" source="../media/privileged-identity-for-groups-800d8e90-e1346dc5.png" alt-text="Diagram showing an example of privileged identity for groups.":::
- When group assignment nears its expiration, use \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\[PIM to extend or renew the group assignment\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\](/entra/id-governance/privileged-identity-management/groups-renew-extend). This operation requires group owner approval.
+:::image type="content" source="../media/privileged-identity-groups-800d8e90-8e798977.png" alt-text="Diagram showing an example of privileged identity for groups.":::
+When group assignment nears its expiration, use \[PIM to extend or renew the group assignment\](/entra/id-governance/privileged-identity-management/groups-renew-extend). This operation requires group owner approval.
 
 ### Approve or deny PIM activation request
 

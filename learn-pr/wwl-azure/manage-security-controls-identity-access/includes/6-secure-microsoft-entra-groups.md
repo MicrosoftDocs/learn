@@ -19,7 +19,7 @@ Some groups can't be managed in the Azure portal:
 
 There are two group types and three group membership types. Review the options to find the right combination for your scenario.
 
-### Group types:<br>
+### Group types:
 
 Security: Used to manage user and computer access to shared resources.
 

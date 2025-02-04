@@ -54,15 +54,15 @@ Azure management groups support Azure role-based access control (Azure RBAC) for
 
 The following chart shows the list of roles and the supported actions on management groups.
 
-| **Azure Role Name**         | **Create** | **Rename** | **Move\*\*** | **Delete** | **Assign Access** | **Assign Policy** | **Read** |
-| --------------------------- | ---------- | ---------- | ------------ | ---------- | ----------------- | ----------------- | -------- |
-| Owner                       | X          | X          | X            | X          | X                 | X                 | X        |
-| Contributor                 | X          | X          | X            | X          |                   |                   | X        |
-| MG Contributor\*            | X          | X          | X            | X          |                   |                   | X        |
-| Reader                      |            |            |              |            |                   |                   | X        |
-| MG Reader\*                 |            |            |              |            |                   |                   | X        |
-| Resource Policy Contributor |            |            |              |            |                   | X                 |          |
-| User Access Administrator   |            |            |              |            | X                 | X                 |          |
+| **Azure Role Name**         | **Create** | **Rename** | **Move** | **Delete** | **Assign Access** | **Assign Policy** | **Read** |
+| --------------------------- | ---------- | ---------- | -------- | ---------- | ----------------- | ----------------- | -------- |
+| Owner                       | X          | X          | X        | X          | X                 | X                 | X        |
+| Contributor                 | X          | X          | X        | X          |                   |                   | X        |
+| MG Contributor\*            | X          | X          | X        | X          |                   |                   | X        |
+| Reader                      |            |            |          |            |                   |                   | X        |
+| MG Reader\*                 |            |            |          |            |                   |                   | X        |
+| Resource Policy Contributor |            |            |          |            |                   | X                 |          |
+| User Access Administrator   |            |            |          |            | X                 | X                 |          |
 
 The **Management Group Contributor** and **Management Group Reader** roles allow users to perform those actions only on the management group scope.
 
@@ -85,7 +85,7 @@ Role definitions are assignable scope anywhere within the management group hiera
 
 For example, let's look at a small section of a hierarchy for a visual.
 
-:::image type="content" source="../media/management-groups-and-subscriptions-1558cb98-bcf1a2d1.png" alt-text="Diagram showing an example of the role definition and assignment hierarchy path.":::
+:::image type="content" source="../media/management-groups-subscriptions-1558cb98-feed1735.png" alt-text="Diagram showing an example of the role definition and assignment hierarchy path.":::
 
 
 Let's say there's a custom role defined on the Sandbox management group. That custom role is then assigned on the two Sandbox subscriptions.
