@@ -17,3 +17,7 @@ By the end of this module, you'll be able to:
 - Describe the purpose and key principles of Microsoft Priva.  
 - Navigate the Priva portal and locate core features.  
 - Explain the functionality of Priva tools for data protection and privacy management.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

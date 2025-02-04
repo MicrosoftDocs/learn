@@ -23,3 +23,7 @@ Microsoft Priva helps organizations simplify and automate privacy management. It
 **Microsoft Priva Subject Rights Request** simplifies how organizations handle requests to access, update, or delete personal data. Managing these requests manually can be time-consuming, but Priva automates much of the process with workflows, analytics, and notifications. It also supports managing data requests across an organization's entire data estate, extending beyond Microsoft 365 environments.
 
 Microsoft Priva offers a comprehensive set of tools for managing privacy and protecting personal data. By automating assessments, risk management, and data requests, it helps organizations build scalable privacy practices while keeping operations running smoothly.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

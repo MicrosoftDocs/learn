@@ -1,4 +1,4 @@
-Contoso Ltd., a global retail company, recently identified gaps in its privacy management processes. Employees frequently share customer data across regions, often without proper authorization. This practice increases the risk of data breaches and non-compliance with privacy regulations. The organization is considering implementing Microsoft Priva to address these issues.
+Contoso Ltd., a global retail company, recently identified gaps in its privacy management processes. Employees frequently share customer data across regions, often without proper authorization. This practice increases the risk of data breaches and noncompliance with privacy regulations. The organization is considering implementing Microsoft Priva to address these issues.
 
 Contoso plans to:
 

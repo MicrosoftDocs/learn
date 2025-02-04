@@ -9,7 +9,7 @@ Organizations face several challenges when managing personal data:
 - **Data minimization:** Excessive data collection leads to compliance risks and storage challenges, but controlling data retention manually is difficult.
 - **Oversharing personal data:** Internal oversharing can result in unauthorized access, exposing organizations to breaches and legal issues.
 - **Training and awareness gaps:** Traditional privacy training might be ineffective, leaving employees unaware of their role in maintaining data privacy.
-- **Responding to privacy incidents:** Slow responses to data incidents increase the risk of non-compliance and reputational harm.
+- **Responding to privacy incidents:** Slow responses to data incidents increase the risk of noncompliance and reputational harm.
 
 ## How Microsoft Priva addresses these challenges
 
@@ -30,3 +30,7 @@ A global retail company collects customer information, including contact details
 With Microsoft Priva, the company can automatically locate and classify personal data across regions. Policies can be implemented to restrict access based on job roles, enforce data minimization practices, and alert employees when data-sharing activities pose risks. Real-time notifications and guidance empower teams to make informed decisions, and automated workflows simplify responses to customer requests for data access or deletion.
 
 By integrating Priva into their processes, the company reduces privacy risks, improves compliance, and builds customer trust without disrupting productivity.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

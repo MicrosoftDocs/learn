@@ -141,3 +141,7 @@ Priva solutions can be accessed through the [Microsoft Priva portal (preview)](h
 ## Next steps
 
 After configuring Microsoft Priva, explore its tools to manage privacy risks, improve compliance, and streamline data handling processes.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

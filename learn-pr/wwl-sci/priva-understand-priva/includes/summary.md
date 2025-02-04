@@ -8,7 +8,7 @@ In this module, you learned to:
 - Navigate the Priva portal to access and manage key features.
 - Explain the functionality of Priva solutions and their prerequisites.
 
-Without Microsoft Priva, Contoso would face manual, inconsistent processes for managing personal data, leaving the organization vulnerable to compliance risks and data breaches. By leveraging Priva's automated solutions, Contoso can now take a proactive approach to privacy management, addressing key challenges while ensuring efficient and compliant data handling practices.
+Without Microsoft Priva, Contoso would face manual, inconsistent processes for managing personal data, leaving the organization vulnerable to compliance risks and data breaches. By using Priva's automated solutions, Contoso can now take a proactive approach to privacy management, addressing key challenges while ensuring efficient and compliant data handling practices.
 
 ## Resources
 
@@ -16,3 +16,7 @@ Without Microsoft Priva, Contoso would face manual, inconsistent processes for m
 - [Learn about the new Microsoft Priva portal (preview)](/privacy/priva/priva-portal?azure-portal=true)
 - [Get started with Priva](/privacy/priva/priva-setup?azure-portal=true)
 - [Configure Priva settings](/privacy/priva/priva-settings?azure-portal=true)
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

@@ -43,3 +43,7 @@ These settings ensure a consistent user experience and allow for personalization
 The Priva portal introduces a new left-navigation layout that provides easy access to solution-specific features and settings. This design aligns with other Microsoft Purview tools, creating a consistent user experience. The navigation pane organizes options into logical sections, streamlining access to key tools and insights.
 
 The Microsoft Priva portal (preview) offers a user-friendly, centralized hub for managing privacy solutions. By familiarizing yourself with the portal's interface, navigation, and features, you can make the most of its capabilities to protect and manage personal data effectively. Take the time to explore the portal and its tools to optimize your organization's privacy management strategy.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)
