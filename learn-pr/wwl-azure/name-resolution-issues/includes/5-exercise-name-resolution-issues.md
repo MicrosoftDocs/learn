@@ -59,7 +59,7 @@ The IP addresses are:
 
 - VM3 = 10.2.0.4
 
-The DNS server address is 168.63.129.16, which is the wire server.
+The DNS server address is 192.168.016, which is the wire server.
 
 :::image type="content" source="../media/5-network-configure.png" alt-text="Screenshot of command prompt results after running i p config / all." lightbox="../media/5-network-configure.png":::
 
@@ -134,4 +134,4 @@ Optionally, you can test pinging the VMs, using their DNS names.
 
 In this demonstration you will see how to proactively troubleshoot Conditional Access policies using the What if tool in the Azure portal:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TYML]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=89995f75-c563-4a72-98f2-9bb11c610c5a]

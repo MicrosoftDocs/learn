@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-windows-server-performance
 metadata:
   title: Monitor Windows Server performance
   description: "Learn to use a range of Windows Server tools to monitor the operating system and applications on a server computer. You'll also learn to configure your system to optimize efficiency and to troubleshoot problems."
-  ms.date: 12/28/2023
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
 title: Monitor Windows Server performance
 summary: Learn to use a range of Windows Server tools to monitor the operating system and applications on a server computer. You'll also learn to configure your system to optimize efficiency and to troubleshoot problems.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Use built-in tools in Windows Server to monitor server performance
   - Understand the fundamentals of server performance tuning
 prerequisites: |

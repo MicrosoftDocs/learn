@@ -3,7 +3,7 @@ In this demonstration, you'll learn to:
 
 - Configure the VM using DSC
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AMhA]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=eb9783db-57bc-4885-8a3c-c0f212061bc1]
 
 ## Next steps
 

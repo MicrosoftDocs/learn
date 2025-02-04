@@ -1,4 +1,4 @@
-resource networkInterface 'Microsoft.Network/networkInterfaces@2022-05-01' = {
+resource networkInterface 'Microsoft.Network/networkInterfaces@2024-05-01' = {
   name: networkInterfaces_toytruckserver890_name
   location: 'westus3'
   properties: {

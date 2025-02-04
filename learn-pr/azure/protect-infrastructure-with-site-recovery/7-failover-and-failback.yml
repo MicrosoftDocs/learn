@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Failover and failback using Azure Site Recovery
   description: Here, we'll explore how we can reprotection our failed over infrastructure and how to fallback to a primary region using Azure Site Recovery.
-  ms.date: 12/07/2023
+  ms.date: 01/25/2025
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: unit

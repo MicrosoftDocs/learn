@@ -31,7 +31,7 @@ products:
 subjects:
 - blockchain
 modules:
-- learn.azure-intro-to-blockchain
+# - learn.azure-intro-to-blockchain
 - learn.reactors.blockchain-learning-solidity
 - learn.reactors.blockchain-solidity-ethereum-smart-contracts
 - learn.reactors.blockchain-tokens

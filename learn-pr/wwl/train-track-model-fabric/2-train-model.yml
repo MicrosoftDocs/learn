@@ -4,16 +4,13 @@ title: Understand how to train machine learning models
 metadata:
   title: Understand how to train machine learning models
   description: Understand how to train machine learning models
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 09/10/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 1/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
-    - build-2023-fabric
+
 durationInMinutes: 6
 content: |
   [!include[](includes/2-train-model.md)]

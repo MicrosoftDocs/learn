@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-app-service-plans.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/17/2024
+  ms.date: 01/29/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -18,15 +20,15 @@ quiz:
   questions:
   - content: "Which App Service Plan can you implement to support the Production team's requirements?"
     choices:
-    - content: "Basic"
+    - content: "Basic B1"
       isCorrect: false
       explanation: "Incorrect. The Basic App Service plan doesn't meet the requirements."
-    - content: "Standard"
+    - content: "Standard S1"
       isCorrect: false
       explanation: "Incorrect. The Standard App Service plan doesn't meet the requirements."
-    - content: "Premium"
+    - content: "Premium V3 P1V3"
       isCorrect: true
-      explanation: "Correct. The Premium App Service plan meets the requirements of scaling to 5 instances and 100 GB of disk storage."
+      explanation: "Correct. The Premium App Service plan meets the requirements of scaling to 5 instances and 100 GB of remote storage."
   - content: "What scaling option provides more CPU, memory, or disk space without adding more virtual machines?"
     choices:
     - content: "Scale up"

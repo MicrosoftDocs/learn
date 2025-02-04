@@ -2,17 +2,14 @@
 uid: learn.wwl.give-your-ai-agent-skills.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
-  description: Introduction
+  description: "Introduction"
+  ms.date: 01/24/2025
   author: wwlpublish
   ms.author: buzahid
-  ms.date: 06/11/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
-

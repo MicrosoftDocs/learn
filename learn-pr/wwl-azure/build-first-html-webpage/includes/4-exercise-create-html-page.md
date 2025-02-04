@@ -8,7 +8,7 @@ You'll start by creating a folder, setting up your tooling, and creating a "swin
 
 The following video demonstrates how to install CodeSwing in Visual Studio Code. These steps are also in the exercise steps.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5amMI]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7bd2894a-bd6f-4a57-8298-9c2c57a1ad45]
 
 1. Create a folder on your desktop named **resume**.
 1. Open [vscode.dev](https://vscode.dev).
@@ -33,7 +33,7 @@ Next, you'll add the HTML to create the structure of your page. You'll create th
 
 The following video demonstrates how to author HTML in Visual Studio Code and have the code render in CodeSwing. These steps are also in the exercise steps.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5amMJ]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=256625d1-5672-4bbc-b04d-33f4fb7eb1ed]
 
 Feel free to replace **Your name** with your name. In other exercises, you'll create lists and links to your email address, social media handles, and education and experience.
 

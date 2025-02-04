@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety-studio
 metadata:
-  title: Moderate content and detect harm in Azure AI Foundry by using Content Safety
-  description: Learn how to choose and build a content moderation system in Azure AI Foundry.
+  title: Implement generative AI guardrails in Azure AI Foundry
+  description: Learn how to choose and configure generative AI guardrails in Azure AI Foundry.
   author: aprilspeight
   ms.author: apspeigh
   ms.date: 08/29/2024
@@ -10,11 +10,9 @@ metadata:
   ms.topic: module-guided-project
   ms.collection:
     - ce-advocates-ai-copilot
-title: Moderate content and detect harm in Azure AI Foundry by using Content Safety
+title: Implement generative AI guardrails in Azure AI Foundry
 summary: | 
-  Learn how to choose and build a content moderation system in Azure AI Foundry.
-  
-  This module is a _guided project_. You complete an end-to-end project by following step-by-step instructions.
+  Learn how to choose and configure generative AI guardrails in Azure AI Foundry.
 abstract: |
   By the end of this module, you'll be able to:
   - Configure filters and threshold levels to block harmful content.

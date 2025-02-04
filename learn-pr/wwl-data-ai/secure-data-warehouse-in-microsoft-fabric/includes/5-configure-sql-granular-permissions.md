@@ -42,18 +42,6 @@ BEGIN
 END;
 ```
 
-This example demonstrates a stored procedure that accepts a table name as a parameter and returns the top 10 rows from that table. This could be useful for quickly inspecting tables in a data warehouse.
-
-```sql
-CREATE PROCEDURE sp_TopTenRows @tableName NVARCHAR(128)
-AS
-BEGIN
-    DECLARE @query NVARCHAR(MAX);
-    SET @query = N'SELECT TOP 10 * FROM ' + QUOTENAME(@tableName);
-    EXEC sp_executesql @query;
-END;
-```
-
 In this example, `@tableName` is the parameter that you can replace with the name of the table you want to inspect. The `QUOTENAME` function is used to safely quote the table name, preventing SQL injection attacks. The `sp_executesql` stored procedure is then used to execute the dynamically built query.
 
 Please note that this is a simple example and real-world data warehouse tasks might require more complex dynamic SQL queries. Always be cautious when using dynamic SQL due to the risk of SQL injection attacks. Always use parameterization methods like `sp_executesql` or `QUOTENAME` to sanitize inputs.

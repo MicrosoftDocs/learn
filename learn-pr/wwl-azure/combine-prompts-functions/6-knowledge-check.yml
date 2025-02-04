@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.combine-prompts-functions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/27/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What can an attacker achieve through prompt injection attacks?"
+    choices:
+    - content: "Attacker can increase the processing speed of the AI model."
+      isCorrect: false
+      explanation: "Incorrect. Prompt injection attacks exploit vulnerabilities in the input, not performance."
+    - content: "Attacker can manipulate the AI’s behavior by altering input prompts and injecting malicious instructions."
+      isCorrect: true
+      explanation: "Correct. Prompt injections can cause the AI to perform unintended or harmful actions."
+    - content: "Attacker can enhance the quality of the AI-generated content."
+      isCorrect: false
+      explanation: "Incorrect. Prompt injections compromise the integrity and accuracy of the AI’s output."
+  - content: "How can developers control which content is trusted in the Semantic Kernel SDK?"
+    choices:
+    - content: "Developers must trust all content by default for the system to function."
+      isCorrect: false
+      explanation: "Incorrect. Developers can specify which content should be trusted."
+    - content: "Developers can set AllowUnsafeContent = true to trust specific input variables or function call results."
+      isCorrect: true
+      explanation: "Correct. This allows developers to selectively trust certain elements while maintaining security."
+    - content: "Developers cannot configure trusted content; the SDK automatically handles everything."
+      isCorrect: false
+      explanation: "Incorrect. Developers can configure the trust level of input variables or function results."
+  - content: "Which of the following is a feature of the Function Invocation Filter in the Semantic Kernel SDK?"
+    choices:
+    - content: "It can modify prompts before submission to the AI model."
+      isCorrect: false
+      explanation: "Incorrect. This is the role of the Prompt Render Filter, not the Function Invocation Filter."
+    - content: "It automatically terminates the function invocation process."
+      isCorrect: false
+      explanation: "Incorrect. This is the role of the Auto Function Invocation Filter."
+    - content: "It can log function invocations and validate actions before and after execution."
+      isCorrect: true
+      explanation: "Correct. The Function Invocation Filter can log actions and validate them."

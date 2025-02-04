@@ -8,7 +8,7 @@ During such moments, remember that everyone has different experiences, knowledge
 
 To learn more about how you can cultivate a growth mindset, review the following short video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OFD7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=21897ef2-1ca9-4d28-9474-c34655ec3970]
 
 > [!NOTE]
 > Remember from the video: You can't know someone else's prior experience offhand. Social comparisons can make you unfairly question your potential contributions.

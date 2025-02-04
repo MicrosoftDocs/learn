@@ -6,7 +6,7 @@ metadata:
   title: Protect your Azure infrastructure with Azure Site Recovery
   description: Provide disaster recovery for your Azure infrastructure by customizing replication, failover, and failback of Azure virtual machines with Azure Site Recovery.
   manager: jsuri
-  ms.date: 12/07/2023
+  ms.date: 01/25/2025
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: module

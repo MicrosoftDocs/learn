@@ -4,7 +4,7 @@ title: Use a viewmodel
 metadata:
   title: Use a viewmodel
   description: Use a viewmodel to format, convert, or enrich data as needed by the view.
-  ms.date: 04/21/2024
+  ms.date: 01/08/2025
   author: adegeo
   ms.author: adegeo
   ms.topic: unit
@@ -15,7 +15,7 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "When using the MVVM pattern with .NET MAUI, your model, view, and viewmodel aren't completely decoupled from each other. Which choice describes one common dependency between the MVVM pieces?"
+    - content: "When you use the Model-View-ViewModel (MVVM) pattern with .NET MAUI, your model, view, and viewmodel aren't decoupled completely from each other. Which choice describes one common dependency between the MVVM pieces?"
       choices:
       - content: "The viewmodel has direct knowledge of the model."
         isCorrect: true
@@ -30,10 +30,10 @@ quiz:
       choices:
       - content: "The view"
         isCorrect: true
-        explanation: "Correct. In .NET MAUI, the view is primarily implemented by XAML, but it's difficult to unit test, even if coded."
+        explanation: "Correct. In .NET MAUI, the view is primarily implemented in XAML, but it's difficult to unit test, even if coded."
       - content: "The model"
         isCorrect: false
         explanation: "Incorrect. The model should be just business logic classes and not be coupled to the platform, view, or viewmodel."
       - content: "The viewmodel"
         isCorrect: false
-        explanation: "Incorrect. The viewmodel exposes properties that can be consumed by the view. But it shouldn't be tightly coupled to the platform."
+        explanation: "Incorrect. The viewmodel exposes properties that the view can consume. But it shouldn't be tightly coupled to the platform."

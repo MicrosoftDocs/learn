@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-azure-ai-development.introduction
+title: Introduction
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction
+  description: It's important to plan and prepare for an AI development project.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 01/31/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
+

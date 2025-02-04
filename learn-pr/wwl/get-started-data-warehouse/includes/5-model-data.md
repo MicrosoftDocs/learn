@@ -46,7 +46,7 @@ There's also a *default semantic model* automatically created for you in Fabric.
 New tables in the Lakehouse are automatically added to the default semantic model. Users can also manually select tables or views from the warehouse they want included in the model for more flexibility. Objects that are in the default semantic model are created as a layout in the model view.
 
 > [!NOTE]
-> Default semantic models follow the current limitations for semantic models in Power BI. See [Default Power BI semantic models](/fabric/data-warehouse/limitations) for more information.
+> Default semantic models follow the current limitations for semantic models in Power BI. See [Default Power BI semantic models](/fabric/data-warehouse/default-power-bi-semantic-model) for more information.
 
 ## Visualize data
 

@@ -4,8 +4,8 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: What is Azure Site Recovery?
-  description: Here, you'll learn how replication, disaster recovery (DR) drills and the flexibility of Site Recovery.
-  ms.date: 12/07/2023
+  description: Here, you'll learn how replication, disaster recovery (DR) drills, and the flexibility of Site Recovery.
+  ms.date: 01/25/2025
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: unit

@@ -1,13 +1,17 @@
-As a data scientist, you want to focus your time on training machine learning models. You want to easily get access of the data you need and have sufficient compute to train a model. To be efficient and cost-effective, you need to choose the appropriate service to train a machine learning model.
+Thoughtfully designed machine learning solutions form the foundation of today's AI applications. From predictive analytics to personalized recommendations and beyond, machine learning solutions support the latest technological advances in society by using existing data to produce new insights. 
 
-To decide which service best fits your needs, you need to know what type of model you're training. By understanding the requirements of your model, you can design a model training solution, which ensures the model keeps performing as expected and stays relevant over time.
+As a data scientist, you can make decisions to tackle machine learning problems in different ways. The decisions you make affect the cost, speed, quality, and longevity of the solution.
 
-You'll learn how to design a machine learning training solution and how to choose the tools you need to train a model.
+In this module, you learn how to design an end-to-end machine learning solution with Microsoft Azure that can be used in an enterprise setting. Using the following six steps as a framework, we explore how to plan, train, deploy, and monitor machine learning solutions.
 
-## Learning objectives
+:::image type="content" source="../media/machine-learning-process.png" alt-text="Diagram showing the six steps of the machine learning process.":::
 
-In this module, you'll learn how to:
+1. **Define the problem**: Decide on what the model should predict and when it's successful.
+1. **Get the data**: Find data sources and get access.
+1. **Prepare the data**: Explore the data. Clean and transform the data based on the model's requirements.
+1. **Train the model**: Choose an algorithm and hyperparameter values based on trial and error.
+1. **Integrate the model**: Deploy the model to an endpoint to generate predictions.
+1. **Monitor the model**: Track the model's performance.
 
-- Identify machine learning tasks.
-- Choose a service to train a model.
-- Choose between compute options.
+> [!Note]
+> The diagram is a simplified representation of the machine learning process. Typically, the process is iterative and continuous. For example, when monitoring the model you may decide to go back and retrain the model.

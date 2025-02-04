@@ -41,8 +41,8 @@ A test set of data is provided for you which includes a set of prompts that cons
 
 1. Select the **Add your data** tab.
 1. If the **products-index** is not selected, select the **Select available project index** drop-down and select **products-index**.
-1. In the **Manual evaluation result** section, select **Import test data**.
-1. On the **Select dataset** page, upload the **e2e-manual-evaluation.csv** file and select **Next**.
+1. In the **Manual evaluation result** section, select **Import test data**. If prompted to **Import without saving?** select **Import without saving**.
+1. On the **Select dataset** page, select **Upload file** and upload the **e2e-manual-evaluation.csv** file and select **Next**.
 1. On the **Map data** page, select the following within the **Dataset mapping** section:
     - **Input**: chat_input (String)
     - **Expected response**: truth (Sting)
@@ -112,4 +112,4 @@ With a new system message in place, let’s run another manual evaluation, speci
 
 The model should now format product recommendations in the desired format. However, in the example provided, the model couldn’t retrieve the price of the **MountainDream Sleeping Bag**. In a real-world scenario, a recommended next step would be to review the Contoso Camping Store product data and validate whether the price is missing for that respective product.
 
-Let’s now evaluate the model using the second type of supported evaluations: Automated Evaluation.
+Let’s now evaluate the model output using the second type of supported evaluations: Automated Evaluation.

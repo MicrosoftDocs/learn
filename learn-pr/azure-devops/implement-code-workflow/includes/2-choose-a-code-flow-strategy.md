@@ -54,7 +54,7 @@ What's cool about Azure DevOps is that it works well both with centralized versi
 
 ## How do I work with Git?
 
-**Mara:** Like I mentioned before, with distributed systems, developers are free to access any file they need without affecting other developers' work, because they have their own copy of the repository. A _clone_ is your local copy of a repository.
+**Mara:** Like I mentioned before, with distributed systems, developers are free to access any file they need without affecting other developers' work because they have their own copy of the repository. A _clone_ is your local copy of a repository.
 
 When we work on a feature or a bug fix, we usually want to try out different approaches until we find the best solution. However, trying out code on your copy of the main code base isn't a good idea, because you might not want to keep the first few tries.
 
@@ -94,7 +94,7 @@ Before you make changes to a file, you check out a new branch so that you know y
  :::row:::
     :::column span="8":::
 **Step 3**:
-You're now safe to make whatever changes you want, because these changes are only in your branch. As you work, you can _commit_ your changes to your branch to ensure that you don't lose any work, and to provide a way to roll back any changes you've made to earlier versions. Before you can commit changes, you need to stage your files so that Git knows which ones you're ready to commit.
+You're now safe to make whatever changes you want because these changes are only in your branch. As you work, you can _commit_ your changes to your branch to ensure that you don't lose any work. This also provides a way to roll back any changes you've made to earlier versions. Before you can commit changes, you need to stage your files so that Git knows which ones you're ready to commit.
     :::column-end:::
     :::column:::
         :::image type="content" source="../media/2-github-paths-3.png" border="false" alt-text="Diagram of the commits being made to the local branch.":::
@@ -112,7 +112,7 @@ The next step is to _push_, or upload, your local branch up to the remote reposi
 :::row:::
     :::column span="8":::
 **Step 5**:
-This step is a common one, but not required. When you're satisfied that your code is working as you want it to, you can _pull_, or merge, the remote `main` branch back into your local `main` branch. Changes have been taking place there that your local `main` branch doesn't have yet. After you've synchronized the remote `main` branch with yours, merge your local `main` branch into your working branch and test your build again.
+This step is a common one but not required. When you're satisfied that your code is working as you want it to, you can _pull_, or merge, the remote `main` branch back into your local `main` branch. Changes have been taking place there that your local `main` branch doesn't have yet. After you've synchronized the remote `main` branch with yours, merge your local `main` branch into your working branch and test your build again.
 
 This process helps ensure that your feature works with the latest code. It also helps ensure that your work will integrate smoothly when you submit your pull request.
     :::column-end:::

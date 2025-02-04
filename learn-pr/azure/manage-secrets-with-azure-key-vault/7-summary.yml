@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 11/06/2023
+  ms.date: 12/12/2024
   author: msmbaldwin
   ms.author: mbaldwin
   ms.topic: unit
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which of the following is **not** a benefit of Azure Key Vault?
+  - content: Which of the following benefits is **not** a benefit of Azure Key Vault?
     choices:
     - content: Secure storage of private user information.
       isCorrect: true
@@ -40,7 +40,7 @@ quiz:
     - content: Applications authenticate to a vault with the username and password of a user that signs in to the web app, and is granted access to secrets owned by that user.
       isCorrect: false
 
-  - content: How does Azure Key Vault help protect your secrets after they have been loaded by your app?
+  - content: How does Azure Key Vault help protect your secrets after your app loads them?
     choices:
     - content: Azure Key Vault automatically generates a new secret after every use.
       isCorrect: false
@@ -48,7 +48,7 @@ quiz:
       isCorrect: false
     - content: Azure Key Vault double-encrypts secrets, requiring your app to decrypt them locally every time they're used.
       isCorrect: false
-    - content: It doesn't protect your secrets. Secrets are unprotected once they're loaded by your application.
+    - content: It doesn't protect your secrets. Secrets are unprotected once your application loads them.
       isCorrect: true
-      explanation: Once secrets have been loaded by an app, they are unprotected. Make sure to not log them, store them, or return them in client responses.  
+      explanation: Once an app loads your secrets, they're unprotected. Make sure to not log them, store them, or return them in client responses.  
 

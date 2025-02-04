@@ -12,4 +12,4 @@ Analytical solutions integrate the data from these systems into a single source 
 
 In this video, you'll see how data from different areas within an organization can be processed into a central reporting data store:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U38o]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c7aab29e-cb7e-43fe-9f42-f0f45a4e639a]

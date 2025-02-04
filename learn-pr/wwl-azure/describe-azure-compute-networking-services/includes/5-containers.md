@@ -8,7 +8,7 @@ Containers are a virtualization environment. Much like running multiple virtual 
 
 The following video highlights several of the important differences between virtual machines and containers:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuaq]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7aa48d3f-4304-4a18-9861-eaf9d4bebd26]
 
 ### Azure Container Instances
 

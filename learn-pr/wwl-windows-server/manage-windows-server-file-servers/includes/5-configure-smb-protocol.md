@@ -19,4 +19,4 @@ The main steps in the process are:
 1. Disable SMB 1.0. Disable SMB 1.0 by using the ```Disable-WindowsOptionalFeature``` Windows PowerShell cmdlet.
 1. Configure SMB encryption. Enforce the use of SMB encryption.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MjvN]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=e756709d-a45f-44d6-9a31-b0011900ce6a]

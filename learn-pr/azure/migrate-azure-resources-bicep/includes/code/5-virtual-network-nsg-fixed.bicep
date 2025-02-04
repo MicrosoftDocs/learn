@@ -1,4 +1,4 @@
-resource virtualNetwork 'Microsoft.Network/virtualNetworks@2020-11-01' = {
+resource virtualNetwork 'Microsoft.Network/virtualNetworks@2024-05-01' = {
   name: virtualNetworks_ToyTruck_vnet_name
   location: 'westus'
   properties: {

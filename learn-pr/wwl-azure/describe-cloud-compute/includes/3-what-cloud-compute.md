@@ -4,4 +4,4 @@ Because cloud computing uses the internet to deliver these services, it doesn’
 
 This short video provides a quick introduction to cloud computing.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LyBB]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=09d13868-cf87-4b06-90eb-29bf1fbed6ec]

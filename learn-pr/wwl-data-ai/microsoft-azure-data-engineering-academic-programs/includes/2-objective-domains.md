@@ -20,7 +20,7 @@ Become familiar with the objective domains which are a comprehensive set of spec
 
  
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5akq6]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0f928f3a-7a8b-48ca-a793-a65f58f032cc]
 
  
 

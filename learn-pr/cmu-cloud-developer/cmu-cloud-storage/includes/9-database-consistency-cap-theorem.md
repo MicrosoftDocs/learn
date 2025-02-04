@@ -3,7 +3,7 @@ Without replication, consistency is not a concern. Replication entails maintaini
 Replication produces multiple replicas of data, and consistency ensures that those replicas remain uniform so that different processes can access (i.e., read and write) them. Specifically, replicas in a collection are considered to be consistent when they appear identical to concurrently accessing processes. The ability to handle concurrent operations on replicas while maintaining consistency is fundamental to distributed storage in general and cloud storage in particular. In this unit, consistency is discussed in the context of read and write operations performed on shared replicas in a distributed data store (see Figure 13). The distributed data store can be a DFS, a parallel file system, or a distributed database. Consistency can be achieved by employing a **consistency model**. We define a consistency model as a contract between processes and the distributed data store. This definition implies that if processes agree to obey certain rules, the distributed data store promises to enforce those rules. The following video covers a number of consistency models.
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q0qt]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fc389be4-8691-4c0c-8cf5-6c601e04381f]
 
 We discuss three consistency models in detail in this unit: **sequential consistency**, **causal consistency**, and **eventual consistency**.
 
@@ -57,7 +57,7 @@ To solve this problem, the operations can be defined as a transaction, as follow
 It now becomes the database's responsibility to ensure **atomicity** of this transaction—that the transaction is either successful in its entirety (committed) or not performed at all (rollback). The database should be **consistent** after the transaction is complete; that is, the database should be in a valid state after the transaction is committed, and any rules defined for records in the database should not be violated (e.g., a savings account may not have a negative balance). Any transactions that are happening concurrently to the accounts must not interfere with each other, thus providing **isolation**. Finally, the transaction must be **durable**, which means that the actions performed in the transaction should persist after the transaction is committed to the database. The properties of atomicity, consistency, isolation, and durability are collectively known as the **ACID** properties of transactions and are expected to be followed by most RDBMSs that are used for transaction processing. The following video provides an overview of ACID properties in databases:
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q0qx]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3076e52f-deca-44af-a000-4036023d2ee4]
 
 - **Atomic**: The transaction is indivisible—either all the statements in the transaction are applied to the database, or none are.
 - **Consistent**: The database remains in a consistent state before and after transaction execution. 
@@ -74,7 +74,7 @@ In 1999, Brewer<sup>[1][^1]</sup> proposed a theorem describing the limitations 
 
 The following video provides an overview of the CAP theorem:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pSF5]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=877060c2-08f5-44f6-8eeb-dbbd8d442f0e]
 
 The easiest way to understand CAP is to think of two nodes of a distributed storage system on opposite sides of a network partition (Figure 16). Allowing at least one node to update state will cause the nodes to become inconsistent, thus forfeiting C. Likewise, if the choice is to preserve consistency, one side of the partition must act as if it is unavailable, thus forfeiting A. Only when nodes communicate is it possible to preserve both consistency and availability, thereby forfeiting P.
 

@@ -159,7 +159,7 @@ The variable `suggestedDonation` is intended to be a numeric value, but is colle
 
 1. Take a minute to review how the suggested donation data finally makes it into the `ourAnimals` array.
 
-     The following code populates the `decimalAnimals` in context of the `TryParse()`:
+     The following code populates the `ourAnimals` array in context of the `TryParse()`:
 
     ```csharp  
     if (!decimal.TryParse(suggestedDonation, out decimalDonation)){

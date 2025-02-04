@@ -49,7 +49,7 @@ Reservation utilization can take up to a day to update after the purchase.
 You can also make reservation purchases programmatically using any of the following methods:
 
 - [REST API](/rest/api/reserved-vm-instances/reservationorder)
-- [Azure PowerShell](/powershell/module/azurerm.reservations)
+- [Azure PowerShell](/powershell/module/az.reservations)
 - [Azure CLI](/cli/azure/reservations/reservation-order)
 
 After you make a reservation purchase, you can manage it in several ways outlined in the next unit.
