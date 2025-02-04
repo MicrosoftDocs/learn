@@ -4,10 +4,10 @@ title: Implement keyboard accessibility
 metadata:
   title: Implement keyboard accessibility
   description: This unit is a part of the \"Design keyboard accessible products\" module.
-  ms.date: 01/31/2025
-  author: bmackinney
-  ms.author: kichand
+  ms.date: 02/04/2025
+  author: erzelman
+  ms.author: erzelman
   ms.topic: unit
 durationInMinutes: 14
 content: |
-  [!include[](includes/5-implement-keyboard-accessibility.md)]
+  [!include[](includes/6-implement-keyboard-accessibility.md)]
