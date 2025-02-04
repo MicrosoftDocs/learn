@@ -2,31 +2,31 @@ Before you deploy Azure NetApp Files as a datastore or a guest-mounted file syst
 
 ## Prerequisites
 
-The following resources should be created before deploying an Azure NetApp Files volume for Azure VMware Solution (AVS):
+The following resources should be created before deploying an Azure NetApp Files volume for Azure VMware Solution:
 
-- One or more AVS private clouds.
-- Dedicated VNet connected via an ExpressRoute gateway configured with the UltraPerformance or `ErGw3Az` SKU with FastPath enabled.
+- One or more Azure VMware Solution private clouds.
+- Dedicated virtual network (VNet) connected via an ExpressRoute gateway configured with the UltraPerformance or `ErGw3Az` SKU with FastPath enabled.
 - Subnet delegated to the `Microsoft.NetApp/volumes` service.
-- NetApp account created in the same region as your AVS private clouds.
+- NetApp account created in the same region as your Azure VMware Solution private clouds.
 - Azure NetApp Files capacity pool with the appropriate service level and quality of service (QoS) type.
 
-The diagram shows the logical connectivity between the AVS private cloud and the dedicated Azure NetApp Files VNet.
+The following diagram shows the logical connectivity between Azure VMware Solution private cloud and the dedicated Azure NetApp Files VNet.
 
 :::image type="content" source="../media/3-deployment-diagram.png" alt-text="Diagram of storage sample deployment." lightbox="../media/3-deployment-diagram.png":::
 
 ## Best practices
 
-When deploying an Azure NetApp Files volume with AVS, adhere to the best practices:
+When deploying an Azure NetApp Files volume with Azure VMware Solution, adhere to the best practices:
 
 - Use the UltraPerformance or `ErGw3Az` SKU for the ExpressRoute gateway.
-- Enable FastPath on the connection between your AVS private cloud and the dedicated Azure NetApp Files VNet.
-- Use Standard network features to optimize network throughput between your AVS private cloud and your Azure NetApp Files volumes.
-- Use zonal placement to provision the Azure NetApp Files volumes in the same availability zone (AZ) as your AVS private cloud.
+- Enable FastPath on the connection between your Azure VMware Solution private cloud and the dedicated Azure NetApp Files VNet.
+- Use Standard network features to optimize network throughput between your Azure VMware Solution private cloud and your Azure NetApp Files volumes.
+- Use zonal placement to provision the Azure NetApp Files volumes in the same availability zone (AZ) as your Azure VMware Solution private cloud.
 - Appropriately size your Azure NetApp Files volumes to ensure performance requirements are met.
 
 ## Performance sizing
 
-When deploying Azure NetApp Files with AVS, it's important to select the appropriate service level and volume size.
+When deploying Azure NetApp Files with Azure VMware Solution, it's important to select the appropriate service level and volume size.
 
 ### Service levels
 
