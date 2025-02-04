@@ -41968,6 +41968,41 @@
        "source_path": "learn-pr/wwl-azure/security-monitoring-automation-solutions/8-summary.md",
        "redirect_url": "/training/modules/security-monitoring-automation-solutions/11-summary",
        "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-sql-edge/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql-edge/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-sql-edge/2-what-is-azure-sql-edge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql-edge/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-sql-edge/3-how-azure-sql-edge-works.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql-edge/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-sql-edge/4-when-to-use-azure-sql-edge.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql-edge/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-sql-edge/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql-edge/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-sql-edge/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql-edge/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-sql-edge/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/azure-sql-edge/overview",
+      "redirect_document_id": false
     }
   ]
 }
