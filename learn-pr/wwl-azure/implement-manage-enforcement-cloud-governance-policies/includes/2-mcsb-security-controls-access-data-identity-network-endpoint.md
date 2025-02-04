@@ -18,7 +18,8 @@ Ensure that security organizations have access to a continuously updated invento
 
 Ensure security organizations are granted Security Reader permissions in your Azure tenant and subscriptions so they can monitor for security risks using Microsoft Defender for Cloud. Security Reader permissions can be applied broadly to an entire tenant (Root Management Group) or scoped to management groups or specific subscriptions.
 
-Note: Additional permissions might be required to get visibility into workloads and services.
+> [!NOTE]
+> Additional permissions might be required to get visibility into workloads and services.
 
 GCP guidance: Use Google Cloud Asset Inventory to provide inventory services based on a time series database. This database keeps a five-week history of GCP asset metadata. The Cloud Asset Inventory export service allows you to export all asset metadata at a certain timestamp or export event change history during a timeframe.
 
@@ -43,7 +44,8 @@ Logically organize assets according to your organization's taxonomy using tags a
 
 Ensure that security organizations have access to a continuously updated inventory of assets on AWS. Security teams often need this inventory to evaluate their organization's potential exposure to emerging risks, and as an input for continuous security improvements.
 
-Note: Additional permissions might be required to get visibility into workloads and services.
+> [!NOTE]
+> Additional permissions might be required to get visibility into workloads and services.
 
 AWS implementation and additional context:
 
@@ -233,7 +235,8 @@ For Azure Backup supported resources, backup data is automatically encrypted usi
 
 Safeguard backup data from accidental or malicious deletion, such as ransomware attacks/attempts to encrypt or tamper backup data. For Azure Backup supported resources, enable soft delete to ensure recovery of items with no data loss for up to 14 days after an unauthorized deletion, and enable multi-factor authentication using a PIN generated in the Azure portal. Also enable geo-redundant storage or cross-region restoration to ensure backup data is restorable when there is a disaster in primary region. You can also enable Zone-redundant Storage (ZRS) to ensure backups are restorable during zonal failures.
 
-Note: If you use a resource's native backup feature or backup services other than Azure Backup, refer to the Microsoft Cloud Security Benchmark (and service baselines) to implement the above controls.
+> [!NOTE]
+> If you use a resource's native backup feature or backup services other than Azure Backup, refer to the Microsoft Cloud Security Benchmark (and service baselines) to implement the above controls.
 
 Azure implementation and additional context:
 
@@ -261,7 +264,8 @@ For GCP Backup supported resources, use Google IAM with roles and permissions to
 
 Backup data is automatically encrypted by default at the platform level using Advanced Encryption Standard (AES) algorithm, AES-256.
 
-Note: If you use a resource's native backup feature or backup services other than GCP Backup, you should refer to the respective guideline to implement the security controls. For example, you can also protect specific VM instances from deletion by setting the deletionProtection property on a VM instance resource.
+> [!NOTE]
+> If you use a resource's native backup feature or backup services other than GCP Backup, you should refer to the respective guideline to implement the security controls. For example, you can also protect specific VM instances from deletion by setting the deletionProtection property on a VM instance resource.
 
 GCP implementation and additional context:
 
@@ -291,7 +295,8 @@ Azure guidance: Use Azure Information protection (AIP) to monitor the data that 
 
 Use Microsoft Defender for Storage, Microsoft Defender for SQL, Microsoft Defender for open-source relational databases, and Microsoft Defender for Cosmos DB to alert on anomalous transfer of information that might indicate unauthorized transfers of sensitive data information.
 
-Note: If required for compliance of data loss prevention (DLP), you can use a host-based DLP solution from Azure Marketplace or a Microsoft 365 DLP solution to enforce detective and/or preventative controls to prevent data exfiltration.
+> [!NOTE]
+> If required for compliance of data loss prevention (DLP), you can use a host-based DLP solution from Azure Marketplace or a Microsoft 365 DLP solution to enforce detective and/or preventative controls to prevent data exfiltration.
 
 Azure implementation and additional context:
 
@@ -304,7 +309,8 @@ AWS guidance: Use AWS Macie to monitor the data that has been classified and lab
 
 You may also connect your AWS accounts to Microsoft Defender for Cloud for compliance checks, container security, and endpoint security capabilities.
 
-Note: If required for compliance of data loss prevention (DLP), you can use a host-based DLP solution from AWS Marketplace.
+> [!NOTE]
+> If required for compliance of data loss prevention (DLP), you can use a host-based DLP solution from AWS Marketplace.
 
 AWS implementation and additional context:
 
@@ -343,7 +349,8 @@ Enforce HTTPS for web application workloads and services by ensuring that any cl
 
 For remote management of Azure Virtual Machines, use SSH (for Linux) or RDP/TLS (for Windows) instead of an unencrypted protocol. For secure file transfer, use the SFTP/FTPS service in Azure Storage Blob, App Service apps, and Function apps, instead of using the regular FTP service.
 
-Note: Data in transit encryption is enabled for all Azure traffic traveling between Azure datacenters. TLS v1.2 or later is enabled on most Azure services by default. And some services such as Azure Storage and Application Gateway can enforce TLS v1.2 or later on the server side.
+> [!NOTE]
+> Data in transit encryption is enabled for all Azure traffic traveling between Azure datacenters. TLS v1.2 or later is enabled on most Azure services by default. And some services such as Azure Storage and Application Gateway can enforce TLS v1.2 or later on the server side.
 
 Azure implementation and additional context:
 
@@ -358,7 +365,8 @@ Enforce HTTPS (such as in AWS Elastic Load Balancer) for workload web applicatio
 
 For remote management of EC2 instances, use SSH (for Linux) or RDP/TLS (for Windows) instead of an unencrypted protocol. For secure file transfer, use AWS Transfer SFTP or FTPS service instead of a regular FTP service.
 
-Note: All network traffic between AWS data centers is transparently encrypted at the physical layer. All traffic within a VPC and between peered VPCs across regions is transparently encrypted at the network layer when using supported Amazon EC2 instance types. TLS v1.2 or later is enabled on most AWS services by default. And some services such as AWS Load Balancer can enforce TLS v1.2 or later on the server side.
+> [!NOTE]
+> All network traffic between AWS data centers is transparently encrypted at the physical layer. All traffic within a VPC and between peered VPCs across regions is transparently encrypted at the network layer when using supported Amazon EC2 instance types. TLS v1.2 or later is enabled on most AWS services by default. And some services such as AWS Load Balancer can enforce TLS v1.2 or later on the server side.
 
 AWS implementation and additional context:
 
@@ -400,7 +408,8 @@ When there is a need to use customer-managed key (CMK) in the workload services 
 
 To maximize the key material lifetime and portability, bring your own key (BYOK) to the services (i.e., importing HSM-protected keys from your on-premises HSMs into Azure Key Vault). Follow the recommended guideline to perform the key generation and key transfer.
 
-Note: Refer to the below for the FIPS 140-2 level for Azure Key Vault types and FIPS compliance/validation level.
+> [!NOTE]
+> Refer to the below for the FIPS 140-2 level for Azure Key Vault types and FIPS compliance/validation level.
 
  -  Software-protected keys in vaults (Premium & Standard SKUs): FIPS 140-2 Level 1
  -  HSM-protected keys in vaults (Premium SKU): FIPS 140-2 Level 2
@@ -423,15 +432,17 @@ When there is a need to use customer-managed customer master key in the workload
 
 To maximize the key material lifetime and portability, bring your own key (BYOK) to the services (i.e., importing HSM-protected keys from your on-premises HSMs into KMS or Cloud HSM). Follow the recommended guideline to perform the key generation and key transfer.
 
-Note: AWS KMS uses shared HSM infrastructure in the backend. Use AWS KMS Custom Key Store backed by AWS CloudHSM when you need to manage your own key store and dedicated HSMs (e.g. regulatory compliance requirement for higher level of key security) to generate and store your encryption keys.
+> [!NOTE]
+> AWS KMS uses shared HSM infrastructure in the backend. Use AWS KMS Custom Key Store backed by AWS CloudHSM when you need to manage your own key store and dedicated HSMs (e.g. regulatory compliance requirement for higher level of key security) to generate and store your encryption keys.
 
-Note: Refer to the below for the FIPS 140-2 level for FIPS compliance level in AWS KMS and CloudHSM:
+Refer to the below for the FIPS 140-2 level for FIPS compliance level in AWS KMS and CloudHSM:
 
  -  AWS KMS default: FIPS 140-2 Level 2 validated
  -  AWS KMS using CloudHSM: FIPS 140-2 Level 3 (for certain services) validated
  -  AWS CloudHSM: FIPS 140-2 Level 3 validated
 
-Note: For secrets management(credentials, password, API keys etc.), use AWS Secrets Manager.
+> [!NOTE]
+> For secrets management(credentials, password, API keys etc.), use AWS Secrets Manager.
 
 AWS implementation and additional context:
 
@@ -475,7 +486,8 @@ Avoid using a self-signed certificate and wildcard certificate in your critical 
  -  DigiCert: Azure Key Vault offers OV TLS/SSL certificates with DigiCert.
  -  GlobalSign: Azure Key Vault offers OV TLS/SSL certificates with GlobalSign.
 
-Note: Use only approved CA and ensure that known bad root/intermediate certificates issued by these CAs are disabled.
+> [!NOTE]
+> Use only approved CA and ensure that known bad root/intermediate certificates issued by these CAs are disabled.
 
 Azure implementation and additional context:
 
@@ -486,7 +498,8 @@ AWS guidance: Use AWS Certificate Manager (ACM) to create and control the certif
 
 Avoid using a self-signed certificate and wildcard certificate in your critical services due to the limited security assurance. Instead, create public-signed certificates (signed by the Amazon Certificate Authority) in ACM and deploy it programmatically in services such as CloudFront, Load Balancers, API Gateway etc. You also can use ACM to establish your private certificate authority (CA) to sign the private certificates.
 
-Note: Use only an approved CA and ensure that known bad CA root/intermediate certificates issued by these CAs are disabled.
+> [!NOTE]
+> Use only an approved CA and ensure that known bad CA root/intermediate certificates issued by these CAs are disabled.
 
 AWS implementation and additional context:
 
@@ -496,7 +509,8 @@ GCP guidance: Use Google Cloud Certificate Manager to create and control the cer
 
 Avoid using a self-signed certificate and wildcard certificate in your critical services due to the limited security assurance. Instead, you can create signed public certificates in Certificate Manager and deploy it programmatically in services such as Load Balancer and Cloud DNS etc. You also can use Certificate Authority Service to establish your private certificate authority (CA) to sign the private certificates.
 
-Note: You can also use Google Cloud Secret Manager to store TLS certificates.
+> [!NOTE]
+> You can also use Google Cloud Secret Manager to store TLS certificates.
 
 GCP implementation and additional context:
 
@@ -642,7 +656,8 @@ Microsoft Defender Antivirus is the default anti-malware solution for Windows se
 
 For both Windows and Linux, you can use Microsoft Defender for Cloud to discover and assess the health status of the anti-malware solution.
 
-Note: You can also use Microsoft Defender for Cloud's Defender for Storage to detect malware uploaded to Azure Storage accounts.
+> [!NOTE]
+> You can also use Microsoft Defender for Cloud's Defender for Storage to detect malware uploaded to Azure Storage accounts.
 
 Azure implementation and additional context:
 
@@ -655,7 +670,8 @@ Deploy Microsoft Defender Antivirus which is the default anti-malware solution f
 
 For both Windows and Linux, you can use Microsoft Defender for Cloud to discover and assess the health status of the anti-malware solution.
 
-Note: Microsoft Defender Cloud also supports certain third-party endpoint protection products for the discovery and health status assessment.
+> [!NOTE]
+> Microsoft Defender Cloud also supports certain third-party endpoint protection products for the discovery and health status assessment.
 
 AWS implementation and additional context:
 
@@ -669,7 +685,8 @@ Deploy Microsoft Defender Antivirus which is the default anti-malware solution f
 
 For both Windows and Linux, you can use Microsoft Defender for Cloud to discover and assess the health status of the anti-malware solution.
 
-Note: Microsoft Defender Cloud also supports certain third-party endpoint protection products for the discovery and health status assessment.
+> [!NOTE]
+> Microsoft Defender Cloud also supports certain third-party endpoint protection products for the discovery and health status assessment.
 
 GCP implementation and additional context:
 
@@ -794,7 +811,8 @@ Security principle: Ensure that application developers securely handle credentia
  -  Use key vault or a secure key store service to store the credentials and secrets
  -  Scan for credentials in source code.
 
-Note: This is often governed and enforced through a secure software development lifecycle (SDLC) and DevOps security process.<br>
+> [!NOTE]
+> This is often governed and enforced through a secure software development lifecycle (SDLC) and DevOps security process.<br>
 
 Azure guidance: When using a managed identity is not an option, ensure that secrets and credentials are stored in secure locations such as Azure Key Vault, instead of embedding them into the code and configuration files.
 
@@ -805,7 +823,8 @@ If you use Azure DevOps and GitHub for your code management platform:
 
 Clients such as Azure Functions, Azure Apps services, and VMs can use managed identities to access Azure Key Vault securely. See Data Protection controls related to the use of Azure Key Vault for secrets management.
 
-Note: Azure Key Vault provides automatic rotation for supported services. For secrets that cannot be automatically rotated, ensure they are manually rotated periodically and purged when no longer in use.
+> [!NOTE]
+> Azure Key Vault provides automatic rotation for supported services. For secrets that cannot be automatically rotated, ensure they are manually rotated periodically and purged when no longer in use.
 
 Azure implementation and additional context:
 
@@ -821,7 +840,8 @@ If you use the Azure DevOps and GitHub for your code management platform:
  -  Implement Azure DevOps Credential Scanner to identify credentials within the code.
  -  For GitHub, use the native secret scanning feature to identify credentials or other forms of secrets within the code.
 
-Note: Secrets Manager provides automatic secrets rotation for supported services. For secrets that cannot be automatically rotated, ensure they are manually rotated periodically and purged when no longer in use.
+> [!NOTE]
+> Secrets Manager provides automatic secrets rotation for supported services. For secrets that cannot be automatically rotated, ensure they are manually rotated periodically and purged when no longer in use.
 
 AWS implementation and additional context:
 
@@ -838,7 +858,8 @@ If you use the Azure DevOps or GitHub for your code management platform:
  -  Implement Azure DevOps Credential Scanner to identify credentials within the code.
  -  For GitHub, use the native secret scanning feature to identify credentials or other forms of secrets within the code.
 
-Note: Set up rotation schedules for secrets stored in Secret Manager as a best practice.
+> [!NOTE]
+> Set up rotation schedules for secrets stored in Secret Manager as a best practice.
 
 GCP implementation and additional context:
 
@@ -875,7 +896,8 @@ Azure guidance: Ensure your security operations team can query and use diverse d
 
 Microsoft Sentinel provides extensive data analytics across virtually any log source and a case management portal to manage the full lifecycle of incidents. Intelligence information during an investigation can be associated with an incident for tracking and reporting purposes.
 
-Note: When incident related data is captured for investigation, ensure there is adequate security in place to protect the data from unauthorized alteration, such as disabling logging or removing logs, which can be performed by the attackers during an in-flight data breach activity.
+> [!NOTE]
+> When incident related data is captured for investigation, ensure there is adequate security in place to protect the data from unauthorized alteration, such as disabling logging or removing logs, which can be performed by the attackers during an in-flight data breach activity.
 
 Azure implementation and additional context:
 
@@ -895,7 +917,8 @@ AWS guidance: The data sources for investigation are the centralized logging sou
 
 If you aggregate your SIEM related data into Microsoft Sentinel, it provides extensive data analytics across virtually any log source and a case management portal to manage the full lifecycle of incidents. Intelligence information during an investigation can be associated with an incident for tracking and reporting purposes.
 
-Note: When incident related data is captured for investigation, ensure there is adequate security in place to protect the data from unauthorized alteration, such as disabling logging or removing logs, which can be performed by the attackers during an in-flight data breach activity.
+> [!NOTE]
+> When incident related data is captured for investigation, ensure there is adequate security in place to protect the data from unauthorized alteration, such as disabling logging or removing logs, which can be performed by the attackers during an in-flight data breach activity.
 
 AWS implementation and additional context:
 
@@ -914,7 +937,8 @@ GCP guidance: The data sources for investigation are the centralized logging sou
 
 If you aggregate your SIEM related data into Microsoft Sentinel, it provides extensive data analytics across virtually any log source and a case management portal to manage the full lifecycle of incidents. Intelligence information during an investigation can be associated with an incident for tracking and reporting purposes.
 
-Note: When incident related data is captured for investigation, ensure there is adequate security in place to protect the data from unauthorized alteration, such as disabling logging or removing logs, which can be performed by the attackers during an in-flight data breach activity.
+> [!NOTE]
+> When incident related data is captured for investigation, ensure there is adequate security in place to protect the data from unauthorized alteration, such as disabling logging or removing logs, which can be performed by the attackers during an in-flight data breach activity.
 
 GCP implementation and additional context:
 
@@ -1130,7 +1154,8 @@ GCP guidance: Most of the network activities logs are available through the VPC 
 
 You can view flow logs in Cloud Logging, and export logs to the destination that Cloud Logging export supports. Flow logs are aggregated by connection from Compute Engine VM’s and exported in real time. By subscribing to Pub/Sub, you can analyze flow logs using real-time streaming APIs.
 
-Note: You can also use Packet Mirroring clones the traffic of specified instances in your Virtual Private Cloud (VPC) network and forwards it for examination. Packet Mirroring captures all traffic and packet data, including payloads and headers.
+> [!NOTE]
+> You can also use Packet Mirroring clones the traffic of specified instances in your Virtual Private Cloud (VPC) network and forwards it for examination. Packet Mirroring captures all traffic and packet data, including payloads and headers.
 
 GCP implementation and additional context:
 
@@ -1176,7 +1201,8 @@ GCP guidance: Ensure that you are integrating your GCP logs into a centralized r
 
 Use Cloud native SIEM if you don’t have an existing SIEM solution for CSP’s, or aggregate logs/alerts into your existing SIEM.
 
-Note: Google provide two log query frontend, Logs Explorer and Log Analytics for query, view, and analyze logs. For troubleshooting and exploring of log data, it is recommended to use Logs Explorer. To generate insights and trends, it is recommended to use Log Analytics.
+> [!NOTE]
+> Google provide two log query frontend, Logs Explorer and Log Analytics for query, view, and analyze logs. For troubleshooting and exploring of log data, it is recommended to use Logs Explorer. To generate insights and trends, it is recommended to use Log Analytics.
 
 GCP implementation and additional context:
 
@@ -1206,7 +1232,8 @@ You have the log retention option as below:
  -  Use Azure Storage, Data Explorer or Data Lake for long-term and archival storage for greater than 1 year and to meet your security compliance requirements.
  -  Use Azure Event Hubs to forward logs to an external resource outside of Azure.
 
-Note: Microsoft Sentinel uses Log Analytics workspace as its backend for log storage. You should consider a long-term storage strategy if you plan to retain SIEM logs for longer time.
+> [!NOTE]
+> Microsoft Sentinel uses Log Analytics workspace as its backend for log storage. You should consider a long-term storage strategy if you plan to retain SIEM logs for longer time.
 
 Azure implementation and additional context:
 
@@ -1254,7 +1281,8 @@ Security principle: Continuously monitor and alert when there is a deviation fro
 
 Azure guidance: Use Microsoft Defender for Cloud and Azure Automanage Machine Configuration (formerly called Azure Policy Guest Configuration) to regularly assess and remediate configuration deviations on your Azure compute resources, including VMs, containers, and others. In addition, you can use Azure Resource Manager templates, custom operating system images, or Azure Automation State Configuration to maintain the security configuration of the operating system. Microsoft VM templates in conjunction with Azure Automation State Configuration can assist in meeting and maintaining security requirements. Use Change Tracking and Inventory in Azure Automation to track changes in virtual machines hosted in Azure, on-premises, and other cloud environments to help you pinpoint operational and environmental issues with software managed by the Distribution Package Manager. Install the Guest Attestation agent on virtual machines to monitor for boot integrity on confidential virtual machines.
 
-Note: Azure Marketplace VM images published by Microsoft are managed and maintained by Microsoft.
+> [!NOTE]
+> Azure Marketplace VM images published by Microsoft are managed and maintained by Microsoft.
 
 Azure implementation and additional context:
 
@@ -1275,7 +1303,8 @@ You can also centrally monitor and manage the operating system configuration dri
 
 For workload applications running within your EC2 instances, AWS Lambda or containers environment, you may use AWS System Manager AppConfig to audit and enforce the desired configuration baseline.
 
-Note: AMIs published by Amazon Web Services in AWS Marketplace are managed and maintained by Amazon Web Services.
+> [!NOTE]
+> AMIs published by Amazon Web Services in AWS Marketplace are managed and maintained by Amazon Web Services.
 
 AWS implementation and additional context:
 
@@ -1318,9 +1347,11 @@ Export scan results at consistent intervals and compare the results with previou
 
 When conducting remote scans, do not use a single, perpetual, administrative account. Consider implementing JIT (Just In Time) provisioning methodology for the scan account. Credentials for the scan account should be protected, monitored, and used only for vulnerability scanning.
 
-Note: Microsoft Defender services (including Defender for servers, containers, App Service, Database, and DNS) embed certain vulnerability assessment capabilities. The alerts generated from Azure Defender services should be monitored and reviewed together with the result from Microsoft Defender for Cloud vulnerability scanning tool.
+> [!NOTE]
+> Microsoft Defender services (including Defender for servers, containers, App Service, Database, and DNS) embed certain vulnerability assessment capabilities. The alerts generated from Azure Defender services should be monitored and reviewed together with the result from Microsoft Defender for Cloud vulnerability scanning tool.
 
-Note: Ensure you setup email notifications in Microsoft Defender for Cloud.
+> [!NOTE]
+> Ensure you setup email notifications in Microsoft Defender for Cloud.
 
 Azure implementation and additional context:
 
