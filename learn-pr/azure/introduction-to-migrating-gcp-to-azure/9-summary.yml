@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-gcp-azure.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Review what you've learned about migrating services from Google Cloud to Azure."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]
