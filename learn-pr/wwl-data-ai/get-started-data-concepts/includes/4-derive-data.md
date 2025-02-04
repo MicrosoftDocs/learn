@@ -8,4 +8,4 @@ Values with a column can also be altered to make the data consistent and easier 
 
 In this video, you'll see how a new column is added to a dataset using the current data. Then you'll learn how to add summary data by aggregating the values in the new column:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TYJ9]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c35e9faa-3dd5-4b35-916f-af95420b82a7]

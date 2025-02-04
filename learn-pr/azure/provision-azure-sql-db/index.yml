@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Provision an Azure SQL database to store application data
   description: Find out what makes Azure SQL Database a good choice for your relational database, how to create the database from the portal and connect with Azure Cloud Shell.
-  ms.date: 10/17/2023
+  ms.date: 01/17/2025
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth

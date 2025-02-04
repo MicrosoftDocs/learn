@@ -20,7 +20,7 @@ The benefits of using Azure CDN to deliver web site assets include:
 
 5.  Other users can then request the same file by using the same URL that Alice used, and can also be directed to the same POP.
 
-6.  If the TTL for the file hasn't expired, the POP edge server returns the file directly from the cache. This process results in a faster, more responsive user experience.
+6.  If the TTL for the file is valid, the POP edge server returns the file directly from the cache. This process results in a faster, more responsive user experience.
 
 ## Requirements
 

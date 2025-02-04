@@ -91,7 +91,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 By setting the default resource group to the one created when you activated the sandbox, you can omit that parameter from the Azure CLI commands in this exercise. To set the resource group, run the following command.
 
 ```azurecli
-az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
+az configure --defaults group="<rgn>[sandbox resource group name]</rgn>"
 ```
 
 ### Deploy the template to Azure

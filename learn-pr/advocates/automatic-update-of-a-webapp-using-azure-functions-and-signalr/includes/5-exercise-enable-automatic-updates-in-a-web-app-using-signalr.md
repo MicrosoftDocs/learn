@@ -12,7 +12,7 @@ You need to create an Azure SignalR resource.
 1. Navigate to the `setup-resources` subdirectory to create the resource.
 
     ```bash
-    cd stock-prototype/setup-resources && bash create-signalr-resources.sh & cd ..
+    cd setup-resources && bash create-signalr-resources.sh & cd ..
     ```
 
 1. Copy the connection string for the SignalR resource. You'll need this to update the server code.
@@ -85,10 +85,10 @@ The web client uses the SignalR client SDK to establish a connection to the serv
     ```bash
     git add .
     git commit -m "Add SignalR functions"
-    git push
+    git push origin main
     ```
 
-## Create the `signalr-send-message` function
+## Create the Azure Functions app
 
 Create a function app and related resources in Azure to which you can publish the new functions code.
 
@@ -97,6 +97,7 @@ Create a function app and related resources in Azure to which you can publish th
 
     | Name                                   | Value                          |
     | -------------------------------------- | ------------------------------ |
+    | Hosting                                | Select **Consumption Plan**.|
     | Resource group                         | Create a new resource group names `stock-prototype`.|
     | Function App name                      | Postpend your name to `api`. For example, `api-jamie`.|
     | Code or container                          | Select **code**.                       |
@@ -104,7 +105,7 @@ Create a function app and related resources in Azure to which you can publish th
     | Version            |  Select an LTS version of Node.js.                    |
     | Region  | Select a region close to you.                           |
     | Operating System | Select **Linux**.|
-    | Hosting | Select **Consumption Plan**.|
+
 
 1. Don't fill out any other tabs and select **Review + create** then select **Create**. Wait for the deployment to complete before continuing.
 1. Select **Go to resource** to open the new function app.
@@ -122,24 +123,12 @@ Connect your new function app to the GitHub repository to enable continuous depl
     | Organization    | Select your GitHub account.                       |
     | Repository                        | Search for and select `mslearn-advocates.azure-functions-and-signalr`.                       |
     | Branch            | Select the **main** branch.                    |
-    | Workflow Option| Select **Add a workflow ...**.|
     | Authentication type | Select **User-assigned-identity**.|
     | Subscription | Select the same subscription as seen at the top of the page. |
     | Identity | Select **Create new**.|
 
 1. Select **Save** at the top of the section to save the settings. This creates a new workflow file in your forked repository.
 1. This deployment configuration creates a GitHub Actions workflow file in the repository. You need to update the workflow file to use the correct package path for the function app.
-
-<!--- Remove this content section after the OIDC subject bug gets fixed by the Functions folks -->
-At this point, your GitHub deployment might generate an error because of a wrong configuration in the user-assigned managed identity created in your resource group in Azure. 
-
-## Update the managed identity
-
-1. In your new function app page in the Azure portal, select your resource group in **Overview** > **Essentials**, then select the managed identity under **Resources**. This managed identity was created by Functions when you enabled the GitHub deployment.  
-1. In the **Managed Identity** page, select **Settings** > **Federated credentials** and then select the existing credential.
-1. In **Connect your Github account**, change the setting for **Entity** to **Environment** and enter `Production` for **Environment**.  
-1. Select **Update** to update the credential.
-<!--- end removal section -->
 
 ## Edit GitHub deployment workflow
 
@@ -175,14 +164,14 @@ At this point, your GitHub deployment might generate an error because of a wrong
     ```bash
     git add .
     git commit -m "Update deployment workflow to use package path"
-    git push
+    git push origin main
     ```
 
     This change will trigger the workflow to run. You can watch the workflow from the **Actions** section of the fork on GitHub.
 
 ## Configure the environment variables for the API functions
 
-1. In the Azure portal, locate your function app and select **Settings** > **Configuration** then select **New application setting**.
+1. In the Azure portal, locate your function app and select **Settings** > **Environment variables** then select **+ Add**.
 1. Enter the settings for the Cosmos DB and SignalR connection strings. You can find the values in the `local.settings.json` in the `start/server` folder. 
 
     | Name | Value |
@@ -194,9 +183,8 @@ At this point, your GitHub deployment might generate an error because of a wrong
 
 ## Test the deployment of the API Functions
 
-1. In the Azure portal, select **Overview** and select **URL** to open the app in a browser. 
-1. Copy the URL, you'll need that when you update the client `.env` file for the `BACKEND_URL` value when you work in Unit 7. 
-1. Open the URL in a browser to test the API functions.
+1. In the Azure portal, select **Overview** and select **Default domain** to open the app in a browser to test the API functions.
 1. Append `/api/getStocks` to the URL in the browser and press **Enter**. You should see a JSON array with stock data.
+1. Copy the URL, you'll need that when you update the client `.env` file for the `BACKEND_URL` value when you work in Unit 7. 
 
 You've updated the server code to return stocks with SignalR and you've deployed to a function app. Next, you'll update the client to use SignalR to receive updates.

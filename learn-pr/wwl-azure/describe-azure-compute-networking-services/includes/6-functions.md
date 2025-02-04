@@ -2,7 +2,7 @@ Azure Functions is an event-driven, serverless compute option that doesn’t req
 
 ## Serverless computing in Azure
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yzjL]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=bd90a678-3c03-4e0f-9470-f6f0626373e0]
 
 ## Benefits of Azure Functions
 

@@ -1,6 +1,6 @@
 Taking a practice exam increases your chances of passing your certification exam by preparing you for the real exam and building your knowledge of exam objectives. Practice mode and certification mode prepare you for the real exam and helps ensure you understand the learning objectives. Through the Microsoft Learn for Educators (MSLE) program, you can receive free or discounted practice exams, the discount varies by program option. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQbI]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e395f4f6-1715-4ecc-b7a9-344ec36d423d]
 
 To request a practice exam: 
 

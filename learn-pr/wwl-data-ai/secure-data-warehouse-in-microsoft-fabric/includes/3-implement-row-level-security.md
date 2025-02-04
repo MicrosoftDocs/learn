@@ -35,7 +35,7 @@ The T-SQL commands below demonstrate how to use RLS in a scenario where user acc
 -- Create supporting objects for this example
 CREATE TABLE [Sales] (SalesID INT, 
     ProductID INT, 
-    TenantName NVARCHAR(10), 
+    TenantName NVARCHAR(50), 
     OrderQty INT, 
     UnitPrice MONEY)
 GO

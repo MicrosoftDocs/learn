@@ -7,8 +7,8 @@ metadata:
   title: Manage authentication in Static Web Apps
   description: Learn how to manage authentication in Static Web Apps
   ms.date: 12/20/2022
-  author: sinedied
-  ms.author: yolasors
+  author: craigshoemaker
+  ms.author: cshoe
   ms.topic: unit
   ms.custom:
   - team=nextgen

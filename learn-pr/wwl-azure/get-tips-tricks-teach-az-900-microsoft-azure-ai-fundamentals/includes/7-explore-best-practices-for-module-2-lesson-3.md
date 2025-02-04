@@ -2,7 +2,7 @@
 
 As you are preparing to teach this lesson, get familiar with what the students will learn during the lesson. In this lesson, students will learn about Azure’s storage, storage redundancy, various storage services, and the different access tiers within a storage account.
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dXUi]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=bd00c3d5-9d95-48c7-be80-1db6ef88bddc]
 
 Module 2, Lesson 3 Tips and Tricks
 

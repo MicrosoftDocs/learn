@@ -7,8 +7,8 @@ metadata:
   description: "This module implements CICD pipeline for edge devices."
   manager: lizross
   ms.date: 07/20/2024
-  author: PatAltimore
-  ms.author: patricka
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: module
   ms.service: azure-iot-edge
   ms.collection: ce-skilling-ai-copilot   # Part of AI related learning path

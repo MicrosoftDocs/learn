@@ -1,6 +1,6 @@
 Here, you'll learn the basics of Azure Web Application Firewall. This overview will help you evaluate whether Azure Web Application Firewall is a useful tool to add to Contoso's overall network-security strategy.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCwkM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b23e4db1-5007-4f42-ae55-3a564a4ab7d3]
 
 ## Overview of Azure Web Application Firewall
 

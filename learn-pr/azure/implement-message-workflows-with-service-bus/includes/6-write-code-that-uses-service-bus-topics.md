@@ -1,14 +1,14 @@
 In a distributed application, some messages need to be sent to a single recipient component. Other messages need to reach more than one destination.
 
-Consider what happens when a user cancels a bicycle order. Canceling an order is a little different from placing an initial order. When an order is placed, the workflow waited until the order cleared payment processing before sending the order to the local storefront. For the cancel operation, you'll notify the storefront *and* the payment processor at the same time. This approach minimizes the chances of wasting delivery driver time.
+Consider what happens when a user cancels a bicycle order. Canceling an order is a little different from placing an initial order. When an order is placed, the workflow waited until the order cleared payment processing before sending the order to the local storefront. For the Cancel operation, you notify the storefront *and* the payment processor at the same time. This approach minimizes the chances of wasting delivery driver time.
 
-To allow multiple components to receive the same message, you'll use an Azure Service Bus *topic*. Next, you'll look at the process and considerations in writing the code.
+To allow multiple components to receive the same message, you use an Azure Service Bus *topic*. Next, you look at the process and considerations in writing the code.
 
 ## Code with topics vs. code with queues
 
-If you want every message sent to be delivered to all subscribing components, use topics. Writing code that uses topics is a way to replace queues. You'll use the same **Azure.Messaging.ServiceBus** NuGet package, configure connection strings, and use asynchronous programming patterns.
+If you want every message sent to be delivered to all subscribing components, use topics. Writing code that uses topics is a way to replace queues. You use the same **Azure.Messaging.ServiceBus** NuGet package, configure connection strings, and use asynchronous programming patterns.
 
-You'll also use the same `ServiceBusClient` class and `ServiceBusSender` classes to send messages and the `ServiceBusProcessor` class to receive messages.
+You also use the same `ServiceBusClient` class and `ServiceBusSender` classes to send messages and the `ServiceBusProcessor` class to receive messages.
 
 ## Set filters on subscriptions
 
@@ -24,7 +24,7 @@ For your `StoreId` filter, you *could* use a SQL filter. SQL filters are the mos
 
 ## To send a message to a topic
 
-To send a message to a topic, you'll complete the following steps.
+To send a message to a topic, you complete the following steps.
 
 In any sending or receiving component, add the following `using` statements to any code file that calls a Service Bus topic.
 

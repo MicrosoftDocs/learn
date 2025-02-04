@@ -1,4 +1,4 @@
-In this unit, you learn how to use the `IHttpClientFactory` to handle the HTTP client creation and disposal, and to use that client to perform REST operations in an ASP.NET Razor Pages app. The code samples used throughout this unit are based on interacting with an API that enables managing a list of fruit stored in a database. 
+In this unit, you learn how to use the `IHttpClientFactory` to handle the HTTP client creation and disposal, and to use that client to perform REST operations in an ASP.NET Blazor Web app. The code samples used throughout this unit are based on interacting with an API that enables managing a list of fruit stored in a database. The information in this unit is based on using code-behind files in a Razor app.
 
 The following code represents the data model that is referenced in the code examples:
 
@@ -16,21 +16,19 @@ public class FruitModel
 
 ## Register `IHttpClientFactory` in your app
 
-To add `IHttpClientFactory` to your app, register the `AddHttpClient` in the *Program.cs* file. The following code example uses the named client type and sets the base address of the API used in REST operations, and is referenced throughout the rest of this unit.
+To add `IHttpClientFactory` to your app, register `AddHttpClient` in the *Program.cs* file. The following code example uses the named client type and sets the base address of the API used in REST operations, and is referenced throughout the rest of this unit.
 
 ```csharp
-var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddRazorComponents()
+    .AddInteractiveServerComponents();
 
-// Add IHttpClientFactory to the container and sets the name of the factory
-// to "FruitAPI", and the also sets the base address used in calls
+// Add IHttpClientFactory to the container and set the name of the factory
+// to "FruitAPI". The base address for API requests is also set.
 builder.Services.AddHttpClient("FruitAPI", httpClient =>
 {
-    httpClient.BaseAddress = new Uri("https://www.example.com");
+    httpClient.BaseAddress = new Uri("http://localhost:5050/");
 });
-
 
 var app = builder.Build();
 ```
@@ -40,76 +38,54 @@ var app = builder.Build();
 Before performing operations with an API, you need to identify what the API is expecting:
 
 * **API endpoint:** Identify the endpoint for the operation so you can properly adjust the URI stored in the base address if needed.
-* **Data requirements:** Identify if the operation is returning/expecting an array or just a single piece of data.
-
-For example, a `GET` operation could return an array if the endpoint returns all of the data, or any number greater than one, stored in the database. A `GET` operation could also return a single piece of data.
+* **Data requirements:** Identify if the operation is returning/expecting an enumerable or just a single piece of data.
 
 > [!NOTE]
 > The code samples throughout the rest of this unit assume each HTTP operation is handled on a separate page in the solution.
 
-## Handler methods in Razor Pages
-
-In Razor Pages, handler methods are methods that handle HTTP requests and events. They're defined in the code-behind file for a Razor Page and are used to perform actions in response to user input or other events. Handler methods follow the naming convention of the word "On" added to the beginning of the HTTP request verb. The following table lists some of the most commonly used handler methods in Razor Pages:
-
-| Handler method | Description |
-|--|--|
-| `OnGet()` | This method is called when the page is requested using the HTTP GET method. |
-| `OnPost()` | This method is called when the page is submitted using the HTTP POST method. |
-| `OnGetAsync()` | This method is called asynchronously when the page is requested using the HTTP GET method. |
-| `OnPostAsync()` | This method is called asynchronously when the page is submitted using the HTTP POST method. |
-| `OnGetHandler()` | This method is called when a specific handler is requested using the HTTP GET method. |
-| `OnPostHandler()` | This method is called when a specific handler is requested using the HTTP POST method. |
-
-There are also other handler methods that can be used for handling HTTP requests and events, and you can define your own custom handler methods as well.
-
-> [!NOTE]
-> You can only have one page handler method for a specific HTTP operation. For example, an exception will be thrown if you have both `OnGet()` and `OnGetAsync()` in the same code-behind file.
-
 ## Perform a `GET` operation
 
-A `GET` operation shouldn't send a body and is used (as the method name indicates) to retrieve data from a resource. To perform an HTTP `GET` operation, given an `HttpClient` and a URI, use the `HttpClient.GetAsync` method. For example, if you wanted to create a table on a Razor Page app's home page (*Index.cshtml*) to display the results of a `GET` operation you need to add the following to the code-behind (*Index.cshtml.cs*):
+A `GET` operation shouldn't send a body and is used (as the method name indicates) to retrieve data from a resource. To perform an HTTP `GET` operation, given an `HttpClient` and a URI, use the `HttpClient.GetAsync` method. For example, if you wanted to create a table on a Razor Page app's home page (*Home.razor*) to display the results of a `GET` operation you need to add the following to the code-behind (*Home.razor.cs*):
 
 * Use dependency injection to add the `IHttpClientFactory` to the page model.
-* Use the `[BindProperty]` attribute to bind the pages form data to the data model properties. 
 * Create an instance of the `HttpClient` 
 * Perform the `GET`operation and deserialize the results into your data model.
 
 The following code example shows how to perform a `GET` operation. Be sure to read the comments in the code.
 
 ```csharp
-namespace FruitWebApp.Pages
+public partial class Home : ComponentBase
 {
-        public class IndexModel : PageModel
+    // IHttpClientFactory set using dependency injection 
+    [Inject]
+    public required IHttpClientFactory HttpClientFactory { get; set; }
+
+    [Inject]
+    private NavigationManager? NavigationManager { get; set; }
+
+    /* Add the data model, an array is expected as a response */
+    private IEnumerable<FruitModel>? _fruitList;
+
+    // Begin GET operation when the component is initialized
+    protected override async Task OnInitializedAsync()
     {
-        // IHttpClientFactory set using dependency injection 
-        private readonly IHttpClientFactory _httpClientFactory;
+        // Create the HTTP client using the FruitAPI named factory
+        var httpClient = HttpClientFactory.CreateClient("FruitAPI");
 
-        public IndexModel(IHttpClientFactory httpClientFactory)
+        // Perform the GET request and store the response. The parameter
+        // in GetAsync specifies the endpoint in the API 
+        using HttpResponseMessage response = await httpClient.GetAsync("/fruits");
+
+        // If the request is successful deserialize the results into the data model
+        if (response.IsSuccessStatusCode)
         {
-            _httpClientFactory = httpClientFactory;
+            using var contentStream = await response.Content.ReadAsStreamAsync();
+            _fruitList = await JsonSerializer.DeserializeAsync<IEnumerable<FruitModel>>(contentStream);
         }
-
-        // Adds the data model and binds the form data to the model properties
-        // Enumerable since an array is expected as a response
-        [BindProperty]
-        public IEnumerable<FruitModel> FruitModels { get; set; }
-
-        // OnGet() is async since HTTP operations should be performed async
-        public async Task OnGet()
+        else
         {
-            // Create the HTTP client using the FruitAPI named factory
-            var httpClient = _httpClientFactory.CreateClient("FruitAPI");
-
-            // Execute the GET operation and store the response, the empty parameter
-            // in GetAsync doesn't modify the base address set in the client factory 
-            using HttpResponseMessage response = await httpClient.GetAsync("");
-
-            // If the operation is successful deserialize the results into the data model
-            if (response.IsSuccessStatusCode)
-            {
-                using var contentStream = await response.Content.ReadAsStreamAsync();
-                FruitModels = await JsonSerializer.DeserializeAsync<IEnumerable<FruitModel>>(contentStream);
-            }
+            // If the request is unsuccessful, log the error message
+            Console.WriteLine($"Failed to load fruit list. Status code: {response.StatusCode}");
         }
     }
 }
@@ -117,61 +93,62 @@ namespace FruitWebApp.Pages
 
 ## Perform a `POST` operation
 
-A `POST` operation should send a body and is used to add data to a resource. To perform an HTTP `POST` operation, given an `HttpClient` and a URI, use the `HttpClient.PostAsync` method. Following our project model of a separate page for eachIf you want to add items to the data on your home page you need to:
-
-For example, if you wanted to create a table on a Razor Page app's home page (*Index.cshtml*) to display the results of a `GET` operation you need to add the following to the code-behind (*Index.cshtml.cs*):
+A `POST` operation should send a body and is used to add data to a resource. To perform an HTTP `POST` operation, given an `HttpClient` and a URI, use the `HttpClient.PostAsync` method. If you want to use a form to add items to the data on your home page you need to:
 
 * Use dependency injection to add the `IHttpClientFactory` to the page model.
-* Use the `[BindProperty]` attribute to bind the pages form data to the data model properties. 
+* Bind the data to the form using either the `EditForm` or `EditContext` model. 
 * Serialize the data you want to add using the `JsonSerializer.Serialize` method.
 * Create an instance of the `HttpClient` 
 * Perform the `POST`operation.
 
 > [!NOTE]
-> Following our project model of a separate page for each REST operation the `POST` operation is performed in an *Add.cshtml* page with the code example in the *Add.cshtml.cs* code-behind file.
+> Following our project model of a separate page for each REST operation the `POST` operation is performed in an *Add.razor* page with the code example in the *Add.razor.cs* code-behind file.
 
 The following code example shows how to perform a `POST` operation. Be sure to read the comments in the code.
 
 ```csharp
-namespace FruitWebApp.Pages
+namespace FruitWebApp.Components.Pages;
+
+public partial class Add : ComponentBase
 {
-	public class AddModel : PageModel
+    // IHttpClientFactory set using dependency injection 
+    [Inject]
+    public required IHttpClientFactory HttpClientFactory { get; set; }
+
+    // NavigationManager set using dependency injection
+    [Inject]
+    private NavigationManager? NavigationManager { get; set; }
+
+    // Add the data model and bind the form data to it
+    [SupplyParameterFromForm]
+    private FruitModel? _fruitList { get; set; }
+
+    protected override void OnInitialized() => _fruitList ??= new();
+
+    // Begin POST operation code
+    private async Task Submit()
     {
-        // IHttpClientFactory set using dependency injection 
-        private readonly IHttpClientFactory _httpClientFactory;
+        // Serialize the information to be added to the database
+        var jsonContent = new StringContent(JsonSerializer.Serialize(_fruitList),
+            Encoding.UTF8,
+            "application/json");
 
-        public AddModel(IHttpClientFactory httpClientFactory) => _httpClientFactory = httpClientFactory;
+        // Create the HTTP client using the FruitAPI named factory
+        var httpClient = HttpClientFactory.CreateClient("FruitAPI");
 
-        // Add the data model and bind the form data to the page model properties
-        [BindProperty]
-        public FruitModel FruitModels { get; set; }
+        // Execute the POST request and store the response. The response will contain the new record's ID
+        using HttpResponseMessage response = await httpClient.PostAsync("/fruits", jsonContent);
 
-		// OnPost() is async since HTTP operations should be performed async
-        public async Task<IActionResult> OnPost()
-		{
-            // Serialize the information to be added to the database
-            var jsonContent = new StringContent(JsonSerializer.Serialize(FruitModels),
-                Encoding.UTF8,
-                "application/json");
-
-			// Create the HTTP client using the FruitAPI named factory
-            var httpClient = _httpClientFactory.CreateClient("FruitAPI");
-
-            // Execute the POST operation and store the response. The parameters in 
-            // PostAsync direct the POST to use the base address and passes the 
-            // serialized data to the API
-            using HttpResponseMessage response = await httpClient.PostAsync("",jsonContent);
-
-			// If the POST was successful return to the home (Index) page 
-            if (response.IsSuccessStatusCode)
-            {
-                return RedirectToPage("Index");
-            }
-            return Page();
-
-		}
-
-	}
+        // Check if the operation was successful, and navigate to the home page if it was
+        if (response.IsSuccessStatusCode)
+        {
+            NavigationManager?.NavigateTo("/");
+        }
+        else
+        {
+            Console.WriteLine("Failed to add fruit. Status code: {response.StatusCode}");
+        }
+    }
 }
 ```
 

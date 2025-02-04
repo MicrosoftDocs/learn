@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Replicate a container image to different Azure regions
   description: Replicate a container image to different Azure regions
-  ms.date: 11/09/2023
+  ms.date: 01/07/2025
   author: tejaswikolli
   ms.author: tejaswikolli
   ms.topic: unit

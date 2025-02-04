@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – Develop Azure Functions  
 - Lesson 3 – Implement Durable Functions 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5asjY]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=68c2fa6a-3ab6-4171-91db-17dcfd18220d]
 
 Module 2 Tips and Tricks 
 

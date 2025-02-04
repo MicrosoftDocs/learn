@@ -18,4 +18,4 @@ You can use the **Azure AI Custom Vision** service to train an object detection 
     - An **Azure AI services multi-service** resource.
     - An **Azure AI Custom Vision (Prediction)** resource.
 
-You can use a **Azure AI services multi-service** resource for both training and prediction, and you can mix-and-match resource types (for example, using an **Azure AI Custom Vision (Training)** resource to train a model that you then publish using an **Azure AI services multi-service** resource). If using a multi-service resource, they key and endpoint for both training and prediction will be the same.
+You can use a **Azure AI services multi-service** resource for both training and prediction, and you can mix-and-match resource types (for example, using an **Azure AI Custom Vision (Training)** resource to train a model that you then publish using an **Azure AI services multi-service** resource). If using a multi-service resource, the key and endpoint for both training and prediction will be the same.

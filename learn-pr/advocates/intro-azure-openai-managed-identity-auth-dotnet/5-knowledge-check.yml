@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-managed-identity-azure-openai-dotnet.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Display your knowledge
+  ms.date: 01/09/2025
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 4
+content: Choose the best response for each question. 
+quiz:
+  questions:
+    - content: "Which role in Azure OpenAI allows you to create custom fine-tuned models and manage model deployments?"
+      choices:
+        - content: "Cognitive Services OpenAI User"
+          isCorrect: false
+          explanation: "The OpenAI User role has limited permissions and can't create or manage models."
+        - content: "Cognitive Services Usages Reader"
+          isCorrect: false
+          explanation: "The Usages Reader role is focused on monitoring usage and doesn't have permissions for model management."
+        - content: "Cognitive Services OpenAI Contributor"
+          isCorrect: true
+          explanation: "This role includes permissions to create custom fine-tuned models, upload datasets, and manage model deployments."
+    - content: "How does DefaultAzureCredential obtain a token?"
+      choices:
+        - content: "A chain of providers to get a valid token from multiple token providers."
+          isCorrect: true
+          explanation: "DefaultAzureCredential will use multiple providers in sequence to resolve a valid token."
+        - content: "DefaultAzureCredential uses the logged in Windows user."
+          isCorrect: false
+          explanation: "Windows user identity isn't available as the implementation is cross platform."
+        - content: "The browser is launched to authenticate."
+          isCorrect: false
+          explanation: "An interactive browser flow is an option, but it's disabled by default."
+    - content: "What is the primary benefit of using managed identities over API keys in Azure OpenAI?"
+      choices:
+        - content: "Enhanced Security"
+          isCorrect: true
+          explanation: "Managed identities eliminate the need to store credentials within application code, reducing the risk of credential leaks. They leverage Azure Active Directory for authentication, providing a more secure and automated method for accessing Azure services."
+        - content: "Increased Performance"
+          isCorrect: false
+          explanation: "While managed identities improve security, they don't inherently increase application performance."
+        - content: "Cost Reduction"
+          isCorrect: false
+          explanation: "Managed identities don't directly impact the cost of Azure services; their primary benefit is enhanced security."

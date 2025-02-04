@@ -12,9 +12,6 @@ The option to store rejected rows separately is useful for data cleaning and qua
 
 To connect to an Azure storage account, you need to use either Shared Access Signature (SAS) or Storage Account Key (SAK).
 
-> [!Note]
-> The COPY statement currently supports the PARQUET and CSV file formats.
-
 ### Handle error
 
 The option to use a different storage account for the *ERRORFILE* location (`REJECTED_ROW_LOCATION`) allows for better error handling and debugging. It makes it easier to isolate and investigate any issues that occur during the data loading process. *ERRORFILE* only applies to CSV.
@@ -66,7 +63,7 @@ The following query creates a new table in the `analysis_warehouse` that combine
 ```sql
 CREATE TABLE [analysis_warehouse].[dbo].[combined_data]
 AS
-SELECT 
+SELECT *
 FROM [sales_warehouse].[dbo].[sales_data] sales
 INNER JOIN [social_lakehouse].[dbo].[social_data] social
 ON sales.[product_id] = social.[product_id];

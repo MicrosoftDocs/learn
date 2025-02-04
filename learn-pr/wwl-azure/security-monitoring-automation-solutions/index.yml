@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure and manage security monitoring and automation solutions
   description: "Learn to set up Azure Monitor and Microsoft Sentinel for automatic security monitoring and response in cloud settings."
-  ms.date: 04/26/2024
+  ms.date: 02/03/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -39,11 +39,14 @@ subjects:
 - threat-protection
 units:
 - learn.wwl.security-monitoring-automation-solutions.introduction
-- learn.wwl.security-monitoring-automation-solutions.azure-monitor-activity-log
+- learn.wwl.security-monitoring-automation-solutions.security-alerts-incidents
+- learn.wwl.security-monitoring-automation-solutions.automate-responses-microsoft-defender-cloud-triggers
+- learn.wwl.security-monitoring-automation-solutions.log-retention-plans-in-microsoft-sentinel
+- learn.wwl.security-monitoring-automation-solutions.alerts-incidents-microsoft-sentinel
 - learn.wwl.security-monitoring-automation-solutions.microsoft-sentinel-data-connectors
-- learn.wwl.security-monitoring-automation-solutions.create-custom-analytics-rules-detect-threats
-- learn.wwl.security-monitoring-automation-solutions.evaluate-alerts-and-incidents
+- learn.wwl.security-monitoring-automation-solutions.enable-analytics-rules-microsoft-sentinel
 - learn.wwl.security-monitoring-automation-solutions.respond-threats-by-using-playbooks-with-automation-rules-microsoft-sentinel
+- learn.wwl.security-monitoring-automation-solutions.automating-threat-response-with-microsoft-sentinel
 - learn.wwl.security-monitoring-automation-solutions.knowledge-check
 - learn.wwl.security-monitoring-automation-solutions.summary
 badge:

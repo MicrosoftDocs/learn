@@ -1,9 +1,8 @@
-
 Contoso can use Azure Resource Manager to help deploy their VMs. Azure Resource Manager supports a declarative deployment methodology based on deployment templates. The resulting deployment populates the target resource group or the subscription according to the template's content.
 
 ## Benefits of templates
 
-Compared to traditional deployment methods that rely on the graphical user interface (GUI) or scripting and programming languages, templates offer some unique benefits. Similar to scripts, they facilitate deployment of multi-component solutions in an automated manner. However, unlike scripts, they don't explicitly specify individual steps required to provision these solutions. Instead, they simply define their intended end state. By doing this, they rely on the intelligence built into the Azure platform to deploy all necessary resources in the most optimal way. This results in minimized deployment time and reduces the potential for errors. If needed, you have the option to define dependencies between resources to control the resource-provisioning sequence.
+Compared to traditional deployment methods that rely on the graphical user interface (GUI) or scripting and programming languages, templates offer some unique benefits. Similar to scripts, they facilitate deployment of multi-component solutions in an automated manner. However, unlike scripts, they don't explicitly specify individual steps required to provision these solutions. Instead, they define their intended end state. By doing this, they rely on the intelligence built into the Azure platform to deploy all necessary resources in the most optimal way. This results in minimized deployment time and reduces the potential for errors. If needed, you have the option to define dependencies between resources to control the resource-provisioning sequence.
 
 Deployment templates are ideal if you need to provision multiple solutions with the same general design. For example, you can deploy the same template to separate resource groups representing development, test, quality assurance, and production environments. To account for any potential differences between them, you can replace specific values in the template with parameters, and then assign values to these parameters at the deployment time.
 
@@ -13,11 +12,11 @@ Templates are *idempotent*, which means that you can deploy them multiple times 
 
 An Azure Resource Manager template contains a JSON-formatted definition of one or more Azure resources, along with parameters and variables that facilitate customizing their configuration. When creating and working with resource templates, you should consider:
 
-- Which resources you are going to deploy.
-- Where your resources will be located.
-- Which version of the resource provider application programming interface (API) you will use.
+- Which resources you're going to deploy.
+- Where to locate resources.
+- Which version of the resource provider application programming interface (API) to use.
 - Whether there are dependencies between resources.
-- When you will specify values of resource properties. While you can include these values in the template, it's generally preferable to specify them during deployment by using their corresponding parameters.
+- When you specify values of resource properties. While you can include these values in the template, it's preferable to specify them during deployment by using their corresponding parameters.
 
 ## Author Azure Resource Manager templates
 
@@ -53,10 +52,10 @@ After you have an Azure Resource Manager template, you can deploy its resources 
 
 |Method|Description|
 |---------------------------------------------|------------------------------------------------------------|
-|Azure PowerShell|You can initiate deployment by running the **New-AzResourceGroupDeployment** cmdlet. To reference the template file, you use the *-TemplateFile* or *-TemplateUri* parameter, depending on whether the template is stored locally on your computer or resides in a publicly accessible location. This cmdlet will deploy the resources defined in the template to the resource group you specify as the value of the *-ResourceGroupName* parameter. You might also need to provide the values of the parameters specified in the template. Alternatively, during deployment you might assign default values to these parameters directly within the template, or reference a parameter file containing their values.|
+|Azure PowerShell|You can initiate deployment by running the **New-AzResourceGroupDeployment** cmdlet. To reference the template file, you use the *-TemplateFile* or *-TemplateUri* parameter, depending on whether the template is stored locally on your computer or resides in a publicly accessible location. This cmdlet deploys the resources defined in the template to the resource group you specify as the value of the *-ResourceGroupName* parameter. You might also need to provide the values of the parameters specified in the template. Alternatively, during deployment you might assign default values to these parameters directly within the template, or reference a parameter file containing their values.|
 |Azure CLI|You can run the **az deployment group create** Azure CLI command with either the *--template-file* or *--template-uri** parameter and the *--resource_group* parameters to initiate deployment. Just as with PowerShell-based deployment, you might also need to provide the values of the parameters specified in the template. Alternatively, during deployment you might assign default values to these parameters directly within the template, or as a reference to a parameter file containing their values.|
 |The Azure portal|The **Custom deployment** pane in the Azure portal provides a convenient way to deploy Azure Resource Manager template-based resources. To access it, in the Azure portal, search for and select the **Deploy a custom template** Marketplace item. From the **Custom deployment** pane, you can build your own template in the browser-based template editor, pick one of the predefined templates, or load an existing GitHub QuickStart template.|
-|Azure QuickStart Templates GitHub repository|Every QuickStart template published on GitHub has a corresponding **Deploy to Azure** link. When you select the link, the browser will be automatically redirected to the **Custom deployment** pane in the Azure portal. To initiate a deployment, you only need to provide the values of the required parameters.|
+|Azure QuickStart Templates GitHub repository|Every QuickStart template published on GitHub has a corresponding **Deploy to Azure** link. When you select the link, the browser is automatically redirected to the **Custom deployment** pane in the Azure portal. To initiate a deployment, you only need to provide the values of the required parameters.|
 |Microsoft Visual Studio or Visual Studio Code|You can author and deploy templates by using Visual Studio and Visual Studio Code.|
 
 ## Additional reading

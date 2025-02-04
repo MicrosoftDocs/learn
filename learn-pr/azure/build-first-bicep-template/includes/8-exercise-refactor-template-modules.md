@@ -75,6 +75,7 @@ Run the following Azure CLI command in the terminal.
 
 ```azurecli
 az deployment group create \
+  --name main \
   --template-file main.bicep \
   --parameters environmentType=nonprod
 ```
@@ -87,6 +88,7 @@ Run the following Azure PowerShell command in the terminal.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
+  -Name main `
   -TemplateFile main.bicep `
   -environmentType nonprod
 ```

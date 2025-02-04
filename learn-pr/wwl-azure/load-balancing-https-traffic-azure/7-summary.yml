@@ -2,9 +2,11 @@
 uid: learn.wwl.load-balancing-https-traffic-azure.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 11/25/2024
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit

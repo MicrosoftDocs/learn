@@ -366,8 +366,8 @@ By using a chat variable, you can be more specific about the context that you in
 
 Examples of built-in chat variables are:
 
-- `#selection`: the visible source code in the active editor.
-- `#editor`: the current selection in the active editor. The editor content is implicitly included in the Chat view context.
+- `#editor`: the visible source code in the active editor.
+- `#selection`: the current selection in the active editor. The editor content is implicitly included in the Chat view context.
 - `#file`: include a specified file in your workspace as context with your chat prompt.
 - `#terminalSelection`: the active terminal's selection.
 - `#terminalLastCommand`: the active terminal's last run command.

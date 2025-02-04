@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Run a disaster recovery drill
   description: Here, we'll explore how to test our Azure Site Recovery configuration by running a disaster recovery drill.
-  ms.date: 12/07/2023
+  ms.date: 01/25/2025
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: unit

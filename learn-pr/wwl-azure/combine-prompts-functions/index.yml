@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.combine-prompts-functions
 metadata:
-  title: Combine Prompts and Functions
+  title: Apply filters on functions
   description: "Learn how combining native functions with prompts can accomplish customized tasks with the Semantic Kernel SDK."
-  ms.date: 07/04/2024
+  ms.date: 01/27/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
   - N/A
   ms.service: semantic-kernel
   ai-usage: human-only
-title: Combine Prompts and Functions
+title: Apply filters on functions
 summary: This module demonstrates how&nbsp;to combine functions and prompts with the Semantic Kernel SDK. Nesting functions&nbsp;within prompts can allow your code to complete tasks large language models can't typically complete on their own.
 abstract: |
   -   Practice creating plugins with the Semantic Kernel SDK.
@@ -38,8 +38,10 @@ products:
 - azure-openai
 units:
 - learn.wwl.combine-prompts-functions.introduction
-- learn.wwl.combine-prompts-functions.call-functions-within-prompts
-- learn.wwl.combine-prompts-functions.exercise-use-nested-functions-song-suggestions
+- learn.wwl.combine-prompts-functions.understand-prompt-injections
+- learn.wwl.combine-prompts-functions.exercise-apply-trust-filters
+- learn.wwl.combine-prompts-functions.filter-invoked-functions
+- learn.wwl.combine-prompts-functions.exercise-add-filter-service-to-kernel
 - learn.wwl.combine-prompts-functions.knowledge-check
 - learn.wwl.combine-prompts-functions.summary
 badge:

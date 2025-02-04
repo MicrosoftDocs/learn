@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.innovate-rise-sap-microsoft-cloud.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check what you learn in this module."
+  ms.date: 01/30/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which is a benefit of using Microsoft Copilot Studio with SAP systems?"
+    choices:
+    - content: "It provides basic user interactions."
+      isCorrect: false
+      explanation: "That is incorrect. Microsoft Copilot Studio provides personalized user interactions, not just basic ones."
+    - content: "It automates customer support and routine inquiries."
+      isCorrect: true
+      explanation: "That is correct. One of the benefits of Microsoft Copilot Studio is automating customer support and handling routine inquiries."
+    - content: "It provides secure authentication and authorization."
+      isCorrect: false
+      explanation: "That is incorrect. Microsoft Entra ID is used for secure authentication and authorization."
+  - content: "A company wants to speed up routine tasks within their SAP system. Which Microsoft tool should they use?"
+    choices:
+    - content: "Microsoft Power Automate"
+      isCorrect: true
+      explanation: "That is correct. Microsoft Power Automate is designed to automate routine tasks and workflows, improving efficiency."
+    - content: "Microsoft Power BI"
+      isCorrect: false
+      explanation: "That is incorrect. Microsoft Power BI is used for generating analytics and visualizations, not for automating routine tasks."
+    - content: "Microsoft Entra ID"
+      isCorrect: false
+      explanation: "That is incorrect. Microsoft Entra ID is used for secure authentication and authorization, not for automating tasks."
+  - content: "What role does Microsoft Teams play in collaboration with RISE with SAP?"
+    choices:
+    - content: "It provides advanced data analytics and reporting."
+      isCorrect: false
+      explanation: "That is incorrect. Advanced data analytics and reporting are provided by Azure Data Factory, Synapse, and Power BI, not Microsoft Teams."
+    - content: "It facilitates real-time communication and collaboration."
+      isCorrect: true
+      explanation: "That is correct. Microsoft Teams enhances collaboration by providing real-time communication through chat, video calls, and file sharing."
+    - content: "It automates workflows and tasks within SAP systems."
+      isCorrect: false
+      explanation: "That is incorrect. Automating workflows and tasks within SAP systems is a feature of Power Automate, not Microsoft Teams."
+  - content: "A business needs to create custom business applications that interact with SAP data without extensive coding. Which Microsoft tool should they use?"
+    choices:
+    - content: "Microsoft Power Apps"
+      isCorrect: true
+      explanation: "That is correct. Microsoft Power Apps allows users to create custom business applications that interact with SAP data without extensive coding."
+    - content: "Microsoft Power BI"
+      isCorrect: false
+      explanation: "That is incorrect. Microsoft Power BI is used for generating analytics and visualizations, not for creating custom business applications."
+    - content: "Microsoft Copilot Studio"
+      isCorrect: false
+      explanation: "That is incorrect. Microsoft Copilot Studio is used for creating chatbots and autonomous agents, not for creating custom business applications."
+  - content: "Which Azure service is essential for pulling data from SAP to fuel big data analysis?"
+    choices:
+    - content: "Azure Data Factory"
+      isCorrect: true
+      explanation: "That is correct. Azure Data Factory is essential for pulling data from SAP to fuel the development of applications and big data analysis."
+    - content: "Azure API Management"
+      isCorrect: false
+      explanation: "That is incorrect. Azure API Management is used for securely exposing SAP APIs and managing integrations, not for pulling data for big data analysis."
+    - content: "Azure Synapse"
+      isCorrect: false
+      explanation: "That is incorrect. Azure Synapse is used for data analytics and reporting, but the initial data extraction from SAP is done by Azure Data Factory."

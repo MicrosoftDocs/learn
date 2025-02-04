@@ -2,7 +2,7 @@
 Formally, virtualization involves the construction of an isomorphism that maps a virtual guest system to a real host system<sup>[1][^1]</sup>. The following video and figure illustrate the virtualization process.
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pNd6]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0e0ff73e-1e24-429d-a217-4f118a81f36a]
 
 The function *V* in the figure maps guest state to host state. For a sequence of operations (*e*) that modifies a guest state, there is a corresponding sequence of operations (*e'*) in the host that performs equivalent modifications. Informally, virtualization creates virtual resources and maps them to physical resources. Virtual resources are created from physical resources and essentially act as proxies to them.
 

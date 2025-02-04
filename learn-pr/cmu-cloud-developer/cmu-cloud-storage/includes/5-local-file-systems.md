@@ -61,7 +61,7 @@ One basic scheme to implement atomic transactions in local file systems is calle
 To enhance dependability and/or performance, a local file system can be used with multiple disk drives. This video covers the various techniques used to expand a file system over multiple disks:
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pSuy]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2496958b-ed26-4fdf-acae-e0cc001c3c80]
 
 The three main reasons for expanding disk drives are:
 

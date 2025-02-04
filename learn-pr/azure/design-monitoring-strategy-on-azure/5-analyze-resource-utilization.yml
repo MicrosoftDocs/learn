@@ -4,8 +4,8 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Monitor VMs and containers by using insights
-  description: Analyze VM and container utilization and performance by using Azure Monitor VM insights and container insights.
-  ms.date: 11/13/2023
+  description: Analyze virtual machine (VM) and container utilization and performance by using Azure Monitor VM insights and container insights.
+  ms.date: 01/22/2025
   author: kayodeprinceMS
   ms.author: kaprince
   ms.topic: unit
@@ -26,15 +26,15 @@ quiz:
       explanation: Metrics Explorer lets you chart multiple metrics over time, but doesn't show a topological view of network connections.
     - content: VM insights Map tab
       isCorrect: true
-      explanation: VM insights includes a Map tab with a topology view that shows the processes, dependencies, and network connection details of your VMs and virtual machine scale sets.
-  - content: What open-source monitoring system is specifically designed for containers and microservices?
+      explanation: The VM insights feature includes a Map tab with a topology view that shows the processes, dependencies, and network connection details of your VMs and virtual machine scale sets.
+  - content: What open-source monitoring system is designed specifically for containers and microservices?
     choices:
     - content: Prometheus
       isCorrect: true
       explanation: Prometheus is a popular tool for monitoring Kubernetes, distributed services, and containerized microservices.
     - content: VM insights
       isCorrect: false
-      explanation: VM insights is an Azure Monitor feature that helps get you started monitoring VM clients, not containers.
+      explanation: The VM insights feature in Azure Monitor helps get you started monitoring VM clients, not containers.
     - content: Grafana
       isCorrect: false
       explanation: Grafana is a dashboard platform for analyzing and visualizing data from data sources like Prometheus.
