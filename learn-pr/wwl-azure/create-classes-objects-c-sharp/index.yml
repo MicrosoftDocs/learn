@@ -3,7 +3,7 @@ uid: learn.wwl.create-classes-objects-c-sharp
 metadata:
   title: Get started with classes and objects in C#
   description: "Learn how to create classes and instantiate objects that expose encapsulated field data by using class definitions, constructors, and the 'new' operator."
-  ms.date: 02/02/2025
+  ms.date: 02/04/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
@@ -12,7 +12,7 @@ metadata:
   ms.devlang: dotnet
   ai-usage: human-only
 title: Get started with classes and objects in C#
-summary: Learn how to&nbsp;create classes and instantiate objects that expose encapsulated field data by using class definitions, constructors, and the 'new' operator.
+summary: Learn how to&nbsp;create classes and instantiate objects that expose public data fields by using class definitions, constructors, and the 'new' operator.
 abstract: |
   After completing this module, you'll be able to:
 
@@ -22,7 +22,7 @@ abstract: |
 
   -   Create class definitions that include public data fields and constructors that accept zero or more arguments.
 
-  -   Create classes and instantiate objects that expose encapsulated field data.
+  -   Create classes and instantiate objects that expose public field values.
 prerequisites: |
   -   An installation of Visual Studio Code with the C# Dev Kit extension installed.
 

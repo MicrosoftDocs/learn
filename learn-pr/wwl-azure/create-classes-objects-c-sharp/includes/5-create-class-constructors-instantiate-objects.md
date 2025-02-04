@@ -164,13 +164,13 @@ class Example
 
 ```
 
-That constructor initializes instance fields and properties according to the corresponding initializers. If a field or property has no initializer, its value is set to the default value of the field's or property's type. If you declare at least one instance constructor in a class, C# doesn't provide a parameterless constructor.
+This constructor initializes instance fields and properties according to the corresponding initializers. If a field or property has no initializer, its value is set to the default value of the field's or property's type. If you declare at least one instance constructor in a class, C# doesn't provide a parameterless constructor.
 
 ### Initialize class data using constructor parameters
 
 The parameters passed to a constructor are local to the constructor. Parameters are often used to initialize the data fields of a class.
 
-The following code snippet shows a class named `Person` with constructors that initializes the `personName` and `personAge` fields:
+The following code snippet shows a class named `Person` with constructors that initialize the `personName` and `personAge` fields:
 
 ```csharp
 
@@ -284,7 +284,7 @@ Employee e2 = new Employee(500, 52);
 
 A static constructor is used to initialize any static data, or to perform a particular action that needs to be performed only once. It's called automatically before the first instance is created or any static members are referenced. A static constructor is called at most once.
 
-The following code snippet shows an updated version of the Person class that implements static constructors:
+The following code snippet shows an updated version of the `Person` class that implements static fields and a static constructor:
 
 ```csharp
 
@@ -331,7 +331,7 @@ public class Person
 
 The updated `Person` class has two instance fields, `personName` and `personAge`, both of which are of type `string`. These fields store the name and age of a person, respectively.
 
-Additionally, the class defines two static fields, `defaultName` and `defaultAge`, also of type `string`. Static fields are shared among all instances of the class and are initialized only once. In this case, the static fields are used to provide default values for the `personName` and `personAge` fields.
+The class also defines two static fields, `defaultName` and `defaultAge`, also of type `string`. Static fields are shared among all instances of the class and are initialized only once. In this case, the static fields are used to provide default values for the `personName` and `personAge` fields.
 
 The static constructor `static Person()` is responsible for initializing the static fields. It sets `defaultName` to "unknown" and `defaultAge` to `"unknown"`. The static constructor is called automatically before any instances of the class are created or any static members are accessed.
 
