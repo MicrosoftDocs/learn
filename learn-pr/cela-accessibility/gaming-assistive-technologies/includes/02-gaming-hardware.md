@@ -8,7 +8,7 @@ Many hardware AT devices might be referred to as "adaptive" input devices or "ad
 
 Watch the following video to learn about some common AT devices like the Xbox Adaptive Controller, switch buttons, and mouth-operated joysticks.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPOy2]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=694330ff-d78a-4f32-bf2c-9ab3dcb11af1]
 
 ## Hardware considerations for accessible game development
 
@@ -32,4 +32,4 @@ In addition to supporting diverse input types, it's also important to consider t
 
 The following video provides an overview of these types of considerations:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPE1n]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ffd66197-9a10-4134-880e-b3d6c6e36033]

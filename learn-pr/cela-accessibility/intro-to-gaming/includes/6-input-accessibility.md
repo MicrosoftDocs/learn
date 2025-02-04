@@ -12,7 +12,7 @@ Completing game tasks typically requires players to move their fingers with spee
 
 In the following video, learn how to identify common input-based elements that can pose unintentional barriers to access for players when proper accessible supports and features aren't provided.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWQhCj]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f4ce3c5c-2b01-4b19-b320-7b7dd4191d54]
 
 ## Mobility and disability
 

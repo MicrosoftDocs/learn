@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Get started with the Azure Quantum Resource Estimator
   description: Learn to enable the Azure Quantum Resource Estimator and how to submit a job.
-  ms.date: 06/05/2024
+  ms.date: 01/22/2025
   author: SoniaLopezBravo
   ms.author: sonialopez
   manager: tedhudek

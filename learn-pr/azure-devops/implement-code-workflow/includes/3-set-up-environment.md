@@ -27,7 +27,7 @@ To run the template, on the Azure DevOps Demo Generator site, do the following:
 1. Select **Yes, I want to fork this repository**, then select **Authorize**. If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]
-    > You need to select this option for the template to connect to your GitHub repository. Select it even if you've already forked the _Space Game_ website project. The template uses your existing fork.
+    > You need to select this option for the template to connect to your GitHub repository. Select it even if you've already forked the *Space Game* website project. The template uses your existing fork.
 
 1. Select **Create Project**.
 
@@ -43,7 +43,7 @@ To run the template, on the Azure DevOps Demo Generator site, do the following:
 
 ## Move the work item to Doing
 
-In this section, you'll assign yourself a work item that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each sprint, or work iteration.
+In this section, you'll assign yourself a work item that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each sprint or work iteration.
 
 Assigning work in this way gives you a checklist from which to work. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce work in process (WIP) limits so that the team doesn't take on too much work at one time.
 

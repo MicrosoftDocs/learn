@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: How Azure Firewall works
   description: Learn how Azure Firewall and Azure Firewall Manager protect Azure virtual networks.
-  ms.date: 11/06/2023
+  ms.date: 01/23/2025
   author: vhorne
   ms.author: victorh
   ms.topic: unit

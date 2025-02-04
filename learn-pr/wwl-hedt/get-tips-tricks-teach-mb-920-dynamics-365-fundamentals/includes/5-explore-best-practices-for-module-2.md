@@ -14,7 +14,7 @@ This module consists of four lessons:
 Dynamics 365 Finance
 - Lesson 4 – Explore expense management, fixed asset management, and budgeting in Microsoft Dynamics 365 Finance
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXi7M]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=bd9717e3-788d-4c6b-b563-0e1a52c2a034]  
 
 Module 2 Tips and Tricks
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.combine-prompts-functions.exercise-apply-trust-filters
+title: Exercise - Apply trust filters
+metadata:
+  title: Exercise - Apply trust filters
+  description: "Exercise - Apply trust filters"
+  ms.date: 01/27/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-apply-trust-filters.md)]

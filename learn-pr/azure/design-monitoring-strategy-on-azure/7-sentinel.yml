@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Manage enterprise security by using Microsoft Sentinel
   description: Learn how to monitor, analyze, and manage enterprise security by using Microsoft Sentinel.
-  ms.date: 11/13/2023
+  ms.date: 01/22/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
@@ -34,8 +34,8 @@ quiz:
       explanation: You can use predefined exploration queries to investigate incidents more effectively, but they don't show which users an incident affected.
     - content: Use entities.
       isCorrect: true
-      explanation: Use entities to view users that a particular threat or malicious activity might have affected.
+      explanation: Use entities to view users that are affected in a particular threat or malicious activity.
     - content: Use the timeline.
       isCorrect: false
-      explanation: You can use the timeline feature to understand the path that a threat might have taken over time, but the timeline doesn't show affected users.
+      explanation: You can use the timeline feature to understand the path that a threat takes over time, but the timeline doesn't show affected users.
 

@@ -8,7 +8,7 @@ param projectName string = 'dog'
 param apiKey string
 ```
 
-They also give you the following parameter file named _main.parameters.production.json_:
+They also give you the following parameters file named _main.parameters.production.json_:
 
 ```json
 {

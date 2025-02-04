@@ -53,7 +53,7 @@ You increase the complexity of the `message` variable by adding multiple sets of
     The key to this example is the use of `LastIndexOf()`, which you use to get the positions of the last opening and closing parentheses. 
     
     > [!NOTE]
-    > The previous sample code only runs without error because the `message` string contains properly formatted parenthesis pairs. But the code is fragile and produces erros when no parenthesis pair is present, or when the last parentheses don't form a opening and closing pair.
+    > The previous sample code only runs without error because the `message` string contains properly formatted parenthesis pairs. But the code is fragile and produces errors when no parenthesis pair is present, or when the last parentheses don't form a opening and closing pair.
 
 ### Retrieve all instances of substrings inside parentheses
 

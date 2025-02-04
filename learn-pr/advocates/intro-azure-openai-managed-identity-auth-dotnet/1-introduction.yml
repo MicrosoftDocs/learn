@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-managed-identity-azure-openai-dotnet.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to Azure OpenAI integration with managed identity and authentication in .NET
+  ms.date: 01/09/2025
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -5,15 +5,15 @@ metadata:
   prefetch-feature-rollout: true
   moduleType: standard
   title: Data tracking and synchronization with Azure SQL Database
-  description: "Azure SQL data tracking module that covers database synchronization, data changes tracking and recording. The module explores tools such as change data capture (CDC), SQL Data Sync, and change tracking."
-  ms.date: 08/30/2023
+  description: "Azure SQL data tracking module that covers data changes tracking. The module explores tools such as change data capture (CDC) and change tracking."
+  ms.date: 01/15/2025
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
   ms.topic: module
   ms.service: azure-sql-database
 title: Data tracking and synchronization with Azure SQL Database
-summary: "This module introduces you to several data tracking, loading, and streaming tools that you can use to track or synchronize data changes from your Azure SQL Database to other destinations. More specifically, we will cover: change data capture (CDC), SQL Data Sync, and change tracking."
+summary: "This module introduces you to several data tracking, loading, and streaming tools that you can use to track or synchronize data changes from your Azure SQL Database to other destinations. More specifically, we cover: change data capture (CDC) and change tracking."
 abstract: |
   By the end of this module, you'll be able to:
     - Identify suitable Azure SQL Database data tracking tools that fit your use case and business needs.
@@ -39,7 +39,6 @@ units:
 - learn.azure-sql-replication.introduction
 - learn.azure-sql-replication.track-data-changes-with-cdc
 - learn.azure-sql-replication.exercise-track-data-changes-with-cdc
-- learn.azure-sql-replication.synchronize-data-with-sql-data-sync
 - learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking
 - learn.azure-sql-replication.exercise-check-if-data-changes-happened-with-change-tracking
 - learn.azure-sql-replication.summary

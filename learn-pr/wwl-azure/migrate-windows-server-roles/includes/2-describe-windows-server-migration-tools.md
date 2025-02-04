@@ -3,17 +3,11 @@ Windows Server Migration Tools are a set of Windows PowerShell cmdlets that migr
 Roles and features that you can migrate include:
 
 - Active Directory Certificate Services
-
 - DHCP
-
 - DNS
-
 - Network Policy Server
-
 - Remote Access
-
 - IP configuration
-
 - Local users and groups
 
 > [!IMPORTANT]

@@ -106,7 +106,7 @@ We've already covered the importance of writing tests. But just to emphasize it,
 
 **Ask Abel**
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LBfM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=90341df2-dc15-406f-af3f-52afc0d4ca76]
 
 ## What does the team choose?
 

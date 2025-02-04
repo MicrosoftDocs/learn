@@ -5,8 +5,8 @@ metadata:
   title: Exploring artificial intelligence in action
   description: This module explores various subsets within artificial intelligence (AI) such as natural language processing (NLP), computer vision, and recommendation systems and discuss the integration of AI-powered tools into a learning environment.
   author: yoosunee
-  ms.author: andreapark
-  ms.date: 01/25/2024
+  ms.author: anruss
+  ms.date: 01/14/2025
   ms.service: artificial-intelligence
   ms.topic: module-standard-task-based
   ms.collection:

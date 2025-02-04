@@ -1,5 +1,3 @@
-
-
 The IT staff at Contoso can use the Azure portal to perform server discovery and assessment in their environment. After this is complete, Azure Migrate will make appropriate migration recommendations regarding the size of the VMs they must provision.
 
 ## How the assessment works

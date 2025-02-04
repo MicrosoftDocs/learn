@@ -1,4 +1,5 @@
 
+
 Application Gateway has a series of components that combine to route requests to a pool of web servers and to check the health of these web servers.
 
 :::image type="content" source="../media/app-gateway-config-f068f2b5.png" alt-text="Diagram showing how Azure Application Gateway routes requests to a pool of web servers.":::

@@ -18,7 +18,7 @@ resource auditStorageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = if
   kind: 'StorageV2'
 }
 
-resource auditingSettings 'Microsoft.Sql/servers/auditingSettings@2023-08-01-preview' = if (auditingEnabled) {
+resource auditingSettings 'Microsoft.Sql/servers/auditingSettings@2024-05-01-preview' = if (auditingEnabled) {
   parent: server
   name: 'default'
   properties: {

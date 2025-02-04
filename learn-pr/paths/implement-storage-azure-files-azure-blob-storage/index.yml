@@ -1,23 +1,22 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-storage-azure-files-azure-blob-storage
 metadata:
-  title: Secure storage for Azure Files and Azure Blob Storage AZ-1003
-  description: Secure storage for Azure Files and Azure Blob Storage. (AZ-1003)
-  ms.date: 07/17/2023
+  title: Secure storage for Azure Files and Azure Blob Storage
+  description: Secure storage for Azure Files and Azure Blob Storage.
+  ms.date: 01/13/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: learning-path
 title: Secure storage for Azure Files and Azure Blob Storage
 prerequisites: |
-  *   Experience using the Azure portal to create resources.
-  *   Basic knowledge of unstructured data like blobs and files.
-  *   Basic knowledge of security concepts like identities, permissions, and encryption.
-  *   Basic knowledge of networking concepts like virtual networks and subnetting.
+  -   Experience using the Azure portal to create resources.
+  -   Basic knowledge of unstructured data like blobs and files.
+  -   Basic knowledge of security concepts like identities, permissions, and encryption.
+  -   Basic knowledge of networking concepts like virtual networks and subnetting.
 summary: |
   In this learning path, you practice storing business data securely by using Azure Blob Storage and Azure Files. The skills validated include creating storage accounts, storage containers, and file shares. Also, configuring encryption and networking to improve the security posture.
   [!INCLUDE [](../../includes/wwl/azure-subscription-prerequisite.md)]
 iconUrl: /training/achievements/implement-storage-for-azure-files-and-azure-blob-storage.svg
-hidden: false
 levels:
 - intermediate
 roles:
@@ -29,6 +28,7 @@ products:
 modules:
 - learn.create-azure-storage-account
 - learn.wwl.configure-blob-storage
+- learn.wwl.configure-azure-files-file-sync
 - learn.wwl.configure-storage-security
 - learn.secure-and-isolate-with-nsg-and-service-endpoints
 - learn.wwl.guided-project-azure-files-azure-blobs

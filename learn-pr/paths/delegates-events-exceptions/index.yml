@@ -5,7 +5,7 @@ metadata:
   description: This lesson is on the use of delegates and events.
   ms.date: 01/29/2024
   author: wwlpublish
-  ms.author: gregorfisher
+  ms.author: cahowd
   ms.topic: learning-path
 title: Delegates events exceptions
 prerequisites: |
