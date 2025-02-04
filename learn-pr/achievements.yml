@@ -1437,6 +1437,11 @@ achievements:
   title: Plan and configure business continuity and disaster recovery
   summary: Plan and configure business continuity and disaster recovery
   iconUrl: /training/achievements/3-plan-configure-business-continuity-disaster-recovery.svg
+- uid: learn.wwl.manage-capacityfor-azure-stack-hub.badge
+  type: badge
+  title: Manage capacity for Azure Stack Hub Plan and configure business continuity and disaster recovery
+  summary: Manage capacity for Azure Stack Hub
+  iconUrl: /training/achievements/4-manage-capacity-for-azure-stack-hub.svg
 - uid: learn.wwl.manage-alerts-incidents-microsoft-defender-for-endpoints.badge
   type: badge
   title: Manage alerts and incidents in Microsoft Defender for Endpoint
