@@ -99,7 +99,7 @@ Kubernetes provides support for networking in the following areas:
 - Services (external). Allows network access to the applications running in a pod from outside the cluster.
 - Services (internal). Specifies which network services are permitted for use among the resources inside a cluster.
 
-To achieve network communication in the previously-outlined scenarios, you need to be aware of how some core components are configured in Kubernetes, including:
+To achieve network communication in the previously outlined scenarios, you need to be aware of how some core components are configured in Kubernetes, including:
 
 - Containers:
   - Containers share pod network configuration, including IP address.
