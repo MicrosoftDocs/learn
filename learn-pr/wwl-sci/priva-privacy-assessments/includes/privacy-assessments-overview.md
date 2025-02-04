@@ -4,7 +4,7 @@ Organizations need a structured way to track and document how personal data is u
 
 ## Prerequisites
 
-Before using Privacy Assessments, ensure that your organization has access to the [Microsoft Purview Data Map](/purview/concept-elastic-data-map). Privacy Assessments rely on data relationships defined in Data Map to trigger assessments when processing activities change.
+Before using Privacy Assessments, ensure that your organization has access to the [Microsoft Purview Data Map](/purview/concept-elastic-data-map?azure-portal=true). Privacy Assessments rely on data relationships defined in Data Map to trigger assessments when processing activities change.
 
 ## Key terms and concepts
 
@@ -49,3 +49,7 @@ A list of recommended setup tasks appears when you first access Privacy Assessme
 From this section, you can quickly create new privacy assessments and privacy rules to automate compliance tracking.
 
 Once you're familiar with how Privacy Assessments work, the next step is to configure and deploy assessments in your organization.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

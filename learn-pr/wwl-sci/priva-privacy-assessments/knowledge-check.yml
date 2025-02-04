@@ -24,16 +24,16 @@ quiz:
       explanation: "Incorrect: Consent Management tracks user consent, not data use evaluations."
     - content: "Microsoft Defender for Cloud Apps"
       isCorrect: false
-      explanation: "Incorrect: Defender for Cloud Apps secures cloud applications but does not manage privacy assessments."
+      explanation: "Incorrect: Defender for Cloud Apps secures cloud applications but doesn't manage privacy assessments."
 
   - content: "Your company wants to automatically trigger privacy assessments when new data processing activities occur. What must be in place to enable this?"
     choices:
     - content: "Manually scheduled assessments"
       isCorrect: false
-      explanation: "Incorrect: Manually scheduled assessments do not respond dynamically to data processing changes."
-    - content: "DLP policies applied to all data assets"
+      explanation: "Incorrect: Manually scheduled assessments don't respond dynamically to data processing changes."
+    - content: "Data loss prevention (DLP) policies applied to all data assets"
       isCorrect: false
-      explanation: "Incorrect: DLP policies prevent data leaks but do not trigger privacy assessments."
+      explanation: "Incorrect: DLP policies prevent data leaks but don't trigger privacy assessments."
     - content: "Privacy rules that trigger assessments based on changes in data processing"
       isCorrect: true
       explanation: "Correct: Privacy rules in Priva Privacy Assessments detect changes in data use and automatically trigger assessments."
@@ -48,7 +48,7 @@ quiz:
       explanation: "Correct: Assigning assessments to business assets, like projects or processes, provides context on how data is used."
     - content: "Assessments should focus solely on data storage locations."
       isCorrect: false
-      explanation: "Incorrect: Storage location alone does not provide insights into how data is processed or used."
+      explanation: "Incorrect: Storage location alone doesn't provide insights into how data is processed or used."
 
   - content: "Your organization wants to evaluate privacy risks based on assessment responses. What feature helps standardize this process?"
     choices:
@@ -57,19 +57,19 @@ quiz:
       explanation: "Correct: Risk settings define factors used to measure privacy risks in assessment responses."
     - content: "Encryption policies for sensitive data"
       isCorrect: false
-      explanation: "Incorrect: Encryption policies protect data but do not evaluate privacy risks."
+      explanation: "Incorrect: Encryption policies protect data but don't evaluate privacy risks."
     - content: "Access logs in security reports"
       isCorrect: false
-      explanation: "Incorrect: Security reports monitor user actions but do not provide structured privacy risk evaluations."
+      explanation: "Incorrect: Security reports monitor user actions but don't provide structured privacy risk evaluations."
 
   - content: "Your privacy team wants to archive and share completed assessments for auditing. What should they do?"
     choices:
-    - content: "Delete assessments after they are reviewed."
+    - content: "Delete assessments after they're reviewed."
       isCorrect: false
       explanation: "Incorrect: Deleting assessments would remove compliance records needed for auditing."
     - content: "Store assessments in a separate tracking spreadsheet."
       isCorrect: false
-      explanation: "Incorrect: Manual tracking spreadsheets are not an efficient or reliable method for managing assessments."
+      explanation: "Incorrect: Manual tracking spreadsheets aren't an efficient or reliable method for managing assessments."
     - content: "Export assessment responses as a Word or PDF file."
       isCorrect: true
       explanation: "Correct: Assessment responses can be exported in Word or PDF format for auditing and compliance reporting."

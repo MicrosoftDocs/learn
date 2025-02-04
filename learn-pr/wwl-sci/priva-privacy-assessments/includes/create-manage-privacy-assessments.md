@@ -1,4 +1,4 @@
-Privacy assessments help organizations document and evaluate how personal data is used across business processes. A structured approach ensures consistency in data collection, supports privacy risk evaluation, and helps organizations track compliance.
+Privacy assessments (preview) help organizations document and evaluate how personal data is used across business processes. A structured approach ensures consistency in data collection, supports privacy risk evaluation, and helps organizations track compliance.
 
 Organizations can create assessments from templates or customize them to capture specific details about data use. Once published, assessments can be assigned to business assets, reviewed by designated stakeholders, and updated as needed to reflect evolving data practices. Risk settings can also be configured to assess privacy risks based on responses, providing a standardized way to measure potential concerns.
 
@@ -56,7 +56,7 @@ Each question includes:
 
 - **Prompt**: The question text respondents see.
 - **Required answer**: Ensures a response is provided.
-- **Attachments**:  Allows respondents to upload supporting files, up to six files, 5MB each.
+- **Attachments**:  Allows respondents to upload supporting files, up to six files, 5 MB each.
 - **Risk settings**: Assigns risk levels to responses (if applicable).
 
 The assessment editor provides options to add and configure questions. The example shows a text-based question with toggles for required responses, attachments, and risk settings.
@@ -160,3 +160,7 @@ Once assessments are in place, organizations can:
 1. **Automate privacy rules** to streamline assessment assignments.
 
 Regularly reviewing assessments ensures organizations stay aligned with evolving privacy requirements.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

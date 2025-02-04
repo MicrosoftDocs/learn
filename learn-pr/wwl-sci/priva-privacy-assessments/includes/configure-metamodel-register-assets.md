@@ -1,4 +1,4 @@
-Before assigning privacy assessments, organizations need a way to define and structure the data assets they evaluate. Privacy assessments are typically assigned to business assets, such as projects or business processes, rather than individual datasets like a database or table. These business assets provide context about how data is used across an organization.
+Before assigning privacy assessments (preview), organizations need a way to define and structure the data assets they evaluate. Privacy assessments are typically assigned to business assets, such as projects or business processes, rather than individual datasets like a database or table. These business assets provide context about how data is used across an organization.
 
 Microsoft Purview's metamodel helps organizations represent business assets in a structured way. By defining business assets and their relationships to physical data in the Microsoft Purview Unified Catalog, organizations ensure privacy assessments evaluate data usage within the correct context.
 
@@ -12,7 +12,7 @@ Configuring the metamodel allows organizations to:
 - **Establish relationships** between business assets and physical data assets, ensuring assessments reflect real-world data usage.
 - **Ensure privacy assessments align** with business functions rather than focusing solely on technical data storage.
 
-Teams responsible for curating data usage—such as business owners, compliance officers, or technical stakeholders—are typically involved in configuring the metamodel.
+Teams responsible for curating data usage, such as business owners, compliance officers, or technical stakeholders—are typically involved in configuring the metamodel.
 
 ## What is the metamodel?
 
@@ -46,3 +46,7 @@ Once an asset is created, its details page displays privacy-related information.
 Organizations can also create logical business assets directly in Microsoft Purview Data Map and Unified Catalog, which allows for more advanced customization.
 
 With assets registered, organizations can now assign privacy assessments to track data usage in business operations.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

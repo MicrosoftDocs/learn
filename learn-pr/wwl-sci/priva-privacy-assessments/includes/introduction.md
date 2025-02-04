@@ -17,3 +17,7 @@ By the end of this module, you'll be able to:
 - Create and manage privacy assessments using templates and custom questionnaires.
 - Define privacy rules to automate the assignment of assessments.
 - Configure risk settings and evaluate privacy risks based on assessment responses.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

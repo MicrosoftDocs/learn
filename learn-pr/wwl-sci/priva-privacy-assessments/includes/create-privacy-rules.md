@@ -117,3 +117,7 @@ If an assessment is missing, review the rule's conditions and asset relationship
 > Privacy rules run on a schedule. If an assessment doesn't appear immediately, check back later.
 
 Privacy rules help organizations maintain structured and automated privacy assessments across their data estate. By defining clear criteria, organizations can ensure that assessments are assigned efficiently, reducing manual oversight and improving compliance tracking. Once configured, privacy teams can rely on privacy rules to provide continuous oversight of personal and sensitive data usage.
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)

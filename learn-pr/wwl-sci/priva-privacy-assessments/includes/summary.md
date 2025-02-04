@@ -14,8 +14,12 @@ Without an automated system, privacy teams must track data processing changes ma
 
 ## Resources
 
-- [Learn about privacy assessments (preview)](/privacy/priva/privacy-assessments)
-- [Get started with privacy assessments (preview)](/privacy/priva/privacy-assessments-setup)
-- [Configure the metamodel and register assets for privacy assessments (preview)](/privacy/priva/privacy-assessments-metamodel)
-- [Create and manage privacy assessments (preview)](/privacy/priva/privacy-assessments-create)
-- [Create privacy rules for privacy assessments (preview)](/privacy/priva/privacy-assessments-privacy-rules?tabs=business-uses)
+- [Learn about privacy assessments (preview)](/privacy/priva/privacy-assessments?azure-portal=true)
+- [Get started with privacy assessments (preview)](/privacy/priva/privacy-assessments-setup?azure-portal=true)
+- [Configure the metamodel and register assets for privacy assessments (preview)](/privacy/priva/privacy-assessments-metamodel?azure-portal=true)
+- [Create and manage privacy assessments (preview)](/privacy/priva/privacy-assessments-create?azure-portal=true)
+- [Create privacy rules for privacy assessments (preview)](/privacy/priva/privacy-assessments-privacy-rules?tabs=business-uses?azure-portal=true)
+
+## Legal disclaimer
+
+[Microsoft Priva legal disclaimer](/privacy/priva/priva-disclaimer?azure-portal=true)
