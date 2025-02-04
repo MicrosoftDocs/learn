@@ -38,4 +38,4 @@ This criterion aims to maximize compatibility with both current and future user 
 
 [Focus Order WCAG Quick Ref Guide](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=131)
 
-[On Focus WCAG Quick Ref Guide](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=131%2C321) 
+[On Focus WCAG Quick Ref Guide](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=131%2C321)

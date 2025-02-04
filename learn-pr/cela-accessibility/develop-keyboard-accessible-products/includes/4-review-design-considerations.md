@@ -27,7 +27,9 @@ In addition to navigation, features are often accessible through accelerator key
 
 Providing clear visual indicators for focused elements is essential for keyboard accessibility. Focused states should be visually distinct from normal states, using methods such as dots, fill color, or outlines. 
 
-![The image consists of two sections. The top section displays three buttons—Simplified Ribbon, Go Premium, and Sign Out—in their normal state. The bottom section shows the same buttons in their focused state, highlighting focus indicators: dots, fill color, and outlines.](../media/keyboard-focus-visual-indicators.png)
+:::image type="complex" source="../media/keyboard-focus-visual-indicators.png" alt-text="Screenshot showing focus indicators for buttons." lightbox="../media/keyboard-focus-visual-indicators.png":::
+   The image consists of two sections. The top section displays three buttons—Simplified Ribbon, Go Premium, and Sign Out—in their normal state. The bottom section shows the same buttons in their focused state, highlighting focus indicators: dots, fill color, and outlines.
+:::image-end:::
 
 Ensure that minimum contrast ratio requirements are met, including in high-contrast mode, to make focus indicators easily noticeable. Keyboard annotation labels can also be used to provide additional context for focused elements.
 
@@ -49,14 +51,22 @@ Indicate the sequence in which interactive elements should receive focus when na
 1. Use the focus order indicators to show the intended ordering of elements when being navigated using a keyboard.
 1. Long lists of like elements should be by-passable. For instance, imagine a Teams meeting where user has to make a user as signer. Users can invoke the menu item of that user and using arrow key they can drill down on the required menu item.
 
-![Focus Order Accessibility Annotation Teams meeting Image Description: Image of Teams meeting with Gallery and People tile defined as custom component, Overflow as library component, Drop-down menu as parent component and make me a signer is one of the child components. Each section has numerical labels indicating the focus order.](../media/focus-order-accessibility-annotation-teams-meeting.png)
+:::image type="complex" source="../media/focus-order-accessibility-annotation-teams-meeting.png" alt-text="Screenshot of Teams meeting with focus order annotations." lightbox="../media/focus-order-accessibility-annotation-teams-meeting.png":::
+   Focus Order Accessibility Annotation Teams meeting Image Description: Image of Teams meeting with Gallery and People tile defined as custom component, Overflow as library component, Drop-down menu as parent component and make me a signer is one of the child components. Each section has numerical labels indicating the focus order.
+:::image-end:::
 
-![Image of the Teach Access homepage, with focus order accessibility annotations on two sections labeled "Who We Are" and "What is the accessibility Skills Gap?" Each section has numerical labels indicating the focus order.](../media/focus-order-accessibility-annotation.png)
+:::image type="complex" source="../media/focus-order-accessibility-annotation.png" alt-text="Screenshot of Teach Access homepage with focus order annotations." lightbox="../media/focus-order-accessibility-annotation.png":::
+   Image of the Teach Access homepage, with focus order accessibility annotations on two sections labeled "Who We Are" and "What is the accessibility Skills Gap?" Each section has numerical labels indicating the focus order.
+:::image-end:::
 
 #### Shortcut Keys
 
 Highlight, add any keyboard shortcuts that are not standard rather a customize one and can be used to perform actions within the design.
 
-![Example of accessibility annotations for shortcut keys, with the shortcuts “Ctrl+Shift+M”=Mute “, Ctrl+Shift+E”=Share Content, and. “Ctrl+Shift+H”=Leave Meeting](../media/shortcut-keys-accessibility-annotation.png)
+:::image type="complex" source="../media/shortcut-keys-accessibility-annotation.png" alt-text="Screenshot showing shortcut keys annotations." lightbox="../media/shortcut-keys-accessibility-annotation.png":::
+   Example of accessibility annotations for shortcut keys, with the shortcuts “Ctrl+Shift+M”=Mute “, Ctrl+Shift+E”=Share Content, and. “Ctrl+Shift+H”=Leave Meeting
+:::image-end:::
 
-![Example of accessibility annotations for keyboard interactions and shortcuts, with the text “Bold” button = Ctrl+B, “Italic” button = Ctrl+I, and “Underline” button = Ctrl+U](../media/keyboard-interactions-accessibility-annotations.png)
+:::image type="complex" source="../media/keyboard-interactions-accessibility-annotations.png" alt-text="Screenshot showing keyboard interactions and shortcuts." lightbox="../media/keyboard-interactions-accessibility-annotations.png":::
+   Example of accessibility annotations for keyboard interactions and shortcuts, with the text “Bold” button = Ctrl+B, “Italic” button = Ctrl+I, and “Underline” button = Ctrl+U
+:::image-end:::
