@@ -41040,6 +41040,12 @@
       "source_path": "learn-pr/wwl-azure/combine-prompts-functions/5-summary.md",
       "redirect_url": "/training/modules/combine-prompts-functions/7-summary",
       "redirect_document_id": false
+    },
+    {
+        
+   "source_path": "learn-pr/wwl-azure/configure-virtual-machine-availability/11-simulation-machine-scale.md",
+   "redirect_url": "/training/modules/configure-virtual-machine-availability/",
+   "redirect_document_id": false
     }
   ]
 }
