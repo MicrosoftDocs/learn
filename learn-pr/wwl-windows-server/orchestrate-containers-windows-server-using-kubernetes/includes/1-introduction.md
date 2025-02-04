@@ -6,7 +6,7 @@ Contoso, Ltd. is a financial services company in Seattle with major offices loca
 
 Contoso IT staff are migrating Contoso on-premises servers to Windows Server 2025. As part of the migration, your developers have started using containers in their development pipelines to provide more efficient development and testing practices. You’re also investigating running production workloads in containers.
 
-As a Windows Server administrator, you need to determine what options are available for running multiple container workloads on Windows server 2025 and how best to orchestrate and schedule their use. After completing this module, you’ll understand how to accomplish these tasks.
+As a Windows Server administrator, you need to determine what options are available for running multiple container workloads on Windows Server 2025 and how best to orchestrate and schedule their use. After completing this module, you’ll understand how to accomplish these tasks.
 
 ## Learning objectives
 
