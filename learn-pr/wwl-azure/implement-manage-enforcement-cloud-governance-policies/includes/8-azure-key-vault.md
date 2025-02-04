@@ -52,8 +52,11 @@ Use the following table to better understand how Key Vault can help to meet the 
 
 Anybody with an Azure subscription can create and use key vaults. Although Key Vault benefits developers and security administrators, it can be implemented and managed by an organization's administrator who manages other Azure services. For example, this administrator can sign in with an Azure subscription, create a vault for the organization in which to store keys, and then be responsible for operational tasks like these:
 
- -  Create or import a key or secret
- -  Revoke or delete a key or secret
- -  Authorize users or applications to access the key vault, so they can then manage or use its keys and secrets
- -  Configure key usage (for example, sign or encrypt)
- -  Monitor key usage
+ -  Create or import a key or secret.
+ -  Revoke or delete a key or secret.
+ -  Authorize users or applications to access the key vault, so they can then manage or use its keys and secrets.
+ -  Configure key usage (for example, sign or encrypt).
+ -  Monitor key usage.
+    
+    :::image type="content" source="../media/azure-key-vault-7aacaffa-844c8b5a.png" alt-text="Diagram showing an example of an Administrator with an Azure subscription creates and manages vaults and keys.":::
+    

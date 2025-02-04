@@ -65,15 +65,24 @@ If you don't have an Azure subscription, create a free account before you begin.
 The first step in enforcing compliance with Azure Policy is to assign a policy definition. A policy definition defines under what condition a policy is enforced and what effect to take. In this example, assign the built-in policy definition called *Inherit a tag from the resource group if missing adding* the specified tag with its value from the parent resource group to new or updated resources missing the tag.
 
 1.  Go to the [Azure portal](https://portal.azure.com/), to assign policies. Search for and select **Policy**.
-
+    
+    :::image type="content" source="../media/search-policy-example-1-db7a7fb5-bcd7dfd8.png" alt-text="Screenshot showing how to navigate in the Azure portal to assign a policy.":::
+    
 2.  Select **Assignments** on the left side of the Azure Policy page. An assignment is a policy that has been assigned to take place within a specific scope.<br>
-
+    
+    :::image type="content" source="../media/select-assignments-example-8c28184c-f0ebbfad.png" alt-text="Screenshot showing how to configure assignments in the Policy page.":::
+    
 3.  Select **Assign Policy** from the top of the **Policy - Assignments** page.
-
+    
+    :::image type="content" source="../media/select-assign-policy-73264c35-4c3c26ee.png" alt-text="Screenshot showing how to assign the policy in the authoring assignments page.":::
+    
 4.  On the **Assign Policy** page and **Basics** tab, select the **Scope** by selecting the ellipsis and selecting either a management group or subscription. Optionally, select a resource group. A scope determines what resources or grouping of resources the policy assignment gets enforced on. Then click **Select** at the bottom of the **Scope** page. This example uses the **Contoso** subscription. Your subscription will differ.
 5.  Resources can be excluded based on the **Scope**. **Exclusions** start at one level lower than the level of the **Scope**. **Exclusions** are optional, so leave it blank for now.<br>
 6.  Select the **Policy definition** ellipsis to open the list of available definitions. You can filter the policy definition **Type** to Built in to view all and read their descriptions.
 7.  Select **Inherit a tag from the resource group if missing**. If you can't find it right away, type **inherit a tag** into the search box and then press ENTER or select out of the search box. Click **Select** at the bottom of the **AvailableDefinitions** page once you have found and selected the policy definition.
+    
+    :::image type="content" source="../media/select-available-definition-c146b13f-13e293f1.png" alt-text="Screenshot showing how to view available Azure policy definition types.":::
+    
 8.  The **Assignment name** is automatically populated with the policy name you selected, but you can change it. For this example, leave *Inherit a tag from the resource group if missing*. You can also add an optional **Description**. The description provides details about this policy assignment.
 9.  Leave **Policy enforcement** as *Enabled*. When *Disabled*, this setting allows testing the outcome of the policy without triggering the effect. For more information, see enforcement mode.
 10. **Assigned by** is automatically filled based on who is logged in. This field is optional, so custom values can be entered.<br>
