@@ -3,14 +3,10 @@ To implement keyboard accessibility effectively, follow these recommendations:
 ## Ensure the specs are thorough
 
 Before starting development, it's crucial to inspect the design specifications thoroughly. Ask questions such as:
-
-Can I invoke the button with **Space** as well?
-
-What if I press **Ctrl** + **F6**?
-
-Where does focus go after I dismiss the flyout?
-
-What does the keyboard focus visual indicator look like?
+- Can I invoke the button with **Space** as well?
+- What if I press **Ctrl** + **F6**?
+- Where does focus go after I dismiss the flyout?
+- What does the keyboard focus visual indicator look like?
 
 This proactive approach of analyzing how each interactive element should work helps identify potential accessibility issues early, making it easier to implement solutions during development.<br>
 
@@ -50,12 +46,9 @@ Use the **.focus()** method to set the keyboard focus when needed and include a 
 It's also important to use semantic HTML elements and **ARIA** roles and attributes when needed to enhance keyboard accessibility. These elements not only define the content but also provide important information about the role and purpose of different parts of a web page. Using semantic HTML is crucial for creating accessible and user-friendly digital content. Semantic HTML elements, such as **\<button>**, **\<a>**, and **\<form>**, are inherently keyboard accessible and provide meaningful information to assistive technologies. For example, a **\<button>** element can be activated using the **Enter** or **Spacebar** keys, and an **\<a>** (anchor) element can be navigated to and activated using the **Tab** and **Enter** keys. These elements are designed to be operable via keyboard without requiring additional scripting or customization. In addition to their keyboard accessibility, semantic HTML elements provide meaningful information to assistive technologies like screen readers. For instance, a screen reader can announce that a **\<button>** is a button and that a **\<form>** is a form, helping users understand the structure and functionality of the content. 
 
 ARIA roles and attributes are essential tools for enhancing the accessibility of custom components and dynamic web content. They provide additional context and information to assistive technologies, ensuring that users with disabilities can understand and interact with complex web elements effectively. Use ARIA roles sparingly and only when the built-in accessibility of semantic HTML elements is insufficient. ARIA roles define the purpose and behavior of an element. For example, assigning the role of button to a custom interactive element informs assistive technologies that the element functions as a button, even if it isn't a native HTML **\<button>**. This allows screen readers to announce the element as a button, helping users understand its functionality. Common ARIA roles include button, dialog, menu, tab, and alert, among others. Using these roles ensures that custom components are accessible and provide meaningful information to users. ARIA attributes, such as **aria-label** and **aria-labelledby**, provide additional information about interactive elements. 
-
-The **aria-label** attribute defines a string that labels an element, which is especially useful for elements without visible text labels. For example, a search icon button can be labeled with **aria-label="Search"** to inform screen readers of its purpose. 
-
-The **aria-labelledby** attribute is used to reference another element that contains the label text. This is useful for associating a label with a form control, such as linking a text input field to its corresponding label element. 
-
-Other important ARIA attributes include **aria-expanded**, which indicates whether a collapsible element is expanded or collapsed, and **aria-hidden**, which hides elements from assistive technologies. By using ARIA roles and attributes, developers can enhance the accessibility of custom components, ensuring that all users can navigate and interact with web content effectively.
+- The **aria-label** attribute defines a string that labels an element, which is especially useful for elements without visible text labels. For example, a search icon button can be labeled with **aria-label="Search"** to inform screen readers of its purpose. 
+- The **aria-labelledby** attribute is used to reference another element that contains the label text. This is useful for associating a label with a form control, such as linking a text input field to its corresponding label element. 
+- Other important ARIA attributes include **aria-expanded**, which indicates whether a collapsible element is expanded or collapsed, and **aria-hidden**, which hides elements from assistive technologies. By using ARIA roles and attributes, developers can enhance the accessibility of custom components, ensuring that all users can navigate and interact with web content effectively.
 
 ## Avoid keyboard traps
 
