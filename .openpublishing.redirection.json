@@ -34141,6 +34141,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/manage-system-health-azure-stack-hub/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/update-infrastructure-azure-stack-hub/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
