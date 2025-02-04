@@ -8,35 +8,36 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 01/20/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: "A data scientist wants to train a machine learning model to predict the sales of supermarket items to adjust the supply to the projected demand. What type of machine learning task will the model perform?"
+  - content: "Which compute would you recommend to train the model?"
     choices:
-    - content: "Classification."
+    - content: "Spark cluster"
       isCorrect: false
-      explanation: "Incorrect. With classification the target value has two or more classes or categories."
-    - content: "Regression"
-      isCorrect: false
-      explanation: "Incorrect. Regression predicts a numerical value."
-    - content: "Time-series forecasting"
+      explanation: "Incorrect. Since the data scientists aren't familiar with Spark, it's not the preferred solution right now."
+    - content: "CPU"
       isCorrect: true
-      explanation: "Correct. Time-series forecasting is used to predict future sales."
-  - content: "The data scientist received data to train a model to predict the sales of supermarket items. The data scientist wants to quickly iterate over several featurization and algorithm options by only providing the data and editing some configurations. Which tool would best be used in this situation?"
+      explanation: "Correct. CPU compute is the best option for training the model. There can be a need for GPU or Spark when model training takes too long, but for now it's best to start with CPUs."
+    - content: "GPU"
+      isCorrect: false
+      explanation: "Incorrect. There's no indication yet that GPUs are needed to train the model, and using GPUs over CPUs now, only incurs unnecessary extra costs."
+  - content: "What type of predictions does the mobile application need to generate?"
     choices:
-    - content: "Designer"
-      isCorrect: false
-      explanation: "Incorrect. Though the Designer can be used to quickly create models, it requires you to decide what components to use and has no built-in component to train a time-series forecasting model."
-    - content: "Automated Machine Learning"
+    - content: "Real-time predictions"
       isCorrect: true
-      explanation: "Correct. You'll only have to provide the data and Automated Machine Learning will iterate over different featurization approaches and algorithms."
-    - content: "Azure AI Services"
+      explanation: "Correct. There's a need for immediate predictions for individual patients."
+    - content: "Batch predictions"
       isCorrect: false
-      explanation: "Incorrect. Azure AI Services doesn't provide an API to customize a time-series forecasting model."
-
+      explanation: "Incorrect. Batch predictions would take too long. We need immediate predictions."
+    - content: "Local predictions"
+      isCorrect: false
+      explanation: "Incorrect. There's a need for immediate predictions for individual patients so we need real-time predictions."

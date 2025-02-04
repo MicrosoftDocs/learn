@@ -1,11 +1,11 @@
 The Web server role includes Internet Information Services (IIS), which is commonly used to manage websites and web-based applications. IIS supports PowerShell cmdlets to allow you to configure and manage application pools, websites, web applications, and virtual directories.
 
-IIS management cmdlets are available in the **IISAdministration** module for PowerShell and have the prefix “IIS” in the noun part of their names. Sites use the noun “IISSite”.
+IIS management cmdlets are available in the **IISAdministration** module for PowerShell and have the prefix “IIS” in the noun part of their names. Sites use the noun **IISSite**.
 
-To manage web-based applications, you can use the **WebAdministration** module for PowerShell, which includes cmdlets for managing web applications. These cmdlets use the noun "WebApplication". Cmdlets for managing application pools use the noun “WebAppPool”.
+To manage web-based applications, you can use the **WebAdministration** module for PowerShell, which includes cmdlets for managing web applications. These cmdlets use the noun **WebApplication**. Cmdlets for managing application pools use the noun **WebAppPool**.
 
 > [!NOTE]
-> The WebAdministration module has mostly been replaced by updated features included in the **IISAdministration** module. For any IIS-related management tasks, it's recommended to use the **IISAdministration** module.
+> The WebAdministration module is superseded by the **IISAdministration** module. For any IIS-related management tasks, use the **IISAdministration** module.
 
 The following table lists common IIS and web application administration cmdlets.
 

@@ -29,7 +29,7 @@ Before you connect to your database, it's a good idea to verify that it exists a
 
 Here, you use the `az` utility to list your databases and show some information about the **Logistics** database, including its maximum size and status.
 
-1. Visit [shell.azure.com](https://shell.azure.com/) or from the Azure portal, select the **Cloud shell** button from the global controls of the Azure portal window.
+1. Visit [shell.azure.com](https://shell.azure.com/), or from the Azure portal, select the **Cloud shell** button from the global controls of the Azure portal window.
 
 1. If given the option, choose **Bash** for this learning exercise.
 
@@ -47,7 +47,7 @@ Here, you use the `az` utility to list your databases and show some information 
     ```
 
     > [!NOTE]
-    > Depending on the pane you are on in the Azure portal, your SQL server name is displayed as an FQDN (for example, `servername.database.windows.net`) or standalone (`servername`). For this command, you only need the logical name *without* the `.database.windows.net` suffix.
+    > Depending on the pane you are on in the Azure portal, your SQL server name is displayed as a Fully qualified domain name (FQDN) (for example, `servername.database.windows.net`) or standalone (`servername`). For this command, you only need the logical name *without* the `.database.windows.net` suffix.
 
 1. Run the following `az sql db list` command to list all databases on your Azure SQL logical server:
 
@@ -112,15 +112,15 @@ A *connection string* contains all the information needed for an application to 
 
 Run the following `az sql db show-connection-string` command to get the connection string to the `Logistics` database in a format that `sqlcmd` can use:
 
-    ```azurecli
-    az sql db show-connection-string --client sqlcmd
-    ```
+```azurecli
+ az sql db show-connection-string --client sqlcmd
+```
 
-    Your output resembles the following example. Copy this output for use in the next step.
+Your output resembles the following example. Copy this output for use in the next step.
 
-    ```output
-    "sqlcmd -S tcp:<server-name>.database.windows.net,1433 -d Logistics -U <username> -P <password> -N -l 30"
-    ```
+```output
+"sqlcmd -S tcp:<server-name>.database.windows.net,1433 -d Logistics -U <username> -P <password> -N -l 30"
+```
 
 ### Connection string from the Azure portal
 
@@ -132,9 +132,9 @@ The Azure portal provides connection strings for various data providers for your
 
 ## Connect to your database with Visual Studio Code
 
-Let's use a graphical tool to connect to your new Azure SQL Database. [Visual Studio Code](https://code.visualstudio.com/docs) is a popular, open-source code editor for Linux, macOS, and Windows. It supports extensions, including the [mssql extension](https://aka.ms/mssql-marketplace) for querying SQL Server, Azure SQL Database, Azure SQL Managed Instance, SQL database in Fabric, and other platforms.
+Let's use a graphical tool to connect to your new Azure SQL Database. [Visual Studio Code](https://code.visualstudio.com/docs) is a popular, open-source code editor for Linux, macOS, and Windows. It supports extensions, including the [mssql extension](https://aka.ms/mssql-marketplace). You can use the extension for querying SQL Server, Azure SQL Database, Azure SQL Managed Instance, SQL database in Fabric, and other platforms.
 
-1. First, download and install [Visual Studio Code](https://code.visualstudio.com/docs).
+1. Download and install [Visual Studio Code](https://code.visualstudio.com/docs).
 1. In Visual Studio Code, open the **Extensions** view by selecting the Extensions icon in the Activity Bar on the side of the window. Search for mssql and select **Install** to add the extension. and the [mssql extension](https://aka.ms/mssql-marketplace) to your local workstation. 
 
    > [!TIP]
@@ -148,8 +148,8 @@ Let's use a graphical tool to connect to your new Azure SQL Database. [Visual St
 1. Give your new connection a custom memorable name in **Profile name**.
 1. You have multiple ways to provide the connection information:
    - Choose **Parameters** to manually enter the Azure SQL logical server name, database name, user name, and password.
-   - Choose **Connection string** to paste in the connection string for your database, then add your user name and password. 
-   - Choose **Browse Azure** to connect to your Azure subscription in VS Code and simply select your new Azure SQL Database from a list.
+   - Choose **Connection string** to paste in the connection string for your database, then add your user name and password.
+   - Choose **Browse Azure** to connect to your Azure subscription in VS Code and select your new Azure SQL Database from a list.
 
 1. For this learning exercise, choose **Browse Azure**. Connect to your Azure subscription from VS Code.
 1. Select your **Subscription** from the list. 
@@ -157,7 +157,7 @@ Let's use a graphical tool to connect to your new Azure SQL Database. [Visual St
 1. Select your **Server** and **Database** from the list. 
 1. With **Authentication type** set to **SQL Login**, provide the **User name** and **Password** we created in the last module.
 1. Select **Connect**.
-1. When successful, the **Add connection** dialogue disappears and is replaced by your server connect and an object explorer of **Tables**, **Views**, etc.
+1. When you connect successfully, the **Add connection** dialogue disappears. It's replaced by your server connection and an object explorer of **Tables**, **Views**, etc.
 
    :::image type="content" source="../media/4-vs-code-objects.png" alt-text="Screenshot of the VS Code mssql extension with the server connected and database objects displayed.":::
 
@@ -185,7 +185,7 @@ Let's run a series of commands to perform basic CRUD (*Create, Read, Update, Del
 
    :::image type="content" source="../media/4-vs-code-mssql-execute.png" alt-text="Screenshot of the New Query window with the T-SQL command for the Drivers table. The Execute button is highlighted.":::
 
-   Like almost anything in Visual Studio Code, [keyboard shortcuts can be customized in Visual Studio Code](https://github.com/Microsoft/vscode-mssql/wiki/customize-shortcuts).  In Windows, the default keyboard shortcut for **Execute** is `Ctrl + Shift + E`.
+   Like almost anything in Visual Studio Code, [keyboard shortcuts can be customized in Visual Studio Code](https://github.com/Microsoft/vscode-mssql/wiki/customize-shortcuts). In Windows, the default keyboard shortcut for **Execute** is `Ctrl + Shift + E`.
    
 1. Next, run the following T-SQL statements to verify that the `Drivers` table exists, by querying database metadata:
 
@@ -218,7 +218,7 @@ Let's run a series of commands to perform basic CRUD (*Create, Read, Update, Del
     Total execution time: 00:00:00.044
     ```
 
-1. To see the row we just inserted, run the following T-SQL statements to list the `DriverID` and `OriginCity` columns from all rows in the table:
+1. To see the row we inserted, run the following T-SQL statements to list the `DriverID` and `OriginCity` columns from all rows in the table:
 
     ```sql
     SELECT DriverID, OriginCity FROM Drivers;
@@ -233,7 +233,7 @@ Let's run a series of commands to perform basic CRUD (*Create, Read, Update, Del
     1           Springfield
     ```
 
-1. Let's update the row to change the `OriginCity`. Run the following T-SQL to change the city of origin from "Springfield" to "Boston" for the driver with a `DriverID` of `1`:
+1. Let's update the row and change the `OriginCity`. Run the following T-SQL to change the city of origin from "Springfield" to "Boston" for the driver with a `DriverID` of `1`:
 
     ```sql
     UPDATE Drivers SET OriginCity='Boston' WHERE DriverID=1;

@@ -4,9 +4,9 @@ The Hyper-V cmdlets are available when you install the **Hyper-V Management tool
 
 Hyper-V cmdlets use one of three prefixes:
 
- -  “VM” for virtual machine cmdlets
- -  “VHD” for virtual hard disk cmdlets
- -  “VFD” for virtual floppy disk cmdlets
+- **VM** for virtual machine cmdlets
+- **VHD** for virtual hard disk cmdlets
+- **VFD** for virtual floppy disk cmdlets
 
 The following table lists common cmdlets for managing Hyper-V VMs.
 

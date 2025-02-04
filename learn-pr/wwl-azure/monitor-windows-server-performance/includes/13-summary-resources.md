@@ -3,7 +3,6 @@ Windows Server provides a range of tools to monitor the operating system and the
 Now that you have reviewed this module, you should be able to:
 
 - Use built-in tools to monitor server performance
-
 - Understand the fundamentals of server performance tuning
 
 ## Resources
@@ -11,7 +10,5 @@ Now that you have reviewed this module, you should be able to:
 Use these resources to discover more.
 
 - [Install Windows Admin Center](/windows-server/manage/windows-admin-center/deploy/install)
-
 - [Managing capabilities](/windows-server/manage/system-insights/managing-capabilities)
-
-- Performance Tuning Guidelines for Windows Server 2022:  [Performance Tuning Guidelines for Windows Server 2022](/windows-server/administration/performance-tuning)
+- [Performance Tuning Guidelines for Windows Server](/windows-server/administration/performance-tuning)

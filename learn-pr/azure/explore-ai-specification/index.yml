@@ -26,6 +26,7 @@ prerequisites: |
   - Basic knowledge of brain design patterns
   - Basic knowledge of selecting use cases for Autonomous AI
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels: 
 - beginner
 roles: 

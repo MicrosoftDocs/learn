@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Summary
   description: Review changes made to your application that removed polling and added server push technologies.
-  ms.date: 08/12/2024
+  ms.date: 01/22/2025
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: unit

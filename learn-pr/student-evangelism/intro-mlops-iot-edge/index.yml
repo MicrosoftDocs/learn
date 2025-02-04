@@ -6,8 +6,8 @@ metadata:
   title: "Introduction to MLOps for IoT Edge"
   description: "Analyze the significance of MLOps in the development and deployment of machine learning models for IoT Edge. Describe the components of the MLOps pipeline and show how you can combine them to create models that can be retrained automatically for IoT Edge devices."
   ms.date: 11/28/2023
-  author: PatAltimore
-  ms.author: chnoring
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.service: azure-iot-edge
@@ -23,6 +23,7 @@ prerequisites: |
     - Basic knowledge of DevOps
     - Basic knowledge of IoT Edge
 iconUrl: /training/achievements/student-evangelism/introduction-to-mlops-iot-edge.svg
+hidden: true
 badge:
   uid: learn.oxford.introduction-to-mlops-iot-edge.badge
 levels:

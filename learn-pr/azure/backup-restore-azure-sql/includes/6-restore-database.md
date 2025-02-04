@@ -42,4 +42,4 @@ In the portal, go to the database server's **Overview** page. Then, in the **Ope
 
 Azure SQL Database automatically replicates backed-up databases to datacenters in other regions. If the database in the original region is unavailable—for example, because of a datacenter outage—you can restore from one of these replicated backup copies. You can restore up to the point in time when Azure SQL Database made the backup. The latest backup might not have fully replicated to your region, so you might lose some recent changes.
 
-To perform a geo-restore in the Azure portal, add a new database to an Azure SQL Database server, then select **Backup** in the **Select source** drop-down list and choose the backup from which to restore.
+To perform a geo-restore in the Azure portal, add a new database to an Azure SQL Database server, then select **Backup** in the **Select source** dropdown list and choose the backup from which to restore.

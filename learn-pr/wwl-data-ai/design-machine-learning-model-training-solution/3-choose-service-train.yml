@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-machine-learning-model-training-solution.choose-service-train
-title: Choose a service to train a machine learning model
+title: Train the model
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Choose a service to train a machine learning model
-  description: Choose a service to train a machine learning model
+  title: Train the model
+  description: Train the model
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 01/20/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

@@ -8,6 +8,7 @@ metadata:
   ms.author: ceperezb
   ai-usage: ai-assisted
   ms.topic: module-standard-task-based
+  ms.collection: wwl-ai-copilot
   ms.service: purview
 title: Describe the data governance solutions of Microsoft Purview
 summary: "Learn about Microsoft Purview data governance solutions that leverage AI and modern technologies to ensure data quality, security, and compliance while also accelerating value creation."

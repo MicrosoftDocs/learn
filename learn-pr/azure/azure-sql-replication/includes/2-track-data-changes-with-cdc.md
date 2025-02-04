@@ -39,7 +39,7 @@ You can use CDC by running T-SQL commands.
 In order to enable CDC on your Azure SQL Database, run the following:
 
 ```sql
-EXEC sys.sp_cdc_enable_db
+EXEC sys.sp_cdc_enable_db;
 GO
 ```
 
@@ -58,7 +58,7 @@ EXEC sys.sp_cdc_enable_table
 @role_name     = N'MyRole', 
 @filegroup_name = N'MyDB_CT', 
 @supports_net_changes = 1,
-@captured_column_list = N'Column1, Column2'
+@captured_column_list = N'Column1, Column2';
 ```
 
 **You can specify the following options when creating a capture instance:**
@@ -84,7 +84,7 @@ The following example shows how you can disable CDC on a table:
 
 ```sql
 -- Connect to your target Azure SQL Database
-EXEC sys.sp_cdc_disable_table 
+EXEC sys.sp_cdc_disable_table;
 GO
 ```
 
@@ -96,7 +96,7 @@ GO
 Disabling the CDC on the database removes all associated change data capture metadata, including the CDC user and schema and the CDC jobs. However, any gating roles CDC created will not be removed automatically and must be explicitly deleted. To determine if CDC is enabled on a database, query the `is_cdc_enabled` column in the `sys.databases` catalog view.
 
 ```sql
-EXEC sys.sp_cdc_disable_db
+EXEC sys.sp_cdc_disable_db;
 GO
 ```
 
