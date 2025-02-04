@@ -2,7 +2,7 @@
 
 ## Scenario
 
-As a platform engineer, you need to ensure the applications running on your platform are observable and continuously monitored. In this lab, you will create a sample web application to Azure, configure Azure Monitor and Application Insights, set up custom dashboards, and create alerts to track application performance.
+As a platform engineer, you need to ensure the applications running on your platform are observable and continuously monitored. In this lab, you'll create a sample web application to Azure, configure Azure Monitor and Application Insights, set up custom dashboards, and create alerts to track application performance.
 
 ## Objectives
 

@@ -2,7 +2,7 @@
 
 ## Scenario
 
-In a platform engineering environment, developers need a way to provision infrastructure consistently and efficiently. This lab will guide you through using Bicep, an Infrastructure as Code (IaC) tool, to deploy and manage Azure resources in a self-service manner. You will create a Bicep template to provision a resource group, an Azure App Service, an Azure SQL Database, and a Storage Account while enforcing governance with tagging and policies.
+In a platform engineering environment, developers need a way to provision infrastructure consistently and efficiently. This lab will guide you through using Bicep, an Infrastructure as Code (IaC) tool, to deploy and manage Azure resources in a self-service manner. You'll create a Bicep template to provision a resource group, an Azure App Service, an Azure SQL Database, and a Storage Account while enforcing governance with tagging and policies.
 
 ## Objectives
 
