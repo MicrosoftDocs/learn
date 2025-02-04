@@ -25,12 +25,12 @@ Each privacy rule consists of three key parts:
 
 ## Creating a privacy rule
 
-Privacy rules are configured in **Privacy Assessments** and can be customized to align with your organization’s data governance framework.
+Privacy rules are configured in **Privacy Assessments** and can be customized to align with your organization's data governance framework.
 
 To create a rule:
 
 1. Navigate to the **Privacy rules** page and select **New**.
-1. Enter a name and description to define the rule’s purpose.
+1. Enter a name and description to define the rule's purpose.
 1. Define the rule's purpose:
    - Select **Identify business uses of personal or sensitive data that require assessment** to assign assessments based on business assets.
    - Select **Identify active processes across your data estate that use personal or sensitive data** to assign assessments based on active data processing.
@@ -60,6 +60,10 @@ Privacy rules can be structured to apply when all conditions or any condition is
 - **Processes only as input**: Only evaluates data being ingested.
 - **Processes only as output**: Evaluates data being written or exported.
 
+This example shows the interface for defining conditions in a privacy rule. Here, you can specify the condition type, scope, and operator to refine when an assessment is assigned.
+
+:::image type="content" source="../media/create-privacy-rule.png" alt-text="Screenshot of the Create privacy rule interface, showing how to define conditions for rule evaluation." lightbox="../media/create-privacy-rule.png":::
+
 After defining conditions, select an assessment to assign when conditions are met.
 
 ## Running and validating privacy rules
@@ -71,7 +75,30 @@ Once configured, privacy rules can be activated immediately or saved as a draft 
 
 ## Viewing impact history
 
-For draft rules, the **Impact History** tab provides insights into how many assets met rule conditions. If results meet expectations, the rule can be activated.
+For draft rules, the **Impact History** tab provides insights into how many assets met rule conditions. This allows privacy teams to review potential assignments before activating a rule.
+
+### Reviewing rule impact estimation
+
+The **Rule impact estimation** pane provides a detailed breakdown of how many business activities match rule conditions. This helps validate that the rule is correctly configured before assessments are assigned.
+
+To review impact estimation:
+
+1. Navigate to Privacy rules and select a draft rule.
+1. Open the **Impact History** tab.
+1. Review the **Results** column to see how many business activities met the rule's conditions.
+1. Select **See results** to open the **Rule impact estimation** pane.
+
+The **Rule impact estimation** pane shows:
+
+- The number of impacted business activities that will receive assessments if the rule is activated.
+- A breakdown of in-scope and out-of-scope activities based on rule conditions.
+- A historical log of rule runs, including scheduled and on-demand executions.
+
+The example screenshot shows one impacted business activity, meaning it will receive an assessment if the rule is turned on.
+
+:::image type="content" source="../media/rule-impact-estimation.png" alt-text="Screenshot of the Rule impact estimation pane, showing a breakdown of impacted business activities." lightbox="../media/rule-impact-estimation.png":::
+
+If the estimation results don't match expectations, edit the rule’s conditions to refine its scope before activation.
 
 > [!NOTE]
 > Draft rules don't assign assessments until they're activated.
@@ -84,9 +111,9 @@ To confirm that a rule is working as expected:
 1. Choose an asset and navigate to its **Privacy** page.
 1. Verify that the expected assessment appears.
 
-If an assessment is missing, review the rule’s conditions and asset relationships to ensure proper configuration.
+If an assessment is missing, review the rule's conditions and asset relationships to ensure proper configuration.
 
 > [!TIP]
-> Privacy rules run on a schedule. If an assessment doesn’t appear immediately, check back later.
+> Privacy rules run on a schedule. If an assessment doesn't appear immediately, check back later.
 
 Privacy rules help organizations maintain structured and automated privacy assessments across their data estate. By defining clear criteria, organizations can ensure that assessments are assigned efficiently, reducing manual oversight and improving compliance tracking. Once configured, privacy teams can rely on privacy rules to provide continuous oversight of personal and sensitive data usage.

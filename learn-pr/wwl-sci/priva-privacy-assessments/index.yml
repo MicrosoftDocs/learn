@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.priva-privacy-assessments
+metadata:
+  title: Manage user consent across digital platforms
+  description: "Manage user consent across digital platforms."
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Manage user consent across digital platforms
+summary: Microsoft Priva Consent Management helps organizations manage user consent preferences, ensuring transparency and alignment with privacy expectations. Learn how to configure consent models, set up prerequisites, deploy publishing profiles, and manage consent across digital platforms.
+abstract: |
+  After completing this module, you'll be able to:  
+  - Explain the purpose and benefits of Microsoft Priva Consent Management.  
+  - Set up and configure consent models, including prerequisites like tracker categories.  
+  - Create and apply publishing profiles to manage consent models across websites.  
+  - Deploy consent models using consent model packages for consistent application.  
+  - Ensure consent models remain accurate and up to date with privacy requirements.
+prerequisites: |
+  - Familiarity with Microsoft 365 services.  
+  - Basic understanding of data privacy, user consent, and compliance principles.  
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- privacy-manager
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.priva-privacy-assessments.introduction
+- learn.wwl.priva-privacy-assessments.privacy-assessments-overview
+- learn.wwl.priva-privacy-assessments.configure-metamodel-register-assets
+- learn.wwl.priva-privacy-assessments.create-manage-privacy-assessments
+- learn.wwl.priva-privacy-assessments.create-privacy-rules
+- learn.wwl.priva-privacy-assessments.knowledge-check
+- learn.wwl.priva-privacy-assessments.summary
+
+badge:
+  uid: learn.wwl.priva-privacy-assessments.badge
