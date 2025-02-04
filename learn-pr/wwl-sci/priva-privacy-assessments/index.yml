@@ -1,26 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.priva-privacy-assessments
 metadata:
-  title: Manage user consent across digital platforms
-  description: "Manage user consent across digital platforms."
+  title: Automate privacy assessments to ensure compliance
+  description: "Automate privacy assessments to ensure compliance."
   ms.date: 01/24/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
   hidden: false
-title: Manage user consent across digital platforms
-summary: Microsoft Priva Consent Management helps organizations manage user consent preferences, ensuring transparency and alignment with privacy expectations. Learn how to configure consent models, set up prerequisites, deploy publishing profiles, and manage consent across digital platforms.
+title: Automate privacy assessments to ensure compliance
+summary: Microsoft Priva Privacy Assessments helps organizations track and document how personal data is used across business operations. Automating privacy assessments reduces manual effort, ensures compliance records stay accurate, and enables privacy teams to evaluate data processing activities in real time. Learn how to configure business assets, create assessments, define privacy rules, and assess privacy risks based on structured responses.
 abstract: |
   After completing this module, you'll be able to:  
-  - Explain the purpose and benefits of Microsoft Priva Consent Management.  
-  - Set up and configure consent models, including prerequisites like tracker categories.  
-  - Create and apply publishing profiles to manage consent models across websites.  
-  - Deploy consent models using consent model packages for consistent application.  
-  - Ensure consent models remain accurate and up to date with privacy requirements.
+  - Explain the purpose and benefits of Microsoft Priva Privacy Assessments.
+  - Configure business assets in the metamodel to align assessments with data use.
+  - Create and manage privacy assessments using templates and custom questionnaires.
+  - Define privacy rules to automate the assignment of assessments based on data changes.
+  - Configure risk settings and evaluate privacy risks in assessment responses.
 prerequisites: |
-  - Familiarity with Microsoft 365 services.  
-  - Basic understanding of data privacy, user consent, and compliance principles.  
+  - Familiarity with Microsoft Purview Data Map and its role in privacy assessments.
+  - Basic understanding of data privacy, compliance frameworks, and privacy risk management.  
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

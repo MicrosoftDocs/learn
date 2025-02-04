@@ -64,12 +64,12 @@ quiz:
 
   - content: "Your privacy team wants to archive and share completed assessments for auditing. What should they do?"
     choices:
-    - content: "Export assessment responses as a Word or PDF file."
-      isCorrect: true
-      explanation: "Correct: Assessment responses can be exported in Word or PDF format for auditing and compliance reporting."
     - content: "Delete assessments after they are reviewed."
       isCorrect: false
       explanation: "Incorrect: Deleting assessments would remove compliance records needed for auditing."
     - content: "Store assessments in a separate tracking spreadsheet."
       isCorrect: false
       explanation: "Incorrect: Manual tracking spreadsheets are not an efficient or reliable method for managing assessments."
+    - content: "Export assessment responses as a Word or PDF file."
+      isCorrect: true
+      explanation: "Correct: Assessment responses can be exported in Word or PDF format for auditing and compliance reporting."
