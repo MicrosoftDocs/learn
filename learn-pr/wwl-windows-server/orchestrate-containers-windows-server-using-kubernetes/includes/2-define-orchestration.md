@@ -1,4 +1,4 @@
-To help you to determine Contoso's best options for running multiple container workloads on Windows Server 2019, you need to understand Windows container orchestration and the types of container orchestration tools available.
+To help you to determine Contoso's best options for running multiple container workloads on Windows Server, you need to understand Windows container orchestration and the types of container orchestration tools available.
 
 ## What is Windows container orchestration?
 

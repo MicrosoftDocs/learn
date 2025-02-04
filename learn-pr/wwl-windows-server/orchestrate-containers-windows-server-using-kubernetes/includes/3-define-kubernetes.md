@@ -7,9 +7,7 @@ Kubernetes provides a means of operating and managing containerized applications
 Kubernetes can provide your container-based applications with benefits such as:
 
 - Portability. Kubernetes' declarative approach to deployment is implemented by using lightweight YAML manifest files. For application updates you don't have to re-architect infrastructure.
-
 - Scalability. You can schedule and deploy containers, scale them as needed and manage their life cycles.
-
 - Extensibility. The Kubernetes open-source API allows you to build applications with your preferred programming language, operating system (OS), libraries, and messaging bus. You can also integrate your existing continuous integration and continuous delivery (CI/CD) tools.
 
 ### Kubernetes architecture
@@ -17,7 +15,6 @@ Kubernetes can provide your container-based applications with benefits such as:
 A Kubernetes cluster is divided into two core components:
 
 - Nodes or *worker nodes* that run the application workloads (tasks) within a cluster. A cluster typically contains multiple nodes that are managed by the control plane. Sub-components of a node include the *kubelet*, *kube-proxy*, and *container runtime*.
-
 - Control plane or *master node* that provides core Kubernetes services that are used for orchestrating your application workloads by scheduling and controlling the tasks within a cluster. Components that make up the control plane include *kube-api-server*, *controller*, and *kube-scheduler*.
 
 > [!NOTE]
@@ -25,7 +22,7 @@ A Kubernetes cluster is divided into two core components:
 
 :::image type="content" source="../media/m26-kubernetes-cluster.png" alt-text="A diagram to exemplify the components of a Kubernetes cluster with representations for master and worker node with the sub-components API server, kubelet, container runtime and container instances." border="false":::
 
-Each Kubernetes cluster contains at least one control plane and one or more worker node instances. Worker node instances can be based either on the Linux OS or on Windows Server 2019. A typical Kubernetes workload is made up of several containers that are distributed over multiple worker nodes in a cluster.
+Each Kubernetes cluster contains at least one control plane and one or more worker node instances. Worker node instances can be based either on the Linux OS or on Windows Server. A typical Kubernetes workload is made up of several containers that are distributed over multiple worker nodes in a cluster.
 
 ### Terminology and definitions
 
