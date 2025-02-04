@@ -46,7 +46,7 @@ To create a Kubernetes cluster, you can connect ADM to the node machines by usin
 
     :::image type="content" source="../media/m26-kubeadm-init.png" alt-text="A screenshot of the terminal output from the command `kubeadm init` in a terminal window." border="false":::
 
-1. Install a pod network for the cluster by adding a suitable network plug-in configuration manifest **.yaml** file such as **Flannel**. For example, in a terminal window on the master, add the file **network-plug-in.yaml** by using the following command :
+1. Install a pod network for the cluster by adding a suitable network plug-in configuration manifest **.yaml** file such as **Flannel**. For example, in a terminal window on the master, add the file **network-plug-in.yaml** by using the following command:
 
     ```bash
     kubectl apply -f <network-plug-in.yaml>
