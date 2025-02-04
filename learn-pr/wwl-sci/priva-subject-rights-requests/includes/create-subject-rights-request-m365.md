@@ -33,7 +33,7 @@ Templates simplify the process with default settings for three request types: **
 
 1. To review or modify settings, select **View settings** and then **Edit settings** to adjust advanced options.
 
-1. Enter the data subject's details, including required fields, like name and email address. Additional fields like region or regulation type are optional.
+1. Enter the data subject's details, including required fields, like name and email address. Extra fields like region or regulation type are optional.
 
 1. Select **Create** to finalize the request. The request appears at the top of the request list.
 

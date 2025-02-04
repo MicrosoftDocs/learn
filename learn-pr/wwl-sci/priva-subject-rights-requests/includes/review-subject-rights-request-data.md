@@ -99,7 +99,7 @@ For items that can't be reviewed within the content area, you can download them 
 Tags help organize items and communicate with collaborators. Priva provides:
 
 - **Default tags**: Two preconfigured tags (Follow-up and Update).
-- **Custom tags**: Up to 21 additional tags you can define.
+- **Custom tags**: Up to 21 extra tags you can define.
 
 To apply tags:
 
