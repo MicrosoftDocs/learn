@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-aws-azure.compare-eks-aks
+title: Examine Kubernetes hosting in AWS and Azure
+metadata:
+  title: Examine Kubernetes hosting in AWS and Azure
+  description: "Learn about how you can host Kubernetes clusters and their containers in Azure and compare those services to their equivalent in AWS."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-compare-eks-aks.md)]

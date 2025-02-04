@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-aws-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Test what you've learned about Azure and how it compares to AWS."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "You're using AWS S3 to host videos that are published on your public-facing website. Now, you're migrating the site to the Azure App Service. Which of the following Azure services can you use to replace AWS S3?"
+    choices:
+    - content: "Azure Blob Storage"
+      isCorrect: true
+      explanation: "Correct. Azure Blob Storage is optimized for storing unstructured data such as videos and serving it quickly."
+    - content: "Azure Functions"
+      isCorrect: false
+      explanation: "Incorrect. Azure Functions is a service that hosts custom code for serverless execution. It's not designed to store and serve videos."
+    - content: "Azure Managed Disks"
+      isCorrect: false
+      explanation: "Incorrect. Azure Managed Disks store block-level volumes to be used as virtual disks for Virtual Machines (VMs). You can't use it to store and serve videos."
+  - content: "Your developers have created a web app that consists of 5 virtual machines and a NoSQL database. You want to create and manage all these resources as a single unit in your Azure subscription. Which object should you create to group them?"
+    choices:
+    - content: "An Azure management group"
+      isCorrect: false
+      explanation: "Incorrect. In Azure, use management groups to associate all your Azure subscriptions. You can't use them to group resources."
+    - content: "An Entra ID security group"
+      isCorrect: false
+      explanation: "Incorrect. Entra ID security groups are used to assign security permissions to multiple security principals. You can't use them to group resources in Azure."
+    - content: "An Azure resource group"
+      isCorrect: true
+      explanation: "Correct. In Azure, use resource groups to associate multiple resources into a single unit to make management easier."
+  - content: "You have 10 members of your IT management team who should be able to administrator Virtual Machines (VMs) and Cosmos DB databases in your subscription. You want to assign these permissions and manage them efficiently. Which object should you use?"
+    choices:
+    - content: "An RBAC role"
+      isCorrect: true
+      explanation: "Correct. You can create an RBAC role that assigns full control over VMs and Cosmos DB and assign it to the subscription. User accounts that have this role will receive the necessary permissions."
+    - content: "An Azure Policy"
+      isCorrect: false
+      explanation: "Incorrect. Use Azure Policies to enforce governance rules over Azure resources. You can't use them to assign permissions to resources."
+    - content: "An Azure resource group"
+      isCorrect: false
+      explanation: "Incorrect. Azure resource groups associate resources into a single unit for easier administration. You can't use them to assign permissions to resources."
+  - content: "You're migrating your Kubernetes cluster from AWS to Azure. Which of the following operations must you complete manually?"
+    choices:
+    - content: "Control plane set up."
+      isCorrect: true
+      explanation: "Correct. In Azure Kubernetes Service (AKS), you must manually configure the control plane, but scaling of the control plane and worker nodes is automatic."
+    - content: "Control plane scaling."
+      isCorrect: false
+      explanation: "Incorrect. In Azure Kubernetes Service (AKS), the service can scale the control plane automatically."
+    - content: "Working node scaling."
+      isCorrect: false
+      explanation: "Incorrect. In Azure Kubernetes Service (AKS), the service can scale the worker nodes automatically."
+  - content: "You have an AWS DynamoDB database that you want to migrate to Azure as easily as possible. Which of these database services should you use?"
+    choices:
+    - content: "Azure Database for MariaDB"
+      isCorrect: false
+      explanation: "Incorrect. AWS DynamoDB is a NoSQL database but Azure Database for MariaDB is a relational database."
+    - content: "Azure Cosmos DB"
+      isCorrect: true
+      explanation: "Correct. AWS DynamoDB is a NoSQL database. Of the choices in this question, only Cosmos DB supports NoSQL data."
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "Incorrect: AWS DynamoDB is a NoSQL database but Azure SQL Database is a relational database."

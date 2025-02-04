@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-aws-azure.compute-storage-networking
+title: Understand the differences between AWS and Azure Infrastructure-as-a-Service options
+metadata:
+  title: Understand the differences between AWS and Azure Infrastructure-as-a-Service options
+  description: "Cloud services provide replacements for on-premises infrastructure, including servers, information storage, and networking configurations. Learn how the implementation of this functionality in Azure compares to AWS."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-compute-storage-networking.md)]

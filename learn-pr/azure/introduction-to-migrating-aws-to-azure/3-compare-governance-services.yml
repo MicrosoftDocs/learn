@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-aws-azure.compare-governance-services
+title: Compare governance services on AWS with Azure
+metadata:
+  title: Compare governance services on AWS with Azure
+  description: "In this unit, you'll examine features of Azure that enable you to govern and monitor data usage, and comply with legislation. You'll relate those features to similar AWS functionality."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-compare-governance-services.md)]
