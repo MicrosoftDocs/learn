@@ -13,11 +13,11 @@ Without Microsoft Priva Privacy Risk Management, organizations would face manual
 
 ## Resources
 
-- [Learn about privacy risk management](/privacy/priva/risk-management?azure-portal=true)
+- [Learn about Privacy Risk Management](/privacy/priva/risk-management?azure-portal=true)
 - [Find and visualize personal data in Privacy Risk Management](/privacy/priva/priva-data-profile?azure-portal=true)
-- [Privacy risk management policies](/privacy/priva/risk-management-policies?azure-portal=true)
+- [Privacy Risk Management policies](/privacy/priva/risk-management-policies?azure-portal=true)
 - [Investigate and remediate alerts in Privacy Risk Management](/privacy/priva/risk-management-alerts?azure-portal=true)
-- [User notifications in privacy risk management](/privacy/priva/risk-management-notifications?azure-portal=true)
+- [User notifications in Privacy Risk Management](/privacy/priva/risk-management-notifications?azure-portal=true)
 
 ## Legal disclaimer
 

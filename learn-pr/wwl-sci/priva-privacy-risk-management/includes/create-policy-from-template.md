@@ -1,4 +1,4 @@
-Microsoft Priva Privacy Risk Management offers three policy templates to address common challenges related to personal data protection. These templates, **Data overexposure**, **Data transfers**, and **Data ninimization**, come with pre-configured settings for quick deployment or customization based on your organization's needs. This approach is ideal for organizations looking to deploy policies quickly with minimal configuration.
+Microsoft Priva Privacy Risk Management offers three policy templates to address common challenges related to personal data protection. These templates, **Data overexposure**, **Data transfers**, and **Data minimization**, come with preconfigured settings for quick deployment or customization based on your organization's needs. This approach is ideal for organizations looking to deploy policies quickly with minimal configuration.
 
 Policies created from these templates can help organizations:
 
