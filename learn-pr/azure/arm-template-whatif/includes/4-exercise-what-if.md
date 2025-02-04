@@ -215,6 +215,7 @@ Run `New-AzResourceGroupDeployment` with the `-WhatIf` flag to perform the what-
 
 ```powershell
 New-AzResourceGroupDeployment `
+  -Name main `
   -WhatIf `
   -TemplateFile main.bicep
 ```
@@ -227,6 +228,7 @@ Run `New-AzResourceGroupDeployment` with the `-WhatIf` flag to perform the what-
 
 ```powershell
 New-AzResourceGroupDeployment `
+  -Name main `
   -WhatIf `
   -TemplateFile azuredeploy.json
 ```
@@ -319,6 +321,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
     ```powershell
     New-AzResourceGroupDeployment `
+    -Name main `
     -Mode Complete `
     -Confirm `
     -TemplateFile main.bicep
@@ -336,6 +339,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
     ```powershell
     New-AzResourceGroupDeployment `
+    -Name main `
     -Mode Complete `
     -Confirm `
     -TemplateFile azuredeploy.json
@@ -353,6 +357,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
     ```azurecli
     az deployment group create \
+      --name main \
       --mode Complete \
       --confirm-with-what-if \
       --template-file main.bicep
@@ -370,6 +375,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
     ```azurecli
     az deployment group create \
+      --name main \
       --mode Complete \
       --confirm-with-what-if \
       --template-file azuredeploy.json
