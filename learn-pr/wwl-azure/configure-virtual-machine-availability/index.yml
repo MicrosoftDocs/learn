@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure virtual machine availability
   description: "Learn how to configure virtual machine availability including vertical and horizontal scaling."
-  ms.date: 12/19/2024
+  ms.date: 02/04/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
@@ -50,7 +50,6 @@ units:
 - learn.wwl.configure-virtual-machine-availability.create-scale-sets
 - learn.wwl.configure-virtual-machine-availability.implement-autoscale
 - learn.wwl.configure-virtual-machine-availability.configure-autoscale
-- learn.wwl.configure-virtual-machine-availability.inteactive-lab-simulation-scaling
 - learn.wwl.configure-virtual-machine-availability.knowledge-check
 - learn.wwl.configure-virtual-machine-availability.summary-resources
 badge:
