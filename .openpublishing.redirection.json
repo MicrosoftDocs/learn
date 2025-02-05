@@ -33167,6 +33167,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/provide-services-for-azure-stack-hub/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/manage-usage-billing-azure-stack-hub/9-azure-stack-hub-usage-bill.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false

@@ -1517,6 +1517,11 @@ achievements:
   title: Manage usage and billing for Azure Stack Hub
   summary: Manage usage and billing for Azure Stack Hub
   iconUrl: /training/achievements/5-manage-usage-and-billing-for-azure-stack-hub.svg
+- uid: learn.wwl.provide-services-for-azure-stack-hub.trophy
+  type: trophy
+  title: Provide services for Azure Stack Hub
+  summary: Provide services for Azure Stack Hub
+  iconUrl: /training/achievements/provide-services-for-azure-stack-hub.svg
 - uid: learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.badge
   type: badge
   title: Offer an Event Hubs resource provider for Azure Stack Hub
