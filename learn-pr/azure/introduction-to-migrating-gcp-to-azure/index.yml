@@ -11,13 +11,13 @@ metadata:
 title: Introduction to migrating from Google Cloud to Microsoft Azure
 summary: "If you're familiar with Google Cloud and its services, Microsoft Azure can be disorienting in its terminology. It can also confuse because its approach to common cloud problems is different to Google Cloud's. In this module, learn how to map technologies and solutions in Google Cloud to their equivalent in Azure."
 abstract: |
-  By the end of this module, you'll be able to:
-  - Understand identity and access management (IAM) in Azure compared to GCP.
+  By the end of this module, you're able to:
+  - Understand identity and access management (IAM) in Azure compared to Google Cloud Platform (GCP).
   - Compare governance services on GCP with Azure.
   - Understand the differences between GCP and Azure Infrastructure-as-a-Service (IaaS) options.
   - Compare database services in GCP with Azure.
   - Compare event driven architecture and messaging services in GCP and Azure.
-  - Compare Google GKE and Azure Kubernetes Services (AKS).
+  - Compare Google Kubernetes Engine (GKE) and Azure Kubernetes Services (AKS).
   - Understand where to find more information about GCP equivalent Azure services.
 prerequisites: |
   - Familiarity with cloud concepts
