@@ -31,4 +31,4 @@ In your GitHub Codespaces, use the provided specifications to create prompts tha
 1. Repeat steps 2 and 4 to play a few rounds and choose not to continue playing.
 1. Check if the minigame is terminated and if it displays your score, informing you of the number of wins and rounds.
 
-Congratulations on completing this challenge exercise! You've created a Python console minigame using GitHub Copilot.
+Congratulations on completing this challenge exercise! You've created a .NET console minigame using GitHub Copilot.

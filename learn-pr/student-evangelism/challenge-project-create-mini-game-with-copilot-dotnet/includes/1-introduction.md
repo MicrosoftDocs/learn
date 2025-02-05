@@ -1,10 +1,10 @@
-Creating a minigame can help you practice your programming skills and improve your ability to create console applications in Python.
+Creating a minigame can help you practice your programming skills and improve your ability to create console applications in .NET.
 
 In this module, you develop the classic rock, paper, scissors minigame, with the help of GitHub Codespaces and GitHub Copilot. That is, you don't need to worry about configuring the development environment, so you can focus on application development while relying on a code assistant.
 
 ## About the challenge
 
-The rock, paper, scissors game is a hand game in which each player chooses one of the three tools. From a programming point of view, this challenge is a nice exercise to practice conditional decisions, iterations, and the use of Python modules.
+The rock, paper, scissors game is a hand game in which each player chooses one of the three tools. From a programming point of view, this challenge is a nice exercise to practice conditional decisions, iterations, and the use .NET.
 
 The winner of the game is based in three simple rules:
 
@@ -26,7 +26,7 @@ In this module, you demonstrate your ability to:
 
 - Use GitHub Codespaces as a development environment.
 - Use GitHub Copilot as an assistant.
-- Develop input and output routines in a Python console application.
+- Develop input and output routines in a .NET console application.
 
 ## Prerequisites
 
