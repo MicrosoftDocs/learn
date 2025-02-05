@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.priva-privacy-assessments
+metadata:
+  title: Automate privacy assessments to ensure compliance
+  description: "Automate privacy assessments to ensure compliance."
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Automate privacy assessments to ensure compliance
+summary: Microsoft Priva Privacy Assessments (preview) helps organizations track and document how personal data is used across business operations. Automating privacy assessments reduces manual effort, ensures compliance records stay accurate, and enables privacy teams to evaluate data processing activities in real time. Learn how to configure business assets, create assessments, define privacy rules, and assess privacy risks based on structured responses.
+abstract: |
+  After completing this module, you'll be able to:  
+  - Explain the purpose and benefits of Microsoft Priva Privacy Assessments.
+  - Configure business assets in the metamodel to align assessments with data use.
+  - Create and manage privacy assessments using templates and custom questionnaires.
+  - Define privacy rules to automate the assignment of assessments based on data changes.
+  - Configure risk settings and evaluate privacy risks in assessment responses.
+prerequisites: |
+  - Familiarity with Microsoft Purview Data Map and its role in privacy assessments.
+  - Basic understanding of data privacy, compliance frameworks, and privacy risk management.  
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- privacy-manager
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.priva-privacy-assessments.introduction
+- learn.wwl.priva-privacy-assessments.privacy-assessments-overview
+- learn.wwl.priva-privacy-assessments.configure-metamodel-register-assets
+- learn.wwl.priva-privacy-assessments.create-manage-privacy-assessments
+- learn.wwl.priva-privacy-assessments.create-privacy-rules
+- learn.wwl.priva-privacy-assessments.knowledge-check
+- learn.wwl.priva-privacy-assessments.summary
+
+badge:
+  uid: learn.wwl.priva-privacy-assessments.badge
