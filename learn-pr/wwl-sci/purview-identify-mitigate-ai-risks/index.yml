@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.purview-identify-mitigate-ai-risks
+metadata:
+  title: Identify and mitigate AI data security risks
+  description: "Identify and mitigate AI data security risks."
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Use Microsoft Priva Tracker Scanning for web tracking complianceIdentify and mitigate AI data security risks
+summary: Microsoft Priva Tracker Scanning helps organizations identify, categorize, and manage web tracking technologies to ensure compliance and transparency. Learn how to configure Tracker Scanning, create and manage tracker categories, run scans to detect tracking technologies, and support responsible data practices aligned with user expectations.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain the purpose and benefits of Microsoft Priva Tracker Scanning.
+  - Set up and configure Tracker Scanning to meet your organization's needs.
+  - Create and manage tracker categories and assign trackers effectively.
+  - Configure and run scans to detect tracking technologies and compliance objects.
+  - Analyze scan results to address compliance issues and improve tracking practices.
+prerequisites: |
+  - Familiarity with Microsoft 365 services.
+  - Basic understanding of web trackers, cookies, and privacy compliance practices.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- privacy-manager
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.purview-identify-mitigate-ai-risks.introduction
+- learn.wwl.purview-identify-mitigate-ai-risks.tracker-scanning-overview
+- learn.wwl.purview-identify-mitigate-ai-risks.configure-tracker-scanning
+- learn.wwl.purview-identify-mitigate-ai-risks.create-manage-trackers
+- learn.wwl.purview-identify-mitigate-ai-risks.run-a-scan
+- learn.wwl.purview-identify-mitigate-ai-risks.view-scan-results.md
+- learn.wwl.purview-identify-mitigate-ai-risks.knowledge-check
+- learn.wwl.purview-identify-mitigate-ai-risks.summary
+
+badge:
+  uid: learn.wwl.purview-identify-mitigate-ai-risks.badge
