@@ -54,15 +54,16 @@ subjects:
   - productivity
   - site-reliability-engineering
 units:
-  - learn.wwl.strategic-platform-road-mapping.introduction
-  - learn.wwl.strategic-platform-road-mapping.understand-strategic-importance-platform-engineering
-  - learn.wwl.strategic-platform-road-mapping.develop-scalable-platform-architecture
-  - learn.wwl.strategic-platform-road-mapping.future-proofing-platform
-  - learn.wwl.strategic-platform-road-mapping.continuous-improvement-innovation-management
-  - learn.wwl.strategic-platform-road-mapping.roadmap-development-execution
-  - learn.wwl.strategic-platform-road-mapping.risk-management-platform-engineering
-  - learn.wwl.strategic-platform-road-mapping.communicate-roadmap-stakeholders
-  - learn.wwl.strategic-platform-road-mapping.knowledge-check
-  - learn.wwl.strategic-platform-road-mapping.summary
+- learn.wwl.strategic-platform-road-mapping.introduction
+- learn.wwl.strategic-platform-road-mapping.understand-strategic-importance-platform-engineering
+- learn.wwl.strategic-platform-road-mapping.develop-scalable-platform-architecture
+- learn.wwl.strategic-platform-road-mapping.future-proofing-platform
+- learn.wwl.strategic-platform-road-mapping.continuous-improvement-innovation-management
+- learn.wwl.strategic-platform-road-mapping.roadmap-development-execution
+- learn.wwl.strategic-platform-road-mapping.risk-management-platform-engineering
+- learn.wwl.strategic-platform-road-mapping.communicate-roadmap-stakeholders
+- learn.wwl.strategic-platform-road-mapping.implementing-self-service-infrastructure-with-bicep
+- learn.wwl.strategic-platform-road-mapping.knowledge-check
+- learn.wwl.strategic-platform-road-mapping.summary
 badge:
   uid: learn.wwl.strategic-platform-road-mapping.badge
