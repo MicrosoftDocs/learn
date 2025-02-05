@@ -155,9 +155,9 @@ The file downloads immediately for external sharing.
 
 Once assessments are in place, organizations can:
 
-1. **Monitor assessment responses** to ensure privacy compliance.
-1. **Adjust risk settings** based on changing business needs.
-1. **Automate privacy rules** to streamline assessment assignments.
+- **Monitor assessment responses** to ensure privacy compliance.
+- **Adjust risk settings** based on changing business needs.
+- **Automate privacy rules** to streamline assessment assignments.
 
 Regularly reviewing assessments ensures organizations stay aligned with evolving privacy requirements.
 
