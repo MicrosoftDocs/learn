@@ -1502,6 +1502,11 @@ achievements:
   title: Manage Azure Stack Hub Marketplace
   summary: Manage Azure Stack Hub Marketplace
   iconUrl: /training/achievements/1-manage-azure-stack-hub-marketplace.svg
+- uid: learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.badge
+  type: badge
+  title: Offer an Event Hubs resource provider for Azure Stack Hub
+  summary: Offer an Event Hubs resource provider for Azure Stack Hub
+  iconUrl: /training/achievements/offer-an-event-hubs-resource-provider-for-azure-stack-hub.svg
 - uid: learn.monitor-azure-cosmos-db.badge
   type: badge
   title: Optimize the performance of Azure Cosmos DB by using partitioning and indexing strategies
