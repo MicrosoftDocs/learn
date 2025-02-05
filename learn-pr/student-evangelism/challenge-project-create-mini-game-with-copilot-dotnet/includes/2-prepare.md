@@ -25,11 +25,11 @@ GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestio
 
 Activating a GitHub Copilot trial on your GitHub:
 
-- On the top-right corner of any page, click your profile picture and then **Settings.**
-- On the "Code, planning, and automation" section of the sidebar, click **GitHub Copilot.**
-- Click "Start free trial" and pick whether you want to pay per month or per year and click Proceed to get access to Copilot.
-- Follow the steps to verify your payment details and click Send.
-- Choose your preferences and click Save and begin.
+1. On the top-right corner of any page, click your profile picture and then **Settings.**
+1. On the "Code, planning, and automation" section of the sidebar, click **GitHub Copilot.**
+1. Click "Start free trial" and pick whether you want to pay per month or per year and click Proceed to get access to Copilot.
+1. Follow the steps to verify your payment details and click Send.
+1. Choose your preferences and click Save and begin.
 
 > [!NOTE]
 > Students can claim the GitHub Student Developer Pack at [GitHub Student Developer Pack - GitHub Education](https://education.github.com/pack). This offer includes access to Codespaces, GitHub Copilot, and Azure for Students and other benefits.
@@ -49,4 +49,4 @@ On the repository page that was created, select the `Code` button and, in the Co
 When Codespaces finishes creating the development environment, you see a Visual Studio Code window in the browser. You can use Visual Studio Code in the browser to develop the minigame application.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of Codespaces running a Visual Studio Code experience on browser](./media/quick-view.png)
+> ![Screenshot of Codespaces running a Visual Studio Code experience on browser.](./media/quick-view.png)
