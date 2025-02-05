@@ -3,7 +3,7 @@ uid: learn.introduction-migrating-gcp-azure.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "In this introductory module, you'll learn about a business scenario that requires services to be migrated from Google Cloud to Azure. We'll use this scenario to illustrate features and methods throughout the module."
+  description: "In this introductory module, you learn about a business scenario that requires services to be migrated from Google Cloud to Azure. We use this scenario to illustrate features and methods throughout the module."
   ms.date: 01/16/2025
   author: carols
   ms.author: carols
