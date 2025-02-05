@@ -19416,6 +19416,10 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/1-introduction"
     },
     {
+      "source_path_from_root": "/learn-pr/achievements/learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/achievements/learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.badge"
+    },
+    {
       "source_path_from_root": "/learn-pr/windows/wsl-introduction/what-is-wsl.yml",
       "redirect_url": "https://learn.microsoft.com/windows/wsl/about"
     },
