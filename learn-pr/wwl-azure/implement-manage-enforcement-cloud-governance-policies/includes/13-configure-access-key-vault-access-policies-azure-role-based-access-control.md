@@ -4,7 +4,7 @@ Azure RBAC allows users to manage Key, Secrets, and Certificates permissions. It
 
 The Azure RBAC model allows uses to set permissions on different scope levels: management group, subscription, resource group, or individual resources. Azure RBAC for key vault also allows users to have separate permissions on individual keys, secrets, and certificates.
 
-## Best Practices for individual keys, secrets, and certificates role assignments
+## Best practices for individual keys, secrets, and certificates role assignments
 
 Our recommendation is to use a vault per application per environment (Development, Pre-Production, and Production).
 
@@ -15,7 +15,7 @@ Individual keys, secrets, and certificates permissions should be used only for s
 ## Azure built-in roles for Key Vault data plane operations
 
 > [!NOTE]
-> *The Key Vault Contributor role is for management plane operations only to manage key vaults. It does not allow access to keys, secrets and certificates.*
+> The Key Vault Contributor role is for management plane operations only to manage key vaults. It does not allow access to keys, secrets and certificates.
 
 | **Built-in role**                        | **Description**                                                                                                                                                                                                                                                             | **ID**                               |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |

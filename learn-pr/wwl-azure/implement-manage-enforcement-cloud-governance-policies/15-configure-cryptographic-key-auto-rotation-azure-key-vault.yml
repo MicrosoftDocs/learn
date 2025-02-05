@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure key rotation
   description: "Configure key rotation"
-  ms.date: 02/04/2025
+  ms.date: 02/05/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

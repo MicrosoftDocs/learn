@@ -8,7 +8,7 @@ A security principal is an object that represents a user, group, service, or app
 
 For applications, there are two ways to obtain a service principal:
 
- -  Recommended: enable a system-assigned managed identity for the application. With managed identity, Azure internally manages the application's service principal and automatically authenticates the application with other Azure services. Managed identity is available for applications deployed to a variety of services.
+ -  Recommended: Enable a system-assigned managed identity for the application. With managed identity, Azure internally manages the application's service principal and automatically authenticates the application with other Azure services. Managed identity is available for applications deployed to a variety of services.
  -  If you cannot use managed identity, you instead register the application with your Microsoft Entra tenant, as described on Quickstart: Register an application with the Azure identity platform. Registration also creates a second application object that identifies the app across all tenants.
 
 ## Configure the Key Vault firewall

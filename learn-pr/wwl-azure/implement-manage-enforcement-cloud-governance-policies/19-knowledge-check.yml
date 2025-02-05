@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/04/2025
+  ms.date: 02/05/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: "Virtual machine sizes and configurations."
       isCorrect: false
-      explanation: "Vault is not involved in managing VM sizes or configurations. It's focused on cryptographic keys and secrets management."
+      explanation: "Vault isn't involved in managing VM sizes or configurations. It's focused on cryptographic keys and secrets management."
     - content: "Certificates, secrets, and encryption keys."
       isCorrect: true
       explanation: "Key Vault is specifically designed for securely storing and accessing secrets, keys, and certificates, providing a centralized management solution for these sensitive data."
@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "To enhance network speed and efficiency."
       isCorrect: false
-      explanation: "Azure Policy does not directly affect network speed or efficiency. Its main role is governance and compliance."
+      explanation: "Azure Policy doesn't directly affect network speed or efficiency. Its main role is governance and compliance."
     - content: "To provide unlimited storage capacity for any Azure service."
       isCorrect: false
       explanation: "Azure Policy focuses on governance and compliance, not on providing storage solutions."
@@ -42,7 +42,7 @@ quiz:
       explanation: "Azure Policy is used to enforce organizational standards and assess compliance at scale, ensuring resources conform to corporate policies and regulatory requirements."
   - content: "How do Azure Blueprints help in configuring security settings?"
     choices:
-    - content: "By deploying pre-configured templates that include security settings."
+    - content: "By deploying preconfigured templates that include security settings."
       isCorrect: true
       explanation: "Azure Blueprints automate the deployment of resources, including security policies, RBAC settings, and Azure Resource Manager templates, ensuring a consistent and compliant environment."
     - content: "By manually managing each resource individually."
@@ -55,7 +55,7 @@ quiz:
     choices:
     - content: "By manually updating keys at each use."
       isCorrect: false
-      explanation: "Manual updates do not adhere to best practices for key rotation, which requires a more automated and reliable method."
+      explanation: "Manual updates don't adhere to best practices for key rotation, which requires a more automated and reliable method."
     - content: "Using physical security mechanisms."
       isCorrect: false
       explanation: "Key rotation is a digital process that involves updating cryptographic keys at specified intervals, not related to physical security."

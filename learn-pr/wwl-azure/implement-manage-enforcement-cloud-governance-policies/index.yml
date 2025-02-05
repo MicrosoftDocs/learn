@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement and manage enforcement of cloud governance policies
   description: "This module equips administrators with the skills to design, deploy, and oversee security governance in Azure, ensuring alignment with organizational policies and industry best practices."
-  ms.date: 02/04/2025
+  ms.date: 02/05/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module
@@ -52,7 +52,7 @@ units:
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-key-vault-authentication
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.create-key-vault-use-azure-portal
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-dedicated-hardware-security-module
-- learn.wwl.implement-manage-enforcement-cloud-governance-policies.configure-access-key-vault-including-vault-access-policies
+- learn.wwl.implement-manage-enforcement-cloud-governance-policies.configure-access-key-vault-access-policies-azure-role-based-access-control
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-key-vault-keys-secrets-certificates
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.configure-cryptographic-key-auto-rotation-azure-key-vault
 - learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-key-vault-backup-restore

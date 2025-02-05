@@ -931,9 +931,9 @@ GCP guidance: The data sources for investigation are the centralized logging sou
  -  Identity and access log data: Use IAM logs and workload (such as operating systems or application level) access logs for correlating identity and access events.
  -  Network data: Use VPC Flow Logs and VPC service controls to capture network flow logs and other analytics information.
  -  Snapshots of running systems, which can be obtained through:
-    1.  Snapshot capability in GCP VMs to create a snapshot of the running system's disk.
-    2.  The operating system's native memory dump capability, to create a snapshot of the running system's memory.
-    3.  The snapshot feature of the GCP services or your software's own capability, to create snapshots of the running systems.
+     -  Snapshot capability in GCP VMs to create a snapshot of the running system's disk.
+     -  The operating system's native memory dump capability, to create a snapshot of the running system's memory.
+     -  The snapshot feature of the GCP services or your software's own capability, to create snapshots of the running systems.
 
 If you aggregate your SIEM related data into Microsoft Sentinel, it provides extensive data analytics across virtually any log source and a case management portal to manage the full lifecycle of incidents. Intelligence information during an investigation can be associated with an incident for tracking and reporting purposes.
 

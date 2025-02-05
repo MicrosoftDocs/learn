@@ -43,27 +43,27 @@ The certificate attributes are mirrored to attributes of the addressable key and
 
 A Key Vault certificate has the following attribute:
 
- -  enabled: This Boolean attribute is optional. Default is true. It can be specified to indicate if the certificate data can be retrieved as a secret or operable as a key.
+ -  Enabled: This Boolean attribute is optional. Default is true. It can be specified to indicate if the certificate data can be retrieved as a secret or operable as a key.
     
     
      -  This attribute is also used with nbf and exp when an operation occurs between nbf and exp, but only if enabled is set to true. Operations outside the nbf and exp window are automatically disallowed.
 
 A response includes these additional read-only attributes:
 
- -  created: IntDate indicates when this version of the certificate was created.<br>
- -  updated: IntDate indicates when this version of the certificate was updated.
- -  exp: IntDate contains the value of the expiration date of the X.509 certificate.
- -  nbf: IntDate contains the value of the "not before" date of the X.509 certificate.
+ -  Created: IntDate indicates when this version of the certificate was created.<br>
+ -  Updated: IntDate indicates when this version of the certificate was updated.
+ -  Exp: IntDate contains the value of the expiration date of the X.509 certificate.
+ -  Nbf: IntDate contains the value of the "not before" date of the X.509 certificate.
 
 > [!NOTE]
-> *If a Key Vault certificate expires it can still be retrieved, but certificate may become inoperable in scenarios like Transport Layer Security protection where expiration of certificate is validated.*
+> If a Key Vault certificate expires it can still be retrieved, but certificate may become inoperable in scenarios like Transport Layer Security protection where expiration of certificate is validated.
 
 **Tags**
 
 Tags for certificates are a client-specified dictionary of key/value pairs, much like tags in keys and secrets.
 
 > [!NOTE]
-> *A caller can read tags if they have the list or get permission to that object type (keys, secrets, or certificates).*
+> A caller can read tags if they have the list or get permission to that object type (keys, secrets, or certificates).
 
 ## Certificate policy
 

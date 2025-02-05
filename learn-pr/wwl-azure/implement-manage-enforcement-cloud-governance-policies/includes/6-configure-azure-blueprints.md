@@ -57,7 +57,7 @@ When a blueprint is first created, it's considered to be in Draft mode. When it'
 Each Published Version of a blueprint can be assigned (with a max name length of 90 characters) to an existing management group or subscription. In the portal, the blueprint defaults the Version to the one Published most recently. If there are artifact parameters or blueprint parameters, then the parameters are defined during the assignment process.
 
 > [!NOTE]
-> *Assigning a blueprint definition to a management group means the assignment object exists at the management group. The deployment of artifacts still targets a subscription. To perform a management group assignment, the Create Or Update REST API must be used and the request body must include a value for properties.scope to define the target subscription.*
+> Assigning a blueprint definition to a management group means the assignment object exists at the management group. The deployment of artifacts still targets a subscription. To perform a management group assignment, the Create Or Update REST API must be used and the request body must include a value for properties.scope to define the target subscription.
 
 ## Permissions in Azure Blueprints<br>
 
@@ -76,10 +76,10 @@ To delete blueprints, your account needs the following permissions:
  -  `Microsoft.Blueprint/blueprints/versions/delete`
 
 > [!NOTE]
-> *The blueprint definition permissions must be granted or inherited on the management group or subscription scope where it is saved.*
+> The blueprint definition permissions must be granted or inherited on the management group or subscription scope where it is saved.
 
 > [!NOTE]
-> *As blueprint assignments are created on a subscription, the blueprint assign and unassign permissions must be granted on a subscription scope or be inherited onto a subscription scope.*
+> As blueprint assignments are created on a subscription, the blueprint assign and unassign permissions must be granted on a subscription scope or be inherited onto a subscription scope.
 
 To assign or unassign a blueprint, your account needs the following permissions:
 
@@ -98,4 +98,4 @@ The following built-in roles are available:
 If these built-in roles don't fit your security needs, consider creating a custom role.
 
 > [!NOTE]
-> *If using a system-assigned managed identity, the service principal for Azure Blueprints requires the **Owner** role on the assigned subscription in order to enable deployment. If using the portal, this role is automatically granted and revoked for the deployment. If using the REST API, this role must be manually granted, but is still automatically revoked after the deployment completes. If using a user-assigned managed identity, only the user creating the blueprint assignment needs the*`Microsoft.Blueprint/blueprintAssignments/write`*permission, which is included in both the **Owner** and **Blueprint Operator** built-in roles.*
+> If using a system-assigned managed identity, the service principal for Azure Blueprints requires the **Owner** role on the assigned subscription in order to enable deployment. If using the portal, this role is automatically granted and revoked for the deployment. If using the REST API, this role must be manually granted, but is still automatically revoked after the deployment completes. If using a user-assigned managed identity, only the user creating the blueprint assignment needs the`Microsoft.Blueprint/blueprintAssignments/write`*permission, which is included in both the **Owner** and **Blueprint Operator** built-in roles.*
