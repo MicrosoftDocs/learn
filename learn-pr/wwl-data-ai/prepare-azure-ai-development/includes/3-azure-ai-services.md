@@ -39,9 +39,11 @@ Alternatively, you can provision a multi-service **Azure AI services** resource 
 Using a multi-service resource can make it easier to manage applications that use multiple AI capabilities.
 
 > [!TIP]
+> There may be more than one **Azure AI services** resource type available in the Azure portal.
+>
 > |Service | Icon |
 > |--|--|
-> | When you want to provision a multi-service Azure AI Services resource, be careful to select the **Azure AI services** resource type with the icon shown here.|![Azure AI services icon.](../media/ai-services.png)|
+> | When you want to provision an Azure AI Services resource, be careful to select the Azure AI services resource type with the icon shown here. This resource type includes the latest AI services. |![Azure AI services icon.](../media/ai-services.png)|
 > | An older Azure AI services resource type with a different icon may also be listed in the Azure portal. The older service encapsulates a different set of AI services and isn't suitable for working with newer services like Azure OpenAI and Azure AI Content Understanding.| ![Azure Cognitive Services icon.](../media/cognitive-services.png)| 
 
 ### Regional availability
