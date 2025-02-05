@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-azure-ai
 metadata:
   title: Get started with Azure AI Services
   description: How to get started with Azure AI Services
-  ms.date: 10/17/2024
+  ms.date: 02/05/2025
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
@@ -29,7 +29,7 @@ products:
 subjects:
 - artificial-intelligence
 modules:
-- learn.wwl.prepare-to-develop-ai-solutions-azure
+- learn.wwl.prepare-azure-ai-development
 - learn.wwl.create-manage-ai-services
 - learn.wwl.secure-ai-services
 - learn.wwl.monitor-ai-services
