@@ -24,7 +24,7 @@ By adding the GitHub Copilot extension to this file, you ensure that it's instal
     Console.WriteLine("hello world");
     ```
 
-4. Open the terminal and change directies to **RockPaperScissors**. Run the application with the `dotnet run` command in the terminal and check if the result is similar to the following console message:
+4. Open the terminal and change directories to **RockPaperScissors**. Run the application with the `dotnet run` command in the terminal and check if the result is similar to the following console message:
 
     ```bash
     hello world
