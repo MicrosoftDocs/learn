@@ -10,6 +10,6 @@ metadata:
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/consent-management-prerequisites.md)]

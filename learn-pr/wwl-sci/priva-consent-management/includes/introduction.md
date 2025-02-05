@@ -1,6 +1,6 @@
 Digital interactions often involve sharing personal data, whether it’s creating accounts, making purchases, or signing up for services. While this data helps improve personalization and enhance user experiences, it can lead to privacy concerns if users don’t understand how their information is being collected, stored, or shared. For organizations, managing these concerns is essential to maintaining trust and ensuring transparency.
 
-Microsoft Priva Consent Management helps organizations track and manage user consent preferences efficiently. By using this tool, organizations can align their practices with privacy regulations, honor user expectations, and promote responsible data practices.
+Microsoft Priva Consent Management (preview) helps organizations track and manage user consent preferences efficiently. By using this tool, organizations can align their practices with privacy regulations, honor user expectations, and promote responsible data practices.
 
 ## Scenario
 

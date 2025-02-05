@@ -22,8 +22,8 @@ To effectively manage consent, follow these steps:
 
 To access consent management:
 
-1. Navigate to the Microsoft Priva portal.
-1. Select the Consent Management tile from the top row of solutions.
+1. Navigate to the **Microsoft Priva** portal.
+1. Select the **Consent Management** tile from the top row of solutions.
 1. If the tile isn't visible, select **View all solutions**, and under the **Privacy** heading, select **Consent Management**.
 
 ## Roles and permissions
