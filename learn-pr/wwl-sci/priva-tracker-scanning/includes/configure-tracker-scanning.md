@@ -17,7 +17,7 @@ Proper role assignment is essential for users to perform tasks in Tracker Scanni
 | **Privacy Curator** | View and edit all privacy objects, create and categorize trackers, promote trackers, and view tags. |
 | **Privacy Reader** | Review scan results, view the tracker library, and access identified trackers without making edits. |
 
-For more details, see [Data governance roles and permissions in Microsoft Purview](/purview/data-governance-roles-permissions?azure-portal=true).
+For more information, see [Data governance roles and permissions in Microsoft Purview](/purview/data-governance-roles-permissions?azure-portal=true).
 
 ### Access tracker scanning
 

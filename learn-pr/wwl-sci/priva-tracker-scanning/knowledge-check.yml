@@ -42,7 +42,7 @@ quiz:
     choices:
     - content: "Run a compliance scan."
       isCorrect: false
-      explanation: "Incorrect: Running a compliance scan is important but cannot be done until websites are registered."
+      explanation: "Incorrect: Running a compliance scan is important but can't be done until websites are registered."
     - content: "Register your websites."
       isCorrect: true
       explanation: "Correct: Registering your websites connects them to Microsoft Priva Tracker Scanning, allowing you to manage trackers."

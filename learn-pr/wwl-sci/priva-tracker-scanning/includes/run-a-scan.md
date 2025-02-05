@@ -51,7 +51,7 @@ You can set up scans to run either as a one-time event or on a recurring schedul
 Before running the scan, review the scan settings on the **Review your scan** page:
 
 1. Verify all configurations, including the scan name, region, tracker technologies, and compliance objects.
-2. Select one of the following options:
+1. Select one of the following options:
    - **Save**: Save the scan without running it.
    - **Save and run**: Save the scan and initiate it immediately.
 
