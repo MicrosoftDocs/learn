@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-consent-management.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your organization collects personal data through its website, and users have raised concerns about how their data is handled. How can Microsoft Priva Consent Management help?"
+    choices:
+    - content: "It ensures all user data is automatically deleted after collection."
+      isCorrect: false
+      explanation: "Incorrect: Consent management doesn't delete user data but helps organizations track and manage consent."
+    - content: "It allows organizations to manage and track user consent for data collection."
+      isCorrect: true
+      explanation: "Correct: Microsoft Priva Consent Management helps organizations manage user consent preferences and ensure compliance."
+    - content: "It prevents organizations from collecting personal data altogether."
+      isCorrect: false
+      explanation: "Incorrect: Consent management doesn't prevent data collection but ensures it aligns with user preferences and regulations."
+
+  - content: "Your team is preparing to implement Microsoft Priva Consent Management. What needs to be configured before you can create consent models?"
+    choices:
+    - content: "Set up tracker categories to organize tracking technologies."
+      isCorrect: true
+      explanation: "Correct: Tracker categories must be configured to organize and manage different types of consent for tracking technologies."
+    - content: "Deploy all consent models before defining consent rules."
+      isCorrect: false
+      explanation: "Incorrect: Consent models are created before deployment, not after."
+    - content: "Enable multifactor authentication for all users."
+      isCorrect: false
+      explanation: "Incorrect: While multifactor authentication is a security best practice, it isn't a prerequisite for consent management."
+
+  - content: "Your company is expanding into multiple regions and needs to manage consent for user data collection. Some regions require explicit user consent, while others allow implicit consent. Which type of model would help you standardize these requirements?"
+    choices:
+    - content: "A single consent model that applies globally."
+      isCorrect: false
+      explanation: "Incorrect: A single consent model doesn't accommodate different regional compliance requirements."
+    - content: "A tracker consent model for managing cookies."
+      isCorrect: false
+      explanation: "Incorrect: A tracker consent model is only used for managing cookies, not general data consent."
+    - content: "A consent model package that groups multiple models."
+      isCorrect: true
+      explanation: "Correct: A consent model package allows multiple consent models to be grouped and deployed based on regional rules."
+
+  - content: "After creating a consent model, your team needs to ensure it's applied correctly across your organization's websites. What is the next step?"
+    choices:
+    - content: "Generate and deploy a package."
+      isCorrect: true
+      explanation: "Correct: Generating and deploying a package ensures the consent model is properly distributed."
+    - content: "Assign tracker categories to the model."
+      isCorrect: false
+      explanation: "Incorrect: Assigning tracker categories is done before creating the model, not during deployment."
+    - content: "Create a new publishing profile."
+      isCorrect: false
+      explanation: "Incorrect: A publishing profile connects a website to a model but doesn't deploy the model itself."
+
+  - content: "Your team is setting up a publishing profile to distribute consent models. Which step must be completed before the profile can be used?"
+    choices:
+    - content: "The profile must be marked as 'Complete.'"
+      isCorrect: true
+      explanation: "Correct: The publishing profile must be in 'Complete' status before it can be deployed."
+    - content: "A consent model package must be created first."
+      isCorrect: false
+      explanation: "Incorrect: A consent model package helps group models but doesn't activate the publishing profile."
+    - content: "Tracker scanning must be configured."
+      isCorrect: false
+      explanation: "Incorrect: Tracker scanning is used for identifying trackers but isn't required for publishing profiles."
