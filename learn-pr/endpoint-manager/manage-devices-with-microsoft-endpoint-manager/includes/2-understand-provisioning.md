@@ -15,7 +15,7 @@ Modern provisioning provides the following benefits:
 
 To provision Windows devices, you can use Windows Autopilot. Windows Autopilot simplifies enrolling devices in Intune. Building and maintaining customized operating-system images is a time-consuming process. You might also spend time applying these custom operating-system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and Autopilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating-system images to the devices. When you use Intune to manage Autopilot devices, you can manage policies, profiles, apps, and more after they're enrolled.
 
-> [!video https://www.microsoft.com/videoplayer/embed/RE4C7G9?autoplay=false]
+> [!video https://learn-video.azurefd.net/vod/player?id=af8941a0-1b9c-4bbd-8b75-9754d8badf56]
 
 There are four types of Windows Autopilot deployment:
 

@@ -4,7 +4,7 @@ The idea behind Azure Copilot Stack is to empower developers to create their own
 
 The framework uses generative AI technology, such as GPT-4, which is available through Azure OpenAI Service.
 
-The Azure Copilot Stack provides various tools and services on Microsoft Azure to simplify the development process. For example, Azure AI Studio allows developers to ground conversational AI models on their private data, while Azure OpenAI Service provides organization-specific insights from data, text, and images using natural language-based application interfaces. Additionally, support for plugins with Azure OpenAI Service extends the capabilities of large language models.
+The Azure Copilot Stack provides various tools and services on Microsoft Azure to simplify the development process. For example, Azure AI Foundry allows developers to ground conversational AI models on their private data, while Azure OpenAI Service provides organization-specific insights from data, text, and images using natural language-based application interfaces. Additionally, support for plugins with Azure OpenAI Service extends the capabilities of large language models.
 
 The goal of Azure Copilot Stack is to enable developers to build innovative and disruptive applications that apply AI technology to deliver new and powerful user experiences, just like smartphones transformed various industries by enabling new possibilities. By providing the necessary tools and resources, Microsoft aims to encourage startups to create a wide range of copilots to assist users in various tasks and interactions.
 

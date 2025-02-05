@@ -4,7 +4,7 @@ You've landed an interview. Congratulations! What are your next steps? This modu
 
 This quick video is a good place to start:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4O7NF]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=180ba815-9d62-429c-b1bd-5748fd0b5a28]
 
 You're likely to go through multiple interviews with an organization. There are different types of interviews, with different expectations.
 

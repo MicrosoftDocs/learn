@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Use entanglement to teleport with Q#
   description: Create teleportation with Q#
-  ms.date: 10/30/2024
+  ms.date: 01/22/2025
   author: SoniaLopezBravo
   ms.author: sonialopez
   manager: tedhudek

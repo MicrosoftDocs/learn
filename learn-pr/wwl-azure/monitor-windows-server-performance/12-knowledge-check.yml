@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/28/2023
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. This counter provides a point in time value for the number of processes. It's not meaningful in establishing processor performance."
     - content: "The administrator should add the Processor\\%Idle Time counter."
       isCorrect: false
-      explanation: "Incorrect. This counter merely provides a percentile indicator of how idle a processor is. It is the counterpoint to the %Processor Time counter."
+      explanation: "Incorrect. This counter merely provides a percentile indicator of how idle a processor is. It's the counterpoint to the %Processor Time counter."
     - content: "The administrator should add the System\\Processor Queue Length counter."
       isCorrect: true
       explanation: "Correct. This counter indicates the number of threads in the processor queue, and is a good indication of performance."
@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "The administrator should use the `Enable-InsightsCapability` cmdlet."
       isCorrect: false
-      explanation: "Incorrect. This cmdlet enables the capability, but does not start gathering or analyzing data."
+      explanation: "Incorrect. This cmdlet enables the capability, but doesn't start gathering or analyzing data."
     - content: "The administrator should use the `Add-WindowsFeature System-Insights` cmdlet."
       isCorrect: false
       explanation: "Incorrect. This cmdlet installs the System Insights feature in WAC."

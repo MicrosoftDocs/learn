@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Azure Files
   description: "Learn how to configure Azure Files for cloud file shares."
-  ms.date: 12/23/2024
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module

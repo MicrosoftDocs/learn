@@ -1,3 +1,4 @@
+
 A virtual private network (VPN) provides a secure encrypted connection across another network. VPNs typically are deployed to connect two or more trusted private networks to one another over an untrusted network such as the internet. Traffic is encrypted while traveling over the untrusted network to prevent a third-party from eavesdropping on the network communication.
 
 One option for connecting an on-premises network to an Azure virtual network is a VPN connection. A VPN gateway provides an endpoint for incoming connections to an Azure virtual network. 

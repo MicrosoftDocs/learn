@@ -6,11 +6,11 @@ metadata:
   prefetch-feature-rollout: true
   title: What is Azure File Sync?
   description: In this unit, you'll learn about Azure File Sync.
-  ms.date: 11/10/2023
+  ms.date: 01/08/2025
   author: khdownie
   ms.author: kendownie
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 4
 content: |
   [!include[](includes/3-what-is-azure-file-sync.md)]
 

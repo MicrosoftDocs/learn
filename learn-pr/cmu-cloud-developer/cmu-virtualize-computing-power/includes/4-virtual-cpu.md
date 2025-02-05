@@ -1,7 +1,7 @@
 As described earlier, a virtual CPU (vCPU) acts as a proxy to a physical CPU (pCPU). In other words, a vCPU is a representation of a pCPU to a guest OS (i.e., an OS that runs on a VM). A vCPU can be initiated in a VM and mapped to an underlying pCPU by the hypervisor. In principle, a VM can have one or many vCPUs. For instance, a VM in VMware ESX 4 can have up to eight vCPUs. The amount of vCPUs represents the width of a VM. A VM with a width greater than one is called a symmetric multiprocessing (SMP) VM. In reverse, a VM with a width equal to one is called a uniprocessor (UP) VM. The following video discusses multiprocessor VMs in detail:
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q0ep]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5c0f2145-7612-432f-b221-d82e942c1712]
 
 The following figure demonstrates an SMP native system VM with a width of four and a UP native system VM, both running on the same hardware.
 

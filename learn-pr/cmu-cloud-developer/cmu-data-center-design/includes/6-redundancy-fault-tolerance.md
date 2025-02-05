@@ -4,7 +4,7 @@ In this section, we'll take a closer look at redundancy and fault tolerance in d
 
 The following video covers some important aspects of datacenter redundancy:
 <br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4pFk7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0ba40146-dbb8-4ed8-9132-a76aeda2cd38]
 
 ## Datacenter tier classifications
 

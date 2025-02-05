@@ -151,7 +151,7 @@ docker ps
 docker stop <container ID>
 ```
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5cqLo]
+ > [!VIDEO https://learn-video.azurefd.net/vod/player?id=33f9f559-4fce-47f0-9ff9-d9932fac8c69]
 
 
 **Quick review** 

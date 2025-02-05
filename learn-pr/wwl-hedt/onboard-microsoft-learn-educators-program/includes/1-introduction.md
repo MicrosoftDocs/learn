@@ -1,6 +1,6 @@
 Through the MSLE program, we provide higher education institutions and faculty members with access to free curriculum, training, and tools for teaching. To further support the delivery of Microsoft's ready-to-teach curriculum, we also provide faculty with access to additional resources. These resources include discounted or free practice and certification exams, curriculum integration support, course delivery prep sessions led by Microsoft Technical Trainers, Microsoft Virtual Training Days, and entry into our global community of educators committed to helping students succeed.   
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U84j] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ba07c439-e9da-4b4e-bb0d-7546cdfe9205] 
 
 Joining Microsoft Learn for Educators is the beginning of a journey ensuring you feel confident in your technical skills related to teaching Microsoft technical content. The educator's path to preparation and delivery include: 
 

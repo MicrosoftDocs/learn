@@ -2,9 +2,11 @@
 uid: learn.wwl.load-balancing-https-traffic-azure.exercise-deploy-azure-application-gateway
 title: 'Exercise: Deploy Azure Application Gateway'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Deploy Azure Application Gateway'
   description: "Exercise: Deploy Azure Application Gateway"
-  ms.date: 11/25/2024
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit

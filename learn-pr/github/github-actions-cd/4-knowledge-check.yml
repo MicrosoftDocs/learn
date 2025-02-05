@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check what you've learned.
-  ms.date: 11/02/2023
+  ms.date: 01/22/2025
   author: juliakm
   ms.author: jukullam
   ms.topic: unit
@@ -16,13 +16,13 @@ quiz:
   questions:
   - content: "How do you grant your GitHub repository access to Azure?"
     choices:
-    - content: "It happens automatically"
+    - content: "It happens automatically."
       isCorrect: false
       explanation: "You must grant access to Azure with credentials."
-    - content: "Authenticate to Azure with GitHub"
+    - content: "Authenticate to Azure with GitHub."
       isCorrect: false
       explanation: "GitHub can't grant access to Azure."
-    - content: "Manage credentials using GitHub Secrets and use that secret name in the workflow"
+    - content: "Manage credentials using GitHub Secrets and use that secret name in the workflow."
       isCorrect: true
       explanation: "Storing your credentials in GitHub Secrets keeps them safe and assures they will not be exposed in plain text."
     - content: "Manage credentials by generating tokens locally"
@@ -44,7 +44,7 @@ quiz:
     - content: "Use GitHub Secrets to securely store your Azure credentials."
       isCorrect: true
       explanation: "Storing your credentials in GitHub secrets allows you to use the credential in a workflow without exposing the credential in plain text."
-    - content: "Use your GitHub token to authenticate into Azure"
+    - content: "Use your GitHub token to authenticate into Azure."
       isCorrect: false
       explanation: "GitHub tokens can't authenticate to Azure"
     - content: "Put your credentials directly in your workflow file."

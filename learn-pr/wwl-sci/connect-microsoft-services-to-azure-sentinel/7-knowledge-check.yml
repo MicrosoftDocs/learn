@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/11/2022
+  ms.date: 01/13/2025
   author: wwlpublish
   ms.author: kelawson
   ms.topic: unit
@@ -27,7 +27,7 @@ quiz:
     - content: "SecurityAlert"
       isCorrect: false
       explanation: "Incorrect.  This connector doesn't write to the SecurityAlert table."
-  - content: "Which table (data type) would you query for the Office 365 data?"
+  - content: "Which table (data type) would you query for the Microsoft 365 data?"
     choices:
     - content: "OfficeActivity"
       isCorrect: true

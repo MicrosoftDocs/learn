@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Troubleshoot Azure Container Instances
   description: Troubleshoot Azure Container Instances.
-  ms.date: 04/03/2024
+  ms.date: 01/15/2025
   author: v-tcassi
   ms.author: tomcassidy
   ms.topic: unit

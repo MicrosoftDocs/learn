@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/05/2023
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -31,13 +31,13 @@ quiz:
     choices:
     - content: "SessionType"
       isCorrect: false
-      explanation: "Incorrect. The SessionType setting allows you to configure the sessions default settings but does not allow you to assign a special virtual account that has local administrative privileges."
+      explanation: "Incorrect. The SessionType setting allows you to configure the sessions default settings but doesn't allow you to assign a special virtual account that has local administrative privileges."
     - content: "RunAsVirtualAccount"
       isCorrect: true
       explanation: "Correct. The RunAsVirtualAccount setting allows you to have the JEA session use a special virtual account with local administrative privileges."
     - content: "RunAsVirtualAccountGroup"
       isCorrect: false
-      explanation: "Incorrect. The RunAsVirtualAccountGroup allows you to have the JEA session use a special virtual account that is a member of a specified security group, but unless this specified security group has been granted administrative privileges, does not provide any extra privileges to the virtual account."
+      explanation: "Incorrect. The RunAsVirtualAccountGroup allows you to have the JEA session use a special virtual account that is a member of a specified security group, but unless this specified security group has been granted administrative privileges, doesn't provide any extra privileges to the virtual account."
   - content: "In addition to the name of the remote computer being connected to, which of the following must be specified when connecting to a JEA endpoint using remote PowerShell?"
     choices:
     - content: "Endpoint configuration name"
@@ -45,7 +45,7 @@ quiz:
       explanation: "Correct: You must specify both the computername and the endpoint configuration name when making a remote PowerShell connection using JEA."
     - content: "Session configuration file name"
       isCorrect: false
-      explanation: "Incorrect: You need to have a session configuration file to configure a JEA endpoint, but do not need to specify the file name when remotely connecting to that endpoint."
+      explanation: "Incorrect: You need to have a session configuration file to configure a JEA endpoint, but don't need to specify the file name when remotely connecting to that endpoint."
     - content: "Role capability file name"
       isCorrect: false
-      explanation: "Incorrect: You need to have a role capability file to configure a JEA endpoint, but do not need to specify the file name when remotely connecting to that endpoint."
+      explanation: "Incorrect: You need to have a role capability file to configure a JEA endpoint, but don't need to specify the file name when remotely connecting to that endpoint."

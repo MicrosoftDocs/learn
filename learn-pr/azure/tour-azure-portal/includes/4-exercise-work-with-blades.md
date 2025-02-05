@@ -2,7 +2,7 @@ In this unit, you learn how to create and find different types of resources in t
 
 ## Activate the Azure sandbox
 
-1. Start by **activating the Azure sandbox above**.
+1. Start by selecting the **Activate sandbox** button at the top of this page.
 
 1. Once it's activated, sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account with which you activated the sandbox.
 
@@ -24,7 +24,7 @@ Now let's start exploring how to create resources in Azure. We won't actually cr
 
 1. To the right of **Popular Marketplace products**, select **See more in Marketplace**. The full list of available **Compute** offerings appears.
 
-1. In the **Featured** section, select the option for **Windows Server**. If you don't see it, select **See more**.
+1. In the **Operating Systems** section, select the option for **Windows Server**. If you don't see it, select **See more**.
 
 1. Select the drop-down list under **Plan** to see all of the available Windows Server images.
 
@@ -48,4 +48,4 @@ The search box at the top of the **Create a resource** pane defaults to checking
 
 1. Select the **X** at the top right-hand corner to close the **Create a resource** pane.
 
-Many of the principles you have learned in this exercise apply throughout the Azure portal experience. In the next unit, you continue your journey in the Azure portal and configure other settings in Azure.
+Many of the principles you learned in this exercise apply throughout the Azure portal experience. In the next unit, you continue your journey in the Azure portal and configure other settings in Azure.

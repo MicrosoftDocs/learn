@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-privacy-risk-management.create-policy-from-template
+title: Create a Privacy Risk Management policy from a template
+metadata:
+  title: Create a Privacy Risk Management policy from a template
+  description: "Create a Privacy Risk Management policy from a template"
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/create-policy-from-template.md)]

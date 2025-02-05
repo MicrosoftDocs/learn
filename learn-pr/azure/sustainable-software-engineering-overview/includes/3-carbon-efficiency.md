@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwJFI]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d97b370a-755b-4151-94ec-297106293094]
 
 *This video's content is still valid, but the principle numbers might differ due to the Green Software Foundation's principle renumbering.*
 

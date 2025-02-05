@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – Implement partitioning in Azure Cosmos database 
 - Lesson 3 – Work with Azure Cosmos database 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aHD6]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6d24ef61-fe0f-4a37-9419-6c83398dfb39]
 
 Module 4 Tips and Tricks 
 

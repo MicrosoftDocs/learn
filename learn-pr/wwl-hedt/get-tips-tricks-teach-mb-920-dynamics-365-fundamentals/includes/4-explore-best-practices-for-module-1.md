@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Get introduced to the finance and operations apps
 - Lesson 2 – Create reports and integrate finance and operations apps
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXns3]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cca063ed-bea0-4c72-aa36-13c6b5a32a1f]  
 
 Module 1 Tips and Tricks
 
