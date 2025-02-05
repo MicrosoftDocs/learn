@@ -23,7 +23,6 @@ Azure implementation and additional context:
 
  -  [Tenancy in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis)
  -  [How to create and configure a Microsoft Entra ID instance](/azure/active-directory/fundamentals/add-custom-domain)
- -  [Define Microsoft Entra ID tenants](/azure/active-directory/fundamentals/active-directory-how-to-tenant)
  -  [Use external identity providers for an application](/azure/active-directory/b2b/identity-providers)
 
 AWS guidance: AWS IAM (Identity and Access Management) is AWS' default identity and authentication management service. Use AWS IAM to govern your AWS identity and access management. Alternatively, through AWS and Azure Single Sign-On (SSO), you can also use Micrsoft Entra ID to manage the identity and access control of AWS to avoid managing duplicate accounts separately in two cloud platforms.
@@ -200,8 +199,7 @@ Security principle: Authenticate remote servers and services from your client si
 
 Azure guidance: Many Azure services support TLS authentication by default. For services that don't support TLS authentication by default, or support disabling TLS, ensure it is always enabled to support the server/client authentication. Your client application should also be designed to verify server/client identity (by verifying the server’s certificate issued by a trusted certificate authority) in the handshake stage.
 
-> [!NOTE]
-> Services such as API Management and API Gateway supports TLS mutual authentication.
+Services such as API Management and API Gateway supports TLS mutual authentication.
 
 Azure implementation and additional context:
 

@@ -162,7 +162,7 @@ In this section, you'll enable B.Simon to use single sign-on by granting access 
     
 4.  On the **Configure SAML authentication for Azure** dialog, perform the below steps:
     
-    :::image type="content" source="../media/tutorial-slack-save-authentication-example-47397b8b-94aa3c4f.png" alt-text="Screenshot showing an example of how to configure saml authentication with Azure.":::
+    :::image type="content" source="../media/microsoft-entra-id-authentication-7c811043.png" alt-text="Screenshot showing an example of how to configure saml authentication with Azure.":::
     
     
     

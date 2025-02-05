@@ -224,7 +224,7 @@ The following table compares the capabilities of authentication-related roles.
 | User Administrator                      | No                             | No                      | No                      | No                            | No                                    | Yes for some users              | Yes for some users           |
 
 > [!IMPORTANT]
-> Users with this role can change credentials for people who may have access to sensitive or private information or critical configuration inside and outside of Microsoft Entra ID. Changing the credentials of a user may mean the ability to assume that user's identity and permissions. For example:
+> Users with this role can change credentials for people who may have access to sensitive or private information or critical configuration inside and outside of Microsoft Entra ID. Changing the credentials of a user may mean the ability to assume that user's identity and permissions.
 
  -  Application Registration and Enterprise Application owners, who can manage credentials of apps they own. Those apps may have privileged permissions in Microsoft Entra ID and elsewhere not granted to Authentication Administrators. Through this path an Authentication Administrator can assume the identity of an application owner and then further assume the identity of a privileged application by updating the credentials for the application.<br>
  -  Azure subscription owners, who may have access to sensitive or private information or critical configuration in Azure.
