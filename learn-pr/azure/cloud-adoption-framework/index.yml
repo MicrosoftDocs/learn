@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2
+uid: learn.azure.cloud-adoption-framework
 metadata:
   title: Introduction to the Microsoft Cloud Adoption Framework
   description: "This module covers the basics of how to use the Cloud Adoption Framework to help you align your strategy for business, people, and technology."
@@ -28,16 +28,16 @@ subjects:
 - cloud-computing
 - knowledge-management
 units:
-- learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.introduction
-- learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.strategy
-- learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.plan
-- learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.ready
-- learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.migrate
-- learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.innovate
-- learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.govern
-- learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.manage
-- learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.secure
-- learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.knowledge-check
-- learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.summary
+- learn.azure.cloud-adoption-framework.introduction
+- learn.azure.cloud-adoption-framework.strategy
+- learn.azure.cloud-adoption-framework.plan
+- learn.azure.cloud-adoption-framework.ready
+- learn.azure.cloud-adoption-framework.migrate
+- learn.azure.cloud-adoption-framework.innovate
+- learn.azure.cloud-adoption-framework.govern
+- learn.azure.cloud-adoption-framework.manage
+- learn.azure.cloud-adoption-framework.secure
+- learn.azure.cloud-adoption-framework.knowledge-check
+- learn.azure.cloud-adoption-framework.summary
 badge:
-  uid: learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.badge
+  uid: learn.azure.cloud-adoption-framework.badge

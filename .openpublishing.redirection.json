@@ -19353,39 +19353,39 @@
     },
     {
       "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/1-introduction"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/2-cloud-adoption-framework-overview.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/1-introduction"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/3-define-strategy.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/2-strategy"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/4-plan.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/3-plan"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/5-ready.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/4-ready"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/6-adopt.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/5-adopt"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/7-govern-and-manage.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/5-adopt"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/8-knowledge-check.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/5-adopt"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/9-summary-and-resources.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/5-adopt"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/index.yml",
@@ -19393,31 +19393,31 @@
     },
     {
       "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-getting-started/index.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/1-introduction"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-getting-started/1-introduction.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/1-introduction"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-getting-started/2-customer-narrative.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/1-introduction"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-getting-started/3-common-blockers.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/1-introduction"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-getting-started/4-knowledge-check.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/1-introduction"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-getting-started/5-summary.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework/1-introduction"
+      "redirect_url": "https://learn.microsoft.com/training/modules/cloud-adoption-framework"
     },
     {
       "source_path_from_root": "/learn-pr/achievements/learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.badge.yml",
-      "redirect_url": "https://learn.microsoft.com/training/achievements/learn.azure.microsoft-cloud-adoption-framework-for-azure-v1-2.badge"
+      "redirect_url": "https://learn.microsoft.com/training/achievements/learn.azure.cloud-adoption-framework.badge"
     },
     {
       "source_path_from_root": "/learn-pr/windows/wsl-introduction/what-is-wsl.yml",
