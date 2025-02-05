@@ -33157,6 +33157,66 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-marketplace/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-marketplace/9-azure-stack-hub-marketplace-frequent-questions.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-marketplace/8-publish-custom-azure-stack-hub-marketplace-item.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-marketplace/7-create-custom-azure-stack-hub-marketplace-item.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-marketplace/6-add-remove-custom-virtual-machine-image-azure-stack-hub.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-marketplace/5-import-publish-azure-stack-hub-marketplace-powershell.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-marketplace/4-populate-azure-stack-hub-marketplace-disconnected-environment.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-marketplace/3-download-marketplace-items-azure-stack-hub.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-marketplace/10-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-marketplace/2-overview-azure-stack-hub-marketplace.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-marketplace/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-azure-stack-hub-marketplace/11-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/protect-identities-with-aad-idp/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/entra/id-protection/overview-identity-protection",
       "redirect_document_id": false

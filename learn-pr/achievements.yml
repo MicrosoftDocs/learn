@@ -1497,6 +1497,11 @@ achievements:
   title: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
   summary: Learn how to create a .NET Core application to store and query data in Azure Cosmos DB by using Visual Studio Code.
   iconUrl: /training/achievements/build-cosmos-db-app-with-vscode.svg
+- uid: learn.wwl.manage-azure-stack-hub-marketplace.badge
+  type: badge
+  title: Manage Azure Stack Hub Marketplace
+  summary: Manage Azure Stack Hub Marketplace
+  iconUrl: /training/achievements/1-manage-azure-stack-hub-marketplace.svg
 - uid: learn.monitor-azure-cosmos-db.badge
   type: badge
   title: Optimize the performance of Azure Cosmos DB by using partitioning and indexing strategies
