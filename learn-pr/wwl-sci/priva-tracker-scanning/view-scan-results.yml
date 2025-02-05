@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-tracker-scanning.view-scan-results
+title: Analyze scan results in Microsoft Priva Tracker Scanning
+metadata:
+  title: Analyze scan results in Microsoft Priva Tracker Scanning
+  description: "Analyze scan results in Microsoft Priva Tracker Scanning."
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/view-scan-results.md)]

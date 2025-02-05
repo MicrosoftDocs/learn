@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-subject-rights-requests.review-subject-rights-request-data
+title: Review data in subject rights requests
+metadata:
+  title: Review data in subject rights requests
+  description: "Review data in subject rights requests"
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/review-subject-rights-request-data.md)]
