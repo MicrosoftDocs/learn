@@ -1,8 +1,8 @@
 Your organization has many users engaged in producing, gathering, manipulating, and transferring information across various data stores. It's crucial to ensure these activities safeguard your customers' interests, comply with all relevant laws, and remain cost-effective.
 
-In your global clothing retailer, you use AWS Config, CloudFormation, Cost Explorer, and other tools to create strict governance that implements high-quality data usage in your company. With the aquisition of your competitor, you now have complex systems in Azure with their own governance implemented. To ensure consistent implementation of your company's policies, you need to understand how governance is set up in Azure and alter policies to match your AWS behavior.
+In your global clothing retailer, you use Amazon Web Services (AWS) Config, CloudFormation, Cost Explorer, and other tools to create strict governance that implements high-quality data usage in your company. With the acquisition of your competitor, you now have complex systems in Azure with their own governance implemented. To ensure consistent implementation of your company's policies, you need to understand how governance is set up in Azure and alter policies to match your AWS behavior.
 
-In this unit, you'll compare the tools available in AWS and Azure for data governance.
+In this unit, you compare the tools available in AWS and Azure for data governance.
 
 :::image type="content" source="../media/governance-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS.":::
 
@@ -10,7 +10,7 @@ In this unit, you'll compare the tools available in AWS and Azure for data gover
 
 Governance describes the tools you use to implement control of data and resource usage. You implement governance to comply both with your company's information usage policies and with legislation in all the jurisdictions in which you operate.
 
-If you're familiar with governance from AWS, you’ll find that Azure offers a range of governance features that are similar. There are, however, differences that you should be aware of. Let's examine and compare analogous tools:
+If you're familiar with governance from AWS, you can compare and discover that Azure offers a range of governance features that are similar. There are, however, differences that you should be aware of. Let's examine and compare analogous tools:
 
 ## Policy management
 
@@ -20,19 +20,19 @@ Similar configurations can be achieved in AWS with AWS Config.
 
 ## Management of resources
 
-[Azure Resource Manager (ARM)](/azure/azure-resource-manager/management/overview) is a management layer that enables you to create, update, and delete resources in your Azure subscription. You can use ARM templates to deploy resources in a consistent and repeatable manner. For example, you could create an ARM template that deploys three containers and a Azure SQL Database to host an Internet site.
+[Azure Resource Manager (ARM)](/azure/azure-resource-manager/management/overview) is a management layer that enables you to create, update, and delete resources in your Azure subscription. You can use ARM templates to deploy resources in a consistent and repeatable manner. For example, you could create an ARM template that deploys three containers and an Azure SQL Database to host an Internet site.
 
 This functionality is comparable to AWS CloudFormation.
 
 ## Cost control
 
-[Azure Cost Management](/azure/cost-management-billing/costs/overview-cost-management) and [Billing](/azure/cost-management-billing/cost-management-billing-overview) are tools that enable you to monitor and control Azure spending and optimize your resource use. They provide detailed insights into your costs and usage and help you to get the best value from your Azure investment.
+[Microsoft Cost Management](/azure/cost-management-billing/costs/overview-cost-management) and [Billing](/azure/cost-management-billing/cost-management-billing-overview) are tools that enable you to monitor and control Azure spending and optimize your resource use. They provide detailed insights into your costs and usage and help you to get the best value from your Azure investment.
 
 In AWS, Cost Explorer presents analogous information for similar purposes.
 
 ## Security and protection
 
-[Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) is a Cloud-Native Application Protection Platform (CNAPP) designed to prevent diverse cyber attacks and close well-known vulnerabilities. If offers unified security management and advanced threat protection across hybrid cloud workloads.
+[Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) is a Cloud-Native Application Protection Platform (CNAPP) designed to prevent diverse cyber attacks and close well-known vulnerabilities. It offers unified security management and advanced threat protection across hybrid cloud workloads.
 
 AWS Security Hub provides similar protection.
 
@@ -40,7 +40,7 @@ AWS Security Hub provides similar protection.
 
 You can use [Azure Monitor](/azure/azure-monitor/overview) to maximize the availability and performance of your applications and services. It collects, analyzes, and summarizes telemetry from your cloud and on-premises environments. You can use its reports to audit the behavior of your users and applications and diagnose security breaches such as inappropriately controlled sensitive data.
 
-Additionally, Azure offers [Prometheus](/azure/azure-monitor/essentials/prometheus-metrics-overview) and [Azure Managed Grafana](/azure/managed-grafana/overview) solutions for those with existing investments in those services.
+Additionally, Azure offers [Prometheus](/azure/azure-monitor/essentials/prometheus-metrics-overview) and [Azure Managed Grafana](/azure/managed-grafana/overview) solutions, if you have existing investments in those services.
 
 In AWS, CloudWatch collects and displays similar data.
 

@@ -1,8 +1,8 @@
-Cloud-native solutions often consist of components, sometimes termed microservices, that each implement part of the functionality required. To satisfy any single user request, these components must communicate reliably and scalably. Event-driven and messaging architectures provide services that enable this communication.
+Cloud-native solutions often consist of components, sometimes termed microservices, that each implement part of the functionality required. To satisfy any single user request, these components must communicate reliably and scalability. Event-driven and messaging architectures provide services that enable this communication.
 
-In your global clothing retailer, you have two public-facing web sites, one in AWS that you created before the merger, and one in Azure that was developed by the competitor that you aquired. Both web sites are implemented as cloud-native applications with loosely-coupled microservices communicating through message queues and event busses. You want to create a single company web site from these two so you need to know how the messaging services and event busses can be migrated.
+In your global clothing retailer, you have two public-facing web sites, one in Amazon Web Services (AWS) that you created before the merger, and one in Azure that was developed by the competitor that you acquired. Both web sites are implemented as cloud-native applications with loosely coupled microservices communicating through message queues and event busses. You want to create a single company web site from these two so you need to know how the messaging services and event busses can be migrated.
 
-In this unit, you'll explore event-driven and messaging architectures and compare how you can implement them in AWS and Azure.
+In this unit, you explore event-driven and messaging architectures and compare how you can implement them in AWS and Azure.
 
 :::image type="content" source="../media/events-messaging-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS.":::
 
@@ -45,11 +45,11 @@ In AWS, **SQS** is used for point-to-point messaging, whereas **SNS** provides a
 | Service | Azure | AWS | Comments |
 |---------|---------|---------|---------|
 | Message queuing | [Queue Storage](/azure/storage/queues/storage-queues-introduction) | SQS (Simple Queue Service) Amazon MQ | Azure Queue Storage is a simple queue service for large-volume messaging between application components. |
-| Message broker | [Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview) | Simple Notification service (SNS) | Azure Service Bus is an enterprise message broker with message queues and publish-subscribe topics. Azure Service Bus is a messaging service, however, and does not create notifications. Amazon MQ is a message broker service for Apache ActiveMQ and RabbitMQ. Amazon SNS is used to send notifications in an event-driven architecture, often used alongside Lambda. |
+| Message broker | [Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview) | Simple Notification service (SNS) | Azure Service Bus is an enterprise message broker with message queues and publish-subscribe topics. Azure Service Bus is a messaging service, however, and doesn't create notifications. Amazon MQ is a message broker service for Apache ActiveMQ and RabbitMQ. Amazon SNS is used to send notifications in an event-driven architecture, often used alongside Lambda. |
 
 ## Learn more
 
-- [Enterprise integration using message broker an events](/azure/architecture/example-scenario/integration/queues-events)
+- [Use a message broker and events to integrate enterprise systems](/azure/architecture/example-scenario/integration/queues-events)
 - [Explore Azure Event Grid](/training/modules/azure-event-grid/)
 - [Discover Azure message queues](/training/modules/discover-azure-message-queue/)
 - [Explore Azure Event Hubs](/training/modules/azure-event-hubs/)
