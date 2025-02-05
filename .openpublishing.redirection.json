@@ -33157,6 +33157,66 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-azure/offer-services-for-azure-stack-hub/index.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/offer-services-for-azure-stack-hub/9-change-user-subscription-owner.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/offer-services-for-azure-stack-hub/8-manage-subscriptions-plans-offers-powershell.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/offer-services-for-azure-stack-hub/7-create-user-subscriptions.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/offer-services-for-azure-stack-hub/6-delegate-offers.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/offer-services-for-azure-stack-hub/5-create-manage-offers.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/offer-services-for-azure-stack-hub/4-create-add-plan.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/offer-services-for-azure-stack-hub/3-create-plan.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/offer-services-for-azure-stack-hub/2-azure-stack-hub-quotas-plans-offers-subscriptions.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/offer-services-for-azure-stack-hub/10-knowledge-check.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/offer-services-for-azure-stack-hub/1-introduction.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/offer-services-for-azure-stack-hub/11-summary.yml",
+      "redirect_url": "/training/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/offer-app-services-resource-provider-for-azure-stack-hub/index.yml",
       "redirect_url": "/training/",
       "redirect_document_id": false
