@@ -96,7 +96,7 @@ A constructor that takes no parameters is called a parameterless constructor. Th
 > [!NOTE]
 > Unless the class is static, classes without constructors are given a public parameterless constructor by the C# compiler in order to enable class instantiation.
 
-Classes often define constructors that take parameters. Constructors that take parameters must be called using the `new` operator or a base statement. Classes can also define multiple constructors.
+Classes often define constructors that take parameters. Constructors that take parameters must be called using the `new` operator or a base statement. Classes can define one or more constructors.
 
 The following code snippet shows a class named `Person` with three constructors:
 

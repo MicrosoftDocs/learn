@@ -1,4 +1,4 @@
-C# is a strongly typed language. Every variable and constant has a type, as does every expression that evaluates to a value. Every method declaration specifies a name, the type and kind (value, reference, or output) for each input parameter and for the return value. The .NET class library defines built-in numeric types and complex types that represent a wide variety of constructs. These constructs include the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library and user-defined types that model the concepts that are specific to the program's problem domain.
+C# is a strongly typed language. Every variable and constant has a type, as does every expression that evaluates to a value. The .NET class library defines built-in numeric types and complex types that represent a wide variety of constructs. These constructs include the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library and user-defined types that model the concepts that are specific to the program's problem domain.
 
 ## Built-in types
 
@@ -100,7 +100,7 @@ All `enums` inherit from `System.Enum`, which inherits from `System.ValueType`. 
 
 The `class`, `record`, `delegate`, `array`, and `interface` types are *reference types*.
 
-When you declare a variable of a reference type, it contains the value null until you assign it with an instance of that type or create one using the `new` operator.
+When you declare a variable of a reference type, it contains the value `null` until you assign it with an instance of that type or create one using the `new` operator.
 
 The following example demonstrates how to declare reference type variables using arrays:
 
