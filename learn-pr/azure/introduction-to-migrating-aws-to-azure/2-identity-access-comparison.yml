@@ -3,7 +3,7 @@ uid: learn.introduction-migrating-aws-azure.identity-access-comparison
 title: Understand identity and access management in Azure compared to AWS
 metadata:
   title: Understand identity and access management in Azure compared to AWS
-  description: "An essential function of any cloud service is to authenticate users and authorize them to access the resources they need to do their jobs. In this unit, you'll see how Azure performs Identity and Access Management (IAM) and how that compares to AWS."
+  description: "An essential function of any cloud service is to authenticate users and authorize them to access the resources they need to do their jobs. In this unit, you see how Azure performs Identity and Access Management (IAM) and how that compares to Amazon Web Services (AWS)."
   ms.date: 01/16/2025
   author: carols
   ms.author: carols
