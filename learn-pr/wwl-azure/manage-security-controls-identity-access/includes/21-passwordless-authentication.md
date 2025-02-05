@@ -163,7 +163,7 @@ There are three types of passwordless sign-in deployments available with securit
  -  Windows 10 version 1809 or higher using a supported browser like Microsoft Edge or Mozilla Firefox (version 67 or higher).
  -  Windows 10 version 1809 supports FIDO2 sign-in and may require software from the FIDO2 key manufacturer to be deployed. We recommend you use version 1903 or later.
 
-#### For hybrid Microsoft Entra domain joined devices, **use**:
+#### For hybrid Microsoft Entra domain joined devices, use:
 
  -  Windows 10 version 2004 or later.
  -  Fully patched domain servers running Windows Server 2016 or 2019.

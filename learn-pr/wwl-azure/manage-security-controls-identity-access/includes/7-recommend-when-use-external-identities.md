@@ -33,9 +33,6 @@ As an administrator, you can easily add guest users to your organization in the 
 
  -  Guest users follow a few simple redemption steps to sign in.
 
-:::image type="content" source="../media/review-permissions-f0a7a68d-8820455b.png" alt-text="Screenshot showing the review permissions template that is used to invite guest users.":::
-
-
 ## Allow self-service sign-up
 
 With a self-service sign-up user flow, you can create a sign-up experience for external users who want to access your apps. As part of the sign-up flow, you can provide options for different social or enterprise identity providers, and collect information about the user. Learn about [self-service sign-up and how to set it up](/entra/external-id/self-service-sign-up-overview).
@@ -53,7 +50,7 @@ You can use authentication and authorization policies to protect your corporate 
  -  At the application level.
  -  For specific guest users to protect corporate apps and data.
 
-:::image type="content" source="../media/getting-started-28cfa399-11908127.png" alt-text="Screenshot showing the getting started page for using authentication and authorization policies to protect your corporate content.":::
+:::image type="content" source="../media/get-started-28cfa399-5b81b6b6.png" alt-text="Screenshot showing the getting started page for using authentication and authorization policies to protect your corporate content.":::
 
 
 ## Let application and group owners manage their own guest users

@@ -4,8 +4,8 @@ Privileged Identity Management (PIM) is a service in Microsoft Entra ID that ena
 
 Organizations want to minimize the number of people who have access to secure information or resources, because that reduces the chance of
 
- -  a malicious actor getting access.
- -  an authorized user inadvertently impacting a sensitive resource.
+ -  A malicious actor getting access.
+ -  An authorized user inadvertently impacting a sensitive resource.
 
 However, users still need to carry out privileged operations in Microsoft Entra ID, Azure, Microsoft 365, or SaaS apps. Organizations can give users just-in-time privileged access to Azure and Microsoft Entra resources and can oversee what those users are doing with their privileged access.
 
@@ -211,7 +211,7 @@ You can [assign eligibility to members or owners of the PIM for Groups.](/entra/
 > You can assign the group to one or more Microsoft Entra ID and Azure resource roles in the same way as you assign roles to users. A **maximum of 500 role-assignable groups** can be created in a single Microsoft Entra organization (tenant).
 
 :::image type="content" source="../media/privileged-identity-groups-800d8e90-8e798977.png" alt-text="Diagram showing an example of privileged identity for groups.":::
-When group assignment nears its expiration, use \[PIM to extend or renew the group assignment\](/entra/id-governance/privileged-identity-management/groups-renew-extend). This operation requires group owner approval.
+When group assignment nears its expiration, use [PIM to extend or renew the group assignment](/entra/id-governance/privileged-identity-management/groups-renew-extend). This operation requires group owner approval.
 
 ### Approve or deny PIM activation request
 

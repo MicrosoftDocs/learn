@@ -19,7 +19,7 @@ Some groups can't be managed in the Azure portal:
 
 There are two group types and three group membership types. Review the options to find the right combination for your scenario.
 
-### Group types:
+### Group types
 
 Security: Used to manage user and computer access to shared resources.
 
@@ -32,7 +32,7 @@ Microsoft 365: Provides collaboration opportunities by giving group members acce
 
 This option also lets you give people outside of your organization access to the group. Members of a Microsoft 365 group can only include users. Owners of a Microsoft 365 group can include users and service principals.
 
-## Membership types:
+### Membership types
 
 Assigned: Lets you add specific users as members of a group and have unique permissions.
 

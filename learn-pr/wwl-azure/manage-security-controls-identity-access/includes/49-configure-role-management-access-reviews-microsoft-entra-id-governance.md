@@ -51,21 +51,19 @@ Access Reviews for Service Principals require a Microsoft Entra Workload ID Prem
 12. Under Review role membership, select the privileged Azure resource or Microsoft Entra roles to review.
 13. In **assignment type**, scope the review by how the principal was assigned to the role. Choose eligible assignments only to review eligible assignments (regardless of activation status when the review is created) or active assignments only to review active assignments. Choose all active and eligible assignments to review all assignments regardless of type.<br>
 14. In the **Reviewers** section, select one or more people to review all the users. Or you can select to have the members review their own access.<br>
-
- -  **Selected users** \- Use this option to designate a specific user to complete the review. This option is available regardless of the scope of the review, and the selected reviewers can review users, groups and service principals.
- -  **Members (self)** \- Use this option to have the users review their own role assignments. This option is only available if the review is scoped to Users and Groups or Users. For Microsoft Entra roles, role-assignable groups won't be a part of the review when this option is selected.
- -  **Manager** – Use this option to have the user’s manager review their role assignment. This option is only available if the review is scoped to Users and Groups or Users. Upon selecting Manager, you'll also have the option to specify a fallback reviewer. Fallback reviewers are asked to review a user when the user has no manager specified in the directory. For Microsoft Entra roles, role-assignable groups will be reviewed by the fallback reviewer if one is selected.
+     -  **Selected users**\- Use this option to designate a specific user to complete the review. This option is available regardless of the scope of the review, and the selected reviewers can review users, groups and service principals.
+     -  **Members (self)**\- Use this option to have the users review their own role assignments. This option is only available if the review is scoped to Users and Groups or Users. For Microsoft Entra roles, role-assignable groups won't be a part of the review when this option is selected.
+     -  **Manager**–Use this option to have the user’s manager review their role assignment. This option is only available if the review is scoped to Users and Groups or Users. Upon selecting Manager, you'll also have the option to specify a fallback reviewer. Fallback reviewers are asked to review a user when the user has no manager specified in the directory. For Microsoft Entra roles, role-assignable groups will be reviewed by the fallback reviewer if one is selected.
 
 ## Upon completion settings
 
 1.  To specify what happens after a review completes, expand the **Upon completion settings** section.
 2.  If you want to automatically remove access for users that were denied, set Auto apply results to resource to Enable. If you want to manually apply the results when the review completes, set the switch to Disable.<br>
 3.  Use the If reviewer doesn't respond list to specify what happens for users that aren't reviewed by the reviewer within the review period. This setting doesn't impact users who were reviewed by the reviewers.
-
- -  No change - Leave user's access unchanged.
- -  Remove access - Remove user's access.
- -  Approve access - Approve user's access.
- -  Take recommendations - Take the system's recommendation on denying or approving the user's continued access.
+     -  No change - Leave user's access unchanged.
+     -  Remove access - Remove user's access.
+     -  Approve access - Approve user's access.
+     -  Take recommendations - Take the system's recommendation on denying or approving the user's continued access.
 
 4.  Use the Action to apply on denied guest users list to specify what happens for guest users that are denied. This setting isn't editable for Microsoft Entra ID and Azure resource role reviews at this time; guest users, like all users, will always lose access to the resource if denied.
 5.  You can send notifications to additional users or groups to receive review completion updates. This feature allows for stakeholders other than the review creator to be updated on the progress of the review. To use this feature, select Select User(s) or Group(s) and add an additional user or group upon you want to receive the status of completion.<br>
