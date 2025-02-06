@@ -6,7 +6,7 @@ To get started, you need a GitHub account. If you don't have an account, create 
 
 ### GitHub Codespaces
 
-[GitHub Codespaces](https://docs.github.com/codespaces) is a cloud-based development environment that enables you to swiftly set-up a comprehensive workspace for your project. It's accessible to developers in all organizations, providing up to 60 hours of free usage every month. GitHub Codespaces and Dev Containers are closely related as Codespaces uses Dev Containers to provide a cloud-based development environment.
+[GitHub Codespaces](https://docs.github.com/codespaces) is a cloud-based development environment that enables you to swiftly set up a comprehensive workspace for your project. It's accessible to developers in all organizations, providing up to 60 hours of free usage every month. GitHub Codespaces and Dev Containers are closely related as Codespaces uses Dev Containers to provide a cloud-based development environment.
 
 #### What is a Dev Container?
 
