@@ -42273,6 +42273,141 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machine-availability/11-simulation-machine-scale.md",
       "redirect_url": "/training/modules/configure-virtual-machine-availability/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/build-javascript-applications-typescript/index.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-variable-types/1-introduction.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-variable-types/2-types-overview.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-variable-types/3-primitive-types.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-variable-types/4-enums.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-variable-types/5-any-unknown.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-variable-types/6-unions-intersections.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-variable-types/7-collection-types.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-variable-types/8-types-lab.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-variable-types/9-knowledge-check.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-variable-types/10-summary-resources.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-variable-types/index.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/1-introduction.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/2-introduction-classes-typescript.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/3-exercise-create-class.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/4-exercise-instantiate-class.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/5-access-modifiers.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/6-exercise-apply-access-modifiers.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/7-define-static-properties.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/8-use-inheritance-extend-class.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/9-exercise-use-inheritance-extend-class.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/10-exercise-declare-interface-ensure-class-shape.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/11-design-considerations.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/12-functions-class-lab.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/13-knowledge-check.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/14-summary-resources.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-declare-instantiate-classes/index.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
     }
   ]
 }

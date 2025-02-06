@@ -5115,3 +5115,13 @@ achievements:
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
   iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn.language.build-javascript-applications-typescript.trophy
+  type: trophy
+  title: Build JavaScript applications using TypeScript
+  summary: TypeScript offers all the features of JavaScript, plus an additional layer on top of these - the TypeScript type system. In this learning path, you’ll learn how using TypeScript for JavaScript development can help you build more robust code, reduce runtime type errors, take advantage of modern features before they are available in JavaScript, and work better with development teams.
+  iconUrl: /training/achievements/typescript/build-javascript-applications-typescript.svg
+- uid: learn.language.typescript-declare-variable-types.badge
+  type: badge
+  title: Declare variable types in TypeScript
+  summary: JavaScript is a dynamically typed language. While this makes declaring variables easy, it can in some cases lead to unexpected results. The static type system in TypeScript enables you to describe the shape of an object, providing better documentation, and allowing TypeScript to validate that your code is working correctly. In TypeScript, declarations of namespaces, classes, properties, functions, variables, and other language entities associate types with those entities. The way that a type is formed and associated with a language entity depends on the kind of entity. This module introduces some of the available types and shows how to associate them with variables. Later modules examine how interfaces, functions, and classes use static typing.
+  iconUrl: /training/achievements/typescript/typescript-declare-variable-types.svg
