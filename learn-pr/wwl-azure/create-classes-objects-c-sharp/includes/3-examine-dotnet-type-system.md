@@ -18,7 +18,7 @@ It's important to understand two fundamental points about the type system in .NE
 
 The following illustration shows the relationship between value types and reference types in the CTS.
 
-![Diagram showing value and reference types](../media/value-reference-types-common-type-system.png)
+![Diagram showing value and reference types.](../media/value-reference-types-common-type-system.png)
 
 Classes and structures are two of the basic constructs of the common type system in .NET. Each is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit. The data and behaviors are the members of the `class`, `struct`, or `record`. The members of a class include properties (data), methods (behaviors), fields (variables declared inside the class), and many others.
 
