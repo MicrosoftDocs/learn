@@ -42268,6 +42268,11 @@
       "source_path": "learn-pr/wwl-azure/strategic-platform-road-mapping/10-summary.yml",
       "redirect_url": "/training/modules/strategic-platform-road-mapping/11-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-availability/11-simulation-machine-scale.md",
+      "redirect_url": "/training/modules/configure-virtual-machine-availability/",
+      "redirect_document_id": false
     }
   ]
 }
