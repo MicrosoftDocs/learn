@@ -29,9 +29,6 @@ Many organizations want to carefully test Microsoft Entra Password Protection on
 
 It's important to understand the underlying design and function concepts before you deploy Microsoft Entra Password Protection in an on-premises AD DS environment. The following diagram shows how the components of Microsoft Entra Password Protection work together:
 
-:::image type="content" source="../media/microsoft-entra-identity-password-protection-6098e71a-d886a4c6.png" alt-text="Diagram showing an example of Azure Active Directory Domain Services.":::
-
-
 ## How Microsoft Entra Password Protection works
 
 The on-premises Microsoft Entra Password Protection components work as follows:

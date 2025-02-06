@@ -24,8 +24,6 @@ Conditional Access takes signals from various sources into account when making a
 > [!IMPORTANT]
 > Conditional Access policies are enforced after first-factor authentication is completed. Conditional Access isn't intended as an organization's first line of defense for scenarios like denial-of-service (DoS) attacks, but it can use signals from these events to determine access.
 
-## Common signals
-
 These signals include:
 
  -  User or group membership

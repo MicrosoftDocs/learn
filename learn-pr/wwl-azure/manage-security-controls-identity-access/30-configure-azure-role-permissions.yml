@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Azure role permissions for management groups, subscriptions, resource groups, and resources
   description: "Configure Azure role permissions for management groups, subscriptions, resource groups, and resources"
-  ms.date: 02/05/2025
+  ms.date: 02/06/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

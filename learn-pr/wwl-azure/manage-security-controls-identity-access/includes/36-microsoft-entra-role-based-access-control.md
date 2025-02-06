@@ -42,9 +42,6 @@ You can create role assignments and list the role assignments using the Microsof
 
 The following diagram shows an example of a role assignment. In this example, Chris has been assigned the App Registration Administrator custom role at the scope of the Contoso Widget Builder app registration. The assignment grants Chris the permissions of the App Registration Administrator role for only this specific app registration.
 
-:::image type="content" source="../media/role-assignment-example-95f873db-6505eb2f.png" alt-text="Diagram showing an example of a Microsoft Entra role assignment.":::
-
-
 ### Security principal
 
 A security principal represents a user, group, or service principal that is assigned access to Microsoft Entra resources. A user is an individual who has a user profile in Microsoft Entra ID. A group is a new Microsoft 365 or security group that has been set as a role-assignable group. A service principal is an identity created for use with applications, hosted services, and automated tools to access Microsoft Entra resources.

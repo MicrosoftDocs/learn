@@ -104,11 +104,6 @@ When a role assignment or any other Azure RBAC data is deleted, the data is glob
 
 Azure RBAC data is global to ensure that customers can timely access resources regardless from where they are accessing. Azure RBAC is enforced by Azure Resource Manager, which has a global endpoint and requests are routed to the nearest region for speed and resilience. Therefore, Azure RBAC must be enforced in all regions and the data is replicated to all regions.
 
-Consider the following example. Arina creates a virtual machine in East Asia. Bob, who is a member of Arina's team, works in the United States. Bob needs to access the virtual machine that was created in East Asia. To grant Bob timely access to the virtual machine, Azure needs to globally replicate the role assignment that grants Bob access to the virtual machine from anywhere Bob is.
-
-:::image type="content" source="../media/data-stored-1d264e4e-a499bbf6.png" alt-text="Diagram showing an example of how Azure role-based access control global data is stored.":::
-
-
 ## License requirements
 
 Using this feature is free and included in your Azure subscription.

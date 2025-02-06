@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Secure identity and access
   description: "This module focuses on effectively managing security controls in Microsoft Entra ID by securing identities, authentication, and authorization to protect users, groups, and external identities against threats while ensuring secure and seamless access to resources."
-  ms.date: 02/05/2025
+  ms.date: 02/06/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module
