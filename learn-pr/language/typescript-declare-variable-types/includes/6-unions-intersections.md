@@ -56,8 +56,6 @@ let newManager: ManagementEmployee = {
 };
 ```
 
-You can learn more about interfaces in the [Implement interfaces in TypeScript](/training/modules/typescript-implement-interfaces/) module.
-
 ## Literal types
 
 A literal is a more concrete subtype of a collective type. What this means is that `"Hello World"` is a `string`, but a `string` isn't `"Hello World"` inside the type system.

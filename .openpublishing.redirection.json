@@ -42273,6 +42273,96 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machine-availability/11-simulation-machine-scale.md",
       "redirect_url": "/training/modules/configure-virtual-machine-availability/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-implement-interfaces/1-introduction.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-implement-interfaces/2-interfaces-typescript.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-implement-interfaces/3-declare-instantiate-interface.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-implement-interfaces/4-extend-interface.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-implement-interfaces/5-use-interfaces.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-implement-interfaces/6-interfaces-lab.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-implement-interfaces/7-knowledge-check.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-implement-interfaces/8-summary-resources.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-implement-interfaces/index.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-get-started/1-introduction.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-get-started/2-typescript-overview.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-get-started/3-select-typescript-editor.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-get-started/4-install-typescript-compiler.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-get-started/5-typescript-compiler.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-get-started/6-typescript-project.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-get-started/7-knowledge-check.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-get-started/8-summary-resources.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-get-started/index.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
     }
   ]
 }
