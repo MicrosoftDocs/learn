@@ -10,13 +10,13 @@ There are three crucial components of an accessibility tree:
 - **Role**: Defines what the element is, such as text, image, button, etc. For example, a `<button>` tag has the role of a button. The role helps users understand how they can interact with the element.
 - **State/Value**: Represents the current state or value of an element, for example, the value of a slider (50%) or the state of a checkbox (checked or unchecked).
 
-:::image type="complex" source="../media/screen-reader-name-role-value-sm.png" alt-text="Screenshot of a table with three columns labeled 'Name,' 'Role,' and 'Value.'" lightbox="../media/screen-reader-name-role-value-lg.png":::
+:::image type="complex" source="../media/screen-reader-name-role-value-sm.png" alt-text="Screenshot of a table with three columns labeled 'Name,' 'Role,' and 'Value.'":::
    A table with three columns labeled "Name," "Role," and "Value." The entries under "Name" include Footer, Footer Textbox, Slide Number, Don’t show on title slide, and Apply to All. Under "Role," they're identified as checkbox, textbox, or button. The "Value" column shows states such as On, Confidential, Off, and Apply to All. A small inset screenshot in the bottom right shows a UI with checkboxes and text input options matching the table entries.
 :::image-end:::
 
 The name, role, and state/value of each element must be programmatically determined so that assistive technologies like screen readers can accurately convey this information to users. 
 
-:::image type="complex" source="../media/screen-reader-accessibility_dom-trees-sm.png" alt-text="Screenshot comparing a DOM tree and an accessibility tree." lightbox="../media/screen-reader-accessibility_dom-trees-lg.png":::
+:::image type="complex" source="../media/screen-reader-accessibility_dom-trees-sm.png" alt-text="Screenshot comparing a DOM tree and an accessibility tree." :::
    A comparison between a DOM tree and an accessibility tree. The DOM tree shows HTML code with a toolbar labeled "Ribbon" containing a tab panel labeled "Home" with buttons for "Bold," "Italic," and "Underline." The accessibility tree lists a window labeled "PowerPoint," with a pane labeled "Ribbon." Inside the pane is a group labeled "Home," which contains buttons for "Bold," "Italic," and "Underline."
 :::image-end:::
 
@@ -34,7 +34,7 @@ In order to develop websites and apps that support screen readers, it's crucial 
 
 The app calls the operating system's accessibility API to provide an accessibility tree. The screen reader then uses this API to access the tree. 
 
-:::image type="complex" source="../media/screen-reader-accessibility-tree-sm.png" alt-text="Screenshot of a diagram showing the flow between a screen reader and an app through accessibility APIs." lightbox="../media/screen-reader-accessibility-tree-lg.png":::
+:::image type="complex" source="../media/screen-reader-accessibility-tree-sm.png" alt-text="Screenshot of a diagram showing the flow between a screen reader and an app through accessibility APIs.":::
    A diagram showing the flow between a screen reader and an app through accessibility APIs. At the top is a box labeled "App," connected by a line to "Accessibility API for Provider." Below it is "OS," followed by "Accessibility API for Client." At the bottom is a box labeled "Screen Reader," connected by lines to the elements above.
 :::image-end:::
 
@@ -50,7 +50,7 @@ In this model, the app and screen reader communicate only through the operating 
 
 For web apps, the browser communicates with the accessibility API by converting the DOM tree provided by the web app into an accessibility tree for the operating system. Each rendered element on the page has a corresponding element in the accessibility tree, ensuring standardization across operating systems and browsers despite differences in underlying accessibility APIs. Web apps can't raise events directly and have limited ability to implement patterns on elements. 
 
-:::image type="complex" source="../media/screen-reader-accessibility-tree-dom-tree-sm.png" alt-text="Screenshot of a diagram showing the interaction between an app, browser, operating system (OS), and screen reader through APIs." lightbox="../media/screen-reader-accessibility-tree-dom-tree-lg.png":::
+:::image type="complex" source="../media/screen-reader-accessibility-tree-dom-tree-sm.png" alt-text="Screenshot of a diagram showing the interaction between an app, browser, operating system (OS), and screen reader through APIs.":::
    A diagram showing the interaction between an app, browser, operating system (OS), and screen reader through APIs. At the top is a box labeled "App," with a downward arrow labeled "DOM" pointing to a "Browser" box. Below the browser is the "OS" box, connected by arrows labeled "Events" and "Patterns" to both the browser and the "Screen Reader" at the bottom. Arrows indicate a two-way flow of events and patterns between the browser, OS, and screen reader using accessibility APIs.
 :::image-end:::
 
