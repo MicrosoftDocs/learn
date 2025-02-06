@@ -4,7 +4,7 @@ metadata:
   title: "Microsoft Azure AI Fundamentals: Generative AI"
   description: Learn 
   brand: azure
-  ms.date: 07/26/2023
+  ms.date: 02/05/2025
   author: sherzyang
   ms.author: sheryang
   ms.topic: learning-path
@@ -34,7 +34,7 @@ subjects:
   - cloud-computing
 modules:
 - learn.wwl.fundamentals-generative-ai
-- learn.wwl.introduction-to-azure-ai-studio
+- learn.wwl.prepare-azure-ai-development
 - learn.wwl.responsible-ai-studio
 trophy:
   uid: learn.intro-generative-ai.trophy

@@ -56,7 +56,7 @@ To use secrets in the CI/CD secret store and pass them to your load test in CI/C
     > [!IMPORTANT]
     > The name of the secret input parameter needs to match the name that's used in the Apache JMeter script.
 
-You just specified a secret in the CI/CD secret store and passed a reference to Azure Load Testing. You can now use the secret in the Apache JMeter script.
+You specified a secret in the CI/CD secret store and passed a reference to Azure Load Testing. You can now use the secret in the Apache JMeter script.
 
 ### Use secrets in Apache JMeter
 
@@ -168,3 +168,4 @@ The following YAML snippet shows a GitHub Actions example:
         }
     ]
 ```
+

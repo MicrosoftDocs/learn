@@ -3,7 +3,7 @@ uid: learn.github.github-actions-cd
 metadata:
   title: "Build and deploy applications to Azure by using GitHub Actions"
   description: Create two deployment workflows using GitHub Actions and Microsoft Azure. Learn about triggering a CD workflow and storing credentials.
-  ms.date: 11/02/2023
+  ms.date: 01/22/2025
   author: a-a-ron
   ms.author: aastewar
   ms.topic: module
@@ -12,13 +12,13 @@ title: "Build and deploy applications to Azure by using GitHub Actions"
 summary: Create two deployment workflows using GitHub Actions and Microsoft Azure.
 abstract: |
   In this module, you will:
-  - Discover options for triggering a continuous delivery GitHub Workflow
-  - Understand steps to remove workflow artifacts
-  - Identify important environment protections 
-  - Control workflow execution with job conditionals
-  - Deploying to Microsoft Azure with a GitHub deploy action
-  - Store credentials with GitHub Secrets
-  - Create and destroy Azure resources with GitHub Actions workflows
+  - Discover options for triggering a continuous delivery GitHub Workflow.
+  - Understand steps to remove workflow artifacts.
+  - Identify important environment protections.
+  - Control workflow execution with job conditionals.
+  - Deploy to Microsoft Azure with a GitHub deploy action.
+  - Store credentials with GitHub Secrets.
+  - Create and destroy Azure resources with GitHub Actions workflows.
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub

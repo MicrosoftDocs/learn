@@ -1,5 +1,3 @@
-
-
 To modernize Contoso's current operation model, the IT Engineering team needs to find an effective method to migrate on-premises resources such as file servers to Azure IaaS VMs.
 
 In this module, you learned how to perform a Windows Server IaaS migration. You also learned how to migrate workloads using the appropriate Windows Server migration tools, and file servers using the Storage Migration Service. Finally, you learned how to migrate on-premises resources to Azure.

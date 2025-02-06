@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Analyze the limitations of a polling-based web app
   description: Discuss the drawbacks of a web application that relies on polling to keep the UI updated.
-  ms.date: 08/12/2024
+  ms.date: 01/22/2025
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: unit

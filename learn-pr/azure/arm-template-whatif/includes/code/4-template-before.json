@@ -5,7 +5,7 @@
   "variables": {},
   "resources": [
     {
-      "apiVersion": "2024-01-01",
+      "apiVersion": "2024-05-01",
       "type": "Microsoft.Network/virtualNetworks",
       "name": "vnet-001",
       "location": "[resourceGroup().location]",

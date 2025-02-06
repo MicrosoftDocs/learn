@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-understand-microsoft-priva.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Microsoft Priva solution should Contoso use to identify and manage unauthorized data sharing?"
+    choices:
+    - content: "Consent Management (preview)"
+      isCorrect: false
+      explanation: "Incorrect: Consent Management is used for handling customer consent, not for managing unauthorized data sharing."
+    - content: "Privacy Risk Management"
+      isCorrect: true
+      explanation: "Correct: Privacy Risk Management helps detect and mitigate unauthorized data sharing."
+    - content: "Subject Rights Requests"
+      isCorrect: false
+      explanation: "Incorrect: Subject Rights Requests handle individual data access or deletion requests."
+  - content: "Why is it important for Contoso to enable Microsoft 365 audit logs before using Privacy Risk Management?"
+    choices:
+    - content: "To track user activities and generate actionable insights"
+      isCorrect: true
+      explanation: "Correct: Audit logs enable tracking user activities, which is essential for insights in Privacy Risk Management."
+    - content: "To enhance dashboard visuals"
+      isCorrect: false
+      explanation: "Incorrect: Enabling audit logs doesn't enhance dashboard visuals."
+    - content: "To monitor software updates"
+      isCorrect: false
+      explanation: "Incorrect: Monitoring software updates isn't related to audit logs in this context."
+  - content: "Which role-based access control (RBAC) step must Contoso complete to ensure that only authorized personnel can manage Privacy Risk Management policies?"
+    choices:
+    - content: "Configure permissions in the Knowledge Center"
+      isCorrect: false
+      explanation: "Incorrect: The Knowledge Center doesn't handle RBAC configurations."
+    - content: "Assign roles through the Data Map"
+      isCorrect: false
+      explanation: "Incorrect: Data Map is used for certain preview solutions, not Privacy Risk Management policies."
+    - content: "Use the Settings > Roles and scopes section"
+      isCorrect: true
+      explanation: "Correct: Roles for Privacy Risk Management are assigned through the Settings > Roles and scopes section."
+  - content: "How can Contoso use Consent Management (preview) to improve customer data handling?"
+    choices:
+    - content: "By automating the detection of data breaches"
+      isCorrect: false
+      explanation: "Incorrect: Consent Management doesn't detect data breaches."
+    - content: "By creating and deploying consent models across regions"
+      isCorrect: true
+      explanation: "Correct: Consent Management allows creating and deploying consent models across regions."
+    - content: "By simplifying subject rights requests"
+      isCorrect: false
+      explanation: "Incorrect: Subject Rights Requests manage individual data requests, not customer consent."
