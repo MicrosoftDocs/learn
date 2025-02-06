@@ -4,7 +4,7 @@ In your global clothing retailer, you have systems that store both relational da
 
 In this unit, you compare database services offered by Amazon Web Services (AWS) and Azure.
 
-:::image type="content" source="../media/databases-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS.":::
+:::image type="content" source="../media/databases-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS." border="false":::
 
 ## Understand database technologies on Azure and AWS
 

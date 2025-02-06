@@ -4,7 +4,7 @@ In your global clothing retailer, you have two public-facing web sites. One in A
 
 In this unit, you explore event-driven and messaging architectures and compare how you can implement them in AWS and Azure.
 
-:::image type="content" source="../media/events-messaging-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS.":::
+:::image type="content" source="../media/events-messaging-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS." border="false":::
 
 ## What are event-driven and messaging architectures?
 

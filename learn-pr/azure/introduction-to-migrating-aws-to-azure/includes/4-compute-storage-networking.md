@@ -4,7 +4,7 @@ In your global clothing retailer, the competitor you recently merged with has ex
 
 In this unit, you compare compute, storage, and networking IaaS resources that you can create in Azure and consider their equivalents in AWS.
 
-:::image type="content" source="../media/iaas-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS.":::
+:::image type="content" source="../media/iaas-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS." border="false":::
 
 ## Compare Compute services in Azure and AWS
 

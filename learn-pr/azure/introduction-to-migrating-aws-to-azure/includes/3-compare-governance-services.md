@@ -4,7 +4,7 @@ In your global clothing retailer, you use Amazon Web Services (AWS) Config, Clou
 
 In this unit, you compare the tools available in AWS and Azure for data governance.
 
-:::image type="content" source="../media/governance-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS.":::
+:::image type="content" source="../media/governance-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS." border="false":::
 
 ## Comparing governance in Azure and AWS
 

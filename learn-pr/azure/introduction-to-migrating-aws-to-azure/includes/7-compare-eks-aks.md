@@ -4,7 +4,7 @@ In your global clothing retailer, you've been migrating your public-facing web s
 
 In this unit, you compare services that host Kubernetes in Azure and Amazon Web Services (AWS).
 
-:::image type="content" source="../media/kubernetes-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS.":::
+:::image type="content" source="../media/kubernetes-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS." border="false":::
 
 ## What is Kubernetes?
 
