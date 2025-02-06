@@ -42,7 +42,6 @@ Ensure that minimum contrast ratio requirements are met, including in high-contr
 Annotations for keyboard accessibility help designers communicate how users can navigate and interact with their designs using a keyboard. Here are some common annotations using these plugins for Figma:
 - [ A11y Focus Order Plugin and Fluent Accessibility Design Toolkit](https://www.figma.com/community/plugin/1208180794570801545/includeaccessibility-annotations?trackingId=6o88RA2ATkWCJlzn7jeJNg%3D%3D)
 - [A11y Focus Order Plugin](https://www.figma.com/community/plugin/731310036968334777/a11y-focus-order)
-- [ A11y Focus Order Plugin and Fluent Accessibility Design Toolkit](https://www.figma.com/community/plugin/1208180794570801545/includeaccessibility-annotations?trackingId=6o88RA2ATkWCJlzn7jeJNg%3D%3D):
 
 #### Focus Order
 
@@ -51,8 +50,8 @@ Indicate the sequence in which interactive elements should receive focus when na
 1. Use the focus order indicators to show the intended ordering of elements when being navigated using a keyboard.
 1. Long lists of like elements should be by-passable. For instance, imagine a Teams meeting where user has to make a user as signer. Users can invoke the menu item of that user and using arrow key they can drill down on the required menu item.
 
-:::image type="complex" source="../media/focus-order-accessibility-annotation-teams-meeting.png" alt-text="Screenshot of Teams meeting with focus order annotations." lightbox="../media/focus-order-accessibility-annotation-teams-meeting.png":::
-   Focus Order Accessibility Annotation Teams meeting Image Description: Image of Teams meeting with Gallery and People tile defined as custom component, Overflow as library component, Drop-down menu as parent component and make me a signer is one of the child components. Each section has numerical labels indicating the focus order.
+:::image type="complex" source="../media/focus-order-accessibility-annotation-wishcart-application.png" alt-text="Screenshot of WishCart application with focus order annotations." lightbox="../media/focus-order-accessibility-annotation-wishcart-application.png":::
+   Image of WishCart application with wishcart, delivering to New Delhi, Search field, choose language for shopping, hello sign in accounts &lists, returns &orders and Cart defined as custom component, Search in all categories Drop-down list as parent component and ‘All categories’, ‘Devices’ & ‘fashion’ as its child components. Each section has numerical labels indicating the focus order.
 :::image-end:::
 
 :::image type="complex" source="../media/focus-order-accessibility-annotation.png" alt-text="Screenshot of Teach Access homepage with focus order annotations." lightbox="../media/focus-order-accessibility-annotation.png":::
