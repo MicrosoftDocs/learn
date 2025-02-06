@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: purview
   hidden: false
-title: Identify and mitigate AI data security risks. AI data security risks
+title: Identify and mitigate AI data security risks
 summary: Microsoft Purview Data Security Posture Management (DSPM) for AI helps organizations monitor AI activity, enforce security policies, and prevent unauthorized data exposure. Learn how to configure DSPM for AI, track AI interactions, run data assessments, and apply security controls to reduce risks associated with AI usage.
 abstract: |
   After completing this module, you'll be able to:
