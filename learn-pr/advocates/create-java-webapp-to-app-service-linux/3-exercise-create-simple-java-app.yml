@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-tomcat-java-appservice.6
-title: Summary
+uid: learn.azure.build-tomcat-java-appservice.3
+title: Exercise - Create a simple Tomcat Java web app 
 metadata:
   adobe-target: true
-  description: "Summary and cleanup of Azure resources."
+  description: "Let's create a simple java web app and deploy it locally."
   author: "ayangupt"
   ms.author: "ayangupta"
   ms.date: "10/30/2024"
@@ -11,8 +11,7 @@ metadata:
   ms.custom: team=cloud_advocates, devx-track-extended-java, linux-related-content
   ms.reviewer: 
   ms.assetid: "HelloJavaAppService"
-durationInMinutes: 2
+durationInMinutes: 10
 content: |
-  [!include[](includes/6-summary.md)]
-
+  [!include[](includes/3-exercise-create-simple-java-app.md)]
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-tomcat-java-appservice.6
-title: Summary
+uid: learn.azure.build-tomcat-java-appservice.2
+title: Introduction to Azure App Service
 metadata:
   adobe-target: true
-  description: "Summary and cleanup of Azure resources."
+  description: "What is Azure App Service? Find out more in this module."
   author: "ayangupt"
   ms.author: "ayangupta"
   ms.date: "10/30/2024"
@@ -13,6 +13,4 @@ metadata:
   ms.assetid: "HelloJavaAppService"
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
-
-
+  [!include[](includes/2-azure-app-service-explanation.md)]
