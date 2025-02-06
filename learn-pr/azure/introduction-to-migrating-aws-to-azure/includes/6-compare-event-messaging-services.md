@@ -1,6 +1,6 @@
 Cloud-native solutions often consist of components, sometimes termed microservices, that each implement part of the functionality required. To satisfy any single user request, these components must communicate reliably and scalability. Event-driven and messaging architectures provide services that enable this communication.
 
-In your global clothing retailer, you have two public-facing web sites, one in Amazon Web Services (AWS) that you created before the merger, and one in Azure that was developed by the competitor that you acquired. Both web sites are implemented as cloud-native applications with loosely coupled microservices communicating through message queues and event busses. You want to create a single company web site from these two so you need to know how the messaging services and event busses can be migrated.
+In your global clothing retailer, you have two public-facing web sites. One in Amazon Web Services (AWS) that you created before the merger, and one developed by the competitor you acquired which is in Azure. Both web sites are implemented as cloud-native applications with loosely coupled microservices communicating through message queues and event busses. You want to create a single company web site from these two web sites. So, you need to know how you can migrate the messaging services and event busses.
 
 In this unit, you explore event-driven and messaging architectures and compare how you can implement them in AWS and Azure.
 

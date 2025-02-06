@@ -3,7 +3,7 @@ uid: learn.introduction-migrating-aws-azure.compare-eks-aks
 title: Examine Kubernetes hosting in AWS and Azure
 metadata:
   title: Examine Kubernetes hosting in AWS and Azure
-  description: "Learn about how you can host Kubernetes clusters and their containers in Azure and compare those services to their equivalent in AWS."
+  description: "Learn about how you can host Kubernetes clusters and their containers in Azure and compare those services to their equivalent in Amazon Web Services (AWS)."
   ms.date: 01/16/2025
   author: carols
   ms.author: carols

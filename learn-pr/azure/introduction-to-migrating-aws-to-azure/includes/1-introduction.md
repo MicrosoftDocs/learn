@@ -1,6 +1,6 @@
 Amazon Web Services (AWS) is similar to Microsoft Azure in that it offers a growing range of AI, compute, storage, database, and other services. While both platforms have similarities in their capabilities, the implementations of cloud services are often different. When planning a migration for some or all of your workloads, you need to understand important concepts, such as identity and access management (IAM), governance, IaaS services, storage, and more.
 
-Suppose you work for a global clothing retailer. Until recently, you're hosting most of your business-critical systems on AWS but a merger with a retailing competitor requires you to understand their cloud systems, which are hosted on Azure. You want to investigate the differences and similarities between Azure and AWS and determine how systems equivalent to your AWS architecture can be deployed in Azure.
+Suppose you work for a global clothing retailer. Most of your business-critical systems are hosted on AWS. But recently, a merger with a retailing competitor requires you to understand their cloud systems, which are hosted on Azure. You want to investigate the differences and similarities between Azure and AWS and determine how systems equivalent to your AWS architecture can be deployed in Azure.
 
 In this module you learn about the key differences between the two platforms, and how to get more information to manage your migration.
 

@@ -1,6 +1,6 @@
 Identity and Access Management (IAM) is the framework of permissions, processes, and systems that ensure security principals have correct access to organizational resources. IAM involves managing user identities and controlling their access to systems and data based on predefined roles and permissions. 
 
-In your global clothing retailer, your merger with a competitor gives you systems implemented on both Azure and Amazon Web Services (AWS). You're planning to migrate some of your AWS resources to Azure but, before you do, you need to understand how users are authenticated and authorized to access resources, so that the migration doesn't result in accidental data breaches.
+In your global clothing retailer, your merger with a competitor gives you systems implemented on both Azure and Amazon Web Services (AWS). You're planning to migrate some of your AWS resources to Azure. But, before you do, you need to understand how users are authenticated and authorized to access resources, so that the migration doesn't result in accidental data breaches.
 
 In this unit, you see how identity and access are managed in Azure and compare that with the methods you might be familiar with from your AWS experience.
 
@@ -28,7 +28,7 @@ Before getting into the details of access control, let's first compare the termi
 
 In AWS, IAM is user-centric and implemented with policies. Each policy can be applied to users, groups, or roles.
 
-User identities are stored in a single AWS account and can't be used to access other accounts. You have fine-grained control over the resources each user can access.
+User identities are stored in a single AWS account and can't be used to access other accounts. Your control over the resources each user can access is fine-grained.
 
 ## IAM in Azure
 
