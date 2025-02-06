@@ -42,7 +42,8 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The **aria-labelledby** attribute serves a different purpose related to roles."
 
-  - content: "What is the role of the **alt** attribute in an **<img>** tag?"
+  - content: |
+      "What is the role of the **alt** attribute in an **\<img>** tag?"
     choices:
     - content: "To provide extra styling to images"
       isCorrect: false
