@@ -4,7 +4,7 @@ Suppose you work for a global cycling retailer. Until recently, you hosted most 
 
 In this module, you learn about key areas in Azure, and how they map to Google Cloud services.
 
-:::image type="content" source="../media/introduction-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud.":::
+:::image type="content" source="../media/introduction-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud." border="false":::
 
 > [!IMPORTANT]
 > The services offered by each platform aren't identical, or called by the same name. For a comparison of the services offered by GCP and Azure, see [Google Cloud to Azure services comparison](/azure/architecture/gcp-professional/services)

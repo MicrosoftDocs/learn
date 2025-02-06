@@ -4,7 +4,7 @@ In your global cycling manufacturer, you're used to implementing IAM on Google C
 
 In this unit, you see how identity and access are managed in Azure and compare that with the methods you might be familiar with from your Google Cloud experience.
 
-:::image type="content" source="../media/iam-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud.":::
+:::image type="content" source="../media/iam-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud." border="false":::
 
 ## Identity and Access Management (IAM)
 

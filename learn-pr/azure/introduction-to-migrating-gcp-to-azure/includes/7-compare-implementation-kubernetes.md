@@ -4,7 +4,7 @@ In your global cycling manufacturer, you've been migrating your public-facing we
 
 In this unit, you compare services that host Kubernetes in Azure and Google Cloud.
 
-:::image type="content" source="../media/kubernetes-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud.":::
+:::image type="content" source="../media/kubernetes-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud." border="false":::
 
 ## What is Kubernetes?
 

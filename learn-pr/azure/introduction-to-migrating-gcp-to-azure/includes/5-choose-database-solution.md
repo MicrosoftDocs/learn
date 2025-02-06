@@ -4,7 +4,7 @@ In your global cycling manufacturer, you have customer data stored in Google Clo
 
 In this unit, let's explore how Azure data services map to similar ones in Google Cloud.
 
-:::image type="content" source="../media/databases-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud.":::
+:::image type="content" source="../media/databases-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud." border="false":::
 
 ## Choosing a relational database service
 

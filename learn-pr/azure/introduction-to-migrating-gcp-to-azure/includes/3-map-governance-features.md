@@ -4,7 +4,7 @@ In your global cycling manufacturer, you have a set of policies for the governan
 
 In this unit, you examine governance tools in Azure and compare them to Google Cloud.
 
-:::image type="content" source="../media/governance-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud.":::
+:::image type="content" source="../media/governance-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud." border="false":::
 
 ## Comparing governance in Azure and Google Cloud
 

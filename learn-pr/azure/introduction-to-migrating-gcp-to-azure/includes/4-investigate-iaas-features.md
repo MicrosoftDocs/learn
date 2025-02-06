@@ -4,7 +4,7 @@ In your global cycling manufacturer, the competitor you recently acquired has it
 
 In this unit, you compare compute, storage, and virtual networking features in Google Cloud and Microsoft Azure.
 
-:::image type="content" source="../media/iaas-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud.":::
+:::image type="content" source="../media/iaas-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud." border="false":::
 
 ## Compare compute services in Azure and Google Cloud
 

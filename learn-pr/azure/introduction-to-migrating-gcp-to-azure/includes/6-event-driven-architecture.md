@@ -4,7 +4,7 @@ In your global cycling manufacturer, your customer facing website is a cloud-nat
 
 In this unit, you learn about message queue system and event-driven architectures in Azure and Google Cloud.
 
-:::image type="content" source="../media/events-messaging-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud.":::
+:::image type="content" source="../media/events-messaging-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Google Cloud." border="false":::
 
 ## What are event-driven and messaging architectures?
 
