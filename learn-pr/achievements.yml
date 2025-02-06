@@ -5115,3 +5115,13 @@ achievements:
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
   iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn.typescript-develop-typed-functions.badge 
+  type: badge
+  title: Develop typed functions by using TypeScript
+  summary: If you know how to write functions in JavaScript, you know how to write functions in TypeScript. But TypeScript adds some new capabilities to the standard JavaScript functions to make them easier to work with.
+  iconUrl: /training/achievements/typescript/typescript-develop-typed-functions.svg
+- uid: learn.language.typescript-generics.badge
+  type: badge
+  title: Define generics in TypeScript
+  summary: Generics are code templates that you can define and reuse throughout your codebase. They provide a way to tell functions, classes, or interfaces what type you want to use when you call it.
+  iconUrl: /training/achievements/typescript/typescript-generics.svg
