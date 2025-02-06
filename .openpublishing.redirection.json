@@ -42273,6 +42273,96 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machine-availability/11-simulation-machine-scale.md",
       "redirect_url": "/training/modules/configure-virtual-machine-availability/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/1-introduction.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/2-organize-code-namespaces.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/3-exercise-single-file-namespace.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/4-multi-file-namespaces.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/5-design-considerations.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/6-lab.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/7-knowledge-check.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/8-summary-resources.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/index.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/1-introduction.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/2-organize-code-with-modules.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/3-exercise-export-import-module-components.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/4-exercise-compile-modules.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/5-exercise-access-external-type-libraries.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/6-lab.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/7-knowledge-check.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/8-summary-resources.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/index.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
     }
   ]
 }
