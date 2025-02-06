@@ -9,7 +9,7 @@ Blueprints are a declarative way to orchestrate the deployment of various resour
 
 The Azure Blueprints service is backed by the globally distributed [Azure Cosmos DB](/azure/cosmos-db/introduction). Blueprint objects are replicated to multiple Azure regions. This replication provides low latency, high availability, and consistent access to your blueprint objects, regardless of which region Azure Blueprints deploys your resources to.
 
-## How it's different from ARM templates
+## How it's different from Azure Resource Manager templates
 
 The service is designed to help with *environment setup*. This setup often consists of a set of resource groups, policies, role assignments, and Azure Resource Manager template deployments. A blueprint is a package to bring each of these *artifact* types together and allow you to compose and version that package, including through a continuous integration and continuous delivery (CI/CD) pipeline. Ultimately, each is assigned to a subscription in a single operation that can be audited and tracked.
 
@@ -29,7 +29,7 @@ Including a policy in a blueprint enables the creation of the right pattern or d
 
 A policy can be included as one of many *artifacts* in a blueprint definition. Blueprints also support using parameters with policies and initiatives.
 
-## Bluepint Definition
+## Blueprint definition
 
 A blueprint is composed of *artifacts*. Azure Blueprints currently supports the following resources as artifacts:
 

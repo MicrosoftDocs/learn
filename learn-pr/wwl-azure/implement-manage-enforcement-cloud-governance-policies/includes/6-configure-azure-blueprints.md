@@ -2,6 +2,9 @@
 
 The foundational environment created by this blueprint sample is based on the architecture principals of a [hub and spoke model](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke). The blueprint deploys a hub virtual network that contains common and shared resources, services, and artifacts such as Azure Bastion, gateway and firewall for connectivity, management and jump box subnets to host additional/optional management, maintenance, administration, and connectivity infrastructure. One or more spoke virtual networks are deployed to host application workloads such as web and database services. Spoke virtual networks are connected to the hub virtual network using Azure virtual network peering for seamless and secure connectivity. Additional spokes can be added by reassigning the sample blueprint or manually creating an Azure virtual network and peering it with the hub virtual network. All external connectivity to the spoke virtual network(s) and subnet(s) is configured to route through the hub virtual network and, via firewall, gateway, and management jump boxes.
 
+:::image type="content" source="../media/blueprint-sample-foundational-environment-10843ac1.png" alt-text="Diagram showing an example of a foundational environment created by a blueprint sample." lightbox="../media/blueprint-sample-foundational-environment-10843ac1.png" :::
+
+
 This blueprint deploys several Azure services to provide a secure, monitored, enterprise-ready foundation. This environment is composed of:
 
  -  [Azure Monitor Logs](/azure/azure-monitor/logs/data-platform-logs) and an Azure storage account to ensure resource logs, activity logs, metrics, and networks traffic flows are stored in a central location for easy querying, analytics, archival, and alerting.
@@ -9,7 +12,7 @@ This blueprint deploys several Azure services to provide a secure, monitored, en
  -  [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) in the hub supporting subnets for connectivity back to an on-premises network, an ingress and egress stack to/for Internet connectivity, and optional subnets for deployment of additional administrative or management services. Virtual Network in the spoke contains subnets for hosting application workloads. Additional subnets can be created after deployment as needed to support applicable scenarios.
  -  [Azure Firewall](/azure/firewall/overview) to route all outbound internet traffic and to enable inbound internet traffic via jump box. (Default firewall rules block all internet inbound and outbound traffic and rules must be configured after deployment, as applicable.)
  -  [Network security groups](/azure/virtual-network/network-security-group-how-it-works) (NSGs) assigned to all subnets (except service-owned subnets such as Azure Bastion, Gateway and Azure Firewall) configured to block all internet inbound and outbound traffic.
- -  [Application security groups](/azure/virtual-network/application-security-groups) to enable grouping of Azure virtual machines to apply common network security policies.
+ -  [Application security groups](/azure/virtual-network/application-security-groups) to enable grouping of Azure Virtual Machines to apply common network security policies.
  -  [Route tables](/azure/virtual-network/manage-route-table) to route all outbound internet traffic from subnets through the firewall. (Azure Firewall and NSG rules will need to be configured after deployment to open connectivity.)
  -  [Azure Network Watcher](/azure/network-watcher/network-watcher-monitoring-overview) to monitor, diagnose, and view metrics of resources in the Azure virtual network.
  -  [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview) to protect Azure resources against DDoS attacks.
@@ -22,9 +25,9 @@ The Azure Security Benchmark Foundation lays out a foundational architecture for
 
 To deploy the Azure Security Benchmark Foundation blueprint sample, the following steps must be taken:
 
- -  Create a new blueprint from the sample
- -  Mark your copy of the sample as Published
- -  Assign your copy of the blueprint to an existing subscription
+1.  Create a new blueprint from the sample.
+2.  Mark your copy of the sample as Published.
+3.  Assign your copy of the blueprint to an existing subscription.
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free) before you begin.
 
@@ -71,10 +74,12 @@ Once the copy of the blueprint sample has been successfully Published, it can be
          -  Blueprint definition version: Pick a Published version of your copy of the blueprint sample.
      -  Lock Assignment
         
-        Select the blueprint lock setting for your environment. For more information, see [blueprints resource locking](/azure/governance/blueprints/concepts/resource-locking).
+        
+         -  Select the blueprint lock setting for your environment. For more information, see [blueprints resource locking](/azure/governance/blueprints/concepts/resource-locking).
      -  Managed Identity
         
-        Choose either the default *system assigned* managed identity option or the *user assigned* identity option.
+        
+         -  Choose either the default *system assigned* managed identity option or the *user assigned* identity option.
      -  Blueprint parameters
         
         The parameters defined in this section are used by many of the artifacts in the blueprint definition to provide consistency.
@@ -93,7 +98,8 @@ Once the copy of the blueprint sample has been successfully Published, it can be
         If Network Watcher is already enabled, it's recommended that you use the existing Network Watcher resource group. You must also provide the location for the existing Network Watcher resource group for the artifact parameter Network Watcher resource group location.
      -  Artifact parameters
         
-        The parameters defined in this section apply to the artifact under which it's defined. These parameters are [dynamic parameters](/azure/governance/blueprints/concepts/parameters#dynamic-parameters) since they're defined during the assignment of the blueprint. For a full list or artifact parameters and their descriptions, see [Artifact parameters table](/azure/governance/blueprints/samples/azure-security-benchmark-foundation/deploy#artifact-parameters-table).
+        
+         -  The parameters defined in this section apply to the artifact under which it's defined. These parameters are [dynamic parameters](/azure/governance/blueprints/concepts/parameters#dynamic-parameters) since they're defined during the assignment of the blueprint. For a full list or artifact parameters and their descriptions, see [Artifact parameters table](/azure/governance/blueprints/samples/azure-security-benchmark-foundation/deploy#artifact-parameters-table).
 5.  Once all parameters have been entered, select Assign at the bottom of the page. The blueprint assignment is created and artifact deployment begins. Deployment takes roughly an hour. To check on the status of deployment, open the blueprint assignment.
 
 The Azure Blueprints service and the built-in blueprint samples are free of cost. Azure resources are [priced by product](https://azure.microsoft.com/pricing/). Use the [pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate the cost of running resources deployed by this blueprint sample.
@@ -133,4 +139,4 @@ The table provides a list of the blueprint parameters:
 
 ## Troubleshooting
 
-If you encounter the error The resource group 'NetworkWatcherRG' failed to deploy due to the following error: Invalid resource group location '\{location\}'. The Resource group already exists in location '\{location\}'., check that the blueprint parameter Network Watcher resource group name specifies the existing Network Watcher resource group name and that the artifact parameter Network Watcher resource group location specifies the existing Network Watcher resource group location.
+If you encounter the error the resource group 'NetworkWatcherRG' failed to deploy due to the following error: Invalid resource group location '\{location\}'. The Resource group already exists in location '\{location\}'., check that the blueprint parameter Network Watcher resource group name specifies the existing Network Watcher resource group name and that the artifact parameter Network Watcher resource group location specifies the existing Network Watcher resource group location.

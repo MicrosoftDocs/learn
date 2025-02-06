@@ -43,7 +43,7 @@ We recommend using Azure landing zones when possible in your cloud adoption plan
 
 Azure landing zones contain code that makes it easier for your organization's IT and security teams. Landing zones offer a repeatable, predictable method to apply a templatized implementation. That implementation includes a deployment approach, design principles, and design areas. Landing zones support security, management, and governance processes, as well as platform automation and DevOps.
 
-:::image type="content" source="../media/azure-landing-zone-architecture-example-ce4b31c9-021827da.png" alt-text="Diagram showing an example of an Azure landing zone hierarchy for multiple tenants.":::
+:::image type="content" source="../media/azure-landing-zone-architecture-example-ce4b31c9-021827da.png" alt-text="Diagram showing an example of an Azure landing zone hierarchy for multiple tenants." lightbox="../media/azure-landing-zone-architecture-example-ce4b31c9-021827da.png" :::
 
 
 ## Use Zero Trust principles
