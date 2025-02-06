@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.develop-products-with-screen-reader-support.review-design-considerations
+title: Review design considerations
+metadata:
+  title: Review design considerations
+  description: This unit is a part of the \"Develop products with screen reader support\" module.
+  ms.date: 02/04/2025
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 34
+content: |
+  [!include[](includes/4-review-design-considerations.md)]

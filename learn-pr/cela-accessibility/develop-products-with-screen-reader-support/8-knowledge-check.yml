@@ -1,0 +1,88 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.develop-products-with-screen-reader-support.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This unit is a part of the \"Develop products with screen reader support\" module.
+  ms.date: 02/04/2025
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the primary purpose of the accessibility tree in relation to screen readers?"
+    choices:
+    - content: "To provide extra visual elements for low-vision users"
+      isCorrect: false
+      explanation: "Incorrect. The accessibility tree doesn't enhance visuals or appearance but focuses on providing structural information for assistive technologies."
+    - content: "To represent interactive elements for the user interface"
+      isCorrect: false
+      explanation: "Incorrect. The accessibility tree doesn't enhance visuals or appearance but focuses on providing structural information for assistive technologies."
+    - content: "To convey information about the structure and content of a web page to screen readers"
+      isCorrect: true
+      explanation: "Correct. The accessibility tree is essential for screen readers as it provides information about the structure and content of a web page, making it accessible to visually impaired users."
+    - content: "To enhance the appearance of a web page"
+      isCorrect: false
+      explanation: "Incorrect. The accessibility tree doesn't enhance visuals or appearance but focuses on providing structural information for assistive technologies."
+
+  - content: "Which ARIA attribute would you use to provide a text alternative for an icon in SVG format?"
+    choices:
+    - content: "aria-live"
+      isCorrect: false
+      explanation: "Incorrect. The **aria-live** attribute serves a different purpose related to dynamic content updates."
+    - content: "aria-label"
+      isCorrect: true
+      explanation: "Correct. The **aria-label** attribute is used to provide a text alternative for elements like icons, ensuring that screen readers can describe their content."
+    - content: "aria-hidden"
+      isCorrect: false
+      explanation: "Incorrect. The **aria-hidden** attribute serves a different purpose related to hiding elements from assistive technologies."
+    - content: "aria-labelledby"
+      isCorrect: false
+      explanation: "Incorrect. The **aria-labelledby** attribute serves a different purpose related to roles."
+
+  - content: "What is the role of the **alt** attribute in an **<img>** tag?"
+    choices:
+    - content: "To provide extra styling to images"
+      isCorrect: false
+      explanation: "Incorrect. The **alt** attribute doesn't handle styling; it's strictly for describing the image to users relying on screen readers."
+    - content: "To add captions to the image"
+      isCorrect: false
+      explanation: "Incorrect. The **alt** attribute doesn't handle captions; it's strictly for describing the image to users relying on screen readers."
+    - content: "To provide a text alternative for the image"
+      isCorrect: true
+      explanation: "Correct. The **alt** attribute is used to provide a text alternative for images, allowing screen readers to convey the image's purpose or content to users."
+    - content: "To change the size of the image"
+      isCorrect: false
+      explanation: "Incorrect. The **alt** attribute doesn't handle sizing; it's strictly for describing the image to users relying on screen readers."
+
+  - content: "Which of these tools can be used for manual testing of screen reader support?"
+    choices:
+    - content: "Accessibility Insights for Web"
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Insights for Web is an accessibility testing tool, but it doesn't directly test screen reader functionality."
+    - content: "Windows Narrator"
+      isCorrect: true
+      explanation: "Correct. Windows Narrator is a screen reader that can be used for manual testing of screen reader support, allowing developers to experience how their content is read by screen readers."
+    - content: "Browser Debugger"
+      isCorrect: false
+      explanation: "Incorrect. Browser Debugger is an accessibility testing tool, but it doesn't directly test screen reader functionality."
+    - content: "Accessibility Inspector for Mac"
+      isCorrect: false
+      explanation: "Incorrect. Accessibility Inspector for Mac is an accessibility testing tool, but it doesn't directly test screen reader functionality."
+
+  - content: "What is the key difference between custom controls and semantic controls in terms of screen reader support?"
+    choices:
+    - content: "Custom controls automatically support screen readers without more coding."
+      isCorrect: false
+      explanation: "Incorrect. Custom controls generally require extra coding or ARIA attributes to ensure they're accessible."
+    - content: "Semantic controls require manual ARIA attributes to be accessible."
+      isCorrect: false
+      explanation: "Incorrect. Semantic controls are designed to be accessible to screen readers without needing manual intervention."
+    - content: "Custom controls may need ARIA attributes and scripting to be accessible."
+      isCorrect: true
+      explanation: "Correct. Custom controls often need ARIA attributes and scripting to provide necessary information to screen readers, unlike semantic controls, which are accessible by default."
+    - content: "Semantic controls are inaccessible by default to screen readers."
+      isCorrect: false
+      explanation: "Incorrect. Semantic controls are designed to be accessible to screen readers without needing manual intervention."

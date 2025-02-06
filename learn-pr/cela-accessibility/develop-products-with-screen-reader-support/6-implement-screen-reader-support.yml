@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.develop-products-with-screen-reader-support.implement-screen-reader-support
+title: Implement screen reader support
+metadata:
+  title: Implement screen reader support
+  description: This unit is a part of the \"Develop products with screen reader support\" module.
+  ms.date: 02/04/2025
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 16
+content: |
+  [!include[](includes/6-implement-screen-reader-support.md)]
