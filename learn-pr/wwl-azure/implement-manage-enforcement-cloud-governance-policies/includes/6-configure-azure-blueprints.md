@@ -1,101 +1,136 @@
-Just as a blueprint allows an engineer or an architect to sketch a project's design parameters, Azure Blueprints enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements. Azure Blueprints makes it possible for development teams to rapidly build and start up new environments with trust they're building within organizational compliance with a set of built-in components, such as networking, to speed up development and delivery.
+## Architecture
 
-Blueprints are a declarative way to orchestrate the deployment of various resource templates and other artifacts such as:
+The foundational environment created by this blueprint sample is based on the architecture principals of a [hub and spoke model](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke). The blueprint deploys a hub virtual network that contains common and shared resources, services, and artifacts such as Azure Bastion, gateway and firewall for connectivity, management and jump box subnets to host additional/optional management, maintenance, administration, and connectivity infrastructure. One or more spoke virtual networks are deployed to host application workloads such as web and database services. Spoke virtual networks are connected to the hub virtual network using Azure virtual network peering for seamless and secure connectivity. Additional spokes can be added by reassigning the sample blueprint or manually creating an Azure virtual network and peering it with the hub virtual network. All external connectivity to the spoke virtual network(s) and subnet(s) is configured to route through the hub virtual network and, via firewall, gateway, and management jump boxes.
 
- -  Role Assignments
- -  Policy Assignments
- -  Azure Resource Manager templates
- -  Resource Groups
+This blueprint deploys several Azure services to provide a secure, monitored, enterprise-ready foundation. This environment is composed of:
 
-The Azure Blueprints service is backed by the globally distributed Azure Cosmos DB. Blueprint objects are replicated to multiple Azure regions. This replication provides low latency, high availability, and consistent access to your blueprint objects, regardless of which region Azure Blueprints deploys your resources to.
+ -  [Azure Monitor Logs](/azure/azure-monitor/logs/data-platform-logs) and an Azure storage account to ensure resource logs, activity logs, metrics, and networks traffic flows are stored in a central location for easy querying, analytics, archival, and alerting.
+ -  [MIcrosoft Dedender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) (standard version) to provide threat protection for Azure resources.
+ -  [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) in the hub supporting subnets for connectivity back to an on-premises network, an ingress and egress stack to/for Internet connectivity, and optional subnets for deployment of additional administrative or management services. Virtual Network in the spoke contains subnets for hosting application workloads. Additional subnets can be created after deployment as needed to support applicable scenarios.
+ -  [Azure Firewall](/azure/firewall/overview) to route all outbound internet traffic and to enable inbound internet traffic via jump box. (Default firewall rules block all internet inbound and outbound traffic and rules must be configured after deployment, as applicable.)
+ -  [Network security groups](/azure/virtual-network/network-security-group-how-it-works) (NSGs) assigned to all subnets (except service-owned subnets such as Azure Bastion, Gateway and Azure Firewall) configured to block all internet inbound and outbound traffic.
+ -  [Application security groups](/azure/virtual-network/application-security-groups) to enable grouping of Azure virtual machines to apply common network security policies.
+ -  [Route tables](/azure/virtual-network/manage-route-table) to route all outbound internet traffic from subnets through the firewall. (Azure Firewall and NSG rules will need to be configured after deployment to open connectivity.)
+ -  [Azure Network Watcher](/azure/network-watcher/network-watcher-monitoring-overview) to monitor, diagnose, and view metrics of resources in the Azure virtual network.
+ -  [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-overview) to protect Azure resources against DDoS attacks.
+ -  [Azure Bastion](/azure/bastion/bastion-overview) to provide seamless and secure connectivity to a virtual machine that does not require a public IP address, agent, or special client software.
+ -  [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) to enable encrypted traffic between an Azure virtual network and an on-premises location over the public Internet.
 
-## How it's different from Azure Resource Manager templates
+The Azure Security Benchmark Foundation lays out a foundational architecture for workloads.
 
-The service is designed to help with environment setup. This setup often consists of a set of resource groups, policies, role assignments, and Azure Resource Manager template deployments. A blueprint is a package to bring each of these artifact types together and allow you to compose and version that package, including through a continuous integration and continuous delivery (CI/CD) pipeline. Ultimately, each is assigned to a subscription in a single operation that can be audited and tracked.
+## Deploy the Azure Security Benchmark Foundation blueprint sample
 
-Nearly everything that you want to include for deployment in Azure Blueprints can be accomplished with an Azure Resource Manager template. However, an Azure Resource Manager template is a document that doesn't exist natively in Azure - each is stored either locally or in source control or in Templates (preview). The template gets used for deployments of one or more Azure resources, but once those resources deploy there's no active connection or relationship to the template.
+To deploy the Azure Security Benchmark Foundation blueprint sample, the following steps must be taken:
 
-With Azure Blueprints, the relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was deployed) is preserved. This connection supports improved tracking and auditing of deployments. Azure Blueprints can also upgrade several subscriptions at once that are governed by the same blueprint.
+ -  Create a new blueprint from the sample
+ -  Mark your copy of the sample as Published
+ -  Assign your copy of the blueprint to an existing subscription
 
-There's no need to choose between an Azure Resource Manager template and a blueprint. Each blueprint can consist of zero or more Azure Resource Manager template artifacts. This support means that previous efforts to develop and maintain a library of Azure Resource Manager templates are reusable in Azure Blueprints.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free) before you begin.
 
-## How it's different from Azure Policy
+### Create blueprint from sample
 
-A blueprint is a package or container for composing focus-specific sets of standards, patterns, and requirements related to the implementation of Azure cloud services, security, and design that can be reused to maintain consistency and compliance.
+First, implement the blueprint sample by creating a new blueprint in your environment using the sample as a starter.
 
-A policy is a default allow and explicit deny system focused on resource properties during deployment and for already existing resources. It supports cloud governance by validating that resources within a subscription adhere to requirements and standards.
+1.  Select All services in the left pane. Search for and select Blueprints.
+2.  From the Getting started page on the left, select the Create button under *Create a blueprint*.
+3.  Find the Azure Security Benchmark Foundation blueprint sample under *Other Samples* and select Use this sample.
+4.  Enter the *Basics* of the blueprint sample:
+    
+    
+     -  Blueprint name: Provide a name for your copy of the Azure Security Benchmark Foundation blueprint sample.
+     -  Definition location: Use the ellipsis and select the management group to save your copy of the sample to.
+5.  Select the *Artifacts* tab at the top of the page or Next: Artifacts at the bottom of the page.
+6.  Review the list of artifacts that make up the blueprint sample. Many of the artifacts have parameters that we'll define later. Select Save Draft when you've finished reviewing the blueprint sample.
 
-Including a policy in a blueprint enables the creation of the right pattern or design during assignment of the blueprint. The policy inclusion makes sure that only approved or expected changes can be made to the environment to protect ongoing compliance with the intent of the blueprint.
+### Publish the sample copy
 
-A policy can be included as one of many *artifacts* in a blueprint definition. Blueprints also support using parameters with policies and initiatives.
+Your copy of the blueprint sample has now been created in your environment. It's created in Draft mode and must be Published before it can be assigned and deployed. The copy of the blueprint sample can be customized to your environment and needs, but that modification may move it away from the Azure Security Benchmark Foundation blueprint.
 
-## Blueprint definition
+1.  Select All services in the left pane. Search for and select Blueprints.
+2.  Select the Blueprint definitions page on the left. Use the filters to find your copy of the blueprint sample and then select it.
+3.  Select Publish blueprint at the top of the page. In the new page on the right, provide a Version for your copy of the blueprint sample. This property is useful for if you make a modification later. Provide Change notes such as "First version published from the Azure Security Benchmark Foundation blueprint sample." Then select Publish at the bottom of the page.
 
-A blueprint is composed of *artifacts*. Azure Blueprints currently supports the following resources as artifacts:
+### Assign the sample copy
 
-| **Resource**                    | **Hierarchy options**        | **Description**                                                                                                                                                                                                                                                                                                              |
-| ------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Resource Groups                 | Subscription                 | Create a new resource group for use by other artifacts within the blueprint. These placeholder resource groups enable you to organize resources exactly the way you want them structured and provides a scope limiter for included policy and role assignment artifacts and Azure Resource Manager templates.                |
-| Azure Resource Manager template | Subscription, Resource Group | Templates, including nested and linked templates, are used to compose complex environments. Example environments: a SharePoint farm, Azure Automation State Configuration, or a Log Analytics workspace.                                                                                                                     |
-| Policy Assignment               | Subscription, Resource Group | Allows assignment of a policy or initiative to the subscription the blueprint is assigned to. The policy or initiative must be within the scope of the blueprint definition location. If the policy or initiative has parameters, these parameters are assigned at creation of the blueprint or during blueprint assignment. |
-| Role Assignment                 | Subscription, Resource Group | Add an existing user or group to a built-in role to make sure the right people always have the right access to your resources. Role assignments can be defined for the entire subscription or nested to a specific resource group included in the blueprint.                                                                 |
+Once the copy of the blueprint sample has been successfully Published, it can be assigned to a subscription within the management group it was saved to. This step is where parameters are provided to make each deployment of the copy of the blueprint sample unique.
 
-## Blueprint definition locations
+1.  Select All services in the left pane. Search for and select Blueprints.
+2.  Select the Blueprint definitions page on the left. Use the filters to find your copy of the blueprint sample and then select it.
+3.  Select Assign blueprint at the top of the blueprint definition page.
+4.  Provide the parameter values for the blueprint assignment:
+    
+    
+     -  Basics
+        
+        
+         -  Subscriptions: Select one or more of the subscriptions that are in the management group you saved your copy of the blueprint sample to. If you select more than one subscription, an assignment will be created for each using the parameters entered.
+         -  Assignment name: The name is pre-populated for you based on the name of the blueprint. Change as needed or leave as is.
+         -  Location: Select a region for the managed identity to be created in.
+         -  Azure Blueprints uses this managed identity to deploy all artifacts in the assigned blueprint. To learn more, see [managed identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/overview).
+         -  Blueprint definition version: Pick a Published version of your copy of the blueprint sample.
+     -  Lock Assignment
+        
+        Select the blueprint lock setting for your environment. For more information, see [blueprints resource locking](/azure/governance/blueprints/concepts/resource-locking).
+     -  Managed Identity
+        
+        Choose either the default *system assigned* managed identity option or the *user assigned* identity option.
+     -  Blueprint parameters
+        
+        The parameters defined in this section are used by many of the artifacts in the blueprint definition to provide consistency.
+        
+        
+         -  Prefix for resources and resource groups: This string is used as a prefix for all resource and resource group names
+         -  Hub name: Name for the hub
+         -  Log retention (days): Number of days that logs are retained; entering '0' retains logs indefinitely
+         -  Deploy hub: Enter 'true' or 'false' to specify whether the assignment deploys the hub components of the architecture
+         -  Hub location: Location for the hub resource group
+         -  Destination IP addresses: Destination IP addresses for outbound connectivity; comma-separated list of IP addresses or IP range prefixes
+         -  Network Watcher name: Name for the Network Watcher resource
+         -  Network Watcher resource group name: Name for the Network Watcher resource group
+         -  Enable DDoS protection: Enter 'true' or 'false' to specify whether or not DDoS Protection is enabled in the virtual network
+        
+        If Network Watcher is already enabled, it's recommended that you use the existing Network Watcher resource group. You must also provide the location for the existing Network Watcher resource group for the artifact parameter Network Watcher resource group location.
+     -  Artifact parameters
+        
+        The parameters defined in this section apply to the artifact under which it's defined. These parameters are [dynamic parameters](/azure/governance/blueprints/concepts/parameters#dynamic-parameters) since they're defined during the assignment of the blueprint. For a full list or artifact parameters and their descriptions, see [Artifact parameters table](/azure/governance/blueprints/samples/azure-security-benchmark-foundation/deploy#artifact-parameters-table).
+5.  Once all parameters have been entered, select Assign at the bottom of the page. The blueprint assignment is created and artifact deployment begins. Deployment takes roughly an hour. To check on the status of deployment, open the blueprint assignment.
 
-When creating a blueprint definition, you'll define where the blueprint is saved. Blueprints can be saved to a management group or subscription that you have Contributor access to. If the location is a management group, the blueprint is available to assign to any child subscription of that management group.
+The Azure Blueprints service and the built-in blueprint samples are free of cost. Azure resources are [priced by product](https://azure.microsoft.com/pricing/). Use the [pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate the cost of running resources deployed by this blueprint sample.
 
-## Blueprint parameters
+## Artifact parameters table
 
-Blueprints can pass parameters to either a policy/initiative or an Azure Resource Manager template. When adding either artifact to a blueprint, the author decides to provide a defined value for each blueprint assignment or to allow each blueprint assignment to provide a value at assignment time. This flexibility provides the option to define a pre-determined value for all uses of the blueprint or to enable that decision to be made at the time of assignment.
+The table provides a list of the blueprint parameters:
 
-## Blueprint publishing
+| **Artifact name**                            | **Artifact type**         | **Parameter name**                      | **Description**                                                                                                                                                                                           |
+| -------------------------------------------- | ------------------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Hub resource group                           | Resource group            | Resource group name                     | Locked - Concatenates prefix with hub name                                                                                                                                                                |
+| Hub resource group                           | Resource group            | Resource group location                 | Locked - Uses hub location                                                                                                                                                                                |
+| Azure Firewall template                      | Resource Manager template | Azure Firewall private IP address       |                                                                                                                                                                                                           |
+| Azure Log Analytics and Diagnostics template | Resource Manager template | Log Analytics workspace location        | Location where Log Analytics workspace is created; run Get-AzLocation \| Where-Object Providers -like 'Microsoft.OperationalInsights' \| Select DisplayName in Azure PowersShell to see available regions |
+| Azure Log Analytics and Diagnostics template | Resource Manager template | Azure Automation account ID (optional)  | Automation account resource ID; used to create a linked service between Log Analytics and an Automation account                                                                                           |
+| Azure Network Security Group template        | Resource Manager template | Enable NSG flow logs                    | Enter 'true' or 'false' to enable or disable NSG flow logs                                                                                                                                                |
+| Azure Virtual Network hub template           | Resource Manager template | Virtual network address prefix          | Virtual network address prefix for hub virtual network                                                                                                                                                    |
+| Azure Virtual Network hub template           | Resource Manager template | Firewall subnet address prefix          | Firewall subnet address prefix for hub virtual network                                                                                                                                                    |
+| Azure Virtual Network hub template           | Resource Manager template | Bastion subnet address prefix           | Bastion subnet address prefix for hub virtual network                                                                                                                                                     |
+| Azure Virtual Network hub template           | Resource Manager template | Gateway subnet address prefix           | Gateway subnet address prefix for hub virtual network                                                                                                                                                     |
+| Azure Virtual Network hub template           | Resource Manager template | Management subnet address prefix        | Management subnet address prefix for hub virtual network                                                                                                                                                  |
+| Azure Virtual Network hub template           | Resource Manager template | Jump box subnet address prefix          | Jump box subnet address prefix for hub virtual network                                                                                                                                                    |
+| Azure Virtual Network hub template           | Resource Manager template | Subnet address names (optional)         | Array of subnet names to deploy to the hub virtual network; for example, "subnet1","subnet2"                                                                                                              |
+| Azure Virtual Network hub template           | Resource Manager template | Subnet address prefixes (optional)      | Array of IP address prefixes for optional subnets for hub virtual network; for example, "10.0.7.0/24","10.0.8.0/24"                                                                                       |
+| Spoke resource group                         | Resource group            | Resource group name                     | Locked - Concatenates prefix with spoke name                                                                                                                                                              |
+| Spoke resource group                         | Resource group            | Resource group location                 | Locked - Uses hub location                                                                                                                                                                                |
+| Azure Virtual Network spoke template         | Resource Manager template | Deploy spoke                            | Enter 'true' or 'false' to specify whether the assignment deploys the spoke components of the architecture                                                                                                |
+| Azure Virtual Network spoke template         | Resource Manager template | Hub subscription ID                     | Subscription ID where hub is deployed; default value is the subscription where the blueprint definition is located                                                                                        |
+| Azure Virtual Network spoke template         | Resource Manager template | Spoke name                              | Name of the spoke                                                                                                                                                                                         |
+| Azure Virtual Network spoke template         | Resource Manager template | Virtual Network address prefix          | Virtual Network address prefix for spoke virtual network                                                                                                                                                  |
+| Azure Virtual Network spoke template         | Resource Manager template | Subnet address prefix                   | Subnet address prefix for spoke virtual network                                                                                                                                                           |
+| Azure Virtual Network spoke template         | Resource Manager template | Subnet address names (optional)         | Array of subnet names to deploy to the spoke virtual network; for example, "subnet1","subnet2"                                                                                                            |
+| Azure Virtual Network spoke template         | Resource Manager template | Subnet address prefixes (optional)      | Array of IP address prefixes for optional subnets for the spoke virtual network; for example, "10.0.7.0/24","10.0.8.0/24"                                                                                 |
+| Azure Virtual Network spoke template         | Resource Manager template | Deploy spoke                            | Enter 'true' or 'false' to specify whether the assignment deploys the spoke components of the architecture                                                                                                |
+| Azure Network Watcher template               | Resource Manager template | Network Watcher location                | Location for the Network Watcher resource                                                                                                                                                                 |
+| Azure Network Watcher template               | Resource Manager template | Network Watcher resource group location | If Network Watcher is already enabled, this parameter value must match the location of the existing Network Watcher resource group.                                                                       |
 
-When a blueprint is first created, it's considered to be in Draft mode. When it's ready to be assigned, it needs to be Published. Publishing requires defining a Version string (letters, numbers, and hyphens with a max length of 20 characters) along with optional Change notes. The Version differentiates it from future changes to the same blueprint and allows each version to be assigned. This versioning also means different Versions of the same blueprint can be assigned to the same subscription. When additional changes are made to the blueprint, the Published Version still exists, as do the Unpublished changes. Once the changes are complete, the updated blueprint is Published with a new and unique Version and can now also be assigned.
+## Troubleshooting
 
-## Blueprint assignment
-
-Each Published Version of a blueprint can be assigned (with a max name length of 90 characters) to an existing management group or subscription. In the portal, the blueprint defaults the Version to the one Published most recently. If there are artifact parameters or blueprint parameters, then the parameters are defined during the assignment process.
-
-> [!NOTE]
-> Assigning a blueprint definition to a management group means the assignment object exists at the management group. The deployment of artifacts still targets a subscription. To perform a management group assignment, the Create Or Update REST API must be used and the request body must include a value for properties.scope to define the target subscription.
-
-## Permissions in Azure Blueprints<br>
-
-To use blueprints, you must be granted permissions through Azure role-based access control (Azure RBAC). To read or view a blueprint in Azure portal, your account must have read access to the scope where the blueprint definition is located.
-
-To create blueprints, your account needs the following permissions:
-
- -  `Microsoft.Blueprint/blueprints/write` \- Create a blueprint definition
- -  `Microsoft.Blueprint/blueprints/artifacts/write` \- Create artifacts on a blueprint definition
- -  `Microsoft.Blueprint/blueprints/versions/write - Publish a blueprint`
-
-To delete blueprints, your account needs the following permissions:
-
- -  `Microsoft.Blueprint/blueprints/delete`
- -  `Microsoft.Blueprint/blueprints/artifacts/delete`
- -  `Microsoft.Blueprint/blueprints/versions/delete`
-
-> [!NOTE]
-> The blueprint definition permissions must be granted or inherited on the management group or subscription scope where it is saved.
-
-> [!NOTE]
-> As blueprint assignments are created on a subscription, the blueprint assign and unassign permissions must be granted on a subscription scope or be inherited onto a subscription scope.
-
-To assign or unassign a blueprint, your account needs the following permissions:
-
- -  `Microsoft.Blueprint/blueprintAssignments/write` \- Assign a blueprint
- -  `Microsoft.Blueprint/blueprintAssignments/delete` \- Unassign a blueprint
-
-The following built-in roles are available:
-
-| **Azure role**        | **Description**                                                                                                                                                                        |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Owner                 | In addition to other permissions, includes all Azure Blueprints related permissions.                                                                                                   |
-| Contributor           | In addition to other permissions, can create and delete blueprint definitions, but doesn't have blueprint assignment permissions.                                                      |
-| Blueprint Contributor | Can manage blueprint definitions, but not assign them.                                                                                                                                 |
-| Blueprint Operator    | Can assign existing published blueprints, but can't create new blueprint definitions. Blueprint assignment only works if the assignment is done with a user-assigned managed identity. |
-
-If these built-in roles don't fit your security needs, consider creating a custom role.
-
-> [!NOTE]
-> If using a system-assigned managed identity, the service principal for Azure Blueprints requires the **Owner** role on the assigned subscription in order to enable deployment. If using the portal, this role is automatically granted and revoked for the deployment. If using the REST API, this role must be manually granted, but is still automatically revoked after the deployment completes. If using a user-assigned managed identity, only the user creating the blueprint assignment needs the`Microsoft.Blueprint/blueprintAssignments/write`*permission, which is included in both the **Owner** and **Blueprint Operator** built-in roles.*
+If you encounter the error The resource group 'NetworkWatcherRG' failed to deploy due to the following error: Invalid resource group location '\{location\}'. The Resource group already exists in location '\{location\}'., check that the blueprint parameter Network Watcher resource group name specifies the existing Network Watcher resource group name and that the artifact parameter Network Watcher resource group location specifies the existing Network Watcher resource group location.
