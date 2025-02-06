@@ -36,11 +36,10 @@ subjects:
 - security
 units:
 - learn.wwl.purview-identify-mitigate-ai-risks.introduction
-- learn.wwl.purview-identify-mitigate-ai-risks.tracker-scanning-overview
-- learn.wwl.purview-identify-mitigate-ai-risks.configure-tracker-scanning
-- learn.wwl.purview-identify-mitigate-ai-risks.create-manage-trackers
-- learn.wwl.purview-identify-mitigate-ai-risks.run-a-scan
-- learn.wwl.purview-identify-mitigate-ai-risks.view-scan-results.md
+- learn.wwl.purview-identify-mitigate-ai-risks.understand-ai-security-risks
+- learn.wwl.purview-identify-mitigate-ai-risks.dspm-ai-overview
+- learn.wwl.purview-identify-mitigate-ai-risks.configure-dspm-ai
+- learn.wwl.purview-identify-mitigate-ai-risks.review-ai-security-reports
 - learn.wwl.purview-identify-mitigate-ai-risks.knowledge-check
 - learn.wwl.purview-identify-mitigate-ai-risks.summary
 
