@@ -58,7 +58,7 @@ To give you a hands-on understanding of how screen readers work, let's dive into
 #### Exercise 2
 - Start VoiceOver by pressing **Command + F5**. 
 - Open your browser and navigate to the [Microsoft 365 blog](https://www.microsoft.com/en-us/microsoft-365/blog/2023/03/08/create-inclusive-content-with-the-new-accessibility-assistant-in-microsoft-365/).
-- Turn quick navigation on and off by pressing the [**Left Arrow **](https://www.microsoft.com/en-us/microsoft-365/blog/2023/03/08/create-inclusive-content-with-the-new-accessibility-assistant-in-microsoft-365/)[and ](https://www.microsoft.com/en-us/microsoft-365/blog/2023/03/08/create-inclusive-content-with-the-new-accessibility-assistant-in-microsoft-365/)[**Right Arrow**](https://www.microsoft.com/en-us/microsoft-365/blog/2023/03/08/create-inclusive-content-with-the-new-accessibility-assistant-in-microsoft-365/) simultaneously.
+- Turn quick navigation on and off by pressing the **[Left Arrow and Right Arrow](https://www.microsoft.com/en-us/microsoft-365/blog/2023/03/08/create-inclusive-content-with-the-new-accessibility-assistant-in-microsoft-365/)** simultaneously.
 - Cycle through all landmarks by pressing **Ctrl** + **Option** + **U**, then **Left Arrow** or **Right Arrow**.
 - Cycle through all headings by pressing **Ctrl** + **Option** + **Command** + **H**.
 - Navigate between links by pressing **Ctrl** + **Option** + **Command** + **L**.
