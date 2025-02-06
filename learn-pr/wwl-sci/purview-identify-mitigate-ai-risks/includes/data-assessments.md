@@ -8,7 +8,7 @@ Microsoft Purview Data Security Posture Management (DSPM) for AI automatically r
 
 To review the latest weekly assessment:
 
-1. Navigate to **DSPM for AI** in the [Microsoft Purview portal](https://purview.microsoft.com/).
+1. Navigate to **DSPM for AI** in the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true).
 1. Select **Assessments** from the navigation pane.
 1. Open the **Oversharing Assessment for the week of <month, year>**.
 1. Review key findings, including:
@@ -48,15 +48,15 @@ After a data assessment runs, security teams can analyze the results and take ac
 
 The **Protect** tab helps security teams limit access to high-risk data and enforce compliance measures. Recommended actions include:
 
-- **Restrict access by label**: Use Microsoft Purview Data Loss Prevention (DLP) to prevent Microsoft 365 Copilot from summarizing data that has specific sensitivity labels. For more information about how this works and supported scenarios, see [Learn about the Microsoft 365 Copilot policy location](/purview/dlp-microsoft365-copilot-location-learn-about).
+- **Restrict access by label**: Use Microsoft Purview Data Loss Prevention (DLP) to prevent Microsoft 365 Copilot from summarizing data that has specific sensitivity labels. For more information about how this works and supported scenarios, see [Learn about the Microsoft 365 Copilot policy location](/purview/dlp-microsoft365-copilot-location-learn-about?azure-portal=true).
 
-- **Restrict all items**: Use [SharePoint Restricted Content Discoverability](/sharepoint/restricted-content-discovery) to prevent Microsoft 365 Copilot from indexing specified SharePoint sites.
+- **Restrict all items**: Use [SharePoint Restricted Content Discoverability](/sharepoint/restricted-content-discovery?azure-portal=true) to prevent Microsoft 365 Copilot from indexing specified SharePoint sites.
 
    :::image type="content" source="../media/data-assessment-dlp-restrict-items.png" alt-text="Screenshot showing the options in the Protect tab in Data assessments to restrict access to sensitive data." lightbox="../media/data-assessment-dlp-restrict-items.png":::
 
-- **Apply auto-labeling policies**: [Automatically apply sensitivity labels](/purview/apply-sensitivity-label-automatically#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) to unlabeled files containing sensitive information.
+- **Apply auto-labeling policies**: [Automatically apply sensitivity labels](/purview/apply-sensitivity-label-automatically?azure-portal=true#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) to unlabeled files containing sensitive information.
 
-- **Enforce retention policies**: Use [Microsoft Purview Data Lifecycle Management retention policies](/purview/create-retention-policies?tabs=teams-retention) to delete content that hasn't been accessed for at least three years.
+- **Enforce retention policies**: Use [Microsoft Purview Data Lifecycle Management retention policies](/purview/create-retention-policies?azure-portal=true) to delete content that hasn't been accessed for at least three years.
 
    :::image type="content" source="../media/data-assessment-apply-label.png" alt-text="Screenshot showing the options in the Protect tab in Data assessments to manage sensitivity labels and policies for a specific SharePoint site." lightbox="../media/data-assessment-apply-label.png":::
 

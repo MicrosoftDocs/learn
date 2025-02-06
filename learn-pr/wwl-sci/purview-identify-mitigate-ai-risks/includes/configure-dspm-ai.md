@@ -4,11 +4,11 @@ Microsoft Purview Data Security Posture Management (DSPM) for AI helps organizat
 
 Before configuring DSPM for AI, check that your environment meets these requirements:
 
-- **[Check permissions](/purview/ai-microsoft-purview-permissions)**: Your account needs appropriate permissions in Microsoft Entra or Microsoft Purview, such as Compliance Administrator or a related role with compliance management permissions.
-- **[Verify Microsoft Purview Audit is enabled](/purview/audit-log-enable-disable?tabs=microsoft-purview-portal#verify-the-auditing-status-for-your-organization)**: Auditing is on by default for new tenants, but it's a good idea to verify.
-- **[Assign Copilot Licenses](/copilot/microsoft-365/microsoft-365-copilot-enable-users#assign-licenses)**: Users should be assigned Microsoft 365 Copilot licenses for activity tracking.
-- **[Onboard Devices to Microsoft Purview](/purview/device-onboarding-overview)**: Devices need to be onboarded to Microsoft Purview to track AI interactions.
-- **[Install the Microsoft Purview Browser Extension](/purview/insider-risk-management-browser-support#configure-browser-signal-detection-for-microsoft-edge)**: The Microsoft Purview browser extension is required to monitor non-Microsoft AI site visits.
+- **[Check permissions](/purview/ai-microsoft-purview-permissions?azure-portal=true)**: Your account needs appropriate permissions in Microsoft Entra or Microsoft Purview, such as Compliance Administrator or a related role with compliance management permissions.
+- **[Verify Microsoft Purview Audit is enabled](/purview/audit-log-enable-disable?azure-portal=true#verify-the-auditing-status-for-your-organization)**: Auditing is on by default for new tenants, but it's a good idea to verify.
+- **[Assign Copilot Licenses](/copilot/microsoft-365/microsoft-365-copilot-enable-users?azure-portal=true#assign-licenses)**: Users should be assigned Microsoft 365 Copilot licenses for activity tracking.
+- **[Onboard Devices to Microsoft Purview](/purview/device-onboarding-overview?azure-portal=true)**: Devices need to be onboarded to Microsoft Purview to track AI interactions.
+- **[Install the Microsoft Purview Browser Extension](/purview/insider-risk-management-browser-support#configure-browser-signal-detection-for-microsoft-edge?azure-portal=true)**: The Microsoft Purview browser extension is required to monitor non-Microsoft AI site visits.
 
 ## Steps to configure DSPM for AI
 
@@ -16,7 +16,7 @@ After completing the prerequisites, configure DSPM for AI in Microsoft Purview. 
 
 ### Step 1: Set up DSPM for AI
 
-1. Sign in to the [Microsoft Purview portal](https://purview.microsoft.com/).
+1. Sign in to the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true).
 1. Navigate to **Solutions** > **DSPM for AI**.
 1. From the **Overview** page, go to **Get started** to complete the required setup tasks.
 1. Verify that **Microsoft Purview Audit** is enabled to track AI interactions.

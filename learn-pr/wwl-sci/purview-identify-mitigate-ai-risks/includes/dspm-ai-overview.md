@@ -34,11 +34,11 @@ Organizations can also create custom assessments to scan specific users or sites
 
 To support regulatory and security requirements, DSPM for AI integrates with other Microsoft Purview solutions, including:
 
-- **[Sensitivity labels](/purview/sensitivity-labels)** to classify and protect AI-referenced data
-- **[Data classification](/purview/data-classification-overview)** to apply security controls based on content type
-- **[Customer Key](/purview/customer-key-overview)** for encryption with customer-managed keys
-- **[Communication compliance](/purview/communication-compliance-solution-overview)** to detect risky AI interactions
-- **[Auditing](/purview/audit-solutions-overview)** and **[eDiscovery](/purview/ediscovery)** for tracking AI activity and managing investigations
+- **[Sensitivity labels](/purview/sensitivity-labels?azure-portal=true)** to classify and protect AI-referenced data
+- **[Data classification](/purview/data-classification-overview?azure-portal=true)** to apply security controls based on content type
+- **[Customer Key](/purview/customer-key-overview?azure-portal=true)** for encryption with customer-managed keys
+- **[Communication compliance](/purview/communication-compliance-solution-overview?azure-portal=true)** to detect risky AI interactions
+- **[Auditing](/purview/audit-solutions-overview?azure-portal=true)** and **[eDiscovery](/purview/ediscovery?azure-portal=true)** for tracking AI activity and managing investigations
 
 ## Get started with DSPM for AI
 

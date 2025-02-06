@@ -6,7 +6,7 @@ The **Reports** section in DSPM for AI provides insights into AI interactions, s
 
 To view AI activity insights:
 
-1. Sign in to the [Microsoft Purview portal](https://purview.microsoft.com/).
+1. Sign in to the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true).
 1. Navigate to **Solutions** > **DSPM for AI**.
 1. Go to **Reports** to review AI-related activity, trends, and risk assessments.
 
