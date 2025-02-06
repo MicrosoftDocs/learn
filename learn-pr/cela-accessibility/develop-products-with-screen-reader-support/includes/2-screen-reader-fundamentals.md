@@ -62,7 +62,7 @@ To give you a hands-on understanding of how screen readers work, let's dive into
 - Cycle through all landmarks by pressing **Ctrl** + **Option** + **U**, then **Left Arrow** or **Right Arrow**.
 - Cycle through all headings by pressing **Ctrl** + **Option** + **Command** + **H**.
 - Navigate between links by pressing **Ctrl** + **Option** + **Command** + **L**.
-- Read several paragraphs. Press **Ctrl** +** Option** +** A** to start reading continuously or **Ctrl** +** Option** +** P** to read the next paragraph.
+- Read several paragraphs. Press **Ctrl** + **Option** + **A** to start reading continuously or **Ctrl** + **Option** + **P** to read the next paragraph.
 - Stop reading in the middle of a paragraph by pressing **Ctrl**.
 - Turn off VoiceOver by pressing **Command** + **F5**. 
 
