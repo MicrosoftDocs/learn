@@ -4,7 +4,7 @@ Suppose you work for a global clothing retailer. Most of your business-critical 
 
 In this module you learn about the key differences between the two platforms, and how to get more information to manage your migration.
 
-:::image type="content" source="../media/introduction-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS.":::
+:::image type="content" source="../media/introduction-overview.png" alt-text="A diagram showing the types of service provided by Microsoft Azure and Amazon AWS." border="false":::
 
 > [!IMPORTANT]
 > The services offered by each platform aren't identical, or called by the same name. For a comparison of the services offered by AWS and Azure, see [AWS to Azure services comparison](/azure/architecture/aws-professional/services)
