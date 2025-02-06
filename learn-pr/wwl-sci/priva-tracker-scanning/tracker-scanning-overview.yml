@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-tracker-scanning.tracker-scanning-overview
+title: Microsoft Priva Tracker Scanning overview
+metadata:
+  title: Microsoft Priva Tracker Scanning overview
+  description: "Microsoft Priva Tracker Scanning overview"
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/tracker-scanning-overview.md)]
