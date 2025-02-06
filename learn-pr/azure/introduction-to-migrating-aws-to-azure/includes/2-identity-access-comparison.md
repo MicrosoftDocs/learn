@@ -46,7 +46,7 @@ Azure RBAC is built on Azure Resource Manager to provide access management for r
 
 By contrast, AWS IAM creates AWS users and groups with permissions that grant or deny access to AWS resources using policies. Policies are JSON files that can be assigned to users, groups, or roles.
 
-For more information about RBAC, see [Secure your Azure resources with Azure role-based access control (Azure RBAC)](/training/modules/secure-azure-resources-with-rbac/)
+For more information about RBAC, see [Secure your Azure resources with Azure role-based access control (Azure RBAC)](/training/modules/secure-azure-resources-with-rbac/).
 
 ### Hierarchical scope
 
