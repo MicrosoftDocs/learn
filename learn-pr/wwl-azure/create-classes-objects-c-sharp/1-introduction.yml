@@ -1,17 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.configure-virtual-machine-availability.introduction
+uid: learn.wwl.create-classes-objects-c-sharp.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 02/06/2025
   author: wwlpublish
-  ms.author: cynthist
+  ms.author: cahowd
   ms.topic: unit
-  ms.custom:
-  - N/A
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
