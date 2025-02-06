@@ -1,5 +1,3 @@
-## 20 minutes
-
 ## Introduction
 
 It's essential to know the key principles and requirements that ensure digital products are accessible to all users, including those with disabilities. The Web Content Accessibility Guidelines (WCAG) provide a comprehensive framework for creating accessible web content and user interface (UI) components. This section outlines their primary accessibility principles and requirements related to screen reader support.

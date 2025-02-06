@@ -1,6 +1,12 @@
 There are three general approaches to implementing accessibility.
 
-## 1. Semantic (intrinsic) controls
+1. Semantic (intrinsic) controls
+1. Custom controls
+1. Alternate controls
+
+Let's elaborate on each of these approaches.
+
+## Semantic (intrinsic) controls
 
 First, use semantic controls and let the foundation handle most of the work for you. Intrinsic controls are built-in HTML elements like buttons, links, and form fields that come with inherent accessibility features. For example, using a **\<button>** tag instead of a styled **\<div>** ensures that the button is accessible by default, with the name coming from the tag contents and the role being "button." Here are some considerations for common intrinsic controls:
 
@@ -68,7 +74,7 @@ Role     checkbox
 Value   ToggleState_On
 ```
 
-## 2. Custom controls
+## Custom controls
 
 If semantic/intrinsic controls don't meet your needs, you may need to implement custom controls. Many web developers have learned that they can add styling and event handlers to a **\<div>** to make it look and act the way they want, creating custom controls in this way. However, additional work is needed to make these custom controls accessible. They must be operable with both the keyboard and the mouse, and semantic information must be exposed to properly represent them in the accessibility tree.
 
@@ -95,7 +101,7 @@ Value    ToggleState_On
 - [WAI-ARIA Overview](https://www.w3.org/WAI/standards-guidelines/aria/) 
 - [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/) 
 
-## 3. Alternate controls
+## Alternate controls
 
 In rare cases, you might need to create an alternate representation, but this should be a last resort. This involves creating separate elements for what is rendered on the page versus what is exposed in the accessibility tree for screen readers. For example, you might use** aria-hidden="true"** to hide an element from the accessibility tree while still displaying it on the page.
 

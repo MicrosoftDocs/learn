@@ -2,7 +2,7 @@ Here are some considerations to keep in mind during the design phase:
 
 ## Content that can be presented in different ways without losing information or structure
 
-**Use semantic HTML elements to ensure a logical structure. Headings (\<h1> to \<h6>) help define the hierarchy of the content, lists (\<ul>, \<ol>, \<li>) organize items, and tables (\<table>, \<tr>, \<th>, \<td>) present data in a structured format. This adaptability ensures that screen readers can navigate and interpret the content effectively.**
+Use semantic HTML elements to ensure a logical structure. Headings (**\<h1>** to **\<h6>**) help define the hierarchy of the content, lists (**\<ul>**, **\<ol>**, **\<li>**) organize items, and tables (**\<table>**, **\<tr>**, **\<th>**, **\<td>**) present data in a structured format. This adaptability ensures that screen readers can navigate and interpret the content effectively.
 
 ## Proper naming
 
@@ -18,7 +18,7 @@ Help users understand the structure and boundaries of different sections on a we
 
 ## Informative context-sensitive titles
 
-Providing informative context-sensitive titles for each page is crucial for helping users understand the content and purpose of the page. The** \<title>** element in the HTML **\<head>** section should contain a concise and descriptive title that accurately reflects the content of the page. For example, instead of using a generic title like "Home," you might use "Home - Accessibility Resources."
+Providing informative context-sensitive titles for each page is crucial for helping users understand the content and purpose of the page. The **\<title>** element in the HTML **\<head>** section should contain a concise and descriptive title that accurately reflects the content of the page. For example, instead of using a generic title like "Home," you might use "Home - Accessibility Resources."
 
 ## Additional tips
 

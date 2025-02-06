@@ -46,7 +46,7 @@ Here are some tools you can use to test your website or app's accessibility:
 - **Browser debuggers**: Built-in tools in web browsers that assist developers in finding and correcting code errors. They enable you to set breakpoints, examine variables, and walk through code execution to diagnose and fix problems.
 - [**Accessibility Insights for Web**](https://accessibilityinsights.io/docs/web/overview/): This is a plugin for Edge and Chrome. This tool helps catch common accessibility issues quickly, but manual testing is still necessary.
 
-:::image type="complex" source="../media/accessibility-insights-launch-pad.png" alt-text="Screenshot of Accessibility Insights' launch pad." lightbox="../media/accessibility-insights-launch-pad.png":::
+:::image type="complex" source="../media/accessibility-insights-launch-pad-sm.png" alt-text="Screenshot of Accessibility Insights' launch pad." lightbox="../media/accessibility-insights-launch-pad-lg.png":::
    View of Accessibility Insights’ launch pad. It provides four options: FastPass, which runs three tests to find common accessibility issues in under 5 minutes; Quick Assess, which runs 10 assisted checks to find more accessibility issues in 30 minutes; Assessment, which guides users through a process to assess accessibility compliance; and Ad hoc tools, which offer quick access to visual tools for identifying accessibility issues.
 :::image-end:::
 
