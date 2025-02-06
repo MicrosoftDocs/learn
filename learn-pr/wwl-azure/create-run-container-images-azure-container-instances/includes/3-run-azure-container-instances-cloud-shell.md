@@ -28,7 +28,7 @@ In this exercise you learn how to perform the following actions:
 
 You create a container by providing a name, a Docker image, and an Azure resource group to the `az container create` command. You expose the container to the Internet by specifying a DNS name label.
 
-1. Create a DNS name to expose your container to the Internet. Your DNS name must be unique, run this command from Cloud Shell to create a variable that holds a unique name.
+1. Create a DNS name to expose your container to the Internet. Your DNS name must be unique. Run this command from Cloud Shell to create a variable that holds a unique name.
 
     ```bash
     DNS_NAME_LABEL=aci-example-$RANDOM
@@ -40,7 +40,7 @@ You create a container by providing a name, a Docker image, and an Azure resourc
     az container create --resource-group az204-aci-rg \
         --name mycontainer \
         --image mcr.microsoft.com/azuredocs/aci-helloworld \
-        --ports 80 \
+        --ports 80 --od-type Linux --cpu 1 --memory 1\
         --dns-name-label $DNS_NAME_LABEL --location <myLocation> 
     ```
 
@@ -77,5 +77,6 @@ When no longer needed, you can use the `az group delete` command to remove the r
 ```bash
 az group delete --name az204-aci-rg --no-wait
 ```
+
 
 
