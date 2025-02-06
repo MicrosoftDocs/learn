@@ -5,8 +5,8 @@ metadata:
   adobe-target: true
   description: "Let's now deploy the webapp from the previous section to App Service"
   author: "ayangupt"
-  ms.author: "ayangupta"
-  ms.date: "10/30/2024"
+  ms.author: KarlErickson
+  ms.date: "02/06/2025"
   ms.topic: "unit"
   ms.custom: team=cloud_advocates, devx-track-extended-java, linux-related-content
   ms.reviewer: 

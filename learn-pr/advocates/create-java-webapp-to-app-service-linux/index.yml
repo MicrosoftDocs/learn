@@ -4,7 +4,7 @@ metadata:
   adobe-target: true
   title: Deploy a Java App to Tomcat on Azure App Service
   description: You'll learn how to create a Java tomcat web application and deploy it to Azure App Service using Maven. 
-  ms.date: "10/30/2024"
+  ms.date: "02/06/2025"
   ms.author: ayangupta
   author: ayangupt
   ms.topic: module
