@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-properties-methods.examine-automatically-implemented-properties
+title: Examine automatically implemented properties
+metadata:
+  title: Examine automatically implemented properties
+  description: "Examine automatically implemented properties"
+  ms.date: 02/07/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-examine-automatically-implemented-properties.md)]

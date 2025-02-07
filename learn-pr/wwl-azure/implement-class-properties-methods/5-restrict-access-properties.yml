@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-properties-methods.restrict-access-properties
+title: Restrict access to properties
+metadata:
+  title: Restrict access to properties
+  description: "Restrict access to properties"
+  ms.date: 02/07/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/5-restrict-access-properties.md)]
