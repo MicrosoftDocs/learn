@@ -37,31 +37,35 @@ To get all the possible points for security control, all of your resources must 
 
  -  Remediate vulnerabilities security control - This control group has multiple recommendations related to discovering and resolving known vulnerabilities.
  -  Max score - The maximum number of points you can gain by completing all recommendations within a control. The maximum score for a control indicates the relative significance of that control and is fixed for every environment. Use the max score values to triage the issues to work on first.
- -  Current score - The current score for this control.
-    
-    Current score = \[Score per resource\] \* \[Number of healthy resources\]
-    
-    Each control contributes towards the total score. In this example, the control is contributing 2.00 points to the current total secure score.
- -  Potential score increase - The remaining points available to you are within your control. If you remediate all the recommendations in this control, your score will increase by 9%.
-    
-    Potential score increase = \[Score per resource\] \* \[Number of unhealthy resources\]
+ -  Current score - The current score for this control. Current score = \[Score per resource\] \* \[Number of healthy resources\] Each control contributes towards the total score. In this example, the control is contributing 2.00 points to the current total secure score.
+ -  Potential score increase - The remaining points available to you are within your control. If you remediate all the recommendations in this control, your score will increase by 9%. Potential score increase = \[Score per resource\] \* \[Number of unhealthy resources\]
  -  Insights - Gives you extra details for each recommendation, such as:
     
     
      -  :::image type="content" source="../media/preview-icon-d9b46adc.png" alt-text="Screenshot of the preview recommendation icon that provides extra detail.":::
-         Preview recommendation - This recommendation won't affect your secure score until general availability (GA).
+        
+        
+        Preview recommendation - This recommendation won't affect your secure score until general availability (GA).
      -  :::image type="content" source="../media/fix-icon-c7b18e7c.png" alt-text="Screenshot of the fix icon that enables you to resolve issues.":::
-         Fix - From within the recommendation details page, you can use 'Fix' to resolve this issue.
+        
+        
+        Fix - From within the recommendation details page, you can use 'Fix' to resolve this issue.
      -  :::image type="content" source="../media/enforce-icon-cd64da95.png" alt-text="Screenshot of the enforce icon that enables you to automatically deploy a policy to fix an issue.":::
-         Enforce - From within the recommendation details page, you can automatically deploy a policy to fix this issue whenever someone creates a non-compliant resource.
+        
+        
+        Enforce - From within the recommendation details page, you can automatically deploy a policy to fix this issue whenever someone creates a non-compliant resource.
      -  :::image type="content" source="../media/deny-icon-4444b813.png" alt-text="Screenshot of the deny icon that enables you to prevent new resources from being created with identified issues.":::
-         Deny - From within the recommendation details page, you can prevent new resources from being created with this issue.
+        
+        
+        Deny - From within the recommendation details page, you can prevent new resources from being created with this issue.
 
 ### Which recommendations are included in the secure score calculations?
 
  -  Only built-in recommendations have an impact on the secure score.
  -  Recommendations flagged as Preview aren't included in the calculations of your secure score. They should still be remediated wherever possible so that when the preview period ends, they'll contribute towards your score.
- -  Preview recommendations are marked with: :::image type="content" source="../media/preview-icon-d9b46adc.png" alt-text="Screenshot of the preview recommendations icon for secure score options after General Availability.":::
+ -  Preview recommendations are marked with:
+    
+    :::image type="content" source="../media/preview-icon-d9b46adc.png" alt-text="Screenshot of the preview recommendations icon for secure score options after General Availability.":::
     
 
 ## Improve your secure score

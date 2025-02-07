@@ -13,9 +13,8 @@ The regulatory compliance dashboard shows your selected compliance standards wit
 
 Use the regulatory compliance dashboard to help focus your attention on the gaps in compliance with your chosen standards and regulations. This focused view also enables you to continuously monitor your compliance over time within dynamic cloud and hybrid environments.
 
-1. Sign in to the Azure portal.
-
-2. Navigate to **Defender for Cloud**, **Regulatory compliance**.
+1.  Sign in to the Azure portal.
+2.  Navigate to **Defender for Cloud**, **Regulatory compliance**.
 
 The dashboard provides you with an overview of your compliance status and the set of supported compliance regulations. You'll see your overall compliance score, and the number of passing vs. failing assessments associated with each standard.
 
@@ -25,15 +24,11 @@ You can use the information in the regulatory compliance dashboard to investigat
 
 ### To investigate your compliance issues:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).<br>
-
-2. Navigate to **Defender for Cloud**, **Regulatory compliance**.<br>
-
-3. Select a regulatory compliance standard.<br>
-
-4. Select a compliance control to expand it.<br>
-
-5. Select **Control details**.<br>
+1.  Sign in to the [Azure portal](https://portal.azure.com/).<br>
+2.  Navigate to **Defender for Cloud**, **Regulatory compliance**.<br>
+3.  Select a regulatory compliance standard.<br>
+4.  Select a compliance control to expand it.<br>
+5.  Select **Control details**.<br>
 
 :::image type="content" source="../media/new-control-details-6b59bc2b.png" alt-text="Screenshot showing the Defender for Cloud Regulatory compliance Control details.":::
 
@@ -42,7 +37,7 @@ You can use the information in the regulatory compliance dashboard to investigat
  -  Select Your Actions to see a detailed view of automated and manual actions you need to take to improve your compliance posture.
  -  Select Microsoft Actions to see all the actions Microsoft took to ensure compliance with the selected standard.
 
-6. Under **Your Actions**, you can select a down arrow to view more details and resolve the recommendation for that resource.
+6.  Under **Your Actions**, you can select a down arrow to view more details and resolve the recommendation for that resource.
 
 :::image type="content" source="../media/new-your-actions-45615309.png" alt-text="Screenshot showing how to to view more details and resolve the recommendation for a resource.":::
 
@@ -56,27 +51,22 @@ The regulatory compliance has both automated and manual assessments that might n
 
 ### To remediate an automated assessment:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).<br>
-
-2. Navigate to **Defender for Cloud**, **Regulatory compliance**.<br>
-
-3. Select a regulatory compliance standard.<br>
-
-4. Select a compliance control to expand it.<br>
-
-5. Select any of the failing assessments that appear in the dashboard to view the details for that recommendation. Each recommendation includes a set of remediation steps to resolve the issue.<br>
-
-6. Select a particular resource to view more details and resolve the recommendation for that resource.<br>
+1.  Sign in to the [Azure portal](https://portal.azure.com/).<br>
+2.  Navigate to **Defender for Cloud**, **Regulatory compliance**.<br>
+3.  Select a regulatory compliance standard.<br>
+4.  Select a compliance control to expand it.<br>
+5.  Select any of the failing assessments that appear in the dashboard to view the details for that recommendation. Each recommendation includes a set of remediation steps to resolve the issue.<br>
+6.  Select a particular resource to view more details and resolve the recommendation for that resource.<br>
 
 :::image type="content" source="../media/new-sample-recommendation-example-273b7ee0.png" alt-text="Screenshot showing that disk encryption should be applied on virtual machines.":::
 
 
-7. In this example, when you select **Take action** from the recommendation details page, you arrive in the Azure Virtual Machine pages of the Azure portal, where you can enable encryption from the **Security** tab:
+7.  In this example, when you select **Take action** from the recommendation details page, you arrive in the Azure Virtual Machine pages of the Azure portal, where you can enable encryption from the **Security** tab:
 
 :::image type="content" source="../media/new-encrypting-virtual-machine-disks-4949d026.png" alt-text="Screenshot showing how to enable encryption from the Security tab.":::
 
 
-8. After you take action to resolve recommendations, you'll see the result in the compliance dashboard report because your compliance score improves.
+8.  After you take action to resolve recommendations, you'll see the result in the compliance dashboard report because your compliance score improves.
 
 ## Remediate a manual assessment
 
@@ -84,20 +74,12 @@ The regulatory compliance has automated and manual assessments that might need t
 
 ### To remediate a manual assessment:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).<br>
-
-2. Navigate to **Defender for Cloud**, **Regulatory compliance**.<br>
-
-3. Select a regulatory compliance standard.<br>
-
-4. Select a compliance control to expand it.<br>
-
-5. Under the Manual attestation and evidence section, select an assessment.<br>
-
-6. Select the relevant subscriptions.<br>
-
-7. Select **Attest**.<br>
-
-8. Enter the relevant information and attach evidence for compliance.<br>
-
-9. Select **Save**.
+1.  Sign in to the [Azure portal](https://portal.azure.com/).<br>
+2.  Navigate to **Defender for Cloud**, **Regulatory compliance**.<br>
+3.  Select a regulatory compliance standard.<br>
+4.  Select a compliance control to expand it.<br>
+5.  Under the Manual attestation and evidence section, select an assessment.<br>
+6.  Select the relevant subscriptions.<br>
+7.  Select **Attest**.<br>
+8.  Enter the relevant information and attach evidence for compliance.<br>
+9.  Select **Save**.

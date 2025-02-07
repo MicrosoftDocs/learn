@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.microsoft-defender-cloud-security-posture.microsoft-defender-external-attack-surface-management
-title: Identify and monitor external assets by using Microsoft Defender External Attack Surface Management
+title: Implement and use Microsoft Defender External Attack Surface Management
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Identify and monitor external assets by using Microsoft Defender External Attack Surface Management
-  description: "Identify and monitor external assets by using Microsoft Defender External Attack Surface Management"
-  ms.date: 05/21/2024
+  title: Implement and use Microsoft Defender External Attack Surface Management
+  description: "Implement and use Microsoft Defender External Attack Surface Management"
+  ms.date: 02/07/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
