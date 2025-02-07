@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-controls-identity-access.identity-management-privileged-access
+title: 'Microsoft cloud security benchmark: Identity management and privileged access'
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: 'Microsoft cloud security benchmark: Identity management and privileged access'
+  description: "Microsoft cloud security benchmark: Identity management and privileged access"
+  ms.date: 02/07/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-identity-management-privileged-access.md)]

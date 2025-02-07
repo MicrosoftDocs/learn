@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-aws-azure.compare-event-messaging-services
+title: Compare event driven architecture and messaging services in AWS and Azure
+metadata:
+  title: Compare event driven architecture and messaging services in AWS and Azure
+  description: "Learn about the services in Amazon Web Services (AWS) and Azure that solutions can call to broadcast events and exchange messages. Choose Azure services that are equivalent to AWS messaging and event-driven communication services."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-compare-event-messaging-services.md)]
