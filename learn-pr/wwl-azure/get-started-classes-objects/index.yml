@@ -12,7 +12,7 @@ metadata:
   ms.devlang: dotnet
   ai-usage: human-only
 title: Get started with classes and objects
-summary: Learn how to&nbsp;create classes and instantiate objects that expose public data fields by using class definitions, constructors, and the `new` operator.
+summary: Learn how to create classes and instantiate objects that expose public data fields by using class definitions, constructors, and the `new` operator.
 abstract: |
   After completing this module, you'll be able to:
 
