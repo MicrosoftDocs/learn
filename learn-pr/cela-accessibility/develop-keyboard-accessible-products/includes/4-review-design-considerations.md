@@ -49,6 +49,8 @@ Indicate the sequence in which interactive elements should receive focus when na
 1. Use the focus order indicators to show the intended ordering of elements when being navigated using a keyboard.
 1. Long lists of like elements should be by-passable. For instance, imagine a Teams meeting where user has to make a user as signer. Users can invoke the menu item of that user and using arrow key they can drill down on the required menu item.
 
+In the next image, the focus order is from left to right along the top navigation menu. Users can navigate the search categories within the dropdown using the **down arrow** or skip it with **Tab**. 
+
 :::image type="complex" source="../media/focus-order-accessibility-annotation-wishcart-application.png" alt-text="Screenshot of WishCart application with focus order annotations." lightbox="../media/focus-order-accessibility-annotation-wishcart-application.png":::
    Image of WishCart application with wishcart, delivering to New Delhi, Search field, choose language for shopping, hello sign in accounts &lists, returns &orders and Cart defined as custom component, Search in all categories Drop-down list as parent component and ‘All categories’, ‘Devices’ & ‘fashion’ as its child components. Each section has numerical labels indicating the focus order.
 :::image-end:::
