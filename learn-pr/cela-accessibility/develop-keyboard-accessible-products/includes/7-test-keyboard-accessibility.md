@@ -23,6 +23,5 @@ User testing for keyboard accessibility is crucial to ensure that websites and a
 
 ## Resources
 
-[Keyboard Testing](https://accessibility.web-resources.upenn.edu/testing-evaluating-accessibility/manual-testing/keyboard-testing)
-
-WebAIM: [Keyboard Testing](https://webaim.org/techniques/keyboard/)
+- [Keyboard Testing](https://accessibility.web-resources.upenn.edu/testing-evaluating-accessibility/manual-testing/keyboard-testing)
+- WebAIM: [Keyboard Testing](https://webaim.org/techniques/keyboard/)
