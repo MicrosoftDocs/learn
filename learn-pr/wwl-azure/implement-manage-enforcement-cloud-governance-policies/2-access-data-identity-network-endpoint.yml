@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-enforcement-cloud-governance-policies.access-data-identity-network-endpoint
+title: 'Microsoft Cloud Security Benchmark: Access, Data, Identity, Network, Endpoint, Governance, Recovery, Incident, and Vulnerability Management'
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: 'Microsoft Cloud Security Benchmark: Access, Data, Identity, Network, Endpoint, Governance, Recovery, Incident, and Vulnerability Management'
+  description: "Microsoft Cloud Security Benchmark: Access, Data, Identity, Network, Endpoint, Governance, Recovery, Incident, and Vulnerability Management"
+  ms.date: 02/07/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-access-data-identity-network-endpoint.md)]
