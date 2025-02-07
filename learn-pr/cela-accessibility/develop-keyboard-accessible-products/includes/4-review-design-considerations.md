@@ -19,9 +19,8 @@ In addition to navigation, features are often accessible through accelerator key
 
 ### Resources
 
-[Keyboard Accelerators](/windows/apps/design/input/keyboard-accelerators)
-
-[Mac Keyboard Shortcuts](https://support.apple.com/en-us/102650)
+- [Keyboard Accelerators](/windows/apps/design/input/keyboard-accelerators)
+- [Mac Keyboard Shortcuts](https://support.apple.com/en-us/102650)
 
 ## Keyboard focus visual indicators
 
