@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-class-implementations.exercise-manage-class-implementations
+uid: learn.wwl.manage-class-implementations.exercise-update-class-structures
 title: Exercise - Manage class implementations in C# applications
 metadata:
   title: Exercise - Manage class implementations in C# applications
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/8-exercise-manage-class-implementations.md)]
+  [!include[](includes/8-exercise-update-class-structures.md)]

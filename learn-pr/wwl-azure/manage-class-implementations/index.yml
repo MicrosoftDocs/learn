@@ -56,7 +56,7 @@ units:
 - learn.wwl.manage-class-implementations.specify-named-optional-method-arguments
 - learn.wwl.manage-class-implementations.instantiate-objects-initializers-copy-constructor
 - learn.wwl.manage-class-implementations.examine-class-finalizers
-- learn.wwl.manage-class-implementations.exercise-manage-class-implementations
+- learn.wwl.manage-class-implementations.exercise-update-class-structures
 - learn.wwl.manage-class-implementations.knowledge-check
 - learn.wwl.manage-class-implementations.summary
 badge:
