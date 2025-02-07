@@ -64,9 +64,9 @@ A method definition can specify whether its parameters are required or optional.
 
 Each optional parameter has a default value as part of its definition. If no argument is sent for that parameter, the default value is used. A default value must be one of the following types of expressions:
 
-- a constant expression, such as a literal string or number.
-- an expression of the form `new ValType()`, where `ValType` is a value type, such as an `enum` or a `struct`.
-- an expression of the form `default(ValType)`, where `ValType` is a value type.
+- A constant expression, such as a literal string or number.
+- An expression of the form `new ValType()`, where `ValType` is a value type, such as an `enum` or a `struct`.
+- An expression of the form `default(ValType)`, where `ValType` is a value type.
 
 Optional parameters are defined at the end of the parameter list, after any required parameters. The caller must provide arguments for all required parameters and any optional parameters preceding those it specifies. Comma-separated gaps in the argument list aren't supported. For example, in the following code, instance method `ExampleMethod` is defined with one required and two optional parameters.
 
