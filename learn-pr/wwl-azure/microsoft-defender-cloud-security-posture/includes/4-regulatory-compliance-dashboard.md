@@ -30,7 +30,7 @@ You can use the information in the regulatory compliance dashboard to investigat
 4.  Select a compliance control to expand it.<br>
 5.  Select **Control details**.<br>
 
-:::image type="content" source="../media/new-control-details-6b59bc2b.png" alt-text="Screenshot showing the Defender for Cloud Regulatory compliance Control details.":::
+:::image type="content" source="../media/new-control-details-6b59bc2b-43f4c38a.png" alt-text="Screenshot showing the Defender for Cloud Regulatory compliance Control details.":::
 
 
  -  Select Overview to see the specific information about the Control you selected.
@@ -39,7 +39,7 @@ You can use the information in the regulatory compliance dashboard to investigat
 
 6.  Under **Your Actions**, you can select a down arrow to view more details and resolve the recommendation for that resource.
 
-:::image type="content" source="../media/new-your-actions-45615309.png" alt-text="Screenshot showing how to to view more details and resolve the recommendation for a resource.":::
+:::image type="content" source="../media/new-your-actions-45615309-1429d34d.png" alt-text="Screenshot showing how to to view more details and resolve the recommendation for a resource.":::
 
 
 > [!NOTE]
@@ -58,12 +58,12 @@ The regulatory compliance has both automated and manual assessments that might n
 5.  Select any of the failing assessments that appear in the dashboard to view the details for that recommendation. Each recommendation includes a set of remediation steps to resolve the issue.<br>
 6.  Select a particular resource to view more details and resolve the recommendation for that resource.<br>
 
-:::image type="content" source="../media/new-sample-recommendation-example-273b7ee0.png" alt-text="Screenshot showing that disk encryption should be applied on virtual machines.":::
+:::image type="content" source="../media/new-sample-recommendation-example-273b7ee0-e45ce999.png" alt-text="Screenshot showing that disk encryption should be applied on virtual machines.":::
 
 
 7.  In this example, when you select **Take action** from the recommendation details page, you arrive in the Azure Virtual Machine pages of the Azure portal, where you can enable encryption from the **Security** tab:
 
-:::image type="content" source="../media/new-encrypting-virtual-machine-disks-4949d026.png" alt-text="Screenshot showing how to enable encryption from the Security tab.":::
+:::image type="content" source="../media/new-encrypting-virtual-machine-disks-4949d026-086e2964.png" alt-text="Screenshot showing how to enable encryption from the Security tab.":::
 
 
 8.  After you take action to resolve recommendations, you'll see the result in the compliance dashboard report because your compliance score improves.
