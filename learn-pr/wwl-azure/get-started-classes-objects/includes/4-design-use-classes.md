@@ -40,7 +40,7 @@ For the pencil example, physical attributes include the length of the body, the 
 
 Physical attributes are often referred to as properties, while behavioral attributes are often referred to as functions (methods in C# programming).
 
-## Code classes and objects in C# programming
+### Code classes and objects in C\# programming
 
 In the world of C# programming, object properties and methods are defined by a class. Classes provide the blueprint for what an object (an instance of the class) is able to do. The blueprint for a class is called a class definition.
 
@@ -70,7 +70,7 @@ For example, the `Console` class includes `WriteLine`, `ReadLine`, and `Clear` m
 
 Methods are often designed to accept one or more method arguments. Method arguments are passed to the method as parameters of the calling statement used to invoke the method. For example, the `WriteLine` method of the `Console` class can accept a string argument that's provided by the calling statement.
 
-## Class definitions in C# code
+### Class definitions in C\# code
 
 The following example shows a simple class in C#. The `Phone` class has properties for `Brand`, `Model`, and `Year`. The class also includes methods for `Call` and `Text`.
 
