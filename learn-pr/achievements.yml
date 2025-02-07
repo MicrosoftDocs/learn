@@ -5120,6 +5120,16 @@ achievements:
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
   iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn.language.vue-dynamic-rendering.badge
+  type: badge
+  title: Dynamic page displays with Vue.js
+  summary: One of the goals of any web framework is to update the display based on data values. This module explores how to make your page dynamic based on those values and how to display lists of information.
+  iconUrl: /training/achievements/vue-dynamic-rendering.svg
+- uid: learn.language.vue-get-started.badge
+  type: badge
+  title: Get started with Vue
+  summary: Vue.js is a progressive web framework that allows developers to get up and running quickly, with just the addition of a script tag. But Vue.js can also grow with you. You can use it to create large scalable applications. In this module, you'll explore the core concepts of Vue.js and how to get started.
+  iconUrl: /training/achievements/vue-get-started.svg
 - uid: learn.languages.vue-first-steps.trophy
   type: trophy
   title: Take your first steps with Vue.js
