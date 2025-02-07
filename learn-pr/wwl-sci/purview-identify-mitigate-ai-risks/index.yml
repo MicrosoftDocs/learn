@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.purview-identify-mitigate-ai-risks
+metadata:
+  title: Identify and mitigate AI data security risks
+  description: "Identify and mitigate AI data security risks."
+  ms.date: 02/06/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Identify and mitigate AI data security risks
+summary: Microsoft Purview Data Security Posture Management (DSPM) for AI helps organizations monitor AI activity, enforce security policies, and prevent unauthorized data exposure. Learn how to configure DSPM for AI, track AI interactions, run data assessments, and apply security controls to reduce risks associated with AI usage.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain the purpose and benefits of Microsoft Purview DSPM for AI.
+  - Set up and configure DSPM for AI to monitor AI interactions.
+  - Identify and analyze AI security risks using reports and insights.
+  - Run and review AI data assessments to detect oversharing risks.
+  - Apply security policies, such as DLP and sensitivity labels, to protect AI-referenced data.
+prerequisites: |
+  - Familiarity with Microsoft 365 services.
+  - Basic understanding of AI tools like Microsoft 365 Copilot.
+  - Knowledge of security and compliance concepts, such as data loss prevention (DLP) and sensitivity labels.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.purview-identify-mitigate-ai-risks.introduction
+- learn.wwl.purview-identify-mitigate-ai-risks.understand-ai-security-risks
+- learn.wwl.purview-identify-mitigate-ai-risks.dspm-ai-overview
+- learn.wwl.purview-identify-mitigate-ai-risks.configure-dspm-ai
+- learn.wwl.purview-identify-mitigate-ai-risks.review-ai-security-reports
+- learn.wwl.purview-identify-mitigate-ai-risks.data-assessments
+- learn.wwl.purview-identify-mitigate-ai-risks.knowledge-check
+- learn.wwl.purview-identify-mitigate-ai-risks.summary
+
+badge:
+  uid: learn.wwl.purview-identify-mitigate-ai-risks.badge
