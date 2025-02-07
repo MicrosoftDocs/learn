@@ -28,10 +28,12 @@ roles:
 - administrator
 - privacy-manager
 products:
+- priva
 - microsoft-purview
+- azure
 - m365
 subjects:
-- information-protection-governance
+- compliance
 - security
 units:
 - learn.wwl.priva-privacy-risk-management.introduction
