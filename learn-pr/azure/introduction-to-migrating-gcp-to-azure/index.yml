@@ -51,6 +51,4 @@ units:
 - learn.introduction-migrating-gcp-azure.knowledge-check
 - learn.introduction-migrating-gcp-azure.summary
 badge:
-  uid: /training/achievements/generic-badge.svg
-  # TODO: This badge will need to be created
-  # uid: learn.introduction-migrating-gcp-azure.badge
+  uid: learn.introduction-migrating-gcp-azure.badge

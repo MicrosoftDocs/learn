@@ -51,6 +51,4 @@ units:
 - learn.introduction-migrating-aws-azure.knowledge-check
 - learn.introduction-migrating-aws-azure.summary
 badge:
-  uid: /training/achievements/generic-badge.svg
-  # TODO: This badge will need to be created
-  # uid: learn.introduction-migrating-aws-azure.badge
+  uid: learn.introduction-migrating-aws-azure.badge
