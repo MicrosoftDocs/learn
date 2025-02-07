@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Secure identity and access
   description: "This module focuses on effectively managing security controls in Microsoft Entra ID by securing identities, authentication, and authorization to protect users, groups, and external identities against threats while ensuring secure and seamless access to resources."
-  ms.date: 02/06/2025
+  ms.date: 02/07/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module
@@ -45,7 +45,7 @@ subjects:
 - cloud-security
 units:
 - learn.wwl.manage-security-controls-identity-access.introduction
-- learn.wwl.manage-security-controls-identity-access.mcsb-security-controls-identity-management-privileged-access
+- learn.wwl.manage-security-controls-identity-access.identity-management-and-privileged-access
 - learn.wwl.manage-security-controls-identity-access.microsoft-entra-id-overview
 - learn.wwl.manage-security-controls-identity-access.secure-microsoft-entra-users
 - learn.wwl.manage-security-controls-identity-access.create-new-user

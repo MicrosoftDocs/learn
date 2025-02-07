@@ -43,10 +43,6 @@ Like built-in roles, custom roles are assigned by default at the default organiz
 1.  Sign in to the **Microsoft Entra admin center** as at least a **Application Developer**.
 2.  Browse to **Identity**, **Applications**, **App registrations**.
 3.  Select the app registration to which you are granting access to manage. You might have to select **All applications** to see the complete list of app registrations in your Microsoft Entra organization.
-
-:::image type="content" source="../media/application-registration-example-47457693-92540881.png" alt-text="Screenshot showing the applications registration page in the Microsoft Entra admin center.":::
-
-
 4.  In the app registration, select **Roles and administrators**. If you haven't already created one, instructions are in the preceding procedure.<br>
 5.  Select the role to open the **Assignments** page.<br>
 6.  Select **Add assignment** to add a user. The user will be granted any permissions over only the selected app registration.

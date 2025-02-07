@@ -11,9 +11,6 @@ Each organization has different needs when it comes to authentication. Microsoft
  -  Passkeys FIDO2 (Fast IDentity Online 2)
  -  Certificate-based authentication
 
-:::image type="content" source="../media/passwordless-convenience-security-3e1c4bb8-8c1ef413.png" alt-text="Diagram showing multifactor authentication methods.":::
-
-
 **Windows Hello for Business**
 
 Windows Hello for Business is ideal for information workers that have their own designated Windows PC. The biometric and PIN credentials are directly tied to the user's PC, which prevents access from anyone other than the owner. With public key infrastructure (PKI) integration and built-in support for single sign-on (SSO), Windows Hello for Business provides a convenient method for seamlessly accessing corporate resources on-premises and in the cloud.
