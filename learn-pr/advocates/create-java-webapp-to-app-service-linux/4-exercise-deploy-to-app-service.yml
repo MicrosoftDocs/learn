@@ -1,17 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-tomcat-java-appservice.4
-title: Exercise - Deploy web app to Azure App Service
+title: Exercise - Deploy a web app to Azure App Service
 metadata:
-  adobe-target: true
-  description: "Let's now deploy the webapp from the previous section to App Service"
-  author: "ayangupt"
-  ms.author: KarlErickson
-  ms.date: "02/06/2025"
-  ms.topic: "unit"
-  ms.custom: team=cloud_advocates, devx-track-extended-java, linux-related-content
-  ms.reviewer: 
-  ms.assetid: "HelloJavaAppService"
+  title: Exercise - Deploy a Web App to Azure App Service
+  description: Deploy the web app from the previous section to App Service.
+  ms.date: 02/06/2025
+  author: KarlErickson
+  ms.author: ayangupta
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-extended-java, devx-track-java, linux-related-content
 durationInMinutes: 7
 content: |
   [!include[](includes/4-exercise-deploy-to-app-service.md)]
-

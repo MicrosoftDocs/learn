@@ -1,30 +1,31 @@
 ### YamlMime:Module
 uid: learn.azure.build-tomcat-java-appservice
 metadata:
-  adobe-target: true
-  title: Deploy a Java App to Tomcat on Azure App Service
-  description: You'll learn how to create a Java tomcat web application and deploy it to Azure App Service using Maven. 
-  ms.date: "02/06/2025"
+  title: Deploy a Java Web App to a Tomcat Server on Azure App Service
+  description: Learn how to create a Java Tomcat web app and deploy it to Azure App Service using Maven.
+  ms.date: 02/06/2025
+  author: KarlErickson
   ms.author: ayangupta
-  author: ayangupt
-  ms.topic: module
-  ms.custom: team=cloud_advocates
+  ms.topic: module-build-your-first
+  ms.custom: team=cloud_advocates, devx-track-extended-java, devx-track-java, linux-related-content
   ms.service: azure-app-service
   ms.subservice: web-apps
-title: Deploy a Java web app to Azure App Service
-summary: In this module, you'll explore how to create, configure, and deploy a Java tomcat web application to Azure App Service using Maven.
+title: Deploy a Java web app to a Tomcat server on Azure App Service
+summary: Learn how to create, configure, and deploy a Java Tomcat web application to Azure App Service using Maven.
 abstract: |
-  After you complete this module, you will be able to:
-  - Create a tomcat app using Maven
-  - Deploy a tomcat app locally to your machine 
-  - Deploy your Java tomcat web application to Azure App Service
+  By the end of this module, you'll be able to:
+  - Create a Tomcat app using Maven.
+  - Deploy a Tomcat app locally to your machine.
+  - Deploy your Java Tomcat web application to Azure App Service.
 iconUrl: /training/achievements/build-webapp-java-tomcat.svg
+ratingEnabled: false
 levels:
   - beginner
 roles:
   - developer
 products:
   - azure
+subjects: app-development
 prerequisites: |
   - Your own Azure subscription
   - The [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) installed on your computer
@@ -38,6 +39,5 @@ units:
   - learn.azure.build-tomcat-java-appservice.4
   - learn.azure.build-tomcat-java-appservice.5
   - learn.azure.build-tomcat-java-appservice.6
-
 badge:
   uid: learn.azure.build-webapp-java-tomcat.badge

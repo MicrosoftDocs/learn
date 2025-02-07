@@ -2,16 +2,14 @@
 uid: learn.azure.build-tomcat-java-appservice.3
 title: Exercise - Create a simple Tomcat Java web app 
 metadata:
-  adobe-target: true
-  description: "Let's create a simple java web app and deploy it locally."
-  author: "ayangupt"
-  ms.author: KarlErickson
-  ms.date: "02/06/2025"
-  ms.topic: "unit"
-  ms.custom: team=cloud_advocates, devx-track-extended-java, linux-related-content
-  ms.reviewer: 
-  ms.assetid: "HelloJavaAppService"
+  title: Exercise - Create a Simple Tomcat Java Web App
+  titleSuffix: Azure
+  description: Let's create a simple Java web app and deploy it locally.
+  ms.date: 02/06/2025
+  author: KarlErickson
+  ms.author: ayangupta
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-extended-java, devx-track-java, linux-related-content
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-simple-java-app.md)]
-

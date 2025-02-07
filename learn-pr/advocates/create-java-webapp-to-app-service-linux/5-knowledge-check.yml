@@ -2,63 +2,62 @@
 uid: learn.azure.build-tomcat-java-appservice.5
 title: Knowledge check
 metadata:
-  adobe-target: true
-  description: "Knowledge Check"
-  author: "ayangupt"
-  ms.author: KarlErickson
-  ms.date: "02/06/2025"
-  ms.topic: "unit"
-  ms.custom: team=cloud_advocates, devx-track-extended-java, linux-related-content
-  ms.reviewer: 
-  ms.assetid: "HelloJavaAppService"
+  title: Knowledge check
+  description: Check your knowledge of creating and deploying Java web apps to Azure App Service
+  ms.date: 02/06/2025
+  author: KarlErickson
+  ms.author: ayangupta
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-extended-java, devx-track-java, linux-related-content
 durationInMinutes: 5
+content:
 quiz:
-  title: "Check your knowledge"
+  title: Check your knowledge
   questions:
-    - content: "What is the primary purpose of using Apache Maven in Java web application development?"
+    - content: What is the primary purpose of using Apache Maven in Java web application development?
       choices:
-        - content: "To provide a web server for hosting the application."
+        - content: To provide a web server for hosting the application.
           isCorrect: false
-          explanation: "Incorrect. Maven is a build automation tool, not a web server."
-        - content: "To design the user interface of the web application."
+          explanation: Incorrect. Maven is a build automation tool, not a web server.
+        - content: To design the user interface of the web application.
           isCorrect: false
-          explanation: "Incorrect. Maven focuses on project management and build automation, not UI design."
-        - content: "To manage project dependencies and automate the build process."
+          explanation: Incorrect. Maven focuses on project management and build automation, not UI design.
+        - content: To manage project dependencies and automate the build process.
           isCorrect: true
-          explanation: "Correct! Maven helps manage dependencies and automates the build and deployment processes, streamlining development."
+          explanation: Correct! Maven helps manage dependencies and automates the build and deployment processes, streamlining development.
 
-    - content: "How does deploying a Java web application to Microsoft Azure App Service benefit developers?"
+    - content: How does deploying a Java web application to Microsoft Azure App Service benefit developers?
       choices:
-        - content: "It automatically converts Java code to a faster language."
+        - content: It automatically converts Java code to a faster language.
           isCorrect: false
-          explanation: "Incorrect. Azure App Service does not convert code; it hosts applications as they are."
-        - content: "It eliminates the need for a build automation tool like Maven."
+          explanation: Incorrect. Azure App Service does not convert code. It hosts applications as they are.
+        - content: It eliminates the need for a build automation tool like Maven.
           isCorrect: false
-          explanation: "Incorrect. Build automation tools are still needed for compiling and packaging the application before deployment."
-        - content: "It provides a scalable, managed hosting environment without the need to manage infrastructure."
+          explanation: Incorrect. Build automation tools are still needed for compiling and packaging the application before deployment.
+        - content: It provides a scalable, managed hosting environment without the need to manage infrastructure.
           isCorrect: true
-          explanation: "Correct! Azure App Service allows developers to deploy applications easily, handling scaling and infrastructure management."
+          explanation: Correct! Azure App Service allows developers to deploy applications easily, handling scaling and infrastructure management.
 
-    - content: "What is the primary role of a servlet in a Java web application?"
+    - content: What is the primary role of a servlet in a Java web application?
       choices:
-        - content: "To manage database connections and queries."
+        - content: To manage database connections and queries.
           isCorrect: false
-          explanation: "Incorrect. Servlets can interact with databases, but their main role is handling web requests and generating dynamic content."
-        - content: "To handle client requests and generate dynamic content on the server side."
+          explanation: Incorrect. Servlets can interact with databases, but their main role is handling web requests and generating dynamic content.
+        - content: To handle client requests and generate dynamic content on the server side.
           isCorrect: true
-          explanation: "Correct! The main role of a servlet is to handle client requests and generate server-side responses."
-        - content: "To define the application's user interface."
+          explanation: Correct! The main role of a servlet is to handle client requests and generate server-side responses.
+        - content: To define the application's user interface.
           isCorrect: false
-          explanation: "Incorrect. Servlets work on the server side and do not manage the user interface, which is handled by client-side components."
+          explanation: Incorrect. Servlets work on the server side and do not manage the user interface, which is handled by client-side components.
 
-    - content: "Why is Apache Tomcat used in Java web application development?"
+    - content: Why is Apache Tomcat used in Java web application development?
       choices:
-        - content: "It serves as a servlet container that implements Java Servlet and JSP specifications."
+        - content: It serves as a servlet container that implements Java Servlet and JSP specifications.
           isCorrect: true
-          explanation: "Correct! Tomcat provides an environment to run Java servlets and JSPs, essential for Java web applications."
-        - content: "It is a frontend framework for designing responsive web interfaces."
+          explanation: Correct! Tomcat provides an environment to run Java servlets and JSPs, which is essential for Java web applications.
+        - content: It is a frontend framework for designing responsive web interfaces.
           isCorrect: false
-          explanation: "Incorrect. Tomcat is a server-side technology and does not deal with frontend design."
-        - content: "It is a database system used for storing application data."
+          explanation: Incorrect. Tomcat is a server-side technology and does not deal with frontend design.
+        - content: It is a database system used for storing application data.
           isCorrect: false
-          explanation: "Incorrect. Tomcat is a web server and servlet container, not a database system."
+          explanation: Incorrect. Tomcat is a web server and servlet container, not a database system.
