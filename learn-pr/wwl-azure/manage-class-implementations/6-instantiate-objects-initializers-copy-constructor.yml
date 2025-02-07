@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-class-implementations.instantiate-objects-initializers-copy-constructor
+title: Instantiate objects using initializers and copy constructors
+metadata:
+  title: Instantiate objects using initializers and copy constructors
+  description: "Instantiate objects using initializers and copy constructors"
+  ms.date: 02/07/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/6-instantiate-objects-initializers-copy-constructor.md)]

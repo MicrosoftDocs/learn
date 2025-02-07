@@ -1,0 +1,91 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-class-implementations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/07/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the main difference between structured programming and object-oriented programming?"
+    choices:
+    - content: "Structured programming and object-oriented programming are essentially the same, with only minor differences in syntax and terminology."
+      isCorrect: false
+      explanation: "Incorrect. Structured programming and object-oriented programming are two distinct approaches to software development, each with its own set of principles and methodologies."
+    - content: "Structured programming focuses on the sequence of actions to be performed, while object-oriented programming emphasizes the objects involved in the actions."
+      isCorrect: true
+      explanation: "Correct. While structured programming focuses on the sequence of actions to be performed, object-oriented programming emphasizes the objects involved in the actions."
+    - content: "Structured programming is based on objects that encapsulate both data and behavior, while object-oriented programming is based on a top-down approach where the program is divided into smaller, manageable functions or procedures."
+      isCorrect: false
+      explanation: "Incorrect. This statement is reversed. Object-oriented programming is based on objects that encapsulate both data and behavior, while structured programming is based on a top-down approach where the program is divided into smaller, manageable functions or procedures."
+  - content: "What is the main difference between a static class and a non-static class?"
+    choices:
+    - content: "A static class can't be instantiated and it contains only static members."
+      isCorrect: true
+      explanation: "Correct. A static class is essentially a non-static class that can't be instantiated and only contains static members."
+    - content: "A static class can't contain static methods, fields, properties, or events."
+      isCorrect: false
+      explanation: "Incorrect. A static class can only contain static members."
+    - content: "A static class can be instantiated using the 'new' operator."
+      isCorrect: false
+      explanation: "Incorrect. A static class can't be instantiated using the 'new' operator."
+  - content: "What is the purpose of using the partial keyword in class definitions?"
+    choices:
+    - content: "It allows a class to inherit from multiple base classes."
+      isCorrect: false
+      explanation: "Incorrect. In C#, a class can't inherit from multiple base classes. The partial keyword is used to split a class definition across multiple files."
+    - content: "It enables the splitting of a class definition over two or more source files."
+      isCorrect: true
+      explanation: "Correct. The partial keyword allows a class definition to be split across multiple files. All parts are combined when the application is compiled."
+    - content: "It makes a class abstract, meaning it can't be instantiated directly."
+      isCorrect: false
+      explanation: "Incorrect. The partial keyword does not make a class abstract. It's used to split a class definition across multiple files."
+  - content: "What happens when named and optional arguments are used in a method?"
+    choices:
+    - content: "The arguments are evaluated in the order in which they appear in the parameter list, not the argument list."
+      isCorrect: false
+      explanation: "Incorrect. When named and optional arguments are used, the arguments are evaluated in the order in which they appear in the argument list, not the parameter list."
+    - content: "The arguments are evaluated in the order in which they appear in the argument list, not the parameter list, and they allow supplying arguments for selected parameters."
+      isCorrect: true
+      explanation: "Correct. Named and optional arguments are evaluated in the order they appear in the argument list and they allow supplying arguments for selected parameters."
+    - content: "Named and optional parameters do not allow supplying arguments for selected parameters."
+      isCorrect: false
+      explanation: "Incorrect. Named and optional parameters enable you to supply arguments for selected parameters."
+  - content: "What is the purpose of a copy constructor in C#?"
+    choices:
+    - content: "It allows you to create a new object by copying the values of an existing object's methods."
+      isCorrect: false
+      explanation: "Incorrect. A copy constructor does not copy the methods of an existing object, it copies the values of an existing object's properties."
+    - content: "It allows you to create a new object by copying the values of an existing object's properties."
+      isCorrect: true
+      explanation: "Correct. A copy constructor in C# creates a new object by copying the values of an existing object's properties."
+    - content: "It allows you to assign values to any accessible fields or properties of an object at creation time without having to invoke a constructor followed by lines of assignment statements."
+      isCorrect: false
+      explanation: "Incorrect. This is the definition of an object initializer, not a copy constructor."
+  - content: "What is the role of a finalizer in a class in C#?"
+    choices:
+    - content: "Finalizers are used to allocate memory for a class instance."
+      isCorrect: false
+      explanation: "Incorrect. Finalizers aren't used for memory allocation, but for clean-up when a class instance is being collected by the garbage collector."
+    - content: "Finalizers are used to perform any necessary final clean-up when a class instance is being collected by the garbage collector."
+      isCorrect: true
+      explanation: "Correct. Finalizers are used to release any unmanaged resources and perform clean-up before an object is garbage collected."
+    - content: "Finalizers can be called explicitly to perform specific actions."
+      isCorrect: false
+      explanation: "Incorrect. Finalizers can't be called explicitly. They're invoked automatically by the garbage collector."
+  - content: "What is the primary purpose of implementing classes in C# applications?"
+    choices:
+    - content: "To increase the execution speed of the application"
+      isCorrect: false
+      explanation: "Incorrect. While efficient code can improve execution speed, the primary purpose of classes is to encapsulate data and behavior."
+    - content: "To create a visual representation of the application"
+      isCorrect: false
+      explanation: "Incorrect. Classes aren't used for visual representation, they're used to define objects and their behavior."
+    - content: "To encapsulate data and behavior into objects"
+      isCorrect: true
+      explanation: "Correct. Classes in C# are used to encapsulate data and behavior into objects, providing a blueprint for creating instances or objects."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-class-implementations.implement-private-static-nested-classes
+title: Implement private, static, and nested classes
+metadata:
+  title: Implement private, static, and nested classes
+  description: "Implement private, static, and nested classes"
+  ms.date: 02/07/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/3-implement-private-static-nested-classes.md)]
