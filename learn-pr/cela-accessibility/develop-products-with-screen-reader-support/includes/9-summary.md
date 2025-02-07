@@ -10,16 +10,11 @@ Make sure to gather all applicable notes, save any resources you want to referen
 This module was developed in collaboration with [Teach Access](https://teachaccess.org/), a non-profit 501(c)(3) organization collaborating with education, industry, government, and disability advocacy organizations to address the critical need to enhance students' understanding of digital accessibility as they learn to design, develop, and build new technologies with the needs of people with disabilities in mind.
 
 ## References
-_Accessibility insights_. (n.d.). https://accessibilityinsights.io/docs/web/overview/
 
-_Accessibility insights_. (n.d.-b). https://accessibilityinsights.io/docs/windows/overview/
-
-_Accessibility Inspector | Apple Developer Documentation_. (n.d.). Apple Developer Documentation. https://developer.apple.com/documentation/accessibility/accessibility-inspector
-
-_Get started on Android with TalkBack - Android Accessibility Help._ (n.d.). https://support.google.com/accessibility/android/answer/6283677?hl=en
-
-Jaws._ (n.d.-b).https://www.freedomscientific.com/products/software/jaws/
-
-Truelove, B. (2023 September 29). _Accessible Figma designs just got easier_. LinkedIn. <https://www.linkedin.com/pulse/accessible-figma-designs-just-got-easier-ben-truelove/?trackingId=6o88RA2ATkWCJlzn7jeJNg%3D%3D>
-
-_VoiceOver user guide for Mac_. (n.d.). Apple Support. https://support.apple.com/en-in/guide/voiceover/welcome/mac
+- _Accessibility insights_. (n.d.). https://accessibilityinsights.io/docs/web/overview/
+- _Accessibility insights_. (n.d.-b). https://accessibilityinsights.io/docs/windows/overview/
+- _Accessibility Inspector | Apple Developer Documentation_. (n.d.). Apple Developer Documentation. https://developer.apple.com/documentation/accessibility/accessibility-inspector
+- _Get started on Android with TalkBack - Android Accessibility Help._ (n.d.). https://support.google.com/accessibility/android/answer/6283677?hl=en
+- Jaws._ (n.d.-b).https://www.freedomscientific.com/products/software/jaws/
+- Truelove, B. (2023 September 29). _Accessible Figma designs just got easier_. LinkedIn. <https://www.linkedin.com/pulse/accessible-figma-designs-just-got-easier-ben-truelove/?trackingId=6o88RA2ATkWCJlzn7jeJNg%3D%3D>
+- _VoiceOver user guide for Mac_. (n.d.). Apple Support. https://support.apple.com/en-in/guide/voiceover/welcome/mac

@@ -22,7 +22,7 @@ This criterion focuses on ensuring that information, structure, and relationship
 
 This criterion focuses on making content perceivable by ensuring that it's distinguishable and accessible to all users. It includes several key requirements, such as: 
 - Ensuring that color isn't the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element
-- Providing users with a way to stop, pause, or control the volume of audio that plays automatically for more than** three (3) seconds** 
+- Providing users with a way to stop, pause, or control the volume of audio that plays automatically for more than **three (3) seconds** 
 - Ensuring that text and images of text have a contrast ratio of at least **4.5:1**, except for large text, incidental text, and logotypes
 - Ensuring that text can be resized up to **200%** without losing content or functionality
 - Ensuring that no loss of content or functionality occurs when the user adjusts text spacing and line height 
