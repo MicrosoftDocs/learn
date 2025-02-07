@@ -422,6 +422,6 @@ Linkerd follows a different approach to resiliency than what you saw with code-b
 
 For more information about Linkerd configuration, see the following resources:
 
-* [Configuring retries - Linkerd documentation](https://linkerd.io/2/tasks/configuring-retries)
-* [Configuring timeouts - Linkerd documentation](https://linkerd.io/2/tasks/configuring-timeouts)
+* [Configuring retries - Linkerd documentation](https://linkerd.io/2.12/tasks/configuring-retries/)
+* [Configuring timeouts - Linkerd documentation](https://linkerd.io/2.12/tasks/configuring-timeouts)
 * [How we designed retries in Linkerd 2.2 - Linkerd blog](https://linkerd.io/2019/02/22/how-we-designed-retries-in-linkerd-2-2)
