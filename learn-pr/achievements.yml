@@ -5120,6 +5120,21 @@ achievements:
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
   iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn.languages.vue-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Vue.js
+  summary: Vue.js is a progressive web framework allowing developers to get up and running quickly, with the addition of a `script` tag. However, Vue.js can also grow with you, and can be used to create large scalable applications.
+  iconUrl: /training/achievements/vue-first-steps.svg
+- uid: learn.language.vue-cli-components.badge
+  type: badge
+  title: Getting started with Vue CLI and single-file components in Vue.js.
+  summary: Although it's possible to create Vue.js applications by using purely JavaScript, most developers need more power and flexibility. By using Vue CLI and single-file components, you can use more robust tooling to enhance the development experience. We'll see how to use Vue CLI to bootstrap an application, and how to create reusable components in Vue.
+  iconUrl: /training/achievements/vue-cli-components.svg
+- uid: learn.language.vue-data-events.badge
+  type: badge
+  title: Work with data and events in Vue.js
+  summary: Dynamic web applications typically allow users to interact with the page and data. In this module, you'll see how to add forms to a Vue.js page and respond to user events. You'll also see how to add computed values that can be calculated based on updates to the data.
+  iconUrl: /training/achievements/vue-data-events.svg
 - uid: learn.introduction-to-visual-studio-code.badge
   type: badge
   title: Introduction to Visual Studio Code
