@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. The accessibility tree doesn't enhance visuals or appearance but focuses on providing structural information for assistive technologies."
     - content: "To convey information about the structure and content of a web page to screen readers"
       isCorrect: true
-      explanation: "Correct. The accessibility tree is essential for screen readers as it provides information about the structure and content of a web page, making it accessible to visually impaired users."
+      explanation: "Correct. The accessibility tree is essential for screen readers as it provides information about the structure and content of a web page, making it accessible to users who are blind or have low vision."
     - content: "To enhance the appearance of a web page"
       isCorrect: false
       explanation: "Incorrect. The accessibility tree doesn't enhance visuals or appearance but focuses on providing structural information for assistive technologies."

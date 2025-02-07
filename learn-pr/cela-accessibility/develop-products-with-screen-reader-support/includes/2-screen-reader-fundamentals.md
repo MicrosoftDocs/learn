@@ -13,7 +13,7 @@ Familiarizing yourself with key terms is essential for effective screen reader s
 
 ## Importance of supporting screen readers
 
-Screen readers are essential for users who are blind or have visual impairments. They allow them to independently access and interact with digital products and content. Ensuring apps and websites are compatible with screen readers empowers these users to achieve more and enhances the overall experience for all users. 
+Screen readers are essential for users who are blind or have low vision. They allow them to independently access and interact with digital products and content. Ensuring apps and websites are compatible with screen readers empowers these users to achieve more and enhances the overall experience for all users. 
 
 Additionally, adhering to accessibility standards and guidelines, such as the Web Content Accessibility Guidelines (WCAG), can help organizations avoid legal issues and improve their reputation. Many countries have laws and regulations that require digital products to be accessible, and failing to comply can result in legal consequences.
 
@@ -66,7 +66,7 @@ To give you a hands-on understanding of how screen readers work, let's dive into
 - Stop reading in the middle of a paragraph by pressing **Ctrl**.
 - Turn off VoiceOver by pressing **Command** + **F5**. 
 
-These practical examples demonstrate the importance of screen readers in providing accessible digital experiences. By understanding how screen readers operate, you can design and develop websites and apps that are inclusive of and user-friendly for users with visual impairments.
+These practical examples demonstrate the importance of screen readers in providing accessible digital experiences. By understanding how screen readers operate, you can design and develop websites and apps that are inclusive of and user-friendly for users who are blind or have low vision.
 
 ## Resources
 
