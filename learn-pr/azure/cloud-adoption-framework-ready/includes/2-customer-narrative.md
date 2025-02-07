@@ -60,7 +60,7 @@ The CIO will watch for operational shifts to improve employee satisfaction and r
 
 In spite of all the hard work and costs associated with operations, the team periodically fails to meet the service-level agreement (SLA) of 90 percent uptime for mission-critical systems in the primary datacenter. This is a costly concern for the CIO and the chief executive officer (CEO). Outdated hardware and an overdue refresh cycle in the datacenter have resulted in frequent but brief outages.
 
-Although the company has grudgingly accepted this SLA, the new CIO is not impressed. Regardless of the financial savings, the CIO expects the central operations team to deliver a much higher SLA after the migration.
+Although the company has grudgingly accepted this SLA, the new CIO isn't impressed. Regardless of the financial savings, the CIO expects the central operations team to deliver a much higher SLA after the migration.
 
 ### Retail innovation
 

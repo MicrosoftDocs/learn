@@ -1,6 +1,6 @@
-You can use the [Strategy methodology](/azure/cloud-adoption-framework/strategy/) to create a comprehensive plan that outlines your organization's approach when you adopt and integate cloud technologies. A cloud adoption strategy helps you align with business goals. The Strategy methodology consists of five steps.
+You can use the [Strategy methodology](/azure/cloud-adoption-framework/strategy/) to create a comprehensive plan that outlines your organization's approach when you adopt and integrate cloud technologies. A cloud adoption strategy helps you align with business goals. The Strategy methodology consists of five steps.
 
-:::image type="content" source="../media/caf-strategy-overview.svg" alt-text="A diagram that shows the five strategy methodology steps: assess your strategy; define your motivations, mission, and objectives; define your team, prepare your organization, and inform your strategy." border="false":::
+:::image type="content" source="../media/strategy-overview.svg" alt-text="A diagram that shows the five strategy methodology steps: assess your strategy; define your motivations, mission, and objectives; define your team, prepare your organization, and inform your strategy." border="false":::
 
 ## Assess your strategy
 

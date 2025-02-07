@@ -2,7 +2,7 @@ You can use the [Innovate methodology](/azure/cloud-adoption-framework/innovate/
 
 Before you establish your innovation approach. Ensure that your team can make the following important commitments:
 
-- [Commitment to prioritize customers over technology](/azure/cloud-adoption-framework/innovate/considerations/#commitment-to-prioritize-customers-over-technology): The primary goal of innovation is to meet the needs and expectations of your customers. Implement changes that are relevent and valuable to them.
+- [Commitment to prioritize customers over technology](/azure/cloud-adoption-framework/innovate/considerations/#commitment-to-prioritize-customers-over-technology): The primary goal of innovation is to meet the needs and expectations of your customers. Implement changes that are relevant and valuable to them.
 
 - [Commitment to transparency](/azure/cloud-adoption-framework/innovate/considerations/#commitment-to-transparency): Transparency among leadership and strategy teams provides an opportunity to learn from and improve your solution.
 - [Commitment to iteration](/azure/cloud-adoption-framework/innovate/considerations/#commitment-to-iteration): Iteration is inevitable. Commit to making changes so that you can continuously align with desired business outcomes.

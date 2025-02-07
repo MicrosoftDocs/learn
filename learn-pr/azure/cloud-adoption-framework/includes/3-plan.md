@@ -17,7 +17,7 @@ Rationalization is the process of assessing your current IT assets to determine 
 
 ## Align your organization
 
-[Align your organization](/azure/cloud-adoption-framework/plan/initial-org-alignment) to help ensure the success of your cloud adoption plan. You should etablish a structure where people are accountable for cloud adoption and governance. Initial organizational alignment ensures that you engage the right stakeholders and create a balance between speed and control during the adoption process. Evolve the way that you structure your organization when functions change and your workload scales.
+[Align your organization](/azure/cloud-adoption-framework/plan/initial-org-alignment) to help ensure the success of your cloud adoption plan. You should establish a structure where people are accountable for cloud adoption and governance. Initial organizational alignment ensures that you engage the right stakeholders and create a balance between speed and control during the adoption process. Evolve the way that you structure your organization when functions change and your workload scales.
 
 ## Adapt roles, skills, and processes
 

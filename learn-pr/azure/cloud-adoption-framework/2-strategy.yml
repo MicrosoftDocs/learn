@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework.strategy
 title: Strategy
 metadata:
   title: Strategy
-  description: "A high-level overview of the Strategy methodology in the Cloud Adoption Framework, including how to assess your strategy, determine motivations, and define your team."
+  description: "A high-level overview of the Strategy methodology in the Cloud Adoption Framework, including how to assess your strategy and determine motivations."
   ms.date: 02/06/2025
   author: Zimmergren
   ms.author: tozimmergren
