@@ -8,7 +8,7 @@ You can integrate your cloud-enabled software as service (SaaS) applications wit
  -  SuccessFactors
  -  Workday
 
-## Cloud Integrations
+## Cloud integrations
 
  -  Amazon Web Services (AWS) Console
  -  Alibaba Cloud (Role based SSO)

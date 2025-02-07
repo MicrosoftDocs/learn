@@ -12,7 +12,7 @@ Microsoft Entra Cloud Sync is a new offering from Microsoft designed to meet and
 
 With Microsoft Entra Cloud Sync, provisioning from AD to Microsoft Entra ID is orchestrated in Microsoft Online Services. An organization only needs to deploy, in their on-premises or IaaS-hosted environment, a light-weight agent that acts as a bridge between Microsoft Entra ID and AD. The provisioning configuration is stored in Microsoft Entra ID and managed as part of the service.
 
-## Comparison between Microsoft Entra Connect and cloud sync
+## Comparison between Microsoft Entra Connect and Cloud Sync
 
 The following table provides a comparison between Microsoft Entra Connect and Microsoft Entra Cloud Sync:
 

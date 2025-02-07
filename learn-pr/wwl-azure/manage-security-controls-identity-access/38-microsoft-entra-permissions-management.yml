@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-security-controls-identity-access.microsoft-entra-permissions-management
-title: Microsoft Entra Permissions Management
+title: Microsoft Entra permissions management
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Microsoft Entra Permissions Management
-  description: "Microsoft Entra Permissions Management"
+  title: Microsoft Entra permissions management
+  description: "Microsoft Entra permissions management"
   ms.date: 02/07/2025
   author: wwlpublish
   ms.author: serlingdavis

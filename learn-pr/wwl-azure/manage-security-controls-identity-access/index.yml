@@ -45,7 +45,7 @@ subjects:
 - cloud-security
 units:
 - learn.wwl.manage-security-controls-identity-access.introduction
-- learn.wwl.manage-security-controls-identity-access.identity-management-and-privileged-access
+- learn.wwl.manage-security-controls-identity-access.identity-management-privileged-access
 - learn.wwl.manage-security-controls-identity-access.microsoft-entra-id-overview
 - learn.wwl.manage-security-controls-identity-access.secure-microsoft-entra-users
 - learn.wwl.manage-security-controls-identity-access.create-new-user

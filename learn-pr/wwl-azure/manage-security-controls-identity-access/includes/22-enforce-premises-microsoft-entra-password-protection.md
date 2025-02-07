@@ -36,12 +36,12 @@ It's important to understand the underlying design and function concepts before 
 
 The on-premises Microsoft Entra Password Protection components work as follows:
 
-1.  Each Microsoft Entra Password Protection Proxy service instance advertises itself to the DCs in the forest by creating a serviceConnectionPoint object in Microsoft Entra ID. Each DC Agent service for Microsoft Entra Password Protection also creates a serviceConnectionPoint object in Microsoft Entra ID. This object is used primarily for reporting and diagnostics.
-2.  The DC Agent service is responsible for initiating the download of a new password policy from Microsoft Entra ID. The first step is to locate a Microsoft Entra Password Protection Proxy service by querying the forest for proxy serviceConnectionPoint objects.<br>
-3.  When an available proxy service is found, the DC Agent sends a password policy download request to the proxy service. The proxy service in turn sends the request to Microsoft Entra ID, then returns the response to the DC Agent service.<br>
-4.  After the DC Agent service receives a new password policy from Microsoft Entra ID, the service stores the policy in a dedicated folder at the root of its domain sysvol folder share. The DC Agent service also monitors this folder in case newer policies replicate in from other DC Agent services in the domain.<br>
-5.  The DC Agent service always requests a new policy at service startup. After the DC Agent service is started, it checks the age of the current locally available policy hourly. If the policy is older than one hour, the DC Agent requests a new policy from Microsoft Entra ID via the proxy service, as described previously. If the current policy isn't older than one hour, the DC Agent continues to use that policy.<br>
-6.  When password change events are received by a DC, the cached policy is used to determine if the new password is accepted or rejected.<br>
+ -  Each Microsoft Entra Password Protection Proxy service instance advertises itself to the DCs in the forest by creating a serviceConnectionPoint object in Microsoft Entra ID. Each DC Agent service for Microsoft Entra Password Protection also creates a serviceConnectionPoint object in Microsoft Entra ID. This object is used primarily for reporting and diagnostics.
+ -  The DC Agent service is responsible for initiating the download of a new password policy from Microsoft Entra ID. The first step is to locate a Microsoft Entra Password Protection Proxy service by querying the forest for proxy serviceConnectionPoint objects.<br>
+ -  When an available proxy service is found, the DC Agent sends a password policy download request to the proxy service. The proxy service in turn sends the request to Microsoft Entra ID, then returns the response to the DC Agent service.<br>
+ -  After the DC Agent service receives a new password policy from Microsoft Entra ID, the service stores the policy in a dedicated folder at the root of its domain sysvol folder share. The DC Agent service also monitors this folder in case newer policies replicate in from other DC Agent services in the domain.<br>
+ -  The DC Agent service always requests a new policy at service startup. After the DC Agent service is started, it checks the age of the current locally available policy hourly. If the policy is older than one hour, the DC Agent requests a new policy from Microsoft Entra ID via the proxy service, as described previously. If the current policy isn't older than one hour, the DC Agent continues to use that policy.<br>
+ -  When password change events are received by a DC, the cached policy is used to determine if the new password is accepted or rejected.<br>
 
 ## Key considerations and features
 

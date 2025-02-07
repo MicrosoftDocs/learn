@@ -151,9 +151,9 @@ Issue a new key: User can register the new FIDO2 key
 
 There are three types of passwordless sign-in deployments available with security keys:
 
-1.  Microsoft Entra web apps on a supported browser
-2.  Microsoft Entra joined Windows 10 devices
-3.  Microsoft Entra hybrid joined Windows 10 devices
+ -  Microsoft Entra web apps on a supported browser
+ -  Microsoft Entra joined Windows 10 devices
+ -  Microsoft Entra hybrid joined Windows 10 devices
     
     
      -  Provides access to both cloud-based and on premises resources. For more information about access to on-premises resources, see [SSO to on-premises resources using FIDO2 keys](/entra/identity/authentication/howto-authentication-passwordless-security-key-on-premises)

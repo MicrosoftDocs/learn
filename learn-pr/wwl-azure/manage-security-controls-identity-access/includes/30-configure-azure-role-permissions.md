@@ -13,7 +13,13 @@ You can change the name of the management group by using the portal, PowerShell,
 3.  Select the management group you would like to rename.
 4.  Select **details**.
 5.  Select the **Rename group** option at the top of the page.
+    
+    :::image type="content" source="../media/detail-action-small-4c3e9c4c-1825daba.png" alt-text="Screenshot showing the rename group control bar in the Azure portal.":::
+    
 6.  When the menu opens, enter the new name you would like to have displayed.
+    
+    :::image type="content" source="../media/rename-group-92580662-3e5588d4.png" alt-text="Screenshot showing the rename group menu tab in the Azure portal.":::
+    
 7.  Select **Save**.
 
 ### Change the name in PowerShell
