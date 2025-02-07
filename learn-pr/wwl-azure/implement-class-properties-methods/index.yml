@@ -56,7 +56,7 @@ units:
 - learn.wwl.implement-class-properties-methods.restrict-access-properties
 - learn.wwl.implement-class-properties-methods.create-class-methods
 - learn.wwl.implement-class-properties-methods.examine-extension-methods
-- learn.wwl.implement-class-properties-methods.exercise-create-class-properties-methods
+- learn.wwl.implement-class-properties-methods.exercise-create-properties-methods
 - learn.wwl.implement-class-properties-methods.knowledge-check
 - learn.wwl.implement-class-properties-methods.summary
 badge:
