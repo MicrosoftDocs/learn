@@ -73,7 +73,7 @@ public string FirstName
             ? value
             : throw new ArgumentException(nameof(value), "First name can't be whitespace or null"));
     }
-} = "Jane";
+} = "FirstName";
 
 ```
 
@@ -280,7 +280,7 @@ public class Program
 
         // List elements can't be modified by client code.
         // CS0272:
-        // list2[0].Name = "Eugene Zabokritski";
+        // list2[0].Name = "Person Six";
     }
 }
 
