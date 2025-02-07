@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-dedicated-hardware-security-module
+title: Recommend when to use a dedicated Hardware Security Module (HSM)
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Recommend when to use a dedicated Hardware Security Module (HSM)
+  description: "Recommend when to use a dedicated Hardware Security Module (HSM)"
+  ms.date: 02/07/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/12-azure-dedicated-hardware-security-module.md)]

@@ -3263,6 +3263,11 @@ achievements:
   title: Configure Azure Kubernetes Service
   summary: Learn how to configure Azure Kubernetes Service including networking, storage, and scaling.
   iconUrl: /training/achievements/azure-kubernetes-configure.svg
+- uid: learn.azure.cloud-adoption-framework-getting-started.badge
+  type: badge
+  title: Getting started with the Microsoft Cloud Adoption Framework for Azure
+  summary: The Microsoft Cloud Adoption Framework for Azure is a guide to the full lifecycle of cloud adoption. Along your organization's journey to the cloud, you encounter roadblocks that can be easily removed through common approaches that thousands of customers share.
+  iconUrl: /training/achievements/cloud-adoption-framework-getting-started.svg
 - uid: learn.data-ai.azure-for-the-data-engineer.trophy
   type: trophy
   title: Azure for the Data Engineer
@@ -5120,3 +5125,33 @@ achievements:
   title: Deploy SQL Server on Linux
   summary: Learn about the software and hardware prerequisites to run SQL Server on Linux and then discover the straightforward steps to install SQL Server on Linux. You will also learn additional tasks, such as installing command-line tools.
   iconUrl: /training/achievements/sqlserver/deploying-on-sql-server-on-linux.svg
+- uid: learn.language.vue-dynamic-rendering.badge
+  type: badge
+  title: Dynamic page displays with Vue.js
+  summary: One of the goals of any web framework is to update the display based on data values. This module explores how to make your page dynamic based on those values and how to display lists of information.
+  iconUrl: /training/achievements/vue-dynamic-rendering.svg
+- uid: learn.language.vue-get-started.badge
+  type: badge
+  title: Get started with Vue
+  summary: Vue.js is a progressive web framework that allows developers to get up and running quickly, with just the addition of a script tag. But Vue.js can also grow with you. You can use it to create large scalable applications. In this module, you'll explore the core concepts of Vue.js and how to get started.
+  iconUrl: /training/achievements/vue-get-started.svg
+- uid: learn.languages.vue-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Vue.js
+  summary: Vue.js is a progressive web framework allowing developers to get up and running quickly, with the addition of a `script` tag. However, Vue.js can also grow with you, and can be used to create large scalable applications.
+  iconUrl: /training/achievements/vue-first-steps.svg
+- uid: learn.language.vue-cli-components.badge
+  type: badge
+  title: Getting started with Vue CLI and single-file components in Vue.js.
+  summary: Although it's possible to create Vue.js applications by using purely JavaScript, most developers need more power and flexibility. By using Vue CLI and single-file components, you can use more robust tooling to enhance the development experience. We'll see how to use Vue CLI to bootstrap an application, and how to create reusable components in Vue.
+  iconUrl: /training/achievements/vue-cli-components.svg
+- uid: learn.language.vue-data-events.badge
+  type: badge
+  title: Work with data and events in Vue.js
+  summary: Dynamic web applications typically allow users to interact with the page and data. In this module, you'll see how to add forms to a Vue.js page and respond to user events. You'll also see how to add computed values that can be calculated based on updates to the data.
+  iconUrl: /training/achievements/vue-data-events.svg
+- uid: learn.introduction-to-visual-studio-code.badge
+  type: badge
+  title: Introduction to Visual Studio Code
+  summary: In this module, you learn how to assess whether Visual Studio Code is the right source code editor for you. We explore how Visual Studio Code can be used in different development situations, for example, web, C++, and data science. We also examine Visual Studio Code's features such as the editor, debugger, and source control. Finally, we walk you through decision criteria you can use to choose a code editor.
+  iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
