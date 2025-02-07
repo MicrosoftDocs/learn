@@ -1,8 +1,10 @@
+param location string = resourceGroup().location
+
 resource vnet 'Microsoft.Network/virtualNetworks@2024-05-01' = {
   name: 'vnet-001'
-  location: resourceGroup().location
+  location: location
   tags: {
-    'CostCenter': '12345'
+    CostCenter: '12345'
   }
   properties: {
     addressSpace: {

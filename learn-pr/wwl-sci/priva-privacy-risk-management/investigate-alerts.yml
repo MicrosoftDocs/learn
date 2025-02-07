@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-privacy-risk-management.investigate-alerts
+title: Investigate Privacy Risk Management alerts
+metadata:
+  title: Investigate Privacy Risk Management alerts
+  description: "Investigate Privacy Risk Management alerts"
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/investigate-alerts.md)]

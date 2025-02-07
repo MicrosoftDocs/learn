@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-tracker-scanning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your organization, a global e-commerce company, has expanded to new regions. Customers are voicing concerns about how their data is being tracked on your website. Which tool can help you automatically identify, categorize, and manage web trackers?"
+    choices:
+    - content: "Microsoft Purview Information Protection"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Purview Information Protection is designed for protecting sensitive information, not managing web trackers."
+    - content: "Microsoft Priva Tracker Scanning"
+      isCorrect: true
+      explanation: "Correct: Microsoft Priva Tracker Scanning helps organizations automatically detect, categorize, and manage web trackers to address privacy concerns."
+    - content: "Microsoft Defender for Cloud Apps"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Defender for Cloud Apps focuses on securing cloud applications, not managing web trackers."
+
+  - content: "Your organization needs to analyze trackers on a website to ensure compliance with privacy regulations. Which key feature of Microsoft Priva Tracker Scanning should you use?"
+    choices:
+    - content: "Automate tracker detection and categorization."
+      isCorrect: true
+      explanation: "Correct: Automated detection and categorization identify tracking technologies and organize them for compliance."
+    - content: "Monitor network activity for anomalies."
+      isCorrect: false
+      explanation: "Incorrect: Network activity monitoring isn't a feature of Microsoft Priva Tracker Scanning."
+    - content: "Identify phishing attempts on the website."
+      isCorrect: false
+      explanation: "Incorrect: Phishing detection is unrelated to managing web trackers."
+
+  - content: "Your organization needs to analyze trackers on a website to ensure compliance with privacy regulations. Which key feature of Microsoft Priva Tracker Scanning should you use?"
+    choices:
+    - content: "Run a compliance scan."
+      isCorrect: false
+      explanation: "Incorrect: Running a compliance scan is important but can't be done until websites are registered."
+    - content: "Register your websites."
+      isCorrect: true
+      explanation: "Correct: Registering your websites connects them to Microsoft Priva Tracker Scanning, allowing you to manage trackers."
+    - content: "Create tracker categories."
+      isCorrect: false
+      explanation: "Incorrect: Creating tracker categories is essential but comes after websites are registered."
+
+  - content: "Your organization has identified gaps in web tracking practices across your websites, leading to compliance risks. What is the first step to addressing these gaps using Microsoft Priva Tracker Scanning?"
+    choices:
+    - content: "Assign the category a unique tracker name."
+      isCorrect: false
+      explanation: "Incorrect: A unique tracker name isn't sufficient for categorizing essential trackers."
+    - content: "Mark the category as 'Essential.'"
+      isCorrect: true
+      explanation: "Correct: Marking the category as 'Essential' ensures these trackers are deployed regardless of user consent."
+    - content: "Limit the category to first-party cookies."
+      isCorrect: false
+      explanation: "Incorrect: Limiting the category to first-party cookies isn't required for essential trackers."
+
+  - content: "Your team has configured a compliance scan for a registered website. What should you do before initiating the scan?"
+    choices:
+    - content: "Export the scan results for review."
+      isCorrect: false
+      explanation: "Incorrect: Scan results can only be exported after the scan is complete."
+    - content: "Set a recurring schedule for the scan."
+      isCorrect: false
+      explanation: "Incorrect: Setting a recurring schedule is optional and can be done after verifying settings."
+    - content: "Verify scan settings, such as region and tracker types."
+      isCorrect: true
+      explanation: "Correct: Verifying scan settings ensures the scan is configured correctly and meets your organization's requirements."
