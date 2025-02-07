@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Run containerized tasks with restart policies
   description: "Run containerized tasks with restart policies"
-  ms.date: 07/24/2024
+  ms.date: 02/06/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
