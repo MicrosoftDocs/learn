@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-migrating-gcp-azure.investigate-iaas-features
-title: Investigate Infrastructure-as-a-Service features
+title: Investigate infrastructure-as-a-service features
 metadata:
-  title: Investigate Infrastructure-as-a-Service features
+  title: Investigate Infrastructure-as-a-Service Features
   description: "Learn about compute, networking, and storage services available in Microsoft Azure."
   ms.date: 01/16/2025
   author: carols
