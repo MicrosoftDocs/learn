@@ -1,87 +1,84 @@
-Web applications are widely used to handle real-world tasks such as inventory management, online forms, and customer-facing portals. In this module, you'll learn to create and deploy a simple Java web application using Apache Tomcat, a popular open-source server.
+Web applications are widely used to handle real-world tasks such as inventory management, online forms, and customer-facing portals. In this module, you learn to create and deploy a simple Java web application using Apache Tomcat, a popular open-source server.
 
-Suppose you're a developer working on a project to build a dynamic web application where users can enter data and interact with your platform in real time. Your client wants this app to be available locally for testing, as well as on the cloud for easy access. This setup lets you test on your local machine first, then deploy to a live environment as a seamless transition. Building this setup from scratch gives you flexibility for future updates and configurations.
+Suppose you're a developer working on a project to build a dynamic web application where users can enter data and interact with your platform in real time. Your client wants this app to be available locally for testing, as well as on the cloud for easy access. This setup lets you test on your local machine first, and then deploy to a live environment as a seamless transition. Building this setup from scratch gives you flexibility for future updates and configurations.
 
-In this module, you’ll explore the essential steps for building and deploying a Java web app with Tomcat. You’ll have two options: either clone an existing project from Azure Samples for immediate deployment or build a new project from scratch with Maven. Topics include setting up your Maven project, configuring Tomcat, deploying the app locally, and using tools like Maven to manage dependencies and packages.
+In this module, you explore the essential steps for building and deploying a Java web app with Tomcat. You have two options: either clone an existing project from Azure Samples for immediate deployment, or build a new project from scratch with Maven. Topics in this module include setting up your Maven project, configuring Tomcat, deploying the app locally, and using tools like Maven to manage dependencies and packages.
 
-By the end of this module, you’ll be able to create and deploy Java-based web applications on Tomcat, preparing you to support web application deployment both locally and in cloud-hosted environments.
+By the end of this module, you can create and deploy Java-based web applications on Tomcat, preparing you to support web application deployment both locally and in cloud-hosted environments.
 
-## Create a simple Java Tomcat web app 
+## Create a simple Java Tomcat web app
 
-In this exercise, we'll create a minimal Java web application that will take an input and display the result on the screen. We will then deploy it locally on our conputer using Tomcat.
-You have two options in this module 
-1. **Option 1:** Clone the Repo from Azure Samples and Directly Jump to Deploying Your Web App 
-2. **Option 2:** Create a Maven Tomcat Project from Scratch 
+In this exercise, you create a minimal Java web application that takes an input and displays the result on the screen. You then deploy the web app locally on your computer using Tomcat. You have the following two options:
 
-## Option 1: Clone the Repo from Azure samples and directly jump to deploying your web app 
+1. Option 1: Clone the repo from Azure samples and immediately deploy your web app.
+2. Option 2: Create a Maven Tomcat project from scratch.
 
-### Clone Project Repo from Azure Samples 
-Within your directory of choice clone the sample project repo: 
+### Option 1: Clone the repo from Azure samples and immediately deploy your web ap
+
+First, clone the sample project repo by using the following command:
 
 ```bash
 git clone https://github.com/MicrosoftDocs/simple-tomcat-maven-app.git
 ```
 
-Now navigate to inside the cloned project repo:
+Now navigate to inside the cloned project repo by using the following command:
 
 ```bash
 cd simple-tomcat-app
 ```
-### Deploy locally to Tomcat: configure local Tomcat server
+
+Use the following steps to configure your local Tomcat server so you can deploy locally to Tomcat:
+
 > [!WARNING]
-> Storing usernames and passwords directly in configuration files like tomcat-users.xml and Maven's settings.xml in plaintext is not considered secure and is generally not recommended, especially for production environments. However, as this is just a learn module, other alternatives are outside the scope of this module. Do not use your real username and password!
+> Storing usernames and passwords directly in configuration files like **tomcat-users.xml** and Maven's **settings.xml** in plaintext is not considered secure, and we generally do not recommend this practice - especially for production environments. However, as this is just a Learn module, other alternatives are outside the scope of this module. Do not use your real username and password!
 
-Edit the Tomcat configuration file `conf/tomcat-users.xml`:
+1. Edit the Tomcat configuration file **conf/tomcat-users.xml**:
 
-```xml
-<tomcat-users>
-    <user username="your-tomcat-username" password="your-tomcat-password" roles="manager-script"/>
-</tomcat-users>
-```
+    ```xml
+    <tomcat-users>
+        <user username="your-tomcat-username" password="your-tomcat-password" roles="manager-script"/>
+    </tomcat-users>
+    ```
 
-Add your credentials to Maven's `settings.xml` in `~/.m2/settings.xml`:
+1. Add your credentials to the Maven **~/.m2/settings.xml** file by using the following code example, where you replace `your-tomcat-username` with a username and `your-tomcat-password`with a password.
 
-```xml
-<servers>
-    <server>
-        <id>TomcatServer</id>
-        <username>your-tomcat-username</username>
-        <password>your-tomcat-password</password>
-    </server>
-</servers>
-```
-Replace `your-tomcat-username` with a username and `your-tomcat-password`with a password. 
+    ```xml
+    <servers>
+        <server>
+            <id>TomcatServer</id>
+            <username>your-tomcat-username</username>
+            <password>your-tomcat-password</password>
+        </server>
+    </servers>
+    ```
 
+1. Finally, use the following command to package and deploy your web app:
 
-### Deploy your web app to Tomcat 
-Run the following command to package and deploy your web app: 
+    ```bash
+    mvn clean package cargo:deploy
+    ```
 
-```bash
-mvn clean package cargo:deploy
-```
+Success! Access your app at `http://localhost:8080/simple-tomcat-app`.
 
-Success! Your app will be available at `http://localhost:8080/simple-tomcat-app`.
+## Option 2: Create a Maven Tomcat project from scratch
 
-
- 
-## Option 2: Create a Maven Tomcat project from scratch 
-
+To create a Maven Tomcat project from scratch, you work through multiple procedures, starting from creating the Maven project, and ending with deploying your web app to Tomcat.
 
 ### Create a Maven project
 
-Execute the following Maven archetype command. This command will create a Maven project for your Java web application.
+Execute the following Maven archetype command, which creates a Maven project for your Java web application:
 
-   ```bash
-   mvn archetype:generate\
-    -DgroupId=com.example\
-    -DartifactId=simple-tomcat-app\
-    -DarchetypeArtifactId=maven-archetype-webapp\
-    -DinteractiveMode=false
-   ```
+```bash
+mvn archetype:generate\
+ -DgroupId=com.example\
+ -DartifactId=simple-tomcat-app\
+ -DarchetypeArtifactId=maven-archetype-webapp\
+ -DinteractiveMode=false
+```
 
-You'll see the following output:
+The command produces the following output:
 
-   ```text
+```text
 [INFO] ----------------------------------------------------------------------------
 [INFO] Parameter: basedir, Value: /home/XXXXXXXX/LearnProjects/simple-tomcat-maven-app
 [INFO] Parameter: package, Value: com.microsoft.azure.samples
@@ -96,12 +93,11 @@ You'll see the following output:
 [INFO] Total time:  1.657 s
 [INFO] Finished at: 2024-10-18T12:39:41-07:00
 [INFO] ------------------------------------------------------------------------
-   ```
+```
 
-This creates a new Maven web project in a folder named `simple-tomcat-app`.
-The following files and directories are now available.
+You now have a new Maven web project in a folder named **simple-tomcat-app**. The following files and directories are now available:
 
-   ```xml
+```output
 └── simple-tomcat-app
     ├── pom.xml
     └── src
@@ -115,56 +111,59 @@ The following files and directories are now available.
         └── test
             ├── java
             └── resources
-
-   ```
+```
 
 ### Modify the Maven pom.xml file
-   Open the `pom.xml` file and make the following updates:
 
-   Set the Java version to 21.
-  ```xml
-       <java.version>21</java.version>
-       <maven.compiler.source>21</maven.compiler.source>
-       <maven.compiler.target>21</maven.compiler.target>
-  ```
-  Add Tomcat and Azure deployment plugins.
-  ```xml
-         <!-- Tomcat 10 Maven Plugin -->
-     <plugin>
-      <groupId>org.codehaus.cargo</groupId>
-      <artifactId>cargo-maven3-plugin</artifactId>
-      <version>1.9.9</version>
-      <configuration>
-        <!-- Container Configuration -->
-        <container>
-          <containerId>tomcat10x</containerId>
-          <type>remote</type>
-        </container>
-        <!-- Configuration for Remote Deployment -->
+Open the **pom.xml** file and modify it by using the following steps:
+
+1. Set the Java version to 21 by using the following code example:
+
+    ```xml
+    <java.version>21</java.version>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+    ```
+
+1. Add Tomcat and Azure deployment plugins by using the following code example:
+
+    ```xml
+           <!-- Tomcat 10 Maven Plugin -->
+       <plugin>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven3-plugin</artifactId>
+        <version>1.9.9</version>
         <configuration>
-          <type>runtime</type>
-          <properties>
-            <cargo.remote.uri>http://localhost:8080/manager/text</cargo.remote.uri>
-            <cargo.remote.username>cargo</cargo.remote.username>
-            <cargo.remote.password>your-cargo-password</cargo.remote.password>
-          </properties>
-        </configuration>
-        <!-- Deployable Artifact Configuration -->
-        <deployables>
-          <deployable>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>${project.artifactId}</artifactId>
-            <type>war</type>
+          <!-- Container Configuration -->
+          <container>
+            <containerId>tomcat10x</containerId>
+            <type>remote</type>
+          </container>
+          <!-- Configuration for Remote Deployment -->
+          <configuration>
+            <type>runtime</type>
             <properties>
-              <context>${project.artifactId}</context>
+              <cargo.remote.uri>http://localhost:8080/manager/text</cargo.remote.uri>
+              <cargo.remote.username>cargo</cargo.remote.username>
+              <cargo.remote.password>your-cargo-password</cargo.remote.password>
             </properties>
-          </deployable>
-        </deployables>
-      </configuration>
-    </plugin>
-  ```
+          </configuration>
+          <!-- Deployable Artifact Configuration -->
+          <deployables>
+            <deployable>
+              <groupId>${project.groupId}</groupId>
+              <artifactId>${project.artifactId}</artifactId>
+              <type>war</type>
+              <properties>
+                <context>${project.artifactId}</context>
+              </properties>
+            </deployable>
+          </deployables>
+        </configuration>
+      </plugin>
+    ```
 
-   Here’s the full content of the `pom.xml`:
+   Here's the full content of the **pom.xml** file:
 
    ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -239,7 +238,7 @@ The following files and directories are now available.
     </plugins>
   </build>
 </project>
-   ```
+    ```
 
 ### Create a simple web interface 
 Edit `index.jsp` in the `src/main/webapp/index.jsp` directory to add a simple web page.
