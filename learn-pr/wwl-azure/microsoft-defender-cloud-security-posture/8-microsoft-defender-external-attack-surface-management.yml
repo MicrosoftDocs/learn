@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement and use Microsoft Defender External Attack Surface Management
   description: "Implement and use Microsoft Defender External Attack Surface Management"
-  ms.date: 02/07/2025
+  ms.date: 02/08/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
