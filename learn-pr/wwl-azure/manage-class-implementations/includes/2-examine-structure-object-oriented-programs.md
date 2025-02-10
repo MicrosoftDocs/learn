@@ -50,7 +50,7 @@ Abstraction: Encapsulation supports the concept of abstraction by exposing only 
 Users of the object don't need to know the internal implementation, which reduces code complexity and improves readability.
 
 > [!NOTE]
-> Encapsulation is about hiding the data members that users of a class don't need. Data members are encapsulated, or hidden, using the `private' accessor keyword. Access to hidden field variables is controlled using properties and methods. Hidden data members aren't directly accessible.
+> Encapsulation is about hiding the data members that users of a class don't need. Data members are encapsulated, or hidden, using the `private` accessor keyword. Access to hidden field variables is controlled using properties and methods. Hidden data members aren't directly accessible.
 
 ```csharp
 
