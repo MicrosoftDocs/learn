@@ -1,0 +1,80 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-properties-methods.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/10/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a property?"
+    choices:
+    - content: "A property refers to the connectivity between two objects."
+      isCorrect: false
+      explanation: "Incorrect. A property does not refer to the connectivity between two objects."
+    - content: "It's a piece of land or real estate."
+      isCorrect: false
+      explanation: "Incorrect. While the noun property can be defined this way, it isn't how the term is used in computer programming."
+    - content: "A property is a class member that provides a mechanism to read, write, or compute the values of a field."
+      isCorrect: true
+      explanation: "Correct. A property allows for the getting, setting, and computing the values of a field."
+  - content: "How are return values returned from a method?"
+    choices:
+    - content: "With a goto statement."
+      isCorrect: false
+      explanation: "Incorrect. A goto statement doesn't exist in C#."
+    - content: "With a using statement."
+      isCorrect: false
+      explanation: "Incorrect. Using statements aren't used for returning a value from a method."
+    - content: "With a return statement."
+      isCorrect: true
+      explanation: "Correct. You use a return statement to return a value from a method."
+  - content: "What is the purpose of the 'get' accessor in a class property?"
+    choices:
+    - content: "It assigns a value to the property."
+      isCorrect: false
+      explanation: "Incorrect. The 'get' accessor does not assign a value to the property, it retrieves the value of the property."
+    - content: "It validates data before allowing a change."
+      isCorrect: false
+      explanation: "Incorrect. While properties can be used to validate data, this isn't the specific role of the 'get' accessor. The 'get' accessor is used to retrieve the value of the property."
+    - content: "It retrieves the value of the property."
+      isCorrect: true
+      explanation: "Correct. The 'get' accessor is used to retrieve the value of the property."
+  - content: "What is the purpose of automatically implemented properties in C#?"
+    choices:
+    - content: "They allow direct access to private fields of a class."
+      isCorrect: false
+      explanation: "Incorrect. Automatically implemented properties do not allow direct access to private fields. They create a private, anonymous backing field that can only be accessed through the property's `get` and `set` accessors."
+    - content: "They make property-declaration more concise when no other logic is required in the property accessors."
+      isCorrect: true
+      explanation: "Correct. Automatically implemented properties simplify the declaration of properties when no other logic is needed in the `get` and `set` accessors."
+    - content: "They enable the creation of mutable classes only."
+      isCorrect: false
+      explanation: "Incorrect. Automatically implemented properties can be used in both mutable and immutable classes. The mutability depends on how the accessors are defined."
+  - content: "What is the purpose of using access modifiers in a class?"
+    choices:
+    - content: "To specify how accessible each of its members is to code outside of the class and limit the potential for coding errors or malicious exploits."
+      isCorrect: true
+      explanation: "Correct. Access modifiers are used to specify the accessibility of class members and to limit the potential for coding errors or malicious exploits."
+    - content: "To make all methods and properties accessible only by code in the same class or a derived class."
+      isCorrect: false
+      explanation: "Incorrect. Not all methods and properties are meant to be accessed only by code in the same class or a derived class. Some are meant to be accessed from outside the class."
+    - content: "To allow all methods and variables to be accessed from outside of the class or assembly."
+      isCorrect: false
+      explanation: "Incorrect. Access modifiers are used to limit the accessibility of methods and variables, not to allow all of them to be accessed from outside."
+  - content: "What is the priority of extension methods compared to instance methods during compile time?"
+    choices:
+    - content: "Instance methods have higher priority than extension methods."
+      isCorrect: true
+      explanation: "Correct. If a type has an instance method and an extension method with the same signature, the compiler will bind to the instance method."
+    - content: "Extension methods and instance methods have equal priority."
+      isCorrect: false
+      explanation: "Incorrect. Instance methods are prioritized over extension methods during compile time."
+    - content: "Extension methods have higher priority than instance methods."
+      isCorrect: false
+      explanation: "Incorrect. During compile time, instance methods always have higher priority than extension methods."
