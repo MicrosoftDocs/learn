@@ -33,7 +33,7 @@ dotnet add package Azure.AI.Projects --prerelease
 
 The first task in most Azure AI Foundry SDK code is to connect to an Azure AI Foundry project. Each project has a unique *connection string*, which you can find on the project's **Overview** page in the Azure AI Foundry portal.
 
-[ ![Screenshot of the project overview page in Azure AI Foundry portal.](../media/ai-project-overview.png) ](../media/ai-project-overview-expanded.png)
+[ ![Screenshot of the project overview page in Azure AI Foundry portal.](../media/ai-project-overview.png) ](../media/ai-project-overview.png#lightbox)
 
 You can use that connection string in your code to create an **AIProjectClient** object, which provides a programmatic proxy for the project.
 

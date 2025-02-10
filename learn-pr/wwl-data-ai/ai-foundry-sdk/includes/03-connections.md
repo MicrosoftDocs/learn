@@ -1,6 +1,6 @@
 Each Azure AI Foundry project includes **connected resources**, which are defined both at the *hub* and *project* level. Each resource is a *connection* to an external service, such as Azure AI services, Azure storage, Azure AI search, and others.
 
-[ ![Screenshot of the connected resources page in Azure AI Foundry portal.](../media/ai-project-connections.png) ](../media/ai-project-connections-expanded.png)
+[ ![Screenshot of the connected resources page in Azure AI Foundry portal.](../media/ai-project-connections.png) ](../media/ai-project-connections.png#lightbox)
 
 With the Azure AI Foundry SDK, you can connect to a project and retrieve connections; which you can then use to consume the connected services.
 
