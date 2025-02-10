@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Explore Azure App Service
   description: "Learn about the key components of Azure App Service and how App Service can help you create, maintain, and deploy web apps more efficiently."
-  ms.date: 09/30/2024
+  ms.date: 02/10/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module-standard-task-based
@@ -13,7 +13,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure-app-service
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Explore Azure App Service
 summary: Learn about the key components of Azure App Service and how App Service can help you create, maintain, and deploy web apps more efficiently.
 abstract: |
