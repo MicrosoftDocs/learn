@@ -17,7 +17,7 @@ Automated control monitoring for AWS in Microsoft Defender for Cloud: You can us
 
 Example: Microsoft Defender for Cloud - Regulatory compliance dashboard
 
-:::image type="content" source="../media/new-regulatory-dahaboard-network-security-view-722c2d1b-c6bddeae.png" alt-text="Screenshot showing how the Microsoft cloud security benchmark provides prescriptive best practices and recommendations.":::
+:::image type="content" source="../media/new-regulatory-dashboard-network-security-view-722c2d1b-96348f18.png" alt-text="Screenshot showing how the Microsoft cloud security benchmark provides prescriptive best practices and recommendations.":::
 
 
 Azure guidance and security principles: Azure security guidance, security principles, features, and capabilities.
