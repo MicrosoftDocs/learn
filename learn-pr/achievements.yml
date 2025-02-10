@@ -5120,6 +5120,11 @@ achievements:
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
   iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn.intro-to-azure-sql-edge.badge
+  type: badge
+  title: Introduction to Azure SQL Edge
+  summary: Describe how Azure SQL Edge enables developers to use the same Transact-SQL (T-SQL) API to develop apps for the edge. Evaluate whether Azure SQL Edge provides the same security and performance as Microsoft SQL Server.
+  iconUrl: /training/achievements/generic-badge.svg
 - uid: learn-sqlserver.deploying-sql-server-linux.badge
   type: badge
   title: Deploy SQL Server on Linux
