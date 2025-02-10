@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.wwl.manage-class-implementations
+metadata:
+  title: Manage Class Implementations
+  description: "Learn how to implement classes using advanced techniques like static classes, partial classes, and object initializers that can improve the readability, maintainability, and organization of your code."
+  ms.date: 02/10/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: dotnet
+  ai-usage: human-only
+title: Manage class implementations
+summary: Learn how to implement classes using specialized techniques like static classes, partial classes, and object initializers that can improve the readability, maintainability, and organization of your code.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Describe the differences between structured and object-oriented programs, the benefits of encapsulation, and the lifecycle of a class.
+
+  -   Restrict access to classes and members using private, static, and nested classes.
+
+  -   Improve code organization and maintainability using partial classes.
+
+  -   Improve code readability and maintainability using methods that implement named and optional arguments.
+
+  -   Improve code efficiency and readability using object initializers and copy constructors.
+
+  -   Explain the purpose of a class finalizer and the relationship between a finalizer and the garbage collector in .NET.
+prerequisites: |
+  -   The ability to&nbsp;create classes and class constructors to instantiate objects in a C# app.
+
+  -   The ability to&nbsp;implement class properties using&nbsp;property accessors and access modifiers and methods or extension methods that support overloading.
+
+  -   The ability to develop C# console apps that implement business logic using iteration statements, selection statements, and custom methods.
+
+  -   The ability to perform basic C# code debugging and exception handling in a Visual Studio Code environment.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- vs-code
+subjects:
+- app-development
+- custom-app-development
+units:
+- learn.wwl.manage-class-implementations.introduction
+- learn.wwl.manage-class-implementations.examine-structure-object-oriented-programs
+- learn.wwl.manage-class-implementations.implement-private-static-nested-classes
+- learn.wwl.manage-class-implementations.implement-partial-classes
+- learn.wwl.manage-class-implementations.specify-named-optional-method-arguments
+- learn.wwl.manage-class-implementations.instantiate-objects-initializers-copy-constructor
+- learn.wwl.manage-class-implementations.examine-class-finalizers
+- learn.wwl.manage-class-implementations.exercise-update-class-structures
+- learn.wwl.manage-class-implementations.knowledge-check
+- learn.wwl.manage-class-implementations.summary
+badge:
+  uid: learn.wwl.manage-class-implementations.badge
