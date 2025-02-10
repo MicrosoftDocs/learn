@@ -3,7 +3,7 @@ uid: learn.wwl.implement-class-properties-methods
 metadata:
   title: Implement Class Properties and Methods
   description: "Learn how to implement read-write, read-only, and write-only class properties using property accessors and access modifiers, and how to implement methods and extension methods for a class."
-  ms.date: 02/07/2025
+  ms.date: 02/10/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
