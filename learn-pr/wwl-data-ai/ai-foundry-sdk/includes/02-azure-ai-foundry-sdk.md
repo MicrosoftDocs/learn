@@ -3,7 +3,7 @@ The Azure AI Foundry SDK is a set of packages and services designed to work toge
 The SDK provides Python and Microsoft C# .NET libraries that you can use to build AI applications based on Azure AI Foundry projects.
 
 > [!NOTE]
-> In the preview release of the SDK, some capabilities may not be available both languages.
+> In the preview release of the SDK, some capabilities may not be available for both languages.
 
 ## Installing SDK packages
 
@@ -33,7 +33,7 @@ dotnet add package Azure.AI.Projects --prerelease
 
 The first task in most Azure AI Foundry SDK code is to connect to an Azure AI Foundry project. Each project has a unique *connection string*, which you can find on the project's **Overview** page in the Azure AI Foundry portal.
 
-![Screenshot of the project overview page in Azure AI Foundry portal.](../media/ai-project-overview.png)
+[ ![Screenshot of the project overview page in Azure AI Foundry portal.](../media/ai-project-overview.png) ](../media/ai-project-overview-expanded.png)
 
 You can use that connection string in your code to create an **AIProjectClient** object, which provides a programmatic proxy for the project.
 
