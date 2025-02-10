@@ -5120,6 +5120,11 @@ achievements:
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
   iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn-sqlserver.deploying-sql-server-linux.badge
+  type: badge
+  title: Deploy SQL Server on Linux
+  summary: Learn about the software and hardware prerequisites to run SQL Server on Linux and then discover the straightforward steps to install SQL Server on Linux. You will also learn additional tasks, such as installing command-line tools.
+  iconUrl: /training/achievements/sqlserver/deploying-on-sql-server-on-linux.svg
 - uid: learn.language.vue-dynamic-rendering.badge
   type: badge
   title: Dynamic page displays with Vue.js

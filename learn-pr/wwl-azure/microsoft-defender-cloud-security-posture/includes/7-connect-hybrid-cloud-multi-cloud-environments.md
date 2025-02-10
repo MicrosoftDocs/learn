@@ -7,6 +7,8 @@ Microsoft Defender for Cloud can monitor the security posture of your non-Azure 
 You can connect your non-Azure computers in any of the following ways:
 
  -  Onboarding with Azure Arc:
+    
+    
      -  By using Azure Arc-enabled servers (recommended)
      -  By using the Azure portal
  -  Onboarding directly with Microsoft Defender for Endpoint

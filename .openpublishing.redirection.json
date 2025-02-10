@@ -42314,6 +42314,66 @@
        "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/sqlserver/deploy-sql-server-linux/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com//training/modules/introduction-sql-server-linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/deploy-sql-server-linux/2-deploy-sql-server-ubuntu.yml",
+      "redirect_url": "https://learn.microsoft.com//training/modules/introduction-sql-server-linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/deploy-sql-server-linux/3-exercise-install-sql-server-ubuntu.yml",
+      "redirect_url": "https://learn.microsoft.com//training/modules/introduction-sql-server-linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/deploy-sql-server-linux/4-deploy-sql-server-suse.yml",
+      "redirect_url": "https://learn.microsoft.com//training/modules/introduction-sql-server-linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/deploy-sql-server-linux/5-exercise-install-sql-server-suse.yml",
+      "redirect_url": "https://learn.microsoft.com//training/modules/introduction-sql-server-linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/deploy-sql-server-linux/6-deploy-sql-server-redhat.yml",
+      "redirect_url": "https://learn.microsoft.com//training/modules/introduction-sql-server-linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/deploy-sql-server-linux/7-exercise-install-sql-server-redhat.yml",
+      "redirect_url": "https://learn.microsoft.com//training/modules/introduction-sql-server-linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/deploy-sql-server-linux/8-deploy-sql-server-container.yml",
+      "redirect_url": "https://learn.microsoft.com//training/modules/introduction-sql-server-linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/deploy-sql-server-linux/9-exercise-install-sql-server-container.yml",
+      "redirect_url": "https://learn.microsoft.com//training/modules/introduction-sql-server-linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/deploy-sql-server-linux/10-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com//training/modules/introduction-sql-server-linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/deploy-sql-server-linux/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com//training/modules/introduction-sql-server-linux/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/deploy-sql-server-linux/index.yml",
+      "redirect_url": "https://learn.microsoft.com//training/modules/introduction-sql-server-linux/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/vs-code/introduction-to-visual-studio-code/1-introduction.yml",
       "redirect_url": "https://code.visualstudio.com/",
       "redirect_document_id": false
