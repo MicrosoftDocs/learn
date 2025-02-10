@@ -32,7 +32,7 @@ Defender EASM provides a series of dashboards that help users quickly understand
 
 Customers can filter their inventory to surface the specific insights they care about most. Filtering offers a level of flexibility and customization that enables users to access a specific subset of assets. This allows you to leverage Defender EASM data according to your specific use case, whether searching for assets that connect to deprecating infrastructure or identifying new cloud resources.
 
-:::image type="content" source="../media/new-assest-management-9f38538e-4d4edc1a.png" alt-text="Screenshot showing the Microsoft Defender External Attack Surface Management inventory page.":::
+:::image type="content" source="../media/new-assest-management-9f38538e.png" alt-text="Screenshot showing the Microsoft Defender External Attack Surface Management inventory page.":::
 
 
 ## User permissions
