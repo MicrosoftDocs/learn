@@ -4,11 +4,11 @@ A method is a code block that contains a series of statements. A program causes 
 
 Methods are declared in a class, record, or struct by specifying:
 
-1. An optional access level, such as `public` or `private`. The default is `private`.
-1. Optional modifiers such as `abstract` or `sealed`.
-1. The return value, or `void` if the method has none.
-1. The method name.
-1. Any method parameters. Method parameters are enclosed in parentheses and are separated by commas. Empty parentheses indicate that the method requires no parameters.
+- An optional access level, such as `public` or `private`. The default is `private`.
+- Optional modifiers such as `abstract` or `sealed`.
+- The return value, or `void` if the method has none.
+- The method name.
+- Any method parameters. Method parameters are enclosed in parentheses and are separated by commas. Empty parentheses indicate that the method requires no parameters.
 
 These parts work together to form the method signature.
 
