@@ -25,7 +25,8 @@ roles:
   - developer
 products:
   - azure
-subjects: app-development
+subjects: 
+  - app-development
 prerequisites: |
   - Your own Azure subscription
   - The [Azure CLI](/cli/azure/install-azure-cli) installed on your computer
