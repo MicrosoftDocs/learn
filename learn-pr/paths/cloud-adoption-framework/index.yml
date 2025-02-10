@@ -40,7 +40,6 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn.azure.cloud-adoption-framework-getting-started
 - learn.cloud-adoption-framework-strategy
 - learn.azure.cloud-adoption-framework-plan
 - learn.azure.cloud-adoption-framework-ready

@@ -1,6 +1,21 @@
-In earlier Microsoft Learn modules for the Cloud Adoption Framework, we shared the narrative of Tailwind Traders. This module is the first step toward Tailwind's cloud adoption journey. The Tailwind team is evaluating its strategic direction and ensuring stakeholder buy-in before committing to a cloud effort.
+:::image type="content" source="../media/logo.png" alt-text="The Tailwind Traders logo." border="false":::
 
-The following excerpts from the customer narrative outline strategic objectives for Tailwind Traders.
+Tailwind Traders is a modern commerce company. For more than 30 years, the company has been a popular retail destination. It has grown to more than 50 physical stores. Several years ago, its Chief Executive Officer (CEO) anticipated changes in retail and bought a competing e-commerce startup that was growing aggressively in niche markets. Today, the company is seen as an innovative leader with customer-focused local storefronts.
+
+This module is the first step toward Tailwind's cloud adoption journey. The Tailwind team is evaluating its strategic direction and ensuring stakeholder buy-in before committing to a cloud effort.
+
+## Team
+
+- **CIO:** This transformation is the first major effort to start since the new CIO accepted the role. The CIO plans to closely monitor the project and examine how IT operates in the cloud.
+
+- **CTO:** IT assets are hosted in the smaller of the two external datacenters, including the experiments that the retail innovations team is developing. That datacenter also hosts innovations that are now considered mainstream production IT assets. The CTO wants to ensure that the company continues to innovate and that the existing innovations are properly supported.
+- **Project managers:** Part of the IT department, project managers help to keep projects on time and on budget. They ensure that all the right stakeholders are involved.
+- **Central operations or infrastructure team:** The operations team is currently in charge of the datacenters. This team oversees areas like hardware maintenance, operating systems, patch management, networking, and out-of-hours support. Most team members are familiar with the current infrastructure, but have little coding experience. The majority holds Microsoft qualifications related to Windows Server.
+- **Developer:** The in-house development team makes the website for the online store that Tailwind Traders hosts from its own datacenter.
+- **IT manager:** The IT manager is in charge of the operations, developer, and project-management teams. This manager wants to make the IT department run better, replace old servers, and make Tailwind Traders more competitive. Another goal is to make things better for the operations team, which juggles many different systems.
+- **Finance director:** The finance director wants to reduce costs from the budget where possible. This director is familiar with the capital expenditure for the IT department and equipment.
+
+The following sections outline strategic objectives for Tailwind Traders.
 
 ## Innovation objectives
 
