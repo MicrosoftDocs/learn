@@ -42,7 +42,7 @@ Next, authorize the Azure Database for PostgreSQL flexible server's `azure_ai` e
 select azure_ai.set_setting('azure_cognitive.endpoint','https://<endpoint>.cognitiveservices.azure.com');
 select azure_ai.set_setting('azure_cognitive.subscription_key', '<API Key>');
 -- the region setting is only required for the translate function
-select azure_ai.set_setting('azure_cognitive.region', '<API Key>');
+select azure_ai.set_setting('azure_cognitive.region', '');
 ```
 
 More information is available in the [Azure Cognitive Services documentation](/azure/postgresql/flexible-server/generative-ai-azure-cognitive#configure-azure_ai-extension-with-azure-cognitive-services).

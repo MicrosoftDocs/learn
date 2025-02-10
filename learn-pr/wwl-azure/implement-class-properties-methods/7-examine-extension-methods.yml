@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-properties-methods.examine-extension-methods
+title: Implement extension methods for a class
+metadata:
+  title: Implement extension methods for a class
+  description: "Implement extension methods for a class"
+  ms.date: 02/10/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-examine-extension-methods.md)]
