@@ -1,6 +1,6 @@
 Relational databases enforce strict relationships between data rows in different tables and a static schema. NoSQL databases are less strict, but they can store data more efficiently and are more effective for some applications. Data warehouses are amalgamations of databases from throughout your organization that can provide deep insights and support. Both Azure and Google Cloud provide options for all these data stores and more.
 
-In the the scenario of the global cycling retailer, you have customer data stored in Google Cloud, Spanner, and Bigtable. The customer data is sensitive because it stores personal details, including addresses and credit card information. You're assessing whether to migrate the data into your recently acquired competitor's customer relationship management (CRM) system. This CRM system uses Azure Cosmos DB for storage. You need to understand the features of Azure database services.
+In the scenario of the global cycling retailer, you have customer data stored in Google Cloud, Spanner, and Bigtable. The customer data is sensitive because it stores personal details, including addresses and credit card information. You're assessing whether to migrate the data into your recently acquired competitor's customer relationship management (CRM) system. This CRM system uses Azure Cosmos DB for storage. You need to understand the features of Azure database services.
 
 In this unit, let's explore how Azure data services map to similar ones in Google Cloud.
 
