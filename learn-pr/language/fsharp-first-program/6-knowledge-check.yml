@@ -5,9 +5,8 @@ metadata:
   title: Knowledge check
   description: Review your knowledge of how to build F# programs.
   ms.date: 02/24/2023
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4

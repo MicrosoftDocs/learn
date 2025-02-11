@@ -5,9 +5,8 @@ metadata:
   title: Knowledge check
   description: Four multiple-choice questions
   ms.date: 03/03/2023
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4
