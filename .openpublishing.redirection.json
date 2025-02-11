@@ -42982,6 +42982,96 @@
       "source_path": "learn-pr/language/typescript-get-started/index.yml",
       "redirect_url": "https://www.typescriptlang.org/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/1-introduction.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/2-organize-code-namespaces.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/3-exercise-single-file-namespace.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/4-multi-file-namespaces.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/5-design-considerations.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/6-lab.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/7-knowledge-check.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/8-summary-resources.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-namespaces-organize-code/index.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-work-external-libraries/1-introduction.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-work-external-libraries/2-organize-code-with-modules.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-work-external-libraries/3-exercise-export-import-module-components.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-work-external-libraries/4-exercise-compile-modules.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-work-external-libraries/5-exercise-access-external-type-libraries.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-work-external-libraries/6-lab.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-work-external-libraries/7-knowledge-check.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-work-external-libraries/8-summary-resources.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-work-external-libraries/index.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
     }
   ]
 }

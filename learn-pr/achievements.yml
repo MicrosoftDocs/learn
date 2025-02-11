@@ -5120,6 +5120,16 @@ achievements:
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
   iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn.language.typescript-namespaces-organize-code.badge
+  type: badge
+  title: Organize code using TypeScript namespaces
+  summary: TypeScript provides two ways to organize code - namespaces and modules. This module explains how to organize TypeScript code using namespaces.
+  iconUrl: /training/achievements/typescript/typescript-namespaces-organize-code.svg
+- uid: learn.language.typescript-work-external-libraries.badge
+  type: badge
+  title: Access external libraries from TypeScript
+  summary: TypeScript provides two ways to organize your code, namespaces and modules. This module introduces you to modules in TypeScript (referred to as external modules in previous versions.)
+  iconUrl: /training/achievements/typescript/typescript-work-external-libraries.svg
 - uid: learn.language.typescript-get-started.badge
   type: badge
   title: Get started with TypeScript
