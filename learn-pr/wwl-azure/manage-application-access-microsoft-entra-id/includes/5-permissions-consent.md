@@ -4,14 +4,14 @@ To access a protected resource like email or calendar data, your application nee
 
 As an application developer, you must identify how your application will access data. The application can use delegated access, acting on behalf of a signed-in user, or app-only access, acting only as the application's own identity.
 
-:::image type="content" source="../media/access-scenarios-a2eca226.png" alt-text="Diagram showing access scenarios for delegated access and application only access.":::
+:::image type="content" source="../media/access-scenarios-a2eca226-cff65889-93a4041f.png" alt-text="Diagram showing access scenarios for delegated access and application only access.":::
 
 
 ## Delegated access (access on behalf of a user)<br>
 
 In this access scenario, a user has signed into a client application. The client application accesses the resource on behalf of the user. Delegated access requires delegated permissions. Both the client and the user must be authorized separately to make the request.
 
-For the client app, the correct delegated permissions must be granted. Delegated permissions can also be referred to as scopes. Scopes are permissions for a given resource that represent what a client application can access on behalf of the user.<br>
+For the client app, the correct delegated permissions must be granted. Delegated permissions can also be referred to as scopes. Scopes are permissions for a given resource that represent what a client application can access on behalf of the user.
 
 For the user, the authorization relies on the privileges that the user has been granted for them to access the resource. For example, the user could be authorized to access directory resources by Microsoft Entra role-based access control (RBAC) or to access mail and calendar resources by Exchange Online RBAC.
 
@@ -25,9 +25,9 @@ App-only access uses app roles instead of delegated scopes. When granted through
 
 Delegated permissions are used in the delegated access scenario. They're permissions that allow the application to act on a user's behalf. The application will never be able to access anything the signed in user themselves couldn't access.
 
-For example, imagine an application that has been granted the Files.Read.All delegated permission on behalf of Tom, the user. The application will only be able to read files that Tom can personally access.<br>
+For example, imagine an application that has been granted the Files.Read.All delegated permission on behalf of Tom, the user. The application will only be able to read files that Tom can personally access.
 
-**Application permissions**, sometimes called app roles are used in the app-only access scenario, without a signed-in user present. The application will be able to access any data that the permission is associated with. For example, an application granted the Files.Read.All application permission will be able to read any file in the tenant. Only an administrator or owner of the service principal can consent to application permissions.<br>
+**Application permissions**, sometimes called app roles are used in the app-only access scenario, without a signed-in user present. The application will be able to access any data that the permission is associated with. For example, an application granted the Files.Read.All application permission will be able to read any file in the tenant. Only an administrator or owner of the service principal can consent to application permissions.
 
 There are other ways in which applications can be granted authorization for app-only access. For example, an application can be assigned a Microsoft Entra RBAC role.
 
