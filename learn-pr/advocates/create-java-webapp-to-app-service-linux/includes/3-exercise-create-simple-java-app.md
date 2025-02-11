@@ -20,7 +20,7 @@ To clone the repo, use the following steps:
 1. Clone the sample project repo by using the following command:
 
     ```bash
-    git clone https://github.com/MicrosoftDocs/simple-tomcat-maven-app.g
+    git clone https://github.com/MicrosoftDocs/simple-tomcat-maven-app.git
 
 1. Navigate to the cloned project repo by using the following command:
 
