@@ -146,7 +146,7 @@ When the deployment is completed, the following message is output:
 
 The output message displays the public URL of the deployed application as follows: `Successfully deployed the artifact to https://tomcatmavendemo.azurewebsites.net`
 
-:::image type="content" source="../media/deployed-to-app-service.png" alt-text="Screenshot that shows the address bar of a web browser containing the web address of the deployed web app on Azure App Service." lightbox="../media/deployed-to-app-service.png":::
+:::image type="content" source="../media/deployed-to-app-service.png" alt-text="Screenshot that shows the deployed web app in a browser." lightbox="../media/deployed-to-app-service.png":::
 
 ## Confirm the log stream from the command line
 
