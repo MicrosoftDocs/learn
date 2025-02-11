@@ -4,7 +4,7 @@ Azure App Service is a fully managed platform for building, deploying, and scali
 
 Azure App Service offers built-in integration with popular development tools, continuous integration, and deployment capabilities, making it easier to create web and mobile applications with minimal setup.
 
-:::image type="content" source="../media/App_Service_Screenshot.png" alt-text="Screenshot that shows the Azure portal screen." lightbox="../media/App_Service_Screenshot.png":::
+:::image type="content" source="../media/App_Service_Screenshot.png" alt-text="Screenshot that shows Azure App Service in the Azure portal screen." lightbox="../media/App_Service_Screenshot.png":::
 
 ## Key features of Azure App Service
 
