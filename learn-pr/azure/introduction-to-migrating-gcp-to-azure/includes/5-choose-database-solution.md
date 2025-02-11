@@ -1,6 +1,6 @@
 Relational databases enforce strict relationships between data rows in different tables and a static schema. NoSQL databases are less strict, but they can store data more efficiently and are more effective for some applications. Data warehouses are amalgamations of databases from throughout your organization that can provide deep insights and support. Both Azure and Google Cloud provide options for all these data stores and more.
 
-In the global cycling retailer, you have customer data stored in Google Cloud, Spanner, and Bigtable. The customer data is sensitive because it stores personal details, including addresses and credit card information. You're assessing whether to migrate the data into your recently acquired competitor's customer relationship management (CRM) system. This recently acquired system uses Azure Cosmos DB for storage. You need to understand the features of Azure database services.
+In the the scenario of the global cycling retailer, you have customer data stored in Google Cloud, Spanner, and Bigtable. The customer data is sensitive because it stores personal details, including addresses and credit card information. You're assessing whether to migrate the data into your recently acquired competitor's customer relationship management (CRM) system. This CRM system uses Azure Cosmos DB for storage. You need to understand the features of Azure database services.
 
 In this unit, let's explore how Azure data services map to similar ones in Google Cloud.
 
@@ -13,7 +13,7 @@ Google Cloud has two relational database systems to choose from:
 - **Cloud SQL**: This service is a managed relational database for MySQL, PostgreSQL, and SQL Server.
 - **Spanner**: This service is a globally distributed, horizontally scalable database with strong consistency.
 
-In Azure, instead of a single SQL database service that supports various clients, you have separate services:
+In Azure, instead of a single SQL database service that supports various clients, there are separate services:
 
 - [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview): A full cloud-based implementation of the Microsoft SQL Server database system.
 - [Azure Database for MySQL](/azure/mysql/flexible-server/overview): A full cloud-based implementation of Oracle's MySQL database server.
@@ -27,7 +27,7 @@ Google Cloud has two NoSQL services to choose from:
 - **Firestore**: NoSQL document database for mobile and web applications.
 - **Bigtable**: Wide-column NoSQL database for large analytical and operational workloads.
 
-In Azure, the [Cosmos DB](https://azure.microsoft.com/products/cosmos-db/) service has a semistructured design. It supports many data APIs, including:
+In Azure, the [Azure Cosmos DB](https://azure.microsoft.com/products/cosmos-db/) service has a semistructured design. It supports many data APIs, including:
 
 - NoSQL
 - MongoDB
@@ -42,7 +42,7 @@ Both Google Cloud Spanner and Azure Cosmos DB offer global distribution, but Azu
 
 ## Choose a data warehouse service
 
-Google Cloud's data warehousing service is *BigQuery*. It offers a fully managed, serverless data warehouse with built-in machine learning capabilities. The equivalent service in Azure is *Azure Synapse Analytics*. It integrates SQL data warehousing, Spark big data technologies, Data Explorer for log and time-series analytics, and pipelines for data integration.
+Google Cloud's data warehousing service is *BigQuery*. It's fully managed and has built-in machine learning capabilities. The equivalent service in Azure is *Azure Synapse Analytics*. It integrates SQL data warehousing, Spark big-data technologies, Azure Data Explorer for log and time-series analytics, and pipelines for data integration.
 
 BigQuery and Azure Synapse Analytics both offer serverless data warehousing, though they have different strengths in terms of integration and performance optimization.
 

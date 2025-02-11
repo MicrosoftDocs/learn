@@ -22,7 +22,7 @@ quiz:
     - content: "Azure Functions"
       isCorrect: false
       explanation: "Incorrect. Azure Functions is a service that hosts custom code for serverless execution. It isn't designed to store and serve videos."
-  - content: "You regularly use the operations suite in Google Cloud to examine users and their actions so that you can spot any inappropriate permissions. You're migrating your cloud VMs to Azure. What tool can you use for the same purpose?"
+  - content: "You regularly use the operations suite in Google Cloud to examine users and their actions so that you can spot any inappropriate permissions. You're migrating your cloud virtual machines to Azure. What tool can you use for the same purpose?"
     choices:
     - content: "Azure Kubernetes Service (AKS)"
       isCorrect: false
@@ -33,14 +33,14 @@ quiz:
     - content: "Azure Monitor"
       isCorrect: true
       explanation: "Correct. By monitoring your resources and users, you can spot when permissions, roles, and policies might be incomplete or inappropriate."
-  - content: "You want to deploy containers into Kubernetes clusters hosted in both Google Kubernetes Engine (GKE) and Azure AKS. Which declarative file format can you use?"
+  - content: "You want to deploy containers into Kubernetes clusters hosted in both Google Kubernetes Engine (GKE) and AKS. Which declarative file format can you use?"
     choices:
     - content: "Bicep"
       isCorrect: false
-      explanation: "Incorrect. Bicep is a declarative deployment file format but isn't supported in GKE."
+      explanation: "Incorrect. Bicep is a declarative file format for deployment but isn't supported in GKE."
     - content: "Kubernetes manifests"
       isCorrect: true
       explanation: "Correct. Both GKE and AKS support Kubernetes manifest files."
     - content: "Terraform"
       isCorrect: false
-      explanation: "Incorrect. Terraform is a declarative deployment file format but isn't supported in AKS."
+      explanation: "Incorrect. Terraform is a declarative file format for deployment but isn't supported in AKS."

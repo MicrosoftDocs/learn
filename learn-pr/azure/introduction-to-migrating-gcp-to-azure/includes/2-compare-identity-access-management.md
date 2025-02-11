@@ -12,7 +12,7 @@ IAM includes user authentication, authorization, and account provisioning. Organ
 
 Google Cloud and Azure both provide mechanisms to control access to resources, and both encourage the principle of least privilege. However, there are differences in how the two platforms implement identity and access.
 
-Before we cover the details of access control, let's first compare the terminologies that the platforms use:
+Before we cover the details of access control, let's first compare the terminology that the platforms use:
 
 | Azure | Google Cloud | Comments |
 |---|---|---|
@@ -29,13 +29,16 @@ In Google Cloud, you can create user accounts and assign them permissions to clo
 
 ### Resource groups and resource hierarchies
 
-In Google Cloud, there's a hierarchy of objects that you can use to organize resources and control access. These objects include:
+Google Cloud has a hierarchy of objects that you can use to organize resources and control access:
 
-- **Organizations**: Organizations are the largest, root-level object.
-- **Folders**: Within each organization, use folders to segregate resources.
-- **Projects**: Within each folder, you can create multiple projects. Each project contains the resources that you need to address a single purpose.
+- **Organization**: An organization is the largest, root-level object.
+- **Folder**: Within each organization, use folders to segregate resources.
+- **Project**: Within each folder, you can create multiple projects. Each project contains the resources that you need to address a single purpose.
 
-In Azure, the largest object that can contain resources is the *subscription*. Within a subscription, use *resource groups* to organize resources according to the access level that you want to assign. All the resources in a group can be managed as a single unit.
+Azure has this hierarchy of objects:
+
+- **Subscription**: A subscription is the largest object that can contain resources.
+- **Resource group**: Within a subscription, use resource groups to organize resources according to the access level that you want to assign. All the resources in a group can be managed as a single unit.
 
 ### Security accounts for system components
 
@@ -52,7 +55,7 @@ Both cloud services also have types of service accounts with automatically manag
 
 ### Policies
 
-In Google Cloud, you can use policies to associate user accounts and service accounts with roles that assign permissions to resources. Policies can be applied at different levels of the hierarchy. For example, when policies are applied to a folder, the lower objects (such as the projects in that folder) inherit the policies.
+In Google Cloud, you can use policies to associate user accounts and service accounts with roles that assign permissions to resources. Policies can be applied at various levels of the hierarchy. For example, when policies are applied to a folder, the lower objects (such as the projects in that folder) inherit the policies.
 
 Azure policies aren't used for role management. Instead, they implement governance. We'll examine them in the next unit.
 

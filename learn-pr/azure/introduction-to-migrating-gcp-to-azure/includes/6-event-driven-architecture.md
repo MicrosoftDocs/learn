@@ -1,6 +1,6 @@
 Most complex systems in recent years are implemented as a set of separate services rather than a single monolithic application. This approach helps make the systems manageable, scalable, and versatile. With cloud-native microservices, the approach reaches an advanced level that works well on cloud hosts. However, microservices must communicate with each other to formulate responses to user requests. You can make those communications more robust by using message queues or event buses.
 
-In the global cycling retailer, the customer-facing website is a cloud-native application built via microservices. It uses Google Pub/Sub, Google Eventarc, and Google Cloud Functions to guarantee service reliability. You're assessing whether to migrate the system to Azure, and you want to understand the equivalent message-handling services.
+In the scenario of the global cycling retailer, the customer-facing website is a cloud-native application built via microservices. It uses Google Pub/Sub, Google Eventarc, and Google Cloud Functions to guarantee service reliability. You're assessing whether to migrate the system to Azure, and you want to understand the equivalent message-handling services.
 
 In this unit, you learn about message queue systems and event-driven architectures in Azure and Google Cloud.
 
@@ -37,12 +37,12 @@ Google Cloud's event-driven services include Pub/Sub for event ingestion and del
 | Purpose | Azure | Google Cloud | Comments |
 |---------|---------|---------|---------|
 | Event routing | [Azure Event Grid](/azure/event-grid/overview) | Eventarc | Event Grid is a fully managed event-routing service that uses a publish and subscribe model with near real-time processing. You can use it to build event-based architectures by routing events from any source to any destination. Event Grid offers a more integrated experience with Azure services. |
-| Responding to events | [Azure Functions](/azure/azure-functions/functions-overview) | Cloud Functions | Azure Functions is a serverless compute service that enables you to run code on demand, triggered by events from various sources. Google Cloud Functions also enables you to run serverless, on-demand code. |
+| Event response | [Azure Functions](/azure/azure-functions/functions-overview) | Cloud Functions | Azure Functions is a serverless compute service that enables you to run code on demand, triggered by events from various sources. Google Cloud Functions also enables you to run serverless, on-demand code. |
 | Event handling | [Azure Event Hubs](/azure/event-hubs/event-hubs-about) | Pub/Sub or Managed Service for Apache Kafka | Event Hubs is a big-data streaming platform and an event ingestion service that can process millions of events per second. Event Hubs offers an API that has compatibility and parity with Apache Kafka.|
 
 ## Compare messaging services
 
-You can use the Google Cloud Pub/Sub service to host both event-driven and messaging architecture. Azure doesn't take this approach. To build messaging in Azure, use the following services instead of Event Grid:
+You can use the Google Cloud Pub/Sub service to host both event-driven and messaging architectures. Azure doesn't take this approach. To build messaging in Azure, use the following services instead of Event Grid:
 
 | Purpose | Azure service | Comments |
 |---------|---------|---------|

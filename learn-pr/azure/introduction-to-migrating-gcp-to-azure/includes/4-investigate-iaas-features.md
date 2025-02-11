@@ -1,6 +1,6 @@
 Assume that you start with an on-premises set of services, and you want to migrate those services into the cloud with the minimum amount of modification. You might choose to replicate your on-premises servers as cloud virtual machines (VMs), your networks as virtual network segments, and your disk storage as cloud storage services. Both Google Cloud and Azure can implement this approach, which is called *infrastructure as a service (IaaS)*.
 
-In the global cycling retailer, the competitor that the company recently acquired has its product database running on VMs and a set of virtual networks in its Azure subscription. The system stores product images and demonstration videos in Azure Blob Storage. You want to understand this system to assess whether to leave it in place or migrate the content to your product information store in Google Cloud.
+In the scenario of the global cycling retailer, the competitor that the company recently acquired has its product database running on VMs and a set of virtual networks in its Azure subscription. The system stores product images and demonstration videos in Azure Blob Storage. You want to understand this system to assess whether to leave it in place or migrate the content to your product information store in Google Cloud.
 
 In this unit, you compare compute, storage, and virtual network features in Google Cloud and Microsoft Azure.
 
@@ -19,14 +19,14 @@ If you choose an IaaS approach, you usually migrate on-premises servers and thei
 
 ## Compare storage options in Azure and Google Cloud
 
-Both Google Cloud and Azure provide scalable and flexible solutions for storing and managing data, so customers can access their information from anywhere. These services typically include object storage for unstructured data (like images and videos) and file storage. The services also offer specialized services for message queues, NoSQL databases for semistructured data, and archival solutions for long-term data retention at lower costs. This versatility allows businesses to optimize their data management strategies based on access patterns, performance needs, and budget considerations.
+Both Google Cloud and Azure provide scalable and flexible solutions for storing and managing data, so customers can access their information from anywhere. These services typically include object storage for unstructured data (like images and videos) and file storage. Both platforms also offer specialized services for message queues, NoSQL databases for semistructured data, and archival solutions for long-term data retention at lower costs. This versatility allows businesses to optimize their data management strategies based on access patterns, performance needs, and budget considerations.
 
 Azure storage accounts provide a range of information storage services that are optimized to common tasks. This table compares those services to services in Google Cloud:
 
 | Storage type | Azure | Google Cloud | Comments |
 |---|---|---|---|
 | Unstructured objects | Azure Blob Storage | Cloud Storage | These services are optimized for storing and serving large, unstructured files, such as images and videos. |
-| File shares | Azure Files | Filestore | These services behave as shared file storage compatible with the Server Message Block (SMB) protocol. |
+| File shares | Azure Files | Filestore | These services behave as shared file storage and are compatible with the Server Message Block (SMB) protocol. |
 | NoSQL tables | Azure Table Storage | Bigtable, Datastore | These services provide semistructured tabular data stores.  |
 | Messaging queues | Azure Queue Storage | Not applicable | Google Cloud has no precise equivalent of Queue Storage, but you might use Google Cloud Pub/Sub or Cloud Tasks for similar functionality. |
 
@@ -54,8 +54,8 @@ VMs and other services running in Azure or Amazon Web Services (AWS) must commun
 
 ## Learn more
 
-- [Virtual machine sizes overview](/azure/virtual-machines/sizes/overview)
 - [Virtual machines in Azure](/azure/virtual-machines/overview)
+- [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes/overview)
 - [Linux on Azure](/training/paths/azure-linux/)
 - [Describe Azure compute and networking services](/training/modules/describe-azure-compute-networking-services/)
 - [Describe Azure storage services](/training/modules/describe-azure-storage-services/)

@@ -1,4 +1,4 @@
-Google Cloud and Microsoft Azure are competing solutions to the challenges of cloud computing. They take different approaches and have different terminologies. In this module, you saw how features of Google Cloud can be mapped to their equivalents in Azure and how architects can understand migrations from one to the other.
+Google Cloud and Microsoft Azure are competing solutions to the challenges of cloud computing. They take different approaches and have different terminology. In this module, you saw how features of Google Cloud can be mapped to their equivalents in Azure and how architects can understand migrations from one to the other.
 
 This module used the scenario of a cycling equipment company that uses Google Cloud merging with a company that uses Azure. You can now see how Google Cloud services, such as Google Kubernetes Engine (GKE) or Bigtable, map to Azure services, such as Azure Kubernetes Service (AKS) or Azure Cosmos DB. However, migration isn't a simple lift-and-shift operation. You learned some of the differences in terminology and structure.
 

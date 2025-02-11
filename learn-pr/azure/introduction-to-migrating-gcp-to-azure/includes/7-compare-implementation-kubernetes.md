@@ -1,6 +1,6 @@
 Containers are complete, replicable compute environments where you can run code safely. Kubernetes is designed to run many containers and orchestrate them into scalable and versatile systems.
 
-In the global cycling retailer, you've been migrating your public-facing website to run in containers and then using Google Kubernetes Engine (GKE) to orchestrate them. Now, you need to know how to migrate that system to Azure.
+In your role at the global cycling retailer, you've been migrating your public-facing website to run in containers and then using Google Kubernetes Engine (GKE) to orchestrate them. Now, you need to know how to migrate that system to Azure.
 
 In this unit, you compare services that host Kubernetes in Azure and Google Cloud.
 
