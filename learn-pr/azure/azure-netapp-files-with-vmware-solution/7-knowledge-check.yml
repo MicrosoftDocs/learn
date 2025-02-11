@@ -26,21 +26,21 @@ quiz:
     - content: "For Azure NetApp Files technical support, you must contact NetApp."
       isCorrect: false
       explanation: "Azure NetApp Files is an Azure first-party solution supported by Microsoft."
-  - content: "Which option isn't a best practice when you deploy Azure NetApp Files as an Azure VMware Solution (AVS) datastore?"
+  - content: "Which option isn't a best practice when you deploy Azure NetApp Files as an Azure VMware Solution datastore?"
     choices: 
       - content: "Using a dedicated virtual network for your Azure NetApp Files volumes."
         isCorrect: false 
         explanation: "Incorrect. Having a dedicated VNet for your Azure NetApp Files volumes provides optimal performance."
       - content: "Connecting your Azure NetApp Files VNet using an ExpressRoute gateway with the `UltraPerformance` or `ErGw3Az` SKU."
         isCorrect: false
-        explanation: "Correct. Using the `UltraPerformance` or `ErGw3Az` SKU ensures the best network performance between your AVS private cloud and the Azure NetApp Files service."
-      - content: "Enabling FastPath on the connection between your AVS private cloud and ExpressRoute gateway."
+        explanation: "Correct. Using the `UltraPerformance` or `ErGw3Az` SKU ensures the best network performance between your Azure VMware Solution private cloud and the Azure NetApp Files service."
+      - content: "Enabling FastPath on the connection between your Azure VMware Solution private cloud and ExpressRoute gateway."
         isCorrect: false
-        explanation: "Incorrect. Using FastPath on the connection between your AVS private cloud and ExpressRoute gateway ensures the best network performance between your AVS private cloud and the Azure NetApp Files service."
+        explanation: "Incorrect. Using FastPath on the connection between your Azure VMware Solution private cloud and ExpressRoute gateway ensures the best network performance between your Azure VMware Solution private cloud and the Azure NetApp Files service."
       - content: "When you deploy Azure NetApp Files, the Ultra service level should always be used to meet the performance needs of the workload."
         isCorrect: true 
         explanation: "Selecting the appropriate service level for your volume based on the workload demands prevents over-provisioning and wasted resources."
-  - content: "Which of these benefits isn't a primary business benefit of attaching Azure NetApp Files to AVS?"
+  - content: "Which of these benefits isn't a primary business benefit of attaching Azure NetApp Files to Azure VMware Solution?"
     choices:
     - content: "Reduced Azure VMware Solution CPU and memory costs."
       isCorrect: false
