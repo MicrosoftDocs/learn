@@ -42797,6 +42797,101 @@
       "source_path": "learn-pr/language/vue-get-started/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-develop-typed-functions/1-introduction.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-develop-typed-functions/2-create-functions-typescript.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-develop-typed-functions/3-exercise-create-functions.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-develop-typed-functions/4-parameters.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-develop-typed-functions/5-exercise-parameters.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-develop-typed-functions/6-define-function-types.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-develop-typed-functions/7-functions-lab.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-develop-typed-functions/8-knowledge-check.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-develop-typed-functions/9-summary-resources.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-develop-typed-functions/index.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-generics/1-introduction.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-generics/2-what-are-generics.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-generics/3-use-methods-properties-generic-type.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-generics/4-exercise-implement-generics-interfaces-classes.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-generics/5-implement-generics-custom-types-classes.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-generics/6-generics-lab.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-generics/7-knowledge-check.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-generics/8-summary-resources.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/typescript-generics/index.yml",
+      "redirect_url": "https://www.typescriptlang.org/",
+      "redirect_document_id": false
     }
   ]
 }
