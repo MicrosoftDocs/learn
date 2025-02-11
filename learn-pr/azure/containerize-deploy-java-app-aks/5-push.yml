@@ -6,12 +6,13 @@ metadata:
   prefetch-feature-rollout: true
   unitType: Push the container image to Azure Container Registry
   title: Push the container image to Azure Container Registry
-  description: Push the container image to Azure Container Registry
-  ms.date: 11/15/2024
-  author: yoshioterada
+  description: Push the container image to Azure Container Registry.
+  ms.date: 02/12/2025
+  author: KarlErickson
   ms.author: yoterada
   ms.topic: unit
   ms.custom:
+    - devx-track-java
     - devx-track-extended-java
 durationInMinutes: 4
 content: |

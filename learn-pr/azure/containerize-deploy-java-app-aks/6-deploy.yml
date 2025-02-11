@@ -6,12 +6,13 @@ metadata:
   prefetch-feature-rollout: true
   unitType: Deploy the container image to Azure Kubernetes Service
   title: Deploy the container image to Azure Kubernetes Service
-  description: Deploy the container image to Azure Kubernetes Service
-  ms.date: 11/15/2024
-  author: yoshioterada
+  description: Deploy the container image to Azure Kubernetes Service.
+  ms.date: 02/12/2025
+  author: KarlErickson
   ms.author: yoterada
   ms.topic: unit
   ms.custom:
+    - devx-track-java
     - devx-track-extended-java
 durationInMinutes: 9
 content: |

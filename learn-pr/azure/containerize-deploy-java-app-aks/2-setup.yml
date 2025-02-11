@@ -6,13 +6,14 @@ metadata:
   prefetch-feature-rollout: true
   unitType: Set up
   title: Set up your Azure environment
-  description: Set up your Azure environment
-  ms.date: 11/15/2024
-  author: yoshioterada
+  description: Set up your Azure environment.
+  ms.date: 02/12/2025
+  author: KarlErickson
   ms.author: yoterada
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
+    - devx-track-java
     - devx-track-extended-java
 durationInMinutes: 6
 content: |

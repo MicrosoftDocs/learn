@@ -6,12 +6,13 @@ metadata:
   prefetch-feature-rollout: true
   unitType: Build and run a container image for the Java app
   title: Build and run a container image for the Java app
-  description: Build and run a container image for the Java app
-  ms.date: 11/15/2024
-  author: yoshioterada
+  description: Build and run a container image for the Java app.
+  ms.date: 02/12/2025
+  author: KarlErickson
   ms.author: yoterada
   ms.topic: unit
   ms.custom:
+    - devx-track-java
     - devx-track-extended-java
 durationInMinutes: 4
 content: |
