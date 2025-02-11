@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-properties-methods.exercise-create-properties-methods
+title: Exercise - Update a class with properties and methods in C#
+metadata:
+  title: Exercise - Update a class with properties and methods in C#
+  description: "Exercise - Update a class with properties and methods in C#"
+  ms.date: 02/10/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 35
+content: |
+  [!include[](includes/8-exercise-create-properties-methods.md)]

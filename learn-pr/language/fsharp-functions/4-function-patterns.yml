@@ -4,9 +4,8 @@ title: Function patterns
 metadata:
   title: Function patterns
   description: In this unit, you'll be made familiar with several useful patterns like composition and pipeline. 
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.date: 03/03/2023
   ms.topic: unit
   ms.custom: team=nextgen
