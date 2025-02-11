@@ -2,8 +2,8 @@
 uid: learn.azure.build-tomcat-java-appservice.5
 title: Knowledge check
 metadata:
-  title: Knowledge check
-  description: Check your knowledge of creating and deploying Java web apps to Azure App Service
+  title: Knowledge Check
+  description: Check your knowledge of creating and deploying Java web apps to Azure App Service.
   ms.date: 02/06/2025
   author: KarlErickson
   ms.author: ayangupta
@@ -25,7 +25,7 @@ quiz:
           isCorrect: true
           explanation: Correct! Maven helps manage dependencies and automates the build and deployment processes, streamlining development.
 
-    - content: How does deploying a Java web application to Microsoft Azure App Service benefit developers?
+    - content: How does deploying a Java web application to Azure App Service benefit developers?
       choices:
         - content: It automatically converts Java code to a faster language.
           isCorrect: false
@@ -54,9 +54,9 @@ quiz:
         - content: It serves as a servlet container that implements Java Servlet and JSP specifications.
           isCorrect: true
           explanation: Correct! Tomcat provides an environment to run Java servlets and JSPs, which is essential for Java web applications.
-        - content: It is a frontend framework for designing responsive web interfaces.
+        - content: It is a front-end framework for designing responsive web interfaces.
           isCorrect: false
-          explanation: Incorrect. Tomcat is a server-side technology and does not deal with frontend design.
+          explanation: Incorrect. Tomcat is a server-side technology and does not deal with front-end design.
         - content: It is a database system used for storing application data.
           isCorrect: false
           explanation: Incorrect. Tomcat is a web server and servlet container, not a database system.
