@@ -1,6 +1,6 @@
-Web applications are widely used to handle real-world tasks such as inventory management, online forms, and customer-facing portals. In this module, you learn to create and deploy a simple Java web application using Apache Tomcat, a popular open-source server.
+Web applications are widely used to handle real-world tasks such as inventory management, online forms, and customer-facing portals. In this module, you learn how to create and deploy a simple Java web application using Apache Tomcat, a popular open-source server.
 
-Suppose you're a developer working on a project to build a dynamic web application where users can enter data and interact with your platform in real time. Your client wants this app to be available locally for testing, as well as on the cloud for easy access. This setup lets you test on your local machine first, and then deploy to a live environment as a seamless transition. Building this setup from scratch gives you flexibility for future updates and configurations.
+Suppose you're a developer working on a project to build a dynamic web application where users can enter data and interact with your platform in real time. Your client wants this app to be available locally for testing, and on the cloud for easy access. This setup lets you test on your local machine first, and then deploys to a live environment as a seamless transition. Building this setup from scratch gives you flexibility for future updates and configurations.
 
 In this module, you explore the essential steps for building and deploying a Java web app with Tomcat. You have two options: either clone an existing project from Azure Samples for immediate deployment, or build a new project from scratch with Maven. Topics in this module include setting up your Maven project, configuring Tomcat, deploying the app locally, and using tools like Maven to manage dependencies and packages.
 
@@ -13,7 +13,7 @@ In this exercise, you create a minimal Java web application that takes an input 
 1. Option 1: Clone the repo from Azure samples and immediately deploy your web app.
 2. Option 2: Create a Maven Tomcat project from scratch.
 
-### Option 1: Clone the repo from Azure samples and immediately deploy your web ap
+### Option 1: Clone the repo from Azure samples and immediately deploy your web app
 
 To clone the repo, use the following steps:
 
@@ -31,9 +31,9 @@ To clone the repo, use the following steps:
 Use the following steps to configure your local Tomcat server so you can deploy locally to Tomcat:
 
 > [!WARNING]
-> Storing usernames and passwords directly in configuration files like **tomcat-users.xml** and Maven's **settings.xml** in plaintext is not considered secure, and we generally do not recommend this practice - especially for production environments. However, as this is just a Learn module, other alternatives are outside the scope of this module. Do not use your real username and password!
+> Storing usernames and passwords directly in configuration files like **tomcat-users.xml** and Maven's **settings.xml** in plaintext isn't considered secure, and we generally don't recommend this practice - especially for production environments. However, as this is just a Learn module, other alternatives are outside the scope of this module. Don't use your real username and password!
 
-1. Edit the Tomcat configuration file **conf/tomcat-users.xml**:
+1. Edit the Tomcat configuration file **conf/tomcat-users.xml** so that it is like the following code sample:
 
     ```xml
     <tomcat-users>
@@ -41,7 +41,7 @@ Use the following steps to configure your local Tomcat server so you can deploy 
     </tomcat-users>
     ```
 
-1. Add your credentials to the Maven **~/.m2/settings.xml** file by using the following code example, where you replace `your-tomcat-username` with a username, and `your-tomcat-password`with a password:
+1. Add your credentials to the Maven **~/.m2/settings.xml** file by using the following code example, where you replace `your-tomcat-username` with a username, and `your-tomcat-password` with a password:
 
     ```xml
     <servers>
@@ -70,16 +70,16 @@ To create a Maven Tomcat project from scratch, you work through multiple procedu
 To create a Maven project for your Java web application, use the following command:
 
 ```bash
-mvn archetype:generate\
-    -DgroupId=com.example\
-    -DartifactId=simple-tomcat-app\
-    -DarchetypeArtifactId=maven-archetype-webapp\
+mvn archetype:generate \
+    -DgroupId=com.example \
+    -DartifactId=simple-tomcat-app \
+    -DarchetypeArtifactId=maven-archetype-webapp \
     -DinteractiveMode=false
 ```
 
 The command produces the following output:
 
-```text
+```output
 [INFO] ----------------------------------------------------------------------------
 [INFO] Parameter: basedir, Value: /home/XXXXXXXX/LearnProjects/simple-tomcat-maven-app
 [INFO] Parameter: package, Value: com.microsoft.azure.samples
@@ -98,7 +98,7 @@ The command produces the following output:
 
 You now have a new Maven web project in a folder named **simple-tomcat-app**. The following files and directories are now available:
 
-```output
+```
 └── simple-tomcat-app
     ├── pom.xml
     └── src
@@ -116,9 +116,9 @@ You now have a new Maven web project in a folder named **simple-tomcat-app**. Th
 
 ### Modify the Maven pom.xml file
 
-To open the **pom.xml** file and modify it, use the following steps:
+Modify the **pom.xml** file by using the following steps:
 
-1. Set the Java version to 21 by using the following code example:
+1. Open **pom.xml** and set the Java version to 21 by using the following code example:
 
     ```xml
     <java.version>21</java.version>
@@ -241,9 +241,9 @@ Here's the full content of the **pom.xml** file:
 </project>
 ```
 
-### Create a simple web interface
+### Create a web interface
 
-To add a simple web page, edit the **src/main/webapp/index.jsp** file by using the following code example:
+To add a web page, edit the **src/main/webapp/index.jsp** file by using the following code example:
 
 ```html
 <!DOCTYPE html>
@@ -265,7 +265,7 @@ To add a simple web page, edit the **src/main/webapp/index.jsp** file by using t
 
 ### Create a servlet
 
-A servlet is a Java programming class used to extend the capabilities of a server by handling requests and generating dynamic content. Servlets run on the server side within a web container - such as Apache Tomcat - and are primarily used to process HTTP requests in web applications. When a client - for example, a web browser - sends a request to a web server, the servlet processes the request. The servlet performs any necessary business logic - for example, accessing databases or calling other services - and generates a response - often in the form of HTML — to send back to the client. Servlets enable developers to create dynamic, platform-independent web applications using the Java programming language.
+A servlet is a Java programming class used to extend the capabilities of a server by handling requests and generating dynamic content. Servlets run on the server side within a web container - such as Apache Tomcat - and are primarily used to process HTTP requests in web applications. When a client - for example, a web browser - sends a request to a web server, the servlet processes the request. The servlet performs any necessary business logic, for example, accessing databases or calling other services, and then generates a response - often in the form of HTML - to send back to the client. Servlets enable developers to create dynamic, platform-independent web applications using Java.
 
 To create a servlet, use the following steps:
 
@@ -275,7 +275,7 @@ To create a servlet, use the following steps:
     mkdir -p src/main/java/com/example && touch src/main/java/com/example/HelloServlet.java
     ```
 
-1. Update the contents of **HelloSeverlet.java** by using the following code example:
+1. Update the contents of the **HelloSeverlet.java** file by using the following code example:
 
     ```java
        package com.example;
@@ -297,11 +297,11 @@ To create a servlet, use the following steps:
                response.getWriter().write("<h1>Hello, " + name + "!</h1>");
            }
        }
-       ```
+    ```
 
-    Your new file structure looks like this: 
+    Your new file structure looks like this:
 
-    ```xml
+    ```
     └── simple-tomcat-app
         ├── pom.xml
         └── src
@@ -325,7 +325,7 @@ To create a servlet, use the following steps:
 Use the following steps to configure your local Tomcat server so you can deploy to it:
 
 > [!WARNING]
-> Storing usernames and passwords directly in configuration files like **tomcat-users.xml** and Maven's **settings.xml** in plaintext is not considered secure and is generally not recommended, especially for production environments. However, as this is just a learn module, other alternatives are outside the scope of this module. Do not use your real username and password!
+> Storing usernames and passwords directly in configuration files like **tomcat-users.xml** and Maven's **settings.xml** in plaintext isn't secure and is generally not recommended, especially for production environments. However, since this is just a Learn module, other alternatives are outside the scope of this module. Don't use your real username and password!
 
 1. Edit the Tomcat configuration file **conf/tomcat-users.xml** by using the following code example:
 
@@ -335,7 +335,7 @@ Use the following steps to configure your local Tomcat server so you can deploy 
     </tomcat-users>
     ```
 
-1. Add your credentials to Maven's **~/.m2/settings.xml** file by using the following command, replacing `your-tomcat-username` with a username and `your-tomcat-password`with a password.
+1. Add your credentials to Maven's **~/.m2/settings.xml** file by using the following command, replacing `your-tomcat-username` with a username and `your-tomcat-password` with a password.
 
     ```xml
     <servers>
@@ -349,10 +349,10 @@ Use the following steps to configure your local Tomcat server so you can deploy 
 
 ### Deploy your web app to Tomcat
 
-Run the following command to package and deploy your web app:
+Use the following command to package and deploy your web app:
 
 ```bash
 mvn clean package cargo:deploy
 ```
 
-Success! Your app will be available at `http://localhost:8080/simple-tomcat-app`.
+Success! Your app is available at `http://localhost:8080/simple-tomcat-app`.
