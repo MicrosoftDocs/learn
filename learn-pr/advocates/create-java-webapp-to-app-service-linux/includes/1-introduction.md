@@ -6,9 +6,9 @@ In this module, you tackle the challenge of deploying a Java-based web applicati
 
 By the end of this module, you can do the following things:
 
-- Create a Tomcat app using Maven
-- Deploy a Tomcat app locally to your machine 
-- Deploy your Java Tomcat web application to Azure App Service
+- Create a Tomcat web app using Maven.
+- Deploy the Tomcat app locally to your machine.
+- Deploy the Tomcat app to Azure App Service.
 
 ## Prerequisites
 
