@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure web app settings
   description: "Configure web app settings"
-  ms.date: 06/11/2024
+  ms.date: 02/11/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
@@ -13,7 +13,7 @@ metadata:
   - N/A
   ms.service: azure-app-service
   ms.subservice: web-apps
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Configure web app settings
 summary: Learn how to create and manage application settings, install SSL/TLS certificates to secure web traffic, enable diagnostic logging, create virtual app to directory mappings, and manage app features.
 abstract: |
