@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-properties-methods.create-class-methods
+title: Implement class methods and parameters
+metadata:
+  title: Implement class methods and parameters
+  description: "Implement class methods and parameters"
+  ms.date: 02/10/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/6-create-class-methods.md)]

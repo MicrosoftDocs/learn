@@ -59,7 +59,7 @@ The IP addresses are:
 
 - VM3 = 10.2.0.4
 
-The DNS server address is 168.63.129.16, which is the wire server.
+The DNS server address is 192.168.016, which is the wire server.
 
 :::image type="content" source="../media/5-network-configure.png" alt-text="Screenshot of command prompt results after running i p config / all." lightbox="../media/5-network-configure.png":::
 

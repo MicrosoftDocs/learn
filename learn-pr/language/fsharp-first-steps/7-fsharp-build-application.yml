@@ -6,9 +6,8 @@ metadata:
   title: "Create F# applications"
   description: "Overview of .NET templates and how they can help you build your first F# application"
   ms.date: 02/22/2023
-  author: luisquintanilla
-  ms.author: luquinta
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet

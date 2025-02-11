@@ -16,7 +16,7 @@ To see how Copilot can assist you at work, let's consider a hypothetical example
 
 Marie is a project manager at a business consultancy company. She's spent the last few days on vacation, and is now back in the office and ready to get back to work.
 
-1. She starts her day in Microsoft 365 Copilot BizChat, and uses Copilot to summarize the email and Teams threads she missed while out of the office and highlight any explicit follow-up actions that have been assigned to her.
+1. She starts her day in Microsoft 365 Copilot Chat, and uses Copilot to summarize the email and Teams threads she missed while out of the office and highlight any explicit follow-up actions that have been assigned to her.
 1. One action she needs to follow up on is to support Alex, a sales executive who needs to prepare for a customer meeting where they'll present a proposal for a consultancy engagement. Alex has sent a lengthy email describing the customer requirements in detail, so Marie uses Copilot in Outlook to summarize the email as a bulleted list of key points.
 1. After reviewing the key customer requirements, Marie uses Copilot in Microsoft Word to generate a draft for a statement of work that describes the proposed solution based on the customer's requirements and examples of proposals from previous projects.
 1. Next, Marie uses Excel to create a budget for the project, including payment milestones; and uses Copilot in Excel to generate visualizations of the cost data.

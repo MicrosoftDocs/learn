@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-classes-objects.design-use-classes
+title: Design and use classes
+metadata:
+  title: Design and use classes
+  description: "Design and use classes"
+  ms.date: 02/07/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-design-use-classes.md)]

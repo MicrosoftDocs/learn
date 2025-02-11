@@ -12,7 +12,7 @@ There are a range of SAP deployment options for combining with Microsoft Cloud:
 
 ### Microsoft integration for RISE with SAP
 
-The following Microsoft integration architecture example for SAP apples to RISE with SAP, Azure VMs, or on-premises, offering a wide range of options to suit different business needs and contexts. Regardless of the deployment option chosen, Azure networking and Microsoft Entra ID ensure seamless integration and secure access. Microsoft Entra ID use across products is beneficial for businesses with strict data sovereignty requirements, or businesses who want to use their existing infrastructure.
+The following Microsoft integration architecture example for SAP applies to RISE with SAP, Azure VMs, or on-premises, offering a wide range of options to suit different business needs and contexts. Regardless of the deployment option chosen, Azure networking and Microsoft Entra ID ensure seamless integration and secure access. Microsoft Entra ID use across products is beneficial for businesses with strict data sovereignty requirements, or businesses who want to use their existing infrastructure.
 
 The following diagram shows the traffic flow from Power Platform and Copilot to SAP through Azure API Management:
 
@@ -60,7 +60,7 @@ Microsoft Power Platform extends the capabilities of SAP systems by enabling low
 > [!NOTE]
 > For more information on extending SAP with Microsoft Power Platform, see [Extend SAP by using Microsoft Power Platform](/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-fundamental).
 
-## Microsoft Copilot Studio with SAP
+## Microsoft Copilot Studio with RISE with SAP
 
 Microsoft Copilot Studio, part of Microsoft Power Platform, enhances the SAP user experience by integrating AI-driven copilots. Key functionalities include:
 

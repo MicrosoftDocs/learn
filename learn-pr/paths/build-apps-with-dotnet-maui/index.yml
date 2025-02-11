@@ -14,7 +14,7 @@ prerequisites: |
   - Familiarity with C# and .NET
 video:
   title: "Build mobile and desktop apps with .NET MAUI"
-  url: https://www.microsoft.com/videoplayer/embed/RE56swk
+  url: https://learn-video.azurefd.net/vod/player?id=83f5f058-c1d8-47c6-a952-1f32f863e1b0
 iconUrl: /training/achievements/build-mobile-and-desktop-apps-with-net-maui-trophy.svg
 levels:
 - beginner

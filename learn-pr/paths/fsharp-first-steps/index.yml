@@ -5,8 +5,8 @@ metadata:
   description: F# is an open-source, cross-platform programming language that makes it easy to write succinct, performant, robust, and practical code. It's a general-purpose language that enables you to create many different types of applications like Web API, Desktop, IoT, Gaming and more. 
   brand: azure
   ms.date: 07/23/2021
-  author: softchris
-  ms.author: chnoring
+  author: baronfel
+  ms.author: chethusk 
   ms.topic: learning-path
 title: Take your first steps with F#
 summary: |
@@ -18,7 +18,7 @@ summary: |
 prerequisites: None
 video:
   title: "Microsoft Learn video: Take your first steps with F#"
-  url: https://www.microsoft.com/videoplayer/embed/RE4X1s9
+  url: https://learn-video.azurefd.net/vod/player?id=e9c1079c-7b51-4c2b-93d3-3636fc5af450
 iconUrl: /training/achievements/fsharp-first-steps-path.svg
 levels:
 - beginner

@@ -123,11 +123,15 @@ You need to update your Bicep template to reference the storage account you crea
 
    Notice that this extension resource has its `scope` set to the nested existing resource. Bicep understands that it should attach the extension resource to the `blobServices` child resource.
 
-   After you're finished, your complete Bicep template should look like this:
-
-   :::code language="bicep" source="code/7-complete.bicep" :::
-
 1. Save the changes to the file.
+
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your _main.bicep_ file should look like this example:
+
+:::code language="bicep" source="code/7-complete.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
 
 ## Deploy the template to Azure
 
@@ -137,6 +141,7 @@ In the terminal, run the following Azure CLI command. Replace `{storageaccountna
 
 ```azurecli
 az deployment group create \
+  --name main \
   --template-file main.bicep \
   --parameters storageAccountName={storageaccountname}
 ```
@@ -149,6 +154,7 @@ In the terminal, run the following Azure PowerShell command. Replace `{storageac
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
+  -Name main `
   -TemplateFile main.bicep `
   -storageAccountName {storageaccountname}
 ```

@@ -4,16 +4,16 @@ Before you change the prototype, you need to run it to validate the assumptions.
 
 1. In a separate browser tab or window, fork the sample repository on GitHub with the following link: [mslearn-advocates.azure-functions-and-signalr](https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr/fork). This allows you to push your changes to your own version of the source code. This is a required step in order to deploy the source code to Azure later in the module.
 
-1. In the terminal, clone the repository. In the following command, replace `MicrosoftDocs` with your account:
+1. In the terminal, clone your forked repository. In the following command, replace `MicrosoftDocs` with your account:
 
     ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr stock-prototype
+    git clone https://github.com/<YOUR-GITHUB-ALIAS>/mslearn-advocates.azure-functions-and-signalr stock-prototype
     ```
 
 1. Install the dependencies in the **setup-resources** folder.
 
     ```bash
-    cd stock-prototype/setup-resources && npm install
+    cd setup-resources && npm install
     ```
 
     If you receive warnings about `EBADENGINE`,  you can ignore them.
@@ -56,11 +56,20 @@ Before you change the prototype, you need to run it to validate the assumptions.
     |Azure Storage|Referred to as STORAGE_CONNECTION_STRING|
     |Resource Group|Referred to as RESOURCE_GROUP_NAME.|
 
-1. Use a Node.js script to upload sample data into the database with the following command.
+1. At the terminal, still in the `setup-resources` directory, use a Node.js script to upload sample data into the database with the following command.
 
     ```bash
     npm start
     ```
+
+    The output shows the starting data for the fictitious stock application:
+
+    ```console
+    Seed data added. Symbol ABC
+    Seed data added. Symbol DEF
+    Seed data added. Symbol GHI
+    ```
+    
 
 1. In the terminal, navigate to the **root** folder.
 
@@ -152,6 +161,6 @@ BACKEND_URL=http://localhost:7071
 
     :::image type="content" source="../media/visual-studio-code-terminal-output-stock-change.png" alt-text="Screenshot of Visual Studio Code terminal showing console output of the stock price change.":::
 
-1. In both the start-client and start server terminals, stop the applications with <kbd>Ctrl</kbd> + <kbd>C</kbd> or kill the terminal by selecting the trashcan icon.
+1. In both the terminals for client and server, stop the applications with <kbd>Ctrl</kbd> + <kbd>C</kbd> or kill the terminal by selecting the trashcan icon.
 
 In this unit, you ran the prototype. While the client does run successfully, it isn't efficient. While each individual client may not notice this with such a small number of stocks, that will change as the number of stocks grows and the number of clients pull from the server. The prototype can be improved. Let's learn how in the next unit.

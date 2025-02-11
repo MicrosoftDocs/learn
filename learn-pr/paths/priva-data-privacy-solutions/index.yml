@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.priva-data-privacy-solutions
+metadata:
+  title: 'Implement and manage data privacy solutions for compliance'
+  description: 'Implement Microsoft Priva to help your organization manage personal data responsibly and meet compliance requirements. Use privacy risk management to identify and mitigate potential risks, automate subject rights requests to improve efficiency, and manage consent preferences to ensure transparency. With Microsoft Priva, you can build a structured approach to data privacy that supports compliance while maintaining trust with employees and customers.'
+  ms.date: 2/5/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: 'Implement and manage data privacy solutions for compliance'
+prerequisites: |
+  - Familiarity with Microsoft Purview data governance solutions
+  - Basic understanding of data privacy and protection concepts
+summary: |
+  Implement Microsoft Priva to help your organization manage personal data responsibly and meet compliance requirements. Use privacy risk management to identify and mitigate potential risks, automate subject rights requests to improve efficiency, and manage consent preferences to ensure transparency. With Microsoft Priva, you can build a structured approach to data privacy that supports compliance while maintaining trust with employees and customers.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- privacy-manager
+products:
+- priva
+- microsoft-purview
+- azure
+- m365
+subjects:
+- security
+- compliance
+modules:
+- learn.wwl.priva-understand-microsoft-priva
+- learn.wwl.priva-privacy-risk-management
+- learn.wwl.priva-subject-rights-requests
+- learn.wwl.priva-consent-management
+- learn.wwl.priva-tracker-scanning
+- learn.wwl.priva-privacy-assessments
+trophy:
+  uid: learn.wwl.priva-data-privacy-solutions.trophy

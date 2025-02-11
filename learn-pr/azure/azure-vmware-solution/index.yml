@@ -5,25 +5,25 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Secure outbound internet connectivity for Azure VMware Solution
-  description: Secure outbound internet connectivity for Azure VMware Solution using Azure Route Server, Azure Firewall and 3rd party NVA
+  description: Secure outbound internet connectivity for Azure VMware Solution using Azure Route Server, Azure Firewall and third-party NVA
   ms.date: 03/23/2023
   author: Mahesh-MSFT
   ms.author: maksh
   ms.topic: module
   ms.service: azure-vmware
 summary: > 
-  Learn how to route, control, and inspect outbound network traffic from Azure VMware Solution private cloud. Define the outbound internet network path using either custom or third party network virtualization appliance with Azure Route Server and Azure Firewall.
+  Learn how to route, control, and inspect outbound network traffic from Azure VMware Solution private cloud. Define the outbound internet network path using either custom or third-party network virtualization appliance with Azure Route Server and Azure Firewall.
 abstract: |
   By the end of this module, you'll be able to:
-  - Generate and inject the default route using either custom or 3rd party Network Virtual Appliance (NVA) with Azure Firewall as the next hop.
+  - Generate and inject the default route using either custom or third-party Network Virtual Appliance (NVA) with Azure Firewall as the next hop.
   - Propagate the default route to Azure VMware Solution private cloud using Azure Route Server.
   - Define network rules in Azure Firewall to allow outbound internet traffic from Azure VMware Solution private cloud.
 prerequisites: |
-  This module requires understanding of the following activities. 
+  This module requires an understanding of the following activities. 
   - Beginner level experience with Azure basic networking concepts such as Azure Virtual WAN, Virtual Networks (VNet), Subnets, Network Security Groups (NSG), Route Table, User Defined Routes (UDR), ExpressRoute Gateway, Azure Virtual Network Peering.
   - Intermediate level experience with [deploying and running](/azure/azure-vmware/deploy-azure-vmware-solution?tabs=azure-portal) Azure VMware Solution private cloud, networking covering NSX-T Data Center T0/T1 gateways, NSX-T Data Center Edge & Managed SNAT.
   - Intermediate level experience with creating a network segment and Virtual Machine (VM) in that network segment and testing internet connectivity from VM.
-  - Intermediate level experience with creating either a custom or a 3rd party NVA on Azure, Border Gateway Protocol (BGP), Azure Route Server and Azure Firewall.
+  - Intermediate level experience with creating either a custom or a third-party NVA on Azure, Border Gateway Protocol (BGP), Azure Route Server, and Azure Firewall.
 iconUrl: /training/achievements/generic-badge.svg
 ratingEnabled: false
 levels:

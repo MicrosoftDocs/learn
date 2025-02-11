@@ -1,4 +1,4 @@
-Your goal in this module was to understand the different types of GitHub actions and then create your own custom GitHub action and use it in a workflow.
+Your goal in this module was to understand the different types of GitHub actions, and then create your own custom GitHub action and use it in a workflow.
 
 To accomplish this goal, you first learned about the necessary metadata and syntax to write custom GitHub actions. You learned about workflow commands to extend functionality to your action, how to choose a private or public location for your action, and establishing best practices for documenting and versioning your action. You also learned how to publish your action to the GitHub Marketplace.
 
