@@ -4,7 +4,7 @@ title: Exercise - Deploy a web app to Azure App Service
 metadata:
   title: Exercise - Deploy a Web App to Azure App Service
   description: Deploy a simple Tomcat Java web app to Azure App Service.
-  ms.date: 02/06/2025
+  ms.date: 02/11/2025
   author: KarlErickson
   ms.author: ayangupta
   ms.topic: unit
