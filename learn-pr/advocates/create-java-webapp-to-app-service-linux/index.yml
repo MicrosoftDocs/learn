@@ -28,8 +28,8 @@ products:
 subjects: 
   - app-development
 prerequisites: |
-  - Your own Azure subscription
-  - The [Azure CLI](/cli/azure/install-azure-cli) installed on your computer
+  - Your own Azure subscription. [Create one for free.](https://azure.microsoft.com/free/).
+  - The [Azure CLI](/cli/azure/install-azure-cli) installed on your computer.
   - [JDK 17](https://www.oracle.com/java/technologies/downloads/) 
   - [Apache Tomcat 10.1.x](https://tomcat.apache.org/download-10.cgi) 
   - [Maven 3.9.9](https://maven.apache.org/download.cgi?.=)
