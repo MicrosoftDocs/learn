@@ -1,30 +1,32 @@
-In this unit, we will deploy our Java Tomcat Web App to Azure App Service. 
+In this unit, you deploy your Java Tomcat Web App to Azure App Service.
 
 ## Maven Plugin for Azure App Service
+
 Microsoft provides the Maven Plugin for Azure App Service to make it easier for Java developers to deploy applications to Azure. By using this plug-in, you can easily configure and deploy your application to Azure. Execute the following command to use Maven Plugin for Azure App Service.
 
+### Configure the Maven Plugin for Azure App Service
 
+To configure the Maven Plugin for Azure App Service, use the following command:
 
-### Configure the Maven Plugin for Azure App Service 
-To configure the Maven Plugin for Azure App Service, execute the following command:
 ```bash
 mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
 ```
-After the command, some questions will appear at the prompt, so enter and select the appropriate items and set them. Enter the following options:
 
-|  Item  |  Input value  |
-| ---- | ---- |
-|  Subscription  |  Choose your Azure subscription |
-|  Define value for OS  | Linux |
-|  Define value for pricing tier | B1 |
-|  Define value for Java version  |  Java 21 |
-|  Define value for runtime stack  | TOMCAT 10.0 |
-|  Confirm (Y/N)  |  Y |
+After you use the command, some questions appear at the prompt, allowing you to configure various options. Configure the options and values in the following table:
 
+| Item                           | Input value                     |
+|--------------------------------|---------------------------------|
+| Subscription                   | Choose your Azure subscription. |
+| Define value for OS            | Linux                           |
+| Define value for pricing tier  | B1                              |
+| Define value for Java version  | Java 21                         |
+| Define value for runtime stack | TOMCAT 10.0                     |
+| Confirm (Y/N)                  | Y                               |
 
-After you execute the command, these results will appear:
-```bash
-ayangupta@DESKTOP-EG1D1U3:~/LearnProjects/tomcat-azure/simple-tomcat-app$ mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
+The following output appears:
+
+```output
+mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] -------------------< com.example:simple-tomcat-app >--------------------
@@ -83,10 +85,8 @@ Confirm (Y/N) [Y]: Y
 [INFO] Finished at: 2024-11-07T09:54:55-08:00
 [INFO] ------------------------------------------------------------------------
 ```
-You'll see a new section in the `<plugins>` section in your `pom.xml` file.
 
-If you want to change the resource group name, instance name, and deployment location, change `<resourceGroup>`, `<appName>`, and `<region>`.
-
+Your **pom.xml** file now contains a new section in the `<plugins>` section. If you want to change the resource group name, instance name, or deployment location, change `<resourceGroup>`, `<appName>`, or `<region>`. Your **pom.xml** file should appear similar to the following:
 
 ```xml
       <!-- Azure Web App Maven Plugin -->
@@ -120,19 +120,20 @@ If you want to change the resource group name, instance name, and deployment loc
 
 ### Compile and deploy to Azure App Service
 
-Now that the settings for deploying to Azure App Service are complete, compile the source code again:
+You finished configuring the settings for deploying to Azure App Service. Compile the source code again by using the following command:
 
 ```bash
 mvn clean package
 ```
 
-Once compiled, use the Maven Plugin for Azure Web Apps command to deploy your application. Execute the following command:
+After the source code is compiled, use the following Maven Plugin for Azure Web Apps command to deploy your application:
 
 ```bash
 mvn azure-webapp:deploy
 ```
 
-When the deployment is completed, the following message will be output.
+When the deployment is completed, the following message is output:
+
 ```bash
 [INFO] Successfully deployed the artifact to https://tomcatmavendemo.azurewebsites.net
 [INFO] ------------------------------------------------------------------------
@@ -143,18 +144,23 @@ When the deployment is completed, the following message will be output.
 [INFO] ------------------------------------------------------------------------
 ```
 
-The public URL of the deployed application is displayed in the output message as follows `Successfully deployed the artifact to https://tomcatmavendemo.azurewebsites.net`
+The output message displays the public URL of the deployed application as follows: `Successfully deployed the artifact to https://tomcatmavendemo.azurewebsites.net`
 
-:::image type="content" source="../media/deployed-to-app-service.png" alt-text="Screenshot that shows the deployed web app on Azure App Service.":::
+:::image type="content" source="../media/deployed-to-app-service.png" alt-text="Screenshot that shows the address bar of a web browser containing the web address of the deployed web app on Azure App Service." lightbox="../media/deployed-to-app-service.png":::
 
 ## Confirm the log stream from the command line
 
-To access the log stream, execute the following CLI command:
+To access the log stream, use the following command:
+
 ```azurecli
-az webapp log tail -g <your-resource-group> -n <your-app-name>
+az webapp log tail \
+    --resource-group <your-resource-group> \
+    --name <your-app-name>
 ```
-You should end up seeing something like this: 
-```bash
+
+Your output should appear similar to the following:
+
+```output
 2024-11-07T18:14:37  Welcome, you are now connected to log-streaming service.
 Starting Log Tail -n 10 of existing logs ----
 /appsvctmp/volatile/logs/runtime/container.log
@@ -174,4 +180,4 @@ Starting Live Log Stream ---
 
 ## Exercise summary
 
-In this unit, you learned how to create a simple Tomcat web app using Maven. You also learned how to create a servlet and how it works. Finally we deployed your webapp locally using Tomcat and then deployed to Azure App Service for anyone in the world to access! 
+In this unit, you learned how to create a Tomcat web app using Maven. You also learned how to create a servlet and how it works. Next, you deployed your web app locally using Tomcat. Finally, you deployed to Azure App Service for anyone in the world to access!
