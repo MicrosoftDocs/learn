@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-class-implementations.specify-named-optional-method-arguments
+title: Specify named and optional method arguments
+metadata:
+  title: Specify named and optional method arguments
+  description: "Specify named and optional method arguments"
+  ms.date: 02/10/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-specify-named-optional-method-arguments.md)]

@@ -21,5 +21,3 @@ In addition to modules, you can import other external libraries containing type 
       ```bash
       npm install -g typescript
       ```
-
-For best results, follow the complete instructions for setting up your environment and using the TypeScript compiler in [Module 01: Get started with TypeScript](/training/modules/typescript-get-started/). After setting up your environment, you can run any of the Lab setup or solution files in the  [Build JavaScript applications by using TypeScript](../../../paths/build-javascript-applications-typescript/index.yml) learning path.

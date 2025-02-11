@@ -21,7 +21,7 @@ In the first unit of this module, you created a backlog in Azure DevOps by using
 
 ## Add workloads
 
-Now, we'll add some workloads to the project plan. At the end of the last unit, we identified a series of workloads from the Tailwind Traders' digital estate. When you're building actual plans, you might target ten workloads for your first migration, but for brevity, you'll only target the six workloads we identified in the last unit.
+Now, we'll add some workloads to the project plan. The Tailwind Traders' digital estate has six workloads: mobile coupon, video shelf, remote store POS, employee scheduling, virtual desktop, and backup solution. When you're building actual plans, you might target ten workloads for your first migration, but for brevity, you'll only target these six workloads.
 
 > [!NOTE]
 > The virtual-desktop and backup-solution workloads might be considered technology platforms rather than workloads. However, during migration, that distinction has little bearing on how the collection of assets is deployed to the cloud.

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-gcp-azure.choose-database-solution
+title: Choose a database solution in Azure
+metadata:
+  title: Choose a database solution in Azure
+  description: "Learn about relational and NoSQL database services that are available in Azure. Learn how to choose the right service to migrate to from a database in Google Cloud."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-choose-database-solution.md)]

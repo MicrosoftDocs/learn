@@ -42,8 +42,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Explore [relational database services in Azure](/training/modules/explore-provision-deploy-relational-database-offerings-azure/).
 
-- Get an [introduction to Azure SQL Edge](/training/modules/intro-to-azure-sql-edge/).
-
 ## Learn more with optional hands-on exercises
 
 - Create and query a [SQL database in Azure (sandbox)](/training/modules/azure-database-fundamentals/exercise-create-sql-database).

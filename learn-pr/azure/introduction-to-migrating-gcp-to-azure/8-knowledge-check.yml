@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-gcp-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Test what you learned about Azure and how it compares to Google Cloud."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "You're using Google Cloud Storage to host videos that are published on your public-facing website. Now, you're migrating the site to the Azure App Service. Which of the following Azure services can you use to replace Google Cloud Storage?"
+    choices:
+    - content: "Azure Data Box"
+      isCorrect: false
+      explanation: "Incorrect. Azure Data Box is a data appliance transfer service for migrating large quantities of data into Azure. It's not for ongoing data storage and serving."
+    - content: "Azure Blob Storage"
+      isCorrect: true
+      explanation: "Correct. Azure Blob Storage is optimized for storing unstructured data such as videos and serving it quickly."
+    - content: "Azure Functions"
+      isCorrect: false
+      explanation: "Incorrect. Azure Functions is a service that hosts custom code for serverless execution. The service isn't designed to store and serve videos."
+  - content: "You regularly use the Operation Suite in Google Cloud to examine users and their actions to spot any inappropriate permissions. You're migrating your cloud VMs to Azure. What tool can you use for the same purpose?"
+    choices:
+    - content: "Azure Kubernetes Service (AKS)"
+      isCorrect: false
+      explanation: "Incorrect. AKS is an implementation of the Kubernetes container orchestration system. You can't use it to monitor user actions."
+    - content: "Event Grid"
+      isCorrect: false
+      explanation: "Incorrect. Event Grid is an event management and distribution tool. You can't use it to monitoring user actions."
+    - content: "Azure Monitor"
+      isCorrect: true
+      explanation: "Correct. By monitoring your resources and users, you can spot when permissions, roles, and policies might be incomplete or inappropriate"
+  - content: "You want to deploy containers into Kubernetes clusters hosted in both Google Cloud GKE and Azure AKS. Which declarative file format can you use?"
+    choices:
+    - content: "Bicep"
+      isCorrect: false
+      explanation: "Incorrect. Bicep is a declarative deployment file format but isn't supported in Google Kubernetes Engine (GKE)."
+    - content: "Kubernetes manifests"
+      isCorrect: true
+      explanation: "Correct. Both GKE and AKS support Kubernetes manifest files."
+    - content: "Terraform"
+      isCorrect: false
+      explanation: "Incorrect. Terraform is a declarative deployment file format but isn't supported in AKS."

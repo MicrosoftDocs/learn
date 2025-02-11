@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.wwl.implement-class-properties-methods
+metadata:
+  title: Implement Class Properties and Methods
+  description: "Learn how to implement read-write, read-only, and write-only class properties using property accessors and access modifiers, and how to implement methods and extension methods for a class."
+  ms.date: 02/10/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: dotnet
+  ai-usage: human-only
+title: Implement class properties and methods
+summary: Learn how to implement read-write, read-only, and write-only class properties using&nbsp;property accessors and access modifiers, and how to implement methods and extension methods for a class.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Explain how the field, property, and method members of a class are used in the class definition and instantiated objects.
+
+  -   Implement class properties using 'get' and 'set' property accessors.
+
+  -   Create classes that use automatically implemented properties.
+
+  -   Create read-only and write-only properties using access modifiers for properties and property accessors.
+
+  -   Create class methods and overloaded methods that accept zero or more arguments using either 'value' or 'reference' types.
+
+  -   Create extension methods for a class.
+
+  -   Implement classes that use a combination of properties and methods to manage encapsulated data.
+prerequisites: |
+  -   The ability to create classes and class constructors to instantiate objects in a C# app.
+
+  -   The ability to develop C# console apps that implement business logic using iteration statements, selection statements, and custom methods.
+
+  -   The ability to perform basic C# code debugging and exception handling in a Visual Studio Code environment.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- vs-code
+subjects:
+- app-development
+- custom-app-development
+units:
+- learn.wwl.implement-class-properties-methods.introduction
+- learn.wwl.implement-class-properties-methods.examine-class-members
+- learn.wwl.implement-class-properties-methods.create-class-properties
+- learn.wwl.implement-class-properties-methods.examine-automatically-implemented-properties
+- learn.wwl.implement-class-properties-methods.restrict-access-properties
+- learn.wwl.implement-class-properties-methods.create-class-methods
+- learn.wwl.implement-class-properties-methods.examine-extension-methods
+- learn.wwl.implement-class-properties-methods.exercise-create-properties-methods
+- learn.wwl.implement-class-properties-methods.knowledge-check
+- learn.wwl.implement-class-properties-methods.summary
+badge:
+  uid: learn.wwl.implement-class-properties-methods.badge
