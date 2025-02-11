@@ -4,9 +4,8 @@ title: Apply operators
 metadata:
   title: Apply operators
   description: In this unit, you learn about some basic operators. You also learn about converting between data types and capturing user input.
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.date: 02/24/2023
   ms.topic: unit
   ms.custom: team=nextgen

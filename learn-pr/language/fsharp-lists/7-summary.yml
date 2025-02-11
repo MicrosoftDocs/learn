@@ -5,9 +5,8 @@ metadata:
   title: Summary
   description: This unit summarizes what you've learned in this module.
   ms.date: 03/24/2023
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1

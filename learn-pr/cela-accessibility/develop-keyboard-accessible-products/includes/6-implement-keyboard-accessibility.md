@@ -60,8 +60,6 @@ One of the most important tips is to test your website or application using only
 
 ## Resources
 
-[Keyboard Accessibility](/windows/apps/design/accessibility/keyboard-accessibility)
-
-[Guidelines for Keyboard User Interface Design](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
-
-[Developing a Keyboard Interface](https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/)
+- [Keyboard Accessibility](/windows/apps/design/accessibility/keyboard-accessibility)
+- [Guidelines for Keyboard User Interface Design](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)
+- [Developing a Keyboard Interface](https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/)

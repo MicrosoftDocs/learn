@@ -29,6 +29,7 @@ subjects:
 modules:
 - learn.wwl.prepare-azure-ai-development
 - learn.wwl.explore-models-copilot-ai-studio
+- learn.wwl.ai-foundry-sdk
 - learn.get-started-prompt-flow-ai-studio
 - learn.wwl.build-copilot-ai-studio
 - learn.wwl.finetune-model-copilot-ai-studio

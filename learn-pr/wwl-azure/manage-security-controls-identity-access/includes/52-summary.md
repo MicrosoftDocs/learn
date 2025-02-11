@@ -1,0 +1,1 @@
+In this module, you learned to manage security controls in Microsoft Entra ID by securing user identities, protecting groups and external identities, implementing Microsoft Entra ID Protection, and enforcing security policies to mitigate identity-related threats and unauthorized access.
