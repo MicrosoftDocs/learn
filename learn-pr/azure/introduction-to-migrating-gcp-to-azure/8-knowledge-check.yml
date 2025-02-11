@@ -9,7 +9,6 @@ metadata:
   ms.author: carols
   ms.topic: unit
 durationInMinutes: 3
-content: |
 quiz:
   questions:
   - content: "You're using Google Cloud Storage to host videos that are published on your public-facing website. You want to migrate the site to Azure App Service. Which of the following Azure services can you use to replace Google Cloud Storage?"
