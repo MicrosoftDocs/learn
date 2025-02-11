@@ -1,8 +1,8 @@
-In this unit, you deploy your Java Tomcat Web App to Azure App Service.
+In this unit, you deploy your Java Tomcat web app to Azure App Service.
 
 ## Maven Plugin for Azure App Service
 
-Microsoft provides the Maven Plugin for Azure App Service to make it easier for Java developers to deploy applications to Azure. By using this plug-in, you can easily configure and deploy your application to Azure. Execute the following command to use Maven Plugin for Azure App Service.
+Microsoft provides the Maven Plugin for Azure App Service to make it easier for Java developers to deploy applications to Azure. By using this plug-in, you can easily configure and deploy your application to Azure. Use the steps in the following sections to configure the Maven Plugin for Azure App Service, compile your source code, and deploy your app.
 
 ### Configure the Maven Plugin for Azure App Service
 
@@ -12,7 +12,7 @@ To configure the Maven Plugin for Azure App Service, use the following command:
 mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
 ```
 
-After you use the command, some questions appear at the prompt, allowing you to configure various options. Configure the options and values in the following table:
+After you use the command, some questions appear at the prompt, allowing you to configure various options. Configure the options and values according to the information in the following table:
 
 | Item                           | Input value                     |
 |--------------------------------|---------------------------------|
@@ -23,7 +23,7 @@ After you use the command, some questions appear at the prompt, allowing you to 
 | Define value for runtime stack | TOMCAT 10.0                     |
 | Confirm (Y/N)                  | Y                               |
 
-The following output appears:
+After you configure the options, the following output appears:
 
 ```output
 mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
@@ -132,7 +132,7 @@ After the source code is compiled, use the following Maven Plugin for Azure Web 
 mvn azure-webapp:deploy
 ```
 
-When the deployment is completed, the following message is output:
+When the deployment is complete, the CLI shows the following output:
 
 ```bash
 [INFO] Successfully deployed the artifact to https://tomcatmavendemo.azurewebsites.net
