@@ -22,8 +22,12 @@ roles:
 - privacy-manager
 products:
 - priva
+- microsoft-purview
+- azure
+- m365
 subjects:
 - security
+- compliance
 modules:
 - learn.wwl.priva-understand-microsoft-priva
 - learn.wwl.priva-privacy-risk-management

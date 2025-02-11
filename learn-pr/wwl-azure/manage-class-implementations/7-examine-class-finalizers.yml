@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-class-implementations.examine-class-finalizers
+title: Examine class finalizers
+metadata:
+  title: Examine class finalizers
+  description: "Examine class finalizers"
+  ms.date: 02/10/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-examine-class-finalizers.md)]

@@ -12,6 +12,5 @@ This module was developed in collaboration with [Teach Access](https://teachacce
 
 ## Additional resources
 
-_Keyboard testing_. (n.d.). https://accessibility.web-resources.upenn.edu/testing-evaluating-accessibility/manual-testing/keyboard-testing
-
-Truelove, B. (2023, September 30). _Accessible Figma designs just got easier._ Accessibility Plugin by Microsoft Design. https://www.linkedin.com/pulse/accessible-figma-designs-just-got-easier-ben-truelove/?trackingId=6o88RA2ATkWCJlzn7jeJNg%3D%3D
+- _Keyboard testing_. (n.d.). https://accessibility.web-resources.upenn.edu/testing-evaluating-accessibility/manual-testing/keyboard-testing
+- Truelove, B. (2023, September 30). _Accessible Figma designs just got easier._ Accessibility Plugin by Microsoft Design. https://www.linkedin.com/pulse/accessible-figma-designs-just-got-easier-ben-truelove/?trackingId=6o88RA2ATkWCJlzn7jeJNg%3D%3D
