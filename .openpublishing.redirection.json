@@ -43174,6 +43174,16 @@
       "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/9-vulnerability-assessments.md",
       "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-availability/12-knowledge-check.md",
+      "redirect_url": "/training/modules/configure-virtual-machine-availability/11-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-availability/13-summary-resources.md",
+      "redirect_url": "/training/modules/configure-virtual-machine-availability/12-summary-resources",
+      "redirect_document_id": false
     }
   ]
 }
