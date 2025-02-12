@@ -27,11 +27,11 @@ This criterion focuses on making content perceivable by ensuring that it's disti
 - Ensuring that text can be resized up to **200%** without losing content or functionality
 - Ensuring that no loss of content or functionality occurs when the user adjusts text spacing and line height 
 - Ensuring that non-text content has a contrast ratio of at least **3:1** against adjacent colors 
-- Using text instead of images of text, except when a particular presentation is essential
+- Providing text instead of images of text, except when a particular presentation is essential
 - Ensuring that audio content that contains speech has a background sound that is either at least **20 dB** lower than the speech or that has no background sound at all
 - Providing users with options to control the visual presentation of text, such as foreground and background color, line spacing, and text alignment
 - Presenting content without loss of information or functionality and without requiring scrolling in two dimensions for vertical scrolling content at a width equivalent to **320 CSS pixels**
-- Ensuring that other content triggered by hover or focus can be dismissed, is hoverable, and remains visible until dismissed or no longer relevant 
+- Ensuring that other content triggered by hover or focus can be dismissed, allows users to hover, and remains visible until dismissed or no longer relevant 
 
 ### Keyboard accessible (Guideline 2.1)
 
