@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/29/2025
+  ms.date: 02/12/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -18,17 +18,6 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which App Service Plan can you implement to support the Production team's requirements?"
-    choices:
-    - content: "Basic B1"
-      isCorrect: false
-      explanation: "Incorrect. The Basic App Service plan doesn't meet the requirements."
-    - content: "Standard S1"
-      isCorrect: false
-      explanation: "Incorrect. The Standard App Service plan doesn't meet the requirements."
-    - content: "Premium V3 P1V3"
-      isCorrect: true
-      explanation: "Correct. The Premium App Service plan meets the requirements of scaling to 5 instances and 100 GB of remote storage."
   - content: "What scaling option provides more CPU, memory, or disk space without adding more virtual machines?"
     choices:
     - content: "Scale up"
@@ -40,6 +29,17 @@ quiz:
     - content: "Scale back"
       isCorrect: false
       explanation: "Incorrect. Scale back isn't a valid scaling option. The options are scale in and out, or scale up and down."
+  - content: "Which App Service Plan supports the Production team's 10 staging slots requirement?"
+    choices:
+    - content: "Basic B1"
+      isCorrect: false
+      explanation: "Incorrect. The Basic App Service plan doesn't support staging slots."
+    - content: "Standard S1"
+      isCorrect: false
+      explanation: "Incorrect. The Standard App Service plan only supports up to 5 staging slots."
+    - content: "Premium V3 P1V3"
+      isCorrect: true
+      explanation: "Correct. The Premium App Service plan supports up to 20 staging slots."
   - content: "Triggering an event at 8:00 AM on Saturday is an example of what type of rule?"
     choices:
     - content: "A metric-based rule."
