@@ -18,7 +18,7 @@ Dots per inch (DPI) measures the number of dots or pixels that can fit in a sing
 
 ### Text Scaling
 
-To support text scaling in web apps, it's important to choose your CSS units carefully, as some units will scale while others won't. The default font size is usually set to 16 pixels, and the text scale factor is applied to this base size. Relative units like **em**, **ex**, **ch**, or **percentages** are based on the font size of the parent element, so they will scale accordingly. This means that any child elements using these units will also resize. In contrast, absolute units or those relative to the viewport won't scale, meaning child elements using these units will remain unchanged, even if they use **em**, **ex**, **ch**, or **percentages**. However, child elements using **rem** will scale properly because **rem** is based on the font size of the root element rather than the parent element. For objects and containers that should scale with the font size, it's best to use **rem**, **em**, **ex**, or **ch** for their width and height. Percent-based widths and heights are relative to the dimensions of the parent element, so they will only scale if the dimensions of the parent element change.
+To support text scaling in web apps, it's important to choose your CSS units carefully, as some units will scale while others won't. The default font size is set to 16 pixels, and the text scale factor is applied to this base size. Relative units like **em**, **ex**, **ch**, or **percentages** are based on the font size of the parent element, so they'll scale accordingly. This means that any child elements using these units will also resize. In contrast, absolute units or those relative to the viewport won't scale, meaning child elements using these units will remain unchanged, even if they use **em**, **ex**, **ch**, or **percentages**. However, child elements using **rem** will scale properly because **rem** is based on the font size of the root element rather than the parent element. For objects and containers that should scale with the font size, it's best to use **rem**, **em**, **ex**, or **ch** for their width and height. Percent-based widths and heights are relative to the dimensions of the parent element, so they'll only scale if the dimensions of the parent element change.
 
 ### Resource
 
@@ -57,13 +57,13 @@ To ensure buttons respond well to text scaling, follow these steps:
 1. **Switch** to **REM Units**: Replace pixel-based **(px)** width and height with **rem** units to support text scaling. This allows the button to resize along with the text.
 1. **Adjust Positioning**: Change position values from pixels **(px)** to **rem** units to avoid overlap.
 1. **Handle Localization**: When checking localized versions, such as Russian, you might find the text wraps and spills out of the button. This is because the button height is fixed, assuming only one line of text. Set the height to auto or remove it entirely to allow the button to grow to fit the text.
-1. **Assess Responsiveness**: When testing the design in a narrower viewport, the buttons may extend beyond the viewport width. This is caused by the use of **`position: absolute`**, which assumes there is enough horizontal space for buttons to sit side by side. Remove it to allow buttons to stack and wrap naturally in narrow viewpoints.
+1. **Assess Responsiveness**: When testing the design in a narrower viewport, the buttons may extend beyond the viewport width. This is caused by the use of **`position: absolute`**, which assumes there's enough horizontal space for buttons to sit side by side. Remove it to allow buttons to stack and wrap naturally in narrow viewpoints.
 
     | Before | After |
     | --- | --- |
-    | `button {`<br>`width: 120px;`<br>`height: 30px;`<br>`overflow: hidden;`<br> `}`<br><br>`.button1 {`<br>`position: absolute;`<br> `margin-left: 0px;`<br>`margin-top: 0px;`<br>`}`<br><br>`.button2 {`<br>`position: absolute;`<br>`margin-left: 130px;`<br>`margin-top: 0px;`<br>`}` | <div style="vertical-align: top;">`button {`<br>`width: 7.5rem;`<br>`height: 1.875rem;`<br>`}`<br><br>`.button1 {`<br>`margin-left: 0rem;`<br>`margin-top: 0rem;`<br>`}`<br><br>`.button2 {`<br>`margin-left: 8.125rem;`<br>`margin-top: 0rem;`<br>`}` |
+    | `button {`<br>`width: 120px;`<br>`height: 30px;`<br>`overflow: hidden;`<br> `}`<br><br>`.button1 {`<br>`position: absolute;`<br> `margin-left: 0px;`<br>`margin-top: 0px;`<br>`}`<br><br>`.button2 {`<br>`position: absolute;`<br>`margin-left: 130px;`<br>`margin-top: 0px;`<br>`}` | `button {`<br>`width: 7.5rem;`<br>`height: 1.875rem;`<br>`}`<br><br>`.button1 {`<br>`margin-left: 0rem;`<br>`margin-top: 0rem;`<br>`}`<br><br>`.button2 {`<br>`margin-left: 8.125rem;`<br>`margin-top: 0rem;`<br>`}` |
 
-1. **Add Margins**: Finally, add margins between the buttons to ensure there is adequate spacing when they stack. This will help the buttons wrap correctly in a narrow viewport.
+1. **Add Margins**: Finally, add margins between the buttons to ensure there's adequate spacing when they stack. This will help the buttons wrap correctly in a narrow viewport.
 
     ```css
     .button {
@@ -127,7 +127,7 @@ In sum,
 
 | Do ✓ | Don't X |
 | --- | --- |
-| <div style="vertical-align: top;"><ul><li>max-width</li><li>auto</li><li>rem, ex, ch, %</li><li>@media all and (max-width: 18rem)</li><li>display: inline</li><li>display: inline-block</li><li>display: flex (check Internet Explorer compatibility)</li><li>display: grid (check Internet Explorer compatibility)</li><li>&lt;svg&gt;</li><li>&lt;img srcset=" "&gt;</li></ul> | <div style="vertical-align: top;"><ul><li>position: absolute (except overlays)</li><li>cm, mm, in, px, pt, pc (except margins, padding, border, large blocks)</li><li>&lt;table&gt; (except for tabular data)</li></ul> |
+| <ul><li>max-width</li><li>auto</li><li>rem, ex, ch, %</li><li>@media all and (max-width: 18rem)</li><li>display: inline</li><li>display: inline-block</li><li>display: flex (check Internet Explorer compatibility)</li><li>display: grid (check Internet Explorer compatibility)</li><li>&lt;svg&gt;</li><li>&lt;img srcset=" "&gt;</li></ul> | <ul><li>position: absolute (except overlays)</li><li>cm, mm, in, px, pt, pc (except margins, padding, border, large blocks)</li><li>&lt;table&gt; (except for tabular data)</li></ul> |
 
 ## Content on Hover or Focus
 

@@ -7,6 +7,7 @@ metadata:
   author: erzelman
   ms.author: erzelman
   ms.topic: module
+  ms.service: microsoft-365
 title: Develop accessible resize and reflow
 summary: |
   Resize and reflow are important for ensuring that web content remains accessible and usable across different devices, screen sizes, and user preferences. This ensures equal access to digital content and products, promoting inclusivity and meeting accessibility standards.
@@ -28,7 +29,7 @@ levels:
 roles:
   - developer
 products:
-  - M365
+  - m365
 subjects:
 - accessibility
 units:
