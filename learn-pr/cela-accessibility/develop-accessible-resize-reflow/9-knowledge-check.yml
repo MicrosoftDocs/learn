@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-accessible-resize-reflow.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge on how to develop accessible resize and reflow.
+  author: erzelman
+  ms.author: erzelman
+  ms.date: 02/12/2025
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is the primary purpose of using flexible grids and layouts in responsive web design?
+    choices:
+    - content: To make websites look identical across all devices.
+      isCorrect: false
+      explanation: Incorrect. Flexible grids and layouts are designed to ensure that a website can adapt to different screen sizes and orientations, providing a better user experience across devices.
+    - content: To ensure content adapts to different screen sizes and orientations.
+      isCorrect: true
+      explanation: Correct. Flexible grids and layouts are used in responsive web design to ensure that content can adapt seamlessly to different screen sizes and orientations, providing a consistent user experience across devices. 
+    - content: To limit the design to desktop screens only.
+      isCorrect: false
+      explanation: Incorrect. Flexible grids and layouts are designed to ensure that a website can adapt to different screen sizes and orientations, providing a better user experience across devices.
+    - content: To use fixed dimensions for all elements.
+      isCorrect: false
+      explanation: Incorrect. Flexible grids and layouts are designed to ensure that a website can adapt to different screen sizes and orientations, providing a better user experience across devices.
+  - content: Which of the following units is recommended for defining font sizes to ensure scalability and accessibility?
+    choices:
+    - content: Pixels (px)
+      isCorrect: false
+      explanation: Incorrect. Rem units are preferred for defining font sizes, as they enable scalability and ensure a more accessible design. Pixels and points do not scale well with user preferences.
+    - content: Rem (rem)
+      isCorrect: true
+      explanation: Correct. Using relative units like rems (rem) for font sizes allows content to scale proportionally based on the user's settings and the screen size, enhancing accessibility by ensuring that text remains readable and usable.
+    - content: Points (pt)
+      isCorrect: false
+      explanation: Incorrect. Rem units are preferred for defining font sizes, as they enable scalability and ensure a more accessible design. Pixels and points do not scale well with user preferences. 
+    - content: Inches (in)
+      isCorrect: false
+      explanation: Incorrect. Rem units are preferred for defining font sizes, as they enable scalability and ensure a more accessible design. Pixels and points do not scale well with user preferences.
+  - content: Why is it important to include the viewport meta tag in your HTML?
+    choices:
+    - content: To increase the website's loading speed.
+      isCorrect: false
+      explanation: Incorrect. The viewport meta tag is crucial for controlling how the layout appears on mobile browsers, enabling responsive design. It does not directly affect page speed or SEO.
+    - content: To control the layout on mobile browsers.
+      isCorrect: true
+      explanation: Correct. The viewport meta tag helps ensure that your content scales correctly on different devices by controlling the layout on mobile browsers, making it an essential component of responsive web design.
+    - content: To improve the website's SEO ranking.
+      isCorrect: false
+      explanation: Incorrect. The viewport meta tag is crucial for controlling how the layout appears on mobile browsers, enabling responsive design. It does not directly affect page speed or SEO.
+    - content: To reduce the amount of CSS needed.
+      isCorrect: false
+      explanation: Incorrect. The viewport meta tag is crucial for controlling how the layout appears on mobile browsers, enabling responsive design. It does not directly affect page speed or SEO.
+  - content: What is the role of accessibility APIs in ensuring proper resize and reflow?
+    choices:
+    - content: They are used to create static layouts only.
+      isCorrect: false
+      explanation: Incorrect. Accessibility APIs play a crucial role in helping assistive technologies understand and interact with UI elements, which is essential for proper resize and reflow support.
+    - content: They help assistive technologies understand and interact with UI elements to expose focus, text insertion points, and selection.
+      isCorrect: true
+      explanation: Correct. Accessibility APIs are vital because they enable assistive technologies to interpret and interact with UI elements, ensuring a better experience for all users.
+    - content: They restrict the use of flexible design techniques.
+      isCorrect: false
+      explanation: Incorrect. Accessibility APIs play a crucial role in helping assistive technologies understand and interact with UI elements, which is essential for proper resize and reflow support.
+    - content: They are only useful for visual content.
+      isCorrect: false
+      explanation: Incorrect. Accessibility APIs play a crucial role in helping assistive technologies understand and interact with UI elements, which is essential for proper resize and reflow support.
+  - content: Which of the following is a best practice for testing the accessibility of resize and reflow?
+    choices:
+    - content: Only testing on desktop devices.
+      isCorrect: false
+      explanation: Incorrect. The best practice is to test across various devices and screen sizes to ensure proper accessibility and responsiveness. Relying solely on desktop testing or automated tools can lead to overlooked issues.
+    - content: Testing across multiple devices and screen sizes.
+      isCorrect: true
+      explanation: Correct. Testing across multiple devices and screen sizes is a best practice to ensure your design is accessible and responsive for all users.
+    - content: Using fixed-width layouts.
+      isCorrect: false
+      explanation: Incorrect. The best practice is to test across various devices and screen sizes to ensure proper accessibility and responsiveness. Relying solely on desktop testing or automated tools can lead to overlooked issues.
+    - content: Only testing with automated tools.
+      isCorrect: false
+      explanation: Incorrect. The best practice is to test across various devices and screen sizes to ensure proper accessibility and responsiveness. Relying solely on desktop testing or automated tools can lead to overlooked issues.

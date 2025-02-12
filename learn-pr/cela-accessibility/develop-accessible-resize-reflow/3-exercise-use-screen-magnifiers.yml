@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-accessible-resize-reflow.exercise-use-screen-magnifiers
+title: Exercise - Use screen magnifiers
+metadata:
+  title: Exercise - Use screen magnifiers
+  description: Follow the steps in this exercise to use screen magnifiers.
+  author: erzelman
+  ms.author: erzelman
+  ms.date: 02/12/2025
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-use-screen-magnifiers.md)]

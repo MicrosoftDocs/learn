@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-accessible-resize-reflow.implement-screen-magnifiers
+title: Implement screen magnifiers
+metadata:
+  title: Implement screen magnifiers
+  description: Learn how to implement screen magnifiers.
+  author: erzelman
+  ms.author: erzelman
+  ms.date: 02/12/2025
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-implement-screen-magnifiers.md)]

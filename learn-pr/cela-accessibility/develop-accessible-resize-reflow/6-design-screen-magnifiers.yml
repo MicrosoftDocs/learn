@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-accessible-resize-reflow.design-screen-magnifiers
+title: Design screen magnifiers
+metadata:
+  title: Design screen magnifiers
+  description: Learn how to design screen magnifiers.
+  author: erzelman
+  ms.author: erzelman
+  ms.date: 02/12/2025
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-design-screen-magnifiers.md)]

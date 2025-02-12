@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-accessible-resize-reflow.review-considerations-for-screen-magnifiers
+title: Review Considerations for screen magnifiers
+metadata:
+  title: Review considerations for screen magnifiers
+  description: Review considerations for screen magnifiers.
+  author: erzelman
+  ms.author: erzelman
+  ms.date: 02/12/2025
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-review-considerations-for-screen-magnifiers.md)]
