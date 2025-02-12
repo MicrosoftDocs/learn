@@ -10,6 +10,6 @@ After completing this module, you're now able to:
 
 Resources for further learning:
 
-- [Default Interface Methods in C#](./dotnet/csharp/whats-new/csharp-8#default-interface-methods)
-- [Interfaces (C# Programming Guide)](./dotnet/csharp/programming-guide/interfaces/)
-- [System-Defined Interfaces in .NET](./dotnet/standard/design-guidelines/interface)
+- [Default Interface Methods in C#](learn.microsoft.com/dotnet/csharp/whats-new/csharp-8#default-interface-methods)
+- [Interfaces (C# Programming Guide)](learn.microsoft.com/dotnet/csharp/programming-guide/interfaces/)
+- [System-Defined Interfaces in .NET](learn.microsoft.com/dotnet/standard/design-guidelines/interface)
