@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.cela-accessibility.develop-products-with-accessible-color-contrast
+metadata:
+  author: erzelman
+  ms.author: erzelman
+  ms.date: 02/12/2025
+  title: Develop products with accessible color and contrast
+  description: Learn the importance of color and contrast in digital design for accessibility.
+  ms.topic: module
+  ms.service: microsoft-365
+  moduleType: standard
+title: Develop products with accessible color and contrast
+summary: |
+  Understanding color and contrast is essential for accessibility in digital products like apps and websites. It ensures that content is readable and navigable for all users, including those with visual impairments, promoting an inclusive online experience. 
+  In this module you'll learn the importance of color and contrast in digital design for accessibility. You will cover key principles and requirements, including contrast ratios and user interface (UI) components. You will recall essential considerations, apply practical tips for high-contrast needs, and identify tools for testing color contrast across all control states and themes.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain the importance of color and contrast in accessible design 
+  - Identify the accessibility principles and requirements related to color and contrast
+  - Recall the key considerations for using color and contrast in the design of digital products
+  - Apply tips for ensuring adequate color contrast when designing and prototyping your digital product
+  - Identify tips and tools for testing color contrast, ensuring all control states and themes are covered
+prerequisites: |
+  -	Basic knowledge of accessibility principles
+  -	Basic understanding of assistive technology
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- m365
+units:
+- learn.cela-accessibility.develop-products-with-accessible-color-contrast.introduction
+- learn.cela-accessibility.develop-products-with-accessible-color-contrast.color-contrast-accessibility-fundamentals
+- learn.cela-accessibility.develop-products-with-accessible-color-contrast.review-accessibility-guidelines
+- learn.cela-accessibility.develop-products-with-accessible-color-contrast.design-color-contrast-accessibility
+- learn.cela-accessibility.develop-products-with-accessible-color-contrast.implement-color-contrast-accessibility
+- learn.cela-accessibility.develop-products-with-accessible-color-contrast.test-color-contrast-accessibility
+- learn.cela-accessibility.develop-products-with-accessible-color-contrast.knowledge-check
+- learn.cela-accessibility.develop-products-with-accessible-color-contrast.summary
+badge:
+  uid: learn.cela-accessibility.develop-products-with-accessible-color-contrast-badge
