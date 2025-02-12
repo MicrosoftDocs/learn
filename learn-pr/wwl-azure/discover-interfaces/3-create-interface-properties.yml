@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-interfaces.create-interface-properties
+title: Implemnt interface properties
+metadata:
+  title: Implemnt interface properties
+  description: "Implemnt interface properties"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-create-interface-properties.md)]
