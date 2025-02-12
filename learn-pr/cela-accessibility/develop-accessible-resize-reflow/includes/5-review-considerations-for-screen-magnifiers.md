@@ -22,7 +22,7 @@ One of the most effective ways to assist users with low vision is by developing 
 
 Firstly, when testing your design drawings, please reduce your artboard size to 320x256. Utilizing auto layout will be tremendously beneficial in this process. It's crucial to avoid using groups and unstructured frames, as they can complicate things. Additionally, consider implementing a responsive relay out if feasible. The translation between larger screens and this smaller size should be straightforward, without rearranging the order of elements or shifting them to the opposite side of the layout.
 >[!div class="mx-imgBorder"]
->[![Screenshot of Reflow and Zoom Accessibility Annotation.](../media/reflow-zoom-accessibility-annotation.png)](../media/reflow-zoom-accessibility-annotation.png#lightbox)
+>[![Screenshot of various viewport sizes of Teach Access's website using media queries. From left to right: @media max-width: 768px, @media max-width: 660px, and @media max-width 360 on a mobile device.](../media/reflow-zoom-accessibility-annotation.png)](../media/reflow-zoom-accessibility-annotation.png#lightbox)
 
 ### Other Annotations
 
