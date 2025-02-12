@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-interfaces-code.exercise-create-flexible-code-with-interfaces
+title: Exercise create flexible code with Interfaces
+metadata:
+  title: Exercise create flexible code with Interfaces
+  description: "Exercise create flexible code with Interfaces in C# code."
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-create-flexible-code-with-interfaces.md)]

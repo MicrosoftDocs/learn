@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-interfaces-code.define-method-with-interface-as-parameter
+title: Define a method with interface as parameter
+metadata:
+  title: Define a method with interface as parameter
+  description: "Define a method with an interface as parameter in C# code."
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-define-method-with-interface-as-parameter.md)]
