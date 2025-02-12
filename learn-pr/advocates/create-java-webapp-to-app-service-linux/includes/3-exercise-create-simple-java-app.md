@@ -13,7 +13,7 @@ In this exercise, you create a minimal Java web application that takes an input 
 1. Option 1: Clone the repo from Azure samples and immediately deploy your web app.
 2. Option 2: Create a Maven Tomcat project from scratch.
 
-### Option 1: Clone the repo from Azure samples and immediately deploy your web app
+## Option 1: Clone the repo from Azure samples and immediately deploy your web app
 
 To clone the repo, use the following steps:
 
@@ -299,26 +299,26 @@ To create a servlet, use the following steps:
        }
     ```
 
-    Your new file structure looks like this:
+Your new file structure looks like this:
 
-    ```
-    └── simple-tomcat-app
-        ├── pom.xml
-        └── src
-            ├── main
-            │   ├── java
-            │   │   └── com
-            │   │       └── example
-            │   │           └── HelloServlet.java
-            │   ├── resources
-            │   └── webapp
-            │       ├── index.jsp
-            │       └── WEB-INF
-            │           └── web.xml
-            └── test
-                ├── java
-                └── resources
-    ```
+```
+└── simple-tomcat-app
+    ├── pom.xml
+    └── src
+        ├── main
+        │   ├── java
+        │   │   └── com
+        │   │       └── example
+        │   │           └── HelloServlet.java
+        │   ├── resources
+        │   └── webapp
+        │       ├── index.jsp
+        │       └── WEB-INF
+        │           └── web.xml
+        └── test
+            ├── java
+            └── resources
+```
 
 ### Deploy locally to Tomcat
 
