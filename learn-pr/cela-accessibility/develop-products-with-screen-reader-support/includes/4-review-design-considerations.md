@@ -139,7 +139,7 @@ Alerts/Error message/Live region Notifies user of completion, any change on UI a
    A desktop notification from Microsoft Teams showing an error message. The message reads, "Could not send message in chat with Kat, Kayo, Babak, and four additional people." To the left, an accessibility annotation for the error message.
 :::image-end:::
 
-:::image type="complex" source="../media/demonstration-screenreader-errors-sm.png" alt-text="Screenshot of error messages from a form requesting users to fill out the field of information before continuing." lightbox="../media/demonstration-screenreader-errors-lg.png":::
+:::image type="complex" source="../media/demonstration-screen-reader-errors-sm.png" alt-text="Screenshot of error messages from a form requesting users to fill out the field of information before continuing." lightbox="../media/demonstration-screenreader-errors-lg.png":::
    Error messages from the Form requesting users to fill out the field of information before continuing. The accessibility annotations make note of error stating that it's an "Empty State Error Message," and to "Enter your name" to fix the error.
 :::image-end:::
 

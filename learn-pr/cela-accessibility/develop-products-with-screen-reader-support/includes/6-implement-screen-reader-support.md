@@ -1,8 +1,8 @@
 There are three general approaches to implementing accessibility.
 
-1. Semantic (intrinsic) controls
-1. Custom controls
-1. Alternate controls
+- Semantic (intrinsic) controls
+- Custom controls
+- Alternate controls
 
 Let's elaborate on each of these approaches.
 
