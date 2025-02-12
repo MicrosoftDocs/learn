@@ -16,7 +16,7 @@ There are three crucial components of an accessibility tree:
 
 The name, role, and state/value of each element must be programmatically determined so that assistive technologies like screen readers can accurately convey this information to users. 
 
-:::image type="complex" source="../media/screen-reader-accessibility_dom-trees-sm.png" alt-text="Screenshot comparing a DOM tree and an accessibility tree." :::
+:::image type="complex" source="../media/screen-reader-accessibility-dom-trees-sm.png" alt-text="Screenshot comparing a DOM tree and an accessibility tree." :::
    A comparison between a DOM tree and an accessibility tree. The DOM tree shows HTML code with a toolbar labeled "Ribbon" containing a tab panel labeled "Home" with buttons for "Bold," "Italic," and "Underline." The accessibility tree lists a window labeled "PowerPoint," with a pane labeled "Ribbon." Inside the pane is a group labeled "Home," which contains buttons for "Bold," "Italic," and "Underline."
 :::image-end:::
 
@@ -50,7 +50,7 @@ In this model, the app and screen reader communicate only through the operating 
 
 For web apps, the browser communicates with the accessibility API by converting the DOM tree provided by the web app into an accessibility tree for the operating system. Each rendered element on the page has a corresponding element in the accessibility tree, ensuring standardization across operating systems and browsers despite differences in underlying accessibility APIs. Web apps can't raise events directly and have limited ability to implement patterns on elements. 
 
-:::image type="complex" source="../media/screen-reader-accessibility-tree-dom-tree-sm.png" alt-text="Screenshot of a diagram showing the interaction between an app, browser, operating system (OS), and screen reader through APIs.":::
+:::image type="complex" source="../media/screen-reader-accessibility-tree-dom-tree.png" alt-text="Screenshot of a diagram showing the interaction between an app, browser, operating system (OS), and screen reader through APIs.":::
    A diagram showing the interaction between an app, browser, operating system (OS), and screen reader through APIs. At the top is a box labeled "App," with a downward arrow labeled "DOM" pointing to a "Browser" box. Below the browser is the "OS" box, connected by arrows labeled "Events" and "Patterns" to both the browser and the "Screen Reader" at the bottom. Arrows indicate a two-way flow of events and patterns between the browser, OS, and screen reader using accessibility APIs.
 :::image-end:::
 
@@ -70,11 +70,11 @@ For the library components, "Name" will be same as per the design and same will 
 
 When we have multiple components with the same visual name, we should override the visual name. Why should we do this? We have different navigation for buttons, links. When a screen reader user runs with the respective navigation it will just announce the name and no other context which is visible on the UI. For for example, In this image it announces Create, Create, Browse when user navigates with button navigation. You can provide more context using Aria override or another way that includes the visible name of the control.   
 
-:::image type="complex" source="../media/keyboardandscreenreader-annotationswithmultiplecontrolswithsamenamewidgetdialogspecs-sm.png" alt-text="Screenshot showing incorrect example of multiple components with the same visual name." lightbox="../media/keyboardandscreenreader-annotationswithmultiplecontrolswithsamenamewidgetdialogspecs-lg.png":::
+:::image type="complex" source="../media/keyboard-screen-reader-multiple-components-same-name-sm.png" alt-text="Screenshot showing incorrect example of multiple components with the same visual name." lightbox="../media/keyboard-screen-reader-multiple-components-same-name-lg.png":::
    Example shown in below image is where two components are having same visual name as ‘create’ which is incorrect as it announces Create for both and browse for third button when user navigates with button navigation and will create confusion and doesn’t describe the purpose of each button.
 :::image-end:::
 
-:::image type="complex" source="../media/keyboardandscreenreader-annotationswithmultiplecontrolswithdifferentnamewidgetdialogspecs-sm.png" alt-text="Screenshot showing correct example of multiple components with different names." lightbox="../media/keyboardandscreenreader-annotationswithmultiplecontrolswithdifferentnamewidgetdialogspecs-lg.png":::
+:::image type="complex" source="../media/keyboard-screen-reader-mulitple-components-different-name-sm.png" alt-text="Screenshot showing correct example of multiple components with different names." lightbox="../media/keyboard-screen-reader-mulitple-components-different-name-lg.png":::
    Example shown in below image is where two ‘create’ buttons are there, but we have added extra text in an Aria-Label override that includes the visible name of the control such as "Create a new hire onboarding", "Create urgent collaboration template" & "Browse other template" respectively which describes the purpose of each button.
 :::image-end:::
 
@@ -104,7 +104,7 @@ Use headings to make it easy to jump through your designs. These are the titles 
 - There can be any number of H2s, H3s, and H4s.
 - Heading levels must follow an order. You can't jump from H2 to H4 without a subsequent H3.
 
-:::image type="complex" source="../media/screen-reader-annotations-headers-sm.png" alt-text="Screenshot of Microsoft Teams chat application interface with labeled annotations." lightbox="../media/screen-reader-annotations-headers-lg.png":::
+:::image type="complex" source="../media/screen-reader-annotations-headers.png" alt-text="Screenshot of Microsoft Teams chat application interface with labeled annotations." lightbox="../media/screen-reader-annotations-headers.png":::
    Microsoft Teams chat application interface with two labeled annotations. The interface shows multiple conversations with timestamps, and a chat window on the right displays messages. Label 1 point to the left panel (H1) displaying a list of contacts and chat history. Label 2 highlights the top right section, which contains search and menu options (H2).
 :::image-end:::
 
@@ -123,7 +123,7 @@ Landmarks can be useful additions when defining entire screen experiences on the
 - Fewer landmarks are better.
 - There can only be one banner landmark, which is **usually the header of the page.**
 
-:::image type="complex" source="../media/screen-reader-annotations-landmarks-sm.png" alt-text="Screenshot of Microsoft Teams chat application interface with labeled annotations for landmarks." lightbox="../media/screen-reader-annotations-landmarks-lg.png":::
+:::image type="complex" source="../media/screen-reader-annotations-landmarks.png" alt-text="Screenshot of Microsoft Teams chat application interface with labeled annotations for landmarks." lightbox="../media/screen-reader-annotations-landmarks.png":::
    Microsoft Teams chat application interface with four labeled annotations. The interface includes multiple chat messages with timestamps. Annotation 1 point to the right panel, titled Main, showing a conversation. Annotation 2 highlights the navigation panel. Annotation 3 points to the banner. Annotation 4 points to the search bar at the top.
 :::image-end:::
 
