@@ -47,7 +47,7 @@ Developers can create self-hosted agents for delivery through a wide range of ch
 
 ## Microsoft 365 Copilot Chat
 
-Business users can use the visual tools in Microsoft 365 Copilot Chat to author basic agents for common tasks.
+Business users can use the visual Copilot Studio Agent Builder tool in Microsoft 365 Copilot Chat to author basic agents for common tasks.
 
 > [!TIP]
 > For more information about authoring agents in Copilot Chat, see the **[Using agents in Microsoft 365 Copilot Chat](/copilot/agents)**.
