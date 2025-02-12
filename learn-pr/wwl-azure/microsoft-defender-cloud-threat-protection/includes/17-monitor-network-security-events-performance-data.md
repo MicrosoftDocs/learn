@@ -92,8 +92,8 @@ It will take a few minutes for the agent to be installed and start running any n
 
 Go through the following steps if you aren't collecting data that you're expecting.
 
- -  Verify that the agent is installed and running on the machine.
- -  See the Troubleshooting section of the article for the data source you're having trouble with.
- -  See [Monitor and troubleshoot DCR data collection in Azure Monitor](/azure/azure-monitor/essentials/data-collection-monitor) to enable monitoring for the DCR.
+1.  Verify that the agent is installed and running on the machine.
+2.  See the Troubleshooting section of the article for the data source you're having trouble with.
+3.  See [Monitor and troubleshoot DCR data collection in Azure Monitor](/azure/azure-monitor/essentials/data-collection-monitor) to enable monitoring for the DCR.
      -  View metrics to determine if data is being collected and whether any rows are being dropped.
      -  View logs to identify errors in the data collection.
