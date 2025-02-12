@@ -34,3 +34,4 @@ In this module, you demonstrate your ability to:
 - Basics of .NET to work with variables, lists, loops, conditionals and print messages on the console.
 - GitHub Copilot enabled in your GitHub account.
 - Basic understanding of how to install extensions in Visual Studio Code.
+

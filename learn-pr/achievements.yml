@@ -5120,6 +5120,36 @@ achievements:
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
   iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn.language.typescript-namespaces-organize-code.badge
+  type: badge
+  title: Organize code using TypeScript namespaces
+  summary: TypeScript provides two ways to organize code - namespaces and modules. This module explains how to organize TypeScript code using namespaces.
+  iconUrl: /training/achievements/typescript/typescript-namespaces-organize-code.svg
+- uid: learn.language.typescript-work-external-libraries.badge
+  type: badge
+  title: Access external libraries from TypeScript
+  summary: TypeScript provides two ways to organize your code, namespaces and modules. This module introduces you to modules in TypeScript (referred to as external modules in previous versions.)
+  iconUrl: /training/achievements/typescript/typescript-work-external-libraries.svg
+- uid: learn.language.typescript-get-started.badge
+  type: badge
+  title: Get started with TypeScript
+  summary: This module introduces you to the TypeScript language, why it was created, and how to use it for JavaScript development. You'll also set up a TypeScript development environment for future exercises.
+  iconUrl: /training/achievements/typescript/typescript-get-started.svg
+- uid: learn.language.typescript-implement-interfaces.badge
+  type: badge
+  title: Implement interfaces in TypeScript
+  summary: JavaScript doesn't support interfaces so, as a JavaScript developer, you may or may not have experience with them. In TypeScript, you can use interfaces as you would in traditional object-oriented programming. You can also use interfaces to define object types and this is the primary focus of this module.
+  iconUrl: /training/achievements/typescript/typescript-implement-interfaces.svg
+- uid: learn.typescript-develop-typed-functions.badge 
+  type: badge
+  title: Develop typed functions by using TypeScript
+  summary: If you know how to write functions in JavaScript, you know how to write functions in TypeScript. But TypeScript adds some new capabilities to the standard JavaScript functions to make them easier to work with.
+  iconUrl: /training/achievements/typescript/typescript-develop-typed-functions.svg
+- uid: learn.language.typescript-generics.badge
+  type: badge
+  title: Define generics in TypeScript
+  summary: Generics are code templates that you can define and reuse throughout your codebase. They provide a way to tell functions, classes, or interfaces what type you want to use when you call it.
+  iconUrl: /training/achievements/typescript/typescript-generics.svg
 - uid: learn.language.build-javascript-applications-typescript.trophy
   type: trophy
   title: Build JavaScript applications using TypeScript
