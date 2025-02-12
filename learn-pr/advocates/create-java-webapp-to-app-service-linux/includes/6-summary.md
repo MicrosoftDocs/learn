@@ -19,14 +19,14 @@ az group delete --name $RESOURCE_GROUP --yes --no-wait
 * [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?tabs=userlevel).
 * [Integrate your app with an Azure virtual network](/azure/app-service/web-sites-integrate-with-vnet).
 * [Azure App Service Hybrid Connections](/azure/app-service/app-service-hybrid-connections).
-* [Azure App Service on Linux pricing](https://azure.microsoft.com/pricing/details/app-service/linux/)
+* [Azure App Service on Linux pricing](https://azure.microsoft.com/pricing/details/app-service/linux/).
 * [Maven Plugins for Azure Services](https://github.com/microsoft/azure-maven-plugins).
 
 ### Java-related resources
 
 * [W3C: XHTML&trade; 1.0 The Extensible HyperText Markup Language (Second Edition)](http://www.w3.org/TR/xhtml1/#a_dtd_XHTML-1.0-Transitional).
 * [Jakarta Faces](https://projects.eclipse.org/projects/ee4j.faces)
-* [Jakarta Server Faces 2.3](https://jakarta.ee/specifications/faces/2.3/)
-* [Jakarta Expression Language 3.0](https://jakarta.ee/specifications/expression-language/3.0/)
+* [Jakarta Server Faces 2.3](https://jakarta.ee/specifications/faces/2.3/).
+* [Jakarta Expression Language 3.0](https://jakarta.ee/specifications/expression-language/3.0/).
 * [Project Lombok](https://projectlombok.org/)
 * [PrimeFaces](https://primefaces.github.io/primefaces/7_0/)
