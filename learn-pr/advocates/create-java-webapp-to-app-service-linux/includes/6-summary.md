@@ -1,8 +1,8 @@
-In this module, you learned how to create a simple Tomcat Java web application, use the Maven Plugin for Azure Web Apps, and deploy your application to Azure App Service.
+In this module, you learned how to create a Tomcat Java web application, use the Maven Plugin for Azure Web Apps, and deploy your application to Azure App Service.
 
 ## Clean up resources
 
-In this module, you created resources using your Azure subscription. To delete all the resources so you won't continue to be charged for them, use the following command:
+In this module, you created resources using your Azure subscription. To delete all the resources so you're longer charged for them, use the following command:
 
 ```azurecli
 az group delete --name $RESOURCE_GROUP --yes --no-wait
