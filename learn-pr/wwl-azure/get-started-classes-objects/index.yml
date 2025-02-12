@@ -42,6 +42,7 @@ roles:
 - student
 products:
 - vs-code
+- dotnet
 subjects:
 - app-development
 - custom-app-development
