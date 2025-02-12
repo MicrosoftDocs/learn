@@ -1,4 +1,4 @@
-Viewing data in its raw format rarely provides useful insights into the patterns and trends within the data. By applying some core analysis techniques to our data, we can transform it from unreadable columns and rows into visualizations that immediately reveal summaries and insights. 
+Viewing data in its raw format rarely provides useful insights into the patterns and trends within the data. By applying some core analysis techniques to our data, we can transform it from unreadable columns and rows into visualizations that immediately reveal summaries and insights.
 
 ## Learning objectives
 
