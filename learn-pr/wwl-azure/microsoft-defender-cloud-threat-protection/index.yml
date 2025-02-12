@@ -45,10 +45,10 @@ units:
 - learn.wwl.microsoft-defender-cloud-threat-protection.introduction
 - learn.wwl.microsoft-defender-cloud-threat-protection.workload-protections
 - learn.wwl.microsoft-defender-cloud-threat-protection.defender-servers
-- learn.wwl.microsoft-defender-cloud-threat-protection.defender-storage
-- learn.wwl.microsoft-defender-cloud-threat-protection.malware-scanning-defender-storage
-- learn.wwl.microsoft-defender-cloud-threat-protection.detect-threats-sensitive-data
-- learn.wwl.microsoft-defender-cloud-threat-protection.enable-microsoft-defender-storage
+- learn.wwl.microsoft-defender-cloud-threat-protection.defender-for-storage
+- learn.wwl.microsoft-defender-cloud-threat-protection.malware-scanning-in-defender-for-storage
+- learn.wwl.microsoft-defender-cloud-threat-protection.detect-threats-to-sensitive-data
+- learn.wwl.microsoft-defender-cloud-threat-protection.deploy-microsoft-defender-for-storage
 - learn.wwl.microsoft-defender-cloud-threat-protection.configure-azure-built-in-policy
 - learn.wwl.microsoft-defender-cloud-threat-protection.configure-defender-servers-storage
 - learn.wwl.microsoft-defender-cloud-threat-protection.vulnerability-assessments
