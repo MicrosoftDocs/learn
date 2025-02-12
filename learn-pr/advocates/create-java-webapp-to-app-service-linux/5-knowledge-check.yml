@@ -29,7 +29,7 @@ quiz:
       choices:
         - content: It automatically converts Java code to a faster language.
           isCorrect: false
-          explanation: Incorrect. Azure App Service does not convert code. It hosts applications as they are.
+          explanation: Incorrect. Azure App Service doesn't convert code. It hosts applications as they are.
         - content: It eliminates the need for a build automation tool like Maven.
           isCorrect: false
           explanation: Incorrect. Build automation tools are still needed for compiling and packaging the application before deployment.
@@ -47,16 +47,16 @@ quiz:
           explanation: Correct! The main role of a servlet is to handle client requests and generate server-side responses.
         - content: To define the application's user interface.
           isCorrect: false
-          explanation: Incorrect. Servlets work on the server side and do not manage the user interface, which is handled by client-side components.
+          explanation: Incorrect. Servlets work on the server side and don't manage the user interface, which is handled by client-side components.
 
     - content: Why is Apache Tomcat used in Java web application development?
       choices:
         - content: It serves as a servlet container that implements Java Servlet and JSP specifications.
           isCorrect: true
           explanation: Correct! Tomcat provides an environment to run Java servlets and JSPs, which is essential for Java web applications.
-        - content: It is a front-end framework for designing responsive web interfaces.
+        - content: It's a front-end framework for designing responsive web interfaces.
           isCorrect: false
-          explanation: Incorrect. Tomcat is a server-side technology and does not deal with front-end design.
-        - content: It is a database system used for storing application data.
+          explanation: Incorrect. Tomcat is a server-side technology and doesn't deal with front-end design.
+        - content: It's a database system used for storing application data.
           isCorrect: false
           explanation: Incorrect. Tomcat is a web server and servlet container, not a database system.
