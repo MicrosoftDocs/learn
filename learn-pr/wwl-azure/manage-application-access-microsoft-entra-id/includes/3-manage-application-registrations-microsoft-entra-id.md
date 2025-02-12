@@ -111,7 +111,7 @@ If you choose not to use a certificate, you can create a new client secret.
 
 Once you've saved the client secret, the value of the client secret is displayed. This is only displayed once, so copy this value and store it where your application can retrieve it, usually where your application keeps values like `clientId`, or`authority` in the source code. You'll provide the secret value along with the application's client ID to sign in as the application.
 
-:::image type="content" source="../media/client-secret-example-2702a4a4.png" alt-text="Screenshot showing an example of how to generate a new client secret.":::
+:::image type="content" source="../media/client-secret-example-2702a4a4-d0445c0f-f6cbfd2b.png" alt-text="Screenshot showing an example of how to generate a new client secret.":::
 
 
 ## Configure access policies on resources
