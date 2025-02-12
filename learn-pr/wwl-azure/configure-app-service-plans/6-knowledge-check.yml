@@ -36,7 +36,7 @@ quiz:
       explanation: "Incorrect. The Basic App Service plan doesn't support staging slots."
     - content: "Standard S1"
       isCorrect: false
-      explanation: "Incorrect. The Standard App Service plan only supports up to 5 staging slots."
+      explanation: "Incorrect. The Standard App Service plan only supports up to five staging slots."
     - content: "Premium V3 P1V3"
       isCorrect: true
       explanation: "Correct. The Premium App Service plan supports up to 20 staging slots."
