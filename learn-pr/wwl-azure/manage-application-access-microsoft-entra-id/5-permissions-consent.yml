@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Manage app registration permission consent
   description: "Manage app registration permission consent"
-  ms.date: 02/11/2025
+  ms.date: 02/12/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
