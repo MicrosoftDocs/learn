@@ -36,5 +36,6 @@ modules:
 - learn.wwl.fundamentals-generative-ai
 - learn.wwl.prepare-azure-ai-development
 - learn.wwl.responsible-ai-studio
+- learn.wwl.ai-agent-fundamentals
 trophy:
   uid: learn.intro-generative-ai.trophy

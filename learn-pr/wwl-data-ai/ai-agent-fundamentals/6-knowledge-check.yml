@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-agent-fundamentals.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: Test your knowledge of AI agents.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 02/12/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which of the following best describes an AI agent?"
+    choices:
+    - content: "A developer who specializes in building generative AI solutions."
+      isCorrect: false
+      explanation: "Incorrect. An AI agent isn't a developer who specializes in building generative AI solutions."
+    - content: "A software service that uses AI to assist users with information and task automation."
+      isCorrect: true
+      explanation: "Correct. An AI agent is a software service that uses AI to assist users with information and task automation."
+    - content: "A marketplace for off-the-shelf AI software components."
+      isCorrect: false
+      explanation: "Incorrect. An AI agent isn't a marketplace for off-the-shelf AI software components."
+  - content: "Which AI agent development service offers a choice of generative AI models from multiple vendors in the Azure AI Foundry model catalog?"
+    choices:
+    - content: "Azure AI Agent Service"
+      isCorrect: true
+      explanation: "Correct. Azure AI Agent Service supports many models from the Azure AI Foundry model catalog."
+    - content: "OpenAI Assistants API"
+      isCorrect: false
+      explanation: "Incorrect. OpenAI Assistants API is restricted to OpenAI models."
+    - content: "Microsoft 365 Copilot Chat"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft 365 Copilot Chat doesn't offer a selection of models for agent development."
+  - content: "Whet element of an Azure AI Agent Service agent enables it to *ground* prompts with contextual data?"
+    choices:
+    - content: "Model"
+      isCorrect: false
+      explanation: "Incorrect. The model doesn't provide its own grounding data."
+    - content: "Code interpreter tool"
+      isCorrect: false
+      explanation: "Incorrect. The code interpreter tool doesn't ground prompts."
+    - content: "Knowledge"
+      isCorrect: true
+      explanation: "Correct. Adding a knowledge source enables an agent to ground prompts with contextual data."
+
