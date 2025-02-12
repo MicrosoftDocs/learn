@@ -13,7 +13,7 @@ By the end of this module, you can do the following things:
 ## Prerequisites
 
 - Your own Azure subscription. [Create one for free.](https://azure.microsoft.com/free/).
-- The [Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=java-9121-yoterada) installed on your computer
+- [Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=java-9121-yoterada)
 - [JDK 17](https://www.oracle.com/java/technologies/downloads/)
 - [Apache Tomcat 10.1.x](https://tomcat.apache.org/download-10.cgi)
 - [Maven 3.9.9](https://maven.apache.org/download.cgi?.=)
