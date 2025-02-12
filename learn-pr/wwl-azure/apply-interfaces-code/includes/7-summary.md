@@ -7,9 +7,3 @@ After completing this module, you're now able to:
 - Use interfaces as method parameters to promote loose coupling and enhance testability.
 - Implement common system-defined interfaces such as `IComparable`, `IEnumerable`, and `IDisposable`.
 - Override default implementations in specific classes to provide custom behavior.
-
-Resources for further learning:
-
-- [Default Interface Methods in C#](learn.microsoft.com/dotnet/csharp/whats-new/csharp-8#default-interface-methods)
-- [Interfaces (C# Programming Guide)](learn.microsoft.com/dotnet/csharp/programming-guide/interfaces/)
-- [System-Defined Interfaces in .NET](learn.microsoft.com/dotnet/standard/design-guidelines/interface)

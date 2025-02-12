@@ -11,4 +11,3 @@ When you're finished with the exercise, return here for:
 - A summary of your learning.
 - To earn a badge for completing this module.
 
-[![Button to launch exercise.](../media/button-start-exercise.png)](https://github.com/MicrosoftLearning/mslearn-develop-oop-csharp/tree/main/Instructions/Labs)
