@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-everyday-tasks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: rcaoer
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]

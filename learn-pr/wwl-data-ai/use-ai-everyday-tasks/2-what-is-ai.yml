@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-everyday-tasks.what-is-ai
+title: What AI and how does it work?
+metadata:
+  title: What AI and how does it work?
+  description: "What AI and how does it work?"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: rcaoer
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-ai.md)]

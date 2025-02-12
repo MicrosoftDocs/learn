@@ -1,0 +1,4 @@
+- Recap of key points
+- Sign up for 50-day challenge
+- Further learning/resources
+- Link to Guinness attestation/badging?

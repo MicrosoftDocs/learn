@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-everyday-tasks.move-beyond-basic-prompting
+title: Move beyond basic prompting
+metadata:
+  title: Move beyond basic prompting
+  description: "Move beyond basic prompting"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: rcaoer
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-move-beyond-basic-prompting.md)]

@@ -1,0 +1,15 @@
+AI is no longer just for tech experts and scientists. With tools like Microsoft Copilot, AI is becoming accessible to everyone for everyday tasks. Imagine having a personal assistant that can help you draft emails, create reports, and even generate creative content like poetry or code. AI can make your everyday tasks easier and more efficient, allowing you to focus on what matters most to you.
+
+In this module, you'll discover the basics of how AI works and how you can use it to be more productive. Whether you're looking to automate routine tasks or explore new ways to innovate, AI can help you achieve more.
+
+## Before you start | ?Or should this go in the exercise?
+
+In this module we use Microsoft Copilot to interact with generative AI. To follow along and complete the exercise, you will need to do a few things to get set up.
+
+ **NEED DETAILS HERE:**
+1. Sign Up for a Microsoft Account. If you don't already have a Microsoft account, sign up for one at https://signup.live.com.
+2. Step 2 ...
+3. Step 3 ...
+
+
+Now, let's  learn a little bit about generative AI and how it can help you with everyday tasks. 
