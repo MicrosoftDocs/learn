@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.microsoft-defender-cloud-threat-protection.introduction
-title: Introduction
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.summary
+title: Summary
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Introduction
-  description: "Introduction"
+  title: Summary
+  description: "Summary"
   ms.date: 02/12/2025
   author: wwlpublish
   ms.author: serlingdavis
@@ -14,4 +14,4 @@ metadata:
   - references_regions
 durationInMinutes: 3
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/31-summary.md)]

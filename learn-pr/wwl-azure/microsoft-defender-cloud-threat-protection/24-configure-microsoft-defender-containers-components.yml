@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.configure-microsoft-defender-containers-components
+title: Configure Microsoft Defender for Containers components
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Configure Microsoft Defender for Containers components
+  description: "Configure Microsoft Defender for Containers components"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 3
+content: |
+  [!include[](includes/24-configure-microsoft-defender-containers-components.md)]
