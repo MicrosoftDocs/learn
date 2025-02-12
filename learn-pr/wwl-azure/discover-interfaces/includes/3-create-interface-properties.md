@@ -1,10 +1,10 @@
 As a developer tasked with creating your project's interfaces, you start the process by designing an interface with **properties**. Then, you develop a class that implements these properties.
 
-An interface in C# is like a blueprint. It outlines the features (properties or methods) that classes need to have if they want to use this interface. For this eproject you define an iterface that defines properties only (without methods).
+An interface in C# is like a blueprint. It outlines the features (properties or methods) that classes need to have if they want to use this interface. For this project, you define an interface that defines properties only (without methods).
 
 - Use the `interface` keyword to create an interface.
 - Define properties in the interface without a body.
-- Interfaces can optionally provide default implementations for members, including properties, but this is rare.
+- Interfaces can optionally provide default implementations for members, including properties, but happens infrequently.
 
 The following code creates an `IVehicle` interface with `Speed` and `Color` properties:
 
@@ -21,9 +21,9 @@ public interface IVehicle
 
 ## Develop a class that implements the interface
 
-When a class, like `Car`, decides to implement an interface, such as `IVehicle`, it's like saying "I'm going to build a vehicle". This means the `Car` must include all the features (properties or methods) outlined in the `IVehicle` blueprint.
+When a class, like `Car`, decides to implement an interface, such as `IVehicle`, it's like saying "I'm going to build a vehicle." The `Car` must include all the features (properties or methods) outlined in the `IVehicle` blueprint.
 
-- The `Car : IVehicle` syntax is used to indicate that `Car` is implementing the `IVehicle` interface. This might look familiar as it's the same syntax used for inheritance.
+- The `Car : IVehicle` syntax is used to indicate that `Car` is implementing the `IVehicle` interface. You use the familiar syntax, the same as used for inheritance.
 - The `Car` must provide public, non-static implementations for all the features listed in the `IVehicle` blueprint.
 - If `Car` decides to implement multiple blueprints (interfaces) that have similar features, it needs to be clear about which feature comes from which blueprint.
 
