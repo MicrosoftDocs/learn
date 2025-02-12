@@ -66,7 +66,6 @@ Colors
 - Focus border color: #131313
 Contrast of Color Pairs
 - Exterior fill color: Focus border color = 16.167:1
-
 ```
 
 In this case, the contrast is sufficient, meeting our contrast requirements of 3:1 for non-text content. 
@@ -124,5 +123,5 @@ User testing for color contrast is crucial to ensure that websites and applicati
 
 - [Firefox Accessibility Inspector](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast) 
 
-- [[Chrome DevTools](https://developer.chrome.com/docs/devtools)](https://developer.chrome.com/docs/devtools)
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools)
 
