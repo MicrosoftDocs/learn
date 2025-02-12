@@ -1,4 +1,4 @@
-If you have considered screen reader support when creating your digital product, much of the work for supporting screen magnifiers is already complete. Screen magnifiers also rely on the same Accessibility API to interact with apps, meaning apps and web apps can take advantage of the accessibility features they've already implemented.
+If you have considered screen reader support when creating your digital product, much of the work for supporting screen magnifiers is already complete. Screen magnifiers also rely on the same Accessibility API to interact with apps, meaning apps and web apps can take advantage of the accessibility features they implemented.
 >[!div class="mx-imgBorder"]
 >[![Screenshot of a visualization of a DOM tree illustrating how an application communicates with the browser, operating system, and assistive technologies like screen readers and magnifiers through the Accessibility API.](../media/resize-reflow-implementation-accessibility-dom-trees.png)](../media/resize-reflow-implementation-accessibility-dom-trees.png#lightbox)
 
@@ -10,7 +10,7 @@ Make sure that the focus is set on the correct element to help users navigate th
 
 ### Implement Text Pattern
 
-To improve accessibility for users relying on screen magnifiers, it's crucial to correctly implement the text pattern feature. This feature enables screen magnifiers to accurately track and read selected text within the application. By integrating the text cursor indicator with the same accessibility API utilized by screen readers, you create a smooth experience for users who require both text magnification and spoken feedback. When integrating the text pattern, it's important to specify the proper bounds for all text ranges. Each piece of text should have clearly defined start and end points, enabling the screen magnifier to accurately identify which text is highlighted or read. This clarity is crucial for enhancing navigation within the text and facilitating user interactions, such as selecting, copying, or moving through text. Additionally, it's important to provide detailed information about the text's attributes, such as its style, size, and formatting, so users can receive auditory feedback about the text they're interacting with. This information helps them understand the context and navigate through the content without confusion.
+To improve accessibility for users relying on screen magnifiers, it's crucial to correctly implement the text pattern feature. This feature enables screen magnifiers to accurately track and read selected text within the application. By integrating the text cursor indicator with the same accessibility API utilized by screen readers, you create a smooth experience for users who require both text magnification and spoken feedback. When integrating the text pattern, it's important to specify the proper bounds for all text ranges. Each piece of text should clearly defined start and end points, enabling the screen magnifier to accurately identify which text is highlighted or read. This clarity is crucial for enhancing navigation within the text and facilitating user interactions, such as selecting, copying, or moving through text. Additionally, it's important to provide detailed information about the text's attributes, such as its style, size, and formatting, so users can receive auditory feedback about the text they're interacting with. This information helps them understand the context and navigate through the content without confusion.
 
 ### DPI Scaling
 
@@ -30,7 +30,7 @@ To design for various screen sizes and aspect ratios, work closely with your des
 
 To make your web apps reflow, use the rich layout capabilities of your presentation engine. Use declarative properties where possible and write code to customize behavior only when necessary. Additionally, follow best practices for implementing content on hover or focus, ensuring it's dismissible, hoverable, and persistent.
 
-For web apps, ensure the page renders at the correct scale initially by adding **`<meta name="viewport" content="width=device-width, initial-scale=1">`** to the head. Note that the WCAG reflow documentation doesn't set the viewport width, causing it to render at a small scale by default on an iPhone.
+For web apps, ensure the page renders at the correct scale initially by adding **`<meta name="viewport" content="width=device-width, initial-scale=1">`** to the head. The WCAG reflow documentation doesn't set the viewport width, causing it to render at a small scale by default on an iPhone.
 
 ```html
 <meta name="viewport" 
@@ -63,7 +63,7 @@ To ensure buttons respond well to text scaling, follow these steps:
     | --- | --- |
     | `button {`<br>`width: 120px;`<br>`height: 30px;`<br>`overflow: hidden;`<br> `}`<br><br>`.button1 {`<br>`position: absolute;`<br> `margin-left: 0px;`<br>`margin-top: 0px;`<br>`}`<br><br>`.button2 {`<br>`position: absolute;`<br>`margin-left: 130px;`<br>`margin-top: 0px;`<br>`}` | `button {`<br>`width: 7.5rem;`<br>`height: 1.875rem;`<br>`}`<br><br>`.button1 {`<br>`margin-left: 0rem;`<br>`margin-top: 0rem;`<br>`}`<br><br>`.button2 {`<br>`margin-left: 8.125rem;`<br>`margin-top: 0rem;`<br>`}` |
 
-1. **Add Margins**: Finally, add margins between the buttons to ensure there's adequate spacing when they stack. This will help the buttons wrap correctly in a narrow viewport.
+1. **Add Margins**: Finally, add margins between the buttons to ensure there's adequate spacing when they stack. This helps the buttons wrap correctly in a narrow viewport.
 
     ```css
     .button {
@@ -79,7 +79,7 @@ To ensure buttons respond well to text scaling, follow these steps:
     }
     ```
 
-To layout buttons that fill the width of the pane and switch from one row to two rows, you can use different CSS techniques. Start by using **`display: flex`** on the container, which provides various options for sizing, spacing, aligning, and wrapping a linear list of items. **`Add display: flex`** to the container and set additional properties on both the container and items.
+To layout buttons that fill the width of the pane and switch from one row to two rows, you can use different CSS techniques. Start by using **`display: flex`** on the container, which provides various options for sizing, spacing, aligning, and wrapping a linear list of items. **`Add display: flex`** to the container and set extra properties on both the container and items.
 
 ```css
 .buttoncontainer {
@@ -169,4 +169,4 @@ Key elements for a functional custom tooltip include:
     }
     ```
 
-Be cautious of potential bugs, such as the tooltip not disappearing when the control key is pressed if the keydown handler on the button calls **stopPropagation**. Removing the **stopPropagation** call will fix this issue.
+Be cautious of potential bugs, such as the tooltip not disappearing when the control key is pressed if the keydown handler on the button calls **stopPropagation**. Removing the **stopPropagation** call can fix this issue.
