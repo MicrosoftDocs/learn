@@ -35,7 +35,7 @@ Role     image
 
 ### Button (\<button>)
 
-For a button, use the **\<button>** tag or input **type=button**. This is much better than using a division and adding styling and event handlers to make it look and act like a button. Use a button to tag and style it the way you want using CSS. Ensure buttons have descriptive text to convey their purpose. In the example, the name comes from the tag contents, and the role is button. 
+For a button, use the **\<button>** tag or input **type=button**. This is much better than using a division and adding styling and event handlers to make it look and act like a button. Use a button to tag and style it the way you want to use CSS. Ensure buttons have descriptive text to convey their purpose. In the example, the name comes from the tag contents, and the role is button. 
 
 ```
 <button>End Session</button> 
