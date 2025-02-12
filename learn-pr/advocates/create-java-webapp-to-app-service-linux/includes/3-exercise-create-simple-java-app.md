@@ -1,12 +1,12 @@
-Web applications are widely used to handle real-world tasks such as inventory management, online forms, and customer-facing portals. In this module, you learn how to create and deploy a simple Java web application using Apache Tomcat, a popular open-source server.
+Web applications are widely used to handle real-world tasks such as inventory management, online forms, and customer-facing portals. In this module, you learn how to create and deploy a Java web application using Apache Tomcat, a popular open-source server.
 
 Suppose you're a developer working on a project to build a dynamic web application where users can enter data and interact with your platform in real time. Your client wants this app to be available locally for testing, and on the cloud for easy access. This setup lets you test on your local machine first, and then deploys to a live environment as a seamless transition. Building this setup from scratch gives you flexibility for future updates and configurations.
 
-In this module, you explore the essential steps for building and deploying a Java web app with Tomcat. You have two options: either clone an existing project from Azure Samples for immediate deployment, or build a new project from scratch with Maven. Topics in this module include setting up your Maven project, configuring Tomcat, deploying the app locally, and using tools like Maven to manage dependencies and packages.
+In this module, you explore the essential steps for building and deploying a Java web app with Tomcat. You have two options: either clone an existing project from Azure Samples for immediate deployment, or build a new project from scratch with Maven. This module covers setting up your Maven project, configuring Tomcat, deploying the app locally, and using tools like Maven to manage dependencies and packages.
 
 By the end of this module, you can create and deploy Java-based web applications on Tomcat, preparing you to support web application deployment both locally and in cloud-hosted environments.
 
-## Create a simple Java Tomcat web app
+## Create a Java Tomcat web app
 
 In this exercise, you create a minimal Java web application that takes an input and displays the result on the screen. You then deploy the web app locally on your computer using Tomcat. You have the following two options:
 
@@ -325,7 +325,7 @@ To create a servlet, use the following steps:
 Use the following steps to configure your local Tomcat server so you can deploy to it:
 
 > [!WARNING]
-> Storing usernames and passwords directly in configuration files like **tomcat-users.xml** and Maven's **settings.xml** in plaintext isn't secure and is generally not recommended, especially for production environments. However, since this is just a Learn module, other alternatives are outside the scope of this module. Don't use your real username and password!
+> Storing usernames and passwords directly in configuration files like **tomcat-users.xml** and Maven's **settings.xml** in plaintext isn't secure and isn't generally recommended, especially for production environments. However, since this is just a Learn module, other alternatives are outside the scope of this module. Don't use your real username and password!
 
 1. Edit the Tomcat configuration file **conf/tomcat-users.xml** by using the following code example:
 
