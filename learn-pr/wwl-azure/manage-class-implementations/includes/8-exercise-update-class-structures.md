@@ -1,7 +1,7 @@
 This exercise guides you through the process of updating class implementations to improve code quality in C# applications.
 
 > [!IMPORTANT]
-> This exercise requires a Visual Studio Code environment with the C# Dev Kit extension installed. For help with configuring the Visual Studio Code environment, see [https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/](/training/modules/install-configure-visual-studio-code/).
+> This exercise requires a Visual Studio Code environment with the C# Dev Kit extension installed. For help with configuring the Visual Studio Code environment, see [Install and configure Visual Studio Code for C# development](/training/modules/install-configure-visual-studio-code/).
 
 When you select the launch exercise button, you're navigated to a public GitHub page that provides instructions for this exercise.
 
@@ -11,4 +11,4 @@ When you're finished with the exercise, return here for:
 - A summary of what you've learned.
 - To earn a badge for completing this module.
 
-[![Button to launch exercise.](../media/button-start-exercise.png)](https://microsoftlearning.github.io/mslearn-develop-oop-csharp/Instructions/Labs/l2p2-lp1-m3-exercise-implement-classes-csharp-apps.html)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2303869&azure-portal=true)
