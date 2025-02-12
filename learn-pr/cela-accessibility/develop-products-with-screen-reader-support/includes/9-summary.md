@@ -11,10 +11,10 @@ This module was developed in collaboration with [Teach Access](https://teachacce
 
 ## References
 
-- _Accessibility insights_. (n.d.). https://accessibilityinsights.io/docs/web/overview/
-- _Accessibility insights_. (n.d.-b). https://accessibilityinsights.io/docs/windows/overview/
-- _Accessibility Inspector | Apple Developer Documentation_. (n.d.). Apple Developer Documentation. https://developer.apple.com/documentation/accessibility/accessibility-inspector
-- _Get started on Android with TalkBack - Android Accessibility Help._ (n.d.). https://support.google.com/accessibility/android/answer/6283677?hl=en
-- Jaws._ (n.d.-b).https://www.freedomscientific.com/products/software/jaws/
-- Truelove, B. (2023 September 29). _Accessible Figma designs just got easier_. LinkedIn. <https://www.linkedin.com/pulse/accessible-figma-designs-just-got-easier-ben-truelove/?trackingId=6o88RA2ATkWCJlzn7jeJNg%3D%3D>
-- _VoiceOver user guide for Mac_. (n.d.). Apple Support. https://support.apple.com/en-in/guide/voiceover/welcome/mac
+- [Accessibility insights for Web](https://accessibilityinsights.io/docs/web/overview/)
+- [Accessibility insights for Windows](https://accessibilityinsights.io/docs/windows/overview/)
+- [Accessibility Inspector | Apple Developer Documentation](https://developer.apple.com/documentation/accessibility/accessibility-inspector)
+- [Get started on Android with TalkBack - Android Accessibility Help](https://support.google.com/accessibility/android/answer/6283677?hl=en)
+- [Jaws](https://www.freedomscientific.com/products/software/jaws/)
+- [Accessible Figma designs just got easier](https://www.linkedin.com/pulse/accessible-figma-designs-just-got-easier-ben-truelove/?trackingId=6o88RA2ATkWCJlzn7jeJNg%3D%3D)
+- [VoiceOver user guide for Mac Apple Support](https://support.apple.com/en-in/guide/voiceover/welcome/mac)
