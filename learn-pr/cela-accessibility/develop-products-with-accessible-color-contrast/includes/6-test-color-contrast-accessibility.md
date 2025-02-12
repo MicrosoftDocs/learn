@@ -18,7 +18,7 @@ Here's a list of ways to test color contrast:
 
 When testing for color contrast, make sure to cover all control states. For example, this toggle button has different stakes, such as Normal, Hover, Focus, Hover + Focus, and Selected. 
 
-:::image type="content" source="../media/color-contrast-testing.png" alt-text="Screenshot of A diagram displaying the color contrast for the  same button in different interaction states. The states are labeled as  "Normal", "Hover", "Focused", and "Hover + Focused". On the right, similar  states are shown for the selected button: "Selected", "Selected + Hover",  "Selected + Focused", and "Selected + Hover + Focused"." lightbox="../media/color-contrast-testing.png":::
+:::image type="content" source="../media/color-contrast-testing.png" alt-text="Screenshot of A diagram displaying the color contrast for the  same button in different interaction states. The states are labeled as  Normal, Hover, Focused, and Hover + Focused. On the right, similar states are shown for the selected button: Selected, Selected + Hover,  Selected + Focused, and Selected + Hover + Focused." lightbox="../media/color-contrast-testing.png":::
 
 You should also test all themes. For example, Microsoft Office apps have four themes: colorful, dark gray, black, and white. 
 
@@ -37,16 +37,36 @@ MacOS and iOS operating systems support light and dark modes.
 
 ### Exercise 1
 
-```
 Using one of the tools mentioned in this section, let's analyze the contrast for Microsoft PowerPoint's icon for inserting a new slide. Since users need to recognize the icon to know which feature it is for, the contrast requirement applies to it. The icon has five colors and five boundaries where the color pairs need sufficient contrast. 
+
+```
+Colors
+- Plus sign color: #379e4e
+- Exterior fill color: #f3f2f1
+- Interior fill color: #fafafa
+- Inner border color: #797774
+- Outer border color: #3a3aa38
+Contrast of Color Pairs
+- Plus sign color: Exterior fill color = 3.047:1
+- Plus sign color: Interior fill color = 3.264:1
+- Inner border color: Interior fill color = 4.277:1
+- Outer border color: Exterior fill color = 10.195:1
+- Outer border color: Interior fill color = 10.921:1
 ```
 
 :::image type="content" source="../media/power-point-insert-new-slide-button-focused.png" alt-text="Screenshot of the Microsoft PowerPoint button to insert a new slide." lightbox="../media/power-point-insert-new-slide-button-focused.png":::
 
 All five instances pass the 3:1 contrast ratio requirement for UI components. Although the contrast for the interior and exterior fills are low, they both have sufficient contrast with the border that separates them. 
 
-```
 A keyboard focus visual indicator appears when we place the keyboard focus on this icon. The visual indicator is also important for meaning, so the contrast requirement also applies to it. We need to check the color contrast between the color of the focus border and the exterior fill color adjacent to it.
+
+```
+Colors
+- Exterior fill color: #f3f2f1
+- Focus border color: #131313
+Contrast of Color Pairs
+- Exterior fill color: Focus border color = 16.167:1
+
 ```
 
 In this case, the contrast is sufficient, meeting our contrast requirements of 3:1 for non-text content. 
@@ -56,17 +76,33 @@ In this case, the contrast is sufficient, meeting our contrast requirements of 3
 
 In this example, the icon and the text for the **Link** button on the ribbon are dimmed and have low contrast, but the control is disabled. 
 
-:::image type="content" source="../media/power-point-icon-text-for-link-disabled-state.png" alt-text="Screenshot of the PowerPoint ribbon showing various options: "Icons," "SmartArt," "Link," "Text Box," and "Footer" . The "Link" control is  disabled; its text and icon are dimmed and have low contrast." lightbox="../media/power-point-icon-text-for-link-disabled-state.png":::
+:::image type="content" source="../media/power-point-icon-text-for-link-disabled-state.png" alt-text="Screenshot of the PowerPoint ribbon showing various options: Icons, SmartArt, Link, Text Box, and Footer. The Link control is disabled; its text and icon are dimmed and have low contrast." lightbox="../media/power-point-icon-text-for-link-disabled-state.png":::
+
+Controls in a disabled state are exempt from contrast requirements. Users don't have to read these controls because they can't interact with them. Since this is a common design for disabled controls, a compromise was made regarding the requirement, and the exemption was added.
 
 ```
-Controls in a disabled state are exempt from contrast requirements. Users don't have to read these controls because they can't interact with them. Since this is a common design for disabled controls, a compromise was made regarding the requirement, and the exemption was added.
+Colors
+- Icon color: #ababaa
+- Text color: #bebbc5
+- Background color: #eeedec
+Contrast of Color Pairs
+- Icon color: Background color = 1.965:1
+- Text color: Background color = 1.617:1
 ```
 
 #### Exercise 3
 
 When we hover over a button in the PowerPoint toolbar, it renders with a darker fill that has low contrast compared to the normal background fill. 
 
-:::image type="content" source="../media/power-point-toolbar-pencil-button-hovered.png" alt-text="Screenshot of Various buttons in the PowerPoint toolbar. The  pencil button is in hovered state, and shows a darker fill than the rest of  the buttons. **Colors** - Hover background color: #5f5f5e  -  Icon color: #ffffff  **Contrast  of Color Pairs** -  Hover background color: Icon color = 6.392:1." lightbox="../media/power-point-toolbar-pencil-button-hovered.png":::
+:::image type="content" source="../media/power-point-toolbar-pencil-button-hovered.png" alt-text="Screenshot of Various buttons in the PowerPoint toolbar. The  pencil button is in hovered state, and shows a darker fill than the rest of  the buttons." lightbox="../media/power-point-toolbar-pencil-button-hovered.png":::
+
+```
+Colors
+- Hover background color: #5f5f5e
+- Icon color: #ffffff
+Contrast of Color Pairs
+- Hover background color: Icon color = 6.392:1
+```
 
 Recall that the hover state is not important for meaning. People can already tell that these buttons are clickable without being able to see the hover indicator. However, the icon still needs to meet contrast requirements while in the hover state, which means that the hover background color and the icon need sufficient contrast. In this case, it does. 
 

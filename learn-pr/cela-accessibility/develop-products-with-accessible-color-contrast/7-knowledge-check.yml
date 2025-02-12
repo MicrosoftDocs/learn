@@ -29,16 +29,16 @@ quiz:
 
   - content: What is the minimum contrast ratio for normal text required by WCAG Success Criterion 1.4.3?
     choices:
-    - content: 3.1
+    - content: "3.1"
       isCorrect: false
       explanation: Incorrect. Some of these contrast ratios, like 3:1 and 7:1, are important in certain situations but don't meet the minimum requirement for normal text. The 3:1 ratio is only for large text, and 7:1 is part of stricter guidelines. A ratio of 2:1 is much too low and doesn't meet any WCAG standards for making text readable.
-    - content: 4.5:1
+    - content: "4.5:1"
       isCorrect: true
       explanation: Correct. WCAG Success Criterion 1.4.3 requires a minimum contrast ratio of 4.5:1 for normal text to ensure it is readable for users with visual impairments, such as low vision or color blindness.
-    - content: 7:1
+    - content: "7:1"
       isCorrect: false
       explanation: Incorrect. Some of these contrast ratios, like 3:1 and 7:1, are important in certain situations but don't meet the minimum requirement for normal text. The 3:1 ratio is only for large text, and 7:1 is part of stricter guidelines. A ratio of 2:1 is much too low and doesn't meet any WCAG standards for making text readable.
-    - content: 2:1
+    - content: "2:1"
       isCorrect: false
       explanation: Incorrect. Some of these contrast ratios, like 3:1 and 7:1, are important in certain situations but don't meet the minimum requirement for normal text. The 3:1 ratio is only for large text, and 7:1 is part of stricter guidelines. A ratio of 2:1 is much too low and doesn't meet any WCAG standards for making text readable.
 
