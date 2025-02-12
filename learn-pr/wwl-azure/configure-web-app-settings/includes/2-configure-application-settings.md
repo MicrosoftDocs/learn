@@ -7,7 +7,7 @@ Special characters in the value of an App Setting must be escaped as needed by t
 
 Application settings can be accessed by navigating to your app's management page and selecting **Environment variables > Application settings**.
 
-:::image type="content" source="../media/configure-app-settings.png" alt-text="Screenshot of Navigating to Environment variables > Application settings".:::
+:::image type="content" source="../media/configure-app-settings.png" alt-text="Screenshot of Navigating to Environment variables > Application settings.":::
 
 ## Adding and editing settings
 
