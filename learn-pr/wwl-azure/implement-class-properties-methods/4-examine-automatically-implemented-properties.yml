@@ -4,10 +4,12 @@ title: Examine automatically implemented properties
 metadata:
   title: Examine automatically implemented properties
   description: "Examine automatically implemented properties"
-  ms.date: 02/10/2025
+  ms.date: 02/12/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 12
 content: |
   [!include[](includes/4-examine-automatically-implemented-properties.md)]
