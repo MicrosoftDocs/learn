@@ -43072,6 +43072,116 @@
       "source_path": "learn-pr/language/typescript-work-external-libraries/index.yml",
       "redirect_url": "https://www.typescriptlang.org/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/10-defender-for-storage.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/4-defender-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/11-malware-scanning-in-defender-for-storage.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/5-malware-scanning-defender-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/12-detect-threats-to-sensitive-data.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/6-detect-threats-sensitive-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/13-deploy-microsoft-defender-for-storage.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/7-enable-microsoft-defender-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/14-configure-azure-built-in-policy.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/8-configure-azure-built-in-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/15-microsoft-defender-cloud-devops-security.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/25-microsoft-defender-cloud-devops-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/16-devops-security-support-prerequisites.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/26-devops-security-support-prerequisites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/17-devops-environment-security-posture.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/27-devops-environment-security-posture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/18-connect-your-git-hub-lab-environment-microsoft-defender-cloud.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/28-connect-your-git-hub-lab-environment-microsoft-defender-cloud",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/19-configure-microsoft-security-devops-github-action.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/29-configure-microsoft-security-devops-github-action",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/20-security-alerts-incidents.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/21-automate-responses-microsoft-defender-cloud-triggers.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/22-view-remediate-findings-from-vulnerability-assessments.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/23-knowledge-check.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/30-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/24-summary.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/31-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/3-protect-your-servers-with-defender-servers.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/4-protect-your-databases-with-defender-databases.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/5-container-security-microsoft-defender-containers.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/21-container-security-microsoft-defender-containers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/6-managed-kubernetes.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/22-managed-kubernetes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/7-defender-containers-architecture.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/23-defender-containers-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/8-configure-microsoft-defender-containers-components.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/24-configure-microsoft-defender-containers-components",
+      "redirect_document_id": false
+    },
+   {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/9-vulnerability-assessments.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/",
+      "redirect_document_id": false
     }
   ]
 }

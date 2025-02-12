@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Recommend when to use and configure a Microsoft Entra Application Proxy, including authentication
   description: "Recommend when to use and configure a Microsoft Entra Application Proxy, including authentication"
-  ms.date: 02/11/2025
+  ms.date: 02/12/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
