@@ -14,5 +14,5 @@ metadata:
     - wwl-ai-copilot
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-what-are-ai-agents.md)]
+  [!include[](includes/2-what-are-agents.md)]
 
