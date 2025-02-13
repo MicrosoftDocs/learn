@@ -23,7 +23,7 @@ Interface properties typically don't have any code inside them, they just specif
 When a class, like `Car`, decides to implement an interface, such as `IVehicle`, it's like saying "I'm going to build a vehicle." The `Car` must include all the features (properties or methods) outlined in the `IVehicle` blueprint.
 
 - The `Car : IVehicle` syntax is used to indicate that `Car` is implementing the `IVehicle` interface. You use the familiar syntax, the same as used for inheritance.
-- The `Car` must provide public, non-static implementations for all the features listed in the `IVehicle` blueprint.
+- The `Car` must provide public, nonstatic implementations for all the features listed in the `IVehicle` blueprint.
 - If `Car` decides to implement multiple blueprints (interfaces) that have similar features, it needs to be clear about which feature comes from which blueprint.
 
 Here's how `Car` implements the `IVehicle` interface in code:

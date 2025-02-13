@@ -6,7 +6,7 @@ Interfaces in C# are structural contracts that define a set of related functions
 - **Code Quality**
 - **Polymorphism**
 
-## Code Reusability
+## Code reusability
 
 By defining a common set of methods in an interface, multiple classes can implement those methods, creating interchangeable objects. This is one of the main advantages of using interfaces in C#.
 
@@ -41,17 +41,17 @@ public class Bike : IVehicle
 
 In this example, both the `Car` and `Bike` classes implement the `IVehicle` interface. The `Drive()` method is reused in both classes, demonstrating code reusability.
 
-## Enhanced Maintainability
+## Enhanced maintainability
 
 Interfaces contribute to the maintainability of your code by promoting modularity. If you need to add a new type of vehicle to your system, you can simply create a new class that implements the `IVehicle` interface. 
 
 For example, if you want to add a `Truck` class, you can do so without affecting the existing `Car` and `Bike` classes. This separation of concerns makes your code easier to manage, update, and debug, enhancing its overall maintainability.
 
-## Error Prevention
+## Error prevention
 
 If a class declares it implements an interface but doesn't provide all necessary methods, the C# compiler will generate an error. This ensures adherence to the defined contract and helps prevent potential errors in your code.
 
-## Code Quality
+## Code quality
 
 Interfaces in C# help to structure your code and make it adaptable. They allow classes to indicate they can perform certain actions or behaviors. This is particularly beneficial in a team setting where different developers are working on different parts of a system. By using interfaces, each developer has a clear contract of what a class should do, allowing them to work independently on their respective classes without needing to know the internal workings of each other's classes. This leads to cleaner, more organized code, enhancing overall code quality.
 

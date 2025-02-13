@@ -25,15 +25,15 @@ quiz:
       explanation: "Incorrect. Interface properties aren't required to be static."
   - content: "You're implementing an interface in a class. What must you ensure?"
     choices:
-    - content: "Provide public, non-static implementations for all interface members."
+    - content: "Provide public, nonstatic implementations for all interface members."
       isCorrect: true
-      explanation: "Correct. When a class implements an interface, it must provide public, non-static implementations for all interface members."
+      explanation: "Correct. When a class implements an interface, it must provide public, nonstatic implementations for all interface members."
     - content: "Provide private implementations for all interface members."
       isCorrect: false
       explanation: "Incorrect. Interface members must be implemented as public, not private."
     - content: "Provide static implementations for all interface members."
       isCorrect: false
-      explanation: "Incorrect. Interface members should be implemented as non-static."
+      explanation: "Incorrect. Interface members should be implemented as nonstatic."
   - content: "In a scenario where you need to implement an interface in a class, what syntax is used?"
     choices:
     - content: "class ClassName : InterfaceName"
