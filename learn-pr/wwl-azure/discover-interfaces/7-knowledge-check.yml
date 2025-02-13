@@ -22,7 +22,7 @@ quiz:
       explanation: "Correct. Interface properties typically don't have a body; they only define accessors."
     - content: "They must be static."
       isCorrect: false
-      explanation: "Incorrect. Interface properties are not required to be static."
+      explanation: "Incorrect. Interface properties aren't required to be static."
   - content: "You're implementing an interface in a class. What must you ensure?"
     choices:
     - content: "Provide public, non-static implementations for all interface members."
@@ -41,10 +41,10 @@ quiz:
       explanation: "Correct. The correct syntax to implement an interface in a class is 'class ClassName : InterfaceName'."
     - content: "class ClassName implements InterfaceName"
       isCorrect: false
-      explanation: "Incorrect. The 'implements' keyword is not used in C#; the correct keyword is ':'."
+      explanation: "Incorrect. The 'implements' keyword isn't used in C#; the correct keyword is ':'."
     - content: "class ClassName extends InterfaceName"
       isCorrect: false
-      explanation: "Incorrect. The 'extends' keyword is not used in C#; the correct keyword is ':'."
+      explanation: "Incorrect. The 'extends' keyword isn't used in C#; the correct keyword is ':'."
   - content: "What is a key benefit of using interfaces in C# programming?"
     choices:
     - content: "They allow for better code organization and flexibility."
@@ -55,4 +55,4 @@ quiz:
       explanation: "Incorrect. Interfaces don't allow multiple inheritance of classes; they allow a class to implement multiple interfaces."
     - content: "They provide default implementations for all members."
       isCorrect: false
-      explanation: "Incorrect. Interfaces may define default implementations for some members starting with C# 8.0, but this is not their primary benefit."
+      explanation: "Incorrect. Interfaces may define default implementations for some members starting with C# 8.0, but this isn't their primary benefit."

@@ -13,7 +13,8 @@ public interface IVehicle
 }
 ```
 
-Note how the `Drive` method is declared without a body in the interface. When adding methods to an interface, include the method's signature in the interface declaration, but not its body. The class implementing the interface provides the method's body."
+> [!NOTE]
+> How the `Drive` method is declared without a body in the interface. When adding methods to an interface, include the method's signature in the interface declaration, but not its body. The class implementing the interface provides the method's body.
 
 ## Construct a class that implements the interface
 

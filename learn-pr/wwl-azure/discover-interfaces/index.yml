@@ -23,13 +23,13 @@ abstract: |
 
   - Understand the value of interfaces.
 prerequisites: |
-  - Visual Studio Code installed with the C# Dev Kit
+  - Visual Studio Code installed with the C# Dev Kit.
 
-  - Basic knowledge of the Visual Studio Code IDE
+  - Basic knowledge of the Visual Studio Code IDE.
 
-  - Basic understanding of the C# programming language
+  - Basic understanding of the C# programming language.
 
-  - Familiarity with classes
+  - Familiarity with classes.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

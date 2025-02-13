@@ -13,7 +13,7 @@ In this module, you learn how to design an interface with properties in .NET, de
 
 ## Prerequisites
 
-- Visual Studio Code installed with th3 C# Dev Kit
-- Basic knowledge of the Visual Studio Code IDE
-- Basic understanding of the C# programming language
-- Familiarity with classes
+- Visual Studio Code installed with the C# Dev Kit.
+- Basic knowledge of the Visual Studio Code IDE.
+- Basic understanding of the C# programming language.
+- Familiarity with classes.
