@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-interfaces.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 02/13/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 2
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is true about properties in an interface?"
+    choices:
+    - content: "They can have instance data fields."
+      isCorrect: false
+      explanation: "Incorrect. Properties in an interface don't declare instance data fields."
+    - content: "They typically don't have a body."
+      isCorrect: true
+      explanation: "Correct. Interface properties typically don't have a body; they only define accessors."
+    - content: "They must be static."
+      isCorrect: false
+      explanation: "Incorrect. Interface properties aren't required to be static."
+  - content: "You're implementing an interface in a class. What must you ensure?"
+    choices:
+    - content: "Provide public, nonstatic implementations for all interface members."
+      isCorrect: true
+      explanation: "Correct. When a class implements an interface, it must provide public, nonstatic implementations for all interface members."
+    - content: "Provide private implementations for all interface members."
+      isCorrect: false
+      explanation: "Incorrect. Interface members must be implemented as public, not private."
+    - content: "Provide static implementations for all interface members."
+      isCorrect: false
+      explanation: "Incorrect. Interface members should be implemented as nonstatic."
+  - content: "In a scenario where you need to implement an interface in a class, what syntax is used?"
+    choices:
+    - content: "class ClassName : InterfaceName"
+      isCorrect: true
+      explanation: "Correct. The correct syntax to implement an interface in a class is 'class ClassName : InterfaceName'."
+    - content: "class ClassName implements InterfaceName"
+      isCorrect: false
+      explanation: "Incorrect. The 'implements' keyword isn't used in C#; the correct keyword is ':'."
+    - content: "class ClassName extends InterfaceName"
+      isCorrect: false
+      explanation: "Incorrect. The 'extends' keyword isn't used in C#; the correct keyword is ':'."
+  - content: "What is a key benefit of using interfaces in C# programming?"
+    choices:
+    - content: "They allow for better code organization and flexibility."
+      isCorrect: true
+      explanation: "Correct. Interfaces provide a way to define contracts for classes, enabling better code organization and flexibility."
+    - content: "They allow classes to inherit from multiple base classes."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces don't allow multiple inheritance of classes; they allow a class to implement multiple interfaces."
+    - content: "They provide default implementations for all members."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces may define default implementations for some members starting with C# 8.0, but this isn't their primary benefit."

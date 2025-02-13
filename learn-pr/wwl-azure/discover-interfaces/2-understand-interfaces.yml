@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-interfaces.understand-interfaces
+title: Understand interfaces
+metadata:
+  title: Understand interfaces
+  description: "Understand interfaces in C# code."
+  ms.date: 02/13/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-interfaces.md)]
