@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.cela-accessibility.develop-products-with-screen-reader-support
+metadata:
+  ms.author: erzelman
+  author: erzelman
+  ms.date: 02/06/2025
+  title: Develop products with screen reader support
+  description: Learn how to develop products with screen reader support to ensure accessibility for users who are blind or have low vision. This module covers essential principles, design considerations, and practical tips for creating inclusive websites and apps that meet accessibility standards.
+  ms.topic: module
+  moduleType: standard
+  ms.service: microsoft-365
+title: Develop products with screen reader support
+summary: |
+  Screen reader support is essential because it enables individuals who are blind or have low vision to access and interact with websites and apps by converting text and other elements into speech and/or Braille. This ensures equal access to digital content and products, promoting inclusivity and helping meet accessibility standards. 
+
+  In this module, you learn the importance of creating websites and apps that support screen readers. You'll also cover key principles for designing screen reader support. Finally, you'll recall essential design considerations, apply practical tips, and identify tools and tips to test for screen reader support. 
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain the importance of designing websites and apps that support screen readers
+  - Explain how screen readers interact with websites and apps, including how they communicate and function together
+  - Define key terms related to screen reader support, such as sequential navigation, link purpose, programmatically determined link context, labels, headings, landmarks, and text alternatives
+  - Apply tips for ensuring screen reader support when designing and prototyping websites and apps
+  - Recall tips and tools for testing screen support
+prerequisites: |
+  - Basic knowledge of accessibility principles
+  - Basic understanding of assistive technology
+  - Basic understanding of keyboard accessibility
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.cela-accessibility.develop-products-with-screen-reader-support.introduction
+- learn.cela-accessibility.develop-products-with-screen-reader-support.screen-reader-fundamentals
+- learn.cela-accessibility.develop-products-with-screen-reader-support.review-accessibility-guidelines
+- learn.cela-accessibility.develop-products-with-screen-reader-support.review-design-considerations
+- learn.cela-accessibility.develop-products-with-screen-reader-support.design-for-screen-reader-support
+- learn.cela-accessibility.develop-products-with-screen-reader-support.implement-screen-reader-support
+- learn.cela-accessibility.develop-products-with-screen-reader-support.test-screen-reader-support
+- learn.cela-accessibility.develop-products-with-screen-reader-support.knowledge-check
+- learn.cela-accessibility.develop-products-with-screen-reader-support.summary
+badge:
+  uid: learn.cela-accessibility.develop-products-with-screen-reader-support-badge
