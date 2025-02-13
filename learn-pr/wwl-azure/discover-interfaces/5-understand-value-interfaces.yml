@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-interfaces.understand-value-interfaces
+title: Understand the value of interfaces
+metadata:
+  title: Understand the value of interfaces
+  description: "Understand the value of interfaces in C# code."
+  ms.date: 02/13/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-understand-value-interfaces.md)]
