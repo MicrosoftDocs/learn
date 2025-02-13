@@ -3,14 +3,14 @@ uid: learn.java-on-azure-container-apps.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  titleSuffix: Azure
   description: Check your knowledge of Java on Azure Container Apps.
   author: KarlErickson
   ms.author: hangwan
-  ms.date: 01/21/2025
+  ms.date: 02/14/2025
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
+    - devx-track-java
     - devx-track-extended-java
   ms.contributors: hangwan97
 durationInMinutes: 3

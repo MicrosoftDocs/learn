@@ -3,14 +3,14 @@ uid: learn.java-on-azure-container-apps.2-prepare-spring-boot-application
 title: Prepare Spring Boot application
 metadata:
   title: Prepare Spring Boot application
-  titleSuffix: Azure
   description: Learn about application readiness before deploying to Azure Container Apps.
   author: KarlErickson
   ms.author: hangwan
-  ms.date: 01/21/2025
+  ms.date: 02/14/2025
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
+    - devx-track-java
     - devx-track-extended-java
   ms.contributors: hangwan97
 durationInMinutes: 5
