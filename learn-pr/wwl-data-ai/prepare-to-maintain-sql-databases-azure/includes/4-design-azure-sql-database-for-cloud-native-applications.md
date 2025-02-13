@@ -66,7 +66,7 @@ Elastic pools provide a cost-effective solution for software as a service applic
 
 Due to the nature of this feature, it's recommended to monitor your resources continually to identify concurrent performance spikes that could affect other databases part of the same elastic pool. Often, you may need to revisit your allocation strategy to make sure there's enough resource available for all databases sharing the same elastic pool.
 
-Elastic pool is a good fit for multi-tenant architecture with low average utilization, where each tenant has its own copy of the database.
+Elastic pool is a good fit for multitenant architecture with low average utilization, where each tenant has its own copy of the database.
 
 ## Network options
 
