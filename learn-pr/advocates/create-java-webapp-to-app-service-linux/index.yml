@@ -20,7 +20,7 @@ metadata:
 title: Deploy a Java web app to a Tomcat server on Azure App Service
 summary: Learn how to create, configure, and deploy a Java Tomcat web application to Azure App Service using Maven.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you'll be able to do the following things:
   - Create a Tomcat app using Maven.
   - Deploy a Tomcat app locally to your machine.
   - Deploy your Java Tomcat web application to Azure App Service.

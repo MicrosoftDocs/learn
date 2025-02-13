@@ -4,7 +4,7 @@ Suppose you're a developer working on a project to build a dynamic web applicati
 
 In this module, you explore the essential steps for building and deploying a Java web app with Tomcat. You have two options: either clone an existing project from Azure Samples for immediate deployment, or build a new project from scratch with Maven. This module covers setting up your Maven project, configuring Tomcat, deploying the app locally, and using tools like Maven to manage dependencies and packages.
 
-By the end of this module, you can create and deploy Java-based web applications on Tomcat, preparing you to support web application deployment both locally and in cloud-hosted environments.
+By the end of this module, you'll be able to create and deploy Java-based web applications on Tomcat, preparing you to support web application deployment both locally and in cloud-hosted environments.
 
 ## Create a Java Tomcat web app
 
@@ -77,7 +77,7 @@ mvn archetype:generate \
     -DinteractiveMode=false
 ```
 
-The command produces the following output:
+The following is typical output:
 
 ```output
 [INFO] ----------------------------------------------------------------------------

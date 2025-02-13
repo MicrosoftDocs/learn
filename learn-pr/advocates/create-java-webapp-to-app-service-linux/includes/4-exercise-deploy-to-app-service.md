@@ -12,7 +12,7 @@ To configure the Maven Plugin for Azure App Service, use the following command:
 mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
 ```
 
-After you use the command, some questions appear at the prompt, allowing you to configure various options. Configure the options and values according to the information in the following table:
+After you use the command, some questions appear at the prompt, enabling you to configure various options. Configure the options and values according to the information in the following table:
 
 | Item                           | Input value                     |
 |--------------------------------|---------------------------------|
@@ -23,7 +23,7 @@ After you use the command, some questions appear at the prompt, allowing you to 
 | Define value for runtime stack | TOMCAT 10.0                     |
 | Confirm (Y/N)                  | Y                               |
 
-After you configure the options, the following output appears:
+After you configure the options, the following is typical output:
 
 ```output
 mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
@@ -86,7 +86,7 @@ Confirm (Y/N) [Y]: Y
 [INFO] ------------------------------------------------------------------------
 ```
 
-Your **pom.xml** file now contains a new section in the `<plugins>` section. If you want to change the resource group name, instance name, or deployment location, change `<resourceGroup>`, `<appName>`, or `<region>`. Your **pom.xml** file should appear similar to the following:
+Your **pom.xml** file now contains a new section in the `<plugins>` section. If you want to change the resource group name, instance name, or deployment location, change `<resourceGroup>`, `<appName>`, or `<region>`. The following is a typical **pom.xml** file:
 
 ```xml
       <!-- Azure Web App Maven Plugin -->
@@ -132,7 +132,7 @@ After the source code is compiled, use the following Maven Plugin for Azure Web 
 mvn azure-webapp:deploy
 ```
 
-When the deployment is complete, the CLI shows the following output:
+When the deployment is complete, the following is typical output:
 
 ```bash
 [INFO] Successfully deployed the artifact to https://tomcatmavendemo.azurewebsites.net
@@ -144,7 +144,7 @@ When the deployment is complete, the CLI shows the following output:
 [INFO] ------------------------------------------------------------------------
 ```
 
-The output message displays the public URL of the deployed application as follows: `Successfully deployed the artifact to https://tomcatmavendemo.azurewebsites.net`
+The following is typical output providing the public URL of the deployed application: `Successfully deployed the artifact to https://tomcatmavendemo.azurewebsites.net`
 
 :::image type="content" source="../media/deployed-to-app-service.png" alt-text="Screenshot that shows the deployed web app in a browser." lightbox="../media/deployed-to-app-service.png":::
 
@@ -158,7 +158,7 @@ az webapp log tail \
     --name <your-app-name>
 ```
 
-Your output should appear similar to the following:
+The following is typical output:
 
 ```output
 2024-11-07T18:14:37  Welcome, you are now connected to log-streaming service.

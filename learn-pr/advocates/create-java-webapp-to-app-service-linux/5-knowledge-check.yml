@@ -35,7 +35,7 @@ quiz:
           explanation: Incorrect. Build automation tools are still needed for compiling and packaging the application before deployment.
         - content: It provides a scalable, managed hosting environment without the need to manage infrastructure.
           isCorrect: true
-          explanation: Correct! Azure App Service allows developers to deploy applications easily, handling scaling and infrastructure management.
+          explanation: Correct! Azure App Service enables developers to deploy applications easily, handling scaling and infrastructure management.
 
     - content: What is the primary role of a servlet in a Java web application?
       choices:

@@ -1,10 +1,10 @@
 Web applications play an essential role in managing tasks like accounting, inventory tracking, and providing online portals for users to access and update information. In these applications, users typically submit inputs, which the system processes to search, display, and update relevant data.
 
-In this module, you tackle the challenge of deploying a Java-based web application. You learn how to create and deploy a simple Tomcat web application using Maven. First you run the app on your local machine, and then you deploy to Azure App Service, where it can be accessed remotely. By the end of this module, you have the skills to deploy a Tomcat Java web application, equipping you with a foundational approach to web app deployment on cloud services.
+In this module, you tackle the challenge of deploying a Java-based web application. You learn how to create and deploy a simple Tomcat web application using Maven. First you run the app on your local machine, and then you deploy to Azure App Service, where it can be accessed remotely. By the end of this module, you'll have the skills to deploy a Tomcat Java web application, equipping you to deploy web apps in the cloud.
 
 ## Learning objectives
 
-By the end of this module, you can do the following things:
+By the end of this module, you'll be able to do the following things:
 
 - Create a Tomcat web app using Maven.
 - Deploy the Tomcat app locally to your machine.
