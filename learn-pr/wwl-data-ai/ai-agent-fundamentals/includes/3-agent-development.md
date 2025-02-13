@@ -31,13 +31,6 @@ AutoGen is an open-source framework for developing agents rapidly. It's useful a
 > [!TIP]
 > For more information about AutoGen, see the **[AutoGen documentation](https://microsoft.github.io/autogen/stable/index.html)**.
 
-## Microsoft Copilot Studio
-
-Microsoft Copilot Studio provides a low-code development environment that "citizen developers" can use to quickly build and deploy agents that integrate with a Microsoft 365 ecosystem.
-
-> [!TIP]
-> For more information about Microsoft Copilot Studio, see the **[Microsoft Copilot Studio documentation](/microsoft-copilot-studio/)**.
-
 ## Microsoft 365 Agents SDK
 
 Developers can create self-hosted agents for delivery through a wide range of channels by using the Microsoft 365 Agents SDK.
@@ -45,18 +38,25 @@ Developers can create self-hosted agents for delivery through a wide range of ch
 > [!TIP]
 > For more information about Microsoft 365 Agents SDK, see the **[Microsoft 365 Agents SDK documentation](/microsoft-365/agents-sdk/)**.
 
-## Copilot Studio Agent Builder in Microsoft 365 Copilot
+## Microsoft Copilot Studio
 
-Business users can use the visual Copilot Studio Agent Builder tool in Microsoft 365 Copilot to author basic agents for common tasks.
+Microsoft Copilot Studio provides a low-code development environment that "citizen developers" can use to quickly build and deploy agents that integrate with a Microsoft 365 ecosystem.
 
 > [!TIP]
-> For more information about authoring agents in Copilot Chat, see the **[Using agents in Microsoft 365 Copilot Chat](/copilot/agents)**.
+> For more information about Microsoft Copilot Studio, see the **[Microsoft Copilot Studio documentation](/microsoft-copilot-studio/)**.
+
+## Copilot Studio agent builder in Microsoft 365 Copilot
+
+Business users can use the *declarative* Copilot Studio agent builder tool in Microsoft 365 Copilot to author basic agents for common tasks.
+
+> [!TIP]
+> For more information about authoring agents with Copilot Studio agent builder, see the **[Build agents with Copilot Studio agent builder](/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build)**.
 
 ## Choosing an agent development solution
 
 With such a wide range of available tools and frameworks, it can be challenging to decide which ones to use. Use the following considerations to help you identify the right choices for your scenario:
 
-- For business users with little or no software development experience, Copilot Studio Agent Builder in Microsoft 365 Copilot Chat provides a way to create simple "declarative" agents that automate everyday tasks. This approach can empower users across an organization to benefit from AI agents with minimal impact on IT.
+- For business users with little or no software development experience, Copilot Studio agent builder in Microsoft 365 Copilot Chat provides a way to create simple "declarative" agents that automate everyday tasks. This approach can empower users across an organization to benefit from AI agents with minimal impact on IT.
 - If business users have sufficient technical skills to build low-code solutions using Microsoft Power Platform technologies, Copilot Studio enables them to combine those skills with their business domain knowledge and build agent solutions that extend the capabilities of Microsoft 365 Copilot or add agentic functionality to common channels like Microsoft Teams, Slack, or Messenger.
 - When an organization needs more complex extensions to Microsoft 365 Copilot capabilities, professional developers can use the Microsoft 365 Agents SDK to build agents that target the same channels as Copilot Studio.
 - To develop agentic solutions that use Azure back-end services with a wide choice of models, custom storage and search services, and integration with Azure AI services, professional developers should use Azure AI Agent Service in Azure AI Foundry.
