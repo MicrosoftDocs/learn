@@ -66,7 +66,7 @@ With a Dockerfile, you can write the instructions or layers needed to accomplish
 
 The following diagram depicts the layers of a container image. When the commands in the Dockerfile are executed, the layers are created. The top layer is the read/write Flight Booking System for the Airline Reservations web application layer. That layer is built on top of the previous read-only layers.
 
-:::image type="content" source="../media/docker-layers.png" alt-text="Diagram showing the Docker layers" lightbox="../media/docker-layers.png" border="false":::
+:::image type="content" source="../media/docker-layers.png" alt-text="Diagram showing the Docker layers." lightbox="../media/docker-layers.png" border="false":::
 
 Docker has the concept of multistage builds, a feature that enables you to create a smaller container image with better caching and a smaller security footprint, enabling increased optimization and maintenance of the Dockerfile over time. For example, you can separate the container build stage for compiling and building the application from the stage for running the application. This feature enables you to copy only the artifacts generated during the build to the production container image, which reduces the footprint. Because container images are cached, if there are no changes, the cached images can be reused, reducing the cost and time of downloading from the network.
 
