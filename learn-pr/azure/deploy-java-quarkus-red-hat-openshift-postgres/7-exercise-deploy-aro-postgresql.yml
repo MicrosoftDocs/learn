@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.7-exercise-deploy-aro-postgresql
+title: Exercise - Deploy the Todo Application to Azure Red Hat OpenShift with Azure Database for PostgreSQL
+metadata:
+  title: Exercise - Deploy the Todo Application to Azure Red Hat OpenShift with Azure Database for PostgreSQL
+  description: In this exercise, follow the steps to deploy the Todo Application to Azure Red Hat OpenShift with Azure Database for PostgreSQL
+  ms.date: 10/18/2024
+  author: danieloh
+  ms.author: edburns
+  ms.topic: unit
+  ms.custom:
+    - team=devdiv
+    - devx-track-extended-java
+  ms.contributors: edburns
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-deploy-aro-postgresql.md)]

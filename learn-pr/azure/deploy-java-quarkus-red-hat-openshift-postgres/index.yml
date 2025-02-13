@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.azure.deploy-java-quarkus-red-hat-openshift-postgres
+metadata:
+  title: Deploy a Quarkus application to Azure Red Hat OpenShift
+  description: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy to Azure Red Hat OpenShift.
+  ms.date: 10/14/2024
+  author: danieloh
+  ms.author: edburns
+  ms.topic: module
+  ms.custom: team=devdiv
+  ms.contributors: edburns
+  ms.service: azure-openshift
+title: Deploy a Quarkus application to Azure Red Hat OpenShift
+summary: Create a Quarkus application, connect it to a PostgreSQL database, deploy to Azure Red Hat OpenShift, and evolve to serverless functions.
+abstract: |
+  In this module, you:
+  - Create a new ToDo application using Quarkus.
+  - Package and Run Locally.
+  - Deploy the Todo Application to Azure Red Hat OpenShift with Azure Database for PostgreSQL.
+  - Evolve the ToDo application to OpenShift Serverless.
+prerequisites: | 
+  - An Azure subscription
+  - JDK 17+ installed with JAVA_HOME configured appropriately
+  - Apache Maven 3.9.8
+  - Azure CLI 2.64.0+
+  - Podman or Docker
+  - Quarkus CLI
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-openshift
+- azure-database-postgresql
+- quarkus
+subjects:
+- custom-app-development
+units:
+- learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.1-introduction
+- learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.2-create-quarkus-todo-app
+- learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.3-exercise-create-quarkus-todo-app
+- learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.4-package-run-locally
+- learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.5-exercise-package-run-locally
+- learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.6-deploy-aro-postgresql
+- learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.7-exercise-deploy-aro-postgresql
+- learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.8-evolve-openshift-serverless
+- learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.9-exercise-evolve-openshift-serverless
+- learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.10-summary
+badge:
+  uid: learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.badge

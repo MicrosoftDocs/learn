@@ -67,6 +67,7 @@ modules:
 - learn.java-target-destinations
 - learn.azure.deploy-java-spring-boot-app-service-mysql
 - learn.azure.deploy-java-quarkus-azure-container-app-postgres
+- learn.azure.deploy-java-quarkus-red-hat-openshift-postgres
 - learn.azure.build-webapp-java-tomcat
 - learn.azure-spring-cloud-workshop
 - learn.azure.deploy-event-driven-real-time

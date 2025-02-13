@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.4-package-run-locally
+title: Package and Run Locally
+metadata:
+  title: Package and Run Locally
+  description: Package and Run the Todo Application with PostgreSQL locally
+  ms.date: 10/18/2024
+  author: danieloh
+  ms.author: edburns
+  ms.topic: unit
+  ms.custom:
+    - team=devdiv
+    - devx-track-extended-java
+  ms.contributors: danieloh
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-package-run-locally.md)]

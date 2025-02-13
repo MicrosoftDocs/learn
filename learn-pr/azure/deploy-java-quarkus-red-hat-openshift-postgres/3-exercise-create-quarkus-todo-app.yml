@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-java-quarkus-red-hat-openshift-postgres.3-exercise-create-quarkus-todo-app
+title: Exercise - Create a new ToDo application using Quarkus
+metadata:
+  title: Exercise - Create a new ToDo application using Quarkus
+  description: In this exercise, follow the steps to create a new ToDo application using Quarkus
+  ms.date: 10/18/2024
+  author: danieloh
+  ms.author: edburns
+  ms.topic: unit
+  ms.custom:
+    - team=devdiv
+    - devx-track-extended-java
+  ms.contributors: edburns
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-quarkus-todo-app.md)]
