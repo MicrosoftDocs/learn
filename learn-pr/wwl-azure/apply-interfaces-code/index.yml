@@ -3,7 +3,7 @@ uid: learn.wwl.apply-interfaces-code
 metadata:
   title: Apply interfaces in code
   description: "Discover how default implementations in interfaces enable you to add new methods directly into an interface and provide a default implementation."
-  ms.date: 02/12/2025
+  ms.date: 02/13/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: module-intro-to-product
@@ -46,9 +46,9 @@ subjects:
 - app-development
 units:
 - learn.wwl.apply-interfaces-code.introduction
-- learn.wwl.apply-interfaces-code.explore-default-impletations-in-interfaces
-- learn.wwl.apply-interfaces-code.define-method-with-interface-as-parameter
-- learn.wwl.apply-interfaces-code.learn-to-use-system-defined-interfaces
+- learn.wwl.apply-interfaces-code.explore-default-interface-implementation
+- learn.wwl.apply-interfaces-code.define-method-interface-parameter
+- learn.wwl.apply-interfaces-code.learn-system-defined-interfaces
 - learn.wwl.apply-interfaces-code.exercise-create-flexible-code-with-interfaces
 - learn.wwl.apply-interfaces-code.knowledge-check
 - learn.wwl.apply-interfaces-code.summary

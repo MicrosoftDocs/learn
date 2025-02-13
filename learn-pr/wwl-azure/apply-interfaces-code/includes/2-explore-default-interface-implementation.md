@@ -1,4 +1,4 @@
-**Default implementations in interfaces** enable you to add new methods directly into an interface and provide a default implementation. A class that uses this interface, can either use the default method, or it can override and provide its own implementation.
+**Default interface implementations** enable you to add new methods directly into an interface and provide a default implementation. A class that uses this interface, can either use the default method, or it can override and provide its own implementation.
 
 ## Default implementations
 
