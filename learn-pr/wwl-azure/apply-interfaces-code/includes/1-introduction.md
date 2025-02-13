@@ -12,8 +12,8 @@ After completing this module, you’ll be able to:
 
 ## Prerequisites
 
-- Visual Studio Code installed with the C# Dev Kit
-- Basic knowledge of the Visual Studio Code IDE
-- Basic understanding of the C# programming language
-- Able to create and implement basic interfaces
-- Familiar with classes, abstract classes, and inheritance
+- Visual Studio Code installed with the C# Dev Kit.
+- Basic knowledge of the Visual Studio Code IDE.
+- Basic understanding of the C# programming language.
+- Able to create and implement basic interfaces.
+- Familiar with classes, abstract classes, and inheritance.

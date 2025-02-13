@@ -25,15 +25,15 @@ abstract: |
 
   - Override default implementations in specific classes.
 prerequisites: |
-  - Visual Studio Code installed with the C# Dev Kit
+  - Visual Studio Code installed with the C# Dev Kit.
 
-  - Basic knowledge of the Visual Studio Code IDE
+  - Basic knowledge of the Visual Studio Code IDE.
 
-  - Basic understanding of the C# programming language
+  - Basic understanding of the C# programming language.
 
-  - Able to create and implement basic interfaces
+  - Able to create and implement basic interfaces.
 
-  - Familiar with classes, abstract classes, and inheritance
+  - Familiar with classes, abstract classes, and inheritance.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

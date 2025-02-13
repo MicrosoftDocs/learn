@@ -7,7 +7,7 @@ When you select the launch exercise button, you're navigated to a public GitHub 
 
 When you're finished with the exercise, return here for:
 
-- knowledge check.
+- Knowledge check.
 - Summary of your learning.
 - Badge for completing this module.
 

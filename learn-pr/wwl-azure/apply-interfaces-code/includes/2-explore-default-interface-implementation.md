@@ -15,9 +15,9 @@ Default implementations in interfaces let you add new methods to an interface wi
 
 Default implementations in interfaces have several benefits:
 
-- **Code reuse:** You can share common functions across different implementations without copying code.
-- **Backward compatibility:** You can add new methods to interfaces without changing all classes using the interface to prevents breaking changes.
-- **Flexibility:** Classes using the interface can change the default implementation if they need different behavior.
+- **Code reuse**: You can share common functions across different implementations without copying code.
+- **Backward compatibility**: You can add new methods to interfaces without changing all classes using the interface to prevents breaking changes.
+- **Flexibility**: Classes using the interface can change the default implementation if they need different behavior.
 
 For example, let's say you're working with a customer management system and you add a new method to apply a loyalty discount in an existing interface. The default method calculates a basic discount. But if a "VIP customer" class needs a different calculation, it can modify this method.
 
