@@ -45,9 +45,9 @@ Developers can create self-hosted agents for delivery through a wide range of ch
 > [!TIP]
 > For more information about Microsoft 365 Agents SDK, see the **[Microsoft 365 Agents SDK documentation](/microsoft-365/agents-sdk/)**.
 
-## Microsoft 365 Copilot Chat
+## Copilot Studio Agent Builder in Microsoft 365 Copilot
 
-Business users can use the visual Copilot Studio Agent Builder tool in Microsoft 365 Copilot Chat to author basic agents for common tasks.
+Business users can use the visual Copilot Studio Agent Builder tool in Microsoft 365 Copilot to author basic agents for common tasks.
 
 > [!TIP]
 > For more information about authoring agents in Copilot Chat, see the **[Using agents in Microsoft 365 Copilot Chat](/copilot/agents)**.
@@ -56,7 +56,7 @@ Business users can use the visual Copilot Studio Agent Builder tool in Microsoft
 
 With such a wide range of available tools and frameworks, it can be challenging to decide which ones to use. Use the following considerations to help you identify the right choices for your scenario:
 
-- For business users with little or no software development experience, Microsoft 365 Copilot Chat provides a way to create simple agents that automate everyday tasks. This approach can empower users across an organization to benefit from AI agents with minimal impact on IT.
+- For business users with little or no software development experience, Copilot Studio Agent Builder in Microsoft 365 Copilot Chat provides a way to create simple "declarative" agents that automate everyday tasks. This approach can empower users across an organization to benefit from AI agents with minimal impact on IT.
 - If business users have sufficient technical skills to build low-code solutions using Microsoft Power Platform technologies, Copilot Studio enables them to combine those skills with their business domain knowledge and build agent solutions that extend the capabilities of Microsoft 365 Copilot or add agentic functionality to common channels like Microsoft Teams, Slack, or Messenger.
 - When an organization needs more complex extensions to Microsoft 365 Copilot capabilities, professional developers can use the Microsoft 365 Agents SDK to build agents that target the same channels as Copilot Studio.
 - To develop agentic solutions that use Azure back-end services with a wide choice of models, custom storage and search services, and integration with Azure AI services, professional developers should use Azure AI Agent Service in Azure AI Foundry.
