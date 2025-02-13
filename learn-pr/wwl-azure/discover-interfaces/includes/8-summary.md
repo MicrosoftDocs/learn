@@ -1,4 +1,5 @@
 After completing this module, you are now able to:
+
 - Design an interface with properties in .NET.
 - Develop a class that implements an interface.
 - Formulate property definitions within an interface.
@@ -8,6 +9,3 @@ After completing this module, you are now able to:
 - Explicitly implement interface members in a class.
 - Handle multiple interfaces with the same member names.
 - Test the implemented interfaces by creating instances and calling their methods.
-
-Additional Reading:
-- [Microsoft Docs: Interfaces (C# Programming Guide)](/dotnet/csharp/programming-guide/interfaces/)

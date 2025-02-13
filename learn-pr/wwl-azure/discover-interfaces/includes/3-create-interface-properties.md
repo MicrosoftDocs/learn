@@ -4,7 +4,7 @@ An interface in C# is like a blueprint. It outlines the features (properties or 
 
 - Use the `interface` keyword to create an interface.
 - Define properties in the interface without a body.
-- Interfaces can optionally provide default implementations for members, including properties, but happens infrequently.
+- Interfaces can optionally provide default implementations for members, including properties, but it happens infrequently.
 
 The following code creates an `IVehicle` interface with `Speed` and `Color` properties:
 
@@ -16,8 +16,7 @@ public interface IVehicle
 }
 ```
 
-> [!NOTE]
-> Interface properties typically don't have a body. The accessors indicate whether the property is read-write, read-only, or write-only.
+Interface properties typically don't have any code inside them, they just specify the type of data (like `int` or `string`) and whether you can read from them, write to them, or do both. When you implement these properties in a class, you'll write the actual code for getting (reading) and setting (writing) the values. For example, if an interface has a `Speed` property, you will decide how to store and retrieve the speed value in your class.
 
 ## Develop a class that implements the interface
 
