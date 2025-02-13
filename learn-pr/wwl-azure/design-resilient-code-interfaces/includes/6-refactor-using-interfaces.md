@@ -208,7 +208,7 @@ The DVD "Inception" is already borrowed.
 ```
 
 This refactored example demonstrates how interfaces reduce dependencies and improve modularity:
+
 1. **Separation of Concerns**: The `IBorrowable` interface isolates borrowing behavior, ensuring the `Library` class doesn't depend on specific implementations.
-2. **Improved Flexibility**: You can add new types of borrowable items (for example, DVDs) without modifying the `Library` class.
-3. **Simplified Maintenance**: The system is easier to understand, test, and extend because responsibilities are clearly divided.
-1. 
+1. **Improved Flexibility**: You can add new types of borrowable items (for example, DVDs) without modifying the `Library` class.
+1. **Simplified Maintenance**: The system is easier to understand, test, and extend because responsibilities are clearly divided.
