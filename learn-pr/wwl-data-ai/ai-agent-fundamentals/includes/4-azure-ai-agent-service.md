@@ -1,6 +1,6 @@
 Azure AI Agent Service is a service within Azure AI Foundry that you can use to create, test, and manage AI agents. It provides both a visual agent development experience in the Azure AI Foundry portal and a code-first development experience using the Azure AI Foundry SDK.
 
-![Screenshot of the Azure AI Agent playground in the Azure AI Foundry portal](../media/agents-playground.png)
+![Screenshot of the Azure AI Agent playground in the Azure AI Foundry portal.](../media/agents-playground.png)
 
 ## Components of an agent
 
