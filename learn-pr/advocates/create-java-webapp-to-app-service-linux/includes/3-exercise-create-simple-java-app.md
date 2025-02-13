@@ -335,7 +335,7 @@ Use the following steps to configure your local Tomcat server so you can deploy 
     </tomcat-users>
     ```
 
-1. Add your credentials to Maven's **~/.m2/settings.xml** file by using the following command, replacing `your-tomcat-username` with a username and `your-tomcat-password` with a password.
+1. Add your credentials to Maven's **~/.m2/settings.xml** file by using the following code example, replacing `your-tomcat-username` with a username and `your-tomcat-password` with a password:
 
     ```xml
     <servers>
