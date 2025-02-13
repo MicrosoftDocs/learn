@@ -8,7 +8,7 @@ Create a new Blazor pagination template component file and pagination controls.
 
 ### Create the file and add the markup
 
-1. In your Blazor app project in Visual Studio Code, create a new folder named *Components*, and then create a new file in the folder named *PaginationComponent.razor*.
+1. In your Blazor app project in Visual Studio Code, create a new folder named *Components*. In the *Components* folder, create a new file named *PaginationComponent.razor*.
 1. In the newly created template component, add the following Razor markup:
 
    ```razor
