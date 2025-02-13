@@ -135,10 +135,7 @@ Elastic queries support the following partitioning strategies:
 | Vertical partitioning | Also called cross-database queries. The data is partitioned vertically between many databases. Schemas are different for each database. For example, you may have a database used for customer data, and a different one used for payment information. With the help of vertical partitioning, you can now run a cross-database query between both databases.
 |Horizontal Partitioning | Also called sharding. The data is partitioned horizontally to distribute rows across several scaled-out databases. In this topology, the schema remains the same among all sharding databases. It supports either single-tenant model or multiple tenant models. |
 
-> [!NOTE]
-> Azure SQL Managed Instance doesn't support elastic queries.
-
-## Elastic job (preview)
+## Elastic jobs
 
 The elastic job feature is the SQL Server Agent replacement for Azure SQL Database. To some extent, elastic job is equivalent to the Multi Server Administration feature available on an on-premises SQL Server instance.
 
@@ -147,19 +144,6 @@ You can execute T-SQL commands across several target deployments like SQL Databa
 > [!NOTE]
 > Azure SQL Managed Instance doesn't support elastic jobs.
 
-## SQL Data Sync
+## SQL Database in Fabric
 
-The Data Sync feature allows you to incrementally synchronize data across multiple databases running on SQL Database or on-premises SQL Server. Similarly, Data Sync is a good option if you need to offload intensive workloads in production with a separate database that can be used for analytics and/or ad hoc operations.
-
-Data Sync is based on a hub topology, where you define one of the databases in the sync group to work as a hub database. The sync group can have multiple members, and you can only synchronize changes between the hub database and individual databases. Data Sync tracks changes using insert, update, and delete triggers through a historical table created on the user database.
-
-When you create a sync group, it will ask you to provide a database responsible to store the sync group metadata. The metadata location can be either a new database or an existing database as long it resides in the same region as your sync group.
-
-> [![New sync group page from Azure portal](../media/prepare-to-maintain-sql-databases-azure-04.png)](../media/../media/prepare-to-maintain-sql-databases-azure-04.png#lightbox)
-
-In the image above, you can specify sync group properties like the schedule synchronization, the conflict resolution option, and the use of a private link if needed.
-
-> [!NOTE]
-> Azure SQL Managed Instance doesn't support Data Sync feature.
-
- For more information about how to configure SQL Data Sync, see [Tutorial: Set up SQL Data Sync between databases in Azure SQL Database and SQL Server](/azure/azure-sql/database/sql-data-sync-sql-server-configure).
+Add link to learn Learning path and docs.

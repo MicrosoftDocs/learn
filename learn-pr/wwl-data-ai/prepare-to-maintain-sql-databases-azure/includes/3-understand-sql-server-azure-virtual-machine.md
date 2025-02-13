@@ -8,7 +8,7 @@ Many applications will require SQL Server running on a virtual machine. The reas
 
 ## Versions of SQL Server available
 
-Microsoft keeps images of all supported versions of SQL Server available in Azure Marketplace. If you have a need for an older version, that is covered by an extended support contract, you must install your own SQL Server binaries.
+Microsoft keeps images of all supported versions of SQL Server available in the Azure Marketplace. If you require an older version that is covered by an extended support contract, you'll need to install your own SQL Server binaries.
 
 ## Backup solutions
 
@@ -17,13 +17,13 @@ In recent releases of SQL Server, Microsoft has introduced several features to s
 - Back up to URL
 - Azure Backup
 
-Back up to URL allows you to use standard backup syntax to back up your databases to Azure Blob Storage service, while Azure Backup for SQL Server Virtual Machines offers a complete enterprise backup solution that automatically handles your backups across your infrastructure.
+The back up to URL option enables you to back up your databases to Azure Blob Storage service. Azure Backup for SQL Server Virtual Machines provides a comprehensive enterprise backup solution that automatically manages your backups across your entire infrastructure.
 
 ## Deployment options
 
-All resources in Azure share a common provider known as Azure Resource Manager that acts as a management, and deployment service for cloud services. While there are numerous ways to deploy Azure resources, ultimately, they all end up going into JSON documents known as Azure Resource Manager template, which is one of the deployment options for Azure resources.
+All resources in Azure are managed and deployed through a common provider known as Azure Resource Manager. While there are various methods to deploy Azure resources, they ultimately converge into JSON documents called Azure Resource Manager templates, which serve as one of the deployment options for Azure resources.
 
-The main difference between these processes is that Azure Resource Manager templates are a declarative deployment approach that describes the desired structure and state of the resources to be deployed, whereas the other methods can all be described as imperative, which uses procedural models to explicitly specify a process to be executed. In large-scale deployments, the declarative approach is better and should be followed.
+The key distinction between these methods is that Azure Resource Manager templates use a declarative deployment approach, which defines the desired structure and state of the resources to be deployed. In contrast, other methods are imperative, using procedural models to explicitly specify the steps to be executed. For large-scale deployments, the declarative approach is preferable and should be adopted.
 
 ## Overview of Azure storage
 
