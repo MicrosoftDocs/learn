@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.design-resilient-code-interfaces
 metadata:
-  title: Design resilient code with interfaces
+  title: Design Resilient Code with Interfaces
   description: "In this module, you explore advanced concepts of interfaces in C#. You learn how to implement explicit interface members, combine multiple interfaces, and reduce code dependencies using interfaces."
   ms.date: 02/13/2025
   author: wwlpublish
@@ -25,15 +25,15 @@ abstract: |
 
   - Build resilient code with interfaces.
 prerequisites: |
-  - Visual Studio Code installed with the C# Dev Kit
+  - Visual Studio Code installed with the C# Dev Kit.
 
-  - Basic knowledge of the Visual Studio Code IDE
+  - Basic knowledge of the Visual Studio Code IDE.
 
-  - Basic understanding of the C# programming language
+  - Basic understanding of the C# programming language.
 
-  - Able to create and implement basic interfaces
+  - Able to create and implement basic interfaces.
 
-  - Familiar with classes, abstract classes, and inheritance
+  - Familiar with classes, abstract classes, and inheritance.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
@@ -48,7 +48,7 @@ units:
 - learn.wwl.design-resilient-code-interfaces.implement-explicit-interface-members
 - learn.wwl.design-resilient-code-interfaces.use-combine-multiple-interfaces
 - learn.wwl.design-resilient-code-interfaces.understand-tightly-coupled-code
-- learn.wwl.design-resilient-code-interfaces.refactor-using-interfaces
+- learn.wwl.design-resilient-code-interfaces.refactor-use-interfaces
 - learn.wwl.design-resilient-code-interfaces.exercise-build-resilient-code-interfaces
 - learn.wwl.design-resilient-code-interfaces.knowledge-check
 - learn.wwl.design-resilient-code-interfaces.summary

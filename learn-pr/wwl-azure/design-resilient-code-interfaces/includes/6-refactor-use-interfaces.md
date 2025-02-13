@@ -52,7 +52,7 @@ public class Library
 
 This design tightly couples the `Library` class to the `BorrowableBook` class, making it difficult to add new types of borrowable items (for example, DVDs) without modifying the `Library` class. To fix the tight coupling, we introduce an interface to decouple the borrowing behavior.
 
-## Introducing Interfaces
+## Introducing interfaces
 
 An interface sets a contract for behavior without detailing its implementation. Introducing an interface abstracts the borrowing functionality and increases the system's flexibility.
 
@@ -72,7 +72,7 @@ This interface introduces two members:
 
 By defining this interface, we decouple the borrowing behavior from any specific implementation.
 
-## Refactoring the BorrowableBook Class
+## Refactoring the BorrowableBook class
 
 Next, we update the `BorrowableBook` class to implement the `IBorrowable` interface:
 
@@ -104,7 +104,7 @@ public class BorrowableBook : IBorrowable
 
 Now, the `BorrowableBook` class adheres to the `IBorrowable` interface, making it interchangeable with other classes that implement the same interface.
 
-## Refactoring the Library Class
+## Refactoring the Library class
 
 We also update the `Library` class to depend on the `IBorrowable` interface instead of the concrete `BorrowableBook` class:
 
@@ -134,7 +134,7 @@ public class Library
 
 Now, the `Library` class can work with any object that implements the `IBorrowable` interface, making it more flexible and easier to extend.
 
-## Adding New Borrowable Items
+## Adding new borrowable items
 
 With the interface in place, we can easily add new types of borrowable items without modifying the `Library` class. For example, here’s a `BorrowableDVD` class:
 
@@ -166,7 +166,7 @@ public class BorrowableDVD : IBorrowable
 
 The `BorrowableDVD` class implements the same `IBorrowable` interface, so it can be used seamlessly with the `Library` class.
 
-## Testing the System
+## Testing the system
 
 Here’s a program to demonstrate the refactored system:
 
@@ -209,6 +209,6 @@ The DVD "Inception" is already borrowed.
 
 This refactored example demonstrates how interfaces reduce dependencies and improve modularity:
 
-1. **Separation of Concerns**: The `IBorrowable` interface isolates borrowing behavior, ensuring the `Library` class doesn't depend on specific implementations.
-1. **Improved Flexibility**: You can add new types of borrowable items (for example, DVDs) without modifying the `Library` class.
-1. **Simplified Maintenance**: The system is easier to understand, test, and extend because responsibilities are clearly divided.
+- **Separation of Concerns**: The `IBorrowable` interface isolates borrowing behavior, ensuring the `Library` class doesn't depend on specific implementations.
+- **Improved Flexibility**: You can add new types of borrowable items (for example, DVDs) without modifying the `Library` class.
+- **Simplified Maintenance**: The system is easier to understand, test, and extend because responsibilities are clearly divided.

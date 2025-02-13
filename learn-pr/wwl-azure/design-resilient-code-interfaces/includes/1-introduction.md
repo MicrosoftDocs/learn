@@ -12,8 +12,8 @@ In this module, you explore advanced concepts of interfaces in C#. You learn how
 
 ## Prerequisites
 
-- Visual Studio Code installed with the C# Dev Kit
-- Basic knowledge of the Visual Studio Code IDE
-- Basic understanding of the C# programming language
-- Able to create and implement basic interfaces
-- Familiar with classes, abstract classes, and inheritance
+- Visual Studio Code installed with the C# Dev Kit.
+- Basic knowledge of the Visual Studio Code IDE.
+- Basic understanding of the C# programming language.
+- Able to create and implement basic interfaces.
+- Familiar with classes, abstract classes, and inheritance.
