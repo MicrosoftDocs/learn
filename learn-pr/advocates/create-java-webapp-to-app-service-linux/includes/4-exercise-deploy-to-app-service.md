@@ -2,135 +2,139 @@ In this unit, you deploy your Java Tomcat web app to Azure App Service.
 
 ## Maven Plugin for Azure App Service
 
-Microsoft provides the Maven Plugin for Azure App Service to make it easier for Java developers to deploy applications to Azure. By using this plug-in, you can easily configure and deploy your application to Azure. Use the steps in the following sections to configure the Maven Plugin for Azure App Service, compile your source code, and deploy your app.
+Microsoft provides the Maven Plugin for Azure App Service to make it easier for Java developers to deploy applications to Azure. By using this plug-in, you can easily configure and deploy your application to Azure. Use the steps in the following sections to configure the plug-in, compile your source code, and deploy your app.
 
 ### Configure the Maven Plugin for Azure App Service
 
-To configure the Maven Plugin for Azure App Service, use the following command:
+To configure the Maven Plugin for Azure App Service, use the following steps:
 
-```bash
-mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
-```
+1. Begin the configuration by using the following command:
 
-After you use the command, some questions appear at the prompt, enabling you to configure various options. Configure the options and values according to the information in the following table:
+    ```bash
+    mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
+    ```
 
-| Item                           | Input value                     |
-|--------------------------------|---------------------------------|
-| Subscription                   | Choose your Azure subscription. |
-| Define value for OS            | Linux                           |
-| Define value for pricing tier  | B1                              |
-| Define value for Java version  | Java 21                         |
-| Define value for runtime stack | TOMCAT 10.0                     |
-| Confirm (Y/N)                  | Y                               |
+1. After you use the command, some questions appear at the prompt, enabling you to configure various options. Configure the options and values according to the information in the following table:
 
-After you configure the options, the following is typical output:
+    | Item                           | Input value                     |
+    |--------------------------------|---------------------------------|
+    | Subscription                   | Choose your Azure subscription. |
+    | Define value for OS            | Linux                           |
+    | Define value for pricing tier  | B1                              |
+    | Define value for Java version  | Java 21                         |
+    | Define value for runtime stack | TOMCAT 10.0                     |
+    | Confirm (Y/N)                  | Y                               |
 
-```output
-mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] -------------------< com.example:simple-tomcat-app >--------------------
-[INFO] Building simple-tomcat-app 1.0-SNAPSHOT
-[INFO]   from pom.xml
-[INFO] --------------------------------[ war ]---------------------------------
-[INFO] 
-[INFO] --- azure-webapp:2.10.0:config (default-cli) @ simple-tomcat-app ---
-Downloading from central: https://repo.maven.apache.org/maven2/net/minidev/json-smart/maven-metadata.xml
-Downloading from ossrh: https://oss.sonatype.org/content/repositories/snapshots/net/minidev/json-smart/maven-metadata.xml
-Downloading from shibboleth-repo: https://build.shibboleth.net/nexus/content/repositories/releases/net/minidev/json-smart/maven-metadata.xml
-Downloaded from central: https://repo.maven.apache.org/maven2/net/minidev/json-smart/maven-metadata.xml (1.3 kB at 6.3 kB/s)
-Please choose which part to config [Application]:
-* 1: Application
-  2: Runtime
-  3: DeploymentSlot
-Enter your choice: 1
-Define value for appName [simple-tomcat-app]: tomcatmavendemo
-Define value for resourceGroup [tomcatmavendemo-rg]: MyResourceGroup
-Define value for region [{azure.region}]: centralus
-Define value for pricingTier [B1]:
-*  1: B1
-   2: B2
-   3: B3
-   4: D1
-   5: EP1
-   6: EP2
-   7: EP3
-   8: F1
-   9: P1v2
-  10: P1v3
-  11: P2v2
-  12: P2v3
-  13: P3v2
-  14: P3v3
-  15: S1
-  16: S2
-  17: S3
-  18: Y1
-Enter your choice: 1
-Please confirm webapp properties
-AppName : tomcatmavendemo
-ResourceGroup : MyResourceGroup
-Region : centralus
-PricingTier : B1
-OS : Linux
-Java Version: 21
-Web server stack: Tomcat 10.1
-Deploy to slot : false
-Confirm (Y/N) [Y]: Y
-[INFO] Saving configuration to pom.
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:49 min
-[INFO] Finished at: 2024-11-07T09:54:55-08:00
-[INFO] ------------------------------------------------------------------------
-```
+    After you configure the options, the following is typical output:
 
-Your **pom.xml** file now contains a new section in the `<plugins>` section. If you want to change the resource group name, instance name, or deployment location, change `<resourceGroup>`, `<appName>`, or `<region>`. The following is a typical **pom.xml** file:
+    ```output
+    mvn com.microsoft.azure:azure-webapp-maven-plugin:2.10.0:config
+    [INFO] Scanning for projects...
+    [INFO] 
+    [INFO] -------------------< com.example:simple-tomcat-app >--------------------
+    [INFO] Building simple-tomcat-app 1.0-SNAPSHOT
+    [INFO]   from pom.xml
+    [INFO] --------------------------------[ war ]---------------------------------
+    [INFO] 
+    [INFO] --- azure-webapp:2.10.0:config (default-cli) @ simple-tomcat-app ---
+    Downloading from central: https://repo.maven.apache.org/maven2/net/minidev/json-smart/maven-metadata.xml
+    Downloading from ossrh: https://oss.sonatype.org/content/repositories/snapshots/net/minidev/json-smart/maven-metadata.xml
+    Downloading from shibboleth-repo: https://build.shibboleth.net/nexus/content/repositories/releases/net/minidev/json-smart/maven-metadata.xml
+    Downloaded from central: https://repo.maven.apache.org/maven2/net/minidev/json-smart/maven-metadata.xml (1.3 kB at 6.3 kB/s)
+    Please choose which part to config [Application]:
+    * 1: Application
+      2: Runtime
+      3: DeploymentSlot
+    Enter your choice: 1
+    Define value for appName [simple-tomcat-app]: tomcatmavendemo
+    Define value for resourceGroup [tomcatmavendemo-rg]: MyResourceGroup
+    Define value for region [{azure.region}]: centralus
+    Define value for pricingTier [B1]:
+    *  1: B1
+       2: B2
+       3: B3
+       4: D1
+       5: EP1
+       6: EP2
+       7: EP3
+       8: F1
+       9: P1v2
+      10: P1v3
+      11: P2v2
+      12: P2v3
+      13: P3v2
+      14: P3v3
+      15: S1
+      16: S2
+      17: S3
+      18: Y1
+    Enter your choice: 1
+    Please confirm webapp properties
+    AppName : tomcatmavendemo
+    ResourceGroup : MyResourceGroup
+    Region : centralus
+    PricingTier : B1
+    OS : Linux
+    Java Version: 21
+    Web server stack: Tomcat 10.1
+    Deploy to slot : false
+    Confirm (Y/N) [Y]: Y
+    [INFO] Saving configuration to pom.
+    [INFO] ------------------------------------------------------------------------
+    [INFO] BUILD SUCCESS
+    [INFO] ------------------------------------------------------------------------
+    [INFO] Total time:  01:49 min
+    [INFO] Finished at: 2024-11-07T09:54:55-08:00
+    [INFO] ------------------------------------------------------------------------
+    ```
 
-```xml
-      <!-- Azure Web App Maven Plugin -->
-<plugin>
-    <groupId>com.microsoft.azure</groupId>
-    <artifactId>azure-webapp-maven-plugin</artifactId>
-    <version>2.10.0</version>
-    <configuration>
-        <resourceGroup>MyResourceGroup</resourceGroup>
-        <appName>tomcatmavendemo</appName>
-        <region>centralus</region>
-        <pricingTier>B1</pricingTier>
-        <runtime>
-            <os>linux</os>
-            <javaVersion>21</javaVersion>
-            <webContainer>Tomcat 10.1</webContainer>
-        </runtime>
-        <deployment>
-            <resources>
-                <resource>
-                    <directory>${project.build.directory}</directory>
-                    <includes>
-                        <include>*.war</include>
-                    </includes>
-                </resource>
-            </resources>
-        </deployment>
-    </configuration>
-</plugin>
-```
+1. Your **pom.xml** file now contains a new section in the `<plugins>` section. If you want to change the resource group name, instance name, or deployment location, change `<resourceGroup>`, `<appName>`, or `<region>`. The following is a typical **pom.xml** file:
+
+    ```xml
+          <!-- Azure Web App Maven Plugin -->
+    <plugin>
+        <groupId>com.microsoft.azure</groupId>
+        <artifactId>azure-webapp-maven-plugin</artifactId>
+        <version>2.10.0</version>
+        <configuration>
+            <resourceGroup>MyResourceGroup</resourceGroup>
+            <appName>tomcatmavendemo</appName>
+            <region>centralus</region>
+            <pricingTier>B1</pricingTier>
+            <runtime>
+                <os>linux</os>
+                <javaVersion>21</javaVersion>
+                <webContainer>Tomcat 10.1</webContainer>
+            </runtime>
+            <deployment>
+                <resources>
+                    <resource>
+                        <directory>${project.build.directory}</directory>
+                        <includes>
+                            <include>*.war</include>
+                        </includes>
+                    </resource>
+                </resources>
+            </deployment>
+        </configuration>
+    </plugin>
+    ```
 
 ### Compile and deploy to Azure App Service
 
-You finished configuring the settings for deploying to Azure App Service. Compile the source code again by using the following command:
+You finished configuring the settings for deploying to Azure App Service. Use the following steps to compile your source code and deploy your app to Azure App Services:
 
-```bash
-mvn clean package
-```
+1. Compile the source code again by using the following command:
 
-After the source code is compiled, use the following Maven Plugin for Azure Web Apps command to deploy your application:
+    ```bash
+    mvn clean package
+    ```
 
-```bash
-mvn azure-webapp:deploy
-```
+1. After the source code is compiled, use the following command to deploy your application:
+
+    ```bash
+    mvn azure-webapp:deploy
+    ```
 
 When the deployment is complete, the following is typical output:
 
@@ -144,11 +148,11 @@ When the deployment is complete, the following is typical output:
 [INFO] ------------------------------------------------------------------------
 ```
 
-The following is typical output providing the public URL of the deployed application: `Successfully deployed the artifact to https://tomcatmavendemo.azurewebsites.net`
+As you can see, that output provides the public URL of the deployed application: `Successfully deployed the artifact to https://tomcatmavendemo.azurewebsites.net`.
 
 :::image type="content" source="../media/deployed-to-app-service.png" alt-text="Screenshot that shows the deployed web app in a browser." lightbox="../media/deployed-to-app-service.png":::
 
-## Confirm the log stream from the command line
+## Confirm the log stream
 
 To access the log stream, use the following command:
 
