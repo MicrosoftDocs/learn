@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-resilient-code-interfaces.refactor-use-interfaces
+title: Refactor using interfaces
+metadata:
+  title: Refactor using interfaces
+  description: "Use interfaces in refactoring to reduce dependencies."
+  ms.date: 02/14/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-refactor-use-interfaces.md)]

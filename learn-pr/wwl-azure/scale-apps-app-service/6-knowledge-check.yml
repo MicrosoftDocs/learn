@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/10/2024
+  ms.date: 02/12/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
@@ -29,7 +29,7 @@ quiz:
       explanation: "Incorrect. Autoscaling increases availability by adding more instances of services. If one of these instances fails, the others should still be available."
   - content: "Which of these scenarios is a suitable candidate for autoscaling?"
     choices:
-    - content: "The number of users requiring access to an application varies according to a regular schedule. For example, more users use the system on a Friday than other days of the week."
+    - content: "The number of users requiring access to an application varies according to a regular schedule."
       isCorrect: true
       explanation: "Correct. Changes in application load that are predictable are good candidates for autoscaling."
     - content: "The system is subject to a sudden influx of requests that grinds your system to a halt."

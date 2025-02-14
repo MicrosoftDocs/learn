@@ -5,14 +5,13 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Types of machine learning
-  description: Types of machine learning
+  description: "Types of machine learning"
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 09/20/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-types-of-machine-learning.md)]
-

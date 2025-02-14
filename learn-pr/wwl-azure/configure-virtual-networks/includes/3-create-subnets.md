@@ -31,7 +31,7 @@ Let's examine the reserved addresses in an IP address range of `192.168.1.0/24`.
 
 ### Things to consider when using subnets
 
-When you plan for adding subnet segments within your virtual network, there are several factors to consider. Review the following scenarios.
+When you plan for adding subnet segments within your virtual network, there are several factors to consider. 
 
 - **Consider service requirements**. Each service directly deployed into a virtual network has specific requirements for routing and the types of traffic that must be allowed into and out of associated subnets. A service might require or create their own subnet. There must be enough unallocated space to meet the service requirements. Suppose you connect a virtual network to an on-premises network by using Azure VPN Gateway. The virtual network must have a dedicated subnet for the gateway.
 

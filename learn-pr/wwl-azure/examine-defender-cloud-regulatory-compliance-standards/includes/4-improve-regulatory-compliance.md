@@ -1,8 +1,8 @@
 Microsoft Defender for Cloud helps streamline the process for meeting regulatory compliance requirements, using the regulatory compliance dashboard. Defender for Cloud continuously assesses your hybrid cloud environment to analyze the risk factors according to the controls and best practices in the standards that you've applied to your subscriptions. The dashboard reflects the status of your compliance with these standards.
 
-When you enable Defender for Cloud on an Azure subscription, the Microsoft cloud security benchmark is automatically assigned to that subscription. This widely respected benchmark builds on the controls from the Center for Internet Security (CIS), PCI-DSS and the National Institute of Standards and Technology (NIST) with a focus on cloud-centric security.<br>
+When you enable Defender for Cloud on an Azure subscription, the Microsoft cloud security benchmark is automatically assigned to that subscription. This widely respected benchmark builds on the controls from the Center for Internet Security (CIS), PCI-DSS and the National Institute of Standards and Technology (NIST) with a focus on cloud-centric security.
 
-The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.<br>
+The regulatory compliance dashboard shows the status of all the assessments within your environment for your chosen standards and regulations. As you act on the recommendations and reduce risk factors in your environment, your compliance posture improves.
 
 ## Assess your regulatory compliance<br>
 
@@ -12,9 +12,9 @@ Use the regulatory compliance dashboard to help focus your attention on the gaps
 
 The dashboard provides you with an overview of your compliance status and the set of supported compliance regulations. You'll see your overall compliance score, and the number of passing vs. failing assessments associated with each standard.
 
-**Example: Microsoft Defender for Cloud - Regulatory compliance dashboard** 
+**Example: Microsoft Defender for Cloud - Regulatory compliance dashboard**
 
-:::image type="content" source="../media/regulatory-compliance-dashboard-1d42ccd6.png" alt-text="Screenshot showing an example of the regulatory compliance dashboard and network security controls.":::
+:::image type="content" source="../media/regulatory-compliance-dashboard-1d42ccd6-9c3cdb65.png" alt-text="Screenshot showing an example of the regulatory compliance dashboard and network security controls.":::
 
 
 The following list has a numbered item that matches each location in the image above, and describes what is in the image:
@@ -35,18 +35,17 @@ Recommendations give you suggestions on how to better secure your resources. You
 
 After reviewing all the recommendations, decide which one to remediate first. We recommend that you prioritize the security controls with the highest potential to increase your secure score.
 
-1. From the list, select a recommendation.
-
-2. Follow the instructions in the Remediation steps section. Each recommendation has its own set of instructions. The following screenshot shows remediation steps for configuring applications to only allow traffic over HTTPS.
-
-    :::image type="content" source="../media/regulatory-compliance-remediation-recommendation-techdoc-example-415f39e1.png" alt-text="Screenshot showing an example of manual remediation steps for storage accounts.":::
-
+1.  From the list, select a recommendation.
+2.  Follow the instructions in the Remediation steps section. Each recommendation has its own set of instructions. The following screenshot shows remediation steps for configuring applications to only allow traffic over HTTPS.
+    
+    :::image type="content" source="../media/regulatory-compliance-remediation-recommendation-techdoc-example-415f39e1-fe0e8e10.png" alt-text="Screenshot showing an example of manual remediation steps for storage accounts.":::
+    
 
 ## Remediate an automated assessment
 
 The regulatory compliance has both automated and manual assessments that may need to be remediated. Using the information in the regulatory compliance dashboard, improve your compliance posture by resolving recommendations directly within the dashboard.
 
-**To remediate an automated assessment**<br>
+**To remediate an automated assessment**
 
 1.  Sign in to the **Azure portal**.<br>
 2.  Navigate to **Defender for Cloud** then click, **Regulatory compliance**.<br>
@@ -55,17 +54,15 @@ The regulatory compliance has both automated and manual assessments that may nee
 5.  Select any of the failing assessments that appear in the dashboard to view the details for that recommendation. Each recommendation includes a set of remediation steps to resolve the issue.<br>
 6.  Select a particular resource to view more details and resolve the recommendation for that resource. For example, in the **Azure CIS 1.1.0** standard, select the recommendation **Disk encryption should be applied on virtual machines**.
     
-    :::image type="content" source="../media/disk-encryption-example-recommendation-d7d9c47a.png" alt-text="Screenshot showing an example of affected resources that require remediation.":::
+    :::image type="content" source="../media/disk-encryption-example-recommendation-d7d9c47a-a0fe742d.png" alt-text="Screenshot showing an example of affected resources that require remediation.":::
     
 7.  In this example, when you select **Take action** from the recommendation details page, you arrive in the Azure Virtual Machine pages of the Azure portal, where you can enable encryption from the **Security** tab:
     
-    :::image type="content" source="../media/disk-encryption-settings-example-recommendation-b78e253b.png" alt-text="Screenshot showing an example of a virtual machines disk setting.":::
+    :::image type="content" source="../media/disk-encryption-settings-example-recommendation-b78e253b-13228095.png" alt-text="Screenshot showing an example of a virtual machines disk setting.":::
     
     
     For more information about how to apply recommendations, see [Implementing security recommendations in Microsoft Defender for Cloud](/azure/defender-for-cloud/review-security-recommendations).
-8.  After you take action to resolve recommendations, you'll see the result in the compliance dashboard report because your compliance score improves.
-    
-    Assessments run approximately every 12 hours, so you'll see the impact on your compliance data only after the next run of the relevant assessment.
+8.  After you take action to resolve recommendations, you'll see the result in the compliance dashboard report because your compliance score improves. Assessments run approximately every 12 hours, so you'll see the impact on your compliance data only after the next run of the relevant assessment.
 
 ## Remediate a manual assessment
 
@@ -73,20 +70,12 @@ The regulatory compliance has automated and manual assessments that may need to 
 
 ### To remediate a manual assessment<br>
 
-1. Sign in to the **Azure portal**.<br>
-
-2. Navigate to **Defender for Cloud** then click, **Regulatory compliance**.<br>
-
-3. Select a regulatory compliance standard.<br>
-
-4. Select a compliance control to expand it.<br>
-
-5. Under the Manual attestation and evidence section, select an assessment.<br>
-
-6. Select the relevant subscriptions.<br>
-
-7. Select **Attest**.<br>
-
-8. Enter the relevant information and attach evidence for compliance.<br>
-
-9. Select **Save**.<br>
+1.  Sign in to the **Azure portal**.<br>
+2.  Navigate to **Defender for Cloud** then click, **Regulatory compliance**.<br>
+3.  Select a regulatory compliance standard.<br>
+4.  Select a compliance control to expand it.<br>
+5.  Under the Manual attestation and evidence section, select an assessment.<br>
+6.  Select the relevant subscriptions.<br>
+7.  Select **Attest**.<br>
+8.  Enter the relevant information and attach evidence for compliance.<br>
+9.  Select **Save**.<br>

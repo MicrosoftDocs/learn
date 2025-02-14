@@ -1,0 +1,47 @@
+### YamlMime:Module 
+uid: learn.develop-accessible-resize-reflow
+metadata:
+  title: Develop accessible resize and reflow
+  description: Learn why supporting resize and reflow is crucial for creating accessible websites and apps.
+  ms.date: 02/12/2025
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: module
+  ms.service: microsoft-365
+title: Develop accessible resize and reflow
+summary: |
+  Resize and reflow are important for ensuring that web content remains accessible and usable across different devices, screen sizes, and user preferences. This ensures equal access to digital content and products, promoting inclusivity and meeting accessibility standards.
+  In this module, you will learn why supporting resize and reflow is crucial for creating accessible websites and apps. You'll explore key design principles for implementing resize and reflow effectively. Finally, you'll review essential design considerations, apply practical tips, and discover tools and techniques to ensure your content adapts seamlessly across different devices and screen sizes.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Identify the importance of resize and reflow in enhancing accessibility and user experience across different devices and screen sizes.
+  - Define key terms related to resize and reflow, including responsive web design, scaling, and CSS pixels.
+  - Compare different approaches to enlarging the screen, including optical enlargement and system scale settings.
+  - Apply accessibility guidelines to ensure proper resize and reflow.
+  - Identify best practices for resize and reflow throughout the product development cycle.
+prerequisites: |
+  - Basic understanding of assistive technology
+  - Basic knowledge of accessibility principles
+  - Basic understanding of keyboard accessibility
+iconUrl: /training/achievements/develop-accessible-resize-reflow.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - m365
+subjects:
+- accessibility
+units:
+  - learn.develop-accessible-resize-reflow.introduction
+  - learn.develop-accessible-resize-reflow.fundamentals-of-resize-reflow
+  - learn.develop-accessible-resize-reflow.exercise-use-screen-magnifiers
+  - learn.develop-accessible-resize-reflow.accessibility-requirements
+  - learn.develop-accessible-resize-reflow.review-considerations-for-screen-magnifiers
+  - learn.develop-accessible-resize-reflow.design-screen-magnifiers
+  - learn.develop-accessible-resize-reflow.implement-screen-magnifiers
+  - learn.develop-accessible-resize-reflow.test-screen-magnifiers
+  - learn.develop-accessible-resize-reflow.knowledge-check
+  - learn.develop-accessible-resize-reflow.summary
+badge:
+  uid: learn.develop-accessible-resize-reflow.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-interfaces-code.learn-system-defined-interfaces
+title: Learn to use system defined interfaces
+metadata:
+  title: Learn to use system defined interfaces
+  description: "Learn to use system defined interfaces in C# code."
+  ms.date: 02/14/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-learn-system-defined-interfaces.md)]
