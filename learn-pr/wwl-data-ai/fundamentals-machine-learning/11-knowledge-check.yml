@@ -5,15 +5,16 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Knowledge check
-  description: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 09/20/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "You want to create a model to predict the cost of heating an office building based on its size in square feet and the number of employees working there. What kind of machine learning problem is this?"
     choices:
@@ -59,4 +60,3 @@ quiz:
     - content: "Automatically run multiple training jobs using different algorithms and parameters to find the best model"
       isCorrect: true
       explanation: "Correct. Automated machine learning runs multiple training jobs, varying algorithms and parameters, to find the best model for your data."
-
