@@ -4,7 +4,7 @@ Annotations for keyboard accessibility help designers communicate how users can 
 
 Indicate the sequence in which interactive elements should receive focus when navigating with the **tab** key. This helps ensure a logical and intuitive flow for keyboard users. 
 
-1. Use the focus order indicators to show the intended ordering of elements when being navigated using a keyboard.
+- Use the focus order indicators to show the intended ordering of elements when being navigated using a keyboard.
 
     :::image type="content" source="../media/focus-order-accessibility-annotation-wishcart-application.png" alt-text="Screenshot of WishCart application with wish cart, delivering to New Delhi, Search field, choose language for shopping, hello sign in accounts &lists, returns &orders and Cart defined as custom component, Search in all category Drop-down list as parent component and 'All categories', 'Devices' & 'fashion' as its child components. Each section has numerical labels indicating the focus order." lightbox="../media/focus-order-accessibility-annotation-wishcart-application.png":::
     
@@ -20,9 +20,9 @@ For the library components, "Name" will be same as per the design and same will 
 
 When we have multiple components with the same visual name than we should override the visual name. Why should we do this? We have different navigation for buttons, links. When a screen reader user runs with the respective navigation, it will just announce the name and no more context is visible on the UI. For for example, In this image it announces Create, Create, Browse when user navigates with button navigation. You can provide more context using Aria override or another way that includes the visible name of the control.   
 
-:::image type="content" source="../media/keyboardandscreenreader-annotationswithmultiplecontrolswithsamenamewidgetdialogspecs.png" alt-text="Screenshot of example shown in below image is where two components have same visual name as 'create' which is incorrect as it announces Create for both and browse for 3rd button when user navigates with button navigation and will create confusion and doesn't describe the purpose of each button." lightbox="../media/keyboardandscreenreader-annotationswithmultiplecontrolswithsamenamewidgetdialogspecs.png":::
+:::image type="content" source="../media/keyboard-same.png" alt-text="Screenshot of example shown in below image is where two components have same visual name as 'create' which is incorrect as it announces Create for both and browse for 3rd button when user navigates with button navigation and will create confusion and doesn't describe the purpose of each button." lightbox="../media/keyboard-same.png":::
 
-:::image type="content" source="../media/keyboardandscreenreader-annotationswithmultiplecontrolswithdifferentnamewidgetdialogspecs.png" alt-text="Screenshot of example shown in below image is where two 'create' buttons are there, but we have added another text in an Aria-Label override that includes the visible name of the control such as Create a new hire onboarding, Create urgent collaboration template & Browse other template respectively which describes the purpose of each button." lightbox="../media/keyboardandscreenreader-annotationswithmultiplecontrolswithdifferentnamewidgetdialogspecs.png":::
+:::image type="content" source="../media/keyboard-diff.png" alt-text="Screenshot of example shown in below image is where two 'create' buttons are there, but we have added another text in an Aria-Label override that includes the visible name of the control such as Create a new hire onboarding, Create urgent collaboration template & Browse other template respectively which describes the purpose of each button." lightbox="../media/keyboard-diff.png":::
 
 States are critical only if they're illustrating a flow or a specific condition where that particular state is critical, like cases where in a flow something is disabled, marking out that as disabled is a good practice.
 

@@ -44,11 +44,11 @@ You can avoid many accessibility issues by planning for them during the design p
 
 Our core accessibility principles are making UI understandable, efficient, and habituating for users. These principles are based on three Tenets. Let's learn more on these three Tenets which help designing an experience that an assistive technology users love.
 
-1. Understandable: I know what I can do
+- Understandable: I know what I can do
 
-1. Efficient: I take fewer steps and process less information
+- Efficient: I take fewer steps and process less information
 
-1. Habituating: I quickly achieve command
+- Habituating: I quickly achieve command
 
 Understandable: **When a UI has already been learned it's understood**. The user is aware of the actions they can take because they have already been exposed to the concepts. When a UI is understandable, the user is aware of the actions they can take because the UI contains **concepts that are learned quickly**. For example, on a website if a task is time bound, and it has timer displaying in the top then it should be announced to the assistive technology users so that they'll not miss this information. We should decide what should be the right interval to avoid making announcements too verbose.
 
@@ -84,7 +84,7 @@ Parent Component – A **parent component** refers to a component that contains 
 
 Child Component - A **child component** refers to an individual element that is nested inside a **parent component.**
 
-[Plugin](https://www.figma.com/community/plugin/7three1three100three6968threethree4777/a11y-focus-order) UI:
+### [Plugin](https://www.figma.com/community/plugin/7three1three100three6968threethree4777/a11y-focus-order) UI
 
 The plug-in will create a table that has all the components listed out and they're here in the table shown below in the image. A diamond shaped thing is a library component which is an established library with some minor tweaks that are good to use and populate details automatically. Custom Components denoted as circle, are a composite of certain controls and need to set up many properties for them. And then if necessary custom components can have a parent and have children. For example, grid is a parent and grid item are a child component. Another example is that radio groups are parents and radio button are a child component.
 
@@ -94,4 +94,4 @@ When we start the spec, name and focus order will be on the top when editing the
 
 :::image type="content" source="../media/annotation-type-figma-types.png" alt-text="Screenshot of showing different types of controls. One with circle shaped and label 1 is a custom image. The controls with circle shape followed by arrow with label 2 is parent control. Right arrow with 'A' and 'B' label as child. The component labeled as three,4 & 5 are library components with diamond shape." lightbox="../media/annotation-type-figma-types.png":::
 
-:::image type="content" source="../media/pluginui.png" alt-text="Screenshot of When editing the component itself in the component UI, you notice that the name and focus order of the component are positioned at the top. Directly beneath this, you find the control type. Any notes you may have will be displayed in the edit box and will appear in the third column at the top. Moving down, properties are listed below the notes section. Some components have specific properties, and these will be represented by checkboxes for easy selection. Additionally, any custom keyboard shortcuts can be configured in the section below the properties. This is where you can input shortcuts such as 'Alt' and specify the desired action. If a shortcut involves multiple key presses, you can use the plus sign to add another keyboard press. It's important to note that these are custom keyboard shortcuts and aren't typically included within the component itself. Common keys like Enter and Space, which is natural parts of most components, don't need to be specified." lightbox="../media/pluginui.png":::
+:::image type="content" source="../media/plugin-ui.png" alt-text="Screenshot of When editing the component itself in the component UI, you notice that the name and focus order of the component are positioned at the top. Directly beneath this, you find the control type. Any notes you may have will be displayed in the edit box and will appear in the third column at the top. Moving down, properties are listed below the notes section. Some components have specific properties, and these will be represented by checkboxes for easy selection. Additionally, any custom keyboard shortcuts can be configured in the section below the properties. This is where you can input shortcuts such as 'Alt' and specify the desired action. If a shortcut involves multiple key presses, you can use the plus sign to add another keyboard press. It's important to note that these are custom keyboard shortcuts and aren't typically included within the component itself. Common keys like Enter and Space, which is natural parts of most components, don't need to be specified." lightbox="../media/plugin-ui.png":::

@@ -47,7 +47,7 @@ quiz:
     - content: By providing visual cues for navigation
       isCorrect: false
       explanation: Incorrect. While visual cues and layout information are important, screen reader annotations primarily help users understand the purpose and interaction of elements, enabling better accessibility. 
-    - content: By conveying information about the type, purpose and specific capabilities of each instance of controls of a page. 
+    - content: By conveying information about the type, purpose and specific capabilities of each instance of controls of a page
       isCorrect: true
       explanation: Correct. Screen reader annotations are crucial for conveying information about how to interact with elements. These annotations ensure that screen reader users can understand the function of different elements, like buttons and links, so they can navigate and interact effectively.
     - content: By informing users about the layout and design

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cela-accessibility.accessibility-design-specs-with-annotations.annotations-for-keyboard-ascreen-reader-navigation
+uid: learn.cela-accessibility.accessibility-design-specs-with-annotations.annotations-for-keyboard-screen-reader-navigation
 title: Annotations for keyboard and screen reader navigation 
 metadata:
   title: Annotations for Keyboard and Screen Reader Navigation 
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 20
 content: |
-  [!include[](includes/3-annotations-for-keyboard-ascreen-reader-navigation.md)]
+  [!include[](includes/3-annotations-for-keyboard-screen-reader-navigation.md)]

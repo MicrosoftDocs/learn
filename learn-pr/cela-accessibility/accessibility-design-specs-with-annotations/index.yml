@@ -29,8 +29,8 @@ products:
 - m365
 units:
 - learn.cela-accessibility.accessibility-design-specs-with-annotations.introduction
-- learn.cela-accessibility.accessibility-design-specs-with-annotations.overview-of-accessibility-annotation
-- learn.cela-accessibility.accessibility-design-specs-with-annotations.annotations-for-keyboard-ascreen-reader-navigation
+- learn.cela-accessibility.accessibility-design-specs-with-annotations.overview-accessibility-annotation
+- learn.cela-accessibility.accessibility-design-specs-with-annotations.annotations-for-keyboard-screen-reader-navigation
 - learn.cela-accessibility.accessibility-design-specs-with-annotations.design-for-color-contrast-requirements
 - learn.cela-accessibility.accessibility-design-specs-with-annotations.knowledge-check
 - learn.cela-accessibility.accessibility-design-specs-with-annotations.summary

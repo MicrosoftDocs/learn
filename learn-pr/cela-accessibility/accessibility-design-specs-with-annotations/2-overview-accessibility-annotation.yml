@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cela-accessibility.accessibility-design-specs-with-annotations.overview-of-accessibility-annotation
+uid: learn.cela-accessibility.accessibility-design-specs-with-annotations.overview-accessibility-annotation
 title: Overview of accessibility annotation
 metadata:
   title: Overview of Accessibility Annotation
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 20
 content: |
-  [!include[](includes/2-overview-of-accessibility-annotation.md)]
+  [!include[](includes/2-overview-accessibility-annotation.md)]
