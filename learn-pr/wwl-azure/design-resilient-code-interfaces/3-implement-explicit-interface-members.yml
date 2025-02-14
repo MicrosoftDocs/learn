@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-resilient-code-interfaces.implement-explicit-interface-members
+title: Implement explicit interface members in a class
+metadata:
+  title: Implement explicit interface members in a class
+  description: "Implement explicit interface members in a class using C#."
+  ms.date: 02/14/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-implement-explicit-interface-members.md)]

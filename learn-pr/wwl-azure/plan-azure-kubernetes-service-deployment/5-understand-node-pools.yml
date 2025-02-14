@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Nodes and node pools for Azure Kubernetes Service
   description: "Nodes and node pools for Azure Kubernetes Service"
-  ms.date: 04/23/2024
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
