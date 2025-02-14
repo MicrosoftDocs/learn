@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.accessibility-design-specs-with-annotations.annotations-for-keyboard-ascreen-reader-navigation
+title: Annotations for Keyboard and Screen Reader Navigation 
+metadata:
+  title: Annotations for Keyboard and Screen Reader Navigation 
+  description: This unit is a part of the accessibility design specs with annotations module.
+  ms.date: 02/14/2025
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-annotations-for-keyboard-ascreen-reader-navigation.md)]

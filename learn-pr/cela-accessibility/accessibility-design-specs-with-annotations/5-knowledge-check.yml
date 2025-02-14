@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.accessibility-design-specs-with-annotations.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: This is the knowledge check for the accessibility design specs with annotations module.
+  ms.date: 02/14/2025
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is the primary purpose of annotating design mockups for accessibility?
+    choices:
+    - content: To make designs look more colorful
+      isCorrect: false
+      explanation: Incorrect. While enhancing visual appeal, providing information about the design process, and documenting the process are important, accessibility annotations specifically focus on making the design accessible to everyone.
+    - content: To ensure designs can be used  by all users, including those with disabilities
+      isCorrect: true
+      explanation: Correct. The primary purpose of annotating design mockups for accessibility is to ensure that designs are usable by all users, including those with disabilities.
+    - content: To provide additional information about the design process
+      isCorrect: false
+      explanation: Incorrect. While enhancing visual appeal, providing information about the design process, and documenting the process are important, accessibility annotations specifically focus on making the design accessible to everyone.
+    - content: To document the design process
+      isCorrect: false
+      explanation: Incorrect. While enhancing visual appeal, providing information about the design process, and documenting the process are important, accessibility annotations specifically focus on making the design accessible to everyone.
+
+  - content: Which of the following is a critical consideration when implementing keyboard navigation in designs?
+    choices:
+    - content: The use of vibrant colors
+      isCorrect: false
+      explanation: Incorrect. While vibrant colors, image quantity, and font size are important design elements, they do not directly impact the effectiveness of keyboard navigation. Focus order is key to ensuring smooth navigation for keyboard users.
+    - content: The logical and intuitive focus order of interactive elements
+      isCorrect: true
+      explanation: Correct. The logical and intuitive focus order of interactive elements is crucial when implementing keyboard navigation. This ensures users can navigate through the design in a meaningful and efficient way using only the keyboard, which is essential for accessibility.
+    - content: The number of images used in the design
+      isCorrect: false
+      explanation: Incorrect. While vibrant colors, image quantity, and font size are important design elements, they do not directly impact the effectiveness of keyboard navigation. Focus order is key to ensuring smooth navigation for keyboard users.
+    - content: The font size of the text
+      isCorrect: false
+      explanation: Incorrect. While vibrant colors, image quantity, and font size are important design elements, they do not directly impact the effectiveness of keyboard navigation. Focus order is key to ensuring smooth navigation for keyboard users.
+
+  - content: How can screen reader annotations benefit users?
+    choices:
+    - content: By providing visual cues for navigation
+      isCorrect: false
+      explanation: Incorrect. While visual cues and layout information are important, screen reader annotations primarily help users understand the purpose and interaction of elements, enabling better accessibility. 
+    - content: By conveying information about the type, purpose and specific capabilities of each instance of controls of a page. 
+      isCorrect: true
+      explanation: Correct. Screen reader annotations are crucial for conveying information about how to interact with elements. These annotations ensure that screen reader users can understand the function of different elements, like buttons and links, so they can navigate and interact effectively.
+    - content: By informing users about the layout and design
+      isCorrect: false
+      explanation: Incorrect. While visual cues and layout information are important, screen reader annotations primarily help users understand the purpose and interaction of elements, enabling better accessibility. 
+    - content: By enhancing the overall aesthetic of the interface
+      isCorrect: false
+      explanation: Incorrect. While visual cues and layout information are important, screen reader annotations primarily help users understand the purpose and interaction of elements, enabling better accessibility. 
+
+  - content: What is the purpose of color contrast checkers in accessibility design?
+    choices:
+    - content: To ensure colors match the brand guidelines
+      isCorrect: false
+      explanation: Incorrect. While brand guidelines and aesthetics are important, the main purpose of color contrast checkers is to ensure accessibility by making sure the text stands out enough from its background for all users to read clearly.
+    - content: To verify that text, icons and interactive components are easily readable against its background
+      isCorrect: true
+      explanation: Correct. Color contrast checkers are used to verify that text is easily readable against its background. This ensures that users, including those with vision impairments, can perceive and read the content without difficulty.
+    - content: To evaluate the visual appeal of the design
+      isCorrect: false
+      explanation: Incorrect. While brand guidelines and aesthetics are important, the main purpose of color contrast checkers is to ensure accessibility by making sure the text stands out enough from its background for all users to read clearly.
+    - content: To determine the best color palette for aesthetics
+      isCorrect: false
+      explanation: Incorrect. While brand guidelines and aesthetics are important, the main purpose of color contrast checkers is to ensure accessibility by making sure the text stands out enough from its background for all users to read clearly.
+
