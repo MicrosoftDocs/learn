@@ -18,7 +18,7 @@ You can implement Azure Virtual Network to create a virtual representation of yo
 
 - You control the DNS server settings for virtual networks, and segmentation of the virtual network into subnets.
 
-The following illustration depicts a virtual network that has a subnet containing two virtual machines. The virtual network has connections to an on-premises infrastructure and a separate virtual network.
+The next illustration depicts a virtual network that has a subnet containing two virtual machines. The virtual network has connections to an on-premises infrastructure and a separate virtual network.
 
 :::image type="content" source="../media/virtual-networks-c016972b.png" alt-text="Diagram of a virtual network with a subnet of two virtual machines. The network connects to an on-premises infrastructure and separate virtual network." border="false":::
 
