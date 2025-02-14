@@ -39,4 +39,3 @@ Firstly, when testing your design drawings, please reduce your artboard size to 
 - Indicate which areas are scrollable. For example, in a paragraph dialog, the entire body might be scrollable, including the title, to maximize vertical space for controls. Alternatively, the title could be outside the scrollable area, but this reduces vertical space for controls.
 
 - Make sure to clearly state the app's minimum supported resolution and explain how scale settings affect it. Also, make sure your app reflows properly up to the stated minimum supported resolution.
-

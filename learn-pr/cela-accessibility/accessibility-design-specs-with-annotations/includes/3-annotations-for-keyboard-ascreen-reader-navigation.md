@@ -74,7 +74,7 @@ Alerts/Error message/Live region Notifies user of completion, any change on UI a
 
 :::image type="content" source="../media/demonstration-screenreader-errors.png" alt-text="Screenshot of error messages from the Form requesting users to fill out the field of information before continuing. The accessibility annotations make makes note of error stating that it is an Empty State Error Message, and to Enter your name to fix the error." lightbox="../media/demonstration-screenreader-errors.png":::
 
-:::image type="content" source="../media/demonstration-live-region.png" alt-text="Screenshot of a search bar on Teach Access's Donate page displays the name Microsoft" entered as a query. A pop-up notification appears, informing users that Microsoft offers a matching gift program." lightbox="../media/demonstration-live-region.png":::
+:::image type="content" source="../media/demonstration-live-region.png" alt-text="Screenshot of a search bar on Teach Access's Donate page displays the name Microsoft entered as a query. A pop-up notification appears, informing users that Microsoft offers a matching gift program." lightbox="../media/demonstration-live-region.png":::
 
 ### Focus management
 
@@ -89,7 +89,3 @@ Provide alternative text for images, icons, and other non-text content. This all
 - [A Guide to Accessible Form Validation](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/) 
 
 - [Write helpful Alt Text to Describe Images](https://www.linkedin.com/pulse/accessible-figma-designs-just-got-easier-ben-truelove/) 
-
-
-
-
