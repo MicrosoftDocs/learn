@@ -2,9 +2,11 @@
 uid: learn.wwl.explore-azure-functions.discover
 title: Discover Azure Functions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Discover Azure Functions
   description: "Discover Azure Functions"
-  ms.date: 12/06/2024
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
