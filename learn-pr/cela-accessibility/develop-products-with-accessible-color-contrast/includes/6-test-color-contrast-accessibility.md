@@ -1,8 +1,8 @@
-Testing is crucial for ensuring adequate color contrast. In this section, we'll introduce some of the processes and tools for testing color contrast in your digital products. 
+Testing is crucial for ensuring adequate color contrast. In this section, we introduce some of the processes and tools for testing color contrast in your digital products. 
 
 ## Testing tools
 
-You can use tools such as [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/windows/overview/), [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/), [Accessible Web's Color Contrast Checker](https://accessibleweb.com/color-contrast-checker/), and [Colour Contrast Analyzer (CCA)](https://www.tpgi.com/color-contrast-checker/) to check the contrast of the color combinations in your design. Browser developer tools such as [Firefox Accessibility Inspector](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast) and [Chrome DevTools](https://developer.chrome.com/docs/devtools)[ and automated tools such as ](https://developer.chrome.com/docs/devtools)[Web Accessibility Evaluation Tool (WAVE)](https://wave.webaim.org/) offer features to inspect and test color contrast. In this section, we will present a couple of exercises with which you can follow along using any of these tools. 
+You can use tools such as [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/windows/overview/), [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/), [Accessible Web's Color Contrast Checker](https://accessibleweb.com/color-contrast-checker/), and [Color Contrast Analyzer (CCA)](https://www.tpgi.com/color-contrast-checker/) to check the contrast of the color combinations in your design. Browser developer tools such as [Firefox Accessibility Inspector](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast) and [Chrome DevTools](https://developer.chrome.com/docs/devtools)[ and automated tools such as ](https://developer.chrome.com/docs/devtools)[Web Accessibility Evaluation Tool (WAVE)](https://wave.webaim.org/) offer features to inspect and test color contrast. In this section, we present a couple of exercises with which you can follow along using any of these tools. 
 
 ## Manual testing
 
@@ -10,7 +10,7 @@ Here's a list of ways to test color contrast:
 
 - Check the contrast ratio between text and background colors manually using one of the color contrast tools.
 
-- Convert your design to grayscale to ensure that information is not conveyed by color alone.
+- Convert your design to grayscale to ensure that information isn't conveyed by color alone.
 
 - Simulate various types of color blindness (such as Deuteranopia and Protanopia) using tools or browser extensions to ensure your design is accessible to users with color vision deficiencies.
 
@@ -28,12 +28,12 @@ Additionally, in Windows high-contrast mode, you can choose from four themes: Hi
 
 :::image type="content" source="../media/color-contrast-testing-windows-high-contrast-modes.png" alt-text="Screenshot of view of the PowerPoint UI in four high-contrast Windows themes. The themes are labeled as High Contrast #1, High Contrast #2,  High Contrast Black, and High Contrast White. Each theme alters the  background, text, and interface colors to demonstrate how the presentation appears with different high-contrast settings. The slides contain a title text box and decorative elements, adjusted to match each theme's color scheme." lightbox="../media/color-contrast-testing-windows-high-contrast-modes.png":::
 
-MacOS and iOS operating systems support light and dark modes.
+Mac OS and iOS operating systems support light and dark modes.
 
 :::image type="content" source="../media/color-contrast-testing-mac-high-contrast-modes.png" alt-text="Screenshot of view of the PowerPoint UI in two Mac modes: Light Mode and Dark Mode. In Light Mode, the slide background is bright with dark  text, while in Dark Mode, the background is dark with lighter text and  interface elements. The comparison demonstrates how the presentation adapts to different color settings for better visibility and accessibility." lightbox="../media/color-contrast-testing-mac-high-contrast-modes.png":::
 
 > [!NOTE]
-> Mac OS has some contrast problems that make it challenging to see certain elements clearly. The Increase Contrast setting is off by default, but turning it on will improve the contrast for the operating system and in many apps. It will also turn on the "Reduce Transparency" setting. Before testing for contrast, ensure the "Increase Contrast" setting is turned on. To do this, go to System Settings > Accessibility > Display. Then, turn on the "Increase Contrast" setting.
+> Mac OS has some contrast problems that make it challenging to see certain elements clearly. The Increased Contrast setting is off by default, but turning it on will improve the contrast for the operating system and in many apps. It will also turn on the "Reduce Transparency" setting. Before testing for contrast, ensure the "Increase Contrast" setting is turned on. To do this, go to System Settings > Accessibility > Display. Then, turn on the "Increase Contrast" setting.
 
 ### Exercise 1
 
@@ -58,7 +58,7 @@ Contrast of Color Pairs
 
 All five instances pass the 3:1 contrast ratio requirement for UI components. Although the contrast for the interior and exterior fills are low, they both have sufficient contrast with the border that separates them. 
 
-A keyboard focus visual indicator appears when we place the keyboard focus on this icon. The visual indicator is also important for meaning, so the contrast requirement also applies to it. We need to check the color contrast between the color of the focus border and the exterior fill color adjacent to it.
+A keyboard focus visual indicator appears when we place the keyboard focus on this icon. The visual indicator is also important for meaning, so the contrast requirement also applies to it. We need to check the color contrast between the color of the focus border and the exterior fill color next to it.
 
 ```
 Colors
@@ -68,7 +68,7 @@ Contrast of Color Pairs
 - Exterior fill color: Focus border color = 16.167:1
 ```
 
-In this case, the contrast is sufficient, meeting our contrast requirements of 3:1 for non-text content. 
+In this case, the contrast is sufficient, meeting our contrast requirements of 3:1 for nontext content. 
 
 
 ### Exercise 2
@@ -103,7 +103,7 @@ Contrast of Color Pairs
 - Hover background color: Icon color = 6.392:1
 ```
 
-Recall that the hover state is not important for meaning. People can already tell that these buttons are clickable without being able to see the hover indicator. However, the icon still needs to meet contrast requirements while in the hover state, which means that the hover background color and the icon need sufficient contrast. In this case, it does. 
+Recall that the hover state isn't important for meaning. People can already tell that these buttons are clickable without being able to see the hover indicator. However, the icon still needs to meet contrast requirements while in the hover state, which means that the hover background color and the icon need sufficient contrast. In this case, it does. 
 
 ### User testing
 
@@ -117,7 +117,7 @@ User testing for color contrast is crucial to ensure that websites and applicati
 
 - [Accessible Web's Color Contrast Checker](https://accessibleweb.com/color-contrast-checker/)
 
-- [Colour Contrast Analyzer (CCA)](https://developer.paciellogroup.com/resources/contrastanalyser/)
+- [Color Contrast Analyzer (CCA)](https://developer.paciellogroup.com/resources/contrastanalyser/)
 
 - [Color Contrast Analyzer (CCA) for Mac](https://www.tpgi.com/color-contrast-checker/)
 
