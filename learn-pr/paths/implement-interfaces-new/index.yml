@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-interfaces-new
+metadata:
+  title: Implement Interfaces
+  description: Implement Interfaces
+  ms.date: 02/14/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: learning-path
+title: Implement Interfaces
+prerequisites: |
+  - Visual Studio Code installed with th3 C# Dev Kit
+  - Basic knowledge of the Visual Studio Code IDE
+  - Basic understanding of the C# programming language
+  - Familiarity with classes
+summary: |
+  Interfaces provide a contract defines what properties and methods implementing classes must&nbsp;provide, but now how. You design interfaces with properties and methods and develop classes that implement the interfaces.&nbsp;Discover how default implementations in interfaces enable you to add new methods directly into an interface and provide a default implementation. Reduce code dependencies using interfaces&nbsp;and use explicit interface members, and multiple interfaces to further add resilience and flexibility to code.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+subjects:
+- app-development
+modules:
+- learn.wwl.discover-interfaces
+- learn.wwl.apply-interfaces-code
+trophy:
+  uid: learn.wwl.implement-interfaces-new.trophy
