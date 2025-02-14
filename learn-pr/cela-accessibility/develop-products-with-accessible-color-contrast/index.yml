@@ -14,7 +14,7 @@ summary: |
   Understanding color and contrast are essential for accessibility in digital products like apps and websites. It ensures that content is readable and navigable for all users, including those with visual impairments, promoting an inclusive online experience. 
   In this module, you learn the importance of color and contrast in digital design for accessibility. You cover key principles and requirements, including contrast ratios and user interface (UI) components. You recall essential considerations, apply practical tips for high-contrast needs, and identify tools for testing color contrast across all control states and themes.
 abstract: |
-  By the end of this module, you're be able to:
+  By the end of this module, you'll be able to:
   - Explain the importance of color and contrast in accessible design 
   - Identify the accessibility principles and requirements related to color and contrast
   - Recall the key considerations for using color and contrast in the design of digital products

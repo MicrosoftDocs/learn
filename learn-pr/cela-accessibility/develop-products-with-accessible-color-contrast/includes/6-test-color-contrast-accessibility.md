@@ -28,12 +28,12 @@ Additionally, in Windows high-contrast mode, you can choose from four themes: Hi
 
 :::image type="content" source="../media/color-contrast-testing-windows-high-contrast-modes.png" alt-text="Screenshot of view of the PowerPoint UI in four high-contrast Windows themes. The themes are labeled as High Contrast #1, High Contrast #2,  High Contrast Black, and High Contrast White. Each theme alters the  background, text, and interface colors to demonstrate how the presentation appears with different high-contrast settings. The slides contain a title text box and decorative elements, adjusted to match each theme's color scheme." lightbox="../media/color-contrast-testing-windows-high-contrast-modes.png":::
 
-Mac OS and iOS operating systems support light and dark modes.
+macOS and iOS operating systems support light and dark modes.
 
 :::image type="content" source="../media/color-contrast-testing-mac-high-contrast-modes.png" alt-text="Screenshot of view of the PowerPoint UI in two Mac modes: Light Mode and Dark Mode. In Light Mode, the slide background is bright with dark  text, while in Dark Mode, the background is dark with lighter text and  interface elements. The comparison demonstrates how the presentation adapts to different color settings for better visibility and accessibility." lightbox="../media/color-contrast-testing-mac-high-contrast-modes.png":::
 
 > [!NOTE]
-> Mac OS has some contrast problems that make it challenging to see certain elements clearly. The Increased Contrast setting is off by default, but turning it on will improve the contrast for the operating system and in many apps. It will also turn on the "Reduce Transparency" setting. Before testing for contrast, ensure the "Increase Contrast" setting is turned on. To do this, go to System Settings > Accessibility > Display. Then, turn on the "Increase Contrast" setting.
+> macOS has some contrast problems that make it challenging to see certain elements clearly. The Increased Contrast setting is off by default, but turning it on will improve the contrast for the operating system and in many apps. It will also turn on the "Reduce Transparency" setting. Before testing for contrast, ensure the "Increase Contrast" setting is turned on. To do this, go to System Settings > Accessibility > Display. Then, turn on the "Increase Contrast" setting.
 
 ### Exercise 1
 
@@ -56,7 +56,7 @@ Contrast of Color Pairs
 
 :::image type="content" source="../media/power-point-insert-new-slide-button-focused.png" alt-text="Screenshot of the Microsoft PowerPoint button to insert a new slide." lightbox="../media/power-point-insert-new-slide-button-focused.png":::
 
-All five instances pass the 3:1 contrast ratio requirement for UI components. Although the contrast for the interior and exterior fills are low, they both have sufficient contrast with the border that separates them. 
+All five instances pass the 3:1 contrast ratio requirement for UI components. Although the contrasts for the interior and exterior fills are low, they both have sufficient contrast with the border that separates them. 
 
 A keyboard focus visual indicator appears when we place the keyboard focus on this icon. The visual indicator is also important for meaning, so the contrast requirement also applies to it. We need to check the color contrast between the color of the focus border and the exterior fill color next to it.
 
