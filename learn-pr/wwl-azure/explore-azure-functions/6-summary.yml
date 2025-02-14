@@ -2,9 +2,11 @@
 uid: learn.wwl.explore-azure-functions.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 12/06/2024
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
