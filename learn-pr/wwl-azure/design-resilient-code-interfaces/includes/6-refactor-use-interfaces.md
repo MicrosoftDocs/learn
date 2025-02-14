@@ -178,8 +178,8 @@ class Program
     static void Main()
     {
         // Create borrowable items
-        IBorrowable book = new BorrowableBook("The Great Gatsby");
-        IBorrowable dvd = new BorrowableDVD("Inception");
+        IBorrowable book = new BorrowableBook("Adventure Works Cycles");
+        IBorrowable dvd = new BorrowableDVD("Graphic Design Institute");
 
         // Create libraries
         Library bookLibrary = new Library(book);
@@ -200,11 +200,11 @@ class Program
 The output demonstrates the flexibility of the refactored system:
 
 ```code
-You have borrowed "The Great Gatsby".
-"The Great Gatsby" is already borrowed.
+You have borrowed "Adventure Works Cycles".
+"Adventure Works Cycles" is already borrowed.
 
-You have borrowed the DVD "Inception".
-The DVD "Inception" is already borrowed.
+You have borrowed the DVD "Graphic Design Institute".
+The DVD "Graphic Design Institute" is already borrowed.
 ```
 
 This refactored example demonstrates how interfaces reduce dependencies and improve modularity:

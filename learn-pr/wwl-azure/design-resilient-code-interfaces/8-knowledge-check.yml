@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/13/2025
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How can you access explicit interface members in C#?"
+  - content: "WWhich solloution allows access for explicit interface members in C#?"
     choices:
     - content: "By casting the class instance to the interface type."
       isCorrect: true
@@ -36,11 +36,11 @@ quiz:
     - content: "Interfaces allow for multiple inheritance of classes."
       isCorrect: false
       explanation: "Incorrect. C# does not support multiple inheritance of classes. Interfaces allow a class to inherit behavior from multiple sources without multiple inheritance."
-  - content: "You're developing a home automation application with different types of lights. Which approach allows you to mix and match capabilities in a single class?"
+  - content: "Imagine the scenario of developing a home automation application with different types of lights. Which approach allows mix and match capabilities in a single class?"
     choices:
     - content: "Implement multiple interfaces in the class."
       isCorrect: true
-      explanation: "Correct. Implementing multiple interfaces in a class allows you to mix and match capabilities, providing a common API supported by various types."
+      explanation: "Correct. Implementing multiple interfaces in a class allows mix and match capabilities, providing a common API supported by various types."
     - content: "Use multiple inheritance of classes."
       isCorrect: false
       explanation: "Incorrect. C# does not support multiple inheritance of classes. Implementing multiple interfaces is the correct approach."

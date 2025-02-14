@@ -4,7 +4,7 @@ title: Examine interface designs
 metadata:
   title: Examine interface designs
   description: "Examine interface designs and SOLID design principles."
-  ms.date: 02/13/2025
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -32,18 +32,18 @@ quiz:
       explanation: "Correct. The Single Responsibility Principle states that a class should have a single, clear responsibility and only one reason to change."
     - content: "A class should have multiple reasons for change."
       isCorrect: false
-      explanation: "Incorrect. The Single Responsibility Principle states that a class should have a single, clear responsibility and only one reason to change."
+      explanation: "Incorrect. Multiple reasons for change indicate that the class is handling more than one responsibility, which violates the principle."
     - content: "A class should have no reasons for change."
       isCorrect: false
-      explanation: "Incorrect. The Single Responsibility Principle states that a class should have a single, clear responsibility and only one reason to change."
+      explanation: "Incorrect. A class must be designed to fulfill its specific responsibility, so it may need to change when that responsibility evolves."
   - content: "According to the Dependency Inversion Principle (DIP), what should classes depend on for defining required behavior?"
     choices:
     - content: "Other classes directly"
       isCorrect: false
-      explanation: "Incorrect. The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."
+      explanation: "Incorrect. Directly depending on other classes creates tight coupling, making the code less flexible and harder to maintain."
     - content: "Interfaces or abstract classes"
       isCorrect: true
       explanation: "Correct. The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."
     - content: "Specific properties of other classes"
       isCorrect: false
-      explanation: "Incorrect. The DIP states that classes should depend on interfaces or abstract classes, not other classes directly."
+      explanation: "Incorrect. Depending on specific properties of other classes introduces rigid dependencies, which the DIP seeks to avoid."
