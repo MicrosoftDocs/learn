@@ -3,21 +3,28 @@ uid: learn.wwl.explore-microsoft-identity-platform
 metadata:
   title: Explore the Microsoft identity platform
   description: "Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools."
-  ms.date: 04/24/2023
+  ms.date: 07/16/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: identity-platform
 title: Explore the Microsoft identity platform
 summary: Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools.
 abstract: |
   After completing this module, you'll be able to:
+
   *   Identify the components of the Microsoft identity platform.
+
   *   Describe the three types of service principals and how they relate to application objects.
+
   *   Explain how permissions and user consent operate, and how conditional access impacts your application.
 prerequisites: |
   * You should be familiar with developer concepts and terminology.
+
   * Experience working with OAuth or other authentication protocols.
+
   * An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/identity-platform-explore.svg
 levels:
@@ -25,7 +32,7 @@ levels:
 roles:
 - developer
 products:
-- azure-active-directory
+- entra-id
 - microsoft-identity-web
 subjects:
 - identity-access

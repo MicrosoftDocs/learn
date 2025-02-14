@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-kusto-fabric.describe-kusto-databases-tables
+title: Real-Time Intelligence in Microsoft Fabric
+metadata:
+  title: Real-Time Intelligence in Microsoft Fabric
+  description: "Understand core concepts of Real-Time Intelligence in Microsoft Fabric."
+  ms.date: 12/03/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-describe-kusto-databases-tables.md)]

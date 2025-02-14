@@ -31,14 +31,14 @@ Besu runs, maintains, debugs, and monitors nodes in an Ethereum network. The API
 
 Besu is a popular Ethereum client. It's unique it can be used in either public networks or private, consortium-based networks. 
 
-Besu can be deployed in various [ways](https://besu.hyperledger.org/en/stable/HowTo/Get-Started/Installation-Options/Install-Binaries/?azure-portal=true). For more information about configuring and deploying, see the [Hyperledger Besu website](https://besu.hyperledger.org/en/latest/Tutorials/Examples/Private-Network-Example/?azure-portal=true).
+Besu can be deployed in various [ways](https://besu.hyperledger.org/development/public-networks?azure-portal=true). For more information about configuring and deploying, see the [Hyperledger Besu website](https://besu.hyperledger.org).
 
 
 ### R3 Corda
 
-The [Corda platform](https://www.r3.com/corda-platform/?azure-portal=true) is a private, permissioned blockchain. It focuses on supporting trusted communication, interactions, and transactions between entities. 
+The [Corda platform](https://r3.com/products/corda/?azure-portal=true) is a private, permissioned blockchain. It focuses on supporting trusted communication, interactions, and transactions between entities. 
 
-[Corda Enterprise](https://www.r3.com/corda-enterprise/?azure-portal=true) provides the core attributes of the Corda open-source codebase. A key feature is support for enterprise business requirements for licensed software.
+[Corda Enterprise](https://docs.r3.com/en/platform/corda/4.8/enterprise.html?azure-portal=true) provides the core attributes of the Corda open-source codebase. A key feature is support for enterprise business requirements for licensed software.
 
 In Ethereum, client applications play a pivotal role in the transaction lifecycle. The client application obtains the signing keys and transactions before the identities are submitted to the nodes.
 

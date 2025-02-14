@@ -13,8 +13,8 @@ By automating the publishing of your reusable Bicep code, you can ensure that th
 
 - [Semantic versioning](https://semver.org)
 - Secure your workflow's identity
-  - [Principle of least privilege](/azure/active-directory/roles/best-practices#1-manage-to-least-privilege)
+  - [Principle of least privilege](/entra/identity/role-based-access-control/best-practices#1-apply-principle-of-least-privilege)
   - [Azure Container Registry roles and permissions](/azure/container-registry/container-registry-roles)
 - [Bicep private registries for modules](/azure/azure-resource-manager/bicep/private-module-registry)
-  - [Aliases](/azure/azure-resource-manager/bicep/bicep-config-modules)
+  - [Aliases](/azure/azure-resource-manager/bicep/bicep-config-modules#aliases-for-modules)
 - [Template specs](/azure/azure-resource-manager/templates/template-specs)

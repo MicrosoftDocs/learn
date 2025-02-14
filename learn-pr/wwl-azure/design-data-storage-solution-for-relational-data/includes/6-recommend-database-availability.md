@@ -32,7 +32,7 @@ The image illustrates the availability architecture for the vCore Business Criti
 
 - Unlike the General Purpose tier, the data and log files all run on direct-attached SSD, which significantly reduces network latency.
 
-- In this tier, there are three secondary replicas. One secondary replica can be used as a read-only endpoint (at no extra charge). A transaction can complete a commit when at least one secondary replica has hardened the change for its transaction log.
+- In this tier, there are three secondary replicas. One secondary replica can be used as a read-only endpoint (at no extra charge). A transaction can complete a commit when at least one secondary replica has implemented the change. 
 
 ### Things to know about Hyperscale availability
 
@@ -56,7 +56,7 @@ The image illustrates the availability architecture for the vCore Hyperscale tie
 
 The following table compares support for database availability across the vCore service tiers. For the DTU model, you can equate the Basic and Standard tiers to the vCore General Purpose tier, and the Premium tier to the vCore Business Critical tier. The DTU model doesn't offer a Hyperscale tier. As you compare the support options, think about which service tier meets the database availability requirements for Tailwind Traders.
 
-| SQL Database vCore tiers | SQL Managed Instance DTU tiers | Database availability support |
+| SQL Database/SQL Managed Instance vCore tiers | SQL Database DTU tiers | Database availability support |
 | --- | --- | --- |
 | **General Purpose** | **Standard** or **Basic** | Provides balanced compute and storage options for business workloads |
 | **Business Critical** | **Premium** | Meets low latency requirements and enables highest resilience to failures for business applications |

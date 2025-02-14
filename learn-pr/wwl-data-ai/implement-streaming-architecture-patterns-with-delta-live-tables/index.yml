@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Implement streaming architecture patterns with Delta Live Tables
+  description: "Learn about structured streaming with Delta Live Tables"
+  ms.date: 7/25/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: module-standard-task-based
+  ms.service: azure
+title: Implement streaming architecture patterns with Delta Live Tables
+summary: You explore different features and tools to help you develop architecture patterns with Azure Databricks Delta Live Tables.
+abstract: |
+  At the end of this module, you're able to:
+  * Use Event driven architectures with Delta Live Tables
+  * Ingest streaming data
+  * Achieve Data consistency and reliability
+  * Scale streaming workloads with Delta Live Tables
+prerequisites: |
+  *   Ability to navigate the Azure portal.
+  *   Understanding of the Azure Databricks workspace.
+  *   Experience with Spark languages and Notebooks.
+  
+iconUrl: /training/achievements/data-engineer-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- developer
+- data-scientist
+- data-analyst
+products:
+- azure-databricks
+units:
+- learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.introduction
+- learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.event-driven-architectures-with-delta-live-tables
+- learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.ingest-data-with-structured-streaming
+- learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.maintain-data-consistency-and-reliability-with-structured-streaming
+- learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.scale-streaming-workloads-with-delta-live-tables
+- learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.exercise
+- learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.knowledge-check
+- learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.summary
+badge:
+  uid: learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.badge
+

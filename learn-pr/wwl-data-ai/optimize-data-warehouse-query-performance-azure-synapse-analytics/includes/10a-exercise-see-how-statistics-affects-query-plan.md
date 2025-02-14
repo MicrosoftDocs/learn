@@ -5,4 +5,4 @@ Now it's your opportunity to see how statistics impact a query plan for yourself
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-synapse-sql?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-synapse-dw?azure-portal=true)

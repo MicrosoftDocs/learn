@@ -1,5 +1,3 @@
-
-
 If you want to deploy a model to a batch endpoint without using the MLflow model format, you need to create the scoring script and environment.
 
 To deploy a model, you must have already created an endpoint. Then you can deploy the model to the endpoint.

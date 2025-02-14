@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-track-model-fabric.fabric-models
+title: Manage models in Microsoft Fabric
+metadata:
+  title: Manage models in Microsoft Fabric
+  description: Manage models in Microsoft Fabric
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 1/24/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-fabric-models.md)]

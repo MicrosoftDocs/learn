@@ -1,4 +1,4 @@
-Using the knowledge acquired in this module, you’ll have determined what features and functionality are available for VMs in Hyper-V on Windows Server 2019 that enable you to ensure workloads are optimized and stable. You also will have determined what Hyper-V storage options are available and how they can be utilized.
+Using the knowledge acquired in this module, you’ll have determined what features and functionality are available for VMs in Hyper-V on Windows Server that enable you to ensure workloads are optimized and stable. You also will have determined what Hyper-V storage options are available and how they can be utilized.
 
 ## Learn more
 

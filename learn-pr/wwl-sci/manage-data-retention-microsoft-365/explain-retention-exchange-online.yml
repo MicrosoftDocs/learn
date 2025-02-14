@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-retention-microsoft-365.explain-retention-exchange-online
+title: Explain retention in Exchange Online
+metadata:
+  title: Explain retention in Exchange Online
+  description: "Explain retention in Exchange Online"
+  ms.date: 05/30/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/explain-retention-exchange-online.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What happens to an email in Exchange Online when it's soft deleted?"
+    choices:
+    - content: "It moves to the Recoverable Items folder, specifically into the Deletions subfolder."
+      isCorrect: true
+      explanation: "Correct: Soft deletion moves the item directly to the Recoverable Items folder, where it's stored in the Deletions subfolder until further action is taken."
+    - content: "It moves to the Deleted Items folder."
+      isCorrect: false
+      explanation: "Incorrect: Moving to the Deleted Items folder is the result of a standard delete, not a soft delete."
+    - content: "It's permanently deleted immediately."
+      isCorrect: false
+      explanation: "Incorrect: Soft deleted items aren't permanently deleted immediately; they're moved to the Recoverable Items folder."

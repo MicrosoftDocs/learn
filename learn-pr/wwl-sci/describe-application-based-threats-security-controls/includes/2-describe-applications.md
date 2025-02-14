@@ -1,4 +1,4 @@
-Nowadays, many of us talk about applications even in our most casual conversations.  But do we really know what an application is?  To better understand how applications can become attack vectors for cybercriminals, we'll first need to identify what they know about us.
+Nowadays, many of us talk about applications even in our most casual conversations. But do we really know what an application is? To better understand how applications can become attack vectors for cybercriminals, we'll first need to identify what they know about us.
 
 ## What is software?
 
@@ -9,7 +9,7 @@ Nowadays, many of us talk about applications even in our most casual conversatio
 
 ### System software
 
-*System software* is the first thing that runs when you turn on your device, and manages the different components that make it work.  It also creates a framework that enables applications to run properly and to mitigate problems when they stop working.
+*System software* is the first thing that runs when you turn on your device, and manages the different components that make it work. It also creates a framework that enables applications to run properly and to mitigate problems when they stop working.
 
 System software can be characterized by the following:
 
@@ -36,6 +36,6 @@ Word processors, email apps, internet browsers, and image editors, are all examp
 
 Applications are also becoming proactive and intelligent. For instance, the map application on your mobile phone could be tracking your location to provide real-time traffic information, even if you’re not interacting with it. Apps on your devices are collecting important data about you, like your location, how long you stay at a given place, your browser search history, and more.
 
-Typically, the information collected is shared with other apps. For example, your browser search history is often shared with social media sites, so they can provide targeted advertisements based on that information.  
+Typically, the information collected is shared with other apps. For example, your browser search history is often shared with social media sites, so they can provide targeted advertisements based on that information. 
 
 Because applications are so intertwined with our daily lives, and run on all sorts of devices, they've become the key to information about us. Cybercriminals are aware of this, and will attempt to compromise applications to get their hands on our information.

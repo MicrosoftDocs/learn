@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.azure.terraform-introduction-to-infrastructure-as-code
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  moduleType: introduction
+  title: Introduction to infrastructure as code using Terraform
+  description: Learn the fundamentals of how Terraform can help you adopt infrastructure as code to quickly and confidently scale your cloud deployments.
+  ms.date: 04/18/2024
+  author: jaredfholgate
+  ms.author: jaredholgate
+  ms.topic: module
+  ms.devlang: hcl
+  ms.service: azure
+title: Introduction to infrastructure as code using Terraform
+summary: Infrastructure as code can help you quickly and confidently scale your cloud deployments. By using Terraform, you can automate and simplify the provisioning of infrastructure resources.
+abstract: |
+  After completing this module, you'll be able to:
+    - Describe the benefits of infrastructure as code
+    - Describe the difference between declarative and imperative infrastructure as code
+    - Explain what Terraform is, and how it fits into an infrastructure-as-code approach
+prerequisites: |
+  You should be familiar with:
+  - Basic cloud computing concepts and terminology.
+  - Different types of cloud resources.
+iconUrl: /training/achievements/terraform/terraform-introduction-to-infrastructure-as-code.svg
+levels:
+  - beginner
+roles:
+  - devops-engineer
+  - developer
+  - administrator
+languages:
+  - hcl
+products:
+  - azure-resource-manager
+subjects:
+  - devops
+  - cloud-computing
+units:
+- learn.azure.terraform-introduction-to-infrastructure-as-code.introduction
+- learn.azure.terraform-introduction-to-infrastructure-as-code.what-infrastructure-code
+- learn.azure.terraform-introduction-to-infrastructure-as-code.azure-resource-manager-terraform-state
+- learn.azure.terraform-introduction-to-infrastructure-as-code.what-terraform
+- learn.azure.terraform-introduction-to-infrastructure-as-code.how-terraform-works
+- learn.azure.terraform-introduction-to-infrastructure-as-code.when-use-terraform
+- learn.azure.terraform-introduction-to-infrastructure-as-code.knowledge-check
+- learn.azure.terraform-introduction-to-infrastructure-as-code.summary
+badge:
+  uid: learn.azure.terraform-introduction-to-infrastructure-as-code.badge
+

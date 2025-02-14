@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-secure-scalable-platform-architectures.security-considerations-platform-architecture
+title: Security Considerations in Platform Architecture
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Security Considerations in Platform Architecture
+  description: "Security Considerations in Platform Architecture"
+  ms.date: 01/14/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-security-considerations-platform-architecture.md)]

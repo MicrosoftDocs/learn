@@ -1,4 +1,4 @@
-When you automate the publishing process for a template spec or a Bicep module, you need to ensure that everything you'd normally do on your own can be automated and run within the pipeline. In this unit, you'll learn how to apply some of the principles you've previously learned when you publish template specs and Bicep modules from a deployment pipeline.
+When you automate the publishing process for a template spec or a Bicep module, you need to ensure that everything you normally do manually can be automated and run within the pipeline. In this unit, you apply principles you previously learned to publish template specs and Bicep modules from a deployment pipeline.
 
 ## Template specs and modules
 
@@ -11,7 +11,7 @@ When you're deciding between template specs and Bicep modules, a good rule of th
 
 ## Validate reusable code in a pipeline
 
-Unlike regular Bicep deployments, when you create a template spec or a module, you don't deploy the resources directly to Azure. Instead, you _publish_ the template spec or module. Then you can use the template spec or module in another deployment. That deployment will deploy the resources you've defined. Because of this difference, the ways that you validate and test your template specs and Bicep modules might be different from the process that you use for regular Bicep deployments.
+Unlike regular Bicep deployments, when you create a template spec or a module, you don't deploy the resources directly to Azure. Instead, you _publish_ the template spec or module. Then you can use the template spec or module in another deployment. _That_ deployment then deploys the resources you've defined. Consequently, the ways that you validate and test your template specs and Bicep modules can differ from the process that you use for regular Bicep deployments.
 
 Linting your Bicep code is good practice. The linter detects syntactical problems, and it warns you if you're not following the recommended practices.
 
@@ -20,19 +20,19 @@ Beyond linting, you might want to consider testing your template specs and modul
 - Preflight validation and deployments require an Azure environment to deploy the resources to. You might need to maintain a dedicated Azure subscription or resource group to use for deploying and testing your modules.
 - Many template specs and modules require you to specify a set of parameters. You might need to create a test set of parameters for your template specs or modules to use when they're deployed.
 
-You should choose whether to include pipeline steps that deploy and test your template specs and modules. In this Microsoft Learn module, we lint the Bicep code but don't include other forms of testing. If you want to test your template specs and modules, consider how you'll deploy them to Azure. Also consider whether you'll use dedicated subscriptions or resource groups to deploy the resources.
+You'll need to decide whether to include pipeline steps that deploy and test your template specs and modules. In this Microsoft Learn module, we lint the Bicep code but don't include other forms of testing. If you want to test your template specs and modules, consider how you deploy them to Azure. Also consider whether to use dedicated subscriptions or resource groups to deploy the resources.
 
 > [!TIP]
 > We recommend that you review [Test your Bicep code by using Azure Pipelines](xref:learn.azure.test-bicep-code-using-azure-pipelines) for more information on how to test your Bicep files in an automated pipeline.
 
 ## Authentication and authorization
 
-When you publish template specs to Azure yourself, your Azure Active Directory (Azure AD) user needs to be granted access to the resource group that contains the template spec resource. Likewise, when you publish a Bicep module to a registry, your Azure AD user needs to have permission to write to the Azure Container Registry instance that your organization uses for its Bicep modules.
+When you publish template specs to Azure yourself, your Microsoft Entra user needs to be granted access to the resource group that contains the template spec resource. Likewise, when you publish a Bicep module to a registry, your Microsoft Entra user needs to have permission to write to the Azure Container Registry instance that your organization uses for its Bicep modules.
 
 When you work with an automated deployment pipeline, the same principles apply. However, because you aren't the person running the deployment, you need to ensure that your pipeline's service principal is given the appropriate access to the resource group for publishing the template spec, or to the container registry for publishing modules.
 
 > [!TIP]
-> When you publish a module to a registry, the service principal running the deployment probably doesn't need a lot of permission. When your registry uses Azure AD authorization, the service principal needs only the _AcrPush_ permission on the registry.
+> When you publish a module to a registry, the service principal running the deployment probably doesn't need a lot of permission. When your registry uses Microsoft Entra authorization, the service principal needs only the _AcrPush_ permission on the registry.
 >
 > Consider using the security _principle of least privilege_. Provide the pipeline's service principal with access only to the container registry, and not to a resource group or subscription.
 
@@ -101,7 +101,7 @@ You can convert this Azure CLI command to a pipeline step, too:
 > [!TIP]
 > In this example, the Bicep registry's host name (`toycompany.azurecr.io`) is embedded in the pipeline step definition. This isn't a good practice. You can use environment variables to set configuration settings like this. You'll see how this works later in this Microsoft Learn module.
 
-Shortly, you'll see how you can publish a template spec from a pipeline by using the steps described in this unit.
+How to publish a template spec from a pipeline is described in this unit.
 
 ## Use a module or template spec
 

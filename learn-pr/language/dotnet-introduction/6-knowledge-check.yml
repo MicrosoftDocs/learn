@@ -3,30 +3,34 @@ uid: learn.languages.dotnet-introduction.knowledge-check
 title: Knowledge check
 metadata:
   title: Check your knowledge
-  description: Review what you've learned.
-  ms.date: 10/12/2020
+  description: Review what you learned.
+  ms.date: 10/07/2024
   author: camsoper
   ms.author: casoper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 3
+content: Choose the best response for each question.
 quiz:
+  title: Check your knowledge
   questions:
-  - content: "Imagine that you used C# code to create a new application. After running the code, you discover a bug in your logic.  How can you find the bug?"
+  - content: "Imagine that you used C# code to create a new application. After running the code, you discover a bug in your logic. How can you find the bug?"
     choices:
-    - content: "The C# compiler will help you find the logic bug."
+    - content: "The C# compiler helps you find the logic bug."
       isCorrect: false
-      explanation: "The compiler will identify C# syntax compilation errors. But it will not catch bugs in your logic."
-    - content: "The .NET runtime will help you find the logic bug."
+      explanation: "The compiler identifies C# syntax compilation errors. But it doesn't catch bugs in your logic."
+    - content: "The .NET runtime helps you find the logic bug."
       isCorrect: false
-      explanation: "If your logic produces an exception that crashes your program, then the .NET runtime will close your application. But it will not help you find your logic bug."
-    - content: "A class in the .NET library will help you find your logic bug."
+      explanation: "If your logic produces an exception that crashes your program, then the .NET runtime closes your application. But it doesn't help you find your logic bug."
+    - content: "A class in the .NET library helps you find your logic bug."
       isCorrect: false
-      explanation: "No classes in the .NET library will help you find a logic bug."
+      explanation: "No classes in the .NET library help you find a logic bug."
     - content: "The debugging features of Visual Studio or the .NET CLI can help you find your logic bug."
       isCorrect: true
       explanation: "Correct. You can use debugging tools to set breakpoints, step through code, and monitor the value of variables to help you find bugs."
-  - content: "Which one of the following terms describes an application framework that combines several related libraries, along with starter projects, file templates, code generators, and other tools that developers use to build an application for a specific purpose?"
+  - content: "Which one of the following terms describes an application framework that combines several related libraries. Along with starter projects, file templates, code generators, and other tools that developers use to build an application for a specific purpose?"
     choices:
     - content: "A workload"
       isCorrect: false
@@ -40,14 +44,14 @@ quiz:
     - content: "An environment"
       isCorrect: false
       explanation: "In a software-development context, *environment* usually refers to the collection of tools that are used to build applications."
-  - content: "Which one of the following terms best describes the installer that you need to create projects, write code, call methods in libraries, compile code, and then build, debug, and run applications?"
+  - content: "Which one of the following terms best describes the installer that you need to create projects, write code, call methods in libraries, and compile code. Then build, debug, and run applications?"
     choices:
     - content: "The .NET runtime"
       isCorrect: false
       explanation: "The .NET runtime can run only .NET assemblies. We're looking for an answer that covers broader functionality."
     - content: "The .NET base libraries"
       isCorrect: false
-      explanation: "The .NET base libraries contain a lot of functionality that you can access from your code.  But we're looking for an answer that covers broader functionality."
+      explanation: "The .NET base libraries contain functionality that you can access from your code. But we're looking for an answer that covers broader functionality."
     - content: "The .NET SDK"
       isCorrect: true
       explanation: "Correct!"

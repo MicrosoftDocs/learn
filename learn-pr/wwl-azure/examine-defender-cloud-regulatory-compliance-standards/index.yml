@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.examine-defender-cloud-regulatory-compliance-standards
+metadata:
+  title: Examine Defender for Cloud regulatory compliance standards
+  description: "Learn how to use Microsoft Defender for Cloud to streamline regulatory compliance by identifying and addressing issues that hinder meeting compliance standards and achieving certifications."
+  ms.date: 05/24/2024
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: defender-for-cloud
+  ai-usage: human-only
+title: Examine Defender for Cloud regulatory compliance standards
+summary: In this module, we will focus on using Microsoft Defender for Cloud to streamline regulatory compliance by identifying and addressing issues that hinder meeting compliance standards and certifications.
+abstract: |
+  By the end of this training module, participants will:
+
+  -   Understand how to use Microsoft Defender for Cloud’s compliance management dashboard.
+
+  -   Identify and interpret key regulatory compliance standards applicable to your industry.
+
+  -   Implement and manage compliance controls within Microsoft Defender for Cloud.
+
+  -   Conduct regular compliance assessments and generate comprehensive compliance reports.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-key-vault
+- azure-log-analytics
+- azure-portal
+- azure-private-link
+- azure-sql-database
+- azure-sql-virtual-machines
+- azure-sqlserver-vm
+- azure-storage
+- azure-virtual-machines
+- azure-virtual-network
+- defender-for-cloud
+units:
+- learn.wwl.examine-defender-cloud-regulatory-compliance-standards.introduction
+- learn.wwl.examine-defender-cloud-regulatory-compliance-standards.regulatory-compliance-standards
+- learn.wwl.examine-defender-cloud-regulatory-compliance-standards.microsoft-cloud-security-benchmark
+- learn.wwl.examine-defender-cloud-regulatory-compliance-standards.improve-regulatory-compliance
+- learn.wwl.examine-defender-cloud-regulatory-compliance-standards.knowledge-check
+- learn.wwl.examine-defender-cloud-regulatory-compliance-standards.summary
+badge:
+  uid: learn.wwl.examine-defender-cloud-regulatory-compliance-standards.badge

@@ -3,14 +3,16 @@ uid: learn.intro-to-kubernetes.how-app-deployments-work
 title: How Kubernetes deployments work
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Kubernetes works
   description: Learn about the basic Kubernetes deployment options available for applications and some considerations around network and storage configuration.
-  ms.date: 4/24/2020
+  ms.date: 11/13/2024
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 10
 content: |
   [!include[](includes/4-how-app-deployments-work.md)]
+

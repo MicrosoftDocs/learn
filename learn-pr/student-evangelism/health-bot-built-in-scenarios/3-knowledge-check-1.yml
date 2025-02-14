@@ -2,13 +2,14 @@
 uid: learn.health-bot-built-in-scenarios.3-knowledge-check-1
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: One multiple-choice question
-  ms.date: 07/27/2021
+  ms.date: 03/09/2023
   author: Dwitrisha
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 3
 content: |

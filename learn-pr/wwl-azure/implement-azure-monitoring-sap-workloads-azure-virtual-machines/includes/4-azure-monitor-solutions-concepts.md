@@ -1,12 +1,13 @@
+
 Azure Monitor for SAP Solutions uses existing [Azure Monitor](/azure/azure-monitor/overview) features such as Log Analytics and [Workbooks](/azure/azure-monitor/platform/workbooks-overview) to provide more monitoring capabilities. For example:
 
 - Use an Azure Log Analytics workspace to:
 
-    - Create [custom visualizations](/azure/azure-monitor/platform/workbooks-overview) by editing default Workbooks
+  - Create [custom visualizations](/azure/azure-monitor/platform/workbooks-overview) by editing default Workbooks
 
-    - Write [custom queries](/azure/azure-monitor/log-query/log-analytics-tutorial)
+  - Write [custom queries](/azure/azure-monitor/log-query/log-analytics-tutorial)
 
-    - Creating [custom alerts](/azure/azure-monitor/learn/tutorial-response)
+  - Creating [custom alerts](/azure/azure-monitor/learn/tutorial-response)
 
 - Take advantage of the [flexible retention period](/azure/azure-monitor/platform/manage-cost-storage)
 
@@ -14,45 +15,79 @@ Azure Monitor for SAP Solutions uses existing [Azure Monitor](/azure/azure-monit
 
 ## What data does Azure Monitor for SAP Solutions collect?
 
-Data collection in Azure Monitor for SAP Solutions depends on the providers that you configure. During Public Preview, the following data is being collected.
+Azure Monitor for SAP solutions doesn't collect Azure Monitor metrics or resource log data, like some other Azure resources do. Instead, it sends custom logs directly to the Azure Monitor Logs system. There, you can use the built-in features of Log Analytics.
 
-### High-availability Pacemaker cluster telemetry
+Data collection in Azure Monitor for SAP solutions depends on the providers that you configure. The following data is collected for each provider.
 
-- Node, resource, and SBD device status
+### HA Pacemaker cluster data
 
+- Node, resource, and SBD status
 - Pacemaker location constraints
-
 - Quorum votes and ring status
 
-- [Others](https://github.com/ClusterLabs/ha_cluster_exporter/blob/master/doc/metrics.md)
+Also see the [metrics specification](https://github.com/ClusterLabs/ha_cluster_exporter/blob/master/doc/metrics.md) for `ha_cluster_exporter`.
 
-### SAP HANA telemetry
+### SAP HANA data
 
-- CPU, memory, disk, and network utilization
-
-- HANA System Replication (HSR)
-
+- CPU, memory, disk, and network use
+- HANA system replication
 - HANA backup
-
 - HANA host status
+- Index server and name server roles
+- Database growth
+- Top tables
+- File system use
 
-- Index server and Name server roles
+### Microsoft SQL Server data
 
-### Microsoft SQL server telemetry
-
-- CPU, memory, disk utilization
-
-- Hostname, SQL Instance name, SAP System ID
-
-- Batch Requests, Compilations, and page Life Expectancy over time
-
+- CPU, memory, and disk use
+- Host name, SQL instance name, and SAP system ID
+- Batch requests, compilations, and page life expectancy over time
 - Top 10 most expensive SQL statements over time
-
 - Top 12 largest tables in the SAP system
-
 - Problems recorded in the SQL Server error log
+- Blocking processes and SQL wait statistics over time
 
-- Blocking processes and SQL Wait Statistics over time
+### OS (Linux) data
+
+- CPU use, fork count, running processes, and blocked processes
+- Memory use and distribution among used, cached, and buffered
+- Swap use, paging, and swap rate
+- File system usage, along with number of bytes read and written per block device
+- Read/write latency per block device
+- Ongoing I/O count and persistent memory read/write bytes
+- Network packets in/out and network bytes in/out
+
+### SAP NetWeaver data
+
+- SAP system and application server availability, including instance process availability of:
+  - Dispatcher
+  - ICM
+  - Gateway
+  - Message server
+  - Enqueue server
+  - IGS Watchdog
+- Work process usage statistics and trends
+- Enqueue lock statistics and trends
+- Queue usage statistics and trends
+- SMON metrics (**/SDF/SMON**)
+- SWNC workload, memory, transaction, user, and RFC usage (**St03n**)
+- Short dumps (**ST22**)
+- Object lock (**SM12**)
+- Failed updates (**SM13**)
+- System log analysis (**SM21**)
+- Batch job statistics (**SM37**)
+- Outbound queues (**SMQ1**)
+- Inbound queues (**SMQ2**)
+- Transactional RFC (**SM59**)
+- STMS change transport system metrics (**STMS**)
+
+### IBM Db2 data
+
+- Database availability
+- Number of connections, logical reads, and physical reads
+- Waits and current locks
+- Top 20 runtimes and executions
 
 ## Data sharing with Microsoft
 
@@ -62,43 +97,39 @@ We recommend that you enable data sharing, as it helps Microsoft provide improve
 
 ## Architecture overview
 
-At a high level, the following diagram explains how Azure Monitor for SAP Solutions collects telemetry from SAP HANA databases. The architecture is agnostic to whether SAP HANA is deployed on Azure virtual machines or Azure Large Instances.
+The following diagram shows, at a high level, how Azure Monitor for SAP solutions collects data from the SAP HANA database. The architecture is the same whether SAP HANA is deployed on Azure Virtual Machines or Azure Large Instances.
 
-![How Azure Monitor for SAP Solutions collects telemetry from SAP HANA databases](../media/azure-monitor-sap-solutions-telemetry.png)
+:::image type="content" source="../media/azure-monitor-sap-architecture.png" alt-text="Diagram that shows the architecture of Azure Monitor for S A P solutions.":::
+
+Important points about the architecture include:
+
+- You can monitor multiple instances of a component type across multiple SAP systems (SIDs) within a virtual network by using a single resource of Azure Monitor for SAP solutions. For example, you can monitor multiple HANA databases, HA clusters, Microsoft SQL Server instances, and SAP NetWeaver systems of multiple SIDs.
+
+- The architecture diagram shows the SAP HANA provider as an example. You can configure multiple providers for corresponding components to collect data from those components. Examples include HANA database, HA cluster, Microsoft SQL Server instance, and SAP NetWeaver.
 
 ### Key components of the architecture
 
-- You can navigate to the marketplace within the **Azure portal** and discover Azure Monitor for SAP Solutions.
+- The Azure portal, where you access Azure Monitor for SAP solutions.
 
-- The **Azure Monitor for SAP Solutions resource** is a landing place for you to view monitoring telemetry.
+- The Azure Monitor for SAP solutions resource, where you view monitoring data.
 
-- The managed resource group is deployed automatically as part of the Azure Monitor for SAP Solutions resource deployment. The resources deployed within the managed resource group help in the collection of your telemetry. The key resources deployed are:
+- The managed resource group, which is deployed automatically as part of the Azure Monitor for SAP solutions resource's deployment. Inside the managed resource group, resources like these help collect data:
 
-    - The **Azure virtual machine** (also known as the *collector VM*): The main purpose of this Standard_B2ms VM is to host the *monitoring payload*. This refers to the logic of collecting telemetry from the source systems and transferring it to the monitoring framework. In the diagram above, the monitoring payload contains the logic to connect to SAP HANA database over a SQL port.
+  - An [Azure Functions resource](/azure/azure-functions/functions-overview) hosts the monitoring code. This logic collects data from the source systems and transfers the data to the monitoring framework.
 
-    - [Azure Key Vault](/azure/key-vault/general/basic-concepts): Deployed to securely hold SAP HANA database credentials and to store information about [providers](/azure/virtual-machines/workloads/sap/azure-monitor-providers).
+  - An [Azure Key Vault resource](/azure/key-vault/general/basic-concepts) holds the SAP HANA database credentials and stores information about providers.
 
-    - **Log Analytics Workspace**: The destination where the telemetry data is stored.
+  - A [Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-workspace-overview) is the destination for storing data. Optionally, you can choose to use an existing workspace in the same subscription as your Azure Monitor for SAP solutions resource at deployment.
 
-        - Visualization is built on top of telemetry in Log Analytics using [Azure Workbooks](/azure/azure-monitor/platform/workbooks-overview). You can customize how your telemetry is displayed, and also pin your Workbooks or specific visualizations to the Azure dashboard. The visualization will autorefresh on the dashboard, with intervals as low as 30 minutes.
+  - A [storage account](/azure/storage/common/storage-account-overview) is associated with the Azure Functions resource. It's used to manage triggers and executions of logging functions.
 
-        - If you want to use your existing workspace within the same subscription as the SAP monitor resource, you can do so by choosing that option at the time of deployment.
+[Azure Monitor workbooks](/azure/azure-monitor/visualize/workbooks-overview) provide customizable visualization of the data in Log Analytics. To automatically refresh your workbooks or visualizations, pin the items to the Azure dashboard. The maximum refresh frequency is every 30 minutes.
 
-        - You can use Kusto Query Language (KQL) to run [queries](/azure/azure-monitor/log-query/log-query-overview) against the raw tables inside Log Analytics workspace.
-
-### Architecture highlights
-
-- **Multi-instance**: You can create monitoring for multiple instances of a given component type across multiple SAP SIDs within a VNET, with a single resource of Azure Monitor for SAP Solutions.
-
-- **Multi-provider**: The architecture diagram above shows the SAP HANA provider as an example. You can configure more providers to collect data from other components.
-
-- **Open source**: The source code of Azure Monitor for SAP Solutions is available in [GitHub](https://github.com/Azure/AzureMonitorForSAPSolutions). You can refer to the provider code and learn more about the product, contribute, or share feedback.
-
-- **Extensible query framework**: SQL queries to collect telemetry data are written in [JSON](https://github.com/Azure/AzureMonitorForSAPSolutions/blob/master/sapmon/content/SapHana.json). You can easily add more SQL queries to collect more telemetry data. You can request specific telemetry data to be added to Azure Monitor for SAP Solutions, by leaving feedback through the link at the end of this document or contacting your account team.
+You can also use Kusto Query Language (KQL) to [run log queries](/azure/azure-monitor/logs/log-query-overview) against the raw tables inside the Log Analytics workspace.
 
 ## Monitoring requirements of Azure for SAP Workloads
 
-According to SAP Note #2015553, “*for full support, you must enable built-in SAP monitors to retrieve information about configuration and resource utilization from the underlying Azure infrastructure.*” You must set up every Azure instance that hosts SAP software and related DBMS systems such that:
+According to SAP Note #2015553, for full support, you must enable built-in SAP monitors to retrieve information about configuration and resource utilization from the underlying Azure infrastructure. You must set up every Azure instance that hosts SAP software and related DBMS systems such that:
 
 - The **Azure Monitoring Extension for SAP** is deployed and correctly configured.
 
@@ -106,11 +137,10 @@ According to SAP Note #2015553, “*for full support, you must enable built-in S
 
 The following are technical requirements for using the Azure Monitoring Extension for SAP:
 
-- **The Azure virtual machine instance has an active route to the Internet** (required for accessing the Azure Extension Pool). You may need to set up Internet proxies for the virtual machine instance before you deploy the extension.
+- **The Azure virtual machine instance has an active route to the Internet** (required for accessing the Azure Extension Pool). If you need to set up Internet proxies for the virtual machine instance before you deploy the extension.
 
 - **SAP Enhanced Monitoring is deployed**. To include Azure performance counters in the SAP enhanced monitoring, SAP has enhanced the SAP Host Agent and its monitoring transaction ST06. Be sure to check the configuration, the required versions, and minimum support package levels. For more information, see the following SAP Notes:
 
-    - **Windows**: SAP Note #1409604 (Virtualization on Windows: Enhanced monitoring)
+  - **Windows**: SAP Note #1409604 (Virtualization on Windows: Enhanced monitoring)
 
-    - **Linux**: SAP Note #1102124 (SAPOSCOL on Linux: Enhanced function)
-
+  - **Linux**: SAP Note #1102124 (SAPOSCOL on Linux: Enhanced function)

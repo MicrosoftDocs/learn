@@ -1,1 +1,1 @@
-Choose the best response. Then select **Check your answers**.
+Choose the best response. 

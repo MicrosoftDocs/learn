@@ -75,3 +75,4 @@ Manage jobs by using several available Windows PowerShell commands. Pipe one or 
 - **Wait-Job**, which you typically use in a script. It pauses script processing until the jobs you indicate reach the specified state. Use this command in a script to start several jobs, and then make the script wait until those jobs complete before continuing.
 
 The Windows PowerShell process manages remote, WMI, and local jobs. When you close a PowerShell session, Windows PowerShell removes all jobs and their results, and you can no longer access them.
+

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-interfaces-c-sharp.exercise-use-interfaces-type
+title: Exercise - Use interfaces as a type
+metadata:
+  title: Exercise - Use interfaces as a type
+  description: "Exercise - Use interfaces as a type"
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/05-exercise-use-interfaces-type.md)]

@@ -1,4 +1,4 @@
-Azure Storage offers several storage account options. Each [storage account](/azure/storage/common/storage-account-overview) supports different features and has its own pricing model.
+Azure Storage offers several storage account options. Each storage account supports different features and has its own pricing model.
 
 ### Things to know about storage account types
 
@@ -13,3 +13,11 @@ Review the following options and think about what storage accounts are required 
 
 > [!NOTE]
 > All storage account types are encrypted by using Storage Service Encryption (SSE) for data at rest.
+
+### How to manage your storage account
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/-j_8clCWYn8" title="How to manage your storage account." allowfullscreen></iframe>
+
+
+
+

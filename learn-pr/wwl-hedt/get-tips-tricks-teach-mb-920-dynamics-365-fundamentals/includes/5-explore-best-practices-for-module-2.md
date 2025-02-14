@@ -14,7 +14,7 @@ This module consists of four lessons:
 Dynamics 365 Finance
 - Lesson 4 – Explore expense management, fixed asset management, and budgeting in Microsoft Dynamics 365 Finance
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXi7M]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=bd9717e3-788d-4c6b-b563-0e1a52c2a034]  
 
 Module 2 Tips and Tricks
 
@@ -27,8 +27,3 @@ Module 2 Tips and Tricks
 Module 2 Demos
 
 - No demos for this module
-
-Module 2 Labs
- 
-- Lab 2.1: [Create a main account](https://github.com/MicrosoftLearning/MB-920T00A-Microsoft-Dynamics-365-Fundamentals-Finance-and-Operations-Apps/blob/master/Instructions/Labs/LAB%5BMB920%5D_M02_Lab1_Create_a_main_account.md)
-- Lab 2.2: [Create a free text invoice](https://github.com/MicrosoftLearning/MB-920T00A-Microsoft-Dynamics-365-Fundamentals-Finance-and-Operations-Apps/blob/master/Instructions/Labs/LAB%5BMB920%5D_M02_Lab2_Create_a_free_text_invoice.md)

@@ -1,14 +1,17 @@
 In this module, you learned how to create and manage Azure VMs by using PowerShell and manage Azure storage accounts and Azure subscriptions with PowerShell. The following are the key takeaways:
 
-- To create a new Azure virtual machine (VM) with PowerShell commands, you can use the locally installed Windows PowerShell with Az module, or you can use the Cloud Shell environment that's available in Azure portal.
+- You can create a new Azure virtual machine (VM) with PowerShell commands, by using the locally installed Windows PowerShell with the Az PowerShell module. You can also use the Cloud Shell environment that's available in Azure portal.
 
-- Besides using Windows PowerShell to create new Azure VMs, you can also use PowerShell commands to manage, modify, and remove Azure VMs and the resources related to Azure VMs. 
+- You can also use PowerShell commands to manage, modify, and remove Azure VMs and the resources related to Azure VMs. 
 
 - You can use Azure PowerShell to manage Azure-related storage. Before you start managing your storage, you should first create a storage account, if you don't have one. Usually, storage accounts are created automatically when you create other Azure resources such as Azure virtual machines (VMs).
 
-- Most Azure users will only ever have a single subscription. However, if you're part of more than one organization or your organization has divided up access to certain resources across groupings, you might have multiple subscriptions within Azure.
+- Generally, most Azure users only have a single subscription. However, you might have multiple subscriptions within Azure for any of the following reasons:
 
-## Additional reading
+    - You're part of more than one organization.
+    - Your organization divides access to certain resources across groupings.
+
+## Extra reading
 
 To learn more, go through the following documents:
 

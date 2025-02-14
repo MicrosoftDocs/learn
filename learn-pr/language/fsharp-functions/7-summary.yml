@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 07/26/2021
-  author: softchris
-  ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.date: 03/03/2023
+  author: baronfel
+  ms.author: chethusk 
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

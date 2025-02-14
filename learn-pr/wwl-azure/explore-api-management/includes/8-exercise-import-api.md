@@ -1,4 +1,3 @@
-
 In this exercise you learn how to perform the following actions:
 
 * Create an API Management (APIM) instance
@@ -16,7 +15,7 @@ In this exercise you learn how to perform the following actions:
 
     :::image type="content" source="../media/cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
 
-1. After the shell opens be sure to select the **Bash** environment.
+1. After the shell opens, be sure to select the **Bash** environment.
 
     :::image type="content" source="../media/shell-bash-selection.png" alt-text="Selecting the Bash environment.":::
 
@@ -57,7 +56,7 @@ This section shows how to import and publish an OpenAPI specification backend AP
 
 1. On the **API Management** screen, select the API Management instance you created.
 
-1. Select **APIs** in the **API management service** navigation pane.
+1. In the **API management service** navigation pane, under **APIs**, select **APIs**.
 
     :::image type="content" source="../media/select-apis-navigation-pane.png" alt-text="Select APIs in the service navigation pane.":::
 
@@ -65,24 +64,24 @@ This section shows how to import and publish an OpenAPI specification backend AP
 
     :::image type="content" source="../media/create-api.png" alt-text="The OpenAPI dialog box. Fields are detailed in the following table.":::
 
-    Use the values from the table below to fill out the form. You can leave any fields not mentioned their default value.
+    Use the values from the following table to fill out the form. You can leave any fields not mentioned their default value.
 
     | Setting | Value | Description |
     |--|--|--|
-    | **OpenAPI Specification** | `https://conferenceapi.azurewebsites.net?format=json` | References the service implementing the API, requests are forwarded to this address. Most of the necessary information in the form is automatically populated after you enter this. |
-    | **Display name** | *Demo Conference API* | This name is displayed in the Developer portal. |
-    | **Name** | *demo-conference-api* | Provides a unique name for the API. |
+    | **OpenAPI Specification** | `https://bigconference.azurewebsites.net/` | References the service implementing the API, requests are forwarded to this address. Most of the necessary information in the form is automatically populated after you enter this. |
+    | **Display name** | *Big Conference API* | This name is displayed in the Developer portal. |
+    | **Name** | *big-conference-api* | Provides a unique name for the API. |
     | **Description** | Automatically populated | Provide an optional description of the API. |
-    | **API URL suffix** | *conference* | The suffix is appended to the base URL for the API management service. API Management distinguishes APIs by their suffix and therefore the suffix must be unique for every API for a given publisher. |
-    
 
 1. Select **Create**.
 
-## Configure the backend settings
+## Configure the API settings
 
-The *Demo Conference API* is created and a backend needs to be specified. 
+The *Big Conference API* is created. Configure the API settings. 
 
-1. Select **Settings** in the blade to the right and enter `https://conferenceapi.azurewebsites.net/` in the **Web service URL** field.
+1. Select **Settings** in the blade to the right.
+
+1. Confirm that `https://bigconference.azurewebsites.net/` is in the **Web service URL** field.
 
 1. Deselect the **Subscription required** checkbox.
 
@@ -92,13 +91,13 @@ The *Demo Conference API* is created and a backend needs to be specified.
 
 ## Test the API
 
-Now that the API has been imported and the backend configured it's time to test the API.
+Now that the API has been imported and configured it's time to test the API.
 
 1. Select **Test**.
 
     :::image type="content" source="../media/select-test.png" alt-text="Select test in the right pane.":::
 
-1. Select **GetSpeakers**. The page shows **Query parameters** and **Headers**, if any. The `Ocp-Apim-Subscription-Key` is filled in automatically for the subscription key associated with this API.
+1. Select **Speakers_Get**. The page shows **Query parameters** and **Headers**, if any. 
 
 1. Select **Send**.
 
@@ -106,7 +105,7 @@ Now that the API has been imported and the backend configured it's time to test 
 
 ## Clean up Azure resources
 
-When you're finished with the resources you created in this exercise you can use the command below to delete the resource group and all related resources.
+When you're finished with the resources you created in this exercise you can use the following command to delete the resource group and all related resources.
 
 ```bash
 az group delete --name az204-apim-rg

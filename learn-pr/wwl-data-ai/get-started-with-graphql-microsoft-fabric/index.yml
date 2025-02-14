@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn-wwl.get-started-with-graphql-microsoft-fabric
+metadata:
+  title: Get started with GraphQL in Microsoft Fabric
+  description: "Learn how GraphQL in Microsoft Fabric works, the key concepts, and practical examples to help users integrate their applications with GraphQL effectively as part of their solutions."
+  ms.date: 10/24/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module-standard-task-based
+  ms.service: fabric
+  ms.custom:
+    - ignite-2024
+  ai-usage: ai-assisted
+title: Get started with GraphQL in Microsoft Fabric
+summary: You'll explore the capabilities of GraphQL within the Microsoft Fabric environment, which provides a unified platform for managing and analyzing data.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Explain the main components of GraphQL in Microsoft Fabric and how they work.
+  *   Create API for GraphQL in Microsoft Fabric.
+  *   Understand how to manage relationships.
+  *   Query data using the editor.
+prerequisites: |
+  *   Ability to navigate the Fabric portal.
+  *   Conceptual understanding of data and databases.
+iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
+levels:
+- beginner
+roles:
+- developer
+- data-engineer
+- solution-architect
+products:
+- fabric
+- azure-ad-graph-api
+- azure-sql-database
+subjects: 
+  - app-development
+  - cloud-computing
+units:
+- learn-wwl.get-started-with-graphql-microsoft-fabric.introduction
+- learn-wwl.get-started-with-graphql-microsoft-fabric.explore-api-for-graphql
+- learn-wwl.get-started-with-graphql-microsoft-fabric.create-api-graphql
+- learn-wwl.get-started-with-graphql-microsoft-fabric.use-graphql-editor
+- learn-wwl.get-started-with-graphql-microsoft-fabric.exercise-work-with-graphql
+- learn-wwl.get-started-with-graphql-microsoft-fabric.knowledge-check
+- learn-wwl.get-started-with-graphql-microsoft-fabric.summary
+badge:
+  uid: learn-wwl.get-started-with-graphql-microsoft-fabric.badge

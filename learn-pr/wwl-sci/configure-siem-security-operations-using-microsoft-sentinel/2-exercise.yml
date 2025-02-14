@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs-create.exercise
+title: Exercise - Configure SIEM operations using Microsoft Sentinel
+metadata:
+  title: Exercise - Configure SIEM operations using Microsoft Sentinel
+  description: "Creates a Microsoft Sentinel workspace, assigns IAM roles, and configures data retention."
+  ms.date: 10/3/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-exercise.md)]

@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.generate-documentation-using-github-copilot-tools
+metadata:
+  title: Generate documentation using GitHub Copilot tools
+  description: "This module explores the generation of code explanations, project documentation, and inline code comment documentation using the GitHub Copilot Chat extension for Visual Studio Code."
+  ms.date: 11/14/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module-standard-task-based
+  ms.collection: wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: github-copilot
+  ms.devlang: csharp
+  ai-usage: ai-assisted
+title: Generate documentation using GitHub Copilot tools
+summary: This module explores the generation of code explanations, project documentation, and inline code comment documentation using the GitHub Copilot Chat extension for Visual Studio Code.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  -   Generate explanations of code blocks, code files, and entire code workspaces using the GitHub Copilot Chat extension for Visual Studio Code.
+
+  -   Generate code project documentation using the GitHub Copilot Chat extension for Visual Studio Code.
+
+  -   Generate inline code documentation using the GitHub Copilot Chat extension for Visual Studio Code.
+prerequisites: |
+  -   GitHub Copilot enabled on your account. For learning, the Copilot Free option with usage limits should sufficient.
+
+  -   A basic understanding of the features provided by the GitHub Copilot extensions for Visual Studio Code.
+
+  -   One or more years of software development experience is recommended.
+
+  -   Experience developing C# applications using Visual Studio Code and the C# Dev Kit extension is recommended.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- github
+subjects:
+- app-development
+- productivity
+units:
+- learn.wwl.generate-documentation-using-github-copilot-tools.introduction
+- learn.wwl.generate-documentation-using-github-copilot-tools.examine-explain-document-features-github-copilot
+- learn.wwl.generate-documentation-using-github-copilot-tools.exercise-generate-explanations-using-github-copilot-chat
+- learn.wwl.generate-documentation-using-github-copilot-tools.exercise-generate-project-documentation-using-github-copilot-chat
+- learn.wwl.generate-documentation-using-github-copilot-tools.exercise-generate-code-documentation-using-github-copilot
+- learn.wwl.generate-documentation-using-github-copilot-tools.exercise-complete-code-documentation-challenge
+- learn.wwl.generate-documentation-using-github-copilot-tools.review-code-documentation-solution
+- learn.wwl.generate-documentation-using-github-copilot-tools.knowledge-check
+- learn.wwl.generate-documentation-using-github-copilot-tools.summary
+badge:
+  uid: learn.wwl.generate-documentation-using-github-copilot-tools.badge

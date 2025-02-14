@@ -1,6 +1,6 @@
 When you start to publish reusable Bicep code, you probably use a manual approach. It's easy for you to determine which Bicep file you need to publish, and you probably have a manual process for incrementing the version number.
 
-When you automate the publishing process, you need to consider how to automate these steps. In this unit, you'll learn how to adopt a versioning system that communicates the changes you've made to your code. You'll also learn how you can scope your pipelines to publish just the code that you expect.
+When you automate the publishing process, you need to consider how to automate these steps. In this unit, you learn how to adopt a versioning system that communicates the changes you make to your code. You'll also learn how you can scope your pipelines to publish just the code that you expect.
 
 ## Version numbers
 
@@ -20,12 +20,12 @@ Changes in different parts of version numbers communicate important information 
 
 - **Your pipeline can also automatically set the revision number.** The pipeline's build number can be used as the revision number. This convention helps ensure that your version numbers are always unique, even if you don't update the other components of your version numbers.
 
-For example, suppose you're using a Bicep module that somebody else has published. The module has a version number of `2.0.496`. You see that a new version of the module is available with the version number `2.1.502`. The only significant change is to the minor version number, which indicates that you shouldn't expect a breaking change when you use the new version.
+For example, suppose you're using a previously published Bicep module with a version number of `2.0.496`. You see that a new version of the module is available with the version number `2.1.502`. The only significant change is to the minor version number, which indicates that you shouldn't expect a breaking change when you use the new version.
 
 > [!NOTE]
 > _Semantic versioning_ is a formalized versioning structure that's similar to multipart versioning. Semantic versioning includes additional components in the version number, along with strict rules about when you should set or reset each component. We link to more information about semantic versioning in the summary.
 
-Your team needs to decide how to define a breaking change for the purpose of versioning. For example, suppose you've built a Bicep module that deploys a storage account. You're now updating the Bicep file to enable private endpoints on your storage account. You're adding a private DNS zone to your Bicep file at the same time.
+Your team needs to decide how to define a breaking change for versioning. For example, suppose you build a Bicep module that deploys a storage account. You're now updating the Bicep file to enable private endpoints on your storage account. You're adding a private DNS zone to your Bicep file at the same time.
 
 In that example, you might be able to make the change without affecting the Bicep file's parameters or outputs. That way, anybody who deploys the file might not notice that anything is different. But this change introduces a significant difference in the behavior of your resources, so you might decide to treat it as a major version update regardless.
 
@@ -79,7 +79,7 @@ Suppose you change only the _module-2/main.bicep_ file. Only the pipeline for mo
 
 When you deploy to Azure by using Bicep, it's common to use multiple environments to help you to validate and test your code before it's published to a production environment. In previous Microsoft Learn training modules, you learned how to work with multiple environments from a deployment pipeline.
 
-Some organizations apply the same principles to Bicep modules and template specs. For example, you might first publish new versions of your modules to a nonproduction registry so that the users of each module can try out the new versions. Then, after they've signed off, you can publish the modules to your organization's production registry.
+Some organizations apply the same principles to Bicep modules and template specs. For example, you might first publish new versions of your modules to a nonproduction registry so that the users of each module can try out the new versions. Then, after they sign off on the changes, you can publish the modules to your organization's production registry.
 
 Like regular deployments, you can use _jobs_ and _pipeline templates_ to define the deployment sequence across your environments. In this Microsoft Learn module, we publish to a single environment to keep the pipeline simple.
 

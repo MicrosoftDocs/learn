@@ -4,11 +4,10 @@ title: Implement adaptive network hardening
 metadata:
   title: Implement adaptive network hardening
   description: "Implement adaptive network hardening"
-  ms.date: 09/25/2020
+  ms.date: 12/24/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |

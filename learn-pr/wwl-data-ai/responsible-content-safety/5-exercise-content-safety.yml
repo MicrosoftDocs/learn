@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-ai-content-safety.exercise
+title: Exercise - Implementing Azure AI Content Safety
+metadata:
+  title: Exercise - Implementing Azure AI Content Safety
+  description: Practice generating code to implement a prompt shield solution using Azure AI Content Safety. This exercise includes user prompt and document prompt tests.
+  ms.date: 10/17/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 40
+content: |
+  [!include[](includes/5-implement-azure-ai-content-safety.md)]

@@ -2,13 +2,14 @@
 uid: learn.oxford.intro-iot-funtions-iot.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
-  ms.date: 03/08/2023
+  description: In this section, we create interactive questions that validate if the learner understands the learning objectives
+  ms.date: 07/25/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5 # dummy number at present
 content: |
@@ -25,7 +26,7 @@ quiz:
     - content: "Azure Functions for IoT can manage large volumes of data."
       isCorrect: false
       explanation: "Incorrect. In themselves, IoT functions aren't related to managing large data volumes"
-  - content: "An Azure Function has two parts - triggers and bindings.  Collectively, what do triggers and bindings achieve?"
+  - content: "An Azure Function has two parts - triggers and bindings. Collectively, what do triggers and bindings achieve?"
     choices:
     - content: "Triggers and bindings help to create a scalable solution."
       isCorrect: false
@@ -40,10 +41,11 @@ quiz:
     choices:
     - content: "Azure Functions for IoT is faster hence they use less resources."
       isCorrect: false
-      explanation: "Incorrect. The speed of execution doesn't directly impact overall resources."
+      explanation: "Incorrect. The speed of execution doesn't directly influence overall resources."
     - content: "Azure Functions can be managed through a dashboard."
       isCorrect: false
-      explanation: "Incorrect. The existence of a dashboard doesn't impact the cost."
-    - content: "You don't have to pre-allocate the resources in advance."
+      explanation: "Incorrect. The existence of a dashboard doesn't influence the cost."
+    - content: "You don't have to preallocate the resources in advance."
       isCorrect: true
       explanation: "Correct. You're charged only for the resources you use. You don't have to manage the infrastructure and to allocate the resources in advance. The system does that for you."
+

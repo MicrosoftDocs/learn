@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-fabric-items.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/12/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+  ms.custom:
+  - fabric
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: What is the primary function of the Monitor hub in Microsoft Fabric?
+    choices:
+    - content: "It allows users to modify and update data pipelines."
+      isCorrect: false
+      explanation: "Incorrect. The Monitor hub does not provide functionality for modifying data pipelines, it is used for monitoring activities."
+    - content: "It provides a platform for creating new data integration processes."
+      isCorrect: false
+      explanation: "Incorrect. The Monitor hub is not used for creating data integration processes, but for monitoring existing ones."
+    - content: "It collects and aggregates data from selected Fabric items and processes, providing a common interface for monitoring various activities."
+      isCorrect: true
+      explanation: "Correct. The Monitor hub in Microsoft Fabric is designed to aggregate data and provide a unified interface for monitoring various data integration, transformation, movement, and analysis activities."
+  - content: "What is the primary function of Activator in Microsoft Fabric?"
+    choices:
+    - content: "Activator is a tool for designing user interfaces in Microsoft Fabric."
+      isCorrect: false
+      explanation: "Incorrect. Activator is not involved in user interface design."
+    - content: "Activator is used to create and manage databases in Microsoft Fabric."
+      isCorrect: false
+      explanation: "Incorrect. While Activator does interact with data, it does not create or manage databases."
+    - content: "Activator enables automated processing of events that trigger actions."
+      isCorrect: true
+      explanation: "Correct. Activator is used to automate actions based on specific event triggers."
+  - content: "What is a key aspect of monitoring best practices?"
+    choices:
+    - content: "Identifying what to monitor, collecting and analyzing data regularly, reviewing logs and metrics regularly, taking action when deviations occur, and optimizing performance using monitoring data."
+      isCorrect: true
+      explanation: "Correct. These are all key aspects of monitoring best practices."
+    - content: "Reviewing logs and metrics only when deviations from normal behavior are shown. "
+      isCorrect: false
+      explanation: "Incorrect. Logs and metrics should be reviewed regularly, not just when deviations occur."
+    - content: "Collecting and analyzing data only when anomalies occur."
+      isCorrect: false
+      explanation: "Incorrect. Data should be collected and analyzed regularly, not just when anomalies occur."

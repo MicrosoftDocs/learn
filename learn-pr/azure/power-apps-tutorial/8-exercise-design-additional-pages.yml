@@ -3,12 +3,11 @@ uid: learn.azure.power-apps-tutorial.8-exercise-design-additional-pages
 title: Exercise - Design additional pages and email in Power Apps
 metadata:
   title: Exercise - Design additional pages and email in Power Apps
-  description: Construct additional pages for the application and send emails through Power Apps
-  ms.date: 10/19/2021
+  description: Construct additional pages for the application and send emails through Power Apps.
+  ms.date: 04/23/2024
   author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.author: "vinnietieto"
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/8-exercise-design-additional-pages.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-modernize-implement-high-availability-sap-workloads-azure.explore-availability-zones
+title: Explore availability zones
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Explore availability zones
+  description: "Learn the definition of availability zones and how they can be used to provide high availability."
+  ms.date: 10/10/2024
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/12-explore-availability-zones.md)]

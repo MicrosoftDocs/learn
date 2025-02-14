@@ -2,14 +2,15 @@
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-setup-azure-sphere
 title: Exercise - Set up Azure Sphere 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Set up Azure Sphere
   description: In this section, you learn how to set up Azure Sphere.
-  ms.date: 6/26/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 10 # dummy number at present
 content: |
   [!include[](includes/6-exercise-setup-azure-sphere.md)]
+

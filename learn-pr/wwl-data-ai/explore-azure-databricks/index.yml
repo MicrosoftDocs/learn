@@ -1,36 +1,41 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Databricks
-  description: "Explore Azure Databricks"
-  ms.date: 08/26/2022
+  description: Explore Azure Databricks
+  ms.date: 08/05/2024
   author: wwlpublish
-  ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: theresai
+  ms.topic: module
+  ms.service: azure
 title: Explore Azure Databricks
 summary: Azure Databricks is a cloud service that provides a scalable platform for data analytics using Apache Spark.
 abstract: |
-  In this module, you'll learn how to:
-  - Provision an Azure Databricks workspace.
-  - Identify core workloads and personas for Azure Databricks.
-  - Describe key concepts of an Azure Databricks solution.
+  In this module, you learn how to:
+  - Provision an Azure Databricks workspace
+  - Identify core workloads for Azure Databricks
+  - Use Data Governance tools Unity Catalog and Microsoft Purview
+  - Describe key concepts of an Azure Databricks solution
 prerequisites: |
-  Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
-iconUrl: /training/achievements/describe-azure-databricks.svg
+  Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/credentials/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/describe-azure-databricks.svg
 levels:
 - intermediate
 roles:
-- data-engineer
+- data-analyst
 products:
 - azure-databricks
 units:
 - learn.wwl.explore-azure-databricks.introduction
 - learn.wwl.explore-azure-databricks.get-started
-- learn.wwl.explore-azure-databricks.identify-workloads
+- learn.wwl.explore-azure-databricks.workloads
 - learn.wwl.explore-azure-databricks.understand-key-concepts
+- learn.wwl.explore-azure-databricks.data-governance
 - learn.wwl.explore-azure-databricks.exercise
 - learn.wwl.explore-azure-databricks.knowledge-check
 - learn.wwl.explore-azure-databricks.summary
 badge:
   uid: learn.wwl.explore-azure-databricks.badge
+

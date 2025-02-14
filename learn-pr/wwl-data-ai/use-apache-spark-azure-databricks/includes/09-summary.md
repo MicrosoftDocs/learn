@@ -1,4 +1,4 @@
-Apache Spark is a key technology used in big data analytics, and the Spark support in Azure Databricks enables you to combine big data processing in Spark with large-scale data analytics.
+Apache Spark is a key technology used in data transformation and big data analytics. The Spark support in Azure Databricks enables you to combine big data processing in Spark with large-scale data analytics.
 
 In this module, you learned how to:
 

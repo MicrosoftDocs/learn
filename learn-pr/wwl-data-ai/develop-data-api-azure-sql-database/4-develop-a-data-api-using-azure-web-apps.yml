@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.develop-data-api-azure-sql-database.develop-a-data-api-using-azure-web-apps
+title: Develop a data API using Azure Web App for Containers
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Develop a data API using Azure Web App for Containers
+  description: "Learn how to develop a data API using Azure Web App for Containers."
+  ms.date: 10/10/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-develop-a-data-api-using-azure-web-apps.md)]

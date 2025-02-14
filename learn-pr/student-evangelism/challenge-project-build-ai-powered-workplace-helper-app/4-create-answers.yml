@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.build-ai-powered-workplace-helper-app.create-specified-answers
+title: Exercise - Create specified answers with Copilot Studio Topics
+metadata:
+  title: Exercise - Create specified answers with Copilot Studio Topics
+  description: "Learn how to add Copilot Studio Topics to answer emergency-related questions."
+  ms.date: 12/12/2023
+  author: reneenoble
+  ms.author: reneenoble
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-create-answers.md)]

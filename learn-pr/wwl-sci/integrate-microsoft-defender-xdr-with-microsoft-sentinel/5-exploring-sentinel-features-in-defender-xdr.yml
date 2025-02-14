@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.5-exploring-sentinel-features-in-defender-xdr
+title: Explore Microsoft Sentinel features in Microsoft Defender XDR
+metadata:
+  title: Explore Microsoft Sentinel features in Microsoft Defender XDR
+  description: "Explore Microsoft Sentinel features in the Microsoft Defender XDR portal."
+  ms.date: 10/2/2024
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exploring-sentinel-features-in-defender-xdr.md)]

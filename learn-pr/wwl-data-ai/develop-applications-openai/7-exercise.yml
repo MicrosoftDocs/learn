@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-applications-openai.exercise
+title: Exercise -  Get started with Azure OpenAI Service
+metadata:
+  title: Exercise -  Get started with Azure OpenAI Service
+  description: This unit contains a hands-on exercise. Learners can use the exercise to try out Azure OpenAI Service's prompt engineering capabilities.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 11/26/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 20
+azureSandbox: false
+labId: 152393
+labModal: true
+content: |
+  [!include[](includes/7-exercise.md)]

@@ -2,13 +2,14 @@
 uid: learn.health-bot-language-understanding.7-knowledge-check-2
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Four multiple-choice questions
-  ms.date: 07/27/2021
+  ms.date: 03/10/2023
   author: nrd26
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
@@ -40,3 +41,4 @@ quiz:
         - content: "Random utterances that don't map to any of your intents can be mapped to None."
           isCorrect: true
           explanation: "Correct"
+

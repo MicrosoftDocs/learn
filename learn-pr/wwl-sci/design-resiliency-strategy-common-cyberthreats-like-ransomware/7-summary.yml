@@ -4,11 +4,10 @@ title: Summary - Design a resiliency strategy for common cyberthreats like ranso
 metadata:
   title: Summary - Design a resiliency strategy for common cyberthreats like ransomware
   description: "Summary of the module on design a resiliency strategy for common cyberthreats like ransomware."
-  ms.date: 3/14/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 09/26/2024
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/7-summary.md)]

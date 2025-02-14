@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-foundry-sdk.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: Check your knowledge.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 02/05/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What class in the Azure AI Foundry SDK provides a proxy object for a project?"
+    choices:
+    - content: "ConnectionProperties"
+      isCorrect: false
+      explanation: "Incorrect. A ConnectionProperties object isn't a proxy for an Azure AI Foundry project."
+    - content: "AIProjectClient"
+      isCorrect: true
+      explanation: "Correct. An AIProjectClient object is a proxy for an Azure AI Foundry project."
+    - content: "ChatCompletionsClient"
+      isCorrect: false
+      explanation: "Incorrect. A ChatCompletionsClient object isn't a proxy for an Azure AI Foundry project."
+  - content: "What value is needed to instantiate a AIProjectClient object?"
+    choices:
+    - content: "The project connection string."
+      isCorrect: false
+      explanation: "Correct. You need the project connection string to instantiate a AIProjectClient object."
+    - content: "The Azure OpenAI authorization key"
+      isCorrect: true
+      explanation: "Incorrect. You don't need the Azure OpenAI authorization key to instantiate a AIProjectClient object."
+    - content: "The Azure subscription ID"
+      isCorrect: false
+      explanation: "Incorrect. You don't need the Azure subscription ID to instantiate a AIProjectClient object"
+  - content: "Which library should you use to chat with a model that is deployed to the Azure AI model inference service?"
+    choices:
+    - content: "Azure OpenAI"
+      isCorrect: false
+      explanation: "Incorrect. You can't use the Azure OpenAI library to chat with an Azure AI model inference model."
+    - content: "Azure Machine Learning"
+      isCorrect: false
+      explanation: "Incorrect. You can't use the Azure Machine Learning library to chat with an Azure AI model inference model."
+    - content: "Azure AI Inference"
+      isCorrect: true
+      explanation: "Correct. Use the Azure AI Inference library to chat with an Azure AI model inference model."
+
+

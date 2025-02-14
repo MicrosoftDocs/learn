@@ -9,7 +9,7 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Create Azure Cosmos containers and databases with autoscale throughput][/azure/cosmos-db/provision-throughput-autoscale]
+- [Create Azure Cosmos containers with autoscale throughput][/azure/cosmos-db/provision-throughput-autoscale]
 - [Introduction to provisioned throughput in Azure Cosmos DB][/azure/cosmos-db/set-throughput]
 - [Azure Cosmos DB serverless][/azure/cosmos-db/serverless]
 - [How to choose between standard (manual) and autoscale provisioned throughput][/azure/cosmos-db/how-to-choose-offer]

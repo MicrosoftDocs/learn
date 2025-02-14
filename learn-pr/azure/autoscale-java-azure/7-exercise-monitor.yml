@@ -2,16 +2,20 @@
 uid: learn.autoscale-java-azure.exercise-monitor
 title: Exercise - Autoscaling monitoring
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Autoscaling monitoring
   description: We look at exercises for monitoring your sample application's scaling
-  ms.date: 11/18/2021
+  ms.date: 08/20/2024
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.contributors: ropreddy-12032021
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
 durationInMinutes: 5
 content: |
   [!include[](includes/7-exercise-monitor.md)]
+

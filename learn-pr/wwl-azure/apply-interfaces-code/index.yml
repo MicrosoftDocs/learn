@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.apply-interfaces-code
+metadata:
+  title: Apply interfaces in code
+  description: "Discover how default implementations in interfaces enable you to add new methods directly into an interface and provide a default implementation."
+  ms.date: 02/13/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module-intro-to-product
+  ms.service: dotnet-csharp
+  ms.devlang: csharp
+  ai-usage: ai-assisted
+title: Apply interfaces in code
+summary: Discover how default implementations in interfaces enable you to add new methods directly into an interface and provide a default implementation.
+abstract: |
+  By the end of this training, you'll be able to:
+
+  - Define and implement basic interfaces in C#.
+
+  - Implement default methods in interfaces.
+
+  - Use interfaces as method parameters to promote loose coupling.
+
+  - Implement and use common system-defined interfaces like IEnumerable, IDisposable, and IComparable.
+
+  - Override default implementations in specific classes.
+prerequisites: |
+  - Visual Studio Code installed with the C# Dev Kit.
+
+  - Basic knowledge of the Visual Studio Code IDE.
+
+  - Basic understanding of the C# programming language.
+
+  - Able to create and implement basic interfaces.
+
+  - Familiar with classes, abstract classes, and inheritance.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+subjects:
+- app-development
+units:
+- learn.wwl.apply-interfaces-code.introduction
+- learn.wwl.apply-interfaces-code.explore-default-interface-implementation
+- learn.wwl.apply-interfaces-code.define-method-interface-parameter
+- learn.wwl.apply-interfaces-code.learn-system-defined-interfaces
+- learn.wwl.apply-interfaces-code.exercise-create-flexible-code-with-interfaces
+- learn.wwl.apply-interfaces-code.knowledge-check
+- learn.wwl.apply-interfaces-code.summary
+badge:
+  uid: learn.wwl.apply-interfaces-code.badge

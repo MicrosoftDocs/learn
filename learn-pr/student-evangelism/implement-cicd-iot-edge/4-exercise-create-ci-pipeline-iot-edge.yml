@@ -2,14 +2,15 @@
 uid: learn.oxford.implement-cicd-iot-edge.exercise-create-ci-pipeline-iot-edge
 title: Exercise - Create a CI pipeline for IoT Edge with Azure DevOps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a CI pipeline for IoT Edge with Azure DevOps
   description: In this section, we guide the learner to create a CI pipeline for IoT Edge.
-  ms.date: 06/22/2020
-  author: leestott
-  ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.date: 07/20/2024
+  author: PatAltimore
+  ms.author: patricka
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-create-ci-pipeline-iot-edge.md)]
+

@@ -11,19 +11,17 @@ For smaller-scale deployments, you can use the onboarding script available direc
 
 :::image type="content" source="../media/m14-generate-script-bac9e06c.png" alt-text="A screenshot of the Select a method page of the Azure Arc Machines node. Two options are available: Add machines using an interactive a script, and Add machines at scale.":::
 
-
-### Azure Connected Machine agent
+### Azure Connected Machine
 
 The Azure Connected Machine agent enables you to manage Windows and Linux machines hosted on-premises or with another cloud provider. The Azure Connected Machine agent officially supports the following versions of the Windows and Linux operating systems:
 
- -  Windows Server 2008 R2 SP1, 2012 R2, 2016, 2019, and 2022
- -  Azure Stack HCI
- -  Ubuntu 16.04, 18.04, and 20.04 LTS (x64)
- -  CentOS Linux 7 and 8 (x64)
- -  SUSE Linux Enterprise Server (SLES) 12 and 15 (x64)
- -  Red Hat Enterprise Linux (RHEL) 7 and 8 (x64)
- -  Amazon Linux 2 (x64)
- -  Oracle Linux 7 (x64)
+- Windows Server 2008 R2 SP1, 2012 R2, 2016, 2019, 2022, and 2025
+- Azure Stack HCI
+- Ubuntu 18.04, 20.04, and 22.04 LTS (x64)
+- SUSE Linux Enterprise Server (SLES) 12 and 15 (x64)
+- Red Hat Enterprise Linux (RHEL) 7, 8 and 9 (x64)
+- Amazon Linux 2 and Amazon Linux 2023 (x64)
+- Oracle Linux 7, 8 and 9 (x64)
 
 ### Permissions
 
@@ -54,19 +52,18 @@ To onboard and manage machines to Azure Arc-enabled servers, you must have the r
   :::column-end:::
 :::row-end:::
 
-
 ### Installation process
 
 Deploy at ease, selecting from a range of onboarding methods:
 
- -  Using a single server deployment script generated from Azure portal
- -  Using an at scale service principal based deployment script generated from Azure portal
- -  Using PowerShell script or PowerShell remoting
- -  Using a Configuration Manager script for a collection of devices
- -  Using a Configuration Manager custom task sequence for a collection of devices
- -  Using Group Policy for an organizational unit or domain
- -  Directly from Azure Portal through Automation Update Management
- -  Directly from Windows Admin Center
+- Using a single server deployment script generated from Azure portal
+- Using an at scale service principal based deployment script generated from Azure portal
+- Using PowerShell script or PowerShell remoting
+- Using a Configuration Manager script for a collection of devices
+- Using a Configuration Manager custom task sequence for a collection of devices
+- Using Group Policy for an organizational unit or domain
+- Directly from Azure portal through Automation Update Management
+- Directly from Windows Admin Center
 
 The installation creates a number of folders, Windows services, and environment variables during installation. These changes are detailed in the following table.
 
@@ -119,32 +116,28 @@ The installation creates a number of folders, Windows services, and environment 
 
 A typical way to onboard a computer is to generate and download a Windows PowerShell script from the Azure portal. To generate the script, use the following procedure:
 
-1.  In the Azure portal, search for **Azure Arc**, and then from the returned list, select **Azure Arc**.
-2.  In Azure Arc, select **Servers** from the left navigation bar.
-3.  On the **Azure Arc \| Servers** page, select **+ Add**.
-4.  On the **Add servers with Azure Arc** page, select **Generate script under Add a Single server**.
-5.  On the **Prerequisites** section of the **Add servers with Azure Arc** page, review the **Prerequisites** and then select **Next**.
-6.  On the **Resource details** section of the **Add servers with Azure Arc** page, select the following information, and then select **Next**.
-    
-     -  Subscription
-     -  Resource group
-     -  Region
-     -  Operating system
-     -  Optionally, proxy server URL
+1. In the Azure portal, search for **Azure Arc**, and then from the returned list, select **Azure Arc**.
+1. In Azure Arc, select **Servers** from the left navigation bar.
+1. On the **Azure Arc \| Servers** page, select **+ Add**.
+1. On the **Add servers with Azure Arc** page, select **Generate script under Add a Single server**.
+1. On the **Prerequisites** section of the **Add servers with Azure Arc** page, review the **Prerequisites** and then select **Next**.
+1. On the **Resource details** section of the **Add servers with Azure Arc** page, select the following information, and then select **Next**.
 
-:::image type="content" source="../media/m14-generate-script-4-24b1b904.png" alt-text="m14-generate-script-4.png":::
+    - Subscription
+    - Resource group
+    - Region
+    - Operating system
+    - Optionally, proxy server URL
 
-
-1.  On the **Tags** section of the **Add servers with Azure Arc** page, add Tags and select **Next**.
-2.  On the **Download and run script** section of the **Add servers with Azure Arc** page, select **Download**.
-3.  Sign in as a local administrator on computers that you want to onboard, and then run the downloaded script.
+1. On the **Tags** section of the **Add servers with Azure Arc** page, add Tags and select **Next**.
+1. On the **Download and run script** section of the **Add servers with Azure Arc** page, select **Download**.
+1. Sign in as a local administrator on computers that you want to onboard, and then run the downloaded script.
 
 When you install the script on target computers, the script downloads the Azure Arc agent from the Microsoft Download center, installs the agent on the server, and then creates an Azure Arc-enabled server resource to associate with the agent.
 
 The script prompts you to authenticate the target Azure subscription. You must also enter a generated security code and may need to verify your request with multifactor authentication.
 
 :::image type="content" source="../media/m14-onboard-1-a668975c.png" alt-text="A screenshot of the Administrator: Windows PowerShell window with the installation script running. The administrator is entering a security code to confirm their intention to onboard the machine.":::
-
 
 > [!NOTE]
 > Computers will all be assigned to the same subscription, resource group, and Azure region.
@@ -153,4 +146,4 @@ In larger environments, you can use the remote PowerShell scripting or a service
 
 When you onboard a hybrid machine to Azure Arc-enabled servers, it becomes a connected machine and is represented by a corresponding Azure resource. That resource has a unique Resource ID property. It belongs to a resource group inside a subscription, and it can benefit from Azure Resource Manager-based mechanisms such as Azure Policy and tags.
 
-:::image type="content" source="../media/m14-onboard-2-931e0b22.png" alt-text="A screenshot of the Machines - Azure Arc page in the Azure portal. A single computer, ContosoVM1, is listed.":::
+:::image type="content" source="../media/m14-onboard-2-931e0b22.png" alt-text="A screenshot of the Machines- Azure Arc page in the Azure portal. A single computer, ContosoVM1, is listed.":::

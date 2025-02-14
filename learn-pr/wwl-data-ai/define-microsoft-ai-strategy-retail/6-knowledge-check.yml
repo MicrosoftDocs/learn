@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-retail.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/16/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a common challenge for retail?"
+    choices:
+    - content: "Incorporating AI into offline shopping experiences."
+      isCorrect: true
+      explanation: "Correct. A major challenge for AI solutions in retail is that most purchased still occur in-store."
+    - content: "Recruiting employees with IT skills to work in store."
+      isCorrect: false
+      explanation: "Incorrect. IT skills aren't a common challenge when recruiting retail employees."
+    - content: "Serving customers who don’t have email accounts."
+      isCorrect: false
+      explanation: "Incorrect. Many if not most customers have email accounts, and most purchases still happen in stores."
+  - content: "How might generative AI be used to improve the online shopping experience?"
+    choices:
+    - content: "By storing customer credit card details in an unsecured format for faster data access."
+      isCorrect: false
+      explanation: "Incorrect. Storing personal information in this way isn't a path to improving any shopping experience."
+    - content: "By enabling natural language product searches and conversational interactions, and summarizing product information."
+      isCorrect: true
+      explanation: "Correct. Natural language product searches and conversational interactions, and summarizing product information can greatly improve the online shopping experience."
+    - content: "By using higher resolution product images."
+      isCorrect: false
+      explanation: "Incorrect. Storing product images isn't a function of generative AI."
+  - content: "How might machine learning benefit a retail organization?"
+    choices:
+    - content: "By eliminating the need for an ecommerce website through better mapping of store locations."
+      isCorrect: false
+      explanation: "Incorrect. Ecommerce websites are typically an important part of retail organizations."
+    - content: "By eliminating the need for physical stores through cloud-enabled apps."
+      isCorrect: false
+      explanation: "Incorrect. Machine learning doesn't benefit a retail organization through cloud-enabled apps."
+    - content: "By helping optimize stock management through predictive analytics."
+      isCorrect: true
+      explanation: "Correct. Anticipating inventory and supply chain management  is helpful to anticipate inventory and sales needs."

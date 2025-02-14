@@ -1,0 +1,5 @@
+In a data analytics solution, you create, manage, and optimize the frameworks for collecting, storing, processing, and analyzing data. Data in its raw form isn't meaningful for making business decisions. Data from different sources has to be combined and loaded or ingested into data stores, and transformed into formats that are useful for analysis. The ingestion and transformation process must be monitored so errors can be identified and remediated before they affect users.
+
+Microsoft Fabric provides capabilities for monitoring Fabric activities. In this module, we explore how to use Monitor Hub to monitor ingestion and transformation activities in your Fabric environment and how to use Activator to automatically take action when patterns or conditions are detected in changing data.  
+
+By the end of this module, you'll understand the monitoring capabilities in Microsoft Fabric.  You'll also get to complete a practical exercise using Monitor Hub. 

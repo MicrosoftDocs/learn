@@ -1,28 +1,43 @@
 ### YamlMime:Module
 uid: learn.wwl.design-application-architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design an application architecture
   description: "Design an application architecture"
-  ms.date: 03/14/2023
+  ms.date: 02/03/2025
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Design an application architecture
-summary: Azure Architects design and recommend application architectures.
+summary: Azure Architects are responsible to design and recommend application architectures.
 abstract: |
   In this module, you learn how to:
-  - Describe message and event scenarios.
-  - Design a messaging solution.
-  - Design an Azure Event Hubs messaging solution.
-  - Design an event-driven solution.
-  - Design an automated app deployment solution.
-  - Design API integration.
-  - Design an application configuration management solution.
-  - Design a caching solution.
+
+  -   Describe message and event scenarios.
+
+  -   Design a messaging solution.
+
+  -   Design an Azure Event Hubs messaging solution.
+
+  -   Design an event-driven solution.
+
+  -   Design an automated app deployment solution.
+
+  -   Design API integration.
+
+  -   Design an application configuration management solution.
+
+  -   Design a caching solution.
 prerequisites: |
-  - Working experience with developing cloud applications
-  - Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching
+  -   Working experience with developing cloud applications
+
+  -   Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching
 iconUrl: /training/achievements/design-application-architecture.svg
 levels:
 - advanced

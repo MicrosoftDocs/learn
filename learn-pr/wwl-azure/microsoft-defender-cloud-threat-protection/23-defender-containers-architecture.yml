@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.defender-containers-architecture
+title: Defender for Containers architecture
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Defender for Containers architecture
+  description: "Defender for Containers architecture"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 10
+content: |
+  [!include[](includes/23-defender-containers-architecture.md)]

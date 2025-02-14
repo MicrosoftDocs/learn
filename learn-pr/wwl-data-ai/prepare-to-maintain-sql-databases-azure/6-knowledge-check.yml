@@ -2,13 +2,14 @@
 uid: learn.wwl.prepare-to-maintain-sql-databases-azure.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/06/2023
-  author: wwlpublish
+  ms.date: 2/12/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -28,17 +29,17 @@ quiz:
     - content: "Standard SSD"
       isCorrect: false
       explanation: "Incorrect. Standard SSD doesn't offer the lowest latency of the three storage types."
-  - content: "What option should you select to change the auto-pause setting of a serverless SQL Database?"
+  - content: "What option should you select to change the autopause setting of a serverless SQL Database?"
     choices:
-    - content: "The auto-pause setting can't be changed, and it's fixed at one hour"
+    - content: "The autopause setting is fixed at one hour and can't be adjusted."
       isCorrect: false
-      explanation: "Incorrect. You can adjust the auto-pause setting through the Azure portal."
-    - content: "Ensure that there are no active transactions in the database, as the auto-pause change will result in a disconnection"
+      explanation: "Incorrect. You can adjust the autopause setting through the Azure portal."
+    - content: "Ensure that there are no active transactions in the database, as the autopause change results in a disconnection"
       isCorrect: false
-      explanation: "Incorrect. Changes to auto-pause setting don't cause disruption."
-    - content: "The Azure portal allows you to change the auto-pause setting at any time"
+      explanation: "Incorrect. Changes to autopause setting don't cause disruption."
+    - content: "The Azure portal allows you to change the autopause setting at any time"
       isCorrect: true
-      explanation: "Correct. You can change the auto-pause setting at any time through the Azure portal."
+      explanation: "Correct. You can change the autopause setting at any time through the Azure portal."
   - content: "Which SQL Server PaaS offering should you choose if you want to restore an on-premises database backup to Azure?"
     choices:
     - content: "Azure SQL Managed Instance"

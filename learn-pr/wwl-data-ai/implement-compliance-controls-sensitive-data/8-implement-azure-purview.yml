@@ -2,13 +2,14 @@
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.implement-azure-purview
 title: Implement Azure Purview
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Azure Purview
   description: "Implement Azure Purview"
   ms.date: 09/02/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 15

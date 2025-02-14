@@ -1,16 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.5-exercise-connect-cosmosdb-data-lake
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Connect Azure Storage Explorer to Azure Data Lake Storage
   description: Exercise - Connect Azure Storage Explorer to Azure Data Lake Storage
-  ms.date: 03/23/2023
+  ms.date: 09/19/2024
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Exercise - Connect Azure Storage Explorer to Azure Data Lake Storage
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-connect-cosmosdb-data-lake.md)]
+

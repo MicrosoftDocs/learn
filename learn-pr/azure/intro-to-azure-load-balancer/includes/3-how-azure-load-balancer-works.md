@@ -1,4 +1,4 @@
-Azure Load Balancer operates at the transport layer of the OSI model. This Layer 4 functionality allows traffic management based on specific properties of the traffic, including source and destination address, TCP or UDP protocol type, and port number.
+Azure Load Balancer operates at the transport layer of the OSI model. This Layer 4 functionality allows traffic management based on specific properties of the traffic. Properties including, source and destination address, TCP or UDP protocol type, and port number.
 
 Load Balancer has several elements that work together to ensure an application's high availability and performance:
 
@@ -12,9 +12,9 @@ Load Balancer has several elements that work together to ensure an application's
 
 ## Front-end IP
 
-The front-end IP address is the address clients use to connect to your web application. A front-end IP address can be either a public or a private IP address. Azure load balancers can have multiple front-end IPs. The selection of a public or a private IP address determines which type of load balancer will be created:
+The front-end IP address is the address clients use to connect to your web application. A front-end IP address can be either a public or a private IP address. Azure load balancers can have multiple front-end IPs. The selection of a public or a private IP address determines which type of load balancer to create:
 
-- **Public IP address: A public load balancer**: A public load balancer maps the public IP and port of incoming traffic to the private IP and port of the VM. You can distribute specific types of traffic across multiple VMs or services by applying load-balancing rules. For example, you can spread the load of web request traffic across multiple web servers. The load balancer maps traffic from the private IP and port of the VM to the public IP and port of the load balancer when transmitting response traffic back to the requesting client.
+- **Public IP address: A public load balancer**: A public load balancer maps the public IP and port of incoming traffic to the private IP and port of the VM. You can distribute specific types of traffic across multiple VMs or services by applying load-balancing rules. For example, you can spread the load of web request traffic across multiple web servers. The load balancer maps the response traffic from the private IP and port of the VM to the public IP and port of the load balancer. Then, it transmits the response back to the requesting client.
 - **Private IP address: An internal load balancer**: An internal load balancer distributes traffic to resources that are inside a virtual network. Azure restricts access to the front-end IP addresses of a virtual network that are load balanced. Front-end IP addresses and virtual networks are never directly exposed to an internet endpoint. Internal line-of-business applications run in Azure and are accessed from within Azure or from on-premises resources through a VPN or ExpressRoute connection.
 
     :::image type="content" source="../images/load-balancer-types.png" alt-text="Diagram that depicts how public and internal load balancers work in Azure Load Balancer." border="false":::
@@ -25,18 +25,18 @@ A load balancer rule defines how traffic is distributed to the back-end pool. Th
 
 :::image type="content" source="../images/load-balancer-rules.png" alt-text="Diagram that depicts how load balancer rules work in Azure Load Balancer." border="false":::
 
-Traffic is managed using a 5-tuple hash made from the following elements:
+Traffic is managed using a five-tuple hash made from the following elements:
 
 - **Source IP**: The IP address of the requesting client.
 - **Source port**: The port of the requesting client.
 - **Destination IP**: The destination IP address of the request.
 - **Destination port**: The destination port of the request.
 - **Protocol type**: The specified protocol type, TCP or UDP.
-- **Session affinity**: Ensures that traffic for a client is always handled by the same pool node.
+- **Session affinity**: Ensures that the same pool node always handles traffic for a client.
 
 Load Balancer allows you to load balance services on multiple ports, multiple IP addresses, or both. You can configure different load balancing rules for each front-end IP. Multiple front-end configurations are only supported with IaaS VMs.
 
-Load Balancer can't apply different rules based on internal traffic content. This is because Load Balancer operates at Layer 4 (transport layer) of the OSI model. If you need to manage traffic based on its Layer 7 (application layer) properties, you'll need to deploy a solution like Azure Application Gateway.
+Load Balancer can't apply different rules based on internal traffic content because it operates at Layer 4 (transport layer) of the OSI model. If you need to manage traffic based on its Layer 7 (application layer) properties, you need to deploy a solution like Azure Application Gateway.
 
 ## Back-end pool
 
@@ -46,7 +46,7 @@ Load Balancer implements automatic reconfiguration to redistribute load across t
 
 ## Health probes
 
-A health probe is used to determine the health status of the instances in the back-end pool. This health probe will determine if an instance is healthy and can receive traffic. You can define the unhealthy threshold for your health probes. When a probe fails to respond, the load balancer stops sending new connections to the unhealthy instances. A probe failure doesn't affect existing connections. The connection continues until:
+A health probe is used to determine the health status of the instances in the back-end pool. This health probe determines if an instance is healthy and can receive traffic. You can define the unhealthy threshold for your health probes. When a probe fails to respond, the load balancer stops sending new connections to the unhealthy instances. A probe failure doesn't affect existing connections. The connection continues until:
 
 - The application ends the flow.
 - Idle timeout occurs.
@@ -59,13 +59,13 @@ Load Balancer allows you to configure different health probe types for endpoints
 
 ## Session persistence
 
-By default, Load Balancer distributes network traffic equally among multiple VM instances. It provides stickiness only within a transport session. Session persistence specifies how traffic from a client should be handled. The default behavior (None) is that successive requests from a client may be handled by any VM.
+By default, Load Balancer distributes network traffic equally among multiple VM instances. It provides stickiness only within a transport session. Session persistence specifies how traffic from a client should be handled. The default behavior (None) is that any healthy VM can handle successive requests from a client.
 
-Session persistence is also known session affinity, source IP affinity, or client IP affinity. This distribution mode uses a two-tuple (source IP and destination IP) or three-tuple (source IP, destination IP, and protocol type) hash to route to back-end instances. When you use session persistence, connections from the same client will go to the same back-end instance within the back-end pool. You can configure one of the following session persistence options:
+Session persistence is also known as session affinity, source IP affinity, or client IP affinity. This distribution mode uses a two-tuple (source IP and destination IP) or three-tuple (source IP, destination IP, and protocol type) hash to route to back-end instances. When you use session persistence, connections from the same client go to the same back-end instance within the back-end pool. You can configure one of the following session persistence options:
 
 - **None (default)**: Specifies that any healthy VM can handle the request.
-- **Client IP (2-tuple)**: Specifies that successive requests from the same client IP address will be handled by the same back-end instance.
-- **Client IP and protocol (3-tuple)**: Specifies that successive requests from the same client IP address and protocol combination will be handled by the same back-end instance.
+- **Client IP (2-tuple)**: Specifies that the same back-end instance can handle successive requests from the same client IP address.
+- **Client IP and protocol (3-tuple)**: Specifies that the same back-end instance can handle successive requests from the same client IP address and protocol combination.
 
 You can change this behavior by configuring one of the options that are described in the following sections.
 
@@ -87,7 +87,7 @@ HA ports load-balancing rules help you with critical scenarios, such as high ava
 
 ## Inbound NAT rules
 
-You can use load balancing rules in combination with Network Address Translation (NAT) rules. For example, you could use NAT from the load balancer's public address to TCP 3389 on a specific VM. This allows remote desktop access from outside of Azure.
+You can use load balancing rules in combination with Network Address Translation (NAT) rules. For example, you could use NAT from the load balancer's public address to TCP 3389 on a specific VM. This rule combination allows remote desktop access from outside of Azure.
 
 :::image type="content" source="../images/inbound-nat-rules.png" alt-text="Diagram that shows how inbound NAT rules work in Azure Load Balancer." border="false":::
 

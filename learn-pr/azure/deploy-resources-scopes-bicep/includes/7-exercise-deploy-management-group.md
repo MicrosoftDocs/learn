@@ -1,6 +1,6 @@
-Project Teddybear was a success, and now the secretive R&D development at your toy company is ready to research even more new toys. The team has started to ask you for new subscriptions on a near-daily basis, and it needs to apply its policies across all of them. 
+Project Teddybear was a success, and now the secretive R&D development at your toy company is ready to research even more new toys. The team has started to ask you for new subscriptions on a near-daily basis, and it needs to apply its policies across all of them.
 
-Rather than duplicate the policy definitions and assignments in each subscription, you've decided to put all the team's subscriptions within a management group. You can then apply the policy to the entire management group instead of to each subscription individually. 
+Rather than duplicate the policy definitions and assignments in each subscription, you've decided to put all the team's subscriptions within a management group. You can then apply the policy to the entire management group instead of to each subscription individually.
 
 In this exercise, you'll create a new Bicep template to apply policy definitions and assignments to a management group.
 
@@ -15,10 +15,10 @@ During the process, you'll:
 
 This exercise requires the following prerequisites:
 
-- [Management groups must be enabled](/azure/governance/management-groups/overview) on your Azure tenant.
-- You need permissions for creating a new management group within your hierarchy.
-- You need permissions for deploying Azure Policy resources to the management group.
- 
+* [Management groups must be enabled](/azure/governance/management-groups/overview) on your Azure tenant.
+* You need permissions for creating a new management group within your hierarchy.
+* You need permissions for deploying Azure Policy resources to the management group.
+
 If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant. Alternatively, you can skip the deployment steps in this exercise.
 
 ## Create a management group
@@ -53,7 +53,7 @@ By default, the new management group is created as a child of the tenant root ma
 
 ::: zone-end
 
-In a real deployment, you would [move the R&D team's subscriptions into the management group](/azure/governance/management-groups/manage). For this exercise, you'll deploy the policies even though the management group contains no subscriptions. The same deployment process applies whether the management group is empty or contains subscriptions.
+In a real deployment, you'd [move the R&D team's subscriptions into the management group](/azure/governance/management-groups/manage). For this exercise, you'll deploy the policies even though the management group contains no subscriptions. The same deployment process applies whether the management group is empty or contains subscriptions.
 
 ## Create a Bicep file to deploy to a management group
 
@@ -81,7 +81,7 @@ As you did earlier, create a policy definition in the Bicep file.
 
    :::code language="bicep" source="code/7-template.bicep" range="6-38" :::
 
-   The policy definition is the same as the one you previously applied to your subscription. This time, though, you're deploying it to a management group. 
+   The policy definition is the same as the one you previously applied to your subscription. This time, though, you're deploying it to a management group.
 
 ## Add a policy assignment
 
@@ -157,15 +157,15 @@ As with subscription-scoped deployments, you can view management group-scoped de
 
 1. On left pane, select **All services**.
 
-1. In the **Search** box, enter **management group** and then, in the results list, select **Management groups**.
+1. In the **Search** box, enter **management group**, then select **Management groups** in the results list.
 
    :::image type="content" source="../media/7-portal-search.png" alt-text="Screenshot of the Azure portal interface showing the service list with 'Management groups' highlighted." border="true":::
 
-1. Under **Name**, select the **Secret R&D Projects** management group.
+1. Select the **Secret R&D Projects** management group.
 
    :::image type="content" source="../media/7-management-group-list.png" alt-text="Screenshot of the Azure portal interface, highlighting 'Secret R&D Projects' in the list of management groups." border="true":::
 
-1. On the left pane, in the **Search** box, enter **Deployments** and then, under **Governance**, select **Deployments**.
+1. On the left pane, in the **Search** box, enter **Deployments**, then select **Deployments** under **Governance**.
 
    :::image type="content" source="../media/7-management-group-details.png" alt-text="Screenshot of the Azure portal interface, showing the management group details." border="true":::
 

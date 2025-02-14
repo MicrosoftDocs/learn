@@ -19,4 +19,4 @@ You can [import the results of a log query](/azure/log-analytics/log-analytics-p
  -  No Azure RM integration. Can't manage dashboards and models through Azure Resource Manager.
  -  Need to import query results need into the Power BI model to configure. Limitation on result size and refresh.
 
-For more details about limitations, see [Limitations of Power BI Q&amp;A - Power BI](/power-bi/natural-language/q-and-a-limitations).
+For more details about limitations, see [Limitations of Power BI Q&A - Power BI](/power-bi/natural-language/q-and-a-limitations).

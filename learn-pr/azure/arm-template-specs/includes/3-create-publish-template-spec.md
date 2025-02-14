@@ -2,7 +2,7 @@ Let's look at how you create and publish a template spec.
 
 ## Create a template
 
-To create a template that you'll use as a template spec, you write an Azure Resource Manager template (ARM template) just like you normally do. You can include parameters, variables, resources, and outputs.
+To create a template for use as a template spec, you write an Azure Resource Manager template (ARM template) just like you normally do. You can include parameters, variables, resources, and outputs.
 
 ::: zone pivot="jsoncli,jsonpowershell"
 
@@ -12,7 +12,7 @@ It's important that your template is easy for anyone in your organization to und
 
 :::code language="json" source="code/3-parameter.json" highlight="7-10, 12, 16, 18, 24, 29, 31" :::
 
-In the example, the template parameters use the `allowedValues`, `maxValue`, and `description` properties to make clear what the parameters are for and what the impact of setting their values is. The template also includes the `secureString` type to indicate that the `key` parameter contains secret data.
+In the example, the template parameters use the `allowedValues`, `maxValue`, and `description` properties to make clear what the parameters are for and what the effect of setting their values is. The template also includes the `secureString` type to indicate that the `key` parameter contains secret data.
 
 ::: zone-end
 
@@ -22,7 +22,7 @@ It's important that your template is easy for anyone in your organization to und
 
 :::code language="bicep" source="code/3-parameter.bicep" highlight="1-5, 8-9, 12, 15-16" :::
 
-In the example, the template parameters use the `@allowed`, `@maxValue`, and `@description` decorators to make clear what the parameters are for and what the impact of setting their values is. The template also includes the `secure` decorator to indicate that the `key` parameter contains secret data.
+In the example, the template parameters use the `@allowed`, `@maxValue`, and `@description` decorators to make clear what the parameters are for and what the effect of setting their values is. The template also includes the `secure` decorator to indicate that the `key` parameter contains secret data.
 
 ::: zone-end
 
@@ -36,11 +36,11 @@ This screenshot illustrates the entry of parameter values:
 
 :::image type="content" source="../media/3-portal-parameters.png" alt-text="Screenshot that shows the Azure portal interface for entering parameter values for a template spec deployment." border="true":::
 
-It's important to think about how the users of your template spec will use it, and ensure that your parameters are clear and understandable.
+It's important to think about how users use your template spec, and ensure that your parameters are clear and understandable.
 
 ## Publish the template spec to Azure
 
-After you've written your template, instead of submitting the template to Azure for deployment, you publish the template spec.
+After your template is written, instead of submitting the template to Azure for deployment, you publish the template spec.
 
 ::: zone pivot="bicepcli,biceppowershell"
 
@@ -70,12 +70,12 @@ To create a template spec, use the `New-AzTemplateSpec` cmdlet. The following ex
 
 Let's look at each of the parameters:
 
-* `-Name` is the resource name of the template spec, which can't include spaces.
-* `-Location` is the location in which the template spec metadata should be created. You can deploy the template spec into any region though.
-* `-DisplayName` is a human-readable name, which can include spaces.
-* `-Description` is a human-readable description, which you can use to provide detail about the contents of the template spec and when someone might use it.
-* `-Version` is the version of the template spec. You'll learn about versions later in this module.
-* `-TemplateFile` is the path to the ARM template to create the template spec for.
+- `-Name` is the resource name of the template spec, which can't include spaces.
+- `-Location` is the location in which the template spec metadata should be created. You can deploy the template spec into any region though.
+- `-DisplayName` is a human-readable name, which can include spaces.
+- `-Description` is a human-readable description, which you can use to provide detail about the contents of the template spec and when someone might use it.
+- `-Version` is the version of the template spec. You learn about versions later in this module.
+- `-TemplateFile` is the path to the ARM template to create the template spec for.
 
 ::: zone-end
 
@@ -101,12 +101,12 @@ To create a template spec, use the `az ts create` command. The following example
 
 Let's look at each of the arguments:
 
-* `--name` is the resource name of the template spec, which can't include spaces.
-* `--location` is the location in which the template spec metadata should be created. You can deploy the template spec into any region though.
-* `--display-name` is a human-readable name, which can include spaces.
-* `--description` is a human-readable description, which you can use to provide detail about the contents of the template spec and when someone might use it.
-* `--version` is the version of the template spec. You'll learn about versions later in this module.
-* `--template-file` is the path to the ARM template to create the template spec for.
+- `--name` is the resource name of the template spec, which can't include spaces.
+- `--location` is the location in which the template spec metadata should be created. You can deploy the template spec into any region though.
+- `--display-name` is a human-readable name, which can include spaces.
+- `--description` is a human-readable description, which you can use to provide detail about the contents of the template spec and when someone might use it.
+- `--version` is the version of the template spec. You learn about versions later in this module.
+- `--template-file` is the path to the ARM template to create the template spec for.
 
 ::: zone-end
 

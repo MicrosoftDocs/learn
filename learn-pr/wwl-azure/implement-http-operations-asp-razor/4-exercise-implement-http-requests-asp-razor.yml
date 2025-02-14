@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-http-operations-asp-razor.exercise-implement-http-requests-asp-razor
+title: Exercise - Implement HTTP operations in ASP.NET Core Blazor Web apps
+metadata:
+  title: Exercise - Implement HTTP operations in ASP.NET Core Blazor Web apps
+  description: "Exercise - Implement HTTP operations in ASP.NET Core Blazor Web apps"
+  ms.date: 01/15/2025
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise-implement-http-requests-asp-razor.md)]

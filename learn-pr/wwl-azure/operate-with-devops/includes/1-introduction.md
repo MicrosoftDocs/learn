@@ -1,0 +1,9 @@
+Operational Excellence in DevOps is the ability to deliver high-quality software products and services faster and more reliably, while minimizing errors, waste, and risks.
+
+Imagine that you work for a software development company in the retail industry that is experiencing frequent downtime and performance issues with a new online store application. These issues are causing frustration for both the internal development team and the external customers. As a result, the company is losing revenue, and its reputation is being tarnished. The management team realizes that they need to improve their operational practices to address these challenges and achieve operational excellence. They decide to adopt DevOps principles and practices to promote efficiency, resiliency, and continuous improvement in their day-to-day operations.
+
+:::image type="content" source="../media/1-operate-with-devops.png" alt-text="Screenshot of the operational excellence in DevOps.":::
+
+In this module, learn about operational excellence in the context of DevOps and how it can be achieved through practices such as continuous operations, continuous monitoring, health modeling, reliability engineering, incident management, security integration, shift-right testing, observability, performance monitoring, security monitoring and assessment, Site Reliability Engineering (SRE), and platform engineering. Additionally, you learn how to minimize downtime, proactively detect issues, increase resiliency, efficiently respond to incidents, integrate security, and test features in the production environment.
+
+By the end of this module, you'll have a clear understanding of operational excellence in the context of DevOps and how it can help organizations improve their operational practices and address current challenges.

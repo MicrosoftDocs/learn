@@ -1,6 +1,3 @@
-
-
-
 Name resolution is a critical part of any network infrastructure. Contoso currently maintains an on-premises DNS solution to manage internal name resolution. Internet-facing DNS servers are deployed in the Contoso perimeter network to resolve internet name queries. It's important that any Azure networking components can provide the necessary name resolution elements.
 
 When Contoso IT staff deploys resources in Azure on VNets, these resources need to resolve FQDNs to private, internal IP addresses. There are three possible methods they could use:
@@ -32,5 +29,5 @@ You can learn more by reviewing the following documents.
 - [What is Azure DNS?](https://aka.ms/dns-overview?azure-portal=true)
 - [What is Azure Private DNS?](https://aka.ms/private-dns-overview?azure-portal=true)
 - [Azure DNS FAQ](https://aka.ms/dns-faq?azure-portal=true)
-- [Administer DNS and create conditional forwarders in an Azure Active Directory Domain Services managed domain](https://aka.ms/manage-dns?azure-portal=true)
+- [Administer DNS and create conditional forwarders in a Microsoft Entra Domain Services managed domain](https://aka.ms/manage-dns?azure-portal=true)
 - [Name resolution for resources in Azure virtual networks](https://aka.ms/azure-provided-name-resolution?azure-portal=true)

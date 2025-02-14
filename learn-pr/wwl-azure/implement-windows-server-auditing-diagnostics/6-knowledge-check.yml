@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/02/2022
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -35,11 +34,11 @@ quiz:
       explanation: "Correct. This policy must be defined in addition to the folder settings already defined."
     - content: "The administrator must define an expression-based audit policy for file and folder objects."
       isCorrect: false
-      explanation: "Incorrect. This is not necessary."
+      explanation: "Incorrect. This isn't necessary."
     - content: "The administrator must use advanced auditing categories and enable Detailed Tracking."
       isCorrect: false
       explanation: "Incorrect. These settings control the auditing of encryption events, Windows process creation and termination events, and remote procedure call (RPC) events."
-  - content: "An administrator is configuring Setup and Boot Event Collection. On which computer must they install the SetupAndBootEventCollection feature?"
+  - content: "You're configuring the Setup and Boot Event Collection feature. On which computer must you install this feature?"
     choices:
     - content: "On the designated collector computer."
       isCorrect: true

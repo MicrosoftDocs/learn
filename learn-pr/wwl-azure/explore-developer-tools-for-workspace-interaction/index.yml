@@ -1,22 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-developer-tools-for-workspace-interaction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore developer tools for workspace interaction
-  description: "Explore developer tools for workspace interaction"
-  ms.date: 01/06/2023
+  description: Learn how you can interact with the Azure Machine Learning workspace. You can use the Azure Machine Learning studio, the Python SDK (v2), or the Azure CLI (v2).
+  ms.date: 07/25/2024
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-machine-learning
+  ms.collection: wwl-ai-copilot
 title: Explore developer tools for workspace interaction
 summary: Learn how you can interact with the Azure Machine Learning workspace. You can use the Azure Machine Learning studio, the Python SDK (v2), or the Azure CLI (v2).
 abstract: |
   In this module, you'll learn how and when to use:
-  - The Azure Machine Learning studio.
-  - The Python Software Development Kit (SDK).
-  - The Azure Command Line Interface (CLI).
-prerequisites: ""
-iconUrl: /training/achievements/generic-badge.svg
+  *   The Azure Machine Learning studio.
+  *   The Python Software Development Kit (SDK).
+  *   The Azure Command Line Interface (CLI).
+prerequisites: |
+  None
+iconUrl: /training/achievements/explore-developer-tools-for-workspace-interaction.svg
 levels:
 - beginner
 roles:
@@ -35,3 +39,4 @@ units:
 - learn.wwl.explore-developer-tools-for-workspace-interaction.summary
 badge:
   uid: learn.wwl.explore-developer-tools-for-workspace-interaction.badge
+

@@ -1,6 +1,3 @@
-
-
-
 Users at Contoso will likely connect to Azure Files using the SMB protocol, although NFS is also supported. SMB uses TCP port 445 for establishing connections. Many companies and internet service providers block that port, which is a common reason why users can't access Azure Files. If unblocking port 445 isn't an option, you can still access Azure Files by first establishing a point-to-site (P2S) virtual private network (VPN), a site-to-site (S2S) VPN, or by using an Azure ExpressRoute connection to Azure. Alternatively, the company can use Azure File Sync to sync an Azure file share to an on-premises file server, which users can always access.
 
 ## Azure Storage firewalls and virtual networks
@@ -16,10 +13,10 @@ In addition to the default public endpoint, storage accounts (which include Azur
 
 To use an Azure file share with the Windows OS, you must either mount it—which means assigning it a drive letter or mount point path—or access it through its Universal Naming Convention (UNC) path. The UNC path includes the Azure storage account name, the `file.core.windows.net` domain suffix, and the share name. For example, if the Azure storage account is named **storage1** and the share name is **share1**, the UNC path would be `\\storage1.file.core.windows.net\share1`.
 
-If user-identity authentication is enabled for the storage account and you're connecting to an Azure file share from a domain-joined Windows device, you don't need to manually provide any credentials. Otherwise, you must provide credentials. You can use `(AZURE\*<storage account name>*)` as the user name, and the storage access key as a password. The same credentials are used if you connect to an Azure file share by using the script that the Azure portal provides.
+If identity-based authentication is enabled for the storage account and you're connecting to an Azure file share from a domain-joined Windows device, you don't need to manually provide any credentials. Otherwise, you must provide credentials. You can use `(AZURE\*<storage account name>*)` as the user name, and the storage access key as a password. The same credentials are used if you connect to an Azure file share by using the script that the Azure portal provides.
 
 > [!CAUTION]
-> Be aware that a storage access key provides unrestricted access to an Azure file share and that user-identity authentication should be used instead when possible.
+> Storage access keys provide unrestricted access to an Azure file share. Whenever possible, use identity-based authentication instead.
 
 ![A screenshot of the script that the Azure portal provides for connecting to an Azure file share, and Connect is selected.](../media/m11-connect-to-azure-file-share-005.png)
 

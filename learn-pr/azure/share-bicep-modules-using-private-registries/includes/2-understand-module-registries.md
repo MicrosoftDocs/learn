@@ -42,8 +42,8 @@ Soon, you'll learn how to publish modules to a registry.
 
 ## Access control
 
-Because Azure Container Registry provides a private registry for your organization, you can control who has access to it. Azure Container Registry provides several options for managing access, including Azure Active Directory (Azure AD) and keys that you issue to individual users.
+Because Azure Container Registry provides a private registry for your organization, you can control who has access to it. Azure Container Registry provides several options for managing access, including Microsoft Entra ID and keys that you issue to individual users.
 
-When you work with Bicep, the easiest approach is to use Azure AD authentication. Bicep automatically detects the Azure AD identity that you use in the Azure CLI or Azure PowerShell, so you don't need to sign in again. You'll see how authentication works in the next exercise. When you use a Bicep module registry from a pipeline, you use a special type of identity called a _service principal_.
+When you work with Bicep, the easiest approach is to use Microsoft Entra authentication. Bicep automatically detects the Microsoft Entra identity that you use in the Azure CLI or Azure PowerShell, so you don't need to sign in again. You'll see how authentication works in the next exercise. When you use a Bicep module registry from a pipeline, you use a special type of identity called a _service principal_.
 
 You can separately control who has permission to write modules to your registry and who has permission to read modules.

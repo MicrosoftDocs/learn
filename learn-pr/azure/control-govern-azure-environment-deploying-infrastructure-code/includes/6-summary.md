@@ -1,8 +1,8 @@
 Defining your infrastructure as code provides you with the most benefit when you deploy *all* of your infrastructure from code and use pipelines to automate the deployment process.
 
-In this module, you learned how to plan your environments so that you can strategically target your controls where they'll have the most impact. Then, because deployment pipelines and code are so important, you learned how to apply controls to your pipelines and repositories. Finally, you learned how to configure your Azure environment to ensure that all changes are deployed by using your approved process, while still allowing for emergency access.
+In this module, you learned how to plan your environments so that you can strategically target your controls where they have the most impact. Then, because deployment pipelines and code are so important, you learned how to apply controls to your pipelines and repositories. Finally, you learned how to configure your Azure environment to ensure that all changes are deployed by using your approved process, while still allowing for emergency access.
 
-The purpose of this module was to increase your confidence in, and the security of, your Azure deployments. This module has helped you ensure that changes follow a consistent process, are audited and logged, and can be performed by only authorized users.
+The purpose of this module is to increase your confidence in, and the security of, your Azure deployments. This module has helped you ensure that changes follow a consistent process, are audited and logged, and that only authorized users can perform them.
 
 ## More resources
 
@@ -23,7 +23,7 @@ To learn more about securing and hardening your Azure DevOps and GitHub environm
 - Manage users, groups, and permissions:
   - [Conditional Access](/azure/active-directory/conditional-access/overview)
   - [Multifactor authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
-  - [Azure AD SSO integration with a GitHub Enterprise Cloud organization](/azure/active-directory/saas-apps/github-tutorial)
+  - [Microsoft Entra SSO integration with a GitHub Enterprise Cloud organization](/azure/active-directory/saas-apps/github-tutorial)
 - Protect important code branches:
   - [Azure Repos branch policies](/azure/devops/repos/git/branch-policies)
   - [Protected branches in GitHub](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches)
@@ -43,10 +43,10 @@ To learn more about securing and hardening your Azure DevOps and GitHub environm
 
 ### Secure your Azure environment
 
-Azure security and governance include many elements. The following links provide more information about the topics introduced in this module:
+Azure security and governance include many elements. The following links provide more information about the subjects introduced in this module:
 
-- [Break-glass accounts in Azure AD](/azure/active-directory/roles/security-emergency-access)
-- Azure AD Privileged Identity Management
+- [Break-glass accounts in Microsoft Entra ID](/azure/active-directory/roles/security-emergency-access)
+- Microsoft Entra Privileged Identity Management
   - [What is Privileged Identity Management and why use it?](https://medium.com/@olafwrieden/what-is-privileged-identity-management-and-why-use-it-7f383b3b797a) (blog)
   - [Privileged Identity Management documentation](/azure/active-directory/privileged-identity-management/pim-configure)
 - [Microsoft Sentinel](/azure/sentinel/overview)

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-deployment-strategy-hololens.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Learn how to choose a deployment scenario for managing HoloLens devices."
+  ms.date: 06/11/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

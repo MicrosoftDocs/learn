@@ -8,20 +8,20 @@ In this unit, you'll learn more about Container Registry and the advantages it p
 
 Container Registry is an Azure service that you can use to create your own private Docker registries. Like Docker Hub, Container Registry is organized around repositories that contain one or more images. Container Registry also lets you automate tasks such as redeploying an app when an image is rebuilt.
 
-Security is an important reason to choose Container Registry instead of Docker Hub:
+Security is an important reason to choose Container Registry instead of Docker Hub because:
 
-- You have much more control over who can see and use your images.
+- You have more control over who can see and use your images.
 - You can sign images to increase trust and reduce the chances of an image becoming accidentally (or intentionally) corrupted or otherwise infected.
 - All images stored in a container registry are encrypted at rest.
 
 Working with images in Container Registry is like working with Docker Hub, but offers a few unique benefits:
 
 - Container Registry runs in Azure. The registry can be replicated to store images near where they're likely to be deployed.
-- Container Registry is highly scalable, providing enhanced throughput for Docker pulls that can span many nodes concurrently. The Premium SKU of Container Registry includes 500 GiB of storage.
+- Container Registry is highly scalable, providing enhanced throughput for Docker pulls that can span many nodes concurrently. The Premium SKU of Container Registry includes 500 GB (gigabytes) of storage.
 
 ## Use Container Registry
 
-You create a registry by using either the Azure portal or the Azure CLI **acr create** command. In the following code example, the name of the new registry is *myregistry*.
+You can create a registry by using either the Azure portal or the Azure CLI **acr create** command. In the following code example, the name of the new registry is *myregistry*:
 
 ```bash
 az acr create --name myregistry --resource-group mygroup --sku standard --admin-enabled true

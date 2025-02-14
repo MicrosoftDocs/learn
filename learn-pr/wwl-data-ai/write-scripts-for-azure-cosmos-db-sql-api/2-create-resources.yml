@@ -2,15 +2,18 @@
 uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.create-resources
 title: Create resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create resources
   description: "Create resources"
-  ms.date: 10/18/2022
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-create-resources.md)]
+

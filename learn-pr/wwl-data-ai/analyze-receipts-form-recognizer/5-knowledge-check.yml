@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-receipts-form-recognizer.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/04/2024
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: ""
+  questions:
+  - content: "You plan to use Azure AI Document Intelligence's prebuilt receipt model. Which kind of Azure resource should you create?"
+    choices:
+    - content: "Azure AI Vision resource"
+      isCorrect: false
+      explanation: "Incorrect: The Azure AI Vision resource type does not include Azure AI Document Intelligence."
+    - content: "Azure AI Document Intelligence or Azure AI services resource"
+      isCorrect: true
+      explanation: "Correct: Both the Azure AI Document Intelligence resource and the Azure AI services resource provide access to Azure AI Document Intelligence."
+    - content: "Azure AI Language resource"
+      isCorrect: false
+      explanation: "Incorrect: An Azure AI Language resource does not provide access to Azure AI Document Intelligence."
+  - content: "What are the main types of documents that prebuilt models in Azure AI Document Intelligence can process?"
+    choices:
+    - content: "Financial services and legal, US tax, US mortgage, and personal identification documents"
+      isCorrect: true
+      explanation: "Correct. The prebuilt models are designed to process these types of documents and extract specific fields of interest."
+    - content: "Novels, newspapers, and magazines"
+      isCorrect: false
+      explanation: "Incorrect. These types of documents are not typically processed by Azure AI Document Intelligence prebuilt models."
+    - content: "Medical records, academic transcripts, and scientific articles"
+      isCorrect: false
+      explanation: "Incorrect. While these document types could potentially be processed using custom models, they are not the main focus of the prebuilt models."
+  - content: "What is the purpose of document analysis in the context of document intelligence?"
+    choices:
+    - content: "It is used to convert text into speech."
+      isCorrect: false
+      explanation: "Incorrect. Document analysis is not related to text-to-speech conversion, but to data extraction and interpretation."
+    - content: "It is used to create new documents based on existing ones."
+      isCorrect: false
+      explanation: "Incorrect. Document analysis does not create new documents, but rather extracts and interprets data from existing ones."
+    - content: "It is used to extract text, layout, and key-value pairs from documents, providing locations of text on a page identified by bounding box coordinates."
+      isCorrect: true
+      explanation: "Correct. Document analysis is about extracting and interpreting data from documents, including text, layout, and key-value pairs, and identifying their locations on the page."

@@ -2,32 +2,33 @@
 uid: learn.wwl.configure-storage-security.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/17/2023
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "Which solution is the easiest way to implement secure storage for the company's media files?"
+  - content: "Which statement is correct about Azure Storage encryption."
     choices:
-    - content: "Create a shared access signature (SAS) for each user and delete the SAS to prevent access."
+    - content: "Data written to Azure Storage is encrypted through 125-bit advanced encryption standard (AES) encryption."
       isCorrect: false
-      explanation: "Incorrect. Creating a SAS for each user involves a great amount of administrative overhead. Is there an easier alternative?"
-    - content: "Create stored access policies for each container to enable revocation of access or change of duration."
+      explanation: "Incorrect. Data is encrypted through 256-bit AES encryption"
+    - content: "Data is automatically encrypted before written to Azure Managed Disks."
       isCorrect: true
-      explanation: "Correct. The SAS changes access based on permissions or duration by replacing the stored access policy with a new one, or by deleting the stored access policy altogether to revoke access."
-    - content: "Periodically regenerate the account key to control access to the files."
+      explanation: "Correct. Data is automatically encrypted."
+    - content: "Azure Storage encryption can be disabled."
       isCorrect: false
-      explanation: "Incorrect. Regenerating keys prevents all users from accessing all files at the same time."
+      explanation: "Incorrect. Azure Storage encryption is enabled for all new and existing storage accounts and can't be disabled."
   - content: "What's the default network rule when configuring network access to an Azure storage account?"
     choices:
     - content: "Allow all connections from all networks."
@@ -39,14 +40,14 @@ quiz:
     - content: "Deny all connections from all networks."
       isCorrect: false
       explanation: "Incorrect. All connections aren't denied by default."
-  - content: "What's the best way to implement secure access to Azure Storage for the company's users?"
+  - content: "You want to give read access to image assets for a limited period of time. What security option would be the best option to use?"
     choices:
-    - content: "Use shared access signatures for the production applications."
+    - content: "Storage account keys"
       isCorrect: false
-      explanation: "Incorrect. A SAS isn't the best solution for the production applications."
-    - content: "Use access keys for the production applications."
+      explanation: "Incorrect. Azure Storage accounts keys give access to everything in the account."
+    - content: "Encryption in transit"
+      isCorrect: false
+      explanation: "Incorrect. Encryption in transit uses security algorithms to protect data on the network."
+    - content: "Shared Access Signature"
       isCorrect: true
-      explanation: "Correct. Access keys provide unrestricted access to the storage resources, which is the requirement for production applications in this scenario."
-    - content: "Use stored access policies for the production applications."
-      isCorrect: false
-      explanation: "Incorrect. Stored access policies aren't the best solution for the production applications."
+      explanation: "Correct. Use a shared access signature to delegate access to storage objects and specify constraints."

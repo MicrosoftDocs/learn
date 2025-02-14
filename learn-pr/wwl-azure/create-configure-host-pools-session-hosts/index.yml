@@ -1,22 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.create-configure-host-pools-session-hosts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and configure host pools and session hosts for Azure Virtual Desktop
   description: "Create and configure host pools and session hosts for Azure Virtual Desktop"
-  ms.date: 08/01/2022
+  ms.date: 08/22/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure-virtual-desktop
+  ai-usage: human-only
 title: Create and configure host pools and session hosts for Azure Virtual Desktop
 summary: See how to configure the assignment type of a personal desktop host pool to adjust your Azure Virtual Desktop environment to better suit your needs.
 abstract: |
   After completing this module, you'll be able to:
-  *  Configure host pool assignment type.
-  *  Automate creation of an Azure Virtual Desktop host pool using PowerShell.
-  *  Customize Remote Desktop Protocol (RDP) properties for a host pool.
-  *  Manage licensing for session hosts that run Windows client.
-prerequisites: ""
+
+  -   Configure host pool assignment type.
+
+  -   Automate creation of an Azure Virtual Desktop host pool using PowerShell.
+
+  -   Customize Remote Desktop Protocol (RDP) properties for a host pool.
+
+  -   Manage licensing for session hosts that run Windows client.
+prerequisites: None
 iconUrl: /training/achievements/3-create-and-configure-host-pools-and-session-hosts.svg
 levels:
 - intermediate
@@ -31,11 +40,13 @@ subjects:
 - infrastructure
 units:
 - learn.wwl.create-configure-host-pools-session-hosts.introduction
-- learn.wwl.create-configure-host-pools-session-hosts.automate-creation-of-azure-virtual-desktop-host-pool-using-powershell
-- learn.wwl.create-configure-host-pools-session-hosts.pool-assignment-type
-- learn.wwl.create-configure-host-pools-session-hosts.customize-remote-desktop-protocol-rdp-properties-for-host-pool
+- learn.wwl.create-configure-host-pools-session-hosts.plan-host-pools-session-hosts
+- learn.wwl.create-configure-host-pools-session-hosts.operating-systems-azure-regions
+- learn.wwl.create-configure-host-pools-session-hosts.network-remote-desktop-client-planning
 - learn.wwl.create-configure-host-pools-session-hosts.manage-licensing-for-that-run-windows-client
-- learn.wwl.create-configure-host-pools-session-hosts.deploying-azure-ad-joined-virtual-machines-in-azure-virtual-desk
+- learn.wwl.create-configure-host-pools-session-hosts.create-host-pool-azure-portal
+- learn.wwl.create-configure-host-pools-session-hosts.add-session-hosts-pool
+- learn.wwl.create-configure-host-pools-session-hosts.customize-remote-desktop-properties-host-pool
 - learn.wwl.create-configure-host-pools-session-hosts.knowledge-check
 - learn.wwl.create-configure-host-pools-session-hosts.summary
 badge:

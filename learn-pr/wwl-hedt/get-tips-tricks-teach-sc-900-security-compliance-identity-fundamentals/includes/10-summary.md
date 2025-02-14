@@ -14,6 +14,6 @@ Supplemental Resources:
 - [Microsoft Learn for Educators](/training/educator-center/programs/msle/)
 - [Microsoft Technical Documentation](https://aka.ms/docs)
 - [Microsoft Whiteboard](https://aka.ms/whiteboard)
-- [Describe the basic concepts of cybersecurity - Learn | Microsoft Docs](https://aka.ms/SCBasic)
+- [Describe the basic concepts of cybersecurity - Learn | Microsoft Learn](https://aka.ms/SCBasic)
 - [SC-900 study guide](https://aka.ms/SC900StudyGuide)
 - [Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://aka.ms/SC900Exam) 

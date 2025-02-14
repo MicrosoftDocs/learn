@@ -14,17 +14,17 @@ Let's take a look at some best practices for storage security. Think about optio
 
 - [Virtual network service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview) restrict network access and provide direct connection to your Azure storage. You can secure storage accounts to your virtual network, and enable private IP addresses in the virtual network to reach the service endpoint. With [private endpoints](/azure/storage/common/storage-private-endpoints), you can create a special network interface for an Azure service in your virtual network.
 
-- [Secure transfer](/azure/storage/common/storage-require-secure-transfer) enables an Azure storage account to accept requests from secure connections. When you require secure transfer, any requests originating from non-secure connections are rejected. Microsoft recommends that you always require secure transfer for all your storage accounts.
+- [Secure transfer](/azure/storage/common/storage-require-secure-transfer) enables an Azure storage account to accept requests from secure connections. When you require secure transfer, any requests originating from nonsecure connections are rejected. Microsoft recommends that you always require secure transfer for all your storage accounts.
 
 - Data in your storage account is automatically encrypted. Azure Storage encryption offers two ways to manage encryption keys at the storage account level:
 
   - Microsoft-managed keys: By default, Microsoft manages the keys used to encrypt your storage account.
 
-  - Customer-managed keys: You can optionally choose to manage encryption keys for your storage account. [Customer-managed keys](/azure/storage/common/storage-encryption-key-model-get) must be stored in Azure Key Vault.
+  - [Customer-managed keys](/azure/storage/common/storage-encryption-key-model-get): You can optionally choose to manage encryption keys for your storage account. These keys must be stored in Azure Key Vault.
 
 ### Things to consider when implementing storage security
 
-You've reviewed some of the security options for Azure Storage. Take a few minutes to determine how you can configure security for Tailwind Traders.
+You review some of the security options for Azure Storage. Take a few minutes to determine how you can configure security for Tailwind Traders.
 
 - **Consider Azure security baseline options**. Review the comprehensive options provided by Azure security baseline provides to secure your Azure storage. Grant limited access to Azure Storage resources. 
 

@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn-wwl.develop-data-driven-app-sql-db
+metadata:
+  title: Develop data-driven applications by using Azure SQL Database
+  description: Learn how to develop data-driven applications by using Microsoft Azure SQL Database. DP-3020
+  ms.date: 09/05/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: learning-path
+title: Develop data-driven applications by using Azure SQL Database
+prerequisites: |
+  - Experience with relational databases.
+  - Basic knowledge of security concepts like identities and permissions.
+  - Experience using the Azure portal to create resources and set permissions.
+summary: |
+  This learning path prepares you for the task of developing data-driven applications by using Microsoft Azure SQL Database.
+  
+  You'll learn how to create and configure an Azure SQL Database, build and deploy database projects using GitHub Actions and Azure Pipelines, and automate the publishing process. Additionally, you'll explore how to use Data API builder for Azure SQL Database and develop a data API with Azure Web Apps and Static Web App.
+
+  Furthermore, you'll gain skills in importing data via an external REST endpoint, exporting data using an Azure Function, and securing an Azure SQL Database. These essential skills will empower you to effectively develop and manage applications using Azure SQL Database.
+  
+  > [!NOTE]
+  > [!INCLUDE [](../../includes/azure-subscription-prerequisite.md)]
+
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- azure-sql-database
+- azure
+subjects:
+- databases
+- app-development
+- artificial-intelligence
+modules:
+- learn-wwl.get-started-sql-database-application-development
+- learn-wwl.develop-azure-sql-database
+- learn-wwl.develop-data-api-azure-sql-database
+- learn-wwl.explore-data-manipulation-azure-sql-database
+- learn-wwl.explore-security-practices-azure-sql-database
+trophy:
+  uid: learn-wwl.develop-data-driven-app-sql-db.trophy

@@ -1,4 +1,5 @@
-You're developing a strategy to implement web apps for your company by using Azure App Service. Various teams in your organization have submitted requests for your consideration as part of the implementation plan.
+
+You're developing a strategy to implement web apps for your company by using Azure App Service. Various teams in your organization submit requests for your consideration as part of the implementation plan.
 
 - The Production team needs information about cloning configurations across deployment slots.
 
@@ -8,4 +9,4 @@ You're developing a strategy to implement web apps for your company by using Azu
 
 ### Answer the following questions
 
-Choose the best response for each of the following questions. Then select **Check your answers**.
+Choose the best response for each question.

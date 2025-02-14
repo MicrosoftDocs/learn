@@ -1,14 +1,17 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Distributed computing on the cloud: Spark'
   description: Carnegie Mellon University's cloud developer course. Spark is an open-source cluster-computing framework with different strengths than MapReduce has. Learn about how Spark works.
   ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.service: azure-synapse-analytics
+  ms.subservice: spark
 title: 'Distributed computing on the cloud: Spark'
 summary: Spark is an open-source cluster-computing framework with different strengths than MapReduce has. Learn about how Spark works.
 abstract: | 
@@ -66,3 +69,4 @@ units:
 - learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.6-summary
 badge:
   uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.badge
+

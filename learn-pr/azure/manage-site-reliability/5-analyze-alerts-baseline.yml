@@ -2,13 +2,15 @@
 uid: learn.azdo.manage-site-reliability.5-analyze-alerts-baseline
 title: Analyze alerts to establish a baseline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Analyze alerts to establish a baseline
   description: Learn about the alert experience in Azure Monitor, which includes Log Analytics and Application Insights.
-  ms.date: 12/20/2019
+  ms.date: 04/21/2023
   author: tpetchel
   ms.author: thpetche
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 8
 content: |
   [!include[](includes/5-analyze-alerts-baseline.md)]
+

@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-azure-updates.describe-update-management
 title: Describe update management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe update management
   description: "Describe update management"
   ms.date: 09/24/2020
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 6
 content: |

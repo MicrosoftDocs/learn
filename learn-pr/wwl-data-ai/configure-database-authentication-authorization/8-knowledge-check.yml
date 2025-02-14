@@ -2,13 +2,14 @@
 uid: learn.wwl.configure-database-authentication-authorization.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/26/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -17,17 +18,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which protocol is used by Azure Active Directory for Authorization?"
+  - content: "Which protocol is used by Microsoft Entra ID for Authorization?"
     choices:
     - content: "Kerberos"
       isCorrect: false
-      explanation: "That's incorrect. Azure Active Directory uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
+      explanation: "That's incorrect. Microsoft Entra ID uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
     - content: "LDAP"
       isCorrect: false
-      explanation: "That's incorrect. Azure Active Directory uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
+      explanation: "That's incorrect. Microsoft Entra ID uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
     - content: "OAuth"
       isCorrect: true
-      explanation: "That's correct. Azure Active Directory uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
+      explanation: "That's correct. Microsoft Entra ID uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
   - content: "Which database stores the information about logins in SQL Server?"
     choices:
     - content: "master"
@@ -72,3 +73,4 @@ quiz:
     - content: "Granular security"
       isCorrect: false
       explanation: "That's incorrect. Granular security would involve granting access to the procedure, but not actual manage the privileges."
+

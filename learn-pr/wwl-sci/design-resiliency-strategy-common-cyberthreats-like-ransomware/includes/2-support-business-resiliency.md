@@ -4,7 +4,7 @@ Focus your security efforts on increasing the resilience of business operations 
 
 Resilience requires taking a pragmatic view that assumes a breach. It needs continuous investment across the full lifecycle of security risk.
 
-![Diagram that shows the security resilience Cycle.](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/media/security-resilience-cycle.png)
+![Diagram that shows the security resilience Cycle.](/azure/cloud-adoption-framework/secure/media/security-resilience-cycle.png)
 
 -   **Before an incident:** Continuously improve security posture and the organization's ability to respond to an incident. Continuously improving security posture helps limit the likelihood and potential impact of a security incident on your business operations and assets. There are many techniques covered throughout the security disciplines, but all of them are designed to raise the cost of attack. Make the attackers develop and try new techniques because you've made their old ones stop working. These techniques raise their costs and friction, slowing them down and limiting their success.
 -   **During an incident:** Business operations must continue during an incident, even if they're degraded, slower, or limited to only critical systems. During an attack, a hospital can't stop caring for patients, ships need to move cargo, and planes must continue to fly safely. The two main priorities during an incident are:

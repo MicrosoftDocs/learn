@@ -4,12 +4,11 @@ title: Reporting and logging
 metadata:
   unitType: learning-content
   title: Reporting and logging 
-  description: Here you'll learn what your organization's audit log records, and how to access and export it.
-  ms.date: 09/13/2021
-  author: sterling463
-  ms.author: csterling
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Learn what your organization's audit log records, and how to access and export it.
+  ms.date: 05/03/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
 durationInMinutes: 25
 content: |
   [!include[](includes/4-report-log.md)]

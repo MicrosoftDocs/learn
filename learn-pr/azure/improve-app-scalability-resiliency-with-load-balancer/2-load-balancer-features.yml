@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.improve-app-scalability-resiliency-with-load-balancer.2-load-balancer-features
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Load Balancer features and capabilities
   description: Azure Load Balancer features and capabilities
-  ms.date: 08/31/2019
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/14/2024
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Azure Load Balancer features and capabilities
 durationInMinutes: 10
 content: |
@@ -37,3 +38,4 @@ quiz:
     - content: "It allows virtual machines to be grouped into logical categories."
       isCorrect: false
       explanation: "Although this capability is a benefit, it's not the main reason for using an availability set."
+

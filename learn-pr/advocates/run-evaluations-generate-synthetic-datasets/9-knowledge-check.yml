@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.run-evaluations-generate-synthetic-datasets.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge of running evaluations and generating a synthetic dataset with the Azure AI Evaluation SDK.
+  ms.date: 10/13/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Which function enables you to send queries to an application to collect answers then run your evaluators on the resulting query and response?
+    choices:
+    - content: ContentSafetyEvaluator.
+      isCorrect: false
+      explanation: "Incorrect: The ContentSafetyEvaluator contains a subset of the risk and safety evaluators."
+    - content: model_config.
+      isCorrect: false
+      explanation: "Incorrect: The model_config contains the configuration for your model and is often used to create an instance of an evaluator."
+    - content: evaluate.
+      isCorrect: true
+      explanation: "Correct: The evaluate function evaluates target or data with built-in or custom evaluators. If both target and data are provided, data is run-through target function and then results are evaluated."
+    - content: Simulator.
+      isCorrect: false
+      explanation: "Incorrect: Simulator is a class for generating synthetic conversations."
+  - content: Which composite evaluator in the Azure AI Evaluation SDK combines the ViolenceEvaluator, SelfHarmEvaluator, HateUnfairnessEvaluator, and SexualEvaluator?
+    choices:
+    - content: ContentSafetyEvaluator.
+      isCorrect: true
+      explanation: 'Correct: The Content Safety Evaluator combines a subset of the safety evaluators for a single output of combined metrics for a query and response pair.'
+    - content: QAEvaluator.
+      isCorrect: false
+      explanation: "Incorrect: The QAEvaluator combines a subset of the quality evaluators for a single output of combined metrics for a query and response pair."
+    - content: RiskEvaluator.
+      isCorrect: false
+      explanation: "Incorrect: The RiskEvaluator isn't an evaluator supported within the Azure AI Evaluation SDK."
+    - content: ContentHarmEvaluator.
+      isCorrect: false
+      explanation: "Incorrect: The ContentHarmEvaluator isn't an evaluator supported within the Azure AI Evaluation SDK."
+  - content: To track evaluation results in your Azure AI project,  which parameter must be included in the evaluate function?
+    choices:
+    - content: result.studio_url.
+      isCorrect: false
+      explanation: "Incorrect: The result.studio_url property can be used for a link to view your logged evaluation results in Azure AI Foundry."
+    - content: evaluator_config.
+      isCorrect: false
+      explanation: "Incorrect: evaluator_config contains the evaluator names as keys and values that are dictionaries containing the column mappings."
+    - content: target.
+      isCorrect: false
+      explanation: "Incorrect: The target is the target to be evaluated."
+    - content: azure_ai_project.
+      isCorrect: true
+      explanation: "Correct: The azure_ai_project must be passed into the evaluate function to track the evaluation results in an Azure AI Project. The Azure AI Project configuration consists of the Azure project name, resource group, subscription ID, Azure OpenAI API key, and API version."

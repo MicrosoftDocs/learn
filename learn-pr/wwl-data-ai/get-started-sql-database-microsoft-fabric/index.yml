@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn-wwl.get-started-sql-database-microsoft-fabric
+metadata:
+  title: Get started with SQL Database in Microsoft Fabric
+  description: "Learn how SQL Database in Microsoft Fabric works, the key concepts, and practical examples to help users SQL Database effectively as part of their analytics solutions."
+  ms.date: 10/18/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: module-standard-task-based
+  ms.service: fabric
+  ms.custom:
+    - ignite-2024
+  ai-usage: ai-assisted
+title: Get started with SQL Database in Microsoft Fabric
+summary: You'll explore how to use the capabilities of SQL databases within the Microsoft Fabric environment, which provides a unified platform for managing and analyzing data.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Explain how SQL database in Fabric works.
+  *   Understand security options in SQL database.
+  *   Explain how to use Copilot to enhance troubleshooting.
+  *   Explore mirroring and data virtualization capabilities.
+prerequisites: |
+  *   Ability to navigate the Fabric portal.
+  *   Conceptual understanding of data and databases.
+  *   Experience with T-SQL programming language at a basic level.
+iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
+levels:
+- beginner
+roles:
+- data-engineer
+- solution-architect
+products:
+- fabric
+- azure-sql-database
+subjects: 
+  - databases
+  - cloud-computing
+units:
+- learn-wwl.get-started-sql-database-microsoft-fabric.introduction
+- learn-wwl.get-started-sql-database-microsoft-fabric.work-with-sql-database
+- learn-wwl.get-started-sql-database-microsoft-fabric.secure-database
+- learn-wwl.get-started-sql-database-microsoft-fabric.facilitate-database-tasks-with-copilot
+- learn-wwl.get-started-sql-database-microsoft-fabric.simplify-data-management
+- learn-wwl.get-started-sql-database-microsoft-fabric.exercise-query-data-sql-database
+- learn-wwl.get-started-sql-database-microsoft-fabric.knowledge-check
+- learn-wwl.get-started-sql-database-microsoft-fabric.summary
+badge:
+  uid: learn-wwl.get-started-sql-database-microsoft-fabric.badge

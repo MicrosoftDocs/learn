@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.challenge-project-use-generative-ai-to-ideate.prepare
+title: Prepare and set context
+metadata:
+  title: Prepare and set context
+  description: Understand how to optimally use Microsoft Copilot, before we refine your ideas
+  author: pablonunes
+  ms.author: pablolopes
+  ms.date: 12/7/2023
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-prepare.md)]

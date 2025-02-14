@@ -1,7 +1,7 @@
 In this module, you learned how to:
 
- -  Plan name resolution for Active Directory (AD) and Azure Active Directory
- -  Domain Services (Azure AD DS)
+ -  Plan name resolution for Active Directory (AD) and Microsoft Entra ID
+ -  Microsoft Entra Domain Services
  -  Plan a host pools architecture
  -  Recommend resource groups, subscriptions, and management groups
  -  Configure a location for the Azure Virtual Desktop metadata

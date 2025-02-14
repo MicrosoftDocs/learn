@@ -1,6 +1,6 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-For your toy launch website, you decide to first create a proof of concept by creating a basic Bicep template. In this exercise, you'll create a storage account, Azure App Service plan, and app. Later, you'll modify the template to make it more reusable.
+For your toy-launch website, you decide to first create a proof of concept by creating a basic Bicep template. In this exercise, you'll create a storage account, Azure App Service plan, and app. Later, you'll modify the template to make it more reusable.
 
 During the process, you'll:
 
@@ -23,7 +23,7 @@ During the process, you'll:
 
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a _templates_ folder in which to save the file.
 
-1. Add the following Bicep code into the file. You'll deploy the template soon. It's a good idea to type the code yourself instead of copying and pasting, so you can see how the tooling helps you to write your Bicep files.
+1. Add the following Bicep code into the file. You'll deploy the template soon. It's a good idea to type the code yourself instead of copying and pasting so you can see how the tooling helps you to write your Bicep files.
 
    :::code language="bicep" source="code/4-template.bicep" range="1-11":::
 
@@ -50,7 +50,7 @@ During the process, you'll:
 Run the following command from the terminal in Visual Studio Code to deploy the Bicep template to Azure. The command can take a minute or two to complete, and then you'll see a successful deployment. If you see a warning about the location being hard-coded, you can ignore it. You'll fix the location later in the module. It's safe to proceed and the deployment will succeed.
 
 ```azurecli
-az deployment group create --template-file main.bicep
+az deployment group create --name main --template-file main.bicep
 ```
 
 You'll see `Running...` in the terminal.
@@ -66,7 +66,7 @@ You'll see `Running...` in the terminal.
 Deploy the template to Azure by using the following Azure PowerShell command in the terminal. The command can take a minute or two to complete, and you'll see a successful deployment. If you see a warning about the location being hard-coded, you can ignore it. You'll fix the location later in the module. It's safe to proceed and the deployment will succeed.
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep
+New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 ```
 
 ::: zone-end
@@ -84,7 +84,7 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
 1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. In **Overview**, you can see that one deployment succeeded.
+1. In **Overview**, you can see that one deployment succeeded. You might need to expand the **Essentials** area to see the deployment.
 
     :::image type="content" source="../media/4-deployment-succeeded.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that one succeeded." border="true":::
 
@@ -92,7 +92,7 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
     :::image type="content" source="../media/4-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
 
-1. Select the deployment called **main** to see which resources were deployed, and then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
+1. Select the deployment called **main** to see which resources were deployed, then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
 
     :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one storage account resource listed." border="true":::
 
@@ -120,7 +120,7 @@ Get-AzResourceGroupDeployment -ResourceGroupName <rgn>[sandbox resource group na
 
 ## Add an App Service plan and app to your Bicep template
 
-In the previous task, you learned how to create a template that contains a single resource and deploy it. Now you're ready to deploy more resources, including a dependency. In this task, you add an App Service plan and app to the Bicep template.
+In the previous task, you learned how to create a template that contains a single resource and deploy it. Now you're ready to deploy more resources, including a dependency. In this task, you'll add an App Service plan and app to the Bicep template.
 
 1. In the _main.bicep_ file in Visual Studio Code, add the following code to the bottom of the file:
 
@@ -137,7 +137,7 @@ In the previous task, you learned how to create a template that contains a singl
 Run the following Azure CLI command in the terminal. You can ignore the warnings about the hard-coded location. You'll fix the location soon.
 
 ```azurecli
-az deployment group create --template-file main.bicep
+az deployment group create --name main --template-file main.bicep
 ```
 
 ::: zone-end
@@ -147,14 +147,14 @@ az deployment group create --template-file main.bicep
 Run the following Azure PowerShell command in the terminal. You can ignore the warning messages about the hard-coded location. You'll fix the location soon.
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep
+New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 ```
 
 ::: zone-end
 
 ### Check your deployment
 
-1. Return to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
+1. Return to the Azure portal and go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
 
 1. Select the **1 Succeeded** link.
 

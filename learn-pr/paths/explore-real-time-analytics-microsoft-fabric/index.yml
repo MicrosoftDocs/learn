@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.explore-real-time-analytics-microsoft-fabric
+metadata:
+  title: Implement Real-Time Intelligence with Microsoft Fabric
+  description: Implement Real-Time Intelligence with Microsoft Fabric
+  ms.date: 05/31/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: learning-path
+title: Implement Real-Time Intelligence with Microsoft Fabric
+prerequisites: |
+  The student should be familiar with Microsoft Fabric and SQL.
+summary: |
+  Real-time intelligence in Microsoft Fabric enables analysis of streaming events in real or near-real time.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+modules:
+- learn.wwl.get-started-kusto-fabric
+- learn.wwl.explore-event-streams-microsoft-fabric
+- learn.wwl.query-data-kql-database-microsoft-fabric
+- learn.wwl.create-real-time-dashboards-microsoft-fabric
+trophy:
+  uid: learn.wwl.explore-real-time-analytics-microsoft-fabric.trophy

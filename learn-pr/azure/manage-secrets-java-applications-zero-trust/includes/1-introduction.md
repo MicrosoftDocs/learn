@@ -1,12 +1,9 @@
 Managing secrets is a critical step in securing your Java applications.
 
-Suppose that you are building a new e-commerce website for your company. This 
-website will access a database, connect to third-party APIs, and will even
-encrypt some personal end-user data. For all of those activities, your application
-will need to store some sensitive keys, called secrets. Those secrets are some the most critical assets of your company, and hackers will try to access them.
+Suppose that you're building a new e-commerce website for your company. This website will access a database, connect to partner APIs, and encrypt personal end-user data. For all of those activities, your application
+will need to store some sensitive keys, called secrets. Those secrets are some of the most critical assets of your company, and hackers will try to access them.
 
-In this module, you'll create an application that manages such secrets. We'll introduce the concepts of Zero Trust and Zero Secrets, where your Java application won't manage those secrets at all. It will make the task of attackers much more difficult. We'll see those
-concepts in action, both from an IT operator perspective, and from a developer perspective.
+In this module, you'll create an application that manages such secrets. We'll introduce the concepts of Zero Trust and Zero Secrets, where your Java application doesn't manage those secrets at all. It makes the task of attackers much more difficult. We'll see those concepts in action, both from an IT operator perspective, and from a developer perspective.
 
 ## Goals
 

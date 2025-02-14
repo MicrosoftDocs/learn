@@ -2,15 +2,16 @@
 uid: learn.wwl.describe-cloud-compute.introduction-cloud-compute
 title: Introduction to cloud computing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to cloud computing
   description: "Introduction to cloud computing"
-  ms.date: 01/24/2023
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 1
 content: |
   [!include[](includes/2-introduction-cloud-compute.md)]

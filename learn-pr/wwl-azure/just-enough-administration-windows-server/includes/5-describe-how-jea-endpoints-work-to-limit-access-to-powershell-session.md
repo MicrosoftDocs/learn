@@ -8,12 +8,10 @@ With the JEA endpoints, your IT staff doesn't need to have privileged accounts t
 
 On a single computer, you can create JEA endpoints by using the **Register-PSSessionConfiguration** cmdlet. When using this cmdlet, you specify an endpoint name and a session configuration file located on the local machine. However, prior to creating the JEA endpoint you must ensure that the following prerequisites are met:
 
-You must have defined one or more roles, and the role capabilities file (or files)must be placed in the RoleCapabilities folder of a Windows PowerShell module.
+You must have defined one or more roles, and the role capabilities file (or files) must be placed in the RoleCapabilities folder of a Windows PowerShell module.
 
 - You have created a session configuration file.
-
 - The user registering JEA must be an administrator on the machine.
-
 - You have decided on a name for the JEA endpoint
 
 Windows Server ships with some predefined JEA endpoints, which have a name starting with Microsoft. You can find existing JEA endpoints using the following Windows PowerShell command:
@@ -35,27 +33,16 @@ Register-PSSessionConfiguration -Name DNSOps -Path .\DNSOps.pssc
 You can register JEA on multiple machines by using Desired State Configuration (DSC). To use DSC to deploy JEA, the following prerequisites must be met:
 
 - You must have defined one or more roles, and the role capabilities file (or files) must be placed in the RoleCapabilities folder of a Windows PowerShell module.
-
 - The PowerShell module must be stored on a read-only file share accessible by the machines.
-
 - You have determined the session configuration settings. (You don't need to create a session configuration file though.)
-
 - You have account credentials that have administrative access to each machine.
-
 - You have downloaded the JEA DSC resource from [https://github.com/PowerShell/JEA/tree/master/DSC Resource](https://github.com/PowerShell/JEA/tree/master/DSC%20Resource)
-
 - You have decided on a name for the JEA endpoint
 
 You can apply the DSC configuration using the Local Configuration Manager or by updating the pull server configuration.
 
-For more information about Registering JEA on multiple machines, refer to the GitHub page [JEA/DSC Resource/](/powershell/scripting/learn/remoting/jea/register-jea?view=powershell-7.1&preserve-view=true).
+For more information about Registering JEA on multiple machines, see the GitHub page [JEA/DSC Resource/](/powershell/scripting/learn/remoting/jea/register-jea?view=powershell-7.1&preserve-view=true).
 
 ## Check your knowledge
 
-Choose the best response for each of the questions below. Then select **Check your answers**.
-
----
-
-
-
----
+Choose the best response for each of the questions below.

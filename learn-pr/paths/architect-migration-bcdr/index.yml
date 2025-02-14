@@ -5,10 +5,9 @@ metadata:
   description: Learn how to migrate resources to Azure, how to provide site recovery for your applications in Azure and on-premises, and how to your applications are available through service interruptions and changes in load.
   brand: azure
   ms.date: 10/23/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: learning-path
 title: Architect migration, business continuity, and disaster recovery in Azure
 summary: Learn how to migrate resources to Azure, how to provide site recovery for your applications in Azure and on-premises, and how to your applications are available through service interruptions and changes in load.
 prerequisites: |
@@ -29,10 +28,9 @@ products:
 - azure-sql-database
 - azure-migrate
 subjects:
-- business-continuity
+# - business-continuity
 - migration
 modules:
-- learn.design-your-migration-to-azure
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery
 - learn.design-your-site-recovery-solution-in-azure
 - learn.protect-infrastructure-with-azure-site-recovery

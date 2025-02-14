@@ -6,3 +6,4 @@ When you use wildcard characters with the **Get-Help** command, **About** help f
 
 > [!NOTE] 
 > For much of this course, you'll need to refer to **About** files for additional documentation. You must review these files frequently to discover the steps and techniques you need to complete lab exercises.
+

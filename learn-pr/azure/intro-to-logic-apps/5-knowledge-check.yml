@@ -2,48 +2,50 @@
 uid: learn.azure-intro-to-logic-apps.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  ms.date: 4/25/2019
+  ms.date: 11/18/2024
   author: ecfan
   ms.author: estfan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
+  - content: "Suppose you work at a financial company. You're building a system for your brokers to trade financial instruments. This system must monitor market conditions, detect changes, execute trades, and quickly handle high transaction volumes. The faster your system can complete trades, the greater the advantage your company has over their competitors.<br><br>Which system requirement would Azure Logic Apps have trouble meeting?"
     choices:
     - content: "High throughput"
       isCorrect: false
-      explanation: "Azure Logic Apps scales out automatically. A logic app workflow can process large data sets in parallel and can handle the throughput required by this system."
-    - content: "Response time"
+      explanation: "Azure Logic Apps automatically scales out resources. A logic app workflow can process large data sets in parallel and handle the throughput required by this system."
+    - content: "Fast response time"
       isCorrect: true
-      explanation: "Minimizing execution time is critical in this system. Azure Logic Apps doesn't offer low subsecond performance guarantees."
-    - content: "Orchestrate the monitoring, detection, and execution tasks."
+      explanation: "Azure Logic Apps doesn't offer low subsecond performance guarantees. This system requires minimal execution time, which is critical for fast transactions."
+    - content: "Orchestrate tasks for monitoring markets, detecting changes, and executing trades."
       isCorrect: false
       explanation: "Azure Logic Apps is designed to integrate multiple systems."
-  - content: "What differentiates an _action_ from a _control action_?"
+  - content: "What's the difference between an _action_ and a _control action_?"
     choices:
-    - content: "An action executes a task, while a control action alters the control flow through your logic app workflow."
+    - content: "An action runs a specific task. A control action determines the execution path through your logic app workflow."
       isCorrect: true
-      explanation: "Actions and control actions both contain the word _action_ in their name; however, they do different things. Actions represent tasks. Control actions use **if** statements, **switch** statements, and loops to determine which actions run."
-    - content: "An action is a component that executes a task in a logic app workflow. A control action is a component that launches your logic app workflow."
+      explanation: "Actions and control actions do different things. Actions execute specific tasks. Control actions use conditions (**if** statements), **switch** statements, and loops to determine which actions get to run."
+    - content: "An action runs a task in your logic app workflow. A control action launches your logic app workflow."
       isCorrect: false
-      explanation: "The component that launches your app is called a trigger."
-    - content: "An action is a component that launches your app, while control actions are switch statements."
+      explanation: "A _trigger_ is the component that launches your logic app workflow."
+    - content: "An action launches your logic app workflow. Control actions are switch statements."
       isCorrect: false
-      explanation: "Triggers launch your app. Control actions can be switch statements; however, they can also be other types of conditional logic."
-  - content: "Suppose you work for a chain of athletic clubs. You want to automate your lesson registrations and notifications. You use a proprietary in-house customer management system to store customer phone numbers and email addresses. The customer management system does have a REST API, but Azure Logic Apps doesn't provide a connector for it. How can you use Azure Logic Apps to automate this process?"
+      explanation: "A _trigger_ is the component that launches your logic app workflow. Switch statements are one type of control action, not the other way around. Control actions include other kinds of logic statements such as conditions and loops."
+  - content: "Suppose you work for a chain of athletic clubs. You want to automate lesson registrations and notifications. You have an in-house, proprietary customer management system to store customer contact information. This system has a REST API, but Azure Logic Apps doesn't have a prebuilt connector for that API.<br><br>Can you still use Azure Logic Apps to automate this process?"
     choices:
-    - content: "Use the code view editor to write JavaScript code to interact with your proprietary system."
+    - content: "Azure Logic Apps doesn't have the capability for this scenario, so you should investigate other solutions."
       isCorrect: false
-      explanation: "Azure Logic Apps offers a code view editor that lets you change the underlying JSON definition of your workflow. However, this editor doesn't support writing executable code in a language like JavaScript."
-    - content: "Azure Logic Apps isn't the correct service to use and you should investigate different solutions."
+      explanation: "You can use Azure Logic Apps even when the prebuilt connectors that you need don't exist. However, you have to create your own custom connector for this scenario."
+    - content: "Write JavaScript code that you can run from your workflow to interact with your in-house system."
       isCorrect: false
-      explanation: "You can use Azure Logic Apps even when some services don't have pre-built connectors. It's your job to implement the missing connectors."
-    - content: "Create a custom connector for the customer management system and use it in your logic app workflow."
+      explanation: "Although Azure Logic Apps has the capability to run JavaScript, C#, and PowerShell plus an editor that lets you edit a workflow's underlying JSON definition. However, the easiest solution is to create a custom connector because the system offers a REST API."
+    - content: "Create a custom connector with operations that work with the customer management system and use these operations in your logic app workflow."
       isCorrect: true
-      explanation: "Azure Logic Apps is an extensible platform. You can create a REST API for your proprietary systems and build a custom connector that invokes that API."
+      explanation: "Azure Logic Apps is an extensible platform. You can create or use an existing REST API for your proprietary systems and build a custom connector that calls that API."
+

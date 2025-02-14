@@ -2,21 +2,25 @@
 uid: learn.wwl.hyperparameters-azure-databricks.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 03/22/2023
+  description: Knowledge check
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.author: madiepev
+  ms.date: 08/26/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "Which function should you use to initiate Hyperopt trials?"
     choices:
     - content: "hyperopt.tpe.suggest"
       isCorrect: false
-      explanation: "Incorrect. The hyperopt.tpe.suggest constant is used to specify a TPE search algorithm."
+      explanation: "Incorrect. The hyperopt.tpe.suggest constant is used to specify a TPE (Tree of Parzen Estimator) search algorithm."
     - content: "hyperopt.hp.choice"
       isCorrect: false
       explanation: "Incorrect. The hyperopt.htp.choice function defines an expression for a hyperparameter range."
@@ -41,7 +45,8 @@ quiz:
       explanation: "Correct. The Trials class tracks details from each trial run."
     - content: "SparkTrials"
       isCorrect: false
-      explanation: "Incorrect. SparkTrials is used to parallelize runs when using a non-distributed framework."
+      explanation: "Incorrect. SparkTrials is used to parallelize runs when using a nondistributed framework."
     - content: "RDD"
       isCorrect: false
-      explanation: "Incorrect. An RDD is a core Spark structure for data."
+      explanation: "Incorrect. An RDD (Resilient Distributed Datasets) is a core Spark structure for data."
+

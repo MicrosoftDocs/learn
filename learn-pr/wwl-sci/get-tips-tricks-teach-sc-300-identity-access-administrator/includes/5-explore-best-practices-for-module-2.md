@@ -1,5 +1,3 @@
-
-
 SC-300: Module 2 Implement an identity management solution
 
 Module 2 Overview
@@ -15,7 +13,7 @@ This module consists of six lessons:
 - Lesson 5 – Custom security attributes
 - Lesson 6 – Provisioning using SCIM
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWX9pQ]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=50a3a621-be05-45d8-aa4f-0cd11f032a60]  
 
 Module 2 Tips and Tricks
 

@@ -4,11 +4,10 @@ title: Configure policies in Microsoft Defender for Cloud Apps
 metadata:
   title: Configure policies in Microsoft Defender for Cloud Apps
   description: "Configure policies in Microsoft Defender for Cloud Apps"
-  ms.date: 02/16/2023
+  ms.date: 08/30/2024
   author: wwlpublish
   ms.author: riswinto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

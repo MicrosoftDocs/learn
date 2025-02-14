@@ -6,16 +6,4 @@ Suppose that you work at a financial-services company that uses Azure services e
 
 As part of your migration strategy, you must decide the best approach for your cloud-based storage infrastructure. The process includes evaluating the functionality of Azure shared disks to determine whether they'll enable your organization to migrate clustered applications to Azure.
 
-## Learning objectives
-
-In this module, you'll learn more about:
-
-- Azure shared disks.
-- Using Azure shared disks with virtual machines (VMs).
-- The benefits and limitations of Azure shared disks.
-
-## Prerequisites
-
-- Basic knowledge of Azure Disk Storage.
-- Basic knowledge of Azure VMs.
-- Experience using the Azure portal.
+[!INCLUDE [azure-optional-exercise-subscription-prerequisite](../../../includes/azure-optional-exercise-subscription-prerequisite.md)]

@@ -1,14 +1,17 @@
 ### YamlMime:Module
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Develop secure IoT solutions for Azure Sphere with Azure IoT Central"
   description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Central"
-  ms.date: 06/26/2020
-  author: leestott
-  ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
-  ms.custom: team=nextgen
+  ms.date: 07/10/2024
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.custom: team=cloud_advocates
+  ms.service: azure-sphere
+  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance
 title: "Develop secure IoT solutions for Azure Sphere, Azure RTOS and Azure IoT Central"
 summary: "Deploy an Azure Sphere application to monitor ambient conditions for a laboratory. The application will monitor the room environment, connect to Azure IoT Central, and send telemetry data from the device to the cloud. You'll control cloud-to-device communications and undertake actions as needed."
 abstract: | 
@@ -21,7 +24,7 @@ abstract: |
   - Deploy a new more sensitive room sensor onto an Azure Sphere real-time core running Azure RTOS
   - Read the data from the new sensor running on the real-time core and send the data to IoT Central
      
-  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 
 prerequisites: |
   - Azure Sphere kit
@@ -32,6 +35,7 @@ prerequisites: |
   - Basic knowledge of Azure Sphere
   - Basic knowledge of Azure IoT
 iconUrl: /training/achievements/student-evangelism/develop-secure-iot-solutions-with-azure-sphere.svg
+hidden: true
 badge:
   uid: learn.develop-secure-iot-solutions-with-azure-sphere.badge
 levels:
@@ -66,3 +70,4 @@ units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-partnering-with-rtos-environment
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.knowledge-check
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.summary
+

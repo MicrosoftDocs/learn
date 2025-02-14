@@ -3,12 +3,13 @@ uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.8-initializ
 metadata:
   title: Exercise - Write JavaScript code to initialize the web app with data from the machine learning model
   description: Write JavaScript code to initialize the web app with data from the machine learning model
-  ms.date: 03/10/2021
+  ms.date: 10/12/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 title: Exercise - Write JavaScript code to initialize the web app with data from the machine learning model
 durationInMinutes: 5
 content: |

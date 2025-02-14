@@ -4,18 +4,17 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 09/24/2018
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/15/2024
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-summary.md)]
 quiz:
   title: Knowledge check
   questions:
-  - content: "When creating a Windows virtual machine in Azure, which port would you open using the INBOUND PORT RULES in order to allow remote-desktop access?"
+  - content: "When you create a Windows virtual machine in Azure, which port would you open using the INBOUND PORT RULES in order to allow remote-desktop access?"
     choices:
     - content: "HTTPS"
       isCorrect: false
@@ -25,7 +24,7 @@ quiz:
       explanation: "The remote-desktop connection does not use SSH."
     - content: "RDP (3389)"
       isCorrect: true
-      explanation: "The Remote Desktop Protocol (RDP) uses port 3389 by default so this port is the standard port you would open if you wanted to use an RDP client to administer your Windows virtual machines."
+      explanation: "The Remote Desktop Protocol (RDP) uses port 3389 by default, so this port is the standard port you would open if you wanted to use an RDP client to administer your Windows virtual machines."
   - content: "Suppose you have an application running on a Windows virtual machine in Azure. What is the best-practice guidance on where the app should store data files?"
     choices:
     - content: "OS disk (C:)"
@@ -36,7 +35,7 @@ quiz:
       explanation: "The temporary disk is not persistent. You should not write important data to this disk."
     - content: "Attached data disk"
       isCorrect: true
-      explanation: "Dedicated data disks are generally considered the best place to store application data files. They can be larger than OS disks and you can optimize them for the cost and performance characteristics appropriate for your data."
+      explanation: "Dedicated data disks are considered the best place to store application data files. They can be larger than OS disks and you can optimize them for the cost and performance characteristics appropriate for your data."
   - content: "What is the final rule that is applied in every Network Security Group?"
     choices:
     - content: "Allow All"
@@ -44,7 +43,7 @@ quiz:
       explanation: "This could allow unwanted traffic to gain access if your rules are not configured correctly."
     - content: "Deny All"
       isCorrect: true
-      explanation: "This is a safe choice. It will block all traffic that you don't specifically allow."
-    - content: "You configure the final rule to your needs"
+      explanation: "This is a safe choice. It blocks all traffic that you don't specifically allow."
+    - content: "You configure the final rule to your needs."
       isCorrect: false
       explanation: "The final rule is added automatically when the security group is created, and you cannot change it."

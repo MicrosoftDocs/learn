@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-applications-openai.generating-code
+title: Construct code from natural language
+metadata:
+  title: Construct code from natural language
+  description: This unit explains how to use OpenAI to write code, repair code, and document code.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 11/26/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: dev-lang-csharp-python
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-generating-code.md)]

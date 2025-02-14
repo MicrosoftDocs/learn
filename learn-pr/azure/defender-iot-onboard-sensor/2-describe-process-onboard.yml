@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.onboard-sensor-microsoft-defender-io.describe-process-onboard
+title: 
+    Describe the process to onboard an OT sensor to Microsoft Defender for IoT
+metadata:
+  title: Describe the process to onboard an OT sensor to Microsoft Defender for IoT
+  description: "Describe the process to onboard an OT sensor to Microsoft Defender for IoT"
+  ms.date: 02/21/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-describe-process-onboard.md)]

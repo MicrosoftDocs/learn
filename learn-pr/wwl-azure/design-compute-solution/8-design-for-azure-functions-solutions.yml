@@ -4,13 +4,12 @@ title: Design for Azure Functions solutions
 metadata:
   title: Design for Azure Functions solutions
   description: "Design for Azure Functions solutions"
-  ms.date: 04/23/2023
+  ms.date: 12/06/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/8-design-for-azure-functions-solutions.md)]

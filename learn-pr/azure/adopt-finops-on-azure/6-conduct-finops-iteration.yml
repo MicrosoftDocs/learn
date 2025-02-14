@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.adopt-finops-on-azure.conduct-finops-iteration
+title: Conduct a FinOps iteration
+metadata:
+  title: Conduct a FinOps iteration
+  description: Learn how to conduct a FinOps iteration.
+  ms.date: 05/02/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-conduct-finops-iteration.md)]

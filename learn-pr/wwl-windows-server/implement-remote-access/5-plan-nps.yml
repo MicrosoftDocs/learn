@@ -4,13 +4,12 @@ title: Plan and implement NPS
 metadata:
   title: Plan and implement NPS
   description: "Plan and implement NPS"
-  ms.date: 03/14/2022
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/5-plan-nps.md)]

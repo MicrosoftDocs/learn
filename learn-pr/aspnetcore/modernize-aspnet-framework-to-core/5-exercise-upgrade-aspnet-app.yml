@@ -3,11 +3,13 @@ uid: learn.modernize-aspnet-framework-to-core.5-exercise-upgrade-aspnet-app
 metadata:
   title: Exercise - Upgrade app to ASP.NET Core 
   description: Upgrade an ASP.NET MVC application from .NET Framework to ASP.NET Core.
-  ms.date: 01/11/2022
+  ms.date: 06/07/2024
   author: jongalloway
   ms.author: jogallow
-  ms.topic: interactive-tutorial
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 title: Exercise - Upgrade app to ASP.NET Core
 durationInMinutes: 8
 content: |

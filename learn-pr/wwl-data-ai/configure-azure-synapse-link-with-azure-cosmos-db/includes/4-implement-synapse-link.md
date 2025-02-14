@@ -14,7 +14,7 @@ To connect to the Azure Cosmos DB database, you can use any of the following aut
 - **User Managed Identity**: Use a user-defined managed identity.
 
 > [!TIP]
-> For more information about using managed identities in Azure Active Directory, see [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview)
+> For more information about using managed identities in Microsoft Entra ID, see [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview)
 
 After creating a linked service, the Azure Cosmos DB database and its containers will be shown in the **Data** page of Azure Synapse Studio, as shown here:
 

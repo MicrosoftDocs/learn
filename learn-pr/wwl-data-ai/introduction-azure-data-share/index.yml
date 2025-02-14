@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-azure-data-share
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Data Share
   description: "Introduction to Azure Data Share"
   ms.date: 01/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-data-share
 title: Introduction to Azure Data Share
 summary: Learn how to use Azure Data Share for securely sending and receiving data to both external organizations or for inter-departmental transfers.
 abstract: |
@@ -45,3 +47,4 @@ units:
 - learn.wwl.introduction-to-azure-data-share.summary
 badge:
   uid: learn.wwl.introduction-to-azure-data-share.badge
+

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-ai-security-testing.what-is-ai-red-teaming
+title: What is AI red teaming?
+metadata:
+  title: What is AI red teaming?
+  description: Understand AI red teaming
+  ms.author: sayoung
+  author: sarah-yo
+  ms.date: 09/01/2024  
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/1-what-is-ai-red-teaming.md)]

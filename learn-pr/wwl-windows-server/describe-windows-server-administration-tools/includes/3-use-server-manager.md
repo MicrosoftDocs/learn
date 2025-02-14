@@ -5,7 +5,7 @@ As an alternative to using Windows Admin Center, Contoso IT administrators want 
 You can use the current version of Server Manager to manage the local server and remotely manage up to 100 additional servers.
 
 > [!NOTE]
-> This number will depend on the amount of data that you request from managed servers and the hardware and network resources available to the system running Server Manager.
+> This number depends on the amount of data that you request from managed servers and the hardware and network resources available to the system running Server Manager.
 
 In the Server Manager console, you must manually add remote servers that you want to manage. IT administrators often use Server Manager to remotely manage server core installations.
 
@@ -25,7 +25,7 @@ Server Manager initially opens to a dashboard which provides quick access to:
 > [!NOTE]
 > The dashboard provides links to web-based articles about new features in Server Manager and links to learn more about Microsoft solutions.
 
-Server Manager has a section for properties of the local server. From the Local Server node, you can perform different types of initial configuration that are similar to those you can configure with the Sconfig tool, including:
+Server Manager has a section for properties of the local server. From the Local Server node, you can perform different types of initial configuration that are similar to those you can configure with the SConfig tool, including:
 
 - Computer name and domain membership
 - Windows Firewall settings
@@ -52,4 +52,4 @@ There are also sections for:
 - A display of Performance Monitor that allows you to set alert thresholds on CPU and memory.
 - Listing the installed roles and features with the ability to add and remove them.
 
-The navigation pane provides a link to other roles installed on the server, which will provide information about specific roles such as events relating to that role. In some cases, you will observe a sub-menu that allows you to configure aspects about the role, such as File and Storage Services and Remote Desktop Services.
+The navigation pane provides a link to other roles installed on the server, which will provide information about specific roles such as events relating to that role. In some cases, you'll observe a submenu that allows you to configure aspects about the role, such as File and Storage Services and Remote Desktop Services.

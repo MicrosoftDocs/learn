@@ -2,13 +2,16 @@
 uid: learn.wwl.introduction-to-azure-app-service.authentication-authorization
 title: Explore authentication and authorization in App Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore authentication and authorization in App Service
   description: "Explore authentication and authorization in App Service"
-  ms.date: 04/24/2023
+  ms.date: 02/10/2025
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
 content: |
   [!include[](includes/5-authentication-authorization-app-service.md)]

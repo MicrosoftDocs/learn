@@ -1,5 +1,4 @@
-
-When your organization signs up for a Microsoft cloud-based service like Intune, you're given an initial domain name hosted in Azure AD that follows this model: **your-domain.onmicrosoft.com**. In this example, **your-domain** is the domain name that you chose when you signed up. **onmicrosoft.com** is the suffix assigned to the accounts you add to your subscription. You can configure your organization's custom domain to access Intune instead of the domain name provided with your subscription.
+When your organization signs up for a Microsoft cloud-based service like Intune, you're given an initial domain name hosted in Microsoft Entra ID that follows this model: **your-domain.onmicrosoft.com**. In this example, **your-domain** is the domain name that you chose when you signed up. **onmicrosoft.com** is the suffix assigned to the accounts you add to your subscription. You can configure your organization's custom domain to access Intune instead of the domain name provided with your subscription.
 
 Before you create user accounts or synchronize your on-premises Active Directory, we strongly recommend that you add one or more of your custom domain names. This will simplify user management and lets users sign in with the credentials they use to access other domain resources.
 
@@ -22,15 +21,15 @@ Once you've set up Intune, users enroll Windows devices by signing in with their
 
 As an Intune admin, you can simplify enrollment in the following ways:
 
- -  Enable automatic enrollment (Azure AD Premium required)
+ -  Enable automatic enrollment (Microsoft Entra ID P1 or P2 required)
  -  CNAME registration
- -  Enable bulk enrollment (Azure AD Premium and Windows Configuration Designer required)
+ -  Enable bulk enrollment (Microsoft Entra ID P1 or P2 and Windows Configuration Designer required)
 
 #### Configure automatic MDM enrollment
 
-Automatic enrollment lets users enroll their Windows devices in Intune. To enroll, users add their work account to their personally owned devices or join corporate-owned devices to Azure Active Directory. In the background, the device registers and joins Azure Active Directory. Once registered, the device is managed with Intune.
+Automatic enrollment lets users enroll their Windows devices in Intune. To enroll, users add their work account to their personally owned devices or join corporate-owned devices to Microsoft Entra ID. In the background, the device registers and joins Microsoft Entra ID. Once registered, the device is managed with Intune.
 
-1.  Sign in to Endpoint Manager admin center located at https://endpoint.microsoft.com.
+1.  Sign in to Microsoft Intune admin center located at https://intune.microsoft.com.
 2.  Select **Devices** \- **Enroll devices** \- **Automatic enrollment**.
 3.  Configure the MDM User scope. Specify which users’ devices should be managed by Microsoft Intune. These Windows devices can automatically enroll in Microsoft Intune.
     
@@ -46,13 +45,13 @@ Automatic enrollment lets users enroll their Windows devices in Intune. To enrol
 
 #### Simplify Manual Enrollment (Optional)
 
-If you don't have Azure AD Premium, you can create a domain name server (DNS) alias (CNAME record type) that redirects enrollment requests to Intune servers. While optional, if no CNAME record is found, users are prompted to manually enter the MDM server name, enrollment.manage.microsoft.com.
+If you don't have Microsoft Entra ID P1 or P2, you can create a domain name server (DNS) alias (CNAME record type) that redirects enrollment requests to Intune servers. While optional, if no CNAME record is found, users are prompted to manually enter the MDM server name, enrollment.manage.microsoft.com.
 
 ##### Step 1: Create CNAME records
 
 Create CNAME DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
 
-Azure Active Directory has a different CNAME that it uses for device registration for iOS, Android, and Windows devices. If you plan to use conditional access, you should also configure the EnterpriseRegistration CNAME for each company name you have.
+Microsoft Entra ID has a different CNAME that it uses for device registration for iOS, Android, and Windows devices. If you plan to use conditional access, you should also configure the EnterpriseRegistration CNAME for each company name you have.
 
 We recommend that you create both CNAME records for all DNS names that you own.
 
@@ -65,7 +64,7 @@ If the company uses more than one UPN suffix, you need to create two CNAME recor
 
 ##### Step 2: Verify CNAME
 
-1.  Sign in to Endpoint Manager admin center located at https://endpoint.microsoft.com.
+1.  Sign in to Microsoft Intune admin center located at https://intune.microsoft.com.
 2.  In the left navigation, select **Devices** then select **Enroll devices**.
 3.  On the Windows enrollment page, select **CNAME Validation**.
 4.  In the **Domain** box, enter the company website and then select **Test**.

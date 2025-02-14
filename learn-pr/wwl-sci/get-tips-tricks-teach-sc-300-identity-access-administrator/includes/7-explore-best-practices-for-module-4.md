@@ -1,5 +1,3 @@
-
-
 SC-300: Module 4 Implement access management for apps
 
 Module 4 Overview
@@ -15,7 +13,7 @@ This module consists of six lessons:
 - Lesson 5 – Configure pre-integrated (gallery) SaaS apps
 - Lesson 6 – Implement and manage policies for OAuth apps (in MDCA)
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXbXM]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=021f96e7-aa96-4204-8e1d-13150d44a8b4]  
 
 Module 4 Tips and Tricks
 

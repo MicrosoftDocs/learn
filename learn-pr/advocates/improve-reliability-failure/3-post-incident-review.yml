@@ -4,11 +4,10 @@ title: "What is a post-incident review?"
 metadata:
   title: "What is a post-incident review?"
   description: "What is a post-incident review?"
-  ms.date: 05/07/2020
+  ms.date: 04/19/2024
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 3
@@ -18,23 +17,23 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of these is the correct name for the process that helps us learn from failure?'
+  - content: 'Which of the following options is the correct name for the process that helps us learn from failure?'
     choices:
-    - content: 'post-incident review'
+    - content: 'Post-incident review'
       isCorrect: false
-      explanation: 'There is no one correct name, it is the process that matters.'
-    - content: 'post-incident learning review'
+      explanation: 'There is no one correct name. It is the process that matters.'
+    - content: 'Post-incident learning review'
       isCorrect: false
-      explanation: 'There is no one correct name, it is the process that matters.'
-    - content: 'postmortem'
+      explanation: 'There is no one correct name. It is the process that matters.'
+    - content: 'Postmortem'
       isCorrect: false
-      explanation: 'There is no one correct name, it is the process that matters.'
-    - content: 'retrospective'
+      explanation: 'There is no one correct name. It is the process that matters.'
+    - content: 'Retrospective'
       isCorrect: false
-      explanation: 'There is no one correct name, it is the process that matters.'
-    - content: 'people have different names for the same thing, any of the above terms will work, it is the process that matters'
+      explanation: 'There is no one correct name. It is the process that matters.'
+    - content: 'People have different names for the same thing. Any of the preceding terms work, because it is the process that matters.'
       isCorrect: true
-      explanation: 'Correct, there is no one correct name, it is the process that matters.'
+      explanation: 'Correct, there is no one correct name. It is the process that matters.'
 
   - content: 'A post-incident review takes place during which phase of the incident lifecycle?'
     choices:
@@ -56,15 +55,15 @@ quiz:
 
   - content: 'Ideally, when should you do a post-incident review?'
     choices:
-    - content: 'after every significant incident'
+    - content: 'After every significant incident'
       isCorrect: true
       explanation: 'Correct.'
-    - content: 'once a month'
+    - content: 'Once a month'
       isCorrect: false
-      explanation: 'Reviewing incidents once a month could be a good start, but once this is an established practice it needs to happen after significant incidents.'
-    - content: 'after every incident'
+      explanation: 'Reviewing incidents once a month could be a good start, but once you establish this practice, it needs to happen after significant incidents.'
+    - content: 'After every incident'
       isCorrect: false
       explanation: 'Not all incidents require review (for example, minor ones).'
-    - content: 'at the beginning of the fiscal quarter'
+    - content: 'At the beginning of the fiscal quarter'
       isCorrect: false
       explanation: 'Incident reviews should take place in connection to significant incidents.'

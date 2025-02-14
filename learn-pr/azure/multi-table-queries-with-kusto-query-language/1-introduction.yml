@@ -5,11 +5,10 @@ metadata:
   unitType: introduction
   title: This unit introduces you to writing Kusto Query Language (KQL) queries to combine and retrieve data from two or more tables.
   description: Introduction
-  ms.date: 07/31/2022
+  ms.date: 01/03/2024
   author: shsagir
   ms.author: shsagir
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

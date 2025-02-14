@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-with-playwright.get-started-using-vs-code
+title: "Exercise: Using Playwright in Visual Studio Code"
+metadata:
+  title: "Exercise: Using Playwright in Visual Studio Code"
+  description: In the previous section, we walked through core concepts related to the Playwright Test Configuration and Playwright Test Specification - but we used the Playwright command line (CLI) for executing our tests and viewing reports. In this section, we'll use Visual Studio Code to run tests, debug tests, and record new tests.
+  ms.date: 05/08/2024
+  ms.author: debbieobrien
+  author: debs-obrien
+  ms.manager: jamont
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-get-started-using-vs-code.md)]

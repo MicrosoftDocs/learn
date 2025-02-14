@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-data-governance.describe-benefits-data-governance
+title: Describe the concepts and benefits of data governance
+metadata:
+  title: Describe the concepts and benefits of data governance
+  description: "Describe the concepts and benefits of data governance."
+  ms.date: 9/19/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-describe-benefits-data-governance.md)]

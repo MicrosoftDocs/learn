@@ -1,20 +1,19 @@
+This module focuses on the security aspects of configuring your Azure Virtual Desktop environment.
 
+## Scenario
 
-The Windows client for Azure Virtual Desktop integrates Azure Virtual Desktop with your local machine. However, when you configure your Azure Virtual Desktop account into the Windows client, there are certain actions you'll need to take to keep your users safe.
+You're an administrator for a large organization that uses Azure Virtual Desktop. Your organization has a diverse user base, including internal employees and external users. You need to ensure that your Azure Virtual Desktop deployments are secure and that you're taking all necessary precautions to keep your users safe. This includes understanding the shared security responsibilities, making informed decisions about security boundaries, and implementing advanced security features such as Reverse Connect and multifactor authentication.
 
-This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
+## Learning Objectives
 
-## Learning objectives
+The topics covered in this module include:
 
-After completing this module, you'll be able to:
+ -  Security recommendations for Azure Virtual Desktop.
+ -  Connecting your Azure subscriptions to Microsoft Defender for Cloud.
+ -  Planning Microsoft Defender for Endpoint for Azure Virtual Desktop sessions.
+ -  Applying Zero Trust principles to an Azure Virtual Desktop deployment.
+ -  Understanding security posture management and threat protection.
 
- -  Plan and implement Conditional Access policies for connections to Azure Virtual Desktop.
- -  Plan and implement multifactor authentication (MFA) in Azure Virtual Desktop.
- -  Understand Conditional Access policy components.
- -  Manage security by using Microsoft Defender for Cloud.
- -  Understand Microsoft Defender for Cloud antivirus for session hosts.
+## Goals
 
-## Prerequisites
-
- -  Working experience creating, assigning, and securing corporate identities.
- -  Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
+By the end of this module, you're able to confidently secure your Azure Virtual Desktop deployments, ensuring the safety of your users and the integrity of your organization's data.

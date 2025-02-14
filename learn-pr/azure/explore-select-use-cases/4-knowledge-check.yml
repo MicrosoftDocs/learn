@@ -3,18 +3,19 @@ uid: learn.oxford.explore-select-use-cases.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: A knowledge check for the discover Microsoft guidelines for Automated Intelligence.
-  ms.date: 10/14/2022
+  description: A knowledge check for the Microsoft guidelines for Automated Intelligence.
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/19/2022
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)] 
 quiz:
   questions:
-  - content: "The purpose of the Heating, Ventilation and Air Conditioning (HVAC) use case is to regulate the damper to minimize energy cost while keeping temperature within comfort (as dictated by a set point) and keeping CO2 within legal limits. The current methods include a PID controller with fixed automated timer. Select which one of the following limitations of the current methods does NOT apply:"
+  - content: "The purpose of the Heating, Ventilation, and Air Conditioning (HVAC) use case is to regulate the damper to minimize energy cost while keeping temperature within comfort (as dictated by a set point) and keeping CO2 within legal limits. The current methods include a PID controller with fixed automated timer. Select which one of the following limitations of the current methods does NOT apply:"
     choices:
     - content: "Dynamic highly variable systems."
       isCorrect: false
@@ -28,7 +29,7 @@ quiz:
     - content: "Dependency on human operators."
       isCorrect: true
       explanation: "Correct. HVAC systems don't require a human in the loop."
-  - content: "MineCo Is a company that mines precious metals from ore.​ The first and roughest stage of ore processing is crushing the ore, in this case with a gyratory crusher. ​Operators manually control supervisory settings for the gyratory crusher. Low-level control is done with PID controllers. The goal is to maximize throughput while also maximizing efficiency. The size and hardness of the incoming rocks is variable within a set of well-known limits. Select which one of the following limitations of the current methods does NOT apply:"
+  - content: "MineCo Is a company that mines precious metals from ore. The first and roughest stage of ore processing is crushing the ore, in this case with a gyratory crusher. ​Operators manually control supervisory settings for the gyratory crusher. Low-level control is done with PID controllers. The goal is to maximize throughput while also maximizing efficiency. The size and hardness of the incoming rocks is variable within a set of well-known limits. Select which one of the following limitations of the current methods does NOT apply:"
     choices:
     - content: "Dynamic highly variable systems."
       isCorrect: false
@@ -41,8 +42,8 @@ quiz:
       explanation: "Incorrect. The size and hardness of the incoming rocks is variable and difficult to evaluate."
     - content: "Independency on human operators."
       isCorrect: true
-      explanation: "Correct. Operators manually control supervisory settings for the gyratory crusher."
-  - content: "A logistics company has a large warehouse with many front doors to load trucks for daily distribution to multiple stores. Wherever you locate the goods in the warehouse will influence how easy or difficult it's to access them and how fast a truck can be loaded. For perishable produce, like lettuce, that needs to arrive at the destination fast you want to have it distributed in every door to facilitate its transportation. For long-lasting food, like potatoes or onions, it can be concentrated in one location where you can get it when you need it. The goal is to maximize throughput and minimize truck loading time. Current methods include some optimization algorithms and the experience of the scheduler operator. Select which of the following limitations of the current methods don't apply:"
+      explanation: "Correct. Operators manually control supervisory settings for the gyratory crusher."
+  - content: "A logistics company has a large warehouse with many front doors to load trucks for daily distribution to multiple stores. Where you locate the goods in the warehouse influences how easy or difficult it is to access them and how fast a truck can be loaded. For perishable produce like lettuce that needs to arrive at the destination fast, you want to have it distributed in every door to facilitate its transportation. For long-lasting food, like potatoes or onions, it can be concentrated in one location where you can get it when you need it. The goal is to maximize throughput and minimize truck loading time. Current methods include some optimization algorithms and the schedule operator's experience. Select which of the following limitations of the current methods don't apply:"
     choices:
     - content: "Dynamic highly variable systems."
       isCorrect: false
@@ -52,7 +53,7 @@ quiz:
       explanation: "Incorrect. The competing goals are to maximize throughput and minimize truck loading time."
     - content: "Unforeseen starting or system conditions"
       isCorrect: true
-      explanation: "Correct. Perishable and non-perishable products are easy to distinguish. Additionally, the products the company works with are known upfront (lettuce, potatoes, onions...)."
+      explanation: "Correct. Perishable and non-perishable products are easy to distinguish. Additionally, the products the company works with are known up front (lettuce, potatoes, onions, and so on)."
     - content: "Dependency on human operators."
       isCorrect: false
-      explanation: "Incorrect. Current methods rely on the experience of the scheduler operator, who uses optimization algorithms."
+      explanation: "Incorrect. Current methods rely on the schedule operator's experience, who uses optimization algorithms."

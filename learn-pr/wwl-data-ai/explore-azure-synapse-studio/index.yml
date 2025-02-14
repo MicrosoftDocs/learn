@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-synapse-studio
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Synapse Studio
   description: "Explore Azure Synapse Studio"
   ms.date: 08/18/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-synapse-analytics
 title: Explore Azure Synapse Studio
 summary: Take a tour of the core application used to interact with the various components of Azure Synapse Analytics.
 abstract: |
@@ -43,3 +45,4 @@ units:
 - learn.wwl.explore-azure-synapse-studio.summary
 badge:
   uid: learn.wwl.explore-azure-synapse-studio.badge
+

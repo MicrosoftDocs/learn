@@ -12,7 +12,7 @@ You can now use Azure Monitor to analyze your environment and troubleshoot issue
 For more information about Azure Monitor, check out the following articles:
 
 - [Azure Monitor overview](/azure/azure-monitor/overview)
-- [Get started with log queries in Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
-- [Writing efficient log queries in Azure Monitor](/azure/azure-monitor/log-query/log-query-performance)
-- [Create and share dashboards of Log Analytics data](/azure/azure-monitor/learn/tutorial-logs-dashboards)
-- [Visualizing data from Azure Monitor](/azure/azure-monitor/visualizations)
+- [Get started with log queries in Azure Monitor](/azure/azure-monitor/logs/get-started-queries)
+- [Optimize log queries in Azure Monitor](/azure/azure-monitor/logs/query-optimization)
+- [Create and share dashboards of Log Analytics data](/azure/azure-monitor/visualize/tutorial-logs-dashboards)
+- [Analyze and visualize monitoring data](/azure/azure-monitor/best-practices-analysis)

@@ -1,4 +1,3 @@
-
 In this demonstration, you'll learn how to:
 
 - Launch Cloud Shell.
@@ -7,7 +6,7 @@ In this demonstration, you'll learn how to:
 - Enable a port for web traffic.
 - Install a web server.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AJKf]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6334d54d-d45d-4d8b-b0a2-beb56066d823]
 
 ## Next steps
 

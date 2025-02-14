@@ -24,7 +24,7 @@ Review the following characteristics of dynamic scalability for an Azure SQL dat
 
 ### Things to know about vertical scaling
 
-Implement vertical scaling by using SQL Database elastic database pools. The databases within an elastic database pool share the allocated resources. Vertical scaling allows you to change the compute size for a set of databases. When you have low average utilization, but infrequent, high utilization spikes,
+Implement vertical scaling by using SQL Database elastic database pools. The databases within an elastic database pool use shared resources. Vertical scaling allows you to change the compute size for a set of databases. When you have low average utilization, but infrequent, high utilization spikes,
 you can allocate enough capacity in the pool to manage the spikes for the group.
 
 To properly configure SQL elastic database pools to reduce server costs, choose the appropriate purchasing model and service tier:
@@ -50,41 +50,8 @@ Horizontal scaling is managed by using the SQL Database [Elastic Database client
    | Azure SQL Managed Instance | Azure SQL Database |
    | --- | --- |
    | **Basic**, **Standard**, and **General Purpose** tiers: Read scale-out is unavailable | **Basic**, **Standard**, and **General Purpose** tiers: Read scale-out is unavailable  |
-   | **Business Critical** tier: Read scale-out is auto-provisioned | **Business Critical** and **Premium** tiers: Read scale-out is auto-provisioned | 
+   | **Business Critical** tier: Read scale-out is autoprovisioned | **Business Critical** and **Premium** tiers: Read scale-out is autoprovisioned | 
    | No applicable tier | **Hyperscale** tier: Read scale-out is available if at least one secondary replica is created |
-
-#### Business scenario: Sharding
-
-Let's explore a business scenario for using sharding horizontal scaling. You need to solve a database problem for an application that accesses a database that has a huge amount of transaction throughput that exceeds the database capability. You're looking for a way to configure the database for performance and availability. A possible solution is horizontal scaling or _horizontal partitioning by sharding_. This technique distributes large amounts of identically structured data across a set of independent databases. 
-
-Sharding is useful in many situations. Here are some examples:
-
-- The total amount of data is too large to fit the constraints of a single database.
-
-- The transaction throughput of the overall workload exceeds the capacities of an individual database.
-
-- Different customer's or tenant's data require physical isolation from each other.
-
-- Within an organization, there's a geographical separation of data for compliance reasons.
-
-#### Business scenario: Read scale-out
-
-Let's explore a business scenario for applying read scale-out provisioning. Your application's database is accessed for online transactional processing (OLTP) to update the database, and by analytics applications for read-only workloads to render visualizations. You need a horizontal scaling solution that can offload some of the compute capacity so application performance isn't affected. An easy choice is to use the pre-provisioned read scale-out feature for certain service tiers. Rather than running the workloads on the read-write replica, you can offload read-only workloads by using the compute capacity of one of the read-only replicas. This approach allows some read-only workloads to be isolated from the read-write workloads and doesn't affect their performance.
-
-The following image shows how horizontal read scale-out provisioning is applied in the Business Critical service tier:
-
-:::image type="content" source="../media/business-critical-read-scale-out-small.png" alt-text="Diagram that shows read scale-out provisioning in a business critical service tier." lightbox="../media/business-critical-service-tier-read-scale-out.png" border="false":::
-
-The data and log files all run on direct-attached SSD, which significantly reduces network latency. In this architecture group, there are three secondary replicas. If any type of failure occurs, failing over to a secondary replica is fast because the replica already exists and has the data attached to it.
-
-The Premium and Business Critical tiers for Azure SQL Database and Azure SQL Managed Instance have an **Always On Availability Group**. This group is for disaster recovery and high-availability of the application. There's a primary read-write replica, and several secondary read-only replicas. The secondary replicas are provisioned with the same compute size as the primary replica. You set the connection string option to decide whether the connection is routed to the write replica or to a read-only replica.
-
-:::image type="content" source="../media/business-critical-architecture.png" alt-text="Diagram that shows the Business Critical tier, where the data and log files all run on direct-attached SSD, which significantly reduces network latency." lightbox="../media/business-critical-architecture-large.png" border="false":::
-
-You can disable and re-enable read scale-out on single databases and elastic pool databases in the Premium or Business Critical service tiers. These functions are available in the Azure portal, PowerShell, and the REST API.
-
-> [!NOTE]
-> Data changes made on the primary replica propagate to read-only replicas asynchronously. Within a session connected to a read-only replica, reads are always transactionally consistent. However, because data propagation latency is variable, different replicas can return data at slightly different points in time relative to the primary replica and each other.
 
 ### Things to consider when choosing scalability solutions
 

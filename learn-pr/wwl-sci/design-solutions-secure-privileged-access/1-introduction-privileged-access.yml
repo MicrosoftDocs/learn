@@ -5,10 +5,9 @@ metadata:
   title: Introduction to privileged access
   description: "This is a unit to prepare for the Microsoft cybersecurity architect certification on the topic: introduction to privileged access."
   ms.date: 3/14/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction-privileged-access.md)]

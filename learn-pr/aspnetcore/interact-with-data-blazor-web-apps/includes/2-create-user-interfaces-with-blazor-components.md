@@ -6,7 +6,7 @@ In this unit, you'll learn how to create components in Blazor and write code tha
 
 ## Understand Blazor components
 
-Blazor is a framework that developers can use to create a rich interactive user interface (UI) by writing C# code. With Blazor, you can use the same language for all your code, both server-side and client-side, and render it for display in many different browsers, including browsers on mobile devices.
+Blazor is a framework that developers can use to create a rich interactive user interface (UI) by writing C# code. With Blazor, you can use the same language for all your code, both server-side and client-side. You can render it for display in many different browsers, including browsers on mobile devices.
 
 > [!NOTE]
 > There are two hosting models for code in Blazor apps:
@@ -17,7 +17,7 @@ Blazor is a framework that developers can use to create a rich interactive user 
 In Blazor, you build the UI from self-contained portions of code called *components*. Each component can contain a mix of HTML and C# code. Components are written by using *Razor syntax*, in which code is marked with the `@code` directive. Other directives can be used to access variables, bind to values, and achieve other rendering tasks. When the app is compiled, the HTML and code are compiled into a component class. Components are written as files with a **.razor** extension.
 
 > [!NOTE]
-> Razor syntax is used for embedding .NET code into webpages. You can use it in ASP.NET MVC applications, where files have a **.cshtml** extension. Razor syntax is used in Blazor to write components. These components have the **.razor** extension instead, and there's no strict separation between controllers and views.
+> Razor syntax is used for embedding .NET code into webpages. You can use it in ASP.NET MVC (Model-View-Controller) applications, where files have a **.cshtml** extension. Razor syntax is used in Blazor to write components. These components have the **.razor** extension instead, and there's no strict separation between controllers and views.
 
 Here's a simple example of a Blazor component:
 
@@ -40,20 +40,19 @@ In this example, the code sets the value of a string variable, named `welcomeMes
 When you create a Blazor app by using the **blazorserver** template in the **dotnet** command-line interface (CLI), several components are included by default:
 
 ```bash
-dotnet new blazorserver -o BlazingPizzaSite -f net6.0
+dotnet new blazorserver -o BlazingPizzaSite
 ```
 
-The default components include the **Index.razor** home page and the **Counter.razor** demo component. Both of these components are placed in the **Pages** folder. You can either modify these views to fit your needs or delete them and replace them with new components.
+The default components include the **Index.razor** home page and the **Counter.razor** demo component. Both of these components are placed in the **Pages** folder. You can either modify these views to fit your needs, or delete them and replace them with new components.
 
 To add a new component to an existing web app, use this command:
 
 ```bash
-dotnet new razorcomponent -n PizzaBrowser -o Pages -f net6.0
+dotnet new razorcomponent -n PizzaBrowser -o Pages
 ```
 
 - The `-n` option specifies the name of the component to add. This example adds a new file named **PizzaBrowser.razor**.
 - The `-o` option specifies the folder that will contain the new component.
-- The `-f` option forces the application to be built with the framework version .NET 6.
 
 > [!IMPORTANT]
 > The name of a Blazor component must begin with an uppercase character.

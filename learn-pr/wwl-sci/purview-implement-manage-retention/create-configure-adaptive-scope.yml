@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-implement-manage-retention.create-configure-adaptive-scope
+title: Create and configure adaptive scopes
+metadata:
+  title: Create and configure adaptive scopes
+  description: "Create and configure adaptive scopes."
+  ms.date: 07/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/create-configure-adaptive-scope.md)]

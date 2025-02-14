@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-github-actions.explore-github-actions
+title: Explore GitHub Actions
+metadata:
+  title: Explore GitHub Actions
+  description: "Explore GitHub Actions"
+  ms.date: 05/07/2024
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-explore-github-actions.md)]

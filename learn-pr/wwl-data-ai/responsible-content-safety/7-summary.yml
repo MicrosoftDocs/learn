@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-ai-content-safety.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "The amount of user-generated and ai-generated content makes it difficult or impossible for human moderators to keep online spaces safe. Azure AI Content Safety automates that process, and reduces the load on human verification."
+  ms.date: 10/17/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-summary.md)]

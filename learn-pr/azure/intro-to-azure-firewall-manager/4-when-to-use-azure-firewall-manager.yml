@@ -2,14 +2,16 @@
 uid: learn.intro-to-azure-firewall-manager.4-when-to-use-azure-firewall-manager  
 title: When to use Azure Firewall Manager
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Azure Firewall Manager
   description: When to use Azure Firewall Manager
-  ms.date: 03/14/2021
+  ms.date: 03/08/2024
   author: vhorne
   ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-when-to-use-azure-firewall-manager.md)]
+

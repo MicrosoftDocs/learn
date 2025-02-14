@@ -4,13 +4,12 @@ title: Migrate your structured data in databases
 metadata:
   title: Migrate your structured data in databases
   description: "Migrate your structured data in databases with the Azure Database Migration Service and SQL Server Data Migration Assistant (DMA)."
-  ms.date: 02/16/2023
+  ms.date: 12/09/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/6-migrate-your-databases.md)]

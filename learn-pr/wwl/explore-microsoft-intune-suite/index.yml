@@ -1,0 +1,61 @@
+### YamlMime:Module
+uid: learn.wwl.explore-microsoft-intune-suite
+metadata:
+  title: Explore Microsoft Intune Suite
+  description: "This module explores the Microsoft Intune Suite, highlighting its advanced device management and security capabilities, components, usage, and integration with the broader Microsoft security ecosystem."
+  ms.date: 09/27/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: module
+  ms.service: microsoft-intune
+  ai-usage: ai-assisted
+title: Explore Microsoft Intune Suite
+summary: This module explores the Microsoft Intune Suite, highlighting its advanced device management and security capabilities, components, usage, and integration with the broader Microsoft security ecosystem.
+abstract: |
+  After completing this module, you will be able to:
+
+  - Understand the core features of the Microsoft Intune Suite.
+
+  - Apply Zero Trust Security using Microsoft Intune.
+
+  - Implement Endpoint Privilege Management.
+
+  - Understand enterprise app management.
+
+  - Understand advanced analytics for device and app insights.
+
+  - Provide remote help to users.
+
+  - Understand what Microsoft Tunnel for mobile applications is.
+prerequisites: |
+  -   Basic Understanding of Microsoft Intune: Familiarity with the fundamental concepts of device management and security using Microsoft Intune, including enrollment, configuration policies, and app management.
+
+  -   Familiarity with Microsoft Entra ID (formerly Azure AD): Knowledge of identity and access management concepts, including user authentication, permissions, and security policies within Microsoft environments.
+
+  -   General IT Background: A solid foundation in IT principles, particularly related to network security, endpoint protection, and cloud services, to grasp the advanced topics covered in the module effectively.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+- student
+products:
+- intune
+subjects:
+- application-management
+- asset-management
+- security
+units:
+- learn.wwl.explore-microsoft-intune-suite.introduction
+- learn.wwl.explore-microsoft-intune-suite.discover-essentials-microsoft-intune-suite
+- learn.wwl.explore-microsoft-intune-suite.apply-zero-trust
+- learn.wwl.explore-microsoft-intune-suite.implement-endpoint-privilege-management
+- learn.wwl.explore-microsoft-intune-suite.understand-enterprise-app-management
+- learn.wwl.explore-microsoft-intune-suite.explore-advanced-analytics
+- learn.wwl.explore-microsoft-intune-suite.provide-remote-help
+- learn.wwl.explore-microsoft-intune-suite.deploy-microsoft-tunnel-mobile-applications
+- learn.wwl.explore-microsoft-intune-suite.knowledge-check
+- learn.wwl.explore-microsoft-intune-suite.summary
+badge:
+  uid: learn.wwl.explore-microsoft-intune-suite.badge

@@ -257,7 +257,7 @@ Identify the subtasks of *Networking Fundamentals*
              - Access Control, antivirus, application security, behavioral analytics, email security, intrusion prevention, VPN, web security, wireless security.
    - Network security zones
         - Zone filtering policies
-             - Inside-to-outside, outside-to-inside, DMZ too inside, Outside to DMZ, DMS to Outside.
+             - Inside-to-outside, outside-to-inside, DMZ too inside, Outside to DMZ, DMZ to Outside.
    - What are Network Firewalls
         - Software vs Hardware
         - Firewall Types
@@ -291,15 +291,15 @@ While it is accepted that the proxy content is not the final content, it does fo
 
 The table here represents the reading times, based on Hemmingway, using the proxy content.
 
-| Content                                         | Read Duration | Knowledge Check | Total Time |
-| ----------------------------------------------- | ------------- | --------------- | ---------- |
-| 2. Standards and Protocols                      | 8             | 2.5             | 10.5       |
+| Content                                          | Read Duration | Knowledge Check | Total Time |
+|:-------------------------------------------------|--------------:|----------------:|-----------:|
+| 2. Standards and Protocols                       | 8             | 2.5             | 10.5       |
 | 3. LANs, WANs, and PANs                          | 8             | 2               | 10         |
-| 4. IP/TCP                                       | 21            | 3               | 24         |
-| 5. Basic Client / Server                        | 8             | 2               | 10         |
-| 6. Network hub, switches & routers              | 17            | 1.5             | 18.5       |
+| 4. IP/TCP                                        | 21            | 3               | 24         |
+| 5. Basic Client / Server                         | 8             | 2               | 10         |
+| 6. Network hub, switches & routers               | 17            | 1.5             | 18.5       |
 | 7. Authentication, Authorization, and Monitoring | 20            | 1.5             | 21.5       |
-| 8. Firewalls and Security                       | 11            | 1               | 12         |
+| 8. Firewalls and Security                        | 11            | 1               | 12         |
 
 Note: Reading Duration comes from Hemingway assessment of duration based on the proxy content. Knowledge Check duration is based on 30 seconds per question.
 
@@ -320,7 +320,6 @@ The proposal is for three modules of around 30 minutes each logically grouped ba
   - 33.5 minutes (approx.)
   - Authentication, Authorization, and Monitoring
   - Firewalls and Security
-
 
 The proxy control document contains links to all the relevant materials.
 

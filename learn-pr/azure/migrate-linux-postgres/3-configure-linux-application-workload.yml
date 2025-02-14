@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-linux-postgres.configure-linux-application-workload
+title: Configure a Linux application workload
+metadata:
+  title: Configure a Linux application workload
+  description: "Configure a Linux application workload in Azure. Learn how to deploy a sample application on your Linux virtual machine. Explore how to connect to your Azure Database for PostgreSQL server."
+  ms.date: 9/16/2024
+  author: asw101
+  ms.author: aawislan
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/3-configure-linux-application-workload.md)]

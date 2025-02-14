@@ -1,5 +1,3 @@
-
-
 When planning to deploy AD domain controllers in Azure, there are some important things for Contoso IT staff to consider: networking, AD DS sites, and trust relationships.
 
 ## Deployment considerations

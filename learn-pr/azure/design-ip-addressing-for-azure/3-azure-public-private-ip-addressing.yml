@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-ip-addressing-for-azure.3-azure-public-private-ip-addressing
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Public and private IP addressing in Azure
   description: Public and private IP addressing in Azure
-  ms.date: 03/01/2022
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/10/2024
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 title: Public and private IP addressing in Azure
 durationInMinutes: 8
 content: |
@@ -22,18 +23,19 @@ quiz:
       explanation: "Correct. You can assign public IP addresses to virtual machines."
     - content: "Azure Data Lake"
       isCorrect: false
-      explanation: "Incorrect. Although Azure Data Lake is accessible over the internet, you do not assign a public IP address to the service."
+      explanation: "Incorrect. Although Azure Data Lake is accessible over the internet, you don't assign a public IP address to the service."
     - content: "Azure Key Vault"
       isCorrect: false
-      explanation: "Incorrect. Although Azure Key Vault is accessible over the internet, you do not assign a public IP address to the service."
+      explanation: "Incorrect. Although Azure Key Vault is accessible over the internet, you don't assign a public IP address to the service."
   - content: "What must a virtual machine have to communicate with the other resources in the same virtual network?"
     choices:
     - content: "Load balancer"
       isCorrect: false
-      explanation: "Incorrect. Load balancers distribute traffic between virtual machines and are not required for communication within a virtual network."
+      explanation: "Incorrect. Load balancers distribute traffic between virtual machines and aren't required for communication within a virtual network."
     - content: "Network security group"
       isCorrect: false
-      explanation: "Incorrect. Although network security groups are recommended to filter traffic, they are not required to communicate within a virtual network."
+      explanation: "Incorrect. Although network security groups are recommended to filter traffic, they aren't required to communicate within a virtual network."
     - content: "Network interface"
       isCorrect: true 
       explanation: "Correct. An IP address is assigned to a network interface, which is assigned to a virtual machine."
+

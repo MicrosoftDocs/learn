@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.machine-learning-production-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/17/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the primary purpose of using Azure Databricks in a machine learning workflow?"
+    choices:
+    - content: "Data storage"
+      isCorrect: false
+      explanation: "Incorrect. Data Storage is important to store data for machine learning but isn't the primary purpose of using Azure Databricks in a machine learning workflow."
+    - content: "Model training and deployment"
+      isCorrect: true
+      explanation: "Correct. Azure Databricks is a unified analytics platform that provides the tools necessary for data engineering, data science, and machine learning. You can use the platform for model training and deployment."
+    - content: "Visualization"
+      isCorrect: false
+      explanation: "Incorrect. Visualization allows users to look at the data in variety of ways but isn't the primary purpose of using Azure Databricks in a machine learning workflow."
+  - content: "Which Azure Databricks feature helps in collaborative notebook development?"
+    choices:
+    - content: "Databricks CLI"
+      isCorrect: false
+      explanation: "Incorrect. Databricks CLI is a command-line tool that works with Azure Databricks to perform tasks programmatically."
+    - content: "Databricks Connect"
+      isCorrect: false
+      explanation: "Incorrect. Databricks Connect enables you to connect popular IDEs (Integrated Development Environments) such as PyCharm, notebook servers, and other custom applications to Azure Databricks clusters."
+    - content: "Databricks Workspace"
+      isCorrect: true
+      explanation: "Correct. In Azure Databricks, you can create notebooks and collaborate with other users through the workspace."
+  - content: "Which of the following options is a key benefit of using Azure Databricks for machine learning in production?"
+    choices:
+    - content: "Low-cost storage"
+      isCorrect: false
+      explanation: "Incorrect. Low-cost storage doesn't help mainly with performance of machine learning workloads in production."
+    - content: "Enhanced security features"
+      isCorrect: false
+      explanation: "Incorrect. Enhanced security features in Azure Databricks are an important feature but not a key benefit for running machine learning workloads in production."
+    - content: "High availability and scalability"
+      isCorrect: true
+      explanation: "Correct. Azure Databricks offers high availability and scalability, which are critical for running production-grade machine learning workloads efficiently."

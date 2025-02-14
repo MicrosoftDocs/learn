@@ -4,11 +4,10 @@ title: Define Cluster Shared Volumes
 metadata:
   title: Define Cluster Shared Volumes
   description: "Define Cluster Shared Volumes"
-  ms.date: 03/31/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 7
 content: |

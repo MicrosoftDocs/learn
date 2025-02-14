@@ -4,8 +4,8 @@ The PL-300: Microsoft Power BI Data Analyst course is meant to be an introductio
 
 Use the trainer demos and your own experience to demonstrate each module’s purpose and watch for links to additional information that you’ll want to share with your students. 
 
-Before we begin, make sure you use the most up-to-date version of the Microsoft Official Curriculum (MOC). It is recommended that you log into the [Learning Download Center](https://aka.ms/ldc) (LDC) at least quarterly. If you have not already done so, please download the course materials from the LDC before continuing in this learning path.  
+Before we begin, make sure you use the most up-to-date version of the Microsoft Official Curriculum (MOC). It is recommended that you log into the [Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123) (LDC) at least quarterly. If you have not already done so, please download the course materials from the LDC before continuing in this learning path.  
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aJzo]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=34a9cc92-288c-49a7-8ee4-69a83fec5cf1]
 
 Now that you have the updated materials, you’re ready to prepare for your class. 

@@ -1,1 +1,0 @@
-Your team needs to implement device message processing to support downstream data analysis and other downstream requirements. Your understanding of the features and capabilities of Azure Stream Analytics will help the team to configure the specified service inputs, outputs, and queries once implementation begins.

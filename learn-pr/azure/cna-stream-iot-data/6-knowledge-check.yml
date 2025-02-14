@@ -2,13 +2,14 @@
 uid: learn.azure.cna-stream-iot-data.6-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 04/24/2021
-  author: mpolicht
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/05/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -30,10 +31,10 @@ quiz:
     choices:
     - content: "Azure Service Bus"
       isCorrect: false
-      explanation: "Incorrect. Azure IoT Central applications support continuous data export to Azure Event Hub, Azure Service Bus, and custom webhooks."
-    - content: "Azure Event Hub"
+      explanation: "Incorrect. Azure IoT Central applications support continuous data export to Azure Event Hubs, Azure Service Bus, and custom webhooks."
+    - content: "Azure Event Hubs"
       isCorrect: false
-      explanation: "Incorrect. Azure IoT Central applications support continuous data export to Azure Event Hub, Azure Service Bus, and custom webhooks."
+      explanation: "Incorrect. Azure IoT Central applications support continuous data export to Azure Event Hubs, Azure Service Bus, and custom webhooks."
     - content: "Azure Blob Storage"
       isCorrect: true
       explanation: "Correct. It's possible to configure interval-based data export from Azure IoT Central to Azure Blob storage."
@@ -48,3 +49,4 @@ quiz:
     - content: "Device template"
       isCorrect: true
       explanation: "Correct. IoT Central accepts any syntactically valid JSON-formatted telemetry and displays it as raw data. However, telemetry characteristics, including the metrics names, must match their definition in the device model that's included in the device template. This is required for the telemetry data to display in the default and custom dashboards."
+

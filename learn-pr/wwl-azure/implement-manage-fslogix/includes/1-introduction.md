@@ -1,21 +1,21 @@
-A user profile contains data elements about an individual, including configuration information like desktop settings, persistent network connections, and application settings. By default, Windows creates a local user profile that is tightly integrated with the operating system.
+This module covers FSLogix, a tool that enhances and enables a consistent experience for Windows user profiles in virtual desktop computing environments. This is module relevant for preparing for the AZ 140 Configuring and Operating Microsoft Azure Virtual Desktop.
 
-This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
+## Scenario
+
+Imagine you're an IT professional in a large corporation that has recently transitioned to remote work. You're tasked with ensuring that all employees have a consistent and seamless user experience across their virtual desktops. You're facing challenges with roaming user data between remote computing session hosts, optimizing file I/O between host client and remote profile store, and managing applications.
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+The articles covered in this module include:
 
- -  Plan for FSLogix.
- -  Recommend best practices for FSLogix profile containers and Azure files.
- -  Install FXLogix.
- -  Recommend storage options for FSLogix profile containers.
- -  Configure Cloud Cache.
- -  Configure Profile Containers.
- -  Manage Rule Sets.
+ -  Understanding FSLogix
+ -  Understanding FSLogix containers
+ -  Configuring FSLogix Profile Containers
+ -  Configuring FSLogix Office Containers
+ -  Configuring profile containers with Cloud Cache
+ -  Using FSLogix Apps RuleEditor and Rule Sets
+ -  Creating and implementing Rule Sets for application masking
 
-## Prerequisites
+## Goals
 
- -  Conceptual knowledge of storage accounts, blobs, files, disks, and data protection.
- -  Working experience with creating and securing storage systems.
- 
+By the end of this module, you'll be able to effectively plan, install, and manage FSLogix in a virtual desktop environment.

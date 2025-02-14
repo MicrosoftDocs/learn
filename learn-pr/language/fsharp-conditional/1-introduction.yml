@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction to F# conditional logic.
-  author: softchris
-  ms.author: chnoring
-  ms.date: 07/23/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  author: baronfel
+  ms.author: chethusk 
+  ms.date: 11/23/2022
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

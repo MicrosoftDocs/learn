@@ -2,13 +2,14 @@
 uid: learn.store-app-data-with-azure-blob-storage.3-design-organization-strategy
 title: Design a storage organization strategy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a storage organization strategy
   description: Design a storage organization strategy
-  ms.date: 03/23/2023
-  author: normesta
-  ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/29/2024
+  author: pauljewellmsft
+  ms.author: pauljewell
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-design-organization-strategy.md)]
@@ -36,3 +37,4 @@ quiz:
       isCorrect: false
       explanation: "Blobs do not impose any structure on your data, meaning your application can store any type of data in a blob."
       
+

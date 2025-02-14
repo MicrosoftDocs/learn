@@ -88,7 +88,7 @@ You can try this code and work with hash maps in this [Rust Playground][RustPlay
 
 ### Check your knowledge
 
-Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
+Answer the following questions to see what you've learned. Choose one answer for each question.
 
 
 <!-- Links -->

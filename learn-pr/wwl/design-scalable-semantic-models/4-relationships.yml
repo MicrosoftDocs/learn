@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.design-scalable-semantic-models.relationships
+title: Work with relationships
+metadata:
+  title: "Work with relationships"
+  description: "Design a star schema and use relationships to enable filtering and aggregation across tables."
+  ms.date: 10/15/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-relationships.md)]

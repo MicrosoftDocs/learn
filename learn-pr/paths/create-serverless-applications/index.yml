@@ -4,11 +4,10 @@ metadata:
   title: Create serverless applications learning path
   description: In this learning path, discover Azure Functions that create event-driven, compute-on-demand systems using server-side logic to build serverless architectures.
   brand: azure
-  ms.date: 08/18/2021
+  ms.date: 01/08/2025
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Create serverless applications
 summary:  |
   Azure Functions enable the creation of event driven, compute-on-demand systems that can be triggered by various external events. Learn how to leverage functions to execute server-side logic and build serverless architectures. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/certifications/azure-developer).
@@ -30,15 +29,13 @@ products:
 languages:
 - powershell
 subjects:
-- digital-application-innovation
+- app-development
 modules:
 - learn.intro-azure-functions
-- learn.choose-azure-service-to-integrate-and-automate-business-processes
 - learn.create-serverless-logic-with-functions
 - learn.execute-azure-function-with-triggers
 - learn.chain-azure-functions-data-using-input-output-bindings
 - learn.azure-create-long-running-serverless-workflow-with-durable-functions
-- learn-pr.develop-test-deploy-azure-functions-core-tools
 - learn.develop-test-deploy-azure-functions-with-visual-studio
 - learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook
 - learn.advocates.azure-functions-and-signalr

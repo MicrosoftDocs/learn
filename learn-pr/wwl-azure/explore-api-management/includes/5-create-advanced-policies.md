@@ -1,4 +1,3 @@
-
 This unit provides a reference for the following API Management policies:
 
 * Control flow - Conditionally applies policy statements based on the results of the evaluation of Boolean expressions.
@@ -6,7 +5,7 @@ This unit provides a reference for the following API Management policies:
 * Limit concurrency - Prevents enclosed policies from executing by more than the specified number of requests at a time.
 * Log to Event Hub - Sends messages in the specified format to an Event Hub defined by a Logger entity.
 * Mock response - Aborts pipeline execution and returns a mocked response directly to the caller.
-* Retry - Retries execution of the enclosed policy statements, if and until the condition is met. Execution will repeat at the specified time intervals and up to the specified retry count.
+* Retry - Retries execution of the enclosed policy statements, if and until the condition is met. Execution repeats at the specified time intervals and up to the specified retry count.
 
 
 ##  Control flow
@@ -27,13 +26,13 @@ The `choose` policy applies enclosed policy statements based on the outcome of e
 </choose>
 ```
 
-The control flow policy must contain at least one `<when/>` element. The `<otherwise/>` element is optional. Conditions in `<when/>` elements are evaluated in order of their appearance within the policy. Policy statement(s) enclosed within the first `<when/>` element with condition attribute equals true will be applied. Policies enclosed within the `<otherwise/>` element, if present, will be applied if all of the `<when/>` element condition attributes are false.
+The control flow policy must contain at least one `<when/>` element. The `<otherwise/>` element is optional. Conditions in `<when/>` elements are evaluated in order of their appearance within the policy. Policy statements enclosed within the first `<when/>` element are applied when the condition attribute is true. Policies enclosed within the `<otherwise/>` element, if present, are applied if all of the `<when/>` element condition attributes are false.
 
 ##  Forward request
 
 The `forward-request` policy forwards the incoming request to the backend service specified in the request context. The backend service URL is specified in the API settings and can be changed using the set backend service policy.
 
-Removing this policy results in the request not being forwarded to the backend service and the policies in the outbound section are evaluated immediately upon the successful completion of the policies in the inbound section.
+Removing this policy results in the request not being forwarded to the backend service. The policies in the outbound section are evaluated immediately upon the successful completion of the policies in the inbound section.
 
 ```xml
 <forward-request timeout="time in seconds" follow-redirects="true | false"/>
@@ -41,7 +40,7 @@ Removing this policy results in the request not being forwarded to the backend s
 
 ##  Limit concurrency
 
-The `limit-concurrency` policy prevents enclosed policies from executing by more than the specified number of requests at any time. Upon exceeding that number, new requests will fail immediately with a *429 Too Many Requests* status code.
+The `limit-concurrency` policy prevents enclosed policies from executing by more than the specified number of requests at any time. When requests exceed that number, new requests fail immediately with a *429 Too Many Requests* status code.
 
 ```xml
 <limit-concurrency key="expression" max-count="number">
@@ -60,7 +59,7 @@ The `log-to-eventhub` policy sends messages in the specified format to an Event 
 ```
 ##  Mock response
 
-The `mock-response`, as the name implies, is used to mock APIs and operations. It aborts normal pipeline execution and returns a mocked response to the caller. The policy always tries to return responses of highest fidelity. It prefers response content examples, whenever available. It generates sample responses from schemas, when schemas are provided and examples are not. If neither examples or schemas are found, responses with no content are returned.
+The `mock-response`, as the name implies, is used to mock APIs and operations. It aborts normal pipeline execution and returns a mocked response to the caller. The policy always tries to return responses of highest fidelity. It prefers response content examples, whenever available. It generates sample responses from schemas, when schemas are provided and examples aren't. If examples or schemas aren't found, responses with no content are returned.
 
 ```xml
 <mock-response status-code="code" content-type="media type"/>
@@ -84,7 +83,7 @@ The `retry` policy executes its child policies once and then retries their execu
 
 ##  Return response
 
-The `return-response` policy aborts pipeline execution and returns either a default or custom response to the caller. Default response is `200 OK` with no body. Custom response can be specified via a context variable or policy statements. When both are provided, the response contained within the context variable is modified by the policy statements before being returned to the caller.
+The `return-response` policy aborts pipeline execution and returns either a default or custom response to the caller. Default response is `200 OK` with no body. Custom response can be specified via a context variable or policy statements. When both are provided, the policy statement modifies the context variable before being returned to the caller.
 
 ```xml
 <return-response response-variable-name="existing context variable">
@@ -94,7 +93,7 @@ The `return-response` policy aborts pipeline execution and returns either a defa
 </return-response>
 ```
 
-## Additional resources
+## Other resources
 
 * Visit [API Management policies](/azure/api-management/api-management-policies) for more policy examples.
 * [Error handling in API Management policies](/azure/api-management/api-management-error-handling-policies)

@@ -2,13 +2,15 @@
 uid: learn.azure.create-batch-account-using-azure-portal.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Learn about Azure Batch and this learning module's objectives.
-  ms.date: 02/01/2021
-  author: prkannap
-  ms.author: prkannap
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/05/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

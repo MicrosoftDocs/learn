@@ -9,7 +9,7 @@ _Figure 7: An example I/O path_
 Software-defined storage (SDS) allows clients to specify fine-grained capacity, latency, and/or bandwidth requirements, in the form of SLOs, which are mapped to abstract storage services for the client. The cloud provider can assemble and provide a scalable storage service using various storage technologies in the back end. Client SLOs can be met by managing the storage stack at the provider's side.
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pNdd]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7f9b9628-43bc-471d-8283-555c33f3f30d]
 
 To better understand how this can be achieved, let's look at one of the emerging technologies that enable SDS, IOFlow.<sup>[1][^1]</sup> 
 
@@ -54,6 +54,6 @@ SDS is a fast-evolving approach to providing storage as a service that meets a c
 ***
 ### References
 
-1. _Thereska et al. (2013). IOFlow: [A Software-Defined Storage Architecture](http://rowstron.azurewebsites.net/Publications/ioflow_sosp13.pdf) SOSP'13: The 24th ACM Symposium on Operating Systems Principles_
+1. _Thereska et al. (2013). IOFlow: [A Software-Defined Storage Architecture](https://rowstron.azurewebsites.net/Publications/ioflow_sosp13.pdf) SOSP'13: The 24th ACM Symposium on Operating Systems Principles_
 
-[^1]: <http://rowstron.azurewebsites.net/Publications/ioflow_sosp13.pdf> "Thereska et al. (2013). IOFlow: *A Software-Defined Storage Architecture* in SOSP'13: The 24th ACM Symposium on Operating Systems Principles"
+[^1]: <https://rowstron.azurewebsites.net/Publications/ioflow_sosp13.pdf> "Thereska et al. (2013). IOFlow: *A Software-Defined Storage Architecture* in SOSP'13: The 24th ACM Symposium on Operating Systems Principles"

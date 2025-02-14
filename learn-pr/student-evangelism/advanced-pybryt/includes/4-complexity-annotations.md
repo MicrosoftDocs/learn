@@ -22,7 +22,7 @@ The `TimeComplexity` constructor also requires the `name` option to be supplied,
 pybryt.TimeComplexity
 ```
 
-And that's all that's required on the reference implementation end. The real work of checking the time complexity of students' code comes in writing the scaffold provided to students, which must use PyBryt's `check_time_complexity` context manager to mark a block of code as a block that should be checked for time complexity. This context manager accepts as arguments the name of the block (which should be the same as the `name` provided to the annotation) and the size of input being run in that context.
+And that's all you need on the reference implementation end. The real work of checking the time complexity of students' code comes in writing the scaffold provided to students, which must use PyBryt's `check_time_complexity` context manager to mark a block of code as a block that should be checked for time complexity. This context manager accepts as arguments the name of the block (which should be the same as the `name` provided to the annotation) and the size of input being run in that context.
 
 For example, consider a basic exponentiation algorithm where the size of the input is the power that the base is being raised to.
 

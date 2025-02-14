@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-hello-app-service.knowledge-check
+title: Knowledge Check
+metadata:
+  description: Knowledge Check
+  author: KarlErickson
+  ms.author: ayangupta
+  ms.date: 12/11/2024
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
+  ms.reviewer:
+  ms.assetid: HelloJavaAppService
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+    - content: What is the purpose of Azure App Service?
+      choices:
+        - content: "A platform for building, deploying, and scaling web apps"
+          isCorrect: true
+          explanation: "Correct! Azure App Service enables developers to build, deploy, and scale web apps and APIs easily."
+        - content: "A database management tool"
+          isCorrect: false
+          explanation: "Azure App Service is used to build, deploy, and scale web applications, not to manage databases."
+        - content: "A cloud storage service"
+          isCorrect: false
+          explanation: "Azure App Service is primarily for web app development and deployment, not cloud storage."
+    - content: Which programming languages does Azure App Service support?
+      choices:
+        - content: "Only Java and .NET"
+          isCorrect: false
+          explanation: "Azure App Service supports many more languages including Python, Node.js, PHP, and Ruby."
+        - content: "Java, Python, Node.js, .NET, and PHP"
+          isCorrect: true
+          explanation: "Correct! Azure App Service supports various programming languages, making it flexible for different development environments."
+        - content: "Only .NET and Python"
+          isCorrect: false
+          explanation: "Azure App Service supports a wider range of languages, including Java and PHP."
+    - content: What command is used to create a Maven project for a Java web app?
+      choices:
+        - content: "mvn create:java-app"
+          isCorrect: false
+          explanation: "Incorrect. The correct command is `mvn archetype:generate` to create a Maven project."
+        - content: "mvn archetype:generate"
+          isCorrect: true
+          explanation: "Correct! The `mvn archetype:generate` command is used to create a Maven project for a Java web application."
+        - content: "mvn build:java"
+          isCorrect: false
+          explanation: "This command isn't valid for creating a Maven project for Java web apps."
+    - content: What is the correct way to deploy your Java web app to Azure App Service?
+      choices:
+        - content: "az webapp deploy"
+          isCorrect: true
+          explanation: "Correct! You can use `az webapp deploy` to deploy your Java web application to Azure App Service."
+        - content: "az app deploy"
+          isCorrect: false
+          explanation: "Incorrect. The correct command is `az webapp deploy` to deploy web apps to Azure."
+        - content: "az deploy app-service"
+          isCorrect: false
+          explanation: "Incorrect. The correct command is `az webapp deploy`."

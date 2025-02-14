@@ -22,7 +22,7 @@ Private Link provides secure access to Azure services. Private Link achieves tha
 * The connection to the resource now uses the Microsoft Azure backbone network instead of the public internet.
 * You can configure the Azure resource to no longer expose its public IP address, which eliminates that potential security risk.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCwmT]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=559c0cb4-d710-44d7-b790-0729a92510d1]
 
 ## What is Azure Private Endpoint?
 

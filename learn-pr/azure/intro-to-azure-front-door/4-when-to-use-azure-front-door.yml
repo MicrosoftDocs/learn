@@ -2,14 +2,16 @@
 uid: learn.intro-to-azure-front-door.4-when-to-use-azure-front-door  
 title: When to use Azure Front Door  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Azure Front Door
   description: When to use Azure Front Door
-  ms.date: 03/14/2021
+  ms.date: 10/16/2023
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-front-door.md)]
+

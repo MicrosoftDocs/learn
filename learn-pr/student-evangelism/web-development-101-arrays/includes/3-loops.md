@@ -16,7 +16,7 @@ A `for` loop requires three parts to iterate:
 
    You ordinarily use this value as the first position you want to access in an array.
 
-- **Condition**: An expression that uses comparison operators to cause the loop to stop when `true`. Here's an example of a condition that stops when the array is out of indexes:
+- **Condition**: An expression that uses comparison operators to cause the loop to stop when `false`. Here's an example of a condition that stops when the array is out of indexes:
 
    ```javascript
    i < 10;   
@@ -44,7 +44,7 @@ for (let i = 0; i < 10; i++ ) {
 
 ### `While` loops
 
-Unlike the `for` loop, a `while` loop requires a condition that will stop the loop only when the expression in the `while` loop evaluates to `true`. 
+Unlike the `for` loop, a `while` loop requires a condition that will stop the loop only when the expression in the `while` loop evaluates to `false`. 
 
 Conditions in loops usually rely on other values, such as counters, and they must be managed during the loop. 
 

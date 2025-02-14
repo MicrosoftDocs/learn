@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-plugins-semantic-kernel.use-semantic-kernel-prompt-templates
+title: Use semantic kernel prompt templates
+metadata:
+  title: Use semantic kernel prompt templates
+  description: "Use semantic kernel prompt templates"
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-use-semantic-kernel-prompt-templates.md)]

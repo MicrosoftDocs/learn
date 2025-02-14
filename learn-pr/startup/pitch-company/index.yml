@@ -1,13 +1,16 @@
 ### YamlMime:Module
 uid: learn.startups.pitch-company
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to pitch your company
-  description: In this module, you'll learn how to pitch your startup to investors, discover what makes a pitch effective, and get tips for delivering compelling pitches.
-  ms.date: 01/03/2023
-  author: ryanmesches
-  ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  description: Learn how to pitch your startup to investors, discover what makes a pitch effective, and get tips for delivering compelling pitches.
+  ms.date: 04/22/2024
+  author: vhawk85
+  ms.author: vahughes
+  ms.topic: module
+  ms.service: azure
+  ms.collection: learn-startups
 title: How to pitch your company
 summary: >
   In this module, you'll learn how to deliver compelling pitches to investors and other key audiences, and how to avoid the most common mistakes.
@@ -44,3 +47,4 @@ units:
 - learn.startups.pitch-company.summary
 badge:
   uid: learn.startups.pitch-company.badge
+

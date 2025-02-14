@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-azure-red-hat-openshift.what-is-azure-red-hat-openshift
+title: What is Azure Red Hat OpenShift?
+metadata:
+  unitType: learning-content
+  title: What is Azure Red Hat OpenShift?
+  description: Discuss how Azure Red Hat OpenShift simplifies container orchestration and management.
+  ms.date: 08/23/2024
+  author: ricmmartins
+  ms.author: ricardomac
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-is-azure-red-hat-openshift.md)]

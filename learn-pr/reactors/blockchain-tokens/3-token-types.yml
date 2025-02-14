@@ -3,11 +3,10 @@ uid: learn.reactors.blockchain-tokens.3-token-types
 metadata:
   title: Learn about contract standards
   description: Learn about the four primary token standards.
-  ms.date: 06/17/2021
+  ms.date: 02/11/2022
   author: danmabee
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Learn about contract standards
 durationInMinutes: 4

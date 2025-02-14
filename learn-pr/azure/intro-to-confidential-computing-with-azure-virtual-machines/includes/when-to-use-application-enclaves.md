@@ -8,4 +8,4 @@ The following table provides some detail to help you decide on a particular virt
 | Effort | Have time to plan and develop a customized, confidential virtual machine solution. | Need to move virtualized workloads to a confidential computing environment quickly. |
 | Use cases | Customized applications built for confidential computing. | Lift and shift of existing applications to confidential computing. |
 
-The difference between the two approaches can be substantial. If you need line-of-code control, choose the application-enclave-based option. If you want to migrate existing virtual machines as quickly as possible, use Azure confidential virtual-machine capabilities.
+The difference between the two approaches can be substantial. If you need line-of-code control, choose the application-enclave-based option. If you want to migrate existing virtual machines as quickly as possible, use Azure confidential virtual machine capabilities.

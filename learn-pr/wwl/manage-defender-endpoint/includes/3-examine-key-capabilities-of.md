@@ -1,4 +1,3 @@
-
 The following capabilities are available across multiple products that make up the Microsoft Defender for Endpoint platform.
 
 #### Attack surface reduction
@@ -27,11 +26,11 @@ Microsoft Defender Antivirus includes:
 
 #### Endpoint detection and response
 
-Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. The Microsoft Defender for Endpoint endpoint detection and response capabilities provide near real-time actionable advance attack detections, enable security analysts to effectively prioritize alerts, unfold the full scope of a breach and take response actions to remediate the threat.
+Endpoint detection and response capabilities are implemented to detect, investigate, and respond to advanced threats that may have surpassed the first two security pillars. Microsoft Defender for Endpoint offers endpoint detection and response capabilities that detect advanced attacks in near real time. This feature enables security analysts to prioritize alerts effectively, uncover the extent of a breach, and take necessary response actions to remediate the threat.
 
 When a threat is detected, alerts are created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called incident. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 
-Inspired by the "assume breach" mindset, Microsoft Defender for Endpoint continuously collects behavioral cyber telemetry. This includes process information, network activities, deep optics into the kernel and memory manager, user sign-in activities, registry and file system changes and others. This information is stored for six months, enabling an analyst to travel back in time to the starting point of an attack and pivot in various views and approach an investigation through multiple possible vectors.
+Embracing the "assume breach" philosophy, Microsoft Defender for Endpoint persistently gathers a wide range of behavioral cyber telemetry data. This encompasses process details, network activities, in-depth insights into the kernel and memory manager, user sign-in activities, as well as registry and file system modifications. This data is retained for six months, allowing analysts to trace back to the origin of an attack and explore various perspectives during an investigation by pivoting between different views and examining multiple potential vectors.
 
 The response capabilities give you the power to promptly remediate threats by acting on the affected entities.
 

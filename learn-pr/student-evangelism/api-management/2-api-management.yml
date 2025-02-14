@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.api-management.api-management
+title: API management
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: API management
+  description: In this unit, you will learn what things to consider when managing APIs at scale.
+  author: dlepow
+  ms.author: danlep
+  manager: susanpotter
+  ms.date: 06/30/2024
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-api-management.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What is one of the main challenges that might make you seek out an API management solution?
+      choices:
+        - content: Reducing the number of API endpoints to a single endpoint.
+          isCorrect: false
+          explanation: Incorrect. API management solutions aren't about reducing the number of API endpoints but about managing and securing them.
+        - content: Scaling, ensuring your API is available and responsive to many clients in different regions.
+          isCorrect: true
+          explanation: Correct. Your main challenges might be scaling, ensuring your API is available and responsive in different regions.
+        - content: Eliminating the need for monitoring API performance.
+          isCorrect: false
+          explanation: Incorrect. You still need to monitor API performance even with an API management solution.
+    - content: What is Infrastructure as Code (IaC) used for in managing Azure resources?
+      choices:
+        - content: Managing your infrastructure using code to easily replicate and trace changes.
+          isCorrect: true
+          explanation: Correct. Infrastructure as Code (IaC) is used to manage your infrastructure using code to easily replicate and trace changes.
+        - content: Creating Azure resources manually through the Azure portal.
+          isCorrect: false
+          explanation: Incorrect. IaC is used to manage your infrastructure using code to easily replicate and trace changes.
+        - content: Ensuring that only authorized clients can access your API.
+          isCorrect: false
+          explanation: Incorrect. IaC is used to manage your infrastructure using code to easily replicate and trace changes.
+    - content: What is the purpose of a circuit breaker in API management?
+      choices:
+        - content: To monitor API performance and generate usage reports.
+          isCorrect: false
+          explanation: Incorrect. Circuit breakers are used to prevent an application from repeatedly trying to execute an operation that is likely to fail.
+        - content: Prevent repeated failures by temporarily blocking requests to a failing backend.
+          isCorrect: true
+          explanation: Correct. Circuit breakers are used to prevent an application from repeatedly trying to execute an operation that is likely to fail. 
+        - content: Permanently disable a backend service when an error occurs.
+          isCorrect: false
+          explanation: Incorrect. You don't want to disable a backend service permanently but you want to temporarily block requests to a failing backend.
+

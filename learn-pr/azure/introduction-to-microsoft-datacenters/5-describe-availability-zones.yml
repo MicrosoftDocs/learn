@@ -2,13 +2,14 @@
 uid: learn.introduction-to-microsoft-datacenters.describe-availability-zones
 title: Describe availability zones
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe availability zones
-  description: TBD
-  ms.date: 10/01/2022
-  author: TBD
-  ms.author: v-jenhor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Describes availability zones that reside within regions.
+  ms.date: 07/17/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/5-describe-availability-zones.md)]
@@ -26,3 +27,4 @@ quiz:
     - content: "Availability zones are physically separate datacenter locations within each Azure region. "
       isCorrect: true
       explanation: "Correct. This statement is the definition of an availability zone."
+

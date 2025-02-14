@@ -1,8 +1,8 @@
-Microsoft Intune supports several device platforms. The available platforms that can be managed by Intune include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types. Each platform offers sightly different enrollment methods, devices settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
+Microsoft Intune supports several device platforms. The available platforms that Intune can manage include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types. Each device type offers sightly different enrollment methods. Including, devices settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
 
-![Microsoft Intune supported platforms.](../media/intro-to-endpoint-manager-08.png)
+![Diagram of Microsoft Intune supported platforms.](../media/intro-to-endpoint-manager-08.png)
 
-When you create your endpoint management design, you need to determine the platforms that must be supported in your endpoint environment. Once you know the platforms you need to support, you must verify whether each platform is supported by Intune.
+When you create your endpoint-management design, you need to determine the platforms that must be supported in your endpoint environment. Once you know the platforms you need to support, you must verify whether Intune supports each platform.
 
 ## Intune supported operating systems
 
@@ -10,13 +10,13 @@ You can manage devices running the following operating systems:
 
 ### Apple
 
-- Apple iOS 13.0 and later
-- Apple iPadOS 13.0 and later
-- macOS X 10.15 and later
+- Apple iOS 16.0 and later
+- Apple iPadOS 16.0 and later
+- macOS X 13.0 and later
 
 ### Google
 
-- Android 8.0 and later (including Samsung KNOX Standard 2.4 and higher)
+- Android 8.0 and later (including Samsung KNOX Standard 3.0 and higher)
 - Android Enterprise
 
 ### Microsoft
@@ -36,10 +36,10 @@ For more information about Intune supported devices, platforms, and operating sy
 
 ## Configuration Manager supported operating systems
 
-Configuration Manager supports several dozen OS versions for clients and devices. The following is an overall list of operating systems and devices types:
+Configuration Manager supports several dozen OS versions for clients and devices. Here's an overall list of operating systems and devices types:
 
 - Windows computers
-  - Windows 10/11 (x86, x64, ARM64): Enterprise, Pro, Education, Pro Education, Pro for Workstation, Windows Insider
+  - Windows 10/11 (x86, x64, Arm64): Enterprise, Pro, Education, Pro Education, Pro for Workstation, Windows Insider
   - Windows 10 Enterprise 2015 LTSB, Enterprise 2016 LTSB, and Enterprise LTSC 2019
   - Windows 8.1 (x86, x64): Professional, Enterprise
 - Windows Servers (*several variations available*)
@@ -48,6 +48,5 @@ Configuration Manager supports several dozen OS versions for clients and devices
 - Windows Embedded computers (*several variations available*)
 - Windows 10 IoT Mobile Enterprise
 - Windows 10 Team for Surface Hub
-- Mac computers (*several variations available*)
 
 For more information about Configuration Manager supported devices, servers, platforms, and operating systems, see [Supported OS versions for clients and devices for Configuration Manager](/mem/configmgr/core/plan-design/configs/supported-operating-systems-for-clients-and-devices?azure-portal=true).

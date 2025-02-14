@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.understand-data-distribution
+title: Understand data distribution
+metadata:
+  title: Understand data distribution
+  description: Learn how to identify the distribution of your data in Microsoft Fabric.
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 1/24/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-understand-data-distribution.md)]

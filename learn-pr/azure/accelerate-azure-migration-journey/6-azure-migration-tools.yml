@@ -2,13 +2,14 @@
 uid: learn.azure.accelerate-migration-journey.6-azure-migration-tools
 title: Azure migration and modernization tools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure migration and modernization tools
-  description: This unit examines tools provided by Microsoft to enable a successful move to Azure. 
-  ms.date: 02/12/2021
-  author: jamcneil
-  ms.author: jumcn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Learn about the tools and services provided by Microsoft to enable a successful move to Azure. 
+  ms.date: 05/15/2023
+  author: sgsneha
+  ms.author: sudhirsneha
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/6-azure-migration-tools.md)]
@@ -48,3 +49,4 @@ quiz:
     - content: VMware workloads run natively by using Azure VMware Solution.
       isCorrect: true
       explanation: VMware workloads run natively on Azure. These workloads can be seamlessly moved from your datacenter to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing its existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
+

@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.wwl.defend-against-cyberthreats-defender
+metadata:
+  title: 'Defend against cyberthreats with Microsoft Defender XDR'
+  description: 'To earn this Microsoft Applied Skills credential, learners demonstrate the ability to use Microsoft Defender XDR to detect and respond to cyberthreats. Candidates for this credential should be familiar with investigating and gathering evidence about attacks on endpoints. They should also have experience using Microsoft Defender for Endpoint and Kusto Query Language (KQL).'
+  ms.date: 11/8/2024
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: learning-path
+  adobe-target: true
+title: 'Defend against cyberthreats with Microsoft Defender XDR'
+prerequisites: |
+  - Experience using the Microsoft Defender portal
+  - Basic understanding of Microsoft Defender for Endpoint
+  - Basic understanding of Microsoft Sentinel
+  - Experience using Kusto Query Language (KQL) in Microsoft Sentinel
+summary: |
+  Implement the Microsoft Defender for Endpoint environment to manage devices, perform investigations on endpoints, manage incidents in Defender XDR, and use Advanced Hunting with Kusto Query Language (KQL) to detect unique threats.
+  > [!NOTE] 
+  > You'll need to have access to a Microsoft 365 E5 Tenant with a Microsoft Defender for Endpoint P2 license to perform the exercises.  
+iconUrl: /training/achievements/mitigate-threats-using-microsoft-defender-for-endpoint.svg
+hidden: false
+levels:
+- intermediate
+roles:
+- security-operations-analyst
+products:
+- microsoft-defender
+- defender-endpoint
+- defender-xdr
+subjects:
+- threat-protection
+modules:
+- learn.wwl.mitigate-incidents-microsoft-365-defender
+- learn.wwl.deploy-microsoft-defender-for-endpoints-environment
+- learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint
+- learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint
+- learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints
+- learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-labs 
+trophy:
+  uid: learn.wwl.earn.wwl.defend-against-cyberthreats-defender.trophy

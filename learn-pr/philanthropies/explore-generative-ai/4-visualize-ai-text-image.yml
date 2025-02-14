@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-generative-ai.visualize-ai-text-image
+
+title: Visualize with AI from text to image
+metadata:
+  title: Visualize with AI from text to image
+  description: This content is a part of the exploring generative AI module.
+  ms.date: 01/14/2025
+  author: yoosunee
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-visualize-ai-text-image.md)]

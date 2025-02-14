@@ -46,6 +46,11 @@ In this exercise, we'll create your application's backend. You'll create an Azur
 
 ## Generating shared access signatures
 
+> [!IMPORTANT]
+> This code example uses a connection string to authorize access to your storage account. This configuration is for example purposes. Connection strings and account access keys should be used with caution in application code. If your account access key is lost or accidentally placed in an insecure location, your service may become vulnerable. Anyone who has the access key is able to authorize requests against the storage account, and effectively has access to all the data.
+>
+> For optimal security, Microsoft recommends using managed identities for Azure resources to authorize requests against blob, queue, and table data, whenever possible. To learn more, see [Authorize access to blobs using Microsoft Entra ID](/azure/storage/blobs/authorize-access-azure-active-directory).
+
 1. Open the `index.js` file from your `credentials` folder and add the following function at the bottom:
 
     ```javascript

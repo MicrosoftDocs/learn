@@ -11,7 +11,7 @@ Supplemental Resources:
 - [Microsoft Dynamics Documentation](https://aka.ms/dynamics365docs)
 - [Microsoft Dynamics 365 Customer Service](https://aka.ms/dynamics365customerservice)
 - [Microsoft Dynamics 365 Blog](https://aka.ms/cloudblogs)
-- [Learning Download Center](https://aka.ms/ldc)		
+- [Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123)
 - [MSLE Training and Tools](https://aka.ms/MSLEtrainingtools)
 - [MB-910 Learning Path](https://aka.ms/collectionsmb910)
 - [MB-910 study guide](https://aka.ms/MB910StudyGuide)

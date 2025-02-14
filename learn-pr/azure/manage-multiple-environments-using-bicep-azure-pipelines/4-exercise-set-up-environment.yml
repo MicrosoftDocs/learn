@@ -2,15 +2,19 @@
 uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.exercise-set-up-environment
 title: Exercise - Set up your environment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Set up your environment
   description: Configure your environment to add multiple deployment environments to your Bicep deployment pipeline.
   ms.date: 02/27/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 6
 content: |
   [!include[](includes/4-exercise-set-up-environment.md)]
+

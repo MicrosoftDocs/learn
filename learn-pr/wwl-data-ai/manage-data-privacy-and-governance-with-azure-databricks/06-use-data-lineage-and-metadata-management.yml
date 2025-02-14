@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.use-data-lineage-and-metadata-management
+title: Use data lineage and metadata management
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Use data lineage and metadata management
+  description: "Learn the value of metadata management and data lineage when moving data across systems."
+  ms.date: 08/14/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/06-use-data-lineage-and-metadata-management.md)]

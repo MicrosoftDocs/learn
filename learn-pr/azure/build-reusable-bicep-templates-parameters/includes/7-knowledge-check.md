@@ -8,7 +8,7 @@ param projectName string = 'dog'
 param apiKey string
 ```
 
-They also give you the following parameter file named _main.parameters.production.json_:
+They also give you the following parameters file named _main.parameters.production.json_:
 
 ```json
 {
@@ -21,7 +21,7 @@ They also give you the following parameter file named _main.parameters.productio
     "apiKey": {
       "reference": {
         "keyVault": {
-          "id": "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets"
+          "id": "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets"
         },
         "secretName": "KeyToAccessPartnerApi"
       }

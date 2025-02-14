@@ -1,5 +1,3 @@
-
-
 In this exercise, you'll use the assignment scores for each student to calculate their current grade in the class. To perform this calculation, you'll first sum the values of their assignment scores, and then calculate their average score (their current grade). Let's get started.
 
 > [!IMPORTANT]

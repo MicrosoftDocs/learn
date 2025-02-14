@@ -2,13 +2,14 @@
 uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.exercise-synapse-link-cosmos-db
 title: Exercise - Implement Azure Synapse Link for Cosmos DB
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Implement Azure Synapse Link for Cosmos DB
   description: "Exercise - Implement Azure Synapse Link for Cosmos DB"
   ms.date: 12/19/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 35

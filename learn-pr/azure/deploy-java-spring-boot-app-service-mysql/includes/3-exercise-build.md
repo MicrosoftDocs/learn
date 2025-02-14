@@ -109,7 +109,7 @@ You don't need to specify Azure dependencies because you'll run your application
 At a command prompt, generate the application:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web,data-jpa,mysql -d baseDir=azure-spring-workshop -d bootVersion=2.3.2.RELEASE -d javaVersion=1.8 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web,data-jpa,mysql -d baseDir=azure-spring-workshop -d bootVersion=3.1.5.RELEASE -d javaVersion=17 | tar -xzvf -
 ```
 
 ### Configure Spring Boot to use Azure Database for MySQL

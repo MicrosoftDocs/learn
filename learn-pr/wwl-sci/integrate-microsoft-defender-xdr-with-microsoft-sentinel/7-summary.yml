@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.7-summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of integrating Microsoft Defender XDR and Microsoft Sentinel."
+  ms.date: 10/2/2024
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-summary.md)]

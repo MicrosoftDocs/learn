@@ -4,12 +4,4 @@ For example, resorts and casinos might combine data from previous customer visit
 
 Another example is the healthcare industry. There's an abundance of data in the healthcare industry, including patient records and insurance information. Because there's so much data, it can be difficult to manage. Data analytics allows for a thorough look at the data and can lead to a faster diagnosis or treatment plan.
 
-In this module, you'll explore the key elements involved in data analysis. You'll look at collecting data, processing data to generate information, and visualizing results to spot trends.
-
-## Learning objectives
-
-In this module you will:
-
-- Learn about data ingestion and processing
-- Explore data visualization
-- Explore data analytics
+In this module, you'll explore the key elements involved in data analysis. You'll look at collecting data, processing data to generate information, and visualizing results to spot trends. 

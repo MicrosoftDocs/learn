@@ -2,27 +2,30 @@
 uid: learn.azure.deploy-azure-resources-bicep.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: "Knowledge check"
   description: "Knowledge check"
-  ms.date: 01/06/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  ms.date: 01/31/2025
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   questions:
-  - content: What's the best way for the team to create a template that will deploy to both test and production environments?
+  - content: What's the best way for the team to create a template that deploys to both test and production environments?
     choices:
     - content: Create a template that deploys all of the resources for the manufacturing application. Add template parameters for the values that might change between environments.
       isCorrect: true
       explanation: Correct. Template parameters are a great way to manage multiple environments. You can specify different values for the parameters when you deploy the template into the test and production environments.
     - content: Create a module that deploys all of the resources for the manufacturing application. Create separate Bicep templates for each environment, and add the shared module to each environment's template.
       isCorrect: false
-      explanation: Incorrect. Modules can be a great way to reuse your Bicep code, but when you're deploying multiple environments, there's usually a simpler way to keep track of the different configuration for each deployment.
+      explanation: Incorrect. Modules can be a great way to reuse your Bicep code, but when you're deploying multiple environments, there's usually a simpler way to keep track of the different configurations for each deployment.
     - content: Create a template that deploys all of the resources required for the manufacturing application. Add variables for the values that might change between environments.
       isCorrect: false
       explanation: Incorrect. Variables have the same value, so you don't usually need to consider them when you deploy multiple environments.
@@ -33,21 +36,22 @@ quiz:
     choices:
     - content: Whoever deploys the template must specify a value for the `siteName` parameter.
       isCorrect: false
-      explanation: Incorrect. The `siteName` parameter has a _default value_ specified, which means that deployments don't have to specify the parameter value. If they don't, the parameter's default value will be used.
+      explanation: Incorrect. The `siteName` parameter has a _default value_ specified, which means that deployments don't have to specify the parameter value. If they don't, the parameter's default value is used.
     - content: The `siteName` parameter will have a different default value every time the template is deployed.
       isCorrect: false
-      explanation: Incorrect. The parameter's default value is set through the `uniqueString()` function, which has been seeded with the ID of the resource group. So the value that the `uniqueString()` function returns will be the same whenever the template is deployed in the same resource group in the same Azure subscription.
+      explanation: Incorrect. The parameter's default value is set through the `uniqueString()` function, which has been seeded with the resource group's ID. Therefore, the value that the `uniqueString()` function returns is the same whenever the template is deployed in the same resource group in the same Azure subscription.
     - content: When the template is deployed to the same resource group in the same subscription repeatedly, the `siteName` parameter's default value will be the same each time.
       isCorrect: true
-      explanation: Correct. The `siteName` parameter's default value uses string interpolation to combine the string prefix `mysite-` with a value from the `uniqueString()` function, which is seeded with the resource group ID. The value that the `uniqueString()` function returns will be the same whenever the template is deployed in the same resource group in the same Azure subscription.
+      explanation: Correct. The `siteName` parameter's default value uses string interpolation to combine the string prefix `mysite-` with a value from the `uniqueString()` function, which is seeded with the resource group ID. The value that the `uniqueString()` function returns is the same whenever the template is deployed in the same resource group in the same Azure subscription.
   - content: The Bicep template that the IT department wrote has two modules in it. Which of these statements is true?
     choices:
-    - content: If an output is added to one of the modules, it will automatically be published as an output from the parent template too.
+    - content: If an output is added to one of the modules, it's automatically published as an output from the parent template too.
       isCorrect: false
       explanation: Incorrect. Outputs that Bicep modules define are available to the parent template, but they aren't automatically available to the template deployer. However, you can define an output in your template and pass the value through.
     - content: If an output is added to one of the modules, it will automatically be available for the parent template to use.
       isCorrect: true
       explanation: Correct. The outputs from modules are automatically made available for the parent template to use, such as in defining input parameter values for other modules or in setting the properties on resources.
-    - content: Modules can't have outputs - only templates can.
+    - content: Modules can't have outputs; only templates can.
       isCorrect: false
       explanation: Incorrect. Modules can define outputs. The outputs from modules are automatically made available to the parent template.
+

@@ -28,7 +28,7 @@ To specify firewall rules:
 
 ## Create an Azure Synapse Analytics data warehouse login by using SQL Server Management Studio
 
-Azure Synapse Analytics supports two types of authentication to verify the identity of users who connect to it: SQL authentication and Azure Active Directory (Azure AD) authentication.
+Azure Synapse Analytics supports two types of authentication to verify the identity of users who connect to it: SQL authentication and Microsoft Entra authentication.
 
 With SQL authentication, users connect to the data warehouse by using a username/password combination. The Azure portal does not provide the ability to configure SQL authentication. To configure SQL authentication:
 
@@ -50,12 +50,12 @@ With SQL authentication, users connect to the data warehouse by using a username
 
    ![Screenshot of executing a login query.](../media/2-create-login-query.png)
 
-Azure Active Directory is a central location to manage identities for all Microsoft online and cloud services. Azure AD authentication is beyond the scope of this lesson. It broadly involves four steps:
+Microsoft Entra ID is a central location to manage identities for all Microsoft online and cloud services. Microsoft Entra authentication is beyond the scope of this lesson. It broadly involves four steps:
 
-1. Create and populate an Azure AD instance for your organization.
-1. Associate the newly created Azure AD instance with your Azure subscription.
-1. Create an Azure AD administrator for your data warehouse.
-1. Map database users to Azure AD identities.
+1. Create and populate a Microsoft Entra instance for your organization.
+1. Associate the newly created Microsoft Entra instance with your Azure subscription.
+1. Create a Microsoft Entra administrator for your data warehouse.
+1. Map database users to Microsoft Entra identities.
 
 ## Create a new Azure Synapse Analytics data warehouse user by using SQL Server Management Studio
 

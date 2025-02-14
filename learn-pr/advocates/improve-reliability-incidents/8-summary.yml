@@ -2,15 +2,17 @@
 uid: learn.improve-reliability-incidents.8-summary
 title: "Summary"
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Summary"
   description: "Summary"
-  ms.date: 05/07/2020
+  ms.date: 02/28/2024
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]
+

@@ -1,8 +1,8 @@
-You've successfully assessed the role of Azure Cosmos DB and Azure Blob Storage for storing IoT telemetry data. You've also explored the options for integrating your cloud-native applications with Azure Cosmos DB. You're confident that this integration allows you to extend the scope of your solution to incorporate IoT telemetry collected from smart appliances.
+You successfully assessed the role of Azure Cosmos DB and Azure Blob Storage for storing IoT telemetry data. You also explored the options for integrating your cloud-native applications with Azure Cosmos DB. You're confident that this integration allows you to extend the scope of your solution to incorporate IoT telemetry collected from smart appliances.
 
 In this module, you learned about the integration of IoT pipelines with a range of Azure services, including Azure Cosmos DB and Azure Blob Storage. You provisioned an Azure Cosmos DB account, set up an Azure IoT Central application, and used an Azure Function to process telemetry data and store it in a designated Cosmos DB container. You also accessed the content of that container by using a Next.js application.
 
-Now that you've completed this module, you should know more about how to:
+Now that you completed this module, you should know more about how to:
 
 * Create and configure an Azure Cosmos DB-based data store.
 * Implement Azure IoT Central-based telemetry processing by using Azure Functions.

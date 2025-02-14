@@ -3,15 +3,17 @@ uid: learn.build-app-with-scale-sets.install-update-applications-virtual-machine
 title: Install and update applications in Virtual Machine Scale Sets
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Install and update applications in Virtual Machine Scale Sets
   description: Install and update applications in Virtual Machine Scale Sets
-  ms.date: 04/11/2023
+  ms.date: 04/03/2024
   author: ju-shim
   ms.author: jushiman
   ms.reviewer: mimckitt
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 7
 content: |
   [!include[](includes/6-install-update-applications-virtual-machine-scale-sets.md)]
+

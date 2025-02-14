@@ -1,0 +1,5 @@
+Evaluating your generative AI apps is crucial for several reasons. First and foremost, it ensures quality assurance. By assessing your app's performance, you can identify and address any issues, ensuring that it provides accurate and relevant responses. High quality responses lead to improved user satisfaction. When users receive accurate and helpful responses, they're more likely to have a positive experience and continue using your application.
+
+Evaluation is also essential for continuous improvement. By analyzing the results of your evaluations, you can identify areas for enhancement and iteratively improve your app's performance. The ongoing process of evaluation and improvement helps you stay ahead of user needs and expectations, ensuring that your app remains effective and valuable.
+
+In this module, you learn how to use the Azure AI Foundry portal to evaluate your generative AI apps. While you explore some of the features of Azure AI Foundry, the focus is on understanding the importance of evaluation and how it can benefit your app development process.

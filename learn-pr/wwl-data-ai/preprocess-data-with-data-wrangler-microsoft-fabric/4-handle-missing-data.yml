@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric.handle-missing-data
+title: Handle missing data
+metadata:
+  title: Handle missing data
+  description: Learn how to handle missing data in Data Wrangler.
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 1/24/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-handle-missing-data.md)]

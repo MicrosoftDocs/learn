@@ -2,13 +2,14 @@
 uid: learn.reactors.introduction-machine-learning-models.4-linear-regression-fit-model
 title: 'Linear regression: Fitting the model'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Linear regression: Fitting the model'
   description: Learn how to fit models in linear regressions with machine learning models for data science.
   ms.date: 05/19/2020
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
+  ms.topic: unit
   ms.custom: team=nextgen
   show_latex: true
 durationInMinutes: 5

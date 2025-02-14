@@ -6,8 +6,7 @@ metadata:
   ms.date: 07/12/2022
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Prepare to teach SC-900 Microsoft Security, Compliance, and Identity Fundamentals in academic programs
 prerequisites: |
   - None
@@ -19,7 +18,7 @@ levels:
 roles:
 - higher-ed-educator
 products:
-- azure-security-center
+- defender-for-cloud
 subjects:
 - compliance
 - identity-access

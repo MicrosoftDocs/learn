@@ -4,7 +4,7 @@ During the application or project lifecycle, it's crucial to plan and prioritize
 
 Project boards are made up of issues, pull requests, and notes categorized as cards you can drag and drop into your chosen columns. The cards contain relevant metadata for issues and pull requests, like labels, assignees, the status, and who opened it.
 
-:::image type="content" source="../media/github-project-boards-board-80633bf7.png" alt-text="Screenshot of GitHub project boards feature.":::
+:::image type="content" source="../media/github-project-boards-board-80633bf7-417553f9-3d47d858.png" alt-text="Screenshot of GitHub project boards feature.":::
 
 
 There are different types of project boards:
@@ -28,7 +28,7 @@ For more information about Project boards, see:
 
  -  [Creating a project board](https://docs.github.com/articles/creating-a-project-board).
  -  [Editing a project board](https://docs.github.com/articles/editing-a-project-board).
- -  [Copying a project board](https://docs.github.com/articles/copying-a-project-board).
+ -  [Copying a project board](https://docs.github.com/issues/planning-and-tracking-with-projects/creating-projects/copying-an-existing-project).
  -  [Adding issues and pull requests to a project board](https://docs.github.com/articles/adding-issues-and-pull-requests-to-a-project-board).
  -  [Project board permissions for an organization](https://docs.github.com/articles/project-board-permissions-for-an-organization).
 
@@ -40,7 +40,7 @@ A project is a customizable spreadsheet in which you can configure the layout by
 
 You can use different views such as Board or spreadsheet/table.
 
-:::image type="content" source="../media/github-projects-beta-f72f1d6a.png" alt-text="Screenshot of GitHub project feature.":::
+:::image type="content" source="../media/github-projects-beta-f72f1d6a-9c3e8d4d-ac6cffd9.png" alt-text="Screenshot of GitHub project feature.":::
 
 
 If you change your pull request or issue, your project reflects that change.

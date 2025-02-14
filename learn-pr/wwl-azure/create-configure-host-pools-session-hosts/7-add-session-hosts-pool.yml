@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-host-pools-session-hosts.add-session-hosts-pool
+title: Add session hosts to a host pool
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Add session hosts to a host pool
+  description: "Add session hosts to a host pool"
+  ms.date: 08/22/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-add-session-hosts-pool.md)]

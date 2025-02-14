@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.deploy-azure-monitor-agent
+title: Deploy the Azure Monitor Agent
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Deploy the Azure Monitor Agent
+  description: "Deploy the Azure Monitor Agent"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 7
+content: |
+  [!include[](includes/13-deploy-azure-monitor-agent.md)]

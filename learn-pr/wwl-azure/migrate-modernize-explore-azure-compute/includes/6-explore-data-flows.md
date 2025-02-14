@@ -1,0 +1,11 @@
+Like bandwidth, the number of network connections present on a VM at any given time can affect its network performance. The Azure networking stack maintains state for each direction of a TCP/UDP connection in data structures called ‘flows’.
+
+A typical TCP/UDP connection has two flows created, one for the inbound and another for the outbound direction. Data transfer between endpoints requires creation of several flows in addition to the flows that perform the data transfer. Some examples are flows created for Domain Name System (DNS) resolution and flows created for load balancer health probes.
+
+Network virtual appliances (NVAs) such as gateways, proxies, and firewalls, have flows being created for connections terminated at the appliance and originated by the appliance. The Azure networking stack supports 250-K total network flows with good performance for VMs with eight CPU cores or more. The Azure networking stack supports 100-K total flows with good performance for VMs with less than eight CPU cores. Network performance degrades gracefully for flows past the good performance limits, up to a hard limit of 1M total flows (500-K inbound and 500-K outbound), after which further flows are dropped.
+
+Azure VMs are more agile than on-premises virtual machines. You can deploy and scale Azure VMs vertically on an as-needed basis, without investing in dedicated hardware. This makes Azure VMs suitable for scenarios that must accommodate dynamically changing workloads. Also, the ease of provisioning and deprovisioning makes Azure VMs ideal for proof-of-concept or development scenarios, where the need for compute resources is temporary.
+
+In each of these scenarios, you also benefit from the pricing model applicable to Azure VMs. When you run Azure VMs, you pay for the compute time on a per-second basis. The price for VMs is calculated based on their size, the operating system, and any licensed software installed on the VM. A running virtual machine requires allocation of Azure compute resources. Therefore, to avoid the corresponding charges whenever you'ren't using it, you should change its state to **Stopped (Deallocated)**.
+
+:::image type="content" source="../media/data-flows-between-2-virtual-machines-network-appliance-fa603621.png" alt-text="Diagram illustrating data flows between two virtual machines and a network appliance.":::

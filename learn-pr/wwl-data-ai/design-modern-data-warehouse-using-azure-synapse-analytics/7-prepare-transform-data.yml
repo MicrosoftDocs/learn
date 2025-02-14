@@ -2,15 +2,21 @@
 uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.prepare-transform-data-with
 title: Prepare and transform data with Azure Synapse Analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Prepare and transform data with Azure Synapse Analytics
   description: "Prepare and transform data with Azure Synapse Analytics"
-  ms.date: 08/15/2022
+  ms.date: 07/30/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
 azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/7-prepare-transform-data.md)]
+

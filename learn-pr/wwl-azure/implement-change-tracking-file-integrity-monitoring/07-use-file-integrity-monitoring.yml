@@ -4,11 +4,10 @@ title: Use File Integrity Monitoring
 metadata:
   title: Use File Integrity Monitoring
   description: "Use File Integrity Monitoring"
-  ms.date: 11/29/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 sandbox: false
 labModal: false
@@ -22,10 +21,10 @@ quiz:
     choices:
     - content: "The instructor selects **ENABLE** on the workspace to allow its use with File Integrity Monitoring."
       isCorrect: false
-      explanation: "That's incorrect. The instructor does perform this task, but first, he must upgrade the workspace."
+      explanation: "Incorrect. The instructor does perform this task, but first, he must upgrade the workspace."
     - content: "The instructor selects **Install agents** on the workspace to deploy agents to all the VMs associated with the workspace."
       isCorrect: false
-      explanation: "That's incorrect. Although agents must be installed, that process begins with upgrading the pricing tier."
-    - content: "The instructor selects **UPGRADE PLAN** on the workspace to change the workspace to Standard Tier pricing. Unless the workspace is on this pricing tier, it cannot be used for File Integrity Monitoring."
+      explanation: "Incorrect. Although agents must be installed, that process begins with upgrading the pricing tier."
+    - content: "The instructor selects **UPGRADE PLAN** on the workspace to change the workspace to Standard Tier pricing. Unless the workspace is on this pricing tier, it can't be used for File Integrity Monitoring."
       isCorrect: true
-      explanation: "That's correct. Both the Security Center and the Log Analytics workspace must be on Standard Tier pricing."
+      explanation: "Correct. Both the Security Center and the Log Analytics workspace must be on Standard Tier pricing."

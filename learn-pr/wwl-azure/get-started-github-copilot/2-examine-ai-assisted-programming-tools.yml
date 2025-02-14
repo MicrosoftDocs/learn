@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-github-copilot.examine-ai-assisted-programming-tools
+title: Examine AI tools from GitHub, OpenAI, and Microsoft
+metadata:
+  title: Examine AI tools from GitHub, OpenAI, and Microsoft
+  description: "Examine AI tools from GitHub, OpenAI, and Microsoft"
+  ms.date: 01/27/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  - ai-learning-hub
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-examine-ai-assisted-programming-tools.md)]

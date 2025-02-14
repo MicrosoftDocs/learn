@@ -2,13 +2,14 @@
 uid: learn.reactors.introduction-machine-learning-models.3-linear-regression-explore-data
 title: 'Linear regression: Data exploration'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Linear regression: Data exploration'
   description: Learn how to explore data in linear regressions with machine learning models for data science.
   ms.date: 05/19/2020
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |

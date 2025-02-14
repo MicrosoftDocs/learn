@@ -1,16 +1,16 @@
 You've learned how the Azure ExpressRoute service works, and how to connect your on-premises networks to the Microsoft cloud by using an ExpressRoute circuit. You've also learned about the different peering options available, and how to use a virtual network gateway to route requests between your on-premises network and the Microsoft cloud. 
 
-In this unit, you'll learn about the most common use cases for deploying ExpressRoute. You'll compare ExpressRoute to other connection options available for Azure, like site-to-site and point-to-site through a virtual network gateway. This information will help you determine whether ExpressRoute is the most appropriate solution for your organization.
+In this unit, we show you the most common use cases for deploying ExpressRoute. We also compare ExpressRoute to other connection options available for Azure, like site-to-site and point-to-site through a virtual network gateway. Together, this information helps you determine whether ExpressRoute is the most appropriate solution for your organization.
 
 ## When to use Azure ExpressRoute
 
 Consider using the Azure ExpressRoute service in the following scenarios:
 
-- Low-latency connectivity to services in the cloud. In these situations, eliminating or reducing the network overhead will have a significant impact on the performance of your applications.
+- Low-latency connectivity to services in the cloud. In these situations, eliminating or reducing the network overhead has a significant effect on the performance of your applications.
 - Accessing high-volume systems in the cloud that consume or produce massive volumes of data quickly. ExpressRoute can move data around rapidly, with high reliability.
 - Consuming Microsoft Cloud Services, such as Office 365 and Dynamics 365. ExpressRoute is especially useful if your organization has a large number of users who need to access these services concurrently.
-- Organizations that have migrated large-scale on-premises systems to Azure. Using ExpressRoute helps ensure that the results of the migrations are seamless for on-premises clients. They should notice no drop in performance. They might even experience some improvement if the previous on-premises systems were restricted by network bandwidth.
-- Situations where data should not traverse the public internet for security reasons.
+- Organizations that have migrated large-scale on-premises systems to Azure. Using ExpressRoute helps ensure that the results of the migrations are seamless for on-premises clients. Organizations should notice no drop in performance. They might even experience some improvement if network bandwidth restricted their previous on-premises systems.
+- Situations where data shouldn't traverse the public internet for security reasons.
 - Large datacenters, with a high number of users and systems accessing SaaS offerings.
 
 ## Benefits of using ExpressRoute
@@ -33,9 +33,9 @@ With ExpressRoute, you can obtain speeds of up to 10 Gbps when connecting to the
 
 Microsoft guarantees a minimum of 99.95 percent availability for an ExpressRoute dedicated circuit.
 
-With ExpressRoute enabled, you can connect to Microsoft through one of several peering connections and have access to regions within the same geopolitical region. For example, if you connect to Microsoft through ExpressRoute in France, you'll have access to all Microsoft services hosted in Western Europe.
+With ExpressRoute enabled, you can connect to Microsoft through one of several peering connections and have access to regions within the same geopolitical region. For example, if you connect to Microsoft through ExpressRoute in France, you have access to all Microsoft services hosted in Western Europe.
 
-You can also enable ExpressRoute Premium, which provides cross-region accessibility. For example, if you access Microsoft through ExpressRoute in Germany, you'll have access to all Microsoft cloud services in all regions globally.
+You can also enable ExpressRoute Premium, which provides cross-region accessibility. For example, if you access Microsoft through ExpressRoute in Germany, you have access to all Microsoft cloud services in all regions globally.
 
 You can also take advantage of a feature called ExpressRoute Global Reach. It allows you to exchange data across all of your on-premises datacenters by connecting all of your ExpressRoute circuits.
 
@@ -45,7 +45,7 @@ ExpressRoute is one of three solutions that you can use to connect your on-premi
 
 ### Site-to-site VPN
 
-An Azure site-to-site VPN connection allows you to connect your on-premises network to Azure over an IPsec tunnel to build a hybrid network solution. You'd configure an on-premises VPN device with a public IP address. You'd connect this device to an Azure virtual network through an Azure virtual network gateway.
+An Azure site-to-site VPN connection allows you to connect your on-premises network to Azure over an IPsec tunnel to build a hybrid network solution. You configure an on-premises VPN device with a public IP address. Then, you connect this device to an Azure virtual network through an Azure virtual network gateway.
 
 ### Point-to-site VPN
 

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel
+metadata:
+  title: Integrate Microsoft Defender XDR with Microsoft Sentinel
+  description: "In this module, you learn how to integrate Microsoft Defender XDR with Microsoft Sentinel."
+  ms.date: 10/2/2024
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: module
+  ms.collection: wwl-ai-copilot
+  ai-usage: ai-assisted
+  ms.service: defender-xdr
+title: Integrate Microsoft Defender XDR with Microsoft Sentinel
+summary: "In this module, you learn about the Unified Security Operations Platform that integrates Microsoft Defender XDR with Microsoft Sentinel."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand the differences between Microsoft Sentinel capabilities in Azure and Defender portals
+    - Know the prerequisites for integrating Microsoft Defender XDR with Microsoft Sentinel
+    - Connect a Microsoft Sentinel workspace to Microsoft Defender XDR
+prerequisites: |
+  - Familiarity with security operations in an organization
+  - Experience installing and configuring Microsoft Sentinel services
+  - Experience with using and navigating the Microsoft Defender portal
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - security-operations-analyst
+products:
+  - microsoft-sentinel
+  - defender-xdr
+subjects: 
+  - security
+  - threat-protection
+  - cloud-security
+units:
+- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.1-introduction
+- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.2-benefits-of-integration
+- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.3-capability-differences-between-portals
+- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.4-onboarding-sentinel-to-defender-xdr
+- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.5-exploring-sentinel-features-in-defender-xdr
+- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.6-knowledge-check
+- learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.7-summary
+badge:
+  uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.badge

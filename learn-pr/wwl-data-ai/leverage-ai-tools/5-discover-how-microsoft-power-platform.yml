@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.discover-how-microsoft-power-platform
+title: Use Microsoft Power Platform to bring AI to your business
+metadata:
+  title: Use Microsoft Power Platform to bring AI to your business
+  description: "Use Microsoft Power Platform to bring AI to your business"
+  ms.date: 02/13/2025
+  author: Adriamen
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-discover-how-microsoft-power-platform.md)]

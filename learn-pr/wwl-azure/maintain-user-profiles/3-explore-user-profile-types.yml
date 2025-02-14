@@ -4,10 +4,10 @@ title: Explore user profile types
 metadata:
   title: Explore user profile types
   description: "This unit explores the user profile types."
-  ms.date: 03/14/2023
+  ms.date: 05/24/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/3-explore-user-profile-types.md)]

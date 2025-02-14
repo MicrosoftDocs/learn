@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.fundamentals-of-ai-security.ai-jailbreaking
+title: AI jailbreaking
+metadata:
+  title: AI jailbreaking
+  description: AI jailbreaking concepts
+  ms.date: 07/17/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-ai-jailbreaking.md)]

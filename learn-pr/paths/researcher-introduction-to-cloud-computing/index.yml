@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/28/2021
   author: MaximRouiller
   ms.author: marouill
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: "Azure for Researchers part 1: Introduction to Cloud Computing"
 summary: |
   When you're working on research projects, it is helpful to have a basic understanding of cloud computing concepts. In this learning path, you'll study the general terminology and services that of cloud computing, which should be useful to you when you’re working on research tasks. You'll learn how to create virtual machine and how to use it, and how to pick the best storage solution to persist your data.
@@ -39,12 +38,7 @@ subjects:
 - cloud-computing
 - storage
 modules:
-- learn.azure.intro-to-azure-fundamentals
-- learn.azure.azure-architecture-fundamentals
-- learn.azure.azure-database-fundamentals
-- learn.azure.azure-compute-fundamentals
 - learn.introduction-to-azure-virtual-machines
-- learn.azure.azure-storage-fundamentals
 - learn.choose-storage-approach-in-azure
 - learn.create-azure-storage-account
 - learn.choose-the-right-disk-storage-for-vm-workload

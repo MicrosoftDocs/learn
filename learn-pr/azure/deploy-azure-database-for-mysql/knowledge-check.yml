@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-azure-database-for-mysql.knowledge-check
+title: Knowledge check
+
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: Check your knowledge.
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: unit
+  ms.custom: event-tier1-build-2022
+  ms.date: 08/21/2024
+
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+ 
+  - content: "Which Azure VM SKU does the Burstable compute tier of the Azure Database for MySQL - Flexible Server use?"
+    choices:
+    - content: "Standard_Bs"
+      isCorrect: true
+      explanation: "The Burstable compute tier uses the Standard_Bs VM SKU."
+    - content: "Standard_Dds_v4"
+      isCorrect: false
+      explanation: "Standard_Dds_v4 VM SKU is used by the General Purpose compute tier."
+    - content: "Standard_Eds_v4"
+      isCorrect: false
+      explanation: "Standard_Eds_v4 VM SKU is used by the Memory Optimized compute tier."
+ 
+  - content: "Which architecture model provides the maximum high availability that Azure Database for MySQL - Flexible Server supports?"
+    choices:
+    - content: "The primary and standby replica servers deployed into the same availability set"
+      isCorrect: false
+      explanation: "Azure Database for MySQL - Flexible Server uses availability zones, not availability sets to maximize high availability."
+    - content: "The primary and standby replica servers deployed into different zones in the same region"
+      isCorrect: true
+      explanation: "Azure Database for MySQL - Flexible Server uses availability zones to maximize high availability."
+    - content: "The primary and standby replica servers deployed into different regions"
+      isCorrect: false
+      explanation: "Azure Database for MySQL - Flexible Server uses availability zones, not cross-region deployments, to maximize high availability."
+ 
+  - content: "Which of the following is a Graphical User Interface (GUI) client tool that allows you to connect to Azure Database for MySQL using Microsoft Entra ID authentication?"
+    choices:
+    - content: "MySQL Workbench"
+      isCorrect: false
+      explanation: "MySQL Workbench does not readily allow you to connect to Azure Database for MySQL using Microsoft Entra ID authentication. You are required to acquire a Microsoft Entra ID token first, and then serve it as the password."
+    - content: "Azure Data Studio"
+      isCorrect: true
+      explanation: "Azure Data Studio is a GUI client tool that allows you to connect to Azure Database for MySQL using Microsoft Entra ID authentication."
+    - content: "Azure CLI"
+      isCorrect: false
+      explanation: "Azure CLI is not a GUI client tool."
+
+  - content: "Which outbound TCP port must be opened from an on-premises location to connect to the Azure Database for MySQL - Flexible Server public endpoint?"
+    choices:
+    - content: "443"
+      isCorrect: false
+      explanation: "TCP port 443 is used to connect to Azure App Service over TLS."
+    - content: "1433"
+      isCorrect: false
+      explanation: "TCP port 1433 is used to connect to Azure SQL Database."
+    - content: "3306"
+      isCorrect: true
+      explanation: "To connect to the Azure Database for MySQL - Flexible Server public endpoint, you must open the outbound TCP port 3306."
+
