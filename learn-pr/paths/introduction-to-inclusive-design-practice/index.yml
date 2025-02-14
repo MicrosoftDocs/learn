@@ -41,6 +41,7 @@ subjects:
 modules:
 - learn.cela-accessibility.develop-keyboard-accessible-products
 - learn.cela-accessibility.develop-products-with-screen-reader-support
+- learn.develop-accessible-resize-reflow
 
 trophy:
   uid: learn.intro-to-inclusive-design-practice.trophy
