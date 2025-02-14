@@ -17,4 +17,4 @@ The compliance dashboard gives you a view of your overall compliance standing. S
 From the compliance dashboard, you're able to manage all of your compliance requirements for your cloud deployments, including automatic, manual, and shared responsibilities.
 
 > [!NOTE]
-> Shared responsibilities is only compatible with Azure.
+> Shared responsibilities are only compatible with Azure.

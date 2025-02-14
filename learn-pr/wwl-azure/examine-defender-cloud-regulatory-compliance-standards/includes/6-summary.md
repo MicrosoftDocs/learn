@@ -1,1 +1,1 @@
-In this module, you learned to use Microsoft Defender for Cloud to streamline regulatory compliance by managing compliance controls, identifying standards, leveraging the compliance dashboard, and conducting assessments to generate detailed compliance reports.
+In this module, you learned for using Microsoft Defender for Cloud to streamline regulatory compliance by managing compliance controls, identifying standards, leveraging the compliance dashboard, and conducting assessments to generate detailed compliance reports.
