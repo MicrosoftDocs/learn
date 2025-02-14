@@ -32,7 +32,7 @@ The `IJSRuntime` interface exposes the <xref:Microsoft.JSInterop.IJSRuntime.Invo
 The parameter to the `InvokeAsync` or `InvokeVoidAsync` method is the name of the JavaScript function to invoke, followed by any arguments the function requires. The JavaScript function must be part of the `window` scope or a subscope of `window`. Arguments must be JSON-serializable.
 
 > [!NOTE]
-> JS interop is available only when the Blazor Server app has established a SignalR connection with the browser. You can't make interop calls until rendering is complete. To detect whether rendering has finished, use the <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender%2A> or <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync%2A> event in your Blazor code.
+> JS interop is available only when a SignalR connection is established between the Blazor Server app and the browser. You can't make interop calls until rendering is complete. To detect whether rendering is finished, use the <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender%2A> or <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync%2A> event in your Blazor code.
 
 ### Use an ElementReference object to update the DOM
 
