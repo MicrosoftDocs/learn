@@ -8,6 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaoer
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/3-explore-prompting.md)]
