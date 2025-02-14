@@ -1,1 +1,1 @@
-In this module, you learned to identify regulatory compliance issues, manage and assess compliance standards in Microsoft Defender for Cloud, utilize the compliance dashboard, and integrate compliance data with Microsoft Purview Compliance Manager.
+In this module, you learned to use Microsoft Defender for Cloud to streamline regulatory compliance by managing compliance controls, identifying standards, leveraging the compliance dashboard, and conducting assessments to generate detailed compliance reports.
