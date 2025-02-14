@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.cela-accessibility.accessibility-design-specs-with-annotations.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
   title: Knowledge Check
   description: This is the knowledge check for the accessibility design specs with annotations module.
@@ -16,16 +16,16 @@ quiz:
     choices:
     - content: To make designs look more colorful
       isCorrect: false
-      explanation: Incorrect. While enhancing visual appeal, providing information about the design process, and documenting the process are important, accessibility annotations specifically focus on making the design accessible to everyone.
+      explanation: Incorrect. It's important to enhance visual appeal, provide information about the design process, and document the process. However, accessibility annotations specifically focus on making the design accessible to everyone.
     - content: To ensure designs can be used  by all users, including those with disabilities
       isCorrect: true
       explanation: Correct. The primary purpose of annotating design mockups for accessibility is to ensure that designs are usable by all users, including those with disabilities.
     - content: To provide additional information about the design process
       isCorrect: false
-      explanation: Incorrect. While enhancing visual appeal, providing information about the design process, and documenting the process are important, accessibility annotations specifically focus on making the design accessible to everyone.
+      explanation: Incorrect. It's important to enhance visual appeal, provide information about the design process, and document the process. However, accessibility annotations specifically focus on making the design accessible to everyone.
     - content: To document the design process
       isCorrect: false
-      explanation: Incorrect. While enhancing visual appeal, providing information about the design process, and documenting the process are important, accessibility annotations specifically focus on making the design accessible to everyone.
+      explanation: Incorrect. It's important to enhance visual appeal, provide information about the design process, and document the process. However, accessibility annotations specifically focus on making the design accessible to everyone.
 
   - content: Which of the following is a critical consideration when implementing keyboard navigation in designs?
     choices:

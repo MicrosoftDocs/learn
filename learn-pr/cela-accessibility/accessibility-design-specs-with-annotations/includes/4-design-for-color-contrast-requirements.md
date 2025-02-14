@@ -4,7 +4,7 @@ You should design to meet the minimum color contrast requirement for text and no
 
 #### Windows high contrast
 
-Windows high contrast is different than dark mode. It uses semantic color slots, i.e., each color has a meaning. For for example, In Aquatic theme, ackground color is black, selected text is blue gray with blue-turquoise background. We generally don't need to mark up or create a high contrast spec for standard components but for custom components we need to spec them out.
+Windows high contrast is different than dark mode. It uses semantic color slots, i.e., each color has a meaning. For for example, In Aquatic theme, background color is black, selected text is blue gray with blue-turquoise background. We generally don't need to mark up or create a high contrast spec for standard components but for custom components we need to spec them out.
 
 :::image type="content" source="../media/windows-high-contrast.png" alt-text="Screenshot of showing windows contrast settings that user can select or edit. Currently showing aquatic theme with background as white rectangle, Text with white color, hyperlink with cyan, inactive text with grey, selected text with cyan and button with white text and white border. Two buttons appearing at bottom as disabled save and cancel." lightbox="../media/windows-high-contrast.png":::
 
@@ -30,7 +30,7 @@ Finally, we add break point designs to ensure the design supports reflow, making
 
 One of the most effective ways to assist users with low vision is by developing a responsive design with functional breakpoints across all devices. This involves creating style sets tailored to various viewport sizes and using media queries to apply the right styles to the corresponding device dimensions. 
 
-Firstly, when testing your design drawings reduce your artboard size to 320x256. Utilizing auto layout istremendously beneficial in this process. It's crucial to avoid using groups and unstructured frames, as they can complicate things. Additionally, consider implementing out a responsive relay if feasible. The translation between larger screens and this smaller size should be straightforward, without rearranging the order of elements or shifting them to the opposite side of the layout.
+Firstly, when testing your design drawings reduce your artboard size to 320x256. Utilizing auto layout is tremendously beneficial in this process. It's crucial to avoid using groups and unstructured frames, as they can complicate things. Additionally, consider implementing out a responsive relay if feasible. The translation between larger screens and this smaller size should be straightforward, without rearranging the order of elements or shifting them to the opposite side of the layout.
 
 :::image type="content" source="../media/reflow-zoom-accessibility-annotation.png" alt-text="Screenshot of various viewport sizes of Teach Access’ website using media queries. From left to right: @media max-width: 768px, @media max-width: 660px, and @media max-width 360 on a mobile device." lightbox="../media/reflow-zoom-accessibility-annotation.png":::
 
