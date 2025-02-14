@@ -46,7 +46,7 @@ When planning an AI solution built on Azure AI Foundry, there are some additiona
 
 ### Hub and project organization
 
-Plan your hub and project organization for the most effective management of resources and efficiency of administration. Use Hubs to centralize management of users and shared resources that are involved in related projects, and then add project-specific resources as necessary. For example, and organization might have separate software development teams for each area of the business, so it may make sense to create separate hubs for each business area (such as Marketing, HR, and so on) in which AI application development projects for each business area can be created. The shared resources in each hub will automatically be available in projects created in those hubs.
+Plan your hub and project organization for the most effective management of resources and efficiency of administration. Use Hubs to centralize management of users and shared resources that are involved in related projects, and then add project-specific resources as necessary. For example, an organization might have separate software development teams for each area of the business, so it may make sense to create separate hubs for each business area (such as Marketing, HR, and so on) in which AI application development projects for each business area can be created. The shared resources in each hub will automatically be available in projects created in those hubs.
 
 > [!TIP]
 > For more information about hubs and projects, see **[Manage, collaborate, and organize with hubs](/azure/ai-studio/concepts/ai-resources?azure-portal=true)**.
