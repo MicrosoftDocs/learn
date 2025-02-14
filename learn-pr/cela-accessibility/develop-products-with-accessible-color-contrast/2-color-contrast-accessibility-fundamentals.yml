@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.develop-products-with-accessible-color-contrast.color-contrast-accessibility-fundamentals
+title: Color and contrast accessibility fundamentals
+metadata:
+  title: Color and contrast accessibility fundamentals
+  description: This unit is a part of the Develop products with accessible color and contrast module.
+  ms.date: 02/12/2025
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-color-contrast-accessibility-fundamentals.md)]
