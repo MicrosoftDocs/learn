@@ -5,7 +5,7 @@ metadata:
   description: Learn about the security controls that Azure Synapse Analytics provides to help secure your data warehouse infrastructure and the data that's stored in it
   ms.date: 01/31/2019
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: anrudduc
   ms.topic: module
 title: Data warehouse security
 summary: Learn about the security controls that Azure Synapse Analytics provides to help secure your data warehouse infrastructure and the data that's stored in it.
