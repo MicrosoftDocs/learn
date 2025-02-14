@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-agent-fundamentals.what-are-ai-agents
+title: What are AI agents?
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: What are AI agents?
+  description: AI agents have the potential to radically change how we accomplish tasks - but what are they?
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 02/12/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-are-agents.md)]
+

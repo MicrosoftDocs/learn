@@ -4,10 +4,12 @@ title: Define a method with an interface as a parameter
 metadata:
   title: Define a method with an interface as a parameter
   description: "Define a method with an interface as parameter in C# code."
-  ms.date: 02/13/2025
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/3-define-method-interface-parameter.md)]

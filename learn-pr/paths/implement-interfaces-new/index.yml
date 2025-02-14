@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-interfaces-new
+metadata:
+  title: Implement interfaces
+  description: Implement interfaces
+  ms.date: 02/14/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: learning-path
+title: Implement interfaces
+prerequisites: |
+  - Visual Studio Code installed with the C# Dev Kit.
+  - Basic knowledge of the Visual Studio Code IDE.
+  - Basic understanding of the C# programming language.
+  - Familiarity with classes.
+summary: |
+  Discover how mastering interfaces can enhance your coding skills, promote flexibility, and reduce dependencies. This training will empower you to write more resilient and maintainable code.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+subjects:
+- app-development
+modules:
+- learn.wwl.discover-interfaces
+- learn.wwl.apply-interfaces-code
+trophy:
+  uid: learn.wwl.implement-interfaces-new.trophy
