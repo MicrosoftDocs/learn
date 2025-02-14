@@ -2,3 +2,4 @@
 
 - Personalize fill-in-the-blank prompts with goals / timelines / topics / specifics in Copilot
 - Use **Think Deeper** to expand on the prompt results.
+- ITERATION
