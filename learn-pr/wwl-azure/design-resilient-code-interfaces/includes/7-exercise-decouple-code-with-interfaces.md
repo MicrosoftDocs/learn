@@ -1,7 +1,7 @@
 This exercise guides you through the process of creating resilient code with interfaces in C#.
 
 > [!IMPORTANT]
-> This exercise requires a Visual Studio Code environment with the C# Dev Kit extension installed. For help with configuring the Visual Studio Code environment, see [https://learn.microsoft.com/training/modules/install-configure-visual-studio-code/](/training/modules/install-configure-visual-studio-code/).
+> This exercise requires a Visual Studio Code environment with the C# Dev Kit extension installed. For help with configuring the Visual Studio Code environment, see [Install and configure Visual Studio Code for C# development](/training/modules/install-configure-visual-studio-code/).
 
 When you select the launch exercise button, you're navigated to a public GitHub page that provides instructions for this exercise.
 

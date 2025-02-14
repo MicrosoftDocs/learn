@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "WWhich solloution allows access for explicit interface members in C#?"
+  - content: "Which solution allows access for explicit interface members in C#?"
     choices:
     - content: "By casting the class instance to the interface type."
       isCorrect: true
