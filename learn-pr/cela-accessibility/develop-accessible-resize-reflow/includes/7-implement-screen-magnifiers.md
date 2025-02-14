@@ -106,9 +106,9 @@ Alternatively, you can use **`display: grid`** for table-like layout capabilitie
 | --- | --- |
 | `.buttoncontainer {`<br>`display: grid;`<br>`grid-template-columns: 1fr 1fr;`<br>`grid-template-rows: 1fr;`<br>`column-gap: 10px;`<br>`}`<br><br>`.button {`<br>`grid-row-start: 1;`<br>`grid-row-end: 2;`<br>`justify-self: stretch;`<br>`}`<br><br>`.button1 {`<br>`grid-column-start: 1;`<br>`grid-column-end: 2;`<br>`}`<br><br>`.button2 {`<br>`grid-column-start: 2;`<br>`grid-column-end: 3;`<br>`}` | `@media all and (max-width: 18rem) {`<br>` .buttoncontainer {`<br>` grid-template-columns: 1fr;`<br>` grid-template-rows: 1fr 1fr;`<br>` row-gap: 10px;`<br>` }`<br><br>` .button {`<br>` grid-column-start: 1;`<br>` grid-column-end: 2;`<br>` }`<br><br>` .button1 {`<br>` grid-row-start: 1;`<br>` grid-row-end: 2;`<br>` }`<br><br>` .button2 {`<br>` grid-row-start: 2;`<br>` grid-row-end: 3;`<br>` }`<br>`}` |
 
-### Dos and Don'ts for Reflow
+### Do's and Don'ts for Reflow
 
-Here are some dos and don'ts for reflow:
+Here are some do's and don'ts for reflow:
 
 - Do use **max-width** to make elements shrink to fit the container's width.
 - Do use **auto** to make containers grow to fit their content, scale images proportionally, and center elements with equal margins.

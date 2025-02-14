@@ -17,7 +17,7 @@ In this section we will focus on some assistive technologies for people with low
 - **High-contrast modes**: These settings enhance the contrast between text and background colors, often employing dark backgrounds with bright text, which makes the text easier to see and read.
 - **Braille displays**: These specialized devices convert text displayed on a screen into refreshable Braille that can be felt with the fingers, enabling individuals who are blind or have very low vision to read by touch.
 - **Customizable keyboard shortcuts**: These shortcuts allow users to perform tasks such as opening applications or navigating through documents using the keyboard instead of a mouse, making it quicker and easier for those who struggle to see the mouse pointer.
-- **Color filters**: These tools modify the colors on the screen to assist individuals who have difficulty distinguishing certain colors, such as those who are colorblind. For instance, the filter may transform everything into shades of gray or enhance colors that are hard to differentiate.
+- **Color filters**: These tools modify the colors on the screen to assist individuals who have difficulty distinguishing certain colors, such as those who are color-blind. For instance, the filter may transform everything into shades of gray or enhance colors that are hard to differentiate.
 
 ### Resources
 

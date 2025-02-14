@@ -3,7 +3,7 @@ In this module, you delved into accessibility considerations for resize and refl
 Make sure to gather all applicable notes, save any resources you want to reference and reflect on what was learned about this topic.
 
 - Use flexible grids, fluid images, and media queries to ensure content adapts to different screen sizes and orientations.
-- Utilize relative units like **ems** and **rems** for font sizes and include the viewport meta tag to control layout on mobile browsers.
+- Utilize relative units like **em** and **rem** for font sizes and include the viewport meta tag to control layout on mobile browsers.
 - Ensure focus indicators are high contrast and consistently styled to help users navigate content using keyboards or assistive technologies.
 - Expose focus, text insertion points, and selections to make content navigable and interactive for all users.
 - Test content on various devices with screen readers and conduct user testing with individuals with disabilities to ensure accessibility.
