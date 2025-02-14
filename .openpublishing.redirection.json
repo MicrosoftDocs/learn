@@ -43184,6 +43184,11 @@
       "source_path": "learn-pr/wwl-azure/configure-virtual-machine-availability/13-summary-resources.md",
       "redirect_url": "/training/modules/configure-virtual-machine-availability/12-summary-resources",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/fundamentals-machine-learning/10-exercise-auto-ml.md",
+      "redirect_url": "/training/modules/fundamentals-machine-learning/10-exercise-auto-machine-learning",
+      "redirect_document_id": false
     }
   ]
 }
