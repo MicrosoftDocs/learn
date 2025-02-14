@@ -1,6 +1,6 @@
 During the design phase, it is essential to prioritize accessibility from the outset. Key considerations include ensuring adequate contrast ratios, avoiding the use of color as the sole method of conveying information, designing with high-contrast modes for users with visual impairments, and testing for accessibility throughout the development process with both automated and manual tools.
 
-## Use of Color
+## Use of color
 
 Here are some techniques to make sure your design is perceivable and distinguishable. If you use color to convey information through specific words, backgrounds, or other content:
 
@@ -40,7 +40,7 @@ Finally, use color combinations that are easily distinguishable for users with c
 
 :::image type="content" source="../media/color-contrast-accessible-color-combinations-white.png" alt-text="Screenshot of the sixth combination shows dark and  black text on light and white background." lightbox="../media/color-contrast-accessible-color-combinations-white.png":::
 
-### Color Design Resources
+### Color design resources
 
 - [How to Use Color Blind Friendly Palettes in Your Design](https://venngage.com/blog/color-blind-friendly-palette/)
 
@@ -75,7 +75,7 @@ Controls with low contrast are harder to see and might be missed by people with 
 :::image type="content" source="../media/color-contrast-comparison-chart-good-bad.png" alt-text="Screenshot of the image contains another color contrast  comparison chart, but this time, it includes good and bad contrast pairs." lightbox="../media/color-contrast-comparison-chart-good-bad.png":::
  
 
-### Contrast Design Resources
+### Contrast design resources
 
 - [G18: Ensuring That a Contrast Ratio of at Least 4.5:1 Exists Between Text (and Images of Text) and Background Behind the Text](https://www.w3.org/WAI/WCAG21/Techniques/general/G18) [G174: Providing a Control With a Sufficient Contrast Ratio That Allows Users to Switch to a Presentation That Uses Sufficient Contrast](https://www.w3.org/WAI/WCAG21/Techniques/general/G174) 
 

@@ -8,7 +8,7 @@ Make sure to gather all applicable notes, save any resources you want to referen
 
 - Apply accessibility principles consistently from design through testing.
 
-- Leverage high-contrast modes to enhance accessibility for users with visual impairments.
+- Apply high-contrast modes to enhance accessibility for users with visual impairments.
 
 - Use both automated and manual tools to test and verify color contrast accessibility.
 
@@ -18,7 +18,7 @@ This module was developed in collaboration with [Teach Access](https://teachacce
 
 ##  References
 
-- Balkhi, I. (2020, February 19). *How to design for color blindness: 8 tips to make your graphics more accessible*. Venngage. https://venngage.com/blog/color-blind-friendly-palette/
+- Balkhi, I. (2020 February 19). *How to design for color blindness: Eight tips to make your graphics more accessible*. Venngage. https://venngage.com/blog/color-blind-friendly-palette/
 
 - Figma. (n.d.). *Axe for designers: A free accessibility plugin*. Figma. https://www.figma.com/community/plugin/1085612091163821851/axe-for-designers-a-free-accessibility-plugin
 
@@ -26,4 +26,4 @@ This module was developed in collaboration with [Teach Access](https://teachacce
 
 - TPGi. (n.d.). *Color contrast checker*. TPGi. https://www.tpgi.com/color-contrast-checker/
 
-- Walter, S. (2023, July 12). *How to check and document design accessibility in your Figma mockups*. Stephanie Walter. https://stephaniewalter.design/blog/how-to-check-and-document-design-accessibility-in-your-figma-mockups/
+- Walter, S. (2023 July 12). *How to check and document design accessibility in your Figma mockups*. Stephanie Walter. https://stephaniewalter.design/blog/how-to-check-and-document-design-accessibility-in-your-figma-mockups/

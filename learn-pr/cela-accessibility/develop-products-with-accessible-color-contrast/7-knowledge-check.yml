@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cela-accessibility.develop-products-with-accessible-color-contrast.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: This is the knowledge check for the develop products with accessible color and contrast module.
+  title: Knowledge check
+  description: This is the knowledge check for the developed products with accessible color and contrast module.
   ms.date: 02/12/2025
   author: erzelman
   ms.author: erzelman
@@ -14,12 +14,12 @@ quiz:
   questions:
   - content: Why are color and contrast important in accessible design?
     choices:
-    - content: To make designs look more colorful
+    - content: To make designs, look more colorful
       isCorrect: false
       explanation: Incorrect. Accessible design prioritizes usability and inclusivity, ensuring text and elements are distinguishable for all users, especially those with visual impairments. Aesthetic choices, trends, or simplifying colors are secondary to this goal.
     - content: To ensure text and elements are distinguishable and readable for all users
       isCorrect: true
-      explanation: Correct. Ensuring proper color and contrast is essential in accessible design to help all users, including those with visual impairments, distinguish and read text and elements effectively. This improves usability for everyone. 
+      explanation: Correct. Ensuring proper color and contrast is essential in accessible design to help all users, including those with visual impairments, distinguish, and read text and elements effectively. This improves usability for everyone. 
     - content: To follow the latest design trends
       isCorrect: false
       explanation: Incorrect. Accessible design prioritizes usability and inclusivity, ensuring text and elements are distinguishable for all users, especially those with visual impairments. Aesthetic choices, trends, or simplifying colors are secondary to this goal.
@@ -34,7 +34,7 @@ quiz:
       explanation: Incorrect. Some of these contrast ratios, like 3:1 and 7:1, are important in certain situations but don't meet the minimum requirement for normal text. The 3:1 ratio is only for large text, and 7:1 is part of stricter guidelines. A ratio of 2:1 is much too low and doesn't meet any WCAG standards for making text readable.
     - content: "4.5:1"
       isCorrect: true
-      explanation: Correct. WCAG Success Criterion 1.4.3 requires a minimum contrast ratio of 4.5:1 for normal text to ensure it is readable for users with visual impairments, such as low vision or color blindness.
+      explanation: Correct. WCAG Success Criterion 1.4.3 requires a minimum contrast ratio of 4.5:1 for normal text to ensure it's readable for users with visual impairments, such as low vision or color blindness.
     - content: "7:1"
       isCorrect: false
       explanation: Incorrect. Some of these contrast ratios, like 3:1 and 7:1, are important in certain situations but don't meet the minimum requirement for normal text. The 3:1 ratio is only for large text, and 7:1 is part of stricter guidelines. A ratio of 2:1 is much too low and doesn't meet any WCAG standards for making text readable.
@@ -46,31 +46,31 @@ quiz:
     choices:
     - content: Adobe Photoshop
       isCorrect: false
-      explanation: Incorrect. Adobe Photoshop, Adobe Captivate, and Microsoft Excel are not the right tools for checking color contrast on web pages. Photoshop can show color values, but it's not made for accessibility testing. Captivate and Excel are used for creating content, not for testing accessibility. For accurate color contrast testing, you should use tools like Microsoft Accessibility Insights, which are built for this purpose.
+      explanation: Incorrect. Adobe Photoshop, Adobe Captivate, and Microsoft Excel aren't the right tools for checking color contrast on web pages. Photoshop can show color values, but it's not made for accessibility testing. Captivate and Excel are used for creating content, not for testing accessibility. For accurate color contrast testing, you should use tools like Microsoft Accessibility Insights, which are built for this purpose.
     - content: Microsoft Accessibility Insights
       isCorrect: true
       explanation: Correct. Microsoft Accessibility Insights has a contrast analyzer tool designed to help developers inspect color contrast on a webpage.
     - content: Adobe Captivate
       isCorrect: false
-      explanation: Incorrect. Adobe Photoshop, Adobe Captivate, and Microsoft Excel are not the right tools for checking color contrast on web pages. Photoshop can show color values, but it's not made for accessibility testing. Captivate and Excel are used for creating content, not for testing accessibility. For accurate color contrast testing, you should use tools like Microsoft Accessibility Insights, which are built for this purpose.
+      explanation: Incorrect. Adobe Photoshop, Adobe Captivate, and Microsoft Excel aren't the right tools for checking color contrast on web pages. Photoshop can show color values, but it's not made for accessibility testing. Captivate and Excel are used for creating content, not for testing accessibility. For accurate color contrast testing, you should use tools like Microsoft Accessibility Insights, which are built for this purpose.
     - content: Microsoft Excel
       isCorrect: false
-      explanation: Incorrect. Adobe Photoshop, Adobe Captivate, and Microsoft Excel are not the right tools for checking color contrast on web pages. Photoshop can show color values, but it's not made for accessibility testing. Captivate and Excel are used for creating content, not for testing accessibility. For accurate color contrast testing, you should use tools like Microsoft Accessibility Insights, which are built for this purpose.
+      explanation: Incorrect. Adobe Photoshop, Adobe Captivate, and Microsoft Excel aren't the right tools for checking color contrast on web pages. Photoshop can show color values, but it's not made for accessibility testing. Captivate and Excel are used for creating content, not for testing accessibility. For accurate color contrast testing, you should use tools like Microsoft Accessibility Insights, which are built for this purpose.
 
   - content: What is a key consideration to ensure accessibility in color and contrast?
     choices:
     - content: Using as many web-safe colors as possible
       isCorrect: false
-      explanation: Incorrect. While web-safe colors, testing phase guidelines, and avoiding collaboration may seem relevant, they don't directly address the key to accessibility. Accessibility is about ensuring that all users, including those with vision impairments, can easily interact with your digital prodcuts. This requires using gathering feedback from real users.
+      explanation: Incorrect. While web-safe colors, testing phase guidelines, and avoiding collaboration may seem relevant, they don't directly address the key to accessibility. Accessibility is about ensuring that all users, including those with vision impairments, can easily interact with your digital products. This requires using gathering feedback from real users.
     - content: Gathering user feedback
       isCorrect: true
       explanation: Correct. Gathering user feedback is crucial to ensuring accessibility in color and contrast. Users with different visual impairments can provide valuable insights into how well the design meets their needs.
     - content: Adopting accessibility guidelines in the testing phase
       isCorrect: false
-      explanation: Incorrect. While web-safe colors, testing phase guidelines, and avoiding collaboration may seem relevant, they don't directly address the key to accessibility. Accessibility is about ensuring that all users, including those with vision impairments, can easily interact with your digital prodcuts. This requires using gathering feedback from real users.
+      explanation: Incorrect. While web-safe colors, testing phase guidelines, and avoiding collaboration may seem relevant, they don't directly address the key to accessibility. Accessibility is about ensuring that all users, including those with vision impairments, can easily interact with your digital products. This requires using gathering feedback from real users.
     - content: Avoiding collaboration between designers and developers
       isCorrect: false
-      explanation: Incorrect. While web-safe colors, testing phase guidelines, and avoiding collaboration may seem relevant, they don't directly address the key to accessibility. Accessibility is about ensuring that all users, including those with vision impairments, can easily interact with your digital prodcuts. This requires using gathering feedback from real users.
+      explanation: Incorrect. While web-safe colors, testing phase guidelines, and avoiding collaboration may seem relevant, they don't directly address the key to accessibility. Accessibility is about ensuring that all users, including those with vision impairments, can easily interact with your digital products. This requires using gathering feedback from real users.
   
   - content: Which is the best testing method for color and contrast? ct?
     choices:

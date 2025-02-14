@@ -1,10 +1,10 @@
 Testing is crucial for ensuring adequate color contrast. In this section, we'll introduce some of the processes and tools for testing color contrast in your digital products. 
 
-## Testing Tools
+## Testing tools
 
 You can use tools such as [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/windows/overview/), [WebAIM's Contrast Checker](https://webaim.org/resources/contrastchecker/), [Accessible Web's Color Contrast Checker](https://accessibleweb.com/color-contrast-checker/), and [Colour Contrast Analyzer (CCA)](https://www.tpgi.com/color-contrast-checker/) to check the contrast of the color combinations in your design. Browser developer tools such as [Firefox Accessibility Inspector](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast) and [Chrome DevTools](https://developer.chrome.com/docs/devtools)[ and automated tools such as ](https://developer.chrome.com/docs/devtools)[Web Accessibility Evaluation Tool (WAVE)](https://wave.webaim.org/) offer features to inspect and test color contrast. In this section, we will present a couple of exercises with which you can follow along using any of these tools. 
 
-## Manual Testing
+## Manual testing
 
 Here's a list of ways to test color contrast:
 
@@ -105,7 +105,7 @@ Contrast of Color Pairs
 
 Recall that the hover state is not important for meaning. People can already tell that these buttons are clickable without being able to see the hover indicator. However, the icon still needs to meet contrast requirements while in the hover state, which means that the hover background color and the icon need sufficient contrast. In this case, it does. 
 
-### User Testing
+### User testing
 
 User testing for color contrast is crucial to ensure that websites and applications are usable by everyone, including people with disabilities. This type of testing helps identify and address barriers that might prevent users with disabilities from fully interacting with digital content. By involving people with disabilities in the testing process, developers can gain valuable insights into real-world challenges and ensure that the user experience is inclusive and accessible. 
 
