@@ -2,9 +2,11 @@
 uid: learn.wwl.explore-azure-functions.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/06/2024
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
