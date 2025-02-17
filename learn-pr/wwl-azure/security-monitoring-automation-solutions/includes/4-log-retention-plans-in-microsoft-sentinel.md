@@ -62,7 +62,7 @@ To learn more about retention states, see [Manage data retention in a Log Analyt
 
 The following diagram summarizes and compares two log management plans.
 
-:::image type="content" source="https://learn.microsoft.com/azure/sentinel/media/log-plans/analytics-auxiliary-log-plans.png" alt-text="Diagram of available log plans in Microsoft Sentinel.":::
+:::image type="content" source="/azure/sentinel/media/log-plans/analytics-auxiliary-log-plans.png" alt-text="Diagram of available log plans in Microsoft Sentinel.":::
 
 
 ### Analytics logs plan

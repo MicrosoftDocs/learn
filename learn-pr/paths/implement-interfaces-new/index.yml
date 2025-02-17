@@ -3,7 +3,7 @@ uid: learn.wwl.implement-interfaces-new
 metadata:
   title: Implement interfaces
   description: Implement interfaces
-  ms.date: 02/14/2025
+  ms.date: 02/15/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: learning-path
@@ -27,5 +27,6 @@ subjects:
 modules:
 - learn.wwl.discover-interfaces
 - learn.wwl.apply-interfaces-code
+- learn.wwl.design-resilient-code-interfaces
 trophy:
   uid: learn.wwl.implement-interfaces-new.trophy

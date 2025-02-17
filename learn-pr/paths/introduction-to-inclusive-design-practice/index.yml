@@ -43,6 +43,7 @@ modules:
 - learn.cela-accessibility.develop-products-with-screen-reader-support
 - learn.cela-accessibility.develop-products-with-accessible-color-contrast
 - learn.develop-accessible-resize-reflow
+- learn.cela-accessibility.accessibility-design-specs-with-annotations
 
 trophy:
   uid: learn.intro-to-inclusive-design-practice.trophy
