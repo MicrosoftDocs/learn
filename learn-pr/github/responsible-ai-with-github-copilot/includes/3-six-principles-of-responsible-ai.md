@@ -58,7 +58,7 @@ Microsoft's Responsible AI standard for inclusiveness means:
 
 - AI systems work well for diverse users and groups. They don't disadvantage some people.
 - AI systems are accessible. Anyone can use AI systems easily, regardless of physical or mental abilities.
-- AI systems are available worldwide, even in developing countries. AI systems can't exclude certain geographies.
+- AI systems are available worldwide, even in developing countries/regions. AI systems can't exclude certain geographies.
 - People from different backgrounds and communities provide input into the development of AI systems.
 - AI systems allow all users to benefit equally from their capabilities. They must empower everyone.
 
