@@ -8,7 +8,7 @@ When you select the launch exercise button, you're navigated to a public GitHub 
 When you're finished with the exercise, return here for:
 
 - A quick knowledge check.
-- A summary of what you've learned.
-- To earn a badge for completing this module.
+- A summary of concepts learned.
+- A badge for completing this module.
 
-[![Button to launch exercise.](../media/button-start-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2303784&azure-portal=true)
+[![Button to launch exercise.](../media/button-start-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2303584&azure-portal=true)
