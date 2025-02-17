@@ -9,17 +9,17 @@
 4.  In the **Name** box, change the tenant name. For example, Contoso Marketing Company can be changed to Contoso Marketing Company 2.
 5.  Select **Save** to update the tenant properties.
 
-### Find the Country / region associated with your tenant
+### Find the Country/Region associated with your tenant
 
 6.  In the **Microsoft Entra ID** screen, in the Manage section, select **Properties**.
-7.  Under **Tenant properties**, locate **Country / region** and review the information.
+7.  Under **Tenant properties**, locate **Country/Region** and review the information.
     
     > [!IMPORTANT]
-    > When the tenant is created, the Country / region is specified at that time. This setting cannot be changed later.
+    > When the tenant is created, the Country/Region is specified at that time. This setting cannot be changed later.
 
 ### Find the location associated with your tenant
 
-Just as the Country / region is found in the Microsoft Entra ID Properties dialog, so is the location information.
+Just as the Country/Region is found in the Microsoft Entra ID Properties dialog, so is the location information.
 
 8.  In the **Properties** screen, under **Tenant properties**, locate **Location** and review the information.
     
