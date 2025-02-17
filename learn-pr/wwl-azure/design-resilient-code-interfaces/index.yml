@@ -3,10 +3,13 @@ uid: learn.wwl.design-resilient-code-interfaces
 metadata:
   title: Design Resilient Code with Interfaces
   description: "In this module, you explore advanced concepts of interfaces in C#. You learn how to implement explicit interface members, combine multiple interfaces, and reduce code dependencies using interfaces."
-  ms.date: 02/14/2025
+  ms.date: 02/17/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: module-intro-to-product
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: dotnet-csharp
   ms.devlang: csharp
   ai-usage: ai-assisted
@@ -15,25 +18,25 @@ summary: In this module, you explore advanced concepts of interfaces in C#. You 
 abstract: |
   By the end of this training, you'll be able to:
 
-  - Apply SOLID design principles.
+  -   Apply SOLID design principles.
 
-  - Implement explicit interface members in a class.
+  -   Implement explicit interface members in a class.
 
-  - Use and combine multiple interfaces.
+  -   Use and combine multiple interfaces.
 
-  - Reduce code dependencies with interfaces.
+  -   Reduce code dependencies with interfaces.
 
-  - Build resilient code with interfaces.
+  -   Build resilient code with interfaces.
 prerequisites: |
-  - Visual Studio Code installed with the C# Dev Kit.
+  -   Visual Studio Code installed with the C# Dev Kit.
 
-  - Basic knowledge of the Visual Studio Code IDE.
+  -   Basic knowledge of the Visual Studio Code IDE.
 
-  - Basic understanding of the C# programming language.
+  -   Basic understanding of the C# programming language.
 
-  - Able to create and implement basic interfaces.
+  -   Able to create and implement basic interfaces.
 
-  - Familiar with classes, abstract classes, and inheritance.
+  -   Familiar with classes, abstract classes, and inheritance.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

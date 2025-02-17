@@ -1,6 +1,6 @@
-Tightly coupled code occurs when components are overly dependent on each other's implementation details. This can make your code harder to maintain, less flexible, and more prone to bugs. A common solution is to use **interfaces** to decouple components and improve modularity.
+Tightly coupled code occurs when components are overly dependent on each other's implementation details. The dependency can make your code harder to maintain, less flexible, and more prone to bugs. A common solution is to use **interfaces** to decouple components and improve modularity.
 
-In your role as a software developer you encounter the challenges of tightly coupled code in where there's a direct dependency. You apply the **Open/Closed Principle** to address decoupling your code for building a more maintainable system.
+In your role as a software developer, you encounter the challenges of tightly coupled code in where there's a direct dependency. You apply the **Open/Closed Principle** to address decoupling your code for building a more maintainable system.
 
 ## Tightly coupled code
 
@@ -58,9 +58,9 @@ public class Library
 }
 ```
 
-In this code, the `Library` class depends directly on the `BorrowableBook` class. While this works for a single type of borrowable item, it introduces two key issues:
+In this code, the `Library` class depends directly on the `BorrowableBook` class. While the dependency works for a single type of borrowable item, it introduces two key issues:
 
-- **Direct Dependency**: The `Library` class is tightly coupled to the `BorrowableBook` type. If you want to add new borrowable items (e.g., DVDs, magazines), you would need to modify the `Library` class.
+- **Direct Dependency**: The `Library` class is tightly coupled to the `BorrowableBook` type. If you want to add new borrowable items (for example, DVDs, magazines), you would need to modify the `Library` class.
 - **Limited Extensibility**: The current design makes it difficult to extend functionality without changing existing code.
 
 This tight coupling violates the **Open/Closed Principle (OCP)**, which states that software should be **open for extension but closed for modification**. In other words, you should be able to add new features without altering existing code.
@@ -70,4 +70,4 @@ By reducing dependencies, you can:
 - **Enhance Flexibility**: New features can be added without modifying existing code.
 - **Simplify Testing**: Components can be tested independently.
 
-To address the issue you'll need to refactor the code using interfaces to make it more modular and flexible.
+To address the issue, you need to refactor the code using interfaces to make it more modular and flexible.
