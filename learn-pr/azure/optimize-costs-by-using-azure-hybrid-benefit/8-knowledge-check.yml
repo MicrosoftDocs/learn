@@ -5,8 +5,8 @@ metadata:
   title: Knowledge Check
   description: This is the knowledge check for the Optimize costs by using Azure Hybrid Benefit module.
   ms.date: 02/18/2025
-  author: erzelman
-  ms.author: erzelman
+  author: Maria Jose Fernandez
+  ms.author: mariajosef
   ms.topic: unit
 durationInMinutes: 5
 quiz:
@@ -21,7 +21,7 @@ quiz:
       isCorrect: false
       explanation: This is not correct. Azure OpenAI service is not supported by Azure Hybrid Benefit.
     - content: Azure Kubernetes Service
-      isCorrect: true
+      isCorrect: false
       explanation: This is correct. Azure Kubernetes Service is supported by Azure Hybrid Benefit)
 
   - content: How many Windows Server core licenses does an organization need to be able to use Azure Hybrid Benefit?

@@ -4,8 +4,8 @@ metadata:
   title: Optimize costs by using Azure Hybrid Benefit
   description: Microsoft Azure offers Azure Hybrid Benefit, which helps organizations reduce costs when migrating to the cloud environment. You can leverage several Azure discounts and combine them with other services and strategic pricing offerings. 
   ms.date: 02/18/2025
-  author: bandersmsft
-  ms.author: banders
+  author: Maria Jose Fernandez
+  ms.author: mariajosef
   ms.topic: module
   ms.service: azure
 title: Optimize costs by using Azure Hybrid Benefit
@@ -19,9 +19,9 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels: 
 - intermediate
 roles: 
-- administrator
-products: 
-- azure-hybrid-benefit
+- solution-architect
+- technology-manager
+- ai-engineer
 prerequisites: |
   To get the best learning experience from this module, you should have:
   - A basic understanding of migrating and modernizing workloads in Microsoft Azure.
