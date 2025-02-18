@@ -26,7 +26,7 @@ Azure Hybrid Benefit includes the following cost savings:
 
 The following diagram compares the cost benefits of using AKS on HCI or Windows Server against using AKS without Azure Hybrid Benefit.
 
-:::image type="content" source="../media/aks-on-hcl-with-ahb.png" alt-text="Screenshot of illustration depicting comparison of costs for using AKS, AKS on HCI without AHB and AKS on HCI or Windows Server with AHB against the Azure Hybrid." border="false":::
+:::image type="content" source="../media/aks-hcl-with-ahb.png" alt-text="Screenshot of illustration depicting comparison of costs for using AKS, AKS on HCI without AHB and AKS on HCI or Windows Server with AHB against the Azure Hybrid." border="false":::
 
 #### Migration allowance rights for Windows Server
 

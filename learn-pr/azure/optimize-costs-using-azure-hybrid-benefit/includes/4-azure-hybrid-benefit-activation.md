@@ -29,7 +29,9 @@ After you've deployed your VM through either PowerShell, Resource Manager templa
 
 To review and count all VMs and Virtual Machine Scale Sets deployed with Azure Hybrid Benefit for Windows Server, you can run the following command from your subscription:
 
-    Get-AzVM | ?{$_.LicenseType -like "Windows_Server"} | select ResourceGroupName, Name, LicenseType
+```powershell
+Get-AzVM | ?{$_.LicenseType -like "Windows_Server"} | select ResourceGroupName, Name, LicenseType
+```
 
 In the Azure portal, from the Virtual Machine blade or Virtual machine Scale Sets Resource blade, you can review a list of all your VM(s) and licensing types by configuring the table column to include **OS licensing benefit**. The VM setting can either be in Azure Hybrid Benefit for Windows, Not enabled, or Windows client with multi-tenant hosting state.
 
@@ -96,7 +98,7 @@ You can modify the license model directly from the portal:
 1. Select the **Azure Hybrid Benefit** option, and then select the checkbox to confirm that you have a SQL Server license with Software Assurance.
 1. On the **Configure** page, select **Apply**.
 
-:::image type="content" source="../media/ahb-in-portal-inline.png" alt-text="Screenshot of the SQLVM-Configure page with Azure Hybrid Benefit selected for the SQL Server License type." lightbox="../media/ahb-in-portal-expanded.png "border="false":::
+:::image type="content" source="../media/ahb-portal-inline.png" alt-text="Screenshot of the SQLVM-Configure page with Azure Hybrid Benefit selected for the SQL Server License type." lightbox="../media/ahb-portal-expanded.png "border="false":::
 
 Azure Hybrid Benefit allows you to exchange your existing licenses for discounted rates on Azure SQL Database and Azure SQL Managed Instance. You can save up to 30 percent or more on SQL Database and SQL Managed Instance by using your Software Assurance–enabled SQL Server licenses on Azure. Changing to Azure Hybrid Benefit does not require any downtime.
 

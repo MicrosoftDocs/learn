@@ -25,9 +25,9 @@ You can manage Azure Workbooks by completing the following steps:
 
 1. **Access Azure Workbooks:**
 
-    a. Navigate to the Azure portal and sign in with your Azure account credentials.
+    1. Navigate to the Azure portal and sign in with your Azure account credentials.
 
-    b. From the navigation pane, select **Monitor**, and then select **Workbooks**. This opens the Azure Workbooks gallery, where you can create and manage workbooks.
+    1. From the navigation pane, select **Monitor**, and then select **Workbooks**. This opens the Azure Workbooks gallery, where you can create and manage workbooks.
 
 1. **Create a new workbook or use an existing one:**
    - You can either create a new workbook or use an existing one. To create a new workbook, select **New**, and then select **Workbook**. To use an existing workbook, browse the Azure Workbooks gallery and select a workbook that suits your needs¾such as the **Cost Optimization Workbook**.
