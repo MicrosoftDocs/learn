@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.optimize-costs-by-using-azure-hybrid-benefit
+metadata:
+  title: Optimize costs by using Azure Hybrid Benefit
+  description: Microsoft Azure offers Azure Hybrid Benefit, which helps organizations reduce costs when migrating to the cloud environment. You can leverage several Azure discounts and combine them with other services and strategic pricing offerings. 
+  ms.date: 02/18/2025
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: module
+title: Optimize costs by using Azure Hybrid Benefit
+summary: Microsoft Azure offers Azure Hybrid Benefit, which helps organizations reduce costs when migrating to the cloud environment. You can leverage several Azure discounts and combine them with other services and strategic pricing offerings. 
+abstract: | 
+  After completing this module, you'll be able to:
+  - Explain Azure Hybrid Benefit capabilities and where to apply them.
+  - Describe the benefit activation process for Microsoft Workloads and Linux Estate.
+  - Describe the best practices for monitoring, optimizing, and maximizing savings.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+- intermediate
+roles: 
+- it-admin
+- itpro
+- procurement-specialist
+- migration-engineer
+- migration-specialist
+- cloud-architect
+- itdm
+products: 
+- azure-hybrid-benefit
+prerequisites: |
+  To get the best learning experience from this module, you should have:
+  - A basic understanding of migrating and modernizing workloads in Microsoft Azure.
+  - A basic understanding of the different infrastructure solutions.
+  - A basic understanding of Azure pricing offerings.
+  - Ability to navigate the Azure portal.
+units:
+- learn.optimize-costs-by-using-azure-hybrid-benefit.introduction
+- learn.optimize-costs-by-using-azure-hybrid-benefit.azure-hybrid-benefit-overview
+- learn.optimize-costs-by-using-azure-hybrid-benefit.azure-hybrid-benefit-capabilities
+- learn.optimize-costs-by-using-azure-hybrid-benefit.azure-hybrid-benefit-activation
+- learn.optimize-costs-by-using-azure-hybrid-benefit.optimize-usage-azure-hybrid-benefit
+- learn.optimize-costs-by-using-azure-hybrid-benefit.maximize-savings-azure-hybrid-benefit
+- learn.optimize-costs-by-using-azure-hybrid-benefit.summary
+- learn.optimize-costs-by-using-azure-hybrid-benefit.knowledge-check
+badge:
+  uid: learn.optimize-costs-by-using-azure-hybrid-benefit.badge

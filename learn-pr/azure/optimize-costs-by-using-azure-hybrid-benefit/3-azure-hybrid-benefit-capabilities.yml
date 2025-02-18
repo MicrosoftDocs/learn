@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.optimize-costs-by-using-azure-hybrid-benefit.azure-hybrid-benefit-capabilities
+title: Understand azure hybrid benefit capabilities and eligibility
+metadata:
+  title: Understand Azure Hybrid Benefit capabilities and eligibility
+  description: This unit is a part of the Optimize costs by using Azure Hybrid Benefit module.
+  ms.date: 02/18/2025
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-azure-hybrid-benefit-capabilities.md)]
