@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: 'Exercise: Create an Azure Function by using Visual Studio Code'
   description: "Exercise: Create an Azure Function by using Visual Studio Code"
-  ms.date: 07/09/2024
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
