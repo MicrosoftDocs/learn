@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design for Azure Active Directory B2C (business-to-customer)
   description: "Design for Azure Active Directory B2C (business-to-customer)"
-  ms.date: 01/15/2025
+  ms.date: 02/18/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
