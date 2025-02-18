@@ -53,7 +53,7 @@ AI can act as your personal assistant, helping you manage various aspects of you
 >
 > In Microsoft 365, these agents use advanced technologies like AI and machine learning to understand what you like and how you work. This means they can offer solutions that fit your specific needs, making your daily tasks easier and more efficient. Whether you're working with colleagues, organizing your schedule, or analyzing data, AI agents help create a smarter and more connected environment.
 >
-> To learn more, review [Introducing Copilot agents](https://support.microsoft.com/en-us/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466#:~:text=Copilot%20agents%20are%20specialized%20AI,expanding%20their%20reach%20and%20functionality.).
+> To learn more, review [Introducing Copilot agents](https://support.microsoft.com/en-us/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466#:~:text=Copilot%20agents%20are%20specialized%20AI,expanding%20their%20reach%20and%20functionality.) and [Copilots & Agents](https://www.youtube.com/watch?v=oddeD2FTCyE).
 
 With AI as your personal assistant, you can streamline your daily activities, stay organized, and focus on what matters most to you.
 
