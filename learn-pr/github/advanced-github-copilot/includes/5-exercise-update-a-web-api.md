@@ -6,17 +6,17 @@ An API acts as the intermediary that allows different applications to communicat
 
 ## Extend the Web API
 
-The current API isn't exposing country, which needs to be implemented to list cities. The route should allow only GET HTTP requests with a JSON response providing information from the historical high and low for that country, city, and given month.
+The current API isn't exposing country/region, which needs to be implemented to list cities. The route should allow only GET HTTP requests with a JSON response providing information from the historical high and low for that country/region, city, and given month.
 
 >[!Note]
 > For this exercise, use the [Codespace with the preconfigured environment](https://codespaces.new/MicrosoftDocs/mslearn-advanced-copilot?azure-portal=true) in your browser.
 
 ### Step 1: Add a new route
 
-Open the main.py file, and use the inline chat with the command **Ctrl+i** (on Windows) or **Command+i** (on Mac). This command asks GitHub Copilot to help you create a new API that shows you the cities of a country. Use the following prompt:
+Open the main.py file, and use the inline chat with the command **Ctrl+i** (on Windows) or **Command+i** (on Mac). This command asks GitHub Copilot to help you create a new API that shows you the cities of a country/region. Use the following prompt:
 
 ```text
-Create a new route that exposes the cities of a country.
+Create a new route that exposes the cities of a country/region.
 ```
 
 This prompt should give you something similar like this:
@@ -34,10 +34,10 @@ def cities(country: str):
 
 ### Step 2: Create a test
 
-Now that you created a new route, create a test with Copilot Chat for this route that uses Spain as the country. Remember to select your code, and ask Copilot Chat to help you with this specific API that we just created. You can use the inline-chat or the dedicated chat pane with the following prompt:
+Now that you created a new route, create a test with Copilot Chat for this route that uses Spain as the country/region. Remember to select your code, and ask Copilot Chat to help you with this specific API that we just created. You can use the inline-chat or the dedicated chat pane with the following prompt:
 
 ```text
-/tests help me to create a new test for this route that uses Spain as the country.
+/tests help me to create a new test for this route that uses Spain as the country/region.
 ```
 
 Once Copilot helps you create your test, try it. If this isn't functioning as expected, feel free to share those details with Copilot in the chat. For example:

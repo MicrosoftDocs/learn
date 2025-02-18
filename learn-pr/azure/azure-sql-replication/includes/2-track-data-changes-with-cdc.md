@@ -1,6 +1,6 @@
 ## Scenario
 
-Let's remember our scenario, in which you're the CTO of a healthcare business that sells medical equipment in different regions around the country. You have different inventory databases in each region, and you want to ensure that these databases are all replicating data changes to a central country-wide inventory database that offers you a status on each sale. You might decide to use change data capture (CDC) and enable it on each of your regional inventory databases in order to track data changes on your source database, then you might decide to use a streaming service such as Azure Data Factory to consume changes from the CDC tables and stream them to the national/regional database.
+Let's remember our scenario, in which you're the CTO of a healthcare business that sells medical equipment in different regions around the country/region. You have different inventory databases in each region, and you want to ensure that these databases are all replicating data changes to a central country/region-wide inventory database that offers you a status on each sale. You might decide to use change data capture (CDC) and enable it on each of your regional inventory databases in order to track data changes on your source database, then you might decide to use a streaming service such as Azure Data Factory to consume changes from the CDC tables and stream them to the national/regional database.
 
 Let's learn more about CDC. 
 
