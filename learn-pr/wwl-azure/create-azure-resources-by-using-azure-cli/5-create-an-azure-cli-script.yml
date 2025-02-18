@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-resources-by-using-azure-cli.work-azure-cli
+title: Create an Azure CLI script for Bash
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create an Azure CLI script for Bash
+  description: "Create an Azure CLI script for Bash"
+  ms.date: 02/17/2025
+  author: dbradish-microsoft
+  ms.author: dbradish
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-create-an-azure-cli-script.md)]
+

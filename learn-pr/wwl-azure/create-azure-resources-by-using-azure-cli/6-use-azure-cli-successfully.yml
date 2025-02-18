@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-resources-by-using-azure-cli.work-azure-cli
+title: Tips to use the Azure CLI successfully
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Tips to use the Azure CLI successfully
+  description: "Tips to use the Azure CLI successfully"
+  ms.date: 02/17/2025
+  author: dbradish-microsoft
+  ms.author: dbradish
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-use-azure-cli-successfully.md)]
+

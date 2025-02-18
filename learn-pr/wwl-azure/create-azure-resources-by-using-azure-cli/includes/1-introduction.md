@@ -4,14 +4,14 @@ This module explains Azure CLI to create Azure resources, run templates, and det
 
 After completing this module, students and professionals can:
 
- -  Create Azure resources using Azure CLI.
- -  Understand and work with Azure CLI.
- -  Run templates using Azure CLI.
- -  Explains Azure CLI commands.
+- Learn about the Azure CLI tool.
+- Install the Azure CLI and connect to Azure.
+- Create Azure resources using Azure CLI.
+- Run Azure CLI scripts.
+- Understand how troubleshoot and use the Azure CLI successfully.
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Familiarity with version control principles is helpful but isn't necessary.
- -  Beneficial to have experience in an organization that delivers software.
- -  You need to create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see: [Create an organization - Azure DevOps](/azure/devops/organizations/accounts/create-organization).
+- Experience with a command-line interface, such as Bash or PowerShell.
+- Understanding of basic Azure concepts, including resource groups and storage accounts.
+- Experience administering Azure resources using the Azure portal.

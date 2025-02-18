@@ -6,10 +6,10 @@ metadata:
   prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 05/22/2024
-  author: wwlpublish
-  ms.author: lumac
+  ms.date: 02/17/2025
+  author: dbradish-microsoft
+  ms.author: dbradish
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 15
 content: |
   [!include[](includes/1-introduction.md)]
