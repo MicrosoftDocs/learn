@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.optimize-costs-by-using-azure-hybrid-benefit.summary
-title: Summary
+uid: learn.optimize-costs-using-azure-hybrid-benefit.optimize-usage-azure-hybrid-benefit
+title: Optimize usage with azure hybrid benefit
 metadata:
-  title: Summary
+  title: Optimize usage with Azure Hybrid Benefit
   description: This unit is a part of the Optimize costs by using Azure Hybrid Benefit module.
   ms.date: 02/18/2025
   author: Maria Jose Fernandez
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/5-optimize-usage-azure-hybrid-benefit.md)]
