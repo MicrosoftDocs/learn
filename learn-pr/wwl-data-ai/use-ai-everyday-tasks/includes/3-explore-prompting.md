@@ -14,16 +14,14 @@ Here are some tips to keep in mind when writing a prompt:
 - If you can, provide some data or information for Copilot to use. This helps ground the response in the right context.
 - Don't be afraid to tweak your prompts based on previous responses. Iterating helps refine the results.
 
-> [!TIP]
+> [!NOTE]
 > Don't worry if you don't get the response you are looking for the first time. With Copilot, you can **iterate** by asking it to refine the results. Let's say you used Copilot to create a menu for a dinner party, but you forgot you need vegetarian options. Simply ask Copilot to update the menu to include a vegetarian dish. This way, you can keep refining your prompts until you get the perfect result.
 >
 > ![Image of person cooking in a kitchen.](../media/03-food.jpg)
 
 ## Identify easy opportunities to try AI
 
-To get you started, we've put together a table with examples of good, better, and best prompts for everyday tasks. These examples help you create prompts that make the most of AI, making your tasks simpler and more effective.
-
-The following table gives you some examples of good, better, and best prompts to help with some everyday tasks.
+The following table gives you some examples of good, better, and best prompts to help with some everyday tasks.These examples help you create prompts that make the most of AI, making your tasks simpler and more effective.
 
 | Task | Good | Better | Best |
 |----------------|------|--------|------|
@@ -37,7 +35,8 @@ The following image shows the playlist the copilot generated using the "best" pr
 
 Now that you know how to create effective prompts, try identifying things in your daily routine where AI can help you save time or be more creative.
 
-> [!TIP]
-> Find one simple task in your daily routine where AI can help you save time. Commit to a daily experiment, one prompt to try every day and iterate as needed.
+> [!IMPORTANT] 
+> **Build your AI habit:**
+> Find one simple task in your daily routine where AI can help you save time. Commit to a daily experiment, such as one prompt to try every day. Remember to iterate as much as you want to perfect your prompts.
 
 Now that you understand how to craft clear, specific, and goal-oriented prompts, you can make your everyday tasks simpler and more efficient. Next, you'll have the opportunity to try prompting yourself!

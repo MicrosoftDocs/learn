@@ -1,5 +1,3 @@
-## Understand the basics of generative AI
-
 Generative AI focuses on creating new, unique content, based on the input you provide. This input is called **prompting**, which is simply asking AI for specific things. Generative AI can create entirely new and original pieces of work, such as write a poem, compose a melody, or design a graphic based on the patterns and styles it learned from existing data.
 
 People usually interact with generative AI built into a chat application. One popular example of such an application is [Microsoft Copilot](https://copilot.microsoft.com/), an AI-powered productivity tool designed to enhance your work experience by providing real-time intelligence and assistance.
@@ -73,6 +71,6 @@ With AI as your personal assistant, you can streamline your daily activities, st
 > - **Racial bias**. AI systems can exhibit racial bias, leading to discriminatory outcomes. For instance, facial recognition systems might have higher error rates for people of color compared to white individuals.
 > - **Socioeconomic bias**. AI systems can favor individuals from higher socioeconomic backgrounds. A credit scoring algorithm, for example, might disproportionately favor applicants from wealthier neighborhoods.
 >
-> AI should treat everyone fairly, protect privacy, and operate transparently. This helps build trust and ensures that AI systems are used in ways that respect individuals' rights and interests.
+> AI should treat everyone fairly, protect privacy, and operate transparently. This helps build trust and ensures that AI systems are used in ways that respect individuals' rights and interests. Learn how Microsoft is [empowering responsible AI practices](https://www.microsoft.com/ai/responsible-ai).
 
 Generative AI is transforming the way we create and interact with content, enhancing our productivity and creativity. Next, let's explore how you interact with AI through prompting.
