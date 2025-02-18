@@ -149,7 +149,7 @@ The output is:
   The output is:
   
   ```Output
-  ['Quinn', 'Jordan', 'Parker', 'Riley', [...]]
+  ['Quinn', 'Jordan', 'Parker', 'Riley', 'Quinn', 'Jordan', 'Parker', 'Riley']
   ```
   
   The next input is:
@@ -162,7 +162,7 @@ The output is:
   Here's the output:
   
   ```Output
-  ['Quinn', 'Jordan', 'Parker', 'Riley', 'Quinn', 'Jordan', 'Parker', 'Riley']
+  ['Quinn', 'Jordan', 'Parker', 'Riley', ['Quinn', 'Jordan', 'Parker', 'Riley']]
   ```
   
 </details>
@@ -172,4 +172,4 @@ The output is:
 ***
 
 > [!NOTE]
-> You can supply your own *lambda function* for the `sort()` method, for use in comparing items in a list. We'll cover lambda functions in a later unit.
+> You can supply your own *lambda function* for the `sort()` method, for use in comparing items in a list. We cover lambda functions in a later unit.
