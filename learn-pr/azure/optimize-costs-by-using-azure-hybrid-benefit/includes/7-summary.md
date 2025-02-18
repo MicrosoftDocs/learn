@@ -4,7 +4,7 @@ By migrating their on-premises resources to Azure and by using Azure Hybrid Bene
 
 ## Learn more
 
-- [Explore Azure Hybrid Benefit for Windows VMs](https://learn.microsoft.com/azure/virtual-machines/windows/hybrid-use-benefit-licensing)
-- [Change the license model for a SQL virtual machine in Azure | Azure Hybrid Benefit](https://learn.microsoft.com/azure/azure-sql/virtual-machines/windows/licensing-model-azure-hybrid-benefit-ahb-change?view=azuresql&tabs=azure-portal#azure-hybrid-benefit)
-- [Azure Hybrid Benefit for Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES) Virtual Machines](https://learn.microsoft.com/azure/virtual-machines/linux/azure-hybrid-benefit-linux?tabs=ahbNewPortal%2CahbExistingPortal%2Clicenseazcli%2CrhelAzcliByosConv%2Crhelazclipaygconv%2Crhelpaygconversion%2Crhelcompliance)
+- [Explore Azure Hybrid Benefit for Windows VMs](/azure/virtual-machines/windows/hybrid-use-benefit-licensing)
+- [Change the license model for a SQL virtual machine in Azure | Azure Hybrid Benefit](/azure/azure-sql/virtual-machines/windows/licensing-model-azure-hybrid-benefit-ahb-change?#azure-hybrid-benefit)
+- [Azure Hybrid Benefit for Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES) Virtual Machines](/azure/virtual-machines/linux/azure-hybrid-benefit-linux?tabs=ahbNewPortal%2CahbExistingPortal%2Clicenseazcli%2CrhelAzcliByosConv%2Crhelazclipaygconv%2Crhelpaygconversion%2Crhelcompliance)
 - [Benefits of Software Assurance](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?rtc=1).
