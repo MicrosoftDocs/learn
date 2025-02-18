@@ -82,7 +82,7 @@ Your local machine is now set up to administer Azure resources with the Azure CL
 
 ## Get the Azure CLI version
 
-Determine the Azure CLI version by using the `az version` command.
+Verify your Azure CLI installation by returning the Azure CLI version using the `az version` command.
 
 ```azurecli
 az version

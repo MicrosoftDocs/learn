@@ -1,14 +1,19 @@
-This module explained Azure CLI to create Azure resources, run templates, and detailed Azure CLI commands.
+<!-- markdownlint-disable MD041 -->
 
-You learned how to describe the benefits and usage of:
+In this module, you learned how to:
 
- -  Create Azure resources using Azure CLI.
- -  Understand and work with Azure CLI.
- -  Run templates using Azure CLI.
- -  Explains Azure CLI commands.
+- Describe Azure CLI syntax components.
+- Use Azure CLI to automate the management of Azure resources.
+- Run Azure CLI commands interactively and through a script.
+- Get help with Azure CLI commands.
+- Troubleshoot Azure CLI commands.
+
+The Azure CLI's clean syntax and powerful scripting capabilities make it a valuable tool, even for administrators new to Bash. By automating time-consuming and error-prone tasks, you can reduce administrative overhead and improve overall efficiency and quality.
+
+<!-- Cleanup sandbox -->
+[!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 ## Learn more
 
- -  [Azure CLI task - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/tasks/deploy/azure-cli).
- -  [How to install the Azure CLI \| Microsoft Learn](/cli/azure/install-azure-cli).
- -  [Get started with Azure Command-Line Interface (CLI) \| Microsoft Learn](/cli/azure/get-started-with-azure-cli).
+- [Azure CLI onboarding cheat sheet](/cli/azure/cheat-sheet-onboarding)
+- [Tutorial: Learn to use the Azure CLI](s/cli/azure/get-started-tutorial-0-before-you-begin)

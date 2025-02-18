@@ -10,6 +10,6 @@ metadata:
   author: dbradish-microsoft
   ms.author: dbradish
   ms.topic: unit
-durationInMinutes: 15
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

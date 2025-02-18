@@ -75,6 +75,8 @@ resourceGroup="msdocs-rg-00000000"
 az storage account list --resource-group $resourceGroup --query "[?allowBlobPublicAccess == `true`].id"
 ```
 
+When a parameter value is not formatted correctly _for the scripting language that is parsing the value_, you receive an `invalid jmespath_type value` error.
+ 
 ```output
 cli.knack.cli: Command arguments: ['storage', 'account', 'list', '--resource-group', 'msdocs-tutorial-rg-69794242', '--query', '[?allowBlobPublicAccess == ].id', '--debug']
 ...
@@ -104,9 +106,7 @@ Grasp the important concept of `--debug` and you are on your way to using the Az
 
 ## Scripting language syntax differences
 
-As we just finished talking about `--debug`, the next step is to learn what causes most scripting errors.
-
-There are subtile scripting differences. A script written in Bash will need to be modified to execute successfully in PowerShell or cmd.exe if your script contains one of the following:
+As we just finished talking about `--debug`, the next step is to be aware of what causes most scripting errors A script written in Bash will need to be modified to execute successfully in PowerShell or cmd.exe if your script contains one of the following:
 
 - Line continuation characters
 - Variables
@@ -142,24 +142,24 @@ Take a quick tour of Azure CLI commands by following these examples:
    az find blob
    ```
 
-1. Show the most popular commands for an Azure CLI command group, such as `az vm`:
+1. Show the most popular commands for an Azure CLI command group, such as `az storage`:
 
    ```azurecli
-   az find "az vm"
+   az find "az storage"
    ```
 
 1. Show the most popular parameters and subcommands for an Azure CLI command:
 
    ```azurecli
-   az find "az vm create"
+   az find "az storage account create"
    ```
 
 ### `--help` parameter
 
-If you already know the name of the command you want, the `--help` argument for that command gets you more detailed information on the command and a list of the available subcommands for a command group. Continuing with our Azure VM examples, here's how you can get a list of the subgroups and commands for managing VM images:
+If you already know the name of the command you want, the `--help` argument for that command gets you more detailed information on the command and a list of the available subcommands for a command group. Continuing with our Azure storage examples, here's how you can get a list of the subgroups and commands for managing a storage account's blob service:
 
 ```azurecli
-az vm image --help
+az account blob-service-properties --help
 ```
 
 ### A to Z indexes
@@ -170,7 +170,7 @@ Use one of several A to Z index to find examples for Azure CLI reference command
 
 - The [Azure CLI conceptual article list](/cli/azure/reference-docs-index) provides an A to Z list of quickstarts, how to guides, tutorials and learn modules that explain how to use Azure CLI reference commands in real world scenarios. The article list is grouped by Azure CLI command group, like `az account`, then `az acr` etc.  Use **CTRL + F** in Windows (**Command + F** in macOS) to quickly jump to the command group of your choice.
 
-- The [Azure CLI sample scripts](/cli/azure/samples-index) has three tabs:
+- The [Azure CLI sample scripts](/cli/azure/samples-index) index has three tabs:
   - [List by subject area](/cli/azure/samples-index?tabs=service): Use this tab to find samples for an Azure service.
   - [List by reference group](/cli/azure/samples-index?tabs=command): Use this tab to find samples for a reference command group.
   - [Azure CLI samples GitHub repository](/cli/azure/samples-index?tabs=github): Use this tab to find samples in the Azure CLI samples GitHub repository.
@@ -178,116 +178,3 @@ Use one of several A to Z index to find examples for Azure CLI reference command
 ### Copilot
 
 Both the Azure portal and Microsoft Edge offer Copilot experiences that return information on Azure CLI reference commands, samples and published articles. Copilot also provides links to related Stack Overflow questions. When you have a difficult job to be done with multiple scripting steps, Copilot can be extremely helpful in compiling multiple sources of information to answer your question.
-
-
-
-
-
-
-
-************************
-
-## Creating resources
-
-When creating a new Azure resource, typically, there are three high-level steps:
-
-1.  Connect to your Azure subscription.
-2.  Create the resource.
-3.  Verify that creation was successful.
-
-    :::image type="content" source="../media/create-resources-overview-697de4ba.png" alt-text="An illustration has the three steps to create an Azure resource using the command-line interface.":::
-
-
-### 1. Connect
-
-Because you're working with a local Azure CLI installation, you'll need to authenticate before you can execute Azure commands.
-
-You do it by using the Azure CLI **login** command:
-
-```azurecli
-az login
-
-```
-
-Azure CLI will typically launch your default browser to open the Azure sign in page.
-
-If it doesn't work, follow the command-line instructions, and enter an authorization code in the [Enter Code](https://aka.ms/devicelogin) dialog box.
-
-After a successful sign in, you'll be connected to your Azure subscription.
-
-### 2. Create
-
-You'll often need to create a new resource group before you create a new Azure service.
-
-So we'll use resource groups as an example to show how to create Azure resources from the Azure CLI.
-
-The Azure CLI **group create** command creates a resource group.
-
-You need to specify a name and location.
-
-The *name* parameter must be unique within your subscription.
-
-The *location* parameter determines where the metadata for your resource group will be stored.
-
-You use strings like "West US," "North Europe," or "West India" to specify the location.
-
-Instead, you can use single-word equivalents, such as "westus," "northeurope," or "westindia."
-
-The core syntax to create a resource group is:
-
-```azurecli
-az group create --name <name> --location <location>
-
-```
-
-### 3. Verify installation
-
-For many Azure resources, Azure CLI provides a **list** subcommand to get resource details.
-
-For example, the Azure CLI **group list** command lists your Azure resource groups.
-
-It's helpful to verify whether resource group creation was successful:
-
-```azurecli
-az group list
-
-```
-
-To get more concise information, you can format the output as a simple table:
-
-```azurecli
-az group list --output table
-
-```
-
-If you have several items in the group list, you can filter the return values by adding a **query** option using, for example, the following command:
-
-```azurecli
-az group list --query "[?name == '<rg name>']"
-
-```
-
-> [!NOTE]
-> You format the query using **JMESPath**, which is a standard query language for JSON requests.
-
-You can learn more about this filter language at [http://jmespath.org/](http://jmespath.org/).
-
-## Using Azure CLI in scripts
-
-To use Azure CLI commands in scripts, you'll need to be aware of any issues around the shell or environment you use to run the script.
-
-For example, in a bash shell, you can use the following syntax when setting variables:
-
-```azurecli
-variable="value"
-variable=integer
-
-```
-
-If you use a PowerShell environment for running Azure CLI scripts, you'll need to use the following syntax for variables:
-
-```powershell
-$variable="value"
-$variable=integer
-
-```

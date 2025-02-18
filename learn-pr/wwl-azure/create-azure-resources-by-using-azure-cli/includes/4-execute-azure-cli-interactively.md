@@ -150,4 +150,5 @@ az group list --output table
 az group delete --name <msdocs-rg-0000000> --no-wait
 ```
 
-Working interactively is a good solution for testing and creating a small number of Azure resources. However, what if you have to create five storage accounts, two Azure SQL databases, and an Azure Data Factory for each development, stage and production environment? Each Azure resource must follow your organization's naming standards and your production environment has additional security restrictions. With an interactive approach, how long do you think this will take you? Let's use a script instead!
+Complex or repetitive tasks can be time-consuming and error-prone when performed manually. Many organizations prefer to automate these tasks to reduce costs and avoid mistakes. Using an Azure CLI script to automate the creation of Azure resources creation is much more efficient and reliable
+than manually creating them one at a time.

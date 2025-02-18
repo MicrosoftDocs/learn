@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-azure-resources-by-using-azure-cli.work-azure-cli
+uid: learn.wwl.create-azure-resources-by-using-azure-cli.create-an-azure-cli-script
 title: Create an Azure CLI script for Bash
 metadata:
   adobe-target: true
@@ -11,7 +11,9 @@ metadata:
   ms.author: dbradish
   ms.topic: unit
   ms.custom: devx-track-azurecli
-durationInMinutes: 4
+interactive: bash
+azureSandbox: true
+durationInMinutes: 5
 content: |
   [!include[](includes/5-create-an-azure-cli-script.md)]
 
