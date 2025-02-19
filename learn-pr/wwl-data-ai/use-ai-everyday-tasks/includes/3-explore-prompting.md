@@ -4,6 +4,8 @@ To get the best out of the AI, you want to create prompts that help it give you 
 
 ## Write effective prompts
 
+![Image of person working on a laptop.](../media/03-write-prompt.jpg)
+
 An effective prompt should be clear, specific, contextual, and goal oriented. By incorporating these elements into your prompts, you can ensure that you get more accurate and relevant responses from AI tools. Remember, the more information and guidance you provide in your prompt, the better the AI can assist you.
 
 Here are some tips to keep in mind when writing a prompt:
