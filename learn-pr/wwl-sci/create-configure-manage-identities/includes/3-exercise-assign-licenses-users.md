@@ -1,3 +1,5 @@
+**Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it.  You can get a free trial subscription for at [Try Azure for Free](https://azure.microsoft.com/free).
+
 ## Create a new user in Microsoft Entra ID
 
 You can skip creating this user if you have already created the same user in the earlier module.
