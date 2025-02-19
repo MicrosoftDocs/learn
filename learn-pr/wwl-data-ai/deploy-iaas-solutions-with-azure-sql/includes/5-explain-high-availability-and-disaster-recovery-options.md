@@ -10,7 +10,7 @@ Availability Zones are unique physical locations within a region. Each zone is m
 
 :::image type="content" source="../media/module-22-plan-implement-final-03.png" alt-text="Azure Availability Zones":::
 
-In the image above, you can see the availability zone configuration. When you deploy a VM into a region with an availability zone you will be presented with the option to deploy in Zone 1, 2, and 3. These zones are logical representations of physical data centers, which means a deployment to Zone 1 in one subscription, does not mean that Zone 1 represents the same data center in another subscription.
+When you deploy a VM into a region with an availability zone you have the option to deploy in Zone 1, 2, and 3. These zones are logical representations of physical data centers, which means a deployment to Zone 1 in one subscription, does not mean that Zone 1 represents the same data center in another subscription.
 
 ### Availability Sets
 
