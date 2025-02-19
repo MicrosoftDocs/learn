@@ -134,7 +134,7 @@ from azure.identity import DefaultAzureCredential
 
 try:
     # Initialize the project client
-    project_connection_string = "eastus.api.azureml.ms;fd3e3786-c217-4a84-9916-cf6b736cae81;gmalc-ai-hub;ai-project"
+    project_connection_string = "<region>.api.azureml.ms;<project_id>;<hub_name>;<project_name>"
     project_client = AIProjectClient.from_connection_string(
         credential=DefaultAzureCredential(),
         conn_str=project_connection_string,

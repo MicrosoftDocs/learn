@@ -6,7 +6,7 @@
     :::column-end:::
     :::column span="":::
 
-        On March 20, 2019, the Office of Management and Budget Director published [Memorandum M-19-13](https://www.whitehouse.gov/wp-content/uploads/2019/03/M-19-13.pdf).
+        On March 20, 2019, the Office of Management and Budget Director published Memorandum M-19-13.
 
         The purpose of the Memorandum is to provide guidance on the "practice of buying common goods and services as an enterprise to eliminate redundancies, increase efficiency, and deliver more value and savings from the Government's acquisition programs."
 
