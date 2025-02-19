@@ -8,7 +8,7 @@
 
         In 2015, the Federal Government's CFO Act empowered the Department of Homeland Security and Office of Management and Budget to identify the government's most critical assets, which it deemed high value assets (HVA), and mitigate risk.
 
-        In 2017, the OMB formally created the High Value Asset Program through [Memorandum M-19-03](https://www.whitehouse.gov/wp-content/uploads/2018/12/M-19-03.pdf), with the intent of providing clarification and guidance toward protecting HVAs.
+        In 2017, the OMB formally created the High Value Asset Program through Memorandum M-19-03, with the intent of providing clarification and guidance toward protecting HVAs.
 
         The memorandum begins that it seeks to expand its support to all agencies in the identification, assessment, remediation, and response to incidents.
 
