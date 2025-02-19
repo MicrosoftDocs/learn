@@ -14,16 +14,13 @@ Here are some tips to keep in mind when writing a prompt:
 - Add some context to help Copilot understand what you're asking to makes the response more relevant.
 - Let Copilot know how you want the response to be formatted. This sets clear expectations.
 - If you can, provide some data or information for Copilot to use. This helps ground the response in the right context.
-- Don't be afraid to tweak your prompts based on previous responses. Iterating helps refine the results.
 
 > [!NOTE]
 > Don't worry if you don't get the response you are looking for the first time. With Copilot, you can **iterate** by asking it to refine the results. Let's say you used Copilot to create a menu for a dinner party, but you forgot you need vegetarian options. Simply ask Copilot to update the menu to include a vegetarian dish. This way, you can keep refining your prompts until you get the perfect result.
 >
 > ![Image of person cooking in a kitchen.](../media/03-food.jpg)
 
-## Identify easy opportunities to try AI
-
-The following table gives you some examples of good, better, and best prompts to help with some everyday tasks.These examples help you create prompts that make the most of AI, making your tasks simpler and more effective.
+The following table includes some everyday tasks that you could co-create with AI, and include examples of good, better, and best prompts.These examples help you create prompts that make the most of AI, making your tasks simpler and more effective.
 
 | Task | Good | Better | Best |
 |----------------|------|--------|------|
@@ -35,7 +32,7 @@ The following image shows the playlist the copilot generated using the "best" pr
 
 ![Copilot-generated playlist of 10 songs.](../media/03-playlist.jpg)
 
-Now that you know how to create effective prompts, try identifying things in your daily routine where AI can help you save time or be more creative.
+Now that you know what it takes to craft effective prompts, try identifying things in your daily routine where AI can help you save time or be more creative.
 
 > [!IMPORTANT] 
 > **Build your AI habit:**

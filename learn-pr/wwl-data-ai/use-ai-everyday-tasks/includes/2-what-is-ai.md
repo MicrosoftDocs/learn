@@ -2,8 +2,6 @@ Generative AI focuses on creating new, unique content, based on the input you pr
 
 People usually interact with generative AI built into a chat application. One popular example of such an application is [Microsoft Copilot](https://copilot.microsoft.com/), an AI-powered productivity tool designed to enhance your work experience by providing real-time intelligence and assistance.
 
-> ![Screenshot of the Copilot welcome page](../media/02-copilot-welcome.jpg)
-
 > [!NOTE]
 > **Behind the scenes**: Generative AI doesn't just copy or rearrange existing information; it creates something new that didn't exist before. Generative AI uses large language models (LLMs) that are trained on huge amounts of data to create outputs that are similar to the data they were trained on. Some common uses of generative AI include creating natural language text using natural language processing (NLP), generating images, and writing computer code.
 >
@@ -57,7 +55,7 @@ AI can act as your personal assistant, helping you manage various aspects of you
 
 With AI as your personal assistant, you can streamline your daily activities, stay organized, and focus on what matters most to you.
 
-> [!NOTE]
+> [!IMPORTANT]
 >
 > ### **Responsible AI**
 >

@@ -11,6 +11,8 @@ In this module we use Microsoft Copilot to interact with generative AI. To follo
 2. Step 2 ...
 3. Step 3 ...
 
+> ![Screenshot of the Copilot welcome page](../media/02-copilot-welcome.jpg)
+
 ## Personalize sample prompts
 To start, we'll practice creating personalized AI prompts. Below are a few fill-in-the-blank prompts. Your task is to fill in the blanks with specific details such as goals, timelines, topics, or other relevant information. This will help you create clear and effective prompts for Copilot.
 

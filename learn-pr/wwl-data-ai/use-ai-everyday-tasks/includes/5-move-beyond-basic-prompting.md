@@ -61,4 +61,4 @@ The real power, though, comes from the flow of using Copilot **across** apps. In
 
 > [!VIDEO https://www.youtube.com/watch?v=gOq46gEO8h8]
 
-Now that you've learned a lot about using AI, let's test your knowledge.
+Now that you've learned a lot about what generative AI is and how to use it, let's test your knowledge.
