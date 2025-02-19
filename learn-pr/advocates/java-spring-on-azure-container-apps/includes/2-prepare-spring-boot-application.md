@@ -4,7 +4,7 @@ The Spring PetClinic is a simple web application that manages a list of veterina
 
 ## Prerequisites
 
-- An Azure account. If you don't have one, [create an account for free](https://azure.microsoft.com/free/). You need the `Contributor` or `Owner` permission for the Azure subscription to proceed. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
+- An Azure account. If you don't have one, [create an account for free](https://azure.microsoft.com/free/). You need the `Contributor` or `Owner` permission on the Azure subscription to proceed. For more information, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal).
 - [Git](https://git-scm.com/downloads)
 - [The Azure CLI](/cli/azure/install-azure-cli)
 
@@ -28,7 +28,7 @@ git clone https://github.com/Azure-Samples/azure-container-apps-java-samples.git
 
 ## Run the application locally
 
-Before deploying the PetClinic application, ensure that it runs successfully on your local machine, by using the following steps:
+Before deploying the PetClinic application, ensure that it runs successfully on your local machine by using the following steps:
 
 1. Navigate to the project directory by using the following command:
 
@@ -100,4 +100,4 @@ Before deploying the PetClinic application, ensure that it runs successfully on 
 
 ## Database configuration
 
-By default, the PetClinic application uses an in-memory H2 database that is automatically populated with data during startup. The H2 console is accessible at [http://localhost:8080/h2-console](http://localhost:8080/h2-console), allowing you to inspect the database content via the URL `jdbc:h2:mem:<uuid>`. The specific UUID is displayed in the console when the application starts.
+By default, the PetClinic application uses an in-memory H2 database that's automatically populated with data during startup. The H2 console is accessible at [http://localhost:8080/h2-console](http://localhost:8080/h2-console), enabling you to inspect the database content via the URL `jdbc:h2:mem:<UUID>`. The specific UUID is displayed in the console when the application starts.

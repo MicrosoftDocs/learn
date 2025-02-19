@@ -30,9 +30,9 @@ To sign in to the latest version of the Azure CLI, use the following steps, and 
 
     ### [PowerShell](#tab/powershell)
 
-    ```powershell
+    ```azurepowershell
     Install-Module -Name Az -Scope CurrentUser `
-    -Repository PSGallery -Force
+        -Repository PSGallery -Force
     ```
 
     ---
@@ -42,7 +42,7 @@ Next, install or update the Azure Container Apps extension for the CLI, and regi
 > [!IMPORTANT]
 > If you receive errors about missing parameters when you run `az containerapp` commands in the Azure CLI, be sure you have the latest version of the Azure Container Apps extension installed.
 
-1. First, install or update the Azure Container Apps extension by using the following command - or commands, depending on whether you're using the Azure CLI or Azure PowerShell:
+1. First, install or update the Azure Container Apps extension by using the following command or commands:
 
     ### [Bash](#tab/bash)
 
@@ -52,14 +52,14 @@ Next, install or update the Azure Container Apps extension for the CLI, and regi
 
     ### [PowerShell](#tab/powershell)
 
-    ```powershell
+    ```azurepowershell
     Install-Module -Name Az.App
     Update-Module -Name Az.App
     ```
 
     ---
 
-1. Now that the current extension or module is installed, register the `Microsoft.App` and `Microsoft.OperationalInsights` namespaces by using the following commands:
+1. Register the `Microsoft.App` and `Microsoft.OperationalInsights` namespaces by using the following commands:
 
     ### [Bash](#tab/bash)
 
@@ -79,7 +79,7 @@ Next, install or update the Azure Container Apps extension for the CLI, and regi
 
 ## Create environment variables
 
-Now that your Azure CLI setup is set up, define the environment variables needed throughout this article by using the following commands:
+Define the environment variables needed throughout this article by using the following commands:
 
 ### [Bash](#tab/bash)
 
@@ -103,11 +103,11 @@ $Env:APP_NAME = "petclinic"
 
 ## Locate the sample code
 
-Since you already prepared the code sample in the last chapter, make sure that you're now in the **azure-container-apps-java-samples/spring-petclinic/spring-petclinic** directory of the project.
+Navigate to the **azure-container-apps-java-samples/spring-petclinic/spring-petclinic** directory of the project.
 
 ## Build and deploy the container app
 
-Next, build and deploy your first Spring Boot app with the `containerapp up` command, which accomplishes the following tasks:
+Build and deploy your first Spring Boot app with the `containerapp up` command, which accomplishes the following tasks:
 
 - Creates the resource group.
 - Creates an Azure container registry.
@@ -115,7 +115,7 @@ Next, build and deploy your first Spring Boot app with the `containerapp up` com
 - Creates the Container Apps environment with a Log Analytics workspace.
 - Creates and deploys the container app using the built container image.
 
-The `containerapp up` command uses the Dockerfile in the root of the repository to build the container image. Use the following code example to build the container image, where the `..` (dot dot) tells the `containerapp up` command to run the Dockerfile in the folder one level up:
+The `containerapp up` command uses the Dockerfile in the root of the repository to build the container image. Use the following command to build the container image. The `..` (dot dot) tells the `containerapp up` command to run the Dockerfile in the parent folder.
 
 ### [Bash](#tab/bash)
 
@@ -130,7 +130,7 @@ az containerapp up \
 
 ### [PowerShell](#tab/powershell)
 
-```azurepowershell
+```powershell
 az containerapp up `
     --resource-group $RESOURCE_GROUP `
     --name $APP_NAME `
@@ -143,7 +143,7 @@ az containerapp up `
 
 ## Verify deployment
 
-Once your deployment is done, you should be able to see a success message with the project endpoint printed in the console. You can open the URL to verify that your project deployed to Azure.
+After your deployment is complete, you should see the following success message with the project endpoint printed in the console. You can open the URL to verify that your project deployed to Azure.
 
 ```output
 Run ID: cxl was successful after 3m30s

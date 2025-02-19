@@ -6,7 +6,7 @@ metadata:
   description: Check your knowledge of Java on Azure Container Apps.
   author: KarlErickson
   ms.author: hangwan
-  ms.date: 02/14/2025
+  ms.date: 02/18/2025
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
@@ -24,7 +24,7 @@ quiz:
           explanation: "Setting `spring.profiles.active` doesn't automatically connect to any PostgreSQL database. The database connection still needs to be configured manually."
         - content: "It activates a specific Spring profile that configures the application to use PostgreSQL instead of the default H2 database."
           isCorrect: true
-          explanation: "This is correct; the `spring.profiles.active` variable activates the PostgreSQL configuration within the Spring application."
+          explanation: "This is correct. The `spring.profiles.active` variable activates the PostgreSQL configuration within the Spring application."
         - content: "It creates a new PostgreSQL database automatically if one isn't already specified."
           isCorrect: false
           explanation: "This is incorrect. Setting the profile doesn't create a new PostgreSQL database."
@@ -35,13 +35,13 @@ quiz:
       choices:
         - content: "Automatic memory fitting tailored for Java applications, optimizing resource usage."
           isCorrect: false
-          explanation: "Correct. The Java stack includes automatic memory fitting, optimizing memory usage for Java applications."
+          explanation: "The Java stack includes automatic memory fitting, but it isn't the only benefit."
         - content: "Access to built-in JVM metrics for tracking memory usage, garbage collection, and thread count."
           isCorrect: false
-          explanation: "Correct. The Java stack provides JVM-level metrics that help monitor application health and performance."
+          explanation: "The Java stack provides JVM-level metrics that help monitor application health and performance, but it isn't the only benefit."
         - content: "Built-in Java diagnostics tools to monitor application health and performance."
           isCorrect: false
-          explanation: "Correct. Built-in diagnostics tools are part of the Java stack, enabling deeper monitoring and troubleshooting."
+          explanation: "Built-in diagnostics tools are part of the Java stack, but it isn't the only benefit."
         - content: "All of the above."
           isCorrect: true
           explanation: "Correct. All of the listed features are benefits provided by the Java stack in Azure Container Apps."
@@ -56,4 +56,3 @@ quiz:
         - content: "Azure Front Door"
           isCorrect: false
           explanation: "Incorrect. Azure Front Door is a global load balancer, and isn't automatically created when deploying applications in Azure Container Apps."
-              

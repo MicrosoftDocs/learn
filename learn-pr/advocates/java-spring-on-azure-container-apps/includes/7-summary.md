@@ -12,7 +12,7 @@ az group delete --name $RESOURCE_GROUP
 
 ### [PowerShell](#tab/powershell)
 
-```azurepowershell
+```powershell
 az group delete --name $RESOURCE_GROUP
 ```
 

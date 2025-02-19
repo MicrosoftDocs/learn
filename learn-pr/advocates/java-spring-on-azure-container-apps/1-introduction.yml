@@ -6,7 +6,7 @@ metadata:
   description: This unit introduces how to deploy a Spring Boot app to Azure Container Apps.
   author: KarlErickson
   ms.author: hangwan
-  ms.date: 02/14/2025
+  ms.date: 02/18/2025
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
