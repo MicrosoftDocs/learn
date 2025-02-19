@@ -1,10 +1,10 @@
 There are two risk policies that can be enabled in the directory:
 
- -  **Sign-in risk policy**: The sign-in risk policy detects suspicious actions that come along with the sign-in. It's focused on the sign-in activity itself and analyzes the probability that the sign-in was performed by some other than the user.
+- **Sign-in risk policy**: The sign-in risk policy detects suspicious actions that come along with the sign-in. It's focused on the sign-in activity itself and analyzes the probability that the sign-in was performed by some other than the user.
     
-    :::image type="content" source="../media/identity-protection-security-overview-e4218feb-e4822f8b.png" alt-text="Screenshot of the Security overview page to enable user and sign-in risk policies.":::
+   :::image type="content" source="../media/identity-protection-security-overview.png" alt-text="Screenshot of the Security overview page to enable user and sign-in risk policies.":::
     
- -  **User risk policy**: The user risk policy detects the probability that a user account has been compromised by detecting risk events that are atypical of a user's behavior.
+- **User risk policy**: The user risk policy detects the probability that a user account has been compromised by detecting risk events that are atypical of a user's behavior.
 
 Both policies work to automate the response to risk detections in your environment and allow users to self-remediate when risk is detected.
 
@@ -12,7 +12,7 @@ Both policies work to automate the response to risk detections in your environme
 
 In this video, learn how to deploy Microsoft Entra Identity Protection by configuring risk-based policies (user risk and sign-in risk) in your organization. You also learn best practices on how to gradually roll out these policies and MFA registration in your organization.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c1974080-b372-4051-8100-ad7eb5b1bfb0]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MxmD]
 
 ## Prerequisites
 

@@ -1,8 +1,8 @@
 Identity Protection is a service that enables organizations to view the security posture of any account. Organizations can accomplish three key tasks:
 
- -  Automate the detection and remediation of identity-based risks.
- -  Investigate risks using data in the portal.
- -  Export risk detection data to third-party utilities for further analysis.
+- Automate the detection and remediation of identity-based risks.
+- Investigate risks using data in the portal.
+- Export risk detection data to third-party utilities for further analysis.
 
 Always remember that Microsoft Entra Identity Protection requires a Microsoft Entra ID Premium P2 license to operate. Licensing is covered in more detail in a later unit.
 
