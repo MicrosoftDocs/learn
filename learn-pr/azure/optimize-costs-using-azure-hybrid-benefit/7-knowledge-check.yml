@@ -72,14 +72,14 @@ quiz:
       isCorrect: false
       explanation: This is incorrect. Customers should use Cost Management to analyze, monitor, and optimize their Microsoft Cloud costs.
 
-  - content: Assume that you're running a Windows Server 2022-based VM in Azure, with D8as_v6 size, in the East US region. The monthly cost of this virtual machine is $533.63, which results in $0.731 per hour (on a 730 hours per month basis). Assume that a 3-year reservation reduces the hourly rate to $0.55 per hour and that Azure Hybrid Benefit reduces the cost by 50 percent. When these two benefits are combined, how much will you save on a monthly basis and on a yearly basis?
+  - content: Assume that you're running a Windows Server 2022-based VM in Azure, with D8as_v6 size, in the East US region. The monthly cost of this virtual machine is '$533.63', which results in '$0.731' per hour (on a 730 hours per month basis). Assume that a 3-year reservation reduces the hourly rate to '$0.55' per hour and that Azure Hybrid Benefit reduces the cost by 50 percent. When these two benefits are combined, how much will you save on a monthly basis and on a yearly basis?
     choices:
-    - content: "Savings per month: $290.5, savings per year: $3,486."
+    - content: "Savings per month: '$290.5', savings per year: '$3,486'."
       isCorrect: false
       explanation: "This is incorrect. The monthly cost of this VM when a 3-year Azure reservation is applied is reduced to: $401.50 ($0.55 per hour x 730 hours) . With Azure Hybrid Benefit applied, the monthly cost of this VM is reduced to: $266.81 ($0.3655 per hour x 730 hours). When both are applied, the VM's monthly cost is reduced to: $200.75 ($0.275 per hour x 730 hours.). Savings per month is $533.63 - $200.75, which results in $332,88 per month, and $3994,56 per year."
-    - content: "Savings per month: $332.88, savings per year: $3994.56."
+    - content: "Savings per month: '$332.88', savings per year: '$3994.56'."
       isCorrect: true
       explanation: "This is correct. The monthly cost of this VM when a 3-year Azure reservation is applied is reduced to: $401.50 ($0.55 per hour x 730 hours). With Azure Hybrid Benefit applied, the monthly cost of this VM is reduced to: $266.81 ($0.3655 per hour x 730 hours). When both are applied, the VM's monthly cost is reduced to: $200.75 ($0.275 per hour x 730 hours.). Savings per month is $533.63 - $200.75, which results in $332,88 per month, and $3994,56 per year."
-    - content: "Savings per month: $356.11, saving per year: $4,273.32."
+    - content: "Savings per month: '$356.11', saving per year: '$4,273.32'."
       isCorrect: false
       explanation: "This is incorrect. The monthly cost of this VM when a 3-year Azure reservation is applied is reduced to: $401.50 ($0.55 per hour x 730 hours) . With Azure Hybrid Benefit applied, the monthly cost of this VM is reduced to: $266.81 ($0.3655 per hour x 730 hours). When both are applied, the VM's monthly cost is reduced to: $200.75 ($0.275 per hour x 730 hours.). Savings per month is $533.63 - $200.75, which results in $332,88 per month, and $3994,56 per year."
