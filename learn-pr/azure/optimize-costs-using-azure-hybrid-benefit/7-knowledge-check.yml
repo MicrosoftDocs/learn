@@ -6,7 +6,7 @@ metadata:
   description: This is the knowledge check for the Optimize costs by using Azure Hybrid Benefit module.
   ms.date: 02/18/2025
   author: skpmcdowell
-  ms.author: Shameka McDowell
+  ms.author: mariajosef
   ms.topic: unit
 durationInMinutes: 5
 quiz:
