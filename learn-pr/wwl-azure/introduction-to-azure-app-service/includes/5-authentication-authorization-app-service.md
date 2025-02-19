@@ -16,18 +16,20 @@ App Service uses federated identity, in which a third-party identity provider ma
 
 | Provider | Sign-in endpoint | How-To guidance |
 |--|--|--|
-| Microsoft identity platform | `/.auth/login/aad` | [App Service Microsoft identity platform login](/azure/app-service/configure-authentication-provider-aad) |
+| Microsoft Entra | `/.auth/login/aad` | [App Service Microsoft Entra platform login](/azure/app-service/configure-authentication-provider-aad) |
 | Facebook | `/.auth/login/facebook` | [App Service Facebook login](/azure/app-service/configure-authentication-provider-facebook) |
 | Google | `/.auth/login/google` | [App Service Google login](/azure/app-service/configure-authentication-provider-google) |
-| X | `/.auth/login/twitter` | [App Service X login](/azure/app-service/configure-authentication-provider-twitter) |
+| X | `/.auth/login/x` | [App Service X login](/azure/app-service/configure-authentication-provider-twitter) |
 | Any OpenID Connect provider | `/.auth/login/<providerName>` | [App Service OpenID Connect login](/azure/app-service/configure-authentication-provider-openid-connect) |
 | GitHub | `/.auth/login/github` | [App Service GitHub login](/azure/app-service/configure-authentication-provider-github) |
 
-When you enable authentication and authorization with one of these providers, its sign-in endpoint is available for user authentication and for validation of authentication tokens from the provider. You can provide your users with any number of these sign-in options.
+When you configure this feature with one of these providers, its sign-in endpoint is available for user authentication and for validation of authentication tokens from the provider. You can provide your users with any number of these sign-in options.
 
 ## How it works
 
-The authentication and authorization module runs in the same sandbox as your application code. When enabled, every incoming HTTP request passes through it before being handed to your application code. This module handles several things for your app:
+The authentication and authorization middleware component is a feature of the platform that runs on the same VM as your application. When enabled, every incoming HTTP request passes through it before being handled by your application.
+
+The platform middleware handles several things for your app:
 
 * Authenticates users and clients with the specified identity provider
 * Validates, stores, and refreshes OAuth tokens issued by the configured identity provider
@@ -37,7 +39,7 @@ The authentication and authorization module runs in the same sandbox as your app
 The module runs separately from your application code and can be configured using Azure Resource Manager settings or using a configuration file. No SDKs, specific programming languages, or changes to your application code are required.
 
 > [!NOTE]
-> In Linux and containers the authentication and authorization module runs in a separate container, isolated from your application code. Because it does not run in-process, no direct integration with specific language frameworks is possible.
+> In Linux and containers the authentication and authorization module runs in a separate container, isolated from your application code. Because it doesn't run in-process, no direct integration with specific language frameworks is possible.
 
 ### Authentication flow
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-identify-mitigate-ai-risks.configure-dspm-ai
+title: Configure DSPM for AI
+metadata:
+  title: Configure DSPM for AI
+  description: "Configure DSPM for AI."
+  ms.date: 2/6/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/configure-dspm-ai.md)]

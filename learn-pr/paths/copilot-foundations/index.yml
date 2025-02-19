@@ -3,7 +3,7 @@ uid: learn.wwl.copilot-foundations
 metadata:
   title: Copilot Foundations AI-3018
   description: Learn about generative AI and how to use copilots with Copilot Studio and Azure AI Foundry. (AI-3018)
-  ms.date: 05/24/2024
+  ms.date: 02/05/2025
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
@@ -28,7 +28,7 @@ subjects:
 modules:
 - learn.wwl.fundamentals-generative-ai
 - learn-bizapps.power-virtual-agent-bots
-- learn.wwl.introduction-to-azure-ai-studio
+- learn.wwl.prepare-azure-ai-development
 - learn.wwl.build-copilot-ai-studio
 trophy:
   uid: learn.wwl.copilot-foundations.trophy

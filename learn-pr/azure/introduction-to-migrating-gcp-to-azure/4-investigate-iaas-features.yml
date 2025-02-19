@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-gcp-azure.investigate-iaas-features
+title: Investigate IaaS features
+metadata:
+  title: Investigate IaaS Features
+  description: "Learn about compute, networking, and storage services available in Microsoft Azure."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-investigate-iaas-features.md)]

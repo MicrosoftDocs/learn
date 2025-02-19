@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-network-security-groups.implement
 title: Implement network security groups
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement network security groups
   description: "Implement network security groups"
-  ms.date: 12/13/2024
+  ms.date: 02/12/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

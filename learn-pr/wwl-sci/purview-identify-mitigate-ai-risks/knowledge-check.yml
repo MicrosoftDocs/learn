@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-identify-mitigate-ai-risks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/06/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your organization is concerned about AI-related data security risks. How does Microsoft Purview Data Security Posture Management (DSPM) for AI help mitigate these risks?"
+    choices:
+    - content: "It provides visibility into AI interactions, enforces security policies, and prevents unauthorized data exposure."
+      isCorrect: true
+      explanation: "Correct: DSPM for AI helps organizations track AI usage, apply security controls, and ensure compliance with data protection policies."
+    - content: "It blocks all AI activity by default to prevent security risks."
+      isCorrect: false
+      explanation: "Incorrect: DSPM for AI doesn't block AI activity by default but provides monitoring and policy enforcement to reduce risks."
+    - content: "It replaces traditional data loss prevention (DLP) policies with AI-specific rules."
+      isCorrect: false
+      explanation: "Incorrect: DSPM for AI works alongside DLP policies but doesn't replace them."
+
+  - content: "A security team wants to track non-Microsoft AI usage in the organization. What prerequisite should they configure?"
+    choices:
+    - content: "Enable Microsoft Defender for Endpoint."
+      isCorrect: false
+      explanation: "Incorrect: While Defender provides security protections, it isn't required for DSPM for AI to track AI activity."
+    - content: "Assign Microsoft Copilot licenses to all users."
+      isCorrect: false
+      explanation: "Incorrect: Copilot licenses are required for Microsoft 365 Copilot usage but don't enable tracking of non-Microsoft AI tools."
+    - content: "Install the Microsoft Purview browser extension."
+      isCorrect: true
+      explanation: "Correct: The browser extension is required to monitor non-Microsoft AI site visits and interactions."
+
+  - content: "Your organization wants to prevent AI tools from summarizing sensitive files in SharePoint. Which DSPM for AI feature helps with this?"
+    choices:
+    - content: "AI-generated content review"
+      isCorrect: false
+      explanation: "Incorrect: While DSPM for AI helps monitor AI-generated content, DLP policies specifically enforce restrictions on AI interactions."
+    - content: "Data loss prevention (DLP) policies"
+      isCorrect: true
+      explanation: "Correct: DSPM for AI integrates with DLP policies to prevent AI tools like Copilot from summarizing labeled or classified content."
+    - content: "Activity Explorer tracking"
+      isCorrect: false
+      explanation: "Incorrect: Activity Explorer helps investigate AI interactions but doesn't enforce data security policies."
+
+  - content: "A security analyst needs to review AI usage trends across Microsoft 365 Copilot and non-Microsft AI tools. Which report should they use?"
+    choices:
+    - content: "Total interactions over time"
+      isCorrect: true
+      explanation: "Correct: This report provides insights into AI usage patterns, helping security teams monitor adoption and detect anomalies."
+    - content: "Sensitive interactions per AI app"
+      isCorrect: false
+      explanation: "Incorrect: This report focuses on AI applications that process sensitive data, not overall AI usage trends."
+    - content: "Top sensitivity labels referenced in Copilot"
+      isCorrect: false
+      explanation: "Incorrect: This report highlights labeled content referenced in Copilot but doesn't track overall AI usage."
+
+  - content: "What is the purpose of AI data assessments in DSPM for AI?"
+    choices:
+    - content: "To block AI-generated content from being saved in SharePoint."
+      isCorrect: false
+      explanation: "Incorrect: Data assessments identify security risks but don't block AI-generated content."
+    - content: "To delete all files accessed by AI tools."
+      isCorrect: false
+      explanation: "Incorrect: Data assessments don't delete files but provide insights into AI-related security risks."
+    - content: "To identify sensitive data that AI tools might access and help enforce security controls."
+      isCorrect: true
+      explanation: "Correct: AI data assessments help security teams identify and mitigate risks related to AI interactions with sensitive data."

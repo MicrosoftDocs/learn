@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.ai-agent-fundamentals
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Fundamentals of AI agents on Azure
+  description: AI agents represent the next generation of intelligent applications. Learn how they can be developed and used on Microsoft Azure.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 11/25/2024
+  ms.service: azure-ai-services
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: ignite-2023, ai-learning-hub
+title: Fundamentals of AI agents on Azure
+summary: "AI agents represent the next generation of intelligent applications. Learn how they can be developed and used on Microsoft Azure."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe core concepts related to AI agents
+    - Describe options for agent development
+    - Create and test an agent in the Azure AI Foundry portal
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - ai-engineer
+  - data-scientist
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - azure
+  - ai-services
+subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - artificial-intelligence
+units:
+- learn.wwl.ai-agent-fundamentals.introduction
+- learn.wwl.ai-agent-fundamentals.what-are-ai-agents
+- learn.wwl.ai-agent-fundamentals.agent-development
+- learn.wwl.ai-agent-fundamentals.azure-ai-agent-service
+- learn.wwl.ai-agent-fundamentals.exercise
+- learn.wwl.ai-agent-fundamentals.knowledge-check
+- learn.wwl.ai-agent-fundamentals.summary
+badge:
+  uid: learn.wwl.ai-agent-fundamentals.badge
+

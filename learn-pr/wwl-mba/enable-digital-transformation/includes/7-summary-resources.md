@@ -1,4 +1,4 @@
-Digital technologies are reshaping industries and enterprises. The Microsoft approach to digital transformation can help organizations across any industry reimagine how to bring together people, data, and processes to create value for customers and maintain a competitive advantage in a digital-first world.
+Digital technologies are reshaping industries and enterprises. The Microsoft approach to digital transformation can help organizations across any industry reimagine how to bring together people, data, and processes to create value for customers and maintain a competitive advantage in a digital-first culture.
 
 Now that you have reviewed this module, you should be able to:
 - Define digital transformation.

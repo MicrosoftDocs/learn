@@ -14,4 +14,4 @@ Other visualizations, such as a map, help to show data patterns that would other
 
 In this video, you'll see how data can be represented using different types of visualizations, and how easy it makes reading the patterns within a dataset:
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=20f02e48-0af5-40b0-8b9d-ce1a26663261]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Ubep]

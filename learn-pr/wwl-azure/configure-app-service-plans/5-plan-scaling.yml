@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Azure App Service autoscale
   description: "Configure Azure App Service autoscale"
-  ms.date: 01/29/2025
+  ms.date: 02/12/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

@@ -54,13 +54,14 @@ subjects:
   - productivity
   - site-reliability-engineering
 units:
-  - learn.wwl.observability-continuous-improvement.introduction
-  - learn.wwl.observability-continuous-improvement.importance-observability-modern-platforms
-  - learn.wwl.observability-continuous-improvement.build-observability-platform-architecture
-  - learn.wwl.observability-continuous-improvement.metrics-monitoring-alerts
-  - learn.wwl.observability-continuous-improvement.automation-incident-detection-resolution
-  - learn.wwl.observability-continuous-improvement.continuous-improvement-through-feedback-loops
-  - learn.wwl.observability-continuous-improvement.knowledge-check
-  - learn.wwl.observability-continuous-improvement.summary
+- learn.wwl.observability-continuous-improvement.introduction
+- learn.wwl.observability-continuous-improvement.importance-observability-modern-platforms
+- learn.wwl.observability-continuous-improvement.build-observability-platform-architecture
+- learn.wwl.observability-continuous-improvement.metrics-monitoring-alerts
+- learn.wwl.observability-continuous-improvement.automation-incident-detection-resolution
+- learn.wwl.observability-continuous-improvement.continuous-improvement-through-feedback-loops
+- learn.wwl.observability-continuous-improvement.implementing-real-time-monitoring-with-azure-monitor
+- learn.wwl.observability-continuous-improvement.knowledge-check
+- learn.wwl.observability-continuous-improvement.summary
 badge:
   uid: learn.wwl.observability-continuous-improvement.badge

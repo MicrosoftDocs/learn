@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-functions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Functions
   description: "Learn how Azure Functions can be a great solution for data processing, systems integration, and building simple APIs and microservices."
-  ms.date: 12/06/2024
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
@@ -12,7 +14,7 @@ metadata:
   - N/A
   - ai-learning-hub
   ms.service: azure-functions
-  ai-usage: human-only
+  ai-usage: ai-generated
 title: Explore Azure Functions
 summary: Learn how Azure Functions can be a great solution for data processing, systems integration, and building simple APIs and microservices.
 abstract: |
