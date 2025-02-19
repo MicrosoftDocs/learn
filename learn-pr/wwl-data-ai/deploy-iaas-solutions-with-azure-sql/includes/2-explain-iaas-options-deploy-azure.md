@@ -33,7 +33,6 @@ Extensions are code that is executed on your VM post-deployment, typically to pe
 
 In addition to these features, the extension allows you to view information about your SQL Server’s configuration and storage utilization.
 
-<UPDADE IMG>
 :::image type="content" source="../media/module-11-azure-dba-final-02.png" alt-text="Image of SQL Virtual Machine Configuration in Azure portal":::
 
 ## SQL Server licensing models
