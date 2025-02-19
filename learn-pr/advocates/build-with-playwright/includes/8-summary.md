@@ -8,8 +8,6 @@ In this module you learned the core concepts of Playwright for automated end to 
 * Explored the trace viewer
 * Took a detailed view of the tests to understand how tests are written using fixtures, locators and assertions
 * Installed the VS Code extension and learned how to run our tests, debug our tests and generate our tests all from VS Code
-* Created a test using Playwrights test generator, Codegen
-* Manually created a test spec and used a describe block, beforeEach hook, a baseURL and created a reusable locator.
 
   
 
