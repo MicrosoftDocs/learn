@@ -2,9 +2,9 @@ The Azure platform provides many solutions, services, and tools that you can use
 
 :::image type="content" source="../media/ahb-with-reservations.png" alt-text="Illustration comparing the savings between using Azure Hybrid Benefit versus using Azure Hybrid Benefit and Azure Reservations." border="false":::
 
-Azure Savings Plan enables you to save on Azure compute costs by committing to a consistent amount of usage over a one- or three-year perio1. This commitment provides you with lower prices compared to pay-as-you-go rates. Savings can range from 11 percent to 65 percent, depending on the services and regions you use.
+Azure Savings Plan enables you to save on Azure compute costs by committing to a consistent amount of usage over a one- or three-year perio- This commitment provides you with lower prices compared to pay-as-you-go rates. Savings can range from 11 percent to 65 percent, depending on the services and regions you use.
 
-### Combining savings plan with Azure Hybrid Benefit
+### Combine savings plan with Azure Hybrid Benefit
 
 You can combine Azure Savings Plan with Azure Hybrid Benefit to optimize your cost savings.
 
@@ -12,41 +12,41 @@ You can combine Azure Savings Plan with Azure Hybrid Benefit to optimize your co
 
 Let's consider an example to understand the savings:
 
-1. **Without Azure savings plans and Azure Hybrid Benefit**:
+- **Without Azure savings plans and Azure Hybrid Benefit**:
 
-    1. You run a D4s_v4 VM (4 vCPUs, 16 GB RAM) in the East US region.
+    - You run a D4s_v4 VM (4 vCPUs, 16 GB RAM) in the East US region.
 
-    1. Pay-as-you-go rate: $0.20 per hour
+    - Pay-as-you-go rate: $0.20 per hour
 
-    1. Monthly cost: $0.20 × 730 hours = $146
+    - Monthly cost: $0.20 × 730 hours = $146
 
-1. **With Azure Savings Plan**:
+- **With Azure Savings Plan**:
 
-    1. Assume a 3-year savings plan reduces the rate to $0.15 per hour.
+    - Assume a 3-year savings plan reduces the rate to $0.15 per hour.
 
-    1. Monthly cost: $0.15 × 730 hours = $109.50
+    - Monthly cost: $0.15 × 730 hours = $109.50
 
-    1. Savings: $146 - $109.50 = $36.50/month
+    - Savings: $146 - $109.50 = $36.50/month
 
-1. **With Azure Hybrid Benefit**:
+- **With Azure Hybrid Benefit**:
 
-    1. Assume Azure Hybrid Benefit reduces the software cost by 50 percent.
+    - Assume Azure Hybrid Benefit reduces the software cost by 50 percent.
 
-    1. New rate: $0.10 per hour
+    - New rate: $0.10 per hour
 
-    1. Monthly cost: $0.10 × 730 hours = $73
+    - Monthly cost: $0.10 × 730 hours = $73
 
-    1. 1 10 Savings: $146 - $73 = $73 per month
+    - Savings: $146 - $73 = $73 per month
 
-1. **Combining Both**:
+- **Combining Both**:
 
-    1. Apply both Azure Savings Plan and Azure Hybrid Benefit.
+    - Apply both Azure Savings Plan and Azure Hybrid Benefit.
 
-    1. New rate: $0.075 per hour
+    - New rate: $0.075 per hour
 
-    1. Monthly cost: $0.075 × 730 hours = $54.75
+    - Monthly cost: $0.075 × 730 hours = $54.75
 
-    1. Total savings: $146 - $54.75 = $91.25 per month
+    - Total savings: $146 - $54.75 = $91.25 per month
 
 ### Azure Reservations and Azure Hybrid Benefit
 
@@ -58,38 +58,38 @@ Azure Reservations enable you to save on your Azure costs by committing to a one
 
 Let's consider an example to understand the savings:
 
-1. **Without Azure Reservations and Azure Hybrid Benefit**:
+- **Without Azure Reservations and Azure Hybrid Benefit**:
 
-    1. You run a D8s_v4 VM (8 vCPUs, 32 GB RAM) in the US West 2 region.
+    - You run a D8s_v4 VM (8 vCPUs, 32 GB RAM) in the US West 2 region.
 
-    1. Pay-as-you-go rate: $0.75 per hour
+    - Pay-as-you-go rate: $0.75 per hour
 
-    1. Monthly cost: $0.75 × 730 hours = $547.50
+    - Monthly cost: $0.75 × 730 hours = $547.50
 
-1. **With Azure Reservations**:
+- **With Azure Reservations**:
 
-    1. Assume a 3-year reservation reduces the rate to $0.50 per hour.
+    - Assume a 3-year reservation reduces the rate to $0.50 per hour.
 
-    1. Monthly cost: $0.50 × 730 hours = $365
+    - Monthly cost: $0.50 × 730 hours = $365
 
-    1. Savings: $547.50 - $365 = $182.50 per month
+    - Savings: $547.50 - $365 = $182.50 per month
 
-1. **With Azure Hybrid Benefit**:
+- **With Azure Hybrid Benefit**:
 
-    1. Assume Azure Hybrid Benefit reduces the software cost by 50%.
+    - Assume Azure Hybrid Benefit reduces the software cost by 50%.
 
-    1. New rate: $0.375 per hour
+    - New rate: $0.375 per hour
 
-    1. Monthly cost: $0.375 × 730 hours = $273.75
+    - Monthly cost: $0.375 × 730 hours = $273.75
 
-    1. Savings: $547.50 - $273.75 = $273.75 per month
+    - Savings: $547.50 - $273.75 = $273.75 per month
 
-1. **Combining Both**:
+- **Combining Both**:
 
-    1. Apply both Azure Reservations and Azure Hybrid Benefit.
+    - Apply both Azure Reservations and Azure Hybrid Benefit.
 
-    1. New rate: $0.25 per hour
+    - New rate: $0.25 per hour
 
-    1. Monthly cost: $0.25 × 730 hours = $182.50
+    - Monthly cost: $0.25 × 730 hours = $182.50
 
-    1. Total savings: $547.50 - $182.50 = $365 per month
+    - Total savings: $547.50 - $182.50 = $365 per month

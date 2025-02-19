@@ -17,7 +17,7 @@ You can track your Azure Hybrid Benefit use in the Azure portal by completing th
 1. **Create custom reports.** To create custom reports to track Azure Hybrid Benefit use over time, you can download the data from the **Cost analysis** view by selecting **Export**. If you want to analyze the data further, select the format you want the data exported in, such as CSV or Microsoft Excel.
 1. **Set Up cost alerts.** To help stay informed with your Azure Hybrid Benefit usage or avoid unexpected costs, you can set up cost alerts. In the **Cost Management** section, select **Alerts**, and then create new alerts based on your spending and usage thresholds.
 
-### Tracking Azure Hybrid Benefit using Azure Workbooks
+### Track Azure Hybrid Benefit using Azure Workbooks
 
 Azure Workbooks provide a flexible, interactive, and customizable way to visualize and analyze your Azure resources. You can use Azure Workbooks to simplify the management of Azure Hybrid Benefit in your environment. By querying the Azure Resource Graph, the report gathers real-time information about your VM usage of Azure Hybrid Benefit and creates visualizations to help you understand your licensing landscape.
 

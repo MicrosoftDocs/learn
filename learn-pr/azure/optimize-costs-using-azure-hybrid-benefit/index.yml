@@ -38,7 +38,7 @@ units:
 - learn.optimize-costs-using-azure-hybrid-benefit.azure-hybrid-benefit-activation
 - learn.optimize-costs-using-azure-hybrid-benefit.optimize-usage-azure-hybrid-benefit
 - learn.optimize-costs-using-azure-hybrid-benefit.maximize-savings-azure-hybrid-benefit
-- learn.optimize-costs-using-azure-hybrid-benefit.summary
 - learn.optimize-costs-using-azure-hybrid-benefit.knowledge-check
+- learn.optimize-costs-using-azure-hybrid-benefit.summary
 badge:
   uid: learn.optimize-costs-using-azure-hybrid-benefit.badge

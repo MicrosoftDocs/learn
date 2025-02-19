@@ -1,5 +1,3 @@
-### Azure Hybrid Benefit for Windows Server
-
 Azure Hybrid Benefit for Windows Server allows you to use Windows VMs on Azure at a reduced cost. You can use Azure Hybrid Benefit for Windows Server to deploy new VMs with Windows operating systems.
 
 To qualify for Azure Hybrid Benefit for Windows Server, you need on-premises core licenses for Windows Server from an applicable program with active Software Assurance or qualifying subscription licenses. Software Assurance and qualifying subscription licenses are only available as part of certain commercial licensing agreements.
@@ -22,7 +20,7 @@ Azure Hybrid Benefit includes the following cost savings:
 - **Azure Local**. The Azure Local host fee and Windows Server subscription fee are waived with Azure Hybrid Benefit. That is, unlimited virtualization rights are provided at no extra cost. You still pay other costs associated with Azure Local such as customer-managed hardware, Azure services, and workloads. Available for Windows Server Datacenter Edition.
 - **AKS**. You can run AKS on Windows Server and Azure Local at no extra cost. You still pay for the underlying host infrastructure and any licenses for Windows containers unless you're also eligible for Azure Hybrid Benefit for Azure Local. With Azure Hybrid Benefit for Azure Local, you can waive fees for the Azure Local host and Windows Server subscription.
 
-:::image type="content" source="../media/azure-hybrid-benefit-savings-inline.png" alt-text="Screenshot of illustration depicting Azure Hybrid Benefit savings for Windows Server VMs on Azure, AHB for Azure Stack HCI, AHB for AKS on Azure Stack HCI or Windows Server. The last column depicts how combining savings options can help increase the maximum eligibility." lightbox="../media/azure-hybrid-benefit-savings-expanded.png" border="false":::
+:::image type="content" source="../media/azure-hybrid-benefit-savings-inline.png" alt-text="Screenshot of illustration depicting Azure Hybrid Benefit savings for Windows Server VMs on Azure, AHB for Azure Stack HCI, AHB for AKS on Azure Stack HCI or Windows Server." lightbox="../media/azure-hybrid-benefit-savings-expanded.png" border="false":::
 
 The following diagram compares the cost benefits of using AKS on HCI or Windows Server against using AKS without Azure Hybrid Benefit.
 
@@ -43,14 +41,14 @@ Azure Hybrid Benefit provides the following migration allowance rights for Windo
 - **Windows Server Datacenter edition**. You can use any number of Windows Server VMs on an Azure dedicated host if you allocate Windows Server Datacenter licenses with active Software Assurance or subscription for all the available physical cores on that Azure server.
 - **Windows Server Standard edition**. Unlimited virtualization rights aren't available.
 
-#### License allocation for dedicated host licensing (Datacenter only) and azure local
+#### License allocation for dedicated host licensing (Datacenter only) and Azure local
 
 You must allocate enough Windows Server Datacenter core licenses for all physical cores available to the customer on a Dedicated Host or an Azure Local Cluster. Azure Hybrid Benefit for Azure Local is available for Enterprise Agreement (EA) or cloud solution provider (CSP) customers only. You could run unlimited VMs on that host/cluster. When migrating workloads to Azure, the customer could also continue to use its licensed software on devices for a period of 180 days from when the licenses are allocated to Azure.
 
 If you have Windows Server Datacenter licenses with active Software Assurance, you’re eligible to activate Azure Hybrid Benefit for your Azure Local cluster. To activate this benefit, you'll need to exchange your 1-core license of Software Assurance–enabled Windows Server Datacenter for a 1-physical core of Azure Local.
 
 > [!NOTE]
-> Aside from the migration allowances described in the following sections, after the licenses are allocated to Azure, the customer might not use them elsewhere. When at least 90 days have passed, the customer might elect to stop using them for Azure Hybrid Benefit.*
+> Aside from the migration allowances described in the following sections, after the licenses are allocated to Azure, the customer might not use them elsewhere. When at least 90 days have passed, the customer might elect to stop using them for Azure Hybrid Benefit.
 
 ### Azure Hybrid Benefit for SQL Server
 

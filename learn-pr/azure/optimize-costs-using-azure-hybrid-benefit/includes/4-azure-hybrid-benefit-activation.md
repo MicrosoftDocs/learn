@@ -1,8 +1,8 @@
-### Enabling Azure Hybrid Benefit for Windows VMs in Azure
+### Enable Azure Hybrid Benefit for Windows VMs in Azure
 
 One way to activate Azure Hybrid Benefit for a Windows Server VM is during VM creation, to select the checkbox under Licensing as in the following screenshot.
 
-:::image type="content" source="../media/activate-azure-hybrid-benefit-for-windows-server-vm.png" alt-text="Screenshot of the Licensing confirmation box, which explains that you can save up to 49 percent by using an existing Windows Server license, and provides a link to Review your Azure Hybrid Benefit compliance." border="false":::
+:::image type="content" source="../media/activate-azure-hybrid-benefit-for-windows-server-vm.png" alt-text="Screenshot of the Licensing confirmation box, which explains that you can save up to 49 percent by using an existing Windows Server license." border="false":::
 
 If you apply Azure Hybrid Benefit to your Windows Server VMs, verify the number of eligible licenses and the Software Assurance (or subscription) coverage period before you activate this benefit. Use the preceding guidelines to ensure you deploy the correct number of Windows Server VMs with this benefit.
 
@@ -35,9 +35,9 @@ Get-AzVM | ?{$_.LicenseType -like "Windows_Server"} | select ResourceGroupName, 
 
 In the Azure portal, from the Virtual Machine blade or Virtual machine Scale Sets Resource blade, you can review a list of all your VM(s) and licensing types by configuring the table column to include **OS licensing benefit**. The VM setting can either be in Azure Hybrid Benefit for Windows, Not enabled, or Windows client with multi-tenant hosting state.
 
-For an interactive guide, refer to [Activate Azure Hybrid Benefit for Windows Server VMs](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmslearn.cloudguides.com%2Fguides%2FActivate%20Azure%20Hybrid%20Benefit%20for%20Windows%20Server%20VMs&data=05|02|mariajosef@microsoft.com|3640119bd39d42fedc6f08dce7dd5736|72f988bf86f141af91ab2d7cd011db47|1|0|638640185053099738|Unknown|TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D|0|||&sdata=zcoBMxPygeXBYAgYtsrAhgssUqy%2BtFNVYFyRbxLOXLs%3D&reserved=0).
+For an interactive guide, refer to [Activate Azure Hybrid Benefit for Windows Server VMs](https://mslearn.cloudguides.com/guides/Activate%20Azure%20Hybrid%20Benefit%20for%20Windows%20Server%20VMs).
 
-### Enabling Azure Hybrid Benefit for Linux VMs in Azure
+### Enable Azure Hybrid Benefit for Linux VMs in Azure
 
 You can invoke Azure Hybrid Benefit at the time of VM creation. Benefits of doing it at this time are threefold:
 
@@ -60,7 +60,7 @@ To enable Azure Hybrid Benefit when you create a VM, use the following procedure
 
 Next, create a VM using the following set of instructions.
 
-1. In the navigation pane, select **Operating system**. Then, under **Licensing**, select the **Yes** option and the checkbox confirming you have an eligible Red Hat Enterprise Linux available for this VM.
+- In the navigation pane, select **Operating system**. Then, under **Licensing**, select the **Yes** option and the checkbox confirming you have an eligible Red Hat Enterprise Linux available for this VM.
 
     :::image type="content" source="../media/azure-hybrid-benefit-inline.png" alt-text="Screenshot of the Azure portal, configuration page, Licensing section for Azure Hybrid Benefit." lightbox="../media/azure-hybrid-benefit-expanded.png" border="false":::
 
@@ -77,9 +77,9 @@ To switch the licensing model from BYOS to pay-as-you-go or the other way around
 
 You can use the **az vm get-instance-view** command to check whether the AHBForSLES or AHBForRHEL extension is installed. If the corresponding extension is installed and Azure Hybrid Benefit has been enabled, review the license type to determine which licensing model your VM is using.
 
-For an interactive guide, refer to [Activate Azure Hybrid Benefit for Linux VMs](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmslearn.cloudguides.com%2Fguides%2FActivate%20Azure%20Hybrid%20Benefit%20for%20Linux&data=05|02|mariajosef@microsoft.com|3640119bd39d42fedc6f08dce7dd5736|72f988bf86f141af91ab2d7cd011db47|1|0|638640185053112443|Unknown|TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D|0|||&sdata=CCsg9duogzC5EkF8U2SC%2FwLE7kcuQaO%2FTCtPIXgcqv0%3D&reserved=0).
+For an interactive guide, refer to [Activate Azure Hybrid Benefit for Linux VMs](https://mslearn.cloudguides.com/guides/Activate%20Azure%20Hybrid%20Benefit%20for%20Linux).
 
-### Enabling Azure Hybrid Benefit for SQL Server, SQL Database, and SQL Managed Instance
+### Enable Azure Hybrid Benefit for SQL Server, SQL Database, and SQL Managed Instance
 
 To indicate the use of Azure Hybrid Benefit for SQL Server on Azure VM and be compliant, you have three options:
 
@@ -121,4 +121,4 @@ To set or update the license type using the Azure portal:
 
 - For existing managed instances: In the **Settings** menu, select **Compute + storage**, and then select the option for **Azure Hybrid Benefit**.
 
-For an interactive guide, refer to [Activate Azure Hybrid Benefit for SQL Server](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmslearn.cloudguides.com%2Fguides%2FActivate%20Azure%20Hybrid%20Benefit%20for%20SQL%20Server&data=05|02|mariajosef@microsoft.com|3640119bd39d42fedc6f08dce7dd5736|72f988bf86f141af91ab2d7cd011db47|1|0|638640185053124938|Unknown|TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D|0|||&sdata=0SPrcYFCNurnCAW7cmV0Rn2ayJAEkpdKZTKIJIXJV6U%3D&reserved=0).
+For an interactive guide, refer to [Activate Azure Hybrid Benefit for SQL Server](https://mslearn.cloudguides.com/guides/Activate%20Azure%20Hybrid%20Benefit%20for%20SQL%20Server).

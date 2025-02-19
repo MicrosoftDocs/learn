@@ -1,6 +1,3 @@
-
-## Introduction
-
 Azure Hybrid Benefit helps organizations maximize savings when migrating and modernizing their cloud infrastructure through pricing discounts and deployment benefits.
 
 ## Example scenario
