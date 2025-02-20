@@ -12,7 +12,7 @@ Let's perform a common task: creating a storage account. Here are the four steps
 
 1. Work with Azure subscriptions using `az account`.
 
-1. Create a resource group using `az group create`.
+1. If needed, create a resource group using `az group create`.
 
 1. Create a storage account using `az storage account create`.
 

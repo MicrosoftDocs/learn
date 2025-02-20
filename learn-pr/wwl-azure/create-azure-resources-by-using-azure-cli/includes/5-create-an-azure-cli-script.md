@@ -81,7 +81,7 @@ Now that you had success with your first Bash script, let's execute a Bash scrip
 
 When creating and testing scripts, remember to delete your test resources to avoid costs. If you used a naming convention for your Azure resources, using a delete script is an easy way to clean up your environment.
 
-Delete all storage accounts created on or after a specific date and time. Use the `--yes` parameter to bypass the confirmation prompt.
+Delete all storage accounts created on or after a specific date and time. Use the `--yes` parameter to bypass the confirmation prompt. Change `2025-02-17T19:14:27.103127+00:00` to be the day your are testing the script.
 
 ```azurecli
 for saList in $(az storage account list \
