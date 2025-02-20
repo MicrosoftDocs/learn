@@ -1,4 +1,4 @@
-The first step in building a generative AI solution with Azure OpenAI Service  is to provision an Azure OpenAI Service resource in your Azure subscription. You can get started by creating an Azure AI Hub resource in Azure AI Foundry. After the hub resource is created, you'll need to create an Azure AI Project. 
+The first step in building a generative AI solution with Azure OpenAI Service  is to provision an Azure OpenAI Service resource in your Azure subscription. You can get started by creating an Azure AI Hub resource in [Azure AI Foundry](https:/ai.azure.com). After the hub resource is created, you'll need to create an Azure AI Project. 
 
 Projects are hosted by an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps.
 
