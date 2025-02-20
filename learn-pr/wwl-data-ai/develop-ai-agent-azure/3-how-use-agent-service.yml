@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agent-azure.how-use-agent-service
+title: How to use Azure AI Agent Service
+metadata:
+  title: How to use Azure AI Agent Service
+  description: This unit explores how to use Azure AI Agent Service. 
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 02/21/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: dev-lang-csharp-python
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-use-agent-service.md)]

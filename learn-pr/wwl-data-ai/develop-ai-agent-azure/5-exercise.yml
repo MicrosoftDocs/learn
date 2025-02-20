@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agent-azure.exercise
+title: Exercise - Build an AI agent
+metadata:
+  title: Exercise - Build an AI agent
+  description: Learn how to build an agent using Azure AI Agent Service. This unit provides a hands-on exercise to build an agent using Azure AI Agent Service.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 02/21/2025
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise.md)]

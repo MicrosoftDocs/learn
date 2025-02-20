@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agent-azure.what-is-ai-agent
+title: What is an AI agent
+metadata:
+  title: What is an AI agent
+  description: This unit explains what an AI agent is and how it works.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 02/21/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-ai-agent.md)]
