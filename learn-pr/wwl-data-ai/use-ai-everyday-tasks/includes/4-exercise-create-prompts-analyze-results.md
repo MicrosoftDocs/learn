@@ -54,7 +54,7 @@ Take a couple of minutes to iterate on your prompts and see how refining them ca
 Congratulations on completing the exercise! You've now practiced creating personalized AI prompts, analyzing the results, and iterating to improve them. Remember, the key to getting the best responses from AI tools like Microsoft Copilot is to be clear, specific, and goal-oriented in your prompts. Don't hesitate to use the Think Deeper feature to expand on initial results and refine your prompts through iteration. Keep experimenting with different prompts in your daily tasks to see how AI can make your work easier and more efficient. Happy prompting!
 ______________________________
 
-## Think Deeper with Copilot (needs much work still and must be done in personal M365 Copilot.)
+## Think Deeper with Copilot (needs much work still. Will use free Copilot.)
 
 In this step, we'll use the **Think Deeper** feature to expand on the initial results you received from your prompts. Think Deeper is a powerful tool that allows you to get more detailed or refined information from Copilot. It's especially useful when you need more insights or want to enhance the output you initially received.
 
