@@ -12,20 +12,3 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/7-ready.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: Which of the following is *not* a tool available to help you quickly achieve a security baseline?
-    choices:
-    - content: Azure Firewall
-      isCorrect: false
-      explanation: Incorrect. Azure Firewall is an intelligent network firewall security service that provides threat protection for your cloud workloads running in Azure.
-    - content: Azure Web Application Firewall
-      isCorrect: false
-      explanation: Incorrect. Azure Web Application Firewall is a cloud-native service that protects web apps from common web-hacking techniques such as SQL injection and security vulnerabilities such as cross-site scripting.
-    - content: Reaper
-      isCorrect: true
-      explanation: Correct. Reaper was the first antivirus software created, circa 1972.
-    - content: Microsoft Sentinel
-      isCorrect: false
-      explanation: Incorrect. Microsoft Sentinel is a cloud-native SIEM that provides intelligent security analytics for your entire enterprise, powered by AI.

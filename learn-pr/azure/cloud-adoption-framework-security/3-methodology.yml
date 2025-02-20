@@ -12,17 +12,3 @@ metadata:
 durationInMinutes: 20
 content: |
   [!include[](includes/3-methodology.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: Which of the following security disciplines requires continuous investment and continuous improvement as you adopt the cloud?
-    choices:
-    - content: Risk insights, security integration, and business resilience.
-      isCorrect: false
-      explanation: Incorrect. These are the key areas of business alignment.
-    - content: Access control, security operations, asset protection, security governance, and innovation security.
-      isCorrect: true
-      explanation: Correct. Each of these areas is crucial as you adopt the cloud.
-    - content: Monitor decisions, configurations, and data to govern decisions made across the environment and within all workloads across the portfolio.
-      isCorrect: false
-      explanation: Incorrect. These are aspects of security governance.
