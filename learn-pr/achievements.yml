@@ -5120,6 +5120,11 @@ achievements:
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
   iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn.azure.create-custom-roles-rbac.badge
+  type: badge
+  title: Create custom roles for Azure resources with role-based access control (RBAC)
+  summary: Understand the structure of role definitions for access control. Identify the role properties to use that define your custom role permissions. Create an Azure custom role and assign to a user.
+  iconUrl: /training/achievements/create-custom-azure-roles-with-rbac.svg
 - uid: learn.language.typescript-namespaces-organize-code.badge
   type: badge
   title: Organize code using TypeScript namespaces
