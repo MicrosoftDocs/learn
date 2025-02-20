@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Scale up and scale out Azure App Service
   description: "Scale up and scale out Azure App Service"
-  ms.date: 01/29/2025
+  ms.date: 02/12/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

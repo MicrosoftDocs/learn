@@ -10,7 +10,7 @@ The `az webapp up` command makes it easy to create and update web apps. When exe
 * Zip deploy files from the current working directory to the web app.
 
 > [!IMPORTANT]
-> In order to complete this exercise you need to switch the Cloud Shell to the Classic version. After the Cloud Shell finishes loading select **Settings** from the menu directly at the top of the Cloud Shell and then select **Go to Classic version**. 
+> In order to complete this exercise, you need to switch the Cloud Shell to the Classic version. When the Cloud Shell finishes loading select **Settings** from the menu at the top of the Cloud Shell, and then select **Go to Classic version**. 
 
 ## Download the sample app
 
@@ -84,4 +84,5 @@ In this section, you use the sandbox to download the sample app and set variable
     > You can use the up arrow on your keyboard to scroll through previous commands.
 
 1. After deployment is completed switch back to the browser from step 2 in the "Create the web app" section and refresh the page.
+
 

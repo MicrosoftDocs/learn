@@ -16,16 +16,16 @@ When an action is in a private repository, only workflows in the same repository
 
 ## Document your action
 
-It can be very frustrating to use a new tool or application when the documentation is vague or even missing. It's important to include good documentation with your action so that others can see how it works, whether you plan to make it public or private. The first thing to do is creating a good `README.md` file for your action.
+It can be very frustrating to use a new tool or application when the documentation is vague or even missing. It's important to include good documentation with your action so that others can see how it works, whether you plan to make it public or private. The first thing to do is create a good `README.md` file for your action.
 
 The `README.md` file is often the first place developers will look at to see how the action works. This is a great place to include all of the important information for the action. The following is a non-exhaustive list of things to include:
 
-- A detailed description of what the action does
-- Required input and output arguments
-- Optional input and output arguments
-- Secrets the action uses
-- Environment variables the action uses
-- An example of how to use your action in a workflow
+- A detailed description of what the action does.
+- Required input and output arguments.
+- Optional input and output arguments.
+- Secrets the action uses.
+- Environment variables the action uses.
+- An example of how to use your action in a workflow.
 
 As a general rule, the `README.md` file should include everything a user should know to use the action. If you think it could be useful information, include it in the `README.md`.
 
@@ -35,7 +35,7 @@ If you're developing an action for other people to use, whether it's public or p
 
 ### Good practices for release and version management
 
-A good release-management strategy should include versioning recommendations. Users should not be referencing an action's default branch with the action, because the default branch which is likely to contain the latest code (which might or might not be stable) and could result in your workflow breaking. Instead, we recommend that users specify a major version when using the action, and to only direct them to a more specific version if they encounter issues. They can do this by configuring their GitHub Actions workflow to target a tag, a commit's SHA, or a specific branch named for a release. Let's take a closer look at these release options.
+A good release-management strategy should include versioning recommendations. Users shouldn't be referencing an action's default branch with the action. This is because the default branch that's likely to contain the latest code (which might or might not be stable) could result in your workflow breaking. Instead, we recommend that users specify a major version when using the action, and to only direct them to a more specific version if they encounter issues. They can do this by configuring their GitHub Actions workflow to target a tag, a commit's SHA, or a specific branch named for a release. Let's take a closer look at these release options.
 
 #### Tags
 
@@ -58,7 +58,7 @@ steps:
 
 #### Use a commit's SHA
 
-Tags are useful and widely used, but one downside to using tags is that they can be deleted or moved. With Git, each commit receives a calculated SHA value, which is unique and cannot be modified. Using a commit SHA for versioning will give you the most reliable and secure way to version and use an action. However, often in Git you can abbreviate the SHA hash to the first several characters, and Git will recognize the reference. If you're using the commit's SHA for release management, you need to use the full SHA value and not the abbreviated value.
+Tags are useful and widely used, but one downside to using tags is that they can be deleted or moved. With Git, each commit receives a calculated SHA value, which is unique and can't be modified. Using a commit SHA for versioning will give you the most reliable and secure way to version and use an action. However, often in Git you can abbreviate the SHA hash to the first several characters, and Git will recognize the reference. If you're using the commit's SHA for release management, you need to use the full SHA value and not the abbreviated value.
 
 ```yml
 steps:

@@ -6,9 +6,8 @@ metadata:
   title: "F# development environment"
   description: "Overview of tools to help you build F# applications"
   ms.date: 02/22/2023
-  author: luisquintanilla
-  ms.author: luquinta
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet

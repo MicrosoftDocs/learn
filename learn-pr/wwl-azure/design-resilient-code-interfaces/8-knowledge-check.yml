@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-resilient-code-interfaces.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/17/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which solution allows access for explicit interface members in C#?"
+    choices:
+    - content: "By casting the class instance to the interface type."
+      isCorrect: true
+      explanation: "Correct. Explicit interface members are only accessible through the interface instance, so you need to cast the class instance to the interface type."
+    - content: "By using the `this` keyword within the class."
+      isCorrect: false
+      explanation: "Incorrect. Explicit interface members can't be accessed using the `this` keyword within the class; they're only accessible through the interface instance."
+    - content: "By using reflection to invoke the members."
+      isCorrect: false
+      explanation: "Incorrect. While reflection can be used to invoke members, it is not the standard way to access explicit interface members. The correct approach is to cast the class instance to the interface type."
+  - content: "What is a key benefit of using interfaces to reduce code dependencies?"
+    choices:
+    - content: "Interfaces promote loose coupling and easier testing."
+      isCorrect: true
+      explanation: "Correct. Interfaces define a set of methods and properties that implementing classes must provide, promoting loose coupling and making the code easier to test and maintain."
+    - content: "Interfaces provide default implementations for all methods."
+      isCorrect: false
+      explanation: "Incorrect. Interfaces do not provide default implementations for methods; they only define the contract that implementing classes must follow."
+    - content: "Interfaces allow for multiple inheritance of classes."
+      isCorrect: false
+      explanation: "Incorrect. C# does not support multiple inheritance of classes. Interfaces allow a class to inherit behavior from multiple sources without multiple inheritance."
+  - content: "Imagine the scenario of developing a home automation application with different types of lights. Which approach allows mix and match capabilities in a single class?"
+    choices:
+    - content: "Implement multiple interfaces in the class."
+      isCorrect: true
+      explanation: "Correct. Implementing multiple interfaces in a class allows mix and match capabilities, providing a common API supported by various types."
+    - content: "Use multiple inheritance of classes."
+      isCorrect: false
+      explanation: "Incorrect. C# does not support multiple inheritance of classes. Implementing multiple interfaces is the correct approach."
+    - content: "Define all functionalities within a single interface."
+      isCorrect: false
+      explanation: "Incorrect. Defining all functionalities within a single interface can lead to a bloated interface. Implementing multiple interfaces is a better approach."

@@ -4,9 +4,9 @@ One of the main benefits of using cloud services is that you can gain cost effic
 
 Before deploying a solution that depends on AI services, you can estimate costs by using the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/).
 
-To use the pricing calculator to estimate AI services costs, create a new estimate and select **Azure AI services** in the **AI + Machine Learning** category. Then select the specific AI service API you plan to use (for example, *Azure AI Text Analytics*), the region where you plan to provision it, and the pricing tier of the instance you plan to use; and fill in the expected usage metrics and support option. To create an estimate that includes multiple AI services APIs, add additional **Azure AI services** products to the estimate.
+To use the pricing calculator to estimate AI services costs, create a new estimate and select **Azure AI services** in the **AI + Machine Learning** category. Select the specific AI service API you plan to use. For example, *Azure AI Language*. For the API, select the region where you plan to provision it and the pricing tier of the instance you plan to use. Then, fill in the expected usage metrics and support option. To create an estimate that includes multiple AI services APIs, add more **Azure AI services** products to the estimate.
 
-After you've created an estimate, you can save it. You can also export it in Microsoft Excel format.
+After you create an estimate, you can save it. You can also export it in Microsoft Excel format.
 
 ## View costs for AI services
 

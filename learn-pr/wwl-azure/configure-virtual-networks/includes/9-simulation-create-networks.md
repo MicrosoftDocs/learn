@@ -8,7 +8,7 @@ Your organization is migrating network infrastructure and virtual machines to Az
 
 ## Architecture diagram
 
-:::image type="content" source="../media/create-network-architecture.png" alt-text="Diagram of the architecture as explained in the text." border="false":::
+:::image type="content" source="../media/create-network-architecture.png" alt-text="Diagram of the architecture as explained in the objectives." border="false":::
 
 ## Objectives
 
