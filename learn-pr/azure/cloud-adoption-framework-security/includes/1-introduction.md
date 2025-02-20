@@ -1,5 +1,8 @@
-Security is a core consideration for all customers, in every environment. Moving to the cloud is a significant change that requires a shift in your security mindset and approach. 
+The Cloud Adoption Framework for Azure Secure methodology provides a structured approach for securing your Azure cloud estate.
 
-Cloud security is also an ongoing journey of incremental progress and maturity. New services and features are released daily in Azure. Developers rapidly publish new cloud applications built on these services, but attackers are always seeking new ways to exploit misconfigured resources.
+The guidance in this module provides recommendations that are relevant to all methodologies within the Cloud Adoption Framework because security should be an integral part of every phase of your cloud adoption journey. It covers key security principles, methodologies, and best practices to ensure a robust security posture throughout your cloud adoption journey. All recommendations adhere to the Zero Trust principles: assume compromise, least privilege, and explicit verification of trust.
 
-How do you keep up and make sure that your cloud deployments are secure? This module examines best practices in cloud security.
+Consider these security recommendations as you progress through each phase.
+
+:::image type="content" source="../media/caf-secure-overview.png" alt-text="Diagram that shows how security relates to each Cloud Adoption Framework methodology." lightbox="../media/caf-secure-overview.png":::
+
