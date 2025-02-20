@@ -13,7 +13,7 @@ Let's take a closer look at a couple of ways you might use AI at home.
 
 ### Plan a trip
 
-![Image of family on vacation.](../media/5-plan-trip.jpg)
+![Image of family on vacation.](../media/04-plan-trip.jpg)
 
 Could you use some help or inspiration to plan a trip? [Plan the Perfect Trip Itinerary Using Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai/ai-for-daily-life/plan-the-perfect-trip-itinerary-with-ai?msockid=033c93e0d094650b1e0b804fd11c642d&form=MA13KP) suggests some prompts to get you started so you can spend less time creating itineraries and more time enjoying them:  
 
@@ -29,7 +29,7 @@ Could you use some help or inspiration to plan a trip? [Plan the Perfect Trip It
 
 ### Train for a marathon
 
-![Image of a couple exercising.](../media/5-marathon.jpg)
+![Image of a couple exercising.](../media/04-marathon.jpg)
 
 Could you use some help or inspiration to plan a trip? Whether you're a seasoned marathon runner or this is your first race, [Train for a Marathon with Copilot](https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/do-more-with-ai/ai-for-daily-life/train-for-a-marathon-with-copilot?form=MA13KP) guides you through how to set running goals, make a training schedule, and get ready for race day using AI. 
 
@@ -58,4 +58,4 @@ The real power, though, comes from the flow of using Copilot across apps. In the
 
 > [!VIDEO https://www.youtube.com/embed/gOq46gEO8h8?si=tAb9kb1eWLsY3tLt]
 
-Now that you learned about generative AI, how to interact with it, and some ways to take your prompts further, let's test your knowledge.
+Now that you learned about generative AI, how to interact with it, and some ways to take your prompts further, let's practice prompting in Copilot.

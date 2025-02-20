@@ -36,4 +36,4 @@ Now that you know what it takes to craft effective prompts, try to identify task
 > **Build your AI habit:**
 > Now that you understand how to craft clear, specific, and goal-oriented prompts, try to identify tasks in your own daily routine where AI might help you save time or be more creative. Commit to a daily experiment, such as one prompt to try every day. Remember to iterate as much as you want to perfect your prompt.
 
-In the following exercise, you get a chance to try prompting in Copilot.
+Next, let's dig a little deeper into the art of prompting.
