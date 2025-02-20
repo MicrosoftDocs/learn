@@ -1,17 +1,17 @@
-The steps in this unit illustrate how to deploy your Java EE application to JBoss EAP on Azure App Service, and how to connect to the database. You'll actually execute these steps in the next unit.
+The steps in this unit illustrate how to deploy your Jakarta EE application to JBoss EAP on Azure App Service, and how to connect to the database. You'll actually execute these steps in the next unit.
 
-## Create a Java EE (Jakarta EE) application
+## Create a Jakarta EE application
 
-In this module, you'll use a sample Java EE application that's prepared in advance and uses the following technologies:
+In this module, you'll use a sample Jakarta EE application that's prepared in advance and uses the following technologies:
 
-- Java EE 8 (Jakarta EE 8)
-- JAX-RS 2.1
-- JSON-B 1.0
-- CDI 2.0
-- JPA 2.2
+- Jakarta EE 10
+- JAX-RS 3.1
+- JSON-B 3.0
+- CDI 4.0
+- JPA 3.1
 
 > [!TIP]
-> The deployment procedure introduced here is similar for most Java EE (Jakarta EE) web applications.
+> The deployment procedure introduced here is similar for most Jakarta EE web applications.
 
 ## Configure the application project for deploying to Azure by using Maven
 
@@ -25,10 +25,10 @@ Microsoft provides the Maven Plugin for Azure App Service to deploy your Java we
 |  `pricingTier`  | Virtual machine selection to run |
 |  `region`  |  Region to deploy (same location as the MySQL installation location)|
 |  `runtime` `OS` | Operating system to run (Linux)|
-|  `runtime` `javaVersion` | Java virtual machine version for the web container (Java 8)|
-|  `runtime` `webContainer` | Web container (JBoss EAP 7)|
+|  `runtime` `javaVersion` | Java virtual machine version for the web container (Java 17)|
+|  `runtime` `webContainer` | Web container (JBoss EAP 8)|
 
-In this module, you deploy an application to the JBoss EAP environment. Select `Java 8` for the Java version and `Jbosseap 7.4` for the runtime web container.
+In this module, you deploy an application to the JBoss EAP environment. Select `Java 17` for the Java version and `Red Hat JBoss EAP 8` for the runtime web container.
 
 ## Build the WAR package
 
@@ -37,7 +37,7 @@ You can use the `./mvnw package` command to build a Web Application Archive (WAR
 > [!NOTE]
 > Optionally, you can test the package by deploying to a local JBoss EAP environment.
 
-## Deploy the Java EE app to JBoss EAP
+## Deploy the Jakarta EE app to JBoss EAP
 
 After you create your Maven artifact, you can run the `deploy` command in the Maven Plugin for Azure App Service to deploy the application to JBoss EAP.
 
@@ -69,6 +69,6 @@ We used a Java Naming and Directory Interface (JNDI) name of `java:jboss/datasou
 
 ## Access the application
 
-After you configure the MySQL data source connection in JBoss EAP, you can access the Java EE application by using a web browser or the `curl` command.
+After you configure the MySQL data source connection in JBoss EAP, you can access the Jakarta EE application by using a web browser or the `curl` command.
 
 In the next unit, you'll deploy the sample app by using the procedure outlined here.

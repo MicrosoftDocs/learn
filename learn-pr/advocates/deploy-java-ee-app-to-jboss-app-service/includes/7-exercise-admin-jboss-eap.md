@@ -194,6 +194,6 @@ az webapp log tail  -n jakartaee-app-on-jboss-1606464084546 \
 
 ## Exercise summary
 
-In this unit, you learned how to configure and deploy a Java EE 8 (Jakarta EE) application to JBoss EAP on Azure App Service. Then, you used a `DataSource` object for connecting MySQL to JBoss EAP in a startup script.
+In this unit, you learned how to configure and deploy a Jakarta EE 10 application to JBoss EAP on Azure App Service. Then, you used a `DataSource` object for connecting MySQL to JBoss EAP in a startup script.
 
 You also learned how to access the remote server from both the CLI and the GUI by using a TCP tunnel. Finally, you accessed the log file from a local machine.

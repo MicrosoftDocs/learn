@@ -1,4 +1,4 @@
-In this module, you learned how to create an Azure Database for MySQL instance and how to use the Maven Plugin for Azure App Service. You also learned how to deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and how to manage JBoss EAP.
+In this module, you learned how to create an Azure Database for MySQL instance and how to use the Maven Plugin for Azure App Service. You also learned how to deploy a Jakarta EE application to JBoss EAP on Azure App Service and how to manage JBoss EAP.
 
 ## Clean up resources
 
@@ -28,7 +28,7 @@ Use the following links to get more information about the topics in this module.
 * [Integrate your app with an Azure virtual network](/azure/app-service/web-sites-integrate-with-vnet?WT.mc_id=java-14033-yoterada)
 * [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/linux?WT.mc_id=java-14033-yoterada)
 
-### Java EE (Jakarta EE)
+### Jakarta EE
 
 * [Jakarta EE](https://jakarta.ee/)
 * [Jakarta RESTful Web Services](https://projects.eclipse.org/projects/ee4j.jaxrs)

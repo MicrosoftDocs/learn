@@ -1,4 +1,4 @@
-In this exercise, you'll deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service. You use the Maven plug-in to configure the project, compile and deploy the application, and configure a data source.
+In this exercise, you'll deploy a Jakarta EE application to JBoss EAP on Azure App Service. You use the Maven plug-in to configure the project, compile and deploy the application, and configure a data source.
 
 ## Configure the app with the Maven Plugin for Azure App Service
 
@@ -9,7 +9,7 @@ Let's configure the application by executing the configuration goal in the Maven
 ```
 
 > [!IMPORTANT]  
-> If you change the region of your MySQL server, you should also change to the same region for your Java EE application server to minimize latency delays.  
+> If you change the region of your MySQL server, you should also change to the same region for your Jakarta EE application server to minimize latency delays.  
 > In the command, select Java 11 for Java version and JBoss EAP 7 for runtime stack.
 
 |  Input element  |  Value  |
@@ -93,12 +93,12 @@ After the command finishes, you can see that following entry is added in your Ma
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
-        <version>3.3.2</version>
+        <version>3.4.0</version>
       </plugin>
         <plugin>
             <groupId>com.microsoft.azure</groupId>
             <artifactId>azure-webapp-maven-plugin</artifactId>
-            <version>2.9.0</version>
+            <version>2.13.0</version>
             <configuration>
                 <schemaVersion>v2</schemaVersion>
                 <resourceGroup>jakartaee-app-on-jboss-1625038814881-rg</resourceGroup>
@@ -107,8 +107,8 @@ After the command finishes, you can see that following entry is added in your Ma
                 <region>centralus</region>
                 <runtime>
                     <os>Linux</os>
-                    <javaVersion>Java 11</javaVersion>
-                    <webContainer>Jbosseap 7</webContainer>
+                    <javaVersion>Java 17</javaVersion>
+                    <webContainer>Jbosseap 8</webContainer>
                 </runtime>
                 <deployment>
                     <resources>
@@ -170,7 +170,7 @@ export RESOURCEGROUP_NAME=jakartaee-app-on-jboss-1625038814881-rg
 export WEBAPP_NAME=jakartaee-app-on-jboss-1625038814881
 ```
 
-## Compile and build the Java EE app
+## Compile and build the Jakarta EE app
 
 After you configure the Azure App Service deployment settings, compile and package the source code.
 
@@ -196,7 +196,7 @@ The following output appears in the terminal:
 [INFO] ------------------------------------------------------------------------
 ```
 
-## Deploy the Java EE app to JBoss EAP on Azure App Service
+## Deploy the Jakarta EE app to JBoss EAP on Azure App Service
 
 After you compile and package the code, deploy the application:
 
@@ -273,7 +273,7 @@ sed -i -e "s|.*<resolve-parameter-values.*|<resolve-parameter-values>true</resol
 data-source add --name=JPAWorldDataSourceDS \
 --jndi-name=java:jboss/datasources/JPAWorldDataSource \
 --connection-url=${MYSQL_CONNECTION_URL} \
---driver-name=ROOT.war_com.mysql.cj.jdbc.Driver_8_0 \
+--driver-name=ROOT.war_com.mysql.cj.jdbc.Driver_9_2 \
 --user-name=${MYSQL_USER} \
 --password=${MYSQL_PASSWORD} \
 --min-pool-size=5 \
@@ -312,7 +312,7 @@ az webapp config set --startup-file '/home/site/scripts/startup.sh' \
 After the script runs, it'll be invoked every time the application server is restarted.
 
 > [!NOTE]
-> If your deployment artifact isn't `ROOT.war`, you need to change the `--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_8_0` value too.
+> If your deployment artifact isn't `ROOT.war`, you need to change the `--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_9_2` value too.
 
 ## Configure the environment variables for connecting to MySQL
 
