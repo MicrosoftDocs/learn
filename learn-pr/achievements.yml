@@ -5210,6 +5210,16 @@ achievements:
   title: Introduction to Visual Studio Code
   summary: In this module, you learn how to assess whether Visual Studio Code is the right source code editor for you. We explore how Visual Studio Code can be used in different development situations, for example, web, C++, and data science. We also examine Visual Studio Code's features such as the editor, debugger, and source control. Finally, we walk you through decision criteria you can use to choose a code editor.
   iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
+- uid: learn.student-evangelism.web-development-101-variables.badge
+  type: badge
+  title: JavaScript variables and data types
+  summary: JavaScript is a programming language used for web development as well as the server. Learn about variables and the data types that populate them.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-variables.svg
+- uid: learn.student-evangelism.web-development-101.introduction-to-programming.badge
+  type: badge
+  title: Introduction to programming
+  summary: Learn about programming languages and the tools that developers use to create software.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-introduction.svg
 - uid: learn.student-evangelism.web-development-101.functions.badge
   type: badge
   title: Create modular code by using functions in JavaScript
