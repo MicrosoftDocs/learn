@@ -3,7 +3,7 @@ uid: learn.dotnet-aspire
 metadata:
   title: Build distributed apps with .NET Aspire
   description: |
-    Learn how to build observable, production ready, distributed applications with .NET Aspire.  
+    Learn how to build observable, production ready, distributed applications with .NET Aspire. AZ-2009
   ms.date: 06/12/2024
   author: CamSoper
   ms.author: casoper

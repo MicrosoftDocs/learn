@@ -2,7 +2,7 @@ A public IP address resource can be associated with virtual machine network inte
 
 ### Things to consider when associating public IP addresses
 
-The following table summarizes how you can associate public IP addresses for different types of resources.
+The next table summarizes how you can associate public IP addresses for different types of resources.
 
 | Resource | Public IP address association | Dynamic IP address | Static IP address |
 | --- | --- | --- | --- |
@@ -17,7 +17,7 @@ __\*__ Static IP addresses are available on certain SKUs only.
 
 When you create a public IP address, you select the Basic or Standard SKU. Your SKU choice affects the IP assignment method, security, available resources, and redundancy options.
 
-The following table summarizes the differences between the SKU types for public IP addresses.
+The next table summarizes the differences between the SKU types for public IP addresses.
 
 | Feature | Basic SKU | Standard SKU |
 | --- | --- | --- |

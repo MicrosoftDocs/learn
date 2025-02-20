@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-identify-mitigate-ai-risks.review-ai-security-reports
+title: Review AI security reports
+metadata:
+  title: Review AI security reports
+  description: "Review AI security reports."
+  ms.date: 2/6/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/review-ai-security-reports.md)]

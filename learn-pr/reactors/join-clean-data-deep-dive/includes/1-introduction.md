@@ -3,7 +3,7 @@ As a general rule, data scientists assume that about 80 percent of the time and 
 
 This section makes extensive use of pandas, the principal Python library for data handling and manipulation. This section assumes some familiarity with pandas and basic Python skills.
 
-To provide an experience more like real-world data science, we'll use real data gathered from the [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/?azure-portal=true).
+To provide an experience more like real-world data science, we'll use real data gathered from the [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/?azure-portal=true).
 
 ## Learning objectives
 

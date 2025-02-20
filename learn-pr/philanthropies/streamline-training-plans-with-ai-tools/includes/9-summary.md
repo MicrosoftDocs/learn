@@ -21,7 +21,7 @@ To continue your learning journey for this topic, go to:
 
 1. [Untitled Form](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&omkt=en-us&tryout=true&linkorigin=SiteMap). Forms. Publication date unavailable.
 
-1. [5 things to know about Reading Coach in Immersive Reader](https://edudownloads.azureedge.net/msdownloads/5-things-to-know-about-Reading-Coach-in-Immersive-Reader.pdf). Microsoft. Publication date unavailable.  
+1. [5 things to know about Reading Coach in Immersive Reader](https://www.microsoft.com/en-us/education/msdownloads/5-things-to-know-about-Microsoft-Reading-Progress-and-Reading-Coach.pdf). Microsoft. Publication date unavailable.  
   
 1. Dohnal M. [Introducing Microsoft Editor – Bring out your best writer wherever you write](https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-microsoft-editor-bring-out-your-best-writer-wherever/ba-p/1247931). Microsoft.Published March 30, 2020.
 

@@ -1,0 +1,1 @@
+In this module, you learned how to enable workload protection services, configure security for servers, databases, and storage, implement agentless scanning for virtual machines, manage vulnerability assessments for Azure virtual machines, and integrate Microsoft Defender for Cloud DevOps Security with GitHub, Azure DevOps, and GitLab

@@ -24,7 +24,7 @@ def calculate_average(numbers):
 
 The command palette provides quick access to the various functions in Copilot, so you can perform complex tasks with only a few keystrokes.
 
-1. Open the command palette by selecting `Ctrl+Shift+P` (Windows or Linux) or `Cmd+Shift+P` (Mac).
+1. Open the command palette in Visual Studio Code by selecting `Ctrl+Shift+P` (Windows or Linux) or `Cmd+Shift+P` (Mac).
 1. Enter **Copilot** to see available commands.
 1. Select actions like **Explain This** or **Generate Unit Tests** to get assistance.
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-privacy-assessments.create-privacy-rules
+title: Create and manage privacy assessments
+metadata:
+  title: Create and manage privacy assessments
+  description: "Create and manage privacy assessments."
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/create-privacy-rules.md)]

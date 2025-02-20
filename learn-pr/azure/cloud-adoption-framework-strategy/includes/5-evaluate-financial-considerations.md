@@ -218,7 +218,6 @@ Try the Azure Pricing Calculator [here](https://azure.microsoft.com/pricing/calc
 
 Download the following files to use the Power BI model:
 
-- [Power BI template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/strategy/azure-virtual-machine-cost-estimator.pbix)
 - [Excel file that feeds data into the Power BI template](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FCloudAdoptionFramework%2Fmaster%2Fstrategy%2Fon-premises-compute-unit-lists.xlsx&wdOrigin=BROWSELINK) 
 
 ## Impact of cloud accounting models

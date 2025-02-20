@@ -6,9 +6,8 @@ metadata:
   title: "What is F# Interactive?"
   description: "Learn what F# Interactive is and how you can use it to evaluate code and scripts in real-time"
   ms.date: 02/22/2023
-  author: luisquintanilla
-  ms.author: luquinta
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.topic: unit
 durationInMinutes: 3
 content: |
