@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design Azure SQL Database for cloud-native applications
   description: "Design Azure SQL Database for cloud-native applications"
-  ms.date: 11/12/2023
+  ms.date: 2/12/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

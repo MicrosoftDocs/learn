@@ -6,9 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Explore Azure Traffic Manager
   description: "Explore Azure Traffic Manager"
-  ms.date: 10/07/2024
+  ms.date: 02/13/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - references_regions

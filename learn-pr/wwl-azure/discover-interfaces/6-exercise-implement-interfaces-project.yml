@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-interfaces.exercise-implement-interfaces-project
+title: 'Exercise: Implement interfaces in project'
+metadata:
+  title: 'Exercise: Implement interfaces in project'
+  description: "Exercise: Implement interfaces in project with C#."
+  ms.date: 02/17/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-implement-interfaces-project.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-properties-methods.create-class-properties
+title: Get started with class properties and accessors
+metadata:
+  title: Get started with class properties and accessors
+  description: "Get started with class properties and accessors"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-create-class-properties.md)]

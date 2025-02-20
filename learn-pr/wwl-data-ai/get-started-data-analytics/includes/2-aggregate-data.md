@@ -18,4 +18,4 @@ The type of function used depends on the data in the column being aggregated. Te
 
 In this video, you'll see how aggregate functions can be applied to data to return summarized results:
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c0438c09-3c78-483f-9e85-63a128564c08]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U38n]

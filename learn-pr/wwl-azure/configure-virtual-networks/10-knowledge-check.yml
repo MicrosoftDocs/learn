@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/08/2024
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -18,7 +18,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which of the following statements about Azure virtual networks is correct?"
+  - content: "Which of these statements about Azure virtual networks is correct?"
     choices:
     - content: "Each virtual network has only one subnet."
       isCorrect: false

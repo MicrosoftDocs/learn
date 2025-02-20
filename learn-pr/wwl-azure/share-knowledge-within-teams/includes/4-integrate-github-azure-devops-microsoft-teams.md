@@ -8,7 +8,7 @@ You can install the GitHub app for Microsoft Teams from the Teams app store or d
 
 To subscribe to notifications for pull requests and issues in an organization or repository, use the @github subscribe &lt;organization&gt;/&lt;repository&gt; command. Notifications can be customized by subscribing to specific features using @github subscribe owner/repo \[feature\] and unsubscribing from less relevant activities using @github unsubscribe owner/repo \[feature\]. Default features include issues, pull requests, commits, comments, deployments, and releases. It's possible to selectively enable or disable other features, such as reviews, workflows, branches, and discussions.
 
-To further scope notifications, use filtering. Branch filters allow limiting commit notifications to specific branches or patterns of branches. Label filters limit incoming events based on whitelisted labels, such as priority or specific team labels.
+To further scope notifications, use filtering. Branch filters allow limiting commit notifications to specific branches or patterns of branches. Label filters limit incoming events based on allowlisted labels, such as priority or specific team labels.
 
 You can also organize notifications by using pull request and issue notification cards and threading. Notifications for pull requests and issues are grouped under parent cards as replies, displaying relevant metadata and providing threading for improved collaboration.
 
