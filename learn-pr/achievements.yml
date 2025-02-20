@@ -5210,3 +5210,13 @@ achievements:
   title: Introduction to Visual Studio Code
   summary: In this module, you learn how to assess whether Visual Studio Code is the right source code editor for you. We explore how Visual Studio Code can be used in different development situations, for example, web, C++, and data science. We also examine Visual Studio Code's features such as the editor, debugger, and source control. Finally, we walk you through decision criteria you can use to choose a code editor.
   iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
+- uid: learn.student-evangelism.web-development-101.trophy
+  type: trophy
+  title: Web Development for Beginners
+  summary: Learn the basics of web development, including programming languages and tools, and web accessibility.
+  iconUrl: /training/achievements/student-evangelism/web-development-101.svg
+- uid: learn.student-evangelism.web-development-101-loops-arrays.badge
+  type: badge
+  title: JavaScript arrays and loops
+  summary: Learn how to manipulate and store data within JavaScript.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-loops-arrays.svg
