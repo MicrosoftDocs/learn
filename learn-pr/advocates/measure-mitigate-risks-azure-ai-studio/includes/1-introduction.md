@@ -1,4 +1,4 @@
-Contoso Camping Store would like to launch a new chatbot to enhance their customer support. The proposed chatbot should be designed to provide instant, accurate information about the store's wide range of camping products. Your goal is to create a chatbot in Azure AI Foundry that can generate responses about Contoso Camping Store product features and provide recommendations based on customer preferences.
+Contoso Camping Store would like to launch a new chatbot to enhance their customer support. The proposed chatbot should be designed to provide instant, accurate information about the store's wide range of camping products. Your goal is to create a chatbot in [Azure AI Foundry](https://ai.azure.com) that can generate responses about Contoso Camping Store product features and provide recommendations based on customer preferences.
 
 ## Learning objectives
 
