@@ -5210,6 +5210,16 @@ achievements:
   title: Introduction to Visual Studio Code
   summary: In this module, you learn how to assess whether Visual Studio Code is the right source code editor for you. We explore how Visual Studio Code can be used in different development situations, for example, web, C++, and data science. We also examine Visual Studio Code's features such as the editor, debugger, and source control. Finally, we walk you through decision criteria you can use to choose a code editor.
   iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
+- uid: learn.student-evangelism.web-development-101.functions.badge
+  type: badge
+  title: Create modular code by using functions in JavaScript
+  summary: Functions are the building blocks for any application you'll create. With functions, you can create named, reusable sections of code to help make it more readable and maintainable. This module explores the core concepts of functions.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-functions.svg
+- uid: learn.student-evangelism.web-development-101-if-else.badge
+  type: badge
+  title: Make decisions with JavaScript
+  summary: This lesson covers the basics of JavaScript if/else decision-making concepts. You'll learn how comparing variables, using Booleans, and using if/else statements allow you to make decisions in your code.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-if-else.svg
 - uid: learn.student-evangelism.web-development-101.trophy
   type: trophy
   title: Web Development for Beginners
