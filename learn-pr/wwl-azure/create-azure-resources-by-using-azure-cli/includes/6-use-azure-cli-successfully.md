@@ -1,13 +1,13 @@
 <!-- markdownlint-disable MD041 -->
 
-In this module you learned to choose an environment, install the Azure CLI, execute Azure CLI commands interactively, and create a Bash script. Let's take our learning one step further and focus on how to use the Azure CLI successfully. This unit teaches you how the Azure CLI works behind the command-line, and give you tips for troubleshooting.
+In this module you learned to choose an environment, install the Azure CLI, execute Azure CLI commands interactively, and create a Bash script. Let's take our learning one step further and focus on how to use the Azure CLI successfully. This unit teaches you how the Azure CLI works behind the command line, and give you tips for troubleshooting.
 
 > [!TIP]
 > This module is an advanced-level course, and this unit is taking you deep into Azure CLI. If you're new to command-line programming, focus on the concepts. The details become easier to understand as you gain experience. Don't give up!
 
 ## Understand Azure CLI API calls
 
-Executing behind the Azure portal's graphical user interface and the Azure CLI's command-line are API calls. You can expose the Azure CLI's API calls by using the `--debug` parameter. Here's what happens when you create a new resource group:
+Executing behind the Azure portal's graphical user interface and the Azure CLI's command line are API calls. You can expose the Azure CLI's API calls by using the `--debug` parameter. Here's what happens when you create a new resource group:
 
 ```azurecli
 az group create --location westus1 --name myResourceGroupName --debug

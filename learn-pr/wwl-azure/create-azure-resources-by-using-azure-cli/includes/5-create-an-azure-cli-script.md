@@ -95,7 +95,7 @@ done
 Delete all resource groups that contain a similar name with these extra features:
 
 - Write your results to a log file.
-- Remove the resource group with the `--no-wait` parameter which causes the delete to occur in the background and free up the command-line for you to keep working.
+- Remove the resource group with the `--no-wait` parameter which causes the delete to occur in the background and free up the command line for you to keep working.
 
 ```azurecli
 # Set your log file location
