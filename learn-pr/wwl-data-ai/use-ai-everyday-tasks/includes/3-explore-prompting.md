@@ -11,31 +11,31 @@ An effective prompt should be clear, specific, contextual, and goal oriented. By
 Here are some tips to keep in mind when writing a prompt:
 
 - Be specific about what you want Copilot to do. Clear goals lead to better responses.
-- Add some context to help Copilot understand what you're asking to makes the response more relevant.
+- Add some context to help Copilot understand what you're asking. Context makes the response more relevant.
 - Let Copilot know how you want the response to be formatted. This sets clear expectations.
-- If you can, provide some data or information for Copilot to use. This helps ground the response in the right context.
+- Provide some data or information for Copilot to use. This helps ground the response in the right context.
 
 > [!NOTE]
-> Don't worry if you don't get the response you are looking for the first time. With Copilot, you can **iterate** by asking it to refine the results. Let's say you used Copilot to create a menu for a dinner party, but you forgot you need vegetarian options. Simply ask Copilot to update the menu to include a vegetarian dish. This way, you can keep refining your prompts until you get the perfect result.
+> Don't worry if you don't get the response you're looking for the first time. With Copilot, you can **iterate** by asking it to refine the results. Let's say you used Copilot to create a menu for a dinner party, but you forgot you need vegetarian options. Simply ask Copilot to update the menu to include a vegetarian dish. This way, you can keep refining your prompts until you get the perfect result.
 >
 > ![Image of person cooking in a kitchen.](../media/03-food.jpg)
 
-The following table includes some everyday tasks that you could co-create with AI, and include examples of good, better, and best prompts.These examples help you create prompts that make the most of AI, making your tasks simpler and more effective.
+The following table includes some everyday tasks that you could co-create with AI, and include examples of good, better, and best prompts. These example can help you understand how to create prompts that make the most of AI, making your tasks simpler and more effective.
 
 | Task | Good | Better | Best |
 |----------------|------|--------|------|
 | **Rewrite Emails** | Copilot, rewrite this email to be more formal: [email text]. | Copilot, rewrite this email to be more formal and concise: [email text]. | Copilot, rewrite this email to be more formal, concise, and persuasive: [email text]. |
-| **Brainstorm Podcast Ideas** | I'm thinking about starting a personal podcast. Can you help me brainstorm a month's worth of episode ideas centered around [technology, culture, and personal development]? | I'm thinking about starting a personal podcast. Can you help me brainstorm a month's worth of episode ideas centered around [technology, culture, and personal development]? Each episode should cover a unique article. | I'm thinking about starting a personal podcast. Can you help me brainstorm a month's worth of episode ideas centered around [technology, culture, and personal development]? Each episode should cover a unique topic that would intrigue listeners. For each episode idea, provide a catchy title and a brief outline of key discussion points. |
+| **Brainstorm Podcast Ideas** | I'm thinking about starting a personal podcast. Can you help me brainstorm a month's worth of episode ideas centered around [technology, culture, and personal development]? | I'm thinking about starting a personal podcast. Can you help me brainstorm a month's worth of episode ideas centered around [technology, culture, and personal development]? Each episode should cover a unique article. | I'm thinking about starting a personal podcast. Can you help me brainstorm a month's worth of episode ideas centered around [technology, culture, and personal development]? Each episode should cover a unique article that would intrigue listeners. For each episode idea, provide a catchy title and a brief outline of key discussion points. |
 | **Create a Playlist** | Copilot, create a playlist for [my workout]. | Copilot, create a playlist for [my workout] with 10 [upbeat and energetic] songs. | Copilot, create a playlist for [my workout] with [upbeat and energetic] songs. Include a mix of [pop, rock, and electronic music] to keep the energy [high]. Format the playlist as a table with [the artist, the name of the song, and how long each song is]. |
 
 The following image shows the playlist the copilot generated using the "best" prompt example. It's formatted as a table and includes details on each song.  
 
 ![Copilot-generated playlist of 10 songs.](../media/03-playlist.jpg)
 
-Now that you know what it takes to craft effective prompts, try identifying things in your daily routine where AI can help you save time or be more creative.
+Now that you know what it takes to craft effective prompts, try to identify tasks in your daily routine where AI might help you save time or be more creative.
 
-> [!IMPORTANT] 
+> [!TIP] 
 > **Build your AI habit:**
-> Find one simple task in your daily routine where AI can help you save time. Commit to a daily experiment, such as one prompt to try every day. Remember to iterate as much as you want to perfect your prompts.
+> Now that you understand how to craft clear, specific, and goal-oriented prompts, you can make your everyday tasks simpler and more efficient. Find one simple task in your daily routine where AI might help you save time. Commit to a daily experiment, such as one prompt to try every day. Remember to iterate as much as you want to perfect your prompt.
 
-Now that you understand how to craft clear, specific, and goal-oriented prompts, you can make your everyday tasks simpler and more efficient. Next, you'll have the opportunity to try prompting yourself!
+Now it's time to try prompting yourself in the following exercise.

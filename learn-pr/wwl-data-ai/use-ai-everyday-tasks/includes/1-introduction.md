@@ -1,5 +1,5 @@
 AI is no longer just for tech experts and scientists. With tools like Microsoft Copilot, AI is becoming accessible to everyone for everyday tasks. Imagine having a personal assistant that can help you draft emails, create reports, and even generate creative content like poetry or code. AI can make your everyday tasks easier and more efficient, allowing you to focus on what matters most to you.
 
-In this module, you'll discover the basics of how AI works and how you can use it to be more productive. Whether you're looking to automate routine tasks or explore new ways to innovate, AI can help you achieve more.
+In this module, discover the basics of how AI works and how you can use it to be more productive. Whether you're looking to automate routine tasks or explore new ways to innovate, AI can help you achieve more.
 
-Now, let's  learn a little bit about generative AI and how it can help you with everyday tasks.
+Now, let's  learn about generative AI and how it can help you with everyday tasks.

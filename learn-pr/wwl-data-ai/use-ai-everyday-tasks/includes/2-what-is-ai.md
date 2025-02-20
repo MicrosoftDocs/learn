@@ -1,4 +1,4 @@
-Generative AI focuses on creating new, unique content, based on the input you provide. This input is called **prompting**, which is simply asking AI for specific things. Generative AI can create entirely new and original pieces of work, such as write a poem, compose a melody, or design a graphic based on the patterns and styles it learned from existing data.
+Generative AI focuses on creating new, unique content, based on the input you provide. This input is called **prompting**, which is simply asking AI for specific things. Generative AI can create entirely new and original pieces of work, such as write poems, compose melodies, or design graphics based on the patterns and styles it learned from existing data.
 
 People usually interact with generative AI built into a chat application. One popular example of such an application is [Microsoft Copilot](https://copilot.microsoft.com/), an AI-powered productivity tool designed to enhance your work experience by providing real-time intelligence and assistance.
 
@@ -15,7 +15,7 @@ AI can simplify your daily routines by helping you with various tasks, making yo
 
 ![Image of a person working on a laptop.](../media/02-write-creative-content.jpg)
 
-Have you ever stared at a blank page with no idea where to start, or come up short on new ideas for a project? Whether you're drafting an email, writing a blog post, or brainstorming ideas for a podcast, AI can give you a starting point. It can provide suggestions, generate text, and even create entire pieces of content. For example, AI can help you:
+Do you ever stare at a blank page with no idea where to start, or come up short on new ideas for a project? Whether you're drafting an email, writing a blog post, or brainstorming ideas for a podcast, AI can give you a starting point. It can provide suggestions, generate text, and even create entire pieces of content. For example, AI can help you:
 
 - **Compose emails**. Quickly draft professional emails by inputting the main message and letting AI handle the rest.
 - **Generate blog posts**. Create engaging blog posts by providing a topic and key points, and AI generates a well-structured article.

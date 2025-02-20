@@ -1,4 +1,4 @@
-Now let's explore some resources and tools you can use to enhance your prompting skills. We'll identify come useful prompting resources, explore using AI across apps to build on results, and understand how these techniques apply to real-world scenarios.
+Now let's explore some resources and tools you can use to enhance your prompting skills. We identify come useful prompting resources, explore using AI across apps to build on results, and understand how these techniques apply to real-world scenarios.
 
 ## Discover resources
 
@@ -26,21 +26,21 @@ Could you use some help or inspiration to plan a trip? [Plan the Perfect Trip It
 - **Flight info**: What’s the best deal on a nonstop flight from [location] to [location] from December 28-January 2?
 - **Destination comparisons**: Compare travel to [location] vs. [location] based on cost, quality of activities, hotels, and best time of year to go.
 - **Summaries**: Sum up the history of [location].
-- **Activities**: I’m traveling to [location] with a high school choir of twelve sixteen-year-olds. What activities can we do in the evenings?
-- **Packing lists**: I’m going backpacking across [location]. Write up a packing list of the fewest and lightest items possible that I will need for a two-week trip.
+- **Activities**: I’m traveling to [location] with a high school choir of 12 sixteen-year-olds. What activities can we do in the evenings?
+- **Packing lists**: I’m going backpacking across [location]. Write up a packing list of the fewest and lightest items possible that I'll need for a two-week trip.
 - **Full itinerary**: I plan to spend three days in [location]. I want to see historic sites, go to the best nightclub, and hike to a waterfall. Write up a full itinerary that includes all of this and suggestions of where to eat lunch and dinner along the way.
 
 ### Train for a marathon
 
 ![Image of a couple exercising.](../media/5-marathon.jpg)
 
-Could you use some help or inspiration to plan a trip? Whether you are a seasoned marathon runner or this is your first race, [Train for a Marathon with Copilot](https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/do-more-with-ai/ai-for-daily-life/train-for-a-marathon-with-copilot?form=MA13KP) guides you through how to set running goals, make a training schedule, and get ready for race day using AI. 
+Could you use some help or inspiration to plan a trip? Whether you're a seasoned marathon runner or this is your first race, [Train for a Marathon with Copilot](https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/do-more-with-ai/ai-for-daily-life/train-for-a-marathon-with-copilot?form=MA13KP) guides you through how to set running goals, make a training schedule, and get ready for race day using AI. 
 
 Here are some suggested prompts to set your running goals:
 
-- **Increase weekly mileage**: I currently run fifteen miles a week. Can you help me set a goal to increase my weekly mileage by 10%?
+- **Increase weekly mileage**: I currently run 15 miles a week. Can you help me set a goal to increase my weekly mileage by 10%?
 - **Half marathon training**: I’m running my first half marathon in six months, and I’d like to set mileage goals each week to build up my stamina. What’s a reasonable weekly mileage goal?
-- **Improve marathon pace**: My previous marathon time was four hours and thirty-six minutes. Can you help me set a goal to improve my pace over the course of four weeks?
+- **Improve marathon pace**: My previous marathon time was four hours and 36 minutes. Can you help me set a goal to improve my pace over the course of four weeks?
  
 Here are some suggested prompts to make a training schedule:
 
@@ -59,6 +59,6 @@ Here are some suggested prompts to make a training schedule:
 
 The real power, though, comes from the flow of using Copilot **across** apps. In the following short video, learn how one communication manager uses Microsoft 365 Copilot to create and enhance announcement posts.
 
-> [!VIDEO https://www.youtube.com/watch?v=gOq46gEO8h8]
+> [!VIDEO https://www.youtube.com/embed/gOq46gEO8h8?si=tAb9kb1eWLsY3tLt]
 
-Now that you've learned a lot about what generative AI is and how to use it, let's test your knowledge.
+Now that you learned about generative AI, how to interact with it, and some ways to take your prompts further, let's test your knowledge.

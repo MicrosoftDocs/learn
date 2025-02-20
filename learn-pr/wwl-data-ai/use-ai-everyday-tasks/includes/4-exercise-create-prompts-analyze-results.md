@@ -1,10 +1,10 @@
 **THIS IS NOT FINAL, OR EVEN REALLY A ROUGH DRAFT JUST 1 IDEA**
 
-In this activity, you'll learn how to create personalized prompts for AI tools like Microsoft Copilot and refine them to get the best results. By the end of this exercise, you'll be more comfortable using AI to enhance your everyday tasks.
+In this activity, learn how to create personalized prompts for AI tools like Microsoft Copilot and refine them to get the best results. By the end of this exercise, you'll be more comfortable using AI to enhance your everyday tasks.
 
 ## Before you start
 
-In this module we use Microsoft Copilot to interact with generative AI. To follow along and complete the exercise, you will need to do a few things to get set up.
+In this module, we use Microsoft Copilot to interact with generative AI. To follow along and complete the exercise, you'll need to do a few things to get set-up.
 
  **NEED DETAILS HERE:**
 1. Sign Up for a Microsoft Account. If you don't already have a Microsoft account, sign up for one at https://signup.live.com.
@@ -14,7 +14,7 @@ In this module we use Microsoft Copilot to interact with generative AI. To follo
 > ![Screenshot of the Copilot welcome page](../media/02-copilot-welcome.jpg)
 
 ## Personalize sample prompts
-To start, we'll practice creating personalized AI prompts. Below are a few fill-in-the-blank prompts. Your task is to fill in the blanks with specific details such as goals, timelines, topics, or other relevant information. This will help you create clear and effective prompts for Copilot.
+To start, we'll practice creating personalized AI prompts. Here are a few fill-in-the-blank prompts. Your task is to fill in the blanks with specific details such as goals, timelines, topics, or other relevant information. This will help you create clear and effective prompts for Copilot.
 
 Example prompts:
 
@@ -26,7 +26,7 @@ Now that you have your personalized prompts, it's time to try them out.
 
 1. Open Microsoft Copilot.
 2. Select the text input area where you can type your prompt.
-3. Choose one of the example prompts provided above, and fill in the blanks with your own specific details.
+3. Choose one of the example prompts provided, and fill in the blanks with your own specific details.
 4. Type or paste your personalized prompt into the text input area, then press Enter to submit your prompt to Copilot.
   
 ## Analyze your results
@@ -54,13 +54,13 @@ Take a couple of minutes to iterate on your prompts and see how refining them ca
 Congratulations on completing the exercise! You've now practiced creating personalized AI prompts, analyzing the results, and iterating to improve them. Remember, the key to getting the best responses from AI tools like Microsoft Copilot is to be clear, specific, and goal-oriented in your prompts. Don't hesitate to use the Think Deeper feature to expand on initial results and refine your prompts through iteration. Keep experimenting with different prompts in your daily tasks to see how AI can make your work easier and more efficient. Happy prompting!
 ______________________________
 
-## Think Deeper with Copilot (needs a lot of work still and must be done in personal M365 Copilot.)
+## Think Deeper with Copilot (needs much work still and must be done in personal M365 Copilot.)
 
-In this step, we'll use the **Think Deeper** feature to expand on the initial results you received from your prompts. Think Deeper is a powerful tool that allows you to get more detailed or refined information from Copilot. It's especially useful when you need additional insights or want to enhance the output you initially received.
+In this step, we'll use the **Think Deeper** feature to expand on the initial results you received from your prompts. Think Deeper is a powerful tool that allows you to get more detailed or refined information from Copilot. It's especially useful when you need more insights or want to enhance the output you initially received.
 
 When to use Think Deeper:
 - When you need more detailed information or a more comprehensive response.
-- When the initial response is good but could be improved with additional context or specifics.
+- When the initial response is good but could be improved with more context or specifics.
 - When you want to explore different aspects of the initial response.
 
 With Think Deeper, you can expect:
