@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Prepare for cloud security by using the Microsoft Cloud Adoption Framework for Azure
   description: Security is a core consideration for all customers, in every environment. But moving to the cloud is a significant change that requires a shift in your security mindset and approach. The Cloud Adoption Framework provides guidance for this security journey by providing clarity for the processes, best practices, models, and experiences.
-  ms.date: 11/01/2023
+  ms.date: 02/20/2025
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: module
@@ -53,9 +53,12 @@ units:
 - learn.azure.cloud-adoption-framework-security.customer-narrative
 - learn.azure.cloud-adoption-framework-security.methodology
 - learn.azure.cloud-adoption-framework-security.security-roles-responsibilities
-- learn.azure.cloud-adoption-framework-security.simplify-compliance-security
-- learn.azure.cloud-adoption-framework-security.simplify-security-implementation
-- learn.azure.cloud-adoption-framework-security.security-tools-policies
+- learn.azure.cloud-adoption-framework-security.strategy
+- learn.azure.cloud-adoption-framework-security.plan
+- learn.azure.cloud-adoption-framework-security.ready
+- learn.azure.cloud-adoption-framework-security.adopt
+- learn.azure.cloud-adoption-framework-security.govern
+- learn.azure.cloud-adoption-framework-security.manage
 - learn.azure.cloud-adoption-framework-security.summary
 badge:
   uid: learn.azure.cloud-adoption-framework-security.badge
