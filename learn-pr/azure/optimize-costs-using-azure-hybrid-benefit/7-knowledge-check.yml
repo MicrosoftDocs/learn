@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.optimize-costs-using-azure-hybrid-benefit.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: This is the knowledge check for the Optimize costs by using Azure Hybrid Benefit module.
+  ms.date: 02/18/2025
+  author: skpmcdowell
+  ms.author: mariajosef
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Select all the services that are covered by Azure Hybrid Benefit.
+    choices:
+    - content: Linux
+      isCorrect: true
+      explanation: This is correct. Linux is supported by Azure Hybrid Benefit.
+    - content: Azure OpenAI
+      isCorrect: false
+      explanation: This is not correct. Azure OpenAI service is not supported by Azure Hybrid Benefit.
+    - content: Oracle Database
+      isCorrect: false
+      explanation: This is not correct. Oracle Database is not supported by Azure Hybrid Benefit.
+
+  - content: How many Windows Server core licenses does an organization need to be able to use Azure Hybrid Benefit?
+    choices:
+    - content: "4"
+      isCorrect: false
+      explanation: This is incorrect. An organization needs 8 Windows Server core licenses to use Azure Hybrid Benefit.
+    - content: "8"
+      isCorrect: true
+      explanation: This is correct. An organization needs 8 Windows Server core licenses to use Azure Hybrid Benefit.
+    - content: "12"
+      isCorrect: false
+      explanation: This is incorrect. An organization needs 8 Windows Server core licenses to use Azure Hybrid Benefit.
+
+  - content: When migrating workloads to Azure, how many days can the client continue to use its licensed software on local devices when the licenses are allocated to Azure?
+    choices:
+    - content: "60"
+      isCorrect: false
+      explanation: This is incorrect. When migrating workloads to Azure, the client can continue to use its licensed software on local devices for 180 days when the licenses are allocated to Azure.
+    - content: "120"
+      isCorrect: false
+      explanation: This is incorrect. When migrating workloads to Azure, the client can continue to use its licensed software on local devices for 180 days when the licenses are allocated to Azure.
+    - content: "180"
+      isCorrect: true
+      explanation: This is correct. When migrating workloads to Azure, the client can continue to use its licensed software on local devices for 180 days when the licenses are allocated to Azure.
+
+  - content: A customer installed SQL Server on an Azure VM. What should the customer do next to be able to activate Azure Hybrid Benefit for SQL Server?
+    choices:
+    - content: Register the SQL IaaS Agent extension. 
+      isCorrect: true
+      explanation: This is correct. The customer must register the SQL IaaS Agent extension before they can activate Azure Hybrid Benefit for SQL Server.
+    - content: Provision a VM by using a pay-as-you-go SQL Server image from Azure Marketplace. 
+      isCorrect: false
+      explanation: This is incorrect. The customer must register the SQL IaaS Agent extension before they can activate Azure Hybrid Benefit for SQL Server.
+    - content: Install Windows Server and SQL Server on separate VMs. 
+      isCorrect: false
+      explanation: This is incorrect. The customer must register the SQL IaaS Agent extension before they can activate Azure Hybrid Benefit for SQL Server.
+
+  - content: Which tool should customers use to analyze, monitor, and optimize their Microsoft Cloud costs?
+    choices:
+    - content: Microsoft Cost Management
+      isCorrect: true
+      explanation: This is correct. Customers should use Microsoft Cost Management to analyze, monitor, and optimize their Microsoft Cloud costs.
+    - content: Azure Monitor
+      isCorrect: false
+      explanation: This is incorrect. Customers should use Cost Management to analyze, monitor, and optimize their Microsoft Cloud costs.
+    - content: Azure savings
+      isCorrect: false
+      explanation: This is incorrect. Customers should use Cost Management to analyze, monitor, and optimize their Microsoft Cloud costs.
+
+  - content: Assume that you're running a Windows Server 2022-based VM in Azure, with D8as_v6 size, in the East US region. The monthly cost of this virtual machine is 533.63 dollars, which results in 0.731 dollar per hour (on a 730 hours per month basis). Assume that a 3-year reservation reduces the hourly rate to 0.55 dollar per hour and that Azure Hybrid Benefit reduces the cost by 50 percent. When these two benefits are combined, how much will you save on a monthly basis and on a yearly basis?
+    choices:
+    - content: "Savings per month: 290.5 dollars, savings per year: 3,486 dollars."
+      isCorrect: false
+      explanation: "This is incorrect. The monthly cost of this VM when a 3-year Azure reservation is applied is reduced to: $401.50 ($0.55 per hour x 730 hours) . With Azure Hybrid Benefit applied, the monthly cost of this VM is reduced to: $266.81 ($0.3655 per hour x 730 hours). When both are applied, the VM's monthly cost is reduced to: $200.75 ($0.275 per hour x 730 hours.). Savings per month is $533.63 - $200.75, which results in $332,88 per month, and $3994,56 per year."
+    - content: "Savings per month: 332.88 dollars, savings per year: 3994.56 dollars."
+      isCorrect: true
+      explanation: "This is correct. The monthly cost of this VM when a 3-year Azure reservation is applied is reduced to: $401.50 ($0.55 per hour x 730 hours). With Azure Hybrid Benefit applied, the monthly cost of this VM is reduced to: $266.81 ($0.3655 per hour x 730 hours). When both are applied, the VM's monthly cost is reduced to: $200.75 ($0.275 per hour x 730 hours.). Savings per month is $533.63 - $200.75, which results in $332,88 per month, and $3994,56 per year."
+    - content: "Savings per month: 356.11 dollars, saving per year: 4,273.32 dollars."
+      isCorrect: false
+      explanation: "This is incorrect. The monthly cost of this VM when a 3-year Azure reservation is applied is reduced to: $401.50 ($0.55 per hour x 730 hours) . With Azure Hybrid Benefit applied, the monthly cost of this VM is reduced to: $266.81 ($0.3655 per hour x 730 hours). When both are applied, the VM's monthly cost is reduced to: $200.75 ($0.275 per hour x 730 hours.). Savings per month is $533.63 - $200.75, which results in $332,88 per month, and $3994,56 per year."
