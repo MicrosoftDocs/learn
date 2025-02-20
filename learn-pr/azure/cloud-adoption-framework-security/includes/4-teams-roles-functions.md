@@ -1,62 +1,39 @@
-Individual security team members must see themselves as part of a security team that's part of the whole organization. They're also part of a larger security community that defends against the same adversaries.
+This module describes the security roles required for cloud security and the functions they perform related to cloud infrastructure and platforms. These roles ensure that security is part of every stage of the cloud lifecycle, from development to operations and continuous improvement. Depending on your organization's size, individuals that perform multiple functions or specialized teams might fulfill these roles.
 
-This holistic view enables the team to work well in general. It's especially important as teams work through any unplanned gaps and overlaps discovered during the evolution of roles and responsibilities.
+:::image type="content" source="../media/caf-secure-teams-roles.png" alt-text="Diagram that shows the teams and roles phase of the Secure methodology." lightbox="../media/caf-secure-teams-roles.png":::
 
-## Security responsibilities (functions)
+## Transformation of security roles
 
-This diagram depicts the specific organizational functions within security. It represents an ideal view of a complete enterprise security team and might be an aspirational view for some security teams. One or more people can perform each function. Each person can perform one or more functions based on factors like culture, budget, and available resources.
+Security roles are evolving because of several factors:
 
-:::image type="content" source="../media/security-organizational-functions.png" lightbox="../media/security-organizational-functions.png" alt-text="Diagram that illustrates the organizational functions within security." border="false":::
+- **SaaS-based security tools:** There's less need to design, implement, test, and operate security tool infrastructures because SaaS tools simplify the process.
 
-The following articles provide information about each function and include a summary of objectives. They discuss how the function can evolve because of the threat environment or cloud technology changes. They also explore the relationships and dependencies that are critical to the function's success.
+- **Collaborative approach:** There's a growing recognition that security is everyone's job, which requires collaboration between security and technical teams. Security teams are shifting from a quality control role to a role that enables technical teams to implement their own security measures.
+- **More skills:** Security teams are increasingly broadening their skills to look at security problems across multiple technologies and systems.
+- **The speed of innovation:** The increased rate of change from both technology and security cloud services requires that security processes are continuously updated to keep in sync and manage risk effectively.
+- **Zero Trust approach:** Security threats now reliably bypass network-based security controls, so security teams need to adopt a Zero Trust approach that includes more factors.
+- **DevOps and DevSecOps:** DevOps and DevSecOps processes require more agile security roles that can integrate security seamlessly into the faster development life cycle.
 
-- [Policy and standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards)
-- [Security operations](/azure/cloud-adoption-framework/organize/cloud-security-operations-center)
-- [Security architecture](/azure/cloud-adoption-framework/organize/cloud-security-architecture)
-- [Security compliance management](/azure/cloud-adoption-framework/organize/cloud-security-compliance-management)
-- [People security](/azure/cloud-adoption-framework/organize/cloud-security-people)
-- [Application security and DevSecOps](/azure/cloud-adoption-framework/organize/cloud-security-application-security-devsecops)
-- [Data security](/azure/cloud-adoption-framework/organize/cloud-security-data-security)
-- [Infrastructure and endpoint security](/azure/cloud-adoption-framework/organize/cloud-security-infrastructure-endpoint)
-- [Identity and key management](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys)
-- [Threat intelligence](/azure/cloud-adoption-framework/organize/cloud-security-threat-intelligence)
-- [Posture management](/azure/cloud-adoption-framework/organize/cloud-security-posture-management)
-- [Incident preparation](/azure/cloud-adoption-framework/organize/cloud-security-incident-preparation)
+## Overview of roles and teams
 
-The following diagram summarizes the roles and responsibilities in a security program to help you familiarize yourself with these roles:
+This section describes which teams and roles typically perform key cloud security functions, when these functions are present in the organization. Map out your existing approach, look for gaps, and assess whether your organization can and should invest to address those gaps. To ensure that everyone understands their security role and collaboration method, document cross-team processes and a shared responsibility model. 
 
-:::image type="content" source="../media/security-roles-responsibilities.png" lightbox="../media/security-roles-responsibilities.png" alt-text="Diagram that summarizes the roles and responsibilities of a security program." border="false":::
+- **Cloud service providers** provide security functions and capabilities for the underlying cloud platform. They also provide security features that your teams can use to manage security posture and incidents.
 
-For more information, see [Cloud security functions](/azure/cloud-adoption-framework/organize/cloud-security).
+- **Infrastructure or platform teams** include architecture, engineering, and operations teams. They implement and integrate security, privacy, and compliance controls across cloud environments. These teams ensure availability, scalability, security, and privacy for cloud services. They work collaboratively with security, risk, compliance, and privacy experts to meet organizational requirements.
 
-## Map security to business outcomes
+- **Security architecture, engineering, and posture management teams** collaborate with infrastructure and platform roles to translate security strategy, policy, and standards into actionable solutions. These teams help cloud teams succeed because they evaluate and influence the security of infrastructure and management processes and tools.
 
-At the organizational level, the security disciplines map to standard plan-build-run phases seen widely across industries and organizations. This cycle is accelerating into a continuous change cycle with the digital age and the advent of DevOps. It also illustrates how security maps to normal business processes.
+  - **Security architects and engineers** work with infrastructure teams to design and implement security controls. They adapt existing security policies, standards, and guidelines to fit cloud environments. They also collaborate with several other roles to establish foundational network security capabilities.
 
-Security is a discipline with its own unique functions. Integration into normal business operations is a critical element.
+  - **Software security engineers** evaluate code and scripts that are used to manage the infrastructure. They protect formal code and configurations from manipulation through threat model analysis, code review, and security scanning tools.
 
-## Role types
+  - **Posture management teams** focus on security enablement for technical operations teams to help prioritize and implement controls to block or mitigate attacks. Key tasks include monitoring and assessing the security posture, identifying risks, training, and reporting on incidents.
 
-In the preceding diagram, the dark labels group these responsibilities into typical roles that have common skill sets and career profiles. These groupings also help provide clarity on how industry trends affect security professionals.
+- **Security operations teams** handle incident response, threat hunting, and detection engineering. They ensure continuous monitoring and management of security incidents.
 
-- **Security leadership**: These roles frequently span across functions. They ensure that teams coordinate with each other, prioritize, and set cultural norms, policies, and standards for security.
-- **Security architect**: These roles span across functions and provide a key governance capability to ensure all the technical functions work harmoniously within a consistent architecture.
-- **Security posture and compliance**: This newer role type represents the increasing convergence of compliance reporting with traditional security disciplines like vulnerability management and configuration baselines. While the scope and audience are different for security and compliance reporting, they answer different versions of the question "How secure is the organization?" The way that question is answered is growing more similar via tools like Microsoft Secure Score and Microsoft Defender for Cloud.
-  - The use of on-demand data feeds from cloud services reduces the time required to report compliance.
-  - The increased scope of data available enables security governance to look beyond traditional software updates or patches and discover and track "vulnerabilities" from security configurations and operational practices.
-- **Platform security engineer**: These technology roles focus on platforms that host multiple workloads focused on access control and asset protection. These roles are often grouped into teams with specialized technical skill sets. They include network security, infrastructure and endpoints, and identity and key management. These teams work on preventive controls and detective controls, with detective controls being a partnership with SecOps and preventive controls being primarily a partnership with IT operations. For more information, see [Security integration](/azure/cloud-adoption-framework/secure/security-integration).
-- **Application security engineer**: These technology roles focus on security controls for specific workloads and support classic development models and modern DevOps/DevSecOps models. They blend application and development security skills for unique code and infrastructure skills for common technical components like VMs, databases, and containers. These roles might be in central IT or security organizations, or within business and development teams based on organizational factors.
+- **Security governance, risk, and compliance (GRC) teams** manage security policies, risk assessments, and compliance requirements. They ensure that security practices align with regulatory standards and organizational policies. GRC disciplines operate across all technologies and systems. They rely on high-fidelity data and context from other teams.
 
-## Modernization
+- **Security training and awareness teams** provide training and resources to ensure that all stakeholders understand their security responsibilities and how to work with other teams.
 
-Security architecture is affected by different factors:
-
-- **Continuous engagement model**: Continuous release of software updates and cloud features makes fixed engagement models obsolete. Architects should be engaged with all teams working in technical topic areas to guide decision making along those teams' capability lifecycles.
-- **Security from the cloud**: Incorporate security capabilities from the cloud to reduce enablement time and ongoing maintenance costs like hardware, software, time, and effort.
-- **Security of the cloud**: Ensure coverage of all cloud assets including software as a service (SaaS) applications, infrastructure as a service (IaaS) VMs, and platform as a service (PaaS) applications and services. Include discovery and security for both sanctioned and unsanctioned services.
-- **Identity integration**: Security architects should ensure tight alignment with identity teams to help organizations meet the dual goals of enabling productivity and providing security assurances.
-- **Integration of internal context in security designs such as context from posture management and incidents investigated by security operations center**: Include elements like relative risk scores of user accounts and devices, data sensitivity, and key security-isolation boundaries to actively defend.
-
-## Recommended content
-
-- [MCRA Security Roles - YouTube](https://www.youtube.com/watch?v=GlqjvlX93gY&list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ&index=13): Overview of the roles and responsibilities in a security program. This video includes a discussion of how they're evolving to meet the needs of modern attacks, cloud technology, and Zero Trust principles. This top-to-bottom view of roles includes the board and executives.
+Properly assign roles to ensure that you deploy your workload correctly and that you continuously monitor, manage, and improve it. This approach helps protect your workload from evolving threats.

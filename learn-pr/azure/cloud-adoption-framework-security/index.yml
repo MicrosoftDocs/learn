@@ -19,7 +19,7 @@ abstract: |
   In this module, you'll: 
     - Understand cloud security methodology.
     - Understand the importance of integrating security into every phase of cloud adoption.
-    - Identify security roles and responsibilities.
+    - Understand the various security roles and their functions.
     - Assess cultural and role and responsibility changes that typically come with cloud adoption.
     - Learn how to simplify compliance and security implementation in the cloud.
 prerequisites: |

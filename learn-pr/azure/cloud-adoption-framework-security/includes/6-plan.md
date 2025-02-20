@@ -1,32 +1,47 @@
-Azure landing zones are a logical construct that captures everything that must be true to enable application migrations and development at scale in Azure. Landing zones consider all platform resources that are required to support your organization's application portfolio. Azure landing zones provide cloud adoption teams with a well-managed environment for their workloads.
+This unit describes areas of security optimization to consider as you move through the [Plan methodology](/azure/cloud-adoption-framework/plan/) phase of your journey.
 
-Landing zones help with cloud adoption by creating better ways to organize resources, not just by type, but by organization, cost, and security. Watch the following video:
+A cloud adoption plan often has many technical challenges. You must carefully plan each step of your cloud adoption process, specifically when you update legacy workloads for cloud infrastructure. Prioritize security over performance and cost efficiency when you start your designs. This approach ensures that you don't introduce risks that could require you to redesign workloads later.
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=14a106f2-3835-44b1-8452-3849bea9fea7]
+## Plan for landing zone adoption
 
-When you design and implement an Azure landing zone, consider security throughout the process. The security design area focuses on considerations and recommendations for landing zone decisions. Azure Security Benchmarks are built into Azure landing zones to make adopting a strong security stance easier.
+To build your cloud estate foundation, use the landing zone approach, especially for enterprise and large organizations. Smaller organizations might not need a landing zone initially but should understand the design areas for their cloud adoption plan.
 
-The security design area creates a foundation for security across Azure, hybrid, and multicloud environments. The security design considerations within the Azure landing zones focus on providing visibility into what's happening within the technical cloud estate.
+Landing zones are preconfigured, highly secure, scalable cloud environments that include network topology, identity management, security, and governance components. They help you standardize your cloud environment, ensure consistency and compliance with security policies, and facilitate easier management and scalability.
 
-Security monitoring and audit logging for Azure platform services are key components of a scalable framework. The security operations design considerations have in-scope security alerts, logs, and controls. They also include vulnerability management, shared responsibilities, and encryption and keys. You can later enhance this foundation with security guidance outlined in the Secure methodology of the Microsoft Cloud Adoption Framework for Azure.
+## Security posture modernization
 
-Continue to learn about implementation options for Azure landing zones by reviewing the best practices in the [Ready methodology](/azure/cloud-adoption-framework/ready/) of the Cloud Adoption Framework. Those practices help you to choose how and when to refactor your landing zone to better fit your needs.
+When you develop a security modernization plan, focus on adopting new technologies and operational practices while aligning security measures with business objectives.
 
-You can learn how Cloud Adoption Framework enterprise-scale landing zones can help your organization accelerate cloud adoption from months to weeks in the [Create a scalable and modular architecture with Azure landing zones](/training/paths/enterprise-scale-architecture/) learning path.
+### Plan for Zero Trust adoption
 
-## Security implementation best practices
+Incorporate Zero Trust principles to structure phases and steps for teams. The Microsoft Zero Trust approach covers seven technology pillars:
 
-Several key steps can help you to mitigate or avoid the business risk from cybersecurity attacks. They can also help you rapidly establish essential security practices in the cloud. Follow these steps to integrate security into your cloud adoption process.
+- **[Identity](/security/zero-trust/deploy/identity):** Guidance for verifying identities with strong authentication and controlling access under the principle of least privilege.
 
-Adhering to these steps helps you integrate security at critical points in the process. The goal is to avoid obstacles in cloud adoption and reduce unnecessary business or operational disruption.
+- **[Endpoints](/security/zero-trust/deploy/endpoints):** Guidance for securing all endpoints, including devices and apps, that interact with your data. This guidance applies regardless of where the endpoints connect from and how they connect.
 
-These steps show you how to:
+- **[Data](/security/zero-trust/deploy/data):** Guidance for securing all data by using a defense-in-depth approach.
 
-- Establish essential security practices.
-- Modernize the security strategy.
-- Develop a security plan.
-- Secure new workloads.
-- Secure existing cloud workloads.
-- Govern to manage and improve security posture.
+- **[Apps](/security/zero-trust/deploy/applications):** Guidance for securing the cloud apps and services that you consume.
 
-This [Get started guide](/azure/cloud-adoption-framework/get-started/security) describes the key steps. Use it to help you rapidly establish essential security practices in the cloud and integrate security into your cloud adoption process.
+- **[Infrastructure](/security/zero-trust/deploy/infrastructure):** Guidance for securing cloud infrastructure through strict policies and enforcement strategies.
+
+- **[Network](/security/zero-trust/deploy/networks):** Guidance for securing your cloud network through segmentation, traffic inspection, and end-to-end encryption.
+
+- **[Visibility, automation, and orchestration](/security/zero-trust/deploy/visibility-automation-orchestration):** Guidance for operational policies and practices that help enforce Zero Trust principles.
+
+### Consider business alignment
+
+Ensure alignment between technology and business stakeholders. Approach plan development collaboratively. Negotiate with stakeholders to fine the best way to adapt processes and policies. Business stakeholders must understand how the modernization plan affects business functions. Technology stakeholders should know where to make concessions to maintain security.
+
+## Plan for preparedness and incident response
+
+- Evaluate vulnerability management solutions, threat detection systems, and infrastructure monitoring.
+- Harden infrastructure to reduce attack surfaces.
+- Build a robust incident response plan.
+- Identify roles and key phases (investigation, mitigation, communications) in the Plan phase.
+- Add details as you develop your cloud estate.
+
+## Plan for availability
+
+

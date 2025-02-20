@@ -1,37 +1,43 @@
-To speed up implementing the security your organization needs for the cloud, use the Azure Security Benchmark and the landing zones in the Microsoft Cloud Adoption Framework for Azure.
+This unit describes areas of security optimization to consider as you move through the [Strategy methodology](/azure/cloud-adoption-framework/strategy/) phase of your journey.
 
-The Azure Security Benchmark represents the recommended security practices from Microsoft. The Azure Security Benchmark is integrated into the landing zones to simplify implementing these best practices.
+Moving to the cloud adds security complexity. Your strategy must address modern cloud challenges and integrate security into all facets of the organization. Unlike on-premises platforms, security in the cloud isn't a separate function. Implement security as a core part of your cloud adoption strategy.
 
-## Security benchmarks
+## Security posture modernization
 
-Security benchmarks are configuration baselines and best practices for securely configuring a system. Security benchmarks can help you quickly secure cloud deployments. Benchmark recommendations from your cloud service provider give you a starting point for selecting specific security configuration settings in your environment. Use the settings to quickly reduce risk to your organization.
+Security posture modernization involves adopting new technologies and practices, as well as a mindset shift across your organization. You might need new roles, or you might need to adapt existing roles to new security responsibilities. These changes can cause stress and conflicts, so it's crucial to promote healthy, honest, and blame-free communication throughout the process.
 
-The Azure Security Benchmark is frequently used to address common challenges for customers or service partners who:
+To start your cloud journey with a modern security approach, adopt the Zero Trust strategy. This strategy is based on three principles:
 
-- Are new to Azure and looking for security best practices to ensure a secure deployment of Azure services and application workloads.
-- Want to improve the security posture of existing Azure deployments to prioritize top risks and mitigations.
-- Need to evaluate the security features and capabilities of Azure services before they onboard and approve an Azure service into the cloud-service catalog.
-- Must meet compliance requirements in highly regulated industries like government, finance, and healthcare. These customers need to ensure their service configurations of Azure meet strict security specifications. These specifications are defined in frameworks like the:
+- **Verify explicitly.** Always authenticate and authorize based on all available data points.
 
-  - Center for Internet Security (CIS)
-  - National Institute of Standards and Technology (NIST)
-  - Payment Card Industry (PCI)
-  
-  The Azure Security Benchmark provides an efficient approach with the controls already pre-mapped to these industry benchmarks.
+- **Use least privilege.** Limit user access with just-in-time and just-enough-access, risk-based adaptive policies, and data protection.
 
-The Azure Security Benchmark includes high-impact security recommendations to help you secure services you use in Azure. Think of the recommendations as *general* or *organizational* as they apply to most Azure services.
+- **Assume breach.** Minimize the blast radius and segment access. Verify end-to-end encryption, and use analytics for visibility and threat detection.
 
-The Azure Security Benchmark recommendations are then customized for each Azure service. The security baselines are the service-specific applications of the benchmark controls. They contain service-level configuration guidance and details.
+Apply these principles to help ensure a smooth modern security transition.
 
-The Azure Security Benchmark documentation specifies security controls and service recommendations:
+## Define your strategy
 
-- [**Security controls**](/security/benchmark/azure/overview): The Azure Security Benchmark recommendations are categorized by security controls. Security controls represent high-level, vendor-agnostic security requirements, like network security and data protection. Each security control has a set of security recommendations and instructions that help you implement those recommendations.
-- **Security baselines**: When available, benchmark recommendations for Azure services include the Azure Security Benchmark recommendations that are tailored specifically for that service.
+Establish a clear vision and specific objectives for cloud security readiness. Focus on building security capacity and skills. Align incident preparedness and response with business strategy to ensure that security doesn't impede business goals. To help acheive specific goals in your strategy, include considerations for confidentiality, integrity, availability, and security posture sustainment.
 
-## Implement the Azure Security Benchmark
+- **Confidentiality considerations:** 
+   - Set objectives that emphasize data privacy and compliance with regulations like GDPR and HIPAA.
+  - Identify and mitigate risks to data confidentiality.
+  - Implement tools and processes to prevent data loss, data misuse, or unauthorized access.
 
-Implement the Azure Security Benchmark in three steps:
+- **Integrity considerations:**
+  - Incorporate well-designed data protection controls and risk management.
+  - Make data and system integrity a key business objective.
+  - Automate policy management, data classification, and infrastructure updates to support integrity.
 
-- **Plan your implementation**: Review the [documentation](/security/benchmark/azure/overview) for the enterprise controls and service-specific baselines. Plan your control framework and how it maps to guidance like [CIS controls](https://www.cisecurity.org/), [NIST](https://csrc.nist.gov/Projects/risk-management/), and the [PCI Data Security Standard framework](https://www.pcisecuritystandards.org/).
-- **Monitor your compliance**: Use the Microsoft Defender for Cloud [regulatory compliance dashboard](/azure/security-center/security-center-compliance-dashboard) to monitor compliance with the Azure Security Benchmark status and other control sets.
-- **Establish guardrails**: Automate secure configurations and enforce compliance with the Azure Security Benchmark and other requirements in your organization with Azure Policy.
+- **Availability considerations:**
+  - Set high-level goals to determine the criticality of various aspects.
+  - Discuss the proper level of availability with stakeholders to balance cost and performance.
+
+- **Security posture sustainment considerations:**
+  - Review and refine security practices continuously to keep up with new threats.
+  - Prepare for emerging threats and technological changes.
+  - Focus on real-world performance and apply lessons to evolve continuously.
+  - Align long-term security goals with business objectives.
+
+The Secure methodology provides an [example strategy](/azure/cloud-adoption-framework/secure/strategy#example-strategy) that incorporates these considerations. Use this example to discover ideas about how to incorporate this guidance into your scenario.
