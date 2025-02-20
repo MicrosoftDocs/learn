@@ -7,7 +7,7 @@ metadata:
   title: Install Azure CLI?
   description: "Choose the right environment and install Azure CLI?"
   ms.date: 02/17/2025
-  author: dbradish-microsoft
+  author: wwlpublish
   ms.author: dbradish
   ms.topic: unit
   ms.custom: devx-track-azurecli

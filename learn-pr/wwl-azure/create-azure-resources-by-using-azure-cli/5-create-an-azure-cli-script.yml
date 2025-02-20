@@ -7,7 +7,7 @@ metadata:
   title: Create an Azure CLI script for Bash
   description: "Create an Azure CLI script for Bash"
   ms.date: 02/17/2025
-  author: dbradish-microsoft
+  author: wwlpublish
   ms.author: dbradish
   ms.topic: unit
   ms.custom: devx-track-azurecli

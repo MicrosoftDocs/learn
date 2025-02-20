@@ -6,7 +6,7 @@ metadata:
   title: Create Azure resources by using Azure CLI
   description: "Create Azure resources by using Azure CLI"
   ms.date: 02/17/2025
-  author: dbradish-microsoft
+  author: wwlpublish
   ms.author: dbradish
   ms.topic: module
   ms.service: azure
