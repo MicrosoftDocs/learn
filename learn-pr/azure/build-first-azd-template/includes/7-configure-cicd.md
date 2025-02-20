@@ -15,7 +15,7 @@ Complete the following steps to configure a CI/CD pipeline for your template:
     ```
 
 1. Choose **GitHub** when `azd` prompts you to select a provider. Note that Azure DevOps is also provided as an option.
-1. When prompted, enter *y* and press enter to instruct `azd` to create a default `azure-dev.yaml` file for you. `azure-dev.yaml` is a standard GitHub actions configuration file required to configure workflows such as a deployment pipeline. `azd` adds the the `azure-dev.yml` file to your project inside of a new `.github` folder. You can use the `azure-dev.yaml` file as-is or modify it to suit your needs.
+1. When prompted, enter *y* and press enter to instruct `azd` to create a default `azure-dev.yaml` file for you. `azure-dev.yaml` is a standard GitHub actions configuration file required to configure workflows such as a deployment pipeline. `azd` adds the `azure-dev.yml` file to your project inside of a new `.github` folder. You can use the `azure-dev.yaml` file as-is or modify it to suit your needs.
 
 1. If a GitHub origin isn't set for your project, `azd` asks how you would like to configure your remote repository. Select the option **Create a new private GitHub repository** and then enter a name for the new repo. `azd` completes the following tasks for you:
     * Creates a GitHub repository and commits your project code to it.
