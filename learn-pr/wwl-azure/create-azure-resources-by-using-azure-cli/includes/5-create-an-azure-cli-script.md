@@ -57,7 +57,7 @@ msdocszzzzzzzzz  https://msdocszzzzzzzzz.blob.core.windows.net/
 
 Now that you had success with your first Bash script, let's execute a Bash script saved in a file.
 
-1. With a text editor of your choice, copy and paste the Bash script given in [Create a Bash script](#create-a-simple-bash-script).
+1. With a text editor of your choice, copy and paste the Bash script given in [Create a Bash script](#create-a-bash-script).
 1. Save the text file as `bashScript01.sh` to a location on your computer.
 1. Upload the script file to the Sandbox drive provided in this unit.
    - On the main menu of the Sandbox, expand the **Manage files** drop down.
