@@ -16,4 +16,4 @@ The Azure CLI's clean syntax and powerful scripting capabilities make it a valua
 ## Learn more
 
 - [Azure CLI onboarding cheat sheet](/cli/azure/cheat-sheet-onboarding)
-- [Tutorial: Learn to use the Azure CLI](s/cli/azure/get-started-tutorial-0-before-you-begin)
+- [Tutorial: Learn to use the Azure CLI](/cli/azure/get-started-tutorial-0-before-you-begin)

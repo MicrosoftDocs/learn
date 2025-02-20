@@ -2,9 +2,9 @@
 
 Just about every task you can complete in the Azure portal, you can complete using Azure CLI reference commands. Using the Azure portal to learn about Azure is a great place to begin. However, we recommend using the Azure CLI or Azure PowerShell to manage Azure resources at scale.
 
-Consider the scenario where you manage Azure for a world-wide corporation.  You receive multiple requests daily for new resource groups, Azure logic apps, storage accounts, data factories and Azure SQL databases. All of your teams work in development, stage and production environments so for every request, you need to create three similar Azure resources that follow your corporation's naming standards and security policies. It's time to use Azure CLI!
+Consider the scenario where you manage Azure for a world-wide corporation. You receive multiple requests daily for new resource groups, Azure logic apps, storage accounts, data factories, and Azure SQL databases. All of your teams work in development, stage, and production environments so for every request, you need to create three similar Azure resources that follow your corporation's naming standards and security policies. It's time to use Azure CLI!
 
-## Create a simple Bash script
+## Create a Bash script
 
 1. Activate the Sandbox provided in this unit.
 1. Copy and paste the following Bash script into the Sandbox.
@@ -57,13 +57,13 @@ msdocszzzzzzzzz  https://msdocszzzzzzzzz.blob.core.windows.net/
 
 Now that you had success with your first Bash script, let's execute a Bash script saved in a file.
 
-1. Using a text editor of your choice, copy and paste the Bash script given above.
+1. With a text editor of your choice, copy and paste the Bash script given in [Create a Bash script](#create-a-simple-bash-script).
 1. Save the text file as `bashScript01.sh` to a location on your computer.
 1. Upload the script file to the Sandbox drive provided in this unit.
    - On the main menu of the Sandbox, expand the **Manage files** drop down.
    - Select **Upload**.
    - Navigate to the location where you saved the `sh` file and upload the file.
-1. At the Sandbox command prompt copy, paste and execute the following codeblock:
+1. At the Sandbox command prompt copy, paste and execute the following code block:
 
    ```bash
    #!/bin/bash
@@ -77,7 +77,7 @@ Now that you had success with your first Bash script, let's execute a Bash scrip
    ./bashScript01.sh
    ```
 
-## Delete Azure resources using a script
+## Delete Azure resources with a script
 
 When creating and testing scripts, remember to delete your test resources to avoid costs. If you used a naming convention for your Azure resources, using a delete script is an easy way to clean up your environment.
 
@@ -95,7 +95,7 @@ done
 Delete all resource groups that contain a similar name with these extra features:
 
 - Write your results to a log file.
-- Remove the resource group with the `--no-wait` parameter which will cause the delete to occur in the background and free up the command-line for you to keep working.
+- Remove the resource group with the `--no-wait` parameter which causes the delete to occur in the background and free up the command-line for you to keep working.
 
 ```azurecli
 # Set your log file location
@@ -123,7 +123,7 @@ az group list --query "[?starts_with(name, 'msdocs') == \`true\`].name"
 
 ## Advanced scripting
 
-The scripts provided in this unit are intended to plant a seed of understanding that the Azure CLI is a tool designed to manage Azure resources at scale. Every organization is a unique environment and the complexity of your script is contingent upon what you need to accomplish.  Minimally, an end-to-end Azure CLI script run in a production setting will complete the following tasks:
+The scripts provided in this unit are intended to plant a seed of understanding that the Azure CLI is a tool designed to manage Azure resources at scale. Every organization is a unique environment and the complexity of your script is contingent upon what you need to accomplish. Minimally, an end-to-end Azure CLI script run in a production setting completes the following tasks:
 
 - Sign into Azure using `az login` with a service principal, managed identity, or federated identity.
 - Create parameters.

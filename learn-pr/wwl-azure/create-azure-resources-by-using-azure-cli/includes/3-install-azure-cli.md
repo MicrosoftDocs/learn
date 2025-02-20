@@ -2,7 +2,7 @@
 
 In this unit, you consider the best environment to use when running Azure CLI commands. You install the Azure CLI on your local machine, and find the Azure CLI version installed.
 
-## Chose your environment
+## Choose your environment
 
 The Azure CLI runs in Bash, PowerShell, and Windows command shell (Cmd.exe). With few exceptions, any task you can perform in the Azure portal can also be accomplished using the Azure CLI. Here are some factors to consider when choosing the most appropriate scripting tool for your needs:
 
@@ -111,9 +111,9 @@ When you're working with a local install of the Azure CLI, you need to authentic
 | Authentication method | Advantage |
 |-|-|
 | [Azure Cloud Shell](/azure/cloud-shell/overview) | Azure Cloud Shell automatically logs you in and is the easiest way to get started. |
-| [Sign in interactively](./authenticate-azure-cli-interactively.md) | This is a good option when learning Azure CLI commands and running the Azure CLI locally. Login through your browser with the [az login](/cli/azure/reference-index#az-login) command. Interactive login also gives you a subscription selector to automatically set your default subscription. |
-| [Sign in with a managed identity](./authenticate-azure-cli-managed-identity.md) | [Managed identities](/entra/identity/managed-identities-azure-resources/overview) provide an Azure-managed identity for applications to use when connecting to resources that support Microsoft Entra authentication. Using a managed identity eliminates the need for you to manage secrets, credentials, certificates, and keys. |
-| [Sign in using an service principal](./authenticate-azure-cli-service-principal.md) | When you write scripts, using a [service principal](/entra/identity-platform/app-objects-and-service-principals) is the recommended authentication approach. You grant just the appropriate permissions needed to a service principal keeping your automation secure. |
+| [Sign in interactively](/cli/azure/authenticate-azure-cli-interactively) | This is a good option when learning Azure CLI commands and running the Azure CLI locally. Login through your browser with the [az login](/cli/azure/reference-index#az-login) command. Interactive login also gives you a subscription selector to automatically set your default subscription. |
+| [Sign in with a managed identity](/cli/azure/authenticate-azure-cli-managed-identity) | [Managed identities](/entra/identity/managed-identities-azure-resources/overview) provide an Azure-managed identity for applications to use when connecting to resources that support Microsoft Entra authentication. Using a managed identity eliminates the need for you to manage secrets, credentials, certificates, and keys. |
+| [Sign in using an service principal](/cli/azure/authenticate-azure-cli-service-principal) | When you write scripts, using a [service principal](/entra/identity-platform/app-objects-and-service-principals) is the recommended authentication approach. You grant just the appropriate permissions needed to a service principal keeping your automation secure. |
 
 1. If you chose to install the Azure CLI locally, log into Azure using the `az login` command:
 

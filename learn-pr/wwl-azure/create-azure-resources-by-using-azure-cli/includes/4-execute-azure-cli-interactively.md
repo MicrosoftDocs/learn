@@ -2,7 +2,7 @@
 
 In interactive mode, Azure CLI allows you to enter and run commands immediately.
 
-If you only need to create a small number of Azure resources, manually executing Azure CLI commands is a reasonable choice.
+If you only need to create a few Azure resources, manually executing Azure CLI commands is a reasonable choice.
 
 ## Create a storage account with Azure CLI
 
@@ -18,21 +18,21 @@ Let's perform a common task: creating a storage account. Here are the four steps
 
 ### 1. Connect
 
-Because you're working with a local Azure CLI installation, you'll need to authenticate before you can execute Azure commands. Sign into Azure by using the Azure CLI **az login** command.
+Because you're working with a local Azure CLI installation, you need to authenticate before you can execute Azure commands. Sign into Azure by using the Azure CLI **az login** command.
 
 ```azurecli
 az login
 
 ```
 
-Azure CLI will typically launch your default browser to open the Azure sign in page.
+Azure CLI typically launches your default browser to open the Azure sign in page.
 
 If it doesn't work, follow the command-line instructions, and enter an authorization code in the [Enter Code](https://aka.ms/devicelogin) dialog box.
 
 After a successful sign in, you'll be connected to your Azure subscription.
 
 > [!IMPORTANT]
-> Starting in 2025, Microsoft will enforce mandatory multifactor authentication for Azure CLI and other command-line tools. MFA will only impact Microsoft Entra ID user identities. It will not impact workload identities, such as service principals and managed identities.
+> Starting in 2025, Microsoft will enforce mandatory multifactor authentication for Azure CLI and other command-line tools. The new MFA requirements impact Microsoft Entra ID user identities. It does affect workload identities, such as service principals and managed identities.
 
 ### 2. Verify your subscription
 
@@ -56,7 +56,7 @@ az account set --subscription "the name of a different subscription or subscript
 
 ### 3. Create a resource group
 
-An Azure resource group is a container for Azure resources.  Resource groups keep your Azure resources organized and help you manage security and costs. Resource group names must be unique within a subscription and be assigned a geographical location.
+An Azure resource group is a container for Azure resources. Resource groups keep your Azure resources organized and help you manage security and costs. Resource group names must be unique within a subscription and be assigned a geographical location.
 
 1. Find which Azure locations are available to your default subscription
 
@@ -77,7 +77,7 @@ An Azure resource group is a container for Azure resources.  Resource groups kee
 
 1. Create a resource group using variables
 
-   Because this is an advanced module, let's begin using random identifiers and Bash variables. The use of random IDs allows you to test a script repeatedly without having to wait for the resource group of the previous test to be deleted.
+   Because this module is advanced, let's begin using random identifiers and Bash variables. The use of random IDs allows you to test a script repeatedly without having to wait for the resource group of the previous test to be deleted.
 
    ```azurecli
    # Variable block
@@ -91,7 +91,7 @@ An Azure resource group is a container for Azure resources.  Resource groups kee
 
 ### 4. Create a storage account
 
-Using the resource group you just created, create a storage account. Replace `<msdocs-rg-0000000>` with the name of the resource group you created in the previous step. Storage account names can only contain lowercase letters and numbers.
+Using the resource group you created, create a storage account. Replace `<msdocs-rg-0000000>` with the name of the resource group you created in the previous step. Storage account names can only contain lowercase letters and numbers.
 
 ```azurecli
 # Variable block

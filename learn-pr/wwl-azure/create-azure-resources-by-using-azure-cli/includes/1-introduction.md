@@ -2,13 +2,13 @@ This module explains Azure CLI to create Azure resources, run templates, and det
 
 ## Learning objectives
 
-After completing this module, students and professionals can:
+After you complete this module, you'll be able to:
 
-- Learn about the Azure CLI tool.
+- Understand Azure CLI syntax components.
 - Install the Azure CLI and connect to Azure.
 - Create Azure resources using Azure CLI.
 - Run Azure CLI scripts.
-- Understand how troubleshoot and use the Azure CLI successfully.
+- Know how to troubleshoot and use the Azure CLI successfully.
 
 ## Prerequisites
 
