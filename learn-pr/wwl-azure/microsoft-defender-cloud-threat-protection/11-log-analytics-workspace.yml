@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.log-analytics-workspace
+title: 'Log Analytics workspace '
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Log Analytics workspace
+  description: "Log Analytics workspace"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 7
+content: |
+  [!include[](includes/11-log-analytics-workspace.md)]

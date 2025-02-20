@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-resilient-code-interfaces.exercise-decouple-code-with-interfaces
+title: 'Exercise: Decouple code with interfaces'
+metadata:
+  title: 'Exercise: Decouple code with interfaces'
+  description: "Exercise: Decouple code with interfaces in C# code."
+  ms.date: 02/17/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 25
+content: |
+  [!include[](includes/7-exercise-decouple-code-with-interfaces.md)]

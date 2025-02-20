@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.monitor-network-security-events-performance-data
+title: Monitor network security events and performance data by configuring data collection rules (DCRs) in Azure Monitor
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Monitor network security events and performance data by configuring data collection rules (DCRs) in Azure Monitor
+  description: "Monitor network security events and performance data by configuring data collection rules (DCRs) in Azure Monitor"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 7
+content: |
+  [!include[](includes/17-monitor-network-security-events-performance-data.md)]

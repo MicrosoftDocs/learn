@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: 'Exercise: Provision a SQL Server on an Azure Virtual Machine'
   description: "Exercise: Provision a SQL Server on an Azure Virtual Machine"
-  ms.date: 12/22/2022
-  author: wwlpublish
+  ms.date: 02/18/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false

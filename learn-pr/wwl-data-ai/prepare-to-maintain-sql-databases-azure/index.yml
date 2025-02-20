@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Prepare to maintain SQL databases on Azure
   description: "Prepare to maintain SQL databases on Azure"
-  ms.date: 11/12/2023
+  ms.date: 2/12/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
