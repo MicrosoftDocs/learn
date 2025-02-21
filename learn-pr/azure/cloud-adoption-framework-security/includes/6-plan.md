@@ -1,4 +1,6 @@
-This unit describes areas of security optimization to consider as you move through the [Plan methodology](/azure/cloud-adoption-framework/plan/) phase of your journey.
+This unit describes areas of security optimization to consider as you move through the [Plan methodology](/azure/cloud-adoption-framework/secure/plan/) phase of your journey.
+
+:::image type="content" source="../media/caf-secure-plan.png" alt-text="Diagram that shows the Plan phase of the Secure methodology." lightbox="../media/caf-secure-plan.png" border="false":::
 
 A cloud adoption plan often has many technical challenges. You must carefully plan each step of your cloud adoption process, specifically when you update legacy workloads for cloud infrastructure. Prioritize security over performance and cost efficiency when you start your designs. This approach ensures that you don't introduce risks that could require you to redesign workloads later.
 
@@ -44,4 +46,20 @@ Ensure alignment between technology and business stakeholders. Approach plan dev
 
 ## Plan for availability
 
+To address availability, adopt standards for architecture design and operations. These standards guide implementation and future phases. They provide a blueprint to meet availability requirements. Consider the following recommendations:
 
+- **Standardize infrastructure and application design patterns:** To help ensure workload reliability, standardize design patterns, avoid unnecessary complexity, and follow best practices for high availability and resilience.
+
+- **Standardize development tools and practices:** To ensure that deployments adhere to the CIA Triad principles and best practices for safe deployments, develop enforceable standards for development tools and practices.
+- **Standardize operational tools and practices:** To maintain confidentiality, integrity, and availability, enforce standards for operators. Consistently follow and train on these standards to ensure system resilience and efficient incident response.
+
+## Plan for security sustainment
+
+To sustain your security posture long-term, adopt a mindset of continuous improvement.
+
+- Adhere to operational standards.
+- Seek enhancement opportunities.
+- Regularly review policies.
+- Implement a training program.
+
+To plan your security baseline, first understand your current posture. Use tools like Microsoft Secure Score to quickly establish your baseline and identify areas for improvement.
