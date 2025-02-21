@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise configure Microsoft Entra multifactor authentication registration policy
   description: "Exercise configure Microsoft Entra multifactor authentication registration policy"
-  ms.date: 12/17/2024
+  ms.date: 02/21/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
