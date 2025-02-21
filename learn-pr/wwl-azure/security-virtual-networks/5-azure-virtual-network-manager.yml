@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.azure-virtual-network-manager
+title: Azure Virtual Network Manager
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Azure Virtual Network Manager
+  description: "Azure Virtual Network Manager"
+  ms.date: 02/21/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-azure-virtual-network-manager.md)]

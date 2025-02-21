@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Plan and implement Virtual Wide Area Network, including secured virtual hub
   description: "Plan and implement Virtual Wide Area Network, including secured virtual hub"
-  ms.date: 07/04/2024
+  ms.date: 02/21/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-virtual-wide-area-network.md)]
+  [!include[](includes/9-virtual-wide-area-network.md)]

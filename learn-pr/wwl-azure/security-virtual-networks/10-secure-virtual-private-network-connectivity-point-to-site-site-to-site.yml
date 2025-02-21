@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Secure VPN connectivity, including point-to-site and site-to-site
   description: "Secure VPN connectivity, including point-to-site and site-to-site"
-  ms.date: 07/04/2024
+  ms.date: 02/21/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-secure-virtual-private-network-connectivity-point-to-site-site-to-site.md)]
+  [!include[](includes/10-secure-virtual-private-network-connectivity-point-to-site-site-to-site.md)]

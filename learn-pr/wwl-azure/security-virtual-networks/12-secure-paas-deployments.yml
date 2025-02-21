@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure firewall settings on PaaS resources
   description: "Configure firewall settings on PaaS resources"
-  ms.date: 07/04/2024
+  ms.date: 02/21/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/10-secure-paas-deployments.md)]
+  [!include[](includes/12-secure-paas-deployments.md)]

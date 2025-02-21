@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Monitor network security by using Network Watcher, including network security groups
   description: "Monitor network security by using Network Watcher, including network security groups"
-  ms.date: 07/04/2024
+  ms.date: 02/21/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/11-flow-logging-network-security-groups.md)]
+  [!include[](includes/14-flow-logging-network-security-groups.md)]

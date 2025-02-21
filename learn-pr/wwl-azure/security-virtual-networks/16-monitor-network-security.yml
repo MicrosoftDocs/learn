@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.monitor-network-security
+title: Monitor network security by using Network Watcher
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Monitor network security by using Network Watcher
+  description: "Monitor network security by using Network Watcher"
+  ms.date: 02/21/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/16-monitor-network-security.md)]
