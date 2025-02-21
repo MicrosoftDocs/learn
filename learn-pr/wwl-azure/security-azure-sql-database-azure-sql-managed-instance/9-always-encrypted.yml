@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Recommend when to use Azure SQL Database Always Encrypted
   description: "Deploy always encrypted​ features"
-  ms.date: 05/29/2024
+  ms.date: 02/21/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

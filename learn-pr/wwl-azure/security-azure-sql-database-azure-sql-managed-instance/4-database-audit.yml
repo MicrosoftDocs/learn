@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Enable and monitor database audit
   description: "Enable and monitor database auditing"
-  ms.date: 05/29/2024
+  ms.date: 02/21/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

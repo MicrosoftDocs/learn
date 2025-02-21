@@ -1,8 +1,8 @@
-Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support dynamic data masking. Dynamic data masking limits sensitive data exposure by masking it to nonprivileged users.<br>
+Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support dynamic data masking. Dynamic data masking limits sensitive data exposure by masking it to nonprivileged users.
 
-Dynamic data masking helps prevent unauthorized access to sensitive data by enabling customers to designate how much of the sensitive data to reveal with minimal effect on the application layer. It's a policy-based security feature that hides the sensitive data in the result set of a query over designated database fields, while the data in the database isn't changed.<br>
+Dynamic data masking helps prevent unauthorized access to sensitive data by enabling customers to designate how much of the sensitive data to reveal with minimal effect on the application layer. It's a policy-based security feature that hides the sensitive data in the result set of a query over designated database fields, while the data in the database isn't changed.
 
-For example, a service representative at a call center might identify a caller by confirming several characters of their email address, but the complete email address shouldn't be revealed to the service representative. A masking rule can be defined that masks all the email address in the result set of any query. As another example, an appropriate data mask can be defined to protect personal data, so that a developer can query production environments for troubleshooting purposes without violating compliance regulations.<br>
+For example, a service representative at a call center might identify a caller by confirming several characters of their email address, but the complete email address shouldn't be revealed to the service representative. A masking rule can be defined that masks all the email address in the result set of any query. As another example, an appropriate data mask can be defined to protect personal data, so that a developer can query production environments for troubleshooting purposes without violating compliance regulations.
 
 ## Dynamic data masking basics
 
@@ -27,8 +27,8 @@ You set up a dynamic data masking policy in the Azure portal by selecting the Dy
 | Default              | Full masking according to the data types of the designated fields<br><br>\* Use XXXX (or fewer) if the size of the field is fewer than 4 characters for string data types (nchar, ntext, nvarchar).<br>\* Use a zero value for numeric data types (bigint, bit, decimal, int, money, numeric, smallint, smallmoney, tinyint, float, real).<br>\* Use 1900-01-01 for date/time data types (date, datetime2, datetime, datetimeoffset, smalldatetime, time).<br>\* For sql\_variant, the default value of the current type is used.<br>\* For XML, the document &lt;masked /&gt; is used.<br>\* Use an empty value for special data types (timestamp, table, HierarchyID, uniqueidentifier, binary, image, varbinary, and spatial types). |
 | Credit card          | Masking method, which exposes the last four digits of the designated fields and adds a constant string as a prefix in the form of a credit card.<br><br>XXXX-XXXX-XXXX-1234                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Email                | Masking method, which exposes the first letter and replaces the domain with XXX.com using a constant string prefix in the form of an email address.<br><br>aXX@XXXX.com                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Random number        | Masking method, which generates a random number according to the selected boundaries and actual data types. If the designated boundaries are equal, then the masking function is a constant number.<br><br>:::image type="content" source="/azure/azure-sql/database/media/dynamic-data-masking-overview/random-number.png?view=azuresql" alt-text="Screenshot that shows the masking method for generating a random number.":::                                                                                                                                                                                                                                                                                                |
-| Custom text          | Masking method, which exposes the first and last characters and adds a custom padding string in the middle. If the original string is shorter than the exposed prefix and suffix, only the padding string is used.<br><br>prefix\[padding\]suffix<br><br>:::image type="content" source="/azure/azure-sql/database/media/dynamic-data-masking-overview/custom-text.png?view=azuresql" alt-text="Screenshot of the navigation pane.":::                                                                                                                                                                                                                                                                                          |
+| Random number        | Masking method, which generates a random number according to the selected boundaries and actual data types. If the designated boundaries are equal, then the masking function is a constant number.<br><br>:::image type="content" source="../media/random-number-0a7d2a82-3352779c-ed5f2b27-637c4e2e.png" alt-text="Screenshot that shows the masking method for generating a random number.":::                                                                                                                                                                                                                                                                                                                                                          |
+| Custom text          | Masking method, which exposes the first and last characters and adds a custom padding string in the middle. If the original string is shorter than the exposed prefix and suffix, only the padding string is used.<br><br>prefix\[padding\]suffix<br><br>:::image type="content" source="../media/custom-text-1d4a7cf4-c728ee30-e685a81d-f7f6ee9a.png" alt-text="Screenshot of the navigation pane.":::                                                                                                                                                                                                                                                                                                                                                    |
 
 ## Recommended fields to mask
 
@@ -77,7 +77,7 @@ These are the built-in roles to configure dynamic data masking is:
  -  [SQL DB Contributor](/azure/role-based-access-control/built-in-roles#sql-db-contributor)
  -  [SQL Server Contributor](/azure/role-based-access-control/built-in-roles#sql-server-contributor)
 
-These are the required actions to use dynamic data masking:<br>
+These are the required actions to use dynamic data masking:
 
 Read/Write:
 
@@ -102,6 +102,18 @@ Prevent unauthorized access to sensitive data and gain control by masking it to 
     ```sql
     CREATE SCHEMA Data;
     GO
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 2.  Create table with masked columns:<br>
     
@@ -115,6 +127,18 @@ Prevent unauthorized access to sensitive data and gain control by masking it to 
         DiscountCode SMALLINT MASKED WITH (FUNCTION = 'random(1, 100)') NULL,
         BirthDay DATETIME MASKED WITH (FUNCTION = 'default()') NULL
     );
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 3.  Insert sample data:<br>
     
@@ -125,12 +149,36 @@ Prevent unauthorized access to sensitive data and gain control by masking it to 
     ('Janice', 'Galvin', '555.123.4568', 'JGalvin@contoso.com.co', 5, '1990-05-14 11:30:00'),
     ('Shakti', 'Menon', '555.123.4570', 'SMenon@contoso.net', 50, '2004-02-29 14:20:10'),
     ('Zheng', 'Mu', '555.123.4569', 'ZMu@contoso.net', 40, '1990-03-01 06:00:00');
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 4.  Create schema to contain service tables:
     
     ```sql
     CREATE SCHEMA Service;
     GO
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 5.  Create service table with masked columns:<br>
     
@@ -141,6 +189,18 @@ Prevent unauthorized access to sensitive data and gain control by masking it to 
         Rating INT MASKED WITH (FUNCTION = 'default()'),
         Received_On DATETIME
     );
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 6.  Insert sample data:<br>
     
@@ -150,6 +210,18 @@ Prevent unauthorized access to sensitive data and gain control by masking it to 
     ('Good', 4, '2022-01-25 11:25:05'),
     ('Excellent', 5, '2021-12-22 08:10:07'),
     ('Average', 3, '2021-09-15 09:00:00');
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 7.  Create different users in the database:<br>
     
@@ -162,6 +234,18 @@ Prevent unauthorized access to sensitive data and gain control by masking it to 
     GO
     CREATE USER ServiceHead WITHOUT LOGIN;
     GO
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 8.  Grant read permissions to the users in the database:
     
@@ -170,28 +254,88 @@ Prevent unauthorized access to sensitive data and gain control by masking it to 
     ALTER ROLE db_datareader ADD MEMBER ServiceLead;
     ALTER ROLE db_datareader ADD MEMBER ServiceManager;
     ALTER ROLE db_datareader ADD MEMBER ServiceHead;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 9.  Grant different UNMASK permissions to users:
     
     ```sql
     --Grant column level UNMASK permission to ServiceAttendant
     GRANT UNMASK ON Data.Membership(FirstName) TO ServiceAttendant;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
     
     ```sql
     -- Grant table level UNMASK permission to ServiceLead
     GRANT UNMASK ON Data.Membership TO ServiceLead;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
     
     ```sql
     -- Grant schema level UNMASK permission to ServiceManager
     GRANT UNMASK ON SCHEMA::Data TO ServiceManager;
     GRANT UNMASK ON SCHEMA::Service TO ServiceManager;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
     
     ```sql
     --Grant database level UNMASK permission to ServiceHead;
     GRANT UNMASK TO ServiceHead;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 10. Query the data under the context of user `ServiceAttendant`:
     
@@ -202,6 +346,18 @@ Prevent unauthorized access to sensitive data and gain control by masking it to 
     SELECT MemberID, Feedback, Rating
     FROM Service.Feedback;
     REVERT;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 11. Query the data under the context of user `ServiceLead`:
     
@@ -212,6 +368,18 @@ Prevent unauthorized access to sensitive data and gain control by masking it to 
     SELECT MemberID, Feedback, Rating
     FROM Service.Feedback;
     REVERT; 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 12. Query the data under the context of user `ServiceManager`:
     
@@ -222,6 +390,18 @@ Prevent unauthorized access to sensitive data and gain control by masking it to 
     SELECT MemberID, Feedback, Rating
     FROM Service.Feedback;
     REVERT;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 13. Query the data under the context of user `ServiceHead`:
     
@@ -233,6 +413,18 @@ Prevent unauthorized access to sensitive data and gain control by masking it to 
     FROM Service.Feedback;
     REVERT;
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
 14. To revoke UNMASK permissions, use the following T-SQL statements:
     
@@ -242,4 +434,16 @@ Prevent unauthorized access to sensitive data and gain control by masking it to 
     REVOKE UNMASK ON SCHEMA::Data FROM ServiceManager;
     REVOKE UNMASK ON SCHEMA::Service FROM ServiceManager;
     REVOKE UNMASK FROM ServiceHead;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ```
