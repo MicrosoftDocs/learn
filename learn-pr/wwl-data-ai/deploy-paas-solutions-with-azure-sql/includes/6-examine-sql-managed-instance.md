@@ -1,6 +1,6 @@
 While many organizations initially migrate to Azure using IaaS offerings, the platform as a service (PaaS) provides extra benefits. With PaaS, the service handles installing and patching SQL Server, so you no longer need to perform these tasks. Consistency checks, backups, security, and performance tools are also included as part of the managed service.
 
-[Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview) is a fully functional SQL Server instance that is nearly 100% compatible with your on-premises ecosystem. It includes features like SQL Agent, access to tempdb, cross-database queries, and common language runtime (CLR). This service uses the same infrastructure as Azure SQL Database and offers all the benefits of PaaS, such as automatic backups, automatic patching, and built-in high availability.
+[Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?azure-portal=true) is a fully functional SQL Server instance that is nearly 100% compatible with your on-premises ecosystem. It includes features like SQL Agent, access to tempdb, cross-database queries, and common language runtime (CLR). This service uses the same infrastructure as Azure SQL Database and offers all the benefits of PaaS, such as automatic backups, automatic patching, and built-in high availability.
 
 ### Azure SQL Managed Instance capabilities
 
@@ -16,7 +16,7 @@ Transaction log records on the primary instance can't be truncated until they're
 
 The Link feature can also be used as a hybrid disaster recovery solution, allowing you to fail over your SQL Server databases hosted anywhere to a database running on SQL Managed Instance. Additionally, you can use the Link feature to provide a read-only secondary database in SQL Managed Instance, offloading intensive read-only operations.
 
-For more information about how to configure link feature for Azure SQL Managed Instance, see [Prepare environment for link feature - Azure SQL Managed Instance](/azure/azure-sql/managed-instance/managed-instance-link-preparation).
+For more information about how to configure link feature for Azure SQL Managed Instance, see [Prepare environment for link feature - Azure SQL Managed Instance](/azure/azure-sql/managed-instance/managed-instance-link-preparation?azure-portal=true).
 
 ### Instance pool
 
@@ -24,7 +24,7 @@ Instance pools provide a cost-efficient way to migrate smaller SQL Server instan
 
 The instance pool feature offers a fast deployment time of up to 10 minutes, making it ideal for scenarios where deployment duration is crucial. Additionally, all instances in a pool share the same virtual machine, and the total IP allocation is independent of the number of instances deployed.
 
-To learn how to deploy an instance pool for SQL Managed Instance, see [Deploy Azure SQL Managed Instance to an instance pool ](/azure/azure-sql/managed-instance/instance-pools-configure).
+To learn how to deploy an instance pool for SQL Managed Instance, see [Deploy Azure SQL Managed Instance to an instance pool ](/azure/azure-sql/managed-instance/instance-pools-configure?azure-portal=true).
 
 ### High availability and Disaster recovery
 
@@ -60,6 +60,6 @@ As with Azure SQL Database, you can't restore over an existing database. You nee
 - Backup files containing multiple backup sets can't be restored
 - Backups containing In-Memory/FILESTREAM can't be restored
 
-By default, databases in a managed instance are encrypted using [Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption) with a Microsoft-managed key. To take a user-initiated copy-only backup, you must disable TDE for the specific database. If a database is encrypted, you can restore it, but you need access to either the certificate or asymmetric key used for encryption. Without these, you can't restore the database to a SQL Managed Instance.
+By default, databases in a managed instance are encrypted using [Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption?azure-portal=true) with a Microsoft-managed key. To take a user-initiated copy-only backup, you must disable TDE for the specific database. If a database is encrypted, you can restore it, but you need access to either the certificate or asymmetric key used for encryption. Without these, you can't restore the database to a SQL Managed Instance.
 
-To learn the new features for Azure SQL Managed Instance, see [What's new in Azure SQL Managed Instance?](/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new).
+To learn the new features for Azure SQL Managed Instance, see [What's new in Azure SQL Managed Instance?](/azure/azure-sql/managed-instance/doc-changes-updates-release-notes-whats-new?azure-portal=true).

@@ -24,7 +24,7 @@ In Azure, all services support physical hardware, and you have the flexibility t
 
 ### Database Transaction Unit (DTU)
 
-[DTU-based purchasing model](/azure/azure-sql/database/service-tiers-dtu) is calculated based on a formula combining compute, storage, and I/O resources. It's a good choice for customers who want simple, preconfigured resource options.
+[DTU-based purchasing model](/azure/azure-sql/database/service-tiers-dtu?azure-portal=true) is calculated based on a formula combining compute, storage, and I/O resources. It's a good choice for customers who want simple, preconfigured resource options.
 
 The DTU purchasing model comes in several different service tiers, such as Basic, Standard, and Premium. Each tier has varying capabilities, providing a wide range of options when choosing this platform.
 
@@ -32,11 +32,11 @@ In terms of performance, the Basic tier is used for less demanding workloads, wh
 
 Compute and storage resources are dependent on the DTU level, and they provide a range of performance capabilities at a fixed storage limit, backup retention, and cost.
 
-For more information about DTU purchasing model, see [DTU-based purchasing model overview](/azure/azure-sql/database/service-tiers-dtu).
+For more information about DTU purchasing model, see [DTU-based purchasing model overview](/azure/azure-sql/database/service-tiers-dtu?azure-portal=true).
 
 ### vCore
 
-The [vCore-based purchasing model](/azure/azure-sql/database/service-tiers-sql-database-vcore) allows you to purchase a specified number of vCores based on your given workloads. vCore is the default purchasing model when purchasing Azure SQL Database resources. vCore databases have a specific relationship between the number of cores and the amount of memory and storage provided to the database. The vCore purchasing model is supported by both Azure SQL Database and Azure SQL Managed Instance.
+The [vCore-based purchasing model](/azure/azure-sql/database/service-tiers-sql-database-vcore?azure-portal=true) allows you to purchase a specified number of vCores based on your given workloads. vCore is the default purchasing model when purchasing Azure SQL Database resources. vCore databases have a specific relationship between the number of cores and the amount of memory and storage provided to the database. The vCore purchasing model is supported by both Azure SQL Database and Azure SQL Managed Instance.
 
 You can purchase vCore databases in three different service tiers as well:
 
@@ -50,7 +50,7 @@ The General Purpose service tier offers two compute options: **Provisioned** and
 
 ## Serverless
 
-The term "Serverless" can be misleading because you still deploy your Azure SQL Database to a logical server for connection. [Serverless](/azure/azure-sql/database/serverless-tier-overview) is a compute tier that automatically scales resources up or down based on workload demand. When the workload no longer requires compute resources, the database is paused, and only storage is billed during the inactive period. Upon a connection attempt, the database resumes and becomes available.
+The term "Serverless" can be misleading because you still deploy your Azure SQL Database to a logical server for connection. [Serverless](/azure/azure-sql/database/serverless-tier-overview?azure-portal=true) is a compute tier that automatically scales resources up or down based on workload demand. When the workload no longer requires compute resources, the database is paused, and only storage is billed during the inactive period. Upon a connection attempt, the database resumes and becomes available.
 
 :::image type="content" source="../media/module-22-plan-implement-final-24.png" alt-text="Serverless usage example for Azure SQL Database":::
 
@@ -101,11 +101,11 @@ Regardless of which restore method is implemented, it isn't possible to restore 
 > [!NOTE]
 > Copy-only backup to Azure blob storage is available for SQL Managed Instance. SQL Database doesn't support this feature.
 
-For more information about automated backups, see [Automated backups - Azure SQL Database & Azure SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview).
+For more information about automated backups, see [Automated backups - Azure SQL Database & Azure SQL Managed Instance](/azure/azure-sql/database/automated-backups-overview?azure-portal=true).
 
 ## Active geo-replication
 
-[Geo-replication](/azure/azure-sql/database/active-geo-replication-overview) is a business continuity feature that asynchronously replicates a database to up to four secondary replicas. As transactions are committed to the primary (and its replicas within the same region), the transactions are sent to the secondaries to be replayed. Since this communication is done asynchronously, the calling application doesn't have to wait for the secondary replica to commit the transaction before SQL Server returns control to the caller.
+[Geo-replication](/azure/azure-sql/database/active-geo-replication-overview?azure-portal=true) is a business continuity feature that asynchronously replicates a database to up to four secondary replicas. As transactions are committed to the primary (and its replicas within the same region), the transactions are sent to the secondaries to be replayed. Since this communication is done asynchronously, the calling application doesn't have to wait for the secondary replica to commit the transaction before SQL Server returns control to the caller.
 
 The secondary databases are readable and can be used to offload read-only workloads, thus freeing up resources for transactional workloads on the primary or placing data closer to your end users. Furthermore, the secondary databases can be in the same region as the primary or in another Azure region
 
@@ -113,4 +113,4 @@ You can initiate a failover either manually by the user or programmatically by t
 
 ## Failover groups
 
-[Failover groups](/azure/azure-sql/database/failover-group-sql-db) are built on top of the technology used in geo-replication but provide a single endpoint for connection. The major reason for using failover groups is that they provide endpoints that can be utilized to route traffic to the appropriate replica. Your application can then connect after a failover without connection string changes.
+[Failover groups](/azure/azure-sql/database/failover-group-sql-db?azure-portal=true) are built on top of the technology used in geo-replication but provide a single endpoint for connection. The major reason for using failover groups is that they provide endpoints that can be utilized to route traffic to the appropriate replica. Your application can then connect after a failover without connection string changes.

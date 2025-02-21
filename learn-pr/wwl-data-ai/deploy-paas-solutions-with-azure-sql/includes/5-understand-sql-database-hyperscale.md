@@ -34,7 +34,7 @@ Security for the Hyperscale service tier offers the same robust capabilities as 
     - Microsoft Entra authentication
     - Windows Authentication for Microsoft Entra principals
 
-    Azure SQL Database Hyperscale also supports [Row-Level Security (RLS)](/sql/relational-databases/security/row-level-security), allowing customers to control access to specific rows in a database table based on user characteristics, such as group membership or execution context.
+    Azure SQL Database Hyperscale also supports [Row-Level Security (RLS)](/sql/relational-databases/security/row-level-security?azure-portal=true), allowing customers to control access to specific rows in a database table based on user characteristics, such as group membership or execution context.
 
 - **Threat Protection** includes robust auditing and threat detection capabilities. SQL Database and SQL Managed Instance auditing track database activities and help maintain compliance with security standards by recording events to an audit log in a customer-owned Azure storage account. Advanced Threat Protection analyzes your logs to detect unusual behavior and potential threats to your databases. It generates alerts for suspicious activities such as SQL injection, potential data infiltration, brute force attacks, and anomalies in access patterns that can indicate privilege escalations or the use of breached credentials.
 
