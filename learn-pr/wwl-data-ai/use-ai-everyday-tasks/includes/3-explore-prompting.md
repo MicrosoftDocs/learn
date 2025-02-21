@@ -20,7 +20,7 @@ Here are some tips to keep in mind when writing a prompt:
 
 The following table includes some everyday tasks that you could co-create with AI, and include examples of good, better, and best prompts. These examples will help you understand how to create prompts to make your tasks more simple and effective.
 
-| Task | Good | Better | Best |
+| **Task** | **Good** | **Better** | **Best** |
 |----------------|------|--------|------|
 | **Rewrite Emails** | Copilot, rewrite this email to be more formal: [email text]. | Copilot, rewrite this email to be more formal and concise: [email text]. | Copilot, rewrite this email to be more formal, concise, and persuasive: [email text]. |
 | **Brainstorm Podcast Ideas** | I'm thinking about starting a personal podcast. Can you help me brainstorm a month's worth of episode ideas centered around [technology, culture, and personal development]? | I'm thinking about starting a personal podcast. Can you help me brainstorm a month's worth of episode ideas centered around [technology, culture, and personal development]? Each episode should cover a unique article. | I'm thinking about starting a personal podcast. Can you help me brainstorm a month's worth of episode ideas centered around [technology, culture, and personal development]? Each episode should cover a unique article that would intrigue listeners. For each episode idea, provide a catchy title and a brief outline of key discussion points. |
