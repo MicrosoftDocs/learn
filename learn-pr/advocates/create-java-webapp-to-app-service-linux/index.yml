@@ -1,7 +1,7 @@
 ### YamlMime:Module
 ###
 ### Contributor instructions:
-### 1. Sample repo: 
+### 1. Sample repo:
 ###    https://github.com/MicrosoftDocs/simple-tomcat-maven-app.git
 ### 2. Changes to inline code must also be made in sample repo as a pr
 ###    @mention ayangupt for review
@@ -10,7 +10,7 @@ uid: learn.azure.build-tomcat-java-appservice
 metadata:
   title: Deploy a Java Web App to a Tomcat Server on Azure App Service
   description: Learn how to create a Java Tomcat web app and deploy it to Azure App Service using Maven.
-  ms.date: 02/13/2025
+  ms.date: 02/20/2025
   author: KarlErickson
   ms.author: ayangupta
   ms.topic: module-build-your-first
@@ -20,10 +20,10 @@ metadata:
 title: Deploy a Java web app to a Tomcat server on Azure App Service
 summary: Learn how to create, configure, and deploy a Java Tomcat web application to Azure App Service using Maven.
 abstract: |
-  By the end of this module, you'll be able to do the following things:
-  - Create a Tomcat app using Maven.
-  - Deploy a Tomcat app locally to your machine.
-  - Deploy your Java Tomcat web application to Azure App Service.
+  By the end of this module, you'll be able to complete the following tasks:
+  - Create a Tomcat web app using Maven.
+  - Deploy a Tomcat web app locally to your machine.
+  - Deploy a Tomcat web app to Azure App Service.
 iconUrl: /training/achievements/build-webapp-java-tomcat.svg
 ratingEnabled: false
 levels:
@@ -32,13 +32,13 @@ roles:
   - developer
 products:
   - azure
-subjects: 
+subjects:
   - app-development
 prerequisites: |
   - Your own Azure subscription. [Create one for free.](https://azure.microsoft.com/free/).
   - The [Azure CLI](/cli/azure/install-azure-cli) installed on your computer.
-  - [JDK 17](https://www.oracle.com/java/technologies/downloads/) 
-  - [Apache Tomcat 10.1.x](https://tomcat.apache.org/download-10.cgi) 
+  - [JDK 17](https://www.oracle.com/java/technologies/downloads/)
+  - [Apache Tomcat 10.1.x](https://tomcat.apache.org/download-10.cgi)
   - [Maven 3.9.9](https://maven.apache.org/download.cgi?.=)
 units:
   - learn.azure.build-tomcat-java-appservice.1

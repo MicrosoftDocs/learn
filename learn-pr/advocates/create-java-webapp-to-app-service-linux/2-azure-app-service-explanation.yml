@@ -3,8 +3,8 @@ uid: learn.azure.build-tomcat-java-appservice.2
 title: Introduction to Azure App Service
 metadata:
   title: Introduction to Azure App Service
-  description: What is Azure App Service? Find out more in this module.
-  ms.date: 02/13/2025
+  description: Describes Azure App Service.
+  ms.date: 02/20/2025
   author: KarlErickson
   ms.author: ayangupta
   ms.topic: unit
