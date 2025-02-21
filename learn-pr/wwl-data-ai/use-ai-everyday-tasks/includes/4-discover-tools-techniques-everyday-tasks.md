@@ -2,13 +2,13 @@ Let's explore some resources and tools you can use to enhance your prompting ski
 
 ## Find inspiration
 
-The following table includes some prompt resources you might find helpful to get started with more complex prompting:
+The following table includes some prompt resources you might find helpful to get started with more complex prompting.
 
 | Resource Name | Description | Use cases  |
 |--|--|--|
-| **[Do more with Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai?form=MA13KP)** | A selection of use cases and examples of how AI can be applied to everyday tasks. | Explore articles grouped by categories such as daily life, AI art & creativity, general AI, learning & education, and professional life. |
-| **[Copilot prompt gallery](https://copilot.cloud.microsoft/prompts)** | A collection of prompts that you can use as inspiration. | Find examples of how to structure prompts for different tasks and scenarios. |
-| **[Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library/)** | A wide range of scenarios and prompts organized by job functions and roles | Find relevant prompts for your specific needs and industry. |
+| **[Do more with Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai?azure-portal=true)** | A selection of use cases and examples of how AI can be applied to everyday tasks. | Explore articles grouped by categories such as daily life, AI art & creativity, general AI, learning & education, and professional life. |
+| **[Copilot prompt gallery](https://copilot.cloud.microsoft/prompts?azure-portal=true)** | A collection of prompts that you can use as inspiration. | Find examples of how to structure prompts for different tasks and scenarios. |
+| **[Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library?azure-portal=true)** | A wide range of scenarios and prompts organized by job functions and roles | Find relevant prompts for your specific needs and industry. |
 
 ## Explore ways to use AI in your personal life
 
