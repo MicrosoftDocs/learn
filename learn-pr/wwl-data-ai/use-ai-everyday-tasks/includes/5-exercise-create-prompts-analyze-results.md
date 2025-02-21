@@ -22,7 +22,7 @@ To start, we'll practice creating personalized prompts using a few fill-in-the-b
 2. Personalize the prompt by updating the content in brackets to whatever suits you.
 3. Submit the message to Copilot.
 
-The following is an example of what Copilot might generate. How does it compare to the personalized prompt that you submitted? 
+The following is an example of what Copilot might generate. How does it compare to the personalized prompt that you submitted?
 ![Screenshot Copilot with the sample prompt pasted into the chat box.](../media/05-copilot-book-prompt-results.jpg)
 
 > [!TIP]
@@ -47,7 +47,7 @@ If you want, take a few minutes to personalize some of these other prompts.Don't
 > [!TIP]
 > As you review the results, make a note of what you liked about the responses and any areas that could be refined. This will help you in the next steps as you work on improving your prompts.
 
-### Iterate and improve your prompts using Think Deeper
+## Iterate and expand results using Think Deeper
 
 Iteration is a key part of creating effective AI prompts. In this step, you'll refine your original results to get expanded information using **Think Deeper**.
 

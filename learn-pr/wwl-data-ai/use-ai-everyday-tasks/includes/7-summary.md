@@ -11,3 +11,6 @@ In this module, you learned some ways generative AI can help you with everyday t
 - Sign up for 50-day challenge?
 - Further learning/resources?
 - Link to Guinness attestation/badging?
+- 
+**Further learning**
+- [The Art and Science of Working with AI](https://www.microsoft.com/worklab/the-art-and-science-of-working-with-ai)

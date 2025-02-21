@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-everyday-tasks.move-beyond-basic-prompting
+title: Discover tools and techniques for everyday tasks
+metadata:
+  title: Discover tools and techniques for everyday tasks
+  description: "Discover tools and techniques for everyday tasks"
+  ms.date: 02/21/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-discover-tools-techniques-everyday-tasks.md)]

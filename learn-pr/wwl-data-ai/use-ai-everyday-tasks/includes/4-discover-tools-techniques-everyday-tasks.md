@@ -1,11 +1,13 @@
 Let's explore some resources and tools you can use to enhance your prompting skills. We identify some useful prompting resources, explore using AI across apps to build on results, and understand how these techniques apply to real-world scenarios.
 
-## Discover resources
-The following are some resources you can use to find useful prompts to help you get started with more complex prompting:
+## Find inspiration
 
-- **[Do more with Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai?form=MA13KP)**. A selection of use cases and examples of how AI can be applied to everyday tasks.
-- - **[Copilot prompt gallery](https://copilot.cloud.microsoft/prompts)**. A collection of prompts that you can use as inspiration, including examples of how to structure prompts for different tasks and scenarios.
-- **[Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library/)**. A wide range of scenarios and prompts organized by job functions and roles, making it easy to find relevant prompts for your specific needs and industry.
+The following table includes some prompt resources you might find helpful to get started with more complex prompting:
+| Resource Name | Description | Use cases  |
+|---------------|-------------|---|
+| **[Do more with Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai?form=MA13KP)** | A selection of use cases and examples of how AI can be applied to everyday tasks. | Explore articles grouped by categories such as daily life, AI art & creativity, general AI, learning & education, and professional life. |
+| **[Copilot prompt gallery](https://copilot.cloud.microsoft/prompts)** | A collection of prompts that you can use as inspiration. | Find examples of how to structure prompts for different tasks and scenarios. |
+| **[Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library/)** | A wide range of scenarios and prompts organized by job functions and roles | Find relevant prompts for your specific needs and industry. |
 
 ## Explore ways to use AI in your personal life
 
@@ -54,7 +56,9 @@ Here are some suggested prompts to make a training schedule:
 - **Word**: Rewrite a paragraph in a different tone or style.
 - **Teams**: Summarize meetings and chat threads.
 
-The real power, though, comes from the flow of using Copilot across apps. In the following short video, learn how one communication manager uses Microsoft 365 Copilot to create and enhance announcement posts.
+The real power, though, comes from the flow of using Copilot across apps. There are many use cases for using Copilot in Microsoft 365, including in communications, HR, legal, IT, sales, project management, market research, finance, and more.
+
+In the following short video, learn how one communications manager uses Microsoft 365 Copilot to create and enhance announcement posts.
 
 > [!VIDEO https://www.youtube.com/embed/gOq46gEO8h8?si=tAb9kb1eWLsY3tLt]
 

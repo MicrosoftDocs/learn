@@ -1,15 +1,17 @@
-Generative AI focuses on creating new, unique content, based on the input you provide. This input is called **prompting**, which just means asking AI for specific things. Generative AI can create entirely new and original pieces of work, such as write poems, compose melodies, or design graphics based on the patterns and styles it learned from existing data.
+AI can simplify everyday tasks and enhance productivity. This unit introduces the basics of AI, including how generative AI creates new content, and how tools like Microsoft Copilot can enhance productivity. You'll also explore the importance of using AI responsibly to ensure fairness, transparency, and trust.
 
-People usually interact with generative AI built into a chat application. One popular example of such an application is [Microsoft Copilot](https://copilot.microsoft.com/), an AI-powered productivity tool designed to enhance your work experience by providing real-time intelligence and assistance.
+## What is AI, and how does it work?
+
+Generative AI focuses on creating new, unique content, based on the input you provide. This input is called **prompting**, which just means asking AI for specific things. Generative AI can even produce creative content, such as writing poems, composing melodies, or designing graphics, based on the patterns and styles it has learned from existing data.
+
+People usually interact with generative AI built into a chat application. One example of such an application is [Microsoft Copilot](https://copilot.microsoft.com/), an AI-powered productivity tool designed to enhance your work experience by providing real-time intelligence and assistance.
 
 > [!NOTE]
 > **Behind the scenes**: Generative AI doesn't just copy or rearrange existing information; it creates something new that didn't exist before. Generative AI uses large language models (LLMs) that are trained on huge amounts of data to create outputs that are similar to the data they were trained on. Some common uses of generative AI include creating natural language text using natural language processing (NLP), generating images, and writing computer code.
->
-> ![Image of a long-haired boy on a trampoline.](../media/02-trampoline.jpg)
 
 ## Get help with everyday tasks
 
-Copilot is a smart assistant that can simplify your daily routines by helping you with various tasks and make your life a bit easier and more organized. Whether you're looking to get creative, plan your day, or need a bit of personal assistance, AI can make your life more manageable. Let's look at some everyday examples of how AI can be useful.
+Copilot is a smart assistant that can simplify your daily routines by helping you with various tasks and make your life a bit easier and more organized. Whether you're looking to get creative, plan your day, or need a bit of personal assistance, AI can make your life more manageable. Let's look at some everyday examples of how you might use AI.
 
 ### Write creative content
 
@@ -47,27 +49,26 @@ Copilot can act as your personal assistant, helping you manage various aspects o
 - **Automate tasks**. Automate routine tasks such as setting up meetings, sending follow-up emails, or managing your to-do list.
 
 > [!NOTE]
-> **AI Agents**, also known as virtual assistants, are smart software tools that help you with different tasks based on what you need. Imagine having a reliable assistant who can handle things for you automatically. They can handle routine tasks like schedule meetings, manage emails, and even give you real-time data analysis and personalized recommendations.
+> **AI Agents**, also known as virtual assistants, are smart software tools that help you with different tasks based on what you need. Imagine having a reliable assistant who can handle things for you automatically. They can handle routine tasks like scheduling meetings, managing emails, and even giving you real-time data analysis and personalized recommendations.
 >
-> In Microsoft 365, these agents use advanced technologies like AI and machine learning to understand what you like and how you work. This means they can offer solutions that fit your specific needs, making your daily tasks easier and more efficient. Whether you're working with colleagues, organizing your schedule, or analyzing data, AI agents help create a smarter and more connected environment.
+> In Microsoft 365, you can now build your own agents to fit your specific needs, making your daily tasks easier and more efficient.
 >
 > To learn more, review [Introducing Copilot agents](https://support.microsoft.com/en-us/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466#:~:text=Copilot%20agents%20are%20specialized%20AI,expanding%20their%20reach%20and%20functionality.) and [Copilots & Agents](https://www.youtube.com/watch?v=oddeD2FTCyE).
 
 With AI as your personal assistant, you can streamline your daily activities, stay organized, and focus on what matters most to you.
 
-> [!IMPORTANT]
-> **Responsible AI**
->
-> As AI becomes more integrated into our daily lives, it's important to use it responsibly. Here are some key points to keep in mind so we can use AI in ways that are fair, trustworthy, and beneficial to society:
->
-> **Provide clear and specific prompts**. Avoid sensitive topics and always review and validate outputs for accuracy and relevance.
->
-> **Watch for common biases**:
->
-> - **Gender bias**. AI systems can perpetuate gender stereotypes if trained on biased data. For example, a hiring algorithm might favor male candidates over female candidates due to historical data biases.
-> - **Racial bias**. AI systems can exhibit racial bias, leading to discriminatory outcomes. For instance, facial recognition systems might have higher error rates for people of color compared to white individuals.
-> - **Socioeconomic bias**. AI systems can favor individuals from higher socioeconomic backgrounds. A credit scoring algorithm, for example, might disproportionately favor applicants from wealthier neighborhoods.
->
-> AI should treat everyone fairly, protect privacy, and operate transparently. This helps build trust and ensures that AI systems are used in ways that respect individuals' rights and interests. Learn how [Microsoft is empowering responsible AI practices](https://www.microsoft.com/ai/responsible-ai).
+## Responsible AI
 
-Now that you have an idea of how generative AI can enhance our productivity and creativity, let's explore how to interact with AI through prompting.
+AI should treat everyone fairly, protect privacy, and operate transparently. This helps build trust and ensures that AI systems are used in ways that respect individuals' rights and interests. Learn about the challenges and solutions related to AI accuracy by watching this short video.
+
+> [!VIDEO https://www.youtube.com/embed/ccjXa6LkfpQ?si=JjrR4J6rLhJWFE4k]
+
+As AI becomes more integrated into our daily lives, it's important to use it responsibly. Here are some ways you can help keep your AI-generated content fair, trustworthy, and beneficial to society:
+
+- **Provide clear and specific prompts**. Avoid sensitive topics and always review and validate outputs for accuracy and relevance.
+- **Watch for common biases**:
+    - **Gender bias**. AI systems can perpetuate gender stereotypes if trained on biased data. For example, a hiring algorithm might favor male candidates over female candidates due to historical data biases.
+    - **Racial bias**. AI systems can exhibit racial bias, leading to discriminatory outcomes. For instance, facial recognition systems might have higher error rates for people of color compared to white individuals.
+    - **Socioeconomic bias**. AI systems can favor individuals from higher socioeconomic backgrounds. A credit scoring algorithm, for example, might disproportionately favor applicants from wealthier neighborhoods.
+
+Now that you have an idea of what generative AI is, how it can enhance our productivity and creativity, and the ethical considerations of using it, let's explore how to interact with AI through prompting.
