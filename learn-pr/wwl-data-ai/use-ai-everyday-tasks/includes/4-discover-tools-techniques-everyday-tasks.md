@@ -3,8 +3,9 @@ Let's explore some resources and tools you can use to enhance your prompting ski
 ## Find inspiration
 
 The following table includes some prompt resources you might find helpful to get started with more complex prompting:
+
 | Resource Name | Description | Use cases  |
-|---------------|-------------|---|
+|--|--|--|
 | **[Do more with Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai?form=MA13KP)** | A selection of use cases and examples of how AI can be applied to everyday tasks. | Explore articles grouped by categories such as daily life, AI art & creativity, general AI, learning & education, and professional life. |
 | **[Copilot prompt gallery](https://copilot.cloud.microsoft/prompts)** | A collection of prompts that you can use as inspiration. | Find examples of how to structure prompts for different tasks and scenarios. |
 | **[Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library/)** | A wide range of scenarios and prompts organized by job functions and roles | Find relevant prompts for your specific needs and industry. |
@@ -61,5 +62,12 @@ The real power, though, comes from the flow of using Copilot across apps. There 
 In the following short video, learn how one communications manager uses Microsoft 365 Copilot to create and enhance announcement posts.
 
 > [!VIDEO https://www.youtube.com/embed/gOq46gEO8h8?si=tAb9kb1eWLsY3tLt]
+
+> [!NOTE]
+> **AI Agents**, also known as virtual assistants, are smart software tools that help you with different tasks based on what you need. Imagine having a reliable assistant who can handle things for you automatically. They can handle routine tasks like scheduling meetings, managing emails, and even giving you real-time data analysis and personalized recommendations.
+>
+> In Microsoft 365, you can now build your own agents to fit your specific needs, making your daily tasks easier and more efficient.
+>
+> To learn more, review [Introducing Copilot agents](https://support.microsoft.com/en-us/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466#:~:text=Copilot%20agents%20are%20specialized%20AI,expanding%20their%20reach%20and%20functionality.) and [Copilots & Agents](https://www.youtube.com/watch?v=oddeD2FTCyE).
 
 Now that you learned about generative AI, how to interact with it, and some ways to take your prompts further, let's practice prompting in Copilot.

@@ -16,10 +16,13 @@ To start, we'll practice creating personalized prompts using a few fill-in-the-b
 ### Generate recommendations
 
 1. Copy the sample prompt and paste it into the chat box.
-> **Sample prompt**: Copilot, generate a list of [10 book recommendations] for [summer reading] that focus on [self-improvement and personal growth].
+
+**Sample prompt**: Copilot, generate a list of [10 book recommendations] for [summer reading] that focus on [self-improvement and personal growth].
 
 ![Screenshot Copilot with the sample prompt pasted into the chat box.](../media/05-copilot-book-prompt-bracketed.jpg)
+
 2. Personalize the prompt by updating the content in brackets to whatever suits you.
+
 3. Submit the message to Copilot.
 
 The following is an example of what Copilot might generate. How does it compare to the personalized prompt that you submitted?
@@ -27,8 +30,6 @@ The following is an example of what Copilot might generate. How does it compare 
 
 > [!TIP]
 > **Iterate and expand**. Remember that you can iterate, and ask Copilot to refine the ideas,  generate more ideas, or provide more information about your list. Use Copilot's suggestions to dig deeper. For example, ask Copilot: "Can you recommend similar books by diverse authors?", or "What makes these books stand out in terms of world-building?"
->
-> ![Screenshot Copilot results based on recommended prompt.](../media/05-copilot-book-prompt-additional.jpg)
 
 ### Analyze your results
 
@@ -41,7 +42,9 @@ Now that you've submitted your personalized prompts to Copilot, it's time to ana
 If you want, take a few minutes to personalize some of these other prompts.Don't worry, you won't overwrite earlier prompts and responses. Once you're done, we'll move on to analyzing the results.
 
 **Sample prompt**: Copilot, list [10 TV shows] for [weekend binge-watching] that are [comedy and family-friendly].
+
 **Sample prompt**: Copilot, create a [playlist] for [studying] that features [calm and focus-enhancing music].
+
 **Sample prompt**: Copilot, recommend [5 healthy recipes] for [weeknight dinners] that are [quick and easy to make].
 
 > [!TIP]
