@@ -17,7 +17,7 @@ Enhance your security posture through the [Microsoft Zero Trust adoption framewo
 
 Incident preparation and response are essential for a strong security posture. Well-designed preparation mechanisms enable quicker threat detection and minimize the blast radius of incidents. Well-structured response mechanisms ensure efficient recovery and continuous improvement.
 
-## The CIA triad
+## The CIA Triad
 
 The CIA Triad represents three core principles in information security:
 
@@ -25,7 +25,7 @@ The CIA Triad represents three core principles in information security:
 - **Integrity** maintains data accuracy and completeness. It protects data from unauthorized alterations.
 - **Availability** ensures continuous access to information and resources for authorized users.
 
-Adopt the CIA triad to ensure that your business technology remains reliable and secure. Use it to enforce reliability and security in your operations through well-defined, strictly followed, and proven practices.
+Adopt the CIA Triad to ensure that your business technology remains reliable and secure. Use it to enforce reliability and security in your operations through well-defined, strictly followed, and proven practices.
 
 ## Security posture sustainment
 

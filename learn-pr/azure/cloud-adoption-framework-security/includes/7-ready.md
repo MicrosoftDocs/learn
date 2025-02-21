@@ -63,3 +63,29 @@ Ensure that you have well-governed policies and standards for your data and syst
   - *Automated patch management:* Automate patch management for virtual machines to ensure regular updates and consistent system versions.
 
   - *Automated infrastructure deployments:* Use infrastructure as code (IaC) for all deployments. Integrate IaC into your CI/CD pipelines, and apply safe deployment practices.
+
+### Incorporate Azure
+
+- Azure Policy and Microsoft Defender for Cloud help define and enforce security policies across your cloud estate. They support the governance of foundational elements and workload resources.
+
+- Azure Update Manager is a native Azure solution that manages updates and patches. It's extendable to on-premises and Azure Arc-enabled systems.
+
+- Microsoft Sentinel is a SIEM and SOAR solution that offers cyberthreat detection, investigation, response, proactive hunting, and a comprehensive enterprise view.
+
+## Prepare for availability
+
+Design resilient workloads to help ensure business continuity during malfunctions and security incidents. Here are key recommendations:
+
+- **Resilient application design:** Use patterns that enhance resilience and incorporate self-healing mechanisms to help ensure continuous operation and rapid recovery.
+
+- **Serverless architecture:** Use platform as a service (PaaS), software as a service (SaaS), and function as a service (FaaS) technologies to reduce server management, scale automatically, and improve availability.
+- **Microservices and containerization:** Break down applications into smaller, independent services for better scalability and agility.
+- **Decouple services:** Isolate services to minimize the impact of failures.
+- **Automatic scaling:** Ensure that your architecture supports varying loads to maintain availability during traffic spikes.
+- **Fault isolation:** Design your application to isolate failures to individual tasks or functions. This approach prevents widespread outages.
+- **High availability:** Include redundancy and disaster recovery mechanisms.
+- **Automatic failover:** Deploy applications across multiple regions for seamless failover and uninterrupted service.
+
+## Prepare for security sustainment
+
+During the Ready phase, ensure your estate's foundational elements follow security best practices and are scalable. This method prevents security problems and complex management as your estate grows. Plan for long-term business goals without major redesigns or operational overhauls. Even with a simpler foundation, ensure that it can transition to an enterprise architecture without redeploying major elements. A scalable, secure design is key to cloud success.
