@@ -29,10 +29,10 @@ quiz:
   - content: "What value is needed to instantiate a AIProjectClient object?"
     choices:
     - content: "The project connection string."
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct. You need the project connection string to instantiate a AIProjectClient object."
     - content: "The Azure OpenAI authorization key"
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect. You don't need the Azure OpenAI authorization key to instantiate a AIProjectClient object."
     - content: "The Azure subscription ID"
       isCorrect: false
