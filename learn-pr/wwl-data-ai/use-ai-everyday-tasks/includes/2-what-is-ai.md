@@ -4,7 +4,7 @@ AI can simplify everyday tasks and enhance productivity. This unit introduces th
 
 Generative AI focuses on creating new, unique content, based on the input you provide. This input is called **prompting**, which just means asking AI for specific things. Generative AI can even produce creative content, such as writing poems, composing melodies, or designing graphics, based on the patterns and styles it has learned from existing data.
 
-People usually interact with generative AI built into a chat application. One example of such an application is [Microsoft Copilot](https://copilot.microsoft.com/), an AI-powered productivity tool designed to enhance your work experience by providing real-time intelligence and assistance. In other words, it's a smart tool that helps you work better by giving you quick answers and help when you need it.
+People usually interact with generative AI built into a chat application. One example of such an application is [Microsoft Copilot](https://copilot.microsoft.com?azure-portal=true), an AI-powered productivity tool designed to enhance your work experience by providing real-time intelligence and assistance. In other words, it's a smart tool that helps you work better by giving you quick answers and help when you need it.
 
 > [!NOTE]
 > **Behind the scenes**: Generative AI doesn't just copy or rearrange existing information; it creates something new that didn't exist before. Generative AI uses large language models (LLMs) that are trained on huge amounts of data to create outputs that are similar to the data they were trained on. Some common uses of generative AI include creating natural language text using natural language processing (NLP), generating images, and writing computer code.

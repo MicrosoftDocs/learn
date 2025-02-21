@@ -4,9 +4,9 @@ In this activity, learn how to create personalized prompts and refine them to ge
 
 In this module, we use Microsoft Copilot to interact with generative AI. To follow along and complete the exercise, you'll need to do a few things to get set-up.
 
-1. In your browser, navigate to [copilot.microsoft.com](https://copilot.microsoft.com/). For this tutorial you need to use Copilot in the **full browser**, not in the browser sidebar.
+1. In your browser, navigate to [copilot.microsoft.com](https://copilot.microsoft.com?azure-portal=true). For this tutorial you need to use Copilot in the **full browser**, not in the browser sidebar.
 
-2. Sign in to Copilot with your [personal Microsoft Account](https://signup.live.com/) (such as an outlook.com account).
+2. Sign in to Copilot with your [personal Microsoft Account](https://signup.live.com?azure-portal=true) (such as an outlook.com account).
 
 ![Screenshot of Copilot.microsoft.com with the sign in button highlighted.](../media/05-copilot-sign-in.jpg)
 

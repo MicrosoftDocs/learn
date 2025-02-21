@@ -18,7 +18,7 @@ Let's take a closer look at a couple of ways you might use AI at home.
 
 ![Image of family on vacation.](../media/04-plan-trip.jpg)
 
-Could you use some help or inspiration to plan a trip? [Plan the Perfect Trip Itinerary Using Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai/ai-for-daily-life/plan-the-perfect-trip-itinerary-with-ai?msockid=033c93e0d094650b1e0b804fd11c642d&form=MA13KP) suggests some prompts to get you started so you can spend less time creating itineraries and more time enjoying them:  
+Could you use some help or inspiration to plan a trip? [Plan the Perfect Trip Itinerary Using Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai/ai-for-daily-life/plan-the-perfect-trip-itinerary-with-ai?azure-portal=true) suggests some prompts to get you started so you can spend less time creating itineraries and more time enjoying them:  
 
 - **Open-ended questions**: Where should I go on my next adventure? What’s a good day trip from [location]?
 - **Personalized recommendations**: I loved Amsterdam for its museums and canals. Where should I go next, and what should I do there?
@@ -34,7 +34,7 @@ Could you use some help or inspiration to plan a trip? [Plan the Perfect Trip It
 
 ![Image of a couple exercising.](../media/04-marathon.jpg)
 
-Could you use some help or inspiration to plan a trip? Whether you're a seasoned marathon runner or this is your first race, [Train for a Marathon with Copilot](https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/do-more-with-ai/ai-for-daily-life/train-for-a-marathon-with-copilot?form=MA13KP) guides you through how to set running goals, make a training schedule, and get ready for race day using AI. 
+Could you use some help or inspiration to plan a trip? Whether you're a seasoned marathon runner or this is your first race, [Train for a Marathon with Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai/ai-for-daily-life/train-for-a-marathon-with-copilot?azure-portal=true) guides you through how to set running goals, make a training schedule, and get ready for race day using AI. 
 
 Here are some suggested prompts to set your running goals:
 
@@ -50,7 +50,7 @@ Here are some suggested prompts to make a training schedule:
 
 ## Explore ways to use AI at work
 
-[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot/copilot-for-work) integrates with the Microsoft 365 suite, including popular applications like Teams, Word, Outlook, PowerPoint, and Excel, to elevate productivity and creativity at work. Some common examples include:
+[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot/copilot-for-work?azure-portal=true) integrates with the Microsoft 365 suite, including popular applications like Teams, Word, Outlook, PowerPoint, and Excel, to elevate productivity and creativity at work. Some common examples include:
 
 - **Outlook**: Summarize the content of a large email thread.
 - **PowerPoint**: Turn a text-heavy slide into concise bullet points for greater clarity.
@@ -68,6 +68,6 @@ In the following short video, learn how one communications manager uses Microsof
 >
 > In Microsoft 365, you can now build your own agents to fit your specific needs, making your daily tasks easier and more efficient.
 >
-> To learn more, review [Introducing Copilot agents](https://support.microsoft.com/en-us/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466#:~:text=Copilot%20agents%20are%20specialized%20AI,expanding%20their%20reach%20and%20functionality.) and [Copilots & Agents](https://www.youtube.com/watch?v=oddeD2FTCyE).
+> To learn more, review [Introducing Copilot agents](https://support.microsoft.com/en-us/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466#:~:text=Copilot%20agents%20are%20specialized%20AI,expanding%20their%20reach%20and%20functionality.?azure-portal=true) and [Copilots & Agents](https://www.youtube.com/watch?v=oddeD2FTCyE).
 
 Now that you learned about generative AI, how to interact with it, and some ways to take your prompts further, let's practice prompting in Copilot.
