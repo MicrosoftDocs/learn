@@ -1,8 +1,6 @@
 <!-- markdownlint-disable MD041 -->
 
-In interactive mode, Azure CLI allows you to enter and run commands immediately.
-
-If you only need to create a few Azure resources, manually executing Azure CLI commands is a reasonable choice.
+In interactive mode, Azure CLI allows you to enter and run commands immediately. If you only need to create a few Azure resources, manually executing Azure CLI commands is a reasonable choice.
 
 ## Create a storage account with Azure CLI
 
@@ -133,6 +131,13 @@ For most Azure command groups, Azure CLI provides **list** and **show** commands
    saDate=$(date +%F -d "-30days")
    az storage account list --resource-group <msdocs-rg-00000000> \
        --query "[?creationTime >='$saDate'].{saName:name, saID: id, sku: sku.name}"
+   ```
+
+   ```azurecli
+   # get a list of all storage accounts that contain the word `msdocs`
+   az storage account list --resource-group $rgName \
+       --query "[?contains(name, 'msdocs')].{saName:name, saKind:kind, saPrimaryLocation:primaryLocation,     reatedTimeStamp:creationTime}" \
+       --output table
    ```
 
 > [!NOTE]

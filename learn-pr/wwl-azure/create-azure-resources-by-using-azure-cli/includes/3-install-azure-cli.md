@@ -14,8 +14,8 @@ The Azure CLI runs in Bash, PowerShell, and Windows command shell (Cmd.exe). Wit
 
 > [!NOTE]
 > This exercise guides you through creating a _local installation_ of Azure CLI.
-> However, the remainder of this module uses Azure Cloud Shell to use the free Microsoft Learn
-> sandbox environment. If you prefer, you can consider this exercise optional and only review the
+> However, the remainder of this module uses Azure Cloud Shell in the free Microsoft Learn
+> sandbox environment. If you prefer, you can consider this install exercise optional and only review the
 > instructions.
 
 ::: zone pivot="windows"
@@ -101,7 +101,7 @@ You can expect the following response from Azure CLI:
 
 ## Connect to Azure
 
-When you're working with a local install of the Azure CLI, you need to authenticate before you can execute Azure commands. There are several ways to log into Azure:
+When you're working with a local install of the Azure CLI, you need to authenticate before you can execute Azure commands. There are several ways to log into Azure using Azure CLI:
 
 * Azure Cloud Shell
 * Interactively
