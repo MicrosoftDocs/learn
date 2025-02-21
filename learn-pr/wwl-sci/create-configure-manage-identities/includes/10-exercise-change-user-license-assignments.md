@@ -1,3 +1,5 @@
+**Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it.  You can get a free trial subscription for at [Try Azure for Free](https://azure.microsoft.com/free).
+
 ## Create a new user in Microsoft Entra ID
 
 1.  Browse to the Identity - Users page of the Microsoft Entra admin center.
@@ -23,6 +25,6 @@
 4.  In the left navigation, select **Licenses.**
 5.  On the Update license assignments blade, select the check box for a single or multiple licenses.
     
-    :::image type="content" source="../media/assign-user-license-options-9eaa5705-6da74aad.png" alt-text="Screenshot of the Update license assignments page and the available licenses highlighted.":::
+    :::image type="content" source="../media/assign-user-license-options.png" alt-text="Screenshot of the Update license assignments page and the available licenses highlighted.":::
     
 6.  When complete, select **Save**.
