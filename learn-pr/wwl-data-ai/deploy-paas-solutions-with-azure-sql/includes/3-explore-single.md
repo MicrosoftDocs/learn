@@ -1,28 +1,28 @@
-We’ll look at several methods for deploying a singleton Azure SQL Database.
+Let's look at several methods for deploying a single Azure SQL Database.
 
 ## Deploying via the portal
 
-The process to create a singleton database through the Azure portal is straightforward. While in the portal, on the left-hand navigation menu, select “SQL Databases”. In the resulting slide out dialog, click “Create”:
+Creating an SQL database through the Azure portal is simple. First, navigate to the Azure portal and select "SQL Databases" from the left-hand menu. In the slide-out panel that appears, select "Create."
 
-:::image type="content" source="../media/module-22-plan-implement-final-13.png" alt-text="The Azure portal Azure SQL Database Deployment screen":::
+:::image type="content" source="../media/module-22-plan-implement-final-13.png" alt-text="Screenshot showing the Azure portal Azure SQL Database Deployment page":::
 
-In the blade in the image below, you’ll notice that the subscription should already be provided for you. You will need to supply the following information:
+In the pane in the image below, you’ll notice that the subscription should already be provided for you. You'll need to supply the following information:
 
-- **Resource Group –** If there is an existing resource group that you wish to use, you may select it from the drop-down list. You can click on the “Create new” option if you wish to create a new resource group for this Azure SQL Database.
-- **Database Name –** You must provide a database name.
-- **Server –** Each database must reside on a logical server. If you have one already in existence in the appropriate region, you may choose to use it. Otherwise, you can click on the **Create new** link and follow the prompts to create a new logical server to host the database.
-- **Want to use SQL elastic pool?** – Determine whether to use an elastic pool.
-- **Compute + storage** – Determine the appropriate compute resources needed. By default, it will be a Gen5, 2vCore, with 32 GB of storage until something else is selected. Click on **Configure database** to view alternate configuration options.
+- **Resource Group** – If you have an existing resource group you wish to use, select it from the drop-down list. To create a new resource group for this Azure SQL Database, choose the **Create new** option.
+- **Database Name** – Provide a name for your database.
+- **Server** – Each database must reside on a logical server. If you already have one in the appropriate region, you can select it. Otherwise, select the **Create new** link and follow the prompts to create a new logical server to host the database.
+- **Want to use SQL elastic pool?** – Decide whether to use an elastic pool.
+- **Compute + storage** – Determine the appropriate compute resources needed. By default, it's set to Gen5, 2vCore, with 32 GB of storage. Select **Configure database** to view and choose alternate configuration options.
 
-:::image type="content" source="../media/module-22-plan-implement-final-14.png" alt-text="Create SQL Database blade of Azure portal":::
+:::image type="content" source="../media/module-22-plan-implement-final-14.png" alt-text="Screenshot showing the Create SQL Database page in Azure portal":::
 
-The image below shows the portal blade in which you can configure the database options. Here you will notice that the service tier is General Purpose and compute tier is Provisioned. Provisioned implies that the compute resources are pre-allocated and billed per hour based on the number of configured vCores. The other option is Serverless, which was discussed previously. Serverless is billed per second based on the number of vCores in use.
+Here, you'll notice that the service tier is General Purpose and the compute tier is Serverless, as discussed previously. Serverless is billed per second based on the number of vCores in use. The alternative option is Provisioned, where compute resources are preallocated and billed per hour based on the number of configured vCores.
 
 :::image type="content" source="../media/module-22-plan-implement-final-15.png" alt-text="Service Tier selection in Azure portal":::
 
 ## Deploying an Azure SQL Database via PowerShell/CLI
 
-You can also deploy your database using Azure PowerShell or the Azure CLI. The image below shows the PowerShell example where you are creating a new resource group, and defining an admin called SqlAdmin and then creating a new server, database, and firewall rule.
+You can also deploy your database using Azure PowerShell or the Azure CLI. The image below shows the PowerShell example where you're creating a new resource group, and defining an admin called SqlAdmin and then creating a new server, database, and firewall rule.
 
 ```powershell
 # Connect-AzAccount
@@ -138,7 +138,7 @@ echo $password
 
 ## Deploying Azure SQL Database Using Azure Resource Manager templates
 
-Another method for deploying resources is as mentioned earlier using an Azure Resource Manager template. A Resource Manager template gives you the most granular control over your resources, and Microsoft provides a GitHub repository called “Azure-Quickstart-Templates”, which hosts Azure Resource Manager templates that you can reference in your deployments. A PowerShell example of deploying a GitHub based template is shown below:
+Another method for deploying resources is as mentioned earlier using an Azure Resource Manager template. A Resource Manager template gives you the most granular control over your resources, and Microsoft provides a GitHub repository called `Azure-Quickstart-Templates`, which hosts Azure Resource Manager templates that you can reference in your deployments. A PowerShell example of deploying a GitHub based template is shown below:
 
 ```powershell
 #Define Variables for parameters to pass to template
@@ -157,3 +157,5 @@ New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName `
 
 Read-Host -Prompt "Press [ENTER] to continue ..."
 ```
+
+This script automates the creation of an Azure resource group and the deployment of a SQL logical server within it. It prompts the user for a project name, Azure location, and SQL server administrator credentials, then creates a resource group using the provided details. Finally, it deploys a SQL logical server to the resource group using a predefined ARM template from a specified URI, and pauses execution until the user presses `ENTER`.
