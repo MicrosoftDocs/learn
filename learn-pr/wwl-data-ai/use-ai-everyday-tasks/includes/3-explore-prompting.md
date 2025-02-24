@@ -18,6 +18,8 @@ Here are some tips to keep in mind when writing a prompt:
 >
 > ![Image of person cooking in a kitchen.](../media/03-food.jpg)
 
+## Explore good, better, and best prompts
+
 The following table includes some everyday tasks that you could co-create with AI, and include examples of good, better, and best prompts. These examples will help you understand how to create prompts to make your tasks more simple and effective.
 
 | **Task** | **Good** | **Better** | **Best** |

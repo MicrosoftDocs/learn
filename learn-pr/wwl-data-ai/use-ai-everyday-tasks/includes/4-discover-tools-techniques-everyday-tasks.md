@@ -50,14 +50,14 @@ Here are some suggested prompts to make a training schedule:
 
 ## Explore ways to use AI at work
 
-[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot/copilot-for-work?azure-portal=true) integrates with the Microsoft 365 suite, including popular applications like Teams, Word, Outlook, PowerPoint, and Excel, to elevate productivity and creativity at work. Some common examples include:
+[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot/copilot-for-work?azure-portal=true) connects with your work data across the Microsoft 365 suite, including popular applications like Teams, Word, Outlook, PowerPoint, and Excel, to elevate productivity and creativity at work. Some common examples include:
 
 - **Outlook**: Summarize the content of a large email thread.
 - **PowerPoint**: Turn a text-heavy slide into concise bullet points for greater clarity.
 - **Word**: Rewrite a paragraph in a different tone or style.
 - **Teams**: Summarize meetings and chat threads.
 
-The real power, though, comes from the flow of using Copilot across apps. There are many use cases for using Copilot in Microsoft 365, including in communications, HR, legal, IT, sales, project management, market research, finance, and more.
+The real power, though, comes from the flow of using Copilot across apps. There are many use cases for Copilot in Microsoft 365, including in communications, HR, legal, IT, sales, project management, market research, finance, and more. The [Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library?azure-portal=true) can help you get started.
 
 In the following short video, learn how one communications manager uses Microsoft 365 Copilot to create and enhance announcement posts.
 
