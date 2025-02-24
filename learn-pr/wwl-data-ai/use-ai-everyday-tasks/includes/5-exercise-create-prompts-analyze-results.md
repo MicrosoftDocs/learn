@@ -51,9 +51,10 @@ If you want, take a few minutes to personalize some of the following prompts. Do
 
 ## Expand results using Think Deeper
 
-Iteration is a key part of creating effective AI prompts. In this step, you'll refine your original results to get expanded information using **Think Deeper**.
+Iteration is a key part of creating effective AI prompts. In this step, you'll refine your original results to get expanded information using **Think Deeper**. 
 
-Think Deeper unlocks the power of deep reasoning in Microsoft Copilot. It breaks down complex questions into manageable steps, providing more accurate and insightful responses.
+> [!NOTE]
+> Think Deeper unlocks the power of deep reasoning in Microsoft Copilot. It can handle more complex questions by breaking them down into multiple steps, allowing for more accurate and detailed responses.
 
 1. Pick one of your earlier prompts and submit to Copilot, and review the results. For example, enter the sample prompt "Copilot, generate a list of 5 book recommendations for a beach holiday that focus on world building science fiction."
 ![Screenshot Copilot with the Submit button highlighted.](../media/05-copilot-submit.jpg)
@@ -63,4 +64,4 @@ Think Deeper unlocks the power of deep reasoning in Microsoft Copilot. It breaks
 ![Screenshot Copilot with Think Deeper activated and the Submit button highlighted.](../media/05-think-deeper-submit.jpg)
 1. Review the output from Think Deeper. Consider how it compares to standard responses.
 
-Congratulations on completing the exercise! You creating personalized prompts, analyzed the results, and used Think Deeper to unlock deep reasoning. Keep experimenting with different prompts in your daily tasks to see how AI can make your work easier and more efficient.
+Congratulations on completing the exercise! You created personalized prompts, analyzed the results, and used Think Deeper to unlock deep reasoning. Keep experimenting with different prompts in your daily tasks to see how AI can make your work easier and more efficient.
