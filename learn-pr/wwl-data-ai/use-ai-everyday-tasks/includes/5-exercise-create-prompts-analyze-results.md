@@ -2,7 +2,7 @@ In this activity, learn how to create personalized prompts and refine them to ge
 
 **Before you start**
 
-In this module, we use Microsoft Copilot to interact with generative AI. To follow along and complete the exercise, you'll need to do a few things to get set-up.
+In this module, you use Microsoft Copilot to interact with generative AI. To follow along and complete the exercise, you'll need to do a few things to get set-up.
 
 1. In your browser, navigate to [copilot.microsoft.com](https://copilot.microsoft.com?azure-portal=true). For this tutorial you need to use Copilot in the **full browser**, not in the browser sidebar.
 
@@ -11,7 +11,7 @@ In this module, we use Microsoft Copilot to interact with generative AI. To foll
 ![Screenshot of Copilot.microsoft.com with the sign in button highlighted.](../media/05-copilot-sign-in.jpg)
 
 ## Personalize sample prompts
-To start, we'll practice creating personalized prompts using a few fill-in-the-blank prompts. Your task is to fill in the blanks with specific details such as goals, timelines, topics, or other relevant information. This will help you create clear and effective prompts for Copilot.
+To start, you'll practice creating personalized prompts using a few fill-in-the-blank prompts. Your task is to fill in the blanks with specific details such as goals, timelines, topics, or other relevant information. This will help you create clear and effective prompts for Copilot.
 
 ### Generate recommendations
 
@@ -24,7 +24,7 @@ To start, we'll practice creating personalized prompts using a few fill-in-the-b
 
 ![Screenshot Copilot with the sample prompt pasted into the chat box.](../media/05-copilot-book-prompt-bracketed.jpg)
 
-The following is an example of what Copilot might generate. How does it compare to the personalized prompt that you submitted?
+The following screenshot is an example of what Copilot might generate. How does it compare to the personalized prompt that you submitted?
 
 ![Screenshot Copilot with the sample prompt pasted into the chat box.](../media/05-copilot-book-prompt-results.jpg)
 
@@ -33,13 +33,13 @@ The following is an example of what Copilot might generate. How does it compare 
 
 ### Analyze your results
 
-Now that you've submitted your personalized prompts to Copilot, it's time to analyze the results. Take a moment to review the response you received. Consider the following questions as you evaluate the results:
+Now that you submitted your personalized prompts to Copilot, it's time to analyze the results. Take a moment to review the response you received. Consider the following questions as you evaluate the results:
 
 - Did Copilot understand your prompt correctly?
 - Is the response relevant and useful for your needs?
 - Are there any areas where the response could be improved?
 
-If you want, take a few minutes to personalize some of the following prompts. Don't worry, you won't overwrite earlier prompts and responses. Once you're done, we'll move on to analyzing the results.
+If you want, take a few minutes to personalize some of the following prompts. Don't worry, you won't overwrite earlier prompts and responses. Once you're done, you'll move on to analyzing the results.
 
 **Sample prompts**:
 > - Copilot, list **[10 TV shows]** for **[weekend binge-watching]** that are **[comedy and family-friendly]**.
@@ -57,11 +57,12 @@ Iteration is a key part of creating effective AI prompts. In this step, you'll r
 
 Think Deeper unlocks the power of deep reasoning in Microsoft Copilot. It breaks down complex questions into manageable steps, providing more accurate and insightful responses.
 
-1. Pick one of your earlier prompts and submit to Copilot. For example enter the sample prompt "Copilot, generate a list of 5 book recommendations for a beach holiday that focus on world building science fiction."
-1. Now, select the **Think Deeper** button to open the interface.
-![Screenshot Copilot with the Think Deeper button highlighted.](../media/05-think-deeper.jpg)
-1. Prompt Copilot to give you more details about the output, then select **Submit**. For example, try the sample prompt "I'd like to dive into the central themes and motifs of each book, to understand the underlying messages and connections between the stories."
-![Screenshot Copilot with the Submit button highlighted.](../media/05-think-deeper-submit.jpg)
-1. Review the results and ask a followup question for more detailed information, but this time select the **Think Deeper** button. Note that this will take Coplot around 30 seconds to return your results.
+1. Pick one of your earlier prompts and submit to Copilot, and review the results. For example, enter the sample prompt "Copilot, generate a list of 5 book recommendations for a beach holiday that focus on world building science fiction."
+![Screenshot Copilot with the Submit button highlighted.](../media/05-copilot-submit.jpg)
+1. Activate **Think Deeper** by selecting the icon.
+![Screenshot Copilot with the Think Deeper button highlighted.](../media/05-think-deeper-activate.jpg)
+1. Ask a follow-up question for more detailed information. For example, try the sample prompt "I'd like to dive into the central themes and motifs of each book, to understand the underlying messages and connections between the stories." This will take Coplot around 30 seconds to return your results.
+![Screenshot Copilot with Think Deeper activated and the Submit button highlighted.](../media/05-think-deeper-submit.jpg)
+1. Review the output from Think Deeper. Consider how it compares to standard responses.
 
-Congratulations on completing the exercise! You've now practiced creating personalized prompts, analyzing the results, and using Think Deeper to unlock deep reasoning. Keep experimenting with different prompts in your daily tasks to see how AI can make your work easier and more efficient.
+Congratulations on completing the exercise! You creating personalized prompts, analyzed the results, and used Think Deeper to unlock deep reasoning. Keep experimenting with different prompts in your daily tasks to see how AI can make your work easier and more efficient.
