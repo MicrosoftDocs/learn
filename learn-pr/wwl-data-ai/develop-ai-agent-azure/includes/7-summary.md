@@ -13,6 +13,6 @@ After completing this module, you are now able to:
 
 Additional Reading:
 
-- [Quickstart Guide for Azure AI Agent Service](https://learn.microsoft.com/azure/ai-services/agents/quickstart)
-- [What's new in Azure AI Agent Service](https://learn.microsoft.com/azure/ai-services/agents/whats-new)
+- [Quickstart Guide for Azure AI Agent Service](/azure/ai-services/agents/quickstart?azure-portal=true)
+- [What's new in Azure AI Agent Service](/azure/ai-services/agents/whats-new?azure-portal=true)
 - For detailed instructions, refer to the [quickstart guide](/azure/ai-services/agents/quickstart?azure-portal=true).
