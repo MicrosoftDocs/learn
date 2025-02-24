@@ -195,7 +195,7 @@ A federated domain user account that is imported into a managed domain as an ext
 
 ### Naming considerations
 
-Special characters like colon : or ampersand & when included as user names in the T-SQL CREATE LOGIN and CREATE USER statements aren't supported.
+Special characters like colon: or ampersand & when included as user names in the T-SQL CREATE LOGIN and CREATE USER statements aren't supported.
 
 Microsoft Entra ID and Azure SQL diverge in their user management design in one key way: Microsoft Entra ID allows display names to be duplicated within a tenant, whereas Azure SQL requires all server principals on a server or instance and all database principals on a database to have a unique name. Because Azure SQL directly uses the Microsoft Entra display name of the identity when creating principals, this can result in errors when creating users. To solve this issue, Azure SQL has released the WITH OBJECT\_ID enhancement currently in preview, which allows users to specify the Microsoft Entra object ID of the identity being added to the server or instance.
 
