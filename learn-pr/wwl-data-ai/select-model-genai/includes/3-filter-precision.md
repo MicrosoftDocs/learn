@@ -1,9 +1,0 @@
-## Filter models for precision
-
-In the context of generative AI, precision refers to the accuracy of the model in generating outputs that are correct and relevant to the given input. Precision measures the proportion of true positive results (correctly generated outputs) among all positive results (all generated outputs). A high precision indicates that the model generates fewer irrelevant or incorrect outputs, making it more reliable and trustworthy in its predictions or content generation.
-
-When you want to integrate a language model into your app, you can choose a base model or a fine-tuned model. A base model is a pre-trained model that is trained on a large and diverse dataset. These models, such as GPT-4, are capable of performing a wide range of tasks out-of-the-box. However, their generality can sometimes lead to less precise results for specific tasks or domains. You can apply other techniques like prompt engineering to increase the precision. Sometimes, that is not good enough and you need to fine-tune a model to make it more specialized.
-
-A fine-tuned model is a base model that has undergone additional training on a smaller, task-specific dataset (including many sample inputs and outputs). Fine-tuning a model tailors the model to perform better on specific tasks or within certain domains, and can improve the precision of the model by making it more adept at generating relevant and accurate outputs for the intended application.
-
-When you need a fine-tuned model, you can either search for a specialized model that has already been fine-tuned on a specific dataset, or you can choose to fine-tune the model yourself.
