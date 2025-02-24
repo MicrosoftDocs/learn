@@ -5,14 +5,14 @@ metadata:
   prefetch-feature-rollout: true
   title: Develop for Azure Cache for Redis
   description: "Learn how to configure Azure Cache for Redis, interact with the cache, and connect an application to Azure Cache for Redis by using .NET."
-  ms.date: 07/19/2024
+  ms.date: 02/24/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: module
   ms.custom:
   - N/A
   ms.service: azure-cache-redis
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Develop for Azure Cache for Redis
 summary: Learn how to configure Azure Cache for Redis, interact with the cache, and connect an application to Azure Cache for Redis by using .NET.
 abstract: |

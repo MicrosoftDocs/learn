@@ -43484,6 +43484,16 @@
       "source_path": "learn-pr/student-evangelism/web-development-101-variables/index.yml",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/10-knowledge-check.md",
+      "redirect_url": "/training/modules/security-azure-sql-database-azure-sql-managed-instance/11-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/11-summary.md",
+      "redirect_url": "/training/modules/security-azure-sql-database-azure-sql-managed-instance/12-summary",
+      "redirect_document_id": false
     }
   ]
 }
