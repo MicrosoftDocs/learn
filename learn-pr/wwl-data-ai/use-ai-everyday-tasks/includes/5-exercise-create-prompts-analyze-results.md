@@ -61,7 +61,7 @@ Think Deeper unlocks the power of deep reasoning in Microsoft Copilot. It breaks
 ![Screenshot Copilot with the Submit button highlighted.](../media/05-copilot-submit.jpg)
 1. Activate **Think Deeper** by selecting the icon.
 ![Screenshot Copilot with the Think Deeper button highlighted.](../media/05-think-deeper-activate.jpg)
-1. Ask a follow-up question for more detailed information. For example, try the sample prompt "I'd like to dive into the central themes and motifs of each book, to understand the underlying messages and connections between the stories." This will take Coplot around 30 seconds to return your results.
+1. Ask a follow-up question for more detailed information. For example, try the sample prompt "I'd like to dive into the central themes and motifs of each book, to understand the underlying messages and connections between the stories." This will take Copilot around 30 seconds to return your results.
 ![Screenshot Copilot with Think Deeper activated and the Submit button highlighted.](../media/05-think-deeper-submit.jpg)
 1. Review the output from Think Deeper. Consider how it compares to standard responses.
 
