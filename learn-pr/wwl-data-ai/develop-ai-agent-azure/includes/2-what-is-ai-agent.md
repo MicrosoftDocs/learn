@@ -1,35 +1,49 @@
-Understanding what an AI agent is and how to utilize them is crucial for effectively leveraging artificial intelligence to automate tasks, make informed decisions, and enhance user experiences. This knowledge enables organizations to deploy AI agents strategically, maximizing their potential to drive innovation, improve efficiency, and achieve business objectives.
+An AI agent is a software service that uses generative AI to understand and perform tasks on behalf of a user or another program. These agents leverage advanced AI models to understand context, make decisions, utilize grounding data, and take actions to achieve specific goals. Unlike traditional applications, AI agents can operate independently, executing complex workflows and automating processes without the need of constant human intervention. The evolution of generative AI has enabled agents to behave intelligently on our behalf, transforming how we can leverage and integrate these agents.
 
-## What is an AI Agent?
+Understanding what an AI agent is and how to utilize them is crucial for effectively leveraging AI to automate tasks, make informed decisions, and enhance user experiences. This knowledge enables organizations to deploy AI agents strategically, maximizing their potential to drive innovation, improve efficiency, and achieve business objectives.
 
-An AI Agent is a software entity designed to perform tasks autonomously using artificial intelligence techniques. These agents are capable of perceiving their environment, making decisions, and taking actions to achieve specific goals. They are built to simulate human-like intelligence and can be applied in various domains such as customer service, data analysis, automation, and more.
+## Why Are AI Agents Useful?
 
-## How AI Agents Relate to Azure AI
+AI agents are incredibly useful for several reasons:
 
-Azure AI is a comprehensive suite of AI services and tools provided by Microsoft that enhances the capabilities of AI Agents. By leveraging Azure AI, developers can build more sophisticated and powerful AI Agents. Azure AI includes several key components:
+- **Automation of Routine Tasks**: AI agents can handle repetitive and mundane tasks, freeing up human workers to focus on more strategic and creative activities. This leads to increased productivity and efficiency.
+- **Enhanced Decision-Making**: By processing vast amounts of data and providing insights, AI agents support better decision-making. They can analyze trends, predict outcomes, and offer recommendations based on real-time data.
+- **Decision-Making Capabilities**: AI Agents can use advanced decision-making algorithms and machine learning models to analyze data and make informed decisions. This allows them to handle complex scenarios and provide actionable insights, whereas generative AI chat models primarily focus on generating text-based responses.
+- **Scalability**: AI agents can scale operations without the need for proportional increases in human resources. This is particularly beneficial for businesses looking to grow without significantly increasing operational costs.
+- **24/7 Availability**: Like all softward, AI agents can operate continuously without breaks, ensuring that tasks are completed promptly and customer service is available around the clock.
 
-1. **Azure Cognitive Services**: This collection of APIs enables AI Agents to incorporate advanced capabilities such as natural language processing (NLP), computer vision, speech recognition, and more. For instance, an AI Agent can use NLP to understand and respond to human language, or computer vision to analyze images and videos.
+Agents are built to simulate human-like intelligence and can be applied in various domains such as customer service, data analysis, automation, and more.
 
-2. **Azure Machine Learning**: This service allows developers to train, deploy, and manage machine learning models. AI Agents can use these models to make accurate predictions and decisions based on data. Azure Machine Learning provides the infrastructure and tools needed to create robust machine learning solutions.
+## Examples of AI Agent Use Cases
 
-3. **Azure Bot Services**: This service helps in building, testing, and deploying intelligent bots that can interact with users through various channels like websites, mobile apps, and messaging platforms. AI Agents can utilize these bots to provide seamless and interactive user experiences.
+AI agents have a wide range of applications across various industries. Here are some notable examples:
 
-## Benefits of AI Agents Over Normal Generative AI Chat
+### Personal Productivity Agents
 
-While generative AI chat models, such as those used in chatbots, are designed to generate human-like text based on input, AI Agents offer several advantages:
+Personal productivity agents assist individuals with daily tasks such as scheduling meetings, sending emails, and managing to-do lists. For instance, Microsoft 365 Copilot can help users draft documents, create presentations, and analyze data within the Microsoft Office suite.
 
-1. **Autonomy**: AI Agents operate autonomously, meaning they can perform tasks without continuous human intervention. They can make decisions and take actions based on their understanding of the environment and predefined goals.
+### Research Agents
 
-2. **Context Awareness**: AI Agents can maintain context over longer interactions and across different tasks. This allows them to provide more coherent and relevant responses compared to generative AI chat models, which may struggle with maintaining context over extended conversations.
+Research agents continuously monitor market trends, gather data, and generate reports. These agents can be used in financial services to track stock performance, in healthcare to stay updated with the latest medical research, or in marketing to analyze consumer behavior.
 
-3. **Task-Specific Intelligence**: AI Agents are often designed for specific tasks or domains, allowing them to be highly specialized and efficient. They can integrate domain-specific knowledge and expertise, making them more effective than general-purpose generative AI chat models.
+### Sales Agents
 
-4. **Integration with External Systems**: AI Agents can interact with various external systems and databases, enabling them to perform complex operations such as retrieving information, updating records, and executing transactions. This level of integration is typically beyond the capabilities of standard generative AI chat models.
+Sales agents automate lead generation and qualification processes. They can research potential leads, send personalized follow-up messages, and even schedule sales calls. This automation helps sales teams focus on closing deals rather than administrative tasks.
 
-5. **Decision-Making Capabilities**: AI Agents can use advanced decision-making algorithms and machine learning models to analyze data and make informed decisions. This allows them to handle complex scenarios and provide actionable insights, whereas generative AI chat models primarily focus on generating text-based responses.
+### Customer Service Agents
 
-6. **Scalability and Flexibility**: With Azure AI, AI Agents can scale to handle large volumes of interactions and adapt to changing requirements. Azure's cloud infrastructure ensures that AI Agents can operate efficiently and reliably, even under high demand.
+Customer service agents handle routine inquiries, provide information, and resolve common issues. They can be integrated into chatbots on websites or messaging platforms, offering instant support to customers. For example, Cineplex uses an AI agent to process refund requests, significantly reducing handling time and improving customer satisfaction.
 
-#### Conclusion
+### Developer Agents
 
-AI Agents represent a significant advancement in artificial intelligence, offering autonomous operation, context awareness, task-specific intelligence, and integration with external systems. By leveraging Azure AI, developers can enhance the capabilities of AI Agents, making them more powerful and effective in various applications. The benefits of AI Agents over normal generative AI chat models make them a valuable asset in driving business efficiencies and providing superior user experiences.
+Developer agents assist in software development tasks such as code review, bug fixing, and repository management. They can automatically update codebases, suggest improvements, and ensure that coding standards are maintained. GitHub Copilot is a great example of a developer agent.
+
+> [TIP]
+> To learn more about GitHub Copilot, explore the [GitHub Copilot fundamentals](/training/paths/copilot/) learning path.
+
+## How to build an agent
+
+Agents can be built with various services and platforms, including M365, Semantic Kernel, and Azure AI Agent Service. The rest of this module will focus on the AI Agent Service, however there are independent learning paths on Microsoft Learn for the other services.
+
+> [TIP]
+> You can explore more about agents in general with the [Fundamentals of AI agents](/training/modules/ai-agent-fundamentals) module.

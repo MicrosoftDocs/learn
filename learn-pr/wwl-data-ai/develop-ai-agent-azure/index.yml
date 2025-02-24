@@ -1,27 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-ai-agent-azure
 metadata:
-  title: Develop applications with Azure OpenAI Service
-  description: Azure OpenAI Service enables engineers to build generative AI applications.
+  title: Develop an AI agent with Azure AI Agent Service
+  description: Learn how to start using Azure AI Agent Service.
   author: ivorb
   ms.author: berryivor
-  ms.date: 02/20/2025
+  ms.date: 02/24/2025
   ms.service: azure-ai-openai
   ms.topic: module-standard-task-based
-  ms.collection:
-    - wwl-ai-copilot
-  ms.custom: copilot-learning-hub, ai-learning-hub
-title: Develop applications with Azure OpenAI Service
-summary: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.
+title: Develop an AI agent with Azure AI Agent Service
+summary: This module provides engineers with the skills to begin building agents with Azure AI Agent Service.
 abstract: |
   By the end of this module, you'll be able to:
-    - Create an Azure OpenAI Service resource and understand types of Azure OpenAI base models.
-    - Build natural language solutions with Azure OpenAI Service 
-    - Apply prompt engineering with Azure OpenAI Service 
-    - Build code-generation solutions with Azure OpenAI Service 
+  - Describe the purpose of AI agents
+  - Explain the key features of Azure AI Agent Service
+  - Build an agent using the Azure AI Agent Service
+  - Integrate an agent in the Azure AI Agent Service into your own application
 prerequisites: |
   - Familiarity with Azure and the Azure portal.
-  - An understanding of generative AI. You can learn more with [Introduction to Azure OpenAI Service](/training/modules/explore-azure-openai/).
+  - An understanding of generative AI. You can learn more with [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/).
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
