@@ -1,4 +1,4 @@
-Let's explore some resources and tools you can use to enhance your prompting skills. We identify some useful prompting resources, explore using AI across apps to build on results, and understand how these techniques apply to real-world scenarios.
+Now it's time to dive into various resources that can spark your creativity and enhance your prompting skills. In this unit, find inspiration for more complex prompts, explore new ways to use AI in your daily life, and discover practical applications for AI at work.
 
 ## Find inspiration
 

@@ -39,15 +39,16 @@ Now that you submitted your personalized prompts to Copilot, it's time to analyz
 - Is the response relevant and useful for your needs?
 - Are there any areas where the response could be improved?
 
-If you want, take a few minutes to personalize some of the following prompts. Don't worry, you won't overwrite earlier prompts and responses. Once you're done, you'll move on to analyzing the results.
+> [!TIP]
+> As you review the results, make a note of what you liked about the responses and any areas that could be refined.
 
+If you want, take a few minutes to personalize some more prompts, and analyze the results. Don't worry, you won't overwrite earlier prompts and responses. 
+ 
 **Sample prompts**:
 > - Copilot, list **[10 TV shows]** for **[weekend binge-watching]** that are **[comedy and family-friendly]**.
 > - Copilot, create a **[playlist]** for **[studying]** that features **[calm and focus-enhancing music]**.
 > - Copilot, recommend **[5 healthy recipes]** for **[weeknight dinners]** that are **[quick and easy to make]**.
 
-> [!TIP]
-> As you review the results, make a note of what you liked about the responses and any areas that could be refined. This will help you in the next steps as you work on improving your prompts.
 
 ## Expand results using Think Deeper
 
@@ -66,7 +67,7 @@ Iteration is a key part of creating effective AI prompts. In this step, you'll r
 
 3. Ask a follow-up question for more detailed information. For example, try the sample prompt "I'd like to dive into the central themes and motifs of each book, to understand the underlying messages and connections between the stories." This will take Copilot around 30 seconds to return your results.
 
-![Screenshot Copilot with Think Deeper activated and the Submit button highlighted.](../media/05-think-deeper-submit.jpg)
+![Screenshot of Copilot with Think Deeper activated and the Submit button highlighted.](../media/05-think-deeper-submit.jpg)
 
 4. Review the output from Think Deeper. Consider how it compares to standard responses.
 
