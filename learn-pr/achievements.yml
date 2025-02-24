@@ -5120,6 +5120,11 @@ achievements:
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
   iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn.azure.create-custom-roles-rbac.badge
+  type: badge
+  title: Create custom roles for Azure resources with role-based access control (RBAC)
+  summary: Understand the structure of role definitions for access control. Identify the role properties to use that define your custom role permissions. Create an Azure custom role and assign to a user.
+  iconUrl: /training/achievements/create-custom-azure-roles-with-rbac.svg
 - uid: learn.language.typescript-namespaces-organize-code.badge
   type: badge
   title: Organize code using TypeScript namespaces
@@ -5205,3 +5210,33 @@ achievements:
   title: Introduction to Visual Studio Code
   summary: In this module, you learn how to assess whether Visual Studio Code is the right source code editor for you. We explore how Visual Studio Code can be used in different development situations, for example, web, C++, and data science. We also examine Visual Studio Code's features such as the editor, debugger, and source control. Finally, we walk you through decision criteria you can use to choose a code editor.
   iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
+- uid: learn.student-evangelism.web-development-101-variables.badge
+  type: badge
+  title: JavaScript variables and data types
+  summary: JavaScript is a programming language used for web development as well as the server. Learn about variables and the data types that populate them.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-variables.svg
+- uid: learn.student-evangelism.web-development-101.introduction-to-programming.badge
+  type: badge
+  title: Introduction to programming
+  summary: Learn about programming languages and the tools that developers use to create software.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-introduction.svg
+- uid: learn.student-evangelism.web-development-101.functions.badge
+  type: badge
+  title: Create modular code by using functions in JavaScript
+  summary: Functions are the building blocks for any application you'll create. With functions, you can create named, reusable sections of code to help make it more readable and maintainable. This module explores the core concepts of functions.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-functions.svg
+- uid: learn.student-evangelism.web-development-101-if-else.badge
+  type: badge
+  title: Make decisions with JavaScript
+  summary: This lesson covers the basics of JavaScript if/else decision-making concepts. You'll learn how comparing variables, using Booleans, and using if/else statements allow you to make decisions in your code.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-if-else.svg
+- uid: learn.student-evangelism.web-development-101.trophy
+  type: trophy
+  title: Web Development for Beginners
+  summary: Learn the basics of web development, including programming languages and tools, and web accessibility.
+  iconUrl: /training/achievements/student-evangelism/web-development-101.svg
+- uid: learn.student-evangelism.web-development-101-loops-arrays.badge
+  type: badge
+  title: JavaScript arrays and loops
+  summary: Learn how to manipulate and store data within JavaScript.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-loops-arrays.svg
