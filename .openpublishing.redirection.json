@@ -192,6 +192,10 @@
       "redirect_url": "/training/modules/query-data-warehouse-microsoft-fabric/"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/deploy-paas-solutions-with-azure-sql/7-describe-sql-edge.yml",
+      "redirect_url": "/training/modules/deploy-paas-solutions-with-azure-sql/"
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/query-data-warehouse-microsoft-fabric/3-explore-visual-query-editor.yml",
       "redirect_url": "/training/modules/query-data-warehouse-microsoft-fabric/"
     },
