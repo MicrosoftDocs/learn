@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-receipts-form-recognizer.exercise
-title: Exercise - Extract form data in Document Intelligence Studio
+title: Exercise - Extract data from documents in Azure AI Foundry portal
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Exercise - Extract form data in Document Intelligence Studio
-  description: "Exercise - Extract form data in Document Intelligence Studio"
-  ms.date: 10/04/2024
+  title: Exercise - Extract data from documents in Azure AI Foundry portal
+  description: "Exercise - Extract data from documents in Azure AI Foundry portal"
+  ms.date: 02/06/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit

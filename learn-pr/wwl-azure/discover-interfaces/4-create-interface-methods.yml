@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-interfaces.create-interface-methods
+title: Create interface methods
+metadata:
+  title: Create interface methods
+  description: "Create interface methods in C# code."
+  ms.date: 02/17/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-create-interface-methods.md)]

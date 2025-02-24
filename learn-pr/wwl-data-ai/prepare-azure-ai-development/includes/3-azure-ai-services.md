@@ -39,14 +39,16 @@ Alternatively, you can provision a multi-service **Azure AI services** resource 
 Using a multi-service resource can make it easier to manage applications that use multiple AI capabilities.
 
 > [!TIP]
+> There may be more than one **Azure AI services** resource type available in the Azure portal.
+>
 > |Service | Icon |
 > |--|--|
-> | When you want to provision a multi-service Azure AI Services resource, be careful to select the **Azure AI services** resource type with the icon shown here.|![Azure AI services icon.](../media/ai-services.png)|
+> | When you want to provision an Azure AI Services resource, be careful to select the Azure AI services resource type with the icon shown here. This resource type includes the latest AI services. |![Azure AI services icon.](../media/ai-services.png)|
 > | An older Azure AI services resource type with a different icon may also be listed in the Azure portal. The older service encapsulates a different set of AI services and isn't suitable for working with newer services like Azure OpenAI and Azure AI Content Understanding.| ![Azure Cognitive Services icon.](../media/cognitive-services.png)| 
 
 ### Regional availability
 
-Some services and models and available in only a subset of Azure regions. Consider service availability and any regional quota restrictions for your subscription when provisioning Azure AI services. Use the [product availability table](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/table?azure-portal=true) to check regional availability of Azure services. Use the [model availability table](/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability?azure-portal=true) in the Azure OpenAI service documentation to determine regional availability for Azure OpenAI models.
+Some services and models are available in only a subset of Azure regions. Consider service availability and any regional quota restrictions for your subscription when provisioning Azure AI services. Use the [product availability table](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/table?azure-portal=true) to check regional availability of Azure services. Use the [model availability table](/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability?azure-portal=true) in the Azure OpenAI service documentation to determine regional availability for Azure OpenAI models.
 
 ### Cost
 

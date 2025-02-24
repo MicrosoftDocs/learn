@@ -13,4 +13,4 @@ These are a handful of the cloud services that Microsoft offers. They can be com
 
 In this video, you'll see how the above services seamlessly combine to create a data warehouse for reporting:
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4be1575e-6ddd-46fe-a620-2ea29848ed5e]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U38p]

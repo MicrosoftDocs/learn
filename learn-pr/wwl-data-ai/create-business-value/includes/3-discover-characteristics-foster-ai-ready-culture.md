@@ -10,11 +10,12 @@ Of course, this is only possible with strong leadership that drives change by bo
 
 ## Data-driven
 
+
 ![Photograph showing sharing data across your organization and adopting rigorous data practices.](../media/data-photo.jpg)
 
-Any good AI system relies on having the best and most complete data and being able to reason over your entire data estate. In other words, it depends on a matter of data access and integrity.
+Any good AI system relies on having the best and most complete data and being able to reason over your entire data estate. In other words, it depends on a matter of integrity and access.
 
-#### Data access 
+### Access
 
 Due to data ownership or storage issues, most organizations generate, organize, and use data in a siloed manner. While each department may have a good view of the data coming from their own processes, they may lack other information that could be relevant to their operations.
 
@@ -22,7 +23,7 @@ For instance, a sales department might not have a complete view of a customer, b
 
 By sharing data across the organization, the sum becomes greater than the parts. It's no longer each piece of data that matters, but what that data adds up to: a unified view of the customer. With that unified view, you can make better decisions, act more effectively, and provide a better customer experience. Your data estate must be accessible to be useful, whether it's on-premises, in the cloud, or on the edge.
 
-#### Data integrity
+### Integrity
 
 The quality of the data is also key. In this example, if the customer data was riddled with errors, like inaccurate contact information, irrelevant data, or duplication, it wouldn't matter that the data had been unified; the seller could still make significant mistakes in interacting with the customer.
 
@@ -59,7 +60,7 @@ Like a Corporate Vice President of Strategic Missions and Technologies at Micros
 These questions demand for organizations to think about their AI principles and how to ensure them throughout the company. To ensure responsible AI practices, specific planning is required that should include an AI governance model. In this way, you can deliver transparent, explainable, and ethical AI. The module [Embrace responsible AI principles and practices](/training/modules/embrace-responsible-ai-principles-practices) provides a more detailed discussion of the implications of responsible AI for business.
 
 >[!TIP]
->Take a moment to think of how you might determine your organization’s readiness for AI. \
+>Take a moment to think of how you might determine your organization’s readiness for AI.
 >![Photograph showing people working and talking around a table.](../media/2-reflection.jpg)
 
 Now that you understand the principles that enable organization to embrace AI, let's assess whether your organization is ready and how it should evolve.

@@ -2,4 +2,4 @@ AI is changing business and how companies operate and drive value. To succeed, a
 
 AI helps organizations transform digitally by creating new experiences infused with capabilities to make them smart, fast, and helpful. To harness this potential, organizations must be ready to create, own, and operate AI-based systems. A successful AI strategy must consider cultural issues as well as business ones. Becoming an AI-ready organization requires a fundamental transformation in how you do things, how employees relate to each other, what skills they have, and what processes and principles guide your behaviors.
 
-Let’s start by defining an AI strategy to enable your organization to adopt AI in a meaningful, successful way.
+Let’s start by defining an AI strategy to enable your organization to adopt AI in a meaningful and successful way.

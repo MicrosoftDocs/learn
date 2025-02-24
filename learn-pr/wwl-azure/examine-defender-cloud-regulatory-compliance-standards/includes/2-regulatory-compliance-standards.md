@@ -15,7 +15,7 @@ Defender for Cloud continually assesses the environment-in-scope against any com
 
 The Regulatory compliance dashboard provides an interactive overview of compliance state.
 
-:::image type="content" source="../media/regulatory-compliance-dashboard-overview-05d39e24.png" alt-text="Screenshot showing an example of the regulatory compliance dashboard in Microsoft Defender for Cloud.":::
+:::image type="content" source="../media/regulatory-compliance-dashboard-overview-05d39e24-cc7cb7de.png" alt-text="Screenshot showing an example of the regulatory compliance dashboard in Microsoft Defender for Cloud.":::
 
 
 In the dashboard you can:
@@ -39,6 +39,8 @@ For each compliance standard you can view:
  -  Each standard broken down into groups of controls and subcontrols.
  -  When you apply a standard to a scope, you can see a summary of compliance assessment for resources within the scope, for each standard control.
  -  The status of the assessments reflects compliance with the standard. There are three states:
+    
+    
      -  A green circle indicates that resources in scope are compliant with the control.
      -  A red circle indicates that resources are not compliant with the control.
      -  Unavailable controls are those that can't be automatically assessed and thus Defender for Cloud is unable to access whether resources are compliant.

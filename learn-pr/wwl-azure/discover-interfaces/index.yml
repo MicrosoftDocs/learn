@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.discover-interfaces
+metadata:
+  title: Discover interfaces
+  description: "In this module, you learn how to design an interface with properties in C#, develop a class that implements the interface, and formulate property definitions within the interface."
+  ms.date: 02/17/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module-intro-to-product
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ms.devlang: csharp
+  ai-usage: ai-assisted
+title: Discover interfaces
+summary: In this module, you learn how to design an interface with properties in C#, develop a class that implements the interface, and formulate property definitions within the interface.
+abstract: |
+  By the end of this training, you'll be able to:
+
+  -   Design an interface property.
+
+  -   Design an interface method.
+
+  -   Implements an interface in a class.
+
+  -   Understand the value of interfaces.
+prerequisites: |
+  -   Visual Studio Code installed with the C# Dev Kit.
+
+  -   Basic knowledge of the Visual Studio Code IDE.
+
+  -   Basic understanding of the C# programming language.
+
+  -   Familiarity with classes.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+subjects:
+- app-development
+units:
+- learn.wwl.discover-interfaces.introduction
+- learn.wwl.discover-interfaces.understand-interfaces
+- learn.wwl.discover-interfaces.create-interface-properties
+- learn.wwl.discover-interfaces.create-interface-methods
+- learn.wwl.discover-interfaces.understand-value-interfaces
+- learn.wwl.discover-interfaces.exercise-implement-interfaces-project
+- learn.wwl.discover-interfaces.knowledge-check
+- learn.wwl.discover-interfaces.summary
+badge:
+  uid: learn.wwl.discover-interfaces.badge

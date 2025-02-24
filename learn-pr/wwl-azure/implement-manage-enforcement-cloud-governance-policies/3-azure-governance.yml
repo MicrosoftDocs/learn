@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-enforcement-cloud-governance-policies.azure-governance
+title: Azure governance
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Azure governance
+  description: "Azure governance"
+  ms.date: 02/07/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-azure-governance.md)]

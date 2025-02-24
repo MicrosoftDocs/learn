@@ -4,13 +4,13 @@ You use the **Microsoft Entra ID** dashboard in the Azure portal to work with us
 
 ## View users
 
-To view the Microsoft Entra users, select the **Users** entry under **Identity** \- then open the **All Users** view. Take a minute to access the portal and view your users. Notice the **User Type** column to see members and guests, as the following figure depicts.
+To view the Microsoft Entra users, select the **Users** entry under **Identity** - then open the **All Users** view. Take a minute to access the portal and view your users. Notice the **User Type** column to see members and guests, as the following figure depicts.
 
-:::image type="content" source="../media/all-users-dialog-50b4e098-07bb1a6e.png" alt-text="Screenshot of the All Users page of Microsoft Entra ID.  See users and information about them.":::
+:::image type="content" source="../media/all-users-dialog.png" alt-text="Screenshot of the All Users page of Microsoft Entra ID.  See users and information about them.":::
 
 
 Typically, Microsoft Entra ID defines users in three ways:
 
- -  **Cloud identities** \- These users exist only in Microsoft Entra ID. Examples are administrator accounts and users that you manage yourself. Their source is **Microsoft Entra ID** or **External Microsoft Entra directory** if the user is defined in another Microsoft Entra instance but needs access to subscription resources controlled by this directory. When these accounts are removed from the primary directory, they're deleted.
- -  **Directory-synchronized identities** \- These users exist in an on-premises Active Directory. A synchronization activity that occurs via **Microsoft Entra Connect** brings these users in to Azure. Their source is **Windows Server AD**.
- -  **Guest users** \- These users exist outside Azure. Examples are accounts from other cloud providers and Microsoft accounts such as an Xbox LIVE account. Their source is **Invited user**. This type of account is useful when external vendors or contractors need access to your Azure resources. Once their help is no longer necessary, you can remove the account and all of their access.
+- **Cloud identities** - These users exist only in Microsoft Entra ID. Examples are administrator accounts and users that you manage yourself. Their source is **Microsoft Entra ID** or **External Microsoft Entra directory** if the user is defined in another Microsoft Entra instance but needs access to subscription resources controlled by this directory. When these accounts are removed from the primary directory, they're deleted.
+- **Directory-synchronized identities** - These users exist in an on-premises Active Directory. A synchronization activity that occurs via **Microsoft Entra Connect** brings these users in to Azure. Their source is **Windows Server AD**.
+- **Guest users** - These users exist outside Azure. Examples are accounts from other cloud providers and Microsoft accounts such as an Xbox LIVE account. Their source is **Invited user**. This type of account is useful when external vendors or contractors need access to your Azure resources. Once their help is no longer necessary, you can remove the account and all of their access.

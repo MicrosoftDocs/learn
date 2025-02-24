@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework.plan
+title: Plan
+metadata:
+  title: Plan
+  description: "A high-level overview of the Plan methodology in the Cloud Adoption Framework, including how to manage your digital estate, align your organization, and adapt roles."
+  ms.date: 02/06/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-plan.md)]
+  
