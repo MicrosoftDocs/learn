@@ -2,12 +2,12 @@
 
 Key points to understand about natural language processing (NLP) include:
 
-- NLP capabilities are based on models that are trained to perform particular types of text analysis.
+- NLP capabilities are based on models that are trained to do particular types of text analysis.
 - While many natural language processing scenarios are handled by generative AI models today, there are many common text analytics use cases where simpler NLP language models can be more cost-effective.
 - Common NLP tasks include *entity extraction* (identifying mentions of entities like people, places, organizations in a document), *text classification* (assigning document to a specific category) - including *sentiment analysis* (determining whether a body of text is positive, negative, or neutral), and language detection (identifying the language in which text is written).
 
 > [!NOTE]
-> In this module, we've used the term *natural language processing* (NLP) to describe AI capabilities that involve deriving meaning from "ordinary" human language" (usually in text format). You might also see this area of AI referred to as *natural language understanding* (NLU).
+> In this module, we've used the term *natural language processing* (NLP) to describe AI capabilities derive meaning from "ordinary" human language. You might also see this area of AI referred to as *natural language understanding* (NLU).
 
 ## Natural language processing scenarios
 
