@@ -123,7 +123,7 @@ To set a server-level IP firewall rule in the Azure portal, go to the overview p
     The Networking page for the server opens.
 2.  Add a rule in the Firewall rules section to add the IP address of the computer that you're using, and then select Save. A server-level IP firewall rule is created for your current IP address.
     
-    :::image type="content" source="../media/virtual-networking-settings-c0e3ccd3.png" alt-text="Screenshot showing an example of the sql server networking page.":::
+    :::image type="content" source="../media/virtual-networking-settings-c0e3ccd3.png" alt-text="Screenshot showing an example of the sql database firewall settings toolbar.":::
     
 
 #### From the server overview page
@@ -137,8 +137,8 @@ The overview page for your server opens. It shows the fully qualified server nam
 
 Expand table
 
-| **Catalog view or stored procedure**                                                                                                                                            | **Level** | **Description**                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------- |
+| **Catalog view or stored procedure**                                                                                                                                      | **Level** | **Description**                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------- |
 | [sys.firewall\_rules](/sql/relational-databases/system-catalog-views/sys-firewall-rules-azure-sql-database)                                    | Server    | Displays the current server-level IP firewall rules     |
 | [sp\_set\_firewall\_rule](/sql/relational-databases/system-stored-procedures/sp-set-firewall-rule-azure-sql-database)                          | Server    | Creates or updates server-level IP firewall rules       |
 | [sp\_delete\_firewall\_rule](/sql/relational-databases/system-stored-procedures/sp-delete-firewall-rule-azure-sql-database)                    | Server    | Removes server-level IP firewall rules                  |
@@ -185,8 +185,8 @@ EXECUTE sp_delete_firewall_rule @name = N'ContosoFirewallRule'
 
 Expand table
 
-| **Cmdlet**                                                                                                                  | **Level** | **Description**                                                  |
-| --------------------------------------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------- |
+| **Cmdlet**                                                                                                            | **Level** | **Description**                                                  |
+| --------------------------------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------- |
 | [Get-AzSqlServerFirewallRule](/powershell/module/az.sql/get-azsqlserverfirewallrule)       | Server    | Returns the current server-level firewall rules                  |
 | [New-AzSqlServerFirewallRule](/powershell/module/az.sql/new-azsqlserverfirewallrule)       | Server    | Creates a new server-level firewall rule                         |
 | [Set-AzSqlServerFirewallRule](/powershell/module/az.sql/set-azsqlserverfirewallrule)       | Server    | Updates the properties of an existing server-level firewall rule |
@@ -208,12 +208,12 @@ New-AzSqlServerFirewallRule -ResourceGroupName "myResourceGroup" `-ServerName $s
 
 Expand table
 
-| **Cmdlet**                                                                                                                                    | **Level** | **Description**                         |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --------------------------------------- |
+| **Cmdlet**                                                                                                                              | **Level** | **Description**                         |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --------- | --------------------------------------- |
 | [az sql server firewall-rule create](/cli/azure/sql/server/firewall-rule#az-sql-server-firewall-rule-create) | Server    | Creates a server IP firewall rule       |
 | [az sql server firewall-rule list](/cli/azure/sql/server/firewall-rule#az-sql-server-firewall-rule-list)     | Server    | Lists the IP firewall rules on a server |
 | [az sql server firewall-rule show](/cli/azure/sql/server/firewall-rule#az-sql-server-firewall-rule-show)     | Server    | Shows the detail of an IP firewall rule |
-| az sql server firewall-rule update                                                                                                            | Server    | Updates an IP firewall rule             |
+| az sql server firewall-rule update                                                                                                      | Server    | Updates an IP firewall rule             |
 | [az sql server firewall-rule delete](/cli/azure/sql/server/firewall-rule#az-sql-server-firewall-rule-delete) | Server    | Deletes an IP firewall rule             |
 
 The following example uses CLI to set a server-level IP firewall rule:
@@ -222,9 +222,9 @@ Azure CLI
 
 ```
 
-  
+ 
 az sql server firewall-rule create --resource-group myResourceGroup --server $servername \-n ContosoIPRange --start-ip-address 192.168.1.0 --end-ip-address 192.168.1.255">">
-  
+ 
 
 ```
 
@@ -233,14 +233,14 @@ az sql server firewall-rule create --resource-group myResourceGroup --server $se
 
 Expand table
 
-| **Cmdlet**                                                                                                                                                         | **Level** | **Description**                                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------------- |
+| **Cmdlet**                                                                                                                                                   | **Level** | **Description**                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------------- |
 | [az synapse workspace firewall-rule create](/cli/azure/synapse/workspace/firewall-rule#az-synapse-workspace-firewall-rule-create) | Server    | Create a firewall rule                                                       |
 | [az synapse workspace firewall-rule delete](/cli/azure/synapse/workspace/firewall-rule#az-synapse-workspace-firewall-rule-delete) | Server    | Delete a firewall rule                                                       |
 | [az synapse workspace firewall-rule list](/cli/azure/synapse/workspace/firewall-rule#az-synapse-workspace-firewall-rule-list)     | Server    | List all firewall rules                                                      |
 | [az synapse workspace firewall-rule show](/cli/azure/synapse/workspace/firewall-rule#az-synapse-workspace-firewall-rule-show)     | Server    | Get a firewall rule                                                          |
 | [az synapse workspace firewall-rule update](/cli/azure/synapse/workspace/firewall-rule#az-synapse-workspace-firewall-rule-update) | Server    | Update a firewall rule                                                       |
-| az synapse workspace firewall-rule wait                                                                                                                            | Server    | Place the CLI in a waiting state until a condition of a firewall rule is met |
+| az synapse workspace firewall-rule wait                                                                                                                      | Server    | Place the CLI in a waiting state until a condition of a firewall rule is met |
 
 The following example uses CLI to set a server-level IP firewall rule in Azure Synapse:
 
@@ -255,8 +255,8 @@ az synapse workspace firewall-rule create --name AllowAllWindowsAzureIps --works
 
 Expand table
 
-| **API**                                                                                                           | **Level** | **Description**                                     |
-| ----------------------------------------------------------------------------------------------------------------- | --------- | --------------------------------------------------- |
+| **API**                                                                                                     | **Level** | **Description**                                     |
+| ----------------------------------------------------------------------------------------------------------- | --------- | --------------------------------------------------- |
 | [List firewall rules](/rest/api/sql/firewall-rules/list-by-server)               | Server    | Displays the current server-level IP firewall rules |
 | [Create or update firewall rules](/rest/api/sql/firewall-rules/create-or-update) | Server    | Creates or updates server-level IP firewall rules   |
 | [Delete firewall rules](/rest/api/sql/firewall-rules/delete)                     | Server    | Removes server-level IP firewall rules              |

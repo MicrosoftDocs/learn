@@ -38,7 +38,7 @@ To set up Always Encrypted in your database, you need to:
      -  [SQL Server PowerShell](/sql/relational-databases/security/encryption/configure-always-encrypted-using-powershell?view=sql-server-ver16)
      -  [sqlpackage](/sql/relational-databases/security/encryption/configure-always-encrypted-using-dacpac?view=sql-server-ver16) \- which automate the setup process
     
-    To ensure Always Encrypted keys and protected sensitive data are never revealed in plaintext to the database environment, the Database Engine can't be involved in key provisioning and data encryption, or decryption operations. Therefore, Transact-SQL (T-SQL) doesn't support key provisioning or cryptographic operations. For the same reason, encrypting existing data or re-encrypting it (with a different encryption type or a column encryption key) needs to be performed outside of the database (SQL tools can automate that).
+    To ensure Always Encrypted keys and protected sensitive data are never revealed in plaintext to the database environment, the Database Engine can't be involved in key provisioning and data encryption, or decryption operations. Therefore, Transact-SQL (T-SQL) don't support key provisioning or cryptographic operations. For the same reason, encrypting existing data or re-encrypting it (with a different encryption type or a column encryption key) needs to be performed outside of the database (SQL tools can automate that).
 
 ## How queries against encrypted columns work
 
@@ -48,7 +48,7 @@ To run a query on encrypted database columns, insert data to encrypted columns, 
  -  Connect to the database with Always Encrypted enabled in the database connection. Most SQL tools and SQL client drivers support enabling Always Encrypted for database connections.
 
 > [!NOTE]
-> If the user has required database permissions to read the data, but no access to the keys protecting it, the user can still retrieve cyphertext (encrypted) data by connecting to the database without enabling Always Encrypted in the database connection.
+> If the user has required database permissions to read the data, but no access to the keys protecting it, the user can still retrieve ciphertext (encrypted) data by connecting to the database without enabling Always Encrypted in the database connection.
 
 Here's how queries on encrypted columns work:
 
