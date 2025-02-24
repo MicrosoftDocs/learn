@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-generative-ai.exercise
-title: Exercise - Explore generative AI with Microsoft Copilot
+title: Exercise - Explore generative AI in Azure AI Foundry portal
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Exercise - Explore generative AI with Microsoft Copilot
-  description: "Exercise - Explore generative AI with Microsoft Copilot"
+  title: Exercise - Explore generative AI in Azure AI Foundry portal
+  description: "Exercise - Explore generative AI in Azure AI Foundry portal"
   author: sherzyang
   ms.author: sheryang
-  ms.date: 02/06/2025
+  ms.date: 02/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 15
+durationInMinutes: 20
 content: |
   [!include[](includes/7-exercise.md)]
 
