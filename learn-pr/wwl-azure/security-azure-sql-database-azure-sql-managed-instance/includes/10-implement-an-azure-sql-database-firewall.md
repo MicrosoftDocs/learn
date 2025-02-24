@@ -123,7 +123,7 @@ To set a server-level IP firewall rule in the Azure portal, go to the overview p
     The Networking page for the server opens.
 2.  Add a rule in the Firewall rules section to add the IP address of the computer that you're using, and then select Save. A server-level IP firewall rule is created for your current IP address.
     
-    :::image type="content" source="../media/virtual-networking-settings-c0e3ccd3.png" alt-text="Screenshot showing an example of the sql database firewall settings toolbar.":::
+    :::image type="content" source="../media/virtual-networking-settings-c0e3ccd3.png" alt-text="Screenshot showing an example of the sql server networking page.":::
     
 
 #### From the server overview page
@@ -222,9 +222,9 @@ Azure CLI
 
 ```
 
- 
+
 az sql server firewall-rule create --resource-group myResourceGroup --server $servername \-n ContosoIPRange --start-ip-address 192.168.1.0 --end-ip-address 192.168.1.255">">
- 
+
 
 ```
 
