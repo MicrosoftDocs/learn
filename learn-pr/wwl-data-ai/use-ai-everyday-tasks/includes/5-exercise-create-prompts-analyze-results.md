@@ -49,9 +49,7 @@ If you want, take a few minutes to personalize some of the following prompts. Do
 > [!TIP]
 > As you review the results, make a note of what you liked about the responses and any areas that could be refined. This will help you in the next steps as you work on improving your prompts.
 
-## Iterate and expand results using Think Deeper
-
-**IN PROGRESS: The UI is changing day to day, might need to rethink how to include this section.**
+## Expand results using Think Deeper
 
 Iteration is a key part of creating effective AI prompts. In this step, you'll refine your original results to get expanded information using **Think Deeper**.
 
