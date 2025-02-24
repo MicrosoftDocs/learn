@@ -4,17 +4,17 @@ Elastic pools are a deployment option in which you purchase Azure compute resour
 
 Using the Azure portal, search for *“SQL elastic pools”*. Then select **Create** to open the **Create SQL Elastic pool** page.
 
-:::image type="content" source="../media/module-22-plan-implement-final-17.png" alt-text="Screenshot showing the elastic pool page in Azure portal":::
+:::image type="content" source="../media/module-22-plan-implement-final-17.png" alt-text="Screenshot showing the elastic pool page in Azure portal." lightbox="../media/module-22-plan-implement-final-17.png":::
 
 ## Adding a database to an existing pool
 
 1. Using the Azure portal, locate the pool to which you're adding a database.
 
-    :::image type="content" source="../media/module-22-plan-implement-final-18.png" alt-text="Screenshot showing how to add a database to an Elastic Pool in Azure portal":::
+    :::image type="content" source="../media/module-22-plan-implement-final-18.png" alt-text="Screenshot showing how to add a database to an Elastic Pool in Azure portal."  lightbox="../media/module-22-plan-implement-final-18.png":::
 
 1. Select **+ Add databases** to add your database to the pool, then select **Apply**.
 
-    :::image type="content" source="../media/module-22-plan-implement-final-20.png" alt-text="Screenshot showing how to select a database to add to an elastic pool":::
+    :::image type="content" source="../media/module-22-plan-implement-final-20.png" alt-text="Screenshot showing how to select a database to add to an elastic pool."  lightbox="../media/module-22-plan-implement-final-20.png":::
 
     Your database selection is then added to the **Ready to be added to this pool section**. Select **Save**.
 
@@ -22,7 +22,7 @@ Using the Azure portal, search for *“SQL elastic pools”*. Then select **Crea
 
 The Azure portal provides comprehensive insights into the state and health of your elastic pool. You can monitor resource utilization and identify which database is consuming the most resources. This information is valuable for identifying performance issues or determining if a database isn't well-suited for the pool, especially if one database is using most of the resources.
 
-:::image type="content" source="../media/module-22-plan-implement-final-21.png" alt-text="Screenshot showing the resource utilization page of an elastic pool":::
+:::image type="content" source="../media/module-22-plan-implement-final-21.png" alt-text="Screenshot showing the resource utilization page of an elastic pool."  lightbox="../media/module-22-plan-implement-final-21.png":::
 
 To adjust the resources allocated to your elastic pool, use the **Configure** option in the **Settings** section of the elastic pool management side menu. You can perform many changes after the creation of an elastic pool.
 
@@ -35,6 +35,6 @@ Some changes, such as the minimum and maximum DTUs or vCores per database are pe
 
 One of the most useful features is the ability to monitor database resource utilization. This feature provides an easy way to assess the performance of databases within the pool.
 
-:::image type="content" source="../media/module-22-plan-implement-final-23.png" alt-text="Utilization per database in an Elastic Pool from the Azure portal":::
+:::image type="content" source="../media/module-22-plan-implement-final-23.png" alt-text="Utilization per database in an Elastic Pool from the Azure portal." lightbox="../media/module-22-plan-implement-final-23.png":::
 
 An elastic pool is a good fit for multitenant databases where each tenant has its own copy of the database. Balance the workload across databases so as not to allow one database to monopolize all the pool’s resources.

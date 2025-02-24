@@ -4,7 +4,7 @@ Let's look at several methods for deploying a single Azure SQL Database.
 
 Creating an SQL database through the Azure portal is simple. First, navigate to the Azure portal and select "SQL Databases" from the left-hand menu. In the slide-out panel that appears, select "Create."
 
-:::image type="content" source="../media/module-22-plan-implement-final-13.png" alt-text="Screenshot showing the Azure portal Azure SQL Database Deployment page":::
+:::image type="content" source="../media/module-22-plan-implement-final-13.png" alt-text="Screenshot showing the Azure portal Azure SQL Database Deployment page.":::
 
 In the pane in the image below, you’ll notice that the subscription should already be provided for you. You'll need to supply the following information:
 
@@ -14,11 +14,11 @@ In the pane in the image below, you’ll notice that the subscription should alr
 - **Want to use SQL elastic pool?** – Decide whether to use an elastic pool.
 - **Compute + storage** – Determine the appropriate compute resources needed. By default, it's set to Gen5, 2vCore, with 32 GB of storage. Select **Configure database** to view and choose alternate configuration options.
 
-:::image type="content" source="../media/module-22-plan-implement-final-14.png" alt-text="Screenshot showing the Create SQL Database page in Azure portal":::
+:::image type="content" source="../media/module-22-plan-implement-final-14.png" alt-text="Screenshot showing the Create SQL Database page in Azure portal." lightbox="../media/module-22-plan-implement-final-14.png":::
 
 Here, you'll notice that the service tier is General Purpose and the compute tier is Serverless, as discussed previously. Serverless is billed per second based on the number of vCores in use. The alternative option is Provisioned, where compute resources are preallocated and billed per hour based on the number of configured vCores.
 
-:::image type="content" source="../media/module-22-plan-implement-final-15.png" alt-text="Service Tier selection in Azure portal":::
+:::image type="content" source="../media/module-22-plan-implement-final-15.png" alt-text="Service Tier selection in Azure portal." lightbox="../media/module-22-plan-implement-final-15.png":::
 
 ## Deploying an Azure SQL Database via PowerShell/CLI
 

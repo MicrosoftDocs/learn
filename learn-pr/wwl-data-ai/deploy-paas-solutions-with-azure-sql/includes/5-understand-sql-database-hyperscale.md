@@ -19,13 +19,13 @@ Hyperscale provides rapid scalability based on your workload demand.
 
 Provisioning more compute replicas is a quick, online operation. To connect to these read-only replicas, set the *ApplicationIntent* argument in your connection string to **ReadOnly**. Connections with the **ReadOnly** application intent are automatically routed to one of the read-only compute replicas.
 
-:::image type="content" source="../media/module-22-plan-implement-final-36.png" alt-text="Diagram showing the hyperscale architecture for Azure SQL Database":::
+:::image type="content" source="../media/module-22-plan-implement-final-36.png" alt-text="Diagram showing the hyperscale architecture for Azure SQL Database.":::
 
 ## Security considerations
 
 Security for the Hyperscale service tier offers the same robust capabilities as other Azure SQL Database tiers. It employs a layered defense-in-depth approach, providing comprehensive protection from the outermost layers inward.
 
-:::image type="content" source="../media/module-22-plan-implement-final-37.png" alt-text="Hyperscale security":::
+:::image type="content" source="../media/module-22-plan-implement-final-37.png" alt-text="Illustration showing the Hyperscale model.":::
 
 - **Network Security** is the first layer of defense, utilizing IP firewall rules to control access based on the originating IP address. Additionally, Virtual Network firewall rules enable communication from selected subnets within a virtual network.
 
@@ -63,11 +63,11 @@ To deploy an Azure SQL Database with the Hyperscale tier, follow the same proces
 
 1. Under **Compute + storage**, select the **Configure database** link.
 
-    :::image type="content" source="../media/module-22-plan-implement-final-14.png" alt-text="Screenshot showing how to configure an Azure SQL Database with the hyperscale tier":::
+    :::image type="content" source="../media/module-22-plan-implement-final-14.png" alt-text="Screenshot showing how to configure an Azure SQL Database with the hyperscale tier." lightbox="../media/module-22-plan-implement-final-14.png":::
     
 1. For **Service tier**, select **Hyperscale**.
 
-    :::image type="content" source="../media/module-22-plan-implement-final-40_1.png" alt-text="Selecting Hyperscale service tier":::
+    :::image type="content" source="../media/module-22-plan-implement-final-40_1.png" alt-text="Screenshot showing how to select the Hyperscale service tier." lightbox="../media/module-22-plan-implement-final-40_1.png":::
 
 1. Review the hardware configurations available and select the most appropriate configuration for your database. 
 
