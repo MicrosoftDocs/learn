@@ -93,4 +93,4 @@ To connect to an Azure Cache for Redis instance, you need several pieces of info
 * The access key acts as a password for your cache. There are two keys created: primary and secondary. You can use either key. Two are provided in case you need to change the primary key. You can switch all of your clients to the secondary key, and regenerate the primary key. This would block any applications using the original primary key. Microsoft recommends periodically regenerating the keys - much like you would your personal passwords.
 
 > [!WARNING]
-> Your access keys should be considered confidential information, treat them like you would a password. Anyone who has an access key can perform any operation on your cache!
+> Your access keys should be considered confidential information. Treat them like you would a password. Anyone who has an access key can perform any operation on your cache!
