@@ -13,7 +13,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: true
+  ai-usage: ai-assisted
 title: Fundamental AI Concepts
 summary: Curious about artificial intelligence? Want to understand what all the buzz is about? This module introduces you to the world of AI.
 abstract: In this module, you'll learn about the kinds of solutions AI can make possible and considerations for responsible AI practices.
@@ -25,8 +25,6 @@ roles:
 - ai-engineer
 - data-scientist
 - student
-products:
-- azure-ai-services
 subjects:
 - artificial-intelligence
 units:
