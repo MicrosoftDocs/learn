@@ -27,6 +27,8 @@ roles:
 - student
 subjects:
 - artificial-intelligence
+products:
+- ms-copilot
 units:
 - learn.wwl.get-started-ai-fundamentals.introduction-ai
 - learn.wwl.get-started-ai-fundamentals.generative-ai
