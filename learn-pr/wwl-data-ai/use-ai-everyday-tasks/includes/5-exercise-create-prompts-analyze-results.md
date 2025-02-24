@@ -15,17 +15,17 @@ To start, we'll practice creating personalized prompts using a few fill-in-the-b
 
 ### Generate recommendations
 
-1. Copy the sample prompt and paste it into the chat box.
+1. Copy the sample prompt and paste it into the chat box in [copilot.microsoft.com](https://copilot.microsoft.com?azure-portal=true).
+2. Personalize the prompt by updating the content in brackets to whatever suits you.
+3. Submit the message to Copilot.
 
-**Sample prompt**: Copilot, generate a list of [10 book recommendations] for [summer reading] that focus on [self-improvement and personal growth].
+**Sample prompt**:
+> Copilot, generate a list of **[10 book recommendations]** for **[summer reading]** that focus on **[self-improvement and personal growth]**.
 
 ![Screenshot Copilot with the sample prompt pasted into the chat box.](../media/05-copilot-book-prompt-bracketed.jpg)
 
-2. Personalize the prompt by updating the content in brackets to whatever suits you.
-
-3. Submit the message to Copilot.
-
 The following is an example of what Copilot might generate. How does it compare to the personalized prompt that you submitted?
+
 ![Screenshot Copilot with the sample prompt pasted into the chat box.](../media/05-copilot-book-prompt-results.jpg)
 
 > [!TIP]
@@ -39,28 +39,29 @@ Now that you've submitted your personalized prompts to Copilot, it's time to ana
 - Is the response relevant and useful for your needs?
 - Are there any areas where the response could be improved?
 
-If you want, take a few minutes to personalize some of these other prompts.Don't worry, you won't overwrite earlier prompts and responses. Once you're done, we'll move on to analyzing the results.
+If you want, take a few minutes to personalize some of the following prompts. Don't worry, you won't overwrite earlier prompts and responses. Once you're done, we'll move on to analyzing the results.
 
-**Sample prompt**: Copilot, list [10 TV shows] for [weekend binge-watching] that are [comedy and family-friendly].
-
-**Sample prompt**: Copilot, create a [playlist] for [studying] that features [calm and focus-enhancing music].
-
-**Sample prompt**: Copilot, recommend [5 healthy recipes] for [weeknight dinners] that are [quick and easy to make].
+**Sample prompts**:
+> - Copilot, list **[10 TV shows]** for **[weekend binge-watching]** that are **[comedy and family-friendly]**.
+> - Copilot, create a **[playlist]** for **[studying]** that features **[calm and focus-enhancing music]**.
+> - Copilot, recommend **[5 healthy recipes]** for **[weeknight dinners]** that are **[quick and easy to make]**.
 
 > [!TIP]
 > As you review the results, make a note of what you liked about the responses and any areas that could be refined. This will help you in the next steps as you work on improving your prompts.
 
 ## Iterate and expand results using Think Deeper
 
+**IN PROGRESS: The UI is changing day to day, might need to rethink how to include this section.**
+
 Iteration is a key part of creating effective AI prompts. In this step, you'll refine your original results to get expanded information using **Think Deeper**.
 
 Think Deeper unlocks the power of deep reasoning in Microsoft Copilot. It breaks down complex questions into manageable steps, providing more accurate and insightful responses.
 
-1. Revisit one of your earlier prompt results and identify an area where you'd like more detailed information, and reenter that prompt into Copilot. For example enter the sample prompt "Copilot, generate a list of 5 book recommendations for a beach holiday that focus on world building science fiction."
+1. Pick one of your earlier prompts and submit to Copilot. For example enter the sample prompt "Copilot, generate a list of 5 book recommendations for a beach holiday that focus on world building science fiction."
 1. Now, select the **Think Deeper** button to open the interface.
 ![Screenshot Copilot with the Think Deeper button highlighted.](../media/05-think-deeper.jpg)
-1. Enter your expanded prompt and select **Submit**. For example, try the sample prompt "I'd like to dive into the central themes and motifs of each book, to understand the underlying messages and connections between the stories."
+1. Prompt Copilot to give you more details about the output, then select **Submit**. For example, try the sample prompt "I'd like to dive into the central themes and motifs of each book, to understand the underlying messages and connections between the stories."
 ![Screenshot Copilot with the Submit button highlighted.](../media/05-think-deeper-submit.jpg)
 1. Review the results and ask a followup question for more detailed information, but this time select the **Think Deeper** button. Note that this will take Coplot around 30 seconds to return your results.
 
-Congratulations on completing the exercise! You've now practiced creating personalized prompts, analyzing the results, and using Think Deeper to unlock deep reasoning. Keep experimenting with different prompts in your daily tasks to see how AI can make your work easier and more efficient. Happy prompting!
+Congratulations on completing the exercise! You've now practiced creating personalized prompts, analyzing the results, and using Think Deeper to unlock deep reasoning. Keep experimenting with different prompts in your daily tasks to see how AI can make your work easier and more efficient.
