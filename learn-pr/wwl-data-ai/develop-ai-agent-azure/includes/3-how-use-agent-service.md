@@ -4,7 +4,7 @@ Azure AI Agent Service is a fully managed service designed to empower developers
 
 Azure AI Agent Service allows developers to create AI agents tailored to their needs through custom instructions and advanced tools like code interpreters and custom functions. These agents can answer questions, perform actions, or automate workflows by combining generative AI models with tools that interact with real-world data sources. The service simplifies the development process by reducing the amount of code required and managing the underlying infrastructure.
 
-Previously, developers could create an agent-like experience by using standard APIs in Azure AI Foundry and connect to custom functions or other tools, but doing so would take a significant coding effort. Azure AI Agent Service handles all of that for you through AI Foundry to build agents via the portal or in your own app in less than 50 lines of code. The exercise in the module explores both methods of building an agent.
+Previously, developers could create an agent-like experience by using standard APIs in Azure AI Foundry and connect to custom functions or other tools, but doing so would take a significant coding effort. Azure AI Agent Service handles all of that for you through AI Foundry to build agents via the portal or in your own app in fewer than 50 lines of code. The exercise in the module explores both methods of building an agent.
 
 ## Key features of Azure AI Agent Service
 
@@ -30,7 +30,7 @@ To set up Azure AI Agent Service, follow these steps:
 
 ## Tools available to your agent
 
-A lot of the enhanced functionality of an agent comes from the agent's ability to determine when and how to use *tools*. Tools are additional functionality available to your agent, and if the conversation or task warrants the use of one or more of the tools, the agent will call that tool and handle the response.
+Much of the enhanced functionality of an agent comes from the agent's ability to determine when and how to use *tools*. Tools are additional functionality available to your agent, and if the conversation or task warrants the use of one or more of the tools, the agent calls that tool and handle the response.
 
 ![Screenshot of adding tools in Foundry portal for agents.](../media/portal-tools.png)
 
@@ -42,12 +42,12 @@ Available tools are split into two categories:
 
     ![Screenshot of knowledge tools available in the Agent Service.](../media/knowledge-tools-list.png)
 
-- **Action tools**: These tools perform an action or run a function. This includes the code interpreter to execute code as well as custom function calling through OpenAPI specifications, Azure Functions, and more.
+- **Action tools**: These tools perform an action or run a function. This includes the code interpreter to execute code and custom function calling through OpenAPI specifications, Azure Functions, and more.
 
 By connecting built-in and custom tools, you can allow your agent to perform countless tasks on your behalf.
 
 > [!NOTE]
-> For more information on integrating Azure AI Agent Service with Azure Functions, refer to the [integration guide](/azure/ai-services/agents/how-to/tools/azure-functions?azure-portal=true).
+> For more information on integrating Azure AI Agent Service with Azure Functions, see the [integration guide](/azure/ai-services/agents/how-to/tools/azure-functions?azure-portal=true).
 
 ## Integrating an agent in your app
 

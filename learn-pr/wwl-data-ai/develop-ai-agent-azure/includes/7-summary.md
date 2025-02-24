@@ -4,15 +4,15 @@ In this module, you learned about the purpose of Azure AI Agent Service, its key
 
 The techniques covered in this module demonstrate several advantages, including automatic tool calling, secure data management, and flexible model selection. These features enable developers to focus on creating intelligent solutions while ensuring enterprise-grade security and compliance. The business impact includes streamlined development processes, reduced operational overhead, and enhanced AI capabilities.
 
-After completing this module, you are now able to:
+After completing this module, you're now able to:
 
 - Describe the purpose of AI agents
 - Explain the key features of Azure AI Agent Service
 - Build an agent using the Azure AI Agent Service
 - Integrate an agent in the Azure AI Agent Service into your own app
 
-Additional Reading:
+More reading:
 
 - [Quickstart Guide for Azure AI Agent Service](/azure/ai-services/agents/quickstart?azure-portal=true)
 - [What's new in Azure AI Agent Service](/azure/ai-services/agents/whats-new?azure-portal=true)
-- For detailed instructions, refer to the [quickstart guide](/azure/ai-services/agents/quickstart?azure-portal=true).
+- For detailed instructions, see the [quickstart guide](/azure/ai-services/agents/quickstart?azure-portal=true).
