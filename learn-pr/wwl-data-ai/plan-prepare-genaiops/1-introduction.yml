@@ -3,7 +3,7 @@ uid: learn.wwl.plan-prepare-genaiops.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Generative AI shifts focus from model creation to content generation using pretrained models, transforming the end-to-end development process.
+  description: Introduction to code-first development of generative AI applications with Azure AI Foundry.
   author: madiepev
   ms.author: madiepev
   ms.date: 02/21/2025
