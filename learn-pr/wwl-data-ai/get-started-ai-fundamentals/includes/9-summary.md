@@ -1,4 +1,11 @@
-Artificial Intelligence enables the creation of powerful solutions to many kinds of problems. AI systems can exhibit human characteristics to analyze the world around them, make predictions or inferences, and act on them in ways that we could only imagine a short time ago.
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=f5a8199f-447c-4e18-b854-4a837cd874e5]
 
-With this power, comes responsibility. As developers of AI solutions, we must apply principles that ensure that everyone benefits from AI without disadvantaging any individual or section of society. 
+Hopefully, this module has given you an insight into some of the core capabilities of AI, and an intuition into how they work.
 
+## Additional resources
+
+Now that you have foundational understanding of AI, consider reviewing the following resources.
+
+- To try Microsoft Copilot for yourself, go to [https://copilot.microsoft.com](https://copilot.microsoft.com).
+- To learn more about Microsoft AI solutions, see the [Microsoft AI page](https://www.microsoft.com/ai).
+- To learn more about Microsoft's approach to responsible AI, see the [Microsoft responsible Ai page](https://www.microsoft.com/ai/responsible-ai).

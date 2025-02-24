@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+# uid: learn.wwl.get-started-ai-fundamentals.understand-document-intelligence
+uid: learn.wwl.get-started-ai-fundamentals.natural-language-processing
+title: Natural language processing
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Natural language processing
+  description: "Natural language processing (NLP) is a field of AI that focuses on the interaction between computers and humans through natural language."
+  ms.date: 02/24/2025
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-natural-language-processing.md)]
