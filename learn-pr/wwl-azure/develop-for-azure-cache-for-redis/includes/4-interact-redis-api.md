@@ -51,7 +51,7 @@ IDatabase db = redisConnection.GetDatabase();
 ```
 
 > [!TIP]
-> The object returned from `GetDatabase` is a lightweight object, and does not need to be stored. Only the `ConnectionMultiplexer` needs to be kept alive.
+> The object returned from `GetDatabase` is a lightweight object, and doesn't need to be stored. Only the `ConnectionMultiplexer` needs to be kept alive.
 
 Once you have a `IDatabase` object, you can execute methods to interact with the cache. All methods have synchronous and asynchronous versions that return `Task` objects to make them compatible with the `async` and `await` keywords.
 
@@ -175,7 +175,7 @@ var stat = new GameStat("Soccer", new DateTime(2019, 7, 16), "Local Game",
                 new[] { ("Team 1", 2), ("Team 2", 1) });
 
 string serializedValue = Newtonsoft.Json.JsonConvert.SerializeObject(stat);
-bool added = db.StringSet("event:1950-world-cup", serializedValue);
+bool added = db.StringSet("event:2019-local-game", serializedValue);
 ```
 
 We could retrieve it and turn it back into an object using the reverse process:
