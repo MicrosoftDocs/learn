@@ -318,13 +318,6 @@ Now you can view the contents of the `world` database.
    11 rows in set (0.33 sec)
    ```
 
-## Prepare Password less Connection
-
-To connect to the MySQL server without a password, you can use the following command:
-
-```bash
-```
-
 ## Unit summary
 
 You've now completed the setup and preparation for your MySQL Server. In the next unit, you see the steps to deploy the Jakarta EE application to JBoss EAP on Azure App Service and configure it.
