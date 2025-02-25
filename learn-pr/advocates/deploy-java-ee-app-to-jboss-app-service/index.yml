@@ -27,7 +27,7 @@ products:
 prerequisites: |
   - Azure subscription
   - [Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=java-9121-yoterada)
-  - [Java SE 8 (or 11)](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+  - [Java SE 17](https://learn.microsoft.com/java/openjdk/download#openjdk-17)
   - [Git CLI](https://git-scm.com/downloads)
   - [MySQL CLI](https://dev.mysql.com/downloads/shell/)
   - [jq utility](https://stedolan.github.io/jq/)
