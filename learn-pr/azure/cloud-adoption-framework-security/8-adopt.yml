@@ -13,19 +13,19 @@ durationInMinutes: 10
 content: |
   [!include[](includes/8-adopt.md)]
 quiz:
-title: Check your knowledge
-questions:
-- content: What is the primary aspect of incident preparedness and response adoption during the Adopt phase?
-  choices:
-  - content: To use Azure Deployment Environments
-    isCorrect: false
-    explanation: Incorrect. Azure Deployment Environments help create consistent app infrastructure but aren't directly related to incident preparedness and response.
-  - content: To define deployment environments as catalog items
-    isCorrect: false
-    explanation: Incorrect. Defining deployment environments as catalog items is related to infrastructure management, not incident preparedness and response.
-  - content: To set up alert systems to detect unusual activities in real-time
-    isCorrect: true
-    explanation: Correct. Setting up alert systems to detect unusual activities in real-time is crucial for incident preparedness and response. 
-  - content: To implement Zero Trust access controls
-    isCorrect: true
-    explanation: Incorrect. Implementing Zero Trust access controls is important for security, but it's not the key aspect of incident preparedness and response.
+ title: Check your knowledge
+ questions:
+ - content: What is the primary aspect of incident preparedness and response adoption during the Adopt phase?
+   choices:
+   - content: To use Azure Deployment Environments
+     isCorrect: false
+     explanation: Incorrect. Azure Deployment Environments help create consistent app infrastructure but aren't directly related to incident preparedness and response.
+   - content: To define deployment environments as catalog items
+     isCorrect: false
+     explanation: Incorrect. Defining deployment environments as catalog items is related to infrastructure management, not incident preparedness and response.
+   - content: To set up alert systems to detect unusual activities in real-time
+     isCorrect: true
+     explanation: Correct. Setting up alert systems to detect unusual activities in real-time is crucial for incident preparedness and response. 
+   - content: To implement Zero Trust access controls
+     isCorrect: true
+     explanation: Incorrect. Implementing Zero Trust access controls is important for security, but it's not the key aspect of incident preparedness and response.

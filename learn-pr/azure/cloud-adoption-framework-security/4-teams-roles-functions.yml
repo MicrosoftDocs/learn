@@ -13,19 +13,19 @@ durationInMinutes: 10
 content: |
   [!include[](includes/4-teams-roles-functions.md)]
 quiz:
-title: Check your knowledge
-questions:
-- content: Which teams are responsible for translating security strategy, policy, and standards into actionable solutions?
-  choices:
-  - content: Infrastructure or platform teams
-    isCorrect: false
-    explanation: Incorrect. While infrastructure or platform teams implement and integrate security controls, they don't primarily translate security strategy, policy, and standards into actionable solutions.
-  - content: Security architecture, engineering, and posture management teams
-    isCorrect: true
-    explanation: Correct. These teams translate security strategy, policy, and standards into actionable solutions. They ensure that security measures are effectively implemented.
-  - content: Security governance, risk, and compliance teams
-    isCorrect: false
-    explanation: Incorrect. These teams manage security policies, risk assessments, and compliance requirements but don't focus on translating security strategies into actionable solutions.
-  - content: Security training and awareness teams
-    isCorrect: false
-    explanation: Incorrect. These teams provide training and resources to ensure that stakeholders understand their security responsibilities but aren't involved in translating security strategies into actionable solutions.
+ title: Check your knowledge
+ questions:
+ - content: Which teams are responsible for translating security strategy, policy, and standards into actionable solutions?
+   choices:
+   - content: Infrastructure or platform teams
+     isCorrect: false
+     explanation: Incorrect. While infrastructure or platform teams implement and integrate security controls, they don't primarily translate security strategy, policy, and standards into actionable solutions.
+   - content: Security architecture, engineering, and posture management teams
+     isCorrect: true
+     explanation: Correct. These teams translate security strategy, policy, and standards into actionable solutions. They ensure that security measures are effectively implemented.
+   - content: Security governance, risk, and compliance teams
+     isCorrect: false
+     explanation: Incorrect. These teams manage security policies, risk assessments, and compliance requirements but don't focus on translating security strategies into actionable solutions.
+   - content: Security training and awareness teams
+     isCorrect: false
+     explanation: Incorrect. These teams provide training and resources to ensure that stakeholders understand their security responsibilities but aren't involved in translating security strategies into actionable solutions.
