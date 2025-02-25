@@ -16,7 +16,7 @@ This exercise requires a free Microsoft account (for example an *outlook.com*, *
 > [!TIP] 
 > If you did not sign into Edge after creating your account, use the user account icon (&#128100;) on the Edge toolbar to sign in using a *personal* account.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2249955&azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2304792&azure-portal=true)
 
 #### Option 2: Explore Microsoft 365 Copilot
 
