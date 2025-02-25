@@ -9,6 +9,6 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/10-manage.md)]

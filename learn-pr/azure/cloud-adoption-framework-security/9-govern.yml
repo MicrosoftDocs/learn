@@ -9,6 +9,23 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/9-govern.md)]
+quiz:
+title: Check your knowledge
+questions:
+- content: What is the primary goal of security governance in cloud adoption?
+  choices:
+  - content: Aligning business priorities with technical implementations
+    isCorrect: true
+    explanation: Correct. The primary goal of security governance is to align business priorities with technical implementations like architecture, standards, and policies.
+  - content: Streamlining project management
+    isCorrect: false
+    explanation: Incorrect. Streamlining project management is not the primary goal of security governance.
+  - content: Improving data backup processes
+    isCorrect: false
+    explanation: Incorrect. Improving data backup processes is not the primary goal of security governance. 
+  - content: Optimizing resource allocation
+    isCorrect: true
+    explanation: Incorrect. Optimizing resource allocation is not the main focus of security governance.

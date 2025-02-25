@@ -89,3 +89,9 @@ Design resilient workloads to help ensure business continuity during malfunction
 ## Prepare for security sustainment
 
 During the Ready phase, ensure your estate's foundational elements follow security best practices and are scalable. This method prevents security problems and complex management as your estate grows. Plan for long-term business goals without major redesigns or operational overhauls. Even with a simpler foundation, ensure that it can transition to an enterprise architecture without redeploying major elements. A scalable, secure design is key to cloud success.
+
+1. Completes its work atomically within a single service.
+1. Updates the service's database.
+1. Initiates the next transaction via an event or message.
+   
+   If a local transaction fails, the saga performs a series of *compensating transactions* to reverse the changes that the preceding local transactions made.

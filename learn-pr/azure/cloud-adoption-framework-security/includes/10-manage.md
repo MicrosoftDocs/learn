@@ -58,3 +58,65 @@ Ongoing management of your security posture for confidentiality involves regular
 
 ### Azure facilitation
 
+- Microsoft Purview Data Loss Prevention detects and prevents data exfiltration through common processes that attackers use, including first-time use or renamed cloud applications.
+
+- Microsoft Purview Insider Risk Management detects and prevents malicious or inadvertent insider risks, like IP theft, data leakage, and security violations.
+
+## Manage integrity
+
+To manage your data and system integrity, use robust monitoring that has specific configurations to detect unauthorized asset changes. 
+
+- **Use intelligent tooling with SIEM and SOAR solutions** to monitor data integrity, detect unauthorized access and changes, and automate incident responses like immediate lockouts.
+
+- **Use modern monitoring platforms** to detect system changes. Implement guardrails around deployments and ensure that changes outside approved protocols are detected and investigated immediately.
+
+### Azure facilitation
+
+Microsoft Purview health management codifies data standards and measures compliance over time. It provides reports to track data health and assists data owners in remediating problems.
+
+## Manage availability
+
+- **Configure monitoring and alerting** for all infrastructure and applications. Use cloud-native logging and instrumentation to simplify monitoring and reduce operational burden.
+
+- **Test infrastructure and applications for availability regularly.** Use fault injection and chaos testing to introduce malfunctions and test availability and security.
+
+### Azure facilitation
+
+In addition to Defender for Cloud solutions, use the following tools:
+
+- Azure Monitor Application Insights provides automatic instrumentation for rich telemetry monitoring. It supports many Azure-based and on-premises hosting types.
+
+- Azure Chaos Studio is a managed service that uses chaos engineering to measure, understand, and improve cloud application and service resilience.
+
+## Manage security sustainment
+
+### Continuous education
+
+- **Train teams to use advanced analytics and tools** like Microsoft Sentinel for early threat detection, continuous monitoring, and proactive identification. Include preplanned responses for rapid reaction.
+
+- **Train your security operations team on robust strategies** that integrate Zero Trust principles, continuous identity verification, and securing access. Use decision trees and flowcharts for specific scenarios.
+
+- **Train teams on deploying high availability and disaster recovery solutions** by using Azure services. Include preplanned responses and hands-on training for managing disruptions.
+
+- **Conduct regular security drills** to prepare for real-world scenarios. Emphasize containment, communication, and evidence preservation. Use incident playbooks and communication protocols for consistent actions.
+
+- **Test plans with all stakeholders regularly.** Incorporate CIA Triad and Zero Trust principles. Focus on effective coordination and rapid containment. Document actions that you take during testing for post-incident review and improvement.
+
+### Continuous improvement strategies for confidentiality and integrity
+
+- **Confidentiality strategies:**
+  - *Analyze past audits* to identify weaknesses and implement corrective actions for continuous improvement.
+  - *Employ real-time monitoring* to quickly identify and respond to threats, which helps ensure up-to-date security measures.
+  - *Train employees on confidentiality policies and procedures.* Focus on encryption and access controls. Include deeper training for security team members.
+
+- **Integrity strategies:**
+  - *Perform manual audits* to ensure that data governance and monitoring tools are effective.
+
+  - *Adopt proper data hygiene habits*:
+    - Audit data for quality and consistency.
+    - Use normalization to reduce inconsistencies.
+    - Archive or purge unnecessary data.
+    - Review encryption configurations regularly.
+  - *Review and test backup configurations* to ensure data validity and compliance with RTO and RPO targets.
+  - *Review access permissions regularly* to ensure no gaps in controls.
+  - *Train employees on data and system integrity policies.* Provide deeper training for security team members. Emphasize DevOps practices to maintain data accuracy and reliability.

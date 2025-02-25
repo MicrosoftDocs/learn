@@ -9,6 +9,23 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-durationInMinutes: 20
+durationInMinutes: 10
 content: |
   [!include[](includes/3-methodology.md)]
+quiz:
+title: Check your knowledge
+questions:
+- content: What is the primary goal of the Cloud Adoption Framework Secure methodology?
+  choices:
+  - content: To provide financial guidance for cloud adoption.
+    isCorrect: false
+    explanation: Incorrect. The Secure methodology includes some financial guidance, but it's typically covered by other frameworks or business strategies.
+  - content: To offer security guidance for managing technology infrastructure on Azure.
+    isCorrect: true
+    explanation: Correct. The primary goal of the Secure methodology is to ensure that workloads are highly secure and compliant.
+  - content: To develop marketing strategies for cloud services.
+    isCorrect: false
+    explanation: Incorrect. Marketing strategies are outside the scope of the Secure methodology.
+  - content: To create user-friendly interfaces for cloud applications.
+    isCorrect: false
+    explanation: Incorrect. While user-friendly interfaces are important, they aren't the focus of the Secure methodology. 

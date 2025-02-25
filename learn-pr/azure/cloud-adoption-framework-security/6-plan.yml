@@ -9,6 +9,23 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/6-plan.md)]
+quiz:
+title: Check your knowledge
+questions:
+- content: What is the purpose of landing zones in cloud adoption?
+  choices:
+  - content: To build a robust incident response plan
+    isCorrect: false
+    explanation: Incorrect. While important, building an incident response plan isn't the primary purpose of landing zones. 
+  - content: To incorporate templates for infrastructure as code (IaC) deployments
+    isCorrect: false
+    explanation: Incorrect. Although landing zones may use infrastructure as code (IaC) templates, their main purpose is not to incorporate these templates but to provide a secure and scalable foundation.
+  - content: To enhance data analytics capabilities
+    isCorrect: false
+    explanation: Incorrect. Enhancing data analytics capabilities is not the primary goal of landing zones. 
+  - content: To provide a highly secure and scalable foundation for cloud environments
+    isCorrect: true
+    explanation: Correct. The primary purpose of landing zones is to provide a highly secure and scalable foundation for cloud environments, which helps ensure consistency and compliance with security policies.
