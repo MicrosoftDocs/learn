@@ -6,7 +6,7 @@ Key points to understand about computer vision include:
 - *Image classification* is a form of computer vision in which a model is trained with images that are labeled with the main subject of the image (in other words, what it's an image *of*) so that it can analyze unlabeled images and predict the most appropriate label - identifying the subject of the image.
 - *Object detection* is a form of computer vision in which the model is trained to identify the location of specific objects in an image.
 - There are more advanced forms of computer vision - for example, *semantic segmentation* is an advanced form of object detection where, rather than indicate an object's location by drawing a box around it, the model can identify the individual pixels in the image that belong to a particular object.
-- You can combine computer vision and language models (to create a *multi-modal* model) that combine computer vision and generative AI capabilities.
+- You can combine computer vision and language models to create a *multi-modal* model that combines computer vision and generative AI capabilities.
 
 ## Computer vision scenarios
 
