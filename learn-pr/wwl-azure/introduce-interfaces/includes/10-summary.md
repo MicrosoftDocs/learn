@@ -1,0 +1,1 @@
+In this module, you learned how to create and implement interfaces in C#. You also learned about commonly used system defined interfaces. You gained experience creating and implementing interfaces in your project and used them to add new features to the inventory. Congratulations on completing this module! 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-http-operations-asp-razor.make-http-requests
+title: Perform HTTP operations in Blazor Web apps
+metadata:
+  title: Perform HTTP operations in Blazor Web apps
+  description: "Perform HTTP operations in Blazor Web apps"
+  ms.date: 01/15/2025
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-make-http-requests.md)]

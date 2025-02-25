@@ -4,10 +4,10 @@ title: Manage AD DS schema
 metadata:
   title: Manage AD DS schema
   description: "Manage AD DS schema"
-  ms.date: 01/05/2023
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "ADSIEDIT.MSC"
       isCorrect: true
-      explanation: "That's correct. In the ADSI.MSC console, you can right-click or access the context menu on the Schema container, and then select **Update Schema now**. This will trigger an update."
+      explanation: "Correct. In the ADSI.MSC console, you can right-click or access the context menu on the Schema container, and then select **Update Schema now**. This will trigger an update."
     - content: "Active Directory Schema console"
       isCorrect: false
-      explanation: "That's incorrect. You can use Active Directory Schema console to make changes to schema, but not to trigger their update."
+      explanation: "Incorrect. You can use Active Directory Schema console to make changes to schema, but not to trigger their update."
     - content: "Active Directory Users and Computers console"
       isCorrect: false
-      explanation: "That's incorrect. You can use Active Directory Users and Computers console to make changes to AD DS objects, but not to trigger the update of the underlying schema."
+      explanation: "Incorrect. You can use Active Directory Users and Computers console to make changes to AD DS objects, but not to trigger the update of the underlying schema."

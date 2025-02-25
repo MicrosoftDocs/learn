@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-dependency-injection.exercise-register-services
+
+
+title: Exercise - Register and consume services
+
+metadata:
+  title: Exercise - Register and consume services
+
+  description: This unit is an exercise that demonstrates how to register and consume services in an ASP.NET Core app.
+  ms.date: 11/7/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-register-services.md)]

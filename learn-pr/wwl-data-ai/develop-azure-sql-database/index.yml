@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn-wwl.develop-azure-sql-database
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Develop for Azure SQL Database
+  description: "Learn how to create and configure an Azure SQL Database. You'll use SQL Database Projects in VS Code, including installing the extension, importing, and modifying a schema. Additionally, you'll build and deploy database projects in GitHub Actions and Azure Pipelines, and automate and invoke the publishing of a database."
+  ms.date: 9/27/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: module-standard-task-based
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Develop for Azure SQL Database
+summary: You'll learn different methods to develop and automate Azure SQL Database publishing for development purposes.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create and configure an Azure SQL Database.
+  - Use SQL Database projects.
+  - Build and deploy database projects in GitHub Actions and Azure DevOps.
+  - Understand how to secure and monitor your Continuous Integration and Continuous Deployment (CI/CD) process.
+prerequisites: |
+  *   Ability to navigate the Azure portal.
+  *   Experience with T-SQL programming language at a basic level.
+  
+iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- azure-sql-database
+- azure
+subjects: 
+  - databases
+  - cloud-computing
+units:
+- learn-wwl.develop-azure-sql-database.introduction
+- learn-wwl.develop-azure-sql-database.create-configure-sql-database
+- learn-wwl.develop-azure-sql-database.use-sql-db-projects
+- learn-wwl.develop-azure-sql-database.build-deploy-github-actions
+- learn-wwl.develop-azure-sql-database.secure-monitor-automation
+- learn-wwl.develop-azure-sql-database.exercise-deploy-azure-sql-database-project
+- learn-wwl.develop-azure-sql-database.knowledge-check
+- learn-wwl.develop-azure-sql-database.summary
+badge:
+  uid: learn-wwl.develop-azure-sql-database.badge
+
+
+

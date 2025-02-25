@@ -1,5 +1,8 @@
+Azure Container Registry (ACR) tasks are a suite of features that:
 
-ACR Tasks is a suite of features within Azure Container Registry. It provides cloud-based container image building for platforms including Linux, Windows, and Azure Resource Manager, and can automate OS and framework patching for your Docker containers. ACR Tasks enables automated builds triggered by source code updates, updates to a container's base image, or timers. 
+* Provide cloud-based container image building for platforms like Linux, Windows, and Advanced RISC Machines (Arm).
+* Extend the early parts of an application development cycle to the cloud with on-demand container image builds.
+* Enable automated builds triggered by source code updates, updates to a container's base image, or timers. 
 
 ## Task scenarios
 
@@ -18,7 +21,9 @@ Each ACR Task has an associated source code context - the location of a set of s
 
 ## Quick task
 
-Before you commit your first line of code, ACR Tasks's quick task feature can provide an integrated development experience by offloading your container image builds to Azure. With quick tasks, you can verify your automated build definitions and catch potential problems prior to committing your code.
+The *inner-loop* development cycle is the iterative process of writing code, building, and testing your application before committing to source control. It's really the beginning of container lifecycle management.
+
+Before you commit your first line of code, ACR Tasks's quick task feature can provide an integrated development experience by offloading your container image builds to Azure. With quick tasks, you can verify your automated build definitions and catch potential problems before committing your code.
 
 Using the familiar `docker build` format, the [az acr build](/cli/azure/acr#az-acr-build) command in the Azure CLI takes a context (the set of files to build), sends it to ACR Tasks and, by default, pushes the built image to its registry upon completion.
 
@@ -51,5 +56,5 @@ By default, ACR Tasks builds images for the Linux OS and the amd64 architecture.
 
 | OS | Architecture |
 |---|---|
-| Linux | amd64<br/>arm<br/>arm64<br/>386 |
-| Windows | amd64 |
+| Linux | AMD64<br/>Arm<br/>Arm64<br/>386 |
+| Windows | AMD64 |

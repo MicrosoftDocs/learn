@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.render-api-responses-razor-pages
+metadata:
+  title: Render API responses in ASP.NET Core Blazor Web apps
+  description: "Render API responses in ASP.NET Core Blazor Web apps"
+  ms.date: 01/16/2025
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: aspnet-core
+  ms.subservice: blazor
+  ai-usage: ai-assisted
+title: Render API responses in ASP.NET Core Blazor Web apps
+summary: Learn how to render API responses in ASP.NET Core Blazor Web apps.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Combine HTML and C# to define dynamic page rendering logic
+
+  -   Render API responses in Blazor Web apps
+
+  -   Create pages that perform HTTP operations
+prerequisites: |
+  -   Experience writing C# at an intermediate level
+
+  -   Ability to write HTML at an intermediate level
+
+  -   Knowledge of RESTful services and HTTP action verbs
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- aspnet-core
+- dotnet
+units:
+- learn.wwl.render-api-responses-razor-pages.introduction
+- learn.wwl.render-api-responses-razor-pages.explore-asp-core-razor-pages
+- learn.wwl.render-api-responses-razor-pages.discover-razor-syntax
+- learn.wwl.render-api-responses-razor-pages.exercise-render-api-responses-razor-pages
+- learn.wwl.render-api-responses-razor-pages.knowledge-check
+- learn.wwl.render-api-responses-razor-pages.summary
+badge:
+  uid: learn.wwl.render-api-responses-razor-pages.badge

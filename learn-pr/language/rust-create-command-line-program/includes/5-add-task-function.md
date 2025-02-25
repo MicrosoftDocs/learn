@@ -64,11 +64,11 @@ That pattern is used a lot in code that needs to do multiple I/O operations, as 
 
 The second step is to actually read the file. To read the file, `serde_json` asks for any type that implements the `Reader` trait. The `File` type implements that trait, so we just pass it as a parameter to the `serde_json.from_reader` function while declaring that we expect to receive a `Vec<Task>` from it.
 
-Keep in mind that accessing the file system is an I/O action that can fail for various reasons. So we need to consider how our program should behave (and possibly recover) in some specific cases. For example, `serde_json` will return an error when it reaches the end of a file without having found anything to parse. This event will always happen in an empty file, and we need to be able to recover from it.
+Keep in mind that accessing the file system is an I/O action that can fail for various reasons. So we need to consider how our program should behave (and possibly recover) in some specific cases. For example, `serde_json` returns an error when it reaches the end of a file without having found anything to parse. This event always happens in an empty file, and we need to be able to recover from it.
 
-To recover from specific kinds of errors, we use `guards` in the `match` expression to build an empty `Vec` when the specific error occurs. The `Vec` represents an empty to-do list.
+To recover from specific kinds of errors, we use *guards* in the `match` expression to filter out the specific matches of **Ok** and **Err** and build an empty `Vec` when the specific error occurs. The `Vec` represents an empty to-do list.
 
-Note that `serde_json::Error` can easily be converted to the `std::io::Error` type because [it
+The `serde_json::Error` can easily be converted to the `std::io::Error` type because [it
 implements the `From` trait](https://docs.serde.rs/serde_json/error/struct.Error.html#impl-From%3CError%3E?azure-portal=true). That makes it possible for us to use the `?` operator to unpack or early return them.
 
 ## Rewind the file after reading from it

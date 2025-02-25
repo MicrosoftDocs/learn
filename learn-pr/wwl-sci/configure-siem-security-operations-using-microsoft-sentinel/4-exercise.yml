@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-siem-security-operations-using-microsoft-sentinel-labs-validate.exercise
+title: Exercise - Configure a data connector Data Collection Rule
+metadata:
+  title: Exercise - Configure a data connector Data Collection Rule
+  description: "Configure a data connector Data Collection Rule (DCR), NRT query and Automation."
+  ms.date: 10/6/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise.md)]

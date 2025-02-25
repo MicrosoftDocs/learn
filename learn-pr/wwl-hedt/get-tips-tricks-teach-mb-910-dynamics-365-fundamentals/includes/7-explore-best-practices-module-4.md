@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Explore Dynamics 365 Customer Service
 - Lesson 2 – Examine knowledge management and related apps
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dNzS]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=56f968d8-0e6d-46ef-9f71-49389ae14f13]
 
 Module 4 Tips and Tricks
 
@@ -23,9 +23,4 @@ Module 4 Tips and Tricks
 
 Module 4 Demo
 
-- Click-through demo: [Connected field service](https://edxinteractivepage.blob.core.windows.net/edxpages/mb-910/version2/LP-FS-M2-CFS/index.html)
-
-Module 4 Labs
-
-- Lab 4.1: [Create and publish a knowledge article](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M04_Lab1_Create_and_publish_a_Knowledge_Article.md)
-- Lab 4.2: [Create and manage cases](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M04_Lab2_Create_and_manage_Cases.md)
+- Click-through demo: [Connected field service](https://microsoftlearning.github.io/click-throughs/docs/mb-910/version2/LP-FS-M2-CFS/index.html)

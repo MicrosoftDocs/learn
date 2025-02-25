@@ -2,15 +2,16 @@
 uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.evaluate-periodic-backup
 title: Evaluate periodic backup
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Evaluate periodic backup
   description: "Evaluate periodic backup"
-  ms.date: 10/18/2022
+  ms.date: 02/27/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/2-evaluate-periodic-backup.md)]

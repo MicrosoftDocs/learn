@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-track-model-fabric.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 1/24/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

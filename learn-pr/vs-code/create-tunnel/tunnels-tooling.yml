@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.create-tunnel.tunnels-tooling
+title: Tunnels and tooling
+metadata:
+  title: Tunnels and tooling
+  description: This unit explains the concept of tunnels and the Visual Studio Code Remote - Tunnels extension.
+  author: theReynald
+  ms.author: radolphe
+  ms.date: 12/15/2023
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/tunnels-tooling.md)]

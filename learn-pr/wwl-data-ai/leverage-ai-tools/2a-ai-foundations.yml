@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.identify-foundations-of-ai
+title: Foundations of AI
+metadata:
+  title: Foundations of AI
+  description: "Foundations of AI"
+  ms.date: 02/13/2025
+  author: Adriamen
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/2a-ai-foundations.md)]

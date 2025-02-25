@@ -4,11 +4,10 @@ title: Common cyberthreats and attack patterns
 metadata:
   title: Common cyberthreats and attack patterns
   description: "You'll learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for."
-  ms.date: 3/14/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 09/26/2024
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/1-common-cyberthreats-attack-patterns.md)]

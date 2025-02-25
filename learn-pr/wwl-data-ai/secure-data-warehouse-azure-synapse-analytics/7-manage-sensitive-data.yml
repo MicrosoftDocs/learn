@@ -2,13 +2,14 @@
 uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.manage-sensitive-data-with-dynamic-data-masking
 title: Manage sensitive data with Dynamic Data Masking
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage sensitive data with Dynamic Data Masking
   description: "Manage sensitive data with Dynamic Data Masking"
-  ms.date: 03/21/2023
+  ms.date: 07/04/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

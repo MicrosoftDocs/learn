@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-volumes-service.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: summary
+  title: Summary
+  description: In this guide, you've learned about protocols available in Azure NetApp Files to help you understand which one is best suited for your organizations workloads. 
+  ms.date: 11/25/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

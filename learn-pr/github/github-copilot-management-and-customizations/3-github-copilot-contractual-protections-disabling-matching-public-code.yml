@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-copilot-management-and-customizations.git-hub-copilots-contractual-protections-and-disabling-matching-public-code
+title: Explore contractual protections in GitHub Copilot and disabling matching public code
+metadata:
+  title: Explore contractual protections in GitHub Copilot and disabling matching public code
+  description: This content is part of the "Management and customization considerations with GitHub Copilot" module.
+  ms.date: 10/18/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-github-copilot-contractual-protections-disabling-matching-public-code.md)]

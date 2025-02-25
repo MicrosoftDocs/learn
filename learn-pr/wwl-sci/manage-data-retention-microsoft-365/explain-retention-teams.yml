@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-retention-microsoft-365.explain-retention-teams
+title: Explain retention in Microsoft Teams
+metadata:
+  title: Explain retention in Microsoft Teams
+  description: "Explain retention in Microsoft Teams"
+  ms.date: 05/30/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/explain-retention-teams.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How are messages from external users handled under Microsoft Teams retention policies?"
+    choices:
+    - content: "Retention policies apply to all external user messages."
+      isCorrect: false
+      explanation: "Incorrect: Retention policies don't apply to all external user messages, especially those stored in shadow mailboxes."
+    - content: "Messages from external Microsoft 365 accounts are stored in your organization's mailboxes."
+      isCorrect: false
+      explanation: "Incorrect: Messages from external Microsoft 365 accounts are stored in the external user's mailboxes, not in your organization's mailboxes."
+    - content: "Guest account messages are stored in both your users' mailboxes and a shadow mailbox assigned to the guest."
+      isCorrect: true
+      explanation: "Correct: Messages from guest accounts are stored in your users' mailboxes and a shadow mailbox, but retention policies don't apply to shadow mailboxes."

@@ -2,15 +2,19 @@
 uid: learn.wwl.cloud-hybrid-connectivity.troubleshoot-expressroute-connectivity
 title: Troubleshoot ExpressRoute connectivity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot ExpressRoute connectivity
   description: "Troubleshoot ExpressRoute connectivity"
-  ms.date: 06/15/2022
-  author: wwlpublish
-  ms.author: lola
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/27/2023
+  author: mistoyanwork
+  ms.author: mistoyan
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/3-troubleshoot-expressroute-connectivity.md)]
+

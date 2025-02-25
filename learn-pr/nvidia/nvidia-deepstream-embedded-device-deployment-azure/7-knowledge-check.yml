@@ -2,14 +2,15 @@
 uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.7-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 11/09/2021
   author: toolboc
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |

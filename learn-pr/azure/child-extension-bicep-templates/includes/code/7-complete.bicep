@@ -10,7 +10,7 @@ var logAnalyticsWorkspaceName = 'ToyLogs'
 var cosmosDBAccountDiagnosticSettingsName = 'route-logs-to-log-analytics'
 var storageAccountBlobDiagnosticSettingsName = 'route-logs-to-log-analytics'
 
-resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
+resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2024-11-15' = {
   name: cosmosDBAccountName
   location: location
   properties: {
@@ -23,7 +23,7 @@ resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
   }
 }
 
-resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2020-04-01' = {
+resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2024-11-15' = {
   parent: cosmosDBAccount
   name: cosmosDBDatabaseName
   properties: {
@@ -52,11 +52,11 @@ resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@20
   }
 }
 
-resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2020-03-01-preview' existing = {
+resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2023-09-01' existing = {
   name: logAnalyticsWorkspaceName
 }
 
-resource cosmosDBAccountDiagnostics 'Microsoft.Insights/diagnosticSettings@2017-05-01-preview' = {
+resource cosmosDBAccountDiagnostics 'Microsoft.Insights/diagnosticSettings@2021-05-01-preview' = {
   scope: cosmosDBAccount
   name: cosmosDBAccountDiagnosticSettingsName
   properties: {
@@ -70,7 +70,7 @@ resource cosmosDBAccountDiagnostics 'Microsoft.Insights/diagnosticSettings@2017-
   }
 }
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' existing = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' existing = {
   name: storageAccountName
 
   resource blobService 'blobServices' existing = {
@@ -78,7 +78,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' existing 
   }
 }
 
-resource storageAccountBlobDiagnostics 'Microsoft.Insights/diagnosticSettings@2017-05-01-preview' = {
+resource storageAccountBlobDiagnostics 'Microsoft.Insights/diagnosticSettings@2021-05-01-preview' = {
   scope: storageAccount::blobService
   name: storageAccountBlobDiagnosticSettingsName
   properties: {

@@ -1,12 +1,12 @@
-We've used a meteorological dataset to compare the number of certain kinds of storm events in different US states for the year 2007, and visualized the results. Here, you'll explore other aggregation functions to describe the data.
+We've used a meteorological dataset to compare the number of certain kinds of storm events in different US states for the year 2007 and visualized the results. Here, you'll explore other aggregation functions to describe the data.
 
 ## Characterize storm types using the `avg()` function
 
-In the last unit, you looked at the number of storms as a function of time and the damage caused by these storms. Let's look at other statistics that can help characterize the storms themselves.
+In the last unit, you looked at the number of storms as a function of time and the damage these storms caused. Let's look at other statistics that can help characterize the storms themselves.
 
 First, you'll use the `avg()` function to calculate the average damage caused by storms in US dollars.
 
-The following query creates a calculated column using the `extend` operator to add all values of damage, in this case *DamageProperty* and *DamageCrops*, in US dollars. The query then filters for events that caused damage greater than zero. Next, the query summarizes the average damage created by each type of storm. Finally, the results are sorted by the new average damage column.
+The following query creates a calculated column using the `extend` operator to add all values of damage—in this case, *DamageProperty* and *DamageCrops*—in US dollars. The query then filters for events that caused damage greater than zero. Next, the query summarizes the average damage each type of storm created. Finally, the results are sorted by the new average damage column.
 
 1. Run the following query:
 
@@ -41,7 +41,7 @@ The following query creates a calculated column using the `extend` operator to a
 
     You should get results that look like the following image:
 
-    :::image type="content" source="../media/6-avg.png" alt-text="Screenshot of avg aggregation function results second version.":::
+    :::image type="content" source="../media/6-avg.png" alt-text="Screenshot of avg aggregation function results, second version.":::
 
 ## Find extremes using `min()` and `max()`
 
@@ -70,7 +70,7 @@ For absolute maximum or minimum values, use the `min()` and `max()` aggregation 
 
 ## Use the `percentiles()` function
 
-So far, you've calculated the min, max, and average values of damage caused by each event. To complete the picture of the distribution of these values, it can be useful to calculate the percentiles. Using the `percentiles()` function, you can define the input data and the percentiles to calculate. In the following example, you'll calculate the 5th, 20th, 50th, 80th, and 95th percentile values of damage for each event type.
+So far, you've calculated the min, max, and average values of damage each event caused. To complete the picture of the distribution of these values, it can be useful to calculate the percentiles. Using the `percentiles()` function, you can define the input data and the percentiles to calculate. In the following example, you'll calculate the 5th, 20th, 50th, 80th, and 95th percentile values of damage for each event type.
 
 *Percentiles*, which represent a frequency distribution, shouldn't be confused with *percentages*, which are a proportion of a whole.
 

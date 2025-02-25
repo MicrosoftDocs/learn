@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-application-volume-group.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: summary
+  title: Summary
+  description: In this guide, we've reviewed the key components and benefits of using Azure NetApp Files application volume group.       
+  ms.date: 11/27/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-summary.md)]

@@ -29,7 +29,7 @@ AdventureWorks would also like to take their data analytics further and start to
 
 ### Social media analysis
 
-In recent years, the marketing department at the organization has run a wide variety of twitter campaigns at various times of the year. They are keen to measure the impact of their work by tracking social media assets such as hashtags during those campaigns. They would like to have the capability of tracking any hashtag of any name.
+In recent years, the marketing department at the organization has run a wide variety of X campaigns at various times of the year. They are keen to measure the impact of their work by tracking social media assets such as hashtags during those campaigns. They would like to have the capability of tracking any hashtag of any name.
 
 ### Connected bicycle 
 

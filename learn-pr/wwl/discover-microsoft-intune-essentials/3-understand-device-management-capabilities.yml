@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-microsoft-intune-essentials.understand-device-management-capabilities
+title: Understand device management capabilities
+metadata:
+  title: Understand device management capabilities
+  description: "Understand device management capabilities"
+  ms.date: 06/06/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-understand-device-management-capabilities.md)]

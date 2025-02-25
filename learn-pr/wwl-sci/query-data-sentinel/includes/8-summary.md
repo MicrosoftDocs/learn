@@ -1,5 +1,6 @@
+The Contoso SecOps team recently encountered issues when users with compromised accounts tried to access Contoso's customer data. Microsoft Sentinel provides several monitoring and reporting features that help alert Contoso about potential security threats.
 
-The Contoso SecOps team had recently encountered issues when users with compromised accounts had tried to access Contoso's customer data. Microsoft Sentinel provides several monitoring and reporting features that will help alert Contoso about potential security threats. Microsoft Sentinel workbooks provide interactive reports with graphs, charts, and tables, and security administrators can use these features to visualize their security data by using advanced filtering. The SecOps team can use these techniques to gain more insights into their data during their investigations.
+Microsoft Sentinel workbooks provide interactive reports with graphs, charts, and tables, and security administrators can use these features to visualize their security data by using advanced filtering. The SecOps team can use these techniques to gain more insights into their data during their investigations.
 
 ## Learn more
 
@@ -22,4 +23,3 @@ You can learn more by reviewing the following documents.
 
 - [Tutorial: Detect threats out-of-the-box](/azure/sentinel/tutorial-detect-threats-built-in?azure-portal=true)
 - [Connect data sources](/azure/sentinel/connect-data-sources?azure-portal=true)
-

@@ -2,15 +2,17 @@
 uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.understand
 title: Understand point operations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand point operations
   description: "Understand point operations"
-  ms.date: 10/17/2022
+  ms.date: 10/22/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-point-operations.md)]
+

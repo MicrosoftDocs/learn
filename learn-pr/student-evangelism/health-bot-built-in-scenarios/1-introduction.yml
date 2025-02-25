@@ -2,13 +2,14 @@
 uid: learn.health-bot-built-in-scenarios.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   author: Dwitrisha
   ms.author: chnoring
-  ms.date: 07/27/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/09/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

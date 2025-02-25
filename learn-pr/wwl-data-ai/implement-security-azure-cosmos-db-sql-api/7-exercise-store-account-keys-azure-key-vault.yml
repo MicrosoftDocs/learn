@@ -2,16 +2,14 @@
 uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.exercise-store-account-keys-azure-key-vault
 title: 'Exercise: Store Azure Cosmos DB for NoSQL account keys in Azure Key Vault'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Store Azure Cosmos DB for NoSQL account keys in Azure Key Vault'
   description: "Exercise: Store Azure Cosmos DB for NoSQL account keys in Azure Key Vault"
-  ms.date: 10/18/2022
+  ms.date: 10/28/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labId: 107596
-labModal: true
+  ms.topic: unit
 durationInMinutes: 25
 content: |
   [!include[](includes/7-exercise-store-account-keys-azure-key-vault.md)]

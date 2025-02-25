@@ -2,13 +2,14 @@
 uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.exercise-see-how-statistics-affects-query-plan
 title: Exercise - See how statistics affects a query plan
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - See how statistics affects a query plan
   description: "Exercise - See how statistics affects a query plan"
   ms.date: 08/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 15

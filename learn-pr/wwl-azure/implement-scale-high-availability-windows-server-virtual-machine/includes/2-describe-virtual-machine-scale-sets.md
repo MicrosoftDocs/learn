@@ -1,5 +1,4 @@
 
-
 Contoso can use Azure virtual machine scale sets to provide a scalable way to run their applications on a set of VMs. The VMs in Azure virtual machine scale set all have the same configuration and run the same applications. As demand grows, the number of VMs running in the scale set can increase. As demand slackens, excess VMs can be shut down. Virtual machine scale sets are ideal for scenarios that include compute and big-data workloads.
 
 For example, at Contoso, IT provides a customer-facing website using a VM running IIS. Contoso's customers access this website to review the status of their orders. Because this website is accessed globally, it can be difficult to predict the load on the website at any particular time during the day. In addition, there might also be seasonal variations. Therefore, IT staff at Contoso decide to implement a virtual machine scale set. This implementation should help to handle the fluctuating workload.

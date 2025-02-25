@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.azure-netapp-files-performance
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  moduleType: introduction        
+  title: Understand and tune Azure NetApp Files performance       
+  description: Learn about the different factors that influence performance in Azure NetApp Files and make choices to optimize the performance to meet the needs of your workloads.      
+  ms.date: 11/18/2024
+  author: b-ahibbard   
+  ms.author: anfdocs           
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Understand and tune Azure NetApp Files performance  
+summary: Learn about the factors influencing Azure NetApp Files performance, how to monitor performance, and how to tune performance to meet your needs. 
+abstract: |
+  By the end of this module, you'll be able to describe the following: 
+    -	Describe volume quota for Azure NetApp Files 
+    -	Describe performance considerations for large volumes
+    - Classify volume performance and metrics using Azure NetApp Files
+prerequisites: |
+  - Basic understanding of Azure NetApp Files 
+iconUrl: /training/achievements/introduction-to-azure-netapp-files.svg
+levels:
+  - advanced
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+- cloud-computing
+- storage
+units:
+- learn.azure.azure-netapp-files-performance.introduction
+- learn.azure.azure-netapp-files-performance.large-volumes
+- learn.azure.azure-netapp-files-performance.recommendations
+- learn.azure.azure-netapp-files-performance.knowledge-check
+- learn.azure.azure-netapp-files-performance.summary
+badge:
+  uid: learn.azure.azure-netapp-files-performance.badge
+

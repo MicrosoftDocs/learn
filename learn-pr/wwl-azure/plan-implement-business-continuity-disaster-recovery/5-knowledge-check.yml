@@ -2,32 +2,22 @@
 uid: learn.wwl.plan-implement-business-continuity-disaster-recovery.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/15/2022
+  ms.date: 08/07/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How should the FSLogix location be configured in the event of a primary location shut down?"
-    choices:
-    - content: "Configure FileStorage storage accounts"
-      isCorrect: false
-      explanation: "That's incorrect. FileStorage storage accounts allow you to deploy Azure file shares on premium/solid-state disk-based (SSD-based) hardware. FileStorage accounts can only be used to store Azure file shares; no other storage resources (blob containers, queues, tables, etc.) can be deployed in a FileStorage account."
-    - content: "Configure the FSLogix agent with a path to the secondary location in the main region"
-      isCorrect: true
-      explanation: "That's correct. Configure the FSLogix agent with a path to the secondary location in the main region. Once the primary location shuts down, the FLogix agent will replicate as part of the VM Azure Site Recovery replication. Once the replicated VMs are ready, the agent will automatically attempt to path to the secondary region."
-    - content: "Configure general purpose version 2 (GPv2) storage accounts"
-      isCorrect: false
-      explanation: "That's incorrect. GPv2 storage accounts allow you to deploy Azure file shares on standard/hard disk-based (HDD-based) hardware. In addition to storing Azure file shares, GPv2 storage accounts can store other storage resources such as blob containers, queues, or tables."
   - content: "What should be used to replicate Azure Virtual Desktop virtual machines to the secondary location?"
     choices:
     - content: "Deploy Azure Site Recovery"
@@ -39,3 +29,36 @@ quiz:
     - content: "Azure Role-based access control (RBAC)"
       isCorrect: false
       explanation: "That's incorrect. Azure role-based access control (Azure RBAC) is the authorization system you use to manage access to Azure resources. To grant access, you assign roles to users, groups, service principals, or managed identities at a particular scope."
+  - content: "A developer is tasked with creating a system that can automatically manage and validate the creation and teardown of environments for application hosting. What technology enables this?"
+    choices:
+    - content: "Identity provider"
+      isCorrect: false
+      explanation: "Incorrect. An Identity provider manages user identities, not environments."
+    - content: "Storage"
+      isCorrect: false
+      explanation: "Incorrect. Storage refers to saving and organizing data, not managing environments."
+    - content: "Backup"
+      isCorrect: true
+      explanation: "Correct. Backup systems can automate and validate the creation and teardown of environments."
+  - content: "A team is planning for disaster recovery for Azure Virtual Desktop. They want to replicate their virtual machines to a secondary location. Which service should they use to manage this replication?"
+    choices:
+    - content: "Azure Cost Management"
+      isCorrect: false
+      explanation: "Incorrect. Azure Cost Management is used for monitoring costs, not for managing VM replication."
+    - content: "Azure Backup"
+      isCorrect: false
+      explanation: "Incorrect. Azure Backup is used for data backup and restore, not for managing VM replication."
+    - content: "Azure Site Recovery"
+      isCorrect: true
+      explanation: "Correct. Azure Site Recovery is used to manage the replication of virtual machines to other Azure locations."
+  - content: "A developer is tasked with creating a system that can automatically manage and validate the creation and teardown of environments for application hosting. What technology enables this?"
+    choices:
+    - content: "Identity provider"
+      isCorrect: false
+      explanation: "Incorrect. An Identity provider manages user identities, not environments."
+    - content: "Storage"
+      isCorrect: false
+      explanation: "Incorrect. Storage refers to saving and organizing data, not managing environments."
+    - content: "Backup"
+      isCorrect: true
+      explanation: "Correct. Backup systems can automate and validate the creation and teardown of environments."

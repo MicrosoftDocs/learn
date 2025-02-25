@@ -1,20 +1,27 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-implement-business-continuity-disaster-recovery
 metadata:
-  title: Plan for disaster recovery
-  description: "Plan for disaster recovery"
-  ms.date: 03/15/2022
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Plan and implement updates, backups, and disaster recovery
+  description: "Plan for disaster recovery."
+  ms.date: 08/07/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Plan for disaster recovery
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Plan and implement updates, backups, and disaster recovery
 summary: You can replicate your virtual machines (VMs) to the secondary location for Azure Virtual Desktop. You use Azure Site Recovery to manage replicating VMs in other Azure locations.
 abstract: |
   After completing this module, you'll be able to:
-  *  Configure virtual machine (VM) replication for Azure Virtual Desktop.
-  *  Configure FSLogix for multiple profile locations.
-prerequisites: ""
+
+  -   Configure virtual machine (VM) replication for Azure Virtual Desktop.
+
+  -   Configure FSLogix for multiple profile locations.
+prerequisites: None
 iconUrl: /training/achievements/1-plan-and-implement-business-continuity-and-disaster-recovery.svg
 levels:
 - intermediate
@@ -26,12 +33,12 @@ products:
 - azure-virtual-desktop
 - azure-virtual-machines
 subjects:
-- business-continuity
+- site-reliability-engineering
 units:
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.introduction
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.disaster-recovery-for-azure-virtual-desktop
-- learn.wwl.plan-implement-business-continuity-disaster-recovery.vm-replication
-- learn.wwl.plan-implement-business-continuity-disaster-recovery.fslogix-configuration
+- learn.wwl.plan-implement-business-continuity-disaster-recovery.design-backup-strategy
+- learn.wwl.plan-implement-business-continuity-disaster-recovery.monitor-azure-cost-management
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.knowledge-check
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.summary
 badge:

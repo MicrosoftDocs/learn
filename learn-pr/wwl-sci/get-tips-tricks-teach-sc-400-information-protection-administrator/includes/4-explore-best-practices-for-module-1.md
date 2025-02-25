@@ -1,5 +1,3 @@
-
-
 SC-400: Module 1 Implement information protection with Microsoft Purview
 
 Module 1 Overview
@@ -16,7 +14,7 @@ This module consists of seven lessons:
 - Lesson 6 – Protect information in Microsoft Purview
 - Lesson 7 – Apply and manage sensitivity labels
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXmP5]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ef4e82f0-841d-4a9f-9d75-9b0dfabaf07e]  
 
 Module 1 Tips and Tricks
 
@@ -40,7 +38,6 @@ Module 1 Demos
 Module 1 Labs
 
 - Lab 1.1: [Manage compliance roles](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_01_Lab1_Ex1_compliance_roles.md)
-- Lab 1.2: [Manage Office 365 message encryption](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_01_Lab1_Ex2_message_encryption.md)
-- Lab 1.3: [Manage sensitive information types](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_01_Lab1_Ex3_Sensitive_Information_Types.md)
-- Lab 1.4: [Manage trainable classifiers](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_01_Lab1_Ex4_Trainable_Classifiers.md)
-- Lab 1.5: [Manage sensitivity labels](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_01_Lab1_Ex5_Sensitivity_Labels.md)
+- Lab 1.2: [Manage Office 365 message encryption](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_01_Lab1_Ex3_message_encryption.md)
+- Lab 1.3: [Manage sensitive information types](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_01_Lab1_Ex2_Sensitive_Information_Types.md)
+- Lab 1.4: [Manage sensitivity labels](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_01_Lab1_Ex4_sensitivity_labels.md)

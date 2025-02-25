@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-ai-services.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Summary
+  description: Summary of the module.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 09/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
+

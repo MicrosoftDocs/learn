@@ -2,15 +2,16 @@
 uid: learn.wwl.design-implement-hybrid-networking.exercise-create-configure-local-network-gateway
 title: 'Exercise: Create and configure a virtual network gateway'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Create and configure a virtual network gateway'
   description: "Exercise: Create and configure a virtual network gateway"
-  ms.date: 01/05/2023
+  ms.date: 01/09/2025
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-configure-local-network-gateway.md)]

@@ -1,10 +1,8 @@
-
-
-In this demonstration, you'll learn to:
+In this demonstration, you learn to:
 
 - Create and encrypt a Windows VM
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CN9a]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d29ee26e-2825-48f9-9230-9adf9558d7da]
 
 ## Next steps
 

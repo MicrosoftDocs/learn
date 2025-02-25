@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-infrastructure-with-azure-site-recovery.2-what-is-site-recovery
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure Site Recovery?
-  description: Here, you'll learn how replication, disaster recovery (DR) drills and the flexibility of Site Recovery.
-  ms.date: 11/15/2019
+  description: Here, you'll learn how replication, disaster recovery (DR) drills, and the flexibility of Site Recovery.
+  ms.date: 01/25/2025
   author: ankitaduttaMSFT
   ms.author: ankitadutta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: What is Azure Site Recovery
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-site-recovery.md)]
+

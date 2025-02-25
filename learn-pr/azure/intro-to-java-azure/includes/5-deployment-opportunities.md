@@ -10,7 +10,7 @@ VMs are usually the starting point for *lift and shift*, which is the process to
 
 ## Containers
 
-- **Azure Kubernetes Service** (AKS) is a managed Kubernetes service. Kubernetes is the de facto standard to orchestrate your containerized applications. It's perfect for microservices and for midsized applications. AKS comes with service discovery, autoscaling, and monitoring. Microsoft is a collaborator in Kubernetes projects, such as Virtual Kubelet, Dapr, and Open Application Model.
+- **Azure Kubernetes Service** (AKS) is a managed Kubernetes service. Kubernetes is the *de facto* standard to orchestrate your containerized applications. It's perfect for microservices and for midsized applications. AKS comes with service discovery, autoscaling, and monitoring. Microsoft is a collaborator in Kubernetes projects such as Virtual Kubelet, Dapr, and Open Application Model.
 
 - **Azure Red Hat OpenShift** is the Red Hat-managed variety of Kubernetes.
 
@@ -20,17 +20,18 @@ VMs are usually the starting point for *lift and shift*, which is the process to
 
 One of the easiest and most straightforward deployment opportunities for Java applications on Azure is Azure App Service. It comes with autoscaling, integrated monitoring, and security.
 
-## Azure Spring Apps
+## Azure Container Apps
 
-Azure Spring Apps lets you focus on building Spring Boot apps without managing infrastructure. Deploy your JARs or code, and it will automatically wire your apps with the Spring service runtime. After you deploy the apps, you can easily monitor their performance, fix errors, and make improvements.
+Azure Container Apps enables you to focus on building containerized Java applications, whether monolithic or microservices, without the need to manage infrastructure. You can deploy JARs, WARs, or even source code, and the platform automatically optimizes memory and scales your applications based on demand. It also integrates advanced diagnostic features for JVM troubleshooting, ensuring efficient performance for your Java apps.
 
-Azure Spring Apps is integrated into the Azure ecosystem and is ready to tackle enterprise workloads.
+Additionally, Azure Container Apps supports managed Spring components like Eureka Server and Config Server, providing seamless Spring integration. As part of the Azure ecosystem, it's designed to handle enterprise workloads with cost-effective scaling and sophisticated memory management, making it ideal for both traditional and modern application architectures.
 
 ## Functions
 
 You can deploy your Java code as Azure functions. You'll benefit from great tooling and integration with other Azure services.
-Sample scenarios for functions are:
 
-- Web, mobile and Internet of Things (IoT)-connected back ends
+Here are sample scenarios for functions:
+
+- Web, mobile, and Internet of Things (IoT)-connected back ends
 - Bot or real-time file and stream processing
-- Automation of scheduled tasks
+- Automating scheduled tasks

@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/14/2023
+  ms.date: 12/11/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -43,10 +42,10 @@ quiz:
     choices:
     - content: "Cold storage"
       isCorrect: true
-      explanation: "Correct. Cold storage is the appropriate solution for data that's rarely used."
+      explanation: "Correct. Cold storage is the appropriate solution for rarely used data."
     - content: "Hot storage"
       isCorrect: false
       explanation: "Incorrect. Hot storage would be a more expensive solution for storing the data."
     - content: "Warm storage"
       isCorrect: false
-      explanation: "Incorrect. Warm storage isn't the best solution for data that's rarely accessed."
+      explanation: "Incorrect. Warm storage isn't the best solution for rarely accessed data."

@@ -14,7 +14,7 @@ Here are the scenario requirements for our example configuration:
 
 - We have six virtual machines in our configuration with two web servers and two database servers.
 - Customers access the online catalog hosted on our web servers.
-- The web servers must be accessible from the internet over HTTP port 80 and HTTPS port 443. 
+- The web servers must be accessible from the internet.
 - Inventory information is stored on our database servers.
 - The database servers must be accessible over HTTPS port 1433.
 - Only our web servers should have access to our database servers. 
@@ -31,7 +31,7 @@ For our scenario, we need to build the following configuration:
 
 1. Assign the network interfaces for the virtual machines.
 
-   - For each virtual machine server, assign its NIC to the appropriate application security group.
+   - For each virtual machine server, assign its network interface to the appropriate application security group.
 
 1. Create the network security group and security rules.
 

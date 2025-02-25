@@ -36,7 +36,7 @@ For applications that require high durability, you can choose to copy the data i
 
 - The primary difference between GRS and GZRS is how data is replicated in the primary region. Within the secondary region, data is always replicated synchronously with LRS.
 
-- If the primary region becomes unavailable, you can choose to fail over to the secondary region. After the failover has completed, the secondary region becomes the primary region, and you can again read and write data.
+- If the primary region becomes unavailable, you can choose to fail over to the secondary region. After the failover completes, the secondary region becomes the primary region, and you can again read and write data.
 
 - Data is replicated to the secondary region asynchronously. A failure that affects the primary region might result in data loss if the primary region can't be recovered.
 
@@ -44,14 +44,14 @@ For applications that require high durability, you can choose to copy the data i
 
 ### Things to consider when using data redundancy
 
-You've reviewed the different options for implementing replication. Data redundancy is accomplished through a primary region and paired secondary region. As you plan the storage accounts and redundancy settings for Tailwind Traders, consider the following factor.
+You review the different options for implementing replication. Data redundancy is accomplished through a primary region and paired secondary region. As you plan the storage accounts and redundancy settings for Tailwind Traders, consider the following factor.
 
 - **Consider primary replication options**. Explore different scenarios for how Tailwind Traders data can be replicated in the primary region. The redundancy options present tradeoffs between lower costs and higher availability. Some business centers can require more data redundancy. Specific departments or regions might work with data that's not sensitive or which doesn't require high durability. You can implement multiple storage accounts with different redundancy to control the overall costs across the organization.
 
-- **Consider locally redundant storage**. Implement LRS for a low cost redundancy solution, but with limited durability. LRS is suited for Tailwind Traders apps that store data that can be easily reconstructed if data loss occurs. LRS is also a good choice for apps that are restricted to replicating data only within a country or region due to data governance requirements. 
+- **Consider locally redundant storage**. Implement LRS for a low cost redundancy solution, but with limited durability. LRS is suited for Tailwind Traders apps that store data that can be easily reconstructed if data loss occurs. LRS is also a good choice for apps that are restricted to replicating data only within a location due to data governance requirements. 
 
 - **Consider zone-redundant storage**. Choose ZRS for excellent performance, low latency, and resiliency for your data if it becomes temporarily unavailable. Keep in mind that ZRS by itself might not protect your data against a regional disaster where multiple zones are permanently affected.
 
-- **Consider secondary regions**. For applications requiring high durability, you can choose to additionally copy the data in your storage account to a secondary region that is hundreds of miles away from the primary region. If your storage account is copied to a secondary region, then your data is durable even in the case of a complete regional outage or a disaster in which the primary region isn't recoverable.
+- **Consider secondary regions**. For applications requiring high durability, you can choose to additionally copy the data in your storage account to a secondary region that is hundreds of miles away from the primary region. If your storage account is copied to a secondary region, then your data is durable even if a complete regional outage or a disaster in which the primary region isn't recoverable.
 
 - **Consider read access requirements**. Identify Tailwind Traders applications that require read access to the replicated data in the secondary region, if the primary region becomes unavailable for any reason. Configure your storage account with read access to the secondary region. Your applications can seamlessly shift to reading data from the secondary region if the primary region becomes unavailable.

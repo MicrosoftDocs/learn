@@ -2,15 +2,17 @@
 uid: learn.wwl.define-indexes-azure-cosmos-db-sql-api.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 11/03/2022
+  ms.date: 10/22/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
+

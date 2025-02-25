@@ -1,4 +1,5 @@
 
+
 Intune Mobile Application Management (MAM) refers to the suite of Intune management features you can use to publish, push, configure, secure, monitor, and update mobile apps for your users. MAM protects an organization's data within an application by using Microsoft Intune app protection policies that help protect your company data and prevent data loss.
 
 If you use MAM without enrollment (MAM-WE), a work or school-related app that contains sensitive data can be managed on almost any device, including personal devices in bring-your-own-device (BYOD) scenarios. Many productivity apps, such as the Microsoft Office apps, can be managed by Intune MAM.

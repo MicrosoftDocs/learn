@@ -2,7 +2,7 @@ Although technical interviews are important, *nontechnical* ones might make the 
 
 To get started, watch this quick video tip about answering interview questions:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Oawr]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=bd48b2ee-919a-4efe-aa0e-6d9624d27831]
 
 ## Culture questions
 

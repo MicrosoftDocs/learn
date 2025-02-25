@@ -12,15 +12,15 @@ As a member of the enterprise IT team, you're helping to define the strategy to 
 
 In this module, you learn how to:
 
-- Recommend a network architecture solution based on workload requirements 
+- Recommend a network architecture solution based on workload requirements.
 
-- Design for on-premises connectivity to Azure Virtual Network 
+- Design for on-premises connectivity to Azure Virtual Network.
 
-- Design for Azure network connectivity services 
+- Design for Azure network connectivity services. 
 
-- Design for application delivery services 
+- Design for application delivery services. 
 
-- Design for application protection services 
+- Design for application protection services.
 
 ## Skills measured 
 
@@ -30,20 +30,18 @@ Design infrastructure solutions
 
 - Design network solutions
 
-   - Recommend a network architecture solution based on workload requirements
+   - Recommend a connectivity solution that connects Azure resources to the internet.
 
-   - Recommend a connectivity solution that connects Azure resources to the internet
+   - Recommend a connectivity solution that connects Azure resources to on-premises networks.
 
-   - Recommend a connectivity solution that connects Azure resources to on-premises networks
+   - Recommend a solution to optimize network performance.
 
-   - Optimize network performance for applications
+   - Recommend a solution to optimize network security.
 
-   - Recommend a solution to optimize network security
-
-   - Recommend a load balancing and routing solution
+   - Recommend a load-balancing and routing solution.
 
 ## Prerequisites
 
-- Working experience with enterprise networking
+- Working experience with enterprise networking.
 
-- Conceptual knowledge of software defined networking and hybrid connectivity
+- Conceptual knowledge of software defined networking and hybrid connectivity.

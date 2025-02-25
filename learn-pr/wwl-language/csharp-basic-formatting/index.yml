@@ -2,32 +2,41 @@
 uid: learn.languages.csharp-basic-formatting
 metadata:
   title: Perform basic string formatting in C#
-  description: "Perform basic string formatting in C#"
-  ms.date: 04/13/2023
+  description: "Combine literal and variable text data that contain special characters, formatting, and Unicode into meaningful messages for the end user."
+  ms.date: 06/03/2024
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: csharp
+  ai-usage: human-only
 title: Perform basic string formatting in C#
 summary: Combine literal and variable text data that contain special characters, formatting, and Unicode into meaningful messages for the end user.
 abstract: |
   After you complete this module, you'll be able to:
-  * Create string data containing tabs, new lines, and other special characters
-  * Create string data containing Unicode characters
-  * Combine string data into a new string value via concatenation
-  * Combine string data into a new string value via interpolation
+
+  -   Create string data containing tabs, new lines, and other special characters
+
+  -   Create string data containing Unicode characters
+
+  -   Combine string data into a new string value via concatenation
+
+  -   Combine string data into a new string value via interpolation
 prerequisites: |
-  * Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods.
-  * Beginner level experience with data types, declaring, initializing, setting, and retrieving values from variables.
+  -   Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods.
+
+  -   Beginner level experience with data types, declaring, initializing, setting, and retrieving values from variables.
 iconUrl: /training/achievements/csharp-basic-formatting.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
+- student
 products:
 - dotnet
-subjects:
-- development-tools
 units:
 - learn.languages.csharp-basic-formatting.introduction
 - learn.languages.csharp-basic-formatting.exercise-character-escape-sequences

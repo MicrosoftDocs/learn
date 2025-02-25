@@ -4,12 +4,12 @@ title: Define the Host Guardian Service
 metadata:
   title: Define the Host Guardian Service
   description: "Define the Host Guardian Service"
-  ms.date: 09/16/2022
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/3-define-host-guardian-service.md)]
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "A guarded fabric only supports shielded VMs."
       isCorrect: false
-      explanation: "That's incorrect. A guarded fabric supports a mixture of regular VMs, shielded VMs, and encryption-supported VMs."
+      explanation: "Incorrect. A guarded fabric supports a mixture of regular VMs, shielded VMs, and encryption-supported VMs."
     - content: "A guarded fabric supports a mixture of regular VMs, shielded VMs, and encryption-supported VMs."
       isCorrect: true
-      explanation: "That's correct. A guarded fabric supports a mixture of regular VMs, shielded VMs, and encryption-supported VMs."
+      explanation: "Correct. A guarded fabric supports a mixture of regular VMs, shielded VMs, and encryption-supported VMs."
     - content: "A guarded fabric doesn't support regular VMs."
       isCorrect: false
-      explanation: "That's incorrect. A guarded fabric supports a mixture of regular VMs, shielded VMs, and encryption-supported VMs."
+      explanation: "Incorrect. A guarded fabric supports a mixture of regular VMs, shielded VMs, and encryption-supported VMs."

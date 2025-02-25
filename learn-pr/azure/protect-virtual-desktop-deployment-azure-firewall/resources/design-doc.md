@@ -62,14 +62,14 @@ Identify the subtasks of *module title*
     Create WVD host pool
 
     1. Create resource group.
-    1. [Create a Windows Virtual Desktop host pool](https://learn.microsoft.com/azure/virtual-desktop/create-host-pools-powershell#use-your-powershell-client-to-create-a-host-pool) (with PowerShell or UI?).
+    1. [Create a Windows Virtual Desktop host pool](/azure/virtual-desktop/create-host-pools-powershell#use-your-powershell-client-to-create-a-host-pool) (with PowerShell or UI?).
     1. Create a registration token to authorize a session host to join the host pool.
     1. Copy token to notepad.
 
     Create VM
-    1. [Create Windows VM](https://learn.microsoft.com/azure/virtual-machines/windows/quick-create-portal) that'll act as host. Create using Windows 10 image not server - so we don't have to install host role or disable firewall to download agents.
+    1. [Create Windows VM](/azure/virtual-machines/windows/quick-create-portal) that'll act as host. Create using Windows 10 image not server - so we don't have to install host role or disable firewall to download agents.
 
-    [Register VM to WVD host pool](https://learn.microsoft.com/azure/virtual-desktop/create-host-pools-powershell#register-the-virtual-machines-to-the-windows-virtual-desktop-host-pool)
+    [Register VM to WVD host pool](/azure/virtual-desktop/create-host-pools-powershell#register-the-virtual-machines-to-the-windows-virtual-desktop-host-pool)
 
     1. Connect to VM
     1. Download and install Windows Virtual Desktop Agent.
@@ -94,7 +94,7 @@ Identify the subtasks of *module title*
     - For outbound traffic, create a default route that sends traffic from all subnets to the firewall's private IP address. 
     - Configure the firewall with rules to filter inbound and outbound traffic.
 
-    Also: "For production deployments, a hub and spoke model is recommended, where the firewall is in its own VNet. The workload servers are in peered VNets in the same region with one or more subnets." See [Tutorial: Deploy and configure Azure Firewall using the Azure portal](https://learn.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal).
+    Also: "For production deployments, a hub and spoke model is recommended, where the firewall is in its own VNet. The workload servers are in peered VNets in the same region with one or more subnets." See [Tutorial: Deploy and configure Azure Firewall using the Azure portal](/azure/firewall/tutorial-firewall-deploy-portal).
 
 1. **Exercise - Deploy Azure Firewall**
 
@@ -102,8 +102,8 @@ Identify the subtasks of *module title*
 
     **Steps**:
 
-    1. Create subnet for Azure Firewall (AzureFirewallSubnet) on same Vnet as WVD(?) Resource: [Tutorial: Deploy and configure Azure Firewall using the Azure portal](https://learn.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#set-up-the-network)
-    1. [Deploy firewall](https://learn.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#deploy-the-firewall)
+    1. Create subnet for Azure Firewall (AzureFirewallSubnet) on same Vnet as WVD(?) Resource: [Tutorial: Deploy and configure Azure Firewall using the Azure portal](/azure/firewall/tutorial-firewall-deploy-portal#set-up-the-network)
+    1. [Deploy firewall](/azure/firewall/tutorial-firewall-deploy-portal#deploy-the-firewall)
 
 1. **Allow outbound network access for Windows Virtual Desktop**
 
@@ -124,8 +124,8 @@ Identify the subtasks of *module title*
  
     1. Configure WVD host pool subnet User Defined Route all traffic via Firewall (default route now points to firewall):
     
-        [Create a default route](https://learn.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#create-a-default-route) - steps here include creating Firewall-route (in route tables) and then from that route associating with the WVD subnet.
-    1. Create application rule collection (see [Configure application rule](https://learn.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#configure-an-application-rule)) & 
+        [Create a default route](/azure/firewall/tutorial-firewall-deploy-portal#create-a-default-route) - steps here include creating Firewall-route (in route tables) and then from that route associating with the WVD subnet.
+    1. Create application rule collection (see [Configure application rule](/azure/firewall/tutorial-firewall-deploy-portal#configure-an-application-rule)) & 
         1. add rule to enable Windows VirtualDesktop FQDN tag
 		1. Source IP address range is host pool Vnet
 		1. Protocol is https
@@ -133,7 +133,7 @@ Identify the subtasks of *module title*
     1. Need to explicitily allow in firewall application rules exact FQDNs you need - not all captured in     WindowsVirtualDesktop FQDN. 
 	   - Allow https access from host pool subnet to specific URLs (in article).
 
-    1. Create network rule collection with specific rules (see last main bullet in [Host pool outbound access..](https://learn.microsoft.com/azure/firewall/protect-windows-virtual-desktop#host-pool-outbound-access-to-windows-virtual-desktop) & [Configure network rule](https://learn.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#configure-an-application-rule)).
+    1. Create network rule collection with specific rules (see last main bullet in [Host pool outbound access..](/azure/firewall/protect-windows-virtual-desktop#host-pool-outbound-access-to-windows-virtual-desktop) & [Configure network rule](/azure/firewall/tutorial-firewall-deploy-portal#configure-an-application-rule)).
     1. Verify Firewall is working (use PS query)
 
     ```powershell

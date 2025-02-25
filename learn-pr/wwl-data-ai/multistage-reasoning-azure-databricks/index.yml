@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.multistage-reasoning-azure-databricks
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Implement multi-stage reasoning in Azure Databricks
+  description: Implement multi-stage reasoning in Azure Databricks
+  ms.date: 10/23/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure
+  ai-usage: ai-assisted
+  ms.custom: ai-learning-hub
+title: Implement multi-stage reasoning in Azure Databricks
+summary: Multi-stage reasoning systems break down complex problems into multiple stages or steps, with each stage focusing on a specific reasoning task. The output of one stage serves as the input for the next, allowing for a more structured and systematic approach to problem-solving. 
+abstract: |
+  In this module, you learn how to:
+  - Identify the need for multi-stage reasoning systems.
+  - Describe a multi-stage reasoning workflow.
+  - Implement multi-stage reasoning with libraries like LangChain, LlamaIndex, Haystack, and the DSPy framework.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/describe-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.multistage-reasoning-azure-databricks.introduction
+- learn.wwl.multistage-reasoning-azure-databricks.multi-stage-reasoning-concepts
+- learn.wwl.multistage-reasoning-azure-databricks.langchain
+- learn.wwl.multistage-reasoning-azure-databricks.llamaindex
+- learn.wwl.multistage-reasoning-azure-databricks.haystack
+- learn.wwl.multistage-reasoning-azure-databricks.dspy-framework
+- learn.wwl.multistage-reasoning-azure-databricks.exercise
+- learn.wwl.multistage-reasoning-azure-databricks.knowledge-check
+- learn.wwl.multistage-reasoning-azure-databricks.summary
+badge:
+  uid: learn.wwl.multistage-reasoning-azure-databricks.badge
+

@@ -137,7 +137,7 @@ Identify the subtasks of *Contribute to an open-source project using GitHub*
    * The search bar
    * The LICENSE file
 - What is the preferred way to ask for help or reviews on a pull request?
-   * Yell at the maintainers on Twitter
+   * Yell at the maintainers on X
    * Create an issue
    * Add comment in the pull request
    * Send an email to a random committer on the project

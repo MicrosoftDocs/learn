@@ -1,4 +1,5 @@
 
+
 Microsoft Defender Antivirus helps protect your computer from spyware, malware, and viruses. Microsoft Defender Antivirus also is Hyper-V–aware, which means that it detects if Windows is running as a virtual machine. Microsoft Defender Antivirus uses definitions to determine if software it detects is unwanted, and it alerts you to potential risks. To help keep definitions up to date, Microsoft Defender Antivirus automatically installs new definitions as they are released.
 
 You can use Microsoft Defender Antivirus to run a Quick, Full, or Custom scan. If you suspect spyware has infected a specific area of a computer, you can customize a scan by selecting specific drives and folders. You also can configure the schedule that Microsoft Defender Antivirus will use.
@@ -46,7 +47,7 @@ The following broad categories of features can be configured:
 
 If you use the Microsoft 365 platform, it’s recommended to use Intune to manage Microsoft Defender. To manage Microsoft Defender by using Intune, follow these steps:
 
-1.  In the Endpoint Manager admin center, select **Devices**, then select **Windows** platform, then select **Configuration Profiles**.
+1.  In the Microsoft Intune admin center, select **Devices**, then select **Windows** platform, then select **Configuration Profiles**.
 2.  Select **Create Profile**.
 3.  Enter the following properties:
     
@@ -61,4 +62,4 @@ If you use the Microsoft 365 platform, it’s recommended to use Intune to manag
 
 Block at First Sight is a feature of Microsoft Defender Antivirus cloud protection that allows Microsoft Defender Antivirus to rapidly identify and block new malware. You enable Block at First Sight through Group Policy. When you enable this feature, both cloud-based protection and Automatic sample submission will be turned on.
 
-Detect and Block Potentially Unwanted Applications is another feature that you can use to block unwanted software during downloading and installation times. For example, you can block software that is bundled with other downloads, advertisement injection software, and driver and registry optimizers. The Detect and Block Potentially Unwanted Applications feature is available to enterprise users whose client infrastructure you manage by using Endpoint Configuration Manager or Intune.
+Detect and Block Potentially Unwanted Applications is another feature that you can use to block unwanted software during downloading and installation times. For example, you can block software that is bundled with other downloads, advertisement injection software, and driver and registry optimizers. The Detect and Block Potentially Unwanted Applications feature is available to enterprise users whose client infrastructure you manage by using Microsoft Configuration Manager or Intune.

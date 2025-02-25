@@ -14,17 +14,19 @@ Finally, there are situations where users and services operate together at the s
 
 The following are the types of authentication that you should be aware of when working with Azure Synapse Analytics.
 
-### Azure Active Directory
+<a name='azure-active-directory'></a>
 
-Azure Active Directory is a directory service that allows you to centrally maintain objects that can be secured. The objects can include user accounts and computer accounts. An employee of an organization will typically have a user account that represents them in the organizations Azure Active Directory tenant, and they then use the user account with a password to authenticate against other resources that are stored within the directory using a process known as single sign-on. 
+### Microsoft Entra ID
 
-The power of Azure Active Directory is that they only have to log in once, and Azure Active Directory will manage access to other resources based on the information held within it using pass through authentication. If a user and an instance of Azure Synapse Analytics are part of the same Azure Active Directory, it is possible for the user to access Azure Synapse Analytics without an apparent login. If managed correctly, this process is seamless as the administrator would have given the user authorization to access Azure Synapse Analytics dedicated SQL pool as an example.
+Microsoft Entra ID is a directory service that allows you to centrally maintain objects that can be secured. The objects can include user accounts and computer accounts. An employee of an organization will typically have a user account that represents them in the organizations Microsoft Entra tenant, and they then use the user account with a password to authenticate against other resources that are stored within the directory using a process known as single sign-on. 
 
-In this situation, it is normal for an Azure Administrator to create the user accounts and assign them to the appropriate roles and groups in Azure Active Directory. The Data Engineer will then add the user, or a group to which the user belongs to access a dedicated SQL pool.
+The power of Microsoft Entra ID is that they only have to log in once, and Microsoft Entra ID will manage access to other resources based on the information held within it using pass through authentication. If a user and an instance of Azure Synapse Analytics are part of the same Microsoft Entra ID, it is possible for the user to access Azure Synapse Analytics without an apparent login. If managed correctly, this process is seamless as the administrator would have given the user authorization to access Azure Synapse Analytics dedicated SQL pool as an example.
+
+In this situation, it is normal for an Azure Administrator to create the user accounts and assign them to the appropriate roles and groups in Microsoft Entra ID. The Data Engineer will then add the user, or a group to which the user belongs to access a dedicated SQL pool.
 
 ### Managed identities
 
-Managed identity for Azure resources is a feature of Azure Active Directory. The feature provides Azure services with an automatically managed identity in Azure AD. You can use the Managed Identity capability to authenticate to any service that supports Azure Active Directory authentication.
+Managed identity for Azure resources is a feature of Microsoft Entra ID. The feature provides Azure services with an automatically managed identity in Microsoft Entra ID. You can use the Managed Identity capability to authenticate to any service that supports Microsoft Entra authentication.
 
 Managed identities for Azure resources are the new name for the service formerly known as Managed Service Identity (MSI). A system-assigned managed identity is created for your Azure Synapse workspace when you create the workspace.
 
@@ -50,7 +52,7 @@ In the next window, choose **Managed Identity** for **Authentication method**. Y
 
 ### SQL Authentication
 
-For user accounts that are not part of an Azure Active directory, then using SQL Authentication will be an alternative. In this instance, a user is created in the instance of a dedicated SQL pool. If the user in question requires administrator access, then the details of the user are held in the master database. If administrator access is not required, you can create a user in a specific database. A user then connects directly to the Azure Synapse Analytics dedicated SQL pool where they are prompted to use a username and password to access the service.
+For user accounts that are not part of a Microsoft Entra ID, then using SQL Authentication will be an alternative. In this instance, a user is created in the instance of a dedicated SQL pool. If the user in question requires administrator access, then the details of the user are held in the master database. If administrator access is not required, you can create a user in a specific database. A user then connects directly to the Azure Synapse Analytics dedicated SQL pool where they are prompted to use a username and password to access the service.
 
 This approach is typically useful for external users who need to access the data, or if you are using third party or legacy applications against the Azure Synapse Analytics dedicated SQL pool
 

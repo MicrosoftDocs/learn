@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-security.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure NetApp Files data encryption. 
+  ms.date: 11/18/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+quiz: 
+  questions: 
+  - content: "What is the primary purpose of customer-managed keys for Azure NetApp Files volume encryption?"
+    choices: 
+    - content: "To automate data migration between Azure regions."
+      isCorrect: false
+      explanation: "Incorrect. Customer-managed keys aren't directly involved in automating data migration between Azure regions. These keys primarily focus on providing control and security over data encryption."
+    - content: "To optimize storage performance and throughput."
+      isCorrect: false
+      explanation: "Incorrect. Although customer-managed keys can indirectly contribute to storage performance and throughput by enabling encryption, their primary purpose is to provide control and security over data encryption."
+    - content: "To provide control and security over data encryption."
+      isCorrect: true
+      explanation: "Correct. Customer-managed keys provide greater control and security over data encryption. By managing and controlling the keys used for encryption and decryption, you can ensure data security and comply with your organization's security policies and regulatory requirements."
+    - content: "To enable seamless integration with third-party backup solutions."
+      isCorrect: false 
+      explanation: "Incorrect. Although customer-managed keys can be used with backup solutions, they aren't expressly designed for this purpose. Their primary purpose is to provide control and security over data encryption."
+  - content: "Which of the following is not an option for data-in-transit encryption in Azure NetApp Files?"
+    choices: 
+    - content: DNS 
+      isCorrect: true
+      explanation: "Correct. DNS isn't encrypted in-transit in Azure NetApp files."
+    - content: LDAP encryption
+      isCorrect: false 
+      explanation: "Incorrect. LDAP encryption, NFS Kerberos, and Active Directory security connection are all options for data-in-transit encryption in Azure NetApp Files. DNS isn't encrypted in-transit in Azure NetApp files."
+    - content: NFS Kerberos 
+      isCorrect: false 
+      explanation: "Incorrect. LDAP encryption, NFS Kerberos, and Active Directory security connection are all options for data-in-transit encryption in Azure NetApp Files. DNS isn't encrypted in-transit in Azure NetApp files."
+    - content: Active Directory security connection
+      isCorrect: false 
+      explanation: "Incorrect. LDAP encryption, NFS Kerberos, and Active Directory security connection are all options for data-in-transit encryption in Azure NetApp Files. DNS isn't encrypted in-transit in Azure NetApp files."

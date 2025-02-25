@@ -1,4 +1,4 @@
-You’ve learned that devices are all around us, and that they hold all kinds of personal information. Also, you've seen that cybercriminals will target devices to get their hands on this information. But how do they do this?
+You’ve learned that devices are all around us, and that they hold all kinds of personal information. Also, you've seen that cybercriminals target devices to get their hands on this information. But how do they do this?
 
 ## Devices as threat vectors
 
@@ -13,13 +13,13 @@ Let’s look at the following video to see how devices around us can become thre
 
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPb1R]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5b2b0db5-d332-403e-9565-570c4b03238b]
 
 ## Device vulnerabilities
 
 A device can become compromised because of poor health, either because it doesn't have the latest security updates, or it has weak authentication. If you connect this type of device to a Wi-Fi hotspot—in an airport, for example, it's an easy target for attackers. They know the common vulnerabilities of devices and applications, and how to gain unauthorized access.
 
-After an attacker gains access, they can run scripts to install malware.  In most cases, malware like back doors or botnets can persist on the device even after it's updated. This causes further damage when a user connects the infected device to a work or home network.
+After an attacker gains access, they can run scripts to install malware. In most cases, malware like back doors or botnets can persist on the device even after it's updated. This causes further damage when a user connects the infected device to a work or home network.
 
 Some users want to gain more control of their devices for customization or other purposes, and might resort to *jailbreaking*. This is where a user finds unofficial ways to get full access to the core systems of a device. The device becomes vulnerable because this action might circumvent security measures. This gives cybercriminals the opportunity to provide false guidance or software that compromises the device.
 

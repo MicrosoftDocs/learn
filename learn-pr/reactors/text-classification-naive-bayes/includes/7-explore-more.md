@@ -1,16 +1,18 @@
-Beyond detecting spam, we can use machine learning to explore the SMS data more deeply. To do so, we can use sophisticated, cloud-based cognitive tools such as Azure Cognitive Services.
+Beyond detecting spam, we can use machine learning to explore the SMS data more deeply. To do so, we can use sophisticated, cloud-based cognitive tools such as Azure AI services.
 
-## Azure Cognitive Services
+<a name='azure-ai-services'></a>
+
+## Azure AI services
 
 The advantage of using cloud-based services is that they provide cutting-edge models that you can access without having to train the models. Using better models can help accelerate both your exploration and your use of machine learning.
 
-Azure provides Cognitive Services APIs that can be consumed through Python to conduct image recognition, speech recognition, and text recognition, just to name a few. We're going to take a look at using the Azure Text Analytics API.
+Azure provides Azure AI services APIs that can be consumed through Python to conduct image recognition, speech recognition, and text recognition, just to name a few. We're going to take a look at using the Azure Text Analytics API.
 
-We'll start by obtaining a Cognitive Services API key. Note that you can get a free key for seven days. After that, you'll be required to pay for continued access to the API.
+We'll start by obtaining a Azure AI services API key. Note that you can get a free key for seven days. After that, you'll be required to pay for continued access to the API.
 
-Learn more about [pricing for Cognitive Services](https://azure.microsoft.com/pricing/details/cognitive-services/?azure-portal=true).
+Learn more about [pricing for Azure AI services](https://azure.microsoft.com/pricing/details/cognitive-services/?azure-portal=true).
 
-1. Go to [Try Azure Cognitive Services](https://azure.microsoft.com/try/cognitive-services/?azure-portal=true).
+1. Go to [Try Azure AI services](https://azure.microsoft.com/try/cognitive-services/?azure-portal=true).
 1. Select **Language APIs**.
 1. By **Text Analytics**, select **Get API key**.
 1. In the **Try Cognitive Services for free** window, under **7-day trial**, select **Get stared**.
@@ -55,7 +57,7 @@ The output is:
 928
 ```
 
-Two things that cognitive services, like those provided by Azure, offer are language identification and sentiment analysis. Both are relevant for our dataset, so we'll prepare our data for both by submitting them as JavaScript Object Notation (JSON) documents. We'll prepare the data for language identification first:
+Two things that Azure AI services offer are language identification and sentiment analysis. Both are relevant for our dataset, so we'll prepare our data for both by submitting them as JavaScript Object Notation (JSON) documents. We'll prepare the data for language identification first:
 
 ```python
 # Prepare the header for the JSON document, including your subscription key

@@ -4,11 +4,10 @@ title: Define the Windows Server file system
 metadata:
   title: Define the Windows Server file system
   description: "Define the Windows Server file system"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

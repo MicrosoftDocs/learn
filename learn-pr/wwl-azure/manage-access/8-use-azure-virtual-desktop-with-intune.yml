@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-access.using-azure-virtual-desktop-intune
+title: Using Azure Virtual Desktop with Microsoft Intune
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Using Azure Virtual Desktop with Microsoft Intune
+  description: "Using Azure Virtual Desktop with Microsoft Intune"
+  ms.date: 08/20/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-use-azure-virtual-desktop-with-intune.md)]

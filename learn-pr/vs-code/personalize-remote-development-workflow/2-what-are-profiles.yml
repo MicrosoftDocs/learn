@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.personalize-remote-development-workflow.profiles
+title: What are profiles?
+metadata:
+  title: What are profiles?
+  description: "VS Code profiles let you create sets of customizations and quickly switch between them or share them with others."
+  ms.date: 11/28/2023
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-are-profiles.md)]

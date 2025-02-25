@@ -1,11 +1,11 @@
-In this module, you learned how to create a Java web application, how to use the `Maven Plugin for Azure Web Apps`, and how to deploy your application to Azure App Service.
+In this module, you learned how to create a Tomcat Java web application, use the Maven Plugin for Azure Web Apps, and deploy your application to Azure App Service.
 
 ## Clean up resources
 
-In this module, you created resources using your Azure subscription. You need to clean up these resources so that you won't continue to be charged for them. Run the following command to delete all the resources.
+In this module, you created resources using your Azure subscription. To delete all the resources so you're longer charged for them, use the following command:
 
 ```azurecli
-az group delete --name <name of your resource>
+az group delete --name $RESOURCE_GROUP --yes --no-wait
 ```
 
 ## Other resources
@@ -13,20 +13,20 @@ az group delete --name <name of your resource>
 ### Microsoft Azure-related resources
 
 * [Azure App Service](/azure/app-service/)
-* [Monitor Azure App Service performance](/azure/azure-monitor/app/azure-web-apps?tabs=java)
-* [Quickstart: Get started with Application Insights in a Java web project](/azure/azure-monitor/app/java-get-started?tabs=maven)
-* [Get started with Autoscale in Azure](/azure/azure-monitor/platform/autoscale-get-started)
-* [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?tabs=userlevel)
-* [Integrate your app with an Azure virtual network](/azure/app-service/web-sites-integrate-with-vnet)
-* [Azure App Service Hybrid Connections](/azure/app-service/app-service-hybrid-connections)
-* [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/linux/)
+* [Continuous deployment with custom containers in Azure App Service](/azure/app-service/deploy-ci-cd-custom-container?tabs=acr&pivots=container-linux).
+* [Enable application monitoring in Azure App Service for .NET, Node.js, Python, and Java applications](/azure/azure-monitor/app/azure-web-apps?tabs=java).
+* [Get started with autoscale in Azure](/azure/azure-monitor/platform/autoscale-get-started).
+* [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?tabs=userlevel).
+* [Integrate your app with an Azure virtual network](/azure/app-service/web-sites-integrate-with-vnet).
+* [Azure App Service Hybrid Connections](/azure/app-service/app-service-hybrid-connections).
+* [Azure App Service on Linux pricing](https://azure.microsoft.com/pricing/details/app-service/linux/).
+* [Maven Plugins for Azure Services](https://github.com/microsoft/azure-maven-plugins).
 
 ### Java-related resources
 
-* [W3C: XHTML™ 1.0 The Extensible HyperText Markup Language (Second Edition)](http://www.w3.org/TR/xhtml1/#a_dtd_XHTML-1.0-Transitional)
-* [JavaServer Faces (JSF)](https://projects.eclipse.org/projects/ee4j.faces)
-* [JSF 2.3](https://jakarta.ee/specifications/faces/2.3/)
-* [Expression Language](https://jakarta.ee/specifications/expression-language/3.0/)
+* [W3C: XHTML&trade; 1.0 The Extensible HyperText Markup Language (Second Edition)](http://www.w3.org/TR/xhtml1/#a_dtd_XHTML-1.0-Transitional).
+* [Jakarta Faces](https://projects.eclipse.org/projects/ee4j.faces)
+* [Jakarta Server Faces 2.3](https://jakarta.ee/specifications/faces/2.3/).
+* [Jakarta Expression Language 3.0](https://jakarta.ee/specifications/expression-language/3.0/).
 * [Project Lombok](https://projectlombok.org/)
-* [PrimeFaces](https://www.primefaces.org/documentation/)
-* [Maven Plugin for Azure Web Apps](https://github.com/microsoft/azure-maven-plugins)
+* [PrimeFaces](https://primefaces.github.io/primefaces/7_0/)

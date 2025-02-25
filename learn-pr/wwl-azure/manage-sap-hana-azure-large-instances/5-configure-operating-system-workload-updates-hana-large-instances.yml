@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-sap-hana-azure-large-instances.configure-operating-system-workload-updates-for
 title: Configure operating system and workload updates for SAP HANA on Azure (Large Instances)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure operating system and workload updates for SAP HANA on Azure (Large Instances)
   description: "Configure operating system and workload updates for SAP HANA on Azure (Large Instances)"
   ms.date: 12/08/2021
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

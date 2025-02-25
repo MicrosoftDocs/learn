@@ -1,3 +1,4 @@
+
 This module introduces the static analyzers SonarCloud and CodeQL in GitHub.
 
 ## Learning objectives

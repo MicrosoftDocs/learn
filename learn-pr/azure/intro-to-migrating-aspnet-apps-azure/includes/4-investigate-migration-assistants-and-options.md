@@ -18,19 +18,19 @@ Azure App Service is an HTTP-based service on Azure that you can use to host web
 
 You can use Azure App Service to host your ASP.NET application in an App Service plan. The App Service plan will define a set of compute resources for your ASP.NET application. Think of the compute resources as being similar to an on-premises server farm. The compute resources will consist of VMs that contain the software that's necessary to host your application. This might be a VM running a Windows Server product with IIS hosting the app.
 
-:::image type="content" source="../media/4-web-app-azure.png" alt-text="Web app architecture hosted on Azure with app plan, DNS, resource group, and databases.":::
+:::image type="content" source="../media/4-web-app-azure.png" alt-text="Diagram of web app architecture hosted on Azure with app plan, DNS, resource group, and databases.":::
 
 The app will use other resources as well, such as:
 
 - Networking resources to provide access to the web application through the standard port 80 or HTTPS port 443. Networking also provides options for DNS and public IP addressing configurations.
 - Monitoring and logging options for the service.
-- Access control through Azure Active Directory (Azure AD) and role-based access control (RBAC).
+- Access control through Microsoft Entra ID and role-based access control (RBAC).
 - Other options that are available, depending on your required configuration for the specific application such as database access and the scaling and availability options.
 - A storage option for various files needed to host the application.
 
 ## What is Azure SQL Database?
 
-Azure SQL Database is an intelligent, scalable, relational database service built for the cloud. It's a fully managed SQL database service that manages patching, upgrading, and backups without user intervention. You can select from two deployment models for your Azure SQL database, a single database or an elastic pool.
+Azure SQL Database is an intelligent, scalable, relational database service built for the cloud. It's a fully managed SQL database service that manages patching, upgrading, and backups without user intervention. You can select from two deployment models for your Azure SQL database: a single database or an elastic pool.
 
 ### Single database model
 
@@ -38,9 +38,9 @@ A single database deployment model is similar to a single, contained database in
 
 ### Elastic pool model
 
-The elastic pool is a collection of single databases that share a set of resources such as memory and CPU. If necessary, you can move single databases out of the elastic pool, and move other single databases into the pool.
+The elastic pool is a collection of single databases that share a set of resources, such as memory and CPU. If necessary, you can move single databases out of the elastic pool and move other single databases into the pool.
 
-There are various service tiers and compute sizes that will help customize the Azure SQL Database deployment to your specific application needs. For example, you can start with a single small database to meet your existing needs and help keep costs low. As your application needs grow, you can upgrade the service tier to provide dynamic scalability options to help meet demand on the application and data access. The dynamic scaling allows you to bring on resources to manage the scale when needed and then reduce the scale when demands drop off, which helps keep costs lower.
+There are various service tiers and compute sizes that help customize the Azure SQL Database deployment to your specific application needs. For example, you can start with a single small database to meet your existing needs and help keep costs low. As your application needs grow, you can upgrade the service tier to provide dynamic scalability options to help meet demand on the application and data access. The dynamic scaling allows you to bring on resources to manage the scale when needed and then reduce the scale when demands drop off, which helps keep costs lower.
 
 ### Compare Azure SQL Database with SQL Server
 
@@ -48,35 +48,35 @@ Comparing an on-premises SQL Server database engine with Azure SQL Database can 
 
 With an on-premises SQL Server database engine, you:
 
-- Require your IT department to acquire the server hardware
+- Require your IT department to acquire the server hardware.
 
-- Install the operating system
+- Install the operating system.
 
-- Install the database engine
+- Install the database engine.
 
-- Manage patches
+- Manage patches.
 
-- Configure firewall security
+- Configure firewall security.
 
-- Manage database access
+- Manage database access.
 
-- Manage database backup
+- Manage database backup.
 
-- Manage disaster recovery
+- Manage disaster recovery.
 
-- Perform all the preceding tasks again for new hardware when the compute resources are not enough to meet demand
+- Perform all the preceding tasks again for new hardware when the compute resources are not enough to meet demand.
 
 When you use Azure SQL Database, you:
 
-- Create a database instance on Azure using your chosen deployment model
+- Create a database instance on Azure using your chosen deployment model.
 
-- Migrate your data to the new instance
+- Migrate your data to the new instance.
 
-- Configure the application access
+- Configure the application access.
 
-- Configure scalability options if needed
+- Configure scalability options if needed.
 
-- Enjoy the benefits of a managed environment
+- Enjoy the benefits of a managed environment.
 
 ### Hybrid data scenarios
 
@@ -84,7 +84,7 @@ Azure Hybrid Benefit is a model that helps reduce your licensing costs for runni
 
 This graph demonstrates an example of a SQL Server Enterprise savings.
 
-:::image type="content" source="../media/4-azure-sql-hybrid-savings.png" alt-text="SQL hybrid savings graph depicting enterprise at $3.97 per hour and hybrid at $0.598 per hour. It represents an 85% savings.":::
+:::image type="content" source="../media/4-azure-sql-hybrid-savings.png" alt-text="Graph of SQL hybrid savings, depicting enterprise at $3.97 per hour and hybrid at $0.598 per hour. This represents an 85% savings.":::
 
 ## What are migration assistance tools?
 
@@ -98,11 +98,11 @@ Azure Migrate is a free service provided by Microsoft that discovers, assesses, 
 
 The Azure Migration Assistant is a tool you can use to perform the migration of your ASP.NET application to the cloud. It works alongside the App Service Migration Assistant, which is designed to simplify your migration to the cloud by using a free, simple, and fast solution to migrate ASP.NET applications from on-premises to the cloud. With these tools, you can:
 
-- Assess whether your app is a good candidate for migration by running a scan of its public URL
+- Assess whether your app is a good candidate for migration by running a scan of its public URL.
 
-- Download the Migration Assistant to begin your migration
+- Download the Migration Assistant to begin your migration.
 
-- Use the tool to run readiness checks and a general assessment of your app’s configuration settings, then migrate your app or site to Azure App Service
+- Use the tool to run readiness checks and a general assessment of your app's configuration settings, then migrate your app or site to Azure App Service.
 
 ### What is the Data Migration Assistant?
 
@@ -120,45 +120,45 @@ Key features are:
 
 ## Evaluate your existing environment
 
-A critical step in the migration process is evaluating your existing environment. This will help ensure a smooth transition for your migration scenario, and might also help identify potential issues before, during, and after the migration.
+A critical step in the migration process is evaluating your existing environment. This helps ensure a smooth transition for your migration scenario, and might also help identify potential issues before, during, and after the migration.
 
 ### Inventory the existing environment
 
-Taking an inventory of your existing environment helps to identify the servers, applications, and services that are in scope for the migration. Utilize your IT and business teams that work with those services to help provide guidance, feedback, and support for the migration.
+Taking an inventory of your existing environment helps to identify the servers, applications, and services that are in scope for the migration. Use your IT and business teams that work with those services to help provide guidance, feedback, and support for the migration.
 
-You’ll also want to produce a full inventory and dependency map of servers and services that are in scope for migration. The inventory and map determine how those services communicate with each other. They can help define the online environment needs to ensure a successful migration.
+You'll also want to produce a full inventory and dependency map of servers and services that are in scope for migration. The inventory and map determine how those services communicate with each other. They can help define the online environment needs to ensure a successful migration.
 
 ### Identify required app changes
 
-Your application will likely require changes to make it work correctly after the migration. For example, your ASP.NET application is accessing a database. The database connection string will likely need a change. A benefit to using Azure is the ability to store your database connection string as a secret in the Azure Key Vault.  This protects the authentication parameters in the connection string by "hiding" the connection string behind a secret in the key vault. You can then configure your app to use that secret rather than the connection string directly.
+Your application will likely require changes to make it work correctly after the migration. For example, your ASP.NET application is accessing a database. The database connection string will likely need a change. A benefit to using Azure is the ability to store your database connection string as a secret in the Azure Key Vault. This protects the authentication parameters in the connection string by "hiding" the connection string behind a secret in the key vault. You can then configure your app to use that secret rather than the connection string directly.
 
 ## Estimate costs
 
-A key consideration for any migration scenario is the cost your organization will incur to host the application on Azure. You’ll be moving from a cost model that’s different from a typical on-premises environment. In the Azure environment, you’ll be billed monthly for various consumption costs related to compute, storage, and access costs.
+A key consideration for any migration scenario is the cost your organization will incur to host the application on Azure. You'll be moving from a cost model that's different from a typical on-premises environment. In the Azure environment, you'll be billed monthly for various consumption costs related to compute, storage, and access costs.
 
 The previous unit discussed the Azure Pricing Calculator, which you can use to help evaluate your estimated spend.
 
 ## Evaluate security considerations
 
-Security is, and should be, a top priority in any migration scenario. You might worry about hosting data in an online world, or wonder if your employees will still be able to use their current credentials to access the applications. You’re also concerned about security of data from the perspective of compliance with industry standards. Understanding the options available in Azure can help to address these concerns.
+Security is, and should be, a top priority in any migration scenario. You might worry about hosting data in an online world, or wonder if your employees will still be able to use their current credentials to access the applications. You're also concerned about security of data from the perspective of compliance with industry standards. Understanding the options available in Azure can help to address these concerns.
 
 ### Evaluate security requirements for your app
 
-In an ASP.NET application scenario, where the app needs to access a data store, you need to consider how to secure the database while still allowing access to the web frontend. Azure provides virtual networks to help in this regard. Azure virtual networks can help you:
+In an ASP.NET application scenario where the app needs to access a data store, you need to consider how to secure the database while still allowing access to the web frontend. Azure provides virtual networks to help in this regard. Azure virtual networks can help you:
 
-- Build a hybrid infrastructure that you control
+- Build a hybrid infrastructure that you control.
 
-- Bring your own IP addresses and DNS servers
+- Bring your own IP addresses and DNS servers.
 
-- Secure your connections with an IPsec virtual private network (VPN) or Azure ExpressRoute
+- Secure your connections with an IPsec virtual private network (VPN) or Azure ExpressRoute.
 
-- Get granular control over traffic between subnets
+- Get granular control over traffic between subnets.
 
-- Create sophisticated network topologies using virtual appliances
+- Create sophisticated network topologies using virtual appliances.
 
-- Get an isolated and highly secure environment for your applications
+- Get an isolated and highly secure environment for your applications.
 
-You might also access applications running on-premises using Active Directory for authentication and identity management. Azure AD Connect enables you to integrate your on-premises directories with Azure AD. This means that employees won’t be required to have multiple sets of credentials for authentication.
+You might also access applications running on-premises using Active Directory for authentication and identity management. Microsoft Entra Connect enables you to integrate your on-premises directories with Microsoft Entra ID. This means that employees won't be required to have multiple sets of credentials for authentication.
 
 Similar to taking an inventory of your on-premises environment for apps and hardware, you should also map out your existing security requirements and implementation so that you can perform a proper security assessment for the migration scenario. You want to ensure that a cloud-hosted environment will still meet your organization's security needs.
 

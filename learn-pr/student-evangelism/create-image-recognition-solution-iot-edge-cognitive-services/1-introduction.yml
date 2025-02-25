@@ -2,14 +2,16 @@
 uid: learn.oxford.create-image-recognition-with-azure-iot-edge.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: In this section, we introduce the concept to the learner.
-  ms.date: 02/12/2021
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/1-introduction.md)]
+

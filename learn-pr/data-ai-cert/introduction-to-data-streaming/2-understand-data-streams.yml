@@ -2,13 +2,14 @@
 uid: learn.data-ai.introduction-to-data-streaming.data-streams
 title: Understand data streams
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand data streams
   description: "Understand data streams"
   ms.date: 12/08/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

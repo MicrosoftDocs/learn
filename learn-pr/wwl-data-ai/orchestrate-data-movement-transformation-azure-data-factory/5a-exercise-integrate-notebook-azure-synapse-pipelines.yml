@@ -2,13 +2,14 @@
 uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.exercise-integrate-notebook-azure-synapse-pipelines
 title: Exercise - Integrate a Notebook within Azure Synapse Pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Integrate a Notebook within Azure Synapse Pipelines
   description: "Exercise - Integrate a Notebook within Azure Synapse Pipelines"
   ms.date: 04/19/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 18

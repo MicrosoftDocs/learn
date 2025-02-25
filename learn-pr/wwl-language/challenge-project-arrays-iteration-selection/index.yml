@@ -3,32 +3,37 @@ uid: learn.wwl.challenge-project-arrays-iteration-selection
 metadata:
   title: Challenge project - Develop foreach and if-elseif-else structures to process array data in C#
   description: "Demonstrate your ability to update a console app that implements arrays, foreach loops, and if statements in response to a user requested feature update."
-  ms.date: 03/14/2023
+  ms.date: 02/22/2024
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-challenge-project
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ms.devlang: csharp
 title: Challenge project - Develop foreach and if-elseif-else structures to process array data in C#
 summary: Demonstrate your ability to update a console app that implements arrays, foreach loops, and if statements in response to a user requested feature update.
 abstract: |
   In this module, you'll demonstrate your ability to:
-  - Revise a C# console application that uses nested foreach loops to access array data based on an updated feature specification.
-  - Update the variables and if statements in a C# console application to create the code branches and calculations required to satisfy an updated feature specification.
+  -   Revise a C# console application that uses nested foreach loops to access array data based on an updated feature specification.
+  -   Update the variables and if statements in a C# console application to create the code branches and calculations required to satisfy an updated feature specification.
 prerequisites: |
-  *   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
-  *   Experience using if statements in C# to evaluate an expression and branch code accordingly.
-  *   Experience using a foreach loop to access elements of array variables.
-iconUrl: /training/achievements/generic-badge.svg
+  -   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
+  -   Experience using if statements in C# to evaluate an expression and branch code accordingly.
+  -   Experience using a foreach loop to access elements of array variables.
+iconUrl: /training/achievements/challenge-project-arrays-iteration-selection.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
 - student
 products:
 - dotnet
 - vs-code
 subjects:
-- development-tools
+- app-development
 units:
 - learn.wwl.challenge-project-arrays-iteration-selection.introduction
 - learn.wwl.challenge-project-arrays-iteration-selection.prepare

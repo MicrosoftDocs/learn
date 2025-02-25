@@ -3,11 +3,13 @@ uid: learn.wwl.intro-to-transact-sql
 metadata:
   title: Introduction to Transact-SQL
   description: "Introduction to Transact-SQL"
-  ms.date: 02/13/2023
+  ms.date: 11/22/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: tsql
 title: Introduction to Transact-SQL
 summary: This module provides an introduction to relational databases, the SQL language and Transact-SQL. You'll learn what kinds of statements make up the SQL language and look at the SELECT statement in detail.
 abstract: |
@@ -38,9 +40,11 @@ products:
 - azure-sql-managed-instance
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
+- fabric
 subjects:
 - data-analytics
-- database
+- databases
+- backend-development
 units:
 - learn.wwl.intro-to-transact-sql.introduction
 - learn.wwl.intro-to-transact-sql.work-with-schemas

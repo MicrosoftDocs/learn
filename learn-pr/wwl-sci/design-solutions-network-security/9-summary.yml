@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-network-security.summary
+title: Summary - Design solutions for network security
+metadata:
+  title: Summary - Design solutions for network security
+  description: "Summary of module on: design solutions for network security."
+  ms.date: 09/26/2024
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]

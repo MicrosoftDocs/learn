@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.design-code-with-interfaces
+metadata:
+  title: Design code with interfaces
+  description: "In this module, you'll learn about tightly coupled code and how to avoid it. You'll also learn how interfaces can improve your project by reducing code dependencies and standardizing your code."
+  ms.date: 01/29/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.service: dotnet-csharp
+title: Design code with interfaces
+summary: In this module, you'll learn about tightly coupled code and how to avoid it. You'll also learn how interfaces can improve your project by reducing code dependencies and standardizing your code.
+abstract: |
+  In this module, you will:
+  - Understand how interfaces reduce code dependencies
+  - Identify how interfaces standardize code
+  - Understand tightly coupled code
+  - Learn to plan code design for changes to project scope
+prerequisites: |
+  - Visual Studio Community installed
+  - A GitHub account to clone code repositories
+  - Basic knowledge of the Visual Studio IDE and project structure
+  - Basic understanding of the C# programming language
+  - Familiarity with classes, abstract classes, and inheritance
+iconUrl: /training/achievements/design-code-with-interfaces.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs
+- vs-code
+- vs-ide
+units:
+- learn.wwl.design-code-with-interfaces.introduction
+- learn.wwl.design-code-with-interfaces.understand-tightly-coupled-code
+- learn.wwl.design-code-with-interfaces.exercise-reduce-dependencies-with-interfaces
+- learn.wwl.design-code-with-interfaces.examine-interface-designs
+- learn.wwl.design-code-with-interfaces.exercise-create-design-standard
+- learn.wwl.design-code-with-interfaces.learn-plan-interfaces
+- learn.wwl.design-code-with-interfaces.exercise-challenge-design-readable-items
+- learn.wwl.design-code-with-interfaces.review-solution-design-readable-items
+- learn.wwl.design-code-with-interfaces.knowledge-check
+- learn.wwl.design-code-with-interfaces.summary
+badge:
+  uid: learn.wwl.design-code-with-interfaces.badge

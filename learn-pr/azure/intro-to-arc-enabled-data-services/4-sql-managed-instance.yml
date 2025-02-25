@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-enabled-data-services.4-sql-managed-instance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy a managed database service with Azure Arc-enabled SQL Managed Instance
   description: This unit describes what Azure Arc-enabled SQL Managed instance provides and why it provides a hybrid data solution for SQL applications. This unit also compares the features and management capabilities of Azure Arc-enabled SQL Managed Instance with SQL Server and Azure SQL Managed Instance. This unit also provides more details on the interfaces used with Azure Arc-enabled SQL Managed Instance.
-  ms.date: 06/28/2021
+  ms.date: 03/07/2023
   author: MikeRayMSFT
   ms.author: mikeray
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Deploy a managed database service with Azure Arc-enabled SQL Managed Instance
 durationInMinutes: 10
@@ -60,4 +61,5 @@ quiz:
     - content: "All of the above"
       isCorrect: true
       explanation: "Correct. Azure Data Studio, kubectl, and Azure CLI can all be used to manage an Azure Arc-enabled SQL Managed Instance."
+
 

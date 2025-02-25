@@ -4,11 +4,10 @@ title: Introduction to Microsoft Cybersecurity Reference Architecture and cloud 
 metadata:
   title: Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark
   description: "SC-100 preparatory content on topic: Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark."
-  ms.date: 3/14/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 09/26/2024
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/1-introduction-reference-architecture-benchmark.md)]

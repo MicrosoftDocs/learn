@@ -1,19 +1,20 @@
 GitHub Actions Importer is designed to help you forecast, plan, and facilitate migrations from your current CI/CD tool to GitHub Actions.
 
-Doing individual migrations is relatively easy in isolation. However, if you have a large and established CI/CD footprint, having a tool capable to assist with migrations is key to your ability to adopt GitHub Actions at scale.
+Doing individual migrations is relatively easy in isolation. However, if you have a large and established CI/CD footprint, having a tool that can assist with migrations is key to your ability to adopt GitHub Actions at scale.
 
 ## Learning objectives
 
-In this module you will:
+In this module, you:
 
-- Learn about the two distinct phases of a GitHub Actions Importer migration and the phases' associated commands
-- Run through a mock migration lab exercise for one of the supported CI/CD platforms
+- Learn about the two distinct phases of a GitHub Actions Importer migration and the phases' associated commands.
+- Run through a mock migration lab exercise for one of the supported CI/CD platforms.
 
 ## Prerequisites
 
 - A GitHub account
-- Prior working knowledge of GitHub Actions
+- Previous working knowledge of GitHub Actions
 - Organizational access to one of the supported CI/CD platforms
+- Ability to execute the accompanying labs exercises within Codespaces
 
 ## Important notes
 
@@ -25,11 +26,11 @@ As you learn from this module, you can use GitHub Actions Importer to plan and a
 - Jenkins
 - Travis CI
 
-It's imperative to review every workflow that is converted by the GitHub Actions Importer for correctness before using it as a production workload.
+It's imperative to review every workflow that the GitHub Actions Importer converts for correctness before using it as a production workload.
 
-The goal is to achieve an 80% conversion rate for every workflow, but like all things, the actual conversion rate depends on your specific makeup of your pipelines.
+The goal is to achieve an 80% conversion rate for every workflow. However, like all things, the actual conversion rate depends on your specific makeup of your pipelines.
 
-To set expectations, it's important to note that there are a couple of things that won't be automatically migrated when you use GitHub Actions Importer.
+To set expectations, remember that some things aren't automatically migrated when you use GitHub Actions Importer.
 
 ### What *isn't* automatically migrated
 

@@ -1,0 +1,7 @@
+In this module, you have learned about document intelligence, an AI capability that uses machine learning models to extract text from forms. This process, known as document analysis, involves identifying the location of text on a page using bounding box coordinates. The module also discussed the challenges posed by the diverse formats of forms and documents, which often require different machine learning models. You also learned about the potential benefits of automating this process, such as enhancing operations, customer experiences, and decision making.
+
+The main takeaways from this module include understanding the features offered by Azure AI Document Intelligence, which are grouped by model type: Document Analysis, Prebuilt Models, and Custom Models. Document Analysis provides structured data representations, while Prebuilt Models are designed to process common document types. Custom Models can be trained to identify specific fields not included in the existing models. The module focused on Prebuilt Models, which use advanced machine learning to extract text, key-value pairs, tables, and structures from various documents. To use Azure AI Document Intelligence, a Document Intelligence or Azure AI services resource needs to be created in your Azure subscription.
+
+## Learn more
+
+Read more about Azure AI Document Intelligence in the [service documentation](https://azure.microsoft.com/products/ai-services/ai-document-intelligence).

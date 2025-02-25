@@ -5,7 +5,7 @@ One of the primary benefits of the virtualization is the ability to transition V
 Live Migration is a Hyper-V feature which allows you to seamlessly move running VMs from one Hyper-V host to another while maintaining the availability of VM workloads. The primary benefit of live migration is the resulting flexibility. For example, you can decommission or upgrade a Hyper-V host on an as needed basis, without having to schedule a maintenance window, by simply live migrating all of its VMs.
 
 > [!NOTE]
-> Windows Server supports shared-nothing live migrations, which doesn't depend on shared storage or failover clustering. Instead, the migration traffic traverses the network connection between the source and target Hyper-V hosts.
+> Windows Server supports shared-nothing live migrations, which don't depend on shared storage or failover clustering. Instead, the migration traffic traverses the network connection between the source and target Hyper-V hosts.
 
 ## Implement Hyper-V Live Migration
 
@@ -55,10 +55,4 @@ The main steps in the process are:
 1. Create a highly available VM. Use Failover Cluster Manager to create a highly available VM.
 1. Perform Live Migration of a highly available VM. Use Failover Cluster Manager to perform Live Migration of a highly available VM.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MHJM]
-
----
-
-
-
----
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=bb519e49-4138-4f4a-96cf-8dd66b51a8ba]

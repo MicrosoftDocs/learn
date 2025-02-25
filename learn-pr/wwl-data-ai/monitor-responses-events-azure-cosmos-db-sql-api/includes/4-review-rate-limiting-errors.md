@@ -6,11 +6,13 @@ When provisioned throughput is used, the request units per second (RU/s) is set 
 
 Request rate is large is the most common reason for a 429 exception. Review occurrences of this exception in the Azure Cosmos DB Insight report **Total Request by Status Code** under the *Request* tab. Review what is the percentage of 429 exceptions vs. successful requests against your database. 
 
-While you could see 429 exceptions in your charts, note that many applications are designed to retry one or more times if this type of exception is encountered. So it's possible your applications could be managing the throttling without returning any errors.
+By default, the Azure Cosmos DB SDK will retry 429 exceptions 10 times before returning a 429 exception to your application. When the SDK retries are exceeded, the error is returned to your application. Ideally inspecting the **x-ms-retry-after-ms** header in the response can be used as a hint to decide how long to wait before retrying the request. Another alternative would be an exponential back-off algorithm or configuring the client to extend the retries on 429 exceptions.
 
 No action should be required, if your analysis of the chart determines that 1-5% of the workload requests are generating a 429 exception, and end-to-end latency is acceptable. This small percentage of exceptions is a healthy sign of RU/s utilization.
 
 However, if the percentage of 429 exceptions is higher than 5%, it's possible the exceptions are caused by a hot partition. If a relative small number of logical partition keys consume a much larger amount of the total request units per second, that can create a hot partition. Hot partitions can cause 429 exceptions by not distributing the throughput across multiple partitions better. 
+
+In addition to the percentage of 429 exceptions to monitor, another key metric to monitor along with these is average request latency. When the service, or your application, retries requests due to 429 exceptions, latency increases as operations have to wait to complete. If this gets too high for the application to tolerate, increasing throughput for a container may be needed to handle the volume of concurrent operations if the cause is not due to hot partitions.
 
 To determine if we have a hot partition, review the Azure Cosmos DB insight report **Normalized RU Consumption (%) By PartitionKeyRangeID** under the *Throughput* tab. In this report, the *PartitionKeyRangeID* identifies each physical partition. Any physical partition that is identified with a significant higher consumption on this chart, could be a hot partition. It's especially true if that physical partition stays at 100% constantly, while the other physical partitions remain at much lower percentages almost all of the time.
 
@@ -27,7 +29,7 @@ AzureDiagnostics
 ```
 
 Some possible solutions to this type of 429 exception are:
-- If it's determined that the 429 exceptions occur because of a hot partition, consider changing the partition key. 
+- If it's determined that the 429 exceptions occur because of a hot partition, consider changing the partition key. This can be accomplished by migrating the data to a new container with a new partition key. See the documentation for options on how to do this.
 - If the exceptions aren't caused by a hot partition, increasing the RU/s on the container might be the solution.
 - If the exceptions occur on query document requests, troubleshoot the queries with high RU charge.
 
@@ -41,8 +43,8 @@ If this type of request causes 429 exceptions, increasing the provisioned RU/s i
 
 Possible solutions for 429 exceptions caused by metadata requests are:
 - Consider implementing a backoff policy to perform the metadata requests at a lower rate.
-- Use a single DocumentClient instance for the lifetime of your application
--  Cache the names of the databases and containers.
+- Use a single CosmosClient instance for the lifetime of your application.
+- Cache the names of the databases and containers within your application.
 
 ## Rate-limiting due to transient service error
 

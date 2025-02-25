@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explain-control-system-helps-manage-files.describe-version-control-source-control
+title: Describe version control and source control
+metadata:
+  title: Describe version control and source control
+  description: "Describe version control and source control"
+  ms.date: 05/20/2024
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-describe-version-control-source-control.md)]
+interactive: bash

@@ -1,5 +1,3 @@
-
-
 In addition to assessing and addressing problems with their hybrid environment's security configuration, Contoso must also monitor for new problems and threats, and respond appropriately. Azure Sentinel is both a SIEM and SOAR solution that's designed for hybrid environments.
 
 > [!NOTE]
@@ -21,19 +19,19 @@ To enable Sentinel, you'll need:
 - A **Log Analytics** workspace.
 
     > [!TIP]
-    > Sentinel can't use the same **Log Analytics** workspace as Security Center.
+    > Sentinel can't use the same **Log Analytics** workspace as Microsoft Defender for Cloud.
 
 - Contributor permissions or greater in the subscription and workgroup for your Sentinel workspace.
 - Appropriate permissions on any resources that you connect to Sentinel.
 
 ### Data connections
 
-Sentinel can connect natively to Security Center, providing coverage for your cloud and on-premises servers. In addition, Sentinel data connection support includes:
+Sentinel can connect natively to Microsoft Defender for Cloud, providing coverage for your cloud and on-premises servers. In addition, Sentinel data connection support includes:
 
 - Native service-to-service connections. Sentinel integrates natively to these Azure and non-Azure services:
   - Azure activity logs
-  - Azure AD audit logs
-  - Azure AD Identity Protection
+  - Microsoft Entra audit logs
+  - Microsoft Entra ID Protection
   - Azure Advanced Threat Protection (Azure ATP)
   - AWS CloudTrail
   - Microsoft Cloud App Security
@@ -78,15 +76,10 @@ To implement Sentinel:
 2. On the Azure Sentinel workspaces blade, select **Connect workspace**, and then choose the appropriate workspace.
 3. Select **Add Azure Sentinel**. The workspace is modified to include Sentinel.
 4. On the **Azure Sentinel** blade, in **News & guides**, select the **Get started** tab.
-
-    [![A screenshot of the Azure Sentinel blade. The administrator has selected the News & guides page, Get started tab.](../media/m1-sentinel.png)](../media/m1-sentinel.png#lightbox)
-
 5. Select **Connect** to begin collecting data.
-6. Select the appropriate connector. For example, select **Azure Security Center**.
+6. Select the appropriate connector. For example, select **Microsoft Defender for Cloud**.
 7. Select **Open connector page**.
 8. Review the prerequisite information, and when ready, select **Connect**.
-
-    [![A screenshot of the Azure Sentinel Data connectors blade. The administrator has selected the Instructions tab.](../media/m1-sentinel-2.png)](../media/m1-sentinel-2.png#lightbox)
 
 ## What is SIEM?
 
@@ -94,7 +87,7 @@ SIEM solutions store and analyze log data that comes from external sources. You 
 
 Sentinel uses built-in and custom detections to alert you to potential security threats&mdash;for example, attempts to access Contoso's organization from outside their infrastructure or when data from Contoso appears to be sent to a known malicious IP address. It also enables you to create incidents based on these alerts.
 
-Sentinel provides you with built-in and custom workbooks to help you analyze incoming data. *Workbooks* are interactive reports that include log queries, text, metrics, and other data. Microsoft incident creation rules enable you to create incidents from alerts that other services such as Azure Security Center generate.
+Sentinel provides you with built-in and custom workbooks to help you analyze incoming data. *Workbooks* are interactive reports that include log queries, text, metrics, and other data. Microsoft incident creation rules enable you to create incidents from alerts that other services such as Microsoft Defender for Cloud generate.
 
 To implement SIEM functionality in Sentinel:
 

@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.azure.azure-netapp-files-quotas
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  moduleType: introduction        
+  title: Understand quotas in Azure NetApp Files 
+  description: Learn how to manage and monitor capacity in Azure NetApp Files.   
+  ms.date: 11/26/2024
+  author: b-ahibbard   
+  ms.author: anfdocs           
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Understand quotas in Azure NetApp Files   
+summary: Learn the essentials of quotas and capacity management in Azure NetApp Files.  
+abstract: |
+  By the end of this module, you'll be able to describe the following: 
+  - Describe volume quota for Azure NetApp Files  
+  - Manage and monitor Azure NetApp Files capacity consumption 
+  - Classify default and individual user and group quotas for Azure NetApp Files   
+  - Use large volumes on Azure NetApp Files
+prerequisites: |
+  - Basic understanding of Azure NetApp Files 
+iconUrl: /training/achievements/introduction-to-azure-netapp-files.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+  - azure-virtual-machines
+subjects:
+- cloud-computing
+- storage
+- migration
+units:
+- learn.azure.azure-netapp-files-quotas.introduction
+- learn.azure.azure-netapp-files-quotas.capacity-management
+- learn.azure.azure-netapp-files-quotas.regional-capacity
+- learn.azure.azure-netapp-files-quotas.user-group-quotas
+- learn.azure.azure-netapp-files-quotas.large-volumes
+- learn.azure.azure-netapp-files-quotas.knowledge-check
+- learn.azure.azure-netapp-files-quotas.summary
+badge:
+  uid: learn.azure.azure-netapp-files-quotas.badge
+

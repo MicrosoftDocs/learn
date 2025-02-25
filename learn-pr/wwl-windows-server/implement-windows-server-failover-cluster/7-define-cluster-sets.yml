@@ -4,11 +4,10 @@ title: Define cluster sets
 metadata:
   title: Define cluster sets
   description: "Define cluster sets"
-  ms.date: 09/28/2021
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

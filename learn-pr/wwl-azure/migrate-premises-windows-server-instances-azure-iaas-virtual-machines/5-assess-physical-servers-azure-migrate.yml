@@ -4,11 +4,11 @@ title: Assess physical servers with Azure Migrate
 metadata:
   title: Assess physical servers with Azure Migrate
   description: "Assess physical servers with Azure Migrate"
-  ms.date: 09/24/2020
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.contributors: orthomas-08152023
 azureSandbox: false
 durationInMinutes: 6
 content: |
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Install the dependency agents on each on-premises VM, install the collector appliance, edit the default properties of an assessment, and then create the assessment."
       isCorrect: false
-      explanation: "That's incorrect. Download and install the collector appliance first, and then install the dependency agents. You can't change the properties of an assessment until one has been created."
+      explanation: "Incorrect. Download and install the collector appliance first, and then install the dependency agents. You can't change the properties of an assessment until one has been created."
     - content: "Install the dependency agents on each on-premises VM, install the collector appliance, create the assessment, and then edit the default properties of the assessment to your requirements."
       isCorrect: false
-      explanation: "That's incorrect. Download and install the collector appliance first, and then install the dependency agents."
+      explanation: "Incorrect. Download and install the collector appliance first, and then install the dependency agents."
     - content: "Install the collector appliance, install the dependency agents on each on-premises VM, create the assessment, and then edit the default properties of the assessment to your requirements."
       isCorrect: true
-      explanation: "That's correct. Remember that installing the dependency agents is optional. Also, you don't need to edit the assessment properties if the defaults are sufficient."
+      explanation: "Correct. Remember that installing the dependency agents is optional. Also, you don't need to edit the assessment properties if the defaults are sufficient."

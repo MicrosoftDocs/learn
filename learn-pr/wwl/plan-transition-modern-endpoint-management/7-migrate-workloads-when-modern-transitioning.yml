@@ -2,13 +2,14 @@
 uid: learn.wwl.plan-transition-modern-endpoint-management.migrate-workloads-when-modern-transitioning
 title: Migrate workloads when modern transitioning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate workloads when modern transitioning
   description: "Migrate workloads when modern transitioning"
-  ms.date: 04/05/2023
+  ms.date: 05/12/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/7-migrate-workloads-when-modern-transitioning.md)]

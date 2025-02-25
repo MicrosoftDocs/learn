@@ -4,11 +4,10 @@ title: Visual accessibility fundamentals
 metadata:
   title: Visual accessibility fundamentals
   description: This content is part of the Introduction to Gaming and Disability module.
-  ms.date: 11/01/2021
+  ms.date: 10/09/2024
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
-  ms.prod: learning-gaming-accessibility
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/3-visual-accessibility.md)]
@@ -19,7 +18,7 @@ quiz:
     choices:
     - content: "An onscreen countdown clock graphic that also announces the number of seconds left aloud through audio channels."
       isCorrect: false
-      explanation: "Incorrect. By representing the countdown timer both audibly and visually, a visual barrier is more likely to be avoided."
+      explanation: "Incorrect. When the countdown timer is represented both audibly and visually, a visual barrier is more likely to be avoided."
     - content: "A game represents incoming enemy damage with a red halo onscreen, and an audio cue of the character grunting."
       isCorrect: false
       explanation: "Incorrect. By representing enemy damage both audibly and visually, a visual barrier is more likely to be avoided."
@@ -41,7 +40,7 @@ quiz:
     choices:
     - content: "So developers can use this awareness to immediately implement changes in their games."
       isCorrect: true
-      explanation: "Correct. Awareness of differing player experiences shouldn't be used to make immediate development decisions. This awareness is intended to drive developer's understanding of accessibility as an effort that can't be achieved with a one-size-fits-all approach. It's intended to encourage developers to collaborate with players who have lived experiences with accessibility barriers to inform effective accessibility solutions."
+      explanation: "Correct. Awareness of differing player experiences shouldn't be used to make immediate development decisions. This awareness is intended to drive developer's understanding of accessibility as an effort that can't be achieved with a one-size-fits-all approach. The intent is to encourage developers to collaborate with players who have these lived experiences with accessibility barriers to inform effective accessibility solutions."
     - content: "To drive awareness of the fact that game accessibility isn't a one-size-fits-all approach."
       isCorrect: false
       explanation: "Incorrect. This option is a reason that developers should have an awareness of diverse player experiences. Without an awareness of diverse player needs and experiences, gaming experiences and products might ship without addressing the needs of large groups of players."

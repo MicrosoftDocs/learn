@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.philanthropies.explore-ai-basics
+metadata:
+  author: yoosunee
+  ms.author: anruss
+  ms.date: 01/14/2025
+  title: "AI Fluency: Explore AI basics" 
+  description: Discover the world of artificial intelligence by exploring its foundational concepts and history. Learn how AI technology powers everyday items and transforms your daily life. 
+  ms.topic: module
+  ms.service: artificial-intelligence
+  moduleType: standard
+  ms.collection: philanthrpies-ai-copilot
+title: Explore AI basics
+summary: Discover the world of artificial intelligence by exploring its foundational concepts and history. Learn how AI technology powers everyday items and transforms your daily life.
+abstract: |
+  By completing this module, you'll be able to:
+  - Evaluate the concepts of AI, machine learning, and deep learning by comparing their definitions, applications, and interconnections.
+  - Evaluate the effectiveness of different AI algorithms in solving specific real-world problems by accurately identifying and justifying the most appropriate algorithm for a given scenario.
+  - Assess the historical milestones in the development of AI and determine which milestone most significantly contributed to the practical applications of AI in everyday life. 
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+- ai-engineer
+- technology-manager
+- solution-architect
+products:
+- azure
+units:
+- learn.philanthropies.explore-ai-basics.introduction
+- learn.philanthropies.explore-ai-basics.ai-history
+- learn.philanthropies.explore-ai-basics.what-is-artificial-intelligence
+- learn.philanthropies.explore-ai-basics.data-everywhere
+- learn.philanthropies.explore-ai-basics.understand-machine-learning
+- learn.philanthropies.explore-ai-basics.deep-learning
+- learn.philanthropies.explore-ai-basics.natural-language-processing
+- learn.philanthropies.explore-ai-basics.ai-algorithms
+- learn.philanthropies.explore-ai-basics.ai-in-action
+- learn.philanthropies.explore-ai-basics.knowledge-check
+- learn.philanthropies.explore-ai-basics.summary
+badge:
+  uid: learn.philanthropies.explore-ai-basics-badge

@@ -16,7 +16,7 @@ The business model for IT software has evolved over the years into the following
 The following video discusses the evolution of these models with examples:
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4q0el]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=46234eb4-bf99-4a1e-b81e-91fc6d9c6d2b]
 
 ## Reduce capital expenditure
 

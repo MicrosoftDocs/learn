@@ -2,15 +2,17 @@
 uid: learn.intro-to-azure-cloud-shell.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
-  description: In this unit, you'll review what you have learned about Azure Cloud Shell.
-  ms.date: 08/05/2022
+  description: In this unit, you review what you learned about Azure Cloud Shell.
+  ms.date: 04/09/2024
   author: vrapolinario
   ms.author: viniap
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

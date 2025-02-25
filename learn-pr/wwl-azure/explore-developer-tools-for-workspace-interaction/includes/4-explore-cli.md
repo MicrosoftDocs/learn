@@ -24,7 +24,6 @@ You can install the Azure CLI on a Linux, Mac, or Windows computer. With the Azu
 
 After you've installed the Azure CLI, or set up the Azure Cloud Shell, you need to install the Azure Machine Learning extension to manage Azure Machine Learning resources using the Azure CLI.
 
-### Install on Windows
 You can install the Azure Machine Learning extension `ml` with the following command:
 
 ```azurecli

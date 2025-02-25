@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-government-its-structure.describe-office-of-management-budget-omb
 title: Describe the Office of Management and Budget (OMB)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the Office of Management and Budget (OMB)
   description: "Describe the Office of Management and Budget (OMB)"
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

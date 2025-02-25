@@ -3,11 +3,11 @@ uid: learn.wwl.what-is-azure-defender
 metadata:
   title: Plan for cloud workload protections using Microsoft Defender for Cloud
   description: "Plan for cloud workload protections using Microsoft Defender for Cloud"
-  ms.date: 02/22/2023
+  ms.date: 02/10/2025
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: defender-for-cloud
 title: Plan for cloud workload protections using Microsoft Defender for Cloud
 summary: Learn the purpose of Microsoft Defender for Cloud and how to enable the system.
 abstract: |

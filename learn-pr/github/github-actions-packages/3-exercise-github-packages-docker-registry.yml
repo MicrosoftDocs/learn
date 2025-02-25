@@ -4,11 +4,10 @@ title: Exercise - Publish to a GitHub Packages registry
 metadata:
   title: Exercise - Publish to a GitHub Packages registry
   description: Learn how to set up a CI pipeline that will build and push a container image into GitHub Packages
-  ms.date: 09/30/2021
+  ms.date: 11/26/2023
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 25
 azureSandbox: false
 content: |

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.observability-continuous-improvement.build-observability-platform-architecture
+title: Build Observability into Platform Architecture
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Build Observability into Platform Architecture
+  description: "Build Observability into Platform Architecture"
+  ms.date: 01/14/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-build-observability-platform-architecture.md)]

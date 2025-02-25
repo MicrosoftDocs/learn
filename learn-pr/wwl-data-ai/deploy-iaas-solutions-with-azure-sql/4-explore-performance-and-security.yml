@@ -2,13 +2,14 @@
 uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.explore-performance-and-security
 title: Explore performance and security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore performance and security
   description: "Explore performance and security"
-  ms.date: 12/22/2022
-  author: wwlpublish
+  ms.date: 02/18/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 13

@@ -4,20 +4,20 @@ metadata:
   moduleType: standard
   title: Write multi-table queries by using Kusto Query Language
   description: Learn how to write Kusto Query Language (KQL) queries to combine and retrieve data from two or more tables by using the `lookup`, `join`, and `union` operators.
-  ms.date: 10/04/2022
+  ms.date: 01/03/2024
   author: shsagir
   ms.author: shsagir
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: kusto
 title: Write multi-table queries by using Kusto Query Language
-summary: Write advanced queries in Kusto Query Language to gain deeper insights by combining data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and the new aggregation functions `arg_min` and `arg_max`. You'll also communicate these results visually in charts.
+summary: Write advanced queries in Kusto Query Language to gain deeper insights by combining data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and the new aggregation functions `arg_min` and `arg_max`. Also, learn how to communicate these results visually in charts.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Use Kusto Query Language to combine and retrieve data from two or more tables by using the `lookup`, `join`, and `union` operators.
     - Optimize multi-table queries by using the `materialize` operator to cache table data.
     - Enrich your insights by using the new aggregation functions `arg_min` and `arg_max`.
 prerequisites: |
-  - A Microsoft account, an Azure Active Directory user identity to create a free cluster, or an Azure account
+  - A Microsoft account, a Microsoft Entra user identity to create a free cluster, or an Azure account
   - Familiarity with database structures such as tables, columns, and rows
   - Familiarity with Kusto Query Language operators such as `project`, `where`, `sort`, `summarize`, and `let`
 iconUrl: /learn/achievements/multi-table-queries-with-kusto-query-language.svg

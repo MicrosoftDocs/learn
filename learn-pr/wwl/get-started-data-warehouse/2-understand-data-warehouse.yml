@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-warehouse.understand-data-warehouse
+title: Understand data warehouse fundamentals
+metadata:
+  title: Understand data warehouse fundamentals
+  description: "Understand data warehouse fundamentals"
+  ms.date: 01/10/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-understand-data-warehouse.md)]

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.purview-create-manage-insider-risk-policy
+metadata:
+  title: Create and manage Insider Risk Management policies
+  description: "Create and manage Insider Risk Management policies."
+  ms.date: 1/3/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Create and manage Insider Risk Management policies
+summary: Create and manage Microsoft Purview Insider Risk Management policies to detect and address potential insider risks while supporting organizational security and privacy.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain the purpose of policy templates.
+  - Identify when to use quick or custom policies.
+  - Create quick policies for common scenarios.
+  - Build and configure custom policies for specific risks.
+  - Update and manage policies as organizational needs change.
+prerequisites: |
+  - Familiarity with Microsoft Purview compliance solutions.
+  - Basic understanding of insider risks and organizational security policies.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.purview-create-manage-insider-risk-policy.introduction
+- learn.wwl.purview-create-manage-insider-risk-policy.policy-templates
+- learn.wwl.purview-create-manage-insider-risk-policy.compare-quick-custom-policies
+- learn.wwl.purview-create-manage-insider-risk-policy.create-custom-insider-risk-policy
+- learn.wwl.purview-create-manage-insider-risk-policy.manage-insider-risk-policy
+- learn.wwl.purview-create-manage-insider-risk-policy.knowledge-check
+- learn.wwl.purview-create-manage-insider-risk-policy.summary
+badge:
+  uid: learn.wwl.purview-create-manage-insider-risk-policy.badge

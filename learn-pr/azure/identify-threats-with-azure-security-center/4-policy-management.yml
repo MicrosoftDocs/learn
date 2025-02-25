@@ -6,9 +6,8 @@ metadata:
   description: Centralized policy management with Microsoft Defender for Cloud
   ms.date: 03/23/2022
   author: elazark
-  ms.author: memildin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: dacurwin
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-policy-management.md)]

@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-significant-government-strategy-actions.describe-federal-cloud-computing-strategy-of-2011
 title: Describe the Federal Cloud Computing Strategy of 2011
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the Federal Cloud Computing Strategy of 2011
   description: "Describe the Federal Cloud Computing Strategy of 2011"
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

@@ -2,13 +2,14 @@
 uid: learn.azure.move-azure-resources-to-another-resource-group.assess-resources
 title: Assess resources that can move
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Assess resources that can move
   description: Assess resources that can move
-  ms.date: 12/23/2019
-  author: tfitzmac
-  ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/18/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-assess-resources.md)]
@@ -17,9 +18,9 @@ quiz:
   questions:
   - content: Which one of these resource types can't be moved between resource groups?
     choices:
-    - content: Azure Active Directory Domain Services
+    - content: Microsoft Entra Domain Services
       isCorrect: true
-      explanation: According to the move operation support list, Azure AD DS can't be moved. 
+      explanation: According to the move operation support list, Microsoft Entra Domain Services can't be moved. 
     - content: Azure Storage accounts
       isCorrect: false
       explanation: According to the move operation support list, Azure Storage accounts can be moved.
@@ -48,3 +49,4 @@ quiz:
     - content: You can move virtual machines, but you have to first make sure that you can remove any SSD disks before attempting to move them. 
       isCorrect: false
       explanation: You can move virtual machines, regardless of whether the virtual machine has SSD or HDD disks attached. 
+

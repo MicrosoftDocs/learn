@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.connect-microsoft-services-to-azure-sentinel.connect-office-365-connector
-title: Connect the Microsoft Office 365 connector
+title: Connect the Microsoft 365 connector
 metadata:
-  title: Connect the Microsoft Office 365 connector
-  description: "Connect the Microsoft Office 365 connector"
-  ms.date: 07/11/2022
+  title: Connect the Microsoft 365 connector
+  description: "Connect the Microsoft 365 connector"
+  ms.date: 01/13/2025
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

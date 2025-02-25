@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-implement-manage-retention.declare-record
+title: Declare records by using retention labels
+metadata:
+  title: Declare records by using retention labels
+  description: "Declare records by using retention labels."
+  ms.date: 07/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/declare-record.md)]

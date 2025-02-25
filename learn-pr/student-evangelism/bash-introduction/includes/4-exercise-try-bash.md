@@ -1,6 +1,6 @@
 On your own Linux computer, you can run Bash commands locally. If you have access to Linux servers, you can remote in to them and run Bash commands there. But nobody wants to experiment on a live production system, particularly on their first day at Northwind.
 
-In this unit, you'll use Azure Cloud Shell on the right as your Linux terminal. Azure Cloud Shell is a shell you can access through the Azure portal or at <https://shell.azure.com>. You don't have to install anything on your PC or laptop to use it.
+In this unit, you use Azure Cloud Shell on the right as your Linux terminal. Azure Cloud Shell is a shell you can access through the Azure portal or at <https://shell.azure.com>. You don't have to install anything on your PC or laptop to use it.
 
 ## Familiarize yourself with Cloud Shell
 
@@ -21,7 +21,7 @@ First, let's explore what's in Cloud Shell by using the Bash commands we've lear
 
     **clouddrive** is a subdirectory of your current directory. It's a mounted file share that persists if you're using Cloud Shell on your own account. Right now, you're using it on the Microsoft Learn sandbox.
 
-1. But wait, what *is* the current directory? Let's use the `pwd` command to find out. `pwd` stands for "print working directory." It prints out the long-form path to what directory you're in now.
+1. But wait, what *is* the current directory? Let's use the `pwd` command to find out. `pwd` stands for "print working directory." It prints the long-form path to what directory you're in now.
 
     ```bash
     pwd
@@ -42,7 +42,7 @@ First, let's explore what's in Cloud Shell by using the Bash commands we've lear
     ls -a
     ```
 
-1. Whoa! That output showed us a lot more stuff in this directory than we initially thought.
+1. That output showed us a lot more stuff in this directory than we initially thought.
 
     ```output
     yourname@Azure:~$ ls -a
@@ -51,9 +51,9 @@ First, let's explore what's in Cloud Shell by using the Bash commands we've lear
 
 1. What were all of those files and subdirectories? Some are behind-the-scenes files to make Cloud Shell work. Let's discuss a few of the others.
 
-    - `.` refers to your current directory, and `..` refers to your parent directory. Wherever you are, if you print all hidden files and directories, you'll see `.` and `..` printed.
-    - `.bash_history` is a special Bash file where all commands that you enter into the shell are stored. Bash remembers your command history, which, as we'll see later, is useful.
-    - `.bash_logout` is another special Bash file that is read and run every time a login shell exists. Linux superusers can modify it to customize your environment.
+    - `.` refers to your current directory, and `..` refers to your parent directory. Wherever you are, if you print all hidden files and directories, you see `.` and `..` printed.
+    - `.bash_history` is a special Bash file where all commands that you enter into the shell are stored. Bash remembers your command history, which, as we see later, is useful.
+    - `.bash_logout` is another special Bash file that is read and run every time a sign-in shell exists. Linux superusers can modify it to customize your environment.
     - `.bashrc` is an important Bash configuration file that runs whenever you start a new shell. If you decide to open this file to look at it, be careful about making changes, because they can have unintended consequences.
 
 ## Recall your history and autocomplete commands
@@ -82,7 +82,7 @@ Fortunately, Bash offers a couple pieces of functionality to help you.
 
 1. Rather than entering the whole thing again to correct your mistake, you can recall previously entered commands by using the **Up arrow** and **Down arrow** keys. Try using the **Up arrow** key to bring back your incorrect command. Then use the **Left arrow key** to fix it by replacing the final `3` with a `2`. Select **Enter** again to submit the corrected command.
 
-    Using the **Up arrow** key multiple times in a row will move you back multiple commands. Use the **Down arrow** key to move to later commands.
+    Using the **Up arrow** key multiple times in a row moves you back multiple commands. Use the **Down arrow** key to move to later commands.
 
 1. Now you should see something like the following output. It lets you know that your command worked correctly to list files that matched the given pattern.
 
@@ -115,16 +115,16 @@ Let's say you want to read the contents of one of the files that you just found.
     cat .azure/
     ```
 
-    Keep typing the beginnings of words and using **Tab** to autocomplete. Keep in mind that if there's an ambiguity, Bash will not fill in anything. You can select **Tab** twice to have Bash print out all the files and directories in a given path that match the letters you've typed already.
+    Keep typing the beginnings of words and using **Tab** to autocomplete. Keep in mind that if there's an ambiguity, Bash won't fill in anything. You can select **Tab** twice to have Bash print all the files and directories in a given path that match the letters you typed already.
 
-1. Play around until you've gotten to a real **.log** file in the command directory. Then select **Enter** to use the `cat` command to print its contents to screen. It might look something like this:
+1. Play around until you get to a real **.log** file in the command directory. Then select **Enter** to use the `cat` command to print its contents to screen. It might look something like this:
 
     ```output
     CMD-LOG-LINE-BEGIN 103 | 2020-01-29 21:56:35,426 | INFO | az_command_data_logger | command args: login --identity
     CMD-LOG-LINE-BEGIN 103 | 2020-01-29 21:56:37,604 | INFO | az_command_data_logger | exit code: 0
     ```
 
-    Keep in mind that if you've typed an incorrect letter already, Bash will not be able to correctly guess what letter you meant to type.
+    Keep in mind that if you've typed an incorrect letter already, Bash won't be able to correctly guess what letter you meant to type.
 
 ## Use `man`
 

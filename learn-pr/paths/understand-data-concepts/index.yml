@@ -2,32 +2,29 @@
 uid: learn.wwl.understand-data-concepts
 metadata:
   title: Understand data concepts
-  description: Understand data concepts
-  ms.date: 09/16/2022
+  description: Data is key to most business operations and services and an understanding of data is essential in many roles. This learning path covers data concepts, data analytics, and data roles, services, and products.
+  ms.date: 02/18/2025
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Understand data concepts
 prerequisites: |
-  - You should be familiar with basic computing concepts and terminology.
+  -   You should be familiar with basic computing concepts and terminology.
 summary: |
-  Data is key to most business operations and services and an understanding of data is essential in many roles. This learning path covers data concepts, data analytics, and data roles, services, and products
+  Data is key to most business operations and services and an understanding of data is essential in many roles. This learning path covers data concepts, data analytics, and data roles, services, and products.
 iconUrl: /training/achievements/understand-data-concepts.svg
 levels:
 - beginner
 roles:
-- business-analyst
-- data-analyst
-- database-administrator
+- business-owner
+- business-user
+- k-12-educator
+- student
 products:
-- azure-database-mysql
-- azure-database-postgresql
-- azure-sql-database
-- azure-sqlserver-vm
+- office-excel
 - sql-server
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.get-started-data-concepts
 - learn.wwl.get-started-data-analytics

@@ -4,7 +4,7 @@ In this module, you’ll be introduced to some of the features and tools you can
 
 After completing this module, you’ll be able to:
 
- -  Describe the purpose of Azure Blueprints
- -  Describe the purpose of Azure Policy
- -  Describe the purpose of resource locks
- -  Describe the purpose of the Service Trust portal
+ -  Describe the purpose of Microsoft Purview.
+ -  Describe the purpose of Azure Policy.
+ -  Describe the purpose of resource locks.
+ -  Describe the purpose of the Service Trust portal.

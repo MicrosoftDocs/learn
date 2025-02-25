@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-batch-predictions-fabric.prepare-data
+title: Prepare data before generating predictions
+metadata:
+  title: Prepare data before generating predictions
+  description: Understand how to present new data before applying a model to generate predictions.
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 10/25/2023
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-prepare-data.md)]

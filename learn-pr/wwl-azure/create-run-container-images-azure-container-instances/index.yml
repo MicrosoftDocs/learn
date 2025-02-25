@@ -1,25 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.create-run-container-images-azure-container-instances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run container images in Azure Container Instances
   description: "Run container images in Azure Container Instances"
-  ms.date: 04/24/2023
+  ms.date: 02/06/2025
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: azure-container-instances
+  ai-usage: human-only
 title: Run container images in Azure Container Instances
 summary: Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies.
 abstract: |
   After completing this module, you'll be able to:
-  *   Describe the benefits of Azure Container Instances and how resources are grouped.
-  *   Deploy a container instance in Azure by using the Azure CLI.
-  *   Start and stop containers using policies.
-  *   Set environment variables in your container instances.
-  *   Mount file shares in your container instances.
+
+  -   Describe the benefits of Azure Container Instances and how resources are grouped.
+
+  -   Deploy a container instance in Azure by using the Azure CLI.
+
+  -   Start and stop containers using policies.
+
+  -   Set environment variables in your container instances.
+
+  -   Mount file shares in your container instances.
 prerequisites: |
-  *   You should be familiar with container concepts and terminology.
-  *   An understanding of cloud computing and some experience with the Azure portal.
+  -   An understanding of container concepts and terminology.
+
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/azure-container-instances-images.svg
 levels:
 - intermediate
@@ -29,7 +40,7 @@ products:
 - azure
 - azure-container-instances
 subjects:
-- container
+- containers
 units:
 - learn.wwl.create-run-container-images-azure-container-instances.introduction
 - learn.wwl.create-run-container-images-azure-container-instances.explore

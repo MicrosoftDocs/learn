@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.implement-llmops-azure-databricks
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Implement LLMOps in Azure Databricks
+  description: Implement LLMOps in Azure Databricks
+  ms.date: 08/23/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Implement LLMOps in Azure Databricks
+summary:  Streamline the implementation of Large Language Models (LLMs) with LLMOps (LLM Operations) in Azure Databricks. Learn how to deploy and manage LLMs throughout their lifecycle using Azure Databricks.
+abstract: |
+  In this module, you learn how to:
+  - Describe the LLM lifecycle overview.
+  - Identify the model deployment option that best fits your needs.
+  - Use MLflow and Unity Catalog to implement LLMops.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/describe-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.implement-llmops-azure-databricks.introduction
+- learn.wwl.implement-llmops-azure-databricks.lifecycle-overview
+- learn.wwl.implement-llmops-azure-databricks.deployments-overview
+- learn.wwl.implement-llmops-azure-databricks.mlflow-overview
+- learn.wwl.implement-llmops-azure-databricks.unity-catalog
+- learn.wwl.implement-llmops-azure-databricks.exercise
+- learn.wwl.implement-llmops-azure-databricks.knowledge-check
+- learn.wwl.implement-llmops-azure-databricks.summary
+badge:
+  uid: learn.wwl.implement-llmops-azure-databricks.badge
+

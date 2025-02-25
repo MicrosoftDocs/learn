@@ -2,15 +2,19 @@
 uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve-index-analyzers-tokenized-terms
 title: Improve an index with analyzers and tokenized terms
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Improve an index with analyzers and tokenized terms
-  description: "Improve an index with analyzers and tokenized terms"
-  ms.date: 09/21/2022
-  author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Improve an index with analyzers and tokenized terms
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 10/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/04-improve-index-analyzers-tokenized-terms.md)]
+

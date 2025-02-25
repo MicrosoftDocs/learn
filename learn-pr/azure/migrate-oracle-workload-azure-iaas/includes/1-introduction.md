@@ -1,0 +1,3 @@
+Suppose you're an administrator in a large financial services organization with multiple business-critical workloads powered by Oracle databases. All these workloads run in your on-premises datacenter. Your managers want you to move some of these workloads to Azure, including several third-party packaged applications.
+
+Because your budget and schedule are tight, you want to plan and execute this move with a minimum of refactoring, additional development, and configuration. You think the most efficient path involves Azure infrastructure as a service (IaaS) to rehost or _lift and shift_ the workloads. You need to explain this model to your managers, including why it makes sense in your situation. 

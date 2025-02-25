@@ -2,13 +2,14 @@
 uid: learn.wwl.datacenter-integration-for-azure-stack-hub.connect-azure-stack-hub
 title: Connect Azure Stack Hub to Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect Azure Stack Hub to Azure
   description: "Connect Azure Stack Hub to Azure"
   ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

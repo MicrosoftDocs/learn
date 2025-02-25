@@ -2,14 +2,16 @@
 uid: learn.oxford.intro-to-iot-edge.how-iot-edge-works
 title: How IoT Edge works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How IoT Edge works
   description: How IoT Edge works
-  ms.date: 09/22/2019
+  ms.date: 07/30/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom: team=cloud_advocates
 durationInMinutes: 7 # dummy number at present
 content: |
   [!include[](includes/3-how-iot-edge-works.md)]
+

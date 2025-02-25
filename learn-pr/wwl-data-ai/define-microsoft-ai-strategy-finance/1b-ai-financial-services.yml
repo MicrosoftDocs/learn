@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-finance.1b-ai-financial-services
+title: AI in financial services
+metadata:
+  title: AI in financial services
+  description: "AI in financial services"
+  ms.date: 08/26/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/1b-ai-financial-services.md)]

@@ -1,8 +1,7 @@
-You've chosen to support your company's move to Azure by implementing a hub-spoke architecture.
+Based on your research, you chose to implement a hub-spoke network architecture for your company's migration to Azure. As a lead architect on the project, you're managing the production of a virtual networking design by using Azure ExpressRoute for your headquarters' connectivity. You also must decide how to connect your company's satellite offices to the new hub-spoke network.
 
-As a lead architect on the project, you're managing the production of a virtual networking design by using Azure ExpressRoute for your headquarters' connectivity. You also must decide how to connect your company's satellite offices to the new hub-spoke network.
 
-In this unit, you'll explore virtual networking in the Azure platform, design considerations, and how to implement ExpressRoute for connectivity to on-premises networks.
+In this unit, you explore virtual networking in the Azure platform, design considerations, and how to implement ExpressRoute for connectivity to on-premises networks.
 
 ![Architectural diagram showing hub and spokes connecting to the on-premises resources.](../media/3-plannning-hub.svg)
 
@@ -42,6 +41,6 @@ Implementation of ExpressRoute does take some time. You have to work through a c
 
 ## Use ExpressRoute in a hub-spoke topology
 
-Using ExpressRoute in a hub-spoke topology is no different than other architectural patterns. ExpressRoute, which underpins the connectivity between the hub and the on-premises network, works best when there's high data ingress and egress.
+Using ExpressRoute in a hub-spoke topology is no different than other architectural patterns. ExpressRoute, which underpins the connectivity between the hub and the on-premises network, works best when there's high data throughput both incoming and outgoing.
 
-You use circuits to manage and route traffic. Link ExpressRoute into a virtual network in Azure. The circuits to be connected to the virtual network might be in different regions or subscriptions. There are limits to the number of virtual networks per ExpressRoute circuit. For the standard tier, the limit is currently 10 networks. If you use the premium add-on, the limit is increased based on the circuit size. The lowest number is 20 virtual networks on a 50-Mbps circuit, up to 100 for circuits that are 10 Gbps or bigger.
+You use circuits to manage and route traffic, linking ExpressRoute into a virtual network in Azure. The circuits to be connected to the virtual network might be in different regions or subscriptions. There are limits to the number of virtual networks per ExpressRoute circuit. For the standard tier, the limit is currently 10 networks. If you use the premium add-on, the limit is increased based on the circuit size. The lowest number is 20 virtual networks on a 50-Mbps circuit, up to 100 for circuits that are 10 Gbps or greater.

@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.register-apps-use-microsoft-entra-id
+metadata:
+  title: Register apps using Microsoft Entra ID
+  description: "In this module, we explore the process of creating an app registration in Microsoft Entra ID. Then explore the settings and configuration options. You create a single page app, register multitenant app, and other options. As part of this process, we dig into granting user access to apps and configure how and when they can use the app and its data."
+  ms.date: 03/18/2024
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: entra-workload-id
+  ai-usage: human-only
+title: Register apps using Microsoft Entra ID
+summary: Explore the value and configuration options when registering an app in Microsoft Entra, to ensure your data and infrastructure is protected.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Explain the benefits of registering apps in Microsoft Entra ID
+
+  -   Compare and contrast single and multitenant apps
+
+  -   Describe what happens and the primary settings when registering an app
+
+  -   Describe the relationship between application objects and service principals
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- entra-workload-identities
+subjects:
+- app-development
+- identity-access
+units:
+- learn.wwl.register-apps-use-microsoft-entra-id.introduction
+- learn.wwl.register-apps-use-microsoft-entra-id.plan-app-registration
+- learn.wwl.register-apps-use-microsoft-entra-id.explore-application-objects-service-principals
+- learn.wwl.register-apps-use-microsoft-entra-id.create-app-registrations
+- learn.wwl.register-apps-use-microsoft-entra-id.configure-app-authentication
+- learn.wwl.register-apps-use-microsoft-entra-id.configure-api-permissions
+- learn.wwl.register-apps-use-microsoft-entra-id.create-app-roles
+- learn.wwl.register-apps-use-microsoft-entra-id.knowledge-check
+- learn.wwl.register-apps-use-microsoft-entra-id.summary
+badge:
+  uid: learn.wwl.register-apps-use-microsoft-entra-id.badge

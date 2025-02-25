@@ -4,24 +4,24 @@ title: "Improve your reliability with modern operations practices: Learning from
 metadata:
   title: "Improve your reliability with modern operations practices: Learning from failure"
   description: Learn about post-incident reviews, a practice necessary to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
-  ms.date: 05/07/2020
+  ms.date: 04/19/2024
   author: dnblankedelman
   ms.author: dnb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: security
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
-summary: Incidents will happen—there’s no doubt about that. The key question is whether you will treat them as a learning opportunity to make your operations practice better or just as a loss of time, money, and reputation. Learn the practice and the Azure tools that can help level up your operations practice by learning from failure.
+summary: Incidents will happen—there's no doubt about that. The key question is whether you will treat them as a learning opportunity to make your operations practice better or just as a loss of time, money, and reputation. Learn the practice and the Azure tools that can help level up your operations practice by learning from failure.
 abstract: |
-  In this module you will:
-  - Discover the importance of learning from incidents
-  - Understand the aspects of complex systems that make learning from failure important
-  - Learn when and how to conduct a post-incident review
-  - Understand the purpose and goals of a post-incident review
-  - Learn the components that go into a good post-incident review
-  - Explore the Azure tools that can assist with getting started with post-incident reviews 
-  - Become aware of common traps to avoid
-  - Identify helpful practices to conduct a better review
+  In this module, you will:
+  - Discover the importance of learning from incidents.
+  - Understand the aspects of complex systems that make learning from failure important.
+  - Learn when and how to conduct a post-incident review.
+  - Understand the purpose and goals of a post-incident review.
+  - Learn the components that go into a good post-incident review.
+  - Explore the Azure tools that can assist with getting started with post-incident reviews.
+  - Become aware of common traps to avoid.
+  - Identify helpful practices to conduct a better review.
 iconUrl: /training/achievements/improve-reliability-failure.svg
 levels:
 - beginner

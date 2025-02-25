@@ -1,7 +1,4 @@
-
-
-
-You can implement Azure File Sync manually, or by using Windows Admin Center. When you use Windows Admin Center, you only need to provide basic configuration settings because this method satisfies all the prerequisites. For manual deployment, you use either Azure portal or Azure PowerShell. However, for manual deployment, you must already have an Azure storage account with an Azure file share that's going to be a cloud endpoint. In both cases, you must have on-premises Windows file servers that you want to use as server endpoints. In this unit, you'll learn how to implement Azure File Sync using both methods.
+You can implement Azure File Sync manually, or by using Windows Admin Center. When you use Windows Admin Center, you only need to provide basic configuration settings because this method satisfies all the prerequisites. For manual deployment, you use either Azure portal or Azure PowerShell. However, for manual deployment, you must already have an Azure storage account with an Azure file share that's going to be a cloud endpoint. In both cases, you must have on-premises Windows file servers that you want to use as server endpoints. In this unit, you learn how to implement Azure File Sync using both methods.
 
 ## Implement Azure File Sync manually
 
@@ -28,9 +25,7 @@ You deploy Storage Sync Service in the Azure portal by selecting **Create a reso
 
 You can download the File Sync agent installation package from the Azure portal at the Microsoft Download Center. You must install the agent on all servers that will be server endpoints. If you want to use File Sync with a failover cluster, you must install the agent on every node in the cluster.
 
-By default, the installed agent tries to upgrade itself within 21 days of its posted expiration date. It will start trying to upgrade once a week within 21 days prior to the expiration. and in the selected maintenance window.
-
-You install the File Sync agent on Windows Server 2019 by running the StorageSyncAgent_WS2019.msi installer package on Windows Server.
+By default, the installed agent tries to upgrade itself within 21 days of its posted expiration date. It starts trying to upgrade once a week within 21 days prior to the expiration. and in the selected maintenance window.
 
 ### 3. Register Windows Server with Storage Sync Service
 

@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-language-models-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/12/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the primary function of tokenization in Large Language Models (LLMs)?"
+    choices:
+    - content: "To generate responses for user queries."
+      isCorrect: false
+      explanation: "Incorrect. The primary function of tokenization isn't generating responses for user queries."
+    - content: "To convert text into smaller units for easier processing."
+      isCorrect: true
+      explanation: "Correct. Tokenization is a preprocessing step in LLMs where text is broken down into smaller units, such as words, subwords, or characters. Tokenization makes it easier for the model to process and understand the text."
+    - content: "To summarize long texts into shorter versions."
+      isCorrect: false
+      explanation: "Incorrect. Summarization is summarizing long texts into shorter versions and it isn't the primary function of tokenization."
+  - content: "Which of the following tasks involves determining the emotional tone of a piece of text?"
+    choices:
+    - content: "Summarization"
+      isCorrect: false
+      explanation: "Incorrect. Summarization is summarizing long texts into shorter versions and not determining the emotional tone of a piece of text."
+    - content: "Translation"
+      isCorrect: false
+      explanation: "Incorrect. Translation is converting text from one language to multiple languages and not determining the emotional tone of a piece of text."
+    - content: "Sentiment Analysis"
+      isCorrect: true
+      explanation: "Correct. Sentiment analysis is the task of identifying the emotional tone of a text, such as determining if the sentiment is positive, negative, or neutral. Sentiment analysis helps in understanding opinions and feelings expressed in the text."
+  - content: "In the context of Large Language Models (LLMs), what does zero-shot classification refer to?"
+    choices:
+    - content: "Classifying text into predefined categories without any prior training examples."
+      isCorrect: true
+      explanation: "Correct. Zero-shot classification involves categorizing text into predefined labels without seeing any labeled examples during training. Zero-shot classification is achieved by using the model's extensive general knowledge and language understanding."
+    - content: "Training the model on a few examples for a specific task."
+      isCorrect: false
+      explanation: "Incorrect. Training the model on a few examples isn't zero-shot classification."
+    - content: "Generating text responses based on a given prompt."
+      isCorrect: false
+      explanation: "Incorrect. Generating text responses based on a given prompt isn't zero-shot classification."
+

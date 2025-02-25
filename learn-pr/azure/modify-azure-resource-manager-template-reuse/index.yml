@@ -1,13 +1,16 @@
 ### YamlMime:Module
 uid: learn.azure.resource-manager-template-reuse
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Deploy to multiple Azure environments by using JSON ARM template features"
   description: Manage multiple Azure environment deployments of your JSON Azure Resource Manager templates (ARM templates) by using functions, variables, tags, and parameter files.
-  ms.date: 07/01/2022
-  author: tfitzmac
-  ms.author: tomfitz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-resource-manager
+  manager: jasongroce
+  ms.date: 10/18/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: module
 title: "Deploy to multiple Azure environments by using JSON ARM template features"
 summary: Manage multiple Azure environment deployments of your Azure Resource Manager templates by using functions, variables, tags, and parameter files.
 abstract: |
@@ -22,8 +25,8 @@ prerequisites: |
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true), installed locally.
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension, installed locally.
   - One of these tools:
-    - The latest version of the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest) tools, installed locally.
-    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0), installed locally.
+    - The latest version of the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest&preserve-view=true) tools, installed locally.
+    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0&preserve-view=true), installed locally.
 iconUrl: /training/achievements/modify-azure-resource-manager-template-reuse.svg
 ratingEnabled: true
 levels:
@@ -51,3 +54,4 @@ units:
 - learn.azure.resource-manager-template-reuse.9-summary
 badge:
   uid: learn.azure.resource-manager-template-reuse.badge
+

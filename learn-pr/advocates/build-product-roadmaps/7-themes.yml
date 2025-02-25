@@ -5,10 +5,9 @@ metadata:
   title: Themes
   description: This unit teaches you about themes.
   author: czhu89
-  ms.date: 04/16/2019
+  ms.date: 04/24/2023
   ms.author: cazh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-startups
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/7-themes.md)]
@@ -22,5 +21,5 @@ quiz:
      - content: Increase social sharing of fashion finds by 50%
        isCorrect: true
        explanation: "Metrics should reflect the impact of shipping the features in a theme."
-     - content: "Add 10,000 Twitter followers"
+     - content: "Add 10,000 X followers"
        isCorrect: false

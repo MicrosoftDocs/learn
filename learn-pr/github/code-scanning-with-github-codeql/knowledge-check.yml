@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.code-scanning-with-github-codeql.knowledge-check
+title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+metadata:
+  unitType: knowledge_check 
+  title: Knowledge check # user input: module title for browser tab and search results
+  description: Knowledge check questions for configure code scanning module. # user input: a description for site search and SEO
+  ms.date: 04/11/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 5 # user input: the estimate time to complete the unit
+content: |
+quiz:
+  title: Check your knowledge 
+  questions:
+  - content: "When code scanning is enabled, what is one default event that triggers a scan?"
+    choices:
+    - content: "Creating a new branch."
+      isCorrect: false
+      explanation: "Incorrect. Creating a new branch doesn't trigger a scan by default when code scanning is enabled. It can however, be configured to trigger a scan."
+    - content: "Pushing a change."
+      isCorrect: true
+      explanation: "Correct. Pushing a change and raising a pull request will trigger a scan by default when code scanning is enabled. "
+    - content: "Deleting a branch."
+      isCorrect: false
+      explanation: "Incorrect. Deleting a branch doesn't trigger a scan by default when code scanning is enabled. It can however be configured to trigger a scan."
+  - content: "Which of the following are the tools used to upload a SARIF file?"
+    choices:
+    - content: "The tools used are GitHub Actions, the code scanning API, and the CodeQL CLI."
+      isCorrect: true
+      explanation: "Correct. GitHub Actions, the code scanning API, and the CodeQL CLI are all tools you can use to upload a SARIF file. The best upload method depends on which of the tools you use."
+    - content: "The tools used are GitHub Actions, the ESLint analysis tool, the code scanning API, and the CodeQL CLI."
+      isCorrect: false
+      explanation: "Incorrect. Some of the tools listed are used to upload SARIF files, but not all of them. "
+    - content: "The tools used are the partialFingerprints property, GitHub Actions, the code scanning API, and the CodeQL CLI."
+      isCorrect: false
+      explanation: "Incorrect. Some of the tools listed are used to upload SARIF files, but not all of them. "
+  - content: "What is the difference between scheduled versus triggered events in code scanning?"
+    choices:
+    - content: "Scheduled events are more difficult to configure than triggered events."
+      isCorrect: false
+      explanation: "Incorrect. Scheduled events are not more difficult to configure than triggered events. Both can be configured easily. "
+    - content: "Scheduled events run based on a specified schedule and triggered events run on code events such a push. "
+      isCorrect: true
+      explanation: "Correct. Scheduled events are specified by the developer and triggered events are set by default but can also be configured by the developer."
+    - content: "Triggered events run less frequently than scheduled events."
+      isCorrect: false
+      explanation: "Incorrect. The frequency of both triggered events and scheduled events varies depending on how often pushes and pull requests occur, as well as how the developer may have configured the frequency."

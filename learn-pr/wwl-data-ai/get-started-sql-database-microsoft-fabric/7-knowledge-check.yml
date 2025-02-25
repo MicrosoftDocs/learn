@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.get-started-sql-database-microsoft-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/18/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - ignite-2024
+durationInMinutes: 8
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is one of the capabilities of SQL Database in Microsoft Fabric that differentiates it from Azure SQL Database?
+    choices:
+    - content: It requires complex ETL processes for data analytics
+      isCorrect: false
+      explanation: Incorrect. SQL Database in Microsoft Fabric doesn't require complex ETL processes for data analytics.
+    - content: It automatically replicates data into OneLake and converts it to Parquet in near real-time
+      isCorrect: true
+      explanation: Correct. SQL Database in Microsoft Fabric automatically replicates data into OneLake and converts it to Parquet in near real-time.
+    - content: It doesn't support integration with other services within Fabric
+      isCorrect: false
+      explanation: Incorrect. SQL Database in Microsoft Fabric supports integration with other services within Fabric.
+  - content: How can you monitor the performance of a SQL database in Microsoft Fabric?
+    choices:
+    - content: By using the performance dashboard in the Fabric portal
+      isCorrect: true
+      explanation: Correct. You can monitor the performance of a SQL database in Microsoft Fabric by using the performance dashboard in the Fabric portal.
+    - content: By manually checking each query's performance
+      isCorrect: false
+      explanation: Incorrect. Manually checking each query's performance isn't the recommended method for monitoring performance.
+    - content: By using an external third-party tool exclusively
+      isCorrect: false
+      explanation: Incorrect. You don't need to use an external third-party tool exclusively to monitor performance.
+  - content: What feature allows administrators to shield sensitive data from unauthorized access in SQL Database in Microsoft Fabric?
+    choices:
+    - content: Object-level security
+      isCorrect: true
+      explanation: Correct. Object-level security is one of the features that allow administrators to shield sensitive data from unauthorized access.
+    - content: Graphical user interface management
+      isCorrect: false
+      explanation: Incorrect. Graphical user interface management isn't related to shielding sensitive data from unauthorized access.
+    - content: Complex mathematical calculations
+      isCorrect: false
+      explanation: Incorrect. Complex mathematical calculations aren't related to shielding sensitive data from unauthorized access.
+  - content: What is the benefit of the natural language to SQL capability in SQL Database in Fabric?
+    choices:
+    - content: It translates natural language queries into SQL within the query editor
+      isCorrect: true
+      explanation: Correct. The natural language to SQL capability translates natural language queries into SQL within the query editor, making database interactions more intuitive.
+    - content: It manages graphical user interfaces
+      isCorrect: false
+      explanation: Incorrect. The natural language to SQL capability doesn't manage graphical user interfaces.
+    - content: It performs complex data manipulation
+      isCorrect: false
+      explanation: Incorrect. The natural language to SQL capability doesn't perform complex data manipulation.

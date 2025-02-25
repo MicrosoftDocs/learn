@@ -2,13 +2,15 @@
 uid: learn.introduction-azure-ddos-protection.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Consider which Distributed Denial of Service protection (DDoS protection) to use for your Microsoft Azure services.
-  ms.date: 03/08/2023
+  ms.date: 05/22/2024
   author: AbdullahBell
   ms.author: abell
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
+

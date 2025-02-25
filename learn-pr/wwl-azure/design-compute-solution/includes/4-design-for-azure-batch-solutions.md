@@ -32,7 +32,7 @@ As you plan for your own configuration, you can separate aspects of the scenario
 
 Let's look at some best practices for using Azure Batch. As you review the suggestions, think about what scenarios can be accomplished by integrating Azure Batch in the Tailwind Traders infrastructure.
 
-- **Consider pools**. If your jobs consist of short-running tasks, don't create a new pool for each job. The overhead to create new pools diminishes the run time of the job. Also, it's best to have your jobs use pools dynamically. If your jobs use the same pool for everything, there's a chance that jobs won't run if something goes wrong with the pool.
+- **Consider pools**. If your jobs consist of short-running tasks, don't create a new pool for each job. The overhead to create new pools diminishes the run time of the job. Also, it's best to have your jobs use pools dynamically. If your jobs use the same pool for everything, there's a higher chance of failure.
 
 - **Consider nodes**. Individual nodes aren't guaranteed to always be available. If your Azure Batch workload requires deterministic, guaranteed progress, you should allocate pools with multiple nodes. Consider using isolated virtual machine sizes for workloads with compliance or regulatory requirements.
 

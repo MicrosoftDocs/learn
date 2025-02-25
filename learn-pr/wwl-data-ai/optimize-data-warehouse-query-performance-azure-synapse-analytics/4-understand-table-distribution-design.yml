@@ -2,13 +2,14 @@
 uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.understand-table-distribution-design
 title: Understand table distribution design
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand table distribution design
   description: "Understand table distribution design"
   ms.date: 08/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

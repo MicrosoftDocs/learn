@@ -1,67 +1,41 @@
-To strengthen your organization’s Azure Virtual Desktop availability and to keep data safe, you should implement a business continuity and disaster recovery (BCDR) strategy. A good BCDR strategy keeps your apps and workloads up and running during planned and unplanned service or Azure outages. The graphic below shows the **recovery point objective (RPO)** as the loss of data and the **recovery time objective (RTO)** as the time to recover from a disaster. :::image type="content" source="../media/recovery-point-objective-loss-recovery-time-81559491.png" alt-text="RPO loss and RTO time to recover.":::
+Many users now work remotely, so organizations require solutions with high availability, rapid deployment speed, and reduced costs. Users also need to have a remote work environment with guaranteed availability and resiliency that lets them access their resources even during disasters.
 
+To prevent system outages or downtime, every system and component in your Azure Virtual Desktop deployment must be fault-tolerant. Fault tolerance is when you have a duplicate configuration or system in another Azure region that takes over for the main configuration during an outage. This secondary configuration or system reduces the impact of a localized outage. There are many ways you can set up fault tolerance, but this unit focuses on the methods currently available in Azure for dealing with business continuity and disaster recovery (BCDR).
 
-The Azure Virtual Desktop service offers BCDR to preserve customer metadata during outages. When an outage occurs in an Azure region, the service infrastructure components will failover to a secondary location and continue functioning as expected.
+Responsibility for components that make up Azure Virtual Desktop are divided between those components that are Microsoft-managed, and those components that are customer-managed, or partner managed.
 
-To make sure your users can still connect during an Azure region outage, you may need to replicate personal VMs to a different Azure region (the secondary location). During outages, the primary region fails over to the replicated VMs in the secondary location. Users can continue to access apps from the secondary location without interruption. In addition to VM replication, you’ll need to ensure user identities are accessible at the secondary location. Accessible identities can be achieved by using profile containers. You may also use multiple Pooled host pools with automated provisioning across regions as an alternative to VM replication.
+The following components are customer-managed or partner-managed:
 
-> [!IMPORTANT]
-> Make sure business applications that rely on data in the primary Azure region can fail over with the rest of the data.
+ -  Session host virtual machines
+ -  Profile management, usually with FSLogix
+ -  Applications
+ -  User data
+ -  User identities
 
-To ensure your users are connected during an outage, you should consider the five components shown in the table below.
+To learn about the Microsoft-managed components and how they're designed to be resilient, see [Azure Virtual Desktop service architecture and resilience](/azure/virtual-desktop/service-architecture-resilience).
 
-:::row:::
-  :::column:::
-    **1**
-  :::column-end:::
-  :::column:::
-    Virtual network
-  :::column-end:::
-  :::column:::
-    Consider your network connectivity during an outage.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **2**
-  :::column-end:::
-  :::column:::
-    Virtual machines
-  :::column-end:::
-  :::column:::
-    Replicate the VMs in a secondary location or deploy multiple non-persistent host pools across Azure regions.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **3**
-  :::column-end:::
-  :::column:::
-    User and app data
-  :::column-end:::
-  :::column:::
-    Using FSLogix profile containers, set up data replication in the secondary location. Data replication is also required for those using MSIX app attach.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **4**
-  :::column-end:::
-  :::column:::
-    User identities
-  :::column-end:::
-  :::column:::
-    Ensure user identities you set up in the primary location are available in the secondary location.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **5**
-  :::column-end:::
-  :::column:::
-    Application dependencies
-  :::column-end:::
-  :::column:::
-    Ensure any line-of-business applications relying on data in your primary location are failed over to the secondary location.
-  :::column-end:::
-:::row-end:::
+## Business continuity and disaster recovery basics
+
+When you design a disaster recovery plan, you should keep the following three things in mind:
+
+ -  High availability: distributed infrastructure so smaller, more localized outages don't interrupt your entire deployment. Designing with high availability in mind can minimize outage impact and avoid the need for a full disaster recovery.
+ -  Business continuity: how an organization can keep operating during outages of any size.
+ -  Disaster recovery: the process of getting back to operation after a full outage.
+
+Azure Virtual Desktop doesn't have any native features for managing disaster recovery scenarios, but you can use many other Azure services for each scenario depending on your requirements, such as [Availability sets](/azure/virtual-machines/availability-set-overview), [availability zones](/azure/availability-zones/az-region), Azure Site Recovery, and [Azure Files data redundancy](/azure/storage/files/files-redundancy) options for user profiles and data.
+
+You can also distribute session hosts across multiple [Azure regions](/azure/best-practices-availability-paired-regions) provides even more geographical distribution, which further reduces outage impact. All these and other Azure features provide a certain level of protection within Azure Virtual Desktop, and you should carefully consider them along with any cost implications.
+
+The following table lists the technology areas you need to consider as part of your disaster recovery strategy and links to other Microsoft documentation that provides guidance for each area:
+
+| **Technology area**                   | **Documentation link**                                                                                                                                                                                       |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Active-passive vs active-active plans | [Active-Active vs. Active-Passive](/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr#active-active-vs-active-passive)            |
+| Session host resiliency               | [Multiregion Business Continuity and Disaster Recovery](/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr)                       |
+| Disaster recovery plans               | [Multiregion Business Continuity and Disaster Recovery](/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr#architecture-diagrams) |
+| Azure Site Recovery                   | [Failover and failback](/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr#failover-and-failback)                                 |
+| Network connectivity                  | [Multiregion Business Continuity and Disaster Recovery](/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr#prerequisites)         |
+| User profiles                         | [Design recommendations](/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/eslz-business-continuity-and-disaster-recovery#design-recommendations)                   |
+| Files share storage                   | [Storage](/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr#storage)                                                             |
+| Identity provider                     | [Identity](/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr#identity)                                                           |
+| Backup                                | [Backup](/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr#backup)                                                               |

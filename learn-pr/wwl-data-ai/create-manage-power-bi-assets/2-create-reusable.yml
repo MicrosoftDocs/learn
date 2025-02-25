@@ -4,13 +4,12 @@ title: Create reusable Power BI assets
 metadata:
   title: Create reusable Power BI assets
   description: "Create reusable Power BI assets"
-  ms.date: 04/03/2023
-  author: wwlpublish
+  ms.date: 11/12/2024
+  author: angierudduck
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 6
+durationInMinutes: 8
 content: |
   [!include[](includes/2-create-reusable.md)]

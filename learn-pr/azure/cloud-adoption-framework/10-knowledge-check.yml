@@ -1,0 +1,129 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/06/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+quiz:
+  questions:
+  - content: "What should you do to ensure alignment in your business during cloud adoption?"
+    choices:
+    - content: "Form a large strategy team immediately."
+      isCorrect: false
+      explanation: "A large strategy team from the start can lead to inefficiencies and communication challenges. It's best to start with a small core team and expand as needed."
+    - content: "Continuously seek input from other areas of your business."
+      isCorrect: true
+      explanation: "Input from other areas ensures that your cloud adoption strategy aligns with the needs and goals of your entire organization, not just a single department."
+    - content: "Focus solely on IT and finance teams."
+      isCorrect: false
+      explanation: "Focusing only on IT and finance teams can result in a narrow perspective that might not address the broader needs of your organization."
+    - content: "Avoid involving executive support."
+      isCorrect: false
+      explanation: "Without executive buy-in, it can be challenging to secure the necessary resources and alignment across your organization."
+  - content: "What should you do to plan for sustainability in your cloud adoption strategy?"
+    choices:
+    - content: "Increase resource usage."
+      isCorrect: false
+      explanation: "Increased resource usage likely leads to higher emissions and greater environmental impact, which is contrary to sustainability goals."
+    - content: "Identify your current emissions and plan to reduce your carbon footprint."
+      isCorrect: true
+      explanation: "This approach helps meet corporate social responsibility goals and improves brand reputation and compliance with industry standards."
+    - content: "Focus only on cost savings."
+      isCorrect: false
+      explanation: "While cost savings are important, focusing solely on them can overlook the broader goals of sustainability, such as reducing environmental impact and promoting social responsibility."
+    - content: "Ignore corporate social responsibility goals."
+      isCorrect: false
+      explanation: "Ignoring corporate social responsibility goals can harm your organization's reputation and fail to address the environmental and social impacts of your cloud adoption strategy."
+  - content: "What is the purpose of the Ready methodology in the Cloud Adoption Framework?"
+    choices:
+    - content: "To develop marketing strategies."
+      isCorrect: false
+      explanation: "The Ready methodology focuses on preparing your Azure environment and related aspects, not on developing marketing strategies."
+    - content: "To guide preparation aspects such as setting up your Azure environment, defining a cloud operating model, implementing landing zones, considering operational aspects, and developing necessary skills."
+      isCorrect: true
+      explanation: "The Ready methodology is designed to help you prepare for cloud adoption."
+    - content: "To manage cloud billing and cost optimization."
+      isCorrect: false
+      explanation: "While managing cloud billing and cost optimization is important, it's not the primary focus of the Ready methodology."
+    - content: "To manage customer relationships."
+      isCorrect: false
+      explanation: "Managing customer relationships is not the primary purpose of the Ready methodology. The methodology is aimed at preparing your organization for cloud adoption."
+  - content: "What should you do after you complete the migration of your workload?"
+    choices:
+    - content: "Decommission on-premises assets immediately."
+      isCorrect: false
+      explanation: "Decommissioning on-premises assets immediately without ensuring that the migrated workload functions correctly can lead to potential problems. It's important to verify the success of the migration first."
+    - content: "Skip testing and move to production."
+      isCorrect: false
+      explanation: "Skipping testing can result in undetected problems that could affect the performance and reliability of the workload in production. Testing is crucial to ensure that everything works as expected."
+    - content: "Prepare to carry out management activities and perform test migrations."
+      isCorrect: true
+      explanation: "After you complete the migration, you prepare for ongoing management activities to prevent problems like outages and breaches. Performing test migrations helps identify and resolve problems before you fully transition to production."
+    - content: "Ignore feedback from business users."
+      isCorrect: false
+      explanation: "It's important to collect and act on feedback to ensure that the migrated workload meets business needs."
+  - content: "What is the primary goal of innovation according to the Innovate methodology?"
+    choices:
+    - content: "To prioritize technology over customers."
+      isCorrect: false
+      explanation: "The Innovate methodology emphasizes prioritizing customers over technology. The primary goal is to meet the needs and expectations of your customers, not just to focus on technology."
+    - content: "To meet the needs and expectations of your customers."
+      isCorrect: true
+      explanation: "The Innovate methodology's primary goal is to understand and meet customer needs and expectations. Innovation should be relevant and valuable to customers."
+    - content: "To reduce costs."
+      isCorrect: false
+      explanation: "While reducing costs can be a benefit of innovation, it's not the primary goal according to the Innovate methodology. The main focus is on customer needs and expectations."
+    - content: "To increase the number of features."
+      isCorrect: false
+      explanation: "Increasing the number of features is not the primary goal. The Innovate methodology focuses on ensuring that any changes or additions are relevant and valuable to customers."
+  - content: "What is the first step in the Govern methodology?"
+    choices:
+    - content: "Assess cloud risks."
+      isCorrect: false
+      explanation: "Assessing cloud risks is an important step, but it is not the first step in the Govern methodology."
+    - content: "Document cloud governance policies."
+      isCorrect: false
+      explanation: "Documenting cloud governance policies is a crucial step, but it comes after building a cloud governance team and assessing cloud risks."
+    - content: "Build a cloud governance team."
+      isCorrect: true
+      explanation: "The first step in the Govern methodology is to build a cloud governance team. This team is responsible for making decisions and providing various perspectives on governance."
+    - content: "Enforce cloud governance policies."
+      isCorrect: false
+      explanation: "Enforcing cloud governance policies is a later step in the methodology, after you build the team and document policies."
+  - content: "What primary factor determines the required level of management for each workload?"
+    choices:
+    - content: "The number of users."
+      isCorrect: false
+      explanation: "While the number of users can influence management needs, it's not the primary factor in determining the required level of management for each workload."
+    - content: "The level of criticality."
+      isCorrect: true
+      explanation: "The level of criticality determines the required level of management for each workload. More critical workloads might require specialized management to ensure their availability and security."
+    - content: "The cost of the workload."
+      isCorrect: false
+      explanation: "Although cost is an important consideration, it doesn't directly determine the required level of management for a workload."
+    - content: "The size of the team."
+      isCorrect: false
+      explanation: "The size of the team that manages the workload doesn't determine the required level of management. The focus is on the criticality of the workload itself."
+  - content: "Why is it important to continuously improve security in the cloud?"
+    choices:
+    - content: "To maintain a robust security posture as cyber threats evolve."
+      isCorrect: true
+      explanation: "Regular updates and improvements help ensure that your security measures remain effective against new threats."
+    - content: "To limit user access to cloud resources."
+      isCorrect: false
+      explanation: "While access controls are important, the goal is not to limit user access unnecessarily but to ensure that access is granted appropriately and securely."
+    - content: "To reduce the number of security roles."
+      isCorrect: false
+      explanation: "Reducing the number of security roles doesn't contribute to improving security. In fact, having appropriate security roles is essential for maintaining a robust security posture."
+    - content: "To reduce the frequency of security audits."
+      isCorrect: false
+      explanation: "Reducing the frequency of security audits likely weakens your security posture. Regular audits are important for identifying and addressing security problems."

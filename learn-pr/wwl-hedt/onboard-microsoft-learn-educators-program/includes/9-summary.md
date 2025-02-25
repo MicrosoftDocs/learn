@@ -10,7 +10,7 @@ Supplemental Resources:
 
 - [Microsoft Learn for Educators Portal](https://aka.ms/MSLEPort)
 
-- [Microsoft Learning Download Center](https://aka.ms/LDC) 
+- [Microsoft Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123) 
 
 - [Microsoft Virtual Training Days](https://aka.ms/events) 
 

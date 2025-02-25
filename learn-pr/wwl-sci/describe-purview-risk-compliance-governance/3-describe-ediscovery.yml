@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-risk-compliance-governance.describe-ediscovery
+title: Describe eDiscovery
+metadata:
+  title: Describe eDiscovery
+  description: "Describe eDiscovery."
+  ms.date: 8/23/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-describe-ediscovery.md)]

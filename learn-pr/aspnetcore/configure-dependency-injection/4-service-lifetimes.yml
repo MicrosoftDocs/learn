@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-dependency-injection.service-lifetimes
+
+title: Service lifetimes
+
+metadata:
+  title: Service lifetimes
+
+  description: This unit explains what service lifetimes are in an ASP.NET Core app.
+  ms.date: 11/7/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-service-lifetimes.md)]

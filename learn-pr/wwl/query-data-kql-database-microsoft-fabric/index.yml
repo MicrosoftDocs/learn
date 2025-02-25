@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.query-data-kql-database-microsoft-fabric
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Work with real-time data in a Microsoft Fabric eventhouse
+  description: "Microsoft Fabric provides a scalable and flexible store for real-time data."
+  ms.date: 12/06/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Work with real-time data in a Microsoft Fabric eventhouse
+summary: An eventhouse in Microsoft Fabric provides a scalable and flexible store for real-time data.
+abstract: |
+  After completing this module, you'll be able to:
+  - Create an eventhouse in Microsoft Fabric
+  - Query real-time data by using Kusto Query Language (KQL).
+  - Create materialized views and stored functions in a KQL database.
+
+prerequisites: Before starting this module, you should be familiar with Microsoft Fabric.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-analyst
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- fabric
+units:
+- learn.wwl.query-data-kql-database-microsoft-fabric.introduction
+- learn.wwl.query-data-kql-database-microsoft-fabric.get-started-with-kql-queries
+- learn.wwl.query-data-kql-database-microsoft-fabric.kql-best-practices
+- learn.wwl.query-data-kql-database-microsoft-fabric.advanced-features
+- learn.wwl.query-data-kql-database-microsoft-fabric.exercise
+- learn.wwl.query-data-kql-database-microsoft-fabric.knowledge-check
+- learn.wwl.query-data-kql-database-microsoft-fabric.summary
+badge:
+  uid: learn.wwl.query-data-kql-database-microsoft-fabric.badge

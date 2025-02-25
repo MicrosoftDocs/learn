@@ -1,4 +1,4 @@
-For our example, we'll use event sourcing. Let's build a function that's simulating telemetric data and send it to an event hub. Later, another function can listen to this event and process and store it in a database created with Azure Cosmos DB.
+For our example, we use event sourcing. Let's build a function that's simulating telemetric data and send it to an event hub. Later, another function can listen to this event and process and store it in a database created with Azure Cosmos DB.
 
 ![Visualization of event sourcing for buying coffee at a coffee shop.](../media/3-telemetry-exercise.png)
 
@@ -22,7 +22,7 @@ LOCATION=<value>
 
 ## Create the required components
 
-Provisioning the resources on Azure will take some time. Let's start with the component creation as early as possible to avoid long waits later on.
+Provisioning the resources on Azure takes some time. Let's start with the component creation as early as possible to avoid long waits later on.
 
 ### Create a resource group
 
@@ -46,7 +46,6 @@ az eventhubs eventhub create \
     --resource-group $RESOURCE_GROUP \
     --name $EVENT_HUB_NAME \
     --namespace-name $EVENT_HUB_NAMESPACE \
-    --message-retention 1
 az eventhubs eventhub authorization-rule create \
     --resource-group $RESOURCE_GROUP \
     --name $EVENT_HUB_AUTHORIZATION_RULE \
@@ -57,7 +56,7 @@ az eventhubs eventhub authorization-rule create \
 
 ### Build, configure, and deploy the Azure function
 
-To make this example as realistic as possible, you'll create an Azure function and simulate telemetric data. You could also bind an IoT device to your Azure function, which would then take real data. Because this function will be the event-producing one, we'll add a _p_ or _-p_ flag.
+To make this example as realistic as possible, create an Azure function and simulate telemetric data. You could also bind an IoT device to your Azure function, which would then take real data. Because this function is the event-producing one, let's add a *p* or *-p* flag.
 
 ``` bash
 az storage account create \
@@ -74,11 +73,11 @@ az functionapp create \
 ```
 
 > [!NOTE]
-> Use functions-version 4 as 2 and 3 are deprecated early December 2022.
+> Use functions-version 4 as 2 and 3 were deprecated in December 2022.
 
-When the `az functionapp create` command creates your function application, it also creates an Application Insights resource with the same name. We'll use that resource later for our monitoring.
+When the `az functionapp create` command creates your function application, it also creates an Application Insights resource with the same name. We use that resource later for our monitoring.
 
-To retrieve the connection strings for the storage account and the event hub, we can use the following commands and save them in environment variables. They'll also be displayed as you print them with the `echo` command.
+To retrieve the connection strings for the storage account and the event hub, use the following commands to save them in environment variables, and then display them with the `echo` command.
 
 ```bash
 AZURE_WEB_JOBS_STORAGE=$( \
@@ -110,7 +109,7 @@ az functionapp config appsettings set \
         EventHubConnectionString=$EVENT_HUB_CONNECTION_STRING
 ```
 
-Your Azure resources event hub and Azure function have now been created and configured to work properly together.
+Now, your Azure resources event hub and Azure function are created and configured to work properly together.
 
 Next, create a local functions project with Maven.
 
@@ -134,7 +133,7 @@ This command generates several files inside a `telemetry-functions-producer` fol
 - A `Function.java` file that includes the default HTTP trigger function.
 - A few test files that this Learn module doesn't use.
 
-We won't touch the test files in this Learn module, so feel free to delete them.
+We don't touch the test files in this Learn module, so feel free to delete them.
 
 ``` Bash
 cd telemetry-functions-producer
@@ -181,7 +180,7 @@ The `generateSensorData` function simulates a sensor that sends temperature and 
 
 When the event hub receives the message, it generates an event.
 
-The data used by this function is stored using a class called TelemetryItem, which you'll need to implement. Create a new file called TelemetryItem.java in the same location as Function.java and add the following code:
+The data used by this function is stored using a class called TelemetryItem, which you need to implement. Create a new file called TelemetryItem.java in the same location as Function.java and add the following code:
 
 ``` Java
 package com.learn;

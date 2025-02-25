@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.provision-linux-virtual-machine-in-azure.introduction
+title: Introduction
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction
+  description: Introduction
+  ms.date: 01/17/2025
+  author: fossygirl
+  ms.author: carols
+  ms.topic: unit
+  ms.custom: linux-related-content
+durationInMinutes: 7
+content: |
+  [!include[](includes/1-introduction.md)]
+

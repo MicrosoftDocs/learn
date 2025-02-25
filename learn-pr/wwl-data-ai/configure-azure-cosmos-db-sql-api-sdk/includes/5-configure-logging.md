@@ -1,4 +1,4 @@
-There are many scenarios where you wish to log the HTTP requests that the Azure Cosmos DB for NoSQL SDK performs "under the hood." The SDK includes a fluent client builder class that simplifies the process of injecting custom handlers into the HTTP requests and responses. You can take advantage of this functionality to build a simple logging mechanism.
+There are many scenarios where you wish to log the HTTP requests that the Azure Cosmos DB for NoSQL SDK performs "under the hood." The SDK includes a fluent client builder class that simplifies the process of injecting custom handlers into the HTTP requests and responses. You can take advantage of this functionality to build a logging mechanism.
 
 ## Client builder
 
@@ -16,15 +16,27 @@ To use the builder, first you must add a using directive to the **Microsoft.Azur
 using Microsoft.Azure.Cosmos.Fluent;
 ```
 
-Now, you can create a new instance of the **CosmosClientBuilder** class passing in a connection string or endpoint+key pair as constructor parameters.
+While you can create a new instance of the **CosmosClientBuilder** class passing in a connection string or endpoint+key pair as constructor parameters, in a production environment, we recommend using managed identities. For this example, let's use a managed identity to authenticate with Azure Cosmos DB.
 
 ```csharp
-CosmosClientBuilder builder = new (connectionString);
+// Using DefaultAzureCredential
+TokenCredential defaultCredential = new DefaultAzureCredentialBuilder().build();
+CosmosClientBuilder builder = new CosmosClientBuilder()
+    .endpoint("<your-cosmos-endpoint>")
+    .credential(defaultCredential)
+    .consistencyLevel(ConsistencyLevel.EVENTUAL);
 
-CosmosClientBuilder builder = new (endpoint, key);
+// Using ManagedIdentityCredential
+TokenCredential managedIdentityCredential = new ManagedIdentityCredentialBuilder()
+    .clientId("<your-managed-identity-client-id>")
+    .build();
+CosmosClientBuilder builder = new CosmosClientBuilder()
+    .endpoint("<your-cosmos-endpoint>")
+    .credential(managedIdentityCredential)
+    .consistencyLevel(ConsistencyLevel.EVENTUAL);
 ```
 
-At this point, you can add any fluent methods to configure the client. Once you are done with fluent methods, you can invoke the **Build** method to create an instance of type **CosmosClient**.
+At this point, you can add any fluent methods to configure the client. Once you're done with fluent methods, you can invoke the **Build** method to create an instance of type **CosmosClient**.
 
 ```csharp
 CosmosClient client = builder.Build();
@@ -32,7 +44,7 @@ CosmosClient client = builder.Build();
 
 ## Creating a custom log handler
 
-To log HTTP requests, you will need to create a new class that inherits from the abstract **RequestHandler** class. In the handler, you can add logic before and after the HTTP request is sent. For this example, we will create a handler that performs the following workflow when an HTTP request is sent:
+To log HTTP requests, you need to create a new class that inherits from the abstract **RequestHandler** class. In the handler, you can add logic before and after the HTTP request is sent. For this example, we create a handler that performs the following workflow when an HTTP request is sent:
 
 1. Writes the HTTP method and URI of the originating request to the console
 1. Sends the request to the base implementation and stores the response in a variable
@@ -41,7 +53,7 @@ To log HTTP requests, you will need to create a new class that inherits from the
 
 ### Creating a custom RequestHandler implementation
 
-To implement this, we need to create a new class that inherits from **RequestHandler**.
+To implement this request, we need to create a new class that inherits from **RequestHandler**.
 
 ```csharp
 public class LogHandler : RequestHandler
@@ -73,7 +85,7 @@ Console.WriteLine($"[{Convert.ToInt32(response.StatusCode)}]\t{response.StatusCo
 return response;
 ```
 
-Here is the code for the complete class.
+Here's the code for the complete class.
 
 ```csharp
 public class LogHandler : RequestHandler
@@ -99,10 +111,17 @@ Once the request handler implementation is ready, invoke the **AddCustomHandler*
 builder.AddCustomHandlers(new LogHandler());
 ```
 
-Here is the code for the complete creation of the client using the builder.
+Here's the code for the complete creation of the client using the builder.
 
 ```csharp
-CosmosClientBuilder builder = new (endpoint, key);
+// Using ManagedIdentityCredential
+TokenCredential managedIdentityCredential = new ManagedIdentityCredentialBuilder()
+    .clientId("<your-managed-identity-client-id>")
+    .build();
+CosmosClientBuilder builder = new CosmosClientBuilder()
+    .endpoint("<your-cosmos-endpoint>")
+    .credential(managedIdentityCredential)
+    .consistencyLevel(ConsistencyLevel.EVENTUAL);
 
 builder.AddCustomHandlers(new LogHandler());
 
@@ -111,20 +130,20 @@ CosmosClient client = builder.Build();
 
 ### Testing the custom logger
 
-Let's assume we have a fictional scenario where we use our client instance to invoke the **CreateDatabaseIfNotExistsAsync** method. The client instance should check for the existence of the database first, and if it doesn't find the database, it will create a new one using the specified name.
+Let's assume we have a fictional scenario where we use our client instance to invoke the **CreateDatabaseIfNotExistsAsync** method. The client instance should check for the existence of the database first, and if it doesn't find the database, it creates a new one using the specified name.
 
-For this fictional scenario, we will use this example line of code to invoke the **CreateDatabaseIfNotExistsAsync** method.
+For this fictional scenario, we use this example line of code to invoke the **CreateDatabaseIfNotExistsAsync** method.
 
 ```csharp
 Database result = await client.CreateDatabaseIfNotExistsAsync("cosmicworks");
 ```
 
-When you run the application for the first time, the logger will output that it performed the following actions:
+When you run the application for the first time, the logger outputs that it performed the following actions:
 
-1. Sent a HTTP **GET** *request* to query for your specific database at the ``dbs/<database-name>`` endpoint.
-1. Received a *response* of **404** that the database was not found.
-1. Sent a HTTP **POST** *request* with the database details in the body of the request to the ``dbs/`` endpoint.
-1. Received a *response* of **201** indicating that the database has been created with the database's details in the response body.
+1. Sent an HTTP **GET** *request* to query for your specific database at the ``dbs/<database-name>`` endpoint.
+1. Received a *response* of **404** that the database wasn't found.
+1. Sent an HTTP **POST** *request* with the database details in the body of the request to the ``dbs/`` endpoint.
+1. Received a *response* of **201** indicating that the database is created with the database's details in the response body.
 
 ```bash
 [GET]   dbs/cosmicworks
@@ -133,10 +152,10 @@ When you run the application for the first time, the logger will output that it 
 [201]   Created
 ```
 
-If you ran the application again, the logger will output a much shorter workflow:
+If you ran the application again, the logger outputs a shorter workflow:
 
-1. Sent a HTTP **GET** *request* to query for your specific database at the ``dbs/<database-name>`` endpoint.
-1. Received a *response* of **200** indicating that the database has been found with the database's details in the response body.
+1. Sent an HTTP **GET** *request* to query for your specific database at the ``dbs/<database-name>`` endpoint.
+1. Received a *response* of **200** indicating that the database was found with the database's details in the response body.
 
 ```bash
 [GET]   dbs/cosmicworks

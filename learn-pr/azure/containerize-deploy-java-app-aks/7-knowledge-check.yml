@@ -1,56 +1,63 @@
 ### YamlMime:ModuleUnit
 uid: learn.containerize-deploy-java-app-aks.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: Knowledge Check
   title: Knowledge Check
-  description: Knowledge Check
-  ms.date: 9/28/2021
-  author: chtrembl
-  ms.author: chtrembl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Knowledge check.
+  ms.date: 02/12/2025
+  author: KarlErickson
+  ms.author: yoterada
+  ms.topic: unit
+  ms.custom:
+    - devx-track-java
+    - devx-track-extended-java
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "Which tool allows developers to write instructions that are used to build container images?"
+  - content: "Which tool enables you to write instructions that are used to build container images?"
     choices:
-    - content: "Maven Build Tool"
+    - content: "Maven build tool and plugin"
       isCorrect: false
-      explanation: "Maven is a build tool that allows you to configure dependencies and deploy apps."
-    - content: "Docker Runtime"
-      isCorrect: true
-      explanation: "Correct. Docker runtime is used to build, run, push and pull Docker container images."
+      explanation: "Maven is a build tool for source code that lets you manage dependencies and deploy applications. Also, by using a third-party plugin like fabric8io, you can create container images with Maven commands. However, Maven isn't the only viable solution."
+    - content: "Docker runtime"
+      isCorrect: false
+      explanation: "Docker runtime is used to build, run, push, and pull Docker container images. However, Docker isn't the only viable solution."
     - content: "Azure Container Registry"
       isCorrect: false
-      explanation: "Azure Container Registry allows you to build, store, and manage container images and artifacts."
-  - content: "Which service allows you to build, store, and manage container images and artifacts in a private registry?"
+      explanation: "Azure Container Registry enables you to store and manage container images and artifacts. Azure Container Registry also has a feature called ACR Tasks that enables you to build container images using the `az acr build` command. However, Azure Container Registry isn't the only viable solution."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct. You can build container images using all the tools mentioned above. During development or CI/CD processes, you can choose and use the build method that best suits your environment."
+  - content: "Which service enables you to build, store, and manage container images and artifacts in a private registry?"
     choices:
-    - content: "Maven Build Tool"
+    - content: "Maven build tool"
       isCorrect: false
-      explanation: "Maven is a build tool that allows you to configure dependencies and deploy apps."
-    - content: "Docker Runtime"
+      explanation: "Maven is a build tool that enables you to configure dependencies and deploy apps."
+    - content: "Docker runtime"
       isCorrect: false
-      explanation: "Docker runtime is used to build, run, push and pull Docker container images."
+      explanation: "Docker runtime is used to build, run, push, and pull Docker container images."
     - content: "Azure Container Registry"
       isCorrect: true
-      explanation: "Azure Container Registry allows  you to build, store, and manage container images and artifacts in a private registry for all types of container deployments."
-  - content: "Which is NOT a Dockerfile instruction?"
+      explanation: "Azure Container Registry enables you to build, store, and manage container images and artifacts in a private registry for all types of container deployments."
+  - content: "Which of the following options isn't a Dockerfile instruction?"
     choices:
     - content: "RUN"
       isCorrect: false
-      explanation: "RUN instruction is used to execute any command on top of the current image."
+      explanation: "The RUN instruction executes any command on top of the current image."
     - content: "CMD"
       isCorrect: false
-      explanation: "CMD instruction is used to set a command to be executed when running the container."
+      explanation: "The CMD instruction sets a command to be executed when running the container."
     - content: "START"
       isCorrect: true
-      explanation: "START is not a Dockerfile instruction."
+      explanation: "START isn't a Dockerfile instruction."
   - content: "What is a multi-stage Docker build?"
     choices:
     - content: "A feature that enables you to create a smaller container image with better caching and a smaller security footprint."
       isCorrect: true
-      explanation: "A feature that enables you to create smaller container images with better caching and a smaller security footprint allowing for increased optimization and maintenance of the Dockerfile over time."
+      explanation: "A feature that enables you to create smaller container images with better caching and a smaller security footprint. This feature enables increased optimization and maintenance of the Dockerfile over time."
     - content: "A feature that enables you to create larger container images that use less caching."
       isCorrect: false
       explanation: ""

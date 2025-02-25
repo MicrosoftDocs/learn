@@ -1,0 +1,1 @@
+In this module, you learned to create and configure an Azure Log Analytics workspace for Microsoft Defender for Cloud, enabling centralized logging, data analysis, custom queries, alerts, and integration with other Azure services for enhanced threat detection.

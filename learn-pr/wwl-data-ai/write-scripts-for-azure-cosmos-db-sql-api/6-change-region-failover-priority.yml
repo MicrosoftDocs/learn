@@ -2,15 +2,18 @@
 uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.change-region-failover-priority
 title: Change region failover priority
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Change region failover priority
   description: "Change region failover priority"
   ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurecli
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/6-change-region-failover-priority.md)]
+

@@ -1,14 +1,19 @@
 ### YamlMime:Module
 uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a labeled dataset using Azure Machine Learning data labeling tools
   description: Create a labeled dataset using Azure Machine Learning data labeling tools.
   ms.date: 03/14/2022
   author: toolboc
   ms.author: chnoring
-  ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.topic: module
+  ms.service: azure-machine-learning 
+  ms.collection:
+    - TBD
+    - ce-advocates-ai-copilot
 title: Create a labeled dataset using Azure Machine Learning data labeling tools
 summary: Learn how to use Azure Machine Learning data labeling to create, manage, and monitor data labeling projects.
 abstract: |
@@ -39,3 +44,4 @@ units:
 - learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.summary
 badge:
   uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.badge
+

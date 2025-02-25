@@ -3,19 +3,18 @@ uid: learn.wwl.monitor-maintain-azure-virtual-desktop-infrastructure
 metadata:
   title: Monitor and maintain an Azure Virtual Desktop infrastructure
   description: Monitor and maintain an Azure Virtual Desktop infrastructure
-  ms.date: 08/01/2022
+  ms.date: 08/06/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Monitor and maintain an Azure Virtual Desktop infrastructure
 prerequisites: |
-  *  Familiarity with server and client management concepts and tools
-  *  Familiarity with Windows virtualization technologies, like Remote Desktop Services
-  *  Knowledge of Microsoft Azure and cloud concepts
+  -   Familiarity with server and client management concepts and tools
+  -   Familiarity with Windows virtualization technologies, like Remote Desktop Services
+  -   Knowledge of Microsoft Azure and cloud concepts
 summary: |
   Learn how to plan and implement a disaster recovery plan, configure automation, and optimize session host capacity for Azure Virtual Desktop. This learning path aligns with exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
-iconUrl: /training/achievements/monitor-and-maintain-an-azure-virtual-desktop-infrastructure.svg
+iconUrl: /learn/achievements/monitor-and-maintain-an-azure-virtual-desktop-infrastructure.svg
 levels:
 - intermediate
 roles:
@@ -28,8 +27,7 @@ products:
 subjects:
 - infrastructure
 modules:
-- learn.wwl.plan-implement-business-continuity-disaster-recovery
-- learn.wwl.automate-azure-virtual-desktop-management-tasks
 - learn.wwl.monitor-manage-performance-health
+- learn.wwl.plan-implement-business-continuity-disaster-recovery
 trophy:
   uid: learn.wwl.monitor-maintain-azure-virtual-desktop-infrastructure.trophy

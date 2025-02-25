@@ -6,8 +6,7 @@ metadata:
   ms.date: 06/30/2020
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-python
+  ms.topic: learning-path
   show_latex: true
   hidden: true
 title: 'Popular machine learning algorithms: Naive Bayes and PCA'

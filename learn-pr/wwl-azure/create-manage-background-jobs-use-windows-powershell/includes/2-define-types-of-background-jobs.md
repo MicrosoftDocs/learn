@@ -14,3 +14,4 @@ Each job type has specific characteristics. For example, local and Windows Power
 Remember that these job types aren't the only ones that Windows PowerShell supports. Use modules and other add-ins to create other job types. Workflow jobs help you automate long-running tasks, or *workflows*, by simultaneously targeting multiple managed computers or devices. Windows PowerShell workflows offer extra resiliency benefits. When you restart target devices, unfinished workflow automatically restarts on the target device or devices and continues with the job's workflow commands.
 
 It's important to note that interactive Windows PowerShell console workflow jobs aren't available in a noninteractive Windows PowerShell console. Scheduling a task to run at machine startup won't find suspended jobs from a noninteractive console. Scheduled tasks can't find workflow jobs to resume unless you're signed in to an interactive session.
+

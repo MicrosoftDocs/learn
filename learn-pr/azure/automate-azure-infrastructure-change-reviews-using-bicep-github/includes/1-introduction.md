@@ -2,7 +2,7 @@ When you work on Bicep code, it's important to review and test all your changes.
 
 In this module, you'll learn how to add automated checks to your pull request review process. You'll learn how to validate changes to your Bicep code within a pull request, long before it's merged or deployed to a real environment.
 
-You'll also learn how you can automatically deploy your changes to _ephemeral environments_, temporary environments where collaborators and reviewers can test the code changes before they're approved and merged into the repository's main branch.
+You'll also learn how you can automatically deploy your changes to _ephemeral environments_, which are temporary environments where collaborators and reviewers can test the code changes before they're approved and merged into the repository's main branch.
 
 ## Example scenario
 
@@ -14,11 +14,11 @@ Your colleagues have told you that the current manual review process is cumberso
 
 You need to make some changes to the configuration of your website, so it's a great opportunity to establish and try out a new process.
 
-## What will you be doing?
+## What will you learn?
 
 In this module, you'll learn how you can run automated checks and tests for each pull request to build confidence in the changes to your Bicep code.
 
-You'll configure your pull request workflow to scan your Bicep code against recommended practices by using the Bicep linter. You'll also configure the creation of ephemeral environments for each pull request, which can be used to review the changes to your Azure environment, and automatically delete the environment when the pull request is merged or closed.
+You'll configure your pull request workflow to scan your Bicep code against recommended practices by using the Bicep linter. You'll also configure the creation of ephemeral environments for each pull request, which you can use to review the changes to your Azure environment, and automatically delete the environment when the pull request is merged or closed.
 
 ## What is the main goal?
 

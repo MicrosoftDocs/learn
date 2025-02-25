@@ -1,18 +1,17 @@
-
-Following a recent security audit by a firm specializing in IT security, you are reviewing a report on shortcomings in Contoso's procedures regarding server management. One of the significant comments in the report highlights the security impact of using locally installed, interactive management tools. You decide to investigate what other options are available for remote management. You learn that Remote Server Administration Tools (RSAT) are a group of management tools that enables IT administrators to remotely manage roles and features in Windows Server from a computer that is running Windows 10. 
+Following a recent security audit by a firm specializing in IT security, you're reviewing a report on shortcomings in Contoso's procedures regarding server management. One of the significant comments in the report highlights the security impact of using locally installed, interactive management tools. You decide to investigate what other options are available for remote management. You learn that Remote Server Administration Tools (RSAT) are a group of management tools that enables IT administrators to remotely manage roles and features in Windows Server from a computer that is running Windows 10 or Windows 11. 
 
 ## Enable RSAT
 
-You no longer need to download and install RSAT on Windows 10. With Windows 10 1803 and newer, you enable RSAT from the Settings app. In **Settings**, search for **Manage optional features**, select **Add a feature**, and then select the appropriate RSAT tool(s) from the returned list. Select **Install** to add the feature.
+You enable RSAT from the Settings app in Windows Client operating systems. In **Settings**, search for **Manage optional features**, select **Add a feature**, and then select the appropriate RSAT tools from the returned list. Select **Install** to add the feature.
 
 :::image type="content" source="../media/m2-enable-rsat.png" alt-text="A screenshot of the Add an optional feature dialog box. Displayed are a list of RSAT tools.":::
 
-You can install the consoles available within RSAT on computers running Windows 10 or on server computers that are running the Server with Desktop Experience option of a Windows Server installation.
+You can install the consoles available within RSAT on computers running Windows 10, Windows 11, or on server computers that are running the Server with Desktop Experience option of a Windows Server installation.
 
 > [!NOTE]
 > Until the introduction of Windows Admin Center, RSAT consoles were the primary graphical tools for administering the Windows Server operating system.
 
-RSAT for Windows 10 consists of the full complement of available management tools including those described in the following table.
+RSAT for Windows 10 and windows 11 consists of the full complement of available management tools including those described in the following table.
 
 |Tool|Description|
 |---|---|

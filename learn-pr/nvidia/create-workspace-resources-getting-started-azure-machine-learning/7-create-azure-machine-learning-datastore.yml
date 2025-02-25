@@ -2,14 +2,16 @@
 uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.create-azure-machine-learning-datastore
 title: Create an Azure Machine Learning Datastore
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create an Azure Machine Learning Datastore
   description: Create an Azure Machine Learning Datastore to reference image data in Azure Storage.
   author: toolboc
   ms.author: chnoring
-  ms.date: 03/14/2022
+  ms.date: 09/04/2024
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/7-create-azure-machine-learning-datastore.md)]
+

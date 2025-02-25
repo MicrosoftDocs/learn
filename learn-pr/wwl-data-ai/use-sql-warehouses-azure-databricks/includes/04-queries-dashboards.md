@@ -12,6 +12,6 @@ After saving the query, you can schedule it to be run automatically at regular i
 
 Dashboards enable you to display the results of queries, either as tables of data or as graphical visualizations.
 
-![Screenshot of a dashboard in the Azure Databricks portal.](../media/databricks-dashboard.png)
+![Screenshot of a dashboard in the Azure Databricks portal.](../media/databricks-lakeview-dashboard.png)
 
 You can create multiple visualizations in a dashboard and share it with users in your organization. As with individual queries, you can schedule the dashboard to refresh is data periodically, and notify subscribers by email that new data is available.

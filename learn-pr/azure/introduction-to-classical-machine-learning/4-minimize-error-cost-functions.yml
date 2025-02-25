@@ -2,13 +2,15 @@
 uid: learn.machinelearning.introduction-to-classical-machine-learning.minimize-error-cost-functions
 title: Minimize model errors with cost functions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Minimize model errors with cost functions
   description: Conceptual unit about minimizing model errors by using cost functions in machine learning.
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/01/2024
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-minimize-error-cost-functions.md)]
+

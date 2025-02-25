@@ -2,15 +2,16 @@
 uid: learn.wwl.protecting-monitoring-tuning-migrated-database.configure-read-replicas
 title: Configure read replicas
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure read replicas
   description: "Configure read replicas"
-  ms.date: 09/26/2022
+  ms.date: 10/14/2024
   author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 11
 content: |
   [!include[](includes/5-configure-read-replicas.md)]

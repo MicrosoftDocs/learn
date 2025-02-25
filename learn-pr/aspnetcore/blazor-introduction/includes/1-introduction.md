@@ -1,17 +1,9 @@
-Building applications for the web is a complex effort. The ever-changing collection of JavaScript frameworks can be challenging for developers to follow and integrate with their favorite frameworks. The Blazor framework from the .NET team provides a concise, component-driven user-interface framework. Blazor allows you to build applications with C# and .NET. With Blazor, your applications can share business objects and services with the cloud-based services you already manage.
+Building web apps can be a complex effort. Choosing the right web framework for your web development project is an important first step. Blazor is a complete frontend web framework based on the solid foundation of .NET that makes building web apps easier and more productive.
 
-![Diagram showing sample Blazor Application Architecture.](../media/intro-architecture.jpg)
+In this module you'll learn what Blazor is and how its flexible component model makes it easy to build web apps that are fast and richly interactive.
 
-## Example scenario
+## Scenario
 
-You're preparing to launch a new website for your pizza shop and want customers to easily see the collection of fresh pizza specials available to order. Customers should have a clear path to place their order and track their pizza delivery.
+Imagine you're preparing to launch a new web app for your pizza shop that allows customers to easily select from the collection of fresh pizza specials and then customize their pizza order. Customers should have a clear path to place their order and track their pizza delivery. You want to select a web framework for building your web app that helps with building a great user experience for your customers.
 
 ![Screenshot of pizza shop website built with Blazor.](../media/pizza-shop.png)
-
-## What will we be doing?
-
-You'll learn what the Blazor framework is and how it works with your existing .NET code to extend business logic and interactions. You'll learn that Blazor applications are composed of common HTML and techniques that you already know as a .NET developer.
-
-## What is the main goal?
-
-At the conclusion of this module, you'll understand how Blazor applications are structured and where they can run. With this knowledge, you can decide if Blazor is the right framework for your next application.

@@ -12,7 +12,7 @@ Let's explore how network security group rules are defined and processed within 
 
 Consider the following virtual network configuration that shows network security groups (NSGs) controlling traffic to virtual machines (VMs). The configuration requires security rules to manage network traffic to and from the internet over TCP port 80 via the network interface.
 
-:::image type="content" source="../media/security-groups-7a9d5c84.png" alt-text="Illustration that shows how network security group security rules control traffic to virtual machines." border="false":::
+:::image type="content" source="../media/security-groups-7a9d5c84.png" alt-text="Diagram that shows how network security group security rules control traffic to virtual machines." border="false":::
 
 In this virtual network configuration, there are three subnets. Subnet 1 contains two virtual machines: VM 1 and VM 2. Subnet 2 and Subnet 3 each contain one virtual machine: VM 3 and VM 4, respectively. Each VM has a network interface card (NIC).
 

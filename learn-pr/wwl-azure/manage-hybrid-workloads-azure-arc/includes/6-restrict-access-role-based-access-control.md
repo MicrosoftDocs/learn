@@ -2,14 +2,14 @@ Azure Monitor stores logs collected from managed systems in a Log Analytics work
 
 Determining which of these two mechanisms takes effect is based on several factors, including:
 
- -  Access mode. This represents the method you use to access the workspace, and defines the access control mode that's automatically applied. There are two access modes:
-    
-     -  Workspace-context. This access mode is applicable when accessing logs from the **Azure Monitor** blade in the Azure portal. In this case, the scope is set to all data in all tables in the workspace.
-     -  Resource-context. This access mode is applicable when you're accessing logs from the pane of an individual resource. In this case, the scope is set to all data for that specific resource only.
- -  Access control mode. This is a workspace-level setting that defines how permissions are determined on the workspace and resource level. There are two access control modes:
-    
-     -  Require workspace permissions. This mode is based on the workspace-level permissions when operating in context of the workspace or resource.
-     -  Use resource or workspace permissions. This mode is based on the workspace-level permissions when operating in the workspace context, and on resource-level permissions when operating in the resource context. This is the default setting for all workspaces.
+- Access mode. This represents the method you use to access the workspace, and defines the access control mode that's automatically applied. There are two access modes:
+
+  - Workspace-context. This access mode is applicable when accessing logs from the **Azure Monitor** blade in the Azure portal. In this case, the scope is set to all data in all tables in the workspace.
+  - Resource-context. This access mode is applicable when you're accessing logs from the pane of an individual resource. In this case, the scope is set to all data for that specific resource only.
+- Access control mode. This is a workspace-level setting that defines how permissions are determined on the workspace and resource level. There are two access control modes:
+
+  - Require workspace permissions. This mode is based on the workspace-level permissions when operating in context of the workspace or resource.
+  - Use resource or workspace permissions. This mode is based on the workspace-level permissions when operating in the workspace context, and on resource-level permissions when operating in the resource context. This is the default setting for all workspaces.
 
 While this works as intended for Azure resources, it poses a challenge when accessing data collected from on-premises computers. This is because they aren't subject to Azure RBAC. Azure Arc helps remediate this, because it assigns a resource ID and a corresponding Azure resource group to each non-Azure computer. This way, you can configure access to logs collected from on-premises computers using the same mechanism that applies to Azure resources.
 
@@ -17,10 +17,9 @@ While this works as intended for Azure resources, it poses a challenge when acce
 
 To manage access using RBAC for on-premises resources, use the following procedure:
 
-1.  From the Azure portal, navigate to Azure Arc.
-2.  Select **Manage servers**.
-3.  From the list of managed servers, select the appropriate server, and then in the navigation pane, select **Access control (IAM)**. :::image type="content" source="../media/m14-access-control-1-2f9f67de.png" alt-text="A screenshot of the Access control (IAM) page in the Azure portal, for the selected VM, ContosoVM1. The details pane has five tabs: Check access (selected), Role assignments, Deny assignments, Classic administrators, and Roles.":::
-    
+1. From the Azure portal, navigate to Azure Arc.
+1. Select **Manage servers**.
+1. From the list of managed servers, select the appropriate server, and then in the navigation pane, select **Access control (IAM)**. :::image type="content" source="../media/m14-access-control-1-2f9f67de.png" alt-text="A screenshot of the Access control (IAM) page in the Azure portal, for the selected VM, ContosoVM1. The details pane has five tabs: Check access (selected), Role assignments, Deny assignments, Classic administrators, and Roles.":::
 
 The following table describes the five available tabs on the Access control (IAM) page, and the actions that you can perform on them.
 
@@ -37,7 +36,7 @@ The following table describes the five available tabs on the Access control (IAM
     Check access
   :::column-end:::
   :::column:::
-    You can use the links on the **Check access** tab to add a role assignment on the resource, review role assignments, and view deny assignments. You can also search for specific Azure AD security principals such as users and groups, and determine the access levels that they have on the resource. Learn more at [Quickstart: View the access a user has to Azure resources](https://aka.ms/check-access?azure-portal=true).
+    You can use the links on the **Check access** tab to add a role assignment on the resource, review role assignments, and view deny assignments. You can also search for specific Microsoft Entra security principals such as users and groups, and determine the access levels that they have on the resource. Learn more at [Quickstart: View the access a user has to Azure resources](https://aka.ms/check-access?azure-portal=true).
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -73,15 +72,13 @@ The following table describes the five available tabs on the Access control (IAM
   :::column-end:::
 :::row-end:::
 
-
 :::image type="content" source="../media/m14-roles-de3a3136.png" alt-text="A screenshot of the Access control (IAM) page in the Azure portal for the selected VM: ContosoVM1. The details pane has five tabs: Check access, Role assignments, Deny assignments, Classic administrators, and Roles (selected). A list of roles displays.":::
 
-
 > [!TIP]
-> On the toolbar, select **+ Add** to add a co-administrator or a new role assignment.
+> On the toolbar, select **+ Add** to add a coadministrator or a new role assignment.
 
 ## Additional reading
 
 You can learn more by reviewing the following document.
 
- -  [What is Azure role-based access control (Azure RBAC)?](https://aka.ms/role-based-access-control-overview?azure-portal=true)
+- [What is Azure role-based access control (Azure RBAC)?](https://aka.ms/role-based-access-control-overview?azure-portal=true)

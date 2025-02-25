@@ -1,24 +1,24 @@
-Control actions help your logic app workflow make decisions. The social media monitoring app will use a control action to test a tweet's sentiment score and branch the workflow path, based on whether the score is positive or negative. In this unit, we'll look at the four control actions that help you manage the execution path through your workflow. We'll also see how to use the workflow designer to add and configure a control action.
+Control actions help you add decisions and alternate action paths to your workflow. The news monitoring app uses a control action to check an article's sentiment ranking and branch the workflow path, based on whether the ranking is positive or negative. In this unit, we look at the four control actions that help you manage the execution path through your workflow.
 
 ## *Condition* action
 
-A *condition* control action is an *if* statement that lets your workflow split into two paths, based on whether based on the data you're processing. This action consists of a Boolean expression and two actions. At runtime, the execution engine evaluates the expression, and chooses an action based on whether the expression is true or false.
+The **Condition** action is actually an **`If`** statement that lets you split your workflow into two paths, based on whether the specified condition evaluates to true or false. The condition has three parts: a Boolean expression and two actions. At runtime, the Azure Logic Apps execution engine evaluates the expression, and chooses an action based on whether the expression is true or false.
 
-For example, you might want to route an expense report to a different manager based on the amount. If you're processing an email, you might need to test whether the message is flagged as high-priority. In our social media monitoring app, we'll use a *condition* statement to branch based on the tweet's sentiment score. The following diagram shows how our workflow uses the *condition* control action.
+For example, you might want to route an expense report to a different manager based on the amount. If you're processing an email, you might need to test whether the message is flagged as high-priority. In the example news monitoring app, use the **Condition** action to branch based on the article's sentiment label. The following diagram shows how the workflow uses the **Condition** action:
 
-:::image type="content" source="../media/if-statement-social-media.png" alt-text="Diagram shows a conceptual view for the entire social media monitoring app. The *condition* control action appears highlighted." border="flse" lightbox="../media/if-statement-social-media-big.png":::
+:::image type="content" source="../media/if-statement.png" alt-text="Diagram shows a conceptual view for the entire news monitoring app. The condition action appears highlighted." border="flse" lightbox="../media/if-statement-big.png":::
 
 ### Types and operators
 
-You can test numeric, string, Boolean, and JSON objects in your condition control actions. The following pseudocode shows one example for each simple type:
+In your **Condition** action, you can compare numeric, string, Boolean, and JSON objects. The following pseudocode shows an example for several data types:
 
 ```language-plaintext
-if (score is-greater-than 0.7)              ... // Numeric
-if (TweetedBy does-not-contain "MyCompany") ... // String
-if (Favorited is-equal-to true)             ... // Boolean
+if (Favorited is-equal-to true)             ... // Boolean type
+if (URL does-not-contain "mycompany")       ... // String type
+if (confidenceScores is-equal-to 1)         ... // Numeric type
 ```
 
-Each type has a set of operators you can use in your comparisons. The following table lists the operators for each type:
+Each data type provides a set of operators to use in your comparisons. The following table lists the operators for each type:
 
 <!-- docsTest:disable -->
 
@@ -35,50 +35,55 @@ Each type has a set of operators you can use in your comparisons. The following 
 
 <!-- docsTest:enable -->
 
-Most of the operations are intuitive, but two cases are worth mentioning:
+Most of the operators are intuitive, but two have the following considerations:
 
 - String comparisons are all case sensitive.
-- JSON comparisons use what's called a *deep* equals. This comparison means that the equality operators will compare the entire object, including any descendant tokens inside complex objects.
+
+- JSON comparisons use a *deep* equals. This comparison means that the equality operators compare the entire object, including any descendant tokens inside complex objects.
 
 ### Combine expressions using **AND** and **OR**
 
-Azure Logic Apps lets you create complex expressions by combining conditions using **AND** or **OR**. Suppose you wanted to identify tweets that are neutral in their sentiment where a score close to 0.5 is neutral. You can write an expression similar to the following pseudocode:
+Azure Logic Apps lets you create complex expressions by combining conditions using the **AND** or **OR** operator.
+
+For example, suppose you wanted to identify articles that are neutral and mixed in their sentiment. You can write an expression similar to the following pseudocode:
 
 ```language-plaintext
-if (score is-greater-than 0.4 AND score is-less-than 0.6)
+if (sentiment is-equal-to neutral OR sentiment is-equal-to mixed)
 ```
 
 ### Data availability
 
-Azure Logic Apps makes the data from all previous steps available in subsequent steps. This feature means that your expressions can use values generated by any of the previous steps. You can even combine values from different steps in one expression. For example, the following pseudocode looks for tweets with positive sentiment that were *not* sent by your company. Notice that the **score** comes from the **Detect sentiment** action while the **TweetedBy** value is from the **When a new tweet is posted** trigger.
+Azure Logic Apps makes the outputs from all previous steps in a workflow available in subsequent steps. This feature means that your expressions can use values generated by any previous step. You can even combine values from different steps into one expression.
+
+For example, the following pseudocode looks for articles with positive sentiment that your company write. The **sentiment** value comes from the **Sentiment** action, while the **URL** value comes from the **On a new news article** trigger.
 
 ```language-plaintext
-if (score is-greater-than 0.7 AND TweetedBy does-not-contain "MyCompany")
+if (sentiment is-equal-to positive AND URL does-not-contain "mycompany")
 ```
 
 ### Create complex expressions with groups
 
-Suppose that you want to build an expression to identify influential tweets. You decide that there are two criteria that would qualify:
+Suppose you want to build an expression that identifies influential and relevant articles. You decide that the following criteria help qualify these articles:
 
-- The sentiment score is above 0.9 and the tweet has been marked as a favorite.
-- The retweet count is greater than 1000.
+- The sentiment is positive.
+- The category is "Sports" or "Business".
 
-You want to build an expression like the following pseudocode to capture this idea:
+To capture these criteria, you want to build an expression similar to the following pseudocode, but you can't use the **AND** with the **OR** operator:
 
 ```language-plaintext
-if (score is-greater-than 0.9 AND Favorited is-equal-to true OR RetweetCount is-greater-than 1000) // Error, cannot mix AND and OR
+if (sentiment is-equal-to positive AND Category is-equal-to Sports OR Category is-equal-to Business) // Error, can't mix AND with OR
 ```
 
-Azure Logic Apps indirectly supports this expression, and you can use a feature called *groups* to enable this support. A *group* is a sequence of expressions combined with either **AND** or **OR**. You can't mix **AND** and **OR** within a group.
+Azure Logic Apps indirectly supports this expression, so you can still complete this task, but in another way. Instead, you can use a *group*, which is a sequence of expressions combined with either **AND** or **OR**. You can't mix **AND** and **OR** within a group.
 
-Let's look at a few examples expressed as pseudocode. To help make the examples easier to read, we'll use lowercase letters to represent the expressions that we need to combine. The first example below is a legal group, but the second one isn't legal:
+Let's look at a few examples expressed as pseudocode. To make the examples easier to read, use lowercase letters to represent the expressions that you need to combine. The first example is a valid group, but the second one isn't valid:
 
 ```language-plaintext
 if (a AND b AND c) // OK
-if (a AND b OR  c) // Error, cannot mix AND and OR
+if (a AND b OR c) // Error, can't mix AND and OR
 ```
 
-Instead, you'd have to create a group for the expressions connected by **AND** in the preceding example. You then use **OR** to connect the group to the other expression. We use brackets in the following pseudocode to represent a group:
+Instead, for the preceding example, you have to create a group for the expressions connected by **AND**. You then use **OR** to connect the group to the other expression. To represent a group, use brackets in the following pseudocode:
 
 ```language-plaintext
 if ([a AND b] OR c) // OK
@@ -86,53 +91,57 @@ if ([a AND b] OR c) // OK
 
 ## *Switch* action
 
-A *switch* control action compares a value against several cases and executes only the one that matches. The supported types for a *switch* expression are *string* and *integer*. A *switch* can include a *default* action that runs if there's no match.
+The **Switch** action compares a value against several cases and executes only the one that matches. A **Switch** expression supports the **string** and **integer** data types. The **Switch** action also includes a *default* action that runs if no match exists.
 
-For example, suppose you are processing an email message and want to respond differently based on the message **Importance**. The **Importance** in an Outlook email is an integer between 0 and 2. The following pseudocode shows how you might build a *switch* action for email importance.
+For example, suppose you're processing an email message and want to respond differently based on the message's importance. In an Outlook email, the **Importance** value is an integer between 0 and 2. To build a *switch* action for email importance, you might use logic similar to the following pseudocode:
 
 ```language-plaintext
 switch (Importance)
-  case 0: ... // action(s) for low importance
-  case 1: ... // action(s) for medium importance
-  case 2: ... // action(s) for high importance
+  case 0: ... // Actions for high importance
+  case 1: ... // Actions for medium importance
+  case 2: ... // Actions for low importance
   default: ...
 ```
 
-## *Foreach* loop
+## *For each* loop
 
-A *foreach* loop control action processes an array. The loop performs the same actions on each array item. By default, the actions for each array element run in parallel, although you can control this behavior in the loop's configuration.
+A **For each** loop action processes an array. The loop performs the same actions on each array item. By default, the actions for each array item run in parallel, although you can control this behavior in the loop's settings.
 
-For example, part of the tweet data returned by the **When a new tweet is posted** trigger is an array of URLs for the media included in the tweet. Suppose you wanted to insert each URL into its own row in a database. You could use a *foreach* action like the following pseudocode to do the processing:
+For example, the **Bing Search** connector has a **List news by query** action. The action's output is an array of news articles, which contains a URL for each article. Suppose you wanted to insert each URL into a row in a database. You can use the **For each** action to do the processing as the following pseudocode shows:
 
 ```language-plaintext
-foreach url in MediaUrls
-    insert-row
+foreach url in NewsArticle
+   insert-row
 ```
 
 ## *Until* loop
 
-The *until* loop control action runs a group of actions multiple times. You can set three different stop criteria and the loop runs until one of them is true:
+The **Until** loop action runs a group of actions at least once and repeats until any of the following stop criteria are true:
 
-- Condition: An expression evaluated after every iteration
+- Condition: An expression that is evaluated after every iteration
 - Count: The maximum number of iterations. The default is 60.
-- Timeout: The maximum clock time allowed specified using ISO 8601 format. The default is one hour.
+- Timeout: The maximum allowed run duration, which is specified in ISO 8601 format. The default is one hour.
 
-You can use this loop to process data, but this loop also a good option when you need to retry a networking operation until the operation succeeds or times out. For example, suppose your workflow has to run an action that makes an HTTP request. You can use an *until* loop similar to the example shown in the following pseudocode where the time value `PT5M` is equal to five minutes:
+You can use this loop to process data, but this loop is also a good option for cases such as retrying a networking operation until the operation succeeds or times out. For example, suppose your workflow has to run an action that makes an HTTP request. You can use an **Until** loop in the example described by the following pseudocode where the **`PT5M`** time value is equal to five minutes:
 
 ```language-plaintext
 repeat
-    HTTP Get
+    HTTP GET
 until (StatusCode is-equal-to 200 OR Count is-greater-than 3 OR Timeout is-greater-than PT5M)
 ```
 
-## Add a control action using the designer
+## Control actions in the designer
 
-The workflow designer gives you a visual way to add and configure a control action. All control actions are packaged inside the **Control** connector, so the first step is to find this connector. After you find the connector, you'll can select from the control actions previously discussed and a few others that are useful, but not directly related to our goal of managing control flow. The following screenshot shows the available control actions displayed in the designer:
+Control actions run natively within the Azure Logic Apps execution engine, so they're called "built-in" or "in-app" operations. In the connector gallery, all control actions are packaged inside the **Control** collection. After you find this collection in the gallery, you can select any of the previously described control actions. The following screenshot shows the control actions available for you to select:
 
-:::image type="content" source="../media/control-actions-designer.png" alt-text="Screenshot shows the actions in the **Control** connector in the workflow designer. The list includes the following control flow actions: **Condition**, **For each**, **Switch**, and **Until**." border="false":::
+:::image type="content" source="../media/control-actions-designer.png" alt-text="Screenshot shows **Control** collection and available control actions." lightbox="../media/control-actions-designer.png":::
 
-The designer also provides a visual way for you to build complex expressions, including groups. The following screenshot shows a *condition* action displayed in the designer:
+> [!TIP]
+>
+> If you don't see all the actions, next to collection name, select **See more**.
 
-:::image type="content" source="../media/condition-action-designer.png" alt-text="Screenshot shows a configured **Condition** action in the workflow designer. The image contains a **Sentiment** action followed by a **Condition** action. The **Condition** action has a simple expression that tests whether the sentiment score is greater than 0.7." border="false":::
+To evaluate the sentiment in the workflow, add the **Condition** control action, which adds an **`If`** statement. The **Condition** action provides a way to build your Boolean expression. To create complex expressions using groups, the **New item** list includes the **Add group** option, for example:
 
-In our social media monitoring app, we'll use the **Condition** control action to add an if-statement to test the sentiment score.
+:::image type="content" source="../media/condition-action-designer.png" alt-text="Screenshot shows the workflow designer with a **Sentiment** action followed by a **Condition** action. A simple expression checks whether the sentiment ranking is positive." lightbox="../media/condition-action-designer.png":::
+
+The next unit shows how to add and configure a control action with two branches in the workflow designer.

@@ -2,13 +2,14 @@
 uid: learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.diagnose-issues-by-reviewing-configurations-and-metrics
 title: Diagnose issues by reviewing configurations and metrics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Diagnose issues by reviewing configurations and metrics
   description: Diagnose issues by reviewing configurations and metrics
-  ms.date: 03/06/2020
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 12/04/2023
+  author: mbender-ms
+  ms.author: mbender
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-diagnose-issues-by-reviewing-configurations-and-metrics.md)]
@@ -38,3 +39,4 @@ quiz:
       isCorrect: true
       explanation: This answer is correct.
         
+

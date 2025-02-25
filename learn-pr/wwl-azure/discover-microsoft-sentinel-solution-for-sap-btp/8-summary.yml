@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Summary
+  description: "Summary of the module."
+  ms.date: 01/13/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

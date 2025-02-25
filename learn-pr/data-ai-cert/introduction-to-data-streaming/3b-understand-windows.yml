@@ -2,12 +2,14 @@
 uid: learn.data-ai.introduction-to-data-streaming.understand-windows
 title: Understand window functions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand window functions
   description: "Understand window functions"
   ms.date: 12/08/2022
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

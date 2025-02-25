@@ -4,11 +4,10 @@ title: Monitor an Azure Virtual Machine with Azure Monitor
 metadata:
   title: Monitor an Azure Virtual Machine with Azure Monitor
   description: "Monitor an Azure Virtual Machine with Azure Monitor"
-  ms.date: 12/13/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 2
@@ -21,10 +20,10 @@ quiz:
     choices:
     - content: "The Log Analytics workspace stores all the data from monitoring."
       isCorrect: true
-      explanation: "That's correct. You can choose an appropriate workspace, or select to create a new one at this point in the process."
+      explanation: "Correct. You can choose an appropriate workspace, or select to create a new one at this point in the process."
     - content: "The Log Analytics workspace is used to define who has access to the logged data."
       isCorrect: false
-      explanation: "That's incorrect. The workspace is used to gather and store data from monitored VMs."
+      explanation: "Incorrect. The workspace is used to gather and store data from monitored VMs."
     - content: "The Log Analytics workspace is used to retrieve monitoring settings for the VM."
       isCorrect: false
-      explanation: "That's incorrect. The workspace is used to gather and store data from monitored VMs."
+      explanation: "Incorrect. The workspace is used to gather and store data from monitored VMs."

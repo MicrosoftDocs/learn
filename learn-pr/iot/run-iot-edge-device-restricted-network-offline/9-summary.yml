@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.run-iot-edge-device-restricted-network-offline.summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 05/01/2020
   author: abartolo
   ms.author: abartolo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -71,3 +72,4 @@ quiz:
     - content: 'A Role Based Access Control (RBAC) assignment'
       isCorrect: false
       explanation: Incorrect. Please try again.
+

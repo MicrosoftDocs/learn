@@ -3,23 +3,32 @@ uid: learn.wwl.secure-hyper-v-workloads
 metadata:
   title: Secure Hyper-V workloads
   description: "Secure Hyper-V workloads"
-  ms.date: 09/16/2022
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: windows-server
+  ai-usage: human-only
 title: Secure Hyper-V workloads
-summary: Learn about securing Hyper-V workloads in Windows Server 2019, installing and configuring the Host Guardian Service (HGS), the attestation modes available with the HGS, and the creation and deployment of shielded virtual machines (VMs).
+summary: Learn about securing Hyper-V workloads in Windows Server, installing and configuring the Host Guardian Service (HGS), the attestation modes available with the HGS, and the creation and deployment of shielded virtual machines (VMs).
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the features and functionality of the HGS in Windows Server.
-  - Describe the attestation options available with the HGS.
-  - Describe shielded VMs, their creation, and their deployment.
+
+  -   Describe the features and functionality of the HGS in Windows Server.
+
+  -   Describe the attestation options available with the HGS.
+
+  -   Describe shielded VMs, their creation, and their deployment.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Windows Server 2012 or Windows Server 2016.
-  - Working with virtualization technologies.
-  - Encryption technologies and concepts.
+
+  -   Windows Server.
+
+  -   Working with virtualization technologies.
+
+  -   Encryption technologies and concepts.
 iconUrl: /training/achievements/secure-hyper-v-workloads.svg
 levels:
 - intermediate

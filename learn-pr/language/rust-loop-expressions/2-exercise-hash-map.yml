@@ -6,8 +6,7 @@ metadata:
   ms.date: 09/20/2021
   author: GitHubber17
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: "Exercise: Use a hash map to track orders"
 durationInMinutes: 7

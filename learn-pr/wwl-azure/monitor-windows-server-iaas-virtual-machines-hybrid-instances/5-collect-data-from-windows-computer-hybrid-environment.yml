@@ -4,11 +4,10 @@ title: Collect data from a Windows computer in a hybrid environment
 metadata:
   title: Collect data from a Windows computer in a hybrid environment
   description: "Collect data from a Windows computer in a hybrid environment"
-  ms.date: 12/13/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -21,10 +20,10 @@ quiz:
     choices:
     - content: "The administrator must regenerate the Primary key."
       isCorrect: false
-      explanation: "That's incorrect. There's no need to do this. The administrator must download the appropriate agent."
+      explanation: "Incorrect. There's no need to do this. The administrator must download the appropriate agent."
     - content: "The administrator must download the appropriate agent for the VM."
       isCorrect: true
-      explanation: "That's correct. Each monitored VM must have the appropriate agent installed."
+      explanation: "Correct. Each monitored VM must have the appropriate agent installed."
     - content: "The administrator must regenerate the Secondary key."
       isCorrect: false
-      explanation: "That's incorrect. There's no need to do this. The administrator must download the appropriate agent."
+      explanation: "Incorrect. There's no need to do this. The administrator must download the appropriate agent."

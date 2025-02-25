@@ -1,3 +1,5 @@
+# Enabling the Integrated Cache
+
 Enabling the integrated cache is done in two primary steps:
 
 - Creating a dedicated gateway in your Azure Cosmos DB for NoSQL account
@@ -9,45 +11,45 @@ First, you must provision a dedicated gateway in your account. This action can b
 
 [![Dedicated Gateway navigation open in Azure Cosmos DB blade](../media/3-dedicated-gateway.png)](../media/3-dedicated-gateway-full.png#lightbox)
 
-As part of the provisioning process, you will be asked to configure the number of gateway instances and an SKU. These settings determine the number of nodes and the compute and memory size for each gateway node. The number of nodes and SKU can be modified later as the amount of data you need to cache increases.
+As part of the provisioning process, you're asked to configure the number of gateway instances and an SKU. These settings determine the number of nodes and the compute and memory size for each gateway node. The number of nodes and SKU can be modified later as the amount of data you need to cache increases.
 
 [![Dedicated Gateway configuration options for SKU and number of nodes](../media/3-dedicated-gateway-config.png)](../media/3-dedicated-gateway-config-full.png#lightbox)
 
-Once the new gateway is provisioned, you can get the connection string for the gateway.
+Once the new gateway is provisioned, you can get the endpoint for the gateway.
 
 > [!NOTE]
-> The gateway connection string is a distinct connection string from the one used typically with an Azure Cosmos DB for NoSQL client.
-
-[![Keys pane with multiple connection strings both using and not using the dedicated gateway](../media/3-connection-string.png)](../media/3-connection-string-full.png)
+> The gateway endpoint is distinct from the typical endpoint used with an Azure Cosmos DB for NoSQL client.
 
 ## Update .NET SDK code
 
 For the .NET SDK client to use the integrated cache, you must make sure that three things are true:
 
-- The client uses the dedicated gateway connection string instead of the typical connection string
+- The client uses the dedicated gateway endpoint instead of the typical endpoint
 - The client is configured to use **Gateway** mode instead of the default **Direct** connectivity mode
 - The client’s consistency level must be set to **session** or **eventual**
 
-First, ensure that the connection string is set to the dedicated gateway’s connection string. Typically, Azure Cosmos DB for NoSQL connection strings are in the format of `<cosmos-account-name>.documents.azure.com`. For the dedicated gateway, the connection string is in the structure of `<cosmos-account-name>.sqlx.cosmos.azure.com`.
+First, ensure that the endpoint is set to the dedicated gateway’s endpoint. Typically, Azure Cosmos DB for NoSQL endpoints are in the format of `<cosmos-account-name>.documents.azure.com`. For the dedicated gateway, the endpoint is in the structure of `<cosmos-account-name>.sqlx.cosmos.azure.com`.
+
+Instead of using an account key, configure the SDK to use a **managed identity** for authentication. The updated code follows.
 
 ```csharp
-string connectionString = "AccountEndpoint=https://<cosmos-account-name>.sqlx.cosmos.azure.com/;AccountKey=<cosmos-key>;";
+using Azure.Identity;
+using Microsoft.Azure.Cosmos;
+
+string endpoint = "https://<cosmos-account-name>.sqlx.cosmos.azure.com/";
+
+CosmosClientOptions options = new()
+{
+    ConnectionMode = ConnectionMode.Gateway,
+    ConsistencyLevel = ConsistencyLevel.Session // or ConsistencyLevel.Eventual
+};
+
+// Use DefaultAzureCredential to authenticate with managed identity.
+CosmosClient client = new(endpoint, new DefaultAzureCredential(), options);
 ```
 
 > [!NOTE]
-> For example, if your account name is **dp420** and your key is: **fDR2ci9QgkdkvERTQ==**, then the connection string would be:
-> ``AccountEndpoint=https://dp420.sqlx.cosmos.azure.com/;AccountKey=fDR2ci9QgkdkvERTQ==;``
-
-Next, the .NET **CosmosClient** class must be configured using a **CosmosClientOptions** instance. By default, the .NET SDK uses the **Direct** connectivity mode. The client options object sets the connectivity mode to **Gateway**.
-
-```csharp
-CosmosClientOptions options = new()
-{
-    ConnectionMode = ConnectionMode.Gateway
-};
-
-CosmosClient client = new (connectionString, options);
-```
+> Ensure that your application has a managed identity enabled and that the managed identity has been granted the **Cosmos DB Built-in Data Contributor** role on the Azure Cosmos DB account.
 
 ### Configure point read operations
 
@@ -55,12 +57,17 @@ To configure a point read operation to use the integrated cache, you must create
 
 ```csharp
 string id = "9DB28F2B-ADC8-40A2-A677-B0AAFC32CAC8";
-PartitionKey partitionKey = new ("56400CF3-446D-4C3F-B9B2-68286DA3BB99");
+PartitionKey partitionKey = new("56400CF3-446D-4C3F-B9B2-68286DA3BB99");
 
-ItemResponse<Product> response = await container.ReadItemAsync<Product>(id, partitionKey, requestOptions: operationOptions);
+ItemRequestOptions requestOptions = new()
+{
+    ConsistencyLevel = ConsistencyLevel.Session
+};
+
+ItemResponse<Product> response = await container.ReadItemAsync<Product>(id, partitionKey, requestOptions: requestOptions);
 ```
 
-To observe the RU usage, use the **RequestCharge** property of the response variable. The first invocation of this read operation will use the expected number of request units. In this example, that would be one RU for a point read operation. Subsequent requests will not use any request units as the data will be pulled from the cache until it expires.
+To observe the RU usage, use the **RequestCharge** property of the response variable. The first invocation of this read operation uses the expected number of request units. In this example, it would be one RU for a point read operation. Subsequent requests don't use any request units as the data is pulled from the cache until it expires.
 
 ```csharp
 Console.WriteLine($"Request charge:\t{response.RequestCharge:0.00} RU/s");
@@ -82,7 +89,7 @@ QueryRequestOptions queryOptions = new()
 FeedIterator<Product> iterator = container.GetItemQueryIterator<Product>(query, requestOptions: queryOptions);
 ```
 
-You can also observe the RU usage by getting the **RequestCharge** property of each **FeedResponse** object associated with each page of results. If you aggregate the request charges, you will get the total request charge for the entire query. Much like with point reads, the first query will use the typical number of request units. Any extra queries will use no request units until the data expires in the cache.
+You can also observe the RU usage by getting the **RequestCharge** property of each **FeedResponse** object associated with each page of results. If you aggregate the request charges, you get the total request charge for the entire query. Much like with point reads, the first query uses the typical number of request units. Any extra queries use no request units until the data expires in the cache.
 
 ```csharp
 double totalRequestCharge = 0;

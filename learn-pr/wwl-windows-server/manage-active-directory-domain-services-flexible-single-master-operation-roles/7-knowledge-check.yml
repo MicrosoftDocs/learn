@@ -4,10 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2023
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -20,32 +20,32 @@ quiz:
     choices:
     - content: "RODC"
       isCorrect: false
-      explanation: "That's incorrect. This option is not available for the first domain controller in a forest."
+      explanation: "Incorrect. This option isn't available for the first domain controller in a forest."
     - content: "Global catalog"
       isCorrect: true
-      explanation: "That's correct. This option is selected by default for the first domain controller in a forest."
+      explanation: "Correct. This option is selected by default for the first domain controller in a forest."
     - content: "DNS name"
       isCorrect: false
-      explanation: "That's incorrect. When you create the first domain controller for a domain, you must specify the FQDN."
+      explanation: "Incorrect. When you create the first domain controller for a domain, you must specify the FQDN."
   - content: "What does the global catalog contain?"
     choices:
     - content: "A copy of all objects and their attributes from all domains in an AD DS forests"
       isCorrect: false
-      explanation: "That's incorrect. The global catalog does not contain all the attributes for each object; instead, the global catalog maintains the subset of attributes that are most likely to be useful in cross-domain searches."
+      explanation: "Incorrect. The global catalog doesn't contain all the attributes for each object; instead, the global catalog maintains the subset of attributes that are most likely to be useful in cross-domain searches."
     - content: "A copy of all objects and some of their attributes from all domains in an AD DS forest"
       isCorrect: true
-      explanation: "That's correct. The global catalog contains the subset of attributes that are most likely to be useful in cross-domain searches."
+      explanation: "Correct. The global catalog contains the subset of attributes that are most likely to be useful in cross-domain searches."
     - content: "A copy of all objects and all their attributes from all domains in an AD DS forest"
       isCorrect: false
-      explanation: "That's incorrect. The global catalog contains some of the attributes for each object in the AD DS forest."
+      explanation: "Incorrect. The global catalog contains some of the attributes for each object in the AD DS forest."
   - content: "Which of the following operations master is a forest-level operations master?"
     choices:
     - content: "Infrastructure"
       isCorrect: false
-      explanation: "That's incorrect. Infrastructure master is a domain-level operations master."
+      explanation: "Incorrect. Infrastructure master is a domain-level operations master."
     - content: "Domain naming"
       isCorrect: true
-      explanation: "That's correct. Domain naming master is a forest-level operations master."
+      explanation: "Correct. Domain naming master is a forest-level operations master."
     - content: "RID"
       isCorrect: false
-      explanation: "That's incorrect. RID master is a domain-level operations master."
+      explanation: "Incorrect. RID master is a domain-level operations master."

@@ -3,11 +3,10 @@ uid: learn.language.go-errors-logs.2-logs
 metadata:
   title: Learn how to log in Go
   description: Provide more output information in Go programs by using logs.
-  ms.date: 01/21/2021
+  ms.date: 02/12/2021
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Learn how to log in Go
 durationInMinutes: 7

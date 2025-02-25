@@ -1,18 +1,18 @@
-Azure Cosmos DB for NoSQL is a fully managed NoSQL database service for modern app development. It provides guaranteed single-digit millisecond response times and 99.999-percent availability, backed by SLAs with automatic and instant scalability.
+Azure Cosmos DB for NoSQL is a fully managed NoSQL database service for modern and AI app development. It provides guaranteed single-digit millisecond response times, 99.999-percent availability and [vector database capabilities][azure/cosmos-db/vector-database], backed by SLAs with automatic and instant scalability.
 
 For enterprise scenarios, Azure Cosmos DB for NoSQL has a comprehensive suite of financially backed [service level agreements (SLAs)][azure.microsoft.com/support/legal/sla/cosmos-db] that cover throughput, consistency, availability, and latency.
 
 ## Common use cases for the Azure Cosmos DB for NoSQL
 
-As a fast NoSQL database with a flexible API, Azure Cosmos DB for NoSQL is well suited for high-performance applications with global ambition. Speed and flexibility make Azure Cosmos DB for NoSQL great for web, retail, IoT, gaming, and mobile applications. Azure Cosmos DB for NoSQL is a good fit for applications that require flexibility, low response time, and transactions at massive volume or velocity.
+As a fast NoSQL database with a flexible API and vector indexing and search capabilities, Azure Cosmos DB for NoSQL is well suited for many types and sizes of applications. From the very small scale, to high-performance applications with global ambition. Speed and flexibility make Azure Cosmos DB for NoSQL great for Generative AI, web, retail, IoT, gaming, and mobile applications. Azure Cosmos DB for NoSQL is a good fit for applications that require flexibility, low cost, fast response times, and the ability to scale to massive volume or velocity.
 
-### IoT/telemetry
+### Generative AI
 
-IoT sensor workloads can be diverse and unpredictable. These workloads require a database platform that is responsive and capable of elastic scale to meet the needs of as many, or as few, data collection devices deployed at any point in time. In many cases, IoT workloads can also write massive volumes of data and would benefit from a write-optimized database platform. Azure Cosmos DB for NoSQL is optimized for write-heavy workloads. Operations on a single document are atomic with fast and predictable indexed write speeds. Azure Cosmos DB for NoSQL is also globally distributed and elastic to meet the needs of various IoT workloads.
+Generative AI applications can be diverse and unpredictable. These workloads require a database platform that is cost-efficient, responsive and scalable. Users can store vectors directly in their documents with traditional schema-free data and high-dimensional vectors as other properties. This colocation of data and vectors allows for efficient indexing and searching, as the vectors are stored in the same logical unit as the data they represent. Keeping vectors and data together simplifies data management, AI application architectures, and the efficiency of vector-based operations.
 
-![Architectural diagram for an IoT workload showing increasing numbers of IoT device sensors sending data to an Azure IoT Hub. Azure Databricks then ingests and aggregates the real-time data in JSON format for storage in Azure Cosmos DB. Finally, Azure Synapse Analytics is used to perform a deeper analysis of the data stored in Azure Cosmos DB.](../media/4-iot-case.png)
+![Architectural diagram for a Generative AI workload showing a multi-tenant AI Agent application for end users. New or updated data is ingested with Change Feed, vectorized and stored. Users interact through the AI Agents which perform vector search and generate responses with the chat history stored in Azure Cosmos DB.](../media/4-ai-case.png)
 
-In this example, a growing number of IoT devices are sending sensor data to an Azure IoT Hub. Azure Stream Analytics then ingests and aggregates the data for storage in Azure Cosmos DB for NoSQL. Azure Synapse Analytics then performs near real-time analysis over the data using [Azure Synapse Link for Azure Cosmos DB][azure/cosmos-db/synapse-link].
+In this example, customers are taking transactional and operational data and vectorizing it to be used for vector search by multiple AI Agents serving customers. Azure Cosmos DB's Change Feed is used to handle ingestion and vectorization of new or updated data, making it available in near real-time for users. Customers interacting with these agents generate prompts and completions which are also stored as their chat history in Azure Comsos DB and used to provide a semantic cache for improved cost and performance.
 
 ### Retail/marketing
 
@@ -34,7 +34,7 @@ In this example, a user is using a URL to access a web site in their browser. Th
 
 Consider the scenario from the beginning of this module:
 
-> Suppose you work as the lead developer at a retail company. Your team is building your online storefront. You're designing the new storefront to be accessible across various devices including mobile. The team expects a spike in demand when the storefront is published and various "grand opening" sales begin.
+> Suppose you work as the lead developer at a retail company. Your team is building your online storefront with support for AI Agents to provide a rich experience for users. You're designing the new storefront to be accessible across various devices including mobile. The team expects a spike in demand when the storefront is published and various "grand opening" sales begin.
 
 One key part of your store's success is the ability for the company to notify users of shipping updates regardless of what device they place the order on or are currently using. Your team has worked hard on a sophisticated system to manage detailed order status tracking. The tight integration of Azure Cosmos DB with other Azure services, let's you consider building solutions that use order data in Azure Cosmos DB for NoSQL to send notification to your user's mobile devices. The notifications alert them when their package ships, or is out for delivery.
 
@@ -42,5 +42,5 @@ One key part of your store's success is the ability for the company to notify us
 
 This example is similar to the example from the introduction of this module. To build on the first example, your team has decided to introduce Azure Cosmos DB for NoSQL as the database of choice. Now, your team can use Azure Synapse Link to prepare and aggregate data for deeper analysis using Azure Synapse Analytics. Your team can also use services such as Azure Functions to react to data events with Azure Cosmos DB, and then trigger an Azure Logic Apps workflow that sends notifications to mobile devices.
 
-[azure/cosmos-db/synapse-link]: /azure/cosmos-db/synapse-link
+[azure/cosmos-db/vector-database]: /azure/cosmos-db/vector-database
 [azure.microsoft.com/support/legal/sla/cosmos-db]: https://azure.microsoft.com/support/legal/sla/cosmos-db/

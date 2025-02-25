@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.responsible-ai-content-safety
+metadata:
+  title: Use AI responsibly with Azure AI Content Safety
+  description: As the amount of user-generated online content increases, so does the need to ensure harmful material is moderated effectively. Azure AI Content Safety resource includes features to help organizations moderate and manage both user-generated and AI-generated content.
+  ms.date: 10/17/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+###########################################################################
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+  ms.collection: wwl-ai-copilot  
+  ms.service: artificial-intelligence
+title: Use AI responsibly with Azure AI Content Safety
+summary: "Azure AI Content Safety is a comprehensive tool designed to detect and manage harmful content in both user-generated and AI-generated materials. Learn how Azure AI Content Safety uses text and image APIs to help identify and filter out content related to violence, hate, sexual content, and self-harm."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe Azure AI Content Safety.
+  - Describe how Azure AI Content Safety operates.
+  - Describe when to use Azure AI Content Safety.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure and using the Azure portal. You should also have experience programming with C# or Python. If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - intermediate
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - ai-services
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - cloud-computing
+  - data-management
+units:
+- learn.wwl.responsible-ai-content-safety.introduction
+- learn.wwl.responsible-ai-content-safety.what-is-content-safety
+- learn.wwl.responsible-ai-content-safety.how-content-safety-works
+- learn.wwl.responsible-ai-content-safety.when-to-use-content-safety
+- learn.wwl.responsible-ai-content-safety.exercise
+- learn.wwl.responsible-ai-content-safety.knowledge-check
+- learn.wwl.responsible-ai-content-safety.summary
+badge:
+  uid: learn.wwl.sample-module.badge

@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.azure-evaluate-generative-ai-apps
+title: Evaluate generative AI applications
+metadata:
+  title: Evaluate generative AI applications
+  description: Explore how to evaluate generative AI applications.
+  ms.date: 10/15/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: learning-path
+summary: >
+  Explore concepts and methodologies for evaluating generative AI applications. Through code-first exercises and real-world scenarios, you'll learn to analyze and assess output quality, evaluate output using custom evaluators, and generate synthetic datasets.
+prerequisites: |
+  - An Azure subscription – [Create one for free](https://azure.microsoft.com/free/cognitive-services/)
+  - Familiarity with Azure and the Azure portal
+  - Ability to understand Python at a beginner level
+  - Developing in browser:
+    - [GitHub account](https://docs.github.com/get-started/signing-up-for-github)
+  - Developing locally:
+    - [Docker desktop](https://www.docker.com/products/docker-desktop/)
+    - [Visual Studio Code](https://code.visualstudio.com/)
+      - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - beginner
+roles:
+  - developer
+products: 
+  - azure
+  - ai-services
+  - content-safety
+modules:
+  - learn.evaluate-generative-ai-apps
+  - learn.run-evaluations-generate-synthetic-datasets
+trophy:
+  uid: learn.azure.evaluate-generative-ai-apps.badge

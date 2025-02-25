@@ -3,13 +3,12 @@ uid: learn.intro-commercial-marketplace.4-engage-customers
 title: Engage your customers
 metadata:
   title: Engage your Microsoft commercial marketplace customers
-  description: In this unit, you'll learn how you can engage your Microsoft commercial marketplace customers with different offer types
-  ms.date: 4/21/2020
-  author: marleva
-  ms.author: maevan
+  description: Learn how you can engage your Microsoft commercial marketplace customers with different offer types.
+  ms.date: 05/15/2024
+  author: JulCsc
+  ms.author: krmaddox
   manager: jasonh
-  ms.topic: interactive-tutorial
-  ms.service: marketplace
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/4-engage-customers.md)]

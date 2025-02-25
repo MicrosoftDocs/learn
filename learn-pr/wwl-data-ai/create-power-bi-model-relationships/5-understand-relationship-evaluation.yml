@@ -4,11 +4,10 @@ title: Understand relationship evaluation
 metadata:
   title: Understand relationship evaluation
   description: "Understand relationship evaluation"
-  ms.date: 04/04/2023
-  author: wwlpublish
-  ms.author: shlindsay
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/25/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 12

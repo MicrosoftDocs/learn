@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/25/2023
+  ms.date: 05/11/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -17,23 +16,23 @@ quiz:
   questions:
   - content: "What are the three deployment models for Windows Hello for Business?"
     choices:
-    - content: "Cloud Only, On-Premises, or Hybrid"
+    - content: "Cloud Only, On-premises, or Hybrid"
       isCorrect: true
-      explanation: "Correct. The Cloud Only deployment model is for organizations who only have cloud identities and do not access On-Premises resources. An On-Premises deployment model is for organizations that don't have cloud identities or use applications hosted in Azure AD. For organizations that use both On-Premises AD DS and Azure AD, businesses often use the Hybrid model."
+      explanation: "Correct. The Cloud Only deployment model is for organizations who only have cloud identities and don't access On-premises resources. An On-premises deployment model is for organizations that don't have cloud identities or use applications hosted in Microsoft Entra ID. For organizations that use both On-premises AD DS and Microsoft Entra ID, businesses often use the Hybrid model."
     - content: "Cloud Only, Manual, Hybrid"
       isCorrect: false
       explanation: "Incorrect. These items aren't the three deployment models for Windows Hello for Business. Try again."
-    - content: "Cloud Only, Manual, On-Premises"
+    - content: "Cloud Only, Manual, On-premises"
       isCorrect: false
       explanation: "Incorrect. These items aren't the three deployment models for Windows Hello for Business. Try again."
-  - content: "Contoso's IT department has implemented self-service password reset functionality for its users. What alternative authentication methods are supported on Azure AD?"
+  - content: "Contoso's IT department has implemented self-service password reset functionality for its users. What alternative authentication methods are supported on Microsoft Entra ID?"
     choices:
     - content: "Biometric thumb print, Mobile phone, Alternative email address, Security questions"
       isCorrect: false
-      explanation: "Incorrect. These items aren't the alternative authentication methods that are supported on Azure AD. Try again."
+      explanation: "Incorrect. These items aren't the alternative authentication methods that are supported on Microsoft Entra ID. Try again."
     - content: "Office phone, Mobile phone, Text message, Security questions"
       isCorrect: false
-      explanation: "Incorrect. These items aren't the alternative authentication methods that are supported on Azure AD. Try again."
+      explanation: "Incorrect. These items aren't the alternative authentication methods that are supported on Microsoft Entra ID. Try again."
     - content: "Office phone, Mobile Phone, Alternative email address, Security questions"
       isCorrect: true
-      explanation: "Correct. Besides these authentication methods, Azure AD optionally provides self-service password reset functionality. This functionality can be enabled for all users or a group of users."
+      explanation: "Correct. Besides these authentication methods, Microsoft Entra ID optionally provides self-service password reset functionality. This functionality can be enabled for all users or a group of users."

@@ -1,8 +1,8 @@
-Devices are an important part of everyday life and we depend on them for so many things.  To do their job efficiently, devices need to capture, store, and share all kinds of sensitive information about us.  We might not realize the extent to which we use some devices; they’ve become almost invisible to us. To protect the sensitive information to which our devices have access, we should be aware of how we’re using them, either consciously or subconsciously.
+Devices are an important part of everyday life and we depend on them for so many things. To do their job efficiently, devices need to capture, store, and share all kinds of sensitive information about us. We might not realize the extent to which we use some devices; they’ve become almost invisible to us. To protect the sensitive information to which our devices have access, we should be aware of how we’re using them, either consciously or subconsciously.
 
 ## What are devices?
 
-When you hear about a "device", what's the first thing that comes to mind? You'll probably think about the ones you're familiar with, such as your phone, laptop, or tablet. Devices encompass a lot more than this. For example:
+When you hear about a "device," what's the first thing that comes to mind? You'll probably think about the ones you're familiar with, such as your phone, laptop, or tablet. Devices encompass a lot more than this. For example:
 
 - USB drives.
 - Any device connected to your home network, including always-on home assistance devices, printers, TVs, appliances, door cameras, printers, and more.
@@ -33,6 +33,6 @@ Why are devices an integral part of our lives? It's largely because they collect
 
 Think about the convenience of receiving real-time traffic information on your cell phone or the annoyance when adverts are delivered to your device, based on your internet search history. This type of targeted content is sent because our devices, through their applications, collect enormous amounts of information about us. This includes location details, websites visited, how long we stay on a site, and much more.
 
-Connected devices also enable us to easily access and share information.  For example, you've probably used your cell phone to share family photos with your friends, access a work document, or pay for something at a store.
+Connected devices also enable us to easily access and share information. For example, you've probably used your cell phone to share family photos with your friends, access a work document, or pay for something at a store.
 
-Whether you use the device for work or personal business—or both—the accessible information is often sensitive and private.  Cybercriminals know this and try to compromise devices as a means to access data.
+Whether you use the device for work or personal business—or both—the accessible information is often sensitive and private. Cybercriminals know this and try to compromise devices as a means to access data.

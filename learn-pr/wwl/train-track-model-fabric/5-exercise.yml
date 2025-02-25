@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-track-model-fabric.exercise
+title: Exercise - Train and track a model in Microsoft Fabric
+metadata:
+  title: Exercise - Train and track a model in Microsoft Fabric
+  description: Exercise - Train and track a model in Microsoft Fabric
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 1/24/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise.md)]

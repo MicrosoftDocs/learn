@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.run-iot-edge-device-restricted-network-offline.configure-live-message-storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure an IoT Edge device time-to-live and message storage
   description: Configure an IoT Edge device time-to-live and message storage
   ms.date: 01/05/2020
   author: abartolo
   ms.author: abartolo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -17,3 +18,4 @@ title: Configure an IoT Edge device time-to-live and message storage
 durationInMinutes: 15
 content: |
   [!include[](includes/6-configure-live-message-storage.md)]
+

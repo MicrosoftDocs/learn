@@ -2,13 +2,17 @@
 uid: learn.wwl.mlflow-azure-databricks.exercise-use-mlflow
 title: Exercise - Use MLflow in Azure Databricks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use MLflow in Azure Databricks
-  description: "Exercise - Use MLflow in Azure Databricks"
-  ms.date: 03/22/2023
+  description: Exercise - Use MLflow in Azure Databricks
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.service: azure-databricks
+  ms.author: madiepev
+  ms.date: 08/26/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-use-mlflow.md)]
+

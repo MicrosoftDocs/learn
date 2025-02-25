@@ -4,11 +4,10 @@ title: Boolean arrays as masks
 metadata:
   title: Boolean arrays as masks
   description: Learn how to use Boolean arrays as masks.
-  ms.date: 05/19/2020
+  ms.date: 04/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |

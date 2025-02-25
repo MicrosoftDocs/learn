@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.deploy-kubernetes-cluster-to
 title: Deploy a Kubernetes cluster to Azure Stack HCI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy a Kubernetes cluster to Azure Stack HCI
   description: "Deploy a Kubernetes cluster to Azure Stack HCI"
   ms.date: 06/09/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |

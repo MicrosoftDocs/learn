@@ -4,11 +4,12 @@ title: Discover methods of repository objects by using CIM and WMI
 metadata:
   title: Discover methods of repository objects by using CIM and WMI
   description: "Discover methods of repository objects by using CIM and WMI"
-  ms.date: 11/25/2022
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

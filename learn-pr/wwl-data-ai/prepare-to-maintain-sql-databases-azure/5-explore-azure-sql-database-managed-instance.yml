@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.prepare-to-maintain-sql-databases-azure.explore-azure-sql-database-managed-instance
-title: Explore Azure SQL Database Managed Instance
+title: Explore Azure SQL Managed Instance
 metadata:
-  title: Explore Azure SQL Database Managed Instance
-  description: "Explore Azure SQL Database Managed Instance"
-  ms.date: 03/06/2023
-  author: wwlpublish
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Explore Azure SQL Managed Instance
+  description: "Explore Azure SQL Managed Instance"
+  ms.date: 2/12/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

@@ -16,17 +16,14 @@ Larger organizations might want to create a hierarchy of WSUS servers. In this s
 
 You can organize computers into groups, or deployment rings, to manage the process of deploying and approving updates. For example, you can configure a pilot group to be the first set of computers used for testing updates.
 
-WSUS can generate reports to help monitor update installations. These reports can identify which computers have not yet applied recently approved updates. Based on these reports, you can investigate why updates are not being applied.
+WSUS can generate reports to help monitor update installations. These reports can identify which computers haven't yet applied recently approved updates. Based on these reports, you can investigate why updates aren't being applied.
 
 ## Prerequisites
 
 To install the WSUS server role on a server, in addition to the requirements of the Windows Server operating system, it must meet the following requirements:
 
 - Memory. An additional 2 gigabytes (GB) of random access memory (RAM) beyond that required for the server and all other services.
-
 - Available disk space. 40 GB or greater available disk space.
-
-- Reporting. Installation of the Microsoft Report Viewer 2012 Runtime.
+- Reporting. Installation of the Microsoft Report Viewer 2012 Runtime. WSUS won't work with more recent versions of Microsoft Report Viewer and Report Viewer 2012 is beyond its supported lifespan.
 
 The WSUS database requires either a Windows Internal Database (WID) or a SQL Server database. When using a SQL Server database, the database can be hosted on another computer.
-

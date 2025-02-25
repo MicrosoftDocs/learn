@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-warehouse.security-monitor
+title: Secure and monitor your data warehouse
+metadata:
+  title: Secure and monitor your data warehouse
+  description: "Secure and monitor your data warehouse"
+  ms.date: 01/10/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-security-monitor.md)]

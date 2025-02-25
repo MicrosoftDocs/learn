@@ -1,22 +1,22 @@
-To use Form Recognizer, you first need an Azure subscription, which you can create for free, and a Form Recognizer resource. The resource provides you with an endpoint and key, with which you can access the Form Recognizer service through REST or by using the appropriate software development kit (SDK). SDKs are available in these languages:
+To use Azure AI Document Intelligence, you need an Azure subscription (you can create for free) and a Document Intelligence resource. You can get both from the Azure portal. You need the key and endpoint from the resource to connect your application to the Document Intelligence API. Document Intelligence client library SDKs are available for the following programming languages and platforms:
 
-- .NET
+- C#/.NET
 - Python
 - Java
 - JavaScript
 
-Form Recognizer is capable of analyzing JPG and PNG images, along with PDF and TIFF documents to extract and compile the key data you need in a JSON format.  
+Document Intelligence is capable of analyzing JPG and PNG images, along with PDF and TIFF documents to extract and compile the key data you need in a JSON format.
 
-## The services
+## The models
 
-There are three services with different functions available through Form Recognizer:
+There are three model categories available through the Document Intelligence API:
 
-**Layout API** extracts text, tables, selection marks, and structure information from documents and returns them in an organized JSON response. Form Recognizer can parse documents of varying type and quality, including phone-captured images, scanned documents, and PDFs.
+**Document analysis models** enable text extraction from forms and documents and return structured business-ready content ready for your organization's action, use, or progress.
 
 ![Example of Layout API with selection marks, text, and tables identified and represented in JSON format.](../media/layout-tool-example.jpeg)
 
-**Prebuilt models** analyze three unique form types: invoices, sales receipts, and business cards. This service combines Optical Character Recognition (OCR) capabilities with deep learning models that understand invoice, receipt, and business card information to extract key information in multiple languages.
+**Prebuilt models** Prebuilt models enable you to add intelligent document processing to your apps and flows without having to train and build your own models.
 
-**Custom models** are created by uploading five or more sample forms. Form Recognizer then 'trains' a custom model that can extract data tailored specifically to your forms. After you train a custom model, you can test and retrain it to reliably extract data from more forms according to your needs.
+**Custom models** are trained using your labeled datasets to extract distinct data from forms and documents, specific to your use cases. Standalone custom models can be combined to create composed models.
 
-Form Recognizer is designed to put the key information you need in one place. When you use a prebuilt or custom model, it becomes easier to find and utilize that information.
+Document Intelligence is designed to put the key information you need in one place. When you use a prebuilt or custom model, it becomes easier to find and utilize that information.

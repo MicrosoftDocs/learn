@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.store-data-azure-cosmos-aspire.exercise-store-data-azure-cosmos
+title: Exercise - Store data in Azure Cosmos DB
+metadata:
+  title: Exercise - Store data in Azure Cosmos DB
+  description: "In this exercise, you'll configure and code a .NET Aspire solution to store and retrieve data in Azure Cosmos DB."
+  ms.date: 3/22/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-store-data-azure-cosmos.md)]

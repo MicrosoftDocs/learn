@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-significant-government-strategy-actions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe significant government strategy actions
-  description: "Understand legislation, memoranda, executive orders, and policies that significantly set the government's cloud computing approach."
+  description: Understand legislation, memoranda, executive orders, and policies that significantly set the government's cloud computing approach.
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Describe significant government strategy actions
 summary: Understand legislation, memoranda, executive orders, and policies that significantly set the government's cloud computing approach.
 abstract: |
@@ -58,3 +60,4 @@ units:
 - learn.wwl.describe-significant-government-strategy-actions.summary
 badge:
   uid: learn.wwl.describe-significant-government-strategy-actions.badge
+

@@ -13,12 +13,12 @@ For this architecture, you might choose a messaging solution that uses _event hu
 - You can send and receive events in many different languages. Messages can also be received from Azure Event Hubs by using Apache Storm.
 
 - Events received by Azure Event Hubs are added to the end of its data stream.
-   - The data stream orders events according to the time they event is received.
+   - The data stream orders events according to the time the event is received.
    - Consumers can seek along the data stream by using time offsets.
 
 - Event Hubs implements a _pull_ model that differentiates it from other messaging services like Azure Service Bus queues.
    - Event Hubs holds each message in its cache and allows it to be read.
-   - When a message is read from Event Hubs, it's not deleted. The message remains for other consumers.
+   - Messages remain for other consumers.
 
 - Event Hubs doesn't have a built-in mechanism to handle messages that aren't processed as expected. 
 
@@ -42,7 +42,7 @@ Let's examine how Azure Event Hubs and other Azure services can contribute to th
 
 As you plan for how Azure Event Hubs can be a part of your messaging solution, consider the following points. 
 
-- **Consider common implementations**. Identify whether your application scenario is suited for event-hubs messaging. There are several common scenarios where Azure Event Hubs is a great messaging solution. Event hubs are ideal for live dashboarding, supporting analytics pipelines like clickstreams, and detecting anomalies like fraud or outlier actions. Event hubs are also a good solution for processing transactions with real-time analysis and archiving data.
+- **Consider common implementations**. Identify whether your application scenario is suited for event-hubs messaging. There are several common scenarios where Azure Event Hubs is a great messaging solution. Event Hubs is ideal for live dashboarding, supporting analytics pipelines like clickstreams, and detecting anomalies like fraud or outlier actions. Event hubs are also a good solution for processing transactions with real-time analysis and archiving data.
 
 - **Consider language and framework integration**. Azure Event Hubs supports sending and receiving events in many different languages. The robust language and framework support makes it easy to integrate Event Hubs with other Azure and non-Azure services.
 
@@ -52,6 +52,6 @@ As you plan for how Azure Event Hubs can be a part of your messaging solution, c
 
 - **Consider pull model benefits**. Investigate how the pull model implemented by Event Hubs can benefit your application communication. Event Hubs holds a message in its cache and allows it to be read. When a message is read, it isn't deleted. The message remains for other consumers.
 
-- **Consider message failures**. Remember Azure Event Hubs doesn't handle messages that aren't processed as expected. Suppose a message consumer malfunctions because of data format. Event Hubs won't detect this issue. The message remains until its `time-to-live` setting has expired.
+- **Consider message failures**. Remember Azure Event Hubs doesn't handle messages that aren't processed as expected. Suppose a message consumer malfunctions because of data format. Event Hubs won't detect this issue. The message remains until its `time-to-live` setting expires.
 
 - **Consider data stream access**. Event Hubs adds received events to the end of its data stream, and the events are ordered according to the time they're received. Event consumers can seek along the data stream by using time offsets.

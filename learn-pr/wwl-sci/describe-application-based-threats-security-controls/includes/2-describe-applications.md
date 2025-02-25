@@ -1,4 +1,4 @@
-Nowadays, many of us talk about applications even in our most casual conversations.  But do we really know what an application is?  To better understand how applications can become attack vectors for cybercriminals, we'll first need to identify what they know about us.
+Nowadays, many of us talk about applications even in our most casual conversations. But do we really know what an application is? To better understand how applications can become attack vectors for cybercriminals, we'll first need to identify what they know about us.
 
 ## What is software?
 
@@ -9,7 +9,7 @@ Nowadays, many of us talk about applications even in our most casual conversatio
 
 ### System software
 
-*System software* is the first thing that runs when you turn on your device, and manages the different components that make it work.  It also creates a framework that enables applications to run properly and to mitigate problems when they stop working.
+*System software* is the first thing that runs when you turn on your device, and manages the different components that make it work. It also creates a framework that enables applications to run properly and to mitigate problems when they stop working.
 
 System software can be characterized by the following:
 
@@ -30,12 +30,12 @@ Application software can be characterized by the following:
 - Doing specialized work, such as word processing, video editing, and messaging.
 - Designed for the user to interact with directly.
 - Typically, it doesn't run independently and needs system software.
-- It needs to be installed by a user.
+- Typically, it needs to be installed by a user and/or managed by a user, although many systems come preloaded with application software.
 
 Word processors, email apps, internet browsers, and image editors, are all examples of application software. More than ever, we’re using application software to do all sorts of things, so they now come in all shapes and sizes. Applications can run on all types of devices, such as desktops, mobiles, and appliances. For example, games are applications that can run on desktops, mobile devices, and even smart televisions.
 
 Applications are also becoming proactive and intelligent. For instance, the map application on your mobile phone could be tracking your location to provide real-time traffic information, even if you’re not interacting with it. Apps on your devices are collecting important data about you, like your location, how long you stay at a given place, your browser search history, and more.
 
-Typically, the information collected is shared with other apps. For example, your browser search history is often shared with social media sites, so they can provide targeted advertisements based on that information.  
+Typically, the information collected is shared with other apps. For example, your browser search history is often shared with social media sites, so they can provide targeted advertisements based on that information. 
 
 Because applications are so intertwined with our daily lives, and run on all sorts of devices, they've become the key to information about us. Cybercriminals are aware of this, and will attempt to compromise applications to get their hands on our information.

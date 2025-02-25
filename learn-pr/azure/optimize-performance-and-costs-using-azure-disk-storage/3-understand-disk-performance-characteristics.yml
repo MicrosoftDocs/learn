@@ -2,13 +2,15 @@
 uid: learn.azure.optimize-performance-and-costs-using-azure-disk-storage.understand-disk-performance-characteristics
 title: Understand disk performance characteristics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand disk performance characteristics
   description: Learn about Azure disk performance characteristics.
-  ms.date: 04/11/2023
+  ms.date: 07/16/2024
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/3-understand-disk-performance-characteristics.md)]
+

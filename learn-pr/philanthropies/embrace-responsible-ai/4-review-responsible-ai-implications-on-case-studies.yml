@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.embrace-responsible-ai.review-responsible-ai-implications-on-case-studies
+title: Review responsible AI implications on case studies
+metadata:
+  title: Review responsible AI implications on case studies
+  description: This content is a part of the 'Guided project - Embrace responsible AI' module.
+  author: yoosunee
+  ms.author: anruss
+  ms.date: 01/14/2025
+  ms.topic: unit
+  ms.collection:
+    - philanthropies-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-review-responsible-ai-implications-on-case-studies.md)]

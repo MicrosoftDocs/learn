@@ -2,13 +2,15 @@
 uid: learn.choose-messaging-model.4-choose-event-grid
 title: Choose Azure Event Grid
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose Azure Event Grid
   description: Choose Azure Event Grid
-  ms.date: 04/04/2023
+  ms.date: 01/24/2025
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/4-choose-event-grid.md)]
+

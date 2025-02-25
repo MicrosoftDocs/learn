@@ -2,14 +2,16 @@
 uid: learn.azure.introduction-to-azure-netapp-files.when-to-use-azure-netapp-files
 title: When to use Azure NetApp Files
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Azure NetApp Files
   description: Examine criteria and use cases to help you decide whether Azure NetApp Files is right for your organization.
-  ms.date: 06/18/2021
+  ms.date: 07/30/2024
   author: mengruts
-  ms.author: mengtsai
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: anfdocs
+  ms.topic: unit
 durationInMinutes: 12
 content: |
   [!include[](includes/4-when-to-use-azure-netapp-files.md)]
+

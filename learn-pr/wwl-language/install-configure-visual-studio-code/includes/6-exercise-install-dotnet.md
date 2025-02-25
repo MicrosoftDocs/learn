@@ -1,77 +1,76 @@
+The C# Dev Kit extension for Visual Studio Code helps you to install the .NET Software Development Kit (SDK). The .NET SDK is required to run and debug C# applications.
 
-
-.NET is a cross-platform, open-source developer platform that can be used to develop different types of applications. It includes the software languages and code libraries used to develop .NET applications. You can write .NET applications in C#, F#, or Visual Basic.
-
-The .NET runtime is the code library that's required to run your C# applications. You may also see the .NET runtime referred to as the Common Language Runtime, or CLR. The .NET runtime isn't required to *write* your code, but it's required to actually *run* your applications.
+In this exercise, you install the .NET SDK on your computer.
 
 ## Check to see if .NET is already installed
 
+Use the following steps to complete this section of the exercise:
+
 1. Ensure that you have Visual Studio Code open.
 
-    You can use the Windows Start menu to locate and open Visual Studio Code.
+1. On the Terminal menu, select **New Terminal**.
 
-1. On the **Terminal** menu, select **New Terminal**.
+    A command prompt, such as `C:\Users\AccountName>`, should be displayed.
 
-    You use the Terminal panel to enter a .NET CLI command.
-
-1. At the Terminal command prompt, type: `dotnet --version` and then press the Enter key.
+1. At the command prompt, type: `dotnet --version` and then press the Enter key.
 
     This command displays the version number if .NET is installed on your PC.
 
 1. Take a moment to view the response to your `dotnet --version` command.
 
-    If you receive an error message telling you that the term `dotnet` isn't recognized, then you don't have the .NET SDK installed.
+    If you receive an error message telling you that the term `dotnet` isn't recognized, the .NET SDK isn't installed.
 
     If a version of .NET is installed, you should see a response message listing the version number similar to the following:
 
-    `7.0.201`
+    `8.0.100`
 
-1. Close Visual Studio Code.
+1. Close the Terminal panel.
 
-## Install the .NET 7 Software Development Kit
+## Install the .NET 8 SDK
 
-Having the latest supported version of the .NET platform installed is recommended. Although .NET 6 is also supported, .NET 7 includes improvements that you may find helpful.
+Having the latest supported version of the .NET platform installed is recommended. Although .NET 6 and 7 are also supported, .NET 8 includes improvements that you may find helpful.
+
+Visual Studio Code and the C# Dev Kit help you to install the .NET SDK.
 
 > [!NOTE]
-> The C# training series that's available on Microsoft Learn uses .NET 7. Ensure that you have .NET 7 installed if you plan on completing this training.
+> The C# training series that's available on Microsoft Learn uses .NET 8. Ensure that you have .NET 8 installed if you plan on completing this training.
 
-1. Open a new Internet browser window.
+Use the following steps to complete this section of the exercise:
 
-1. To open the download page for the .NET SDK, navigate to the following URL:
+1. On the View menu, select **Command Palette**.
 
-    [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download)
+1. At the Command Palette prompt, type **.NET: Install** and then select **.NET: Install New .NET SDK**.
 
-1. On the **Download .NET** page, select the *recommended* version of the .NET SDK.
+1. Under **Latest**, ensure that **.NET 8** is selected, and then select **Install**.
 
-    Your browser downloads the .NET SDK installer file.
+1. Wait for the .NET SDK to download and install.
 
-1. Run the .NET SDK installer file.
+    The installation process may take a few minutes to complete.
 
-    On a Windows PC, you can find your Downloads folder using File Explorer. Double-click the installation file to begin the installation process.
-
-1. On the .NET SDK Installer window, select **Install**.
-
-1. Wait for the installation to complete.
-
-    Installation should take about less than a minute. Once installation is complete, a message displays confirming the installation was successful.
-
-1. To close the installer window, select **Close**.
+1. When the installation is complete, close Visual Studio Code.
 
 ## Verify your installation
 
+Visual Studio Code searches for the .NET SDK when it opens. If the .NET SDK is installed, Visual Studio Code should detect it.
+
+Use the following steps to complete this section of the exercise:
+
 1. Open Visual Studio Code.
 
-    > [!IMPORTANT]
-    > Visual Studio Code checks to see whether .NET is installed when it starts up. If you had Visual Studio Code open when you installed .NET, you will need to close it and then open a new instance to ensure that it recognizes that .NET is installed.
+1. Close the Welcome page, and then open a Terminal panel.
 
-1. On the **Terminal** menu, select **New Terminal**.
+    To open a Terminal panel, on the Terminal menu, select **New Terminal**.
 
 1. At the Terminal command prompt, type: `dotnet --version` and then press the Enter key.
 
-1. Ensure that a .NET version number is listed.
+    You need to open a new command prompt window after installing the .NET SDK to ensure that it's detected.
 
-    The version number is similar to: `7.0.201`
+1. Verify that a .NET 8 version number is listed.
 
-    You're likely to see a more recent version number. But it should begin with `7.` if you installed the .NET 7 SDK.
+    The version number displayed should be similar to: `8.0.300`
 
-Congratulations, you did it! You're now ready to begin coding C# in Visual Studio Code.
+    You may see a more recent version number, that's okay. The version number will begin with `8.` if you installed the .NET 8 SDK.
+
+1. Close the Terminal panel.
+
+Congratulations on getting .NET installed. You're now ready to start writing, running, and debugging C# applications using Visual Studio Code.

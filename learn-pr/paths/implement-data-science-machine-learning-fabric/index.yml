@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-data-science-machine-learning-fabric
+metadata:
+  title: Implement a data science and machine learning solution for AI in Microsoft Fabric DP-604T00
+  description: Explore the data science process and learn how to train machine learning models to accomplish artificial intelligence in Microsoft Fabric. (DP-604T00)
+  ms.date: 1/27/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: learning-path
+title: Implement a data science and machine learning solution for AI in Microsoft Fabric
+prerequisites: |
+  You should be familiar with basic data concepts and terminology.
+summary: |
+  Explore the data science process and learn how to train machine learning models to accomplish artificial intelligence in Microsoft Fabric.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- machine-learning
+- data-analytics
+- data-engineering
+- data-integration
+- data-management
+modules:
+- learn.wwl.introduction-end-analytics-use-microsoft-fabric
+- learn.wwl.get-started-data-science-fabric
+- learn-wwl.explore-data-for-data-science-microsoft-fabric
+- learn-wwl.preprocess-data-with-data-wrangler-microsoft-fabric
+- learn.wwl.train-track-model-fabric
+- learn.wwl.generate-batch-predictions-fabric
+trophy:
+  uid: learn.wwl.implement-data-science-machine-learning-fabric.trophy

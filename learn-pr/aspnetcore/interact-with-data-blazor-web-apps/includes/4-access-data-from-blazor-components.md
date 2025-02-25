@@ -6,7 +6,7 @@ In this unit, you'll learn how to access data and render it within HTML markup f
 
 ## Creating a registered data service
 
-If you want to create a dynamic website that shows changing information to users, you must write code to get that data from somewhere. For example, suppose you have a database that stores all the pizzas your company sells. Because the pizzas are always changing, it's a bad idea to hardcode them into the website HTML. Instead, use C# code and Blazor to query the database and then format the details as HTML so that the user can pick their favorite.
+If you want to create a dynamic website that shows changing information to users, you must write code to get that data from somewhere. For example, suppose you have a database that stores all the pizzas your company sells. Because the pizzas are always changing, it's a bad idea to hardcode them into the website HTML. Instead, use C# code and Blazor to query the database, and then format the details as HTML so that the user can pick their favorite.
 
 In a Blazor Server app, you can create a registered service to represent a data source and obtain data from it.
 
@@ -34,7 +34,7 @@ public class Pizza
 }
 ```
 
-The class defines the pizza's properties and data types. You must make sure these properties match the pizza schema in the data source. It makes sense to create this class in the **Data** folder of your project and use a member namespace called **Data**. If you prefer, you can choose other folders and namespaces.
+The class defines the pizza's properties and data types. You must make sure these properties match the pizza schema in the data source. It makes sense to create this class in the **Data** folder of your project, and use a member namespace called **Data**. If you prefer, you can choose other folders and namespaces.
 
 Next, you would define the service:
 
@@ -66,7 +66,7 @@ builder.Services.AddSingleton<PizzaService>();
 
 ## Using a service to obtain data
 
-Now you use the service you defined by calling it in a Blazor component and obtaining data. Let's suppose you have the following component code and you want to display pizzas in it:
+Now you use the service you defined by calling it in a Blazor component and obtaining data. Let's suppose you have the following component code, and you want to display pizzas in it:
 
 ```razor
 @page "/pizzas"
@@ -113,7 +113,7 @@ protected override async Task OnInitializedAsync()
 
 ## Displaying data to the user
 
-After getting some data from the service, you will want to display it to the user. In the pizzas example, we expect the service to return a list of pizzas that the users can choose from. Blazor includes a rich set of directives that you can use to insert this data into the page that the user sees.
+After getting some data from the service, you'll want to display it to the user. In the pizzas example, we expect the service to return a list of pizzas that the users can choose from. Blazor includes a rich set of directives that you can use to insert this data into the page that the user sees.
 
 ### Checking for data
 

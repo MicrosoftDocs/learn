@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.terraform-introduction-to-infrastructure-as-code.azure-resource-manager-terraform-state
+title: Compare Azure Resource Manager and Terraform State
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: learning-content
+  title: Compare Azure Resource Manager and Terraform State
+  description: Learn what Azure Resource Manager and Terraform State are, and how they work with Azure.
+  ms.date: 04/18/2024
+  author: jaredfholgate
+  ms.author: jaredholgate
+  ms.topic: unit
+  ms.custom:
+    - devx-track-terraform
+durationInMinutes: 5 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/3-azure-resource-manager-terraform-state.md)]
+

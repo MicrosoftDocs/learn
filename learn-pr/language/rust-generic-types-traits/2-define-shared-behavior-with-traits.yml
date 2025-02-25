@@ -3,11 +3,10 @@ uid: learn.language.rust-generic-types-traits.2-define-shared-behavior-with-trai
 metadata:
   title: Define shared behavior with traits
   description: Learn how to use traits to define common behavior and characteristics of an object.
-  ms.date: 05/16/2021
+  ms.date: 12/06/2022
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Define shared behavior with traits
 durationInMinutes: 3

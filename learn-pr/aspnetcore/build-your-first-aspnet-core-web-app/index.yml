@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.build-your-first-aspnet-core-web-app
+metadata:
+  title: Build your first ASP.NET Core web app
+  description: Learn how to build your first web app using ASP.NET Core. 
+  ms.date: 9/9/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: aspnet-core
+  manager: coxford
+title: Build your first ASP.NET Core web app
+summary: Learn how to build your first web app with ASP.NET Core.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand what the ASP.NET Core default project templates are.
+    - Create an ASP.NET Core web app project from a template.
+    - Understand the basic structure of an ASP.NET Core project.
+    - Run a web app locally and view it in a browser.
+    - Understand how the web app is served.
+    - Make code changes during local development.
+prerequisites: |
+  - Knowledge of what ASP.NET Core is and why it's used
+  - Basic knowledge of web app concepts
+  - C# and .NET experience at the beginner level
+
+  To complete this module, you'll need the following:
+  - The latest version of .NET SDK installed from the [.NET website](https://dot.net)
+  - The latest versions of [Visual Studio Code with C# Dev Kit extension](https://code.visualstudio.com/docs/csharp/get-started) installed.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- aspnet-core
+- dotnet
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - app-development
+units:
+- learn.build-your-first-aspnet-core-web-app.introduction
+- learn.build-your-first-aspnet-core-web-app.learning-content
+- learn.build-your-first-aspnet-core-web-app.exercise-create-project
+- learn.build-your-first-aspnet-core-web-app.exercise-run-project
+- learn.build-your-first-aspnet-core-web-app.exercise-make-code-changes
+- learn.build-your-first-aspnet-core-web-app.knowledge-check
+- learn.build-your-first-aspnet-core-web-app.summary
+badge:
+  uid: learn.build-your-first-aspnet-core-web-app.badge

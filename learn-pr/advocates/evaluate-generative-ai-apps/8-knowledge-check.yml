@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.evaluate-generative-ai-apps.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge of evaluation concepts.
+  ms.date: 10/11/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: What is the primary purpose of evaluating generative AI applications?
+    choices:
+    - content: To increase the speed of AI model training.
+      isCorrect: false
+      explanation: "Incorrect: The primary focus isn't on the speed of training but on the quality and reliability of the AI models."
+    - content: To validate the performance, reliability, and efficacy of AI systems.
+      isCorrect: true
+      explanation: "Correct: Evaluations are systematic processes designed to validate how well AI systems perform their intended tasks, ensuring they meet desired standards of accuracy and reliability."
+    - content: To reduce the cost of AI development.
+      isCorrect: false
+      explanation: "Incorrect: While evaluations might indirectly affect costs, their main goal is to validate the AI system's performance and reliability."
+    - content: To replace human evaluators with automated systems.
+      isCorrect: false
+      explanation: "Incorrect: Evaluations often involve a combination of automated and human assessments to capture both quantitative and qualitative insights."
+  - content: Which of the characteristics isn't a characteristic of good evaluation data?
+    choices:
+    - content: Diversity.
+      isCorrect: false
+      explanation: 'Incorrect: Diversity is a key characteristic of good evaluation data, ensuring the model is tested against different types of inputs.'
+    - content: Representativeness.
+      isCorrect: false
+      explanation: "Incorrect: Representativeness ensures the data accurately reflects real-world scenarios."
+    - content: High quality.
+      isCorrect: false
+      explanation: "Incorrect: High-quality data is essential for accurate and reliable evaluation results."
+    - content: Homogeneity.
+      isCorrect: true
+      explanation: "Correct: Good evaluation data should be diverse and representative, capturing a wide range of scenarios and contexts. Homogeneity, or uniformity, isn't a desired characteristic as it doesn't reflect the complexities of real-world interactions."
+  - content: What is a key reason why strong AI performance in controlled evaluations might not translate to real-world success?
+    choices:
+    - content: The AI's metrics are too complex to understand.
+      isCorrect: false
+      explanation: "Incorrect: Complexity in metrics isn't the reason for the gap between simulated and real-world performance."
+    - content: Real-world scenarios have fewer data variations than controlled environment.
+      isCorrect: false
+      explanation: "Incorrect: Real-world scenarios tend to have more, not fewer, data variations and complexities."
+    - content: Simulations often use idealized conditions that differ from real-world environments.
+      isCorrect: true
+      explanation: "Correct: Simulations often rely on perfect sensor data and conditions that don't accurately reflect the complexity of real-world environments."
+    - content: Edge cases are always included in simulations.
+      isCorrect: false
+      explanation: "Incorrect: Edge cases are often overlooked in simulations."

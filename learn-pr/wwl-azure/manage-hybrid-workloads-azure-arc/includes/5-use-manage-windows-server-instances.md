@@ -178,19 +178,19 @@ For example, to simplify management of policy definitions, Contoso could conside
 
 Azure Policy functionality can be grouped into four main categories:
 
- -  Enforcing compliance when provisioning new Azure resources
- -  Auditing compliance of existing Azure resources
- -  Remediating non-compliance of existing Azure resources
- -  Auditing compliance of the OS, application configuration, and environment settings within Azure VMs
+- Enforcing compliance when provisioning new Azure resources
+- Auditing compliance of existing Azure resources
+- Remediating non-compliance of existing Azure resources
+- Auditing compliance of the OS, application configuration, and environment settings within Azure VMs
 
 > [!TIP]
 > The last of these categories is implemented by using the Azure Policy Guest Configuration client, which is available as an Azure VM extension. Azure Arc for servers leverages the same client to provide the auditing functionality in hybrid scenarios.
 
 Specifically, Contoso could use Azure Policy with Arc-enabled servers to implement the following rules:
 
- -  Assigning tags to machines during their deployment to Azure Arc
- -  Deploying the Log Analytics extension to non-Azure machines
- -  Identifying Arc-enabled servers without Microsoft Defender enabled
+- Assigning tags to machines during their deployment to Azure Arc
+- Deploying the Log Analytics extension to non-Azure machines
+- Identifying Arc-enabled servers without Microsoft Defender enabled
 
 Azure Arc allows you to extend Azure Policy’s governance to servers and clusters running in on-premises datacenters or hosted by third-party cloud providers. This functionality applies to auditing compliance of settings for the OS, applications, and environment.
 
@@ -208,29 +208,28 @@ In particular, Contoso could use the **\[Preview\] Audit Windows VMs that do not
 
 To manage and assign Azure Arc policies for a computer:
 
-1.  From the Azure portal, navigate to Azure Arc, and then select **Manage servers**.
-2.  From the returned list of managed servers, select the appropriate server, and then in the navigation pane, under **Operations**, select **Policies**.
-3.  To assign a policy, on the toolbar, select **Assign policy**.
-4.  On the **Assign policy** page, select the following information:
-    
-     -  Scope and any exclusions from the scope of the policy
-     -  Policy definition.
-     -  Assignment name.
-     -  Description.
-     -  Policy enforcement (Enabled or Disabled)
-    
+1. From the Azure portal, navigate to Azure Arc, and then select **Manage servers**.
+1. From the returned list of managed servers, select the appropriate server, and then in the navigation pane, under **Operations**, select **Policies**.
+1. To assign a policy, on the toolbar, select **Assign policy**.
+1. On the **Assign policy** page, select the following information:
+  
+    - Scope and any exclusions from the scope of the policy
+    - Policy definition.
+    - Assignment name.
+    - Description.
+    - Policy enforcement (Enabled or Disabled)
+
     :::image type="content" source="../media/m14-assign-policy-1-cd0440de.png" alt-text="A screenshot of the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies.":::
-    
-5.  Select either **Review + create**, or the **Parameters** and **Remediation** tabs to configure additional behaviors.
+
+1. Select either **Review + create**, or the **Parameters** and **Remediation** tabs to configure additional behaviors.
 
 After you have assigned policies, from the Azure Arc homepage, on the selected VM, you can review the policy settings.
 
 :::image type="content" source="../media/m14-review-policies-f5354955.png" alt-text="A screenshot of the applied policies on a VM. Two policies are applied, one of which the VM (ContosoVM1) is compliant, and the other non-compliant.":::
 
-
 ## Additional reading
 
 You can learn more by reviewing the following documents.
 
- -  [Azure Policy built-in definitions for Azure Arc for servers](https://aka.ms/azure-policy-definitions?azure-portal=true)
- -  [Quickstart: Create a policy assignment to identify non-compliant resources](https://aka.ms/assign-policy-portal?azure-portal=true)
+- [Azure Policy built-in definitions for Azure Arc for servers](https://aka.ms/azure-policy-definitions?azure-portal=true)
+- [Quickstart: Create a policy assignment to identify non-compliant resources](https://aka.ms/assign-policy-portal?azure-portal=true)

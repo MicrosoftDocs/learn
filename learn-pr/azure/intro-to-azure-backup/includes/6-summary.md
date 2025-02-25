@@ -1,4 +1,4 @@
-Our goal was to help you evaluate whether Azure Backup would offer the features and capabilities to help you protect your data. During the module, we explored how Azure Backup might address:
+Our goal was to help you evaluate whether Azure Backup would offer the features and capabilities you need to help you protect your data. During the module, we explored how Azure Backup might address:
 
 * Ensuring availability of your data.
 * Protecting your Azure workloads.
@@ -12,5 +12,5 @@ Backup center simplifies data protection management at-scale by allowing you to 
 
 ## References
 
-* [Azure Backup website](https://azure.microsoft.com/services/backup/)
+* [Azure Backup website](https://azure.microsoft.com/products/backup/)
 * [Azure Backup compliance standards](/azure/backup/compliance-offerings)

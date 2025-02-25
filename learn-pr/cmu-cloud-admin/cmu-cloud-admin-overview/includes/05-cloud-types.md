@@ -8,7 +8,7 @@ In a public cloud, the cloud infrastructure is owned by a cloud provider and is 
 
 _Figure 1.7: Public cloud._
 
-A variation on public clouds is *sovereign clouds* -- public clouds that are physically isolated from other public clouds and to which access is restricted to specific organizations (particularly governments) or countries that place strict requirements on how and where data is stored. Amazon, Microsoft, and Google run sovereign clouds for the U.S. government. They also offer sovereign clouds in places such as Germany and China.
+A variation on public clouds is *sovereign clouds* -- public clouds that are physically isolated from other public clouds and to which access is restricted to specific organizations (particularly governments) or countries/regions that place strict requirements on how and where data is stored. Amazon, Microsoft, and Google run sovereign clouds for the U.S. government. They also offer sovereign clouds in places such as Germany and China.
 
 # Private Cloud
 

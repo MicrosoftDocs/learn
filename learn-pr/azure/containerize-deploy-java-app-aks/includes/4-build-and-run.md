@@ -1,179 +1,148 @@
-In this unit, you'll build and run the container image. As mentioned earlier, a running instance of an image is a container.
+In this unit, you build and run the container image. As you learned earlier, a running instance of an image is a container.
 
 ## Build a container image
 
-Now that you've successfully constructed a Dockerfile, you can instruct Docker to build a container image for you.
+Now that you successfully constructed a Dockerfile, you can instruct Docker to build a container image for you.
 
 > [!NOTE]
-> Ensure your Docker runtime is configured to build Linux containers. This is important because the Dockerfile being used references container images (JDK/JRE) for the Linux architecture.
+> Ensure your Docker runtime is configured to build Linux containers. This configuration is important because the Dockerfile we're using references container images (JDK/JRE) for the Linux architecture.
 
-```docker build``` is the command used to build container images. The ```-t``` argument will be used to specify a container label, and the ```.``` is the location for Docker to find the Dockerfile. Run the following command in your CLI:
+The command you use to build container images is `docker build`. You use the `-t` argument to specify a container label, and the `.` is the location for Docker to find the Dockerfile. Run the following command:
 
 ```bash
 docker build -t flightbookingsystemsample .
 ```
 
-You’ll get output similar to the following:
+The following output is typical:
 
-```bash
+```output
 docker build -t flightbookingsystemsample .
-Sending build context to Docker daemon  101.3MB
-Step 1/11 : FROM maven:3.6.0-jdk-11-slim AS build
-3.6.0-jdk-11-slim: Pulling from library/maven
-27833a3ba0a5: Pull complete
-16d944e3d00d: Pull complete
-6aaf465b8930: Pull complete
-0684138f4cb6: Pull complete
-67c4e741e688: Pull complete
-933857515267: Pull complete
-4f31e2918c2c: Pull complete
-70a0a987b087: Pull complete
-8369c7ef3731: Pull complete
-7a73ce905393: Pull complete
-c702b567a1e8: Pull complete
-Digest: sha256:4f0face24d2f79439a8fa394555b09be99c9ad537b9b19983fb8cc358818a42d
-Status: Downloaded newer image for maven:3.6.0-jdk-11-slim
- ---> c7428be691f8
-Step 2/11 : WORKDIR /build
- ---> Running in f1656ab15874
-Removing intermediate container f1656ab15874
- ---> d9bfeb518c86
-Step 3/11 : COPY pom.xml .
- ---> a60aab61d487
-Step 4/11 : COPY src ./src
- ---> 049803b88a20
-Step 5/11 : COPY web ./web
- ---> 8d98ddb1fbc3
-Step 6/11 : RUN mvn clean package
- ---> Running in 71a462c5b3ad
-[INFO] Scanning for projects...
+[+] Building 45.2s (18/18) FINISHED     docker:desktop-linux
+ => [internal] load build definition from Dockerfile    0.0s
+ => => transferring dockerfile: 2.07kB                  0.0s
+ => [internal] load metadata for mcr.microsoft.com/openjdk/jdk:17-ubuntu    0.7s
+ => [internal] load metadata for mcr.microsoft.com/openjdk/jdk:17-mariner   0.8s
+ => [internal] load .dockerignore                       0.0s
+ => => transferring context: 2B                         0.0s
+ => [internal] load build context                       0.4s
+ => => transferring context: 9.89MB                     0.4s
+ => [stage-2 1/4] FROM mcr.microsoft.com/openjdk/jdk:17-mariner@sha256:79****************************************f1ee692d5b8c36f0824510    15.9s
+ => => resolve mcr.microsoft.com/openjdk/jdk:17-mariner@sha256:796b833b91****************************************5b8c36f0824510             0.0s
 
 ...
 
-[INFO] Packaging webapp
-[INFO] Assembling webapp [FlightBookingSystemSample] in [/build/target/FlightBookingSystemSample-0.0.1-SNAPSHOT]
-[INFO] Processing war project
-[INFO] Copying webapp webResources [/build/web] to [/build/target/FlightBookingSystemSample-0.0.1-SNAPSHOT]
-[INFO] Copying webapp resources [/build/src/main/webapp]
-[INFO] Building war: /build/target/FlightBookingSystemSample-0.0.1-SNAPSHOT.war
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  26.811 s
-[INFO] Finished at: 2021-10-09T01:58:31Z
-[INFO] ------------------------------------------------------------------------
-Removing intermediate container 71a462c5b3ad
- ---> 3d40f8a4f631
-Step 7/11 : FROM tomcat:8.5.72-jre11-openjdk-slim
-8.5.72-jre11-openjdk-slim: Pulling from library/tomcat
-bd897bb914af: Pull complete
-0cc7fec72146: Pull complete
-14c358bab58a: Pull complete
-c12f81e19ff2: Pull complete
-89238a07057c: Pull complete
-46896a83c0d8: Pull complete
-15f6001bf0c8: Pull complete
-34374d37175f: Pull complete
-Digest: sha256:807efbd54faa7342c1f75f1466889148fda1f299b81dc40404312352a2086a5f
-Status: Downloaded newer image for tomcat:8.5.72-jre11-openjdk-slim
- ---> 77903b2cfd74
-Step 8/11 : COPY tomcat-users.xml /usr/local/tomcat/conf
- ---> c540464832e7
-Step 9/11 : COPY --from=build /build/target/*.war /usr/local/tomcat/webapps/FlightBookingSystemSample.war
- ---> 6d1eb5d1568c
-Step 10/11 : EXPOSE 8080
- ---> Running in 753385de3d77
-Removing intermediate container 753385de3d77
- ---> f744382dd869
-Step 11/11 : CMD ["catalina.sh", "run"]
- ---> Running in 58a822ee7a4a
-Removing intermediate container 58a822ee7a4a
- ---> a0b73d3f3f91
-Successfully built a0b73d3f3f91
-Successfully tagged flightbookingsystemsample:latest
+ => => extracting sha256:8f818432a4****************************************1791ae8c3b79ca                 2.4s
+ => => extracting sha256:1820580505****************************************087e3a0df74b60                 7.1s
+ => [build 1/7] FROM mcr.microsoft.com/openjdk/jdk:17-ubuntu@sha256:7982bc2eb79838d70bcc025371c514b7f7fde75f9981906c65eff04e9170627e       15.5s
+ => => resolve mcr.microsoft.com/openjdk/jdk:17-ubuntu@sha256:7982bc2eb79838d70bcc025371c514b7f7fde75f9981906c65eff04e9170627e              0.0s
+
+...
+
+ => => extracting sha256:6414378b64****************************************b23a54cb3684ac                 2.4s
+ => => extracting sha256:8debc97485****************************************80f38d9f1cb399                 6.5s
+ => [build 2/7] WORKDIR /build                          0.4s
+ => [tomcat 2/2] RUN apt-get update ;     apt-get install -y curl ;     curl -O https://downloads.apache.org/tomcat/tomcat-10/v10.1.33/bin/apache-tomcat-10.1.33.tar.gz ;     tar xzf apache-tomcat-10.1.33.tar.  23.4s
+ => [build 3/7] RUN apt-get update && apt-get install -y maven && mvn --version                          14.5s
+ => [build 4/7] COPY pom.xml .                          0.0s
+ => [build 5/7] COPY src ./src                          0.0s
+ => [build 6/7] COPY web ./web                          0.1s
+ => [build 7/7] RUN mvn clean package                  13.4s
+ => [stage-2 2/4] COPY --chown=app:app --from=tomcat /usr/local/tomcat /usr/local/tomcat                  0.2s
+ => [stage-2 3/4] COPY --chown=app:app tomcat-users.xml /usr/local/tomcat/conf                            0.0s
+ => [stage-2 4/4] COPY --chown=app:app --from=build /build/target/*.war /usr/local/tomcat/webapps/AirlinesReservationSample.war             0.1s
+ => exporting to image                                  0.2s
+ => => exporting layers                                 0.1s
+ => => writing image sha256:43d4ab3ab0****************************************c4807bce5af7b4              0.0s
+ => => naming to docker.io/library/flightbookingsystemsample
 ```
 
-As you noticed previously, Docker executed the instructions from the lines that you wrote in the prior unit. Each instruction is a step in sequential order. Rerun the ```docker build``` command again, notice the differences in the steps. You'll notice ```---> Using cache``` for layers that haven’t changed. If you're not making app changes before rerunning the ```docker build``` command, then you’ll notice all cached layers as the binaries are untouched and can be sourced from the Docker cache. This is an important takeaway when optimizing your container images and the associated compute costs with time spent building them.
+Multi-stage builds handle processes efficiently. Specifically, processes that have no dependencies are executed in parallel. For example, in this case, the download of Tomcat in stage 0 and the installation and compilation of Maven in stage 1 are independent processes. Therefore, when you execute `docker build`, the Tomcat process and the Maven process are carried out concurrently. However, the final stage copies the artifacts from stage 0 and stage 1, so it can't be executed until the previous processes are completed. Thus, the final stage waits for the previous processes to finish and proceeds when it becomes possible to do so.
 
-Docker can also display the available images that are resident. This is helpful for viewing what's available to run. Run the following command in your CLI:
+Additionally, if you edit a part of the program's source code and run `docker build` again, you can expect the process to complete more quickly than the first time. Containers are designed to use a layer structure with caching, and unchanged layers are reused from the cache. For instance, if there are no changes in the versions of Java, Tomcat, or Maven, the previously downloaded images are reused. When modifications are made to the source code, only the latter part of the process, which involves replacing the source code and rebuilding the project to replace the artifacts, needs to be changed. Pay attention to how you write Docker commands to efficiently build by reusing the cache as much as possible.
+
+Docker can also display the available images that are resident, which is helpful for viewing what's available to run. Run the following command:
 
 ```bash
-docker image ls
+docker images
 ```
 
-You’ll get output similar to the following:
+The following output is typical:
 
-```bash
-docker image ls
-REPOSITORY                                        TAG                 IMAGE ID            CREATED             SIZE
-flightbookingsystemsample                         latest              cda4f5b459f1        About an hour ago   268MB
+```output
+docker images
+REPOSITORY                  TAG      IMAGE ID     CREATED        SIZE
+flightbookingsystemsample   latest   43d4ab3ab045 30 minutes ago 475MB
 ```
 
 ## Run a container image
 
-Now that you've successfully built a container image, you can run it.
+Now that you successfully built a container image, you can run it.
 
-```docker run``` is the command used to run a container image. The ```-p ####:####``` argument will  forward localhost HTTP (the first port before the colon) traffic to the container at runtime (the second port after the colon). Remember from the Dockerfile that the Tomcat app server is listening for HTTP traffic on port 8080; hence, that's the container port that needs to be exposed. Lastly the image tag ```flightbookingsystemsample``` is needed to instruct Docker of what image to run. Run the following command in your CLI:
+You use the `docker run` command to run a container image. The `-p ####:####` argument forwards localhost HTTP traffic - the first port, before the colon - to the container at runtime - the second port, after the colon. The Dockerfile specifies that the Tomcat app server is listening for HTTP traffic on port 8080. Therefore, that's the container port that you need to expose. Finally, you need the image tag `flightbookingsystemsample` to tell Docker which image to run. Run the following command:
 
 ```bash
 docker run -p 8080:8080 flightbookingsystemsample
 ```
 
-You’ll get output similar to the following:
+The following output is typical:
 
-```bash
+```output
 docker run -p 8080:8080 flightbookingsystemsample
-NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-02-Aug-2021 20:50:22.682 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.50
-02-Aug-2021 20:50:22.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 28 2021 08:46:44 UTC
-02-Aug-2021 20:50:22.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.50.0
-02-Aug-2021 20:50:22.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-02-Aug-2021 20:50:22.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.10.16.3-microsoft-standard-WSL2
-02-Aug-2021 20:50:22.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-02-Aug-2021 20:50:22.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/openjdk-11
-02-Aug-2021 20:50:22.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.12+7
-02-Aug-2021 20:50:22.694 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
-02-Aug-2021 20:50:22.695 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
-02-Aug-2021 20:50:22.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
-02-Aug-2021 20:50:22.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-02-Aug-2021 20:50:22.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-02-Aug-2021 20:50:22.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
-02-Aug-2021 20:50:22.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
-02-Aug-2021 20:50:22.731 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-02-Aug-2021 20:50:22.731 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
-02-Aug-2021 20:50:22.733 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-02-Aug-2021 20:50:22.735 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-02-Aug-2021 20:50:22.735 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-02-Aug-2021 20:50:22.735 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-02-Aug-2021 20:50:22.735 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-02-Aug-2021 20:50:22.735 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
-02-Aug-2021 20:50:22.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
-02-Aug-2021 20:50:22.736 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
-02-Aug-2021 20:50:22.762 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.30] using APR version [1.6.5].
-02-Aug-2021 20:50:22.763 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-02-Aug-2021 20:50:22.763 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-02-Aug-2021 20:50:22.776 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1d  10 Sep 2019]
-02-Aug-2021 20:50:23.686 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-02-Aug-2021 20:50:23.777 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1697] milliseconds
-02-Aug-2021 20:50:23.977 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-02-Aug-2021 20:50:23.978 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.50]
-02-Aug-2021 20:50:24.039 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web app archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war]
-02-Aug-2021 20:50:27.164 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-02-Aug-2021 20:50:30.887 INFO [main] com.sun.xml.ws.server.MonitorBase.createRoot Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/FlightBookingSystemSample-PriceAndSeats-PriceAndSeatsPort
-02-Aug-2021 20:50:31.151 INFO [main] com.sun.xml.ws.transport.http.servlet.WSServletDelegate.<init> WSSERVLET14: JAX-WS servlet initializing
-02-Aug-2021 20:50:32.662 INFO [main] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: JAX-WS context listener initializing
-02-Aug-2021 20:50:32.663 INFO [main] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: JAX-WS context listener initializing
-02-Aug-2021 20:50:32.735 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web app archive [/usr/local/tomcat/webapps/FlightBookingSystemSample.war] has finished in [8,695] ms
-02-Aug-2021 20:50:32.746 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-02-Aug-2021 20:50:32.768 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8990] milliseconds
+15-Nov-2024 12:11:12.229 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.33
+15-Nov-2024 12:11:12.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 7 2024 22:28:55 UTC
+15-Nov-2024 12:11:12.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.33.0
+15-Nov-2024 12:11:12.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+15-Nov-2024 12:11:12.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.10.11-linuxkit
+15-Nov-2024 12:11:12.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Nov-2024 12:11:12.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/msopenjdk-17
+15-Nov-2024 12:11:12.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.13+11-LTS
+15-Nov-2024 12:11:12.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Microsoft
+15-Nov-2024 12:11:12.238 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+15-Nov-2024 12:11:12.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+15-Nov-2024 12:11:12.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+15-Nov-2024 12:11:12.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Nov-2024 12:11:12.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Nov-2024 12:11:12.264 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Nov-2024 12:11:12.264 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+15-Nov-2024 12:11:12.265 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+15-Nov-2024 12:11:12.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+15-Nov-2024 12:11:12.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+15-Nov-2024 12:11:12.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+15-Nov-2024 12:11:12.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+15-Nov-2024 12:11:12.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
+15-Nov-2024 12:11:12.268 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
+15-Nov-2024 12:11:12.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+15-Nov-2024 12:11:12.271 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+15-Nov-2024 12:11:12.699 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Nov-2024 12:11:12.760 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [845] milliseconds
+15-Nov-2024 12:11:12.855 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Nov-2024 12:11:12.855 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.33]
+15-Nov-2024 12:11:12.891 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/AirlinesReservationSample.war]
+15-Nov-2024 12:11:15.150 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Nov-2024 12:11:17.112 INFO [main] com.sun.xml.ws.server.MonitorBase.createRoot Metro monitoring rootname successfully set to: com.sun.metro:pp=/,type=WSEndpoint,name=/AirlinesReservationSample-PriceAndSeats-PriceAndSeatsPort
+15-Nov-2024 12:11:17.400 INFO [main] com.sun.xml.ws.transport.http.servlet.WSServletDelegate.<init> WSSERVLET14: XML-WS servlet initializing
+WARNING:Error in the metadata of the table SEATS: table's row count in the metadata is 5 but 6 records have been found and loaded by UCanAccess. All will work fine, but it's better to repair your database.
+15-Nov-2024 12:11:18.281 INFO [main] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: XML-WS context listener initializing
+15-Nov-2024 12:11:18.282 INFO [main] com.sun.xml.ws.transport.http.servlet.WSServletContextListener.contextInitialized WSSERVLET12: XML-WS context listener initializing
+15-Nov-2024 12:11:18.320 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/AirlinesReservationSample.war] has finished in [5,428] ms
+15-Nov-2024 12:11:18.322 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/ROOT]
+15-Nov-2024 12:11:18.363 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/ROOT] has finished in [40] ms
+15-Nov-2024 12:11:18.363 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/docs]
+15-Nov-2024 12:11:18.404 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/docs] has finished in [41] ms
+15-Nov-2024 12:11:18.406 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/examples]
+15-Nov-2024 12:11:18.716 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/examples] has finished in [310] ms
+15-Nov-2024 12:11:18.717 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/manager]
+15-Nov-2024 12:11:18.753 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/manager] has finished in [37] ms
+15-Nov-2024 12:11:18.754 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/usr/local/tomcat/webapps/host-manager]
+15-Nov-2024 12:11:18.795 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/usr/local/tomcat/webapps/host-manager] has finished in [40] ms
+15-Nov-2024 12:11:18.802 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Nov-2024 12:11:18.840 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [6079] milliseconds
 ```
 
-Open a browser window and visit the Flight Booking System for Airline Reservations landing page at `http://localhost:8080/FlightBookingSystemSample`.
+Open a browser window and visit the Flight Booking System for Airline Reservations landing page at `http://localhost:8080/AirlinesReservationSample/`. Your browser should look similar to the following screenshot:
 
-You should see the following:
+:::image type="content" source="../media/build-and-run.png" alt-text="Screenshot showing the running app.":::
 
-![Screenshot showing the running app.](../media/build-and-run.png)
+You can optionally sign in with any user from **tomcat-users.xml** - for example, `someuser@azure.com: password`.
 
-You can optionally sign in with any user from tomcat-users.xml; for example `someuser@azure.com: password`.
-
-To stop the container, press <kbd>CTRL</kbd> + <kbd>c</kbd> inside the CLI.
+To stop the container, press <kbd>CTRL</kbd>+<kbd>C</kbd> inside the CLI.

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.startup.ux-design.introduction-ux-and-design-thinking
+title: Introduction
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction
+  description: 'This content is part of the "Foundations of user experience and design thinking" module.'
+  ms.date: 12/22/2023
+  author: vhawk85
+  ms.author: vahughes
+  ms.topic: unit
+  ms.collection: learn-startups
+durationInMinutes : 2
+content: |
+  [!include[](includes/1-introduction-ux-and-design-thinking.md)]

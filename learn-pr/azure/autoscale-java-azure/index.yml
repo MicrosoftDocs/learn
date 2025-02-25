@@ -1,14 +1,17 @@
 ### YamlMime:Module
 uid: learn.autoscale-java-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Drive higher utilization of your Java apps - autoscaling
   description: Learn how to drive higher utilization of your Java apps on Azure using autoscaling
-  ms.date: 03/22/2023
+  ms.date: 08/20/2024
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-cloud-services-classic
+  ms.subservice: autoscale
   ms.contributors: ropreddy-12032021
   ms.custom: team=cloud_advocates
 title: Drive higher utilization of your Java apps - autoscaling
@@ -31,8 +34,6 @@ products:
 - azure
 - azure-database-mysql
 - azure-spring-apps
-subjects:
-- development-tools
 units:
 - learn.autoscale-java-azure.introduction
 - learn.autoscale-java-azure.exercise-setup
@@ -46,3 +47,4 @@ units:
 - learn.autoscale-java-azure.summary
 badge:
   uid: learn.autoscale-java-azure.badge
+

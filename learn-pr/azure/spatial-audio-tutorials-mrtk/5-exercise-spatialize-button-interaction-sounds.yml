@@ -4,11 +4,10 @@ title: Exercise - Spatialize button interaction sounds
 metadata:
   title: Exercise - Spatialize button interaction sounds
   description: Introduction to Spatialize button interaction sounds
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.date: 02/12/2024
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-exercise-spatialize-button-interaction-sounds.md)]

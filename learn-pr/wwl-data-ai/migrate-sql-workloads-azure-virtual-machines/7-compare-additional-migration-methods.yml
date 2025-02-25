@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.compare-additional-migration-methods
+title: Compare additional migration methods
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Compare additional migration methods
+  description: "Learn additional migration methods available for moving databases to SQL Server on Azure Virtual Machine."
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-compare-additional-migration-methods.md)]

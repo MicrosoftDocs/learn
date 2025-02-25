@@ -2,13 +2,14 @@
 uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.adding-parameters-components
 title: Add parameters to data factory components
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Add parameters to data factory components
   description: "Add parameters to data factory components"
   ms.date: 04/19/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

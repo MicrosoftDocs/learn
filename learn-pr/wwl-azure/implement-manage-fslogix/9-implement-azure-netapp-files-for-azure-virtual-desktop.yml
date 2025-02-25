@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-fslogix.implement-azure-netapp-files-for-azure-virtual-desktop
+title: Implement Azure NetApp Files for Azure Virtual Desktop
+metadata:
+  title: Implement Azure NetApp Files for Azure Virtual Desktop
+  description: "Implement Azure NetApp Files for Azure Virtual Desktop"
+  ms.date: 08/27/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/9-implement-azure-netapp-files-for-azure-virtual-desktop.md)]

@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azure.copy-blobs-using-dotnet.badge
+metadata:
+  title: >-
+    Microsoft Badge: Copy and move blobs from one container or storage account
+    to another using the .NET Storage Client was issued by Microsoft
+socialImageUrl: /training/achievements/generic-badge-social.png

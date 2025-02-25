@@ -1,0 +1,7 @@
+In education, self-evaluation is fundamental to empowering learner growth and development. Recognizing one's strengths and acknowledging areas for improvement hold the key to unlocking full potential.
+
+By utilizing services like Azure OpenAI, you can create AI that analyzes learner performance data to provide personalized learning experiences. Through adaptive learning algorithms, AI can tailor content and exercises to match each learner’s learning style and progress, ensuring that no one is left behind.
+
+As AI isn't bound by time or location, learners can ask questions, clarify doubts, and access information at any time. This fosters a continuous learning experience. When in doubt, learners can share their work with AI for analysis and feedback and receive guidance on how they can improve. This empowers learners to take ownership of their learning in real time and to make improvements on the go.
+
+Take Eithne’s experience as an example. Eithne is a 14-year-old learner from Chorley, United Kingdom who struggled to keep up with math after a year of COVID-19-related disruptions. Eithne's parents recognized her need for support and enrolled her in a summer program that provides an AI-powered online math tutoring service. The program uses to detect the areas where Eithne struggles and design a customized learning pathway for her. Implementing personalized learning plans can help learners get a clear grasp of their strengths and weaknesses and pursue a path that builds genuine confidence in their abilities.

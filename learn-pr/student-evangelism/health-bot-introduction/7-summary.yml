@@ -2,14 +2,16 @@
 uid: learn.health-bot-introduction.7-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: summary
-  ms.date: 07/27/2021
+  ms.date: 03/01/2023
   author: RuchaYagnik
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
   [!include[](includes/7-summary.md)]
+

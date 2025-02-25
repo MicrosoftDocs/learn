@@ -18,7 +18,7 @@ let a_number = 10;
 > **Keywords**
 > As with other programming languages, certain *keywords* like `fn` and `let` are reserved for use only by Rust. Keywords can't be used as names of functions or variables.
 
-Let's look at another example. The following code declares two variables. The first variable is declared but not bound to a value. The second variable is declared and bound to a value. Later in the program, the value for the first variable is bound to a word. The code calls the `println!` macro to display the variable values.
+Let's look at another example. The following code declares two variables. The first variable is declared but not bound to a value. The second variable is declared and bound to a value. Later in the program, the first variable is bound to a value. The code calls the `println!` macro to display the variable values.
 
 ```rust
 // Declare a variable
@@ -103,7 +103,7 @@ Can you guess the output? Visit the [Rust Playground][RustPlay-shadow] to run th
 
 ### Check your knowledge
 
-Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
+Answer the following questions to see what you've learned. Choose one answer for each question.
 
 
 <!-- Links -->

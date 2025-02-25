@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-aspnetcore-app.exercise-framework-dependent
+title: Exercise - Publish for framework-dependent deployment
+metadata:
+  title: Exercise - Publish for framework-dependent deployment
+  description: This unit is an exercise that demonstrates how to publish an ASP.NET Core app for framework-dependent deployment.
+  ms.date: 8/29/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-framework-dependent.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-fabric-data-warehouse.query-insights
+title: Monitor queries
+metadata:
+  title: Monitor queries
+  description: "Monitor queries"
+  ms.date: 11/10/2024
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/04-query-insights.md)]

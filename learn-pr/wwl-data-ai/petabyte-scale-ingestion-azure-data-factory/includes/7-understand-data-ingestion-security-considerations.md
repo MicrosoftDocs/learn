@@ -22,7 +22,7 @@ Managing access to your data is an important area to consider. Here are some are
 The administrative accounts that are used to work and manage Azure Data Factory should be dedicated, known accounts that are monitored and managed on a regular basis to ensure they are not compromised. To create Data Factory instances, the user account that you use to sign in to Azure must be a member of the contributor or owner role, or an administrator of the Azure subscription. For high security environments, consider using dedicated machines for administrative access for any ADF administrative tasks
 
 ### Use Active Directory to make use of single sign-on
-Register service principals within Azure Active Directory to take advantage of token management so that your Azure Data Factory service streamline its authentication across Azure resources. A data factory can be associated with a managed identity for Azure resources that represents the specific data factory. You can use this managed identity for Azure SQL Database authentication. The designated factory can access and copy data from or to your database by using this identity.
+Register service principals within Microsoft Entra ID to take advantage of token management so that your Azure Data Factory service streamline its authentication across Azure resources. A data factory can be associated with a managed identity for Azure resources that represents the specific data factory. You can use this managed identity for Azure SQL Database authentication. The designated factory can access and copy data from or to your database by using this identity.
 
 ## Data protection
 You may have to place special considerations for specific types of data, such as medical data, or financial data in the following areas.
@@ -59,8 +59,3 @@ Check your organizations standards for logging and monitoring and snap to the st
 - Security logs
 - Anti-malware logging
 - Log retention policies
-
-
-
-
-

@@ -10,7 +10,7 @@ There are multiple licenses used in open-source, and they're different.
 
 The license spectrum is a chart showing licenses from the developer's perspective and the implications of use for downstream requirements imposed on the overall solution and source code.
 
-:::image type="content" source="../media/2-3-license-spectrum-2ef17187.png" alt-text="License spectrum.":::
+:::image type="content" source="../media/2-3-license-spectrum-2ef17187.png" alt-text="Screenshot of License spectrum.":::
 
 
 On the left side, there are the "attribution" licenses. They're permissive and allow practically every type of use by the software that consumes it. An example is building commercially available software, including the components or source code under this license.

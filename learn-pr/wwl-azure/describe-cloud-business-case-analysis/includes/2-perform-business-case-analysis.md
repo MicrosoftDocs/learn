@@ -5,16 +5,16 @@
     :::column span="":::
 
         :::image type="content" source="../media/business-case-analysis-guidebook-2011-300w.png" border="false" alt-text="DoD business case analysis Guidebook cover page" lightbox="../media/business-case-analysis-guidebook-2011-1400w.png":::
-
+    
     :::column-end:::
     :::column span="":::
-
-        In 2011, the DoD published the [Product Support business case analysis (BCA) Guidebook](https://www.dau.edu/guidebooks/Shared%20Documents/BCA%20Guidebook%202014.pdf). In it, the DoD defined the purpose of a BCA as
-
+    
+        In 2011, the DoD published the Product Support business case analysis (BCA) Guidebook. In it, the DoD defined the purpose of a BCA as
+    
         > “...a structured methodology and document that aids decision making by identifying and comparing alternatives by examining the mission and business impacts (both financial and non-financial), risks, and sensitivities… The Product Support BCA concludes with a recommendation and associated specific actions and an implementation plan to achieve stated organizational objectives and desired outcomes.”
-
+    
         > "A BCA does not replace the judgment of a decision maker. Rather, it provides an analytic, standardized, and objective foundation upon which credible decisions can be made. A Product Support BCA should be a comprehensive, fair, and accurate comparison when evaluating multiple alternatives."
-
+    
     :::column-end:::
 :::row-end:::
 
@@ -74,7 +74,7 @@ A business case analysis report (the output) typically follows the following for
 1. Recommendations
     1. Specific Actions Based on Business Objectives
     1. Implementation Plan
- 
+
 ## Process
 
 The business case analysis process includes three major procedures

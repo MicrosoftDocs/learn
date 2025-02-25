@@ -1,18 +1,20 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-elastic-azure-virtual-machines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Deploy Elastic on Azure virtual machines
   description: "Deploy Elastic on Azure virtual machines (VMs) to get the benefits of Elasticsearch for your Linux workloads by following the instructions provided here."
-  ms.date: 01/10/2023
+  ms.date: 08/02/2024
   author: yenchiho
   ms.author: yenchiho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-virtual-machines
 title: Deploy Elastic on Azure virtual machines
-summary: In this module, we will demonstrate how to deploy Elastic on Azure virtual machines.
+summary: In this module, we demonstrate how to deploy Elastic on Azure virtual machines.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Deploy Elastic on Azure VMs
 prerequisites: |
   - An Azure subscription
@@ -28,7 +30,6 @@ roles:
 products:
   - azure
   - azure-virtual-machines
-  - azure-linux-vm
 subjects:
 - virtual-machine
 units:
@@ -39,3 +40,4 @@ units:
 - learn.azure.deploy-elastic-azure-virtual-machines.summary
 badge:
   uid: learn.azure.deploy-elastic-azure-virtual-machines.badge
+

@@ -1,17 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.3-exercise-activate-openapi-to-web-api-using-swashbuckle
-title: Exercise - Use Swashbuckle to create an Open API document
+title: Exercise - Use Swashbuckle to create an OpenAPI document
 metadata:
-  title: Exercise - Use Swashbuckle to create an Open API document
-  description: Create an Open API document for your ASP.NET Core web API with Swashbuckle
-  ms.date: 04/16/2021
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Use Swashbuckle to create an OpenAPI document
+  description: Create an OpenAPI document for your ASP.NET Core web API with Swashbuckle
+  ms.date: 09/13/2024
   author: justinyoo
   ms.author: juyoo
   manager: jmartens
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: juyoo-04222021
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-activate-openapi-to-web-api-using-swashbuckle.md)]
+

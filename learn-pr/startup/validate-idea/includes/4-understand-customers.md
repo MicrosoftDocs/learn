@@ -1,4 +1,4 @@
-So far in this module, we've focused on capturing and prioritizing your assumptions. In this unit and the next one, we'll focus on testing critical assumptions by using customer interviews and experiments.
+So far in this module, we focused on capturing and prioritizing your assumptions. In this unit and the next one, we focus on testing critical assumptions by using customer interviews and experiments.
 
 ## Planning and conducting customer interviews
 
@@ -12,24 +12,24 @@ To get the most out of customer interviews, it's important that you construct we
 
 - Ask open questions. For example: "How do you currently manage your finances across multiple bank accounts?"
 - Ask for stories. For example: "Can you tell me about the last time you tried to do this? How easy was it? Was there anything you wished you could do more easily?"
-- Let them do 80 percent of the talking. (That means you do 20 percent of the talking and a lot of listening.)
+- Let them do 80 percent of the talking. (That means you do 20 percent of the talking and much listening.)
 - Reflect back. For example: "It sounds like you generally export your bank feeds into a spreadsheet and manually combine them. Have I understood that correctly?"
 - Have a prepared set of interview questions that you ask every customer.
 - Delve into unexpected responses. For example: "That's interesting. Why did you decide to do it that way?"
-- Ask what other solutions they've tried and what they liked or disliked about those solutions.
-- Ask how much time and money they've spent trying to solve the problem.
-- Invite them to suggest others you should speak to. This is an efficient way of recruiting more customers to interview.
+- Ask what other solutions they tried and what they liked or disliked about those solutions.
+- Ask how much time and money they spent trying to solve the problem.
+- Invite them to suggest others you should speak to. This question is an efficient way of recruiting more customers to interview.
 - Finish each interview with "What else should I have asked you?" in case they have other insights that your questions didn't elicit.
 
 **Don't:**
 
 - Ask closed questions. For example: "Have you ever tried to calculate your financial position across your various bank accounts?"
 - Lead the witness. For example: "Do you think it would be helpful to have a dashboard that allowed you to see all your banking information in one place?"
-- Pitch your product. For example: "I'm building a great, easy-to-use dashboard product that will make your life simpler and will be available for a small monthly fee. Do you think you'd use it?"
+- Pitch your product. For example: "I'm building a great, easy-to-use dashboard product that makes your life simpler and will be available for a small monthly fee. Do you think you'd use it?"
 
 As a guide, for business-to-business (B2B) startups, it's important to interview at least 50 customers. For business-to-consumer (B2C) startups, aim for at least 200.
 
-Wherever possible, frame your questions as falsifiable statements. Set a minimum success criterion above which you'll consider your hypothesis to be validated, and below which it will be invalidated.
+Wherever possible, frame your questions as falsifiable statements. Set a minimum success criterion above which you consider your hypothesis to be validated, and below which you consider it invalidated.
 
 If an assumption is validated, continue on your current path. If an assumption is invalidated, consider a pivot or change in direction.
 
@@ -46,12 +46,12 @@ Emily's top five assumptions:
 1. I believe that at least 25 percent of banking customers have personal bank accounts with more than one bank. (Desirable)
 2. I believe that at least 50 percent of these customers experience regular frustration with being unable to view all of their finances in one place. (Desirable)
 3. I believe that at least 25 percent of these customers would be willing to pay $10 a month for a product that consolidates their bank feeds. (Viable)
-4. I believe that it's possible for me to create a product that accesses bank feeds in close to real time from all major banks and presents them in a simple dashboard. (Feasible)
+4. I believe that it's possible to create a product that accesses bank feeds in close to real time from all major banks and presents them in a simple dashboard. (Feasible)
 5. I believe that at least 50 percent of these customers would be willing to sign up for a free trial of the product. (Viable)
 
 ## A note of caution about online surveys
 
-It's tempting to believe that you can capture meaningful feedback from customers by sending out an online survey and analyzing the results. Surveys are quick and easy to create, but unfortunately, they're one of the least useful methods of capturing customer insights. Many people complete surveys with little thought about their responses. Even with well-constructed questions, you have no ability to delve deeper into interesting points that the respondent has raised.
+It's tempting to believe that you can capture meaningful feedback from customers by sending out an online survey and analyzing the results. Surveys are quick and easy to create, but unfortunately, they're one of the least useful methods of capturing customer insights. Many people complete surveys with little thought about their responses. Even with well-constructed questions, you have no ability to delve deeper into interesting points that the respondent raises.
 
 Surveys can play a useful role in capturing factual or numerical responses, such as demographic information, alongside customer interviews.
 
@@ -61,13 +61,13 @@ A user persona, or customer persona, is a fictional character created to represe
 
 User personas are important because they help you develop empathy for your users and create a product with their specific needs in mind. The process of accurately defining user personas also helps you make decisions about product functionality and design.
 
-User personas are based on the insights you've gleaned from customer interviews. If you plan to serve multiple customer segments, it's helpful to have a different persona to represent each of these.
+User personas are based on the insights that you glean from customer interviews. If you plan to serve multiple customer segments, it's helpful to have a different persona to represent each segment.
 
 When you're creating your user personas, ask yourself: Who is the target customer for this product? Why would it be important to them? How will they use it? What barriers are they facing that we can remove?
 
 It's a good idea to include a few fictional details to make user personas feel as realistic as possible.
 
-A basic user persona should include at least the following:
+A basic user persona should at least include the following details:
 
 - Personal information, such as name and location, plus any details that help you identify with the persona. If your startup is B2B, include a job title, company, and role description.
 - Demographic information, such as age, gender, family status, and income.
@@ -81,9 +81,9 @@ A basic user persona should include at least the following:
 
 ## Scenario: A user persona
 
-Emily has decided that based on her customer interviews, her most important target users are busy professionals aged 40 to 55 with above-average income and multiple banking relationships. She has constructed the following "busy professional" persona to represent a target user.
+Emily decides that based on her customer interviews, her most important target users are busy professionals aged 40 to 55 with above-average income and multiple banking relationships. She constructs the following "busy professional" persona to represent a target user.
 
-She has incorporated some of the common themes that arose in her interviews with customers, such as the banking brands that they currently associate with and the software products that they're familiar with and typically use.
+She incorporates some of the common themes that arose in her interviews with customers. Such as, the banking brands that they currently associate with and the software products that they're familiar with and typically use.
 
 :::image type="content" source="../media/learning-path-peter.png" alt-text="Image that shows basic characteristics of a busy-professional persona. Examples include goals, frustrations, and personality.":::
 

@@ -2,43 +2,43 @@
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.vmware-hcx-deployment-installation
 title: Deploy and install VMware HCX
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Deploy and install VMware HCX
   description: Deploy and install VMware HCX.
-  ms.date: 6/17/2021
-  author: sbkuehn
-  ms.author: shkuehn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.contributors:
-  - shkuehn-07022021
-  ms.custom:
-  - team=cloud_advocates
+  ms.date: 08/01/2024
+  author: amycolyer
+  ms.author: amycolyer
+  ms.topic: unit
+  ms.contributors: shkuehn-07022021, orthomas-08092023
+  ms.custom: team=cloud_advocates
 durationInMinutes: 10
 content: |
   [!include[](includes/3-vmware-hcx-deployment-installation.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which account is typically used to access the HCX Connector on-premises?"
+  - content: "Which account is typically used to access the VMware HCX Connector on-premises?"
     choices:
     - content: "Global Administrator"
       isCorrect: false
       explanation: "The Global Administrator has access to all administrative features in the Azure Resource Manager portal."
     - content: "admin"
       isCorrect: true
-      explanation: "admin is the account used to access the HCX Manager on-premises."
+      explanation: "admin is the account used to access the VMware HCX Connector on-premises."
     - content: "cloudadmin"
       isCorrect: false
       explanation: "cloudadmin is the account used to access the Azure VMware Solution vCenter and HCX environment in Azure."
-  - content: "If Juan can't activate the HCX Advanced Key on-premises, what might be the issue?"
+  - content: "If you can't activate the HCX Enterprise Key on-premises, what could be the issue?"
     choices:
     - content: "The on-premises environment doesn't have open internet access or a proxy configured for activation."
       isCorrect: true
-      explanation: "The on-premises environment needs open internet access or a proxy configured to activate the HCX Advanced Key."
+      explanation: "The on-premises environment needs open internet access or a proxy configured to activate the HCX Enterprise Key."
     - content: "The HCX appliance wasn't deployed correctly."
       isCorrect: false
-      explanation: "If Dragan got to this point, the HCX appliance deployed correctly."
+      explanation: "If you got to this point, the HCX appliance deployed correctly."
     - content: "A NAT rule isn't configured."
       isCorrect: false
-      explanation: "A NAT rule isn't configured to activate the HCX Advanced Key."
+      explanation: "A NAT rule isn't configured to activate the HCX Enterprise Key."
+

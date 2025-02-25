@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-privacy-risk-management.create-custom-policy
+title: Create a custom Privacy Risk Management policy
+metadata:
+  title: Create a custom Privacy Risk Management policy
+  description: "Create a custom Privacy Risk Management policy."
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/create-custom-policy.md)]

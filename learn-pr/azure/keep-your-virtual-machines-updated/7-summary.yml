@@ -2,13 +2,15 @@
 uid: learn.keep-your-virtual-machines-updated.7-summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 12/21/2018
-  author: cynthn
-  ms.author: cynthn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/15/2024
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
+

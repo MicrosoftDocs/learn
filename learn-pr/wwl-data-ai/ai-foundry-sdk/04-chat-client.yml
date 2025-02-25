@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-foundry-sdk.chat-client
+title: Create a chat client
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create a chat client
+  description: Create a chat client for models in your project.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 02/05/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: dev-lang-csharp-python
+durationInMinutes: 10
+content: |
+  [!include[](includes/04-chat-client.md)]

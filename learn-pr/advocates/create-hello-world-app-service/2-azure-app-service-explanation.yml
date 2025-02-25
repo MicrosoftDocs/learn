@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-hello-app-service.what-is-app-service
+title: Introduction to Azure App Service
+metadata:
+  description: What is Azure App Service? Find out more in this module.
+  author: KarlErickson
+  ms.author: ayangupta
+  ms.date: 12/11/2024
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
+  ms.assetid: HelloJavaAppService
+durationInMinutes: 2
+content: |
+  [!INCLUDE[](includes/2-azure-app-service-explanation.md)]

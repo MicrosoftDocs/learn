@@ -1,0 +1,1 @@
+In this module, you implemented multiple interfaces and applied the concept of polymorphism to your project code. You also learned about the differences between interfaces and abstract classes, and explored scenarios where interfaces can provide useful benefits. Great job using interfaces and creating well-designed code!

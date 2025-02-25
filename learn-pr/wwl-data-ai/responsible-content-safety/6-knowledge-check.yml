@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-ai-content-safety.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your understanding of the content presented in this module. "
+  ms.date: 8/29/2024
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which feature of Azure AI Content Safety helps protect large language models from document injection attacks?"
+    choices:
+    - content: "Prompt Shields"
+      isCorrect: true
+      explanation: "Correct. Prompt shields block jailbreak attacks from inputs to LLMs including user input prompts and document injection attacks."
+    - content: "Groundedness detection"
+      isCorrect: false
+      explanation: "Incorrect. Groundedness detection doesn't protect against document inject attacks to large language models."
+    - content: "Custom categories"
+      isCorrect: false
+      explanation: "Incorrect. Custom categories enable you to create your own categories but don't protect large language models from document injection attacks."
+  - content: "What is the purpose of the Groundedness detection feature in Azure AI Content Safety?"
+    choices:
+    - content: "To verify AI-generated text is based on provided source materials."
+      isCorrect: true
+      explanation: "Correct. Groundedness detection protects against inaccurate responses in AI-generated text by LLMs."
+    - content: "To detect harmful images."
+      isCorrect: false
+      explanation: "Incorrect. Safeguarding against inappropriate content in images isn't done using Groundednes detection."
+    - content: "To moderate multimodal content"
+      isCorrect: false
+      explanation: "Incorrect. Groundedness detection doesn't help moderate multimodal content."
+  - content: "Which social media issues does Azure AI Content Safety address?"
+    choices:
+    - content: "The growth of inappropriate online content including bullying and hate speech."
+      isCorrect: true
+      explanation: "Correct. Azure AI Content Safety helps moderate inappropriate content including bullying and hate speech."
+    - content: "The popularity of online gaming."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Content Safety doesn't address the popularity of online gaming."
+    - content: "The need to train AI models with more accurate content."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Content Safety doesn't address the training of AI models, but does help to identify ungrounded responses by LLMs."
+  - content: "How does Azure AI Content Safety help businesses to protect their brand image?"
+    choices:
+    - content: "By moderating comments and messages from customers."
+      isCorrect: true
+      explanation: "Correct. Brands often encourage customers to leave comments and reviews, which need to be moderated to prevent inappropriate content."
+    - content: "By detecting a brand's violent graphics."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Content Safety is designed to moderate user-generated content rather than a brand's own graphics."
+    - content: "To ensure students are consuming accurate content."
+      isCorrect: false
+      explanation: "Incorrect. Educators are concerned with the accuracy of content being consumed by students. "
+  - content: "What is a benefit of Azure AI Content Safety?"
+    choices:
+    - content: "Reducing the amount of psychologically damaging material that human moderators are exposed to."
+      isCorrect: true
+      explanation: "Correct. Human moderators can reduce the amount of harmful material they have to read by automatically assigning a severity score to content."
+    - content: "Providing an easy-to-implement service for users to leave comments on e-commerce sites."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Content Safety isn't a service to allow users to leave comments."
+    - content: "Allowing e-commerce companies to create custom categories for their products and services."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Content Safety doesn't provide e-commerce functionality."

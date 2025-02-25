@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.always-encrypted
+title: Recommend when to use Azure SQL Database Always Encrypted
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Recommend when to use Azure SQL Database Always Encrypted
+  description: "Deploy always encrypted​ features"
+  ms.date: 02/24/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-always-encrypted.md)]

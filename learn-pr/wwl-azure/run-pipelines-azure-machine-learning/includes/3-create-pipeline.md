@@ -86,6 +86,13 @@ jobs:
         path: ${{parent.inputs.pipeline_job_input}}
     outputs:
       output_data: ${{parent.outputs.pipeline_job_transformed_data}}
+  train_model:
+    type: command
+    inputs:
+      input_data:
+        path: ${{parent.outputs.pipeline_job_transformed_data}}
+    outputs:
+      output_model: ${{parent.outputs.pipeline_job_trained_model}}
 tags: {}
 properties: {}
 settings: {}

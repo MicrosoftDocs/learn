@@ -3,14 +3,16 @@ uid: learn.aks-optimize-compute-costs.introduction
 title: Introduction
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  ms.date: 7/10/2020
+  ms.date: 12/20/2023
   author: Nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

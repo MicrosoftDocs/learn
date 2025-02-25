@@ -2,15 +2,19 @@
 uid: learn.wwl.use-azure-machine-learn-job-for-automation.exercise
 title: Exercise
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise
-  description: "Exercise"
-  ms.date: 09/26/2022
+  description: Exercise
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise.md)]
+
