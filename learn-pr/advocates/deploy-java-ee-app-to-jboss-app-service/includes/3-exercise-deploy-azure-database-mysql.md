@@ -186,17 +186,14 @@ To connect to the MySQL flexible server, you can use one of the two methods desc
 
 ## Create a database and tables for your application
 
-Run the following `mysql` command or the `Azure CLI` command to create a database and tables for your application:
-
-```mysql
-mysql> source ./world-db/world.sql;
-```
-
-Or use the following `Azure CLI` command:
+Run the following `Azure CLI` command to create a database and tables for your application from the script file `world.sql`:
 
 ```azurecli
-az mysql flexible-server execute -n' $MYSQL_SERVER_NAME '-u' $MYSQL_USER '-p' $MYSQL_PASSWORD -f ./world-db/world.sql
+az mysql flexible-server execute -n $MYSQL_SERVER_NAME  -u azureuser -p '$MYSQL_PASSWORD' -f "./world-db/world.sql"
 ```
+
+> [!TIP]
+> You can also use the `mysql` command to create a database and tables from script file. However it will take a long time to finish the command. Therefore, we recommend using the `az mysql flexible-server execute` command in this time.
 
 ## Confirm the database and tables
 
