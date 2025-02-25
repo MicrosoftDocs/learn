@@ -43495,38 +43495,63 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/11-summary.md",
-      "redirect_url": "/training/modules/security-azure-sql-database-azure-sql-managed-instance/12-summary",
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/10-secure-paas-deployments.md",
+      "redirect_url": "/training/modules/security-virtual-networks/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/index.md",
-      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/11-flow-logging-network-security-groups.md",
+      "redirect_url": "/training/modules/security-virtual-networks/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/2-azure-dw-security-control.md",
-      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/12-knowledge-check.md",
+      "redirect_url": "/training/modules/security-virtual-networks/16-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/13-summary.md",
+      "redirect_url": "/training/modules/security-virtual-networks/17-summary",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/2-azure-virtual-network.md",
+      "redirect_url": "/training/modules/security-virtual-networks/3-azure-virtual-network",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/1-introduction.md",
-      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/3-network-security-groups-application-security-groups.md",
+      "redirect_url": "/training/modules/security-virtual-networks/5-network-security-groups-application-security-groups",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/3-security-monitoring-and-auditing.md",
-      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/4-user-defined-routes.md",
+      "redirect_url": "/training/modules/security-virtual-networks/6-user-defined-routes",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/5-virtual-network-peering-gateways.md",
+      "redirect_url": "/training/modules/security-virtual-networks/7-virtual-network-peering-gateways",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/4-summary.md",
-      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/6-virtual-wide-area-network.md",
+      "redirect_url": "/training/modules/security-virtual-networks/8-virtual-wide-area-network",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/7-secure-virtual-private-network-connectivity-point-to-site-site-to-site.md",
+      "redirect_url": "/training/modules/security-virtual-networks/9-secure-virtual-private-network-connectivity-point-to-site-site-to-site",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/paths/develop-dynamic-reports-microsoft-power-bi/index.md",
-      "redirect_url": "/training/paths/prepare-visualize-data-power-bi/",
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/8-azure-expressroute.md",
+      "redirect_url": "/training/modules/security-virtual-networks/12-azure-expressroute",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/security-virtual-networks/9-expressroute-encryption.md",
+      "redirect_url": "/training/modules/security-virtual-networks/13-expressroute-encryption",
       "redirect_document_id": false
     }
   ]
