@@ -1,4 +1,4 @@
-The *Secure Score* is a holistic view of the *Microsoft Secure Score (Microsoft 365)*, which is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken, and the *Cloud Secure score (Risk based)*, that is a representation of your organizations cloud security posture. They're part of the *Exposure Management* tools in the Microsoft Defender portal.
+The *Secure Score* is a holistic view of the *Microsoft Secure Score (365)*, which is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken, and the *Cloud Secure score (Risk based)*, that is a representation of your organizations cloud security posture. They're part of the *Exposure Management* tools in the Microsoft Defender portal.
 
 Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
 
