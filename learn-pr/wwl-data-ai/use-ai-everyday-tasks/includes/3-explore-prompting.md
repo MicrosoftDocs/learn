@@ -13,8 +13,13 @@ Here are some tips to keep in mind when writing a prompt:
 - Let Copilot know how you want the response to be formatted. This sets clear expectations.
 - Provide some data or information for Copilot to use. This helps ground the response in the right context.
 
+> [!TIP]
+> To learn more about the art of prompting, review [Cooking up a great prompt: Getting the most from Copilot](https://support.microsoft.com/topic/cooking-up-a-great-prompt-getting-the-most-from-copilot-7b614306-d5aa-4b62-8509-e46674a29165?ocid=PromptGallery_SMC_Article_GetTips?azure-portal=true).
+
 > [!NOTE]
-> With Copilot, you can **iterate** by asking it to refine the results, so don't worry if you don't get the response you want the first time. Let's say you used Copilot to create a menu for a dinner party, but you forgot you need to include vegetarian options. Simply ask Copilot to update the menu to include a vegetarian dish. This way, you can keep refining your prompts until you get the perfect result.
+> One of the best ways to effectively work with Copilot is to ask it to refine the results. When you give a prompt to an AI, the first response might not be exactly what you want. So, look at the result, think about what you want to change, and then try again with a slightly different prompt. Each time you make a change, you're getting closer to the perfect result. This is called **iterating**.
+>
+> For example, let's say you used Copilot to create a menu for a dinner party, but you forgot you need to include vegetarian options. Simply ask Copilot to update the menu to include some vegetarian dishes. This way, you can keep refining your prompts until you get the perfect result.
 >
 > ![Image of person cooking in a kitchen.](../media/03-food.jpg)
 
