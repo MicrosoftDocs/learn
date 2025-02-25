@@ -57,4 +57,4 @@ The Azure portal allows you to retrieve the connection string you need to intera
 1. Copy and edit the connection string by including your password, or replacing the server name as needed.
 1. Reference the connection string updated in the client application.
 
-To learn more about connectivity errors for Azure SQL Database and Azure SQL Managed Instance, see [Troubleshooting connectivity issues and other errors with Azure SQL Database and Azure SQL Managed Instance](/azure/azure-sql/database/troubleshoot-common-errors-issues).
+To learn more about connectivity errors for Azure SQL Database and Azure SQL Managed Instance, see [Troubleshooting connectivity issues and other errors with Azure SQL Database and Azure SQL Managed Instance](/azure/azure-sql/database/troubleshoot-common-errors-issues?azure-portal=true).
