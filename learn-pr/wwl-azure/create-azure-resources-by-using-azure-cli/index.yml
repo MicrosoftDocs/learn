@@ -48,7 +48,7 @@ subjects:
 - infrastructure
 units:
 - learn.wwl.create-azure-resources-by-using-azure-cli.introduction
-- learn.wwl.create-azure-resources-by-using-azure-cli.what-is-azure-cli
+- learn.wwl.create-azure-resources-by-using-azure-cli.what-azure-cli
 - learn.wwl.create-azure-resources-by-using-azure-cli.install-azure-cli
 - learn.wwl.create-azure-resources-by-using-azure-cli.execute-azure-cli-interactively
 - learn.wwl.create-azure-resources-by-using-azure-cli.create-an-azure-cli-script
