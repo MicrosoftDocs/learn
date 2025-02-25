@@ -13,19 +13,19 @@ durationInMinutes: 10
 content: |
   [!include[](includes/5-strategy.md)]
 quiz:
-title: Check your knowledge
-questions:
-- content: Why is it important to align incident preparedness and response with business strategy?
-  choices:
-  - content: To ensure that security doesn't impede business goals
-    isCorrect: true
-    explanation: Correct. This practice helps ensure that security measures support and don't hinder business objectives. It maintains a balance between security and operational efficiency.
-  - content: To reduce the cost of cloud services
-    isCorrect: false
-    explanation: Incorrect. While cost management is important, the primary goal of aligning incident preparedness with business strategy is to ensure that security measures support business goals, not specifically to reduce costs.
-  - content: To increase the number of security incidents
-    isCorrect: false
-    explanation: Incorrect. The goal is to reduce and effectively manage security incidents, not to increase them.
-  - content: To eliminate the need for security training
-    isCorrect: false
-    explanation: Incorrect. Security training is essential to ensure that all stakeholders understand their roles and responsibilities in maintaining security. Aligning incident preparedness with business strategy doesn't eliminate this need.
+ title: Check your knowledge
+ questions:
+ - content: Why is it important to align incident preparedness and response with business strategy?
+   choices:
+   - content: To ensure that security doesn't impede business goals
+     isCorrect: true
+     explanation: Correct. This practice helps ensure that security measures support and don't hinder business objectives. It maintains a balance between security and operational efficiency.
+   - content: To reduce the cost of cloud services
+     isCorrect: false
+     explanation: Incorrect. While cost management is important, the primary goal of aligning incident preparedness with business strategy is to ensure that security measures support business goals, not specifically to reduce costs.
+   - content: To increase the number of security incidents
+     isCorrect: false
+     explanation: Incorrect. The goal is to reduce and effectively manage security incidents, not to increase them.
+   - content: To eliminate the need for security training
+     isCorrect: false
+     explanation: Incorrect. Security training is essential to ensure that all stakeholders understand their roles and responsibilities in maintaining security. Aligning incident preparedness with business strategy doesn't eliminate this need.
