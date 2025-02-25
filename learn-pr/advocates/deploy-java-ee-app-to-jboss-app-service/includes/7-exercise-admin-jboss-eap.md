@@ -43,15 +43,13 @@ ssh root@127.0.0.1 -L 9990:localhost:9990 -p $PORT_NUMBER
 You see the following messages when you sign in to the server.
 
 ```output
-The authenticity of host '[127.0.0.1]:59445 ([127.0.0.1]:59445)' can't be established.
-ECDSA key fingerprint is SHA256:vHsp1b3+7NtnHISvZ6aKS82pww+e5L6CUc9fKaPZGDQ.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added '[127.0.0.1]:59445' (ECDSA) to the list of known hosts.
-root@127.0.0.1's password:
-   _|_|
- _|    _|  _|_|_|_|  _|    _|  _|  _|_|    _|_|
- _|_|_|_|      _|    _|    _|  _|_|      _|_|_|_|
- _|    _|    _|      _|    _|  _|        _|
+ssh root@127.0.0.1 -L 9990:localhost:9990 -p 65171
+root@127.0.0.1's password: 
+Last login: Tue Feb 25 07:44:49 2025 from 169.254.129.2
+   _|_|                                            
+ _|    _|  _|_|_|_|  _|    _|  _|  _|_|    _|_|    
+ _|_|_|_|      _|    _|    _|  _|_|      _|_|_|_|  
+ _|    _|    _|      _|    _|  _|        _|        
  _|    _|  _|_|_|_|    _|_|_|  _|          _|_|_|
 
      J A V A   O N   A P P   S E R V I C E
@@ -59,6 +57,8 @@ root@127.0.0.1's password:
 Documentation: https://aka.ms/appservice
 
 **NOTE**: No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
+
+root@jakartaee-e9de81f9:/# 
 ```
 
 ## Run the JBoss CLI command
