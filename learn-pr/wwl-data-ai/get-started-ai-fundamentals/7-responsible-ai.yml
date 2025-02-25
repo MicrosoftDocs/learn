@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+# uid: learn.wwl.get-started-ai-fundamentals.explore-responsible-ai-practice
+uid: learn.wwl.get-started-ai-fundamentals.responsible-ai
+title: Responsible AI
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Responsible AI
+  description: "AI is amazingly powerful, so we must learn to use it responsibly."
+  ms.date: 02/24/2025
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-responsible-ai.md)]
