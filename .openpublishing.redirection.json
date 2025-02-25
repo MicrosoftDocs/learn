@@ -43498,6 +43498,36 @@
       "source_path": "learn-pr/wwl-azure/security-azure-sql-database-azure-sql-managed-instance/11-summary.md",
       "redirect_url": "/training/modules/security-azure-sql-database-azure-sql-managed-instance/12-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/index.md",
+      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/2-azure-dw-security-control.md",
+      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/3-security-monitoring-and-auditing.md",
+      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/4-summary.md",
+      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-dynamic-reports-microsoft-power-bi/index.md",
+      "redirect_url": "/training/paths/prepare-visualize-data-power-bi/",
+      "redirect_document_id": false
     }
   ]
 }
