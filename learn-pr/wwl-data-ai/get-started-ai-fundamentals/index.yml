@@ -4,18 +4,18 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Fundamental AI Concepts
-  description: "This module introduces common AI workloads and their corresponding Azure AI Services. It also introduces Microsoft's Responsible AI policies."
-  ms.date: 10/03/2024
+  description: "Curious about artificial intelligence? Want to understand what all the buzz is about? This module introduces you to the world of AI."
+  ms.date: 02/24/2025
   author: wwlpublish
-  ms.author: sheryang
+  ms.author: gmalc
   ms.topic: module
   ms.collection: wwl-ai-copilot
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Fundamental AI Concepts
-summary: With AI, we can build solutions that seemed like science fiction a short time ago; enabling incredible advances in health care, financial management, environmental protection, and other areas to make a better world for everyone.
+summary: Curious about artificial intelligence? Want to understand what all the buzz is about? This module introduces you to the world of AI.
 abstract: In this module, you'll learn about the kinds of solutions AI can make possible and considerations for responsible AI practices.
 prerequisites: None
 iconUrl: /training/achievements/get-started-ai-fundamentals.svg
@@ -25,20 +25,18 @@ roles:
 - ai-engineer
 - data-scientist
 - student
-products:
-- azure-bot-service
-- azure-machine-learning
 subjects:
 - artificial-intelligence
+products:
+- ms-copilot
 units:
 - learn.wwl.get-started-ai-fundamentals.introduction-ai
-- learn.wwl.get-started-ai-fundamentals.understand-machine-learn
-- learn.wwl.get-started-ai-fundamentals.understand-computer-vision
-- learn.wwl.get-started-ai-fundamentals.understand-natural-language-process
-- learn.wwl.get-started-ai-fundamentals.understand-document-intelligence
-- learn.wwl.get-started-ai-fundamentals.understand-generative-ai
-- learn.wwl.get-started-ai-fundamentals.explore-responsible-ai-practice
-- learn.wwl.get-started-ai-fundamentals.understand-responsible-ai
+- learn.wwl.get-started-ai-fundamentals.generative-ai
+- learn.wwl.get-started-ai-fundamentals.computer-vision
+- learn.wwl.get-started-ai-fundamentals.speech
+- learn.wwl.get-started-ai-fundamentals.natural-language-processing
+- learn.wwl.get-started-ai-fundamentals.extract-insights
+- learn.wwl.get-started-ai-fundamentals.responsible-ai
 - learn.wwl.get-started-ai-fundamentals.knowledge-check
 - learn.wwl.get-started-ai-fundamentals.summary
 badge:
