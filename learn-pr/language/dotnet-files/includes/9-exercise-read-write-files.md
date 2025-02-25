@@ -17,7 +17,7 @@ In this exercise, you complete the project by reading the .json files, adding up
 1. At the top of `Program.cs`, add `using Newtonsoft.Json`:
 
     ```csharp
-    using System.Text.Json;
+    using Newtonsoft.Json;
     ```
 
 1. In `Program.cs` directly under the `FindFiles` method, [add a new `record`](/dotnet/csharp/language-reference/builtin-types/record/) that models the *sales.json* data:

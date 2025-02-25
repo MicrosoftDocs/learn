@@ -1,59 +1,62 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-webapp-java-tomcat.5
+uid: learn.azure.build-tomcat-java-appservice.5
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
-  description: Knowledge check
-  author: yoshioterada
-  ms.author: yoterada
-  ms.date: 05/03/2023
+  title: Knowledge Check
+  description: Check your knowledge of creating and deploying Java web apps to Azure App Service.
+  ms.date: 02/20/2025
+  author: KarlErickson
+  ms.author: ayangupta
   ms.topic: unit
-  ms.custom: team=cloud_advocates, devx-track-extended-java, linux-related-content
-  ms.contributors: yoterada-12142020
-durationInMinutes: 2
+  ms.custom: team=cloud_advocates, devx-track-extended-java, devx-track-java, linux-related-content
+durationInMinutes: 5
 quiz:
+  title: Check your knowledge
   questions:
-    - content: Which file format do you use for Facelets?
+    - content: What's the primary purpose of using Apache Maven in Java web application development?
       choices:
-        - content: "Hypertext Markup Language (HTML)"
+        - content: To provide a web server for hosting the application.
           isCorrect: false
-          explanation: "HTML is used for creating static web pages."
-        - content: "Extensible Hypertext Markup Language (XHTML)"
+          explanation: Incorrect. Maven is a build automation tool, not a web server.
+        - content: To design the user interface of the web application.
+          isCorrect: false
+          explanation: Incorrect. Maven focuses on project management and build automation, not UI design.
+        - content: To manage project dependencies and automate the build process.
           isCorrect: true
-          explanation: "Because JavaServer Faces 2.0, Facelets has been used as the default view declaration language."
-        - content: "JavaServer Pages (JSP)"
-          isCorrect: false
-          explanation: "In the past, you could write JavaServer Faces (JSF) tags in JSP pages. Facelets is the new view declaration language since JSF 2.0. We recommend that you use the XHTML instead of JSP."
-    - content: Which methods allow you to access the application logs in Azure App Service?
+          explanation: Correct! Maven helps manage dependencies and automates the build and deployment processes, streamlining development.
+
+    - content: How does deploying a Java web application to Azure App Service benefit developers?
       choices:
-        - content: SSH in Advanced Tools in the Azure portal
+        - content: It automatically converts Java code to a faster language.
           isCorrect: false
-          explanation: This method is a correct option, but it isn't the only way to access the logs.
-        - content: Access the log stream in Advanced Tools in the Azure portal
+          explanation: Incorrect. Azure App Service doesn't convert code. It hosts applications as they are.
+        - content: It eliminates the need for a build automation tool like Maven.
           isCorrect: false
-          explanation: This method is a correct option, but it isn't the only way to access the logs.
-        - content: The Azure CLI command-line tool
-          isCorrect: false
-          explanation: This method is a correct option, but it isn't the only way to access the logs.
-        - content: All of the above
+          explanation: Incorrect. Build automation tools are still needed for compiling and packaging the application before deployment.
+        - content: It provides a scalable, managed hosting environment without the need to manage infrastructure.
           isCorrect: true
-          explanation: Correct!
+          explanation: Correct! Azure App Service enables developers to deploy applications easily, handling scaling and infrastructure management.
 
-
-    - content: Which tasks can you do with the Maven Plugin for Azure App Service?
+    - content: What is the primary role of a servlet in a Java web application?
       choices:
-        - content: Compile the source code
+        - content: To manage database connections and queries.
           isCorrect: false
-          explanation: The Maven Compiler Plugin compiles your source code.
-        - content: Configure your Azure App Service instance
-          isCorrect: false
-          explanation: This choice is a correct option, but it isn't its only feature.
-        - content: Deploy to your Azure App Service instance
-          isCorrect: false
-          explanation: This choice is a correct option, but it isn't its only feature.
-        - content: Both configure and deploy to your Azure App Service instance
+          explanation: Incorrect. Servlets can interact with databases, but their main role is handling web requests and generating dynamic content.
+        - content: To handle client requests and generate dynamic content on the server side.
           isCorrect: true
-          explanation: Correct!
+          explanation: Correct! The main role of a servlet is to handle client requests and generate server-side responses.
+        - content: To define the application's user interface.
+          isCorrect: false
+          explanation: Incorrect. Servlets work on the server side and don't manage the user interface, which is handled by client-side components.
 
+    - content: Why is Apache Tomcat used in Java web application development?
+      choices:
+        - content: It serves as a servlet container that implements Java Servlet and JSP specifications.
+          isCorrect: true
+          explanation: Correct! Tomcat provides an environment to run Java servlets and JSPs, which is essential for Java web applications.
+        - content: It's a front-end framework for designing responsive web interfaces.
+          isCorrect: false
+          explanation: Incorrect. Tomcat is a server-side technology and doesn't deal with front-end design.
+        - content: It's a database system used for storing application data.
+          isCorrect: false
+          explanation: Incorrect. Tomcat is a web server and servlet container, not a database system.
