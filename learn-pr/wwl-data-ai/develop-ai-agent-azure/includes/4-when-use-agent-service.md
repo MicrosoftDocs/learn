@@ -22,7 +22,7 @@ Previous solutions to achieve an agent-like experience took hundreds of lines of
 
 ## Agent building options
 
-Azure AI Agent Service offers several advantages to building agents, but isn't always the best solution for your use case. For example, if you're trying to build an integration with M365 you might choose the Copilot Studio agent builder and if you're trying to orchestrate multiple agents, you might choose the Semantic Kernel Agents Framework.
+Azure AI Agent Service offers several advantages to building agents, but isn't always the best solution for your use case. For example, if you're trying to build an integration with Microsoft 365 you might choose the Copilot Studio agent builder and if you're trying to orchestrate multiple agents, you might choose the Semantic Kernel Agents Framework.
 
 This [Fundamentals of AI Agents](/training/modules/ai-agent-fundamentals/3-agent-development) unit explores more of the options for building agents.
 
