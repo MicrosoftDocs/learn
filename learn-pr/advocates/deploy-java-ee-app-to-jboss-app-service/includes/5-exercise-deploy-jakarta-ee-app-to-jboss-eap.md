@@ -116,6 +116,9 @@ After the command finishes, you can see that following entry is added in your Ma
 
 For this deployment, please modify the `webContainer` value to `Jbosseap 8` for the JBoss EAP 8 environment on Azure App Service.
 
+> [!TIP]
+> As of February 2025, the latest available version of JBoss EAP is 8.0 Update 4.1.
+
 ```xml
                 <runtime>
                     <os>Linux</os>
