@@ -47,3 +47,14 @@ The Premium service plan is designed to provide enhanced performance for product
 ### Isolated
 
 The Isolated service plan is designed to run mission critical workloads that are required to run in a virtual network. The Isolated plan allows customers to run their applications in a private, dedicated environment in an Azure datacenter. The plan offers Dv2-series virtual machines with faster processors, SSD storage, and a double memory-to-core ratio compared to the Standard tier. The private environment used with an Isolated plan is called the App Service Environment. The plan can scale to 100 instances with more available upon request.
+
+## Try it in the Azure portal
+
+You can view the available App Service plans in the Azure portal. You can make your choice based on hardware or feature requirements. 
+
+1. Use the Azure portal to search for and select **App Service plans**. 
+1. **Create** a new App Service plan. 
+1. Select **Explore pricing plans** to view the available plans.
+
+
+
