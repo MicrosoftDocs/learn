@@ -81,7 +81,7 @@ Now that you had success with your first Bash script, let's execute a Bash scrip
 
 When creating and testing scripts, remember to delete your test resources to avoid costs. If you used a naming convention for your Azure resources, using a delete script is an easy way to clean up your environment.
 
-Delete all storage accounts created on or after a specific date and time. Use the `--yes` parameter to bypass the confirmation prompt. Change `2025-02-17T19:14:27.103127+00:00` to be the day your are testing the script.
+Delete all storage accounts created on or after a specific date and time. Use the `--yes` parameter to bypass the confirmation prompt. Change `2025-02-17T19:14:27.103127+00:00` to be the day you're testing the script.
 
 ```azurecli
 for saList in $(az storage account list \
@@ -125,11 +125,11 @@ az group list --query "[?starts_with(name, 'msdocs') == \`true\`].name"
 
 The scripts provided in this unit are intended to plant a seed of understanding that the Azure CLI is a tool designed to manage Azure resources at scale. Every organization is a unique environment and the complexity of your script is contingent upon what you need to accomplish. Minimally, an end-to-end Azure CLI script run in a production setting completes the following tasks:
 
-- Sign into Azure using `az login` with a service principal, managed identity, or federated identity.
-- Create parameters.
-- Assign parameter values from a configuration file.
-- Create multiple Azure resources using a WHILE loop or IF..ELSE statement.
-- Validate results.
-- Write results to a log file.
+1. Sign into Azure using `az login` with a service principal, managed identity, or federated identity.
+1. Create parameters.
+1. Assign parameter values from a configuration file.
+1. Create multiple Azure resources using a WHILE loop or IF..ELSE statement.
+1. Validate results.
+1. Write results to a log file.
 
 Despite their relative simplicity, the scripts in this unit showcase the powerful potential of Azure CLI when combining loops and variables with Azure CLI reference commands. The Azure CLI [samples GitHub repository](https://github.com/Azure-Samples/azure-cli-samples) has many Bash scripts to help you continue your Azure CLI journey.

@@ -34,7 +34,7 @@ cli.azure.cli.core: Raw command  : group create
 ...
 cli.azure.cli.core.azlogging: metadata file logging enabled - writing logs to '/home/myName/.azure/commands/2025-02-17.21-47-27.group_create.5217.log'.
 ...
-cli.azure.cli.core.sdk.policies: Request URL: 'https://management.azure.com/subscriptions/0ac2f5dd-7d2d-4913-ac4f-f21fe40ea17f/resourcegroups/myResourceGroupName?api-version=2022-09-01'
+cli.azure.cli.core.sdk.policies: Request URL: 'https://management.azure.com/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourcegroups/myResourceGroupName?api-version=2022-09-01'
 cli.azure.cli.core.sdk.policies: Request method: 'PUT'
 cli.azure.cli.core.sdk.policies: Request headers:
 cli.azure.cli.core.sdk.policies:     'Content-Type': 'application/json'
@@ -122,7 +122,7 @@ Here are some examples:
 | **Variable naming** | variableName=varValue | $variableName="varValue" | set variableName=varValue |
 | **Number as string** | \\\`50\\\` | \`\`50\`\` | \`50\` |
 | **Boolean as string** |\\\`true\\\` | \`\`false\`\` | \'true\' |
-| **Random ID** | let "$RANDOM*$RANDOM" | (New-Guid).ToString().Substring(0,8) | %RANDOM% |
+| **Random ID** | let "$RANDOM\*$RANDOM" | (New-Guid).ToString().Substring(0,8) | %RANDOM% |
 | **Looping** | `until`, `while`, or `for` | `for`, `Foreach`, `while`, `do-while`, `do-until` | `for-[...]` |
 
 This example table isn't all-inclusive. What's important to understand when receiving an Azure CLI error, consider first that there might be a syntax problem for your environment. Test this possibility by **copying and pasting your script into another scripting language**, like Azure Cloud Shell. Use `--debug` in both environments and note the differences in the `command arguments` property of the output.
@@ -136,19 +136,19 @@ This example table isn't all-inclusive. What's important to understand when rece
 
 Take a quick tour of Azure CLI commands by following these examples:
 
-1. Find the most popular commands related to the word **blob**:
+- Find the most popular commands related to the word **blob**:
 
    ```azurecli
    az find blob
    ```
 
-1. Show the most popular commands for an Azure CLI command group, such as `az storage`:
+- Show the most popular commands for an Azure CLI command group, such as `az storage`:
 
    ```azurecli
    az find "az storage"
    ```
 
-1. Show the most popular parameters and subcommands for an Azure CLI command:
+- Show the most popular parameters and subcommands for an Azure CLI command:
 
    ```azurecli
    az find "az storage account create"

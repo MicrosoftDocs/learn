@@ -30,7 +30,7 @@ The Azure CLI runs in Bash, PowerShell, and Windows command shell (Cmd.exe). Wit
    > [!div class="nextstepaction"]
    > [Latest MSI of the Azure CLI (64-bit)](https://aka.ms/installazurecliwindowsx64)
 
-  If you previously installed the Azure CLI, running either the 32-bit or 64-bit Microsoft installer (MSI) overwrites an existing installation.
+   If you previously installed the Azure CLI, running either the 32-bit or 64-bit Microsoft installer (MSI) overwrites an existing installation.
 
 1. After the installation is complete, **close and reopen any active terminal window to use the Azure CLI**.
 
