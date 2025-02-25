@@ -122,8 +122,9 @@ Here are some examples:
 | **Variable naming** | variableName=varValue | $variableName="varValue" | set variableName=varValue |
 | **Number as string** | \\\`50\\\` | \`\`50\`\` | \`50\` |
 | **Boolean as string** |\\\`true\\\` | \`\`false\`\` | \'true\' |
-| **Random ID** | let "$RANDOM\*$RANDOM" | (New-Guid).ToString().Substring(0,8) | %RANDOM% |
+| **Random ID** | let "randomIdentifier=$RANDOM*$RANDOM" | $randomIdentifier = (New-Guid).ToString().Substring(0,8) | set randomIdentifier=%RANDOM% |
 | **Looping** | `until`, `while`, or `for` | `for`, `Foreach`, `while`, `do-while`, `do-until` | `for-[...]` |
+| **Write to console** | echo | write-host (preferred) or echo | echo |
 
 This example table isn't all-inclusive. What's important to understand when receiving an Azure CLI error, consider first that there might be a syntax problem for your environment. Test this possibility by **copying and pasting your script into another scripting language**, like Azure Cloud Shell. Use `--debug` in both environments and note the differences in the `command arguments` property of the output.
 
