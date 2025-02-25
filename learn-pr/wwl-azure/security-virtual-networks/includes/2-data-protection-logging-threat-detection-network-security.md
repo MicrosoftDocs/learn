@@ -212,11 +212,11 @@ AWS implementation and additional context:
  -  [AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-service.html)
  -  [Blocking public access to your Amazon S3 storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html)
 
-GCP guidance: Deploy VPC Private Google Access implementations for all GCP resources that support it to establish a private access point for the resources. These private access options keeps the private connection from routing through the public network. Private Google Access has VM instances that only have internal IP addresses (no external IP addresses)
+GCP guidance: Deploy VPC Private Google Access implementations for all GCP resources that support it to establish a private access point for the resources. These private access options keep the private connection from routing through the public network. Private Google Access has VM instances that only have internal IP addresses (no external IP addresses)
 
 For certain services, you can choose to deploy the service instance into your own VPC to isolate the traffic. You also have the option to configure the service native ACL rules to block access from the public network. For example, the App Engine firewall allows you to control which network traffic is allowed or rejected when communicating with the App Engine resource. Cloud Storage is another resource where you can enforce public access prevention on individual buckets or at the organization level.
 
-For GCP Compute Engine VMs, unless there is a strong use case, you should avoid assigning public IPs/subnets directly to the VM interface and instead use gateway or load balancer services as the front-end for access by the public network.
+For GCP Compute Engine VMs, unless there's a strong use case, you should avoid assigning public IPs/subnets directly to the VM interface and instead use gateway or load balancer services as the front-end for access by the public network.
 
 GCP implementation and additional context:
 
@@ -337,7 +337,7 @@ AWS guidance: Use AWS Web Application Firewall (WAF) in Amazon CloudFront distri
 
 Use AWS Managed Rules for WAF to deploy built-in baseline groups and customize it to your application needs for the user-case rule groups.
 
-To simplify the WAF rules deployment, you can also use the AWS WAF Security Automations solution to automatically deploy pre-defined AWS WAF rules that filters web-based attacks on your web ACL.
+To simplify the WAF rules deployment, you can also use the AWS WAF Security Automations solution to automatically deploy pre-defined AWS WAF rules that filter web-based attacks on your web ACL.
 
 AWS implementation and additional context:
 
@@ -373,34 +373,34 @@ Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/org
 | ------------------------- | --------------------------- | ------------------------ |
 | 4.4, 4.8                  | CM-2, CM-6, CM-7            | 4.1, A2.1, A2.2, A2.3    |
 
-Security principle: Detect and disable insecure services and protocols at the OS, application, or software package layer. Deploy compensating controls if disabling insecure services and protocols are not possible.
+Security principle: Detect and disable insecure services and protocols at the OS, application, or software package layer. Deploy compensating controls if disabling insecure services and protocols aren't possible.
 
-Azure guidance: Use Microsoft Sentinel’s built-in Insecure Protocol Workbook to discover the use of insecure services and protocols such as SSL/TLSv1, SSHv1, SMBv1, LM/NTLMv1, wDigest, weak ciphers in Kerberos, and Unsigned LDAP Binds. Disable insecure services and protocols that do not meet the appropriate security standard.
+Azure guidance: Use Microsoft Sentinel’s built-in Insecure Protocol Workbook to discover the use of insecure services and protocols such as SSL/TLSv1, SSHv1, SMBv1, LM/NTLMv1, wDigest, weak ciphers in Kerberos, and Unsigned LDAP Binds. Disable insecure services and protocols that don't meet the appropriate security standard.
 
 > [!NOTE]
-> If disabling insecure services or protocols is not possible, use compensating controls such as blocking access to the resources through network security group, Azure Firewall, or Azure Web Application Firewall to reduce the attack surface.
+> If disabling insecure services or protocols isn't possible, use compensating controls such as blocking access to the resources through network security group, Azure Firewall, or Azure Web Application Firewall to reduce the attack surface.
 
 Azure implementation and additional context:
 
  -  [Azure Sentinel insecure protocols workbook](/azure/sentinel/quickstart-get-visibility#use-built-in-workbooks)
 
-AWS guidance: Enable VPC Flow Logs and use GuardDuty to analyze the VPC Flow Logs to identify the possible insecure services and protocols that do not meet the appropriate security standard.
+AWS guidance: Enable VPC Flow Logs and use GuardDuty to analyze the VPC Flow Logs to identify the possible insecure services and protocols that don't meet the appropriate security standard.
 
 If the logs in the AWS environment can be forwarded to Microsoft Sentinel, you can also use Microsoft Sentinel's built-in Insecure Protocol Workbook to discover the use of insecure services and protocols
 
 > [!NOTE]
-> If disabling insecure services or protocols is not possible, use compensating controls such as blocking access to the resources through security groups, AWS Network Firewall, AWS Web Application Firewall to reduce the attack surface.
+> If disabling insecure services or protocols isn't possible, use compensating controls such as blocking access to the resources through security groups, AWS Network Firewall, AWS Web Application Firewall to reduce the attack surface.
 
 AWS implementation and additional context:
 
  -  [Use GuardDuty with VPC Flow Logs as the data source](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_data-sources.html#guardduty_vpc)
 
-GCP guidance: Enable VPC Flow Logs and use BigQuery or Security Command Center to analyze the VPC Flow Logs to identify the possible insecure services and protocols that do not meet the appropriate security standard.
+GCP guidance: Enable VPC Flow Logs and use BigQuery or Security Command Center to analyze the VPC Flow Logs to identify the possible insecure services and protocols that don't meet the appropriate security standard.
 
 If the logs in the GCP environment can be forwarded to Microsoft Sentinel, you can also use the Microsoft Sentinel’s built-in Insecure Protocol Workbook to discover the use of insecure services and protocols. Additional you can forward logs to Google Cloud Chronicle SIEM and SOAR and build custom rules for the same purpose.
 
 > [!NOTE]
-> If disabling insecure services or protocols is not possible, use compensating controls such as blocking access to the resources through VPC Firewall rules and policies, or Cloud Armor to reduce the attack surface.
+> If disabling insecure services or protocols isn't possible, use compensating controls such as blocking access to the resources through VPC Firewall rules and policies, or Cloud Armor to reduce the attack surface.
 
 GCP implementation and additional context:
 
@@ -435,7 +435,7 @@ Azure implementation and additional context:
  -  [What are the ExpressRoute connectivity models](/azure/expressroute/expressroute-connectivity-models)
  -  [Virtual network peering](/azure/virtual-network/virtual-network-peering-overview)
 
-AWS guidance: For site-to-site or point-to-site connectivity, use AWS VPN to create a secure connection (when IPsec overhead is not a concern) between your on-premises site or end-user device to the AWS network.
+AWS guidance: For site-to-site or point-to-site connectivity, use AWS VPN to create a secure connection (when IPsec overhead isn't a concern) between your on-premises site or end-user device to the AWS network.
 
 For enterprise-level high performance connections, use AWS Direct Connect to connect AWS VPCs and resources with your on-premises infrastructure in a co-location environment.
 
