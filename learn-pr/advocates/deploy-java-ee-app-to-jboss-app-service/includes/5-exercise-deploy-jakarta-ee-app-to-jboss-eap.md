@@ -333,7 +333,8 @@ Add the extension for `serviceconnector-passwordless` and create the `Service Co
 ```azurecli
 az extension add --name serviceconnector-passwordless --upgrade
 
-az webapp connection create mysql-flexible -g $RESOURCEGROUP_NAME --connection $PASSLESS_USER_NAME_SUFFIX \
+az webapp connection create mysql-flexible -g ${RESOURCEGROUP_NAME} \
+--connection $PASSLESS_USER_NAME_SUFFIX \
 --source-id $SOURCE_WEBAPP_ID \
 --target-id $TARGET_MYSQL_ID \
 --client-type java \
