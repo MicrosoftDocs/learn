@@ -32,7 +32,6 @@ subjects:
 - security
 - data-storage
 units:
-- learn.data-ai.data-warehouse-security.introduction
 - learn.data-ai.data-warehouse-security.security-monitoring-and-auditing
 - learn.data-ai.data-warehouse-security.summary
 badge:
