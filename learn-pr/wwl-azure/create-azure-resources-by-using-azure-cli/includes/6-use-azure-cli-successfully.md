@@ -122,7 +122,7 @@ Here are some examples:
 | **Variable naming** | variableName=varValue | $variableName="varValue" | set variableName=varValue |
 | **Number as string** | \\\`50\\\` | \`\`50\`\` | \`50\` |
 | **Boolean as string** |\\\`true\\\` | \`\`false\`\` | \'true\' |
-| **Random ID** | let "randomIdentifier=$RANDOM*$RANDOM" | $randomIdentifier = (New-Guid).ToString().Substring(0,8) | set randomIdentifier=%RANDOM% |
+| **Random ID** | let "randomIdentifier=\$RANDOM*$RANDOM" | $randomIdentifier = (New-Guid).ToString().Substring(0,8) | set randomIdentifier=%RANDOM% |
 | **Looping** | `until`, `while`, or `for` | `for`, `Foreach`, `while`, `do-while`, `do-until` | `for-[...]` |
 | **Write to console** | echo | write-host (preferred) or echo | echo |
 
