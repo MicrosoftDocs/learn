@@ -9,8 +9,7 @@ Let's configure the application by executing the configuration goal in the Maven
 ```
 
 > [!IMPORTANT]  
-> If you change the region of your MySQL server, you should also change to the same region for your Jakarta EE application server to minimize latency delays.  
-> In the command, select Java 11 for Java version and JBoss EAP 7 for runtime stack.
+> If you change the region of your MySQL server, you should also change to the same region for your Jakarta EE application server to minimize latency delays.
 
 |  Input element  |  Value  |
 | ---- | ---- |
@@ -312,11 +311,11 @@ After the script runs, it'll be invoked every time the application server is res
 > [!NOTE]
 > If your deployment artifact isn't `ROOT.war`, you need to change the `--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_9_2` value too.
 
-## Configure the e Service Connector for MySQL flexible server
+## Configure the Service Connector for MySQL flexible server
 
 After you configure the startup script, configure App Service to use Service Connector for MySQL flexible server connection:
 
-First, set the following environment variables. `PASSLESS_USER_NAME_SUFFIX` is the suffix for the username used to connect to the MySQL flexible server. In practice, the username created will have the prefix `aad_` followed by the specified suffix. `SOURCE_WEBAPP_ID` is the ID of the Azure App Service used to connect to the MySQL flexible server. `MYSQL_ID` is the ID of the MySQL flexible server. In this case, we want to establish a connection with a user who has permissions to access the world database, so `TARGET_MYSQL_ID` specifies the database name as `/database/world`. `MANAGEDID` is the managed identity used to connect to the MySQL flexible server.
+First, set the following environment variables. `PASSLESS_USER_NAME_SUFFIX` is the suffix for the username used to connect to the MySQL flexible server. In practice, the username created will have the prefix `aad_` followed by the specified suffix. `SOURCE_WEBAPP_ID` is the ID of the Azure App Service used to connect to the MySQL flexible server. `MYSQL_ID` is the ID of the MySQL flexible server. In this case, we want to establish a connection with a user who has permissions to access the `world` database, so `TARGET_MYSQL_ID` specifies the database name as `/database/world`. `MANAGEDID` is the managed identity used to connect to the MySQL flexible server.
 
 ```azurecli
 export PASSLESS_USER_NAME_SUFFIX=jbossapp
