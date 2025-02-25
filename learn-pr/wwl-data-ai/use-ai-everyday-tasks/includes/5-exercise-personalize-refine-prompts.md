@@ -8,7 +8,7 @@ In this module, you use Microsoft Copilot to interact with generative AI. To fol
 
 2. Sign in to Copilot with your [personal Microsoft Account](https://signup.live.com?azure-portal=true) (such as an outlook.com account).
 
-![Screenshot of Copilot.microsoft.com with the sign in button highlighted.](../media/05-copilot-sign-in.jpg)
+![Screenshot of Copilot.microsoft.com with the sign in button highlighted.](../media/05-copilot-sign-in.png)
 
 ## Personalize sample prompts
 To start, you practice creating personalized prompts using a few fill-in-the-blank prompts. Your task is to fill in the blanks with specific details such as goals, timelines, topics, or other relevant information. This helps you create clear and effective prompts for Copilot.
