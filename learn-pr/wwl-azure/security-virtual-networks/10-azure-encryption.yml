@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.security-virtual-networks.azure-encryption-
+uid: learn.wwl.security-virtual-networks.azure-encryption
 title: 'Azure encryption '
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Azure encryption
   description: "Azure encryption"
-  ms.date: 02/21/2025
+  ms.date: 02/25/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/11-azure-encryption-.md)]
+  [!include[](includes/10-azure-encryption.md)]

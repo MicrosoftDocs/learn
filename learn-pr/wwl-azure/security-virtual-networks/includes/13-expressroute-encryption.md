@@ -2,7 +2,7 @@ Deploy Azure Virtual WAN to establish an IPsec/IKE VPN connection from your on-p
 
 ## Topology and routing
 
-:::image type="content" source="../media/express-route-virtual-wide-area-network-35af6db6.png" alt-text="Diagram showing an example of Azure express route topology and routing.":::
+:::image type="content" source="../media/express-route-virtual-wide-area-network-35af6db6-fcac7176.png" alt-text="Diagram showing an example of Azure express route topology and routing.":::
 
 
 The diagram shows a network within the on-premises network connected to the Azure hub VPN gateway over ExpressRoute private peering. The connectivity establishment is straightforward:

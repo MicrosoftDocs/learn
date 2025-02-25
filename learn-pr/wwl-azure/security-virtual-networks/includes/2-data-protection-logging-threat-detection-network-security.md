@@ -18,7 +18,8 @@ Enforce HTTPS for web application workloads and services by ensuring that any cl
 
 For remote management of Azure virtual machines, use SSH (for Linux) or RDP/TLS (for Windows) instead of an unencrypted protocol. For secure file transfer, use the SFTP/FTPS service in Azure Storage Blob, App Service apps, and Function apps, instead of using the regular FTP service.
 
-Note: Data in transit encryption is enabled for all Azure traffic traveling between Azure datacenters. TLS v1.2 or later is enabled on most Azure services by default. And some services such as Azure Storage and Application Gateway can enforce TLS v1.2 or later on the server side.
+> [!NOTE]
+> Data in transit encryption is enabled for all Azure traffic traveling between Azure datacenters. TLS v1.2 or later is enabled on most Azure services by default. And some services such as Azure Storage and Application Gateway can enforce TLS v1.2 or later on the server side.
 
 Azure implementation and additional context:
 
@@ -33,7 +34,8 @@ Enforce HTTPS (such as in AWS Elastic Load Balancer) for workload web applicatio
 
 For remote management of EC2 instances, use SSH (for Linux) or RDP/TLS (for Windows) instead of an unencrypted protocol. For secure file transfer, use AWS Transfer SFTP or FTPS service instead of a regular FTP service.
 
-Note: All network traffic between AWS data centers is transparently encrypted at the physical layer. All traffic within a VPC and between peered VPCs across regions is transparently encrypted at the network layer when using supported Amazon EC2 instance types. TLS v1.2 or later is enabled on most AWS services by default. And some services such as AWS Load Balancer can enforce TLS v1.2 or later on the server side.
+> [!NOTE]
+> All network traffic between AWS data centers is transparently encrypted at the physical layer. All traffic within a VPC and between peered VPCs across regions is transparently encrypted at the network layer when using supported Amazon EC2 instance types. TLS v1.2 or later is enabled on most AWS services by default. And some services such as AWS Load Balancer can enforce TLS v1.2 or later on the server side.
 
 AWS implementation and additional context:
 
@@ -91,7 +93,8 @@ GCP guidance: Most of the network activities logs are available through the VPC 
 
 You can view flow logs in Cloud Logging, and export logs to the destination that Cloud Logging export supports. Flow logs are aggregated by connection from Compute Engine VM’s and exported in real time. By subscribing to Pub/Sub, you can analyze flow logs using real-time streaming APIs.
 
-Note: You can also use Packet Mirroring clones the traffic of specified instances in your Virtual Private Cloud (VPC) network and forwards it for examination. Packet Mirroring captures all traffic and packet data, including payloads and headers.
+> [!NOTE]
+> You can also use Packet Mirroring clones the traffic of specified instances in your Virtual Private Cloud (VPC) network and forwards it for examination. Packet Mirroring captures all traffic and packet data, including payloads and headers.
 
 GCP implementation and additional context:
 
@@ -143,7 +146,8 @@ AWS guidance: Create a Virtual Private Cloud (VPC) as a fundamental segmentation
 
 For EC2 instances, use Security Groups as a stateful firewall to restrict traffic by port, protocol, source IP address, or destination IP address. At the VPC subnet level, use Network Access Control List (NACL) as a stateless firewall to have explicit rules for ingress and egress traffic to the subnet.
 
-Note: To control VPC traffic, Internet and NAT Gateway should be configured to ensure the traffic from/to the internet are restricted.
+> [!NOTE]
+> To control VPC traffic, Internet and NAT Gateway should be configured to ensure the traffic from/to the internet are restricted.
 
 AWS implementation and additional context:
 
@@ -181,7 +185,8 @@ Security principle: Secure cloud services by establishing a private access point
 
 Azure guidance: Deploy private endpoints for all Azure resources that support the Private Link feature to establish a private access point for the resources. Using Private Link will keep the private connection from routing through the public network.
 
-Note: Certain Azure services may also allow private communication through the service endpoint feature, though it is recommended to use Azure Private Link for secure and private access to services hosted on Azure platform.
+> [!NOTE]
+> Certain Azure services may also allow private communication through the service endpoint feature, though it is recommended to use Azure Private Link for secure and private access to services hosted on Azure platform.
 
 For certain services, you can choose to deploy VNet integration for the service where you can restrict the VNET to establish a private access point for the service.
 
@@ -372,7 +377,8 @@ Security principle: Detect and disable insecure services and protocols at the OS
 
 Azure guidance: Use Microsoft Sentinel’s built-in Insecure Protocol Workbook to discover the use of insecure services and protocols such as SSL/TLSv1, SSHv1, SMBv1, LM/NTLMv1, wDigest, weak ciphers in Kerberos, and Unsigned LDAP Binds. Disable insecure services and protocols that do not meet the appropriate security standard.
 
-Note: If disabling insecure services or protocols is not possible, use compensating controls such as blocking access to the resources through network security group, Azure Firewall, or Azure Web Application Firewall to reduce the attack surface.
+> [!NOTE]
+> If disabling insecure services or protocols is not possible, use compensating controls such as blocking access to the resources through network security group, Azure Firewall, or Azure Web Application Firewall to reduce the attack surface.
 
 Azure implementation and additional context:
 
@@ -382,7 +388,8 @@ AWS guidance: Enable VPC Flow Logs and use GuardDuty to analyze the VPC Flow Log
 
 If the logs in the AWS environment can be forwarded to Microsoft Sentinel, you can also use Microsoft Sentinel's built-in Insecure Protocol Workbook to discover the use of insecure services and protocols
 
-Note: If disabling insecure services or protocols is not possible, use compensating controls such as blocking access to the resources through security groups, AWS Network Firewall, AWS Web Application Firewall to reduce the attack surface.
+> [!NOTE]
+> If disabling insecure services or protocols is not possible, use compensating controls such as blocking access to the resources through security groups, AWS Network Firewall, AWS Web Application Firewall to reduce the attack surface.
 
 AWS implementation and additional context:
 
@@ -392,7 +399,8 @@ GCP guidance: Enable VPC Flow Logs and use BigQuery or Security Command Center t
 
 If the logs in the GCP environment can be forwarded to Microsoft Sentinel, you can also use the Microsoft Sentinel’s built-in Insecure Protocol Workbook to discover the use of insecure services and protocols. Additional you can forward logs to Google Cloud Chronicle SIEM and SOAR and build custom rules for the same purpose.
 
-Note: If disabling insecure services or protocols is not possible, use compensating controls such as blocking access to the resources through VPC Firewall rules and policies, or Cloud Armor to reduce the attack surface.
+> [!NOTE]
+> If disabling insecure services or protocols is not possible, use compensating controls such as blocking access to the resources through VPC Firewall rules and policies, or Cloud Armor to reduce the attack surface.
 
 GCP implementation and additional context:
 

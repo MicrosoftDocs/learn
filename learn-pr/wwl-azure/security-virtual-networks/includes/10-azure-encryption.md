@@ -75,7 +75,7 @@ CLE has built-in functions that you can use to encrypt data by using either symm
 
 ### Azure Cosmos DB database encryption
 
-[Azure Cosmos DB](/azure/cosmos-db/database-encryption-at-rest) is Microsoft's globally distributed, multi-model database. User data that's stored in Azure Cosmos DB in non-volatile storage (solid-state drives) is encrypted by default. There are no controls to turn it on or off. Encryption at rest is implemented by using a number of security technologies, including secure key storage systems, encrypted networks, and cryptographic APIs. Encryption keys are managed by Microsoft and are rotated per Microsoft internal guidelines. Optionally, you can choose to add a second layer of encryption with keys you manage using the [customer-managed keys or CMK](/azure/cosmos-db/how-to-setup-cmk) feature.
+[Azure Cosmos DB](/azure/cosmos-db/database-encryption-at-rest) is Microsoft's globally distributed, multi-model database. User data that's stored in Azure Cosmos DB in non-volatile storage (solid-state drives) is encrypted by default. There are no controls to turn it on or off. Encryption at rest is implemented by using a number of security technologies, including secure key storage systems, encrypted networks, and cryptographic APIs. Encryption keys are managed by Microsoft and are rotated per Microsoft internal guidelines. Optionally, you can choose to add a second layer of encryption with keys you manage to use the [customer-managed keys or CMK](/azure/cosmos-db/how-to-setup-cmk) feature.
 
 ### At-rest encryption in Data Lake
 

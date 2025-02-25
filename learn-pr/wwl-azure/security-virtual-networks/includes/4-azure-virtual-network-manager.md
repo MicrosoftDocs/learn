@@ -2,7 +2,7 @@ Azure Virtual Network Manager is a management service that enables you to group,
 
 ## How does Azure Virtual Network Manager work?
 
-:::image type="content" source="../media/management-groups-subscriptions-virtual-networks.png" alt-text="Diagram of a management group and subscriptions in the Azure virtual network manager.":::
+:::image type="content" source="../media/management-groups-subscriptions-virtual-networks-9ec769cf.png" alt-text="Diagram of a management group and subscriptions in the Azure virtual network manager.":::
 
 
 During the creation process, you define the scope for what your Azure Virtual Network Manager manages. Your Network Manager only has the delegated access to apply configurations within this scope boundary. Defining a scope can be done directly on a list of subscriptions. However it's recommended to use [management groups](/azure/governance/management-groups/overview) to define your scope. Management groups provide hierarchical organization to your subscriptions. After defining the scope, you deploy configuration types including *Connectivity* and the *SecurityAdmin rules* for your Virtual Network Manager.

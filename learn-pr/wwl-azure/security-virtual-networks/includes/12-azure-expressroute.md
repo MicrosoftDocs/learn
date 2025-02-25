@@ -2,7 +2,7 @@ ExpressRoute lets you extend your on-premises networks into the Microsoft cloud 
 
 Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. ExpressRoute connections offer more reliability, faster speeds, consistent latencies, and higher security than typical connections over the Internet, because they don’t go over the public Internet.
 
-:::image type="content" source="../media/expressroute-connection-overview-0d35ad26.png" alt-text="Diagram showing an example of Azure ExpressRoute.":::
+:::image type="content" source="../media/expressroute-connection-overview-0d35ad26-9fef4436.png" alt-text="Diagram showing an example of Azure ExpressRoute.":::
 <br>
 
 ## Key benefits

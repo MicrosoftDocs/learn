@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Azure Virtual Network Manager
   description: "Azure Virtual Network Manager"
-  ms.date: 02/21/2025
+  ms.date: 02/25/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-azure-virtual-network-manager.md)]
+  [!include[](includes/4-azure-virtual-network-manager.md)]

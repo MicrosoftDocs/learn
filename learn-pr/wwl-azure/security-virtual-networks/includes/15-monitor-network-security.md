@@ -6,7 +6,7 @@ Network Watcher consists of three major sets of tools and capabilities:
  -  Network diagnostic tools
  -  Traffic
 
-:::image type="content" source="../media/azure-network-watcher-cf554286.png" alt-text="Diagram showing an example of network watcher monitoring and diagnostic tools.":::
+:::image type="content" source="../media/azure-network-watcher-cf554286-4d5ee917.png" alt-text="Diagram showing an example of network watcher monitoring and diagnostic tools.":::
 
 
 > [!NOTE]
@@ -84,14 +84,14 @@ Network security groups flow logging is a feature of Azure Network Watcher that 
 
 Traffic analytics provides rich visualizations of flow logs data.
 
-:::image type="content" source="../media/traffic-analytics-dashboard-ff698520.png" alt-text="Screenshot showing traffic analytics flow log data.":::
+:::image type="content" source="../media/traffic-analytics-dashboard-ff698520-64ae69dc.png" alt-text="Screenshot showing traffic analytics flow log data.":::
 
 
 ## Usage + quotas
 
 The Usage + quotas capability of Network Watcher provides a summary of your deployed network resources within a subscription and region, including current usage and corresponding limits for each resource. For more information, see [Networking limits](/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/network-watcher/toc.json#azure-resource-manager-virtual-networking-limits) to learn about the limits for each Azure network resource per region per subscription. This information is helpful when planning future resource deployments as you can't create more resources if you reach their limits within the subscription or region.
 
-:::image type="content" source="../media/network-watcher-usage-quotas.png" alt-text="Sceenshot showing an example of the Network Watcher usage and quotas page.":::
+:::image type="content" source="../media/network-watcher-usage-quotas-ad59c6e5.png" alt-text="Sceenshot showing an example of the Network Watcher usage and quotas page.":::
 
 
 ## Network Watcher limits
