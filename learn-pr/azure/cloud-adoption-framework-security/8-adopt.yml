@@ -27,5 +27,5 @@ quiz:
      isCorrect: true
      explanation: Correct. Setting up alert systems to detect unusual activities in real-time is crucial for incident preparedness and response. 
    - content: To implement Zero Trust access controls
-     isCorrect: true
+     isCorrect: false
      explanation: Incorrect. Implementing Zero Trust access controls is important for security, but it's not the key aspect of incident preparedness and response.

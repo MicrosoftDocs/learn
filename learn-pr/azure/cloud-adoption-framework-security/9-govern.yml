@@ -27,5 +27,5 @@ quiz:
      isCorrect: false
      explanation: Incorrect. Improving data backup processes is not the primary goal of security governance. 
    - content: Optimizing resource allocation
-     isCorrect: true
+     isCorrect: false
      explanation: Incorrect. Optimizing resource allocation is not the main focus of security governance.
