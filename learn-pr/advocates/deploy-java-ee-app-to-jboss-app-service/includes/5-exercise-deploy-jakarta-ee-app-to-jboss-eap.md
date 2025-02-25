@@ -5,7 +5,7 @@ In this exercise, you'll deploy a Jakarta EE application to JBoss EAP on Azure A
 Let's configure the application by executing the configuration goal in the Maven Plugin for Azure App Service.
 
 ```bash
-./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.9.0:config
+./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.13.0:config
 ```
 
 > [!IMPORTANT]  
@@ -14,74 +14,60 @@ Let's configure the application by executing the configuration goal in the Maven
 
 |  Input element  |  Value  |
 | ---- | ---- |
-|  `Available subscriptions:` | `Your appropriate subsctioption` |
-|  `Choose a Web Container Web App [\<create\>]:` |  `1: <create>`  |
+| `Create new run configuration (Y/N) [Y]:` | `Y` |
 |  `Define value for OS [Linux]:`  |  `Linux`  |
-|  `Define value for javaVersion [Java 17]:`  |  `2: Java 11`  |
-|  `Define value for runtimeStack:`  |  `1: Jbosseap 7`  |
+|  `Define value for javaVersion [Java 17]:`  |  `1: Java 17`  |
+|  `Define value for runtimeStack:`  |  `3: Jbosseap 7`  |
 |  `Define value for pricingTier [P1v3]:`  |  `P1v3`  |
 |  `Confirm (Y/N) [Y]:` | `Y` |
 
 After you run the command, you'll get messages like the following in the terminal:
 
 ```output
-$ ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.9.0:config
+ ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.13.0:config
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] ---------< com.microsoft.azure.samples:jakartaee-app-on-jboss >---------
-[INFO] Building jakartaee-app-on-jboss 1.0-SNAPSHOT
+[INFO] Building jakartaee-app-on-jboss 0.1-SNAPSHOT
 [INFO] --------------------------------[ war ]---------------------------------
 [INFO] 
-[INFO] --- azure-webapp-maven-plugin:2.5.0:config (default-cli) @ jakartaee-app-on-jboss ---
-[WARNING] The POM for com.microsoft.azure.applicationinsights.v2015_05_01:azure-mgmt-insights:jar:1.0.0-beta is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
-[INFO] Auth type: OAUTH2
-Username: YOUR_EMAIL_ADDRESS@microsoft.com
-Available subscriptions:
-[INFO] Subscription: YOUR_SUBSCRIPTION(********-****-****-****-************)
-[INFO] It may take a few minutes to load all Java Web Apps, please be patient.
-Web Container Web Apps in subscription Microsoft Azure Internal Billing-CDA:
-* 1: <create>
-  2: jakartaee-app-on-jboss-yoshio (linux, jbosseap 7.2-java8)
-Please choose a Web Container Web App [<create>]: 
+[INFO] --- azure-webapp-maven-plugin:2.13.0:config (default-cli) @ jakartaee-app-on-jboss ---
+Create new run configuration (Y/N) [Y]: 
 Define value for OS [Linux]:
-* 1: Linux
-  2: Windows
+  1: Windows
+* 2: Linux
   3: Docker
 Enter your choice: 
-Define value for javaVersion [Java 8]:
-* 1: Java 8
-  2: Java 11
+Define value for javaVersion [Java 17]:
+* 1: Java 17
 Enter your choice: 
-Define value for runtimeStack:
-  1: Jbosseap 7.2
-  2: Jbosseap 7
-* 3: Tomcat 8.5
-  4: Tomcat 9.0
-Enter your choice: 1
+Define value for webContainer [Tomcat 10.0]:
+* 1: Tomcat 10.0
+  2: Tomcat 9.0
+  3: Jbosseap 7
+Enter your choice: 3
 Define value for pricingTier [P1v3]:
-  1: P3v3
+* 1: P1v3
   2: P2v3
-* 3: P1v3
+  3: P3v3
 Enter your choice: 
 Please confirm webapp properties
-Subscription Id : ********-****-****-****-************
-AppName : jakartaee-app-on-jboss-1625038814881
-ResourceGroup : jakartaee-app-on-jboss-1625038814881-rg
-Region : westeurope
+AppName : jakartaee-app-on-jboss-1740086485353
+ResourceGroup : jakartaee-app-on-jboss-1740086485353-rg
+Region : centralus
 PricingTier : P1v3
 OS : Linux
-Java : Java 8
-Web server stack: Jbosseap 7.2
+Java Version: Java 17
+Web server stack: Jbosseap 7
 Deploy to slot : false
 Confirm (Y/N) [Y]: 
 [INFO] Saving configuration to pom.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:43 min
-[INFO] Finished at: 2021-06-30T16:40:47+09:00
+[INFO] Total time:  03:00 min
+[INFO] Finished at: 2025-02-21T06:24:11+09:00
 [INFO] ------------------------------------------------------------------------
-$ 
 ```
 
 After the command finishes, you can see that following entry is added in your Maven `pom.xml` file.
@@ -108,7 +94,7 @@ After the command finishes, you can see that following entry is added in your Ma
                 <runtime>
                     <os>Linux</os>
                     <javaVersion>Java 17</javaVersion>
-                    <webContainer>Jbosseap 8</webContainer>
+                    <webContainer>Jbosseap 7</webContainer>
                 </runtime>
                 <deployment>
                     <resources>
@@ -129,9 +115,22 @@ After the command finishes, you can see that following entry is added in your Ma
 > [!IMPORTANT]
 > Check the `<region>` element. If it's not the same installation location as MySQL, change it to the same location.
 
+For this deployment, please modify the `webContainer` value to `Jbosseap 8` for the JBoss EAP 8 environment on Azure App Service.
+
+```xml
+                <runtime>
+                    <os>Linux</os>
+                    <javaVersion>Java 17</javaVersion>
+                    <webContainer>Jbosseap 8</webContainer> <!-- Change this value -->
+                </runtime>
+```
+
 After adding the above configuration for deploying to the Azure, add the following XML entries to deploy the startup file. The resource `<type>startup</type>` deploys the specified script as `startup.sh` (Linux) or `startup.cmd` (Windows) to `/home/site/scripts/`. We configure the startup script in the following step.
 
 ```xml
+          </runtime>
+          <deployment>
+            <resources>
               <!-- Please add following lines -->
               <resource>
                 <type>startup</type>
@@ -181,18 +180,17 @@ After you configure the Azure App Service deployment settings, compile and packa
 The following output appears in the terminal:
 
 ```output
+[INFO] --- war:3.4.0:war (default-war) @ jakartaee-app-on-jboss ---
 [INFO] Packaging webapp
 [INFO] Assembling webapp [jakartaee-app-on-jboss] in [/private/tmp/mslearn-jakarta-ee-azure/target/ROOT]
 [INFO] Processing war project
 [INFO] Copying webapp resources [/private/tmp/mslearn-jakarta-ee-azure/src/main/webapp]
-[INFO] Webapp assembled in [369 msecs]
 [INFO] Building war: /private/tmp/mslearn-jakarta-ee-azure/target/ROOT.war
-[INFO] WEB-INF/web.xml already added, skipping
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  7.656 s
-[INFO] Finished at: 2023-03-04T12:35:43-05:00
+[INFO] Total time:  4.881 s
+[INFO] Finished at: 2025-02-21T06:32:30+09:00
 [INFO] ------------------------------------------------------------------------
 ```
 
@@ -207,20 +205,21 @@ After you compile and package the code, deploy the application:
 The following message appears in the terminal:
 
 ```output
-[INFO] Creating resource group jakartaee-app-on-jboss-1625038814881-rg in region westeurope...
-[INFO] Successfully created resource group jakartaee-app-on-jboss-1625038814881-rg.
-[INFO] Creating app service plan...
-[INFO] Successfully created app service plan asp-jakartaee-app-on-jboss-1625038814881.
-[INFO] Creating web app jakartaee-app-on-jboss-1625038814881...
-[INFO] Successfully created Web App jakartaee-app-on-jboss-1625038814881.
-[INFO] Trying to deploy artifact to jakartaee-app-on-jboss-1625038814881...
-[INFO] Deploying (/private/tmp/mslearn-jakarta-ee-azure/target/ROOT.war)[war]  ...
-[INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1625038814881.azurewebsites.net
+[INFO] Start creating App Service plan (asp-jakartaee-app-on-jboss-eap8-yoshio)...
+[INFO] App Service plan (asp-jakartaee-app-on-jboss-eap8-yoshio) is successfully created
+[INFO] Start creating Web App(jakartaee-app-on-jboss-eap8-yoshio)...
+[INFO] Web App(jakartaee-app-on-jboss-eap8-yoshio) is successfully created
+[INFO] Trying to deploy external resources to jakartaee-app-on-jboss-eap8-yoshio...
+[INFO] Successfully deployed the resources to jakartaee-app-on-jboss-eap8-yoshio
+[INFO] Trying to deploy artifact to jakartaee-app-on-jboss-eap8-yoshio...
+[INFO] Deploying (/mslearn-jakarta-ee-azure/target/ROOT.war)[war]  ...
+[INFO] Deploying (/mslearn-jakarta-ee-azure/src/main/webapp/WEB-INF/createMySQLDataSource.sh)[startup]  ...
+[INFO] Application url: https://jakartaee-app-on-jboss-eap8-yoshio.azurewebsites.net                
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  02:11 min
-[INFO] Finished at: 2023-03-04T12:38:39-05:00
+[INFO] Total time:  04:01 min
+[INFO] Finished at: 2025-02-21T06:37:21+09:00
 [INFO] ------------------------------------------------------------------------
 ```
 
@@ -247,7 +246,7 @@ In the Maven project configuration in `pom.xml`, we specified the MySQL JDBC dri
 As a result, JBoss EAP automatically installs the JDBC driver to your deployment package (`ROOT.war`). You can refer to the name of MySQL JDBC driver as follows:
 
 ```text
-ROOT.war_com.mysql.cj.jdbc.Driver_8_0
+ROOT.war_com.mysql.cj.jdbc.Driver_9_2
 ```
 
 ## Create the MySQL DataSource object in JBoss EAP
@@ -256,26 +255,18 @@ To access Azure Database for MySQL, you need to configure the `DataSource` objec
 
 To create a MySQL `DataSource` object in JBoss EAP, we created the following startup shell script. The script file is `createMySQLDataSource.sh` under the `/WEB-INF` directory.
 
-> [!NOTE]
-> In the script, we bind the MySQL DataSource by using a JBoss CLI command. The connection string, username, and password use the environment variables `MYSQL_CONNECTION_URL`, `MYSQL_USER`, and `MYSQL_PASSWORD`.
-
 The source of the script file is shown next. This script file has already been uploaded to App Service, but it hasn't yet been configured to be invoked.
 
 ```shell
-#!/usr/bin/bash
-
-# In order to use the variables in JBoss CLI scripts
+#!/bin/bash
+# In order to use the variables in CLI scripts
 # https://access.redhat.com/solutions/321513
-#
 sed -i -e "s|.*<resolve-parameter-values.*|<resolve-parameter-values>true</resolve-parameter-values>|g" /opt/eap/bin/jboss-cli.xml
-
 /opt/eap/bin/jboss-cli.sh --connect <<EOF
 data-source add --name=JPAWorldDataSourceDS \
 --jndi-name=java:jboss/datasources/JPAWorldDataSource \
---connection-url=${MYSQL_CONNECTION_URL} \
+--connection-url=${AZURE_MYSQL_CONNECTIONSTRING}&characterEncoding=utf8&sslMode=REQUIRED&serverTimezone=UTC&authenticationPlugins=com.azure.identity.extensions.jdbc.mysql.AzureMysqlAuthenticationPlugin \
 --driver-name=ROOT.war_com.mysql.cj.jdbc.Driver_9_2 \
---user-name=${MYSQL_USER} \
---password=${MYSQL_PASSWORD} \
 --min-pool-size=5 \
 --max-pool-size=20 \
 --blocking-timeout-wait-millis=5000 \
@@ -288,6 +279,13 @@ data-source add --name=JPAWorldDataSourceDS \
 exit
 EOF
 ```
+
+> [!NOTE]
+> It is important to note that when creating the data source, no password is specified for the MySQL connection.
+> The environment variable `${AZURE_MYSQL_CONNECTIONSTRING}` is specified in the `--connection-url`. This environment variable will be automatically set when the `Service Connector` is created later.
+> In practice, the value will be set as shown below. As you can see, the username `aad_jbossapp` is specified, but no password is provided.
+> `jdbc:mysql://$$MYSQL_SERVER_INSTANCE.mysql.database.azure.com:3306/world?serverTimezone=UTC&sslmode=required&user=aad_jbossapp`
+> By appending `&authenticationPlugins=com.azure.identity.extensions.jdbc.mysql.AzureMysqlAuthenticationPlugin` to this URL, Azure AD authentication is enabled for the `aad_jbossapp` user.
 
 Now, configure your App Service instance to invoke the startup script:
 
@@ -314,21 +312,50 @@ After the script runs, it'll be invoked every time the application server is res
 > [!NOTE]
 > If your deployment artifact isn't `ROOT.war`, you need to change the `--driver-name=YOUR_ARTIFACT.war_com.mysql.cj.jdbc.Driver_9_2` value too.
 
-## Configure the environment variables for connecting to MySQL
+## Configure the e Service Connector for MySQL flexible server
 
-After you configure the startup script, configure App Service to use certain environment variables:
+After you configure the startup script, configure App Service to use Service Connector for MySQL flexible server connection:
+
+First, set the following environment variables. `PASSLESS_USER_NAME_SUFFIX` is the suffix for the username used to connect to the MySQL flexible server. In practice, the username created will have the prefix `aad_` followed by the specified suffix. `SOURCE_WEBAPP_ID` is the ID of the Azure App Service used to connect to the MySQL flexible server. `MYSQL_ID` is the ID of the MySQL flexible server. In this case, we want to establish a connection with a user who has permissions to access the world database, so `TARGET_MYSQL_ID` specifies the database name as `/database/world`. `MANAGEDID` is the managed identity used to connect to the MySQL flexible server.
 
 ```azurecli
-az webapp config appsettings set \
-  --resource-group ${RESOURCEGROUP_NAME} --name ${WEBAPP_NAME} \
-  --settings \
-  MYSQL_CONNECTION_URL='jdbc:mysql://mysqlserver-**********.mysql.database.azure.com:3306/world?useSSL=true&requireSSL=false' \
-  MYSQL_PASSWORD='************' \
-  MYSQL_USER=azureuser
+export PASSLESS_USER_NAME_SUFFIX=jbossapp
+export SOURCE_WEBAPP_ID=$(az webapp list -g  $RESOURCEGROUP_NAME --query "[0].id" -o tsv)
+export MYSQL_ID=$(az mysql flexible-server list -g $RESOURCEGROUP_NAME --query "[0].id" -o tsv)
+export TARGET_MYSQL_ID=$MYSQL_ID/databases/world 
+export MANAGEDID=$(az identity list -g $RESOURCEGROUP_NAME --query "[0].id" -o tsv)
 ```
 
-> [!TIP]
-> The values of `MYSQL_CONNECTION_URL`, `MYSQL_USER` and `MYSQL_PASSWORD` were set from the previous unit.
+Add the extension for `serviceconnector-passwordless` and create the `Service Connector`. Please execute the following commands.
+
+```azurecli
+az extension add --name serviceconnector-passwordless --upgrade
+
+az webapp connection create mysql-flexible -g $RESOURCEGROUP_NAME --connection $PASSLESS_USER_NAME_SUFFIX \
+--source-id $SOURCE_WEBAPP_ID \
+--target-id $TARGET_MYSQL_ID \
+--client-type java \
+--system-identity mysql-identity-id=$MANAGEDID
+```
+
+After executing the above commands, please check the list of users registered in MySQL again. You should see that a user named `aad_jbossapp` has been added, which uses the `aad_auth` plugin. From JBoss EAP deployed on Azure, you will be able to connect to the MySQL flexible server using this `aad_jbossapp` username without a password.
+
+```mysql
+mysql> SELECT user, host, plugin FROM mysql.user;
++----------------------------------+-----------+-----------------------+
+| user                             | host      | plugin                |
++----------------------------------+-----------+-----------------------+
+| aad_jbossapp                     | %         | aad_auth              |
+| azureuser                        | %         | mysql_native_password |
+| $CURRENT_AZ_LOGIN_USER_NAME#EXT#@| %         | aad_auth              |
+| azure_superuser                  | 127.0.0.1 | mysql_native_password |
+| azure_superuser                  | localhost | mysql_native_password |
+| mysql.infoschema                 | localhost | caching_sha2_password |
+| mysql.session                    | localhost | caching_sha2_password |
+| mysql.sys                        | localhost | caching_sha2_password |
++----------------------------------+-----------+-----------------------+
+8 rows in set (2.06 sec)
+```
 
 ## Confirm the DataSource reference in the code
 

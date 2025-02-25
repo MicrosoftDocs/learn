@@ -72,7 +72,7 @@ az configure --defaults location=<desired location>
 
 ## Create an Azure Database for MySQL instance
 
-After you've signed in, use the project script `setup_mysql.sh` to create your Azure Database for MySQL instance. Make sure you're in the `mslearn-jakarta-ee-azure` directory.
+After you've signed in, use the project script `setup_mysql.sh` to create your Azure Database for MySQL flexible server instance. Make sure you're in the `mslearn-jakarta-ee-azure` directory.
 
 > [!IMPORTANT]
 > Run the following command in an IPv4 environment. If your environment has a IPv6 address, this command will fail because the firewall configuration for it doesn't support IPv6 addresses yet.
@@ -89,25 +89,28 @@ Note the key values that appear in the output of the command. You'll use those v
 [INFO] -------------------------------------------------------
 [INFO] 1. Please copy the following value into your temporal file
 [INFO]
-[INFO] RESOURCE GROUP is JBoss-MySQL-RG-RANDOM_STRING
-[INFO] MySQL HOSTNAME is MYSQL_SERVER_NAME.mysql.database.azure.com
-[INFO] MySQL ADMIN_USERNAME is YOUR_ACCOUNT#EXT#@TENANT.onmicrosoft.com
+[INFO] RESOURCE GROUP is $RESOURCE_GROUP_NAME
+[INFO] MySQL HOSTNAME is $MYSQL_SERVER_INSTANCE.mysql.database.azure.com
+[INFO] MySQL ADMIN_USERNAME is $CURRENT_AZ_LOGIN_USER_NAME#EXT#$CURRENT_AZ_LOGIN_USER_NAME
 [INFO]
 [INFO]
-[INFO] 2. Please execute the following command to create and connect to the Server.
+[INFO] 2. Please execute the following command to connect to the Server.
 [INFO]
-[INFO] mysql -h MYSQL_SERVER_NAME.mysql.database.azure.com --user YOUR_ACCOUNT#EXT#@TENANT.onmicrosoft.com --enable-cleartext-plugin --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
+[INFO] mysql -h $MYSQL_SERVER_INSTANCE.mysql.database.azure.com --user $CURRENT_AZ_LOGIN_USER_NAME#EXT#$CURRENT_AZ_LOGIN_USER_NAME --enable-cleartext-plugin --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
 [INFO]
 [INFO] Or you can use the following Azure CLI command
 [INFO]
-[INFO] az mysql flexible-server db create -d newdatabase -s MYSQL_SERVER_NAME -g JBoss-MySQL-RG-RANDOM_STRING --charset utf8mb4 --collation utf8mb4_unicode_ci
-[INFO] az mysql flexible-server connect -n MYSQL_SERVER_NAME -u azureuser -p 'PASSWORD' -d newdatabase --interactive
+[INFO] az mysql flexible-server connect -g $RESOURCE_GROUP_NAME -n $MYSQL_SERVER_INSTANCE -u azureuser -p '!yhYrNhwQ27640' --interactive
+[INFO] Password: [!yhYrNhwQ27640]
 [INFO] 
 [INFO] 
 [INFO] 3. Clean up Resource (Delete MySQL DB)
-[INFO] az group delete -n JBoss-MySQL-RG-20250131174401
+[INFO] az group delete -n $RESOURCE_GROUP_NAME
 [INFO] -------------------------------------------------------
 ```
+
+> [!NOTE]
+> If an error occurs during the execution of the script, the process will stop midway. If an error occurs while 'Granting the User.Read.All, GroupMember.Read.All, and Application.Read.All permissions to the user managed identity', please log in to Azure CLI again with a user that has Azure AD administrator privileges and then re-run the script.
 
 ## Get data from the sample database
 
@@ -136,9 +139,60 @@ In this module, you'll use a sample database called `world` from the official My
    -rw-r--r--  1 ******  wheel  398635  1  7 12:25 world.sql
    ```
 
+## Sign in to the MySQL database
+
+To connect to the MySQL flexible server, you can use one of the two methods described in the below when the MySQL flexible server was set up:
+
+1. Connect to the MySQL flexible server using the mysql command:
+
+   Obtain the access token for the currently logged-in user and connect to the MySQL flexible server
+
+   ```bash
+    mysql -h $MYSQL_SERVER_INSTANCE.mysql.database.azure.com --user CURRENT_AZ_LOGIN_USER_NAME#EXT#@CURRENT_AZ_LOGIN_USER_NAME --enable-cleartext-plugin --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
+   ```
+
+   > [!NOTE]
+   > Starting from MySQL version 8, the default authentication plugin has been changed to caching_sha2_password. Therefore, when you try to authenticate using only the username and password with the mysql command, you will encounter the following error:
+   > `ERROR 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded:`
+   > To address this, we create an administrative user who can access to the MySQL database by `az mysql flexible-server ad-admin create` command with the user logged in to Azure CLI when creating the MySQL DB
+
+2. Connect to the MySQL flexible server by Azure CLI:
+
+   If you prefer to connect using only the username and password instead of an access token, you can do so using Azure CLI as shown below.
+
+   ```bash
+   az mysql flexible-server connect -n $MYSQL_SERVER_INSTANCE -u azureuser -p $PASSWORD --interactive
+   Password: [$PASSWORD]
+   ```
+
+3. Confirm the available usernames and the plugins
+
+   After connecting to MySQL, you can check the available usernames and the plugins in use with the following command.
+
+   ```mysql
+   mysql> SELECT user, host, plugin FROM mysql.user;
+   +----------------------------------+-----------+-----------------------+
+   | user                             | host      | plugin                |
+   +----------------------------------+-----------+-----------------------+
+   | azureuser                        | %         | mysql_native_password |
+   | $CURRENT_AZ_LOGIN_USER_NAME#EXT#@| %         | aad_auth              |
+   | azure_superuser                  | 127.0.0.1 | mysql_native_password |
+   | azure_superuser                  | localhost | mysql_native_password |
+   | mysql.infoschema                 | localhost | caching_sha2_password |
+   | mysql.session                    | localhost | caching_sha2_password |
+   | mysql.sys                        | localhost | caching_sha2_password |
+   +----------------------------------+-----------+-----------------------+
+   ```
+
 ## Create a database and tables for your application
 
-Run the following `Azure CLI` command:
+Run the following `mysql` command or the `Azure CLI` command to create a database and tables for your application:
+
+```mysql
+mysql> source ./world-db/world.sql;
+```
+
+Or use the following `Azure CLI` command:
 
 ```azurecli
 az mysql flexible-server execute -n' $MYSQL_SERVER_NAME '-u' $MYSQL_USER '-p' $MYSQL_PASSWORD -f ./world-db/world.sql

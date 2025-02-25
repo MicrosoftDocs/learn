@@ -69,7 +69,7 @@ Connect to JBoss EAP by using the following command:
 
 ```bash
 /opt/eap/bin/jboss-cli.sh --connect
-Picked up JAVA_TOOL_OPTIONS: -Xmx2402M -Djava.net.preferIPv4Stack=true 
+OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.
 ```
 
 After you connect to the JBoss EAP Server, run the JBoss CLI command and get the JBoss server information:
@@ -79,27 +79,27 @@ After you connect to the JBoss EAP Server, run the JBoss CLI command and get the
 {
     "outcome" => "success",
     "result" => [{"summary" => {
-        "host-name" => "295cf7c97684",
-        "instance-identifier" => "24bb4e37-ac89-42bc-b87e-d635d37a56f3",
+        "host-name" => "jakartaee-e9de81f9",
+        "instance-identifier" => "e0996cd1-25b3-42d4-a150-49fabf415ecc",
         "product-name" => "JBoss EAP",
-        "product-version" => "7.4.2.GA",
+        "product-version" => "8.0 Update 4.1",
         "product-community-identifier" => "Product",
         "product-home" => "/opt/eap",
-        "last-update-date" => "4/26/22, 10:29 PM",
         "standalone-or-domain-identifier" => "STANDALONE_SERVER",
-        "host-operating-system" => "Ubuntu 20.04.4 LTS",
+        "host-operating-system" => "Ubuntu 22.04.5 LTS",
         "host-cpu" => {
             "host-cpu-arch" => "amd64",
             "host-core-count" => 2
         },
         "jvm" => {
             "name" => "OpenJDK 64-Bit Server VM",
-            "java-version" => "11",
-            "jvm-version" => "11.0.14.1",
+            "java-version" => "17",
+            "jvm-version" => "17.0.13",
             "jvm-vendor" => "Microsoft",
-            "java-home" => "/usr/lib/jvm/msopenjdk-11-amd64"
+            "java-home" => "/usr/lib/jvm/msopenjdk-17-amd64"
         }
     }}]
+}
 ```
 
 You can get all the deployed applications from the following command:
@@ -183,13 +183,23 @@ After you run the command, you get your log output:
 az webapp log tail  -n jakartaee-app-on-jboss-1606464084546 \
   -g jakartaee-app-on-jboss-1606464084546-rg
 
-2020-12-09T02:23:24.412067731Z: [INFO]  02:23:24,411 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/' for server 'default-server'
-2020-12-09T02:23:24.455340165Z: [INFO]  02:23:24,453 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "ROOT.war" (runtime-name : "ROOT.war")
-2020-12-09T02:23:24.464834646Z: [INFO]  02:23:24,456 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "activemq-rar.rar" (runtime-name : "activemq-rar.rar")
-2020-12-09T02:23:24.674103836Z: [INFO]  02:23:24,673 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
-2020-12-09T02:23:24.676640538Z: [INFO]  02:23:24,675 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.2.9.GA (WildFly Core 6.0.30.Final-redhat-00001) started in 25914ms - Started 537 of 709 services (345 services are lazy, passive or on-demand)
-2020-12-09T02:23:24.680203180Z: [INFO]  02:23:24,679 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2020-12-09T02:23:24.680950010Z: [INFO]  02:23:24,680 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2025-02-25T06:58:11.5107300Z Waiting for main process to exit. GLOBAL_PID_MAIN=123
+2025-02-25T06:58:11.5109525Z Waiting for GLOBAL_PID_MAIN == 123
+2025-02-25T06:58:12.7891598Z 2025-02-25 06:58:12,786 WARN  [org.apache.activemq.artemis.core.server.impl.FileLockNodeManager] (Thread-2 (ActiveMQ-scheduled-threads)) Lost the lock according to the monitor, notifying listeners
+2025-02-25T06:58:14.3783443Z 2025-02-25 06:58:14,377 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for JPAWorldDatasourcePU
+2025-02-25T06:58:14.7548991Z 2025-02-25 06:58:14,752 INFO  [org.jipijapa] (MSC service thread 1-3) JIPIORMV6020260: Second level cache enabled for ROOT.war#JPAWorldDatasourcePU
+2025-02-25T06:58:14.7971763Z 2025-02-25 06:58:14,796 WARN  [org.apache.activemq.artemis.core.server.impl.FileLockNodeManager] (Thread-2 (ActiveMQ-scheduled-threads)) Lost the lock according to the monitor, notifying listeners
+2025-02-25T06:58:14.9371057Z 2025-02-25 06:58:14,924 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment ROOT.war
+2025-02-25T06:58:15.2875956Z 2025-02-25 06:58:15,280 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 8.0.1.Final-redhat-00001
+2025-02-25T06:58:16.0075988Z 2025-02-25 06:58:16,003 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2025-02-25T06:58:16.0534913Z 2025-02-25 06:58:16,048 INFO  [org.jipijapa] (MSC service thread 1-1) JIPIORMV6020260: Second level cache enabled for ROOT.war#JPAWorldDatasourcePU
+2025-02-25T06:58:16.1970192Z 2025-02-25 06:58:16,192 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 9.2)
+2025-02-25T06:58:16.2695781Z 2025-02-25 06:58:16,265 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 5.1.2 (redhat)
+2025-02-25T06:58:16.4228682Z 2025-02-25 06:58:16,421 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = ROOT.war_com.mysql.cj.jdbc.Driver_9_2
+2025-02-25T06:58:16.4261069Z 2025-02-25 06:58:16,425 INFO  [org.jboss.as.connector.subsystems.datasources.AbstractDataSourceService$AS7DataSourceDeployer] (MSC service thread 1-3) IJ020018: Enabling <validate-on-match> for java:jboss/datasources/JPAWorldDataSource
+2025-02-25T06:58:16.4349571Z 2025-02-25 06:58:16,428 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/JPAWorldDataSource]
+2025-02-25T06:58:16.7892296Z 2025-02-25 06:58:16,787 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'ROOT.war#JPAWorldDatasourcePU'
+2025-02-25T06:58:16.8070373Z 2025-02-25 06:58:16,805 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [name: JPAWorldDatasourcePU]
 ```
 
 ## Exercise summary

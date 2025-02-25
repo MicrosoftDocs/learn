@@ -58,9 +58,7 @@ You'll configure `DataSource` to connect to the Azure Database for MySQL instanc
 | `DataSource Name` | `JPAWorldDataSourceDS`  |
 | `JNDI Name` | `java:jboss/datasources/JPAWorldDataSource` |
 | `Connection URL`| `${MYSQL_CONNECTION_URL}` |
-| `JDBC Driver Name`| `$PACKAGE_NAME.war_com.mysql.cj.jdbc.Driver_8_0` |
-| `User Name` | `${MYSQL_USER}` |
-| `Password` | `${MYSQL_PASSWORD}`|
+| `JDBC Driver Name`| `$PACKAGE_NAME.war_com.mysql.cj.jdbc.Driver_9_2` |
 | `Minimum Pool Size` | `5` |
 | `Maximum Pool Size` | `20` |
 | `JDBC Class Name`| `com.mysql.cj.jdbc.Driver` |
