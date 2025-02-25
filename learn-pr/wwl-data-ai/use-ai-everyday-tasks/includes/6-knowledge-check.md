@@ -1,7 +1,7 @@
 ## Multiple Choice
 What is the role of generative AI in content creation?
 ( ) Generative AI rearranges existing information to create new content. {{Incorrect. Generative AI doesn't just rearrange existing information; it creates something new that didn't exist before.}}
-(x) Generative AI creates new, unique content, such as writing poems, composing melodies, or designing graphics based on the patterns and styles it has learned from existing data. {{Correct. Generative AI uses large language models (LLMs) that are trained on huge amounts of data to create outputs that are similar to the data they were trained on.}}
+(x) Generative AI creates new, unique content, such as writing poems, composing melodies, or designing graphics based on the patterns and styles it learned from existing data. {{Correct. Generative AI uses large language models (LLMs) that are trained on huge amounts of data to create outputs that are similar to the data they were trained on.}}
 ( ) Generative AI copies existing data to produce similar content. {{Incorrect. Generative AI does not just rearrange existing information, it creates entirely new and original pieces of work.}}
 
 ## Multiple Choice

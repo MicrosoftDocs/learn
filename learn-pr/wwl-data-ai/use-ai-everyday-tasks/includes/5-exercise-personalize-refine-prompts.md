@@ -2,7 +2,7 @@ In this activity, learn how to create personalized prompts and refine them to ge
 
 **Before you start**
 
-In this module, you use Microsoft Copilot to interact with generative AI. To follow along and complete the exercise, you'll need to do a few things to get set-up.
+In this module, you use Microsoft Copilot to interact with generative AI. To follow along and complete the exercise, you need to do a few things to get set-up.
 
 1. In your browser, navigate to [copilot.microsoft.com](https://copilot.microsoft.com?azure-portal=true). For this tutorial you need to use Copilot in the **full browser**, not in the browser sidebar.
 
@@ -11,7 +11,7 @@ In this module, you use Microsoft Copilot to interact with generative AI. To fol
 ![Screenshot of Copilot.microsoft.com with the sign in button highlighted.](../media/05-copilot-sign-in.jpg)
 
 ## Personalize sample prompts
-To start, you'll practice creating personalized prompts using a few fill-in-the-blank prompts. Your task is to fill in the blanks with specific details such as goals, timelines, topics, or other relevant information. This will help you create clear and effective prompts for Copilot.
+To start, you practice creating personalized prompts using a few fill-in-the-blank prompts. Your task is to fill in the blanks with specific details such as goals, timelines, topics, or other relevant information. This helps you create clear and effective prompts for Copilot.
 
 ### Generate recommendations
 
@@ -52,7 +52,7 @@ If you want, take a few minutes to personalize some more prompts, and analyze th
 
 ## Expand results using Think Deeper
 
-Iteration is a key part of creating effective AI prompts. In this step, you'll refine your original results to get expanded information using **Think Deeper**. 
+Iteration is a key part of creating effective AI prompts. In this step, you refine your original results to get expanded information using **Think Deeper**. 
 
 > [!NOTE]
 > Think Deeper unlocks the power of deep reasoning in Microsoft Copilot. It can handle more complex questions by breaking them down into multiple steps, allowing for more accurate and detailed responses.

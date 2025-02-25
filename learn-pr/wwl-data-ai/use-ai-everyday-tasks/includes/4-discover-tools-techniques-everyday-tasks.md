@@ -40,7 +40,7 @@ Here are some suggested prompts to set your running goals:
 
 - **Increase weekly mileage**: I currently run 15 miles a week. Can you help me set a goal to increase my weekly mileage by 10%?
 - **Half marathon training**: I’m running my first half marathon in six months, and I’d like to set mileage goals each week to build up my stamina. What’s a reasonable weekly mileage goal?
-- **Improve marathon pace**: My previous marathon time was four hours and 36 minutes. Can you help me set a goal to improve my pace over the course of four weeks?
+- **Improve marathon pace**: My previous marathon time was 4 hours and 36 minutes. Can you help me set a goal to improve my pace over the course of four weeks?
  
 Here are some suggested prompts to make a training schedule:
 
