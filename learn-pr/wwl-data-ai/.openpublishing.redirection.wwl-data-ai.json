@@ -4988,6 +4988,38 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/index.yml",
       "redirect_url": "/training/modules/create-azure-ai-custom-skill/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/2-understand-machine-learn.yml",
+      "redirect_url": "/training/modules/fundamentals-machine-learning/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/3-understand-computer-vision.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/3-computer-vision"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/4-understand-natural-language-process.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/5-natural-language-processing"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/5-document-intelligence-knowledge-mining.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/6-extract-insights"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/6-understand-generative-ai.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/2-generative-ai"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/7-challenges-with-ai.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/7-responsible-ai"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/8a-understand-responsible-ai.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/7-responsible-ai"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/8b-knowledge-check.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/8-knowledge-check"
     }
   ]
 }
