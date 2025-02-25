@@ -5240,3 +5240,13 @@ achievements:
   title: JavaScript arrays and loops
   summary: Learn how to manipulate and store data within JavaScript.
   iconUrl: /training/achievements/student-evangelism/web-development-101-loops-arrays.svg
+- uid: learn.data-ai.data-warehouse-security.badge
+  type: badge
+  title: Data warehouse security
+  summary: Learn about the security controls that Azure Synapse Analytics provides to help secure your data warehouse infrastructure and the data that's stored in it.
+  iconUrl: /training/achievements/data-ai/data-warehouse-security-badge.svg
+- uid: learn.wwl.develop-dynamic-reports-microsoft-power-bi.trophy
+  type: trophy
+  title: Develop reports with Microsoft Power BI
+  summary: Power BI allows you to easily connect to and present your data in an interactive report, so you can make data-driven decisions. Learn how to connect to data, transform and shape data, and create interactive visuals in a Power BI report.
+  iconUrl: /training/achievements/generic-trophy.svg
