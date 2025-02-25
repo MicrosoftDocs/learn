@@ -43508,6 +43508,11 @@
       "source_path": "learn-pr/data-ai-cert/data-warehouse-security/2-azure-dw-security-control.md",
       "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "redirect_document_id": false
     }
   ]
 }
