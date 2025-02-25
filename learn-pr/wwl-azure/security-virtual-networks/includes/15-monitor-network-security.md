@@ -6,7 +6,7 @@ Network Watcher consists of three major sets of tools and capabilities:
  -  Network diagnostic tools
  -  Traffic
 
-:::image type="content" source="../media/azure-network-watcher-cf554286.png" alt-text="Diagram showing an example of network watcher monitoring and diagnostic tools.":::
+:::image type="content" source="../media/azure-network-watcher-cf554286-4d5ee917.png" alt-text="Diagram showing an example of network watcher monitoring and diagnostic tools.":::
 
 
 > [!NOTE]
@@ -84,5 +84,49 @@ Network security groups flow logging is a feature of Azure Network Watcher that 
 
 Traffic analytics provides rich visualizations of flow logs data.
 
-:::image type="content" source="../media/traffic-analytics-dashboard-ff698520.png" alt-text="Screenshot showing traffic analytics flow log data.":::
-<br>
+:::image type="content" source="../media/traffic-analytics-dashboard-ff698520-64ae69dc.png" alt-text="Screenshot showing traffic analytics flow log data.":::
+
+
+## Usage + quotas
+
+The Usage + quotas capability of Network Watcher provides a summary of your deployed network resources within a subscription and region, including current usage and corresponding limits for each resource. For more information, see [Networking limits](/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/network-watcher/toc.json#azure-resource-manager-virtual-networking-limits) to learn about the limits for each Azure network resource per region per subscription. This information is helpful when planning future resource deployments as you can't create more resources if you reach their limits within the subscription or region.
+
+:::image type="content" source="../media/network-watcher-usage-quotas-ad59c6e5.png" alt-text="Sceenshot showing an example of the Network Watcher usage and quotas page.":::
+
+
+## Network Watcher limits
+
+Network Watcher has the following limits:
+
+Expand table
+
+| **Resource**                                              | **Limit**                                                                  |
+| --------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Network Watcher instances per region per subscription     | 1 (One instance in a region to enable access to the service in the region) |
+| Connection monitors per region per subscription           | 100                                                                        |
+| Maximum test groups per a connection monitor              | 20                                                                         |
+| Maximum sources and destinations per a connection monitor | 100                                                                        |
+| Maximum test configurations per a connection monitor      | 20                                                                         |
+| Packet capture sessions per region per subscription       | 10,000 (Number of sessions only, not saved captures)                       |
+| VPN troubleshoot operations per subscription              | 1 (Number of operations at one time)                                       |
+
+## Pricing
+
+For pricing details, see [Network Watcher pricing](https://azure.microsoft.com/pricing/details/network-watcher/).
+
+## Service Level Agreement (SLA)
+
+For SLA details, see [Service Level Agreements (SLA) for Online Services](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services).
+
+## Frequently asked questions (FAQ)
+
+For answers to frequently asked questions about Network Watcher, see [Network Watcher (FAQ)](/azure/network-watcher/frequently-asked-questions).
+
+## What's new?
+
+To view the latest Network Watcher feature updates, see [Service updates](https://azure.microsoft.com/updates/?filters=%5B%22Network+Watcher%22%5D).
+
+## Related content
+
+ -  To get started using Network Watcher diagnostic tools, see [Quickstart: Diagnose a virtual machine network traffic filter problem](/azure/network-watcher/diagnose-vm-network-traffic-filtering-problem).
+ -  To learn more about Network Watcher, see [Training module: Introduction to Azure Network Watcher](/training/modules/intro-to-azure-network-watcher).
