@@ -7,12 +7,12 @@ metadata:
   description: AI agents represent the next generation of intelligent applications. Learn how they can be developed and used on Microsoft Azure.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 11/25/2024
+  ms.date: 02/12/2025
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
-  ms.custom: ignite-2023, ai-learning-hub
+  ms.custom: ai-learning-hub
 title: Fundamentals of AI agents on Azure
 summary: "AI agents represent the next generation of intelligent applications. Learn how they can be developed and used on Microsoft Azure."
 abstract: |
