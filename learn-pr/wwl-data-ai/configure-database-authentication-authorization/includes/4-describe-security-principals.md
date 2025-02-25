@@ -104,18 +104,18 @@ The built-in database roles do meet the needs of many applications; however with
  > [!NOTE]
  >By default, users in roles like *db_owner* can always see all of the data in the database. Applications can take advantage of encryption options like **Always Encrypted** to protect sensitive data from privileged users.
 
-Azure SQL Database has two roles that are defined in the master database of Azure SQL server.
+For Azure SQL Database, there are a few nuances. You can have logins that exist in the virtual `master` database, database users, and even contained database users for Microsoft Entra accounts (recommended). Although the server admin for Azure SQL Database essentially has `sysadmin` rights, you can create more limited admins by using server or database level roles. Two database level roles are available for SQL Database that only exist in the virtual `master` database:
 
 | Database Role | Definition |
 |------------|-------------|
-|**dbmanager** | Allows its members to create extra databases within the Azure SQL Database environment. This role is the equivalent of the `dbcreator` fixed server role in an on-premises Microsoft SQL Server. |
-|**loginmanager** | Allows its members to create extra logins at the server level. This role is the equivalent of the `securityadmin` fixed server role in an on-premises Microsoft SQL Server. |
+|**dbmanager** | Allows members to create logins for the database server. This role is the equivalent of the `dbcreator` fixed server role in an on-premises Microsoft SQL Server. |
+|**loginmanager** | Allows members to create and delete databases for the database server. This role is the equivalent of the `securityadmin` fixed server role in an on-premises Microsoft SQL Server. |
 
-## Fixed server roles
+## Fixed server-level roles
 
-In addition to database roles, SQL Server and Azure SQL Managed Instance both provide several fixed server roles. These roles assign permissions at the scope of the entire server. Server level principals, which include SQL Server logins, Windows accounts, and Windows group can be added into fixed server roles. The permissions for fixed server roles are predefined, and no new server roles can be added. The fixed server roles are:
+In addition to database roles, SQL Server and Azure SQL Managed Instance both provide several fixed server-level roles. These roles assign permissions at the scope of the entire server. Server-level principals, which include SQL Server logins, Windows accounts, and Windows group can be added into fixed server-level roles. The permissions for fixed server-level roles are predefined, and no new server roles can be added.
 
-| Fixed server role | Definition |
+| Fixed server-level role | Definition |
 |------------|-------------|
 |**sysadmin** |  Allows its members to perform any activity on the server.
 |**serveradmin** |  Allows its members to change server-wide configuration settings (for example Max Server Memory) and can shut down the server. |
@@ -126,3 +126,13 @@ In addition to database roles, SQL Server and Azure SQL Managed Instance both pr
 |**diskadmin** | Allows its members to have the ability to manage backup devices in SQL Server. |
 |**dbcreator** | Allows its members to create, restore, alter, and drop any database. |
 |**public** | Every SQL Server login belongs to the public user role. Unlike the other fixed server roles, permissions can be granted, denied, or revoked from the public role. |
+
+Here's a list of server-level roles in Azure SQL Database:
+
+- ##MS_DatabaseConnector##
+- ##MS_DatabaseManager##
+- ##MS_DefinitionReader##
+- ##MS_LoginManager##
+- ##MS_SecurityDefinitionReader##
+- ##MS_ServerStateReader##
+- ##MS_ServerStateManager##
