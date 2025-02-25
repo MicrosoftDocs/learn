@@ -11,10 +11,10 @@ metadata:
   ms.topic: module
   ms.service: azure
 title: Configure database authentication and authorization
-summary: Contrast authentication using Microsoft Entra ID, Windows Active Directory, and SQL Server authentication. Implement various security principals and configure permissions.
+summary: Contrast authentication using Microsoft Entra ID, and SQL Server authentication. Implement various security principals and configure permissions.
 abstract: |
   After completing this module, you will be able to:
-  - Learn about authentication options for Azure SQL Database
+  - Learn about authentication options for Azure SQL
   - Create various security principals
   - Configure permissions within a SQL database
   - Identify authentication and authorization failures
@@ -34,7 +34,6 @@ subjects:
 - databases
 units:
 - learn.wwl.configure-database-authentication-authorization.introduction
-- learn.wwl.configure-database-authentication-authorization.describe-active-directory-azure-active-directory
 - learn.wwl.configure-database-authentication-authorization.describe-authentication-identities
 - learn.wwl.configure-database-authentication-authorization.describe-security-principals
 - learn.wwl.configure-database-authentication-authorization.describe-database-object-permissions

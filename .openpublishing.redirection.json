@@ -188,6 +188,10 @@
       "redirect_url": "/training/modules/monitor-fabric-items/7-summary"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/configure-database-authentication-authorization/2-describe-active-directory.yml",
+      "redirect_url": "/training/modules/configure-database-authentication-authorization/"
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/query-data-warehouse-microsoft-fabric/2-use-sql-query-editor.yml",
       "redirect_url": "/training/modules/query-data-warehouse-microsoft-fabric/"
     },
