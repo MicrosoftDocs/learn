@@ -43523,6 +43523,11 @@
       "source_path": "learn-pr/data-ai-cert/data-warehouse-security/4-summary.md",
       "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-dynamic-reports-microsoft-power-bi/index.md",
+      "redirect_url": "/training/paths/prepare-visualize-data-power-bi/",
+      "redirect_document_id": false
     }
   ]
 }
