@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Plan and implement Network Security Groups (NSGs) and Application Security Groups (ASGs)
   description: "Plan and implement Network Security Groups (NSGs) and Application Security Groups (ASGs)"
-  ms.date: 07/04/2024
+  ms.date: 02/25/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-network-security-groups-application-security-groups.md)]
+  [!include[](includes/5-network-security-groups-application-security-groups.md)]

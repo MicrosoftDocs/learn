@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement encryption over ExpressRoute
   description: "Implement encryption over ExpressRoute"
-  ms.date: 07/04/2024
+  ms.date: 02/25/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/9-expressroute-encryption.md)]
+  [!include[](includes/13-expressroute-encryption.md)]

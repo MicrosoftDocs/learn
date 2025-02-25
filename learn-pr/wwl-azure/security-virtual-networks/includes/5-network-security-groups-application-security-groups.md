@@ -24,7 +24,7 @@ Existing connections may not be interrupted when you remove a security rule that
 
 You can deploy resources from several Azure services into an Azure virtual network. You can associate zero, or one, network security group to each virtual network subnet and network interface in a virtual machine. The same network security group can be associated to as many subnets and network interfaces as you choose. The following picture illustrates different scenarios for how network security groups might be deployed to **allow network traffic to and from the internet over TCP port 80**:
 
-:::image type="content" source="../media/network-security-group-interaction-6fb53fae.png" alt-text="Diagram showing an example of how network security groups might be deployed to allow network traffic to and from the internet over TCP port 80.":::
+:::image type="content" source="../media/network-security-group-interaction-6fb53fae-924cde01.png" alt-text="Diagram showing an example of how network security groups might be deployed to allow network traffic to and from the internet over TCP port 80.":::
 
 
 Reference the image, along with the following text, to understand how Azure processes inbound and outbound rules for network security groups:
@@ -61,7 +61,7 @@ Unless you have a specific reason to, we recommend that you associate a network 
 
 Application security groups enable you to configure network security as a natural extension of an application's structure, allowing you to group virtual machines and define network security policies based on those groups. You can reuse your security policy at scale without manual maintenance of explicit IP addresses. The platform handles the complexity of explicit IP addresses and multiple rule sets, allowing you to focus on your business logic. To better understand application security groups, consider the following example:
 
-:::image type="content" source="../media/application-security-groups-fab4e68f.png" alt-text="Diagram showing an example of Azure Network Security Groups and Application Security Groups.":::
+:::image type="content" source="../media/application-security-groups-fab4e68f-fa4eb258.png" alt-text="Diagram showing an example of Azure Network Security Groups and Application Security Groups.":::
 
 
 In the previous picture, *NIC1* and *NIC2* are members of the *AsgWeb* application security group. *NIC3* is a member of the *AsgLogic* application security group. *NIC4* is a member of the *AsgDb* application security group. Though each network interface (NIC) in this example is a member of only one network security group, a network interface can be a member of multiple application security groups, up to the Azure Limits. None of the network interfaces have an associated network security group. *NSG1* is associated to both subnets and contains the following rules:

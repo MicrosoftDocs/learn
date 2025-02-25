@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.data-protection-logging-threat-detection-network-security
+title: 'Microsoft Cloud Security Benchmark: Data Protection, Logging and Threat Detection, and Network Security'
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: 'Microsoft Cloud Security Benchmark: Data Protection, Logging and Threat Detection, and Network Security'
+  description: "Microsoft Cloud Security Benchmark: Data Protection, Logging and Threat Detection, and Network Security"
+  ms.date: 02/25/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-data-protection-logging-threat-detection-network-security.md)]

@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Plan and implement Virtual Network peering or gateway
   description: "Plan and implement Virtual Network peering or gateway"
-  ms.date: 07/04/2024
+  ms.date: 02/25/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-virtual-network-peering-gateways.md)]
+  [!include[](includes/7-virtual-network-peering-gateways.md)]

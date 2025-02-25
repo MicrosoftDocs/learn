@@ -4,14 +4,14 @@ It's important to know that there are different configurations available for VPN
 
 A Site-to-site (S2S) VPN gateway connection is a connection over IPsec/IKE (IKEv1 or IKEv2) VPN tunnel. S2S connections can be used for cross-premises and hybrid configurations. A S2S connection requires a VPN device located on-premises that has a public IP address assigned to it.
 
-:::image type="content" source="../media/site-to-site-virtual-private-network-east-a47c5ef9.png" alt-text="Diagram showing an example of a site to site virtual private network gateway connection over an internet protocol secure tunnel.":::
+:::image type="content" source="../media/site-to-site-virtual-private-network-east-a47c5ef9-224b2e18.png" alt-text="Diagram showing an example of a site to site virtual private network gateway connection over an internet protocol secure tunnel.":::
 
 
 VPN Gateway can be configured in active-standby mode using one public IP or in active-active mode using two public IPs. In active-standby mode, one IPsec tunnel is active and the other tunnel is in standby. In this setup, traffic flows through the active tunnel, and if some issue happens with this tunnel, the traffic switches over to the standby tunnel. Setting up VPN Gateway in active-active mode is recommended in which both the IPsec tunnels are simultaneously active, with data flowing through both tunnels at the same time. An additional advantage of active-active mode is that customers experience higher throughputs.
 
 You can create more than one VPN connection from your virtual network gateway, typically connecting to multiple on-premises sites. When working with multiple connections, you must use a RouteBased VPN type (known as a dynamic gateway when working with classic VNets). Because each virtual network can only have one VPN gateway, all connections through the gateway share the available bandwidth. This type of connection is sometimes referred to as a "multi-site" connection.
 
-:::image type="content" source="../media/site-to-multiple-site-connection-a21b1127.png" alt-text="Diagram showing an example of a point to multiple sites virtual private network connection.":::
+:::image type="content" source="../media/site-to-multiple-site-connection-a21b1127-a4b96e39.png" alt-text="Diagram showing an example of a point to multiple sites virtual private network connection.":::
 
 
 ## 
@@ -22,7 +22,7 @@ A point-to-site (P2S) VPN gateway connection lets you create a secure connection
 
 Unlike S2S connections, P2S connections don't require an on-premises public-facing IP address or a VPN device. P2S connections can be used with S2S connections through the same VPN gateway, as long as all the configuration requirements for both connections are compatible.
 
-:::image type="content" source="../media/point-to-site-virtual-private-network-gateway-connection-east-c8448e2c.png" alt-text="Diagram showing an example of a point to site virtual private network connection.":::
+:::image type="content" source="../media/point-to-site-virtual-private-network-gateway-connection-east-c8448e2c-4686a952.png" alt-text="Diagram showing an example of a point to site virtual private network connection.":::
 
 
 ## VNet-to-VNet connections (Internet Protocol Secure/Internet Key Exchange Virtual Private Network Tunnel)
@@ -35,7 +35,7 @@ The VNets you connect can be:
  -  in the same or different subscriptions
  -  in the same or different deployment models
 
-:::image type="content" source="../media/virtual-network-to-virtual-network-connection-internet-protocol-secure-tunnel-2607b074.png" alt-text="Diagram showing how connecting a virtual network to another virtual network is similar to connecting a virtual network to an on premises site location.":::
+:::image type="content" source="../media/virtual-network-to-virtual-network-connection-internet-protocol-secure-tunnel-2607b074-0e139206.png" alt-text="Diagram showing how connecting a virtual network to another virtual network is similar to connecting a virtual network to an on premises site location.":::
 
 
 ## Connections between deployment models
