@@ -41,7 +41,7 @@ Best practice: Simplify network security group rule management by defining [Appl
 
 ## Adopt a Zero Trust approach
 
-Perimeter-based networks operate on the assumption that all systems within a network can be trusted. But today's employees access their organization's resources from anywhere on various devices and apps, which makes perimeter security controls irrelevant. Access control policies that focus only on who can access a resource aren't enough. To master the balance between security and productivity, security admins also need to factor in *how* a resource is being accessed.
+Perimeter-based networks operate on the assumption that all systems within a network can be trusted. But today's employees access their organization's resources from anywhere on various devices and apps, which make perimeter security controls irrelevant. Access control policies that focus only on who can access a resource aren't enough. To master the balance between security and productivity, security admins also need to factor in *how* a resource is being accessed.
 
 Networks need to evolve from traditional defenses because networks might be vulnerable to breaches: an attacker can compromise a single endpoint within the trusted boundary and then quickly expand a foothold across the entire network. [Zero Trust](/security/zero-trust/deploy/networks) networks eliminate the concept of trust based on network location within a perimeter. Instead, Zero Trust architectures use device and user trust claims to gate access to organizational data and resources. For new initiatives, adopt Zero Trust approaches that validate trust at the time of access.
 
@@ -87,7 +87,7 @@ To find available Azure virtual network security appliances, go to the [Azure Ma
 
 A [perimeter network](/azure/architecture/vdc/networking-virtual-datacenter) (also known as a DMZ) is a physical or logical network segment that provides an extra layer of security between your assets and the internet. Specialized network access control devices on the edge of a perimeter network allow only desired traffic into your virtual network.
 
-Perimeter networks are useful because you can focus your network access control management, monitoring, logging, and reporting on the devices at the edge of your Azure virtual network. A perimeter network is where you typically enable [distributed denial of service (DDoS) protection](/azure/ddos-protection/ddos-protection-overview), intrusion detection/intrusion prevention systems (IDS/IPS), firewall rules and policies, web filtering, network antimalware, and more. The network security devices sit between the internet and your Azure virtual network and have an interface on both networks.
+Perimeter networks are useful because you can focus your network access control management, monitoring, logging, and reporting on the devices at the edge of your Azure virtual network. A perimeter network is where you typically enable [distributed denial of service (DDoS) protection](/azure/ddos-protection/ddos-protection-overview), intrusion detection/intrusion prevention systems (IDS/IPS), firewall rules and policies, web filtering, network anti-malware, and more. The network security devices sit between the internet and your Azure virtual network and have an interface on both networks.
 
 Although this is the basic design of a perimeter network, there are many different designs, like back-to-back, tri-homed, and multi-homed.
 
@@ -131,7 +131,7 @@ Load-balancing option: Use [Azure Application Gateway](/azure/application-gatewa
 Scenario: You need to load balance incoming connections from the internet among your servers located in an Azure virtual network. Scenarios are when you:
 
  -  Have stateless applications that accept incoming requests from the internet.
- -  Don't require sticky sessions or TLS offload. Sticky sessions is a method used with Application Load Balancing, to achieve server-affinity.
+ -  Don't require sticky sessions or TLS offload. Sticky sessions are a method used with Application Load Balancing, to achieve server-affinity.
 
 Load-balancing option: Use the Azure portal to [create an external load balancer](/azure/load-balancer/quickstart-load-balancer-standard-public-portal) that spreads incoming requests across multiple VMs to provide a higher level of availability.
 

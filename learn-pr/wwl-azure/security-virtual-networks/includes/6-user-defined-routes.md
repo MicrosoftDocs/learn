@@ -62,7 +62,7 @@ Expand table
 
 An on-premises network gateway can exchange routes with an Azure virtual network gateway by using the BGP. Using BGP with an Azure virtual network gateway is dependent on the type you selected when you created the gateway:
 
- -  ExpressRoute: You must use BGP to advertise on-premises routes to the Microsoft edge router. You can't create UDRs to force traffic to the ExpressRoute virtual network gateway if you deploy a virtual network gateway deployed as the type ExpressRoute. You can use UDRs for forcing traffic from the express route to, for example, a network virtual appliance.
+ -  ExpressRoute: You must use BGP to advertise on-premises routes to the Microsoft Edge router. You can't create UDRs to force traffic to the ExpressRoute virtual network gateway if you deploy a virtual network gateway deployed as the type ExpressRoute. You can use UDRs for forcing traffic from the express route to, for example, a network virtual appliance.
  -  VPN: Optionally, you can use BGP. For more information, see [BGP with site-to-site VPN connections](/azure/vpn-gateway/vpn-gateway-bgp-overview?toc=/azure/virtual-network/toc.json).
 
 When you exchange routes with Azure by using BGP, a separate route is added to the route table of all subnets in a virtual network for each advertised prefix. The route is added with Virtual network gateway listed as the source and next hop type.
@@ -164,6 +164,9 @@ The following diagram shows an implementation through the Resource Manager deplo
 
 > [!NOTE]
 > Arrows show the flow of traffic.
+
+:::image type="content" source="../media/resource-manager-deployment-model-c83dd0d1.png" alt-text="Diagram showing an example of an implementation through the Resource Manager deployment model.":::
+
 
 ### Route tables
 

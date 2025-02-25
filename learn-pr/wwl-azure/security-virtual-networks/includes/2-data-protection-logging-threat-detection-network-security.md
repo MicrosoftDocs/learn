@@ -8,7 +8,7 @@ Data Protection covers control of data protection at rest, in transit, and via a
 | ------------------------- | --------------------------- | ------------------------ |
 | 3.10                      | SC-8                        | 3.5, 3.6, 4.1            |
 
-Security principle: Protect the data in transit against 'out of band' attacks (such as traffic capture) using encryption to ensure that attackers cannot easily read or modify the data.
+Security principle: Protect the data in transit against 'out of band' attacks (such as traffic capture) using encryption to ensure that attackers can't easily read or modify the data.
 
 Set the network boundary and service scope where data in transit encryption is mandatory inside and outside of the network. While this is optional for traffic on private networks, this is critical for traffic on external and public networks.
 
@@ -91,7 +91,7 @@ AWS implementation and additional context:
 
 GCP guidance: Most of the network activities logs are available through the VPC Flow Logs which records a sample of network flows send from and received by resources, including instances used as Google Compute VMs, Kubernetes Engine nodes. These logs can be used for network monitoring, forensics, real-time security analysis, and expense optimization.
 
-You can view flow logs in Cloud Logging, and export logs to the destination that Cloud Logging export supports. Flow logs are aggregated by connection from Compute Engine VM’s and exported in real time. By subscribing to Pub/Sub, you can analyze flow logs using real-time streaming APIs.
+You can view flow logs in Cloud Logging, and export logs to the destination that Cloud Logging export supports. Flow logs are aggregated by connection from Compute Engine VMs and exported in real time. By subscribing to Pub/Sub, you can analyze flow logs using real-time streaming APIs.
 
 > [!NOTE]
 > You can also use Packet Mirroring clones the traffic of specified instances in your Virtual Private Cloud (VPC) network and forwards it for examination. Packet Mirroring captures all traffic and packet data, including payloads and headers.
@@ -125,7 +125,7 @@ Examples of high-risk workload include:
 
  -  An application storing or processing highly sensitive data.
  -  An external network-facing application accessible by the public or users outside of your organization.
- -  An application using insecure architecture or containing vulnerabilities that cannot be easily remediated.
+ -  An application using insecure architecture or containing vulnerabilities that can't be easily remediated.
 
 To enhance your enterprise segmentation strategy, restrict or monitor traffic between internal resources using network controls. For specific, well-defined applications (such as a 3-tier app), this can be a highly secure "deny by default, permit by exception" approach by restricting the ports, protocols, source, and destination IPs of the network traffic. If you have many applications and endpoints interacting with each other, blocking traffic may not scale well, and you may only be able to monitor traffic.
 
@@ -183,36 +183,36 @@ Customer security stakeholders ([Learn more](/azure/cloud-adoption-framework/org
 
 Security principle: Secure cloud services by establishing a private access point for resources. You should also disable or restrict access from public networks when possible.
 
-Azure guidance: Deploy private endpoints for all Azure resources that support the Private Link feature to establish a private access point for the resources. Using Private Link will keep the private connection from routing through the public network.
+Azure guidance: Deploy private endpoints for all Azure resources that support the Private Link feature to establish a private access point for the resources. Using Private Link keeps the private connection from routing through the public network.
 
 > [!NOTE]
-> Certain Azure services may also allow private communication through the service endpoint feature, though it is recommended to use Azure Private Link for secure and private access to services hosted on Azure platform.
+> Certain Azure services may also allow private communication through the service endpoint feature, though it's recommended to use Azure Private Link for secure and private access to services hosted on Azure platform.
 
 For certain services, you can choose to deploy VNet integration for the service where you can restrict the VNET to establish a private access point for the service.
 
 You also have the option to configure the service native network ACL rules or simply disable public network access to block access from public networks.
 
-For Azure VMs, unless there is a strong use case, you should avoid assigning public IPs/subnet directly to the VM interface and instead use gateway or load balancer services as the front-end for access by the public network.
+For Azure VMs, unless there's a strong use case, you should avoid assigning public IPs/subnet directly to the VM interface and instead use gateway or load balancer services as the front-end for access by the public network.
 
 Azure implementation and additional context:
 
  -  [Understand Azure Private Link](/azure/private-link/private-link-overview)
  -  [Integrate Azure services with virtual networks for network isolation](/azure/virtual-network/vnet-integration-for-azure-services)
 
-AWS guidance: Deploy VPC PrivateLink for all AWS resources that support the PrivateLink feature, to allow private connection to the supported AWS services or services hosted by other AWS accounts (VPC endpoint services). Using PrivateLink will keep the private connection from routing through the public network.
+AWS guidance: Deploy VPC PrivateLink for all AWS resources that support the PrivateLink feature, to allow private connection to the supported AWS services or services hosted by other AWS accounts (VPC endpoint services). Using PrivateLink keeps the private connection from routing through the public network.
 
 For certain services, you can choose to deploy the service instance into your own VPC to isolate the traffic.
 
 You also have the option to configure the service native ACL rules to block access from the public network. For example, Amazon S3 allows you to block public access at the bucket or account level.
 
-When assigning IPs to your service resources in your VPC, unless there is a strong use case, you should avoid assigning public IPs/subnet directly to your resources and instead use private IPs/subnet.
+When assigning IPs to your service resources in your VPC, unless there's a strong use case, you should avoid assigning public IPs/subnet directly to your resources and instead use private IPs/subnet.
 
 AWS implementation and additional context:
 
  -  [AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/endpoint-service.html)
  -  [Blocking public access to your Amazon S3 storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html)
 
-GCP guidance: Deploy VPC Private Google Access implementations for all GCP resources that support it to establish a private access point for the resources. These private access options will keep the private connection from routing through the public network. Private Google Access has VM instances that only have internal IP addresses (no external IP adresses)
+GCP guidance: Deploy VPC Private Google Access implementations for all GCP resources that support it to establish a private access point for the resources. These private access options keeps the private connection from routing through the public network. Private Google Access has VM instances that only have internal IP addresses (no external IP addresses)
 
 For certain services, you can choose to deploy the service instance into your own VPC to isolate the traffic. You also have the option to configure the service native ACL rules to block access from the public network. For example, the App Engine firewall allows you to control which network traffic is allowed or rejected when communicating with the App Engine resource. Cloud Storage is another resource where you can enforce public access prevention on individual buckets or at the organization level.
 
@@ -299,8 +299,8 @@ AWS implementation and additional context:
 
 GCP guidance: Google Cloud Armor offers the following options to help protect systems against DDoS attacks:
 
- -  Standard network DDoS protection: basic always-on protection for network load balancers, protocol forwarding, or VM’s with public IP addresses.
- -  Advanced network DDoS protection: additional protections for Managed Protection Plus subscribers who use network load balancers, protocol forwarding, or VM’s with public IP addresses.
+ -  Standard network DDoS protection: basic always-on protection for network load balancers, protocol forwarding, or VMs with public IP addresses.
+ -  Advanced network DDoS protection: additional protections for Managed Protection Plus subscribers who use network load balancers, protocol forwarding, or VMs with public IP addresses.
  -  Standard network DDoS protection is always enabled. You configure advanced network DDoS protection on a per-region basis.
 
 GCP implementation and additional context:
@@ -335,7 +335,7 @@ Azure implementation and additional context:
 
 AWS guidance: Use AWS Web Application Firewall (WAF) in Amazon CloudFront distribution, Amazon API Gateway, Application Load Balancer, or AWS AppSync to protect your applications, services and APIs against application layer attacks at the edge of your network.
 
-Use AWS Managed Rules for WAF to deploy built-in baseline groups and customize it to your application needsfor the user-case rule groups.
+Use AWS Managed Rules for WAF to deploy built-in baseline groups and customize it to your application needs for the user-case rule groups.
 
 To simplify the WAF rules deployment, you can also use the AWS WAF Security Automations solution to automatically deploy pre-defined AWS WAF rules that filters web-based attacks on your web ACL.
 
@@ -347,11 +347,11 @@ AWS implementation and additional context:
 
 GCP guidance: Use Google Cloud Armor to help protect your applications and websites against denial of service and web attacks.
 
-Use Google Cloud Armor out-of-the box rules based on industry standards to mitigate common web-application vulnerabilities and help provide protection from OWASP Top 10.
+Use Google Cloud Armor out-of-the-box rules based on industry standards to mitigate common web-application vulnerabilities and help provide protection from OWASP Top 10.
 
 Setup your preconfigured WAF rules, each consisting of multiple signatures sourced from ModSecurity Core Rules (CRS). Each signature corresponds to an attack detection rule in the ruleset.
 
-Cloud Armor works in conjunction with external load balancers and protects from distributed denial-of-service (DDoS) and other web-based attacks, whether the applications are deployed on Google Cloud, in a hybrid deployment, or in a multi-cloud architecture. Security policies can be configured manually, with configurable match conditions, and actions in a security policy. Cloud Armor also features preconfigured security policies, which cover a variety of use cases.
+Cloud Armor works in conjunction with external load balancers and protects from distributed denial-of-service (DDoS) and other web-based attacks, whether the applications are deployed on Google Cloud, in a hybrid deployment, or in a multicloud architecture. Security policies can be configured manually, with configurable match conditions, and actions in a security policy. Cloud Armor also features preconfigured security policies, which cover a variety of use cases.
 
 Adaptive Protection in Cloud Armor helps you prevent, detect and protect your application and services from L7 distributed attacks by analyzing patterns of traffic to your backend services, detecting and alerting suspected attacks, and generating suggested WAF rules to mitigate such attacks. These rules can be fine-tuned to meet your needs.
 
