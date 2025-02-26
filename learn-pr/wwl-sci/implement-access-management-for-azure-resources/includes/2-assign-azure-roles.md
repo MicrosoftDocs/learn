@@ -32,7 +32,7 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
 :::image type="content" source="../media/assign-role-resource-group-d2406eba-faee0c7a.png" alt-text="Screenshot of the Azure portal.  It shows a sample resource group with the Assign Role selected.":::
 
 
-Whether you are in the User, Group, Resource Group, or Subscription you'll generally use the Access control (IAM) page to make the assign. It's also known as identity and access management (IAM) and appears in several locations in the Azure portal.
+Whether you are in the User, Group, Resource Group, or Subscription you'll generally use the Access content (IAM) page to make the assign. It's also known as identity and access management (IAM) and appears in several locations in the Azure portal.
 
 ### Assign an Azure role with script
 
