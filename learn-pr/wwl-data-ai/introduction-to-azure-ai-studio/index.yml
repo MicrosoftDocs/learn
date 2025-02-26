@@ -37,7 +37,6 @@ subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contrib
   - machine-learning
   - natural-language-processing
 units:
-- learn.wwl.introduction-to-azure-ai-studio.when-to-use-ai-studio
 badge:
   uid: learn.wwl.introduction-to-azure-ai-studio.badge
 
