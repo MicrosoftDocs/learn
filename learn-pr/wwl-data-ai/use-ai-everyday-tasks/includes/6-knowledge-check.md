@@ -2,13 +2,15 @@
 What is the role of generative AI in content creation?
 ( ) Generative AI rearranges existing information to create new content. {{Incorrect. Generative AI doesn't just rearrange existing information; it creates something new that didn't exist before.}}
 (x) Generative AI creates new, unique content, such as writing poems, composing melodies, or designing graphics based on the patterns and styles it learned from existing data. {{Correct. Generative AI uses large language models (LLMs) that are trained on huge amounts of data to create outputs that are similar to the data they were trained on.}}
-( ) Generative AI copies existing data to produce similar content. {{Incorrect. Generative AI does not just rearrange existing information, it creates entirely new and original pieces of work.}}
+( ) Generative AI copies existing data to produce similar content. {{Incorrect. Generative AI does not just copy data, it creates entirely new and original pieces of work.}}
 
 ## Multiple Choice
 What is the key to getting the best responses from AI tools like Microsoft Copilot?
 (X) Being clear, specific, and goal-oriented in your prompts. {{Correct. Clear, specific, and goal-oriented prompts help the AI understand exactly what you need and provide accurate and useful responses.}}
-( ) Using complex and technical language. {{Incorrect. Complex and technical language can confuse the AI and lead to inaccurate responses.}}
-( ) Providing minimal context and avoiding specific goals. {{Incorrect. Vague and general prompts can lead to unclear or irrelevant responses from the AI.}}
+( ) Using advanced vocabulary and technical terms to enhance AI comprehension.
+{{Incorrect. While AI can process complex language, unnecessary jargon may introduce ambiguity and lead to less accurate responses.}}
+( ) Trusting the AI’s first response as the best possible answer without adjustments.
+{{Incorrect. While AI can generate strong initial responses, iterating on your prompt and refining based on feedback often leads to more precise and valuable results.}}
 
 ## Multiple Choice
 What is the purpose of using the Think Deeper feature in Microsoft Copilot?
