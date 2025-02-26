@@ -43637,6 +43637,11 @@
       "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/7-understand-capabilities-of-azure-cognitive-services.md",
       "redirect_url": "/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/6-understand-capabilities-of-azure-machine-learning.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
     }
   ]
 }
