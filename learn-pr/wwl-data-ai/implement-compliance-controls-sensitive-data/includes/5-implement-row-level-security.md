@@ -1,4 +1,4 @@
-Row-level security (RLS) doesn't use encryption and operates at the database level to restrict access to a table by using a security policy based on group membership or authorization context. This functionally is equivalent to a `WHERE` clause.
+[Row-level security (RLS)](/sql/relational-databases/security/row-level-security) doesn't use encryption and operates at the database level to restrict access to a table by using a security policy based on group membership or authorization context. This functionally is equivalent to a `WHERE` clause.
 
 The security policy invokes an inline table-valued function to protect access to the rows in a table.
 
@@ -159,7 +159,7 @@ Row-level security is ideal for many scenarios, including:
 - When you need to restrict customers' data access to only the data relevant to their company.
 - When you need to restrict access for compliance purposes.
 
-## Best practice
+## Best practices
 
 Here are a few best practices to consider when implementing RLS:
 

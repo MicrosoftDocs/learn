@@ -169,37 +169,6 @@ To scope and run the scan, follow these steps:
  
     :::image type="content" source="../media/dp-3300-module-33-lab-63.png" alt-text="Screenshot of review scan page for Azure Purview.":::
 
-### View a scan
-
-To view a scan, follow these steps:
-
-1. Navigate to the data source in the collection, and then select **View Details** to check the status of the scan.
-
-    :::image type="content" source="../media/dp-3300-module-33-lab-64.png" alt-text="Screenshot of the view details for a Microsoft Purview scan.":::
-
-1. The scan details indicate the progress of the scan in the **Last run status** and the number of assets scanned and classified. The **Last run status** is updated to **In progress** and then **Completed** once the entire scan has run successfully.
-
-    > [!div class="mx-imgBorder"]
-    > [![Screenshot of the scan progress for a Microsoft Purview scan.](../media/dp-3300-module-33-lab-65.png)](../media/dp-3300-module-33-lab-65.png#lightbox)
-
-### Manage Scan
-
-Scans can be managed or run again on completion:
-
-1. Select your scan name to manage the scan.
-
-    :::image type="content" source="../media/dp-3300-module-33-lab-66.png" alt-text="Screenshot of the recent scans list for Microsoft Purview.":::
-
-1. From the scan history page, you can run the scan again, edit the scan, or delete the scan.
-
-    > [!div class="mx-imgBorder"]
-    > [![Screenshot of the scan history page showing how to manage scan options.](../media/dp-3300-module-33-lab-67.png)](../media/dp-3300-module-33-lab-67.png#lightbox)
-
-1. You can also run an incremental scan or a full scan again.
-
-    > [!div class="mx-imgBorder"]
-    > [![Screenshot of the full or incremental scan for a Microsoft Purview scan.](../media/dp-3300-module-33-lab-68.png)](../media/dp-3300-module-33-lab-68.png#lightbox)
-
 ## Data lineage
 
 Generally, data lineage represents the journey the data takes from its origin to where it moves across the data estate over time. Among its many uses are troubleshooting, tracing the root cause in data pipelines, and debugging.

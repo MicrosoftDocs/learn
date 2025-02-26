@@ -1,4 +1,4 @@
-Azure SQL auditing tracks database events and writes them to an audit log in your Azure Storage account, Log Analytics workspace, or Event Hubs. It helps maintain regulatory compliance, analyze activity patterns, and identify deviations that may indicate security violations.
+[Azure SQL auditing](/azure/azure-sql/database/auditing-overview) tracks database events and writes them to an audit log in your Azure Storage account, Log Analytics workspace, or Event Hubs. It helps maintain regulatory compliance, analyze activity patterns, and identify deviations that may indicate security violations.
 
 You can define server-level and database-level policies. Server policies automatically cover new and existing databases in Azure.
 

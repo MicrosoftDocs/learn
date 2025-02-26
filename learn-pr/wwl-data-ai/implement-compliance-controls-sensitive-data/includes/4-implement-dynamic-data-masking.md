@@ -1,4 +1,4 @@
-Dynamic Data Masking works by obfuscating data in order to limit its exposure. Users who don't need to see sensitive data can view the column that contains the data, but not the actual data itself. Dynamic Data Masking works at the presentation layer, and that unmasked data is always visible by high privileged users.
+[Dynamic Data Masking](/azure/azure-sql/database/dynamic-data-masking-overview) works by obfuscating data in order to limit its exposure. Users who don't need to see sensitive data can view the column that contains the data, but not the actual data itself. Dynamic Data Masking works at the presentation layer, and that unmasked data is always visible by high privileged users.
 
 Dynamic Data Masking has the advantage that it doesn't require many modifications to the application or database. You can configure it through the Azure portal, or using T-SQL as follows.
 
