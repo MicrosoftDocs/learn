@@ -7,7 +7,7 @@ The following table includes some prompt resources you might find helpful to get
 | Resource Name | Description | Use cases  |
 |--|--|--|
 | **[Do more with Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai?azure-portal=true)** | A selection of use cases and examples of how AI can be applied to everyday tasks. | Explore articles grouped by categories such as daily life, AI art & creativity, general AI, learning & education, and professional life. |
-| **[Copilot prompt gallery](https://copilot.cloud.microsoft/prompts?azure-portal=true)** | A collection of prompts that you can use as inspiration. | Find examples of how to structure prompts for different tasks and scenarios. |
+| **[Copilot prompt gallery](https://copilot.cloud.microsoft/prompts?azure-portal=true)** | A collection of prompts that you can use as inspiration. | Find example prompts that you can edit to make your own. Some editable parts are obvious, denoted by a pair of square brackets, like [topic], [file], and [your title]. But you can also edit various parts of those prompts, such as the goal, context, expectations, and source, to suit your purpose. |
 | **[Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library?azure-portal=true)** | A wide range of scenarios and prompts organized by job functions and roles | Find relevant prompts for your specific needs and industry. |
 
 ## Explore ways to use AI in your personal life
@@ -57,7 +57,14 @@ Here are some suggested prompts to make a training schedule:
 - **Word**: Rewrite a paragraph in a different tone or style.
 - **Teams**: Summarize meetings and chat threads.
 
-The real power, though, comes from the flow of using Copilot across apps. There are many use cases for Copilot in Microsoft 365, including in communications, HR, legal, IT, sales, project management, market research, finance, and more. The [Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library?azure-portal=true) can help you get started.
+A prompt can be simple or detailed, but you must have a clear goal. If you want to be more specific, add additional information. Often, you'll need more than just a goal to achieve the results you want.The following graphic describes a good prompt by breaking down into four parts: Goal, Context, Expectations, and Source.
+
+![Screenshot showing four parts of a prompt.](../media/04-copilot-prompt-parts.png)
+
+> [!TIP]
+>To explore further, review [Learn about Copilot prompts](https://support.microsoft.com/topic/learn-about-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5?ocid=PromptGallery_SMC_ArticleLearnAbout?azure-portal=true).
+
+The real power of Microsoft 365 Copilot comes from the flow of using it across apps. There are many use cases for Copilot in Microsoft 365, including in communications, HR, legal, IT, sales, project management, market research, finance, and more. The [Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library?azure-portal=true) can help you get started.
 
 In the following short video, learn how one communications manager uses Microsoft 365 Copilot to create and enhance announcement posts.
 
