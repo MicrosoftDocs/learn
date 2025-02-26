@@ -43557,6 +43557,106 @@
       "source_path": "learn-pr/wwl-azure/security-virtual-networks/9-expressroute-encryption.md",
       "redirect_url": "/training/modules/security-virtual-networks/13-expressroute-encryption",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/index.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/3-azure-ai-resources.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/5-exercise-explore-ai-studio.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/1-introduction.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/6-knowledge-check.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/7-summary.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/2-what-is-ai-studio.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/4-when-to-use-ai-studio.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/index.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/2-define-artificial-intelligence.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/1-introduction.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/10-knowledge-check.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/11-summary.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/3-understand-ai-related-terms.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/9-understand-capabilities-of-azure-cognitive-search.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/7-understand-capabilities-of-azure-cognitive-services.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/6-understand-capabilities-of-azure-machine-learning.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/8-understand-capabilities-of-azure-openai-service.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/4-understand-considerations-for-ai-engineers.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/5-understand-considerations-for-responsible-ai.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
     }
   ]
 }

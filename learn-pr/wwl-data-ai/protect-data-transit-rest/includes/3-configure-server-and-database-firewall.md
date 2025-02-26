@@ -1,4 +1,4 @@
-Firewalls are used to prevent unauthorized users from accessing protected resources. Each Azure SQL Database maps to a public IP address, which is hosted by Microsoft. Each Azure region will have one or more public IP addresses where you can reach your database gateway, which will then take you to your database.
+Firewalls prevent unauthorized users from accessing protected resources. Each Azure SQL Database maps to a public IP address hosted by Microsoft. In each Azure region, one or more public IP addresses allow you to reach your database gateway, which then directs you to your database.
 
 ## How firewall works
 
@@ -6,7 +6,7 @@ As shown in the following diagram, connection attempts coming from the internet 
 
 :::image type="content" source="../media/module-33-security-final-05-2.png" alt-text="Database and server firewall diagram for Azure SQL Database.":::
 
-As we can see in the image above, Azure provides built-in firewalls to limit access in order to protect your database and your data. In Azure SQL Database there are two distinct sets of firewall rules: server-level firewall rules and database-level firewall rules.
+Azure provides built-in firewalls to limit access in order to protect your database and your data. In Azure SQL Database there are two distinct sets of firewall rules: server-level firewall rules and database-level firewall rules.
 
 ### Server-level firewall rules
 
@@ -23,9 +23,9 @@ Server level firewall rules can be configured using the Azure portal or using th
 
 Database-level firewall rules are configured through T-SQL only using the `sp_set_database_firewall_rule` stored procedure from within the user database.
 
-Upon connection, Azure SQL Database will look first for a database-level firewall rule for the database name specified in the connection string. If it does not exist, the firewall will then check the server-level IP firewall rules. Server-level IP firewall rules apply to all databases on the server. If either of these exist, the connection will be completed.
+Upon connection, Azure SQL Database first checks for a database-level firewall rule corresponding to the database name specified in the connection string. If no such rule exists, the firewall then checks the server-level IP firewall rules. Server-level IP firewall rules apply to all databases on the server. If a matching rule is found at either level, the connection is established.
 
-If neither exist and the user is connecting through SQL Server Management Studio or Azure Data Studio, they'll be prompted to create a firewall rule as shown below.
+If neither exist and the user is connecting through SQL Server Management Studio or Azure Data Studio, they'll be prompted to create a firewall rule.
 
 :::image type="content" source="../media/module-33-security-final-15.png" alt-text="New Firewall Rule Screen from SQL Server Management Studio.":::
 
@@ -35,7 +35,7 @@ Virtual network endpoints allow traffic from a specific Azure Virtual Network. T
 
 Additionally, the service endpoint applies to only one region, which is the underlying endpoint’s region.
 
-An extra concern is that the virtual network that is connecting to the Azure SQL Database must have outbound access to the public IP address for Azure SQL Database, which can be configured using service tags for Azure SQL Database.
+Another important consideration is that the virtual network connecting to the Azure SQL Database must have outbound access to the database's public IP address. This can be configured using service tags for Azure SQL Database.
 
 ## Private link
 
