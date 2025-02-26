@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/06/2022
-  author: wwlpublish
+  ms.date: 2/25/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
@@ -22,13 +22,13 @@ quiz:
     choices:
     - content: "Credential"
       isCorrect: false
-      explanation: "Incorrect. A credential is not used with TDE."
+      explanation: "Incorrect. A credential isn't used with TDE."
     - content: "Master Key"
       isCorrect: true
       explanation: "Correct. A master key is required in order to encrypt databases."
     - content: "User"
       isCorrect: false
-      explanation: "Incorrect. A user is not required to enable TDE."
+      explanation: "Incorrect. A user isn't required to enable TDE."
   - content: "Which feature prevents members of the sysadmin role from viewing the values of data in a table?"
     choices:
     - content: "Always Encrypted"
@@ -36,18 +36,18 @@ quiz:
       explanation: "Correct. Always Encrypted only stores encrypted data in the SQL Server so the data is never visible to a user of the database without the column key, held by the application."
     - content: "Dynamic Data Masking"
       isCorrect: false
-      explanation: "Incorrect. Dynamic masking does not work with admin users, as they can see the data."
+      explanation: "Incorrect. Dynamic masking doesn't work with admin users, as they can see the data."
     - content: "Transparent Data Encryption"
       isCorrect: false
-      explanation: "Incorrect. TDE does not encrypt the data in the tables."
+      explanation: "Incorrect. TDE doesn't encrypt the data in the tables."
   - content: "Which TLS version offers the most secure option for encryption?"
     choices:
     - content: "TLS 1.1 version"
       isCorrect: false
-      explanation: "Incorrect. TLS 1.1 version is not the most secure option for encryption."
+      explanation: "Incorrect. TLS 1.1 version isn't the most secure option for encryption."
     - content: "TLS 1.0 version"
       isCorrect: false
-      explanation: "Incorrect. TLS 1.0 version is not the most secure option for encryption."
+      explanation: "Incorrect. TLS 1.0 version isn't the most secure option for encryption."
     - content: "TLS 1.2 version"
       isCorrect: true
       explanation: "Correct. TLS 1.2 version is the most secure TLS version."
@@ -55,10 +55,10 @@ quiz:
     choices:
     - content: "Network Endpoints"
       isCorrect: false
-      explanation: "Incorrect. Network endpoints allow connectivity from a vNet, but do not provide a private IP address."
+      explanation: "Incorrect. Network endpoints allow connectivity from a virtual network, but don't provide a private IP address."
     - content: "Private Link"
       isCorrect: true
-      explanation: "Correct. Private link provides a private IP address in an Azure vNet for an Azure SQL Database."
+      explanation: "Correct. Private link provides a private IP address in an Azure virtual network for an Azure SQL Database."
     - content: "Database Firewall"
       isCorrect: false
       explanation: "Incorrect. Database firewalls allow for public IP addresses to access your Azure SQL Database."

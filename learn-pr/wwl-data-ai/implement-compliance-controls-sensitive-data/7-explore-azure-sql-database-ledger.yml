@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.explore-azure-sql-database-ledger
-title: Explore Azure SQL Database Ledger
+title: Explore Ledger
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Explore Azure SQL Database Ledger
-  description: "Explore Azure SQL Database Ledger"
-  ms.date: 09/02/2022
-  author: wwlpublish
+  title: Explore Ledger
+  description: "Explore Ledger"
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false

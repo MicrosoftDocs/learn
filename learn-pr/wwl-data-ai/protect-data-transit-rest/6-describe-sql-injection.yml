@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe SQL injection
   description: "Describe SQL injection"
-  ms.date: 05/06/2022
-  author: wwlpublish
+  ms.date: 2/25/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
