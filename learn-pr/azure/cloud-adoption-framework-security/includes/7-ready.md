@@ -10,7 +10,7 @@ To [modernize your security posture](/azure/cloud-adoption-framework/secure/read
 
 - **Adopt a landing zone approach** to provide controlled environments to deploy cloud resources. Use the [landing zone design principles](/azure/cloud-adoption-framework/ready/landing-zone/design-areas) to optimize your implementation. To enhance security and manageability, separate different domains of your cloud estate. Even if you don't adopt a full enterprise landing zone, understand and apply relevant design areas and controls. For example, you might use management groups to govern your cloud estate.
 
-- **Adopt modern identity, authorization, and access** based on Zero Trust principles. Allow access only as needed. Apply the same strict controls to foundational elements like subscriptions, networking resources, governance solutions, and the identiy and access management (IAM) platform.
+- **Adopt modern identity, authorization, and access** based on Zero Trust principles. Allow access only as needed. Apply the same strict controls to foundational elements like subscriptions, networking resources, governance solutions, and the identity and access management (IAM) platform.
 
 ### Azure facilitation
 
@@ -33,7 +33,7 @@ After you define your strategy and plan for incident preparedness and response, 
 
 ## Prepare for confidentiality
 
-Implement and enforce your IAM policies and standards to [help secure data by default](/azure/cloud-adoption-framework/secure/ready#prepare-for-confidentiality) when you deploy workloads. Key policies and standards include:
+To [help secure data by default](/azure/cloud-adoption-framework/secure/ready#prepare-for-confidentiality) when you deploy workloads, implement and enforce your IAM policies and standards. Key policies and standards include:
 
 - **The principle of least privilege:** Grant users minimal access needed for their tasks.
 

@@ -33,7 +33,7 @@ To strictly enforce standards, robust governance mechanisms and practices must s
 
   - *Maintain your incident response plan with critical care.* Store it in a highly available and secure location, review and update it regularly, and ensure that teams use the latest version.
 
-  - *Version control incident response training materials.* Review and update them regulary.
+  - *Version control incident response training materials.* Review and update them regularly.
 
 ### Azure facilitation
 
@@ -57,13 +57,13 @@ To strictly enforce standards, robust governance mechanisms and practices must s
 
 - **Conduct regular security audits** to help ensure policy compliance and identify improvements. These audits should cover regulatory, industry, and organizational standards and might involve partner assessors.
 
-- **Use tools like Azure Policy for real-time compliance monitoring and alerts.** These tools helps detect and respond to policy violations quickly, which improves continuous adherence to security standards.
+- **Use tools like Azure Policy for real-time compliance monitoring and alerts.** These tools help detect and respond to policy violations quickly, which improves continuous adherence to security standards.
 
 - **Educate employees on data confidentiality policies and best practices** through regular training sessions. Update programs to reflect policy changes and emerging threats. Ensure that employees have the latest knowledge and skills.
 
 ## Govern integrity
 
-To [maintain integrity practices](/azure/cloud-adoption-framework/secure/govern#integrity-governance), consider the following recomomendations:
+To [maintain integrity practices](/azure/cloud-adoption-framework/secure/govern#integrity-governance), consider the following recommendations:
 
 - **Use a preconfigured solution to automate data quality validation.** This approach reduces manual effort and minimizes the risk of unauthorized access and data alterations.
 

@@ -65,6 +65,6 @@ Ensure [alignment between technology and business stakeholders](/azure/cloud-ado
 
 ## Plan for security sustainment
 
-- **Adopt a mindset of continuous improvement**, and seek enhancement opportunities. Implement a training program to foster your mindset.
+- **Adopt a mindset of continuous improvement**, and seek enhancement opportunities. To foster your mindset, implement a training program.
 - **Adhere to operational standards**, and regularly review policies.
 - **Understand your current posture** to plan your security baseline. Use tools like Microsoft Secure Score to quickly establish your baseline and identify areas for improvement.

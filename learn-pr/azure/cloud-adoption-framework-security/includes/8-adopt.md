@@ -30,7 +30,7 @@ Effective [adoption and change management (ACM) methodologies](/azure/cloud-adop
 
 ## Azure facilitation
 
-- [Microsoft Secure Score](/defender-xdr/microsoft-secure-score-improvement-actions) from the Microsoft Defender XDR suite helps you set security baselines and provides improvement recommendations.
+- [Microsoft Secure Score](/defender-xdr/microsoft-secure-score-improvement-actions) from the Defender XDR suite helps you set security baselines and provides improvement recommendations.
 
 - [Bicep](/azure/azure-resource-manager/bicep/overview), [Terraform](/azure/developer/terraform/overview), or [Azure Resource Manager (ARM)](/azure/azure-resource-manager/templates/overview) templates deploy infrastructure as code (IaC). Integrate them into [Azure Pipelines](/azure/azure-resource-manager/bicep/add-template-to-azure-pipelines) or [GitHub Actions](/devops/deliver/iac-github-actions) CI/CD pipelines. Use Microsoft Defender for Cloud to [identify misconfigurations in IaC](/azure/defender-for-cloud/iac-vulnerabilities).
 
@@ -51,11 +51,11 @@ Effective [adoption and change management (ACM) methodologies](/azure/cloud-adop
 
 ## Adopt incident preparedness and response
 
-Develop mechanisms and an incident response plan to align your cloud estate with business goals. Address incident preparedness from two perspectives: threat readiness and mitigation, and infrastructure and application security.
+To align your cloud estate with business goals, develop preparedness and response mechanisms and an incident response plan. Address incident preparedness from two perspectives: threat readiness and mitigation, and infrastructure and application security.
 
 - **Threat detection and mitigation**
 
-  - *Set up alert systems* to detect unusual activities in real-time, and integrate XDR and SIEM solutions.
+  - *Set up alert systems* to detect unusual activities in real-time, and integrate extended detection and response (XDR) and security information and event management (SIEM) solutions.
 
   - *Identify and mitigate vulnerabilities* regularly through patch management and security updates.
 
@@ -69,7 +69,7 @@ Develop mechanisms and an incident response plan to align your cloud estate with
 
 ### Azure facilitation
 
-- [Microsoft Defender XDR](/defender-xdr/m365d-autoir) automates threat detection and response.
+- [Defender XDR](/defender-xdr/m365d-autoir) automates threat detection and response.
 
 - [Deployment stacks](/azure/azure-resource-manager/bicep/deployment-stacks) manage Azure resources as a single, cohesive unit. You can use [deny settings](/azure/azure-resource-manager/bicep/deployment-stacks) to prevent users from performing unauthorized modifications.
 
@@ -85,7 +85,7 @@ Effectively implement and institutionalize encryption and secure access controls
   - *Apply RBAC, conditional access, just-in-time, and just-enough-access controls* to all data stores. Regularly review permissions and restrict write access to configuration systems.
   - *Develop standards* to help ensure data protection. For example, encrypt sensitive emails by using Microsoft Purview Information Protection to ensure data protection during transmission.
 
-### Azure faciliation
+### Azure facilitation
 
 - [Microsoft Sentinel](/azure/sentinel/overview) is a scalable, cloud-native SIEM and SOAR solution for threat detection, investigation, response, and proactive hunting.
 
@@ -106,10 +106,10 @@ Build your systems according to the standards that you developed in earlier phas
 - **Adopt data integrity.**
   - *Automate data classification* when possible. Manually label documents and containers as needed. Use ready-made tools to identify sensitive information and curate data sets with expert input.
 
-  - *Use built-in verification features* in services like Azure Data Factory. Use SQL functions like `CHECKSUM` and `BINARY_CHECKSUM` to help ensure data integrity and store hashes to track changes.
+  - *Use built-in verification features* in services like Azure Data Factory. To help ensure data integrity and store hashes to track changes, use SQL functions like `CHECKSUM` and `BINARY_CHECKSUM`.
   - *Monitor data stores* for changes, and configure alerts for incidents that affect data integrity.
   - *Apply backup policies across systems.* Understand and configure backup capabilities in PaaS and SaaS services, like SQL Database.
-  - *Publish application design standards* that include data integrity mechanisms, such as tracking configuration and data changes within the data schema and using standard logging mechanisms.
+  - *Publish application design standards* that include data integrity mechanisms, such as tracking configuration and data changes within your data schema.
 
 - **Adopt system integrity.**
   - *Use a robust monitoring solution* to automatically enroll all resources and enable alerting for incident notifications.
@@ -151,13 +151,13 @@ Focus on establishing and codifying operational practices that [support availabi
 
 ## Adopt security sustainment
 
-Ensure that your workload can sustain and contiuously improve your new security mechanisms and practices.
+Ensure that your workload can sustain and continuously improve your new security mechanisms and practices.
 
 - **Create a security review board.** Continuously review projects and mandate security controls. Regularly improve processes to keep security a priority.
 
 - **Implement a vulnerability management solution.** Monitor and act on security vulnerability risk scores, track common vulnerabilities, and apply mitigations regularly.
 
-- **Harden production infrastructure.** Follow industry best practices like CIS benchmarks to help secure your cloud estate.
+- **Harden production infrastructure.** To help secure your cloud estate, follow industry best practices like Center for Internet Security (CIS) benchmarks.
 
 - **Use the MITRE ATT&CK knowledge base.** Develop threat models and methodologies based on real-world attack tactics and techniques.
 
@@ -165,4 +165,4 @@ Ensure that your workload can sustain and contiuously improve your new security 
 
 ### Azure facilitation
 
-[Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) is a comprehensive risk-based vulnerability management solution that you can use to identify, assess, remediate, and track all your biggest vulnerabilities across your most critical assets.
+[Microsoft Defender Vulnerability Management](/defender-vulnerability-management/defender-vulnerability-management) is a comprehensive risk-based vulnerability management solution. It identifies, assesses, remediates, and tracks your biggest vulnerabilities across your most critical assets.
