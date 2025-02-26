@@ -17,8 +17,8 @@ You don't need to specify Azure dependencies because you run your application lo
 At a command prompt, generate the to-do application:
 
 ```bash
-mvn -U io.quarkus:quarkus-maven-plugin:3.7.3:create \
-    -DplatformVersion=3.7.3 \
+mvn -U io.quarkus:quarkus-maven-plugin:3.19.0:create \
+    -DplatformVersion=3.18.4 \
     -DprojectGroupId=com.example.demo \
     -DprojectArtifactId=todo \
     -DclassName="com.example.demo.TodoResource" \
@@ -179,25 +179,22 @@ mvnw.cmd quarkus:dev  # On Windows
 
 The Quarkus application should start and connect to your database. You should see the following output:
 
-```shell
-[io.qua.dat.dep.dev.DevServicesDatasourceProcessor] Dev Services for the default datasource (postgresql) started.
-[io.qua.hib.orm.dep.HibernateOrmProcessor] Setting quarkus.hibernate-orm.database.generation=drop-and-create to initialize Dev Services managed database
+```log
+2025-02-26 16:27:18,064 INFO  [io.qua.dat.dep.dev.DevServicesDatasourceProcessor] (build-3) Dev Services for default datasource (postgresql) started - container ID is 995a76794a46
+2025-02-26 16:27:18,068 INFO  [io.qua.hib.orm.dep.dev.HibernateOrmDevServicesProcessor] (build-33) Setting quarkus.hibernate-orm.database.generation=drop-and-create to initialize Dev Services managed database
 __  ____  __  _____   ___  __ ____  ______ 
  --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
  -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
 --\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
-[org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread) SQL Warning Code: 0, SQLState: 00000
+2025-02-26 16:27:21,322 INFO  [io.quarkus] (Quarkus Main Thread) todo 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.18.4) started in 32.490s. Listening on: http://localhost:8080
 
-[org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread) table "todo" does not exist, skipping
-[org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread) SQL Warning Code: 0, SQLState: 00000
-[org.hib.eng.jdb.spi.SqlExceptionHelper] (JPA Startup Thread) sequence "hibernate_sequence" does not exist, skipping
-[io.quarkus] (Quarkus Main Thread) todo 1.0.0-SNAPSHOT on JVM (powered by Quarkus) started in 4.381s. Listening on: http://localhost:8080
-[io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
-[io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, narayana-jta, resteasy, resteasy-jackson, smallrye-context-propagation, vertx]
+2025-02-26 16:27:21,501 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2025-02-26 16:27:21,501 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, narayana-jta, resteasy, resteasy-jackson, smallrye-context-propagation, vertx]
+2025-02-26 16:27:30,113 INFO  [com.exa.dem.TodoResource] (executor-thread-1) Creating todo: Todo{id=null', description='Take Quarkus MS Learn', details='Take the MS Learn on deploying Quarkus to Azure Container Apps', done=true, createdAt=2025-02-26T07:27:30.093447Z}
 
 --
 Tests paused
-Press [r] to resume testing, [o] Toggle test output, [:] for the terminal, [h] for more options>
+Press [e] to edit command line args (currently ''), [r] to resume testing, [o] Toggle test output, [:] for the terminal, [h] for more options>
 ```
 
 To test the application, you can use cURL.
@@ -214,7 +211,7 @@ curl --header "Content-Type: application/json" \
 This command should return the created item (with an identifier):
 
 ```json
-{"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true,"createdAt":"2022-12-30T15:17:20.280203Z"}
+{"id":1,"description":"Take Quarkus MS Learn","details":"Take the MS Learn on deploying Quarkus to Azure Container Apps","done":true,"createdAt":"2025-02-26T07:27:30.093447Z"}
 ```
 
 Create a second to-do by using the following cURL command:
@@ -290,7 +287,7 @@ mvnw.cmd clean test  # On Windows
 
 You should see output that looks similar to this:
 
-```shell
+```log
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------

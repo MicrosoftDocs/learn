@@ -6,9 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Create a Quarkus application
   description: Create a Quarkus application, test it, and run it locally.
-  ms.date: 02/14/2024
-  author: agoncal
-  ms.author: antoniomanug
+  ms.date: 02/26/2025
+  author: yoshioterada
+  ms.author: yoterada
   ms.topic: unit
   ms.custom:
     - team=devdiv

@@ -6,9 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Deploy a Quarkus application to Azure Container Apps
   description: In this exercise, you set up an Azure Container Apps environment and deploy a Quarkus Docker container.
-  ms.date: 02/14/2024
-  author: agoncal
-  ms.author: antoniomanug
+  ms.date: 02/26/2025
+  author: yoshioterada
+  ms.author: yoterada
   ms.topic: unit
   ms.custom:
     - team=devdiv
