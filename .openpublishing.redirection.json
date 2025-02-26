@@ -43562,6 +43562,11 @@
       "source_path": "learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/index.md",
       "redirect_url": "/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/3-azure-ai-resources.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
     }
   ]
 }
