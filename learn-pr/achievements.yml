@@ -5255,3 +5255,8 @@ achievements:
   title: Introduction to Azure AI Foundry
   summary: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Azure AI Foundry brings these services together in a single unified experience for AI development on the Azure cloud platform.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.prepare-to-develop-ai-solutions-azure.badge
+  type: badge
+  title: Prepare to develop AI solutions on Azure
+  summary: As an aspiring Azure AI Engineer, you should understand core concepts and principles of AI development, and the capabilities of Azure services used in AI solutions.
+  iconUrl: /training/achievements/azure-develop-ai-solutions.svg
