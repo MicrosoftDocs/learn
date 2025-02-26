@@ -43597,6 +43597,11 @@
       "source_path": "learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/4-when-to-use-ai-studio.md",
       "redirect_url": "/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/index.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
     }
   ]
 }
