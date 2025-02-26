@@ -12,19 +12,19 @@ metadata:
   ms.subservice: caf-methodology-secure
 title: Prepare for cloud security by using the Microsoft Cloud Adoption Framework for Azure 
 summary: |
-  Organizations moving to the cloud often find they need to modernize security practices and tooling to keep up with continuous changes in cloud platforms, business requirements, and security threats.  
+  Organizations that move to the cloud often find that they need to modernize security practices and tooling to keep up with continuous changes in cloud platforms, business requirements, and security threats. 
   
-  The Microsoft Cloud Adoption Framework for Azure provides guidance for this security modernization journey by providing clarity on processes, best practices, models, and experiences. This guidance is based on [Zero Trust](https://aka.ms/zerotrust) principles and the lessons learned and real-world experiences of Microsoft's own security work. It's also based on work with organizations like the National Institute of Standards and Technology, the Open Group, and the [Center for Internet Security](https://www.cisecurity.org/).   
+  The Cloud Adoption Framework for Azure provides guidance for this security modernization journey by providing clarity on processes, best practices, models, and experiences. This guidance is based on Zero Trust principles and the lessons learned and real-world experiences of Microsoft security work. It's also based on work with organizations like the National Institute of Standards and Technology, the Open Group, and the Center for Internet Security.   
 abstract: |
-  In this module, you'll: 
-    - Understand cloud security methodology.
-    - Understand the importance of integrating security into every phase of cloud adoption.
-    - Understand the various security roles and their functions.
-    - Assess cultural and role and responsibility changes that typically come with cloud adoption.
-    - Learn how to simplify compliance and security implementation in the cloud.
+  In this module, you'll learn: 
+    - About the key aspects of the Secure methodology in the Cloud Adoption Framework.
+    - The importance of integrating security into every phase of cloud adoption.
+    - The various security roles and their functions.
+    - How to use a landing zone to implement security controls.
+    - How to sustain and improve your security posture over time.
 prerequisites: |
-  - Foundational understanding of cloud adoption
-  - Understanding your organization's security plan and the types of workloads you'll need to secure
+  - A foundational understanding of cloud adoption
+  - An understanding of your organization's security plan and the types of workloads that you need to secure
 iconUrl: /training/achievements/cloud-adoption-framework-security.svg
 levels:
 - beginner

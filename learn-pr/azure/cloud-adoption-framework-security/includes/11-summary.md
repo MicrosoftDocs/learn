@@ -1,8 +1,9 @@
-In this module, you learned about the cloud security methodology and common security roles and responsibilities. You gained an understanding of the Secure methodology of the Microsoft Cloud Adoption Framework for Azure, benchmarks, and landing zones. Now you have the tools you need to implement a solid cloud security plan.
+In this module, you learned about the Secure methodology in the Cloud Adoption Framework. You reviewed common security roles and responsibilities. Now you have the tools you need to implement a solid cloud security plan.
 
-In this module, you completed your objectives to:
+In this module, you completed your objectives to learn:
 
-- Understand the cloud security methodology.
-- Identify security roles and responsibilities.
-- Assess cultural and role and responsibility changes that typically come with cloud adoption.
-- Learn how to simplify compliance and security implementation in the cloud.
+- About the key aspects of the Secure methodology in the Cloud Adoption Framework.
+- The importance of integrating security into every phase of cloud adoption.
+- The various security roles and their functions.
+- How to use a landing zone to implement security controls.
+- How to sustain and improve your security posture over time.

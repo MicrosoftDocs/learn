@@ -9,13 +9,13 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 20
 content: |
   [!include[](includes/8-adopt.md)]
 quiz:
  title: Check your knowledge
  questions:
- - content: What is the primary aspect of incident preparedness and response adoption during the Adopt phase?
+ - content: What is the primary goal of incident preparedness and response adoption during the Adopt phase?
    choices:
    - content: To use Azure Deployment Environments
      isCorrect: false

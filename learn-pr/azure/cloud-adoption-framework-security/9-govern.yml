@@ -9,7 +9,7 @@ metadata:
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/9-govern.md)]
 quiz:
