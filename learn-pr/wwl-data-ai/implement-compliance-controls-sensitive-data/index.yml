@@ -5,8 +5,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement compliance controls for sensitive data
   description: Implement compliance controls for sensitive data
-  ms.date: 09/02/2022
-  author: wwlpublish
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: azure

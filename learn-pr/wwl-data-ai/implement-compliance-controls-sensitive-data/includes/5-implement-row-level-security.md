@@ -29,10 +29,10 @@ Because access control is configured and applied at the database level, applicat
 Row-level security is implemented in three main steps:
 
 1. Create the users or groups you want to isolate access.
-1. Create the inline table-valued function that will filter the results based on the predicate defined.
-1. Create a security policy for the table, assigning the function created above.
+1. Create the inline table-valued function that filters the results based on the predicate defined.
+1. Create a security policy for the table, assigning the function created previously.
 
-The T-SQL commands below demonstrate how to use RLS in a scenario where user access is segregated by tenant:
+The following T-SQL commands demonstrate how to use RLS in a scenario where user access is segregated by tenant:
 
 ```sql
 -- Create supporting objects for this example
@@ -82,7 +82,7 @@ GO
 
 ```
 
-Next, we'll create a new schema, an inline table-valued function, and grant user access to the new function. The `WHERE @TenantName = USER_NAME() OR USER_NAME() = 'TenantAdmin'` predicate evaluates if the user name executing the query matches the *TenantName* column values.
+Next, we create a new schema, an inline table-valued function, and grant user access to the new function. The `WHERE @TenantName = USER_NAME() OR USER_NAME() = 'TenantAdmin'` predicate evaluates if the user name executing the query matches the *TenantName* column values.
 
 ```sql
 CREATE SCHEMA sec;  
@@ -142,14 +142,14 @@ SELECT * FROM dbo.Sales;
 REVERT;
 ```
 
-The *TenantAdmin* user should see all the rows. The *Tenant1*, *Tenant2*, *Tenant3* and *Tenant4* users should only see their own rows.
+The *TenantAdmin* user should see all the rows. The *Tenant1*, *Tenant2*, *Tenant3*, and *Tenant4* users should only see their own rows.
 
-If you alter the security policy with `WITH (STATE = OFF);`, you'll notice that users will see all the rows.
+If you alter the security policy with `WITH (STATE = OFF);`, you notice that users see all the rows.
 
 :::image type="content" source="../media/module-33-security-final-28.png" alt-text="Screenshot of T-SQL commands to alter a security policy.":::
 
 >[!NOTE]
-> There is a risk of information leakage if an attacker writes a query with a specially crafted `WHERE` clause and, for example, a divide-by-zero error, to force an exception if the `WHERE` condition is true. This is known as a *side-channel attack*. It is wise to limit the ability of users to run ad hoc queries when using row-level security.
+> There's a risk of information leakage if an attacker writes a query with a specially crafted `WHERE` clause and, for example, a divide-by-zero error, to force an exception if the `WHERE` condition is true. This is known as a *side-channel attack*. It's wise to limit the ability of users to run unplanned queries when using row-level security.
 
 ## Use case
 
@@ -163,6 +163,6 @@ Row-level security is ideal for many scenarios, including:
 
 Here are a few best practices to consider when implementing RLS:
 
-- It's recommended to create a separate schema for predicate functions, and security policies.
-- Whenever possible, avoid type conversions in predicate functions.
-- To maximize performance, avoid using excessive table joins and recursion in predicate functions.
+- Create a separate schema for predicate functions, and security policies.
+- Avoid type conversions in predicate functions.
+- Avoid using excessive table joins and recursion in predicate functions.

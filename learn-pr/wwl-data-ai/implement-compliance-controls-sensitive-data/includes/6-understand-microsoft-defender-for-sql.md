@@ -28,7 +28,7 @@ The following threats are supported by Advanced Threat Protection:
 |**Access from a potentially harmful application** | This alert detects common tools that are used to attack databases. |
 |**Brute force SQL credentials** | This alert is triggered when there a high number of log in failures with different credentials. |
 
-To get maximum benefit out of it you'll want to enable auditing on your databases. Although it isn't required, enabling auditing will allow for deeper investigation into the source of the problem if Advanced Threat Protection detects an anomaly.
+To get maximum benefit out of it, you want to enable auditing on your databases. Although it isn't required, enabling auditing allows for deeper investigation into the source of the problem if Advanced Threat Protection detects an anomaly.
 
 The following audit action groups are recommended:
 

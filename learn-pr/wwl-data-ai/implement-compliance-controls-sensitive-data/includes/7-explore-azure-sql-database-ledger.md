@@ -32,65 +32,17 @@ The Azure SQL Database Ledger feature provides multiple benefits:
 
 **Data integrity –** Querying the data on a blockchain network without sacrificing performance can be a serious challenge. Ledger provides data integrity for off-chain storage of blockchain networks, which helps ensure complete data trust through the entire system.
 
-## Create a SQL database with ledger enabled
+## Enabled ledger on a SQL database
 
-You can easily enable the ledger feature by following the steps below:
+You can enable the ledger capability only during the database creation process. Once the database is created, you cannot modify it.
 
-1. Browse to the **Select SQL Deployment option** page on Azure portal.
+1. During the dababase creation, select **Ledger** under the **Security** tab of the **Create SQL Database** page in Azure portal.
 
-1. Under **SQL databases**, leave **Resource type** set to **Single database**, and select **Create**.
+1. Select the **Configure ledger** link. On the **Configure ledger** page, select the **Enable for all future tables in this database** checkbox. Provide the information to create a new storage for your database digests. Select **Apply**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-33.png" alt-text="Screenshot that shows how to select SQL deployment option.":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-33.png" alt-text="Screenshot showing how to enable the ledger feature for an Azure SQL database.":::
 
-1. On the **Basics** tab of the **Create SQL Database** form, under Project details, select the Azure subscription you want to use.
-
-1. For **Resource group**, select **Create new**, enter *myResourceGroup*, and select **OK**.
-
-1. For **Database name**, enter *demo*.
-
-1. For **Server**, select **Create new**. Fill out the New server form with the following values, and select **OK**:
-
-    - **Server name:** &lt;enter a unique server name&gt;
-    - **Server admin login:** azureuser
-    - **Password:** &lt;enter a strong password&gt;
-    - **Location:** Select the same region where your resource group was created
-    - **Allow Azure services to access this server:** Select this option to enable access to digest storage.
-
-1. Leave **Want to use SQL elastic pool** set to **No**.
-
-1. Under **Compute + storage**, select **Configure database**.
-
-1. Select **Serverless**, and then select **Apply**.
-
-    :::image type="content" source="../media/dp-3300-module-33-lab-34.png" alt-text="Screenshot that shows configuring a serverless database.":::
-
-1. On the **Networking** tab, for **Connectivity method**, select **Public endpoint**.
-
-1. For **Firewall rules**, set **Add current client IP address** to **Yes**. Leave **Allow Azure services and resources to access this server** set to **No**.
-
-1. Select **Next: Security** at the bottom of the page.
-
-    :::image type="content" source="../media/dp-3300-module-33-lab-35.png" alt-text=" Screenshot that shows the Networking tab of the Create SQL Database screen in the Azure portal.":::
-
-1. On the **Security** tab, in the Ledger section, select the **Configure ledger** link.
-
-    :::image type="content" source="../media/dp-3300-module-33-lab-36.png" alt-text=" Screenshot that shows configuring a ledger on the Security tab of the Azure portal.":::
-
-1. On the Configure ledger pane, in the **Ledger** section, select the **Enable for all future tables in this database** checkbox. 
-    
-    >[!NOTE]
-    >This setting ensures that all future tables in the database will be ledger tables. For this reason, all data in the database will show any evidence of tampering. By default, new tables will be created as updatable ledger tables, even if you don't specify `LEDGER = ON` in the `CREATE TABLE` statement. 
-    >
-    >You can also leave this option unselected. You're then required to enable ledger functionality on a per-table basis when you create new tables by using Transact-SQL.
-
-1. In the **Digest Storage** section, **Enable automatic digest storage** is automatically selected. Then, a new Azure Storage account and container where your digests are stored is created.
-
-1. Select **Apply**.
-
-    :::image type="content" source="../media/dp-3300-module-33-lab-37.png" alt-text="Screenshot that shows the Configure ledger (preview) pane in the Azure portal.":::
-
-1. Select **Review + create** at the bottom of the page.
-
-    :::image type="content" source="../media/dp-3300-module-33-lab-38.png" alt-text=" Screenshot that shows reviewing and creating a ledger database on the Security tab of the Azure portal.":::
-
-1. On the **Review + create** page, after your review, select **Create**.
+>[!NOTE]
+>This setting ensures that all future tables in the database will be ledger tables. For this reason, all data in the database will show any evidence of tampering. By default, new tables will be created as updatable ledger tables, even if you don't specify `LEDGER = ON` in the `CREATE TABLE` statement. 
+>
+>You can also leave this option unselected. You're then required to enable ledger functionality on a per-table basis when you create new tables by using Transact-SQL.

@@ -5,9 +5,9 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Implement Row Level security
-  description: "Implement Row Level security"
-  ms.date: 09/02/2022
-  author: wwlpublish
+  description: "Implement Row Level Security (RLS)"
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
