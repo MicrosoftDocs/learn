@@ -291,23 +291,11 @@ EOF
 
 Now, configure your App Service instance to invoke the startup script:
 
-# [Linux/Mac OS X](#tab/linux)
-
 ```azurecli
 az webapp config set --startup-file '/home/site/scripts/startup.sh' \
 -n ${WEBAPP_NAME} \
 -g ${RESOURCEGROUP_NAME}
 ```
-
-# [Git-bash for Windows](#tab/windows)
-
-```azurecli
-export MSYS_NO_PATHCONV=1
-az webapp config set --startup-file '/home/site/scripts/startup.sh' \
--n ${WEBAPP_NAME} \
--g ${RESOURCEGROUP_NAME}
-```
----
 
 After the script runs, it'll be invoked every time the application server is restarted.
 
@@ -340,6 +328,9 @@ az webapp connection create mysql-flexible -g ${RESOURCEGROUP_NAME} \
 --client-type java \
 --system-identity mysql-identity-id=$MANAGEDID
 ```
+
+> [!NOTE]
+> if you get an error message like `Resource '********-****-****-****-************' does not exist or one of its queried reference-property objects are not present.`, please re-run the command after a few seconds.
 
 After executing the above commands, please check the list of users registered in MySQL again. You should see that a user named `aad_jbossapp` has been added, which uses the `aad_auth` plugin. From JBoss EAP deployed on Azure, you will be able to connect to the MySQL flexible server using this `aad_jbossapp` username without a password.
 
