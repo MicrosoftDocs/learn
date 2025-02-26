@@ -7,8 +7,7 @@ metadata:
   ms.date: 04/12/2021
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 4
 content: |
@@ -29,15 +28,15 @@ quiz:
       explanation: "Incorrect. On-premises data gateway is used to connect to SAP HANA running on Azure VMs."
   - content: "Which is the Power Platform user authentication provider?"
     choices:
-    - content: "Azure Active Directory (AAD)"
+    - content: "Microsoft Entra ID"
       isCorrect: true
-      explanation: "That is correct. Power Platform Authentication is AAD."
+      explanation: "That is correct. Power Platform Authentication is Microsoft Entra ID."
     - content: "Windows Active Directory for Power Platform"
       isCorrect: false
-      explanation: "Incorrect. Power Platform Authentication is AAD."
+      explanation: "Incorrect. Power Platform Authentication is Microsoft Entra ID."
     - content: "single sign-on"
       isCorrect: false
-      explanation: "Incorrect. Power Platform Authentication is AAD."
+      explanation: "Incorrect. Power Platform Authentication is Microsoft Entra ID."
   - content: "Which best describes the connection mode support by the Power BI Connector for SAP HANA?"
     choices:
     - content: "Raw Text Data connection mode"

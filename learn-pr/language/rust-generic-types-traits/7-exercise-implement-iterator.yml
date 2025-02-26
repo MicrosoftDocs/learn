@@ -3,11 +3,10 @@ uid: learn.language.rust-generic-types-traits.7-exercise-implement-iterator
 metadata:
   title: Exercise - Implement an iterator
   description: Implement an iterator.
-  ms.date: 05/16/2021
+  ms.date: 12/06/2022
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Exercise - Implement an iterator
 durationInMinutes: 4

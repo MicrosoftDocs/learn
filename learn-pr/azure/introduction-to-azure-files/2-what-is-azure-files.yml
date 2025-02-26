@@ -2,13 +2,15 @@
 uid: learn.introduction-to-azure-files.what-is-azure-files
 title: What is Azure Files?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure Files?
   description: In this unit, you'll learn about Azure Files.
-  ms.date: 08/30/2022
-  author: kendownie
+  ms.date: 01/08/2025
+  author: khdownie
   ms.author: kendownie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 2
+  ms.topic: unit
+durationInMinutes: 8
 content: |
   [!include[](includes/2-what-is-azure-files.md)]
+

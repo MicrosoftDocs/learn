@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.define-microsoft-ai-strategy-healthcare
+metadata:
+  title: Define a Microsoft AI strategy to create business value in healthcare
+  description: "Discover AI use cases and scenarios for healthcare. Get familiar with Microsoft AI tools and services for healthcare. Learn from real success stories."
+  ms.date: 08/14/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: microsoft-cloud-healthcare
+  ai-usage: human-only
+title: Define a Microsoft AI strategy to create business value in healthcare
+summary: This module is designed to help healthcare professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+abstract: |
+  -   Describe goals and challenges in life sciences, pharmacology, and healthcare
+
+  -   Identify opportunities for AI in life sciences, pharmacology, and healthcare
+
+  -   Describe common use cases in life sciences, pharmacology, and healthcare
+
+  -   Explore how Microsoft AI technologies can help health providers
+prerequisites: |
+  -   Basic understanding of AI concepts.
+
+  -   Basic understanding of healthcare concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+products:
+- azure-openai
+- industry-solutions
+- mscloud-healthcare
+subjects:
+- data-management
+units:
+- learn.wwl.define-microsoft-ai-strategy-healthcare.introduction
+- learn.wwl.define-microsoft-ai-strategy-healthcare.1b-ai-life-sciences-pharmacology-healthcare
+- learn.wwl.define-microsoft-ai-strategy-healthcare.goals-challenges-life-sciences-pharmacology-healthcare
+- learn.wwl.define-microsoft-ai-strategy-healthcare.opportunities-ai-life-sciences-pharmacology-healthcare
+- learn.wwl.define-microsoft-ai-strategy-healthcare.microsoft-ai-health-providers
+- learn.wwl.define-microsoft-ai-strategy-healthcare.discover-potential-zimmer-biomet-success-story
+- learn.wwl.define-microsoft-ai-strategy-healthcare.knowledge-check
+- learn.wwl.define-microsoft-ai-strategy-healthcare.summary
+badge:
+  uid: learn.wwl.define-microsoft-ai-strategy-healthcare.badge

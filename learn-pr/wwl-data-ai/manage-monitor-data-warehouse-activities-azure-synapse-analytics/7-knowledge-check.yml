@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/21/2023
+  ms.date: 06/12/2023
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -36,7 +37,7 @@ quiz:
     - content: "Workload isolation."
       isCorrect: false
       explanation: "Incorrect. Workload isolation reserves resources for a workload group."
-  - content: "Which Dynamic Management View enables the view the active connections to against a dedicated SQL pool?"
+  - content: "Which Dynamic Management View enables the view of the active connections against a dedicated SQL pool?"
     choices:
     - content: "sys.dm_pdw_exec_requests."
       isCorrect: true

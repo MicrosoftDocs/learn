@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.define-indexes-azure-cosmos-db-sql-api
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Define indexes in Azure Cosmos DB for NoSQL
   description: "Discover indexes and indexing policies in Azure Cosmos DB for NoSQL."
   ms.date: 11/03/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-cosmos-db
 title: Define indexes in Azure Cosmos DB for NoSQL
 summary: Discover indexes and indexing policies in Azure Cosmos DB for NoSQL.
 abstract: |

@@ -4,10 +4,9 @@ metadata:
   title: Introduction to Git
   description: Use Git to track changes and collaborate with other developers.
   ms.date: 03/05/2021
-  author: softchris
-  ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-git
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: module-intro-to-product
   ms.custom: team=nextgen
 title: Introduction to Git
 summary: Find out what source control is, and get an introduction to Git—the world's most popular version control system.

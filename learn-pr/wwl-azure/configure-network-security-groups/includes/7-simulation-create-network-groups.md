@@ -12,7 +12,7 @@ Your organization wants to ensure that access to virtual machines is restricted.
 
 ## Objectives
 
-+ **Task 1**: Create a virtual machine to test network security.
++ **Task 1**: To test network security, create a virtual machine.
     + Create a Windows Server virtual machine. 
     + Don't configure any inbound port rules or NIC network security groups.
     + Verify the virtual machine is created.
@@ -35,3 +35,4 @@ Your organization wants to ensure that access to virtual machines is restricted.
 > Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
 
 [![Screenshot of the simulation page.](../media/simulation-create-networks.png)](https://mslearn.cloudguides.com/en-us/guides/AZ-900%20Exam%20Guide%20-%20Azure%20Fundamentals%20Exercise%2013?azure-portal=true)
+

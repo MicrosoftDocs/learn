@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-significant-government-strategy-actions.describe-supplemental-guidance-department-of-defenses-acquisition-secu
 title: Describe supplemental guidance for the Department of Defense's acquisition and secure use of commercial cloud services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe supplemental guidance for the Department of Defense's acquisition and secure use of commercial cloud services
   description: "Describe supplemental guidance for the Department of Defense's acquisition and secure use of commercial cloud services"
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-text-with-translation-service.translation-concepts
+title: Understand translation concepts
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand translation concepts
+  description: "Understand translation concepts"
+  ms.date: 09/13/2024
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/1a-translation.md)]

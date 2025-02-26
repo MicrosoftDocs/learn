@@ -1,4 +1,4 @@
-It's important to consider the value of teams versus sole founders. Startups are often started by a sole founder. But before long, most sole founders realize that having a team is critical to the success of their company. Hiring a team can not just help manage the volume of work, but also tap into a broad range of skills and perspectives. Being part of a team also provides moral support.
+It's important to consider the value of teams versus sole founders. Startups are often started by a sole founder. But before long, most sole founders realize that having a team is critical to the success of their company. Hiring a team doesn't just help manage the volume of work, but also helps tap into a broad range of skills and perspectives. Being part of a team also provides moral support.
 
 In this unit, we're going to talk about startup teams. We'll first look at the personal attributes that are highly correlated with success in startup teams. We'll then consider functional roles and how to ensure that they're filled at the right time.
 
@@ -76,7 +76,7 @@ Founders who have this attribute:
 
 - Are able to think rationally and dispassionately.
 - Are willing to listen to and act on feedback, even if it contradicts their existing views.
-- Have a high level of commitment to the problem but a low level of commitment to their current idea to solve it.
+- Have a high-level of commitment to the problem, but a low-level of commitment to their current idea to solve it.
 - Can manage their ego and separate their own identity from that of the startup or the idea they're working on.
 
 ### High emotional intelligence
@@ -164,4 +164,4 @@ Here are some pros and cons of bringing in a cofounder versus hiring employees o
 
 Briefly map out the resourcing requirements for your startup over the coming 12 months. Consider the functional roles that might need to be filled, and whether they're best filled by a contractor, an employee, or a cofounder.
 
-Consider any candidates that you already know, and assess their fit based on whether you believe they have some of the attributes that we discussed earlier.
+Consider any candidates that you already know and assess their fit based on whether you believe they have some of the attributes that we discussed earlier.

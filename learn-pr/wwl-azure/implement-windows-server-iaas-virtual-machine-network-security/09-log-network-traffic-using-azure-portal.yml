@@ -4,11 +4,10 @@ title: Log network traffic to and from a VM using the Azure portal
 metadata:
   title: Log network traffic to and from a VM using the Azure portal
   description: "Log network traffic to and from a VM using the Azure portal"
-  ms.date: 09/25/2020
+  ms.date: 12/24/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 7
 content: |
@@ -20,10 +19,10 @@ quiz:
     choices:
     - content: "Network traffic is logged as it flows through the virtual NIC in the VM."
       isCorrect: false
-      explanation: "That's incorrect. The traffic is logged as it flows through the NSG associated with the VM."
+      explanation: "Incorrect. The traffic is logged as it flows through the NSG associated with the VM."
     - content: "Network traffic is logged as it flows through the NSG that the VM is associated with."
       isCorrect: true
-      explanation: "That's correct."
+      explanation: "Correct."
     - content: "Network traffic is logged as it flows through the VNet to which the VM is attached."
       isCorrect: false
-      explanation: "That's incorrect. The traffic is logged as it flows through the NSG associated with the VM."
+      explanation: "Incorrect. The traffic is logged as it flows through the NSG associated with the VM."

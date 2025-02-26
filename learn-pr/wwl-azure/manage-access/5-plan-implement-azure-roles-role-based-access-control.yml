@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-access.plan-implement-azure-roles-rbac-for-window-virtual-desktop
+title: Plan and implement Azure roles and role-based access control (RBAC) for Azure Virtual Desktop
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Plan and implement Azure roles and role-based access control (RBAC) for Azure Virtual Desktop
+  description: "Plan and implement Azure roles and role-based access control (RBAC) for Azure Virtual Desktop"
+  ms.date: 08/20/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-plan-implement-azure-roles-role-based-access-control.md)]

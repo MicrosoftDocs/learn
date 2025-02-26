@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.philanthropies.ai-fluency
+trophy: 
+  uid: learn.philanthropies.ai-fluency.trophy
+metadata:
+  title: AI Fluency - Explore AI in your language.
+  description: This learning path is designed to provide a comprehensive understanding of AI fluency. It includes modules that cover various aspects of AI, starting with foundational concepts and progressing to more advanced topics. Each module is tailored to help individuals and organizations use AI technologies to enhance their philanthropic efforts.
+  ms.date: 12/25/2024
+  author: yoosunee
+  ms.author: andreapark
+  ms.topic: learning-path
+  ms.collection: philanthropies-ai-copilot
+title: AI Fluency
+summary: This learning path is designed to provide a comprehensive understanding of AI. It includes modules that cover various aspects of AI, starting with foundational concepts and progressing to more advanced topics. Each module is tailored to help individuals and organizations apply AI technologies to enhance their philanthropic efforts.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - beginner
+modules:
+  - learn.philanthropies.explore-ai-basics
+  - learn.philanthropies.explore-generative-ai
+  - learn.philanthropies.explore-internet-search-beyond
+  - learn.philanthropies.explore-responsible-ai
+  - learn.philanthropies.get-started-with-copilot
+  - learn.philanthropies.boost-your-productivity-with-microsoft-copilot
+  - learn.philanthropies.explore-ai-for-all
+products:
+  - ms-copilot
+roles:
+  - developer
+  - student
+  - ai-engineer
+  - technology-manager
+  - solution-architect
+  - business-user

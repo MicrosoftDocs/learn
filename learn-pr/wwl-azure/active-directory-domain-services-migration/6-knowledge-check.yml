@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/04/2022
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -17,18 +16,18 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the minimum domain functional level required if you want to add member servers running Windows Server 2022?"
+  - content: "What is the minimum domain functional level required if you want to add member servers running Windows Server 2025?"
     choices:
-    - content: "Windows Server 2008"
+    - content: "Windows Server 2016"
+      isCorrect: false
+      explanation: "Incorrect. You can add member servers running the Windows Server 2025 operating system to a Windows Server 2012 R2 functional level domain, but you can't promote those member servers to domain controller unless the domain functional level is Windows Server 2016 or higher."
+    - content: "Windows Server 2012 R2"
       isCorrect: true
-      explanation: "Correct. Windows Server 2008 domain functional level is the minimum required to support Windows Server 2022 member servers"
-    - content: "Windows Server 2012"
+      explanation: "Correct. You can add member servers running the Windows Server 2025 operating system to a Windows Server 2012 R2 functional level domain, but you can't promote those member servers to domain controller unless the domain functional level is Windows Server 2016 or higher."
+    - content: "Windows Server 2008"
       isCorrect: false
-      explanation: "Incorrect. Windows Server 2008 domain functional level is the minimum required to support Windows Server 2022 member servers."
-    - content: "Windows Server 2003"
-      isCorrect: false
-      explanation: "Incorrect. Windows Server 2008 domain functional level is the minimum required to support Windows Server 2022 member servers."
-  - content: "Which of the following PowerShell cmdlets would you use to move a FSMO role to a new Windows Server 2022 domain controller?"
+      explanation: "Incorrect. You can add member servers running the Windows Server 2025 operating system to a Windows Server 2012 R2 functional level domain, but you can't promote those member servers to domain controller unless the domain functional level is Windows Server 2016 or higher."
+  - content: "Which of the following PowerShell cmdlets would you use to move a FSMO role to a new Windows Server 2025 domain controller?"
     choices:
     - content: "**Move-ADDirectoryServer**"
       isCorrect: false

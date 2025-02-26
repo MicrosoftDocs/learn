@@ -2,13 +2,14 @@
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.debug-mapping-data-flow
 title: Debug mapping data flow
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Debug mapping data flow
   description: "Debug mapping data flow"
   ms.date: 11/18/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

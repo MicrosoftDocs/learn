@@ -1,4 +1,4 @@
-Your website's development team has asked you to update the website to run on the Linux operating system. In this exercise, you'll add a validation workflow that automatically runs when a pull request is opened or updated. Then, you'll create a pull request for your website's operating system change.
+Your website's development team asked you to update the website to run on the Linux operating system. In this exercise, you'll add a validation workflow that automatically runs when a pull request is opened or updated. Then, you'll create a pull request for your website's operating system change.
 
 During the process, you'll:
 
@@ -23,7 +23,7 @@ During the process, you'll:
    This code ensures that the workflow is executed whenever a pull request is created or updated.
 
    > [!NOTE]
-   > You're working directly against your repository's _main_ branch. You wouldn't ordinarily do this, but in this exercise you'll work against _main_ to simplify the steps. In your own projects, it's important to set up branch protection rules to protect your main branch.
+   > You're working directly against your repository's _main_ branch. You wouldn't ordinarily do this, but in this exercise you'll work against _main_ to simplify the steps. In your own projects, it's important to set up branch-protection rules to protect your main branch.
 
 ## Add a lint job to your workflow
 
@@ -96,7 +96,7 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
 
    **Compare & pull request** is displayed for a short time when you push changes to branch that doesn't already have an open pull request. It's a shortcut to the **Open a pull request** page.
 
-1. Next to the **feature/linux-app** branch, select **New pull request**.
+1. Next to the **feature/linux-app** branch, select **New pull request**. You might need to select the **More** icon (**...**) to display the **New pull request** option.
 
    :::image type="content" source="../media/4-create-pull-request.png" alt-text="Screenshot of GitHub that shows the link to create a pull request for the feature slash linux app branch.":::
 
@@ -108,16 +108,16 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
 
 1. View the **Checks** section of the pull request details.
 
-   After a moment, notice that an automatic check has been triggered. The check runs your pull request validation workflow.
+   After a moment, notice that an automatic check is triggered. The check runs your pull request validation workflow.
 
    It might take some time for the workflow to start running. Refresh your browser window until you see the status checks.
 
-   When the check finishes, you can see that it has failed.
+   When the check finishes, you can see that it failed.
 
    :::image type="content" source="../media/4-checks-failed.png" alt-text="Screenshot of GitHub that shows the failed status check on the pull request details page.":::
 
    > [!NOTE]
-   > GitHub allows you to merge the pull request even though the status checks have failed. In a real solution, you should configure a branch protection rule to prevent a pull request from being merged until its status checks have succeeded.
+   > GitHub allows you to merge the pull request even though the status checks have failed. In a real solution, you should configure a branch-protection rule to prevent a pull request from being merged until its status checks have succeeded.
 
 ## Fix the pull request validation errors
 
@@ -153,7 +153,7 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
 
    The pull request validation runs again. If the status check isn't running, refresh your page.
 
-   Wait for the check to finish. This time, it has succeeded. There are no syntax or linter errors in the Bicep file, so you're ready to merge the pull request.
+   Wait for the check to finish. This time, it succeeds. There are no syntax or linter errors in the Bicep file, so you're ready to merge the pull request.
 
 1. Select **Merge pull request** to close the pull request and merge the changes in your main branch.
 

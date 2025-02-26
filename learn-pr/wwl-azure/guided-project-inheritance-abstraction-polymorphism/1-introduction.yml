@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-inheritance-abstraction-polymorphism.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "The purpose of this lesson is to learn about how to optimize your code using inheritance and code reuse."
+  ms.date: 09/25/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

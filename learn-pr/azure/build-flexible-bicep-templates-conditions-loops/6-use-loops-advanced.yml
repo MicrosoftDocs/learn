@@ -2,14 +2,18 @@
 uid: learn.azure.bicep-conditions-loops.use-loops-advanced
 title: Control loop execution and nest loops
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Control loop execution and nest loops
   description: Learn how to control the execution of copy loops, and how to use resource property loops and nested loops in Bicep.
-  ms.date: 07/25/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  ms.date: 01/30/2025
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 4
 content: |
   [!include[](includes/6-use-loops-advanced.md)]
+

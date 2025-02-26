@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/24/2023
+  ms.date: 07/16/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -20,7 +21,7 @@ quiz:
       explanation: "Correct. Delegated permissions are used by apps that have a signed-in user present. The app is delegated with the permission to act as a signed-in user when it makes calls to the target resource."
     - content: "App-only access permissions"
       isCorrect: false
-      explanation: "Incorrect. App-only access permissions are used by apps that run without a signed-in user present, for example, apps that run as background services or daemons."
+      explanation: "Incorrect. App-only access permissions are used by apps that run without a signed-in user present. For example, apps that run as background services or daemons."
     - content: "Both delegated and app-only access permissions"
       isCorrect: false
       explanation: "Incorrect. Only delegated permissions are used by apps that have a signed-in user present."
@@ -34,4 +35,4 @@ quiz:
       explanation: "Correct. Apps performing the on-behalf-of flow require code to handle Conditional Access challenges."
     - content: "Apps performing the Integrated Windows authentication flow"
       isCorrect: false
-      explanation: "Incorrect. The Integrated Windows authentication flow allows applications on domain or Azure Active Directory (Azure AD) joined computers to acquire a token silently."
+      explanation: "Incorrect. The Integrated Windows authentication flow allows applications on domain or Microsoft Entra joined computers to acquire a token silently."

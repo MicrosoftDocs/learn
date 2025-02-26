@@ -1,6 +1,6 @@
 You've created your storage account in Azure and configured the replication settings to enable RA-GRS. You're now ready to start designing the healthcare application to make use of the RA-GRS storage account. This approach helps to ensure that the application is highly available for doctors and consultants in the field, even if there's an outage in their primary region.
 
-In this unit, you'll look at how to design and configure an application that can handle disaster recovery and failover. You'll also explore the considerations that apply when you design applications for high availability.
+In this unit, you look at how to design and configure an application that can handle disaster recovery and failover. You also explore the considerations that apply when you design applications for high availability.
 
 ## How an account failover works
 
@@ -33,11 +33,11 @@ When you design your application, consider the following factors:
 
 - **Resiliency**: The ability to recover from a failure and continue to function, to avoid downtime and data loss.
 
-- **High availability**: The ability to continue to function in a healthy state in the event of a hardware fault, a server fault, or network issues that affect one or more components of the application.
+- **High availability**: The ability to continue to function in a healthy state if there's a hardware fault, a server fault, or network issues that affect one or more components of the application.
 
 - **Disaster recovery**: The ability to recover if a major incident affects the services that host the application, such as a datacenter outage or complete regional outage. Disaster recovery includes manually failing over an application by using Azure Site Recovery. With Azure Site Recovery, you can fail over servers between Azure regions or Azure backups. You can then restore a database or application from a backup.
 
-- **Eventual consistency**: RA-GRS works by replicating data from the primary endpoint to the secondary endpoint. The data, which is replicated between the regions, isn't immediately available at the secondary location. Eventual consistency means that all the transactions on the primary region will eventually appear in the secondary region. The data isn't lost, but there might be some lag.
+- **Eventual consistency**: RA-GRS works by replicating data from the primary endpoint to the secondary endpoint. The data, which is replicated between the regions, isn't immediately available at the secondary location. Eventual consistency means that all of the transactions on the primary region eventually appear in the secondary region. The data isn't lost, but there might be some lag.
 
     The following table shows the effects of eventual consistency on the healthcare system. When new or updated records are written to the primary region, the latest records are immediately available in the primary storage location. These updates are eventually propagated to the secondary regions, but there might be a delay before propagation occurs. An application that reads data from a secondary location might see out-of-date data for a short while.
 
@@ -55,7 +55,7 @@ When you develop applications for the cloud, consider the guidelines in the next
 
 ### Retry transient failures
 
-A number of conditions can cause transient failures, from a disconnected database, temporary loss of network, or latency issues that cause slow response times from services. Applications must detect the faults and determine whether it's merely a blip in the service or a more severe outage. The application must have the capability to retry a service if it believes the fault is likely to be transient, before listing it as failed.
+Many conditions can cause transient failures, from a disconnected database, temporary loss of network, or latency issues that cause slow response times from services. Applications must detect the faults and determine whether it's merely a blip in the service or a more severe outage. The application must have the capability to retry a service if it believes the fault is likely to be transient, before listing it as failed.
 
 ### Handle failed writes
 
@@ -75,7 +75,7 @@ An application that uses the Azure Storage client library can set the *LocationM
 
 ### Handle eventual consistency
 
-Be prepared to handle stale data if it's read from a secondary region. As previously described, it takes time to replicate data between regions, and an outage can occur between the time when data is written to the primary location and it's replicated to each secondary location.
+Be prepared to handle stale data if it's read from a secondary region. It takes time to replicate data between regions, and an outage can occur between the time when data is written to the primary location and it's replicated to each secondary location.
 
 ### Use the Circuit Breaker pattern
 
@@ -85,7 +85,7 @@ In some situations, when an outage is severe, it makes sense for the application
 
 To prevent an application from retrying operations that have failed, you can implement the Circuit Breaker pattern.
 
-The Circuit Breaker pattern forces the application to fail over to the secondary site, which allows the application to resume its normal service. At the same time, the circuit breaker continues to check whether the resources on the primary site are back online. When they do come online, it allows the application to reconnect to the primary site. The circuit breaker acts as a proxy. It monitors the service, and if there's a failure in the service, it prevents the application from retrying that endpoint and forces it to go to an alternative endpoint.
+The Circuit Breaker pattern forces the application to fail over to the secondary site, which allows the application to resume its normal service. At the same time, the circuit breaker continues to check whether the resources on the primary site are back online. When they do come online, it allows the application to reconnect to the primary site. The circuit breaker acts as a proxy. It monitors the service. If there's a failure in the service, the circuit breaker prevents the application from retrying that endpoint and forces it to go to an alternative endpoint.
 
 The difference between the Circuit Breaker pattern and the Retry pattern is that the Retry pattern allows an application to keep retrying a connection to a resource that might be offline. The Circuit Breaker pattern prevents this behavior and fails over the application to the secondary connection.
 

@@ -33,7 +33,7 @@ Using Azure SQL Managed Instance brings about the following benefits:
 - Automatic database tuning and maintenance for predictable performance
 - Monitor, troubleshoot, and manage at scale
 - Azure portal functionality for manual service provisioning and scaling
-- Azure AD authentication, single sign-on support
+- Microsoft Entra authentication, single sign-on support
 - Adheres to same compliance standards as Azure SQL Database
 - Encryption of the data in transit and rest with customer provided encryption keys
 - No patching and version upgrade overhead

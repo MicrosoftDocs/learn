@@ -1,6 +1,6 @@
-Relational data is a type of structured data that has a shared schema. It's often stored in database tables with rows, columns, and keys, and used for application storage like e-commerce websites. As the CTO for Tailwind Traders, you're responsible for designing databases for Azure to support existing structured data on-premises. You're looking for a storage solution to support existing data and future relational data workloads initiated by the company.
+Relational data is a type of structured data that has a shared schema. The data is stored in database tables with rows, columns, and keys, and used for application storage like e-commerce websites. As the CTO for Tailwind Traders, you're responsible for designing databases for Azure to support existing structured data on-premises. You're looking for a storage solution to support existing data and future relational data workloads initiated by the company.
 
-Within the umbrella of the Azure SQL platform, there are many deployment options and choices to consider. We'll review five options that give you the flexibility to get and pay for exactly what you need in your storage solution. In this unit, we look at Azure SQL Database and SQL Database elastic pools. In the following units, we examine SQL Server on Azure Virtual Machines, along with Azure SQL Managed Instance and instance pools.
+Within the umbrella of the Azure SQL platform, there are many deployment options and choices to consider. We review five options that give you the flexibility to get and pay for exactly what you need in your storage solution. In this unit, we look at Azure SQL Database and SQL Database elastic pools. In the following units, we examine SQL Server on Azure Virtual Machines, along with Azure SQL Managed Instance and instance pools.
 
 ## Azure SQL Database
 
@@ -10,9 +10,9 @@ Azure SQL Database is a PaaS deployment option of Azure SQL that abstracts both 
 
 Review the following characteristics of the SQL Database deployment option:
 
-- It's a highly scalable, intelligent, relational database service built for the cloud with the industry's highest availability SLA.
+- It's a highly scalable, intelligent, relational database service built for the cloud with the industry's highest availability.
 
-- SQL Database is the only deployment option that supports scenarios that require very large databases (currently up to 100 TB) or autoscaling for unpredictable workloads (serverless).
+- SQL Database is the only deployment option that supports scenarios that require large databases (currently up to 100 TB) or autoscaling for unpredictable workloads (serverless).
 
 - You can create a **SQL Database elastic database pool**, where all databases in the pool share the same set of compute and storage resources. Each database can use the resources it needs, within the limits you set, depending on current load.
 
@@ -22,7 +22,7 @@ Review the following characteristics of the SQL Database deployment option:
 
    - **vCore**: A vCore is a virtual core. You choose the number of virtual cores and have greater control over your compute costs. This option supports the Azure Hybrid Benefit for SQL Server and reserved capacity (pay in advance).
 
-   - **DTU**: A DTU (Database Transaction Unit) is a combined measure of compute, storage, and I/O resources. The DTU option is a simple, preconfigured purchase option.
+   - **DTU**: A DTU (Database Transaction Unit) is a combined measure of compute, storage, and I/O resources. The DTU option is an easy, preconfigured purchase option.
 
    - **Serverless**: A compute tier for single databases in SQL Database. The serverless model automatically scales compute, based on workload demand, and bills only for the amount of compute used. 
 
@@ -38,7 +38,7 @@ Consider how Azure SQL Database can be included in your relational data storage 
 
 - **Consider vCore pricing**. (Microsoft recommended) Select compute and storage resources independently for multiple SQL databases or an elastic database pool. Use Azure Hybrid Benefit for SQL Server or reserved capacity (pay in advance) to save money. You control the compute and storage resources that you create and pay for. 
 
-- **Consider DTU pricing**. Choose this simple, preconfigured purchase plan for a bundled measure of compute, storage, and I/O resources to support multiple SQL databases. This option isn't available for Azure SQL Managed Instance.
+- **Consider DTU pricing**. Choose this easy, preconfigured purchase plan for a bundled measure of compute, storage, and I/O resources to support multiple SQL databases. This option isn't available for Azure SQL Managed Instance.
 
 - **Consider serverless option**. Use the serverless compute tier for a single SQL database. You're billed only for the amount of compute used. 
 

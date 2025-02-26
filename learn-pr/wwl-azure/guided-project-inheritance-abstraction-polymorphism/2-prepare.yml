@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-inheritance-abstraction-polymorphism.prepare
+title: Prepare for guided project
+metadata:
+  title: Prepare for guided project
+  description: "Prepare for guided project"
+  ms.date: 09/25/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-prepare.md)]

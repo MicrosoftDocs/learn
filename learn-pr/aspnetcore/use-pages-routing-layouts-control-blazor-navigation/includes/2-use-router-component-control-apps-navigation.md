@@ -1,11 +1,11 @@
-Blazor's routing system provides flexible options that you can use to ensure that user requests reach a component that can handle them and return information that the user wants. 
+Blazor's routing system provides flexible options for ensuring that user requests reach a component that can handle them and return information the user wants. 
 
-Suppose you're working on the pizza delivery company's website. You want to set up the site so that requests for pizza details and custom-topping details are both handled by the same component. You've completed this phase, but your testing shows that the topping requests are receiving an error message. You need to fix this problem.
+Suppose you're working on the pizza delivery company's website. You want to set up the site so that requests for pizza details and custom-topping details are both handled by the same component. You completed this phase, but your testing shows that the topping requests are receiving an error message. You need to fix this problem.
 
-Here, you'll learn how to configure routes in Blazor by using the `@page` directive. 
+Here, you learn how to configure routes in Blazor by using the `@page` directive.
 
 > [!NOTE]
-> The code blocks in this unit are illustrative examples. You'll write your own code in the next unit.
+> The code blocks in this unit are illustrative examples. You write your own code in the next unit.
 
 ## Using route templates
 
@@ -13,30 +13,30 @@ When the user makes a request for a page from your web app, they can specify wha
 
 `http://www.contoso.com/pizzas/margherita?extratopping=pineapple`
 
-After the protocol and website address, this URI indicates that the user wants to know about margherita pizzas. Also, the query string after the question mark shows that they're interested in an extra topping of pineapple. In Blazor, you use routing to ensure that each request is sent to the best component and that the component has all the information it needs to display what the user wants. In this case, you might want the request to be sent to the **Pizzas** component and for that component to display a margherita pizza with information about adding pineapple to it.
+After the protocol and website address, this URI indicates that the user wants to know about margherita pizzas. Also, the query string after the question mark shows that they're interested in an extra topping of pineapple. In Blazor, you use routing to ensure that each request is sent to the component that can best respond. You also use routing to ensure that the component has all the information it needs to display what the user wants. In this case, you might want to send the request to the **Pizzas** component and for that component to display a margherita pizza with information about adding pineapple to it.
 
-Blazor routes requests with a specialized component called the **Router** component. It's configured in **App.razor** like this:
+Blazor routes requests with a specialized component called the **Router** component. The component is configured in **App.razor** like this:
 
 ```razor
 <Router AppAssembly="@typeof(Program).Assembly">
-	<Found Context="routeData">
-		<RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-	</Found>
-	<NotFound>
-		<p>Sorry, we haven't found any pizzas here.</p>
-	</NotFound>
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+    </Found>
+    <NotFound>
+        <p>Sorry, we haven't found any pizzas here.</p>
+    </NotFound>
 </Router>
 ```
 
-When the app starts, Blazor checks the `AppAssembly` attribute to find out which assembly it should scan. It scans that assembly for components that have the **RouteAttribute** present. Using these values, Blazor compiles a **RouteData** object that specifies how requests are routed to components. When you code the app, you use the `@page` directive in each component to fix the **RouteAttribute**.
+When the app starts, Blazor checks the `AppAssembly` attribute to find out which assembly it should scan. It scans that assembly for components that have the **RouteAttribute** present. Blazor uses these values to compile a **RouteData** object that specifies how requests are routed to components. When you code the app, you use the `@page` directive in each component to fix the **RouteAttribute**.
 
-In the preceding code, the `<Found>` tag specifies the component that handles the routing at runtime: the **RouteView** component. This component receives the **RouteData** object and any parameters from the URI or query string. It then renders the specified component and its layout. You can use the `<Found>` tag to specify a default layout, which will be used when the selected component doesn't specify a layout with the `@layout` directive. You'll learn more about layouts later in this module.
+In the preceding code, the `<Found>` tag specifies the component that handles the routing at runtime: the **RouteView** component. This component receives the **RouteData** object and any parameters from the URI or query string. It then renders the specified component and its layout. You can use the `<Found>` tag to specify a default layout, which is used when the selected component doesn't specify a layout with the `@layout` directive. You learn more about layouts later in this module.
 
 In the `<Router>` component, you can also specify what is returned to the user when there isn't a matching route, by using the `<NotFound>` tag. The preceding example returns a single `<p>` paragraph, but you can render more complex HTML. For example, it might include a link to the home page or a contact page for site administrators.
 
 ## Using the @page directive
 
-In a Blazor component, the `@page` directive specifies that the component should handle requests directly. You can specify a **RouteAttribute** in the `@page` directive by passing it as a string. For example, this attribute to specifies that the page handles requests to the **/Pizzas** route:
+In a Blazor component, the `@page` directive specifies that the component should handle requests directly. You can specify a **RouteAttribute** in the `@page` directive by passing it as a string. For example, this attribute specifies that the page handles requests to the **/Pizzas** route:
 
 ```razor
 @page "/Pizzas"
@@ -51,7 +51,7 @@ If you want to specify more than one route to the component, use two or more `@p
 
 ## Obtaining location information and navigating with NavigationManager
 
-Suppose you write a component to handle URIs that the user requests, such as `http://www.contoso.com/pizzas/margherita/?extratopping=pineapple`.
+Suppose you write a component to handle a URI that the user requests, such as `http://www.contoso.com/pizzas/margherita/?extratopping=pineapple`.
 
 When you write a component, you might need access to navigation information like:
 
@@ -73,19 +73,19 @@ You can use a `NavigationManager` object to obtain all these values. You must in
 <a href=@HomePageURI>Home Page</a>
 
 @code {
-	[Parameter]
-	public string PizzaName { get; set; }
-	
-	public string HomePageURI { get; set; }
-	
-	protected override void OnInitialized()
-	{
-		HomePageURI = NavManager.BaseUri;
-	}
+    [Parameter]
+    public string PizzaName { get; set; }
+    
+    public string HomePageURI { get; set; }
+    
+    protected override void OnInitialized()
+    {
+        HomePageURI = NavManager.BaseUri;
+    }
 }
 ```
 
-To access the query string, you must parse the full URI. Use the `QueryHelpers` class from the `Microsoft.AspNetCore.WebUtilities` assembly to execute this parse:
+To access the query string, you must parse the full URI. To execute this parse, use the `QueryHelpers` class from the `Microsoft.AspNetCore.WebUtilities` assembly:
 
 ```razor
 @page "/pizzas"
@@ -99,19 +99,19 @@ To access the query string, you must parse the full URI. Use the `QueryHelpers` 
 <p>I want to add this topping: @ToppingName</p>
 
 @code {
-	[Parameter]
-	public string PizzaName { get; set; }
-	
-	private string ToppingName { get; set; }
-	
-	protected override void OnInitialized()
-	{
-		var uri = NavManager.ToAbsoluteUri(NavManager.Uri);
-		if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("extratopping", out var extraTopping))
-		{
-			ToppingName = System.Convert.ToString(extraTopping);
-		}
-	}
+    [Parameter]
+    public string PizzaName { get; set; }
+    
+    private string ToppingName { get; set; }
+    
+    protected override void OnInitialized()
+    {
+        var uri = NavManager.ToAbsoluteUri(NavManager.Uri);
+        if (QueryHelpers.ParseQuery(uri.Query).TryGetValue("extratopping", out var extraTopping))
+        {
+            ToppingName = System.Convert.ToString(extraTopping);
+        }
+    }
 }
 ```
 
@@ -128,17 +128,17 @@ You can also use the `NavigationManager` object to send your users to another co
 <p>I want to order a: @PizzaName</p>
 
 <button class="btn" @onclick="NavigateToPaymentPage">
-	Buy this pizza!
+    Buy this pizza!
 </button>
 
 @code {
-	[Parameter]
-	public string PizzaName { get; set; }
-	
-	private void NavigateToPaymentPage()
-	{
-		NavManager.NavigateTo("buypizza");
-	}
+    [Parameter]
+    public string PizzaName { get; set; }
+    
+    private void NavigateToPaymentPage()
+    {
+        NavManager.NavigateTo("buypizza");
+    }
 }
 ```
 
@@ -162,15 +162,15 @@ When you use **NavLink**, the home page link example looks like the following co
 <NavLink href=@HomePageURI Match="NavLinkMatch.All">Home Page</NavLink>
 
 @code {
-	[Parameter]
-	public string PizzaName { get; set; }
-	
-	public string HomePageURI { get; set; }
-	
-	protected override void OnInitialized()
-	{
-		HomePageURI = NavManager.BaseUri;
-	}
+    [Parameter]
+    public string PizzaName { get; set; }
+    
+    public string HomePageURI { get; set; }
+    
+    protected override void OnInitialized()
+    {
+        HomePageURI = NavManager.BaseUri;
+    }
 }
 ```
 

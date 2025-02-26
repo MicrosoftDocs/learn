@@ -2,13 +2,17 @@
 uid: learn.wwl.explore-azure-functions.compare-hosting-options
 title: Compare Azure Functions hosting options
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Compare Azure Functions hosting options
   description: "Compare Azure Functions hosting options"
-  ms.date: 02/06/2023
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  - ai-learning-hub
+durationInMinutes: 5
 content: |
   [!include[](includes/3-compare-azure-functions-hosting-options.md)]

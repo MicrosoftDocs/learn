@@ -1,31 +1,29 @@
 Security principals are entities that can request SQL Server resources and to which you can (usually) grant permissions. There are several sets of security principals in SQL Server. Security principals exist at either the server level or the database level and can be either individuals or collections. Some sets have a membership controlled by the SQL Server administrators, and some have a fixed membership.
 
-At the database level, we’ll look at users, database roles, application roles.
-
  > [!NOTE]
- >New logins can be added by administrators on Azure SQL Database, but new server roles cannot be created.
+ >New logins can be added by administrators on Azure SQL Database, but new server roles can't be created.
 
 ## Schemas and securables
 
 Before we look at the details of security principals, we need to understand the concepts of securables and schemas. SQL Server and Azure SQL Database have three scopes for securables. Securables are the resources within the database to which the authorization system manages access. For example, a table is a securable. To simplify access control, SQL Server contains securables in nested hierarchies called scopes. The three securable scopes are the server, the database, and the schema. A schema is a collection of objects within your database, which allows objects to be grouped into separate namespaces.
 
-Every user has a default schema. If a user tries to access an object without specifying a schema name, as in: `SELECT name FROM customers`, it's assumed the object is in the user’s default schema. If there's no such object in the default schema, SQL Server will check to see if the object is in the pre-defined dbo schema. If there's no object of the specified name in either the user’s default schema, or in the dbo schema, the user will receive an error message. It's considered best practice to always specify the schema name when accessing objects, so the previous select would be something like:
+Every user has a default schema. If a user tries to access an object without specifying a schema name, as in: `SELECT name FROM customers`, it's assumed the object is in the user’s default schema. If there's no such object in the default schema, SQL Server checks to see if the object is in the predefined dbo schema. If there's no object of the specified name in either the user’s default schema, or in the dbo schema, the user receives an error message. It's a best practice to specify the schema name when accessing objects, so the previous select would be something like:
 `SELECT name FROM SalesSchema.customers`. If a user hasn't been given a default schema, their default schema is set to dbo.
 
-By default, if no schema is specified when a user creates an object, SQL Server will attempt to create it in the user’s default schema. If the user hasn't been granted permission to create objects in their default schema, the object can't be created.
+By default, if no schema is specified when a user creates an object, SQL Server attempts to create it in the user’s default schema. If the user hasn't been granted permission to create objects in their default schema, the object can't be created.
 
 ## Logins and users
 
-No matter the mode of authentication that is used, a login name used to access your SQL database is set up as a login within the instance. Those logins are set up at the instance level of SQL Server and stored in the master database. However, you can configure contained users, which are added at the database level. These users can be configured as SQL Server Authentication users as well as either Windows Authentication users or Azure Active Directory users (depending on which platform you're using). In order to create these users, the database must be configured for partial containment, which is configured by default in Azure SQL Database, and optionally configurable in SQL Server.
+No matter the mode of authentication that is used, a login name used to access your SQL database is set up as a login within the instance. Those logins are set up at the instance level of SQL Server and stored in the master database. However, you can configure contained users, which are added at the database level. These users can be configured as SQL Server Authentication users and either Windows Authentication users or Microsoft Entra users (depending on which platform you're using). In order to create these users, the database must be configured for partial containment, which is configured by default in Azure SQL Database, and optionally configurable in SQL Server.
 
-These users only have access to the database that the user is set up with. For the purposes of Azure SQL Database, it's considered a best practice to create users at the scope of the user database, and not in the master database as shown below.
+These users only have access to the database that the user is set up with. For the purposes of Azure SQL Database, it's a best practice to create users at the scope of the user database, and not in the master database.
 
 ```sql
 CREATE USER [dba@contoso.com] FROM EXTERNAL PROVIDER;
 GO
 ```
 
-The `CREATE USER` statement is executed in the context of the user database. In the example above, the user is an Azure Active Directory user as indicated with the `FROM EXTERNAL PROVIDER` syntax.
+The `CREATE USER` statement is executed in the context of the user database. In the example, the user is a Microsoft Entra user as indicated with the `FROM EXTERNAL PROVIDER` syntax.
 
 If logins are created at the instance level in SQL Server, a user should then be created within the database, which maps the user to the server-based login as shown in the following example.
 
@@ -53,7 +51,7 @@ As you can imagine, database security can get complicated for applications with 
 
 SQL Server and Azure SQL Database both include built-in roles that are defined by Microsoft, and also provide the option to create custom roles. Custom roles can be created at the server or database level. However, server roles can't be granted access to objects within a database directly. Server roles are only available in SQL Server and Azure SQL Managed Instance, not in Azure SQL Database.
 
-Within a database, permissions can be granted to the users that exist within the database. If multiple users all need the same permissions, you can create a database role within the database and grant the needed permissions to this role. Users can be added as members of the database role. The members of the database role will inherit the permissions of the database role.
+Within a database, permissions can be granted to the users that exist within the database. If multiple users all need the same permissions, you can create a database role within the database and grant the needed permissions to this role. Users can be added as members of the database role. The member of the database role inherits the permissions of the database role.
 
 ```sql
 CREATE USER [DP300User1] WITH PASSWORD = 'Pa55.w.rd'
@@ -79,11 +77,11 @@ In the above example, you can see that two users are created, and then a role ca
 
 ## Application roles
 
-Application roles can also be created within a SQL Server database or Azure SQL Database. Unlike database roles, users aren't made members of an application role. An application role is activated by the user, by supplying the pre-configured password for the application role. Once the role is activated the permissions that are applied to the application role are applied to the user until that role is deactivated.
+Application roles can also be created within a SQL Server database or Azure SQL Database. Unlike database roles, users aren't made members of an application role. An application role is activated by the user, by supplying the preconfigured password for the application role. Once the role is activated the permissions that are applied to the application role are applied to the user until that role is deactivated.
 
 ## Built-in database roles
 
-Microsoft SQL Server contains several fixed database roles within each database for which the permissions are predefined. Users can be added as members of one or more roles. These roles give their members a pre-defined set of permissions. These roles work the same within Azure SQL Database and SQL Server.
+Microsoft SQL Server contains several fixed database roles within each database for which the permissions are predefined. Users can be added as members of one or more roles. These roles give their members a predefined set of permissions. These roles work the same within Azure SQL Database and SQL Server.
 
 | Database role | Definition |
 |------------|-------------|
@@ -104,18 +102,18 @@ The built-in database roles do meet the needs of many applications; however with
  > [!NOTE]
  >By default, users in roles like *db_owner* can always see all of the data in the database. Applications can take advantage of encryption options like **Always Encrypted** to protect sensitive data from privileged users.
 
-Azure SQL Database has two roles that are defined in the master database of Azure SQL server.
+For Azure SQL Database, there are a few nuances. You can have logins that exist in the virtual `master` database, database users, and even contained database users for Microsoft Entra accounts (recommended). Although the server admin for Azure SQL Database essentially has `sysadmin` rights, you can create more limited admins by using server or database level roles. Two database level roles are available for SQL Database that only exist in the virtual `master` database:
 
 | Database Role | Definition |
 |------------|-------------|
-|**dbmanager** | Allows its members to create extra databases within the Azure SQL Database environment. This role is the equivalent of the `dbcreator` fixed server role in an on-premises Microsoft SQL Server. |
-|**loginmanager** | Allows its members to create extra logins at the server level. This role is the equivalent of the `securityadmin` fixed server role in an on-premises Microsoft SQL Server. |
+|**dbmanager** | Allows members to create logins for the database server. This role is the equivalent of the `dbcreator` fixed server role in an on-premises Microsoft SQL Server. |
+|**loginmanager** | Allows members to create and delete databases for the database server. This role is the equivalent of the `securityadmin` fixed server role in an on-premises Microsoft SQL Server. |
 
-## Fixed server roles
+## Fixed server-level roles
 
-In addition to database roles, SQL Server and Azure SQL Managed Instance both provide several fixed server roles. These roles assign permissions at the scope of the entire server. Server level principals, which include SQL Server logins, Windows accounts, and Windows group can be added into fixed server roles. The permissions for fixed server roles are predefined, and no new server roles can be added. The fixed server roles are:
+In addition to database roles, SQL Server and Azure SQL Managed Instance both provide several fixed server-level roles. These roles assign permissions at the scope of the entire server. Server-level principals, which include SQL Server logins, Windows accounts, and Windows group can be added into fixed server-level roles. The permissions for fixed server-level roles are predefined, and no new server roles can be added.
 
-| Fixed server role | Definition |
+| Fixed server-level role | Definition |
 |------------|-------------|
 |**sysadmin** |  Allows its members to perform any activity on the server.
 |**serveradmin** |  Allows its members to change server-wide configuration settings (for example Max Server Memory) and can shut down the server. |
@@ -126,3 +124,13 @@ In addition to database roles, SQL Server and Azure SQL Managed Instance both pr
 |**diskadmin** | Allows its members to have the ability to manage backup devices in SQL Server. |
 |**dbcreator** | Allows its members to create, restore, alter, and drop any database. |
 |**public** | Every SQL Server login belongs to the public user role. Unlike the other fixed server roles, permissions can be granted, denied, or revoked from the public role. |
+
+Here's a list of server-level roles in Azure SQL Database:
+
+- ##MS_DatabaseConnector##
+- ##MS_DatabaseManager##
+- ##MS_DefinitionReader##
+- ##MS_LoginManager##
+- ##MS_SecurityDefinitionReader##
+- ##MS_ServerStateReader##
+- ##MS_ServerStateManager##

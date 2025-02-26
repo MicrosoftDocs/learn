@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.build-ai-powered-workplace-helper-app
+metadata:
+  title: Build an AI-powered workplace helper app
+  description: "In this module, you'll learn how to build an AI-powered workplace helper app using Copilot Studio."
+  ms.date: 12/12/2023
+  author: reneenoble
+  ms.author: reneenoble
+  ms.topic: module-challenge-project 
+title: Build an AI-powered workplace helper app
+summary: |
+  This challenge project will help you demonstrate your ability to integrate Copilot Studio with Generative AI and topic-based answers into a Power App. 
+abstract: |
+  In this module, you'll demonstrate your ability to:
+    - Build a canvas app with Power Apps.
+    - Create, configure, and publish a conversational bot with Copilot Studio.
+    - Combine AI generative answers and topical answers in Copilot Studio.
+    - Integrate Copilot Studio with Power Apps.
+prerequisites: |
+  - Experience setting up a Power Platform environment.
+  - Basic knowledge of Power Apps and how to add components.
+  - Basic knowledge of Copilot Studio topics.
+  - Power Apps Developer account
+  - Activate AI Builder
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+- azure
+units:
+- learn.build-ai-powered-workplace-helper-app.introduction
+- learn.build-ai-powered-workplace-helper-app.prepare
+- learn.build-ai-powered-workplace-helper-app.create-copilot
+- learn.build-ai-powered-workplace-helper-app.create-specified-answers
+- learn.build-ai-powered-workplace-helper-app.add-bot-to-power-app
+- learn.build-ai-powered-workplace-helper-app.knowledge-check
+- learn.build-ai-powered-workplace-helper-app.summary
+badge:
+  uid: learn.build-ai-powered-workplace-helper-app.badge

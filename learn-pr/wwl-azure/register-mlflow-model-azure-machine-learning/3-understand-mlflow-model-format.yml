@@ -2,13 +2,17 @@
 uid: learn.wwl.register-mlflow-model-azure-machine-learning.understand-mlflow-model-format
 title: Understand the MLflow model format
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand the MLflow model format
-  description: "Understand how the MLmodel format works when registering a model with MLflow."
-  ms.date: 02/17/2023
+  description: Understand how the MLmodel format works when registering a model with MLflow.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/06/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/3-understand-mlflow-model-format.md)]
+

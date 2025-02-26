@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-quotas.user-group-quotas
+title: Understand default and individual user and group quotas in Azure NetApp Files
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: learning-module
+  title: Understand default and individual user and group quotas in Azure NetApp Files
+  description: Understand the different types of user and group quotas and combinations in Azure NetApp Files.    
+  ms.date: 11/26/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-user-group-quotas.md)]

@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.ai-security-fundamentals
+metadata:
+  title: AI security fundamentals
+  description: Learn the fundamental concepts of AI security.
+  ms.date: 09/01/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: learning-path
+title: AI security fundamentals
+summary: |
+  Want to learn more about AI security? This learning path helps you understand the basic concepts of AI security, the types of security controls that apply to AI systems, and the security testing procedures that you can implement in AI systems to increase the security posture of AI environments.
+prerequisites: Familiarity basic Artificial Intelligence and security concepts
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+- administrator
+- security-engineer
+products:
+- azure
+modules:
+- learn.fundamentals-of-ai-security
+- learn.ai-security-controls
+- learn.introduction-to-ai-security-testing
+trophy:
+  uid: learn.ai-security-fundamentals.trophy

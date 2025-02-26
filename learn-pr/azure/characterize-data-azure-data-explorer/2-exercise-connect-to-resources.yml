@@ -2,14 +2,15 @@
 uid: learn.azure.characterize-dataset-azure-data-explorer.exercise-connect-to-resources
 title: 'Exercise: Connect to resources'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise
   description: "Exercise: Connect to resources."
-  ms.date: 09/20/2022
-  author: YaelSchuster
-  ms.author: yaschust
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.date: 04/02/2024
+  author: shsagir
+  ms.author: shsagir
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-exercise-connect-to-resources.md)]

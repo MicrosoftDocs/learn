@@ -1,11 +1,10 @@
-
 For organizations such as Contoso, which are considering moving their on-premises resources to Azure, one of the first and most important steps in migration is planning. In a migration project, the majority of work is usually done in the preplanning phases.
 
-These phases involve a very thorough assessment of:
+These phases involve a thorough assessment of:
 
 - The business model.
 - The current processing and systems.
-- How the business process will resemble in Azure when the migration is completed.
+- How the business process functions in Azure when the migration is completed.
 
 The following table identifies various items that you should consider, and corresponding strategies you should take when defining and determining an overall migration strategy.
 
@@ -13,7 +12,7 @@ The following table identifies various items that you should consider, and corre
 |----------------|------------------------------------------------------------|
 |Business drivers|IT Leadership must work closely with business partners to understand what they want to achieve with the migration. The business drivers should focus on addressing business growth, limiting risks, and specifying the extent of the migration.|
 |Migration goals|The goals are used to determine the best migration method.|
-|Solution design|After identifying your goals and requirements, you design and review a deployment solution, and identify the migration process, including the Azure services that you will use for the migration.|
+|Solution design|After identifying your goals and requirements, you design and review a deployment solution, and identify the migration process, including the Azure services that you'll use for the migration.|
 
 ## Choose a migration strategy
 

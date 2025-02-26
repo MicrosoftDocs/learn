@@ -12,13 +12,13 @@ Bash treats the first string it encounters as a command. The following command u
 ls
 ```
 
-Bash commands are often accompanied by arguments. For example, you can include a path name in an `ls` command to list the contents of another directory:
+Arguments often accompany Bash commands. For example, you can include a path name in an `ls` command to list the contents of another directory:
 
 ```bash
 ls /etc
 ```
 
-Most Bash commands have options for modifying how they work. Options, also called *flags*, give a command more specific instructions. As an example, files and directories whose names begin with a period are hidden from the user and are not displayed by `ls`. However, you can include the `-a` (for "all") flag in an `ls` command and see everything in the target directory:
+Most Bash commands have options for modifying how they work. Options, also called *flags*, give a command more specific instructions. As an example, files and directories whose names begin with a period are hidden from the user and aren't displayed by `ls`. However, you can include the `-a` (for "all") flag in an `ls` command and see everything in the target directory:
 
 ```bash
 ls -a /etc
@@ -40,9 +40,9 @@ Which options and arguments can be used, or must be used, varies from command to
 man mkdir
 ```
 
-`man` will be your best friend as you learn Bash. `man` is how you find the information you need to understand how any command works.
+`man` is your best friend as you learn Bash. `man` is how you find the information you need to understand how any command works.
 
-Most Bash and Linux commands support the `--help` option. This shows a description of the command's syntax and options. To demonstrate, enter `mkdir --help`. The output will look something like this:
+Most Bash and Linux commands support the `--help` option. This shows a description of the command's syntax and options. To demonstrate, enter `mkdir --help`. The output looks something like this:
 
 ```output
 Usage: mkdir [OPTION]... DIRECTORY...
@@ -84,7 +84,7 @@ Now let's say the current directory also contains JPEG files. Some end in **.jpg
 ls *.jpg *.jpeg
 ```
 
-And here is another:
+And here's another:
 
 ```bash
 ls *.jp*g
@@ -126,7 +126,7 @@ And this one lists all the files in the current directory whose names begin with
 ls [a-zA-Z]*
 ```
 
-Based on all this, can you guess what the following commands will do?
+Based on all this, can you guess what the following commands do?
 
 ```bash
 ls [0-9]*
@@ -134,7 +134,7 @@ ls *[0-9]*
 ls *[0-9]
 ```
 
-If you need to use one of the wildcard characters as an ordinary character, you make it literal or "escape it" by prefacing it with a backslash. So, if for some reason you had an asterisk as part of a file name &mdash; something you should never do intentionally &mdash; you could search for it by using a command such as:
+If you need to use one of the wildcard characters as an ordinary character, you make it literal or "escape it" by prefacing it with a backslash. So, if for some reason you had an asterisk as part of a file name—something you should never do intentionally—you could search for it by using a command such as:
 
 ```bash
 $ ls *\**

@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-build-deploy-your-own-ai-copilot
+metadata:
+  title: 'Guided project: Build and Deploy your own AI Copilot'
+  description: "Build an AI copilot for Contoso Bike Shop. Integrate Azure OpenAI and Cosmos DB to enable advanced data searches, use GPT-3.5 for enhanced results, and deploy the solution on Azure Kubernetes Service."
+  ms.date: 11/13/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.collection: wwl-ai-copilot
+  ms.service: azure-cosmos-db
+  ai-usage: human-only
+title: 'Guided project: Build and Deploy your own AI Copilot'
+summary: Build an AI copilot for Contoso Bike Shop. Integrate Azure OpenAI and Cosmos DB to enable advanced data searches, use GPT-3.5 for enhanced results, and deploy the solution on Azure Kubernetes Service.
+abstract: |
+  -   Load data from Azure Blob Storage into a local directory and import it into vCore-based Azure Cosmos DB for MongoDB, generating embeddings for product fields.
+
+  -   Create a vector index on the generated embeddings and perform vector searches.
+
+  -   Enhance search results using GPT-3.5
+
+  -   Deploy the application on Azure Kubernetes Service.
+prerequisites: |
+  -   Access to an Azure subscription.
+
+  -   Access to Azure OpenAI studio.
+
+  -   Familiarity with Azure and the Azure portal.
+
+  -   Experience programming with Node.js
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- developer
+products:
+- azure-cosmos-db
+- azure-kubernetes-service
+- azure-openai
+subjects:
+- artificial-intelligence
+- databases
+units:
+- learn.wwl.guided-project-build-deploy-your-own-ai-copilot.introduction
+- learn.wwl.guided-project-build-deploy-your-own-ai-copilot.prepare-guided-project
+- learn.wwl.guided-project-build-deploy-your-own-ai-copilot.exercise-implement-vector-gpt-search
+- learn.wwl.guided-project-build-deploy-your-own-ai-copilot.exercise-prepare-your-copilot-application
+- learn.wwl.guided-project-build-deploy-your-own-ai-copilot.exercise-create-azure-kubernetes-service-cluster
+- learn.wwl.guided-project-build-deploy-your-own-ai-copilot.knowledge-check
+- learn.wwl.guided-project-build-deploy-your-own-ai-copilot.summary
+badge:
+  uid: learn.wwl.guided-project-build-deploy-your-own-ai-copilot.badge

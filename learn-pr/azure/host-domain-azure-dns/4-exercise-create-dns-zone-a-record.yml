@@ -2,16 +2,18 @@
 uid: learn.azure.host-domain-azure-dns.exercise-create-dns-zone-a-record
 title: Exercise - Create a DNS zone and an A record by using Azure DNS
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a DNS zone and an A record by using Azure DNS
   description: Exercise - Create a DNS zone and an A record by using Azure DNS
-  ms.date: 03/20/2020
-  author: asudbring
-  ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 10/03/2024
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
   zone_pivot_groups: 
 interactive: bash
 azureSandbox: true
 durationInMinutes: 12
 content: |
   [!include[](includes/4-exercise-create-dns-zone-a-record.md)]
+

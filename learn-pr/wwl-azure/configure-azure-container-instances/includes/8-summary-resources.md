@@ -1,17 +1,32 @@
-Azure Container Instances is a great solution for any scenario that can operate in isolated containers, including simple applications, task automation, and build jobs.
-
 In this module, you learned how to identify when to use Azure Container Instances versus Azure virtual machines. You explored the features and usage cases of Azure Container Instances. You discovered how to implement Azure container groups.
 
-## Learn more
+The main takeaways from this module are:
 
-- Compare [containers for Windows versus virtual machines](/virtualization/windowscontainers/about/containers-vs-vm).
+- Containers provide lightweight isolation and use fewer system resources compared to virtual machines.
+- Containers can be deployed individually using Docker or with an orchestrator like Azure Container Apps. 
+- Containers use Azure Disks or Azure Files for storage.
+- A container group is a collection of containers that get scheduled on the same host machine. 
+- Containers can be rapidly recreated on another cluster node if a node fails. 
+ 
+## Learn more with Copilot
+Copilot can assist you in configuring Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot.
 
-- Peruse [Azure Container Instances documentation](/azure/container-instances/).
+- Compare benefits and usage cases for containers and virtual machines. 
+
+- Compare benefits and usage cases for Azure Container Apps and Azure Kubernetes Service. 
+
+## Learn more with documentation
+
+- [Containers versus virtual machines](/virtualization/windowscontainers/about/containers-vs-vm). This article reviews the key similarities and differences between containers and virtual machines (VMs), and when you might want to use each. 
+
+- [Quickstart: Deploy a container instance in Azure using the Azure portal](/azure/container-instances/container-instances-quickstart-portal). In this quickstart, you use the Azure portal to deploy an isolated Docker container and make its application available with a fully qualified domain name (FQDN). After configuring a few settings and deploying the container, you can browse to the running application:
+
+- [Container groups in Azure Container Instances](/azure/container-instances/container-instances-container-groups). This article describes what container groups are and the types of scenarios they enable.
 
 ## Learn more with self-paced training
 
-- Complete an [introduction to Docker containers](/training/modules/intro-to-docker-containers/).
+- [Run container images in Azure Container Instances](/training/modules/create-run-container-images-azure-container-instances/). Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies.
 
-- Run [Docker containers with Azure Container Instances](/training/modules/run-docker-with-azure-container-instances/). _Azure subscription required_.
+- [Implement Azure Container Apps](/training/modules/implement-azure-container-apps/). Learn how Azure Container Apps can help you deploy and manage microservices and containerized apps on a serverless platform that runs on top of Azure Kubernetes Service.
 
-- Build a [containerized web application with Docker](/training/modules/intro-to-containers/).
+- [Introduction to Docker containers](/training/modules/intro-to-docker-containers/). Learn the benefits of using Docker containers as a containerization platform. Discuss the infrastructure provided by the Docker platform.

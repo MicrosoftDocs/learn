@@ -1,9 +1,8 @@
 ---
-author: davidsmatlak
-ms.prod: learning-azure
+author: mumian
 ms.topic: include
-ms.date: 05/22/2021
-ms.author: davidsmatlak
+ms.date: 02/04/2025
+ms.author: jgao
 ---
 # [Screenshot](#tab/screenshpt)
 
@@ -19,15 +18,15 @@ Resource and property changes are indicated with these symbols:
   - Delete
   + Create
   ~ Modify
-  * Ignore
 
 The deployment will update the following scope:
 
-Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff
+Scope: /subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4/resourceGroups/learn-00000000-0000-0000-0000-000000000000
 
-  ~ Microsoft.Network/virtualNetworks/vnet-001 [2018-10-01]
-    - tags.Owner:                    "Team A"
-    + properties.enableVmProtection: false
+  ~ Microsoft.Network/virtualNetworks/vnet-001 [2024-05-01]
+    - properties.privateEndpointVNetPolicies: "Disabled"
+    - tags.Owner:                             "Team A"
+    + properties.enableVmProtection:          false
     ~ properties.addressSpace.addressPrefixes: [
       - 0: "10.0.0.0/16"
       + 0: "10.0.0.0/15"
@@ -35,14 +34,12 @@ Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-
     ~ properties.subnets: [
       - 0:
 
-          name:                     "subnet001"
-          properties.addressPrefix: "10.0.0.0/24"
+          name:                                         "subnet001"
+          properties.addressPrefix:                     "10.0.0.0/24"
 
       ]
 
-  * Microsoft.Storage/storageAccounts/cloudshell843483168
-
-Resource changes: 1 to modify, 1 to ignore.
+Resource changes: 1 to modify.
 ```
 
 ---

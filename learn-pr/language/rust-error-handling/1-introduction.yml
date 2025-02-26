@@ -3,11 +3,10 @@ uid: learn.language.rust-error-handling.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 12/14/2020
+  ms.date: 01/05/2023
   author: meaghanlewis
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Introduction
 durationInMinutes: 1

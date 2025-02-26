@@ -2,15 +2,17 @@
 uid: learn.wwl.detect-analyze-recognize-faces.understand-capabilities-of-face-service
 title: Understand capabilities of the face service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand capabilities of the face service
-  description: "Understand capabilities of the face service"
-  ms.date: 07/13/2022
+  description: Understand capabilities of the face service
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: berryivor
+  ms.date: 12/13/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/5-understand-capabilities-of-face-service.md)]
+

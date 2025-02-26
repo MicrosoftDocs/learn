@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-microsoft-intune-essentials.unify-management-across-platforms-intune
+title: Unify management across platforms with Microsoft Intune
+metadata:
+  title: Unify management across platforms with Microsoft Intune
+  description: "Unify management across platforms with Microsoft Intune"
+  ms.date: 06/06/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-unify-management-across-platforms-intune.md)]

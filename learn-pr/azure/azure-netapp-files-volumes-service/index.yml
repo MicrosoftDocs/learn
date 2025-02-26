@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.azure.azure-netapp-files-volumes-service
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  moduleType: introduction        
+  title: Understand how Azure NetApp Files provides volumes as a service     
+  description: Understand network attached storage (NAS) concepts and various NAS protocols supported in Azure NetApp Files.      
+  ms.date: 11/25/2024
+  author: b-ahibbard   
+  ms.author: anfdocs           
+  ms.topic: module
+  ms.service: azure-netapp-files
+title: Understand how Azure NetApp Files provides volumes as a service
+summary: This module takes a deep dive into network attached storage (NAS) concepts and various NAS protocols supported in Azure NetApp Files. Learn about NAS share and file permissions with Azure NetApp Files.     
+abstract: |
+  By the end of this module, you'll be able to: 
+    - Classify the various NAS protocols supported in Azure NetApp Files and choose the one that best suits your workload. 
+    - Describe NAS permissions and their uses.
+    -	Understand file locking and lock types in Azure NetApp Files
+prerequisites: |
+  - Basic knowledge of networked file system protocols, particularly Server Message Block (SMB) and Network File System (NFS).
+  - Basic understanding of Azure NetApp Files.
+iconUrl: /training/achievements/introduction-to-azure-netapp-files.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - database-administrator
+  - data-engineer
+  - data-scientist
+  - solution-architect
+products:
+  - azure-netapp-files
+subjects:
+- cloud-computing
+- storage
+units:
+- learn.azure.azure-netapp-files-volumes-service.introduction
+- learn.azure.azure-netapp-files-volumes-service.protocols
+- learn.azure.azure-netapp-files-volumes-service.share-permissions
+- learn.azure.azure-netapp-files-volumes-service.file-permissions
+- learn.azure.azure-netapp-files-volumes-service.knowledge-check
+- learn.azure.azure-netapp-files-volumes-service.summary
+badge:
+  uid: learn.azure.azure-netapp-files-volumes-service.badge
+

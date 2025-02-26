@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.exploring-artificial-intelligence-in-action.common-ai-subsets
+title: Common AI subsets
+metadata:
+  title: Common AI subsets
+  description: AI has transformed the way you interact with technology. From voice assistants to autonomous vehicles, AI impacts the world you live in.
+  author: yoosunee
+  ms.author: anruss
+  ms.date: 01/14/2025
+  ms.topic: unit
+  ms.collection:
+    - philanthropies-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-common-ai-subsets.md)]

@@ -1,14 +1,17 @@
 ### YamlMime:Module
 uid: learn.health-bot-case-studies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Case studies for Azure Health Bot
   description: In this module, we'll discuss a few case studies for the Azure Health Bot service. 
+  ms.collection: TBD
   ms.date: 03/09/2023
   author: rodanthi-alexiou
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.service: azure-ai-health-bot
 title: Azure Health Bot case studies
 summary: |
 
@@ -30,7 +33,7 @@ products:
 - azure
 prerequisites: Introduction to Azure Health Bot
 subjects:
-- data-ai
+- data-management
 - compliance
 units:
 - learn.health-bot-case-studies.1-introduction
@@ -41,3 +44,4 @@ units:
 
 badge:
   uid: learn.student-evangelism.health-bot-case-studies.badge
+

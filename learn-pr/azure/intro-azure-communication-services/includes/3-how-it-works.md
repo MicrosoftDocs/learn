@@ -21,11 +21,11 @@ With a properly configured resource in the Azure portal, you and your team can c
 
 ## Server SDKs
 
-With an Azure resource setup, another component is some form of server-side management. This is created with server focused SDKs.
+With an Azure resource setup, another component is some form of server-side management. You can create this with server focused SDKs.
 
-Server-side programming is performed by downloading these SDKs and writing small amounts of code which interact with Azure Communication Services. There are a few features and parts of Azure Communication Services that needs this:
+To perform server-side programming, you download these SDKs and write small amounts of code that interact with Azure Communication Services. There are a few features and parts of Azure Communication Services that needs this:
 
-* For voice/video calling and chat, you need to link an Azure Communication Services identity to your application's identity systems, so that when your users make calls or chat with each other, you can link them back to your application's identity platform
+* For voice/video calling and chat, you need to link an Azure Communication Services identity to your application's identity systems so that when your users make calls or chat with each other, you can link them back to your application's identity platform
 * For event handling of incoming calls or Short Messaging Service (SMS) messages
 * For processing chat messages
 * For receiving and routing incoming calls
@@ -39,7 +39,7 @@ Azure Communication Services has Server SDKs available for:
 * Java Server Edition (SE)
 * Python
 
-You can find a link to all of the SDKs in the References section at the end of this module.
+You can find a link to all of the SDKs in the *References* section at the end of this module.
 
 ## Client SDKs
 
@@ -54,7 +54,7 @@ Azure Communication Services has Client SDKs available for:
 * iOS (Swift)
 * Android
 
-You can find a link to all of the SDKs in the References section at the end of this module.
+You can find a link to all of the SDKs in the *References* section at the end of this module.
 
 ## Tying it all together
 

@@ -2,13 +2,15 @@
 uid: learn.azure.app-service-scale-up-scale-out.3-exercise-scale-a-web-app-manually
 title: Exercise - Scale a web app manually
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Scale a web app manually
   description: Manually scale a web app in and out.
-  ms.date: 04/11/2019
+  ms.date: 11/08/2023
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-scale-a-web-app-manually.md)]
+

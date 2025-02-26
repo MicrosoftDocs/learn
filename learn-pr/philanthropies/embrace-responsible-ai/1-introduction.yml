@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.embrace-responsible-ai.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is a part of the 'Guided project - Embrace responsible AI' module.
+  author: yoosunee
+  ms.author: anruss
+  ms.date: 01/14/2025
+  ms.topic: unit
+  ms.collection:
+    - philanthropies-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

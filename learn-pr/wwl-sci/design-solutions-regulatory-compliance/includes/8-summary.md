@@ -5,19 +5,19 @@ You've learned:
 
 ## Learn more with security documentation
 
-- [Introduction to regulatory compliance - Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/regulatory-compliance)
-- [Security Baseline discipline overview - Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/govern/security-baseline/)
-- [Microsoft Purview Compliance Manager - Microsoft Purview (compliance)](https://learn.microsoft.com/microsoft-365/compliance/compliance-manager?view=o365-worldwide)
-- [Learn about Microsoft Priva - Microsoft Priva](https://learn.microsoft.com/privacy/priva/priva-overview)
-- [Overview of Azure Policy - Azure Policy](https://learn.microsoft.com/azure/governance/policy/overview)
-- [Remediate non-compliant resources - Azure Policy](https://learn.microsoft.com/azure/governance/policy/how-to/remediate-resources?tabs=azure-portal)
-- [Tutorial: Regulatory compliance checks - Microsoft Defender for Cloud](https://learn.microsoft.com/azure/defender-for-cloud/regulatory-compliance-dashboard)
-- [Defender for Cloud Planning and Operations Guide](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-planning-and-operations-guide)
+- [Introduction to regulatory compliance - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/policy-compliance/regulatory-compliance)
+- [Security Baseline discipline overview - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/security-baseline/)
+- [Microsoft Purview Compliance Manager - Microsoft Purview (compliance)](/microsoft-365/compliance/compliance-manager?view=o365-worldwide)
+- [Learn about Microsoft Priva - Microsoft Priva](/privacy/priva/priva-overview)
+- [Overview of Azure Policy - Azure Policy](/azure/governance/policy/overview)
+- [Remediate non-compliant resources - Azure Policy](/azure/governance/policy/how-to/remediate-resources?tabs=azure-portal)
+- [Tutorial: Regulatory compliance checks - Microsoft Defender for Cloud](/azure/defender-for-cloud/regulatory-compliance-dashboard)
+- [Defender for Cloud Planning and Operations Guide](/azure/defender-for-cloud/defender-for-cloud-planning-and-operations-guide)
 
 
 ## Learn more with reference architectures
 
-- [Data management across Azure Data Lake with Microsoft Purview - Azure Architecture Center](https://learn.microsoft.com/azure/architecture/solution-ideas/articles/azure-purview-data-lake-estate-architecture)
+- [Data management across Azure Data Lake with Microsoft Purview - Azure Architecture Center](/azure/architecture/solution-ideas/articles/azure-purview-data-lake-estate-architecture)
 
 > [!Note]
 > This module contains AI-generated content.

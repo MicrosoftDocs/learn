@@ -4,13 +4,12 @@ title: Design security for data at rest, data in motion, and data in use
 metadata:
   title: Design security for data at rest, data in motion, and data in use
   description: "Design security for data at rest, data in motion, and data in use"
-  ms.date: 03/29/2023
+  ms.date: 12/10/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 6
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
 content: |
   [!include[](includes/7-design-security-for-data-at-rest-data-transmission-data-use.md)]

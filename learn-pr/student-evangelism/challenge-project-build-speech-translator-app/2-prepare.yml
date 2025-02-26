@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.challenge-project-build-speech-translator-app.prepare
+title: Prepare
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Prepare
+  description: Prepare.
+  author: theoyinbooke
+  ms.author: somelezediko
+  ms.date: 12/13/2023
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.custom: team=nextgen
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-prepare.md)]
+

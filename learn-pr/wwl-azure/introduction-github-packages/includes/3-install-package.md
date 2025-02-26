@@ -60,7 +60,9 @@ You need to add the *.npmrc* file to your project to install packages from GitHu
 2.  In the same directory as your package.json file, create or edit a .npmrc file.
 3.  Include a line specifying GitHub Packages URL and the account owner.
     
-    @OWNER:registry=https://npm.pkg.github.com
+    <!--- raw content start --->
+@OWNER:registry=https://npm.pkg.github.com
+<!--- raw content end --->
     
     > [!NOTE]
     > Replace **OWNER** with the name of the user or organization account.

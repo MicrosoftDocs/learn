@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.azure.export-data-with-azure-import-export
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Export large amounts of data from Azure by using Azure Import/Export"
   description: "Learn how and when to use Azure Import/Export to copy large amounts of data from Azure"
   ms.date: 03/08/2023
   author: alkohli
   ms.author: alkohli
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-import-export
 title: "Export large amounts of data from Azure by using Azure Import/Export"
 summary: "Evaluate Azure Import/Export to copy data from Azure Blob storage to an on-premises server. Create an export job in your Azure Storage account. Get the BitLocker keys to unlock the drives that you receive."
 abstract: |
@@ -33,3 +35,4 @@ units:
 - learn.azure.export-data-with-azure-import-export.summary
 badge:
   uid: learn.azure.export-data-with-azure-import-export.badge
+

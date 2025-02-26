@@ -18,7 +18,7 @@ If you're just beginning to work with the cloud, or if you already have cloud ex
 
 No matter your goals, Azure Fundamentals has something for you. You should take this course if you:
 
- -  Have general interest in Azure or in the cloud
+ -  Have general interest in Azure or in cloud computing
  -  Want to earn official certification from Microsoft (AZ-900)
 
 The Azure Fundamentals learning path series can help you prepare for Exam AZ-900: Microsoft Azure Fundamentals. This exam includes three knowledge domain areas:

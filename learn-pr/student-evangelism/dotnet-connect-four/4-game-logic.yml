@@ -4,11 +4,10 @@ title: Game logic
 metadata:
   title: Game logic
   description: In this unit, we cover some basic game concepts and how those can be implemented in C# and Blazor.
-  author: softchris
-  ms.author: chnoring
+  author: CamSoper
+  ms.author: casoper
   ms.date: 03/15/2023
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-game-logic.md)]

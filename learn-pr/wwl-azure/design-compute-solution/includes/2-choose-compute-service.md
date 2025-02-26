@@ -22,10 +22,10 @@ Let's take a quick look at the Azure compute services we review in this module.
 
 As you begin to compare Azure compute services to choose your infrastructure solution for Tailwind Traders, there are several implementation points to think about.
 
-- Architecture and infrastructure requirements
-- Support for new workload scenarios, like HPC applications
-- Required hosting options, including platform, infrastructure, and functions
-- Support for migrations, such as cloud-optimized or lift and shift
+- Architecture and infrastructure requirements.
+- Support for new workload scenarios, like HPC applications.
+- Required hosting options, including platform, infrastructure, and functions.
+- Support for migrations, such as cloud-optimized or lift and shift.
 
 #### Workloads and architecture
 
@@ -66,6 +66,6 @@ Azure provides a decision [flowchart](/azure/architecture/guide/technology-choic
 > [!NOTE]
 > The following diagram has been edited to show only the Azure services described in this module. 
 
-The output from this decision flowchart is a **starting point** for your planning. You'll need to do a detailed evaluation of the services to determine exactly which solution meets your requirements. As you work through this module, refer to this diagram to become familiar with the considerations and options. 
+The output from this decision flowchart is a **starting point** for your planning. You need to do a detailed evaluation of the services to determine exactly which solution meets your requirements. As you work through this module, refer to this diagram to become familiar with the considerations and options. 
 
-:::image type="content" source="../media/compute-flowchart.png" alt-text="Flowchat that shows considerations and options for Azure compute solutions." border="false":::
+:::image type="content" source="../media/compute-flowchart.png" alt-text="Diagram that shows considerations and options for Azure compute solutions." border="false":::

@@ -1,4 +1,4 @@
-Infrastructure as code, sometimes referred to as _IaC_, is the process of provisioning infrastructure resources similar to how software is deployed. These resources include virtual machines, virtual networks, and web applications. Infrastructure as code can help automate your deployments, increase confidence in your deployments, and increase efficiency and repeatability.
+Infrastructure as code, sometimes referred to as *IaC*, is a way to provision infrastructure resources that's similar to how software is deployed. These resources include virtual machines, virtual networks, and web applications. Infrastructure as code can help automate your deployments, increase confidence in your deployments, and increase efficiency and repeatability.
 
 ## Example scenario
 
@@ -8,11 +8,11 @@ Suppose you work as an Azure infrastructure administrator at a toy company that'
 - Multiple region deployments to support your customers and partners around the world.
 - Multiple environment deployments to ensure consistency.
 
-You've been asked to evaluate whether infrastructure as code might be a valuable approach to resource provisioning at your company. You also need to decide which technology to use when you deploy your Azure infrastructure.
+You're asked to evaluate whether infrastructure as code might be a valuable approach to resource provisioning at your company. You also need to decide which technology to use when you deploy your Azure infrastructure.
 
-## What will we be doing?
+## What are we doing?
 
-In this module, you'll learn about the concept of infrastructure as code and its benefits. You'll understand the purpose of Bicep as an infrastructure-as-code language and understand how it works. You'll find answers to these questions:
+In this module, you learn about the concept of infrastructure as code and its benefits. You also learn the purpose of Bicep as an infrastructure-as-code language and understand how it works. This module helps you find answers to these questions:
 
 - What is infrastructure as code?
 - How can infrastructure as code help you automate resource provisioning?
@@ -21,7 +21,7 @@ In this module, you'll learn about the concept of infrastructure as code and its
 
 ## What is the main goal?
 
-After completing this module, you'll be able to determine whether infrastructure as code is the right approach and tool for your organization.
+After completing this module, you're able to determine whether infrastructure as code is the right approach and tool for your organization.
 
 ## Prerequisites
 

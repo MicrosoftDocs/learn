@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-sustainability.1b-ai-sustainability
+title: AI and sustainability
+metadata:
+  title: AI and sustainability
+  description: "AI and sustainability"
+  ms.date: 08/13/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/1b-ai-sustainability.md)]

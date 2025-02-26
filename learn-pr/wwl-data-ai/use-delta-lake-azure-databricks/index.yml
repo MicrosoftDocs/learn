@@ -1,43 +1,44 @@
 ### YamlMime:Module
 uid: learn.wwl.use-delta-lake-azure-databricks
 metadata:
-  title: Use Delta Lake in Azure Databricks
-  description: "Use Delta Lake in Azure Databricks"
-  ms.date: 08/26/2022
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Manage data with Delta Lake
+  description: "Manage data with Delta Lake"
+  ms.date: 08/06/2024
   author: wwlpublish
-  ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Use Delta Lake in Azure Databricks
-summary: Delta Lake is an open source relational storage area for Spark that you can use to implement a data lakehouse architecture in Azure Databricks.
+  ms.author: theresai
+  ms.topic: module-standard-task-based
+  ms.service: azure-databricks
+title: Manage data with Delta Lake
+summary: Delta Lake is a data management solution in Azure Databricks providing features including ACID transactions, schema enforcement, and time travel ensuring data consistency, integrity, and versioning capabilities.
 abstract: |
-  In this module, you'll learn how to:
-  - Describe core features and capabilities of Delta Lake.
-  - Create and use Delta Lake tables in Azure Databricks.
-  - Create Spark catalog tables for Delta Lake data.
-  - Use Delta Lake tables for streaming data.
+  In this module, you learn:
+  - What Delta Lake is
+  - How to manage ACID transactions using Delta Lake
+  - How to use schema versioning and time travel in Delta Lake
+  - How to maintain data integrity with Delta Lake
 prerequisites: |
-  Before starting this module, you should have a basic knowledge of Azure Databricks. Consider completing the previous modules in the [Data Engineering with Azure Databricks](/training/paths/data-engineer-azure-databricks?azure-portal=true) learning path before this one.
+  Before starting this module, you should know how to use Apache Spark in Azure Databricks. Consider completing the [Use Apache Spark in Azure Databricks](/training/modules/use-apache-spark-azure-databricks) module before this one.
 iconUrl: /training/achievements/work-dataframes-azure-databricks.svg
 levels:
 - intermediate
 roles:
-- data-engineer
+- data-analyst
 products:
 - azure-databricks
 subjects:
 - data-analytics
-- data-engineering
-- data-lake
-- data-warehousing
 units:
 - learn.wwl.use-delta-lake-azure-databricks.introduction
 - learn.wwl.use-delta-lake-azure-databricks.get-started
-- learn.wwl.use-delta-lake-azure-databricks.create-tables
-- learn.wwl.use-delta-lake-azure-databricks.create-query-catalog-tables
-- learn.wwl.use-delta-lake-azure-databricks.for-streaming-data
+- learn.wwl.use-delta-lake-azure-databricks.manage-acid-transactions
+- learn.wwl.use-delta-lake-azure-databricks.implement-schema-enforcement
+- learn.wwl.use-delta-lake-azure-databricks.data-versioning-and-time-travel
+- learn.wwl.use-delta-lake-azure-databricks.data-integrity-with-delta-lake
 - learn.wwl.use-delta-lake-azure-databricks.exercise
-- learn.wwl.use-delta-lake-azure-databricks.knowledge-check
+- learn.wwl.manage-data-with-delta-lake.knowledge-check
 - learn.wwl.use-delta-lake-azure-databricks.summary
 badge:
   uid: learn.wwl.use-delta-lake-azure-databricks.badge
+

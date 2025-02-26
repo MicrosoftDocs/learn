@@ -4,10 +4,9 @@ metadata:
   title: Understand data science for machine learning 
   description: Machine learning is enables data scientists make predictions about objects, people, and the future. This learning path is a high-level introduction to machine learning for people with little or no knowledge of computer science or statistics.
   ms.date: 06/30/2021
-  author: jasallen
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: learning-path
 title: Understand data science for machine learning  
 summary: |
   Microsoft Learn provides several interactive ways to get an introduction to classic machine learning. These learning paths will get you productive on their own, and also are an excellent base for moving on to deep learning topics.

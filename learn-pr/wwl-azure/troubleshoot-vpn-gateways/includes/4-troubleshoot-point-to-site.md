@@ -35,7 +35,7 @@ This unit will help to troubleshoot the steps outlined above. It will outline th
 
 - RADIUS authentication
 
-- Azure AD authentication
+- Microsoft Entra authentication
 
 - OpenVPN connectivity
 
@@ -256,13 +256,15 @@ Although many of the principles are like site-to-site, there are some important 
 
 - SSTP and IKEv2
 
-## Troubleshoot Azure AD authentication issues
+<a name='troubleshoot-azure-ad-authentication-issues'></a>
 
-When using Azure AD for authentication, you must use the OpenVPN protocol. You can't use a Basic SKU.
+## Troubleshoot Microsoft Entra authentication issues
+
+When using Microsoft Entra ID for authentication, you must use the OpenVPN protocol. You can't use a Basic SKU.
 
 To set up an Azure authentication you need two user accounts: a Global Admin account for setting up the gateway and a User account for everyday servicing.
 
-The following checklist can help you troubleshoot VPN connections using point-to-site and Azure Active Directory authentication:
+The following checklist can help you troubleshoot VPN connections using point-to-site and Microsoft Entra authentication:
 
 1. Have you opened the Azure VPN client screen and viewed the status log for any error messages?
 
@@ -274,11 +276,11 @@ The following checklist can help you troubleshoot VPN connections using point-to
 
 - Have you run diagnostics on the connection?
 
-   :::image type="content" source="../media/4-azure-diagnostic-page.png" alt-text="Screenshot of Azure A D diagnostic page." lightbox="../media/4-azure-diagnostic-page.png":::
+   :::image type="content" source="../media/4-azure-diagnostic-page.png" alt-text="Screenshot of Microsoft Entra diagnostic page." lightbox="../media/4-azure-diagnostic-page.png":::
 
 - Have you viewed the client log files?
 
-   :::image type="content" source="../media/4-azure-log-directory.png" alt-text="Screenshot of Log Directory area within Azure AD." lightbox="../media/4-azure-log-directory.png":::
+   :::image type="content" source="../media/4-azure-log-directory.png" alt-text="Screenshot of Log Directory area within Microsoft Entra ID." lightbox="../media/4-azure-log-directory.png":::
 
 ## Troubleshoot OpenVPN connectivity issues
 
@@ -378,4 +380,4 @@ you've five options to improve the efficiency of your network:
 
 - VPN Selective Tunnel ‒ traffic with a corporate IP address is sent through the VPN tunnel and the internet path is used for all other services. If your services are largely stored in the cloud, then this option is the main model to work towards, although your corporation does need to adopt the Zero Trust model.
 
-- No VPN ‒ uses modern security approaches like Zscaler ZPA, and Azure Active Directory (Azure AD) Proxy/MCAS instead of a VPN.
+- No VPN ‒ uses modern security approaches like Zscaler ZPA, and Microsoft Entra ID Proxy/MCAS instead of a VPN.

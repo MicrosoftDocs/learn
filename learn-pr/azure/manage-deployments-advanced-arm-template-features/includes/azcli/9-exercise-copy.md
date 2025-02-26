@@ -95,8 +95,8 @@ The `--query` argument specifies to show just the identifiers from the output re
 Your output resembles this:
 
 ```output
-/subscriptions/4b328dc1-56b1-4031-89b0-c0898204f8a5/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9820
-/subscriptions/4b328dc1-56b1-4031-89b0-c0898204f8a5/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9821
+/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9820
+/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/<rgn>resource group name</rgn>/providers/Microsoft.Storage/storageAccounts/tailwindsa9821
 ```
 
 In this example:

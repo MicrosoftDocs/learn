@@ -1,4 +1,5 @@
 
+
 Although you still can perform typical end-user configuration in Control Panel through Windows Defender Firewall, you can perform advanced configuration in the Windows Defender Firewall with the Advanced Security snap-in. You can access this snap-in through Control Panel from the Windows Defender Firewall page by selecting **Advanced settings** in the navigation pane. The snap-in provides an interface for configuring Windows Defender Firewall locally, on remote computers, and by using Group Policy.
 
 Windows Defender Firewall with Advanced Security is an example of a network-aware app. You can create a profile for each network location type, and each profile can contain different firewall policies. For example, you can allow incoming traffic for a specific desktop management tool when a computer is on a domain network, but block traffic when the computer connects to public or private networks.

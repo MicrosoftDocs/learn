@@ -1,4 +1,4 @@
-Linting your Bicep code gives you some indication of whether your Azure deployment is likely to succeed. You'll also find it helpful to actually deploy your Bicep code somewhere, to see how your environment will look after the pull request is merged and the deployment is complete.
+Linting your Bicep code gives you some indication of whether your Azure deployment is likely to succeed. You'll also find it helpful to actually deploy your Bicep code somewhere to see how your environment will look after the pull request is merged and the deployment is complete.
 
 In this unit, you learn how to deploy your code to a temporary environment from within a pull request.
 
@@ -8,13 +8,13 @@ When you're reviewing a pull request that includes Bicep code, it's a good pract
 
 By now, you're used to the idea of deploying your changes to one or more nonproduction environments, such as _Test_, _QA_, and _Staging_, before deploying them to your production environment. In many organizations, these environments are _long-lived_, which means that they're updated when changes are rolled out, and the environments aren't usually deleted.
 
-In contrast, an _ephemeral environment_ is one that you create dynamically, and that you're comfortable with being deleted when it's no longer useful. Ephemeral environments are intended to exist for a short amount of time only (for example, only long enough for your changes to be reviewed).
+In contrast, an _ephemeral environment_ is one that you create dynamically, and one that you're comfortable with being deleted when it's no longer useful. Ephemeral environments are intended to exist for a short amount of time only (for example, only long enough for your changes to be reviewed).
 
-Ephemeral environments are a good choice when you deploy environments for pull requests, because you might have many separate pull requests open at a time, representing different types of changes. If you have several pull requests open, sharing your long-lived nonproduction environments means that only one change can be previewed at a time.
+Ephemeral environments are a good choice when you deploy environments for pull requests, because you might have many separate pull requests open at a time, representing different types of changes. If you have several pull requests open, sharing your long-lived nonproduction environments means that you can only preview one change at a time.
 
 ## Create ephemeral environments
 
-Because you're so used to building up your Azure infrastructure as code, and you've invested in building your Bicep files to deploy your resources, you can reuse those same assets to deploy an ephemeral environment. You can even deploy multiple ephemeral environments at a time, if you need to. You just need to ensure that your deployments are sufficiently _parameterized_ and _generalized_, so that you can easily create independent environments. For example, you need to ensure that some Azure resources are given globally unique names, which can't be the same as resource names in any other ephemeral or long-lived environment.
+Because you're so used to building up your Azure infrastructure as code and you've invested in building your Bicep files to deploy your resources, you can reuse those same assets to deploy an ephemeral environment. You can even deploy multiple ephemeral environments at a time, if you need to. You just need to ensure that your deployments are sufficiently _parameterized_ and _generalized_ so that you can easily create independent environments. For example, you need to ensure that some Azure resources are given globally unique names, which can't be the same as resource names in any other ephemeral or long-lived environment.
 
 Ephemeral environments offer many benefits:
 
@@ -33,7 +33,7 @@ When you work with ephemeral environments, it's best to create a separate Azure 
 
 For this approach to work, your pull request validation workflow needs to create resource groups dynamically. Resource groups require unique names, and you also need to be able to easily find the resource group to both test the resources and delete them when your pull request is closed. To handle resource group names effectively, you can use the pull request number within the resource group name. You'll see how to do this in the next exercise.
 
-When it's time to delete the ephemeral environment, it's easy for your workflow to find and delete the entire resource group. All the resources that are used in the ephemeral environment will be deleted at the same time.
+When it's time to delete the ephemeral environment, it's easy for your workflow to find and delete the entire resource group. All the resources used in the ephemeral environment are deleted at the same time.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ It's a good practice to use a dedicated Azure subscription for ephemeral environ
 
 Your deployment workflow uses a workload identity and federated credential to authenticate to Azure. When you use pull request validation workflows, you need to configure the federated credential to work with pull requests.
 
-In a previous exercise unit in this module, you ran a command to create a federated credential. The policy string looked similar to the following:
+In a previous exercise in this module, you ran a command to create a federated credential. The policy string looked similar to the following:
 
 `repo:my-github-user/my-repo:pull_request`
 

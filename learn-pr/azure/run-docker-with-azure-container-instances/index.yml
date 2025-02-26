@@ -1,24 +1,28 @@
 ### YamlMime:Module
 uid: learn.run-docker-containers-aci
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run Docker containers with Azure Container Instances
   description: Learn how to run and troubleshoot containerized apps using Docker containers with Azure Container Instances.
-  ms.date: 03/31/2023
+  manager: akashdubey
+  ms.date: 01/15/2025
   author: v-tcassi
   ms.author: tomcassidy
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-container-instances
 title: Run Docker containers with Azure Container Instances
 summary: Learn how to run containerized apps using Docker containers with Azure Container Instances (ACI).
 abstract:  | 
   In this module, you will:
-  - Run containers in Azure Container Instances
-  - Control what happens when your container exits
-  - Use environment variables to configure your container when it starts
-  - Attach a data volume to persist data when your container exits
-  - Learn some basic ways to troubleshoot issues on your Azure containers
+  - Run containers in Azure Container Instances.
+  - Control what happens when your container exits.
+  - Use environment variables to configure your container when it starts.
+  - Attach a data volume to persist data when your container exits.
+  - Learn some basic ways to troubleshoot issues on your Azure containers.
 
-prerequisites: None
+prerequisites: | 
+  You need your own Azure subscription to run this exercise, and you might incur charges. If you don't already have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
 iconUrl: /training/achievements/run-docker-with-azure-container-instances.svg
 levels:
 - intermediate
@@ -30,7 +34,7 @@ products:
 - azure-container-instances
 - azure-cosmos-db
 subjects:
-- container
+- containers
 units:
 - learn.run-docker-containers-aci.1-introduction
 - learn.run-docker-containers-aci.2-run-aci
@@ -39,5 +43,7 @@ units:
 - learn.run-docker-containers-aci.5-use-data-volumes
 - learn.run-docker-containers-aci.6-troubleshoot-aci
 - learn.run-docker-containers-aci.7-knowledge-check
+- learn.run-docker-containers-aci.8-summary
 badge:
   uid: learn.run-docker-containers-aci.badge
+

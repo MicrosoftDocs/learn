@@ -2,13 +2,14 @@
 uid: learn.languages.dotnet-deploy-microservices-kubernetes.exercise-deploy-to-kubernetes
 title: Exercise - Deploy a microservice container to Kubernetes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy a microservice container to Kubernetes
   description: Learn how to create a deployment file that describes to Kubernetes how to manage your containerized microservice.
-  ms.date: 08/13/2021
+  ms.date: 12/06/2024
   author: codemillmatt
-  ms.author: masoucou
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: masoucou  
+  ms.topic: unit  
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -16,3 +17,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-exercise-deploy-to-kubernetes.md)]
+

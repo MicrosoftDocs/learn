@@ -3,13 +3,14 @@ uid: learn.intro-to-docker-containers.4-how-docker-containers-work
 title: How Docker containers work
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Docker containers work
   description: In this unit, we explore how Docker containers work and how to run containers. We also discuss the life cycle of a Docker container.
-  ms.date: 03/24/2023
+  ms.date: 10/09/2024
   author: rayoef
   ms.author: rayoflores
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 10
 content: |
@@ -30,11 +31,12 @@ quiz:
       isCorrect: false
       explanation: "The Host network configuration allows the container to use the host's IP address and ports. The publish flag isn't used with this network."
  
-  - content: "Which storage option is the best choice that allows the host and container to share a file to manage name server resolution, for example the resolve.conf file on Linux?"
+  - content: "Which storage option is the best choice that allows the host and container to share a file to manage name server resolution; for example, the resolve.conf file on Linux?"
     choices:
     - content: "A volume"
       isCorrect: false
-      explanation: "A volume is stored on the host filesystem at a specific folder location. However, volume data isn't meant to be updated by the host."
+      explanation: "A volume is stored on the host filesystem at a specific folder location. However, the host isn't meant to update volume data."
     - content: "Bind mount"
       isCorrect: true
-      explanation: "A bind mount, like a volume, is stored on the host filesystem at a specific folder location. However, bind mount data is expected to be updated by the host. The resolve.conf contents is expected to change by the host and used by both the container and host."
+      explanation: "A bind mount, like a volume, is stored on the host filesystem at a specific folder location. However, the host is expected to update bind mount data. The resolve.conf contents is expected to change by the host and used by both the container and host."
+

@@ -2,13 +2,15 @@
 uid: learn.azure.run-clustered-applications-azure-shared-disks.define-azure-shared-disks
 title: About Azure shared disks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: About Azure shared disks
   description: This unit describes the features of Azure shared disks and their usage scenarios.
-  ms.date: 06/23/2021
+  ms.date: 06/18/2024
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-define-azure-shared-disks.md)]
+

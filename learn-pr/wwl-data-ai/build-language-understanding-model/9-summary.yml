@@ -2,15 +2,19 @@
 uid: learn.wwl.build-language-understanding-model.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
-  description: "Summary"
-  ms.date: 10/12/2022
+  description: Summary
   author: wwlpublish
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
+

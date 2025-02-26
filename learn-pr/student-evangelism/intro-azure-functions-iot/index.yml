@@ -1,14 +1,17 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-iot-funtions-iot
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Introduction to Azure Functions for IoT"
   description: "Learn about Azure Functions for IoT. University of Oxford"
-  ms.date: 03/08/2023
-  author: leestott
-  ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
-  ms.custom: team=nextgen
+  ms.date: 07/25/2024
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module-standard-task-based
+  ms.custom: team=cloud_advocates
+  ms.service: azure-functions
+  ms.collection: ce-advocates-ai-copilot        # Oxford University Module - Oxford responsible for ongoing maintenance 
 title: "Introduction to Azure Functions for IoT"
 summary: "Assess the characteristics of Azure Functions for IoT. Describe the function of triggers and bindings and show how you combine them to create a scalable IoT solution. Describe the benefits of using cloud infrastructure to rapidly deploy IoT applications with Azure Functions."
 abstract: |
@@ -16,13 +19,14 @@ abstract: |
     - Explain how Azure Functions implements business logic with IoT devices
     - Decide whether Azure Functions is right choice for your IoT solution
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***"
 prerequisites: |
     - Familiarity with Azure
     - Basic knowledge of REST and APIs
     - Basic understanding of IoT 
     
 iconUrl: /training/achievements/student-evangelism/introduction-to-azure-functions-iot-edge.svg
+hidden: true
 badge:
   uid: learn.oxford.intro-iot-funtions-iot.badge
 levels:
@@ -41,3 +45,4 @@ units:
 - learn.oxford.intro-iot-funtions-iot.when-use-azure-functions-iot
 - learn.oxford.intro-iot-funtions-iot.knowledge-check
 - learn.oxford.intro-iot-funtions-iot.summary
+

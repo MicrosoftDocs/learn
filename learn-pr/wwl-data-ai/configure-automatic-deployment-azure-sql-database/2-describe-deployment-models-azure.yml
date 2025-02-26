@@ -2,15 +2,20 @@
 uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.describe-deployment-models-azure
 title: Describe deployment models in Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe deployment models in Azure
   description: "Describe deployment models in Azure"
   ms.date: 06/28/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
+    - devx-track-azurecli
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-describe-deployment-models-azure.md)]
+

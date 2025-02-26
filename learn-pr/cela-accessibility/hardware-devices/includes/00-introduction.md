@@ -8,7 +8,7 @@ Consider the following scenario. A player with limited hand strength purchased a
 
 They also experience barriers while they set up their console. Despite owning an accessible controller, they first have to activate the power and wireless pairing buttons on their console. Unfortunately, those console buttons are small and too difficult for the player to press. This player is blocked from using their accessible controller in gameplay altogether. You hear of this situation and are eager to learn how standard gaming hardware devices can be made more accessible.
 
-In this module, you'll learn about the role of accessibility in standard hardware development. You'll be introduced to accessibility best practices for creating more accessible standard hardware devices and product packaging.
+In this module, learn about the role of accessibility in standard hardware development. You're introduced to accessibility best practices for creating more accessible standard hardware devices and product packaging.
 
 ## Learning objectives
 

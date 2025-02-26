@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.2-benefits-of-integration
+title: Understand the benefits of integrating Microsoft Sentinel with Defender XDR
+metadata:
+  title: Understand the benefits of integrating Microsoft Sentinel with Defender XDR
+  description: "Understand the benefits of integrating Microsoft Sentinel with Defender XDR."
+  ms.date: 10/2/2024
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-benefits-of-integration.md)]

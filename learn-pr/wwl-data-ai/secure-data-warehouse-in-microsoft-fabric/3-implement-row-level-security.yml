@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.implement-row-level-security
+title: Implement row-level security
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Implement row-level security
+  description: "Learn the concept and how to implement row-level security in a data warehouse in Microsoft Fabric."
+  ms.date: 01/10/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-implement-row-level-security.md)]

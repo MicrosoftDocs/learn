@@ -1,13 +1,13 @@
 When you deploy your infrastructure as code, you can automate your deployments, improve your confidence in your deployments, and increase the efficiency of your team's work. But these benefits apply only if you and your team are diligent and avoid making manual changes to your environment. 
 
-In this module, you'll learn how to apply configuration and governance to your Azure environment and pipelines to avoid unexpected or uncontrolled changes.
+In this module, you learn how to apply configuration and governance to your Azure environment and pipelines to avoid unexpected or uncontrolled changes.
 
 > [!NOTE]
 > The GitHub Actions term for a pipeline is *workflow*. For simplicity, we use *pipeline* throughout this module to refer to both pipelines in Azure Pipelines and workflows in GitHub Actions.
 
 ## Example scenario
 
-Suppose you work as the Azure administrator at a toy company. Over the last several months, you and your team have been converting your Azure deployments to use Bicep. You've automated your deployment processes by using pipelines. But your team still has some members who haven't quite adopted the mindset of deploying all of their changes as code.
+Suppose you work as the Azure administrator at a toy company. Over the last several months, you and your team have been converting your Azure deployments to use Bicep. You've automated your deployment processes by using pipelines. But your team still has some members who haven't yet adopted the mindset of deploying all of their changes as code.
 
 Recently, you had several situations where people deployed to Azure by using different processes:
 
@@ -21,20 +21,20 @@ The following diagram illustrates these scenarios:
 
 :::image type="content" source="../media/1-risks.png" alt-text="Diagram that shows several approaches to making Azure configuration changes." border="false":::
 
-Of all of these changes, only number 5 was deployed through the automation tools you've adopted and the process on which your team agreed. None of the other changes caused any damage, but you don't want to push your luck. Your team has decided to enforce your process so that you can get the most benefit from your investment in automation. You've agreed with your team that you'll close off the ability to deploy to your Azure environment, except through the approved process:
+Of all of these changes, only number 5 was deployed through the automation tools you've adopted and the process on which your team agreed. None of the other changes caused any damage, but you don't want to push your luck. Your team has decided to enforce your process so that you can get the most benefit from your investment in automation. You and your team have agreed to close off the ability to deploy to your Azure environment, except through the approved process:
 
 :::image type="content" source="../media/1-risks-controlled.png" alt-text="Diagram that shows several approaches to making Azure configuration changes, which are all blocked except for the approved process." border="false":::
 
 ## What will you be doing?
 
-In this module, you'll learn how to enforce the deployment of your Azure infrastructure as code. You'll consider the controls that you need to apply to each of your environments, and you'll apply governance and security policies to protect your Azure resources. You'll also learn how to help secure your pipelines and repositories by ensuring that all aspects of your Azure configuration follow a recommended and hardened process.
+In this module, you learn how to enforce the deployment of your Azure infrastructure as code. You consider the controls that you need to apply to each of your environments, and apply governance and security policies to protect your Azure resources. You also learn how to help secure your pipelines and repositories by ensuring that all aspects of your Azure configuration follow a recommended and hardened process.
 
 > [!TIP]
 > This module will introduce you to many security features. The summary unit has links to more information about each feature.
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to identify the security controls and governance that you should apply to your Azure environment, repositories, and pipelines, so that you can deploy all of your infrastructure as code.
+By the end of this module, you're able to identify the security controls and governance that you should apply to your Azure environment, repositories, and pipelines, allowing you to deploy all of your infrastructure as code.
 
 ## Prerequisites
 

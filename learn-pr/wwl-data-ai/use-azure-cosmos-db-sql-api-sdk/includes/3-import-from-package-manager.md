@@ -17,11 +17,11 @@ dotnet add package Microsoft.Azure.Cosmos
 
 ### Import a specific version of the package
 
-Invoke the ``dotnet add package`` command with the name of the package and the ``--version`` argument specifying a specific package version. For example, this command will import the **3.22.1** version of the **Microsoft.Azure.Cosmos** library.
+Invoke the ``dotnet add package`` command with the name of the package. The optional ``--version`` argument allows specifying a specific package version. For example, this command will import the **3.41.1** version of the **Microsoft.Azure.Cosmos** library.
 
 ```bash
 dotnet add package Microsoft.Azure.Cosmos \
-    --version 3.22.1
+    --version 3.41.1
 ```
 
 > [!TIP]
@@ -29,16 +29,16 @@ dotnet add package Microsoft.Azure.Cosmos \
 
 ## .NET project file
 
-Once imported, the package specification will be added to the **csproj** file for the .NET project. The project file uses the XML format and a new element named **PackageReference** is created within the **ItemGroup** element with the name of the package and the version. In this example, the **3.22.1** version of the **Microsoft.Azure.Cosmos** library was imported into the project from NuGet.
+Once imported, the package specification will be added to the **csproj** file for the .NET project. The project file uses the XML format and a new element named **PackageReference** is created within the **ItemGroup** element with the name of the package and the version. In this example, the **3.41.1** version of the **Microsoft.Azure.Cosmos** library was imported into the project from NuGet.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.22.1" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.41.1" />
   </ItemGroup>
 </Project>
 ```

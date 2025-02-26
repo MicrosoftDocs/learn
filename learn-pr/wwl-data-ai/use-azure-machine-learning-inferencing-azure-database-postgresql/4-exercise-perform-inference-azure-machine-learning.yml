@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.exercise-perform-inference-azure-machine-learning
+title: Exercise-Perform inference using Azure Machine Learning
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise-Perform inference using Azure Machine Learning
+  description: Exercise-Perform inference using Azure Machine Learning
+  author: wwlpublish
+  ms.author: calopez
+  ms.date: 11/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-exercise-perform-inference-azure-machine-learning.md)]
+

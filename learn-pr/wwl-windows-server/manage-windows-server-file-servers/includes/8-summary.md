@@ -4,7 +4,7 @@ Using the knowledge acquired in this module, you implemented Storage Spaces and 
 
 You can learn more by reviewing the following documents.
 
-- [Storage Spaces overview](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831739(v=ws.11)?azure-portal=true)
+- [Storage Spaces overview](/windows-server/storage/storage-spaces/overview)
 - [Storage Spaces Direct overview](/windows-server/storage/storage-spaces/storage-spaces-direct-overview?azure-portal=true)
 - [File Server Resource Manager (FSRM) overview](/windows-server/storage/fsrm/fsrm-overview?azure-portal=true)
 - [Overview of file sharing using the SMB 3 protocol in Windows Server](/windows-server/storage/file-server/file-server-smb-overview?azure-portal=true)

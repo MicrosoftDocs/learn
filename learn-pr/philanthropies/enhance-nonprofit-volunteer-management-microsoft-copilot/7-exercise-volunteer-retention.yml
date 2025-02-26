@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.enhance-nonprofit-volunteer-management-microsoft-copilot.exercise-volunteer-retention
+title: Exercise - Volunteer retention
+metadata:
+  title: Exercise - Volunteer retention
+  description: This content is a part of the Enhance nonprofit volunteer management with Microsoft Copilot module.
+  author: CourtneyHMicrosoft
+  ms.author: anruss
+  ms.date: 01/14/2025
+  ms.topic: unit
+  ms.collection:
+    - philanthropies-ai-copilot
+  ai-usage: ai-assisted
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-exercise-volunteer-retention.md)]

@@ -1,39 +1,32 @@
-Your company is experiencing increased demand for its video rendering service because of its international expansion. They have already found a way to scale the application, but the cluster was not keeping up with the demand. You want to understand how to use the cluster autoscaler to do it without too many changes in your infrastructure.
+In this module, you work for a growing video editing company that provides a cloud-based video rendering service. The service was experiencing increased demand from recent international expansion. The application applied the Horizontal Pod Autoscaler (HPA) for scaling purposes, but the cluster couldn't keep up. Your manager tasked you with finding a solution to scale the cluster automatically.
 
-By using AKS cluster autoscaler feature, you can automatically scale up and down your nodes so the node can keep up with the application scalability and all the users of the website are served well and it's all done transparently.
+You looked into the Azure Kubernetes Service (AKS) cluster autoscaler feature to see if it would be the right fit. With this feature, you were able to scale the number of nodes in your cluster up and down automatically. You configured the cluster autoscaler to watch for unscheduled pods with resource constraints, and then automatically increase and decrease the number of nodes to meet those requirements. You saw how the feature could allow your company to keep up with application scalability and decided to propose the solution to your manager.
 
 ## Clean up resources
 
-In this module, you created resources by using your Azure subscription. The following steps show you how to clean up these resources so that there's no continued charge against your account.
+In this module, you created resources by using your Azure subscription. To avoid incurring charges, delete the resources you created using the following steps:
 
-1. Open the Azure portal.
+1. In the Cloud shell, remove the resource group you created in this module using the `az group delete` command.
 
-    > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com?azure-portal=true)
-
-1. Select **Resource groups** on the left.
-
-1. Find the **learn-aks-cluster-scalability** resource group, or the resource group name you used, and select it.
-
-1. On the **Overview** tab of the resource group, select **Delete resource group**.
-
-1. Enter the name of the resource group to confirm. Select **Delete** to delete all of the resources you created in this module.
-
-1. Also, delete the **MC_learn-aks-cluster-scalability_learn-aks-cluster-scalability_eastus** resource group to remove all AKS-related resources.
-
-1. Finally, run the `kubectl config delete-context` command to remove the deleted clusters context. Here's an example of the complete command. Remember to replace the name of the cluster with your cluster's name.
-
-    ```bash
-    kubectl config delete-context learn-aks-cluster-scalability
+    ```azurecli-interactive
+    az group delete --resource-group myResourceGroup
     ```
 
-    If successful, the command returns the following example output.
+2. When you create a cluster in AKS, a second resource group is automatically created to store the AKS resources. This resource group uses the following naming format: **MC_resource-group-name_cluster-name_location**. Remove this resource group using the `az group delete` command.
 
-    ```output
-    deleted context learn-aks-cluster-scalability from /home/user/.kube/config
+    ```azurecli-interactive
+    az group delete --resource-group MC_myResourceGroup_myAKSCluster_eastus
+    ```
+
+3. Remove the deleted cluster's context using the `kubectl config delete-context` command.
+
+    ```azurecli-interactive
+    kubectl config delete-context myAKSCluster
     ```
 
 ## Learn more
 
-- [Scalability concepts](/azure/aks/concepts-scale)
-- [Other types of pods that prevent scaling down](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-types-of-pods-can-prevent-ca-from-removing-a-node)
+For more information about the articles covered in this module, see the following resources:
+
+- [Scalability concepts in AKS](/azure/aks/concepts-scale)
+- [Types of pods that prevent scale downs](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-types-of-pods-can-prevent-ca-from-removing-a-node)

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-hello-app-service.create-web-app
+title: "Exercise: Create a Simple Java Web App"
+metadata:
+  description: Create a simple Java web app and deploy it locally.
+  author: KarlErickson
+  ms.author: ayangupta
+  ms.date: 12/11/2024
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
+  ms.reviewer:
+  ms.assetid: HelloJavaAppService
+durationInMinutes: 5
+content: |
+  [!INCLUDE[](includes/3-exercise-create-simple-java-app.md)]

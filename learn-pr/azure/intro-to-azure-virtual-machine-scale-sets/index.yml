@@ -1,15 +1,17 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-virtual-machine-scale-sets
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Virtual Machine Scale Sets
   description: Learn about what Azure Virtual Machine Scale Sets do, how they work, and when you should use Azure Virtual Machine Scale Sets as a solution for your organization.
-  ms.date: 04/11/2023
+  ms.date: 08/02/2024
   author: Orin-Thomas
   ms.author: orthomas
   ms.reviewer: mimckitt
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=cloud_advocates
+  ms.service: azure-virtual-machine-scale-sets
 title: Introduction to Azure Virtual Machine Scale Sets
 summary: Learn about what Azure Virtual Machine Scale Sets do, how they work, and when you should use Azure Virtual Machine Scale Sets as a solution for your organization.
 abstract: |
@@ -38,3 +40,4 @@ units:
 - learn.introduction-to-azure-virtual-machine-scale-sets.summary
 badge:
   uid: learn.azure.intro-to-azure-virtual-machine-scale-sets.badge
+

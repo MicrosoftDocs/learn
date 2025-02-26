@@ -2,12 +2,12 @@ Your organization plans to implement failover clustering of Windows virtual mach
 
 ## Create Azure shared disks
 
-You can create Azure shared disks by using various tools. 
+You can create Azure shared disks by using various tools.
 
-**Use the Azure portal**
+### Use the Azure portal
 
 1. Sign in to the Azure portal, and then search for and select **Disks**.
-1. Select **+ Create** to create a managed disk and then, on the **Basic** tab, provide the following information:
+1. Select **+ Create** to create a managed disk and then, on the **Basic** tab, provide the following information, then select **Next: Encryption**:
 
     |Setting | Description |
     | --- | --- |
@@ -20,15 +20,15 @@ You can create Azure shared disks by using various tools.
     | Size | Choose the supported size for the shared disk, such as 1024 gibibytes (GiB), P30. |
     | | |
 
-1. On the **Encryption** tab, encrypt the disk with a platform-managed key, or provide your own disk-encryption set that's stored in an Azure key vault.
+1. On the **Encryption** tab, encrypt the disk with a platform-managed key, or provide your own disk-encryption set stored in an Azure key vault.
 1. On the **Networking** tab, provide a connectivity method for your Azure shared disk.
-1. On the **Advanced** tab, select the **Yes** checkbox for **Enable shared disk**, and then choose the number of **Max shares**.
+1. On the **Advanced** tab, select the **Yes** radio button for **Enable shared disk**, and then choose the number of **Max shares**.
 1. On the **Tags** tab, provide resource categorization by using name/value parameters. These parameters help you track costs associated with similar resources that have the same applied tag.
 1. On the **Review + create** tab, verify your entries, and then select **Create**.
 
 You can also create shared disks by using Azure PowerShell, the Azure CLI, or Azure Resource Manager templates (ARM templates).
 
-**Use PowerShell**
+### Use PowerShell
 
 ```azurepowershell
 $dataDiskConfig = New-AzDiskConfig -Location "WestCentralUS" -DiskSizeGB 1024 -AccountType Premium\_LRS -CreateOption Empty -MaxSharesCount 2
@@ -36,13 +36,13 @@ $dataDiskConfig = New-AzDiskConfig -Location "WestCentralUS" -DiskSizeGB 1024 -A
 New-AzDisk -ResourceGroupName "myResourceGroup" -DiskName "mySharedDisk" -Disk $dataDiskConfig
 ```
 
-**Use the Azure CLI**
+### Use the Azure CLI
 
 ```azurecli
 az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 -l westcentralus --sku Premium_LRS --max-shares 2
 ```
 
-**Use ARM templates**
+### Use ARM templates
 
 ```json
 { 
@@ -87,7 +87,7 @@ az disk create -g myResourceGroup -n mySharedDisk --size-gb 1024 -l westcentralu
 
 Now that you know how to create an Azure shared disk, attach the disk to VMs for testing the shared capabilities. Use the following PowerShell and Azure CLI commands to attach the Azure shared disk on both VMs.
 
-**Use PowerShell**
+### Use PowerShell
 
 ```azurepowershell
 $resourceGroup = "<your resource group name>"
@@ -99,7 +99,7 @@ $vm = Add-AzVMDataDisk -VM $vm -Name "<your shared disk name>" -CreateOption Att
 Update-AzVm -VM $vm -ResourceGroupName $resourceGroup
 ```
 
-**Use the Azure CLI**
+### Use the Azure CLI
 
 ```azurecli
 diskId=$(az disk show -g "<your resource group name>" -n "<your shared disk name>" --query 'id' -o tsv)
@@ -133,7 +133,7 @@ Failover clusters depend on infrastructure services. Windows Server supports mul
 | Element | Description |
 | --- | --- |
 | DNS | The servers in the cluster use Domain Name System (DNS) for name resolution. Use a custom DNS role installed in an Azure VM. |
-| Active Directory | A SQL Server failover cluster instance (FCI) requires that both VMs are members of Azure Active Directory Domain Services (Azure AD DS). |
+| Active Directory | A SQL Server failover cluster instance (FCI) requires that both VMs are members of Microsoft Entra Domain Services (Microsoft Entra Domain Services). |
 | An administrative account | An account that has administrative privileges on all of the cluster's servers. |
 | | |
 

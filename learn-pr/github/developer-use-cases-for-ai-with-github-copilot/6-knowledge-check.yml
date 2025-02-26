@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.github.developer-use-cases-for-ai-with-github-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Developer Use Cases for AI with GitHub Copilot" module.
+  ms.date: 10/09/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 6
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How does GitHub Copilot assist developers in accelerating the learning of new programming languages or frameworks?"
+    choices:
+    - content: "By automatically translating code between different programming languages."
+      isCorrect: false
+      explanation: "Incorrect. While GitHub Copilot can help with code suggestions, it doesn't automatically translate entire codebases between languages."
+    - content: "By providing context-aware code snippets and inline documentation related to new functions and libraries."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot offers context-aware code suggestions and integrates documentation, helping developers understand and implement new languages or frameworks more effectively."
+    - content: "By offering video tutorials and interactive coding sessions within the IDE."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot does not provide video tutorials or interactive sessions; it focuses on code suggestions and assistance within the development environment."
+    - content: "By managing project dependencies and version control automatically."
+      isCorrect: false
+      explanation: "Incorrect. Dependency management and version control are handled by other tools and platforms, not directly by GitHub Copilot."
+ 
+  - content: "In what way does GitHub Copilot minimize context switching for developers?"
+    choices:
+    - content: "It integrates multiple project management tools into the IDE."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot does not integrate project management tools; it focuses on providing code assistance within the IDE."
+    - content: "It provides code suggestions and completions directly within the editor, reducing the need to search for solutions online."
+      isCorrect: true
+      explanation: "Correct. By offering in-editor code suggestions and completions, GitHub Copilot helps developers stay focused and reduces the need to switch contexts by searching for code snippets or solutions externally."
+    - content: "It automates the entire coding process, eliminating the need for manual coding."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot assists with code suggestions but does not automate the entire coding process."
+    - content: "It schedules tasks and manages developer workflows automatically."
+      isCorrect: false
+      explanation: "Incorrect. Task scheduling and workflow management are not functionalities provided by GitHub Copilot."
+ 
+  - content: "Which feature of GitHub Copilot enhances the process of writing and maintaining code documentation?"
+    choices:
+    - content: "Automated generation of UML diagrams from code."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot does not generate UML diagrams; it focuses on code suggestions and documentation text."
+    - content: "Generating contextually relevant inline comments and function descriptions automatically."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot can automatically generate inline comments and detailed function descriptions, helping maintain clear and consistent documentation."
+    - content: "Translating documentation into multiple languages in real-time."
+      isCorrect: false
+      explanation: "Incorrect. GitHub Copilot does not provide real-time translation of documentation into different languages."
+    - content: "Creating comprehensive project management reports based on code commits."
+      isCorrect: false
+      explanation: "Incorrect. Project management reporting is outside the scope of GitHub Copilot’s functionalities."
+ 
+  - content: "What is one way GitHub Copilot automates routine coding tasks for developers?"
+    choices:
+    - content: "By deploying applications to production environments automatically."
+      isCorrect: false
+      explanation: "Incorrect. Deployment to production is managed by other tools and platforms, not by GitHub Copilot."
+    - content: "By generating boilerplate code for common functionalities, such as setting up a REST API."
+      isCorrect: true
+      explanation: "Correct. GitHub Copilot can quickly generate boilerplate code for repetitive tasks like setting up REST APIs, saving developers time and effort."
+    - content: "By managing database migrations and schema changes automatically."
+      isCorrect: false
+      explanation: "Incorrect. Database migrations and schema management are handled by specialized tools, not by GitHub Copilot."
+    - content: "By conducting performance testing and optimization of code automatically."
+      isCorrect: false
+      explanation: "Incorrect. Performance testing and optimization require specialized tools and processes beyond GitHub Copilot’s code suggestion capabilities."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-evaluations-generate-synthetic-datasets.track-evaluations-azure-ai-studio
+title: Exercise - Track evaluation results in Azure AI Foundry
+metadata:
+  title: Exercise - Track evaluation results in Azure AI Foundry
+  description: Learn how to track evaluation results in Azure AI Foundry.
+  ms.date: 10/13/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-track-evaluations-azure-ai-studio.md)]

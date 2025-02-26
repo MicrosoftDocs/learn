@@ -3,16 +3,15 @@ uid: learn.student-evangelism.academic-program-certifications-define-requirement
 metadata:
   title: Knowledge check
   description: Check your understanding so far.
-  ms.date: 07/01/2021 
+  ms.date: 03/27/2023 
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 title: Knowledge check
 durationInMinutes: 2
 content: |
-  Choose the best response for each question. Then, select **Check your answers**.
+  Choose the best response for each question. 
 quiz: 
   questions: 
     - content: Which of the following approaches to implementing certification offers the most flexibility for delivery?

@@ -1,6 +1,6 @@
 To run a batch job, we need to add a *pool* to our Batch account. A pool contains compute nodes, which are the engines that run your Batch job. You specify the number, size, and operating system of nodes at creation time. In this exercise, you'll modify the console app you made in the previous exercise to add a pool to your Batch account.
 
-Your company wants to control the costs of the app, and have asked you to use a fixed number of nodes.
+Your company wants to control the costs of the app, and has asked you to use a fixed number of nodes.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -23,23 +23,24 @@ Your company wants to control the costs of the app, and have asked you to use a 
     private const string appPackageVersion = "3.4";
     ```
 
-    The above settings will be used in the code to create the pool. Looking at each variable we can explain them as follows.
-    - **PoolId**: The name our code will use to reference the pool in other batch client calls.
-    - **LowPriorityNodeCount**: You're going to create a pool with three low-priority virtual machines (VMs)
-    - **PoolVMSize**: The VMs will be STANDARD_A1_v2, which gives the nodes 1 CPU, 2 GB of RAM, and 10 GB of SSD storage
-    - **appPackageId**: The name of the application package to use on the nodes you create
-    - **appPackageVersion**: The version of the application to use on the nodes you create
+    The preceding settings are used in the code to create the pool. Looking at each variable, we can explain them as follows:
+    - **PoolId**: The name our code uses to reference the pool in other batch client calls.
+    - **LowPriorityNodeCount**: You're going to create a pool with three low-priority virtual machines (VMs).
+    - **PoolVMSize**: The VMs will be STANDARD_A1_v2, which gives the nodes 1 CPU, 2 GB of RAM, and 10 GB of SSD storage.
+    - **appPackageId**: The name of the application package to use on the nodes you create.
+    - **appPackageVersion**: The version of the application to use on the nodes you create.
 
 ## Update the Main() method to support asynchronous calls
 
 We'll be making several asynchronous calls to cloud services, so the first thing to do is to make `Main` asynchronous. With C# .NET version 7.1 and onwards, async `Main` methods in console applications are supported.
 
-1. Change the console app to allow async method calls, by first adding System.Threading.Tasks library.
+1. Change the console app to allow async method calls, by first adding the `System.Threading.Tasks` library.
 
     ```csharp
     using System.Threading.Tasks;
     using System.Collections.Generic; // Also add generics to allow the app to use Lists
     ```
+
 1. Next, update the `Main` method signature as follows:
 
     ```csharp
@@ -48,14 +49,14 @@ We'll be making several asynchronous calls to cloud services, so the first thing
 
 ## Create a pool
 
-1. Add the following new  method to the Program class to create a Batch pool. The method will:
+1. Add the following new method to the Program class to create a Batch pool. The method:
 
-    - Create an image reference object to store the settings for the nodes to be added to the pool.
-    - Use the image reference to create a VirtualMachineConfiguration object.
-    - Create an unbound pool using the properties declared above and the VirtualMachineConfiguration.
-    - Add an application package reference  to the pool.
-    - Create the pool on Azure.
-    - Take two parameters, the batchClient and PoolId.
+    - Creates an image-reference object to store the settings for the nodes to be added to the pool.
+    - Uses the image reference to create a `VirtualMachineConfiguration` object.
+    - Creates an unbound pool using the properties declared previously and the `VirtualMachineConfiguration`.
+    - Adds an application package reference to the pool.
+    - Creates the pool on Azure.
+    - Takes two parameters, the `batchClient` and `PoolId`.
 
     ```csharp
       private static async Task CreateBatchPoolAsync(BatchClient batchClient, string poolId)
@@ -140,17 +141,17 @@ We'll be making several asynchronous calls to cloud services, so the first thing
 
 ## Test the app
 
-1. In the code editor, right-click and select **Save**, and then select **Quit**.
+1. In the code editor, right-click and select **Save**, then right-click and select **Quit**.
 
-1. In the Cloud Shell, compile and run the app with the following command.
+1. In the Cloud Shell, compile and run the app with the following command:
 
     ```bash
     dotnet run
     ```
 
-1. The app will take a few minutes to run, and output:
+1. The app will take a few minutes to run, and you should get the following output:
 
-    ```bash
+    ```output
     URL: <your batch account url, Name: <your batch name>, Key: <your batch key>
     Creating pool [WinFFmpegPool]...
     ```

@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/10/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Create and manage background jobs and scheduled jobs in Windows PowerShell
 prerequisites: |
   *   Familiarity with Windows networking technologies and implementation
@@ -28,14 +27,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 modules:

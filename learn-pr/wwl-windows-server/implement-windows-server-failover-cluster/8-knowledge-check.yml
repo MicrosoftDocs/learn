@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/28/2021
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -19,43 +18,43 @@ quiz:
     choices:
     - content: "Enable the dynamic quorum"
       isCorrect: false
-      explanation: "That's incorrect. Dynamic quorum is enabled by default. Dynamic quorum provides high availability within a failover cluster by continuously monitoring and adjusting the quorum model based on the available cluster nodes."
+      explanation: "Incorrect. Dynamic quorum is enabled by default. Dynamic quorum provides high availability within a failover cluster by continuously monitoring and adjusting the quorum model based on the available cluster nodes."
     - content: "Raise the cluster functional level"
       isCorrect: true
-      explanation: "That's correct. After all the nodes that were running Windows Server 2016 have been replaced with Windows Server 2019 nodes, you can update the cluster functional level. Windows Server failover clustering capabilities depend on the cluster functional level."
+      explanation: "Correct. After all the nodes that were running Windows Server 2016 have been replaced with Windows Server 2019 nodes, you can update the cluster functional level. Windows Server failover clustering capabilities depend on the cluster functional level."
     - content: "Enable the dynamic witness"
       isCorrect: false
-      explanation: "That's incorrect. Dynamic witness is enabled by default. Windows Server adjusts the witness vote dynamically based on the number of voting nodes in the failover cluster."
+      explanation: "Incorrect. Dynamic witness is enabled by default. Windows Server adjusts the witness vote dynamically based on the number of voting nodes in the failover cluster."
   - content: "Which of the following events warrants running Windows Server failover cluster validation tests?"
     choices:
     - content: "Manual failover of a cluster role"
       isCorrect: false
-      explanation: "That's incorrect. This is part of standard cluster operations."
+      explanation: "Incorrect. This is part of standard cluster operations."
     - content: "Upgrading firmware of host bus adapters"
       isCorrect: true
-      explanation: "That's correct. You should run validation tests whenever you make any major configuration changes, including upgrading firmware or drivers of host bus adapters."
+      explanation: "Correct. You should run validation tests whenever you make any major configuration changes, including upgrading firmware or drivers of host bus adapters."
     - content: "Adding a cluster role to the cluster"
       isCorrect: false
-      explanation: "That's incorrect. This is part of standard cluster operations."
+      explanation: "Incorrect. This is part of standard cluster operations."
   - content: "What should an administrator do first if they need to initiate Cluster-Aware Updating from a Windows 10 computer?"
     choices:
     - content: "Install a clustered role"
       isCorrect: false
-      explanation: "That's incorrect. A clustered role is required when using self-updating mode."
+      explanation: "Incorrect. A clustered role is required when using self-updating mode."
     - content: "Install the Failover Clustering Tools on your computer"
       isCorrect: true
-      explanation: "That's correct. To use Cluster-Aware Updating in remote-updating mode, install the Failover Clustering Tools on a remote computer with direct connectivity to the cluster nodes."
+      explanation: "Correct. To use Cluster-Aware Updating in remote-updating mode, install the Failover Clustering Tools on a remote computer with direct connectivity to the cluster nodes."
     - content: "Pause cluster nodes"
       isCorrect: false
-      explanation: "That's incorrect. This isn't required when using Cluster-Aware Updating."
+      explanation: "Incorrect. This isn't required when using Cluster-Aware Updating."
   - content: "What's the maximum allowed round-trip latency between two sites hosting stretched cluster nodes?"
     choices:
     - content: "1 ms"
       isCorrect: false
-      explanation: "That's incorrect. Stretch clusters require synchronous replication. This requirement imposes the limit of 5-ms round-trip network latency between two groups of cluster nodes in the replicated sites."
+      explanation: "Incorrect. Stretch clusters require synchronous replication. This requirement imposes the limit of 5-ms round-trip network latency between two groups of cluster nodes in the replicated sites."
     - content: "5 ms"
       isCorrect: true
-      explanation: "That's correct. Stretch clusters require synchronous replication. This requirement imposes the limit of 5-ms round-trip network latency between two groups of cluster nodes in the replicated sites."
+      explanation: "Correct. Stretch clusters require synchronous replication. This requirement imposes the limit of 5-ms round-trip network latency between two groups of cluster nodes in the replicated sites."
     - content: "100 ms"
       isCorrect: false
-      explanation: "That's incorrect. Stretch clusters require synchronous replication. This requirement imposes the limit of 5-ms round-trip network latency between two groups of cluster nodes in the replicated sites."
+      explanation: "Incorrect. Stretch clusters require synchronous replication. This requirement imposes the limit of 5-ms round-trip network latency between two groups of cluster nodes in the replicated sites."

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-build-deploy-your-own-ai-copilot.prepare-guided-project
+title: Prepare for guided project
+metadata:
+  title: Prepare for guided project
+  description: "Prepare for guided project"
+  ms.date: 11/13/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-prepare-guided-project.md)]

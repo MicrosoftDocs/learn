@@ -2,19 +2,19 @@ You're a member of a team that wants to create accessible games but is unsure wh
 
 The team develops games for a living, so we can assume they know how games are played. When it comes to accessibility, your team needs to think about this process with a wide range of players in mind.
 
-Start with an assessment of the following:
+Start with an assessment:
 
 - How do games provide information to players?
 - How do players interpret this information?
 - How do players act upon this information for successful gameplay?
 
-In this unit, you're introduced to basic gaming and disability concepts. You'll also learn how to assess the gameplay process within the context of accessibility. You'll increase your understanding of how specific game elements or mechanics can introduce inaccessible experiences for players.
+In this unit, you're introduced to basic gaming and disability concepts. You also learn how to assess the gameplay process within the context of accessibility. You increase your understanding of how specific game elements or mechanics can introduce inaccessible experiences for players.
 
 ## How are games played?
 
 The following video introduces basic concepts about gaming and disability. It introduces ways to approach the question of "how games are played" within the context of accessibility. An understanding of this approach helps you establish the foundation you need to begin your game accessibility journey.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOfIK]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a3d78e64-ada3-461a-a766-204eccb81725]
 
 ## Solve for one, extend to many
 
@@ -29,4 +29,4 @@ When it comes to game accessibility, options or features intended for a specific
 
 For example, captions and subtitles are intended to make game experiences accessible to players with hearing loss or players who are d/Deaf. They might also assist players who are easily distracted and miss audio cues. Players in a loud environment can also benefit from these features.
 
-As you learn about visual, audio, cognitive, and input accessibility concepts throughout this module, keep the broader impact of your future efforts in mind.
+As you learn about visual, audio, cognitive, and input accessibility concepts throughout this module, keep the broader effect of your future efforts in mind.

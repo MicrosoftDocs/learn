@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-machine-learning.multiclass-classification
+title: Multiclass classification
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Multiclass classification
+  description: "Multiclass classification"
+  ms.date: 02/14/2025
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-multiclass-classification.md)]

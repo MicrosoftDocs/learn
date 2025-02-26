@@ -2,13 +2,14 @@
 uid: learn.azure.publish-static-web-app-authentication.6-exercise-configure-access
 title: Exercise - Configure authentication providers and access
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Configure authentication providers and access
   description: Use Azure Static Web Apps settings to prevent unwanted access to unauthenticated users and restrict allowed identity providers
   ms.date: 12/20/2022
-  author: sinedied
-  ms.author: yolasors
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: craigshoemaker
+  ms.author: cshoe
+  ms.topic: unit
   ms.custom:
   - team=nextgen
   - team=cloud_advocates
@@ -19,3 +20,4 @@ sandbox: true
 durationInMinutes: 4
 content: |
   [!include[](includes/6-exercise-configure-access.md)]
+

@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.define-microsoft-ai-strategy-manufacturing
+metadata:
+  title: Define a Microsoft AI strategy to create business value in manufacturing
+  description: "Discover AI use cases and scenarios for manufacturing. Get familiar with Microsoft AI tools and services for manufacturing. Learn from real success stories."
+  ms.date: 08/12/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: microsoft-cloud-manufacturing
+  ai-usage: human-only
+title: Define a Microsoft AI strategy to create business value in manufacturing
+summary: This module is designed to help manufacturing professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+abstract: |
+  -   Describe common goals and challenges in manufacturing.
+
+  -   Identify AI use cases for manufacturing organizations.
+
+  -   Identify Microsoft AI technologies that can support manufacturing use cases.
+prerequisites: |
+  -   Basic understanding of AI concepts.
+
+  -   Basic understanding of manufacturing concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+products:
+- azure-openai
+- industry-solutions
+- mscloud-manufacturing
+subjects:
+- artificial-intelligence
+- data-management
+units:
+- learn.wwl.define-microsoft-ai-strategy-manufacturing.introduction
+- learn.wwl.define-microsoft-ai-strategy-manufacturing.1b-ai-manufacturing
+- learn.wwl.define-microsoft-ai-strategy-manufacturing.goals-challenges-manufacturing
+- learn.wwl.define-microsoft-ai-strategy-manufacturing.opportunities-ai-manufacturing
+- learn.wwl.define-microsoft-ai-strategy-manufacturing.microsoft-ai-use-cases
+- learn.wwl.define-microsoft-ai-strategy-manufacturing.discover-ai-cuts-development-time
+- learn.wwl.define-microsoft-ai-strategy-manufacturing.knowledge-check
+- learn.wwl.define-microsoft-ai-strategy-manufacturing.summary
+badge:
+  uid: learn.wwl.define-microsoft-ai-strategy-manufacturing.badge

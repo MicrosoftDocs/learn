@@ -2,13 +2,14 @@
 uid: learn.wwl.troubleshoot-platform-service-issues.troubleshoot-paas-vn-integration
 title: Troubleshoot integration of virtual machines with virtual networks in Microsoft Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot integration of virtual machines with virtual networks in Microsoft Azure
   description: "Troubleshoot integration of virtual machines with virtual networks in Microsoft Azure"
-  ms.date: 07/14/2022
-  author: wwlpublish
-  ms.author: lola
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/27/2023
+  author: mistoyanwork
+  ms.author: mistoyan
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

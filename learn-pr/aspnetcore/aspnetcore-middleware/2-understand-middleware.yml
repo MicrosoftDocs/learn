@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore-middleware.understand-middleware
+
+title: Understand middleware
+metadata:
+  title: Understand middleware
+  description: This unit explains what middleware is and how it works in ASP.NET Core.
+  ms.date: 8/29/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand-middleware.md)]

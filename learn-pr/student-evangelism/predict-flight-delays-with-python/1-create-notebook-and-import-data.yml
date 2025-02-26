@@ -2,14 +2,18 @@
 uid: learn.student-evangelism.predict-flight-delays-with-python.create-notebook-and-import-data
 title: Exercise - Create an Azure Notebook and Import Data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an Azure Notebook and Import Data
   description: Create an Azure Notebook and Import Data
   ms.date: 02/25/2019
   author: JeffProsise
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
 durationInMinutes: 8
 content: |
   [!include[](includes/1-create-notebook-and-import-data.md)]
+

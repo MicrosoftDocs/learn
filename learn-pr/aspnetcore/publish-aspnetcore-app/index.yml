@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.publish-aspnetcore-app
+metadata:
+  title: Publish an ASP.NET Core app
+  description: "Learn how to publish an ASP.NET Core app for deployment to a web server or cloud service."
+  ms.date: 8/28/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: module
+  ms.service: aspnet-core
+title: Publish an ASP.NET Core app
+summary: "Publish an ASP.NET Core app using the .NET CLI. Describe the difference between framework-dependent and self-contained deployments. Understand deploying an ASP.NET Core app to Azure."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe some of the deployment options available for ASP.NET Core apps.
+    - Describe what the `dotnet publish` command does.
+    - Publish an ASP.NET Core app as a framework-dependent deployment.
+    - Publish an ASP.NET Core app as a self-contained deployment.
+prerequisites: |
+  - Ability to write C# and Razor code at a beginner level.
+  - Ability to use the .NET CLI at a beginner level.
+  - Latest .NET SDK installed.
+  - Visual Studio Code installed with the following extensions:
+    - C# Dev Kit
+    - Azure Tools (optional)
+  - An Azure subscription (optional).
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- aspnet-core
+- azure-app-service
+units:
+- learn.publish-aspnetcore-app.intro
+- learn.publish-aspnetcore-app.publish-dotnet-apps
+- learn.publish-aspnetcore-app.exercise-framework-dependent
+- learn.publish-aspnetcore-app.exercise-self-contained
+- learn.publish-aspnetcore-app.exercise-publish-azure
+- learn.publish-aspnetcore-app.knowledge-check
+- learn.publish-aspnetcore-app.summary
+badge:
+  uid: learn.publish-aspnetcore-app.badge

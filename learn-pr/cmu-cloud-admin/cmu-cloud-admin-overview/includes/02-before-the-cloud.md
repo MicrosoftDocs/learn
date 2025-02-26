@@ -32,7 +32,7 @@ The late 1990s marked a steady increase in the adoption of these computing appli
 
 _Figure 1.2: Comparing Traditional and Internet-Scale Computing._
 
-The 21st century has been marked by an explosion in the volume and capacity of wireless communications, the World Wide Web, and the Internet. These changes have led to a network- and data-driven society, where producing, disseminating, and accessing digitized information is simplified. The Internet has created a global marketplace of more than 4 billion users. This rise in data and connections is valuable to businesses. Data creates value in several ways, including by enabling experimentation, segmenting populations, and supporting decision-making with automation<sup>[1][^1]</sup>. By embracing digital technologies, the world's top 10 economies were expected to increase their output by more than a trillion dollars between 2015 and 2020<sup>[2][^2]</sup>.
+The 21st century has been marked by an explosion in the volume and capacity of wireless communications, the World Wide Web, and the Internet. These changes have led to a network- and data-driven society, where producing, disseminating, and accessing digitized information is simplified. The Internet has created a global marketplace of more than 4 billion users. This rise in data and connections is valuable to businesses. Data creates value in several ways, including by enabling experimentation, segmenting populations, and supporting decision-making with automation<sup>[1][^1]</sup>. By embracing digital technologies, the world's top 10 economies were expected to increase their output by more than a trillion dollars between 2015 and 2020.
 
 The increasing number of connections enabled by the Internet has also driven its value. Researchers have hypothesized that the value of a network varies super-linearly as a function of the number of users. Thus, at Internet scale, gaining and retaining customers is a priority, and this is done by building reliable and responsive services, and making changes based on observed data patterns.
 
@@ -75,12 +75,8 @@ The cloud was a logical successor that combined many of the features of the solu
 ### References
 
 1. _IBM (2017). *What is big data?* <https://www.ibm.com/analytics/hadoop/big-data-analytics>_
-2. _Accenture (2015). *Increased Use of Digital Technologies Could Add \$1.36 Trillion to World's Top 10 Economies in 2020*. <https://newsroom.accenture.com/subjects/strategy/increased-use-of-digital-technologies-could-add-over-1-trillion-dollars-to-worlds-top-10-economies-in-2020-according-to-new-study-from-accenture.htm>_
 3. _Google Inc. (2015). *How Search Works*. <https://www.google.com/insidesearch/howsearchworks/thestory/>_
 4. _Hamilton, James R and others (2007). *On Designing and Deploying Internet-Scale Services*_
 
 [^1]: <https://www.ibm.com/analytics/hadoop/big-data-analytics>  "IBM (2017). *What is big data?*"
-
-[^2]: <https://newsroom.accenture.com/subjects/strategy/increased-use-of-digital-technologies-could-add-over-1-trillion-dollars-to-worlds-top-10-economies-in-2020-according-to-new-study-from-accenture.htm>  "Accenture (2015). *Increased Use of Digital Technologies Could Add \$1.36 Trillion to World's Top 10 Economies in 2020*."
-
 [^3]: <https://www.google.com/insidesearch/howsearchworks/thestory/>  "Google Inc. (2015). *How Search Works*"

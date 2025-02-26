@@ -27,15 +27,14 @@ Learn more about the MEAN stack components and other Node.js packages you used i
 * [Express.js](https://expressjs.com?azure-portal=true)
 * [AngularJS](https://angularjs.org?azure-portal=true)
 * [Node.js](https://nodejs.org?azure-portal=true)
-
 * [npm](https://www.npmjs.com?azure-portal=true)
 * [Mongoose](https://www.npmjs.com/package/mongoose?azure-portal=true)
 * [body-parser](https://www.npmjs.com/package/body-parser?azure-portal=true)
 
 ### Learn about the Azure Web Apps service
 
-In this module, you used a VM to host your web application. A VM gives you more control over the environment and might best fit how you currently manage your deployments. But there are other ways to host web applications. Check out [Create a Node.js web app in Azure](/azure/app-service/app-service-web-get-started-nodejs?azure-portal=true) to learn how to use the Azure Web Apps service to simplify your deployments.
+In this module, you used a virtual machine (VM) to host your web application. A VM gives you more control over the environment and might best fit how you currently manage your deployments. However, there are other ways to host web applications. Check out [Create a Node.js web app in Azure](/azure/app-service/app-service-web-get-started-nodejs?azure-portal=true) to learn how to use the Azure Web Apps service to simplify your deployments.
 
 ### Automate your deployments
 
-Also in this module, you used a mainly manual process to configure your VM and run your app. As your process matures, you can use a more automated process to deploy changes more quickly and more reliably. Check out [Create a CI/CD pipeline for Node.js with the Azure DevOps Project](/azure/devops-project/azure-devops-project-nodejs?azure-portal=true) to learn how to use Azure DevOps to deploy your Node.js application as part of a continuous integration and continuous delivery (CI/CD) pipeline.
+Also in this module, you used a manual process to configure your VM and run your app. As your process matures, you can use a more automated process to deploy changes more quickly and more reliably. Check out [Create a CI/CD pipeline for Node.js with the Azure DevOps Project](/azure/devops-project/azure-devops-project-nodejs?azure-portal=true) to learn how to use Azure DevOps to deploy your Node.js application as part of a continuous integration and continuous delivery (CI/CD) pipeline.

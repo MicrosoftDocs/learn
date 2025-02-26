@@ -1,4 +1,4 @@
-You have completed all the tasks for this module. Here you'll clean up your Azure resources, move the work item to the **Done** state in Azure Boards, and then clean up your Azure DevOps environment.
+You've completed all the tasks for this module. Here, you'll clean up your Azure resources, move the work item to the **Done** state in Azure Boards, and clean up your Azure DevOps environment.
 
 ## Clean up Azure resources
 
@@ -10,13 +10,13 @@ The easiest way to delete your Azure App Service instances is to delete their pa
 
     :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="Screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
-1. Run the following command to delete your resource group: *tailspin-space-game-rg*. When prompted, enter *y* to confirm your choice.
+1. Run the following command to delete your resource group (*tailspin-space-game-rg*). When prompted, enter *y* to confirm your choice.
 
     ```azurecli
     az group delete --name tailspin-space-game-rg
     ```
 
-1. To confirm the deletion, execute the below command and ensure that your resource group is not listed anymore.
+1. To confirm the deletion, execute the following command and ensure that your resource group is not listed anymore.
 
     ```azurecli
     az group list --output table
@@ -24,9 +24,9 @@ The easiest way to delete your Azure App Service instances is to delete their pa
 
 ## Move the work item to Done
 
-Here you move the work item that you assigned to yourself earlier in this module. You move **Create container version of web site using Docker** to the **Done** column.
+Here, you'll move the work item that you assigned to yourself earlier in this module. You'll move **Create container version of web site using Docker** to the **Done** column.
 
-In practice, "Done" often means putting working software into the hands of your users. For learning purposes, here you mark this work as "Done" because you fulfilled the goal for the Tailspin team. They wanted to package and deploy their web app as a Docker container.
+In practice, "Done" often means putting working software into the hands of your users. For learning purposes, you'll mark this work as "Done" because you fulfilled the goal for the Tailspin team. They wanted to package and deploy their web app as a Docker container.
 
 At the end of each *sprint*, or work iteration, you and your team can hold a retrospective meeting. In the meeting, share the work you completed, what went well, and what you can improve.
 
@@ -52,11 +52,11 @@ Disable the pipeline so that it doesn't process build requests. You can re-enabl
 To disable the pipeline:
 
 1. In Azure Pipelines, navigate to your pipeline.
-1. From the drop-down menu, select **Settings**:
+1. From the **More actions** (***...***) drop-down menu, select **Settings**:
 
     :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="Screenshot of Azure Pipelines showing the location of the Settings menu.":::
 
-1. Under **Processing of new run requests**, select **Disabled** and then select **Save**. Your pipeline will no longer process new build requests.
+1. Under **Processing of new run requests**, select **Disabled**, then select **Save**. Your pipeline will no longer process new build requests.
 
 ### Option 2: Delete the Azure DevOps project
 
@@ -70,4 +70,4 @@ To delete the project:
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="Screenshot of Azure Pipelines showing the location of the Delete button.":::
 
-1. Once the new window appears, input the project name and proceed by selecting the **Delete** option once more.
+1. Once the new window appears, input the project name and select **Delete** once more.

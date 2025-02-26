@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.accessibility-design-specs-with-annotations.overview-accessibility-annotation
+title: Overview of accessibility annotation
+metadata:
+  title: Overview of Accessibility Annotation
+  description: This unit is a part of the accessibility design specs with annotations module.
+  ms.date: 02/14/2025
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/2-overview-accessibility-annotation.md)]

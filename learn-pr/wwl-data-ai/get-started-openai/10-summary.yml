@@ -2,13 +2,17 @@
 uid: learn.wwl.get-started-openai.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
-  description: This unit summarizes the key concepts covered in the module, including using Azure OpenAI Studio, deploying models, and prompt engineering.
-  ms.date: 2/27/2023
-  author: sherzyang
-  ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  description: This unit summarizes the key concepts covered in the module, including using Azure AI Studio, deploying models, and prompt engineering.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 08/06/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
+

@@ -2,13 +2,16 @@
 uid: learn.wwl.deploy-model-batch-endpoint.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/25/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:
@@ -34,3 +37,4 @@ quiz:
     - content: "The default deployed model."
       isCorrect: true
       explanation: "Correct. The default deployment will be used to do the actual batch scoring when the endpoint is invoked."
+

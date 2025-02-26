@@ -2,14 +2,18 @@
 uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.understand-azure-pipelines
 title: Understand Azure Pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand Azure Pipelines
   description: Learn about pipelines, jobs, and steps. Also, learn how pipelines run on agents.
   ms.date: 01/30/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 7
 content: |
   [!include[](includes/2-understand-azure-pipelines.md)]
+

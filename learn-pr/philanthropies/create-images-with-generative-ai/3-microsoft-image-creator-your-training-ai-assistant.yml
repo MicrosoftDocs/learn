@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.create-images-with-generative-ai.microsoft-image-creator-your-training-ai-assistant
+title: Microsoft Image Creator, your training AI assistant
+metadata:
+  title: Microsoft Image Creator, your training AI assistant
+  description: This content is a part of the 'Create images with generative AI' module.
+  author: yoosunee
+  ms.author: anruss
+  ms.date: 01/14/2025
+  ms.topic: unit
+  ms.collection:
+    - philanthropies-ai-copilot
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-microsoft-image-creator-your-training-ai-assistant.md)]

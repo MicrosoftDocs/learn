@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-question-answer-solution-ai-language.understand-question-answer-capability
+title: Understand question answering
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand question answering
+  description: Understand question answering
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 08/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-understand-question-answer-capability.md)]
+

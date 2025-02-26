@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.boost-your-productivity-with-microsoft-copilot.time-management-assistance-with-copilot
+title: Get time management assistance with Copilot
+metadata:
+  title: Get time management assistance with Copilot
+  description: This unit is a part of the module about boosting productivity with Copilot.
+  ms.date: 01/14/2025
+  author: v-downesmary
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-time-management-assistance-with-copilot.md)]

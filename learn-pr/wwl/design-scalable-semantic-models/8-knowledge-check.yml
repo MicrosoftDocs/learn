@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.design-scalable-semantic-models.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check for the design scalable semantic models module."
+  ms.date: 10/15/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 3
+###########################################################################
+###
+### General guidance (https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check?branch=main)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: What is a key advantage of using the Import mode in a scalable semantic model?
+    choices:
+    - content: It supports many-to-many relationships without the need for bridge tables.
+      isCorrect: false
+      explanation: Incorrect. This is a feature of Composite model, not Import mode.
+    - content: It allows querying data directly from the source without storing it in Power BI.
+      isCorrect: false
+      explanation: Incorrect. This is a feature of DirectQuery mode, not Import mode.
+    - content: It offers the most flexibility and fastest performance but requires periodic refreshes to keep the data current.
+      isCorrect: true
+      explanation: Correct. Import mode involves importing and storing data within Power BI, offering the most flexibility and fastest performance.
+  - content: What is the purpose of iterator functions in DAX?
+    choices:
+    - content: To store the result of an expression and reuse it multiple times
+      isCorrect: false
+      explanation: Incorrect. This describes the purpose of variables in DAX, not iterator functions.
+    - content: To perform row-by-row calculations over a table and return a single value
+      isCorrect: true
+      explanation: Correct. Iterator functions in DAX, such as SUMX, AVERAGEX, and MAXX, perform row-by-row calculations over a table and return a single value.
+    - content: To perform checks and return information about the data
+      isCorrect: false
+      explanation: Incorrect. This describes the purpose of information functions in DAX, not iterator functions.
+  - content: What is the primary benefit of using calculation groups in a semantic model?
+    choices:
+    - content: They enable users to select different fields or measures dynamically.
+      isCorrect: false
+      explanation: Incorrect. This functionality is provided by field parameters, not calculation groups.
+    - content: They allow for reusable calculations that apply across multiple measures, reducing redundancy and simplifying maintenance.
+      isCorrect: true
+      explanation: Correct. Calculation groups streamline complex calculations like time intelligence functions across the entire model.
+    - content: They allow for dynamic formatting based on certain conditions.
+      isCorrect: false
+      explanation: Incorrect. Dynamic formatting is achieved through dynamic format strings, not calculation groups.

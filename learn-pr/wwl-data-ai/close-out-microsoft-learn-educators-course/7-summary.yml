@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.close-out-microsoft-learn-educators-course.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Summary
+  description: "Summary"
+  ms.date: 07/02/2024
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

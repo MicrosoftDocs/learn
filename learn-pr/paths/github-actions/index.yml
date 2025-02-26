@@ -1,0 +1,46 @@
+### YamlMime:LearningPath
+uid: learn.github-actions
+metadata:
+  title: Automate your workflow with GitHub Actions
+  description: Learn how GitHub Actions enables you to automate your software development cycle.
+  brand: github
+  ms.date: 08/15/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: learning-path
+title: Automate your workflow with GitHub Actions
+summary: |
+  Learn how GitHub Actions enables you to automate your software development cycle.
+
+  In this learning path, you'll:
+
+  - Plan automation of your software development life cycle with GitHub Actions workflows.
+  - Use GitHub Actions to automatically build your application.
+  - Use GitHub Script to interact with the GitHub API.
+  - Publish automatically and securely your code libraries or Docker images with GitHub Packages.
+prerequisites: |
+ - A [GitHub](https://github.com?azure-portal=true) account
+iconUrl: /training/achievements/github/automate-workflow-github-actions.svg
+levels:
+- beginner
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- github
+subjects:
+- devops
+modules:
+- learn.github.github-actions-automate-tasks
+- learn.github.github-actions-ci
+- learn.github.github-actions-cd
+- learn.github.automate-github-using-github-script
+- learn.github.github-actions-packages 
+- learn.github.create-custom-github-actions
+- learn.github.manage-github-actions-enterprise
+trophy:
+  uid: learn.github-actions.trophy

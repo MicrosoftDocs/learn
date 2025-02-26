@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.automatic-function-calling
+metadata:
+  title: Automatic function calling
+  description: "Learn how you can automatically invoke functions using the Semantic Kernel SDK."
+  ms.date: 08/28/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: semantic-kernel
+  ai-usage: human-only
+title: Automatic function calling
+summary: This module introduces a setting to automatically invoke functions using the Semantic Kernel SDK. Learn how to use the Semantic Kernel to automatically invoke functions to complete a user's request.
+abstract: '-   Learn how to use Semantic Kernel SDK to automatically invoke functions.'
+prerequisites: |
+  -   Experience programming in C#.
+
+  -   Visual Studio Code IDE installed.
+
+  -   Familiarity with Azure and the Azure portal.
+
+  -   Access to Azure OpenAI services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+- azure-openai
+units:
+- learn.wwl.automatic-function-calling.introduction
+- learn.wwl.automatic-function-calling.automatically-invoke-functions
+- learn.wwl.automatic-function-calling.exercise-suggest-concerts
+- learn.wwl.automatic-function-calling.exercise-automatically-invoke-functions
+- learn.wwl.automatic-function-calling.summary
+badge:
+  uid: learn.wwl.automatic-function-calling.badge

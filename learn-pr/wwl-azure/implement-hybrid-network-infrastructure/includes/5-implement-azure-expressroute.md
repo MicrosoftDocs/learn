@@ -1,5 +1,3 @@
-
-
 The Contoso IT security team is concerned about implementing a VPN connection from their datacenters to the Microsoft Cloud. While investigating VPN Gateway options, you discovered that ExpressRoute is one potential solution. With ExpressRoute, connections don't pass through the internet, thereby reducing the possible security threats for data in transit between the corporate infrastructure at Contoso, and Azure resources in Microsoft datacenters.
 
 ## What is ExpressRoute?
@@ -169,3 +167,4 @@ You can learn more by reviewing the following documents:
 
 - [Azure ExpressRoute for Office 365](https://aka.ms/azure-expressroute?azure-portal=true)
 - [ExpressRoute routing requirements](https://aka.ms/expressroute-requirements?azure-portal=true)
+

@@ -1,8 +1,6 @@
-
-
 Now, it's your chance to explore how to deploy models to a batch endpoint.
 
-In this exercise, you will:
+In this exercise, you learn how to:
 
 - Create a batch endpoint.
 - Deploy an MLflow model to the endpoint.
@@ -10,7 +8,6 @@ In this exercise, you will:
 
 ## Instructions
 
-Follow these instructions to complete the exercise:
+Launch the exercise and follow the instructions.
 
-1. View the exercise repo at [https://microsoftlearning.github.io/mslearn-azure-ml/](https://microsoftlearning.github.io/mslearn-azure-ml?azure-portal=true).
-1. Complete the **Deploy a model to a batch endpoint** exercise.
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/11-Deploy-batch-endpoint.html?azure-portal=true)

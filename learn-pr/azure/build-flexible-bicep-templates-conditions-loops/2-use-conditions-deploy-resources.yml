@@ -2,14 +2,18 @@
 uid: learn.azure.bicep-conditions-loops.use-conditions-deploy-resources
 title: Deploy resources conditionally
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Deploy resources conditionally
   description: Learn how to deploy resources conditionally,  based on Boolean values and expressions.
-  ms.date: 07/25/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/30/2025
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 4
 content: |
   [!include[](includes/2-use-conditions-deploy-resources.md)]
+

@@ -2,30 +2,30 @@
 uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms
 metadata:
   title: Automate the configuration of Windows Server IaaS Virtual Machines
-  description: "You'll be able to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension."
-  ms.date: 10/15/2020
+  description: "Learn how to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension."
+  ms.date: 12/24/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: windows-server
 title: Automate the configuration of Windows Server IaaS Virtual Machines
-summary: You'll be able to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension.
+summary: Learn how to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension.
 abstract: |
-  After completing this module, you will be able to:
-  - Describe Azure automation.
-  - Implement Azure automation with DSC.
+  After completing this module, you'll be able to:
+  - Describe Azure Automation.
+  - Implement Azure Automation with DSC.
   - Remediate noncompliant servers.
   - Describe custom script extension.
   - Configure a VM by using DSC extensions.
 prerequisites: |
-  In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following:
+  In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following technologies:
   - Managing the Windows Server operating system and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services
   - Common Windows Server management tools
   - Core Microsoft compute, storage, networking, and virtualization technologies
   - On-premises resiliency Windows Server-based compute and storage technologies
   - Implementing and managing IaaS services in Microsoft Azure
-  - Azure Active Directory (Azure AD)
-  - Security-related technologies such as firewalls, encryption, and multi-factor authentication
+  - Microsoft Entra ID
+  - Security-related technologies such as firewalls, encryption, and multifactor authentication
   - Windows PowerShell scripting
   - Automation and monitoring
 iconUrl: /training/achievements/automate-the-configuration-of-windows-server-iaaa-vms.svg

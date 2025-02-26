@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-hybrid-workloads-with-azure-arc.restrict-access-with-rbac
 title: Restrict access with RBAC
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Restrict access with RBAC
   description: "Restrict access with RBAC"
-  ms.date: 03/17/2023
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

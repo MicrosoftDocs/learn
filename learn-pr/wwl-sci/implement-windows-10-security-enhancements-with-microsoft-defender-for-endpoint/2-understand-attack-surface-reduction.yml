@@ -2,13 +2,14 @@
 uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint.understand-attack-surface-reduction
 title: Understand attack surface reduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand attack surface reduction
   description: "Understand attack surface reduction"
-  ms.date: 02/17/2023
+  ms.date: 1/16/2025
   author: wwlpublish
-  ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.author: kelawson
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

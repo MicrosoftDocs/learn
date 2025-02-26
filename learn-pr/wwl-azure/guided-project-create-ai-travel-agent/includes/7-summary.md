@@ -1,0 +1,1 @@
+In this module, you developed a proof-of-concept AI travel agent using the Semantic Kernel SDK. You practiced creating plugins, functions, and prompts that define the tasks the agent should perform. You practiced using templates, chat history, and function filters. Great work!

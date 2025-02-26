@@ -2,15 +2,19 @@
 uid: learn.secure-your-azure-virtual-machine-disks.6-exercise-use-arm-template-to-decrypt-vm
 title: Exercise - Use a Resource Manager template to decrypt the VM
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use a Resource Manager template to decrypt the VM
-  description: Exercise - Use a Resource Manager template to decrypt the VM
-  ms.date: 09/24/2018
+  description: Exercise - Use a Resource Manager template to decrypt the virtual machine (VM).
+  ms.date: 09/10/2024
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
 interactive: powershell
 azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-use-arm-template-to-decrypt-vm.md)]
+

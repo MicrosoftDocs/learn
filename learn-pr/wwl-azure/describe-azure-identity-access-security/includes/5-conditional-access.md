@@ -1,4 +1,4 @@
-Conditional Access is a tool that Azure Active Directory uses to allow (or deny) access to resources based on identity signals. These signals include who the user is, where the user is, and what device the user is requesting access from.
+Conditional Access is a tool that Microsoft Entra ID uses to allow (or deny) access to resources based on identity signals. These signals include who the user is, where the user is, and what device the user is requesting access from.
 
 Conditional Access helps IT administrators:
 
@@ -11,7 +11,7 @@ During sign-in, Conditional Access collects signals from the user, makes decisio
 
 The following diagram illustrates this flow:
 
-:::image type="content" source="../media/conditional-access-9bd268b8.png" alt-text="Diagram showing the conditional access flow of a signal leading to a decision, leading to enforcement.":::
+:::image type="content" source="../media/conditional-access-9bd268b8-757297cb.png" alt-text="Diagram showing the conditional access flow of a signal leading to a decision, leading to enforcement.":::
 
 
 Here, the signal might be the user's location, the user's device, or the application that the user is trying to access.

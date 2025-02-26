@@ -2,13 +2,14 @@
 uid: learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.examine-architectural-components
 title: Examine architectural components
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine architectural components
   description: "Examine architectural components"
   ms.date: 07/07/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

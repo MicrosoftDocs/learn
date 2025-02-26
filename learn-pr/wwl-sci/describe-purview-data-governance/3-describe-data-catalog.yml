@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.describe-purview-data-governance.describe-data-catalog
+title: Describe Microsoft Purview Data Catalog
+metadata:
+  title: Describe Microsoft Purview Data Catalog
+  description: "Describe Microsoft Purview Data Catalog."
+  ms.date: 9/19/2024
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-describe-data-catalog.md)]

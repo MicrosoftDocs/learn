@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-kusto-fabric.visualize-data
+title: Visualize real-time data
+metadata:
+  title: Visualize real-time data
+  description: "Understand options for visualizing real-time data in Microsoft Fabric."
+  ms.date: 12/03/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4b-visualize-data.md)]

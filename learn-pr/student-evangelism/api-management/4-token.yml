@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.api-management.token
+title: Token management
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Token management
+  description: This unit describes how to apply policies to manage tokens in Azure API Management service.
+  author: dlepow
+  ms.author: danlep
+  manager: susanpotter
+  ms.date: 06/30/2024
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-token.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: How does a token limit policy help in managing API usage?
+      choices:
+        - content: By allowing clients to bypass authentication if they exceed the token limit.
+          isCorrect: false
+          explanation: Incorrect. This is not the purpose of a token limit policy.
+        - content: By preventing clients from exceeding a predefined number of tokens, thus controlling API usage.
+          isCorrect: true
+          explanation: Correct, the idea with a token limit policy is to prevent clients from exceeding a predefined number of tokens. This policy is useful in controlling API usage.
+        - content: By ensuring that all tokens are valid for an unlimited period.
+          isCorrect: false
+          explanation: Incorrect. Token limit is about controlling the number of tokens, not the validity period.
+    - content: What are some good dimensions to use for a token metric policy in Azure API Management and why?
+      choices:
+        - content: Token usage by client ID, to monitor and analyze how different clients are utilizing tokens, helping in identifying heavy users and potential misuse.
+          isCorrect: true
+          explanation: Correct. Token usage by client ID is a good dimension to use for a token metric policy because it helps you monitor and analyze how different clients are utilizing tokens.
+        - content: Token encryption method, to ensure that all tokens are encrypted using the same algorithm.
+          isCorrect: false
+          explanation: Incorrect. Token encryption method isn't a good dimension to use for a token metric policy.
+        - content: Token expiration date, to automatically renew tokens before they expire.
+          isCorrect: false
+          explanation: Incorrect. Token expiration date isn't a good dimension to use for a token metric policy.

@@ -2,13 +2,14 @@
 uid: learn.wwl.troubleshoot-network-security-issues.setup-troubleshooting-environment
 title: Setup troubleshooting environment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Setup troubleshooting environment
   description: "Setup troubleshooting environment"
-  ms.date: 08/04/2022
-  author: wwlpublish
-  ms.author: lola
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/27/2023
+  author: mistoyanwork
+  ms.author: mistoyan
+  ms.topic: unit
 azureSandbox: true
 labModal: false
 durationInMinutes: 3

@@ -39,11 +39,11 @@ There are several points to consider when deciding whether Azure Logic Apps is t
 
 - **Consider conditional expressions**. Build highly complex and deeply nested conditionals into your Logic Apps. Logic Apps provides control constructs like Boolean expressions, switch statements, and loops so your apps can make decisions based on your data. 
 
-- **Consider connectors**. Investigate whether pre-built connectors are available for all the services you need to access. You might need to create custom connectors. If a service has an existing REST or SOAP API, you can make the custom connector in a few hours without writing any code. Otherwise, you need to create the API first before making the connector.
+- **Consider connectors**. Investigate whether prebuilt connectors are available for all the services you need to access. You might need to create custom connectors. If a service has an existing REST or SOAP API, you can make the custom connector in a few hours without writing any code. Otherwise, you need to create the API first before making the connector.
 
 - **Consider mixing compute solutions**. Take advantage of diverse features by mixing and matching services when you build an orchestration. You can call functions from Logic Apps, and call logic apps from an Azure function. Build each orchestration based on the service capabilities or your personal preference. 
 
-- **Consider other options**. Know when _not_ to use Azure Logic Apps. There are cases where Logic Apps might not be the best option. Logic Apps isn't an ideal solution for real-time requirements, complex business rules, or if you're using non-standard services.
+- **Consider other options**. Know when _not_ to use Azure Logic Apps. There are cases where Logic Apps might not be the best option. Logic Apps isn't an ideal solution for real-time requirements, complex business rules, or if you're using nonstandard services.
 
 #### Business application
 

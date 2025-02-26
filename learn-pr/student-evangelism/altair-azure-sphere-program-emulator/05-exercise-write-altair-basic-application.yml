@@ -2,14 +2,16 @@
 uid: learn.student-evangelism.altair-azure-sphere-program-emulator.exercise-write-altair-basic-application
 title: Exercise - Program the Altair emulator by using Altair BASIC
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Program the Altair emulator by using Altair BASIC
   description: In this exercise, follow the steps to program the Altair emulator by using Altair BASIC.
   ms.date: 11/16/2021
   author: gloveboxes
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
+  ms.topic: unit
   ms.custom: nextgen
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/05-exercise-write-altair-basic-application.md)]
+

@@ -1,10 +1,8 @@
-
-
 In this demonstration, you'll learn to:
 
 - Create a VM from a managed image.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSkl]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d288d7ae-06b8-46fb-9841-f18a191376ef]
 
 ## Next steps
 

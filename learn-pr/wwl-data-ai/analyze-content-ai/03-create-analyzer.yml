@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-content-ai.create-analyzer
+title: Create a Content Understanding analyzer
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create a Content Understanding analyzer
+  description: Use the Azure AI Foundry portal to create a Content Understanding analyzer.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 01/13/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/03-create-analyzer.md)]

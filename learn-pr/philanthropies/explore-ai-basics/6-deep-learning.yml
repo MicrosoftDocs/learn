@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-ai-basics.deep-learning
+title: Deep learning
+metadata:
+  title: Deep learning
+  description: This content is a part of the AI basics module.
+  ms.date: 01/14/2025
+  author: yoosunee
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-deep-learning.md)]

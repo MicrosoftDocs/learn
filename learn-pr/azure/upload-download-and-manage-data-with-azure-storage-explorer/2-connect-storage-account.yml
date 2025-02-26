@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.2-connect-storage-account
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect Azure Storage Explorer to a storage account
   description: Connect Azure Storage Explorer to a storage account
-  ms.date: 03/23/2023
+  ms.date: 09/19/2024
   author: normesta
   ms.author: normesta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Connect Azure Storage Explorer to a storage account
 durationInMinutes: 7
 content: |
   [!include[](includes/2-connect-storage-account.md)]
+

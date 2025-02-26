@@ -1,4 +1,3 @@
-
 Web Application Proxy is a Remote Access role service. This role service functions as a reverse web proxy, and provides users located on the internet with access to internal corporate web applications or Remote Desktop Gateway servers. Web Application Proxy can use AD FS to preauthenticate internet users and acts as an AD FS proxy for publishing claims-aware applications. 
 
 > [!NOTE]

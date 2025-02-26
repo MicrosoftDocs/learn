@@ -2,13 +2,15 @@
 uid: learn.design-health-model-mission-critical-workload.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Learn about the objectives of this health modeling training module.
-  ms.date: 01/12/2022
+  ms.date: 08/05/2024
   author: msimecek
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
+

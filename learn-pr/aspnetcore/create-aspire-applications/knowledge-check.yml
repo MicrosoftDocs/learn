@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.create-aspire-application.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Test what you've learned."
+  ms.date: 2/6/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: "Which of these prerequisites must be present on your computer, before you install .NET Aspire?"
+    choices:
+    - content: "Docker Desktop or Podman"
+      isCorrect: true
+      explanation: "That's correct! A local container host is required to run a project with .NET Aspire."
+    - content: "Docker Compose"
+      isCorrect: false
+      explanation: "That's incorrect. Docker Compose isn't required to run a project with .NET Aspire."
+    - content: "Kubernetes"
+      isCorrect: false
+      explanation: "That's incorrect. Kubernetes isn't required to run a project with .NET Aspire."
+  - content: "You enlist your application in the .NET Aspire orchestration. Which of the following changes would you expect to see in your solution?"
+    choices:
+    - content: "A new Redis cache container for outbound HTTP requests."
+      isCorrect: false
+      explanation: "That's incorrect. A new Redis cache container isn't added to the solution by default. You can choose to add one when creating a new .NET Aspire project."
+    - content: "The web app project is set to the new start-up project."
+      isCorrect: false
+      explanation: "That's incorrect. The web app project isn't set to the new start-up project. The AppHost project is."
+    - content: "A new ServiceDefaults project is added to the solution."
+      isCorrect: true
+      explanation: "That's correct! When you enlist your application in .NET Aspire orchestration, AppHost and ServiceDefaults projects are added to the solution."

@@ -2,13 +2,14 @@
 uid: learn.wwl.schedule-tasks-using-sql-server-agent.create-maintenance-plan
 title: Create a SQL Server maintenance plan
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a SQL Server maintenance plan
   description: "Create a SQL Server maintenance plan"
   ms.date: 05/11/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 15

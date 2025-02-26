@@ -43,7 +43,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     RUN dotnet restore "HotelReservationSystem/HotelReservationSystem.csproj"
     ```
 
-    This code has commands to fetch an image containing the .NET Core Framework SDK. The project files for the web app (`HotelReservationSystem.csproj`) and the library project (`HotelReservationSystemTypes.csproj`) are copied to the /src folder in the container. The `dotnet restore` command downloads the dependencies required by these projects from NuGet.
+    This code has commands to fetch an image containing the .NET Core Framework SDK. The project files for the web app (`HotelReservationSystem.csproj`) and the library project (`HotelReservationSystemTypes.csproj`) are copied to the `/src` folder in the container. The `dotnet restore` command downloads the dependencies required by these projects from NuGet.
 
 1. Append the following code to the bottom of the Dockerfile:
 
@@ -53,7 +53,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     RUN dotnet build "HotelReservationSystem.csproj" -c Release -o /app
     ```
 
-    These commands copy the source code for the web app to the container, then run the dotnet build command to build the app. The resulting DLLs are written to the /app folder in the container.
+    These commands copy the source code for the web app to the container, then run the dotnet build command to build the app. The resulting DLLs are written to the `/app` folder in the container.
 
 1. Append the following command at the bottom of the Dockerfile.
 
@@ -77,7 +77,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
 
 ## Build and deploy the image using the Dockerfile
 
-1. At the command prompt, run the following command to build the image for the sample app using the Dockerfile. Don't forget the `.` at the end of the command. This command builds the image and stores it locally. The image is given the name `reservationsystem`. Verify that the image is built successfully. A warning about file and directory permissions will be displayed when the process completes. You can ignore these warnings for the purposes of this exercise. The image might take a moment to build.
+1. At the command prompt, run the following command to build the image for the sample app using the Dockerfile. Don't forget the `.` at the end of the command. This command builds the image and stores it locally. The image is given the name `reservationsystem`. Verify that the image is built successfully. A warning about file and directory permissions might be displayed when the process completes. You can ignore this warning for the purposes of this exercise. The image might take a moment to build.
 
     ```bash
     docker build -t reservationsystem .

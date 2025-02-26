@@ -2,13 +2,14 @@
 uid: learn.deploy-azure-private-5g-core.deploy-using-arm-templates
 title: Deploy using ARM templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: learning-content
   description: Describes how you can create mobile network, site, and SIM using the ARM templates.
-  ms.date: 01/18/2023
-  author: ArchanaUpadhyaya
-  ms.author: archanau
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.date: 06/24/2024
+  author: joemarshallmsft
+  ms.author: joemarshall
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-deploy-using-arm-templates.md)]

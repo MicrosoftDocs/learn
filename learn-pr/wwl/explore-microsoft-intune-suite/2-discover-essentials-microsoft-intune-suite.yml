@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-intune-suite.discover-essentials-microsoft-intune-suite
+title: Discover essentials of Microsoft Intune Suite
+metadata:
+  title: Discover essentials of Microsoft Intune Suite
+  description: "Discover essentials of Microsoft Intune Suite"
+  ms.date: 09/27/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-discover-essentials-microsoft-intune-suite.md)]

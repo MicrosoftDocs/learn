@@ -4,11 +4,12 @@ title: Complete the challenge
 metadata:
   title: Complete the challenge
   description: "Complete the challenge"
-  ms.date: 04/13/2023
+  ms.date: 01/17/2025
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/6-challenge.md)]

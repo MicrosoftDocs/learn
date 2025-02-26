@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/31/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the key advantage of using Delta Live Tables in an event-driven architecture in Azure Databricks?"
+    choices:
+    - content: "It requires manual intervention for data flow and transformation processes."
+      isCorrect: false
+      explanation: "Incorrect. Delta Live Tables automates data flow and transformation processes, reducing the need for manual intervention and increasing operational efficiency."
+    - content: "It only supports batch processing for data transformation."
+      isCorrect: false
+      explanation: "Incorrect. Delta Live Tables supports both streaming and batch processing, enabling the combination of real-time events with historical data for comprehensive insights."
+    - content: "It simplifies the development and management of data pipelines by allowing users to define the desired outcomes, while handling the complexities of execution."
+      isCorrect: true
+      explanation: "Correct. Delta Live Tables offers a declarative approach to defining data transformations, handling underlying complexities such as dependency resolution, error handling, and recovery."
+  - content: "What does the Structured Streaming API in Azure Databricks enable?"
+    choices:
+    - content: "It enables only batch data processing."
+      isCorrect: false
+      explanation: "Incorrect. The Structured Streaming API in Azure Databricks unifies both batch and streaming data processing."
+    - content: "It unifies batch and streaming data processing under a single framework."
+      isCorrect: true
+      explanation: "Correct. The Structured Streaming API in Azure Databricks allows developers to write efficient code for both batch and real-time data workloads."
+    - content: "It enables only streaming data processing."
+      isCorrect: false
+      explanation: "Incorrect. The Structured Streaming API in Azure Databricks unifies both batch and streaming data processing."
+  - content: "What is the role of ACID transactions in Delta Live Tables?"
+    choices:
+    - content: "ACID transactions in Delta Live Tables are used for data encryption."
+      isCorrect: false
+      explanation: "Incorrect. ACID transactions aren't used for data encryption. They ensure data consistency."
+    - content: "ACID transactions in Delta Live Tables ensure that each operation is processed completely and maintains the data in a consistent state."
+      isCorrect: true
+      explanation: "Correct. ACID transactions in Delta Live Tables ensure data consistency by making sure each operation is processed completely."
+    - content: "ACID transactions in Delta Live Tables are used for data compression."
+      isCorrect: false
+      explanation: "Incorrect. ACID transactions aren't used for data compression. They ensure data consistency."

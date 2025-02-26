@@ -2,20 +2,19 @@
 uid: learn.wwl.build-oss-analytical-solutions-az-hdinsight
 metadata:
   title: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
-  description: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
-  ms.date: 01/05/2022
+  description: How to Build an Open Source Software (OSS) Analytics Solutions with Azure HDInsight.
+  ms.date: 06/28/2024
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Building Open Source Software (OSS) Analytics Solutions with Azure HDInsight
 prerequisites: |
   The following pre-requisite should be completed
-  - Successfully login to the Azure portal
-  - Understand the Azure storage options
-  - Understand the Azure compute options
+  -   Successfully log in to the Azure portal
+  -   Understand the Azure storage options
+  -   Understand the Azure compute options
 summary: |
-  In this learning path, the learner will be introduced to HDInsight and how to apply this technology to solve a range of real world challenges.
+  In this learning path, the learner is introduced to HDInsight and how to apply this technology to solve a range of real world challenges.
 iconUrl: /training/achievements/building-oss-analytical-solutions-with-azure-hdinsight.svg
 levels:
 - intermediate

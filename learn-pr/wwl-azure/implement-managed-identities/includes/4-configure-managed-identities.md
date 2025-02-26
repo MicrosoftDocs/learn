@@ -1,9 +1,8 @@
-
 You can configure an Azure virtual machine with a managed identity during, or after, the creation of the virtual machine. CLI examples showing the commands for both system- and user-assigned identities are used in this unit.
 
 ## System-assigned managed identity
 
-To create, or enable, an Azure virtual machine with the system-assigned managed identity your account needs the **Virtual Machine Contributor** role assignment. No other Azure AD directory role assignments are required.
+To create, or enable, an Azure virtual machine with the system-assigned managed identity your account needs the **Virtual Machine Contributor** role assignment. No other Microsoft Entra directory role assignments are required.
 
 ### Enable system-assigned managed identity during creation of an Azure virtual machine
 
@@ -30,7 +29,7 @@ az vm identity assign -g myResourceGroup -n myVm
 
 ## User-assigned managed identity
 
-To assign a user-assigned identity to a virtual machine during its creation, your account needs the **Virtual Machine Contributor** and **Managed Identity Operator** role assignments. No other Azure AD directory role assignments are required.
+To assign a user-assigned identity to a virtual machine during its creation, your account needs the **Virtual Machine Contributor** and **Managed Identity Operator** role assignments. No other Microsoft Entra directory role assignments are required.
 
 Enabling user-assigned managed identities is a two-step process:
 
@@ -53,7 +52,7 @@ The following example creates a virtual machine associated with the new user-ass
 az vm create \
 --resource-group <RESOURCE GROUP> \
 --name <VM NAME> \
---image UbuntuLTS \
+--image Ubuntu2204 \
 --admin-username <USER NAME> \
 --admin-password <PASSWORD> \
 --assign-identity <USER ASSIGNED IDENTITY NAME> \
@@ -80,6 +79,8 @@ Azure supports multiple programming platforms through a series of [Azure SDKs](h
 |--|--|
 | .NET | [Manage resource from a virtual machine enabled with managed identities for Azure resources enabled](https://github.com/Azure-Samples/aad-dotnet-manage-resources-from-vm-with-msi) |
 | Java | [Manage storage from a virtual machine enabled with managed identities for Azure resources](https://github.com/Azure-Samples/compute-java-manage-resources-from-vm-with-msi-in-aad-group) |
-| Node.js | [Create a virtual machine with system-assigned managed identity enabled](https://azure.microsoft.com/resources/samples/compute-node-msi-vm/) |
-| Python | [Create a virtual machine with system-assigned managed identity enabled](https://azure.microsoft.com/resources/samples/compute-python-msi-vm/) |
+| Node.js | [Create a virtual machine with system-assigned managed identity enabled](https://github.com/Azure-Samples/compute-node-msi-vm) |
+| Python | [Create a virtual machine with system-assigned managed identity enabled](/azure/developer/python/sdk/examples/azure-sdk-example-virtual-machines) |
 | Ruby | [Create Azure virtual machine with an system-assigned identity enabled](https://github.com/Azure-Samples/compute-ruby-msi-vm/) |
+
+

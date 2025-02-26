@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.philanthropies.boost-your-productivity-with-microsoft-copilot
+metadata:
+  author: v-downesmary
+  ms.author: anruss
+  ms.date: 01/14/2025
+  title: "AI fluency: Boost your productivity with Microsoft Copilot"
+  description: Learn how to enhance your productivity with Microsoft Copilot. This module covers various aspects of using Copilot to streamline your workflow, manage your time effectively, and support your job search and skill development. Discover how Copilot can assist you in bringing your ideas to life, analyzing images and documents, and providing workplace support.
+  ms.topic: module
+  moduleType: standard
+  ms.service: artificial-intelligence
+  ms.collection:
+    - philanthropies-ai-copilot
+title: Boost your productivity with Microsoft Copilot
+summary: This module provides an in-depth look at how Microsoft Copilot can enhance your productivity. You'll learn how to use Copilot to bring your ideas to life, manage your time more effectively, and support your job search and skill development. The module also covers how Copilot can assist with analyzing images and documents, along with providing workplace support.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Evaluate the effectiveness of Copilot in supporting skill development and career advancement.
+  - Use Copilot to optimize personal and professional schedules, draft messages and emails, plan projects, and manage time.
+  - Evaluate the effectiveness of the retrieval-augmented generation method of Copilot in providing relevant and up-to-date information for your questions. 
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+- ai-engineer
+- technology-manager
+- solution-architect
+products:
+- ms-copilot
+units:
+- learn.philanthropies.boost-your-productivity-with-microsoft-copilot.introduction
+- learn.philanthropies.boost-your-productivity-with-microsoft-copilot.bring-your-ideas-life-with-copilot
+- learn.philanthropies.boost-your-productivity-with-microsoft-copilot.time-management-assistance-with-copilot
+- learn.philanthropies.boost-your-productivity-with-microsoft-copilot.elevate-your-job-search-with-copilot
+- learn.philanthropies.boost-your-productivity-with-microsoft-copilot.skill-development-with-copilot
+- learn.philanthropies.boost-your-productivity-with-microsoft-copilot.image-document-analysis-with-copilot
+- learn.philanthropies.boost-your-productivity-with-microsoft-copilot.workplace-support-with-copilot
+- learn.philanthropies.boost-your-productivity-with-microsoft-copilot.boost-your-productivity-with-copilot-edge
+- learn.philanthropies.boost-your-productivity-with-microsoft-copilot.knowledge-check
+- learn.philanthropies.boost-your-productivity-with-microsoft-copilot.summary
+badge:
+  uid: learn.philanthropies.boost-your-productivity-with-microsoft-copilot.badge

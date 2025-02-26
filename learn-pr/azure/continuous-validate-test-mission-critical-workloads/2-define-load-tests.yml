@@ -2,13 +2,14 @@
 uid: learn.continuous-validate-test-mission-critical-workloads.define-load-tests
 title: Define load tests based on key user flows
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Define load tests based on key user flows
-  description: Learn about user flows, why they're important, and how to design load tests based on these flows.
-  ms.date: 01/16/2023
+  description: Learn more about user flows, why they're important, and how to design load tests based on these flows.
+  ms.date: 07/31/2024
   author: sebader
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-define-load-tests.md)]
@@ -31,7 +32,7 @@ quiz:
       explanation: "Incorrect. Some components might not cause a service degradation when they fail. Examples are flows that aren't user facing, background processes, and batch processing."
     - content: "No. Not all components have the same requirements for availability and performance."
       isCorrect: true
-      explanation: "Correct. For example, an outage of a component that isn't user facing might not result in a service degradation."
+      explanation: "Correct. For example, an outage of a component that isn't user-facing might not result in a service degradation."
   - content: "Can a load test help you evaluate the expected performance of a user flow?"
     choices:
     - content: "Yes. A load test can help identify the performance of a user flow."
@@ -40,3 +41,4 @@ quiz:
     - content: "No. A load test can't help identify the performance of a user flow."
       isCorrect: false
       explanation: "Incorrect. A load test can help you evaluate the expected performance of a user flow."
+

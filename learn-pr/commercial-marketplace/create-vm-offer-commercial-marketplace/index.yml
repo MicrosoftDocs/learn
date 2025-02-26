@@ -2,21 +2,21 @@
 uid: learn.create-vm-offer-commercial-marketplace
 metadata:
   title: Create a virtual machine offer for the commercial marketplace
-  description: This module provides a high-level overview of VM offers in the commercial marketplace
-  ms.date: 07/12/2022
-  author: marleva
-  ms.author: maevan
+  description: This module provides a high-level overview of VM offers in the commercial marketplace.
+  ms.date: 04/25/2024
+  author: amhindma
+  ms.author: amhindma
   manager: jasonh
-  ms.topic: interactive-tutorial
+  ms.topic: module
   ms.service: marketplace
 title: Create a virtual machine offer for the commercial marketplace
-summary: This module provides a high-level overview of VM offers in the commercial marketplace
+summary: This module provides a high-level overview of VM offers in the commercial marketplace.
 abstract: |
   In this module, you will:
-  - Develop a basic understanding of how virtual machine (VM) based applications are sold through Azure Marketplace
-  - Explore the benefits of VM offers in Azure Marketplace
-  - Learn the key technical components of a VM offer
-  - Learn how to publish a VM offer in Partner Center
+  - Develop a basic understanding of how virtual machine (VM) based applications are sold through Azure Marketplace.
+  - Explore the benefits of VM offers in Azure Marketplace.
+  - Learn the key technical components of a VM offer.
+  - Learn how to publish a VM offer in Partner Center.
 iconUrl: /training/achievements/ccc-commercial-marketplace/create-vm-offer-commercial-marketplace.svg
 levels:
 - beginner

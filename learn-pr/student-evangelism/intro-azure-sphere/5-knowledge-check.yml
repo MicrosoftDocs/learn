@@ -2,14 +2,14 @@
 uid: learn.oxford.intro-azure-sphere.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
-  ms.date: 04/14/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 5 # dummy number at present
 content: |
 quiz:
@@ -49,3 +49,4 @@ quiz:
       explanation: "“Azure Sphere Software updates” is not a user managed feature of Azure Sphere"
     
     
+

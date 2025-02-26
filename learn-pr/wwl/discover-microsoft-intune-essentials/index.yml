@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.discover-microsoft-intune-essentials
+metadata:
+  title: Discover Microsoft Intune essentials
+  description: "In this module, you'll learn about Microsoft Intune, a comprehensive tool designed to manage and secure devices, applications, and data within an organization."
+  ms.date: 06/06/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: module
+  ms.service: microsoft-intune
+  ai-usage: ai-assisted
+title: Discover Microsoft Intune essentials
+summary: In this module, you'll learn about Microsoft Intune, a comprehensive tool designed to manage and secure devices, applications, and data within an organization.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Understand the concept of Microsoft Entra join.
+
+  -   Explain the prerequisites, limitations, and benefits of Microsoft Entra join.
+
+  -   Join a device to Microsoft Entra ID.
+
+  -   Manage devices that are joined to Microsoft Entra ID.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- intune
+units:
+- learn.wwl.discover-microsoft-intune-essentials.introduction
+- learn.wwl.discover-microsoft-intune-essentials.explore-core-features-microsoft-intune
+- learn.wwl.discover-microsoft-intune-essentials.understand-device-management-capabilities
+- learn.wwl.discover-microsoft-intune-essentials.effectively-secure-manage-applications
+- learn.wwl.discover-microsoft-intune-essentials.integrate-security-compliance
+- learn.wwl.discover-microsoft-intune-essentials.optimize-deployment-strategies-intune
+- learn.wwl.discover-microsoft-intune-essentials.unify-management-across-platforms-intune
+- learn.wwl.discover-microsoft-intune-essentials.knowledge-check
+- learn.wwl.discover-microsoft-intune-essentials.summary
+badge:
+  uid: learn.wwl.discover-microsoft-intune-essentials.badge

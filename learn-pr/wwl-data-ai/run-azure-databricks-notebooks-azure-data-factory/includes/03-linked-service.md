@@ -7,7 +7,7 @@ To run notebooks in an Azure Databricks workspace, the Azure Data Factory pipeli
 
 An access token provides an authentication method for Azure Databricks as an alternative to credentials on the form of a user name and password. You can generate access tokens for applications, specifying an expiration period after which the token must be regenerated and updated in the client applications.
 
-To create an Access token, use the **Generate new token** option on the **Access tokens** tab of the **User Settings** page in Azure Databricks portal.
+To create an Access token, use the **Generate new token** option on the **Developer** tab of the **User Settings** page in Azure Databricks portal.
 
 ![A screenshot of the Access tokens tab in the User Settings page in the Azure Databricks portal.](../media/access-token.png)
 

@@ -29,7 +29,7 @@ An interview that focuses on algorithm challenges involves tasks where you're as
 1. Select an appropriate algorithm for the problem. 
 2. Understand the algorithm's limitations and understand what happens when it scales. The concept of _scaling_ implies that when the input to a function increases, your algorithm should perform well. 
 
-Algorithm performance is denoted as O(n), also known as *Big O notation*. [This blog post](https://www.integralist.co.uk/posts/calculating-bigo/) can help you understand how to calculate Big O.
+Algorithm performance is denoted as O(n), also known as *Big O notation*. [This blog post](https://www.integralist.co.uk/posts/big-o-for-beginners/) can help you understand how to calculate Big O.
 
 You'll be asked about algorithms and their performance to get an idea of your grasp of software performance and, more importantly, your ability to explain it.
 

@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.introduction-to-classical-machine-learning.supervised-learning
 title: Define supervised learning
-metadata: 
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true 
   title: Define supervised learning
   description: Conceptual unit that introduces what supervised learning in machine learning is.
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/01/2024
+  author: lgayhardt
+  ms.author: lagayhar
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-supervised-learning.md)]
+

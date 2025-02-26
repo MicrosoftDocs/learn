@@ -2,13 +2,14 @@
 uid: learn.wwl.migrate-cassandra-workloads-cosmos-db.cassandra-cosmos-db-application-migration
 title: Cassandra to Cosmos DB application migration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Cassandra to Cosmos DB application migration
   description: "Cassandra to Cosmos DB application migration"
   ms.date: 02/01/2021
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 2
 content: |

@@ -2,13 +2,14 @@
 uid: learn.secure-your-azure-virtual-machine-disks.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Summary
-  ms.date: 04/22/2020
+  ms.date: 09/10/2024
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 quiz:
   title: Check your knowledge
@@ -29,7 +30,7 @@ quiz:
     - content: "Configure an access policy to permit at least one security principal."
       isCorrect: false
       explanation: "You don't need to configure a security principal for ADE."
-    - content: "Create an access policy to allow template deployment."
+    - content: "Create an access policy that allows template deployment."
       isCorrect: false
       explanation: "The template deployment access policy allows Azure Resource Manager to get secrets from the key vault when the key vault is referenced in a template deployment."
     - content: "Set the key vault access policy to support disk encryption."
@@ -39,10 +40,11 @@ quiz:
     choices:
     - content: "Both disks are unencrypted."
       isCorrect: false
-      explanation: "Storage Service Encryption (SSE) is enabled by default for new virtual hard disks. With SSE, Azure manages the keys and automatically decrypts data for any read operations without impact on performance."
+      explanation: "Storage Service Encryption (SSE) is enabled by default for new virtual hard disks. With SSE, Azure manages the keys and automatically decrypts data for any read operations without affecting performance."
     - content: "The OS disk is encrypted using Storage Service Encryption (SSE). The data disk is unencrypted."
       isCorrect: false
-      explanation: "Storage Service Encryption (SSE) is enabled by default for new virtual hard disks. With SSE, Azure manages the keys and automatically decrypts data for any read operations without impact on performance."
+      explanation: "Storage Service Encryption (SSE) is enabled by default for new virtual hard disks. With SSE, Azure manages the keys and automatically decrypts data for any read operations without affecting performance."
     - content: "Both disks are encrypted using Storage Service Encryption."
       isCorrect: true
-      explanation: "All disks are encrypted using SSE by default. With SSE, Azure manages the keys and automatically decrypts data for any read operations without impact on performance."
+      explanation: "All disks are encrypted using SSE by default. With SSE, Azure manages the keys and automatically decrypts data for any read operations without affecting performance."
+

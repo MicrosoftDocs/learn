@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security.plan-implement-conditional-access-policies-for-connections-to-azure-virtual-desk
+title: Plan and implement Conditional Access policies for connections to Azure Virtual Desktop
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Plan and implement Conditional Access policies for connections to Azure Virtual Desktop
+  description: "Plan and implement Conditional Access policies for connections to Azure Virtual Desktop"
+  ms.date: 08/07/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  zone_pivot_groups: azure-interface
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-plan-implement-conditional-access-policies-connections.md)]
+interactive: bash

@@ -1,4 +1,4 @@
-Resilient, flexible, and scalable security controls are particularly important when implementing cloud-native applications. To provide this functionality, you can leverage authentication and authorization functionality offered by Azure Active Directory (Azure AD).
+Resilient, flexible, and scalable security controls are particularly important when implementing cloud-native applications. To provide this functionality, you can leverage authentication and authorization functionality offered by Microsoft Entra ID.
 
 ## Scenario: Set up apps for authentication
 
@@ -8,7 +8,7 @@ Your team has developed a refrigerator-inventory service that businesses can use
 
 While your application satisfied all the requirements specified at that time, its use cases didn't account for the need to accommodate multitenant scenarios, where different businesses might need to have their own display of their respective inventories and be able to access them securely.
 
-In this module, you'll explore how Azure AD helps you to address this need. While Azure AD natively supports multitenancy, integrating it into your existing application will require some changes to individual application components and data stores.
+In this module, you'll explore how Microsoft Entra ID helps you to address this need. While Microsoft Entra ID natively supports multitenancy, integrating it into your existing application will require some changes to individual application components and data stores.
 
 ## Prerequisites
 
@@ -20,5 +20,5 @@ In this module, you'll explore how Azure AD helps you to address this need. Whil
 
 After completing this module, you'll know more about how to:
 
-* Describe the characteristics and functionality of Azure AD.
-* Implement Azure AD authentication for cloud-native applications.
+* Describe the characteristics and functionality of Microsoft Entra ID.
+* Implement Microsoft Entra authentication for cloud-native applications.

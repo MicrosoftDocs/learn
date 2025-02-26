@@ -1,5 +1,4 @@
 
-
 You can use *Load balancing* to evenly distribute inbound network traffic across a group of resources or servers. In this scenario, the load balancers are considered *front end* devices, while the Azure resources to which clients want to connect are the *backend pool* instances.
 
 > [!NOTE]

@@ -1,8 +1,8 @@
-Before you connect the database to your app, you'll want to verify that you can connect to it, add a basic table, and work with sample data.
+Before you connect the database to your app, you want to verify that you can connect to it, add a basic table, and work with sample data.
 
 We maintain the infrastructure, software updates, and patches for your Azure SQL database. You can treat your Azure SQL database like you would any other SQL Server installation. For example, you can use Visual Studio, SQL Server Management Studio, Azure Data Studio, or other tools to manage your Azure SQL database.
 
-How you access your database and connect it to your app is up to you. But to get some experience working with your database, here you'll connect to it directly from the portal, create a table, and run a few basic CRUD operations. You'll learn:
+How you access your database and connect it to your app is up to you. To get some experience working with your database, let's connect to it directly from the portal, create a table, and run a few basic CRUD operations. Here, you learn:
 
 - What Cloud Shell is and how to access it from the portal.
 - How to access information about your database from the Azure CLI, including connection strings.
@@ -13,18 +13,15 @@ How you access your database and connect it to your app is up to you. But to get
 
 Azure Cloud Shell is a browser-based shell experience to manage and develop Azure resources. Think of Cloud Shell as an interactive console that runs in the cloud.
 
-Behind the scenes, Cloud Shell runs on Linux. But depending on whether you prefer a Linux or Windows environment, you have two experiences to choose from: Bash and PowerShell.
+Behind the scenes, Cloud Shell runs on Linux. But, depending on whether you prefer a Linux or Windows environment, you have two experiences from which to choose: Bash and PowerShell.
 
-Cloud Shell is accessible from anywhere. Besides the portal, you can also access Cloud Shell from [shell.azure.com](https://shell.azure.com/), the Azure mobile app, or from Visual Studio Code. The panel on the right is a Cloud Shell terminal for you to use during this exercise.
+Cloud Shell is accessible from anywhere. Besides the portal, you can also access Cloud Shell from [shell.azure.com](https://shell.azure.com/), the Azure mobile app, or from Visual Studio Code. 
 
-Cloud Shell includes popular tools and text editors. Here's a brief look at the `az`, `jq`, and `sqlcmd` utilities, which are three tools that you'll use for this exercise.
+Cloud Shell includes popular tools and text editors. Here's a brief look at the `az`, `jq`, and `sqlcmd` utilities, which are three tools that you use in this exercise.
 
-- `az` is also known as the Azure CLI. It's the command-line interface for working with Azure resources. You'll use this interface to get information about your database, including the connection string.
-- `jq` is a command-line JSON parser. You'll pipe output from `az` commands to this tool to extract important fields from JSON output.
-- `sqlcmd` enables you to execute statements on SQL Server. You'll use `sqlcmd` to create an interactive session with your Azure SQL database.
-
-> [!TIP]
-> When running the T-SQL commands in this module using `sqlcmd`, the `GO` on the second line may not copy through to the `sqlcmd` prompt, so you will likely need to type this command out. The T-SQL command won't execute without it, so make sure to run the `GO` command.
+- `az` is also known as the Azure CLI. It's the command-line interface for working with Azure resources. You use this interface to get information about your database, including the connection string.
+- `jq` is a command-line JSON parser. You pipe output from `az` commands to this tool to extract important fields from JSON output.
+- `sqlcmd` enables you to execute statements on SQL Server. You use `sqlcmd` to create an interactive session with your Azure SQL database.
 
 ## Get information about your Azure SQL database
 
@@ -32,32 +29,41 @@ Before you connect to your database, it's a good idea to verify that it exists a
 
 Here, you use the `az` utility to list your databases and show some information about the **Logistics** database, including its maximum size and status.
 
-1. The `az` commands you'll run require the name of your resource group and the name of your Azure SQL logical server. To save keystrokes, run this `azure configure` command to specify them as default values.
+1. Visit [shell.azure.com](https://shell.azure.com/), or from the Azure portal, select the **Cloud shell** button from the global controls of the Azure portal window.
 
-    Replace `[server-name]` with the name of the Azure SQL logical server you created.
+1. If given the option, choose **Bash** for this learning exercise.
+
+1. On the **Getting started** popup, select **No storage account required**. Select your subscription from the **Subscription** drop down. Select **Apply**. The new Cloud Shell terminal loads.
+
+1. The `az` commands you run require the name of your resource group and the name of your Azure SQL logical server. To save keystrokes, run this `azure configure` command to specify them as default values.
+
+    Replace `[server-name]` with the name of the Azure SQL logical server you created and `[resource-group]` with the resource group you used for your server.
+
+    > [!TIP]
+    > To paste into a Cloud Shell, use `Ctrl+Shift+V` instead of `Ctrl+V`. Use `Ctrl+C` to clear the current command from the terminal.
 
     ```azurecli
-    az configure --defaults group=<rgn>[sandbox resource group name]</rgn> sql-server=[server-name]
+    az configure --defaults group=[resource-group] sql-server=[server-name]
     ```
 
     > [!NOTE]
-    > Depending on the pane you are on in the portal, your SQL server name may be displayed as a FQDN (for example, servername.database.windows.net). However, for this command, you only need the logical name without the .database.windows.net suffix.
+    > Depending on the pane you are on in the Azure portal, your SQL server name is displayed as a Fully qualified domain name (FQDN) (for example, `servername.database.windows.net`) or standalone (`servername`). For this command, you only need the logical name *without* the `.database.windows.net` suffix.
 
-1. Run the following `az sql db list` command to list all databases on your Azure SQL logical server.
+1. Run the following `az sql db list` command to list all databases on your Azure SQL logical server:
 
     ```azurecli
     az sql db list
     ```
 
-    You see a large block of JSON as output.
+    You get a large block of JSON as output.
 
-1. Because we want to see only the database names, run the command a second time. But this time, pipe the output to `jq` to display only the name fields.
+1. Because we want to get only the database names, run the command a second time. But this time, pipe the output to `jq` to display only the name fields.
 
      ```azurecli
     az sql db list | jq '[.[] | {name: .name}]'
     ```
 
-    You should see this output.
+    You should get this output:
 
     ```json
     [
@@ -70,9 +76,9 @@ Here, you use the `az` utility to list your databases and show some information 
     ]
     ```
 
-    *Logistics* is your database. Like SQL Server, *master* includes server metadata, such as sign-in accounts and system configuration settings.
+    `Logistics` is your user database. Like in SQL Server, the `master` system database includes server metadata, such as logins and system configuration settings. 
 
-1. Run the following `az sql db show` command to get details about the **Logistics** database.
+1. Run the following `az sql db show` command to get details about the `Logistics` database:
 
     ```azurecli
     az sql db show --name Logistics
@@ -80,7 +86,7 @@ Here, you use the `az` utility to list your databases and show some information 
 
     As before, you see a large block of JSON as output.
 
-1. Run the command a second time. This time, pipe the output to `jq` to limit output to only the name, maximum size, and status of the **Logistics** database.
+1. Run the command a second time. This time pipe the output to `jq` to limit output to only the name, maximum size, and status of the **Logistics** database.
 
     ```azurecli
     az sql db show --name Logistics | jq '{name: .name, maxSizeBytes: .maxSizeBytes, status: .status}'
@@ -96,163 +102,183 @@ Here, you use the `az` utility to list your databases and show some information 
     }
     ```
 
+    If you chose the Azure SQL Database Free offer, the serverless database automatically pauses to conserve your free vCore seconds, so you could see your `Logistics` database with the Paused status after a period of inactivity.
+
 ## Connect to your database
 
-Now that you understand a bit about your database, let's connect to it using `sqlcmd`, create a table that holds information about transportation drivers, and perform a few basic CRUD operations.
+A *connection string* contains all the information needed for an application to connect to your database. While you're still in the Cloud Shell, let's start by getting your connection string there.
 
-Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These terms refer to operations you perform on table data, and are the four basic operations you need for your app. Now's a good time to verify you can perform each of them.
+### Connection string from Cloud Shell
 
-1. Run the following `az sql db show-connection-string` command to get the connection string to the **Logistics** database in a format that `sqlcmd` can use.
+Run the following `az sql db show-connection-string` command to get the connection string to the `Logistics` database in a format that `sqlcmd` can use:
 
-    ```azurecli
-    az sql db show-connection-string --client sqlcmd --name Logistics
-    ```
+```azurecli
+ az sql db show-connection-string --client sqlcmd
+```
 
-    Your output resembles the following example. Copy this output for use in the next step.
+Your output resembles the following example. Copy this output for use in the next step.
 
-    ```output
-    "sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U <username> -P <password> -N -l 30"
-    ```
+```output
+"sqlcmd -S tcp:<server-name>.database.windows.net,1433 -d Logistics -U <username> -P <password> -N -l 30"
+```
 
-1. Run the `sqlcmd` statement from the output of the previous step to create an interactive session. Remove the surrounding quotes and replace `<username>` and `<password>` with the username and password you specified when you created your database. Here's an example.
+### Connection string from the Azure portal
 
-    ```console
-    sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U martina -P 'password1234$' -N -l 30
-    ```
+The Azure portal provides connection strings for various data providers for your Azure SQL database easily accessible.
 
-    > [!TIP]
-    > Place your password in single quotes so that "&" and other special characters aren't interpreted as processing instructions.
+1. In the Azure portal, navigate to your SQL database. 
+1. In the service menu of your SQL database, under **Settings**, select **Connection strings**.
+1. Choose the data provider and connection method desired.
 
-    > [!IMPORTANT]
-    >
-    > You may see an error message that is similar to the following example:
-    >
-    > ```output
-    > Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server:
-    > Cannot open server 'contoso' requested by the login.
-    > Client with IP address 'nnn.nnn.nnn.nnn' is not allowed to access the server.
-    > To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule
-    > on the master database to create a firewall rule for this IP address or address range.
-    > It may take up to five minutes for this change to take effect.
-    > ```
+## Connect to your database with Visual Studio Code
 
-    If this error occurs, you'll need to add another firewall rule for your client. To do so, perform the following steps:
+Let's use a graphical tool to connect to your new Azure SQL Database. [Visual Studio Code](https://code.visualstudio.com/docs) is a popular, open-source code editor for Linux, macOS, and Windows. It supports extensions, including the [mssql extension](https://aka.ms/mssql-marketplace). You can use the extension for querying SQL Server, Azure SQL Database, Azure SQL Managed Instance, SQL database in Fabric, and other platforms.
 
-    - Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Download and install [Visual Studio Code](https://code.visualstudio.com/docs).
+1. In Visual Studio Code, open the **Extensions** view by selecting the Extensions icon in the Activity Bar on the side of the window. Search for mssql and select **Install** to add the extension. and the [mssql extension](https://aka.ms/mssql-marketplace) to your local workstation. 
 
-    - From the Azure **Home page**, under **Azure services**, select **All resources**. The **All resources** pane appears.
+   > [!TIP]
+   > For future application project development of your database objects, also use the [SQL Database Projects extension for Visual Studio Code](/azure-data-studio/extensions/sql-database-project-extension). This tool allows you to work with your database in source control, capture existing database schemas, design new objects, and publish to databases.
 
-    - Search for and select your database. The **Logistics** pane for your SQL database appears.
+1. In the extensions list, choose the **SQL Server** extension. 
+1. Under **CONNECTIONS**, select **Add Connection**.
 
-    - On the top menu bar, select **Set server firewall**. The **Networking** pane appears.
+   :::image type="content" source="../media/4-vs-code-mssql-extension.png" alt-text="Screenshot of Visual Studio Code, with the mssql extension Add Connection dialogue opened.":::
 
-    - In the **Firewall rules** section, select **Add a firewall rule**. The **Add a firewall rule** pane appears.
+1. Give your new connection a custom memorable name in **Profile name**.
+1. You have multiple ways to provide the connection information:
+   - Choose **Parameters** to manually enter the Azure SQL logical server name, database name, user name, and password.
+   - Choose **Connection string** to paste in the connection string for your database, then add your user name and password.
+   - Choose **Browse Azure** to connect to your Azure subscription in VS Code and select your new Azure SQL Database from a list.
 
-    - Specify a unique **Rule name**, and then enter your IP address from the error message for both the **Start IP** and **End IP** fields. Select **OK**.
+1. For this learning exercise, choose **Browse Azure**. Connect to your Azure subscription from VS Code.
+1. Select your **Subscription** from the list. 
+1. Select your **Resource Group** from the list. 
+1. Select your **Server** and **Database** from the list. 
+1. With **Authentication type** set to **SQL Login**, provide the **User name** and **Password** we created in the last module.
+1. Select **Connect**.
+1. When you connect successfully, the **Add connection** dialogue disappears. It's replaced by your server connection and an object explorer of **Tables**, **Views**, etc.
 
-    - Select **Save**.
+   :::image type="content" source="../media/4-vs-code-objects.png" alt-text="Screenshot of the VS Code mssql extension with the server connected and database objects displayed.":::
 
-    - Run the `sqlcmd` statement again to launch your interactive `sqlcmd` session. It will look something like the following example.
+## Query your database with Visual Studio Code
 
-    ```console
-    sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U martina -P 'password1234$' -N -l 30
-    ```
+Let's run a series of commands to perform basic CRUD (*Create, Read, Update, Delete*) operations in your Azure SQL Database.
 
-1. From your `sqlcmd` session, run the following T-SQL statements to create a table named `Drivers`.
+1. Right-click on the server name line under **CONNECTIONS** and select **New Query**.
 
-    ```sql
-    CREATE TABLE Drivers (DriverID int, LastName varchar(255), FirstName varchar(255), OriginCity varchar(255));
-    GO
-    ```
+   :::image type="content" source="../media/4-vs-code-mssql-new-query.png" alt-text="Screenshot of the New Query option under Connections in the mssql extension for Visual Studio Code.":::
 
-    The table contains four columns: a unique identifier, the driver's last and first name, and the driver's city of origin.
+1. In the new query window, let's create our first database object by pasting in the following command to create a new table called `Drivers`.
 
-    > [!NOTE]
-    > The language you see here is Transact-SQL, or T-SQL.
+   ```sql
+   CREATE TABLE Drivers (DriverID int IDENTITY(1,1), LastName varchar(255), FirstName varchar(255), OriginCity varchar(255));
+   GO
+   ```
 
-1. Run the following T-SQL statements to verify that the `Drivers` table exists.
+   The table contains four columns: a unique identifier, the driver's last and first name, and the driver's city of origin. 
+
+1. Select the **Execute Query** button to run the T-SQL commands in the query window. 
+
+   > [!TIP]
+   > To execute a single T-SQL command among many in a query window, drag and select the desired query, then **Execute**.
+
+   :::image type="content" source="../media/4-vs-code-mssql-execute.png" alt-text="Screenshot of the New Query window with the T-SQL command for the Drivers table. The Execute button is highlighted.":::
+
+   Like almost anything in Visual Studio Code, [keyboard shortcuts can be customized in Visual Studio Code](https://github.com/Microsoft/vscode-mssql/wiki/customize-shortcuts). In Windows, the default keyboard shortcut for **Execute** is `Ctrl + Shift + E`.
+   
+1. Next, run the following T-SQL statements to verify that the `Drivers` table exists, by querying database metadata:
 
     ```sql
     SELECT name FROM sys.tables;
     GO
     ```
 
-    You should see this output.
+    In the **Query Results** tab, under **Results**, you should see that `Drivers` exists in the list of tables.
 
     ```output
     name
-    --------------------------------------------------------------------------------------------------------------------------------
+    -------
     Drivers
-
-    (1 rows affected)
     ```
 
-1. To test the **create** operation, run the following T-SQL statements to add a sample row to the table.
+1. Let's add a row to our table. Run the following T-SQL statements to add a sample row to the table:
 
     ```sql
-    INSERT INTO Drivers (DriverID, LastName, FirstName, OriginCity) VALUES (123, 'Zirne', 'Laura', 'Springfield');
+    INSERT INTO Drivers (LastName, FirstName, OriginCity) VALUES ('Zirne', 'Laura', 'Springfield');
     GO
     ```
 
-    This output indicates the operation succeeded.
+    This output indicates the operation succeeded:
 
     ```output
-    (1 rows affected)
+    3:14:01 PM
+    Started executing query at Line 7
+    (1 row affected)
+    Total execution time: 00:00:00.044
     ```
 
-1. To test the **read** operation, Run the following T-SQL statements to list the `DriverID` and `OriginCity` columns from all rows in the table.
+1. To see the row we inserted, run the following T-SQL statements to list the `DriverID` and `OriginCity` columns from all rows in the table:
 
     ```sql
     SELECT DriverID, OriginCity FROM Drivers;
     GO
     ```
 
-    You see one result with the `DriverID` and `OriginCity` for the row you created in the previous step.
+    You get one result with the `DriverID` and `OriginCity` for the row you created in the previous step.
 
     ```output
     DriverID    OriginCity
     ----------- --------------------------
-            123 Springfield
-
-    (1 rows affected)
+    1           Springfield
     ```
 
-1. To test the **update** operation, run the following T-SQL statements to change the city of origin from "Springfield" to "Boston" for the driver with a `DriverID` of 123.
+1. Let's update the row and change the `OriginCity`. Run the following T-SQL to change the city of origin from "Springfield" to "Boston" for the driver with a `DriverID` of `1`:
 
     ```sql
-    UPDATE Drivers SET OriginCity='Boston' WHERE DriverID=123;
+    UPDATE Drivers SET OriginCity='Boston' WHERE DriverID=1;
     GO
     ```
 
-1. Run the following T-SQL statements to list the `DriverID` and `OriginCity` columns again.
+    You should get a message confirming the query execution in the **Query Results** window:
+
+    ```output
+    3:14:29 PM
+    Started executing query at Line 13
+    (1 row affected)
+    Total execution time: 00:00:00.031
+    ```
+
+1. Run the following T-SQL statements to list the `DriverID` and `OriginCity` columns again:
 
     ```sql
     SELECT DriverID, OriginCity FROM Drivers;
     GO
     ```
 
-    You should now see the following output. Notice how the `OriginCity` reflects the update to Boston.
+    You should now get the following output. Notice how the `OriginCity` reflects the update to Boston.
 
     ```output
     DriverID    OriginCity
     ----------- --------------------------
-            123 Boston
-
-    (1 rows affected)
+    1           Boston
     ```
 
-1. Finally, test the **delete** operation, by running the following T-SQL statements to delete the record.
+1. Finally, let's remove that row by running the following T-SQL statement to delete the record:
 
     ```sql
-    DELETE FROM Drivers WHERE DriverID=123;
+    DELETE FROM Drivers WHERE DriverID=1;
     GO
     ```
 
     ```output
-    (1 rows affected)
+    3:15:00 PM
+    Started executing query at Line 16
+    (1 row affected)
+    Total execution time: 00:00:00.017
     ```
 
-1. Run the following T-SQL statements to verify the `Drivers` table is empty.
+1. Run the following T-SQL statements to verify the `Drivers` table is empty:
 
     ```sql
     SELECT COUNT(*) FROM Drivers;
@@ -264,14 +290,12 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
     ```output
     -----------
               0
-
-    (1 rows affected)
     ```
 
-Now that you have a general idea for working with Azure SQL Database from Cloud Shell, you can get the connection string for your favorite SQL management tool &ndash; whether that's from SQL Server Management Studio, Visual Studio, or something else.
+Now that you have a general idea for working with Azure SQL Database from Cloud Shell and in Visual Studio. You can use the connection string for your favorite SQL management tool, including SQL Server Management Studio, Visual Studio, or custom applications.
 
-Cloud Shell makes it easy to access and work with your Azure resources. Because Cloud Shell is browser-based, you can access it from Windows, macOS, or Linux &ndash; essentially any system with a web browser.
+Cloud Shell makes it easy to access and work with your Azure resources of any kind. Because Cloud Shell is browser-based, you can access it from Windows, macOS, or Linux; on any system with a web browser.
 
-You gained some hands-on experience running Azure CLI commands to get information about your Azure SQL database. As a bonus, you practiced your T-SQL skills.
+You gained some hands-on experience running T-SQL commands in Visual Studio Code and practiced your T-SQL skills.
 
-In the next unit, we'll wrap up this module and describe how to tear down your database.
+In the next unit, we wrap up this module and describe how to tear down your database.

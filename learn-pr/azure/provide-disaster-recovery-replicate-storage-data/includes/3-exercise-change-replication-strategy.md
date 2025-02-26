@@ -111,7 +111,7 @@ Your company uploads its music files as blobs in the container. A blob can repre
     cat > song.mp3
     ```
 
-1. An empty file is created that you can write to. Enter **This is a song!**, select <kbd>Enter</kbd>, and then select <kbd>Ctrl+D</kbd>.
+1. This creates an empty file to which you can write. Enter **This is a song!**, select <kbd>Enter</kbd>, and then select <kbd>Ctrl+D</kbd>.
 
 1. To see the contents of your `song.mp3` file, run this command:
 
@@ -119,7 +119,7 @@ Your company uploads its music files as blobs in the container. A blob can repre
     cat song.mp3
     ```
 
-1. You'll see **This is a song!** returned to you in the terminal. You've created a file you can now upload to your storage account.
+1. You'll see `This is a song!` returned to you in the terminal. You've created a file you can now upload to your storage account.
 
 ## Upload your file
 
@@ -134,7 +134,7 @@ Upload the file to your storage account via your container.
         --file song.mp3
     ```
 
-1. When the upload is complete, to verify the file is in your storage account, run this command:
+1. When the upload is complete, verify the file is in your storage account by running this command:
 
     ```azurecli
     az storage blob list \
@@ -156,8 +156,8 @@ Upload the file to your storage account via your container.
 
 1. In the left menu pane, under **Data management**, select **Redundancy**. The **Redundancy** pane appears for your storage account. You'll find the replication status of your Azure storage account's primary and secondary regions. If the status shows as *Available* for a region, it means your region is responsive.
 
-1. To ensure you're seeing the latest status updates, in the top menu bar, select **Refresh**.
+1. To ensure you're seeing the latest status updates, select **Refresh** in the top menu bar.
 
    :::image type="content" source="../media/3-view-replication-status.png" alt-text="Screenshot of the geo-replication map that shows the primary and secondary locations available.":::
 
-It will take some time for your data to replicate from the primary to the secondary region.
+It'll take some time for your data to replicate from the primary to the secondary region.

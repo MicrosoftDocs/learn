@@ -34,7 +34,8 @@ The content in the module helps you prepare for Exam AZ-305: Designing Microsoft
 
 Design business continuity solutions
 
-- Design a solution for backup and disaster recovery
+- Recommend a recovery solution for Azure and hybrid workloads that meets recovery objectives.
+
 
 ## Prerequisites
 

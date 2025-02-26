@@ -5,11 +5,13 @@ metadata:
   unitType: exercise
   title: Create a Razor class library
   description: "In this exercise, you'll create your first Razor class library with a component that can be used in Blazor and ASP.NET Core applications."
-  ms.date: 10/13/2021
+  ms.date: 01/26/2024
   author: csharpfritz
   ms.author: jefritz
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/3-create-razor-class-library.md)]

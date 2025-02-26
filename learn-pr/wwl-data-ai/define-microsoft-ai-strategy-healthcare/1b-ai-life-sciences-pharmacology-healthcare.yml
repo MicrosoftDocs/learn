@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-healthcare.1b-ai-life-sciences-pharmacology-healthcare
+title: AI in life sciences, pharmacology, and healthcare
+metadata:
+  title: AI in life sciences, pharmacology, and healthcare
+  description: "AI in life sciences, pharmacology, and healthcare"
+  ms.date: 08/14/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/1b-ai-life-sciences-pharmacology-healthcare.md)]

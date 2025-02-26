@@ -1,4 +1,3 @@
-
 Containers and blobs support custom metadata, represented as HTTP headers. Metadata headers can be set on a request that creates a new container or blob resource, or on a request that explicitly creates a property on an existing resource. 
 
 ##  Metadata header format
@@ -11,9 +10,9 @@ x-ms-meta-name:string-value
 
 Beginning with version 2009-09-19, metadata names must adhere to the naming rules for C# identifiers. 
 
-Names are case-insensitive. Note that metadata names preserve the case with which they were created, but are case-insensitive when set or read. If two or more metadata headers with the same name are submitted for a resource, the Blob service returns status code `400 (Bad Request)`. 
+Names are case-insensitive. Metadata names preserve the case with which they were created, but are case-insensitive when set or read. If two or more metadata headers with the same name are submitted for a resource, the Blob service returns status code `400 (Bad Request)`. 
 
-The metadata consists of name/value pairs. The total size of all metadata pairs can be up to 8KB in size. 
+The metadata consists of name/value pairs. The total size of all metadata pairs can be up to 8 KB in size. 
 
 Metadata name/value pairs are valid HTTP headers, and so they adhere to all restrictions governing HTTP headers. 
 
@@ -21,11 +20,11 @@ Metadata name/value pairs are valid HTTP headers, and so they adhere to all rest
 
 Metadata on a blob or container resource can be retrieved or set directly, without returning or altering the content of the resource. 
 
-Note that metadata values can only be read or written in full; partial updates are not supported. Setting metadata on a resource overwrites any existing metadata values for that resource. 
+Metadata values can only be read or written in full; partial updates aren't supported. Setting metadata on a resource overwrites any existing metadata values for that resource. 
 
 ### Retrieving properties and metadata
 
-The GET and HEAD operations both retrieve metadata headers for the specified container or blob. These operations return headers only; they do not return a response body. The URI syntax for retrieving metadata headers on a container is as follows: 
+The GET and HEAD operations both retrieve metadata headers for the specified container or blob. These operations return headers only; they don't return a response body. The URI syntax for retrieving metadata headers on a container is as follows: 
     
 ```
 GET/HEAD https://myaccount.blob.core.windows.net/mycontainer?restype=container  

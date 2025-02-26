@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.plan-implement-remote-desktop-protocol-shortpath
+title: Plan implement remote desktop protocol shortpath
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Plan implement remote desktop protocol shortpath
+  description: "Plan implement remote desktop protocol shortpath"
+  ms.date: 08/22/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-plan-implement-remote-desktop-protocol-shortpath.md)]

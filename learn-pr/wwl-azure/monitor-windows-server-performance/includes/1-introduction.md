@@ -3,17 +3,13 @@ Windows Server provides a range of tools to monitor the operating system and the
 In this module, you will:
 
 - Use monitoring tools to identify performance and reliability problems
-
 - Implement a performance monitoring methodology
-
 - Monitor virtual machines and network infrastructure services
-
 - Optimize the performance of Windows Server
 
 ## Learning objectives
 
 - Learn to use built-in tools to monitor server performance
-
 - Understand the fundamentals of server performance tuning
 
 ## Prerequisites
@@ -21,8 +17,5 @@ In this module, you will:
 To get the best learning experience from this module, you should have:
 
 - Working knowledge of common Windows Server management tools.
-
 - Some experience of typical Windows Server workloads.
-
 - Basic knowledge of Windows PowerShell.
-

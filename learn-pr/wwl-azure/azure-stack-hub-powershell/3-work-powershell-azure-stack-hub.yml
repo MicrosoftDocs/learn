@@ -2,15 +2,18 @@
 uid: learn.wwl.azure-stack-hub-powershell.working-powershell
 title: Working with PowerShell in Azure Stack Hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Working with PowerShell in Azure Stack Hub
   description: "Working with PowerShell in Azure Stack Hub"
   ms.date: 03/17/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-work-powershell-azure-stack-hub.md)]
+

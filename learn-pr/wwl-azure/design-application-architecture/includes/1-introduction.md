@@ -14,7 +14,7 @@ In this module, we explore how Azure lets you create applications composed of va
 
 Tailwind Traders is a fictitious home improvement retailer. The company operates retail hardware stores across the globe and online.
 
-As you work through this lesson, suppose you work for Tailwind Traders. You're tasked with evaluating and designing an effective application architecture for the company. The architecture should provide the best Azure solutions for exchanging messages. The strategy must help automate deployment solutions for the company applications, respond appropriately to events, and manage configurations. You're researching how Azure enables integration with APIs and provides appropriate caching. 
+As you work through this module, suppose you work for Tailwind Traders. You're tasked with evaluating and designing an effective application architecture for the company. The architecture should provide the best Azure solutions for exchanging messages. The strategy must help automate deployment solutions for the company applications, respond appropriately to events, and manage configurations. You're researching how Azure enables integration with APIs and provides appropriate caching. 
 
 ## Learning objectives
 
@@ -44,8 +44,20 @@ Design infrastructure solutions
 
 - Design an application architecture
 
+    - Recommend a messaging architecture.
+
+    - Recommend an event-driven architecture.
+
+    - Recommend a solution for API integration.
+
+    - Recommend a caching solution for applications.
+
+    - Recommend an application configuration management solution.
+
+    - Recommend an automated deployment solution for applications.
+
 ## Prerequisites
 
-- Working experience with developing cloud applications
+- Working experience with developing cloud applications.
 
-- Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching
+- Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.

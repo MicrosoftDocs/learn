@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-security-posture.microsoft-defender-external-attack-surface-management
+title: Implement and use Microsoft Defender External Attack Surface Management
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Implement and use Microsoft Defender External Attack Surface Management
+  description: "Implement and use Microsoft Defender External Attack Surface Management"
+  ms.date: 02/10/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-microsoft-defender-external-attack-surface-management.md)]

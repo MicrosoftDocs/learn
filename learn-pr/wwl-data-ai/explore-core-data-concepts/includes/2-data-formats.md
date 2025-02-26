@@ -1,4 +1,4 @@
-Data is a collection of facts such as numbers, descriptions, and observations used to record information. Data structures in which this data is organized often represents *entities* that are important to an organization (such as customers, products, sales orders, and so on). Each entity typically has one or more *attributes*, or characteristics (for example, a customer might have a name, an address, a phone number, and so on).
+Data is a collection of facts such as numbers, descriptions, and observations used to record information. Data structures in which this data is organized often represent *entities* that are important to an organization (such as customers, products, sales orders, and so on). Each entity typically has one or more *attributes*, or characteristics (for example, a customer might have a name, an address, a phone number, and so on).
 
 You can classify data as *structured*, *semi-structured*, or *unstructured*.
 
@@ -7,7 +7,7 @@ You can classify data as *structured*, *semi-structured*, or *unstructured*.
 Structured data is data that adheres to a fixed *schema*, so all of the data has the same fields or properties. Most commonly, the schema for structured data entities is *tabular* - in other words, the data is represented in one or more tables that consist of rows to represent each instance of a data entity, and columns to represent attributes of the entity. For example, the following image shows tabular data representations for *Customer* and *Product* entities.
 
 > [!div class="mx-imgBorder"]
-> ![Image showing how structured data is represented in tables](../media/2-tabular-diagram.png)
+> ![Diagram showing how structured data is represented in tables.](../media/2-tabular-diagram.png)
 
 Structured data is often stored in a database in which multiple tables can reference one another by using key values in a *relational* model; which we'll explore in more depth later.
 
@@ -73,7 +73,7 @@ One common format for semi-structured data is *JavaScript Object Notation* (JSON
 Not all data is structured or even semi-structured. For example, documents, images, audio and video data, and binary files might not have a specific structure. This kind of data is referred to as *unstructured* data.
 
 > [!div class="mx-imgBorder"]
-> ![Image showing unstructured data in documents](../media/2-unstructured-data.png)
+> ![Diagram showing unstructured data in documents.](../media/2-unstructured-data.png)
 
 ## Data stores
 

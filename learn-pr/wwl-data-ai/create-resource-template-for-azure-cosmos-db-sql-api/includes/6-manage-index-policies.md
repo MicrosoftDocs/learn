@@ -28,16 +28,13 @@ The **indexingPolicy** object can be lifted with no changes and set to the **pro
 ```json
 {
   "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers",
-  "apiVersion": "2021-05-15",
+  "apiVersion": "2024-04-15",
   "name": "[concat('csmsarm', uniqueString(resourceGroup().id), '/cosmicworks/products')]",
   "dependsOn": [
     "[resourceId('Microsoft.DocumentDB/databaseAccounts', concat('csmsarm', uniqueString(resourceGroup().id)))]",
     "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', concat('csmsarm', uniqueString(resourceGroup().id)), 'cosmicworks')]"
   ],
   "properties": {
-    "options": {
-      "throughput": 400
-    },
     "resource": {
       "id": "products",
       "partitionKey": {
@@ -58,6 +55,11 @@ The **indexingPolicy** object can be lifted with no changes and set to the **pro
             "path": "/*"
           }
         ]
+      }
+    },
+    "options": {
+      "autoscaleSettings": {
+        "maxThroughput" : 1000
       }
     }
   }
@@ -92,7 +94,7 @@ A few small changes are required to use this indexing policy in Bicep. These cha
 - Removing commas typically required in JSON
 
 ```bicep
-resource Container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers@2021-05-15' = {
+resource Container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers@2024-04-15' = {
   parent: Database
   name: 'customers'
   properties: {
@@ -116,6 +118,11 @@ resource Container 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/container
             path: '/*'
           }
         ]
+      }
+    },
+    "options": {
+      "autoscaleSettings": {
+        "maxThroughput" : 1000
       }
     }
   }

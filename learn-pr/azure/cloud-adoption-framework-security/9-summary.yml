@@ -5,11 +5,10 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary of the Microsoft Cloud Adoption Framework for Azure security module.
-  ms.date: 04/26/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/01/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]

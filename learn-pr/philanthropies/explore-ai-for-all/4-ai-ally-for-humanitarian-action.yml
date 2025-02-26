@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-ai-for-all.ai-ally-for-humanitarian-action
+title: AI as an ally for humanitarian action
+metadata:
+  title: AI as an ally for humanitarian action
+  description: This content is a part of the Explore AI for all module.
+  ms.date: 01/14/2025
+  author: yoosunee
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-ai-ally-for-humanitarian-action.md)]

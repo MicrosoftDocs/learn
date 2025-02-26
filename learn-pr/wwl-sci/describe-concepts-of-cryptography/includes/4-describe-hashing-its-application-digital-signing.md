@@ -8,15 +8,15 @@ Hashing uses an algorithm, also known as a **hashing function**, to convert the 
 
 Hashing is different to encryption in that it doesn't use keys, and the hashed value can’t decrypt back to the original.
 
-There are many different types of hash functions. One that's common, and you may hear in discussions with security professionals, is the Secure Hash Algorithm (SHA). SHA is a family of hash algorithms that each work differently. The details are beyond the scope of this content, but one of the more commonly used SHAs is SHA-256 which produces a hash value that is 256 bits long.
+There are many different types of hash functions. One that's common, and you may hear in discussions with security professionals, is the Secure Hash Algorithm (SHA). SHA is a family of hash algorithms that each work differently. The details are beyond the scope of this content, but one of the more commonly used SHAs is SHA-256, which produces a hash value that is 256 bits long.
 
 ## What is a digital signature?
 
-A common application of hashing is in digital signing. Like a signature on a piece of paper, a digital signature validates that the document bears the signature which actually comes from the person who signed it. Additionally, a digital signature is used to validate that the document hasn't been tampered with.
+A common application of hashing is in digital signing. Like a signature on a piece of paper, a digital signature validates that the document bears the signature, which actually comes from the person who signed it. Additionally, a digital signature is used to validate that the document hasn't been tampered with.
 
 ### How does a digital signature work?
 
-A digital signature will always be unique to each person signing a document, much like one that's been handwritten.  All digital signatures use an asymmetric key pair: the private and public keys.
+A digital signature will always be unique to each person signing a document, much like one that's been handwritten. All digital signatures use an asymmetric key pair: the private and public keys.
 
 Using a digital signing service, Monica can assign a digital signature to the document to prove that it hasn’t changed. Signing the document creates a time-stamped hash for it. This hash is then encrypted using Monica’s private key. Next, the signing service appends the hash to the original document, which isn't encrypted. Finally, both the digitally signed document and Monica’s public key are sent to Victoria.
 
@@ -24,6 +24,6 @@ When Victoria receives the digitally signed document, she uses the same digital 
 
 The following two-minute video demonstrates how digital signatures work, and how they show if a document has been tampered with.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWNvVP]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6fe3b1b9-438f-42dd-bef5-bed01b4f1278]
 
 Digital signing requires using a digital signing service. Many companies offer this capability. Two of the most popular are DocuSign and Adobe Sign.

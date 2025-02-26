@@ -4,10 +4,9 @@ metadata:
   title: Introduction to Secure Network Infrastructure with Azure network security
   description: Learn to protect your network from cyber security attacks to secure your networking infrastructure.
   ms.date: 04/20/2021
-  author: micrum
-  ms.author: micrum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: vhorne
+  ms.author: victorh
+  ms.topic: learning-path
 title: Introduction to Secure Network Infrastructure with Azure network security
 prerequisites: |
   - Beginner-level knowledge of cloud computing, including scalability and availability. 

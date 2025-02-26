@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.prepare-to-maintain-sql-databases-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Prepare to maintain SQL databases on Azure
   description: "Prepare to maintain SQL databases on Azure"
-  ms.date: 03/06/2023
-  author: wwlpublish
+  ms.date: 2/12/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-sql-database
 title: Prepare to maintain SQL databases on Azure
 summary: Explore the role of a database administrator on Azure. Describe SQL Server-based offerings on Azure.
 abstract: |
@@ -32,7 +34,7 @@ products:
 - azure-sql-virtual-machines
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn.wwl.prepare-to-maintain-sql-databases-azure.introduction
 - learn.wwl.prepare-to-maintain-sql-databases-azure.describe-azure-data-platform-roles

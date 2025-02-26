@@ -2,14 +2,16 @@
 uid: learn.azure.deploy-elastic-cloud-azure-virtual-machines.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
-  description: "This unit introduces deploying Elastic on Azure Virtual Machines. The unit includes an example scenario and informs the user they will learn how to deploy Elastic on Azure VMs."
-  ms.date: 6/15/2021
+  description: "This unit introduces deploying Elastic on Azure Virtual Machines. The unit includes an example scenario and informs the user how to deploy Elastic on Azure VMs."
+  ms.date: 08/02/2024
   author: yenchiho
   ms.author: yenchiho
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

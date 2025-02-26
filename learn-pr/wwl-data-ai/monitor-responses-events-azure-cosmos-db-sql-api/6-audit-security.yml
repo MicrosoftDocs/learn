@@ -2,13 +2,14 @@
 uid: learn.wwl.monitor-responses-events-azure-cosmos-db-sql-api.audit-security
 title: Audit security
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Audit security
   description: "Audit security"
   ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

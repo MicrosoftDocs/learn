@@ -14,7 +14,7 @@ This module consists of four lessons:
 - Lesson 3 – Implement shared access signatures 
 - Lesson 4 – Explore Microsoft Graph  
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aCsL]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9be3833e-8979-43e2-8ec4-d0f9f95f6a44]
 
 Module 6 Tips and Tricks 
 
@@ -29,7 +29,7 @@ Module 6 Demos
 
 Module 6 Labs/Exercises (~45 mins) 
 
-- Exercise 1: Configure a single-tenant Azure active directory environment 
+- Exercise 1: Configure a single-tenant Microsoft Entra environment 
 - Exercise 2: Create a single-tenant ASP.NET Core web app 
-- Exercise 3: Configure a multi-tenant Azure active directory environment 
+- Exercise 3: Configure a multi-tenant Microsoft Entra environment 
 - Exercise 4: Clean up your subscription 

@@ -1,37 +1,43 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-data-roles-services-products
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand data roles, services, and products
   description: "Data is so widespread that many services and roles are needed to manage the data of an organization. This module covers types of data products, Azure data services, and the roles of data professionals."
-  ms.date: 03/01/2023
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: azure-education
+  ai-usage: human-only
 title: Understand data roles, services, and products
 summary: Data is so widespread that many services and roles are needed to manage the data of an organization. This module covers types of data products, Azure data services, and the roles of data professionals.
 abstract: |
-  By the end of this module, you will be able to:
-  - Describe categories of data products
-  - Describe Azure data services
-  - Describe data professional roles
-prerequisites: |
-  - You should be familiar with basic computing concepts and terminology.
+  By the end of this module, you are able to:
+
+  -   Describe categories of data products.
+
+  -   Describe Azure data services.
+
+  -   Describe data professional roles.
+prerequisites: '-   You should be familiar with basic computing concepts and terminology.'
 iconUrl: /training/achievements/understand-data-roles-services-products.svg
 levels:
 - beginner
 roles:
-- business-analyst
-- data-analyst
-- database-administrator
+- business-owner
+- business-user
+- k-12-educator
+- student
 products:
-- azure-database-mysql
-- azure-database-postgresql
-- azure-sql-database
-- azure-sqlserver-vm
+- office-excel
 - sql-server
 subjects:
-- database
+- databases
 units:
 - learn.wwl.understand-data-roles-services-products.introduction
 - learn.wwl.understand-data-roles-services-products.describe-data-product-categories

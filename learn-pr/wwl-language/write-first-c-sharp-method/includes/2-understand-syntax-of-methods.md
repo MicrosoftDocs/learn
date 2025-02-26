@@ -1,7 +1,4 @@
-
-
-
-You may already be familiar with some methods, such as `Console.WriteLine()` or `random.Next()`. You might have appreciated how these methods simplify tasks and allow you to build your code more easily. In this unit, you'll learn how to create your own methods.
+You might already be familiar with some methods, such as `Console.WriteLine()` or `random.Next()`. You might have appreciated how these methods simplify tasks and allow you to build your code more easily. In this unit, you'll learn how to create your own methods.
 
 ## How methods work
 
@@ -86,7 +83,7 @@ Hello World!
 After calling a method
 ```
 
-Once a method is defined, it can be called any time, as many times as you need to use it. You can use methods inside of `if-else` statements, for-loops, `switch` statements, even to initialize variables, and so much more!
+Once a method is defined, it can be called anytime, as many times as you need to use it. You can use methods inside of `if-else` statements, for-loops, `switch` statements, even to initialize variables, and so much more!
 
 ## Best practices
 

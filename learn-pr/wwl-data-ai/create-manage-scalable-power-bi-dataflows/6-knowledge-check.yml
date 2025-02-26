@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-scalable-power-bi-dataflows.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/15/2024
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Ivor is working on an analytics solution that requires ETL logic to be applied to a table that sits outside of the data warehouse. Multiple analysts need to use this supplemental cleaned data in their reports, and it's important that all reports reflect the exact version of the cleansed data. Analysts don't have access to the data source. What should Ivor do to provide analysts with this data at the lowest access level necessary?"
+    choices:
+    - content: "Create a Power BI dataset in a shared workspace and give all analysts contributor access."
+      isCorrect: false
+      explanation: "Incorrect. Creating a Power BI dataset is insufficient as analysts do not have access to the data source."
+    - content: "Create a Power BI dataflow in a shared workspace and give all analysts viewer access."
+      isCorrect: true
+      explanation: "Correct. A Power BI dataflow will provide access to transformed data. Viewer access provides the ability to use the dataflow in reports."
+    - content: "Create a Power BI dataflow in a shared workspace and give all analysts admin access."
+      isCorrect: false
+      explanation: "Incorrect. Analysts do not need admin access to use a Power BI dataflow."
+  - content: "Sherry is using a dataflow in Power BI Premium to refresh data from a web API. The volume of data is large and Sherry is using incremental refresh. Sherry notices that the dataflow refresh is suddenly taking much longer than it used to. Where can she check dataflow performance and investigate what might be going on?"
+    choices:
+    - content: "The refresh history in the dataflow settings."
+      isCorrect: true
+      explanation: "Correct. The refresh history provides an overview of refreshes and the run status. Sherry can also download details in a CSV file from the refresh history."
+    - content: "The performance analyzer in Power BI desktop."
+      isCorrect: false
+      explanation: "Incorrect. The performance analyzer in Power BI desktop will not help Sherry investigate dataflow refresh performance."
+    - content: "The performance profiler in Visual Studio."
+      isCorrect: false
+      explanation: "Incorrect. The performance profiler in Visual Studio is not the correct tool to investigate dataflow refresh performance."
+  - content: "Juliane is creating a dataset to be used in multiple reports. To avoid duplicating logic, she wants to create a dataflow that references an existing dataflow. What requirement does Juliane need to confirm prior to creating her dataflow that contains the linked entity?"
+    choices:
+    - content: "Juliane must have access to both of the underlying data sources."
+      isCorrect: false
+      explanation: "Incorrect. Access to both data sources is not a requirement."
+    - content: "The workspace where the dataflow resides must be in Premium capacity."
+      isCorrect: true
+      explanation: "Correct. Linked and computed entities require a Power BI Premium subscription."
+    - content: "Both dataflows must reside in the same workspace."
+      isCorrect: false
+      explanation: "Incorrect. It is not a requirement that dataflows reside in the same workspace."

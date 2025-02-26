@@ -41,7 +41,7 @@ Jupyter notebooks are highly interactive, and since they can include executable 
 1. Enter the following command into the first cell of the notebook:
 
     ```bash
-    !curl https://topcs.blob.core.windows.net/public/FlightData.csv -o flightdata.csv
+    !curl https://topics.blob.core.windows.net/public/FlightData.csv -o flightdata.csv
     ```
 
     > [!TIP]

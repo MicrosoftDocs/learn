@@ -2,7 +2,7 @@ Your web app and API are both running locally. Now it's time to publish your web
 
 ## Push your changes to GitHub
 
-You've made changes to your API in the previous exercise. Commit those changes to the **api** branch and push them to GitHub.
+In the previous exercise, you made changes to your API. Now it's time to commit those changes to the **api** branch and push them to GitHub.
 
 ## Create a pull request
 
@@ -26,7 +26,7 @@ You pushed your **api** branch to GitHub. Now you want the GitHub Action to publ
 
 1. Again, select **Create pull request**.
 
-Your GitHub Action has now been triggered.
+Your GitHub Action is now triggered.
 
 ## Watch the GitHub Action build and publish
 
@@ -44,7 +44,7 @@ You can see the progress of your GitHub Action as it builds and publishes your w
 
 ## Browse to the preview URL
 
-After the GitHub Action has completed successfully, you can view your running app in the browser.
+After the GitHub Action completes successfully, you can view your running app in the browser.
 
 1. Select the **Pull requests** menu.
 
@@ -52,8 +52,8 @@ After the GitHub Action has completed successfully, you can view your running ap
 
 1. Select the link following the message **Azure Static Web Apps: Your stage site is ready! Visit it here**.
 
-Notice that the preview URL contains a hyphen followed by a number. The number matches the pull request number for the pull request you created. For every pull request you create, you'll get a unique and repeatable preview URL. The region is also used to form the preview URL, too.
+Notice that the preview URL contains a hyphen followed by a number. The number matches the pull request number for the pull request you created. For every pull request you create, you get a unique and repeatable preview URL. The region is also used to form the preview URL, too.
 
 ## Next steps
 
-Congratulations, you've created your first Azure Static Web Apps instance with a web app and API! If you merge the pull request you created, Azure Static Web Apps will automatically deploy the changes to your production app.
+Congratulations, you created your first Azure Static Web Apps instance with a web app and API! If you merge the pull request you created, Azure Static Web Apps automatically deploys the changes to your production app.

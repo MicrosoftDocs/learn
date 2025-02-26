@@ -1,6 +1,3 @@
-
-
-
 In C#, variables can be categorized into two main types, value types and reference types. These types describe how variables store their values. 
 
 Value types such as `int`, `bool`, `float`, `double`, and `char` directly contain values. Reference types such as `string`, `array`, and objects (such as instances of `Random`) don't store their values directly. Instead, reference types store an address where their value is being stored.
@@ -69,6 +66,7 @@ In this exercise, you'll learn more about passing reference and value type argum
         {
             Console.Write($"{a} ");
         }
+        Console.WriteLine();
     }
 
     void Clear(int[] array) 
@@ -95,7 +93,7 @@ In this exercise, you'll learn more about passing reference and value type argum
 
 ### Test with strings
 
-Earlier, you learned that strings are an *immutable* type. Even though a string is a reference value type, unlike an array, its value can't be altered once it's assigned. You might have noticed this if you've used methods such as `string.Replace` or `string.ToUpper`. In this task, you'll learn to correct a common error found when working with strings.
+Earlier, you learned that strings are an *immutable* type. Even though a string is a reference type, unlike an array, its value can't be altered once it's assigned. You might have noticed this if you've used methods such as `string.Replace` or `string.ToUpper`. In this task, you'll learn to correct a common error found when working with strings.
 
 1. In the Visual Studio Code Editor, delete any existing code from the previous exercises.
 

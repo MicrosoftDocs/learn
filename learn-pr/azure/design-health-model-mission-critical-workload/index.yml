@@ -1,21 +1,23 @@
 ### YamlMime:Module
 uid: learn.design-health-model-mission-critical-workload
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a health model for your mission-critical workload
   description: Improve your observability practices by defining a health model for mission-critical applications. A health model helps you quickly identify and troubleshoot issues that might affect the health of your mission-critical solution.
-  ms.date: 01/12/2022
+  ms.date: 08/05/2024
   author: msimecek
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Design a health model for your mission-critical workload
-summary: A well-designed application **health model** gives you contextualized observability by using metrics and thresholds, which _you_ consider important for your mission-critical workload.
-abstract:  | 
-  By the end of this module, you'll be able to:
-  -	Identify user flows and key application components of an application architecture.
-  -	Identify key metrics to use as the foundation of an application health model.
+summary: A well-designed application health model gives you contextualized observability by using metrics and thresholds, which you consider important for your mission-critical workload.
+abstract: | 
+  By the end of this module, you're able to:
+  - Identify user flows and key application components of an application architecture.
+  - Identify key metrics to use as the foundation of an application health model.
   - Build a layered health model for an application.
-  -	Visualize the health model in a dashboard.
+  - Visualize the health model in a dashboard.
 prerequisites: |
   - Extensive experience designing cloud-native applications that include core infrastructure technology like data storage, compute, and networking.
   - Good understanding of the design principles and design areas of a mission-critical workload in the Azure Well-Architected Framework.
@@ -24,20 +26,20 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
 roles:
--	administrator
--	solution-architect
--	support-engineer 
--	devops-engineer
--	network-engineer
--	security-engineer
+- administrator
+- solution-architect
+- support-engineer 
+- devops-engineer
+- network-engineer
+- security-engineer
 products:
-- azure #TBD
+- azure
 subjects:
--	high-availability-system
--	architecture
--	solution-design
--	data-visualization
--	it-management-monitoring
+- site-reliability-engineering
+- architecture
+- solution-design
+- data-visualization
+- it-management-monitoring
 units:
 - learn.design-health-model-mission-critical-workload.introduction
 - learn.design-health-model-mission-critical-workload.what-is-health-modeling
@@ -47,4 +49,5 @@ units:
 - learn.design-health-model-mission-critical-workload.set-up-queries-and-visualize
 - learn.design-health-model-mission-critical-workload.summary
 badge:
-  uid: learn.design-health-model-mission-critical-workload.badge 
+ uid: learn.design-health-model-mission-critical-workload.badge 
+

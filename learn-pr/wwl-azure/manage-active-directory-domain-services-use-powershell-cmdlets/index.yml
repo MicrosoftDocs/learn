@@ -6,8 +6,9 @@ metadata:
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: entra-id
+  ms.subservice: domain-services
 title: Manage Active Directory Domain Services using PowerShell cmdlets
 summary: This module covers the cmdlets that are used to administer Active Directory Domain Services.
 abstract: |
@@ -30,14 +31,13 @@ roles:
 - administrator
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-cloud-shell
 - azure-powershell
 - azure-virtual-machines
 - m365
 subjects:
 - architecture
-- development-tools
 - storage
 - virtual-machine
 units:

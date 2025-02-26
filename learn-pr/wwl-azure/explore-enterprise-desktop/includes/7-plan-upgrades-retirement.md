@@ -1,6 +1,4 @@
-
-
-At some point, you may have to decide whether to upgrade or retire company hardware. Several factors will help guide your decision on whether to upgrade or retire a system and purchase net new. First, you must decide whether upgrading is necessary. You based this decision on factors such as the age of the current computers, their performance, and the cost of upgrading compared to continuing to use them.
+At some point, you might have to decide whether to upgrade or retire company hardware. Several factors will help guide your decision on whether to upgrade or retire a system and purchase net new. First, you must decide whether upgrading is necessary. You base this decision on factors such as the age of the current computers, their performance, and the cost of upgrading compared to continuing to use them.
 
 In most cases, consider the following factors:
 - You'll need facilities to store systems undergoing refurbishment and a place to store them until you return them to the user’s workspace.
@@ -21,6 +19,6 @@ Other factors that you must consider when planning the retirement phase include:
 
 ### **BYOD and Unenrollment**
 
-In BYOD scenarios, users may either replace their devices or leave the organization. The IT department must consider how to address organizational data and applications on the user’s device. They can completely wipe a device, removing all accounts, data, policies, and settings. This action is performed when the device is no longer used or lost. However, in BYOD situations, users will typically not accept IT wiping the device if they leave the company, as they would also lose their personal information.
+In BYOD scenarios, users might either replace their devices or leave the organization. The IT department must consider how to address organizational data and applications on the user’s device. They can completely wipe a device, removing all accounts, data, policies, and settings. This action is performed when the device is no longer used or lost. However, in BYOD situations, users will typically not accept IT wiping the device if they leave the company, as they would also lose their personal information.
 
 Services like Microsoft Intune can selectively wipe and remove applications and application data. However, these applications must be managed and support these capabilities. The platform, such as iOS, Android, or Windows, can also be a factor. It would be best if you considered how to remove applications and data before granting access to them. Regardless of which methods you choose for data removal, users should know policies before enrolling devices.

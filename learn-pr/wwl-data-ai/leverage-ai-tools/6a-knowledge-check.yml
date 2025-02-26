@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.leverage-ai-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/13/2025
+  author: Adriamen
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/6a-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What technology enables you to benefit from integrating AI into your everyday workflows without developing any custom software?"
+    choices:
+    - content: "Microsoft Copilot."
+      isCorrect: true
+      explanation: "Correct. Microsoft Copilot is integrated as a chat assistant into applications like Microsoft 365, Outlook, Teams, Microsoft Dynamics."
+    - content: "Microsoft Power Platform."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Power Platform consists of a suite of applications to enable users to create custom AI software without coding."
+    - content: "Azure AI services."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI services enable users to create custom AI software."
+  - content: "What service can you use to enable business users to create their own AI solutions – even with no data science or software development expertise?"
+    choices:
+    - content: "Azure Machine Learning."
+      isCorrect: false
+      explanation: "Incorrect. Azure Machine Learning enables data scientists and software developers to build and manage machine learning models."
+    - content: "Azure AI services."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI services provide the building blocks for custom AI application development."
+    - content: "Microsoft Power Platform."
+      isCorrect: true
+      explanation: "Correct. Microsoft Power Platform consists of a suite of applications to enable users to create custom AI software without coding."
+  - content: "What service can data scientists use to train and manage custom predictive models from scratch for AI applications?"
+    choices:
+    - content: "Azure AI services."
+      isCorrect: false
+      explanation: "Incorrect. Azure AI services primarily provide pre-built predictive models that can be customized."
+    - content: "Azure Machine Learning."
+      isCorrect: true
+      explanation: "Correct. Azure Machine Learning provides a platform for training and managing custom predictive models from scratch."
+    - content: "Microsoft Power Platform."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Power Platform enables those without data science or coding experience to create AI applications."

@@ -2,13 +2,14 @@
 uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.work-with-json-data-sql-pools
 title: Work with JSON data in SQL pools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Work with JSON data in SQL pools
   description: "Work with JSON data in SQL pools"
   ms.date: 06/23/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 9

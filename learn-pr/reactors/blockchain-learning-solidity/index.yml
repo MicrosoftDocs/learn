@@ -6,9 +6,9 @@ metadata:
   ms.date: 02/10/2022
   author: danmabee
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.devlang: solidity
 title: Learn how to use Solidity
 summary: Discover how Solidity can make it easy to program smart contracts for the Ethereum blockchain platform.
 abstract:  |

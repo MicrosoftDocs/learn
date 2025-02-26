@@ -1,29 +1,20 @@
-Now that you understand the different ways that customers can find, try, buy, and deploy your solutions through the Microsoft commercial marketplace, you start to read about Microsoft programs that will help accelerate your commercial marketplace offer’s growth. You find that your participation in the commercial marketplace unlocks go-to-market engagement and investment by Microsoft through a program called **Marketplace Rewards**.
+By participating in the commercial marketplace, you can unlock various benefits that help to accelerate your offer's growth. The Microsoft Marketplace Rewards program is designed to support the growth and success of partners who publish their solutions on the Microsoft commercial marketplace. This program is included in ISV Success, which is part of the Microsoft AI Cloud Partner Program. It's available at no cost to all participants, aiming to assist you throughout the journey of building, publishing, and selling your offers in the marketplace.
 
-## What is Marketplace Rewards?
+## Marketplace Rewards
 
-When you publish your offer to the commercial marketplace, Microsoft provides you access to sales, technical, and marketing benefits. As a publisher, one of the ways your benefits are differentiated is based on the listing option you choose.
+Once you publish your offer in the commercial marketplace, you gain access to the Microsoft Marketplace Rewards' sales, technical, and marketing benefits. The range of benefits you receive as a publisher is differentiated by your offer's listing option.
 
-If you’re engaging customers through a **Contact Me** listing, Microsoft’s Marketplace Rewards team will reach out to provide guidance on how to increase the awareness of your solution.
+When you opt for a **Contact me** listing for your solution in the Microsoft commercial marketplace, the Marketplace Rewards team initiates contact to offer advice on how to enhance the visibility of your solution.
 
-If you’re engaging customers by offering a **Free trial** listing, enabling deployments through a **BYOL** offer, or making sales through a **transact** listing, Microsoft will support your growth with increasing demand generation and sales activities.
+When you engage customers by offering a **Free trial** listing, enabling deployments through a **Bring-your-own-license (BYOL)** offer, or conducting sales through a **Transact** listing, Microsoft supports your market growth by helping you to increase demand generation and sales activities.
 
-![Diagram showing an overview of Marketplace Rewards benefits increasing by investment represented by offer type.](..\media\14-more-you-engage-marketplace-rewards.png)
+:::image type="content" source="..\media\14-more-you-engage-marketplace-rewards.png" alt-text="Diagram showing an overview of Marketplace Rewards benefits increasing by investment represented by offer type.":::
 
-You can also earn higher tiers of Marketplace Rewards benefits when your commercial marketplace offer hits certain revenue milestones. You'll reach these tiers when customers buy your solution through Microsoft AppSource, Azure Marketplace, our network of resellers, and the myriad in-product experiences. Hitting these revenue tiers requires that you have a **transact** offer in the commercial marketplace.
+As your commercial marketplace offers hit certain revenue milestones, you're eligible for higher tiers of Marketplace Rewards benefits. Your revenue milestones can be met when customers buy your solutions through Microsoft AppSource, Azure Marketplace, Microsoft's extensive network of resellers, and the various in-product experiences. It's essential to have an active **Transact** offer in the commercial marketplace for you to attain these revenue levels.
 
-The Marketplace Rewards program is designed to support you at your business’ stage of growth, starting with awareness activities to help you get your first customers and shifting to more advanced sales and technical benefits as you sell more through Microsoft. These benefits are available to all partners with active commercial marketplace offers.
-
-You can learn more about the benefits available through this commercial marketplace program by referencing the [Marketplace Rewards program slide deck](https://aka.ms/marketplacerewards).
-
-To get started with Marketplace Rewards:
-
-1. Register to become a Microsoft partner and join the Microsoft commercial marketplace at <https://aka.ms/joinmarketplace>.
-
-2. Publish an offer in either Microsoft AppSource or Azure Marketplace through [Partner Center](https://partner.microsoft.com/dashboard/mpn/membership/benefits/commercialmarketplace).
-
-3. Access and activate benefits directly through [Partner Center](https://partner.microsoft.com/dashboard/mpn/membership/benefits/commercialmarketplace).
+The Marketplace Rewards program is designed to support your business development with the commercial marketplace. Microsoft initiates activities aimed at boosting awareness to help secure your first customers, and progressing to more advanced sales and technical benefits as you sell more. All partners who maintain active offers in the commercial marketplace can access these benefits.
+To learn more about the benefits available through this commercial marketplace program, see the resources section at the end of this learn module.
 
 ## Summary
 
-The information you’ve just compiled about commercial marketplace programs helps you round out the information you need to make a final recommendation to the executive team. Now it’s time to summarize all your recent learnings for a presentation during a meeting tomorrow morning.
+The information you've gathered about commercial marketplace programs now provides a complete set of insights required for you to make a final recommendation to the executive team. Now you're ready to consolidate and present your accumulated knowledge in the upcoming presentation.

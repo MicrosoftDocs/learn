@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-application-resiliency-azure.design-for-resiliency
+title: Design for resiliency
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Design for resiliency
+  description: Design for resiliency in Azure
+  ms.date: 08/14/2024
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-design-for-resiliency.md)]
+

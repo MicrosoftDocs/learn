@@ -1,0 +1,7 @@
+In this module, you discover various AI tools that are at your disposal to incorporate into your training sessions. You learn how to effectively utilize these tools both in the development and execution phases of your training sessions.
+
+For example, Microsoft Teams with Copilot can enhance learner engagement. These tools facilitate real-time interaction, provide instant feedback, and tailor learning paths to individual needs. Microsoft Teams with Copilot creates a learning environment that is both engaging and adaptable to diverse learning styles. Teams becomes not just a platform for communication, but a hub for interactive learning where AI tools work to support both trainers and learners.
+
+In addition to Microsoft Teams, there are other AI tools that develop and enhance the learning experience, such as AI-driven analytics. Microsoft 365 Copilot in Excel helps trainers track the progress of learners, identify areas where they're struggling, and provide personalized feedback to improve their learning outcomes.
+
+By the end of this module, you have a thorough understanding of how to utilize Microsoft AI-powered tools effectively in your training sessions. You are equipped with the knowledge to create more personalized and impactful learning experiences. With this knowledge, you'll be well-prepared to use the power of AI in your training sessions, creating a learning environment that isn't only engaging but also conducive to the diverse learning needs of your learners.

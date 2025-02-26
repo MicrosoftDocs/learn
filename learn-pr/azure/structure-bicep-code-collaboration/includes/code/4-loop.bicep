@@ -19,7 +19,7 @@ var cosmosDBContainerDefinitions = [
   }
 ]
 
-resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
+resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2024-05-15' = {
   name: cosmosDBAccountName
   location: location
   properties: {
@@ -32,7 +32,7 @@ resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
   }
 }
 
-resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2020-04-01' = {
+resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@2024-05-15' = {
   parent: cosmosDBAccount
   name: cosmosDBDatabaseName
   properties: {
@@ -45,7 +45,7 @@ resource cosmosDBDatabase 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases@20
   }
 }
 
-resource cosmosDBContainers 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers@2020-04-01' = [for cosmosDBContainerDefinition in cosmosDBContainerDefinitions: {
+resource cosmosDBContainers 'Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers@2024-05-15' = [for cosmosDBContainerDefinition in cosmosDBContainerDefinitions: {
   parent: cosmosDBDatabase
   name: cosmosDBContainerDefinition.name
   properties: {

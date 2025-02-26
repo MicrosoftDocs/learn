@@ -4,11 +4,10 @@ title: Cognitive accessibility fundamentals
 metadata:
   title: Cognitive accessibility fundamentals
   description: This content is part of the Introduction to Gaming and Disability module.
-  ms.date: 11/01/2021
+  ms.date: 10/09/2024
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
-  ms.prod: learning-gaming-accessibility
+  ms.topic: unit
 durationInMinutes: 13
 content: |
   [!include[](includes/5-cognitive-accessibility.md)]
@@ -33,7 +32,7 @@ quiz:
       explanation: "Incorrect. Learning and cognitive processing applies to problem solving."
     - content: "Attention."
       isCorrect: true
-      explanation: "Correct. Attention can be affected by a range of sensory stimuli. The visual distraction provided by the animation in the background might make it difficult for someone who has a disability related to attention to navigate the menu."
+      explanation: "Correct. The visual distraction provided by the animation in the background might make it difficult for someone who has a disability related to attention to navigate the menu."
     - content: "Memory."
       isCorrect: false
       explanation: "Incorrect. Memory applies to recalling past information to inform future decisions."

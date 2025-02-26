@@ -2,7 +2,7 @@ After you set up Azure Site Recovery, you can use protection at the lower applic
 
 After you confirm the company's business continuity and disaster recovery (BCDR) plan with key stakeholders, you now want to investigate the workloads that Azure Site Recovery supports to ensure it fits with your organization's BCDR goals.
 
-In this unit, you'll explore the application-level protection you can take advantage of to protect your company's different workloads.
+In this unit, you explore the application-level protection you can take advantage of to protect your company's different workloads.
 
 ## Azure Site Recovery supported workloads
 
@@ -42,11 +42,11 @@ Protecting Dynamics AX involves a similar approach as the one you would take to 
 
 ### Remote desktop services
 
-Managed or unmanaged pooled virtual desktops, remote applications, and sessions can be replicated to a secondary site or Azure.
+You can replicate managed or unmanaged pooled virtual desktops, remote applications, and sessions to a secondary site or Azure.
 
 ### Exchange
 
-Small deployments of Exchange, such as those with a single server, can be replicated. For larger deployments, Site Recovery integrates with Exchange database availability groups. This high-availability feature of Exchange 2010 can host up to 16 mailbox servers, and automates recovery at the database level.
+Small deployments of Exchange, such as those deployments with a single server, can be replicated. For larger deployments, Site Recovery integrates with Exchange database availability groups. This high-availability feature of Exchange 2010 can host up to 16 mailbox servers, and automates recovery at the database level.
 
 ### SAP
 
@@ -54,7 +54,7 @@ SAP NetWeaver and non-NetWeaver production application components can be replica
 
 ### IIS
 
-Protecting IIS allows for full automation of the recovery plan if you need to fail over to the replicated environment. Protection for IIS servers can be easily enabled, and IP addressing can be properly configured by mapping the primary and recovery networks prior to fail over. Scripts can be used during failover to update application dependencies and bindings. This approach enables a one-click failover for multiple web applications on the web servers and eliminates the scope for confusion in the event of a disaster.
+Protecting IIS allows for full automation of the recovery plan if you need to fail over to the replicated environment. Protection for IIS servers can be easily enabled, and IP addressing can be properly configured by mapping the primary and recovery networks prior to fail over. Scripts can be used during failover to update application dependencies and bindings. This approach enables a one-click failover for multiple web applications on the web servers and eliminates the scope for confusion if a disaster occurs.
 
 ### Citrix XenApp and XenDesktop
 

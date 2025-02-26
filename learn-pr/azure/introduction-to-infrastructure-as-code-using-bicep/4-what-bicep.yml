@@ -2,14 +2,19 @@
 uid: learn.azure.introduction-infrastructure-code-using-bicep.what-bicep
 title: What is Bicep?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Bicep?
-  description: Learn what Bicep is and how it works with Azure Resource Manager.
-  ms.date: 10/17/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  description: Learn what Bicep is, and how it works with Azure Resource Manager.
+  ms.date: 01/15/2025
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
+    - devx-track-bicep
 durationInMinutes: 3 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/4-what-bicep.md)]
+

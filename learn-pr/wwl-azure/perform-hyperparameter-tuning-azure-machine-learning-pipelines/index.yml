@@ -1,13 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Perform hyperparameter tuning with Azure Machine Learning
-  description: "Perform hyperparameter tuning with Azure Machine Learning"
-  ms.date: 11/17/2022
+  description: Azure Machine Learning Python SDK v2.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/25/2024
+  ms.service: azure-machine-learning
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
 title: Perform hyperparameter tuning with Azure Machine Learning
 summary: Learn how to perform hyperparameter tuning with a sweep job in Azure Machine Learning.
 abstract: |
@@ -16,8 +20,9 @@ abstract: |
   - Configure hyperparameter sampling.
   - Select an early-termination policy.
   - Run a sweep job.
-prerequisites: ""
-iconUrl: /training/achievements/generic-badge.svg
+prerequisites: |
+  None
+iconUrl: /training/achievements/perform-hyperparameter-tuning-with-azure-machine-learning-pipelines.svg
 levels:
 - beginner
 roles:
@@ -37,3 +42,4 @@ units:
 - learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.summary
 badge:
   uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.badge
+

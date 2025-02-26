@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-internet-search-beyond.how-does-a-search-engine-work
+title: How does a search engine work?
+metadata:
+  title: How does a search engine work?
+  description: This content is a part of the module about internet search and beyond.
+  ms.date: 01/14/2025
+  author: v-downesmary
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-how-does-a-search-engine-work.md)]

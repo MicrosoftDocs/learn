@@ -50,7 +50,7 @@ New-AzResourceGroupDeployment -ResourceGroupName ProjectTeddybear ...
 
 ::: zone-end
 
-Although the deployment targets the *ProjectTeddybear* resource group, the virtual network resources will be deployed to the *ToyNetworking* resource group. The network interface will be deployed to the *ProjectTeddybear* resource group.
+Although the deployment targets the *ProjectTeddybear* resource group, the virtual network resources are deployed to the *ToyNetworking* resource group. The network interface is deployed to the *ProjectTeddybear* resource group.
 
 You can even deploy a resource group in another subscription by including the subscription ID in the `resourceGroup` scope:
 
@@ -60,7 +60,7 @@ Similarly, you can use the `subscription()` scope function to deploy resources a
 
 ## Specify the scope for a single resource
 
-The `scope` keyword can be used on a few other specific resource types, not just modules. Extension resources use the `scope` keyword to specify which resource they apply to. Additionally, tenant-scoped resources can use the `scope` keyword so that you can deploy them from any template. 
+You can use the `scope` keyword on a few other specific resource types, not just modules. Extension resources use the `scope` keyword to specify which resource they apply to. Additionally, tenant-scoped resources can use the `scope` keyword so that you can deploy them from any template.
 
 For example, you might use a Bicep file to create a management group hierarchy, as shown in the following example:
 
@@ -78,7 +78,7 @@ Now you know how to deploy many different resources at a variety of scopes, and 
 :::code language="bicep" source="code/5-create-mg-hierarchy.bicep" range="27-33" :::
 
 > [!NOTE]
-> When you create a subscription alias, you also specify some other properties like a billing scope. We have omitted them for clarity.
+> When you create a subscription alias, you also specify some other properties like a billing scope. We've omitted them for clarity.
 
 You can then associate the subscription with a management group, which requires you deploy a resource type called `Microsoft.Management/managementGroups/subscriptions`. Because of the way this resource works, you would declare it in a module. For example, here's a file named *modules/mg-subscription-association.bicep*:
 
@@ -89,5 +89,5 @@ Notice that the management group is referenced through the `existing` keyword.
 The main Bicep file can then create the association by including the module. Here's the whole Bicep file:
 
 :::code language="bicep" source="code/5-create-mg-hierarchy.bicep" highlight="35-42" :::
-		
+
 As you've seen, you can use all of the scopes and Bicep language features together to create sophisticated deployments of your entire Azure infrastructure.

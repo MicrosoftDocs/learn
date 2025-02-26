@@ -10,7 +10,7 @@ To group these events into chunks of information, you'll use the `summarize` ope
 
 :::image type="content" source="../media/4-count-basic.png" alt-text="Screenshot of count operator general query and results.":::
 
-You can also summarize data into groups of similar types of events by specifying the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. You'll use the aggregation function called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we've renamed within the query from the default name *count_* to *EventCount*. Renaming new columns is a recommended practice to make queries and their results more readable.
+You can also summarize data into groups of similar types of events by specifying the way you want to group the aggregation. For example, to count events by state, you can write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. You'll use the aggregation function called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we've renamed within the query from the default name *count_* to *EventCount*. Renaming new columns is a recommended practice to make queries and their results more readable.
 
 1. Copy and paste the query into your query editor.
 
@@ -22,7 +22,7 @@ You can also summarize data into groups of similar types of events by specifying
     | sort by EventCount
     ```
 
-1. Run the query by either selecting the **Run** button above the query window or by pressing **Shift+Enter**
+1. Run the query by either selecting the **Run** button above the query window or by pressing **Shift+Enter**.
 
     You should get results that look like the following image:
 

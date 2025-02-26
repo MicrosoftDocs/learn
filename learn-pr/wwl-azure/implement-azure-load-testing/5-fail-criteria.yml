@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-load-testing.fail-criteria
+title: Define fail criteria and auto stop
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Define fail criteria and auto stop
+  description: "Define fail criteria and auto stop"
+  ms.date: 02/04/2025
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-fail-criteria.md)]

@@ -2,13 +2,14 @@
 uid: learn.wwl.troubleshoot-vpn-gateways.exercise-resolve-site-to-site-vpn-gateway-connection
 title: 'Exercise: Resolve site-to-site VPN gateway connection'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Resolve site-to-site VPN gateway connection'
   description: "Exercise: Resolve site-to-site VPN gateway connection"
-  ms.date: 03/22/2023
-  author: wwlpublish
-  ms.author: lauraalv
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/27/2023
+  author: mistoyanwork
+  ms.author: mistoyan
+  ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/6-exercise-resolve-site-to-site-vpn-gateway-connection.md)]

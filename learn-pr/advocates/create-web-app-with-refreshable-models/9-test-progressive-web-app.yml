@@ -1,15 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.create-web-app-with-refreshable-models.9-test-progressive-web-app
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Test your Progressive Web App
   description: Test your Progressive Web App
-  author: jlooper
-  ms.date: 02/10/2020
-  ms.author: jelooper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: GitHubber17
+  ms.author: chnoring
+  ms.date: 12/22/2022
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 title: Test your Progressive Web App
 durationInMinutes: 5
 content: |
   [!include[](includes/9-test-progressive-web-app.md)]
+

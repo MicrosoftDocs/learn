@@ -1,4 +1,4 @@
-Use the completed data-flow diagram and answers from the security assessment to identify potential solutions to each threat.
+To identify potential solutions for each threat, use the completed data-flow diagram and answers from the security assessment.
 
 > [!TIP]
 > Check out [Microsoft Security](https://www.microsoft.com/security/business) to learn more about tools and services you can use.
@@ -16,5 +16,5 @@ Use the completed data-flow diagram and answers from the security assessment to 
 |No backup, logging, or monitoring|Enable Azure Backup and Monitoring to prevent data loss. Visit the complete [list of services](/azure/security/fundamentals/end-to-end).|
 |No 2FA enforcement|As part of the installation exercise, enable 2FA in the application.|
 |No password requirements|You can't make changes to the password policy, but you can require users to save their main passwords in [Azure Key Vault](/azure/key-vault/general/overview) to prevent accidental disclosure.|
-|No vendor SLA|Develop a process to consistently check the application against potential threats that could put the PAW at risk.|
+|No vendor Service Level Agreement (SLA)|Develop a process to consistently check the application against potential threats that could put the PAW at risk.|
 |No SDL process|Consider registering the application as a service in the organization. Create an open-source team to manage yearly SDL requirements.|

@@ -3,27 +3,41 @@ uid: learn.wwl.implement-remote-access
 metadata:
   title: Implement remote access
   description: "Implement remote access"
-  ms.date: 03/14/2022
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: windows-server
+  ms.subservice: networking
+  ai-usage: human-only
 title: Implement remote access
 summary: Learn to enable remote access within your organization, and to publish your organization’s applications and websites by using Windows Server Web Application Proxy (WAP).
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the remote access options available in Windows Server.
-  - Select VPN options and set up VPN servers.
-  - Describe the NPS server role.
-  - Plan and implement NPS.
-  - Determine when to deploy PKI for remote access.
-  - Identify the authentication options for Web Application Proxy and explain how to use it to publish applications.
+
+  -   Describe the remote access options available in Windows Server.
+
+  -   Select VPN options and set up VPN servers.
+
+  -   Describe the NPS server role.
+
+  -   Plan and implement NPS.
+
+  -   Determine when to deploy PKI for remote access.
+
+  -   Identify the authentication options for Web Application Proxy and explain how to use it to publish applications.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Windows Server.
-  - Active Directory Domain Services (AD DS) concepts and technologies.
-  - Core networking technologies.
-  - Basic security best practices.
+
+  -   Windows Server.
+
+  -   Active Directory Domain Services (AD DS) concepts and technologies.
+
+  -   Core networking technologies.
+
+  -   Basic security best practices.
 iconUrl: /training/achievements/implement-remote-access.svg
 levels:
 - intermediate

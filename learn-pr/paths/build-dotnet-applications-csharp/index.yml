@@ -3,11 +3,10 @@ uid: learn.build-dotnet-applications-csharp
 metadata:
   title: 'Build .NET applications with C#'
   description: .NET is a free, cross-platform, open source developer platform for building many different types of applications. With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, games, and IoT.
-  ms.date: 10/26/2020
+  ms.date: 10/14/2024
   author: billwagner
   ms.author: wiwagn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: learning-path
 title: Build .NET applications with C#
 summary: |
   .NET is a free, cross-platform, open source developer platform for building many different types of applications. With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, games, and IoT.
@@ -17,7 +16,7 @@ prerequisites: |
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
 video:
   title: "Build .NET applications with C#"
-  url: https://www.microsoft.com/videoplayer/embed/RWVEF1
+  url: https://learn-video.azurefd.net/vod/player?id=5938e13b-d889-47e9-a747-4df9a4937da7
 iconUrl: /training/achievements/build-dotnet-applications-csharp.svg
 levels:
 - beginner

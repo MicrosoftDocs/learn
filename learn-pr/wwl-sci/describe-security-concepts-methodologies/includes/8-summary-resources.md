@@ -16,3 +16,4 @@ To learn more about the topics discussed in this module, see:
 - [Shared responsibility in the cloud](/azure/security/fundamentals/shared-responsibility)
 - [Azure defense in depth](/shows/azure-videos/defense-in-depth-security-in-azure)
 - [Enabling Data Residency and Data Protection in Microsoft Azure Regions](https://azure.microsoft.com/mediahandler/files/resourcefiles/achieving-compliant-data-residency-and-security-with-azure/Enabling_Data_Residency_and_Data_Protection_in_Azure_Regions-2021.pdf)
+- [Describe concepts of cryptography](/training/modules/describe-concepts-of-cryptography/)

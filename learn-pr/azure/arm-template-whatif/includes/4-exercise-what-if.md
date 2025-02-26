@@ -1,6 +1,6 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-The design team at your toy company has asked you to update a template that configures a virtual network. In this unit, you'll use what-if to verify the effects of deploying the updated template.
+The design team at your toy company has asked you to update a template that configures a virtual network. In this unit, you use what-if to verify the effects of deploying the updated template.
 
 During the process, you'll:
 
@@ -94,10 +94,10 @@ You start with an existing template that your team has been using. The template 
 Run `New-AzResourceGroupDeployment` to deploy the template.
 
 ```powershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep
+New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 ```
 
-You'll see the text **Running...** in the terminal. The deployment will take a minute or two to finish.
+The text **Running...** appears in the terminal. The deployment takes a minute or two to finish.
 
 ::: zone-end
 
@@ -108,10 +108,10 @@ You'll see the text **Running...** in the terminal. The deployment will take a m
 Run `New-AzResourceGroupDeployment` to deploy the template.
 
 ```powershell
-New-AzResourceGroupDeployment -TemplateFile azuredeploy.json
+New-AzResourceGroupDeployment -Name main -TemplateFile azuredeploy.json
 ```
 
-You'll see the text **Running...** in the terminal. The deployment will take a minute or two to finish.
+The text **Running...** appears in the terminal. The deployment takes a minute or two to finish.
 
 ::: zone-end
 
@@ -122,10 +122,10 @@ You'll see the text **Running...** in the terminal. The deployment will take a m
 Run `az deployment group create` to deploy the template.
 
 ```azurecli
-az deployment group create --template-file main.bicep
+az deployment group create --name main --template-file main.bicep
 ```
 
-The deployment will take a minute or two to finish.
+The deployment takes a minute or two to finish.
 
 ::: zone-end
 
@@ -136,10 +136,10 @@ The deployment will take a minute or two to finish.
 Run `az deployment group create` to deploy the template.
 
 ```azurecli
-az deployment group create --template-file azuredeploy.json
+az deployment group create --name main --template-file azuredeploy.json
 ```
 
-The deployment will take a minute or two to finish.
+The deployment takes a minute or two to finish.
 
 ::: zone-end
 
@@ -161,13 +161,13 @@ To validate that your deployment has been created and sent to Azure, go to the [
 
       :::image type="content" source="../media/4-portal-deployment-success.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." :::
 
-   2. Select the **main** deployment to see what resources were deployed. In this case, one virtual network (address space 10.0.0.0/16) with two subnets has been deployed.
+   1. Select the **main** deployment to see what resources were deployed. In this case, one virtual network (address space 10.0.0.0/16) with two subnets has been deployed.
 
       :::image type="content" source="../media/4-portal-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with no resources listed." :::
 
       :::image type="content" source="../media/4-portal-deployment-details-2.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one virtual network resource listed." :::
 
-      Leave the page open in your browser. You'll check on deployments again later.
+      Leave the page open in your browser so you can check on deployments again later.
 
 ## Modify the template
 
@@ -193,15 +193,15 @@ To validate that your deployment has been created and sent to Azure, go to the [
 
 1. In the *main.bicep* file in Visual Studio Code, delete the tag named `Owner` and its value. After you're done, the `tags` property of the virtual network should look like this: 
 
-   :::code language="bicep" source="code/4-template-after.bicep" range="4-6" :::
+   :::code language="bicep" source="code/4-template-after.bicep" range="6-8" :::
 
 1. Update the `addressPrefixes` to change the `/16` to `/15`. After you're done, the `addressSpace` property of the virtual network should look like this:
 
-   :::code language="bicep" source="code/4-template-after.bicep" range="8-12" :::
+   :::code language="bicep" source="code/4-template-after.bicep" range="10-14" :::
 
 1. Delete the subnet named `subnet001`. Make sure to delete the whole subnet object. After you're done, the `subnets` property of the virtual network should look like this:
 
-   :::code language="bicep" source="code/4-template-after.bicep" range="15-22" :::
+   :::code language="bicep" source="code/4-template-after.bicep" range="17-24" :::
 
 1. Save the template.
 
@@ -215,6 +215,7 @@ Run `New-AzResourceGroupDeployment` with the `-WhatIf` flag to perform the what-
 
 ```powershell
 New-AzResourceGroupDeployment `
+  -Name main `
   -WhatIf `
   -TemplateFile main.bicep
 ```
@@ -227,6 +228,7 @@ Run `New-AzResourceGroupDeployment` with the `-WhatIf` flag to perform the what-
 
 ```powershell
 New-AzResourceGroupDeployment `
+  -Name main `
   -WhatIf `
   -TemplateFile azuredeploy.json
 ```
@@ -269,7 +271,7 @@ The what-if output is similar to the following one:
 
 ::: zone-end
 
-You'll notice that the result is color-coded in addition to having a prefix:
+Notice that the result is color-coded in addition to having a prefix:
 
 - Purple and **~** for any modifications
 - Green and **+** for new resources to be created
@@ -319,6 +321,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
     ```powershell
     New-AzResourceGroupDeployment `
+    -Name main `
     -Mode Complete `
     -Confirm `
     -TemplateFile main.bicep
@@ -336,6 +339,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
     ```powershell
     New-AzResourceGroupDeployment `
+    -Name main `
     -Mode Complete `
     -Confirm `
     -TemplateFile azuredeploy.json
@@ -353,6 +357,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
     ```azurecli
     az deployment group create \
+      --name main \
       --mode Complete \
       --confirm-with-what-if \
       --template-file main.bicep
@@ -370,6 +375,7 @@ In these next steps, you'll deploy an empty template over your existing environm
 
     ```azurecli
     az deployment group create \
+      --name main \
       --mode Complete \
       --confirm-with-what-if \
       --template-file azuredeploy.json

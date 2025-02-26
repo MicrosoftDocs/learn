@@ -2,15 +2,17 @@
 uid: learn.wwl.protecting-monitoring-tuning-migrated-database.exercise-protect-monitor-tune-migrated-database
 title: 'Exercise: Protect, monitor, and tune a migrated database'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Protect, monitor, and tune a migrated database'
   description: "Exercise: Protect, monitor, and tune a migrated database"
-  ms.date: 09/26/2022
+  ms.date: 10/14/2024
   author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: true
-labModal: false
 durationInMinutes: 20
 content: |
   [!include[](includes/5a-exercise-protect-monitor-tune-migrated-database.md)]

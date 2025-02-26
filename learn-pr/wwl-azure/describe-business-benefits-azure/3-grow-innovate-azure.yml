@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-business-benefits-azure.grow-innovate-azure
+title: Grow and innovate with Azure
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Grow and innovate with Azure
+  description: "Grow and innovate with Azure"
+  ms.date: 09/20/2024
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-grow-innovate-azure.md)]
+interactive: bash

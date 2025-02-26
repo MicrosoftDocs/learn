@@ -27,7 +27,7 @@ Any system subparts requiring deeper dives should follow the same rule from the 
 |2|Create a new file and name it exactly the same as the description label, with a tree-like structure, such as *Web Service Name - Web Service Worker Name - Input Parser Name*.|
 |3|Focus the data-flow diagram only on the lower-level system subpart you're "zooming into."|
 
-The result will be a series of data-flow diagrams in the **lower-level layer**, known as layer 3.
+The result is a series of data-flow diagrams in the **lower-level layer**, known as layer 3.
 
 > [!TIP]
 > The path-like file naming structure helps you differentiate between the different levels.

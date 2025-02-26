@@ -4,11 +4,10 @@ title: Manage tracked files
 metadata:
   title: Manage tracked files
   description: "Manage tracked files"
-  ms.date: 11/29/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 sandbox: false
 labModal: false

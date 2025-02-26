@@ -2,14 +2,18 @@
 uid: learn.azure.child-extension-bicep-templates.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Learn how to deploy child and extension resources, and refer to existing resources, within your Bicep code.
-  ms.date: 01/23/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  ms.date: 01/31/2025
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

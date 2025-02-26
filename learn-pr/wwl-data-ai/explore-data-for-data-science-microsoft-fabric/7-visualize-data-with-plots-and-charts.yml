@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.visualize-data-with-plots-and-charts
+title: Visualize charts in notebooks
+metadata:
+  title: Visualize data in notebooks
+  description: Learn how to visualize charts .
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 1/24/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-visualize-data-with-plots-and-charts.md)]

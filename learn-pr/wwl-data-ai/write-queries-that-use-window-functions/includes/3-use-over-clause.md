@@ -12,7 +12,7 @@ If you don't specify an argument to the OVER clause, the window functions will b
 
 The following diagram shows the relationship between SELECT, OVER, and PARTITION BY:
 
-:::image type="content" source="../media/partition-by.png" alt-text="An image of a diagram showing how PARTITION BY further sub-divides the rows defined in the OVER clause.":::
+:::image type="content" source="../media/partition-by.png" alt-text="Diagram showing how PARTITION BY further sub-divides the rows defined in the OVER clause.":::
 
 ## PARTITION BY
 
@@ -28,7 +28,7 @@ The ROW or RANGE arguments set a start and end boundary around the rows being op
 
 The ROWS clause limits the rows within a partition by specifying a fixed number of rows preceding or following the current row.
 
-the RANGE clause logically limits the rows within a partition by specifying a range of values with respect to the value in the current row.
+The RANGE clause logically limits the rows within a partition by specifying a range of values with respect to the value in the current row.
 
 ### CURRENT ROW
 

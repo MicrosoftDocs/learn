@@ -2,16 +2,14 @@
 uid: learn.wwl.implement-non-relational-data-model.exercise-measure-performance-for-customer-entities
 title: 'Exercise: Measure performance for customer entities'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Measure performance for customer entities'
   description: "Exercise: Measure performance for customer entities"
-  ms.date: 02/06/2023
+  ms.date: 10/28/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labId: 107586
-labModal: true
+  ms.topic: unit
 durationInMinutes: 25
 content: |
   [!include[](includes/5-exercise-measure-performance-for-customer-entities.md)]

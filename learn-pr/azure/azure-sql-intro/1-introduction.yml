@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-intro.1-introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: Introduction
-  ms.date: 03/15/2023
+  description: Learn about the benefits of moving to Azure SQL in the cloud.
+  ms.date: 10/03/2024
   author: MashaMSFT
   ms.author: mathoma
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Introduction
 durationInMinutes: 2
 content: |

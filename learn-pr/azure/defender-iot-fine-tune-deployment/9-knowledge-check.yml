@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-fine-tune-deployment.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 5/23/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+quiz:
+  questions:
+  - content: "When might you need to merge 2 or more OT devices?"
+    choices:
+    - content: "If a device is listed more than once because of multiple ports connecting to a sensor, for example, linked by wifi and a wired connection."
+      isCorrect: true
+      explanation: "Correct, a device can be listed several times and then you might want to merge them into one listing."
+    - content: "If Defender for IoT has mistakenly identified a device and you want to make a group of devices that are similar."
+      isCorrect: false
+      explanation: "Incorrect, you merge a device when there are multiple listings for the same device."
+    - content: "If there are too many devices listed in your table and you want to shorten the list."
+      isCorrect: false
+      explanation: "Incorrect, you merge a device when there are multiple listings for the same device."
+  - content: "What is the most important aspect of the triage process?"
+    choices:
+    - content: "Correcting the subnet IP address."
+      isCorrect: false
+      explanation: "Incorrect, making changes based on the remediation steps presented."
+    - content: "Choosing the correct filters to list the alerts."
+      isCorrect: false
+      explanation: "Incorrect, making changes based on the remediation steps presented."
+    - content: "Following the remediation steps listed in the device alert pane."
+      isCorrect: true
+      explanation: "Correct, making changes based on the remediation steps presented."
+  - content: "What is the reason for choosing the Learn option in the Take action tab?"
+    choices:
+    - content: "So that the sensor learns that this type of traffic is normal and won't generate an alert in the future."
+      isCorrect: true
+      explanation: "Correct, the sensor learns not to trigger an alert for this traffic in the future."
+    - content: "So that the sensor learns that this type of traffic is suspicious and should generate alerts in the future."
+      isCorrect: false
+      explanation: "Incorrect, the sensor learns not to trigger an alert for this traffic in the future."
+    - content: "So that the sensor learns that the subnet linked to this traffic needs to be reconfigured."
+      isCorrect: false
+      explanation: "Incorrect, the sensor will learn not to trigger an alert for this traffic in the future."
+  - content: "Why is it important to define the range of IP addresses for a DHCP server?"
+    choices:
+    - content: "The server can only run once the full range of IP addresses are defined."
+      isCorrect: false
+      explanation: "Incorrect, the sensor must know the range of IP addresses so that it can correctly identify a device."
+    - content: "The server dynamically changes the device IP address which can result in misleading data."
+      isCorrect: true
+      explanation: "Correct, when the sensor knows the range of IP addresses it can correctly identify a device."
+    - content: "The user is able to choose which IP address they use for their device."
+      isCorrect: false
+      explanation: "Incorrect, the sensor must know the range of IP addresses so that it can correctly identify a device."
+  - content: "Once in operational mode, how will new devices be listed in the inventory?"
+    choices:
+    - content: "Authorized, just like all new devices are listed during learning mode."
+      isCorrect: false
+      explanation: "Incorrect, once in operational mode all new devices are listed as unauthorized and should be fully checked before updating their status."
+    - content: "Unauthorized, and you should simply update them to authorized as soon as possible."
+      isCorrect: false
+      explanation: "Incorrect, once in operational mode all new devices are listed as unauthorized and should be fully checked before updating their status."
+    - content: "Unauthorized, and must be fully checked before updating them to authorized."
+      isCorrect: true
+      explanation: "Correct, the sensor must know the range of IP addresses so that it can correctly identify a device."

@@ -1,18 +1,23 @@
+Software releases often encounter errors, bugs, or security flaws that require development teams to apply updates and fixes. As software evolves, new features and functionalities are added. These updates and fixes are released as new versions of the software. Versioning is a controlled process that involves tracking and managing software version releases. Software versions typically remain in support for a set period of time, which gives users time to upgrade their software to the latest version.
 
-Versioning in software allows for software to evolve in a controlled process over time. Software that has been released can often encounter error, bug, or security flaws. These faults are often discovered by the software development and testing team or the users of the software. To apply fixes and updates, a new version of the software is then released. This process is known as patching. Typically, older software versions remain in support for a set period of time. This gives users some time to upgrade to the newest software version. 
+:::image type="content" source="../media/2-software-version-release-lifecycle.png" border="false" alt-text="Diagram that shows how software evolves over time from its initial release as new bug fixes and features are made through software versioning.":::
 
-:::image type="content" source="../media/2-software-version-release-lifecycle.png" border="false" alt-text="An image that shows how software evolves over time from its initial release as new bug fixes and features are made through software versioning.":::
+## What is semantic versioning?
 
-## What is semantic versioning? 
-[Semantic versioning](https://semver.org/) is a versioning scheme that is made up of three components: 
+[Semantic versioning](https://semver.org/) is a versioning scheme comprised of the following version components:
 
-:::image type="content" source="../media/2-major-minor-patch.png" border="false" alt-text="An image that shows the components of semantic versioning is made up of a major version, a minor version, and a patch version component.":::
+* **Major versions** are released when software evolves from version 1.0.0 to 2.0.0. These versions typically include breaking changes that aren't backward compatible with previous versions.
+* **Minor versions** are released when software evolves from 1.0.0 to 1.1.0. These versions typically include new features and functionalities.
+* **Patch versions** are released when software evolves from version 1.0.0 to 1.0.1. These versions typically include bug fixes and security updates.
 
-A major version is released when software evolves from version 1.0.0 to 2.0.0. A minor version is release when the software evolves from 1.0.0 to 1.1.0. And a patch version is released when the software evolves from version 1.0.0 to 1.0.1.
+## Kubernetes versioning
 
-## What are Kubernetes versions? 
-Kubernetes follows semantic versioning rules when a new version is released. This means when bug fixes or security fixes are made, a new patch version is released. When Kubernetes decides to roll out new features for cluster components, a new minor version is released. 
+Kubernetes uses the semantic versioning scheme. New Kubernetes version releases are only for components of the Kubernetes runtime within the cluster. The Kubernetes runtime includes the following components:
 
-The new version releases by Kubernetes are for components of the Kubernetes runtime within the cluster only. These components includes the kube-apiserver, kubelet, kube-controller-manager, kube-scheduler, and kube-proxy. They do not include node upgrades such as operating system updates or image upgrades for nodes that run within the Kubernetes cluster. This means, in addition to applying Kubernetes cluster patches and upgrades, you will also need upgrade and patch the underlying compute nodes that support the Kubernetes cluster as part of a separate upgrades and patches process.
+* kube-apiserver
+* kubelet
+* kube-controller-manager
+* kube-scheduler
+* kube-proxy
 
- :::image type="content" source="../media/2-kubernetes-cluster-component-upgrades.png" border="false" alt-text="An image that shows a list of the components that Kubernetes updates with new version releases and a list that shows that node operating system and images are not part of the updates that Kubernetes releases.":::
+The Kubernetes runtime components don't include node upgrades, such as operating-system updates or image upgrades for nodes running the Kubernetes cluster. This means that you need to apply separate upgrades and patches to the Kubernetes cluster components and the underlying compute nodes supporting the cluster.

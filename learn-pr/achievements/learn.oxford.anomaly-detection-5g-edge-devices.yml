@@ -1,8 +1,8 @@
 ### YamlMime:AchievementDetail
-achievementUid: learn.oxford.anomaly-detection-5g-edge-devices
+achievementUid: learn.oxford.anomaly-detection-5g-edge-devices.badge
 metadata:
   title: >-
     Microsoft Badge: Void detection on Edge devices with Live Video Analytics
     using own images and video was issued by Microsoft
 socialImageUrl: >-
-  /training/achievements/student-evangelism/void-detection-edge-devices-lva-social.png
+  /training/achievements/student-evangelism/void-detection-edge-devices-lva.png

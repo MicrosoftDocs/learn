@@ -2,13 +2,14 @@
 uid: learn.wwl.prepare-to-maintain-sql-databases-azure.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 03/06/2023
-  author: wwlpublish
+  ms.date: 2/12/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 1

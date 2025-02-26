@@ -1,14 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-deployment-of-sap-azure.exercise-terraform-deployment-for-infrastructure
-title: Exercise - Define a Terraform deployment for an Azure VM
+title: Exercise - Define a Terraform deployment for an Azure Virtual Machine
 metadata:
-  title: Exercise - Define a Terraform deployment for an Azure VM
-  description: "Exercise - Define a Terraform deployment for an Azure VM"
-  ms.date: 03/13/2023
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Define a Terraform deployment for an Azure Virtual Machine
+  description: "Exercise - Define a Terraform deployment for an Azure Virtual Machine"
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/4-exercise-define-terraform-deployment-for-azure-virtual-machine.md)]

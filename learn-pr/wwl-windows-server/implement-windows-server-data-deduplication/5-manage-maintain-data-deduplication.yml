@@ -4,11 +4,10 @@ title: Manage and maintain Data Deduplication
 metadata:
   title: Manage and maintain Data Deduplication
   description: "Manage and maintain Data Deduplication"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
@@ -21,10 +20,10 @@ quiz:
     choices:
     - content: "Hyper-V storage"
       isCorrect: false
-      explanation: "That's incorrect. The demonstration illustrated the implementation of general-purpose file server."
+      explanation: "Incorrect. The demonstration illustrated the implementation of general-purpose file server."
     - content: "General-purpose file server"
       isCorrect: true
-      explanation: "That's correct. The demonstration illustrated the implementation of general-purpose file server."
+      explanation: "Correct. The demonstration illustrated the implementation of general-purpose file server."
     - content: "Backup server"
       isCorrect: false
-      explanation: "That's incorrect. The demonstration illustrated the implementation of general-purpose file server."
+      explanation: "Incorrect. The demonstration illustrated the implementation of general-purpose file server."

@@ -1,4 +1,4 @@
-In this demonstration, you will learn to:
+In this demonstration, you'll learn to:
 
 - Set up a network.
 - Deploy Azure Firewall.
@@ -7,10 +7,7 @@ In this demonstration, you will learn to:
 - Configure a network rule.
 - Test the firewall settings.
 
-
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AP81]
-
-
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=61dbe085-bbc1-4cda-91ed-c49946bf52dd]
 
 ## Next steps
 

@@ -1,6 +1,6 @@
 Recall that in the storm events, you've used aggregation functions to compare different groups of information. You've organized complex queries with `let` statements. Finally, you've presented this data in graphical format.
 
-Now it's your turn to try writing a query from scratch.
+Now, it's your turn to try writing a query from scratch.
 
 Use the table we've been exploring up until now, *StormEvents*, to answer the following question:
 

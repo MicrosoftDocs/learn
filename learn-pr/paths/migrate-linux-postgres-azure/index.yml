@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.migrate-linux-postgres-azure
+title: Migrate Linux and PostgreSQL Workloads to Azure
+metadata:
+  title: Migrate Linux and PostgreSQL Workloads to Azure
+  description: Migrate Linux and PostgreSQL workloads to Azure using Azure Virtual Machines and Azure Database for PostgreSQL.
+  ms.date: 10/07/2024
+  author: asw101
+  ms.author: aawislan
+  ms.topic: learning-path
+summary: >
+  Migrate from an on-premises Linux server to Azure using Azure Virtual Machines and Azure Database for PostgreSQL.
+prerequisites: None
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - database-administrator
+  - developer
+  - devops-engineer
+products: 
+  - azure-virtual-machines
+  - azure-database-postgresql
+modules:
+  - learn.azure.migrate-linux-postgres
+  - learn.introduction-to-linux-on-azure
+  - learn.plan-your-linux-environment-in-azure
+  - learn.provision-linux-virtual-machine-in-azure
+  - learn.wwl.migrate-azure-database-postgresql-flexible-server
+  - learn.wwl.get-started-generative-ai-azure-database-postgresql
+trophy:
+  uid: learn.azure-linux-postgres.trophy

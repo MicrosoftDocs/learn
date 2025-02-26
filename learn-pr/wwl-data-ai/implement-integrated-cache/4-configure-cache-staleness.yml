@@ -2,13 +2,14 @@
 uid: learn.wwl.implement-integrated-cache.configure-cache-staleness
 title: Configure cache staleness
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure cache staleness
   description: "Configure cache staleness"
   ms.date: 12/13/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

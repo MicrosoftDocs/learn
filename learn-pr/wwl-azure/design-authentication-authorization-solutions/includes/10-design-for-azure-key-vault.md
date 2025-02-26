@@ -1,4 +1,4 @@
-Direct storage and handling of secrets, encryption keys, and certificates is risky. Every usage introduces the possibility of unintentional data exposure. Azure Key Vault provides a secure storage area so you can manage all your app secrets and properly encrypt your data in transit or while it's being stored. 
+Direct storage and handling of secrets, encryption keys, and certificates is risky. Every usage introduces the possibility of unintentional data exposure. Azure Key Vault provides a secure storage area for app secrets and data encryption. 
 
 Azure Key Vault can help you solve security problems for Tailwind Traders:
 
@@ -46,5 +46,5 @@ You're on your last step in planning how to implement authentication and authori
 - **Consider data protection for your key vault**. Turn on [soft delete and purge protection](/azure/key-vault/general/key-vault-recovery?tabs=azure-portal#what-are-soft-delete-and-purge-protection) to protect your key vault data.
 
    - **Soft delete** is designed to prevent accidental deletion of your key vault and keys, secrets, and certificates stored inside key vault. Think of soft-delete like a recycle bin. 
-   - **Purge protection** Purge protection is designed to prevent the deletion of your key vault, keys, secrets, and certificates by a malicious insider. Think of this as a recycle bin with a time based lock. You can recover items at any point during the configurable retention period. 
+   - **Purge protection** Purge protection is designed to prevent the deletion of your key vault, keys, secrets, and certificates by a malicious insider. Think of the key vault as a recycle bin with a time based lock. You can recover items at any point during the configurable retention period. 
 

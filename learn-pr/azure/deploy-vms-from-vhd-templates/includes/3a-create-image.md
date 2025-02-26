@@ -1,10 +1,14 @@
 After you've generalized the virtual machine, you can create an image. The image will include all of the disks associated with the virtual machine. You can create an image from the generalized virtual machine by using the Azure portal, the Azure CLI, or PowerShell.
 
-To create an image in the Azure portal, go to the page for the virtual machine and select **Capture**:
+To create an image in the Azure portal, go to the page for the virtual machine and select **Capture > Image**:
 
-![Image of the virtual machine page in the Azure portal.](../media/3-virtual-machine.png)
+![Screenshot of the virtual machine page in the Azure portal.](../media/3-virtual-machine.png)
 
-On the **Create an image** page that follows, specify a resource group in which to store the image. You can optionally select to automatically remove the virtual machine after the image is created. 
+On the **Create an image** page that follows, specify a resource group in which to store the image. You can optionally select to automatically remove the virtual machine after the image is created by checking the **Automatically delete this virtual machine after creating the image** checkbox.
+
+If you don't have one already, select **Create New** for the *Target Azure compute gallery* and give it a name. Additionally, you can **Create New** for the *Target VM image definition* and give it a name. For the *Version number* add **0.0.1**.
+
+Select **Review + create** and then **Create** to deply.
 
 ![Screenshot of the Create image page in the Azure portal.](../media/3-create-image.png)
 
@@ -34,7 +38,9 @@ az image create \
 
 ## Create a new virtual machine from a generalized image
 
-You can build a new virtual machine by using your generalized image. The simplest way is to use the Azure portal. Go to the page for your image, and select **+ Create VM**. You'll be prompted for the machine-specific details, such as the virtual machine name, user account, virtual machine size, and network ports to open.
+You can build a new virtual machine by using your generalized image. The simplest way is to use the Azure portal.
+
+Go to the page for your image, and select **+ Create VM**. You'll be prompted for the machine-specific details, such as the virtual machine name, user account, virtual machine size, and network ports to open.
 
 Alternatively, you can use the PowerShell `New-AzVm` command, or the Azure CLI `az vm create` command. The following examples illustrate the syntax:
 
@@ -56,9 +62,9 @@ az vm create \
 
 ## Create a snapshot of a VHD
 
-A virtual machine image contains an image of every VHD in the virtual machine. You can also create separate snapshot images of a VHD at any time. A snapshot is a read-only copy of a VHD. You can use a snapshot to restore a VHD to the state it was in when the snapshot was taken.
+A virtual machine image contains an image of every VHD in the virtual machine. You can also create separate snapshot images of a VHD at any time. A snapshot is a read-only copy of a VHD. You can use a snapshot to restore a VHD to its state when the snapshot was taken.
 
-If you're taking an image of a virtual machine that spans several VHDs, you must ensure that all disk activity has stopped, and that you take a snapshot of every VHD. Failure to do this can result in inconsistencies if you need to restore the virtual machine from these snapshots. By stopping the virtual machine, you can ensure that there is no disk activity and that a successful snapshot is taken.
+If you're taking an image of a virtual machine that spans several VHDs, you must ensure that all disk activity has stopped and that you take a snapshot of every VHD. Failure to do so can result in inconsistencies if you need to restore the virtual machine from these snapshots. You can ensure there's no disk activity and take a successful snapshot by stopping the virtual machine.
 
 Unlike creating an image of a virtual machine, capturing a snapshot of a VHD is a non-destructive process. You can continue running virtual machines by using the VHD afterward.
 

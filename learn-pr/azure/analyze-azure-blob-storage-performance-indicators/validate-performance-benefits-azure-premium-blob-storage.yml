@@ -2,13 +2,17 @@
 uid: learn.azure.analyze-azure-blob-storage-performance-indicators.validate-performance-benefits-azure-premium-blob-storage 
 title: Exercise - Validate the performance benefits with Azure Premium Blob Storage 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Validate the performance benefits with Azure Premium Blob Storage
   description: In this exercise, you'll validate the performance benefits with Azure Premium Blob Storage.
-  ms.date: 08/01/2022
+  ms.date: 10/21/2024
   author: ciphertxt
   ms.author: schoag
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 13
 content: |
   [!include[](includes/validate-performance-benefits-azure-premium-blob-storage.md)]
+

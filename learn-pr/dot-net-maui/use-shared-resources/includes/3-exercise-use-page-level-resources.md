@@ -1,31 +1,33 @@
-All the exercises in this module relate to the prebuilt **TipCalculator** application. You'll modify and improve this app throughout this module. In this exercise, you'll use page-level resources to eliminate repeated XAML values.
+All the exercises in this module relate to the prebuilt **TipCalculator** application. You modify and improve this app throughout the module. In this exercise, you use page-level resources to eliminate repeated values in your Extensible Application Markup Language (XAML) code.
+
+[!include[](../../../includes/dotnet9-sdk-version.md)]
 
 ## Open the starter solution
 
-> [!NOTE]
-> If you are planning to run and debug your .NET MAUI apps on Android from Windows, it is best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
-
 1. Clone or download the exercise repo from [GitHub](https://github.com/microsoftdocs/mslearn-dotnetmaui-use-shared-resources).
 
-1. Open the starter solution from the **exercise1/TipCalculator** folder by using Visual Studio.
+    > [!NOTE]
+    > It's best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+
+1. Open the starter solution from the **exercise1/TipCalculator** folder by using Visual Studio or open this folder directly in Visual Studio Code.
 
 1. Verify that it builds and runs in your environment. (Any platform is fine.)
 
 1. Take a few minutes to examine and run the application so you understand how it behaves.
 
-    The application provides two pages. The **StandardTipPage** page is a simple tip calculator. You enter a value, and the page calculates the tip (15%) and the total due. The image below shows the application running on an Android device:
+    The application provides two pages. The **StandardTipPage** page is a simple tip calculator. You enter a value, and the page calculates the tip (15%) and the total due. The following image shows the application running on an Android device:
 
     :::image type="content" source="../media/3-standard-tip-page.png" alt-text="A screenshot of the standard tip page of tip calculator app running on Android.":::
 
     The **Light** and **Dark** buttons enable you to change the color theme of the page. The default is the Light theme. If you select **Dark**, the colors for the background and text are reversed.
 
-    The **Use Custom Calculator** button switches the display to the **CustomTipPage** page. This page enables you to vary the tip percentage by using a slider. You can also select the 15% and 20% buttons to calculate the tip based on predefined rates.
+    The **Use Custom Calculator** button switches the display to the **CustomTipPage** page. This page enables you to vary the tip percentage by using a slider. You can also select the **15%** and **20%** buttons to calculate the tip based on predefined rates.
 
     :::image type="content" source="../media/3-custom-tip-page.png" alt-text="A screenshot of the custom tip page of the Tip Calculator in Android.":::
 
 ## Find repeated XAML
 
-1. In Visual Studio, open the **StandardTipPage.xaml** file.
+1. Open the **StandardTipPage.xaml** file.
 
 1. Find the XAML markup that sets the background color of the **LayoutRoot** grid. Notice that it uses a hard-coded value.
 
@@ -42,7 +44,7 @@ All the exercises in this module relate to the prebuilt **TipCalculator** applic
     <Label x:Name="totalLabel" Text="Total" TextColor="Navy" FontSize="22" ... />
     ```
 
-1. Find the XAML code that sets the color of the labels in the "right column" to Navy and the point size to 22. Notice that these same values are used on two labels.
+1. Find the XAML code that sets the color of the labels in the "right column" to Navy and the font size to 22. Notice that these same values are used on two labels.
 
     Some of the property settings seem to form a logical group. For example, the combination of Navy and 22 is used on multiple labels.
 
@@ -57,7 +59,7 @@ All the exercises in this module relate to the prebuilt **TipCalculator** applic
 
 ## Define resources
 
-You've now seen all the repeated code that exists in the application. Let's create resources in XAML to start eliminating some of this repeated code.
+Now let's create resources in XAML, so you can start eliminating some of the repeated code that you found in the application.
 
 1. Open the **StandardTipPage.xaml** file.
 
@@ -108,4 +110,4 @@ Now, let's apply the resources that you created.
 1. Run the application. Verify that **StandardTipPage** still displays dark text on a light background at startup, as it did before.
 
 > [!NOTE]
-> Don't worry about the styling for **CustomTipPage** or the **Light** and **Dark** themes at this point; you'll address these issues later.
+> Don't worry about the styling for **CustomTipPage** or the **Light** and **Dark** themes at this point; you address these issues later.

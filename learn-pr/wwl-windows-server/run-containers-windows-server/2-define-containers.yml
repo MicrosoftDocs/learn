@@ -4,13 +4,12 @@ title: Define containers
 metadata:
   title: Define containers
   description: "Define containers"
-  ms.date: 01/04/2023
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/2-define-containers.md)]

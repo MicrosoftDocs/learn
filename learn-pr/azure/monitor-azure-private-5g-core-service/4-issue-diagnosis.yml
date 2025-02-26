@@ -2,13 +2,14 @@
 uid: learn.monitor-azure-private-5g-core-service.issue-diagnosis
 title: Issue diagnosis
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Issue diagnosis
   description: Azure Private 5G Core provides a distributed tracing tool, with which you can analyze network activities of each site and diagnose network issues.
-  ms.date: 10/27/2022
-  author: michael-weizhong-shan
-  ms.author: michaelshan
-  ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.date: 07/31/2024
+  author: joemarshall
+  ms.author: joemarshall
+  ms.topic: unit
 durationInMinutes: 11
 content: |
   [!include[](includes/4-issue-diagnosis.md)]

@@ -4,14 +4,11 @@ title: 'Exercise: Create stored procedures and table-valued functions'
 metadata:
   title: 'Exercise: Create stored procedures and table-valued functions'
   description: "Exercise: Create stored procedures and table-valued functions"
-  ms.date: 02/02/2023
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labId: 105120
-labModal: true
+  ms.topic: unit
+  zone_pivot_groups: sql-database
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise.md)]

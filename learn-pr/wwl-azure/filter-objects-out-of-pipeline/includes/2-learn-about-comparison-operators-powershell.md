@@ -1,4 +1,4 @@
-To start filtering, you need a way to let PowerShell know which objects you want to keep and which ones you want to remove from the pipeline. You can do this by specifying criteria for the objects that you want to keep. You do so by using one of the PowerShell comparison operators to compare a particular property of an object to a value that you specify. PowerShell keeps the object if the comparison is true and removes it if the comparison is false.
+To start filtering, you need a way to let PowerShell know which objects you want to keep and which ones you want to remove from the pipeline. You can do this task by specifying criteria for the objects that you want to keep. You do so by using one of the PowerShell comparison operators to compare a particular property of an object to a value that you specify. PowerShell keeps the object if the comparison is true and removes it if the comparison is false.
 
 The following table lists the basic comparison operators and what they mean.
 
@@ -13,7 +13,7 @@ The following table lists the basic comparison operators and what they mean.
 | **-le**  | Less than or equal to    |
 | **-ge**  | Greater than or equal to |
 
-These operators are case-insensitive when used with strings. This means that the results will be the same whether the letters are capitalized or not. A case-sensitive version of each operator is available and begins with the letter **c**, such as **-ceq** and **-cne**.
+These operators are case-insensitive when used with strings. This means that the results are the same whether the letters are capitalized or not. A case-sensitive version of each operator is available and begins with the letter **c**, such as **-ceq** and **-cne**.
 
 PowerShell also contains the **-like** operator and its case-sensitive companion, **-clike**. The **-like** operator resembles **-eq** but supports the use of the question mark (?) and asterisk (*) wildcard characters in string comparisons.
 

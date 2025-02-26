@@ -4,11 +4,10 @@ title: Identify the hardware requirements for Windows Server 2019
 metadata:
   title: Identify the hardware requirements for Windows Server 2019
   description: "Identify the hardware requirements for Windows Server 2019"
-  ms.date: 02/26/2021
+  ms.date: 12/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |

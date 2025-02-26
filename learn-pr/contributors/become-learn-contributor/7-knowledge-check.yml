@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.become-learn-contributor.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This unit assesses your knowledge about ways of contributing to Microsoft Learn.
+  ms.date: 10/4/2023
+  author: sgaspari815
+  ms.author: v-sgaspari
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "Which of the following describes the impact of Microsoft Learn contributions?"
+    choices:
+    - content: "Microsoft Learn contributions help improve learning experiences for others while providing skill-building opportunities for the contributor."
+      isCorrect: true
+      explanation: "Contributing can help build skills for product users and contributors alike."
+    - content: "Contributions to Microsoft Learn improve coding skills."
+      isCorrect: false
+      explanation: "They can, but coding skills aren’t required to contribute to Microsoft Learn!"
+    - content: "Large contributions can make a direct impact to Microsoft products and technologies."
+      isCorrect: false
+      explanation: "All contributions, big and small, are valuable."
+  - content: "What contribution method can be used to provide feedback on a documentation article?"
+    choices:
+    - content: "Submit a question on Q&A."
+      isCorrect: false
+      explanation: "Microsoft Q&A is useful for asking technical questions about Microsoft products or services."
+    - content: "Email the article and your question to the listed author."
+      isCorrect: false
+      explanation: "The most direct way to provide feedback on a specific article is to raise an issue on GitHub."
+    - content: "Raise a GitHub issue on the article."
+      isCorrect: true
+      explanation: "This is the most direct way to provide feedback like questions, suggestions, or revisions on a documentation article."
+  - content: "As a contributor, how can you use Microsoft Learn Collections?"
+    choices:
+    - content: "You can assign others to complete a series of learning resources using a Collection."
+      isCorrect: false
+      explanation: "You can share, not *assign* a Collection of learning resources with others."
+    - content: "You can create a customized group of learning assets, like a series of training modules and articles."
+      isCorrect: true
+      explanation: "Collections are personalized groups of assets on Microsoft Learn."
+    - content: "Others can add you to a Collection of learning assets only during a Microsoft event."
+      isCorrect: false
+      explanation: "Others can share a Collection with you at any time."
