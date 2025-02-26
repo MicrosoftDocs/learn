@@ -43557,6 +43557,11 @@
       "source_path": "learn-pr/wwl-azure/security-virtual-networks/9-expressroute-encryption.md",
       "redirect_url": "/training/modules/security-virtual-networks/13-expressroute-encryption",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-to-azure-ai-studio/index.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
     }
   ]
 }
