@@ -44,7 +44,6 @@ units:
 - learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-azure-machine-learning
 - learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-azure-cognitive-services
 - learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-azure-openai-service
-- learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-azure-cognitive-search
 badge:
   uid: learn.wwl.prepare-to-develop-ai-solutions-azure.badge
 
