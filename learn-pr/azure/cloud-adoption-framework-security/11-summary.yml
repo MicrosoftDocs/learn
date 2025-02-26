@@ -4,7 +4,7 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: Summary of the Microsoft Cloud Adoption Framework for Azure security module, including aspects of security on other methodologies and guidance about teams and roles.
+  description: Summary of the Secure methodology module for the Cloud Adoption Framework. This module includes guidance about security recommendations for all methodologies and guidance about teams and roles.
   ms.date: 02/20/2025
   author: Zimmergren
   ms.author: tozimmergren
