@@ -41,4 +41,4 @@ The GenAIOps lifecycle is complex, and anything but linear. It’s an iterative 
 
 Overarching all these phases is the **management loop**, which focuses on governance, security, and compliance. It's a framework that balances speed in deliverables with strict adherence to standards.
 
-Next, we're going to delve into each and every step described to be part of the GenAIOps lifecycle, by covering the main tools that help you during that specific phase.
+Next, we're going to delve into each and every step described to be part of the GenAIOps lifecycle, by covering the main tools that help you during each specific phase.
