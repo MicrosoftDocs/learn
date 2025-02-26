@@ -39,7 +39,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn.wwl.prepare-to-develop-ai-solutions-azure.understand-ai-related-terms
 - learn.wwl.prepare-to-develop-ai-solutions-azure.understand-considerations-for-ai-engineers
 - learn.wwl.prepare-to-develop-ai-solutions-azure.understand-considerations-for-responsible-ai
 - learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-azure-machine-learning
