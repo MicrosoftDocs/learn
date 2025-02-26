@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: 'Exercise: Enable Microsoft Defender for SQL and Data Classification'
   description: "Exercise: Enable Microsoft Defender for SQL and Data Classification"
-  ms.date: 09/02/2022
-  author: wwlpublish
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
