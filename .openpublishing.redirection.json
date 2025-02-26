@@ -43647,6 +43647,11 @@
       "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/8-understand-capabilities-of-azure-openai-service.md",
       "redirect_url": "/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/4-understand-considerations-for-ai-engineers.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
     }
   ]
 }
