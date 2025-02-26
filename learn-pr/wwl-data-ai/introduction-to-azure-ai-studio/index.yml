@@ -39,7 +39,6 @@ subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contrib
 units:
 - learn.wwl.introduction-to-azure-ai-studio.introduction
 - learn.wwl.introduction-to-azure-ai-studio.what-is-ai-studio
-- learn.wwl.introduction-to-azure-ai-studio.azure-ai-resources
 - learn.wwl.introduction-to-azure-ai-studio.when-to-use-ai-studio
 - learn.wwl.introduction-to-azure-ai-studio.exercise-explore-ai-studio
 - learn.wwl.introduction-to-azure-ai-studio.knowledge-check
