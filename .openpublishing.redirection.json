@@ -43617,6 +43617,11 @@
       "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/10-knowledge-check.md",
       "redirect_url": "/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/11-summary.md",
+      "redirect_url": "/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
     }
   ]
 }
