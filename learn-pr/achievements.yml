@@ -5250,3 +5250,8 @@ achievements:
   title: Develop reports with Microsoft Power BI
   summary: Power BI allows you to easily connect to and present your data in an interactive report, so you can make data-driven decisions. Learn how to connect to data, transform and shape data, and create interactive visuals in a Power BI report.
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.introduction-to-azure-ai-studio.badge
+  type: badge
+  title: Introduction to Azure AI Foundry
+  summary: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Azure AI Foundry brings these services together in a single unified experience for AI development on the Azure cloud platform.
+  iconUrl: /learn/achievements/generic-badge.svg
