@@ -102,7 +102,7 @@ The ability to forward Azure Automation diagnostic logs to a Log Analytics works
 >[!NOTE]
 > Before you start using Log Analytics to query Automation jobs data, you must configure **Diagnostic settings** for your Automation Account.
 
-## Monitor elastic jobs (preview)
+## Monitor elastic jobs
 
 With elastic jobs, job executions are logged, and any failures are automatically retried. The automatic retry feature provides services more resilient to transient failures.
 
