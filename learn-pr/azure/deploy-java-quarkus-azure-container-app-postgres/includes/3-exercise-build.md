@@ -180,17 +180,16 @@ mvnw.cmd quarkus:dev  # On Windows
 The Quarkus application should start and connect to your database. You should see the following output:
 
 ```log
-2025-02-26 16:27:18,064 INFO  [io.qua.dat.dep.dev.DevServicesDatasourceProcessor] (build-3) Dev Services for default datasource (postgresql) started - container ID is 995a76794a46
-2025-02-26 16:27:18,068 INFO  [io.qua.hib.orm.dep.dev.HibernateOrmDevServicesProcessor] (build-33) Setting quarkus.hibernate-orm.database.generation=drop-and-create to initialize Dev Services managed database
+2025-02-28 08:38:33,418 INFO  [io.qua.dat.dep.dev.DevServicesDatasourceProcessor] (build-28) Dev Services for default datasource (postgresql) started - container ID is ce37977203b0
+2025-02-28 08:38:33,421 INFO  [io.qua.hib.orm.dep.dev.HibernateOrmDevServicesProcessor] (build-6) Setting quarkus.hibernate-orm.database.generation=drop-and-create to initialize Dev Services managed database
 __  ____  __  _____   ___  __ ____  ______ 
  --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
  -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
 --\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
-2025-02-26 16:27:21,322 INFO  [io.quarkus] (Quarkus Main Thread) todo 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.18.4) started in 32.490s. Listening on: http://localhost:8080
+2025-02-28 08:38:35,278 INFO  [io.quarkus] (Quarkus Main Thread) todo 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.18.4) started in 5.367s. Listening on: http://localhost:8080
 
-2025-02-26 16:27:21,501 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
-2025-02-26 16:27:21,501 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, narayana-jta, resteasy, resteasy-jackson, smallrye-context-propagation, vertx]
-2025-02-26 16:27:30,113 INFO  [com.exa.dem.TodoResource] (executor-thread-1) Creating todo: Todo{id=null', description='Take Quarkus MS Learn', details='Take the MS Learn on deploying Quarkus to Azure Container Apps', done=true, createdAt=2025-02-26T07:27:30.093447Z}
+2025-02-28 08:38:35,280 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2025-02-28 08:38:35,280 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [agroal, cdi, hibernate-orm, hibernate-orm-panache, jdbc-postgresql, narayana-jta, resteasy, resteasy-jackson, smallrye-context-propagation, vertx]
 
 --
 Tests paused
