@@ -1,27 +1,25 @@
 To get the best out of the AI, you want to create prompts that help it give you useful responses. A **prompt** is simply a question or instruction you submit to get a specific response. It's like asking a friend or coworker for help or information, but instead, you're asking an AI, like Microsoft Copilot. The clearer and more detailed your prompt, the better Copilot can understand and respond. It's often more effective to tell Copilot what you *want* it to do, rather than what you *don't want* it to do.
 
+
 ## Write effective prompts
 
 ![Image of person working on a laptop.](../media/03-write-prompt.jpg)
 
 An effective prompt should be clear, specific, contextual, and goal oriented. By incorporating these elements into your prompts, you can ensure that you get more accurate and relevant responses from AI tools. Remember, the more information and guidance you provide in your prompt, the better Copilot can assist you.
 
+A prompt can be simple or detailed, but you must have a clear goal. If you want to be more specific, add additional information. Often, you'll need more than just a goal to achieve the results you want.The following graphic describes the four elements of a good prompt: Goal, Context, Source(s), and Expectations.
+
+![Screenshot showing four parts of a prompt.](../media/03-copilot-prompt-parts.png)
+
 Here are some tips to keep in mind when writing a prompt:
 
 - Be specific about what you want Copilot to do. Clear goals lead to better responses.
 - Add some context to help Copilot understand what you're asking. Context makes the response more relevant.
-- Let Copilot know how you want the response to be formatted. This sets clear expectations.
 - Provide some data or information for Copilot to use. This helps ground the response in the right context.
+- Let Copilot know how you want the response to be formatted. This sets clear expectations.
 
 > [!TIP]
 > To learn more about the art of prompting, review [Cooking up a great prompt: Getting the most from Copilot](https://support.microsoft.com/topic/cooking-up-a-great-prompt-getting-the-most-from-copilot-7b614306-d5aa-4b62-8509-e46674a29165?ocid=PromptGallery_SMC_Article_GetTips?azure-portal=true).
-
-> [!NOTE]
-> One of the best ways to effectively work with Copilot is to ask it to refine the results. When you give a prompt to an AI, the first response might not be exactly what you want. So, look at the result, think about what you want to change, and then try again with a slightly different prompt. Each time you make a change, you're getting closer to the perfect result. This is called **iterating**.
->
-> For example, let's say you used Copilot to create a menu for a dinner party, but you forgot you need to include vegetarian options. All you need to do is ask Copilot to update the menu to include some vegetarian dishes. This way, you can keep refining your prompts until you get the perfect result.
->
-> ![Image of person cooking in a kitchen.](../media/03-food.jpg)
 
 ## Explore good, better, and best prompts
 
@@ -37,10 +35,27 @@ The following image shows the playlist Copilot generated using the "best" prompt
 
 ![Copilot-generated playlist of 10 songs.](../media/03-playlist.jpg)
 
+> [!NOTE]
+> One of the best ways to effectively work with Copilot is to ask it to refine the results. When you give a prompt to an AI, the first response might not be exactly what you want. So, look at the result, think about what you want to change, and then try again with a slightly different prompt. Each time you make a change, you're getting closer to the perfect result. This is called **iterating**.
+>
+> For example, let's say you used Copilot to create a menu for a dinner party, but you forgot you need to include vegetarian options. All you need to do is ask Copilot to update the menu to include some vegetarian dishes. This way, you can keep refining your prompts until you get the perfect result.
+>
+> ![Image of person cooking in a kitchen.](../media/03-food.jpg)
+
+## Find inspiration
+
+The following table includes some prompt resources you might find helpful to get started with more complex prompting.
+
+| Resource Name | Description | Use cases  |
+|--|--|--|
+| **[Do more with Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai?azure-portal=true)** | A selection of use cases and examples of how AI can be applied to everyday tasks. | Explore articles grouped by categories such as daily life, AI art & creativity, general AI, learning & education, and professional life. |
+| **[Copilot prompt gallery](https://copilot.cloud.microsoft/prompts?azure-portal=true)** | A collection of prompts that you can use as inspiration. | Find example prompts that you can edit to make your own. Some editable parts are obvious, denoted by a pair of square brackets, like [topic], [file], and [your title]. But you can also edit various parts of those prompts, such as the goal, context, expectations, and source, to suit your purpose. |
+| **[Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library?azure-portal=true)** | A wide range of scenarios and prompts organized by job functions and roles | Find relevant prompts for your specific needs and industry. |
+
 Now that you know what it takes to craft effective prompts, try to identify tasks in your own daily routine where AI might help you save time or be more creative.
 
 > [!TIP] 
 > **Build your AI habit:**
 > Now that you understand how to craft clear, specific, and goal-oriented prompts, try to identify tasks in your own daily routine where AI might help you save time or be more creative. Commit to a daily experiment, such as one prompt to try every day. Remember to iterate as much as you want to perfect your prompt.
 
-Next, let's dig a little deeper into the art of prompting.
+Next, let's explore some ways you might use AI to help with personal tasks.
