@@ -10,21 +10,15 @@ In this unit, you learn how to create and find different types of resources in t
 
 Now let's start exploring how to create resources in Azure. We won't actually create any Azure resources in this exercise.
 
-1. On the home page, select **Create a resource**.
-
-1. A pane labeled **Create a resource** appears. On the right-hand side, there's a list labeled **Popular Marketplace products**. Expand this list by selecting the **See more in Marketplace** link next to the heading.
-
-1. Select the **X** icon in the upper right to return to the **Create a resource** pane.
-
-1. Next, look at the **Popular Azure services** list on the left side of the pane. This list includes services such as Virtual machine, Key Vault, Function App, and more. Many of these items include **Docs** and/or **MS Learn** links directly below the name. These links open a new browser tab with content to help you learn about that service.
-
 ## Find resource types by category
 
-1. In the left navigation pane, under **Categories**, select **Compute**. You'll now see options related to this category in the **Popular Azure services** and **Popular Marketplace products** lists.
+1. On the home page, select **Create a resource**. The **Create a resource** pane appears, showing a sampling of **Popular Azure services** and **Popular Marketplace products**. Each of these sections includes links to see more offerings.
 
-1. To the right of **Popular Marketplace products**, select **See more in Marketplace**. The full list of available **Compute** offerings appears.
+1. In the service menu, under **Categories**, select **Compute**. You now see only options related to this category in the **Popular Azure services** and **Popular Marketplace products** lists.
 
-1. In the **Operating Systems** section, select the option for **Windows Server**. If you don't see it, select **See more**.
+1. Next to the **Popular Marketplace products** headings, select **See more in Marketplace**. The full list of available **Compute** offerings appears.
+
+1. In the **Operating Systems** section, select the option for **Windows Server**. If you don't see it, select **See more**. You can also select a different offering for this exercise.
 
 1. Select the drop-down list under **Plan** to see all of the available Windows Server images.
 
@@ -38,11 +32,11 @@ Another way to locate services from the **Create a resource** pane is to use sea
 
 The search box at the top of the **Create a resource** pane defaults to checking every Azure service category to get its results. You can also refine your search by selecting a category.
 
-1. Type `virtual machine` into the search box and select <kbd>Enter</kbd>.
+1. Start on the main **Create a resource** page. Type `virtual machine` into the **Search service** search box and select <kbd>Enter</kbd>. 
 
-1. In the left navigation pane, under **Categories**, select **Compute**. You'll see a filtered list of **Compute** offerings related to virtual machine images.
+1. In the service menu, under **Categories**, select **Security**. You'll see a filtered list of virtual machine offerings that are related to security.
 
-1. Select any of the results that interest you to learn more about that offering, including how to get started. Select the **X** in the corner to return to the list and explore a different offering. When you're done, move to the next step.
+1. Select any of the results to learn more about that offering, including how to get started. Select the **X** in the corner to return to the list and explore a different offering. When you're done, move to the next step.
 
 1. Select the **X** at the top right-hand corner to close the **Marketplace** pane. The **Create a resource** pane is visible once again.
 
