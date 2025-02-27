@@ -14,7 +14,7 @@ metadata:
 title: Plan and prepare a GenAIOps solution
 summary: Learn how to develop chat applications with language models using a code-first development approach. By developing generative AI apps code-first, you can create robust and reproducible flows that are integral for generative AI Operations, or GenAIOps.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Identify use cases for Generative AI applications.
     - Select a model for your Generative AI application.
     - Describe what GenAIOps is, and how it defines the app lifecycle.

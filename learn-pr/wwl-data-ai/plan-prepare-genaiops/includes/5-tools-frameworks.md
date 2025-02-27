@@ -49,17 +49,35 @@ Optimizing AI model performance starts with prompt engineering, where carefully 
 
 By experimenting with different prompt variations, you can better understand how the model reacts to certain phrases, structures, or contexts. This iterative process helps refine the model's understanding, making it more adept at generating high-quality, contextually relevant, and precise responses.
 
-To experiment with prompts, you can use Prompty, which includes an asset class and format, and tooling that you can run in a development environment of your choice.
+When you want to quickly explore prompts, you can use the chat playground in the Azure AI Foundry portal. If you want a more code-based approach, you can use the [**Azure AI Foundry SDK**](/azure/ai-studio/how-to/develop/sdk-overview?tabs=sync&pivots=programming-language-python?azure-portal=true), which includes **prompt templates**. If you want a tool-agnostic approach to prompt experimentation, you can use Prompty. **Prompty** is a tooling that you can run in any development environment of your choice, and provides an asset class and format to construct rich prompts.
 
 |Tool|Use|
 |---|---|
-|[Prompty](/azure/search/retrieval-augmented-generation-overview?azure-portal=true)|A tool to manage prompts—these are the instructions or queries given to the AI model. Prompty helps you track the performance of different prompts and optimize them for better responses.|
-|[Azure AI Foundry](https://techcommunity.microsoft.com/blog/startupsatmicrosoftblog/building-high-scale-rag-applications-with-microsoft-fabric-eventhouse/4217816?azure-portal=true)|A platform that allows you to experiment with different AI models, manage multiple experiments, and analyze results.|
+|[Azure AI Foundry prompt templates](/azure/ai-studio/how-to/develop/sdk-overview?tabs=sync&pivots=programming-language-python#prompt-templates?azure-portal=true)|A template that allows you to dynamically generate prompts using inputs that are available at runtime, part of the Azure AI Inference SDK.|
+|[Prompty](https://prompty.ai/?azure-portal=true)|A tool to manage prompts—these are the instructions or queries given to the AI model. Prompty helps you track the performance of different prompts and optimize them for better responses.|
 
-If your AI model occasionally provides biased or inappropriate responses, Azure AI Content Safety helps you identify and address these issues before they reach end users.
+When you are experimenting with prompts, you want to evaluate how your model performs. **Evaluators** are either built-in or custom insights into your model's performance. Whereas evaluators are based on how a given dataset is processed, you can also include **tracing** to gain more insights into how you're application is being executed.
+
+If your AI model occasionally provides biased or inappropriate responses, **Azure AI Content Safety** helps you identify and address these issues before they reach end users.
 
 |Tool|Use|
 |---|---|
-|[Tracing](/azure/ai-studio/concepts/fine-tuning-overview?azure-portal=true)|This tool helps debug AI models by tracing their actions, allowing you to understand why certain responses are generated.|
-|[Azure AI Content Safety](/azure/ai-services/agents/overview?azure-portal=true)|It ensures that AI models generate ethical, unbiased, and safe responses. It detects harmful outputs and helps mitigate risks associated with AI.|
-|[Evaluators](/azure/ai-services/agents/overview?azure-portal=true)|Tools designed to assess the quality and safety of AI outputs, helping you refine the model’s behavior and outputs.|
+|[Evaluators](/azure/ai-studio/how-to/develop/evaluate-sdk?azure-portal=true)|Tools designed to assess the quality and safety of AI outputs, helping you refine the model’s behavior and outputs.|
+|[Tracing](/azure/ai-studio/concepts/trace?azure-portal=true)|This tool helps debug AI models by tracing their actions, allowing you to understand why certain responses are generated.|
+|[Azure AI Content Safety](/azure/ai-services/content-safety/overview?azure-portal=true)|It ensures that AI models generate ethical, unbiased, and safe responses. It detects harmful outputs and helps mitigate risks associated with AI.|
+
+## Deploy your Generative AI app to production
+
+Once the model is refined and optimized, the next step is deployment. AI models need to be deployed into a production environment, automated for continuous updates, and monitored for performance.
+
+|Tool|Use|
+|---|---|
+|Prompt Flow|Orchestrates AI workflows, connecting multiple models seamlessly.|
+|LangChain|Simplifies AI app development by integrating models and data sources.|
+|Semantic Kernel|Combines ML models and services for streamlined AI application development.|
+
+|Tool|Use|
+|---|---|
+|GitHub Actions|Automates deployment, ensuring new models are updated without manual effort.|
+|Azure Monitor|Tracks real-time AI performance, detecting failures and degradation.|
+|Application Insights|Provides analytics on usage, errors, and user interactions.|
