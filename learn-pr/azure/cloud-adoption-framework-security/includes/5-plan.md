@@ -28,7 +28,7 @@ Incorporate Zero Trust principles to structure phases and steps for teams. The M
 
 - [Infrastructure](/security/zero-trust/deploy/infrastructure): Guidance for securing cloud infrastructure through strict policies and enforcement strategies.
 
-- [Network](/security/zero-trust/deploy/networks): Guidance for securing your cloud network through segmentation, traffic inspection, and end-to-end encryption.
+- [Networks](/security/zero-trust/deploy/networks): Guidance for securing your cloud network through segmentation, traffic inspection, and end-to-end encryption.
 
 - [Visibility, automation, and orchestration](/security/zero-trust/deploy/visibility-automation-orchestration): Guidance for operational policies and practices that help enforce Zero Trust principles.
 

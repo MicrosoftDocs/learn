@@ -1,4 +1,4 @@
-The Secure methodology in Cloud Adoption Framework for Azure provides a structured approach to help secure your Azure cloud estate.
+The Secure methodology in the Cloud Adoption Framework provides a structured approach to help secure your Azure cloud estate.
 
 The guidance in this module provides recommendations that are relevant to all methodologies within the Cloud Adoption Framework. You should incorporate security measures in every phase of your cloud adoption journey.
 

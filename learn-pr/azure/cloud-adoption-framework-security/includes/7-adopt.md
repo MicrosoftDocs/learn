@@ -95,7 +95,7 @@ Effectively implement and institutionalize encryption and secure access controls
 
 - [Azure confidential computing](/azure/confidential-computing/overview) helps protect data in use with hardware-based trusted implementation environments, which enhances data security even from cloud administrator access.
 
-- [Microsoft Entra ID](/entra/fundamentals/whatis) provides identity and access management with multifactor authentication (MFA), conditional access, and single sign-on.
+- [Microsoft Entra ID](/entra/fundamentals/whatis) provides identity and access management with MFA, conditional access, and single sign-on.
 
   - [Microsoft Entra ID Protection](/entra/id-protection/overview-identity-protection) uses machine learning to identify sign-in risks and unusual behavior, which prevents identity compromise and credential theft.
 
@@ -149,7 +149,7 @@ Focus on establishing and codifying operational practices that [support availabi
 - [Azure Policy](/azure/governance/policy/overview) is a policy management solution that helps enforce organizational standards and assess compliance at scale.
 
 - [Defender for Cloud](/azure/defender-for-cloud/security-policy-concept) provides security policies that can automate compliance with your security standards.
-- Azure [built-in recovery capabilities](/reliability/overview-reliability-guidance) support operational continuity and disaster recovery plans.
+- Azure [built-in recovery capabilities](/azure/reliability/overview-reliability-guidance) support operational continuity and disaster recovery plans.
 
 ## Adopt security sustainment
 

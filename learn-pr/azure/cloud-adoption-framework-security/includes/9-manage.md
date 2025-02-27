@@ -8,9 +8,9 @@ The Manage phase focuses on the ongoing operation of your cloud estate. You must
 
 Ensure that your observability platform includes thorough monitoring and intelligent alerting. To modernize this platform, adopt a proactive mindset and Zero Trust principles.
 
-- **Assume a breach** in your systems to drive threat hunting and detection engineering. Threat hunting uses a hypothesis-based approach to analyze systems for potential breaches. Detection engineering develops specialized mechanisms to enhance observability platforms for detecting new cyberattacks.
-
 - **Verify explicitly.** Shift from "trust by default" to "trust by exception" by validating trusted activities through visibility. Enhance your observability platform with intelligent identity and access monitoring to detect anomalous behavior in real-time.
+
+- **Assume a breach** in your systems to drive threat hunting and detection engineering. Threat hunting uses a hypothesis-based approach to analyze systems for potential breaches. Detection engineering develops specialized mechanisms to enhance observability platforms for detecting new cyberattacks.
 
 ### Azure facilitation
 

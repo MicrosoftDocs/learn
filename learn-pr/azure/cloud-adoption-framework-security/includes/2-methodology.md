@@ -6,8 +6,8 @@ This Secure methodology guidance is one component of a larger holistic set of Mi
 
 - [The Azure Well-Architected Framework](/azure/well-architected/security/) provides security best practices for application development and DevOps and DevSecOps processes.
 
-- [The Microsoft Cloud Security Benchmark](/security/benchmark/azure/) provides best practices for stakeholders. It includes security baselines that describe the available security features and recommended optimal configurations for Azure services.
-- [Zero Trust guidance](/security/zero-trust/) provides guidance for security teams. It describes how to implement technical capabilities that support a Zero Trust modernization initiative.
+- [The Microsoft cloud security benchmark](/security/benchmark/azure/) provides best practices for stakeholders. It includes security baselines that describe the available security features and recommended optimal configurations for Azure services.
+- [Zero Trust documentation](/security/zero-trust/) provides guidance for security teams. It describes how to implement technical capabilities that support a Zero Trust modernization initiative.
 
 ## Modernize your security posture
 

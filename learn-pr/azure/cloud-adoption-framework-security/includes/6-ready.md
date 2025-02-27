@@ -42,31 +42,33 @@ To [help secure data by default](/azure/cloud-adoption-framework/secure/ready#pr
 - **Multifactor authentication (MFA):** Add an extra layer of security.
 - **Conditional access controls:** Enforce policies based on specific conditions, such as geography or MFA requirements. Ensure that your IAM platform supports these controls.
 
-Microsoft Entra Conditional Access is the Microsoft Zero Trust policy engine. It evaluates signals from various sources to make informed policy decisions.
+### Azure facilitation
+
+[Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) is the Microsoft Zero Trust policy engine. It evaluates signals from various sources to make informed policy decisions.
 
 ## Prepare for integrity
 
 Ensure that you have [well-governed policies and standards](/azure/cloud-adoption-framework/secure/ready#prepare-for-integrity) for your data and system integrity. Define standards for the following areas.
 
 - **Data management:**
-  - *Create a framework and sensitivity-label taxonomy* to define data security risk categories. Use this taxonomy to simplify data inventory, policy management, and investigation prioritization.
+  - Create a framework and sensitivity-label taxonomy to define data security risk categories. Use this taxonomy to simplify data inventory, policy management, and investigation prioritization.
 
-  - *Automate data verification and validation processes* to reduce the burden on data engineers and minimize human error.
+  - Automate data verification and validation processes to reduce the burden on data engineers and minimize human error.
 
-  - *Establish and regularly test backup policies* to help ensure that data is backed up, correct, and consistent. Align with your recovery target objective (RTO) and recovery point objective (RPO) targets.
+  - Establish and regularly test backup policies to help ensure that data is backed up, correct, and consistent. Align with your recovery target objective (RTO) and recovery point objective (RPO) targets.
 
-  - *Ensure that your cloud provider encrypts data at rest and data in transit by default.* Verify that services in your workloads support and are configured for strong encryption.
+  - Ensure that your cloud provider encrypts data at rest and data in transit by default. Verify that services in your workloads support and are configured for strong encryption.
 
 - **System integrity design patterns:**
-  - *Design a robust security monitoring platform* to detect unauthorized changes.
+  - Design a robust security monitoring platform to detect unauthorized changes.
 
-  - *Use security information and event management (SIEM), security orchestration, automation, and response (SOAR), and threat detection tools* to identify suspicious activities and potential threats.
+  - Use security information and event management (SIEM), security orchestration, automation, and response (SOAR), and threat detection tools to identify suspicious activities and potential threats.
 
-  - *Automate configuration management* to help ensure consistency and reduce human error.
+  - Automate configuration management to help ensure consistency and reduce human error.
 
-  - *Automate patch management* for virtual machines to help ensure regular updates and consistent system versions.
+  - Automate patch management for virtual machines to help ensure regular updates and consistent system versions.
 
-  - *Use infrastructure as code (IaC)* for all deployments. Integrate IaC into your CI/CD pipelines, and apply safe deployment practices.
+  - Use infrastructure as code (IaC) for all deployments. Integrate IaC into your CI/CD pipelines, and apply safe deployment practices.
 
 ### Azure facilitation
 

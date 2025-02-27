@@ -17,7 +17,7 @@ Cloud technology provides on-demand visibility into your [security posture](/azu
 
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) can help you continuously discover and automatically manage virtual machines in your environment through automatic data collection provisioning.
 
-- [Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) can help you continuously discover and govern software as a service (SaaS) apps in your environments.
+- [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps) can help you continuously discover and govern software as a service (SaaS) apps in your environments.
 
 ## Govern incident preparedness and response
 

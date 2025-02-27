@@ -14,7 +14,7 @@ title: Prepare for cloud security by using the Microsoft Cloud Adoption Framewor
 summary: |
   Organizations that move to the cloud often find that they need to modernize security practices and tooling to keep up with continuous changes in cloud platforms, business requirements, and security threats. 
   
-  The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the Secure methodology, which provides guidance for the security modernization journey. It includes processes, best practices, models, and experiences. This guidance adheres to the [Zero Trust principles](https://www.microsoft.com/security/business/zero-trust) and the [CIA Triad principles](/azure/cloud-adoption-framework/secure/overview#the-cia-triad).
+  The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the Secure methodology, which provides guidance for the security modernization journey.
 abstract: |
   In this module, you'll learn: 
     - The key aspects of the Secure methodology in the Cloud Adoption Framework.
