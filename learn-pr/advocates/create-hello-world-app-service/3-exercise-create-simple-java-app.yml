@@ -4,7 +4,8 @@ title: "Exercise: Create a Simple Java Web App"
 metadata:
   description: Create a simple Java web app and deploy it locally.
   author: KarlErickson
-  ms.author: ayangupta
+  ms.author: karler
+  ms.reviewer: ayangupta
   ms.date: 12/11/2024
   ms.topic: unit
   ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
