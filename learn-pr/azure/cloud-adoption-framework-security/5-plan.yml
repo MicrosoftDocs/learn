@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.cloud-adoption-framework-security.ready
-title: Prepare your secure cloud estate
+uid: learn.azure.cloud-adoption-framework-security.plan
+title: Plan for a secure cloud adoption
 metadata:
   unitType: learning-content
-  title: Prepare your secure cloud estate
-  description: Learn how to prepare your secure cloud estate.
+  title: Plan for a secure cloud adoption
+  description: Learn how to plan for a secure cloud adoption.
   ms.date: 02/20/2025
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
-  [!include[](includes/7-ready.md)]
+  [!include[](includes/5-plan.md)]
 quiz:
  title: Check your knowledge
  questions:

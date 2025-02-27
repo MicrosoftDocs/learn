@@ -11,7 +11,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-strategy.md)]
+  [!include[](includes/4-strategy.md)]
 quiz:
  title: Check your knowledge
  questions:

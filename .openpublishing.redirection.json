@@ -27141,6 +27141,10 @@
       "redirect_url": "/training/modules/cloud-adoption-framework-security/1-introduction"
     },
     {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-security/2-customer-narrative.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-security/1-introduction"
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/monitor-troubleshoot-adt/index.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot"
     },

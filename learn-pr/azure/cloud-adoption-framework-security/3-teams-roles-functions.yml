@@ -11,7 +11,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-teams-roles-functions.md)]
+  [!include[](includes/3-teams-roles-functions.md)]
 quiz:
  title: Check your knowledge
  questions:

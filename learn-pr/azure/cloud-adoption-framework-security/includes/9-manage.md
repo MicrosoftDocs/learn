@@ -14,7 +14,7 @@ Ensure that your observability platform includes thorough monitoring and intelli
 
 ### Azure facilitation
 
-[Microsoft Defender XDR](/defender-xdr/m365d-enable) provides advanced threat hunting across multiple domains, like endpoints, cloud apps, and identity.
+[Defender XDR](/defender-xdr/m365d-enable) provides advanced threat hunting across multiple domains, like endpoints, cloud apps, and identity.
 
 ## Manage incident preparedness and response
 

@@ -11,7 +11,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/9-govern.md)]
+  [!include[](includes/8-govern.md)]
 quiz:
  title: Check your knowledge
  questions:

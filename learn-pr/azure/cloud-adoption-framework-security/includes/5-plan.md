@@ -39,6 +39,7 @@ Ensure [alignment between technology and business stakeholders](/azure/cloud-ado
 ## Plan for incident preparedness and response
 
 - **Evaluate vulnerability management solutions, threat detection systems, and infrastructure monitoring.**
+
 - **Plan for infrastructure hardening** to reduce attack surfaces.
 - **Build a robust incident response plan.**
 - **Identify roles and key phases**, such as investigation, mitigation, and communications.
@@ -47,6 +48,7 @@ Ensure [alignment between technology and business stakeholders](/azure/cloud-ado
 ## Plan for confidentiality
 
 - **Plan data loss prevention policies and procedures meticulously** to help ensure organizational data confidentiality.
+
 - **Identify and classify data** based on sensitivity and regulatory requirements to apply appropriate security measures.
 - **Encrypt data at rest and data in transit** by using strong encryption standards.
 - **Implement strict access controls**, including multifactor authentication and role-based access control. Follow the Zero Trust principle by verifying explicitly based on user identity, location, device health, service or workload, data classification, and anomalies.
@@ -54,6 +56,7 @@ Ensure [alignment between technology and business stakeholders](/azure/cloud-ado
 ## Plan for integrity
 
 - **Plan to monitor data and systems** for unauthorized changes and establish data hygiene policies.
+
 - **Incorporate integrity considerations** in your incident response plan to address and remediate unauthorized changes or corrupted data.
 
 ## Plan for availability
@@ -66,5 +69,6 @@ Ensure [alignment between technology and business stakeholders](/azure/cloud-ado
 ## Plan for security sustainment
 
 - **Adopt a mindset of continuous improvement**, and seek enhancement opportunities. To foster your mindset, implement a training program.
+
 - **Adhere to operational standards**, and regularly review policies.
 - **Understand your current posture** to plan your security baseline. Use tools like Microsoft Secure Score to quickly establish your baseline and identify areas for improvement.

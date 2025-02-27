@@ -11,7 +11,7 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-methodology.md)]
+  [!include[](includes/2-methodology.md)]
 quiz:
  title: Check your knowledge
  questions:
@@ -20,7 +20,7 @@ quiz:
    - content: To provide financial guidance for cloud adoption
      isCorrect: false
      explanation: Incorrect. The Secure methodology includes some financial guidance, but it's typically covered by other frameworks or business strategies.
-   - content: To provide security guidance for managing technology infrastructure on Azure and help ensure that workloads are highly secure and compliant
+   - content: To provide a structured approach that you can use to enhance workload security and compliance
      isCorrect: true
      explanation: Correct. The primary goal of the Secure methodology is to ensure that workloads are highly secure and compliant.
    - content: To search a unified audit log and view user and administrator activity in your organization
