@@ -39,7 +39,7 @@ The following example shows the schedule for a weekly execution, but you also ha
 
 The next step is to select the maintenance tasks to add to the plan. The following example shows the operations available to be performed by your maintenance plan.
 
-:::image type="content" source="../media/module-66-automation-final-06.png" alt-text="Maintenance Plan Tasks Addition Screen":::
+:::image type="content" source="../media/module-66-automation-final-06.png" alt-text="Screenshot showing the maintenance tasks avaialble on the maintenance plan wizard.":::
 
 **Check database integrity** - This task runs the `DBCC CHECKDB` command to validate the logical and physical consistency of each database page. You should perform this task regularly and align it with your backup retention window. Ensure you complete a consistency check before discarding any prior backups to prevent carrying over corruption.
 
