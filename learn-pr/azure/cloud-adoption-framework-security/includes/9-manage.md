@@ -58,7 +58,7 @@ Ongoing [management of your security posture for confidentiality](/azure/cloud-a
 
 ### Azure facilitation
 
-- [Microsoft Purview Data Loss Prevention](/purview/dlp-learn-about-dlp) detects and prevents data exfiltration through common processes that attackers use, including first-time use or renamed cloud applications.
+- [Microsoft Purview Data Loss Prevention](/purview/dlp-learn-about-dlp) helps detect and prevent data exfiltration through common processes that attackers use, including first-time use or renamed cloud applications.
 
 - [Microsoft Purview Insider Risk Management](/purview/insider-risk-management-solution-overview) helps detect and prevent malicious or inadvertent insider risks, like IP theft, data leakage, and security violations.
 

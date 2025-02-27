@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-security.govern
-title: Securely govern your cloud estate
+title: Govern your cloud estate securely
 metadata:
   unitType: learning-content
-  title: Securely govern your cloud estate
+  title: Govern Your Cloud Estate Securely
   description: Learn how to securely govern your cloud estate.
   ms.date: 02/20/2025
   author: Zimmergren

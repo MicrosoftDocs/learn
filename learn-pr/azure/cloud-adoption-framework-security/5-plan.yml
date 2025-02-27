@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-security.plan
 title: Plan for a secure cloud adoption
 metadata:
   unitType: learning-content
-  title: Plan for a secure cloud adoption
+  title: Plan for a Secure Cloud Adoption
   description: Learn how to plan for a secure cloud adoption.
   ms.date: 02/20/2025
   author: Zimmergren
@@ -22,7 +22,7 @@ quiz:
      explanation: Incorrect. While important, building an incident response plan isn't the primary purpose of landing zones. 
    - content: To incorporate templates for infrastructure as code (IaC) deployments
      isCorrect: false
-     explanation: Incorrect. Although landing zones may use infrastructure as code (IaC) templates, their main purpose isn't to incorporate these templates but to provide a secure and scalable foundation.
+     explanation: Incorrect. Although landing zones might use IaC templates, their main purpose isn't to incorporate these templates but to provide a secure and scalable foundation.
    - content: To enhance data analytics capabilities
      isCorrect: false
      explanation: Incorrect. Enhancing data analytics capabilities isn't the primary goal of landing zones. 
