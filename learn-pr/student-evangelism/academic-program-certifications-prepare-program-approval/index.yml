@@ -7,6 +7,7 @@ metadata:
   author: leestott
   ms.author: tsheppard
   ms.topic: module
+  ms.service: azure
 title: Prepare for a program approval event
 summary: Organize and support the approval process for your program. Define the main processes in program approval and respond to feedback from an approval panel. 
 abstract: |
