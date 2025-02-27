@@ -9,7 +9,6 @@ metadata:
   ms.date: 12/11/2024
   ms.topic: unit
   ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
-  ms.reviewer:
   ms.assetid: HelloJavaAppService
   zone_pivot_groups: maven-azure-cli
 durationInMinutes: 7
