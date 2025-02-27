@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Automate deployment by using Azure Resource Manager templates and Bicep
   description: "Automate deployment by using Azure Resource Manager templates and Bicep"
-  ms.date: 06/28/2022
-  author: wwlpublish
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   ms.custom:

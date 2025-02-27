@@ -16,7 +16,7 @@ Organizations have to consider permissions management as a central piece of thei
 
 ### Process flow
 
-:::image type="content" source="../media/entra-permissions-flow-776127df.png" alt-text="Diagram of how Microsoft Entra Permissions Management takes input from many sources to analyze what permissions are being used.":::
+:::image type="content" source="../media/entra-permissions-flow-776127df-69ca4b41.png" alt-text="Diagram of how Microsoft Entra Permissions Management takes input from many sources to analyze what permissions are being used.":::
 
 
 Microsoft Entra Permissions Management comprehensive visibility into permissions assigned to all identities – users and workloads – actions, and resources across cloud infrastructures and identity providers. It detects, right-sizes, and monitors unused and excessive permissions and enables Zero Trust security through least privilege access in Microsoft Azure, AWS, and GCP.

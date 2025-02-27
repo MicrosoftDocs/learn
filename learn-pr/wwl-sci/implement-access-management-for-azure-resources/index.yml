@@ -5,21 +5,28 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement access manager for Azure resource
   description: "Explore how to use built-in Azure roles, managed identities, and RBAC-policy to control access to Azure resources. Identity is the key to secure solutions."
-  ms.date: 10/30/2023
+  ms.date: 02/26/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: azure
+  ai-usage: human-only
 title: Implement access management for Azure resources
-summary: Explore how to use built-in Azure roles, managed identities, and RBAC-policy to control access to Azure resources.  Identity is the key to secure solutions.
+summary: Explore how to use built-in Azure roles, managed identities, and RBAC-policy to control access to Azure resources. Identity is the key to secure solutions.
 abstract: |
   By the end of this module, you will be able to:
-  *   Configure and use Azure roles within Microsoft Entra ID
-  *   Configure and managed identity and assign it to Azure resources
-  *   Analyze the role permissions granted to or inherited by a user
-  *   Configure access to data in Azure Key Vault using RBAC-policy
-prerequisites: |
-  None
+
+  -   Configure and use Azure roles within Microsoft Entra ID
+
+  -   Configure and managed identity and assign it to Azure resources
+
+  -   Analyze the role permissions granted to or inherited by a user
+
+  -   Configure access to data in Azure Key Vault using RBAC-policy
+prerequisites: None
 iconUrl: /learn/achievements/implement-access-management-for-azure-resources.svg
 levels:
 - advanced

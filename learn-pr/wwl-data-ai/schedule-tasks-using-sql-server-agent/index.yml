@@ -5,8 +5,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Create and manage SQL Agent jobs
   description: Create and manage SQL Agent jobs
-  ms.date: 05/11/2022
-  author: wwlpublish
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: azure

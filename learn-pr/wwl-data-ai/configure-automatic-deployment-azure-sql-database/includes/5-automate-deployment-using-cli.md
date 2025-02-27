@@ -1,15 +1,15 @@
-Database automation is now no longer reserved for larger businesses, but is becoming a necessity for businesses of all sizes to remain competitive. As a database administrator, it's important to learn how to automate database tasks whenever possible as it will provide you with the following benefits:
+Database automation is no longer just for large enterprises; it's now essential for businesses of all sizes to stay competitive. As a database administrator, automating database tasks is crucial for several reasons:
 
-- Granular control of an application or database
-- Easy to scale, improving efficiency when dealing with large numbers of assets
-- Ability to reuse scripts to automate regular tasks
-- Facilitates troubleshooting tasks where GUI tools aren't available
+- Granular control over applications and databases
+- Easy scalability, enhancing efficiency when managing numerous assets
+- Reusability of scripts for automating routine tasks
+- Simplified troubleshooting when GUI tools are unavailable
 
-The Azure Command-Line Interface (CLI) is a cross-platform command-line tool that helps you to create and manage Azure resources. You can run commands through the terminal using interactive command-line prompts or scripts.
+The Azure Command-Line Interface (CLI) is a cross-platform tool that helps you create and manage Azure resources. You can run commands through the terminal using interactive prompts or scripts.
 
-You can install Azure CLI on Linux, Mac, or Windows computers. Run it from a browser using the Cloud Shell terminal on Azure portal or inside a Docker container.
+Azure CLI can be installed on Linux, Mac, or Windows computers. You can also run it from a browser using the Cloud Shell terminal on the Azure portal or inside a Docker container.
 
-The Azure CLI syntax follows the `reference name` - `command` - `parameter` - `parameter value` pattern. For example, switching between subscriptions is often a common task. Here's the syntax.
+The Azure CLI syntax follows the `reference name` - `command` - `parameter` - `parameter value` pattern. For example, switching between subscriptions is a common task. Here's the syntax:
 
 ```azurecli
 az account set --subscription "my subscription name"
@@ -17,7 +17,7 @@ az account set --subscription "my subscription name"
 
 ## PowerShell vs. Azure CLI
 
-Azure PowerShell and Azure CLI are both cross-platform command-line tools that will enable you to create and manage Azure resources on Windows, macOS and Linux. The main difference between the two is the shell environments that they support.
+Azure PowerShell and Azure CLI are both cross-platform command-line tools that allow you to create and manage Azure resources on Windows, macOS, and Linux. The primary difference between them lies in the shell environments they support.
 
 | **Shell Environment** | **Azure CLI** | **Azure Powershell** |
 |:---------------------:|:-------------:|:--------------------:|
@@ -26,9 +26,9 @@ Azure PowerShell and Azure CLI are both cross-platform command-line tools that w
 | Windows PowerShell    |      Yes      |          Yes         |
 | PowerShell            |      Yes      |          Yes         |
 
-To choose the correct tool, consider your experience and work environment.
+To choose the right tool, consider your experience and your work environment.
 
-The Azure CLI is similar to bash scripting, and it will feel natural to those who typically work with Linux systems. Azure PowerShell contains modules that help manage Azure resources from PowerShell. PowerShell commands follow the standard verb-noun syntax, and working with Windows systems will make it a natural fit.
+Azure CLI is similar to bash scripting, making it intuitive for those who typically work with Linux systems. On the other hand, Azure PowerShell includes modules that help manage Azure resources from PowerShell. PowerShell commands follow the standard verb-noun syntax, making it a natural fit for those familiar with Windows systems.
 
 Here's a quick comparison of some commonly used commands in both their CLI and PowerShell forms:
 
@@ -37,12 +37,12 @@ Here's a quick comparison of some commonly used commands in both their CLI and P
 | Sign in with Web Browser    | az login                     | Connect-AzAccount           |
 | Get available subscriptions | az account list              | Get-AzSubscription          |
 | Set Subscription            | az account set –subscription | Set-AzContext -Subscription |
-| List VM                     | az vm list                   | Get-AzVM                    |
-| Create a SQL Server         | az sql server create         | New-AzSqlServer             |
+| List all virtual machines   | az vm list                   | Get-AzVM                    |
+| Create a new SQL server     | az sql server create         | New-AzSqlServer             |
 
 ## Deploying SQL Database using Azure CLI
 
-Below is an example of how to deploy SQL Database, and create a firewall rule that allows access from Azure services using Azure CLI.
+Here's an example of how to deploy an SQL Database and create a firewall rule to allow access from Azure services using Azure CLI:
 
 ```azurecli
 let "randomIdentifier=$RANDOM*$RANDOM"
@@ -63,7 +63,7 @@ To learn more about all the Azure SQL CLI commands available, see [Azure SQL CLI
 
 ## Deploying Azure Resource Manager (ARM) template using Azure CLI and PowerShell
 
-With PowerShell, you have several options for the scope of your deployment. You can deploy to a resource group, a subscription, a Management Group (a collection of subscriptions under the same Azure template and commonly used in large enterprise deployments), or a tenant. Azure Resource Manager templates are parameterized, and you will need to pass in parameters, either inline or through the use of a parameter file as shown in the example below.
+With PowerShell, you have multiple options for the scope of your deployment. You can deploy to a resource group, a subscription, a management group, which is a collection of subscriptions under the same Azure template and commonly used in large enterprise deployments, or a tenant. Azure Resource Manager templates are parameterized, requiring you to pass in parameters either inline or through a parameter file, as shown in the following example.
 
 ```powershell
 New-AzResourceGroupDeployment -Name ExampleDeployment -ResourceGroupName ExampleResourceGroup `
@@ -71,9 +71,9 @@ New-AzResourceGroupDeployment -Name ExampleDeployment -ResourceGroupName Example
  -TemplateParameterFile c:\MyTemplates\storage.parameters.json
 ```
 
-The parameter and template file can also be stored in a Git repo, Azure Blob Storage, or any other place where it is accessible from the deploying machine.
+The parameter and template files can be stored in a Git repository, Azure Blob Storage, or any other accessible location from the deploying machine.
 
-Azure CLI allows the same options for deployment scope as you have with PowerShell. Like with PowerShell, you can use a local or remote parameter file and template, as shown in the example below.
+Azure CLI offers the same deployment scope options as PowerShell. You can use local or remote parameter files and templates, just as you would with PowerShell, as shown in the following example.
 
 ```azurecli
 az deployment group create --resource-group ExampleResourceGroup --template-file '\path\template.json'
@@ -90,10 +90,4 @@ az deployment group create \
 ```
 
 > [!NOTE]
-> Currently, Azure CLI doesn't support deploying remote Bicep files. You can use Bicep CLI to build the Bicep file to a JSON template, and then load the JSON file to the remote location.
-
-You can review your deployed resources in Azure CLI using the command below:
-
-```azurecli
-az resource list --resource-group exampleRG
-```
+> Currently, Azure CLI doesn't support deploying remote Bicep files directly. Instead, you can use the Bicep CLI to convert the Bicep file into a JSON template, and then deploy the JSON template from a remote location.
