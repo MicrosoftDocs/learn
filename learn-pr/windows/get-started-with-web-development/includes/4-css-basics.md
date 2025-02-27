@@ -236,3 +236,17 @@ To add support for a dark theme to your CSS, use the following steps.
 1. Edit the `<body>` class attribute to switch the default back to light theme.
 
 In the next unit, you use JavaScript to provide interactivity and support the switching of themes.
+
+## Use GitHub Copilot to add a theme
+
+You can use GitHub Copilot in your IDE to generate CSS to add a new theme. You can customize the prompt to specify properties to define the styles for HTML elements per your requirements.
+
+The following text shows an example prompt for Copilot Chat:
+
+```copilot-prompt
+Add a medium colored theme in the CSS file using hex color codes for blue font and light blue background. Make font family as Arial.
+```
+
+GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+
+Learn more about [GitHub Copilot in Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).
