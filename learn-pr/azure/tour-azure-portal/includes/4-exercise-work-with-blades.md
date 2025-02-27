@@ -12,7 +12,7 @@ Now let's start exploring how to create resources in Azure. We won't actually cr
 
 ## Find resource types by category
 
-1. On the home page, select **Create a resource**. A pane labeled **Create a resource** appears. This pane shows a list of **Popular Azure services**, with services such as Virtual machine, Key Vault, Function App, and more, and a list of **Popular Marketplace products**, both with links to see more offerings.
+1. On the home page, select **Create a resource**. The **Create a resource** pane appears, showing a sampling of **Popular Azure services** and **Popular Marketplace products**. Each of these sections includes links to see more offerings.
 
 1. In the service menu, under **Categories**, select **Compute**. You now see only options related to this category in the **Popular Azure services** and **Popular Marketplace products** lists.
 
