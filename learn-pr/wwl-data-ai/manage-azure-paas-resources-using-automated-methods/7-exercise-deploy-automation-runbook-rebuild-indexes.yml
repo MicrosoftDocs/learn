@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: 'Exercise: Deploy an automation runbook to automatically rebuild indexes'
   description: "Exercise: Deploy an automation runbook to automatically rebuild indexes"
-  ms.date: 06/10/2022
-  author: wwlpublish
+  ms.date: 02/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
