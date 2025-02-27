@@ -53,7 +53,7 @@ Select the **bell** icon to display the **Notifications** pane. This pane gives 
 
 ### Settings
 
-Select the **gear** icon to change the Azure portal settings. In the tabs at the left, there are multiple options that let you change settings such as:
+Select the **gear** icon to change the Azure portal settings. Different tabs provide options to change settings such as:
 
 - Directories and subscription management
 - Inactivity sign out delay
